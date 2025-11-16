@@ -1,0 +1,79 @@
+---
+title: 'Erste Schritte'
+---
+
+# Erste Schritte
+
+AI Coding Stack ist ein umfassendes Verzeichnis und Metadaten-Repository für das KI-Coding-Ökosystem. Dieser Leitfaden hilft Ihnen zu verstehen, wie Sie die Website nutzen und zum Projekt beitragen können.
+
+## Den Stack Erkunden
+
+### Kategorien Durchsuchen
+
+Besuchen Sie [aicodingstack.io](https://aicodingstack.io), um verschiedene Kategorien von KI-Coding-Tools zu erkunden:
+
+- **IDEs** - Finden Sie KI-gestützte integrierte Entwicklungsumgebungen (VS Code, Cursor, TRAE)
+- **CLIs** - Erkunden Sie Kommandozeilen-KI-Coding-Assistenten (Codex, Claude Code)
+- **Modelle** - Vergleichen Sie große Sprachmodelle für Coding (Kimi K2, DeepSeek V3.1, GLM 4.5, Qwen3 Coder)
+- **Anbieter** - Überprüfen Sie LLM-API-Anbieter (DeepSeek, Moonshot, SiliconFlow, OpenRouter)
+
+### Tools Vergleichen
+
+Nutzen Sie die Website, um verschiedene Tools nebeneinander zu vergleichen und deren Funktionen, Fähigkeiten und offizielle Dokumentationslinks zu überprüfen.
+
+## Zu den Metadaten Beitragen
+
+AI Coding Stack wird von der Community gepflegt. Sie können beitragen, indem Sie neue Tools hinzufügen oder vorhandene Einträge in unseren Manifest-Dateien aktualisieren.
+
+### Manifeste Verstehen
+
+Alle Tool-Metadaten werden in JSON-Dateien im Verzeichnis `manifests/` gespeichert:
+
+- `ides.json` - IDE-Metadaten
+- `clis.json` - CLI-Tool-Metadaten
+- `models.json` - LLM-Modell-Metadaten
+- `providers.json` - API-Anbieter-Metadaten
+
+### Ein Neues Tool Hinzufügen
+
+1. Repository klonen
+2. Die entsprechende Manifest-Datei in `manifests/` finden
+3. Ihren Eintrag dem vorhandenen Schema folgend hinzufügen
+4. Sicherstellen, dass alle URLs zugänglich sind
+5. Einen Pull-Request einreichen
+
+### Manifest-Schema-Beispiele
+
+**Für IDEs/CLIs:**
+```json
+{
+  "name": "Tool Name",
+  "id": "tool-id",
+  "vendor": "Vendor Name",
+  "description": "Kurze Beschreibung",
+  "websiteUrl": "https://...",
+  "docsUrl": "https://...",
+  "latestVersion": "1.0.0"
+}
+```
+
+**Für Modelle:**
+```json
+{
+  "name": "Model Name",
+  "vendor": "Vendor",
+  "id": "model-id",
+  "size": "70B",
+  "totalContext": 128000,
+  "maxOutput": 4096,
+  "pricing": {...},
+  "urls": {...}
+}
+```
+
+## Nächste Schritte
+
+- Durchsuchen Sie den [AI Coding Stack](/de/ai-coding-stack), um Tools zu entdecken
+- Schauen Sie sich das Verzeichnis `manifests/` an, um zu sehen, wie Metadaten strukturiert sind
+- Lesen Sie die [CLAUDE.md](https://github.com/ericyangpan/aicodingstack/blob/main/CLAUDE.md) für detaillierte Beitragsrichtlinien
+- Reichen Sie Ihren ersten Beitrag ein, um das Verzeichnis zu erweitern

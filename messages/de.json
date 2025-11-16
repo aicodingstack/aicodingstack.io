@@ -1,0 +1,463 @@
+{
+  "site": {
+    "title": "AI Coding Stack - Ihr KI-Coding-Ökosystem-Hub",
+    "description": "Umfassendes Verzeichnis für KI-Coding-Tools. Entdecken, vergleichen und erkunden Sie IDEs, CLIs, Erweiterungen, Modelle und Anbieter."
+  },
+  "stacks": {
+    "aiCodingStack": "AI Coding Stack",
+    "ides": "IDEs",
+    "clis": "CLIs",
+    "extensions": "Erweiterungen",
+    "models": "Modelle",
+    "modelProviders": "Modellanbieter",
+    "vendors": "Anbieter"
+  },
+  "community": {
+    "github": "GitHub",
+    "discord": "Discord",
+    "twitter": "X (Twitter)",
+    "youtube": "YouTube",
+    "reddit": "Reddit",
+    "linkedin": "LinkedIn",
+    "huggingface": "HuggingFace",
+    "artificialAnalysis": "Artificial Analysis",
+    "openrouter": "OpenRouter"
+  },
+  "header": {
+    "docs": "Dokumentation",
+    "articles": "Artikel",
+    "curatedCollections": "Kuratierte Sammlungen",
+    "comparison": "Vergleich",
+    "features": "Funktionen",
+    "aiCodingStack": "AI Coding Stack",
+    "collections": "Sammlungen",
+    "aiCodingLandscape": "KI-Coding-Landschaft",
+    "aiCodingLandscapeDesc": "Visualisieren Sie das gesamte KI-Coding-Ökosystem",
+    "developmentTools": "Entwicklungstools",
+    "intelligence": "Intelligenz"
+  },
+  "footer": {
+    "aicodingstack": "AI Coding Stack",
+    "tagline": "Ihr KI-Coding-Ökosystem-Hub.",
+    "openSource": "Open-Source-KI-Coding-Metadaten-Repository.",
+    "resources": "Ressourcen",
+    "documentation": "Dokumentation",
+    "community": "Community",
+    "copyright": "© 2025 AI Coding Stack • Mit ❤︎ erstellt • Open Source",
+    "darkMode": "Dunkelmodus",
+    "lightMode": "Hellmodus",
+    "faq": "FAQ",
+    "selectLanguage": "Sprache auswählen"
+  },
+
+  "pages": {
+    "home": {
+      "meta": {
+        "title": "AI Coding Stack - Ihr KI-Coding-Ökosystem-Hub",
+        "description": "Umfassendes Verzeichnis für KI-Coding-Tools. Entdecken, vergleichen und erkunden Sie IDEs, CLIs, Erweiterungen, Modelle und Anbieter.",
+        "name": "AI Coding Stack"
+      },
+      "title": "Ihr KI-Coding-Ökosystem-Hub",
+      "subtitle": "Entdecken, Vergleichen, Schneller Entwickeln.",
+      "description": "Erkunden und vergleichen Sie KI-Coding-Tools: IDEs, CLIs, Erweiterungen, Modelle und Anbieter — alles an einem Ort.",
+      "exploreTools": "Tools Erkunden",
+      "readDocs": "Dokumentation Lesen",
+      "faq": "Häufig gestellte Fragen",
+      "features": {
+        "title": "Hauptfunktionen",
+        "directory": {
+          "title": "Umfassendes Verzeichnis",
+          "description": "Erkunden Sie eine kuratierte Sammlung von KI-Coding-Tools über IDEs, CLIs, Erweiterungen, Modelle und Anbieter hinweg. Alles an einem Ort, immer aktuell."
+        },
+        "comparison": {
+          "title": "Intelligenter Vergleich",
+          "description": "Vergleichen Sie Tools nebeneinander mit detaillierten Spezifikationen, Preisen und Funktionen. Treffen Sie fundierte Entscheidungen darüber, welche KI-Coding-Tools am besten zu Ihrem Workflow passen."
+        },
+        "ecosystem": {
+          "title": "Ökosystem-Übersicht",
+          "description": "Visualisieren Sie das gesamte KI-Coding-Ökosystem mit interaktiven Landschaftsansichten. Verstehen Sie, wie verschiedene Tools, Modelle und Anbieter sich verbinden und ergänzen."
+        },
+        "tracking": {
+          "title": "Fortschrittsverfolgung",
+          "description": "Bleiben Sie über die neuesten Entwicklungen, Versionen und Updates in der KI-Coding-Landschaft informiert. Verfolgen Sie neue Releases, Funktionserweiterungen und Ökosystemänderungen."
+        }
+      }
+    },
+    "curatedCollections": {
+      "title": "Kuratierte Sammlungen",
+      "subtitle": "Handverlesene Ressourcen, Spezifikationen, Protokolle und Tools für KI-Coding",
+      "specifications": {
+        "title": "Spezifikationen & Protokolle",
+        "description": "Wesentliche Standards und Protokolle für moderne Softwareentwicklung"
+      },
+      "articles": {
+        "title": "Featured Artikel",
+        "description": "Pflichtlektüre über KI-Coding von Branchenführern"
+      },
+      "tools": {
+        "title": "Ökosystem-Tools",
+        "description": "Kuratierte Tools und Utilities für KI-Coding-Workflows"
+      }
+    },
+    "articles": {
+      "title": "Artikel",
+      "subtitle": "Tiefgehende Einblicke in KI-Coding: Tutorials, Erkenntnisse, Best Practices für IDEs, CLIs und LLM-Modelle. Lernen Sie, wie Sie 10x schneller mit KI entwickeln.",
+      "keywords": "KI-Coding-Artikel, KI-Entwicklungs-Tutorials, KI-Coding-Best-Practices, LLM-Coding-Leitfäden, KI-IDE-Leitfäden"
+    },
+    "docs": {
+      "title": "Dokumentation",
+      "subtitle": "Vollständiger Leitfaden zu AI Coding Stack: Tools erkunden, Spezifikationen verstehen und die richtigen KI-Coding-Tools für Ihren Workflow auswählen.",
+      "keywords": "AI Coding Stack Dokumentation, KI-Coding-Tools-Leitfaden, IDE-Vergleich, CLI-Vergleich, KI-Modell-Spezifikationen"
+    }
+  },
+
+  "stacksPages": {
+    "overview": {
+      "title": "AI Coding Stack",
+      "subtitle": "Erkunden Sie das gesamte KI-Coding-Ökosystem: IDEs, CLIs, Erweiterungen, Modelle und Anbieter.",
+      "slogan": "Entdecken. Vergleichen. 10x Schneller Entwickeln.",
+      "exploreStack": "Stack Erkunden",
+      "overviewTitle": "AI Coding Stack Übersicht",
+      "ides": {
+        "title": "IDEs",
+        "description": "KI-gestützte integrierte Entwicklungsumgebungen, die Ihre Codebasis verstehen und intelligente Unterstützung bieten. Von VS Code bis Cursor entdecken Sie Editoren, die Coding mit KI kollaborativ machen."
+      },
+      "clis": {
+        "title": "CLIs",
+        "description": "Kommandozeilen-KI-Assistenten, die die Kraft großer Sprachmodelle direkt in Ihr Terminal bringen. Führen Sie komplexe Aufgaben mit natürlicher Sprache direkt von Ihrer Shell aus."
+      },
+      "extensions": {
+        "title": "Erweiterungen",
+        "description": "KI-gestützte Coding-Erweiterungen und Plugins für Ihre bevorzugte IDE. Von Code-Vervollständigung bis zu intelligentem Refactoring verbessern Sie Ihre Entwicklungserfahrung mit KI-Unterstützung."
+      },
+      "models": {
+        "title": "Modelle",
+        "description": "Die Intelligenzschicht. Große Sprachmodelle optimiert für Code-Generierung, Verständnis und Analyse. Vergleichen Sie Spezifikationen, Preise und Fähigkeiten führender KI-Modelle."
+      },
+      "modelProviders": {
+        "title": "Modellanbieter",
+        "description": "LLM-API-Anbieter, die Zugang zu verschiedenen KI-Modellen bieten. Von DeepSeek bis OpenRouter entdecken Sie Plattformen, die Ihre KI-Coding-Tools mit einheitlichen APIs und Modellzugriff versorgen."
+      },
+      "vendors": {
+        "title": "Anbieter",
+        "description": "Führende Unternehmen und Organisationen, die KI-Technologien entwickeln. Von OpenAI bis Anthropic entdecken Sie die Anbieter hinter der KI-Coding-Revolution."
+      }
+    },
+    "ides": {
+      "title": "IDEs",
+      "subtitle": "KI-verbesserte integrierte Entwicklungsumgebungen",
+      "compareAll": "Alle Vergleichen",
+      "noMatches": "Keine IDEs entsprechen Ihren Filtern",
+      "allIDEs": "Alle IDEs"
+    },
+    "clis": {
+      "title": "CLIs",
+      "subtitle": "KI-gestützte Kommandozeilen-Coding-Assistenten",
+      "compareAll": "Alle Vergleichen",
+      "noMatches": "Keine CLIs entsprechen Ihren Filtern",
+      "allCLIs": "Alle CLIs"
+    },
+    "extensions": {
+      "title": "Erweiterungen",
+      "subtitle": "KI-gestützte Coding-Erweiterungen und Plugins",
+      "compareAll": "Alle Vergleichen",
+      "noMatches": "Keine Erweiterungen entsprechen Ihren Filtern",
+      "allExtensions": "Alle Erweiterungen"
+    },
+    "models": {
+      "title": "Modelle",
+      "subtitle": "Große Sprachmodelle optimiert für Code-Generierung und Analyse",
+      "compareAll": "Alle Vergleichen",
+      "size": "Größe:",
+      "context": "Kontext:",
+      "pricing": "Preise:"
+    },
+    "modelProviders": {
+      "title": "Modellanbieter",
+      "subtitle": "LLM-API-Anbieter, die Zugang zu verschiedenen KI-Modellen bieten",
+      "foundationProviders": "Foundation-Modellanbieter",
+      "serviceProviders": "Modell-Service-Anbieter"
+    },
+    "vendors": {
+      "title": "Anbieter",
+      "subtitle": "Führende Unternehmen und Organisationen, die KI-Technologien entwickeln"
+    }
+  },
+
+  "stackDetailPages": {
+    "ideDetail": {
+      "breadcrumb": {
+        "aiCodingStack": "AI Coding Stack",
+        "ides": "IDEs"
+      },
+      "allIDEs": "Alle IDEs"
+    },
+    "cliDetail": {
+      "breadcrumb": {
+        "aiCodingStack": "AI Coding Stack",
+        "clis": "CLIs"
+      },
+      "allCLIs": "Alle CLIs"
+    },
+    "extensionDetail": {
+      "breadcrumb": {
+        "aiCodingStack": "AI Coding Stack",
+        "extensions": "Erweiterungen"
+      },
+      "allExtensions": "Alle Erweiterungen"
+    },
+    "modelDetail": {
+      "breadcrumb": {
+        "aiCodingStack": "AI Coding Stack",
+        "models": "Modelle"
+      },
+      "metaTitle": "KI-Coding-Modell | Spezifikationen & Preise 2025",
+      "specifications": "Spezifikationen",
+      "modelSize": "Modellgröße",
+      "totalContext": "Gesamtkontext",
+      "maxOutput": "Max. Ausgabe",
+      "pricing": "Preise",
+      "backTo": "Zurück zu",
+      "allModels": "Alle Modelle",
+      "labels": {
+        "size": "Größe",
+        "context": "Kontext",
+        "maxOutput": "Max. Ausgabe",
+        "pricing": "Preise",
+        "website": "Website",
+        "huggingface": "HuggingFace",
+        "artificialAnalysis": "Artificial Analysis",
+        "openrouter": "OpenRouter"
+      }
+    },
+    "vendorDetail": {
+      "breadcrumb": {
+        "home": "Startseite",
+        "aiCodingStack": "AI Coding Stack",
+        "vendors": "Anbieter"
+      },
+      "metaTitle": "KI-Technologie-Anbieter | Unternehmensprofil 2025",
+      "metaDescription": "Erkunden Sie {name}s KI-Produkte und -Technologien.",
+      "vendorDetails": "Anbieterdetails",
+      "productsTitle": "Produkte",
+      "productsSubtitle": "Erkunden Sie Produkte und Dienstleistungen von {vendorName}",
+      "quickLinks": "Schnelllinks",
+      "communityLinks": "Community-Links",
+      "website": "Website",
+      "visitWebsite": "Offizielle Website besuchen",
+      "github": "GitHub",
+      "viewGitHub": "Open-Source-Repositories anzeigen",
+      "twitter": "Twitter",
+      "followTwitter": "Auf Twitter folgen",
+      "linkedin": "LinkedIn",
+      "connectLinkedIn": "Auf LinkedIn verbinden",
+      "youtube": "YouTube",
+      "watchYouTube": "Videos auf YouTube ansehen",
+      "discord": "Discord",
+      "joinDiscord": "Discord-Community beitreten",
+      "reddit": "Reddit",
+      "joinReddit": "Reddit-Community beitreten",
+      "backTo": "Zurück zu",
+      "allVendors": "Alle Anbieter",
+      "indexLabel": "INDEX"
+    },
+    "modelProviderDetail": {
+      "breadcrumb": {
+        "aiCodingStack": "AI Coding Stack",
+        "modelProviders": "Modellanbieter"
+      },
+      "findOnAiPlatforms": "Auf KI-Plattformen finden",
+      "communityLinks": "Community-Links",
+      "aiPlatforms": {
+        "huggingface": {
+          "title": "HuggingFace",
+          "description": "Auf HuggingFace ansehen"
+        },
+        "artificialAnalysis": {
+          "title": "Artificial Analysis",
+          "description": "Leistungsanalyse anzeigen"
+        },
+        "openrouter": {
+          "title": "OpenRouter",
+          "description": "Über OpenRouter zugreifen"
+        }
+      },
+      "community": {
+        "linkedin": {
+          "title": "LinkedIn",
+          "description": "Folgen Sie uns"
+        },
+        "twitter": {
+          "title": "Twitter",
+          "description": "Folgen Sie uns"
+        },
+        "github": {
+          "title": "GitHub",
+          "description": "Repos anzeigen"
+        },
+        "youtube": {
+          "title": "YouTube",
+          "description": "Videos ansehen"
+        },
+        "discord": {
+          "title": "Discord",
+          "description": "Community beitreten"
+        },
+        "reddit": {
+          "title": "Reddit",
+          "description": "An Diskussion teilnehmen"
+        }
+      },
+      "backTo": "Zurück zu",
+      "allModelProviders": "Alle Modellanbieter",
+      "indexLabel": "INDEX"
+    }
+  },
+
+  "comparison": {
+    "breadcrumb": {
+      "aiCodingStack": "AI Coding Stack",
+      "comparison": "Vergleich",
+      "ides": "IDEs",
+      "clis": "CLIs",
+      "extensions": "Erweiterungen",
+      "models": "Modelle"
+    },
+    "ides": {
+      "title": "IDE-Vergleich",
+      "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von KI-gestützten IDEs nebeneinander.",
+      "backTo": "Zurück zu IDEs"
+    },
+    "clis": {
+      "title": "CLI-Vergleich",
+      "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von KI-Coding-CLI-Tools nebeneinander.",
+      "backTo": "Zurück zu CLIs"
+    },
+    "extensions": {
+      "title": "Erweiterungs-Vergleich",
+      "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von KI-Coding-Erweiterungen nebeneinander.",
+      "backTo": "Zurück zu Erweiterungen"
+    },
+    "models": {
+      "title": "Modell-Vergleich",
+      "subtitle": "Vergleichen Sie Spezifikationen und Preise von KI-Coding-Modellen nebeneinander.",
+      "backTo": "Zurück zu Modellen"
+    },
+    "columns": {
+      "vendor": "Anbieter",
+      "license": "Lizenz",
+      "version": "Version",
+      "platforms": "Plattformen",
+      "supportedIdes": "Unterstützte IDEs",
+      "githubStars": "Stars",
+      "links": "Links",
+      "freePlan": "Kostenloser Plan",
+      "startingPrice": "Startpreis",
+      "maxPrice": "Höchstpreis",
+      "modelSize": "Modellgröße",
+      "contextLength": "Kontextlänge",
+      "maxOutput": "Max. Ausgabe",
+      "pricing": "Preise"
+    },
+    "linkTitles": {
+      "officialWebsite": "Offizielle Website",
+      "download": "Download",
+      "documentation": "Dokumentation"
+    },
+    "pricingValues": {
+      "free": "Kostenlos",
+      "freeOnly": "Nur kostenlos"
+    }
+  },
+
+  "license": {
+    "proprietary": "Proprietär"
+  },
+
+  "components": {
+    "sidebar": {
+      "selectItem": "Wählen Sie ein Element aus",
+      "backToTop": "Zurück nach oben"
+    },
+    "docsSidebar": {
+      "title": "DOKUMENTATION",
+      "label": "Dokumentation"
+    },
+    "collectionScrollbar": {
+      "specifications": "Spezifikationen & Protokolle",
+      "articles": "Featured Artikel",
+      "tools": "Ökosystem-Tools"
+    },
+    "stackSidebar": {
+      "title": "STACKS",
+      "label": "AI Coding Stack",
+      "overview": "Übersicht"
+    },
+    "filterSortBar": {
+      "sort": "Sortieren:",
+      "sortDefault": "Standard",
+      "sortNameAsc": "Name (A-Z)",
+      "sortNameDesc": "Name (Z-A)",
+      "license": "Lizenz:",
+      "openSource": "Open Source",
+      "proprietary": "Proprietär",
+      "platform": "Plattform:",
+      "clearFilters": "Filter löschen"
+    },
+    "backToNavigation": {
+      "backTo": "Zurück zu",
+      "indexLabel": "INDEX"
+    },
+    "productHero": {
+      "vendor": "Anbieter",
+      "version": "Version",
+      "license": "Lizenz",
+      "stars": "Stars",
+      "platforms": "Plattformen",
+      "type": "Typ",
+      "visitWebsite": "Website Besuchen",
+      "documentation": "Dokumentation",
+      "download": "Download",
+      "getApiKey": "API-Schlüssel Abrufen",
+      "supportedIdes": "Unterstützte IDEs",
+      "runtime": "Laufzeit",
+      "categories": {
+        "IDE": "IDE",
+        "CLI": "CLI",
+        "EXTENSION": "Erweiterung",
+        "MODEL": "Modell",
+        "PROVIDER": "Modellanbieter",
+        "VENDOR": "Anbieter"
+      },
+      "providerTypes": {
+        "foundation-model-provider": "Foundation-Modellanbieter",
+        "model-service-provider": "Modell-Service-Anbieter"
+      }
+    },
+    "productCommands": {
+      "install": "Installieren",
+      "launch": "Starten",
+      "command": "Befehl"
+    },
+    "productLinks": {
+      "download": "Download",
+      "resources": "Ressourcen",
+      "community": "Community",
+      "changelog": "Änderungsprotokoll",
+      "pricing": "Preise",
+      "blog": "Blog",
+      "mcp": "MCP-Dokumentation",
+      "issue": "Issue-Tracker",
+      "linkedin": "LinkedIn",
+      "twitter": "X (Twitter)",
+      "github": "GitHub",
+      "youtube": "YouTube",
+      "discord": "Discord",
+      "reddit": "Reddit"
+    },
+    "productPricing": {
+      "title": "Preise",
+      "viewFullDetails": "Vollständige Preisdetails anzeigen →"
+    }
+  }
+}
