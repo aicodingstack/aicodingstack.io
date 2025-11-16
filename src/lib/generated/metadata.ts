@@ -418,7 +418,7 @@ export const faqMetadata: Record<string, FaqItem[]> = {
     },
     {
       "title": "Is AI Coding Stack open source? Can I contribute?",
-      "content": "Yes, AI Coding Stack is fully open source and released under the MIT license. The project welcomes contributions from the community! You can contribute by:\n\n- Adding or updating tool metadata in the manifests directory (ides.json, clis.json, models.json, providers.json)\n- Reporting inaccuracies or outdated information\n- Suggesting new tools to be added\n- Improving documentation and guides\n- Submitting pull requests\n\nVisit the [GitHub repository](https://github.com/ericyangpan/aicodingstack) to get started with contributing to the AI coding ecosystem."
+      "content": "Yes, AI Coding Stack is fully open source and released under the Apache 2.0 license. The project welcomes contributions from the community! You can contribute by:\n\n- Adding or updating tool metadata in the manifests directory (ides.json, clis.json, models.json, providers.json)\n- Reporting inaccuracies or outdated information\n- Suggesting new tools to be added\n- Improving documentation and guides\n- Submitting pull requests\n\nVisit the [GitHub repository](https://github.com/ericyangpan/aicodingstack) to get started with contributing to the AI coding ecosystem."
     },
     {
       "title": "How does AI Coding Stack help me choose the right tools?",

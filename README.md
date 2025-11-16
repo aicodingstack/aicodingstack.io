@@ -33,7 +33,7 @@ We welcome contributions! Please check the manifest files in `manifests/` to add
 
 ## License
 
-MIT
+Apache 2.0
 
 ## Website
 
