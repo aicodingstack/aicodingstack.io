@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { getArticles } from '@/lib/articles';
+import { getArticles } from '@/lib/generated/articles';
 import { getTranslations } from 'next-intl/server';
 import { buildCanonicalUrl, buildOpenGraph, buildTwitterCard, buildTitle } from '@/lib/metadata';
 

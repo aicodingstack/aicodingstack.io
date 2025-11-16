@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import DocsSidebar from '@/components/sidebar/DocsSidebar';
-import { getDocSections, getDocComponents } from '@/lib/docs';
+import { getDocSections, getDocComponents } from '@/lib/generated/docs';
 import { getTranslations } from 'next-intl/server';
 import { buildCanonicalUrl, buildOpenGraph, buildTwitterCard, buildTitle } from '@/lib/metadata';
 
