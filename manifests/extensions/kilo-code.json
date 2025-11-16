@@ -11,8 +11,10 @@
   "docsUrl": "https://kilocode.ai/docs",
   "verified": false,
   "vendor": "Kilo Code",
-  "license": "Apache-2.0",
   "latestVersion": "4.110.0",
+  "githubUrl": "https://github.com/Kilo-Org/kilocode",
+  "githubStars": 12.2,
+  "license": "Apache-2.0",
   "pricing": [
     {
       "name": "Free (Open Source)",
@@ -59,15 +61,22 @@
     "reddit": "https://www.reddit.com/r/kilocode",
     "blog": "https://kilocode.ai/blog"
   },
-  "githubStars": 12.2,
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "kilo-code"
+    }
+  ],
   "supportedIdes": [
     {
       "ideId": "vscode",
       "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=kilocode.Kilo-Code",
-      "installCommand": "code --install-extension kilocode.Kilo-Code",
+      "installUri": "vscode:extension/kilocode.kilo-code"
+    },
+    {
+      "ideId": "jetbrains",
+      "marketplaceUrl": "https://plugins.jetbrains.com/plugin/28350-kilo-code",
       "installUri": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/Kilo-Org/kilocode"
+  ]
 }

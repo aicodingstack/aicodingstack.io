@@ -11,8 +11,10 @@
   "docsUrl": "https://www.codebuddy.ai/docs/ide/",
   "verified": false,
   "vendor": "Tencent",
-  "license": "Proprietary",
   "latestVersion": "1.0.0",
+  "githubUrl": null,
+  "githubStars": null,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Free",
@@ -52,7 +54,7 @@
     "reddit": null,
     "blog": "https://www.codebuddy.ai/blog"
   },
-  "githubStars": null,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "Windows",
@@ -66,7 +68,5 @@
       "launchCommand": "codebuddy",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": null
+  ]
 }

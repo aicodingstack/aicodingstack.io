@@ -11,8 +11,10 @@
   "docsUrl": "https://docs.windsurf.com",
   "verified": false,
   "vendor": "Cognition",
-  "license": "Proprietary",
   "latestVersion": "1.12.12",
+  "githubUrl": null,
+  "githubStars": null,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Free",
@@ -59,7 +61,7 @@
     "reddit": null,
     "blog": "https://windsurf.com/blog"
   },
-  "githubStars": null,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
@@ -79,7 +81,5 @@
       "launchCommand": "windsurf",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": null
+  ]
 }

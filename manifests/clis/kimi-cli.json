@@ -11,8 +11,10 @@
   "docsUrl": "https://github.com/MoonshotAI/kimi-cli#readme",
   "verified": false,
   "vendor": "Moonshot AI",
-  "license": "Apache-2.0",
   "latestVersion": "0.42",
+  "githubUrl": "https://github.com/MoonshotAI/kimi-cli",
+  "githubStars": 2.6,
+  "license": "Apache-2.0",
   "pricing": [
     {
       "name": "Free Tier",
@@ -38,7 +40,7 @@
     "reddit": null,
     "blog": null
   },
-  "githubStars": 2.6,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
@@ -52,7 +54,5 @@
       "launchCommand": "kimi",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/MoonshotAI/kimi-cli"
+  ]
 }

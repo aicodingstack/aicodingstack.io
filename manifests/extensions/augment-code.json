@@ -11,8 +11,10 @@
   "docsUrl": "https://www.augmentcode.com/docs",
   "verified": false,
   "vendor": "Augment",
-  "license": "Proprietary",
   "latestVersion": "1.0.0",
+  "githubUrl": "https://github.com/augmentcode",
+  "githubStars": null,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Individual",
@@ -52,27 +54,17 @@
     "reddit": null,
     "blog": "https://www.augmentcode.com/blog"
   },
-  "githubStars": null,
+  "relatedProducts": [],
   "supportedIdes": [
     {
       "ideId": "vscode",
       "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=augmentcode.augment-code",
-      "installCommand": "code --install-extension augmentcode.augment-code",
       "installUri": null
     },
     {
       "ideId": "jetbrains",
       "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=augmentcode.augment-code",
-      "installCommand": "code --install-extension augmentcode.augment-code",
-      "installUri": null
-    },
-    {
-      "ideId": "neovim",
-      "marketplaceUrl": null,
-      "installCommand": null,
       "installUri": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/augmentcode"
+  ]
 }

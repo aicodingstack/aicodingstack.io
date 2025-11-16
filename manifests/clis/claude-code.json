@@ -1,59 +1,61 @@
 {
   "id": "claude-code",
   "name": "Claude Code",
-  "description": "Anthropic's Claude Code is an AI coding assistant that understands your codebase and executes tasks through natural language. Handles routine coding, explains complex code, and manages git workflows.",
+  "description": "AI coding assistant CLI for your terminal. Understands your codebase, executes tasks via natural language, explains code, and manages git workflows with MCP integration.",
   "i18n": {
     "zh-Hans": {
-      "description": "Anthropic 的 Claude Code 是一款 AI 编码助手，理解您的代码库并通过自然语言执行任务。处理常规编码、解释复杂代码并管理 git 工作流。"
+      "description": "终端 AI 编码助手 CLI。理解代码库，通过自然语言执行任务，解释代码，管理 git 工作流，并支持 MCP 集成。"
     }
   },
-  "websiteUrl": "https://claude.com/product/claude-code",
-  "docsUrl": "https://docs.claude.com/en/docs/claude-code/overview",
-  "verified": false,
+  "websiteUrl": "https://code.claude.com",
+  "docsUrl": "https://docs.claude.com",
+  "verified": true,
   "vendor": "Anthropic",
+  "latestVersion": "2.0.42",
+  "githubUrl": "https://github.com/anthropics/claude-code",
+  "githubStars": 42,
   "license": "Proprietary",
-  "latestVersion": "2.0.9",
   "pricing": [
     {
-      "name": "Pro plan",
+      "name": "Pro",
       "value": 20,
       "currency": "USD",
-      "per": "month",
+      "per": "Month",
       "category": "Individual"
     },
     {
-      "name": "Pro plan",
+      "name": "Pro",
       "value": 17,
       "currency": "USD",
-      "per": "month (Annual)",
+      "per": "Month (Annual)",
       "category": "Individual"
     },
     {
-      "name": "Max 5x plan",
+      "name": "Max 5x",
       "value": 100,
       "currency": "USD",
-      "per": "month",
+      "per": "Month",
       "category": "Individual"
     },
     {
-      "name": "Max 20x plan",
+      "name": "Max 20x",
       "value": 200,
       "currency": "USD",
-      "per": "month",
+      "per": "Month",
       "category": "Individual"
     },
     {
-      "name": "Team plan",
-      "value": 150,
+      "name": "Team",
+      "value": null,
       "currency": "USD",
-      "per": "user/month",
-      "category": "Business"
+      "per": "Custom",
+      "category": "Team"
     },
     {
-      "name": "Enterprise plan",
+      "name": "Enterprise",
       "value": null,
-      "currency": null,
-      "per": "custom",
+      "currency": "USD",
+      "per": "Custom",
       "category": "Enterprise"
     }
   ],
@@ -65,35 +67,38 @@
     "issue": "https://github.com/anthropics/claude-code/issues"
   },
   "communityUrls": {
-    "linkedin": null,
-    "twitter": "https://twitter.com/AnthropicAI",
+    "linkedin": "https://www.linkedin.com/company/anthropicresearch",
+    "twitter": "https://x.com/claudeai",
     "github": "https://github.com/anthropics/claude-code",
-    "youtube": null,
-    "discord": null,
+    "youtube": "https://www.youtube.com/@anthropic-ai",
+    "discord": "https://anthropic.com/discord",
     "reddit": "https://www.reddit.com/r/ClaudeCode",
-    "blog": null
+    "blog": "https://www.claude.com/blog"
   },
-  "githubStars": 42,
+  "relatedProducts": [
+    {
+      "type": "extension",
+      "productId": "claude-code"
+    }
+  ],
   "platforms": [
     {
       "os": "macOS",
-      "installCommand": "npm install -g @anthropic-ai/claude-code",
+      "installCommand": "curl -fsSL https://claude.ai/install.sh | bash",
       "launchCommand": "claude",
       "installPath": null
     },
     {
       "os": "Windows",
-      "installCommand": "npm install -g @anthropic-ai/claude-code",
+      "installCommand": "irm https://claude.ai/install.ps1 | iex",
       "launchCommand": "claude",
       "installPath": null
     },
     {
       "os": "Linux",
-      "installCommand": "npm install -g @anthropic-ai/claude-code",
+      "installCommand": "curl -fsSL https://claude.ai/install.sh | bash",
       "launchCommand": "claude",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/anthropics/claude-code"
+  ]
 }

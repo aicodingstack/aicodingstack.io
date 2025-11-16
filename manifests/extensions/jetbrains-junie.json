@@ -11,8 +11,10 @@
   "docsUrl": "https://www.jetbrains.com/help/junie/",
   "verified": false,
   "vendor": "JetBrains",
-  "license": "Proprietary",
   "latestVersion": "1.0.0",
+  "githubUrl": null,
+  "githubStars": null,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "JetBrains AI Subscription",
@@ -52,15 +54,12 @@
     "reddit": "https://www.reddit.com/r/JetBrains",
     "blog": "https://blog.jetbrains.com/junie/"
   },
-  "githubStars": null,
+  "relatedProducts": [],
   "supportedIdes": [
     {
       "ideId": "jetbrains",
       "marketplaceUrl": "https://plugins.jetbrains.com/plugin/junie",
-      "installCommand": "Install via JetBrains Plugin Marketplace",
       "installUri": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": null
+  ]
 }

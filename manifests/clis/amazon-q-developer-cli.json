@@ -11,8 +11,10 @@
   "docsUrl": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line.html",
   "verified": false,
   "vendor": "Amazon Web Services",
-  "license": "Apache-2.0, MIT",
   "latestVersion": "v1.18.1",
+  "githubUrl": "https://github.com/aws/amazon-q-developer-cli",
+  "githubStars": 1.8,
+  "license": "Apache-2.0, MIT",
   "pricing": [
     {
       "name": "Free Tier",
@@ -52,7 +54,7 @@
     "reddit": null,
     "blog": "https://aws.amazon.com/blogs/aws/"
   },
-  "githubStars": 1.8,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
@@ -72,7 +74,5 @@
       "launchCommand": "q",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/aws/amazon-q-developer-cli"
+  ]
 }

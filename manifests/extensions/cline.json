@@ -11,8 +11,10 @@
   "docsUrl": "https://cline.bot/docs",
   "verified": false,
   "vendor": "Cline Bot",
-  "license": "Apache-2.0",
   "latestVersion": "1.0.0",
+  "githubUrl": "https://github.com/cline/cline",
+  "githubStars": 52.3,
+  "license": "Apache-2.0",
   "pricing": [
     {
       "name": "Free",
@@ -52,33 +54,17 @@
     "reddit": "https://reddit.com/r/Cline",
     "blog": "https://cline.bot/blog"
   },
-  "githubStars": 52.3,
+  "relatedProducts": [],
   "supportedIdes": [
     {
       "ideId": "vscode",
       "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=Cline.cline",
-      "installCommand": "code --install-extension Cline.cline",
       "installUri": null
     },
     {
       "ideId": "jetbrains",
       "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=Cline.cline",
-      "installCommand": "code --install-extension Cline.cline",
-      "installUri": null
-    },
-    {
-      "ideId": "cursor",
-      "marketplaceUrl": null,
-      "installCommand": null,
-      "installUri": null
-    },
-    {
-      "ideId": "windsurf",
-      "marketplaceUrl": null,
-      "installCommand": null,
       "installUri": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/cline/cline"
+  ]
 }

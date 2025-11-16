@@ -11,8 +11,10 @@
   "docsUrl": "https://docs.trae.ai",
   "verified": false,
   "vendor": "ByteDance",
-  "license": "Proprietary",
   "latestVersion": "2.7.1",
+  "githubUrl": null,
+  "githubStars": null,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Free",
@@ -45,7 +47,7 @@
     "reddit": "https://www.reddit.com/r/Trae_ai/",
     "blog": "https://www.trae.ai/blog"
   },
-  "githubStars": null,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
@@ -65,7 +67,5 @@
       "launchCommand": "trae",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": null
+  ]
 }

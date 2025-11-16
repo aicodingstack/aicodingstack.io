@@ -11,8 +11,10 @@
   "docsUrl": "https://geminicli.com/docs/",
   "verified": false,
   "vendor": "Google",
-  "license": "Apache-2.0",
   "latestVersion": "0.5.4",
+  "githubUrl": "https://github.com/google-gemini/gemini-cli",
+  "githubStars": 82.1,
+  "license": "Apache-2.0",
   "pricing": [
     {
       "name": "Individual (Free)",
@@ -52,7 +54,7 @@
     "reddit": null,
     "blog": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-cli-custom-slash-commands"
   },
-  "githubStars": 82.1,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
@@ -72,7 +74,5 @@
       "launchCommand": "gemini",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/google-gemini/gemini-cli"
+  ]
 }

@@ -11,8 +11,10 @@
   "docsUrl": "https://ampcode.com",
   "verified": false,
   "vendor": "Sourcegraph",
-  "license": "Proprietary",
   "latestVersion": "1.0.0",
+  "githubUrl": null,
+  "githubStars": null,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Amp Free",
@@ -52,27 +54,12 @@
     "reddit": null,
     "blog": null
   },
-  "githubStars": null,
+  "relatedProducts": [],
   "supportedIdes": [
     {
       "ideId": "vscode",
       "marketplaceUrl": "https://ampcode.com",
-      "installCommand": "Install via VS Code Marketplace, Cursor, or Windsurf",
-      "installUri": null
-    },
-    {
-      "ideId": "cursor",
-      "marketplaceUrl": null,
-      "installCommand": null,
-      "installUri": null
-    },
-    {
-      "ideId": "windsurf",
-      "marketplaceUrl": null,
-      "installCommand": null,
       "installUri": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": null
+  ]
 }

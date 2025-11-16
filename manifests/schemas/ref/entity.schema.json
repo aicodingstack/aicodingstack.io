@@ -30,7 +30,10 @@
       "description": "Official website URL"
     },
     "docsUrl": {
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "uri",
       "pattern": "^https://",
       "description": "Documentation URL (null if not available)"
@@ -50,4 +53,3 @@
     "verified"
   ]
 }
-

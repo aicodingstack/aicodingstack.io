@@ -11,8 +11,10 @@
   "docsUrl": "https://opencode.ai",
   "verified": false,
   "vendor": "SST",
-  "license": "MIT",
   "latestVersion": "0.15.16",
+  "githubUrl": "https://github.com/sst/opencode",
+  "githubStars": 32.4,
+  "license": "MIT",
   "pricing": [
     {
       "name": "Open Source",
@@ -45,7 +47,7 @@
     "reddit": null,
     "blog": null
   },
-  "githubStars": 32.4,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
@@ -65,7 +67,5 @@
       "launchCommand": "opencode",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/sst/opencode"
+  ]
 }

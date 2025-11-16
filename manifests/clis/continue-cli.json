@@ -11,8 +11,10 @@
   "docsUrl": "https://docs.continue.dev",
   "verified": false,
   "vendor": "Continue Dev",
-  "license": "Apache-2.0",
   "latestVersion": "1.5.7",
+  "githubUrl": "https://github.com/continuedev/continue",
+  "githubStars": 29.8,
+  "license": "Apache-2.0",
   "pricing": [
     {
       "name": "Solo (Open Source)",
@@ -52,7 +54,7 @@
     "reddit": null,
     "blog": "https://www.continue.dev/blog"
   },
-  "githubStars": 29.8,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
@@ -72,7 +74,5 @@
       "launchCommand": "continue",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/continuedev/continue"
+  ]
 }

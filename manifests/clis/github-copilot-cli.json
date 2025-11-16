@@ -11,8 +11,10 @@
   "docsUrl": "https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli",
   "verified": false,
   "vendor": "GitHub",
-  "license": "Proprietary",
   "latestVersion": "0.0.334",
+  "githubUrl": "https://github.com/github/copilot-cli",
+  "githubStars": 5,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Copilot Pro",
@@ -59,7 +61,7 @@
     "reddit": null,
     "blog": "https://github.blog/changelog/2025-04-20-github-copilot-cli-public-preview/"
   },
-  "githubStars": 5,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
@@ -79,7 +81,5 @@
       "launchCommand": "copilot",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/github/copilot-cli"
+  ]
 }

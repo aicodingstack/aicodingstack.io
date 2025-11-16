@@ -11,8 +11,10 @@
   "docsUrl": "https://developers.openai.com/codex/cli",
   "verified": false,
   "vendor": "OpenAI",
-  "license": "Apache-2.0",
   "latestVersion": "0.44.0",
+  "githubUrl": "https://github.com/openai/codex",
+  "githubStars": 50.2,
+  "license": "Apache-2.0",
   "pricing": [
     {
       "name": "ChatGPT Plus",
@@ -59,7 +61,7 @@
     "reddit": null,
     "blog": "https://openai.com/blog/introducing-codex-cli"
   },
-  "githubStars": 50.2,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
@@ -79,7 +81,5 @@
       "launchCommand": "codex",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/openai/codex"
+  ]
 }

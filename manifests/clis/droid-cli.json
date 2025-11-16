@@ -11,8 +11,10 @@
   "docsUrl": "https://docs.factory.ai/cli/getting-started/overview",
   "verified": false,
   "vendor": "Factory AI",
-  "license": "Proprietary",
   "latestVersion": "3.2.0",
+  "githubUrl": null,
+  "githubStars": null,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Pro",
@@ -52,7 +54,7 @@
     "reddit": null,
     "blog": null
   },
-  "githubStars": null,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
@@ -72,7 +74,5 @@
       "launchCommand": "droid",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": null
+  ]
 }

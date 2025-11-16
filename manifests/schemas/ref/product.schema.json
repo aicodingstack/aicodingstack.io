@@ -67,7 +67,8 @@
         "license",
         "pricing",
         "resourceUrls",
-        "communityUrls"
+        "communityUrls",
+        "relatedProducts"
       ]
     }
   ],

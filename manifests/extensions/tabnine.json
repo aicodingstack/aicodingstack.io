@@ -11,8 +11,10 @@
   "docsUrl": "https://docs.tabnine.com/",
   "verified": false,
   "vendor": "Tabnine",
-  "license": "Proprietary",
   "latestVersion": "4.0.0",
+  "githubUrl": "https://github.com/codota/TabNine",
+  "githubStars": 10.8,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Starter (Free)",
@@ -59,15 +61,12 @@
     "reddit": null,
     "blog": "https://www.tabnine.com/blog"
   },
-  "githubStars": 10.8,
+  "relatedProducts": [],
   "supportedIdes": [
     {
       "ideId": "vscode",
       "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode",
-      "installCommand": "code --install-extension TabNine.tabnine-vscode",
       "installUri": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/codota/TabNine"
+  ]
 }

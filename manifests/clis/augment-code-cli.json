@@ -11,8 +11,10 @@
   "docsUrl": "https://docs.augmentcode.com/cli",
   "verified": false,
   "vendor": "Augment",
-  "license": "Proprietary",
   "latestVersion": "0.7.0",
+  "githubUrl": "https://github.com/augmentcode/auggie",
+  "githubStars": 0.1,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Individual",
@@ -52,8 +54,12 @@
     "reddit": null,
     "blog": "https://www.augmentcode.com/blog"
   },
-  "githubUrl": "https://github.com/augmentcode/auggie",
-  "githubStars": 0.1,
+  "relatedProducts": [
+    {
+      "type": "extension",
+      "productId": "augment-code"
+    }
+  ],
   "platforms": [
     {
       "os": "macOS",
@@ -72,12 +78,6 @@
       "installCommand": "npm install -g @augmentcode/npm i @augmentcode/auggie",
       "launchCommand": "auggie",
       "installPath": null
-    }
-  ],
-  "relatedProducts": [
-    {
-      "type": "extension",
-      "productId": "augment-code"
     }
   ]
 }

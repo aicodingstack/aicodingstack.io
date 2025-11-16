@@ -11,8 +11,10 @@
   "docsUrl": "https://docs.qoder.com",
   "verified": false,
   "vendor": "Alibaba",
-  "license": "Proprietary",
   "latestVersion": "Latest",
+  "githubUrl": null,
+  "githubStars": null,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Free",
@@ -59,7 +61,7 @@
     "reddit": null,
     "blog": null
   },
-  "githubStars": null,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
@@ -73,7 +75,5 @@
       "launchCommand": "qoder",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": null
+  ]
 }

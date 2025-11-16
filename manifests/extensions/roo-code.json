@@ -11,8 +11,10 @@
   "docsUrl": "https://roocode.com/docs",
   "verified": false,
   "vendor": "Roo Code",
-  "license": "Apache-2.0",
   "latestVersion": "3.28.18",
+  "githubUrl": "https://github.com/RooCodeInc/Roo-Code",
+  "githubStars": 20.7,
+  "license": "Apache-2.0",
   "pricing": [
     {
       "name": "Free (Open Source)",
@@ -52,27 +54,12 @@
     "reddit": "https://www.reddit.com/r/roocode",
     "blog": null
   },
-  "githubStars": 20.7,
+  "relatedProducts": [],
   "supportedIdes": [
     {
       "ideId": "vscode",
       "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline",
-      "installCommand": "code --install-extension RooVeterinaryInc.roo-cline",
-      "installUri": null
-    },
-    {
-      "ideId": "cursor",
-      "marketplaceUrl": null,
-      "installCommand": null,
-      "installUri": null
-    },
-    {
-      "ideId": "windsurf",
-      "marketplaceUrl": null,
-      "installCommand": null,
       "installUri": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/RooCodeInc/Roo-Code"
+  ]
 }

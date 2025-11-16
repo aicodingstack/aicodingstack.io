@@ -11,8 +11,10 @@
   "docsUrl": "https://zed.dev/docs",
   "verified": false,
   "vendor": "Zed Industries",
-  "license": "GPL-3.0",
   "latestVersion": "0.140.0",
+  "githubUrl": "https://github.com/zed-industries/zed",
+  "githubStars": 69.5,
+  "license": "GPL-3.0",
   "pricing": [
     {
       "name": "Free",
@@ -52,7 +54,12 @@
     "reddit": null,
     "blog": "https://zed.dev/blog"
   },
-  "githubStars": 69.5,
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "zed"
+    }
+  ],
   "platforms": [
     {
       "os": "macOS",
@@ -72,12 +79,5 @@
       "launchCommand": "zed",
       "installPath": null
     }
-  ],
-  "relatedProducts": [
-    {
-      "type": "cli",
-      "productId": "zed"
-    }
-  ],
-  "githubUrl": "https://github.com/zed-industries/zed"
+  ]
 }

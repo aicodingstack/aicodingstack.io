@@ -11,8 +11,10 @@
   "docsUrl": "https://kiro.dev/docs",
   "verified": false,
   "vendor": "Amazon Web Services",
-  "license": "Proprietary",
   "latestVersion": "1.0",
+  "githubUrl": "https://github.com/kirodotdev/Kiro",
+  "githubStars": 2.2,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Free",
@@ -66,7 +68,7 @@
     "reddit": null,
     "blog": "https://kiro.dev/blog"
   },
-  "githubStars": 2.2,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
@@ -86,7 +88,5 @@
       "launchCommand": "kiro",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/kirodotdev/Kiro"
+  ]
 }

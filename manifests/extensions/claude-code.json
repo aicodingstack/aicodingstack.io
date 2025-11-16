@@ -7,60 +7,90 @@
       "description": "Claude Code 是一个直接集成到 VS Code 中的 AI 编码助手。提供智能代码建议、解释，并帮助调试和代码生成。"
     }
   },
-  "websiteUrl": "https://claude.com/product/claude-code",
-  "docsUrl": "https://docs.claude.com/en/docs/claude-code/overview",
-  "verified": false,
+  "websiteUrl": "https://code.claude.com",
+  "docsUrl": "https://docs.claude.com",
+  "verified": true,
   "vendor": "Anthropic",
+  "latestVersion": "2.0.42",
+  "githubUrl": "https://github.com/anthropics/claude-code",
+  "githubStars": 42,
   "license": "Proprietary",
-  "latestVersion": "1.0.0",
   "pricing": [
     {
-      "name": "Pro plan",
+      "name": "Pro",
       "value": 20,
       "currency": "USD",
-      "per": "month",
+      "per": "Month",
       "category": "Individual"
     },
     {
-      "name": "Team plan",
-      "value": 150,
+      "name": "Pro",
+      "value": 17,
       "currency": "USD",
-      "per": "user/month",
-      "category": "Business"
+      "per": "Month (Annual)",
+      "category": "Individual"
     },
     {
-      "name": "Enterprise plan",
+      "name": "Max 5x",
+      "value": 100,
+      "currency": "USD",
+      "per": "Month",
+      "category": "Individual"
+    },
+    {
+      "name": "Max 20x",
+      "value": 200,
+      "currency": "USD",
+      "per": "Month",
+      "category": "Individual"
+    },
+    {
+      "name": "Team",
       "value": null,
-      "currency": null,
-      "per": "custom",
+      "currency": "USD",
+      "per": "Custom",
+      "category": "Team"
+    },
+    {
+      "name": "Enterprise",
+      "value": null,
+      "currency": "USD",
+      "per": "Custom",
       "category": "Enterprise"
     }
   ],
   "resourceUrls": {
-    "download": "https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code",
-    "changelog": "https://github.com/anthropics/claude-code/releases",
+    "download": null,
+    "changelog": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
     "pricing": "https://claude.com/pricing",
-    "mcp": null,
+    "mcp": "https://docs.claude.com/en/docs/claude-code/mcp",
     "issue": "https://github.com/anthropics/claude-code/issues"
   },
   "communityUrls": {
-    "linkedin": null,
-    "twitter": "https://twitter.com/AnthropicAI",
+    "linkedin": "https://www.linkedin.com/company/anthropicresearch",
+    "twitter": "https://x.com/claudeai",
     "github": "https://github.com/anthropics/claude-code",
-    "youtube": null,
-    "discord": null,
-    "reddit": null,
-    "blog": null
+    "youtube": "https://www.youtube.com/@anthropic-ai",
+    "discord": "https://anthropic.com/discord",
+    "reddit": "https://www.reddit.com/r/ClaudeCode",
+    "blog": "https://www.claude.com/blog"
   },
-  "githubStars": 42,
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "claude-code"
+    }
+  ],
   "supportedIdes": [
     {
       "ideId": "vscode",
       "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code",
-      "installCommand": "code --install-extension anthropic.claude-code",
+      "installUri": "vscode:extension/anthropic.claude-code"
+    },
+    {
+      "ideId": "jetbrains",
+      "marketplaceUrl": "https://plugins.jetbrains.com/plugin/27310-claude-code-beta-",
       "installUri": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/anthropics/claude-code"
+  ]
 }

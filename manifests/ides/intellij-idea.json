@@ -11,8 +11,10 @@
   "docsUrl": "https://www.jetbrains.com/help/idea/",
   "verified": false,
   "vendor": "JetBrains",
-  "license": "Proprietary",
   "latestVersion": "2024.3",
+  "githubUrl": "https://github.com/JetBrains/intellij-community",
+  "githubStars": 19.1,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Community",
@@ -52,7 +54,12 @@
     "reddit": "https://www.reddit.com/r/IntelliJIDEA",
     "blog": "https://blog.jetbrains.com/idea/"
   },
-  "githubStars": 19.1,
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "idea"
+    }
+  ],
   "platforms": [
     {
       "os": "macOS",
@@ -72,12 +79,5 @@
       "launchCommand": "idea",
       "installPath": null
     }
-  ],
-  "relatedProducts": [
-    {
-      "type": "cli",
-      "productId": "idea"
-    }
-  ],
-  "githubUrl": "https://github.com/JetBrains/intellij-community"
+  ]
 }

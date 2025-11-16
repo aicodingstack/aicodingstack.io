@@ -11,8 +11,10 @@
   "docsUrl": "https://cursor.com/docs",
   "verified": false,
   "vendor": "Anysphere",
-  "license": "Proprietary",
   "latestVersion": "1.7.28",
+  "githubUrl": "https://github.com/cursor/cursor",
+  "githubStars": 31.6,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Hobby",
@@ -73,7 +75,12 @@
     "reddit": "https://www.reddit.com/r/cursor",
     "blog": "https://cursor.com/blog"
   },
-  "githubStars": 31.6,
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "cursor-agent"
+    }
+  ],
   "platforms": [
     {
       "os": "macOS",
@@ -93,12 +100,5 @@
       "launchCommand": "cursor",
       "installPath": null
     }
-  ],
-  "relatedProducts": [
-    {
-      "type": "cli",
-      "productId": "cursor-agent"
-    }
-  ],
-  "githubUrl": "https://github.com/cursor/cursor"
+  ]
 }

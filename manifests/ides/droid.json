@@ -11,8 +11,10 @@
   "docsUrl": "https://docs.factory.ai",
   "verified": false,
   "vendor": "Factory.ai",
-  "license": "Proprietary",
   "latestVersion": "Latest",
+  "githubUrl": null,
+  "githubStars": null,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "BYOK",
@@ -59,7 +61,12 @@
     "reddit": null,
     "blog": "https://factory.ai/news"
   },
-  "githubStars": null,
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "factory"
+    }
+  ],
   "platforms": [
     {
       "os": "macOS",
@@ -79,12 +86,5 @@
       "launchCommand": null,
       "installPath": null
     }
-  ],
-  "relatedProducts": [
-    {
-      "type": "cli",
-      "productId": "factory"
-    }
-  ],
-  "githubUrl": null
+  ]
 }

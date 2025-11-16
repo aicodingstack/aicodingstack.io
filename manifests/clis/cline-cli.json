@@ -11,8 +11,10 @@
   "docsUrl": "https://cline.bot/docs",
   "verified": false,
   "vendor": "Cline Bot Inc",
-  "license": "Proprietary",
   "latestVersion": "Preview",
+  "githubUrl": null,
+  "githubStars": null,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Teams",
@@ -38,7 +40,7 @@
     "reddit": "https://www.reddit.com/r/cline",
     "blog": "https://cline.bot/blog"
   },
-  "githubStars": null,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
@@ -58,7 +60,5 @@
       "launchCommand": "cline",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": null
+  ]
 }

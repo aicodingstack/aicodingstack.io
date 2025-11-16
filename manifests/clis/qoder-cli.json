@@ -11,8 +11,10 @@
   "docsUrl": "https://docs.qoder.com/cli/quick-start",
   "verified": false,
   "vendor": "Qoder",
-  "license": "Proprietary",
   "latestVersion": "Latest",
+  "githubUrl": null,
+  "githubStars": null,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Free Tier",
@@ -52,7 +54,7 @@
     "reddit": null,
     "blog": null
   },
-  "githubStars": null,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
@@ -72,7 +74,5 @@
       "launchCommand": "qodercli",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": null
+  ]
 }

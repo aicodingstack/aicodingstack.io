@@ -11,8 +11,10 @@
   "docsUrl": "https://github.com/shareAI-lab/Kode/blob/main/README.md",
   "verified": false,
   "vendor": "shareAI Lab",
-  "license": "Apache-2.0",
   "latestVersion": "1.2.0",
+  "githubUrl": "https://github.com/shareAI-lab/Kode",
+  "githubStars": 3.4,
+  "license": "Apache-2.0",
   "pricing": [
     {
       "name": "Open Source",
@@ -38,7 +40,7 @@
     "reddit": null,
     "blog": null
   },
-  "githubStars": 3.4,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
@@ -58,7 +60,5 @@
       "launchCommand": "kode (alias: kwa or kd)",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/shareAI-lab/Kode"
+  ]
 }

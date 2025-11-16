@@ -11,8 +11,10 @@
   "docsUrl": "https://neovateai.dev/en/docs/overview/",
   "verified": false,
   "vendor": "Ant Group",
-  "license": "MIT",
   "latestVersion": "0.12.7",
+  "githubUrl": "https://github.com/neovateai/neovate-code",
+  "githubStars": 1,
+  "license": "MIT",
   "pricing": [
     {
       "name": "Free (Individual)",
@@ -52,7 +54,7 @@
     "reddit": null,
     "blog": "https://neovateai.dev/en/blog"
   },
-  "githubStars": 1,
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
@@ -72,7 +74,5 @@
       "launchCommand": "neovate (alias: neo)",
       "installPath": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": "https://github.com/neovateai/neovate-code"
+  ]
 }

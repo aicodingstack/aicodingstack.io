@@ -11,8 +11,10 @@
   "docsUrl": "https://docs.github.com/en/copilot",
   "verified": false,
   "vendor": "GitHub",
-  "license": "Proprietary",
   "latestVersion": "1.0.0",
+  "githubUrl": null,
+  "githubStars": null,
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Copilot Individual",
@@ -52,15 +54,12 @@
     "reddit": null,
     "blog": "https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/"
   },
-  "githubStars": null,
+  "relatedProducts": [],
   "supportedIdes": [
     {
       "ideId": "vscode",
       "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=GitHub.copilot",
-      "installCommand": "code --install-extension GitHub.copilot",
       "installUri": null
     }
-  ],
-  "relatedProducts": [],
-  "githubUrl": null
+  ]
 }

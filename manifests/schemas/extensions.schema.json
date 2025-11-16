@@ -31,7 +31,8 @@
       "properties": {
         "ideId": {
           "type": "string",
-          "description": "IDE identifier (e.g., 'vscode', 'intellij', 'vim')"
+          "enum": ["vscode", "jetbrains", "zed"],
+          "description": "IDE identifier (e.g., 'vscode', 'jetbrains')"
         },
         "marketplaceUrl": {
           "type": ["string", "null"],
@@ -39,17 +40,13 @@
           "pattern": "^https://",
           "description": "Extension marketplace URL for this IDE"
         },
-        "installCommand": {
-          "type": ["string", "null"],
-          "description": "CLI command to install the extension"
-        },
         "installUri": {
           "type": ["string", "null"],
           "format": "uri",
           "description": "Deep link URI for one-click installation"
         }
       },
-      "required": ["ideId", "marketplaceUrl", "installCommand", "installUri"],
+      "required": ["ideId", "marketplaceUrl", "installUri"],
       "additionalProperties": false
     }
   }
