@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import DocsSidebar from '@/components/sidebar/DocsSidebar';
-import { getDocSections, getDocBySlug, getDocComponents } from '@/lib/docs';
+import { getDocSections, getDocBySlug, getDocComponents } from '@/lib/generated/docs';
 import { generateDocsMetadata } from '@/lib/metadata';
 
 type Props = {
@@ -11,10 +11,10 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-  const SUPPORTED_LOCALES = ['en', 'zh-Hans'];
+  const { locales } = await import('@/i18n/config');
   const staticParams: Array<{ locale: string; slug: string }> = [];
 
-  for (const locale of SUPPORTED_LOCALES) {
+  for (const locale of locales) {
     const docSections = getDocSections(locale);
     for (const doc of docSections) {
       staticParams.push({ locale, slug: doc.slug });

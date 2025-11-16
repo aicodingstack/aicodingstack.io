@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { getArticles, getArticleBySlug, getArticleComponents } from '@/lib/articles';
+import { getArticles, getArticleBySlug, getArticleComponents } from '@/lib/generated/articles';
 import { generateArticleMetadata } from '@/lib/metadata';
 
 type Props = {
@@ -10,10 +10,10 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-  const SUPPORTED_LOCALES = ['en', 'zh-Hans'];
+  const { locales } = await import('@/i18n/config');
   const params: { slug: string; locale: string }[] = [];
 
-  for (const locale of SUPPORTED_LOCALES) {
+  for (const locale of locales) {
     const articles = getArticles(locale);
     for (const article of articles) {
       params.push({

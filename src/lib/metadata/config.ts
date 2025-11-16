@@ -3,6 +3,8 @@
  * Centralized configuration for site-wide metadata constants and category-specific SEO keywords
  */
 
+import { locales, defaultLocale } from '@/i18n/config';
+
 export const SITE_CONFIG = {
   name: 'AI Coding Stack',
   url: 'https://aicodingstack.io',
@@ -11,8 +13,8 @@ export const SITE_CONFIG = {
     site: '@aicodingstack',
     creator: '@aicodingstack',
   },
-  defaultLocale: 'en' as const,
-  supportedLocales: ['en', 'zh-Hans'] as const,
+  defaultLocale,
+  supportedLocales: locales,
 } as const;
 
 export const OG_IMAGE_CONFIG = {
