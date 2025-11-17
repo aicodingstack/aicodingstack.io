@@ -1,0 +1,42 @@
+# CODEOWNERS file for AI Coding Stack
+# This file defines who should review pull requests for specific parts of the codebase.
+#
+# Syntax: path/pattern @username @team
+# Lines are matched from top to bottom, last match wins.
+#
+# Learn more: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owners for everything in the repo
+# TODO: Replace with actual GitHub usernames of maintainers
+* @aicodingstack/maintainers
+
+# Manifest files - require review from maintainers
+# This is the most important contribution area
+/manifests/**/*.json @aicodingstack/maintainers
+
+# Schema files - require careful review as they affect validation
+/manifests/schemas/**/*.json @aicodingstack/maintainers
+
+# Build and validation scripts - require careful review
+/scripts/**/*.mjs @aicodingstack/maintainers
+
+# GitHub Actions workflows - require review for security
+/.github/workflows/**/*.yml @aicodingstack/maintainers
+
+# Configuration files
+/package.json @aicodingstack/maintainers
+/tsconfig.json @aicodingstack/maintainers
+/next.config.mjs @aicodingstack/maintainers
+/wrangler.toml @aicodingstack/maintainers
+
+# Documentation - can be reviewed by broader team
+/docs/**/*.md @aicodingstack/maintainers
+/README.md @aicodingstack/maintainers
+/CONTRIBUTING.md @aicodingstack/maintainers
+
+# Application code - reviewed by maintainers
+/src/**/*.ts @aicodingstack/maintainers
+/src/**/*.tsx @aicodingstack/maintainers
+
+# Content files (MDX) - can be reviewed by content team
+/content/**/*.mdx @aicodingstack/maintainers

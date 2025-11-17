@@ -1,0 +1,75 @@
+name: Dependabot Auto-merge
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge:
+    name: Auto-merge Dependabot PRs
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Enable auto-merge for minor and patch updates
+        if: |
+          (steps.metadata.outputs.update-type == 'version-update:semver-minor' ||
+           steps.metadata.outputs.update-type == 'version-update:semver-patch')
+        run: |
+          gh pr merge --auto --squash "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Comment on major updates
+        if: steps.metadata.outputs.update-type == 'version-update:semver-major'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `⚠️ **Major version update detected**
+
+              This PR updates \`${{ steps.metadata.outputs.dependency-names }}\` with a **major** version change.
+
+              Please review the changelog and test thoroughly before merging:
+              - Check for breaking changes
+              - Review migration guide
+              - Test locally
+              - Verify all CI checks pass
+
+              This PR will **not** be auto-merged and requires manual review.`
+            })
+
+      - name: Label based on update type
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const updateType = '${{ steps.metadata.outputs.update-type }}';
+            const labels = ['dependencies', 'automated'];
+
+            if (updateType.includes('semver-major')) {
+              labels.push('major-update', 'needs-review');
+            } else if (updateType.includes('semver-minor')) {
+              labels.push('minor-update', 'auto-merge');
+            } else if (updateType.includes('semver-patch')) {
+              labels.push('patch-update', 'auto-merge');
+            }
+
+            github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: labels
+            });

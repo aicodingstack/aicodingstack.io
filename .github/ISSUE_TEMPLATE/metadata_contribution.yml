@@ -1,0 +1,151 @@
+name: Metadata Contribution
+description: Add or update information about an AI coding tool, model, IDE, CLI, or provider
+title: "[Metadata]: "
+labels: ["metadata", "contribution"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to AI Coding Stack! This form will guide you through adding or updating metadata for AI coding tools.
+
+        Please check our [Schema Documentation](https://github.com/aicodingstack/aicodingstack.io/tree/main/manifests/schemas) to understand the required fields.
+
+  - type: dropdown
+    id: contribution-type
+    attributes:
+      label: Contribution Type
+      description: What type of contribution are you making?
+      options:
+        - Add new tool/model/provider
+        - Update existing entry
+        - Fix incorrect information
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which category does this entry belong to?
+      options:
+        - IDE (Integrated Development Environment)
+        - CLI (Command-line Tool)
+        - Extension (Editor Extension/Plugin)
+        - Model (Language Model)
+        - Provider (API Provider)
+        - Vendor (Company/Organization)
+    validations:
+      required: true
+
+  - type: input
+    id: tool-name
+    attributes:
+      label: Tool/Model Name
+      description: Official name of the tool, model, or provider
+      placeholder: e.g., Cursor, GPT-4, Claude Code
+    validations:
+      required: true
+
+  - type: input
+    id: vendor
+    attributes:
+      label: Vendor/Company
+      description: Company or organization that develops this tool
+      placeholder: e.g., Anthropic, OpenAI, Microsoft
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Brief description of the tool/model (1-2 sentences)
+      placeholder: A clear, concise description of what this tool does or what makes it unique
+    validations:
+      required: true
+
+  - type: input
+    id: website-url
+    attributes:
+      label: Website URL
+      description: Official website URL
+      placeholder: https://example.com
+    validations:
+      required: true
+
+  - type: input
+    id: docs-url
+    attributes:
+      label: Documentation URL
+      description: Link to official documentation
+      placeholder: https://docs.example.com
+
+  - type: input
+    id: github-url
+    attributes:
+      label: GitHub Repository (if applicable)
+      description: Link to the GitHub repository
+      placeholder: https://github.com/owner/repo
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: |
+        For **Models**: Include size, context length, max output, pricing information
+        For **IDEs/CLIs**: Include latest version, supported platforms
+        For **Providers**: Include supported models, API documentation
+
+        See schema files for complete field requirements:
+        - [Model Schema](https://github.com/aicodingstack/aicodingstack.io/blob/main/manifests/schemas/model.schema.json)
+        - [IDE Schema](https://github.com/aicodingstack/aicodingstack.io/blob/main/manifests/schemas/ide.schema.json)
+        - [CLI Schema](https://github.com/aicodingstack/aicodingstack.io/blob/main/manifests/schemas/cli.schema.json)
+      placeholder: |
+        Example for a model:
+        - Size: 175B parameters
+        - Context: 128K tokens
+        - Max output: 4K tokens
+        - Pricing: $0.01/1K input tokens, $0.03/1K output tokens
+
+  - type: checkboxes
+    id: validation
+    attributes:
+      label: Pre-submission Checklist
+      description: Please verify the following before submitting
+      options:
+        - label: I have verified all URLs are accessible
+          required: true
+        - label: I have checked that this entry doesn't already exist
+          required: true
+        - label: The information provided is accurate and from official sources
+          required: true
+        - label: I have reviewed the appropriate schema for required fields
+          required: true
+
+  - type: textarea
+    id: json-draft
+    attributes:
+      label: JSON Draft (Optional)
+      description: If you've prepared a JSON manifest file, paste it here
+      placeholder: |
+        {
+          "name": "Example Tool",
+          "id": "example-tool",
+          "vendor": "Example Inc",
+          "description": "An example AI coding tool",
+          "websiteUrl": "https://example.com",
+          "docsUrl": "https://docs.example.com"
+        }
+      render: json
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        ### What happens next?
+
+        1. A maintainer will review your submission
+        2. We may ask for clarification or additional information
+        3. Once approved, we'll guide you through creating a pull request or create it for you
+        4. After merging, your contribution will appear on [aicodingstack.io](https://aicodingstack.io)
+
+        Thank you for contributing to the AI coding community! 🚀

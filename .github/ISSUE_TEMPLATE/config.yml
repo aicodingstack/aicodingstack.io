@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/aicodingstack/aicodingstack.io/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: Documentation
+    url: https://github.com/aicodingstack/aicodingstack.io/blob/main/docs
+    about: Read the technical documentation
+  - name: Schema Documentation
+    url: https://github.com/aicodingstack/aicodingstack.io/tree/main/manifests/schemas
+    about: View JSON schema documentation for manifests

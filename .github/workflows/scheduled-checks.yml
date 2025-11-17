@@ -1,0 +1,147 @@
+name: Scheduled Checks
+
+on:
+  schedule:
+    # Run URL validation every Monday at 00:00 UTC
+    - cron: '0 0 * * 1'
+    # Run GitHub stars update daily at 06:00 UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  validate-urls:
+    name: Validate URLs
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 0 * * 1' || github.event_name == 'workflow_dispatch'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate URLs
+        id: validate
+        run: npm run validate:urls
+        continue-on-error: true
+
+      - name: Create issue if URLs are broken
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = '🔗 Broken URLs detected in manifests';
+            const body = `## Scheduled URL Validation Failed
+
+            The weekly URL validation check has detected broken or inaccessible URLs in the manifest files.
+
+            **Check run:** [View details](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+            ### Action Required
+            - Review the URLs flagged in the validation logs
+            - Update or remove broken URLs
+            - Consider if these tools/services have been discontinued
+
+            ### Affected Files
+            Check the workflow logs for specific files and URLs that failed validation.
+
+            ---
+            *This issue was automatically created by the scheduled URL validation workflow.*`;
+
+            // Check if similar issue already exists
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'automated,url-validation'
+            });
+
+            if (issues.data.length === 0) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                body: body,
+                labels: ['automated', 'url-validation', 'maintenance']
+              });
+            }
+
+  update-github-stars:
+    name: Update GitHub Stars
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # TODO: Configure GITHUB_TOKEN with appropriate permissions
+      # The fetch-github-stars script may need authentication
+      - name: Fetch GitHub stars
+        run: node scripts/fetch-github-stars.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code manifests/ || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Create pull request
+        if: steps.git-check.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: update GitHub stars data'
+          title: '🌟 Update GitHub Stars Data'
+          body: |
+            ## Automated GitHub Stars Update
+
+            This PR updates the GitHub stars count for tools in our manifest files.
+
+            **Updated:** ${{ steps.git-check.outputs.changed }}
+
+            ### Changes
+            - Fetched latest star counts from GitHub API
+            - Updated manifest files with current data
+
+            ### Review Checklist
+            - [ ] Verify star counts look reasonable
+            - [ ] No unexpected changes to other fields
+
+            ---
+            *This PR was automatically created by the scheduled GitHub stars update workflow.*
+          branch: automated/update-github-stars
+          delete-branch: true
+          labels: |
+            automated
+            metadata
+            github-stars
+
+  workflow-summary:
+    name: Workflow Summary
+    runs-on: ubuntu-latest
+    needs: [validate-urls, update-github-stars]
+    if: always()
+    steps:
+      - name: Summary
+        run: |
+          echo "## Scheduled Checks Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- URL Validation: ${{ needs.validate-urls.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "- GitHub Stars Update: ${{ needs.update-github-stars.result }}" >> $GITHUB_STEP_SUMMARY

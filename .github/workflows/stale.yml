@@ -1,0 +1,69 @@
+name: Stale Issues and PRs
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run daily at midnight UTC
+  workflow_dispatch: # Allow manual triggering
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    name: Mark stale issues and PRs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Stale action
+        uses: actions/stale@v9
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+          # Issue settings
+          stale-issue-message: |
+            This issue has been automatically marked as stale because it has not had any activity for 30 days.
+
+            **What happens next?**
+            - If there's no activity within the next 30 days, this issue will be automatically closed.
+            - If you're still experiencing this issue or it's still relevant, please comment to keep it open.
+            - If this was resolved, please close the issue.
+
+            Thank you for your contributions to AI Coding Stack! 🙏
+          close-issue-message: |
+            This issue has been automatically closed due to inactivity.
+
+            If you're still experiencing this issue or believe it should be reopened, please feel free to create a new issue with updated information.
+          days-before-issue-stale: 30
+          days-before-issue-close: 30
+          stale-issue-label: 'stale'
+          exempt-issue-labels: 'pinned,security,good-first-issue,help-wanted,roadmap'
+
+          # PR settings
+          stale-pr-message: |
+            This pull request has been automatically marked as stale because it has not had any activity for 30 days.
+
+            **What happens next?**
+            - If there's no activity within the next 14 days, this PR will be automatically closed.
+            - To keep this PR active, please:
+              - Address any review comments
+              - Rebase on the latest main branch
+              - Provide an update on the status
+
+            Thank you for your contribution! 🙏
+          close-pr-message: |
+            This pull request has been automatically closed due to inactivity.
+
+            If you'd like to continue this work, please feel free to reopen this PR or create a new one.
+          days-before-pr-stale: 30
+          days-before-pr-close: 14
+          stale-pr-label: 'stale'
+          exempt-pr-labels: 'pinned,security,work-in-progress'
+
+          # General settings
+          operations-per-run: 30
+          remove-stale-when-updated: true
+          ascending: true # Process oldest first
+
+          # Custom messages for different issue types
+          exempt-all-milestones: true
+          exempt-draft-pr: true
