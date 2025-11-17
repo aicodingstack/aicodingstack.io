@@ -4,6 +4,8 @@
  * Do not edit manually - run the script to regenerate
  */
 
+import type { ManifestProvider } from '../../types/manifests';
+
 import Deepseek from '../../../manifests/providers/deepseek.json';
 import Minimax from '../../../manifests/providers/minimax.json';
 import Moonshot from '../../../manifests/providers/moonshot.json';
@@ -18,7 +20,7 @@ export const providersData = [
   Openrouter,
   Siliconflow,
   ZAi
-];
+] as unknown as ManifestProvider[];
 
 export type Provider = typeof Deepseek;
 

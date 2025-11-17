@@ -4,6 +4,8 @@
  * Do not edit manually - run the script to regenerate
  */
 
+import type { ManifestVendor } from '../../types/manifests';
+
 import Anthropic from '../../../manifests/vendors/anthropic.json';
 import Augment from '../../../manifests/vendors/augment.json';
 import Deepseek from '../../../manifests/vendors/deepseek.json';
@@ -30,7 +32,7 @@ export const vendorsData = [
   Siliconflow,
   Sourcegraph,
   ZAi
-];
+] as unknown as ManifestVendor[];
 
 export type Vendor = typeof Anthropic;
 

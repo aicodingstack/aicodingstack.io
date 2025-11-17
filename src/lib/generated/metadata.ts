@@ -455,7 +455,7 @@ export const faqMetadata: Record<string, FaqItem[]> = {
     },
     {
       "title": "Is AI Coding Stack open source? Can I contribute?",
-      "content": "Yes, AI Coding Stack is fully open source and released under the Apache 2.0 license. The project welcomes contributions from the community! You can contribute by:\n\n- Adding or updating tool metadata in the manifests directory (ides.json, clis.json, models.json, providers.json)\n- Reporting inaccuracies or outdated information\n- Suggesting new tools to be added\n- Improving documentation and guides\n- Submitting pull requests\n\nVisit the [GitHub repository](https://github.com/ericyangpan/aicodingstack) to get started with contributing to the AI coding ecosystem."
+      "content": "Yes, AI Coding Stack is fully open source and released under the Apache 2.0 license. The project welcomes contributions from the community! You can contribute by:\n\n- Adding or updating tool metadata in the manifests directory (ides.json, clis.json, models.json, providers.json)\n- Reporting inaccuracies or outdated information\n- Suggesting new tools to be added\n- Improving documentation and guides\n- Submitting pull requests\n\nVisit the [GitHub repository](https://github.com/aicodingstack/aicodingstack) to get started with contributing to the AI coding ecosystem."
     },
     {
       "title": "How does AI Coding Stack help me choose the right tools?",
@@ -477,7 +477,7 @@ export const faqMetadata: Record<string, FaqItem[]> = {
     },
     {
       "title": "AI Coding Stack 是开源的吗? 我可以贡献吗?",
-      "content": "是的，AI Coding Stack 完全开源，采用 MIT 许可证发布。项目欢迎社区贡献！你可以通过以下方式贡献：\n\n- 在 manifests 目录中添加或更新工具元数据 (ides.json, clis.json, models.json, providers.json)\n- 报告不准确或过时的信息\n- 建议添加新工具\n- 改进文档和指南\n- 提交 pull request\n\n访问 [GitHub 仓库](https://github.com/ericyangpan/aicodingstack) 开始为 AI 编码生态系统做贡献。"
+      "content": "是的，AI Coding Stack 完全开源，采用 MIT 许可证发布。项目欢迎社区贡献！你可以通过以下方式贡献：\n\n- 在 manifests 目录中添加或更新工具元数据 (ides.json, clis.json, models.json, providers.json)\n- 报告不准确或过时的信息\n- 建议添加新工具\n- 改进文档和指南\n- 提交 pull request\n\n访问 [GitHub 仓库](https://github.com/aicodingstack/aicodingstack) 开始为 AI 编码生态系统做贡献。"
     },
     {
       "title": "AI Coding Stack 如何帮助我选择合适的工具?",
@@ -499,7 +499,7 @@ export const faqMetadata: Record<string, FaqItem[]> = {
     },
     {
       "title": "Ist AI Coding Stack Open Source? Kann ich beitragen?",
-      "content": "Ja, AI Coding Stack ist vollständig Open Source und unter der Apache 2.0 Lizenz veröffentlicht. Das Projekt begrüßt Beiträge aus der Community! Sie können beitragen, indem Sie:\n\n- Tool-Metadaten im Manifests-Verzeichnis hinzufügen oder aktualisieren (ides.json, clis.json, models.json, providers.json)\n- Ungenauigkeiten oder veraltete Informationen melden\n- Neue Tools vorschlagen, die hinzugefügt werden sollen\n- Dokumentation und Leitfäden verbessern\n- Pull-Requests einreichen\n\nBesuchen Sie das [GitHub-Repository](https://github.com/ericyangpan/aicodingstack), um mit dem Beitragen zum KI-Coding-Ökosystem zu beginnen."
+      "content": "Ja, AI Coding Stack ist vollständig Open Source und unter der Apache 2.0 Lizenz veröffentlicht. Das Projekt begrüßt Beiträge aus der Community! Sie können beitragen, indem Sie:\n\n- Tool-Metadaten im Manifests-Verzeichnis hinzufügen oder aktualisieren (ides.json, clis.json, models.json, providers.json)\n- Ungenauigkeiten oder veraltete Informationen melden\n- Neue Tools vorschlagen, die hinzugefügt werden sollen\n- Dokumentation und Leitfäden verbessern\n- Pull-Requests einreichen\n\nBesuchen Sie das [GitHub-Repository](https://github.com/aicodingstack/aicodingstack), um mit dem Beitragen zum KI-Coding-Ökosystem zu beginnen."
     },
     {
       "title": "Wie hilft mir AI Coding Stack bei der Auswahl der richtigen Tools?",
@@ -512,7 +512,7 @@ export const stackCounts: Record<string, number> = {
   "ides": 11,
   "clis": 17,
   "extensions": 10,
-  "models": 11,
+  "models": 23,
   "model-providers": 6,
   "vendors": 12
 };

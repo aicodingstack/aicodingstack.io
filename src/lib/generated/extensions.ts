@@ -4,6 +4,8 @@
  * Do not edit manually - run the script to regenerate
  */
 
+import type { ManifestExtension } from '../../types/manifests';
+
 import Amp from '../../../manifests/extensions/amp.json';
 import AugmentCode from '../../../manifests/extensions/augment-code.json';
 import ClaudeCode from '../../../manifests/extensions/claude-code.json';
@@ -26,7 +28,7 @@ export const extensionsData = [
   KiloCode,
   RooCode,
   Tabnine
-];
+] as unknown as ManifestExtension[];
 
 export type Extension = typeof Amp;
 

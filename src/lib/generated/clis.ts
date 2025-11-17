@@ -4,6 +4,8 @@
  * Do not edit manually - run the script to regenerate
  */
 
+import type { ManifestCLI } from '../../types/manifests';
+
 import AmazonQDeveloperCli from '../../../manifests/clis/amazon-q-developer-cli.json';
 import AmpCli from '../../../manifests/clis/amp-cli.json';
 import AugmentCodeCli from '../../../manifests/clis/augment-code-cli.json';
@@ -40,7 +42,7 @@ export const clisData = [
   NeovateCode,
   Opencode,
   QoderCli
-];
+] as unknown as ManifestCLI[];
 
 export type Cli = typeof AmazonQDeveloperCli;
 

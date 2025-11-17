@@ -4,31 +4,57 @@
  * Do not edit manually - run the script to regenerate
  */
 
+import type { ManifestModel } from '../../types/manifests';
+
 import Claude37Sonnet from '../../../manifests/models/claude-3-7-sonnet.json';
+import ClaudeHaiku45 from '../../../manifests/models/claude-haiku-4-5.json';
 import ClaudeOpus41 from '../../../manifests/models/claude-opus-4-1.json';
+import ClaudeSonnet45 from '../../../manifests/models/claude-sonnet-4-5.json';
+import ClaudeSonnet4 from '../../../manifests/models/claude-sonnet-4.json';
 import DeepseekV3Terminus from '../../../manifests/models/deepseek-v3-terminus.json';
+import Gemini25Flash from '../../../manifests/models/gemini-2-5-flash.json';
+import Gemini25Pro from '../../../manifests/models/gemini-2-5-pro.json';
 import Glm46 from '../../../manifests/models/glm-4-6.json';
 import Gpt41 from '../../../manifests/models/gpt-4-1.json';
 import Gpt45 from '../../../manifests/models/gpt-4-5.json';
 import Gpt4o from '../../../manifests/models/gpt-4o.json';
+import Gpt51Codex from '../../../manifests/models/gpt-5-1-codex.json';
+import Gpt51 from '../../../manifests/models/gpt-5-1.json';
+import Gpt5Codex from '../../../manifests/models/gpt-5-codex.json';
+import Gpt5 from '../../../manifests/models/gpt-5.json';
+import GrokCodeFast1 from '../../../manifests/models/grok-code-fast-1.json';
 import KimiK20905 from '../../../manifests/models/kimi-k2-0905.json';
+import Llama4Maverick from '../../../manifests/models/llama-4-maverick.json';
 import MinimaxM2 from '../../../manifests/models/minimax-m2.json';
 import Qwen3Coder30bA3b from '../../../manifests/models/qwen3-coder-30b-a3b.json';
 import Qwen3Coder480bA35b from '../../../manifests/models/qwen3-coder-480b-a35b.json';
+import Qwen3CoderPlus from '../../../manifests/models/qwen3-coder-plus.json';
 
 export const modelsData = [
   Claude37Sonnet,
+  ClaudeHaiku45,
   ClaudeOpus41,
+  ClaudeSonnet45,
+  ClaudeSonnet4,
   DeepseekV3Terminus,
+  Gemini25Flash,
+  Gemini25Pro,
   Glm46,
   Gpt41,
   Gpt45,
   Gpt4o,
+  Gpt51Codex,
+  Gpt51,
+  Gpt5Codex,
+  Gpt5,
+  GrokCodeFast1,
   KimiK20905,
+  Llama4Maverick,
   MinimaxM2,
   Qwen3Coder30bA3b,
-  Qwen3Coder480bA35b
-];
+  Qwen3Coder480bA35b,
+  Qwen3CoderPlus
+] as unknown as ManifestModel[];
 
 export type Model = typeof Claude37Sonnet;
 

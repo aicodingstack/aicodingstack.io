@@ -4,6 +4,8 @@
  * Do not edit manually - run the script to regenerate
  */
 
+import type { ManifestIDE } from '../../types/manifests';
+
 import Codebuddy from '../../../manifests/ides/codebuddy.json';
 import Codeflicker from '../../../manifests/ides/codeflicker.json';
 import Cursor from '../../../manifests/ides/cursor.json';
@@ -28,7 +30,7 @@ export const idesData = [
   Vscode,
   Windsurf,
   Zed
-];
+] as unknown as ManifestIDE[];
 
 export type Ide = typeof Codebuddy;
 
