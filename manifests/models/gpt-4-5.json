@@ -1,0 +1,28 @@
+{
+  "id": "gpt-4-5",
+  "name": "GPT-4.5",
+  "description": "Released in February 2025 (codenamed Orion), GPT-4.5 combines unsupervised learning with supervised fine-tuning and RLHF, optimized for advanced coding and reasoning tasks.",
+  "i18n": {
+    "zh-Hans": {
+      "description": "2025年2月发布的 GPT-4.5（代号 Orion），主要使用无监督学习进行训练，同时也结合了监督微调及基于人类反馈的强化学习，专为高级编码和推理任务优化。"
+    }
+  },
+  "websiteUrl": "https://openai.com/",
+  "docsUrl": "https://platform.openai.com/docs/models/gpt-4",
+  "verified": false,
+  "vendor": "OpenAI",
+  "size": "Unknown",
+  "totalContext": "128K",
+  "maxOutput": "16K",
+  "tokenPricing": {
+    "input": 75.0,
+    "output": 150.0,
+    "cache": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-4.5",
+    "openrouter": "https://openrouter.ai/openai/gpt-4.5"
+  }
+}
+

@@ -1,0 +1,28 @@
+{
+  "id": "grok-code-fast-1",
+  "name": "Grok Code Fast 1",
+  "description": "A reasoning model that is blazing fast and excels at agentic coding, accessible for free in Kilo Code for a limited time. Note: prompts and completions are logged by xAI and used to improve the model.",
+  "i18n": {
+    "zh-Hans": {
+      "description": "一个极速推理模型，在代理式编码方面表现出色，在 Kilo Code 中限时免费提供。注意：提示和完成内容会被 xAI 记录并用于改进模型。"
+    }
+  },
+  "websiteUrl": "https://x.ai/",
+  "docsUrl": "https://docs.x.ai/",
+  "verified": false,
+  "vendor": "xAI",
+  "size": "Unknown",
+  "totalContext": "128K",
+  "maxOutput": "8K",
+  "tokenPricing": {
+    "input": 0,
+    "output": 0,
+    "cache": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}
+

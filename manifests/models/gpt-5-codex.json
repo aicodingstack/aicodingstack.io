@@ -1,0 +1,28 @@
+{
+  "id": "gpt-5-codex",
+  "name": "GPT-5 Codex",
+  "description": "GPT-5 optimized for software engineering. Supports interactive development, complex tasks, building projects, feature development, debugging, refactoring, and code review.",
+  "i18n": {
+    "zh-Hans": {
+      "description": "GPT-5 的专门版本，针对软件工程和编码工作流程进行了优化。专为交互式开发会话和长时间独立执行复杂工程任务而设计。支持从零开始构建项目、功能开发、调试、大规模重构和代码审查。"
+    }
+  },
+  "websiteUrl": "https://openai.com/",
+  "docsUrl": "https://platform.openai.com/docs/models/gpt-5-codex",
+  "verified": false,
+  "vendor": "OpenAI",
+  "size": "Unknown",
+  "totalContext": "128K",
+  "maxOutput": "16K",
+  "tokenPricing": {
+    "input": 1.25,
+    "output": 1.25,
+    "cache": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-5-codex",
+    "openrouter": "https://openrouter.ai/openai/gpt-5-codex"
+  }
+}
+

@@ -1,0 +1,28 @@
+{
+  "id": "claude-sonnet-4-5",
+  "name": "Claude Sonnet 4.5",
+  "description": "Anthropic's most advanced Sonnet model, optimized for agents and coding workflows. Delivers state-of-the-art performance on SWE-bench Verified with improvements in system design and security.",
+  "i18n": {
+    "zh-Hans": {
+      "description": "Anthropic 迄今为止最先进的 Sonnet 模型，针对真实世界的代理和编码工作流程进行了优化。在 SWE-bench Verified 等编码基准测试中表现出色，在系统设计、代码安全和规范遵循方面有所提升。"
+    }
+  },
+  "websiteUrl": "https://www.anthropic.com/",
+  "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
+  "verified": false,
+  "vendor": "Anthropic",
+  "size": "Unknown",
+  "totalContext": "200K",
+  "maxOutput": "8K",
+  "tokenPricing": {
+    "input": 3.0,
+    "output": 3.0,
+    "cache": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/claude-sonnet-4.5",
+    "openrouter": "https://openrouter.ai/anthropic/claude-sonnet-4.5"
+  }
+}
+

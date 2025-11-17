@@ -1,0 +1,28 @@
+{
+  "id": "gpt-4-1",
+  "name": "GPT-4.1",
+  "description": "Released in April 2025, GPT-4.1 shows particularly significant improvements in coding and frontend web development, featuring 1M token context window for complex coding tasks.",
+  "i18n": {
+    "zh-Hans": {
+      "description": "2025年4月发布的 GPT-4.1，在编码和前端 Web 开发方面表现出特别显著的改进，支持 100 万 token 上下文窗口，适用于复杂的编码任务。"
+    }
+  },
+  "websiteUrl": "https://openai.com/",
+  "docsUrl": "https://platform.openai.com/docs/models/gpt-4",
+  "verified": false,
+  "vendor": "OpenAI",
+  "size": "Unknown",
+  "totalContext": "1M",
+  "maxOutput": "16K",
+  "tokenPricing": {
+    "input": 3.0,
+    "output": 15.0,
+    "cache": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-4.1",
+    "openrouter": "https://openrouter.ai/openai/gpt-4.1"
+  }
+}
+

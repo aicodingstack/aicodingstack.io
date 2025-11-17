@@ -1,0 +1,28 @@
+{
+  "id": "qwen3-coder-plus",
+  "name": "Qwen3 Coder Plus",
+  "description": "Alibaba's proprietary Qwen3 Coder 480B. Powerful coding agent specializing in autonomous programming via tool calling and environment interaction.",
+  "i18n": {
+    "zh-Hans": {
+      "description": "阿里巴巴专有的开源 Qwen3 Coder 480B A35B 版本。强大的编码代理模型，专长于通过工具调用和环境交互进行自主编程，结合了编码能力和通用的多功能能力。"
+    }
+  },
+  "websiteUrl": "https://qwenlm.com/",
+  "docsUrl": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B",
+  "verified": false,
+  "vendor": "Alibaba",
+  "size": "480B",
+  "totalContext": "128K",
+  "maxOutput": "8K",
+  "tokenPricing": {
+    "input": 1.0,
+    "output": 1.0,
+    "cache": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B",
+    "artificialAnalysis": null,
+    "openrouter": "https://openrouter.ai/qwen/qwen3-coder-plus"
+  }
+}
+

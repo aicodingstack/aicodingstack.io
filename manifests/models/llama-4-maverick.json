@@ -1,0 +1,28 @@
+{
+  "id": "llama-4-maverick",
+  "name": "Llama 4 Maverick",
+  "description": "Meta's multimodal model with MoE architecture (128 experts, 17B active, 400B total). Supports multilingual text/image input and outputs text/code in 12 languages.",
+  "i18n": {
+    "zh-Hans": {
+      "description": "Meta 推出的高容量多模态语言模型，基于混合专家（MoE）架构构建，拥有 128 个专家，每次前向传播激活 170 亿参数（总计 400B）。支持多语言文本和图像输入，并生成多语言文本和代码输出，支持 12 种语言。"
+    }
+  },
+  "websiteUrl": "https://ai.meta.com/",
+  "docsUrl": "https://ai.meta.com/llama/",
+  "verified": false,
+  "vendor": "Meta",
+  "size": "400B",
+  "totalContext": "1M",
+  "maxOutput": "8K",
+  "tokenPricing": {
+    "input": 0.15,
+    "output": 0.15,
+    "cache": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/meta-llama/Llama-4-Maverick",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/llama-4-maverick",
+    "openrouter": "https://openrouter.ai/meta/llama-4-maverick"
+  }
+}
+

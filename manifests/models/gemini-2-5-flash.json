@@ -1,0 +1,28 @@
+{
+  "id": "gemini-2-5-flash",
+  "name": "Gemini 2.5 Flash",
+  "description": "Google's workhorse model for advanced reasoning, coding, mathematics, and science. Built-in thinking capabilities enable greater accuracy and nuanced context handling.",
+  "i18n": {
+    "zh-Hans": {
+      "description": "Google 最先进的主力模型，专为高级推理、编码、数学和科学任务设计。包含内置\"思考\"能力，能够提供更准确和细致的上下文处理响应。"
+    }
+  },
+  "websiteUrl": "https://deepmind.google/",
+  "docsUrl": "https://ai.google.dev/docs",
+  "verified": false,
+  "vendor": "Google",
+  "size": "Unknown",
+  "totalContext": "128K",
+  "maxOutput": "8K",
+  "tokenPricing": {
+    "input": 0.3,
+    "output": 0.3,
+    "cache": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gemini-2.5-flash",
+    "openrouter": "https://openrouter.ai/google/gemini-2.5-flash"
+  }
+}
+

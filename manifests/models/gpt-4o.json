@@ -1,0 +1,28 @@
+{
+  "id": "gpt-4o",
+  "name": "GPT-4o",
+  "description": "OpenAI's flagship multimodal model optimized for coding tasks, featuring 128K context window and advanced reasoning capabilities for code generation and debugging.",
+  "i18n": {
+    "zh-Hans": {
+      "description": "OpenAI 的旗舰多模态模型，专为编码任务优化，具备 128K 上下文窗口和先进的推理能力，适用于代码生成和调试。"
+    }
+  },
+  "websiteUrl": "https://openai.com/",
+  "docsUrl": "https://platform.openai.com/docs/models/gpt-4o",
+  "verified": false,
+  "vendor": "OpenAI",
+  "size": "Unknown",
+  "totalContext": "128K",
+  "maxOutput": "16K",
+  "tokenPricing": {
+    "input": 2.5,
+    "output": 10.0,
+    "cache": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-4o",
+    "openrouter": "https://openrouter.ai/openai/gpt-4o"
+  }
+}
+

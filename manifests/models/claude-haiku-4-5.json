@@ -1,0 +1,28 @@
+{
+  "id": "claude-haiku-4-5",
+  "name": "Claude Haiku 4.5",
+  "description": "Anthropic's fastest model, delivering near-frontier intelligence at low cost and latency. Matches Claude Sonnet 4 across reasoning, coding, and computer-use tasks for real-time applications.",
+  "i18n": {
+    "zh-Hans": {
+      "description": "Anthropic 最快、最高效的模型，以大型 Claude 模型的一小部分成本和延迟提供接近前沿的智能。在推理、编码和计算机使用任务方面与 Claude Sonnet 4 的性能相当，Haiku 4.5 为实时和大规模应用带来前沿级能力。"
+    }
+  },
+  "websiteUrl": "https://www.anthropic.com/",
+  "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
+  "verified": false,
+  "vendor": "Anthropic",
+  "size": "Unknown",
+  "totalContext": "200K",
+  "maxOutput": "8K",
+  "tokenPricing": {
+    "input": 1.0,
+    "output": 1.0,
+    "cache": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/claude-haiku-4.5",
+    "openrouter": "https://openrouter.ai/anthropic/claude-haiku-4.5"
+  }
+}
+

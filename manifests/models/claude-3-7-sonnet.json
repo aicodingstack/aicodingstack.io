@@ -1,0 +1,28 @@
+{
+  "id": "claude-3-7-sonnet",
+  "name": "Claude 3.7 Sonnet",
+  "description": "Released in February 2025, Claude 3.7 Sonnet is the world's first hybrid reasoning model, optimized for coding and frontend web development with 200K context window.",
+  "i18n": {
+    "zh-Hans": {
+      "description": "2025年2月发布的 Claude 3.7 Sonnet，是全球首个混合推理模型，结合了大语言模型和推理能力，用户可以选择实时快速作答或进行更深入的思考，在编码和前端 Web 开发方面表现出特别显著的改进。"
+    }
+  },
+  "websiteUrl": "https://www.anthropic.com/",
+  "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
+  "verified": false,
+  "vendor": "Anthropic",
+  "size": "Unknown",
+  "totalContext": "200K",
+  "maxOutput": "8K",
+  "tokenPricing": {
+    "input": 3.0,
+    "output": 15.0,
+    "cache": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/claude-3.7-sonnet",
+    "openrouter": "https://openrouter.ai/anthropic/claude-3.7-sonnet"
+  }
+}
+

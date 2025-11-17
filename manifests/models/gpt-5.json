@@ -1,0 +1,28 @@
+{
+  "id": "gpt-5",
+  "name": "GPT-5",
+  "description": "OpenAI's most advanced model with major improvements in reasoning, code quality, and UX. Optimized for complex tasks requiring step-by-step reasoning and high accuracy.",
+  "i18n": {
+    "zh-Hans": {
+      "description": "OpenAI 最先进的模型，在推理、代码质量和用户体验方面有重大改进。针对需要逐步推理、遵循指令和高准确性的复杂任务进行了优化。"
+    }
+  },
+  "websiteUrl": "https://openai.com/",
+  "docsUrl": "https://platform.openai.com/docs/models/gpt-5",
+  "verified": false,
+  "vendor": "OpenAI",
+  "size": "Unknown",
+  "totalContext": "128K",
+  "maxOutput": "16K",
+  "tokenPricing": {
+    "input": 1.25,
+    "output": 1.25,
+    "cache": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-5",
+    "openrouter": "https://openrouter.ai/openai/gpt-5"
+  }
+}
+

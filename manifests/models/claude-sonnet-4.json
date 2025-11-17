@@ -1,0 +1,28 @@
+{
+  "id": "claude-sonnet-4",
+  "name": "Claude Sonnet 4",
+  "description": "Enhances Sonnet 3.7 with improved precision and controllability in coding and reasoning. Achieves 72.7% on SWE-bench, balancing capability and computational efficiency.",
+  "i18n": {
+    "zh-Hans": {
+      "description": "显著增强了其前身 Sonnet 3.7 的能力，在编码和推理任务方面表现出色，具有改进的精度和可控性。在 SWE-bench 上达到 72.7% 的最先进性能，Sonnet 4 在能力和计算效率之间取得了平衡。"
+    }
+  },
+  "websiteUrl": "https://www.anthropic.com/",
+  "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
+  "verified": false,
+  "vendor": "Anthropic",
+  "size": "Unknown",
+  "totalContext": "200K",
+  "maxOutput": "8K",
+  "tokenPricing": {
+    "input": 3.0,
+    "output": 3.0,
+    "cache": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/claude-sonnet-4",
+    "openrouter": "https://openrouter.ai/anthropic/claude-sonnet-4"
+  }
+}
+

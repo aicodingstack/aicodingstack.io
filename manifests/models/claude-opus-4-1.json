@@ -1,0 +1,28 @@
+{
+  "id": "claude-opus-4-1",
+  "name": "Claude Opus 4.1",
+  "description": "Released in August 2025, Claude Opus 4.1 achieves 85.2% on HumanEval+ (surpassing GPT-4o) and 74.5% on SWE-bench Verified, featuring 200K context window for complex coding tasks.",
+  "i18n": {
+    "zh-Hans": {
+      "description": "2025年8月发布的 Claude Opus 4.1，是 Anthropic 最新的旗舰模型，具备卓越的编码能力，在 HumanEval+ 上达到 85.2%（首次超越 GPT-4o 的 84.9%），在 SWE-bench Verified 上达到 74.5%，拥有 200K 上下文窗口，适用于复杂的代码生成任务。"
+    }
+  },
+  "websiteUrl": "https://www.anthropic.com/",
+  "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
+  "verified": false,
+  "vendor": "Anthropic",
+  "size": "Unknown",
+  "totalContext": "200K",
+  "maxOutput": "8K",
+  "tokenPricing": {
+    "input": 15.0,
+    "output": 75.0,
+    "cache": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/claude-opus-4.1",
+    "openrouter": "https://openrouter.ai/anthropic/claude-opus-4.1"
+  }
+}
+
