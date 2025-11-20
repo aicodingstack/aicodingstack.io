@@ -157,7 +157,7 @@ ${exports}
  * Generate GitHub stars TypeScript file from centralized JSON
  */
 function generateGithubStarsFile() {
-  const githubStarsPath = path.join(MANIFESTS_DIR, 'github-stars.json');
+  const githubStarsPath = path.join(__dirname, '..', 'data', 'github-stars.json');
 
   if (!fs.existsSync(githubStarsPath)) {
     console.log('⚠ github-stars.json not found, skipping stars generation');
@@ -172,9 +172,11 @@ function generateGithubStarsFile() {
  * Do not edit manually - run the script to regenerate
  */
 
+import githubStarsJson from '../../../data/github-stars.json';
+
 export type GithubStarsData = Record<string, Record<string, number | null>>;
 
-export const githubStarsData: GithubStarsData = ${JSON.stringify(starsData, null, 2)};
+export const githubStarsData = githubStarsJson as GithubStarsData;
 
 /**
  * Get GitHub stars for a specific product

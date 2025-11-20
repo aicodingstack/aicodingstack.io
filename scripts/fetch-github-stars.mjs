@@ -13,7 +13,7 @@ const __dirname = dirname(__filename);
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
 // Path to the centralized GitHub stars data file
-const GITHUB_STARS_FILE = path.join(__dirname, '..', 'manifests', 'github-stars.json');
+const GITHUB_STARS_FILE = path.join(__dirname, '..', 'data', 'github-stars.json');
 
 // Directories configuration - now pointing to individual file directories
 const dirsConfig = [
@@ -244,7 +244,7 @@ async function main() {
   // Write the updated stars data to file
   try {
     fs.writeFileSync(GITHUB_STARS_FILE, JSON.stringify(starsData, null, 2) + '\n', 'utf8');
-    console.log('\n📝 Successfully updated manifests/github-stars.json');
+    console.log('\n📝 Successfully updated data/github-stars.json');
   } catch (error) {
     console.error('\n❌ Failed to write github-stars.json:', error.message);
     process.exit(1);
