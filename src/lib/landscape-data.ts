@@ -17,6 +17,7 @@ import {
   providersData,
   vendorsData,
 } from './generated';
+import { getGithubStars } from './generated/github-stars';
 import type {
   ManifestIDE,
   ManifestCLI,
@@ -142,7 +143,7 @@ function ideToProduct(ide: ManifestIDE): LandscapeProduct {
     websiteUrl: ide.websiteUrl,
     docsUrl: ide.docsUrl,
     githubUrl: ide.githubUrl,
-    githubStars: ide.githubStars,
+    githubStars: getGithubStars('ides', ide.id),
     license: ide.license,
     latestVersion: ide.latestVersion,
     path: `/ides/${ide.id}`,
@@ -159,7 +160,7 @@ function cliToProduct(cli: ManifestCLI): LandscapeProduct {
     websiteUrl: cli.websiteUrl,
     docsUrl: cli.docsUrl,
     githubUrl: cli.githubUrl,
-    githubStars: cli.githubStars,
+    githubStars: getGithubStars('clis', cli.id),
     license: cli.license,
     latestVersion: cli.latestVersion,
     path: `/clis/${cli.id}`,
@@ -176,7 +177,7 @@ function extensionToProduct(ext: ManifestExtension): LandscapeProduct {
     websiteUrl: ext.websiteUrl,
     docsUrl: ext.docsUrl,
     githubUrl: ext.githubUrl,
-    githubStars: ext.githubStars,
+    githubStars: getGithubStars('extensions', ext.id),
     license: ext.license,
     latestVersion: ext.latestVersion,
     path: `/extensions/${ext.id}`,
@@ -206,7 +207,7 @@ function providerToProduct(provider: ManifestProvider): LandscapeProduct {
     websiteUrl: provider.websiteUrl,
     docsUrl: provider.docsUrl,
     githubUrl: provider.githubUrl,
-    githubStars: provider.githubStars,
+    githubStars: null, // Providers don't have GitHub stars tracking
     path: `/model-providers/${provider.id}`,
   };
 }
