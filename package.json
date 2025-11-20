@@ -11,7 +11,7 @@
 		"spell:fix": "cspell '**/*.{ts,tsx,js,jsx,json,md,mdx}' --show-suggestions",
 		"validate:manifests": "node scripts/validate-manifests.mjs",
 		"validate:urls": "node scripts/validate-urls.mjs",
-		"generate:manifests": "node scripts/generate-manifest-indexes.js",
+		"generate:manifests": "node scripts/generate-manifest-indexes.mjs",
 		"generate:metadata": "node scripts/generate-metadata.mjs",
 		"fetch:github-stars": "node scripts/fetch-github-stars.mjs",
 		"deploy": "npm run validate:manifests && npm run generate:manifests && npm run generate:metadata && BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%SZ) opennextjs-cloudflare build && opennextjs-cloudflare deploy",
