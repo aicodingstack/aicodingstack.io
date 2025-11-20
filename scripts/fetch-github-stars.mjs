@@ -12,20 +12,26 @@ const __dirname = dirname(__filename);
 // Set via environment variable: GITHUB_TOKEN=your_token_here node fetch-github-stars.mjs
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
+// Path to the centralized GitHub stars data file
+const GITHUB_STARS_FILE = path.join(__dirname, '..', 'manifests', 'github-stars.json');
+
 // Directories configuration - now pointing to individual file directories
 const dirsConfig = [
   {
     directory: 'manifests/extensions',
+    category: 'extensions',
     githubUrlField: 'communityUrls.github',
     type: 'nested'
   },
   {
     directory: 'manifests/ides',
+    category: 'ides',
     githubUrlField: 'communityUrls.github',
     type: 'nested'
   },
   {
     directory: 'manifests/clis',
+    category: 'clis',
     githubUrlField: 'communityUrls.github',
     type: 'nested'
   }
@@ -110,7 +116,7 @@ function sleep(ms) {
 }
 
 // Process a single JSON file
-async function processFile(filePath, fileName, type) {
+async function processFile(filePath, fileName, type, starsData) {
   const content = fs.readFileSync(filePath, 'utf8');
   const item = JSON.parse(content);
 
@@ -118,41 +124,37 @@ async function processFile(filePath, fileName, type) {
 
   if (!githubUrl) {
     console.log(`  ⏭️  Skipping ${item.name || item.id} (no GitHub URL)`);
-    return { updated: false, skipped: true, error: false };
+    return { updated: false, skipped: true, error: false, id: item.id, stars: null };
   }
 
   const parsed = parseGithubUrl(githubUrl);
   if (!parsed) {
     console.log(`  ❌ Failed to parse GitHub URL for ${item.name || item.id}: ${githubUrl}`);
-    return { updated: false, skipped: false, error: true };
+    return { updated: false, skipped: false, error: true, id: item.id, stars: null };
   }
 
   try {
     console.log(`  🔍 Fetching stars for ${item.name || item.id} (${parsed.owner}/${parsed.repo})...`);
     const stars = await fetchStars(parsed.owner, parsed.repo);
-    item.githubStars = stars;
-
-    // Write back to file
-    fs.writeFileSync(filePath, JSON.stringify(item, null, 2) + '\n', 'utf8');
     console.log(`  ✅ Updated ${item.name || item.id}: ${stars}k stars`);
 
     // Sleep for 1 second to avoid rate limiting
     await sleep(1000);
-    return { updated: true, skipped: false, error: false };
+    return { updated: true, skipped: false, error: false, id: item.id, stars };
   } catch (error) {
     console.log(`  ❌ Error fetching ${item.name || item.id}: ${error.message}`);
-    return { updated: false, skipped: false, error: true };
+    return { updated: false, skipped: false, error: true, id: item.id, stars: null };
   }
 }
 
 // Process all files in a directory
-async function processDirectory(dirConfig) {
+async function processDirectory(dirConfig, starsData) {
   const dirPath = path.join(__dirname, '..', dirConfig.directory);
   console.log(`\n📁 Processing ${dirConfig.directory}...`);
 
   if (!fs.existsSync(dirPath)) {
     console.log(`  ⚠️  Directory not found: ${dirPath}`);
-    return;
+    return { categoryData: {}, stats: { updated: 0, skipped: 0, errors: 0 } };
   }
 
   // Get all JSON files in the directory
@@ -160,29 +162,36 @@ async function processDirectory(dirConfig) {
 
   if (files.length === 0) {
     console.log(`  ⚠️  No JSON files found in ${dirConfig.directory}`);
-    return;
+    return { categoryData: {}, stats: { updated: 0, skipped: 0, errors: 0 } };
   }
 
   let updated = 0;
   let skipped = 0;
   let errors = 0;
+  const categoryData = {};
 
   for (const file of files) {
     const filePath = path.join(dirPath, file);
-    const result = await processFile(filePath, file, dirConfig.type);
+    const result = await processFile(filePath, file, dirConfig.type, starsData);
 
     if (result.updated) updated++;
     if (result.skipped) skipped++;
     if (result.error) errors++;
+
+    // Store the stars data for this item
+    if (result.id) {
+      categoryData[result.id] = result.stars;
+    }
   }
 
   console.log(`\n✨ ${dirConfig.directory} completed: ${updated} updated, ${skipped} skipped, ${errors} errors`);
+  return { categoryData, stats: { updated, skipped, errors } };
 }
 
 // Main function
 async function main() {
   console.log('🚀 Starting GitHub stars fetcher...\n');
-  console.log('📝 Note: Now processing individual JSON files in directories\n');
+  console.log('📝 Note: Updating centralized github-stars.json file\n');
 
   if (!GITHUB_TOKEN) {
     console.log('⚠️  Warning: No GITHUB_TOKEN set. You may hit rate limits (60 requests/hour).');
@@ -191,16 +200,59 @@ async function main() {
     console.log('✅ Using GitHub token for authentication\n');
   }
 
+  // Load existing stars data or create new structure
+  let starsData = { extensions: {}, clis: {}, ides: {} };
+  if (fs.existsSync(GITHUB_STARS_FILE)) {
+    try {
+      const content = fs.readFileSync(GITHUB_STARS_FILE, 'utf8');
+      starsData = JSON.parse(content);
+      console.log('📂 Loaded existing github-stars.json\n');
+    } catch (error) {
+      console.log('⚠️  Failed to parse existing github-stars.json, creating new one\n');
+    }
+  }
+
+  let totalUpdated = 0;
+  let totalSkipped = 0;
+  let totalErrors = 0;
+
+  // Process each directory and collect stars data
   for (const dirConfig of dirsConfig) {
     try {
-      await processDirectory(dirConfig);
+      const { categoryData, stats } = await processDirectory(dirConfig, starsData);
+
+      // Sort the category data by key (alphabetically)
+      const sortedCategoryData = Object.keys(categoryData)
+        .sort()
+        .reduce((acc, key) => {
+          acc[key] = categoryData[key];
+          return acc;
+        }, {});
+
+      // Update the stars data for this category
+      starsData[dirConfig.category] = sortedCategoryData;
+
+      totalUpdated += stats.updated;
+      totalSkipped += stats.skipped;
+      totalErrors += stats.errors;
     } catch (error) {
       console.error(`❌ Failed to process ${dirConfig.directory}:`, error.message);
+      totalErrors++;
     }
+  }
+
+  // Write the updated stars data to file
+  try {
+    fs.writeFileSync(GITHUB_STARS_FILE, JSON.stringify(starsData, null, 2) + '\n', 'utf8');
+    console.log('\n📝 Successfully updated manifests/github-stars.json');
+  } catch (error) {
+    console.error('\n❌ Failed to write github-stars.json:', error.message);
+    process.exit(1);
   }
 
   console.log('\n' + '='.repeat(50));
   console.log('🎉 All directories processed!');
+  console.log(`📊 Total: ${totalUpdated} updated, ${totalSkipped} skipped, ${totalErrors} errors`);
   console.log('='.repeat(50));
 }
 

@@ -1,0 +1,46 @@
+{
+  "extensions": {
+    "amp": null,
+    "augment-code": null,
+    "claude-code": 42,
+    "cline": 52.3,
+    "continue": 29.8,
+    "github-copilot": null,
+    "jetbrains-junie": null,
+    "kilo-code": 12.2,
+    "roo-code": 20.7,
+    "tabnine": 10.8
+  },
+  "clis": {
+    "amazon-q-developer-cli": 1.8,
+    "amp-cli": null,
+    "augment-code-cli": 0.1,
+    "claude-code": 42,
+    "cline-cli": null,
+    "codebuddy-cli": null,
+    "codex": 50.2,
+    "continue-cli": 29.8,
+    "droid-cli": null,
+    "gemini-cli": 82.1,
+    "github-copilot-cli": 5,
+    "kimi-cli": 2.6,
+    "kilocode-cli": 12.2,
+    "kode": 3.4,
+    "neovate-code": 1,
+    "opencode": 32.4,
+    "qoder-cli": null
+  },
+  "ides": {
+    "codebuddy": null,
+    "codeflicker": null,
+    "cursor": 31.6,
+    "droid": null,
+    "intellij-idea": 19.1,
+    "kiro": 2.2,
+    "qoder": null,
+    "trae": null,
+    "vscode": 178.4,
+    "windsurf": null,
+    "zed": 69.5
+  }
+}

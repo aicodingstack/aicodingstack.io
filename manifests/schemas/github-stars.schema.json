@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aicodingstack.io/schemas/github-stars.schema.json",
+  "title": "GitHub Stars Data",
+  "description": "Schema for the centralized GitHub stars data file",
+  "type": "object",
+  "properties": {
+    "extensions": {
+      "type": "object",
+      "description": "GitHub stars for extensions",
+      "patternProperties": {
+        "^[a-z0-9-]+$": {
+          "oneOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "description": "Number of GitHub stars in thousands (e.g., 42 = 42k stars)"
+            },
+            {
+              "type": "null",
+              "description": "No GitHub stars data available"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "clis": {
+      "type": "object",
+      "description": "GitHub stars for CLI tools",
+      "patternProperties": {
+        "^[a-z0-9-]+$": {
+          "oneOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "description": "Number of GitHub stars in thousands (e.g., 42 = 42k stars)"
+            },
+            {
+              "type": "null",
+              "description": "No GitHub stars data available"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "ides": {
+      "type": "object",
+      "description": "GitHub stars for IDEs",
+      "patternProperties": {
+        "^[a-z0-9-]+$": {
+          "oneOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "description": "Number of GitHub stars in thousands (e.g., 42 = 42k stars)"
+            },
+            {
+              "type": "null",
+              "description": "No GitHub stars data available"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["extensions", "clis", "ides"],
+  "additionalProperties": false
+}
