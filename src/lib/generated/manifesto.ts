@@ -13,6 +13,9 @@ export async function getManifestoComponent(locale: string = 'en'): Promise<Reac
   }
 
   const loader = components[locale] || components.en
+  if (!loader) {
+    throw new Error(`No manifesto loader found for locale: ${locale}`)
+  }
   const mdxModule = await loader()
   return mdxModule.default
 }
