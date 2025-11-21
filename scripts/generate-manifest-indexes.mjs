@@ -73,7 +73,7 @@ function generateIndexFile(typeName) {
       const id = file.replace('.json', '')
       const varName = toPascalCase(id)
       const relativePath = `../../../manifests/${typeName}/${file}`
-      return `import ${varName} from '${relativePath}';`
+      return `import ${varName} from '${relativePath}'`
     })
     .join('\n')
 
@@ -105,7 +105,7 @@ function generateIndexFile(typeName) {
 
   const manifestType = typeImportMap[typeName]
   const typeImport = manifestType
-    ? `import type { ${manifestType} } from '../../types/manifests';\n\n`
+    ? `\nimport type { ${manifestType} } from '../../types/manifests'`
     : ''
 
   const content = `/**
@@ -114,15 +114,15 @@ function generateIndexFile(typeName) {
  * Do not edit manually - run the script to regenerate
  */
 
-${typeImport}${imports}
+${imports}${typeImport}
 
 export const ${typeName}Data = [
-  ${arrayItems}
-]${manifestType ? ` as unknown as ${manifestType}[]` : ''};
+  ${arrayItems},
+]${manifestType ? ` as unknown as ${manifestType}[]` : ''}
 
-export type ${TypeName} = typeof ${firstVarName};
+export type ${TypeName} = typeof ${firstVarName}
 
-export default ${typeName}Data;
+export default ${typeName}Data
 `
 
   const outputPath = path.join(OUTPUT_DIR, `${typeName}.ts`)
@@ -135,8 +135,8 @@ export default ${typeName}Data;
  */
 function generateMainIndex() {
   const exports = MANIFEST_TYPES.map(typeName => {
-    return `export { ${typeName}Data } from './${typeName}';
-export type { ${toPascalCase(typeName.replace(/s$/, ''))} } from './${typeName}';`
+    return `export { ${typeName}Data } from './${typeName}'
+export type { ${toPascalCase(typeName.replace(/s$/, ''))} } from './${typeName}'`
   }).join('\n')
 
   const content = `/**
@@ -172,11 +172,11 @@ function generateGithubStarsFile() {
  * Do not edit manually - run the script to regenerate
  */
 
-import githubStarsJson from '../../../data/github-stars.json';
+import githubStarsJson from '../../../data/github-stars.json'
 
-export type GithubStarsData = Record<string, Record<string, number | null>>;
+export type GithubStarsData = Record<string, Record<string, number | null>>
 
-export const githubStarsData = githubStarsJson as GithubStarsData;
+export const githubStarsData = githubStarsJson as GithubStarsData
 
 /**
  * Get GitHub stars for a specific product
@@ -185,10 +185,10 @@ export const githubStarsData = githubStarsJson as GithubStarsData;
  * @returns The number of stars (in thousands) or null if not available
  */
 export function getGithubStars(category: string, id: string): number | null {
-  return githubStarsData[category]?.[id] ?? null;
+  return githubStarsData[category]?.[id] ?? null
 }
 
-export default githubStarsData;
+export default githubStarsData
 `
 
   const outputPath = path.join(OUTPUT_DIR, 'github-stars.ts')
