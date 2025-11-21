@@ -18,7 +18,7 @@
     "huggingface": "HuggingFace",
     "artificialAnalysis": "Artificial Analysis",
     "openrouter": "OpenRouter"
-},
+  },
   "header": {
     "docs": "Docs",
     "articles": "Articles",
