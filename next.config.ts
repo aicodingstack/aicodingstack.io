@@ -1,40 +1,40 @@
-import type { NextConfig } from "next";
-import createMDX from '@next/mdx';
-import remarkFrontmatter from 'remark-frontmatter';
-import remarkMdxFrontmatter from 'remark-mdx-frontmatter';
-import remarkGfm from 'remark-gfm';
-import bundleAnalyzer from '@next/bundle-analyzer';
-import createNextIntlPlugin from 'next-intl/plugin';
+import bundleAnalyzer from '@next/bundle-analyzer'
+import createMDX from '@next/mdx'
+import type { NextConfig } from 'next'
+import createNextIntlPlugin from 'next-intl/plugin'
+import remarkFrontmatter from 'remark-frontmatter'
+import remarkGfm from 'remark-gfm'
+import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 
-const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
 
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
-});
+})
 
 // Security headers configuration
 const securityHeaders = [
   {
     key: 'X-DNS-Prefetch-Control',
-    value: 'on'
+    value: 'on',
   },
   {
     key: 'X-Frame-Options',
-    value: 'SAMEORIGIN'
+    value: 'SAMEORIGIN',
   },
   {
     key: 'X-Content-Type-Options',
-    value: 'nosniff'
+    value: 'nosniff',
   },
   {
     key: 'Referrer-Policy',
-    value: 'strict-origin-when-cross-origin'
+    value: 'strict-origin-when-cross-origin',
   },
   {
     key: 'Permissions-Policy',
-    value: 'camera=(), microphone=(), geolocation=()'
+    value: 'camera=(), microphone=(), geolocation=()',
   },
-];
+]
 
 const nextConfig: NextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
@@ -67,26 +67,18 @@ const nextConfig: NextConfig = {
 
   // Experimental features for better performance
   experimental: {
-    optimizePackageImports: [
-      'lucide-react',
-      'next-intl',
-      '@mdx-js/react',
-      'gray-matter',
-    ],
-    // Turbopack configuration (Next.js 15+)
-    turbo: {
-      rules: {
-        // Add custom turbopack rules if needed
-      },
-    },
+    optimizePackageImports: ['lucide-react', 'next-intl', '@mdx-js/react', 'gray-matter'],
   },
 
   // Compiler optimizations
   compiler: {
     // Remove console logs in production (keep error and warn)
-    removeConsole: process.env.NODE_ENV === 'production' ? {
-      exclude: ['error', 'warn']
-    } : false,
+    removeConsole:
+      process.env.NODE_ENV === 'production'
+        ? {
+            exclude: ['error', 'warn'],
+          }
+        : false,
   },
 
   // TypeScript configuration
@@ -149,9 +141,9 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-    ];
+    ]
   },
-};
+}
 
 const withMDX = createMDX({
   extension: /\.mdx?$/,
@@ -159,10 +151,11 @@ const withMDX = createMDX({
     remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter, remarkGfm],
     rehypePlugins: [],
   },
-});
+})
 
-export default withNextIntl(withBundleAnalyzer(withMDX(nextConfig)));
+export default withNextIntl(withBundleAnalyzer(withMDX(nextConfig)))
 
 // added by create cloudflare to enable calling `getCloudflareContext()` in `next dev`
-import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare';
-initOpenNextCloudflareForDev();
+import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare'
+
+initOpenNextCloudflareForDev()
