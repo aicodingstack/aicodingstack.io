@@ -9,6 +9,7 @@
  * Usage: node scripts/generate-manifest-indexes.mjs
  */
 
+import { execSync } from 'node:child_process'
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -67,31 +68,27 @@ function generateIndexFile(typeName) {
     return
   }
 
-  // Generate import statements
-  const imports = files
-    .map(file => {
-      const id = file.replace('.json', '')
-      const varName = toPascalCase(id)
-      const relativePath = `../../../manifests/${typeName}/${file}`
-      return `import ${varName} from '${relativePath}'`
-    })
-    .join('\n')
+  // Generate import statements - sort alphabetically by variable name
+  const importData = files.map(file => {
+    const id = file.replace('.json', '')
+    const varName = toPascalCase(id)
+    const relativePath = `../../../manifests/${typeName}/${file}`
+    return { varName, statement: `import ${varName} from '${relativePath}'` }
+  })
 
-  // Generate array export
-  const arrayItems = files
-    .map(file => {
-      const id = file.replace('.json', '')
-      return toPascalCase(id)
-    })
-    .join(',\n  ')
+  // Sort imports alphabetically by variable name
+  importData.sort((a, b) => a.varName.localeCompare(b.varName))
+  const imports = importData.map(item => item.statement).join('\n')
+
+  // Generate array export using sorted variable names
+  const arrayItems = importData.map(item => item.varName).join(',\n  ')
 
   // Generate type name (singular)
   const typeSingular = typeName.replace(/s$/, '')
   const TypeName = toPascalCase(typeSingular)
 
-  // Get the first file to extract type
-  const firstFile = files[0].replace('.json', '')
-  const firstVarName = toPascalCase(firstFile)
+  // Get the first file (alphabetically) to extract type
+  const firstVarName = importData[0].varName
 
   // Add appropriate type import based on manifest type
   const typeImportMap = {
@@ -105,7 +102,7 @@ function generateIndexFile(typeName) {
 
   const manifestType = typeImportMap[typeName]
   const typeImport = manifestType
-    ? `\nimport type { ${manifestType} } from '../../types/manifests'`
+    ? `import type { ${manifestType} } from '../../types/manifests'\n`
     : ''
 
   const content = `/**
@@ -114,8 +111,8 @@ function generateIndexFile(typeName) {
  * Do not edit manually - run the script to regenerate
  */
 
-${imports}${typeImport}
-
+${imports}
+${typeImport}
 export const ${typeName}Data = [
   ${arrayItems},
 ]${manifestType ? ` as unknown as ${manifestType}[]` : ''}
@@ -134,10 +131,25 @@ export default ${typeName}Data
  * Generate main index.ts file that exports all manifests
  */
 function generateMainIndex() {
-  const exports = MANIFEST_TYPES.map(typeName => {
-    return `export { ${typeName}Data } from './${typeName}'
-export type { ${toPascalCase(typeName.replace(/s$/, ''))} } from './${typeName}'`
-  }).join('\n')
+  // Generate all export statements
+  const exportStatements = []
+  for (const typeName of MANIFEST_TYPES) {
+    const typeSingular = toPascalCase(typeName.replace(/s$/, ''))
+    exportStatements.push({
+      type: `export type { ${typeSingular} } from './${typeName}'`,
+      data: `export { ${typeName}Data } from './${typeName}'`,
+    })
+  }
+
+  // Sort exports alphabetically by type name and maintain type-before-data order
+  const sortedExports = exportStatements
+    .sort((a, b) => {
+      const typeA = a.type.match(/\{ (\w+) \}/)[1]
+      const typeB = b.type.match(/\{ (\w+) \}/)[1]
+      return typeA.localeCompare(typeB)
+    })
+    .flatMap(item => [item.type, item.data])
+    .join('\n')
 
   const content = `/**
  * Auto-generated main manifest index
@@ -145,7 +157,7 @@ export type { ${toPascalCase(typeName.replace(/s$/, ''))} } from './${typeName}'
  * Do not edit manually - run the script to regenerate
  */
 
-${exports}
+${sortedExports}
 `
 
   const outputPath = path.join(OUTPUT_DIR, 'index.ts')
@@ -231,6 +243,18 @@ function main() {
   console.log(`\n${'='.repeat(60)}`)
   console.log('✅ All index files generated successfully!')
   console.log('='.repeat(60))
+
+  // Run biome formatting on generated files
+  console.log(`\n🎨 Formatting generated files with Biome...`)
+  try {
+    execSync(`npx biome format --write ${OUTPUT_DIR}`, {
+      cwd: path.join(__dirname, '..'),
+      stdio: 'inherit',
+    })
+    console.log(`✅ Formatting complete`)
+  } catch (error) {
+    console.error(`⚠️  Biome formatting failed:`, error.message)
+  }
 }
 
 // Run the script
