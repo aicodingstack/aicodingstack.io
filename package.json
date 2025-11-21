@@ -1,73 +1,91 @@
 {
-	"name": "aicodingstack",
-	"version": "1.0.0",
-	"description": "AI Coding Stack Website",
-	"scripts": {
-		"dev": "npm run generate:manifests && npm run generate:metadata && next dev",
-		"build": "npm run validate:manifests && npm run generate:manifests && npm run generate:metadata && BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%SZ) next build",
-		"start": "next start",
-		"lint": "next lint",
-		"spell": "cspell '**/*.{ts,tsx,js,jsx,json,md,mdx}'",
-		"spell:fix": "cspell '**/*.{ts,tsx,js,jsx,json,md,mdx}' --show-suggestions",
-		"validate:manifests": "node scripts/validate-manifests.mjs",
-		"validate:urls": "node scripts/validate-urls.mjs",
-		"generate:manifests": "node scripts/generate-manifest-indexes.mjs",
-		"generate:metadata": "node scripts/generate-metadata.mjs",
-		"fetch:github-stars": "node scripts/fetch-github-stars.mjs",
-		"deploy": "npm run validate:manifests && npm run generate:manifests && npm run generate:metadata && BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%SZ) opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-		"preview": "npm run validate:manifests && npm run generate:manifests && npm run generate:metadata && BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%SZ) opennextjs-cloudflare build && opennextjs-cloudflare preview",
-		"cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts",
-		"analyze": "ANALYZE=true BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%SZ) npm run build"
-	},
-	"dependencies": {
-		"@mdx-js/loader": "^3.1.1",
-		"@mdx-js/react": "^3.1.1",
-		"@next/mdx": "^15.5.4",
-		"@next/third-parties": "^15.5.4",
-		"@opennextjs/cloudflare": "^1.3.0",
-		"@types/mdx": "^2.0.13",
-		"@xyflow/react": "^12.9.3",
-		"gray-matter": "^2.0.1",
-		"lucide-react": "^0.545.0",
-		"next": "^15.5.6",
-		"next-intl": "^4.3.12",
-		"react": "19.1.0",
-		"react-dom": "19.1.0",
-		"recharts": "^3.3.0",
-		"rehype-highlight": "^7.0.2",
-		"remark-frontmatter": "^5.0.0",
-		"remark-gfm": "^4.0.1",
-		"remark-mdx-frontmatter": "^5.2.0"
-	},
-	"devDependencies": {
-		"@eslint/eslintrc": "^3",
-		"@next/bundle-analyzer": "^15.5.5",
-		"@tailwindcss/postcss": "^4",
-		"@types/node": "^20.19.18",
-		"@types/react": "^19",
-		"@types/react-dom": "^19",
-		"ajv": "^8.17.1",
-		"ajv-formats": "^3.0.1",
-		"cspell": "^9.3.2",
-		"eslint": "^9",
-		"eslint-config-next": "15.4.6",
-		"tailwindcss": "^4",
-		"typescript": "^5",
-		"user-agents": "^1.1.669",
-		"wrangler": "^4.42.0"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/aicodingstack/aicodingstack.git"
-	},
-	"author": "Pan YANG",
-	"license": "Apache-2.0",
-	"bugs": {
-		"url": "https://github.com/aicodingstack/aicodingstack/issues"
-	},
-	"homepage": "https://github.com/aicodingstack/aicodingstack#readme",
-	"browserslist": [
-		"defaults and fully supports es6-module",
-		"maintained node versions"
-	]
+  "name": "aicodingstack",
+  "version": "1.0.0",
+  "description": "AI Coding Stack Website",
+  "scripts": {
+    "dev": "npm run generate:manifests && npm run generate:metadata && next dev",
+    "build": "npm run validate:manifests && npm run generate:manifests && npm run generate:metadata && BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%SZ) next build",
+    "start": "next start",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "biome": "biome check --write .",
+    "biome:check": "biome check .",
+    "biome:unsafe": "biome check --write --unsafe .",
+    "check": "biome check . && npm run spell",
+    "spell": "cspell '**/*.{ts,tsx,js,jsx,json,md,mdx}'",
+    "spell:fix": "cspell '**/*.{ts,tsx,js,jsx,json,md,mdx}' --show-suggestions",
+    "validate:manifests": "node scripts/validate-manifests.mjs",
+    "validate:urls": "node scripts/validate-urls.mjs",
+    "generate:manifests": "node scripts/generate-manifest-indexes.mjs",
+    "generate:metadata": "node scripts/generate-metadata.mjs",
+    "fetch:github-stars": "node scripts/fetch-github-stars.mjs",
+    "deploy": "npm run validate:manifests && npm run generate:manifests && npm run generate:metadata && BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%SZ) opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "preview": "npm run validate:manifests && npm run generate:manifests && npm run generate:metadata && BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%SZ) opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts",
+    "analyze": "ANALYZE=true BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%SZ) npm run build",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@next/mdx": "^15.5.4",
+    "@next/third-parties": "^15.5.4",
+    "@opennextjs/cloudflare": "^1.3.0",
+    "@types/mdx": "^2.0.13",
+    "@xyflow/react": "^12.9.3",
+    "gray-matter": "^2.0.1",
+    "lucide-react": "^0.545.0",
+    "next": "^15.5.6",
+    "next-intl": "^4.3.12",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "recharts": "^3.3.0",
+    "rehype-highlight": "^7.0.2",
+    "remark-frontmatter": "^5.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-mdx-frontmatter": "^5.2.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.6",
+    "@cspell/dict-de-de": "^4.1.2",
+    "@eslint/eslintrc": "^3",
+    "@next/bundle-analyzer": "^15.5.5",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20.19.18",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "cspell": "^9.3.2",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.6",
+    "husky": "9.1.7",
+    "lint-staged": "16.2.7",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "user-agents": "^1.1.669",
+    "wrangler": "^4.42.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aicodingstack/aicodingstack.io.git"
+  },
+  "author": "Pan YANG",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/aicodingstack/aicodingstack.io/issues"
+  },
+  "homepage": "https://github.com/aicodingstack/aicodingstack.io#readme",
+  "browserslist": [
+    "defaults and fully supports es6-module",
+    "maintained node versions"
+  ],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,mjs,cjs}": [
+      "biome check --write --no-errors-on-unmatched"
+    ],
+    "*.{json,jsonc}": [
+      "biome format --write --no-errors-on-unmatched"
+    ]
+  }
 }
