@@ -15,10 +15,7 @@
           "description": "The latest stable version number"
         },
         "githubUrl": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": ["string", "null"],
           "format": "uri",
           "pattern": "^https://github.com/",
           "description": "GitHub repository URL"
@@ -26,13 +23,7 @@
         "license": {
           "type": "string",
           "description": "Valid SPDX License Identifier or the literal Proprietary",
-          "examples": [
-            "Proprietary",
-            "MIT",
-            "Apache-2.0",
-            "GPL-3.0-only",
-            "GPL-3.0-or-later"
-          ]
+          "examples": ["Proprietary", "MIT", "Apache-2.0", "GPL-3.0-only", "GPL-3.0-or-later"]
         },
         "pricing": {
           "type": "array",
@@ -72,11 +63,7 @@
         "properties": {
           "type": {
             "type": "string",
-            "enum": [
-              "ide",
-              "cli",
-              "extension"
-            ],
+            "enum": ["ide", "cli", "extension"],
             "description": "Type of the related product"
           },
           "productId": {
@@ -84,10 +71,7 @@
             "description": "ID of the related product"
           }
         },
-        "required": [
-          "type",
-          "productId"
-        ],
+        "required": ["type", "productId"],
         "additionalProperties": false
       },
       "minItems": 0,
@@ -102,30 +86,16 @@
           "description": "Name of the pricing tier"
         },
         "value": {
-          "type": [
-            "number",
-            "null"
-          ],
+          "type": ["number", "null"],
           "description": "Price value (null for custom pricing, 0 for free)"
         },
         "currency": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": ["string", "null"],
           "description": "ISO 4217 currency code (e.g., 'USD', 'CNY', 'EUR')",
-          "enum": [
-            "USD",
-            "CNY",
-            "EUR",
-            null
-          ]
+          "enum": ["USD", "CNY", "EUR", null]
         },
         "per": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": ["string", "null"],
           "description": "Billing period with optional unit (e.g., 'month', 'year', 'user/month', 'seat/year', 'one-time', 'custom')"
         },
         "category": {
@@ -133,11 +103,7 @@
           "description": "Category of the pricing tier (e.g., 'Individual', 'Business', 'Enterprise')"
         }
       },
-      "required": [
-        "name",
-        "value",
-        "category"
-      ],
+      "required": ["name", "value", "category"],
       "additionalProperties": false
     },
     "resourceUrls": {
@@ -145,58 +111,37 @@
       "description": "Collection of relevant URLs for the product",
       "properties": {
         "download": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": ["string", "null"],
           "format": "uri",
           "pattern": "^https://",
           "description": "Download page URL"
         },
         "changelog": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": ["string", "null"],
           "format": "uri",
           "pattern": "^https://",
           "description": "Changelog or release notes URL"
         },
         "pricing": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": ["string", "null"],
           "format": "uri",
           "pattern": "^https://",
           "description": "Pricing information URL"
         },
         "mcp": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": ["string", "null"],
           "format": "uri",
           "pattern": "^https://",
           "description": "MCP (Model Context Protocol) documentation URL"
         },
         "issue": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": ["string", "null"],
           "format": "uri",
           "pattern": "^https://",
           "description": "Issue tracker URL (e.g., GitHub Issues)"
         }
       },
-      "required": [
-        "download",
-        "changelog",
-        "pricing",
-        "mcp",
-        "issue"
-      ],
+      "required": ["download", "changelog", "pricing", "mcp", "issue"],
       "additionalProperties": false
     }
   }

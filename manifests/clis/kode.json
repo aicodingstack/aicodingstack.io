@@ -12,7 +12,7 @@
   "verified": false,
   "vendor": "shareAI Lab",
   "latestVersion": "1.2.0",
-  "githubUrl": "https://github.com/shareAI-lab/Kode",
+  "githubUrl": "https://github.com/shareAI-lab/Kode-cli",
   "license": "Apache-2.0",
   "pricing": [
     {
@@ -33,7 +33,7 @@
   "communityUrls": {
     "linkedin": null,
     "twitter": null,
-    "github": "https://github.com/shareAI-lab/Kode",
+    "github": "https://github.com/shareAI-lab/Kode-cli",
     "youtube": null,
     "discord": null,
     "reddit": null,

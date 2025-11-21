@@ -5,37 +5,24 @@
   "type": "object",
   "properties": {
     "huggingface": {
-      "type": [
-        "string",
-        "null"
-      ],
+      "type": ["string", "null"],
       "format": "uri",
       "pattern": "^https://huggingface\\.co/",
       "description": "HuggingFace organization or model page URL"
     },
     "artificialAnalysis": {
-      "type": [
-        "string",
-        "null"
-      ],
+      "type": ["string", "null"],
       "format": "uri",
       "pattern": "^https://artificialanalysis\\.ai/",
       "description": "Artificial Analysis provider/model page URL"
     },
     "openrouter": {
-      "type": [
-        "string",
-        "null"
-      ],
+      "type": ["string", "null"],
       "format": "uri",
       "pattern": "^https://openrouter\\.ai/",
       "description": "OpenRouter provider/model page URL"
     }
   },
-  "required": [
-    "huggingface",
-    "artificialAnalysis",
-    "openrouter"
-  ],
+  "required": ["huggingface", "artificialAnalysis", "openrouter"],
   "additionalProperties": false
 }

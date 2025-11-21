@@ -19,62 +19,38 @@
             "properties": {
               "os": {
                 "type": "string",
-                "enum": [
-                  "macOS",
-                  "Windows",
-                  "Linux"
-                ],
+                "enum": ["macOS", "Windows", "Linux"],
                 "description": "Operating system"
               },
               "installPath": {
-                "type": [
-                  "string",
-                  "null"
-                ],
+                "type": ["string", "null"],
                 "description": "Default install path or binary path on this OS"
               },
               "installCommand": {
-                "type": [
-                  "string",
-                  "null"
-                ],
+                "type": ["string", "null"],
                 "description": "Command to install the product on this OS"
               },
               "launchCommand": {
-                "type": [
-                  "string",
-                  "null"
-                ],
+                "type": ["string", "null"],
                 "description": "Command to launch the product on this OS"
               }
             },
-            "required": [
-              "os",
-              "installPath"
-            ],
+            "required": ["os", "installPath"],
             "additionalProperties": false
           },
           "minItems": 1,
           "uniqueItems": true
         },
         "installCommand": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": ["string", "null"],
           "description": "Top-level install command (optional, prefer platform-specific values)"
         },
         "launchCommand": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": ["string", "null"],
           "description": "Top-level launch command (optional, prefer platform-specific values)"
         }
       },
-      "required": [
-        "platforms"
-      ]
+      "required": ["platforms"]
     }
   ]
 }

@@ -15,16 +15,10 @@
           "type": {
             "type": "string",
             "description": "Provider category",
-            "enum": [
-              "foundation-model-provider",
-              "model-service-provider"
-            ]
+            "enum": ["foundation-model-provider", "model-service-provider"]
           },
           "applyKeyUrl": {
-            "type": [
-              "string",
-              "null"
-            ],
+            "type": ["string", "null"],
             "format": "uri",
             "description": "API key application URL"
           },
@@ -37,12 +31,7 @@
             "description": "Community presence URLs for the provider"
           }
         },
-        "required": [
-          "type",
-          "applyKeyUrl",
-          "platformUrls",
-          "communityUrls"
-        ]
+        "required": ["type", "applyKeyUrl", "platformUrls", "communityUrls"]
       }
     ]
   }

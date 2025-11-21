@@ -30,10 +30,7 @@
       "description": "Official website URL"
     },
     "docsUrl": {
-      "type": [
-        "string",
-        "null"
-      ],
+      "type": ["string", "null"],
       "format": "uri",
       "pattern": "^https://",
       "description": "Documentation URL (null if not available)"
@@ -43,13 +40,5 @@
       "description": "Whether the entity has been verified"
     }
   },
-  "required": [
-    "id",
-    "name",
-    "description",
-    "i18n",
-    "websiteUrl",
-    "docsUrl",
-    "verified"
-  ]
+  "required": ["id", "name", "description", "i18n", "websiteUrl", "docsUrl", "verified"]
 }

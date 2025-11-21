@@ -5,8 +5,6 @@
   "type": "array",
   "items": {
     "type": "object",
-    "allOf": [
-      { "$ref": "./ref/app.schema.json" }
-    ]
+    "allOf": [{ "$ref": "./ref/app.schema.json" }]
   }
 }

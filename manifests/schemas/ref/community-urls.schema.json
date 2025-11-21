@@ -5,77 +5,48 @@
   "type": "object",
   "properties": {
     "linkedin": {
-      "type": [
-        "string",
-        "null"
-      ],
+      "type": ["string", "null"],
       "format": "uri",
       "pattern": "^https://",
       "description": "LinkedIn company page URL"
     },
     "twitter": {
-      "type": [
-        "string",
-        "null"
-      ],
+      "type": ["string", "null"],
       "format": "uri",
       "pattern": "^https://",
       "description": "Twitter/X profile URL"
     },
     "github": {
-      "type": [
-        "string",
-        "null"
-      ],
+      "type": ["string", "null"],
       "format": "uri",
       "pattern": "^https://",
       "description": "GitHub organization URL"
     },
     "youtube": {
-      "type": [
-        "string",
-        "null"
-      ],
+      "type": ["string", "null"],
       "format": "uri",
       "pattern": "^https://",
       "description": "YouTube channel URL"
     },
     "discord": {
-      "type": [
-        "string",
-        "null"
-      ],
+      "type": ["string", "null"],
       "format": "uri",
       "pattern": "^https://",
       "description": "Discord server URL"
     },
     "reddit": {
-      "type": [
-        "string",
-        "null"
-      ],
+      "type": ["string", "null"],
       "format": "uri",
       "pattern": "^https://",
       "description": "Reddit community URL"
     },
     "blog": {
-      "type": [
-        "string",
-        "null"
-      ],
+      "type": ["string", "null"],
       "format": "uri",
       "pattern": "^https://",
       "description": "Official blog URL"
     }
   },
-  "required": [
-    "linkedin",
-    "twitter",
-    "github",
-    "youtube",
-    "discord",
-    "reddit",
-    "blog"
-  ],
+  "required": ["linkedin", "twitter", "github", "youtube", "discord", "reddit", "blog"],
   "additionalProperties": false
 }

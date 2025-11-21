@@ -1,11 +1,17 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
-  "useGitignore": true,
-  "ignorePaths": [
-    "cloudflare-env.d.ts",
-    "docs"
+  "language": "en,de",
+  "dictionaries": ["de"],
+  "dictionaryDefinitions": [
+    {
+      "name": "de",
+      "path": "node_modules/@cspell/dict-de-de/de_DE.trie.gz",
+      "description": "German dictionary"
+    }
   ],
+  "useGitignore": true,
+  "ignorePaths": ["cloudflare-env.d.ts", "docs"],
   "words": [
     "agentic",
     "AiCodingStack",
@@ -22,7 +28,11 @@
     "Qwen",
     "Roo",
     "shareAI",
-    "TRAE"
+    "TRAE",
+    "RLHF",
+    "xyflow",
+    "Integrationen",
+    "Entwicklungsworkflows"
   ],
   "allowCompoundWords": true
 }

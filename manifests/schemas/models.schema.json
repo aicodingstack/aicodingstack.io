@@ -41,7 +41,7 @@
                 "description": "Cache token pricing in $/M tokens (e.g., 0.07 for $0.07/1M tokens, null if not applicable)"
               }
             },
-            "required": [ "input", "output", "cache"],
+            "required": ["input", "output", "cache"],
             "additionalProperties": false
           },
           "platformUrls": {
@@ -49,13 +49,7 @@
             "description": "URLs to various third-party platform pages for this model"
           }
         },
-        "required": [
-          "size",
-          "totalContext",
-          "maxOutput",
-          "tokenPricing",
-          "platformUrls"
-        ]
+        "required": ["size", "totalContext", "maxOutput", "tokenPricing", "platformUrls"]
       }
     ]
   }

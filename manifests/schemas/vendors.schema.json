@@ -16,9 +16,7 @@
             "$ref": "./ref/community-urls.schema.json"
           }
         },
-        "required": [
-          "communityUrls"
-        ]
+        "required": ["communityUrls"]
       }
     ]
   }
