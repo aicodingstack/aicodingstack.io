@@ -2,32 +2,32 @@
   "extensions": {
     "amp": null,
     "augment-code": null,
-    "claude-code": 43,
-    "cline": 52.5,
+    "claude-code": 43.1,
+    "cline": 52.6,
     "continue": 29.9,
     "github-copilot": null,
     "jetbrains-junie": null,
-    "kilo-code": 12.5,
+    "kilo-code": 12.6,
     "roo-code": 20.9,
     "tabnine": 10.8
   },
   "clis": {
-    "amazon-q-developer-cli": null,
+    "amazon-q-developer-cli": 1.8,
     "amp-cli": null,
-    "augment-code-cli": null,
-    "claude-code": null,
+    "augment-code-cli": 0.1,
+    "claude-code": 43.1,
     "cline-cli": null,
     "codebuddy-cli": null,
-    "codex": null,
-    "continue-cli": null,
+    "codex": 51.1,
+    "continue-cli": 29.9,
     "droid-cli": null,
-    "gemini-cli": null,
-    "github-copilot-cli": null,
-    "kilocode-cli": null,
-    "kimi-cli": null,
-    "kode": null,
-    "neovate-code": null,
-    "opencode": null,
+    "gemini-cli": 83.9,
+    "github-copilot-cli": 5.4,
+    "kilocode-cli": 12.6,
+    "kimi-cli": 3.2,
+    "kode": 3.6,
+    "neovate-code": 1.1,
+    "opencode": 33.6,
     "qoder-cli": null
   },
   "ides": {
@@ -41,6 +41,6 @@
     "trae": null,
     "vscode": 178.8,
     "windsurf": null,
-    "zed": null
+    "zed": 70.1
   }
 }
