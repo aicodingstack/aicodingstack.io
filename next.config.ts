@@ -39,6 +39,9 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
 
+  // Required for OpenNext Cloudflare adapter
+  output: 'standalone',
+
   // Performance optimizations
   compress: true, // Enable gzip compression
   poweredByHeader: false, // Remove X-Powered-By header for security

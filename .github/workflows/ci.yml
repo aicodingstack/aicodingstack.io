@@ -132,7 +132,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-output
-          path: .next
+          path: |
+            .next
+            .open-next
           retention-days: 7
 
   ci-success:
