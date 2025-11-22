@@ -1,0 +1,27 @@
+{
+  "id": "deepseek-r1",
+  "name": "DeepSeek R1",
+  "description": "DeepSeek R1 is a 1.3B parameter language model with 128K context window, designed for advanced reasoning and code generation tasks.",
+  "i18n": {
+    "zh-Hans": {
+      "description": "DeepSeek R1 是 1.3B 参数的语言模型，具备 128K 上下文窗口，专为高级推理和代码生成任务设计。"
+    }
+  },
+  "websiteUrl": "https://www.deepseek.com/",
+  "docsUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+  "verified": false,
+  "vendor": "DeepSeek",
+  "size": "671B",
+  "totalContext": "64K",
+  "maxOutput": "4K",
+  "tokenPricing": {
+    "input": 0.14,
+    "output": 0.14,
+    "cache": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/deepseek-r1",
+    "openrouter": "https://openrouter.ai/deepseek/deepseek-r1"
+  }
+}

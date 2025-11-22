@@ -1,0 +1,27 @@
+{
+  "id": "claude-opus-4",
+  "name": "Claude Opus 4",
+  "description": "Claude Opus 4 is a 200K context window language model from Anthropic, designed for complex coding tasks.",
+  "i18n": {
+    "zh-Hans": {
+      "description": "Claude Opus 4 是 Anthropic 推出的 200K 上下文窗口语言模型，专为复杂的代码生成任务设计。"
+    }
+  },
+  "websiteUrl": "https://www.anthropic.com/",
+  "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
+  "verified": false,
+  "vendor": "Anthropic",
+  "size": "Unknown",
+  "totalContext": "200K",
+  "maxOutput": "8K",
+  "tokenPricing": {
+    "input": 15,
+    "output": 75,
+    "cache": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/claude-opus-4",
+    "openrouter": "https://openrouter.ai/anthropic/claude-opus-4"
+  }
+}
