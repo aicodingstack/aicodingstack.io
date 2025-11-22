@@ -1,0 +1,14 @@
+{
+  "id": "xai",
+  "name": "xAI",
+  "description": "xAI is a company that makes AI models.",
+  "websiteUrl": "https://x.ai",
+  "docsUrl": "https://x.ai/api",
+  "verified": false,
+  "vendor": "xAI",
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}
