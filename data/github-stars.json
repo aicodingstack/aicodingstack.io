@@ -4,7 +4,7 @@
     "augment-code": null,
     "claude-code": 43.1,
     "cline": 52.6,
-    "continue": 29.9,
+    "continue": 30,
     "github-copilot": null,
     "jetbrains-junie": null,
     "kilo-code": 12.6,
@@ -19,9 +19,9 @@
     "cline-cli": null,
     "codebuddy-cli": null,
     "codex": 51.1,
-    "continue-cli": 29.9,
+    "continue-cli": 30,
     "droid-cli": null,
-    "gemini-cli": 83.9,
+    "gemini-cli": 84.1,
     "github-copilot-cli": 5.4,
     "kilocode-cli": 12.6,
     "kimi-cli": 3.2,
@@ -39,8 +39,8 @@
     "kiro": 2.3,
     "qoder": null,
     "trae": null,
-    "vscode": 178.8,
+    "vscode": 178.9,
     "windsurf": null,
-    "zed": 70.1
+    "zed": 70.2
   }
 }

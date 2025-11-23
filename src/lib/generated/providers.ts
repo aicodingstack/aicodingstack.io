@@ -9,6 +9,7 @@ import Minimax from '../../../manifests/providers/minimax.json'
 import Moonshot from '../../../manifests/providers/moonshot.json'
 import Openrouter from '../../../manifests/providers/openrouter.json'
 import Siliconflow from '../../../manifests/providers/siliconflow.json'
+import Xai from '../../../manifests/providers/xai.json'
 import ZAi from '../../../manifests/providers/z-ai.json'
 import type { ManifestProvider } from '../../types/manifests'
 
@@ -18,6 +19,7 @@ export const providersData = [
   Moonshot,
   Openrouter,
   Siliconflow,
+  Xai,
   ZAi,
 ] as unknown as ManifestProvider[]
 

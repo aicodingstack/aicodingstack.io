@@ -4,17 +4,18 @@
  * Do not edit manually - run the script to regenerate
  */
 
-import Claude37Sonnet from '../../../manifests/models/claude-3-7-sonnet.json'
 import ClaudeHaiku45 from '../../../manifests/models/claude-haiku-4-5.json'
+import ClaudeOpus4 from '../../../manifests/models/claude-opus-4.json'
 import ClaudeOpus41 from '../../../manifests/models/claude-opus-4-1.json'
 import ClaudeSonnet4 from '../../../manifests/models/claude-sonnet-4.json'
 import ClaudeSonnet45 from '../../../manifests/models/claude-sonnet-4-5.json'
+import DeepseekR1 from '../../../manifests/models/deepseek-r1.json'
 import DeepseekV3Terminus from '../../../manifests/models/deepseek-v3-terminus.json'
 import Gemini25Flash from '../../../manifests/models/gemini-2-5-flash.json'
 import Gemini25Pro from '../../../manifests/models/gemini-2-5-pro.json'
+import Gemini3Pro from '../../../manifests/models/gemini-3-pro.json'
 import Glm46 from '../../../manifests/models/glm-4-6.json'
 import Gpt41 from '../../../manifests/models/gpt-4-1.json'
-import Gpt45 from '../../../manifests/models/gpt-4-5.json'
 import Gpt4o from '../../../manifests/models/gpt-4o.json'
 import Gpt5 from '../../../manifests/models/gpt-5.json'
 import Gpt51 from '../../../manifests/models/gpt-5-1.json'
@@ -30,17 +31,18 @@ import Qwen3CoderPlus from '../../../manifests/models/qwen3-coder-plus.json'
 import type { ManifestModel } from '../../types/manifests'
 
 export const modelsData = [
-  Claude37Sonnet,
   ClaudeHaiku45,
+  ClaudeOpus4,
   ClaudeOpus41,
   ClaudeSonnet4,
   ClaudeSonnet45,
+  DeepseekR1,
   DeepseekV3Terminus,
   Gemini25Flash,
   Gemini25Pro,
+  Gemini3Pro,
   Glm46,
   Gpt41,
-  Gpt45,
   Gpt4o,
   Gpt5,
   Gpt51,
@@ -55,6 +57,6 @@ export const modelsData = [
   Qwen3CoderPlus,
 ] as unknown as ManifestModel[]
 
-export type Model = typeof Claude37Sonnet
+export type Model = typeof ClaudeHaiku45
 
 export default modelsData
