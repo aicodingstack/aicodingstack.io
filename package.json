@@ -46,7 +46,7 @@
     "recharts": "^3.5.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.3.7",
+    "@biomejs/biome": "^2.3.8",
     "@cspell/dict-de-de": "^4.1.2",
     "@cspell/dict-es-es": "^3.0.8",
     "@cspell/dict-fr-fr": "^2.3.2",
@@ -58,7 +58,7 @@
     "@tailwindcss/postcss": "^4.1.17",
     "@types/mdx": "^2.0.13",
     "@types/node": "^20.19.25",
-    "@types/react": "^19.2.6",
+    "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
@@ -73,7 +73,7 @@
     "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3",
     "user-agents": "^1.1.669",
-    "wrangler": "^4.50.0"
+    "wrangler": "^4.51.0"
   },
   "repository": {
     "type": "git",
