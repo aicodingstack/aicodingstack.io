@@ -24,5 +24,11 @@
     "huggingface": null,
     "artificialAnalysis": null,
     "openrouter": null
+  },
+  "benchmarks": {
+    "sweBench": 61,
+    "terminalBench": 0.3,
+    "sciCode": null,
+    "liveCodeBench": null
   }
 }

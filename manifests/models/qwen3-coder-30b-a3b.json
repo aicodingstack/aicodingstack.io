@@ -24,5 +24,11 @@
     "huggingface": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
     "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-coder-30b-a3b-instruct",
     "openrouter": "https://openrouter.ai/qwen/qwen3-coder-30b-a3b-instruct"
+  },
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "sciCode": null,
+    "liveCodeBench": null
   }
 }

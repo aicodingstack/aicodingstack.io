@@ -9,12 +9,14 @@ import ClaudeOpus4 from '../../../manifests/models/claude-opus-4.json'
 import ClaudeOpus41 from '../../../manifests/models/claude-opus-4-1.json'
 import ClaudeSonnet4 from '../../../manifests/models/claude-sonnet-4.json'
 import ClaudeSonnet45 from '../../../manifests/models/claude-sonnet-4-5.json'
+import Composer from '../../../manifests/models/composer.json'
 import DeepseekR1 from '../../../manifests/models/deepseek-r1.json'
 import DeepseekV3Terminus from '../../../manifests/models/deepseek-v3-terminus.json'
 import Gemini25Flash from '../../../manifests/models/gemini-2-5-flash.json'
 import Gemini25Pro from '../../../manifests/models/gemini-2-5-pro.json'
 import Gemini3Pro from '../../../manifests/models/gemini-3-pro.json'
 import Glm46 from '../../../manifests/models/glm-4-6.json'
+import Glm46v from '../../../manifests/models/glm-4-6v.json'
 import Gpt41 from '../../../manifests/models/gpt-4-1.json'
 import Gpt4o from '../../../manifests/models/gpt-4o.json'
 import Gpt5 from '../../../manifests/models/gpt-5.json'
@@ -36,12 +38,14 @@ export const modelsData = [
   ClaudeOpus41,
   ClaudeSonnet4,
   ClaudeSonnet45,
+  Composer,
   DeepseekR1,
   DeepseekV3Terminus,
   Gemini25Flash,
   Gemini25Pro,
   Gemini3Pro,
   Glm46,
+  Glm46v,
   Gpt41,
   Gpt4o,
   Gpt5,

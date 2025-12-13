@@ -24,5 +24,11 @@
     "huggingface": "https://huggingface.co/moonshotai/Kimi-K2-Instruct-0905",
     "artificialAnalysis": "https://artificialanalysis.ai/models/kimi-k2-0905",
     "openrouter": "https://openrouter.ai/moonshotai/kimi-k2-0905"
+  },
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "sciCode": null,
+    "liveCodeBench": null
   }
 }

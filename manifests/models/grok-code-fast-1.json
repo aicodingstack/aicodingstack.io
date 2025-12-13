@@ -24,5 +24,11 @@
     "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/grok-code-fast-1",
     "openrouter": "https://openrouter.ai/x-ai/grok-code-fast-1"
+  },
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": 0.258,
+    "sciCode": null,
+    "liveCodeBench": null
   }
 }

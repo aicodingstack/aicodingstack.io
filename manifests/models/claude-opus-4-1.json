@@ -24,5 +24,11 @@
     "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/claude-4-1-opus",
     "openrouter": "https://openrouter.ai/anthropic/claude-opus-4.1"
+  },
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": 0.38,
+    "sciCode": null,
+    "liveCodeBench": 46.9
   }
 }

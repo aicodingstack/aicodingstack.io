@@ -24,5 +24,11 @@
     "huggingface": "https://huggingface.co/zai-org/GLM-4.6",
     "artificialAnalysis": "https://artificialanalysis.ai/models/glm-4-6",
     "openrouter": "https://openrouter.ai/z-ai/glm-4.6"
+  },
+  "benchmarks": {
+    "sweBench": 55.4,
+    "terminalBench": 0.245,
+    "sciCode": null,
+    "liveCodeBench": null
   }
 }

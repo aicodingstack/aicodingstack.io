@@ -24,5 +24,11 @@
     "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-4o",
     "openrouter": "https://openrouter.ai/openai/gpt-4o"
+  },
+  "benchmarks": {
+    "sweBench": 21.62,
+    "terminalBench": null,
+    "sciCode": 1.5,
+    "liveCodeBench": 29.5
   }
 }

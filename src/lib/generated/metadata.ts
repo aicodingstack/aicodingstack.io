@@ -601,8 +601,8 @@ export const faqMetadata: Record<string, FaqItem[]> = {
 export const stackCounts: Record<string, number> = {
   ides: 11,
   clis: 18,
-  extensions: 13,
-  models: 24,
+  extensions: 14,
+  models: 26,
   'model-providers': 7,
   vendors: 34,
 }

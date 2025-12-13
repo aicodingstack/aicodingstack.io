@@ -24,5 +24,11 @@
     "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus",
     "artificialAnalysis": "https://artificialanalysis.ai/models/deepseek-v3-1-terminus",
     "openrouter": "https://openrouter.ai/deepseek/deepseek-v3.1-terminus"
+  },
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "sciCode": 3.1,
+    "liveCodeBench": 27.2
   }
 }

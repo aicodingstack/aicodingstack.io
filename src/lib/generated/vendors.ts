@@ -11,7 +11,7 @@ import Anysphere from '../../../manifests/vendors/anysphere.json'
 import Augment from '../../../manifests/vendors/augment.json'
 import Aws from '../../../manifests/vendors/aws.json'
 import Bytedance from '../../../manifests/vendors/bytedance.json'
-import ClineBot from '../../../manifests/vendors/cline-bot.json'
+import Cline from '../../../manifests/vendors/cline.json'
 import Cognition from '../../../manifests/vendors/cognition.json'
 import Continue from '../../../manifests/vendors/continue.json'
 import Deepseek from '../../../manifests/vendors/deepseek.json'
@@ -48,7 +48,7 @@ export const vendorsData = [
   Augment,
   Aws,
   Bytedance,
-  ClineBot,
+  Cline,
   Cognition,
   Continue,
   Deepseek,

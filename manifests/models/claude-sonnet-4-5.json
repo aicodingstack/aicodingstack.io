@@ -24,5 +24,11 @@
     "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/claude-4-5-sonnet",
     "openrouter": "https://openrouter.ai/anthropic/claude-sonnet-4.5"
+  },
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": 0.428,
+    "sciCode": null,
+    "liveCodeBench": 47.1
   }
 }

@@ -11,6 +11,7 @@ import Cline from '../../../manifests/extensions/cline.json'
 import Codex from '../../../manifests/extensions/codex.json'
 import Continue from '../../../manifests/extensions/continue.json'
 import Droid from '../../../manifests/extensions/droid.json'
+import GeminiCodeAssist from '../../../manifests/extensions/gemini-code-assist.json'
 import GithubCopilot from '../../../manifests/extensions/github-copilot.json'
 import JetbrainsJunie from '../../../manifests/extensions/jetbrains-junie.json'
 import KiloCode from '../../../manifests/extensions/kilo-code.json'
@@ -27,6 +28,7 @@ export const extensionsData = [
   Codex,
   Continue,
   Droid,
+  GeminiCodeAssist,
   GithubCopilot,
   JetbrainsJunie,
   KiloCode,

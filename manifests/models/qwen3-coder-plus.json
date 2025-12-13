@@ -24,5 +24,11 @@
     "huggingface": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B",
     "artificialAnalysis": null,
     "openrouter": "https://openrouter.ai/qwen/qwen3-coder-plus"
+  },
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "sciCode": null,
+    "liveCodeBench": null
   }
 }

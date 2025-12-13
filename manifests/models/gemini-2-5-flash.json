@@ -24,5 +24,11 @@
     "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/gemini-2-5-flash",
     "openrouter": "https://openrouter.ai/google/gemini-2.5-flash"
+  },
+  "benchmarks": {
+    "sweBench": 28.73,
+    "terminalBench": 0.171,
+    "sciCode": null,
+    "liveCodeBench": 61.9
   }
 }

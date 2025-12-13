@@ -24,5 +24,11 @@
     "huggingface": "https://huggingface.co/meta-llama/Llama-4-Maverick",
     "artificialAnalysis": "https://artificialanalysis.ai/models/llama-4-maverick",
     "openrouter": "https://openrouter.ai/meta/llama-4-maverick"
+  },
+  "benchmarks": {
+    "sweBench": 21.04,
+    "terminalBench": null,
+    "sciCode": null,
+    "liveCodeBench": null
   }
 }

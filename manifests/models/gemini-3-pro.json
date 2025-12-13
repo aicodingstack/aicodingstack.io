@@ -24,5 +24,11 @@
     "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/gemini-3-pro",
     "openrouter": "https://openrouter.ai/google/gemini-3-pro"
+  },
+  "benchmarks": {
+    "sweBench": 74.2,
+    "terminalBench": 0.589,
+    "sciCode": null,
+    "liveCodeBench": null
   }
 }
