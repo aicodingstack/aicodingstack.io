@@ -13,22 +13,24 @@
   "docsUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct-0905",
   "vendor": "Moonshot",
   "size": "200B",
-  "totalContext": "200K",
-  "maxOutput": "8K",
+  "contextWindow": 200000,
+  "maxOutput": 8000,
   "tokenPricing": {
     "input": 2,
     "output": 2,
     "cache": null
   },
-  "platformUrls": {
-    "huggingface": "https://huggingface.co/moonshotai/Kimi-K2-Instruct-0905",
-    "artificialAnalysis": "https://artificialanalysis.ai/models/kimi-k2-0905",
-    "openrouter": "https://openrouter.ai/moonshotai/kimi-k2-0905"
-  },
+  "releaseDate": null,
+  "inputModalities": ["text"],
   "benchmarks": {
     "sweBench": null,
     "terminalBench": null,
     "sciCode": null,
     "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/moonshotai/Kimi-K2-Instruct-0905",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/kimi-k2-0905",
+    "openrouter": "https://openrouter.ai/moonshotai/kimi-k2-0905"
   }
 }

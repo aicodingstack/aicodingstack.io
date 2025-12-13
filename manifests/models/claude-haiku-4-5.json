@@ -13,22 +13,24 @@
   "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
   "vendor": "Anthropic",
   "size": "Unknown",
-  "totalContext": "200K",
-  "maxOutput": "8K",
+  "contextWindow": 200000,
+  "maxOutput": 8000,
   "tokenPricing": {
     "input": 1,
     "output": 1,
     "cache": null
   },
-  "platformUrls": {
-    "huggingface": null,
-    "artificialAnalysis": "https://artificialanalysis.ai/models/claude-4-5-haiku",
-    "openrouter": "https://openrouter.ai/anthropic/claude-haiku-4.5"
-  },
+  "releaseDate": null,
+  "inputModalities": ["text"],
   "benchmarks": {
     "sweBench": null,
     "terminalBench": 0.298,
     "sciCode": null,
     "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/claude-4-5-haiku",
+    "openrouter": "https://openrouter.ai/anthropic/claude-haiku-4.5"
   }
 }

@@ -13,22 +13,24 @@
   "docsUrl": "https://ai.meta.com/llama",
   "vendor": "Meta",
   "size": "400B",
-  "totalContext": "1M",
-  "maxOutput": "8K",
+  "contextWindow": 1000000,
+  "maxOutput": 8000,
   "tokenPricing": {
     "input": 0.15,
     "output": 0.15,
     "cache": null
   },
-  "platformUrls": {
-    "huggingface": "https://huggingface.co/meta-llama/Llama-4-Maverick",
-    "artificialAnalysis": "https://artificialanalysis.ai/models/llama-4-maverick",
-    "openrouter": "https://openrouter.ai/meta/llama-4-maverick"
-  },
+  "releaseDate": null,
+  "inputModalities": ["text", "image"],
   "benchmarks": {
     "sweBench": 21.04,
     "terminalBench": null,
     "sciCode": null,
     "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/meta-llama/Llama-4-Maverick",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/llama-4-maverick",
+    "openrouter": "https://openrouter.ai/meta/llama-4-maverick"
   }
 }

@@ -13,22 +13,24 @@
   "docsUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
   "vendor": "DeepSeek",
   "size": "671B",
-  "totalContext": "64K",
-  "maxOutput": "4K",
+  "contextWindow": 64000,
+  "maxOutput": 4000,
   "tokenPricing": {
     "input": 0.14,
     "output": 0.14,
     "cache": null
   },
-  "platformUrls": {
-    "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
-    "artificialAnalysis": "https://artificialanalysis.ai/models/deepseek-r1",
-    "openrouter": "https://openrouter.ai/deepseek/deepseek-r1"
-  },
+  "releaseDate": null,
+  "inputModalities": ["text"],
   "benchmarks": {
     "sweBench": null,
     "terminalBench": null,
     "sciCode": 4.6,
     "liveCodeBench": 73.1
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/deepseek-r1",
+    "openrouter": "https://openrouter.ai/deepseek/deepseek-r1"
   }
 }

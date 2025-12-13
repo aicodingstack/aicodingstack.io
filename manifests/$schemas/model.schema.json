@@ -14,13 +14,13 @@
           "type": "string",
           "description": "Model parameter size (e.g., '7B', '32B', '200B')"
         },
-        "totalContext": {
-          "type": "string",
-          "description": "Total context window size (e.g., '32K', '64K', '200K')"
+        "contextWindow": {
+          "type": "number",
+          "description": "Total context window size in tokens (e.g., 32000, 64000, 200000)"
         },
         "maxOutput": {
-          "type": "string",
-          "description": "Maximum output token size (e.g., '4K', '8K')"
+          "type": "number",
+          "description": "Maximum output token size in tokens (e.g., 4096, 8192)"
         },
         "tokenPricing": {
           "type": "object",
@@ -42,9 +42,20 @@
           "required": ["input", "output", "cache"],
           "additionalProperties": false
         },
-        "platformUrls": {
-          "$ref": "./ref/platform-urls.schema.json",
-          "description": "URLs to various third-party platform pages for this model"
+        "releaseDate": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "Model release date in ISO 8601 format (YYYY-MM-DD), null if release date is unknown"
+        },
+        "inputModalities": {
+          "type": "array",
+          "description": "Input modalities supported by the model",
+          "items": {
+            "type": "string",
+            "enum": ["image", "text", "file"]
+          },
+          "uniqueItems": true,
+          "minItems": 1
         },
         "benchmarks": {
           "type": "object",
@@ -80,9 +91,22 @@
             }
           },
           "additionalProperties": false
+        },
+        "platformUrls": {
+          "$ref": "./ref/platform-urls.schema.json",
+          "description": "URLs to various third-party platform pages for this model"
         }
       },
-      "required": ["size", "totalContext", "maxOutput", "tokenPricing", "platformUrls"]
+      "required": [
+        "size",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "releaseDate",
+        "inputModalities",
+        "benchmarks",
+        "platformUrls"
+      ]
     }
   ]
 }

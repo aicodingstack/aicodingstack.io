@@ -13,22 +13,24 @@
   "docsUrl": "https://docs.x.ai/docs/models/grok-code-fast-1",
   "vendor": "xAI",
   "size": "Unknown",
-  "totalContext": "128K",
-  "maxOutput": "8K",
+  "contextWindow": 128000,
+  "maxOutput": 8000,
   "tokenPricing": {
     "input": 0,
     "output": 0,
     "cache": null
   },
-  "platformUrls": {
-    "huggingface": null,
-    "artificialAnalysis": "https://artificialanalysis.ai/models/grok-code-fast-1",
-    "openrouter": "https://openrouter.ai/x-ai/grok-code-fast-1"
-  },
+  "releaseDate": null,
+  "inputModalities": ["text"],
   "benchmarks": {
     "sweBench": null,
     "terminalBench": 0.258,
     "sciCode": null,
     "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/grok-code-fast-1",
+    "openrouter": "https://openrouter.ai/x-ai/grok-code-fast-1"
   }
 }

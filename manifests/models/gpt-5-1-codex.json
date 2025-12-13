@@ -13,22 +13,24 @@
   "docsUrl": "https://platform.openai.com/docs/models/gpt-5.1-codex",
   "vendor": "OpenAI",
   "size": "Unknown",
-  "totalContext": "128K",
-  "maxOutput": "16K",
+  "contextWindow": 128000,
+  "maxOutput": 16000,
   "tokenPricing": {
     "input": 1.25,
     "output": 1.25,
     "cache": null
   },
-  "platformUrls": {
-    "huggingface": null,
-    "artificialAnalysis": null,
-    "openrouter": "https://openrouter.ai/openai/gpt-5.1-codex"
-  },
+  "releaseDate": null,
+  "inputModalities": ["text"],
   "benchmarks": {
     "sweBench": null,
     "terminalBench": 0.604,
     "sciCode": null,
     "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": "https://openrouter.ai/openai/gpt-5.1-codex"
   }
 }

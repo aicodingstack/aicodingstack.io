@@ -13,22 +13,24 @@
   "docsUrl": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B",
   "vendor": "Alibaba",
   "size": "480B",
-  "totalContext": "128K",
-  "maxOutput": "8K",
+  "contextWindow": 128000,
+  "maxOutput": 8000,
   "tokenPricing": {
     "input": 1,
     "output": 1,
     "cache": null
   },
-  "platformUrls": {
-    "huggingface": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B",
-    "artificialAnalysis": null,
-    "openrouter": "https://openrouter.ai/qwen/qwen3-coder-plus"
-  },
+  "releaseDate": null,
+  "inputModalities": ["text"],
   "benchmarks": {
     "sweBench": null,
     "terminalBench": null,
     "sciCode": null,
     "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B",
+    "artificialAnalysis": null,
+    "openrouter": "https://openrouter.ai/qwen/qwen3-coder-plus"
   }
 }

@@ -13,22 +13,24 @@
   "docsUrl": "https://platform.openai.com/docs/models/gpt-4",
   "vendor": "OpenAI",
   "size": "Unknown",
-  "totalContext": "1M",
-  "maxOutput": "16K",
+  "contextWindow": 1000000,
+  "maxOutput": 16000,
   "tokenPricing": {
     "input": 3,
     "output": 15,
     "cache": null
   },
-  "platformUrls": {
-    "huggingface": null,
-    "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-4-1",
-    "openrouter": "https://openrouter.ai/openai/gpt-4.1"
-  },
+  "releaseDate": "2025-04-01",
+  "inputModalities": ["text"],
   "benchmarks": {
     "sweBench": 39.58,
     "terminalBench": null,
     "sciCode": null,
     "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-4-1",
+    "openrouter": "https://openrouter.ai/openai/gpt-4.1"
   }
 }

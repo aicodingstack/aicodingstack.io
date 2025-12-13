@@ -13,22 +13,24 @@
   "docsUrl": "https://ai.google.dev/docs",
   "vendor": "Google",
   "size": "Unknown",
-  "totalContext": "128K",
-  "maxOutput": "8K",
+  "contextWindow": 128000,
+  "maxOutput": 8000,
   "tokenPricing": {
     "input": 1.25,
     "output": 1.25,
     "cache": null
   },
-  "platformUrls": {
-    "huggingface": null,
-    "artificialAnalysis": "https://artificialanalysis.ai/models/gemini-3-pro",
-    "openrouter": "https://openrouter.ai/google/gemini-3-pro"
-  },
+  "releaseDate": null,
+  "inputModalities": ["text"],
   "benchmarks": {
     "sweBench": 74.2,
     "terminalBench": 0.589,
     "sciCode": null,
     "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gemini-3-pro",
+    "openrouter": "https://openrouter.ai/google/gemini-3-pro"
   }
 }

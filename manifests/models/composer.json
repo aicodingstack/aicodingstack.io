@@ -13,22 +13,24 @@
   "docsUrl": "https://cursor.com/blog/composer",
   "vendor": "Anysphere",
   "size": "Unknown",
-  "totalContext": "Unknown",
-  "maxOutput": "Unknown",
+  "contextWindow": 128000,
+  "maxOutput": 8000,
   "tokenPricing": {
     "input": 0,
     "output": 0,
     "cache": null
   },
-  "platformUrls": {
-    "huggingface": null,
-    "artificialAnalysis": null,
-    "openrouter": null
-  },
+  "releaseDate": null,
+  "inputModalities": ["text"],
   "benchmarks": {
     "sweBench": null,
     "terminalBench": null,
     "sciCode": null,
     "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
   }
 }

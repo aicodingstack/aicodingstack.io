@@ -13,22 +13,24 @@
   "docsUrl": "https://platform.openai.com/docs/models/gpt-4o",
   "vendor": "OpenAI",
   "size": "Unknown",
-  "totalContext": "128K",
-  "maxOutput": "16K",
+  "contextWindow": 128000,
+  "maxOutput": 16000,
   "tokenPricing": {
     "input": 2.5,
     "output": 10,
     "cache": null
   },
-  "platformUrls": {
-    "huggingface": null,
-    "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-4o",
-    "openrouter": "https://openrouter.ai/openai/gpt-4o"
-  },
+  "releaseDate": null,
+  "inputModalities": ["text", "image"],
   "benchmarks": {
     "sweBench": 21.62,
     "terminalBench": null,
     "sciCode": 1.5,
     "liveCodeBench": 29.5
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-4o",
+    "openrouter": "https://openrouter.ai/openai/gpt-4o"
   }
 }

@@ -13,22 +13,24 @@
   "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
   "vendor": "Anthropic",
   "size": "Unknown",
-  "totalContext": "200K",
-  "maxOutput": "8K",
+  "contextWindow": 200000,
+  "maxOutput": 8000,
   "tokenPricing": {
     "input": 15,
     "output": 75,
     "cache": null
   },
-  "platformUrls": {
-    "huggingface": null,
-    "artificialAnalysis": "https://artificialanalysis.ai/models/claude-4-opus",
-    "openrouter": "https://openrouter.ai/anthropic/claude-opus-4"
-  },
+  "releaseDate": null,
+  "inputModalities": ["text"],
   "benchmarks": {
     "sweBench": null,
     "terminalBench": 0.578,
     "sciCode": null,
     "liveCodeBench": 56.6
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/claude-4-opus",
+    "openrouter": "https://openrouter.ai/anthropic/claude-opus-4"
   }
 }

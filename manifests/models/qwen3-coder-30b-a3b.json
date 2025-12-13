@@ -13,22 +13,24 @@
   "docsUrl": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "vendor": "Alibaba",
   "size": "32B",
-  "totalContext": "32K",
-  "maxOutput": "4K",
+  "contextWindow": 32000,
+  "maxOutput": 4000,
   "tokenPricing": {
     "input": 0.2,
     "output": 0.2,
     "cache": null
   },
-  "platformUrls": {
-    "huggingface": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
-    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-coder-30b-a3b-instruct",
-    "openrouter": "https://openrouter.ai/qwen/qwen3-coder-30b-a3b-instruct"
-  },
+  "releaseDate": null,
+  "inputModalities": ["text"],
   "benchmarks": {
     "sweBench": null,
     "terminalBench": null,
     "sciCode": null,
     "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-coder-30b-a3b-instruct",
+    "openrouter": "https://openrouter.ai/qwen/qwen3-coder-30b-a3b-instruct"
   }
 }

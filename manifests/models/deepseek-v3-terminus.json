@@ -13,22 +13,24 @@
   "docsUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus",
   "vendor": "DeepSeek",
   "size": "67B",
-  "totalContext": "64K",
-  "maxOutput": "4K",
+  "contextWindow": 64000,
+  "maxOutput": 4000,
   "tokenPricing": {
     "input": 0.14,
     "output": 0.14,
     "cache": null
   },
-  "platformUrls": {
-    "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus",
-    "artificialAnalysis": "https://artificialanalysis.ai/models/deepseek-v3-1-terminus",
-    "openrouter": "https://openrouter.ai/deepseek/deepseek-v3.1-terminus"
-  },
+  "releaseDate": null,
+  "inputModalities": ["text"],
   "benchmarks": {
     "sweBench": null,
     "terminalBench": null,
     "sciCode": 3.1,
     "liveCodeBench": 27.2
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/deepseek-v3-1-terminus",
+    "openrouter": "https://openrouter.ai/deepseek/deepseek-v3.1-terminus"
   }
 }

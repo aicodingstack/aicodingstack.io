@@ -13,22 +13,24 @@
   "docsUrl": "https://docs.z.ai/guides/vlm/glm-4.6v",
   "vendor": "Z.ai",
   "size": "108B",
-  "totalContext": "128K",
-  "maxOutput": "16K",
+  "contextWindow": 128000,
+  "maxOutput": 16000,
   "tokenPricing": {
     "input": 0.3,
     "output": 0.9,
     "cache": 0.05
   },
-  "platformUrls": {
-    "huggingface": "https://huggingface.co/zai-org/GLM-4.6V",
-    "artificialAnalysis": null,
-    "openrouter": "https://openrouter.ai/z-ai/glm-4.6v"
-  },
+  "releaseDate": null,
+  "inputModalities": ["text", "image"],
   "benchmarks": {
     "sweBench": null,
     "terminalBench": 0.245,
     "sciCode": null,
     "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/zai-org/GLM-4.6V",
+    "artificialAnalysis": null,
+    "openrouter": "https://openrouter.ai/z-ai/glm-4.6v"
   }
 }
