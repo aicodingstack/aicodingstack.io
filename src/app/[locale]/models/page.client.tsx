@@ -9,6 +9,7 @@ import PageHeader from '@/components/PageHeader'
 import { VerifiedBadge } from '@/components/VerifiedBadge'
 import type { Locale } from '@/i18n/config'
 import { Link } from '@/i18n/navigation'
+import { formatTokenCount } from '@/lib/format'
 import { modelsData } from '@/lib/generated'
 import { localizeManifestItems } from '@/lib/manifest-i18n'
 import type { ManifestModel } from '@/types/manifests'
@@ -113,7 +114,9 @@ export default function ModelsPageClient({ locale }: Props) {
                   </div>
                   <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
                     <span className="text-[var(--color-text-muted)]">{t('context')}</span>
-                    <span className="text-[var(--color-text-secondary)]">{model.totalContext}</span>
+                    <span className="text-[var(--color-text-secondary)]">
+                      {formatTokenCount(model.contextWindow)}
+                    </span>
                   </div>
                   <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
                     <span className="text-[var(--color-text-muted)]">{t('pricing')}</span>

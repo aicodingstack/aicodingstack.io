@@ -1,4 +1,5 @@
 import { Link } from '@/i18n/navigation'
+import { formatTokenCount } from '@/lib/format'
 import type { ManifestModel } from '@/types/manifests'
 
 type Props = {
@@ -39,16 +40,12 @@ export function VendorModels({ models, locale: _locale, title }: Props) {
                       {model.size}
                     </span>
                   )}
-                  {model.totalContext && (
-                    <span className="px-2 py-0.5 bg-[var(--color-background-muted)] text-[var(--color-text-secondary)] border border-[var(--color-border)]">
-                      {model.totalContext} context
-                    </span>
-                  )}
-                  {model.maxOutput && (
-                    <span className="px-2 py-0.5 bg-[var(--color-background-muted)] text-[var(--color-text-secondary)] border border-[var(--color-border)]">
-                      {model.maxOutput} output
-                    </span>
-                  )}
+                  <span className="px-2 py-0.5 bg-[var(--color-background-muted)] text-[var(--color-text-secondary)] border border-[var(--color-border)]">
+                    {formatTokenCount(model.contextWindow)} context
+                  </span>
+                  <span className="px-2 py-0.5 bg-[var(--color-background-muted)] text-[var(--color-text-secondary)] border border-[var(--color-border)]">
+                    {formatTokenCount(model.maxOutput)} output
+                  </span>
                 </div>
               </div>
               <span className="text-lg text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all ml-[var(--spacing-xs)]">

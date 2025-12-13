@@ -9,6 +9,7 @@ import { ProductHero } from '@/components/product'
 import type { Locale } from '@/i18n/config'
 import { BENCHMARK_KEYS, formatBenchmarkValue, hasBenchmarks } from '@/lib/benchmarks'
 import { getModel } from '@/lib/data/fetchers'
+import { formatTokenCount } from '@/lib/format'
 import { modelsData as models } from '@/lib/generated'
 import { generateModelDetailMetadata } from '@/lib/metadata'
 
@@ -40,16 +41,8 @@ export async function generateMetadata({
       description: model.description || '',
       vendor: model.vendor,
       size: model.size ?? undefined,
-      totalContext:
-        typeof model.totalContext === 'string'
-          ? parseInt(model.totalContext.replace(/[KM]/g, ''), 10) *
-            (model.totalContext.includes('K') ? 1000 : 1)
-          : (model.totalContext ?? undefined),
-      maxOutput:
-        typeof model.maxOutput === 'string'
-          ? parseInt(model.maxOutput.replace(/[KM]/g, ''), 10) *
-            (model.maxOutput.includes('K') ? 1000 : 1)
-          : (model.maxOutput ?? undefined),
+      contextWindow: model.contextWindow,
+      maxOutput: model.maxOutput,
       tokenPricing: model.tokenPricing
         ? {
             input: model.tokenPricing.input ?? undefined,
@@ -124,8 +117,14 @@ export default async function ModelPage({
         additionalInfo={
           [
             model.size && { label: t('labels.size'), value: model.size },
-            model.totalContext && { label: t('labels.context'), value: model.totalContext },
-            model.maxOutput && { label: t('labels.maxOutput'), value: model.maxOutput },
+            {
+              label: t('labels.context'),
+              value: formatTokenCount(model.contextWindow),
+            },
+            {
+              label: t('labels.maxOutput'),
+              value: formatTokenCount(model.maxOutput),
+            },
           ].filter(Boolean) as { label: string; value: string }[]
         }
         pricing={
@@ -185,23 +184,23 @@ export default async function ModelPage({
               </div>
             )}
 
-            {model.totalContext && (
-              <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">
-                <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
-                  {t('totalContext')}
-                </h3>
-                <p className="text-lg font-semibold tracking-tight">{model.totalContext}</p>
-              </div>
-            )}
+            <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">
+              <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
+                {t('contextWindow')}
+              </h3>
+              <p className="text-lg font-semibold tracking-tight">
+                {formatTokenCount(model.contextWindow)}
+              </p>
+            </div>
 
-            {model.maxOutput && (
-              <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">
-                <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
-                  {t('maxOutput')}
-                </h3>
-                <p className="text-lg font-semibold tracking-tight">{model.maxOutput}</p>
-              </div>
-            )}
+            <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">
+              <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
+                {t('maxOutput')}
+              </h3>
+              <p className="text-lg font-semibold tracking-tight">
+                {formatTokenCount(model.maxOutput)}
+              </p>
+            </div>
 
             {model.tokenPricing && (
               <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">

@@ -28,7 +28,7 @@ export default function ModelComparisonPageClient({ locale: _locale }: Props) {
       label: t('columns.modelSize'),
     },
     {
-      key: 'totalContext',
+      key: 'contextWindow',
       label: t('columns.contextLength'),
     },
     {

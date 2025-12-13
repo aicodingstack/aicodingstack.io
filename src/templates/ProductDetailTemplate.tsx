@@ -64,7 +64,7 @@ export async function ProductDetailTemplate({
   const tGlobal = await getTranslations({ locale })
 
   // Transform URLs (null → undefined)
-  const websiteUrl = product.resourceUrls?.download || product.websiteUrl
+  const websiteUrl = product.websiteUrl || product.resourceUrls?.download || undefined
   const docsUrl = product.docsUrl || undefined
   const downloadUrl = product.resourceUrls?.download || undefined
 

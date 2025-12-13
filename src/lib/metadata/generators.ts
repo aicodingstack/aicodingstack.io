@@ -6,6 +6,7 @@
 import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import { defaultLocale } from '@/i18n/config'
+import { formatTokenCount } from '@/lib/format'
 import {
   CATEGORY_DISPLAY_NAMES,
   CATEGORY_EXAMPLES,
@@ -190,7 +191,7 @@ export async function generateModelDetailMetadata(options: {
     description: string
     vendor: string
     size?: string
-    totalContext?: number
+    contextWindow?: number
     maxOutput?: number
     tokenPricing?: {
       input?: number
@@ -209,9 +210,9 @@ export async function generateModelDetailMetadata(options: {
   // Build description with model specs
   const specs: string[] = []
   if (model.size) specs.push(`${t('modelSize')}: ${model.size}`)
-  if (model.totalContext)
-    specs.push(`${t('totalContext')}: ${model.totalContext.toLocaleString()} tokens`)
-  if (model.maxOutput) specs.push(`${t('maxOutput')}: ${model.maxOutput.toLocaleString()} tokens`)
+  if (model.contextWindow)
+    specs.push(`${t('contextWindow')}: ${formatTokenCount(model.contextWindow)} tokens`)
+  if (model.maxOutput) specs.push(`${t('maxOutput')}: ${formatTokenCount(model.maxOutput)} tokens`)
 
   const pricingDisplay = model.tokenPricing?.input
     ? `$${model.tokenPricing.input}/M tokens`
