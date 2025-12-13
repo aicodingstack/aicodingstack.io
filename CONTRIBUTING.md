@@ -87,8 +87,8 @@ cd aicodingstack.io
 # Install dependencies
 npm install
 
-# Validate existing manifests
-npm run validate:manifests
+# Run validation tests
+npm run test:validate
 
 # Generate manifests and metadata
 npm run generate:manifests
@@ -104,8 +104,8 @@ Visit `http://localhost:3000` to see the site.
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
-- `npm run validate:manifests` - Validate all manifest JSON files
-- `npm run validate:urls` - Check URL accessibility
+- `npm run test:validate` - Run repository validation tests (schemas, translations, alignment, etc.)
+- `npm run test:urls` - Check URL accessibility (networked; CI-oriented)
 - `npm run lint` - Run ESLint
 - `npm run spell` - Run spell checker
 - `npm test` - Run tests (if available)
@@ -188,11 +188,11 @@ Create a file in `manifests/models/your-model.json`:
 Before submitting, validate your manifest:
 
 ```bash
-# Validate all manifests
-npm run validate:manifests
+# Run validation tests
+npm run test:validate
 
-# Validate URLs
-npm run validate:urls
+# Validate URLs (networked)
+npm run test:urls
 ```
 
 ### Best Practices
@@ -256,9 +256,8 @@ chore(deps): update Next.js to 15.1.0
 2. ✅ **Make your changes** following the guidelines
 3. ✅ **Validate locally**:
    ```bash
-   npm run validate:manifests
-   npm run validate:urls
-   npm run lint
+   npm run test:validate
+   npm run test:urls
    npm run spell
    npm run build
    ```

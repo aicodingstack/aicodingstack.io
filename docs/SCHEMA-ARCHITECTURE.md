@@ -368,6 +368,6 @@ All schemas use JSON Schema Draft 2020-12 with strict mode:
 - Format and pattern validation for URLs
 - Enum validation for controlled vocabularies
 
-**Validation Command**: `npm run validate:manifests`
+**Validation Command**: `npm run test:validate`
 
 **Current Status**: ✅ All 9 manifest files validated successfully

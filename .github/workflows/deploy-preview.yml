@@ -22,14 +22,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Validate manifests
-        run: npm run validate:manifests
+      - name: Run validation tests
+        run: npm run test:validate
 
       - name: Generate manifests and metadata
         run: |

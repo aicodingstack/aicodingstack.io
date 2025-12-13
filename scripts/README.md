@@ -35,8 +35,8 @@ scripts/
 Each category has an entry point script (`index.mjs`) that can run all scripts in that category:
 
 ```bash
-# Run all validation scripts
-npm run validate
+# Run all validation tests
+npm run test:validate
 
 # Run all generation scripts
 npm run generate
@@ -53,10 +53,9 @@ npm run fetch
 You can also run individual scripts by passing the script name to the entry point:
 
 ```bash
-# Validation scripts
-npm run validate:manifests
-npm run validate:github-stars
-npm run validate:urls
+# Validation tests
+npm run test:validate
+npm run test:urls
 
 # Generation scripts
 npm run generate:manifests
@@ -72,20 +71,22 @@ npm run fetch:github-stars
 Or directly using Node:
 
 ```bash
-# Run specific script
-node scripts/validate/index.mjs manifests
+# Run validation tests
+node ./node_modules/vitest/vitest.mjs run tests/validate --reporter=verbose
+
+# Run generation/fetch scripts
 node scripts/generate/index.mjs metadata
 node scripts/fetch/index.mjs github-stars
 ```
 
-## Validation Scripts
+## Validation (Test-based)
 
-### validate-manifests.mjs
+Validation is implemented as **Vitest-based automated tests** under `tests/validate/`.
 
-Validates all manifest JSON files against their corresponding JSON schemas.
+### Run all validations (recommended)
 
 ```bash
-npm run validate:manifests
+npm run test:validate
 ```
 
 **What it checks:**
@@ -104,12 +105,10 @@ npm run validate:manifests
 - `manifests/vendors/*.json` - Vendor information
 - `manifests/collections.json` - Collections data
 
-### validate-github-stars.mjs
-
-Validates that entries in `data/github-stars.json` match the actual manifest files.
+### Run GitHub stars consistency validation
 
 ```bash
-npm run validate:github-stars
+npm run test:validate
 ```
 
 **What it checks:**
@@ -131,12 +130,10 @@ npm run validate:github-stars
 2. Add missing entries to `data/github-stars.json` (set value to `null` if unknown)
 3. Or remove unused manifest files if they are not needed
 
-### validate-urls.mjs
-
-Validates URLs in manifest files to ensure they are accessible.
+### Run URL validation (networked; CI-oriented)
 
 ```bash
-npm run validate:urls
+npm run test:urls
 ```
 
 **What it checks:**
@@ -144,7 +141,7 @@ npm run validate:urls
 - Network connectivity
 - URL format validity
 
-**Note:** This script may take a while as it makes HTTP requests to validate each URL.
+**Note:** This check makes HTTP requests and can be flaky; it is typically run in CI and configured as non-blocking.
 
 ## Generation Scripts
 
@@ -217,15 +214,14 @@ npm run fetch:github-stars
 
 ## Build Process
 
-The build process runs validation and generation scripts automatically:
+The build process runs validation tests and generation scripts automatically:
 
 ```bash
 npm run build:next
 ```
 
 This runs in order:
-1. `validate:manifests` - Validate all manifest schemas
-2. `validate:github-stars` - Validate github-stars.json consistency
+1. `test:validate` - Validate repository data integrity (schemas, translations, alignment, etc.)
 3. `generate:manifests` - Generate manifest indexes
 4. `generate:metadata` - Generate TypeScript metadata
 5. Next.js build
@@ -245,11 +241,11 @@ This will:
 
 ## CI/CD Integration
 
-For CI/CD pipelines, you can use the entry point scripts to run all scripts in a category:
+For CI/CD pipelines, you can run the validation test suite:
 
 ```bash
-# Run all validations (recommended for CI)
-npm run validate
+# Run validations (recommended for CI)
+npm run test:validate
 
 # Run all generation scripts
 npm run generate
@@ -261,10 +257,10 @@ npm run refactor
 npm run fetch
 ```
 
-Or run individual scripts as needed:
+Or run individual checks as needed:
 
 ```bash
-npm run validate:manifests
+npm run test:validate
 npm run generate:manifests
 npm run generate:metadata
 npm run refactor:sort-fields
@@ -272,16 +268,8 @@ npm run refactor:sort-fields
 
 ## Manual Execution
 
-To run scripts manually without npm:
+To run tests manually without npm, you can use Vitest directly:
 
 ```bash
-# Run all scripts in a category
-node scripts/validate/index.mjs
-node scripts/generate/index.mjs
-node scripts/fetch/index.mjs
-
-# Run specific script
-node scripts/validate/index.mjs manifests
-node scripts/generate/index.mjs metadata
-node scripts/fetch/index.mjs github-stars
+vitest run tests/validate --reporter=verbose
 ```
