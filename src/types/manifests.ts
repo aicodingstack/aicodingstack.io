@@ -295,8 +295,8 @@ export interface ManifestModel {
   docsUrl?: string | null
   verified?: boolean
   size: string | null
-  totalContext: string | null
-  maxOutput: string | null
+  contextWindow: number
+  maxOutput: number
   tokenPricing?: {
     input?: number | null
     output?: number | null
@@ -307,6 +307,8 @@ export interface ManifestModel {
     artificialAnalysis?: string | null
     openrouter?: string | null
   }
+  releaseDate?: string | null
+  inputModalities?: ('image' | 'text' | 'file')[]
   benchmarks?: {
     sweBench?: number | null
     terminalBench?: number | null

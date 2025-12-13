@@ -4,6 +4,7 @@
  * Do not edit manually - run the script to regenerate
  */
 
+import Air from '../../../manifests/ides/air.json'
 import Antigravity from '../../../manifests/ides/antigravity.json'
 import Codebuddy from '../../../manifests/ides/codebuddy.json'
 import Codeflicker from '../../../manifests/ides/codeflicker.json'
@@ -18,6 +19,7 @@ import Zed from '../../../manifests/ides/zed.json'
 import type { ManifestIDE } from '../../types/manifests'
 
 export const idesData = [
+  Air,
   Antigravity,
   Codebuddy,
   Codeflicker,
@@ -31,6 +33,6 @@ export const idesData = [
   Zed,
 ] as unknown as ManifestIDE[]
 
-export type Ide = typeof Antigravity
+export type Ide = typeof Air
 
 export default idesData
