@@ -96,12 +96,9 @@ This document summarizes the schema refactoring work done to improve the design 
 - Added top-level `installCommand` and `launchCommand` as optional fields (legacy support, prefer platform-specific values)
 - Added `relatedProducts` support to `app.schema.json`
 
-### 7. Updated Validation Script ✅
+### 7. Schema Loading Order ✅
 
-**Problem**: The validation script didn't know about the new `vendor-entity.schema.json`.
-
-**Solution**:
-- Updated `scripts/validate-manifests.mjs` to load `vendor-entity.schema.json` in the correct order (after `entity`, before `product`)
+**Note**: The validation tests in `tests/validate/` load `vendor-entity.schema.json` in the correct order (after `entity`, before `product`)
 
 ## Benefits
 
@@ -148,7 +145,6 @@ All manifest files now pass validation:
 ### Code Files
 - `src/app/[locale]models/[slug]/page.tsx`
 - `src/app/[locale]models/page.tsx`
-- `scripts/validate-manifests.mjs`
 
 ## Recommendations for Future
 

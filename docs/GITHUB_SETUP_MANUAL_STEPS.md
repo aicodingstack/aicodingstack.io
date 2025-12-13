@@ -107,8 +107,8 @@ If you don't want to use an organization:
    - **Status checks to require** (select these after first CI run):
      - `lint`
      - `type-check`
-     - `validate-manifests`
-     - `validate-urls`
+     - `test:validate`
+     - `test:urls`
      - `spell-check`
      - `build`
      - `ci-success` (optional, aggregates all checks)
@@ -498,8 +498,8 @@ Now let's commit all changes and test the setup:
    - You should now see these checks available:
      - `lint`
      - `type-check`
-     - `validate-manifests`
-     - `validate-urls`
+     - `test:validate`
+     - `test:urls`
      - `spell-check`
      - `build`
      - `ci-success`

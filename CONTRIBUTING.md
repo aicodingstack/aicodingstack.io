@@ -152,7 +152,7 @@ Create a file in `manifests/models/your-model.json`:
   "id": "your-model",
   "vendor": "Your Company",
   "size": "175B",
-  "totalContext": 128000,
+  "contextWindow": 128000,
   "maxOutput": 4096,
   "pricing": {
     "input": 0.01,
@@ -179,7 +179,7 @@ Create a file in `manifests/models/your-model.json`:
 
 #### Model-Specific Fields
 - **`size`**: Model size (e.g., "175B", "70B")
-- **`totalContext`**: Total context window in tokens
+- **`contextWindow`**: Total context window in tokens
 - **`maxOutput`**: Maximum output tokens
 - **`pricing`**: Pricing information object
 

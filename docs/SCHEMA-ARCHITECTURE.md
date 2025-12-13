@@ -34,8 +34,8 @@ entity.schema.json (Base Entity)
 │   │
 │   ├── models.schema.json (AI Models)
 │   │   ├── Adds: latestVersion (nullable), githubUrl (nullable), githubStars (nullable)
-│   │   │        size, totalContext, maxOutput, tokenPricing, platformUrls
-│   │   └── Required: size, totalContext, maxOutput, tokenPricing, platformUrls
+│   │   │        size, contextWindow, maxOutput, tokenPricing, platformUrls
+│   │   └── Required: size, contextWindow, maxOutput, tokenPricing, platformUrls
 │   │
 │   ├── providers.schema.json (Model Providers)
 │   │   ├── Adds: latestVersion (nullable), githubUrl (nullable, required), githubStars (nullable, required)
@@ -171,15 +171,15 @@ collections.schema.json (Independent)
 - `githubUrl` (string/null, uri, github.com): Repository (optional)
 - `githubStars` (number/null, ≥0): Stars (optional)
 - `size` (string): Parameter size (e.g., "7B", "200B")
-- `totalContext` (string): Context window (e.g., "128K")
-- `maxOutput` (string): Max output tokens (e.g., "4K")
+- `contextWindow` (number): Context window in tokens (e.g., 128000)
+- `maxOutput` (number): Max output tokens (e.g., 4096)
 - `tokenPricing` (object): API pricing
   - `input` (string): Input pricing
   - `output` (string): Output pricing
   - `cache` (string/null): Cache pricing
 - `platformUrls` (object, → platform-urls.schema.json): Third-party platforms
 
-**Required**: `size`, `totalContext`, `maxOutput`, `tokenPricing`, `platformUrls`
+**Required**: `size`, `contextWindow`, `maxOutput`, `tokenPricing`, `platformUrls`
 
 ---
 

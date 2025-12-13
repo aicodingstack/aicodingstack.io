@@ -203,7 +203,7 @@ title: "AI Coding Stack - Comprehensive Directory of AI Coding Tools, Models & P
 title: `${ide.name} - AI-Powered IDE | Features, Pricing & Documentation 2025`
 
 // Model detail pages
-title: `${model.name} - ${model.size} LLM for Coding | ${model.totalContext} Context Window`
+title: `${model.name} - ${model.size} LLM for Coding | ${model.contextWindow} Context Window`
 
 // List pages
 title: "Best AI-Powered IDEs 2025 | Visual Studio Code, Cursor, TRAE - AI Coding Stack"

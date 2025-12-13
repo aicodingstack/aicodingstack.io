@@ -234,7 +234,7 @@ specific schemas (clis.schema.json, ides.schema.json, etc.)
       "description": "License (e.g., 'MIT', 'Apache-2.0', 'Proprietary')"
     },
     "size": "...",
-    "totalContext": "...",
+    "contextWindow": "...",
     "maxOutput": "...",
     "pricing": {
       "type": "object",
