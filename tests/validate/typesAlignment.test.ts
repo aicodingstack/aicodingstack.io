@@ -57,7 +57,6 @@ function getRequiredFields(schema: unknown, schemaPath: string, schemasDir: stri
 
 /**
  * Parse a TypeScript interface and return its fields with optional flags.
- * This mirrors scripts/validate/validate-types-alignment.mjs logic.
  */
 function parseTypeScriptInterface(
   content: string,
@@ -111,7 +110,7 @@ function parseTypeScriptInterface(
 }
 
 /**
- * Validate alignment checks used by scripts/validate/validate-types-alignment.mjs.
+ * Validate alignment between TypeScript interfaces and JSON schemas.
  */
 function validateTypesAlignment(rootDir: string): string[] {
   const failures: string[] = []

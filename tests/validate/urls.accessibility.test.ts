@@ -74,7 +74,7 @@ function extractNestedUrls(
 }
 
 /**
- * Extract all URLs from a single manifest object, following the same rules as scripts/validate/validate-urls.mjs.
+ * Extract all URLs from a single manifest object.
  */
 function extractUrlsFromManifestItem(
   item: Record<string, unknown>,
@@ -142,7 +142,7 @@ function extractUrlsFromManifestItem(
 }
 
 /**
- * Load all URL references across manifests, mirroring scripts/validate/validate-urls.mjs.
+ * Load all URL references across manifests.
  */
 function loadAllUrls(rootDir: string): UrlInfo[] {
   const all: UrlInfo[] = []

@@ -43,7 +43,6 @@ function getGithubStarIds(githubStars: unknown, category: string): string[] {
 
 /**
  * Validate that github-stars.json and manifests are in sync.
- * Mirrors scripts/validate/validate-github-stars.mjs behavior.
  */
 function validateGithubStarsConsistency(rootDir: string): string[] {
   const failures: string[] = []

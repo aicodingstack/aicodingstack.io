@@ -116,7 +116,6 @@ function diffSets(a: Set<string>, b: Set<string>): { onlyInA: string[]; onlyInB:
 
 /**
  * Validate translation structures are identical across all locales.
- * Mirrors scripts/validate/validate-translations-structure.mjs behavior.
  */
 function validateTranslationStructures(rootDir: string): string[] {
   const failures: string[] = []

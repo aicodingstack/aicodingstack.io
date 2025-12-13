@@ -121,7 +121,6 @@ function loadSchema(schemaPath: string, ajv: ReturnType<typeof createAjv>): unkn
 
 /**
  * Validate all manifests on disk against their schemas.
- * Mirrors behavior of scripts/validate/validate-manifests.mjs.
  */
 function validateAllManifests(rootDir: string): string[] {
   const failures: string[] = []

@@ -45,7 +45,7 @@ function toCamelCase(filename: string): string {
 }
 
 /**
- * Load translation messages by reading JSON files directly (mirrors validate-translations-refs.mjs).
+ * Load translation messages by reading JSON files directly.
  */
 function loadMessages(
   translationsDir: string,
