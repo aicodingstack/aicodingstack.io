@@ -17,6 +17,7 @@ import type {
   ManifestIDE,
   ManifestModel,
   ManifestProvider,
+  ManifestRelatedProduct,
   ManifestVendor,
 } from '@/types/manifests'
 
@@ -98,6 +99,42 @@ export const getModelProvider = cache(async (slug: string, locale: Locale) => {
     locale
   ) as unknown as ManifestProvider
 })
+
+/**
+ * Cached fetcher for related products
+ * Fetches multiple related products (IDE/CLI/Extension) from relatedProducts array
+ * Uses React cache() to prevent duplicate fetching
+ */
+export const getRelatedProducts = cache(
+  async (
+    relatedProducts: ManifestRelatedProduct[],
+    locale: Locale
+  ): Promise<
+    Array<{
+      type: 'ide' | 'cli' | 'extension'
+      data: ManifestIDE | ManifestCLI | ManifestExtension | null
+    }>
+  > => {
+    if (!relatedProducts || relatedProducts.length === 0) {
+      return []
+    }
+
+    return Promise.all(
+      relatedProducts.map(async rel => {
+        try {
+          let data = null
+          if (rel.type === 'ide') data = await getIDE(rel.productId, locale)
+          else if (rel.type === 'cli') data = await getCLI(rel.productId, locale)
+          else if (rel.type === 'extension') data = await getExtension(rel.productId, locale)
+
+          return { type: rel.type, data }
+        } catch {
+          return { type: rel.type, data: null }
+        }
+      })
+    )
+  }
+)
 
 /**
  * Cached fetcher for Article data

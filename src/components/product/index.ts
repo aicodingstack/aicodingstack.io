@@ -11,3 +11,4 @@ export {
   type resourceUrls,
 } from './ProductLinks'
 export { ProductPricing, type ProductPricingProps } from './ProductPricing'
+export { RelatedProducts, type RelatedProductsProps } from './RelatedProducts'

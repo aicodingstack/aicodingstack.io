@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import React from 'react'
+import { VerifiedBadge } from '@/components/VerifiedBadge'
 import { renderLicense } from '@/lib/license'
 
 export interface ProductHeroProps {
@@ -11,6 +12,7 @@ export interface ProductHeroProps {
   vendor?: string
   category: 'CLI' | 'IDE' | 'MCP' | 'PROVIDER' | 'MODEL' | 'VENDOR'
   categoryLabel?: string // Optional custom label for the badge
+  verified?: boolean // Whether the product is verified
 
   // Metadata
   latestVersion?: string
@@ -73,6 +75,7 @@ export function ProductHero({
   vendor,
   category,
   categoryLabel,
+  verified = false,
   latestVersion,
   license,
   githubStars,
@@ -103,10 +106,13 @@ export function ProductHero({
   return (
     <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
       {/* Title and Description Container - Max 800px */}
-      <div className="max-w-8xl mx-auto px-[var(--spacing-md)] text-center">
+      <div className="max-w-6xl mx-auto px-[var(--spacing-md)] text-center">
         {/* Title with Badge */}
         <div className="relative inline-block mb-[var(--spacing-sm)]">
-          <h1 className="text-5xl font-semibold tracking-[-0.04em] detail-page-h1">{name}</h1>
+          <div className="flex items-center justify-center gap-[var(--spacing-xs)]">
+            <h1 className="text-5xl font-semibold tracking-[-0.04em] detail-page-h1">{name}</h1>
+            {verified && <VerifiedBadge size="lg" />}
+          </div>
           <div className="absolute bottom-0 right-0 translate-x-[calc(100%+1rem)]">
             <div className="px-[var(--spacing-xs)] py-[2px] text-xs text-[var(--color-text-muted)] border-[1.5px] border-double border-[var(--color-border-strong)] whitespace-nowrap">
               {badgeText}
@@ -199,7 +205,7 @@ export function ProductHero({
       )}
 
       {/* Rest of the content - using the same container pattern */}
-      <div className="max-w-8xl mx-auto px-[var(--spacing-md)] text-center">
+      <div className="max-w-6xl mx-auto px-[var(--spacing-md)] text-center">
         {/* Platforms */}
         {displayPlatforms && displayPlatforms.length > 0 && (
           <div className="flex justify-center mb-[var(--spacing-lg)]">
