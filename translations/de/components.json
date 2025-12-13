@@ -139,6 +139,13 @@
     "title": "Preise",
     "viewFullDetails": "Vollständige Preisdetails anzeigen →"
   },
+  "relatedProducts": {
+    "cli": "CLI",
+    "extension": "Erweiterung",
+    "ide": "IDE",
+    "title": "Verwandte Produkte",
+    "viewProduct": "Produkt ansehen"
+  },
   "search": {
     "categories": {
       "clis": "CLIs",

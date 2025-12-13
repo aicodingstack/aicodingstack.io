@@ -80,6 +80,7 @@
     "labels": {
       "artificialAnalysis": "@:shared.platforms.artificialAnalysis",
       "context": "Context",
+      "documentation": "@:components.productHero.documentation",
       "huggingface": "@:shared.platforms.huggingface",
       "maxOutput": "@:shared.common.maxOutput",
       "openrouter": "@:shared.platforms.openrouter",
@@ -97,7 +98,24 @@
     "totalContext": "Total Context",
     "vendor": "@:components.productHero.vendor",
     "version": "@:components.productHero.version",
-    "visitWebsite": "@:components.productHero.visitWebsite"
+    "visitWebsite": "@:components.productHero.visitWebsite",
+    "benchmarks": {
+      "title": "Performance Benchmarks",
+      "sweBench": "SWE-bench Verified",
+      "sweBenchDesc": "Real-world software engineering tasks",
+      "terminalBench": "TerminalBench 2.0",
+      "terminalBenchDesc": "Command-line interface proficiency",
+      "mmmu": "MMMU",
+      "mmmuDesc": "Multimodal understanding",
+      "mmmuPro": "MMMU Pro",
+      "mmmuProDesc": "Advanced multimodal tasks",
+      "webDevArena": "WebDevArena",
+      "webDevArenaDesc": "Web development challenges",
+      "sciCode": "SciCode",
+      "sciCodeDesc": "Scientific code generation",
+      "liveCodeBench": "LiveCodeBench",
+      "liveCodeBenchDesc": "Live coding performance"
+    }
   },
   "modelProviderDetail": {
     "aiPlatforms": {

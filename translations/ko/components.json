@@ -139,6 +139,13 @@
     "title": "가격",
     "viewFullDetails": "전체 가격 세부 정보 보기 →"
   },
+  "relatedProducts": {
+    "cli": "CLI",
+    "extension": "확장 프로그램",
+    "ide": "IDE",
+    "title": "관련 제품",
+    "viewProduct": "제품 보기"
+  },
   "search": {
     "categories": {
       "clis": "CLI",

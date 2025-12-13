@@ -80,6 +80,7 @@
     "labels": {
       "artificialAnalysis": "Artificial Analysis",
       "context": "上下文",
+      "documentation": "@:components.productHero.documentation",
       "huggingface": "HuggingFace",
       "maxOutput": "最大输出",
       "openrouter": "OpenRouter",
@@ -97,7 +98,24 @@
     "totalContext": "总上下文",
     "vendor": "@:components.productHero.vendor",
     "version": "@:components.productHero.version",
-    "visitWebsite": "@:components.productHero.visitWebsite"
+    "visitWebsite": "@:components.productHero.visitWebsite",
+    "benchmarks": {
+      "title": "性能基准测试",
+      "sweBench": "SWE-bench Verified",
+      "sweBenchDesc": "真实世界软件工程任务",
+      "terminalBench": "TerminalBench 2.0",
+      "terminalBenchDesc": "命令行界面熟练度",
+      "mmmu": "MMMU",
+      "mmmuDesc": "多模态理解",
+      "mmmuPro": "MMMU Pro",
+      "mmmuProDesc": "高级多模态任务",
+      "webDevArena": "WebDevArena",
+      "webDevArenaDesc": "Web 开发挑战",
+      "sciCode": "SciCode",
+      "sciCodeDesc": "科学代码生成",
+      "liveCodeBench": "LiveCodeBench",
+      "liveCodeBenchDesc": "实时编码性能"
+    }
   },
   "modelProviderDetail": {
     "aiPlatforms": {

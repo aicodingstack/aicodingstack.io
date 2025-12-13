@@ -139,6 +139,13 @@
     "title": "@:shared.common.pricing",
     "viewFullDetails": "@:shared.actions.viewFullDetails"
   },
+  "relatedProducts": {
+    "cli": "CLI",
+    "extension": "Extension",
+    "ide": "IDE",
+    "title": "Related Products",
+    "viewProduct": "View Product"
+  },
   "search": {
     "categories": {
       "clis": "@:shared.stacks.clis",

@@ -139,6 +139,13 @@
     "title": "定价",
     "viewFullDetails": "查看完整定价详情 →"
   },
+  "relatedProducts": {
+    "cli": "CLI",
+    "extension": "扩展",
+    "ide": "IDE",
+    "title": "相关产品",
+    "viewProduct": "查看产品"
+  },
   "search": {
     "categories": {
       "clis": "命令行工具",

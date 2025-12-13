@@ -80,6 +80,7 @@
     "labels": {
       "artificialAnalysis": "Artificial Analysis",
       "context": "컨텍스트",
+      "documentation": "@:components.productHero.documentation",
       "huggingface": "HuggingFace",
       "maxOutput": "최대 출력",
       "openrouter": "OpenRouter",
@@ -97,7 +98,24 @@
     "totalContext": "전체 컨텍스트",
     "vendor": "@:components.productHero.vendor",
     "version": "@:components.productHero.version",
-    "visitWebsite": "@:components.productHero.visitWebsite"
+    "visitWebsite": "@:components.productHero.visitWebsite",
+    "benchmarks": {
+      "title": "성능 벤치마크",
+      "sweBench": "SWE-bench Verified",
+      "sweBenchDesc": "실제 소프트웨어 엔지니어링 작업",
+      "terminalBench": "TerminalBench 2.0",
+      "terminalBenchDesc": "명령줄 인터페이스 숙련도",
+      "mmmu": "MMMU",
+      "mmmuDesc": "멀티모달 이해",
+      "mmmuPro": "MMMU Pro",
+      "mmmuProDesc": "고급 멀티모달 작업",
+      "webDevArena": "WebDevArena",
+      "webDevArenaDesc": "웹 개발 과제",
+      "sciCode": "SciCode",
+      "sciCodeDesc": "과학 코드 생성",
+      "liveCodeBench": "LiveCodeBench",
+      "liveCodeBenchDesc": "라이브 코딩 성능"
+    }
   },
   "modelProviderDetail": {
     "aiPlatforms": {

@@ -80,6 +80,7 @@
     "labels": {
       "artificialAnalysis": "Artificial Analysis",
       "context": "Kontext",
+      "documentation": "@:components.productHero.documentation",
       "huggingface": "HuggingFace",
       "maxOutput": "Max. Ausgabe",
       "openrouter": "OpenRouter",
@@ -97,7 +98,24 @@
     "totalContext": "Gesamtkontext",
     "vendor": "@:components.productHero.vendor",
     "version": "@:components.productHero.version",
-    "visitWebsite": "@:components.productHero.visitWebsite"
+    "visitWebsite": "@:components.productHero.visitWebsite",
+    "benchmarks": {
+      "title": "Leistungs-Benchmarks",
+      "sweBench": "SWE-bench Verified",
+      "sweBenchDesc": "Reale Software-Engineering-Aufgaben",
+      "terminalBench": "TerminalBench 2.0",
+      "terminalBenchDesc": "Befehlszeilenkompetenz",
+      "mmmu": "MMMU",
+      "mmmuDesc": "Multimodales Verständnis",
+      "mmmuPro": "MMMU Pro",
+      "mmmuProDesc": "Erweiterte multimodale Aufgaben",
+      "webDevArena": "WebDevArena",
+      "webDevArenaDesc": "Webentwicklungs-Herausforderungen",
+      "sciCode": "SciCode",
+      "sciCodeDesc": "Wissenschaftliche Code-Generierung",
+      "liveCodeBench": "LiveCodeBench",
+      "liveCodeBenchDesc": "Live-Coding-Leistung"
+    }
   },
   "modelProviderDetail": {
     "aiPlatforms": {
