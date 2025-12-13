@@ -27,6 +27,14 @@ Follow standard entity extraction:
 1. **Navigate to model page or docs**:
    - Look for model card, specs page, or API documentation
    - Common URLs: `/models/<name>`, `/docs/models/<name>`, `/api/models`
+   
+   **Official Model Documentation** (Primary Reference Sources):
+   - **OpenAI**: https://platform.openai.com/docs/models
+   - **Anthropic**: https://platform.claude.com/docs/en/about-claude/models/overview
+   - **Google**: https://deepmind.google/models/model-cards
+   - **xAI**: https://docs.x.ai/docs/models
+   - **Alibaba Qwen**: https://qwen.ai/apiplatform
+   - **DeepSeek**: https://api-docs.deepseek.com/quick_start/pricing
 
 2. **Extract specifications**:
 
