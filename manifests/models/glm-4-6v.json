@@ -1,0 +1,34 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "glm-4-6v",
+  "name": "GLM-4.6V",
+  "description": "A 108B foundation model with native multimodal function calling, 128K context, and SoTA visual understanding for image-text-to-text tasks.",
+  "translations": {
+    "zh-Hans": {
+      "description": "一个 108B 基础模型，具备原生多模态函数调用、128K 上下文和卓越的图像-文本-文本任务视觉理解能力。"
+    }
+  },
+  "verified": false,
+  "websiteUrl": "https://z.ai/",
+  "docsUrl": "https://docs.z.ai/guides/vlm/glm-4.6v",
+  "vendor": "Z.ai",
+  "size": "108B",
+  "totalContext": "128K",
+  "maxOutput": "16K",
+  "tokenPricing": {
+    "input": 0.3,
+    "output": 0.9,
+    "cache": 0.05
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/zai-org/GLM-4.6V",
+    "artificialAnalysis": null,
+    "openrouter": "https://openrouter.ai/z-ai/glm-4.6v"
+  },
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": 0.245,
+    "sciCode": null,
+    "liveCodeBench": null
+  }
+}

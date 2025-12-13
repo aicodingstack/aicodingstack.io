@@ -1,0 +1,75 @@
+{
+  "$schema": "../$schemas/extension.schema.json",
+  "id": "gemini-code-assist",
+  "name": "Gemini Code Assist",
+  "description": "Google's AI coding assistant with code completion, generation, and optimization for IDEs.",
+  "type": "extension",
+  "productId": "gemini-code-assist",
+  "translations": {
+    "zh-Hans": {
+      "description": "Google 的 AI 代码辅助工具，提供 IDE 中的代码补全、生成和优化功能。"
+    },
+    "de": {
+      "description": "Googles KI-Programmierassistent mit Code-Vervollständigung und -Optimierung für IDEs."
+    }
+  },
+  "verified": true,
+  "websiteUrl": "https://codeassist.google/",
+  "docsUrl": "https://developers.google.com/code-assist",
+  "vendor": "Google",
+  "latestVersion": "1.0.0",
+  "githubUrl": null,
+  "license": "Freemium",
+  "pricing": [
+    {
+      "name": "Individual",
+      "value": 0,
+      "currency": null,
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Teams",
+      "value": 19,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Business"
+    },
+    {
+      "name": "Enterprise",
+      "value": null,
+      "currency": null,
+      "per": "custom",
+      "category": "Enterprise"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://marketplace.visualstudio.com/items?itemName=google.gemini-code-assist",
+    "changelog": "https://developers.google.com/code-assist/changelog",
+    "pricing": "https://developers.google.com/code-assist/pricing",
+    "mcp": null,
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/google",
+    "twitter": null,
+    "github": "https://github.com/google",
+    "youtube": "https://www.youtube.com/@GoogleDevelopers",
+    "discord": null,
+    "reddit": null,
+    "blog": "https://developers.google.com/code-assist/blog"
+  },
+  "relatedProducts": [],
+  "supportedIdes": [
+    {
+      "ideId": "vscode",
+      "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=google.gemini-code-assist",
+      "installUri": "vscode:extension/google.gemini-code-assist"
+    },
+    {
+      "ideId": "jetbrains",
+      "marketplaceUrl": "https://plugins.jetbrains.com/plugin/24513-gemini-code-assist",
+      "installUri": null
+    }
+  ]
+}
