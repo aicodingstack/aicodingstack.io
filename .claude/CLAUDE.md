@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Internationalization (i18n)
 
 When creating or modifying any page, module, or data:
-- **MUST support at least 3 languages:** English, Simplified Chinese (zh-Hans), and German (de), NEVER hardcode `'en' | 'zh-Hans'`
+- **MUST support at least 4 languages:** English, Simplified Chinese (zh-Hans), German (de), and Korean (ko), NEVER hardcode `'en' | 'zh-Hans'`
 - **MUST use the localized Link component:** Always import and use `import { Link } from '@/i18n/navigation'` instead of Next.js default Link
 
 ### Localization Best Practices

@@ -1,5 +1,9 @@
 # AI Coding Stack
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/aicodingstack/aicodingstack.io/refs/heads/main/public/icon.svg" alt="AI Coding Stack Icon" width="160" />
+</p>
+
 [![CI Status](https://img.shields.io/github/actions/workflow/status/aicodingstack/aicodingstack.io/ci.yml?style=flat-square&label=CI)](https://github.com/aicodingstack/aicodingstack.io/actions/workflows/ci.yml)
 [![Deploy Status](https://img.shields.io/github/actions/workflow/status/aicodingstack/aicodingstack.io/deploy-production.yml?style=flat-square&label=Deploy)](https://github.com/aicodingstack/aicodingstack.io/actions/workflows/deploy-production.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=flat-square)](LICENSE)
@@ -10,7 +14,7 @@
 
 > Your AI Coding Ecosystem Hub - Discover, Compare, Build Faster
 
-[Live Site](https://aicodingstack.io) | [Contributing](CONTRIBUTING.md) | [Discussions](https://github.com/aicodingstack/aicodingstack.io/discussions)
+[Live Site: https://aicodingstack.io](https://aicodingstack.io) | [Contributing](CONTRIBUTING.md) | [Discussions](https://github.com/aicodingstack/aicodingstack.io/discussions)
 
 AI Coding Stack is a comprehensive directory and community-maintained metadata repository for AI-powered coding tools, models, and platforms.
 
