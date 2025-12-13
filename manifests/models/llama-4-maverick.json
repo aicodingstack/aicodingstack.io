@@ -22,6 +22,7 @@
   },
   "releaseDate": null,
   "inputModalities": ["text", "image"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
   "benchmarks": {
     "sweBench": 21.04,
     "terminalBench": null,

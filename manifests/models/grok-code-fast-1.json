@@ -22,6 +22,7 @@
   },
   "releaseDate": null,
   "inputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
     "sweBench": null,
     "terminalBench": 0.258,

@@ -22,6 +22,7 @@
   },
   "releaseDate": "2025-08-01",
   "inputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
   "benchmarks": {
     "sweBench": null,
     "terminalBench": 0.38,
