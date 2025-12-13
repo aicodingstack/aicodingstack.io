@@ -57,6 +57,15 @@
           "uniqueItems": true,
           "minItems": 1
         },
+        "capabilities": {
+          "type": "array",
+          "description": "Advanced capabilities supported by the model",
+          "items": {
+            "type": "string",
+            "enum": ["function-calling", "tool-choice", "structured-outputs", "reasoning"]
+          },
+          "uniqueItems": true
+        },
         "benchmarks": {
           "type": "object",
           "description": "Performance scores from coding and multimodal benchmarks",
@@ -104,6 +113,7 @@
         "tokenPricing",
         "releaseDate",
         "inputModalities",
+        "capabilities",
         "benchmarks",
         "platformUrls"
       ]
