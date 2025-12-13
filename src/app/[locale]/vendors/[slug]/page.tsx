@@ -173,7 +173,7 @@ export default async function VendorPage({
       <VendorModels models={vendorModels} locale={locale} title={t('models')} />
 
       {/* Navigation */}
-      <BackToNavigation href="vendors" title={t('allVendors')} />
+      <BackToNavigation href="/vendors" title={t('allVendors')} />
 
       <Footer />
     </>

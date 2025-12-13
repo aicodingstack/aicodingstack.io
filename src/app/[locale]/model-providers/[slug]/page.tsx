@@ -176,7 +176,7 @@ export default async function ProviderPage({
       />
 
       {/* Navigation */}
-      <BackToNavigation href="model-providers" title={t('allModelProviders')} />
+      <BackToNavigation href="/model-providers" title={t('allModelProviders')} />
 
       <Footer />
     </>

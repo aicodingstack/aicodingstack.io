@@ -1,5 +1,3 @@
-'use client'
-
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 
@@ -23,7 +21,7 @@ interface BackToNavigationProps {
  * Automatically handles internationalization for common text like "Back to" and "[INDEX]".
  *
  * @example
- * <BackToNavigation href="ides" title="All IDEs" />
+ * <BackToNavigation href="/ides" title="All IDEs" />
  */
 export function BackToNavigation({ href, title }: BackToNavigationProps) {
   const t = useTranslations('components.backToNavigation')
