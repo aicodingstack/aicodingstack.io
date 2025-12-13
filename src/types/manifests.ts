@@ -309,6 +309,7 @@ export interface ManifestModel {
   }
   releaseDate?: string | null
   inputModalities?: ('image' | 'text' | 'file')[]
+  capabilities?: ('function-calling' | 'tool-choice' | 'structured-outputs' | 'reasoning')[]
   benchmarks?: {
     sweBench?: number | null
     terminalBench?: number | null
