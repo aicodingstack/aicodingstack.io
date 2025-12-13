@@ -143,6 +143,7 @@ export default async function ProviderPage({
         description={provider.description}
         category="PROVIDER"
         categoryLabel={t('categoryLabel')}
+        verified={provider.verified ?? false}
         type={provider.type}
         websiteUrl={websiteUrl}
         docsUrl={docsUrl}

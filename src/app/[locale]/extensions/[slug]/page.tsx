@@ -1,18 +1,11 @@
 import { notFound } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
-import { BackToNavigation } from '@/components/controls/BackToNavigation'
-import { Breadcrumb } from '@/components/controls/Breadcrumb'
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import { JsonLd } from '@/components/JsonLd'
-import { ProductCommands, ProductHero, ProductLinks, ProductPricing } from '@/components/product'
 import type { Locale } from '@/i18n/config'
 import { getExtension } from '@/lib/data/fetchers'
 import { extensionsData as extensions } from '@/lib/generated'
-import { getGithubStars } from '@/lib/generated/github-stars'
 import { translateLicenseText } from '@/lib/license'
 import { generateSoftwareDetailMetadata } from '@/lib/metadata'
-import { getSchemaCurrency, getSchemaPrice } from '@/lib/pricing'
+import { ProductDetailTemplate } from '@/templates'
 
 export const revalidate = 3600
 
@@ -34,9 +27,13 @@ export async function generateMetadata({
     return { title: 'Extension Not Found | AI Coding Stack' }
   }
 
-  const t = await getTranslations({ locale })
-  const licenseStr = extension.license ? translateLicenseText(extension.license, t) : ''
-  const platforms = extension.supportedIdes?.map(ideSupport => ({ os: ideSupport.ideId }))
+  const tGlobal = await getTranslations({ locale })
+  const licenseStr = extension.license ? translateLicenseText(extension.license, tGlobal) : ''
+
+  // Convert supportedIdes to platforms format for metadata generation
+  const platforms = extension.supportedIdes?.map(ideSupport => ({
+    os: ideSupport.ideId,
+  }))
 
   return await generateSoftwareDetailMetadata({
     locale: locale as Locale,
@@ -50,7 +47,7 @@ export async function generateMetadata({
       pricing: extension.pricing,
       license: licenseStr,
     },
-    typeDescription: 'AI Coding Extension',
+    typeDescription: 'AI Coding Assistant Extension',
   })
 }
 
@@ -69,120 +66,30 @@ export default async function ExtensionPage({
   const t = await getTranslations({ locale, namespace: 'pages.extensionDetail' })
   const tGlobal = await getTranslations({ locale })
 
-  const websiteUrl = extension.resourceUrls?.download || extension.websiteUrl
-  const docsUrl = extension.docsUrl || undefined
-
-  // Schema.org structured data
-  const softwareApplicationSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
-    name: extension.name,
-    applicationCategory: 'DeveloperApplication',
-    applicationSubCategory: 'AI Assistant',
-    operatingSystem: 'Cross-platform',
-    compatibleWith:
-      extension.supportedIdes?.map(ideSupport => ideSupport.ideId).join(', ') ||
-      'VS Code, JetBrains IDEs',
-    softwareVersion: extension.latestVersion,
-    description: extension.description,
-    url: websiteUrl,
-    downloadUrl:
-      extension.resourceUrls?.download || extension.supportedIdes?.[0]?.marketplaceUrl || undefined,
-    installUrl:
-      extension.resourceUrls?.download || extension.supportedIdes?.[0]?.marketplaceUrl || undefined,
-    author: {
-      '@type': 'Organization',
-      name: extension.vendor,
-    },
-    offers:
-      extension.pricing && extension.pricing.length > 0
-        ? extension.pricing.map(tier => {
-            return {
-              '@type': 'Offer',
-              name: tier.name,
-              price: getSchemaPrice(tier),
-              priceCurrency: getSchemaCurrency(tier),
-              category: tier.category,
-            }
-          })
-        : {
-            '@type': 'Offer',
-            price: '0',
-            priceCurrency: 'USD',
-          },
-    license: extension.license ? translateLicenseText(extension.license, tGlobal) : undefined,
-  }
-
   return (
-    <>
-      <JsonLd data={softwareApplicationSchema} />
-      <Header />
-
-      <Breadcrumb
-        items={[
-          { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-          { name: tGlobal('shared.stacks.extensions'), href: 'extensions' },
-          { name: extension.name, href: `extensions/${extension.id}` },
-        ]}
-      />
-
-      {/* Hero Section */}
-      <ProductHero
-        name={extension.name}
-        description={extension.description}
-        vendor={extension.vendor}
-        category="IDE"
-        categoryLabel={t('categoryLabel')}
-        latestVersion={extension.latestVersion}
-        license={extension.license}
-        githubStars={getGithubStars('extensions', extension.id)}
-        additionalInfo={
-          extension.supportedIdes && extension.supportedIdes.length > 0
-            ? [
-                {
-                  label: t('supportedIdes'),
-                  value: extension.supportedIdes.map(ideSupport => ideSupport.ideId).join(', '),
-                },
-              ]
-            : undefined
-        }
-        websiteUrl={websiteUrl}
-        docsUrl={docsUrl}
-        downloadUrl={
-          extension.resourceUrls?.download ||
-          extension.supportedIdes?.[0]?.marketplaceUrl ||
-          undefined
-        }
-        labels={{
+    <ProductDetailTemplate
+      product={extension}
+      productType="extension"
+      locale={locale as Locale}
+      category="extensions"
+      translations={{
+        categoryLabel: t('categoryLabel'),
+        allProductsLabel: t('allExtensions'),
+        breadcrumbs: {
+          home: tGlobal('shared.common.aiCodingStack'),
+          category: tGlobal('shared.stacks.extensions'),
+        },
+        productHero: {
           vendor: t('vendor'),
           version: t('version'),
           license: t('license'),
           stars: t('stars'),
+          supportedIdes: t('supportedIdes'),
           visitWebsite: t('visitWebsite'),
           documentation: t('documentation'),
           download: t('download'),
-        }}
-      />
-
-      {/* Pricing */}
-      <ProductPricing
-        pricing={extension.pricing}
-        pricingUrl={extension.resourceUrls?.pricing || undefined}
-      />
-
-      {/* Additional Links */}
-      <ProductLinks resourceUrls={{}} communityUrls={{}} />
-
-      {/* Commands */}
-      <ProductCommands
-        install={extension.supportedIdes?.[0]?.installCommand || extension.install || undefined}
-        launch={extension.launch || undefined}
-      />
-
-      {/* Navigation */}
-      <BackToNavigation href="extensions" title={t('allExtensions')} />
-
-      <Footer />
-    </>
+        },
+      }}
+    />
   )
 }

@@ -141,6 +141,7 @@ export default async function VendorPage({
         description={vendor.description}
         category="VENDOR"
         categoryLabel={t('categoryLabel')}
+        verified={vendor.verified ?? false}
         websiteUrl={websiteUrl}
       />
 

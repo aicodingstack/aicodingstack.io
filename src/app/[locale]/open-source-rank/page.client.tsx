@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { useMemo, useState } from 'react'
+import { VerifiedBadge } from '@/components/VerifiedBadge'
 import { Link } from '@/i18n/navigation'
 import { clisData } from '@/lib/generated/clis'
 import { extensionsData } from '@/lib/generated/extensions'
@@ -18,6 +19,7 @@ type OpenSourceProject = {
   stars: number
   githubUrl: string | null
   websiteUrl: string | null
+  verified?: boolean
 }
 
 function getLicenseDisplayName(license: string): string {
@@ -66,6 +68,7 @@ export function OpenSourceRankPage() {
         stars: stars || 0,
         githubUrl: ide.githubUrl || null,
         websiteUrl: ide.websiteUrl || null,
+        verified: ide.verified ?? false,
       }
 
       if (isProprietary && hasStars) {
@@ -95,6 +98,7 @@ export function OpenSourceRankPage() {
         stars: stars || 0,
         githubUrl: cli.githubUrl || null,
         websiteUrl: cli.websiteUrl || null,
+        verified: cli.verified ?? false,
       }
 
       if (isProprietary && hasStars) {
@@ -124,6 +128,7 @@ export function OpenSourceRankPage() {
         stars: stars || 0,
         githubUrl: ext.githubUrl || null,
         websiteUrl: ext.websiteUrl || null,
+        verified: ext.verified ?? false,
       }
 
       if (isProprietary && hasStars) {
@@ -307,12 +312,15 @@ export function OpenSourceRankPage() {
                         #{index + 1}
                       </td>
                       <td className="px-[var(--spacing-sm)] py-[var(--spacing-sm)]">
-                        <Link
-                          href={`/${project.type === 'ide' ? 'ides' : project.type === 'cli' ? 'clis' : 'extensions'}/${project.id}`}
-                          className="font-medium hover:text-blue-500 transition-colors"
-                        >
-                          {project.name}
-                        </Link>
+                        <div className="flex items-center gap-[var(--spacing-xs)]">
+                          <Link
+                            href={`/${project.type === 'ide' ? 'ides' : project.type === 'cli' ? 'clis' : 'extensions'}/${project.id}`}
+                            className="font-medium hover:text-blue-500 transition-colors"
+                          >
+                            {project.name}
+                          </Link>
+                          {project.verified && <VerifiedBadge size="sm" />}
+                        </div>
                       </td>
                       <td className="px-[var(--spacing-sm)] py-[var(--spacing-sm)] text-sm">
                         <span className="inline-block px-2 py-0.5 text-xs border border-[var(--color-border)]">

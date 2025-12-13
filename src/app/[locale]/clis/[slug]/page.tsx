@@ -1,20 +1,11 @@
 import { notFound } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
-import { BackToNavigation } from '@/components/controls/BackToNavigation'
-import { Breadcrumb } from '@/components/controls/Breadcrumb'
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import { JsonLd } from '@/components/JsonLd'
-import { ProductCommands, ProductHero, ProductLinks, ProductPricing } from '@/components/product'
 import type { Locale } from '@/i18n/config'
-import { Link } from '@/i18n/navigation'
 import { getCLI } from '@/lib/data/fetchers'
 import { clisData as clis } from '@/lib/generated'
-import { getGithubStars } from '@/lib/generated/github-stars'
 import { translateLicenseText } from '@/lib/license'
 import { generateSoftwareDetailMetadata } from '@/lib/metadata'
-import { generateSoftwareDetailSchema } from '@/lib/metadata/schemas'
-import type { ComponentCommunityUrls, ComponentResourceUrls } from '@/types/manifests'
+import { ProductDetailTemplate } from '@/templates'
 
 export const revalidate = 3600
 
@@ -70,73 +61,20 @@ export default async function CLIPage({
   const t = await getTranslations({ locale, namespace: 'pages.cliDetail' })
   const tGlobal = await getTranslations({ locale })
 
-  const websiteUrl = cli.resourceUrls?.download || cli.websiteUrl
-  const docsUrl = cli.docsUrl || undefined
-
-  // Transform resourceUrls to component format (convert null to undefined)
-  const resourceUrls: ComponentResourceUrls = {
-    download: cli.resourceUrls?.download || undefined,
-    changelog: cli.resourceUrls?.changelog || undefined,
-    pricing: cli.resourceUrls?.pricing || undefined,
-    mcp: cli.resourceUrls?.mcp || undefined,
-    issue: cli.resourceUrls?.issue || undefined,
-  }
-
-  // Transform communityUrls to component format (convert null to undefined)
-  const communityUrls: ComponentCommunityUrls = {
-    linkedin: cli.communityUrls?.linkedin || undefined,
-    twitter: cli.communityUrls?.twitter || undefined,
-    github: cli.communityUrls?.github || undefined,
-    youtube: cli.communityUrls?.youtube || undefined,
-    discord: cli.communityUrls?.discord || undefined,
-    reddit: cli.communityUrls?.reddit || undefined,
-  }
-
-  // Generate JSON-LD schema using the new unified system
-  const softwareApplicationSchema = await generateSoftwareDetailSchema({
-    product: {
-      name: cli.name,
-      description: cli.description,
-      vendor: cli.vendor,
-      websiteUrl,
-      downloadUrl: cli.resourceUrls?.download || undefined,
-      version: cli.latestVersion,
-      platforms: cli.platforms,
-      pricing: cli.pricing,
-      license: cli.license ? translateLicenseText(cli.license, tGlobal) : undefined,
-    },
-    category: 'clis',
-    locale: locale as Locale,
-  })
-
   return (
-    <>
-      <JsonLd data={softwareApplicationSchema} />
-      <Header />
-
-      <Breadcrumb
-        items={[
-          { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-          { name: tGlobal('shared.stacks.clis'), href: 'clis' },
-          { name: cli.name, href: `clis/${cli.id}` },
-        ]}
-      />
-
-      {/* Hero Section */}
-      <ProductHero
-        name={cli.name}
-        description={cli.description}
-        vendor={cli.vendor}
-        category="CLI"
-        categoryLabel={t('categoryLabel')}
-        latestVersion={cli.latestVersion}
-        license={cli.license}
-        githubStars={getGithubStars('clis', cli.id)}
-        platforms={cli.platforms?.map(p => p.os)}
-        websiteUrl={websiteUrl}
-        docsUrl={docsUrl}
-        downloadUrl={cli.resourceUrls?.download || undefined}
-        labels={{
+    <ProductDetailTemplate
+      product={cli}
+      productType="cli"
+      locale={locale as Locale}
+      category="clis"
+      translations={{
+        categoryLabel: t('categoryLabel'),
+        allProductsLabel: t('allCLIs'),
+        breadcrumbs: {
+          home: tGlobal('shared.common.aiCodingStack'),
+          category: tGlobal('shared.stacks.clis'),
+        },
+        productHero: {
           vendor: t('vendor'),
           version: t('version'),
           license: t('license'),
@@ -145,61 +83,8 @@ export default async function CLIPage({
           visitWebsite: t('visitWebsite'),
           documentation: t('documentation'),
           download: t('download'),
-        }}
-      />
-
-      {/* Related IDE */}
-      {cli.ide && (
-        <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
-          <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
-            <Link
-              href={`ides/${cli.ide}`}
-              className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5 group"
-            >
-              <div className="flex items-center justify-between mb-[var(--spacing-sm)]">
-                <div className="flex items-center gap-[var(--spacing-sm)]">
-                  <pre className="text-xs leading-tight text-[var(--color-text-muted)]">
-                    {`┌─────┐
-│ IDE │
-└─────┘`}
-                  </pre>
-                  <div>
-                    <p className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-1">
-                      Related IDE
-                    </p>
-                    <h3 className="text-lg font-semibold tracking-tight">
-                      {cli.ide
-                        .split('-')
-                        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-                        .join(' ')}
-                    </h3>
-                  </div>
-                </div>
-                <span className="text-lg text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all">
-                  →
-                </span>
-              </div>
-              <p className="text-sm text-[var(--color-text-secondary)] font-light">
-                IDE companion for {cli.name}
-              </p>
-            </Link>
-          </div>
-        </section>
-      )}
-
-      {/* Pricing */}
-      <ProductPricing pricing={cli.pricing} pricingUrl={resourceUrls.pricing} />
-
-      {/* Additional Links */}
-      <ProductLinks resourceUrls={resourceUrls} communityUrls={communityUrls} />
-
-      {/* Commands */}
-      <ProductCommands install={cli.install} launch={cli.launch} />
-
-      {/* Navigation */}
-      <BackToNavigation href="clis" title={t('allCLIs')} />
-
-      <Footer />
-    </>
+        },
+      }}
+    />
   )
 }
