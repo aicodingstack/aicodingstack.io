@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import StackTabs from '@/components/navigation/StackTabs'
 import PageHeader from '@/components/PageHeader'
+import { VerifiedBadge } from '@/components/VerifiedBadge'
 import type { Locale } from '@/i18n/config'
 import { Link } from '@/i18n/navigation'
 import { modelsData } from '@/lib/generated'
@@ -97,7 +98,10 @@ export default function ModelsPageClient({ locale }: Props) {
                 className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5 group"
               >
                 <div className="flex justify-between items-start mb-[var(--spacing-sm)]">
-                  <h3 className="text-lg font-semibold tracking-tight">{model.name}</h3>
+                  <div className="flex items-center gap-[var(--spacing-xs)]">
+                    <h3 className="text-lg font-semibold tracking-tight">{model.name}</h3>
+                    {model.verified && <VerifiedBadge size="sm" />}
+                  </div>
                   <span className="text-lg text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all">
                     →
                   </span>
