@@ -1,8 +1,7 @@
 # Scripts Documentation
 
-This directory contains utility scripts for managing and validating the AI Coding Stack project. Scripts are organized into four categories:
+This directory contains utility scripts for managing and validating the AI Coding Stack project. Scripts are organized into three categories:
 
-- **`validate/`** - Validation scripts that check data integrity
 - **`generate/`** - Generation scripts that create derived files
 - **`refactor/`** - Refactoring scripts that reorganize or reformat data
 - **`fetch/`** - Data fetching scripts that retrieve external data
@@ -11,11 +10,6 @@ This directory contains utility scripts for managing and validating the AI Codin
 
 ```
 scripts/
-├── validate/
-│   ├── index.mjs              # Entry point for all validation scripts
-│   ├── validate-manifests.mjs
-│   ├── validate-github-stars.mjs
-│   └── validate-urls.mjs
 ├── generate/
 │   ├── index.mjs              # Entry point for all generation scripts
 │   ├── generate-manifest-indexes.mjs
@@ -53,10 +47,6 @@ npm run fetch
 You can also run individual scripts by passing the script name to the entry point:
 
 ```bash
-# Validation tests
-npm run test:validate
-npm run test:urls
-
 # Generation scripts
 npm run generate:manifests
 npm run generate:metadata
@@ -71,9 +61,6 @@ npm run fetch:github-stars
 Or directly using Node:
 
 ```bash
-# Run validation tests
-node ./node_modules/vitest/vitest.mjs run tests/validate --reporter=verbose
-
 # Run generation/fetch scripts
 node scripts/generate/index.mjs metadata
 node scripts/fetch/index.mjs github-stars
