@@ -1,0 +1,48 @@
+{
+  "$schema": "../$schemas/ide.schema.json",
+  "id": "air",
+  "name": "Air",
+  "description": "An agentic development environment that helps developers delegate complex coding tasks to AI agents that work in parallel. Requires an Anthropic subscription.",
+  "translations": {},
+  "verified": false,
+  "websiteUrl": "https://air.dev/",
+  "docsUrl": "https://www.jetbrains.com/help/air/",
+  "vendor": "JetBrains",
+  "latestVersion": "Preview",
+  "githubUrl": null,
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Preview",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://air.dev/",
+    "changelog": null,
+    "pricing": null,
+    "mcp": null,
+    "issue": "https://youtrack.jetbrains.com/projects/AIR"
+  },
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/jetbrains",
+    "twitter": "https://x.com/getsome_air",
+    "github": null,
+    "youtube": null,
+    "discord": "https://discord.com/invite/jetbrains",
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": "/Applications/Air.app",
+      "installCommand": null,
+      "launchCommand": "open -a \"Air\""
+    }
+  ]
+}
