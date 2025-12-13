@@ -7,6 +7,7 @@ import Header from '@/components/Header'
 import { JsonLd } from '@/components/JsonLd'
 import { ProductHero } from '@/components/product'
 import type { Locale } from '@/i18n/config'
+import { BENCHMARK_KEYS, formatBenchmarkValue, hasBenchmarks } from '@/lib/benchmarks'
 import { getModel } from '@/lib/data/fetchers'
 import { modelsData as models } from '@/lib/generated'
 import { generateModelDetailMetadata } from '@/lib/metadata'
@@ -119,6 +120,7 @@ export default async function ModelPage({
         vendor={model.vendor}
         category="MODEL"
         categoryLabel={t('categoryLabel')}
+        verified={model.verified ?? false}
         additionalInfo={
           [
             model.size && { label: t('labels.size'), value: model.size },
@@ -133,6 +135,11 @@ export default async function ModelPage({
         }
         additionalUrls={
           [
+            model.docsUrl && {
+              label: t('labels.documentation'),
+              url: model.docsUrl,
+              icon: '→',
+            },
             model.websiteUrl && { label: t('labels.website'), url: model.websiteUrl, icon: '↗' },
             model.platformUrls?.huggingface && {
               label: t('labels.huggingface'),
@@ -234,8 +241,43 @@ export default async function ModelPage({
         </div>
       </section>
 
+      {/* Performance Benchmarks */}
+      {model.benchmarks && hasBenchmarks(model.benchmarks) && (
+        <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
+          <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
+            <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-sm)]">
+              {t('benchmarks.title')}
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[var(--spacing-md)] mt-[var(--spacing-lg)]">
+              {BENCHMARK_KEYS.map(key => {
+                const value = model.benchmarks?.[key]
+                if (value === null || value === undefined) return null
+
+                return (
+                  <div
+                    key={key}
+                    className="border border-[var(--color-border)] p-[var(--spacing-md)]"
+                  >
+                    <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
+                      {t(`benchmarks.${key}`)}
+                    </h3>
+                    <p className="text-lg font-semibold tracking-tight mb-1">
+                      {formatBenchmarkValue(key, value)}
+                    </p>
+                    <p className="text-xs text-[var(--color-text-muted)]">
+                      {t(`benchmarks.${key}Desc`)}
+                    </p>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Navigation */}
-      <BackToNavigation href="models" title={t('allModels')} />
+      <BackToNavigation href="/models" title={t('allModels')} />
 
       <Footer />
     </>
