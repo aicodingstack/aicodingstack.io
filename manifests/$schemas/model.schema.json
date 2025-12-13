@@ -45,6 +45,41 @@
         "platformUrls": {
           "$ref": "./ref/platform-urls.schema.json",
           "description": "URLs to various third-party platform pages for this model"
+        },
+        "benchmarks": {
+          "type": "object",
+          "description": "Performance scores from coding and multimodal benchmarks",
+          "properties": {
+            "sweBench": {
+              "type": ["number", "null"],
+              "description": "SWE-bench Verified score (percentage, e.g., 74.4)"
+            },
+            "terminalBench": {
+              "type": ["number", "null"],
+              "description": "TerminalBench 2.0 accuracy score (decimal, e.g., 0.604)"
+            },
+            "mmmu": {
+              "type": ["number", "null"],
+              "description": "MMMU benchmark score (percentage)"
+            },
+            "mmmuPro": {
+              "type": ["number", "null"],
+              "description": "MMMU Pro benchmark score (percentage)"
+            },
+            "webDevArena": {
+              "type": ["number", "null"],
+              "description": "WebDevArena score"
+            },
+            "sciCode": {
+              "type": ["number", "null"],
+              "description": "SciCode benchmark score (percentage)"
+            },
+            "liveCodeBench": {
+              "type": ["number", "null"],
+              "description": "LiveCodeBench Pass@1 score (percentage)"
+            }
+          },
+          "additionalProperties": false
         }
       },
       "required": ["size", "totalContext", "maxOutput", "tokenPricing", "platformUrls"]

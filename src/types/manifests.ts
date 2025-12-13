@@ -307,6 +307,15 @@ export interface ManifestModel {
     artificialAnalysis?: string | null
     openrouter?: string | null
   }
+  benchmarks?: {
+    sweBench?: number | null
+    terminalBench?: number | null
+    mmmu?: number | null
+    mmmuPro?: number | null
+    webDevArena?: number | null
+    sciCode?: number | null
+    liveCodeBench?: number | null
+  }
   pricing?: ManifestPricingTier[]
   [key: string]: unknown
 }
