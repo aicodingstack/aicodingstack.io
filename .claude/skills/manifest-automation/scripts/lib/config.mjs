@@ -55,7 +55,7 @@ export const FIELD_CATEGORIES = {
     'resourceUrls.download',
     'tokenPricing',
     'size',
-    'totalContext',
+    'contextWindow',
     'maxOutput',
   ],
 

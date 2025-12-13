@@ -311,9 +311,9 @@ export function generateChangeReport(changes, mode, manifestPath) {
   output += `1. Review merged manifest: ${manifestPath}\n`
   if (summary.needsReview > 0) {
     output += '2. Resolve fields marked "Needs Review"\n'
-    output += '3. Run validation: node scripts/validate/validate-manifests.mjs\n'
+    output += '3. Run validation: npm run test:validate\n'
   } else {
-    output += '2. Run validation: node scripts/validate/validate-manifests.mjs\n'
+    output += '2. Run validation: npm run test:validate\n'
   }
 
   return output

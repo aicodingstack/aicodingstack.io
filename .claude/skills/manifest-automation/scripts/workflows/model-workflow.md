@@ -10,8 +10,8 @@ This workflow guides you through creating or updating a Model manifest with focu
 
 **Model-specific fields:**
 - `size`: Parameter count (e.g., "7B", "32B", "200B", "Unknown")
-- `totalContext`: Context window (e.g., "32K", "128K", "200K")
-- `maxOutput`: Max output tokens (e.g., "4K", "8K", "16K")
+- `contextWindow`: Context window in tokens (e.g., 32000, 128000, 200000)
+- `maxOutput`: Max output tokens (e.g., 4096, 8192, 16384)
 - `tokenPricing`: {input, output, cache} in $/million tokens
 - `platformUrls`: {huggingface, artificialAnalysis, openrouter}
 
@@ -182,8 +182,8 @@ Follow standard entity extraction:
   "vendor": "<Company Name>",
   "githubUrl": "<https://github.com/... or null>",
   "size": "<7B|32B|200B|Unknown>",
-  "totalContext": "<32K|128K|200K>",
-  "maxOutput": "<4K|8K|16K>",
+  "contextWindow": "<32000|128000|200000>",
+  "maxOutput": "<4096|8192|16384>",
   "tokenPricing": {
     "input": 0.25,
     "output": 1.25,
@@ -201,7 +201,7 @@ Follow standard entity extraction:
 
 Run validation:
 ```bash
-node scripts/validate/validate-manifests.mjs
+npm run test:validate
 ```
 
 ## Common Patterns

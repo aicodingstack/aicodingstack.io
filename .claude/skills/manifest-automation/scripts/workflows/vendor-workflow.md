@@ -119,7 +119,7 @@ This workflow guides you through creating or updating a Vendor manifest - the si
 
 Run validation:
 ```bash
-node scripts/validate/validate-manifests.mjs
+npm run test:validate
 ```
 
 ## Examples

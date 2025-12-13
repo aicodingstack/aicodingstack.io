@@ -142,7 +142,7 @@ Set to null if not applicable.
 
 Run validation:
 ```bash
-node scripts/validate/validate-manifests.mjs
+npm run test:validate
 ```
 
 ## Provider Type Examples

@@ -274,7 +274,7 @@ Always replaced with freshly discovered values:
 - `websiteUrl` - Official URL
 - `docsUrl` - Documentation URL
 - `tokenPricing` - Model pricing (changes frequently)
-- `size`, `totalContext`, `maxOutput` - Model specs
+- `size`, `contextWindow`, `maxOutput` - Model specs
 
 ### PRESERVE Fields
 Never updated (user-curated):
@@ -340,7 +340,7 @@ Status: DRAFT (3 fields incomplete)
 3. **Update github-stars.json** with new entry
 4. Update i18n translations if English content changed
 5. Update verified field once data confirmed accurate
-6. Run validation: node scripts/validate/validate-manifests.mjs
+6. Run validation: npm run test:validate
 ```
 
 ## Comparison with manifest-creator
@@ -429,7 +429,7 @@ After running this skill, expect:
 1. **Manifest file**: `manifests/<type>s/<name>.json`
 2. **With TODO comments**: For failed field extractions
 3. **Valid against schema**: `manifests/$schemas/<type>.schema.json`
-4. **Ready for validation**: Run `node scripts/validate/validate-manifests.mjs`
+4. **Ready for validation**: Run `npm run test:validate`
 
 ## GitHub Stars Update
 
@@ -523,7 +523,7 @@ updateGithubStarsEntry(manifestType, manifestName, { isNew: operationMode === 'c
    - Check that no language has outdated or mismatched translations
 5. **Set verified**: Change `verified` to `true` if data is confirmed accurate
 6. **Add related products**: Manually curate `relatedProducts` array
-7. **Run validation**: Ensure schema compliance
+7. **Run validation**: Ensure schema compliance with `npm run test:validate`
 8. **Commit changes**: Add manifest to git repository
 
 ## i18n Consistency Requirements

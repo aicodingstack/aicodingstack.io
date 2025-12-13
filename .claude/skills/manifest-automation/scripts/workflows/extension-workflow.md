@@ -167,7 +167,7 @@ Follow **Phase 6** from CLI workflow:
 
 Run validation and fix errors:
 ```bash
-node scripts/validate/validate-manifests.mjs
+npm run test:validate
 ```
 
 ## Common Marketplace Patterns
