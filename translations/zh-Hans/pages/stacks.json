@@ -95,7 +95,7 @@
     "pricing": "定价",
     "specifications": "规格",
     "stars": "@:components.productHero.stars",
-    "totalContext": "总上下文",
+    "contextWindow": "总上下文",
     "vendor": "@:components.productHero.vendor",
     "version": "@:components.productHero.version",
     "visitWebsite": "@:components.productHero.visitWebsite",

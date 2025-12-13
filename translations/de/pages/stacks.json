@@ -95,7 +95,7 @@
     "pricing": "Preise",
     "specifications": "Spezifikationen",
     "stars": "@:components.productHero.stars",
-    "totalContext": "Gesamtkontext",
+    "contextWindow": "Gesamtkontext",
     "vendor": "@:components.productHero.vendor",
     "version": "@:components.productHero.version",
     "visitWebsite": "@:components.productHero.visitWebsite",

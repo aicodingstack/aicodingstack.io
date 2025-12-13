@@ -95,7 +95,7 @@
     "pricing": "가격",
     "specifications": "사양",
     "stars": "@:components.productHero.stars",
-    "totalContext": "전체 컨텍스트",
+    "contextWindow": "전체 컨텍스트",
     "vendor": "@:components.productHero.vendor",
     "version": "@:components.productHero.version",
     "visitWebsite": "@:components.productHero.visitWebsite",
