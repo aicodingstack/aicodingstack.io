@@ -1,0 +1,28 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "verdent-ai",
+  "name": "Verdent AI",
+  "description": "AI-native software company developing agentic coding tools that empower human developers to deliver complex, enterprise-grade code through parallel AI agent orchestration.",
+  "translations": {
+    "zh-Hans": {
+      "description": "AI 原生软件公司，开发代理编码工具，通过并行 AI 代理编排，赋能人类开发者交付复杂的企业级代码。"
+    },
+    "de": {
+      "description": "KI-natives Softwareunternehmen, das Agentenbasierte Coding-Tools entwickelt, die menschliche Entwickler befähigen, komplexen Enterprise-Code durch parallele KI-Agentenorchestration zu liefern."
+    },
+    "ko": {
+      "description": "병렬 AI 에이전트 오케스트레이션을 통해 개발자가 복잡한 엔터프라이즈급 코드를 제공할 수 있도록 지원하는 에이전트 코딩 도구를 개발하는 AI 네이티브 소프트웨어 회사입니다."
+    }
+  },
+  "verified": false,
+  "websiteUrl": "https://www.verdent.ai",
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/verdent-ai",
+    "twitter": "https://x.com/verdent_ai",
+    "github": "https://github.com/verdentAI",
+    "youtube": null,
+    "discord": "https://discord.gg/NGjXEZcbJq",
+    "reddit": null,
+    "blog": null
+  }
+}
