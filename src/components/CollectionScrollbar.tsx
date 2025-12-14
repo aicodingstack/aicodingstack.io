@@ -1,19 +1,23 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
 import { useEffect, useMemo, useState } from 'react'
+import type { Collections } from '@/lib/collections'
 
-export default function CollectionScrollbar() {
-  const [activeSection, setActiveSection] = useState('specifications')
-  const t = useTranslations('components.collectionScrollbar')
+interface CollectionScrollbarProps {
+  sectionIds: string[]
+  collections: Collections
+}
+
+export default function CollectionScrollbar({ sectionIds, collections }: CollectionScrollbarProps) {
+  const [activeSection, setActiveSection] = useState(sectionIds[0] || '')
 
   const sections = useMemo(
-    () => [
-      { id: 'specifications', title: t('specifications') },
-      { id: 'articles', title: t('articles') },
-      { id: 'tools', title: t('tools') },
-    ],
-    [t]
+    () =>
+      sectionIds.map(id => ({
+        id,
+        title: collections[id]?.title || id,
+      })),
+    [sectionIds, collections]
   )
 
   useEffect(() => {

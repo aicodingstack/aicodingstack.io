@@ -13,14 +13,17 @@
     },
     "tools": {
       "$ref": "#/$defs/collectionSection"
+    },
+    "features": {
+      "$ref": "#/$defs/collectionSection"
     }
   },
-  "required": ["specifications", "articles", "tools"],
+  "required": ["specifications", "articles", "tools", "features"],
   "additionalProperties": false,
   "$defs": {
     "collectionSection": {
       "type": "object",
-      "description": "A collection section containing title, description, translations, and cards",
+      "description": "A collection section containing title, description, translations, and sections",
       "properties": {
         "title": {
           "type": "string",
@@ -34,33 +37,33 @@
           "$ref": "./ref/translations.schema.json",
           "description": "Internationalization translations for section fields"
         },
-        "cards": {
+        "sections": {
           "type": "array",
-          "description": "Array of cards within this section",
+          "description": "Array of sections within this collection",
           "items": {
-            "$ref": "#/$defs/collectionCard"
+            "$ref": "#/$defs/collectionSubSection"
           },
           "minItems": 1
         }
       },
-      "required": ["title", "description", "translations", "cards"],
+      "required": ["title", "description", "translations", "sections"],
       "additionalProperties": false
     },
-    "collectionCard": {
+    "collectionSubSection": {
       "type": "object",
-      "description": "A card containing a title, translations, and items",
+      "description": "A subsection containing a title, translations, and items",
       "properties": {
         "title": {
           "type": "string",
-          "description": "Card title"
+          "description": "Subsection title"
         },
         "translations": {
           "$ref": "./ref/translations.schema.json",
-          "description": "Internationalization translations for card fields"
+          "description": "Internationalization translations for subsection fields"
         },
         "items": {
           "type": "array",
-          "description": "Array of items within this card",
+          "description": "Array of items within this subsection",
           "items": {
             "$ref": "#/$defs/collectionItem"
           },
@@ -72,7 +75,7 @@
     },
     "collectionItem": {
       "type": "object",
-      "description": "An individual item within a collection card",
+      "description": "An individual item within a collection subsection",
       "properties": {
         "name": {
           "type": "string",
