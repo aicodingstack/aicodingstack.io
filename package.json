@@ -59,7 +59,7 @@
     "@next/mdx": "^15.5.4",
     "@tailwindcss/postcss": "^4.1.17",
     "@types/mdx": "^2.0.13",
-    "@types/node": "^22.19.2",
+    "@types/node": "^25.0.2",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "ajv": "^8.17.1",
