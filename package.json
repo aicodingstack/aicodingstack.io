@@ -40,7 +40,7 @@
     "@next/third-parties": "^15.5.4",
     "@opennextjs/cloudflare": "^1.14.4",
     "cmdk": "^1.1.1",
-    "lucide-react": "^0.556.0",
+    "lucide-react": "^0.561.0",
     "next": "^15.5.9",
     "next-intl": "^4.5.8",
     "react": "^19.2.1",
