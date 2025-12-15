@@ -13,7 +13,8 @@
     "kilo-code": 13,
     "qoder": null,
     "roo-code": 21.1,
-    "tabnine": 10.8
+    "tabnine": 10.8,
+    "verdent": null
   },
   "clis": {
     "amazon-q-developer-cli": 1.8,
@@ -24,6 +25,7 @@
     "codebuddy-cli": null,
     "codex-cli": 52.1,
     "continue-cli": 30.2,
+    "cursor-cli": null,
     "droid-cli": null,
     "gemini-cli": 86.3,
     "github-copilot-cli": 5.8,
@@ -45,6 +47,7 @@
     "kiro": 2.4,
     "qoder": null,
     "trae": null,
+    "verdent-deck": null,
     "vscode": 179.4,
     "windsurf": null,
     "zed": 71.1
