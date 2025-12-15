@@ -86,6 +86,9 @@ node .claude/skills/manifest-automation/scripts/automate.mjs update extension co
 
 4. **Validate & Save**
    - Write manifest JSON to appropriate path
+   - For IDE/CLI/Extension: check vendor manifest exists, create if missing
+   - Update `data/github-stars.json`
+   - Run `npm run generate` to regenerate TypeScript data files
    - Run schema validation
    - Report success/failures to user
 
@@ -337,10 +340,11 @@ Status: DRAFT (3 fields incomplete)
 📝 Next Steps:
 1. Review manifest file: manifests/clis/cursor-cli.json
 2. Manually fill TODO-marked fields if information available
-3. **Update github-stars.json** with new entry
-4. Update i18n translations if English content changed
-5. Update verified field once data confirmed accurate
-6. Run validation: npm run test:validate
+3. Add i18n translations (zh-Hans, de, ko)
+4. Update verified field once data confirmed accurate
+5. Run validation: npm run test:validate
+
+Note: Vendor manifest, github-stars.json, and TypeScript files already updated.
 ```
 
 ## Comparison with manifest-creator
@@ -513,18 +517,13 @@ updateGithubStarsEntry(manifestType, manifestName, { isNew: operationMode === 'c
 
 1. **Review manifest**: Check all extracted values for accuracy
 2. **Fill TODOs**: Manually add fields that couldn't be auto-discovered
-3. **Update github-stars.json**: Add entry for the new/updated manifest
-   - Use: `updateGithubStarsEntry(type, id, { isNew: mode === 'create' })`
-   - This adds an entry like `clis["cursor-cli"] = null`
-   - Stars will be automatically fetched in the next scheduled update
-4. **Add translations**: Populate `i18n` object with localized content
-   - **CRITICAL**: Ensure i18n content matches English default values
-   - Validate all i18n fields are consistent across all supported languages
-   - Check that no language has outdated or mismatched translations
-5. **Set verified**: Change `verified` to `true` if data is confirmed accurate
-6. **Add related products**: Manually curate `relatedProducts` array
-7. **Run validation**: Ensure schema compliance with `npm run test:validate`
-8. **Commit changes**: Add manifest to git repository
+3. **Add translations**: Populate `i18n` object with localized content (zh-Hans, de, ko)
+4. **Set verified**: Change `verified` to `true` if data is confirmed accurate
+5. **Add related products**: Manually curate `relatedProducts` array
+6. **Run validation**: Ensure schema compliance with `npm run test:validate`
+7. **Commit changes**: Add manifest to git repository
+
+Note: Vendor manifest and github-stars.json are automatically handled during creation.
 
 ## i18n Consistency Requirements
 
@@ -570,3 +569,5 @@ updateGithubStarsEntry(manifestType, manifestName, { isNew: operationMode === 'c
 - If default English fields change, add comment: `// TODO: Update i18n translations to match new English content`
 - Report i18n drift in completion report
 - Preserve existing i18n content (PRESERVE category) but flag for review
+
+
