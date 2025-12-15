@@ -99,6 +99,15 @@
               "description": "LiveCodeBench Pass@1 score (percentage)"
             }
           },
+          "required": [
+            "sweBench",
+            "terminalBench",
+            "mmmu",
+            "mmmuPro",
+            "webDevArena",
+            "sciCode",
+            "liveCodeBench"
+          ],
           "additionalProperties": false
         },
         "platformUrls": {

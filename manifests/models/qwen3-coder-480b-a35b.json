@@ -27,7 +27,10 @@
     "sweBench": null,
     "terminalBench": 0.254,
     "sciCode": null,
-    "liveCodeBench": null
+    "liveCodeBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null
   },
   "platformUrls": {
     "huggingface": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",

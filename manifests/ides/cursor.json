@@ -81,7 +81,7 @@
   "relatedProducts": [
     {
       "type": "cli",
-      "productId": "cursor-agent"
+      "productId": "cursor-cli"
     }
   ],
   "platforms": [
