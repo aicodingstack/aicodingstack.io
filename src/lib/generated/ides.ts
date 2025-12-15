@@ -13,6 +13,7 @@ import IntellijIdea from '../../../manifests/ides/intellij-idea.json'
 import Kiro from '../../../manifests/ides/kiro.json'
 import Qoder from '../../../manifests/ides/qoder.json'
 import Trae from '../../../manifests/ides/trae.json'
+import VerdentDeck from '../../../manifests/ides/verdent-deck.json'
 import Vscode from '../../../manifests/ides/vscode.json'
 import Windsurf from '../../../manifests/ides/windsurf.json'
 import Zed from '../../../manifests/ides/zed.json'
@@ -28,6 +29,7 @@ export const idesData = [
   Kiro,
   Qoder,
   Trae,
+  VerdentDeck,
   Vscode,
   Windsurf,
   Zed,

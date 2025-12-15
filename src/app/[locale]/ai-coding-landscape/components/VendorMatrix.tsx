@@ -58,7 +58,26 @@ function MatrixCell({ products, category }: MatrixCellProps) {
     )
   }
 
-  // Multiple products
+  // Two products - display directly without collapse
+  if (products.length === 2) {
+    return (
+      <div className="h-full min-h-[80px] flex flex-col gap-1">
+        {products.map(product => (
+          <Link
+            key={product.id}
+            href={product.path}
+            className="flex-1 border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-all p-[var(--spacing-sm)] bg-[var(--color-bg-subtle)] hover:bg-[var(--color-hover)] group"
+          >
+            <h4 className="font-medium text-sm tracking-tight group-hover:text-[var(--color-text)] transition-colors line-clamp-2">
+              {product.name}
+            </h4>
+          </Link>
+        ))}
+      </div>
+    )
+  }
+
+  // Three or more products - show collapse menu
   return (
     <div className="relative h-full min-h-[80px]">
       <button

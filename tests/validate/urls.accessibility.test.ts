@@ -3,6 +3,24 @@ import path from 'node:path'
 
 import { describe, it } from 'vitest'
 
+// Type definition for user-agents package
+type UserAgentConstructor = new (data?: {
+  deviceCategory?: string
+  platform?: string
+  vendor?: string
+}) => {
+  toString(): string
+  data: {
+    userAgent: string
+    platform: string
+    vendor: string
+    deviceCategory: string
+  }
+}
+
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const UserAgent = require('user-agents') as UserAgentConstructor
+
 type UrlInfo = { url: string; source: string; itemId: string; field: string }
 type UrlResult =
   | (UrlInfo & { valid: true; skipped?: true; status?: number | 'skipped' })
@@ -86,8 +104,8 @@ function extractUrlsFromManifestItem(
     (typeof item.name === 'string' && item.name) ||
     'unknown'
 
-  const manifestType = manifestFile.includes('/')
-    ? manifestFile.split('/')[0]
+  const manifestType: string = manifestFile.includes('/')
+    ? (manifestFile.split('/')[0] ?? '')
     : manifestFile.replace('.json', '')
 
   const websiteUrl = extractUrlField(item, 'websiteUrl', manifestFile, itemId)
@@ -168,11 +186,11 @@ function loadAllUrls(rootDir: string): UrlInfo[] {
     const data = readJsonFile(collectionsPath)
     if (data && typeof data === 'object' && !Array.isArray(data)) {
       for (const [sectionName, section] of Object.entries(data as Record<string, unknown>)) {
-        const cards = (section as Record<string, unknown>)?.cards
-        if (!Array.isArray(cards)) continue
-        cards.forEach((card: unknown) => {
-          const cardObj = card as Record<string, unknown>
-          const items = cardObj?.items
+        const sections = (section as Record<string, unknown>)?.sections
+        if (!Array.isArray(sections)) continue
+        sections.forEach((subSection: unknown) => {
+          const subSectionObj = subSection as Record<string, unknown>
+          const items = subSectionObj?.items
           if (!Array.isArray(items)) return
           items.forEach((item: unknown) => {
             const itemObj = item as Record<string, unknown>
@@ -180,7 +198,7 @@ function loadAllUrls(rootDir: string): UrlInfo[] {
               const itemId = typeof itemObj?.name === 'string' ? itemObj.name : 'unknown'
               all.push({
                 url: itemObj.url,
-                source: `collections.json → ${sectionName} → ${String(cardObj?.title ?? 'card')} → ${itemId} → url`,
+                source: `collections.json → ${sectionName} → ${String(subSectionObj?.title ?? 'subsection')} → ${itemId} → url`,
                 itemId,
                 field: 'url',
               })
@@ -225,6 +243,14 @@ function validateUrlFormat(urls: UrlInfo[]): UrlResult[] {
 }
 
 /**
+ * Generate a random user-agent string to avoid being blocked by websites.
+ */
+function getRandomUserAgent(): string {
+  const userAgent = new UserAgent()
+  return userAgent.toString()
+}
+
+/**
  * Fetch a URL with timeout and retries.
  */
 async function checkUrl(urlInfo: UrlInfo, retries: number): Promise<UrlResult> {
@@ -239,11 +265,17 @@ async function checkUrl(urlInfo: UrlInfo, retries: number): Promise<UrlResult> {
       const controller = new AbortController()
       const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT)
 
+      // Generate a random user-agent for each request to avoid being blocked.
+      const userAgent = getRandomUserAgent()
+
       // Prefer HEAD; fallback to GET when HEAD fails or returns error status.
       const response = await fetch(urlInfo.url, {
         method: 'HEAD',
         signal: controller.signal,
         redirect: 'follow',
+        headers: {
+          'User-Agent': userAgent,
+        },
       })
 
       clearTimeout(timeoutId)

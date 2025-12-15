@@ -134,7 +134,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
         description: '现代软件开发的基本标准和协议',
       },
     },
-    cards: [
+    sections: [
       {
         title: 'Development Standards',
         translations: {
@@ -143,18 +143,6 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
           },
         },
         items: [
-          {
-            translations: {
-              'zh-Hans': {
-                name: '语义化版本',
-                description: '使用 MAJOR.MINOR.PATCH 格式的版本控制方案，传达兼容性和更新影响',
-              },
-            },
-            name: 'Semantic Versioning',
-            url: 'https://semver.org',
-            description:
-              'Versioning scheme using MAJOR.MINOR.PATCH format to communicate compatibility and impact of updates',
-          },
           {
             translations: {
               'zh-Hans': {
@@ -170,14 +158,14 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
           {
             translations: {
               'zh-Hans': {
-                name: 'AGENTS.md',
-                description: '为编码 Agent 提供项目特定指令和上下文的开放格式 Markdown 文件',
+                name: '语义化版本',
+                description: '使用 MAJOR.MINOR.PATCH 格式的版本控制方案，传达兼容性和更新影响',
               },
             },
-            name: 'AGENTS.md',
-            url: 'https://agents.md',
+            name: 'Semantic Versioning',
+            url: 'https://semver.org',
             description:
-              'Open-format markdown file providing coding agents with project-specific instructions and context',
+              'Versioning scheme using MAJOR.MINOR.PATCH format to communicate compatibility and impact of updates',
           },
         ],
       },
@@ -189,18 +177,6 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
           },
         },
         items: [
-          {
-            translations: {
-              'zh-Hans': {
-                name: '模型上下文协议 (MCP)',
-                description: '将 AI 应用连接到外部系统（如数据源、工具和工作流）的开放标准',
-              },
-            },
-            name: 'Model Context Protocol (MCP)',
-            url: 'https://modelcontextprotocol.io',
-            description:
-              'Open standard connecting AI applications to external systems like data sources, tools, and workflows',
-          },
           {
             translations: {
               'zh-Hans': {
@@ -216,14 +192,14 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
           {
             translations: {
               'zh-Hans': {
-                name: 'Agent 支付协议 (AP2)',
-                description: '使用可验证数字凭证和授权委托的安全 Agent 支付开放协议',
+                name: 'Agent 客户端协议 (ACP)',
+                description: '标准化代码编辑器与 Agent 之间通信的开放协议，用于自主代码修改',
               },
             },
-            name: 'Agent Payments Protocol (AP2)',
-            url: 'https://ap2-protocol.org',
+            name: 'Agent Client Protocol (ACP)',
+            url: 'https://agentclientprotocol.com',
             description:
-              'Open protocol for secure agent-led payments using verifiable digital credentials and authorization mandates',
+              'Open protocol standardizing communication between code editors and coding agents for autonomous code modification',
           },
           {
             translations: {
@@ -240,14 +216,14 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
           {
             translations: {
               'zh-Hans': {
-                name: 'Agent 客户端协议 (ACP)',
-                description: '标准化代码编辑器与 Agent 之间通信的开放协议，用于自主代码修改',
+                name: 'Agent 支付协议 (AP2)',
+                description: '使用可验证数字凭证和授权委托的安全 Agent 支付开放协议',
               },
             },
-            name: 'Agent Client Protocol (ACP)',
-            url: 'https://agentclientprotocol.com',
+            name: 'Agent Payments Protocol (AP2)',
+            url: 'https://ap2-protocol.org',
             description:
-              'Open protocol standardizing communication between code editors and coding agents for autonomous code modification',
+              'Open protocol for secure agent-led payments using verifiable digital credentials and authorization mandates',
           },
         ],
       },
@@ -262,7 +238,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
         description: '来自行业领袖的 AI 编码必读文章',
       },
     },
-    cards: [
+    sections: [
       {
         title: 'OpenAI on Coding',
         translations: {
@@ -402,7 +378,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
         description: 'AI 编码工作流的精选工具和实用程序',
       },
     },
-    cards: [
+    sections: [
       {
         title: 'Development Tools',
         translations: {
@@ -482,6 +458,101 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
           },
         },
         items: [],
+      },
+    ],
+  },
+  features: {
+    title: 'Coding Features',
+    description: 'Must-try features for AI coding workflows',
+    translations: {
+      'zh-Hans': {
+        title: '编码功能',
+        description: 'AI 编码工作流的必备功能',
+      },
+    },
+    sections: [
+      {
+        title: 'Open Standards',
+        translations: {
+          'zh-Hans': {
+            title: '开放标准',
+          },
+        },
+        items: [
+          {
+            name: 'MCP',
+            url: 'https://modelcontextprotocol.io',
+            description:
+              'Open standard connecting AI applications to external systems like data sources, tools, and workflows',
+            translations: {
+              'zh-Hans': {
+                name: '模型上下文协议 (MCP)',
+                description: '将 AI 应用连接到外部系统（如数据源、工具和工作流）的开放标准',
+              },
+            },
+          },
+          {
+            name: 'AGENTS.md',
+            url: 'https://agents.md',
+            description:
+              'Open-format markdown file providing coding agents with project-specific instructions and context',
+            translations: {
+              'zh-Hans': {
+                name: 'AGENTS.md',
+                description: '为编码 Agent 提供项目特定指令和上下文的开放格式 Markdown 文件',
+              },
+            },
+          },
+        ],
+      },
+      {
+        title: 'Vendor Standards',
+        translations: {
+          'zh-Hans': {
+            title: '厂商标准',
+          },
+        },
+        items: [
+          {
+            name: 'Agent Skills',
+            url: 'https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview',
+            description:
+              "Modular capabilities that extend Agent's functionality through filesystem-based resources containing instructions, metadata, and optional scripts, enabling domain-specific expertise and workflows",
+            translations: {
+              'zh-Hans': {
+                name: 'Agent 技能',
+                description:
+                  '模块化能力，通过基于文件系统的资源（包含指令、元数据和可选脚本）扩展 Agent 的功能，实现领域专业知识和工作流',
+              },
+            },
+          },
+          {
+            name: 'Commands',
+            url: 'https://cursor.com/docs/agent/chat/commands',
+            description:
+              'Custom commands that create reusable workflows triggered with a `/` prefix in the chat input, stored as Markdown files in project, global, or team locations',
+            translations: {
+              'zh-Hans': {
+                name: '命令',
+                description:
+                  '自定义命令，可通过聊天输入框中的 `/` 前缀触发可重用工作流，以 Markdown 文件形式存储在项目、全局或团队位置',
+              },
+            },
+          },
+          {
+            name: 'Rules',
+            url: 'https://cursor.com/docs/context/rules',
+            description:
+              'System-level instructions for Agent that provide persistent, reusable context through Project Rules, User Rules, Team Rules, and AGENTS.md files',
+            translations: {
+              'zh-Hans': {
+                name: '规则',
+                description:
+                  '为 Agent 提供系统级指令，通过项目规则、用户规则、团队规则和 AGENTS.md 文件提供持久、可重用的上下文',
+              },
+            },
+          },
+        ],
       },
     ],
   },
@@ -599,10 +670,10 @@ export const faqMetadata: Record<string, FaqItem[]> = {
 }
 
 export const stackCounts: Record<string, number> = {
-  ides: 12,
-  clis: 18,
-  extensions: 14,
+  ides: 13,
+  clis: 19,
+  extensions: 15,
   models: 26,
   'model-providers': 7,
-  vendors: 34,
+  vendors: 35,
 }

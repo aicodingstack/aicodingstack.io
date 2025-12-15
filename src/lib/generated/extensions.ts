@@ -18,6 +18,7 @@ import KiloCode from '../../../manifests/extensions/kilo-code.json'
 import Qoder from '../../../manifests/extensions/qoder.json'
 import RooCode from '../../../manifests/extensions/roo-code.json'
 import Tabnine from '../../../manifests/extensions/tabnine.json'
+import Verdent from '../../../manifests/extensions/verdent.json'
 import type { ManifestExtension } from '../../types/manifests'
 
 export const extensionsData = [
@@ -35,6 +36,7 @@ export const extensionsData = [
   Qoder,
   RooCode,
   Tabnine,
+  Verdent,
 ] as unknown as ManifestExtension[]
 
 export type Extension = typeof Amp
