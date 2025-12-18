@@ -12,6 +12,7 @@ import ClineCli from '../../../manifests/clis/cline-cli.json'
 import CodebuddyCli from '../../../manifests/clis/codebuddy-cli.json'
 import CodexCli from '../../../manifests/clis/codex-cli.json'
 import ContinueCli from '../../../manifests/clis/continue-cli.json'
+import CursorCli from '../../../manifests/clis/cursor-cli.json'
 import DroidCli from '../../../manifests/clis/droid-cli.json'
 import GeminiCli from '../../../manifests/clis/gemini-cli.json'
 import GithubCopilotCli from '../../../manifests/clis/github-copilot-cli.json'
@@ -33,6 +34,7 @@ export const clisData = [
   CodebuddyCli,
   CodexCli,
   ContinueCli,
+  CursorCli,
   DroidCli,
   GeminiCli,
   GithubCopilotCli,

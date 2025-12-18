@@ -35,6 +35,7 @@ import Sst from '../../../manifests/vendors/sst.json'
 import Streamlake from '../../../manifests/vendors/streamlake.json'
 import Tabnine from '../../../manifests/vendors/tabnine.json'
 import Tencent from '../../../manifests/vendors/tencent.json'
+import VerdentAi from '../../../manifests/vendors/verdent-ai.json'
 import Xai from '../../../manifests/vendors/xai.json'
 import ZAi from '../../../manifests/vendors/z-ai.json'
 import ZedIndustries from '../../../manifests/vendors/zed-industries.json'
@@ -72,6 +73,7 @@ export const vendorsData = [
   Streamlake,
   Tabnine,
   Tencent,
+  VerdentAi,
   Xai,
   ZAi,
   ZedIndustries,

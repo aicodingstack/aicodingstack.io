@@ -1,0 +1,69 @@
+{
+  "$schema": "../$schemas/extension.schema.json",
+  "id": "verdent",
+  "name": "Verdent",
+  "description": "Advanced agentic coding assistant that orchestrates multiple AI agents in parallel to tackle complex software tasks with structured planning, verification, and customizable subagents.",
+  "translations": {
+    "zh-Hans": {
+      "description": "先进的代理编码助手，协调多个 AI 代理并行处理复杂的软件任务，具有结构化规划、验证和可自定义子代理。"
+    },
+    "de": {
+      "description": "Fortgeschrittener Coding-Assistent, der mehrere KI-Agenten parallel orchestriert, um komplexe Aufgaben mit Planung, Verifizierung und anpassbaren Unteragenten zu bewältigen."
+    },
+    "ko": {
+      "description": "구조화된 계획, 검증 및 사용자 정의 가능한 하위 에이전트를 통해 복잡한 소프트웨어 작업을 처리하기 위해 여러 AI 에이전트를 병렬로 조정하는 고급 에이전트 코딩 어시스턴트입니다."
+    }
+  },
+  "verified": false,
+  "websiteUrl": "https://www.verdent.ai",
+  "docsUrl": "https://docs.verdent.ai",
+  "vendor": "Verdent AI",
+  "latestVersion": "1.5.5",
+  "githubUrl": "https://github.com/verdentAI/docs",
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Free Trial",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    },
+    {
+      "name": "Pro",
+      "value": 19,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": null,
+    "changelog": "https://www.verdent.ai/changelog",
+    "pricing": "https://www.verdent.ai/pricing",
+    "mcp": "https://docs.verdent.ai/verdent-for-vscode/advanced-features/mcp",
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/verdent",
+    "twitter": "https://x.com/verdent",
+    "github": "https://github.com/verdentAI",
+    "youtube": null,
+    "discord": "https://discord.gg/NGjXEZcbJq",
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [
+    {
+      "type": "ide",
+      "productId": "verdent-deck"
+    }
+  ],
+  "supportedIdes": [
+    {
+      "ideId": "vscode",
+      "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=VerdentAI.verdent",
+      "installUri": "vscode:extension/VerdentAI.verdent"
+    }
+  ]
+}

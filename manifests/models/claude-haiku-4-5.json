@@ -25,9 +25,12 @@
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
     "sweBench": null,
-    "terminalBench": 0.298,
+    "terminalBench": 0.355,
     "sciCode": null,
-    "liveCodeBench": null
+    "liveCodeBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null
   },
   "platformUrls": {
     "huggingface": null,

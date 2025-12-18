@@ -55,7 +55,13 @@
       "semicolons": "asNeeded",
       "trailingCommas": "es5",
       "arrowParentheses": "asNeeded"
-    }
+    },
+    "globals": [
+      "mcp__chrome_devtools__navigate_page",
+      "mcp__chrome_devtools__wait_for",
+      "mcp__chrome_devtools__take_snapshot",
+      "mcp__chrome_devtools__take_screenshot"
+    ]
   },
   "json": {
     "formatter": {

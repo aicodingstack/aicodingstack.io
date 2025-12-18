@@ -27,7 +27,10 @@
     "sweBench": null,
     "terminalBench": 0.258,
     "sciCode": null,
-    "liveCodeBench": null
+    "liveCodeBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null
   },
   "platformUrls": {
     "huggingface": null,

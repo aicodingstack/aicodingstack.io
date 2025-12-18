@@ -1,0 +1,76 @@
+{
+  "$schema": "../$schemas/ide.schema.json",
+  "id": "verdent-deck",
+  "name": "Verdent Deck",
+  "description": "Parallel Agentic Development Environment that manages multiple AI coding agents in parallel for complex, feature-level software tasks with built-in Git worktree support.",
+  "translations": {
+    "zh-Hans": {
+      "description": "并行代理开发环境，管理多个 AI 编码代理并行处理复杂的功能级软件任务，内置 Git 工作树支持。"
+    },
+    "de": {
+      "description": "Parallele Agentenentwicklungsumgebung, die mehrere KI-Coding-Agenten parallel für komplexe Software-Aufgaben auf Feature-Ebene mit integrierter Git-Worktree-Unterstützung verwaltet."
+    },
+    "ko": {
+      "description": "복잡한 기능 수준의 소프트웨어 작업을 위해 여러 AI 코딩 에이전트를 병렬로 관리하는 병렬 에이전트 개발 환경으로, Git 워크트리 지원이 내장되어 있습니다."
+    }
+  },
+  "verified": false,
+  "websiteUrl": "https://www.verdent.ai",
+  "docsUrl": "https://docs.verdent.ai",
+  "vendor": "Verdent AI",
+  "latestVersion": "1.5.0",
+  "githubUrl": "https://github.com/verdentAI/docs",
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Free Trial",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    },
+    {
+      "name": "Pro",
+      "value": 19,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://www.verdent.ai/download",
+    "changelog": "https://www.verdent.ai/changelog",
+    "pricing": "https://www.verdent.ai/pricing",
+    "mcp": "https://docs.verdent.ai/verdent-for-vscode/advanced-features/mcp",
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/verdent",
+    "twitter": "https://x.com/verdent",
+    "github": "https://github.com/verdentAI",
+    "youtube": null,
+    "discord": "https://discord.gg/NGjXEZcbJq",
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [
+    {
+      "type": "extension",
+      "productId": "verdent"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": "/Applications/Verdent Deck.app",
+      "installCommand": null,
+      "launchCommand": "open -a \"Verdent Deck\""
+    },
+    {
+      "os": "Windows",
+      "installPath": "%LOCALAPPDATA%\\Verdent Deck",
+      "installCommand": null,
+      "launchCommand": "verdent-deck"
+    }
+  ]
+}

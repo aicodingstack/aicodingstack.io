@@ -24,10 +24,13 @@
   "inputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
-    "sweBench": 65,
-    "terminalBench": 0.496,
+    "sweBench": 71.8,
+    "terminalBench": 0.352,
     "sciCode": null,
-    "liveCodeBench": null
+    "liveCodeBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null
   },
   "platformUrls": {
     "huggingface": null,

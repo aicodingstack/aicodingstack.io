@@ -12,8 +12,9 @@
     "jetbrains-junie": null,
     "kilo-code": 13.2,
     "qoder": null,
-    "roo-code": 21.2,
-    "tabnine": 10.8
+    "roo-code": 21.1,
+    "tabnine": 10.8,
+    "verdent": null
   },
   "clis": {
     "amazon-q-developer-cli": 1.8,
@@ -22,8 +23,9 @@
     "claude-code-cli": 45.9,
     "cline-cli": null,
     "codebuddy-cli": null,
-    "codex-cli": 53.1,
-    "continue-cli": 30.3,
+    "codex-cli": 52.1,
+    "continue-cli": 30.2,
+    "cursor-cli": null,
     "droid-cli": null,
     "gemini-cli": 87.3,
     "github-copilot-cli": 5.9,
@@ -45,7 +47,8 @@
     "kiro": 2.4,
     "qoder": null,
     "trae": null,
-    "vscode": 179.6,
+    "verdent-deck": null,
+    "vscode": 179.4,
     "windsurf": null,
     "zed": 71.4
   },

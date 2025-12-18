@@ -16,7 +16,7 @@ export interface CollectionItem {
   [key: string]: unknown
 }
 
-export interface CollectionCard {
+export interface CollectionSubSection {
   title: string
   items: CollectionItem[]
   i18n?: {
@@ -31,7 +31,7 @@ export interface CollectionCard {
 export interface CollectionSection {
   title: string
   description: string
-  cards: CollectionCard[]
+  sections: CollectionSubSection[]
   i18n?: {
     [locale: string]: {
       title?: string
@@ -43,9 +43,7 @@ export interface CollectionSection {
 }
 
 export interface Collections {
-  specifications: CollectionSection
-  articles: CollectionSection
-  tools: CollectionSection
+  [key: string]: CollectionSection
 }
 
 // Localize a single collection item
@@ -53,11 +51,14 @@ function localizeCollectionItem(item: CollectionItem, locale: Locale): Collectio
   return localizeManifestItem(item, locale, ['name', 'description'])
 }
 
-// Localize a collection card
-function localizeCollectionCard(card: CollectionCard, locale: Locale): CollectionCard {
+// Localize a collection subsection
+function localizeCollectionSubSection(
+  subSection: CollectionSubSection,
+  locale: Locale
+): CollectionSubSection {
   return {
-    ...localizeManifestItem(card, locale, ['title']),
-    items: card.items.map(item => localizeCollectionItem(item, locale)),
+    ...localizeManifestItem(subSection, locale, ['title']),
+    items: subSection.items.map(item => localizeCollectionItem(item, locale)),
   }
 }
 
@@ -65,20 +66,26 @@ function localizeCollectionCard(card: CollectionCard, locale: Locale): Collectio
 function localizeCollectionSection(section: CollectionSection, locale: Locale): CollectionSection {
   return {
     ...localizeManifestItem(section, locale, ['title', 'description']),
-    cards: section.cards.map(card => localizeCollectionCard(card, locale)),
+    sections: section.sections.map(subSection => localizeCollectionSubSection(subSection, locale)),
   }
 }
 
 // Get collections for a specific locale with fallback to English
 export function getCollections(locale: string): Collections {
   const typedLocale = locale as Locale
+  const collections: Collections = {}
 
-  return {
-    specifications: localizeCollectionSection(
-      collectionsData.specifications as CollectionSection,
-      typedLocale
-    ),
-    articles: localizeCollectionSection(collectionsData.articles as CollectionSection, typedLocale),
-    tools: localizeCollectionSection(collectionsData.tools as CollectionSection, typedLocale),
+  // Dynamically process all collection sections from the manifest
+  for (const [key, section] of Object.entries(collectionsData)) {
+    // Skip $schema property
+    if (key === '$schema') continue
+    collections[key] = localizeCollectionSection(section as CollectionSection, typedLocale)
   }
+
+  return collections
+}
+
+// Get collection section IDs in order
+export function getCollectionSectionIds(): string[] {
+  return Object.keys(collectionsData).filter(key => key !== '$schema')
 }

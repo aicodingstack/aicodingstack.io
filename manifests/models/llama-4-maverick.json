@@ -27,7 +27,10 @@
     "sweBench": 21.04,
     "terminalBench": null,
     "sciCode": null,
-    "liveCodeBench": null
+    "liveCodeBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null
   },
   "platformUrls": {
     "huggingface": "https://huggingface.co/meta-llama/Llama-4-Maverick",

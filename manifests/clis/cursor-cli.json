@@ -1,0 +1,110 @@
+{
+  "$schema": "../$schemas/cli.schema.json",
+  "id": "cursor-cli",
+  "name": "Cursor CLI",
+  "description": "AI-powered command-line agent for coding directly from your terminal. Interact with AI to write, review, and modify code with frontier models from multiple providers.",
+  "translations": {
+    "zh-Hans": {
+      "description": "AI 驱动的命令行编码代理，直接在终端中编码。与 AI 交互以编写、审查和修改代码，支持多个提供商的前沿模型。"
+    },
+    "de": {
+      "description": "KI-gestützter Befehlszeilen-Agent zum Codieren direkt vom Terminal aus. Interagieren Sie mit KI, um Code mit Frontier-Modellen mehrerer Anbieter zu schreiben, zu überprüfen und zu ändern."
+    },
+    "ko": {
+      "description": "터미널에서 직접 코딩할 수 있는 AI 기반 명령줄 에이전트입니다. 여러 제공업체의 최첨단 모델로 AI와 상호 작용하여 코드를 작성, 검토 및 수정합니다."
+    }
+  },
+  "verified": false,
+  "websiteUrl": "https://cursor.com/cli",
+  "docsUrl": "https://cursor.com/docs/cli/overview",
+  "vendor": "Anysphere",
+  "latestVersion": "2025.11.25-e276529",
+  "githubUrl": "https://github.com/cursor/cursor",
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Hobby",
+      "value": 0,
+      "currency": "USD",
+      "per": "Month",
+      "category": "Individual"
+    },
+    {
+      "name": "Pro",
+      "value": 20,
+      "currency": "USD",
+      "per": "Month",
+      "category": "Individual"
+    },
+    {
+      "name": "Pro+",
+      "value": 60,
+      "currency": "USD",
+      "per": "Month",
+      "category": "Individual"
+    },
+    {
+      "name": "Ultra",
+      "value": 200,
+      "currency": "USD",
+      "per": "Month",
+      "category": "Individual"
+    },
+    {
+      "name": "Teams",
+      "value": 40,
+      "currency": "USD",
+      "per": "user/Month",
+      "category": "Team"
+    },
+    {
+      "name": "Enterprise",
+      "value": null,
+      "currency": "USD",
+      "per": "Custom",
+      "category": "Enterprise"
+    }
+  ],
+  "resourceUrls": {
+    "download": null,
+    "changelog": "https://cursor.com/changelog",
+    "pricing": "https://cursor.com/pricing",
+    "mcp": null,
+    "issue": "https://github.com/cursor/cursor/issues"
+  },
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/cursorai",
+    "twitter": "https://x.com/cursor_ai",
+    "github": "https://github.com/cursor",
+    "youtube": "https://www.youtube.com/@cursor_ai",
+    "discord": null,
+    "reddit": "https://www.reddit.com/r/cursor",
+    "blog": "https://cursor.com/blog"
+  },
+  "relatedProducts": [
+    {
+      "type": "ide",
+      "productId": "cursor"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": null,
+      "installCommand": "brew install --cask cursor-cli",
+      "launchCommand": "cursor-agent"
+    },
+    {
+      "os": "Windows",
+      "installPath": null,
+      "installCommand": "curl https://cursor.com/install -fsS | bash",
+      "launchCommand": "cursor-agent"
+    },
+    {
+      "os": "Linux",
+      "installPath": null,
+      "installCommand": "curl https://cursor.com/install -fsS | bash",
+      "launchCommand": "cursor-agent"
+    }
+  ]
+}

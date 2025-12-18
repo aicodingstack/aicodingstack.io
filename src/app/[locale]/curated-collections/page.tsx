@@ -1,9 +1,10 @@
 import { getTranslations } from 'next-intl/server'
 import CollectionScrollbar from '@/components/CollectionScrollbar'
+import CollectionSection from '@/components/CollectionSection'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import PageHeader from '@/components/PageHeader'
-import { getCollections } from '@/lib/collections'
+import { getCollectionSectionIds, getCollections } from '@/lib/collections'
 import { buildCanonicalUrl, buildOpenGraph, buildTitle, buildTwitterCard } from '@/lib/metadata'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -48,6 +49,7 @@ export default async function CuratedCollectionsPage({ params }: Props) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'pages.curatedCollections' })
   const collections = getCollections(locale)
+  const sectionIds = getCollectionSectionIds()
 
   return (
     <>
@@ -58,126 +60,19 @@ export default async function CuratedCollectionsPage({ params }: Props) {
 
         {/* Main Content with Sidebar */}
         <div className="flex gap-[var(--spacing-lg)]">
-          <CollectionScrollbar />
+          <CollectionScrollbar sectionIds={sectionIds} collections={collections} />
 
           {/* Main Content */}
           <div className="flex-1 min-w-0">
-            {/* Specifications & Protocols Section */}
-            <section id="specifications" className="mb-[var(--spacing-xl)] scroll-mt-[100px]">
-              <div className="mb-[var(--spacing-lg)] border-l-2 border-[var(--color-border-strong)] pl-[var(--spacing-md)]">
-                <h2 className="text-lg font-medium tracking-tight mb-[var(--spacing-xs)] text-[var(--color-text)]">
-                  {collections.specifications.title}
-                </h2>
-                <p className="text-sm text-[var(--color-text-secondary)] font-light">
-                  {collections.specifications.description}
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-[var(--spacing-md)]">
-                {collections.specifications.cards.map(card => (
-                  <div
-                    key={card.title}
-                    className="border border-[var(--color-border)] p-[var(--spacing-md)]"
-                  >
-                    <h3 className="text-lg font-semibold tracking-tight mb-[var(--spacing-md)]">
-                      {card.title}
-                    </h3>
-                    <ul className="space-y-[var(--spacing-md)]">
-                      {card.items.map(item => (
-                        <li key={item.url}>
-                          <a href={item.url} target="_blank" rel="noopener" className="group block">
-                            <div className="text-base font-medium text-[var(--color-text)] group-hover:underline">
-                              {item.name}
-                            </div>
-                            <p className="text-sm text-[var(--color-text-secondary)] font-light mt-[var(--spacing-xs)]">
-                              {item.description}
-                            </p>
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            {/* Featured Articles Section */}
-            <section id="articles" className="mb-[var(--spacing-xl)] scroll-mt-[100px]">
-              <div className="mb-[var(--spacing-lg)] border-l-2 border-[var(--color-border-strong)] pl-[var(--spacing-md)]">
-                <h2 className="text-lg font-medium tracking-tight mb-[var(--spacing-xs)] text-[var(--color-text)]">
-                  {collections.articles.title}
-                </h2>
-                <p className="text-sm text-[var(--color-text-secondary)] font-light">
-                  {collections.articles.description}
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-[var(--spacing-md)]">
-                {collections.articles.cards.map(card => (
-                  <div
-                    key={card.title}
-                    className="border border-[var(--color-border)] p-[var(--spacing-md)]"
-                  >
-                    <h3 className="text-lg font-semibold tracking-tight mb-[var(--spacing-md)]">
-                      {card.title}
-                    </h3>
-                    <ul className="space-y-[var(--spacing-md)]">
-                      {card.items.map(item => (
-                        <li key={item.url}>
-                          <a href={item.url} target="_blank" rel="noopener" className="group block">
-                            <div className="text-base font-medium text-[var(--color-text)] group-hover:underline">
-                              {item.name}
-                            </div>
-                            <p className="text-sm text-[var(--color-text-secondary)] font-light mt-[var(--spacing-xs)]">
-                              {item.description}
-                            </p>
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            {/* Ecosystem Tools Section */}
-            <section id="tools" className="scroll-mt-[100px]">
-              <div className="mb-[var(--spacing-lg)] border-l-2 border-[var(--color-border-strong)] pl-[var(--spacing-md)]">
-                <h2 className="text-lg font-medium tracking-tight mb-[var(--spacing-xs)] text-[var(--color-text)]">
-                  {collections.tools.title}
-                </h2>
-                <p className="text-sm text-[var(--color-text-secondary)] font-light">
-                  {collections.tools.description}
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-[var(--spacing-md)]">
-                {collections.tools.cards.map(card => (
-                  <div
-                    key={card.title}
-                    className="border border-[var(--color-border)] p-[var(--spacing-md)]"
-                  >
-                    <h3 className="text-lg font-semibold tracking-tight mb-[var(--spacing-md)]">
-                      {card.title}
-                    </h3>
-                    <ul className="space-y-[var(--spacing-md)]">
-                      {card.items.map(item => (
-                        <li key={item.url}>
-                          <a href={item.url} target="_blank" rel="noopener" className="group block">
-                            <div className="text-base font-medium text-[var(--color-text)] group-hover:underline">
-                              {item.name}
-                            </div>
-                            <p className="text-sm text-[var(--color-text-secondary)] font-light mt-[var(--spacing-xs)]">
-                              {item.description}
-                            </p>
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </section>
+            {sectionIds
+              .filter(sectionId => collections[sectionId])
+              .map(sectionId => (
+                <CollectionSection
+                  key={sectionId}
+                  id={sectionId}
+                  section={collections[sectionId]!}
+                />
+              ))}
           </div>
         </div>
       </div>
