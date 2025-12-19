@@ -333,7 +333,7 @@
         },
         "items": [
           {
-            "name": "MCP",
+            "name": "Model Context Protocol (MCP)",
             "url": "https://modelcontextprotocol.io",
             "description": "Open standard connecting AI applications to external systems like data sources, tools, and workflows",
             "translations": {
@@ -376,7 +376,7 @@
             }
           },
           {
-            "name": "Commands",
+            "name": "Slash Commands",
             "url": "https://cursor.com/docs/agent/chat/commands",
             "description": "Custom commands that create reusable workflows triggered with a `/` prefix in the chat input, stored as Markdown files in project, global, or team locations",
             "translations": {
