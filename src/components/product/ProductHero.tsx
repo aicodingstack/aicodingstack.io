@@ -1,5 +1,3 @@
-'use client'
-
 import { useTranslations } from 'next-intl'
 import React from 'react'
 import { VerifiedBadge } from '@/components/VerifiedBadge'
@@ -82,7 +80,6 @@ export function ProductHero({
   platforms,
   showAllPlatforms = false,
   additionalInfo,
-  pricing,
   type,
   websiteUrl,
   githubUrl,
@@ -231,18 +228,6 @@ export function ProductHero({
                   )
                 })}
               </div>
-            </div>
-          </div>
-        )}
-
-        {/* Pricing (for display in hero) */}
-        {pricing && (
-          <div className="mb-[var(--spacing-lg)]">
-            <div className="inline-flex items-center gap-[var(--spacing-xs)] px-[var(--spacing-md)] py-[var(--spacing-sm)] bg-[var(--color-hover)] border border-[var(--color-border)]">
-              <span className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium">
-                {pricing.label}:
-              </span>
-              <span className="text-sm font-medium">{pricing.value}</span>
             </div>
           </div>
         )}

@@ -127,11 +127,6 @@ export default async function ModelPage({
             },
           ].filter(Boolean) as { label: string; value: string }[]
         }
-        pricing={
-          pricingDisplayForSchema
-            ? { label: t('labels.pricing'), value: pricingDisplayForSchema }
-            : undefined
-        }
         additionalUrls={
           [
             model.docsUrl && {
