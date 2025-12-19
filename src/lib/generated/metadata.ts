@@ -414,17 +414,6 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
           {
             translations: {
               'zh-Hans': {
-                name: 'ccusage',
-                description: 'Claude Code 使用跟踪和分析工具',
-              },
-            },
-            name: 'ccusage',
-            url: 'https://github.com/ryoppippi/ccusage',
-            description: 'Claude Code usage tracking and analytics tool',
-          },
-          {
-            translations: {
-              'zh-Hans': {
                 name: 'BMAD-METHOD',
                 description:
                   '敏捷 AI 驱动开发的突破性方法，配备专门的 AI Agent 用于规划、架构和实现',
@@ -435,19 +424,6 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
             description:
               'Breakthrough Method for Agile AI-Driven Development with specialized AI agents for planning, architecture, and implementation',
           },
-          {
-            translations: {
-              'zh-Hans': {
-                name: 'Anthropic Skills',
-                description:
-                  '示例技能集合，教授 Claude 如何完成专门任务，包括创意应用、技术任务和企业工作流',
-              },
-            },
-            name: 'Anthropic Skills',
-            url: 'https://github.com/anthropics/skills',
-            description:
-              'Collection of example skills that teach Claude how to complete specialized tasks, including creative applications, technical tasks, and enterprise workflows',
-          },
         ],
       },
       {
@@ -457,7 +433,19 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
             title: '生产力工具',
           },
         },
-        items: [],
+        items: [
+          {
+            translations: {
+              'zh-Hans': {
+                name: 'ccusage',
+                description: 'Claude Code 使用跟踪和分析工具',
+              },
+            },
+            name: 'ccusage',
+            url: 'https://github.com/ryoppippi/ccusage',
+            description: 'Claude Code usage tracking and analytics tool',
+          },
+        ],
       },
     ],
   },
@@ -480,7 +468,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
         },
         items: [
           {
-            name: 'MCP',
+            name: 'Model Context Protocol (MCP)',
             url: 'https://modelcontextprotocol.io',
             description:
               'Open standard connecting AI applications to external systems like data sources, tools, and workflows',
@@ -527,7 +515,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
             },
           },
           {
-            name: 'Commands',
+            name: 'Slash Commands',
             url: 'https://cursor.com/docs/agent/chat/commands',
             description:
               'Custom commands that create reusable workflows triggered with a `/` prefix in the chat input, stored as Markdown files in project, global, or team locations',
