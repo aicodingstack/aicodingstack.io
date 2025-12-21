@@ -4,7 +4,7 @@
  * These TypeScript interfaces mirror the JSON schema definitions in /manifests/$schemas/
  * and follow the same inheritance hierarchy to ensure type safety and consistency.
  *
- * Schema references:
+ * Schema structure:
  * - Base schemas: /manifests/$schemas/ref/
  * - Product schemas: /manifests/$schemas/*.schema.json
  */
@@ -12,39 +12,6 @@
 // =============================================================================
 // SECTION 1: Base Ref Types (from /manifests/$schemas/ref/)
 // =============================================================================
-
-/**
- * Base Entity - Fundamental properties all manifests share
- * Based on: /manifests/$schemas/ref/entity.schema.json
- */
-export interface ManifestEntity {
-  id: string
-  name: string
-  description: string
-  translations: ManifestTranslations
-  verified: boolean
-  websiteUrl: string
-  docsUrl?: string | null
-}
-
-/**
- * Vendor Entity - Entity with vendor information
- * Based on: /manifests/$schemas/ref/vendor-entity.schema.json
- * Extends: ManifestEntity
- */
-export interface ManifestVendorEntity extends ManifestEntity {
-  vendor: string
-  docsUrl: string | null // Override: required in vendor-entity schema
-}
-
-/**
- * App - Entity marked as verified
- * Based on: /manifests/$schemas/ref/app.schema.json
- * Extends: ManifestEntity
- */
-export interface ManifestApp extends ManifestEntity {
-  verified: boolean
-}
 
 /**
  * Internationalization translations
@@ -61,43 +28,64 @@ export interface ManifestTranslations {
 /**
  * Community/Social URLs
  * Based on: /manifests/$schemas/ref/community-urls.schema.json
+ *
+ * Note: All properties are REQUIRED according to the schema
+ * (use null if not applicable)
  */
 export interface ManifestCommunityUrls {
-  linkedin?: string | null
-  twitter?: string | null
-  github?: string | null
-  youtube?: string | null
-  discord?: string | null
-  reddit?: string | null
-  blog?: string | null
-  [key: string]: string | null | undefined
+  linkedin: string | null
+  twitter: string | null
+  github: string | null
+  youtube: string | null
+  discord: string | null
+  reddit: string | null
+  blog: string | null
+  [key: string]: string | null
 }
 
 /**
- * Platform-specific URLs
+ * Platform-specific URLs (HuggingFace, Artificial Analysis, OpenRouter)
  * Based on: /manifests/$schemas/ref/platform-urls.schema.json
+ *
+ * Note: All properties are REQUIRED according to the schema
+ * (use null if not applicable)
  */
 export interface ManifestPlatformUrls {
-  macos?: string | null
-  windows?: string | null
-  linux?: string | null
+  huggingface: string | null
+  artificialAnalysis: string | null
+  openrouter: string | null
+  [key: string]: string | null
 }
 
 /**
- * Pricing tier information
- * Based on: /manifests/$schemas/ref/product.schema.json#$defs/pricingTier
+ * Base Entity - Fundamental properties all manifests share
+ * Based on: /manifests/$schemas/ref/entity.schema.json
  */
-export interface ManifestPricingTier {
+export interface ManifestEntity {
+  id: string
   name: string
-  value: number | null // null for custom pricing, 0 for free
-  currency: string | null // ISO 4217 currency code (e.g., 'USD', 'CNY', 'EUR')
-  per: string | null // e.g., 'month', 'year', 'user/month', 'custom'
-  category: string // 'Individual', 'Business', 'Enterprise'
+  description: string
+  translations: ManifestTranslations
+  verified: boolean
+  websiteUrl: string
+}
+
+/**
+ * Vendor Entity - Entity with vendor information
+ * Based on: /manifests/$schemas/ref/vendor-entity.schema.json
+ * Extends: ManifestEntity
+ */
+export interface ManifestVendorEntity extends ManifestEntity {
+  docsUrl: string | null
+  vendor: string
 }
 
 /**
  * Resource URLs for a product
  * Based on: /manifests/$schemas/ref/product.schema.json#$defs/resourceUrls
+ *
+ * Note: All properties are REQUIRED according to the schema
+ * (use null if not applicable)
  */
 export interface ManifestResourceUrls {
   download: string | null
@@ -108,38 +96,15 @@ export interface ManifestResourceUrls {
 }
 
 /**
- * Component-compatible resource URLs
+ * Pricing tier information
+ * Based on: /manifests/$schemas/ref/product.schema.json#$defs/pricingTier
  */
-export interface ComponentResourceUrls {
-  download?: string
-  changelog?: string
-  pricing?: string
-  blog?: string
-  mcp?: string
-  issue?: string
-}
-
-/**
- * Component-compatible community URLs
- */
-export interface ComponentCommunityUrls {
-  linkedin?: string
-  twitter?: string
-  github?: string
-  youtube?: string
-  discord?: string
-  reddit?: string
-}
-
-/**
- * Platform installation information
- * Based on: /manifests/$schemas/ref/product.schema.json#$defs/platformElement
- */
-export interface ManifestPlatformElement {
-  os: 'macOS' | 'Windows' | 'Linux'
-  installCommand?: string | null
-  launchCommand?: string | null
-  installPath?: string | null
+export interface ManifestPricingTier {
+  name: string
+  value: number | null
+  currency: 'USD' | 'CNY' | 'EUR' | null
+  per: string | null
+  category: string
 }
 
 /**
@@ -152,129 +117,80 @@ export interface ManifestRelatedProduct {
 }
 
 /**
- * GitHub metadata
- * Based on: /manifests/$schemas/ref/github.schema.json
+ * Platform installation information
+ * Based on: /manifests/$schemas/ref/app.schema.json
  */
-export interface ManifestGithub {
-  data?: string | null
-  commit?: string | null
-  commitMessage?: string | null
-  branch?: string | null
-  isByAnthropic?: boolean | null
+export interface ManifestPlatformElement {
+  os: 'macOS' | 'Windows' | 'Linux'
+  installPath: string | null
+  installCommand?: string | null
+  launchCommand?: string | null
 }
 
 /**
- * Vendor information
- * Based on: /manifests/$schemas/ref/vendor.schema.json
- */
-export interface ManifestVendorBase {
-  id: string
-  name: string
-  description: string
-  websiteUrl?: string
-  docsUrl?: string
-  location?: string | null
-  foundingYear?: number | null
-}
-
-/**
- * Collection item reference
- * Based on: /manifests/$schemas/ref/collection-item.schema.json
- */
-export interface ManifestCollectionItem {
-  type: 'cli' | 'ide' | 'extension'
-  productId: string
-  description?: string
-}
-
-// =============================================================================
-// SECTION 2: Product Types (CLI, IDE, etc.)
-// =============================================================================
-
-/**
- * Base Product - Common properties for all product types
+ * Base Product - Common properties for CLI, IDE, and Extension
  * Based on: /manifests/$schemas/ref/product.schema.json
  * Extends: ManifestVendorEntity
  */
 export interface ManifestBaseProduct extends ManifestVendorEntity {
   latestVersion: string
   githubUrl: string | null
-  license: string // SPDX License Identifier or 'Proprietary'
-  pricing: ManifestPricingTier[]
-  resourceUrls: ManifestResourceUrls
-  communityUrls: ManifestCommunityUrls
-  relatedProducts: ManifestRelatedProduct[]
-  platforms?: ManifestPlatformElement[]
-  github?: ManifestGithub
-}
-
-/**
- * IDE (Integrated Development Environment)
- * Based on: /manifests/$schemas/ides.schema.json
- * Extends: ManifestVendorEntity
- */
-export interface ManifestIDE extends ManifestVendorEntity {
-  latestVersion: string
-  githubUrl: string | null
   license: string
   pricing: ManifestPricingTier[]
   resourceUrls: ManifestResourceUrls
   communityUrls: ManifestCommunityUrls
   relatedProducts: ManifestRelatedProduct[]
-  platforms: ManifestPlatformElement[]
-  // Legacy fields that may exist in data
-  cli?: string | null
-  install?: string | null
-  launch?: string | null
 }
+
+/**
+ * Base App - Common properties for CLI and IDE
+ * Based on: /manifests/$schemas/ref/app.schema.json
+ * Extends: ManifestBaseProduct
+ */
+export interface ManifestBaseApp extends ManifestBaseProduct {
+  platforms: ManifestPlatformElement[]
+  installCommand?: string | null
+  launchCommand?: string | null
+}
+
+// =============================================================================
+// SECTION 2: Product Types (CLI, IDE, Extension)
+// =============================================================================
 
 /**
  * CLI (Command Line Interface)
- * Based on: /manifests/$schemas/clis.schema.json
- * Extends: ManifestVendorEntity
+ * Based on: /manifests/$schemas/cli.schema.json
+ * Extends: ManifestBaseApp
  */
-export interface ManifestCLI extends ManifestVendorEntity {
-  latestVersion: string
-  githubUrl: string | null
-  license: string
-  pricing: ManifestPricingTier[]
-  resourceUrls: ManifestResourceUrls
-  communityUrls: ManifestCommunityUrls
-  relatedProducts: ManifestRelatedProduct[]
-  platforms: ManifestPlatformElement[]
-  // Legacy fields that may exist in data
-  ide?: string | null
-  install?: string | null
-  launch?: string | null
+export interface ManifestCLI extends ManifestBaseApp {}
+
+/**
+ * IDE (Integrated Development Environment)
+ * Based on: /manifests/$schemas/ide.schema.json
+ * Extends: ManifestBaseApp
+ */
+export interface ManifestIDE extends ManifestBaseApp {}
+
+/**
+ * IDE Support information for extensions
+ * Based on: /manifests/$schemas/extension.schema.json#$defs/ideSupport
+ */
+export interface ManifestIDESupport {
+  ideId: 'vscode' | 'jetbrains' | 'cursor' | 'windsurf' | 'trae' | 'zed'
+  marketplaceUrl: string | null
+  installUri: string | null
 }
 
 /**
  * Extension
- * Based on: /manifests/$schemas/extensions.schema.json
- * Extends: ManifestApp
+ * Based on: /manifests/$schemas/extension.schema.json
+ * Extends: ManifestBaseProduct
  */
-export interface ManifestExtension extends ManifestApp {
-  vendor: string
-  type: 'cli' | 'ide'
-  extends: string // Type of extension
-  latestVersion: string
-  license: string
-  pricing: ManifestPricingTier[]
-  resourceUrls: ManifestResourceUrls
-  communityUrls: ManifestCommunityUrls
-  relatedProducts: ManifestRelatedProduct[]
+export interface ManifestExtension extends ManifestBaseProduct {
+  supportedIdes: ManifestIDESupport[]
   platforms?: ManifestPlatformElement[]
-  // Legacy fields
-  install?: string | null
-  launch?: string | null
-  // Extension-specific fields
-  supportedIdes?: Array<{
-    ideId: string
-    marketplaceUrl?: string | null
-    installUri?: string | null
-    installCommand?: string | null
-  }>
-  githubUrl?: string | null
+  installCommand?: string | null
+  launchCommand?: string | null
 }
 
 // =============================================================================
@@ -282,116 +198,147 @@ export interface ManifestExtension extends ManifestApp {
 // =============================================================================
 
 /**
- * Large Language Model for Coding
- * Based on: /manifests/$schemas/models.schema.json
+ * Token-based pricing information for API usage
+ * Based on: /manifests/$schemas/model.schema.json
  */
-export interface ManifestModel {
-  name: string
-  vendor: string
-  id: string
-  description: string
-  translations: ManifestTranslations
-  websiteUrl: string | null
-  docsUrl?: string | null
-  verified?: boolean
-  size: string | null
+export interface ManifestTokenPricing {
+  input: number | null
+  output: number | null
+  cache: number | null
+  [key: string]: number | null
+}
+
+/**
+ * Benchmark scores
+ * Based on: /manifests/$schemas/model.schema.json
+ */
+export interface ManifestBenchmarks {
+  sweBench: number | null
+  terminalBench: number | null
+  mmmu: number | null
+  mmmuPro: number | null
+  webDevArena: number | null
+  sciCode: number | null
+  liveCodeBench: number | null
+  [key: string]: number | null
+}
+
+/**
+ * Large Language Model for Coding
+ * Based on: /manifests/$schemas/model.schema.json
+ * Extends: ManifestVendorEntity
+ */
+export interface ManifestModel extends ManifestVendorEntity {
+  size: string
   contextWindow: number
   maxOutput: number
-  tokenPricing?: {
-    input?: number | null
-    output?: number | null
-    cache?: number | null
-  } | null
-  platformUrls?: {
-    huggingface?: string | null
-    artificialAnalysis?: string | null
-    openrouter?: string | null
-  }
-  releaseDate?: string | null
-  inputModalities?: ('image' | 'text' | 'file')[]
-  capabilities?: ('function-calling' | 'tool-choice' | 'structured-outputs' | 'reasoning')[]
-  benchmarks?: {
-    sweBench?: number | null
-    terminalBench?: number | null
-    mmmu?: number | null
-    mmmuPro?: number | null
-    webDevArena?: number | null
-    sciCode?: number | null
-    liveCodeBench?: number | null
-  }
-  pricing?: ManifestPricingTier[]
-  [key: string]: unknown
+  tokenPricing: ManifestTokenPricing
+  releaseDate: string | null
+  inputModalities: ('image' | 'text' | 'file')[]
+  capabilities: ('function-calling' | 'tool-choice' | 'structured-outputs' | 'reasoning')[]
+  benchmarks: ManifestBenchmarks
+  platformUrls: ManifestPlatformUrls
 }
 
 /**
  * LLM API Provider
- * Based on: /manifests/$schemas/providers.schema.json
+ * Based on: /manifests/$schemas/provider.schema.json
  * Extends: ManifestVendorEntity
  */
 export interface ManifestProvider extends ManifestVendorEntity {
-  // verified is inherited from ManifestVendorEntity -> ManifestEntity (required boolean)
-  type?: string
-  applyKeyUrl?: string
-  platformUrls?: {
-    huggingface?: string | null
-    artificialAnalysis?: string | null
-    openrouter?: string | null
-  }
-  communityUrls?: ManifestCommunityUrls
-  githubUrl?: string | null
-  pricing?: ManifestPricingTier[]
-  [key: string]: unknown
+  type: 'foundation-model-provider' | 'model-service-provider'
+  applyKeyUrl: string | null
+  platformUrls: ManifestPlatformUrls
+  communityUrls: ManifestCommunityUrls
 }
 
 /**
- * Complete Vendor Information
- * Based on: /manifests/$schemas/vendors.schema.json
- * Extends: ManifestVendorBase
+ * Vendor
+ * Based on: /manifests/$schemas/vendor.schema.json
+ * Extends: ManifestEntity
  */
-export interface ManifestVendor extends ManifestVendorBase {
-  verified?: boolean
-  communityUrls?: ManifestCommunityUrls
-  products?: {
-    type: 'cli' | 'ide' | 'extension'
-    productId: string
-  }[]
-  [key: string]: unknown
-}
-
-/**
- * Collection of Related Products
- * Based on: /manifests/$schemas/collections.schema.json
- */
-export interface ManifestCollection {
-  title: string
-  description: string
-  extractedDate: string
-  translations?: {
-    [locale: string]: {
-      title?: string
-      description?: string
-    }
-  }
-  items: ManifestCollectionItem[]
+export interface ManifestVendor extends ManifestEntity {
+  docsUrl?: string | null
+  communityUrls: ManifestCommunityUrls
 }
 
 // =============================================================================
-// SECTION 4: Manifest Array Types (for JSON file imports)
+// SECTION 4: Collection Types
+// =============================================================================
+
+/**
+ * Collection item (name, URL, description with translations)
+ * Based on: /manifests/$schemas/collections.schema.json#$defs/collectionItem
+ */
+export interface ManifestCollectionItem {
+  name: string
+  url: string
+  description: string
+  translations: ManifestTranslations
+}
+
+/**
+ * Collection subsection (title, translations, items)
+ * Based on: /manifests/$schemas/collections.schema.json#$defs/collectionSubSection
+ */
+export interface ManifestCollectionSubSection {
+  title: string
+  translations: ManifestTranslations
+  items: ManifestCollectionItem[]
+}
+
+/**
+ * Collection section (title, description, translations, subsections)
+ * Based on: /manifests/$schemas/collections.schema.json#$defs/collectionSection
+ */
+export interface ManifestCollectionSection {
+  title: string
+  description: string
+  translations: ManifestTranslations
+  sections: ManifestCollectionSubSection[]
+}
+
+/**
+ * Collections - curated collections of resources
+ * Based on: /manifests/$schemas/collections.schema.json
+ */
+export interface ManifestCollections {
+  specifications: ManifestCollectionSection
+  articles: ManifestCollectionSection
+  tools: ManifestCollectionSection
+  features: ManifestCollectionSection
+}
+
+// =============================================================================
+// SECTION 5: GitHub Stars Data
+// =============================================================================
+
+/**
+ * GitHub stars data for products
+ * Based on: /manifests/$schemas/github-stars.schema.json
+ */
+export interface ManifestGitHubStars {
+  extensions: { [productId: string]: number | null }
+  clis: { [productId: string]: number | null }
+  ides: { [productId: string]: number | null }
+}
+
+// =============================================================================
+// SECTION 6: Manifest Array Types (for JSON file imports)
 // =============================================================================
 
 /**
  * Manifest file imports return arrays of these types
  */
-export type ManifestIDEArray = ManifestIDE[]
 export type ManifestCLIArray = ManifestCLI[]
+export type ManifestIDEArray = ManifestIDE[]
 export type ManifestExtensionArray = ManifestExtension[]
 export type ManifestModelArray = ManifestModel[]
 export type ManifestProviderArray = ManifestProvider[]
 export type ManifestVendorArray = ManifestVendor[]
-export type ManifestCollectionArray = ManifestCollection[]
 
 // =============================================================================
-// SECTION 5: Utility Types
+// SECTION 7: Utility Types
 // =============================================================================
 
 /**
@@ -407,6 +354,8 @@ export type ManifestEntityType =
   | ManifestVendorEntity
   | ManifestVendor
   | ManifestProductType
+  | ManifestModel
+  | ManifestProvider
 
 /**
  * Type guard to check if an object is a ManifestEntity
@@ -421,7 +370,7 @@ export function isManifestEntity(obj: unknown): obj is ManifestEntity {
  * Type guard to check if an object is a ManifestVendorEntity
  */
 export function isManifestVendorEntity(obj: unknown): obj is ManifestVendorEntity {
-  return isManifestEntity(obj) && 'vendor' in obj
+  return isManifestEntity(obj) && 'vendor' in obj && 'docsUrl' in obj
 }
 
 /**
@@ -435,6 +384,34 @@ export function isManifestBaseProduct(obj: unknown): obj is ManifestBaseProduct 
     'license' in obj &&
     'pricing' in obj &&
     'resourceUrls' in obj &&
+    'communityUrls' in obj &&
+    'relatedProducts' in obj
+  )
+}
+
+/**
+ * Type guard to check if an object is a ManifestModel
+ */
+export function isManifestModel(obj: unknown): obj is ManifestModel {
+  return (
+    isManifestVendorEntity(obj) &&
+    'size' in obj &&
+    'contextWindow' in obj &&
+    'maxOutput' in obj &&
+    'tokenPricing' in obj &&
+    'benchmarks' in obj
+  )
+}
+
+/**
+ * Type guard to check if an object is a ManifestProvider
+ */
+export function isManifestProvider(obj: unknown): obj is ManifestProvider {
+  return (
+    isManifestVendorEntity(obj) &&
+    'type' in obj &&
+    'applyKeyUrl' in obj &&
+    'platformUrls' in obj &&
     'communityUrls' in obj
   )
 }
