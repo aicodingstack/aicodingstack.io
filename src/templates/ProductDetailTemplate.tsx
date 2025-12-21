@@ -1,12 +1,6 @@
 import { getTranslations } from 'next-intl/server'
-import { BackToNavigation } from '@/components/controls/BackToNavigation'
-import { Breadcrumb } from '@/components/controls/Breadcrumb'
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import { JsonLd } from '@/components/JsonLd'
 import {
   ProductCommands,
-  ProductHero,
   ProductLinks,
   ProductPricing,
   RelatedProducts,
@@ -18,6 +12,7 @@ import { translateLicenseText } from '@/lib/license'
 import { generateSoftwareDetailSchema } from '@/lib/metadata/schemas'
 import { transformCommunityUrls, transformResourceUrls } from '@/lib/product-utils'
 import type { ManifestCLI, ManifestExtension, ManifestIDE } from '@/types/manifests'
+import { VendorEntityDetailTemplate } from './entity/VendorEntityDetailTemplate'
 
 export interface ProductDetailTemplateProps {
   // Product data
@@ -104,67 +99,63 @@ export async function ProductDetailTemplate({
   // Fetch related products
   const relatedProducts = await getRelatedProducts(product.relatedProducts || [], locale)
 
-  // Build ProductHero props
-  const heroProps = {
-    name: product.name,
-    description: product.description,
-    vendor: product.vendor,
-    category: (productType === 'ide' ? 'IDE' : productType === 'cli' ? 'CLI' : 'IDE') as
-      | 'CLI'
-      | 'IDE'
-      | 'MCP'
-      | 'PROVIDER'
-      | 'MODEL'
-      | 'VENDOR',
-    categoryLabel: translations.categoryLabel,
-    verified: product.verified ?? false,
-    latestVersion: product.latestVersion,
-    license: product.license,
-    githubStars: getGithubStars(category, product.id),
-    websiteUrl,
-    docsUrl,
-    downloadUrl,
-    labels: translations.productHero,
-
-    // CLI/IDE: use platforms
-    ...('platforms' in product &&
-      product.platforms && {
-        platforms: product.platforms.map(p => p.os),
-      }),
-
-    // Extension: use additionalInfo with supportedIdes
-    ...('supportedIdes' in product &&
-      product.supportedIdes &&
-      product.supportedIdes.length > 0 && {
-        additionalInfo: [
-          {
-            label: translations.productHero.supportedIdes || 'Supported IDEs',
-            value: product.supportedIdes.map(ide => ide.ideId).join(', '),
-          },
-        ],
-      }),
-  }
+  // Build category for badge
+  const categoryBadge = productType === 'ide' ? 'IDE' : productType === 'cli' ? 'CLI' : 'IDE'
 
   // Determine install/launch commands
   const installCommand =
-    productType === 'extension' && 'supportedIdes' in product
-      ? product.supportedIdes?.[0]?.installCommand || product.install || undefined
-      : 'install' in product
-        ? product.install || undefined
+    productType === 'extension' && 'installCommand' in product
+      ? (product as ManifestExtension).installCommand || undefined
+      : 'installCommand' in product
+        ? (product as ManifestIDE | ManifestCLI).installCommand || undefined
         : undefined
 
-  const launchCommand = 'launch' in product && product.launch ? product.launch : undefined
+  const launchCommand =
+    'launchCommand' in product
+      ? (product as ManifestIDE | ManifestCLI | ManifestExtension).launchCommand || undefined
+      : undefined
 
   return (
-    <>
-      <JsonLd data={softwareApplicationSchema} />
-      <Header />
-
-      <Breadcrumb items={breadcrumbItems} />
-
-      {/* Hero Section */}
-      <ProductHero {...heroProps} />
-
+    <VendorEntityDetailTemplate
+      entity={
+        {
+          ...product,
+          docsUrl: product.docsUrl ?? null,
+        } as ManifestIDE | ManifestCLI
+      }
+      locale={locale}
+      schema={softwareApplicationSchema}
+      breadcrumbs={breadcrumbItems}
+      backToHref={`/${category}`}
+      backToTitle={translations.allProductsLabel}
+      productHero={{
+        categoryLabel: translations.categoryLabel,
+        category: categoryBadge,
+        latestVersion: product.latestVersion,
+        license: product.license,
+        githubStars: getGithubStars(category, product.id),
+        websiteUrl,
+        docsUrl,
+        downloadUrl,
+        labels: translations.productHero,
+        // CLI/IDE: use platforms
+        ...('platforms' in product &&
+          product.platforms && {
+            platforms: product.platforms.map(p => p.os),
+          }),
+        // Extension: use additionalInfo with supportedIdes
+        ...('supportedIdes' in product &&
+          product.supportedIdes &&
+          product.supportedIdes.length > 0 && {
+            additionalInfo: [
+              {
+                label: translations.productHero.supportedIdes || 'Supported IDEs',
+                value: product.supportedIdes.map(ide => ide.ideId).join(', '),
+              },
+            ],
+          }),
+      }}
+    >
       {/* Related Products */}
       {relatedProducts.length > 0 && <RelatedProducts products={relatedProducts} />}
 
@@ -176,11 +167,6 @@ export async function ProductDetailTemplate({
 
       {/* Commands */}
       <ProductCommands install={installCommand} launch={launchCommand} />
-
-      {/* Navigation */}
-      <BackToNavigation href={`/${category}`} title={translations.allProductsLabel} />
-
-      <Footer />
-    </>
+    </VendorEntityDetailTemplate>
   )
 }
