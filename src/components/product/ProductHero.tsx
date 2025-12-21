@@ -40,9 +40,9 @@ export interface ProductHeroProps {
   // Links
   websiteUrl?: string
   githubUrl?: string
-  docsUrl?: string
+  docsUrl?: string | null
   downloadUrl?: string
-  applyKeyUrl?: string // For providers
+  applyKeyUrl?: string | null // For providers
 
   // Additional URLs (for models)
   additionalUrls?: {

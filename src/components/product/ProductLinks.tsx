@@ -16,6 +16,7 @@ export interface CommunityUrls {
   youtube?: string
   discord?: string
   reddit?: string
+  blog?: string
 }
 
 export interface ProductLinksProps {
@@ -46,6 +47,7 @@ export function ProductLinks({ resourceUrls, communityUrls }: ProductLinksProps)
     'youtube',
     'discord',
     'reddit',
+    'blog',
   ] as const
 
   // Generate link configurations for resourceUrls by iterating over keys
