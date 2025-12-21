@@ -79,7 +79,9 @@ export default function ExtensionsPageClient({ locale }: Props) {
     if (platformFilters.length > 0) {
       result = result.filter(extension => {
         const ideList = extension.supportedIdes?.map(ideSupport => ideSupport.ideId) || []
-        return platformFilters.some(ide => ideList.includes(ide))
+        return platformFilters.some(ide =>
+          ideList.includes(ide as 'vscode' | 'jetbrains' | 'cursor' | 'windsurf' | 'trae' | 'zed')
+        )
       })
     }
 
