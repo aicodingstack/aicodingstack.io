@@ -1,3 +1,4 @@
+npm i
 npx lint-staged
 npm run check
 npm run test:validate
