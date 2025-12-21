@@ -468,6 +468,19 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
         },
         items: [
           {
+            name: 'Agent Skills',
+            url: 'https://agentskills.io',
+            description:
+              "Modular capabilities that extend Agent's functionality through filesystem-based resources containing instructions, metadata, and optional scripts, enabling domain-specific expertise and workflows",
+            translations: {
+              'zh-Hans': {
+                name: 'Agent 技能',
+                description:
+                  '模块化能力，通过基于文件系统的资源（包含指令、元数据和可选脚本）扩展 Agent 的功能，实现领域专业知识和工作流',
+              },
+            },
+          },
+          {
             name: 'Model Context Protocol (MCP)',
             url: 'https://modelcontextprotocol.io',
             description:
@@ -501,19 +514,6 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
           },
         },
         items: [
-          {
-            name: 'Agent Skills',
-            url: 'https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview',
-            description:
-              "Modular capabilities that extend Agent's functionality through filesystem-based resources containing instructions, metadata, and optional scripts, enabling domain-specific expertise and workflows",
-            translations: {
-              'zh-Hans': {
-                name: 'Agent 技能',
-                description:
-                  '模块化能力，通过基于文件系统的资源（包含指令、元数据和可选脚本）扩展 Agent 的功能，实现领域专业知识和工作流',
-              },
-            },
-          },
           {
             name: 'Slash Commands',
             url: 'https://cursor.com/docs/agent/chat/commands',
