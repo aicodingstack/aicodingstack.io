@@ -69,6 +69,20 @@
     "title": "IDEs"
   },
   "modelDetail": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "Leistungsanalyse anzeigen",
+        "title": "Artificial Analysis"
+      },
+      "huggingface": {
+        "description": "Auf HuggingFace anzeigen",
+        "title": "HuggingFace"
+      },
+      "openrouter": {
+        "description": "Über OpenRouter zugänglich",
+        "title": "OpenRouter"
+      }
+    },
     "allModels": "Alle Modelle",
     "backTo": "Zurück zu",
     "breadcrumb": {
@@ -77,6 +91,7 @@
     },
     "categoryLabel": "@:components.productHero.categories.MODEL",
     "documentation": "@:components.productHero.documentation",
+    "findOnAiPlatforms": "Auf KI-Plattformen finden",
     "labels": {
       "artificialAnalysis": "Artificial Analysis",
       "context": "Kontext",

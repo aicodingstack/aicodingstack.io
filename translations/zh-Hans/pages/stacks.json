@@ -69,6 +69,20 @@
     "title": "IDE"
   },
   "modelDetail": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "查看性能分析",
+        "title": "Artificial Analysis"
+      },
+      "huggingface": {
+        "description": "在 HuggingFace 查看",
+        "title": "HuggingFace"
+      },
+      "openrouter": {
+        "description": "通过 OpenRouter 访问",
+        "title": "OpenRouter"
+      }
+    },
     "allModels": "所有模型",
     "backTo": "返回",
     "breadcrumb": {
@@ -77,6 +91,7 @@
     },
     "categoryLabel": "@:components.productHero.categories.MODEL",
     "documentation": "@:components.productHero.documentation",
+    "findOnAiPlatforms": "在 AI 平台上查找",
     "labels": {
       "artificialAnalysis": "Artificial Analysis",
       "context": "上下文",

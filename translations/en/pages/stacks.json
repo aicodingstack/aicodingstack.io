@@ -69,6 +69,20 @@
     "title": "@:shared.stacks.ides"
   },
   "modelDetail": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "View performance analysis",
+        "title": "@:shared.platforms.artificialAnalysis"
+      },
+      "huggingface": {
+        "description": "View on HuggingFace",
+        "title": "@:shared.platforms.huggingface"
+      },
+      "openrouter": {
+        "description": "Access via OpenRouter",
+        "title": "@:shared.platforms.openrouter"
+      }
+    },
     "allModels": "@:shared.stacks.allModels",
     "backTo": "@:shared.actions.backTo",
     "breadcrumb": {
@@ -77,6 +91,7 @@
     },
     "categoryLabel": "@:components.productHero.categories.MODEL",
     "documentation": "@:components.productHero.documentation",
+    "findOnAiPlatforms": "Find on AI Platforms",
     "labels": {
       "artificialAnalysis": "@:shared.platforms.artificialAnalysis",
       "context": "Context",

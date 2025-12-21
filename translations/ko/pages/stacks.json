@@ -69,6 +69,20 @@
     "title": "IDE"
   },
   "modelDetail": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "성능 분석 보기",
+        "title": "Artificial Analysis"
+      },
+      "huggingface": {
+        "description": "HuggingFace에서 보기",
+        "title": "HuggingFace"
+      },
+      "openrouter": {
+        "description": "OpenRouter를 통해 액세스",
+        "title": "OpenRouter"
+      }
+    },
     "allModels": "모든 모델",
     "backTo": "돌아가기",
     "breadcrumb": {
@@ -77,6 +91,7 @@
     },
     "categoryLabel": "@:components.productHero.categories.MODEL",
     "documentation": "@:components.productHero.documentation",
+    "findOnAiPlatforms": "AI 플랫폼에서 찾기",
     "labels": {
       "artificialAnalysis": "Artificial Analysis",
       "context": "컨텍스트",
