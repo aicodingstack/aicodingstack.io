@@ -33,6 +33,12 @@ When creating or modifying any page, module, or data:
 - Reuse existing components, functions, and translation keys
 - Create shared utilities when patterns emerge
 
+### Type Safety & Schema Alignment
+- **Manifest type definitions:** Always ensure that `src/types/manifests.ts` stays in one-to-one correspondence with the JSON schemas in `manifests/$schemas/`
+- When modifying schema files, update the corresponding TypeScript types accordingly
+- When adding new types, verify they match the schema structure exactly
+- Maintain consistency between schema definitions and type definitions to prevent runtime errors
+
 ## Metadata & SEO
 
 - **File-based OG images:** Use `opengraph-image.tsx` files for all routes, NOT code-based image paths

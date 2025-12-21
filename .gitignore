@@ -25,6 +25,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 scripts/validated-urls.log
+scripts/temp
 
 # local env files
 .env*.local
@@ -53,3 +54,4 @@ __pycache__/
 
 #prompts
 .prompts
+data/changelogs.csv
