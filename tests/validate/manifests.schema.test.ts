@@ -77,7 +77,7 @@ function loadBaseSchemas(ajv: ReturnType<typeof createAjv>, schemasDir: string) 
       continue
     }
     const schema = readJsonFile(schemaPath)
-    ajv.addSchema(schema, name)
+    ajv.addSchema(schema as object, name)
   }
 }
 
@@ -99,7 +99,7 @@ function resolveRelativeRefs(obj: unknown, baseDir: string, ajv: ReturnType<type
       const refSchema = readJsonFile(refPath)
       const refId = path.basename(refPath)
       if (!ajv.getSchema(refId)) {
-        ajv.addSchema(refSchema, refId)
+        ajv.addSchema(refSchema as object, refId)
       }
       record.$ref = refId
     }

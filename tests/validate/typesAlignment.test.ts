@@ -88,9 +88,9 @@ function parseTypeScriptInterface(
     const trimmed = line.trim()
     const fieldMatch = trimmed.match(/^(\w+)(\?)?\s*:\s*(.+)$/)
     if (fieldMatch) {
-      const name = fieldMatch[1]
+      const name = fieldMatch[1] as string
       const optional = fieldMatch[2] === '?'
-      const type = fieldMatch[3].trim()
+      const type = fieldMatch[3]?.trim() ?? 'unknown'
       fields[name] = { optional, type }
     }
   }

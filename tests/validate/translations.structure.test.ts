@@ -131,14 +131,17 @@ function validateTranslationStructures(rootDir: string): string[] {
     structures.set(locale, getLocaleStructure(translationsDir, locale))
   }
 
-  const referenceLocale = locales[0]
+  const referenceLocale = locales[0]!
   const reference = structures.get(referenceLocale)
   if (!reference) return failures
 
   for (let i = 1; i < locales.length; i++) {
-    const locale = locales[i]
+    const locale = locales[i]!
     const current = structures.get(locale)
-    if (!current) continue
+    if (!current) {
+      failures.push(`[${locale}] structure not found`)
+      continue
+    }
 
     const fileDiff = diffSets(new Set(reference.fileList), new Set(current.fileList))
     if (fileDiff.onlyInA.length > 0 || fileDiff.onlyInB.length > 0) {
