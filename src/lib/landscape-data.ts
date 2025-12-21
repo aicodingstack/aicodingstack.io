@@ -76,7 +76,6 @@ export interface ExtensionIDECompatibility {
     ideName: string
     marketplaceUrl?: string | null
     installUri?: string | null
-    installCommand?: string | null
   }>
 }
 
@@ -206,7 +205,7 @@ function providerToProduct(provider: ManifestProvider): LandscapeProduct {
     description: provider.description,
     websiteUrl: provider.websiteUrl,
     docsUrl: provider.docsUrl || undefined,
-    githubUrl: provider.githubUrl,
+    githubUrl: null, // Providers don't have githubUrl in schema
     githubStars: null, // Providers don't have GitHub stars tracking
     path: `/model-providers/${provider.id}`,
   }
@@ -382,7 +381,6 @@ export function buildExtensionIDECompatibility(): ExtensionIDECompatibility[] {
             ideName: ide.name,
             marketplaceUrl: supported.marketplaceUrl,
             installUri: supported.installUri,
-            installCommand: supported.installCommand,
           }
         })
         .filter((item): item is NonNullable<typeof item> => item !== null)
