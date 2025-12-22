@@ -172,6 +172,9 @@ const withMDX = createMDX({
 export default withNextIntl(withBundleAnalyzer(withMDX(nextConfig)))
 
 // added by create cloudflare to enable calling `getCloudflareContext()` in `next dev`
-import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare'
-
-initOpenNextCloudflareForDev()
+if (process.env.NODE_ENV === 'development') {
+  // eslint-disable-next-line @typescript-eslint/no-floating-promises
+  import('@opennextjs/cloudflare').then(({ initOpenNextCloudflareForDev }) => {
+    initOpenNextCloudflareForDev()
+  })
+}
