@@ -1,11 +1,21 @@
 import { notFound } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
+import { BackToNavigation } from '@/components/navigation/BackToNavigation'
+import { Breadcrumb } from '@/components/navigation/Breadcrumb'
+import { ProductCommands } from '@/components/product/ProductCommands'
+import { ProductHero } from '@/components/product/ProductHero'
+import { ProductLinks } from '@/components/product/ProductLinks'
+import { ProductPricing } from '@/components/product/ProductPricing'
+import { RelatedProducts } from '@/components/product/RelatedProducts'
 import type { Locale } from '@/i18n/config'
-import { getIDE } from '@/lib/data/fetchers'
+import { PageLayout } from '@/layouts/PageLayout'
+import { getIDE, getRelatedProducts } from '@/lib/data/fetchers'
 import { idesData as ides } from '@/lib/generated'
+import { getGithubStars } from '@/lib/generated/github-stars'
 import { translateLicenseText } from '@/lib/license'
 import { generateSoftwareDetailMetadata } from '@/lib/metadata'
-import { ProductDetailTemplate } from '@/templates'
+import { generateSoftwareDetailSchema } from '@/lib/metadata/schemas'
+import { transformCommunityUrls, transformResourceUrls } from '@/lib/product-utils'
 
 export const revalidate = 3600
 
@@ -61,20 +71,60 @@ export default async function IDEPage({
   const t = await getTranslations({ locale, namespace: 'pages.ideDetail' })
   const tGlobal = await getTranslations({ locale })
 
+  // Transform URLs
+  const websiteUrl = ide.websiteUrl || ide.resourceUrls?.download || undefined
+  const docsUrl = ide.docsUrl || undefined
+  const downloadUrl = ide.resourceUrls?.download || undefined
+
+  const resourceUrls = transformResourceUrls(ide.resourceUrls)
+  const communityUrls = transformCommunityUrls(ide.communityUrls)
+
+  // Generate JSON-LD schema
+  const schema = await generateSoftwareDetailSchema({
+    product: {
+      name: ide.name,
+      description: ide.description,
+      vendor: ide.vendor,
+      websiteUrl,
+      downloadUrl,
+      version: ide.latestVersion,
+      platforms: ide.platforms,
+      pricing: ide.pricing,
+      license: ide.license ? translateLicenseText(ide.license, tGlobal) : undefined,
+    },
+    category: 'ides',
+    locale: locale as Locale,
+  })
+
+  // Fetch related products
+  const relatedProducts = await getRelatedProducts(ide.relatedProducts || [], locale as Locale)
+
+  // Breadcrumb items
+  const breadcrumbItems = [
+    { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tGlobal('shared.stacks.ides'), href: '/ides' },
+    { name: ide.name, href: `ides/${ide.id}` },
+  ]
+
   return (
-    <ProductDetailTemplate
-      product={ide}
-      productType="ide"
-      locale={locale as Locale}
-      category="ides"
-      translations={{
-        categoryLabel: t('categoryLabel'),
-        allProductsLabel: t('allIDEs'),
-        breadcrumbs: {
-          home: tGlobal('shared.common.aiCodingStack'),
-          category: tGlobal('shared.stacks.ides'),
-        },
-        productHero: {
+    <PageLayout schema={schema}>
+      <Breadcrumb items={breadcrumbItems} />
+
+      <ProductHero
+        name={ide.name}
+        description={ide.description}
+        vendor={ide.vendor}
+        category="IDE"
+        categoryLabel={t('categoryLabel')}
+        verified={ide.verified ?? false}
+        latestVersion={ide.latestVersion}
+        license={ide.license}
+        githubStars={getGithubStars('ides', ide.id)}
+        platforms={ide.platforms?.map(p => p.os)}
+        websiteUrl={websiteUrl}
+        docsUrl={docsUrl}
+        downloadUrl={downloadUrl}
+        labels={{
           vendor: t('vendor'),
           version: t('version'),
           license: t('license'),
@@ -83,8 +133,18 @@ export default async function IDEPage({
           visitWebsite: t('visitWebsite'),
           documentation: t('documentation'),
           download: t('download'),
-        },
-      }}
-    />
+        }}
+      />
+
+      {relatedProducts.length > 0 && <RelatedProducts products={relatedProducts} />}
+
+      <ProductPricing pricing={ide.pricing} pricingUrl={resourceUrls.pricing} />
+
+      <ProductLinks resourceUrls={resourceUrls} communityUrls={communityUrls} />
+
+      <ProductCommands install={ide.installCommand} launch={ide.launchCommand} />
+
+      <BackToNavigation href="/ides" title={t('allIDEs')} />
+    </PageLayout>
   )
 }

@@ -1,11 +1,21 @@
 import { notFound } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
+import { BackToNavigation } from '@/components/navigation/BackToNavigation'
+import { Breadcrumb } from '@/components/navigation/Breadcrumb'
+import { ProductCommands } from '@/components/product/ProductCommands'
+import { ProductHero } from '@/components/product/ProductHero'
+import { ProductLinks } from '@/components/product/ProductLinks'
+import { ProductPricing } from '@/components/product/ProductPricing'
+import { RelatedProducts } from '@/components/product/RelatedProducts'
 import type { Locale } from '@/i18n/config'
-import { getExtension } from '@/lib/data/fetchers'
+import { PageLayout } from '@/layouts/PageLayout'
+import { getExtension, getRelatedProducts } from '@/lib/data/fetchers'
 import { extensionsData as extensions } from '@/lib/generated'
+import { getGithubStars } from '@/lib/generated/github-stars'
 import { translateLicenseText } from '@/lib/license'
 import { generateSoftwareDetailMetadata } from '@/lib/metadata'
-import { ProductDetailTemplate } from '@/templates'
+import { generateSoftwareDetailSchema } from '@/lib/metadata/schemas'
+import { transformCommunityUrls, transformResourceUrls } from '@/lib/product-utils'
 
 export const revalidate = 3600
 
@@ -66,30 +76,95 @@ export default async function ExtensionPage({
   const t = await getTranslations({ locale, namespace: 'pages.extensionDetail' })
   const tGlobal = await getTranslations({ locale })
 
+  // Transform URLs
+  const websiteUrl = extension.websiteUrl || extension.resourceUrls?.download || undefined
+  const docsUrl = extension.docsUrl || undefined
+  const downloadUrl = extension.resourceUrls?.download || undefined
+
+  const resourceUrls = transformResourceUrls(extension.resourceUrls)
+  const communityUrls = transformCommunityUrls(extension.communityUrls)
+
+  // Generate JSON-LD schema
+  const schema = await generateSoftwareDetailSchema({
+    product: {
+      name: extension.name,
+      description: extension.description,
+      vendor: extension.vendor,
+      websiteUrl,
+      downloadUrl,
+      version: extension.latestVersion,
+      platforms: extension.supportedIdes?.map(ide => ({ os: ide.ideId })),
+      pricing: extension.pricing,
+      license: extension.license ? translateLicenseText(extension.license, tGlobal) : undefined,
+    },
+    category: 'extensions',
+    locale: locale as Locale,
+    applicationSubCategory: 'AI Assistant',
+    compatibleWith: extension.supportedIdes?.map(ide => ide.ideId).join(', ') || undefined,
+  })
+
+  // Fetch related products
+  const relatedProducts = await getRelatedProducts(
+    extension.relatedProducts || [],
+    locale as Locale
+  )
+
+  // Build additional info for ProductHero (supported IDEs)
+  const additionalInfo =
+    extension.supportedIdes && extension.supportedIdes.length > 0
+      ? [
+          {
+            label: t('supportedIdes') || 'Supported IDEs',
+            value: extension.supportedIdes.map(ide => ide.ideId).join(', '),
+          },
+        ]
+      : undefined
+
+  // Breadcrumb items
+  const breadcrumbItems = [
+    { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tGlobal('shared.stacks.extensions'), href: '/extensions' },
+    { name: extension.name, href: `extensions/${extension.id}` },
+  ]
+
   return (
-    <ProductDetailTemplate
-      product={extension}
-      productType="extension"
-      locale={locale as Locale}
-      category="extensions"
-      translations={{
-        categoryLabel: t('categoryLabel'),
-        allProductsLabel: t('allExtensions'),
-        breadcrumbs: {
-          home: tGlobal('shared.common.aiCodingStack'),
-          category: tGlobal('shared.stacks.extensions'),
-        },
-        productHero: {
+    <PageLayout schema={schema}>
+      <Breadcrumb items={breadcrumbItems} />
+
+      <ProductHero
+        name={extension.name}
+        description={extension.description}
+        vendor={extension.vendor}
+        category="IDE"
+        categoryLabel={t('categoryLabel')}
+        verified={extension.verified ?? false}
+        latestVersion={extension.latestVersion}
+        license={extension.license}
+        githubStars={getGithubStars('extensions', extension.id)}
+        additionalInfo={additionalInfo}
+        websiteUrl={websiteUrl}
+        docsUrl={docsUrl}
+        downloadUrl={downloadUrl}
+        labels={{
           vendor: t('vendor'),
           version: t('version'),
           license: t('license'),
           stars: t('stars'),
-          supportedIdes: t('supportedIdes'),
           visitWebsite: t('visitWebsite'),
           documentation: t('documentation'),
           download: t('download'),
-        },
-      }}
-    />
+        }}
+      />
+
+      {relatedProducts.length > 0 && <RelatedProducts products={relatedProducts} />}
+
+      <ProductPricing pricing={extension.pricing} pricingUrl={resourceUrls.pricing} />
+
+      <ProductLinks resourceUrls={resourceUrls} communityUrls={communityUrls} />
+
+      <ProductCommands install={extension.installCommand} launch={extension.launchCommand} />
+
+      <BackToNavigation href="/extensions" title={t('allExtensions')} />
+    </PageLayout>
   )
 }

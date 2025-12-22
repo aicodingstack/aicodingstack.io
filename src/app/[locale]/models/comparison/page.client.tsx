@@ -3,9 +3,9 @@
 import { FileText, Github, Home, Twitter } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import ComparisonTable, { type ComparisonColumn } from '@/components/ComparisonTable'
-import { Breadcrumb } from '@/components/controls/Breadcrumb'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import { Breadcrumb } from '@/components/navigation/Breadcrumb'
 import { Link } from '@/i18n/navigation'
 import { modelsData as models } from '@/lib/generated'
 

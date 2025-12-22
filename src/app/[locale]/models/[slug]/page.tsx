@@ -1,10 +1,17 @@
 import { notFound } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
+import { ModelBenchmarks } from '@/components/ModelBenchmarks'
+import { ModelSpecifications } from '@/components/ModelSpecifications'
+import { BackToNavigation } from '@/components/navigation/BackToNavigation'
+import { Breadcrumb } from '@/components/navigation/Breadcrumb'
+import { PlatformLinks } from '@/components/PlatformLinks'
+import { ProductHero } from '@/components/product/ProductHero'
 import type { Locale } from '@/i18n/config'
+import { PageLayout } from '@/layouts/PageLayout'
 import { getModel } from '@/lib/data/fetchers'
 import { modelsData as models } from '@/lib/generated'
 import { generateModelDetailMetadata } from '@/lib/metadata'
-import { ModelDetailTemplate } from '@/templates'
+import { generateModelDetailSchema } from '@/lib/metadata/schemas'
 
 export const revalidate = 3600
 
@@ -62,38 +69,105 @@ export default async function ModelPage({
   const t = await getTranslations({ locale, namespace: 'pages.modelDetail' })
   const tGlobal = await getTranslations({ locale })
 
+  // Generate JSON-LD schema
+  const schema = await generateModelDetailSchema({
+    model: {
+      name: model.name,
+      description: model.description,
+      vendor: model.vendor,
+      websiteUrl: model.websiteUrl || undefined,
+      tokenPricing: model.tokenPricing
+        ? {
+            input: model.tokenPricing.input ?? undefined,
+            output: model.tokenPricing.output ?? undefined,
+            cache: model.tokenPricing.cache ?? undefined,
+          }
+        : undefined,
+    },
+    locale: locale as 'en' | 'zh-Hans' | 'de' | 'ko',
+  })
+
+  // Build additional info for ProductHero
+  const additionalInfo = [
+    model.size && { label: t('modelSize'), value: model.size },
+    { label: t('contextWindow'), value: `${model.contextWindow.toLocaleString()} tokens` },
+    { label: t('maxOutput'), value: `${model.maxOutput.toLocaleString()} tokens` },
+  ].filter(Boolean) as { label: string; value: string }[]
+
+  // Build platform links configuration
+  const platformLinks = [
+    {
+      key: 'huggingface',
+      title: t('aiPlatforms.huggingface.title'),
+      description: t('aiPlatforms.huggingface.description'),
+    },
+    {
+      key: 'artificialAnalysis',
+      title: t('aiPlatforms.artificialAnalysis.title'),
+      description: t('aiPlatforms.artificialAnalysis.description'),
+    },
+    {
+      key: 'openrouter',
+      title: t('aiPlatforms.openrouter.title'),
+      description: t('aiPlatforms.openrouter.description'),
+    },
+  ]
+
+  // Breadcrumb items
+  const breadcrumbItems = [
+    { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tGlobal('shared.stacks.models'), href: '/models' },
+    { name: model.name, href: `models/${model.id}` },
+  ]
+
   return (
-    <ModelDetailTemplate
-      model={model}
-      locale={locale}
-      breadcrumbs={[
-        { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-        { name: tGlobal('shared.stacks.models'), href: '/models' },
-        { name: model.name, href: `models/${model.id}` },
-      ]}
-      backToHref="/models"
-      backToTitle={t('allModels')}
-      translations={{
-        categoryLabel: t('categoryLabel'),
-        vendor: t('vendor'),
-        visitWebsite: t('visitWebsite'),
-        documentation: t('labels.documentation'),
-        platformLinksTitle: t('findOnAiPlatforms'),
-        huggingfaceTitle: t('aiPlatforms.huggingface.title'),
-        huggingfaceDesc: t('aiPlatforms.huggingface.description'),
-        artificialAnalysisTitle: t('aiPlatforms.artificialAnalysis.title'),
-        artificialAnalysisDesc: t('aiPlatforms.artificialAnalysis.description'),
-        openrouterTitle: t('aiPlatforms.openrouter.title'),
-        openrouterDesc: t('aiPlatforms.openrouter.description'),
-        title: t('specifications'),
-        modelSize: t('modelSize'),
-        contextWindow: t('contextWindow'),
-        maxOutput: t('maxOutput'),
-        pricing: t('pricing'),
-        input: 'Input',
-        output: 'Output',
-        cache: 'Cache',
-        benchmarks: {
+    <PageLayout schema={schema}>
+      <Breadcrumb items={breadcrumbItems} />
+
+      <ProductHero
+        name={model.name}
+        description={`by ${model.vendor}`}
+        vendor={model.vendor}
+        category="MODEL"
+        categoryLabel={t('categoryLabel')}
+        verified={model.verified ?? false}
+        additionalInfo={additionalInfo}
+        websiteUrl={model.websiteUrl || undefined}
+        docsUrl={model.docsUrl || undefined}
+        labels={{
+          vendor: t('vendor'),
+          visitWebsite: t('visitWebsite'),
+          documentation: t('labels.documentation'),
+        }}
+      />
+
+      {model.platformUrls && (
+        <PlatformLinks
+          platformUrls={model.platformUrls}
+          title={t('findOnAiPlatforms')}
+          links={platformLinks}
+          layout="horizontal"
+          gridCols="grid-cols-1 md:grid-cols-3"
+        />
+      )}
+
+      <ModelSpecifications
+        model={model}
+        translations={{
+          title: t('specifications'),
+          modelSize: t('modelSize'),
+          contextWindow: t('contextWindow'),
+          maxOutput: t('maxOutput'),
+          pricing: t('pricing'),
+          input: t('input'),
+          output: t('output'),
+          cache: t('cache'),
+        }}
+      />
+
+      <ModelBenchmarks
+        benchmarks={model.benchmarks}
+        translations={{
           title: t('benchmarks.title'),
           sweBench: t('benchmarks.sweBench'),
           sweBenchDesc: t('benchmarks.sweBenchDesc'),
@@ -109,8 +183,10 @@ export default async function ModelPage({
           sciCodeDesc: t('benchmarks.sciCodeDesc'),
           liveCodeBench: t('benchmarks.liveCodeBench'),
           liveCodeBenchDesc: t('benchmarks.liveCodeBenchDesc'),
-        },
-      }}
-    />
+        }}
+      />
+
+      <BackToNavigation href="/models" title={t('allModels')} />
+    </PageLayout>
   )
 }

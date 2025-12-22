@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server'
-import { BackToNavigation } from '@/components/controls/BackToNavigation'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import { BackToNavigation } from '@/components/navigation/BackToNavigation'
 import PageHeader from '@/components/PageHeader'
 import { buildVendorMatrix } from '@/lib/landscape-data'
 import { buildCanonicalUrl, buildOpenGraph, buildTitle, buildTwitterCard } from '@/lib/metadata'
