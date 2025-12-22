@@ -5,9 +5,9 @@ import Image from 'next/image'
 import { useParams } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { memo, useCallback, useEffect, useMemo, useState } from 'react'
-import { RankingMegaMenu } from '@/components/controls/RankingMegaMenu'
 import SearchDialog from '@/components/controls/SearchDialog'
-import { StackMegaMenu } from '@/components/controls/StackMegaMenu'
+import { RankingMegaMenu } from '@/components/navigation/RankingMegaMenu'
+import { StackMegaMenu } from '@/components/navigation/StackMegaMenu'
 import { Link } from '@/i18n/navigation'
 
 // Menu item configuration type
