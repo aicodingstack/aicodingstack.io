@@ -114,6 +114,9 @@
     "vendor": "@:components.productHero.vendor",
     "version": "@:components.productHero.version",
     "visitWebsite": "@:components.productHero.visitWebsite",
+    "input": "입력",
+    "output": "출력",
+    "cache": "캐시",
     "benchmarks": {
       "title": "성능 벤치마크",
       "sweBench": "SWE-bench Verified",
@@ -248,6 +251,37 @@
       "vendors": "벤더"
     },
     "categoryLabel": "@:components.productHero.categories.VENDOR",
+    "documentation": "@:components.productHero.documentation",
+    "community": {
+      "blog": {
+        "description": "블로그 게시물 읽기",
+        "title": "블로그"
+      },
+      "discord": {
+        "description": "커뮤니티 참여",
+        "title": "Discord"
+      },
+      "github": {
+        "description": "저장소 보기",
+        "title": "GitHub"
+      },
+      "linkedin": {
+        "description": "팔로우하기",
+        "title": "LinkedIn"
+      },
+      "reddit": {
+        "description": "토론 참여",
+        "title": "Reddit"
+      },
+      "twitter": {
+        "description": "팔로우하기",
+        "title": "Twitter"
+      },
+      "youtube": {
+        "description": "동영상 보기",
+        "title": "YouTube"
+      }
+    },
     "communityLinks": "커뮤니티 링크",
     "connectLinkedIn": "LinkedIn에서 연결",
     "discord": "Discord",

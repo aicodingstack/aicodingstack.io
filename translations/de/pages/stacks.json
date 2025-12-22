@@ -114,6 +114,9 @@
     "vendor": "@:components.productHero.vendor",
     "version": "@:components.productHero.version",
     "visitWebsite": "@:components.productHero.visitWebsite",
+    "input": "Eingabe",
+    "output": "Ausgabe",
+    "cache": "Cache",
     "benchmarks": {
       "title": "Leistungs-Benchmarks",
       "sweBench": "SWE-bench Verified",
@@ -248,6 +251,37 @@
       "vendors": "Anbieter"
     },
     "categoryLabel": "@:components.productHero.categories.VENDOR",
+    "documentation": "@:components.productHero.documentation",
+    "community": {
+      "blog": {
+        "description": "Blogbeiträge lesen",
+        "title": "Blog"
+      },
+      "discord": {
+        "description": "Community beitreten",
+        "title": "Discord"
+      },
+      "github": {
+        "description": "Repos anzeigen",
+        "title": "GitHub"
+      },
+      "linkedin": {
+        "description": "Folgen Sie uns",
+        "title": "LinkedIn"
+      },
+      "reddit": {
+        "description": "Diskussion beitreten",
+        "title": "Reddit"
+      },
+      "twitter": {
+        "description": "Folgen Sie uns",
+        "title": "Twitter"
+      },
+      "youtube": {
+        "description": "Videos ansehen",
+        "title": "YouTube"
+      }
+    },
     "communityLinks": "Community-Links",
     "connectLinkedIn": "Auf LinkedIn verbinden",
     "discord": "Discord",

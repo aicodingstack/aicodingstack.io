@@ -114,6 +114,9 @@
     "vendor": "@:components.productHero.vendor",
     "version": "@:components.productHero.version",
     "visitWebsite": "@:components.productHero.visitWebsite",
+    "input": "Input",
+    "output": "Output",
+    "cache": "Cache",
     "benchmarks": {
       "title": "Performance Benchmarks",
       "sweBench": "SWE-bench Verified",
@@ -248,6 +251,37 @@
       "vendors": "@:shared.stacks.vendors"
     },
     "categoryLabel": "@:components.productHero.categories.VENDOR",
+    "documentation": "@:components.productHero.documentation",
+    "community": {
+      "blog": {
+        "description": "Read blog posts",
+        "title": "Blog"
+      },
+      "discord": {
+        "description": "Join community",
+        "title": "@:components.productLinks.discord"
+      },
+      "github": {
+        "description": "View repos",
+        "title": "@:components.productLinks.github"
+      },
+      "linkedin": {
+        "description": "@:shared.common.followUs",
+        "title": "@:components.productLinks.linkedin"
+      },
+      "reddit": {
+        "description": "Join discussion",
+        "title": "@:components.productLinks.reddit"
+      },
+      "twitter": {
+        "description": "@:shared.common.followUs",
+        "title": "@:components.productLinks.twitter"
+      },
+      "youtube": {
+        "description": "Watch videos",
+        "title": "@:components.productLinks.youtube"
+      }
+    },
     "communityLinks": "@:shared.common.communityLinks",
     "connectLinkedIn": "Connect on LinkedIn",
     "discord": "@:components.productLinks.discord",

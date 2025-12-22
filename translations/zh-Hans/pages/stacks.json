@@ -114,6 +114,9 @@
     "vendor": "@:components.productHero.vendor",
     "version": "@:components.productHero.version",
     "visitWebsite": "@:components.productHero.visitWebsite",
+    "input": "输入",
+    "output": "输出",
+    "cache": "缓存",
     "benchmarks": {
       "title": "性能基准测试",
       "sweBench": "SWE-bench Verified",
@@ -248,6 +251,37 @@
       "vendors": "厂商"
     },
     "categoryLabel": "@:components.productHero.categories.VENDOR",
+    "documentation": "@:components.productHero.documentation",
+    "community": {
+      "blog": {
+        "description": "阅读博客文章",
+        "title": "博客"
+      },
+      "discord": {
+        "description": "加入社区",
+        "title": "Discord"
+      },
+      "github": {
+        "description": "查看仓库",
+        "title": "GitHub"
+      },
+      "linkedin": {
+        "description": "关注我们",
+        "title": "LinkedIn"
+      },
+      "reddit": {
+        "description": "加入讨论",
+        "title": "Reddit"
+      },
+      "twitter": {
+        "description": "关注我们",
+        "title": "X/Twitter"
+      },
+      "youtube": {
+        "description": "观看视频",
+        "title": "YouTube"
+      }
+    },
     "communityLinks": "社区链接",
     "connectLinkedIn": "在 LinkedIn 上联系",
     "discord": "Discord",
