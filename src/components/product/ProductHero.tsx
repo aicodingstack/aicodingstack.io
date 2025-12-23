@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl'
 import React from 'react'
-import { VerifiedBadge } from '@/components/VerifiedBadge'
+import { VerifiedBadge } from '@/components/controls/VerifiedBadge'
 import { renderLicense } from '@/lib/license'
 
 export interface ProductHeroProps {

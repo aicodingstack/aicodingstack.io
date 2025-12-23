@@ -2,11 +2,11 @@
 
 import { Download, FileText, Github, Home, Linkedin, Twitter, Youtube } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import ComparisonTable, { type ComparisonColumn } from '@/components/ComparisonTable'
+import { AppleIcon, LinuxIcon, WindowsIcon } from '@/components/controls/PlatformIcons'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import { Breadcrumb } from '@/components/navigation/Breadcrumb'
-import { AppleIcon, LinuxIcon, WindowsIcon } from '@/components/PlatformIcons'
+import ComparisonTable, { type ComparisonColumn } from '@/components/product/ComparisonTable'
 import { Link } from '@/i18n/navigation'
 import { idesData as ides } from '@/lib/generated'
 import { getGithubStars } from '@/lib/generated/github-stars'

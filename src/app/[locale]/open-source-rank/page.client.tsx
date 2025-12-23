@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { useMemo, useState } from 'react'
-import { VerifiedBadge } from '@/components/VerifiedBadge'
+import { VerifiedBadge } from '@/components/controls/VerifiedBadge'
 import { Link } from '@/i18n/navigation'
 import { clisData } from '@/lib/generated/clis'
 import { extensionsData } from '@/lib/generated/extensions'

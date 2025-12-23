@@ -2,10 +2,10 @@
 
 import { Download, FileText, Github, Home, Linkedin, Twitter, Youtube } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import ComparisonTable, { type ComparisonColumn } from '@/components/ComparisonTable'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import { Breadcrumb } from '@/components/navigation/Breadcrumb'
+import ComparisonTable, { type ComparisonColumn } from '@/components/product/ComparisonTable'
 import { Link } from '@/i18n/navigation'
 import { extensionsData as extensions } from '@/lib/generated'
 import { getGithubStars } from '@/lib/generated/github-stars'
