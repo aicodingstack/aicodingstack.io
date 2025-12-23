@@ -186,7 +186,10 @@ export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
                   itemStyle={{
                     color: 'var(--color-text-secondary)',
                   }}
-                  formatter={(value: number) => [`${value.toLocaleString()} stars`, 'Stars']}
+                  formatter={(value: number | undefined) => [
+                    `${value?.toLocaleString() ?? '0'} stars`,
+                    'Stars',
+                  ]}
                 />
                 <Line
                   type="monotone"
