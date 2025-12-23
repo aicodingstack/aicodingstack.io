@@ -1,9 +1,9 @@
 import { getTranslations } from 'next-intl/server'
-import CollectionScrollbar from '@/components/CollectionScrollbar'
-import CollectionSection from '@/components/CollectionSection'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import PageHeader from '@/components/PageHeader'
+import CollectionSection from '@/components/product/CollectionSection'
+import CollectionScrollbar from '@/components/sidebar/CollectionScrollbar'
 import { getCollectionSectionIds, getCollections } from '@/lib/collections'
 import { buildCanonicalUrl, buildOpenGraph, buildTitle, buildTwitterCard } from '@/lib/metadata'
 

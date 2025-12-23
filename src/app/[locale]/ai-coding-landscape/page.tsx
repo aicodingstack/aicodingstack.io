@@ -3,9 +3,9 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import { BackToNavigation } from '@/components/navigation/BackToNavigation'
 import PageHeader from '@/components/PageHeader'
+import VendorMatrix from '@/components/product/VendorMatrix'
 import { buildVendorMatrix } from '@/lib/landscape-data'
 import { buildCanonicalUrl, buildOpenGraph, buildTitle, buildTwitterCard } from '@/lib/metadata'
-import VendorMatrix from './components/VendorMatrix'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
