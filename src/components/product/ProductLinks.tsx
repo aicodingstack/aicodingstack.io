@@ -1,35 +1,37 @@
 import { useTranslations } from 'next-intl'
-
-export interface resourceUrls {
-  download?: string
-  changelog?: string
-  pricing?: string
-  blog?: string
-  mcp?: string
-  issue?: string
-}
-
-export interface CommunityUrls {
-  linkedin?: string
-  twitter?: string
-  github?: string
-  youtube?: string
-  discord?: string
-  reddit?: string
-  blog?: string
-}
+import type { ManifestCommunityUrls, ManifestResourceUrls } from '@/types/manifests'
 
 export interface ProductLinksProps {
-  resourceUrls?: resourceUrls
-  communityUrls?: CommunityUrls
+  resourceUrls?: ManifestResourceUrls | null
+  communityUrls?: ManifestCommunityUrls | null
 }
 
 export function ProductLinks({ resourceUrls, communityUrls }: ProductLinksProps) {
   const t = useTranslations('components.productLinks')
 
+  // Normalize manifest URLs to component-friendly optional strings
+  const normalizedResourceUrls: Record<string, string | undefined> = {
+    download: resourceUrls?.download ?? undefined,
+    changelog: resourceUrls?.changelog ?? undefined,
+    pricing: resourceUrls?.pricing ?? undefined,
+    mcp: resourceUrls?.mcp ?? undefined,
+    issue: resourceUrls?.issue ?? undefined,
+    blog: undefined,
+  }
+
+  const normalizedCommunityUrls = {
+    linkedin: communityUrls?.linkedin ?? undefined,
+    twitter: communityUrls?.twitter ?? undefined,
+    github: communityUrls?.github ?? undefined,
+    youtube: communityUrls?.youtube ?? undefined,
+    discord: communityUrls?.discord ?? undefined,
+    reddit: communityUrls?.reddit ?? undefined,
+    blog: communityUrls?.blog ?? undefined,
+  }
+
   // Check if there's any content to display
-  const hasresourceUrls = resourceUrls && Object.values(resourceUrls).some(url => url)
-  const hasCommunityUrls = communityUrls && Object.values(communityUrls).some(url => url)
+  const hasresourceUrls = Object.values(normalizedResourceUrls).some(url => url)
+  const hasCommunityUrls = Object.values(normalizedCommunityUrls).some(url => url)
 
   // If both resourceUrls and communityUrls have no values, don't render the component
   if (!hasresourceUrls && !hasCommunityUrls) {
@@ -53,14 +55,14 @@ export function ProductLinks({ resourceUrls, communityUrls }: ProductLinksProps)
   // Generate link configurations for resourceUrls by iterating over keys
   const pageUrlLinks = pageUrlKeys.map(key => ({
     key,
-    url: resourceUrls?.[key],
+    url: normalizedResourceUrls[key],
     label: t(key),
   }))
 
   // Generate link configurations for communityUrls by iterating over keys
   const communityUrlLinks = communityUrlKeys.map(key => ({
     key,
-    url: communityUrls?.[key],
+    url: normalizedCommunityUrls[key],
     label: t(key),
   }))
 
