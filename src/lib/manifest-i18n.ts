@@ -17,33 +17,6 @@ export interface ManifestItemWithTranslations {
 }
 
 /**
- * Get localized field from a manifest item
- * @param item - The manifest item with potential translations
- * @param field - The field name to translate (e.g., 'description', 'name')
- * @param locale - The target locale (e.g., 'en', 'zh-Hans')
- * @returns The localized value or the original value if translation not found
- */
-export function getLocalizedField<T extends ManifestItemWithTranslations>(
-  item: T,
-  field: keyof T,
-  locale: Locale
-): string {
-  // If locale is default, return the original field
-  if (locale === defaultLocale) {
-    return item[field] as string
-  }
-
-  // Check if translations exist for this locale
-  const translation = item.translations?.[locale]
-  if (translation && field in translation && translation[field as string]) {
-    return translation[field as string] as string
-  }
-
-  // Fallback to original field
-  return item[field] as string
-}
-
-/**
  * Apply localization to a manifest item
  * @param item - The manifest item with potential translations
  * @param locale - The target locale (e.g., 'en', 'zh-Hans')

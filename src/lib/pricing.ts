@@ -39,22 +39,3 @@ export function formatPrice(tier: PricingTier): string {
 
   return `${currencySymbol}${tier.value}${perText}`
 }
-
-/**
- * Extract price value for Schema.org structured data
- * Returns a string representation of the price value
- */
-export function getSchemaPrice(tier: PricingTier): string {
-  if (tier.value === null || tier.value === 0) {
-    return '0'
-  }
-  return tier.value.toString()
-}
-
-/**
- * Get currency code for Schema.org structured data
- * Defaults to USD if not specified
- */
-export function getSchemaCurrency(tier: PricingTier): string {
-  return tier.currency || 'USD'
-}
