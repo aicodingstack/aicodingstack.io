@@ -36,6 +36,7 @@ export {
   generateListPageMetadata,
   generateModelDetailMetadata,
   generateSoftwareDetailMetadata,
+  generateStaticPageMetadata,
 } from './generators'
 // Export all helpers
 export {

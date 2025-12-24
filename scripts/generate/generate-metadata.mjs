@@ -389,9 +389,13 @@ function main() {
   const content = `${header}
 
 import type { CollectionSection } from '../collections'
-import type { FaqItem } from '../faq'
 import type { ArticleMetadata } from './articles'
 import type { DocSection } from './docs'
+
+export type FaqItem = {
+  title: string
+  content: string
+}
 
 export const articlesMetadata: Record<string, ArticleMetadata[]> = ${formatObject(articles)}
 

@@ -1,11 +1,11 @@
 /**
  * Metadata Generator Functions
  * High-level functions for generating complete metadata for different page types
+ * All generators return createPageMetadata(...) output with proper robots rules
  */
 
 import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
-import { defaultLocale } from '@/i18n/config'
 import { formatTokenCount } from '@/lib/format'
 import {
   CATEGORY_DISPLAY_NAMES,
@@ -26,9 +26,11 @@ import {
   formatPlatforms,
   formatPriceForDescription,
 } from './helpers'
+import { createPageMetadata } from './templates'
 
 /**
  * Generate metadata for category list pages (IDEs, CLIs, etc.)
+ * Returns complete metadata with robots rules via PageType 'list'
  */
 export async function generateListPageMetadata(options: {
   locale: Locale
@@ -61,7 +63,7 @@ export async function generateListPageMetadata(options: {
     additionalKeywords,
   ])
 
-  // Build canonical path
+  // Build alternates (canonical + hreflang)
   const basePath = category
   const alternates = buildAlternates({
     canonicalPath: basePath,
@@ -69,14 +71,13 @@ export async function generateListPageMetadata(options: {
     languageBasePath: basePath,
   })
 
-  // Build OpenGraph
-  const canonicalPath = locale === defaultLocale ? `/${basePath}` : `/${locale}/${basePath}`
+  // Build OpenGraph using canonical path
   const displayName =
     CATEGORY_DISPLAY_NAMES[category as keyof typeof CATEGORY_DISPLAY_NAMES] || translatedTitle
   const openGraph = buildOpenGraph({
     title: `${translatedTitle} - Best ${displayName} ${METADATA_DEFAULTS.currentYear}`,
     description,
-    url: canonicalPath,
+    url: alternates.canonical!,
     locale,
     type: 'website',
   })
@@ -87,18 +88,22 @@ export async function generateListPageMetadata(options: {
     description,
   })
 
-  return {
+  return createPageMetadata({
+    locale,
+    pageType: 'list',
     title,
     description,
     keywords,
-    alternates,
+    canonical: alternates.canonical!,
+    languageAlternates: alternates.languages,
     openGraph,
     twitter,
-  }
+  })
 }
 
 /**
  * Generate metadata for software product detail pages (IDEs, CLIs, Extensions)
+ * Returns complete metadata with robots rules via PageType 'detail'
  */
 export async function generateSoftwareDetailMetadata(options: {
   locale: Locale
@@ -143,7 +148,7 @@ export async function generateSoftwareDetailMetadata(options: {
     platformsStr,
   ])
 
-  // Build canonical path
+  // Build alternates (canonical + hreflang)
   const basePath = `${category}/${slug}`
   const alternates = buildAlternates({
     canonicalPath: basePath,
@@ -151,14 +156,12 @@ export async function generateSoftwareDetailMetadata(options: {
     languageBasePath: basePath,
   })
 
-  // Build OpenGraph
+  // Build OpenGraph using canonical path
   // Note: OG images are automatically detected from opengraph-image.tsx files
-  const canonicalPath = locale === defaultLocale ? `/${basePath}` : `/${locale}/${basePath}`
-
   const openGraph = buildOpenGraph({
     title: `${product.name} - ${typeDescription}`,
     description: product.description,
-    url: canonicalPath,
+    url: alternates.canonical!,
     locale,
     type: 'article',
   })
@@ -170,18 +173,22 @@ export async function generateSoftwareDetailMetadata(options: {
     description: product.description,
   })
 
-  return {
+  return createPageMetadata({
+    locale,
+    pageType: 'detail',
     title,
     description,
     keywords,
-    alternates,
+    canonical: alternates.canonical!,
+    languageAlternates: alternates.languages,
     openGraph,
     twitter,
-  }
+  })
 }
 
 /**
  * Generate metadata for model detail pages
+ * Returns complete metadata with robots rules via PageType 'detail'
  */
 export async function generateModelDetailMetadata(options: {
   locale: Locale
@@ -232,7 +239,7 @@ export async function generateModelDetailMetadata(options: {
     [...CATEGORY_SEO_KEYWORDS.models],
   ])
 
-  // Build canonical path
+  // Build alternates (canonical + hreflang)
   const basePath = `models/${slug}`
   const alternates = buildAlternates({
     canonicalPath: basePath,
@@ -240,14 +247,12 @@ export async function generateModelDetailMetadata(options: {
     languageBasePath: basePath,
   })
 
-  // Build OpenGraph
+  // Build OpenGraph using canonical path
   // Note: OG images are automatically detected from opengraph-image.tsx files
-  const canonicalPath = locale === defaultLocale ? `/${basePath}` : `/${locale}/${basePath}`
-
   const openGraph = buildOpenGraph({
     title: `${model.name} - ${t('metaTitle')}`,
     description: model.description,
-    url: canonicalPath,
+    url: alternates.canonical!,
     locale,
     type: 'article',
   })
@@ -259,18 +264,22 @@ export async function generateModelDetailMetadata(options: {
     description: model.description,
   })
 
-  return {
+  return createPageMetadata({
+    locale,
+    pageType: 'detail',
     title,
     description,
     keywords,
-    alternates,
+    canonical: alternates.canonical!,
+    languageAlternates: alternates.languages,
     openGraph,
     twitter,
-  }
+  })
 }
 
 /**
  * Generate metadata for comparison pages
+ * Returns complete metadata with robots rules via PageType 'comparison'
  */
 export async function generateComparisonMetadata(options: {
   locale: Locale
@@ -314,7 +323,7 @@ export async function generateComparisonMetadata(options: {
     [...(CATEGORY_SEO_KEYWORDS[category as keyof typeof CATEGORY_SEO_KEYWORDS] || [])],
   ])
 
-  // Build canonical path
+  // Build alternates (canonical + hreflang)
   const basePath = `${category}/comparison`
   const alternates = buildAlternates({
     canonicalPath: basePath,
@@ -322,13 +331,11 @@ export async function generateComparisonMetadata(options: {
     languageBasePath: basePath,
   })
 
-  // Build OpenGraph
-  const canonicalPath = locale === defaultLocale ? `/${basePath}` : `/${locale}/${basePath}`
-
+  // Build OpenGraph using canonical path
   const openGraph = buildOpenGraph({
     title: `${categoryName} Comparison`,
     description,
-    url: canonicalPath,
+    url: alternates.canonical!,
     locale,
     type: 'website',
   })
@@ -339,18 +346,22 @@ export async function generateComparisonMetadata(options: {
     description,
   })
 
-  return {
+  return createPageMetadata({
+    locale,
+    pageType: 'comparison',
     title,
     description,
     keywords,
-    alternates,
+    canonical: alternates.canonical!,
+    languageAlternates: alternates.languages,
     openGraph,
     twitter,
-  }
+  })
 }
 
 /**
  * Generate metadata for article pages
+ * Returns complete metadata with robots rules via PageType 'article'
  */
 export async function generateArticleMetadata(options: {
   locale: Locale
@@ -373,7 +384,7 @@ export async function generateArticleMetadata(options: {
   // Build keywords
   const keywords = buildKeywords([article.title, [...CATEGORY_SEO_KEYWORDS.articles]])
 
-  // Build canonical path
+  // Build alternates (canonical + hreflang)
   const basePath = `articles/${slug}`
   const alternates = buildAlternates({
     canonicalPath: basePath,
@@ -381,14 +392,12 @@ export async function generateArticleMetadata(options: {
     languageBasePath: basePath,
   })
 
-  // Build OpenGraph with article metadata
+  // Build OpenGraph with article metadata, using canonical path
   // Note: OG images are automatically detected from opengraph-image.tsx files
-  const canonicalPath = locale === defaultLocale ? `/${basePath}` : `/${locale}/${basePath}`
-
   const openGraph = buildOpenGraph({
     title: article.title,
     description,
-    url: canonicalPath,
+    url: alternates.canonical!,
     locale,
     type: 'article',
     publishedTime: article.date,
@@ -402,18 +411,22 @@ export async function generateArticleMetadata(options: {
     includeCreator: true,
   })
 
-  return {
+  return createPageMetadata({
+    locale,
+    pageType: 'article',
     title,
     description,
     keywords,
-    alternates,
+    canonical: alternates.canonical!,
+    languageAlternates: alternates.languages,
     openGraph,
     twitter,
-  }
+  })
 }
 
 /**
  * Generate metadata for documentation pages
+ * Returns complete metadata with robots rules via PageType 'docs'
  */
 export async function generateDocsMetadata(options: {
   locale: Locale
@@ -434,7 +447,7 @@ export async function generateDocsMetadata(options: {
   // Build keywords
   const keywords = buildKeywords([doc.title, [...CATEGORY_SEO_KEYWORDS.docs]])
 
-  // Build canonical path
+  // Build alternates (canonical + hreflang)
   const basePath = `docs/${slug}`
   const alternates = buildAlternates({
     canonicalPath: basePath,
@@ -442,13 +455,11 @@ export async function generateDocsMetadata(options: {
     languageBasePath: basePath,
   })
 
-  // Build OpenGraph
-  const canonicalPath = locale === defaultLocale ? `/${basePath}` : `/${locale}/${basePath}`
-
+  // Build OpenGraph using canonical path
   const openGraph = buildOpenGraph({
     title: doc.title,
     description,
-    url: canonicalPath,
+    url: alternates.canonical!,
     locale,
     type: 'article',
   })
@@ -459,12 +470,76 @@ export async function generateDocsMetadata(options: {
     description,
   })
 
-  return {
+  return createPageMetadata({
+    locale,
+    pageType: 'docs',
     title,
     description,
     keywords,
-    alternates,
+    canonical: alternates.canonical!,
+    languageAlternates: alternates.languages,
     openGraph,
     twitter,
-  }
+  })
+}
+
+/**
+ * Generate metadata for static/simple pages (home, manifesto, etc.)
+ * Returns complete metadata with robots rules via PageType 'static', 'home', or 'search'
+ *
+ * This is a generic generator for pages that don't fit other specialized categories.
+ * Use this for marketing pages, info pages, etc. to avoid hand-rolling metadata.
+ */
+export async function generateStaticPageMetadata(options: {
+  locale: Locale
+  basePath: string
+  title: string
+  description: string
+  keywords?: string
+  ogType?: 'website' | 'article'
+  pageType?: 'home' | 'static' | 'search'
+}): Promise<Metadata> {
+  const {
+    locale,
+    basePath,
+    title,
+    description,
+    keywords,
+    ogType = 'website',
+    pageType = 'static',
+  } = options
+
+  // Build alternates (canonical + hreflang)
+  const alternates = buildAlternates({
+    canonicalPath: basePath,
+    locale,
+    languageBasePath: basePath,
+  })
+
+  // Build OpenGraph using canonical path
+  const openGraph = buildOpenGraph({
+    title,
+    description,
+    url: alternates.canonical!,
+    locale,
+    type: ogType,
+  })
+
+  // Build Twitter Card
+  const twitter = buildTwitterCard({
+    title,
+    description,
+  })
+
+  return createPageMetadata({
+    locale,
+    pageType,
+    title,
+    description,
+    keywords,
+    canonical: alternates.canonical!,
+    languageAlternates: alternates.languages,
+    openGraph,
+    twitter,
+  })
 }

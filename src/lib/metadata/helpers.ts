@@ -8,6 +8,24 @@ import { type Locale, locales, localeToOgLocale } from '@/i18n/config'
 import { type Category, METADATA_DEFAULTS, OG_IMAGE_CONFIG, SITE_CONFIG } from './config'
 
 /**
+ * Normalizes a route path by:
+ * - Stripping leading slashes
+ * - Collapsing multiple slashes into one
+ * - Allowing empty string for root path
+ * @internal
+ * @example normalizeRoutePath('/docs') → 'docs'
+ * @example normalizeRoutePath('//articles/') → 'articles/'
+ * @example normalizeRoutePath('/') → ''
+ */
+function normalizeRoutePath(path: string): string {
+  // Strip leading slashes
+  let normalized = path.replace(/^\/+/, '')
+  // Collapse multiple consecutive slashes
+  normalized = normalized.replace(/\/+/g, '/')
+  return normalized
+}
+
+/**
  * Maps internal locale format to OpenGraph locale format
  * @example 'zh-Hans' → 'zh_CN', 'en' → 'en_US'
  */
@@ -102,7 +120,14 @@ export function buildKeywords(parts: Array<string | string[]>): string {
 }
 
 /**
- * Builds locale-aware canonical URL
+ * Builds locale-aware canonical path (not an absolute URL).
+ * Returns a path like "/docs" for default locale or "/zh-Hans/docs" for non-default locale.
+ * This is used in metadata.alternates.canonical.
+ * For absolute URLs, use buildFullUrl() or buildOpenGraph().
+ *
+ * @param path - Route path WITHOUT locale prefix (e.g., "docs", "articles/my-slug")
+ * @param locale - Current locale
+ * @param includeLocalePrefix - For default locale, whether to force locale prefix (default: false in practice via buildAlternates)
  */
 export function buildCanonicalUrl(options: {
   path: string
@@ -111,33 +136,38 @@ export function buildCanonicalUrl(options: {
 }): string {
   const { path, locale, includeLocalePrefix = true } = options
 
-  // Remove leading slash if present
-  const cleanPath = path.startsWith('/') ? path.slice(1) : path
+  // Normalize path to prevent double-slashes and locale prefixes
+  const cleanPath = normalizeRoutePath(path)
 
-  // For default locale, don't include locale prefix in canonical
+  // For default locale, don't include locale prefix in canonical (unless explicitly requested)
   if (locale === SITE_CONFIG.defaultLocale && !includeLocalePrefix) {
-    return `/${cleanPath}`
+    return cleanPath ? `/${cleanPath}` : '/'
   }
 
   // For non-default locale or when explicitly requested
   if (locale !== SITE_CONFIG.defaultLocale) {
-    return `/${locale}/${cleanPath}`
+    return cleanPath ? `/${locale}/${cleanPath}` : `/${locale}`
   }
 
-  return `/${cleanPath}`
+  return cleanPath ? `/${cleanPath}` : '/'
 }
 
 /**
- * Builds language alternates for i18n
+ * Builds language alternates (hreflang) for all configured locales.
+ * Used in metadata.alternates.languages for i18n.
+ *
+ * @param basePath - Route path WITHOUT locale prefix (e.g., "docs", "articles/my-slug", or "" for root)
+ * @returns Record mapping locale codes to paths (e.g., { en: "/docs", "zh-Hans": "/zh-Hans/docs" })
  */
 export function buildLanguageAlternates(basePath: string): Record<string, string> {
   const alternates: Record<string, string> = {}
+  const cleanPath = normalizeRoutePath(basePath)
 
   SITE_CONFIG.supportedLocales.forEach(locale => {
     if (locale === SITE_CONFIG.defaultLocale) {
-      alternates[locale] = `/${basePath}`
+      alternates[locale] = cleanPath ? `/${cleanPath}` : '/'
     } else {
-      alternates[locale] = `/${locale}/${basePath}`
+      alternates[locale] = cleanPath ? `/${locale}/${cleanPath}` : `/${locale}`
     }
   })
 
@@ -178,7 +208,13 @@ export function getOGImagePath(category: Category, slug: string): string {
 }
 
 /**
- * Builds complete OpenGraph metadata
+ * Builds complete OpenGraph metadata with absolute URLs.
+ * The url parameter should be a path (e.g., "/docs" or "/zh-Hans/docs"),
+ * which will be converted to an absolute URL using SITE_CONFIG.url.
+ *
+ * @param url - Path (with or without leading slash) that will be converted to absolute URL
+ * @param locale - Current locale for og:locale
+ * @param type - OpenGraph type (website or article)
  */
 export function buildOpenGraph(options: {
   title: string
@@ -272,13 +308,19 @@ export function buildTwitterCard(options: {
 }
 
 /**
- * Builds complete alternates object with canonical and languages
+ * Builds complete alternates object with canonical and hreflang language alternates.
+ * This is the single source of truth for generating both canonical and language alternates.
+ *
+ * @param canonicalPath - Route path WITHOUT locale prefix (e.g., "docs", "articles/my-slug")
+ * @param locale - Current locale
+ * @param languageBasePath - Optional base path for hreflang (usually same as canonicalPath)
+ * @returns Alternates with canonical pointing to current locale's path and languages for all locales
  */
 export function buildAlternates(options: {
   canonicalPath: string
   locale: string
   languageBasePath?: string
-}): Metadata['alternates'] {
+}): { canonical: string; languages?: Record<string, string> } {
   const { canonicalPath, locale, languageBasePath } = options
 
   const canonical = buildCanonicalUrl({
@@ -287,12 +329,12 @@ export function buildAlternates(options: {
     includeLocalePrefix: false,
   })
 
-  const alternates: Metadata['alternates'] = {
+  const alternates: { canonical: string; languages?: Record<string, string> } = {
     canonical,
   }
 
-  // Add language alternates if base path provided
-  if (languageBasePath) {
+  // Add language alternates (hreflang) if base path provided
+  if (languageBasePath !== undefined) {
     alternates.languages = buildLanguageAlternates(languageBasePath)
   }
 
