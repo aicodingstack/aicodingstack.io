@@ -2,7 +2,8 @@ import { getTranslations } from 'next-intl/server'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import PageHeader from '@/components/PageHeader'
-import { buildAlternates, buildOpenGraph, buildTitle, buildTwitterCard } from '@/lib/metadata'
+import type { Locale } from '@/i18n/config'
+import { buildTitle, generateStaticPageMetadata } from '@/lib/metadata'
 import { OpenSourceRankPage } from './page.client'
 
 export const revalidate = 3600
@@ -13,34 +14,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   const title = buildTitle({ title: t('title') })
   const description = t('description')
-  const basePath = 'open-source-rank'
 
-  // Build alternates using helper function
-  const alternates = buildAlternates({
-    canonicalPath: basePath,
-    locale,
-    languageBasePath: basePath,
-  })
-
-  // Build canonical path for OpenGraph
-  const canonicalPath = locale === 'en' ? `/${basePath}` : `/${locale}/${basePath}`
-
-  return {
+  return generateStaticPageMetadata({
+    locale: locale as Locale,
+    basePath: 'open-source-rank',
     title,
     description,
-    alternates,
-    openGraph: buildOpenGraph({
-      title: t('title'),
-      description,
-      url: canonicalPath,
-      locale,
-      type: 'website',
-    }),
-    twitter: buildTwitterCard({
-      title: t('title'),
-      description,
-    }),
-  }
+    ogType: 'website',
+  })
 }
 
 type Props = {

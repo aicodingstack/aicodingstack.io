@@ -15,7 +15,6 @@ import { getGithubStars } from '@/lib/generated/github-stars'
 import { translateLicenseText } from '@/lib/license'
 import { generateSoftwareDetailMetadata } from '@/lib/metadata'
 import { generateSoftwareDetailSchema } from '@/lib/metadata/schemas'
-import { transformCommunityUrls, transformResourceUrls } from '@/lib/product-utils'
 
 export const revalidate = 3600
 
@@ -71,13 +70,11 @@ export default async function IDEPage({
   const t = await getTranslations({ locale, namespace: 'pages.ideDetail' })
   const tGlobal = await getTranslations({ locale })
 
-  // Transform URLs
+  // Transform URLs for component props
   const websiteUrl = ide.websiteUrl || ide.resourceUrls?.download || undefined
   const docsUrl = ide.docsUrl || undefined
   const downloadUrl = ide.resourceUrls?.download || undefined
-
-  const resourceUrls = transformResourceUrls(ide.resourceUrls)
-  const communityUrls = transformCommunityUrls(ide.communityUrls)
+  const pricingUrl = ide.resourceUrls?.pricing ?? undefined
 
   // Generate JSON-LD schema
   const schema = await generateSoftwareDetailSchema({
@@ -138,9 +135,9 @@ export default async function IDEPage({
 
       {relatedProducts.length > 0 && <RelatedProducts products={relatedProducts} />}
 
-      <ProductPricing pricing={ide.pricing} pricingUrl={resourceUrls.pricing} />
+      <ProductPricing pricing={ide.pricing} pricingUrl={pricingUrl} />
 
-      <ProductLinks resourceUrls={resourceUrls} communityUrls={communityUrls} />
+      <ProductLinks resourceUrls={ide.resourceUrls} communityUrls={ide.communityUrls} />
 
       <ProductCommands install={ide.installCommand} launch={ide.launchCommand} />
 

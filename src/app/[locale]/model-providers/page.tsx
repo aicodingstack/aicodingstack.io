@@ -1,10 +1,11 @@
 import type { Locale } from '@/i18n/config'
 import { generateListPageMetadata } from '@/lib/metadata'
+import type { LocalePageProps } from '@/types/locale'
 import ModelProvidersPageClient from './page.client'
 
 export const revalidate = 3600
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+export async function generateMetadata({ params }: LocalePageProps) {
   const { locale } = await params
 
   return await generateListPageMetadata({
@@ -15,11 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   })
 }
 
-type Props = {
-  params: Promise<{ locale: string }>
-}
-
-export default async function ModelProvidersPage({ params }: Props) {
+export default async function ModelProvidersPage({ params }: LocalePageProps) {
   const { locale } = await params
   return <ModelProvidersPageClient locale={locale} />
 }

@@ -11,6 +11,7 @@ import { defaultLocale, type Locale, locales } from '@/i18n/config'
 import { createRootLayoutMetadata, SITE_CONFIG } from '@/lib/metadata'
 import { buildLanguageAlternates, mapLocaleToOG } from '@/lib/metadata/helpers'
 import { generateRootOrganizationSchema, generateWebSiteSchema } from '@/lib/metadata/schemas'
+import type { LocalePageProps } from '@/types/locale'
 import { WebVitals } from './web-vitals'
 
 // Reduced font weights from 4 to 2 for better performance
@@ -29,16 +30,13 @@ export const viewport: Viewport = {
   maximumScale: 5,
 }
 
-type Props = {
-  children: React.ReactNode
-  params: Promise<{ locale: string }>
-}
-
 export function generateStaticParams() {
   return locales.map(locale => ({ locale }))
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: LocalePageProps & { children: React.ReactNode }): Promise<Metadata> {
   const { locale } = await params
 
   // Load translations for metadata
@@ -74,7 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       'coding tools comparison',
     ].join(', '),
     canonical: canonicalPath,
-    languageAlternates: buildLanguageAlternates('/'),
+    languageAlternates: buildLanguageAlternates(''),
     openGraph: {
       type: 'website',
       locale: ogLocale,
@@ -96,7 +94,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   })
 }
 
-export default async function RootLayout({ children, params }: Props) {
+export default async function RootLayout({
+  children,
+  params,
+}: LocalePageProps & { children: React.ReactNode }) {
   const { locale } = await params
 
   // Validate locale

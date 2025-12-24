@@ -15,7 +15,6 @@ import { getGithubStars } from '@/lib/generated/github-stars'
 import { translateLicenseText } from '@/lib/license'
 import { generateSoftwareDetailMetadata } from '@/lib/metadata'
 import { generateSoftwareDetailSchema } from '@/lib/metadata/schemas'
-import { transformCommunityUrls, transformResourceUrls } from '@/lib/product-utils'
 
 export const revalidate = 3600
 
@@ -76,13 +75,11 @@ export default async function ExtensionPage({
   const t = await getTranslations({ locale, namespace: 'pages.extensionDetail' })
   const tGlobal = await getTranslations({ locale })
 
-  // Transform URLs
+  // Transform URLs for component props
   const websiteUrl = extension.websiteUrl || extension.resourceUrls?.download || undefined
   const docsUrl = extension.docsUrl || undefined
   const downloadUrl = extension.resourceUrls?.download || undefined
-
-  const resourceUrls = transformResourceUrls(extension.resourceUrls)
-  const communityUrls = transformCommunityUrls(extension.communityUrls)
+  const pricingUrl = extension.resourceUrls?.pricing ?? undefined
 
   // Generate JSON-LD schema
   const schema = await generateSoftwareDetailSchema({
@@ -158,9 +155,9 @@ export default async function ExtensionPage({
 
       {relatedProducts.length > 0 && <RelatedProducts products={relatedProducts} />}
 
-      <ProductPricing pricing={extension.pricing} pricingUrl={resourceUrls.pricing} />
+      <ProductPricing pricing={extension.pricing} pricingUrl={pricingUrl} />
 
-      <ProductLinks resourceUrls={resourceUrls} communityUrls={communityUrls} />
+      <ProductLinks resourceUrls={extension.resourceUrls} communityUrls={extension.communityUrls} />
 
       <ProductCommands install={extension.installCommand} launch={extension.launchCommand} />
 

@@ -4,41 +4,26 @@ import Header from '@/components/Header'
 import { BackToNavigation } from '@/components/navigation/BackToNavigation'
 import PageHeader from '@/components/PageHeader'
 import VendorMatrix from '@/components/product/VendorMatrix'
+import type { Locale } from '@/i18n/config'
 import { buildVendorMatrix } from '@/lib/landscape-data'
-import { buildCanonicalUrl, buildOpenGraph, buildTitle, buildTwitterCard } from '@/lib/metadata'
+import { buildTitle, generateStaticPageMetadata } from '@/lib/metadata'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   const tNav = await getTranslations({ locale, namespace: 'components.header' })
 
-  const canonicalPath = locale === 'en' ? '/ai-coding-landscape' : `/${locale}/ai-coding-landscape`
   const title = buildTitle({ title: tNav('aiCodingLandscape') })
   const description = tNav('aiCodingLandscapeDesc')
 
-  return {
+  return generateStaticPageMetadata({
+    locale: locale as Locale,
+    basePath: 'ai-coding-landscape',
     title,
     description,
     keywords:
       'AI coding ecosystem, AI development landscape, AI tools, coding tools visualization, vendor comparison, product matrix',
-    alternates: {
-      canonical: canonicalPath,
-      languages: {
-        en: '/ai-coding-landscape',
-        'zh-Hans': '/zh-Hans/ai-coding-landscape',
-      },
-    },
-    openGraph: buildOpenGraph({
-      title: tNav('aiCodingLandscape'),
-      description,
-      url: buildCanonicalUrl({ path: canonicalPath, locale }),
-      locale,
-      type: 'website',
-    }),
-    twitter: buildTwitterCard({
-      title: tNav('aiCodingLandscape'),
-      description,
-    }),
-  }
+    ogType: 'website',
+  })
 }
 
 type Props = {

@@ -2,8 +2,9 @@ import { getTranslations } from 'next-intl/server'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import DocsSidebar from '@/components/sidebar/DocsSidebar'
+import type { Locale } from '@/i18n/config'
 import { getDocComponent, getDocSections } from '@/lib/generated/docs'
-import { buildCanonicalUrl, buildOpenGraph, buildTitle, buildTwitterCard } from '@/lib/metadata'
+import { buildTitle, generateStaticPageMetadata } from '@/lib/metadata'
 
 type Props = {
   params: Promise<{ locale: string }>
@@ -13,33 +14,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'pages.docs' })
 
-  const canonicalPath = locale === 'en' ? '/docs' : `/${locale}/docs`
   const title = buildTitle({ title: t('title') })
   const description = t('subtitle')
 
-  return {
+  return generateStaticPageMetadata({
+    locale: locale as Locale,
+    basePath: 'docs',
     title,
     description,
     keywords: t('keywords'),
-    alternates: {
-      canonical: canonicalPath,
-      languages: {
-        en: '/docs',
-        'zh-Hans': '/zh-Hans/docs',
-      },
-    },
-    openGraph: buildOpenGraph({
-      title: t('title'),
-      description,
-      url: buildCanonicalUrl({ path: canonicalPath, locale }),
-      locale,
-      type: 'website',
-    }),
-    twitter: buildTwitterCard({
-      title: t('title'),
-      description,
-    }),
-  }
+    ogType: 'website',
+  })
 }
 
 export default async function DocsPage({ params }: Props) {

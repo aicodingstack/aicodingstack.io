@@ -4,48 +4,30 @@ import Header from '@/components/Header'
 import PageHeader from '@/components/PageHeader'
 import CollectionSection from '@/components/product/CollectionSection'
 import CollectionScrollbar from '@/components/sidebar/CollectionScrollbar'
+import type { Locale } from '@/i18n/config'
 import { getCollectionSectionIds, getCollections } from '@/lib/collections'
-import { buildCanonicalUrl, buildOpenGraph, buildTitle, buildTwitterCard } from '@/lib/metadata'
+import { buildTitle, generateStaticPageMetadata } from '@/lib/metadata'
+import type { LocalePageProps } from '@/types/locale'
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+export async function generateMetadata({ params }: LocalePageProps) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'pages.curatedCollections' })
 
-  const canonicalPath = locale === 'en' ? '/curated-collections' : `/${locale}/curated-collections`
   const title = buildTitle({ title: `${t('title')} - AI Coding Specs, Protocols & Tools` })
   const description = t('subtitle')
 
-  return {
+  return generateStaticPageMetadata({
+    locale: locale as Locale,
+    basePath: 'curated-collections',
     title,
     description,
     keywords:
       'AI coding resources, MCP protocol, Agent2Agent, development standards, AI coding articles, semantic versioning, conventional commits',
-    alternates: {
-      canonical: canonicalPath,
-      languages: {
-        en: '/curated-collections',
-        'zh-Hans': '/zh-Hans/curated-collections',
-      },
-    },
-    openGraph: buildOpenGraph({
-      title: `${t('title')} - AI Coding Specs, Protocols & Tools`,
-      description,
-      url: buildCanonicalUrl({ path: canonicalPath, locale }),
-      locale,
-      type: 'website',
-    }),
-    twitter: buildTwitterCard({
-      title: `${t('title')} - AI Coding Specs, Protocols & Tools`,
-      description,
-    }),
-  }
+    ogType: 'website',
+  })
 }
 
-type Props = {
-  params: Promise<{ locale: string }>
-}
-
-export default async function CuratedCollectionsPage({ params }: Props) {
+export default async function CuratedCollectionsPage({ params }: LocalePageProps) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'pages.curatedCollections' })
   const collections = getCollections(locale)

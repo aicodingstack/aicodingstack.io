@@ -2,48 +2,30 @@ import { getTranslations } from 'next-intl/server'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import PageHeader from '@/components/PageHeader'
+import type { Locale } from '@/i18n/config'
 import { Link } from '@/i18n/navigation'
-import { buildCanonicalUrl, buildOpenGraph, buildTitle, buildTwitterCard } from '@/lib/metadata'
+import { buildTitle, generateStaticPageMetadata } from '@/lib/metadata'
+import type { LocalePageProps } from '@/types/locale'
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+export async function generateMetadata({ params }: LocalePageProps) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'pages.overview' })
 
-  const canonicalPath = locale === 'en' ? '/ai-coding-stack' : `/${locale}/ai-coding-stack`
   const title = buildTitle({ title: t('title') })
   const description = t('subtitle')
 
-  return {
+  return generateStaticPageMetadata({
+    locale: locale as Locale,
+    basePath: 'ai-coding-stack',
     title,
     description,
     keywords:
       'AI Coding Stack, AI development tools, AI IDE, AI CLI, LLM models, AI coding ecosystem',
-    alternates: {
-      canonical: canonicalPath,
-      languages: {
-        en: '/ai-coding-stack',
-        'zh-Hans': '/zh-Hans/ai-coding-stack',
-      },
-    },
-    openGraph: buildOpenGraph({
-      title: t('title'),
-      description,
-      url: buildCanonicalUrl({ path: canonicalPath, locale }),
-      locale,
-      type: 'website',
-    }),
-    twitter: buildTwitterCard({
-      title: t('title'),
-      description,
-    }),
-  }
+    ogType: 'website',
+  })
 }
 
-type Props = {
-  params: Promise<{ locale: string }>
-}
-
-export default async function AICodingStackPage({ params }: Props) {
+export default async function AICodingStackPage({ params }: LocalePageProps) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'pages.overview' })
 

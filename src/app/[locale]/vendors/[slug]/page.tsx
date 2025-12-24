@@ -54,6 +54,23 @@ export async function generateMetadata({
   })
 }
 
+/**
+ * Find and localize all items for a given vendor.
+ * This is shared by products (IDEs, CLIs, Extensions) and models.
+ */
+function findVendorItems<TLocalized>(
+  items: { vendor: string }[],
+  vendorName: string,
+  locale: Locale
+): TLocalized[] {
+  const localized = items
+    .filter(item => item.vendor === vendorName)
+    .map(item => localizeManifestItem(item as unknown as Record<string, unknown>, locale as Locale))
+    .filter((m): m is NonNullable<typeof m> => m !== null)
+
+  return localized as unknown as TLocalized[]
+}
+
 export default async function VendorPage({
   params,
 }: {
@@ -120,37 +137,27 @@ export default async function VendorPage({
 
   // Find all products by this vendor
   // Note: Products store vendor.name, not vendor.id, so we match against vendor.name
-  const vendorIdes = ides
-    .filter(ide => ide.vendor === vendor.name)
-    .map(ide => ({
-      ...localizeManifestItem(ide as unknown as Record<string, unknown>, locale as Locale),
-      type: 'ide' as const,
-    })) as (ManifestIDE & { type: 'ide' })[]
+  const vendorIdes = findVendorItems<ManifestIDE>(ides, vendor.name, locale as Locale).map(ide => ({
+    ...ide,
+    type: 'ide' as const,
+  }))
 
-  const vendorClis = clis
-    .filter(cli => cli.vendor === vendor.name)
-    .map(cli => ({
-      ...localizeManifestItem(cli as unknown as Record<string, unknown>, locale as Locale),
-      type: 'cli' as const,
-    })) as (ManifestCLI & { type: 'cli' })[]
+  const vendorClis = findVendorItems<ManifestCLI>(clis, vendor.name, locale as Locale).map(cli => ({
+    ...cli,
+    type: 'cli' as const,
+  }))
 
-  const vendorExtensions = extensions
-    .filter(ext => ext.vendor === vendor.name)
-    .map(ext => ({
-      ...localizeManifestItem(ext as unknown as Record<string, unknown>, locale as Locale),
-      type: 'extension' as const,
-    })) as (ManifestExtension & { type: 'extension' })[]
+  const vendorExtensions = findVendorItems<ManifestExtension>(
+    extensions,
+    vendor.name,
+    locale as Locale
+  ).map(ext => ({ ...ext, type: 'extension' as const }))
 
   const vendorProducts = [...vendorIdes, ...vendorClis, ...vendorExtensions]
 
   // Find all models by this vendor
   // Note: Models also store vendor.name, not vendor.id
-  const vendorModels: ManifestModel[] = models
-    .filter(model => model.vendor === vendor.name)
-    .map(model =>
-      localizeManifestItem(model as unknown as Record<string, unknown>, locale as Locale)
-    )
-    .filter((m): m is NonNullable<typeof m> => m !== null) as unknown as ManifestModel[]
+  const vendorModels = findVendorItems<ManifestModel>(models, vendor.name, locale as Locale)
 
   // Breadcrumb items
   const breadcrumbItems = [
@@ -177,21 +184,19 @@ export default async function VendorPage({
         }}
       />
 
-      {vendor.communityUrls && (
-        <CommunityLinks
-          communityUrls={vendor.communityUrls}
-          title={t('communityLinks')}
-          links={communityLinks}
-          layout="vertical"
-          gridCols="grid-cols-2 md:grid-cols-4"
-        />
-      )}
-
       {/* Vendor Products (IDEs, CLIs, Extensions) */}
       <VendorProducts products={vendorProducts} locale={locale} title={t('products')} />
 
       {/* Vendor Models */}
       <VendorModels models={vendorModels} locale={locale} title={t('models')} />
+
+      <CommunityLinks
+        communityUrls={vendor.communityUrls}
+        title={t('communityLinks')}
+        links={communityLinks}
+        layout="vertical"
+        gridCols="grid-cols-2 md:grid-cols-4"
+      />
 
       <BackToNavigation href="/vendors" title={t('allVendors')} />
     </PageLayout>

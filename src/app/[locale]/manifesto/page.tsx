@@ -2,41 +2,26 @@ import { getTranslations } from 'next-intl/server'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import PageHeader from '@/components/PageHeader'
+import type { Locale } from '@/i18n/config'
 import { Link } from '@/i18n/navigation'
-import { getManifestoComponent } from '@/lib/manifesto'
-import { buildCanonicalUrl, buildOpenGraph, buildTitle, buildTwitterCard } from '@/lib/metadata'
+import { getManifestoComponent } from '@/lib/generated/manifesto'
+import { buildTitle, generateStaticPageMetadata } from '@/lib/metadata'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'pages.manifesto' })
 
-  const canonicalPath = locale === 'en' ? '/manifesto' : `/${locale}/manifesto`
   const title = buildTitle({ title: t('title') })
   const description = t('subtitle')
 
-  return {
+  return generateStaticPageMetadata({
+    locale: locale as Locale,
+    basePath: 'manifesto',
     title,
     description,
     keywords: 'AI Coding Manifesto, AI development philosophy, AI coding principles',
-    alternates: {
-      canonical: canonicalPath,
-      languages: {
-        en: '/manifesto',
-        'zh-Hans': '/zh-Hans/manifesto',
-      },
-    },
-    openGraph: buildOpenGraph({
-      title: t('title'),
-      description,
-      url: buildCanonicalUrl({ path: canonicalPath, locale }),
-      locale,
-      type: 'website',
-    }),
-    twitter: buildTwitterCard({
-      title: t('title'),
-      description,
-    }),
-  }
+    ogType: 'website',
+  })
 }
 
 type Props = {

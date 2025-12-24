@@ -3,49 +3,36 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import { JsonLd } from '@/components/JsonLd'
 import { MarkdownContent } from '@/components/MarkdownContent'
+import type { Locale } from '@/i18n/config'
 import { Link } from '@/i18n/navigation'
-import { getFaqItems } from '@/lib/faq'
-import { buildCanonicalUrl, buildOpenGraph, buildTitle, buildTwitterCard } from '@/lib/metadata'
+import { faqMetadata } from '@/lib/generated/metadata'
+import { buildTitle, generateStaticPageMetadata } from '@/lib/metadata'
 import { generateFAQPageSchema } from '@/lib/metadata/schemas'
+import type { LocalePageProps } from '@/types/locale'
 
 export const revalidate = 3600
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+export async function generateMetadata({ params }: LocalePageProps) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'pages.home.meta' })
 
-  const canonicalPath = locale === 'en' ? '/' : `/${locale}`
   const title = buildTitle({ title: t('title'), includeSiteName: false })
   const description = t('description')
 
-  return {
+  return generateStaticPageMetadata({
+    locale: locale as Locale,
+    basePath: '',
     title,
     description,
     keywords:
       'AI coding, AI IDE, AI CLI, AI extensions, LLM models, AI coding tools, Cursor, Claude Code, VS Code',
-    alternates: {
-      canonical: canonicalPath,
-      languages: {
-        en: '/',
-        'zh-Hans': '/zh-Hans',
-      },
-    },
-    openGraph: buildOpenGraph({
-      title: t('title'),
-      description,
-      url: buildCanonicalUrl({ path: canonicalPath, locale }),
-      locale,
-      type: 'website',
-    }),
-    twitter: buildTwitterCard({
-      title: t('title'),
-      description,
-    }),
-  }
+    ogType: 'website',
+    pageType: 'home',
+  })
 }
 
 async function getFaqSchema(locale: string) {
-  const faqItems = getFaqItems(locale)
+  const faqItems = faqMetadata[locale] || faqMetadata.en || []
 
   // Use the new schema generator
   return await generateFAQPageSchema(
@@ -56,15 +43,11 @@ async function getFaqSchema(locale: string) {
   )
 }
 
-type Props = {
-  params: Promise<{ locale: string }>
-}
-
-export default async function Home({ params }: Props) {
+export default async function Home({ params }: LocalePageProps) {
   const { locale } = await params
   const tHome = await getTranslations({ locale, namespace: 'pages.home' })
   const tFeatures = await getTranslations({ locale, namespace: 'pages.home.features' })
-  const faqItems = getFaqItems(locale)
+  const faqItems = faqMetadata[locale] || faqMetadata.en || []
   const faqSchema = await getFaqSchema(locale)
 
   return (

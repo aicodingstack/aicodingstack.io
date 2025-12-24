@@ -2,41 +2,26 @@ import { getTranslations } from 'next-intl/server'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import PageHeader from '@/components/PageHeader'
+import type { Locale } from '@/i18n/config'
 import { Link } from '@/i18n/navigation'
 import { getArticles } from '@/lib/generated/articles'
-import { buildCanonicalUrl, buildOpenGraph, buildTitle, buildTwitterCard } from '@/lib/metadata'
+import { buildTitle, generateStaticPageMetadata } from '@/lib/metadata'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'pages.articles' })
 
-  const canonicalPath = locale === 'en' ? '/articles' : `/${locale}/articles`
   const title = buildTitle({ title: `${t('title')} - AI Coding Insights & Tutorials` })
   const description = t('subtitle')
 
-  return {
+  return generateStaticPageMetadata({
+    locale: locale as Locale,
+    basePath: 'articles',
     title,
     description,
     keywords: t('keywords'),
-    alternates: {
-      canonical: canonicalPath,
-      languages: {
-        en: '/articles',
-        'zh-Hans': '/zh-Hans/articles',
-      },
-    },
-    openGraph: buildOpenGraph({
-      title: `${t('title')} - AI Coding Insights & Tutorials`,
-      description,
-      url: buildCanonicalUrl({ path: canonicalPath, locale }),
-      locale,
-      type: 'website',
-    }),
-    twitter: buildTwitterCard({
-      title: `${t('title')} - AI Coding Insights & Tutorials`,
-      description,
-    }),
-  }
+    ogType: 'website',
+  })
 }
 
 type Props = {

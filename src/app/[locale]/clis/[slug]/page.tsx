@@ -15,7 +15,6 @@ import { getGithubStars } from '@/lib/generated/github-stars'
 import { translateLicenseText } from '@/lib/license'
 import { generateSoftwareDetailMetadata } from '@/lib/metadata'
 import { generateSoftwareDetailSchema } from '@/lib/metadata/schemas'
-import { transformCommunityUrls, transformResourceUrls } from '@/lib/product-utils'
 
 export const revalidate = 3600
 
@@ -71,13 +70,11 @@ export default async function CLIPage({
   const t = await getTranslations({ locale, namespace: 'pages.cliDetail' })
   const tGlobal = await getTranslations({ locale })
 
-  // Transform URLs
+  // Transform URLs for component props
   const websiteUrl = cli.websiteUrl || cli.resourceUrls?.download || undefined
   const docsUrl = cli.docsUrl || undefined
   const downloadUrl = cli.resourceUrls?.download || undefined
-
-  const resourceUrls = transformResourceUrls(cli.resourceUrls)
-  const communityUrls = transformCommunityUrls(cli.communityUrls)
+  const pricingUrl = cli.resourceUrls?.pricing ?? undefined
 
   // Generate JSON-LD schema
   const schema = await generateSoftwareDetailSchema({
@@ -138,9 +135,9 @@ export default async function CLIPage({
 
       {relatedProducts.length > 0 && <RelatedProducts products={relatedProducts} />}
 
-      <ProductPricing pricing={cli.pricing} pricingUrl={resourceUrls.pricing} />
+      <ProductPricing pricing={cli.pricing} pricingUrl={pricingUrl} />
 
-      <ProductLinks resourceUrls={resourceUrls} communityUrls={communityUrls} />
+      <ProductLinks resourceUrls={cli.resourceUrls} communityUrls={cli.communityUrls} />
 
       <ProductCommands install={cli.installCommand} launch={cli.launchCommand} />
 
