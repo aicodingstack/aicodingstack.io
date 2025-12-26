@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "统一的 API 平台，通过单一接口提供来自不同提供商的多个 AI 模型的访问。"
+    },
+    "de": {
+      "description": "Eine einheitliche API-Plattform, die Zugriff auf mehrere KI-Modelle verschiedener Anbieter über eine einzige Schnittstelle bietet."
+    },
+    "ko": {
+      "description": "단일 인터페이스를 통해 다양한 제공업체의 여러 AI 모델에 액세스할 수 있는 통합 API 플랫폼입니다."
     }
   },
   "verified": false,

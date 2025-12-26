@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "领先的 AI 研究公司，专注于开发先进的语言模型和 AI 技术，用于编码和通用智能。"
+    },
+    "de": {
+      "description": "Ein führendes KI-Forschungsunternehmen, das sich auf die Entwicklung fortschrittlicher Sprachmodelle und KI-Technologien für Codierung und allgemeine Intelligenz konzentriert."
+    },
+    "ko": {
+      "description": "코딩 및 일반 지능을 위한 고급 언어 모델과 AI 기술 개발에 집중하는 선도적인 AI 연구 기업입니다."
     }
   },
   "verified": false,

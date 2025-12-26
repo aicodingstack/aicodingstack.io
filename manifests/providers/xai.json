@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "xAI 是一家专注于开发 AI 模型的公司。"
+    },
+    "de": {
+      "description": "xAI ist ein Unternehmen, das KI-Modelle entwickelt."
+    },
+    "ko": {
+      "description": "xAI는 AI 모델을 개발하는 기업입니다."
     }
   },
   "verified": false,

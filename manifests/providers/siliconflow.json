@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "统一的 AI 推理平台，通过单一 API 提供对 LLM 及多模态模型的高速访问，支持无服务器、微调和专用 GPU 等灵活部署选项。"
+    },
+    "de": {
+      "description": "Ein einheitlicher KI-Inferenz-Plattform mit Hochgeschwindigkeitszugriff auf LLMs und multimodale Modelle über eine API, mit flexiblen Bereitstellungsoptionen wie Serverless, Fine-tuning und dedizierte GPUs."
+    },
+    "ko": {
+      "description": "단일 API를 통해 LLM 및 멀티모달 모델에 대한 고속 액세스를 제공하는 통합 AI 추론 플랫폼으로, 서버리스, 파인 튜닝 및 전용 GPU와 같은 유연한 배포 옵션을 지원합니다."
     }
   },
   "verified": true,
