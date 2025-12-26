@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Ein hochleistungsfähiger, kollaborativer Code-Editor mit eingebauter KI-Unterstützung, geschrieben in Rust. Bietet Echtzeit-Zusammenarbeit und integrierte Terminalbefehle."
+    },
+    "ko": {
+      "description": "인간과 AI의 고성능 협업을 위해 Rust로 구축된 차세대 코드 편집기입니다. 에이전트 기반 편집, 다중 버퍼 편집 및 기본 Git 지원을 제공합니다."
     }
   },
   "verified": false,

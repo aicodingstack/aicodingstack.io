@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Eine leichtgewichtige IDE mit KI-Integration für schnelles Prototyping und agile Entwicklung."
+    },
+    "ko": {
+      "description": "고급 AI 지원 기능을 제공하여 코딩 상상력을 자유롭게 펼칠 수 있도록 설계된 AI 기반 지능형 코드 편집기입니다."
     }
   },
   "verified": false,

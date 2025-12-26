@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Eine intelligente IDE mit KI-gestützter Code-Vervollständigung, Debugging und Projektmanagement-Funktionen."
+    },
+    "ko": {
+      "description": "실제 소프트웨어 개발을 위한 에이전트 기반 AI 코딩 플랫폼으로, 코드 생성 및 프로젝트 수준 작업을 처리하는 컨텍스트 인식형 지능형 에이전트를 통합합니다."
     }
   },
   "verified": false,

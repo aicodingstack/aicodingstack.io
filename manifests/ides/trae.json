@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Eine spezialisierte IDE mit KI-Features für moderne Entwicklungsworkflows und Team-Zusammenarbeit."
+    },
+    "ko": {
+      "description": "실시간 코드 완성, 채팅 기반 지원 및 자율 코드 생성(Builder/SOLO 모드)을 제공하는 10배 효율의 \"AI 엔지니어\" 역할을 하는 AI 기반 IDE입니다."
     }
   },
   "verified": false,
