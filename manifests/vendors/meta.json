@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Technologieunternehmen, das KI-Tools und Open-Source-Modelle wie Llama entwickelt und durch offene Wissenschaft Forschung vorantreibt."
+    },
+    "ko": {
+      "description": "Llama와 같은 AI 도구와 오픈 소스 모델을 구축하는 기술 기업으로, 오픈 사이언스를 통해 연구를 발전시키고 전 세계 사람들을 연결하며 혁신을 가능하게 합니다."
     }
   },
   "verified": false,

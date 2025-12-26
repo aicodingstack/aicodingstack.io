@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Hochleistungs-Multiplayer-Code-Editor in Rust von den Entwicklern von Atom und Tree-sitter, entwickelt für die Zusammenarbeit mit Menschen und KI."
+    },
+    "ko": {
+      "description": "Atom과 Tree-sitter 제작자가 Rust로 만든 고성능 멀티플레이어 코드 편집기로, 인간과 AI의 협업을 위해 설계되었습니다."
     }
   },
   "verified": false,

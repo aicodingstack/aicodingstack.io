@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Open-Source-Framework zum Erstellen moderner Full-Stack-Anwendungen auf AWS mit serverloser Architektur, unterstützt von Y Combinator."
+    },
+    "ko": {
+      "description": "서버리스 아키텍처를 사용하여 AWS에서 현대적인 풀스택 애플리케이션을 구축하는 오픈 소스 프레임워크로, Y Combinator의 지원을 받으며 Pulumi 및 Terraform 엔진을 사용합니다."
     }
   },
   "verified": false,

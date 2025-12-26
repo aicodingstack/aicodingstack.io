@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "领先的 AI 研究公司，专注于开发安全且有益的通用人工智能。"
+    },
+    "de": {
+      "description": "Ein führendes KI-Forschungsunternehmen, das sich auf die Entwicklung sicherer und nützlicher KI-Allgemeinintelligenz konzentriert."
+    },
+    "ko": {
+      "description": "안전하고 유익한 인공 일반 지능(AGI) 개발에 집중하는 선도적인 AI 연구 기업입니다."
     }
   },
   "verified": false,

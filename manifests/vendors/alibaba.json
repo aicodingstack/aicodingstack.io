@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Chinesisches multinationales Technologieunternehmen spezialisiert auf E-Commerce, Einzelhandel, Cloud Computing, KI und digitale Dienste."
+    },
+    "ko": {
+      "description": "알리바바.com, 타오바오 및 알리바바 클라우드와 같은 플랫폼을 통해 전자상거래, 소매, 클라우드 컴퓨팅, AI 및 디지털 서비스를 전문으로 하는 중국의 다국적 기술 기업입니다."
     }
   },
   "verified": false,

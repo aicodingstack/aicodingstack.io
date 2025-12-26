@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "提供 AI 驱动的编码平台，通过 CLI 工具和 IDE 扩展提供先进的代码生成、调试和开发工作流。"
+    },
+    "de": {
+      "description": "Eine KI-gesteuerte Coding-Plattform mit fortschrittlicher Code-Generierung, Debugging und Entwicklungs-Workflows über CLI-Tools und IDE-Erweiterungen."
+    },
+    "ko": {
+      "description": "CLI 도구 및 IDE 확장을 통해 고급 코드 생성, 디버깅 및 개발 워크플로우를 제공하는 AI 기반 코딩 플랫폼입니다."
     }
   },
   "verified": true,

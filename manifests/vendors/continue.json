@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Open-Source-Plattform zur Automatisierung von Coding-Workflows durch Hintergrund-Agenten, CLI-Tools und IDE-Integrationen mit Multi-Modell-Unterstützung."
+    },
+    "ko": {
+      "description": "백그라운드 에이전트, CLI 도구 및 IDE 통합 그리고 다중 모델 지원을 통해 개발자가 코딩 워크플로우를 자동화할 수 있도록 하는 오픈 소스 플랫폼입니다."
     }
   },
   "verified": false,

@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "专注于编程未来的应用研究实验室,由研究人员、工程师和技术专家组成,致力于在实用性和可能性的边缘进行创新。"
+    },
+    "de": {
+      "description": "Anwendungs-Forschungslabor, das an der Zukunft des Programmierens arbeitet. Eine Gruppe von Forschern, Ingenieuren und Technologen, die an der Grenze des Nützlichen und Möglichen erfinden."
+    },
+    "ko": {
+      "description": "프로그래밍의 미래를 연구하는 응용 연구실로, 연구원, 엔지니어 및 기술 전문가로 구성되어 실용성과 가능성의 경계에서 혁신을 만듭니다."
     }
   },
   "verified": false,

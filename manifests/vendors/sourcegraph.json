@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "代码智能平台，提供通用代码搜索、导航和 AI 驱动的开发工具，包括 Amp 编码 Agent。"
+    },
+    "de": {
+      "description": "Eine Code-Intelligenz-Plattform mit universeller Codesuche, Navigation und KI-gesteuerten Entwicklungstools einschließlich des Amp-Coding-Agenten."
+    },
+    "ko": {
+      "description": "범용 코드 검색, 탐색 및 AI 기반 개발 도구(Amp 코딩 에이전트 포함)를 제공하는 코드 인텔리전스 플랫폼입니다."
     }
   },
   "verified": false,

@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Softwareentwicklungs-Tools-Unternehmen, das intelligente IDEs für die meisten Programmiersprachen entwickelt, einschließlich IntelliJ IDEA, PyCharm und Kotlin."
+    },
+    "ko": {
+      "description": "IntelliJ IDEA, PyCharm 및 Kotlin 프로그래밍 언어를 포함하여 대부분의 프로그래밍 언어용 지능형 IDE를 만드는 소프트웨어 개발 도구 회사입니다."
     }
   },
   "verified": false,

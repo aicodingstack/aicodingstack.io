@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Open-Source-KI-Community-Organisation zur Förderung der KI-Demokratisierung und Beschleunigung des AGI-Fortschritts durch kollaborative Entwicklung."
+    },
+    "ko": {
+      "description": "AI 민주화를 촉진하고 AGI 발전을 가속화하는 오픈 소스 AI 커뮤니티 조직으로, 협업 개발 및 연구 프로젝트를 통해 목표를 실현합니다."
     }
   },
   "verified": false,

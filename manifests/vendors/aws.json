@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Weltweit umfassendste Cloud-Plattform mit über 240 Services für Computing, Speicher, KI/ML und Datenbanken für schnellere Innovation und Kostensenkung."
+    },
+    "ko": {
+      "description": "컴퓨팅, 스토리지, AI/ML 및 데이터베이스를 포함한 240개 이상의 서비스를 제공하는 세계에서 가장 포괄적인 클라우드 플랫폼으로, 조직이 더 빠르게 혁신하고 비용을 절감할 수 있도록 돕습니다."
     }
   },
   "verified": false,

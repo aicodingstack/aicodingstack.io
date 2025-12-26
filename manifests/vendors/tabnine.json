@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "KI-Codierungsplattform mit intelligenter Code-Vervollständigung und -Generierung über 30+ IDEs mit Unternehmenssicherheit und vollständigem Code-Datenschutz."
+    },
+    "ko": {
+      "description": "30개 이상의 IDE에서 스마트 코드 자동 완성 및 생성을 제공하는 AI 코딩 플랫폼으로, 엔터프라이즈 보안, 유연한 배포 및 완전한 코드 개인 정보 보호를 제공합니다."
     }
   },
   "verified": false,

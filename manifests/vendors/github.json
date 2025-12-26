@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "KI-gestützte Entwicklerplattform, die Millionen ermöglicht, an Code zu kollaborieren, von der Planung bis zur Bereitstellung mit integrierter Sicherheit."
+    },
+    "ko": {
+      "description": "수백만 명이 계획부터 배포까지 코드 협업을 할 수 있도록 하는 AI 기반 개발자 플랫폼으로, 내장된 보안 및 자동화 기능을 제공합니다."
     }
   },
   "verified": false,

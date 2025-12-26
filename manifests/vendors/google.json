@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "专注于互联网相关服务和产品的跨国科技公司，包括 AI 和机器学习。"
+    },
+    "de": {
+      "description": "Ein multinationaler Technologieanbieter, spezialisiert auf Internet-bezogene Dienste und Produkte, einschließlich KI und maschinelles Lernen."
+    },
+    "ko": {
+      "description": "AI 및 머신러닝을 포함한 인터넷 관련 서비스 및 제품을 전문으로 하는 다국적 기술 기업입니다."
     }
   },
   "verified": false,

@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Open-Source autonomer Codierungs-Agent für VS Code mit modell-agnostischem Design, MCP-Integration und menschlicher Genehmigungsschleife."
+    },
+    "ko": {
+      "description": "VS Code용 오픈 소스 자율 코딩 에이전트로, 모덐 통합 설계, MCP 통합 및 사람이 루프에 있는 승인을 갖추고 있으며 전 세계 400만 명 이상의 개발자가 신뢰합니다."
     }
   },
   "verified": false,

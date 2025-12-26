@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Chinesisches KI-Unternehmen, das große Sprachmodelle mit langen Kontextfähigkeiten entwickelt, Schöpfer des Kimi-Chatbots."
+    },
+    "ko": {
+      "description": "긴 컨텍스트 기능을 갖춘 대형 언어 모델을 개발하는 중국 AI 기업으로, Kimi 챗봇과 K 시리즈 모델을 만들었으며 알리바바와 텐센트의 지원을 받습니다."
     }
   },
   "verified": false,

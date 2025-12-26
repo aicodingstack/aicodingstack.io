@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Video-Cloud-Service-Marke von Kuaishou, die Live-Streaming, Videoverarbeitung und Content-Delivery-Funktionen bereitstellt."
+    },
+    "ko": {
+      "description": "콰이선에서 분사된 비디오 클라우드 서비스 브랜드로, 숏쉽 비디오 플랫폼 운영 경험을 활용하여 라이브 스트리밍, 비디오 처리 및 콘텐츠 배포 기능을 제공합니다."
     }
   },
   "verified": false,

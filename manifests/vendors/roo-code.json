@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Open-Source-KI-Coding-Assistent mit einem Team von KI-Agenten in VS Code, Multi-Datei-Fähigkeiten und berechtigungsbasierter Kontrolle."
+    },
+    "ko": {
+      "description": "VS Code에서 에이전트 개발 팀을 제공하는 오픈 소스 AI 코딩 어시스턴트로, 다중 파일 기능, 모델 유연성 및 권한 기반 제어를 갖추고 있습니다."
     }
   },
   "verified": false,
