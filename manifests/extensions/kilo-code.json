@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "开源 AI 编码代理，支持来自 60+ 提供商的 500+ 模型，提供透明定价。具备多模式编排、自动错误恢复、并行代理和 MCP 市场。"
+    },
+    "de": {
+      "description": "Open-Source-KI-Coding-Agent, der 500+ Modelle von 60+ Anbietern mit transparenten Preisen unterstützt. Bietet Multi-Modus-Orchestrierung, automatische Fehlerbehebung, parallele Agenten und einen Marktplatz für MCP."
+    },
+    "ko": {
+      "description": "60개 이상의 제공업체에서 500개 이상의 모델을 지원하고 투명한 가격을 제공하는 오픈 소스 AI 코딩 에이전트입니다. 멀티 모드 오케스트레이션, 자동 오류 복구, 병렬 에이전트 및 MCP 마켓플레이스를 제공합니다."
     }
   },
   "verified": true,

@@ -10,7 +10,10 @@
       "description": "Google 的 AI 代码辅助工具，提供 IDE 中的代码补全、生成和优化功能。"
     },
     "de": {
-      "description": "Googles KI-Programmierassistent mit Code-Vervollständigung und -Optimierung für IDEs."
+      "description": "Googles KI-Programmierassistent mit Code-Vervollständigung, -Generierung und -Optimierung für IDEs."
+    },
+    "ko": {
+      "description": "Google의 AI 코딩 어시스턴트로 IDE에서 코드 자동 완성, 생성 및 최적화 기능을 제공합니다."
     }
   },
   "verified": true,

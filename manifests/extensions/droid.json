@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "AI 开发平台，提供 Droids —— 在工作流中自动化软件任务的自主编码 Agent。Droids 重构代码、处理调试和测试并生成功能。"
+    },
+    "de": {
+      "description": "Eine KI-Entwicklungsplattform mit \"Droids\" - autonomen Coding-Agenten, die Softwareaufgaben über Workflows automatisieren. Droids refactorieren Code, übernehmen Debugging und Tests und generieren Funktionen."
+    },
+    "ko": {
+      "description": "워크플로우에서 소프트웨어 작업을 자동화하는 자율 코딩 에이전트인 'Droids'를 제공하는 AI 개발 플랫폼입니다. Droids는 코드를 리팩터링하고 디버깅 및 테스트를 처리하며 기능을 생성합니다."
     }
   },
   "verified": false,

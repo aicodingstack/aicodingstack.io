@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "适用于 VS Code、Cursor 和 Windsurf 的前沿编码 Agent。具有自主推理、全面编辑和会话共享功能。"
+    },
+    "de": {
+      "description": "Ein vorderster Coding-Agent von Sourcegraph für VS Code, Cursor und Windsurf. Mit autonomem Reasoning, umfassendem Editing und gemeinsamen Sessions."
+    },
+    "ko": {
+      "description": "VS Code, Cursor 및 Windsurf를 위한 최전선 코딩 에이전트입니다. 자율 추론, 포괄적인 편집 및 세션 공유 기능을 제공합니다."
     }
   },
   "verified": false,

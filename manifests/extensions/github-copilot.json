@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "GitHub Copilot 是一个 AI 结对程序员，帮助您更快地编写代码并减少工作量。它从注释和代码中获取上下文，建议单行代码和整个函数。"
+    },
+    "de": {
+      "description": "GitHub Copilot ist ein KI-Pair-Programmer, der hilft, schneller und mit weniger Aufwand Code zu schreiben. Es extrahiert Kontext aus Kommentaren und Code, um einzelne Zeilen und gesamte Funktionen vorzuschlagen."
+    },
+    "ko": {
+      "description": "GitHub Copilot은 더 빠르고 적은 노력으로 코드를 작성할 수 있도록 도와주는 AI 페어 프로그래머입니다. 주석과 코드에서 컨텍스트를 추출하여 단일 코드 줄과 전체 함수를 제안합니다."
     }
   },
   "verified": false,

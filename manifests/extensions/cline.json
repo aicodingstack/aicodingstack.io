@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "Cline 是一个开源的协作式编码 Agent，用于复杂工作。它提供计划-执行工作流程，具有完全透明性、模型自由度和企业级安全的客户端架构。"
+    },
+    "de": {
+      "description": "Cline ist ein Open-Source-Collaborative-Coding-Agent für komplexe Aufgaben. Bietet Plan-und-Akt-Workflow mit vollständiger Transparenz, Modellfreiheit und clientseitiger Architektur für Unternehmenssicherheit."
+    },
+    "ko": {
+      "description": "Cline는 복잡한 작업을 위한 오픈 소스 협업 코딩 에이전트입니다. 계획 후 실행 워크플로우를 제공하며 완전한 투명성, 모델 자유도 및 엔터프라이즈 보안을 위한 클라이언트 측 아키텍처를 갖추고 있습니다."
     }
   },
   "verified": false,

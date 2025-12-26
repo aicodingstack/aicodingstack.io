@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "OpenAI 的 Codex 是一个集成到 IDE 中的 AI 编码助手扩展。通过自然语言命令读取、修改和运行代码，支持构建、调试和自动化编码任务。"
+    },
+    "de": {
+      "description": "OpenAIs Codex ist eine KI-Programmierassistent-Erweiterung für Ihre IDE. Liest, modifiziert und führt Code durch natürliche Sprachbefehle aus, was das Erstellen, Debugging und Automatisieren von Programmieraufgaben ermöglicht."
+    },
+    "ko": {
+      "description": "OpenAI의 Codex는 IDE에 통합되는 AI 코딩 어시스턴트 확장 프로그램입니다. 자연어 명령을 통해 코드를 읽고, 수정하고 실행하며, 코드 빌딩, 디버깅 및 자동화를 지원합니다."
     }
   },
   "verified": false,

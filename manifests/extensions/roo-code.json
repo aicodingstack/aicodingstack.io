@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "Roo Code 是一个开源的 AI 驱动编码助手，提供用于规划、架构、调试等的专门模式。它支持任何 AI 模型，具有精细的自动批准和完全自定义功能。"
+    },
+    "de": {
+      "description": "Roo Code ist ein Open-Source-KI-Programmierassistent mit spezialisierten Modi für Planung, Architektur und Debugging. Modellagnostisch mit granularer Auto-Genehmigung und vollständiger Anpassbarkeit."
+    },
+    "ko": {
+      "description": "Roo Code는 계획, 아키텍처, 디버깅 등을 위한 전문 모드를 제공하는 오픈 소스 AI 코딩 어시스턴트입니다. 모든 AI 모델을 지원하며 세밀한 자동 승인과 완전한 사용자 정의가 가능합니다."
     }
   },
   "verified": false,

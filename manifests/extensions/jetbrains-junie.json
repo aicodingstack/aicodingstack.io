@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "JetBrains Junie 是一个 AI 编码 Agent，可以自主执行任务或与开发者协作。它独立处理常规任务，同时协助复杂工作。"
+    },
+    "de": {
+      "description": "JetBrains Junie ist ein KI-Coding-Agent, der Aufgaben autonom ausführt oder mit Entwicklern zusammenarbeitet. Er übernimmt Routineaufgaben selbstständig und unterstützt bei komplexen Aufgaben."
+    },
+    "ko": {
+      "description": "JetBrains Junie는 작업을 자율적으로 실행하거나 개발자와 협업할 수 있는 AI 코딩 에이전트입니다. 일상 작업을 독립적으로 처리하며 복잡한 작업을 지원합니다."
     }
   },
   "verified": false,
