@@ -1,0 +1,28 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "orionstar",
+  "name": "OrionStar",
+  "description": "A leading global service robot and AI solutions company founded in 2016, dedicated to using artificial intelligence technology to create the next generation of revolutionary robots and AI tools.",
+  "translations": {
+    "zh-Hans": {
+      "description": "成立于2016年的全球领先服务机器人和人工智能解决方案公司，致力于利用人工智能技术创造下一代革命性机器人和AI工具。"
+    },
+    "de": {
+      "description": "Ein führendes globales Unternehmen für Serviceroboter und KI-Lösungen, gegründet 2016, das sich der Entwicklung revolutionärer Roboter und KI-Tools der nächsten Generation widmet."
+    },
+    "ko": {
+      "description": "2016년에 설립된 글로벌 선도 서비스 로봇 및 AI 솔루션 회사로, 차세대 혁신적인 로봇 및 AI 도구를 만들기 위해 인공지능 기술을 사용합니다."
+    }
+  },
+  "verified": false,
+  "websiteUrl": "https://en.orionstar.com",
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/orionstar/",
+    "twitter": null,
+    "github": "https://github.com/OrionStarAI",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  }
+}

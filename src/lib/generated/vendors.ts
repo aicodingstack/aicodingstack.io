@@ -27,6 +27,7 @@ import Moonshot from '../../../manifests/vendors/moonshot.json'
 import MoonshotAi from '../../../manifests/vendors/moonshot-ai.json'
 import Openai from '../../../manifests/vendors/openai.json'
 import Openrouter from '../../../manifests/vendors/openrouter.json'
+import Orionstar from '../../../manifests/vendors/orionstar.json'
 import RooCode from '../../../manifests/vendors/roo-code.json'
 import ShareaiLab from '../../../manifests/vendors/shareai-lab.json'
 import Siliconflow from '../../../manifests/vendors/siliconflow.json'
@@ -65,6 +66,7 @@ export const vendorsData = [
   MoonshotAi,
   Openai,
   Openrouter,
+  Orionstar,
   RooCode,
   ShareaiLab,
   Siliconflow,
