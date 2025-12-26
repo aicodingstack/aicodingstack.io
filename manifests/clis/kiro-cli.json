@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Agentic AI-Entwicklungs-CLI für Prototyp bis Produktion. Mit Spec-driven Development, Agent-Hooks, Web-Suche und natürlichsprachlicher Codierungsunterstützung im Terminal."
+    },
+    "ko": {
+      "description": "프로토타입에서 프로덕션까지 구축하기 위한 에이전트 기반 AI 개발 CLI입니다. 사양 기반 개발, 에이전트 후크, 웹 검색 기능 및 터미널에서의 자연어 코딩 지원을 제공합니다."
     }
   },
   "verified": false,

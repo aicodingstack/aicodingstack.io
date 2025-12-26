@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Factory AIs Droid CLI ist ein terminalbasierter Codierungs-Agent, der vollständige Feature-Entwicklung von Planung bis Testing übernimmt. Integriert Enterprise-Tools mit transparenten Diff-Reviews."
+    },
+    "ko": {
+      "description": "Factory AI의 Droid CLI는 계획부터 테스트까지 완전한 기능 개발을 처리하는 터미널 기반 코딩 에이전트입니다. 엔터프라이즈 도구와 통합되며 투명한 diff 검토를 제공합니다."
     }
   },
   "verified": false,

@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Augment Code CLI bringt autonome KI-Agenten mit branchenführender Kontext-Engine in Ihr Terminal. Bietet native TUI, automatisierte Workflows und tiefes Codebasis-Verständnis."
+    },
+    "ko": {
+      "description": "Augment Code CLI는 업계 최고의 컨텍스트 엔진을 갖춘 자율 AI 에이전트를 터미널로 가져옵니다. 네이티브 TUI, 자동화된 워크플로우 및 깊은 코드베이스 이해를 제공합니다."
     }
   },
   "verified": false,

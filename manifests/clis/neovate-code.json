@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Neovate Code CLI ist ein moderner Codierungs-Agent mit fortschrittlichem Kontextmanagement, iterativer Code-Verfeinerung und nahtloser Git-Integration. Verfügbar als CLI und Erweiterung."
+    },
+    "ko": {
+      "description": "알리바바 그룹의 Neovate Code는 오픈 소스 스마트 프로그래밍 어시스턴트입니다. 코드 생성, 버그 수정, 코드 검토 및 테스트 추가를 제공하며 유연한 다중 클라이언트 아키텍처를 갖추고 있습니다."
     }
   },
   "verified": false,

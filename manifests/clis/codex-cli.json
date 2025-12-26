@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "OpenAIs Codex CLI ist ein lokaler Codierungs-Agent, der Code über natürliche Sprache liest, modifiziert und ausführt. Ermöglicht Erstellen, Debuggen und Automatisieren von Aufgaben."
+    },
+    "ko": {
+      "description": "OpenAI의 Codex CLI는 자연어 명령을 통해 코드를 읽고, 수정하고 실행하는 로컬 코딩 에이전트입니다. 코드 빌드, 디버깅 및 자동화 작업을 지원합니다."
     }
   },
   "verified": false,

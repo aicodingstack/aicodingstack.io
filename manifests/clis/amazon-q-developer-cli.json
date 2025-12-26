@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Amazon Q Developer CLI ist ein agentischer KI-Assistent in Ihrer CLI, der Aufgaben ausführt, Ihre Codebasis versteht und die Entwicklung durch adaptiven, natürlichen Dialog beschleunigt."
+    },
+    "ko": {
+      "description": "Amazon Q Developer CLI는 CLI에서 작업을 실행하고 코드베이스를 이해하며 적응형 자연 대화를 통해 개발 속도를 높이는 지능형 AI 어시스턴트입니다."
     }
   },
   "verified": false,

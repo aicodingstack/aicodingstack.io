@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Kilo Code CLI ist ein Open-Source-Codierungs-Agent, der Aufgabenplanung, Code-Generierung und automatisierte Tests kombiniert. Integriert mit verschiedenen LLMs und bietet anpassbare Workflows."
+    },
+    "ko": {
+      "description": "Kilo Code CLI는 AI 코딩 어시스턴트의 강력한 기능을 터미널로 직접 가져옵니다. 자연어 명령을 통해 고급 코드 생성, 디버깅 및 개발 워크플로우를 경험하세요."
     }
   },
   "verified": true,

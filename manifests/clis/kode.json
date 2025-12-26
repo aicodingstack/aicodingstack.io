@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Kode ist ein Open-Source-Terminal-Codierungs-Agent mit Multimodal-Eingabe, Schritt-für-Schritt-Ausführung und transparenter Codeänderungsverfolgung. Unterstützt mehrere LLM-Anbieter."
+    },
+    "ko": {
+      "description": "Kode는 코드베이스를 이해하고, 파일을 편집하고, 명령을 실행하며 전체 개발 워크플로우를 처리하는 오픈 소스 AI 코딩 어시스턴트입니다. 다중 모델 지원으로 Claude Code를 확장합니다."
     }
   },
   "verified": false,

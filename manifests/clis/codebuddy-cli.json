@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "CodeBuddy CLI ist ein KI-gesteuerter Code-Editor, der intelligente Code-Generierung, Debugging und Entwicklungs-Workflows in Ihr Terminal integriert. Bietet TUI-Modus und Inline-Chat."
+    },
+    "ko": {
+      "description": "CodeBuddy CLI는 스마트 코드 생성, 디버깅 및 개발 워크플로우를 터미널에 통합하는 AI 기반 코드 편집기입니다. TUI 모드와 인라인 채팅을 제공합니다."
     }
   },
   "verified": false,

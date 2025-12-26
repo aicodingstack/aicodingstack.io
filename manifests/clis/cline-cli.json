@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Cline CLI ermöglicht headless Aufgabenausführung vom Terminal und integriert Cline überall. Verwenden Sie es, um GitHub Actions, Discord-Bots und Linear-Tickets mit kollaborativer KI zu betreiben."
+    },
+    "ko": {
+      "description": "Cline CLI는 터미널에서 헤드리스 작업 실행을 지원하고 Cline을 어디서든 통합할 수 있습니다. 협업 AI로 GitHub Actions, Discord 봇 및 Linear 티켓을 구동하는 데 사용하세요."
     }
   },
   "verified": false,

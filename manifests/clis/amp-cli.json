@@ -9,6 +9,9 @@
     },
     "de": {
       "description": "Ein fortschrittlicher Codierungs-Agent von Sourcegraph, der autonomes Denken, Code-Bearbeitung und komplexe Aufgaben ausführt. Verfügbar als CLI und in VS Code, Cursor und Windsurf."
+    },
+    "ko": {
+      "description": "Sourcegraph의 최전선 코딩 에이전트로, 자율 추론, 코드 편집 및 복잡한 작업을 수행합니다. CLI로 제공되며 VS Code, Cursor 및 Windsurf에서 사용할 수 있습니다."
     }
   },
   "verified": false,
