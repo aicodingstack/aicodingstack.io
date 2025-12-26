@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "一个 108B 基础模型，具备原生多模态函数调用、128K 上下文和卓越的图像-文本-文本任务视觉理解能力。"
+    },
+    "de": {
+      "description": "Ein 108B-Basismodell mit nativer multimodaler Funktionsaufrufung, 128K-Kontext und hervorragendem visuellen Verständnis für Bild-zu-Text-Aufgaben."
+    },
+    "ko": {
+      "description": "108B 기본 모델로, 기본적인 멀티모달 함수 호출, 128K 컨텍스트 및 이미지-텍스트 변환 작업에 뛰어난 시각 이해 능력을 갖추고 있습니다."
     }
   },
   "verified": false,

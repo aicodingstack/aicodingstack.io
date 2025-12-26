@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "显著增强了其前身 Sonnet 3.7 的能力，在编码和推理任务方面表现出色，具有改进的精度和可控性。在 SWE-bench 上达到 72.7% 的最先进性能，Sonnet 4 在能力和计算效率之间取得了平衡。"
+    },
+    "de": {
+      "description": "Verbessert die Fähigkeiten von Sonnet 3.7 mit verbesserter Präzision und Kontrollierbarkeit bei Codierung und Reasoning. Erreicht 72.7% auf SWE-bench, balanciert Fähigkeit und Recheneffizienz."
+    },
+    "ko": {
+      "description": "Sonnet 3.7의 기능을 크게 향상하여 코딩 및 추론 작업에서 개선된 정밀도와 제어 가능성을 제공합니다. SWE-bench에서 72.7%를 달성하여 능력과 연산 효율성 사이의 균형을 이룹니다."
     }
   },
   "verified": false,

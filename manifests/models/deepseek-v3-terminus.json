@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "DeepSeek V3.1 Terminus 扩展版本，67B 参数，64K 上下文窗口，专为高级推理和代码生成任务设计。"
+    },
+    "de": {
+      "description": "Erweiterte Version von DeepSeek V3.1 Terminus mit 67B-Parametern und 64K-Kontextfenster, entwickelt für fortgeschrittenes Reasoning und Code-Generierung."
+    },
+    "ko": {
+      "description": "DeepSeek V3.1 Terminus 확장 버전으로, 67B 파라미터와 64K 컨텍스트 윈도를 갖추고 있으며고급 추론 및 코드 생성 작업을 위해 설계되었습니다."
     }
   },
   "verified": false,

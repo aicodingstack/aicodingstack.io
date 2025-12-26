@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "Anthropic 迄今为止最先进的 Sonnet 模型，针对真实世界的代理和编码工作流程进行了优化。在 SWE-bench Verified 等编码基准测试中表现出色，在系统设计、代码安全和规范遵循方面有所提升。"
+    },
+    "de": {
+      "description": "Anthropics fortschrittlichstes Sonnet-Modell, optimiert für reale Agenten und Coding-Workflows. Sehr gute Leistung bei Codierungsbenchmarks wie SWE-bench Verified mit Verbesserungen bei Systemdesign."
+    },
+    "ko": {
+      "description": "실제 에이전트 및 코딩 워크플로우를 위해 최적화된 Anthropic의 가장 진보된 Sonnet 모델입니다. SWE-bench Verified와 같은 코드 벤치마크 테스트에서 우수한 성능을 발휘하며 시스템 설계 및 코드 보안에서 개선이 있습니다."
     }
   },
   "verified": false,

@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "OpenAI 最先进的模型，在推理、代码质量和用户体验方面有重大改进。针对需要逐步推理、遵循指令和高准确性的复杂任务进行了优化。"
+    },
+    "de": {
+      "description": "OpenAIs fortschrittlichstes Modell mit erheblichen Verbesserungen in Reasoning, Codequalität und UX. Optimiert für komplexe Aufgaben mit schrittweisem Reasoning und hoher Genauigkeit."
+    },
+    "ko": {
+      "description": "추론, 코드 품질 및 사용자 경험에 큰 개선이 있는 OpenAI의 가장 진보된 모델입니다. 점진적 추론, 지시 따르기 및 높은 정확도가 필요한 복잡한 작업에 최적화되었습니다."
     }
   },
   "verified": false,

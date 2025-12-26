@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "2025年8月发布的 Claude Opus 4.1，是 Anthropic 最新的旗舰模型，具备卓越的编码能力，在 HumanEval+ 上达到 85.2%（首次超越 GPT-4o 的 84.9%），在 SWE-bench Verified 上达到 74.5%，拥有 200K 上下文窗口，适用于复杂的代码生成任务。"
+    },
+    "de": {
+      "description": "Im August 2025 veröffentlicht, erreicht Claude Opus 4.1 85.2% auf HumanEval+ (übertrifft GPT-4o) und 74.5% auf SWE-bench Verified, mit 200K-Kontextfenster für komplexe Codierungsaufgaben."
+    },
+    "ko": {
+      "description": "2025년 8월에 출시된 Claude Opus 4.1은 Anthropic의 최신 플래그십 모델로, HumanEval+에서 85.2%(GPT-4o의 84.9% 초과), SWE-bench Verified에서 74.5%를 달성하며 복잡한 코드 생성 작업을 위한 200K 컨텍스트 윈도를 갖추고 있습니다."
     }
   },
   "verified": false,

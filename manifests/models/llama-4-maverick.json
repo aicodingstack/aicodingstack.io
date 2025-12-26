@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "Meta 推出的高容量多模态语言模型，基于混合专家（MoE）架构构建，拥有 128 个专家，每次前向传播激活 170 亿参数（总计 400B）。支持多语言文本和图像输入，并生成多语言文本和代码输出，支持 12 种语言。"
+    },
+    "de": {
+      "description": "Metas hochkapazitatives multimodales Sprachmodell mit MoE-Architektur (128 Experten, 17B aktiv, 400B gesamt). Unterstützt mehrsprachigen Text-/Bildinput und Text-/Code-Output in 12 Sprachen."
+    },
+    "ko": {
+      "description": "Meta의 고용량 멀티모달 언어 모델로, 혼합 전문가(MoE) 아키텍처로 구축되었으며 128개의 전문가를 보유하고 있고 순방 전파 시 170억 파라미터(총 400B)를 활성화합니다. 12개 언어의 다국어 텍스트 및 이미지 입력을 지원하며 다국어 텍스트 및 코드 출력을 지원합니다."
     }
   },
   "verified": false,

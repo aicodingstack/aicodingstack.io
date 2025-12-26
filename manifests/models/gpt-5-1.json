@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "GPT-5 系列的最新前沿级模型，提供更强的通用推理能力、改进的指令遵循和更自然的对话风格。使用自适应推理动态分配计算，对简单查询快速响应，同时对复杂任务进行更深入的思考。"
+    },
+    "de": {
+      "description": "Aktuelles GPT-5-Serienmodell mit stärkerem Reasoning und natürlicher Konversation. Verwendet adaptives Reasoning für schnelle Antworten auf einfache Anfragen und tieferes Denken bei komplexen Aufgaben."
+    },
+    "ko": {
+      "description": "GPT-5 시리즈의 최신 최첨단 모델로, 더 강력한 일반 추론 능력, 개선된 지시 따르기 및 더 자연적인 대화 스타일을 제공합니다. 간단 쿼리에 대한 빠른 응답과 복잡한 작업에 대한 깊이 있는 사고를 위해 적응형 추론을 사용합니다."
     }
   },
   "verified": false,

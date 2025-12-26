@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "OpenAI 的旗舰多模态模型，专为编码任务优化，具备 128K 上下文窗口和先进的推理能力，适用于代码生成和调试。"
+    },
+    "de": {
+      "description": "OpenAIs Flagship-Multimodalmodell, optimiert für Codierungsaufgaben mit 128K-Kontextfenster und fortschrittlichem Reasoning."
+    },
+    "ko": {
+      "description": "코드 생성 및 디버깅에 적합한 128K 컨텍스트 윈도와 고급 추론 기능을 갖춘 OpenAI의 플래그십 멀티모달 모델로, 코딩 작업에 최적화되었습니다."
     }
   },
   "verified": false,

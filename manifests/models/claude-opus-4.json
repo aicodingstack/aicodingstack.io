@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "Claude Opus 4 是 Anthropic 推出的 200K 上下文窗口语言模型，专为复杂的代码生成任务设计。"
+    },
+    "de": {
+      "description": "Claude Opus 4 ist ein 200K-Kontextfenster-Sprachmodell von Anthropic, entwickelt für komplexe Codierungsaufgaben."
+    },
+    "ko": {
+      "description": "Claude Opus 4는 복잡한 코드 생성 작업을 위해 설계된 Anthropic의 200K 컨텍스트 윈도 언어 모델입니다."
     }
   },
   "verified": false,

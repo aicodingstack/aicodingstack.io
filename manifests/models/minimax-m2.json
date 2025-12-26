@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "MiniMax 推出的 230B 参数混合专家模型（MoE），具备 204.8K 上下文窗口，专为智能代理和编程任务设计。每次推理激活 10B 参数。"
+    },
+    "de": {
+      "description": "Ein 230B-Parameter-MoE-Modell von MiniMax mit 204.8K-Kontextfenster, entwickelt für intelligente Agenten und Programmieraufgaben. Aktiviert 10B Parameter pro Inferenz."
+    },
+    "ko": {
+      "description": "MiniMax의 230B 파라미터 MoE 모델로, 204.8K 컨텍스트 윈도를 갖추고 있으며 지능형 에이전트 및 프로그래밍 작업을 위해 설계되었습니다. 추론 시마다 10B 파라미터를 활성화합니다."
     }
   },
   "verified": false,

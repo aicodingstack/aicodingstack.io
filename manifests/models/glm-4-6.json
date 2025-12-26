@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "GLM 4.6 是 Z.ai 推出的 9B 参数语言模型，具备 128K 上下文窗口，专为高效性能和多语言理解优化。"
+    },
+    "de": {
+      "description": "GLM 4.6 ist ein 9B-Parameter-Sprachmodell von Z.ai mit 128K-Kontextfenster, optimiert für effiziente Leistung und mehrsprachiges Verständnis."
+    },
+    "ko": {
+      "description": "GLM 4.6은 Z.ai의 9B 파라미터 언어 모델로, 128K 컨텍스트 윈도를 갖추고 있으며 효율적인 성능과 다국어 이해를 위해 최적화되었습니다."
     }
   },
   "verified": false,

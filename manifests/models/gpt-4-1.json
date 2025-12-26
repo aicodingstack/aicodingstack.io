@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "2025年4月发布的 GPT-4.1，在编码和前端 Web 开发方面表现出特别显著的改进，支持 100 万 token 上下文窗口，适用于复杂的编码任务。"
+    },
+    "de": {
+      "description": "Im April 2025 veröffentlicht, zeigt GPT-4.1 besonders signifikante Verbesserungen bei Codierung und Frontend-Webentwicklung mit 1M-Token-Kontextfenster für komplexe Aufgaben."
+    },
+    "ko": {
+      "description": "2025년 4월에 출시된 GPT-4.1은 코딩 및 프론트엔드 웹 개발에서 특히 큰 개선을 보여하며, 100만 토큰 컨텍스트 윈도로 복잡한 코딩 작업에 적합합니다."
     }
   },
   "verified": false,

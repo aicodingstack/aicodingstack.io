@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "Google 最先进的主力模型，专为高级推理、编码、数学和科学任务设计。包含内置\"思考\"能力，能够提供更准确和细致的上下文处理响应。"
+    },
+    "de": {
+      "description": "Googles fortschrittlichstes Workhorse-Modell für fortgeschrittenes Reasoning, Codierung, Mathematik und Wissenschaft. Mit integriertem Thinking für präzisere Antworten."
+    },
+    "ko": {
+      "description": "고급 추론, 코딩, 수학 및 과학 작업을 위해 설계된 Google의 최첨단 워크호스 모델입니다. 더 정확하고 세밀한 컨텍스트 처리 응답을 제공하는 통합 \"생각\" 능력이 있습니다."
     }
   },
   "verified": false,

@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "Cursor 发布的高速前沿编码模型，采用 MoE 架构与强化学习针对交互式软件工程优化，可在真实开发环境中快速提供代码辅助。"
+    },
+    "de": {
+      "description": "Schnelles Grenzwissen-Codierungsmodell von Cursor, optimiert mit RL und als Mixture-of-Experts für interaktive Softwareentwicklung."
+    },
+    "ko": {
+      "description": "Cursor에서 출시한 고속 최전선 코딩 모델로, MoE 아키텍처와 강화 학습을 사용하여 대화형 소프트웨어 엔지니어링에 최적화되어 있습니다."
     }
   },
   "verified": false,

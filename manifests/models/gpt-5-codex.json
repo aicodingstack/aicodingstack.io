@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "GPT-5 的专门版本，针对软件工程和编码工作流程进行了优化。专为交互式开发会话和长时间独立执行复杂工程任务而设计。支持从零开始构建项目、功能开发、调试、大规模重构和代码审查。"
+    },
+    "de": {
+      "description": "GPT-5 optimiert für Software-Ingenieurwesen und Coding-Workflows. Designed für interaktive Entwicklung und langfristige komplexe Aufgaben: Projektentwicklung, Debugging, Refactoring und Code-Review."
+    },
+    "ko": {
+      "description": "소프트웨어 엔지니어링 및 코딩 워크플로우에 최적화된 GPT-5의 전문 버전입니다. 대화형 개발 및 복잡한 엔지니어링 작업을 독립적으로 실행하도록 설계되었습니다. 프로젝트 구축, 기능 개발, 디버깅, 대규모 리팩터링 및 코드 리뷰를 지원합니다."
     }
   },
   "verified": false,

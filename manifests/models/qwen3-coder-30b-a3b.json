@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "Qwen3 Coder 是专为代码生成设计的模型，32B 参数，32K 上下文窗口，优化了代码编写和调试任务的效率。"
+    },
+    "de": {
+      "description": "Qwen3 Coder ist ein spezialisiertes Code-Generierungsmodell mit 32B-Parametern und 32K-Kontextfenster, optimiert für effizientes Coden und Debugging."
+    },
+    "ko": {
+      "description": "Qwen3 Coder는 코드 생성을 위해 설계된 모델로, 32B 파라미터와 32K 컨텍스트 윈도를 갖추고 있으며 효율적인 코드 작성 및 디버깅 작업에 최적화되었습니다."
     }
   },
   "verified": false,

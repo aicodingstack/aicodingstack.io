@@ -6,6 +6,12 @@
   "translations": {
     "zh-Hans": {
       "description": "月之暗面推出的 200B 参数大语言模型，具备 200K 上下文窗口，专为长文本推理和指令遵循优化。"
+    },
+    "de": {
+      "description": "Ein 200B-Parameter-Großsprachmodell von Moonshot AI mit 200K-Kontextfenster, optimiert für Long-Context-Reasoning und Instruction-Following."
+    },
+    "ko": {
+      "description": "Moonshot AI의 200B 파라미터 대형 언어 모델로, 200K 컨텍스트 윈도를 갖추고 있으며 긴 컨텍스트 추론 및 지시 따르기에 최적화되었습니다."
     }
   },
   "verified": false,
