@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "인간과 AI의 고성능 협업을 위해 Rust로 구축된 차세대 코드 편집기입니다. 에이전트 기반 편집, 다중 버퍼 편집 및 기본 Git 지원을 제공합니다."
+    },
+    "es": {
+      "description": "Editor de siguiente generación en Rust para colaboración de alto rendimiento. Edición agentic, multibuffer y soporte nativo Git."
+    },
+    "fr": {
+      "description": "Éditeur nouvelle génération en Rust pour collaboration haute performance. Édition par agents, multi-tampon et support natif Git."
+    },
+    "id": {
+      "description": "Editor kode generasi berikutnya yang dibangun dengan Rust untuk kolaborasi berkinerja tinggi dengan manusia dan AI. Fitur penyuntingan agentic, multi-buffer, dan dukungan Git asli."
+    },
+    "ja": {
+      "description": "人間とAIの高性能コラボレーションのためにRustで構築された次世代コードエディタ。エージェントベース編集、マルチバッファ編集、ネイティブGitサポートを備えています。"
+    },
+    "pt": {
+      "description": "Um editor de código de próxima geração construído em Rust para colaboração de alto desempenho com humanos e IA. Recursos de edição por agente, edição multipuffer e suporte nativo ao Git."
+    },
+    "ru": {
+      "description": "Редактор кода нового поколения, созданный на Rust для высокопроизводительного сотрудничества людей и ИИ. Обладает агентным редактированием, многомодульным редактированием и встроенной поддержкой Git."
+    },
+    "tr": {
+      "description": "İnsanlar ve AI ile yüksek performanslı işbirliği için Rust ile inşa edilmiş yeni nesil kod düzenleyici. Ajan tabanlı düzenleme, çoklu tampon düzenleme ve yerel Git desteği özelliklerine sahiptir."
+    },
+    "zh-Hant": {
+      "description": "用 Rust 構建的下一代代碼編輯器，專為與人類和 AI 的高性能協作而設計。具有智能編輯、多緩衝區編輯和原生 Git 支持。"
     }
   },
   "verified": false,

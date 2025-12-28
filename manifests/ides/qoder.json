@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "실제 소프트웨어 개발을 위한 에이전트 기반 AI 코딩 플랫폼으로, 코드 생성 및 프로젝트 수준 작업을 처리하는 컨텍스트 인식형 지능형 에이전트를 통합합니다."
+    },
+    "es": {
+      "description": "Plataforma de codificación con agentes IA para desarrollo real de software. Agentes inteligentes conscientes del contexto manejan código y tareas de proyecto."
+    },
+    "fr": {
+      "description": "Plateforme de codage avec agents IA pour développement réel de logiciels. Agents intelligents conscients du contexte gèrent code et tâches de projet."
+    },
+    "id": {
+      "description": "Platforma pengodean AI berbasis agen untuk pengembangan perangkat lunak nyata, mengintegrasikan agen cerdas yang sadar konteks untuk menangani pembuatan kode dan tugas tingkat proyek."
+    },
+    "ja": {
+      "description": "本格的なソフトウェア開発のためのエージェントAIコーディングプラットフォーム。コンテキストを認識するインテリジェントなエージェントを統合して、コード生成とプロジェクトレベルのタスクを処理します。"
+    },
+    "pt": {
+      "description": "Plataforma de codificação com agentes IA para desenvolvimento real de software. Agentes inteligentes conscientes do contexto geram código e tarefas de projeto."
+    },
+    "ru": {
+      "description": "Платформа кодирования с агентами ИИ для реальной ПО разработки. Интеллектуальные агенты с контекстом обрабатывают генерацию кода и задачи."
+    },
+    "tr": {
+      "description": "Gerçek yazılım geliştirme için ajan tabanlı AI kodlama platformu, kod üretimi ve proje düzeyindeki görevleri yönetmek için bağlam fark eden akıllı ajanları entegre eder."
+    },
+    "zh-Hant": {
+      "description": "阿里巴巴推出的智能 AI 編碼平台，用於真實軟件開發，集成上下文感知的智能 Agent 來處理代碼生成和項目級任務。"
     }
   },
   "verified": false,

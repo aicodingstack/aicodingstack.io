@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "복잡한 기능 수준의 소프트웨어 작업을 위해 여러 AI 코딩 에이전트를 병렬로 관리하는 병렬 에이전트 개발 환경으로, Git 워크트리 지원이 내장되어 있습니다."
+    },
+    "es": {
+      "description": "Entorno de desarrollo con agentes paralelos que gestiona múltiples agentes IA en paralelo para tareas de software complejas con soporte Git worktree."
+    },
+    "fr": {
+      "description": "Environnement de développement avec agents parallèles qui gère plusieurs agents IA en parallèle pour tâches logicielles complexes avec support Git worktree."
+    },
+    "id": {
+      "description": "Lingkungan pengembangan agen paralel yang mengelola beberapa agen pengkodean AI secara paralel untuk tugas perangkat lunak kompleks tingkat fitur dengan dukungan Git worktree terintegrasi."
+    },
+    "ja": {
+      "description": "複雑な機能レベルのソフトウェアタスクのために複数のAIコーディングエージェントを並列で管理する並列エージェント開発環境。Git worktreeサポートが内蔵されています。"
+    },
+    "pt": {
+      "description": "Ambiente de desenvolvimento com agentes paralelos que gerencia múltiplos agentes IA em paralelo para tarefas complexas com suporte Git worktree."
+    },
+    "ru": {
+      "description": "Параллельная агентская среда разработки, которая управляет несколькими агентами кодирования ИИ параллельно для сложных задач программного обеспечения на уровне функций с поддержкой Git worktree."
+    },
+    "tr": {
+      "description": "Karmaşık özellik düzeyindeki yazılım görevleri için birden fazla AI kodlama ajanını paralel olarak yöneten, iç entegre Git worktree desteği olan Paralel Ajan Geliştirme Ortamı."
+    },
+    "zh-Hant": {
+      "description": "並行代理開發環境，管理多個 AI 編碼代理並行處理複雜的功能級軟件任務，內置 Git 工作樹支持。"
     }
   },
   "verified": false,

@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "스마트 코드 어시스턴트, 리팩토링 도구 및 다중 언어 지원을 갖춘 강력한 Java IDE입니다. 커뮤니티(무료) 및 얼티밋(유료) 에디션이 제공됩니다."
+    },
+    "es": {
+      "description": "Un IDE Java potente con asistencia inteligente de código, herramientas de refactorización y soporte para múltiples idiomas. Disponible en ediciones Comunitaria (gratis) y Ultimate (paga)."
+    },
+    "fr": {
+      "description": "Un IDE Java puissant avec assistance intelligente de code, outils de refactorisation et support multi-langage. Disponible en editions Community (gratuite) et Ultimate (payante)."
+    },
+    "id": {
+      "description": "IDE Java yang kuat dengan bantuan kode cerdas, alat refactoring, dan dukungan multi-bahasa. Tersedia dalam edisi Community (gratis) dan Ultimate (berbayar)."
+    },
+    "ja": {
+      "description": "インテリジェントなコードアシスタンス、リファクタリングツール、マルチ言語サポートを備えた強力なJava IDE。Community（無料）版とUltimate（有料）版が利用可能です。"
+    },
+    "pt": {
+      "description": "Um IDE Java poderoso com assistência inteligente de código, ferramentas de refatoração e suporte para várias linguagens. Disponível nas edições Community (gratuita) e Ultimate (paga)."
+    },
+    "ru": {
+      "description": "Мощный Java IDE с интеллектуальной помощью кода, инструментами рефакторинга и поддержкой нескольких языков. Доступен в версиях Community (бесплатная) и Ultimate (платная)."
+    },
+    "tr": {
+      "description": "Akıllı kod yardımı, yeniden yapılandırma araçları ve çoklu dil desteği ile güçlü bir Java IDE. Community (ücretsiz) ve Ultimate (ücretli) sürümleri mevcuttur."
+    },
+    "zh-Hant": {
+      "description": "功能強大的 Java IDE，具有智能代碼輔助、重構工具和多語言支持。提供社區版（免費）和旗艦版（付費）兩個版本。"
     }
   },
   "verified": false,

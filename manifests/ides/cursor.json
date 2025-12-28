@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "VS Code를 기반으로 구축된 AI 기반 코드 편집기로, 코드 생성, 편집 및 이해를 위한 고급 AI 기능을 제공합니다."
+    },
+    "es": {
+      "description": "Un editor de código impulsado por IA construido sobre VS Code con capacidades avanzadas de IA para generación, edición y comprensión de código."
+    },
+    "fr": {
+      "description": "Un éditeur de code propulsé par l'IA construit sur VS Code avec des capacités avancées d'IA pour la génération, l'édition et la compréhension de code."
+    },
+    "id": {
+      "description": "Editor kode bertenaga AI yang dibangun di atas VS Code dengan kemampuan AI canggih untuk pembuatan, pengeditan, dan pemahaman kode."
+    },
+    "ja": {
+      "description": "VS Code上で構築された、コード生成、編集、理解のための高度なAI機能を備えたAI搭載コードエディタ。"
+    },
+    "pt": {
+      "description": "Um editor de código movido por IA construído sobre VS Code com capacidades avançadas de IA para geração, edição e compreensão de código."
+    },
+    "ru": {
+      "description": "Редактор кода на базе ИИ, созданный на VS Code с расширенными возможностями ИИ для генерации, редактирования и понимания кода."
+    },
+    "tr": {
+      "description": "VS Code üzerinde inşa edilmiş, kod oluşturma, düzenleme ve anlama için gelişmiş AI yeteneklerine sahip destekli bir kod düzenleyici."
+    },
+    "zh-Hant": {
+      "description": "基於 VS Code 構建的 AI 驅動代碼編輯器，具有高級 AI 功能，用於代碼生成、編輯和理解。"
     }
   },
   "verified": false,

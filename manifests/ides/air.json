@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "개발자가 복잡한 코딩 작업을 병렬로 작동하는 AI 에이전트에게 위임할 수 있도록 도와주는 에이전트 개발 환경입니다. Anthropic 구독이 필요합니다."
+    },
+    "es": {
+      "description": "Un entorno de desarrollo con agentes que ayuda a los desarrolladores a delegar tareas complejas de codificación a agentes de IA que trabajan en paralelo. Requiere una suscripción a Anthropic."
+    },
+    "fr": {
+      "description": "Un environnement de développement avec agents qui aide les développeurs à déléguer des tâches complexes de codage à des agents IA travaillant en parallèle. Nécessite un abonnement Anthropic."
+    },
+    "id": {
+      "description": "Lingkungan pengembangan berbasis agen yang membantu pengembang mendelegasikan tugas pengkodean kompleks ke agen AI yang bekerja secara paralel. Memerlukan langganan Anthropic."
+    },
+    "ja": {
+      "description": "エージェント開発環境で、開発者が複雑なコーディングタスクを並列で動作するAIエージェントに委譲できるようにします。Anthropicのサブスクリプションが必要です。"
+    },
+    "pt": {
+      "description": "Um ambiente de desenvolvimento com agentes que ajuda os desenvolvedores a delegar tarefas complexas de codificação para agentes de IA que trabalham em paralelo. Requer uma assinatura Anthropic."
+    },
+    "ru": {
+      "description": "Агентская среда разработки, помогающая разработчикам делегировать сложные задачи по кодированию агентам ИИ, работающим параллельно. Требуется подписка Anthropic."
+    },
+    "tr": {
+      "description": "Geliştiricilerin karmaşık kodlama görevlerini paralel çalışan AI ajanlarına devretmelerine yardımcı olan bir ajan geliştirme ortamı. Anthropic aboneliği gerektirir."
+    },
+    "zh-Hant": {
+      "description": "Agent 開發環境，幫助開發 將複雜的編碼任務委託給並行工作的 AI 代理。需要 Anthropic 訂閱。"
     }
   },
   "verified": false,

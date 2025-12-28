@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "코드를 자율적으로 생성, 편집, 테스트 및 배포하는 스마트 어시스턴트 Cascade를 갖춘 AI 네이티브 IDE입니다. MCP 서버와 플러그인 후크를 통합하여 개발자의 흐름 상태를 유지합니다."
+    },
+    "es": {
+      "description": "IDE nativa de IA con el asistente \"Cascade\" que genera, edita, prueba y despliega código autónomamente. Integra servidores MCP y hooks de plugins."
+    },
+    "fr": {
+      "description": "IDE native de IA avec l'assistant \"Cascade\" qui génère, édite, teste et déploie le code. Intègre serveurs MCP et hooks de plugins."
+    },
+    "id": {
+      "description": "IDE native AI dengan asisten \"Cascade\" yang secara otonom menghasilkan, mengedit, menguji, dan men-deploy kode. Mengintegrasikan server MCP dan plugin hooks untuk mempertahankan alur kerja pengembang."
+    },
+    "ja": {
+      "description": "コードを自律的に生成、編集、テスト、デプロイする「Cascade」アシスタントを備えたAIネイティブIDE。MCPサーバーとプラグインフックを統合して、開発者のフロー状態を維持します。"
+    },
+    "pt": {
+      "description": "Uma IDE nativa de IA com o assistente \"Cascade\" que gera, edita, testa e implanta código de forma autônoma. Integra servidores MCP e hooks de plugins para manter o estado de fluxo do desenvolvedor."
+    },
+    "ru": {
+      "description": "Нативная IDE ИИ с помощником \"Cascade\", который автономно генерирует, редактирует, тестирует и развертывает код. Интегрирует серверы MCP и хуки плагинов для поддержания состояния потока разработчика."
+    },
+    "tr": {
+      "description": "Otonom olarak kod oluşturan, düzenleyen, test eden ve dağıtan \"Cascade\" asistanına sahip native bir AI IDE. MCP sunucularını ve plugin hook'larını entegre ederek geliştirici akış durumunu korur."
+    },
+    "zh-Hant": {
+      "description": "AI 原生 IDE，具有智能助手 Cascade，可自主生成、編輯、測試和部署代碼。集成 MCP 服務器和插件鉤子，讓開發者保持心流狀態。"
     }
   },
   "verified": false,

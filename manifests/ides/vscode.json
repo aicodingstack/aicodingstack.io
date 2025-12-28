@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "편집, 디버깅 및 버전 제어를 위한 광범위한 언어 지원과 확장 생태계(GitHub Copilot 등 AI 에이전트 포함)을 갖춘 무료 오픈 소스 코드 편집기입니다."
+    },
+    "es": {
+      "description": "Microsoft's editor extendido con soporte nativo de ChatGPT, Claude y otras herramientas de IA. Soporta extensiones y personalización."
+    },
+    "fr": {
+      "description": "L'éditeur de Microsoft étendu avec support natif ChatGPT, Claude et autres outils IA. Supporte extensions et personnalisation."
+    },
+    "id": {
+      "description": "Editor kode gratis dan open source dengan dukungan bahasa yang luas dan ekosistem ekstensi (termasuk agen AI seperti GitHub Copilot) untuk pengeditan, debugging, dan kontrol versi."
+    },
+    "ja": {
+      "description": "広範な言語サポートと拡張機能のエコシステム（GitHub CopilotなどのAIエージェントを含む）を備えた、編集、デバッグ、バージョン管理のための無料のオープンソースコードエディタ。"
+    },
+    "pt": {
+      "description": "Um editor de código gratuito e de código aberto com amplo suporte de idiomas e um ecossistema de extensões (incluindo agentes de IA como GitHub Copilot) para edição, depuração e controle de versão."
+    },
+    "ru": {
+      "description": "Бесплатный редактор кода с открытым исходным кодом с обширной поддержкой языков и экосистемой расширений (включая агенты ИИ, такие как GitHub Copilot) для редактирования, отладки и контроля версий."
+    },
+    "tr": {
+      "description": "Düzenleme, hata ayıklama ve sürüm kontrolü için kapsamlı dil desteği ve uzantı ekosistemi (GitHub Copilot gibi AI ajanları dahil) olan ücretsiz açık kaynaklı kod düzenleyici."
+    },
+    "zh-Hant": {
+      "description": "免費開源的代碼編輯器，具有廣泛的語言支持和擴展生態系統（包括 GitHub Copilot 等 AI Agent），用於編輯、調試和版本控制。"
     }
   },
   "verified": false,

@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "VS Code에 사양 기반 개발을 도입하는 AWS의 에이전트 기반 IDE입니다. AI 에이전트를 사용하여 자연어 사양을 코드로 변환하고, 작업을 자동화하며, 워크플로우와 통합합니다."
+    },
+    "es": {
+      "description": "IDE de agentes de AWS para desarrollo basado en especificaciones en VS Code. Convierte especificaciones en código, automatiza tareas y se integra con flujos."
+    },
+    "fr": {
+      "description": "IDE d'agents AWS pour développement basé sur spécifications dans VS Code. Convertit spécifications en code, automatise tâches et s'intègre aux flux."
+    },
+    "id": {
+      "description": "IDE agen AWS untuk pengembangan spesifikasi di VS Code. Mengkonversi spesifikasi alami ke kode, otomatisasi dan integrasi workflow."
+    },
+    "ja": {
+      "description": "VS Codeに仕様駆動開発をもたらすAWSのエージェントIDE。AIエージェントを使用して自然言語の仕様をコードに変換し、タスクを自動化し、ワークフローと統合します。"
+    },
+    "pt": {
+      "description": "IDE de agentes AWS para desenvolvimento baseado em especificações no VS Code. Converte especificações em código, automação e integração."
+    },
+    "ru": {
+      "description": "Агентская IDE от AWS для разработки на основе спецификаций в VS Code. Преобразует спецификации в код, автоматизацию и интеграцию."
+    },
+    "tr": {
+      "description": "AWS ajan IDE'si, spesifikasyon tabanlı geliştirme için VS Code'a entegrasyon. Doğal dil spesifikasyonlarını koda çevirir, görevleri otomatik eder."
+    },
+    "zh-Hant": {
+      "description": "AWS 的智能 IDE，為 VS Code 帶來規範驅動開發。使用 AI Agent 將自然語言規範轉化為代碼、自動化任務並與工作流集成。"
     }
   },
   "verified": false,
