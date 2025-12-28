@@ -6,29 +6,23 @@ import type { Locale } from '@/i18n/config'
 import { Link } from '@/i18n/navigation'
 import { getManifestoComponent } from '@/lib/generated/manifesto'
 import { buildTitle, generateStaticPageMetadata } from '@/lib/metadata'
+import type { LocalePageProps } from '@/types/locale'
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+export async function generateMetadata({ params }: LocalePageProps) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'pages.manifesto' })
-
-  const title = buildTitle({ title: t('title') })
-  const description = t('subtitle')
 
   return generateStaticPageMetadata({
     locale: locale as Locale,
     basePath: 'manifesto',
-    title,
-    description,
+    title: buildTitle({ title: t('title') }),
+    description: t('subtitle'),
     keywords: 'AI Coding Manifesto, AI development philosophy, AI coding principles',
     ogType: 'website',
   })
 }
 
-type Props = {
-  params: Promise<{ locale: string }>
-}
-
-export default async function ManifestoPage({ params }: Props) {
+export default async function ManifestoPage({ params }: LocalePageProps) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'pages.manifesto' })
   const tStack = await getTranslations({ locale, namespace: 'pages.overview' })
