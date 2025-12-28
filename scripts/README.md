@@ -16,10 +16,15 @@ scripts/
 │   └── generate-metadata.mjs
 ├── refactor/
 │   ├── index.mjs              # Entry point for all refactoring scripts
-│   └── sort-manifest-fields.mjs
-└── fetch/
-    ├── index.mjs              # Entry point for all fetch scripts
-    └── fetch-github-stars.mjs
+│   ├── sort-manifest-fields.mjs
+│   ├── sort-locales-fields.mjs
+│   └── export-vendors.mjs
+├── fetch/
+│   ├── index.mjs              # Entry point for all fetch scripts
+│   └── fetch-github-stars.mjs
+├── _shared/
+│   └── runner.mjs             # Shared script runner for entry points
+└── temp/                      # Temporary experimental scripts
 ```
 
 ## Usage
@@ -64,6 +69,11 @@ Or directly using Node:
 # Run generation/fetch scripts
 node scripts/generate/index.mjs metadata
 node scripts/fetch/index.mjs github-stars
+
+# Run specific refactor scripts
+node scripts/refactor/index.mjs sort-manifest-fields
+node scripts/refactor/index.mjs sort-locales-fields
+node scripts/refactor/index.mjs export-vendors
 ```
 
 ## Validation (Test-based)
@@ -172,12 +182,43 @@ Sorts fields in manifest JSON files according to their schema definitions.
 
 ```bash
 npm run refactor:sort-fields
+# or
+node scripts/refactor/index.mjs sort-manifest-fields
 ```
 
 **What it does:**
 - Reorders fields in manifest files to match schema property order
 - Ensures consistent field ordering across all manifests
 - Handles nested objects and arrays
+
+### sort-locales-fields.mjs
+
+Sorts fields in locale translation JSON files alphabetically for consistency.
+
+```bash
+node scripts/refactor/index.mjs sort-locales-fields
+```
+
+**What it does:**
+- Sorts keys in translation files (`translations/*/pages/*.json`, `translations/*/components.json`, etc.)
+- Ensures consistent ordering across all locale files
+- Helps with maintainability and git diff readability
+
+### export-vendors.mjs
+
+Exports vendor information from manifest files to vendor manifests.
+
+```bash
+node scripts/refactor/index.mjs export-vendors
+```
+
+**What it does:**
+- Extracts vendor data from ide, cli, extension, model, and provider manifests
+- Creates vendor files in `manifests/vendors/` if they don't already exist
+- Merges vendor information from multiple manifest sources
+- Skips existing vendor files (does not overwrite)
+
+**Note:** This script only creates new vendor files. It will skip vendors that already have a manifest file.
 
 ## Data Fetching Scripts
 
@@ -187,6 +228,8 @@ Fetches GitHub star counts for projects listed in manifests.
 
 ```bash
 npm run fetch:github-stars
+# or
+node scripts/fetch/index.mjs github-stars
 ```
 
 **What it does:**
@@ -198,6 +241,23 @@ npm run fetch:github-stars
 - `GITHUB_TOKEN` - Optional GitHub token to avoid rate limits (recommended)
 
 **Note:** Without a GitHub token, you may hit rate limits (60 requests/hour).
+
+## Additional Tools
+
+### Benchmark Fetcher
+
+Fetching benchmark performance data is handled by a separate skill:
+
+```bash
+node .claude/skills/benchmark-fetcher/scripts/fetch-benchmarks.mjs
+```
+
+**What it does:**
+- Fetches benchmark scores from 6 leaderboard websites using Playwright MCP
+- Supports SWE-bench, TerminalBench, SciCode, LiveCodeBench, MMMU, MMMU Pro, and WebDevArena
+- Updates model manifests with latest benchmark scores
+
+For full documentation, see `.claude/skills/benchmark-fetcher/SKILL.md`
 
 ## Build Process
 
@@ -251,6 +311,8 @@ npm run test:validate
 npm run generate:manifests
 npm run generate:metadata
 npm run refactor:sort-fields
+npm run refactor:sort-locales-fields
+npm run fetch:github-stars
 ```
 
 ## Manual Execution

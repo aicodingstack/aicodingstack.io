@@ -26,7 +26,75 @@ import {
   formatPlatforms,
   formatPriceForDescription,
 } from './helpers'
-import { createPageMetadata } from './templates'
+import { createPageMetadata, type PageType } from './templates'
+
+/**
+ * Internal helper: Build complete metadata with alternates, OpenGraph, and Twitter Card
+ * Consolidates the common pattern across all generators
+ */
+interface CommonMetadataOptions {
+  locale: Locale
+  pageType: PageType
+  canonicalPath: string
+  languageBasePath?: string
+  title: string
+  description: string
+  keywords?: string
+  // OpenGraph specific
+  ogTitle?: string
+  ogDescription?: string
+  ogType?: 'website' | 'article'
+  publishedTime?: string
+  modifiedTime?: string
+  // Twitter specific
+  twitterTitle?: string
+  twitterDescription?: string
+  includeCreator?: boolean
+}
+
+/**
+ * Build metadata with alternates, OpenGraph, and Twitter in one go
+ * Internal function to reduce duplication across generators
+ */
+function buildMetadataWithSocial(options: CommonMetadataOptions): Metadata {
+  // Build alternates (canonical + hreflang)
+  const alternates = buildAlternates({
+    canonicalPath: options.canonicalPath,
+    locale: options.locale,
+    languageBasePath: options.languageBasePath ?? options.canonicalPath,
+  })
+
+  // Build OpenGraph using canonical path
+  const openGraph = buildOpenGraph({
+    title: options.ogTitle ?? options.title,
+    description: options.ogDescription ?? options.description,
+    url: alternates.canonical!,
+    locale: options.locale,
+    type: options.ogType ?? 'website',
+    publishedTime: options.publishedTime,
+    modifiedTime: options.modifiedTime,
+  })
+
+  // Build Twitter Card
+  const twitter = buildTwitterCard({
+    title: options.twitterTitle ?? options.title,
+    description: options.twitterDescription ?? options.description,
+    includeCreator: options.includeCreator ?? false,
+  })
+
+  // Create page metadata
+  return createPageMetadata({
+    locale: options.locale,
+    pageType: options.pageType,
+    title: options.title,
+    description: options.description,
+    keywords: options.keywords,
+    canonical: alternates.canonical!,
+    languageAlternates: alternates.languages,
+    openGraph,
+    twitter,
+  })
+}
 
 /**
  * Generate metadata for category list pages (IDEs, CLIs, etc.)
@@ -63,41 +131,24 @@ export async function generateListPageMetadata(options: {
     additionalKeywords,
   ])
 
-  // Build alternates (canonical + hreflang)
-  const basePath = category
-  const alternates = buildAlternates({
-    canonicalPath: basePath,
-    locale,
-    languageBasePath: basePath,
-  })
-
-  // Build OpenGraph using canonical path
+  // Build social media titles
   const displayName =
     CATEGORY_DISPLAY_NAMES[category as keyof typeof CATEGORY_DISPLAY_NAMES] || translatedTitle
-  const openGraph = buildOpenGraph({
-    title: `${translatedTitle} - Best ${displayName} ${METADATA_DEFAULTS.currentYear}`,
-    description,
-    url: alternates.canonical!,
-    locale,
-    type: 'website',
-  })
+  const socialTitle = `${translatedTitle} - Best ${displayName} ${METADATA_DEFAULTS.currentYear}`
 
-  // Build Twitter Card
-  const twitter = buildTwitterCard({
-    title: `${translatedTitle} - Best ${displayName} ${METADATA_DEFAULTS.currentYear}`,
-    description,
-  })
-
-  return createPageMetadata({
+  // Use common metadata builder
+  return buildMetadataWithSocial({
     locale,
     pageType: 'list',
+    canonicalPath: category,
     title,
     description,
     keywords,
-    canonical: alternates.canonical!,
-    languageAlternates: alternates.languages,
-    openGraph,
-    twitter,
+    ogTitle: socialTitle,
+    ogDescription: description,
+    ogType: 'website',
+    twitterTitle: socialTitle,
+    twitterDescription: description,
   })
 }
 
@@ -148,41 +199,23 @@ export async function generateSoftwareDetailMetadata(options: {
     platformsStr,
   ])
 
-  // Build alternates (canonical + hreflang)
-  const basePath = `${category}/${slug}`
-  const alternates = buildAlternates({
-    canonicalPath: basePath,
-    locale,
-    languageBasePath: basePath,
-  })
+  // Social media titles
+  const socialTitle = `${product.name} - ${typeDescription}`
 
-  // Build OpenGraph using canonical path
-  // Note: OG images are automatically detected from opengraph-image.tsx files
-  const openGraph = buildOpenGraph({
-    title: `${product.name} - ${typeDescription}`,
-    description: product.description,
-    url: alternates.canonical!,
-    locale,
-    type: 'article',
-  })
-
-  // Build Twitter Card
-  // Note: Twitter images are automatically detected from opengraph-image.tsx files
-  const twitter = buildTwitterCard({
-    title: `${product.name} - ${typeDescription}`,
-    description: product.description,
-  })
-
-  return createPageMetadata({
+  // Use common metadata builder
+  // Note: OG and Twitter images are automatically detected from opengraph-image.tsx files
+  return buildMetadataWithSocial({
     locale,
     pageType: 'detail',
+    canonicalPath: `${category}/${slug}`,
     title,
     description,
     keywords,
-    canonical: alternates.canonical!,
-    languageAlternates: alternates.languages,
-    openGraph,
-    twitter,
+    ogTitle: socialTitle,
+    ogDescription: product.description,
+    ogType: 'article',
+    twitterTitle: socialTitle,
+    twitterDescription: product.description,
   })
 }
 
@@ -239,41 +272,23 @@ export async function generateModelDetailMetadata(options: {
     [...CATEGORY_SEO_KEYWORDS.models],
   ])
 
-  // Build alternates (canonical + hreflang)
-  const basePath = `models/${slug}`
-  const alternates = buildAlternates({
-    canonicalPath: basePath,
-    locale,
-    languageBasePath: basePath,
-  })
+  // Social media titles
+  const socialTitle = `${model.name} - ${t('metaTitle')}`
 
-  // Build OpenGraph using canonical path
-  // Note: OG images are automatically detected from opengraph-image.tsx files
-  const openGraph = buildOpenGraph({
-    title: `${model.name} - ${t('metaTitle')}`,
-    description: model.description,
-    url: alternates.canonical!,
-    locale,
-    type: 'article',
-  })
-
-  // Build Twitter Card
-  // Note: Twitter images are automatically detected from opengraph-image.tsx files
-  const twitter = buildTwitterCard({
-    title: `${model.name} - ${t('metaTitle')}`,
-    description: model.description,
-  })
-
-  return createPageMetadata({
+  // Use common metadata builder
+  // Note: OG and Twitter images are automatically detected from opengraph-image.tsx files
+  return buildMetadataWithSocial({
     locale,
     pageType: 'detail',
+    canonicalPath: `models/${slug}`,
     title,
     description,
     keywords,
-    canonical: alternates.canonical!,
-    languageAlternates: alternates.languages,
-    openGraph,
-    twitter,
+    ogTitle: socialTitle,
+    ogDescription: model.description,
+    ogType: 'article',
+    twitterTitle: socialTitle,
+    twitterDescription: model.description,
   })
 }
 
@@ -323,39 +338,22 @@ export async function generateComparisonMetadata(options: {
     [...(CATEGORY_SEO_KEYWORDS[category as keyof typeof CATEGORY_SEO_KEYWORDS] || [])],
   ])
 
-  // Build alternates (canonical + hreflang)
-  const basePath = `${category}/comparison`
-  const alternates = buildAlternates({
-    canonicalPath: basePath,
-    locale,
-    languageBasePath: basePath,
-  })
+  // Social media titles
+  const socialTitle = `${categoryName} Comparison`
 
-  // Build OpenGraph using canonical path
-  const openGraph = buildOpenGraph({
-    title: `${categoryName} Comparison`,
-    description,
-    url: alternates.canonical!,
-    locale,
-    type: 'website',
-  })
-
-  // Build Twitter Card
-  const twitter = buildTwitterCard({
-    title: `${categoryName} Comparison`,
-    description,
-  })
-
-  return createPageMetadata({
+  // Use common metadata builder
+  return buildMetadataWithSocial({
     locale,
     pageType: 'comparison',
+    canonicalPath: `${category}/comparison`,
     title,
     description,
     keywords,
-    canonical: alternates.canonical!,
-    languageAlternates: alternates.languages,
-    openGraph,
-    twitter,
+    ogTitle: socialTitle,
+    ogDescription: description,
+    ogType: 'website',
+    twitterTitle: socialTitle,
+    twitterDescription: description,
   })
 }
 
@@ -384,43 +382,22 @@ export async function generateArticleMetadata(options: {
   // Build keywords
   const keywords = buildKeywords([article.title, [...CATEGORY_SEO_KEYWORDS.articles]])
 
-  // Build alternates (canonical + hreflang)
-  const basePath = `articles/${slug}`
-  const alternates = buildAlternates({
-    canonicalPath: basePath,
-    locale,
-    languageBasePath: basePath,
-  })
-
-  // Build OpenGraph with article metadata, using canonical path
-  // Note: OG images are automatically detected from opengraph-image.tsx files
-  const openGraph = buildOpenGraph({
-    title: article.title,
-    description,
-    url: alternates.canonical!,
-    locale,
-    type: 'article',
-    publishedTime: article.date,
-  })
-
-  // Build Twitter Card with creator
-  // Note: Twitter images are automatically detected from opengraph-image.tsx files
-  const twitter = buildTwitterCard({
-    title: article.title,
-    description,
-    includeCreator: true,
-  })
-
-  return createPageMetadata({
+  // Use common metadata builder
+  // Note: OG and Twitter images are automatically detected from opengraph-image.tsx files
+  return buildMetadataWithSocial({
     locale,
     pageType: 'article',
+    canonicalPath: `articles/${slug}`,
     title,
     description,
     keywords,
-    canonical: alternates.canonical!,
-    languageAlternates: alternates.languages,
-    openGraph,
-    twitter,
+    ogTitle: article.title,
+    ogDescription: description,
+    ogType: 'article',
+    publishedTime: article.date,
+    twitterTitle: article.title,
+    twitterDescription: description,
+    includeCreator: true,
   })
 }
 
@@ -447,39 +424,19 @@ export async function generateDocsMetadata(options: {
   // Build keywords
   const keywords = buildKeywords([doc.title, [...CATEGORY_SEO_KEYWORDS.docs]])
 
-  // Build alternates (canonical + hreflang)
-  const basePath = `docs/${slug}`
-  const alternates = buildAlternates({
-    canonicalPath: basePath,
-    locale,
-    languageBasePath: basePath,
-  })
-
-  // Build OpenGraph using canonical path
-  const openGraph = buildOpenGraph({
-    title: doc.title,
-    description,
-    url: alternates.canonical!,
-    locale,
-    type: 'article',
-  })
-
-  // Build Twitter Card
-  const twitter = buildTwitterCard({
-    title: doc.title,
-    description,
-  })
-
-  return createPageMetadata({
+  // Use common metadata builder
+  return buildMetadataWithSocial({
     locale,
     pageType: 'docs',
+    canonicalPath: `docs/${slug}`,
     title,
     description,
     keywords,
-    canonical: alternates.canonical!,
-    languageAlternates: alternates.languages,
-    openGraph,
-    twitter,
+    ogTitle: doc.title,
+    ogDescription: description,
+    ogType: 'article',
+    twitterTitle: doc.title,
+    twitterDescription: description,
   })
 }
 
@@ -509,37 +466,18 @@ export async function generateStaticPageMetadata(options: {
     pageType = 'static',
   } = options
 
-  // Build alternates (canonical + hreflang)
-  const alternates = buildAlternates({
-    canonicalPath: basePath,
-    locale,
-    languageBasePath: basePath,
-  })
-
-  // Build OpenGraph using canonical path
-  const openGraph = buildOpenGraph({
-    title,
-    description,
-    url: alternates.canonical!,
-    locale,
-    type: ogType,
-  })
-
-  // Build Twitter Card
-  const twitter = buildTwitterCard({
-    title,
-    description,
-  })
-
-  return createPageMetadata({
+  // Use common metadata builder
+  return buildMetadataWithSocial({
     locale,
     pageType,
+    canonicalPath: basePath,
     title,
     description,
     keywords,
-    canonical: alternates.canonical!,
-    languageAlternates: alternates.languages,
-    openGraph,
-    twitter,
+    ogTitle: title,
+    ogDescription: description,
+    ogType,
+    twitterTitle: title,
+    twitterDescription: description,
   })
 }

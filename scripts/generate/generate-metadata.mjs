@@ -19,13 +19,14 @@ const rootDir = path.join(__dirname, '../..')
 function getSupportedLocales() {
   const configPath = path.join(rootDir, 'src/i18n/config.ts')
   const configContent = fs.readFileSync(configPath, 'utf8')
-  // Extract locales array from: export const locales = ['en', 'zh-Hans', 'de'] as const;
-  const match = configContent.match(/export const locales = \[([^\]]+)\]/)
-  if (!match) {
+  // Extract the content between "export const locales = [" and "] as const"
+  const arrayMatch = configContent.match(/export const locales = \[([\s\S]*?)\] as const/)
+  if (!arrayMatch) {
     throw new Error('Could not find locales export in src/i18n/config.ts')
   }
-  // Parse the array: "'en', 'zh-Hans', 'de'" -> ['en', 'zh-Hans', 'de']
-  return match[1].split(',').map(s => s.trim().replace(/['"]/g, ''))
+  // Extract all quoted strings from the array content
+  const stringMatches = arrayMatch[1].matchAll(/'([^']+)'/g)
+  return Array.from(stringMatches, m => m[1])
 }
 
 const SUPPORTED_LOCALES = getSupportedLocales()
