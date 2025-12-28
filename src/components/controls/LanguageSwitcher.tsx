@@ -4,7 +4,7 @@ import { Languages } from 'lucide-react'
 import { usePathname, useRouter } from 'next/navigation'
 import { useLocale, useTranslations } from 'next-intl'
 import { useEffect, useRef, useState } from 'react'
-import { type Locale, localeLabels, locales } from '@/i18n/config'
+import { type Locale, localeNames, locales } from '@/i18n/config'
 
 // Type definition for Cookie Store API
 interface CookieStoreSetOptions {
@@ -125,7 +125,7 @@ export default function LanguageSwitcher() {
         aria-expanded={isOpen}
       >
         <Languages className="footer-control-icon" />
-        {localeLabels[locale]}
+        {localeNames[locale]}
       </button>
 
       {isOpen && (
@@ -139,7 +139,7 @@ export default function LanguageSwitcher() {
                 loc === locale ? 'bg-[var(--color-hover)] font-medium' : 'font-light'
               }`}
             >
-              {localeLabels[loc]}
+              {localeNames[loc]}
               {loc === locale && ' ✓'}
             </button>
           ))}
