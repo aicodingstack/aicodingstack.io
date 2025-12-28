@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "MiniMax의 230B 파라미터 MoE 모델로, 204.8K 컨텍스트 윈도를 갖추고 있으며 지능형 에이전트 및 프로그래밍 작업을 위해 설계되었습니다. 추론 시마다 10B 파라미터를 활성화합니다."
+    },
+    "es": {
+      "description": "Un modelo MoE de 230B parametros de MiniMax con ventana de contexto 204.8K, diseñado para agentes inteligentes y tareas de programación. Activa 10B parametros por inferencia."
+    },
+    "fr": {
+      "description": "Un modele MoE de 230B parametres de MiniMax avec fenetre de contexte 204.8K, concu pour agents intelligents et taches de programmation. Active 10B parametres par inference."
+    },
+    "id": {
+      "description": "Model MoE 230B parameter dari MiniMax dengan jendela konteks 204.8K, dirancang untuk agen cerdas dan tugas coding. Mengaktifkan 10B parameter per inferensi."
+    },
+    "ja": {
+      "description": "MiniMaxの230BパラメータMoEモデルで、204.8Kコンテキストウィンドウを持ち、インテリジェントエージェントとプログラミングタスク用に設計されています。推論ごとに10Bパラメータをアクティブ化します。"
+    },
+    "pt": {
+      "description": "Um modelo MoE de 230B parametros da MiniMax com janela de contexto 204.8K, projetado para agentes inteligentes e tarefas de programação. Ativa 10B parametros por inferencia."
+    },
+    "ru": {
+      "description": "Модель MoE на 230B параметров от MiniMax с окном контекста 204.8K, разработанная для интеллектуальных агентов и задач программирования. Активирует 10B параметров при каждом выводе."
+    },
+    "tr": {
+      "description": "MiniMax'tan 230B parametreli MoE model, 204.8K içerik penceresi ile akıllı aracılar ve kodlama görevleri için tasarlanmıştır. Her çıkarımda 10B parametre aktive eder."
+    },
+    "zh-Hant": {
+      "description": "MiniMax 推出的 230B 參數混合專家模型，具備 204.8K 上下文窗口，專為智能代理和編程任務設計。每次推理激活 10B 參數。"
     }
   },
   "verified": false,

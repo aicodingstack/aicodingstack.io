@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "코딩 및 일반 지능을 위한 고급 언어 모델과 AI 기술 개발에 집중하는 선도적인 AI 연구 기업입니다."
+    },
+    "es": {
+      "description": "Una empresa de investigación de IA líder centrada en el desarrollo de modelos de lenguaje avanzados y tecnologías de IA para la codificación y la inteligencia general."
+    },
+    "fr": {
+      "description": "Une entreprise de recherche en IA de premier plan axée sur le developpement de modeles de langue avances et de technologies IA pour le codage et l'intelligence generale."
+    },
+    "id": {
+      "description": "Perusahaan riset AI terkemuka yang berfokus pada pengembangan model bahasa canggih dan teknologi AI untuk coding dan kecerdasan umum."
+    },
+    "ja": {
+      "description": "コーディングと汎用インテリジェンスのための高度な言語モデルとAI技術の開発に焦点を当てた、リーディングなAI研究企業。"
+    },
+    "pt": {
+      "description": "Uma empresa de pesquisa de IA líder focada no desenvolvimento de modelos de linguagem avançados e tecnologias de IA para programação e inteligência geral."
+    },
+    "ru": {
+      "description": "Ведущая компания в области исследований ИИ, занимающаяся разработкой продвинутых языковых моделей и ИИ-технологий для программирования и общего интеллекта."
+    },
+    "tr": {
+      "description": "Kodlama ve genel zeka için gelişmiş dil modelleri ve AI teknolojileri geliştirmeye odaklanan lider bir AI araştırma şirketi."
+    },
+    "zh-Hant": {
+      "description": "領先的 AI 研究公司，專注於開發先進的語言模型和 AI 技術，用於編碼和通用智能。"
     }
   },
   "verified": false,

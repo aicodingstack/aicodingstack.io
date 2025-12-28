@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "Meta의 고용량 멀티모달 언어 모델로, 혼합 전문가(MoE) 아키텍처로 구축되었으며 128개의 전문가를 보유하고 있고 순방 전파 시 170억 파라미터(총 400B)를 활성화합니다. 12개 언어의 다국어 텍스트 및 이미지 입력을 지원하며 다국어 텍스트 및 코드 출력을 지원합니다."
+    },
+    "es": {
+      "description": "Modelo de lenguaje multimodal de alta capacidad de Meta con arquitectura MoE (128 expertos, 17B activos, 400B total)..."
+    },
+    "fr": {
+      "description": "Modèle de langue multimodal haute capacité de Meta avec architecture MoE (128 experts, 17B actifs, 400B total)..."
+    },
+    "id": {
+      "description": "Model bahasa multimodal kapasitas tinggi dari Meta dengan arsitektur MoE (128 ahli, 17B aktif, 400B total). Mendukung input teks/gambar multibahasa dan menghasilkan output teks/kode dalam 12 bahasa."
+    },
+    "ja": {
+      "description": "Metaの高容量マルチモーダル言語モデルで、MoEアーキテクチャ（128エキスパート、17Bアクティブ、総400B）に基づいて構築されています。多言語のテキストと画像の入力をサポートし、12言語で多言語のテキストとコードの出力を生成します。"
+    },
+    "pt": {
+      "description": "Modelo de linguagem multimodal de alta capacidade da Meta com arquitetura MoE (128 especialistas, 17B ativos, 400B total)..."
+    },
+    "ru": {
+      "description": "Высокопроизводительная мультимодальная языковая модель Meta с архитектурой MoE (128 экспертов, 17B активных, 400B всего)..."
+    },
+    "tr": {
+      "description": "Meta'nın yüksek kapasiteli çok modalli dil modeli, MoE mimarisi (128 uzman, 17B aktif, 400B toplam). Çok dilli metin/görsel girişi destekler ve 12 dilde çok dilli metin/kod çıktısı üretir."
+    },
+    "zh-Hant": {
+      "description": "Meta 推出的高容量多模態語言模型，基於混合專家架構構建，擁有 128 個專家，每次前向傳播激活 170 億參數（總計 400B）。支持多語言文本和圖像輸入，並生成多語言文本和代碼輸出，支持 12 種語言。"
     }
   },
   "verified": false,

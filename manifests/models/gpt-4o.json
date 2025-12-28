@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "코드 생성 및 디버깅에 적합한 128K 컨텍스트 윈도와 고급 추론 기능을 갖춘 OpenAI의 플래그십 멀티모달 모델로, 코딩 작업에 최적화되었습니다."
+    },
+    "es": {
+      "description": "El modelo multimodal insignia de OpenAI optimizado para tareas de codificacion, con ventana de contexto de 128K y capacidades de razonamiento avanzadas para generacion y depuracion de codigo."
+    },
+    "fr": {
+      "description": "Le modele multimodal phare d'OpenAI optimise pour les taches de codage, avec fenetre de contexte de 128K et capacites de raisonnement avancees pour la generation et le debogage de code."
+    },
+    "id": {
+      "description": "Model multimodal unggulan OpenAI yang dioptimalkan untuk tugas coding, dengan jendela konteks 128K dan kemampuan penalaran tingkat lanjut untuk pembuatan dan debugging kode."
+    },
+    "ja": {
+      "description": "コーディングタスクのために最適化されたOpenAIのフラッグシップマルチモーダルモデルで、コード生成とデバッグのために128Kコンテキストウィンドウと高度な推論能力を備えています。"
+    },
+    "pt": {
+      "description": "O modelo multimodal insigne do OpenAI otimizado para tarefas de codificacao, com janela de contexto de 128K e capacidades de raciocinio avancadas para geracao e depuracao de codigo."
+    },
+    "ru": {
+      "description": "Флагманская мультифункциональная модель от OpenAI, оптимизированная для задач программирования, с окном контекста 128K и передовыми возможностями рассуждения для генерации и отладки кода."
+    },
+    "tr": {
+      "description": "Kodlama gorevleri icin optimize edilmis isareti OpenAI multimodel modeli, kod olusturma ve hata ayiklama icin 128K baglam penceresi ve gelismis muhakeme yeteneklerine sahiptir."
+    },
+    "zh-Hant": {
+      "description": "OpenAI 的旗艦多模態模型，專為編碼任務優化，具備 128K 上下文視窗和先進的推理能力，適用於代碼生成和調試。"
     }
   },
   "verified": false,

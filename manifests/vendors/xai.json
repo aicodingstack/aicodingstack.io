@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "과학적 발견과 우주 이해를 추진하는 AI 기업으로, Grok AI 모델과 세계 최대의 AI 슈퍼컴퓨터 Colossus를 만들었습니다."
+    },
+    "es": {
+      "description": "Empresa de IA que avanza el descubrimiento científico y la comprensión del universo, creadora de los modelos de IA Grok y el supercomputador de IA más grande del mundo, Colossus."
+    },
+    "fr": {
+      "description": "Société de IA qui fait progresser la découverte scientifique et la compréhension de l'univers, créatrice des modèles de IA Grok et du superordinateur de IA le plus grand au monde, Colossus."
+    },
+    "id": {
+      "description": "Perusahaan AI yang memajukan penemuan ilmiah dan pemahaman alam semesta, pencipta model AI Grok dan superkomputer AI terbesar di dunia, Colossus."
+    },
+    "ja": {
+      "description": "科学的発見と宇宙の理解を進めるAI企業。Grok AIモデルと世界最大のAIスーパーコンピューターColossusを作成しました。"
+    },
+    "pt": {
+      "description": "Empresa de IA que faz avancar a descoberta científica e a compreensão do universo, criadora dos modelos de IA Grok e do supercomputador de IA maior do mundo, Colossus."
+    },
+    "ru": {
+      "description": "Компания ИИ, способствующая научным открытиям и пониманию вселенной, создатель моделей ИИ Grok и крупнейшего в мире суперкомпьютера ИИ Colossus."
+    },
+    "tr": {
+      "description": "Bilimsel keşifleri ve evrenin anlaşılmasını ilerleten bir AI şirketi, Grok AI modellerinin ve dünyanın en büyük AI süper bilgisayarı Colossus'un yaratıcısı."
+    },
+    "zh-Hant": {
+      "description": "致力於推進科學發現和理解宇宙的 AI 公司，創造了 Grok AI 模型和全球最大的 AI 超級計算機 Colossus。"
     }
   },
   "verified": false,

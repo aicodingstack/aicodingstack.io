@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "2016년에 설립된 글로벌 선도 서비스 로봇 및 AI 솔루션 회사로, 차세대 혁신적인 로봇 및 AI 도구를 만들기 위해 인공지능 기술을 사용합니다."
+    },
+    "es": {
+      "description": "Empresa global líder de robots de servicio y soluciones de IA fundada en 2016, dedicada a crear robots revolucionarios y herramientas IA de próxima generación utilizando tecnología de inteligencia ..."
+    },
+    "fr": {
+      "description": "Société leader mondiale de robots de service et solutions IA fondée en 2016, dédiée à créer des robots révolutionnaires et outils IA de nouvelle génération en utilisant la technologie d'intelligenc..."
+    },
+    "id": {
+      "description": "Perusahaan global terdepan robot layanan dan solusi AI yang didirikan pada 2016, berdedikasi menciptakan robot revolusioner dan alat AI generasi berikutnya menggunakan teknologi kecerdasan buatan."
+    },
+    "ja": {
+      "description": "2016年設立の世界をリードするサービスロボットおよびAIソリューション企業。人工知能技術を活用して次世代の革新的ロボットやAIツールを作成することに専念しています。"
+    },
+    "pt": {
+      "description": "Empresa global líder de robôs de serviço e soluções IA fundada em 2016, dedicada a criar robôs revolucionários e ferramentas IA de próxima geração utilizando tecnologia de inteligência artificial."
+    },
+    "ru": {
+      "description": "Ведущая мировая компания сервисных роботов и ИИ-решений, основанная в 2016 году, посвященная созданию революционных роботов и ИИ-инструментов следующего поколения с использованием технологий искусс..."
+    },
+    "tr": {
+      "description": "2016 yılında kurulan küresel lider hizmet robotları ve AI çözümleri şirketi, yapay zeka teknolojisini kullanarak bir sonraki nesil devrimci robotlar ve AI araçları yaratmaya adanmıştır."
+    },
+    "zh-Hant": {
+      "description": "成立於2016年的全球領先服務機器人和人工智慧解決方案公司，致力於利用人工智慧技術創造下一代革命性機器人和AI工具。"
     }
   },
   "verified": false,

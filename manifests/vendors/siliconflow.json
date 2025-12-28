@@ -8,10 +8,34 @@
       "description": "统一的 AI 推理平台，通过单一 API 提供对 LLM 及多模态模型的高速访问，支持无服务器、微调和专用 GPU 等灵活部署选项。"
     },
     "de": {
-      "description": "Ein einheitlicher KI-Inferenz-Plattform mit Hochgeschwindigkeitszugriff auf LLMs und multimodale Modelle über eine API, mit flexiblen Bereitstellungsoptionen wie Serverless, Fine-tuning und dedizierte GPUs."
+      "description": "Einheitliche KI-Inferenz-Plattform mit Hochgeschwindigkeitszugriff auf LLMs und multimodale Modelle. Optionen: Serverless, Fine-tuning und dedizierte GPUs."
     },
     "ko": {
       "description": "단일 API를 통해 LLM 및 멀티모달 모델에 대한 고속 액세스를 제공하는 통합 AI 추론 플랫폼으로, 서버리스, 파인 튜닝 및 전용 GPU와 같은 유연한 배포 옵션을 지원합니다."
+    },
+    "es": {
+      "description": "Plataforma unificada de inferencia AI que proporciona acceso de alta velocidad a LLMs y modelos multimodales a traves de una sola API, con opciones de despliegue flexibles como serverless, fine-tun..."
+    },
+    "fr": {
+      "description": "Plateforme unifiee d'inference IA offrant un acces a haute vitesse aux LLMs et modeles multimodaux via une seule API, avec options de deploiement flexibles comme serverless, fine-tuning et GPUs ded..."
+    },
+    "id": {
+      "description": "Platform inferensi AI terpadu menyediakan akses kecepatan tinggi ke LLM dan model multimodal melalui satu API, dengan opsi deploy fleksibel seperti serverless, fine-tuning dan GPU khusus."
+    },
+    "ja": {
+      "description": "単一APIを通じてLLMおよびマルチモーダルモデルへの高速アクセスを提供する統合AI推論プラットフォームで、サーバーレス、ファインチューニング、専用GPUなどの柔軟なデプロイオプションをサポートします。"
+    },
+    "pt": {
+      "description": "Plataforma unificada de inferencia de IA que fornece acesso de alta velocidade a LLMs e modelos multimodais atraves de uma unica API, com opcoes de implantacao flexiveis como serverless, ajuste fin..."
+    },
+    "ru": {
+      "description": "Унифицированная платформа вывода ИИ, обеспечивающая высокоскоростной доступ к LLM и мульти-модальным моделям через единый API, с гибкими вариантами развертывания, включая бессерверный, тонкая настр..."
+    },
+    "tr": {
+      "description": "Tek bir API aracılığıyla LLM ve çok modelli modellere yüksek hızlı erişim sunan birleşik AI çıkarım platformu, sunucusuz, fine-tuning ve özel GPU gibi esnek dağıtım seçenekleri desteklenir."
+    },
+    "zh-Hant": {
+      "description": "統一的 AI 推理平台，透過單一 API 提供對 LLM 及多模態模型的高速訪問，支持無伺服器、微調和專用 GPU 等靈活部署選項。"
     }
   },
   "verified": true,

@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "VS Code에서 에이전트 개발 팀을 제공하는 오픈 소스 AI 코딩 어시스턴트로, 다중 파일 기능, 모델 유연성 및 권한 기반 제어를 갖추고 있습니다."
+    },
+    "es": {
+      "description": "Asistente de codificación IA de código abierto que proporciona un equipo de agentes de desarrollo en VS Code, con capacidades de múltiples archivos, flexibilidad de modelo y control basado en permi..."
+    },
+    "fr": {
+      "description": "Assistant de codage IA open source fournissant une equipe d'agents de developpement dans VS Code, avec capacites de fichiers multiples, flexibilite de modele et controle base sur les permissions."
+    },
+    "id": {
+      "description": "Asisten coding open-source yang menyediakan tim agent pengembangan di VS Code, dengan kemampuan multi-file, fleksibilitas model, dan kontrol berbasis izin."
+    },
+    "ja": {
+      "description": "VS CodeでAI開発エージェントチームを提供するオープンソースAIコーディングアシスタントで、マルチファイル機能、モデルの柔軟性、許可ベースの制御を備えています。"
+    },
+    "pt": {
+      "description": "Assistente de codificação IA de código aberto que fornece uma equipe de agentes de desenvolvimento no VS Code, com capacidades de arquivos múltiplos, flexibilidade de modelo e controle baseado em p..."
+    },
+    "ru": {
+      "description": "Ассистент программирования ИИ с открытым исходным кодом, обеспечивающий команду агентов разработки в VS Code с возможностями работы с несколькими файлами, гибкостью модели и управлением на основе р..."
+    },
+    "tr": {
+      "description": "VS Code'da bir AI geliştirme ekibi sağlayan açık kaynaklı AI kodlama asistanı, çoklu dosyet kapasitesi, model esnekliği ve izin tabanlı kontrol özelliklerine sahiptir."
+    },
+    "zh-Hant": {
+      "description": "開源 AI 編碼助手，在 VS Code 中提供 AI 智能體開發團隊，具有多文件能力、模型靈活性和基於權限的控制。"
     }
   },
   "verified": false,

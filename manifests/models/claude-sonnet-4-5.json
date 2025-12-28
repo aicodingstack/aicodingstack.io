@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "실제 에이전트 및 코딩 워크플로우를 위해 최적화된 Anthropic의 가장 진보된 Sonnet 모델입니다. SWE-bench Verified와 같은 코드 벤치마크 테스트에서 우수한 성능을 발휘하며 시스템 설계 및 코드 보안에서 개선이 있습니다."
+    },
+    "es": {
+      "description": "El modelo Sonnet mas avanzado de Anthropic hasta la fecha, optimizado para agentes del mundo real y flujos de trabajo de codificacion..."
+    },
+    "fr": {
+      "description": "Le modele Sonnet le plus avance d'Anthropic a ce jour, optimise pour les agents du monde reel et les flux de travail de codage..."
+    },
+    "id": {
+      "description": "Model Sonnet paling canggih dari Anthropic sejauh ini, dioptimalkan untuk agen dunia nyata dan alur kerja coding..."
+    },
+    "ja": {
+      "description": "Anthropicのこれまでで最も進んだSonnetモデルで、実世界のエージェントとコーディングワークフローのために最適化されています。SWE-bench Verifiedなどのコーディングベンチマークテストで優秀なパフォーマンスを発揮し、システム設計、コードセキュリティ、規制遵守において改善がありました。"
+    },
+    "pt": {
+      "description": "O modelo Sonnet mais avancado da Anthropic ate agora, otimizado para agentes do mundo real e fluxos de trabalho de codificacao..."
+    },
+    "ru": {
+      "description": "Самая продвинутая модель Sonnet от Anthropic на сегодняшний день, оптимизированная для агентов реального мира и рабочих процессов программирования..."
+    },
+    "tr": {
+      "description": "Gercek dunya aracilar ve kodlama is akislari icin optimize edilmis olan bugune kadar Anthropic'in en gelismis Sonnet modeli..."
+    },
+    "zh-Hant": {
+      "description": "Anthropic 迄今為止最先進的 Sonnet 模型，針對真實世界的代理和編碼工作流程進行了優化。在 SWE-bench Verified 等編碼基準測試中表現出色，在系統設計、代碼安全和規範遵循方面有所提升。"
     }
   },
   "verified": false,

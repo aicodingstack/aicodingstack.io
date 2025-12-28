@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "Llama와 같은 AI 도구와 오픈 소스 모델을 구축하는 기술 기업으로, 오픈 사이언스를 통해 연구를 발전시키고 전 세계 사람들을 연결하며 혁신을 가능하게 합니다."
+    },
+    "es": {
+      "description": "Empresa de tecnologia que crea herramientas de IA y modelos de código abierto como Llama, impulsando la investigacion a traves de la ciencia abierta para conectar personas y permitir la innovacion ..."
+    },
+    "fr": {
+      "description": "Societe technologique construisant des outils IA et des modeles open source comme Llama, progressant la recherche par la science ouverte pour connecter les gens et permettre l'innovation mondiale."
+    },
+    "id": {
+      "description": "Perusahaan teknologi yang membangun alat AI dan model open-source seperti Llama, mendorong riset melalui sains terbuka untuk menghubungkan orang dan memungkinkan inovasi di seluruh dunia."
+    },
+    "ja": {
+      "description": "LlamaのようなAIツールとオープンソースモデルを構築するテクノロジー企業で、オープンサイエンスを通じて研究を推進し、世界中の人々をつなぎ、イノベーションを可能にしています。"
+    },
+    "pt": {
+      "description": "Empresa de tecnologia que cria ferramentas de IA e modelos de codigo aberto como Llama, avancando a pesquisa por meio da ciencia aberta para conectar pessoas e permitir a inovacao global."
+    },
+    "ru": {
+      "description": "Технологическая компания, создающая инструменты ИИ и модели с открытым исходным кодом, такие как Llama, продвигающая исследования через открытую науку для соединения людей и обеспечения инноваций в..."
+    },
+    "tr": {
+      "description": "Llama gibi AI araçları ve açık kaynaklı modeller oluşturan bir teknoloji şirketi, açık bilim yoluyla araştırmaları ilerleterek insanları birbirine bağlıyor ve küresel inovasyonu mümkün kılıyor."
+    },
+    "zh-Hant": {
+      "description": "科技公司，構建 AI 工具和開源模型（如 Llama），透過開放科學推進研究，連接全球人們並推動創新。"
     }
   },
   "verified": false,

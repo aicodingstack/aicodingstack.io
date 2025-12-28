@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "범용 코드 검색, 탐색 및 AI 기반 개발 도구(Amp 코딩 에이전트 포함)를 제공하는 코드 인텔리전스 플랫폼입니다."
+    },
+    "es": {
+      "description": "Plataforma de inteligencia de codigo que proporciona busqueda universal de codigo, navegacion y herramientas de desarrollo impulsadas por IA, incluido el agente de codificacion Amp."
+    },
+    "fr": {
+      "description": "Plateforme d'intelligence de code offrant une recherche universelle de code, une navigation et des outils de developpement alimentes par IA, incluant l'agent de codage Amp."
+    },
+    "id": {
+      "description": "Platform kecerdasan kode yang menyediakan pencarian kode universal, navigasi, dan tools pengembangan bertenaga AI, termasuk agen coding Amp."
+    },
+    "ja": {
+      "description": "汎用的なコード検索、ナビゲーション、AI駆動の開発ツール（Ampコーディングエージェントを含む）を提供するコードインテリジェンスプラットフォーム。"
+    },
+    "pt": {
+      "description": "Plataforma de inteligencia de codigo que fornece busca universal de codigo, navegacao e ferramentas de desenvolvimento impulsionadas por IA, incluindo o agente de codificacao Amp."
+    },
+    "ru": {
+      "description": "Платформа кодовой разведки, обеспечивающая универсальный поиск кода, навигацию и инструменты разработки на базе ИИ, включая агент кодирования Amp."
+    },
+    "tr": {
+      "description": "Amp kodlama aracı dahil olmak üzere evrensel kod araması, gezinme ve AI destekli geliştirme araçları sunan bir kod zeka platformu."
+    },
+    "zh-Hant": {
+      "description": "代碼智能平台，提供通用代碼搜索、導航和 AI 驅動的開發工具，包括 Amp 編碼 Agent。"
     }
   },
   "verified": false,

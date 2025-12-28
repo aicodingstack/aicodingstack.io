@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "고급 AI 소프트웨어 엔지니어링 솔루션을 개발하는 응용 AI 연구소로, 자율적으로 코드를 작성, 디버깅 및 배포할 수 있는 처음 AI 소프트웨어 엔지니어인 Devin을 만들었습니다."
+    },
+    "es": {
+      "description": "Laboratorio de IA aplicada que desarrolla soluciones avanzadas de ingeniería de software IA, creador de Devin, el primer ingeniero de software IA que puede escribir, depurar y desplegar código autó..."
+    },
+    "fr": {
+      "description": "Laboratoire de IA appliquée développant des solutions avancées d'ingénierie logicielle IA, créateur de Devin, le premier ingénieur logiciel IA capable d'écrire, déboguer et déployer du code de mani..."
+    },
+    "id": {
+      "description": "Laboratorium AI terapan yang mengembangkan solusi rekayasa perangkat lunak AI canggih, pencipta Devin, insinyur perangkat lunak AI pertama yang dapat menulis, debugging dan meng-deploy kode secara ..."
+    },
+    "ja": {
+      "description": "高度なAIソフトウェアエンジニアリングソリューションを開発する応用AIラボ。自律的にコードを記述、デバッグ、デプロイできる最初のAIソフトウェアエンジニアであるDevinを作成しました。"
+    },
+    "pt": {
+      "description": "Laboratório de IA aplicada desenvolvendo soluções avançadas de engenharia de software IA, criador do Devin, o primeiro engenheiro de software IA que pode escrever, depurar e implantar código autono..."
+    },
+    "ru": {
+      "description": "Прикладная лаборатория ИИ, разрабатывающая передовые ИИ-решения для программной инженерии, создатель Devin — первого ИИ-инженера программного обеспечения, способного autonomously писать, отлаживать..."
+    },
+    "tr": {
+      "description": "Gelişmiş AI yazılım mühendisliği çözümleri geliştiren uygulamalı AI laboratuvarı, kodu otonom olarak yazabilen, hataları ayıklabilen ve dağıtabilen ilk AI yazılım mühendisi olan Devin'in yaratıcısı."
+    },
+    "zh-Hant": {
+      "description": "專注於 AI 軟體工程的應用型 AI 實驗室，創造了 Devin - 首個能夠自主編寫、調試和部署程式碼的 AI 軟體工程師。"
     }
   },
   "verified": false,

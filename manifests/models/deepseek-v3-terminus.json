@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "DeepSeek V3.1 Terminus 확장 버전으로, 67B 파라미터와 64K 컨텍스트 윈도를 갖추고 있으며고급 추론 및 코드 생성 작업을 위해 설계되었습니다."
+    },
+    "es": {
+      "description": "Version extendida de DeepSeek V3.1 Terminus con 67B de parametros y ventana de contexto de 64K, disenada para tareas avanzadas de razonamiento y generacion de codigo."
+    },
+    "fr": {
+      "description": "Version etendue de DeepSeek V3.1 Terminus avec 67B de parametres et une fenetre de contexte de 64K, concu pour des taches avancees de raisonnement et de generation de code."
+    },
+    "id": {
+      "description": "Versi terperpanjang dari DeepSeek V3.1 Terminus dengan 67B parameter dan jendela konteks 64K, dirancang untuk tugas penalaran dan pembuatan kode tingkat lanjut."
+    },
+    "ja": {
+      "description": "DeepSeek V3.1 Terminusの拡張版、67Bパラメータ、64Kコンテキストウィンドウを備え、高度な推論とコード生成タスクのために設計されています。"
+    },
+    "pt": {
+      "description": "Versao estendida de DeepSeek V3.1 Terminus com 67B de parametros e janela de contexto de 64K, projetada para tarefas avancadas de raciocinio e geracao de codigo."
+    },
+    "ru": {
+      "description": "Расширенная версия DeepSeek V3.1 Terminus с 67B параметрами и окном контекста 64K, разработанная для сложных задач рассуждения и генерации кода."
+    },
+    "tr": {
+      "description": "67B parametre ve 64K baglam penceresine sahip DeepSeek V3.1 Terminus genisletilmis surumu, gelismis muhakeme ve kod olusturma gorevleri icin tasarlanmisitir."
+    },
+    "zh-Hant": {
+      "description": "DeepSeek V3.1 Terminus 擴展版本，67B 參數，64K 上下文視窗，專為高級推理和代碼生成任務設計。"
     }
   },
   "verified": false,

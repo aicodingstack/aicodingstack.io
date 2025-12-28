@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "신뢰할 수 있고, 해석 가능하며 제어 가능한 AI 시스템 구축에 집중하는 AI 안전 기업입니다."
+    },
+    "es": {
+      "description": "Una empresa de seguridad de IA centrada en construir sistemas de IA confiables, interpretables y controlables."
+    },
+    "fr": {
+      "description": "Entreprise de sécurité de l'IA axée sur la construction de systèmes d'IA fiables, interprétables et contrôlables."
+    },
+    "id": {
+      "description": "Perusahaan keamanan AI yang berfokus membangun sistem AI yang andal, dapat diinterpretasikan, dan dapat dikontrol."
+    },
+    "ja": {
+      "description": "信頼性が高く、解釈可能で制御可能なAIシステムを構築することに焦点を当てたAIセキュリティ企業。"
+    },
+    "pt": {
+      "description": "Empresa de segurança de IA focada em construir sistemas de IA confiáveis, interpretáveis e controláveis."
+    },
+    "ru": {
+      "description": "Компания по безопасности ИИ, работающая над созданием надежных, интерпретируемых и управляемых систем ИИ."
+    },
+    "tr": {
+      "description": "Güvenilir, yorumlanabilir ve kontrol edilebilir AI sistemleri oluşturmaya odaklanan bir AI güvenliği şirketi."
+    },
+    "zh-Hant": {
+      "description": "專注於構建可靠、可解釋和可控制的 AI 系統的 AI 安全公司。"
     }
   },
   "verified": false,

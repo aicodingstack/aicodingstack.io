@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "컴퓨터 소프트웨어, 소비자 전자 제품 및 AI 기반 서비스를 개발하는 다국적 기술 기업입니다."
+    },
+    "es": {
+      "description": "Corporación multinacional de tecnología que desarrolla software informático, productos de consumo y servicios impulsados por IA."
+    },
+    "fr": {
+      "description": "Société technologique multinationale développant des logiciels informatiques, des produits de consommation et des services propulsés par l'IA."
+    },
+    "id": {
+      "description": "Korporasi teknologi multinasional yang mengembangkan perangkat lunak komputer, produk konsumen dan layanan bertenaga AI."
+    },
+    "ja": {
+      "description": "コンピューターソフトウェア、消費者電子機器、AI駆動サービスを開発する多国籍テクノロジー企業。"
+    },
+    "pt": {
+      "description": "Corporação multinacional de tecnologia desenvolvendo software de computador, produtos de consumo e serviços movidos por IA."
+    },
+    "ru": {
+      "description": "Многонациональная технологическая корпорация, разрабатывающая компьютерное программное обеспечение, бытовую электронику и услуги на базе ИИ."
+    },
+    "tr": {
+      "description": "Bilgisayar yazılımı, tüketici elektroniği ve AI destekli hizmetleri geliştiren çok uluslu bir teknoloji şirketi."
+    },
+    "zh-Hant": {
+      "description": "開發計算機軟體、消費電子產品和 AI 驅動服務的跨國科技公司。"
     }
   },
   "verified": false,

@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "DeepSeek R1은 128K 컨텍스트 윈도를 갖춘 1.3B 파라미터 언어 모델로, 고급 추론 및 코드 생성 작업을 위해 설계되었습니다."
+    },
+    "es": {
+      "description": "DeepSeek R1 es un modelo de lenguaje con 1.3B de parametros y ventana de contexto de 128K, disenado para tareas avanzadas de razonamiento y generacion de codigo."
+    },
+    "fr": {
+      "description": "DeepSeek R1 est un modele de langage avec 1.3B de parametres et une fenetre de contexte de 128K, concu pour des taches avancees de raisonnement et de generation de code."
+    },
+    "id": {
+      "description": "DeepSeek R1 adalah model bahasa dengan 1.3B parameter dan jendela konteks 128K, dirancang untuk tugas penalaran dan pembuatan kode tingkat lanjut."
+    },
+    "ja": {
+      "description": "DeepSeek R1128Kコンテキストウィンドウを持つ13Bパラメータの言語モデルで、高度な推論とコード生成タスクのために設計されています。"
+    },
+    "pt": {
+      "description": "DeepSeek R1 e um modelo de linguagem com 1.3B de parametros e janela de contexto de 128K, projetado para tarefas avancadas de raciocinio e geracao de codigo."
+    },
+    "ru": {
+      "description": "DeepSeek R1 - языковая модель с 1.3B параметров и окном контекста 128K, разработанная для сложных задач рассуждения и генерации кода."
+    },
+    "tr": {
+      "description": "DeepSeek R1, 128K baglam penceresine sahip 1.3B parametreli dil modeli, gelismis muhakeme ve kod olusturma gorevleri icin tasarlanmisitir."
+    },
+    "zh-Hant": {
+      "description": "DeepSeek R1 是 1.3B 參數的語言模型，具備 128K 上下文視窗，專為高級推理和代碼生成任務設計。"
     }
   },
   "verified": false,

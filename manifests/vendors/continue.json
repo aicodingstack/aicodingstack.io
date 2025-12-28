@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "백그라운드 에이전트, CLI 도구 및 IDE 통합 그리고 다중 모델 지원을 통해 개발자가 코딩 워크플로우를 자동화할 수 있도록 하는 오픈 소스 플랫폼입니다."
+    },
+    "es": {
+      "description": "Plataforma de código abierto que permite a los desarrolladores automatizar flujos de trabajo de codificación a través de agentes de fondo, herramientas CLI e integraciones IDE con soporte multi-mod..."
+    },
+    "fr": {
+      "description": "Plateforme open source permettant aux développeurs d'automatiser les flux de travail de codage via agents d'arrière-plan, outils CLI et intégrations IDE avec support multi-modèle."
+    },
+    "id": {
+      "description": "Platform open source yang memungkinkan pengembang mengotomatisasi alur kerja coding melalui agen latar belakang, tools CLI dan integrasi IDE dengan dukungan multi-model."
+    },
+    "ja": {
+      "description": "バックグラウンドエージェント、CLIツール、IDE統合、マルチモデルサポートを通じて開発者がコーディングワークフローを自動化できるようにするオープンソースプラットフォーム。"
+    },
+    "pt": {
+      "description": "Plataforma de código aberto permitindo aos desenvolvedores automatizar fluxos de trabalho de codificação através de agentes de fundo, ferramentas CLI e integrações IDE com suporte multi-modelo."
+    },
+    "ru": {
+      "description": "Платформа с открытым исходным кодом, позволяющая разработчикам автоматизировать рабочие процессы программирования через фоновых агентов, инструменты CLI и интеграции IDE с мульти-модельной поддержкой."
+    },
+    "tr": {
+      "description": "Arka plan aracileri, CLI araçları ve IDE entegrasyonları ile çoklu model desteği aracılığıyla geliştiricilerin kodlama iş akışlarını otomatikleştirmesini sağlayan açık kaynaklı platform."
+    },
+    "zh-Hant": {
+      "description": "開源平台，通過後台代理、CLI 工具和 IDE 整合以及多模型支援，幫助開發者自動化編碼工作流程。"
     }
   },
   "verified": false,

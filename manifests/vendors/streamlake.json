@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "콰이선에서 분사된 비디오 클라우드 서비스 브랜드로, 숏쉽 비디오 플랫폼 운영 경험을 활용하여 라이브 스트리밍, 비디오 처리 및 콘텐츠 배포 기능을 제공합니다."
+    },
+    "es": {
+      "description": "Marca de servicios en la nube de video de Kuaishou, que ofrece transmision en vivo, procesamiento de video y capacidades de entrega de contenido, aprovechando la experiencia de operaciones de plata..."
+    },
+    "fr": {
+      "description": "Marque de services video en nuance de Kuaishou, offrant diffusion en direct, traitement video et capacites de livraison de contenu, utilisant l'experience d'exploitation de plateforme video court."
+    },
+    "id": {
+      "description": "Merek layanan cloud video dari Kuaishou, menyediakan streaming langsung, pemrosesan video, dan kemampuan distribusi konten, memanfaatkan pengalaman operasi platform video pendek."
+    },
+    "ja": {
+      "description": "快手傘下のビデオクラウドサービスブランドで、ショートビデオプラットフォームの運用経験を活かしてライブストリーミング、ビデオ処理、コンテンツ配信機能を提供します。"
+    },
+    "pt": {
+      "description": "Marca de servicos em nuvem de video da Kuaishou, oferecendo transmissao ao vivo, processamento de video e capacidades de entrega de conteudo, aproveitando a experiencia de operacao de plataforma de..."
+    },
+    "ru": {
+      "description": "Видеоклауд-сервисный бренд Kuaishou, предоставляющий потоковую передачу в реальном времени, обработку видео и возможности доставки контента, используя опыт работы на платформах короткого видео."
+    },
+    "tr": {
+      "description": "Kuaishou'un video bulut hizmet markası, canli yayin, video isleme ve içerik dağıtım yetenekleri sunar, kısa video platformu operasyon deneyiminden yararlanır."
+    },
+    "zh-Hant": {
+      "description": "快手旗下的視頻雲服務品牌，提供直播、視頻處理和內容分發能力，利用短視頻平台運營經驗。"
     }
   },
   "verified": false,

@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "컴퓨팅, 스토리지, AI/ML 및 데이터베이스를 포함한 240개 이상의 서비스를 제공하는 세계에서 가장 포괄적인 클라우드 플랫폼으로, 조직이 더 빠르게 혁신하고 비용을 절감할 수 있도록 돕습니다."
+    },
+    "es": {
+      "description": "Plataforma en la nube más comprehensiva del mundo, ofrece más de 240 servicios incluyendo computación, almacenamiento, IA/ML y bases de datos para ayudar a las organizaciones a innovar más rápido y..."
+    },
+    "fr": {
+      "description": "Plateforme cloud la plus complète au monde, offrant 240+ services incluant le calcul, le stockage, l'IA/ML et les bases de données pour aider les organisations à innover plus vite et à réduire les ..."
+    },
+    "id": {
+      "description": "Platform cloud paling komprehensif di dunia, menyediakan 240+ layanan termasuk komputasi, penyimpanan, AI/ML dan database untuk membantu organisasi berinovasi lebih cepat dan mengurangi biaya."
+    },
+    "ja": {
+      "description": "世界で最も包括的なクラウドプラットフォーム。コンピューティング、ストレージ、AI/ML、データベースを含む240以上のサービスを提供し、組織がより速く革新し、コストを削減できるようにします。"
+    },
+    "pt": {
+      "description": "Plataforma em nuvem mais abrangente do mundo, fornece mais de 240 serviços incluindo computação, armazenamento, IA/ML e bancos de dados para ajudar as organizações a inovar mais rápido e reduzir cu..."
+    },
+    "ru": {
+      "description": "Самая полная облачная платформа в мире, предлагающая более 240 сервисов, включая вычислительные мощности, хранилище, ИИ/МL и базы данных, помогая организациям быстрее внедрять инновации и снижать р..."
+    },
+    "tr": {
+      "description": "Dünyanın en kapsamlı bulut platformu, kuruluşların daha hızlı inovasyon yapmasına ve maliyetleri düşürmesine yardımcı olmak için 240+ hizmet sunuyor, bunlar arasında hesaplama, depolama, AI/ML ve v..."
+    },
+    "zh-Hant": {
+      "description": "全球最全面的雲端平台，提供 240 多項服務，包括運算、儲存、AI/ML 和資料庫，幫助組織更快創新並降低成本。"
     }
   },
   "verified": false,

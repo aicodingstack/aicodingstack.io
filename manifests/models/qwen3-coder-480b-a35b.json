@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "Qwen3 Coder는 코드 생성을 위해 설계된 모델로, 32B 파라미터와 32K 컨텍스트 윈도를 갖추고 소프트웨어 개발 및 프로그래밍 어시스턴트 시나리오를 지향합니다."
+    },
+    "es": {
+      "description": "Qwen3 Coder es un modelo especializado en generacion de codigo con parametros de 32B y ventana de contexto de 32K, disenado para desarrollo de software y asistencia de programacion."
+    },
+    "fr": {
+      "description": "Qwen3 Coder est un modele specialise dans la generation de code avec 32B de parametres et une fenetre de contexte de 32K, concu pour le developpement logiciels et l'assistance en programmation."
+    },
+    "id": {
+      "description": "Qwen3 Coder adalah model spesialisasi pembuatan kode dengan parameter 32B dan jendela konteks 32K, dirancang untuk pengembangan perangkat lunak dan asistensi pemrograman."
+    },
+    "ja": {
+      "description": "Qwen3 Coderは32Bパラメータと32Kコンテキストウィンドウを持つコード生成専門モデルで、ソフトウェア開発とプログラミングアシスタントのために設計されています。"
+    },
+    "pt": {
+      "description": "Qwen3 Coder e um modelo especializado em geracao de codigo com parametros de 32B e janela de contexto de 32K, projetado para desenvolvimento de software e assistencia de programacao."
+    },
+    "ru": {
+      "description": "Qwen3 Coder - это специализированная модель генерации кода с 32B параметрами и окном контекста 32K, разработанная для разработки программного обеспечения и помощи в программировании."
+    },
+    "tr": {
+      "description": "Qwen3 Coder, 32B parametre ve 32K icerik penceresine uzmanlastirilmis bir kod uretim modelidir, yazilim gelistirme ve programlama asistani icin tasarlanmistir."
+    },
+    "zh-Hant": {
+      "description": "Qwen3 Coder 是專為代碼生成設計的模型，32B 參數，32K 上下文窗口，面向軟件開發編程助手場景。"
     }
   },
   "verified": false,

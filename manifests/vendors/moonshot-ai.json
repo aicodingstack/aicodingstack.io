@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "긴 컨텍스트 기능을 갖춘 대형 언어 모델을 개발하는 중국 AI 기업으로, Kimi 챗봇과 K 시리즈 모델을 만들었으며 알리바바와 텐센트의 지원을 받습니다."
+    },
+    "es": {
+      "description": "Empresa china de IA desarrollando modelos de lenguaje grandes con capacidades de contexto largo, creadora del chatbot Kimi y modelos de la serie K, respaldada por Alibaba y Tencent."
+    },
+    "fr": {
+      "description": "Societe chinoise IA developpant des modeles de langue grands avec capacites de contexte long, createur du chatbot Kimi et modeles de la serie K, soutenue par Alibaba et Tencent."
+    },
+    "id": {
+      "description": "Perusahaan China AI mengembangkan model bahasa besar dengan kapasitas konteks panjang, pencipta chatbot Kimi dan seri model K, didukung oleh Alibaba dan Tencent."
+    },
+    "ja": {
+      "description": "長いコンテキスト能力を持つ大規模言語モデルを開発する中国のAI企業で、KimiチャットボットとKシリーズモデルを作成し、AlibabaとTencentに支援されています。"
+    },
+    "pt": {
+      "description": "Empresa China de IA desenvolvendo modelos de linguagem grandes com capacidades de contexto longo, criadora do chatbot Kimi e modelos da serie K, apoiada por Alibaba e Tencent."
+    },
+    "ru": {
+      "description": "Китайская компания ИИ, разрабатывающая большие языковые модели с возможностями длинного контекста, создатель чат-бота Kimi и моделей серии K, поддерживаемая Alibaba и Tencent."
+    },
+    "tr": {
+      "description": "Uzun bağlama özelliklerine sahip büyük dil modelleri developing Çin AI şirketi, Kimi chatbot ve K serisi model yaratıcısı, Alibaba ve Tencent tarafından destekleniyor."
+    },
+    "zh-Hant": {
+      "description": "中國 AI 公司，開發具有長上下文能力的大型語言模型，創造了 Kimi 聊天機器人和 K 系列模型，由阿裡巴巴和騰訊支持。"
     }
   },
   "verified": false,

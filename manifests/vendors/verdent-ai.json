@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "병렬 AI 에이전트 오케스트레이션을 통해 개발자가 복잡한 엔터프라이즈급 코드를 제공할 수 있도록 지원하는 에이전트 코딩 도구를 개발하는 AI 네이티브 소프트웨어 회사입니다."
+    },
+    "es": {
+      "description": "Empresa de software nativa de IA que desarrolla herramientas de codificacion de agentes, capacita a los desarrolladores humanos para entregar codigo complejo de nivel empresarial a traves de la orq..."
+    },
+    "fr": {
+      "description": "Societe de logiciels natives IA qui developpe des outils de codage d'agents, permet aux developpeurs humains de fournir du code complexe de niveau entreprise par l'orchestration parallele d'agents IA."
+    },
+    "id": {
+      "description": "Perusahaan software AI-native yang mengembangkan tools coding agen, memberdayakan pengembang manusia untuk mengirimkan kode kompleks level enterprise melalui orkestrasi agen AI paralel."
+    },
+    "ja": {
+      "description": "エージェントコーディングツールを開発するAIネイティブソフトウェア企業で、並列AIエージェント調整を通じて、人間の開発者が複雑なエンタープライズレベルのコードを提供できるようにします。"
+    },
+    "pt": {
+      "description": "Empresa de software nativo de IA que desenvolve ferramentas de codificacao de agentes, permite aos desenvolvedores humanos entregar codigo complexo de nivel empresarial por meio da orquestracao par..."
+    },
+    "ru": {
+      "description": "Компания программного обеспечения, ориентированная на ИИ, разрабатывающая агентные инструменты программирования, позволяющие разработчикам-людям создавать сложный корпоративный код через параллельн..."
+    },
+    "tr": {
+      "description": "AI-native yazılım şirketi, paralel AI aracı orkestrasyonu yoluyla insan geliştiricilerin karmaşık kurumsal kod sunmasını sağlayan ajan kodlama araçları geliştirir."
+    },
+    "zh-Hant": {
+      "description": "AI 原生軟體公司，開發代理編碼工具，透過並行 AI 代理編排，賦能人類開發者交付複雜的企業級代碼。"
     }
   },
   "verified": false,

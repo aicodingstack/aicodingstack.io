@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "단일 인터페이스를 통해 다양한 제공업체의 여러 AI 모델에 액세스할 수 있는 통합 API 플랫폼입니다."
+    },
+    "es": {
+      "description": "Una plataforma API unificada que proporciona acceso a multiples modelos de IA de diferentes proveedores a traves de una unica interfaz."
+    },
+    "fr": {
+      "description": "Une plateforme API unifiee qui fournit l'acces a plusieurs modeles IA de differents fournisseurs via une interface unique."
+    },
+    "id": {
+      "description": "Platform API terpadu yang menyediakan akses ke berbagai model AI dari penyedia berbeda melalui satu antarmuka."
+    },
+    "ja": {
+      "description": "単一のインターフェースを通じて異なるプロバイダーの複数のAIモデルにアクセスを提供する統一APIプラットフォーム。"
+    },
+    "pt": {
+      "description": "Uma plataforma API unificada que fornece acesso a varios modelos de IA de diferentes provedores atraves de uma unica interface."
+    },
+    "ru": {
+      "description": "Унифицированная платформа API, предоставляющая доступ к нескольким моделям ИИ от разных поставщиков через единый интерфейс."
+    },
+    "tr": {
+      "description": "Tek bir arayuz aracılığıyla farklı sağlayıcılardan birden fazla AI modeline erişim sağlayan birleştirilmiş API platformu."
+    },
+    "zh-Hant": {
+      "description": "統一的 API 平台，透過單一接口提供來自不同提供商的多個 AI 模型的訪問。"
     }
   },
   "verified": false,

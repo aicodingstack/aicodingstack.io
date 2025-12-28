@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "13억 명 이상의 사용자에게 서비스를 제공하는 세계 최대의 모바일 결제 플랫폼인 알리페이를 운영하는 디지털 금융 서비스 기업으로, 글로벌 핀테크 솔루션을 제공합니다."
+    },
+    "es": {
+      "description": "Empresa de servicios financieros digitales que opera Alipay, la plataforma de pago móvil más grande del mundo dando servicio a más de 1300 millones de usuarios y proporcionando soluciones fintech g..."
+    },
+    "fr": {
+      "description": "Société de services financiers numériques exploitant Alipay, la plus grande plateforme de paiement mobile au monde servant plus de 1,3 milliard d'utilisateurs et fournissant des solutions fintech m..."
+    },
+    "id": {
+      "description": "Perusahaan jasa keuangan digital yang mengoperasikan Alipay, platform pembayaran mobile terbesar di dunia melayani lebih dari 1,3 miliar pengguna dan menyediakan solusi fintech secara global."
+    },
+    "ja": {
+      "description": "世界最大のモバイル決済プラットフォームAlipayを運営し、13億人以上のユーザーにサービスを提供し、グローバルなフィンテックソリューションを提供するデジタル金融サービス会社。"
+    },
+    "pt": {
+      "description": "Empresa de serviços financeiros digitais que opera Alipay, a maior plataforma de pagamento móvel do mundo atendendo mais de 1,3 bilhão de usuários e fornecendo soluções fintech globalmente."
+    },
+    "ru": {
+      "description": "Компания цифровых финансовых услуг, управляющая Alipay — крупнейшей в мире мобильной платежной платформой, обслуживающей более 1,3 миллиарда пользователей и предоставляющей глобальные финтех-решения."
+    },
+    "tr": {
+      "description": "13 milyardan fazla kullanıcıya hizmet veren dünya'nın en büyük mobil ödeme platformu Alipay'i işleten dijital finansal hizmetler şirketi, küresel fintech çözümleri sağlar."
+    },
+    "zh-Hant": {
+      "description": "數字金融服務公司，運營全球最大的移動支付平台支付寶，服務超過 13 億用戶，提供全球金融科技解決方案。"
     }
   },
   "verified": false,

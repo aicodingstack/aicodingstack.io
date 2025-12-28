@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "프로그래밍의 미래를 연구하는 응용 연구실로, 연구원, 엔지니어 및 기술 전문가로 구성되어 실용성과 가능성의 경계에서 혁신을 만듭니다."
+    },
+    "es": {
+      "description": "Laboratorio de investigación aplicada trabajando en el futuro de la programación. Somos un grupo de investigadores, ingenieros y tecnólogos inventando en el borde de lo útil y posible."
+    },
+    "fr": {
+      "description": "Laboratoire de recherche appliquée travaillant sur l'avenir de la programmation. Nous sommes un groupe de chercheurs, ingénieurs et technologues inventant à la frontière de l'utile et du possible."
+    },
+    "id": {
+      "description": "Laboratorium penelitian terapan yang bekerja pada masa depan pemrograman. Kami adalah kelompok peneliti, insinyur, dan teknolog yang berinovasi di batas yang berguna dan mungkin."
+    },
+    "ja": {
+      "description": "プログラミングの未来に取り組む応用研究ラボ。研究者、エンジニア、テクノロジストのグループとして、有用性と可能性の境界でイノベーションを作り出しています。"
+    },
+    "pt": {
+      "description": "Laboratório de pesquisa aplicada trabalhando no futuro da programação. Somos um grupo de pesquisadores, engenheiros e tecnólogos inventando na fronteira do útil e possível."
+    },
+    "ru": {
+      "description": "Прикладная исследовательская лаборатория, работающая над будущим программирования. Мы группа исследователей, инженеров и технологов, создающих новое на границе полезного и возможного."
+    },
+    "tr": {
+      "description": "Programlamanın geleceği üzerinde çalışan bir uygulama araştırma laboratuvarı. Yararlı ve mümkün olanın sınırlarında icat eden araştırmacıların, mühendislerin ve teknologların bir grubuyuz."
+    },
+    "zh-Hant": {
+      "description": "專注於程式設計未來的應用研究實驗室，由研究人員、工程師和技術專家組成，致力於實用性和可能性的邊緣進行創新。"
     }
   },
   "verified": false,

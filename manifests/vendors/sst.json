@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "서버리스 아키텍처를 사용하여 AWS에서 현대적인 풀스택 애플리케이션을 구축하는 오픈 소스 프레임워크로, Y Combinator의 지원을 받으며 Pulumi 및 Terraform 엔진을 사용합니다."
+    },
+    "es": {
+      "description": "Framework de código abierto para construir aplicaciones full-stack modernas en AWS usando arquitectura serverless, respaldado por Y Combinator con motor Pulumi y Terraform."
+    },
+    "fr": {
+      "description": "Framework open source pour créer des applications full-stack modernes sur AWS utilisant l'architecture serverless, soutenu par Y Combinator avec moteur Pulumi et Terraform."
+    },
+    "id": {
+      "description": "Framework open source untuk membangun aplikasi full-stack modern di AWS menggunakan arsitektur serverless, didukung oleh Y Combinator dengan mesin Pulumi dan Terraform."
+    },
+    "ja": {
+      "description": "サーバーレスアーキテクチャを使用してAWSでモダンなフルスタックアプリケーションを構築するためのオープンソースフレームワーク。Y Combinatorが支援し、PulumiおよびTerraformエンジンを採用。"
+    },
+    "pt": {
+      "description": "Framework de código aberto para criar aplicações full-stack modernas na AWS usando arquitetura serverless, apoiado por Y Combinator com motor Pulumi e Terraform."
+    },
+    "ru": {
+      "description": "Фреймворк с открытым исходным кодом для создания современных полнофункциональных приложений на AWS с использованием бессерверной архитектуры, поддерживаемый Y Combinator с движком Pulumi и Terraform."
+    },
+    "tr": {
+      "description": "Pulumi ve Terraform motoru ile Y Combinator tarafından desteklenen, sunucusuz mimari kullanarak AWS'de modern full-stack uygulamalar oluşturmak için açık kaynak bir framework."
+    },
+    "zh-Hant": {
+      "description": "開源框架，使用無伺服器架構在 AWS 上建構現代全棧應用，由 Y Combinator 支持，採用 Pulumi 和 Terraform 引擎。"
     }
   },
   "verified": false,

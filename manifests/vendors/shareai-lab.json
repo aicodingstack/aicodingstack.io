@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "AI 민주화를 촉진하고 AGI 발전을 가속화하는 오픈 소스 AI 커뮤니티 조직으로, 협업 개발 및 연구 프로젝트를 통해 목표를 실현합니다."
+    },
+    "es": {
+      "description": "Organización comunitaria de IA de código abierto que promueve la democratización de la IA y acelera el progreso de AGI, logrando objetivos a través de desarrollo colaborativo y proyectos de investi..."
+    },
+    "fr": {
+      "description": "Organisation communautaire IA open source promouvant la démocratisation de l'IA et accélérant le progrès AGI, réalisant des objectifs via le développement collaboratif et projets de recherche."
+    },
+    "id": {
+      "description": "Organisasi komunitas AI open source yang mempromosikan demokratisasi AI dan mempercepat kemajuan AGI, mencapai tujuan melalui pengembangan kolaboratif dan proyek riset."
+    },
+    "ja": {
+      "description": "AIの民主化とAGIの進歩を加速させるためのオープンソースAIコミュニティ組織。協調的な開発と研究プロジェクトを通じて目標を達成します。"
+    },
+    "pt": {
+      "description": "Organização comunitária IA de código aberto promovendo a democratização da IA e acelerando o progresso AGI, alcançando objetivos através de desenvolvimento colaborativo e projetos de pesquisa."
+    },
+    "ru": {
+      "description": "Сообщественная организация с открытым исходным кодом по ИИ, продвигающая демократизацию ИИ и ускорение прогресса AGI, достигающая целей через совместную разработку и исследовательские проекты."
+    },
+    "tr": {
+      "description": "AI demokratizasyonunu ve AGI ilerlemesini hızlandıran açık kaynaklı AI topluluk organizasyonu, işbirlikçi geliştirme ve araştırma projeleri yoluyla hedefler gerçekleştiriyor."
+    },
+    "zh-Hant": {
+      "description": "開源 AI 社區組織，致力於推動 AI 民主化和加速 AGI 進展，透過協作開發和研究專案實現目標。"
     }
   },
   "verified": false,

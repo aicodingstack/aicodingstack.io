@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "세계 최대의 비디오 게임 제조사이자 기술 그룹으로, 소셜 네트워크, 메신저(위챗/QQ), 클라우드 서비스, 결제 시스템 및 AI 기술을 제공합니다."
+    },
+    "es": {
+      "description": "El mayor proveedor mundial de videojuegos y conglomerado tecnologico, ofrece redes sociales, mensajeria (WeChat/QQ), servicios en la nube, sistemas de pago y tecnologia de IA."
+    },
+    "fr": {
+      "description": "Le plus grand fournisseur mondial de jeux video et conglomerat technologique, offre reseaux sociaux, messagerie (WeChat/QQ), services cloud, systemes de paiement et technologie IA."
+    },
+    "id": {
+      "description": "Penyedia video game terbesar di dunia dan konglomerat teknologi, menyediakan jaringan sosial, messaging (WeChat/QQ), layanan cloud, sistem pembayaran, dan teknologi AI."
+    },
+    "ja": {
+      "description": "世界最大のビデオゲームメーカーおよび技術コングロマリットで、ソーシャルネットワーク、メッセージング（WeChat/QQ）、クラウドサービス、決済システム、AI技術を提供しています。"
+    },
+    "pt": {
+      "description": "O maior provedor mundial de jogos eletronicos e conglomerado tecnologico, oferece redes sociais, mensageria (WeChat/QQ), servicos em nuvem, sistemas de pagamento e tecnologia de IA."
+    },
+    "ru": {
+      "description": "Крупнейший в мире поставщик видеоигр и технологический конгломерат, предлагающий социальные сети, мессенджер (WeChat/QQ), облачные сервисы, платежные системы и технологии ИИ."
+    },
+    "tr": {
+      "description": "Dünyanın en büyük video oyunu sağlayıcısı ve teknoloji grubu, sosyal ağlar, mesajlaşma (WeChat/QQ), bulut hizmetleri, ödeme sistemleri ve AI teknolojisi sunar."
+    },
+    "zh-Hant": {
+      "description": "全球最大的視頻遊戲廠商和科技集團，提供社交網絡、即時通訊（微信/QQ）、雲服務、支付系統和 AI 技術。"
     }
   },
   "verified": false,

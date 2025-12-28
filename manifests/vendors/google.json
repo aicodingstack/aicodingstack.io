@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "AI 및 머신러닝을 포함한 인터넷 관련 서비스 및 제품을 전문으로 하는 다국적 기술 기업입니다."
+    },
+    "es": {
+      "description": "Compañía multinacional de tecnología especializada en servicios y productos relacionados con Internet, incluyendo IA y aprendizaje automático."
+    },
+    "fr": {
+      "description": "Société technologique multinationale spécialisée dans les services et produits liés à Internet, y compris l'IA et l'apprentissage automatique."
+    },
+    "id": {
+      "description": "Perusahaan teknologi multinasional yang mengkhususkan diri pada layanan dan produk terkait internet, termasuk AI dan machine learning."
+    },
+    "ja": {
+      "description": "インターネット関連のサービスと製品、およびAIと機械学習を専門とする多国籍テクノロジー企業。"
+    },
+    "pt": {
+      "description": "Empresa multinacional de tecnologia especializada em serviços e produtos relacionados à Internet, incluindo IA e aprendizado de máquina."
+    },
+    "ru": {
+      "description": "Многонациональная технологическая компания, специализирующаяся на интернет-услугах и продуктах, включая ИИ и машинное обучение."
+    },
+    "tr": {
+      "description": "AI ve makine öğrenimi dahil olmak üzere internetle ilgili hizmetlere ve ürünlere uzmanlaşmış çok uluslu bir teknoloji şirketi."
+    },
+    "zh-Hant": {
+      "description": "專注於互聯網相關服務和產品的跨國科技公司，包括 AI 和機器學習。"
     }
   },
   "verified": false,

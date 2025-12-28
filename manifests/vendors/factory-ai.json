@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "소프트웨어 개발 수명 주기 자동화를 위한 자율 AI Droids를 구축하는 에이전트 기반 소프트웨어 개발 기업으로, 기업에 50만 시간 이상의 엔지니어링 시간을 절약합니다."
+    },
+    "es": {
+      "description": "Empresa de desarrollo de software nativo de agentes que construye Droids de IA autónomos para automatizar el ciclo de vida de desarrollo de software, ahorrando a las empresas más de 500,000 horas d..."
+    },
+    "fr": {
+      "description": "Société de développement de logiciel natif d'agents construisant des Droids IA autonomes pour automatiser le cycle de vie de développement logiciel, économisant aux entreprises plus de 500,000 heur..."
+    },
+    "id": {
+      "description": "Perusahaan pengembangan perangkat lunak native-agent yang membangun Droids AI otonom untuk mengotomatisasi siklus hidup pengembangan perangkat lunak, menghemat lebih dari 500,000 jam engineering un..."
+    },
+    "ja": {
+      "description": "自律的なAI Droidsを構築してソフトウェア開発ライフサイクルを自動化し、企業に50万時間以上のエンジニアリング時間を節約する、エージェントネイティブソフトウェア開発企業。"
+    },
+    "pt": {
+      "description": "Empresa de desenvolvimento de software nativo de agentes construíndo Droids de IA autônomos para automatizar o ciclo de vida de desenvolvimento de software, economizando para empresas mais de 500,0..."
+    },
+    "ru": {
+      "description": "Компания по разработке программного обеспечения с агентным подходом, создающая автономные AI Droids для автоматизации жизненного цикла разработки ПО, экономящая предприятиям более 500,000 инженерны..."
+    },
+    "tr": {
+      "description": "Yazılım geliştirme yaşam döngüsünü otomatize eden otonom AI Droid'ları oluşturan, şirketlere 500.000'den fazla mühendislik saati kazandıran ajan-native yazılım geliştirme şirketi."
+    },
+    "zh-Hant": {
+      "description": "智慧體原生軟體開發公司，構建自主 AI Droids 自動化軟體開發生命週期，為企業節省超過 50 萬工程小時。"
     }
   },
   "verified": false,

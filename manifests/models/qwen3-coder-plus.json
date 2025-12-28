@@ -6,6 +6,36 @@
   "translations": {
     "zh-Hans": {
       "description": "阿里巴巴专有的开源 Qwen3 Coder 480B A35B 版本。强大的编码代理模型，专长于通过工具调用和环境交互进行自主编程，结合了编码能力和通用的多功能能力。"
+    },
+    "de": {
+      "description": "Alibabas proprietare Open-Source-Version Qwen3 Coder 480B A35B. Leistungsstarker Coding-Agent, spezialisiert auf autonomes Programmieren via Tool-Calling und Umgebungsinteraktion."
+    },
+    "ko": {
+      "description": "Alibaba의 독점 오픈 소스 Qwen3 Coder 480B A35B 버전입니다. 도구 호출 및 환경 상호작용을 통한 자율 프로그래밍에 특화된 강력한 코딩 에이전트로, 코딩 능력과 일반적 다기능 능력을 결합했습니다."
+    },
+    "es": {
+      "description": "Version de codigo abierto proprietaria de Alibaba Qwen3 Coder 480B A35B..."
+    },
+    "fr": {
+      "description": "Version open source proprietaire d'Alibaba Qwen3 Coder 480B A35B..."
+    },
+    "id": {
+      "description": "Versi open-source milik Alibaba Qwen3 Coder 480B A35B..."
+    },
+    "ja": {
+      "description": "Alibabaの独自のオープンソースQwen3 Coder 480B A35Bバージョン。ツール呼び出しと環境の相互作用を通じた自律プログラミングに特化した強力なコーディングエージェントで、コーディング能力と一般的な多機能能力を組み合わせています。"
+    },
+    "pt": {
+      "description": "Versao de codigo aberto proprietaria da Alibaba Qwen3 Coder 480B A35B..."
+    },
+    "ru": {
+      "description": "Собственная версия с открытым исходным кодом от Alibaba Qwen3 Coder 480B A35B..."
+    },
+    "tr": {
+      "description": "Qwen3 Coder 480B A35B'in Alibaba'nin ozel acik kaynak surumu..."
+    },
+    "zh-Hant": {
+      "description": "阿里巴巴專有的開源 Qwen3 Coder 480B A35B 版本。強大的編碼代理模型，專長於通過工具調用和環境交互進行自主編程，結合了編碼能力和通用的多功能能力。"
     }
   },
   "verified": false,

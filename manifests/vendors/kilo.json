@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "CLI 도구 및 IDE 확장을 통해 고급 코드 생성, 디버깅 및 개발 워크플로우를 제공하는 AI 기반 코딩 플랫폼입니다."
+    },
+    "es": {
+      "description": "Plataforma de codificación impulsada por IA proporcionando generación de código avanzada, depuración y flujos de trabajo de desarrollo a través de herramientas CLI y extensiones IDE."
+    },
+    "fr": {
+      "description": "Plateforme de codage propulsée par l'IA fournissant une génération de code avancée, le débogage et les flux de travail de développement via les outils CLI et les extensions IDE."
+    },
+    "id": {
+      "description": "Platform pengkodean bertenaga AI menyediakan penghasilan kode canggih, debugging dan alur kerja pengembangan melalui tools CLI dan ekstensi IDE."
+    },
+    "ja": {
+      "description": "CLIツールおよびIDE拡張機能を通じて高度なコード生成、デバッグ、開発ワークフローを提供するAI駆動のコーディングプラットフォーム。"
+    },
+    "pt": {
+      "description": "Plataforma de codificação alimentada por IA fornecendo geração de código avançada, depuração e fluxos de trabalho de desenvolvimento por meio de ferramentas CLI e extensões IDE."
+    },
+    "ru": {
+      "description": "Платформа для программирования на базе ИИ, предоставляющая расширенную генерацию кода, отладку и рабочие процессы разработки через инструменты CLI и расширения IDE."
+    },
+    "tr": {
+      "description": "CLI araçları ve IDE uzantıları aracılığıyla gelişmiş kod oluşturma, hata ayıklama ve geliştirme iş akışları sağlayan AI destekli kodlama platformu."
+    },
+    "zh-Hant": {
+      "description": "提供 AI 驅動的編碼平台，通過 CLI 工具和 IDE 擴展提供先進的程式碼生成、調試和開發工作流。"
     }
   },
   "verified": true,

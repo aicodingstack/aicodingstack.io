@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "30개 이상의 IDE에서 스마트 코드 자동 완성 및 생성을 제공하는 AI 코딩 플랫폼으로, 엔터프라이즈 보안, 유연한 배포 및 완전한 코드 개인 정보 보호를 제공합니다."
+    },
+    "es": {
+      "description": "Plataforma de codificacion IA que proporciona autocompletado y generacion de codigo inteligente en mas de 30 IDEs, con seguridad de nivel empresarial, despliegue flexible y privacidad completa del ..."
+    },
+    "fr": {
+      "description": "Plateforme de codage IA offrant autocompletion et generation de code intelligents sur plus de 30 IDEs, avec securite de niveau entreprise, deploiement flexible et confidentialite complete du code."
+    },
+    "id": {
+      "description": "Platform coding AI menyediakan autocomplete dan generasi kode cerdas di lebih dari 30 IDE, dengan keamanan level enterprise, deploy fleksibel, dan privasi kode penuh."
+    },
+    "ja": {
+      "description": "30以上のIDEでスマートなコード補完と生成を提供するAIコーディングプラットフォームで、エンタープライズレベルのセキュリティ、柔軟なデプロイメント、完全なコードプライバシーを備えています。"
+    },
+    "pt": {
+      "description": "Plataforma de codificacao de IA que fornece autocompletar e geracao de codigo inteligentes em mais de 30 IDEs, com seguranca de nivel empresarial, implantacao flexivel e privibilidade completa de c..."
+    },
+    "ru": {
+      "description": "Платформа программирования ИИ, обеспечивающая интеллектуальное автодополнение и генерацию кода на более чем 30 IDE, с защитой уровня предприятия, гибким развертыванием и полной конфиденциальностью ..."
+    },
+    "tr": {
+      "description": "30+ IDE'de akıllı kod otomatik tamamlama ve oluşturma sunan AI kodlama platformu, kurumsal güvenlik, esnek dağıtım ve tam kod gizliliği içerir."
+    },
+    "zh-Hant": {
+      "description": "AI 編碼平台，在 30 多個 IDE 中提供智能代碼補全和生成，具備企業級安全、靈活部署和完全代碼隱私保護。"
     }
   },
   "verified": false,

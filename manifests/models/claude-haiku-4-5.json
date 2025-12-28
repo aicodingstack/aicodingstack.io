@@ -8,10 +8,34 @@
       "description": "Anthropic 最快、最高效的模型，以大型 Claude 模型的一小部分成本和延迟提供接近前沿的智能。在推理、编码和计算机使用任务方面与 Claude Sonnet 4 的性能相当，Haiku 4.5 为实时和大规模应用带来前沿级能力。"
     },
     "de": {
-      "description": "Anthropics schnellstes und effizientestes Modell, dasnear-frontier-Intelligenz zu niedrigen Kosten und mit niedriger Latenz liefert. Leistet Claude Sonnet 4 bei Reasoning, Codierung und Computernutzung."
+      "description": "Anthropics schnellstes und effizientestes Modell mit near-frontier-Intelligenz zu geringen Kosten. Konkurriert mit Claude Sonnet 4 bei Reasoning, Codierung und Computernutzung."
     },
     "ko": {
       "description": "Anthropic의 가장 빠르고 효율적인 모델로, 낮은 비용과 짧은 지연 시간으로 거의 최첨단 수준의 지능을 제공합니다. 추론, 코딩 및 컴퓨터 사용 작업에서 Claude Sonnet 4와 동등한 성능을 발휘합니다."
+    },
+    "es": {
+      "description": "El modelo más rápido de Anthropic, entregando inteligencia casi fronteriza bajo costo y latencia..."
+    },
+    "fr": {
+      "description": "Le modèle le plus rapide d'Anthropic, offrant une quasi-frontière d'intelligence à faible coût et latence..."
+    },
+    "id": {
+      "description": "Model tercepat dari Anthropic, memberikan kecerdasan hampir frontier dengan biaya dan latensi rendah..."
+    },
+    "ja": {
+      "description": "Anthropicの最速モデルで、低コストと低レイテンシで最先端に近いインテリジェンスを提供します。推論、コーディング、コンピュータ使用タスクでClaude Sonnet 4に匹敵し、リアルタイムアプリケーションに最適な最先レベルの能力を提供します。"
+    },
+    "pt": {
+      "description": "O modelo mais rápido da Anthropic, entregando inteligência quase-fronteira a baixo custo e latência..."
+    },
+    "ru": {
+      "description": "Самая быстрая модель Anthropic, предоставляющая почти передовую интеллекцию при низкой стоимости и задержке..."
+    },
+    "tr": {
+      "description": "Anthropic'in en hızlı modeli, düşük maliyet ve gecikme ile yaklaşık ön saflar zekası sunar..."
+    },
+    "zh-Hant": {
+      "description": "Anthropic 最快、最高效的模型，以大型 Claude 模型的一小部分成本和延遲提供接近前沿的智能。在推理、編碼和計算機使用任務方面與 Claude Sonnet 4 的性能相當，Haiku 4.5 為實時和大规模應用帶來前沿級能力。"
     }
   },
   "verified": false,

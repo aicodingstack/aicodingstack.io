@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "IntelliJ IDEA, PyCharm 및 Kotlin 프로그래밍 언어를 포함하여 대부분의 프로그래밍 언어용 지능형 IDE를 만드는 소프트웨어 개발 도구 회사입니다."
+    },
+    "es": {
+      "description": "Empresa de herramientas de desarrollo de software que crea IDEs inteligentes para la mayoría de los lenguajes de programación, incluyendo IntelliJ IDEA, PyCharm y el lenguaje de programación Kotlin."
+    },
+    "fr": {
+      "description": "Entreprise d'outils de développement de logiciel créant des IDE intelligents pour la plupart des langages de programmation, y compris IntelliJ IDEA, PyCharm et le langage de programmation Kotlin."
+    },
+    "id": {
+      "description": "Perusahaan tools pengembangan perangkat lunak yang membuat IDE cerdas untuk sebagian besar bahasa pemrograman, termasuk IntelliJ IDEA, PyCharm dan bahasa pemrograman Kotlin."
+    },
+    "ja": {
+      "description": "IntelliJ IDEA、PyCharm、およびKotlinプログラミング言語を含む、ほとんどのプログラミング言語向けのインテリジェントなIDEを作成するソフトウェア開発ツール会社。"
+    },
+    "pt": {
+      "description": "Empresa de ferramentas de desenvolvimento de software que cria IDEs inteligentes para a maioria das linguagens de programação, incluindo IntelliJ IDEA, PyCharm e a linguagem de programação Kotlin."
+    },
+    "ru": {
+      "description": "Компания инструментов разработки программного обеспечения, создающая интеллектуальные IDE для большинства языков программирования, включая IntelliJ IDEA, PyCharm и язык программирования Kotlin."
+    },
+    "tr": {
+      "description": "IntelliJ IDEA, PyCharm ve Kotlin programlama dili dahil olmak üzere çoğu programlama dili için akıllı IDE'ler oluşturan bir yazılım geliştirme araçları şirketi."
+    },
+    "zh-Hant": {
+      "description": "軟體開發工具公司，為大多數程式設計語言創建智慧 IDE，包括 IntelliJ IDEA、PyCharm 以及 Kotlin 程式設計語言。"
     }
   },
   "verified": false,

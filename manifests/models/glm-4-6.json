@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "GLM 4.6은 Z.ai의 9B 파라미터 언어 모델로, 128K 컨텍스트 윈도를 갖추고 있으며 효율적인 성능과 다국어 이해를 위해 최적화되었습니다."
+    },
+    "es": {
+      "description": "GLM 4.6 es un modelo de lenguaje con 9B de parametros de Z.ai con ventana de contexto de 128K, optimizado para rendimiento eficiente y comprension multilingue."
+    },
+    "fr": {
+      "description": "GLM 4.6 est un modele de langage avec 9B de parametres de Z.ai avec une fenetre de contexte de 128K, optimise pour les performances efficaces et la comprehension multilingue."
+    },
+    "id": {
+      "description": "GLM 4.6 adalah model bahasa dengan 9B parameter dari Z.ai dengan jendela konteks 128K, dioptimalkan untuk performa efisien dan pemahaman multibahasa."
+    },
+    "ja": {
+      "description": "Z.aiの9Bパラメータ言語モデルGLM 4.6は、128Kコンテキストウィンドウを持ち、効率的なパフォーマンスと多言語理解のために最適化されています。"
+    },
+    "pt": {
+      "description": "GLM 4.6 e um modelo de linguagem com 9B de parametros de Z.ai com janela de contexto de 128K, otimizado para desempenho eficiente e compreensao multilingue."
+    },
+    "ru": {
+      "description": "GLM 4.6 - языковая модель с 9B параметров от Z.ai с окном контекста 128K, оптимизированная для эффективной производительности и многоязычного понимания."
+    },
+    "tr": {
+      "description": "GLM 4.6, Z.ai'den gelen 128K baglam penceresine sahip 9B parametreli dil modeli, verimli performans ve cok dilli anlas icin optimize edilmistir."
+    },
+    "zh-Hant": {
+      "description": "GLM 4.6 是 Z.ai 推出的 9B 參數語言模型，具備 128K 上下文視窗，專為高效性能和多語言理解優化。"
     }
   },
   "verified": false,

@@ -6,6 +6,36 @@
   "translations": {
     "zh-Hans": {
       "description": "由行业领先的上下文引擎支持的 AI 软件开发平台，提供自主编码 Agent 和代码库感知工具。"
+    },
+    "de": {
+      "description": "Eine KI-Plattform für Softwareentwicklung mit einer branchenführenden Kontext-Engine, die autonome Coding-Agents und codebase-sensible Tools bietet."
+    },
+    "ko": {
+      "description": "업계 최고의 컨텍스트 엔진이 지원하는 AI 소프트웨어 개발 플랫폼으로, 자율 코딩 에이전트와 코드베이스 인식 도구를 제공합니다."
+    },
+    "es": {
+      "description": "Una plataforma de desarrollo de software impulsada por IA con un motor de contexto líder en la industria, que proporciona agentes de codificación autónomos y herramientas conscientes del código base."
+    },
+    "fr": {
+      "description": "Une plateforme de développement logiciel propulsée par l'IA avec un moteur de contexte de pointe, offrant des agents de codage autonomes et des outils conscients de la base de code."
+    },
+    "id": {
+      "description": "Platform pengembangan perangkat lunak bertenaga AI dengan mesin konteks terdepan di industri, menyediakan agen pengkodean otonom dan tools yang sadar basis kode."
+    },
+    "ja": {
+      "description": "業界最先端のコンテキストエンジンを搭載したAIソフトウェア開発プラットフォーム。自律的なコーディングエージェントとコードベース認識ツールを提供します。"
+    },
+    "pt": {
+      "description": "Uma plataforma de desenvolvimento de software alimentada por IA com um mecanismo de contexto líder na indústria, fornecendo agentes de codificação autônomos e ferramentas conscientes da base de cód..."
+    },
+    "ru": {
+      "description": "Платформа разработки программного обеспечения на базе ИИ с движком контекста, ставшим эталоном в отрасли, предоставляющая автономные агенты кодирования и инструменты, учитывающие базу кода."
+    },
+    "tr": {
+      "description": "Sektör lideri bir bağlam motoru tarafından desteklenen AI destekli yazılım geliştirme platformu, otonom kodlama aracıları ve kod tabanı farkında araçlar sunar."
+    },
+    "zh-Hant": {
+      "description": "由業界領先的上下文引擎支援的 AI 軟體開發平台，提供自主編碼 Agent 和程式碼庫感知工具。"
     }
   },
   "verified": false,

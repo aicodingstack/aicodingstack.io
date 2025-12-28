@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "고급 추론, 코딩, 수학 및 과학 작업을 위해 설계된 Google의 최첨단 워크호스 모델입니다. 더 정확하고 세밀한 컨텍스트 처리 응답을 제공하는 통합 \"생각\" 능력이 있습니다."
+    },
+    "es": {
+      "description": "El modelo de caballo de batalla mas avanzado de Google disenado para razonamiento avanzado, codificacion, matematicas y tareas cientificas..."
+    },
+    "fr": {
+      "description": "Le modele cheval de travail le plus avance de Google, concu pour le raisonnement avance, le codage, les mathematiques et les taches scientifiques..."
+    },
+    "id": {
+      "description": "Model kuda kerja paling canggih dari Google, dirancang untuk penalaran tingkat lanjut, coding, matematika, dan tugas sains..."
+    },
+    "ja": {
+      "description": "Googleの最先端の主力モデルで、高度な推論、コーディング、数学、科学タスクのために設計されています。統合された\"思考\"能力により、より正確で詳細なコンテキスト処理レスポンスを提供します。"
+    },
+    "pt": {
+      "description": "O modelo de cavalos de trabalho mais avancado do Google, projetado para raciocinio avancado, codificacao, matematica e tarefas cientificas..."
+    },
+    "ru": {
+      "description": "Самая передовая рабочая модель от Google, разработанная для сложных рассуждений, программирования, математики и научных задач..."
+    },
+    "tr": {
+      "description": "Gelismis muhakeme, kodlama, matematik ve bilimsel gorevler icin tasarlanmis Google'in en gelismis at modeli. Daha dogru ve detayli baglam isleme yanitlar sunan entegre \"dusunme\" yetenekleri bulunur."
+    },
+    "zh-Hant": {
+      "description": "Google 最先進的主力模型，專為高級推理、編碼、數學和科學任務設計。包含內置\"思考\"能力，能夠提供更準確和細緻的上下文處理響應。"
     }
   },
   "verified": false,

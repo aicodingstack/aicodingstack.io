@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "수백만 명이 계획부터 배포까지 코드 협업을 할 수 있도록 하는 AI 기반 개발자 플랫폼으로, 내장된 보안 및 자동화 기능을 제공합니다."
+    },
+    "es": {
+      "description": "Plataforma de desarrolladores impulsada por IA que permite a millones colaborar en código, desde la planificación hasta el despliegue, con seguridad y automatización integradas."
+    },
+    "fr": {
+      "description": "Plateforme de développeurs propulsée par l'IA permettant à des millions de collaborer sur du code, de la planification au déploiement, avec sécurité et automatisation intégrées."
+    },
+    "id": {
+      "description": "Platform pengembang bertenaga AI yang memungkinkan jutaan orang berkolaborasi pada kode, dari perencanaan hingga deployment, dengan keamanan dan otomatisasi terintegrasi."
+    },
+    "ja": {
+      "description": "計画からデプロイまで、セキュリティと自動化が統合されたAI駆動の開発者プラットフォーム。数百万人の開発者がコードで協力できるようにします。"
+    },
+    "pt": {
+      "description": "Plataforma de desenvolvedores alimentada por IA que permite a milhões colaborar no código, do planejamento ao deployment, com segurança e automação integradas."
+    },
+    "ru": {
+      "description": "Платформа для разработчиков на базе ИИ, позволяющая миллионам людей совместно работать над кодом от планирования до развертывания со встроенными безопасностью и автоматизацией."
+    },
+    "tr": {
+      "description": "Planlamadan dağıtıma kadar entegre güvenlik ve otomasyon ile milyonlarca insanın kod üzerinde birlikte çalışmasını sağlayan AI destekli bir geliştirici platformu."
+    },
+    "zh-Hant": {
+      "description": "AI 驅動的開發者平台，讓數百萬開發者能夠協作編寫程式碼，從規劃到部署，內建安全和自動化功能。"
     }
   },
   "verified": false,
