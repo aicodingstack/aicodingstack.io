@@ -1,0 +1,291 @@
+import { describe, expect, it } from 'vitest'
+import {
+  generateArticleMetadata,
+  generateComparisonMetadata,
+  generateDocsMetadata,
+  generateListPageMetadata,
+  generateModelDetailMetadata,
+  generateSoftwareDetailMetadata,
+  generateStaticPageMetadata,
+} from '@/lib/metadata'
+
+/**
+ * Test suite to verify metadata generators produce correct structure
+ * after refactoring to use common buildMetadataWithSocial pipeline
+ */
+describe('Metadata Generators', () => {
+  describe('generateListPageMetadata', () => {
+    // Skip: requires Next.js server environment for getTranslations
+    it.skip('should generate complete metadata with all required fields', async () => {
+      const metadata = await generateListPageMetadata({
+        locale: 'en',
+        category: 'ides',
+        translationNamespace: 'pages.ides',
+      })
+
+      // Verify basic structure
+      expect(metadata).toBeDefined()
+      expect(metadata.title).toBeDefined()
+      expect(metadata.description).toBeDefined()
+      expect(metadata.keywords).toBeDefined()
+
+      // Verify alternates
+      expect(metadata.alternates).toBeDefined()
+      expect(metadata.alternates?.canonical).toBeDefined()
+      expect(metadata.alternates?.languages).toBeDefined()
+
+      // Verify OpenGraph
+      expect(metadata.openGraph).toBeDefined()
+      expect(metadata.openGraph?.title).toBeDefined()
+      expect(metadata.openGraph?.description).toBeDefined()
+      expect(metadata.openGraph?.url).toBeDefined()
+      expect(metadata.openGraph?.locale).toBe('en_US')
+      expect(metadata.openGraph?.type).toBe('website')
+
+      // Verify Twitter
+      expect(metadata.twitter).toBeDefined()
+      expect(metadata.twitter?.title).toBeDefined()
+      expect(metadata.twitter?.description).toBeDefined()
+      expect(metadata.twitter?.card).toBe('summary_large_image')
+
+      // Verify robots
+      expect(metadata.robots).toBeDefined()
+    })
+  })
+
+  describe('generateSoftwareDetailMetadata', () => {
+    it('should generate complete metadata for software products', async () => {
+      const metadata = await generateSoftwareDetailMetadata({
+        locale: 'en',
+        category: 'ides',
+        slug: 'cursor',
+        product: {
+          name: 'Cursor',
+          description: 'AI-powered code editor',
+          vendor: 'Anysphere',
+          platforms: [{ os: 'macOS' }, { os: 'Windows' }],
+          license: 'Proprietary',
+        },
+        typeDescription: 'AI IDE',
+      })
+
+      // Verify basic structure
+      expect(metadata).toBeDefined()
+      expect(metadata.title).toContain('Cursor')
+      expect(metadata.description).toContain('Cursor')
+      expect(metadata.keywords).toContain('Cursor')
+
+      // Verify OpenGraph type is article for detail pages
+      expect(metadata.openGraph?.type).toBe('article')
+
+      // Verify canonical includes category and slug
+      expect(metadata.alternates?.canonical).toContain('ides/cursor')
+    })
+  })
+
+  describe('generateModelDetailMetadata', () => {
+    // Skip: requires Next.js server environment for getTranslations
+    it.skip('should generate complete metadata for model products', async () => {
+      const metadata = await generateModelDetailMetadata({
+        locale: 'en',
+        slug: 'deepseek-v3',
+        model: {
+          name: 'DeepSeek V3',
+          description: 'Advanced coding model',
+          vendor: 'DeepSeek',
+          size: '671B',
+          contextWindow: 128000,
+          maxOutput: 8192,
+          tokenPricing: {
+            input: 0.27,
+            output: 1.1,
+          },
+        },
+        translationNamespace: 'pages.models',
+      })
+
+      // Verify basic structure
+      expect(metadata).toBeDefined()
+      expect(metadata.title).toContain('DeepSeek V3')
+      expect(metadata.description).toContain('DeepSeek V3')
+      expect(metadata.description).toContain('DeepSeek')
+
+      // Verify OpenGraph type is article for detail pages
+      expect(metadata.openGraph?.type).toBe('article')
+
+      // Verify canonical includes models path
+      expect(metadata.alternates?.canonical).toContain('models/deepseek-v3')
+    })
+  })
+
+  describe('generateComparisonMetadata', () => {
+    it('should generate complete metadata for comparison pages', async () => {
+      const metadata = await generateComparisonMetadata({
+        locale: 'en',
+        category: 'ides',
+      })
+
+      // Verify basic structure
+      expect(metadata).toBeDefined()
+      expect(metadata.title).toBeDefined()
+      expect(metadata.description).toBeDefined()
+      expect(metadata.keywords).toContain('comparison')
+
+      // Verify OpenGraph type is website for comparison pages
+      expect(metadata.openGraph?.type).toBe('website')
+
+      // Verify canonical includes comparison path
+      expect(metadata.alternates?.canonical).toContain('ides/comparison')
+    })
+  })
+
+  describe('generateArticleMetadata', () => {
+    it('should generate complete metadata for articles with publishedTime', async () => {
+      const metadata = await generateArticleMetadata({
+        locale: 'en',
+        slug: 'test-article',
+        article: {
+          title: 'Test Article',
+          description: 'Test description',
+          date: '2025-01-01',
+        },
+      })
+
+      // Verify basic structure
+      expect(metadata).toBeDefined()
+      expect(metadata.title).toContain('Test Article')
+
+      // Verify OpenGraph has publishedTime
+      expect(metadata.openGraph?.type).toBe('article')
+      expect(metadata.openGraph?.publishedTime).toBe('2025-01-01')
+
+      // Verify Twitter includes creator
+      expect(metadata.twitter?.creator).toBeDefined()
+    })
+  })
+
+  describe('generateDocsMetadata', () => {
+    it('should generate complete metadata for documentation pages', async () => {
+      const metadata = await generateDocsMetadata({
+        locale: 'en',
+        slug: 'getting-started',
+        doc: {
+          title: 'Getting Started',
+          description: 'Learn how to get started',
+        },
+      })
+
+      // Verify basic structure
+      expect(metadata).toBeDefined()
+      expect(metadata.title).toContain('Getting Started')
+      expect(metadata.description).toBe('Learn how to get started')
+
+      // Verify OpenGraph type is article for docs
+      expect(metadata.openGraph?.type).toBe('article')
+
+      // Verify canonical includes docs path
+      expect(metadata.alternates?.canonical).toContain('docs/getting-started')
+    })
+  })
+
+  describe('generateStaticPageMetadata', () => {
+    it('should generate complete metadata for static pages', async () => {
+      const metadata = await generateStaticPageMetadata({
+        locale: 'en',
+        basePath: 'about',
+        title: 'About Us',
+        description: 'Learn about our mission',
+        keywords: 'about, mission, team',
+        ogType: 'website',
+        pageType: 'static',
+      })
+
+      // Verify basic structure
+      expect(metadata).toBeDefined()
+      expect(metadata.title).toBe('About Us')
+      expect(metadata.description).toBe('Learn about our mission')
+      expect(metadata.keywords).toBe('about, mission, team')
+
+      // Verify OpenGraph type
+      expect(metadata.openGraph?.type).toBe('website')
+
+      // Verify canonical
+      expect(metadata.alternates?.canonical).toBe('/about')
+    })
+
+    it('should support home page type', async () => {
+      const metadata = await generateStaticPageMetadata({
+        locale: 'en',
+        basePath: '',
+        title: 'Home',
+        description: 'Welcome home',
+        pageType: 'home',
+      })
+
+      // Verify canonical for root
+      expect(metadata.alternates?.canonical).toBe('/')
+    })
+  })
+
+  describe('Locale handling', () => {
+    it('should generate correct OpenGraph locale for different locales', async () => {
+      const enMetadata = await generateStaticPageMetadata({
+        locale: 'en',
+        basePath: 'test',
+        title: 'Test',
+        description: 'Test',
+      })
+
+      const zhMetadata = await generateStaticPageMetadata({
+        locale: 'zh-Hans',
+        basePath: 'test',
+        title: 'Test',
+        description: 'Test',
+      })
+
+      expect(enMetadata.openGraph?.locale).toBe('en_US')
+      expect(zhMetadata.openGraph?.locale).toBe('zh_CN')
+    })
+
+    it('should generate language alternates for all locales', async () => {
+      const metadata = await generateStaticPageMetadata({
+        locale: 'en',
+        basePath: 'test',
+        title: 'Test',
+        description: 'Test',
+      })
+
+      const languages = metadata.alternates?.languages
+      expect(languages).toBeDefined()
+      expect(languages?.en).toBe('/test')
+      expect(languages?.['zh-Hans']).toBe('/zh-Hans/test')
+      expect(languages?.ja).toBe('/ja/test')
+    })
+  })
+
+  describe('Canonical URL handling', () => {
+    it('should generate correct canonical for default locale', async () => {
+      const metadata = await generateStaticPageMetadata({
+        locale: 'en',
+        basePath: 'docs',
+        title: 'Docs',
+        description: 'Documentation',
+      })
+
+      // Default locale should not have locale prefix in canonical
+      expect(metadata.alternates?.canonical).toBe('/docs')
+    })
+
+    it('should generate correct canonical for non-default locale', async () => {
+      const metadata = await generateStaticPageMetadata({
+        locale: 'ja',
+        basePath: 'docs',
+        title: 'Docs',
+        description: 'Documentation',
+      })
+
+      // Non-default locale should have locale prefix in canonical
+      expect(metadata.alternates?.canonical).toBe('/ja/docs')
+    })
+  })
+})
