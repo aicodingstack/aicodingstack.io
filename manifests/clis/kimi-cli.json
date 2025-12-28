@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "Kimi CLI는 소프트웨어 개발 작업과 터미널 작업을 도와주는 새로운 CLI 에이전트입니다. 쉘과 유사한 UI, Zsh 통합, 에이전트 클라이언트 프로토콜 지원 및 MCP 지원을 제공합니다."
+    },
+    "es": {
+      "description": "Kimi CLI es un nuevo agente CLI para tareas de desarrollo. Tiene interfaz tipo shell, integracion Zsh, soporte protocolo cliente agente y soporte MCP."
+    },
+    "fr": {
+      "description": "Kimi CLI est un nouvel agent CLI pour taches de developpement. Offre interface type shell, integration Zsh, support protocole client agent et support MCP."
+    },
+    "id": {
+      "description": "Kimi CLI adalah agen CLI baru yang bisa membantu tugas pengembangan perangkat lunak dan operasi terminal. Memiliki UI shell, integrasi Zsh, dukungan protokol klien agen, dan dukungan MCP."
+    },
+    "ja": {
+      "description": "Kimi CLIは、ソフトウェア開発タスクと端末操作を支援する新しいCLIエージェントです。シェルライクなUI、Zsh統合、エージェントクライアントプロトコルサポート、MCPサポートを備えています。"
+    },
+    "pt": {
+      "description": "Kimi CLI e novo agente CLI que pode ajudar com tarefas desenvolvimento software e operacoes terminal. Apresenta interface tipo shell, integracao Zsh, suporte protocolo cliente agente e suporte MCP."
+    },
+    "ru": {
+      "description": "Kimi CLI - новый агент CLI, который может помочь с задачами разработки ПО и терминальными операциями. Имеет интерфейс shell, интеграцию Zsh, поддержку протокола клиента агента и MCP."
+    },
+    "tr": {
+      "description": "Kimi CLI, yazilim gelistirme gorevlerinize yardimci olabilen yeni CLI aracidir. Shell benzeri arayuz, Zsh entegrasyonu, AracI Musteri Istemcisi Protokolu ve MCP destegi ozelliklerine sahiptir."
+    },
+    "zh-Hant": {
+      "description": "Kimi CLI 是一款新的 CLI Agent，可以協助您完成軟體開發任務和終端操作。具備類 Shell 的使用者介面、Zsh 整合、Agent Client Protocol 支援和 MCP 支援。"
     }
   },
   "verified": false,

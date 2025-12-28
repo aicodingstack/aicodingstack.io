@@ -8,10 +8,34 @@
       "description": "开源 AI 编码代理，支持来自 60+ 提供商的 500+ 模型，提供透明定价。具备多模式编排、自动错误恢复、并行代理和 MCP 市场。"
     },
     "de": {
-      "description": "Open-Source-KI-Coding-Agent, der 500+ Modelle von 60+ Anbietern mit transparenten Preisen unterstützt. Bietet Multi-Modus-Orchestrierung, automatische Fehlerbehebung, parallele Agenten und einen Marktplatz für MCP."
+      "description": "Open-Source-KI-Coding-Agent mit 500+ Modellen von 60+ Anbietern. Bietet Multi-Modus-Orchestrierung, automatische Fehlerbehebung, parallele Agenten und einen MCP-Marktplatz."
     },
     "ko": {
       "description": "60개 이상의 제공업체에서 500개 이상의 모델을 지원하고 투명한 가격을 제공하는 오픈 소스 AI 코딩 에이전트입니다. 멀티 모드 오케스트레이션, 자동 오류 복구, 병렬 에이전트 및 MCP 마켓플레이스를 제공합니다."
+    },
+    "es": {
+      "description": "Agente de codificación de IA de código abierto que admite 500+ modelos de 60+ proveedores con precios transparentes..."
+    },
+    "fr": {
+      "description": "Agent de codage IA open source prenant en charge 500+ modèles de 60+ fournisseurs avec tarification transparente..."
+    },
+    "id": {
+      "description": "AI coding agent open source mendukung 500+ model dari 60+ provider dengan pricing transparan. Fitur multi-mode orchestration, auto-recovery failure, parallel agents, dan MCP marketplace."
+    },
+    "ja": {
+      "description": "60以上のプロバイダーから500以上のモデルをサポートし、透明な価格設定を提供するオープンソースAIコーディングエージェント。マルチモードオーケストレーション、自動障害回復、並列エージェント、MCPマーケットプレイスを備えています。"
+    },
+    "pt": {
+      "description": "Agente de codificacao de IA de codigo aberto suportando 500+ modelos de 60+ provedores com precos transparentes..."
+    },
+    "ru": {
+      "description": "Агент программирования на базе ИИ с открытым исходным кодом, поддерживающий 500+ моделей от 60+ провайдеров с прозрачным ценообразованием..."
+    },
+    "tr": {
+      "description": "60+ sağlayıcıdan 500+ modeli destekleyen ve şeffaf fiyatlandırmaya sahip açık kaynaklı bir AI kodlama aracısı..."
+    },
+    "zh-Hant": {
+      "description": "開源 AI 編碼代理，支援來自 60+ 提供商的 500+ 模型，提供透明定價。具備多模式編排、自動錯誤恢復、並行代理和 MCP 市場。"
     }
   },
   "verified": true,

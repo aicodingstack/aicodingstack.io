@@ -8,10 +8,34 @@
       "description": "Cline 是一个开源的协作式编码 Agent，用于复杂工作。它提供计划-执行工作流程，具有完全透明性、模型自由度和企业级安全的客户端架构。"
     },
     "de": {
-      "description": "Cline ist ein Open-Source-Collaborative-Coding-Agent für komplexe Aufgaben. Bietet Plan-und-Akt-Workflow mit vollständiger Transparenz, Modellfreiheit und clientseitiger Architektur für Unternehmenssicherheit."
+      "description": "Cline ist ein Open-Source-Collaborative-Coding-Agent für komplexe Aufgaben. Bietet Plan-und-Akt-Workflow mit Transparenz, Modellfreiheit und clientseitiger Architektur für Sicherheit."
     },
     "ko": {
       "description": "Cline는 복잡한 작업을 위한 오픈 소스 협업 코딩 에이전트입니다. 계획 후 실행 워크플로우를 제공하며 완전한 투명성, 모델 자유도 및 엔터프라이즈 보안을 위한 클라이언트 측 아키텍처를 갖추고 있습니다."
+    },
+    "es": {
+      "description": "Cline es un agente de codificación colaborativo open-source. Ofrece flujo plan-act con transparencia, libertad de modelo y arquitectura cliente."
+    },
+    "fr": {
+      "description": "Cline est un agent de codage collaboratif open-source. Offre flux planifier-agir avec transparence, liberté de modèle et architecture client."
+    },
+    "id": {
+      "description": "Cline adalah agen coding kolaboratif open-source. Menyediakan alur kerja plan-then-act dengan transparansi, kebebasan model, dan arsitektur client-side."
+    },
+    "ja": {
+      "description": "Clineは複雑な作業のためのオープンソースの協調型コーディングエージェントです。完全な透明性、モデルの自由度、エンタープライズセキュリティのためのクライアントサイドアーキテクチャを備えた計画実行ワークフローを提供します。"
+    },
+    "pt": {
+      "description": "Cline e um agente de codificacao colaborativo open-source. Fornece fluxo planejar-agir com transparencia, liberdade de modelo e arquitetura client-side."
+    },
+    "ru": {
+      "description": "Cline — это агент совместного программирования open-source. Предоставляет поток «сначала планируй, затем действуй» с прозрачностью и клиентской архитектурой."
+    },
+    "tr": {
+      "description": "Cline, karmaşık işler için açık kaynaklı işbirlikçi kodlama aracıdır. Tam şeffaflık, model özgürlüğü ve kurumsal güvenlik için istemci tarafı mimarisi ile planla-ve-uygula iş akışı sağlar."
+    },
+    "zh-Hant": {
+      "description": "Cline 是一個開源的協作式編碼 Agent，用於複雜工作。它提供計畫執行工作流程，具有完全透明性、模型自由度和企業級安全的客戶端架構。"
     }
   },
   "verified": false,

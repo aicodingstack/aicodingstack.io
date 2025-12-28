@@ -8,10 +8,34 @@
       "description": "开源 AI 代码助手，让您可以在 IDE、终端和 CI 中构建自定义 Agent。具有 Agent、Chat、Edit 和 Autocomplete 模式，支持完全的模型灵活性和 MCP 集成。"
     },
     "de": {
-      "description": "Open-Source-KI-Code-Assistent, der aufbauend auf Ihren spezifischen Anforderungen und Daten entwickelt wurde. Bietet Agent-, Chat-, Edit- und Autocomplete-Modi mit vollständiger Modellflexibilität und MCP-Integration."
+      "description": "Open-Source-KI-Code-Assistent für IDE, Terminal und CI. Bietet Agent-, Chat-, Edit- und Autocomplete-Modi mit vollständiger Modellflexibilität und MCP-Integration."
     },
     "ko": {
       "description": "IDE, 터미널 및 CI에서 사용자 지정 에이전트를 구축할 수 있는 오픈 소스 AI 코딩 어시스턴트입니다. Agent, Chat, Edit 및 Autocomplete 모드를 제공하며 완전한 모델 유연성과 MCP 통합을 지원합니다."
+    },
+    "es": {
+      "description": "Asistente de código AI open-source que permite crear agentes personalizados en IDE, terminal y CI. Modos Agente, Chat, Edit y Autocomplete con integración MCP."
+    },
+    "fr": {
+      "description": "Assistant de code AI open-source pour construire agents personnalisés dans IDE, terminal et CI. Modes Agent, Chat, Edit et Autocomplete avec intégration MCP."
+    },
+    "id": {
+      "description": "Asisten kode AI open-source untuk membangun agen kustom di IDE, terminal, dan CI. Mode Agent, Chat, Edit, dan Autocomplete dengan integrasi MCP."
+    },
+    "ja": {
+      "description": "IDE、ターミナル、CIでカスタムエージェントを構築できるオープンソースAIコードアシスタント。Agent、Chat、Edit、Autocompleteモードを提供し、完全なモデル柔軟性とMCP統合をサポート。"
+    },
+    "pt": {
+      "description": "Um assistente de código AI open-source para criar agentes personalizados no IDE, terminal e CI. Modos Agent, Chat, Edit e Autocomplete com integracao MCP."
+    },
+    "ru": {
+      "description": "Открытый ИИ-помощник по кодированию позволяющий создавать собственные агенты в вашей IDE, терминале и CI. Содержит режимы Agent, Chat, Edit и Autocomplete с полной гибкостью моделей и интеграцией MCP."
+    },
+    "tr": {
+      "description": "IDE, terminal ve CI'nizde özel ajanlar olusturan açık kaynaklı bir AI kodlama asistanıdır. Tam model esnekliği ve MCP entegrasyonu ile modlar sunar."
+    },
+    "zh-Hant": {
+      "description": "開源 AI 程式碼助手，讓您可以在 IDE、終端機和 CI 中建構自訂 Agent。具有 Agent、Chat、Edit 和 Autocomplete 模式，支援完整的模型彈性和 MCP 整合。"
     }
   },
   "verified": false,

@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "터미널을 위한 AI 코딩 어시스턴트 CLI입니다. 코드베이스를 이해하고, 자연어로 작업을 실행하며, 코드를 설명하고, git 워크플로우를 관리하며 MCP 통합을 지원합니다."
+    },
+    "es": {
+      "description": "Asistente de codificacion de IA CLI para tu terminal. Comprende tu base de codigo, ejecuta tareas a traves de lenguaje natural, explica codigo y gestiona flujos de trabajo git con integracion MCP."
+    },
+    "fr": {
+      "description": "Assistant de codage d'IA CLI pour votre terminal. Comprend votre base de code, execute des taches via le langage naturel, explique le code et gere les flux de travail git avec l'integration MCP."
+    },
+    "id": {
+      "description": "Asisten coding AI CLI untuk terminal Anda. Memahami basis kode Anda, mengeksekusi tugas melalui bahasa alami, menjelaskan kode, dan mengelola alur kerja git dengan integrasi MCP."
+    },
+    "ja": {
+      "description": "ターミナル用のAIコーディングアシスタントCLI。コードベースを理解し、自然言語でタスクを実行し、コードを説明し、gitワークフローを管理し、MCP統合をサポートします。"
+    },
+    "pt": {
+      "description": "Assistente de codificação de IA CLI para o seu terminal..."
+    },
+    "ru": {
+      "description": "Помощник по кодированию ИИ CLI для вашего терминала. Понимает вашу кодовую базу, выполняет задачи на естественном языке, объясняет код и управляет рабочими процессами git с интеграцией MCP."
+    },
+    "tr": {
+      "description": "Terminaliniz icin AI kodlama yardimcisi CLI. Kod tabaninizi anlar, dogal dil araciligiyla gorevleri gerceklestirir, kodu aciklar ve MCP entegrasyonu ile git is akislarni yonetir."
+    },
+    "zh-Hant": {
+      "description": "終端 AI 编碼助手 CLI。理解程式碼庫，透過自然語言執行任務，解釋程式碼，管理 git 工作流程，並支援 MCP 整合。"
     }
   },
   "verified": true,

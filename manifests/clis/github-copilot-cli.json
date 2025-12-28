@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "GitHub Copilot CLI는 AI 지원을 터미널로 가져옵니다. 셸 명령을 제안하고, 코드 스니펫을 생성하며, 자연어를 통해 저장소와 통합합니다."
+    },
+    "es": {
+      "description": "GitHub Copilot CLI trae asistencia de IA a tu terminal. Sugiere comandos de shell, genera fragmentos de codigo y se integra con repositorios a traves de lenguaje natural."
+    },
+    "fr": {
+      "description": "GitHub Copilot CLI apporte une assistance IA a votre terminal. Suggere des commandes shell, genere des extraits de code et integre des repos a travers le langage naturel."
+    },
+    "id": {
+      "description": "GitHub Copilot CLI membawa bantuan AI ke terminal Anda. Menyarankan perintah shell, membuat cuplikan kode, dan mengintegrasikan dengan repositori melalui bahasa alami."
+    },
+    "ja": {
+      "description": "GitHub Copilot CLIは、AIアシスタンスをターミナルに提供します。シェルコマンドを提案し、コードスニペットを生成し、自然言語でリポジトリと統合します。"
+    },
+    "pt": {
+      "description": "GitHub Copilot CLI traz assistencia de IA para o seu terminal. Sugere comandos de shell, gera fragmentos de codigo e integra-se com repositorios atraves de linguagem natural."
+    },
+    "ru": {
+      "description": "GitHub Copilot CLI приносит помощь ИИ в ваш терминал. Предлагает shell-команды, генерирует фрагменты кода и интегрируется с репозиториями через естественный язык."
+    },
+    "tr": {
+      "description": "GitHub Copilot CLI, terminalinize AI desteg getirir. Shell komutlari onerir, kod parcalari olusturur ve dogal dil araciligiyla depolari entegre eder."
+    },
+    "zh-Hant": {
+      "description": "GitHub Copilot CLI 將 AI 輔助功能帶到您的終端。建議 shell 命令、生成程式碼片段，並透過自然語言與程式碼倉庫整合。"
     }
   },
   "verified": false,

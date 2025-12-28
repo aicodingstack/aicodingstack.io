@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "업계 최고의 컨텍스트 엔진으로 강화된 AI 소프트웨어 개발 플랫폼입니다. 자율 에이전트, 코드베이스 인식 자동 완성 및 대규모 코드베이스에 대한 깊은 컨텍스트 이해를 제공합니다."
+    },
+    "es": {
+      "description": "Plataforma de desarrollo AI con motor de contexto industrial. Incluye agentes autónomos, autocompletado de codebase y comprensión de contexto."
+    },
+    "fr": {
+      "description": "Plateforme de développement AI avec moteur de contexte de pointe. Offre agents autonomes, autocomplétion et compréhension des grandes bases."
+    },
+    "id": {
+      "description": "Platform pengembangan perangkat lunak AI dengan mesin konteks kelas industri. Menampilkan agen otonom, autocompletion sadar basis kode, dan pemahaman konteks mendalam untuk basis kode besar."
+    },
+    "ja": {
+      "description": "業界をリードするコンテキストエンジンを搭載したAIソフトウェア開発プラットフォーム。自律エージェント、コードベース認識オートコンプリート、大規模コードベースのための深いコンテキスト理解を備えています。"
+    },
+    "pt": {
+      "description": "Plataforma de desenvolvimento AI com motor de contexto líder. Inclui agentes autônomos, autocompletado de codebase e compreensão de contexto."
+    },
+    "ru": {
+      "description": "Платформа разработки ПО на базе ИИ с ведущим в отрасли движком контекста. Включает автономных агентов, автодополнение с учетом кодовой базы и глубокое понимание контекста для крупных кодовых баз."
+    },
+    "tr": {
+      "description": "Sektör lideri bağlam motoruna sahip AI yazılım geliştirme platformu. Otonom aracılar, kod tabanı farkında otomatik tamamlama ve büyük kod tabanları için derin bağlam anlayışı sunar."
+    },
+    "zh-Hant": {
+      "description": "由業界領先的上下文引擎支援的最強大 AI 軟體開發平台。它提供自主編碼 Agent、程式碼庫感知自動完成，以及對大型程式碼庫的深度上下文理解。"
     }
   },
   "verified": false,

@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "Factory AI의 Droid CLI는 계획부터 테스트까지 완전한 기능 개발을 처리하는 터미널 기반 코딩 에이전트입니다. 엔터프라이즈 도구와 통합되며 투명한 diff 검토를 제공합니다."
+    },
+    "es": {
+      "description": "Droid CLI de Factory AI es agente codificacion terminal que maneja desarrollo funciones desde planificacion hasta pruebas. Integra herramientas empresariales y revisiones diff."
+    },
+    "fr": {
+      "description": "Droid CLI de Factory AI est agent codage terminal qui gere developpement fonctionnalites de planification aux tests. S'integre avec outils entreprise et revues diff."
+    },
+    "id": {
+      "description": "Droid CLI dari Factory AI adalah agen coding terminal yang menangani fitur dari perencanaan hingga pengujian. Terintegrasi dengan alat perusahaan dan ulasan diff."
+    },
+    "ja": {
+      "description": "Factory AIのDroid CLIは、計画からテストまで完全な機能開発を処理するターミナルベースのコーディングエージェントです。エンタープライズツールと統合し、透明なdiffレビューを提供します。"
+    },
+    "pt": {
+      "description": "Droid CLI da Factory AI e agente codificacao terminal que gere desenvolvimento funcionalidades desde planeamento ate testes. Integra ferramentas empresariais e revisoes diff."
+    },
+    "ru": {
+      "description": "Droid CLI от Factory AI - агент кодирования на базе терминала. Обрабатывает разработку функций от планирования до тестирования. Интегрируется с инструментами."
+    },
+    "tr": {
+      "description": "Factory AI'nin Droid CLI'i, planlamadan teste kadar tam ozellik gelistirmesini yoneten terminal tabanli kodlama aracidir. Kurumsal araclarla entegre olur ve seffek diff incelemeleri saglar."
+    },
+    "zh-Hant": {
+      "description": "Factory AI 的 Droid CLI 是基於終端的編碼 Agent，處理從規劃到測試的完整功能開發。與企業工具整合並提供透明的差異審查。"
     }
   },
   "verified": false,

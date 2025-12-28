@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "알리바바 그룹의 Neovate Code는 오픈 소스 스마트 프로그래밍 어시스턴트입니다. 코드 생성, 버그 수정, 코드 검토 및 테스트 추가를 제공하며 유연한 다중 클라이언트 아키텍처를 갖추고 있습니다."
+    },
+    "es": {
+      "description": "Neovate Code del Grupo Ant es un asistente de programacion inteligente de codigo abierto. Genera codigo, corrige errores, revisa codigo y agrega pruebas con arquitectura multicliente flexible."
+    },
+    "fr": {
+      "description": "Neovate Code du Groupe Ant est un assistant de programmation intelligent a code ouvert. Genere du code, corrige des bugs, revoit le code et ajoute des tests avec une architecture multiclient flexible."
+    },
+    "id": {
+      "description": "Neovate Code dari Alibaba Group adalah asisten pemrograman cerdas open source. Membuat kode, memperbaiki bug, meninjau kode, dan menambahkan tes dengan arsitektur multi-klien yang fleksibel."
+    },
+    "ja": {
+      "description": "Ant GroupのNeovate Codeは、オープンソースのスマートプログラミングアシスタントです。コードの生成、バグ修正、コードレビュー、テストの追加を提供し、柔軟なマルチクライアントアーキテクチャを備えています。"
+    },
+    "pt": {
+      "description": "Neovate Code do Alibaba Group e um assistente de programacao inteligente de codigo aberto. Gera codigo, corrige erros, rever codigo e adiciona testes com arquitectura multicliente flexivel."
+    },
+    "ru": {
+      "description": "Neovate Code от Alibaba - интеллектуальный помощник программирования с открытым исходным кодом. Генерирует код, исправляет ошибки, проверяет код и добавляет тесты."
+    },
+    "tr": {
+      "description": "Ant Group'un Neovate Code'i acik kaynakli akilli programlama yardimcisidir. Esnek coklu istemci mimarisi ile kod olusturur, hatalari duzeltir, kodu inceler ve testler ekler."
+    },
+    "zh-Hant": {
+      "description": "螞蟻集團的 Neovate Code 是開源智慧程式設計助手。生成程式碼、修復錯誤、審查程式碼並新增測試，具有彈性的多客戶端架構。"
     }
   },
   "verified": false,

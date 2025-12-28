@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "Roo Code는 계획, 아키텍처, 디버깅 등을 위한 전문 모드를 제공하는 오픈 소스 AI 코딩 어시스턴트입니다. 모든 AI 모델을 지원하며 세밀한 자동 승인과 완전한 사용자 정의가 가능합니다."
+    },
+    "es": {
+      "description": "Roo Code es un asistente de codificación de IA de código abierto con modos especializados para planificación, arquitectura y depuración..."
+    },
+    "fr": {
+      "description": "Roo Code est un assistant de codage IA open source avec des modes spécialisés pour la planification, l'architecture et le débogage..."
+    },
+    "id": {
+      "description": "Roo Code adalah asisten coding AI open source dengan mode khusus untuk perencanaan, arsitektur, dan debugging. Agnostik model dengan approval otomatis granular dan kustomisasi penuh."
+    },
+    "ja": {
+      "description": "Roo Codeは、計画、アーキテクチャ、デバッグ用の専門モードを備えたオープンソースのAIコーディングアシスタントです。モデルに依存せず、粒度の細かい自動承認と完全なカスタマイズが可能です。"
+    },
+    "pt": {
+      "description": "Roo Code e um assistente de codificacao de IA de codigo aberto com modos especializados para planejamento, arquitetura e depuracao..."
+    },
+    "ru": {
+      "description": "Roo Code — это ассистент программирования на базе ИИ с открытым исходным кодом, имеющий специализированные режимы для планирования, архитектуры и отладки..."
+    },
+    "tr": {
+      "description": "Roo Code, planlama, mimari ve hata ayıklama için özel modlara sahip açık kaynaklı bir AI kodlama asistanıdır. Granüler otomatik onay ve tam özelleştirme ile model bağımsızdır."
+    },
+    "zh-Hant": {
+      "description": "Roo Code 是一個開源的 AI 驅動編碼助手，提供用於規劃、架構、除錯等的專門模式。它支援任何 AI 模型，具有精細的自動批准和完全自訂功能。"
     }
   },
   "verified": false,

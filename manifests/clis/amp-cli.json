@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "Sourcegraph의 최전선 코딩 에이전트로, 자율 추론, 코드 편집 및 복잡한 작업을 수행합니다. CLI로 제공되며 VS Code, Cursor 및 Windsurf에서 사용할 수 있습니다."
+    },
+    "es": {
+      "description": "Un agente de codificación de vanguardia de Sourcegraph que realiza razonamiento autónomo, edición de código y tareas complejas. Disponible como CLI y en VS Code, Cursor y Windsurf."
+    },
+    "fr": {
+      "description": "Un agent de codage de pointe de Sourcegraph qui effectue un raisonnement autonome, l'édition de code et des tâches complexes. Disponible en tant que CLI et dans VS Code, Cursor et Windsurf."
+    },
+    "id": {
+      "description": "Agen coding canggih dari Sourcegraph yang melakukan penalaran otonom, pengeditan kode, dan tugas kompleks. Tersedia sebagai CLI dan di VS Code, Cursor, dan Windsurf."
+    },
+    "ja": {
+      "description": "Sourcegraphの最先端コーディングエージェント。自律的推論、コード編集、複雑なタスクを実行します。CLIとして提供され、VS Code、Cursor、Windsurfで使用可能です。"
+    },
+    "pt": {
+      "description": "Um agente de codificação de vanguarda da Sourcegraph que executa raciocínio autónomo, edição de código e tarefas complexas. Disponível como CLI e em VS Code, Cursor e Windsurf."
+    },
+    "ru": {
+      "description": " Передовой агент кодирования от Sourcegraph, выполняющий автономные рассуждения, редактирование кода и сложные задачи. Доступен как CLI и в VS Code, Cursor и Windsurf."
+    },
+    "tr": {
+      "description": "Sourcegraph'un öncü bir kodlama aracıdır, otonom muhakeme, kod düzenleme ve karmaşık görevleri gerçekleştirir. CLI ve VS Code, Cursor ile Windsurf'te mevcuttur."
+    },
+    "zh-Hant": {
+      "description": "Sourcegraph 的前沿編碼 Agent，執行自主推理、程式碼編輯和複雜任務。提供 CLI 版本，並在 VS Code、Cursor 和 Windsurf 中可用。"
     }
   },
   "verified": false,

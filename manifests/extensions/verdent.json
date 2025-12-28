@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "구조화된 계획, 검증 및 사용자 정의 가능한 하위 에이전트를 통해 복잡한 소프트웨어 작업을 처리하기 위해 여러 AI 에이전트를 병렬로 조정하는 고급 에이전트 코딩 어시스턴트입니다."
+    },
+    "es": {
+      "description": "Asistente de codificación avanzado que orquesta múltiples agentes AI en paralelo para abordar tareas de software complejas con planificación estructurada, verificación y subagentes personalizables."
+    },
+    "fr": {
+      "description": "Assistant de codage avancé qui orchestre plusieurs agents IA en parallèle pour résoudre des tâches logicielles complexes avec planification structurée, vérification et sous-agents personnalisables."
+    },
+    "id": {
+      "description": "Asisten coding tingkat lanjut yang mengorkestrasi beberapa agen AI secara paralel untuk menangani tugas perangkat lunak kompleks dengan perencanaan terstruktur, verifikasi, dan sub-agen yang dapat ..."
+    },
+    "ja": {
+      "description": "構造化された計画、検証、カスタマイズ可能なサブエージェントにより、複雑なソフトウェアタスクに対処するために複数のAIエージェントを並列にオーケストレーションする高度なエージェントコーディングアシスタントです。"
+    },
+    "pt": {
+      "description": "Assistente de codificacao avancado que orquestra multiplos agentes de IA em paralelo para enfrentar tarefas de software complexas com planejamento estruturado, verificacao e sub-agentes customizaveis."
+    },
+    "ru": {
+      "description": "Продвинутый помошник по программированию, который оркестрирует несколько ИИ-агентов параллельно для решения сложных задач разработки ПО со структурированным планированием, верификацией и настраивае..."
+    },
+    "tr": {
+      "description": "Yapilandirilmis planlama, dogrulama ve ozellestirilebilir alt aracilar ile karmaik yazılım gorevlerini cozumlemek icin birden fazla AI aracısını paralel olarak orkestre eden gelismis aracı tabanlı ..."
+    },
+    "zh-Hant": {
+      "description": "先進的代理編碼助手，協調多個 AI 代理並行處理複雜的軟體任務，具有結構化規劃、驗證和可自訂子代理。"
     }
   },
   "verified": false,

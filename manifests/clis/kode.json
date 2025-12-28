@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "Kode는 코드베이스를 이해하고, 파일을 편집하고, 명령을 실행하며 전체 개발 워크플로우를 처리하는 오픈 소스 AI 코딩 어시스턴트입니다. 다중 모델 지원으로 Claude Code를 확장합니다."
+    },
+    "es": {
+      "description": "Kode es asistente codificacion IA open source que comprende base codigo, edita archivos, ejecuta comandos y gestiona flujos trabajo desarrollo completos. Amplia Claude Code con soporte multimodelo."
+    },
+    "fr": {
+      "description": "Kode est assistant codage IA open source qui comprend base code, edite fichiers, execute commandes et gere flux travail developpement complets. Etend Claude Code avec support multimodele."
+    },
+    "id": {
+      "description": "Kode adalah asisten coding AI open source yang memahami basis kode, mengedit file, menjalankan perintah, dan menangani alur kerja pengembangan lengkap..."
+    },
+    "ja": {
+      "description": "Kodeは、コードベースを理解し、ファイルを編集し、コマンドを実行し、完全な開発ワークフローを処理するオープンソースAIコーディングアシスタントです。マルチモデルサポートでClaude Codeを拡張します。"
+    },
+    "pt": {
+      "description": "Kode e assistente codificacao IA open source. Compreende base codigos, edita ficheiros, executa comandos e gere fluxos trabalho desenvolvimento."
+    },
+    "ru": {
+      "description": "Kode - помощник кодирование ИИ с открытым исходным кодом. Понимает кодовую базу, редактирует файлы, выполняет команды и обрабатывает рабочие процессы."
+    },
+    "tr": {
+      "description": "Kode, kod tabaninizi anlayan, dosyalari duzenleyen, komutlari calistiran ve gelistirme is akisini yoneten acik kaynakli AI kodlama yardimcisidir. Coklu model deste ile Claude Code'u genisletir."
+    },
+    "zh-Hant": {
+      "description": "Kode 是開源 AI 編碼助手，理解您的程式碼庫、編輯檔案、執行命令並處理完整的開發工作流程。透過多模型支援擴展 Claude Code。"
     }
   },
   "verified": false,

@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "Google의 Gemini CLI는 고급 AI 모델을 터미널로 가져옵니다. 코드 완성, 설명, 테스트 생성 및 버그 수정을 제공하며 여러 언어를 지원합니다."
+    },
+    "es": {
+      "description": "Gemini CLI de Google trae modelos IA avanzados a tu terminal. Proporcionacompletion codigo, explicaciones, generacion pruebas y correcciones."
+    },
+    "fr": {
+      "description": "Gemini CLI de Google apporte modeles IA avances a votre terminal. Fournit completion code, explications, generation tests et corrections bugs."
+    },
+    "id": {
+      "description": "Gemini CLI dari Google membawa model AI canggih ke terminal Anda. Menyediakan penyelesaian kode, penjelasan, pembuatan tes, dan perbaikan bug sambil mendukung beberapa bahasa."
+    },
+    "ja": {
+      "description": "GoogleのGemini CLIは、高度なAIモデルをターミナルに提供します。コード補完、説明、テスト生成、バグ修正を提供し、複数の言語をサポートします。"
+    },
+    "pt": {
+      "description": "Gemini CLI da Google traz modelos de IA avancados para o seu terminal. Fornece conclusao de codigo, explicacoes, geracao de testes e correcoes de bugs ao mesmo tempo que suporta varios idiomas."
+    },
+    "ru": {
+      "description": "Gemini CLI от Google приносит передовые модели ИИ в ваш терминал. Обеспечивает завершение кода, объяснения, создание тестов и исправление ошибок, поддерживая при этом несколько языков."
+    },
+    "tr": {
+      "description": "Google'un Gemini CLI'i kullanici terminalinize gelismis AI modelleri getirir. Kod tamamlama, aciklamalar, test olusturma ve hat duzeltmeleri saglarken birden fazla dili destekler."
+    },
+    "zh-Hant": {
+      "description": "Google 的 Gemini CLI 將先進的 AI 模型帶到您的終端。提供程式碼補全、說明、測試生成和錯誤修復，同時支援多種語言。"
     }
   },
   "verified": false,

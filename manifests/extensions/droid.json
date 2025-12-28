@@ -8,10 +8,34 @@
       "description": "AI 开发平台，提供 Droids —— 在工作流中自动化软件任务的自主编码 Agent。Droids 重构代码、处理调试和测试并生成功能。"
     },
     "de": {
-      "description": "Eine KI-Entwicklungsplattform mit \"Droids\" - autonomen Coding-Agenten, die Softwareaufgaben über Workflows automatisieren. Droids refactorieren Code, übernehmen Debugging und Tests und generieren Funktionen."
+      "description": "KI-Entwicklungsplattform mit \"Droids\" - autonomen Coding-Agenten, die Softwareaufgaben automatisieren. Droids refactorieren Code, übernehmen Debugging und Tests, generieren Funktionen."
     },
     "ko": {
       "description": "워크플로우에서 소프트웨어 작업을 자동화하는 자율 코딩 에이전트인 'Droids'를 제공하는 AI 개발 플랫폼입니다. Droids는 코드를 리팩터링하고 디버깅 및 테스트를 처리하며 기능을 생성합니다."
+    },
+    "es": {
+      "description": "Plataforma de desarrollo AI con Droids - agentes autónomos que automatizan tareas software. Refactorizan código, gestionan depuración y pruebas, y generan funcionalidades."
+    },
+    "fr": {
+      "description": "Plateforme de développement AI avec Droids - agents autonomes pour automatiser taches logicielles. Refactorisent code, gerent débogage et tests, et génèrent fonctionnalités."
+    },
+    "id": {
+      "description": "Platform pengembangan AI dengan Droids - agen otonom yang mengotomatisasi tugas software. Refactoring kode, debugging dan testing, dan membuat fitur."
+    },
+    "ja": {
+      "description": "ワークフロー全体でソフトウェアタスクを自動化する自律コーディングエージェント「Droids」を提供するAI開発プラットフォーム。Droidsはコードのリファクタリング、デバッグおよびテストの処理、機能生成を行います。"
+    },
+    "pt": {
+      "description": "Plataforma de desenvolvimento AI com Droids - agentes autónomos que automatizam tarefas software. Refatoram código, depuração e testes, e geram funcionalidades."
+    },
+    "ru": {
+      "description": "Платформа разработки AI с Droids — автономными агентами для автоматизации задач. Рефакторинг кода, отладка и тесты, создание функциональности."
+    },
+    "tr": {
+      "description": "Iş akislarindaki yazilim gorevlerini otomatize eden otonom kodlama araclari sunan AI gelistirme platformu. Droids refactor eder, hata ayiklama ve testleri ele alir."
+    },
+    "zh-Hant": {
+      "description": "AI 開發平台，提供 Droids —— 在工作流程中自動化軟體任務的自主編碼 Agent。Droids 重構程式碼、處理除錯和測試並生成功能。"
     }
   },
   "verified": false,

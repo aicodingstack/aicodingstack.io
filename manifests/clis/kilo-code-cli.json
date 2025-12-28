@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "Kilo Code CLI는 AI 코딩 어시스턴트의 강력한 기능을 터미널로 직접 가져옵니다. 자연어 명령을 통해 고급 코드 생성, 디버깅 및 개발 워크플로우를 경험하세요."
+    },
+    "es": {
+      "description": "Kilo Code CLI lleva poder asistencia codificacion IA directamente a terminal. Experimenta generacion codigo avanzada, depuracion y flujos trabajo desarrollo a traves comandos lenguaje natural."
+    },
+    "fr": {
+      "description": "Kilo Code CLI apporte puissance assistance codage IA directement a terminal. Experitez generation code avancee, debogage et flux travail developpement via commandes langage naturel."
+    },
+    "id": {
+      "description": "Kilo Code CLI membawa kekuatan bantuan coding AI langsung ke terminal Anda. Rasakan pembuatan kode canggih, debugging, dan alur kerja pengembangan melalui perintah bahasa alami."
+    },
+    "ja": {
+      "description": "Kilo Code CLIは、AIコーディングアシスタンスの力をターミナルに直接提供します。自然言語コマンドを通じて高度なコード生成、デバッグ、開発ワークフローを体験できます。"
+    },
+    "pt": {
+      "description": "Kilo Code CLI traz poder assistencia codificacao IA directamente para terminal. Experimente geracao codigo avancada, depuracao e fluxos trabalho desenvolvimento atraves comandos linguagem natural."
+    },
+    "ru": {
+      "description": "Kilo Code CLI приносит мощь помощи по кодированию ИИ прямо в ваш терминал. Испытайте передовую генерацию кода, отладку и рабочие процессы разработки с помощью команд на естественном языке."
+    },
+    "tr": {
+      "description": "Kilo Code CLI, AI kodlama desteginin gucunu dogrudan kullanici terminalininize getirir. Dogal dil komutlari araciligiyla gelismis kod olusturma, hata ayiklama ve gelistirme is akislari deneyimleyin."
+    },
+    "zh-Hant": {
+      "description": "Kilo Code CLI 將 AI 編碼輔助的強大功能直接帶到您的終端。透過自然語言命令體驗先進的程式碼生成、除錯和開發工作流程。"
     }
   },
   "verified": true,

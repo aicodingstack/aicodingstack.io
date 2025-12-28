@@ -8,10 +8,34 @@
       "description": "Tabnine 是一个 AI 代码补全工具，帮助开发者更快、更准确地编写代码。它基于上下文提供智能代码建议，并从您的代码库中学习。"
     },
     "de": {
-      "description": "Tabnine ist ein KI-Code-Vervollständigungstool, das Entwicklern hilft, schneller und präziser Code zu schreiben. Es bietet intelligente Codevorschläge basierend auf Kontext und lernt aus Ihrer Codebasis."
+      "description": "Tabnine ist ein KI-Code-Vervollständigungstool. Hilft Entwicklern, präziser Code zu schreiben. Bietet intelligente Vorschläge basierend auf Kontext und lernt aus Ihrer Codebasis."
     },
     "ko": {
       "description": "Tabnine는 개발자가 더 빠르고 정확하게 코드를 작성할 수 있도록 도와주는 AI 코드 완성 도구입니다. 컨텍스트를 기반으로 스마트한 코드 제안을 제공하며 코드베이스에서 학습합니다."
+    },
+    "es": {
+      "description": "Tabnine es una herramienta de completado de código de IA que ayuda a los desarrolladores a escribir código más rápido y con mayor precisión..."
+    },
+    "fr": {
+      "description": "Tabnine est un outil de complétion de code IA qui aide les développeurs à écrire du code plus rapidement et avec plus de précision..."
+    },
+    "id": {
+      "description": "Tabnine adalah alat kode completion AI yang membantu developer menulis kode lebih cepat dan lebih akurat. Menyediakan saran kode cerdas berbasis konteks dan belajar dari basis kode Anda."
+    },
+    "ja": {
+      "description": "Tabnineは、開発者がより速く、より正確にコードを記述できるようにするAIコード補完ツールです。コンテキストに基づいたインテリジェントなコード提案を提供し、コードベースから学習します。"
+    },
+    "pt": {
+      "description": "Tabnine e uma ferramenta de completacao de codigo de IA que ajuda desenvolvedores a escrever codigo mais rapido e com maior precisao..."
+    },
+    "ru": {
+      "description": "Tabnine — это ИИ-инструмент автодополнения кода, который помогает разработчикам писать код быстрее и точнее..."
+    },
+    "tr": {
+      "description": "Tabnine, geliştiricilerin kodu daha hızlı ve daha doğru yazmasına yardımcı olan bir AI kod tamamlama aracıdır. Bağlama dayalı akıllı kod önerileri sunar ve kod tabanınızdan öğrenir."
+    },
+    "zh-Hant": {
+      "description": "Tabnine 是一個 AI 程式碼補全工具，協助開發者更快、更準確地撰寫程式碼。它基於上下文提供智能程式碼建議，並從您的程式碼庫中學習。"
     }
   },
   "verified": false,

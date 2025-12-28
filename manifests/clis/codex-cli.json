@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "OpenAI의 Codex CLI는 자연어 명령을 통해 코드를 읽고, 수정하고 실행하는 로컬 코딩 에이전트입니다. 코드 빌드, 디버깅 및 자동화 작업을 지원합니다."
+    },
+    "es": {
+      "description": "Codex CLI de OpenAI es un agente de codigo local que lee, modifica y ejecuta codigo a traves de comandos de lenguaje natural. Permite construir, depurar y automatizar tareas de codificacion."
+    },
+    "fr": {
+      "description": "Codex CLI d'OpenAI est un agent de code local qui lit, modifie et execute du code via des commandes en langage naturel. Permet de construire, deboguer et automatiser les taches de codage."
+    },
+    "id": {
+      "description": "Codex CLI dari OpenAI adalah agen coding lokal yang membaca, memodifikasi, dan menjalankan kode melalui perintah bahasa alami. Memungkinkan pembuatan, debugging, dan otomatisasi tugas coding."
+    },
+    "ja": {
+      "description": "OpenAIのCodex CLIは、自然言語コマンドでコードを読み取り、修正し、実行するローカルコーディングエージェントです。コードの構築、デバッグ、自動化タスクを可能にします。"
+    },
+    "pt": {
+      "description": "Codex CLI da OpenAI e um agente de codigo local que le, modifica e executa codigo atraves de comandos em linguagem natural. Permite construir, depurar e automatizar tarefas de codificacao."
+    },
+    "ru": {
+      "description": "Codex CLI от OpenAI - это локальный агент кодирования, который читает, модифицирует и запускает код через команды на естественном языке. Позволяет создавать и автоматизировать задачи."
+    },
+    "tr": {
+      "description": "OpenAI'nin Codex CLI'i, dogal dil komutlari araciligiyla kodu okuyan, degistiren ve calistiran yerel bir kodlama aracidir. Kod olusturma, hata ayiklama ve otomasyon gorevlerini enable eder."
+    },
+    "zh-Hant": {
+      "description": "OpenAI 的 Codex CLI 是本機編碼 Agent，透過自然語言命令讀取、修改和執行程式碼。支援建構、除錯和自動化編碼任務。"
     }
   },
   "verified": false,

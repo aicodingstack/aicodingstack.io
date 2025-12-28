@@ -14,6 +14,30 @@
     },
     "ko": {
       "description": "Google의 AI 코딩 어시스턴트로 IDE에서 코드 자동 완성, 생성 및 최적화 기능을 제공합니다."
+    },
+    "es": {
+      "description": "Asistente de codificación de IA de Google con completado, generación y optimización de código para IDEs."
+    },
+    "fr": {
+      "description": "Assistant de codage IA de Google avec complétion, génération et optimisation de code pour les IDE."
+    },
+    "id": {
+      "description": "Asisten coding AI Google dengan lengkapan, pembuatan, dan optimasi kode untuk IDE."
+    },
+    "ja": {
+      "description": "IDE向けのコード補完、生成、最適化機能を備えたGoogleのAIコーディングアシスタント。"
+    },
+    "pt": {
+      "description": "Assistente de codificacao de IA do Google com completcao, geracao e otimizacao de codigo para IDEs."
+    },
+    "ru": {
+      "description": "ИИ-помощник по программированию от Google с автодополнением, генерацией и оптимизацией кода для IDE."
+    },
+    "tr": {
+      "description": "Google'un AI kodlama asistanı, IDE'ler için kod tamamlama, oluşturma ve optimizasyon özellikleri ile."
+    },
+    "zh-Hant": {
+      "description": "Google 的 AI 程式碼輔助工具，提供 IDE 中的程式碼自動完成、產生和最佳化功能。"
     }
   },
   "verified": true,

@@ -8,10 +8,34 @@
       "description": "GitHub Copilot 是一个 AI 结对程序员，帮助您更快地编写代码并减少工作量。它从注释和代码中获取上下文，建议单行代码和整个函数。"
     },
     "de": {
-      "description": "GitHub Copilot ist ein KI-Pair-Programmer, der hilft, schneller und mit weniger Aufwand Code zu schreiben. Es extrahiert Kontext aus Kommentaren und Code, um einzelne Zeilen und gesamte Funktionen vorzuschlagen."
+      "description": "GitHub Copilot ist ein KI-Pair-Programmer, der hilft, schneller mit weniger Aufwand Code zu schreiben. Extrahiert Kontext aus Kommentaren und Code, um Zeilen und ganze Funktionen vorzuschlagen."
     },
     "ko": {
       "description": "GitHub Copilot은 더 빠르고 적은 노력으로 코드를 작성할 수 있도록 도와주는 AI 페어 프로그래머입니다. 주석과 코드에서 컨텍스트를 추출하여 단일 코드 줄과 전체 함수를 제안합니다."
+    },
+    "es": {
+      "description": "GitHub Copilot es un programador IA para escribir código más rápido. Extrae contexto de comentarios y código para sugerir líneas y funciones."
+    },
+    "fr": {
+      "description": "GitHub Copilot est un programmeur IA pour écrire du code plus rapidement. Tire le contexte des commentaires et du code pour suggérer lignes et fonctions."
+    },
+    "id": {
+      "description": "GitHub Copilot adalah AI pair programmer yang membantu menulis kode lebih cepat dan dengan usaha lebih sedikit..."
+    },
+    "ja": {
+      "description": "GitHub Copilotは、より少ない労力でより早くコードを記述できるようにするAIペアプログラマーです。コメントとコードからコンテキストを抽出し、個々の行と完全な関数を提案します。"
+    },
+    "pt": {
+      "description": "GitHub Copilot e um programador de pares de IA que ajuda a escrever codigo mais rapido e com menos esforco. Extrai contexto de comentarios e codigo para sugerir linhas individuais e funcoes completas."
+    },
+    "ru": {
+      "description": "GitHub Copilot — это парный программатор на базе ИИ, который помогает писать код быстрее и с меньшими усилиями..."
+    },
+    "tr": {
+      "description": "GitHub Copilot, daha az çabayla daha hızlı kod yazmanıza yardımcı olan bir AI pair programcıdır. Yorumlardan ve koddan bağlam çıkararak tek satırlar ve tam işlevleri önerir."
+    },
+    "zh-Hant": {
+      "description": "GitHub Copilot 是一個 AI 結對程式設計師，幫助您更快地編寫程式碼並減少工作量。它從註釋和程式碼中提取上下文，建議單行程式碼和整個函式。"
     }
   },
   "verified": false,

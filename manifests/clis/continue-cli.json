@@ -12,6 +12,30 @@
     },
     "ko": {
       "description": "지속적인 AI를 터미널로 가져오는 오픈 소스 CLI 에이전트입니다. 모든 모델로 사용자 지정 에이전트를 구축하고 실행하며, 규칙을 정의하고 MCP 도구를 통합하여 공급업체 종속성을 피할 수 있습니다."
+    },
+    "es": {
+      "description": "Agente CLI open source que trae IA continua a terminal. Construye agentes personalizados con modelo, define reglas y herramientas MCP sin bloqueo."
+    },
+    "fr": {
+      "description": "Agent CLI open source qui apporte une IA continue a terminal. Construisez et executez des agents personnalises, definissez regles et integrez outils MCP."
+    },
+    "id": {
+      "description": "Agen CLI open source yang membawa AI berkelanjutan ke terminal. Membangun agen kustom dengan model, menentukan aturan dan mengintegrasikan alat MCP tanpa vendor."
+    },
+    "ja": {
+      "description": "継続的なAIをターミナルにもたらすオープンソースCLIエージェント。任意のモデルでカスタムエージェントを構築・実行し、独自のルールを定義し、ベンダーロックインなしでMCPツールを統合します。"
+    },
+    "pt": {
+      "description": "Agente CLI open source que traz IA continua ao terminal. Construa agentes personalizados com modelo, defina regras e integre ferramentas MCP sem bloqueio."
+    },
+    "ru": {
+      "description": "Открытый агент CLI приносит непрерывный ИИ в терминал. Создавайте пользовательские агенты с моделью, определяйте правила и интегрируйте MCP без блокировки."
+    },
+    "tr": {
+      "description": "Surekli AI getiren acik kaynakli CLI aracidir. Herhangi bir modelle ozel aracilar insa edin ve calistirin, kendi kurallarinizi belirleyin, satci kilitlenmesi olmadan MCP entegre edin."
+    },
+    "zh-Hant": {
+      "description": "開源 CLI Agent，將持續 AI 帶到您的終端。使用任何模型建構和執行自訂 Agent，定義您自己的規則，並整合 MCP 工具，無供應商鎖定。"
     }
   },
   "verified": false,
