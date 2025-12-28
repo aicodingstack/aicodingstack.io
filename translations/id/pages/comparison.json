@@ -1,0 +1,47 @@
+{
+  "clis": {
+    "backTo": "Kembali ke CLI",
+    "subtitle": "Bandingkan fitur, harga, dan spesifikasi alat coding AI CLI secara berdampingan.",
+    "title": "Perbandingan CLI"
+  },
+  "columns": {
+    "contextLength": "Panjang Konteks",
+    "freePlan": "Paket Gratis",
+    "githubStars": "@:components.productHero.stars",
+    "license": "@:components.productHero.license",
+    "links": "Tautan",
+    "maxOutput": "@:shared.common.maxOutput",
+    "maxPrice": "Harga Maksimum",
+    "modelSize": "@:shared.common.modelSize",
+    "platforms": "@:components.productHero.platforms",
+    "pricing": "@:shared.common.pricing",
+    "startingPrice": "Harga Awal",
+    "supportedIdes": "@:components.productHero.supportedIdes",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version"
+  },
+  "extensions": {
+    "backTo": "Kembali ke Ekstensi",
+    "subtitle": "Bandingkan fitur, harga, dan spesifikasi ekstensi coding AI secara berdampingan.",
+    "title": "Perbandingan Ekstensi"
+  },
+  "ides": {
+    "backTo": "Kembali ke IDE",
+    "subtitle": "Bandingkan fitur, harga, dan spesifikasi IDE bertenaga AI secara berdampingan.",
+    "title": "Perbandingan IDE"
+  },
+  "linkTitles": {
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "officialWebsite": "@:components.productHero.visitWebsite"
+  },
+  "models": {
+    "backTo": "Kembali ke Model",
+    "subtitle": "Bandingkan spesifikasi dan harga model coding AI secara berdampingan.",
+    "title": "Perbandingan Model"
+  },
+  "pricingValues": {
+    "free": "Gratis",
+    "freeOnly": "Gratis saja"
+  }
+}

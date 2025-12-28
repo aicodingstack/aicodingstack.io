@@ -1,0 +1,32 @@
+{
+  "description": "Jelajahi dan bandingkan alat coding AI: IDE, CLI, ekstensi, model, dan penyedia — semua di satu tempat.",
+  "exploreTools": "Jelajahi Alat",
+  "faq": "Pertanyaan yang Sering Diajukan",
+  "features": {
+    "comparison": {
+      "description": "Bandingkan alat secara berdampingan dengan spesifikasi detail, harga, dan fitur. Buat keputusan yang terinformasi tentang alat coding AI mana yang paling sesuai dengan alur kerja Anda.",
+      "title": "Perbandingan Cerdas"
+    },
+    "directory": {
+      "description": "Jelajahi koleksi kurasi alat coding AI di seluruh IDE, CLI, ekstensi, model, dan penyedia. Semua di satu tempat, selalu terkini.",
+      "title": "Direktori Komprehensif"
+    },
+    "ecosystem": {
+      "description": "Visualisasikan ekosistem coding AI secara lengkap dengan tampilan lanskap interaktif. Pahami bagaimana alat, model, dan penyedia yang berbeda saling terhubung dan melengkapi satu sama lain.",
+      "title": "Ikhtisar Ekosistem"
+    },
+    "title": "Fitur Utama",
+    "tracking": {
+      "description": "Tetap terkini dengan perkembangan, versi, dan pembaruan terbaru di seluruh lanskap coding AI. Lacak rilis baru, penambahan fitur, dan perubahan ekosistem.",
+      "title": "Pelacakan Progres"
+    }
+  },
+  "meta": {
+    "description": "Direktori komprehensif untuk alat coding AI. Temukan, bandingkan, dan jelajahi IDE, CLI, ekstensi, model, dan penyedia.",
+    "name": "AI Coding Stack",
+    "title": "AI Coding Stack - Pusat Ekosistem Coding AI Anda"
+  },
+  "readDocs": "Baca Dokumentasi",
+  "subtitle": "Temukan, Bandingkan, Bangun Lebih Cepat.",
+  "title": "Pusat Ekosistem Coding AI Anda"
+}

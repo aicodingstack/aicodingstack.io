@@ -1,0 +1,47 @@
+{
+  "clis": {
+    "backTo": "Назад к CLI",
+    "subtitle": "Ассистенты кодирования в командной строке на базе ИИ",
+    "title": "@:shared.stacks.clis"
+  },
+  "columns": {
+    "contextLength": "Длина контекста",
+    "freePlan": "Бесплатный план",
+    "githubStars": "@:components.productHero.stars",
+    "license": "@:components.productHero.license",
+    "links": "Ссылки",
+    "maxOutput": "@:shared.common.maxOutput",
+    "maxPrice": "Макс. цена",
+    "modelSize": "@:shared.common.modelSize",
+    "platforms": "@:components.productHero.platforms",
+    "pricing": "@:shared.common.pricing",
+    "startingPrice": "Начальная цена",
+    "supportedIdes": "@:components.productHero.supportedIdes",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version"
+  },
+  "extensions": {
+    "backTo": "Назад к расширениям",
+    "subtitle": "Расширения и плагины для кодирования на базе ИИ",
+    "title": "@:shared.stacks.extensions"
+  },
+  "ides": {
+    "backTo": "Назад к IDE",
+    "subtitle": "Интегрированные среды разработки, улучшенные с помощью ИИ",
+    "title": "@:shared.stacks.ides"
+  },
+  "linkTitles": {
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "officialWebsite": "@:components.productHero.visitWebsite"
+  },
+  "models": {
+    "backTo": "Назад к моделям",
+    "subtitle": "Большие языковые модели, оптимизированные для генерации и анализа кода",
+    "title": "@:shared.stacks.models"
+  },
+  "pricingValues": {
+    "free": "Бесплатно",
+    "freeOnly": "Только бесплатно"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "description": "Explorez et comparez les outils de codage IA : IDE, CLI, extensions, modèles et fournisseurs — tout en un seul endroit.",
+  "exploreTools": "@:shared.actions.explore",
+  "faq": "Questions fréquentes",
+  "features": {
+    "comparison": {
+      "description": "Comparez les outils côte à côte avec des spécifications détaillées, des prix et des fonctionnalités. Prenez des décisions éclairées sur les outils de codage IA qui conviennent le mieux à votre workflow.",
+      "title": "Comparaison intelligente"
+    },
+    "directory": {
+      "description": "Explorez une collection sélectionnée d'outils de codage IA couvrant les IDE, CLI, extensions, modèles et fournisseurs. Tout en un seul endroit, toujours à jour.",
+      "title": "Répertoire complet"
+    },
+    "ecosystem": {
+      "description": "Visualisez l'écosystème complet du codage IA avec des vues de paysage interactives. Comprenez comment différents outils, modèles et fournisseurs se connectent et se complètent.",
+      "title": "Vue d'ensemble de l'écosystème"
+    },
+    "title": "Fonctionnalités principales",
+    "tracking": {
+      "description": "Restez à jour avec les derniers développements, versions et mises à jour dans tout le paysage du codage IA. Suivez les nouvelles versions, les ajouts de fonctionnalités et les changements de l'écosystème.",
+      "title": "Suivi des progrès"
+    }
+  },
+  "meta": {
+    "description": "Répertoire complet des outils de codage IA. Découvrez, comparez et explorez les IDE, CLI, extensions, modèles et fournisseurs.",
+    "name": "@:shared.common.aiCodingStack",
+    "title": "AI Coding Stack - Votre centre de l'écosystème de codage IA"
+  },
+  "readDocs": "Lire la documentation",
+  "subtitle": "Notre vision pour l'avenir du développement logiciel alimenté par l'IA",
+  "title": "@:shared.common.manifesto"
+}

@@ -1,0 +1,47 @@
+{
+  "clis": {
+    "backTo": "CLI に戻る",
+    "subtitle": "AI 対応のコマンドラインコーディングアシスタント",
+    "title": "@:shared.stacks.clis"
+  },
+  "columns": {
+    "contextLength": "コンテキスト長",
+    "freePlan": "無料プラン",
+    "githubStars": "@:components.productHero.stars",
+    "license": "@:components.productHero.license",
+    "links": "リンク",
+    "maxOutput": "@:shared.common.maxOutput",
+    "maxPrice": "最大価格",
+    "modelSize": "@:shared.common.modelSize",
+    "platforms": "@:components.productHero.platforms",
+    "pricing": "@:shared.common.pricing",
+    "startingPrice": "開始価格",
+    "supportedIdes": "@:components.productHero.supportedIdes",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version"
+  },
+  "extensions": {
+    "backTo": "拡張機能に戻る",
+    "subtitle": "AI 対応のコーディング拡張機能とプラグイン",
+    "title": "@:shared.stacks.extensions"
+  },
+  "ides": {
+    "backTo": "IDE に戻る",
+    "subtitle": "AI 強化された統合開発環境",
+    "title": "@:shared.stacks.ides"
+  },
+  "linkTitles": {
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "officialWebsite": "@:components.productHero.visitWebsite"
+  },
+  "models": {
+    "backTo": "モデルに戻る",
+    "subtitle": "コード生成と分析に最適化された大規模言語モデル",
+    "title": "@:shared.stacks.models"
+  },
+  "pricingValues": {
+    "free": "無料",
+    "freeOnly": "無料のみ"
+  }
+}

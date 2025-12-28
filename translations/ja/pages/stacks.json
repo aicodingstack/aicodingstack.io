@@ -1,0 +1,315 @@
+{
+  "cliDetail": {
+    "allCLIs": "@:shared.stacks.allClis",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "clis": "@:shared.stacks.clis"
+    },
+    "categoryLabel": "@:components.productHero.categories.CLI",
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "license": "@:components.productHero.license",
+    "platforms": "@:components.productHero.platforms",
+    "stars": "@:components.productHero.stars",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version",
+    "visitWebsite": "@:components.productHero.visitWebsite"
+  },
+  "clis": {
+    "allCLIs": "@:shared.stacks.allClis",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "フィルターに一致する CLI はありません",
+    "subtitle": "AI 対応のコマンドラインコーディングアシスタント",
+    "title": "@:shared.stacks.clis"
+  },
+  "extensionDetail": {
+    "allExtensions": "@:shared.stacks.allExtensions",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "extensions": "@:shared.stacks.extensions"
+    },
+    "categoryLabel": "@:components.productHero.categories.EXTENSION",
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "license": "@:components.productHero.license",
+    "stars": "@:components.productHero.stars",
+    "supportedIdes": "@:components.productHero.supportedIdes",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version",
+    "visitWebsite": "@:components.productHero.visitWebsite"
+  },
+  "extensions": {
+    "allExtensions": "@:shared.stacks.allExtensions",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "フィルターに一致する拡張機能はありません",
+    "subtitle": "AI 対応のコーディング拡張機能とプラグイン",
+    "title": "@:shared.stacks.extensions"
+  },
+  "ideDetail": {
+    "allIDEs": "@:shared.stacks.allIdes",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "ides": "@:shared.stacks.ides"
+    },
+    "categoryLabel": "@:components.productHero.categories.IDE",
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "license": "@:components.productHero.license",
+    "platforms": "@:components.productHero.platforms",
+    "stars": "@:components.productHero.stars",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version",
+    "visitWebsite": "@:components.productHero.visitWebsite"
+  },
+  "ides": {
+    "allIDEs": "@:shared.stacks.allIdes",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "フィルターに一致する IDE はありません",
+    "subtitle": "AI 強化された統合開発環境",
+    "title": "@:shared.stacks.ides"
+  },
+  "modelDetail": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "パフォーマンス分析を表示",
+        "title": "@:shared.platforms.artificialAnalysis"
+      },
+      "huggingface": {
+        "description": "HuggingFace で表示",
+        "title": "@:shared.platforms.huggingface"
+      },
+      "openrouter": {
+        "description": "OpenRouter 経由でアクセス",
+        "title": "@:shared.platforms.openrouter"
+      }
+    },
+    "allModels": "@:shared.stacks.allModels",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "models": "@:shared.stacks.models"
+    },
+    "categoryLabel": "@:components.productHero.categories.MODEL",
+    "documentation": "@:components.productHero.documentation",
+    "findOnAiPlatforms": "AI プラットフォームで検索",
+    "labels": {
+      "artificialAnalysis": "@:shared.platforms.artificialAnalysis",
+      "context": "コンテキスト",
+      "documentation": "@:components.productHero.documentation",
+      "huggingface": "@:shared.platforms.huggingface",
+      "maxOutput": "@:shared.common.maxOutput",
+      "openrouter": "@:shared.platforms.openrouter",
+      "pricing": "@:shared.common.pricing",
+      "size": "サイズ",
+      "website": "@:shared.common.website"
+    },
+    "license": "@:components.productHero.license",
+    "maxOutput": "@:shared.common.maxOutput",
+    "metaTitle": "AI コーディングモデル | 仕様と価格 2025",
+    "modelSize": "@:shared.common.modelSize",
+    "pricing": "@:shared.common.pricing",
+    "specifications": "仕様",
+    "stars": "@:components.productHero.stars",
+    "contextWindow": "総コンテキスト",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version",
+    "visitWebsite": "@:components.productHero.visitWebsite",
+    "input": "入力",
+    "output": "出力",
+    "cache": "キャッシュ",
+    "benchmarks": {
+      "title": "パフォーマンスベンチマーク",
+      "sweBench": "SWE-bench Verified",
+      "sweBenchDesc": "実世界のソフトウェアエンジニアリングタスク",
+      "terminalBench": "TerminalBench 2.0",
+      "terminalBenchDesc": "コマンドラインインターフェースの習熟度",
+      "mmmu": "MMMU",
+      "mmmuDesc": "マルチモーダル理解",
+      "mmmuPro": "MMMU Pro",
+      "mmmuProDesc": "高度なマルチモーダルタスク",
+      "webDevArena": "WebDevArena",
+      "webDevArenaDesc": "Web 開発の課題",
+      "sciCode": "SciCode",
+      "sciCodeDesc": "科学コード生成",
+      "liveCodeBench": "LiveCodeBench",
+      "liveCodeBenchDesc": "ライブコーディングのパフォーマンス"
+    }
+  },
+  "modelProviderDetail": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "パフォーマンス分析を表示",
+        "title": "@:shared.platforms.artificialAnalysis"
+      },
+      "huggingface": {
+        "description": "HuggingFace で表示",
+        "title": "@:shared.platforms.huggingface"
+      },
+      "openrouter": {
+        "description": "OpenRouter 経由でアクセス",
+        "title": "@:shared.platforms.openrouter"
+      }
+    },
+    "allModelProviders": "@:shared.stacks.allModelProviders",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "modelProviders": "@:shared.stacks.modelProviders"
+    },
+    "categoryLabel": "@:components.productHero.categories.PROVIDER",
+    "community": {
+      "discord": {
+        "description": "コミュニティに参加",
+        "title": "@:components.productLinks.discord"
+      },
+      "github": {
+        "description": "リポジトリを表示",
+        "title": "@:components.productLinks.github"
+      },
+      "linkedin": {
+        "description": "@:shared.common.followUs",
+        "title": "@:components.productLinks.linkedin"
+      },
+      "reddit": {
+        "description": "ディスカッションに参加",
+        "title": "@:components.productLinks.reddit"
+      },
+      "twitter": {
+        "description": "@:shared.common.followUs",
+        "title": "@:components.productLinks.twitter"
+      },
+      "youtube": {
+        "description": "動画を見る",
+        "title": "@:components.productLinks.youtube"
+      }
+    },
+    "communityLinks": "@:shared.common.communityLinks",
+    "documentation": "@:components.productHero.documentation",
+    "findOnAiPlatforms": "AI プラットフォームで検索",
+    "getApiKey": "@:components.productHero.getApiKey",
+    "indexLabel": "@:shared.common.indexLabel",
+    "providerTypes": {
+      "foundation-model-provider": "@:components.productHero.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:components.productHero.providerTypes.model-service-provider"
+    },
+    "type": "@:components.productHero.type",
+    "visitWebsite": "@:components.productHero.visitWebsite"
+  },
+  "modelProviders": {
+    "foundationProviders": "@:components.productHero.providerTypes.foundation-model-provider",
+    "search": "@:components.filterSortBar.search",
+    "serviceProviders": "@:components.productHero.providerTypes.model-service-provider",
+    "subtitle": "様々な AI モデルへのアクセスを提供する LLM API プロバイダー",
+    "title": "@:shared.stacks.modelProviders"
+  },
+  "models": {
+    "compareAll": "@:shared.actions.compareAll",
+    "context": "コンテキスト:",
+    "pricing": "価格:",
+    "search": "@:components.filterSortBar.search",
+    "size": "サイズ:",
+    "subtitle": "コード生成と分析に最適化された大規模言語モデル",
+    "title": "@:shared.stacks.models"
+  },
+  "overview": {
+    "clis": {
+      "description": "大規模言語モデルの力をターミナルに直接提供するコマンドライン AI アシスタント。シェルから自然言語で複雑なタスクを実行。",
+      "title": "@:shared.stacks.clis"
+    },
+    "exploreStack": "スタックを探索",
+    "extensions": {
+      "description": "お気に入りの IDE 向けの AI 対応コーディング拡張機能とプラグイン。コード補完からインテリジェントなリファクタリングまで、AI アシスタンスで開発体験を向上。",
+      "title": "@:shared.stacks.extensions"
+    },
+    "ides": {
+      "description": "コードベースを理解しインテリジェンスを提供する AI 対応統合開発環境。VS Code から Cursor まで、コーディングを AI とコラボレーションさせるエディターを発見。",
+      "title": "@:shared.stacks.ides"
+    },
+    "modelProviders": {
+      "description": "様々な AI モデルへのアクセスを提供する LLM API プロバイダー。DeepSeek から OpenRouter まで、統一された API とモデルアクセスで AI コーディングツールを強力化するプラットフォームを発見。",
+      "title": "@:shared.stacks.modelProviders"
+    },
+    "models": {
+      "description": "インテリジェンス層。コード生成、理解、分析に最適化された大規模言語モデル。主要な AI モデル間の仕様、価格、機能を比較。",
+      "title": "@:shared.stacks.models"
+    },
+    "overviewTitle": "AI コーディングスタック概要",
+    "slogan": "@:shared.common.slogan",
+    "subtitle": "完全な AI コーディングエコシステムを探索：IDE、CLI、拡張機能、モデル、プロバイダー。",
+    "title": "@:shared.common.aiCodingStack",
+    "vendors": {
+      "description": "AI 技術を構築する主要な企業と組織。OpenAI から Anthropic まで、AI コーディング革命の背後にあるベンダーを発見。",
+      "title": "@:shared.stacks.vendors"
+    }
+  },
+  "vendorDetail": {
+    "allVendors": "@:shared.stacks.allVendors",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "home": "ホーム",
+      "vendors": "@:shared.stacks.vendors"
+    },
+    "categoryLabel": "@:components.productHero.categories.VENDOR",
+    "documentation": "@:components.productHero.documentation",
+    "community": {
+      "blog": {
+        "description": "ブログ記事を読む",
+        "title": "ブログ"
+      },
+      "discord": {
+        "description": "コミュニティに参加",
+        "title": "@:components.productLinks.discord"
+      },
+      "github": {
+        "description": "リポジトリを表示",
+        "title": "@:components.productLinks.github"
+      },
+      "linkedin": {
+        "description": "@:shared.common.followUs",
+        "title": "@:components.productLinks.linkedin"
+      },
+      "reddit": {
+        "description": "ディスカッションに参加",
+        "title": "@:components.productLinks.reddit"
+      },
+      "twitter": {
+        "description": "@:shared.common.followUs",
+        "title": "@:components.productLinks.twitter"
+      },
+      "youtube": {
+        "description": "動画を見る",
+        "title": "@:components.productLinks.youtube"
+      }
+    },
+    "communityLinks": "@:shared.common.communityLinks",
+    "connectLinkedIn": "LinkedIn で接続",
+    "discord": "@:components.productLinks.discord",
+    "followTwitter": "Twitter でフォロー",
+    "github": "@:components.productLinks.github",
+    "indexLabel": "@:shared.common.indexLabel",
+    "joinDiscord": "Discord コミュニティに参加",
+    "joinReddit": "Reddit コミュニティに参加",
+    "linkedin": "@:components.productLinks.linkedin",
+    "metaDescription": "{name}の AI 製品と技術を探索。",
+    "metaTitle": "AI 技術ベンダー | 企業プロフィール 2025",
+    "models": "@:shared.stacks.models",
+    "products": "@:shared.common.products",
+    "productsSubtitle": "{vendorName}の製品とサービスを探索",
+    "productsTitle": "@:shared.common.products",
+    "quickLinks": "クイックリンク",
+    "reddit": "@:components.productLinks.reddit",
+    "twitter": "@:components.productLinks.twitter",
+    "vendorDetails": "ベンダー詳細",
+    "viewGitHub": "オープンソースリポジトリを表示",
+    "visitWebsite": "@:components.productHero.visitWebsite",
+    "watchYouTube": "YouTube で動画を見る",
+    "website": "@:shared.common.website",
+    "youtube": "@:components.productLinks.youtube"
+  },
+  "vendors": {
+    "search": "@:components.filterSortBar.search",
+    "subtitle": "AI 技術を構築する主要な企業と組織",
+    "title": "@:shared.stacks.vendors"
+  }
+}

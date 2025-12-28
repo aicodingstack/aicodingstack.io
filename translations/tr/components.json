@@ -1,0 +1,180 @@
+{
+  "backToNavigation": {
+    "backTo": "Geri dön",
+    "indexLabel": "INDEKS"
+  },
+  "collectionScrollbar": {
+    "articles": "Öne Çıkan Makaleler",
+    "specifications": "Özellikler ve Protokoller",
+    "tools": "Ekosistem Araçları"
+  },
+  "docsSidebar": {
+    "label": "Dokümantasyon",
+    "title": "DOKÜMANTASYON"
+  },
+  "filterSortBar": {
+    "clearFilters": "Filtreleri temizle",
+    "license": "Lisans:",
+    "openSource": "Açık Kaynak",
+    "platform": "Platform:",
+    "proprietary": "Tescilli",
+    "search": "Ada göre ara...",
+    "sort": "Sırala:",
+    "sortDefault": "Varsayılan",
+    "sortNameAsc": "Ad (A-Z)",
+    "sortNameDesc": "Ad (Z-A)"
+  },
+  "footer": {
+    "copyright": "© 2025 AI Coding Stack • ❤︎ ile yapıldı • Açık Kaynak",
+    "openSource": "Açık kaynak AI kodlama metaveri deposu.",
+    "selectLanguage": "Dil Seçin",
+    "tagline": "AI Kodlama Ekosistemi Merkeziniz.",
+    "toggleTheme": "Tema değiştir"
+  },
+  "header": {
+    "aiCodingLandscape": "AI Kodlama Manzarası",
+    "aiCodingLandscapeDesc": "AI kodlama ekosisteminin tamamını görselleştirin",
+    "aiCodingStack": "AI Coding Stack",
+    "articles": "Makaleler",
+    "closeMenu": "Menüyü kapat",
+    "collections": "Koleksiyonlar",
+    "developmentTools": "Geliştirme Araçları",
+    "intelligence": "Zeka",
+    "landscape": "Manzara",
+    "manifesto": "Manifesto",
+    "openMenu": "Menüyü aç",
+    "openSourceRank": "Açık Kaynak Sıralaması",
+    "openSourceRankDesc": "GitHub yıldızlarına göre açık kaynaklı AI kodlama projelerini keşfedin",
+    "ranking": "Sıralama",
+    "search": "Ara",
+    "searchPlaceholder": "Ara...",
+    "toggleMenu": "Menüyü değiştir"
+  },
+  "openSourceRank": {
+    "description": "GitHub yıldızlarına göre sıralanmış açık kaynaklı AI kodlama araçlarını keşfedin ve inceleyin. Geliştirme iş akışınız için mükemmel araçları bulmak için IDE'leri, CLI'leri ve uzantıları karşılaştırın.",
+    "filter": {
+      "all": "Tümü"
+    },
+    "meta": {
+      "description": "GitHub yıldızlarına göre sıralanmış AI Coding Stack içindeki tüm açık kaynak projelerin sıralaması. Açık kaynak ve tescilli araçların istatistiklerini ve trendlerini görün.",
+      "title": "Açık Kaynak Projeleri Sıralaması"
+    },
+    "noResults": "Bu kategori için açık kaynak projesi bulunamadı.",
+    "note": "Not: Bu sayfa yalnızca GitHub depolarına sahip projeleri gösterir. Bazı projeler, açık kaynak olmasalar da, kullanıcı geri bildirimi kanalları olarak GitHub depolarını sürdürür.",
+    "productType": {
+      "cli": "CLI",
+      "extension": "Uzantı",
+      "ide": "IDE"
+    },
+    "statistics": {
+      "closedSource": "Tescilli",
+      "closedSourceCount": "Tescilli Projeler",
+      "closedSourcePercentage": "Tescilli Yüzde",
+      "licenseBreakdown": "Lisans Dağılımı",
+      "openSource": "Açık Kaynak",
+      "openSourceCount": "Açık Kaynak Projeler",
+      "projects": "proje",
+      "title": "Açık Kaynak ve Tescilli Dağılımı",
+      "totalProjects": "Toplam Proje"
+    },
+    "table": {
+      "license": "Lisans",
+      "name": "Ad",
+      "openSourceTitle": "Açık Kaynak Projeler ({count})",
+      "proprietaryTitle": "Tescilli Projeler ({count})",
+      "rank": "Sıralama",
+      "stars": "Yıldız",
+      "type": "Tür"
+    },
+    "title": "Açık Kaynak Projeleri Sıralaması"
+  },
+  "productCommands": {
+    "command": "Komut",
+    "install": "Yükle",
+    "launch": "Başlat"
+  },
+  "productHero": {
+    "categories": {
+      "CLI": "CLI",
+      "EXTENSION": "Uzantı",
+      "IDE": "IDE",
+      "MODEL": "Model",
+      "PROVIDER": "Model Sağlayıcısı",
+      "VENDOR": "Sağlayıcı"
+    },
+    "documentation": "Dokümantasyon",
+    "download": "İndir",
+    "getApiKey": "API Anahtarı Al",
+    "license": "Lisans",
+    "platforms": "Platformlar",
+    "providerTypes": {
+      "foundation-model-provider": "Temel Model Sağlayıcısı",
+      "model-service-provider": "Model Hizmet Sağlayıcısı"
+    },
+    "runtime": "Çalışma Zamanı",
+    "stars": "Yıldız",
+    "supportedIdes": "Desteklenen IDE'ler",
+    "type": "Tür",
+    "vendor": "Sağlayıcı",
+    "version": "Sürüm",
+    "visitWebsite": "Web Sitesini Ziyaret Et"
+  },
+  "productLinks": {
+    "blog": "Blog",
+    "changelog": "Değişiklik Günlüğü",
+    "community": "Topluluk",
+    "discord": "Discord",
+    "download": "İndir",
+    "github": "GitHub",
+    "issue": "Sorun Takipçisi",
+    "linkedin": "LinkedIn",
+    "mcp": "MCP Dokümantasyonu",
+    "pricing": "Fiyatlandırma",
+    "reddit": "Reddit",
+    "resources": "Kaynaklar",
+    "twitter": "X (Twitter)",
+    "youtube": "YouTube"
+  },
+  "productPricing": {
+    "title": "Fiyatlandırma",
+    "viewFullDetails": "Tam fiyat detaylarını görüntüleyin →"
+  },
+  "relatedProducts": {
+    "cli": "CLI",
+    "extension": "Uzantı",
+    "ide": "IDE",
+    "title": "İlgili Ürünler",
+    "viewProduct": "Ürünü Görüntüle"
+  },
+  "search": {
+    "categories": {
+      "clis": "CLI'ler",
+      "extensions": "Uzantılar",
+      "ides": "IDE'ler",
+      "models": "Modeller",
+      "providers": "Model Sağlayıcıları",
+      "vendors": "Sağlayıcılar"
+    },
+    "navigate": "gitmek için",
+    "noResults": "Sonuç bulunamadı",
+    "noResultsFor": "\"{query}\" için sonuç bulunamadı",
+    "placeholder": "AI kodlama araçlarında ara...",
+    "resultsCount": "{count} {count, plural, one {sonuç} other {sonuç}}",
+    "resultsCountFor": "\"{query}\" için {count} {count, plural, one {sonuç} other {sonuç}}",
+    "searching": "Aranıyor...",
+    "select": "seçmek için",
+    "stacks": {
+      "clis": "@:shared.stacks.clis",
+      "extensions": "@:shared.stacks.extensions",
+      "ides": "@:shared.stacks.ides",
+      "modelProviders": "@:shared.stacks.modelProviders",
+      "models": "@:shared.stacks.models",
+      "vendors": "@:shared.stacks.vendors"
+    },
+    "title": "Arama Sonuçları"
+  },
+  "sidebar": {
+    "backToTop": "Başa dön",
+    "selectItem": "Öğe seçin"
+  }
+}

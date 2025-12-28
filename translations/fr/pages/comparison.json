@@ -1,0 +1,47 @@
+{
+  "clis": {
+    "backTo": "Retour aux CLI",
+    "subtitle": "Assistants de codage en ligne de commande alimentés par l'IA",
+    "title": "@:shared.stacks.clis"
+  },
+  "columns": {
+    "contextLength": "Longueur du contexte",
+    "freePlan": "Plan gratuit",
+    "githubStars": "@:components.productHero.stars",
+    "license": "@:components.productHero.license",
+    "links": "Liens",
+    "maxOutput": "@:shared.common.maxOutput",
+    "maxPrice": "Prix maximum",
+    "modelSize": "@:shared.common.modelSize",
+    "platforms": "@:components.productHero.platforms",
+    "pricing": "@:shared.common.pricing",
+    "startingPrice": "Prix de départ",
+    "supportedIdes": "@:components.productHero.supportedIdes",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version"
+  },
+  "extensions": {
+    "backTo": "Retour aux Extensions",
+    "subtitle": "Extensions et plugins de codage alimentés par l'IA",
+    "title": "@:shared.stacks.extensions"
+  },
+  "ides": {
+    "backTo": "Retour aux IDE",
+    "subtitle": "Environnements de développement intégrés améliorés par l'IA",
+    "title": "@:shared.stacks.ides"
+  },
+  "linkTitles": {
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "officialWebsite": "@:components.productHero.visitWebsite"
+  },
+  "models": {
+    "backTo": "Retour aux Modèles",
+    "subtitle": "Grands modèles de langage optimisés pour la génération et l'analyse de code",
+    "title": "@:shared.stacks.models"
+  },
+  "pricingValues": {
+    "free": "Gratuit",
+    "freeOnly": "Gratuit uniquement"
+  }
+}

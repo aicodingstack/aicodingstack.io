@@ -1,0 +1,32 @@
+{
+  "description": "AI コーディングツールを探索・比較：IDE、CLI、拡張機能、モデル、プロバイダー — すべて一箇所で。",
+  "exploreTools": "@:shared.actions.explore",
+  "faq": "よくある質問",
+  "features": {
+    "comparison": {
+      "description": "詳細な仕様、価格、機能でツールを並べて比較。ワークフローに最適な AI コーディングツールについて情報に基づいた意思決定を行います。",
+      "title": "スマート比較"
+    },
+    "directory": {
+      "description": "IDE、CLI、拡張機能、モデル、プロバイダーにわたる AI コーディングツールのコレクションを探索。すべて一箇所で、常に最新。",
+      "title": "包括的なディレクトリ"
+    },
+    "ecosystem": {
+      "description": "インタラクティブなランドスケープビューで AI コーディングエコシステム全体を可視化。異なるツール、モデル、プロバイダーがどのように接続し補完し合うかを理解。",
+      "title": "エコシステム概要"
+    },
+    "title": "コア機能",
+    "tracking": {
+      "description": "AI コーディングランドスケープ全体の最新の開発、バージョン、更新を維持。新しいリリース、機能追加、エコシステムの変更を追跡。",
+      "title": "進捗の追跡"
+    }
+  },
+  "meta": {
+    "description": "AI コーディングツールの包括的なディレクトリ。IDE、CLI、拡張機能、モデル、プロバイダーを発見、比較、探索。",
+    "name": "@:shared.common.aiCodingStack",
+    "title": "AI Coding Stack - あなたの AI コーディングエコシステムのハブ"
+  },
+  "readDocs": "ドキュメントを読む",
+  "subtitle": "AI 対応ソフトウェア開発の未来へのビジョン",
+  "title": "@:shared.common.manifesto"
+}

@@ -1,0 +1,32 @@
+{
+  "description": "AI kodlama araçlarını keşfedin ve karşılaştırın: IDE'ler, CLI'ler, uzantılar, modeller ve sağlayıcılar — hepsi tek bir yerde.",
+  "exploreTools": "Araçları Keşfet",
+  "faq": "Sıkça Sorulan Sorular",
+  "features": {
+    "comparison": {
+      "description": "Detaylı özelliklere, fiyatlandırmaya ve özelliklere sahip araçları yan yana karşılaştırın. İş akışınıza en uygun AI kodlama araçları hakkında bilinçli kararlar verin.",
+      "title": "Akıllı Karşılaştırma"
+    },
+    "directory": {
+      "description": "IDE'ler, CLI'ler, uzantılar, modeller ve sağlayıcılar genelinde küratörlü AI kodlama araçları koleksiyonunu keşfedin. Hepsi tek bir yerde, her zaman güncel.",
+      "title": "Kapsamlı Dizin"
+    },
+    "ecosystem": {
+      "description": "Etkileşimli manzara görünümleri ile tam AI kodlama ekosistemini görselleştirin. Farklı araçların, modellerin ve sağlayıcıların nasıl bağlandığını ve birbirini tamamladığını anlayın.",
+      "title": "Ekosistem genel bakışı"
+    },
+    "title": "Temel Özellikler",
+    "tracking": {
+      "description": "AI kodlama manzarasındaki son gelişmeler, sürümler ve güncellemeler ile güncel kalın. Yeni sürümleri, özellik eklemelerini ve ekosistem değişikliklerini izleyin.",
+      "title": "İzleme"
+    }
+  },
+  "meta": {
+    "description": "AI kodlama araçları için kapsamlı dizin. IDE'leri, CLI'leri, uzantıları, modelleri ve sağlayıcıları keşfedin, karşılaştırın ve inceleyin.",
+    "name": "AI Coding Stack",
+    "title": "AI Coding Stack - AI Kodlama Ekosistemi Merkeziniz"
+  },
+  "readDocs": "Dokümantasyonu Oku",
+  "subtitle": "Keşfedin, Karşılaştırın, Daha Hızlı Oluşturun.",
+  "title": "AI Kodlama Ekosistemi Merkeziniz"
+}

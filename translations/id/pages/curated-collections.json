@@ -1,0 +1,16 @@
+{
+  "articles": {
+    "description": "Artikel wajib baca tentang coding AI dari pemimpin industri",
+    "title": "Artikel Unggulan"
+  },
+  "specifications": {
+    "description": "Standar penting dan protokol untuk pengembangan perangkat lunak modern",
+    "title": "Spesifikasi & Protokol"
+  },
+  "subtitle": "Sumber daya, spesifikasi, protokol, dan alat yang dikurasi untuk coding AI",
+  "title": "Koleksi Kurasi",
+  "tools": {
+    "description": "Alat dan utilitas kurasi untuk alur kerja coding AI",
+    "title": "Alat Ekosistem"
+  }
+}

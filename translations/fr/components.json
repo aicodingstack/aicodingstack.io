@@ -1,0 +1,180 @@
+{
+  "backToNavigation": {
+    "backTo": "@:shared.actions.backTo",
+    "indexLabel": "@:shared.common.indexLabel"
+  },
+  "collectionScrollbar": {
+    "articles": "@:shared.common.featuredArticles",
+    "specifications": "@:shared.common.specificationsProtocols",
+    "tools": "@:shared.common.ecosystemTools"
+  },
+  "docsSidebar": {
+    "label": "@:shared.common.documentation",
+    "title": "DOCUMENTATION"
+  },
+  "filterSortBar": {
+    "clearFilters": "Effacer les filtres",
+    "license": "Licence :",
+    "openSource": "@:shared.common.openSource",
+    "platform": "Plateforme :",
+    "proprietary": "@:shared.common.proprietary",
+    "search": "Rechercher par nom...",
+    "sort": "Trier :",
+    "sortDefault": "Par défaut",
+    "sortNameAsc": "Nom (A-Z)",
+    "sortNameDesc": "Nom (Z-A)"
+  },
+  "footer": {
+    "copyright": "© 2025 AI Coding Stack • Construit avec ❤︎ • Open Source",
+    "openSource": "Référentiel de métadonnées de codage IA open source.",
+    "selectLanguage": "Choisir la langue",
+    "tagline": "Votre centre de l'écosystème de codage IA.",
+    "toggleTheme": "Changer de thème"
+  },
+  "header": {
+    "aiCodingLandscape": "Paysage du Codage IA",
+    "aiCodingLandscapeDesc": "Visualisez l'écosystème complet du codage IA",
+    "aiCodingStack": "@:shared.common.aiCodingStack",
+    "articles": "@:shared.common.articles",
+    "closeMenu": "Fermer le menu",
+    "collections": "@:shared.common.collections",
+    "developmentTools": "Outils de développement",
+    "intelligence": "Intelligence",
+    "landscape": "Paysage",
+    "manifesto": "@:shared.common.manifesto",
+    "openMenu": "Ouvrir le menu",
+    "openSourceRank": "Classement Open Source",
+    "openSourceRankDesc": "Explorez les projets de codage IA open source par étoiles GitHub",
+    "ranking": "Classement",
+    "search": "@:shared.actions.search",
+    "searchPlaceholder": "Rechercher...",
+    "toggleMenu": "Basculer le menu"
+  },
+  "openSourceRank": {
+    "description": "Découvrez et explorez les outils de codage IA open source classés par étoiles GitHub. Comparez les IDE, CLI et extensions pour trouver les outils parfaits pour votre workflow de développement.",
+    "filter": {
+      "all": "Tous"
+    },
+    "meta": {
+      "description": "Classement de tous les projets open source dans AI Coding Stack, triés par étoiles GitHub. Voir les statistiques et tendances des outils open source vs propriétaires.",
+      "title": "@:components.openSourceRank.title"
+    },
+    "noResults": "Aucun projet open source trouvé pour cette catégorie.",
+    "note": "Remarque : Cette page n'affiche que les projets avec des dépôts GitHub. Certains projets, bien qu'ils ne soient pas open source, maintiennent des dépôts GitHub comme canaux de retour utilisateurs.",
+    "productType": {
+      "cli": "@:shared.stack.cli",
+      "extension": "@:shared.stack.extension",
+      "ide": "@:shared.stack.ide"
+    },
+    "statistics": {
+      "closedSource": "@:shared.common.proprietary",
+      "closedSourceCount": "Projets Propriétaires",
+      "closedSourcePercentage": "Pourcentage Propriétaire",
+      "licenseBreakdown": "Distribution des licences",
+      "openSource": "@:shared.common.openSource",
+      "openSourceCount": "Projets Open Source",
+      "projects": "projets",
+      "title": "Distribution Open Source vs Propriétaire",
+      "totalProjects": "Total des Projets"
+    },
+    "table": {
+      "license": "@:shared.common.license",
+      "name": "Nom",
+      "openSourceTitle": "Projets Open Source ({count})",
+      "proprietaryTitle": "Projets Propriétaires ({count})",
+      "rank": "Rang",
+      "stars": "@:shared.common.stars",
+      "type": "@:shared.common.type"
+    },
+    "title": "Classement des Projets Open Source"
+  },
+  "productCommands": {
+    "command": "Commande",
+    "install": "Installer",
+    "launch": "Lancer"
+  },
+  "productHero": {
+    "categories": {
+      "CLI": "@:shared.stack.cli",
+      "EXTENSION": "@:shared.stack.extension",
+      "IDE": "@:shared.stack.ide",
+      "MODEL": "@:shared.stack.model",
+      "PROVIDER": "@:shared.stack.modelProvider",
+      "VENDOR": "@:shared.stack.vendor"
+    },
+    "documentation": "@:shared.common.documentation",
+    "download": "@:shared.actions.download",
+    "getApiKey": "Obtenir la clé API",
+    "license": "@:shared.common.license",
+    "platforms": "Plateformes",
+    "providerTypes": {
+      "foundation-model-provider": "Fournisseur de Modèle Fondamental",
+      "model-service-provider": "Fournisseur de Service de Modèle"
+    },
+    "runtime": "Exécution",
+    "stars": "@:shared.common.stars",
+    "supportedIdes": "IDE compatibles",
+    "type": "@:shared.common.type",
+    "vendor": "@:shared.stack.vendor",
+    "version": "Version",
+    "visitWebsite": "Visiter le site web"
+  },
+  "productLinks": {
+    "blog": "Blog",
+    "changelog": "Journal des modifications",
+    "community": "@:shared.common.community",
+    "discord": "@:shared.platforms.discord",
+    "download": "@:shared.actions.download",
+    "github": "@:shared.platforms.github",
+    "issue": "Suivi des problèmes",
+    "linkedin": "@:shared.platforms.linkedin",
+    "mcp": "Documentation MCP",
+    "pricing": "@:shared.common.pricing",
+    "reddit": "@:shared.platforms.reddit",
+    "resources": "@:shared.common.resources",
+    "twitter": "@:shared.platforms.twitter",
+    "youtube": "@:shared.platforms.youtube"
+  },
+  "productPricing": {
+    "title": "@:shared.common.pricing",
+    "viewFullDetails": "@:shared.actions.viewFullDetails"
+  },
+  "relatedProducts": {
+    "cli": "CLI",
+    "extension": "Extension",
+    "ide": "IDE",
+    "title": "Produits associés",
+    "viewProduct": "Voir le produit"
+  },
+  "search": {
+    "categories": {
+      "clis": "@:shared.stacks.clis",
+      "extensions": "@:shared.stacks.extensions",
+      "ides": "@:shared.stacks.ides",
+      "models": "@:shared.stacks.models",
+      "providers": "@:shared.stacks.modelProviders",
+      "vendors": "@:shared.stacks.vendors"
+    },
+    "navigate": "pour naviguer",
+    "noResults": "Aucun résultat trouvé",
+    "noResultsFor": "Aucun résultat trouvé pour \"{query}\"",
+    "placeholder": "Rechercher des outils de codage IA...",
+    "resultsCount": "{count} {count, plural, one {résultat} other {résultats}}",
+    "resultsCountFor": "{count} {count, plural, one {résultat} other {résultats}} pour \"{query}\"",
+    "searching": "Recherche...",
+    "select": "pour sélectionner",
+    "stacks": {
+      "clis": "@:shared.stacks.clis",
+      "extensions": "@:shared.stacks.extensions",
+      "ides": "@:shared.stacks.ides",
+      "modelProviders": "@:shared.stacks.modelProviders",
+      "models": "@:shared.stacks.models",
+      "vendors": "@:shared.stacks.vendors"
+    },
+    "title": "Résultats de recherche"
+  },
+  "sidebar": {
+    "backToTop": "@:shared.actions.backToTop",
+    "selectItem": "@:shared.actions.selectItem"
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "cliDetail": {
+    "allCLIs": "所有命令行",
+    "breadcrumb": {
+      "aiCodingStack": "AI 编码技术栈",
+      "clis": "命令行"
+    },
+    "categoryLabel": "@:components.productHero.categories.CLI",
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "license": "@:components.productHero.license",
+    "platforms": "@:components.productHero.platforms",
+    "stars": "@:components.productHero.stars",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version",
+    "visitWebsite": "@:components.productHero.visitWebsite"
+  },
+  "clis": {
+    "allCLIs": "所有命令行",
+    "compareAll": "对比所有",
+    "noMatches": "没有符合筛选条件的命令行",
+    "subtitle": "AI 驱动的命令行编码助手",
+    "title": "命令行"
+  },
+  "extensionDetail": {
+    "allExtensions": "所有扩展插件",
+    "breadcrumb": {
+      "aiCodingStack": "AI 编码技术栈",
+      "extensions": "扩展插件"
+    },
+    "categoryLabel": "@:components.productHero.categories.EXTENSION",
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "license": "@:components.productHero.license",
+    "stars": "@:components.productHero.stars",
+    "supportedIdes": "@:components.productHero.supportedIdes",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version",
+    "visitWebsite": "@:components.productHero.visitWebsite"
+  },
+  "extensions": {
+    "allExtensions": "所有扩展插件",
+    "compareAll": "对比所有",
+    "noMatches": "没有符合筛选条件的扩展插件",
+    "subtitle": "AI 驱动的编码扩展和插件",
+    "title": "扩展插件"
+  },
+  "ideDetail": {
+    "allIDEs": "所有 IDE",
+    "breadcrumb": {
+      "aiCodingStack": "AI 编码技术栈",
+      "ides": "IDE"
+    },
+    "categoryLabel": "@:components.productHero.categories.IDE",
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "license": "@:components.productHero.license",
+    "platforms": "@:components.productHero.platforms",
+    "stars": "@:components.productHero.stars",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version",
+    "visitWebsite": "@:components.productHero.visitWebsite"
+  },
+  "ides": {
+    "allIDEs": "所有 IDE",
+    "compareAll": "对比所有",
+    "noMatches": "没有符合筛选条件的 IDE",
+    "subtitle": "AI 增强的集成开发环境",
+    "title": "IDE"
+  },
+  "modelDetail": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "查看性能分析",
+        "title": "Artificial Analysis"
+      },
+      "huggingface": {
+        "description": "在 HuggingFace 查看",
+        "title": "HuggingFace"
+      },
+      "openrouter": {
+        "description": "通过 OpenRouter 访问",
+        "title": "OpenRouter"
+      }
+    },
+    "allModels": "所有模型",
+    "backTo": "返回",
+    "breadcrumb": {
+      "aiCodingStack": "AI 编码技术栈",
+      "models": "模型"
+    },
+    "categoryLabel": "@:components.productHero.categories.MODEL",
+    "documentation": "@:components.productHero.documentation",
+    "findOnAiPlatforms": "在 AI 平台上查找",
+    "labels": {
+      "artificialAnalysis": "Artificial Analysis",
+      "context": "上下文",
+      "documentation": "@:components.productHero.documentation",
+      "huggingface": "HuggingFace",
+      "maxOutput": "最大输出",
+      "openrouter": "OpenRouter",
+      "pricing": "定价",
+      "size": "大小",
+      "website": "官网"
+    },
+    "license": "@:components.productHero.license",
+    "maxOutput": "最大输出",
+    "metaTitle": "AI 编码模型 | 规格与定价 2025",
+    "modelSize": "模型大小",
+    "pricing": "定价",
+    "specifications": "规格",
+    "stars": "@:components.productHero.stars",
+    "contextWindow": "总上下文",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version",
+    "visitWebsite": "@:components.productHero.visitWebsite",
+    "input": "输入",
+    "output": "输出",
+    "cache": "缓存",
+    "benchmarks": {
+      "title": "性能基准测试",
+      "sweBench": "SWE-bench Verified",
+      "sweBenchDesc": "真实世界软件工程任务",
+      "terminalBench": "TerminalBench 2.0",
+      "terminalBenchDesc": "命令行界面熟练度",
+      "mmmu": "MMMU",
+      "mmmuDesc": "多模态理解",
+      "mmmuPro": "MMMU Pro",
+      "mmmuProDesc": "高级多模态任务",
+      "webDevArena": "WebDevArena",
+      "webDevArenaDesc": "Web 开发挑战",
+      "sciCode": "SciCode",
+      "sciCodeDesc": "科学代码生成",
+      "liveCodeBench": "LiveCodeBench",
+      "liveCodeBenchDesc": "实时编码性能"
+    }
+  },
+  "modelProviderDetail": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "查看性能分析",
+        "title": "Artificial Analysis"
+      },
+      "huggingface": {
+        "description": "在 HuggingFace 上查看",
+        "title": "HuggingFace"
+      },
+      "openrouter": {
+        "description": "通过 OpenRouter 访问",
+        "title": "OpenRouter"
+      }
+    },
+    "allModelProviders": "所有模型提供商",
+    "backTo": "返回",
+    "breadcrumb": {
+      "aiCodingStack": "AI 编码技术栈",
+      "modelProviders": "模型提供商"
+    },
+    "categoryLabel": "@:components.productHero.categories.PROVIDER",
+    "community": {
+      "discord": {
+        "description": "加入社区",
+        "title": "Discord"
+      },
+      "github": {
+        "description": "查看仓库",
+        "title": "GitHub"
+      },
+      "linkedin": {
+        "description": "关注我们",
+        "title": "LinkedIn"
+      },
+      "reddit": {
+        "description": "加入讨论",
+        "title": "Reddit"
+      },
+      "twitter": {
+        "description": "关注我们",
+        "title": "X/Twitter"
+      },
+      "youtube": {
+        "description": "观看视频",
+        "title": "YouTube"
+      }
+    },
+    "communityLinks": "社区链接",
+    "documentation": "@:components.productHero.documentation",
+    "findOnAiPlatforms": "在 AI 平台上查找",
+    "getApiKey": "@:components.productHero.getApiKey",
+    "indexLabel": "索引",
+    "providerTypes": {
+      "foundation-model-provider": "@:components.productHero.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:components.productHero.providerTypes.model-service-provider"
+    },
+    "type": "@:components.productHero.type",
+    "visitWebsite": "@:components.productHero.visitWebsite"
+  },
+  "modelProviders": {
+    "foundationProviders": "基础模型提供商",
+    "search": "按名称搜索...",
+    "serviceProviders": "模型服务提供商",
+    "subtitle": "提供各种 AI 模型访问的 LLM API 提供商",
+    "title": "模型提供商"
+  },
+  "models": {
+    "compareAll": "对比所有",
+    "context": "上下文:",
+    "pricing": "定价:",
+    "search": "按名称搜索...",
+    "size": "大小:",
+    "subtitle": "针对代码生成和分析优化的大型语言模型",
+    "title": "模型"
+  },
+  "overview": {
+    "clis": {
+      "description": "将大语言模型的强大功能直接带到终端的命令行 AI 助手。用自然语言直接在 shell 中执行复杂任务。",
+      "title": "命令行"
+    },
+    "exploreStack": "探索技术栈",
+    "extensions": {
+      "description": "为你喜爱的 IDE 提供的 AI 驱动编码扩展和插件。从代码补全到智能重构,用 AI 辅助增强你的开发体验。",
+      "title": "扩展插件"
+    },
+    "ides": {
+      "description": "理解代码库并提供智能辅助的 AI 驱动集成开发环境。从 VS Code 到 Cursor,发现让编码与 AI 协作的编辑器。",
+      "title": "IDE"
+    },
+    "modelProviders": {
+      "description": "提供各种 AI 模型访问的 LLM API 提供商。从 DeepSeek 到 OpenRouter,发现以统一 API 和模型访问为 AI 编码工具提供动力的平台。",
+      "title": "模型提供商"
+    },
+    "models": {
+      "description": "智能层。针对代码生成、理解和分析优化的大型语言模型。对比领先 AI 模型的规格、定价和能力。",
+      "title": "模型"
+    },
+    "overviewTitle": "AI 编码技术栈概览",
+    "slogan": "发现。对比。快 10 倍。",
+    "subtitle": "探索完整的 AI 编码生态系统:IDE、命令行、终端、模型和提供商。",
+    "title": "AI 编码技术栈",
+    "vendors": {
+      "description": "构建 AI 技术的领先公司和组织。从 OpenAI 到 Anthropic,发现 AI 编码革命背后的厂商。",
+      "title": "厂商"
+    }
+  },
+  "vendorDetail": {
+    "allVendors": "所有厂商",
+    "backTo": "返回",
+    "breadcrumb": {
+      "aiCodingStack": "AI 编码技术栈",
+      "home": "首页",
+      "vendors": "厂商"
+    },
+    "categoryLabel": "@:components.productHero.categories.VENDOR",
+    "documentation": "@:components.productHero.documentation",
+    "community": {
+      "blog": {
+        "description": "阅读博客文章",
+        "title": "博客"
+      },
+      "discord": {
+        "description": "加入社区",
+        "title": "Discord"
+      },
+      "github": {
+        "description": "查看仓库",
+        "title": "GitHub"
+      },
+      "linkedin": {
+        "description": "关注我们",
+        "title": "LinkedIn"
+      },
+      "reddit": {
+        "description": "加入讨论",
+        "title": "Reddit"
+      },
+      "twitter": {
+        "description": "关注我们",
+        "title": "X/Twitter"
+      },
+      "youtube": {
+        "description": "观看视频",
+        "title": "YouTube"
+      }
+    },
+    "communityLinks": "社区链接",
+    "connectLinkedIn": "在 LinkedIn 上联系",
+    "discord": "Discord",
+    "followTwitter": "在 X/Twitter 上关注",
+    "github": "GitHub",
+    "indexLabel": "索引",
+    "joinDiscord": "加入 Discord 社区",
+    "joinReddit": "加入 Reddit 社区",
+    "linkedin": "LinkedIn",
+    "metaDescription": "探索 {name} 的 AI 产品和技术。",
+    "metaTitle": "AI 技术厂商 | 公司简介 2025",
+    "models": "模型",
+    "products": "产品",
+    "productsSubtitle": "探索来自 {vendorName} 的产品和服务",
+    "productsTitle": "产品",
+    "quickLinks": "快速链接",
+    "reddit": "Reddit",
+    "twitter": "X/Twitter",
+    "vendorDetails": "厂商详情",
+    "viewGitHub": "查看开源仓库",
+    "visitWebsite": "访问官网",
+    "watchYouTube": "在 YouTube 观看视频",
+    "website": "官网",
+    "youtube": "YouTube"
+  },
+  "vendors": {
+    "search": "按名称搜索...",
+    "subtitle": "构建 AI 技术的领先公司和组织",
+    "title": "厂商"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "articles": {
+    "description": "業界リーダーによる AI コーディングに関する必読記事",
+    "title": "@:shared.common.featuredArticles"
+  },
+  "specifications": {
+    "description": "現代のソフトウェア開発に不可欠な標準とプロトコル",
+    "title": "@:shared.common.specificationsProtocols"
+  },
+  "subtitle": "AI 対応ソフトウェア開発の未来へのビジョン",
+  "title": "@:shared.common.manifesto",
+  "tools": {
+    "description": "AI コーディングワークフロー向けの厳選されたツールとユーティリティ",
+    "title": "@:shared.common.ecosystemTools"
+  }
+}

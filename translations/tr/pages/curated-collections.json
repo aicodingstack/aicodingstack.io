@@ -1,0 +1,16 @@
+{
+  "articles": {
+    "description": "Sektör liderlerinden AI kodlama hakkında mutlaka okunması gereken makaleler",
+    "title": "Öne Çıkan Makaleler"
+  },
+  "specifications": {
+    "description": "Modern yazılım geliştirme için kritik standartlar ve protokoller",
+    "title": "Spesifikasyonlar ve Protokoller"
+  },
+  "subtitle": "AI kodlama için küratörlü kaynaklar, spesifikasyonlar, protokoller ve araçlar",
+  "title": "Küratörlü Koleksiyonlar",
+  "tools": {
+    "description": "AI kodlama iş akışları için küratörlü araçlar ve yardımcı programlar",
+    "title": "Ekosistem Araçları"
+  }
+}

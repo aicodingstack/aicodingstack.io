@@ -1,0 +1,315 @@
+{
+  "cliDetail": {
+    "allCLIs": "@:shared.stacks.allClis",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "clis": "@:shared.stacks.clis"
+    },
+    "categoryLabel": "@:components.productHero.categories.CLI",
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "license": "@:components.productHero.license",
+    "platforms": "@:components.productHero.platforms",
+    "stars": "@:components.productHero.stars",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version",
+    "visitWebsite": "@:components.productHero.visitWebsite"
+  },
+  "clis": {
+    "allCLIs": "@:shared.stacks.allClis",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "Aucune CLI ne correspond à vos filtres",
+    "subtitle": "Assistants de codage en ligne de commande alimentés par l'IA",
+    "title": "@:shared.stacks.clis"
+  },
+  "extensionDetail": {
+    "allExtensions": "@:shared.stacks.allExtensions",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "extensions": "@:shared.stacks.extensions"
+    },
+    "categoryLabel": "@:components.productHero.categories.EXTENSION",
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "license": "@:components.productHero.license",
+    "stars": "@:components.productHero.stars",
+    "supportedIdes": "@:components.productHero.supportedIdes",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version",
+    "visitWebsite": "@:components.productHero.visitWebsite"
+  },
+  "extensions": {
+    "allExtensions": "@:shared.stacks.allExtensions",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "Aucune extension ne correspond à vos filtres",
+    "subtitle": "Extensions et plugins de codage alimentés par l'IA",
+    "title": "@:shared.stacks.extensions"
+  },
+  "ideDetail": {
+    "allIDEs": "@:shared.stacks.allIdes",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "ides": "@:shared.stacks.ides"
+    },
+    "categoryLabel": "@:components.productHero.categories.IDE",
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "license": "@:components.productHero.license",
+    "platforms": "@:components.productHero.platforms",
+    "stars": "@:components.productHero.stars",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version",
+    "visitWebsite": "@:components.productHero.visitWebsite"
+  },
+  "ides": {
+    "allIDEs": "@:shared.stacks.allIdes",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "Aucun IDE ne correspond à vos filtres",
+    "subtitle": "Environnements de développement intégrés améliorés par l'IA",
+    "title": "@:shared.stacks.ides"
+  },
+  "modelDetail": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "Voir l'analyse des performances",
+        "title": "@:shared.platforms.artificialAnalysis"
+      },
+      "huggingface": {
+        "description": "Voir sur HuggingFace",
+        "title": "@:shared.platforms.huggingface"
+      },
+      "openrouter": {
+        "description": "Accéder via OpenRouter",
+        "title": "@:shared.platforms.openrouter"
+      }
+    },
+    "allModels": "@:shared.stacks.allModels",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "models": "@:shared.stacks.models"
+    },
+    "categoryLabel": "@:components.productHero.categories.MODEL",
+    "documentation": "@:components.productHero.documentation",
+    "findOnAiPlatforms": "Trouver sur les plateformes IA",
+    "labels": {
+      "artificialAnalysis": "@:shared.platforms.artificialAnalysis",
+      "context": "Contexte",
+      "documentation": "@:components.productHero.documentation",
+      "huggingface": "@:shared.platforms.huggingface",
+      "maxOutput": "@:shared.common.maxOutput",
+      "openrouter": "@:shared.platforms.openrouter",
+      "pricing": "@:shared.common.pricing",
+      "size": "Taille",
+      "website": "@:shared.common.website"
+    },
+    "license": "@:components.productHero.license",
+    "maxOutput": "@:shared.common.maxOutput",
+    "metaTitle": "Modèle de Codage IA | Specs et Prix 2025",
+    "modelSize": "@:shared.common.modelSize",
+    "pricing": "@:shared.common.pricing",
+    "specifications": "Spécifications",
+    "stars": "@:components.productHero.stars",
+    "contextWindow": "Contexte total",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version",
+    "visitWebsite": "@:components.productHero.visitWebsite",
+    "input": "Entrée",
+    "output": "Sortie",
+    "cache": "Cache",
+    "benchmarks": {
+      "title": "Benchmarks de performance",
+      "sweBench": "SWE-bench Verified",
+      "sweBenchDesc": "Tâches d'ingénierie logicielle du monde réel",
+      "terminalBench": "TerminalBench 2.0",
+      "terminalBenchDesc": "Compétence en interface de ligne de commande",
+      "mmmu": "MMMU",
+      "mmmuDesc": "Compréhension multimodale",
+      "mmmuPro": "MMMU Pro",
+      "mmmuProDesc": "Tâches multimodales avancées",
+      "webDevArena": "WebDevArena",
+      "webDevArenaDesc": "Défis de développement web",
+      "sciCode": "SciCode",
+      "sciCodeDesc": "Génération de code scientifique",
+      "liveCodeBench": "LiveCodeBench",
+      "liveCodeBenchDesc": "Performance de codage en direct"
+    }
+  },
+  "modelProviderDetail": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "Voir l'analyse des performances",
+        "title": "@:shared.platforms.artificialAnalysis"
+      },
+      "huggingface": {
+        "description": "Voir sur HuggingFace",
+        "title": "@:shared.platforms.huggingface"
+      },
+      "openrouter": {
+        "description": "Accéder via OpenRouter",
+        "title": "@:shared.platforms.openrouter"
+      }
+    },
+    "allModelProviders": "@:shared.stacks.allModelProviders",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "modelProviders": "@:shared.stacks.modelProviders"
+    },
+    "categoryLabel": "@:components.productHero.categories.PROVIDER",
+    "community": {
+      "discord": {
+        "description": "Rejoindre la communauté",
+        "title": "@:components.productLinks.discord"
+      },
+      "github": {
+        "description": "Voir les dépôts",
+        "title": "@:components.productLinks.github"
+      },
+      "linkedin": {
+        "description": "@:shared.common.followUs",
+        "title": "@:components.productLinks.linkedin"
+      },
+      "reddit": {
+        "description": "Rejoindre la discussion",
+        "title": "@:components.productLinks.reddit"
+      },
+      "twitter": {
+        "description": "@:shared.common.followUs",
+        "title": "@:components.productLinks.twitter"
+      },
+      "youtube": {
+        "description": "Regarder les vidéos",
+        "title": "@:components.productLinks.youtube"
+      }
+    },
+    "communityLinks": "@:shared.common.communityLinks",
+    "documentation": "@:components.productHero.documentation",
+    "findOnAiPlatforms": "Trouver sur les plateformes IA",
+    "getApiKey": "@:components.productHero.getApiKey",
+    "indexLabel": "@:shared.common.indexLabel",
+    "providerTypes": {
+      "foundation-model-provider": "@:components.productHero.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:components.productHero.providerTypes.model-service-provider"
+    },
+    "type": "@:components.productHero.type",
+    "visitWebsite": "@:components.productHero.visitWebsite"
+  },
+  "modelProviders": {
+    "foundationProviders": "@:components.productHero.providerTypes.foundation-model-provider",
+    "search": "@:components.filterSortBar.search",
+    "serviceProviders": "@:components.productHero.providerTypes.model-service-provider",
+    "subtitle": "Fournisseurs d'API LLM offrant l'accès à divers modèles d'IA",
+    "title": "@:shared.stacks.modelProviders"
+  },
+  "models": {
+    "compareAll": "@:shared.actions.compareAll",
+    "context": "Contexte :",
+    "pricing": "Tarifs :",
+    "search": "@:components.filterSortBar.search",
+    "size": "Taille :",
+    "subtitle": "Grands modèles de langage optimisés pour la génération et l'analyse de code",
+    "title": "@:shared.stacks.models"
+  },
+  "overview": {
+    "clis": {
+      "description": "Assistants IA en ligne de commande qui apportent la puissance des grands modèles de langage directement à votre terminal. Exécutez des tâches complexes en langage naturel, directement depuis votre shell.",
+      "title": "@:shared.stacks.clis"
+    },
+    "exploreStack": "Explorer le Stack",
+    "extensions": {
+      "description": "Extensions et plugins de codage IA pour votre IDE préféré. De la complétion de code au refactoring intelligent, améliorez votre expérience de développement avec l'assistance IA.",
+      "title": "@:shared.stacks.extensions"
+    },
+    "ides": {
+      "description": "Environnements de développement intégrés alimentés par l'IA qui comprennent votre base de code et fournissent une assistance intelligente. De VS Code à Cursor, découvrez les éditeurs qui rendent le codage collaboratif avec l'IA.",
+      "title": "@:shared.stacks.ides"
+    },
+    "modelProviders": {
+      "description": "Fournisseurs d'API LLM offrant l'accès à divers modèles d'IA. De DeepSeek à OpenRouter, découvrez les plateformes qui alimentent vos outils de codage IA avec des API unifiées et l'accès aux modèles.",
+      "title": "@:shared.stacks.modelProviders"
+    },
+    "models": {
+      "description": "La couche d'intelligence. Grands modèles de langage optimisés pour la génération, la compréhension et l'analyse de code. Comparez les spécifications, prix et capacités entre les principaux modèles d'IA.",
+      "title": "@:shared.stacks.models"
+    },
+    "overviewTitle": "Vue d'ensemble de AI Coding Stack",
+    "slogan": "@:shared.common.slogan",
+    "subtitle": "Explorez l'écosystème complet du codage IA : IDE, CLI, extensions, modèles et fournisseurs.",
+    "title": "@:shared.common.aiCodingStack",
+    "vendors": {
+      "description": "Entreprises et organisations de premier plan construisant des technologies IA. D'OpenAI à Anthropic, découvrez les fournisseurs derrière la révolution du codage IA.",
+      "title": "@:shared.stacks.vendors"
+    }
+  },
+  "vendorDetail": {
+    "allVendors": "@:shared.stacks.allVendors",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "home": "Accueil",
+      "vendors": "@:shared.stacks.vendors"
+    },
+    "categoryLabel": "@:components.productHero.categories.VENDOR",
+    "documentation": "@:components.productHero.documentation",
+    "community": {
+      "blog": {
+        "description": "Lire les articles de blog",
+        "title": "Blog"
+      },
+      "discord": {
+        "description": "Rejoindre la communauté",
+        "title": "@:components.productLinks.discord"
+      },
+      "github": {
+        "description": "Voir les dépôts",
+        "title": "@:components.productLinks.github"
+      },
+      "linkedin": {
+        "description": "@:shared.common.followUs",
+        "title": "@:components.productLinks.linkedin"
+      },
+      "reddit": {
+        "description": "Rejoindre la discussion",
+        "title": "@:components.productLinks.reddit"
+      },
+      "twitter": {
+        "description": "@:shared.common.followUs",
+        "title": "@:components.productLinks.twitter"
+      },
+      "youtube": {
+        "description": "Regarder les vidéos",
+        "title": "@:components.productLinks.youtube"
+      }
+    },
+    "communityLinks": "@:shared.common.communityLinks",
+    "connectLinkedIn": "Se connecter sur LinkedIn",
+    "discord": "@:components.productLinks.discord",
+    "followTwitter": "Suivre sur Twitter",
+    "github": "@:components.productLinks.github",
+    "indexLabel": "@:shared.common.indexLabel",
+    "joinDiscord": "Rejoindre la communauté Discord",
+    "joinReddit": "Rejoindre la communauté Reddit",
+    "linkedin": "@:components.productLinks.linkedin",
+    "metaDescription": "Explorez les produits et technologies IA de {name}.",
+    "metaTitle": "Fournisseur de technologie IA | Profil d'entreprise 2025",
+    "models": "@:shared.stacks.models",
+    "products": "@:shared.common.products",
+    "productsSubtitle": "Explorer les produits et services de {vendorName}",
+    "productsTitle": "@:shared.common.products",
+    "quickLinks": "Liens rapides",
+    "reddit": "@:components.productLinks.reddit",
+    "twitter": "@:components.productLinks.twitter",
+    "vendorDetails": "Détails du fournisseur",
+    "viewGitHub": "Voir les dépôts open source",
+    "visitWebsite": "@:components.productHero.visitWebsite",
+    "watchYouTube": "Regarder les vidéos sur YouTube",
+    "website": "@:shared.common.website",
+    "youtube": "@:components.productLinks.youtube"
+  },
+  "vendors": {
+    "search": "@:components.filterSortBar.search",
+    "subtitle": "Entreprises et organisations de premier plan construisant des technologies IA",
+    "title": "@:shared.stacks.vendors"
+  }
+}

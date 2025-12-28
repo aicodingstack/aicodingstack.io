@@ -1,0 +1,47 @@
+{
+  "clis": {
+    "backTo": "CLI'lere geri dön",
+    "subtitle": "AI kodlama CLI araçlarının özelliklerini, fiyatlandırmasını ve spesifikasyonlarını yan yana karşılaştırın.",
+    "title": "CLI Karşılaştırması"
+  },
+  "columns": {
+    "contextLength": "Bağlam Uzunluğu",
+    "freePlan": "Ücretsiz Plan",
+    "githubStars": "@:components.productHero.stars",
+    "license": "@:components.productHero.license",
+    "links": "Bağlantılar",
+    "maxOutput": "@:shared.common.maxOutput",
+    "maxPrice": "Maksimum Fiyat",
+    "modelSize": "@:shared.common.modelSize",
+    "platforms": "@:components.productHero.platforms",
+    "pricing": "@:shared.common.pricing",
+    "startingPrice": "Başlangıç Fiyatı",
+    "supportedIdes": "@:components.productHero.supportedIdes",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version"
+  },
+  "extensions": {
+    "backTo": "Uzantılara geri dön",
+    "subtitle": "AI kodlama uzantılarının özelliklerini, fiyatlandırmasını ve spesifikasyonlarını yan yana karşılaştırın.",
+    "title": "Uzantı Karşılaştırması"
+  },
+  "ides": {
+    "backTo": "IDE'lere geri dön",
+    "subtitle": "AI destekli IDE'lerin özelliklerini, fiyatlandırmasını ve spesifikasyonlarını yan yana karşılaştırın.",
+    "title": "IDE Karşılaştırması"
+  },
+  "linkTitles": {
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "officialWebsite": "@:components.productHero.visitWebsite"
+  },
+  "models": {
+    "backTo": "Modellere geri dön",
+    "subtitle": "AI kodlama modellerinin spesifikasyonlarını ve fiyatlandırmasını yan yana karşılaştırın.",
+    "title": "Model Karşılaştırması"
+  },
+  "pricingValues": {
+    "free": "Ücretsiz",
+    "freeOnly": "Sadece ücretsiz"
+  }
+}

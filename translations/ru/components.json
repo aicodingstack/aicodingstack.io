@@ -1,0 +1,180 @@
+{
+  "backToNavigation": {
+    "backTo": "@:shared.actions.backTo",
+    "indexLabel": "@:shared.common.indexLabel"
+  },
+  "collectionScrollbar": {
+    "articles": "@:shared.common.featuredArticles",
+    "specifications": "@:shared.common.specificationsProtocols",
+    "tools": "@:shared.common.ecosystemTools"
+  },
+  "docsSidebar": {
+    "label": "@:shared.common.documentation",
+    "title": "ДОКУМЕНТАЦИЯ"
+  },
+  "filterSortBar": {
+    "clearFilters": "Очистить фильтры",
+    "license": "Лицензия:",
+    "openSource": "@:shared.common.openSource",
+    "platform": "Платформа:",
+    "proprietary": "@:shared.common.proprietary",
+    "search": "Поиск по названию...",
+    "sort": "Сортировка:",
+    "sortDefault": "По умолчанию",
+    "sortNameAsc": "Название (А-Я)",
+    "sortNameDesc": "Название (Я-А)"
+  },
+  "footer": {
+    "copyright": "© 2025 AI Coding Stack • Создано с ❤︎ • Открытый исходный код",
+    "openSource": "Репозиторий метаданных ИИ-кодирования с открытым исходным кодом.",
+    "selectLanguage": "Выбрать язык",
+    "tagline": "Ваш центр экосистемы ИИ-кодирования.",
+    "toggleTheme": "Переключить тему"
+  },
+  "header": {
+    "aiCodingLandscape": "Ландшафт ИИ-кодирования",
+    "aiCodingLandscapeDesc": "Визуализируйте полную экосистему ИИ-кодирования",
+    "aiCodingStack": "@:shared.common.aiCodingStack",
+    "articles": "@:shared.common.articles",
+    "closeMenu": "Закрыть меню",
+    "collections": "@:shared.common.collections",
+    "developmentTools": "Инструменты разработки",
+    "intelligence": "Интеллект",
+    "landscape": "Ландшафт",
+    "manifesto": "@:shared.common.manifesto",
+    "openMenu": "Открыть меню",
+    "openSourceRank": "Рейтинг Open Source",
+    "openSourceRankDesc": "Исследуйте проекты ИИ-кодирования с открытым исходным кодом по звездам GitHub",
+    "ranking": "Рейтинг",
+    "search": "@:shared.actions.search",
+    "searchPlaceholder": "Поиск...",
+    "toggleMenu": "Переключить меню"
+  },
+  "openSourceRank": {
+    "description": "Откройте для себя и изучите инструменты ИИ-кодирования с открытым исходным кодом, ранжированные по звездам GitHub. Сравните IDE, CLI и расширения, чтобы найти идеальные инструменты для вашего рабочего процесса разработки.",
+    "filter": {
+      "all": "Все"
+    },
+    "meta": {
+      "description": "Рейтинг всех проектов с открытым исходным кодом в AI Coding Stack, отсортированных по звездам GitHub. Просмотр статистики и трендов инструментов с открытым исходным кодом против собственных.",
+      "title": "@:components.openSourceRank.title"
+    },
+    "noResults": "Проектов с открытым исходным кодом для этой категории не найдено.",
+    "note": "Примечание: Эта страница показывает только проекты с репозиториями GitHub. Некоторые проекты, хотя и не являющиеся открытым исходным кодом, поддерживают репозитории GitHub как каналы обратной связи пользователей.",
+    "productType": {
+      "cli": "@:shared.stack.cli",
+      "extension": "@:shared.stack.extension",
+      "ide": "@:shared.stack.ide"
+    },
+    "statistics": {
+      "closedSource": "@:shared.common.proprietary",
+      "closedSourceCount": "Собственные проекты",
+      "closedSourcePercentage": "Процент собственных",
+      "licenseBreakdown": "Распределение лицензий",
+      "openSource": "@:shared.common.openSource",
+      "openSourceCount": "Проекты с открытым исходным кодом",
+      "projects": "проектов",
+      "title": "Распределение Open Source vs Собственного",
+      "totalProjects": "Всего проектов"
+    },
+    "table": {
+      "license": "@:shared.common.license",
+      "name": "Название",
+      "openSourceTitle": "Проекты с открытым исходным кодом ({count})",
+      "proprietaryTitle": "Собственные проекты ({count})",
+      "rank": "Ранг",
+      "stars": "@:shared.common.stars",
+      "type": "@:shared.common.type"
+    },
+    "title": "Рейтинг проектов с открытым исходным кодом"
+  },
+  "productCommands": {
+    "command": "Команда",
+    "install": "Установить",
+    "launch": "Запустить"
+  },
+  "productHero": {
+    "categories": {
+      "CLI": "@:shared.stack.cli",
+      "EXTENSION": "@:shared.stack.extension",
+      "IDE": "@:shared.stack.ide",
+      "MODEL": "@:shared.stack.model",
+      "PROVIDER": "@:shared.stack.modelProvider",
+      "VENDOR": "@:shared.stack.vendor"
+    },
+    "documentation": "@:shared.common.documentation",
+    "download": "@:shared.actions.download",
+    "getApiKey": "Получить API ключ",
+    "license": "@:shared.common.license",
+    "platforms": "Платформы",
+    "providerTypes": {
+      "foundation-model-provider": "Поставщик базовой модели",
+      "model-service-provider": "Поставчик сервиса модели"
+    },
+    "runtime": "Среда выполнения",
+    "stars": "@:shared.common.stars",
+    "supportedIdes": "Поддерживаемые IDE",
+    "type": "@:shared.common.type",
+    "vendor": "@:shared.stack.vendor",
+    "version": "Версия",
+    "visitWebsite": "Посетить сайт"
+  },
+  "productLinks": {
+    "blog": "Блог",
+    "changelog": "Журнал изменений",
+    "community": "@:shared.common.community",
+    "discord": "@:shared.platforms.discord",
+    "download": "@:shared.actions.download",
+    "github": "@:shared.platforms.github",
+    "issue": "Трекер проблем",
+    "linkedin": "@:shared.platforms.linkedin",
+    "mcp": "Документация MCP",
+    "pricing": "@:shared.common.pricing",
+    "reddit": "@:shared.platforms.reddit",
+    "resources": "@:shared.common.resources",
+    "twitter": "@:shared.platforms.twitter",
+    "youtube": "@:shared.platforms.youtube"
+  },
+  "productPricing": {
+    "title": "@:shared.common.pricing",
+    "viewFullDetails": "@:shared.actions.viewFullDetails"
+  },
+  "relatedProducts": {
+    "cli": "CLI",
+    "extension": "Расширение",
+    "ide": "IDE",
+    "title": "Связанные продукты",
+    "viewProduct": "Просмотр продукта"
+  },
+  "search": {
+    "categories": {
+      "clis": "@:shared.stacks.clis",
+      "extensions": "@:shared.stacks.extensions",
+      "ides": "@:shared.stacks.ides",
+      "models": "@:shared.stacks.models",
+      "providers": "@:shared.stacks.modelProviders",
+      "vendors": "@:shared.stacks.vendors"
+    },
+    "navigate": "для навигации",
+    "noResults": "Результаты не найдены",
+    "noResultsFor": "Результаты не найдены для \"{query}\"",
+    "placeholder": "Поиск инструментов ИИ-кодирования...",
+    "resultsCount": "{count} {count, plural, one {результат} many {результатов} other {результата}}",
+    "resultsCountFor": "{count} {count, plural, one {результат} many {результатов} other {результата}} для \"{query}\"",
+    "searching": "Поиск...",
+    "select": "для выбора",
+    "stacks": {
+      "clis": "@:shared.stacks.clis",
+      "extensions": "@:shared.stacks.extensions",
+      "ides": "@:shared.stacks.ides",
+      "modelProviders": "@:shared.stacks.modelProviders",
+      "models": "@:shared.stacks.models",
+      "vendors": "@:shared.stacks.vendors"
+    },
+    "title": "Результаты поиска"
+  },
+  "sidebar": {
+    "backToTop": "@:shared.actions.backToTop",
+    "selectItem": "@:shared.actions.selectItem"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "articles": {
+    "description": "Обязательные статьи о ИИ-кодировании от лидеров отрасли",
+    "title": "@:shared.common.featuredArticles"
+  },
+  "specifications": {
+    "description": "Основные стандарты и протоколы для современной разработки программного обеспечения",
+    "title": "@:shared.common.specificationsProtocols"
+  },
+  "subtitle": "Наше видение будущего разработки программного обеспечения на основе ИИ",
+  "title": "@:shared.common.manifesto",
+  "tools": {
+    "description": "Курированные инструменты и утилиты для рабочих процессов ИИ-кодирования",
+    "title": "@:shared.common.ecosystemTools"
+  }
+}

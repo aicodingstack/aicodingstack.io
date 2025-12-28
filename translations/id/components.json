@@ -1,0 +1,180 @@
+{
+  "backToNavigation": {
+    "backTo": "Kembali ke",
+    "indexLabel": "INDEKS"
+  },
+  "collectionScrollbar": {
+    "articles": "Artikel Pilihan",
+    "specifications": "Spesifikasi & Protokol",
+    "tools": "Alat Ekosistem"
+  },
+  "docsSidebar": {
+    "label": "Dokumentasi",
+    "title": "DOKUMENTASI"
+  },
+  "filterSortBar": {
+    "clearFilters": "Hapus filter",
+    "license": "Lisensi:",
+    "openSource": "Open Source",
+    "platform": "Platform:",
+    "proprietary": "Proprietary",
+    "search": "Cari berdasarkan nama...",
+    "sort": "Urutkan:",
+    "sortDefault": "Default",
+    "sortNameAsc": "Nama (A-Z)",
+    "sortNameDesc": "Nama (Z-A)"
+  },
+  "footer": {
+    "copyright": "© 2025 AI Coding Stack • Dibuat dengan ❤︎ • Open Source",
+    "openSource": "Repositori metadata coding AI open source.",
+    "selectLanguage": "Pilih Bahasa",
+    "tagline": "Pusat Ekosistem Coding AI Anda.",
+    "toggleTheme": "Ubah tema"
+  },
+  "header": {
+    "aiCodingLandscape": "Lanskap Coding AI",
+    "aiCodingLandscapeDesc": "Visualisasikan ekosistem coding AI secara lengkap",
+    "aiCodingStack": "AI Coding Stack",
+    "articles": "Artikel",
+    "closeMenu": "Tutup menu",
+    "collections": "Koleksi",
+    "developmentTools": "Alat Pengembangan",
+    "intelligence": "Kecerdasan",
+    "landscape": "Lanskap",
+    "manifesto": "Manifesto",
+    "openMenu": "Buka menu",
+    "openSourceRank": "Peringkat Open Source",
+    "openSourceRankDesc": "Jelajahi proyek coding AI open source berdasarkan bintang GitHub",
+    "ranking": "Peringkat",
+    "search": "Cari",
+    "searchPlaceholder": "Cari...",
+    "toggleMenu": "Ubah menu"
+  },
+  "openSourceRank": {
+    "description": "Temukan dan jelajahi alat coding AI open source yang diranking berdasarkan bintang GitHub. Bandingkan IDE, CLI, dan ekstensi untuk menemukan alat yang sempurna untuk alur kerja pengembangan Anda.",
+    "filter": {
+      "all": "Semua"
+    },
+    "meta": {
+      "description": "Peringkat semua proyek open source di AI Coding Stack, diurutkan berdasarkan bintang GitHub. Lihat statistik dan tren alat open source vs proprietary.",
+      "title": "Peringkat Proyek Open Source"
+    },
+    "noResults": "Tidak ada proyek open source yang ditemukan untuk kategori ini.",
+    "note": "Catatan: Halaman ini hanya menampilkan proyek dengan repositori GitHub. Beberapa proyek, meskipun tidak open source, mempertahankan repositori GitHub sebagai saluran umpan balik pengguna.",
+    "productType": {
+      "cli": "CLI",
+      "extension": "Ekstensi",
+      "ide": "IDE"
+    },
+    "statistics": {
+      "closedSource": "Proprietary",
+      "closedSourceCount": "Proyek Proprietary",
+      "closedSourcePercentage": "Persentase Proprietary",
+      "licenseBreakdown": "Distribusi Lisensi",
+      "openSource": "Open Source",
+      "openSourceCount": "Proyek Open Source",
+      "projects": "proyek",
+      "title": "Distribusi Open Source vs Proprietary",
+      "totalProjects": "Total Proyek"
+    },
+    "table": {
+      "license": "Lisensi",
+      "name": "Nama",
+      "openSourceTitle": "Proyek Open Source ({count})",
+      "proprietaryTitle": "Proyek Proprietary ({count})",
+      "rank": "Peringkat",
+      "stars": "Bintang",
+      "type": "Tipe"
+    },
+    "title": "Peringkat Proyek Open Source"
+  },
+  "productCommands": {
+    "command": "Perintah",
+    "install": "Instal",
+    "launch": "Mulai"
+  },
+  "productHero": {
+    "categories": {
+      "CLI": "CLI",
+      "EXTENSION": "Ekstensi",
+      "IDE": "IDE",
+      "MODEL": "Model",
+      "PROVIDER": "Penyedia Model",
+      "VENDOR": "Vendor"
+    },
+    "documentation": "Dokumentasi",
+    "download": "Unduh",
+    "getApiKey": "Dapatkan Kunci API",
+    "license": "Lisensi",
+    "platforms": "Platform",
+    "providerTypes": {
+      "foundation-model-provider": "Penyedia Model Foundation",
+      "model-service-provider": "Penyedia Layanan Model"
+    },
+    "runtime": "Runtime",
+    "stars": "Bintang",
+    "supportedIdes": "IDE yang Didukung",
+    "type": "Tipe",
+    "vendor": "Vendor",
+    "version": "Versi",
+    "visitWebsite": "Kunjungi Situs Web"
+  },
+  "productLinks": {
+    "blog": "Blog",
+    "changelog": "Log Perubahan",
+    "community": "Komunitas",
+    "discord": "Discord",
+    "download": "Unduh",
+    "github": "GitHub",
+    "issue": "Pelacak Isu",
+    "linkedin": "LinkedIn",
+    "mcp": "Dokumentasi MCP",
+    "pricing": "Harga",
+    "reddit": "Reddit",
+    "resources": "Sumber Daya",
+    "twitter": "X (Twitter)",
+    "youtube": "YouTube"
+  },
+  "productPricing": {
+    "title": "Harga",
+    "viewFullDetails": "Lihat detail harga lengkap →"
+  },
+  "relatedProducts": {
+    "cli": "CLI",
+    "extension": "Ekstensi",
+    "ide": "IDE",
+    "title": "Produk Terkait",
+    "viewProduct": "Lihat Produk"
+  },
+  "search": {
+    "categories": {
+      "clis": "CLI",
+      "extensions": "Ekstensi",
+      "ides": "IDE",
+      "models": "Model",
+      "providers": "Penyedia Model",
+      "vendors": "Vendor"
+    },
+    "navigate": "untuk menavigasi",
+    "noResults": "Tidak ada hasil yang ditemukan",
+    "noResultsFor": "Tidak ada hasil yang ditemukan untuk \"{query}\"",
+    "placeholder": "Cari alat coding AI...",
+    "resultsCount": "{count} {count, plural, one {hasil} other {hasil}}",
+    "resultsCountFor": "{count} {count, plural, one {hasil} other {hasil}} untuk \"{query}\"",
+    "searching": "Mencari...",
+    "select": "untuk memilih",
+    "stacks": {
+      "clis": "@:shared.stacks.clis",
+      "extensions": "@:shared.stacks.extensions",
+      "ides": "@:shared.stacks.ides",
+      "modelProviders": "@:shared.stacks.modelProviders",
+      "models": "@:shared.stacks.models",
+      "vendors": "@:shared.stacks.vendors"
+    },
+    "title": "Hasil Pencarian"
+  },
+  "sidebar": {
+    "backToTop": "Kembali ke atas",
+    "selectItem": "Pilih item"
+  }
+}

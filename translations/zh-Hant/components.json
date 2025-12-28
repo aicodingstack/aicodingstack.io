@@ -1,0 +1,180 @@
+{
+  "backToNavigation": {
+    "backTo": "返回",
+    "indexLabel": "索引"
+  },
+  "collectionScrollbar": {
+    "articles": "精選文章",
+    "specifications": "規範與協議",
+    "tools": "生態系統工具"
+  },
+  "docsSidebar": {
+    "label": "文檔",
+    "title": "文檔"
+  },
+  "filterSortBar": {
+    "clearFilters": "清除篩選",
+    "license": "許可證:",
+    "openSource": "開源",
+    "platform": "平台:",
+    "proprietary": "專有",
+    "search": "按名稱搜尋...",
+    "sort": "排序:",
+    "sortDefault": "默認",
+    "sortNameAsc": "名稱 (A-Z)",
+    "sortNameDesc": "名稱 (Z-A)"
+  },
+  "footer": {
+    "copyright": "© 2025 AI Coding Stack • 用 ❤︎ 構建 • 開源",
+    "openSource": "開源 AI 編程元數據倉庫。",
+    "selectLanguage": "選擇語言",
+    "tagline": "您的 AI 編程生態中心。",
+    "toggleTheme": "切換主題"
+  },
+  "header": {
+    "aiCodingLandscape": "AI 編程全景圖",
+    "aiCodingLandscapeDesc": "可視化 AI 編程生態系統全貌",
+    "aiCodingStack": "AI Coding Stack",
+    "articles": "文章",
+    "closeMenu": "關閉選單",
+    "collections": "精選集合",
+    "developmentTools": "開發工具",
+    "intelligence": "智能層",
+    "landscape": "全景圖",
+    "manifesto": "宣言",
+    "openMenu": "打開選單",
+    "openSourceRank": "開源排行榜",
+    "openSourceRankDesc": "按 GitHub 星標數開源探索 AI 編程專案",
+    "ranking": "排行榜",
+    "search": "搜尋",
+    "searchPlaceholder": "搜尋...",
+    "toggleMenu": "切換選單"
+  },
+  "openSourceRank": {
+    "description": "探索按 GitHub 星標數排名的開源 AI 編程工具。比較 IDE、CLI 和擴充功能，找到適合您開發工作流程的完美工具。",
+    "filter": {
+      "all": "全部"
+    },
+    "meta": {
+      "description": "AI Coding Stack 中所有開源專案的排行榜，按 GitHub 星標數排序。查看開源與專有工具的統計和趨勢。",
+      "title": "開源專案排行榜"
+    },
+    "noResults": "該分類下未找到開源專案。",
+    "note": "注意：此頁面僅顯示有 GitHub 位址的專案。部分專案雖未開源，但會創建 GitHub 倉庫作為用戶反饋入口。",
+    "productType": {
+      "cli": "CLI",
+      "extension": "擴充功能",
+      "ide": "IDE"
+    },
+    "statistics": {
+      "closedSource": "閉源",
+      "closedSourceCount": "閉源專案",
+      "closedSourcePercentage": "閉源佔比",
+      "licenseBreakdown": "協議分佈",
+      "openSource": "開源",
+      "openSourceCount": "開源專案",
+      "projects": "個專案",
+      "title": "開源與閉源分佈",
+      "totalProjects": "專案總數"
+    },
+    "table": {
+      "license": "開源協議",
+      "name": "名稱",
+      "openSourceTitle": "開源專案 ({count})",
+      "proprietaryTitle": "閉源專案 ({count})",
+      "rank": "排名",
+      "stars": "星標數",
+      "type": "類型"
+    },
+    "title": "開源專案排行榜"
+  },
+  "productCommands": {
+    "command": "命令",
+    "install": "安裝",
+    "launch": "啟動"
+  },
+  "productHero": {
+    "categories": {
+      "CLI": "命令列",
+      "EXTENSION": "擴充插件",
+      "IDE": "IDE",
+      "MODEL": "模型",
+      "PROVIDER": "模型提供者",
+      "VENDOR": "廠商"
+    },
+    "documentation": "文檔",
+    "download": "下載",
+    "getApiKey": "獲取 API 密鑰",
+    "license": "許可證",
+    "platforms": "平台",
+    "providerTypes": {
+      "foundation-model-provider": "基礎模型提供者",
+      "model-service-provider": "模型服務提供者"
+    },
+    "runtime": "運行時",
+    "stars": "星標數",
+    "supportedIdes": "支援的 IDE",
+    "type": "類型",
+    "vendor": "廠商",
+    "version": "版本",
+    "visitWebsite": "訪問官網"
+  },
+  "productLinks": {
+    "blog": "博客",
+    "changelog": "更新日誌",
+    "community": "社群",
+    "discord": "Discord",
+    "download": "下載",
+    "github": "GitHub",
+    "issue": "問題追蹤",
+    "linkedin": "LinkedIn",
+    "mcp": "MCP 文檔",
+    "pricing": "定價",
+    "reddit": "Reddit",
+    "resources": "資源",
+    "twitter": "X (Twitter)",
+    "youtube": "YouTube"
+  },
+  "productPricing": {
+    "title": "定價",
+    "viewFullDetails": "查看完整定價詳情 →"
+  },
+  "relatedProducts": {
+    "cli": "CLI",
+    "extension": "擴充功能",
+    "ide": "IDE",
+    "title": "相關產品",
+    "viewProduct": "查看產品"
+  },
+  "search": {
+    "categories": {
+      "clis": "命令列工具",
+      "extensions": "擴充功能",
+      "ides": "IDE",
+      "models": "模型",
+      "providers": "模型提供者",
+      "vendors": "供應商"
+    },
+    "navigate": "導航",
+    "noResults": "未找到結果",
+    "noResultsFor": "未找到\"{query}\"的結果",
+    "placeholder": "搜尋 AI 編程工具...",
+    "resultsCount": "{count} 個結果",
+    "resultsCountFor": "找到 {count} 個\"{query}\"的結果",
+    "searching": "搜尋中...",
+    "select": "選擇",
+    "stacks": {
+      "clis": "@:shared.stacks.clis",
+      "extensions": "@:shared.stacks.extensions",
+      "ides": "@:shared.stacks.ides",
+      "modelProviders": "@:shared.stacks.modelProviders",
+      "models": "@:shared.stacks.models",
+      "vendors": "@:shared.stacks.vendors"
+    },
+    "title": "搜尋結果"
+  },
+  "sidebar": {
+    "backToTop": "返回頂部",
+    "selectItem": "選擇一個項目"
+  }
+}

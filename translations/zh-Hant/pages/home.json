@@ -1,0 +1,32 @@
+{
+  "description": "探索和比較 AI 編碼工具：IDE、CLI、擴充功能、模型和提供者 — 全在一個平台。",
+  "exploreTools": "探索工具",
+  "faq": "常見問題",
+  "features": {
+    "comparison": {
+      "description": "並排比較工具的詳細規格、定價和功能。做出明智決策，選擇最適合您工作流程的 AI 編碼工具。",
+      "title": "智慧比較"
+    },
+    "directory": {
+      "description": "探索精心整理的 AI 編碼工具集合，涵蓋 IDE、CLI、擴充功能、模型和提供者。一站式獲取，持續更新。",
+      "title": "綜合目錄"
+    },
+    "ecosystem": {
+      "description": "透過互動式全景視圖視覺化完整的 AI 編碼生態系統。了解不同工具、模型和提供者如何連接和互補。",
+      "title": "生態全景"
+    },
+    "title": "核心功能",
+    "tracking": {
+      "description": "及時了解 AI 編碼領域的最新發展、版本和更新。追蹤新版本發布、功能添加和生態系統變化。",
+      "title": "進度追蹤"
+    }
+  },
+  "meta": {
+    "description": "AI 編碼工具綜合目錄。發現、比較和探索 IDE、CLI、擴充功能、模型和提供者。",
+    "name": "AI Coding Stack",
+    "title": "AI Coding Stack - 您的 AI 編碼生態中心"
+  },
+  "readDocs": "閱讀文檔",
+  "subtitle": "發現、比較、更快構建。",
+  "title": "您的 AI 編碼生態中心"
+}
