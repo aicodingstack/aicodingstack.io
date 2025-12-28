@@ -1,0 +1,79 @@
+---
+title: 'Başlarken'
+---
+
+# Başlarken
+
+AI Coding Stack, AI kodlama ekosistemi için kapsamlı bir dizin ve meta veri deposudur. Bu kılavuz, web sitesini nasıl kullanacağınızı ve projeye nasıl katkıda bulunacağınızı anlamanıza yardımcı olacaktır.
+
+## Stack'i Keşfetme
+
+### Kategorilere Göz Atın
+
+Farklı AI kodlama aracı kategorilerini keşfetmek için [aicodingstack.io](https://aicodingstack.io) adresini ziyaret edin:
+
+- **IDEs** - AI destekli entegre geliştirme ortamları bulun (VS Code, Cursor, TRAE)
+- **CLIs** - Komut satırı AI kodlama asistanlarını keşfedin (Codex, Claude Code)
+- **Models** - Kodlama için büyük dil modellerini karşılaştırın (Kimi K2, DeepSeek V3.1, GLM 4.5, Qwen3 Coder)
+- **Providers** - LLM API sağlayıcılarını inceleyin (DeepSeek, Moonshot, SiliconFlow, OpenRouter)
+
+### Araçları Karşılaştırın
+
+Web sitesini kullanarak farklı araçları yan yana karşılaştırın, özelliklerini, yeteneklerini ve resmi belge bağlantılarını inceleyin.
+
+## Meta Verilere Katkıda Bulunma
+
+AI Coding Stack topluluk tarafından bakılır. Manifest dosyalarımıza yeni araçlar ekleyerek veya mevcut girdileri güncelleyerek katkıda bulunabilirsiniz.
+
+### Manifestleri Anlama
+
+Tüm araç meta verileri `manifests/` dizini altındaki JSON dosyalarında saklanır:
+
+- `ides.json` - IDE meta verileri
+- `clis.json` - CLI aracı meta verileri
+- `models.json` - LLM modeli meta verileri
+- `providers.json` - API sağlayıcısı meta verileri
+
+### Yeni Bir Araç Ekleme
+
+1. Depoyu klonlayın
+2. `manifests/` içinde uygun manifest dosyasını bulun
+3. Mevcut şemayı takip ederek girdinizi ekleyin
+4. Tüm URL'lerin erişilebilir olduğundan emin olun
+5. Pull request gönderin
+
+### Manifest Şeması Örnekleri
+
+**IDEs/CLIs için:**
+```json
+{
+  "name": "Araç Adı",
+  "id": "tool-id",
+  "vendor": "Satıcı Adı",
+  "description": "Kısa açıklama",
+  "websiteUrl": "https://...",
+  "docsUrl": "https://...",
+  "latestVersion": "1.0.0"
+}
+```
+
+**Models için:**
+```json
+{
+  "name": "Model Adı",
+  "vendor": "Satıcı",
+  "id": "model-id",
+  "size": "70B",
+  "contextWindow": 128000,
+  "maxOutput": 4096,
+  "pricing": {...},
+  "urls": {...}
+}
+```
+
+## Sonraki Adımlar
+
+- Araçları keşfetmek için [AI Coding Stack](/ai-coding-stack) sayfasını gözden geçirin
+- Meta verilerin nasıl yapılandırıldığını görmek için `manifests/` dizinini kontrol edin
+- Detaylı katkı yönergeleri için [CLAUDE.md](https://github.com/aicodingstack/aicodingstack.io/blob/main/CLAUDE.md) dosyasını okuyun
+- Dizini büyütmeye yardımcı olmak için ilk katkınızı gönderin

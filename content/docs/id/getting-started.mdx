@@ -1,0 +1,79 @@
+---
+title: 'Memulai'
+---
+
+# Memulai
+
+AI Coding Stack adalah direktori komprehensif dan repositori metadata untuk ekosistem coding AI. Panduan ini akan membantu Anda memahami cara menggunakan situs web dan berkontribusi pada proyek.
+
+## Mengeksplorasi Stack
+
+### Jelajahi Kategori
+
+Kunjungi [aicodingstack.io](https://aicodingstack.io) untuk menjelajahi berbagai kategori alat coding AI:
+
+- **IDEs** - Temukan lingkungan pengembangan terintegrasi berbasis AI (VS Code, Cursor, TRAE)
+- **CLIs** - Jelajahi asisten coding AI baris perintah (Codex, Claude Code)
+- **Models** - Bandingkan model bahasa besar untuk coding (Kimi K2, DeepSeek V3.1, GLM 4.5, Qwen3 Coder)
+- **Providers** - Tinjau penyedia API LLM (DeepSeek, Moonshot, SiliconFlow, OpenRouter)
+
+### Bandingkan Alat
+
+Gunakan situs web untuk membandingkan alat yang berbeda secara berdampingan, meninjau fitur, kapabilitas, dan tautan dokumentasi resmi mereka.
+
+## Berkontribusi ke Metadata
+
+AI Coding Stack dikelola komunitas. Anda dapat berkontribusi dengan menambahkan alat baru atau memperbarui entri yang ada dalam file manifest kami.
+
+## Memahami Manifest
+
+Semua metadata alat disimpan dalam file JSON di direktori `manifests/`:
+
+- `ides.json` - Metadata IDE
+- `clis.json` - Metadata alat CLI
+- `models.json` - Metadata model LLM
+- `providers.json` - Metadata penyedia API
+
+### Menambahkan Alat Baru
+
+1. Clone repositori
+2. Temukan file manifest yang sesuai di `manifests/`
+3. Tambahkan entri Anda mengikuti skema yang ada
+4. Pastikan semua URL dapat diakses
+5. Kirim pull request
+
+### Contoh Skema Manifest
+
+**Untuk IDEs/CLIs:**
+```json
+{
+  "name": "Nama Alat",
+  "id": "tool-id",
+  "vendor": "Nama Vendor",
+  "description": "Deskripsi singkat",
+  "websiteUrl": "https://...",
+  "docsUrl": "https://...",
+  "latestVersion": "1.0.0"
+}
+```
+
+**Untuk Models:**
+```json
+{
+  "name": "Nama Model",
+  "vendor": "Vendor",
+  "id": "model-id",
+  "size": "70B",
+  "contextWindow": 128000,
+  "maxOutput": 4096,
+  "pricing": {...},
+  "urls": {...}
+}
+```
+
+## Langkah Selanjutnya
+
+- Jelajahi [AI Coding Stack](/ai-coding-stack) untuk menemukan alat
+- Periksa direktori `manifests/` untuk melihat struktur metadata
+- Baca [CLAUDE.md](https://github.com/aicodingstack/aicodingstack.io/blob/main/CLAUDE.md) untuk pedoman kontribusi terperinci
+- Kirim kontribusi pertama Anda untuk membantu mengembangkan direktori
