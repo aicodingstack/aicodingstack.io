@@ -1,14 +1,12 @@
 #!/usr/bin/env node
 
 /**
- * Translate language file with Claude Code assistance
+ * Translate locale files with Claude Code assistance
  *
  * This script:
- * 1. Reads locales/en.json and locales/<locale>.json
+ * 1. Reads all JSON files from translations/en/ and translations/<locale>/
  * 2. Identifies keys that need translation (currently in English)
  * 3. Outputs translation tasks for Claude Code to perform
- * 4. Reads translated content from stdin
- * 5. Updates the target language file
  */
 
 import fs from 'node:fs'
@@ -31,8 +29,8 @@ const colors = {
 
 // Get project root (4 levels up from .claude/skills/i18n/scripts/)
 const PROJECT_ROOT = path.resolve(__dirname, '../../../../')
-const LOCALES_DIR = path.join(PROJECT_ROOT, 'locales')
-const EN_FILE = path.join(LOCALES_DIR, 'en.json')
+const TRANSLATIONS_DIR = path.join(PROJECT_ROOT, 'translations')
+const EN_DIR = path.join(TRANSLATIONS_DIR, 'en')
 
 // Locale display names
 const LOCALE_NAMES = {
@@ -45,6 +43,32 @@ const LOCALE_NAMES = {
   es: 'Español (Spanish)',
   pt: 'Português (Portuguese)',
   ru: 'Русский (Russian)',
+  id: 'Bahasa Indonesia (Indonesian)',
+  tr: 'Türkçe (Turkish)',
+}
+
+/**
+ * Get all JSON files in a directory recursively
+ * @param {string} dir - Directory to scan
+ * @returns {string[]} Array of relative JSON file paths
+ */
+function getJsonFiles(dir) {
+  const files = []
+
+  function traverse(currentDir, relativePath = '') {
+    const entries = fs.readdirSync(currentDir, { withFileTypes: true })
+
+    for (const entry of entries) {
+      if (entry.isDirectory()) {
+        traverse(path.join(currentDir, entry.name), path.join(relativePath, entry.name))
+      } else if (entry.isFile() && entry.name.endsWith('.json')) {
+        files.push(path.join(relativePath, entry.name))
+      }
+    }
+  }
+
+  traverse(dir)
+  return files
 }
 
 /**
@@ -105,35 +129,55 @@ function setValueByPath(obj, path, value) {
  */
 function isLikelyEnglish(text) {
   if (typeof text !== 'string') return false
-  // Check if contains English letters (excluding URLs, placeholders)
+  // Check if contains English letters (excluding URLs, placeholders, and references)
   const cleanText = text
     .replace(/https?:\/\/[^\s]+/g, '') // Remove URLs
     .replace(/\{[^}]+\}/g, '') // Remove {placeholders}
     .replace(/\$\{[^}]+\}/g, '') // Remove ${variables}
+    .replace(/@[:.][^\s]+/g, '') // Remove @:reference and @.modifier:reference
+    .replace(/<[^>]+>/g, '') // Remove <html> tags
 
   // If after cleaning, contains English letters, it's likely English
   return /[a-zA-Z]{2,}/.test(cleanText)
 }
 
 /**
- * Find entries that need translation
- * @param {Object} enData - English reference data
- * @param {Object} targetData - Target language data
- * @returns {Array<{key: string, enValue: string}>} Entries needing translation
+ * Find entries that need translation across all JSON files
+ * @param {string} locale - Target locale code
+ * @returns {Array<{file: string, key: string, enValue: string, targetValue: string}>} Entries needing translation
  */
-function findTranslationNeeded(enData, targetData) {
-  const enEntries = getAllEntries(enData)
+function findTranslationNeeded(locale) {
+  const targetDir = path.join(TRANSLATIONS_DIR, locale)
+  const jsonFiles = getJsonFiles(EN_DIR)
   const needsTranslation = []
 
-  for (const { key, value: enValue } of enEntries) {
-    const targetValue = getValueByPath(targetData, key)
+  for (const relativePath of jsonFiles) {
+    const enFile = path.join(EN_DIR, relativePath)
+    const targetFile = path.join(targetDir, relativePath)
 
-    // Need translation if:
-    // 1. Value is missing in target
-    // 2. Value in target is same as English (not translated yet)
-    // 3. Value in target still contains significant English text
-    if (!targetValue || targetValue === enValue || isLikelyEnglish(targetValue)) {
-      needsTranslation.push({ key, enValue })
+    if (!fs.existsSync(targetFile)) {
+      // File doesn't exist, all entries need translation
+      const enData = JSON.parse(fs.readFileSync(enFile, 'utf-8'))
+      const enEntries = getAllEntries(enData)
+      for (const { key, value: enValue } of enEntries) {
+        needsTranslation.push({ file: relativePath, key, enValue, targetValue: null })
+      }
+    } else {
+      const enData = JSON.parse(fs.readFileSync(enFile, 'utf-8'))
+      const targetData = JSON.parse(fs.readFileSync(targetFile, 'utf-8'))
+      const enEntries = getAllEntries(enData)
+
+      for (const { key, value: enValue } of enEntries) {
+        const targetValue = getValueByPath(targetData, key)
+
+        // Need translation if:
+        // 1. Value is missing in target
+        // 2. Value in target is same as English (not translated yet)
+        // 3. Value in target still contains significant English text
+        if (!targetValue || targetValue === enValue || isLikelyEnglish(targetValue)) {
+          needsTranslation.push({ file: relativePath, key, enValue, targetValue })
+        }
+      }
     }
   }
 
@@ -148,6 +192,13 @@ function findTranslationNeeded(enData, targetData) {
 function displayTranslationTask(locale, entries) {
   const localeName = LOCALE_NAMES[locale] || locale
 
+  // Group entries by file for better context
+  const byFile = {}
+  for (const entry of entries) {
+    if (!byFile[entry.file]) byFile[entry.file] = []
+    byFile[entry.file].push(entry)
+  }
+
   console.log(`${colors.cyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${colors.reset}`)
   console.log(`${colors.magenta}📝 Translation Task${colors.reset}`)
   console.log(`${colors.cyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${colors.reset}\n`)
@@ -155,23 +206,23 @@ function displayTranslationTask(locale, entries) {
   console.log(`${colors.blue}Target Language:${colors.reset} ${localeName}`)
   console.log(`${colors.blue}Entries to translate:${colors.reset} ${entries.length}\n`)
 
+  console.log(`${colors.yellow}Files affected:${colors.reset}`)
+  for (const [file, fileEntries] of Object.entries(byFile)) {
+    console.log(`  - ${colors.blue}${file}${colors.reset}: ${fileEntries.length} entries`)
+  }
+  console.log('')
+
   console.log(`${colors.yellow}⚠ Translation Guidelines:${colors.reset}`)
   console.log(`  1. Preserve brand names: "AI Coding Stack", "Claude Code", etc.`)
   console.log(`  2. Keep placeholders intact: {count}, {name}, \${variable}`)
   console.log(`  3. Don't translate URLs and file paths`)
-  console.log(`  4. Maintain consistent terminology throughout\n`)
+  console.log(`  4. Maintain consistent terminology throughout`)
+  console.log(`  5. Preserve reference syntax: @:path.to.key${colors.reset}\n`)
 
   console.log(`${colors.green}Content to translate:${colors.reset}\n`)
   console.log(`${colors.cyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${colors.reset}\n`)
 
-  // Group entries by top-level section for better context
-  const sections = {}
-  for (const { key, enValue } of entries) {
-    const section = key.split('.')[0]
-    if (!sections[section]) sections[section] = []
-    sections[section].push({ key, enValue })
-  }
-
+  // Output as grouped JSON with file context
   console.log('```json')
   const translationMap = {}
   for (const { key, enValue } of entries) {
@@ -182,31 +233,73 @@ function displayTranslationTask(locale, entries) {
 
   console.log(`${colors.cyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${colors.reset}\n`)
   console.log(`${colors.yellow}👉 Next Steps:${colors.reset}`)
-  console.log(`  1. Copy the JSON above`)
-  console.log(`  2. Translate each value to ${localeName}`)
-  console.log(`  3. Reply with the translated JSON`)
-  console.log(`  4. The script will automatically update ${locale}.json\n`)
+  console.log(`  1. Translate each value in the JSON above to ${localeName}`)
+  console.log(`  2. Reply with the translated JSON in the same format`)
+  console.log(`  3. The script will apply the translations to the appropriate files\n`)
 }
 
 /**
- * Apply translations to target file
- * @param {string} targetFile - Target language file path
+ * Apply translations to target locale files
+ * @param {string} locale - Target locale code
  * @param {Object} translations - Translation map {key: translatedValue}
- * @returns {number} Number of translations applied
+ * @returns {Object} Application report
  */
-function _applyTranslations(targetFile, translations) {
-  const targetData = JSON.parse(fs.readFileSync(targetFile, 'utf-8'))
-  let count = 0
-
-  for (const [key, value] of Object.entries(translations)) {
-    setValueByPath(targetData, key, value)
-    count++
+function _applyTranslations(locale, translations) {
+  const targetDir = path.join(TRANSLATIONS_DIR, locale)
+  const jsonFiles = getJsonFiles(EN_DIR)
+  const report = {
+    filesUpdated: [],
+    totalKeys: 0,
   }
 
-  // Write back with consistent formatting
-  fs.writeFileSync(targetFile, `${JSON.stringify(targetData, null, 2)}\n`, 'utf-8')
+  // Group translations by file
+  const translationsByFile = {}
+  for (const jsonFile of jsonFiles) {
+    translationsByFile[jsonFile] = {}
+  }
 
-  return count
+  // Read English files to map keys to files
+  for (const relativePath of jsonFiles) {
+    const enFile = path.join(EN_DIR, relativePath)
+    const enData = JSON.parse(fs.readFileSync(enFile, 'utf-8'))
+    const enEntries = getAllEntries(enData)
+
+    for (const { key } of enEntries) {
+      if (key in translations) {
+        translationsByFile[relativePath][key] = translations[key]
+      }
+    }
+  }
+
+  // Apply translations to each file
+  for (const [relativePath, fileTranslations] of Object.entries(translationsByFile)) {
+    if (Object.keys(fileTranslations).length === 0) continue
+
+    const targetFile = path.join(targetDir, relativePath)
+    const targetData = fs.existsSync(targetFile)
+      ? JSON.parse(fs.readFileSync(targetFile, 'utf-8'))
+      : {}
+
+    let count = 0
+    for (const [key, value] of Object.entries(fileTranslations)) {
+      setValueByPath(targetData, key, value)
+      count++
+    }
+
+    // Ensure directory exists
+    const targetDirPath = path.dirname(targetFile)
+    if (!fs.existsSync(targetDirPath)) {
+      fs.mkdirSync(targetDirPath, { recursive: true })
+    }
+
+    // Write back with consistent formatting
+    fs.writeFileSync(targetFile, `${JSON.stringify(targetData, null, 2)}\n`, 'utf-8')
+
+    report.filesUpdated.push(relativePath)
+    report.totalKeys += count
+  }
+
+  return report
 }
 
 /**
@@ -228,33 +321,19 @@ function main() {
     process.exit(1)
   }
 
-  const targetFile = path.join(LOCALES_DIR, `${locale}.json`)
-
   console.log(`${colors.cyan}🌐 Translation Assistant for ${locale}${colors.reset}\n`)
 
-  // Check files exist
-  if (!fs.existsSync(EN_FILE)) {
-    console.error(`${colors.red}✗ English reference file not found: ${EN_FILE}${colors.reset}`)
+  // Check English directory exists
+  if (!fs.existsSync(EN_DIR)) {
+    console.error(`${colors.red}✗ English directory not found: ${EN_DIR}${colors.reset}`)
     process.exit(1)
   }
-
-  if (!fs.existsSync(targetFile)) {
-    console.error(`${colors.red}✗ Target language file not found: ${targetFile}${colors.reset}`)
-    console.error(`${colors.yellow}💡 Tip: Run sync first to create the file${colors.reset}`)
-    process.exit(1)
-  }
-
-  // Load data
-  const enData = JSON.parse(fs.readFileSync(EN_FILE, 'utf-8'))
-  const targetData = JSON.parse(fs.readFileSync(targetFile, 'utf-8'))
 
   // Find entries needing translation
-  const toTranslate = findTranslationNeeded(enData, targetData)
+  const toTranslate = findTranslationNeeded(locale)
 
   if (toTranslate.length === 0) {
-    console.log(
-      `${colors.green}✓ All entries in ${locale}.json are already translated!${colors.reset}`
-    )
+    console.log(`${colors.green}✓ All entries in ${locale}/ are already translated!${colors.reset}`)
     return
   }
 
