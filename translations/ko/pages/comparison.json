@@ -1,8 +1,8 @@
 {
   "clis": {
     "backTo": "CLI로 돌아가기",
-    "subtitle": "AI 코딩 CLI 도구의 기능, 가격 및 사양을 나란히 비교하세요.",
-    "title": "CLI 비교"
+    "subtitle": "AI 기반 명령줄 코딩 어시스턴트",
+    "title": "@:shared.stacks.clis"
   },
   "columns": {
     "contextLength": "컨텍스트 길이",
@@ -16,19 +16,19 @@
     "platforms": "플랫폼",
     "pricing": "가격",
     "startingPrice": "시작 가격",
-    "supportedIdes": "지원되는 IDE",
+    "supportedIdes": "@:components.productHero.supportedIdes",
     "vendor": "벤더",
     "version": "버전"
   },
   "extensions": {
     "backTo": "확장 프로그램으로 돌아가기",
-    "subtitle": "AI 코딩 확장 프로그램의 기능, 가격 및 사양을 나란히 비교하세요.",
+    "subtitle": "AI 기반 코딩 확장 프로그램 및 플러그인",
     "title": "확장 프로그램 비교"
   },
   "ides": {
     "backTo": "IDE로 돌아가기",
-    "subtitle": "AI 기반 IDE의 기능, 가격 및 사양을 나란히 비교하세요.",
-    "title": "IDE 비교"
+    "subtitle": "AI 강화 통합 개발 환경",
+    "title": "@:shared.stacks.ides"
   },
   "linkTitles": {
     "documentation": "문서",
@@ -37,7 +37,7 @@
   },
   "models": {
     "backTo": "모델로 돌아가기",
-    "subtitle": "AI 코딩 모델의 사양 및 가격을 나란히 비교하세요.",
+    "subtitle": "AI 코딩 모델의 사양과 가격을 나란히 비교하세요.",
     "title": "모델 비교"
   },
   "pricingValues": {

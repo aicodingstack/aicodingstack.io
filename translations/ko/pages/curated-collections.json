@@ -1,14 +1,14 @@
 {
   "articles": {
-    "description": "업계 리더들의 AI 코딩에 관한 필독 아티클",
+    "description": "업계 리더들의 AI 코딩에 관한 필독 기사",
     "title": "추천 아티클"
   },
   "specifications": {
     "description": "현대 소프트웨어 개발을 위한 필수 표준 및 프로토콜",
     "title": "사양 및 프로토콜"
   },
-  "subtitle": "AI 코딩을 위한 엄선된 리소스, 사양, 프로토콜 및 도구",
-  "title": "큐레이션 컬렉션",
+  "subtitle": "AI 기반 소프트웨어 개발의 미래에 대한 비전",
+  "title": "당신의 AI 코딩 생태계 허브",
   "tools": {
     "description": "AI 코딩 워크플로우를 위한 큐레이션된 도구 및 유틸리티",
     "title": "생태계 도구"
