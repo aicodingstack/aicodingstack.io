@@ -36,13 +36,45 @@ const docComponents: Record<
     'getting-started': () => import('@content/docs/de/getting-started.mdx'),
     welcome: () => import('@content/docs/de/welcome.mdx'),
   },
-  'zh-Hans': {
-    'getting-started': () => import('@content/docs/zh-Hans/getting-started.mdx'),
-    welcome: () => import('@content/docs/zh-Hans/welcome.mdx'),
+  es: {
+    'getting-started': () => import('@content/docs/es/getting-started.mdx'),
+    welcome: () => import('@content/docs/es/welcome.mdx'),
+  },
+  fr: {
+    'getting-started': () => import('@content/docs/fr/getting-started.mdx'),
+    welcome: () => import('@content/docs/fr/welcome.mdx'),
+  },
+  id: {
+    'getting-started': () => import('@content/docs/id/getting-started.mdx'),
+    welcome: () => import('@content/docs/id/welcome.mdx'),
+  },
+  ja: {
+    'getting-started': () => import('@content/docs/ja/getting-started.mdx'),
+    welcome: () => import('@content/docs/ja/welcome.mdx'),
   },
   ko: {
     'getting-started': () => import('@content/docs/ko/getting-started.mdx'),
     welcome: () => import('@content/docs/ko/welcome.mdx'),
+  },
+  pt: {
+    'getting-started': () => import('@content/docs/pt/getting-started.mdx'),
+    welcome: () => import('@content/docs/pt/welcome.mdx'),
+  },
+  ru: {
+    'getting-started': () => import('@content/docs/ru/getting-started.mdx'),
+    welcome: () => import('@content/docs/ru/welcome.mdx'),
+  },
+  tr: {
+    'getting-started': () => import('@content/docs/tr/getting-started.mdx'),
+    welcome: () => import('@content/docs/tr/welcome.mdx'),
+  },
+  'zh-Hans': {
+    'getting-started': () => import('@content/docs/zh-Hans/getting-started.mdx'),
+    welcome: () => import('@content/docs/zh-Hans/welcome.mdx'),
+  },
+  'zh-Hant': {
+    'getting-started': () => import('@content/docs/zh-Hant/getting-started.mdx'),
+    welcome: () => import('@content/docs/zh-Hant/welcome.mdx'),
   },
 }
 

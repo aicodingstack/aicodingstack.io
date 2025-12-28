@@ -9,8 +9,16 @@ export async function getManifestoComponent(locale: string = 'en'): Promise<Reac
   const components: Record<string, () => Promise<{ default: React.ComponentType }>> = {
     en: () => import('@content/manifesto/en/index.mdx'),
     de: () => import('@content/manifesto/de/index.mdx'),
-    'zh-Hans': () => import('@content/manifesto/zh-Hans/index.mdx'),
+    es: () => import('@content/manifesto/es/index.mdx'),
+    fr: () => import('@content/manifesto/fr/index.mdx'),
+    id: () => import('@content/manifesto/id/index.mdx'),
+    ja: () => import('@content/manifesto/ja/index.mdx'),
     ko: () => import('@content/manifesto/ko/index.mdx'),
+    pt: () => import('@content/manifesto/pt/index.mdx'),
+    ru: () => import('@content/manifesto/ru/index.mdx'),
+    tr: () => import('@content/manifesto/tr/index.mdx'),
+    'zh-Hans': () => import('@content/manifesto/zh-Hans/index.mdx'),
+    'zh-Hant': () => import('@content/manifesto/zh-Hant/index.mdx'),
   }
 
   const loader = components[locale] || components.en

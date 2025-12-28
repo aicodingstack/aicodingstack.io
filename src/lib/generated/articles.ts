@@ -39,15 +39,55 @@ const articleComponents: Record<
       import('@content/articles/de/getting-started-with-ai-coding.mdx'),
     'mcp-servers-explained': () => import('@content/articles/de/mcp-servers-explained.mdx'),
   },
-  'zh-Hans': {
+  es: {
     'getting-started-with-ai-coding': () =>
-      import('@content/articles/zh-Hans/getting-started-with-ai-coding.mdx'),
-    'mcp-servers-explained': () => import('@content/articles/zh-Hans/mcp-servers-explained.mdx'),
+      import('@content/articles/es/getting-started-with-ai-coding.mdx'),
+    'mcp-servers-explained': () => import('@content/articles/es/mcp-servers-explained.mdx'),
+  },
+  fr: {
+    'getting-started-with-ai-coding': () =>
+      import('@content/articles/fr/getting-started-with-ai-coding.mdx'),
+    'mcp-servers-explained': () => import('@content/articles/fr/mcp-servers-explained.mdx'),
+  },
+  id: {
+    'getting-started-with-ai-coding': () =>
+      import('@content/articles/id/getting-started-with-ai-coding.mdx'),
+    'mcp-servers-explained': () => import('@content/articles/id/mcp-servers-explained.mdx'),
+  },
+  ja: {
+    'getting-started-with-ai-coding': () =>
+      import('@content/articles/ja/getting-started-with-ai-coding.mdx'),
+    'mcp-servers-explained': () => import('@content/articles/ja/mcp-servers-explained.mdx'),
   },
   ko: {
     'getting-started-with-ai-coding': () =>
       import('@content/articles/ko/getting-started-with-ai-coding.mdx'),
     'mcp-servers-explained': () => import('@content/articles/ko/mcp-servers-explained.mdx'),
+  },
+  pt: {
+    'getting-started-with-ai-coding': () =>
+      import('@content/articles/pt/getting-started-with-ai-coding.mdx'),
+    'mcp-servers-explained': () => import('@content/articles/pt/mcp-servers-explained.mdx'),
+  },
+  ru: {
+    'getting-started-with-ai-coding': () =>
+      import('@content/articles/ru/getting-started-with-ai-coding.mdx'),
+    'mcp-servers-explained': () => import('@content/articles/ru/mcp-servers-explained.mdx'),
+  },
+  tr: {
+    'getting-started-with-ai-coding': () =>
+      import('@content/articles/tr/getting-started-with-ai-coding.mdx'),
+    'mcp-servers-explained': () => import('@content/articles/tr/mcp-servers-explained.mdx'),
+  },
+  'zh-Hans': {
+    'getting-started-with-ai-coding': () =>
+      import('@content/articles/zh-Hans/getting-started-with-ai-coding.mdx'),
+    'mcp-servers-explained': () => import('@content/articles/zh-Hans/mcp-servers-explained.mdx'),
+  },
+  'zh-Hant': {
+    'getting-started-with-ai-coding': () =>
+      import('@content/articles/zh-Hant/getting-started-with-ai-coding.mdx'),
+    'mcp-servers-explained': () => import('@content/articles/zh-Hant/mcp-servers-explained.mdx'),
   },
 }
 

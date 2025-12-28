@@ -43,19 +43,67 @@ export const articlesMetadata: Record<string, ArticleMetadata[]> = {
       date: '2025-01-10',
     },
   ],
-  'zh-Hans': [
+  es: [
     {
       slug: 'getting-started-with-ai-coding',
-      title: 'AI 编码入门:综合指南',
+      title: 'Getting Started with AI Coding: A Comprehensive Guide',
       description:
-        '学习如何使用 IDE、命令行和必备工具搭建你的第一个 AI 驱动开发环境,提升编码生产力。',
+        'Learn how to set up your first AI-powered development environment with IDEs, CLIs, and the essential tools you need to boost your coding productivity.',
       date: '2025-01-15',
     },
     {
       slug: 'mcp-servers-explained',
-      title: '理解 MCP 服务器：AI 上下文的未来',
+      title: 'Understanding MCP Servers: The Future of AI Context',
       description:
-        '深入了解模型上下文协议服务器的工作原理，以及为什么它们对构建真正理解你项目的智能 AI 编码助手至关重要。',
+        'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.',
+      date: '2025-01-10',
+    },
+  ],
+  fr: [
+    {
+      slug: 'getting-started-with-ai-coding',
+      title: 'Getting Started with AI Coding: A Comprehensive Guide',
+      description:
+        'Learn how to set up your first AI-powered development environment with IDEs, CLIs, and the essential tools you need to boost your coding productivity.',
+      date: '2025-01-15',
+    },
+    {
+      slug: 'mcp-servers-explained',
+      title: 'Understanding MCP Servers: The Future of AI Context',
+      description:
+        'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.',
+      date: '2025-01-10',
+    },
+  ],
+  id: [
+    {
+      slug: 'getting-started-with-ai-coding',
+      title: 'Getting Started with AI Coding: A Comprehensive Guide',
+      description:
+        'Learn how to set up your first AI-powered development environment with IDEs, CLIs, and the essential tools you need to boost your coding productivity.',
+      date: '2025-01-15',
+    },
+    {
+      slug: 'mcp-servers-explained',
+      title: 'Understanding MCP Servers: The Future of AI Context',
+      description:
+        'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.',
+      date: '2025-01-10',
+    },
+  ],
+  ja: [
+    {
+      slug: 'getting-started-with-ai-coding',
+      title: 'Getting Started with AI Coding: A Comprehensive Guide',
+      description:
+        'Learn how to set up your first AI-powered development environment with IDEs, CLIs, and the essential tools you need to boost your coding productivity.',
+      date: '2025-01-15',
+    },
+    {
+      slug: 'mcp-servers-explained',
+      title: 'Understanding MCP Servers: The Future of AI Context',
+      description:
+        'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.',
       date: '2025-01-10',
     },
   ],
@@ -72,6 +120,86 @@ export const articlesMetadata: Record<string, ArticleMetadata[]> = {
       title: 'MCP 서버 이해하기: AI 컨텍스트의 미래',
       description:
         '모델 컨텍스트 프로토콜 서버에 대한 심층 분석, 작동 방식, 그리고 프로젝트를 진정으로 이해하는 지능형 AI 코딩 어시스턴트를 구축하는 데 중요한 이유.',
+      date: '2025-01-10',
+    },
+  ],
+  pt: [
+    {
+      slug: 'getting-started-with-ai-coding',
+      title: 'Getting Started with AI Coding: A Comprehensive Guide',
+      description:
+        'Learn how to set up your first AI-powered development environment with IDEs, CLIs, and the essential tools you need to boost your coding productivity.',
+      date: '2025-01-15',
+    },
+    {
+      slug: 'mcp-servers-explained',
+      title: 'Understanding MCP Servers: The Future of AI Context',
+      description:
+        'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.',
+      date: '2025-01-10',
+    },
+  ],
+  ru: [
+    {
+      slug: 'getting-started-with-ai-coding',
+      title: 'Getting Started with AI Coding: A Comprehensive Guide',
+      description:
+        'Learn how to set up your first AI-powered development environment with IDEs, CLIs, and the essential tools you need to boost your coding productivity.',
+      date: '2025-01-15',
+    },
+    {
+      slug: 'mcp-servers-explained',
+      title: 'Understanding MCP Servers: The Future of AI Context',
+      description:
+        'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.',
+      date: '2025-01-10',
+    },
+  ],
+  tr: [
+    {
+      slug: 'getting-started-with-ai-coding',
+      title: 'Getting Started with AI Coding: A Comprehensive Guide',
+      description:
+        'Learn how to set up your first AI-powered development environment with IDEs, CLIs, and the essential tools you need to boost your coding productivity.',
+      date: '2025-01-15',
+    },
+    {
+      slug: 'mcp-servers-explained',
+      title: 'Understanding MCP Servers: The Future of AI Context',
+      description:
+        'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.',
+      date: '2025-01-10',
+    },
+  ],
+  'zh-Hans': [
+    {
+      slug: 'getting-started-with-ai-coding',
+      title: 'AI 编码入门:综合指南',
+      description:
+        '学习如何使用 IDE、命令行和必备工具搭建你的第一个 AI 驱动开发环境,提升编码生产力。',
+      date: '2025-01-15',
+    },
+    {
+      slug: 'mcp-servers-explained',
+      title: '理解 MCP 服务器：AI 上下文的未来',
+      description:
+        '深入了解模型上下文协议服务器的工作原理，以及为什么它们对构建真正理解你项目的智能 AI 编码助手至关重要。',
+      date: '2025-01-10',
+    },
+  ],
+  'zh-Hant': [
+    {
+      slug: 'getting-started-with-ai-coding',
+      title: 'Getting Started with AI Coding: A Comprehensive Guide',
+      description:
+        'Learn how to set up your first AI-powered development environment with IDEs, CLIs, and the essential tools you need to boost your coding productivity.',
+      date: '2025-01-15',
+    },
+    {
+      slug: 'mcp-servers-explained',
+      title: 'Understanding MCP Servers: The Future of AI Context',
+      description:
+        'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.',
       date: '2025-01-10',
     },
   ],
@@ -102,16 +230,52 @@ export const docsMetadata: Record<string, DocSection[]> = {
       title: 'Willkommen',
     },
   ],
-  'zh-Hans': [
+  es: [
     {
       id: 'getting-started',
       slug: 'getting-started',
-      title: '快速入门',
+      title: 'Primeros Pasos',
     },
     {
       id: 'welcome',
       slug: 'welcome',
-      title: '欢迎',
+      title: 'Bienvenido',
+    },
+  ],
+  fr: [
+    {
+      id: 'getting-started',
+      slug: 'getting-started',
+      title: 'Premiers Pas',
+    },
+    {
+      id: 'welcome',
+      slug: 'welcome',
+      title: 'Bienvenue',
+    },
+  ],
+  id: [
+    {
+      id: 'getting-started',
+      slug: 'getting-started',
+      title: 'Memulai',
+    },
+    {
+      id: 'welcome',
+      slug: 'welcome',
+      title: 'Selamat Datang',
+    },
+  ],
+  ja: [
+    {
+      id: 'getting-started',
+      slug: 'getting-started',
+      title: 'はじめに',
+    },
+    {
+      id: 'welcome',
+      slug: 'welcome',
+      title: 'ようこそ',
     },
   ],
   ko: [
@@ -124,6 +288,66 @@ export const docsMetadata: Record<string, DocSection[]> = {
       id: 'welcome',
       slug: 'welcome',
       title: '환영합니다',
+    },
+  ],
+  pt: [
+    {
+      id: 'getting-started',
+      slug: 'getting-started',
+      title: 'Como Começar',
+    },
+    {
+      id: 'welcome',
+      slug: 'welcome',
+      title: 'Bem-vindo',
+    },
+  ],
+  ru: [
+    {
+      id: 'getting-started',
+      slug: 'getting-started',
+      title: 'Начало работы',
+    },
+    {
+      id: 'welcome',
+      slug: 'welcome',
+      title: 'Добро пожаловать',
+    },
+  ],
+  tr: [
+    {
+      id: 'getting-started',
+      slug: 'getting-started',
+      title: 'Başlarken',
+    },
+    {
+      id: 'welcome',
+      slug: 'welcome',
+      title: 'Hoş Geldiniz',
+    },
+  ],
+  'zh-Hans': [
+    {
+      id: 'getting-started',
+      slug: 'getting-started',
+      title: '快速入门',
+    },
+    {
+      id: 'welcome',
+      slug: 'welcome',
+      title: '欢迎',
+    },
+  ],
+  'zh-Hant': [
+    {
+      id: 'getting-started',
+      slug: 'getting-started',
+      title: '快速開始',
+    },
+    {
+      id: 'welcome',
+      slug: 'welcome',
+      title: '歡迎',
     },
   ],
 }
@@ -605,31 +829,115 @@ export const faqMetadata: Record<string, FaqItem[]> = {
         'AI Coding Stack bietet detaillierte Vergleichsfunktionen und Spezifikationen, um Ihnen bei fundierten Entscheidungen zu helfen:\n\n- **Nebeneinander-Vergleich**: Vergleichen Sie mehrere Tools über Hauptfunktionen, Preise und Fähigkeiten hinweg\n- **Detaillierte Spezifikationen**: Sehen Sie Kontextfenster, Token-Limits, Preisstaffeln und Plattformunterstützung\n- **Neueste Versionsverfolgung**: Bleiben Sie mit den neuesten Releases und Funktionen auf dem Laufenden\n- **Community-Gepflegt**: Profitieren Sie von kuratierten Informationen, die von Entwicklern überprüft wurden\n- **Umfassende Metadaten**: Greifen Sie auf offizielle Dokumentation, Download-Links und Community-Ressourcen zu\n\nAlle Informationen sind organisiert, um Ihnen zu helfen, schnell zu identifizieren, welche Tools am besten zu Ihrem Entwicklungs-Workflow passen.',
     },
   ],
-  'zh-Hans': [
+  es: [
     {
-      title: '什么是 AI Coding Stack，它如何帮助开发者?',
+      title: '¿Qué es AI Coding Stack y cómo ayuda a los desarrolladores?',
       content:
-        'AI Coding Stack 是一个 AI 编码生态系统的综合目录和元数据仓库。它提供了一个集中平台，用于发现、对比和探索 AI 驱动的开发工具，包括 VS Code 和 Cursor 等 IDE、Claude Code 等命令行助手、iTerm2 和 Warp 等终端、LLM 模型和 API 提供商。无需在分散的资源中搜索，AI Coding Stack 在一个地方为你提供详细的规格、定价和功能对比。',
+        'AI Coding Stack es un directorio completo y un repositorio de metadatos para el ecosistema de programación con IA. Proporciona una plataforma centralizada para descubrir, comparar y explorar herramientas de desarrollo potenciadas por IA, incluidos IDEs como VS Code y Cursor, asistentes de línea de comandos como Claude Code, modelos LLM y proveedores de API. En lugar de buscar en recursos dispersos, AI Coding Stack te ofrece especificaciones detalladas, precios y comparaciones de funciones, todo en un solo lugar.',
     },
     {
-      title: '如何使用 AI Coding Stack?',
+      title: '¿Cómo uso AI Coding Stack?',
       content:
-        'AI Coding Stack 是一个基于网站的目录，你可以直接在 aicodingstack.io 上浏览。无需安装！只需：\n\n- **探索类别**: 浏览 IDE、命令行、终端、模型和提供商\n- **对比工具**: 使用对比功能并排查看规格和定价\n- **阅读文档**: 访问每个工具的设置指南和最佳实践\n- **保持更新**: 查看所有工具的最新版本和规格\n\n平台会持续更新，添加新的工具和信息。',
+        'AI Coding Stack es un directorio basado en web que puedes navegar directamente en aicodingstack.io. ¡No requiere instalación! Simplemente:\n\n- **Explorar categorías**: Navega por IDEs, CLIs, Modelos y Proveedores\n- **Comparar herramientas**: Usa la función de comparación para ver especificaciones y precios lado a lado\n- **Leer documentación**: Accede a guías de configuración y mejores prácticas para cada herramienta\n- **Mantenerse actualizado**: Consulta las últimas versiones y especificaciones de todas las herramientas\n\nLa plataforma se actualiza continuamente con nuevas herramientas e información a medida que están disponibles.',
     },
     {
-      title: 'AI Coding Stack 中列出了哪些 AI 编码工具和 LLM 提供商?',
+      title:
+        '¿Qué herramientas de programación con IA y proveedores de LLM están listados en AI Coding Stack?',
       content:
-        'AI Coding Stack 包含 AI 编码工具和服务的全面目录：\n\n- **IDE**: Visual Studio Code、Cursor、TRAE 和其他 AI 增强代码编辑器\n- **命令行**: Claude Code、Codex 和其他命令行 AI 助手\n- **扩展插件**: GitHub Copilot、Cline、Continue、Roo Code 和其他 AI 代码助手插件\n- **模型**: DeepSeek、Kimi K2、GLM、Qwen、GPT、Claude 和其他领先的 AI 模型\n- **提供商**: OpenAI、Anthropic、DeepSeek、Moonshot、OpenRouter、SiliconFlow 等\n\n目录会随着新工具和提供商的出现而持续更新。',
+        'AI Coding Stack cuenta con un catálogo exhaustivo de herramientas y servicios de programación con IA:\n\n- **IDEs**: Visual Studio Code, Cursor, TRAE y otros editores de código potenciados por IA\n- **CLIs**: Claude Code, Codex y otros asistentes de IA de línea de comandos\n- **Extensiones**: GitHub Copilot, Cline, Continue, Roo Code y otros complementos de asistente de código con IA\n- **Modelos**: DeepSeek, Kimi K2, GLM, Qwen, GPT, Claude y otros modelos de IA líderes\n- **Proveedores**: OpenAI, Anthropic, DeepSeek, Moonshot, OpenRouter, SiliconFlow y más\n\nEl directorio se actualiza continuamente a medida que surgen nuevas herramientas y proveedores.',
     },
     {
-      title: 'AI Coding Stack 是开源的吗? 我可以贡献吗?',
+      title: '¿AI Coding Stack es de código abierto? ¿Puedo contribuir?',
       content:
-        '是的，AI Coding Stack 完全开源，采用 MIT 许可证发布。项目欢迎社区贡献！你可以通过以下方式贡献：\n\n- 在 manifests 目录中添加或更新工具元数据 (ides.json, clis.json, models.json, providers.json)\n- 报告不准确或过时的信息\n- 建议添加新工具\n- 改进文档和指南\n- 提交 pull request\n\n访问 [GitHub 仓库](https://github.com/aicodingstack/aicodingstack.io) 开始为 AI 编码生态系统做贡献。',
+        'Sí, AI Coding Stack es completamente de código abierto y se publica bajo la licencia Apache 2.0. ¡El proyecto recibe contribuciones de la comunidad! Puedes contribuir:\n\n- Agregando o actualizando metadatos de herramientas en el directorio manifests (ides.json, clis.json, models.json, providers.json)\n- Reportando inexactitudes o información desactualizada\n- Sugerir nuevas herramientas para agregar\n- Mejorando la documentación y las guías\n- Enviando pull requests\n\nVisita el [repositorio de GitHub](https://github.com/aicodingstack/aicodingstack.io) para comenzar a contribuir al ecosistema de programación con IA.',
     },
     {
-      title: 'AI Coding Stack 如何帮助我选择合适的工具?',
+      title: '¿Cómo ayuda AI Coding Stack a elegir las herramientas adecuadas?',
       content:
-        'AI Coding Stack 提供详细的对比功能和规格，帮助你做出明智的决策：\n\n- **并排对比**: 比较多个工具的关键功能、定价和能力\n- **详细规格**: 查看上下文窗口、token 限制、定价层级和平台支持\n- **最新版本跟踪**: 及时了解最新发布和功能\n- **社区维护**: 受益于开发者审核的精选信息\n- **全面元数据**: 访问官方文档、下载链接和社区资源\n\n所有信息都经过组织，帮助你快速识别最适合你开发工作流的工具。',
+        'AI Coding Stack proporciona características de comparación detalladas y especificaciones para ayudarte a tomar decisiones informadas:\n\n- **Comparación lado a lado**: Compara múltiples herramientas en función de funciones clave, precios y capacidades\n- **Especificaciones detalladas**: Consulta ventanas de contexto, límites de tokens, niveles de precios y soporte de plataforma\n- **Seguimiento de la última versión**: Mantente actualizado con los nuevos lanzamientos y funciones\n- **Mantenido por la comunidad**: Benefíciate de una información curada revisada por desarrolladores\n- **Metadatos completos**: Accede a documentación oficial, enlaces de descarga y recursos de la comunidad\n\nToda la información está organizada para ayudarte a identificar rápidamente qué herramientas se ajustan mejor a tu flujo de trabajo de desarrollo.',
+    },
+  ],
+  fr: [
+    {
+      title: "Qu'est-ce qu'AI Coding Stack et comment aide-t-il les développeurs ?",
+      content:
+        "AI Coding Stack est un répertoire complet et un dépôt de métadonnées pour l'écosystème du développement assisté par l'IA. Il fournit une plateforme centralisée pour découvrir, comparer et explorer des outils de développement alimentés par l'IA, notamment des IDE comme VS Code et Cursor, des assistants en ligne de commande comme Claude Code, des modèles LLM et des fournisseurs d'API. Au lieu de rechercher dans des ressources dispersées, AI Coding Stack vous offre des spécifications détaillées, des tarifs et des comparaisons de fonctionnalités, tous au même endroit.",
+    },
+    {
+      title: 'Comment utiliser AI Coding Stack ?',
+      content:
+        "AI Coding Stack est un répertoire basé sur le web que vous pouvez parcourir directement sur aicodingstack.io. Aucune installation requise ! Simplement :\n\n- **Explorer les catégories** : Parcourez les IDE, CLI, Modèles et Fournisseurs\n- **Comparer les outils** : Utilisez la fonction de comparaison pour voir les spécifications et tarifs côte à côte\n- **Lire la documentation** : Accédez aux guides de configuration et aux bonnes pratiques pour chaque outil\n- **Rester informé** : Consultez les dernières versions et spécifications pour tous les outils\n\nLa plateforme est continuellement mise à jour avec de nouveaux outils et informations au fur et à mesure qu'ils deviennent disponibles.",
+    },
+    {
+      title:
+        "Quels outils de développement assistés par l'IA et fournisseurs de LLM sont répertoriés dans AI Coding Stack ?",
+      content:
+        "AI Coding Stack propose un catalogue complet d'outils et services de développement assistés par l'IA :\n\n- **IDE** : Visual Studio Code, Cursor, TRAE et autres éditeurs de code améliorés par l'IA\n- **CLI** : Claude Code, Codex et autres assistants en ligne de commande\n- **Extensions** : GitHub Copilot, Cline, Continue, Roo Code et autres plugins d'assistant de code\n- **Modèles** : DeepSeek, Kimi K2, GLM, Qwen, GPT, Claude et autres modèles d'IA de pointe\n- **Fournisseurs** : OpenAI, Anthropic, DeepSeek, Moonshot, OpenRouter, SiliconFlow et plus encore\n\nLe répertoire est continuellement mis à jour à mesure que de nouveaux outils et fournisseurs apparaissent.",
+    },
+    {
+      title: 'AI Coding Stack est-il open source ? Puis-je contribuer ?',
+      content:
+        "Oui, AI Coding Stack est entièrement open source et publié sous licence Apache 2.0. Le projet accueille les contributions de la communauté ! Vous pouvez contribuer en :\n\n- Ajoutant ou mettant à jour les métadonnées des outils dans le répertoire manifests (ides.json, clis.json, models.json, providers.json)\n- Signalant des inexactitudes ou des informations obsolètes\n- Suggérant de nouveaux outils à ajouter\n- Améliorant la documentation et les guides\n- Soumettant des pull requests\n\nVisitez le [dépôt GitHub](https://github.com/aicodingstack/aicodingstack.io) pour commencer à contribuer à l'écosystème du développement assisté par l'IA.",
+    },
+    {
+      title: "Comment AI Coding Stack m'aide-t-il à choisir les bons outils ?",
+      content:
+        "AI Coding Stack fournit des fonctionnalités de comparaison détaillées et des spécifications pour vous aider à prendre des décisions éclairées :\n\n- **Comparaison côte à côte** : Comparez plusieurs outils en fonction des fonctionnalités clés, des tarifs et des capacités\n- **Spécifications détaillées** : Consultez les fenêtres de contexte, les limites de tokens, les niveaux de tarification et le support de plateforme\n- **Suivi des dernières versions** : Restez à jour avec les nouveaux lancements et fonctionnalités\n- **Maintenance communautaire** : Profitez d'informations soigneusement sélectionnées et examinées par les développeurs\n- **Métadonnées complètes** : Accédez à la documentation officielle, aux liens de téléchargement et aux ressources communautaires\n\nToutes les informations sont organisées pour vous aider à identifier rapidement quels outils conviennent le mieux à votre flux de travail de développement.",
+    },
+  ],
+  id: [
+    {
+      title: 'Apa itu AI Coding Stack dan bagaimana ini membantu para pengembang?',
+      content:
+        'AI Coding Stack adalah direktori dan repositori metadata yang lengkap untuk ekosistem coding AI. Ini menyediakan platform terpusat untuk menemukan, membandingkan, dan mengeksplorasi alat pengembangan bertenaga AI termasuk IDE seperti VS Code dan Cursor, asisten baris perintah seperti Claude Code, model LLM, dan penyedia API. Alih-alih mencari di berbagai sumber yang terpisah, AI Coding Stack memberikan spesifikasi detail, harga, dan perbandingan fitur, semua dalam satu tempat.',
+    },
+    {
+      title: 'Bagaimana cara menggunakan AI Coding Stack?',
+      content:
+        'AI Coding Stack adalah direktori berbasis web yang dapat Anda jelajahi langsung di aicodingstack.io. Tidak perlu instalasi! Cukup:\n\n- **Jelajahi Kategori**: Telusuri IDE, CLI, Model, dan Penyedia\n- **Bandingkan Alat**: Gunakan fitur perbandingan untuk melihat spesifikasi dan harga berdampingan\n- **Baca Dokumentasi**: Akses panduan pengaturan dan praktik terbaik untuk setiap alat\n- **Tetap Terbarui**: Periksa versi dan spesifikasi terbaru untuk semua alat\n\nPlatform ini terus diperbarui dengan alat dan informasi baru seiring ketersediaannya.',
+    },
+    {
+      title: 'Alat coding AI dan penyedia LLM apa saja yang terdaftar di AI Coding Stack?',
+      content:
+        'AI Coding Stack menampilkan katalog lengkap alat dan layanan coding AI:\n\n- **IDE**: Visual Studio Code, Cursor, TRAE, dan editor kode bertenaga AI lainnya\n- **CLI**: Claude Code, Codex, dan asisten AI baris perintah lainnya\n- **Ekstensi**: GitHub Copilot, Cline, Continue, Roo Code, dan plugin asisten kode AI lainnya\n- **Model**: DeepSeek, Kimi K2, GLM, Qwen, GPT, Claude, dan model AI terdepan lainnya\n- **Penyedia**: OpenAI, Anthropic, DeepSeek, Moonshot, OpenRouter, SiliconFlow, dan lainnya\n\nDirektori ini terus diperbarui seiring munculnya alat dan penyedia baru.',
+    },
+    {
+      title: 'Apakah AI Coding Stack open source? Dapatkah saya berkontribusi?',
+      content:
+        'Ya, AI Coding Stack sepenuhnya open source dan dirilis di bawah lisensi Apache 2.0. Proyek ini menyambut kontribusi dari komunitas! Anda dapat berkontribusi dengan:\n\n- Menambahkan atau memperbarui metadata alat di direktori manifests (ides.json, clis.json, models.json, providers.json)\n- Melaporkan ketidakakuratan atau informasi yang sudah usang\n- Menyarankan alat baru untuk ditambahkan\n- Meningkatkan dokumentasi dan panduan\n- Mengirimkan pull requests\n\nKunjungi [repositori GitHub](https://github.com/aicodingstack/aicodingstack.io) untuk mulai berkontribusi ke ekosistem coding AI.',
+    },
+    {
+      title: 'Bagaimana AI Coding Stack membantu saya memilih alat yang tepat?',
+      content:
+        'AI Coding Stack menyediakan fitur perbandingan detail dan spesifikasi untuk membantu Anda mengambil keputusan yang tepat:\n\n- **Perbandingan Berdampingan**: Bandingkan beberapa alat berdasarkan fitur kunci, harga, dan kemampuan\n- **Spesifikasi Detail**: Lihat jendela konteks, batas token, tingkat harga, dan dukungan platform\n- **Pelacakan Versi Terbaru**: Tetap terbarui dengan rilis dan fitur terbaru\n- **Dikelola Komunitas**: Manfaatkan informasi yang dikurasi dan ditinjau oleh pengembang\n- **Metadata Lengkap**: Akses dokumentasi resmi, tautan unduhan, dan sumber daya komunitas\n\nSemua informasi diatur untuk membantu Anda mengidentifikasi dengan cepat alat mana yang paling sesuai dengan alur kerja pengembangan Anda.',
+    },
+  ],
+  ja: [
+    {
+      title: 'AI Coding Stackとは何で、どのように開発者を支援しますか？',
+      content:
+        'AI Coding Stackは、AIコーディングエコシステムのための包括的なディレクトリとメタデータリポジトリです。VS CodeやCursorのようなIDE、Claude Codeのようなコマンドラインアシスタント、LLMモデル、APIプロバイダーなど、AIを活用した開発ツールを発見、比較、探索するための集中プラットフォームを提供します。分散したリソースを検索する代わりに、AI Coding Stackは詳細な仕様、価格、機能比較を一堂に提供します。',
+    },
+    {
+      title: 'AI Coding Stackはどのように使用しますか？',
+      content:
+        'AI Coding Stackはaicodingstack.ioで直接閲覧できるWebベースのディレクトリです。インストール不要！簡単に：\n\n- **カテゴリを探索**：IDE、CLI、モデル、プロバイダーを閲覧\n- **ツールを比較**：比較機能を使用して仕様と価格を並べて表示\n- **ドキュメントを読む**：各ツールのセットアップガイドとベストプラクティスにアクセス\n- **最新情報を確認**：すべてのツールの最新バージョンと仕様をチェック\n\nプラットフォームは、新しいツールや情報が利用可能になるにつれて継続的に更新されています。',
+    },
+    {
+      title:
+        'AI Coding StackにはどのようなAIコーディングツールとLLMプロバイダーが掲載されていますか？',
+      content:
+        'AI Coding Stackには、AIコーディングツールとサービスの包括的なカタログが掲載されています：\n\n- **IDE**：Visual Studio Code、Cursor、TRAE、その他のAI搭載コードエディタ\n- **CLI**：Claude Code、Codex、その他のコマンドラインAIアシスタント\n- **拡張機能**：GitHub Copilot、Cline、Continue、Roo Code、その他のAIコードアシスタントプラグイン\n- **モデル**：DeepSeek、Kimi K2、GLM、Qwen、GPT、Claude、その他の主要なAIモデル\n- **プロバイダー**：OpenAI、Anthropic、DeepSeek、Moonshot、OpenRouter、SiliconFlow、その他\n\n新しいツールやプロバイダーが登現するにつれて、ディレクトリは継続的に更新されます。',
+    },
+    {
+      title: 'AI Coding Stackはオープンソースですか？貢献できますか？',
+      content:
+        'はい、AI Coding Stackは完全にオープンソースであり、Apache 2.0ライセンスの下で公開されています。プロジェクトはコミュニティからの貢献を歓迎します！以下の方法で貢献できます：\n\n- manifestsディレクトリ（ides.json、clis.json、models.json、providers.json）でツールのメタデータを追加または更新\n- 不正確または古い情報を報告\n- 追加する新しいツールを提案\n- ドキュメントとガイドを改善\n- プルリクエストを送信\n\nAIコーディングエコシステムへの貢献を開始するには、[GitHubリポジトリ](https://github.com/aicodingstack/aicodingstack.io)にアクセスしてください。',
+    },
+    {
+      title: 'AI Coding Stackは適切なツールを選択するのにどのように役立ちますか？',
+      content:
+        'AI Coding Stackは、詳細な比較機能と仕様を提供し、意思決定を支援します：\n\n- **並列比較**：キー機能、価格、機能に基づいて複数のツールを比較\n- **詳細な仕様**：コンテキストウィンドウ、トークン制限、価格ティア、プラットフォームサポートを表示\n- **最新バージョンの追跡**：最新のリリースと機能について最新情報を入手\n- **コミュニティ管理**：開発者によってレビューされた厳選された情報を活用\n- **包括的なメタデータ**：公式ドキュメント、ダウンロードリンク、コミュニティリソースにアクセス\n\nすべての情報は、どのツールが開発ワークフローに最も適しているかを迅速に特定できるように整理されています。',
     },
   ],
   ko: [
@@ -657,6 +965,143 @@ export const faqMetadata: Record<string, FaqItem[]> = {
       title: 'AI Coding Stack이 올바른 도구를 선택하는 데 어떻게 도움이 되나요?',
       content:
         'AI Coding Stack은 정보에 입각한 결정을 내리는 데 도움이 되는 상세한 비교 기능 및 사양을 제공합니다:\n\n- **나란히 비교**: 주요 기능, 가격 및 기능에 걸쳐 여러 도구 비교\n- **상세한 사양**: 컨텍스트 창, 토큰 제한, 가격 등급 및 플랫폼 지원 보기\n- **최신 버전 추적**: 최신 릴리스 및 기능으로 최신 상태 유지\n- **커뮤니티 유지 관리**: 개발자가 검토한 큐레이션된 정보 활용\n- **종합 메타데이터**: 공식 문서, 다운로드 링크 및 커뮤니티 리소스 액세스\n\n모든 정보는 개발 워크플로우에 가장 적합한 도구를 빠르게 식별하는 데 도움이 되도록 구성되어 있습니다.',
+    },
+  ],
+  pt: [
+    {
+      title: 'O que é AI Coding Stack e como ajuda os desenvolvedores?',
+      content:
+        'AI Coding Stack é um diretório e repositório de metadados abrangente para o ecossistema de coding com IA. Fornece uma plataforma centralizada para descobrir, comparar e explorar ferramentas de desenvolvimento alimentadas por IA, incluindo IDEs como VS Code e Cursor, assistentes de linha de comando como Claude Code, modelos LLM e provedores de API. Em vez de pesquisar em recursos dispersos, AI Coding Stack oferece especificações detalhadas, preços e comparações de recursos, tudo em um só lugar.',
+    },
+    {
+      title: 'Como uso o AI Coding Stack?',
+      content:
+        'AI Coding Stack é um diretório baseado na web que você pode navegar diretamente em aicodingstack.io. Não requer instalação! Simplesmente:\n\n- **Explorar Categorias**: Navegue por IDEs, CLIs, Modelos e Provedores\n- **Comparar Ferramentas**: Use o recurso de comparação para ver especificações e preços lado a lado\n- **Ler Documentação**: Acesse guias de configuração e melhores práticas para cada ferramenta\n- **Ficar Atualizado**: Verifique as versões e especificações mais recentes para todas as ferramentas\n\nA plataforma é continuamente atualizada com novas ferramentas e informações conforme ficam disponíveis.',
+    },
+    {
+      title:
+        'Quais ferramentas de coding com IA e provedores de LLM estão listados no AI Coding Stack?',
+      content:
+        'AI Coding Stack apresenta um catálogo abrangente de ferramentas e serviços de coding com IA:\n\n- **IDEs**: Visual Studio Code, Cursor, TRAE e outros editores de código aprimorados com IA\n- **CLIs**: Claude Code, Codex e outros assistentes de linha de comando\n- **Extensões**: GitHub Copilot, Cline, Continue, Roo Code e outros plugins de assistente de código\n- **Modelos**: DeepSeek, Kimi K2, GLM, Qwen, GPT, Claude e outros modelos de IA líderes\n- **Provedores**: OpenAI, Anthropic, DeepSeek, Moonshot, OpenRouter, SiliconFlow e outros\n\nO diretório é continuamente atualizado à medida que novas ferramentas e provedores surgem.',
+    },
+    {
+      title: 'O AI Coding Stack é open source? Posso contribuir?',
+      content:
+        'Sim, AI Coding Stack é totalmente open source e lançado sob a licença Apache 2.0. O projeto recebe contribuições da comunidade! Você pode contribuir:\n\n- Adicionando ou atualizando metadados de ferramentas no diretório manifests (ides.json, clis.json, models.json, providers.json)\n- Relatando imprecisões ou informações desatualizadas\n- Sugerindo novas ferramentas para adicionar\n- Melhorando documentação e guias\n- Enviando pull requests\n\nVisite o [repositório GitHub](https://github.com/aicodingstack/aicodingstack.io) para começar a contribuir para o ecossistema de coding com IA.',
+    },
+    {
+      title: 'Como o AI Coding Stack me ajuda a escolher as ferramentas certas?',
+      content:
+        'AI Coding Stack fornece recursos de comparação detalhados e especificações para ajudar você a tomar decisões informadas:\n\n- **Comparação Lado a Lado**: Compare várias ferramentas em recursos principais, preços e capacidades\n- **Especificações Detalhadas**: Visualize janelas de contexto, limites de tokens, níveis de preços e suporte de plataforma\n- **Rastreamento de Última Versão**: Mantenha-se atualizado com os novos lançamentos e recursos\n- **Mantido pela Comunidade**: Beneficie-se de informações curadas revisadas por desenvolvedores\n- **Metadados Abrangentes**: Acesse documentação oficial, links de download e recursos da comunidade\n\nTodas as informações são organizadas para ajudar você a identificar rapidamente quais ferramentas melhor se adaptam ao seu fluxo de trabalho de desenvolvimento.',
+    },
+  ],
+  ru: [
+    {
+      title: 'Что такое AI Coding Stack и как он помогает разработчикам?',
+      content:
+        'AI Coding Stack - это полный каталог и репозиторий метаданных для экосистемы AI- программирования. Он предоставляет централизованную платформу для обнаружения, сравнения и изучения инструментов разработки на базе ИИ, включая такие IDE, как VS Code и Cursor, помощников командной строки, такие как Claude Code, модели LLM и провайдеры API. Вместо поиска по разрозненным ресурсам AI Coding Stack предлагает подробные спецификации, цены и сравнения функций, всё в одном месте.',
+    },
+    {
+      title: 'Как использовать AI Coding Stack?',
+      content:
+        'AI Coding Stack - это веб-каталог, к которому можно получить прямой доступ на aicodingstack.io. Установка не требуется! Просто:\n\n- **Изучайте категории**: Просматривайте IDE, CLI, модели и провайдеры\n- **Сравнивайте инструменты**: Используйте функцию сравнения, чтобы просматривать спецификации и цены рядом\n- **Читайте документацию**: Получайте доступ к руководствам по настройке и лучшим практикам для каждого инструмента\n- **Оставайтесь в курсе**: Проверяйте последние версии и спецификации для всех инструментов\n\nПлатформа непрерывно обновляется новыми инструментами и информацией по мере их появления.',
+    },
+    {
+      title:
+        'Какие инструменты AI- программирования и провайдеры LLM перечислены в AI Coding Stack?',
+      content:
+        'AI Coding Stack содержит полный каталог инструментов и услуг AI- программирования:\n\n- **IDE**: Visual Studio Code, Cursor, TRAE и другие редакторы кода с поддержкой ИИ\n- **CLI**: Claude Code, Codex и другие помощники командной строки\n- **Расширения**: GitHub Copilot, Cline, Continue, Roo Code и другие плагины AI-ассистента кода\n- **Модели**: DeepSeek, Kimi K2, GLM, Qwen, GPT, Claude и другие ведущие модели ИИ\n- **Провайдеры**: OpenAI, Anthropic, DeepSeek, Moonshot, OpenRouter, SiliconFlow и другие\n\nКаталог постоянно обновляется по мере появления новых инструментов и провайдеров.',
+    },
+    {
+      title: 'Является ли AI Coding Stack открытым исходным кодом? Могу ли я внести вклад?',
+      content:
+        'Да, AI Coding Stack полностью распространяется как открытый исходный код под лицензией Apache 2.0. Проект приветствует вклад сообщества! Вы можете внести вклад:\n\n- Добавляя или обновляя метаданные инструментов в каталоге manifests (ides.json, clis.json, models.json, providers.json)\n- Сообщая о неточностях или устаревшей информации\n- Предлагая новые инструменты для добавления\n- Улучшая документацию и руководства\n- Отправляя pull-запросы\n\nПосетите [репозиторий GitHub](https://github.com/aicodingstack/aicodingstack.io), чтобы начать вносить вклад в экосистему AI- программирования.',
+    },
+    {
+      title: 'Как AI Coding Stack помогает мне выбрать правильные инструменты?',
+      content:
+        'AI Coding Stack предоставляет подробные функции сравнения и спецификации, чтобы помочь вам принимать обоснованные решения:\n\n- **Сравнение рядом**: Сравнивайте несколько инструментов по ключевым функциям, ценам и возможностям\n- **Подробные спецификации**: Просматривайте контекстные окна, ограничения токенов, уровни цен и поддержку платформ\n- **Отслеживание последних версий**: Оставайтесь в курсе новых выпусков и функций\n- **Поддерживается сообществом**: Получайте пользу от тщательно отобранной информации, проверенной разработчиками\n- **Полные метаданные**: Получайте доступ к официальной документации, ссылкам на загрузку и ресурсам сообщества\n\nВся информация организована так, чтобы помочь вам быстро определить, какие инструменты лучше всего подходят для вашего рабочего процесса разработки.',
+    },
+  ],
+  tr: [
+    {
+      title: 'AI Coding Stack nedir ve geliştiricilere nasıl yardımcı olur?',
+      content:
+        "AI Coding Stack, AI kodlama ekosistemi için kapsamlı bir dizin ve meta veri deposudur. VS Code ve Cursor gibi IDE'ler, Claude Code gibi komut satırı asistanları, LLM modelleri ve API sağlayıcıları da dahil olmak üzere AI destekli geliştirme araçlarını keşfetmek, karşılaştırmak ve incelemek için merkezi bir platform sağlar. Dağınık kaynaklarda arama yapmak yerine AI Coding Stack, ayrıntılı özellikleri, fiyatları ve özellik karşılaştırmalarını tek bir yerde sunar.",
+    },
+    {
+      title: "AI Coding Stack'ı nasıl kullanırım?",
+      content:
+        "AI Coding Stack, aicodingstack.io adresinden doğrudan göz atabileceğiniz web tabanlı bir dizindir. Kurulum gerektirmez! Sadece:\n\n- **Kategorileri Keşfet**: IDE'leri, CLI'leri, Modelleri ve Sağlayıcıları göz at\n- **Araçları Karşılaştır**: Özellikleri ve fiyatları yan yana görmek için karşılaştırma özelliğini kullan\n- **Belgeleri Oku**: Her araç için kurulum kılavuzlarına ve en iyi uygulamalara eriş\n- **Güncel Kal**: Tüm araçların en son sürümlerini ve özelliklerini kontrol et\n\nPlatform, yeni araçlar ve bilgiler kullanılabilir hale geldikçe sürekli güncellenir.",
+    },
+    {
+      title: "AI Coding Stack'te hangi AI kodlama araçları ve LLM sağlayıcıları listeleniyor?",
+      content:
+        "AI Coding Stack, AI kodlama araçları ve hizmetlerinin kapsamlı bir kataloğunu sunar:\n\n- **IDE'ler**: Visual Studio Code, Cursor, TRAE ve diğer AI destekli kod editörleri\n- **CLI'ler**: Claude Code, Codex ve diğer komut satırı AI asistanları\n- **Eklentiler**: GitHub Copilot, Cline, Continue, Roo Code ve diğer AI kod asistanı eklentileri\n- **Modeller**: DeepSeek, Kimi K2, GLM, Qwen, GPT, Claude ve diğer önde gelen AI modelleri\n- **Sağlayıcılar**: OpenAI, Anthropic, DeepSeek, Moonshot, OpenRouter, SiliconFlow ve daha fazlası\n\nDizin, yeni araçlar ve sağlayıcılar ortaya çıktıkça sürekli güncellenir.",
+    },
+    {
+      title: 'AI Coding Stack açık kaynaktır mı? Katkıda bulunabilir miyim?',
+      content:
+        'Evet, AI Coding Stack tamamen açık kaynaklıdır ve Apache 2.0 lisansı altında yayınlanmıştır. Proje topluluktan katkıları memnuniyetle karşılar! Şunlarla katkıda bulunabilirsiniz:\n\n- manifests dizininde araç meta verilerini ekleme veya güncelleme (ides.json, clis.json, models.json, providers.json)\n- Yanlış veya güncel olmayan bilgileri bildirme\n- Eklenecek yeni araçlar önerme\n- Belgeleri ve kılavuzları iyileştirme\n- Pull request gönderme\n\nAI kodlama ekosistemine katkıda bulunmaya başlamak için [GitHub deposunu](https://github.com/aicodingstack/aicodingstack.io) ziyaret edin.',
+    },
+    {
+      title: 'AI Coding Stack doğru araçları seçmeme nasıl yardımcı olur?',
+      content:
+        'AI Coding Stack, bilinçli kararlar vermenize yardımcı olmak için ayrıntılı karşılaştırma özellikleri ve özellikleri sunar:\n\n- **Yan Yana Karşılaştırma**: Temel özelliklere, fiyatlara ve yeteneklere göre birden fazla aracı karşılaştırın\n- **Ayrıntılı Özellikler**: Bağlam pencerelerini, token sınırlarını, fiyat katmanlarını ve platform desteğini görüntüleyin\n- **Son Sürüm Takibi**: Yeni yayınlar ve özellikler hakkında güncel kalın\n- **Topluluk Tarafından Bakım Yapılır**: Geliştiriciler tarafından incelenen seçilmiş bilgilerden yararlanın\n- **Kapsamlı Meta Veriler**: Resmi dokümantasyona, indirme bağlantılarına ve topluluk kaynaklarına erişin\n\nTüm bilgiler, geliştirme iş akışınıza en uygun araçları hızlıca belirlemenize yardımcı olacak şekilde düzenlenmiştir.',
+    },
+  ],
+  'zh-Hans': [
+    {
+      title: '什么是 AI Coding Stack，它如何帮助开发者?',
+      content:
+        'AI Coding Stack 是一个 AI 编码生态系统的综合目录和元数据仓库。它提供了一个集中平台，用于发现、对比和探索 AI 驱动的开发工具，包括 VS Code 和 Cursor 等 IDE、Claude Code 等命令行助手、iTerm2 和 Warp 等终端、LLM 模型和 API 提供商。无需在分散的资源中搜索，AI Coding Stack 在一个地方为你提供详细的规格、定价和功能对比。',
+    },
+    {
+      title: '如何使用 AI Coding Stack?',
+      content:
+        'AI Coding Stack 是一个基于网站的目录，你可以直接在 aicodingstack.io 上浏览。无需安装！只需：\n\n- **探索类别**: 浏览 IDE、命令行、终端、模型和提供商\n- **对比工具**: 使用对比功能并排查看规格和定价\n- **阅读文档**: 访问每个工具的设置指南和最佳实践\n- **保持更新**: 查看所有工具的最新版本和规格\n\n平台会持续更新，添加新的工具和信息。',
+    },
+    {
+      title: 'AI Coding Stack 中列出了哪些 AI 编码工具和 LLM 提供商?',
+      content:
+        'AI Coding Stack 包含 AI 编码工具和服务的全面目录：\n\n- **IDE**: Visual Studio Code、Cursor、TRAE 和其他 AI 增强代码编辑器\n- **命令行**: Claude Code、Codex 和其他命令行 AI 助手\n- **扩展插件**: GitHub Copilot、Cline、Continue、Roo Code 和其他 AI 代码助手插件\n- **模型**: DeepSeek、Kimi K2、GLM、Qwen、GPT、Claude 和其他领先的 AI 模型\n- **提供商**: OpenAI、Anthropic、DeepSeek、Moonshot、OpenRouter、SiliconFlow 等\n\n目录会随着新工具和提供商的出现而持续更新。',
+    },
+    {
+      title: 'AI Coding Stack 是开源的吗? 我可以贡献吗?',
+      content:
+        '是的，AI Coding Stack 完全开源，采用 MIT 许可证发布。项目欢迎社区贡献！你可以通过以下方式贡献：\n\n- 在 manifests 目录中添加或更新工具元数据 (ides.json, clis.json, models.json, providers.json)\n- 报告不准确或过时的信息\n- 建议添加新工具\n- 改进文档和指南\n- 提交 pull request\n\n访问 [GitHub 仓库](https://github.com/aicodingstack/aicodingstack.io) 开始为 AI 编码生态系统做贡献。',
+    },
+    {
+      title: 'AI Coding Stack 如何帮助我选择合适的工具?',
+      content:
+        'AI Coding Stack 提供详细的对比功能和规格，帮助你做出明智的决策：\n\n- **并排对比**: 比较多个工具的关键功能、定价和能力\n- **详细规格**: 查看上下文窗口、token 限制、定价层级和平台支持\n- **最新版本跟踪**: 及时了解最新发布和功能\n- **社区维护**: 受益于开发者审核的精选信息\n- **全面元数据**: 访问官方文档、下载链接和社区资源\n\n所有信息都经过组织，帮助你快速识别最适合你开发工作流的工具。',
+    },
+  ],
+  'zh-Hant': [
+    {
+      title: 'AI Coding Stack 是什麼，如何幫助開發者？',
+      content:
+        'AI Coding Stack 是一個全面的 AI 編碼生態系統目錄和元數據存儲庫。它提供一個集中平台來發現、比較和探索 AI 驅動的開發工具，包括 VS Code 和 Cursor 等 IDE、Claude Code 等命令行助手、LLM 模型和 API 提供商。與其到處搜索分散的資源，AI Coding Stack 為您提供詳細的規格、價格和功能比較，全部在一個地方。',
+    },
+    {
+      title: '如何使用 AI Coding Stack？',
+      content:
+        'AI Coding Stack 是一個基於網站的目錄，您可以直接在 aicodingstack.io 上瀏覽。無需安裝！只需：\n\n- **瀏覽分類**：瀏覽 IDE、CLI、模型和提供商\n- **比較工具**：使用比較功能並排查看規格和價格\n- **閱讀文檔**：訪問每個工具的設置指南和最佳實踐\n- **保持更新**：查看所有工具的最新版本和規格\n\n該平台隨著新工具和信息的可用性而不斷更新。',
+    },
+    {
+      title: 'AI Coding Stack 中列出了哪些 AI 編碼工具和 LLM 提供商？',
+      content:
+        'AI Coding Stack 提供了全面的 AI 編碼工具和服務目錄：\n\n- **IDE**：Visual Studio Code、Cursor、TRAE 和其他 AI 增強代碼編輯器\n- **CLI**：Claude Code、Codex 和其他命令行 AI 助手\n- **擴展**：GitHub Copilot、Cline、Continue、Roo Code 和其他 AI 代碼助手插件\n- **模型**：DeepSeek、Kimi K2、GLM、Qwen、GPT、Claude 和其他領先的 AI 模型\n- **提供商**：OpenAI、Anthropic、DeepSeek、Moonshot、OpenRouter、SiliconFlow 等等\n\n隨著新工具和提供商的出現，目錄會不斷更新。',
+    },
+    {
+      title: 'AI Coding Stack 是開源的嗎？我可以貢獻嗎？',
+      content:
+        '是的，AI Coding Stack 完全開源，根據 Apache 2.0 許可證發布。該項目歡迎社區貢獻！您可以通過以下方式貢獻：\n\n- 在 manifests 目錄中添加或更新工具元數據（ides.json、clis.json、models.json、providers.json）\n- 報告不準確或過時的信息\n- 建議添加新工具\n- 改進文檔和指南\n- 提交 pull requests\n\n訪問 [GitHub 倉庫](https://github.com/aicodingstack/aicodingstack.io) 開始為 AI 編碼生態系統做出貢獻。',
+    },
+    {
+      title: 'AI Coding Stack 如何幫助我選擇正確的工具？',
+      content:
+        'AI Coding Stack 提供詳細的比較功能和規格，幫助您做出明智的決定：\n\n- **並排比較**：根據關鍵功能、價格和能力比較多個工具\n- **詳細規格**：查看上下文窗口、token 限制、價格層級和平台支持\n- **最新版本追蹤**：了解最新版本和功能\n- **社區維護**：受益於開發者審核的策展信息\n- **全面元數據**：訪問官方文檔、下載鏈接和社區資源\n\n所有信息都經過組織，幫助您快速識別哪些工具最適合您的開發工作流程。',
     },
   ],
 }
