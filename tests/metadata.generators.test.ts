@@ -40,13 +40,13 @@ describe('Metadata Generators', () => {
       expect(metadata.openGraph?.description).toBeDefined()
       expect(metadata.openGraph?.url).toBeDefined()
       expect(metadata.openGraph?.locale).toBe('en_US')
-      expect(metadata.openGraph?.type).toBe('website')
+      expect((metadata.openGraph as { type?: string })?.type).toBe('website')
 
       // Verify Twitter
       expect(metadata.twitter).toBeDefined()
       expect(metadata.twitter?.title).toBeDefined()
       expect(metadata.twitter?.description).toBeDefined()
-      expect(metadata.twitter?.card).toBe('summary_large_image')
+      expect((metadata.twitter as { card?: string })?.card).toBe('summary_large_image')
 
       // Verify robots
       expect(metadata.robots).toBeDefined()
@@ -76,7 +76,7 @@ describe('Metadata Generators', () => {
       expect(metadata.keywords).toContain('Cursor')
 
       // Verify OpenGraph type is article for detail pages
-      expect(metadata.openGraph?.type).toBe('article')
+      expect((metadata.openGraph as { type?: string })?.type).toBe('article')
 
       // Verify canonical includes category and slug
       expect(metadata.alternates?.canonical).toContain('ides/cursor')
@@ -111,7 +111,7 @@ describe('Metadata Generators', () => {
       expect(metadata.description).toContain('DeepSeek')
 
       // Verify OpenGraph type is article for detail pages
-      expect(metadata.openGraph?.type).toBe('article')
+      expect((metadata.openGraph as { type?: string })?.type).toBe('article')
 
       // Verify canonical includes models path
       expect(metadata.alternates?.canonical).toContain('models/deepseek-v3')
@@ -132,7 +132,7 @@ describe('Metadata Generators', () => {
       expect(metadata.keywords).toContain('comparison')
 
       // Verify OpenGraph type is website for comparison pages
-      expect(metadata.openGraph?.type).toBe('website')
+      expect((metadata.openGraph as { type?: string })?.type).toBe('website')
 
       // Verify canonical includes comparison path
       expect(metadata.alternates?.canonical).toContain('ides/comparison')
@@ -156,8 +156,8 @@ describe('Metadata Generators', () => {
       expect(metadata.title).toContain('Test Article')
 
       // Verify OpenGraph has publishedTime
-      expect(metadata.openGraph?.type).toBe('article')
-      expect(metadata.openGraph?.publishedTime).toBe('2025-01-01')
+      expect((metadata.openGraph as { type?: string })?.type).toBe('article')
+      expect((metadata.openGraph as { publishedTime?: string })?.publishedTime).toBe('2025-01-01')
 
       // Verify Twitter includes creator
       expect(metadata.twitter?.creator).toBeDefined()
@@ -181,7 +181,7 @@ describe('Metadata Generators', () => {
       expect(metadata.description).toBe('Learn how to get started')
 
       // Verify OpenGraph type is article for docs
-      expect(metadata.openGraph?.type).toBe('article')
+      expect((metadata.openGraph as { type?: string })?.type).toBe('article')
 
       // Verify canonical includes docs path
       expect(metadata.alternates?.canonical).toContain('docs/getting-started')
@@ -207,7 +207,7 @@ describe('Metadata Generators', () => {
       expect(metadata.keywords).toBe('about, mission, team')
 
       // Verify OpenGraph type
-      expect(metadata.openGraph?.type).toBe('website')
+      expect((metadata.openGraph as { type?: string })?.type).toBe('website')
 
       // Verify canonical
       expect(metadata.alternates?.canonical).toBe('/about')

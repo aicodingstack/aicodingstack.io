@@ -13,6 +13,7 @@
     "biome:check": "biome check .",
     "biome:unsafe": "biome check --write --unsafe .",
     "check": "biome check . && npm run spell",
+    "type-check": "tsc --noEmit",
     "deps:check-latest": "npm outdated",
     "deps:update": "npm update",
     "spell": "cspell '**/*.{ts,tsx,js,jsx,json,md,mdx}'",
