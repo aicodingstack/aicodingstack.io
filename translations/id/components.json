@@ -139,6 +139,33 @@
     "title": "Harga",
     "viewFullDetails": "Lihat detail harga lengkap →"
   },
+  "modelSpecifications": {
+    "title": "@:pages.modelDetail.specifications",
+    "modelSize": "@:pages.modelDetail.modelSize",
+    "contextWindow": "@:pages.modelDetail.contextWindow",
+    "maxOutput": "@:pages.modelDetail.maxOutput",
+    "pricing": "@:pages.modelDetail.pricing",
+    "input": "@:pages.modelDetail.input",
+    "output": "@:pages.modelDetail.output",
+    "cache": "@:pages.modelDetail.cache"
+  },
+  "modelBenchmarks": {
+    "title": "@:pages.modelDetail.benchmarks.title",
+    "sweBench": "@:pages.modelDetail.benchmarks.sweBench",
+    "sweBenchDesc": "@:pages.modelDetail.benchmarks.sweBenchDesc",
+    "terminalBench": "@:pages.modelDetail.benchmarks.terminalBench",
+    "terminalBenchDesc": "@:pages.modelDetail.benchmarks.terminalBenchDesc",
+    "mmmu": "@:pages.modelDetail.benchmarks.mmmu",
+    "mmmuDesc": "@:pages.modelDetail.benchmarks.mmmuDesc",
+    "mmmuPro": "@:pages.modelDetail.benchmarks.mmmuPro",
+    "mmmuProDesc": "@:pages.modelDetail.benchmarks.mmmuProDesc",
+    "webDevArena": "@:pages.modelDetail.benchmarks.webDevArena",
+    "webDevArenaDesc": "@:pages.modelDetail.benchmarks.webDevArenaDesc",
+    "sciCode": "@:pages.modelDetail.benchmarks.sciCode",
+    "sciCodeDesc": "@:pages.modelDetail.benchmarks.sciCodeDesc",
+    "liveCodeBench": "@:pages.modelDetail.benchmarks.liveCodeBench",
+    "liveCodeBenchDesc": "@:pages.modelDetail.benchmarks.liveCodeBenchDesc"
+  },
   "relatedProducts": {
     "cli": "CLI",
     "extension": "Ekstensi",
@@ -176,5 +203,60 @@
   "sidebar": {
     "backToTop": "Kembali ke atas",
     "selectItem": "Pilih item"
+  },
+  "vendorMatrix": {
+    "cell": {
+      "summary": "{count} {category}"
+    },
+    "categories": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "provider": "Provider"
+    },
+    "categoriesPlural": {
+      "cli": "CLIs",
+      "extension": "Extensions",
+      "ide": "IDEs",
+      "model": "Models",
+      "provider": "Providers"
+    },
+    "controls": {
+      "clear": "Clear",
+      "sortByLabel": "Sort by:",
+      "sortName": "Name",
+      "sortProducts": "Products",
+      "vendorTypeLabel": "Vendor Type:"
+    },
+    "table": {
+      "noVendorsFound": "No vendors found",
+      "vendor": "Vendor"
+    },
+    "vendorTypes": {
+      "label": "Vendor Types:",
+      "types": {
+        "ai-native": {
+          "description": "Model + Development Tools",
+          "label": "AI Native"
+        },
+        "full-stack": {
+          "description": "IDE + CLI + Extension",
+          "label": "Full Stack"
+        },
+        "model-only": {
+          "description": "Model (with or without Provider)",
+          "label": "Model Only"
+        },
+        "provider-only": {
+          "description": "Provider only",
+          "label": "Provider Only"
+        },
+        "tool-only": {
+          "description": "IDE/CLI/Extension",
+          "label": "Tool Only"
+        }
+      }
+    }
   }
 }

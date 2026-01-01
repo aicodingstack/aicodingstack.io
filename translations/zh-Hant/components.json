@@ -139,6 +139,33 @@
     "title": "定價",
     "viewFullDetails": "查看完整定價詳情 →"
   },
+  "modelSpecifications": {
+    "title": "@:pages.modelDetail.specifications",
+    "modelSize": "@:pages.modelDetail.modelSize",
+    "contextWindow": "@:pages.modelDetail.contextWindow",
+    "maxOutput": "@:pages.modelDetail.maxOutput",
+    "pricing": "@:pages.modelDetail.pricing",
+    "input": "@:pages.modelDetail.input",
+    "output": "@:pages.modelDetail.output",
+    "cache": "@:pages.modelDetail.cache"
+  },
+  "modelBenchmarks": {
+    "title": "@:pages.modelDetail.benchmarks.title",
+    "sweBench": "@:pages.modelDetail.benchmarks.sweBench",
+    "sweBenchDesc": "@:pages.modelDetail.benchmarks.sweBenchDesc",
+    "terminalBench": "@:pages.modelDetail.benchmarks.terminalBench",
+    "terminalBenchDesc": "@:pages.modelDetail.benchmarks.terminalBenchDesc",
+    "mmmu": "@:pages.modelDetail.benchmarks.mmmu",
+    "mmmuDesc": "@:pages.modelDetail.benchmarks.mmmuDesc",
+    "mmmuPro": "@:pages.modelDetail.benchmarks.mmmuPro",
+    "mmmuProDesc": "@:pages.modelDetail.benchmarks.mmmuProDesc",
+    "webDevArena": "@:pages.modelDetail.benchmarks.webDevArena",
+    "webDevArenaDesc": "@:pages.modelDetail.benchmarks.webDevArenaDesc",
+    "sciCode": "@:pages.modelDetail.benchmarks.sciCode",
+    "sciCodeDesc": "@:pages.modelDetail.benchmarks.sciCodeDesc",
+    "liveCodeBench": "@:pages.modelDetail.benchmarks.liveCodeBench",
+    "liveCodeBenchDesc": "@:pages.modelDetail.benchmarks.liveCodeBenchDesc"
+  },
   "relatedProducts": {
     "cli": "CLI",
     "extension": "擴充功能",
@@ -176,5 +203,60 @@
   "sidebar": {
     "backToTop": "返回頂部",
     "selectItem": "選擇一個項目"
+  },
+  "vendorMatrix": {
+    "cell": {
+      "summary": "{count} 個{category}"
+    },
+    "categories": {
+      "cli": "CLI",
+      "extension": "擴充套件",
+      "ide": "IDE",
+      "model": "模型",
+      "provider": "供應商"
+    },
+    "categoriesPlural": {
+      "cli": "CLI",
+      "extension": "擴充套件",
+      "ide": "IDE",
+      "model": "模型",
+      "provider": "供應商"
+    },
+    "controls": {
+      "clear": "清除",
+      "sortByLabel": "排序：",
+      "sortName": "名稱",
+      "sortProducts": "產品",
+      "vendorTypeLabel": "廠商類型："
+    },
+    "table": {
+      "noVendorsFound": "未找到廠商",
+      "vendor": "廠商"
+    },
+    "vendorTypes": {
+      "label": "廠商類型：",
+      "types": {
+        "ai-native": {
+          "description": "模型 + 開發工具",
+          "label": "AI 原生"
+        },
+        "full-stack": {
+          "description": "IDE + CLI + 擴充套件",
+          "label": "全端"
+        },
+        "model-only": {
+          "description": "模型（有或無供應商）",
+          "label": "僅模型"
+        },
+        "provider-only": {
+          "description": "僅供應商",
+          "label": "僅供應商"
+        },
+        "tool-only": {
+          "description": "IDE/CLI/擴充套件",
+          "label": "僅工具"
+        }
+      }
+    }
   }
 }

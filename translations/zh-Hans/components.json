@@ -139,6 +139,33 @@
     "title": "定价",
     "viewFullDetails": "查看完整定价详情 →"
   },
+  "modelSpecifications": {
+    "title": "@:pages.modelDetail.specifications",
+    "modelSize": "@:pages.modelDetail.modelSize",
+    "contextWindow": "@:pages.modelDetail.contextWindow",
+    "maxOutput": "@:pages.modelDetail.maxOutput",
+    "pricing": "@:pages.modelDetail.pricing",
+    "input": "@:pages.modelDetail.input",
+    "output": "@:pages.modelDetail.output",
+    "cache": "@:pages.modelDetail.cache"
+  },
+  "modelBenchmarks": {
+    "title": "@:pages.modelDetail.benchmarks.title",
+    "sweBench": "@:pages.modelDetail.benchmarks.sweBench",
+    "sweBenchDesc": "@:pages.modelDetail.benchmarks.sweBenchDesc",
+    "terminalBench": "@:pages.modelDetail.benchmarks.terminalBench",
+    "terminalBenchDesc": "@:pages.modelDetail.benchmarks.terminalBenchDesc",
+    "mmmu": "@:pages.modelDetail.benchmarks.mmmu",
+    "mmmuDesc": "@:pages.modelDetail.benchmarks.mmmuDesc",
+    "mmmuPro": "@:pages.modelDetail.benchmarks.mmmuPro",
+    "mmmuProDesc": "@:pages.modelDetail.benchmarks.mmmuProDesc",
+    "webDevArena": "@:pages.modelDetail.benchmarks.webDevArena",
+    "webDevArenaDesc": "@:pages.modelDetail.benchmarks.webDevArenaDesc",
+    "sciCode": "@:pages.modelDetail.benchmarks.sciCode",
+    "sciCodeDesc": "@:pages.modelDetail.benchmarks.sciCodeDesc",
+    "liveCodeBench": "@:pages.modelDetail.benchmarks.liveCodeBench",
+    "liveCodeBenchDesc": "@:pages.modelDetail.benchmarks.liveCodeBenchDesc"
+  },
   "relatedProducts": {
     "cli": "CLI",
     "extension": "扩展",
@@ -176,5 +203,60 @@
   "sidebar": {
     "backToTop": "返回顶部",
     "selectItem": "选择一个项目"
+  },
+  "vendorMatrix": {
+    "cell": {
+      "summary": "{count} 个{category}"
+    },
+    "categories": {
+      "cli": "CLI",
+      "extension": "扩展",
+      "ide": "IDE",
+      "model": "模型",
+      "provider": "提供商"
+    },
+    "categoriesPlural": {
+      "cli": "CLI",
+      "extension": "扩展",
+      "ide": "IDE",
+      "model": "模型",
+      "provider": "提供商"
+    },
+    "controls": {
+      "clear": "清除",
+      "sortByLabel": "排序：",
+      "sortName": "名称",
+      "sortProducts": "产品",
+      "vendorTypeLabel": "厂商类型："
+    },
+    "table": {
+      "noVendorsFound": "未找到厂商",
+      "vendor": "厂商"
+    },
+    "vendorTypes": {
+      "label": "厂商类型：",
+      "types": {
+        "ai-native": {
+          "description": "模型 + 开发工具",
+          "label": "AI 原生"
+        },
+        "full-stack": {
+          "description": "IDE + CLI + 扩展",
+          "label": "全栈"
+        },
+        "model-only": {
+          "description": "模型（有或无提供商）",
+          "label": "仅模型"
+        },
+        "provider-only": {
+          "description": "仅提供商",
+          "label": "仅提供商"
+        },
+        "tool-only": {
+          "description": "IDE/CLI/扩展",
+          "label": "仅工具"
+        }
+      }
+    }
   }
 }
