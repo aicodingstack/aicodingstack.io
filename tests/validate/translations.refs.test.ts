@@ -143,26 +143,15 @@ function loadMessages(
       const content = readJsonFile(filePath)
 
       if (key === 'stacks') {
+        // Runtime messages composition spreads stacks.json into messages.pages.
+        // Keep validation in sync with runtime to avoid requiring extra alias objects.
         const stacks = content as Record<string, unknown>
-        messages.stacksPages = {
-          overview: stacks.overview,
-          ides: stacks.ides,
-          clis: stacks.clis,
-          extensions: stacks.extensions,
-          models: stacks.models,
-          modelProviders: stacks.modelProviders,
-          vendors: stacks.vendors,
+        if (!messages.pages) messages.pages = {}
+
+        for (const [stackKey, stackValue] of Object.entries(stacks)) {
+          ;(messages.pages as Record<string, unknown>)[stackKey] = stackValue
+          markPaths(stackValue, `pages.${stackKey}`, filePath)
         }
-        messages.stackDetailPages = {
-          ideDetail: stacks.ideDetail,
-          cliDetail: stacks.cliDetail,
-          extensionDetail: stacks.extensionDetail,
-          modelDetail: stacks.modelDetail,
-          vendorDetail: stacks.vendorDetail,
-          modelProviderDetail: stacks.modelProviderDetail,
-        }
-        markPaths(messages.stacksPages, 'stacksPages', filePath)
-        markPaths(messages.stackDetailPages, 'stackDetailPages', filePath)
       } else if (key === 'comparison') {
         messages.comparison = content
         markPaths(content, 'comparison', filePath)

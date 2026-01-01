@@ -1,7 +1,7 @@
 {
   "$schema": "../$schemas/cli.schema.json",
   "id": "claude-code-cli",
-  "name": "Claude Code CLI",
+  "name": "Claude Code",
   "description": "AI coding assistant CLI for your terminal. Understands your codebase, executes tasks via natural language, explains code, and manages git workflows with MCP integration.",
   "translations": {
     "zh-Hans": {
