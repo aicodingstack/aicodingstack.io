@@ -20,6 +20,18 @@ export interface PlatformLinksProps {
 }
 
 /**
+ * Check whether the given platform URLs object contains at least one usable URL.
+ *
+ * We treat empty strings and whitespace-only strings as "missing".
+ */
+function hasAnyPlatformUrl(platformUrls: PlatformUrls): boolean {
+  return Object.values(platformUrls).some(value => {
+    if (typeof value !== 'string') return false
+    return value.trim().length > 0
+  })
+}
+
+/**
  * PlatformLinks Section
  *
  * Displays AI platform links for models and providers
@@ -33,7 +45,7 @@ export function PlatformLinks({
   layout = 'horizontal',
   gridCols = 'grid-cols-1 md:grid-cols-3',
 }: PlatformLinksProps) {
-  if (!platformUrls) {
+  if (!platformUrls || links.length === 0 || !hasAnyPlatformUrl(platformUrls)) {
     return null
   }
 

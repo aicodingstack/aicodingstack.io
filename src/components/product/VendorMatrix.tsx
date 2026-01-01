@@ -1,37 +1,50 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { useMemo, useState } from 'react'
 import { Link } from '@/i18n/navigation'
 import type { LandscapeProduct, ProductCategory, VendorMatrixRow } from '@/lib/landscape-data'
 
 interface VendorMatrixProps {
   matrixData: VendorMatrixRow[]
-  locale: string
 }
 
-const PRODUCT_CATEGORIES: { key: ProductCategory; label: string }[] = [
-  { key: 'ide', label: 'IDE' },
-  { key: 'cli', label: 'CLI' },
-  { key: 'extension', label: 'Extension' },
-  { key: 'model', label: 'Model' },
-  { key: 'provider', label: 'Provider' },
-]
-
-const VENDOR_TYPE_LABELS: Record<string, string> = {
-  'full-stack': 'Full Stack',
-  'ai-native': 'AI Native',
-  'tool-only': 'Tool Only',
-  'model-only': 'Model Only',
-  'provider-only': 'Provider Only',
-}
+const PRODUCT_CATEGORIES: ProductCategory[] = ['ide', 'cli', 'extension', 'model', 'provider']
 
 interface MatrixCellProps {
   products: LandscapeProduct[]
   category: ProductCategory
 }
 
+/**
+ * Gets the localized label for a product category, with simple plural handling.
+ */
+function getCategoryLabel(
+  t: ReturnType<typeof useTranslations>,
+  category: ProductCategory,
+  count: number
+): string {
+  if (count === 1) {
+    return t(`categories.${category}`)
+  }
+  return t(`categoriesPlural.${category}`)
+}
+
+/**
+ * Gets the localized vendor type label. Falls back to the raw type when missing.
+ */
+function getVendorTypeLabel(t: ReturnType<typeof useTranslations>, type: string): string {
+  const key = `vendorTypes.types.${type}.label`
+  try {
+    return t(key)
+  } catch {
+    return type
+  }
+}
+
 function MatrixCell({ products, category }: MatrixCellProps) {
   const [isExpanded, setIsExpanded] = useState(false)
+  const t = useTranslations('components.vendorMatrix')
 
   if (products.length === 0) {
     return (
@@ -89,7 +102,10 @@ function MatrixCell({ products, category }: MatrixCellProps) {
           <div>
             <div className="flex items-center justify-between mb-1">
               <span className="font-medium text-sm tracking-tight">
-                {products.length} {category}s
+                {t('cell.summary', {
+                  count: products.length,
+                  category: getCategoryLabel(t, category, products.length),
+                })}
               </span>
               <span className="text-xs text-[var(--color-text-muted)]">
                 {isExpanded ? '▼' : '▶'}
@@ -126,6 +142,7 @@ function MatrixCell({ products, category }: MatrixCellProps) {
 export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
   const [selectedVendorTypes, setSelectedVendorTypes] = useState<Set<string>>(new Set())
   const [sortBy, setSortBy] = useState<'name' | 'products'>('products')
+  const t = useTranslations('components.vendorMatrix')
 
   const filteredAndSortedData = useMemo(() => {
     let filtered = matrixData
@@ -142,30 +159,28 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
       }
 
       // Define column groups: first part (high priority) and second part (low priority)
-      const FIRST_PART_CATEGORIES = PRODUCT_CATEGORIES.slice(0, 3) // IDE, CLI, Extension
-      const SECOND_PART_CATEGORIES = PRODUCT_CATEGORIES.slice(3) // Model, Provider
+      const FIRST_PART_CATEGORIES = PRODUCT_CATEGORIES.slice(0, 3) // ide, cli, extension
+      const SECOND_PART_CATEGORIES = PRODUCT_CATEGORIES.slice(3) // model, provider
 
       // Helper function to get column count for a specific set of categories
-      const getColumnCount = (row: VendorMatrixRow, categories: typeof PRODUCT_CATEGORIES) => {
-        return categories.filter(cat => row.cells[cat.key] && row.cells[cat.key].length > 0).length
+      const getColumnCount = (row: VendorMatrixRow, categories: ProductCategory[]) => {
+        return categories.filter(cat => row.cells[cat] && row.cells[cat].length > 0).length
       }
 
       // Helper function to get column order (left to right) for a specific set of categories
-      const getColumnOrder = (row: VendorMatrixRow, categories: typeof PRODUCT_CATEGORIES) => {
-        return categories
-          .filter(cat => row.cells[cat.key] && row.cells[cat.key].length > 0)
-          .map(cat => cat.key)
+      const getColumnOrder = (row: VendorMatrixRow, categories: ProductCategory[]) => {
+        return categories.filter(cat => row.cells[cat] && row.cells[cat].length > 0).map(cat => cat)
       }
 
       // Helper function to compare column order
       const compareColumnOrder = (
-        aOrder: string[],
-        bOrder: string[],
-        categories: typeof PRODUCT_CATEGORIES
+        aOrder: ProductCategory[],
+        bOrder: ProductCategory[],
+        categories: ProductCategory[]
       ) => {
         for (let i = 0; i < Math.min(aOrder.length, bOrder.length); i++) {
-          const aIndex = categories.findIndex(cat => cat.key === aOrder[i])
-          const bIndex = categories.findIndex(cat => cat.key === bOrder[i])
+          const aIndex = categories.indexOf(aOrder[i]!)
+          const bIndex = categories.indexOf(bOrder[i]!)
           if (aIndex !== bIndex) {
             return aIndex - bIndex
           }
@@ -237,7 +252,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
         {/* Vendor Type Filters */}
         <div className="flex flex-wrap gap-2 items-center">
           <span className="text-sm text-[var(--color-text-secondary)] font-light">
-            Vendor Type:
+            {t('controls.vendorTypeLabel')}
           </span>
           {vendorTypes.map(type => (
             <button
@@ -251,7 +266,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
               }`}
             >
               <span className="text-[var(--color-text-secondary)]">
-                {VENDOR_TYPE_LABELS[type] || type}
+                {getVendorTypeLabel(t, type)}
               </span>
             </button>
           ))}
@@ -261,14 +276,16 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
               onClick={() => setSelectedVendorTypes(new Set())}
               className="px-3 py-1 text-xs border border-[var(--color-border)] hover:border-[var(--color-border-strong)] hover:bg-[var(--color-hover)] text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-all"
             >
-              Clear
+              {t('controls.clear')}
             </button>
           )}
         </div>
 
         {/* Sort Controls */}
         <div className="flex gap-2 items-center">
-          <span className="text-sm text-[var(--color-text-secondary)] font-light">Sort by:</span>
+          <span className="text-sm text-[var(--color-text-secondary)] font-light">
+            {t('controls.sortByLabel')}
+          </span>
           <button
             type="button"
             onClick={() => setSortBy('name')}
@@ -278,7 +295,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
                 : 'border-[var(--color-border)] hover:bg-[var(--color-hover)]'
             }`}
           >
-            Name
+            {t('controls.sortName')}
           </button>
           <button
             type="button"
@@ -289,7 +306,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
                 : 'border-[var(--color-border)] hover:bg-[var(--color-hover)]'
             }`}
           >
-            Products
+            {t('controls.sortProducts')}
           </button>
         </div>
       </div>
@@ -301,11 +318,11 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
             {/* Table Header */}
             <div className="grid grid-cols-[200px_repeat(5,1fr)] gap-2 p-[var(--spacing-sm)] bg-[var(--color-bg-subtle)] border-b border-[var(--color-border)] sticky top-0 z-20">
               <div className="font-medium text-sm text-[var(--color-text-secondary)] px-2">
-                Vendor
+                {t('table.vendor')}
               </div>
               {PRODUCT_CATEGORIES.map(cat => (
-                <div key={cat.key} className="font-medium text-sm text-center px-2">
-                  {cat.label}
+                <div key={cat} className="font-medium text-sm text-center px-2">
+                  {t(`categories.${cat}`)}
                 </div>
               ))}
             </div>
@@ -315,7 +332,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
               <div className="space-y-2">
                 {filteredAndSortedData.length === 0 ? (
                   <div className="text-center py-12 text-[var(--color-text-muted)]">
-                    No vendors found
+                    {t('table.noVendorsFound')}
                   </div>
                 ) : (
                   filteredAndSortedData.map(row => (
@@ -329,14 +346,14 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
                           {row.vendorName}
                         </Link>
                         <span className="text-xs text-[var(--color-text-muted)]">
-                          {VENDOR_TYPE_LABELS[row.vendorType] || row.vendorType}
+                          {getVendorTypeLabel(t, row.vendorType)}
                         </span>
                       </div>
 
                       {/* Product Cells */}
                       {PRODUCT_CATEGORIES.map(cat => (
-                        <div key={cat.key}>
-                          <MatrixCell products={row.cells[cat.key]} category={cat.key} />
+                        <div key={cat}>
+                          <MatrixCell products={row.cells[cat]} category={cat} />
                         </div>
                       ))}
                     </div>
@@ -350,22 +367,29 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
 
       {/* Legend */}
       <div className="p-[var(--spacing-md)] bg-[var(--color-bg-subtle)] border border-[var(--color-border)]">
-        <p className="text-xs font-medium text-[var(--color-text-secondary)] mb-2">Vendor Types:</p>
+        <p className="text-xs font-medium text-[var(--color-text-secondary)] mb-2">
+          {t('vendorTypes.label')}
+        </p>
         <div className="flex flex-wrap gap-4 text-xs font-light text-[var(--color-text-secondary)]">
           <span>
-            <span className="font-medium">Full Stack:</span> IDE + CLI + Extension
+            <span className="font-medium">{t('vendorTypes.types.full-stack.label')}:</span>{' '}
+            {t('vendorTypes.types.full-stack.description')}
           </span>
           <span>
-            <span className="font-medium">AI Native:</span> Model + Development Tools
+            <span className="font-medium">{t('vendorTypes.types.ai-native.label')}:</span>{' '}
+            {t('vendorTypes.types.ai-native.description')}
           </span>
           <span>
-            <span className="font-medium">Tool Only:</span> IDE/CLI/Extension
+            <span className="font-medium">{t('vendorTypes.types.tool-only.label')}:</span>{' '}
+            {t('vendorTypes.types.tool-only.description')}
           </span>
           <span>
-            <span className="font-medium">Model Only:</span> Model (with or without Provider)
+            <span className="font-medium">{t('vendorTypes.types.model-only.label')}:</span>{' '}
+            {t('vendorTypes.types.model-only.description')}
           </span>
           <span>
-            <span className="font-medium">Provider Only:</span> Provider only
+            <span className="font-medium">{t('vendorTypes.types.provider-only.label')}:</span>{' '}
+            {t('vendorTypes.types.provider-only.description')}
           </span>
         </div>
       </div>

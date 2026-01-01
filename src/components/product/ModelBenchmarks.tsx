@@ -1,12 +1,9 @@
+import { useTranslations } from 'next-intl'
 import { BENCHMARK_KEYS, formatBenchmarkValue, hasBenchmarks } from '@/lib/benchmarks'
 import type { ManifestModel } from '@/types/manifests'
 
 export interface ModelBenchmarksProps {
   benchmarks: ManifestModel['benchmarks']
-  translations: {
-    title: string
-    [key: string]: string
-  }
 }
 
 /**
@@ -14,7 +11,8 @@ export interface ModelBenchmarksProps {
  *
  * Displays performance benchmark scores for AI models.
  */
-export function ModelBenchmarks({ benchmarks, translations }: ModelBenchmarksProps) {
+export function ModelBenchmarks({ benchmarks }: ModelBenchmarksProps) {
+  const t = useTranslations('components.modelBenchmarks')
   if (!benchmarks || !hasBenchmarks(benchmarks)) {
     return null
   }
@@ -23,7 +21,7 @@ export function ModelBenchmarks({ benchmarks, translations }: ModelBenchmarksPro
     <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
         <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-sm)]">
-          {translations.title}
+          {t('title')}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[var(--spacing-md)] mt-[var(--spacing-lg)]">
@@ -34,14 +32,12 @@ export function ModelBenchmarks({ benchmarks, translations }: ModelBenchmarksPro
             return (
               <div key={key} className="border border-[var(--color-border)] p-[var(--spacing-md)]">
                 <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
-                  {translations[key]}
+                  {t(key)}
                 </h3>
                 <p className="text-lg font-semibold tracking-tight mb-1">
                   {formatBenchmarkValue(key, value)}
                 </p>
-                <p className="text-xs text-[var(--color-text-muted)]">
-                  {translations[`${key}Desc`]}
-                </p>
+                <p className="text-xs text-[var(--color-text-muted)]">{t(`${key}Desc`)}</p>
               </div>
             )
           })}

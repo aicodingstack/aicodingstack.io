@@ -84,19 +84,23 @@ export function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
               return (
                 <span
                   key={`${item.href}-${index}`}
-                  className="inline-flex items-center gap-[var(--spacing-xs)]"
+                  className={`inline-flex items-center ${isLast ? 'text-[var(--color-text)] font-medium' : ''}`}
                 >
                   {isLast ? (
-                    <span className="text-[var(--color-text)] font-medium">{item.name}</span>
+                    item.name
                   ) : (
-                    <Link
-                      href={normalizedHref}
-                      className="text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
-                    >
-                      {item.name}
-                    </Link>
+                    <>
+                      <Link
+                        href={normalizedHref}
+                        className="text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
+                      >
+                        {item.name}
+                      </Link>
+                      <span className="text-[var(--color-text-muted)] ml-[var(--spacing-xs)]">
+                        /
+                      </span>
+                    </>
                   )}
-                  {!isLast && <span className="text-[var(--color-text-muted)]">/</span>}
                 </span>
               )
             })}

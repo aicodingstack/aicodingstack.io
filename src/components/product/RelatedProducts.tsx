@@ -5,13 +5,19 @@ import { Link } from '@/i18n/navigation'
 import type { ManifestCLI, ManifestExtension, ManifestIDE } from '@/types/manifests'
 
 export interface RelatedProductsProps {
-  products: Array<{
+  products?: Array<{
     type: 'ide' | 'cli' | 'extension'
     data: ManifestIDE | ManifestCLI | ManifestExtension | null
   }>
 }
 
-export function RelatedProducts({ products }: RelatedProductsProps) {
+/**
+ * Render a "Related Products" section.
+ *
+ * This component is intentionally defensive: it filters out null product data and returns `null`
+ * when there is nothing meaningful to display, so callers don't need conditional rendering.
+ */
+export function RelatedProducts({ products = [] }: RelatedProductsProps) {
   const t = useTranslations('components.relatedProducts')
 
   // Filter out products with null data
