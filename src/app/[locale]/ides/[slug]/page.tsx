@@ -107,41 +107,43 @@ export default async function IDEPage({
     <PageLayout schema={schema}>
       <Breadcrumb items={breadcrumbItems} />
 
-      <ProductHero
-        name={ide.name}
-        description={ide.description}
-        vendor={ide.vendor}
-        category="IDE"
-        categoryLabel={t('categoryLabel')}
-        verified={ide.verified ?? false}
-        latestVersion={ide.latestVersion}
-        license={ide.license}
-        githubStars={getGithubStars('ides', ide.id)}
-        platforms={ide.platforms?.map(p => p.os)}
-        websiteUrl={websiteUrl}
-        docsUrl={docsUrl}
-        downloadUrl={downloadUrl}
-        labels={{
-          vendor: t('vendor'),
-          version: t('version'),
-          license: t('license'),
-          stars: t('stars'),
-          platforms: t('platforms'),
-          visitWebsite: t('visitWebsite'),
-          documentation: t('documentation'),
-          download: t('download'),
-        }}
-      />
+      <main className="max-w-8xl mx-auto px-[var(--spacing-md)]">
+        <ProductHero
+          name={ide.name}
+          description={ide.description}
+          vendor={ide.vendor}
+          category="IDE"
+          categoryLabel={t('categoryLabel')}
+          verified={ide.verified ?? false}
+          latestVersion={ide.latestVersion}
+          license={ide.license}
+          githubStars={getGithubStars('ides', ide.id)}
+          platforms={ide.platforms?.map(p => p.os)}
+          websiteUrl={websiteUrl}
+          docsUrl={docsUrl}
+          downloadUrl={downloadUrl}
+          labels={{
+            vendor: t('vendor'),
+            version: t('version'),
+            license: t('license'),
+            stars: t('stars'),
+            platforms: t('platforms'),
+            visitWebsite: t('visitWebsite'),
+            documentation: t('documentation'),
+            download: t('download'),
+          }}
+        />
 
-      {relatedProducts.length > 0 && <RelatedProducts products={relatedProducts} />}
+        <RelatedProducts products={relatedProducts} />
 
-      <ProductPricing pricing={ide.pricing} pricingUrl={pricingUrl} />
+        <ProductPricing pricing={ide.pricing} pricingUrl={pricingUrl} />
 
-      <ProductLinks resourceUrls={ide.resourceUrls} communityUrls={ide.communityUrls} />
+        <ProductLinks resourceUrls={ide.resourceUrls} communityUrls={ide.communityUrls} />
 
-      <ProductCommands install={ide.installCommand} launch={ide.launchCommand} />
+        <ProductCommands install={ide.installCommand} launch={ide.launchCommand} />
 
-      <BackToNavigation href="/ides" title={t('allIDEs')} />
+        <BackToNavigation href="/ides" title={t('allIDEs')} />
+      </main>
     </PageLayout>
   )
 }

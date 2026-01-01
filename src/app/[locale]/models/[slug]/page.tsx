@@ -124,24 +124,24 @@ export default async function ModelPage({
     <PageLayout schema={schema}>
       <Breadcrumb items={breadcrumbItems} />
 
-      <ProductHero
-        name={model.name}
-        description={`by ${model.vendor}`}
-        vendor={model.vendor}
-        category="MODEL"
-        categoryLabel={t('categoryLabel')}
-        verified={model.verified ?? false}
-        additionalInfo={additionalInfo}
-        websiteUrl={model.websiteUrl || undefined}
-        docsUrl={model.docsUrl || undefined}
-        labels={{
-          vendor: t('vendor'),
-          visitWebsite: t('visitWebsite'),
-          documentation: t('labels.documentation'),
-        }}
-      />
+      <main className="max-w-8xl mx-auto px-[var(--spacing-md)]">
+        <ProductHero
+          name={model.name}
+          description={`by ${model.vendor}`}
+          vendor={model.vendor}
+          category="MODEL"
+          categoryLabel={t('categoryLabel')}
+          verified={model.verified ?? false}
+          additionalInfo={additionalInfo}
+          websiteUrl={model.websiteUrl || undefined}
+          docsUrl={model.docsUrl || undefined}
+          labels={{
+            vendor: t('vendor'),
+            visitWebsite: t('visitWebsite'),
+            documentation: t('labels.documentation'),
+          }}
+        />
 
-      {model.platformUrls && (
         <PlatformLinks
           platformUrls={model.platformUrls}
           title={t('findOnAiPlatforms')}
@@ -149,44 +149,13 @@ export default async function ModelPage({
           layout="horizontal"
           gridCols="grid-cols-1 md:grid-cols-3"
         />
-      )}
 
-      <ModelSpecifications
-        model={model}
-        translations={{
-          title: t('specifications'),
-          modelSize: t('modelSize'),
-          contextWindow: t('contextWindow'),
-          maxOutput: t('maxOutput'),
-          pricing: t('pricing'),
-          input: t('input'),
-          output: t('output'),
-          cache: t('cache'),
-        }}
-      />
+        <ModelSpecifications model={model} />
 
-      <ModelBenchmarks
-        benchmarks={model.benchmarks}
-        translations={{
-          title: t('benchmarks.title'),
-          sweBench: t('benchmarks.sweBench'),
-          sweBenchDesc: t('benchmarks.sweBenchDesc'),
-          terminalBench: t('benchmarks.terminalBench'),
-          terminalBenchDesc: t('benchmarks.terminalBenchDesc'),
-          mmmu: t('benchmarks.mmmu'),
-          mmmuDesc: t('benchmarks.mmmuDesc'),
-          mmmuPro: t('benchmarks.mmmuPro'),
-          mmmuProDesc: t('benchmarks.mmmuProDesc'),
-          webDevArena: t('benchmarks.webDevArena'),
-          webDevArenaDesc: t('benchmarks.webDevArenaDesc'),
-          sciCode: t('benchmarks.sciCode'),
-          sciCodeDesc: t('benchmarks.sciCodeDesc'),
-          liveCodeBench: t('benchmarks.liveCodeBench'),
-          liveCodeBenchDesc: t('benchmarks.liveCodeBenchDesc'),
-        }}
-      />
+        <ModelBenchmarks benchmarks={model.benchmarks} />
 
-      <BackToNavigation href="/models" title={t('allModels')} />
+        <BackToNavigation href="/models" title={t('allModels')} />
+      </main>
     </PageLayout>
   )
 }

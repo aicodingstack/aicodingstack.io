@@ -106,42 +106,43 @@ export default async function CLIPage({
   return (
     <PageLayout schema={schema}>
       <Breadcrumb items={breadcrumbItems} />
+      <main className="max-w-8xl mx-auto px-[var(--spacing-md)]">
+        <ProductHero
+          name={cli.name}
+          description={cli.description}
+          vendor={cli.vendor}
+          category="CLI"
+          categoryLabel={t('categoryLabel')}
+          verified={cli.verified ?? false}
+          latestVersion={cli.latestVersion}
+          license={cli.license}
+          githubStars={getGithubStars('clis', cli.id)}
+          platforms={cli.platforms?.map(p => p.os)}
+          websiteUrl={websiteUrl}
+          docsUrl={docsUrl}
+          downloadUrl={downloadUrl}
+          labels={{
+            vendor: t('vendor'),
+            version: t('version'),
+            license: t('license'),
+            stars: t('stars'),
+            platforms: t('platforms'),
+            visitWebsite: t('visitWebsite'),
+            documentation: t('documentation'),
+            download: t('download'),
+          }}
+        />
 
-      <ProductHero
-        name={cli.name}
-        description={cli.description}
-        vendor={cli.vendor}
-        category="CLI"
-        categoryLabel={t('categoryLabel')}
-        verified={cli.verified ?? false}
-        latestVersion={cli.latestVersion}
-        license={cli.license}
-        githubStars={getGithubStars('clis', cli.id)}
-        platforms={cli.platforms?.map(p => p.os)}
-        websiteUrl={websiteUrl}
-        docsUrl={docsUrl}
-        downloadUrl={downloadUrl}
-        labels={{
-          vendor: t('vendor'),
-          version: t('version'),
-          license: t('license'),
-          stars: t('stars'),
-          platforms: t('platforms'),
-          visitWebsite: t('visitWebsite'),
-          documentation: t('documentation'),
-          download: t('download'),
-        }}
-      />
+        <RelatedProducts products={relatedProducts} />
 
-      {relatedProducts.length > 0 && <RelatedProducts products={relatedProducts} />}
+        <ProductPricing pricing={cli.pricing} pricingUrl={pricingUrl} />
 
-      <ProductPricing pricing={cli.pricing} pricingUrl={pricingUrl} />
+        <ProductLinks resourceUrls={cli.resourceUrls} communityUrls={cli.communityUrls} />
 
-      <ProductLinks resourceUrls={cli.resourceUrls} communityUrls={cli.communityUrls} />
+        <ProductCommands install={cli.installCommand} launch={cli.launchCommand} />
 
-      <ProductCommands install={cli.installCommand} launch={cli.launchCommand} />
-
-      <BackToNavigation href="/clis" title={t('allCLIs')} />
+        <BackToNavigation href="/clis" title={t('allCLIs')} />
+      </main>
     </PageLayout>
   )
 }

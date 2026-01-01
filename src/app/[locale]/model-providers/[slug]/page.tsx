@@ -134,26 +134,26 @@ export default async function ProviderPage({
     <PageLayout schema={schema}>
       <Breadcrumb items={breadcrumbItems} />
 
-      <ProductHero
-        name={provider.name}
-        description={provider.description}
-        category="PROVIDER"
-        categoryLabel={t('categoryLabel')}
-        verified={provider.verified ?? false}
-        type={provider.type}
-        websiteUrl={provider.websiteUrl}
-        docsUrl={provider.docsUrl ?? null}
-        applyKeyUrl={provider.applyKeyUrl}
-        labels={{
-          type: t('type'),
-          typeValue: provider.type ? t(`providerTypes.${provider.type}`) : undefined,
-          visitWebsite: t('visitWebsite'),
-          documentation: t('documentation'),
-          getApiKey: t('getApiKey'),
-        }}
-      />
+      <main className="max-w-8xl mx-auto px-[var(--spacing-md)]">
+        <ProductHero
+          name={provider.name}
+          description={provider.description}
+          category="PROVIDER"
+          categoryLabel={t('categoryLabel')}
+          verified={provider.verified ?? false}
+          type={provider.type}
+          websiteUrl={provider.websiteUrl}
+          docsUrl={provider.docsUrl ?? null}
+          applyKeyUrl={provider.applyKeyUrl}
+          labels={{
+            type: t('type'),
+            typeValue: provider.type ? t(`providerTypes.${provider.type}`) : undefined,
+            visitWebsite: t('visitWebsite'),
+            documentation: t('documentation'),
+            getApiKey: t('getApiKey'),
+          }}
+        />
 
-      {provider.platformUrls && (
         <PlatformLinks
           platformUrls={provider.platformUrls}
           title={t('findOnAiPlatforms')}
@@ -161,9 +161,7 @@ export default async function ProviderPage({
           layout="horizontal"
           gridCols="grid-cols-1 md:grid-cols-3"
         />
-      )}
 
-      {provider.communityUrls && (
         <CommunityLinks
           communityUrls={provider.communityUrls}
           title={t('communityLinks')}
@@ -171,9 +169,9 @@ export default async function ProviderPage({
           layout="vertical"
           gridCols="grid-cols-2 md:grid-cols-4"
         />
-      )}
 
-      <BackToNavigation href="/model-providers" title={t('allModelProviders')} />
+        <BackToNavigation href="/model-providers" title={t('allModelProviders')} />
+      </main>
     </PageLayout>
   )
 }

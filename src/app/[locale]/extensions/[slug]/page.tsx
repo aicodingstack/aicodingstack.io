@@ -128,40 +128,45 @@ export default async function ExtensionPage({
     <PageLayout schema={schema}>
       <Breadcrumb items={breadcrumbItems} />
 
-      <ProductHero
-        name={extension.name}
-        description={extension.description}
-        vendor={extension.vendor}
-        category="IDE"
-        categoryLabel={t('categoryLabel')}
-        verified={extension.verified ?? false}
-        latestVersion={extension.latestVersion}
-        license={extension.license}
-        githubStars={getGithubStars('extensions', extension.id)}
-        additionalInfo={additionalInfo}
-        websiteUrl={websiteUrl}
-        docsUrl={docsUrl}
-        downloadUrl={downloadUrl}
-        labels={{
-          vendor: t('vendor'),
-          version: t('version'),
-          license: t('license'),
-          stars: t('stars'),
-          visitWebsite: t('visitWebsite'),
-          documentation: t('documentation'),
-          download: t('download'),
-        }}
-      />
+      <main className="max-w-8xl mx-auto px-[var(--spacing-md)]">
+        <ProductHero
+          name={extension.name}
+          description={extension.description}
+          vendor={extension.vendor}
+          category="IDE"
+          categoryLabel={t('categoryLabel')}
+          verified={extension.verified ?? false}
+          latestVersion={extension.latestVersion}
+          license={extension.license}
+          githubStars={getGithubStars('extensions', extension.id)}
+          additionalInfo={additionalInfo}
+          websiteUrl={websiteUrl}
+          docsUrl={docsUrl}
+          downloadUrl={downloadUrl}
+          labels={{
+            vendor: t('vendor'),
+            version: t('version'),
+            license: t('license'),
+            stars: t('stars'),
+            visitWebsite: t('visitWebsite'),
+            documentation: t('documentation'),
+            download: t('download'),
+          }}
+        />
 
-      {relatedProducts.length > 0 && <RelatedProducts products={relatedProducts} />}
+        <RelatedProducts products={relatedProducts} />
 
-      <ProductPricing pricing={extension.pricing} pricingUrl={pricingUrl} />
+        <ProductPricing pricing={extension.pricing} pricingUrl={pricingUrl} />
 
-      <ProductLinks resourceUrls={extension.resourceUrls} communityUrls={extension.communityUrls} />
+        <ProductLinks
+          resourceUrls={extension.resourceUrls}
+          communityUrls={extension.communityUrls}
+        />
 
-      <ProductCommands install={extension.installCommand} launch={extension.launchCommand} />
+        <ProductCommands install={extension.installCommand} launch={extension.launchCommand} />
 
-      <BackToNavigation href="/extensions" title={t('allExtensions')} />
+        <BackToNavigation href="/extensions" title={t('allExtensions')} />
+      </main>
     </PageLayout>
   )
 }

@@ -41,17 +41,15 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header />
-      <div className="max-w-8xl mx-auto px-[var(--spacing-md)] py-[var(--spacing-lg)]">
+      <main className="max-w-8xl mx-auto px-[var(--spacing-md)] pt-[var(--spacing-lg)]">
         <PageHeader title={tNav('aiCodingLandscape')} subtitle={tNav('aiCodingLandscapeDesc')} />
 
         {/* Vendor Matrix */}
-        <VendorMatrix matrixData={matrixData} locale={locale} />
+        <VendorMatrix matrixData={matrixData} />
 
         {/* Back to Overview */}
-        <div className="mt-[var(--spacing-xl)]">
-          <BackToNavigation href="/ai-coding-stack" title={tOverview('overviewTitle')} />
-        </div>
-      </div>
+        <BackToNavigation href="/ai-coding-stack" title={tOverview('overviewTitle')} />
+      </main>
       <Footer />
     </>
   )

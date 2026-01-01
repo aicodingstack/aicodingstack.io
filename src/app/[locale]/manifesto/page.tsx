@@ -32,36 +32,32 @@ export default async function ManifestoPage({ params }: LocalePageProps) {
     <>
       <Header />
 
-      <div className="max-w-6xl mx-auto px-[var(--spacing-md)] pt-[var(--spacing-lg)]">
-        <main>
-          <PageHeader title={t('title')} subtitle={t('slogan')} />
+      <main className="max-w-6xl mx-auto px-[var(--spacing-md)] pt-[var(--spacing-lg)]">
+        <PageHeader title={t('title')} subtitle={t('slogan')} />
 
-          {/* Manifesto Content */}
-          <section className="prose prose-neutral dark:prose-invert max-w-none mb-[var(--spacing-xl)]">
-            <ManifestoContent />
-          </section>
+        {/* Manifesto Content */}
+        <section className="prose prose-neutral dark:prose-invert max-w-none mb-[var(--spacing-xl)]">
+          <ManifestoContent />
+        </section>
 
-          {/* Explore AI Coding Stack Link */}
-          <section className="mb-[var(--spacing-xl)]">
-            <Link
-              href="/ai-coding-stack"
-              className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-1 group"
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-xs)]">
-                    {tStack('title')}
-                  </h2>
-                  <p className="text-sm text-[var(--color-text-secondary)]">{tStack('subtitle')}</p>
-                </div>
-                <span className="text-4xl text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-2 transition-all">
-                  →
-                </span>
-              </div>
-            </Link>
-          </section>
-        </main>
-      </div>
+        {/* Explore AI Coding Stack Link */}
+        <Link
+          href="/ai-coding-stack"
+          className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-1 group mb-[var(--spacing-xl)]"
+        >
+          <div className="flex items-center justify-between">
+            <div>
+              <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-xs)]">
+                {tStack('title')}
+              </h2>
+              <p className="text-sm text-[var(--color-text-secondary)]">{tStack('subtitle')}</p>
+            </div>
+            <span className="text-4xl text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-2 transition-all">
+              →
+            </span>
+          </div>
+        </Link>
+      </main>
 
       <Footer />
     </>

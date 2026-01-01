@@ -33,43 +33,37 @@ export default async function AICodingStackPage({ params }: LocalePageProps) {
     <>
       <Header />
 
-      <div className="max-w-8xl mx-auto px-[var(--spacing-md)] py-[var(--spacing-lg)]">
-        <main>
-          <PageHeader title={t('title')} subtitle={t('subtitle')} />
+      <main className="max-w-8xl mx-auto px-[var(--spacing-md)] py-[var(--spacing-lg)]">
+        <PageHeader title={t('title')} subtitle={t('subtitle')} />
 
-          {/* Stacks Grid Section */}
-          <section className="mb-[var(--spacing-xl)]">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-[var(--spacing-md)]">
-              {[
-                { key: 'ides', path: 'ides' },
-                { key: 'clis', path: 'clis' },
-                { key: 'extensions', path: 'extensions' },
-                { key: 'models', path: 'models' },
-                { key: 'modelProviders', path: 'model-providers' },
-                { key: 'vendors', path: 'vendors' },
-              ].map(stack => (
-                <Link
-                  key={stack.key}
-                  href={`/${stack.path}`}
-                  className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5 group"
-                >
-                  <div className="flex justify-between items-start mb-[var(--spacing-md)]">
-                    <h3 className="text-2xl font-semibold tracking-tight">
-                      {t(`${stack.key}.title`)}
-                    </h3>
-                    <span className="text-2xl text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all">
-                      →
-                    </span>
-                  </div>
-                  <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] font-light">
-                    {t(`${stack.key}.description`)}
-                  </p>
-                </Link>
-              ))}
-            </div>
-          </section>
-        </main>
-      </div>
+        {/* Stacks Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[var(--spacing-md)]">
+          {[
+            { key: 'ides', path: 'ides' },
+            { key: 'clis', path: 'clis' },
+            { key: 'extensions', path: 'extensions' },
+            { key: 'models', path: 'models' },
+            { key: 'modelProviders', path: 'model-providers' },
+            { key: 'vendors', path: 'vendors' },
+          ].map(stack => (
+            <Link
+              key={stack.key}
+              href={`/${stack.path}`}
+              className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5 group"
+            >
+              <div className="flex justify-between items-start mb-[var(--spacing-md)]">
+                <h3 className="text-2xl font-semibold tracking-tight">{t(`${stack.key}.title`)}</h3>
+                <span className="text-2xl text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all">
+                  →
+                </span>
+              </div>
+              <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] font-light">
+                {t(`${stack.key}.description`)}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </main>
 
       <Footer />
     </>
