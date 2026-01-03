@@ -1,6 +1,7 @@
 name = "aicodingstack"
 main = ".open-next/worker.js"
 compatibility_date = "2025-11-01"
+preview_urls = true
 compatibility_flags = [
   "nodejs_compat",
   "global_fetch_strictly_public",

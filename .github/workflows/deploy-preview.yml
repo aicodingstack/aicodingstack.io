@@ -38,12 +38,17 @@ jobs:
             CONTEXT_LABEL="Branch $RAW_BRANCH"
           fi
 
-          WORKER_NAME="aicodingstack-$CF_BRANCH"
-          PREVIEW_URL="https://${WORKER_NAME}.pr-preview.workers.dev"
+          # Cloudflare Preview URLs (aliased) format:
+          # <ALIAS>-<WORKER_NAME>.<SUBDOMAIN>.workers.dev
+          # See: https://developers.cloudflare.com/workers/configuration/previews/
+          PREVIEW_ALIAS="$CF_BRANCH"
+          WORKER_NAME="aicodingstack"
+          PREVIEW_URL="https://${PREVIEW_ALIAS}-${WORKER_NAME}.pr-preview.workers.dev"
 
           {
             echo "cf_branch=$CF_BRANCH"
             echo "worker_name=$WORKER_NAME"
+            echo "preview_alias=$PREVIEW_ALIAS"
             echo "preview_url=$PREVIEW_URL"
             echo "context_label=$CONTEXT_LABEL"
           } >> "$GITHUB_OUTPUT"
@@ -70,7 +75,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy --branch ${{ steps.preview_meta.outputs.cf_branch }}
+          command: versions upload --preview-alias ${{ steps.preview_meta.outputs.preview_alias }}
 
       - name: Comment Preview URL
         if: github.event_name == 'pull_request'
