@@ -1,14 +1,11 @@
 name = "aicodingstack"
 main = ".open-next/worker.js"
 compatibility_date = "2025-11-01"
+preview_urls = true
 compatibility_flags = [
   "nodejs_compat",
   "global_fetch_strictly_public",
 ]
-
-[[routes]]
-pattern = "aicodingstack.io"
-custom_domain = true
 
 [assets]
 binding = "ASSETS"
@@ -25,3 +22,17 @@ mode = "smart"
 
 [limits]
 cpu_ms = 50
+
+# ============ Production ============
+[env.production]
+name = "aicodingstack"
+[[env.production.routes]]
+pattern = "aicodingstack.io"
+custom_domain = true
+
+# ============ Staging ============
+[env.staging]
+name = "aicodingstack-staging"
+[[env.staging.routes]]
+pattern = "staging.aicodingstack.io"
+custom_domain = true
