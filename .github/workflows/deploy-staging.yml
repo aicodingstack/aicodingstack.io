@@ -1,23 +1,23 @@
-name: Deploy Production
+name: Deploy Staging
 
 on:
   push:
-    branches: [main]
+    branches: [develop]
 
 concurrency:
-  group: production-deploy
-  cancel-in-progress: false
+  group: staging-deploy
+  cancel-in-progress: true
 
 jobs:
-  deploy-production:
-    name: Deploy to Cloudflare Workers
+  deploy-staging:
+    name: Deploy to Cloudflare Workers (Staging)
     runs-on: ubuntu-latest
     permissions:
       contents: read
       deployments: write
     environment:
-      name: production
-      url: https://aicodingstack.io
+      name: staging
+      url: https://staging.aicodingstack.io
 
     steps:
       - name: Checkout code
@@ -40,17 +40,17 @@ jobs:
         env:
           BUILD_TIME: ${{ github.event.head_commit.timestamp }}
 
-      - name: Deploy to Production
+      - name: Deploy to Staging
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy --env production
+          command: deploy --env staging
 
       - name: Deployment summary
         run: |
-          echo "### Production Deployment" >> $GITHUB_STEP_SUMMARY
+          echo "### Staging Deployment" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- **URL:** https://aicodingstack.io" >> $GITHUB_STEP_SUMMARY
+          echo "- **URL:** https://staging.aicodingstack.io" >> $GITHUB_STEP_SUMMARY
           echo "- **Commit:** ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Time:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY

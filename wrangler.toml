@@ -6,10 +6,6 @@ compatibility_flags = [
   "global_fetch_strictly_public",
 ]
 
-[[routes]]
-pattern = "aicodingstack.io"
-custom_domain = true
-
 [assets]
 binding = "ASSETS"
 directory = ".open-next/assets"
@@ -25,3 +21,17 @@ mode = "smart"
 
 [limits]
 cpu_ms = 50
+
+# ============ Production ============
+[env.production]
+name = "aicodingstack"
+[[env.production.routes]]
+pattern = "aicodingstack.io"
+custom_domain = true
+
+# ============ Staging ============
+[env.staging]
+name = "aicodingstack-staging"
+[[env.staging.routes]]
+pattern = "staging.aicodingstack.io"
+custom_domain = true
