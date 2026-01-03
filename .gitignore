@@ -47,7 +47,7 @@ next-env.d.ts
 !.env.example
 
 # claude settings
-.claude/settings.local.*.json
+.claude/settings.local*.json
 
 # python cache
 __pycache__/
