@@ -3,6 +3,9 @@
     "backTo": "@:shared.actions.backTo",
     "indexLabel": "@:shared.common.indexLabel"
   },
+  "breadcrumb": {
+    "home": "Home"
+  },
   "collectionScrollbar": {
     "articles": "@:shared.common.featuredArticles",
     "specifications": "@:shared.common.specificationsProtocols",
@@ -93,6 +96,36 @@
     "install": "Install",
     "launch": "Launch"
   },
+  "vendorProducts": {
+    "title": "Products"
+  },
+  "vendorModels": {
+    "title": "Models"
+  },
+  "platformLinks": {
+    "title": "Find on AI Platforms",
+    "aiPlatforms": {
+      "huggingface": {
+        "title": "Hugging Face",
+        "description": "View model card and weights"
+      },
+      "artificialAnalysis": {
+        "title": "Artificial Analysis",
+        "description": "AI model leaderboard and benchmarks"
+      },
+      "openrouter": {
+        "title": "OpenRouter",
+        "description": "Compare and use multiple AI models"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "Loading star history...",
+    "title": "GitHub Star History",
+    "description": "Star growth trend over time",
+    "stars": "stars",
+    "fallbackNote": "Note: Displaying sample data. Star history API temporarily unavailable."
+  },
   "productHero": {
     "categories": {
       "CLI": "@:shared.stack.cli",
@@ -119,21 +152,38 @@
     "version": "Version",
     "visitWebsite": "Visit Website"
   },
-  "productLinks": {
+  "communityLinks": {
     "blog": "Blog",
-    "changelog": "Changelog",
+    "blogDescription": "Read blog posts",
     "community": "@:shared.common.community",
     "discord": "@:shared.platforms.discord",
-    "download": "@:shared.actions.download",
+    "discordDescription": "Join community",
     "github": "@:shared.platforms.github",
-    "issue": "Issue Tracker",
+    "githubDescription": "View repos",
     "linkedin": "@:shared.platforms.linkedin",
-    "mcp": "MCP Documentation",
-    "pricing": "@:shared.common.pricing",
+    "linkedinDescription": "@:shared.common.followUs",
     "reddit": "@:shared.platforms.reddit",
-    "resources": "@:shared.common.resources",
+    "redditDescription": "Join discussion",
     "twitter": "@:shared.platforms.twitter",
-    "youtube": "@:shared.platforms.youtube"
+    "twitterDescription": "@:shared.common.followUs",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "Watch videos"
+  },
+  "resourceLinks": {
+    "changelog": "Changelog",
+    "changelogDescription": "View changelog",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "Download latest version",
+    "issue": "Issue Tracker",
+    "issueDescription": "Report bugs and request features",
+    "mcp": "MCP Documentation",
+    "mcpDescription": "Learn about MCP integration",
+    "pricing": "@:shared.common.pricing",
+    "pricingDescription": "View pricing plans"
+  },
+  "resources": {
+    "community": "@:shared.common.community",
+    "resources": "@:shared.common.resources"
   },
   "productPricing": {
     "title": "@:shared.common.pricing",

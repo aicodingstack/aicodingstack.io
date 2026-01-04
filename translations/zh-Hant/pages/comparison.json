@@ -1,43 +1,58 @@
 {
   "clis": {
-    "backTo": "回到 CLI",
-    "subtitle": "並排比較 AI 編碼 CLI 工具的功能、定價和規格。",
+    "backTo": "返回 CLI",
+    "subtitle": "並排比較 AI 編碼 CLI 工具的功能、價格和規格。",
     "title": "CLI 比較"
   },
   "columns": {
-    "contextLength": "上下文長度",
-    "freePlan": "免費計劃",
-    "githubStars": "@:components.productHero.stars",
-    "license": "@:components.productHero.license",
+    "cache": "快取",
+    "capabilities": "功能",
+    "contextLength": "內容長度",
+    "freePlan": "免費方案",
+    "githubStars": "Stars",
+    "input": "輸入",
+    "inputModalities": "輸入模態",
+    "license": "授權",
     "links": "連結",
-    "maxOutput": "@:shared.common.maxOutput",
-    "maxPrice": "最高價",
-    "modelSize": "@:shared.common.modelSize",
-    "platforms": "@:components.productHero.platforms",
-    "pricing": "@:shared.common.pricing",
-    "startingPrice": "起步價",
-    "supportedIdes": "@:components.productHero.supportedIdes",
-    "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version"
+    "live-code-bench": "Live Code Bench",
+    "maxOutput": "最大輸出",
+    "maxPrice": "最高價格",
+    "mmmu": "MMMU",
+    "mmmu-pro": "MMMU Pro",
+    "modelSize": "模型大小",
+    "output": "輸出",
+    "platforms": "平台",
+    "pricing": "價格",
+    "pricingCache": "快取價格",
+    "pricingInput": "輸入價格",
+    "pricingOutput": "輸出價格",
+    "sci-code": "SciCode",
+    "startingPrice": "起價",
+    "supportedIdes": "支援的 IDE",
+    "swe-bench": "SWE-bench",
+    "terminal-bench": "Terminal Bench",
+    "vendor": "供應商",
+    "version": "版本",
+    "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
-    "backTo": "回到擴充功能",
-    "subtitle": "並排比較 AI 編碼擴充功能的功能、定價和規格。",
-    "title": "擴充功能比較"
+    "backTo": "返回擴充套件",
+    "subtitle": "並排比較 AI 編碼擴充套件的功能、價格和規格。",
+    "title": "擴充套件比較"
   },
   "ides": {
-    "backTo": "回到 IDE",
-    "subtitle": "並排比較 AI 增強 IDE 的功能、定價和規格。",
+    "backTo": "返回 IDE",
+    "subtitle": "並排比較 AI 驅動 IDE 的功能、價格和規格。",
     "title": "IDE 比較"
   },
   "linkTitles": {
-    "documentation": "@:components.productHero.documentation",
-    "download": "@:components.productHero.download",
-    "officialWebsite": "@:components.productHero.visitWebsite"
+    "documentation": "文件",
+    "download": "下載",
+    "officialWebsite": "官方網站"
   },
   "models": {
-    "backTo": "回到模型",
-    "subtitle": "並排比較 AI 編碼模型的規格和定價。",
+    "backTo": "返回模型",
+    "subtitle": "並排比較 AI 編碼模型的規格和價格。",
     "title": "模型比較"
   },
   "pricingValues": {

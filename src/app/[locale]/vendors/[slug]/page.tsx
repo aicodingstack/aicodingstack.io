@@ -96,45 +96,6 @@ export default async function VendorPage({
     locale: locale as 'en' | 'zh-Hans' | 'de' | 'ko',
   })
 
-  // Build community links configuration
-  const communityLinks = [
-    {
-      key: 'linkedin',
-      title: t('community.linkedin.title'),
-      description: t('community.linkedin.description'),
-    },
-    {
-      key: 'twitter',
-      title: t('community.twitter.title'),
-      description: t('community.twitter.description'),
-    },
-    {
-      key: 'github',
-      title: t('community.github.title'),
-      description: t('community.github.description'),
-    },
-    {
-      key: 'youtube',
-      title: t('community.youtube.title'),
-      description: t('community.youtube.description'),
-    },
-    {
-      key: 'discord',
-      title: t('community.discord.title'),
-      description: t('community.discord.description'),
-    },
-    {
-      key: 'reddit',
-      title: t('community.reddit.title'),
-      description: t('community.reddit.description'),
-    },
-    {
-      key: 'blog',
-      title: t('community.blog.title'),
-      description: t('community.blog.description'),
-    },
-  ]
-
   // Find all products by this vendor
   // Note: Products store vendor.name, not vendor.id, so we match against vendor.name
   const vendorIdes = findVendorItems<ManifestIDE>(ides, vendor.name, locale as Locale).map(ide => ({
@@ -178,22 +139,16 @@ export default async function VendorPage({
         verified={vendor.verified ?? false}
         websiteUrl={vendor.websiteUrl}
         docsUrl={vendor.docsUrl ?? null}
-        labels={{
-          visitWebsite: t('visitWebsite'),
-          documentation: t('documentation'),
-        }}
       />
 
       {/* Vendor Products (IDEs, CLIs, Extensions) */}
-      <VendorProducts products={vendorProducts} locale={locale} title={t('products')} />
+      <VendorProducts products={vendorProducts} />
 
       {/* Vendor Models */}
-      <VendorModels models={vendorModels} locale={locale} title={t('models')} />
+      <VendorModels models={vendorModels} />
 
       <CommunityLinks
         communityUrls={vendor.communityUrls}
-        title={t('communityLinks')}
-        links={communityLinks}
         layout="vertical"
         gridCols="grid-cols-2 md:grid-cols-4"
       />

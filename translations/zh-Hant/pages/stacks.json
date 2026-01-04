@@ -1,9 +1,9 @@
 {
   "cliDetail": {
-    "allCLIs": "所有命令行",
+    "allCLIs": "所有命令列",
     "breadcrumb": {
-      "aiCodingStack": "AI 编码技术栈",
-      "clis": "命令行"
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "clis": "@:shared.stack.cli"
     },
     "categoryLabel": "@:components.productHero.categories.CLI",
     "documentation": "@:components.productHero.documentation",
@@ -16,17 +16,17 @@
     "visitWebsite": "@:components.productHero.visitWebsite"
   },
   "clis": {
-    "allCLIs": "所有命令行",
-    "compareAll": "对比所有",
-    "noMatches": "没有符合筛选条件的命令行",
-    "subtitle": "AI 驱动的命令行编码助手",
-    "title": "命令行"
+    "allCLIs": "所有命令列",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "沒有符合篩選條件的命令列",
+    "subtitle": "AI 驅動的命令列編碼助理",
+    "title": "@:shared.stack.cli"
   },
   "extensionDetail": {
-    "allExtensions": "所有扩展插件",
+    "allExtensions": "所有擴充套件",
     "breadcrumb": {
-      "aiCodingStack": "AI 编码技术栈",
-      "extensions": "扩展插件"
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "extensions": "@:shared.stack.extension"
     },
     "categoryLabel": "@:components.productHero.categories.EXTENSION",
     "documentation": "@:components.productHero.documentation",
@@ -39,17 +39,17 @@
     "visitWebsite": "@:components.productHero.visitWebsite"
   },
   "extensions": {
-    "allExtensions": "所有扩展插件",
-    "compareAll": "对比所有",
-    "noMatches": "没有符合筛选条件的扩展插件",
-    "subtitle": "AI 驱动的编码扩展和插件",
-    "title": "扩展插件"
+    "allExtensions": "所有擴充套件",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "沒有符合篩選條件的擴充套件",
+    "subtitle": "AI 驅動的編碼擴充與外掛",
+    "title": "@:shared.stack.extension"
   },
   "ideDetail": {
     "allIDEs": "所有 IDE",
     "breadcrumb": {
-      "aiCodingStack": "AI 编码技术栈",
-      "ides": "IDE"
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "ides": "@:shared.stack.ide"
     },
     "categoryLabel": "@:components.productHero.categories.IDE",
     "documentation": "@:components.productHero.documentation",
@@ -63,131 +63,135 @@
   },
   "ides": {
     "allIDEs": "所有 IDE",
-    "compareAll": "对比所有",
-    "noMatches": "没有符合筛选条件的 IDE",
-    "subtitle": "AI 增强的集成开发环境",
-    "title": "IDE"
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "沒有符合篩選條件的 IDE",
+    "subtitle": "AI 增強的整合式開發環境",
+    "title": "@:shared.stack.ide"
   },
   "modelDetail": {
     "aiPlatforms": {
       "artificialAnalysis": {
-        "description": "查看性能分析",
+        "description": "檢視效能分析",
         "title": "Artificial Analysis"
       },
       "huggingface": {
-        "description": "在 HuggingFace 查看",
+        "description": "在 HuggingFace 檢視",
         "title": "HuggingFace"
       },
       "openrouter": {
-        "description": "通过 OpenRouter 访问",
+        "description": "透過 OpenRouter 存取",
         "title": "OpenRouter"
       }
     },
-    "allModels": "所有模型",
-    "backTo": "返回",
+    "allModels": "@:shared.stacks.allModels",
+    "backTo": "@:shared.actions.backTo",
     "breadcrumb": {
-      "aiCodingStack": "AI 编码技术栈",
-      "models": "模型"
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "models": "@:shared.stack.model"
     },
     "categoryLabel": "@:components.productHero.categories.MODEL",
     "documentation": "@:components.productHero.documentation",
-    "findOnAiPlatforms": "在 AI 平台上查找",
+    "findOnAiPlatforms": "在 AI 平台上尋找",
     "labels": {
       "artificialAnalysis": "Artificial Analysis",
-      "context": "上下文",
+      "context": "內容視窗",
       "documentation": "@:components.productHero.documentation",
       "huggingface": "HuggingFace",
-      "maxOutput": "最大输出",
+      "maxOutput": "@:shared.common.maxOutput",
       "openrouter": "OpenRouter",
-      "pricing": "定价",
-      "size": "大小",
-      "website": "官网"
+      "pricing": "@:shared.common.pricing",
+      "size": "@:shared.common.modelSize",
+      "website": "@:shared.common.website"
     },
     "license": "@:components.productHero.license",
-    "maxOutput": "最大输出",
-    "metaTitle": "AI 编码模型 | 规格与定价 2025",
-    "modelSize": "模型大小",
-    "pricing": "定价",
-    "specifications": "规格",
+    "maxOutput": "@:shared.common.maxOutput",
+    "metaTitle": "AI 編碼模型 | 規格與定價 2025",
+    "modelSize": "@:shared.common.modelSize",
+    "pricing": "@:shared.common.pricing",
+    "specifications": "規格",
     "stars": "@:components.productHero.stars",
-    "contextWindow": "总上下文",
+    "contextWindow": "內容視窗",
     "vendor": "@:components.productHero.vendor",
     "version": "@:components.productHero.version",
     "visitWebsite": "@:components.productHero.visitWebsite",
-    "input": "输入",
-    "output": "输出",
-    "cache": "缓存",
+    "input": "輸入",
+    "output": "輸出",
+    "cache": "快取",
     "benchmarks": {
-      "title": "性能基准测试",
+      "title": "效能基準測試",
       "sweBench": "SWE-bench Verified",
-      "sweBenchDesc": "真实世界软件工程任务",
+      "sweBenchDesc": "真實世界軟體工程任務",
       "terminalBench": "TerminalBench 2.0",
-      "terminalBenchDesc": "命令行界面熟练度",
+      "terminalBenchDesc": "命令列介面熟練度",
       "mmmu": "MMMU",
-      "mmmuDesc": "多模态理解",
+      "mmmuDesc": "多模態理解",
       "mmmuPro": "MMMU Pro",
-      "mmmuProDesc": "高级多模态任务",
+      "mmmuProDesc": "進階多模態任務",
       "webDevArena": "WebDevArena",
-      "webDevArenaDesc": "Web 开发挑战",
+      "webDevArenaDesc": "Web 開發挑戰",
       "sciCode": "SciCode",
-      "sciCodeDesc": "科学代码生成",
+      "sciCodeDesc": "科學程式碼產生",
       "liveCodeBench": "LiveCodeBench",
-      "liveCodeBenchDesc": "实时编码性能"
+      "liveCodeBenchDesc": "即時編碼效能"
     }
   },
   "modelProviderDetail": {
     "aiPlatforms": {
       "artificialAnalysis": {
-        "description": "查看性能分析",
+        "description": "檢視效能分析",
         "title": "Artificial Analysis"
       },
       "huggingface": {
-        "description": "在 HuggingFace 上查看",
+        "description": "在 HuggingFace 上檢視",
         "title": "HuggingFace"
       },
       "openrouter": {
-        "description": "通过 OpenRouter 访问",
+        "description": "透過 OpenRouter 存取",
         "title": "OpenRouter"
       }
     },
-    "allModelProviders": "所有模型提供商",
-    "backTo": "返回",
+    "allModelProviders": "@:shared.stacks.allModelProviders",
+    "backTo": "@:shared.actions.backTo",
     "breadcrumb": {
-      "aiCodingStack": "AI 编码技术栈",
-      "modelProviders": "模型提供商"
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "modelProviders": "@:shared.stack.modelProvider"
     },
     "categoryLabel": "@:components.productHero.categories.PROVIDER",
     "community": {
+      "blog": {
+        "description": "閱讀部落格文章",
+        "title": "部落格"
+      },
       "discord": {
-        "description": "加入社区",
+        "description": "加入社群",
         "title": "Discord"
       },
       "github": {
-        "description": "查看仓库",
+        "description": "檢視儲存庫",
         "title": "GitHub"
       },
       "linkedin": {
-        "description": "关注我们",
+        "description": "@:shared.common.followUs",
         "title": "LinkedIn"
       },
       "reddit": {
-        "description": "加入讨论",
+        "description": "參與討論",
         "title": "Reddit"
       },
       "twitter": {
-        "description": "关注我们",
+        "description": "@:shared.common.followUs",
         "title": "X/Twitter"
       },
       "youtube": {
-        "description": "观看视频",
+        "description": "觀看影片",
         "title": "YouTube"
       }
     },
-    "communityLinks": "社区链接",
+    "communityLinks": "社群連結",
     "documentation": "@:components.productHero.documentation",
-    "findOnAiPlatforms": "在 AI 平台上查找",
+    "findOnAiPlatforms": "在 AI 平台上尋找",
     "getApiKey": "@:components.productHero.getApiKey",
-    "indexLabel": "索引",
+    "indexLabel": "@:shared.common.indexLabel",
     "providerTypes": {
       "foundation-model-provider": "@:components.productHero.providerTypes.foundation-model-provider",
       "model-service-provider": "@:components.productHero.providerTypes.model-service-provider"
@@ -196,120 +200,120 @@
     "visitWebsite": "@:components.productHero.visitWebsite"
   },
   "modelProviders": {
-    "foundationProviders": "基础模型提供商",
-    "search": "按名称搜索...",
-    "serviceProviders": "模型服务提供商",
-    "subtitle": "提供各种 AI 模型访问的 LLM API 提供商",
-    "title": "模型提供商"
+    "foundationProviders": "Foundation 模型提供者",
+    "search": "依名稱搜尋...",
+    "serviceProviders": "模型服務提供者",
+    "subtitle": "提供各種 AI 模型存取的 LLM API 提供者",
+    "title": "@:shared.stack.modelProvider"
   },
   "models": {
-    "compareAll": "对比所有",
-    "context": "上下文:",
-    "pricing": "定价:",
-    "search": "按名称搜索...",
-    "size": "大小:",
-    "subtitle": "针对代码生成和分析优化的大型语言模型",
-    "title": "模型"
+    "compareAll": "@:shared.actions.compareAll",
+    "context": "內容視窗：",
+    "pricing": "定價：",
+    "search": "依名稱搜尋...",
+    "size": "大小：",
+    "subtitle": "針對程式碼產生與分析優化的大型語言模型",
+    "title": "@:shared.stack.model"
   },
   "overview": {
     "clis": {
-      "description": "将大语言模型的强大功能直接带到终端的命令行 AI 助手。用自然语言直接在 shell 中执行复杂任务。",
-      "title": "命令行"
+      "description": "將大型語言模型的強大功能直接帶到終端的命令列 AI 助理。用自然語言直接在 shell 中執行複雜任務。",
+      "title": "@:shared.stack.cli"
     },
-    "exploreStack": "探索技术栈",
+    "exploreStack": "探索技術堆疊",
     "extensions": {
-      "description": "为你喜爱的 IDE 提供的 AI 驱动编码扩展和插件。从代码补全到智能重构,用 AI 辅助增强你的开发体验。",
-      "title": "扩展插件"
+      "description": "為您喜愛的 IDE 提供的 AI 驅動編碼擴充與外掛。從程式碼自動補全到智慧重構，用 AI 輔助增強您的開發體驗。",
+      "title": "@:shared.stack.extension"
     },
     "ides": {
-      "description": "理解代码库并提供智能辅助的 AI 驱动集成开发环境。从 VS Code 到 Cursor,发现让编码与 AI 协作的编辑器。",
-      "title": "IDE"
+      "description": "理解程式碼庫並提供智慧輔助的 AI 驅動整合式開發環境。從 VS Code 到 Cursor，發現讓編碼與 AI 協作的編輯器。",
+      "title": "@:shared.stack.ide"
     },
     "modelProviders": {
-      "description": "提供各种 AI 模型访问的 LLM API 提供商。从 DeepSeek 到 OpenRouter,发现以统一 API 和模型访问为 AI 编码工具提供动力的平台。",
-      "title": "模型提供商"
+      "description": "提供各種 AI 模型存取的 LLM API 提供者。從 DeepSeek 到 OpenRouter，發現以統一 API 和模型存取為 AI 編碼工具提供動力的平台。",
+      "title": "@:shared.stack.modelProvider"
     },
     "models": {
-      "description": "智能层。针对代码生成、理解和分析优化的大型语言模型。对比领先 AI 模型的规格、定价和能力。",
-      "title": "模型"
+      "description": "智慧層。針對程式碼產生、理解和分析優化的大型語言模型。比較領先 AI 模型的規格、定價和能力。",
+      "title": "@:shared.stack.model"
     },
-    "overviewTitle": "AI 编码技术栈概览",
-    "slogan": "发现。对比。快 10 倍。",
-    "subtitle": "探索完整的 AI 编码生态系统:IDE、命令行、终端、模型和提供商。",
-    "title": "AI 编码技术栈",
+    "overviewTitle": "AI 編碼技術堆疊總覽",
+    "slogan": "@:shared.common.slogan",
+    "subtitle": "探索完整的 AI 編碼生態系統：IDE、命令列、終端、模型和提供者。",
+    "title": "@:shared.common.aiCodingStack",
     "vendors": {
-      "description": "构建 AI 技术的领先公司和组织。从 OpenAI 到 Anthropic,发现 AI 编码革命背后的厂商。",
-      "title": "厂商"
+      "description": "建構 AI 技術的領先公司和組織。從 OpenAI 到 Anthropic，發現 AI 編碼革命背後的供應商。",
+      "title": "@:shared.stack.vendor"
     }
   },
   "vendorDetail": {
-    "allVendors": "所有厂商",
-    "backTo": "返回",
+    "allVendors": "@:shared.stacks.allVendors",
+    "backTo": "@:shared.actions.backTo",
     "breadcrumb": {
-      "aiCodingStack": "AI 编码技术栈",
-      "home": "首页",
-      "vendors": "厂商"
+      "aiCodingStack": "@:shared.common.aiCodingStack",
+      "home": "首頁",
+      "vendors": "@:shared.stack.vendor"
     },
     "categoryLabel": "@:components.productHero.categories.VENDOR",
     "documentation": "@:components.productHero.documentation",
     "community": {
       "blog": {
-        "description": "阅读博客文章",
-        "title": "博客"
+        "description": "閱讀部落格文章",
+        "title": "部落格"
       },
       "discord": {
-        "description": "加入社区",
+        "description": "加入社群",
         "title": "Discord"
       },
       "github": {
-        "description": "查看仓库",
+        "description": "檢視儲存庫",
         "title": "GitHub"
       },
       "linkedin": {
-        "description": "关注我们",
+        "description": "@:shared.common.followUs",
         "title": "LinkedIn"
       },
       "reddit": {
-        "description": "加入讨论",
+        "description": "參與討論",
         "title": "Reddit"
       },
       "twitter": {
-        "description": "关注我们",
+        "description": "@:shared.common.followUs",
         "title": "X/Twitter"
       },
       "youtube": {
-        "description": "观看视频",
+        "description": "觀看影片",
         "title": "YouTube"
       }
     },
-    "communityLinks": "社区链接",
-    "connectLinkedIn": "在 LinkedIn 上联系",
+    "communityLinks": "社群連結",
+    "connectLinkedIn": "在 LinkedIn 上聯繫",
     "discord": "Discord",
-    "followTwitter": "在 X/Twitter 上关注",
+    "followTwitter": "在 X/Twitter 上關注",
     "github": "GitHub",
-    "indexLabel": "索引",
-    "joinDiscord": "加入 Discord 社区",
-    "joinReddit": "加入 Reddit 社区",
+    "indexLabel": "@:shared.common.indexLabel",
+    "joinDiscord": "加入 Discord 社群",
+    "joinReddit": "加入 Reddit 社群",
     "linkedin": "LinkedIn",
-    "metaDescription": "探索 {name} 的 AI 产品和技术。",
-    "metaTitle": "AI 技术厂商 | 公司简介 2025",
+    "metaDescription": "探索 {name} 的 AI 產品與技術。",
+    "metaTitle": "AI 技術供應商 | 公司簡介 2025",
     "models": "模型",
-    "products": "产品",
-    "productsSubtitle": "探索来自 {vendorName} 的产品和服务",
-    "productsTitle": "产品",
-    "quickLinks": "快速链接",
+    "products": "產品",
+    "productsSubtitle": "探索來自 {vendorName} 的產品與服務",
+    "productsTitle": "產品",
+    "quickLinks": "快速連結",
     "reddit": "Reddit",
     "twitter": "X/Twitter",
-    "vendorDetails": "厂商详情",
-    "viewGitHub": "查看开源仓库",
-    "visitWebsite": "访问官网",
-    "watchYouTube": "在 YouTube 观看视频",
-    "website": "官网",
+    "vendorDetails": "供應商詳情",
+    "viewGitHub": "檢視開放原始碼儲存庫",
+    "visitWebsite": "造訪網站",
+    "watchYouTube": "在 YouTube 觀看影片",
+    "website": "@:shared.common.website",
     "youtube": "YouTube"
   },
   "vendors": {
-    "search": "按名称搜索...",
-    "subtitle": "构建 AI 技术的领先公司和组织",
-    "title": "厂商"
+    "search": "依名稱搜尋...",
+    "subtitle": "建構 AI 技術的領先公司和組織",
+    "title": "@:shared.stack.vendor"
   }
 }

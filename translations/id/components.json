@@ -1,23 +1,26 @@
 {
   "backToNavigation": {
-    "backTo": "Kembali ke",
-    "indexLabel": "INDEKS"
+    "backTo": "@:shared.actions.backTo",
+    "indexLabel": "@:shared.common.indexLabel"
+  },
+  "breadcrumb": {
+    "home": "Beranda"
   },
   "collectionScrollbar": {
-    "articles": "Artikel Pilihan",
-    "specifications": "Spesifikasi & Protokol",
-    "tools": "Alat Ekosistem"
+    "articles": "@:shared.common.featuredArticles",
+    "specifications": "@:shared.common.specificationsProtocols",
+    "tools": "@:shared.common.ecosystemTools"
   },
   "docsSidebar": {
-    "label": "Dokumentasi",
+    "label": "@:shared.common.documentation",
     "title": "DOKUMENTASI"
   },
   "filterSortBar": {
     "clearFilters": "Hapus filter",
     "license": "Lisensi:",
-    "openSource": "Open Source",
+    "openSource": "@:shared.common.openSource",
     "platform": "Platform:",
-    "proprietary": "Proprietary",
+    "proprietary": "@:shared.common.proprietary",
     "search": "Cari berdasarkan nama...",
     "sort": "Urutkan:",
     "sortDefault": "Default",
@@ -28,116 +31,163 @@
     "copyright": "© 2025 AI Coding Stack • Dibuat dengan ❤︎ • Open Source",
     "openSource": "Repositori metadata coding AI open source.",
     "selectLanguage": "Pilih Bahasa",
-    "tagline": "Pusat Ekosistem Coding AI Anda.",
-    "toggleTheme": "Ubah tema"
+    "tagline": "Pusat ekosistem coding AI Anda.",
+    "toggleTheme": "Ganti tema"
   },
   "header": {
-    "aiCodingLandscape": "Lanskap Coding AI",
-    "aiCodingLandscapeDesc": "Visualisasikan ekosistem coding AI secara lengkap",
-    "aiCodingStack": "AI Coding Stack",
-    "articles": "Artikel",
+    "aiCodingLandscape": "Pemandangan Coding AI",
+    "aiCodingLandscapeDesc": "Visualisasi ekosistem coding AI lengkap",
+    "aiCodingStack": "@:shared.common.aiCodingStack",
+    "articles": "@:shared.common.articles",
     "closeMenu": "Tutup menu",
-    "collections": "Koleksi",
+    "collections": "@:shared.common.collections",
     "developmentTools": "Alat Pengembangan",
     "intelligence": "Kecerdasan",
-    "landscape": "Lanskap",
-    "manifesto": "Manifesto",
+    "landscape": "Pemandangan",
+    "manifesto": "@:shared.common.manifesto",
     "openMenu": "Buka menu",
     "openSourceRank": "Peringkat Open Source",
     "openSourceRankDesc": "Jelajahi proyek coding AI open source berdasarkan bintang GitHub",
     "ranking": "Peringkat",
-    "search": "Cari",
+    "search": "@:shared.actions.search",
     "searchPlaceholder": "Cari...",
-    "toggleMenu": "Ubah menu"
+    "toggleMenu": "Toggle menu"
   },
   "openSourceRank": {
-    "description": "Temukan dan jelajahi alat coding AI open source yang diranking berdasarkan bintang GitHub. Bandingkan IDE, CLI, dan ekstensi untuk menemukan alat yang sempurna untuk alur kerja pengembangan Anda.",
+    "description": "Temukan dan jelajahi alat coding AI open source yang diurutkan berdasarkan bintang GitHub. Bandingkan IDE, CLI, dan ekstensi untuk menemukan alat yang sempurna untuk alur kerja pengembangan Anda.",
     "filter": {
       "all": "Semua"
     },
     "meta": {
       "description": "Peringkat semua proyek open source di AI Coding Stack, diurutkan berdasarkan bintang GitHub. Lihat statistik dan tren alat open source vs proprietary.",
-      "title": "Peringkat Proyek Open Source"
+      "title": "@:components.openSourceRank.title"
     },
     "noResults": "Tidak ada proyek open source yang ditemukan untuk kategori ini.",
-    "note": "Catatan: Halaman ini hanya menampilkan proyek dengan repositori GitHub. Beberapa proyek, meskipun tidak open source, mempertahankan repositori GitHub sebagai saluran umpan balik pengguna.",
+    "note": "Catatan: Halaman ini hanya menampilkan proyek dengan repositori GitHub. Beberapa proyek, meskipun tidak open source, memelihara repositori GitHub sebagai kanal umpan balik pengguna.",
     "productType": {
-      "cli": "CLI",
-      "extension": "Ekstensi",
-      "ide": "IDE"
+      "cli": "@:shared.stack.cli",
+      "extension": "@:shared.stack.extension",
+      "ide": "@:shared.stack.ide"
     },
     "statistics": {
-      "closedSource": "Proprietary",
+      "closedSource": "@:shared.common.proprietary",
       "closedSourceCount": "Proyek Proprietary",
       "closedSourcePercentage": "Persentase Proprietary",
       "licenseBreakdown": "Distribusi Lisensi",
-      "openSource": "Open Source",
+      "openSource": "@:shared.common.openSource",
       "openSourceCount": "Proyek Open Source",
       "projects": "proyek",
       "title": "Distribusi Open Source vs Proprietary",
       "totalProjects": "Total Proyek"
     },
     "table": {
-      "license": "Lisensi",
+      "license": "@:shared.common.license",
       "name": "Nama",
       "openSourceTitle": "Proyek Open Source ({count})",
       "proprietaryTitle": "Proyek Proprietary ({count})",
       "rank": "Peringkat",
-      "stars": "Bintang",
-      "type": "Tipe"
+      "stars": "@:shared.common.stars",
+      "type": "@:shared.common.type"
     },
     "title": "Peringkat Proyek Open Source"
   },
   "productCommands": {
     "command": "Perintah",
     "install": "Instal",
-    "launch": "Mulai"
+    "launch": "Luncurkan"
+  },
+  "vendorProducts": {
+    "title": "Produk"
+  },
+  "vendorModels": {
+    "title": "Model"
+  },
+  "platformLinks": {
+    "title": "Temukan di Platform AI",
+    "aiPlatforms": {
+      "huggingface": {
+        "title": "Hugging Face",
+        "description": "Lihat kartu model dan bobot"
+      },
+      "artificialAnalysis": {
+        "title": "Artificial Analysis",
+        "description": "Papan peringkat dan benchmark model AI"
+      },
+      "openrouter": {
+        "title": "OpenRouter",
+        "description": "Bandingkan dan gunakan banyak model AI"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "Memuat riwayat bintang...",
+    "title": "Riwayat Bintang GitHub",
+    "description": "Tren pertumbuhan bintang dari waktu ke waktu",
+    "stars": "bintang",
+    "fallbackNote": "Catatan: Menampilkan data sampel. API riwayat bintang tidak tersedia sementara."
   },
   "productHero": {
     "categories": {
-      "CLI": "CLI",
-      "EXTENSION": "Ekstensi",
-      "IDE": "IDE",
-      "MODEL": "Model",
-      "PROVIDER": "Penyedia Model",
-      "VENDOR": "Vendor"
+      "CLI": "@:shared.stack.cli",
+      "EXTENSION": "@:shared.stack.extension",
+      "IDE": "@:shared.stack.ide",
+      "MODEL": "@:shared.stack.model",
+      "PROVIDER": "@:shared.stack.modelProvider",
+      "VENDOR": "@:shared.stack.vendor"
     },
-    "documentation": "Dokumentasi",
-    "download": "Unduh",
+    "documentation": "@:shared.common.documentation",
+    "download": "@:shared.actions.download",
     "getApiKey": "Dapatkan Kunci API",
-    "license": "Lisensi",
+    "license": "@:shared.common.license",
     "platforms": "Platform",
     "providerTypes": {
-      "foundation-model-provider": "Penyedia Model Foundation",
+      "foundation-model-provider": "Penyedia Model Dasar",
       "model-service-provider": "Penyedia Layanan Model"
     },
     "runtime": "Runtime",
-    "stars": "Bintang",
+    "stars": "@:shared.common.stars",
     "supportedIdes": "IDE yang Didukung",
-    "type": "Tipe",
-    "vendor": "Vendor",
+    "type": "@:shared.common.type",
+    "vendor": "@:shared.stack.vendor",
     "version": "Versi",
-    "visitWebsite": "Kunjungi Situs Web"
+    "visitWebsite": "Kunjungi situs web"
   },
-  "productLinks": {
+  "communityLinks": {
     "blog": "Blog",
-    "changelog": "Log Perubahan",
-    "community": "Komunitas",
-    "discord": "Discord",
-    "download": "Unduh",
-    "github": "GitHub",
-    "issue": "Pelacak Isu",
-    "linkedin": "LinkedIn",
+    "blogDescription": "Baca postingan blog",
+    "community": "@:shared.common.community",
+    "discord": "@:shared.platforms.discord",
+    "discordDescription": "Bergabung komunitas",
+    "github": "@:shared.platforms.github",
+    "githubDescription": "Lihat repositori",
+    "linkedin": "@:shared.platforms.linkedin",
+    "linkedinDescription": "@:shared.common.followUs",
+    "reddit": "@:shared.platforms.reddit",
+    "redditDescription": "Ikuti diskusi",
+    "twitter": "@:shared.platforms.twitter",
+    "twitterDescription": "@:shared.common.followUs",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "Tonton video"
+  },
+  "resourceLinks": {
+    "changelog": "Changelog",
+    "changelogDescription": "Lihat changelog",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "Unduh versi terbaru",
+    "issue": "Pelacak Masalah",
+    "issueDescription": "Laporkan bug dan minta fitur",
     "mcp": "Dokumentasi MCP",
-    "pricing": "Harga",
-    "reddit": "Reddit",
-    "resources": "Sumber Daya",
-    "twitter": "X (Twitter)",
-    "youtube": "YouTube"
+    "mcpDescription": "Pelajari integrasi MCP",
+    "pricing": "@:shared.common.pricing",
+    "pricingDescription": "Lihat paket harga"
+  },
+  "resources": {
+    "community": "@:shared.common.community",
+    "resources": "@:shared.common.resources"
   },
   "productPricing": {
-    "title": "Harga",
-    "viewFullDetails": "Lihat detail harga lengkap →"
+    "title": "@:shared.common.pricing",
+    "viewFullDetails": "@:shared.actions.viewFullDetails"
   },
   "modelSpecifications": {
     "title": "@:pages.modelDetail.specifications",
@@ -175,12 +225,12 @@
   },
   "search": {
     "categories": {
-      "clis": "CLI",
-      "extensions": "Ekstensi",
-      "ides": "IDE",
-      "models": "Model",
-      "providers": "Penyedia Model",
-      "vendors": "Vendor"
+      "clis": "@:shared.stacks.clis",
+      "extensions": "@:shared.stacks.extensions",
+      "ides": "@:shared.stacks.ides",
+      "models": "@:shared.stacks.models",
+      "providers": "@:shared.stacks.modelProviders",
+      "vendors": "@:shared.stacks.vendors"
     },
     "navigate": "untuk menavigasi",
     "noResults": "Tidak ada hasil yang ditemukan",
@@ -201,8 +251,8 @@
     "title": "Hasil Pencarian"
   },
   "sidebar": {
-    "backToTop": "Kembali ke atas",
-    "selectItem": "Pilih item"
+    "backToTop": "@:shared.actions.backToTop",
+    "selectItem": "@:shared.actions.selectItem"
   },
   "vendorMatrix": {
     "cell": {

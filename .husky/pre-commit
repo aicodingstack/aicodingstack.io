@@ -1,4 +1,5 @@
 npm i
 npx lint-staged
-npm run check
 npm run test:ci
+npm run check
+npm run type-check

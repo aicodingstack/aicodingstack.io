@@ -1,16 +1,16 @@
 {
   "articles": {
-    "description": "來自行業領袖關於 AI 編碼的必讀文章",
-    "title": "@:shared.common.featuredArticles"
+    "description": "來自產業領袖的 AI 編碼必讀文章",
+    "title": "精選文章"
   },
   "specifications": {
-    "description": "現代軟體開發的基本標準和協議",
-    "title": "@:shared.common.specificationsProtocols"
+    "description": "現代軟體開發的基本標準與協定",
+    "title": "規格與協定"
   },
-  "subtitle": "為 關於 AI 編碼精選的資源、規範、協議和工具",
-  "title": "@:shared.common.curatedCollections",
+  "subtitle": "精心挑選的 AI 編碼資源、規格、協定與工具",
+  "title": "精選集合",
   "tools": {
-    "description": "為 AI 編碼工作流程精選的工具和實用程式",
-    "title": "@:shared.common.ecosystemTools"
+    "description": "AI 編碼工作流程的精選工具與程式",
+    "title": "生態系統工具"
   }
 }

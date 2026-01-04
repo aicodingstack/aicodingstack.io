@@ -3,6 +3,9 @@
     "backTo": "@:shared.actions.backTo",
     "indexLabel": "@:shared.common.indexLabel"
   },
+  "breadcrumb": {
+    "home": "Inicio"
+  },
   "collectionScrollbar": {
     "articles": "@:shared.common.featuredArticles",
     "specifications": "@:shared.common.specificationsProtocols",
@@ -93,6 +96,36 @@
     "install": "Instalar",
     "launch": "Iniciar"
   },
+  "vendorProducts": {
+    "title": "Productos"
+  },
+  "vendorModels": {
+    "title": "Modelos"
+  },
+  "platformLinks": {
+    "title": "Buscar en plataformas de IA",
+    "aiPlatforms": {
+      "huggingface": {
+        "title": "Hugging Face",
+        "description": "Ver tarjeta de modelo y pesos"
+      },
+      "artificialAnalysis": {
+        "title": "Artificial Analysis",
+        "description": "Tabla de clasificación y evaluaciones de modelos de IA"
+      },
+      "openrouter": {
+        "title": "OpenRouter",
+        "description": "Comparar y usar múltiples modelos de IA"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "Cargando historial de estrellas...",
+    "title": "Historial de estrellas de GitHub",
+    "description": "Tendencia de crecimiento de estrellas a lo largo del tiempo",
+    "stars": "estrellas",
+    "fallbackNote": "Nota: Mostrando datos de muestra. El API de historial de estrellas está temporalmente no disponible."
+  },
   "productHero": {
     "categories": {
       "CLI": "@:shared.stack.cli",
@@ -119,21 +152,38 @@
     "version": "Versión",
     "visitWebsite": "Visitar sitio web"
   },
-  "productLinks": {
+  "communityLinks": {
     "blog": "Blog",
-    "changelog": "Registro de cambios",
+    "blogDescription": "Leer publicaciones de blog",
     "community": "@:shared.common.community",
     "discord": "@:shared.platforms.discord",
-    "download": "@:shared.actions.download",
+    "discordDescription": "Unirse a la comunidad",
     "github": "@:shared.platforms.github",
-    "issue": "Rastreador de problemas",
+    "githubDescription": "Ver repositorios",
     "linkedin": "@:shared.platforms.linkedin",
-    "mcp": "Documentación de MCP",
-    "pricing": "@:shared.common.pricing",
+    "linkedinDescription": "@:shared.common.followUs",
     "reddit": "@:shared.platforms.reddit",
-    "resources": "@:shared.common.resources",
+    "redditDescription": "Unirse a la discusión",
     "twitter": "@:shared.platforms.twitter",
-    "youtube": "@:shared.platforms.youtube"
+    "twitterDescription": "@:shared.common.followUs",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "Ver videos"
+  },
+  "resourceLinks": {
+    "changelog": "Registro de cambios",
+    "changelogDescription": "Ver registro de cambios",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "Descargar la última versión",
+    "issue": "Rastreador de problemas",
+    "issueDescription": "Informar errores y solicitar funciones",
+    "mcp": "Documentación de MCP",
+    "mcpDescription": "Obtenga información sobre la integración MCP",
+    "pricing": "@:shared.common.pricing",
+    "pricingDescription": "Ver planes de precios"
+  },
+  "resources": {
+    "community": "@:shared.common.community",
+    "resources": "@:shared.common.resources"
   },
   "productPricing": {
     "title": "@:shared.common.pricing",

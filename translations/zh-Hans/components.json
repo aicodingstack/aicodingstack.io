@@ -3,6 +3,9 @@
     "backTo": "返回",
     "indexLabel": "索引"
   },
+  "breadcrumb": {
+    "home": "首页"
+  },
   "collectionScrollbar": {
     "articles": "精选文章",
     "specifications": "规范与协议",
@@ -93,6 +96,36 @@
     "install": "安装",
     "launch": "启动"
   },
+  "vendorProducts": {
+    "title": "产品"
+  },
+  "vendorModels": {
+    "title": "模型"
+  },
+  "platformLinks": {
+    "title": "在 AI 平台上查找",
+    "aiPlatforms": {
+      "huggingface": {
+        "title": "Hugging Face",
+        "description": "查看模型卡片和权重"
+      },
+      "artificialAnalysis": {
+        "title": "Artificial Analysis",
+        "description": "AI 模型排行榜和基准测试"
+      },
+      "openrouter": {
+        "title": "OpenRouter",
+        "description": "比较并使用多个 AI 模型"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "加载星标历史...",
+    "title": "GitHub 星标历史",
+    "description": "星标增长趋势",
+    "stars": "星标数",
+    "fallbackNote": "注意：显示示例数据。星标历史 API 暂时不可用。"
+  },
   "productHero": {
     "categories": {
       "CLI": "命令行",
@@ -119,21 +152,38 @@
     "version": "版本",
     "visitWebsite": "访问官网"
   },
-  "productLinks": {
+  "communityLinks": {
     "blog": "博客",
+    "blogDescription": "阅读博客文章",
+    "community": "@:shared.common.community",
+    "discord": "@:shared.platforms.discord",
+    "discordDescription": "加入社区",
+    "github": "@:shared.platforms.github",
+    "githubDescription": "查看代码仓库",
+    "linkedin": "@:shared.platforms.linkedin",
+    "linkedinDescription": "@:shared.common.followUs",
+    "reddit": "@:shared.platforms.reddit",
+    "redditDescription": "参与讨论",
+    "twitter": "@:shared.platforms.twitter",
+    "twitterDescription": "@:shared.common.followUs",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "观看视频"
+  },
+  "resourceLinks": {
     "changelog": "更新日志",
-    "community": "社区",
-    "discord": "Discord",
-    "download": "下载",
-    "github": "GitHub",
+    "changelogDescription": "查看更新日志",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "下载最新版本",
     "issue": "问题跟踪",
-    "linkedin": "LinkedIn",
+    "issueDescription": "报告问题和请求功能",
     "mcp": "MCP 文档",
-    "pricing": "定价",
-    "reddit": "Reddit",
-    "resources": "资源",
-    "twitter": "X (Twitter)",
-    "youtube": "YouTube"
+    "mcpDescription": "了解 MCP 集成",
+    "pricing": "@:shared.common.pricing",
+    "pricingDescription": "查看定价方案"
+  },
+  "resources": {
+    "community": "@:shared.common.community",
+    "resources": "@:shared.common.resources"
   },
   "productPricing": {
     "title": "定价",

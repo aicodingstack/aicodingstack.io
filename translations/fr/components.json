@@ -3,6 +3,9 @@
     "backTo": "@:shared.actions.backTo",
     "indexLabel": "@:shared.common.indexLabel"
   },
+  "breadcrumb": {
+    "home": "Accueil"
+  },
   "collectionScrollbar": {
     "articles": "@:shared.common.featuredArticles",
     "specifications": "@:shared.common.specificationsProtocols",
@@ -93,6 +96,36 @@
     "install": "Installer",
     "launch": "Lancer"
   },
+  "vendorProducts": {
+    "title": "Produits"
+  },
+  "vendorModels": {
+    "title": "Modèles"
+  },
+  "platformLinks": {
+    "title": "Trouver sur les plateformes IA",
+    "aiPlatforms": {
+      "huggingface": {
+        "title": "Hugging Face",
+        "description": "Voir la fiche modèle et les poids"
+      },
+      "artificialAnalysis": {
+        "title": "Artificial Analysis",
+        "description": "Classement et benchmarks de modèles IA"
+      },
+      "openrouter": {
+        "title": "OpenRouter",
+        "description": "Comparer et utiliser plusieurs modèles IA"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "Chargement de l'historique des étoiles...",
+    "title": "Historique des étoiles GitHub",
+    "description": "Tendance de croissance des étoiles au fil du temps",
+    "stars": "étoiles",
+    "fallbackNote": "Note : Affichage de données d'exemple. L'API d'historique des étoiles est temporairement indisponible."
+  },
   "productHero": {
     "categories": {
       "CLI": "@:shared.stack.cli",
@@ -119,21 +152,38 @@
     "version": "Version",
     "visitWebsite": "Visiter le site web"
   },
-  "productLinks": {
+  "communityLinks": {
     "blog": "Blog",
-    "changelog": "Journal des modifications",
+    "blogDescription": "Lire les articles de blog",
     "community": "@:shared.common.community",
     "discord": "@:shared.platforms.discord",
-    "download": "@:shared.actions.download",
+    "discordDescription": "Rejoindre la communauté",
     "github": "@:shared.platforms.github",
-    "issue": "Suivi des problèmes",
+    "githubDescription": "Voir les dépôts",
     "linkedin": "@:shared.platforms.linkedin",
-    "mcp": "Documentation MCP",
-    "pricing": "@:shared.common.pricing",
+    "linkedinDescription": "@:shared.common.followUs",
     "reddit": "@:shared.platforms.reddit",
-    "resources": "@:shared.common.resources",
+    "redditDescription": "Rejoindre la discussion",
     "twitter": "@:shared.platforms.twitter",
-    "youtube": "@:shared.platforms.youtube"
+    "twitterDescription": "@:shared.common.followUs",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "Regarder les vidéos"
+  },
+  "resourceLinks": {
+    "changelog": "Journal des modifications",
+    "changelogDescription": "Voir le journal des modifications",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "Télécharger la dernière version",
+    "issue": "Suivi des problèmes",
+    "issueDescription": "Signaler des bugs et demander des fonctionnalités",
+    "mcp": "Documentation MCP",
+    "mcpDescription": "En savoir plus sur l'intégration MCP",
+    "pricing": "@:shared.common.pricing",
+    "pricingDescription": "Voir les plans tarifaires"
+  },
+  "resources": {
+    "community": "@:shared.common.community",
+    "resources": "@:shared.common.resources"
   },
   "productPricing": {
     "title": "@:shared.common.pricing",

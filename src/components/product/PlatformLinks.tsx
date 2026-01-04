@@ -1,34 +1,11 @@
+import { useTranslations } from 'next-intl'
 import { LinkCardGrid } from '@/components/product/LinkCard'
-
-export interface PlatformUrls {
-  huggingface?: string | null
-  artificialAnalysis?: string | null
-  openrouter?: string | null
-  [key: string]: string | null | undefined
-}
+import type { ManifestPlatformUrls } from '@/types/manifests'
 
 export interface PlatformLinksProps {
-  platformUrls: PlatformUrls | null | undefined
-  title: string
-  links: Array<{
-    key: string
-    title: string
-    description: string
-  }>
+  platformUrls: ManifestPlatformUrls | null | undefined
   layout?: 'horizontal' | 'vertical'
   gridCols?: string
-}
-
-/**
- * Check whether the given platform URLs object contains at least one usable URL.
- *
- * We treat empty strings and whitespace-only strings as "missing".
- */
-function hasAnyPlatformUrl(platformUrls: PlatformUrls): boolean {
-  return Object.values(platformUrls).some(value => {
-    if (typeof value !== 'string') return false
-    return value.trim().length > 0
-  })
 }
 
 /**
@@ -40,18 +17,36 @@ function hasAnyPlatformUrl(platformUrls: PlatformUrls): boolean {
  */
 export function PlatformLinks({
   platformUrls,
-  title,
-  links,
   layout = 'horizontal',
   gridCols = 'grid-cols-1 md:grid-cols-3',
 }: PlatformLinksProps) {
-  if (!platformUrls || links.length === 0 || !hasAnyPlatformUrl(platformUrls)) {
+  const t = useTranslations('components.platformLinks')
+
+  if (!platformUrls) {
     return null
   }
 
+  const links = [
+    {
+      key: 'huggingface',
+      title: t('aiPlatforms.huggingface.title'),
+      description: t('aiPlatforms.huggingface.description'),
+    },
+    {
+      key: 'artificialAnalysis',
+      title: t('aiPlatforms.artificialAnalysis.title'),
+      description: t('aiPlatforms.artificialAnalysis.description'),
+    },
+    {
+      key: 'openrouter',
+      title: t('aiPlatforms.openrouter.title'),
+      description: t('aiPlatforms.openrouter.description'),
+    },
+  ]
+
   return (
     <LinkCardGrid
-      title={title}
+      title={t('title')}
       links={links}
       urls={platformUrls}
       layout={layout}

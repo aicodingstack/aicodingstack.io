@@ -158,29 +158,33 @@
     },
     "categoryLabel": "@:components.productHero.categories.PROVIDER",
     "community": {
+      "blog": {
+        "description": "Leer publicaciones de blog",
+        "title": "@:components.communityLinks.blog"
+      },
       "discord": {
         "description": "Unirse a la comunidad",
-        "title": "@:components.productLinks.discord"
+        "title": "@:components.communityLinks.discord"
       },
       "github": {
         "description": "Ver repositorios",
-        "title": "@:components.productLinks.github"
+        "title": "@:components.communityLinks.github"
       },
       "linkedin": {
         "description": "@:shared.common.followUs",
-        "title": "@:components.productLinks.linkedin"
+        "title": "@:components.communityLinks.linkedin"
       },
       "reddit": {
         "description": "Unirse a la discusión",
-        "title": "@:components.productLinks.reddit"
+        "title": "@:components.communityLinks.reddit"
       },
       "twitter": {
         "description": "@:shared.common.followUs",
-        "title": "@:components.productLinks.twitter"
+        "title": "@:components.communityLinks.twitter"
       },
       "youtube": {
         "description": "Ver videos",
-        "title": "@:components.productLinks.youtube"
+        "title": "@:components.communityLinks.youtube"
       }
     },
     "communityLinks": "@:shared.common.communityLinks",
@@ -255,42 +259,42 @@
     "community": {
       "blog": {
         "description": "Leer publicaciones de blog",
-        "title": "Blog"
+        "title": "@:components.communityLinks.blog"
       },
       "discord": {
         "description": "Unirse a la comunidad",
-        "title": "@:components.productLinks.discord"
+        "title": "@:components.communityLinks.discord"
       },
       "github": {
         "description": "Ver repositorios",
-        "title": "@:components.productLinks.github"
+        "title": "@:components.communityLinks.github"
       },
       "linkedin": {
         "description": "@:shared.common.followUs",
-        "title": "@:components.productLinks.linkedin"
+        "title": "@:components.communityLinks.linkedin"
       },
       "reddit": {
         "description": "Unirse a la discusión",
-        "title": "@:components.productLinks.reddit"
+        "title": "@:components.communityLinks.reddit"
       },
       "twitter": {
         "description": "@:shared.common.followUs",
-        "title": "@:components.productLinks.twitter"
+        "title": "@:components.communityLinks.twitter"
       },
       "youtube": {
         "description": "Ver videos",
-        "title": "@:components.productLinks.youtube"
+        "title": "@:components.communityLinks.youtube"
       }
     },
     "communityLinks": "@:shared.common.communityLinks",
     "connectLinkedIn": "Conectarse en LinkedIn",
-    "discord": "@:components.productLinks.discord",
+    "discord": "@:components.communityLinks.discord",
     "followTwitter": "Seguir en Twitter",
-    "github": "@:components.productLinks.github",
+    "github": "@:components.communityLinks.github",
     "indexLabel": "@:shared.common.indexLabel",
     "joinDiscord": "Unirse a la comunidad de Discord",
     "joinReddit": "Unirse a la comunidad de Reddit",
-    "linkedin": "@:components.productLinks.linkedin",
+    "linkedin": "@:components.communityLinks.linkedin",
     "metaDescription": "Explora los productos y tecnologías de IA de {name}.",
     "metaTitle": "Proveedor de tecnología de IA | Perfil de empresa 2025",
     "models": "@:shared.stacks.models",
@@ -298,14 +302,14 @@
     "productsSubtitle": "Explora productos y servicios de {vendorName}",
     "productsTitle": "@:shared.common.products",
     "quickLinks": "Enlaces rápidos",
-    "reddit": "@:components.productLinks.reddit",
-    "twitter": "@:components.productLinks.twitter",
+    "reddit": "@:components.communityLinks.reddit",
+    "twitter": "@:components.communityLinks.twitter",
     "vendorDetails": "Detalles del proveedor",
     "viewGitHub": "Ver repositorios de código abierto",
     "visitWebsite": "@:components.productHero.visitWebsite",
     "watchYouTube": "Ver videos en YouTube",
     "website": "@:shared.common.website",
-    "youtube": "@:components.productLinks.youtube"
+    "youtube": "@:components.communityLinks.youtube"
   },
   "vendors": {
     "search": "@:components.filterSortBar.search",

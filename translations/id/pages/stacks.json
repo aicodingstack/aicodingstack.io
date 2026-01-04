@@ -158,29 +158,33 @@
     },
     "categoryLabel": "@:components.productHero.categories.PROVIDER",
     "community": {
+      "blog": {
+        "description": "Baca postingan blog",
+        "title": "@:components.communityLinks.blog"
+      },
       "discord": {
         "description": "Bergabung komunitas",
-        "title": "@:components.productLinks.discord"
+        "title": "@:components.communityLinks.discord"
       },
       "github": {
         "description": "Lihat repositori",
-        "title": "@:components.productLinks.github"
+        "title": "@:components.communityLinks.github"
       },
       "linkedin": {
         "description": "@:shared.common.followUs",
-        "title": "@:components.productLinks.linkedin"
+        "title": "@:components.communityLinks.linkedin"
       },
       "reddit": {
         "description": "Bergabung diskusi",
-        "title": "@:components.productLinks.reddit"
+        "title": "@:components.communityLinks.reddit"
       },
       "twitter": {
         "description": "@:shared.common.followUs",
-        "title": "@:components.productLinks.twitter"
+        "title": "@:components.communityLinks.twitter"
       },
       "youtube": {
         "description": "Tonton video",
-        "title": "@:components.productLinks.youtube"
+        "title": "@:components.communityLinks.youtube"
       }
     },
     "communityLinks": "@:shared.common.communityLinks",
@@ -259,38 +263,38 @@
       },
       "discord": {
         "description": "Join community",
-        "title": "@:components.productLinks.discord"
+        "title": "@:components.communityLinks.discord"
       },
       "github": {
         "description": "View repos",
-        "title": "@:components.productLinks.github"
+        "title": "@:components.communityLinks.github"
       },
       "linkedin": {
         "description": "@:shared.common.followUs",
-        "title": "@:components.productLinks.linkedin"
+        "title": "@:components.communityLinks.linkedin"
       },
       "reddit": {
         "description": "Join discussion",
-        "title": "@:components.productLinks.reddit"
+        "title": "@:components.communityLinks.reddit"
       },
       "twitter": {
         "description": "@:shared.common.followUs",
-        "title": "@:components.productLinks.twitter"
+        "title": "@:components.communityLinks.twitter"
       },
       "youtube": {
         "description": "Watch videos",
-        "title": "@:components.productLinks.youtube"
+        "title": "@:components.communityLinks.youtube"
       }
     },
     "communityLinks": "@:shared.common.communityLinks",
     "connectLinkedIn": "Berhubung di LinkedIn",
-    "discord": "@:components.productLinks.discord",
+    "discord": "@:components.communityLinks.discord",
     "followTwitter": "Ikuti di Twitter",
-    "github": "@:components.productLinks.github",
+    "github": "@:components.communityLinks.github",
     "indexLabel": "@:shared.common.indexLabel",
     "joinDiscord": "Bergabung komunitas Discord",
     "joinReddit": "Bergabung komunitas Reddit",
-    "linkedin": "@:components.productLinks.linkedin",
+    "linkedin": "@:components.communityLinks.linkedin",
     "metaDescription": "Jelajahi produk dan teknologi AI {name}.",
     "metaTitle": "Penyedia Teknologi AI | Profil Perusahaan 2025",
     "models": "@:shared.stacks.models",
@@ -298,14 +302,14 @@
     "productsSubtitle": "Jelajahi produk dan layanan dari {vendorName}",
     "productsTitle": "@:shared.common.products",
     "quickLinks": "Tautan Cepat",
-    "reddit": "@:components.productLinks.reddit",
-    "twitter": "@:components.productLinks.twitter",
+    "reddit": "@:components.communityLinks.reddit",
+    "twitter": "@:components.communityLinks.twitter",
     "vendorDetails": "Detail Penyedia",
     "viewGitHub": "Lihat repositori open source",
     "visitWebsite": "@:components.productHero.visitWebsite",
     "watchYouTube": "Tonton video di YouTube",
     "website": "@:shared.common.website",
-    "youtube": "@:components.productLinks.youtube"
+    "youtube": "@:components.communityLinks.youtube"
   },
   "vendors": {
     "search": "@:components.filterSortBar.search",

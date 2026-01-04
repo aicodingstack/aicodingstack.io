@@ -55,10 +55,10 @@
   "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
   "benchmarks": {
     "sweBench": 67.6,
-    "terminalBench": 0.578,
-    "sciCode": null,
-    "liveCodeBench": 56.6,
-    "mmmu": null,
+    "terminalBench": 0.351,
+    "sciCode": 1.5,
+    "liveCodeBench": 46.9,
+    "mmmu": 76.5,
     "mmmuPro": null,
     "webDevArena": null
   },

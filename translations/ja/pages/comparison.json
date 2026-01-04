@@ -1,34 +1,49 @@
 {
   "clis": {
-    "backTo": "CLI に戻る",
-    "subtitle": "AI 対応のコマンドラインコーディングアシスタント",
-    "title": "@:shared.stacks.clis"
+    "backTo": "CLIに戻る",
+    "subtitle": "AIコーディングCLIツールの機能、価格、仕様を並べて比較",
+    "title": "CLI比較"
   },
   "columns": {
+    "cache": "キャッシュ",
+    "capabilities": "機能",
     "contextLength": "コンテキスト長",
     "freePlan": "無料プラン",
     "githubStars": "@:components.productHero.stars",
+    "input": "入力",
+    "inputModalities": "入力モダリティ",
     "license": "@:components.productHero.license",
     "links": "リンク",
+    "live-code-bench": "Live Code Bench",
     "maxOutput": "@:shared.common.maxOutput",
     "maxPrice": "最大価格",
+    "mmmu": "MMMU",
+    "mmmu-pro": "MMMU Pro",
     "modelSize": "@:shared.common.modelSize",
+    "output": "出力",
     "platforms": "@:components.productHero.platforms",
     "pricing": "@:shared.common.pricing",
+    "pricingCache": "キャッシュ価格",
+    "pricingInput": "入力価格",
+    "pricingOutput": "出力価格",
+    "sci-code": "SciCode",
     "startingPrice": "開始価格",
     "supportedIdes": "@:components.productHero.supportedIdes",
+    "swe-bench": "SWE-bench",
+    "terminal-bench": "Terminal Bench",
     "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version"
+    "version": "@:components.productHero.version",
+    "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "拡張機能に戻る",
-    "subtitle": "AI 対応のコーディング拡張機能とプラグイン",
-    "title": "@:shared.stacks.extensions"
+    "subtitle": "AIコーディング拡張機能とプラグインの機能、価格、仕様を並べて比較",
+    "title": "拡張機能比較"
   },
   "ides": {
-    "backTo": "IDE に戻る",
-    "subtitle": "AI 強化された統合開発環境",
-    "title": "@:shared.stacks.ides"
+    "backTo": "IDEに戻る",
+    "subtitle": "AI対応IDEの機能、価格、仕様を並べて比較",
+    "title": "IDE比較"
   },
   "linkTitles": {
     "documentation": "@:components.productHero.documentation",
@@ -37,8 +52,8 @@
   },
   "models": {
     "backTo": "モデルに戻る",
-    "subtitle": "コード生成と分析に最適化された大規模言語モデル",
-    "title": "@:shared.stacks.models"
+    "subtitle": "コード生成と分析に最適化された大規模言語モデルの仕様と価格を並べて比較",
+    "title": "モデル比較"
   },
   "pricingValues": {
     "free": "無料",

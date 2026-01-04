@@ -158,6 +158,10 @@
     },
     "categoryLabel": "@:components.productHero.categories.PROVIDER",
     "community": {
+      "blog": {
+        "description": "Blogbeiträge lesen",
+        "title": "Blog"
+      },
       "discord": {
         "description": "Community beitreten",
         "title": "Discord"

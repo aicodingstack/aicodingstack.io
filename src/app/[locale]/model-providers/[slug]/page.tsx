@@ -70,59 +70,6 @@ export default async function ProviderPage({
     locale: locale as 'en' | 'zh-Hans' | 'de' | 'ko',
   })
 
-  // Build platform links configuration
-  const platformLinks = [
-    {
-      key: 'huggingface',
-      title: t('aiPlatforms.huggingface.title'),
-      description: t('aiPlatforms.huggingface.description'),
-    },
-    {
-      key: 'artificialAnalysis',
-      title: t('aiPlatforms.artificialAnalysis.title'),
-      description: t('aiPlatforms.artificialAnalysis.description'),
-    },
-    {
-      key: 'openrouter',
-      title: t('aiPlatforms.openrouter.title'),
-      description: t('aiPlatforms.openrouter.description'),
-    },
-  ]
-
-  // Build community links configuration
-  const communityLinks = [
-    {
-      key: 'linkedin',
-      title: t('community.linkedin.title'),
-      description: t('community.linkedin.description'),
-    },
-    {
-      key: 'twitter',
-      title: t('community.twitter.title'),
-      description: t('community.twitter.description'),
-    },
-    {
-      key: 'github',
-      title: t('community.github.title'),
-      description: t('community.github.description'),
-    },
-    {
-      key: 'youtube',
-      title: t('community.youtube.title'),
-      description: t('community.youtube.description'),
-    },
-    {
-      key: 'discord',
-      title: t('community.discord.title'),
-      description: t('community.discord.description'),
-    },
-    {
-      key: 'reddit',
-      title: t('community.reddit.title'),
-      description: t('community.reddit.description'),
-    },
-  ]
-
   // Breadcrumb items
   const breadcrumbItems = [
     { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
@@ -142,30 +89,20 @@ export default async function ProviderPage({
           categoryLabel={t('categoryLabel')}
           verified={provider.verified ?? false}
           type={provider.type}
+          typeValue={provider.type ? t(`providerTypes.${provider.type}`) : undefined}
           websiteUrl={provider.websiteUrl}
           docsUrl={provider.docsUrl ?? null}
           applyKeyUrl={provider.applyKeyUrl}
-          labels={{
-            type: t('type'),
-            typeValue: provider.type ? t(`providerTypes.${provider.type}`) : undefined,
-            visitWebsite: t('visitWebsite'),
-            documentation: t('documentation'),
-            getApiKey: t('getApiKey'),
-          }}
         />
 
         <PlatformLinks
           platformUrls={provider.platformUrls}
-          title={t('findOnAiPlatforms')}
-          links={platformLinks}
           layout="horizontal"
           gridCols="grid-cols-1 md:grid-cols-3"
         />
 
         <CommunityLinks
           communityUrls={provider.communityUrls}
-          title={t('communityLinks')}
-          links={communityLinks}
           layout="vertical"
           gridCols="grid-cols-2 md:grid-cols-4"
         />

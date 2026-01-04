@@ -93,6 +93,7 @@ export interface ManifestResourceUrls {
   pricing: string | null
   mcp: string | null
   issue: string | null
+  [key: string]: string | null
 }
 
 /**

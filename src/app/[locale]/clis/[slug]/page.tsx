@@ -2,11 +2,12 @@ import { notFound } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
 import { BackToNavigation } from '@/components/navigation/BackToNavigation'
 import { Breadcrumb } from '@/components/navigation/Breadcrumb'
+import { CommunityLinks } from '@/components/product/CommunityLinks'
 import { ProductCommands } from '@/components/product/ProductCommands'
 import { ProductHero } from '@/components/product/ProductHero'
-import { ProductLinks } from '@/components/product/ProductLinks'
 import { ProductPricing } from '@/components/product/ProductPricing'
 import { RelatedProducts } from '@/components/product/RelatedProducts'
+import { ResourceLinks } from '@/components/product/ResourceLinks'
 import type { Locale } from '@/i18n/config'
 import { PageLayout } from '@/layouts/PageLayout'
 import { getCLI, getRelatedProducts } from '@/lib/data/fetchers'
@@ -106,6 +107,7 @@ export default async function CLIPage({
   return (
     <PageLayout schema={schema}>
       <Breadcrumb items={breadcrumbItems} />
+
       <main className="max-w-8xl mx-auto px-[var(--spacing-md)]">
         <ProductHero
           name={cli.name}
@@ -121,23 +123,15 @@ export default async function CLIPage({
           websiteUrl={websiteUrl}
           docsUrl={docsUrl}
           downloadUrl={downloadUrl}
-          labels={{
-            vendor: t('vendor'),
-            version: t('version'),
-            license: t('license'),
-            stars: t('stars'),
-            platforms: t('platforms'),
-            visitWebsite: t('visitWebsite'),
-            documentation: t('documentation'),
-            download: t('download'),
-          }}
         />
 
         <RelatedProducts products={relatedProducts} />
 
         <ProductPricing pricing={cli.pricing} pricingUrl={pricingUrl} />
 
-        <ProductLinks resourceUrls={cli.resourceUrls} communityUrls={cli.communityUrls} />
+        <ResourceLinks resourceUrls={cli.resourceUrls} />
+
+        <CommunityLinks communityUrls={cli.communityUrls} />
 
         <ProductCommands install={cli.installCommand} launch={cli.launchCommand} />
 
