@@ -107,6 +107,7 @@ export default async function CLIPage({
   return (
     <PageLayout schema={schema}>
       <Breadcrumb items={breadcrumbItems} />
+
       <main className="max-w-8xl mx-auto px-[var(--spacing-md)]">
         <ProductHero
           name={cli.name}
@@ -122,16 +123,6 @@ export default async function CLIPage({
           websiteUrl={websiteUrl}
           docsUrl={docsUrl}
           downloadUrl={downloadUrl}
-          labels={{
-            vendor: t('vendor'),
-            version: t('version'),
-            license: t('license'),
-            stars: t('stars'),
-            platforms: t('platforms'),
-            visitWebsite: t('visitWebsite'),
-            documentation: t('documentation'),
-            download: t('download'),
-          }}
         />
 
         <RelatedProducts products={relatedProducts} />

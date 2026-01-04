@@ -139,17 +139,13 @@ export default async function VendorPage({
         verified={vendor.verified ?? false}
         websiteUrl={vendor.websiteUrl}
         docsUrl={vendor.docsUrl ?? null}
-        labels={{
-          visitWebsite: t('visitWebsite'),
-          documentation: t('documentation'),
-        }}
       />
 
       {/* Vendor Products (IDEs, CLIs, Extensions) */}
-      <VendorProducts products={vendorProducts} locale={locale} title={t('products')} />
+      <VendorProducts products={vendorProducts} />
 
       {/* Vendor Models */}
-      <VendorModels models={vendorModels} locale={locale} title={t('models')} />
+      <VendorModels models={vendorModels} />
 
       <CommunityLinks
         communityUrls={vendor.communityUrls}

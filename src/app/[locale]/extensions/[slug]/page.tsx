@@ -144,15 +144,6 @@ export default async function ExtensionPage({
           websiteUrl={websiteUrl}
           docsUrl={docsUrl}
           downloadUrl={downloadUrl}
-          labels={{
-            vendor: t('vendor'),
-            version: t('version'),
-            license: t('license'),
-            stars: t('stars'),
-            visitWebsite: t('visitWebsite'),
-            documentation: t('documentation'),
-            download: t('download'),
-          }}
         />
 
         <RelatedProducts products={relatedProducts} />
