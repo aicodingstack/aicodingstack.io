@@ -89,45 +89,6 @@ export default async function ProviderPage({
     },
   ]
 
-  // Build community links configuration
-  const communityLinks = [
-    {
-      key: 'linkedin',
-      title: t('community.linkedin.title'),
-      description: t('community.linkedin.description'),
-    },
-    {
-      key: 'twitter',
-      title: t('community.twitter.title'),
-      description: t('community.twitter.description'),
-    },
-    {
-      key: 'github',
-      title: t('community.github.title'),
-      description: t('community.github.description'),
-    },
-    {
-      key: 'youtube',
-      title: t('community.youtube.title'),
-      description: t('community.youtube.description'),
-    },
-    {
-      key: 'discord',
-      title: t('community.discord.title'),
-      description: t('community.discord.description'),
-    },
-    {
-      key: 'reddit',
-      title: t('community.reddit.title'),
-      description: t('community.reddit.description'),
-    },
-    {
-      key: 'blog',
-      title: t('community.blog.title'),
-      description: t('community.blog.description'),
-    },
-  ]
-
   // Breadcrumb items
   const breadcrumbItems = [
     { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
@@ -169,8 +130,6 @@ export default async function ProviderPage({
 
         <CommunityLinks
           communityUrls={provider.communityUrls}
-          title={t('communityLinks')}
-          links={communityLinks}
           layout="vertical"
           gridCols="grid-cols-2 md:grid-cols-4"
         />
