@@ -119,21 +119,38 @@
     "version": "バージョン",
     "visitWebsite": "Web サイトを表示"
   },
-  "productLinks": {
+  "communityLinks": {
     "blog": "ブログ",
-    "changelog": "変更履歴",
+    "blogDescription": "ブログ記事を読む",
     "community": "@:shared.common.community",
     "discord": "@:shared.platforms.discord",
-    "download": "@:shared.actions.download",
+    "discordDescription": "コミュニティに参加",
     "github": "@:shared.platforms.github",
-    "issue": "課題トラッカー",
+    "githubDescription": "リポジトリを表示",
     "linkedin": "@:shared.platforms.linkedin",
-    "mcp": "MCP ドキュメント",
-    "pricing": "@:shared.common.pricing",
+    "linkedinDescription": "フォローする",
     "reddit": "@:shared.platforms.reddit",
-    "resources": "@:shared.common.resources",
+    "redditDescription": "ディスカッションに参加",
     "twitter": "@:shared.platforms.twitter",
-    "youtube": "@:shared.platforms.youtube"
+    "twitterDescription": "フォローする",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "動画を見る"
+  },
+  "resourceLinks": {
+    "changelog": "変更履歴",
+    "changelogDescription": "変更履歴を表示",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "最新バージョンをダウンロード",
+    "issue": "課題トラッカー",
+    "issueDescription": "バグを報告して機能をリクエスト",
+    "mcp": "MCP ドキュメント",
+    "mcpDescription": "MCP 統合について学ぶ",
+    "pricing": "@:shared.common.pricing",
+    "pricingDescription": "価格プランを表示"
+  },
+  "resources": {
+    "community": "@:shared.common.community",
+    "resources": "@:shared.common.resources"
   },
   "productPricing": {
     "title": "@:shared.common.pricing",

@@ -2,11 +2,12 @@ import { notFound } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
 import { BackToNavigation } from '@/components/navigation/BackToNavigation'
 import { Breadcrumb } from '@/components/navigation/Breadcrumb'
+import { CommunityLinks } from '@/components/product/CommunityLinks'
 import { ProductCommands } from '@/components/product/ProductCommands'
 import { ProductHero } from '@/components/product/ProductHero'
-import { ProductLinks } from '@/components/product/ProductLinks'
 import { ProductPricing } from '@/components/product/ProductPricing'
 import { RelatedProducts } from '@/components/product/RelatedProducts'
+import { ResourceLinks } from '@/components/product/ResourceLinks'
 import type { Locale } from '@/i18n/config'
 import { PageLayout } from '@/layouts/PageLayout'
 import { getIDE, getRelatedProducts } from '@/lib/data/fetchers'
@@ -138,7 +139,9 @@ export default async function IDEPage({
 
         <ProductPricing pricing={ide.pricing} pricingUrl={pricingUrl} />
 
-        <ProductLinks resourceUrls={ide.resourceUrls} communityUrls={ide.communityUrls} />
+        <ResourceLinks resourceUrls={ide.resourceUrls} />
+
+        <CommunityLinks communityUrls={ide.communityUrls} />
 
         <ProductCommands install={ide.installCommand} launch={ide.launchCommand} />
 

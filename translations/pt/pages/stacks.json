@@ -158,29 +158,33 @@
     },
     "categoryLabel": "@:components.productHero.categories.PROVIDER",
     "community": {
+      "blog": {
+        "description": "Read blog posts",
+        "title": "@:components.communityLinks.blog"
+      },
       "discord": {
         "description": "Junte-se à comunidade",
-        "title": "@:components.productLinks.discord"
+        "title": "@:components.communityLinks.discord"
       },
       "github": {
         "description": "Ver repositórios",
-        "title": "@:components.productLinks.github"
+        "title": "@:components.communityLinks.github"
       },
       "linkedin": {
         "description": "@:shared.common.followUs",
-        "title": "@:components.productLinks.linkedin"
+        "title": "@:components.communityLinks.linkedin"
       },
       "reddit": {
         "description": "Participar da discussão",
-        "title": "@:components.productLinks.reddit"
+        "title": "@:components.communityLinks.reddit"
       },
       "twitter": {
         "description": "@:shared.common.followUs",
-        "title": "@:components.productLinks.twitter"
+        "title": "@:components.communityLinks.twitter"
       },
       "youtube": {
         "description": "Assistir vídeos",
-        "title": "@:components.productLinks.youtube"
+        "title": "@:components.communityLinks.youtube"
       }
     },
     "communityLinks": "@:shared.common.communityLinks",
@@ -253,44 +257,40 @@
     "categoryLabel": "@:components.productHero.categories.VENDOR",
     "documentation": "@:components.productHero.documentation",
     "community": {
-      "blog": {
-        "description": "Ler posts do blog",
-        "title": "Blog"
-      },
       "discord": {
         "description": "Junte-se à comunidade",
-        "title": "@:components.productLinks.discord"
+        "title": "@:components.communityLinks.discord"
       },
       "github": {
         "description": "Ver repositórios",
-        "title": "@:components.productLinks.github"
+        "title": "@:components.communityLinks.github"
       },
       "linkedin": {
         "description": "@:shared.common.followUs",
-        "title": "@:components.productLinks.linkedin"
+        "title": "@:components.communityLinks.linkedin"
       },
       "reddit": {
         "description": "Participar da discussão",
-        "title": "@:components.productLinks.reddit"
+        "title": "@:components.communityLinks.reddit"
       },
       "twitter": {
         "description": "@:shared.common.followUs",
-        "title": "@:components.productLinks.twitter"
+        "title": "@:components.communityLinks.twitter"
       },
       "youtube": {
         "description": "Assistir vídeos",
-        "title": "@:components.productLinks.youtube"
+        "title": "@:components.communityLinks.youtube"
       }
     },
     "communityLinks": "@:shared.common.communityLinks",
     "connectLinkedIn": "Conectar no LinkedIn",
-    "discord": "@:components.productLinks.discord",
+    "discord": "@:components.communityLinks.discord",
     "followTwitter": "Seguir no Twitter",
-    "github": "@:components.productLinks.github",
+    "github": "@:components.communityLinks.github",
     "indexLabel": "@:shared.common.indexLabel",
     "joinDiscord": "Juntar-se à comunidade Discord",
     "joinReddit": "Juntar-se à comunidade Reddit",
-    "linkedin": "@:components.productLinks.linkedin",
+    "linkedin": "@:components.communityLinks.linkedin",
     "metaDescription": "Explore os produtos e tecnologias de IA de {name}.",
     "metaTitle": "Fornecedor de Tecnologia IA | Perfil da Empresa 2025",
     "models": "@:shared.stacks.models",
@@ -298,14 +298,14 @@
     "productsSubtitle": "Explore produtos e serviços de {vendorName}",
     "productsTitle": "@:shared.common.products",
     "quickLinks": "Links Rápidos",
-    "reddit": "@:components.productLinks.reddit",
-    "twitter": "@:components.productLinks.twitter",
+    "reddit": "@:components.communityLinks.reddit",
+    "twitter": "@:components.communityLinks.twitter",
     "vendorDetails": "Detalhes do Fornecedor",
     "viewGitHub": "Ver repositórios de código aberto",
     "visitWebsite": "@:components.productHero.visitWebsite",
     "watchYouTube": "Assistir vídeos no YouTube",
     "website": "@:shared.common.website",
-    "youtube": "@:components.productLinks.youtube"
+    "youtube": "@:components.communityLinks.youtube"
   },
   "vendors": {
     "search": "@:components.filterSortBar.search",

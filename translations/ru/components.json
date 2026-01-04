@@ -119,21 +119,38 @@
     "version": "Версия",
     "visitWebsite": "Посетить сайт"
   },
-  "productLinks": {
+  "communityLinks": {
     "blog": "Блог",
-    "changelog": "Журнал изменений",
+    "blogDescription": "Читать посты в блоге",
     "community": "@:shared.common.community",
     "discord": "@:shared.platforms.discord",
-    "download": "@:shared.actions.download",
+    "discordDescription": "Присоединиться к сообществу",
     "github": "@:shared.platforms.github",
-    "issue": "Трекер проблем",
+    "githubDescription": "Просмотр репозиториев",
     "linkedin": "@:shared.platforms.linkedin",
-    "mcp": "Документация MCP",
-    "pricing": "@:shared.common.pricing",
+    "linkedinDescription": "@:shared.common.followUs",
     "reddit": "@:shared.platforms.reddit",
-    "resources": "@:shared.common.resources",
+    "redditDescription": "Присоединиться к обсуждению",
     "twitter": "@:shared.platforms.twitter",
-    "youtube": "@:shared.platforms.youtube"
+    "twitterDescription": "@:shared.common.followUs",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "Смотреть видео"
+  },
+  "resourceLinks": {
+    "changelog": "Журнал изменений",
+    "changelogDescription": "Просмотр журнала изменений",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "Скачать последнюю версию",
+    "issue": "Трекер задач",
+    "issueDescription": "Сообщить об ошибках и запросить функции",
+    "mcp": "Документация MCP",
+    "mcpDescription": "Узнайте о интеграции MCP",
+    "pricing": "@:shared.common.pricing",
+    "pricingDescription": "Просмотр тарифных планов"
+  },
+  "resources": {
+    "community": "@:shared.common.community",
+    "resources": "@:shared.common.resources"
   },
   "productPricing": {
     "title": "@:shared.common.pricing",

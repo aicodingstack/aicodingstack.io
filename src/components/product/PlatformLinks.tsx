@@ -1,14 +1,8 @@
 import { LinkCardGrid } from '@/components/product/LinkCard'
-
-export interface PlatformUrls {
-  huggingface?: string | null
-  artificialAnalysis?: string | null
-  openrouter?: string | null
-  [key: string]: string | null | undefined
-}
+import type { ManifestPlatformUrls } from '@/types/manifests'
 
 export interface PlatformLinksProps {
-  platformUrls: PlatformUrls | null | undefined
+  platformUrls: ManifestPlatformUrls | null | undefined
   title: string
   links: Array<{
     key: string
@@ -17,18 +11,6 @@ export interface PlatformLinksProps {
   }>
   layout?: 'horizontal' | 'vertical'
   gridCols?: string
-}
-
-/**
- * Check whether the given platform URLs object contains at least one usable URL.
- *
- * We treat empty strings and whitespace-only strings as "missing".
- */
-function hasAnyPlatformUrl(platformUrls: PlatformUrls): boolean {
-  return Object.values(platformUrls).some(value => {
-    if (typeof value !== 'string') return false
-    return value.trim().length > 0
-  })
 }
 
 /**
@@ -45,7 +27,7 @@ export function PlatformLinks({
   layout = 'horizontal',
   gridCols = 'grid-cols-1 md:grid-cols-3',
 }: PlatformLinksProps) {
-  if (!platformUrls || links.length === 0 || !hasAnyPlatformUrl(platformUrls)) {
+  if (!platformUrls || links.length === 0) {
     return null
   }
 

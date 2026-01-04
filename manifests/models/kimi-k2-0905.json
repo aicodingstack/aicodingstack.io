@@ -54,8 +54,8 @@
   "inputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
-    "sweBench": null,
-    "terminalBench": null,
+    "sweBench": 43.8,
+    "terminalBench": 0.278,
     "sciCode": null,
     "liveCodeBench": null,
     "mmmu": null,

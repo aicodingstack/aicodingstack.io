@@ -58,9 +58,9 @@
     "terminalBench": 0.631,
     "sciCode": null,
     "liveCodeBench": 46.9,
-    "mmmu": null,
+    "mmmu": 77.1,
     "mmmuPro": null,
-    "webDevArena": null
+    "webDevArena": 147.9
   },
   "platformUrls": {
     "huggingface": null,

@@ -119,21 +119,38 @@
     "version": "Versi",
     "visitWebsite": "Kunjungi Situs Web"
   },
-  "productLinks": {
+  "communityLinks": {
     "blog": "Blog",
+    "blogDescription": "Baca postingan blog",
+    "community": "@:shared.common.community",
+    "discord": "@:shared.platforms.discord",
+    "discordDescription": "Bergabung komunitas",
+    "github": "@:shared.platforms.github",
+    "githubDescription": "Lihat repositori",
+    "linkedin": "@:shared.platforms.linkedin",
+    "linkedinDescription": "Ikuti kami",
+    "reddit": "@:shared.platforms.reddit",
+    "redditDescription": "Bergabung diskusi",
+    "twitter": "@:shared.platforms.twitter",
+    "twitterDescription": "Ikuti kami",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "Tonton video"
+  },
+  "resourceLinks": {
     "changelog": "Log Perubahan",
-    "community": "Komunitas",
-    "discord": "Discord",
-    "download": "Unduh",
-    "github": "GitHub",
+    "changelogDescription": "Lihat log perubahan",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "Unduh versi terbaru",
     "issue": "Pelacak Isu",
-    "linkedin": "LinkedIn",
+    "issueDescription": "Laporkan bug dan minta fitur",
     "mcp": "Dokumentasi MCP",
-    "pricing": "Harga",
-    "reddit": "Reddit",
-    "resources": "Sumber Daya",
-    "twitter": "X (Twitter)",
-    "youtube": "YouTube"
+    "mcpDescription": "Pelajari integrasi MCP",
+    "pricing": "@:shared.common.pricing",
+    "pricingDescription": "Lihat paket harga"
+  },
+  "resources": {
+    "community": "@:shared.common.community",
+    "resources": "@:shared.common.resources"
   },
   "productPricing": {
     "title": "Harga",

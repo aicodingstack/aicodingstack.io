@@ -1,34 +1,49 @@
 {
   "clis": {
     "backTo": "Kembali ke CLI",
-    "subtitle": "Bandingkan fitur, harga, dan spesifikasi alat coding AI CLI secara berdampingan.",
-    "title": "Perbandingan CLI"
+    "subtitle": "Asisten pengkodean baris perintah AI",
+    "title": "@:shared.stacks.clis"
   },
   "columns": {
+    "cache": "Cache",
+    "capabilities": "Kapasitas",
     "contextLength": "Panjang Konteks",
-    "freePlan": "Paket Gratis",
+    "freePlan": "Rencana Gratis",
     "githubStars": "@:components.productHero.stars",
+    "input": "Input",
+    "inputModalities": "Modalitas Input",
     "license": "@:components.productHero.license",
     "links": "Tautan",
+    "live-code-bench": "Live Code Bench",
     "maxOutput": "@:shared.common.maxOutput",
     "maxPrice": "Harga Maksimum",
+    "mmmu": "MMMU",
+    "mmmu-pro": "MMMU Pro",
     "modelSize": "@:shared.common.modelSize",
+    "output": "Output",
     "platforms": "@:components.productHero.platforms",
     "pricing": "@:shared.common.pricing",
-    "startingPrice": "Harga Awal",
+    "pricingCache": "Harga Cache",
+    "pricingInput": "Harga Input",
+    "pricingOutput": "Harga Output",
+    "sci-code": "SciCode",
+    "startingPrice": "Harga Mulai",
     "supportedIdes": "@:components.productHero.supportedIdes",
+    "swe-bench": "SWE-bench",
+    "terminal-bench": "Terminal Bench",
     "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version"
+    "version": "@:components.productHero.version",
+    "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "Kembali ke Ekstensi",
-    "subtitle": "Bandingkan fitur, harga, dan spesifikasi ekstensi coding AI secara berdampingan.",
-    "title": "Perbandingan Ekstensi"
+    "subtitle": "Ekstensi dan plugin pengkodean AI",
+    "title": "@:shared.stacks.extensions"
   },
   "ides": {
     "backTo": "Kembali ke IDE",
-    "subtitle": "Bandingkan fitur, harga, dan spesifikasi IDE bertenaga AI secara berdampingan.",
-    "title": "Perbandingan IDE"
+    "subtitle": "Lingkungan pengembangan terintegrasi yang ditingkatkan dengan AI",
+    "title": "@:shared.stacks.ides"
   },
   "linkTitles": {
     "documentation": "@:components.productHero.documentation",
@@ -37,11 +52,11 @@
   },
   "models": {
     "backTo": "Kembali ke Model",
-    "subtitle": "Bandingkan spesifikasi dan harga model coding AI secara berdampingan.",
-    "title": "Perbandingan Model"
+    "subtitle": "Model bahasa besar yang dioptimalkan untuk pembuatan dan analisis kode",
+    "title": "@:shared.stacks.models"
   },
   "pricingValues": {
     "free": "Gratis",
-    "freeOnly": "Gratis saja"
+    "freeOnly": "Hanya gratis"
   }
 }

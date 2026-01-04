@@ -58,7 +58,7 @@
     "terminalBench": 0.245,
     "sciCode": null,
     "liveCodeBench": null,
-    "mmmu": null,
+    "mmmu": 68.0,
     "mmmuPro": null,
     "webDevArena": null
   },

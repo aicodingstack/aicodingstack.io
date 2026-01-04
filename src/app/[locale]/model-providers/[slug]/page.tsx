@@ -121,6 +121,11 @@ export default async function ProviderPage({
       title: t('community.reddit.title'),
       description: t('community.reddit.description'),
     },
+    {
+      key: 'blog',
+      title: t('community.blog.title'),
+      description: t('community.blog.description'),
+    },
   ]
 
   // Breadcrumb items

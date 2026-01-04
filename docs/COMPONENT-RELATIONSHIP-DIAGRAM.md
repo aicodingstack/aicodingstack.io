@@ -29,7 +29,8 @@ src/
     ├── product/               [Product-related components]
     │   ├── ProductHero.tsx    [Product header info]
     │   ├── ProductPricing.tsx [Pricing section]
-    │   ├── ProductLinks.tsx   [Resource/community links]
+    │   ├── ResourceLinks.tsx  [Resource links (download, changelog, pricing, mcp, issue)]
+    │   ├── CommunityLinks.tsx [Community links (linkedin, twitter, github, youtube, discord, reddit, blog)]
     │   ├── ProductCommands.tsx[Install/launch commands]
     │   ├── RelatedProducts.tsx[Related products grid]
     │   ├── LinkCard.tsx       [Link card component]
@@ -61,7 +62,6 @@ src/
         ├── ComparisonTable.tsx       [Comparison data table]
         ├── CollectionScrollbar.tsx   [Horizontal scroll for collections]
         ├── CollectionSection.tsx     [Collection section wrapper]
-        ├── CommunityLinks.tsx        [Community links (Twitter, Discord, etc.)]
         ├── MarkdownContent.tsx       [Markdown content renderer]
         ├── MDXComponents.tsx         [MDX component mappings]
         ├── ModelBenchmarks.tsx       [Model benchmark scores]
@@ -114,7 +114,8 @@ src/
   <ProductHero {...product} />
   <RelatedProducts products={...} />
   <ProductPricing pricing={...} />
-  <ProductLinks links={...} />
+  <ResourceLinks resourceUrls={...} title="Resources" links={...} />
+  <CommunityLinks communityUrls={...} title="Community" links={...} />
   <ProductCommands commands={...} />
   <BackToNavigation href="/ides" title="All IDEs" />
 </PageLayout>
@@ -172,10 +173,10 @@ src/
 │  │   └── PlatformIcons                                                     │
 │  ├── RelatedProducts → LinkCard                                            │
 │  ├── ProductPricing                                                        │
-│  ├── ProductLinks                                                          │
+│  ├── ResourceLinks → LinkCardGrid → LinkCard                               │
+│  ├── CommunityLinks → LinkCardGrid → LinkCard → PlatformIcons              │
 │  ├── ProductCommands → CopyButton                                          │
 │  ├── PlatformLinks → PlatformIcons                                         │
-│  ├── CommunityLinks → PlatformIcons                                        │
 │  ├── ModelSpecifications                                                   │
 │  ├── ModelBenchmarks                                                       │
 │  ├── VendorProducts → LinkCard                                             │
@@ -199,9 +200,9 @@ src/
 
 | Page Type | Layout | Components Used |
 |-----------|--------|-----------------|
-| IDE Detail | PageLayout | Breadcrumb, ProductHero, RelatedProducts, ProductPricing, ProductLinks, ProductCommands, BackToNavigation |
-| CLI Detail | PageLayout | Breadcrumb, ProductHero, RelatedProducts, ProductPricing, ProductLinks, ProductCommands, BackToNavigation |
-| Extension Detail | PageLayout | Breadcrumb, ProductHero, RelatedProducts, ProductPricing, ProductLinks, ProductCommands, BackToNavigation |
+| IDE Detail | PageLayout | Breadcrumb, ProductHero, RelatedProducts, ProductPricing, ResourceLinks, CommunityLinks, ProductCommands, BackToNavigation |
+| CLI Detail | PageLayout | Breadcrumb, ProductHero, RelatedProducts, ProductPricing, ResourceLinks, CommunityLinks, ProductCommands, BackToNavigation |
+| Extension Detail | PageLayout | Breadcrumb, ProductHero, RelatedProducts, ProductPricing, ResourceLinks, CommunityLinks, ProductCommands, BackToNavigation |
 | Model Detail | PageLayout | Breadcrumb, ProductHero, PlatformLinks, ModelSpecifications, ModelBenchmarks, BackToNavigation |
 | Vendor Detail | PageLayout | Breadcrumb, ProductHero, CommunityLinks, VendorProducts, VendorModels, BackToNavigation |
 | Provider Detail | PageLayout | Breadcrumb, ProductHero, PlatformLinks, CommunityLinks, BackToNavigation |

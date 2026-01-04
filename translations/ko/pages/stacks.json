@@ -158,29 +158,33 @@
     },
     "categoryLabel": "@:components.productHero.categories.PROVIDER",
     "community": {
+      "blog": {
+        "description": "블로그 게시물 읽기",
+        "title": "@:components.communityLinks.blog"
+      },
       "discord": {
         "description": "커뮤니티 참여",
-        "title": "@:components.productLinks.discord"
+        "title": "@:components.communityLinks.discord"
       },
       "github": {
         "description": "저장소 보기",
-        "title": "@:components.productLinks.github"
+        "title": "@:components.communityLinks.github"
       },
       "linkedin": {
         "description": "팔로우하기",
-        "title": "@:components.productLinks.linkedin"
+        "title": "@:components.communityLinks.linkedin"
       },
       "reddit": {
         "description": "토론 참여",
-        "title": "@:components.productLinks.reddit"
+        "title": "@:components.communityLinks.reddit"
       },
       "twitter": {
         "description": "팔로우하기",
-        "title": "@:components.productLinks.twitter"
+        "title": "@:components.communityLinks.twitter"
       },
       "youtube": {
         "description": "동영상 보기",
-        "title": "@:components.productLinks.youtube"
+        "title": "@:components.communityLinks.youtube"
       }
     },
     "communityLinks": "커뮤니티 링크",
@@ -259,38 +263,38 @@
       },
       "discord": {
         "description": "커뮤니티 참여",
-        "title": "@:components.productLinks.discord"
+        "title": "@:components.communityLinks.discord"
       },
       "github": {
         "description": "저장소 보기",
-        "title": "@:components.productLinks.github"
+        "title": "@:components.communityLinks.github"
       },
       "linkedin": {
         "description": "팔로우하기",
-        "title": "@:components.productLinks.linkedin"
+        "title": "@:components.communityLinks.linkedin"
       },
       "reddit": {
         "description": "토론 참여",
-        "title": "@:components.productLinks.reddit"
+        "title": "@:components.communityLinks.reddit"
       },
       "twitter": {
         "description": "팔로우하기",
-        "title": "@:components.productLinks.twitter"
+        "title": "@:components.communityLinks.twitter"
       },
       "youtube": {
         "description": "동영상 보기",
-        "title": "@:components.productLinks.youtube"
+        "title": "@:components.communityLinks.youtube"
       }
     },
     "communityLinks": "커뮤니티 링크",
     "connectLinkedIn": "LinkedIn에서 연결",
-    "discord": "@:components.productLinks.discord",
+    "discord": "@:components.communityLinks.discord",
     "followTwitter": "Twitter에서 팔로우",
-    "github": "@:components.productLinks.github",
+    "github": "@:components.communityLinks.github",
     "indexLabel": "@:shared.common.indexLabel",
     "joinDiscord": "Discord 커뮤니티에 가입",
     "joinReddit": "Reddit 커뮤니티에 가입",
-    "linkedin": "@:components.productLinks.linkedin",
+    "linkedin": "@:components.communityLinks.linkedin",
     "metaDescription": "{name}의 AI 제품 및 기술을 탐색하세요.",
     "metaTitle": "AI 기술 벤더 | 회사 프로필 2025",
     "models": "모델",
@@ -298,14 +302,14 @@
     "productsSubtitle": "{vendorName}의 제품 및 서비스 탐색",
     "productsTitle": "제품",
     "quickLinks": "빠른 링크",
-    "reddit": "@:components.productLinks.reddit",
-    "twitter": "@:components.productLinks.twitter",
+    "reddit": "@:components.communityLinks.reddit",
+    "twitter": "@:components.communityLinks.twitter",
     "vendorDetails": "벤더 세부 정보",
     "viewGitHub": "오픈소스 저장소 보기",
     "visitWebsite": "공식 웹사이트 방문",
     "watchYouTube": "YouTube에서 비디오 보기",
     "website": "웹사이트",
-    "youtube": "@:components.productLinks.youtube"
+    "youtube": "@:components.communityLinks.youtube"
   },
   "vendors": {
     "search": "이름으로 검색...",

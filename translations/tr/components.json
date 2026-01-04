@@ -119,21 +119,38 @@
     "version": "Sürüm",
     "visitWebsite": "Web Sitesini Ziyaret Et"
   },
-  "productLinks": {
+  "communityLinks": {
     "blog": "Blog",
+    "blogDescription": "Blog gönderilerini oku",
+    "community": "@:shared.common.community",
+    "discord": "@:shared.platforms.discord",
+    "discordDescription": "Topluluğa katıl",
+    "github": "@:shared.platforms.github",
+    "githubDescription": "Depoları görüntüle",
+    "linkedin": "@:shared.platforms.linkedin",
+    "linkedinDescription": "@:shared.common.followUs",
+    "reddit": "@:shared.platforms.reddit",
+    "redditDescription": "Tartışmaya katıl",
+    "twitter": "@:shared.platforms.twitter",
+    "twitterDescription": "@:shared.common.followUs",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "Videoları izle"
+  },
+  "resourceLinks": {
     "changelog": "Değişiklik Günlüğü",
-    "community": "Topluluk",
-    "discord": "Discord",
-    "download": "İndir",
-    "github": "GitHub",
+    "changelogDescription": "Değişiklik günlüğünü görüntüle",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "En son sürümü indir",
     "issue": "Sorun Takipçisi",
-    "linkedin": "LinkedIn",
+    "issueDescription": "Hata bildirin ve özellik isteyin",
     "mcp": "MCP Dokümantasyonu",
-    "pricing": "Fiyatlandırma",
-    "reddit": "Reddit",
-    "resources": "Kaynaklar",
-    "twitter": "X (Twitter)",
-    "youtube": "YouTube"
+    "mcpDescription": "MCP entegrasyonu hakkında bilgi edinin",
+    "pricing": "@:shared.common.pricing",
+    "pricingDescription": "Fiyat planlarını görüntüle"
+  },
+  "resources": {
+    "community": "@:shared.common.community",
+    "resources": "@:shared.common.resources"
   },
   "productPricing": {
     "title": "Fiyatlandırma",

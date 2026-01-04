@@ -119,21 +119,38 @@
     "version": "Versão",
     "visitWebsite": "Visitar Site"
   },
-  "productLinks": {
+  "communityLinks": {
     "blog": "Blog",
-    "changelog": "Changelog",
+    "blogDescription": "Ler posts do blog",
     "community": "@:shared.common.community",
     "discord": "@:shared.platforms.discord",
-    "download": "@:shared.actions.download",
+    "discordDescription": "Junte-se à comunidade",
     "github": "@:shared.platforms.github",
-    "issue": "Rastreador de Problemas",
+    "githubDescription": "Ver repositórios",
     "linkedin": "@:shared.platforms.linkedin",
-    "mcp": "Documentação MCP",
-    "pricing": "@:shared.common.pricing",
+    "linkedinDescription": "@:shared.common.followUs",
     "reddit": "@:shared.platforms.reddit",
-    "resources": "@:shared.common.resources",
+    "redditDescription": "Participar da discussão",
     "twitter": "@:shared.platforms.twitter",
-    "youtube": "@:shared.platforms.youtube"
+    "twitterDescription": "@:shared.common.followUs",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "Assistir vídeos"
+  },
+  "resourceLinks": {
+    "changelog": "Changelog",
+    "changelogDescription": "Ver changelog",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "Baixar versão mais recente",
+    "issue": "Rastreador de Problemas",
+    "issueDescription": "Informar bugs e solicitar recursos",
+    "mcp": "Documentação de MCP",
+    "mcpDescription": "Saiba mais sobre integração MCP",
+    "pricing": "@:shared.common.pricing",
+    "pricingDescription": "Ver planos de preços"
+  },
+  "resources": {
+    "community": "@:shared.common.community",
+    "resources": "@:shared.common.resources"
   },
   "productPricing": {
     "title": "@:shared.common.pricing",

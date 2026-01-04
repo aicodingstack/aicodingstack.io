@@ -6,6 +6,7 @@ import { Link } from '@/i18n/navigation'
 export interface ComparisonColumn {
   key: string
   label: string
+  title?: string
   minWidth?: string
   maxWidth?: string
   render?: (value: unknown, item: Record<string, unknown>) => React.ReactNode
@@ -155,7 +156,7 @@ export default function ComparisonTable({
                       maxWidth: column.maxWidth || `${columnWidths[index + 1]}px`,
                     }}
                   >
-                    {column.label}
+                    <span title={column.title}>{column.label}</span>
                   </th>
                 ))}
               </tr>
@@ -222,7 +223,7 @@ export default function ComparisonTable({
                       ...(column.minWidth && { width: column.minWidth }),
                     }}
                   >
-                    {column.label}
+                    <span title={column.title}>{column.label}</span>
                   </th>
                 ))}
               </tr>

@@ -119,21 +119,38 @@
     "version": "版本",
     "visitWebsite": "访问官网"
   },
-  "productLinks": {
+  "communityLinks": {
     "blog": "博客",
+    "blogDescription": "阅读博客文章",
+    "community": "@:shared.common.community",
+    "discord": "@:shared.platforms.discord",
+    "discordDescription": "加入社区",
+    "github": "@:shared.platforms.github",
+    "githubDescription": "查看代码仓库",
+    "linkedin": "@:shared.platforms.linkedin",
+    "linkedinDescription": "@:shared.common.followUs",
+    "reddit": "@:shared.platforms.reddit",
+    "redditDescription": "参与讨论",
+    "twitter": "@:shared.platforms.twitter",
+    "twitterDescription": "@:shared.common.followUs",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "观看视频"
+  },
+  "resourceLinks": {
     "changelog": "更新日志",
-    "community": "社区",
-    "discord": "Discord",
-    "download": "下载",
-    "github": "GitHub",
+    "changelogDescription": "查看更新日志",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "下载最新版本",
     "issue": "问题跟踪",
-    "linkedin": "LinkedIn",
+    "issueDescription": "报告问题和请求功能",
     "mcp": "MCP 文档",
-    "pricing": "定价",
-    "reddit": "Reddit",
-    "resources": "资源",
-    "twitter": "X (Twitter)",
-    "youtube": "YouTube"
+    "mcpDescription": "了解 MCP 集成",
+    "pricing": "@:shared.common.pricing",
+    "pricingDescription": "查看定价方案"
+  },
+  "resources": {
+    "community": "@:shared.common.community",
+    "resources": "@:shared.common.resources"
   },
   "productPricing": {
     "title": "定价",

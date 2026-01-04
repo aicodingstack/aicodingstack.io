@@ -1,34 +1,49 @@
 {
   "clis": {
     "backTo": "Voltar aos CLIs",
-    "subtitle": "Assistentes de codificação de linha de comando com IA",
-    "title": "@:shared.stacks.clis"
+    "subtitle": "Compare características, preços e especificações de ferramentas de codificação de linha de comando de IA lado a lado.",
+    "title": "Comparação CLI"
   },
   "columns": {
+    "cache": "Cache",
+    "capabilities": "Capacidades",
     "contextLength": "Comprimento do Contexto",
     "freePlan": "Plano Gratuito",
     "githubStars": "@:components.productHero.stars",
+    "input": "Entrada",
+    "inputModalities": "Modalidades de Entrada",
     "license": "@:components.productHero.license",
     "links": "Links",
+    "live-code-bench": "Live Code Bench",
     "maxOutput": "@:shared.common.maxOutput",
     "maxPrice": "Preço Máximo",
+    "mmmu": "MMMU",
+    "mmmu-pro": "MMMU Pro",
     "modelSize": "@:shared.common.modelSize",
+    "output": "Saída",
     "platforms": "@:components.productHero.platforms",
     "pricing": "@:shared.common.pricing",
+    "pricingCache": "Preço de Cache",
+    "pricingInput": "Preço de Entrada",
+    "pricingOutput": "Preço de Saída",
+    "sci-code": "SciCode",
     "startingPrice": "Preço Inicial",
     "supportedIdes": "@:components.productHero.supportedIdes",
+    "swe-bench": "SWE-bench",
+    "terminal-bench": "Terminal Bench",
     "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version"
+    "version": "@:components.productHero.version",
+    "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "Voltar às Extensões",
-    "subtitle": "Extensões e plugins de codificação com IA",
-    "title": "@:shared.stacks.extensions"
+    "subtitle": "Compare características, preços e especificações de extensões de codificação de IA lado a lado.",
+    "title": "Comparação de Extensões"
   },
   "ides": {
     "backTo": "Voltar aos IDEs",
-    "subtitle": "Ambientes de desenvolvimento integrados aprimorados com IA",
-    "title": "@:shared.stacks.ides"
+    "subtitle": "Compare características, preços e especificações de IDEs com IA lado a lado.",
+    "title": "Comparação de IDEs"
   },
   "linkTitles": {
     "documentation": "@:components.productHero.documentation",
@@ -37,8 +52,8 @@
   },
   "models": {
     "backTo": "Voltar aos Modelos",
-    "subtitle": "Modelos de linguagem grandes otimizados para geração e análise de código",
-    "title": "@:shared.stacks.models"
+    "subtitle": "Compare especificações e preços de modelos de codificação de IA lado a lado.",
+    "title": "Comparação de Modelos"
   },
   "pricingValues": {
     "free": "Grátis",

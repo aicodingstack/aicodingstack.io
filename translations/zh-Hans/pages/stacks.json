@@ -158,6 +158,10 @@
     },
     "categoryLabel": "@:components.productHero.categories.PROVIDER",
     "community": {
+      "blog": {
+        "description": "阅读博客文章",
+        "title": "博客"
+      },
       "discord": {
         "description": "加入社区",
         "title": "Discord"

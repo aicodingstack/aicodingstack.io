@@ -6,7 +6,7 @@
  */
 
 interface LinkCardProps {
-  href: string
+  href?: string | null
   title: string
   description: string
   layout?: 'horizontal' | 'vertical'
@@ -17,6 +17,30 @@ interface LinkCardProps {
  */
 export function LinkCard({ href, title, description, layout = 'horizontal' }: LinkCardProps) {
   const isHorizontal = layout === 'horizontal'
+  const hasHref = href && href.trim().length > 0
+
+  if (!hasHref) {
+    return (
+      <div
+        className={`border border-[var(--color-border)] p-[var(--spacing-md)] opacity-40 pointer-events-none ${isHorizontal ? '' : 'text-center'}`}
+      >
+        {isHorizontal ? (
+          <div className="flex items-center justify-between">
+            <div>
+              <h3 className="text-sm font-semibold tracking-tight mb-1">{title}</h3>
+              <p className="text-xs text-[var(--color-text-muted)]">{description}</p>
+            </div>
+            <span className="text-lg text-[var(--color-text-muted)]">→</span>
+          </div>
+        ) : (
+          <>
+            <h3 className="text-sm font-semibold tracking-tight mb-1">{title}</h3>
+            <p className="text-xs text-[var(--color-text-muted)]">{description}</p>
+          </>
+        )}
+      </div>
+    )
+  }
 
   return (
     <a
@@ -59,7 +83,7 @@ interface LinkCardGridProps {
 
 /**
  * Grid container for link cards
- * Automatically filters out links with empty URLs
+ * Displays all links - empty links show as grayed-out placeholders
  */
 export function LinkCardGrid({
   title,
@@ -68,17 +92,6 @@ export function LinkCardGrid({
   layout = 'horizontal',
   gridCols = 'grid-cols-1 md:grid-cols-3',
 }: LinkCardGridProps) {
-  // Filter out links where the URL is missing or not a string
-  const availableLinks = links.filter(link => {
-    const url = urls[link.key]
-    return url && typeof url === 'string'
-  })
-
-  // Don't render if no links are available
-  if (availableLinks.length === 0) {
-    return null
-  }
-
   return (
     <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
@@ -87,10 +100,10 @@ export function LinkCardGrid({
         </h2>
 
         <div className={`grid ${gridCols} gap-[var(--spacing-md)] mt-[var(--spacing-lg)]`}>
-          {availableLinks.map(link => (
+          {links.map(link => (
             <LinkCard
               key={link.key}
-              href={urls[link.key] as string}
+              href={urls[link.key] as string | null | undefined}
               title={link.title}
               description={link.description}
               layout={layout}
