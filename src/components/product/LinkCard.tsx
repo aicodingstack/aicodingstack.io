@@ -76,7 +76,7 @@ interface LinkCardGridProps {
     title: string
     description: string
   }>
-  urls: Record<string, unknown>
+  urls: Record<string, string | null>
   layout?: 'horizontal' | 'vertical'
   gridCols?: string
 }
