@@ -158,6 +158,10 @@
     },
     "categoryLabel": "@:components.productHero.categories.PROVIDER",
     "community": {
+      "blog": {
+        "description": "Baca postingan blog",
+        "title": "@:components.communityLinks.blog"
+      },
       "discord": {
         "description": "Bergabung komunitas",
         "title": "@:components.communityLinks.discord"

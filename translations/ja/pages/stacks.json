@@ -158,6 +158,10 @@
     },
     "categoryLabel": "@:components.productHero.categories.PROVIDER",
     "community": {
+      "blog": {
+        "description": "ブログ記事を読む",
+        "title": "@:components.communityLinks.blog"
+      },
       "discord": {
         "description": "コミュニティに参加",
         "title": "@:components.communityLinks.discord"

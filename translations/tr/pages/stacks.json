@@ -257,8 +257,12 @@
     "categoryLabel": "@:components.productHero.categories.VENDOR",
     "documentation": "@:components.productHero.documentation",
     "community": {
+      "blog": {
+        "description": "Blog yazılarını oku",
+        "title": "@:components.communityLinks.blog"
+      },
       "discord": {
-        "description": "Unirse a la comunidad",
+        "description": "Topluluğa katıl",
         "title": "@:components.communityLinks.discord"
       },
       "github": {

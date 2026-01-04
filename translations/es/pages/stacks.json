@@ -257,6 +257,10 @@
     "categoryLabel": "@:components.productHero.categories.VENDOR",
     "documentation": "@:components.productHero.documentation",
     "community": {
+      "blog": {
+        "description": "Leer publicaciones de blog",
+        "title": "@:components.communityLinks.blog"
+      },
       "discord": {
         "description": "Unirse a la comunidad",
         "title": "@:components.communityLinks.discord"
