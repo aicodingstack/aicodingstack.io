@@ -36,6 +36,7 @@ export interface ProductHeroProps {
 
   // Type (for Providers)
   type?: string
+  typeValue?: string // Translated type value (e.g., "Foundation Model Provider")
 
   // Links
   websiteUrl?: string
@@ -50,21 +51,6 @@ export interface ProductHeroProps {
     url: string
     icon?: string
   }[]
-
-  // i18n labels
-  labels?: {
-    vendor?: string
-    version?: string
-    license?: string
-    stars?: string
-    platforms?: string
-    type?: string
-    typeValue?: string // Translated type value (e.g., "Foundation Model Provider")
-    visitWebsite?: string
-    documentation?: string
-    download?: string
-    getApiKey?: string
-  }
 }
 
 export function ProductHero({
@@ -81,15 +67,16 @@ export function ProductHero({
   showAllPlatforms = false,
   additionalInfo,
   type,
+  typeValue,
   websiteUrl,
   githubUrl,
   docsUrl,
   downloadUrl,
   applyKeyUrl,
   additionalUrls,
-  labels = {},
 }: ProductHeroProps) {
-  const t = useTranslations()
+  const t = useTranslations('components.productHero')
+
   // Determine which platforms to display
   const displayPlatforms = platforms
     ? showAllPlatforms
@@ -129,7 +116,7 @@ export function ProductHero({
           <div className="inline-flex items-center gap-[var(--spacing-sm)] flex-wrap px-[var(--spacing-md)] py-[var(--spacing-md)] border border-[var(--color-border)] text-sm">
             {vendor && (
               <div className="flex gap-1">
-                <span className="text-[var(--color-text-muted)]">{labels.vendor || 'Vendor'}:</span>
+                <span className="text-[var(--color-text-muted)]">{t('vendor')}:</span>
                 <span className="font-medium">{vendor}</span>
               </div>
             )}
@@ -138,9 +125,7 @@ export function ProductHero({
 
             {latestVersion && (
               <div className="flex gap-1">
-                <span className="text-[var(--color-text-muted)]">
-                  {labels.version || 'Version'}:
-                </span>
+                <span className="text-[var(--color-text-muted)]">{t('version')}:</span>
                 <span className="font-medium">{latestVersion}</span>
               </div>
             )}
@@ -149,9 +134,7 @@ export function ProductHero({
 
             {license && (
               <div className="flex gap-1">
-                <span className="text-[var(--color-text-muted)]">
-                  {labels.license || 'License'}:
-                </span>
+                <span className="text-[var(--color-text-muted)]">{t('license')}:</span>
                 {renderLicense(
                   license,
                   '!font-medium hover:underline hover:decoration-dotted transition-colors underline-offset-2',
@@ -166,7 +149,7 @@ export function ProductHero({
 
             {githubStars !== null && githubStars !== undefined && (
               <div className="flex gap-1">
-                <span className="text-[var(--color-text-muted)]">{labels.stars || 'Stars'}:</span>
+                <span className="text-[var(--color-text-muted)]">{t('stars')}:</span>
                 <span className="font-medium">{githubStars}k</span>
               </div>
             )}
@@ -208,7 +191,7 @@ export function ProductHero({
           <div className="flex justify-center mb-[var(--spacing-lg)]">
             <div className="inline-flex items-center gap-[var(--spacing-xs)] px-[var(--spacing-md)] py-[var(--spacing-sm)] bg-[var(--color-hover)] border border-[var(--color-border)]">
               <span className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium">
-                {labels.platforms || 'Platforms'}:
+                {t('platforms')}:
               </span>
               <div className="flex gap-[var(--spacing-xs)] flex-wrap">
                 {(['macOS', 'Windows', 'Linux'] as const).map(platform => {
@@ -233,13 +216,13 @@ export function ProductHero({
         )}
 
         {/* Type (for providers) */}
-        {type && labels?.typeValue && (
+        {type && typeValue && (
           <div className="flex justify-center mb-[var(--spacing-lg)]">
             <div className="inline-flex items-center gap-[var(--spacing-xs)] px-[var(--spacing-md)] py-[var(--spacing-sm)] bg-[var(--color-hover)] border border-[var(--color-border)]">
               <span className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium">
-                {labels.type || 'Type'}:
+                {t('type')}:
               </span>
-              <span className="text-sm font-medium">{labels.typeValue}</span>
+              <span className="text-sm font-medium">{type}</span>
             </div>
           </div>
         )}
@@ -253,7 +236,7 @@ export function ProductHero({
               rel="noopener"
               className="inline-flex items-center gap-[var(--spacing-xs)] px-[var(--spacing-md)] py-[var(--spacing-sm)] text-sm font-medium border border-[var(--color-border-strong)] bg-[var(--color-text)] text-[var(--color-bg)] hover:bg-[var(--color-text-secondary)] transition-all"
             >
-              <span>↗</span> {labels.visitWebsite || 'Visit Website'}
+              <span>↗</span> {t('visitWebsite')}
             </a>
           )}
 
@@ -275,7 +258,7 @@ export function ProductHero({
               rel="noopener"
               className="inline-flex items-center gap-[var(--spacing-xs)] px-[var(--spacing-md)] py-[var(--spacing-sm)] text-sm font-medium border border-[var(--color-border-strong)] bg-transparent hover:bg-[var(--color-hover)] transition-all"
             >
-              <span>→</span> {labels.documentation || 'Documentation'}
+              <span>→</span> {t('documentation')}
             </a>
           )}
 
@@ -286,7 +269,7 @@ export function ProductHero({
               rel="noopener"
               className="inline-flex items-center gap-[var(--spacing-xs)] px-[var(--spacing-md)] py-[var(--spacing-sm)] text-sm font-medium border border-[var(--color-border-strong)] bg-transparent hover:bg-[var(--color-hover)] transition-all"
             >
-              <span>⬇</span> {labels.download || 'Download'}
+              <span>⬇</span> {t('download')}
             </a>
           )}
 
@@ -297,7 +280,7 @@ export function ProductHero({
               rel="noopener"
               className="inline-flex items-center gap-[var(--spacing-xs)] px-[var(--spacing-md)] py-[var(--spacing-sm)] text-sm font-medium border border-[var(--color-border-strong)] bg-transparent hover:bg-[var(--color-hover)] transition-all"
             >
-              <span>🔑</span> {labels.getApiKey || 'Get API Key'}
+              <span>🔑</span> {t('getApiKey')}
             </a>
           )}
 

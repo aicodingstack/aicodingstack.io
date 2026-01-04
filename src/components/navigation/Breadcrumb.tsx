@@ -1,5 +1,6 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { useEffect, useRef } from 'react'
 import { JsonLd } from '@/components/JsonLd'
 import { Link } from '@/i18n/navigation'
@@ -17,6 +18,7 @@ export interface BreadcrumbItem {
  * - Sticky behavior is enabled when scrolling using CSS position: sticky.
  */
 export function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
+  const t = useTranslations()
   const sectionRef = useRef<HTMLElement>(null)
 
   // Dynamically adjust sticky position based on header height
@@ -48,7 +50,7 @@ export function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
     {
       '@type': 'ListItem',
       position: 1,
-      name: 'Home',
+      name: t('components.breadcrumb.home'),
       item: SITE_CONFIG.url,
     },
     ...items.map((item, index) => {

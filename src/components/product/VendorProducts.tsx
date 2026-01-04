@@ -1,14 +1,9 @@
+import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import type { ManifestCLI, ManifestExtension, ManifestIDE } from '@/types/manifests'
 
 type ProductWithType = (ManifestIDE | ManifestCLI | ManifestExtension) & {
   type: 'ide' | 'cli' | 'extension'
-}
-
-export type VendorProductsProps = {
-  products: ProductWithType[]
-  locale: string
-  title: string
 }
 
 const PRODUCT_TYPE_LABELS = {
@@ -17,14 +12,16 @@ const PRODUCT_TYPE_LABELS = {
   extension: 'Extension',
 } as const
 
-export function VendorProducts({ products, locale: _locale, title }: VendorProductsProps) {
+export function VendorProducts({ products }: { products: ProductWithType[] }) {
+  const t = useTranslations('components.vendorProducts')
+
   if (products.length === 0) {
     return null
   }
 
   return (
     <section className="max-w-8xl mx-auto px-[var(--spacing-md)] py-[var(--spacing-lg)]">
-      <h2 className="text-xl font-semibold tracking-tight mb-[var(--spacing-md)]">{title}</h2>
+      <h2 className="text-xl font-semibold tracking-tight mb-[var(--spacing-md)]">{t('title')}</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[var(--spacing-md)]">
         {products.map(product => (

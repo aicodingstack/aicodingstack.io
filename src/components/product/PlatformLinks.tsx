@@ -1,14 +1,9 @@
+import { useTranslations } from 'next-intl'
 import { LinkCardGrid } from '@/components/product/LinkCard'
 import type { ManifestPlatformUrls } from '@/types/manifests'
 
 export interface PlatformLinksProps {
   platformUrls: ManifestPlatformUrls | null | undefined
-  title: string
-  links: Array<{
-    key: string
-    title: string
-    description: string
-  }>
   layout?: 'horizontal' | 'vertical'
   gridCols?: string
 }
@@ -22,18 +17,36 @@ export interface PlatformLinksProps {
  */
 export function PlatformLinks({
   platformUrls,
-  title,
-  links,
   layout = 'horizontal',
   gridCols = 'grid-cols-1 md:grid-cols-3',
 }: PlatformLinksProps) {
-  if (!platformUrls || links.length === 0) {
+  const t = useTranslations('components.platformLinks')
+
+  if (!platformUrls) {
     return null
   }
 
+  const links = [
+    {
+      key: 'huggingface',
+      title: t('aiPlatforms.huggingface.title'),
+      description: t('aiPlatforms.huggingface.description'),
+    },
+    {
+      key: 'artificialAnalysis',
+      title: t('aiPlatforms.artificialAnalysis.title'),
+      description: t('aiPlatforms.artificialAnalysis.description'),
+    },
+    {
+      key: 'openrouter',
+      title: t('aiPlatforms.openrouter.title'),
+      description: t('aiPlatforms.openrouter.description'),
+    },
+  ]
+
   return (
     <LinkCardGrid
-      title={title}
+      title={t('title')}
       links={links}
       urls={platformUrls}
       layout={layout}

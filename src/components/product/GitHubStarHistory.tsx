@@ -1,5 +1,6 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
 import {
   CartesianGrid,
@@ -30,6 +31,7 @@ interface StarHistoryApiResponse {
 }
 
 export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
+  const t = useTranslations('components.githubStarHistory')
   const [data, setData] = useState<StarDataPoint[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -110,9 +112,7 @@ export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
         <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
           <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">
             <div className="flex items-center justify-center h-[300px]">
-              <p className="text-sm text-[var(--color-text-muted)] animate-pulse">
-                Loading star history...
-              </p>
+              <p className="text-sm text-[var(--color-text-muted)] animate-pulse">{t('loading')}</p>
             </div>
           </div>
         </div>
@@ -131,10 +131,10 @@ export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
           {/* Header */}
           <div className="mb-[var(--spacing-md)]">
             <h2 className="text-lg font-semibold tracking-tight mb-[var(--spacing-xs)]">
-              GitHub Star History
+              {t('title')}
             </h2>
             <p className="text-sm text-[var(--color-text-secondary)] font-light">
-              Star growth trend over time
+              {t('description')}
             </p>
           </div>
 
@@ -187,8 +187,8 @@ export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
                     color: 'var(--color-text-secondary)',
                   }}
                   formatter={(value: number | undefined) => [
-                    `${value?.toLocaleString() ?? '0'} stars`,
-                    'Stars',
+                    `${value?.toLocaleString() ?? '0'} ${t('stars')}`,
+                    t('stars'),
                   ]}
                 />
                 <Line
@@ -212,7 +212,7 @@ export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
           {error && (
             <div className="mt-[var(--spacing-sm)] pt-[var(--spacing-sm)] border-t border-[var(--color-border)]">
               <p className="text-xs text-[var(--color-text-muted)] font-light">
-                Note: Displaying sample data. Star history API temporarily unavailable.
+                {t('fallbackNote')}
               </p>
             </div>
           )}
