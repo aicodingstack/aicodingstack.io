@@ -3,6 +3,9 @@
     "backTo": "@:shared.actions.backTo",
     "indexLabel": "@:shared.common.indexLabel"
   },
+  "breadcrumb": {
+    "home": "Início"
+  },
   "collectionScrollbar": {
     "articles": "@:shared.common.featuredArticles",
     "specifications": "@:shared.common.specificationsProtocols",
@@ -92,6 +95,36 @@
     "command": "Comando",
     "install": "Instalar",
     "launch": "Iniciar"
+  },
+  "vendorProducts": {
+    "title": "Produtos"
+  },
+  "vendorModels": {
+    "title": "Modelos"
+  },
+  "platformLinks": {
+    "title": "Encontrar em plataformas de IA",
+    "aiPlatforms": {
+      "huggingface": {
+        "title": "Hugging Face",
+        "description": "Ver cartão de modelo e pesos"
+      },
+      "artificialAnalysis": {
+        "title": "Artificial Analysis",
+        "description": "Classificação e benchmarks de modelos de IA"
+      },
+      "openrouter": {
+        "title": "OpenRouter",
+        "description": "Comparar e usar múltiplos modelos de IA"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "Carregando histórico de estrelas...",
+    "title": "Histórico de Estrelas do GitHub",
+    "description": "Tendência de crescimento de estrelas ao longo do tempo",
+    "stars": "estrelas",
+    "fallbackNote": "Nota: Exibindo dados de exemplo. A API de histórico de estrelas está temporariamente indisponível."
   },
   "productHero": {
     "categories": {

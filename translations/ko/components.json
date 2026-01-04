@@ -3,6 +3,9 @@
     "backTo": "돌아가기",
     "indexLabel": "@:shared.common.indexLabel"
   },
+  "breadcrumb": {
+    "home": "홈"
+  },
   "collectionScrollbar": {
     "articles": "추천 아티클",
     "specifications": "사양 및 프로토콜",
@@ -92,6 +95,36 @@
     "command": "명령",
     "install": "설치",
     "launch": "실행"
+  },
+  "vendorProducts": {
+    "title": "제품"
+  },
+  "vendorModels": {
+    "title": "모델"
+  },
+  "platformLinks": {
+    "title": "AI 플랫폼에서 찾기",
+    "aiPlatforms": {
+      "huggingface": {
+        "title": "Hugging Face",
+        "description": "모델 카드 및 가중치 보기"
+      },
+      "artificialAnalysis": {
+        "title": "Artificial Analysis",
+        "description": "AI 모델 리더보드 및 벤치마크"
+      },
+      "openrouter": {
+        "title": "OpenRouter",
+        "description": "여러 AI 모델 비교 및 사용"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "스타 히스토리 불러오는 중...",
+    "title": "GitHub 스타 히스토리",
+    "description": "시간 경과에 따른 스타 증가 추세",
+    "stars": "스타",
+    "fallbackNote": "참고: 샘플 데이터를 표시 중입니다. 스타 히스토리 API를 일시적으로 사용할 수 없습니다."
   },
   "productHero": {
     "categories": {

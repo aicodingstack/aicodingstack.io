@@ -3,6 +3,9 @@
     "backTo": "Zurück zu",
     "indexLabel": "INDEX"
   },
+  "breadcrumb": {
+    "home": "Startseite"
+  },
   "collectionScrollbar": {
     "articles": "Featured Artikel",
     "specifications": "Spezifikationen & Protokolle",
@@ -92,6 +95,36 @@
     "command": "Befehl",
     "install": "Installieren",
     "launch": "Starten"
+  },
+  "vendorProducts": {
+    "title": "Produkte"
+  },
+  "vendorModels": {
+    "title": "Modelle"
+  },
+  "platformLinks": {
+    "title": "Auf AI-Plattformen finden",
+    "aiPlatforms": {
+      "huggingface": {
+        "title": "Hugging Face",
+        "description": "Modellkarte und Gewichte anzeigen"
+      },
+      "artificialAnalysis": {
+        "title": "Artificial Analysis",
+        "description": "KI-Modell-Leaderboard und Benchmarks"
+      },
+      "openrouter": {
+        "title": "OpenRouter",
+        "description": "Mehrere KI-Modelle vergleichen und nutzen"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "Star-Verlauf laden...",
+    "title": "GitHub Star-Verlauf",
+    "description": "Star-Wachstumstrend über Zeit",
+    "stars": "Stars",
+    "fallbackNote": "Hinweis: Beispieldaten werden angezeigt. Star-Verlauf API ist vorübergehend nicht verfügbar."
   },
   "productHero": {
     "categories": {

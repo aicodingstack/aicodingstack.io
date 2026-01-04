@@ -3,6 +3,9 @@
     "backTo": "回到",
     "indexLabel": "索引"
   },
+  "breadcrumb": {
+    "home": "首頁"
+  },
   "collectionScrollbar": {
     "articles": "精選文章",
     "specifications": "規格與協定",
@@ -92,6 +95,36 @@
     "command": "指令",
     "install": "安裝",
     "launch": "啟動"
+  },
+  "vendorProducts": {
+    "title": "產品"
+  },
+  "vendorModels": {
+    "title": "模型"
+  },
+  "platformLinks": {
+    "title": "在 AI 平台上尋找",
+    "aiPlatforms": {
+      "huggingface": {
+        "title": "Hugging Face",
+        "description": "查看模型卡片與權重"
+      },
+      "artificialAnalysis": {
+        "title": "Artificial Analysis",
+        "description": "AI 模型排行榜與基準測試"
+      },
+      "openrouter": {
+        "title": "OpenRouter",
+        "description": "比較並使用多個 AI 模型"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "載入星標歷史...",
+    "title": "GitHub 星標歷史",
+    "description": "星標增長趨勢",
+    "stars": "星標數",
+    "fallbackNote": "注意：顯示範例資料。星標歷史 API 暫時無法使用。"
   },
   "productHero": {
     "categories": {
