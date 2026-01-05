@@ -20,25 +20,43 @@ updates:
       - "dependencies"
       - "automated"
     groups:
-      # Group minor and patch updates together
-      minor-and-patch:
-        patterns:
-          - "*"
-        update-types:
-          - "minor"
-          - "patch"
       # Separate group for Next.js updates
       nextjs:
         patterns:
           - "next"
+          - "next-intl"
           - "react"
           - "react-dom"
+        update-types:
+          - "minor"
+          - "patch"
+      # Separate group for toolchain dependencies (riskier upgrades)
+      toolchain:
+        dependency-type: "development"
+        patterns:
+          - "@biomejs/*"
+          - "@swc/*"
+          - "esbuild"
+          - "vite"
+          - "rollup"
+          - "@rollup/*"
+          - "typescript"
         update-types:
           - "minor"
           - "patch"
       # Separate group for dev dependencies
       dev-dependencies:
         dependency-type: "development"
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+      # Group minor and patch updates together (prod deps only)
+      minor-and-patch:
+        dependency-type: "production"
+        patterns:
+          - "*"
         update-types:
           - "minor"
           - "patch"
