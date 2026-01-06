@@ -22,6 +22,46 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
 
+      - name: Determine whether preview deploy should run
+        id: deploy_guard
+        shell: bash
+        env:
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          PR_HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+          BASE_REPO: ${{ github.repository }}
+          EVENT_NAME: ${{ github.event_name }}
+          ACTOR: ${{ github.actor }}
+        run: |
+          # Decide whether we can deploy a preview safely.
+          # Fork PRs do not receive repository secrets, so deployment must be skipped.
+          SHOULD_DEPLOY="true"
+          REASON=""
+
+          if [[ "$EVENT_NAME" == "pull_request" ]]; then
+            if [[ -n "$PR_HEAD_REPO" && "$PR_HEAD_REPO" != "$BASE_REPO" ]]; then
+              SHOULD_DEPLOY="false"
+              REASON="Fork pull requests do not have access to repository secrets in GitHub Actions."
+            fi
+
+            if [[ "$ACTOR" == "dependabot[bot]" ]]; then
+              SHOULD_DEPLOY="false"
+              REASON="Dependabot pull requests do not have access to repository secrets in this workflow."
+            fi
+          fi
+
+          if [[ "$SHOULD_DEPLOY" == "true" ]]; then
+            if [[ -z "$CF_API_TOKEN" || -z "$CF_ACCOUNT_ID" ]]; then
+              echo "Missing required Cloudflare secrets. Please configure CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID in repository secrets."
+              exit 1
+            fi
+          fi
+
+          {
+            echo "should_deploy=$SHOULD_DEPLOY"
+            echo "reason=$REASON"
+          } >> "$GITHUB_OUTPUT"
+
       - name: Compute preview identifiers
         id: preview_meta
         run: |
@@ -71,6 +111,7 @@ jobs:
           BUILD_TIME: ${{ github.event.pull_request.updated_at || github.event.head_commit.timestamp }}
 
       - name: Deploy Preview
+        if: steps.deploy_guard.outputs.should_deploy == 'true'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -82,10 +123,14 @@ jobs:
         uses: actions/github-script@v7
         env:
           PREVIEW_URL: ${{ steps.preview_meta.outputs.preview_url }}
+          SHOULD_DEPLOY: ${{ steps.deploy_guard.outputs.should_deploy }}
+          SKIP_REASON: ${{ steps.deploy_guard.outputs.reason }}
         with:
           script: |
             const prNumber = context.payload.pull_request.number;
             const previewUrl = process.env.PREVIEW_URL;
+            const shouldDeploy = process.env.SHOULD_DEPLOY === 'true';
+            const skipReason = process.env.SKIP_REASON || 'Preview deployment was skipped.';
             const commitSha = context.sha.substring(0, 7);
 
             // Find existing bot comment
@@ -99,14 +144,18 @@ jobs:
               c.user.type === 'Bot' && c.body.includes('Preview deployment')
             );
 
+            const status = shouldDeploy ? 'Ready' : 'Skipped';
+            const urlCell = shouldDeploy ? `[${previewUrl}](${previewUrl})` : '-';
+            const reasonBlock = shouldDeploy ? '' : `\n\n**Reason:** ${skipReason}\n\nIf you want a preview deployment, please ask a maintainer to run this from a branch within the main repository.`;
+
             const body = `### Preview deployment
 
             | Status | URL |
             |--------|-----|
-            | Ready | [${previewUrl}](${previewUrl}) |
+            | ${status} | ${urlCell} |
 
             **Commit:** \`${commitSha}\`
-            **Updated:** ${new Date().toISOString()}`;
+            **Updated:** ${new Date().toISOString()}${reasonBlock}`;
 
             if (botComment) {
               await github.rest.issues.updateComment({
