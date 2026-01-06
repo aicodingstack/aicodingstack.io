@@ -26,6 +26,8 @@ This audit document originally outlined several performance concerns. Through sy
 | ISR Configuration | ✅ Active (3600s) | Content freshness |
 | Web Vitals Tracking | ✅ Implemented | Monitoring ready |
 | next.config.ts Optimizations | ✅ Active | Full feature set |
+| On-Demand Revalidation API | ✅ Enhanced | Instant content updates |
+| Manifest Registry | ✅ Implemented | Reduced code duplication |
 
 ---
 
@@ -68,6 +70,27 @@ src/app/[locale]/ides/
 ```
 
 **Result:** No white screen flash, immediate render with correct theme.
+
+### Manifest Registry (New)
+
+**Location:** `src/lib/manifest-registry.ts`
+
+Centrally manages access to all manifest data, eliminating duplicate iteration patterns:
+
+```typescript
+import { getAllManifests, buildManifestPath } from '@/lib/manifest-registry'
+
+// Get all manifests
+const all = getAllManifests()
+
+// Build consistent paths
+const idePath = buildManifestPath('ides', 'cursor') // '/ides/cursor'
+```
+
+**Benefits:**
+- Single source of truth for manifest access
+- Consistent path generation across modules
+- Easy to add new categories
 
 ---
 
@@ -210,22 +233,45 @@ export const runtime = 'edge'
 
 **Note:** Current configuration works well. Edge runtime only needed if targeting sub-500ms TTFB globally.
 
-### On-Demand Revalidation
+### On-Demand Revalidation API
 
-Current ISR (3600s) is sufficient. For instant updates, implement:
+**Location:** `src/app/api/revalidate/route.ts`
 
-```ts
-// src/app/api/revalidate/route.ts
-import { revalidatePath } from 'next/cache'
+Enhanced API for manual cache invalidation:
 
-export async function POST(request: NextRequest) {
-  const path = request.nextUrl.searchParams.get('path')
-  if (path) {
-    revalidatePath(path)
-  }
-  return Response.json({ revalidated: true })
-}
+```bash
+# Get usage documentation
+GET /api/revalidate
+
+# Revalidate specific path
+POST /api/revalidate?secret=YOUR_SECRET&path=/ides
+
+# Revalidate category
+POST /api/revalidate?secret=YOUR_SECRET&category=tools
+
+# Revalidate all pages
+POST /api/revalidate?secret=YOUR_SECRET
 ```
+
+**Supported categories:**
+- `ides`, `clis`, `extensions`, `models`, `providers`, `vendors`
+- `tools` (combines ides + clis + extensions)
+- `content` (articles + ai-coding-stack + docs)
+
+### Code Quality Improvements (Jan 6, 2026)
+
+**File:** `src/lib/manifest-registry.ts`
+
+Unified access to manifest data:
+- Eliminated duplicate iteration in `landscape-data.ts` and `search.ts`
+- Centralized path building logic
+- Added functional methods (`forEach`, `map`, `filter`, `reduce`)
+
+**Code Reduction:**
+| File | Reduction | Method |
+|------|-----------|--------|
+| `search.ts` | 18% | Unified category mapping |
+| `landscape-data.ts` | 5% | Centralized path building |
 
 ### Dynamic Imports
 
@@ -252,6 +298,8 @@ const HeavyComponent = dynamic(() => import('@/components/Heavy'), {
 | - | Server/Client split | Proper architecture |
 | - | ISR configuration (3600s) | Content freshness |
 | Jan 6, 2026 | Document audit | All critical issues resolved |
+| Jan 6, 2026 | On-Demand Revalidation API | Enhanced with categories |
+| Jan 6, 2026 | Manifest Registry | Reduced duplication |
 
 ---
 
@@ -264,15 +312,18 @@ The AI Coding Stack project has **excellent performance characteristics** with a
 1. **Proper RSC Architecture** - Server and client components properly separated
 2. **Theme System** - No flash of unstyled content
 3. **ISR Configuration** - Content stays fresh with 3600s revalidation
-4. **Monitoring Ready** - Web Vitals component in place
-5. **Optimized Config** - next.config.ts has comprehensive optimizations
-6. **Clean Build** - Fast 2-second build times
+4. **On-Demand Revalidation** - Instant cache invalidation when needed
+5. **Manifest Registry** - Centralized, maintainable data access
+6. **Monitoring Ready** - Web Vitals component in place
+7. **Optimized Config** - next.config.ts has comprehensive optimizations
+8. **Clean Build** - Fast 2-second build times
 
 ### Maintenance Guidelines
 
 - Run `npm run analyze` periodically to check bundle sizes
 - Monitor Core Web Vitals in production
 - Keep revalidation interval aligned with content update frequency
+- Use category-based revalidation for batch updates
 - Consider Edge runtime if global edge distribution becomes priority
 
 ### Resources
@@ -280,6 +331,7 @@ The AI Coding Stack project has **excellent performance characteristics** with a
 - [Next.js Performance](https://nextjs.org/docs/app/building-your-application/optimizing)
 - [Web Vitals](https://web.dev/vitals/)
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/)
+- [REFACTORING-SUMMARY-2026-01-06.md](./REFACTORING-SUMMARY-2026-01-06.md) - Latest refactoring details
 
 ---
 
