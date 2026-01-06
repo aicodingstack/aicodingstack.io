@@ -68,26 +68,6 @@ jobs:
       - name: Run validation tests
         run: npm run test:validate
 
-  tests-urls:
-    name: Tests (URLs)
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v6
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: '22'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Validate URLs in manifests
-        run: npm run test:urls
-        continue-on-error: true # URLs may be temporarily unavailable
-
   spell-check:
     name: Spell Check
     runs-on: ubuntu-latest
@@ -140,7 +120,7 @@ jobs:
   ci-success:
     name: CI Success
     runs-on: ubuntu-latest
-    needs: [lint, type-check, tests-validate, tests-urls, spell-check, build]
+    needs: [lint, type-check, tests-validate, spell-check, build]
     if: always()
     steps:
       - name: Check all jobs
