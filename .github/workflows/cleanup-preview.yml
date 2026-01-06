@@ -12,7 +12,44 @@ jobs:
       pull-requests: write
 
     steps:
+      - name: Determine whether preview cleanup should run
+        id: cleanup_guard
+        shell: bash
+        env:
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          PR_HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+          BASE_REPO: ${{ github.repository }}
+          ACTOR: ${{ github.actor }}
+        run: |
+          # Fork PRs do not receive repository secrets, so cleanup must be skipped.
+          SHOULD_CLEANUP="true"
+          REASON=""
+
+          if [[ -n "$PR_HEAD_REPO" && "$PR_HEAD_REPO" != "$BASE_REPO" ]]; then
+            SHOULD_CLEANUP="false"
+            REASON="Fork pull requests do not have access to repository secrets in GitHub Actions."
+          fi
+
+          if [[ "$ACTOR" == "dependabot[bot]" ]]; then
+            SHOULD_CLEANUP="false"
+            REASON="Dependabot pull requests do not have access to repository secrets in this workflow."
+          fi
+
+          if [[ "$SHOULD_CLEANUP" == "true" ]]; then
+            if [[ -z "$CF_API_TOKEN" || -z "$CF_ACCOUNT_ID" ]]; then
+              echo "Missing required Cloudflare secrets. Please configure CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID in repository secrets."
+              exit 1
+            fi
+          fi
+
+          {
+            echo "should_cleanup=$SHOULD_CLEANUP"
+            echo "reason=$REASON"
+          } >> "$GITHUB_OUTPUT"
+
       - name: Delete Preview Deployment
+        if: steps.cleanup_guard.outputs.should_cleanup == 'true'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -22,13 +59,20 @@ jobs:
 
       - name: Comment Cleanup Status
         uses: actions/github-script@v7
+        env:
+          SHOULD_CLEANUP: ${{ steps.cleanup_guard.outputs.should_cleanup }}
+          SKIP_REASON: ${{ steps.cleanup_guard.outputs.reason }}
         with:
           script: |
             const prNumber = context.payload.pull_request.number;
+            const shouldCleanup = process.env.SHOULD_CLEANUP === 'true';
+            const skipReason = process.env.SKIP_REASON || 'Cleanup was skipped.';
 
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: prNumber,
-              body: `### Preview deployment cleaned up\n\nThe preview deployment for PR #${prNumber} has been removed.`
+              body: shouldCleanup
+                ? `### Preview deployment cleaned up\n\nThe preview deployment for PR #${prNumber} has been removed.`
+                : `### Preview deployment cleanup skipped\n\n**Reason:** ${skipReason}`
             });
