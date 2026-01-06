@@ -1,185 +1,398 @@
-# Manifest i18n Guide
+# Manifest Internationalization (i18n)
 
-This document describes how to add multi-language support for manifest files.
+**Last Updated:** January 6, 2026
+
+This document describes how internationalization works for manifest data in AI Coding Stack.
+
+---
 
 ## Overview
 
-We use **Solution 4 (Hybrid Approach)**: Add an `i18n` field to each manifest entry to store translations.
+Manifest_i18n provides localization support for items in the manifest JSON files. It allows product names, descriptions, and other fields to be displayed in different languages without creating duplicate JSON entries.
 
-## Structure
+**Implementation**: `src/lib/manifest-i18n.ts`
+
+---
+
+## Supported Locales
+
+The system supports these locales (defined in `src/i18n/config.ts`):
+
+| Locale | Code | Language |
+|--------|------|----------|
+| English | `en` | Default locale |
+| Simplified Chinese | `zh-Hans` | 简体中文 |
+| German | `de` | Deutsch |
+| Korean | `ko` | 한국어 |
+
+---
+
+## Translation Structure in Manifests
+
+Each manifest entry can include an optional `translations` object:
 
 ```json
 {
-  "id": "example",
-  "name": "Example Tool",
-  "description": "This is an example tool for demonstration.",
-  // ... other fields ...
-  "i18n": {
+  "id": "cursor",
+  "name": "Cursor",
+  "description": "AI-first code editor designed for pair programming with AI",
+  "translations": {
     "zh-Hans": {
-      "description": "这是一个用于演示的示例工具。"
+      "name": "Cursor 编辑器",
+      "description": "专为与 AI 进行结对编程而设计的 AI 驱动代码编辑器"
+    },
+    "de": {
+      "name": "Cursor",
+      "description": "KI-zuerst Code-Editor, entwickelt für Pair Programming mit KI"
+    },
+    "ko": {
+      "name": "Cursor",
+      "description": "AI와의 페어 프로그래밍을 위해 설계된 AI 우선 코드 에디터"
     }
   }
 }
 ```
 
-## Supported Languages
-
-Currently supported languages (defined in `src/i18n/config.ts`):
-- `en` (English) - Default language
-- `zh-Hans` (Simplified Chinese)
-
-## Translatable Fields
-
-Currently supports translating the following fields:
-- `description` - Tool description
-
-Future extensions can include:
-- `name` - Tool name (if localized names are needed)
-- Other custom fields
-
-## Steps to Add Translations
-
-### 1. Add Translation in Manifest File
-
-Edit the corresponding manifest file (e.g., `manifests/terminals.json`):
-
-```json
-{
-  "id": "warp",
-  "name": "Warp",
-  "description": "Warp is a modern Rust-based terminal emulator with AI-powered features.",
-  "i18n": {
-    "zh-Hans": {
-      "description": "Warp 是一款基于 Rust 的现代终端模拟器，具有 AI 驱动的功能。"
-    }
-  }
-}
-```
-
-### 2. Use Translations in Code
-
-We provide utility functions in `src/lib/manifest-i18n.ts` to handle translations:
-
-```typescript
-import { localizeManifestItem } from '@/lib/manifest-i18n';
-import type { Locale } from '@/i18n/config';
-import terminals from '@/../../manifests/terminals.json';
-
-// In a page component
-export default async function TerminalPage({ params }) {
-  const { locale, slug } = await params;
-  const terminalRaw = terminals.find((t) => t.id === slug);
-
-  // Apply localization
-  const terminal = localizeManifestItem(terminalRaw, locale as Locale);
-
-  // Now terminal.description will automatically return the appropriate translation
-  // If locale is 'zh-Hans', returns Chinese; if 'en' or no translation, returns English
-}
-```
-
-### 3. Batch Process Multiple Entries
-
-For list pages, use `localizeManifestItems`:
-
-```typescript
-import { localizeManifestItems } from '@/lib/manifest-i18n';
-
-const localizedTerminals = localizeManifestItems(terminals, locale);
-```
+---
 
 ## API Reference
 
-### `localizeManifestItem<T>(item: T, locale: Locale, fields?: (keyof T)[]): T`
+### `localizeManifestItem`
 
-Applies localization to a single manifest entry.
+Localizes a single manifest item.
 
-**Parameters:**
-- `item` - Manifest entry object
-- `locale` - Target language ('en' or 'zh-Hans')
-- `fields` - List of fields to translate (optional, defaults to `['description']`)
-
-**Returns:** A new object with translations applied
-
-### `localizeManifestItems<T>(items: T[], locale: Locale, fields?: (keyof T)[]): T[]`
-
-Applies localization to an array of manifest entries.
-
-**Parameters:**
-- `items` - Array of manifest entries
-- `locale` - Target language
-- `fields` - List of fields to translate (optional)
-
-**Returns:** A new array with translations applied
-
-### `getLocalizedField<T>(item: T, field: keyof T, locale: Locale): string`
-
-Gets the localized value of a single field.
-
-**Parameters:**
-- `item` - Manifest entry object
-- `field` - Field name
-- `locale` - Target language
-
-**Returns:** Localized field value (returns original value if no translation exists)
-
-## Examples
-
-### terminals.json Example
-
-```json
-[
-  {
-    "id": "iterm2",
-    "name": "iTerm2",
-    "vendor": "George Nachman",
-    "description": "iTerm2 is a terminal emulator for macOS.",
-    "i18n": {
-      "zh-Hans": {
-        "description": "iTerm2 是一款 macOS 终端模拟器。"
-      }
-    }
-  }
-]
+```typescript
+function localizeManifestItem<T extends Record<string, unknown>>(
+  item: T,
+  locale: Locale,
+  fields?: (keyof T)[]
+): T
 ```
 
-### providers.json Example
+**Parameters:**
+- `item` - The manifest item with potential translations
+- `locale` - Target locale (`'en' | 'zh-Hans' | 'de' | 'ko'`)
+- `fields` - Array of field names to localize (default: `['description']`)
 
-```json
-[
-  {
-    "id": "deepseek",
-    "name": "DeepSeek",
-    "description": "A leading AI research company focused on developing advanced language models.",
-    "i18n": {
-      "zh-Hans": {
-        "description": "领先的 AI 研究公司，专注于开发先进的语言模型。"
-      }
+**Returns:** A new object with localized fields.
+
+**Behavior:**
+- Returns the original item if `locale` is the default locale (`en`)
+- Returns the original item if no translations exist for the target locale
+- Only modifies the specified fields; all other fields are preserved
+
+**Example:**
+
+```typescript
+import { localizeManifestItem } from '@/lib/manifest-i18n'
+
+const cursor = {
+  name: 'Cursor',
+  description: 'AI-first code editor',
+  translations: {
+    'zh-Hans': {
+      description: 'AI 驱动的代码编辑器'
     }
   }
-]
+}
+
+// Localize description only
+const localizedZh = localizeManifestItem(cursor, 'zh-Hans')
+// Returns: { name: 'Cursor', description: 'AI 驱动的代码编辑器', translations: {...} }
+
+// Localize both name and description
+const localizedZhBoth = localizeManifestItem(cursor, 'zh-Hans', ['name', 'description'])
+// Returns: { name: 'Cursor 编辑器', description: 'AI 驱动的代码编辑器', ... }
 ```
+
+---
+
+### `localizeManifestItems`
+
+Localizes an array of manifest items.
+
+```typescript
+function localizeManifestItems<T extends Record<string, unknown>>(
+  items: T[],
+  locale: Locale,
+  fields?: (keyof T)[]
+): T[]
+```
+
+**Parameters:**
+- `items` - Array of manifest items
+- `locale` - Target locale
+- `fields` - Array of field names to localize
+
+**Returns:** A new array with localized items.
+
+**Example:**
+
+```typescript
+import { localizeManifestItems } from '@/lib/manifest-i18n'
+
+const ides = [
+  { name: 'Cursor', description: 'AI editor', translations: { 'zh-Hans': { description: 'AI 编辑器' } } },
+  { name: 'VS Code', description: 'Microsoft editor', translations: { 'zh-Hans': { description: 'Microsoft 编辑器' } } }
+]
+
+const localized = localizeManifestItems(ides, 'zh-Hans')
+// Returns array with localized descriptions
+```
+
+---
+
+## Usage Patterns
+
+### 1. Localize for Page Display
+
+```typescript
+import { getManifest } from '@/lib/generated/manifesto'
+import { localizeManifestItems } from '@/lib/manifest-i18n'
+
+export default async function IDEsPage({ params }: { params: { locale: string } }) {
+  const { locale } = params
+  const ides = await getManifest('ides')
+
+  // Localize descriptions for non-default locale
+  const localizedIdes = locale !== 'en'
+    ? localizeManifestItems(ides, locale, ['description', 'name'])
+    : ides
+
+  return (
+    <div>
+      {localizedIdes.map(ide => (
+        <div key={ide.id}>
+          <h2>{ide.name}</h2>
+          <p>{ide.description}</p>
+        </div>
+      ))}
+    </div>
+  )
+}
+```
+
+### 2. Localize Specific Fields Only
+
+```typescript
+import { getManifest } from '@/lib/generated/manifesto'
+import { localizeManifestItem } from '@/lib/manifest-i18n'
+
+const ide = await getManifestEntry('ides', 'cursor')
+
+// Only localize description, keep name in English
+const localized = localizeManifestItem(ide, 'zh-Hans', ['description'])
+```
+
+### 3. Localize with Type Guard
+
+```typescript
+import { localizeManifestItem } from '@/lib/manifest-i18n'
+import type { ManifestIDE } from '@/types/manifests'
+
+const ide = await getManifestEntry<ManifestIDE>('ides', 'cursor')
+const localized = localizeManifestItem<ManifestIDE>(ide, 'de', ['description'])
+```
+
+---
+
+## Fallback Behavior
+
+### Default Locale
+
+When the requested locale is `en` (default), no localization is applied:
+
+```typescript
+const item = { name: 'Cursor', description: 'AI editor', translations: { ... } }
+const result = localizeManifestItem(item, 'en')
+// result === item (no processing)
+```
+
+### Missing Translations
+
+If translations don't exist for the target locale, the original values are used:
+
+```typescript
+const item = {
+  name: 'Cursor',
+  description: 'AI editor',
+  translations: {
+    'zh-Hans': { description: 'AI 编辑器' }
+  }
+}
+
+// Request German - not in translations
+const result = localizeManifestItem(item, 'de')
+// Returns: { name: 'Cursor', description: 'AI editor', ... }
+```
+
+### Missing Fields in Translations
+
+If a field is requested but not present in the translations, the original value is used:
+
+```typescript
+const item = {
+  name: 'Cursor',
+  description: 'AI editor',
+  translations: {
+    'zh-Hans': { description: 'AI 编辑器' }  // name not translated
+  }
+}
+
+// Request both name and description
+const result = localizeManifestItem(item, 'zh-Hans', ['name', 'description'])
+// Returns: { name: 'Cursor', description: 'AI 编辑器', ... }
+```
+
+---
+
+## TypeScript Types
+
+```typescript
+import type { Locale } from '@/i18n/config'
+
+/**
+ * Interface for manifest items with translations support
+ */
+export interface ManifestItemWithTranslations {
+  description?: string
+  name?: string
+  translations?: {
+    [locale: string]: {
+      description?: string
+      name?: string
+      [key: string]: string | undefined
+    }
+  }
+  [key: string]: unknown
+}
+```
+
+---
 
 ## Best Practices
 
-1. **Maintain Consistency** - Ensure all entries of the same type have translations for the same languages
-2. **Accurate Translation** - Translations should accurately convey the original meaning, avoid over-interpretation
-3. **Be Concise** - Descriptions should be brief and easy to understand
-4. **Validate JSON** - Ensure JSON format is correct after adding translations
-5. **Progressive Addition** - Start by adding translations for important entries, then gradually complete others
+### 1. Always Use Default Locale First
 
-## Contributing Translations
+```typescript
+// Good: Only localize when needed
+const localized = locale === defaultLocale
+  ? items
+  : localizeManifestItems(items, locale)
 
-We welcome contributors to add translations to manifests!
+// Avoid: Always localizing (unnecessary work)
+const localized = localizeManifestItems(items, locale)
+```
 
-1. Fork this project
-2. Add `i18n` fields to manifest files
-3. Submit a PR describing your translations
-4. Wait for review and merge
+### 2. Specify Fields Explicitly
 
-## Future Extensions
+```typescript
+// Good: Explicit field list
+const localized = localizeManifestItems(items, locale, ['description', 'name'])
 
-- Support for more languages (Japanese, Korean, etc.)
-- Support for more translatable fields
-- Automatic detection of missing translations
-- Translation quality check tools
+// Acceptable: Use default (description only)
+const localized = localizeManifestItems(items, locale)
+```
+
+### 3. Keep Translations Complete
+
+When adding translations, translate all requested fields:
+
+```json
+{
+  "translations": {
+    "zh-Hans": {
+      "name": "Cursor 编辑器",
+      "description": "产品描述"
+    }
+  }
+}
+```
+
+### 4. Use Consistent Locale Codes
+
+Always use the locale codes defined in `src/i18n/config.ts`:
+
+- ✅ `'zh-Hans'`
+- ❌ `'zh-CN'` or `'zh'`
+- ✅ `'de'`
+- ✅ `'ko'`
+
+---
+
+## Integration with Next.js i18n
+
+The manifest i18n system integrates with Next.js internationalization:
+
+```typescript
+import { getTranslations } from 'next-intl/server'
+import { localizeManifestItems } from '@/lib/manifest-i18n'
+
+export default async function Page({ params }: { params: { locale: string } }) {
+  const { locale } = params
+  const t = await getTranslations({ locale, namespace: 'common' })
+
+  // UI translations via next-intl
+  const pageTitle = t('welcome')
+
+  // Manifest translations via manifest-i18n
+  const items = await getManifest('ides')
+  const localizedItems = locale !== 'en'
+    ? localizeManifestItems(items, locale)
+    : items
+
+  return <div>{/* ... */}</div>
+}
+```
+
+---
+
+## Testing
+
+```typescript
+import { localizeManifestItem } from '@/lib/manifest-i18n'
+
+describe('localizeManifestItem', () => {
+  it('should not modify items for default locale', () => {
+    const item = { name: 'Test', description: 'Description' }
+    const result = localizeManifestItem(item, 'en')
+    expect(result).toBe(item)
+  })
+
+  it('should apply available translations', () => {
+    const item = {
+      name: 'Test',
+      description: 'Description',
+      translations: {
+        'zh-Hans': { description: '描述' }
+      }
+    }
+
+    const result = localizeManifestItem(item, 'zh-Hans')
+    expect(result.description).toBe('描述')
+  })
+
+  it('should handle missing translations', () => {
+    const item = { name: 'Test', description: 'Description', translations: {} }
+    const result = localizeManifestItem(item, 'zh-Hans')
+    expect(result.description).toBe('Description') // Fallback
+  })
+})
+```
+
+---
+
+## Performance Considerations
+
+- The functions create new objects (not in-place modification)
+- For arrays, a new array is created with new objects
+- For default locale, no processing occurs (returns original object)
+- Cache localized results when possible in React components
+
+---
+
+**Related Documents:**
+- [SCHEMA-ALIGNMENT.md](./SCHEMA-ALIGNMENT.md) - Schema structure reference
+- [CLAUDE.md](../CLAUDE.md) - Project i18n guidelines
+
+**Last Updated:** January 6, 2026

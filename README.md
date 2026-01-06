@@ -28,7 +28,7 @@ AI Coding Stack is a comprehensive directory and community-maintained metadata r
 - **Curated Collections**: Hand-picked tool collections for specific use cases
 - **Community-Driven**: Open-source metadata maintained by the developer community
 - **Always Updated**: Latest version tracking and up-to-date information
-- **Multilingual**: Support for English, German, Simplified Chinese, and Korean (more coming soon)
+- **Multilingual**: Support for 12 languages including English, German, Simplified & Traditional Chinese, Korean, Spanish, French, Indonesian, Japanese, Portuguese, Russian, and Turkish
 
 ## Data Structure
 
@@ -126,7 +126,7 @@ All manifest files are automatically validated against JSON schemas. Make sure y
 - **Styling**: Tailwind CSS 4
 - **Internationalization**: next-intl
 - **Content**: MDX for documentation
-- **Deployment**: Cloudflare Workers
+- **Deployment**: Cloudflare Workers (via OpenNext for Cloudflare)
 
 ## Contributing
 
