@@ -120,7 +120,7 @@ jobs:
 
       - name: Comment Preview URL
         if: github.event_name == 'pull_request'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         env:
           PREVIEW_URL: ${{ steps.preview_meta.outputs.preview_url }}
           SHOULD_DEPLOY: ${{ steps.deploy_guard.outputs.should_deploy }}
