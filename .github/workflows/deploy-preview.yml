@@ -38,22 +38,22 @@ jobs:
           SHOULD_DEPLOY="true"
           REASON=""
 
+          if [[ "$ACTOR" == "dependabot[bot]" ]]; then
+            SHOULD_DEPLOY="false"
+            REASON="Dependabot-triggered workflows do not have access to repository secrets in this workflow."
+          fi
+
           if [[ "$EVENT_NAME" == "pull_request" ]]; then
             if [[ -n "$PR_HEAD_REPO" && "$PR_HEAD_REPO" != "$BASE_REPO" ]]; then
               SHOULD_DEPLOY="false"
               REASON="Fork pull requests do not have access to repository secrets in GitHub Actions."
             fi
-
-            if [[ "$ACTOR" == "dependabot[bot]" ]]; then
-              SHOULD_DEPLOY="false"
-              REASON="Dependabot pull requests do not have access to repository secrets in this workflow."
-            fi
           fi
 
           if [[ "$SHOULD_DEPLOY" == "true" ]]; then
             if [[ -z "$CF_API_TOKEN" || -z "$CF_ACCOUNT_ID" ]]; then
-              echo "Missing required Cloudflare secrets. Please configure CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID in repository secrets."
-              exit 1
+              SHOULD_DEPLOY="false"
+              REASON="Missing required Cloudflare secrets (CLOUDFLARE_API_TOKEN/CLOUDFLARE_ACCOUNT_ID)."
             fi
           fi
 
@@ -180,3 +180,7 @@ jobs:
           echo "- **Context:** ${{ steps.preview_meta.outputs.context_label }}" >> $GITHUB_STEP_SUMMARY
           echo "- **URL:** ${{ steps.preview_meta.outputs.preview_url }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Commit:** ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Deploy:** ${{ steps.deploy_guard.outputs.should_deploy == 'true' && 'ran' || 'skipped' }}" >> $GITHUB_STEP_SUMMARY
+          if [[ "${{ steps.deploy_guard.outputs.should_deploy }}" != "true" && -n "${{ steps.deploy_guard.outputs.reason }}" ]]; then
+            echo "- **Skip reason:** ${{ steps.deploy_guard.outputs.reason }}" >> $GITHUB_STEP_SUMMARY
+          fi
