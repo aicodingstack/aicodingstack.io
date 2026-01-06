@@ -116,7 +116,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: versions upload --env "" --preview-alias ${{ steps.preview_meta.outputs.preview_alias }}
+          command: versions upload --preview-alias ${{ steps.preview_meta.outputs.preview_alias }}
 
       - name: Comment Preview URL
         if: github.event_name == 'pull_request'
