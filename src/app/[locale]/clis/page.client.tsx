@@ -19,7 +19,7 @@ type Props = {
 }
 
 export default function CLIsPageClient({ locale }: Props) {
-  const t = useTranslations('pages.clis')
+  const t = useTranslations('pages.stacks.clis')
   const tGlobal = useTranslations()
   const [sortOrder, setSortOrder] = useState<'default' | 'name-asc' | 'name-desc'>('default')
   const [licenseFilters, setLicenseFilters] = useState<string[]>([])

@@ -30,16 +30,16 @@ export const articlesMetadata: Record<string, ArticleMetadata[]> = {
   de: [
     {
       slug: 'getting-started-with-ai-coding',
-      title: 'Erste Schritte mit KI-Coding',
+      title: 'Erste Schritte mit AI-Coding: Ein umfassender Leitfaden',
       description:
-        'Ein umfassender Leitfaden für den Einstieg in die KI-gestützte Softwareentwicklung. Lernen Sie die wichtigsten Tools, Best Practices und wie Sie KI-Coding-Assistenten effektiv nutzen.',
+        'Erfahren Sie, wie Sie Ihre erste KI-gestützte Entwicklungsumgebung mit IDEs, CLIs und den wichtigen Tools einrichten, die Sie zur Steigerung Ihrer Codierungsproduktivität benötigen.',
       date: '2025-01-15',
     },
     {
       slug: 'mcp-servers-explained',
-      title: 'MCP-Server verstehen: Die Zukunft des KI-Kontexts',
+      title: 'MCP-Server verstehen: Die Zukunft des AI-Kontexts',
       description:
-        'Tiefgreifender Einblick in Model Context Protocol-Server, wie sie funktionieren und warum sie entscheidend für den Aufbau intelligenter KI-Coding-Assistenten sind, die Ihr Projekt wirklich verstehen.',
+        'Tiefgreifender Einblick in Model Context Protocol-Server, wie sie funktionieren und warum sie entscheidend für den Aufbau intelligenter AI-Coding-Assistenten sind, die Ihr Projekt wirklich verstehen.',
       date: '2025-01-10',
     },
   ],
@@ -806,7 +806,7 @@ export const faqMetadata: Record<string, FaqItem[]> = {
     {
       title: 'Was ist AI Coding Stack und wie hilft es Entwicklern?',
       content:
-        'AI Coding Stack ist ein umfassendes Verzeichnis und Metadaten-Repository für das KI-Coding-Ökosystem. Es bietet eine zentrale Plattform zum Entdecken, Vergleichen und Erkunden KI-gestützter Entwicklungstools, einschließlich IDEs wie VS Code und Cursor, Kommandozeilen-Assistenten wie Claude Code, LLM-Modelle und API-Anbieter. Anstatt über verstreute Ressourcen zu suchen, bietet Ihnen AI Coding Stack detaillierte Spezifikationen, Preise und Funktionsvergleiche alles an einem Ort.',
+        'AI Coding Stack ist ein umfassendes Verzeichnis und Metadaten-Repository für das AI-Coding-Ökosystem. Es bietet eine zentrale Plattform zum Entdecken, Vergleichen und Erkunden AI-gestützter Entwicklungstools, einschließlich IDEs wie VS Code und Cursor, Kommandozeilen-Assistenten wie Claude Code, LLM-Modelle und API-Anbieter. Anstatt über verstreute Ressourcen zu suchen, bietet Ihnen AI Coding Stack detaillierte Spezifikationen, Preise und Funktionsvergleiche alles an einem Ort.',
     },
     {
       title: 'Wie verwende ich AI Coding Stack?',
@@ -814,14 +814,14 @@ export const faqMetadata: Record<string, FaqItem[]> = {
         'AI Coding Stack ist ein webbasiertes Verzeichnis, das Sie direkt unter aicodingstack.io durchsuchen können. Keine Installation erforderlich! Einfach:\n\n- **Kategorien Erkunden**: Durchsuchen Sie IDEs, CLIs, Modelle und Anbieter\n- **Tools Vergleichen**: Nutzen Sie die Vergleichsfunktion, um Spezifikationen und Preise nebeneinander anzuzeigen\n- **Dokumentation Lesen**: Greifen Sie auf Einrichtungsanleitungen und Best Practices für jedes Tool zu\n- **Aktuell Bleiben**: Überprüfen Sie die neuesten Versionen und Spezifikationen für alle Tools\n\nDie Plattform wird kontinuierlich mit neuen Tools und Informationen aktualisiert, sobald diese verfügbar werden.',
     },
     {
-      title: 'Welche KI-Coding-Tools und LLM-Anbieter sind in AI Coding Stack aufgeführt?',
+      title: 'Welche AI-Coding-Tools und LLM-Anbieter sind in AI Coding Stack aufgeführt?',
       content:
-        'AI Coding Stack bietet einen umfassenden Katalog von KI-Coding-Tools und -Diensten:\n\n- **IDEs**: Visual Studio Code, Cursor, TRAE und andere KI-verbesserte Code-Editoren\n- **CLIs**: Claude Code, Codex und andere Kommandozeilen-KI-Assistenten\n- **Erweiterungen**: GitHub Copilot, Cline, Continue, Roo Code und andere KI-Code-Assistent-Plugins\n- **Modelle**: DeepSeek, Kimi K2, GLM, Qwen, GPT, Claude und andere führende KI-Modelle\n- **Anbieter**: OpenAI, Anthropic, DeepSeek, Moonshot, OpenRouter, SiliconFlow und mehr\n\nDas Verzeichnis wird kontinuierlich aktualisiert, wenn neue Tools und Anbieter auftauchen.',
+        'AI Coding Stack bietet einen umfassenden Katalog von AI-Coding-Tools und -Diensten:\n\n- **IDEs**: Visual Studio Code, Cursor, TRAE und andere AI-verbesserte Code-Editoren\n- **CLIs**: Claude Code, Codex und andere Kommandozeilen-AI-Assistenten\n- **Erweiterungen**: GitHub Copilot, Cline, Continue, Roo Code und andere AI-Code-Assistent-Plugins\n- **Modelle**: DeepSeek, Kimi K2, GLM, Qwen, GPT, Claude und andere führende AI-Modelle\n- **Anbieter**: OpenAI, Anthropic, DeepSeek, Moonshot, OpenRouter, SiliconFlow und mehr\n\nDas Verzeichnis wird kontinuierlich aktualisiert, wenn neue Tools und Anbieter auftauchen.',
     },
     {
       title: 'Ist AI Coding Stack Open Source? Kann ich beitragen?',
       content:
-        'Ja, AI Coding Stack ist vollständig Open Source und unter der Apache 2.0 Lizenz veröffentlicht. Das Projekt begrüßt Beiträge aus der Community! Sie können beitragen, indem Sie:\n\n- Tool-Metadaten im Manifests-Verzeichnis hinzufügen oder aktualisieren (ides.json, clis.json, models.json, providers.json)\n- Ungenauigkeiten oder veraltete Informationen melden\n- Neue Tools vorschlagen, die hinzugefügt werden sollen\n- Dokumentation und Leitfäden verbessern\n- Pull-Requests einreichen\n\nBesuchen Sie das [GitHub-Repository](https://github.com/aicodingstack/aicodingstack.io), um mit dem Beitragen zum KI-Coding-Ökosystem zu beginnen.',
+        'Ja, AI Coding Stack ist vollständig Open Source und unter der Apache 2.0 Lizenz veröffentlicht. Das Projekt begrüßt Beiträge aus der Community! Sie können beitragen, indem Sie:\n\n- Tool-Metadaten im Manifests-Verzeichnis hinzufügen oder aktualisieren (ides.json, clis.json, models.json, providers.json)\n- Ungenauigkeiten oder veraltete Informationen melden\n- Neue Tools vorschlagen, die hinzugefügt werden sollen\n- Dokumentation und Leitfäden verbessern\n- Pull-Requests einreichen\n\nBesuchen Sie das [GitHub-Repository](https://github.com/aicodingstack/aicodingstack.io), um mit dem Beitragen zum AI-Coding-Ökosystem zu beginnen.',
     },
     {
       title: 'Wie hilft mir AI Coding Stack bei der Auswahl der richtigen Tools?',

@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: LocalePageProps) {
   return await generateListPageMetadata({
     locale: locale as Locale,
     category: 'modelProviders',
-    translationNamespace: 'pages.modelProviders',
+    translationNamespace: 'pages.stacks.modelProviders',
     additionalKeywords: ['OpenAI', 'Anthropic', 'model API', 'AI provider comparison'],
   })
 }

@@ -18,7 +18,7 @@ type Props = {
 }
 
 export default function ModelProvidersPageClient({ locale }: Props) {
-  const t = useTranslations('pages.modelProviders')
+  const t = useTranslations('pages.stacks.modelProviders')
   const [searchQuery, setSearchQuery] = useState('')
 
   // Localize providers

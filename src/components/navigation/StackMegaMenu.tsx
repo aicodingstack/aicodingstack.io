@@ -81,7 +81,7 @@ const MenuColumn = memo(function MenuColumn({
 })
 
 export const StackMegaMenu = memo(function StackMegaMenu({ isOpen, onClose }: StackMegaMenuProps) {
-  const tStacks = useTranslations('shared.stacks')
+  const tStacks = useTranslations('shared.categories.plural')
   const tNav = useTranslations('components.header')
 
   // Memoize menu sections to avoid recreating on every render

@@ -14,7 +14,7 @@ type Props = {
 export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const { locale } = await params
   const { q } = await searchParams
-  const t = await getTranslations({ locale, namespace: 'components.search' })
+  const t = await getTranslations({ locale, namespace: 'pages.search' })
 
   const title = q ? t('resultsCountFor', { count: 0, query: q }) : t('title')
   const description = t('placeholder')

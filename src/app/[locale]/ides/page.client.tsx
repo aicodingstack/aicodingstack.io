@@ -19,7 +19,7 @@ type Props = {
 }
 
 export default function IDEsPageClient({ locale }: Props) {
-  const t = useTranslations('pages.ides')
+  const t = useTranslations('pages.stacks.ides')
   const tGlobal = useTranslations()
   const [sortOrder, setSortOrder] = useState<'default' | 'name-asc' | 'name-desc'>('default')
   const [licenseFilters, setLicenseFilters] = useState<string[]>([])

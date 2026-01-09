@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return await generateListPageMetadata({
     locale: locale as Locale,
     category: 'models',
-    translationNamespace: 'pages.models',
+    translationNamespace: 'pages.stacks.models',
     additionalKeywords: ['LLM for coding', 'Claude Sonnet', 'GPT-4', 'coding AI models 2025'],
   })
 }

@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: LocalePageProps) {
 export default async function ManifestoPage({ params }: LocalePageProps) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'pages.manifesto' })
-  const tStack = await getTranslations({ locale, namespace: 'pages.overview' })
+  const tStack = await getTranslations({ locale, namespace: 'pages.stacks.overview' })
   const ManifestoContent = await getManifestoComponent(locale)
 
   return (

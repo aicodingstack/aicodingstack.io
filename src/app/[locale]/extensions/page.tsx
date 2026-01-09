@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return await generateListPageMetadata({
     locale: locale as Locale,
     category: 'extensions',
-    translationNamespace: 'pages.extensions',
+    translationNamespace: 'pages.stacks.extensions',
     additionalKeywords: ['AI code completion', 'VS Code extensions', 'JetBrains AI'],
   })
 }

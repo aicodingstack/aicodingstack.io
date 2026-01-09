@@ -37,8 +37,8 @@ function FooterLinkList({ title, links }: FooterLinkListProps) {
 export default function Footer() {
   const tFooter = useTranslations('components.footer')
   const tPlatforms = useTranslations('shared.platforms')
-  const tStacks = useTranslations('shared.stacks')
-  const tCommon = useTranslations('shared.common')
+  const tStacks = useTranslations('shared.categories.plural')
+  const tTerms = useTranslations('shared.terms')
 
   // Define link arrays (static hrefs, only labels depend on translations)
   const resourceLinks = [
@@ -51,10 +51,10 @@ export default function Footer() {
   ]
 
   const documentationLinks = [
-    { href: '/docs', label: tCommon('docs') },
-    { href: '/articles', label: tCommon('articles') },
-    { href: '/curated-collections', label: tCommon('curatedCollections') },
-    { href: '/#faq', label: tCommon('faq') },
+    { href: '/docs', label: tTerms('docs') },
+    { href: '/articles', label: tTerms('articles') },
+    { href: '/curated-collections', label: tTerms('curatedCollections') },
+    { href: '/#faq', label: tTerms('faq') },
   ]
 
   const communityLinks = [
@@ -79,7 +79,7 @@ export default function Footer() {
     <footer className="bg-[var(--color-bg)] max-w-8xl mx-auto px-[var(--spacing-md)] mt-[var(--spacing-lg)]">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-9 gap-[var(--spacing-lg)] py-[var(--spacing-lg)] border-y border-[var(--color-border)]">
         <div className="flex flex-col gap-[var(--spacing-sm)] lg:col-span-3">
-          <span className="text-sm font-semibold tracking-tight">{tCommon('aiCodingStack')}</span>
+          <span className="text-sm font-semibold tracking-tight">{tTerms('aiCodingStack')}</span>
           <p className="text-sm pb-[var(--spacing-sm)] leading-[1.8] text-[var(--color-text-secondary)] font-light">
             {tFooter('tagline')}
             <span className="block mt-[var(--spacing-sm)]">{tFooter('openSource')}</span>
@@ -90,9 +90,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <FooterLinkList title={tCommon('resources')} links={resourceLinks} />
-        <FooterLinkList title={tCommon('documentation')} links={documentationLinks} />
-        <FooterLinkList title={tCommon('community')} links={communityLinks} />
+        <FooterLinkList title={tTerms('resources')} links={resourceLinks} />
+        <FooterLinkList title={tTerms('documentation')} links={documentationLinks} />
+        <FooterLinkList title={tTerms('community')} links={communityLinks} />
       </div>
 
       <div className="py-[var(--spacing-md)] text-center text-xs text-[var(--color-text-muted)]">

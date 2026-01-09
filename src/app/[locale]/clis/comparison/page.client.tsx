@@ -280,9 +280,9 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
 
       <Breadcrumb
         items={[
-          { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-          { name: tGlobal('shared.stacks.clis'), href: '/clis' },
-          { name: tGlobal('shared.common.comparison'), href: '/clis/comparison' },
+          { name: tGlobal('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
+          { name: tGlobal('shared.categories.plural.clis'), href: '/clis' },
+          { name: tGlobal('shared.terms.comparison'), href: '/clis/comparison' },
         ]}
       />
 

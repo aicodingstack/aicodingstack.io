@@ -266,9 +266,9 @@ export default function ExtensionComparisonPageClient({ locale: _locale }: Props
 
       <Breadcrumb
         items={[
-          { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-          { name: tGlobal('shared.stacks.extensions'), href: '/extensions' },
-          { name: tGlobal('shared.common.comparison'), href: '/extensions/comparison' },
+          { name: tGlobal('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
+          { name: tGlobal('shared.categories.plural.extensions'), href: '/extensions' },
+          { name: tGlobal('shared.terms.comparison'), href: '/extensions/comparison' },
         ]}
       />
 

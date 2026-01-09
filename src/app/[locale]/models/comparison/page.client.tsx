@@ -246,9 +246,9 @@ export default function ModelComparisonPageClient({ locale: _locale }: Props) {
 
       <Breadcrumb
         items={[
-          { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-          { name: tGlobal('shared.stacks.models'), href: '/models' },
-          { name: tGlobal('shared.common.comparison'), href: '/models/comparison' },
+          { name: tGlobal('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
+          { name: tGlobal('shared.categories.plural.models'), href: '/models' },
+          { name: tGlobal('shared.terms.comparison'), href: '/models/comparison' },
         ]}
       />
 

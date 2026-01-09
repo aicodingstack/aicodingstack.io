@@ -10,7 +10,7 @@ export const revalidate = 3600
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'components.openSourceRank.meta' })
+  const t = await getTranslations({ locale, namespace: 'pages.openSourceRank.meta' })
 
   const title = buildTitle({ title: t('title') })
   const description = t('description')
@@ -30,7 +30,7 @@ type Props = {
 
 export default async function Page({ params }: Props) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'components.openSourceRank' })
+  const t = await getTranslations({ locale, namespace: 'pages.openSourceRank' })
 
   return (
     <>

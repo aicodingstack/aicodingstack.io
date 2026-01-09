@@ -16,7 +16,7 @@ type Props = {
 }
 
 export default function SearchPageClient({ locale, initialQuery }: Props) {
-  const t = useTranslations('components.search')
+  const t = useTranslations('pages.search')
   const router = useRouter()
   const searchParams = useSearchParams()
   const [query, setQuery] = useState(initialQuery)

@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return await generateListPageMetadata({
     locale: locale as Locale,
     category: 'clis',
-    translationNamespace: 'pages.clis',
+    translationNamespace: 'pages.stacks.clis',
     additionalKeywords: ['Gemini CLI', 'GitHub Copilot CLI', 'command line AI tools'],
   })
 }

@@ -18,7 +18,7 @@ type Props = {
 }
 
 export default function VendorsPageClient({ locale }: Props) {
-  const t = useTranslations('pages.vendors')
+  const t = useTranslations('pages.stacks.vendors')
   const [searchQuery, setSearchQuery] = useState('')
 
   // Localize vendors

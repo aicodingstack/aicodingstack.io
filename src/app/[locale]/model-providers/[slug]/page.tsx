@@ -57,7 +57,7 @@ export default async function ProviderPage({
     notFound()
   }
 
-  const t = await getTranslations({ locale, namespace: 'pages.modelProviderDetail' })
+  const t = await getTranslations({ locale, namespace: 'pages.stacks.modelProviderDetail' })
   const tGlobal = await getTranslations({ locale })
 
   // Generate JSON-LD schema
@@ -72,8 +72,8 @@ export default async function ProviderPage({
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tGlobal('shared.stacks.modelProviders'), href: '/model-providers' },
+    { name: tGlobal('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tGlobal('shared.categories.plural.modelProviders'), href: '/model-providers' },
     { name: provider.name, href: `model-providers/${provider.id}` },
   ]
 

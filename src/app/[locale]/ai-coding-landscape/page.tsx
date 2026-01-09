@@ -33,7 +33,7 @@ type Props = {
 export default async function Page({ params }: Props) {
   const { locale } = await params
   const tNav = await getTranslations({ locale, namespace: 'components.header' })
-  const tOverview = await getTranslations({ locale, namespace: 'pages.overview' })
+  const tOverview = await getTranslations({ locale, namespace: 'pages.stacks.overview' })
 
   // Build vendor matrix data
   const matrixData = buildVendorMatrix()

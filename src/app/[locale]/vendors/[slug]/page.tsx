@@ -83,7 +83,7 @@ export default async function VendorPage({
     notFound()
   }
 
-  const t = await getTranslations({ locale, namespace: 'pages.vendorDetail' })
+  const t = await getTranslations({ locale, namespace: 'pages.stacks.vendorDetail' })
   const tGlobal = await getTranslations({ locale })
 
   // Generate JSON-LD schema
@@ -122,8 +122,8 @@ export default async function VendorPage({
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tGlobal('shared.stacks.vendors'), href: '/vendors' },
+    { name: tGlobal('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tGlobal('shared.categories.plural.vendors'), href: '/vendors' },
     { name: vendor.name, href: `vendors/${vendor.id}` },
   ]
 

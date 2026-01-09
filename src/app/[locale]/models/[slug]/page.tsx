@@ -50,7 +50,7 @@ export async function generateMetadata({
           }
         : undefined,
     },
-    translationNamespace: 'pages.modelDetail',
+    translationNamespace: 'pages.stacks.modelDetail',
   })
 }
 
@@ -66,7 +66,7 @@ export default async function ModelPage({
     notFound()
   }
 
-  const t = await getTranslations({ locale, namespace: 'pages.modelDetail' })
+  const t = await getTranslations({ locale, namespace: 'pages.stacks.modelDetail' })
   const tGlobal = await getTranslations({ locale })
 
   // Generate JSON-LD schema
@@ -96,8 +96,8 @@ export default async function ModelPage({
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tGlobal('shared.stacks.models'), href: '/models' },
+    { name: tGlobal('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tGlobal('shared.categories.plural.models'), href: '/models' },
     { name: model.name, href: `models/${model.id}` },
   ]
 

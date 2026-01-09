@@ -11,7 +11,7 @@
  *   return await generateListPageMetadata({
  *     locale: params.locale,
  *     category: 'ides',
- *     translationNamespace: 'pages.ides',
+ *     translationNamespace: 'pages.stacks.ides',
  *   });
  * }
  */

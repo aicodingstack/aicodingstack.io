@@ -68,7 +68,7 @@ export default async function CLIPage({
     notFound()
   }
 
-  const t = await getTranslations({ locale, namespace: 'pages.cliDetail' })
+  const t = await getTranslations({ locale, namespace: 'pages.stacks.cliDetail' })
   const tGlobal = await getTranslations({ locale })
 
   // Transform URLs for component props
@@ -99,8 +99,8 @@ export default async function CLIPage({
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tGlobal('shared.stacks.clis'), href: '/clis' },
+    { name: tGlobal('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tGlobal('shared.categories.plural.clis'), href: '/clis' },
     { name: cli.name, href: `clis/${cli.id}` },
   ]
 

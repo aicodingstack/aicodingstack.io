@@ -68,7 +68,7 @@ export default async function IDEPage({
     notFound()
   }
 
-  const t = await getTranslations({ locale, namespace: 'pages.ideDetail' })
+  const t = await getTranslations({ locale, namespace: 'pages.stacks.ideDetail' })
   const tGlobal = await getTranslations({ locale })
 
   // Transform URLs for component props
@@ -99,8 +99,8 @@ export default async function IDEPage({
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tGlobal('shared.stacks.ides'), href: '/ides' },
+    { name: tGlobal('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tGlobal('shared.categories.plural.ides'), href: '/ides' },
     { name: ide.name, href: `ides/${ide.id}` },
   ]
 

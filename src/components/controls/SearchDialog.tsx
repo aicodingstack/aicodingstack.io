@@ -117,7 +117,7 @@ export default function SearchDialog({ isOpen, onClose, locale }: SearchDialogPr
             <Command.Empty className="py-12 text-center">
               {query.trim() === '' ? (
                 <div className="text-[var(--color-text-muted)] text-sm">
-                  {t('components.search.placeholder')}
+                  {t('pages.search.placeholder')}
                 </div>
               ) : (
                 <div className="text-center">
@@ -136,7 +136,7 @@ export default function SearchDialog({ isOpen, onClose, locale }: SearchDialogPr
                     />
                   </svg>
                   <p className="text-sm text-[var(--color-text-muted)]">
-                    {t('components.search.noResultsFor', { query })}
+                    {t('pages.search.noResultsFor', { query })}
                   </p>
                 </div>
               )}
@@ -164,7 +164,7 @@ export default function SearchDialog({ isOpen, onClose, locale }: SearchDialogPr
                       <div className="flex-shrink-0">
                         <span className="inline-block px-2 py-0.5 text-xs border border-[var(--color-border)] text-[var(--color-text-muted)]">
                           {t(
-                            `shared.stacks.${result.category === 'providers' ? 'modelProviders' : result.category}`
+                            `shared.categories.plural.${result.category === 'providers' ? 'modelProviders' : result.category}`
                           )}
                         </span>
                       </div>
@@ -199,13 +199,13 @@ export default function SearchDialog({ isOpen, onClose, locale }: SearchDialogPr
                 <kbd className="px-1.5 py-0.5 border border-[var(--color-border)] bg-[var(--color-bg)]">
                   ↓
                 </kbd>
-                <span>{t('components.search.navigate')}</span>
+                <span>{t('pages.search.navigate')}</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <kbd className="px-1.5 py-0.5 border border-[var(--color-border)] bg-[var(--color-bg)]">
                   ↵
                 </kbd>
-                <span>{t('components.search.select')}</span>
+                <span>{t('pages.search.select')}</span>
               </div>
             </div>
           )}

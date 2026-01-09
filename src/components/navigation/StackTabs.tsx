@@ -13,7 +13,7 @@ interface StackTabsProps {
 }
 
 function StackTabs({ activeStack, locale: _locale }: StackTabsProps) {
-  const tStacks = useTranslations('shared.stacks')
+  const tStacks = useTranslations('shared.categories.plural')
 
   const tabs = useMemo(() => {
     return [

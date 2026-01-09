@@ -11,10 +11,10 @@ interface Props {
 
 export default async function Image({ params }: Props) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'pages.ides' })
+  const t = await getTranslations({ locale, namespace: 'pages.stacks.ides' })
 
   return new ImageResponse(
-    <OGImageTemplate category="AI-POWERED IDES" title={t('title')} description={t('subtitle')} />,
+    <OGImageTemplate category="AI-POWERED IDEs" title={t('title')} description={t('subtitle')} />,
     { ...size }
   )
 }

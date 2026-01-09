@@ -41,7 +41,7 @@ function getProductTypeName(type: ProductType, t: (key: string) => string): stri
 }
 
 export function OpenSourceRankPage() {
-  const t = useTranslations('components.openSourceRank')
+  const t = useTranslations('pages.openSourceRank')
   const [selectedType, setSelectedType] = useState<ProductType | 'all'>('all')
 
   const { openSourceProjects, proprietaryProjects } = useMemo(() => {

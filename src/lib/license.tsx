@@ -9,7 +9,7 @@ import type { ReactElement } from 'react'
  */
 export function translateLicense(license: string, t: (key: string) => string): string {
   if (license.toLowerCase() === 'proprietary') {
-    return t('shared.common.proprietary')
+    return t('shared.terms.proprietary')
   }
   return license
 }

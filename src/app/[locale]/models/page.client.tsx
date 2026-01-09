@@ -19,7 +19,7 @@ type Props = {
 }
 
 export default function ModelsPageClient({ locale }: Props) {
-  const t = useTranslations('pages.models')
+  const t = useTranslations('pages.stacks.models')
   const [searchQuery, setSearchQuery] = useState('')
 
   // Localize models

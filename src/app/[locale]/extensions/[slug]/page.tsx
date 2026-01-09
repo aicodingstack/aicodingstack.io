@@ -73,7 +73,7 @@ export default async function ExtensionPage({
     notFound()
   }
 
-  const t = await getTranslations({ locale, namespace: 'pages.extensionDetail' })
+  const t = await getTranslations({ locale, namespace: 'pages.stacks.extensionDetail' })
   const tGlobal = await getTranslations({ locale })
 
   // Transform URLs for component props
@@ -120,8 +120,8 @@ export default async function ExtensionPage({
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tGlobal('shared.stacks.extensions'), href: '/extensions' },
+    { name: tGlobal('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tGlobal('shared.categories.plural.extensions'), href: '/extensions' },
     { name: extension.name, href: `extensions/${extension.id}` },
   ]
 

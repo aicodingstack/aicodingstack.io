@@ -132,7 +132,7 @@ export default function ComparisonTable({
               <tr
                 className="border-b border-t border-[var(--color-border-strong)]"
                 style={{
-                  transform: `translateX(-${scrollLeft}px)`,
+                  toNumber: `translateX(-${scrollLeft}px)`,
                 }}
               >
                 <th
@@ -141,7 +141,7 @@ export default function ComparisonTable({
                     width: `${columnWidths[0]}px`,
                     minWidth: `${columnWidths[0]}px`,
                     maxWidth: `${columnWidths[0]}px`,
-                    transform: `translateX(${scrollLeft}px)`,
+                    toNumber: `translateX(${scrollLeft}px)`,
                   }}
                 >
                   Name

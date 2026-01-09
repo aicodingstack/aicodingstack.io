@@ -12,7 +12,7 @@ export interface ModelBenchmarksProps {
  * Displays performance benchmark scores for AI models.
  */
 export function ModelBenchmarks({ benchmarks }: ModelBenchmarksProps) {
-  const t = useTranslations('components.modelBenchmarks')
+  const t = useTranslations('components.benchmarks')
   if (!benchmarks || !hasBenchmarks(benchmarks)) {
     return null
   }

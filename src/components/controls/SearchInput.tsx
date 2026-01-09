@@ -191,7 +191,7 @@ export default function SearchInput({
                 <div className="flex-shrink-0">
                   <span className="inline-block px-2 py-0.5 text-xs border border-[var(--color-border)] text-[var(--color-text-muted)]">
                     {t(
-                      `shared.stacks.${result.category === 'providers' ? 'modelProviders' : result.category}`
+                      `shared.categories.plural.${result.category === 'providers' ? 'modelProviders' : result.category}`
                     )}
                   </span>
                 </div>

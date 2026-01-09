@@ -279,9 +279,9 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
 
       <Breadcrumb
         items={[
-          { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-          { name: tGlobal('shared.stacks.ides'), href: '/ides' },
-          { name: tGlobal('shared.common.comparison'), href: '/ides/comparison' },
+          { name: tGlobal('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
+          { name: tGlobal('shared.categories.plural.ides'), href: '/ides' },
+          { name: tGlobal('shared.terms.comparison'), href: '/ides/comparison' },
         ]}
       />
 
