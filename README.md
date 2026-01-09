@@ -14,7 +14,7 @@
 
 > Your AI Coding Ecosystem Hub - Discover, Compare, Build Faster
 
-[Live Site: https://aicodingstack.io](https://aicodingstack.io) | [Contributing](CONTRIBUTING.md) | [Discussions](https://github.com/aicodingstack/aicodingstack.io/discussions)
+Live Site: [https://aicodingstack.io](https://aicodingstack.io) | [Contributing](CONTRIBUTING.md) | [Discussions](https://github.com/aicodingstack/aicodingstack.io/discussions)
 
 AI Coding Stack is a comprehensive directory and community-maintained metadata repository for AI-powered coding tools, models, and platforms.
 

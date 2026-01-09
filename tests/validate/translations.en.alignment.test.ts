@@ -116,6 +116,125 @@ function diffSets(a: Set<string>, b: Set<string>): { onlyInA: string[]; onlyInB:
 }
 
 /**
+ * Check if a value is a reference (starts with @:)
+ */
+function isReference(value: unknown): boolean {
+  return typeof value === 'string' && value.startsWith('@:')
+}
+
+/**
+ * Extract the reference path from a @: value
+ * e.g., "@:shared.terms.aiCodingStack" -> "shared.terms.aiCodingStack"
+ */
+function extractReferencePath(value: string): string | null {
+  if (!value.startsWith('@:')) return null
+  return value.slice(2)
+}
+
+/**
+ * Collect all leaf values by their key paths.
+ * Returns a map of key paths to their actual values.
+ */
+function collectValueMap(
+  value: unknown,
+  prefix: string,
+  map: Map<string, unknown>
+): void {
+  if (value === null || typeof value !== 'object') return
+
+  if (Array.isArray(value)) {
+    value.forEach((item, index) => {
+      if (item !== null && typeof item === 'object') {
+        collectValueMap(item, `${prefix}[${index}]`, map)
+      }
+    })
+    return
+  }
+
+  const entries = Object.entries(value)
+  for (const [key, val] of entries) {
+    const fullPath = prefix ? `${prefix}.${key}` : key
+    if (val !== null && typeof val === 'object') {
+      collectValueMap(val, fullPath, map)
+    } else {
+      // Store leaf values
+      map.set(fullPath, val)
+    }
+  }
+}
+
+/**
+ * Validate that locale values follow the same reference pattern as English.
+ * - If English uses a reference (@:...), the locale must use the same reference
+ * - If English uses a direct value, the locale must also use a direct value (not a reference)
+ */
+function validateValueAlignment(
+  translationsDir: string,
+  locale: string,
+  filePath: string
+): string[] {
+  const failures: string[] = []
+
+  const enFilePath = path.join(translationsDir, 'en', filePath)
+  const localeFilePath = path.join(translationsDir, locale, filePath)
+
+  // Collect English values
+  const enJson = readJsonFile(enFilePath) as Record<string, unknown>
+  const enValues = new Map<string, unknown>()
+  collectValueMap(enJson, '', enValues)
+
+  // Collect locale values
+  const localeJson = readJsonFile(localeFilePath) as Record<string, unknown>
+  const localeValues = new Map<string, unknown>()
+  collectValueMap(localeJson, '', localeValues)
+
+  // Check each key for reference pattern consistency
+  for (const [keyPath, enValue] of enValues) {
+    const localeValue = localeValues.get(keyPath)
+
+    // Skip if locale doesn't have this key (already caught by structure check)
+    if (localeValue === undefined) continue
+
+    const enIsRef = isReference(enValue)
+    const localeIsRef = isReference(localeValue)
+
+    // English uses a reference - locale must use the same reference
+    if (enIsRef) {
+      const enRefPath = extractReferencePath(enValue as string)
+
+      if (!localeIsRef) {
+        failures.push(
+          `[${locale}] ${filePath}:${keyPath}\n` +
+          `  English uses reference: ${enValue}\n` +
+          `  Locale uses direct value: "${localeValue}"\n` +
+          `  Expected: ${enValue}`
+        )
+      } else if (extractReferencePath(localeValue as string) !== enRefPath) {
+        failures.push(
+          `[${locale}] ${filePath}:${keyPath}\n` +
+          `  English reference: ${enValue}\n` +
+          `  Locale reference: ${localeValue}\n` +
+          `  Expected same reference path`
+        )
+      }
+    }
+    // English uses a direct value - locale must also use a direct value (not a reference)
+    else {
+      if (localeIsRef) {
+        failures.push(
+          `[${locale}] ${filePath}:${keyPath}\n` +
+          `  English uses direct value: "${enValue}"\n` +
+          `  Locale uses reference: ${localeValue}\n` +
+          `  Expected: a direct translation (not a reference)`
+        )
+      }
+    }
+  }
+
+  return failures
+}
+
+/**
  * Validate all locales have identical structure to English (en) locale.
  */
 function validateEnglishAlignment(rootDir: string): string[] {
@@ -189,6 +308,12 @@ function validateEnglishAlignment(rootDir: string): string[] {
           parts.push(`extra keys (not in en):\n${keyDiff.onlyInB.map(k => `  - ${k}`).join('\n')}`)
         }
         failures.push(`[${locale}] key structure mismatch in '${file}' vs en:\n${parts.join('\n')}`)
+      }
+
+      // Check value alignment for this file
+      if (!fileDiff.onlyInA.length && !fileDiff.onlyInB.length && !keyDiff.onlyInA.length && !keyDiff.onlyInB.length) {
+        const valueFailures = validateValueAlignment(translationsDir, locale, file)
+        failures.push(...valueFailures)
       }
     }
   }

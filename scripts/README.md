@@ -233,7 +233,7 @@ node scripts/fetch/index.mjs github-stars
 ```
 
 **What it does:**
-- Reads `githubUrl` from manifest files
+- Read `githubUrl` from manifest files
 - Fetches star counts from GitHub API
 - Updates `data/github-stars.json` with latest counts
 
