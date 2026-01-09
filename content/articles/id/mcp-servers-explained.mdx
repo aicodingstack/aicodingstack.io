@@ -1,73 +1,73 @@
 ---
-title: 'Understanding MCP Servers: The Future of AI Context'
-description: 'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.'
+title: 'Memahami Server MCP: Masa Depan Konteks AI'
+description: 'Eksplorasi mendalam tentang server Model Context Protocol, cara kerjanya, dan mengapa mereka penting untuk membangun asisten pemrograman AI cerdas yang benar-benar memahami proyek Anda.'
 date: '2025-01-10'
 ---
 
-Model Context Protocol (MCP) servers represent a paradigm shift in how AI agents interact with external tools, data sources, and APIs. They are the connective tissue that transforms isolated AI models into context-aware coding companions that truly understand your project.
+Server Model Context Protocol (MCP) mewakili perubahan paradigma dalam cara agen AI berinteraksi dengan alat eksternal, sumber data, dan API. Mereka adalah jaringan ikat yang mengubah model AI terisolasi menjadi companion pemrograman sadar konteks yang benar-benar memahami proyek Anda.
 
-## What is MCP?
+## Apa itu MCP?
 
-The Model Context Protocol is an open standard developed by Anthropic that enables AI agents to securely connect to external data sources and tools. Think of MCP servers as specialized adapters that give your AI agent superpowers—whether that's reading from databases, searching the web, interacting with APIs, or accessing your filesystem.
+Model Context Protocol adalah standar terbuka yang dikembangkan oleh Anthropic yang memungkinkan agen AI terhubung dengan aman ke sumber data eksternal dan alat. Bayangkan server MCP sebagai adaptor khusus yang memberikan superpower pada agen AI Anda—baik itu membaca dari database, mencari di web, berinteraksi dengan API, atau mengakses sistem file Anda.
 
-Unlike traditional API integrations that require custom code for each tool, MCP provides a standardized interface. This means any MCP-compatible AI agent can use any MCP server without custom integration work.
+Berbeda dengan integrasi API tradisional yang memerlukan kode kustom untuk setiap alat, MCP menyediakan antarmuka standar. Ini berarti agen AI yang kompatibel MCP dapat menggunakan server MCP apa pun tanpa pekerjaan integrasi kustom.
 
-## How MCP Servers Work
+## Cara Kerja Server MCP
 
-An MCP server is a lightweight process that exposes three core primitives:
+Server MCP adalah proses ringan yang mengekspos tiga primitif utama:
 
 ### Resources
 
-Context and data that the AI can read. For example, a filesystem MCP server exposes your project files as resources.
+Konteks dan data yang dapat dibaca oleh AI. Sebagai contoh, server MCP sistem file mengekspos file proyek Anda sebagai resources.
 
 ### Tools
 
-Actions the AI can perform. A web search MCP might expose a search tool, while a database MCP could provide query execution tools.
+Tindakan yang dapat dilakukan AI. Server MCP pencarian web mungkin mengekspos alat pencarian, sementara server MCP database dapat menyediakan alat eksekusi query.
 
 ### Prompts
 
-Templated interactions that guide the AI. These can include best practices or common workflows specific to the tool.
+Interaksi berbasis template yang memandu AI. Ini dapat mencakup best practices atau workflow umum yang spesifik untuk alat tersebut.
 
-## Popular MCP Servers
+## Server MCP Populer
 
-The MCP ecosystem is rapidly growing. Here are some essential servers:
+Ekosistem MCP berkembang dengan cepat. Berikut adalah beberapa server penting:
 
-- **Filesystem** - Access local files and directories
-- **Playwright** - Browser automation and web scraping
-- **Context7** - Up-to-date library documentation
-- **PostgreSQL** - Database queries and schema inspection
-- **GitHub** - Repository management and code search
-- **Brave Search** - Real-time web search capabilities
+- **Filesystem** - Mengakses file dan direktori lokal
+- **Playwright** - Otomatisasi browser dan web scraping
+- **Context7** - Dokumentasi perpustakaan terkini
+- **PostgreSQL** - Query database dan inspeksi skema
+- **GitHub** - Manajemen repositori dan pencarian kode
+- **Brave Search** - Kemampuan pencarian web real-time
 
-## Why MCP Matters for AI Coding
+## Mengapa MCP Penting untuk AI Coding
 
-Before MCP, AI coding assistants were essentially blind to your development environment. They could generate code based on training data, but couldn't access your actual project structure, read your configuration files, or interact with your development tools.
+Sebelum MCP, asisten pemrograman AI pada dasarnya buta terhadap lingkungan pengembangan Anda. Mereka dapat menghasilkan kode berdasarkan data pelatihan, tetapi tidak dapat mengakses struktur proyek Anda yang sebenarnya, membaca file konfigurasi, atau berinteraksi dengan alat pengembangan Anda.
 
-MCP changes this fundamentally. With MCP servers, your AI agent can:
+MCP mengubah hal ini secara fundamental. Dengan server MCP, agen AI Anda dapat:
 
-- Understand your entire codebase structure through filesystem access
-- Look up current documentation for libraries you're using
-- Execute database queries to understand your data model
-- Search the web for the latest solutions to your specific problem
-- Interact with your Git repository to understand commit history
+- Memahami seluruh struktur codebase Anda melalui akses sistem file
+- Mencari dokumentasi terkini untuk perpustakaan yang Anda gunakan
+- Menjalankan query database untuk memahami model data Anda
+- Mencari di web solusi terbaru untuk masalah spesifik Anda
+- Berinteraksi dengan repositori Git Anda untuk memahami riwayat commit
 
-## Getting Started with MCP
+## Memulai dengan MCP
 
-Most modern AI coding tools now support MCP. Setting up your first MCP server typically involves:
+Sebagian besar alat pemrograman AI modern sekarang mendukung MCP. Menyiapkan server MCP pertama Anda biasanya melibatkan:
 
-### 1. Choose an MCP Server
+### 1. Pilih Server MCP
 
-Start with something simple like the filesystem or web search MCP server.
+Mulai dengan sesuatu yang sederhana seperti server MCP sistem file atau pencarian web.
 
-### 2. Install the Server
+### 2. Instal Server
 
-Most MCP servers are distributed as npm packages or Python modules. Follow the installation instructions for your chosen server.
+Kebanyakan server MCP didistribusikan sebagai paket npm atau modul Python. Ikuti instruksi instalasi untuk server pilihan Anda.
 
-### 3. Configure Your IDE
+### 3. Konfigurasi IDE Anda
 
-Add the MCP server configuration to your IDE's settings. The exact format varies by tool, but typically involves specifying the server's command and any required arguments.
+Tambahkan konfigurasi server MCP ke pengaturan IDE Anda. Format yang tepat bervariasi menurut alat, tetapi biasanya melibatkan penentuan perintah server dan argumen yang diperlukan.
 
-Here's an example configuration for Claude Code:
+Berikut adalah contoh konfigurasi untuk Claude Code:
 
 ```json
 {
@@ -87,14 +87,14 @@ Here's an example configuration for Claude Code:
 }
 ```
 
-### 4. Test the Integration
+### 4. Tes Integrasi
 
-Ask your AI agent to use the newly connected tools. For example, if you installed a filesystem MCP, try asking it to read a specific file from your project.
+Minta agen AI Anda menggunakan alat yang baru terhubung. Sebagai contoh, jika Anda menginstal server MCP sistem file, coba minta untuk membaca file tertentu dari proyek Anda.
 
-## The Future of MCP
+## Masa Depan MCP
 
-The MCP ecosystem is still in its early stages, but the potential is enormous. As more developers build MCP servers for specialized tools and services, AI agents will become increasingly powerful and context-aware.
+Ekosistem MCP masih pada tahap awal, tetapi potensinya sangat besar. Saat lebih banyak pengembang membangun server MCP untuk alat dan layanan khusus, agen AI akan menjadi semakin kuat dan sadar konteks.
 
-We're moving toward a future where your AI coding assistant has seamless access to every tool in your development workflow—from your IDE to your cloud infrastructure. MCP is the protocol that makes this vision possible.
+Kami bergerak menuju masa depan di mana asisten pemrograman AI memiliki akses mulus ke setiap alat dalam workflow pengembangan Anda—dari IDE hingga infrastruktur cloud Anda. MCP adalah protokol yang membuat visi ini menjadi mungkin.
 
-Explore the full catalog of available MCP servers in our [MCP Servers directory](/ai-coding-stack/mcp-servers) to find the right integrations for your workflow.
+Jelajahi katalog lengkap server MCP yang tersedia di [direktori server MCP](/ai-coding-stack/mcp-servers) kami untuk menemukan integrasi yang tepat untuk workflow Anda.

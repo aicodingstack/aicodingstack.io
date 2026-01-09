@@ -1,100 +1,100 @@
 ---
-title: 'Understanding MCP Servers: The Future of AI Context'
-description: 'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.'
+title: 'Comprendre les Serveurs MCP : L\'Avenir du Contexte IA'
+description: 'Un approfondissement des serveurs du Protocole de Contexte de Modèle, comment ils fonctionnent et pourquoi ils sont cruciaux pour construire des assistants de programmation IA intelligents qui comprennent vraiment votre projet.'
 date: '2025-01-10'
 ---
 
-Model Context Protocol (MCP) servers represent a paradigm shift in how AI agents interact with external tools, data sources, and APIs. They are the connective tissue that transforms isolated AI models into context-aware coding companions that truly understand your project.
+Les serveurs du Protocole de Contexte de Modèle (MCP) représentent un changement de paradigme dans la façon dont les agents IA interagissent avec des outils externes, des sources de données et des API. Ils constituent le tissu connectif qui transforme des modèles IA isolés en compagnons de programmation conscients du contexte qui comprennent vraiment votre projet.
 
-## What is MCP?
+## Qu'est-ce que MCP ?
 
-The Model Context Protocol is an open standard developed by Anthropic that enables AI agents to securely connect to external data sources and tools. Think of MCP servers as specialized adapters that give your AI agent superpowers—whether that's reading from databases, searching the web, interacting with APIs, or accessing your filesystem.
+Le Protocole de Contexte de Modèle est un standard ouvert développé par Anthropic qui permet aux agents IA de se connecter en toute sécurité à des sources de données externes et à des outils. Voyez les serveurs MCP comme des adaptateurs spécialisés qui donnent des super-pouvoirs à votre agent IA, qu'il s'agisse de lire dans des bases de données, de rechercher sur le web, d'interagir avec des API ou d'accéder à votre système de fichiers.
 
-Unlike traditional API integrations that require custom code for each tool, MCP provides a standardized interface. This means any MCP-compatible AI agent can use any MCP server without custom integration work.
+Contrairement aux intégrations d'API traditionnelles qui nécessitent du code personnalisé pour chaque outil, MCP fournit une interface standardisée. Cela signifie que tout agent IA compatible MCP peut utiliser n'importe quel serveur MCP sans travail d'intégration personnalisé.
 
-## How MCP Servers Work
+## Comment les Serveurs MCP Fonctionnent
 
-An MCP server is a lightweight process that exposes three core primitives:
+Un serveur MCP est un processus léger qui expose trois primitives principales :
 
-### Resources
+### Ressources
 
-Context and data that the AI can read. For example, a filesystem MCP server exposes your project files as resources.
+Contexte et données que l'IA peut lire. Par exemple, un serveur MCP de système de fichiers expose vos fichiers de projet comme ressources.
 
-### Tools
+### Outils
 
-Actions the AI can perform. A web search MCP might expose a search tool, while a database MCP could provide query execution tools.
+Actions que l'IA peut effectuer. Un serveur MCP de recherche web pourrait exposer un outil de recherche, tandis qu'un serveur MCP de base de données pourrait fournir des outils d'exécution de requêtes.
 
 ### Prompts
 
-Templated interactions that guide the AI. These can include best practices or common workflows specific to the tool.
+Interactions avec modèles qui guident l'IA. Ceux-ci peuvent inclure des meilleures pratiques ou des flux de travail courants spécifiques à l'outil.
 
-## Popular MCP Servers
+## Serveurs MCP Populaires
 
-The MCP ecosystem is rapidly growing. Here are some essential servers:
+L'écosystème MCP croît rapidement. Voici quelques serveurs essentiels :
 
-- **Filesystem** - Access local files and directories
-- **Playwright** - Browser automation and web scraping
-- **Context7** - Up-to-date library documentation
-- **PostgreSQL** - Database queries and schema inspection
-- **GitHub** - Repository management and code search
-- **Brave Search** - Real-time web search capabilities
+- **Filesystem** - Accéder aux fichiers et répertoires locaux
+- **Playwright** - Automatisation du navigateur et web scraping
+- **Context7** - Documentation de bibliothèque à jour
+- **PostgreSQL** - Requêtes de base de données et inspection de schéma
+- **GitHub** - Gestion de dépôt et recherche de code
+- **Brave Search** - Capacités de recherche web en temps réel
 
-## Why MCP Matters for AI Coding
+## Pourquoi MCP est Important pour AI Coding
 
-Before MCP, AI coding assistants were essentially blind to your development environment. They could generate code based on training data, but couldn't access your actual project structure, read your configuration files, or interact with your development tools.
+Avant MCP, les assistants de programmation IA étaient essentiellement aveugles à votre environnement de développement. Ils pouvaient générer du code basé sur des données d'entraînement, mais ne pouvaient pas accéder à la structure réelle de votre projet, lire vos fichiers de configuration ou interagir avec vos outils de développement.
 
-MCP changes this fundamentally. With MCP servers, your AI agent can:
+MCP change fondamentalement cela. Avec les serveurs MCP, votre agent IA peut :
 
-- Understand your entire codebase structure through filesystem access
-- Look up current documentation for libraries you're using
-- Execute database queries to understand your data model
-- Search the web for the latest solutions to your specific problem
-- Interact with your Git repository to understand commit history
+- Comprendre toute la structure de votre base de code via l'accès au système de fichiers
+- Rechercher la documentation actuelle pour les bibliothèques que vous utilisez
+- Exécuter des requêtes de base de données pour comprendre votre modèle de données
+- Rechercher sur le web les dernières solutions pour votre problème spécifique
+- Interagir avec votre dépôt Git pour comprendre l'historique des commits
 
-## Getting Started with MCP
+## Commencer avec MCP
 
-Most modern AI coding tools now support MCP. Setting up your first MCP server typically involves:
+La plupart des outils modernes de programmation IA prennent désormais en charge MCP. La configuration de votre premier serveur MCP implique généralement :
 
-### 1. Choose an MCP Server
+### 1. Choisissez un Serveur MCP
 
-Start with something simple like the filesystem or web search MCP server.
+Commencez avec quelque chose de simple comme le serveur MCP de système de fichiers ou de recherche web.
 
-### 2. Install the Server
+### 2. Installez le Serveur
 
-Most MCP servers are distributed as npm packages or Python modules. Follow the installation instructions for your chosen server.
+La plupart des serveurs MCP sont distribués sous forme de packages npm ou de modules Python. Suivez les instructions d'installation pour votre serveur choisi.
 
-### 3. Configure Your IDE
+### 3. Configurez votre IDE
 
-Add the MCP server configuration to your IDE's settings. The exact format varies by tool, but typically involves specifying the server's command and any required arguments.
+Ajoutez la configuration du serveur MCP aux paramètres de votre IDE. Le format exact varie selon l'outil, mais implique généralement de spécifier la commande du serveur et les arguments requis.
 
-Here's an example configuration for Claude Code:
+Voici un exemple de configuration pour Claude Code :
 
 ```json
 {
   "mcpServers": {
     "filesystem": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/path/to/your/project"]
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/chemin/vers/votre/projet"]
     },
     "brave-search": {
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-brave-search"],
       "env": {
-        "BRAVE_API_KEY": "your-api-key-here"
+        "BRAVE_API_KEY": "votre-clé-api-ici"
       }
     }
   }
 }
 ```
 
-### 4. Test the Integration
+### 4. Testez l'Intégration
 
-Ask your AI agent to use the newly connected tools. For example, if you installed a filesystem MCP, try asking it to read a specific file from your project.
+Demandez à votre agent IA d'utiliser les outils nouvellement connectés. Par exemple, si vous avez installé un serveur MCP de système de fichiers, essayez de lui demander de lire un fichier spécifique de votre projet.
 
-## The Future of MCP
+## L'Avenir de MCP
 
-The MCP ecosystem is still in its early stages, but the potential is enormous. As more developers build MCP servers for specialized tools and services, AI agents will become increasingly powerful and context-aware.
+L'écosystème MCP est encore à ses débuts, mais le potentiel est énorme. À mesure que plus de développeurs construiront des serveurs MCP pour des outils et services spécialisés, les agents IA deviendront de plus en plus puissants et conscients du contexte.
 
-We're moving toward a future where your AI coding assistant has seamless access to every tool in your development workflow—from your IDE to your cloud infrastructure. MCP is the protocol that makes this vision possible.
+Nous nous déplaçons vers un avenir où votre assistant de programmation IA a un accès fluide à chaque outil de votre flux de travail de développement, depuis votre IDE jusqu'à votre infrastructure cloud. MCP est le protocole qui rend cette vision possible.
 
-Explore the full catalog of available MCP servers in our [MCP Servers directory](/ai-coding-stack/mcp-servers) to find the right integrations for your workflow.
+Explorez le catalogue complet des serveurs MCP disponibles dans notre [répertoire de serveurs MCP](/ai-coding-stack/mcp-servers) pour trouver les intégrations appropriées pour votre flux de travail.

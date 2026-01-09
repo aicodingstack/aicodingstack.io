@@ -1,73 +1,73 @@
 ---
-title: 'Understanding MCP Servers: The Future of AI Context'
-description: 'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.'
+title: 'MCPサーバーの理解：AIコンテキストの未来'
+description: 'モデルコンテキストプロトコルサーバーの詳細、その仕組み、およびプロジェクトを真に理解するインテリジェントなAIコーディングアシスタントを構築するために重要な理由について詳しく解説します。'
 date: '2025-01-10'
 ---
 
-Model Context Protocol (MCP) servers represent a paradigm shift in how AI agents interact with external tools, data sources, and APIs. They are the connective tissue that transforms isolated AI models into context-aware coding companions that truly understand your project.
+モデルコンテキストプロトコル（MCP）サーバーは、AIエージェントが外部ツール、データソース、APIと対話する方法にパラダイムシフトをもたらしています。それらは、孤立したAIモデルをプロジェクトを真に理解するコンテキスト認識コーディングコンパニオンに変換する接続組織です。
 
-## What is MCP?
+## MCPとは何ですか？
 
-The Model Context Protocol is an open standard developed by Anthropic that enables AI agents to securely connect to external data sources and tools. Think of MCP servers as specialized adapters that give your AI agent superpowers—whether that's reading from databases, searching the web, interacting with APIs, or accessing your filesystem.
+モデルコンテキストプロトコルは、Anthropicが開発したオープンスタンダードであり、AIエージェントが外部データソースとツールに安全に接続できるようにします。MCPサーバーを、AIエージェントにスーパーパワーを与える専用アダプターと考えてください—データベースからの読み取り、Web検索、APIとの対話、ファイルシステムへのアクセスなどが可能です。
 
-Unlike traditional API integrations that require custom code for each tool, MCP provides a standardized interface. This means any MCP-compatible AI agent can use any MCP server without custom integration work.
+各ツールにカスタムコードが必要な従来のAPI統合とは異なり、MCPは標準化されたインターフェースを提供します。这意味着、MCP互換のAIエージェントはカスタム統合作業なしで任意のMCPサーバーを使用できます。
 
-## How MCP Servers Work
+## MCPサーバーの仕組み
 
-An MCP server is a lightweight process that exposes three core primitives:
+MCPサーバーは、3つのコアプリミティブを公開する軽量プロセスです：
 
-### Resources
+### リソース
 
-Context and data that the AI can read. For example, a filesystem MCP server exposes your project files as resources.
+AIが読み取れるコンテキストとデータ。たとえば、ファイルシステムMCPサーバーはプロジェクトファイルをリソースとして公開します。
 
-### Tools
+### ツール
 
-Actions the AI can perform. A web search MCP might expose a search tool, while a database MCP could provide query execution tools.
+AIが実行できるアクション。Web検索MCPは検索ツールを公開し、データベースMCPはクエリ実行ツールを提供できます。
 
-### Prompts
+### プロンプト
 
-Templated interactions that guide the AI. These can include best practices or common workflows specific to the tool.
+AIをガイドするテンプレート化された対話。これらには、ツールに固有のベストプラクティスや一般的なワークフローが含まれる場合があります。
 
-## Popular MCP Servers
+## 人気のあるMCPサーバー
 
-The MCP ecosystem is rapidly growing. Here are some essential servers:
+MCPエコシステムは急速に成長しています。以下はいくつかの必須サーバーです：
 
-- **Filesystem** - Access local files and directories
-- **Playwright** - Browser automation and web scraping
-- **Context7** - Up-to-date library documentation
-- **PostgreSQL** - Database queries and schema inspection
-- **GitHub** - Repository management and code search
-- **Brave Search** - Real-time web search capabilities
+- **Filesystem** - ローカルファイルとディレクトリへのアクセス
+- **Playwright** - ブラウザ自動化とWebスクレイピング
+- **Context7** - 最新のライブラリドキュメント
+- **PostgreSQL** - データベースクエリとスキーマ検査
+- **GitHub** - リポジトリ管理とコード検索
+- **Brave Search** - リアルタイムWeb検索機能
 
-## Why MCP Matters for AI Coding
+## MCPがAIコーディングにとって重要な理由
 
-Before MCP, AI coding assistants were essentially blind to your development environment. They could generate code based on training data, but couldn't access your actual project structure, read your configuration files, or interact with your development tools.
+MCPの前は、AIコーディングアシスタントは本質的に開発環境に対して盲目でした。トレーニングデータに基づいてコードを生成することはできましたが、実際のプロジェクト構造にアクセスしたり、設定ファイルを読んだり、開発ツールと対話したりすることはできませんでした。
 
-MCP changes this fundamentally. With MCP servers, your AI agent can:
+MCPはこれを根本的に変えます。MCPサーバーを使うと、AIエージェントは次のことができます：
 
-- Understand your entire codebase structure through filesystem access
-- Look up current documentation for libraries you're using
-- Execute database queries to understand your data model
-- Search the web for the latest solutions to your specific problem
-- Interact with your Git repository to understand commit history
+- ファイルシステムアクセスを通じてコードベース全体の構造を理解
+- 使用中のライブラリの最新のドキュメントを検索
+- データモデルを理解するためにデータベースクエリを実行
+- 特定の問題の最新のソリューションをWebで検索
+- コミット履歴を理解するためにGitリポジトリと対話
 
-## Getting Started with MCP
+## MCPの始め方
 
-Most modern AI coding tools now support MCP. Setting up your first MCP server typically involves:
+ほとんどの最新のAIコーディングツールはMCPをサポートしています。最初のMCPサーバーを設定するには、通常以下が含まれます：
 
-### 1. Choose an MCP Server
+### 1. MCPサーバーを選択する
 
-Start with something simple like the filesystem or web search MCP server.
+ファイルシステムまたはWeb検索MCPサーバーなどの単純なものから始めます。
 
-### 2. Install the Server
+### 2. サーバーをインストールする
 
-Most MCP servers are distributed as npm packages or Python modules. Follow the installation instructions for your chosen server.
+ほとんどのMCPサーバーはnpmパッケージまたはPythonモジュールとして配布されています。選択したサーバーのインストール手順に従います。
 
-### 3. Configure Your IDE
+### 3. IDEを設定する
 
-Add the MCP server configuration to your IDE's settings. The exact format varies by tool, but typically involves specifying the server's command and any required arguments.
+MCPサーバー設定をIDEの設定に追加します。正確な形式はツールにより異なりますが、通常はサーバーのコマンドと必要な引数を指定することが含まれます。
 
-Here's an example configuration for Claude Code:
+Claude Codeの設定例は次の通りです：
 
 ```json
 {
@@ -87,14 +87,14 @@ Here's an example configuration for Claude Code:
 }
 ```
 
-### 4. Test the Integration
+### 4. 統合をテストする
 
-Ask your AI agent to use the newly connected tools. For example, if you installed a filesystem MCP, try asking it to read a specific file from your project.
+AIエージェントに新しく接続されたツールを使用するように頼みます。たとえば、ファイルシステムMCPをインストールした場合、プロジェクトから特定のファイルを読むように頼んでみてください。
 
-## The Future of MCP
+## MCPの未来
 
-The MCP ecosystem is still in its early stages, but the potential is enormous. As more developers build MCP servers for specialized tools and services, AI agents will become increasingly powerful and context-aware.
+MCPエコシステムはまだ初期段階ですが、可能性は巨大です。専門的なツールとサービスのためにより多くの開発者がMCPサーバーを構築するにつれて、AIエージェントはますます強力でコンテキスト認識になります。
 
-We're moving toward a future where your AI coding assistant has seamless access to every tool in your development workflow—from your IDE to your cloud infrastructure. MCP is the protocol that makes this vision possible.
+私たちは、AIコーディングアシスタントが開発ワークフローのすべてのツール（IDEからクラウドインフラストラクチャまで）にシームレスにアクセスできる未来に向かっています。MCPはこのビジョンを実現するプロトコルです。
 
-Explore the full catalog of available MCP servers in our [MCP Servers directory](/ai-coding-stack/mcp-servers) to find the right integrations for your workflow.
+ワークフローに適した統合を見つけるために、[MCPサーバーディレクトリ](/ai-coding-stack/mcp-servers)で利用可能なMCPサーバーの全カタログを探索してください。

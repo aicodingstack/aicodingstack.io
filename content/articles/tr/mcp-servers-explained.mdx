@@ -1,73 +1,73 @@
 ---
-title: 'Understanding MCP Servers: The Future of AI Context'
-description: 'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.'
+title: 'MCP Sunucularını Anlamak: Yapay Zeka Bağlamının Geleceği'
+description: 'Model Bağlam Protokolü sunucularını, nasıl çalıştıklarını ve projenizi gerçekten anlayan akıllı yapay zeka kodlama asistanları oluşturmak için neden kritik olduklarını derinlemesine anlayın.'
 date: '2025-01-10'
 ---
 
-Model Context Protocol (MCP) servers represent a paradigm shift in how AI agents interact with external tools, data sources, and APIs. They are the connective tissue that transforms isolated AI models into context-aware coding companions that truly understand your project.
+Model Bağlam Protokolü (MCP) sunucuları, yapay zeka ajanlarının dış araçlarla, veri kaynaklarıyla ve API\'lerle etkileşim şeklinde bir paradigm değişikliği temsil eder. Projeyi gerçekten anlayan bağlama duyarlı kodlama ortaklarına izole yapay zeka modellerini dönüştüren bağlayıcı dokudurlar.
 
-## What is MCP?
+## MCP Nedir?
 
-The Model Context Protocol is an open standard developed by Anthropic that enables AI agents to securely connect to external data sources and tools. Think of MCP servers as specialized adapters that give your AI agent superpowers—whether that's reading from databases, searching the web, interacting with APIs, or accessing your filesystem.
+Model Bağlam Protokolü, yapay zeka ajanlarını dış veri kaynaklarına ve toolara güvenli bağlanmasına olanak tanıyan Anthropic tarafından geliştirilen açık bir standarttır. MCP sunucularını, yapay zeka ajanınıza süper güçler veren özel adaptörler olarak düşünün—isterseniz veritabanlarından okuma, web arama, API etkileşimi veya dosya sisteminize erişim ve diğerleri.
 
-Unlike traditional API integrations that require custom code for each tool, MCP provides a standardized interface. This means any MCP-compatible AI agent can use any MCP server without custom integration work.
+Her araç için özel kod gerektiren geleneksel API entegrasyonlarının aksine, MCP standart bir arayüz sağlar. Bu, MCP uyumlu herhangi bir yapay zeka ajanının özel entegrasyon çalışması olmadan herhangi bir MCP sunucusunu kullanabileceği anlamına gelir.
 
-## How MCP Servers Work
+## MCP Sunucuları Nasıl Çalışır
 
-An MCP server is a lightweight process that exposes three core primitives:
+Bir MCP sunucusu, üç temel ilkeyi sunan hafif bir işlemdir:
 
-### Resources
+### Kaynaklar
 
-Context and data that the AI can read. For example, a filesystem MCP server exposes your project files as resources.
+Yapay zekanın okuyabileceği bağlam ve veriler. Örneğin, bir dosya sistemi MCP sunucusu proje dosyalarınızı kaynak olarak sunar.
 
-### Tools
+### Araçlar
 
-Actions the AI can perform. A web search MCP might expose a search tool, while a database MCP could provide query execution tools.
+Yapay zekanın gerçekleştirebileceği eylemler. Bir web arama MCP\'si bir arama aracı, bir veritabanı MCP\'sı ise sorgu yürütme araçları sunabilir.
 
-### Prompts
+### İstemler
 
-Templated interactions that guide the AI. These can include best practices or common workflows specific to the tool.
+Yapay zekayı yönlendiren şablonlu etkileşimler. Bunlar, araca özgü en iyi teknikler veya genel iş akışları içerebilir.
 
-## Popular MCP Servers
+## Popüler MCP Sunucuları
 
-The MCP ecosystem is rapidly growing. Here are some essential servers:
+MCP ekosistemi hızla büyüyor. İşte bazı temel sunucular:
 
-- **Filesystem** - Access local files and directories
-- **Playwright** - Browser automation and web scraping
-- **Context7** - Up-to-date library documentation
-- **PostgreSQL** - Database queries and schema inspection
-- **GitHub** - Repository management and code search
-- **Brave Search** - Real-time web search capabilities
+- **Filesystem** - Yerel dosya ve dizinlere erişim
+- **Playwright** - Tarayıcı otomasyonu ve web kazıma
+- **Context7** - Güncel kütüphane belgeleri
+- **PostgreSQL** - Veritabanı sorguları ve şema incelemesi
+- **GitHub** - Depo yönetimi ve kod arama
+- **Brave Search** - Gerçek zamanlı web arama yetenekleri
 
-## Why MCP Matters for AI Coding
+## MCP AI Kodlama İçin Neden Önemli
 
-Before MCP, AI coding assistants were essentially blind to your development environment. They could generate code based on training data, but couldn't access your actual project structure, read your configuration files, or interact with your development tools.
+MCP\'den önce, yapay zeka kodlama asistanları geliştirme ortamınıza esasen kördüler. Eğitim verilerine dayalı kod oluşturabilirlerdi, ancak gerçek proje yapınıza erişemezler, yapılandırma dosyalarınızı okuyamaz veya geliştirme araçlarınızla etkileşemezlerdi.
 
-MCP changes this fundamentally. With MCP servers, your AI agent can:
+MCP bunu kökten değiştirir. MCP sunucuları ile yapay zeka ajanınız şunları yapabilir:
 
-- Understand your entire codebase structure through filesystem access
-- Look up current documentation for libraries you're using
-- Execute database queries to understand your data model
-- Search the web for the latest solutions to your specific problem
-- Interact with your Git repository to understand commit history
+- Dosya sistemi erişimi yoluyla tüm kod tabanı yapısını anlama
+- Kullandığınız kütüphaneler için güncel belgeleri arama
+- Veri modelinizi anlamak için veritabanı sorguları yürütme
+- Belirli sorununuz için en son çözümleri web\'de arama
+- İşlem geçmişini anlamak için Git deponuzla etkileşim
 
-## Getting Started with MCP
+### MCP\'ye Başlarken
 
-Most modern AI coding tools now support MCP. Setting up your first MCP server typically involves:
+Çoğu modern yapay zeka kodlama aracı artık MCP\'yi destekliyor. İlk MCP sunucunuzu kurmak genellikle şunları içerir:
 
-### 1. Choose an MCP Server
+### 1. MCP Sunucusunu Seçin
 
-Start with something simple like the filesystem or web search MCP server.
+Basit bir şeyle başlayın, örneğin dosya sistemi veya web arama MCP sunucusu.
 
-### 2. Install the Server
+### 2. Sunucuyu Yükleyin
 
-Most MCP servers are distributed as npm packages or Python modules. Follow the installation instructions for your chosen server.
+Çoğu MCP sunucusu npm paketleri veya Python modülleri olarak dağıtılır. Seçtiğiniz sunucunun yükleme talimatlarını izleyin.
 
-### 3. Configure Your IDE
+### 3. IDE\'nizi Yapılandırın
 
-Add the MCP server configuration to your IDE's settings. The exact format varies by tool, but typically involves specifying the server's command and any required arguments.
+MCP sunucusu yapılandırmasını IDE ayarlarınıza ekleyin. Tam format araca göre değişir, ancak genellikle sunucunun komutunu ve gerekli argümanları belirtmeyi içerir.
 
-Here's an example configuration for Claude Code:
+İşte Claude Code için örnek bir yapılandırma:
 
 ```json
 {
@@ -87,14 +87,14 @@ Here's an example configuration for Claude Code:
 }
 ```
 
-### 4. Test the Integration
+### 4. Entegrasyonu Test Edin
 
-Ask your AI agent to use the newly connected tools. For example, if you installed a filesystem MCP, try asking it to read a specific file from your project.
+Yapay zeka ajanınıza yeni bağlanan araçları kullanmasını isteyin. Örneğin, bir dosya sistemi MCP yüklediyseniz, projenizden belirli bir dosyayı okumasını isteyin.
 
-## The Future of MCP
+## MCP\'nin Geleceği
 
-The MCP ecosystem is still in its early stages, but the potential is enormous. As more developers build MCP servers for specialized tools and services, AI agents will become increasingly powerful and context-aware.
+MCP ekosistemi henüz erken aşamalarında, ancak potansiyel çok büyük. Daha fazla geliştirici kendi işlevsel araçlar ve servisler için MCP sunucuları oluşturdukça, yapay zeka ajanları giderek daha güçlü ve bağlama duyarlı hale gelecektir.
 
-We're moving toward a future where your AI coding assistant has seamless access to every tool in your development workflow—from your IDE to your cloud infrastructure. MCP is the protocol that makes this vision possible.
+Yapay zeka kodlama asistanının geliştirme iş akışınızdaki her araca—IDE\'nizden bulut altyapınıza kadar—sorunsuz erişime sahip olduğu bir geleceğe doğru hareket ediyoruz. MCP bu vizyonu mümkün kılan protokoldür.
 
-Explore the full catalog of available MCP servers in our [MCP Servers directory](/ai-coding-stack/mcp-servers) to find the right integrations for your workflow.
+İş akışınız için doğru entegrasyonları bulmak için kullanılabilir MCP sunucularının tam kataloğunu [MCP Sunucuları dizinimizde](/ai-coding-stack/mcp-servers) keşfedin.
