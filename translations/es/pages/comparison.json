@@ -2,7 +2,7 @@
   "clis": {
     "backTo": "Volver a CLIs",
     "subtitle": "Asistentes de codificación de línea de comandos con IA",
-    "title": "@:shared.stacks.clis"
+    "title": "Comparación de CLI"
   },
   "columns": {
     "cache": "Caché",
@@ -15,14 +15,14 @@
     "license": "@:components.productHero.license",
     "links": "Enlaces",
     "live-code-bench": "Live Code Bench",
-    "maxOutput": "@:shared.common.maxOutput",
+    "maxOutput": "Salida máxima",
     "maxPrice": "Precio máximo",
     "mmmu": "MMMU",
     "mmmu-pro": "MMMU Pro",
-    "modelSize": "@:shared.common.modelSize",
+    "modelSize": "Tamaño del modelo",
     "output": "Salida",
     "platforms": "@:components.productHero.platforms",
-    "pricing": "@:shared.common.pricing",
+    "pricing": "Precios",
     "pricingCache": "Precio de Caché",
     "pricingInput": "Precio de Entrada",
     "pricingOutput": "Precio de Salida",
@@ -38,12 +38,12 @@
   "extensions": {
     "backTo": "Volver a Extensiones",
     "subtitle": "Extensiones y complementos de codificación con IA",
-    "title": "@:shared.stacks.extensions"
+    "title": "Comparación de Extensiones"
   },
   "ides": {
     "backTo": "Volver a IDEs",
     "subtitle": "Entornos de desarrollo integrados mejorados con IA",
-    "title": "@:shared.stacks.ides"
+    "title": "Comparación de IDEs"
   },
   "linkTitles": {
     "documentation": "@:components.productHero.documentation",
@@ -53,7 +53,7 @@
   "models": {
     "backTo": "Volver a Modelos",
     "subtitle": "Modelos de lenguaje grandes optimizados para generación y análisis de código",
-    "title": "@:shared.stacks.models"
+    "title": "Comparación de Modelos"
   },
   "pricingValues": {
     "free": "Gratis",

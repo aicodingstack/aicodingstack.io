@@ -17,11 +17,11 @@
     "visit": "{name} besuchen",
     "watch": "Auf {platform} ansehen"
   },
-  "common": {
+  "terms": {
     "aiCodingStack": "AI Coding Stack",
     "articles": "Artikel",
     "collections": "Sammlungen",
-    "community": "Community",
+    "community": "Gemeinschaft",
     "communityLinks": "Community-Links",
     "comparison": "Vergleich",
     "curatedCollections": "Kuratierte Sammlungen",
@@ -29,7 +29,7 @@
     "documentation": "Dokumentation",
     "ecosystemTools": "Ökosystem-Tools",
     "faq": "FAQ",
-    "featuredArticles": "Ausgewählte Artikel",
+    "featuredArticles": "Herausragende Artikel",
     "followUs": "Folgen Sie uns",
     "indexLabel": "INDEX",
     "license": "Lizenz",
@@ -41,9 +41,9 @@
     "products": "Produkte",
     "proprietary": "Proprietär",
     "resources": "Ressourcen",
-    "slogan": "Entdecken. Vergleichen. 10x schneller entwickeln.",
+    "slogan": "Entdecken. Vergleichen. 10-mal schneller bauen.",
     "specificationsProtocols": "Spezifikationen & Protokolle",
-    "stars": "Sterne",
+    "stars": "Stars",
     "type": "Typ",
     "website": "Website"
   },
@@ -58,26 +58,30 @@
     "twitter": "X (Twitter)",
     "youtube": "YouTube"
   },
-  "stack": {
-    "cli": "CLI",
-    "extension": "Erweiterung",
-    "ide": "IDE",
-    "model": "Modell",
-    "modelProvider": "Modellanbieter",
-    "vendor": "Anbieter"
-  },
-  "stacks": {
-    "allClis": "Alle CLIs",
-    "allExtensions": "Alle Erweiterungen",
-    "allIdes": "Alle IDEs",
-    "allModelProviders": "Alle Modellanbieter",
-    "allModels": "Alle Modelle",
-    "allVendors": "Alle Anbieter",
-    "clis": "CLIs",
-    "extensions": "Erweiterungen",
-    "ides": "IDEs",
-    "modelProviders": "Modellanbieter",
-    "models": "Modelle",
-    "vendors": "Anbieter"
+  "categories": {
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "vendor": "Vendor"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "vendors": "Vendors"
+    },
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    }
   }
 }

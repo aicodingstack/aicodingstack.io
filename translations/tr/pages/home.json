@@ -1,6 +1,6 @@
 {
   "description": "AI kodlama araçlarını keşfedin ve karşılaştırın: IDE'ler, CLI'ler, uzantılar, modeller ve sağlayıcılar — hepsi tek bir yerde.",
-  "exploreTools": "Araçları Keşfet",
+  "exploreTools": "@:shared.actions.explore",
   "faq": "Sıkça Sorulan Sorular",
   "features": {
     "comparison": {

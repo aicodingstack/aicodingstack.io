@@ -12,16 +12,16 @@
     "tools": "Ökosystem-Tools"
   },
   "docsSidebar": {
-    "label": "Dokumentation",
+    "label": "@:shared.terms.documentation",
     "title": "DOKUMENTATION"
   },
   "filterSortBar": {
     "clearFilters": "Filter löschen",
     "license": "Lizenz:",
-    "openSource": "Open Source",
+    "openSource": "@:shared.terms.openSource",
     "platform": "Plattform:",
-    "proprietary": "Proprietär",
-    "search": "Nach Namen suchen...",
+    "proprietary": "@:shared.terms.proprietary",
+    "search": "@:shared.actions.search by name...",
     "sort": "Sortieren:",
     "sortDefault": "Standard",
     "sortNameAsc": "Name (A-Z)",
@@ -31,65 +31,27 @@
     "copyright": "© 2025 AI Coding Stack • Mit ❤︎ erstellt • Open Source",
     "openSource": "Open-Source-KI-Coding-Metadaten-Repository.",
     "selectLanguage": "Sprache auswählen",
-    "tagline": "Ihr KI-Coding-Ökosystem-Hub.",
+    "tagline": "Ihr AI-Coding-Ökosystem-Hub.",
     "toggleTheme": "Thema umschalten"
   },
   "header": {
-    "aiCodingLandscape": "KI-Coding-Landschaft",
-    "aiCodingLandscapeDesc": "Visualisieren Sie das gesamte KI-Coding-Ökosystem",
-    "aiCodingStack": "AI Coding Stack",
-    "articles": "Artikel",
+    "aiCodingLandscape": "AI-Coding-Landschaft",
+    "aiCodingLandscapeDesc": "Visualisieren Sie das gesamte AI-Coding-Ökosystem",
+    "aiCodingStack": "@:shared.terms.aiCodingStack",
+    "articles": "@:shared.terms.articles",
     "closeMenu": "Menü schließen",
-    "collections": "Sammlungen",
+    "collections": "@:shared.terms.collections",
     "developmentTools": "Entwicklungstools",
     "intelligence": "Intelligenz",
     "landscape": "Landschaft",
-    "manifesto": "Manifest",
+    "manifesto": "@:shared.terms.manifesto",
     "openMenu": "Menü öffnen",
     "openSourceRank": "Open Source Ranking",
-    "openSourceRankDesc": "Erkunden Sie Open-Source-KI-Coding-Projekte nach GitHub-Sternen",
+    "openSourceRankDesc": "Erkunden Sie Open-Source-AI-Coding-Projekte nach GitHub-Sternen",
     "ranking": "Ranking",
-    "search": "Suchen",
+    "search": "@:shared.actions.search",
     "searchPlaceholder": "Suchen...",
     "toggleMenu": "Menü umschalten"
-  },
-  "openSourceRank": {
-    "description": "Entdecken und erkunden Sie Open-Source-KI-Coding-Tools, sortiert nach GitHub Stars. Vergleichen Sie IDEs, CLIs und Erweiterungen, um die perfekten Tools für Ihren Entwicklungs-Workflow zu finden.",
-    "filter": {
-      "all": "Alle"
-    },
-    "meta": {
-      "description": "Ranking aller Open-Source-Projekte in AI Coding Stack, sortiert nach GitHub Stars. Statistiken und Trends von Open-Source- vs. proprietären Tools anzeigen.",
-      "title": "Open-Source-Projekte-Ranking"
-    },
-    "noResults": "Keine Open-Source-Projekte für diese Kategorie gefunden.",
-    "note": "Hinweis: Diese Seite zeigt nur Projekte mit GitHub-Repositories. Einige Projekte, obwohl nicht Open Source, unterhalten GitHub-Repositories als Feedback-Kanäle für Benutzer.",
-    "productType": {
-      "cli": "CLI",
-      "extension": "Erweiterung",
-      "ide": "IDE"
-    },
-    "statistics": {
-      "closedSource": "Proprietär",
-      "closedSourceCount": "Proprietäre Projekte",
-      "closedSourcePercentage": "Proprietärer Prozentsatz",
-      "licenseBreakdown": "Lizenzverteilung",
-      "openSource": "Open Source",
-      "openSourceCount": "Open-Source-Projekte",
-      "projects": "Projekte",
-      "title": "Open-Source vs. Proprietär Verteilung",
-      "totalProjects": "Gesamtprojekte"
-    },
-    "table": {
-      "license": "Lizenz",
-      "name": "Name",
-      "openSourceTitle": "Open-Source-Projekte ({count})",
-      "proprietaryTitle": "Proprietäre Projekte ({count})",
-      "rank": "Rang",
-      "stars": "Stars",
-      "type": "Typ"
-    },
-    "title": "Open-Source-Projekte-Ranking"
   },
   "productCommands": {
     "command": "Befehl",
@@ -111,11 +73,11 @@
       },
       "artificialAnalysis": {
         "title": "Artificial Analysis",
-        "description": "KI-Modell-Leaderboard und Benchmarks"
+        "description": "AI-Modell-Leaderboard und Benchmarks"
       },
       "openrouter": {
         "title": "OpenRouter",
-        "description": "Mehrere KI-Modelle vergleichen und nutzen"
+        "description": "Mehrere AI-Modelle vergleichen und nutzen"
       }
     }
   },
@@ -128,26 +90,26 @@
   },
   "productHero": {
     "categories": {
-      "CLI": "CLI",
-      "EXTENSION": "Erweiterung",
-      "IDE": "IDE",
-      "MODEL": "Modell",
-      "PROVIDER": "Modellanbieter",
-      "VENDOR": "Anbieter"
+      "CLI": "@:shared.categories.singular.cli",
+      "EXTENSION": "@:shared.categories.singular.extension",
+      "IDE": "@:shared.categories.singular.ide",
+      "MODEL": "@:shared.categories.singular.model",
+      "PROVIDER": "@:shared.categories.singular.modelProvider",
+      "VENDOR": "@:shared.categories.singular.vendor"
     },
-    "documentation": "Dokumentation",
-    "download": "Download",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
     "getApiKey": "API-Schlüssel Abrufen",
-    "license": "Lizenz",
+    "license": "@:shared.terms.license",
     "platforms": "Plattformen",
     "providerTypes": {
       "foundation-model-provider": "Foundation-Modellanbieter",
       "model-service-provider": "Modell-Service-Anbieter"
     },
     "runtime": "Laufzeit",
-    "stars": "Stars",
+    "stars": "@:shared.terms.stars",
     "supportedIdes": "Unterstützte IDEs",
-    "type": "Typ",
+    "type": "@:shared.terms.type",
     "vendor": "Anbieter",
     "version": "Version",
     "visitWebsite": "Website Besuchen"
@@ -155,17 +117,17 @@
   "communityLinks": {
     "blog": "Blog",
     "blogDescription": "Blogbeiträge lesen",
-    "community": "@:shared.common.community",
+    "community": "@:shared.terms.community",
     "discord": "@:shared.platforms.discord",
     "discordDescription": "Community beitreten",
     "github": "@:shared.platforms.github",
     "githubDescription": "Repositories ansehen",
     "linkedin": "@:shared.platforms.linkedin",
-    "linkedinDescription": "@:shared.common.followUs",
+    "linkedinDescription": "@:shared.terms.followUs",
     "reddit": "@:shared.platforms.reddit",
     "redditDescription": "Diskussion teilnehmen",
     "twitter": "@:shared.platforms.twitter",
-    "twitterDescription": "@:shared.common.followUs",
+    "twitterDescription": "@:shared.terms.followUs",
     "youtube": "@:shared.platforms.youtube",
     "youtubeDescription": "Videos ansehen"
   },
@@ -178,81 +140,54 @@
     "issueDescription": "Fehler melden und Funktionen anfordern",
     "mcp": "MCP-Dokumentation",
     "mcpDescription": "Erfahren Sie mehr über MCP-Integration",
-    "pricing": "@:shared.common.pricing",
+    "pricing": "@:shared.terms.pricing",
     "pricingDescription": "Preispläne anzeigen"
   },
   "resources": {
-    "community": "@:shared.common.community",
-    "resources": "@:shared.common.resources"
+    "community": "@:shared.terms.community",
+    "resources": "@:shared.terms.resources"
   },
   "productPricing": {
-    "title": "Preise",
+    "title": "@:shared.terms.pricing",
     "viewFullDetails": "Vollständige Preisdetails anzeigen →"
   },
   "modelSpecifications": {
-    "title": "@:pages.modelDetail.specifications",
-    "modelSize": "@:pages.modelDetail.modelSize",
-    "contextWindow": "@:pages.modelDetail.contextWindow",
-    "maxOutput": "@:pages.modelDetail.maxOutput",
-    "pricing": "@:pages.modelDetail.pricing",
-    "input": "@:pages.modelDetail.input",
-    "output": "@:pages.modelDetail.output",
-    "cache": "@:pages.modelDetail.cache"
+    "title": "Specifications",
+    "modelSize": "@:shared.terms.modelSize",
+    "contextWindow": "Total Context",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "pricing": "@:shared.terms.pricing",
+    "input": "Input",
+    "output": "Output",
+    "cache": "Cache"
   },
-  "modelBenchmarks": {
-    "title": "@:pages.modelDetail.benchmarks.title",
-    "sweBench": "@:pages.modelDetail.benchmarks.sweBench",
-    "sweBenchDesc": "@:pages.modelDetail.benchmarks.sweBenchDesc",
-    "terminalBench": "@:pages.modelDetail.benchmarks.terminalBench",
-    "terminalBenchDesc": "@:pages.modelDetail.benchmarks.terminalBenchDesc",
-    "mmmu": "@:pages.modelDetail.benchmarks.mmmu",
-    "mmmuDesc": "@:pages.modelDetail.benchmarks.mmmuDesc",
-    "mmmuPro": "@:pages.modelDetail.benchmarks.mmmuPro",
-    "mmmuProDesc": "@:pages.modelDetail.benchmarks.mmmuProDesc",
-    "webDevArena": "@:pages.modelDetail.benchmarks.webDevArena",
-    "webDevArenaDesc": "@:pages.modelDetail.benchmarks.webDevArenaDesc",
-    "sciCode": "@:pages.modelDetail.benchmarks.sciCode",
-    "sciCodeDesc": "@:pages.modelDetail.benchmarks.sciCodeDesc",
-    "liveCodeBench": "@:pages.modelDetail.benchmarks.liveCodeBench",
-    "liveCodeBenchDesc": "@:pages.modelDetail.benchmarks.liveCodeBenchDesc"
+  "benchmarks": {
+    "title": "Leistungsbenchmarks",
+    "sweBench": "SWE-bench Verified",
+    "sweBenchDesc": "Echtwelt-Softwareentwicklungsaufgaben",
+    "terminalBench": "TerminalBench 2.0",
+    "terminalBenchDesc": "Befehlszeilenschnittstellen-Kompetenz",
+    "mmmu": "MMMU",
+    "mmmuDesc": "Multimodales Verstehen",
+    "mmmuPro": "MMMU Pro",
+    "mmmuProDesc": "Erweiterte multimodale Aufgaben",
+    "webDevArena": "WebDevArena",
+    "webDevArenaDesc": "Web-Entwicklungsherausforderungen",
+    "sciCode": "SciCode",
+    "sciCodeDesc": "Wissenschaftliche Code-Generierung",
+    "liveCodeBench": "LiveCodeBench",
+    "liveCodeBenchDesc": "Live-Coding-Leistung"
   },
   "relatedProducts": {
-    "cli": "CLI",
-    "extension": "Erweiterung",
-    "ide": "IDE",
+    "cli": "@:shared.categories.singular.cli",
+    "extension": "@:shared.categories.singular.extension",
+    "ide": "@:shared.categories.singular.ide",
     "title": "Verwandte Produkte",
     "viewProduct": "Produkt ansehen"
   },
-  "search": {
-    "categories": {
-      "clis": "CLIs",
-      "extensions": "Erweiterungen",
-      "ides": "IDEs",
-      "models": "Modelle",
-      "providers": "Modellanbieter",
-      "vendors": "Anbieter"
-    },
-    "navigate": "zum Navigieren",
-    "noResults": "Keine Ergebnisse gefunden",
-    "noResultsFor": "Keine Ergebnisse für \"{query}\" gefunden",
-    "placeholder": "KI-Coding-Tools durchsuchen...",
-    "resultsCount": "{count} {count, plural, one {Ergebnis} other {Ergebnisse}}",
-    "resultsCountFor": "{count} {count, plural, one {Ergebnis} other {Ergebnisse}} für \"{query}\"",
-    "searching": "Suchen...",
-    "select": "zum Auswählen",
-    "stacks": {
-      "clis": "@:shared.stacks.clis",
-      "extensions": "@:shared.stacks.extensions",
-      "ides": "@:shared.stacks.ides",
-      "modelProviders": "@:shared.stacks.modelProviders",
-      "models": "@:shared.stacks.models",
-      "vendors": "@:shared.stacks.vendors"
-    },
-    "title": "Suchergebnisse"
-  },
   "sidebar": {
-    "backToTop": "Zurück nach oben",
-    "selectItem": "Wählen Sie ein Element aus"
+    "backToTop": "@:shared.actions.backToTop",
+    "selectItem": "@:shared.actions.selectItem"
   },
   "vendorMatrix": {
     "cell": {

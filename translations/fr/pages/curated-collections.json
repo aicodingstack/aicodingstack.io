@@ -1,16 +1,16 @@
 {
   "articles": {
     "description": "Articles essentiels sur le codage IA par des leaders de l'industrie",
-    "title": "@:shared.common.featuredArticles"
+    "title": "Articles en vedette"
   },
   "specifications": {
     "description": "Normes et protocoles essentiels pour le développement logiciel moderne",
-    "title": "@:shared.common.specificationsProtocols"
+    "title": "Spécifications et protocoles"
   },
   "subtitle": "Notre vision pour l'avenir du développement logiciel alimenté par l'IA",
-  "title": "@:shared.common.manifesto",
+  "title": "Collections curées",
   "tools": {
     "description": "Outils et utilitaires sélectionnés pour les workflows de codage IA",
-    "title": "@:shared.common.ecosystemTools"
+    "title": "Outils de l'écosystème"
   }
 }

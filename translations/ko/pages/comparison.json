@@ -2,17 +2,17 @@
   "clis": {
     "backTo": "CLI로 돌아가기",
     "subtitle": "AI 기반 명령줄 코딩 어시스턴트",
-    "title": "@:shared.stacks.clis"
+    "title": "CLI Comparison"
   },
   "columns": {
     "cache": "캐시",
     "capabilities": "기능",
     "contextLength": "컨텍스트 길이",
     "freePlan": "무료 플랜",
-    "githubStars": "스타",
+    "githubStars": "@:components.productHero.stars",
     "input": "입력",
     "inputModalities": "입력 모달리티",
-    "license": "라이선스",
+    "license": "@:components.productHero.license",
     "links": "링크",
     "live-code-bench": "Live Code Bench",
     "maxOutput": "최대 출력",
@@ -21,7 +21,7 @@
     "mmmu-pro": "MMMU Pro",
     "modelSize": "모델 크기",
     "output": "출력",
-    "platforms": "플랫폼",
+    "platforms": "@:components.productHero.platforms",
     "pricing": "가격",
     "pricingCache": "캐시 가격",
     "pricingInput": "입력 가격",
@@ -31,8 +31,8 @@
     "supportedIdes": "@:components.productHero.supportedIdes",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "vendor": "벤더",
-    "version": "버전",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version",
     "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
@@ -43,12 +43,12 @@
   "ides": {
     "backTo": "IDE로 돌아가기",
     "subtitle": "AI 강화 통합 개발 환경",
-    "title": "@:shared.stacks.ides"
+    "title": "IDE Comparison"
   },
   "linkTitles": {
-    "documentation": "문서",
-    "download": "다운로드",
-    "officialWebsite": "공식 웹사이트"
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "officialWebsite": "@:components.productHero.visitWebsite"
   },
   "models": {
     "backTo": "모델로 돌아가기",

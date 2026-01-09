@@ -17,35 +17,35 @@
     "visit": "Visitar {name}",
     "watch": "Assistir em {platform}"
   },
-  "common": {
+  "terms": {
     "aiCodingStack": "AI Coding Stack",
     "articles": "Artigos",
     "collections": "Coleções",
     "community": "Comunidade",
-    "communityLinks": "Links da Comunidade",
+    "communityLinks": "Links da comunidade",
     "comparison": "Comparação",
-    "curatedCollections": "Coleções Curadas",
-    "docs": "Docs",
+    "curatedCollections": "Coleções curadas",
+    "docs": "Documentação",
     "documentation": "Documentação",
-    "ecosystemTools": "Ferramentas do Ecossistema",
+    "ecosystemTools": "Ferramentas do ecossistema",
     "faq": "FAQ",
-    "featuredArticles": "Artigos em Destaque",
+    "featuredArticles": "Artigos em destaque",
     "followUs": "Siga-nos",
-    "indexLabel": "ÍNDICE",
+    "indexLabel": "INDEX",
     "license": "Licença",
     "manifesto": "Manifesto",
-    "maxOutput": "Saída Máxima",
-    "modelSize": "Tamanho do Modelo",
+    "maxOutput": "Saída máxima",
+    "modelSize": "Tamanho do modelo",
     "openSource": "Código Aberto",
     "pricing": "Preços",
     "products": "Produtos",
     "proprietary": "Proprietário",
     "resources": "Recursos",
-    "slogan": "Descubra. Compare. Construa 10x Mais Rápido.",
-    "specificationsProtocols": "Especificações e Protocolos",
+    "slogan": "Descobrir. Comparar. Construir 10x mais rápido.",
+    "specificationsProtocols": "Especificações e protocolos",
     "stars": "Estrelas",
     "type": "Tipo",
-    "website": "Website"
+    "website": "Site"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -58,26 +58,30 @@
     "twitter": "X (Twitter)",
     "youtube": "YouTube"
   },
-  "stack": {
-    "cli": "CLI",
-    "extension": "Extensão",
-    "ide": "IDE",
-    "model": "Modelo",
-    "modelProvider": "Provedor de Modelo",
-    "vendor": "Fornecedor"
-  },
-  "stacks": {
-    "allClis": "Todos os CLIs",
-    "allExtensions": "Todas as Extensões",
-    "allIdes": "Todos os IDEs",
-    "allModelProviders": "Todos os Provedores de Modelo",
-    "allModels": "Todos os Modelos",
-    "allVendors": "Todos os Fornecedores",
-    "clis": "CLIs",
-    "extensions": "Extensões",
-    "ides": "IDEs",
-    "modelProviders": "Provedores de Modelo",
-    "models": "Modelos",
-    "vendors": "Fornecedores"
+  "categories": {
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "vendor": "Vendor"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "vendors": "Vendors"
+    },
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    }
   }
 }

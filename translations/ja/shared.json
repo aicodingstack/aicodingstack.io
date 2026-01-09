@@ -1,6 +1,6 @@
 {
   "actions": {
-    "backTo": "戻る",
+    "backTo": "に戻る",
     "backToTop": "トップに戻る",
     "compare": "比較",
     "compareAll": "すべて比較",
@@ -13,27 +13,27 @@
     "search": "検索",
     "selectItem": "アイテムを選択",
     "view": "{name}を表示",
-    "viewFullDetails": "価格詳細を表示 →",
+    "viewFullDetails": "完全な料金詳細を表示 →",
     "visit": "{name}を訪問",
     "watch": "{platform}で視聴"
   },
-  "common": {
+  "terms": {
     "aiCodingStack": "AI Coding Stack",
     "articles": "記事",
     "collections": "コレクション",
     "community": "コミュニティ",
     "communityLinks": "コミュニティリンク",
     "comparison": "比較",
-    "curatedCollections": "厳選されたコレクション",
+    "curatedCollections": "キュレートされたコレクション",
     "docs": "ドキュメント",
     "documentation": "ドキュメント",
     "ecosystemTools": "エコシステムツール",
     "faq": "FAQ",
     "featuredArticles": "注目記事",
     "followUs": "フォローする",
-    "indexLabel": "インデックス",
+    "indexLabel": "INDEX",
     "license": "ライセンス",
-    "manifesto": "マニフェスト",
+    "manifesto": "Manifesto",
     "maxOutput": "最大出力",
     "modelSize": "モデルサイズ",
     "openSource": "オープンソース",
@@ -41,11 +41,11 @@
     "products": "製品",
     "proprietary": "プロプライエタリ",
     "resources": "リソース",
-    "slogan": "発見。比較。10 倍速く構築。",
+    "slogan": "発見。比較。10倍速く構築。",
     "specificationsProtocols": "仕様とプロトコル",
     "stars": "スター",
     "type": "タイプ",
-    "website": "Web サイト"
+    "website": "Webサイト"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -58,26 +58,30 @@
     "twitter": "X (Twitter)",
     "youtube": "YouTube"
   },
-  "stack": {
-    "cli": "CLI",
-    "extension": "拡張機能",
-    "ide": "IDE",
-    "model": "モデル",
-    "modelProvider": "モデルプロバイダー",
-    "vendor": "ベンダー"
-  },
-  "stacks": {
-    "allClis": "すべての CLI",
-    "allExtensions": "すべての拡張機能",
-    "allIdes": "すべての IDE",
-    "allModelProviders": "すべてのモデルプロバイダー",
-    "allModels": "すべてのモデル",
-    "allVendors": "すべてのベンダー",
-    "clis": "CLI",
-    "extensions": "拡張機能",
-    "ides": "IDE",
-    "modelProviders": "モデルプロバイダー",
-    "models": "モデル",
-    "vendors": "ベンダー"
+  "categories": {
+    "singular": {
+      "cli": "CLI",
+      "extension": "拡張機能",
+      "ide": "IDE",
+      "model": "モデル",
+      "modelProvider": "モデルプロバイダー",
+      "vendor": "ベンダー"
+    },
+    "plural": {
+      "clis": "CLI",
+      "extensions": "拡張機能",
+      "ides": "IDE",
+      "modelProviders": "モデルプロバイダー",
+      "models": "モデル",
+      "vendors": "ベンダー"
+    },
+    "all": {
+      "clis": "すべてのCLI",
+      "extensions": "すべての拡張機能",
+      "ides": "すべてのIDE",
+      "modelProviders": "すべてのモデルプロバイダー",
+      "models": "すべてのモデル",
+      "vendors": "すべてのベンダー"
+    }
   }
 }

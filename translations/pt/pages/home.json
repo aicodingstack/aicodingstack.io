@@ -23,10 +23,10 @@
   },
   "meta": {
     "description": "Diretório completo para ferramentas de codificação IA. Descubra, compare e explore IDEs, CLIs, extensões, modelos e provedores.",
-    "name": "@:shared.common.aiCodingStack",
+    "name": "AI Coding Stack",
     "title": "AI Coding Stack - Seu Centro de Ecossistema de Codificação IA"
   },
   "readDocs": "Ler Documentação",
   "subtitle": "Nossa visão para o futuro do desenvolvimento de software com IA",
-  "title": "@:shared.common.manifesto"
+  "title": "Seu Hub de Ecossistema de Codificação com IA"
 }

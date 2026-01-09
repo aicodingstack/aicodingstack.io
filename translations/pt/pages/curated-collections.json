@@ -1,16 +1,16 @@
 {
   "articles": {
     "description": "Artigos de leitura obrigatória sobre codificação IA de líderes da indústria",
-    "title": "@:shared.common.featuredArticles"
+    "title": "Featured Articles"
   },
   "specifications": {
     "description": "Padrões e protocolos essenciais para desenvolvimento de software moderno",
-    "title": "@:shared.common.specificationsProtocols"
+    "title": "Specifications u0026 Protocols"
   },
   "subtitle": "Nossa visão para o futuro do desenvolvimento de software com IA",
-  "title": "@:shared.common.manifesto",
+  "title": "Curated Collections",
   "tools": {
     "description": "Ferramentas e utilitários curados para fluxos de trabalho de codificação IA",
-    "title": "@:shared.common.ecosystemTools"
+    "title": "Ecosystem Tools"
   }
 }

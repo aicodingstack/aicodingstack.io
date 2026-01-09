@@ -17,7 +17,7 @@
     "visit": "Visit {name}",
     "watch": "Watch on {platform}"
   },
-  "common": {
+  "terms": {
     "aiCodingStack": "AI Coding Stack",
     "articles": "Articles",
     "collections": "Collections",
@@ -58,26 +58,30 @@
     "twitter": "X (Twitter)",
     "youtube": "YouTube"
   },
-  "stack": {
-    "cli": "CLI",
-    "extension": "Extension",
-    "ide": "IDE",
-    "model": "Model",
-    "modelProvider": "Model Provider",
-    "vendor": "Vendor"
-  },
-  "stacks": {
-    "allClis": "All CLIs",
-    "allExtensions": "All Extensions",
-    "allIdes": "All IDEs",
-    "allModelProviders": "All Model Providers",
-    "allModels": "All Models",
-    "allVendors": "All Vendors",
-    "clis": "CLIs",
-    "extensions": "Extensions",
-    "ides": "IDEs",
-    "modelProviders": "Model Providers",
-    "models": "Models",
-    "vendors": "Vendors"
+  "categories": {
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "vendor": "Vendor"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "vendors": "Vendors"
+    },
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    }
   }
 }

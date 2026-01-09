@@ -9,10 +9,10 @@
     "capabilities": "功能",
     "contextLength": "內容長度",
     "freePlan": "免費方案",
-    "githubStars": "Stars",
+    "githubStars": "@:components.productHero.stars",
     "input": "輸入",
     "inputModalities": "輸入模態",
-    "license": "授權",
+    "license": "@:components.productHero.license",
     "links": "連結",
     "live-code-bench": "Live Code Bench",
     "maxOutput": "最大輸出",
@@ -21,18 +21,18 @@
     "mmmu-pro": "MMMU Pro",
     "modelSize": "模型大小",
     "output": "輸出",
-    "platforms": "平台",
+    "platforms": "@:components.productHero.platforms",
     "pricing": "價格",
     "pricingCache": "快取價格",
     "pricingInput": "輸入價格",
     "pricingOutput": "輸出價格",
     "sci-code": "SciCode",
     "startingPrice": "起價",
-    "supportedIdes": "支援的 IDE",
+    "supportedIdes": "@:components.productHero.supportedIdes",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "vendor": "供應商",
-    "version": "版本",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version",
     "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
@@ -46,9 +46,9 @@
     "title": "IDE 比較"
   },
   "linkTitles": {
-    "documentation": "文件",
-    "download": "下載",
-    "officialWebsite": "官方網站"
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "officialWebsite": "@:components.productHero.visitWebsite"
   },
   "models": {
     "backTo": "返回模型",

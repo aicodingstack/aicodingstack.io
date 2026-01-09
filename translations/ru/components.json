@@ -12,16 +12,16 @@
     "tools": "Инструменты экосистемы"
   },
   "docsSidebar": {
-    "label": "Документация",
+    "label": "@:shared.terms.documentation",
     "title": "ДОКУМЕНТАЦИЯ"
   },
   "filterSortBar": {
     "clearFilters": "Очистить фильтры",
     "license": "Лицензия:",
-    "openSource": "Открытый исходный код",
+    "openSource": "@:shared.terms.openSource",
     "platform": "Платформа:",
-    "proprietary": "Проприетарная",
-    "search": "Поиск по имени...",
+    "proprietary": "@:shared.terms.proprietary",
+    "search": "@:shared.actions.search by name...",
     "sort": "Сортировка:",
     "sortDefault": "По умолчанию",
     "sortNameAsc": "Имя (А-Я)",
@@ -37,59 +37,21 @@
   "header": {
     "aiCodingLandscape": "Ландшафт AI-программирования",
     "aiCodingLandscapeDesc": "Визуализируйте полную экосистему AI-программирования",
-    "aiCodingStack": "AI Coding Stack",
-    "articles": "Статьи",
+    "aiCodingStack": "@:shared.terms.aiCodingStack",
+    "articles": "@:shared.terms.articles",
     "closeMenu": "Закрыть меню",
-    "collections": "Коллекции",
+    "collections": "@:shared.terms.collections",
     "developmentTools": "Инструменты разработки",
     "intelligence": "Интеллект",
     "landscape": "Ландшафт",
-    "manifesto": "Манифест",
+    "manifesto": "@:shared.terms.manifesto",
     "openMenu": "Открыть меню",
     "openSourceRank": "Рейтинг с открытым исходным кодом",
     "openSourceRankDesc": "Исследуйте проекты AI-программирования с открытым исходным кодом по звёздам GitHub",
     "ranking": "Рейтинг",
-    "search": "Поиск",
+    "search": "@:shared.actions.search",
     "searchPlaceholder": "Поиск...",
     "toggleMenu": "Переключить меню"
-  },
-  "openSourceRank": {
-    "description": "Откройте и исследуйте инструменты AI-программирования с открытым исходным кодом, отсортированные по звёздам GitHub. Сравниваете IDE, CLIs и расширения, чтобы найти идеальные инструменты для вашего рабочего процесса разработки.",
-    "filter": {
-      "all": "Все"
-    },
-    "meta": {
-      "description": "Рейтинг всех проектов с открытым исходным кодом в AI Coding Stack, отсортированных по звёздам GitHub. Просмотрите статистику и тенденции инструментов с открытым исходным кодом vs проприетарных.",
-      "title": "Рейтинг проектов с открытым исходным кодом"
-    },
-    "noResults": "Проектов с открытым исходным кодом для этой категории не найдено.",
-    "note": "Примечание: Эта страница показывает только проекты с репозиториями GitHub. Некоторые проекты, хотя и не с открытым исходным кодом, поддерживают репозитории GitHub как каналы обратной связи пользователей.",
-    "productType": {
-      "cli": "CLI",
-      "extension": "Расширение",
-      "ide": "IDE"
-    },
-    "statistics": {
-      "closedSource": "Проприетарная",
-      "closedSourceCount": "Проприетарные проекты",
-      "closedSourcePercentage": "Проприетарный процент",
-      "licenseBreakdown": "Распределение лицензий",
-      "openSource": "Открытый исходный код",
-      "openSourceCount": "Проекты с открытым исходным кодом",
-      "projects": "проектов",
-      "title": "Распределение открытого исходного кода vs проприетарного",
-      "totalProjects": "Всего проектов"
-    },
-    "table": {
-      "license": "Лицензия",
-      "name": "Имя",
-      "openSourceTitle": "Проекты с открытым исходным кодом ({count})",
-      "proprietaryTitle": "Проприетарные проекты ({count})",
-      "rank": "Ранг",
-      "stars": "Звёзды",
-      "type": "Тип"
-    },
-    "title": "Рейтинг проектов с открытым исходным кодом"
   },
   "productCommands": {
     "command": "Команда",
@@ -128,26 +90,26 @@
   },
   "productHero": {
     "categories": {
-      "CLI": "CLI",
-      "EXTENSION": "Расширение",
-      "IDE": "IDE",
-      "MODEL": "Модель",
-      "PROVIDER": "Поставщик моделей",
-      "VENDOR": "Поставщик"
+      "CLI": "@:shared.categories.singular.cli",
+      "EXTENSION": "@:shared.categories.singular.extension",
+      "IDE": "@:shared.categories.singular.ide",
+      "MODEL": "@:shared.categories.singular.model",
+      "PROVIDER": "@:shared.categories.singular.modelProvider",
+      "VENDOR": "@:shared.categories.singular.vendor"
     },
-    "documentation": "Документация",
-    "download": "Скачать",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
     "getApiKey": "Получить API ключ",
-    "license": "Лицензия",
+    "license": "@:shared.terms.license",
     "platforms": "Платформы",
     "providerTypes": {
       "foundation-model-provider": "Поставщик базовой модели",
       "model-service-provider": "Поставщик сервисов моделей"
     },
     "runtime": "Среда выполнения",
-    "stars": "Звёзды",
+    "stars": "@:shared.terms.stars",
     "supportedIdes": "Поддерживаемые IDE",
-    "type": "Тип",
+    "type": "@:shared.terms.type",
     "vendor": "Поставщик",
     "version": "Версия",
     "visitWebsite": "Веб-сайт"
@@ -155,104 +117,77 @@
   "communityLinks": {
     "blog": "Блог",
     "blogDescription": "Читать статьи блога",
-    "community": "Сообщество",
+    "community": "@:shared.terms.community",
     "discord": "@:shared.platforms.discord",
     "discordDescription": "Присоединиться к сообществу",
     "github": "@:shared.platforms.github",
     "githubDescription": "Просмотреть репозитории",
     "linkedin": "@:shared.platforms.linkedin",
-    "linkedinDescription": "@:shared.common.followUs",
+    "linkedinDescription": "@:shared.terms.followUs",
     "reddit": "@:shared.platforms.reddit",
     "redditDescription": "Присоединиться к обсуждению",
     "twitter": "@:shared.platforms.twitter",
-    "twitterDescription": "@:shared.common.followUs",
+    "twitterDescription": "@:shared.terms.followUs",
     "youtube": "@:shared.platforms.youtube",
     "youtubeDescription": "Смотреть видео"
   },
   "resourceLinks": {
     "changelog": "История изменений",
     "changelogDescription": "Просмотреть историю изменений",
-    "download": "Скачать",
+    "download": "@:shared.actions.download",
     "downloadDescription": "Загрузить последнюю версию",
     "issue": "Трекер проблем",
     "issueDescription": "Сообщить об ошибках и запросить функции",
     "mcp": "Документация MCP",
     "mcpDescription": "Узнать об интеграции MCP",
-    "pricing": "Цены",
+    "pricing": "@:shared.terms.pricing",
     "pricingDescription": "Просмотреть тарифные планы"
   },
   "resources": {
-    "community": "Сообщество",
-    "resources": "Ресурсы"
+    "community": "@:shared.terms.community",
+    "resources": "@:shared.terms.resources"
   },
   "productPricing": {
-    "title": "Ценообразование",
+    "title": "@:shared.terms.pricing",
     "viewFullDetails": "Просмотреть полную информацию о ценах"
   },
   "modelSpecifications": {
-    "title": "Характеристики модели",
-    "modelSize": "Размер модели",
-    "contextWindow": "Контекстное окно",
-    "maxOutput": "Максимальный вывод",
-    "pricing": "Цены",
-    "input": "Ввод",
-    "output": "Вывод",
-    "cache": "Кэш"
+    "title": "Specifications",
+    "modelSize": "@:shared.terms.modelSize",
+    "contextWindow": "Total Context",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "pricing": "@:shared.terms.pricing",
+    "input": "Input",
+    "output": "Output",
+    "cache": "Cache"
   },
-  "modelBenchmarks": {
-    "title": "Бенчмарки",
-    "sweBench": "SWE-bench",
-    "sweBenchDesc": "Оценка при решении реальных проблем разработки",
-    "terminalBench": "TerminalBench",
-    "terminalBenchDesc": "Производительность в задачах терминала",
+  "benchmarks": {
+    "title": "Performance Benchmarks",
+    "sweBench": "SWE-bench Verified",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBench": "TerminalBench 2.0",
+    "terminalBenchDesc": "Command-line interface proficiency",
     "mmmu": "MMMU",
-    "mmmuDesc": "Оценка в академических знаниях",
+    "mmmuDesc": "Multimodal understanding",
     "mmmuPro": "MMMU Pro",
-    "mmmuProDesc": "Расширенная оценка академических знаний",
+    "mmmuProDesc": "Advanced multimodal tasks",
     "webDevArena": "WebDevArena",
-    "webDevArenaDesc": "Разработка веб-приложений",
+    "webDevArenaDesc": "Web development challenges",
     "sciCode": "SciCode",
-    "sciCodeDesc": "Научные вычисления",
+    "sciCodeDesc": "Scientific code generation",
     "liveCodeBench": "LiveCodeBench",
-    "liveCodeBenchDesc": "Код в реальном времени"
+    "liveCodeBenchDesc": "Live coding performance"
   },
   "relatedProducts": {
-    "cli": "CLI",
-    "extension": "Расширение",
-    "ide": "IDE",
+    "cli": "@:shared.categories.singular.cli",
+    "extension": "@:shared.categories.singular.extension",
+    "ide": "@:shared.categories.singular.ide",
     "title": "Связанные продукты",
     "viewProduct": "Просмотреть продукт"
   },
-  "search": {
-    "categories": {
-      "clis": "CLI",
-      "extensions": "Расширения",
-      "ides": "IDE",
-      "models": "Модели",
-      "providers": "Поставщики моделей",
-      "vendors": "Поставщики"
-    },
-    "navigate": "для навигации",
-    "noResults": "Результаты не найдены",
-    "noResultsFor": "Результаты для \"{query}\" не найдены",
-    "placeholder": "Поиск AI-инструментов программирования...",
-    "resultsCount": "{count, plural, one {#.# результат} few {#.# результата} many {#.# результатов}}",
-    "resultsCountFor": "{count, plural, one {#.# результат} few {#.# результата} many {#.# результатов}} для \"{query}\"",
-    "searching": "Поиск...",
-    "select": "для выбора",
-    "stacks": {
-      "clis": "CLI",
-      "extensions": "Расширения",
-      "ides": "IDE",
-      "modelProviders": "Поставщики моделей",
-      "models": "Модели",
-      "vendors": "Поставщики"
-    },
-    "title": "Результаты поиска"
-  },
   "sidebar": {
-    "backToTop": "В начало",
-    "selectItem": "Выбрать элемент"
+    "backToTop": "@:shared.actions.backToTop",
+    "selectItem": "@:shared.actions.selectItem"
   },
   "vendorMatrix": {
     "cell": {

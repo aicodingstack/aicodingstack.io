@@ -23,7 +23,7 @@
   },
   "meta": {
     "description": "Comprehensive directory for AI coding tools. Discover, compare and explore IDEs, CLIs, extensions, models and providers.",
-    "name": "@:shared.common.aiCodingStack",
+    "name": "AI Coding Stack",
     "title": "AI Coding Stack - Your AI Coding Ecosystem Hub"
   },
   "readDocs": "Read Documentation",

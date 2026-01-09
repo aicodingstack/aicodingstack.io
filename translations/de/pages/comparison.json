@@ -1,7 +1,7 @@
 {
   "clis": {
     "backTo": "Zurück zu CLIs",
-    "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von KI-Coding-CLI-Tools nebeneinander.",
+    "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von AI-Coding-CLI-Tools nebeneinander.",
     "title": "CLI-Vergleich"
   },
   "columns": {
@@ -9,10 +9,10 @@
     "capabilities": "Funktionen",
     "contextLength": "Kontextlänge",
     "freePlan": "Kostenloser Plan",
-    "githubStars": "Stars",
+    "githubStars": "@:components.productHero.stars",
     "input": "Eingabe",
     "inputModalities": "Eingabemodalitäten",
-    "license": "Lizenz",
+    "license": "@:components.productHero.license",
     "links": "Links",
     "live-code-bench": "Live Code Bench",
     "maxOutput": "Max. Ausgabe",
@@ -21,38 +21,38 @@
     "mmmu-pro": "MMMU Pro",
     "modelSize": "Modellgröße",
     "output": "Ausgabe",
-    "platforms": "Plattformen",
+    "platforms": "@:components.productHero.platforms",
     "pricing": "Preise",
     "pricingCache": "Cache-Preise",
     "pricingInput": "Eingabe-Preise",
     "pricingOutput": "Ausgabe-Preise",
     "sci-code": "SciCode",
     "startingPrice": "Startpreis",
-    "supportedIdes": "Unterstützte IDEs",
+    "supportedIdes": "@:components.productHero.supportedIdes",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "vendor": "Anbieter",
-    "version": "Version",
+    "vendor": "@:components.productHero.vendor",
+    "version": "@:components.productHero.version",
     "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "Zurück zu Erweiterungen",
-    "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von KI-Coding-Erweiterungen nebeneinander.",
+    "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von AI-Coding-Erweiterungen nebeneinander.",
     "title": "Erweiterungs-Vergleich"
   },
   "ides": {
     "backTo": "Zurück zu IDEs",
-    "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von KI-gestützten IDEs nebeneinander.",
+    "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von AI-gestützten IDEs nebeneinander.",
     "title": "IDE-Vergleich"
   },
   "linkTitles": {
-    "documentation": "Dokumentation",
-    "download": "Download",
-    "officialWebsite": "Offizielle Website"
+    "documentation": "@:components.productHero.documentation",
+    "download": "@:components.productHero.download",
+    "officialWebsite": "@:components.productHero.visitWebsite"
   },
   "models": {
     "backTo": "Zurück zu Modellen",
-    "subtitle": "Vergleichen Sie Spezifikationen und Preise von KI-Coding-Modellen nebeneinander.",
+    "subtitle": "Vergleichen Sie Spezifikationen und Preise von AI-Coding-Modellen nebeneinander.",
     "title": "Modell-Vergleich"
   },
   "pricingValues": {

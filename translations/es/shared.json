@@ -17,31 +17,31 @@
     "visit": "Visitar {name}",
     "watch": "Ver en {platform}"
   },
-  "common": {
+  "terms": {
     "aiCodingStack": "AI Coding Stack",
     "articles": "Artículos",
     "collections": "Colecciones",
     "community": "Comunidad",
-    "communityLinks": "Enlaces de comunidad",
+    "communityLinks": "Enlaces de la comunidad",
     "comparison": "Comparación",
     "curatedCollections": "Colecciones curadas",
-    "docs": "Documentos",
+    "docs": "Documentación",
     "documentation": "Documentación",
     "ecosystemTools": "Herramientas del ecosistema",
-    "faq": "Preguntas frecuentes",
+    "faq": "FAQ",
     "featuredArticles": "Artículos destacados",
-    "followUs": "Síguenos",
-    "indexLabel": "ÍNDICE",
+    "followUs": "Síganos",
+    "indexLabel": "INDEX",
     "license": "Licencia",
     "manifesto": "Manifiesto",
     "maxOutput": "Salida máxima",
     "modelSize": "Tamaño del modelo",
-    "openSource": "Código abierto",
+    "openSource": "Código Abierto",
     "pricing": "Precios",
     "products": "Productos",
     "proprietary": "Propietario",
     "resources": "Recursos",
-    "slogan": "Descubre. Compara. Construye 10x más rápido.",
+    "slogan": "Descubrir. Comparar. Construir 10x más rápido.",
     "specificationsProtocols": "Especificaciones y protocolos",
     "stars": "Estrellas",
     "type": "Tipo",
@@ -58,26 +58,30 @@
     "twitter": "X (Twitter)",
     "youtube": "YouTube"
   },
-  "stack": {
-    "cli": "CLI",
-    "extension": "Extensión",
-    "ide": "IDE",
-    "model": "Modelo",
-    "modelProvider": "Proveedor de modelo",
-    "vendor": "Proveedor"
-  },
-  "stacks": {
-    "allClis": "Todas las CLIs",
-    "allExtensions": "Todas las extensiones",
-    "allIdes": "Todos los IDEs",
-    "allModelProviders": "Todos los proveedores de modelo",
-    "allModels": "Todos los modelos",
-    "allVendors": "Todos los proveedores",
-    "clis": "CLIs",
-    "extensions": "Extensiones",
-    "ides": "IDEs",
-    "modelProviders": "Proveedores de modelo",
-    "models": "Modelos",
-    "vendors": "Proveedores"
+  "categories": {
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "vendor": "Vendor"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "vendors": "Vendors"
+    },
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    }
   }
 }

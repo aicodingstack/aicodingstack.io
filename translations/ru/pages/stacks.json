@@ -1,319 +1,208 @@
 {
   "cliDetail": {
-    "allCLIs": "@:shared.stacks.allClis",
+    "allCLIs": "All CLIs",
     "breadcrumb": {
-      "aiCodingStack": "@:shared.common.aiCodingStack",
-      "clis": "@:shared.stacks.clis"
+      "aiCodingStack": "AI Coding Stack",
+      "clis": "CLIs"
     },
-    "categoryLabel": "@:components.productHero.categories.CLI",
-    "documentation": "@:components.productHero.documentation",
-    "download": "@:components.productHero.download",
-    "license": "@:components.productHero.license",
-    "platforms": "@:components.productHero.platforms",
-    "stars": "@:components.productHero.stars",
-    "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version",
-    "visitWebsite": "@:components.productHero.visitWebsite"
+    "categoryLabel": "CLI",
+    "documentation": "Documentation",
+    "download": "Download",
+    "license": "License",
+    "platforms": "Platforms",
+    "stars": "Stars",
+    "vendor": "Vendor",
+    "version": "Version",
+    "visitWebsite": "Visit Website"
   },
   "clis": {
-    "allCLIs": "@:shared.stacks.allClis",
-    "compareAll": "@:shared.actions.compareAll",
+    "allCLIs": "All CLIs",
+    "compareAll": "Сравнить все",
     "noMatches": "CLI не соответствует вашим фильтрам",
     "subtitle": "Ассистенты кодирования в командной строке на базе ИИ",
-    "title": "@:shared.stacks.clis"
+    "title": "CLIs"
   },
   "extensionDetail": {
-    "allExtensions": "@:shared.stacks.allExtensions",
+    "allExtensions": "All Extensions",
     "breadcrumb": {
-      "aiCodingStack": "@:shared.common.aiCodingStack",
-      "extensions": "@:shared.stacks.extensions"
+      "aiCodingStack": "AI Coding Stack",
+      "extensions": "Extensions"
     },
-    "categoryLabel": "@:components.productHero.categories.EXTENSION",
-    "documentation": "@:components.productHero.documentation",
-    "download": "@:components.productHero.download",
-    "license": "@:components.productHero.license",
-    "stars": "@:components.productHero.stars",
-    "supportedIdes": "@:components.productHero.supportedIdes",
-    "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version",
-    "visitWebsite": "@:components.productHero.visitWebsite"
+    "categoryLabel": "Extension",
+    "documentation": "Documentation",
+    "download": "Download",
+    "license": "License",
+    "stars": "Stars",
+    "supportedIdes": "Supported IDEs",
+    "vendor": "Vendor",
+    "version": "Version",
+    "visitWebsite": "Visit Website"
   },
   "extensions": {
-    "allExtensions": "@:shared.stacks.allExtensions",
-    "compareAll": "@:shared.actions.compareAll",
+    "allExtensions": "All Extensions",
+    "compareAll": "Сравнить все",
     "noMatches": "Расширения не соответствуют вашим фильтрам",
     "subtitle": "Расширения и плагины для кодирования на базе ИИ",
-    "title": "@:shared.stacks.extensions"
+    "title": "Extensions"
   },
   "ideDetail": {
-    "allIDEs": "@:shared.stacks.allIdes",
+    "allIDEs": "All IDEs",
     "breadcrumb": {
-      "aiCodingStack": "@:shared.common.aiCodingStack",
-      "ides": "@:shared.stacks.ides"
+      "aiCodingStack": "AI Coding Stack",
+      "ides": "IDEs"
     },
-    "categoryLabel": "@:components.productHero.categories.IDE",
-    "documentation": "@:components.productHero.documentation",
-    "download": "@:components.productHero.download",
-    "license": "@:components.productHero.license",
-    "platforms": "@:components.productHero.platforms",
-    "stars": "@:components.productHero.stars",
-    "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version",
-    "visitWebsite": "@:components.productHero.visitWebsite"
+    "categoryLabel": "IDE",
+    "documentation": "Documentation",
+    "download": "Download",
+    "license": "License",
+    "platforms": "Platforms",
+    "stars": "Stars",
+    "vendor": "Vendor",
+    "version": "Version",
+    "visitWebsite": "Visit Website"
   },
   "ides": {
-    "allIDEs": "@:shared.stacks.allIdes",
-    "compareAll": "@:shared.actions.compareAll",
+    "allIDEs": "All IDEs",
+    "compareAll": "Сравнить все",
     "noMatches": "IDE не соответствуют вашим фильтрам",
     "subtitle": "Интегрированные среды разработки, улучшенные с помощью ИИ",
-    "title": "@:shared.stacks.ides"
+    "title": "IDEs"
   },
   "modelDetail": {
-    "aiPlatforms": {
-      "artificialAnalysis": {
-        "description": "Просмотр анализа производительности",
-        "title": "@:shared.platforms.artificialAnalysis"
-      },
-      "huggingface": {
-        "description": "Просмотр на HuggingFace",
-        "title": "@:shared.platforms.huggingface"
-      },
-      "openrouter": {
-        "description": "Доступ через OpenRouter",
-        "title": "@:shared.platforms.openrouter"
-      }
-    },
-    "allModels": "@:shared.stacks.allModels",
-    "backTo": "@:shared.actions.backTo",
+    "allModels": "All Models",
+    "backTo": "Back to",
     "breadcrumb": {
-      "aiCodingStack": "@:shared.common.aiCodingStack",
-      "models": "@:shared.stacks.models"
+      "aiCodingStack": "AI Coding Stack",
+      "models": "Models"
     },
-    "categoryLabel": "@:components.productHero.categories.MODEL",
-    "documentation": "@:components.productHero.documentation",
-    "findOnAiPlatforms": "Найти на платформах ИИ",
-    "labels": {
-      "artificialAnalysis": "@:shared.platforms.artificialAnalysis",
-      "context": "Контекст",
-      "documentation": "@:components.productHero.documentation",
-      "huggingface": "@:shared.platforms.huggingface",
-      "maxOutput": "@:shared.common.maxOutput",
-      "openrouter": "@:shared.platforms.openrouter",
-      "pricing": "@:shared.common.pricing",
-      "size": "Размер",
-      "website": "@:shared.common.website"
-    },
-    "license": "@:components.productHero.license",
-    "maxOutput": "@:shared.common.maxOutput",
-    "metaTitle": "Модель ИИ-кодирования | Спецификации и Цены 2025",
-    "modelSize": "@:shared.common.modelSize",
-    "pricing": "@:shared.common.pricing",
-    "specifications": "Спецификации",
-    "stars": "@:components.productHero.stars",
-    "contextWindow": "Общий контекст",
-    "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version",
-    "visitWebsite": "@:components.productHero.visitWebsite",
-    "input": "Ввод",
-    "output": "Вывод",
     "cache": "Кэш",
-    "benchmarks": {
-      "title": "Бенчмарки производительности",
-      "sweBench": "SWE-bench Verified",
-      "sweBenchDesc": "Реальные задачи инженерии программного обеспечения",
-      "terminalBench": "TerminalBench 2.0",
-      "terminalBenchDesc": "Навык работы с интерфейсом командной строки",
-      "mmmu": "MMMU",
-      "mmmuDesc": "Мультимодальное понимание",
-      "mmmuPro": "MMMU Pro",
-      "mmmuProDesc": "Сложные мультимодальные задачи",
-      "webDevArena": "WebDevArena",
-      "webDevArenaDesc": "Задачи веб-разработки",
-      "sciCode": "SciCode",
-      "sciCodeDesc": "Генерация научного кода",
-      "liveCodeBench": "LiveCodeBench",
-      "liveCodeBenchDesc": "Производительность кодирования в реальном времени"
-    }
+    "categoryLabel": "Model",
+    "contextWindow": "Общий контекст",
+    "documentation": "Documentation",
+    "findOnAiPlatforms": "Find on AI Platforms",
+    "input": "Ввод",
+    "labels": {
+      "artificialAnalysis": "Artificial Analysis",
+      "context": "Context",
+      "documentation": "Documentation",
+      "huggingface": "HuggingFace",
+      "maxOutput": "Max Output",
+      "openrouter": "OpenRouter",
+      "pricing": "Pricing",
+      "size": "Size",
+      "website": "Website"
+    },
+    "license": "License",
+    "maxOutput": "Максимальный вывод",
+    "metaTitle": "AI Coding Model | Specs & Pricing 2025",
+    "modelSize": "Model Size",
+    "output": "Вывод",
+    "pricing": "Цены",
+    "specifications": "Specifications",
+    "stars": "Stars",
+    "vendor": "Vendor",
+    "version": "Version",
+    "visitWebsite": "Visit Website"
   },
   "modelProviderDetail": {
-    "aiPlatforms": {
-      "artificialAnalysis": {
-        "description": "Просмотр анализа производительности",
-        "title": "@:shared.platforms.artificialAnalysis"
-      },
-      "huggingface": {
-        "description": "Просмотр на HuggingFace",
-        "title": "@:shared.platforms.huggingface"
-      },
-      "openrouter": {
-        "description": "Доступ через OpenRouter",
-        "title": "@:shared.platforms.openrouter"
-      }
-    },
-    "allModelProviders": "@:shared.stacks.allModelProviders",
-    "backTo": "@:shared.actions.backTo",
+    "allModelProviders": "All Model Providers",
+    "backTo": "Back to",
     "breadcrumb": {
-      "aiCodingStack": "@:shared.common.aiCodingStack",
-      "modelProviders": "@:shared.stacks.modelProviders"
+      "aiCodingStack": "AI Coding Stack",
+      "modelProviders": "Model Providers"
     },
-    "categoryLabel": "@:components.productHero.categories.PROVIDER",
-    "community": {
-      "blog": {
-        "description": "Read blog posts",
-        "title": "@:components.communityLinks.blog"
-      },
-      "discord": {
-        "description": "Присоединиться к сообществу",
-        "title": "@:components.communityLinks.discord"
-      },
-      "github": {
-        "description": "Просмотр репозиториев",
-        "title": "@:components.communityLinks.github"
-      },
-      "linkedin": {
-        "description": "@:shared.common.followUs",
-        "title": "@:components.communityLinks.linkedin"
-      },
-      "reddit": {
-        "description": "Присоединиться к обсуждению",
-        "title": "@:components.communityLinks.reddit"
-      },
-      "twitter": {
-        "description": "@:shared.common.followUs",
-        "title": "@:components.communityLinks.twitter"
-      },
-      "youtube": {
-        "description": "Смотреть видео",
-        "title": "@:components.communityLinks.youtube"
-      }
-    },
-    "communityLinks": "@:shared.common.communityLinks",
-    "documentation": "@:components.productHero.documentation",
-    "findOnAiPlatforms": "Найти на платформах ИИ",
-    "getApiKey": "@:components.productHero.getApiKey",
-    "indexLabel": "@:shared.common.indexLabel",
+    "categoryLabel": "Model Provider",
+    "communityLinks": "Community Links",
+    "documentation": "Documentation",
+    "findOnAiPlatforms": "Find on AI Platforms",
+    "getApiKey": "Get API Key",
+    "indexLabel": "INDEX",
     "providerTypes": {
-      "foundation-model-provider": "@:components.productHero.providerTypes.foundation-model-provider",
-      "model-service-provider": "@:components.productHero.providerTypes.model-service-provider"
+      "foundation-model-provider": "Foundation Model Provider",
+      "model-service-provider": "Model Service Provider"
     },
-    "type": "@:components.productHero.type",
-    "visitWebsite": "@:components.productHero.visitWebsite"
+    "type": "Type",
+    "visitWebsite": "Visit Website"
   },
   "modelProviders": {
-    "foundationProviders": "@:components.productHero.providerTypes.foundation-model-provider",
-    "search": "@:components.filterSortBar.search",
-    "serviceProviders": "@:components.productHero.providerTypes.model-service-provider",
+    "foundationProviders": "Foundation Model Provider",
+    "search": "Search by name...",
+    "serviceProviders": "Model Service Provider",
     "subtitle": "Поставщики API LLM, предоставляющие доступ к различным моделям ИИ",
-    "title": "@:shared.stacks.modelProviders"
+    "title": "Model Providers"
   },
   "models": {
-    "compareAll": "@:shared.actions.compareAll",
+    "compareAll": "Сравнить все",
     "context": "Контекст:",
     "pricing": "Цены:",
-    "search": "@:components.filterSortBar.search",
+    "search": "Search by name...",
     "size": "Размер:",
     "subtitle": "Большие языковые модели, оптимизированные для генерации и анализа кода",
-    "title": "@:shared.stacks.models"
+    "title": "Models"
   },
   "overview": {
     "clis": {
       "description": "Ассистенты ИИ командной строки, которые приносят силу больших языковых моделей непосредственно в ваш терминал. Выполняйте сложные задачи на естественном языке прямо из вашей оболочки.",
-      "title": "@:shared.stacks.clis"
+      "title": "CLI"
     },
     "exploreStack": "Изучить стек",
     "extensions": {
       "description": "Расширения и плагины для кодирования на базе ИИ для вашей любимой IDE. От автодополнения кода до интеллектуального рефакторинга — улучшите свой опыт разработки с помощью ИИ-помощника.",
-      "title": "@:shared.stacks.extensions"
+      "title": "Extensions"
     },
     "ides": {
       "description": "Интегрированные среды разработки на базе ИИ, которые понимают вашу кодовую базу и предоставляют интеллектуальную помощь. От VS Code до Cursor — откройте для себя редакторы, которые делают кодирование совместным с ИИ.",
-      "title": "@:shared.stacks.ides"
+      "title": "IDEs"
     },
     "modelProviders": {
       "description": "Поставщики API LLM, предоставляющие доступ к различным моделям ИИ. От DeepSeek до OpenRouter — откройте для себя платформы, которые питают ваши инструменты ИИ-кодирования унифицированными API и доступом к моделям.",
-      "title": "@:shared.stacks.modelProviders"
+      "title": "Model Providers"
     },
     "models": {
       "description": "Слой интеллекта. Большие языковые модели, оптимизированные для генерации, понимания и анализа кода. Сравните спецификации, цены и возможности ведущих моделей ИИ.",
-      "title": "@:shared.stacks.models"
+      "title": "Models"
     },
     "overviewTitle": "Обзор AI Coding Stack",
-    "slogan": "@:shared.common.slogan",
+    "slogan": "Откройте для себя. Сравните. Стройте в 10 раз быстрее.",
     "subtitle": "Изучите полную экосистему ИИ-кодирования: IDE, CLI, расширения, модели и поставщики.",
-    "title": "@:shared.common.aiCodingStack",
+    "title": "AI Coding Stack",
     "vendors": {
       "description": "Ведущие компании и организации, создающие технологии ИИ. От OpenAI до Anthropic — откройте для себя поставщиков за революцией ИИ-кодирования.",
-      "title": "@:shared.stacks.vendors"
+      "title": "Vendors"
     }
   },
   "vendorDetail": {
-    "allVendors": "@:shared.stacks.allVendors",
-    "backTo": "@:shared.actions.backTo",
+    "allVendors": "All Vendors",
+    "backTo": "Back to",
     "breadcrumb": {
-      "aiCodingStack": "@:shared.common.aiCodingStack",
-      "home": "Главная",
-      "vendors": "@:shared.stacks.vendors"
+      "aiCodingStack": "AI Coding Stack",
+      "home": "Home",
+      "vendors": "Vendors"
     },
-    "categoryLabel": "@:components.productHero.categories.VENDOR",
-    "documentation": "@:components.productHero.documentation",
-    "community": {
-      "blog": {
-        "description": "Читать посты в блоге",
-        "title": "@:components.communityLinks.blog"
-      },
-      "discord": {
-        "description": "Присоединиться к сообществу",
-        "title": "@:components.communityLinks.discord"
-      },
-      "github": {
-        "description": "Просмотр репозиториев",
-        "title": "@:components.communityLinks.github"
-      },
-      "linkedin": {
-        "description": "@:shared.common.followUs",
-        "title": "@:components.communityLinks.linkedin"
-      },
-      "reddit": {
-        "description": "Присоединиться к обсуждению",
-        "title": "@:components.communityLinks.reddit"
-      },
-      "twitter": {
-        "description": "@:shared.common.followUs",
-        "title": "@:components.communityLinks.twitter"
-      },
-      "youtube": {
-        "description": "Смотреть видео",
-        "title": "@:components.communityLinks.youtube"
-      }
-    },
-    "communityLinks": "@:shared.common.communityLinks",
+    "categoryLabel": "Vendor",
+    "communityLinks": "Community Links",
     "connectLinkedIn": "Подключиться на LinkedIn",
-    "discord": "@:components.communityLinks.discord",
+    "documentation": "Documentation",
     "followTwitter": "Подписаться на Twitter",
-    "github": "@:components.communityLinks.github",
-    "indexLabel": "@:shared.common.indexLabel",
+    "indexLabel": "INDEX",
     "joinDiscord": "Присоединиться к сообществу Discord",
     "joinReddit": "Присоединиться к сообществу Reddit",
-    "linkedin": "@:components.communityLinks.linkedin",
     "metaDescription": "Изучите ИИ-продукты и технологии {name}.",
     "metaTitle": "Поставщик технологий ИИ | Профиль компании 2025",
-    "models": "@:shared.stacks.models",
-    "products": "@:shared.common.products",
+    "models": "Models",
+    "products": "Products",
     "productsSubtitle": "Изучите продукты и услуги от {vendorName}",
-    "productsTitle": "@:shared.common.products",
-    "quickLinks": "Быстрые ссылки",
-    "reddit": "@:components.communityLinks.reddit",
-    "twitter": "@:components.communityLinks.twitter",
-    "vendorDetails": "Детали поставщика",
+    "productsTitle": "Products",
+    "quickLinks": "Quick Links",
+    "vendorDetails": "Vendor Details",
     "viewGitHub": "Просмотр репозиториев с открытым исходным кодом",
-    "visitWebsite": "@:components.productHero.visitWebsite",
+    "visitWebsite": "Visit Website",
     "watchYouTube": "Смотреть видео на YouTube",
-    "website": "@:shared.common.website",
-    "youtube": "@:components.communityLinks.youtube"
+    "website": "Website"
   },
   "vendors": {
-    "search": "@:components.filterSortBar.search",
+    "search": "Search by name...",
     "subtitle": "Ведущие компании и организации, создающие технологии ИИ",
-    "title": "@:shared.stacks.vendors"
+    "title": "Vendors"
   }
 }

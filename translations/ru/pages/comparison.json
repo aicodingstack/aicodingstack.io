@@ -2,7 +2,7 @@
   "clis": {
     "backTo": "Назад к CLI",
     "subtitle": "Ассистенты по кодированию в командной строке с ИИ",
-    "title": "@:shared.stacks.clis"
+    "title": "CLI Comparison"
   },
   "columns": {
     "cache": "Кэш",
@@ -15,14 +15,14 @@
     "license": "@:components.productHero.license",
     "links": "Ссылки",
     "live-code-bench": "Live Code Bench",
-    "maxOutput": "@:shared.common.maxOutput",
+    "maxOutput": "Максимальный вывод",
     "maxPrice": "Макс. цена",
     "mmmu": "MMMU",
     "mmmu-pro": "MMMU Pro",
-    "modelSize": "@:shared.common.modelSize",
+    "modelSize": "Размер модели",
     "output": "Выход",
     "platforms": "@:components.productHero.platforms",
-    "pricing": "@:shared.common.pricing",
+    "pricing": "Цены",
     "pricingCache": "Цена кэша",
     "pricingInput": "Цена ввода",
     "pricingOutput": "Цена вывода",
@@ -38,12 +38,12 @@
   "extensions": {
     "backTo": "Назад к расширениям",
     "subtitle": "Расширения и плагины для кодирования с ИИ",
-    "title": "@:shared.stacks.extensions"
+    "title": "Extension Comparison"
   },
   "ides": {
     "backTo": "Назад к IDE",
     "subtitle": "Интегрированные среды разработки с улучшениями ИИ",
-    "title": "@:shared.stacks.ides"
+    "title": "IDE Comparison"
   },
   "linkTitles": {
     "documentation": "@:components.productHero.documentation",
@@ -53,7 +53,7 @@
   "models": {
     "backTo": "Назад к моделям",
     "subtitle": "Большие языковые модели, оптимизированные для генерации и анализа кода",
-    "title": "@:shared.stacks.models"
+    "title": "Model Comparison"
   },
   "pricingValues": {
     "free": "Бесплатно",

@@ -12,16 +12,16 @@
     "tools": "生态系统工具"
   },
   "docsSidebar": {
-    "label": "文档",
+    "label": "@:shared.terms.documentation",
     "title": "文档"
   },
   "filterSortBar": {
     "clearFilters": "清除筛选",
     "license": "许可证:",
-    "openSource": "开源",
+    "openSource": "@:shared.terms.openSource",
     "platform": "平台:",
-    "proprietary": "专有",
-    "search": "按名称搜索...",
+    "proprietary": "@:shared.terms.proprietary",
+    "search": "@:shared.actions.search by name...",
     "sort": "排序:",
     "sortDefault": "默认",
     "sortNameAsc": "名称 (A-Z)",
@@ -37,59 +37,21 @@
   "header": {
     "aiCodingLandscape": "AI 编码全景图",
     "aiCodingLandscapeDesc": "可视化 AI 编码生态系统全貌",
-    "aiCodingStack": "AI 编码技术栈",
-    "articles": "文章",
+    "aiCodingStack": "@:shared.terms.aiCodingStack",
+    "articles": "@:shared.terms.articles",
     "closeMenu": "关闭菜单",
-    "collections": "精选集合",
+    "collections": "@:shared.terms.collections",
     "developmentTools": "开发工具",
     "intelligence": "智能层",
     "landscape": "全景图",
-    "manifesto": "宣言",
+    "manifesto": "@:shared.terms.manifesto",
     "openMenu": "打开菜单",
     "openSourceRank": "开源排行榜",
     "openSourceRankDesc": "按 GitHub 星标数探索开源 AI 编码项目",
     "ranking": "排行榜",
-    "search": "搜索",
+    "search": "@:shared.actions.search",
     "searchPlaceholder": "搜索...",
     "toggleMenu": "切换菜单"
-  },
-  "openSourceRank": {
-    "description": "探索按 GitHub 星标数排名的开源 AI 编码工具。比较 IDE、CLI 和扩展，找到适合您开发工作流程的完美工具。",
-    "filter": {
-      "all": "全部"
-    },
-    "meta": {
-      "description": "AI Coding Stack 中所有开源项目的排行榜，按 GitHub 星标数排序。查看开源与闭源工具的统计和趋势。",
-      "title": "开源项目排行榜"
-    },
-    "noResults": "该分类下未找到开源项目。",
-    "note": "注意：此页面仅显示有 GitHub 地址的项目。部分项目虽未开源，但会创建 GitHub 仓库作为用户反馈入口。",
-    "productType": {
-      "cli": "CLI",
-      "extension": "扩展",
-      "ide": "IDE"
-    },
-    "statistics": {
-      "closedSource": "闭源",
-      "closedSourceCount": "闭源项目",
-      "closedSourcePercentage": "闭源占比",
-      "licenseBreakdown": "协议分布",
-      "openSource": "开源",
-      "openSourceCount": "开源项目",
-      "projects": "个项目",
-      "title": "开源与闭源分布",
-      "totalProjects": "项目总数"
-    },
-    "table": {
-      "license": "开源协议",
-      "name": "名称",
-      "openSourceTitle": "开源项目 ({count})",
-      "proprietaryTitle": "闭源项目 ({count})",
-      "rank": "排名",
-      "stars": "星标数",
-      "type": "类型"
-    },
-    "title": "开源项目排行榜"
   },
   "productCommands": {
     "command": "命令",
@@ -128,26 +90,26 @@
   },
   "productHero": {
     "categories": {
-      "CLI": "命令行",
-      "EXTENSION": "扩展插件",
-      "IDE": "IDE",
-      "MODEL": "模型",
-      "PROVIDER": "模型提供商",
-      "VENDOR": "厂商"
+      "CLI": "@:shared.categories.singular.cli",
+      "EXTENSION": "@:shared.categories.singular.extension",
+      "IDE": "@:shared.categories.singular.ide",
+      "MODEL": "@:shared.categories.singular.model",
+      "PROVIDER": "@:shared.categories.singular.modelProvider",
+      "VENDOR": "@:shared.categories.singular.vendor"
     },
-    "documentation": "文档",
-    "download": "下载",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
     "getApiKey": "获取 API 密钥",
-    "license": "许可证",
+    "license": "@:shared.terms.license",
     "platforms": "平台",
     "providerTypes": {
       "foundation-model-provider": "基础模型提供商",
       "model-service-provider": "模型服务提供商"
     },
     "runtime": "运行时",
-    "stars": "星标数",
+    "stars": "@:shared.terms.stars",
     "supportedIdes": "支持的 IDE",
-    "type": "类型",
+    "type": "@:shared.terms.type",
     "vendor": "厂商",
     "version": "版本",
     "visitWebsite": "访问官网"
@@ -155,17 +117,17 @@
   "communityLinks": {
     "blog": "博客",
     "blogDescription": "阅读博客文章",
-    "community": "@:shared.common.community",
+    "community": "@:shared.terms.community",
     "discord": "@:shared.platforms.discord",
     "discordDescription": "加入社区",
     "github": "@:shared.platforms.github",
     "githubDescription": "查看代码仓库",
     "linkedin": "@:shared.platforms.linkedin",
-    "linkedinDescription": "@:shared.common.followUs",
+    "linkedinDescription": "@:shared.terms.followUs",
     "reddit": "@:shared.platforms.reddit",
     "redditDescription": "参与讨论",
     "twitter": "@:shared.platforms.twitter",
-    "twitterDescription": "@:shared.common.followUs",
+    "twitterDescription": "@:shared.terms.followUs",
     "youtube": "@:shared.platforms.youtube",
     "youtubeDescription": "观看视频"
   },
@@ -178,81 +140,54 @@
     "issueDescription": "报告问题和请求功能",
     "mcp": "MCP 文档",
     "mcpDescription": "了解 MCP 集成",
-    "pricing": "@:shared.common.pricing",
+    "pricing": "@:shared.terms.pricing",
     "pricingDescription": "查看定价方案"
   },
   "resources": {
-    "community": "@:shared.common.community",
-    "resources": "@:shared.common.resources"
+    "community": "@:shared.terms.community",
+    "resources": "@:shared.terms.resources"
   },
   "productPricing": {
-    "title": "定价",
+    "title": "@:shared.terms.pricing",
     "viewFullDetails": "查看完整定价详情 →"
   },
   "modelSpecifications": {
-    "title": "@:pages.modelDetail.specifications",
-    "modelSize": "@:pages.modelDetail.modelSize",
-    "contextWindow": "@:pages.modelDetail.contextWindow",
-    "maxOutput": "@:pages.modelDetail.maxOutput",
-    "pricing": "@:pages.modelDetail.pricing",
-    "input": "@:pages.modelDetail.input",
-    "output": "@:pages.modelDetail.output",
-    "cache": "@:pages.modelDetail.cache"
+    "title": "Specifications",
+    "modelSize": "@:shared.terms.modelSize",
+    "contextWindow": "Total Context",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "pricing": "@:shared.terms.pricing",
+    "input": "Input",
+    "output": "Output",
+    "cache": "Cache"
   },
-  "modelBenchmarks": {
-    "title": "@:pages.modelDetail.benchmarks.title",
-    "sweBench": "@:pages.modelDetail.benchmarks.sweBench",
-    "sweBenchDesc": "@:pages.modelDetail.benchmarks.sweBenchDesc",
-    "terminalBench": "@:pages.modelDetail.benchmarks.terminalBench",
-    "terminalBenchDesc": "@:pages.modelDetail.benchmarks.terminalBenchDesc",
-    "mmmu": "@:pages.modelDetail.benchmarks.mmmu",
-    "mmmuDesc": "@:pages.modelDetail.benchmarks.mmmuDesc",
-    "mmmuPro": "@:pages.modelDetail.benchmarks.mmmuPro",
-    "mmmuProDesc": "@:pages.modelDetail.benchmarks.mmmuProDesc",
-    "webDevArena": "@:pages.modelDetail.benchmarks.webDevArena",
-    "webDevArenaDesc": "@:pages.modelDetail.benchmarks.webDevArenaDesc",
-    "sciCode": "@:pages.modelDetail.benchmarks.sciCode",
-    "sciCodeDesc": "@:pages.modelDetail.benchmarks.sciCodeDesc",
-    "liveCodeBench": "@:pages.modelDetail.benchmarks.liveCodeBench",
-    "liveCodeBenchDesc": "@:pages.modelDetail.benchmarks.liveCodeBenchDesc"
+  "benchmarks": {
+    "title": "Performance Benchmarks",
+    "sweBench": "SWE-bench Verified",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBench": "TerminalBench 2.0",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "mmmu": "MMMU",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuPro": "MMMU Pro",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "webDevArena": "WebDevArena",
+    "webDevArenaDesc": "Web development challenges",
+    "sciCode": "SciCode",
+    "sciCodeDesc": "Scientific code generation",
+    "liveCodeBench": "LiveCodeBench",
+    "liveCodeBenchDesc": "Live coding performance"
   },
   "relatedProducts": {
-    "cli": "CLI",
-    "extension": "扩展",
-    "ide": "IDE",
+    "cli": "@:shared.categories.singular.cli",
+    "extension": "@:shared.categories.singular.extension",
+    "ide": "@:shared.categories.singular.ide",
     "title": "相关产品",
     "viewProduct": "查看产品"
   },
-  "search": {
-    "categories": {
-      "clis": "命令行工具",
-      "extensions": "扩展",
-      "ides": "IDE",
-      "models": "模型",
-      "providers": "模型提供商",
-      "vendors": "供应商"
-    },
-    "navigate": "导航",
-    "noResults": "未找到结果",
-    "noResultsFor": "未找到\"{query}\"的结果",
-    "placeholder": "搜索 AI 编码工具...",
-    "resultsCount": "{count} 个结果",
-    "resultsCountFor": "找到 {count} 个\"{query}\"的结果",
-    "searching": "搜索中...",
-    "select": "选择",
-    "stacks": {
-      "clis": "@:shared.stacks.clis",
-      "extensions": "@:shared.stacks.extensions",
-      "ides": "@:shared.stacks.ides",
-      "modelProviders": "@:shared.stacks.modelProviders",
-      "models": "@:shared.stacks.models",
-      "vendors": "@:shared.stacks.vendors"
-    },
-    "title": "搜索结果"
-  },
   "sidebar": {
-    "backToTop": "返回顶部",
-    "selectItem": "选择一个项目"
+    "backToTop": "@:shared.actions.backToTop",
+    "selectItem": "@:shared.actions.selectItem"
   },
   "vendorMatrix": {
     "cell": {

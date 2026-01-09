@@ -5,21 +5,21 @@
       "aiCodingStack": "AI Coding Stack",
       "clis": "CLIs"
     },
-    "categoryLabel": "@:components.productHero.categories.CLI",
-    "documentation": "@:components.productHero.documentation",
-    "download": "@:components.productHero.download",
-    "license": "@:components.productHero.license",
-    "platforms": "@:components.productHero.platforms",
-    "stars": "@:components.productHero.stars",
-    "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version",
-    "visitWebsite": "@:components.productHero.visitWebsite"
+    "categoryLabel": "CLI",
+    "documentation": "Dokumentation",
+    "download": "Download",
+    "license": "Lizenz",
+    "platforms": "Plattformen",
+    "stars": "Stars",
+    "vendor": "Anbieter",
+    "version": "Version",
+    "visitWebsite": "Website besuchen"
   },
   "clis": {
     "allCLIs": "Alle CLIs",
     "compareAll": "Alle Vergleichen",
     "noMatches": "Keine CLIs entsprechen Ihren Filtern",
-    "subtitle": "KI-gestützte Kommandozeilen-Coding-Assistenten",
+    "subtitle": "AI-gestützte Kommandozeilen-Coding-Assistenten",
     "title": "CLIs"
   },
   "extensionDetail": {
@@ -28,21 +28,21 @@
       "aiCodingStack": "AI Coding Stack",
       "extensions": "Erweiterungen"
     },
-    "categoryLabel": "@:components.productHero.categories.EXTENSION",
-    "documentation": "@:components.productHero.documentation",
-    "download": "@:components.productHero.download",
-    "license": "@:components.productHero.license",
-    "stars": "@:components.productHero.stars",
-    "supportedIdes": "@:components.productHero.supportedIdes",
-    "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version",
-    "visitWebsite": "@:components.productHero.visitWebsite"
+    "categoryLabel": "Erweiterung",
+    "documentation": "Dokumentation",
+    "download": "Download",
+    "license": "Lizenz",
+    "stars": "Stars",
+    "supportedIdes": "Unterstützte IDEs",
+    "vendor": "Anbieter",
+    "version": "Version",
+    "visitWebsite": "Website besuchen"
   },
   "extensions": {
     "allExtensions": "Alle Erweiterungen",
     "compareAll": "Alle Vergleichen",
     "noMatches": "Keine Erweiterungen entsprechen Ihren Filtern",
-    "subtitle": "KI-gestützte Coding-Erweiterungen und Plugins",
+    "subtitle": "AI-gestützte Coding-Erweiterungen und Plugins",
     "title": "Erweiterungen"
   },
   "ideDetail": {
@@ -51,51 +51,40 @@
       "aiCodingStack": "AI Coding Stack",
       "ides": "IDEs"
     },
-    "categoryLabel": "@:components.productHero.categories.IDE",
-    "documentation": "@:components.productHero.documentation",
-    "download": "@:components.productHero.download",
-    "license": "@:components.productHero.license",
-    "platforms": "@:components.productHero.platforms",
-    "stars": "@:components.productHero.stars",
-    "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version",
-    "visitWebsite": "@:components.productHero.visitWebsite"
+    "categoryLabel": "IDE",
+    "documentation": "Dokumentation",
+    "download": "Download",
+    "license": "Lizenz",
+    "platforms": "Plattformen",
+    "stars": "Stars",
+    "vendor": "Anbieter",
+    "version": "Version",
+    "visitWebsite": "Website besuchen"
   },
   "ides": {
     "allIDEs": "Alle IDEs",
     "compareAll": "Alle Vergleichen",
     "noMatches": "Keine IDEs entsprechen Ihren Filtern",
-    "subtitle": "KI-verbesserte integrierte Entwicklungsumgebungen",
+    "subtitle": "AI-verbesserte integrierte Entwicklungsumgebungen",
     "title": "IDEs"
   },
   "modelDetail": {
-    "aiPlatforms": {
-      "artificialAnalysis": {
-        "description": "Leistungsanalyse anzeigen",
-        "title": "Artificial Analysis"
-      },
-      "huggingface": {
-        "description": "Auf HuggingFace anzeigen",
-        "title": "HuggingFace"
-      },
-      "openrouter": {
-        "description": "Über OpenRouter zugänglich",
-        "title": "OpenRouter"
-      }
-    },
     "allModels": "Alle Modelle",
     "backTo": "Zurück zu",
     "breadcrumb": {
       "aiCodingStack": "AI Coding Stack",
       "models": "Modelle"
     },
-    "categoryLabel": "@:components.productHero.categories.MODEL",
-    "documentation": "@:components.productHero.documentation",
-    "findOnAiPlatforms": "Auf KI-Plattformen finden",
+    "cache": "Cache",
+    "categoryLabel": "Modell",
+    "contextWindow": "Gesamtkontext",
+    "documentation": "Dokumentation",
+    "findOnAiPlatforms": "Auf AI-Plattformen finden",
+    "input": "Eingabe",
     "labels": {
       "artificialAnalysis": "Artificial Analysis",
       "context": "Kontext",
-      "documentation": "@:components.productHero.documentation",
+      "documentation": "Dokumentation",
       "huggingface": "HuggingFace",
       "maxOutput": "Max. Ausgabe",
       "openrouter": "OpenRouter",
@@ -103,107 +92,43 @@
       "size": "Größe",
       "website": "Website"
     },
-    "license": "@:components.productHero.license",
+    "license": "Lizenz",
     "maxOutput": "Max. Ausgabe",
-    "metaTitle": "KI-Coding-Modell | Spezifikationen & Preise 2025",
+    "metaTitle": "AI-Coding-Modell | Spezifikationen & Preise 2025",
     "modelSize": "Modellgröße",
+    "output": "Ausgabe",
     "pricing": "Preise",
     "specifications": "Spezifikationen",
-    "stars": "@:components.productHero.stars",
-    "contextWindow": "Gesamtkontext",
-    "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version",
-    "visitWebsite": "@:components.productHero.visitWebsite",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "cache": "Cache",
-    "benchmarks": {
-      "title": "Leistungs-Benchmarks",
-      "sweBench": "SWE-bench Verified",
-      "sweBenchDesc": "Reale Software-Engineering-Aufgaben",
-      "terminalBench": "TerminalBench 2.0",
-      "terminalBenchDesc": "Befehlszeilenkompetenz",
-      "mmmu": "MMMU",
-      "mmmuDesc": "Multimodales Verständnis",
-      "mmmuPro": "MMMU Pro",
-      "mmmuProDesc": "Erweiterte multimodale Aufgaben",
-      "webDevArena": "WebDevArena",
-      "webDevArenaDesc": "Webentwicklungs-Herausforderungen",
-      "sciCode": "SciCode",
-      "sciCodeDesc": "Wissenschaftliche Code-Generierung",
-      "liveCodeBench": "LiveCodeBench",
-      "liveCodeBenchDesc": "Live-Coding-Leistung"
-    }
+    "stars": "Stars",
+    "vendor": "Anbieter",
+    "version": "Version",
+    "visitWebsite": "Website besuchen"
   },
   "modelProviderDetail": {
-    "aiPlatforms": {
-      "artificialAnalysis": {
-        "description": "Leistungsanalyse anzeigen",
-        "title": "Artificial Analysis"
-      },
-      "huggingface": {
-        "description": "Auf HuggingFace ansehen",
-        "title": "HuggingFace"
-      },
-      "openrouter": {
-        "description": "Über OpenRouter zugreifen",
-        "title": "OpenRouter"
-      }
-    },
     "allModelProviders": "Alle Modellanbieter",
     "backTo": "Zurück zu",
     "breadcrumb": {
       "aiCodingStack": "AI Coding Stack",
       "modelProviders": "Modellanbieter"
     },
-    "categoryLabel": "@:components.productHero.categories.PROVIDER",
-    "community": {
-      "blog": {
-        "description": "Blogbeiträge lesen",
-        "title": "Blog"
-      },
-      "discord": {
-        "description": "Community beitreten",
-        "title": "Discord"
-      },
-      "github": {
-        "description": "Repos anzeigen",
-        "title": "GitHub"
-      },
-      "linkedin": {
-        "description": "Folgen Sie uns",
-        "title": "LinkedIn"
-      },
-      "reddit": {
-        "description": "An Diskussion teilnehmen",
-        "title": "Reddit"
-      },
-      "twitter": {
-        "description": "Folgen Sie uns",
-        "title": "Twitter"
-      },
-      "youtube": {
-        "description": "Videos ansehen",
-        "title": "YouTube"
-      }
-    },
+    "categoryLabel": "Modellanbieter",
     "communityLinks": "Community-Links",
-    "documentation": "@:components.productHero.documentation",
-    "findOnAiPlatforms": "Auf KI-Plattformen finden",
-    "getApiKey": "@:components.productHero.getApiKey",
+    "documentation": "Dokumentation",
+    "findOnAiPlatforms": "Auf AI-Plattformen finden",
+    "getApiKey": "API-Schlüssel abrufen",
     "indexLabel": "INDEX",
     "providerTypes": {
-      "foundation-model-provider": "@:components.productHero.providerTypes.foundation-model-provider",
-      "model-service-provider": "@:components.productHero.providerTypes.model-service-provider"
+      "foundation-model-provider": "Foundation-Modellanbieter",
+      "model-service-provider": "Modell-Service-Anbieter"
     },
-    "type": "@:components.productHero.type",
-    "visitWebsite": "@:components.productHero.visitWebsite"
+    "type": "Typ",
+    "visitWebsite": "Website besuchen"
   },
   "modelProviders": {
     "foundationProviders": "Foundation-Modellanbieter",
     "search": "Nach Namen suchen...",
     "serviceProviders": "Modell-Service-Anbieter",
-    "subtitle": "LLM-API-Anbieter, die Zugang zu verschiedenen KI-Modellen bieten",
+    "subtitle": "LLM-API-Anbieter, die Zugang zu verschiedenen AI-Modellen bieten",
     "title": "Modellanbieter"
   },
   "models": {
@@ -217,32 +142,32 @@
   },
   "overview": {
     "clis": {
-      "description": "Kommandozeilen-KI-Assistenten, die die Kraft großer Sprachmodelle direkt in Ihr Terminal bringen. Führen Sie komplexe Aufgaben mit natürlicher Sprache direkt von Ihrer Shell aus.",
+      "description": "Kommandozeilen-AI-Assistenten, die die Kraft großer Sprachmodelle direkt in Ihr Terminal bringen. Führen Sie komplexe Aufgaben mit natürlicher Sprache direkt von Ihrer Shell aus.",
       "title": "CLIs"
     },
     "exploreStack": "Stack Erkunden",
     "extensions": {
-      "description": "KI-gestützte Coding-Erweiterungen und Plugins für Ihre bevorzugte IDE. Von Code-Vervollständigung bis zu intelligentem Refactoring verbessern Sie Ihre Entwicklungserfahrung mit KI-Unterstützung.",
+      "description": "AI-gestützte Coding-Erweiterungen und Plugins für Ihre bevorzugte IDE. Von Code-Vervollständigung bis zu intelligentem Refactoring verbessern Sie Ihre Entwicklungserfahrung mit AI-Unterstützung.",
       "title": "Erweiterungen"
     },
     "ides": {
-      "description": "KI-gestützte integrierte Entwicklungsumgebungen, die Ihre Codebasis verstehen und intelligente Unterstützung bieten. Von VS Code bis Cursor entdecken Sie Editoren, die Coding mit KI kollaborativ machen.",
+      "description": "AI-gestützte integrierte Entwicklungsumgebungen, die Ihre Codebasis verstehen und intelligente Unterstützung bieten. Von VS Code bis Cursor entdecken Sie Editoren, die Coding mit AI kollaborativ machen.",
       "title": "IDEs"
     },
     "modelProviders": {
-      "description": "LLM-API-Anbieter, die Zugang zu verschiedenen KI-Modellen bieten. Von DeepSeek bis OpenRouter entdecken Sie Plattformen, die Ihre KI-Coding-Tools mit einheitlichen APIs und Modellzugriff versorgen.",
+      "description": "LLM-API-Anbieter, die Zugang zu verschiedenen AI-Modellen bieten. Von DeepSeek bis OpenRouter entdecken Sie Plattformen, die Ihre AI-Coding-Tools mit einheitlichen APIs und Modellzugriff versorgen.",
       "title": "Modellanbieter"
     },
     "models": {
-      "description": "Die Intelligenzschicht. Große Sprachmodelle optimiert für Code-Generierung, Verständnis und Analyse. Vergleichen Sie Spezifikationen, Preise und Fähigkeiten führender KI-Modelle.",
+      "description": "Die Intelligenzschicht. Große Sprachmodelle optimiert für Code-Generierung, Verständnis und Analyse. Vergleichen Sie Spezifikationen, Preise und Fähigkeiten führender AI-Modelle.",
       "title": "Modelle"
     },
     "overviewTitle": "AI Coding Stack Übersicht",
     "slogan": "Entdecken. Vergleichen. 10x Schneller Entwickeln.",
-    "subtitle": "Erkunden Sie das gesamte KI-Coding-Ökosystem: IDEs, CLIs, Erweiterungen, Modelle und Anbieter.",
+    "subtitle": "Erkunden Sie das gesamte AI-Coding-Ökosystem: IDEs, CLIs, Erweiterungen, Modelle und Anbieter.",
     "title": "AI Coding Stack",
     "vendors": {
-      "description": "Führende Unternehmen und Organisationen, die KI-Technologien entwickeln. Von OpenAI bis Anthropic entdecken Sie die Anbieter hinter der KI-Coding-Revolution.",
+      "description": "Führende Unternehmen und Organisationen, die AI-Technologien entwickeln. Von OpenAI bis Anthropic entdecken Sie die Anbieter hinter der AI-Coding-Revolution.",
       "title": "Anbieter"
     }
   },
@@ -254,66 +179,30 @@
       "home": "Startseite",
       "vendors": "Anbieter"
     },
-    "categoryLabel": "@:components.productHero.categories.VENDOR",
-    "documentation": "@:components.productHero.documentation",
-    "community": {
-      "blog": {
-        "description": "Blogbeiträge lesen",
-        "title": "Blog"
-      },
-      "discord": {
-        "description": "Community beitreten",
-        "title": "Discord"
-      },
-      "github": {
-        "description": "Repos anzeigen",
-        "title": "GitHub"
-      },
-      "linkedin": {
-        "description": "Folgen Sie uns",
-        "title": "LinkedIn"
-      },
-      "reddit": {
-        "description": "Diskussion beitreten",
-        "title": "Reddit"
-      },
-      "twitter": {
-        "description": "Folgen Sie uns",
-        "title": "Twitter"
-      },
-      "youtube": {
-        "description": "Videos ansehen",
-        "title": "YouTube"
-      }
-    },
+    "categoryLabel": "Anbieter",
     "communityLinks": "Community-Links",
     "connectLinkedIn": "Auf LinkedIn verbinden",
-    "discord": "Discord",
+    "documentation": "Dokumentation",
     "followTwitter": "Auf Twitter folgen",
-    "github": "GitHub",
     "indexLabel": "INDEX",
     "joinDiscord": "Discord-Community beitreten",
     "joinReddit": "Reddit-Community beitreten",
-    "linkedin": "LinkedIn",
-    "metaDescription": "Erkunden Sie {name}s KI-Produkte und -Technologien.",
-    "metaTitle": "KI-Technologie-Anbieter | Unternehmensprofil 2025",
+    "metaDescription": "Erkunden Sie {name}s AI-Produkte und -Technologien.",
+    "metaTitle": "AI-Technologie-Anbieter | Unternehmensprofil 2025",
     "models": "Modelle",
     "products": "Produkte",
     "productsSubtitle": "Erkunden Sie Produkte und Dienstleistungen von {vendorName}",
     "productsTitle": "Produkte",
     "quickLinks": "Schnelllinks",
-    "reddit": "Reddit",
-    "twitter": "Twitter",
     "vendorDetails": "Anbieterdetails",
     "viewGitHub": "Open-Source-Repositories anzeigen",
     "visitWebsite": "Offizielle Website besuchen",
     "watchYouTube": "Videos auf YouTube ansehen",
-    "website": "Website",
-    "youtube": "YouTube"
+    "website": "Website"
   },
   "vendors": {
     "search": "Nach Namen suchen...",
-    "subtitle": "Führende Unternehmen und Organisationen, die KI-Technologien entwickeln",
+    "subtitle": "Führende Unternehmen und Organisationen, die AI-Technologien entwickeln",
     "title": "Anbieter"
   }
 }

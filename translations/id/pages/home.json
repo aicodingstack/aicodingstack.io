@@ -1,6 +1,6 @@
 {
   "description": "Jelajahi dan bandingkan alat coding AI: IDE, CLI, ekstensi, model, dan penyedia — semua di satu tempat.",
-  "exploreTools": "Jelajahi Alat",
+  "exploreTools": "@:shared.actions.explore",
   "faq": "Pertanyaan yang Sering Diajukan",
   "features": {
     "comparison": {

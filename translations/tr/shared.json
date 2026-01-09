@@ -17,35 +17,35 @@
     "visit": "{name}'i ziyaret et",
     "watch": "{platform}'da izle"
   },
-  "common": {
+  "terms": {
     "aiCodingStack": "AI Coding Stack",
-    "articles": "Makaleler",
-    "collections": "Koleksiyonlar",
-    "community": "Topluluk",
-    "communityLinks": "Topluluk Bağlantıları",
-    "comparison": "Karşılaştırma",
-    "curatedCollections": "Küratör Koleksiyonları",
-    "docs": "Dökümanlar",
-    "documentation": "Dokümantasyon",
-    "ecosystemTools": "Ekosistem Araçları",
-    "faq": "SSS",
-    "featuredArticles": "Öne Çıkan Makaleler",
-    "followUs": "Bizi takip edin",
-    "indexLabel": "İNDEKS",
-    "license": "Lisans",
+    "articles": "Articles",
+    "collections": "Collections",
+    "community": "Community",
+    "communityLinks": "Community Links",
+    "comparison": "Comparison",
+    "curatedCollections": "Curated Collections",
+    "docs": "Docs",
+    "documentation": "Documentation",
+    "ecosystemTools": "Ecosystem Tools",
+    "faq": "FAQ",
+    "featuredArticles": "Featured Articles",
+    "followUs": "Follow us",
+    "indexLabel": "INDEX",
+    "license": "License",
     "manifesto": "Manifesto",
-    "maxOutput": "Maks Çıktı",
-    "modelSize": "Model Boyutu",
-    "openSource": "Açık Kaynak",
-    "pricing": "Fiyatlandırma",
-    "products": "Ürünler",
-    "proprietary": "Özel",
-    "resources": "Kaynaklar",
-    "slogan": "Keşfedin. Karşılaştırın. 10x Daha Hızlı Oluşturun.",
-    "specificationsProtocols": "Özellikler ve Protokoller",
-    "stars": "Yıldızlar",
-    "type": "Tür",
-    "website": "Web Sitesi"
+    "maxOutput": "Max Output",
+    "modelSize": "Model Size",
+    "openSource": "Open Source",
+    "pricing": "Pricing",
+    "products": "Products",
+    "proprietary": "Proprietary",
+    "resources": "Resources",
+    "slogan": "Keşfet. Karşılaştır. 10 Kat Daha Hızlı Oluştur.",
+    "specificationsProtocols": "Specifications & Protocols",
+    "stars": "Stars",
+    "type": "Type",
+    "website": "Website"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -58,26 +58,30 @@
     "twitter": "X (Twitter)",
     "youtube": "YouTube"
   },
-  "stack": {
-    "cli": "CLI",
-    "extension": "Eklenti",
-    "ide": "IDE",
-    "model": "Model",
-    "modelProvider": "Model Sağlayıcısı",
-    "vendor": "Sağlayıcı"
-  },
-  "stacks": {
-    "allClis": "Tüm CLI'ler",
-    "allExtensions": "Tüm Eklentiler",
-    "allIdes": "Tüm IDE'ler",
-    "allModelProviders": "Tüm Model Sağlayıcıları",
-    "allModels": "Tüm Modeller",
-    "allVendors": "Tüm Sağlayıcılar",
-    "clis": "CLI'ler",
-    "extensions": "Eklentiler",
-    "ides": "IDE'ler",
-    "modelProviders": "Model Sağlayıcıları",
-    "models": "Modeller",
-    "vendors": "Sağlayıcılar"
+  "categories": {
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "vendor": "Vendor"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "vendors": "Vendors"
+    },
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    }
   }
 }

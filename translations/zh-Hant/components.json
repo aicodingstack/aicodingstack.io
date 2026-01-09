@@ -12,16 +12,16 @@
     "tools": "生態系統工具"
   },
   "docsSidebar": {
-    "label": "@:shared.common.documentation",
+    "label": "@:shared.terms.documentation",
     "title": "文件"
   },
   "filterSortBar": {
     "clearFilters": "清除篩選",
     "license": "授權：",
-    "openSource": "@:shared.common.openSource",
+    "openSource": "@:shared.terms.openSource",
     "platform": "平台：",
-    "proprietary": "@:shared.common.proprietary",
-    "search": "依名稱搜尋...",
+    "proprietary": "@:shared.terms.proprietary",
+    "search": "@:shared.actions.search by name...",
     "sort": "排序：",
     "sortDefault": "預設",
     "sortNameAsc": "名稱 (A-Z)",
@@ -37,14 +37,14 @@
   "header": {
     "aiCodingLandscape": "AI 編碼全景圖",
     "aiCodingLandscapeDesc": "視覺化 AI 編碼生態系統全貌",
-    "aiCodingStack": "@:shared.common.aiCodingStack",
-    "articles": "@:shared.common.articles",
+    "aiCodingStack": "@:shared.terms.aiCodingStack",
+    "articles": "@:shared.terms.articles",
     "closeMenu": "關閉選單",
-    "collections": "@:shared.common.collections",
+    "collections": "@:shared.terms.collections",
     "developmentTools": "開發工具",
     "intelligence": "智慧層",
     "landscape": "全景圖",
-    "manifesto": "@:shared.common.manifesto",
+    "manifesto": "@:shared.terms.manifesto",
     "openMenu": "開啟選單",
     "openSourceRank": "開放原始碼排行榜",
     "openSourceRankDesc": "依 GitHub 星標數探索開放原始碼 AI 編碼專案",
@@ -52,44 +52,6 @@
     "search": "@:shared.actions.search",
     "searchPlaceholder": "搜尋...",
     "toggleMenu": "切換選單"
-  },
-  "openSourceRank": {
-    "description": "探索並檢視依 GitHub 星標數排名的開放原始碼 AI 編碼工具。比較 IDE、命令列和擴充套件，找出適合您開發流程的完美工具。",
-    "filter": {
-      "all": "全部"
-    },
-    "meta": {
-      "description": "AI Coding Stack 中所有開放原始碼專案的排行榜，依 GitHub 星標數排序。檢視開放原始碼與專有工具的統計資料與趨勢。",
-      "title": "@:components.openSourceRank.title"
-    },
-    "noResults": "此分類未找到開放原始碼專案。",
-    "note": "注意：此頁面僅顯示有 GitHub 儲存庫的專案。部分專案雖非開放原始碼，但會建立 GitHub 儲存庫作為使用者意見回饋管道。",
-    "productType": {
-      "cli": "@:shared.stack.cli",
-      "extension": "@:shared.stack.extension",
-      "ide": "@:shared.stack.ide"
-    },
-    "statistics": {
-      "closedSource": "@:shared.common.proprietary",
-      "closedSourceCount": "專有專案",
-      "closedSourcePercentage": "專有占比",
-      "licenseBreakdown": "授權分佈",
-      "openSource": "@:shared.common.openSource",
-      "openSourceCount": "開放原始碼專案",
-      "projects": "個專案",
-      "title": "開放原始碼與專有分佈",
-      "totalProjects": "專案總數"
-    },
-    "table": {
-      "license": "@:shared.common.license",
-      "name": "名稱",
-      "openSourceTitle": "開放原始碼專案 ({count})",
-      "proprietaryTitle": "專有專案 ({count})",
-      "rank": "排名",
-      "stars": "@:shared.common.stars",
-      "type": "@:shared.common.type"
-    },
-    "title": "開放原始碼專案排行榜"
   },
   "productCommands": {
     "command": "指令",
@@ -128,44 +90,44 @@
   },
   "productHero": {
     "categories": {
-      "CLI": "@:shared.stack.cli",
-      "EXTENSION": "@:shared.stack.extension",
-      "IDE": "@:shared.stack.ide",
-      "MODEL": "@:shared.stack.model",
-      "PROVIDER": "@:shared.stack.modelProvider",
-      "VENDOR": "@:shared.stack.vendor"
+      "CLI": "@:shared.categories.singular.cli",
+      "EXTENSION": "@:shared.categories.singular.extension",
+      "IDE": "@:shared.categories.singular.ide",
+      "MODEL": "@:shared.categories.singular.model",
+      "PROVIDER": "@:shared.categories.singular.modelProvider",
+      "VENDOR": "@:shared.categories.singular.vendor"
     },
-    "documentation": "@:shared.common.documentation",
+    "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
     "getApiKey": "取得 API 金鑰",
-    "license": "@:shared.common.license",
+    "license": "@:shared.terms.license",
     "platforms": "平台",
     "providerTypes": {
       "foundation-model-provider": "Foundation 模型提供者",
       "model-service-provider": "模型服務提供者"
     },
     "runtime": "執行期",
-    "stars": "@:shared.common.stars",
+    "stars": "@:shared.terms.stars",
     "supportedIdes": "支援的 IDE",
-    "type": "@:shared.common.type",
-    "vendor": "@:shared.stack.vendor",
+    "type": "@:shared.terms.type",
+    "vendor": "Vendor",
     "version": "版本",
     "visitWebsite": "造訪網站"
   },
   "communityLinks": {
     "blog": "部落格",
     "blogDescription": "閱讀部落格文章",
-    "community": "@:shared.common.community",
+    "community": "@:shared.terms.community",
     "discord": "@:shared.platforms.discord",
     "discordDescription": "加入社群",
     "github": "@:shared.platforms.github",
     "githubDescription": "檢視儲存庫",
     "linkedin": "@:shared.platforms.linkedin",
-    "linkedinDescription": "@:shared.common.followUs",
+    "linkedinDescription": "@:shared.terms.followUs",
     "reddit": "@:shared.platforms.reddit",
     "redditDescription": "參與討論",
     "twitter": "@:shared.platforms.twitter",
-    "twitterDescription": "@:shared.common.followUs",
+    "twitterDescription": "@:shared.terms.followUs",
     "youtube": "@:shared.platforms.youtube",
     "youtubeDescription": "觀看影片"
   },
@@ -178,77 +140,50 @@
     "issueDescription": "回報問題與請求功能",
     "mcp": "MCP 文件",
     "mcpDescription": "了解 MCP 整合",
-    "pricing": "@:shared.common.pricing",
+    "pricing": "@:shared.terms.pricing",
     "pricingDescription": "檢視定價方案"
   },
   "resources": {
-    "community": "@:shared.common.community",
-    "resources": "@:shared.common.resources"
+    "community": "@:shared.terms.community",
+    "resources": "@:shared.terms.resources"
   },
   "productPricing": {
-    "title": "@:shared.common.pricing",
-    "viewFullDetails": "@:shared.actions.viewFullDetails"
+    "title": "@:shared.terms.pricing",
+    "viewFullDetails": "View full pricing details →"
   },
   "modelSpecifications": {
-    "title": "@:pages.modelDetail.specifications",
-    "modelSize": "@:pages.modelDetail.modelSize",
-    "contextWindow": "@:pages.modelDetail.contextWindow",
-    "maxOutput": "@:pages.modelDetail.maxOutput",
-    "pricing": "@:pages.modelDetail.pricing",
-    "input": "@:pages.modelDetail.input",
-    "output": "@:pages.modelDetail.output",
-    "cache": "@:pages.modelDetail.cache"
+    "title": "Specifications",
+    "modelSize": "@:shared.terms.modelSize",
+    "contextWindow": "Total Context",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "pricing": "@:shared.terms.pricing",
+    "input": "Input",
+    "output": "Output",
+    "cache": "Cache"
   },
-  "modelBenchmarks": {
-    "title": "@:pages.modelDetail.benchmarks.title",
-    "sweBench": "@:pages.modelDetail.benchmarks.sweBench",
-    "sweBenchDesc": "@:pages.modelDetail.benchmarks.sweBenchDesc",
-    "terminalBench": "@:pages.modelDetail.benchmarks.terminalBench",
-    "terminalBenchDesc": "@:pages.modelDetail.benchmarks.terminalBenchDesc",
-    "mmmu": "@:pages.modelDetail.benchmarks.mmmu",
-    "mmmuDesc": "@:pages.modelDetail.benchmarks.mmmuDesc",
-    "mmmuPro": "@:pages.modelDetail.benchmarks.mmmuPro",
-    "mmmuProDesc": "@:pages.modelDetail.benchmarks.mmmuProDesc",
-    "webDevArena": "@:pages.modelDetail.benchmarks.webDevArena",
-    "webDevArenaDesc": "@:pages.modelDetail.benchmarks.webDevArenaDesc",
-    "sciCode": "@:pages.modelDetail.benchmarks.sciCode",
-    "sciCodeDesc": "@:pages.modelDetail.benchmarks.sciCodeDesc",
-    "liveCodeBench": "@:pages.modelDetail.benchmarks.liveCodeBench",
-    "liveCodeBenchDesc": "@:pages.modelDetail.benchmarks.liveCodeBenchDesc"
+  "benchmarks": {
+    "title": "Performance Benchmarks",
+    "sweBench": "SWE-bench Verified",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBench": "TerminalBench 2.0",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "mmmu": "MMMU",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuPro": "MMMU Pro",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "webDevArena": "WebDevArena",
+    "webDevArenaDesc": "Web development challenges",
+    "sciCode": "SciCode",
+    "sciCodeDesc": "Scientific code generation",
+    "liveCodeBench": "LiveCodeBench",
+    "liveCodeBenchDesc": "Live coding performance"
   },
   "relatedProducts": {
-    "cli": "@:shared.stack.cli",
-    "extension": "@:shared.stack.extension",
-    "ide": "@:shared.stack.ide",
+    "cli": "@:shared.categories.singular.cli",
+    "extension": "@:shared.categories.singular.extension",
+    "ide": "@:shared.categories.singular.ide",
     "title": "相關產品",
     "viewProduct": "檢視產品"
-  },
-  "search": {
-    "categories": {
-      "clis": "@:shared.stacks.clis",
-      "extensions": "@:shared.stacks.extensions",
-      "ides": "@:shared.stacks.ides",
-      "models": "@:shared.stacks.models",
-      "providers": "@:shared.stacks.modelProviders",
-      "vendors": "@:shared.stacks.vendors"
-    },
-    "navigate": "以導覽",
-    "noResults": "未找到結果",
-    "noResultsFor": "未找到 \"{query}\" 的結果",
-    "placeholder": "搜尋 AI 編碼工具...",
-    "resultsCount": "{count} 個結果",
-    "resultsCountFor": "找到 {count} 個 \"{query}\" 的結果",
-    "searching": "搜尋中...",
-    "select": "以選擇",
-    "stacks": {
-      "clis": "@:shared.stacks.clis",
-      "extensions": "@:shared.stacks.extensions",
-      "ides": "@:shared.stacks.ides",
-      "modelProviders": "@:shared.stacks.modelProviders",
-      "models": "@:shared.stacks.models",
-      "vendors": "@:shared.stacks.vendors"
-    },
-    "title": "搜尋結果"
   },
   "sidebar": {
     "backToTop": "@:shared.actions.backToTop",

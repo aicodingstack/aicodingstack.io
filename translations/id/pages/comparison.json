@@ -2,7 +2,7 @@
   "clis": {
     "backTo": "Kembali ke CLI",
     "subtitle": "Asisten pengkodean baris perintah AI",
-    "title": "@:shared.stacks.clis"
+    "title": "Perbandingan CLI"
   },
   "columns": {
     "cache": "Cache",
@@ -15,14 +15,14 @@
     "license": "@:components.productHero.license",
     "links": "Tautan",
     "live-code-bench": "Live Code Bench",
-    "maxOutput": "@:shared.common.maxOutput",
+    "maxOutput": "Max Output",
     "maxPrice": "Harga Maksimum",
     "mmmu": "MMMU",
     "mmmu-pro": "MMMU Pro",
-    "modelSize": "@:shared.common.modelSize",
+    "modelSize": "Model Size",
     "output": "Output",
     "platforms": "@:components.productHero.platforms",
-    "pricing": "@:shared.common.pricing",
+    "pricing": "Pricing",
     "pricingCache": "Harga Cache",
     "pricingInput": "Harga Input",
     "pricingOutput": "Harga Output",
@@ -38,12 +38,12 @@
   "extensions": {
     "backTo": "Kembali ke Ekstensi",
     "subtitle": "Ekstensi dan plugin pengkodean AI",
-    "title": "@:shared.stacks.extensions"
+    "title": "Perbandingan Ekstensi"
   },
   "ides": {
     "backTo": "Kembali ke IDE",
     "subtitle": "Lingkungan pengembangan terintegrasi yang ditingkatkan dengan AI",
-    "title": "@:shared.stacks.ides"
+    "title": "Perbandingan IDE"
   },
   "linkTitles": {
     "documentation": "@:components.productHero.documentation",
@@ -53,7 +53,7 @@
   "models": {
     "backTo": "Kembali ke Model",
     "subtitle": "Model bahasa besar yang dioptimalkan untuk pembuatan dan analisis kode",
-    "title": "@:shared.stacks.models"
+    "title": "Perbandingan Model"
   },
   "pricingValues": {
     "free": "Gratis",

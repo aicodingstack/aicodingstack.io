@@ -1,27 +1,27 @@
 {
   "backToNavigation": {
-    "backTo": "@:shared.actions.backTo",
-    "indexLabel": "@:shared.common.indexLabel"
+    "backTo": "Kembali ke",
+    "indexLabel": "INDEKS"
   },
   "breadcrumb": {
     "home": "Beranda"
   },
   "collectionScrollbar": {
-    "articles": "@:shared.common.featuredArticles",
-    "specifications": "@:shared.common.specificationsProtocols",
-    "tools": "@:shared.common.ecosystemTools"
+    "articles": "Artikel Unggulan",
+    "specifications": "Spesifikasi & Protokol",
+    "tools": "Alat Ekosistem"
   },
   "docsSidebar": {
-    "label": "@:shared.common.documentation",
+    "label": "@:shared.terms.documentation",
     "title": "DOKUMENTASI"
   },
   "filterSortBar": {
     "clearFilters": "Hapus filter",
     "license": "Lisensi:",
-    "openSource": "@:shared.common.openSource",
+    "openSource": "@:shared.terms.openSource",
     "platform": "Platform:",
-    "proprietary": "@:shared.common.proprietary",
-    "search": "Cari berdasarkan nama...",
+    "proprietary": "@:shared.terms.proprietary",
+    "search": "@:shared.actions.search by name...",
     "sort": "Urutkan:",
     "sortDefault": "Default",
     "sortNameAsc": "Nama (A-Z)",
@@ -37,14 +37,14 @@
   "header": {
     "aiCodingLandscape": "Pemandangan Coding AI",
     "aiCodingLandscapeDesc": "Visualisasi ekosistem coding AI lengkap",
-    "aiCodingStack": "@:shared.common.aiCodingStack",
-    "articles": "@:shared.common.articles",
+    "aiCodingStack": "@:shared.terms.aiCodingStack",
+    "articles": "@:shared.terms.articles",
     "closeMenu": "Tutup menu",
-    "collections": "@:shared.common.collections",
+    "collections": "@:shared.terms.collections",
     "developmentTools": "Alat Pengembangan",
     "intelligence": "Kecerdasan",
     "landscape": "Pemandangan",
-    "manifesto": "@:shared.common.manifesto",
+    "manifesto": "@:shared.terms.manifesto",
     "openMenu": "Buka menu",
     "openSourceRank": "Peringkat Open Source",
     "openSourceRankDesc": "Jelajahi proyek coding AI open source berdasarkan bintang GitHub",
@@ -52,44 +52,6 @@
     "search": "@:shared.actions.search",
     "searchPlaceholder": "Cari...",
     "toggleMenu": "Toggle menu"
-  },
-  "openSourceRank": {
-    "description": "Temukan dan jelajahi alat coding AI open source yang diurutkan berdasarkan bintang GitHub. Bandingkan IDE, CLI, dan ekstensi untuk menemukan alat yang sempurna untuk alur kerja pengembangan Anda.",
-    "filter": {
-      "all": "Semua"
-    },
-    "meta": {
-      "description": "Peringkat semua proyek open source di AI Coding Stack, diurutkan berdasarkan bintang GitHub. Lihat statistik dan tren alat open source vs proprietary.",
-      "title": "@:components.openSourceRank.title"
-    },
-    "noResults": "Tidak ada proyek open source yang ditemukan untuk kategori ini.",
-    "note": "Catatan: Halaman ini hanya menampilkan proyek dengan repositori GitHub. Beberapa proyek, meskipun tidak open source, memelihara repositori GitHub sebagai kanal umpan balik pengguna.",
-    "productType": {
-      "cli": "@:shared.stack.cli",
-      "extension": "@:shared.stack.extension",
-      "ide": "@:shared.stack.ide"
-    },
-    "statistics": {
-      "closedSource": "@:shared.common.proprietary",
-      "closedSourceCount": "Proyek Proprietary",
-      "closedSourcePercentage": "Persentase Proprietary",
-      "licenseBreakdown": "Distribusi Lisensi",
-      "openSource": "@:shared.common.openSource",
-      "openSourceCount": "Proyek Open Source",
-      "projects": "proyek",
-      "title": "Distribusi Open Source vs Proprietary",
-      "totalProjects": "Total Proyek"
-    },
-    "table": {
-      "license": "@:shared.common.license",
-      "name": "Nama",
-      "openSourceTitle": "Proyek Open Source ({count})",
-      "proprietaryTitle": "Proyek Proprietary ({count})",
-      "rank": "Peringkat",
-      "stars": "@:shared.common.stars",
-      "type": "@:shared.common.type"
-    },
-    "title": "Peringkat Proyek Open Source"
   },
   "productCommands": {
     "command": "Perintah",
@@ -128,44 +90,44 @@
   },
   "productHero": {
     "categories": {
-      "CLI": "@:shared.stack.cli",
-      "EXTENSION": "@:shared.stack.extension",
-      "IDE": "@:shared.stack.ide",
-      "MODEL": "@:shared.stack.model",
-      "PROVIDER": "@:shared.stack.modelProvider",
-      "VENDOR": "@:shared.stack.vendor"
+      "CLI": "@:shared.categories.singular.cli",
+      "EXTENSION": "@:shared.categories.singular.extension",
+      "IDE": "@:shared.categories.singular.ide",
+      "MODEL": "@:shared.categories.singular.model",
+      "PROVIDER": "@:shared.categories.singular.modelProvider",
+      "VENDOR": "@:shared.categories.singular.vendor"
     },
-    "documentation": "@:shared.common.documentation",
+    "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
     "getApiKey": "Dapatkan Kunci API",
-    "license": "@:shared.common.license",
+    "license": "@:shared.terms.license",
     "platforms": "Platform",
     "providerTypes": {
       "foundation-model-provider": "Penyedia Model Dasar",
       "model-service-provider": "Penyedia Layanan Model"
     },
     "runtime": "Runtime",
-    "stars": "@:shared.common.stars",
+    "stars": "@:shared.terms.stars",
     "supportedIdes": "IDE yang Didukung",
-    "type": "@:shared.common.type",
-    "vendor": "@:shared.stack.vendor",
+    "type": "@:shared.terms.type",
+    "vendor": "Vendor",
     "version": "Versi",
     "visitWebsite": "Kunjungi situs web"
   },
   "communityLinks": {
     "blog": "Blog",
     "blogDescription": "Baca postingan blog",
-    "community": "@:shared.common.community",
+    "community": "@:shared.terms.community",
     "discord": "@:shared.platforms.discord",
     "discordDescription": "Bergabung komunitas",
     "github": "@:shared.platforms.github",
     "githubDescription": "Lihat repositori",
     "linkedin": "@:shared.platforms.linkedin",
-    "linkedinDescription": "@:shared.common.followUs",
+    "linkedinDescription": "@:shared.terms.followUs",
     "reddit": "@:shared.platforms.reddit",
     "redditDescription": "Ikuti diskusi",
     "twitter": "@:shared.platforms.twitter",
-    "twitterDescription": "@:shared.common.followUs",
+    "twitterDescription": "@:shared.terms.followUs",
     "youtube": "@:shared.platforms.youtube",
     "youtubeDescription": "Tonton video"
   },
@@ -178,77 +140,50 @@
     "issueDescription": "Laporkan bug dan minta fitur",
     "mcp": "Dokumentasi MCP",
     "mcpDescription": "Pelajari integrasi MCP",
-    "pricing": "@:shared.common.pricing",
+    "pricing": "@:shared.terms.pricing",
     "pricingDescription": "Lihat paket harga"
   },
   "resources": {
-    "community": "@:shared.common.community",
-    "resources": "@:shared.common.resources"
+    "community": "@:shared.terms.community",
+    "resources": "@:shared.terms.resources"
   },
   "productPricing": {
-    "title": "@:shared.common.pricing",
-    "viewFullDetails": "@:shared.actions.viewFullDetails"
+    "title": "@:shared.terms.pricing",
+    "viewFullDetails": "View full pricing details →"
   },
   "modelSpecifications": {
-    "title": "@:pages.modelDetail.specifications",
-    "modelSize": "@:pages.modelDetail.modelSize",
-    "contextWindow": "@:pages.modelDetail.contextWindow",
-    "maxOutput": "@:pages.modelDetail.maxOutput",
-    "pricing": "@:pages.modelDetail.pricing",
-    "input": "@:pages.modelDetail.input",
-    "output": "@:pages.modelDetail.output",
-    "cache": "@:pages.modelDetail.cache"
+    "title": "Specifications",
+    "modelSize": "@:shared.terms.modelSize",
+    "contextWindow": "Total Context",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "pricing": "@:shared.terms.pricing",
+    "input": "Input",
+    "output": "Output",
+    "cache": "Cache"
   },
-  "modelBenchmarks": {
-    "title": "@:pages.modelDetail.benchmarks.title",
-    "sweBench": "@:pages.modelDetail.benchmarks.sweBench",
-    "sweBenchDesc": "@:pages.modelDetail.benchmarks.sweBenchDesc",
-    "terminalBench": "@:pages.modelDetail.benchmarks.terminalBench",
-    "terminalBenchDesc": "@:pages.modelDetail.benchmarks.terminalBenchDesc",
-    "mmmu": "@:pages.modelDetail.benchmarks.mmmu",
-    "mmmuDesc": "@:pages.modelDetail.benchmarks.mmmuDesc",
-    "mmmuPro": "@:pages.modelDetail.benchmarks.mmmuPro",
-    "mmmuProDesc": "@:pages.modelDetail.benchmarks.mmmuProDesc",
-    "webDevArena": "@:pages.modelDetail.benchmarks.webDevArena",
-    "webDevArenaDesc": "@:pages.modelDetail.benchmarks.webDevArenaDesc",
-    "sciCode": "@:pages.modelDetail.benchmarks.sciCode",
-    "sciCodeDesc": "@:pages.modelDetail.benchmarks.sciCodeDesc",
-    "liveCodeBench": "@:pages.modelDetail.benchmarks.liveCodeBench",
-    "liveCodeBenchDesc": "@:pages.modelDetail.benchmarks.liveCodeBenchDesc"
+  "benchmarks": {
+    "title": "Performance Benchmarks",
+    "sweBench": "SWE-bench Verified",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBench": "TerminalBench 2.0",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "mmmu": "MMMU",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuPro": "MMMU Pro",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "webDevArena": "WebDevArena",
+    "webDevArenaDesc": "Web development challenges",
+    "sciCode": "SciCode",
+    "sciCodeDesc": "Scientific code generation",
+    "liveCodeBench": "LiveCodeBench",
+    "liveCodeBenchDesc": "Live coding performance"
   },
   "relatedProducts": {
-    "cli": "CLI",
-    "extension": "Ekstensi",
-    "ide": "IDE",
+    "cli": "@:shared.categories.singular.cli",
+    "extension": "@:shared.categories.singular.extension",
+    "ide": "@:shared.categories.singular.ide",
     "title": "Produk Terkait",
     "viewProduct": "Lihat Produk"
-  },
-  "search": {
-    "categories": {
-      "clis": "@:shared.stacks.clis",
-      "extensions": "@:shared.stacks.extensions",
-      "ides": "@:shared.stacks.ides",
-      "models": "@:shared.stacks.models",
-      "providers": "@:shared.stacks.modelProviders",
-      "vendors": "@:shared.stacks.vendors"
-    },
-    "navigate": "untuk menavigasi",
-    "noResults": "Tidak ada hasil yang ditemukan",
-    "noResultsFor": "Tidak ada hasil yang ditemukan untuk \"{query}\"",
-    "placeholder": "Cari alat coding AI...",
-    "resultsCount": "{count} {count, plural, one {hasil} other {hasil}}",
-    "resultsCountFor": "{count} {count, plural, one {hasil} other {hasil}} untuk \"{query}\"",
-    "searching": "Mencari...",
-    "select": "untuk memilih",
-    "stacks": {
-      "clis": "@:shared.stacks.clis",
-      "extensions": "@:shared.stacks.extensions",
-      "ides": "@:shared.stacks.ides",
-      "modelProviders": "@:shared.stacks.modelProviders",
-      "models": "@:shared.stacks.models",
-      "vendors": "@:shared.stacks.vendors"
-    },
-    "title": "Hasil Pencarian"
   },
   "sidebar": {
     "backToTop": "@:shared.actions.backToTop",

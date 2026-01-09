@@ -1,16 +1,16 @@
 {
   "articles": {
-    "description": "Pflichtlektüre über KI-Coding von Branchenführern",
+    "description": "Pflichtlektüre über AI-Coding von Branchenführern",
     "title": "Featured Artikel"
   },
   "specifications": {
     "description": "Wesentliche Standards und Protokolle für moderne Softwareentwicklung",
     "title": "Spezifikationen & Protokolle"
   },
-  "subtitle": "Handverlesene Ressourcen, Spezifikationen, Protokolle und Tools für KI-Coding",
+  "subtitle": "Handverlesene Ressourcen, Spezifikationen, Protokolle und Tools für AI-Coding",
   "title": "Kuratierte Sammlungen",
   "tools": {
-    "description": "Kuratierte Tools und Utilities für KI-Coding-Workflows",
+    "description": "Kuratierte Tools und Utilities für AI-Coding-Workflows",
     "title": "Ökosystem-Tools"
   }
 }

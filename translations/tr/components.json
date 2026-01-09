@@ -12,16 +12,16 @@
     "tools": "Ekosistem Araçları"
   },
   "docsSidebar": {
-    "label": "Dokümantasyon",
+    "label": "@:shared.terms.documentation",
     "title": "DOKÜMANTASYON"
   },
   "filterSortBar": {
     "clearFilters": "Filtreleri temizle",
     "license": "Lisans:",
-    "openSource": "Açık Kaynak",
+    "openSource": "@:shared.terms.openSource",
     "platform": "Platforma:",
-    "proprietary": "Tescilli",
-    "search": "Ada göre ara...",
+    "proprietary": "@:shared.terms.proprietary",
+    "search": "@:shared.actions.search by name...",
     "sort": "Sırala:",
     "sortDefault": "Varsayılan",
     "sortNameAsc": "Ad (A-Z)",
@@ -37,59 +37,21 @@
   "header": {
     "aiCodingLandscape": "AI Kodlama Manzarası",
     "aiCodingLandscapeDesc": "AI kodlama ekosisteminin tamamını görselleştirin",
-    "aiCodingStack": "AI Coding Stack",
-    "articles": "Makaleler",
+    "aiCodingStack": "@:shared.terms.aiCodingStack",
+    "articles": "@:shared.terms.articles",
     "closeMenu": "Menüyü kapat",
-    "collections": "Koleksiyonlar",
+    "collections": "@:shared.terms.collections",
     "developmentTools": "Geliştirme Araçları",
     "intelligence": "Zeka",
     "landscape": "Manzara",
-    "manifesto": "Manifesto",
+    "manifesto": "@:shared.terms.manifesto",
     "openMenu": "Menüyü aç",
     "openSourceRank": "Açık Kaynak Sıralaması",
     "openSourceRankDesc": "GitHub yıldızlarına göre açık kaynaklı AI kodlama projelerini keşfedin",
     "ranking": "Sıralama",
-    "search": "Ara",
+    "search": "@:shared.actions.search",
     "searchPlaceholder": "Ara...",
     "toggleMenu": "Menüyü değiştir"
-  },
-  "openSourceRank": {
-    "description": "GitHub yıldızlarına göre sıralanmış açık kaynaklı AI kodlama araçlarını keşfedin ve inceleyin. Geliştirme iş akışınız için mükemmel araçları bulmak için IDE'leri, CLI'leri ve uzantıları karşılaştırın.",
-    "filter": {
-      "all": "Tümü"
-    },
-    "meta": {
-      "description": "GitHub yıldızlarına göre sıralanmış AI Coding Stack içindeki tüm açık kaynak projelerin sıralaması. Açık kaynak ve tescilli araçların istatistiklerini ve trendlerini görün.",
-      "title": "Açık Kaynak Projeleri Sıralaması"
-    },
-    "noResults": "Bu kategori için açık kaynak projesi bulunamadı.",
-    "note": "Not: Bu sayfa yalnızca GitHub depolarına sahip projeleri gösterir. Bazı projeler, açık kaynak olmasalar da, kullanıcı geri bildirimi kanalları olarak GitHub depolarını sürdürür.",
-    "productType": {
-      "cli": "CLI",
-      "extension": "Uzantı",
-      "ide": "IDE"
-    },
-    "statistics": {
-      "closedSource": "Tescilli",
-      "closedSourceCount": "Tescilli Projeler",
-      "closedSourcePercentage": "Tescilli Yüzde",
-      "licenseBreakdown": "Lisans Dağılımı",
-      "openSource": "Açık Kaynak",
-      "openSourceCount": "Açık Kaynak Projeler",
-      "projects": "proje",
-      "title": "Açık Kaynak ve Tescilli Dağılımı",
-      "totalProjects": "Toplam Proje"
-    },
-    "table": {
-      "license": "Lisans",
-      "name": "Ad",
-      "openSourceTitle": "Açık Kaynak Projeler ({count})",
-      "proprietaryTitle": "Tescilli Projeler ({count})",
-      "rank": "Sıralama",
-      "stars": "Yıldız",
-      "type": "Tür"
-    },
-    "title": "Açık Kaynak Projeleri Sıralaması"
   },
   "productCommands": {
     "command": "Komut",
@@ -128,26 +90,26 @@
   },
   "productHero": {
     "categories": {
-      "CLI": "CLI",
-      "EXTENSION": "Uzantı",
-      "IDE": "IDE",
-      "MODEL": "Model",
-      "PROVIDER": "Model Sağlayıcısı",
-      "VENDOR": "Sağlayıcı"
+      "CLI": "@:shared.categories.singular.cli",
+      "EXTENSION": "@:shared.categories.singular.extension",
+      "IDE": "@:shared.categories.singular.ide",
+      "MODEL": "@:shared.categories.singular.model",
+      "PROVIDER": "@:shared.categories.singular.modelProvider",
+      "VENDOR": "@:shared.categories.singular.vendor"
     },
-    "documentation": "Dokümantasyon",
-    "download": "İndir",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
     "getApiKey": "API Anahtarı Al",
-    "license": "Lisans",
+    "license": "@:shared.terms.license",
     "platforms": "Platformlar",
     "providerTypes": {
       "foundation-model-provider": "Temel Model Sağlayıcısı",
       "model-service-provider": "Model Hizmet Sağlayıcısı"
     },
     "runtime": "Çalışma Zamanı",
-    "stars": "Yıldız",
+    "stars": "@:shared.terms.stars",
     "supportedIdes": "Desteklenen IDE'ler",
-    "type": "Tür",
+    "type": "@:shared.terms.type",
     "vendor": "Sağlayıcı",
     "version": "Sürüm",
     "visitWebsite": "Web Sitesini Ziyaret Et"
@@ -155,104 +117,77 @@
   "communityLinks": {
     "blog": "Blog",
     "blogDescription": "Blog gönderilerini oku",
-    "community": "Topluluk",
-    "discord": "Discord",
+    "community": "@:shared.terms.community",
+    "discord": "@:shared.platforms.discord",
     "discordDescription": "Topluluğa katıl",
-    "github": "GitHub",
+    "github": "@:shared.platforms.github",
     "githubDescription": "Depoları görüntüle",
-    "linkedin": "LinkedIn",
-    "linkedinDescription": "Bizi takip et",
-    "reddit": "Reddit",
+    "linkedin": "@:shared.platforms.linkedin",
+    "linkedinDescription": "@:shared.terms.followUs",
+    "reddit": "@:shared.platforms.reddit",
     "redditDescription": "Tartışmaya katıl",
-    "twitter": "X",
-    "twitterDescription": "Bizi takip et",
-    "youtube": "YouTube",
+    "twitter": "@:shared.platforms.twitter",
+    "twitterDescription": "@:shared.terms.followUs",
+    "youtube": "@:shared.platforms.youtube",
     "youtubeDescription": "Videoları izle"
   },
   "resourceLinks": {
     "changelog": "Değişiklik Günlüğü",
     "changelogDescription": "Değişiklik günlüğünü görüntüle",
-    "download": "İndir",
+    "download": "@:shared.actions.download",
     "downloadDescription": "En son sürümü indir",
     "issue": "Sorun Takipçisi",
     "issueDescription": "Hata bildirin ve özellik isteyin",
     "mcp": "MCP Dokümantasyonu",
     "mcpDescription": "MCP entegrasyonu hakkında bilgi edinin",
-    "pricing": "Fiyatlandırma",
+    "pricing": "@:shared.terms.pricing",
     "pricingDescription": "Fiyat planlarını görüntüle"
   },
   "resources": {
-    "community": "Topluluk",
-    "resources": "Kaynaklar"
+    "community": "@:shared.terms.community",
+    "resources": "@:shared.terms.resources"
   },
   "productPricing": {
-    "title": "Fiyatlandırma",
+    "title": "@:shared.terms.pricing",
     "viewFullDetails": "Tam fiyat detaylarını görüntüle"
   },
   "modelSpecifications": {
-    "title": "Model Özellikleri",
-    "modelSize": "Model Boyutu",
-    "contextWindow": "Bağlam Penceresi",
-    "maxOutput": "Maksimum Çıktı",
-    "pricing": "Fiyatlandırma",
-    "input": "Girdi",
-    "output": "Çıktı",
-    "cache": "Önbellek"
+    "title": "Specifications",
+    "modelSize": "@:shared.terms.modelSize",
+    "contextWindow": "Total Context",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "pricing": "@:shared.terms.pricing",
+    "input": "Input",
+    "output": "Output",
+    "cache": "Cache"
   },
-  "modelBenchmarks": {
-    "title": "Model Kıyaslamaları",
-    "sweBench": "SWE-bench",
-    "sweBenchDesc": "Gerçek dünya geliştirme sorunları performansı",
-    "terminalBench": "TerminalBench",
-    "terminalBenchDesc": "Terminal görevlerindeki performans",
+  "benchmarks": {
+    "title": "Performance Benchmarks",
+    "sweBench": "SWE-bench Verified",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBench": "TerminalBench 2.0",
+    "terminalBenchDesc": "Command-line interface proficiency",
     "mmmu": "MMMU",
-    "mmmuDesc": "Akademik bilgi değerlendirmesi",
+    "mmmuDesc": "Multimodal understanding",
     "mmmuPro": "MMMU Pro",
-    "mmmuProDesc": "Genişletilmiş akademik bilgi değerlendirmesi",
+    "mmmuProDesc": "Advanced multimodal tasks",
     "webDevArena": "WebDevArena",
-    "webDevArenaDesc": "Web geliştirme becerileri",
+    "webDevArenaDesc": "Web development challenges",
     "sciCode": "SciCode",
-    "sciCodeDesc": "Bilimsel hesaplama",
+    "sciCodeDesc": "Scientific code generation",
     "liveCodeBench": "LiveCodeBench",
-    "liveCodeBenchDesc": "Canlı kodlama"
+    "liveCodeBenchDesc": "Live coding performance"
   },
   "relatedProducts": {
-    "cli": "CLI",
-    "extension": "Uzantı",
-    "ide": "IDE",
+    "cli": "@:shared.categories.singular.cli",
+    "extension": "@:shared.categories.singular.extension",
+    "ide": "@:shared.categories.singular.ide",
     "title": "İlgili Ürünler",
     "viewProduct": "Ürünü Görüntüle"
   },
-  "search": {
-    "categories": {
-      "clis": "CLI'ler",
-      "extensions": "Uzantılar",
-      "ides": "IDE'ler",
-      "models": "Modeller",
-      "providers": "Model Sağlayıcıları",
-      "vendors": "Sağlayıcılar"
-    },
-    "navigate": "gitmek için",
-    "noResults": "Sonuç bulunamadı",
-    "noResultsFor": "\"{query}\" için sonuç bulunamadı",
-    "placeholder": "AI kodlama araçlarında ara...",
-    "resultsCount": "{count} {count, plural, one {sonuç} other {sonuç}}",
-    "resultsCountFor": "\"{query}\" için {count} {count, plural, one {sonuç} other {sonuç}}",
-    "searching": "Aranıyor...",
-    "select": "seçmek için",
-    "stacks": {
-      "clis": "CLI'ler",
-      "extensions": "Uzantılar",
-      "ides": "IDE'ler",
-      "modelProviders": "Model Sağlayıcıları",
-      "models": "Modeller",
-      "vendors": "Sağlayıcılar"
-    },
-    "title": "Arama Sonuçları"
-  },
   "sidebar": {
-    "backToTop": "Başa dön",
-    "selectItem": "Öğe seçin"
+    "backToTop": "@:shared.actions.backToTop",
+    "selectItem": "@:shared.actions.selectItem"
   },
   "vendorMatrix": {
     "cell": {

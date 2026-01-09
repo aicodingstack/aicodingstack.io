@@ -5,6 +5,8 @@ import curatedCollections from './pages/curated-collections.json'
 import docs from './pages/docs.json'
 import home from './pages/home.json'
 import manifesto from './pages/manifesto.json'
+import openSourceRank from './pages/open-source-rank.json'
+import search from './pages/search.json'
 import stacks from './pages/stacks.json'
 import shared from './shared.json'
 
@@ -17,8 +19,10 @@ const messages = {
     docs,
     articles,
     curatedCollections,
-    ...stacks,
+    stacks,
     comparison,
+    openSourceRank,
+    search,
   },
 }
 
