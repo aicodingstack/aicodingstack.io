@@ -8,7 +8,7 @@
       "description": "GitHub Copilot CLI 将 AI 辅助功能带到您的终端。建议 shell 命令、生成代码片段，并通过自然语言与代码仓库集成。"
     },
     "de": {
-      "description": "GitHub Copilot CLI bringt KI-Unterstützung in Ihr Terminal. Schlägt Shell-Befehle vor, generiert Code-Snippets und integriert sich über natürliche Sprache mit Repositories."
+      "description": "GitHub Copilot CLI bringt AI-Unterstützung in Ihr Terminal. Schlägt Shell-Befehle vor, generiert Code-Snippets und integriert sich über natürliche Sprache mit Repositories."
     },
     "ko": {
       "description": "GitHub Copilot CLI는 AI 지원을 터미널로 가져옵니다. 셸 명령을 제안하고, 코드 스니펫을 생성하며, 자연어를 통해 저장소와 통합합니다."
