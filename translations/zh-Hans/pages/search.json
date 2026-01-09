@@ -1,0 +1,27 @@
+{
+  "categories": {
+    "clis": "CLIs",
+    "extensions": "Extensions",
+    "ides": "IDEs",
+    "models": "Models",
+    "providers": "Model Providers",
+    "vendors": "Vendors"
+  },
+  "navigate": "to navigate",
+  "noResults": "No results found",
+  "noResultsFor": "没有找到 \"{query}\" 的结果",
+  "placeholder": "Search AI coding tools...",
+  "resultsCount": "{count} 个结果",
+  "resultsCountFor": "找到 {count} 个 \"{query}\" 的结果",
+  "searching": "Searching...",
+  "select": "to select",
+  "stacks": {
+    "clis": "CLIs",
+    "extensions": "Extensions",
+    "ides": "IDEs",
+    "modelProviders": "Model Providers",
+    "models": "Models",
+    "vendors": "Vendors"
+  },
+  "title": "Search Results"
+}
