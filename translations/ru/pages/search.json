@@ -1,27 +1,27 @@
 {
   "categories": {
-    "clis": "CLIs",
-    "extensions": "Extensions",
-    "ides": "IDEs",
-    "models": "Models",
-    "providers": "Model Providers",
-    "vendors": "Vendors"
+    "clis": "@:shared.categories.plural.clis",
+    "extensions": "@:shared.categories.plural.extensions",
+    "ides": "@:shared.categories.plural.ides",
+    "models": "@:shared.categories.plural.models",
+    "providers": "@:shared.categories.plural.modelProviders",
+    "vendors": "@:shared.categories.plural.vendors"
   },
-  "navigate": "to navigate",
-  "noResults": "No results found",
-  "noResultsFor": "No results found for \"{query}\"",
-  "placeholder": "Search AI coding tools...",
-  "resultsCount": "{count} {count, plural, one {result} other {results}}",
-  "resultsCountFor": "{count} {count, plural, one {result} other {results}} for \"{query}\"",
-  "searching": "Searching...",
-  "select": "to select",
+  "navigate": "навигация",
+  "noResults": "Результаты не найдены",
+  "noResultsFor": "Результаты не найдены для \"{query}\"",
+  "placeholder": "Поиск инструментов ИИ-кодирования...",
+  "resultsCount": "{count} {count, plural, one {результат} few {результата} other {результатов}}",
+  "resultsCountFor": "{count} {count, plural, one {результат} few {результата} other {результатов}} для \"{query}\"",
+  "searching": "Поиск...",
+  "select": "выбрать",
   "stacks": {
-    "clis": "CLIs",
-    "extensions": "Extensions",
-    "ides": "IDEs",
-    "modelProviders": "Model Providers",
-    "models": "Models",
-    "vendors": "Vendors"
+    "clis": "@:shared.categories.plural.clis",
+    "extensions": "@:shared.categories.plural.extensions",
+    "ides": "@:shared.categories.plural.ides",
+    "modelProviders": "@:shared.categories.plural.modelProviders",
+    "models": "@:shared.categories.plural.models",
+    "vendors": "@:shared.categories.plural.vendors"
   },
-  "title": "Search Results"
+  "title": "Результаты поиска"
 }

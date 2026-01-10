@@ -1,27 +1,27 @@
 {
   "categories": {
-    "clis": "CLIs",
-    "extensions": "Extensions",
-    "ides": "IDEs",
-    "models": "Models",
-    "providers": "Model Providers",
-    "vendors": "Vendors"
+    "clis": "@:shared.categories.plural.clis",
+    "extensions": "@:shared.categories.plural.extensions",
+    "ides": "@:shared.categories.plural.ides",
+    "models": "@:shared.categories.plural.models",
+    "providers": "@:shared.categories.plural.modelProviders",
+    "vendors": "@:shared.categories.plural.vendors"
   },
-  "navigate": "to navigate",
-  "noResults": "No results found",
+  "navigate": "navegar",
+  "noResults": "Nenhum resultado encontrado",
   "noResultsFor": "Nenhum resultado encontrado para \"{query}\"",
-  "placeholder": "Search AI coding tools...",
+  "placeholder": "Pesquisar ferramentas de codificação IA...",
   "resultsCount": "{count} {count, plural, one {resultado} other {resultados}}",
   "resultsCountFor": "{count} {count, plural, one {resultado} other {resultados}} para \"{query}\"",
-  "searching": "Searching...",
-  "select": "to select",
+  "searching": "Pesquisando...",
+  "select": "selecionar",
   "stacks": {
-    "clis": "CLIs",
-    "extensions": "Extensions",
-    "ides": "IDEs",
-    "modelProviders": "Model Providers",
-    "models": "Models",
-    "vendors": "Vendors"
+    "clis": "@:shared.categories.plural.clis",
+    "extensions": "@:shared.categories.plural.extensions",
+    "ides": "@:shared.categories.plural.ides",
+    "modelProviders": "@:shared.categories.plural.modelProviders",
+    "models": "@:shared.categories.plural.models",
+    "vendors": "@:shared.categories.plural.vendors"
   },
-  "title": "Search Results"
+  "title": "Resultados da Pesquisa"
 }

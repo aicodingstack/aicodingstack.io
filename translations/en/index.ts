@@ -4,6 +4,7 @@ import comparison from './pages/comparison.json'
 import curatedCollections from './pages/curated-collections.json'
 import docs from './pages/docs.json'
 import home from './pages/home.json'
+import landscape from './pages/landscape.json'
 import manifesto from './pages/manifesto.json'
 import openSourceRank from './pages/open-source-rank.json'
 import search from './pages/search.json'
@@ -21,6 +22,7 @@ const messages = {
     curatedCollections,
     stacks,
     comparison,
+    landscape,
     openSourceRank,
     search,
   },

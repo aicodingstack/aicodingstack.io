@@ -45,7 +45,12 @@
     "specificationsProtocols": "仕様とプロトコル",
     "stars": "スター",
     "type": "タイプ",
-    "website": "Webサイト"
+    "vendor": "Vendor",
+    "version": "バージョン",
+    "visitWebsite": "Web サイトを表示",
+    "website": "Webサイト",
+    "platforms": "プラットフォーム",
+    "supportedIdes": "対応 IDE"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -83,5 +88,21 @@
       "models": "すべてのモデル",
       "vendors": "すべてのベンダー"
     }
-  }
+  },
+  "labels": {
+    "findOnAiPlatforms": "AIプラットフォームで探す",
+    "getApiKey": "APIキーを取得",
+    "specifications": "仕様",
+    "quickLinks": "クイックリンク"
+  },
+  "providerTypes": {
+    "foundation-model-provider": "基盤モデルプロバイダー",
+    "model-service-provider": "モデルサービスプロバイダー"
+  },
+  "lifecycle": {
+    "latest": "Latest",
+    "maintained": "Maintained",
+    "deprecated": "Deprecated"
+  },
+  "knowledgeCutoff": "Knowledge Cutoff"
 }

@@ -45,7 +45,12 @@
     "specificationsProtocols": "规范与协议",
     "stars": "星标",
     "type": "类型",
-    "website": "网站"
+    "vendor": "厂商",
+    "version": "版本",
+    "visitWebsite": "访问官网",
+    "website": "网站",
+    "platforms": "平台",
+    "supportedIdes": "支持的 IDE"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -83,5 +88,21 @@
       "models": "All Models",
       "vendors": "All Vendors"
     }
-  }
+  },
+  "labels": {
+    "findOnAiPlatforms": "在 AI 平台上查找",
+    "getApiKey": "获取 API 密钥",
+    "specifications": "规格",
+    "quickLinks": "快速链接"
+  },
+  "providerTypes": {
+    "foundation-model-provider": "基础模型提供商",
+    "model-service-provider": "模型服务提供商"
+  },
+  "lifecycle": {
+    "latest": "Latest",
+    "maintained": "Maintained",
+    "deprecated": "Deprecated"
+  },
+  "knowledgeCutoff": "Knowledge Cutoff"
 }

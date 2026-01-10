@@ -1,27 +1,27 @@
 {
   "categories": {
-    "clis": "CLIs",
-    "extensions": "Extensions",
-    "ides": "IDEs",
-    "models": "Models",
-    "providers": "Model Providers",
-    "vendors": "Vendors"
+    "clis": "@:shared.categories.plural.clis",
+    "extensions": "@:shared.categories.plural.extensions",
+    "ides": "@:shared.categories.plural.ides",
+    "models": "@:shared.categories.plural.models",
+    "providers": "@:shared.categories.plural.modelProviders",
+    "vendors": "@:shared.categories.plural.vendors"
   },
-  "navigate": "to navigate",
-  "noResults": "No results found",
+  "navigate": "이동",
+  "noResults": "결과 없음",
   "noResultsFor": "\"{query}\"에 대한 결과를 찾을 수 없습니다",
-  "placeholder": "Search AI coding tools...",
+  "placeholder": "AI 코딩 도구 검색...",
   "resultsCount": "{count}개의 결과",
   "resultsCountFor": "\"{query}\"에 대해 {count}개의 결과",
-  "searching": "Searching...",
-  "select": "to select",
+  "searching": "검색 중...",
+  "select": "선택",
   "stacks": {
-    "clis": "CLIs",
-    "extensions": "Extensions",
-    "ides": "IDEs",
-    "modelProviders": "Model Providers",
-    "models": "Models",
-    "vendors": "Vendors"
+    "clis": "@:shared.categories.plural.clis",
+    "extensions": "@:shared.categories.plural.extensions",
+    "ides": "@:shared.categories.plural.ides",
+    "modelProviders": "@:shared.categories.plural.modelProviders",
+    "models": "@:shared.categories.plural.models",
+    "vendors": "@:shared.categories.plural.vendors"
   },
-  "title": "Search Results"
+  "title": "검색 결과"
 }

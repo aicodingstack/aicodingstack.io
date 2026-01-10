@@ -45,7 +45,12 @@
     "specificationsProtocols": "規格與協議",
     "stars": "星標",
     "type": "類型",
-    "website": "網站"
+    "vendor": "Vendor",
+    "version": "版本",
+    "visitWebsite": "造訪網站",
+    "website": "網站",
+    "platforms": "平台",
+    "supportedIdes": "支援的 IDE"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -83,5 +88,21 @@
       "models": "All Models",
       "vendors": "All Vendors"
     }
-  }
+  },
+  "labels": {
+    "findOnAiPlatforms": "在 AI 平台上尋找",
+    "getApiKey": "取得 API 金鑰",
+    "specifications": "規格",
+    "quickLinks": "快速連結"
+  },
+  "providerTypes": {
+    "foundation-model-provider": "Foundation 模型提供者",
+    "model-service-provider": "模型服務提供者"
+  },
+  "lifecycle": {
+    "latest": "最新",
+    "maintained": "維護中",
+    "deprecated": "已廢棄"
+  },
+  "knowledgeCutoff": "知識截止日期"
 }

@@ -45,7 +45,12 @@
     "specificationsProtocols": "Especificaciones y protocolos",
     "stars": "Estrellas",
     "type": "Tipo",
-    "website": "Sitio web"
+    "vendor": "Vendor",
+    "version": "Versión",
+    "visitWebsite": "Visitar sitio web",
+    "website": "Sitio web",
+    "platforms": "Plataformas",
+    "supportedIdes": "IDEs compatibles"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -83,5 +88,21 @@
       "models": "All Models",
       "vendors": "All Vendors"
     }
-  }
+  },
+  "labels": {
+    "findOnAiPlatforms": "Encontrar en plataformas de IA",
+    "getApiKey": "Obtener Clave de API",
+    "specifications": "Especificaciones",
+    "quickLinks": "Enlaces rápidos"
+  },
+  "providerTypes": {
+    "foundation-model-provider": "Proveedor de Modelo Base",
+    "model-service-provider": "Proveedor de Servicio de Modelo"
+  },
+  "lifecycle": {
+    "latest": "Más reciente",
+    "maintained": "Mantenido",
+    "deprecated": "Obsoleto"
+  },
+  "knowledgeCutoff": "Corte de conocimiento"
 }

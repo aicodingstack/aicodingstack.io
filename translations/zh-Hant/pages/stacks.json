@@ -1,139 +1,145 @@
 {
   "cliDetail": {
-    "allCLIs": "所有 CLI",
+    "allCLIs": "@:shared.categories.all.clis",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
-      "clis": "CLIs"
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "clis": "@:shared.categories.plural.clis"
     },
-    "categoryLabel": "CLI",
-    "documentation": "Documentation",
-    "download": "Download",
-    "license": "License",
-    "platforms": "Platforms",
-    "stars": "Stars",
-    "vendor": "Vendor",
-    "version": "Version",
-    "visitWebsite": "Visit Website"
+    "categoryLabel": "@:shared.categories.singular.cli",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "clis": {
-    "allCLIs": "所有 CLI",
-    "compareAll": "比較全部",
+    "allCLIs": "@:shared.categories.all.clis",
+    "compareAll": "@:shared.actions.compareAll",
     "noMatches": "沒有符合篩選條件的命令列",
     "subtitle": "AI 驅動的命令列編碼助理",
     "title": "CLIs"
   },
   "extensionDetail": {
-    "allExtensions": "所有擴充套件",
+    "allExtensions": "@:shared.categories.all.extensions",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
-      "extensions": "Extensions"
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "extensions": "@:shared.categories.plural.extensions"
     },
-    "categoryLabel": "Extension",
-    "documentation": "Documentation",
-    "download": "Download",
-    "license": "License",
-    "stars": "Stars",
-    "supportedIdes": "Supported IDEs",
-    "vendor": "Vendor",
-    "version": "Version",
-    "visitWebsite": "Visit Website"
+    "categoryLabel": "@:shared.categories.singular.extension",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "stars": "@:shared.terms.stars",
+    "supportedIdes": "@:shared.terms.supportedIdes",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "extensions": {
-    "allExtensions": "所有擴充套件",
-    "compareAll": "比較全部",
+    "allExtensions": "@:shared.categories.all.extensions",
+    "compareAll": "@:shared.actions.compareAll",
     "noMatches": "沒有符合篩選條件的擴充套件",
     "subtitle": "AI 驅動的編碼擴充與外掛",
     "title": "Extensions"
   },
   "ideDetail": {
-    "allIDEs": "所有 IDE",
+    "allIDEs": "@:shared.categories.all.ides",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
-      "ides": "IDEs"
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "ides": "@:shared.categories.plural.ides"
     },
-    "categoryLabel": "IDE",
-    "documentation": "Documentation",
-    "download": "Download",
-    "license": "License",
-    "platforms": "Platforms",
-    "stars": "Stars",
-    "vendor": "Vendor",
-    "version": "Version",
-    "visitWebsite": "Visit Website"
+    "categoryLabel": "@:shared.categories.singular.ide",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "ides": {
-    "allIDEs": "所有 IDE",
-    "compareAll": "比較全部",
+    "allIDEs": "@:shared.categories.all.ides",
+    "compareAll": "@:shared.actions.compareAll",
     "noMatches": "沒有符合篩選條件的 IDE",
     "subtitle": "AI 增強的整合式開發環境",
     "title": "IDEs"
   },
   "modelDetail": {
-    "allModels": "All Models",
-    "backTo": "回到",
+    "allModels": "@:shared.categories.all.models",
+    "backTo": "@:shared.actions.backTo",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
-      "models": "Models"
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "models": "@:shared.categories.plural.models"
     },
     "cache": "Cache",
-    "categoryLabel": "Model",
+    "categoryLabel": "@:shared.categories.singular.model",
     "contextWindow": "內容視窗",
-    "documentation": "Documentation",
-    "findOnAiPlatforms": "在 AI 平台上尋找",
+    "documentation": "@:shared.terms.documentation",
+    "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
     "input": "輸入",
     "labels": {
-      "artificialAnalysis": "Artificial Analysis",
+      "artificialAnalysis": "@:shared.platforms.artificialAnalysis",
       "context": "內容視窗",
-      "documentation": "Documentation",
-      "huggingface": "HuggingFace",
-      "maxOutput": "最大輸出",
-      "openrouter": "OpenRouter",
-      "pricing": "定價",
+      "documentation": "@:shared.terms.documentation",
+      "huggingface": "@:shared.platforms.huggingface",
+      "maxOutput": "@:shared.terms.maxOutput",
+      "openrouter": "@:shared.platforms.openrouter",
+      "pricing": "@:shared.terms.pricing",
       "size": "模型大小",
-      "website": "網站"
+      "website": "@:shared.terms.website"
     },
-    "license": "License",
-    "maxOutput": "最大輸出",
+    "license": "@:shared.terms.license",
+    "maxOutput": "@:shared.terms.maxOutput",
     "metaTitle": "AI 編碼模型 | 規格與定價 2025",
-    "modelSize": "模型大小",
+    "modelSize": "@:shared.terms.modelSize",
     "output": "輸出",
-    "pricing": "定價",
-    "specifications": "規格",
-    "stars": "Stars",
-    "vendor": "Vendor",
-    "version": "Version",
-    "visitWebsite": "Visit Website"
+    "pricing": "@:shared.terms.pricing",
+    "specifications": "@:shared.labels.specifications",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "modelProviderDetail": {
-    "allModelProviders": "All Model Providers",
-    "backTo": "回到",
+    "allModelProviders": "@:shared.categories.all.modelProviders",
+    "backTo": "@:shared.actions.backTo",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
-      "modelProviders": "Model Providers"
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "modelProviders": "@:shared.categories.plural.modelProviders"
     },
-    "categoryLabel": "Model Provider",
-    "communityLinks": "社群連結",
-    "documentation": "Documentation",
-    "findOnAiPlatforms": "在 AI 平台上尋找",
-    "getApiKey": "Get API Key",
-    "indexLabel": "INDEX",
+    "categoryLabel": "@:shared.categories.singular.modelProvider",
+    "communityLinks": "@:shared.terms.communityLinks",
+    "documentation": "@:shared.terms.documentation",
+    "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
+    "getApiKey": "@:shared.labels.getApiKey",
+    "indexLabel": "@:shared.terms.indexLabel",
     "providerTypes": {
-      "foundation-model-provider": "Foundation Model Provider",
-      "model-service-provider": "Model Service Provider"
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
     },
-    "type": "Type",
-    "visitWebsite": "Visit Website"
+    "type": "@:shared.terms.type",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "modelProviders": {
-    "foundationProviders": "Foundation 模型提供者",
+    "foundationProviders": "@:shared.providerTypes.foundation-model-provider",
     "search": "依名稱搜尋...",
-    "serviceProviders": "模型服務提供者",
+    "serviceProviders": "@:shared.providerTypes.model-service-provider",
     "subtitle": "提供各種 AI 模型存取的 LLM API 提供者",
     "title": "Model Providers"
   },
   "models": {
-    "compareAll": "比較全部",
+    "compareAll": "@:shared.actions.compareAll",
     "context": "內容視窗：",
+    "lifecycle": {
+      "latest": "最新",
+      "maintained": "維護中",
+      "deprecated": "已棄用",
+      "noResults": "沒有符合搜尋條件的{lifecycle}模型"
+    },
     "pricing": "定價：",
     "search": "依名稱搜尋...",
     "size": "大小：",
@@ -172,33 +178,33 @@
     }
   },
   "vendorDetail": {
-    "allVendors": "All Vendors",
-    "backTo": "回到",
+    "allVendors": "@:shared.categories.all.vendors",
+    "backTo": "@:shared.actions.backTo",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
       "home": "首頁",
-      "vendors": "Vendors"
+      "vendors": "@:shared.categories.plural.vendors"
     },
-    "categoryLabel": "Vendor",
-    "communityLinks": "社群連結",
+    "categoryLabel": "@:shared.categories.singular.vendor",
+    "communityLinks": "@:shared.terms.communityLinks",
     "connectLinkedIn": "在 LinkedIn 上聯繫",
-    "documentation": "Documentation",
+    "documentation": "@:shared.terms.documentation",
     "followTwitter": "在 X/Twitter 上關注",
-    "indexLabel": "INDEX",
+    "indexLabel": "@:shared.terms.indexLabel",
     "joinDiscord": "加入 Discord 社群",
     "joinReddit": "加入 Reddit 社群",
     "metaDescription": "探索 {name} 的 AI 產品與技術。",
     "metaTitle": "AI 技術供應商 | 公司簡介 2025",
-    "models": "Models",
-    "products": "Products",
+    "models": "@:shared.categories.plural.models",
+    "products": "@:shared.terms.products",
     "productsSubtitle": "探索來自 {vendorName} 的產品與服務",
-    "productsTitle": "Products",
-    "quickLinks": "快速連結",
+    "productsTitle": "@:shared.terms.products",
+    "quickLinks": "@:shared.labels.quickLinks",
     "vendorDetails": "供應商詳情",
     "viewGitHub": "檢視開放原始碼儲存庫",
-    "visitWebsite": "造訪網站",
+    "visitWebsite": "@:shared.terms.visitWebsite",
     "watchYouTube": "在 YouTube 觀看影片",
-    "website": "網站"
+    "website": "@:shared.terms.website"
   },
   "vendors": {
     "search": "依名稱搜尋...",

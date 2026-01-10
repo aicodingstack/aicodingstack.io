@@ -1,15 +1,14 @@
 {
   "backToNavigation": {
-    "backTo": "돌아가기",
-    "indexLabel": "INDEX"
+    "backTo": "@:shared.actions.backTo",
+    "indexLabel": "@:shared.terms.indexLabel"
   },
   "breadcrumb": {
     "home": "홈"
   },
-  "collectionScrollbar": {
-    "articles": "추천 아티클",
-    "specifications": "사양 및 프로토콜",
-    "tools": "생태계 도구"
+  "copyButton": {
+    "copied": "복사됨!",
+    "copyToClipboard": "클립보드에 복사"
   },
   "docsSidebar": {
     "label": "@:shared.terms.documentation",
@@ -99,20 +98,20 @@
     },
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
-    "getApiKey": "API 키 찾기",
+    "getApiKey": "@:shared.labels.getApiKey",
     "license": "@:shared.terms.license",
-    "platforms": "플랫폼",
+    "platforms": "@:shared.terms.platforms",
     "providerTypes": {
-      "foundation-model-provider": "기초 모델 제공자",
-      "model-service-provider": "모델 서비스 제공자"
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
     },
     "runtime": "런타임",
     "stars": "@:shared.terms.stars",
-    "supportedIdes": "지원되는 IDE",
+    "supportedIdes": "@:shared.terms.supportedIdes",
     "type": "@:shared.terms.type",
-    "vendor": "벤더",
-    "version": "버전",
-    "visitWebsite": "웹사이트 방문"
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "communityLinks": {
     "blog": "블로그",

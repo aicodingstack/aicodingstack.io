@@ -45,7 +45,12 @@
     "specificationsProtocols": "Specifications & Protocols",
     "stars": "Stars",
     "type": "Type",
-    "website": "Website"
+    "vendor": "Vendor",
+    "version": "Versi",
+    "visitWebsite": "Kunjungi situs web",
+    "website": "Website",
+    "platforms": "Platform",
+    "supportedIdes": "IDE yang Didukung"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -83,5 +88,21 @@
       "models": "All Models",
       "vendors": "All Vendors"
     }
-  }
+  },
+  "labels": {
+    "findOnAiPlatforms": "Temukan di Platform AI",
+    "getApiKey": "Dapatkan Kunci API",
+    "specifications": "Spesifikasi",
+    "quickLinks": "Tautan Cepat"
+  },
+  "providerTypes": {
+    "foundation-model-provider": "Penyedia Model Dasar",
+    "model-service-provider": "Penyedia Layanan Model"
+  },
+  "lifecycle": {
+    "latest": "Terbaru",
+    "maintained": "Dipertahankan",
+    "deprecated": "Usang"
+  },
+  "knowledgeCutoff": "Batas Pengetahuan"
 }

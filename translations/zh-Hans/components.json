@@ -1,15 +1,14 @@
 {
   "backToNavigation": {
-    "backTo": "返回",
-    "indexLabel": "索引"
+    "backTo": "@:shared.actions.backTo",
+    "indexLabel": "@:shared.terms.indexLabel"
   },
   "breadcrumb": {
     "home": "首页"
   },
-  "collectionScrollbar": {
-    "articles": "精选文章",
-    "specifications": "规范与协议",
-    "tools": "生态系统工具"
+  "copyButton": {
+    "copied": "已复制！",
+    "copyToClipboard": "复制到剪贴板"
   },
   "docsSidebar": {
     "label": "@:shared.terms.documentation",
@@ -99,20 +98,20 @@
     },
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
-    "getApiKey": "获取 API 密钥",
+    "getApiKey": "@:shared.labels.getApiKey",
     "license": "@:shared.terms.license",
-    "platforms": "平台",
+    "platforms": "@:shared.terms.platforms",
     "providerTypes": {
-      "foundation-model-provider": "基础模型提供商",
-      "model-service-provider": "模型服务提供商"
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
     },
     "runtime": "运行时",
     "stars": "@:shared.terms.stars",
-    "supportedIdes": "支持的 IDE",
+    "supportedIdes": "@:shared.terms.supportedIdes",
     "type": "@:shared.terms.type",
-    "vendor": "厂商",
-    "version": "版本",
-    "visitWebsite": "访问官网"
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "communityLinks": {
     "blog": "博客",

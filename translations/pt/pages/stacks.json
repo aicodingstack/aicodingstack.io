@@ -1,141 +1,147 @@
 {
   "cliDetail": {
-    "allCLIs": "All CLIs",
+    "allCLIs": "@:shared.categories.all.clis",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
-      "clis": "CLIs"
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "clis": "@:shared.categories.plural.clis"
     },
-    "categoryLabel": "CLI",
-    "documentation": "Documentation",
-    "download": "Download",
-    "license": "License",
-    "platforms": "Platforms",
-    "stars": "Stars",
-    "vendor": "Vendor",
-    "version": "Version",
-    "visitWebsite": "Visit Website"
+    "categoryLabel": "@:shared.categories.singular.cli",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "clis": {
-    "allCLIs": "All CLIs",
-    "compareAll": "Comparar tudo",
+    "allCLIs": "@:shared.categories.all.clis",
+    "compareAll": "@:shared.actions.compareAll",
     "noMatches": "Nenhum CLI corresponde aos seus filtros",
     "subtitle": "Assistentes de codificação de linha de comando com IA",
     "title": "CLIs"
   },
   "extensionDetail": {
-    "allExtensions": "All Extensions",
+    "allExtensions": "@:shared.categories.all.extensions",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
-      "extensions": "Extensions"
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "extensions": "@:shared.categories.plural.extensions"
     },
-    "categoryLabel": "Extension",
-    "documentation": "Documentation",
-    "download": "Download",
-    "license": "License",
-    "stars": "Stars",
-    "supportedIdes": "Supported IDEs",
-    "vendor": "Vendor",
-    "version": "Version",
-    "visitWebsite": "Visit Website"
+    "categoryLabel": "@:shared.categories.singular.extension",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "stars": "@:shared.terms.stars",
+    "supportedIdes": "@:shared.terms.supportedIdes",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "extensions": {
-    "allExtensions": "All Extensions",
-    "compareAll": "Comparar tudo",
+    "allExtensions": "@:shared.categories.all.extensions",
+    "compareAll": "@:shared.actions.compareAll",
     "noMatches": "Nenhuma extensão corresponde aos seus filtros",
     "subtitle": "Extensões e plugins de codificação com IA",
     "title": "Extensions"
   },
   "ideDetail": {
-    "allIDEs": "All IDEs",
+    "allIDEs": "@:shared.categories.all.ides",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
-      "ides": "IDEs"
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "ides": "@:shared.categories.plural.ides"
     },
-    "categoryLabel": "IDE",
-    "documentation": "Documentation",
-    "download": "Download",
-    "license": "License",
-    "platforms": "Platforms",
-    "stars": "Stars",
-    "vendor": "Vendor",
-    "version": "Version",
-    "visitWebsite": "Visit Website"
+    "categoryLabel": "@:shared.categories.singular.ide",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "ides": {
-    "allIDEs": "All IDEs",
-    "compareAll": "Comparar tudo",
+    "allIDEs": "@:shared.categories.all.ides",
+    "compareAll": "@:shared.actions.compareAll",
     "noMatches": "Nenhum IDE corresponde aos seus filtros",
     "subtitle": "Ambientes de desenvolvimento integrados aprimorados com IA",
     "title": "IDEs"
   },
   "modelDetail": {
-    "allModels": "All Models",
-    "backTo": "Back to",
+    "allModels": "@:shared.categories.all.models",
+    "backTo": "@:shared.actions.backTo",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
-      "models": "Models"
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "models": "@:shared.categories.plural.models"
     },
     "cache": "Cache",
-    "categoryLabel": "Model",
+    "categoryLabel": "@:shared.categories.singular.model",
     "contextWindow": "Contexto Total",
-    "documentation": "Documentation",
-    "findOnAiPlatforms": "Find on AI Platforms",
+    "documentation": "@:shared.terms.documentation",
+    "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
     "input": "Entrada",
     "labels": {
-      "artificialAnalysis": "Artificial Analysis",
-      "context": "Context",
-      "documentation": "Documentation",
-      "huggingface": "HuggingFace",
-      "maxOutput": "Max Output",
-      "openrouter": "OpenRouter",
-      "pricing": "Pricing",
-      "size": "Size",
-      "website": "Website"
+      "artificialAnalysis": "@:shared.platforms.artificialAnalysis",
+      "context": "Contexto",
+      "documentation": "@:shared.terms.documentation",
+      "huggingface": "@:shared.platforms.huggingface",
+      "maxOutput": "@:shared.terms.maxOutput",
+      "openrouter": "@:shared.platforms.openrouter",
+      "pricing": "@:shared.terms.pricing",
+      "size": "Tamanho",
+      "website": "@:shared.terms.website"
     },
-    "license": "License",
-    "maxOutput": "Saída máxima",
+    "license": "@:shared.terms.license",
+    "maxOutput": "@:shared.terms.maxOutput",
     "metaTitle": "AI Coding Model | Specs & Pricing 2025",
-    "modelSize": "Model Size",
+    "modelSize": "@:shared.terms.modelSize",
     "output": "Saída",
-    "pricing": "Preços",
-    "specifications": "Specifications",
-    "stars": "Stars",
-    "vendor": "Vendor",
-    "version": "Version",
-    "visitWebsite": "Visit Website"
+    "pricing": "@:shared.terms.pricing",
+    "specifications": "@:shared.labels.specifications",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "modelProviderDetail": {
-    "allModelProviders": "All Model Providers",
-    "backTo": "Back to",
+    "allModelProviders": "@:shared.categories.all.modelProviders",
+    "backTo": "@:shared.actions.backTo",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
-      "modelProviders": "Model Providers"
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "modelProviders": "@:shared.categories.plural.modelProviders"
     },
-    "categoryLabel": "Model Provider",
-    "communityLinks": "Community Links",
-    "documentation": "Documentation",
-    "findOnAiPlatforms": "Find on AI Platforms",
-    "getApiKey": "Get API Key",
-    "indexLabel": "INDEX",
+    "categoryLabel": "@:shared.categories.singular.modelProvider",
+    "communityLinks": "@:shared.terms.communityLinks",
+    "documentation": "@:shared.terms.documentation",
+    "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
+    "getApiKey": "@:shared.labels.getApiKey",
+    "indexLabel": "@:shared.terms.indexLabel",
     "providerTypes": {
-      "foundation-model-provider": "Foundation Model Provider",
-      "model-service-provider": "Model Service Provider"
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
     },
-    "type": "Type",
-    "visitWebsite": "Visit Website"
+    "type": "@:shared.terms.type",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "modelProviders": {
-    "foundationProviders": "Foundation Model Provider",
-    "search": "Search by name...",
-    "serviceProviders": "Model Service Provider",
+    "foundationProviders": "@:shared.providerTypes.foundation-model-provider",
+    "search": "Pesquisar por nome...",
+    "serviceProviders": "@:shared.providerTypes.model-service-provider",
     "subtitle": "Provedores de API LLM que oferecem acesso a vários modelos de IA",
     "title": "Model Providers"
   },
   "models": {
-    "compareAll": "Comparar tudo",
+    "compareAll": "@:shared.actions.compareAll",
     "context": "Contexto:",
+    "lifecycle": {
+      "latest": "Mais recentes",
+      "maintained": "Mantidos",
+      "deprecated": "Descontinuados",
+      "noResults": "Nenhum modelo {lifecycle} corresponde à sua pesquisa"
+    },
     "pricing": "Preços:",
-    "search": "Search by name...",
+    "search": "Pesquisar por nome...",
     "size": "Tamanho:",
     "subtitle": "Modelos de linguagem grandes otimizados para geração e análise de código",
     "title": "Models"
@@ -172,36 +178,36 @@
     }
   },
   "vendorDetail": {
-    "allVendors": "All Vendors",
-    "backTo": "Back to",
+    "allVendors": "@:shared.categories.all.vendors",
+    "backTo": "@:shared.actions.backTo",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
-      "home": "Home",
-      "vendors": "Vendors"
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "home": "Início",
+      "vendors": "@:shared.categories.plural.vendors"
     },
-    "categoryLabel": "Vendor",
-    "communityLinks": "Community Links",
+    "categoryLabel": "@:shared.categories.singular.vendor",
+    "communityLinks": "@:shared.terms.communityLinks",
     "connectLinkedIn": "Conectar no LinkedIn",
-    "documentation": "Documentation",
-    "followTwitter": "Seguir no Twitter",
-    "indexLabel": "INDEX",
+    "documentation": "@:shared.terms.documentation",
+    "followTwitter": "Seguir no X/Twitter",
+    "indexLabel": "@:shared.terms.indexLabel",
     "joinDiscord": "Juntar-se à comunidade Discord",
     "joinReddit": "Juntar-se à comunidade Reddit",
     "metaDescription": "Explore os produtos e tecnologias de IA de {name}.",
     "metaTitle": "Fornecedor de Tecnologia IA | Perfil da Empresa 2025",
-    "models": "Models",
-    "products": "Products",
+    "models": "@:shared.categories.plural.models",
+    "products": "@:shared.terms.products",
     "productsSubtitle": "Explore produtos e serviços de {vendorName}",
-    "productsTitle": "Products",
-    "quickLinks": "Quick Links",
-    "vendorDetails": "Vendor Details",
+    "productsTitle": "@:shared.terms.products",
+    "quickLinks": "@:shared.labels.quickLinks",
+    "vendorDetails": "Detalhes do Fornecedor",
     "viewGitHub": "Ver repositórios de código aberto",
-    "visitWebsite": "Visit Website",
+    "visitWebsite": "@:shared.terms.visitWebsite",
     "watchYouTube": "Assistir vídeos no YouTube",
-    "website": "Website"
+    "website": "@:shared.terms.website"
   },
   "vendors": {
-    "search": "Search by name...",
+    "search": "Pesquisar por nome...",
     "subtitle": "Principais empresas e organizações construindo tecnologias de IA",
     "title": "Vendors"
   }

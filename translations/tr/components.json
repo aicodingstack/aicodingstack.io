@@ -1,15 +1,14 @@
 {
   "backToNavigation": {
-    "backTo": "Geri dön",
-    "indexLabel": "INDEKS"
+    "backTo": "@:shared.actions.backTo",
+    "indexLabel": "@:shared.terms.indexLabel"
   },
   "breadcrumb": {
     "home": "Ana Sayfa"
   },
-  "collectionScrollbar": {
-    "articles": "Öne Çıkan Makaleler",
-    "specifications": "Özellikler ve Protokoller",
-    "tools": "Ekosistem Araçları"
+  "copyButton": {
+    "copied": "Kopyalandı!",
+    "copyToClipboard": "Panoya kopyala"
   },
   "docsSidebar": {
     "label": "@:shared.terms.documentation",
@@ -99,20 +98,20 @@
     },
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
-    "getApiKey": "API Anahtarı Al",
+    "getApiKey": "@:shared.labels.getApiKey",
     "license": "@:shared.terms.license",
-    "platforms": "Platformlar",
+    "platforms": "@:shared.terms.platforms",
     "providerTypes": {
-      "foundation-model-provider": "Temel Model Sağlayıcısı",
-      "model-service-provider": "Model Hizmet Sağlayıcısı"
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
     },
     "runtime": "Çalışma Zamanı",
     "stars": "@:shared.terms.stars",
-    "supportedIdes": "Desteklenen IDE'ler",
+    "supportedIdes": "@:shared.terms.supportedIdes",
     "type": "@:shared.terms.type",
-    "vendor": "Sağlayıcı",
-    "version": "Sürüm",
-    "visitWebsite": "Web Sitesini Ziyaret Et"
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "communityLinks": {
     "blog": "Blog",

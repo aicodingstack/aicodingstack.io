@@ -1,139 +1,145 @@
 {
   "cliDetail": {
-    "allCLIs": "All CLIs",
+    "allCLIs": "@:shared.categories.all.clis",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
-      "clis": "CLIs"
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "clis": "@:shared.categories.plural.clis"
     },
-    "categoryLabel": "CLI",
-    "documentation": "Documentation",
-    "download": "Download",
-    "license": "License",
-    "platforms": "Platforms",
-    "stars": "Stars",
-    "vendor": "Vendor",
-    "version": "Version",
-    "visitWebsite": "Visit Website"
+    "categoryLabel": "@:shared.categories.singular.cli",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "clis": {
-    "allCLIs": "All CLIs",
-    "compareAll": "すべて比較",
+    "allCLIs": "@:shared.categories.all.clis",
+    "compareAll": "@:shared.actions.compareAll",
     "noMatches": "フィルターに一致する CLI はありません",
     "subtitle": "AI 対応のコマンドラインコーディングアシスタント",
     "title": "CLIs"
   },
   "extensionDetail": {
-    "allExtensions": "All Extensions",
+    "allExtensions": "@:shared.categories.all.extensions",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
-      "extensions": "Extensions"
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "extensions": "@:shared.categories.plural.extensions"
     },
-    "categoryLabel": "Extension",
-    "documentation": "Documentation",
-    "download": "Download",
-    "license": "License",
-    "stars": "Stars",
-    "supportedIdes": "Supported IDEs",
-    "vendor": "Vendor",
-    "version": "Version",
-    "visitWebsite": "Visit Website"
+    "categoryLabel": "@:shared.categories.singular.extension",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "stars": "@:shared.terms.stars",
+    "supportedIdes": "@:shared.terms.supportedIdes",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "extensions": {
-    "allExtensions": "All Extensions",
-    "compareAll": "すべて比較",
+    "allExtensions": "@:shared.categories.all.extensions",
+    "compareAll": "@:shared.actions.compareAll",
     "noMatches": "フィルターに一致する拡張機能はありません",
     "subtitle": "AI 対応のコーディング拡張機能とプラグイン",
     "title": "Extensions"
   },
   "ideDetail": {
-    "allIDEs": "All IDEs",
+    "allIDEs": "@:shared.categories.all.ides",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
-      "ides": "IDEs"
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "ides": "@:shared.categories.plural.ides"
     },
-    "categoryLabel": "IDE",
-    "documentation": "Documentation",
-    "download": "Download",
-    "license": "License",
-    "platforms": "Platforms",
-    "stars": "Stars",
-    "vendor": "Vendor",
-    "version": "Version",
-    "visitWebsite": "Visit Website"
+    "categoryLabel": "@:shared.categories.singular.ide",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "ides": {
-    "allIDEs": "All IDEs",
-    "compareAll": "すべて比較",
+    "allIDEs": "@:shared.categories.all.ides",
+    "compareAll": "@:shared.actions.compareAll",
     "noMatches": "フィルターに一致する IDE はありません",
     "subtitle": "AI 強化された統合開発環境",
     "title": "IDEs"
   },
   "modelDetail": {
-    "allModels": "All Models",
-    "backTo": "Back to",
+    "allModels": "@:shared.categories.all.models",
+    "backTo": "@:shared.actions.backTo",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
-      "models": "Models"
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "models": "@:shared.categories.plural.models"
     },
     "cache": "Cache",
-    "categoryLabel": "Model",
+    "categoryLabel": "@:shared.categories.singular.model",
     "contextWindow": "Total Context",
-    "documentation": "Documentation",
-    "findOnAiPlatforms": "Find on AI Platforms",
+    "documentation": "@:shared.terms.documentation",
+    "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
     "input": "Input",
     "labels": {
-      "artificialAnalysis": "Artificial Analysis",
+      "artificialAnalysis": "@:shared.platforms.artificialAnalysis",
       "context": "Context",
-      "documentation": "Documentation",
-      "huggingface": "HuggingFace",
-      "maxOutput": "Max Output",
-      "openrouter": "OpenRouter",
-      "pricing": "Pricing",
+      "documentation": "@:shared.terms.documentation",
+      "huggingface": "@:shared.platforms.huggingface",
+      "maxOutput": "@:shared.terms.maxOutput",
+      "openrouter": "@:shared.platforms.openrouter",
+      "pricing": "@:shared.terms.pricing",
       "size": "Size",
-      "website": "Website"
+      "website": "@:shared.terms.website"
     },
-    "license": "License",
-    "maxOutput": "Max Output",
+    "license": "@:shared.terms.license",
+    "maxOutput": "@:shared.terms.maxOutput",
     "metaTitle": "AI Coding Model | Specs & Pricing 2025",
-    "modelSize": "Model Size",
+    "modelSize": "@:shared.terms.modelSize",
     "output": "Output",
-    "pricing": "Pricing",
-    "specifications": "Specifications",
-    "stars": "Stars",
-    "vendor": "Vendor",
-    "version": "Version",
-    "visitWebsite": "Visit Website"
+    "pricing": "@:shared.terms.pricing",
+    "specifications": "@:shared.labels.specifications",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "modelProviderDetail": {
-    "allModelProviders": "All Model Providers",
-    "backTo": "Back to",
+    "allModelProviders": "@:shared.categories.all.modelProviders",
+    "backTo": "@:shared.actions.backTo",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
-      "modelProviders": "Model Providers"
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "modelProviders": "@:shared.categories.plural.modelProviders"
     },
-    "categoryLabel": "Model Provider",
-    "communityLinks": "Community Links",
-    "documentation": "Documentation",
-    "findOnAiPlatforms": "Find on AI Platforms",
-    "getApiKey": "Get API Key",
-    "indexLabel": "INDEX",
+    "categoryLabel": "@:shared.categories.singular.modelProvider",
+    "communityLinks": "@:shared.terms.communityLinks",
+    "documentation": "@:shared.terms.documentation",
+    "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
+    "getApiKey": "@:shared.labels.getApiKey",
+    "indexLabel": "@:shared.terms.indexLabel",
     "providerTypes": {
-      "foundation-model-provider": "Foundation Model Provider",
-      "model-service-provider": "Model Service Provider"
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
     },
-    "type": "Type",
-    "visitWebsite": "Visit Website"
+    "type": "@:shared.terms.type",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "modelProviders": {
-    "foundationProviders": "Foundation Model Provider",
+    "foundationProviders": "@:shared.providerTypes.foundation-model-provider",
     "search": "Search by name...",
-    "serviceProviders": "Model Service Provider",
+    "serviceProviders": "@:shared.providerTypes.model-service-provider",
     "subtitle": "様々な AI モデルへのアクセスを提供する LLM API プロバイダー",
     "title": "Model Providers"
   },
   "models": {
-    "compareAll": "すべて比較",
+    "compareAll": "@:shared.actions.compareAll",
     "context": "コンテキスト:",
+    "lifecycle": {
+      "latest": "最新",
+      "maintained": "保守中",
+      "deprecated": "非推奨",
+      "noResults": "検索に一致する{lifecycle}モデルがありません"
+    },
     "pricing": "価格:",
     "search": "Search by name...",
     "size": "サイズ:",
@@ -172,33 +178,33 @@
     }
   },
   "vendorDetail": {
-    "allVendors": "All Vendors",
-    "backTo": "Back to",
+    "allVendors": "@:shared.categories.all.vendors",
+    "backTo": "@:shared.actions.backTo",
     "breadcrumb": {
-      "aiCodingStack": "AI Coding Stack",
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
       "home": "Home",
-      "vendors": "Vendors"
+      "vendors": "@:shared.categories.plural.vendors"
     },
-    "categoryLabel": "Vendor",
-    "communityLinks": "Community Links",
+    "categoryLabel": "@:shared.categories.singular.vendor",
+    "communityLinks": "@:shared.terms.communityLinks",
     "connectLinkedIn": "LinkedIn で接続",
-    "documentation": "Documentation",
+    "documentation": "@:shared.terms.documentation",
     "followTwitter": "Twitter でフォロー",
-    "indexLabel": "INDEX",
+    "indexLabel": "@:shared.terms.indexLabel",
     "joinDiscord": "Discord コミュニティに参加",
     "joinReddit": "Reddit コミュニティに参加",
     "metaDescription": "{name}の AI 製品と技術を探索。",
     "metaTitle": "AI 技術ベンダー | 企業プロフィール 2025",
-    "models": "Models",
-    "products": "Products",
+    "models": "@:shared.categories.plural.models",
+    "products": "@:shared.terms.products",
     "productsSubtitle": "{vendorName}の製品とサービスを探索",
-    "productsTitle": "Products",
-    "quickLinks": "Quick Links",
+    "productsTitle": "@:shared.terms.products",
+    "quickLinks": "@:shared.labels.quickLinks",
     "vendorDetails": "Vendor Details",
     "viewGitHub": "オープンソースリポジトリを表示",
-    "visitWebsite": "Visit Website",
+    "visitWebsite": "@:shared.terms.visitWebsite",
     "watchYouTube": "YouTube で動画を見る",
-    "website": "Website"
+    "website": "@:shared.terms.website"
   },
   "vendors": {
     "search": "Search by name...",

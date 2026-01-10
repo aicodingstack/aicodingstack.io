@@ -1,15 +1,14 @@
 {
   "backToNavigation": {
-    "backTo": "Back to",
-    "indexLabel": "INDEX"
+    "backTo": "@:shared.actions.backTo",
+    "indexLabel": "@:shared.terms.indexLabel"
   },
   "breadcrumb": {
     "home": "ホーム"
   },
-  "collectionScrollbar": {
-    "articles": "Featured Articles",
-    "specifications": "Specifications & Protocols",
-    "tools": "Ecosystem Tools"
+  "copyButton": {
+    "copied": "コピーしました！",
+    "copyToClipboard": "クリップボードにコピー"
   },
   "docsSidebar": {
     "label": "@:shared.terms.documentation",
@@ -99,20 +98,20 @@
     },
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
-    "getApiKey": "API キーを取得",
+    "getApiKey": "@:shared.labels.getApiKey",
     "license": "@:shared.terms.license",
-    "platforms": "プラットフォーム",
+    "platforms": "@:shared.terms.platforms",
     "providerTypes": {
-      "foundation-model-provider": "基盤モデルプロバイダー",
-      "model-service-provider": "モデルサービスプロバイダー"
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
     },
     "runtime": "ランタイム",
     "stars": "@:shared.terms.stars",
-    "supportedIdes": "対応 IDE",
+    "supportedIdes": "@:shared.terms.supportedIdes",
     "type": "@:shared.terms.type",
-    "vendor": "Vendor",
-    "version": "バージョン",
-    "visitWebsite": "Web サイトを表示"
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "communityLinks": {
     "blog": "ブログ",

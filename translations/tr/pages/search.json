@@ -1,27 +1,27 @@
 {
   "categories": {
-    "clis": "CLIs",
-    "extensions": "Extensions",
-    "ides": "IDEs",
-    "models": "Models",
-    "providers": "Model Providers",
-    "vendors": "Vendors"
+    "clis": "@:shared.categories.plural.clis",
+    "extensions": "@:shared.categories.plural.extensions",
+    "ides": "@:shared.categories.plural.ides",
+    "models": "@:shared.categories.plural.models",
+    "providers": "@:shared.categories.plural.modelProviders",
+    "vendors": "@:shared.categories.plural.vendors"
   },
-  "navigate": "to navigate",
-  "noResults": "No results found",
+  "navigate": "gezinme",
+  "noResults": "Sonuç bulunamadı",
   "noResultsFor": "\"{query}\" için sonuç bulunamadı",
-  "placeholder": "Search AI coding tools...",
-  "resultsCount": "{count} {count, plural, one {sonuç} other {sonuçlar}}",
-  "resultsCountFor": "{count} {count, plural, one {sonuç} other {sonuçlar}} \"{query}\" için",
-  "searching": "Searching...",
-  "select": "to select",
+  "placeholder": "AI kodlama araçlarını ara...",
+  "resultsCount": "{count} {count, plural, one {sonuç} other {sonuç}}",
+  "resultsCountFor": "\"{query}\" için {count} {count, plural, one {sonuç} other {sonuç}}",
+  "searching": "Aranıyor...",
+  "select": "seç",
   "stacks": {
-    "clis": "CLIs",
-    "extensions": "Extensions",
-    "ides": "IDEs",
-    "modelProviders": "Model Providers",
-    "models": "Models",
-    "vendors": "Vendors"
+    "clis": "@:shared.categories.plural.clis",
+    "extensions": "@:shared.categories.plural.extensions",
+    "ides": "@:shared.categories.plural.ides",
+    "modelProviders": "@:shared.categories.plural.modelProviders",
+    "models": "@:shared.categories.plural.models",
+    "vendors": "@:shared.categories.plural.vendors"
   },
-  "title": "Search Results"
+  "title": "Arama Sonuçları"
 }

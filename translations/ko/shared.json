@@ -45,7 +45,12 @@
     "specificationsProtocols": "사양 및 프로토콜",
     "stars": "스타",
     "type": "유형",
-    "website": "웹사이트"
+    "vendor": "벤더",
+    "version": "버전",
+    "visitWebsite": "웹사이트 방문",
+    "website": "웹사이트",
+    "platforms": "플랫폼",
+    "supportedIdes": "지원되는 IDE"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -83,5 +88,21 @@
       "models": "All Models",
       "vendors": "All Vendors"
     }
-  }
+  },
+  "labels": {
+    "findOnAiPlatforms": "AI 플랫폼에서 찾기",
+    "getApiKey": "API 키 얻기",
+    "specifications": "사양",
+    "quickLinks": "빠른 링크"
+  },
+  "providerTypes": {
+    "foundation-model-provider": "기초 모델 제공자",
+    "model-service-provider": "모델 서비스 제공자"
+  },
+  "lifecycle": {
+    "latest": "Latest",
+    "maintained": "Maintained",
+    "deprecated": "Deprecated"
+  },
+  "knowledgeCutoff": "Knowledge Cutoff"
 }

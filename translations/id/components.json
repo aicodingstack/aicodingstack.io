@@ -1,15 +1,14 @@
 {
   "backToNavigation": {
-    "backTo": "Kembali ke",
-    "indexLabel": "INDEKS"
+    "backTo": "@:shared.actions.backTo",
+    "indexLabel": "@:shared.terms.indexLabel"
   },
   "breadcrumb": {
     "home": "Beranda"
   },
-  "collectionScrollbar": {
-    "articles": "Artikel Unggulan",
-    "specifications": "Spesifikasi & Protokol",
-    "tools": "Alat Ekosistem"
+  "copyButton": {
+    "copied": "Disalin!",
+    "copyToClipboard": "Salin ke papan klip"
   },
   "docsSidebar": {
     "label": "@:shared.terms.documentation",
@@ -99,20 +98,20 @@
     },
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
-    "getApiKey": "Dapatkan Kunci API",
+    "getApiKey": "@:shared.labels.getApiKey",
     "license": "@:shared.terms.license",
-    "platforms": "Platform",
+    "platforms": "@:shared.terms.platforms",
     "providerTypes": {
-      "foundation-model-provider": "Penyedia Model Dasar",
-      "model-service-provider": "Penyedia Layanan Model"
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
     },
     "runtime": "Runtime",
     "stars": "@:shared.terms.stars",
-    "supportedIdes": "IDE yang Didukung",
+    "supportedIdes": "@:shared.terms.supportedIdes",
     "type": "@:shared.terms.type",
-    "vendor": "Vendor",
-    "version": "Versi",
-    "visitWebsite": "Kunjungi situs web"
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "communityLinks": {
     "blog": "Blog",

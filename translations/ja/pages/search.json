@@ -1,27 +1,27 @@
 {
   "categories": {
-    "clis": "CLIs",
-    "extensions": "Extensions",
-    "ides": "IDEs",
-    "models": "Models",
-    "providers": "Model Providers",
-    "vendors": "Vendors"
+    "clis": "@:shared.categories.plural.clis",
+    "extensions": "@:shared.categories.plural.extensions",
+    "ides": "@:shared.categories.plural.ides",
+    "models": "@:shared.categories.plural.models",
+    "providers": "@:shared.categories.plural.modelProviders",
+    "vendors": "@:shared.categories.plural.vendors"
   },
-  "navigate": "to navigate",
-  "noResults": "No results found",
+  "navigate": "移動",
+  "noResults": "結果が見つかりません",
   "noResultsFor": "\"{query}\" の結果が見つかりません",
-  "placeholder": "Search AI coding tools...",
+  "placeholder": "AIコーディングツールを検索...",
   "resultsCount": "{count} 件の結果",
   "resultsCountFor": "\"{query}\" について {count} 件の結果",
-  "searching": "Searching...",
-  "select": "to select",
+  "searching": "検索中...",
+  "select": "選択",
   "stacks": {
-    "clis": "CLIs",
-    "extensions": "Extensions",
-    "ides": "IDEs",
-    "modelProviders": "Model Providers",
-    "models": "Models",
-    "vendors": "Vendors"
+    "clis": "@:shared.categories.plural.clis",
+    "extensions": "@:shared.categories.plural.extensions",
+    "ides": "@:shared.categories.plural.ides",
+    "modelProviders": "@:shared.categories.plural.modelProviders",
+    "models": "@:shared.categories.plural.models",
+    "vendors": "@:shared.categories.plural.vendors"
   },
-  "title": "Search Results"
+  "title": "検索結果"
 }

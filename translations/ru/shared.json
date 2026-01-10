@@ -45,7 +45,12 @@
     "specificationsProtocols": "Specifications & Protocols",
     "stars": "Stars",
     "type": "Type",
-    "website": "Website"
+    "vendor": "Поставщик",
+    "version": "Версия",
+    "visitWebsite": "Веб-сайт",
+    "website": "Website",
+    "platforms": "Платформы",
+    "supportedIdes": "Поддерживаемые IDE"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -83,5 +88,21 @@
       "models": "All Models",
       "vendors": "All Vendors"
     }
-  }
+  },
+  "labels": {
+    "findOnAiPlatforms": "Найти на AI-платформах",
+    "getApiKey": "Получить API ключ",
+    "specifications": "Спецификации",
+    "quickLinks": "Быстрые ссылки"
+  },
+  "providerTypes": {
+    "foundation-model-provider": "Поставщик базовой модели",
+    "model-service-provider": "Поставщик сервисов моделей"
+  },
+  "lifecycle": {
+    "latest": "Latest",
+    "maintained": "Maintained",
+    "deprecated": "Deprecated"
+  },
+  "knowledgeCutoff": "Knowledge Cutoff"
 }

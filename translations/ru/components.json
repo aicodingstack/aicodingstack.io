@@ -1,15 +1,14 @@
 {
   "backToNavigation": {
-    "backTo": "Назад к",
-    "indexLabel": "ИНДЕКС"
+    "backTo": "@:shared.actions.backTo",
+    "indexLabel": "@:shared.terms.indexLabel"
   },
   "breadcrumb": {
     "home": "Главная"
   },
-  "collectionScrollbar": {
-    "articles": "Рекомендуемые статьи",
-    "specifications": "Спецификации и протоколы",
-    "tools": "Инструменты экосистемы"
+  "copyButton": {
+    "copied": "Скопировано!",
+    "copyToClipboard": "Копировать в буфер обмена"
   },
   "docsSidebar": {
     "label": "@:shared.terms.documentation",
@@ -99,20 +98,20 @@
     },
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
-    "getApiKey": "Получить API ключ",
+    "getApiKey": "@:shared.labels.getApiKey",
     "license": "@:shared.terms.license",
-    "platforms": "Платформы",
+    "platforms": "@:shared.terms.platforms",
     "providerTypes": {
-      "foundation-model-provider": "Поставщик базовой модели",
-      "model-service-provider": "Поставщик сервисов моделей"
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
     },
     "runtime": "Среда выполнения",
     "stars": "@:shared.terms.stars",
-    "supportedIdes": "Поддерживаемые IDE",
+    "supportedIdes": "@:shared.terms.supportedIdes",
     "type": "@:shared.terms.type",
-    "vendor": "Поставщик",
-    "version": "Версия",
-    "visitWebsite": "Веб-сайт"
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "communityLinks": {
     "blog": "Блог",

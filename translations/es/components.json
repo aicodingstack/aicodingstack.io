@@ -1,15 +1,14 @@
 {
   "backToNavigation": {
-    "backTo": "Back to",
-    "indexLabel": "INDEX"
+    "backTo": "@:shared.actions.backTo",
+    "indexLabel": "@:shared.terms.indexLabel"
   },
   "breadcrumb": {
     "home": "Inicio"
   },
-  "collectionScrollbar": {
-    "articles": "Featured Articles",
-    "specifications": "Specifications & Protocols",
-    "tools": "Ecosystem Tools"
+  "copyButton": {
+    "copied": "¡Copiado!",
+    "copyToClipboard": "Copiar al portapapeles"
   },
   "docsSidebar": {
     "label": "@:shared.terms.documentation",
@@ -99,20 +98,20 @@
     },
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
-    "getApiKey": "Obtener Clave de API",
+    "getApiKey": "@:shared.labels.getApiKey",
     "license": "@:shared.terms.license",
-    "platforms": "Plataformas",
+    "platforms": "@:shared.terms.platforms",
     "providerTypes": {
-      "foundation-model-provider": "Proveedor de Modelo Base",
-      "model-service-provider": "Proveedor de Servicio de Modelo"
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
     },
     "runtime": "Tiempo de ejecución",
     "stars": "@:shared.terms.stars",
-    "supportedIdes": "IDEs compatibles",
+    "supportedIdes": "@:shared.terms.supportedIdes",
     "type": "@:shared.terms.type",
-    "vendor": "Vendor",
-    "version": "Versión",
-    "visitWebsite": "Visitar sitio web"
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
   },
   "communityLinks": {
     "blog": "Blog",
