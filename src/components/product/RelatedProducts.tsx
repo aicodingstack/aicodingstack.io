@@ -18,7 +18,7 @@ export interface RelatedProductsProps {
  * when there is nothing meaningful to display, so callers don't need conditional rendering.
  */
 export function RelatedProducts({ products = [] }: RelatedProductsProps) {
-  const t = useTranslations('components.relatedProducts')
+  const tComponents = useTranslations('components')
 
   // Filter out products with null data
   const validProducts = products.filter(p => p.data !== null)
@@ -31,11 +31,11 @@ export function RelatedProducts({ products = [] }: RelatedProductsProps) {
   const getTypeLabel = (type: 'ide' | 'cli' | 'extension') => {
     switch (type) {
       case 'ide':
-        return t('ide')
+        return tComponents('relatedProducts.ide')
       case 'cli':
-        return t('cli')
+        return tComponents('relatedProducts.cli')
       case 'extension':
-        return t('extension')
+        return tComponents('relatedProducts.extension')
     }
   }
 
@@ -73,7 +73,7 @@ export function RelatedProducts({ products = [] }: RelatedProductsProps) {
     <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
         <h2 className="text-xl font-semibold tracking-tight mb-[var(--spacing-md)]">
-          {t('title')}
+          {tComponents('relatedProducts.title')}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[var(--spacing-md)]">

@@ -69,14 +69,14 @@ export function LinkCard({ href, title, description, layout = 'horizontal' }: Li
   )
 }
 
-interface LinkCardGridProps {
+interface LinkCardGridProps<K extends string> {
   title: string
-  links: Array<{
-    key: string
+  links: ReadonlyArray<{
+    key: K
     title: string
     description: string
   }>
-  urls: Record<string, string | null>
+  urls: { [P in K]?: string | null }
   layout?: 'horizontal' | 'vertical'
   gridCols?: string
 }
@@ -85,13 +85,13 @@ interface LinkCardGridProps {
  * Grid container for link cards
  * Displays all links - empty links show as grayed-out placeholders
  */
-export function LinkCardGrid({
+export function LinkCardGrid<K extends string>({
   title,
   links,
   urls,
   layout = 'horizontal',
   gridCols = 'grid-cols-1 md:grid-cols-3',
-}: LinkCardGridProps) {
+}: LinkCardGridProps<K>) {
   return (
     <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
@@ -103,7 +103,7 @@ export function LinkCardGrid({
           {links.map(link => (
             <LinkCard
               key={link.key}
-              href={urls[link.key] as string | null | undefined}
+              href={urls[link.key]}
               title={link.title}
               description={link.description}
               layout={layout}

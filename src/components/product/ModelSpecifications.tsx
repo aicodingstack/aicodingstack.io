@@ -13,7 +13,7 @@ export interface ModelSpecificationsProps {
  * context window, max output, and token pricing.
  */
 export function ModelSpecifications({ model }: ModelSpecificationsProps) {
-  const t = useTranslations('components.modelSpecifications')
+  const tComponents = useTranslations('components')
   const hasContent =
     model.size ||
     model.contextWindow ||
@@ -30,14 +30,14 @@ export function ModelSpecifications({ model }: ModelSpecificationsProps) {
     <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
         <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-sm)]">
-          {t('title')}
+          {tComponents('modelSpecifications.title')}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[var(--spacing-md)] mt-[var(--spacing-lg)]">
           {model.size && (
             <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">
               <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
-                {t('modelSize')}
+                {tComponents('modelSpecifications.modelSize')}
               </h3>
               <p className="text-lg font-semibold tracking-tight">{model.size}</p>
             </div>
@@ -45,7 +45,7 @@ export function ModelSpecifications({ model }: ModelSpecificationsProps) {
 
           <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">
             <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
-              {t('contextWindow')}
+              {tComponents('modelSpecifications.contextWindow')}
             </h3>
             <p className="text-lg font-semibold tracking-tight">
               {formatTokenCount(model.contextWindow)}
@@ -54,7 +54,7 @@ export function ModelSpecifications({ model }: ModelSpecificationsProps) {
 
           <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">
             <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
-              {t('maxOutput')}
+              {tComponents('modelSpecifications.maxOutput')}
             </h3>
             <p className="text-lg font-semibold tracking-tight">
               {formatTokenCount(model.maxOutput)}
@@ -64,12 +64,14 @@ export function ModelSpecifications({ model }: ModelSpecificationsProps) {
           {model.tokenPricing && (
             <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">
               <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
-                {t('pricing')}
+                {tComponents('modelSpecifications.pricing')}
               </h3>
               <div className="space-y-1">
                 {model.tokenPricing.input !== null && model.tokenPricing.input !== undefined && (
                   <p className="text-sm">
-                    <span className="text-[var(--color-text-muted)] text-xs">{t('input')} </span>
+                    <span className="text-[var(--color-text-muted)] text-xs">
+                      {tComponents('modelSpecifications.input')}{' '}
+                    </span>
                     <span className="font-semibold tracking-tight">
                       ${model.tokenPricing.input}/M
                     </span>
@@ -77,7 +79,9 @@ export function ModelSpecifications({ model }: ModelSpecificationsProps) {
                 )}
                 {model.tokenPricing.output !== null && model.tokenPricing.output !== undefined && (
                   <p className="text-sm">
-                    <span className="text-[var(--color-text-muted)] text-xs">{t('output')} </span>
+                    <span className="text-[var(--color-text-muted)] text-xs">
+                      {tComponents('modelSpecifications.output')}{' '}
+                    </span>
                     <span className="font-semibold tracking-tight">
                       ${model.tokenPricing.output}/M
                     </span>
@@ -85,7 +89,9 @@ export function ModelSpecifications({ model }: ModelSpecificationsProps) {
                 )}
                 {model.tokenPricing.cache !== null && model.tokenPricing.cache !== undefined && (
                   <p className="text-sm">
-                    <span className="text-[var(--color-text-muted)] text-xs">{t('cache')} </span>
+                    <span className="text-[var(--color-text-muted)] text-xs">
+                      {tComponents('modelSpecifications.cache')}{' '}
+                    </span>
                     <span className="font-semibold tracking-tight">
                       ${model.tokenPricing.cache}/M
                     </span>

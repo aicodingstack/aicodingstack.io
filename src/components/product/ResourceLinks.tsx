@@ -49,7 +49,7 @@ export function ResourceLinks({
       title: t('resourceLinks.issue'),
       description: t('resourceLinks.issueDescription'),
     },
-  ]
+  ] as const
 
   return (
     <LinkCardGrid

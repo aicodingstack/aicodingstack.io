@@ -63,7 +63,7 @@ export function CommunityLinks({
       title: t('communityLinks.blog'),
       description: t('communityLinks.blogDescription'),
     },
-  ]
+  ] as const
 
   return (
     <LinkCardGrid

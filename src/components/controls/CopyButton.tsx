@@ -1,8 +1,10 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 
 export default function CopyButton({ text }: { text: string }) {
+  const tComponents = useTranslations('components')
   const [copied, setCopied] = useState(false)
 
   const handleCopy = async () => {
@@ -24,8 +26,12 @@ export default function CopyButton({ text }: { text: string }) {
             ? 'text-green-600'
             : 'text-[var(--color-text-muted)] hover:text-[var(--color-text)]'
         }`}
-        title={copied ? 'Copied!' : 'Copy to clipboard'}
-        aria-label={copied ? 'Copied!' : 'Copy to clipboard'}
+        title={
+          copied ? tComponents('copyButton.copied') : tComponents('copyButton.copyToClipboard')
+        }
+        aria-label={
+          copied ? tComponents('copyButton.copied') : tComponents('copyButton.copyToClipboard')
+        }
       >
         {copied ? (
           <svg
@@ -39,7 +45,7 @@ export default function CopyButton({ text }: { text: string }) {
             strokeLinejoin="round"
             role="img"
           >
-            <title>Copied</title>
+            <title>{tComponents('copyButton.copied')}</title>
             <polyline points="20 6 9 17 4 12"></polyline>
           </svg>
         ) : (
@@ -54,7 +60,7 @@ export default function CopyButton({ text }: { text: string }) {
             strokeLinejoin="round"
             role="img"
           >
-            <title>Copy to clipboard</title>
+            <title>{tComponents('copyButton.copyToClipboard')}</title>
             <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
             <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
           </svg>

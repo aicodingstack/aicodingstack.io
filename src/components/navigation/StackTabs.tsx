@@ -13,26 +13,26 @@ interface StackTabsProps {
 }
 
 function StackTabs({ activeStack, locale: _locale }: StackTabsProps) {
-  const tStacks = useTranslations('shared.categories.plural')
+  const tShared = useTranslations('shared')
 
   const tabs = useMemo(() => {
     return [
-      { id: 'ides' as StackId, title: tStacks('ides'), path: `/ides` },
-      { id: 'clis' as StackId, title: tStacks('clis'), path: `/clis` },
+      { id: 'ides' as StackId, title: tShared('categories.plural.ides'), path: `/ides` },
+      { id: 'clis' as StackId, title: tShared('categories.plural.clis'), path: `/clis` },
       {
         id: 'extensions' as StackId,
-        title: tStacks('extensions'),
+        title: tShared('categories.plural.extensions'),
         path: `/extensions`,
       },
-      { id: 'models' as StackId, title: tStacks('models'), path: `/models` },
+      { id: 'models' as StackId, title: tShared('categories.plural.models'), path: `/models` },
       {
         id: 'model-providers' as StackId,
-        title: tStacks('modelProviders'),
+        title: tShared('categories.plural.modelProviders'),
         path: `/model-providers`,
       },
-      { id: 'vendors' as StackId, title: tStacks('vendors'), path: `/vendors` },
+      { id: 'vendors' as StackId, title: tShared('categories.plural.vendors'), path: `/vendors` },
     ]
-  }, [tStacks])
+  }, [tShared])
 
   return (
     <div className="border-b border-[var(--color-border)] mb-[var(--spacing-lg)]">
