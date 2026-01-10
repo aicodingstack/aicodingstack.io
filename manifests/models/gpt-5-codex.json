@@ -38,21 +38,23 @@
       "description": "GPT-5 的專門版本，針對軟件工程和編碼工作流程進行了優化。專為交互式開發會話和長時間獨立執行複雜工程任務而設計。支持從零開始構建項目、功能開發、調試、大規模重構和代碼審查。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://openai.com",
   "docsUrl": "https://platform.openai.com/docs/models/gpt-5-codex",
   "vendor": "OpenAI",
   "size": "Unknown",
-  "contextWindow": 128000,
-  "maxOutput": 16000,
+  "contextWindow": 400000,
+  "maxOutput": 128000,
   "tokenPricing": {
     "input": 1.25,
-    "output": 1.25,
-    "cache": null
+    "output": 10,
+    "cache": 0.125
   },
-  "releaseDate": null,
-  "inputModalities": ["text"],
-  "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
+  "releaseDate": "2025-09-15",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2024-09-30",
+  "inputModalities": ["text", "image"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
     "sweBench": null,
     "terminalBench": 0.496,

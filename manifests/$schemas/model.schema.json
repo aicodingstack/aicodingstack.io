@@ -45,14 +45,24 @@
         "releaseDate": {
           "type": ["string", "null"],
           "format": "date",
-          "description": "Model release date in ISO 8601 format (YYYY-MM-DD), null if release date is unknown"
+          "description": "Model release date (ISO 8601 date, YYYY-MM-DD), null if unknown"
+        },
+        "lifecycle": {
+          "type": "string",
+          "enum": ["latest", "maintained", "deprecated"],
+          "description": "Lifecycle stage: latest (newly released), maintained (still available for use), deprecated (no longer available)"
+        },
+        "knowledgeCutoff": {
+          "type": ["string", "null"],
+          "pattern": "^\\d{4}-(0[1-9]|1[0-2])(?:-(0[1-9]|[12]\\d|3[01]))?$",
+          "description": "Knowledge cutoff date when the model's training data ended (ISO 8601, YYYY-MM or YYYY-MM-DD), null if unknown"
         },
         "inputModalities": {
           "type": "array",
           "description": "Input modalities supported by the model",
           "items": {
             "type": "string",
-            "enum": ["image", "text", "file"]
+            "enum": ["text", "image", "pdf", "audio", "video"]
           },
           "uniqueItems": true,
           "minItems": 1
@@ -121,6 +131,8 @@
         "maxOutput",
         "tokenPricing",
         "releaseDate",
+        "lifecycle",
+        "knowledgeCutoff",
         "inputModalities",
         "capabilities",
         "benchmarks",

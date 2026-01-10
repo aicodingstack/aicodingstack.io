@@ -38,20 +38,22 @@
       "description": "Anthropic 最快、最高效的模型，以大型 Claude 模型的一小部分成本和延遲提供接近前沿的智能。在推理、編碼和計算機使用任務方面與 Claude Sonnet 4 的性能相當，Haiku 4.5 為實時和大规模應用帶來前沿級能力。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://www.anthropic.com",
   "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
   "vendor": "Anthropic",
   "size": "Unknown",
   "contextWindow": 200000,
-  "maxOutput": 8000,
+  "maxOutput": 64000,
   "tokenPricing": {
     "input": 1,
-    "output": 1,
-    "cache": null
+    "output": 5,
+    "cache": 0.1
   },
-  "releaseDate": null,
-  "inputModalities": ["text"],
+  "releaseDate": "2025-10-15",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2025-02",
+  "inputModalities": ["text", "image", "pdf"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
     "sweBench": null,

@@ -51,6 +51,8 @@
     "cache": null
   },
   "releaseDate": null,
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
   "inputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {

@@ -77,7 +77,7 @@ export default function MyComponent() {
 import { getTranslations } from 'next-intl/server'
 
 export default async function Page() {
-  const t = await getTranslations('home')
+  const tPage = await getTranslations('home')
   return <h1>{t('title')}</h1>
 }
 ```
@@ -282,7 +282,7 @@ Include translations for all supported locales in manifest files:
 |------|---------|
 | `src/i18n/config.ts` | Locale configuration |
 | `src/i18n/navigation.ts` | Localized Link component |
-| `src/i18n/lib-core.mjs` | Reference resolution |
+| `src/i18n/lib-core.ts` | Reference resolution |
 | `src/i18n/request.ts` | Request config for next-intl |
 | `src/lib/manifest-i18n.ts` | Manifest translation layer |
 | `translations/{locale}/` | UI translation files |

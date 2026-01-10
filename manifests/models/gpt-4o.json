@@ -38,21 +38,23 @@
       "description": "OpenAI 的旗艦多模態模型，專為編碼任務優化，具備 128K 上下文視窗和先進的推理能力，適用於代碼生成和調試。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://openai.com",
-  "docsUrl": "https://platform.openai.com/docs/models/gpt-4o",
+  "docsUrl": "https://platform.openai.com/docs/models/gpt-4o-latest",
   "vendor": "OpenAI",
   "size": "Unknown",
   "contextWindow": 128000,
-  "maxOutput": 16000,
+  "maxOutput": 16384,
   "tokenPricing": {
     "input": 2.5,
     "output": 10,
-    "cache": null
+    "cache": 1.25
   },
-  "releaseDate": null,
+  "releaseDate": "2024-05-13",
+  "lifecycle": "deprecated",
+  "knowledgeCutoff": "2023-10-01",
   "inputModalities": ["text", "image"],
-  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "capabilities": ["tool-choice", "structured-outputs", "function-calling"],
   "benchmarks": {
     "sweBench": 21.62,
     "terminalBench": 0.401,

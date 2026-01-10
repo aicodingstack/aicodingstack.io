@@ -135,7 +135,6 @@ export interface ManifestCommunityUrls {
   discord: string | null
   reddit: string | null
   blog: string | null
-  [key: string]: string | null
 }
 
 // manifests/$schemas/ref/platform-urls.schema.json → ManifestPlatformUrls
@@ -143,7 +142,6 @@ export interface ManifestPlatformUrls {
   huggingface: string | null
   artificialAnalysis: string | null
   openrouter: string | null
-  [key: string]: string | null
 }
 ```
 
@@ -177,7 +175,6 @@ export interface ManifestIDE extends ManifestBaseApp {}
 // manifests/$schemas/extension.schema.json → ManifestExtension
 export interface ManifestExtension extends ManifestBaseProduct {
   supportedIdes: ManifestIDESupport[]
-  platforms?: ManifestPlatformElement[]
 }
 ```
 
@@ -191,8 +188,8 @@ export interface ManifestModel extends ManifestVendorEntity {
   maxOutput: number
   tokenPricing: ManifestTokenPricing
   releaseDate: string | null
-  inputModalities: ('image' | 'text' | 'file')[]
-  capabilities: ('function-calling' | 'tool-choice' | 'structured-outputs' | 'reasoning')[]
+  inputModalities: ModelInputModality[]
+  capabilities: ModelCapability[]
   benchmarks: ManifestBenchmarks
   platformUrls: ManifestPlatformUrls
 }
@@ -207,7 +204,6 @@ export interface ManifestProvider extends ManifestVendorEntity {
 
 // manifests/$schemas/vendor.schema.json → ManifestVendor
 export interface ManifestVendor extends ManifestEntity {
-  docsUrl?: string | null
   communityUrls: ManifestCommunityUrls
 }
 ```
@@ -248,15 +244,9 @@ export interface ManifestCollectionItem {
 
 ## Type Guards
 
-The system includes type guard functions for runtime type checking:
-
-```typescript
-export function isManifestEntity(obj: unknown): obj is ManifestEntity
-export function isManifestVendorEntity(obj: unknown): obj is ManifestVendorEntity
-export function isManifestBaseProduct(obj: unknown): obj is ManifestBaseProduct
-export function isManifestModel(obj: unknown): obj is ManifestModel
-export function isManifestProvider(obj: unknown): obj is ManifestProvider
-```
+Type guards are intentionally **not** defined in `src/types/manifests.ts` to keep it type-only.
+If runtime guards are needed, define them in a separate module under `src/lib/` (or `src/types/guards/`)
+so client components don't accidentally pull in runtime code when importing types.
 
 ---
 

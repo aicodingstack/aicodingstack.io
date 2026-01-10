@@ -38,19 +38,21 @@
       "description": "一個極速推理模型，在代理式編碼方面表現出色，在 Kilo Code 中限時免費提供。注意：提示和完成內容會被 xAI 記錄並用於改進模型。"
     }
   },
-  "verified": false,
-  "websiteUrl": "https://docs.x.ai/docs/models/grok-code-fast-1",
+  "verified": true,
+  "websiteUrl": "https://x.ai",
   "docsUrl": "https://docs.x.ai/docs/models/grok-code-fast-1",
   "vendor": "xAI",
   "size": "Unknown",
-  "contextWindow": 128000,
-  "maxOutput": 8000,
+  "contextWindow": 256000,
+  "maxOutput": 10000,
   "tokenPricing": {
-    "input": 0,
-    "output": 0,
-    "cache": null
+    "input": 0.2,
+    "output": 1.5,
+    "cache": 0.02
   },
-  "releaseDate": null,
+  "releaseDate": "2025-08-28",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
   "inputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {

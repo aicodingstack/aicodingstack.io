@@ -38,21 +38,23 @@
       "description": "2025年8月發布的 Claude Opus 4.1，是 Anthropic 最新的旗艦模型，具備卓越的編碼能力，在 HumanEval+ 上達到 85.2%（首次超越 GPT-4o 的 84.9%），在 SWE-bench Verified 上達到 74.5%，擁有 200K 上下文視窗，適用於複雜的代碼生成任務。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://www.anthropic.com",
   "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
   "vendor": "Anthropic",
   "size": "Unknown",
   "contextWindow": 200000,
-  "maxOutput": 8000,
+  "maxOutput": 32000,
   "tokenPricing": {
     "input": 15,
     "output": 75,
-    "cache": null
+    "cache": 1.5
   },
-  "releaseDate": "2025-08-01",
-  "inputModalities": ["text"],
-  "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
+  "releaseDate": "2025-08-05",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "pdf"],
+  "capabilities": ["function-calling", "reasoning", "tool-choice", "structured-outputs"],
   "benchmarks": {
     "sweBench": 74.4,
     "terminalBench": 0.631,

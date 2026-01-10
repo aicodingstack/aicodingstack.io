@@ -38,19 +38,21 @@
       "description": "Qwen3 Coder 是專為代碼生成設計的模型，32B 參數，32K 上下文窗口，面向軟件開發編程助手場景。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://qwen.ai",
   "docsUrl": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
   "vendor": "Alibaba",
-  "size": "32B",
-  "contextWindow": 32000,
-  "maxOutput": 4000,
+  "size": "480B",
+  "contextWindow": 262144,
+  "maxOutput": 65536,
   "tokenPricing": {
-    "input": 0.2,
-    "output": 0.2,
+    "input": 1.5,
+    "output": 7.5,
     "cache": null
   },
-  "releaseDate": null,
+  "releaseDate": "2025-07-22",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2025-07",
   "inputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
   "benchmarks": {

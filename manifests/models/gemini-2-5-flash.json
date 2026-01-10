@@ -38,20 +38,22 @@
       "description": "Google 最先進的主力模型，專為高級推理、編碼、數學和科學任務設計。包含內置\"思考\"能力，能夠提供更準確和細緻的上下文處理響應。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://deepmind.google",
-  "docsUrl": "https://ai.google.dev/docs",
+  "docsUrl": "https://ai.google.dev/gemini-api/docs/models#gemini-2.5-flash",
   "vendor": "Google",
   "size": "Unknown",
-  "contextWindow": 128000,
-  "maxOutput": 8000,
+  "contextWindow": 1048576,
+  "maxOutput": 65536,
   "tokenPricing": {
     "input": 0.3,
-    "output": 0.3,
-    "cache": null
+    "output": 2.5,
+    "cache": 0.03
   },
-  "releaseDate": null,
-  "inputModalities": ["text"],
+  "releaseDate": "2025-03-20",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2025-03",
+  "inputModalities": ["text", "image", "pdf", "audio", "video"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
     "sweBench": 28.73,
