@@ -19,7 +19,7 @@ type Props = {
 }
 
 export default function CLIsPageClient({ locale }: Props) {
-  const t = useTranslations('pages.stacks.clis')
+  const tPage = useTranslations('pages.stacks')
   const tGlobal = useTranslations()
   const [sortOrder, setSortOrder] = useState<'default' | 'name-asc' | 'name-desc'>('default')
   const [licenseFilters, setLicenseFilters] = useState<string[]>([])
@@ -101,14 +101,14 @@ export default function CLIsPageClient({ locale }: Props) {
         {/* Main Content */}
         <main className="w-full">
           <PageHeader
-            title={t('title')}
-            subtitle={t('subtitle')}
+            title={tPage('clis.title')}
+            subtitle={tPage('clis.subtitle')}
             action={
               <Link
                 href="/clis/comparison"
                 className="text-sm px-[var(--spacing-md)] py-[var(--spacing-xs)] border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-colors"
               >
-                {t('compareAll')} →
+                {tPage('clis.compareAll')} →
               </Link>
             }
           />
@@ -128,7 +128,7 @@ export default function CLIsPageClient({ locale }: Props) {
 
           {filteredAndSortedClis.length === 0 ? (
             <div className="text-center py-[var(--spacing-xl)] text-[var(--color-text-secondary)]">
-              {t('noMatches')}
+              {tPage('clis.noMatches')}
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[var(--spacing-md)]">

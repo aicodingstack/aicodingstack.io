@@ -13,6 +13,7 @@ import { Link } from '@/i18n/navigation'
 
 import { BENCHMARK_KEYS, formatBenchmarkValue } from '@/lib/benchmarks'
 import { modelsData as models } from '@/lib/generated'
+import { MODEL_CAPABILITIES, MODEL_INPUT_MODALITIES } from '@/types/model-enums'
 
 type Props = {
   locale: string
@@ -50,17 +51,6 @@ function createTokenPricingRenderer(field: 'input' | 'output' | 'cache') {
     )
   }
 }
-
-// All possible input modality values
-const INPUT_MODALITIES: readonly string[] = ['text', 'image', 'file'] as const
-
-// All possible capability values
-const CAPABILITIES: readonly string[] = [
-  'function-calling',
-  'tool-choice',
-  'structured-outputs',
-  'reasoning',
-] as const
 
 // Create abbreviation renderer with all possible values
 function createAbbreviationsRenderer(allValues: readonly string[]) {
@@ -145,18 +135,17 @@ const PRICING_CONFIG: readonly { field: 'input' | 'output' | 'cache'; labelKey: 
 ] as const
 
 export default function ModelComparisonPageClient({ locale: _locale }: Props) {
-  const t = useTranslations('pages.comparison')
-  const tGlobal = useTranslations()
-  const tCommunity = useTranslations('shared.platforms')
+  const tPage = useTranslations('pages.comparison')
+  const tShared = useTranslations('shared')
 
   const columns: ComparisonColumn[] = [
     {
       key: 'vendor',
-      label: t('columns.vendor'),
+      label: tPage('columns.vendor'),
     },
     {
       key: 'links',
-      label: t('columns.links'),
+      label: tPage('columns.links'),
       render: (_: unknown, item: Record<string, unknown>) => {
         const websiteUrl = item.websiteUrl as string | null | undefined
         const platformUrls = item.platformUrls as
@@ -175,20 +164,24 @@ export default function ModelComparisonPageClient({ locale: _locale }: Props) {
                 target="_blank"
                 rel="noopener"
                 className="inline-flex items-center justify-center text-[var(--color-text)] hover:text-[var(--color-text-secondary)] transition-colors"
-                title={t('linkTitles.officialWebsite')}
+                title={tPage('linkTitles.officialWebsite')}
               >
                 <Home className="w-3.5 h-3.5" />
               </a>
             ) : (
               <span
                 className="inline-flex items-center justify-center text-[var(--color-text-muted)] opacity-30"
-                title={t('linkTitles.officialWebsite')}
+                title={tPage('linkTitles.officialWebsite')}
               >
                 <Home className="w-3.5 h-3.5" />
               </span>
             )}
             {PLATFORM_LINK_CONFIG.map(link =>
-              createPlatformLink(link, platformUrls?.[link.urlKey], tCommunity(link.key))
+              createPlatformLink(
+                link,
+                platformUrls?.[link.urlKey],
+                tShared(`platforms.${link.key}`)
+              )
             )}
           </span>
         )
@@ -196,7 +189,7 @@ export default function ModelComparisonPageClient({ locale: _locale }: Props) {
     },
     {
       key: 'size',
-      label: t('columns.modelSize'),
+      label: tPage('columns.modelSize'),
       render: (value: unknown) => {
         if (!value) return wrapWithAlign('-', 'right')
         return wrapWithAlign(value as string, 'right')
@@ -204,33 +197,33 @@ export default function ModelComparisonPageClient({ locale: _locale }: Props) {
     },
     {
       key: 'contextWindow',
-      label: t('columns.contextLength'),
+      label: tPage('columns.contextLength'),
       render: formatTokenCount,
     },
     {
       key: 'maxOutput',
-      label: t('columns.maxOutput'),
+      label: tPage('columns.maxOutput'),
       render: formatTokenCount,
     },
     ...PRICING_CONFIG.map(({ field, labelKey }) => ({
       key: `tokenPricing${field.charAt(0).toUpperCase() + field.slice(1)}`,
-      label: t(`columns.${labelKey}`),
-      title: `${t(`columns.${labelKey}`)} (/M)`,
+      label: tPage(`columns.${labelKey}`),
+      title: `${tPage(`columns.${labelKey}`)} (/M)`,
       render: createTokenPricingRenderer(field),
     })),
     {
       key: 'inputModalities',
-      label: t('columns.inputModalities'),
-      render: createAbbreviationsRenderer(INPUT_MODALITIES),
+      label: tPage('columns.inputModalities'),
+      render: createAbbreviationsRenderer(MODEL_INPUT_MODALITIES),
     },
     {
       key: 'capabilities',
-      label: t('columns.capabilities'),
-      render: createAbbreviationsRenderer(CAPABILITIES),
+      label: tPage('columns.capabilities'),
+      render: createAbbreviationsRenderer(MODEL_CAPABILITIES),
     },
     ...BENCHMARK_KEYS.map(key => ({
       key,
-      label: t(`columns.${camelToKebab(key)}`),
+      label: tPage(`columns.${camelToKebab(key)}`),
       render: (_: unknown, item: Record<string, unknown>) => {
         const benchmarks = item.benchmarks as Record<string, number | null> | undefined
         const value = benchmarks?.[key]
@@ -246,9 +239,9 @@ export default function ModelComparisonPageClient({ locale: _locale }: Props) {
 
       <Breadcrumb
         items={[
-          { name: tGlobal('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
-          { name: tGlobal('shared.categories.plural.models'), href: '/models' },
-          { name: tGlobal('shared.terms.comparison'), href: '/models/comparison' },
+          { name: tShared('terms.aiCodingStack'), href: '/ai-coding-stack' },
+          { name: tShared('categories.plural.models'), href: '/models' },
+          { name: tShared('terms.comparison'), href: '/models/comparison' },
         ]}
       />
 
@@ -256,10 +249,10 @@ export default function ModelComparisonPageClient({ locale: _locale }: Props) {
       <section className="py-[var(--spacing-lg)] border-[var(--color-border)]">
         <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
           <h1 className="text-3xl font-semibold tracking-[-0.03em] mb-[var(--spacing-sm)]">
-            {t('models.title')}
+            {tPage('models.title')}
           </h1>
           <p className="text-base text-[var(--color-text-secondary)] font-light">
-            {t('models.subtitle')}
+            {tPage('models.subtitle')}
           </p>
         </div>
       </section>
@@ -282,7 +275,7 @@ export default function ModelComparisonPageClient({ locale: _locale }: Props) {
             href="/models"
             className="inline-flex items-center gap-[var(--spacing-xs)] text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
           >
-            ← {t('models.backTo')}
+            ← {tPage('models.backTo')}
           </Link>
         </div>
       </section>

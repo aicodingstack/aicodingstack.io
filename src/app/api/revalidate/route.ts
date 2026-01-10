@@ -142,7 +142,9 @@ export async function POST(request: NextRequest) {
       // Revalidate category or group
       const paths = CATEGORY_PATHS[category]
       if (paths) {
-        paths.forEach(p => revalidatePath(p))
+        paths.forEach(p => {
+          revalidatePath(p)
+        })
         return NextResponse.json({
           revalidated: true,
           type: 'category',
@@ -162,7 +164,9 @@ export async function POST(request: NextRequest) {
       }
     } else {
       // Revalidate all pages
-      ALL_REVALIDATION_PATHS.forEach(p => revalidatePath(p))
+      ALL_REVALIDATION_PATHS.forEach(p => {
+        revalidatePath(p)
+      })
       return NextResponse.json({
         revalidated: true,
         type: 'all',

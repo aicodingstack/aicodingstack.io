@@ -9,17 +9,17 @@ import { buildTitle, generateStaticPageMetadata } from '@/lib/metadata'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'pages.articles' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.articles' })
 
-  const title = buildTitle({ title: `${t('title')} - AI Coding Insights & Tutorials` })
-  const description = t('subtitle')
+  const title = buildTitle({ title: `${tPage('title')} - AI Coding Insights & Tutorials` })
+  const description = tPage('subtitle')
 
   return generateStaticPageMetadata({
     locale: locale as Locale,
     basePath: 'articles',
     title,
     description,
-    keywords: t('keywords'),
+    keywords: tPage('keywords'),
     ogType: 'website',
   })
 }
@@ -30,14 +30,14 @@ type Props = {
 
 export default async function ArticlesPage({ params }: Props) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'pages.articles' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.articles' })
   const articles = getArticles(locale)
   return (
     <>
       <Header />
 
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)] py-[var(--spacing-lg)]">
-        <PageHeader title={t('title')} subtitle={t('subtitle')} />
+        <PageHeader title={tPage('title')} subtitle={tPage('subtitle')} />
 
         {/* Articles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[var(--spacing-md)]">

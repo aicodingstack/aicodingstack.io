@@ -83,8 +83,8 @@ export default async function VendorPage({
     notFound()
   }
 
-  const t = await getTranslations({ locale, namespace: 'pages.stacks.vendorDetail' })
-  const tGlobal = await getTranslations({ locale })
+  const tPage = await getTranslations({ locale, namespace: 'pages.stacks.vendorDetail' })
+  const tShared = await getTranslations({ locale })
 
   // Generate JSON-LD schema
   const schema = await generateVendorSchema({
@@ -93,7 +93,7 @@ export default async function VendorPage({
       description: vendor.description,
       websiteUrl: vendor.websiteUrl || '',
     },
-    locale: locale as 'en' | 'zh-Hans' | 'de' | 'ko',
+    locale: locale as Locale,
   })
 
   // Find all products by this vendor
@@ -122,8 +122,8 @@ export default async function VendorPage({
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tGlobal('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tGlobal('shared.categories.plural.vendors'), href: '/vendors' },
+    { name: tShared('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tShared('shared.categories.plural.vendors'), href: '/vendors' },
     { name: vendor.name, href: `vendors/${vendor.id}` },
   ]
 
@@ -135,10 +135,10 @@ export default async function VendorPage({
         name={vendor.name}
         description={vendor.description}
         category="VENDOR"
-        categoryLabel={t('categoryLabel')}
+        categoryLabel={tPage('categoryLabel')}
         verified={vendor.verified ?? false}
         websiteUrl={vendor.websiteUrl}
-        docsUrl={vendor.docsUrl ?? null}
+        docsUrl={null}
       />
 
       {/* Vendor Products (IDEs, CLIs, Extensions) */}
@@ -153,7 +153,7 @@ export default async function VendorPage({
         gridCols="grid-cols-2 md:grid-cols-4"
       />
 
-      <BackToNavigation href="/vendors" title={t('allVendors')} />
+      <BackToNavigation href="/vendors" title={tPage('allVendors')} />
     </PageLayout>
   )
 }

@@ -14,10 +14,10 @@ export const revalidate = 3600
 
 export async function generateMetadata({ params }: LocalePageProps) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'pages.home.meta' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.home.meta' })
 
-  const title = buildTitle({ title: t('title'), includeSiteName: false })
-  const description = t('description')
+  const title = buildTitle({ title: tPage('title'), includeSiteName: false })
+  const description = tPage('description')
 
   return generateStaticPageMetadata({
     locale: locale as Locale,
@@ -45,8 +45,7 @@ async function getFaqSchema(locale: string) {
 
 export default async function Home({ params }: LocalePageProps) {
   const { locale } = await params
-  const tHome = await getTranslations({ locale, namespace: 'pages.home' })
-  const tFeatures = await getTranslations({ locale, namespace: 'pages.home.features' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.home' })
   const faqItems = faqMetadata[locale] || faqMetadata.en || []
   const faqSchema = await getFaqSchema(locale)
 
@@ -75,13 +74,13 @@ export default async function Home({ params }: LocalePageProps) {
             </div>
 
             <h1 className="text-3xl font-semibold tracking-[-0.03em] mb-[var(--spacing-md)] homepage-h1">
-              {tHome('title')}
+              {tPage('title')}
             </h1>
 
             <p className="text-base leading-[1.8] text-[var(--color-text-secondary)] mb-[var(--spacing-lg)] font-light">
-              {tHome('subtitle')}
+              {tPage('subtitle')}
               <br />
-              {tHome('description')}
+              {tPage('description')}
             </p>
 
             {/* CTA Section */}
@@ -90,13 +89,13 @@ export default async function Home({ params }: LocalePageProps) {
                 href="/ai-coding-stack"
                 className="inline-flex items-center gap-[var(--spacing-xs)] px-[var(--spacing-lg)] py-[var(--spacing-sm)] text-sm font-medium border border-[var(--color-border-strong)] bg-[var(--color-text)] text-[var(--color-bg)] hover:bg-[var(--color-text-secondary)] transition-all"
               >
-                {tHome('exploreTools')}
+                {tPage('exploreTools')}
               </Link>
               <Link
                 href="/docs"
                 className="inline-flex items-center gap-[var(--spacing-xs)] px-[var(--spacing-lg)] py-[var(--spacing-sm)] text-sm font-medium border border-[var(--color-border)] hover:bg-[var(--color-hover)] transition-all"
               >
-                {tHome('readDocs')}
+                {tPage('readDocs')}
               </Link>
             </div>
           </div>
@@ -111,7 +110,7 @@ export default async function Home({ params }: LocalePageProps) {
         <div className="border-y border-[var(--color-border)] pb-[var(--spacing-lg)]">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl font-semibold homepage-h2 my-[var(--spacing-lg)]">
-              {tFeatures('title')}
+              {tPage('features.title')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[var(--spacing-lg)]">
               {(['directory', 'comparison', 'ecosystem', 'tracking'] as const).map(featureKey => {
@@ -133,10 +132,10 @@ export default async function Home({ params }: LocalePageProps) {
 └─────┘`}
                     </pre>
                     <h3 className="text-base font-semibold tracking-tight mb-[var(--spacing-sm)]">
-                      {tFeatures(`${featureKey}.title`)}
+                      {tPage(`features.${featureKey}.title`)}
                     </h3>
                     <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] font-light">
-                      {tFeatures(`${featureKey}.description`)}
+                      {tPage(`features.${featureKey}.description`)}
                     </p>
                   </div>
                 )
@@ -149,7 +148,7 @@ export default async function Home({ params }: LocalePageProps) {
       {/* FAQ Section */}
       <section id="faq" className="my-[var(--spacing-lg)] max-w-6xl mx-auto">
         <h2 className="text-2xl font-semibold homepage-h2 my-[var(--spacing-lg)]">
-          {tHome('faq')}
+          {tPage('faq')}
         </h2>
         <div className="space-y-[var(--spacing-md)]">
           {faqItems.map(faq => (

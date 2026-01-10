@@ -9,10 +9,10 @@ import type { LocalePageProps } from '@/types/locale'
 
 export async function generateMetadata({ params }: LocalePageProps) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'pages.stacks.overview' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.stacks.overview' })
 
-  const title = buildTitle({ title: t('title') })
-  const description = t('subtitle')
+  const title = buildTitle({ title: tPage('title') })
+  const description = tPage('subtitle')
 
   return generateStaticPageMetadata({
     locale: locale as Locale,
@@ -27,14 +27,14 @@ export async function generateMetadata({ params }: LocalePageProps) {
 
 export default async function AICodingStackPage({ params }: LocalePageProps) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'pages.stacks.overview' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.stacks.overview' })
 
   return (
     <>
       <Header />
 
       <main className="max-w-8xl mx-auto px-[var(--spacing-md)] py-[var(--spacing-lg)]">
-        <PageHeader title={t('title')} subtitle={t('subtitle')} />
+        <PageHeader title={tPage('title')} subtitle={tPage('subtitle')} />
 
         {/* Stacks Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[var(--spacing-md)]">
@@ -52,13 +52,15 @@ export default async function AICodingStackPage({ params }: LocalePageProps) {
               className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5 group"
             >
               <div className="flex justify-between items-start mb-[var(--spacing-md)]">
-                <h3 className="text-2xl font-semibold tracking-tight">{t(`${stack.key}.title`)}</h3>
+                <h3 className="text-2xl font-semibold tracking-tight">
+                  {tPage(`${stack.key}.title`)}
+                </h3>
                 <span className="text-2xl text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all">
                   →
                 </span>
               </div>
               <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] font-light">
-                {t(`${stack.key}.description`)}
+                {tPage(`${stack.key}.description`)}
               </p>
             </Link>
           ))}

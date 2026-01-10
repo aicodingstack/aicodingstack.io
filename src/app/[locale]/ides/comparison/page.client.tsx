@@ -18,27 +18,27 @@ type Props = {
 }
 
 export default function IDEComparisonPageClient({ locale: _locale }: Props) {
-  const t = useTranslations('pages.comparison')
-  const tCommunity = useTranslations('shared.platforms')
-  const tGlobal = useTranslations()
+  const tPage = useTranslations('pages.comparison')
+  const tShared = useTranslations('shared')
+
   const columns: ComparisonColumn[] = [
     {
       key: 'vendor',
-      label: t('columns.vendor'),
+      label: tPage('columns.vendor'),
     },
     {
       key: 'license',
-      label: t('columns.license'),
+      label: tPage('columns.license'),
       render: (value: unknown, item: Record<string, unknown>) =>
-        renderLicense(value, item, tGlobal),
+        renderLicense(value, item, tShared),
     },
     {
       key: 'latestVersion',
-      label: t('columns.version'),
+      label: tPage('columns.version'),
     },
     {
       key: 'platforms',
-      label: t('columns.platforms'),
+      label: tPage('columns.platforms'),
       render: (value: unknown) => {
         const platforms = value as Array<{ os: string }> | string[]
         if (!platforms || platforms.length === 0) return '-'
@@ -71,7 +71,7 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
     },
     {
       key: 'githubStars',
-      label: t('columns.githubStars'),
+      label: tPage('columns.githubStars'),
       render: (_: unknown, item: Record<string, unknown>) => {
         const id = item.id as string
         const stars = getGithubStars('ides', id)
@@ -105,7 +105,7 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
     },
     {
       key: 'links',
-      label: t('columns.links'),
+      label: tPage('columns.links'),
       render: (_: unknown, item: Record<string, unknown>) => {
         const websiteUrl = item.websiteUrl as string | undefined
         const docsUrl = item.docsUrl as string | undefined
@@ -132,7 +132,7 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
                 target="_blank"
                 rel="noopener"
                 className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] transition-colors"
-                title={t('linkTitles.officialWebsite')}
+                title={tPage('linkTitles.officialWebsite')}
               >
                 <Home className="w-3.5 h-3.5" />
               </a>
@@ -147,7 +147,7 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
                 target="_blank"
                 rel="noopener"
                 className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] transition-colors"
-                title={t('linkTitles.download')}
+                title={tPage('linkTitles.download')}
               >
                 <Download className="w-3.5 h-3.5" />
               </a>
@@ -162,7 +162,7 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
                 target="_blank"
                 rel="noopener"
                 className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] transition-colors"
-                title={t('linkTitles.documentation')}
+                title={tPage('linkTitles.documentation')}
               >
                 <FileText className="w-3.5 h-3.5" />
               </a>
@@ -177,7 +177,7 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
                 target="_blank"
                 rel="noopener"
                 className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] transition-colors"
-                title={tCommunity('github')}
+                title={tShared('platforms.github')}
               >
                 <Github className="w-3.5 h-3.5" />
               </a>
@@ -192,7 +192,7 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
                 target="_blank"
                 rel="noopener"
                 className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] transition-colors"
-                title={tCommunity('twitter')}
+                title={tShared('platforms.twitter')}
               >
                 <Twitter className="w-3.5 h-3.5" />
               </a>
@@ -207,7 +207,7 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
                 target="_blank"
                 rel="noopener"
                 className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] transition-colors"
-                title={tCommunity('linkedin')}
+                title={tShared('platforms.linkedin')}
               >
                 <Linkedin className="w-3.5 h-3.5" />
               </a>
@@ -222,7 +222,7 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
                 target="_blank"
                 rel="noopener"
                 className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] transition-colors"
-                title={tCommunity('youtube')}
+                title={tShared('platforms.youtube')}
               >
                 <Youtube className="w-3.5 h-3.5" />
               </a>
@@ -237,7 +237,7 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
     },
     {
       key: 'pricing-free',
-      label: t('columns.freePlan'),
+      label: tPage('columns.freePlan'),
       render: (_: unknown, item: Record<string, unknown>) => {
         const pricing = item.pricing as PricingTier[]
         if (!pricing || pricing.length === 0) return '-'
@@ -247,12 +247,12 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
     },
     {
       key: 'pricing-min',
-      label: t('columns.startingPrice'),
+      label: tPage('columns.startingPrice'),
       render: (_: unknown, item: Record<string, unknown>) => {
         const pricing = item.pricing as PricingTier[]
         if (!pricing || pricing.length === 0) return '-'
         const paidPlans = pricing.filter(p => p.value && p.value > 0)
-        if (paidPlans.length === 0) return t('pricingValues.freeOnly')
+        if (paidPlans.length === 0) return tPage('pricingValues.freeOnly')
         const minPrice = Math.min(...paidPlans.map(p => p.value as number))
         const minPlan = paidPlans.find(p => p.value === minPrice)
         return minPlan ? formatPrice(minPlan) : '-'
@@ -260,7 +260,7 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
     },
     {
       key: 'pricing-max',
-      label: t('columns.maxPrice'),
+      label: tPage('columns.maxPrice'),
       render: (_: unknown, item: Record<string, unknown>) => {
         const pricing = item.pricing as PricingTier[]
         if (!pricing || pricing.length === 0) return '-'
@@ -279,9 +279,9 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
 
       <Breadcrumb
         items={[
-          { name: tGlobal('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
-          { name: tGlobal('shared.categories.plural.ides'), href: '/ides' },
-          { name: tGlobal('shared.terms.comparison'), href: '/ides/comparison' },
+          { name: tShared('terms.aiCodingStack'), href: '/ai-coding-stack' },
+          { name: tShared('categories.plural.ides'), href: '/ides' },
+          { name: tShared('terms.comparison'), href: '/ides/comparison' },
         ]}
       />
 
@@ -289,10 +289,10 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
       <section className="py-[var(--spacing-lg)] border-[var(--color-border)]">
         <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
           <h1 className="text-3xl font-semibold tracking-[-0.03em] mb-[var(--spacing-sm)]">
-            {t('ides.title')}
+            {tPage('ides.title')}
           </h1>
           <p className="text-base text-[var(--color-text-secondary)] font-light">
-            {t('ides.subtitle')}
+            {tPage('ides.subtitle')}
           </p>
         </div>
       </section>
@@ -315,7 +315,7 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
             href="/ides"
             className="inline-flex items-center gap-[var(--spacing-xs)] text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
           >
-            ← {t('ides.backTo')}
+            ← {tPage('ides.backTo')}
           </Link>
         </div>
       </section>

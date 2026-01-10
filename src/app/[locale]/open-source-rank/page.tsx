@@ -10,10 +10,10 @@ export const revalidate = 3600
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'pages.openSourceRank.meta' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.openSourceRank.meta' })
 
-  const title = buildTitle({ title: t('title') })
-  const description = t('description')
+  const title = buildTitle({ title: tPage('title') })
+  const description = tPage('description')
 
   return generateStaticPageMetadata({
     locale: locale as Locale,
@@ -30,14 +30,14 @@ type Props = {
 
 export default async function Page({ params }: Props) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'pages.openSourceRank' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.openSourceRank' })
 
   return (
     <>
       <Header />
       <main className="min-h-screen">
         <div className="max-w-8xl mx-auto px-[var(--spacing-md)] py-[var(--spacing-lg)]">
-          <PageHeader title={t('title')} subtitle={t('description')} />
+          <PageHeader title={tPage('title')} subtitle={tPage('description')} />
 
           <OpenSourceRankPage />
         </div>

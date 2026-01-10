@@ -57,8 +57,8 @@ export default async function ProviderPage({
     notFound()
   }
 
-  const t = await getTranslations({ locale, namespace: 'pages.stacks.modelProviderDetail' })
-  const tGlobal = await getTranslations({ locale })
+  const tPage = await getTranslations({ locale, namespace: 'pages.stacks.modelProviderDetail' })
+  const tShared = await getTranslations({ locale })
 
   // Generate JSON-LD schema
   const schema = await generateVendorSchema({
@@ -67,13 +67,13 @@ export default async function ProviderPage({
       description: provider.description,
       websiteUrl: provider.websiteUrl || '',
     },
-    locale: locale as 'en' | 'zh-Hans' | 'de' | 'ko',
+    locale: locale as Locale,
   })
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tGlobal('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tGlobal('shared.categories.plural.modelProviders'), href: '/model-providers' },
+    { name: tShared('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tShared('shared.categories.plural.modelProviders'), href: '/model-providers' },
     { name: provider.name, href: `model-providers/${provider.id}` },
   ]
 
@@ -86,10 +86,10 @@ export default async function ProviderPage({
           name={provider.name}
           description={provider.description}
           category="PROVIDER"
-          categoryLabel={t('categoryLabel')}
+          categoryLabel={tPage('categoryLabel')}
           verified={provider.verified ?? false}
           type={provider.type}
-          typeValue={provider.type ? t(`providerTypes.${provider.type}`) : undefined}
+          typeValue={provider.type ? tPage(`providerTypes.${provider.type}`) : undefined}
           websiteUrl={provider.websiteUrl}
           docsUrl={provider.docsUrl ?? null}
           applyKeyUrl={provider.applyKeyUrl}
@@ -107,7 +107,7 @@ export default async function ProviderPage({
           gridCols="grid-cols-2 md:grid-cols-4"
         />
 
-        <BackToNavigation href="/model-providers" title={t('allModelProviders')} />
+        <BackToNavigation href="/model-providers" title={tPage('allModelProviders')} />
       </main>
     </PageLayout>
   )
