@@ -108,10 +108,10 @@ export async function generateListPageMetadata(options: {
 }): Promise<Metadata> {
   const { locale, category, translationNamespace, additionalKeywords = [] } = options
 
-  const t = await getTranslations({ locale, namespace: translationNamespace })
+  const tPage = await getTranslations({ locale, namespace: translationNamespace })
 
-  const translatedTitle = t('title')
-  const description = t('subtitle')
+  const translatedTitle = tPage('title')
+  const description = tPage('subtitle')
 
   // Build SEO-optimized title
   const categoryExamples = CATEGORY_EXAMPLES[category as keyof typeof CATEGORY_EXAMPLES]
@@ -165,7 +165,7 @@ export async function generateSoftwareDetailMetadata(options: {
     description: string
     vendor: string
     platforms?: Array<{ os: string }> | string[]
-    pricing?: Array<{ value: number | null; currency: string | null; per: string | null }>
+    pricing?: Array<{ value: number | null; currency?: string | null; per?: string | null }>
     license?: string
   }
   typeDescription: string
@@ -242,17 +242,18 @@ export async function generateModelDetailMetadata(options: {
 }): Promise<Metadata> {
   const { locale, slug, model, translationNamespace } = options
 
-  const t = await getTranslations({ locale, namespace: translationNamespace })
+  const tPage = await getTranslations({ locale, namespace: translationNamespace })
 
   // Build title with model-specific translation
-  const title = `${model.name} - ${t('metaTitle')}`
+  const title = `${model.name} - ${tPage('metaTitle')}`
 
   // Build description with model specs
   const specs: string[] = []
-  if (model.size) specs.push(`${t('modelSize')}: ${model.size}`)
+  if (model.size) specs.push(`${tPage('modelSize')}: ${model.size}`)
   if (model.contextWindow)
-    specs.push(`${t('contextWindow')}: ${formatTokenCount(model.contextWindow)} tokens`)
-  if (model.maxOutput) specs.push(`${t('maxOutput')}: ${formatTokenCount(model.maxOutput)} tokens`)
+    specs.push(`${tPage('contextWindow')}: ${formatTokenCount(model.contextWindow)} tokens`)
+  if (model.maxOutput)
+    specs.push(`${tPage('maxOutput')}: ${formatTokenCount(model.maxOutput)} tokens`)
 
   const pricingDisplay = model.tokenPricing?.input
     ? `$${model.tokenPricing.input}/M tokens`
@@ -260,7 +261,7 @@ export async function generateModelDetailMetadata(options: {
       ? `$${model.tokenPricing.output}/M tokens`
       : null
 
-  if (pricingDisplay) specs.push(`${t('pricing')}: ${pricingDisplay}`)
+  if (pricingDisplay) specs.push(`${tPage('pricing')}: ${pricingDisplay}`)
 
   const description = `${model.name} by ${model.vendor}. ${specs.join('. ')}. ${model.description}`
 
@@ -273,7 +274,7 @@ export async function generateModelDetailMetadata(options: {
   ])
 
   // Social media titles
-  const socialTitle = `${model.name} - ${t('metaTitle')}`
+  const socialTitle = `${model.name} - ${tPage('metaTitle')}`
 
   // Use common metadata builder
   // Note: OG and Twitter images are automatically detected from opengraph-image.tsx files
@@ -314,9 +315,9 @@ export async function generateComparisonMetadata(options: {
 
   if (translationNamespace) {
     try {
-      const t = await getTranslations({ locale, namespace: translationNamespace })
-      title = `${t('title')} - ${categoryName} Comparison | ${METADATA_DEFAULTS.siteName}`
-      description = t('description')
+      const tPage = await getTranslations({ locale, namespace: translationNamespace })
+      title = `${tPage('title')} - ${categoryName} Comparison | ${METADATA_DEFAULTS.siteName}`
+      description = tPage('description')
     } catch {
       // Fallback to default English text if translations not available
       title = `Compare ${categoryName} - Side-by-Side Comparison | ${METADATA_DEFAULTS.siteName}`

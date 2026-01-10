@@ -46,64 +46,64 @@ export const articlesMetadata: Record<string, ArticleMetadata[]> = {
   es: [
     {
       slug: 'getting-started-with-ai-coding',
-      title: 'Getting Started with AI Coding: A Comprehensive Guide',
+      title: 'Comenzando con AI Coding: Una Guía Completa',
       description:
-        'Learn how to set up your first AI-powered development environment with IDEs, CLIs, and the essential tools you need to boost your coding productivity.',
+        'Aprende cómo configurar tu primer entorno de desarrollo impulsado por IA con IDEs, CLIs y las herramientas esenciales que necesitas para impulsar tu productividad de programación.',
       date: '2025-01-15',
     },
     {
       slug: 'mcp-servers-explained',
-      title: 'Understanding MCP Servers: The Future of AI Context',
+      title: 'Entendiendo los Servidores MCP: El Futuro del Contexto de IA',
       description:
-        'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.',
+        'Un análisis profundo de los servidores del Protocolo de Contexto de Modelo, cómo funcionan y por qué son cruciales para construir asistentes de programación con IA que realmente entiendan tu proyecto.',
       date: '2025-01-10',
     },
   ],
   fr: [
     {
       slug: 'getting-started-with-ai-coding',
-      title: 'Getting Started with AI Coding: A Comprehensive Guide',
+      title: 'Commencer avec AI Coding : Un Guide Complet',
       description:
-        'Learn how to set up your first AI-powered development environment with IDEs, CLIs, and the essential tools you need to boost your coding productivity.',
+        "Apprenez comment configurer votre premier environnement de développement propulsé par l'IA avec des IDE, des CLI et les outils essentiels dont vous avez besoin pour stimuler votre productivité de programmation.",
       date: '2025-01-15',
     },
     {
       slug: 'mcp-servers-explained',
-      title: 'Understanding MCP Servers: The Future of AI Context',
+      title: "Comprendre les Serveurs MCP : L'Avenir du Contexte IA",
       description:
-        'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.',
+        'Un approfondissement des serveurs du Protocole de Contexte de Modèle, comment ils fonctionnent et pourquoi ils sont cruciaux pour construire des assistants de programmation IA intelligents qui comprennent vraiment votre projet.',
       date: '2025-01-10',
     },
   ],
   id: [
     {
       slug: 'getting-started-with-ai-coding',
-      title: 'Getting Started with AI Coding: A Comprehensive Guide',
+      title: 'Memulai AI Coding: Panduan Lengkap',
       description:
-        'Learn how to set up your first AI-powered development environment with IDEs, CLIs, and the essential tools you need to boost your coding productivity.',
+        'Pelajari cara menyiapkan lingkungan pengembangan bertenaga AI pertama Anda dengan IDE, CLI, dan alat penting yang Anda butuhkan untuk meningkatkan produktivitas pemrograman Anda.',
       date: '2025-01-15',
     },
     {
       slug: 'mcp-servers-explained',
-      title: 'Understanding MCP Servers: The Future of AI Context',
+      title: 'Memahami Server MCP: Masa Depan Konteks AI',
       description:
-        'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.',
+        'Eksplorasi mendalam tentang server Model Context Protocol, cara kerjanya, dan mengapa mereka penting untuk membangun asisten pemrograman AI cerdas yang benar-benar memahami proyek Anda.',
       date: '2025-01-10',
     },
   ],
   ja: [
     {
       slug: 'getting-started-with-ai-coding',
-      title: 'Getting Started with AI Coding: A Comprehensive Guide',
+      title: 'AIコーディングの始め方：包括ガイド',
       description:
-        'Learn how to set up your first AI-powered development environment with IDEs, CLIs, and the essential tools you need to boost your coding productivity.',
+        'IDE、CLI、コーディング生産性を向上させる必須ツールを使って、初めてのAI搭載開発環境を設定する方法を学びます。',
       date: '2025-01-15',
     },
     {
       slug: 'mcp-servers-explained',
-      title: 'Understanding MCP Servers: The Future of AI Context',
+      title: 'MCPサーバーの理解：AIコンテキストの未来',
       description:
-        'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.',
+        'モデルコンテキストプロトコルサーバーの詳細、その仕組み、およびプロジェクトを真に理解するインテリジェントなAIコーディングアシスタントを構築するために重要な理由について詳しく解説します。',
       date: '2025-01-10',
     },
   ],
@@ -126,48 +126,48 @@ export const articlesMetadata: Record<string, ArticleMetadata[]> = {
   pt: [
     {
       slug: 'getting-started-with-ai-coding',
-      title: 'Getting Started with AI Coding: A Comprehensive Guide',
+      title: 'Começando com AI Coding: Um Guia Completo',
       description:
-        'Learn how to set up your first AI-powered development environment with IDEs, CLIs, and the essential tools you need to boost your coding productivity.',
+        'Aprenda como configurar o seu primeiro ambiente de desenvolvimento alimentado por IA com IDEs, CLIs e as ferramentas essenciais que você precisa para aumentar a sua produtividade de programação.',
       date: '2025-01-15',
     },
     {
       slug: 'mcp-servers-explained',
-      title: 'Understanding MCP Servers: The Future of AI Context',
+      title: 'Entendendo Servidores MCP: O Futuro do Contexto de IA',
       description:
-        'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.',
+        'Um mergulho profundo em servidores do Protocolo de Contexto de Modelo, como funcionam e por que são cruciais para construir assistentes de programação com IA inteligentes que realmente entendem o seu projeto.',
       date: '2025-01-10',
     },
   ],
   ru: [
     {
       slug: 'getting-started-with-ai-coding',
-      title: 'Getting Started with AI Coding: A Comprehensive Guide',
+      title: 'Начало работы с AI Coding: Полное руководство',
       description:
-        'Learn how to set up your first AI-powered development environment with IDEs, CLIs, and the essential tools you need to boost your coding productivity.',
+        'Узнайте, как настроить вашу первую среду разработки на базе ИИ с использованием IDE, CLI и необходимых инструментов для повышения вашей продуктивности программирования.',
       date: '2025-01-15',
     },
     {
       slug: 'mcp-servers-explained',
-      title: 'Understanding MCP Servers: The Future of AI Context',
+      title: 'Понимание серверов MCP: Будущее контекста ИИ',
       description:
-        'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.',
+        'Глубокое погружение в серверы протокола контекста модели, как они работают и почему они критически важны для создания интеллектуальных ассистентов программирования на базе ИИ, которые действительно понимают ваш проект.',
       date: '2025-01-10',
     },
   ],
   tr: [
     {
       slug: 'getting-started-with-ai-coding',
-      title: 'Getting Started with AI Coding: A Comprehensive Guide',
+      title: 'Yapay Zeka Kodlamaya Başlarken: Kapsamlı Bir Rehber',
       description:
-        'Learn how to set up your first AI-powered development environment with IDEs, CLIs, and the essential tools you need to boost your coding productivity.',
+        "IDE'ler, CLI'ler ve kodlama verimliliğinizi artırmak için ihtiyacınız olan temel araçları kullanarak yapay zeka destekli ilk geliştirme ortamınızı nasıl kuracağınızı öğrenin.",
       date: '2025-01-15',
     },
     {
       slug: 'mcp-servers-explained',
-      title: 'Understanding MCP Servers: The Future of AI Context',
+      title: 'MCP Sunucularını Anlamak: Yapay Zeka Bağlamının Geleceği',
       description:
-        'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.',
+        'Model Bağlam Protokolü sunucularını, nasıl çalıştıklarını ve projenizi gerçekten anlayan akıllı yapay zeka kodlama asistanları oluşturmak için neden kritik olduklarını derinlemesine anlayın.',
       date: '2025-01-10',
     },
   ],
@@ -190,16 +190,16 @@ export const articlesMetadata: Record<string, ArticleMetadata[]> = {
   'zh-Hant': [
     {
       slug: 'getting-started-with-ai-coding',
-      title: 'Getting Started with AI Coding: A Comprehensive Guide',
+      title: 'AI 編碼入門：綜合指南',
       description:
-        'Learn how to set up your first AI-powered development environment with IDEs, CLIs, and the essential tools you need to boost your coding productivity.',
+        '學習如何使用 IDE、命令列和必備工具搭建你的第一個 AI 驅動開發環境，提升編碼生產力。',
       date: '2025-01-15',
     },
     {
       slug: 'mcp-servers-explained',
-      title: 'Understanding MCP Servers: The Future of AI Context',
+      title: '理解 MCP 伺服器：AI 上下文的未來',
       description:
-        'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.',
+        '深入了解模型上下文協議伺服器的工作原理，以及為什麼它們對構建真正理解你項目的智能 AI 編碼助手至關重要。',
       date: '2025-01-10',
     },
   ],
@@ -1110,7 +1110,7 @@ export const stackCounts: Record<string, number> = {
   ides: 13,
   clis: 20,
   extensions: 15,
-  models: 26,
-  'model-providers': 7,
+  models: 32,
+  'model-providers': 13,
   vendors: 36,
 }
