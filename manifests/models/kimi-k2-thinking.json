@@ -1,0 +1,72 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "kimi-k2-thinking",
+  "name": "Kimi K2 Thinking",
+  "description": "A reasoning-focused variant of the Kimi K2 model from Moonshot AI with extended thinking capabilities for complex problem-solving and multi-step reasoning tasks.",
+  "translations": {
+    "zh-Hans": {
+      "description": "月之暗面推出的 Kimi K2 推理聚焦模型，具备扩展思考能力，专为复杂问题解决和多步推理任务优化。"
+    },
+    "de": {
+      "description": "Eine auf Schlussfolgern spezialisierte Variante des Kimi K2-Modells von Moonshot AI mit erweiterten Denkfähigkeiten für komplexes Problemlösen und mehrstufige Aufgaben."
+    },
+    "ko": {
+      "description": "Moonshot AI의 Kimi K2 추론 중심 변형 모델로, 복잡한 문제 해결 및 다단계 추론 작업을 위한 확장된 사고 기능을 갖추고 있습니다."
+    },
+    "es": {
+      "description": "Una variante enfocada en razonamiento del modelo Kimi K2 de Moonshot AI con capacidades de pensamiento extendido para la resolución de problemas complejos y tareas de razonamiento de múltiples pasos."
+    },
+    "fr": {
+      "description": "Une variante axée sur le raisonnement du modèle Kimi K2 de Moonshot AI avec des capacités de penséeétendues pour la résolution de problèmes complexes et des tâches de raisonnement en plusieurs étapes."
+    },
+    "id": {
+      "description": "Varian berfokus pada penalaran dari model Kimi K2 Moonshot AI dengan kemampuan berpikir yang diperluas untuk pemecahan masalah kompleks dan tugas penalaran multi-langkah."
+    },
+    "ja": {
+      "description": "Moonshot AIのKimi K2モデルの推論に特化したバリアントで、複雑な問題解決と複数段階の推論タスクのための拡張された思考能力を備えています。"
+    },
+    "pt": {
+      "description": "Uma variante focada em raciocinio do modelo Kimi K2 da Moonshot AI com capacidades de pensamento estendido para resolução de problemas complexos e tarefas de raciocinio de múltiplos passos."
+    },
+    "ru": {
+      "description": "Вариант модели Kimi K2 от Moonshot AI, ориентированный на рассуждения, с расширенными мыслительными возможностями для решения сложных проблем и многошаговых задач."
+    },
+    "tr": {
+      "description": "Karmasik problem cozme ve cok adimli muhakeme gorevleri icin genisletilmis dusunme yeteneklerine sahip, Moonshot AI'den Kimi K2 modelinin muhakeme odakli bir varyanti."
+    },
+    "zh-Hant": {
+      "description": "月之暗面推出的 Kimi K2 推理聚焦模型，具備擴展思考能力，專為複雜問題解決和多步推理任務優化。"
+    }
+  },
+  "verified": true,
+  "websiteUrl": "https://moonshot.ai",
+  "docsUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct-Thinking",
+  "vendor": "Moonshot",
+  "size": "1,000B",
+  "contextWindow": 262144,
+  "maxOutput": 262144,
+  "tokenPricing": {
+    "input": 0.6,
+    "output": 2.5,
+    "cache": 0.15
+  },
+  "releaseDate": "2025-11-06",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2025-11",
+  "inputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "sciCode": null,
+    "liveCodeBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/moonshotai/Kimi-K2-Instruct-Thinking",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/kimi-k2-thinking",
+    "openrouter": "https://openrouter.ai/moonshotai/kimi-k2-thinking"
+  }
+}

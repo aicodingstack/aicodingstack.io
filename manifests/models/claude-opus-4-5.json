@@ -1,0 +1,72 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "claude-opus-4-5",
+  "name": "Claude Opus 4.5",
+  "description": "Anthropic's flagship Claude Opus 4.5: strong reasoning, 200K context, multimodal (text, image, PDF).",
+  "translations": {
+    "zh-Hans": {
+      "description": "Anthropic 旗舰 Claude Opus 4.5：更强推理、200K 上下文、多模态（文本/图像/PDF）。"
+    },
+    "de": {
+      "description": "Anthropics Flaggschiff Claude Opus 4.5: starkes Reasoning, 200K Kontext, multimodal (Text, Bild, PDF)."
+    },
+    "ko": {
+      "description": "Anthropic의 플래그십 Claude Opus 4.5: 강력한 추론, 200K 컨텍스트, 멀티모달(텍스트·이미지·PDF)."
+    },
+    "es": {
+      "description": "Claude Opus 4.5, modelo insignia de Anthropic: razonamiento avanzado, 200K de contexto, multimodal (texto, imagen, PDF)."
+    },
+    "fr": {
+      "description": "Claude Opus 4.5, modele phare d'Anthropic : raisonnement avance, contexte 200K, multimodal (texte, image, PDF)."
+    },
+    "id": {
+      "description": "Model unggulan Anthropic Claude Opus 4.5: penalaran kuat, konteks 200K, multimodal (teks, gambar, PDF)."
+    },
+    "ja": {
+      "description": "Anthropicの旗艦Claude Opus 4.5：強力な推論、200Kコンテキスト、マルチモーダル（テキスト・画像・PDF）。"
+    },
+    "pt": {
+      "description": "Claude Opus 4.5, modelo flagship da Anthropic: raciocinio forte, contexto 200K, multimodal (texto, imagem, PDF)."
+    },
+    "ru": {
+      "description": "Флагман Anthropic Claude Opus 4.5: сильное рассуждение, контекст 200K, мультимодальный ввод (текст, изображение, PDF)."
+    },
+    "tr": {
+      "description": "Anthropic'in amiral gemisi Claude Opus 4.5: guclu muhakeme, 200K baglam, cok modlu (metin, resim, PDF)."
+    },
+    "zh-Hant": {
+      "description": "Anthropic 旗艦 Claude Opus 4.5：更強推理、200K 上下文、多模態（文字/圖像/PDF）。"
+    }
+  },
+  "verified": true,
+  "websiteUrl": "https://www.anthropic.com",
+  "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
+  "vendor": "Anthropic",
+  "size": "Unknown",
+  "contextWindow": 200000,
+  "maxOutput": 64000,
+  "tokenPricing": {
+    "input": 5,
+    "output": 25,
+    "cache": 0.5
+  },
+  "releaseDate": "2025-11-24",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2025-05",
+  "inputModalities": ["text", "image", "pdf"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "sciCode": null,
+    "liveCodeBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/claude-opus-4-5",
+    "openrouter": "https://openrouter.ai/anthropic/claude-opus-4.5"
+  }
+}

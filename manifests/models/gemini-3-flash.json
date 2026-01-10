@@ -1,0 +1,72 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gemini-3-flash",
+  "name": "Gemini 3 Flash",
+  "description": "Google's fast reasoning model for efficient advanced reasoning, coding, math, and science. Built-in thinking ensures greater accuracy with optimized performance.",
+  "translations": {
+    "zh-Hans": {
+      "description": "Google 的下一代快速推理模型，专为高效的高级推理、编码、数学和科学任务设计。内置\\\"思考\\\"能力能够在优化性能的同时提供更高的准确性。"
+    },
+    "de": {
+      "description": "Googles schnelles Reasoning-Modell für effizientes fortgeschrittenes Reasoning, Codierung, Mathematik und Wissenschaft."
+    },
+    "ko": {
+      "description": "고급 추론, 코딩, 수학 및 과학 작업을 효율적으로 수행하기 위해 설계된 Google의 차세대 빠른 추론 모델입니다. 통합 \\\"생각\\\" 능력은 최적화된 성능으로 더 높은 정확도를 가능하게 합니다."
+    },
+    "es": {
+      "description": "Modelo de razonamiento rapido de Google para razonamiento avanzado eficiente, codificacion, matematicas y ciencia."
+    },
+    "fr": {
+      "description": "Modele de raisonnement rapide de Google pour raisonnement avance efficace, codage, mathematiques et science."
+    },
+    "id": {
+      "description": "Model penalaran cepat Google untuk penalaran tingkat lanjut efisien, coding, matematika, dan sains."
+    },
+    "ja": {
+      "description": "Googleの次世代高速推論モデルで、効率的な高度な推論、コーディング、数学、科学タスクのために設計されています。統合された\\\"思考\\\"能力により、最適化されたパフォーマンスでより高い精度を実現します。"
+    },
+    "pt": {
+      "description": "Modelo de raciocinio rapido do Google para raciocinio avancado eficiente, codificacao, matematica e ciencia."
+    },
+    "ru": {
+      "description": "Быстрая модель рассуждения Google для эффективного рассуждения, программирования, математики и науки."
+    },
+    "tr": {
+      "description": "Google'in hizli muhakeme modeli, gelismis muhakeme, kodlama, matematik ve bilim icin tasarlandi."
+    },
+    "zh-Hant": {
+      "description": "Google 的下一代快速推理模型，專為高效的高級推理、編碼、數學和科學任務設計。內置\\\"思考\\\"能力能夠在優化性能的同時提供更高的準確性。"
+    }
+  },
+  "verified": true,
+  "websiteUrl": "https://deepmind.google",
+  "docsUrl": "https://ai.google.dev/gemini-api/docs/models#gemini-3-flash",
+  "vendor": "Google",
+  "size": "Unknown",
+  "contextWindow": 1048576,
+  "maxOutput": 65536,
+  "tokenPricing": {
+    "input": 0.5,
+    "cache": 0.05,
+    "output": 3
+  },
+  "releaseDate": "2025-12-17",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2025-01",
+  "inputModalities": ["text", "image", "pdf", "audio", "video"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "sciCode": null,
+    "liveCodeBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gemini-3-flash",
+    "openrouter": "https://openrouter.ai/google/gemini-3-flash"
+  }
+}

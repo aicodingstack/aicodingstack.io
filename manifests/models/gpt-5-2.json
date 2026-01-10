@@ -1,0 +1,72 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gpt-5-2",
+  "name": "GPT-5.2",
+  "description": "OpenAI's new generation high-performance model, building upon GPT-5.1 with enhanced reasoning capabilities, larger context understanding, and improved coding performance features.",
+  "translations": {
+    "zh-Hans": {
+      "description": "OpenAI 的新一代高性能模型，在 GPT-5.1 的基础上进行了增强，具有更强的推理能力、更大的上下文理解和改进的编码性能功能。"
+    },
+    "de": {
+      "description": "OpenAIs neuartiges Hochleistungsmodell, das auf GPT-5.1 aufbaut mit verbessertem Reasoning, erweitertem Kontextverstandnis und verbesserter Coding-Leistung."
+    },
+    "ko": {
+      "description": "OpenAI의 차세대 고성능 모델로, GPT-5.1을 기반으로 향상된 추론 능력, 더 큰 컨텍스트 이해 및 개선된 코딩 성능 기능을 갖추고 있습니다."
+    },
+    "es": {
+      "description": "Modelo de alto rendimiento de nueva generacion de OpenAI, mejorando sobre GPT-5.1 con razonamiento mejorado y mejor codificacion."
+    },
+    "fr": {
+      "description": "Modele haute performance de nouvelle generation d'OpenAI, sur GPT-5.1 avec raisonnement ameliore et meilleur codage."
+    },
+    "id": {
+      "description": "Model kinerja tinggi generasi baru dari OpenAI, membangun di atas GPT-5.1 dengan kemampuan penalaran yang ditingkatkan, pemahaman konteks yang lebih besar, dan fitur performa coding yang lebih baik."
+    },
+    "ja": {
+      "description": "OpenAIの次世代高性能モデルで、GPT-5.1をベースに強化された推論能力、より大きなコンテキスト理解、そして改善されたコーディングパフォーマンス機能を備えています。"
+    },
+    "pt": {
+      "description": "Modelo alto desempenho nova geracao OpenAI, baseado no GPT-5.1 com raciocinio aprimorado e melhor codificacao."
+    },
+    "ru": {
+      "description": "Модель новой генерации высокой производительности от OpenAI, на базе GPT-5.1 с улучшенным рассуждением и кодированием."
+    },
+    "tr": {
+      "description": "OpenAI'nin yeni nesil yuksek performansli modeli, GPT-5.1 uzerine insa edilmis gelismis muhakeme yetenekleri, daha genis baglam anlayisi ve gelismis kodlama performans ozellikleri ile."
+    },
+    "zh-Hant": {
+      "description": "OpenAI 的新一代高性能模型，在 GPT-5.1 的基礎上進行了增強，具有更強的推理能力、更大的上下文理解和改進的編碼性能功能。"
+    }
+  },
+  "verified": true,
+  "websiteUrl": "https://openai.com",
+  "docsUrl": "https://platform.openai.com/docs/models/gpt-5.2",
+  "vendor": "OpenAI",
+  "size": "Unknown",
+  "contextWindow": 400000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "input": 1.75,
+    "cache": 0.175,
+    "output": 14
+  },
+  "releaseDate": "2025-12-11",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2025-08-31",
+  "inputModalities": ["text", "image"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "sciCode": null,
+    "liveCodeBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-5-2",
+    "openrouter": "https://openrouter.ai/openai/gpt-5.2"
+  }
+}
