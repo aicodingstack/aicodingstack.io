@@ -135,11 +135,7 @@ function extractReferencePath(value: string): string | null {
  * Collect all leaf values by their key paths.
  * Returns a map of key paths to their actual values.
  */
-function collectValueMap(
-  value: unknown,
-  prefix: string,
-  map: Map<string, unknown>
-): void {
+function collectValueMap(value: unknown, prefix: string, map: Map<string, unknown>): void {
   if (value === null || typeof value !== 'object') return
 
   if (Array.isArray(value)) {
@@ -205,16 +201,16 @@ function validateValueAlignment(
       if (!localeIsRef) {
         failures.push(
           `[${locale}] ${filePath}:${keyPath}\n` +
-          `  English uses reference: ${enValue}\n` +
-          `  Locale uses direct value: "${localeValue}"\n` +
-          `  Expected: ${enValue}`
+            `  English uses reference: ${enValue}\n` +
+            `  Locale uses direct value: "${localeValue}"\n` +
+            `  Expected: ${enValue}`
         )
       } else if (extractReferencePath(localeValue as string) !== enRefPath) {
         failures.push(
           `[${locale}] ${filePath}:${keyPath}\n` +
-          `  English reference: ${enValue}\n` +
-          `  Locale reference: ${localeValue}\n` +
-          `  Expected same reference path`
+            `  English reference: ${enValue}\n` +
+            `  Locale reference: ${localeValue}\n` +
+            `  Expected same reference path`
         )
       }
     }
@@ -223,9 +219,9 @@ function validateValueAlignment(
       if (localeIsRef) {
         failures.push(
           `[${locale}] ${filePath}:${keyPath}\n` +
-          `  English uses direct value: "${enValue}"\n` +
-          `  Locale uses reference: ${localeValue}\n` +
-          `  Expected: a direct translation (not a reference)`
+            `  English uses direct value: "${enValue}"\n` +
+            `  Locale uses reference: ${localeValue}\n` +
+            `  Expected: a direct translation (not a reference)`
         )
       }
     }
@@ -311,7 +307,12 @@ function validateEnglishAlignment(rootDir: string): string[] {
       }
 
       // Check value alignment for this file
-      if (!fileDiff.onlyInA.length && !fileDiff.onlyInB.length && !keyDiff.onlyInA.length && !keyDiff.onlyInB.length) {
+      if (
+        !fileDiff.onlyInA.length &&
+        !fileDiff.onlyInB.length &&
+        !keyDiff.onlyInA.length &&
+        !keyDiff.onlyInB.length
+      ) {
         const valueFailures = validateValueAlignment(translationsDir, locale, file)
         failures.push(...valueFailures)
       }
