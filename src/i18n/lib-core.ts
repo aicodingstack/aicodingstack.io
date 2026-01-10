@@ -1,15 +1,16 @@
 /**
  * Core reference resolution logic (shared between TypeScript and validation scripts)
- * This file contains the pure JavaScript implementation that can be used in both contexts
+ * This file contains the TypeScript implementation that can be used in both contexts.
  */
 
 /**
- * Apply modifier to a string value
- * @param {string} value - The string value to modify
- * @param {string|undefined} modifier - The modifier to apply (upper, lower, capitalize)
- * @returns {string} - The modified string
+ * Apply modifier to a string value.
+ *
+ * @param value - The string value to modify
+ * @param modifier - The modifier to apply (upper, lower, capitalize)
+ * @returns The modified string
  */
-export function applyModifier(value, modifier) {
+export function applyModifier(value: string, modifier?: string): string {
   if (!modifier) {
     return value
   }
@@ -29,14 +30,15 @@ export function applyModifier(value, modifier) {
 }
 
 /**
- * Get value from messages object by path (e.g., "message.dio")
- * @param {Record<string, unknown>} messages - The messages object
- * @param {string} path - The dot-separated path
- * @returns {unknown} - The value at the path
+ * Get value from messages object by path (e.g., "message.dio").
+ *
+ * @param messages - The messages object
+ * @param path - The dot-separated path
+ * @returns The value at the path
  */
-export function getValueByPath(messages, path) {
+export function getValueByPath(messages: Record<string, unknown>, path: string): unknown {
   const parts = path.split('.')
-  let current = messages
+  let current: unknown = messages
 
   for (const part of parts) {
     if (current === null || current === undefined || typeof current !== 'object') {
@@ -47,29 +49,34 @@ export function getValueByPath(messages, path) {
       throw new Error(`Path "${path}" not found in messages`)
     }
 
-    current = current[part]
+    current = (current as Record<string, unknown>)[part]
   }
 
   return current
 }
 
+export type ExtractedReference = { match: string; modifier?: string; path: string }
+
 /**
- * Extract all references from a string without resolving them
- * Useful for validation to check if references exist
- * @param {string} str - The string to analyze
- * @returns {Array<{match: string, modifier?: string, path: string}>} - Array of found references
+ * Extract all references from a string without resolving them.
+ * Useful for validation to check if references exist.
+ *
+ * @param str - The string to analyze
+ * @returns Array of found references
  */
-export function extractReferences(str) {
+export function extractReferences(str: string): ExtractedReference[] {
   const referencePattern = /@(?:\.(\w+))?:(\S+)/g
-  const references = []
+  const references: ExtractedReference[] = []
   let match = referencePattern.exec(str)
 
   while (match !== null) {
-    references.push({
-      match: match[0],
-      modifier: match[1],
-      path: match[2],
-    })
+    if (match[2]) {
+      references.push({
+        match: match[0],
+        modifier: match[1] || undefined,
+        path: match[2],
+      })
+    }
     match = referencePattern.exec(str)
   }
 
@@ -77,16 +84,21 @@ export function extractReferences(str) {
 }
 
 /**
- * Resolve a single reference in a string
- * @param {string} str - The string containing references
- * @param {Record<string, unknown>} messages - The messages object
- * @param {string[]} referenceChain - Chain of paths being resolved (for cycle detection)
- * @returns {string} - The string with all references resolved
+ * Resolve references in a string.
+ *
+ * @param str - The string containing references
+ * @param messages - The messages object
+ * @param referenceChain - Chain of paths being resolved (for cycle detection)
+ * @returns The string with all references resolved
  */
-export function resolveReference(str, messages, referenceChain = []) {
+export function resolveReference(
+  str: string,
+  messages: Record<string, unknown>,
+  referenceChain: string[] = []
+): string {
   const referencePattern = /@(?:\.(\w+))?:(\S+)/g
 
-  return str.replace(referencePattern, (match, modifier, path) => {
+  return str.replace(referencePattern, (match, modifier: string | undefined, path: string) => {
     // Check for circular reference
     if (referenceChain.includes(path)) {
       const cycle = [...referenceChain, path].join(' -> ')

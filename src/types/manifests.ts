@@ -9,6 +9,8 @@
  * - Product schemas: /manifests/$schemas/*.schema.json
  */
 
+import type { ModelCapability, ModelInputModality } from './model-enums'
+
 // =============================================================================
 // SECTION 1: Base Ref Types (from /manifests/$schemas/ref/)
 // =============================================================================
@@ -40,7 +42,6 @@ export interface ManifestCommunityUrls {
   discord: string | null
   reddit: string | null
   blog: string | null
-  [key: string]: string | null
 }
 
 /**
@@ -54,7 +55,6 @@ export interface ManifestPlatformUrls {
   huggingface: string | null
   artificialAnalysis: string | null
   openrouter: string | null
-  [key: string]: string | null
 }
 
 /**
@@ -93,7 +93,6 @@ export interface ManifestResourceUrls {
   pricing: string | null
   mcp: string | null
   issue: string | null
-  [key: string]: string | null
 }
 
 /**
@@ -103,8 +102,8 @@ export interface ManifestResourceUrls {
 export interface ManifestPricingTier {
   name: string
   value: number | null
-  currency: 'USD' | 'CNY' | 'EUR' | null
-  per: string | null
+  currency?: 'USD' | 'CNY' | 'EUR' | null
+  per?: string | null
   category: string
 }
 
@@ -189,9 +188,6 @@ export interface ManifestIDESupport {
  */
 export interface ManifestExtension extends ManifestBaseProduct {
   supportedIdes: ManifestIDESupport[]
-  platforms?: ManifestPlatformElement[]
-  installCommand?: string | null
-  launchCommand?: string | null
 }
 
 // =============================================================================
@@ -203,10 +199,9 @@ export interface ManifestExtension extends ManifestBaseProduct {
  * Based on: /manifests/$schemas/model.schema.json
  */
 export interface ManifestTokenPricing {
-  input: number | null
-  output: number | null
+  input: number
+  output: number
   cache: number | null
-  [key: string]: number | null
 }
 
 /**
@@ -221,8 +216,12 @@ export interface ManifestBenchmarks {
   webDevArena: number | null
   sciCode: number | null
   liveCodeBench: number | null
-  [key: string]: number | null
 }
+
+/**
+ * Lifecycle stage of a model
+ */
+export type ModelLifecycle = 'latest' | 'maintained' | 'deprecated'
 
 /**
  * Large Language Model for Coding
@@ -235,8 +234,10 @@ export interface ManifestModel extends ManifestVendorEntity {
   maxOutput: number
   tokenPricing: ManifestTokenPricing
   releaseDate: string | null
-  inputModalities: ('image' | 'text' | 'file')[]
-  capabilities: ('function-calling' | 'tool-choice' | 'structured-outputs' | 'reasoning')[]
+  lifecycle: ModelLifecycle
+  knowledgeCutoff: string | null
+  inputModalities: ModelInputModality[]
+  capabilities: ModelCapability[]
   benchmarks: ManifestBenchmarks
   platformUrls: ManifestPlatformUrls
 }
@@ -259,7 +260,6 @@ export interface ManifestProvider extends ManifestVendorEntity {
  * Extends: ManifestEntity
  */
 export interface ManifestVendor extends ManifestEntity {
-  docsUrl?: string | null
   communityUrls: ManifestCommunityUrls
 }
 
@@ -357,62 +357,3 @@ export type ManifestEntityType =
   | ManifestProductType
   | ManifestModel
   | ManifestProvider
-
-/**
- * Type guard to check if an object is a ManifestEntity
- */
-export function isManifestEntity(obj: unknown): obj is ManifestEntity {
-  return (
-    typeof obj === 'object' && obj !== null && 'id' in obj && 'name' in obj && 'description' in obj
-  )
-}
-
-/**
- * Type guard to check if an object is a ManifestVendorEntity
- */
-export function isManifestVendorEntity(obj: unknown): obj is ManifestVendorEntity {
-  return isManifestEntity(obj) && 'vendor' in obj && 'docsUrl' in obj
-}
-
-/**
- * Type guard to check if an object is a ManifestBaseProduct
- */
-export function isManifestBaseProduct(obj: unknown): obj is ManifestBaseProduct {
-  return (
-    isManifestVendorEntity(obj) &&
-    'latestVersion' in obj &&
-    'githubUrl' in obj &&
-    'license' in obj &&
-    'pricing' in obj &&
-    'resourceUrls' in obj &&
-    'communityUrls' in obj &&
-    'relatedProducts' in obj
-  )
-}
-
-/**
- * Type guard to check if an object is a ManifestModel
- */
-export function isManifestModel(obj: unknown): obj is ManifestModel {
-  return (
-    isManifestVendorEntity(obj) &&
-    'size' in obj &&
-    'contextWindow' in obj &&
-    'maxOutput' in obj &&
-    'tokenPricing' in obj &&
-    'benchmarks' in obj
-  )
-}
-
-/**
- * Type guard to check if an object is a ManifestProvider
- */
-export function isManifestProvider(obj: unknown): obj is ManifestProvider {
-  return (
-    isManifestVendorEntity(obj) &&
-    'type' in obj &&
-    'applyKeyUrl' in obj &&
-    'platformUrls' in obj &&
-    'communityUrls' in obj
-  )
-}
