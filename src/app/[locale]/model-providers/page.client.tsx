@@ -18,7 +18,7 @@ type Props = {
 }
 
 export default function ModelProvidersPageClient({ locale }: Props) {
-  const tPage = useTranslations('pages.stacks')
+  const tPage = useTranslations('pages.modelProviders')
   const [searchQuery, setSearchQuery] = useState('')
 
   // Localize providers
@@ -69,10 +69,7 @@ export default function ModelProvidersPageClient({ locale }: Props) {
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)] py-[var(--spacing-lg)]">
         {/* Main Content */}
         <main className="w-full">
-          <PageHeader
-            title={tPage('modelProviders.title')}
-            subtitle={tPage('modelProviders.subtitle')}
-          />
+          <PageHeader title={tPage('title')} subtitle={tPage('subtitle')} />
 
           <StackTabs activeStack="model-providers" locale={locale} />
 
@@ -82,14 +79,14 @@ export default function ModelProvidersPageClient({ locale }: Props) {
               type="text"
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
-              placeholder={tPage('modelProviders.search') || 'Search by name...'}
+              placeholder={tPage('search') || 'Search by name...'}
               className="w-full max-w-2xs px-[var(--spacing-sm)] py-1 text-sm border border-[var(--color-border)] bg-[var(--color-background)] text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-border-strong)] transition-colors"
             />
           </div>
 
           <section className="mb-[var(--spacing-lg)]">
             <h2 className="text-base uppercase tracking-wide text-[var(--color-text-muted)] mb-[var(--spacing-sm)]">
-              {tPage('modelProviders.foundationProviders')}
+              {tPage('foundationProviders')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[var(--spacing-md)]">
               {foundationModelProviders.map(provider => (
@@ -117,7 +114,7 @@ export default function ModelProvidersPageClient({ locale }: Props) {
 
           <section>
             <h2 className="text-base uppercase tracking-wide text-[var(--color-text-muted)] mb-[var(--spacing-sm)]">
-              {tPage('modelProviders.serviceProviders')}
+              {tPage('serviceProviders')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[var(--spacing-md)]">
               {modelServiceProviders.map(provider => (

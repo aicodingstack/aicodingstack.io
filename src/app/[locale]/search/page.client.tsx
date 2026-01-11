@@ -16,7 +16,7 @@ type Props = {
 }
 
 export default function SearchPageClient({ locale, initialQuery }: Props) {
-  const t = useTranslations('pages.search')
+  const tPage = useTranslations('pages.search')
   const router = useRouter()
   const searchParams = useSearchParams()
   const [query, setQuery] = useState(initialQuery)
@@ -63,7 +63,7 @@ export default function SearchPageClient({ locale, initialQuery }: Props) {
           {/* Page Header */}
           <div className="mb-[var(--spacing-lg)]">
             <h1 className="text-3xl font-semibold tracking-[-0.03em] mb-[var(--spacing-sm)]">
-              {t('title')}
+              {tPage('title')}
             </h1>
           </div>
 
@@ -78,12 +78,12 @@ export default function SearchPageClient({ locale, initialQuery }: Props) {
               {/* Results Count */}
               <div className="mb-[var(--spacing-md)] text-sm text-[var(--color-text-secondary)]">
                 {isSearching ? (
-                  <span>{t('searching')}</span>
+                  <span>{tPage('searching')}</span>
                 ) : results.length > 0 ? (
-                  <span>{t('resultsCountFor', { count: results.length, query })}</span>
+                  <span>{tPage('resultsCountFor', { count: results.length, query })}</span>
                 ) : (
                   <span className="text-[var(--color-text-muted)]">
-                    {t('noResultsFor', { query })}
+                    {tPage('noResultsFor', { query })}
                   </span>
                 )}
               </div>
@@ -105,7 +105,7 @@ export default function SearchPageClient({ locale, initialQuery }: Props) {
                           </h3>
                           <div className="mt-1">
                             <span className="inline-block px-2 py-0.5 text-xs border border-[var(--color-border)] text-[var(--color-text-muted)]">
-                              {t(
+                              {tPage(
                                 `stacks.${result.category === 'providers' ? 'modelProviders' : result.category}`
                               )}
                             </span>
@@ -141,7 +141,7 @@ export default function SearchPageClient({ locale, initialQuery }: Props) {
                           d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                         />
                       </svg>
-                      <p className="text-base">{t('noResults')}</p>
+                      <p className="text-base">{tPage('noResults')}</p>
                     </div>
                   </div>
                 )
@@ -164,7 +164,7 @@ export default function SearchPageClient({ locale, initialQuery }: Props) {
                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                   />
                 </svg>
-                <p className="text-base">{t('placeholder')}</p>
+                <p className="text-base">{tPage('placeholder')}</p>
               </div>
             </div>
           )}

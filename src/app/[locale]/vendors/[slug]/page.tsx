@@ -83,8 +83,8 @@ export default async function VendorPage({
     notFound()
   }
 
-  const tPage = await getTranslations({ locale, namespace: 'pages.stacks.vendorDetail' })
-  const tShared = await getTranslations({ locale })
+  const tPage = await getTranslations({ locale, namespace: 'pages.vendorDetail' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Generate JSON-LD schema
   const schema = await generateVendorSchema({
@@ -122,8 +122,8 @@ export default async function VendorPage({
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tShared('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tShared('shared.categories.plural.vendors'), href: '/vendors' },
+    { name: tShared('terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tShared('categories.plural.vendors'), href: '/vendors' },
     { name: vendor.name, href: `vendors/${vendor.id}` },
   ]
 

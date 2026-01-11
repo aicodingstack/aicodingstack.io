@@ -37,7 +37,7 @@ export async function generateMetadata({
     return { title: 'CLI Not Found | AI Coding Stack' }
   }
 
-  const tShared = await getTranslations({ locale })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
   const licenseStr = cli.license ? translateLicenseText(cli.license, tShared) : ''
 
   return await generateSoftwareDetailMetadata({
@@ -68,8 +68,8 @@ export default async function CLIPage({
     notFound()
   }
 
-  const tPage = await getTranslations({ locale, namespace: 'pages.stacks.cliDetail' })
-  const tShared = await getTranslations({ locale })
+  const tPage = await getTranslations({ locale, namespace: 'pages.cliDetail' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Transform URLs for component props
   const websiteUrl = cli.websiteUrl || cli.resourceUrls?.download || undefined
@@ -99,8 +99,8 @@ export default async function CLIPage({
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tShared('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tShared('shared.categories.plural.clis'), href: '/clis' },
+    { name: tShared('terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tShared('categories.plural.clis'), href: '/clis' },
     { name: cli.name, href: `clis/${cli.id}` },
   ]
 

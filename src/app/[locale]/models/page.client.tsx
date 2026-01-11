@@ -19,7 +19,7 @@ type Props = {
 }
 
 export default function ModelsPageClient({ locale }: Props) {
-  const tPage = useTranslations('pages.stacks')
+  const tPage = useTranslations('pages.models')
   const [searchQuery, setSearchQuery] = useState('')
 
   // Localize models
@@ -80,14 +80,14 @@ export default function ModelsPageClient({ locale }: Props) {
         {/* Main Content */}
         <main className="w-full">
           <PageHeader
-            title={tPage('models.title')}
-            subtitle={tPage('models.subtitle')}
+            title={tPage('title')}
+            subtitle={tPage('subtitle')}
             action={
               <Link
                 href="/models/comparison"
                 className="text-sm px-[var(--spacing-md)] py-[var(--spacing-xs)] border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-colors"
               >
-                {tPage('models.compareAll')} →
+                {tPage('compareAll')} →
               </Link>
             }
           />
@@ -100,16 +100,16 @@ export default function ModelsPageClient({ locale }: Props) {
               type="text"
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
-              placeholder={tPage('models.search') || 'Search by name...'}
+              placeholder={tPage('search') || 'Search by name...'}
               className="w-full max-w-2xs px-[var(--spacing-sm)] py-1 text-sm border border-[var(--color-border)] bg-[var(--color-background)] text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-border-strong)] transition-colors"
             />
           </div>
 
           {/* Models grouped by lifecycle */}
           {(['latest', 'maintained', 'deprecated'] as const).map(lifecycle => (
-            <section key={lifecycle} className="mb-[var(--spacing-xl)]">
-              <h2 className="text-xl font-semibold tracking-tight mb-[var(--spacing-md)]">
-                {tPage(`models.lifecycle.${lifecycle}`)}
+            <section key={lifecycle} className="mb-[var(--spacing-lg)]">
+              <h2 className="text-base uppercase tracking-wide text-[var(--color-text-muted)] mb-[var(--spacing-sm)]">
+                {tPage(`lifecycle.${lifecycle}`)}
               </h2>
               {modelsByLifecycle[lifecycle].length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[var(--spacing-md)]">
@@ -130,23 +130,17 @@ export default function ModelsPageClient({ locale }: Props) {
                       </div>
                       <div className="space-y-[var(--spacing-xs)] mb-[var(--spacing-md)]">
                         <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
-                          <span className="text-[var(--color-text-muted)]">
-                            {tPage('models.size')}
-                          </span>
+                          <span className="text-[var(--color-text-muted)]">{tPage('size')}</span>
                           <span className="text-[var(--color-text-secondary)]">{model.size}</span>
                         </div>
                         <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
-                          <span className="text-[var(--color-text-muted)]">
-                            {tPage('models.context')}
-                          </span>
+                          <span className="text-[var(--color-text-muted)]">{tPage('context')}</span>
                           <span className="text-[var(--color-text-secondary)]">
                             {formatTokenCount(model.contextWindow)}
                           </span>
                         </div>
                         <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
-                          <span className="text-[var(--color-text-muted)]">
-                            {tPage('models.pricing')}
-                          </span>
+                          <span className="text-[var(--color-text-muted)]">{tPage('pricing')}</span>
                           <span className="text-[var(--color-text-secondary)]">
                             {model.tokenPricing?.input !== null &&
                             model.tokenPricing?.input !== undefined
@@ -163,8 +157,8 @@ export default function ModelsPageClient({ locale }: Props) {
                 </div>
               ) : (
                 <p className="text-sm text-[var(--color-text-muted)]">
-                  {tPage('models.lifecycle.noResults', {
-                    lifecycle: tPage(`models.lifecycle.${lifecycle}`),
+                  {tPage('lifecycle.noResults', {
+                    lifecycle: tPage(`lifecycle.${lifecycle}`),
                   })}
                 </p>
               )}

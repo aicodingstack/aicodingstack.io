@@ -19,8 +19,8 @@ type Props = {
 }
 
 export default function IDEsPageClient({ locale }: Props) {
-  const tPage = useTranslations('pages.stacks')
-  const tGlobal = useTranslations()
+  const tPage = useTranslations('pages.ides')
+  const tShared = useTranslations('shared')
   const [sortOrder, setSortOrder] = useState<'default' | 'name-asc' | 'name-desc'>('default')
   const [licenseFilters, setLicenseFilters] = useState<string[]>([])
   const [platformFilters, setPlatformFilters] = useState<string[]>([])
@@ -101,14 +101,14 @@ export default function IDEsPageClient({ locale }: Props) {
         {/* Main Content */}
         <main className="w-full">
           <PageHeader
-            title={tPage('ides.title')}
-            subtitle={tPage('ides.subtitle')}
+            title={tPage('title')}
+            subtitle={tPage('subtitle')}
             action={
               <Link
                 href="/ides/comparison"
                 className="text-sm px-[var(--spacing-md)] py-[var(--spacing-xs)] border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-colors"
               >
-                {tPage('ides.compareAll')} →
+                {tPage('compareAll')} →
               </Link>
             }
           />
@@ -128,7 +128,7 @@ export default function IDEsPageClient({ locale }: Props) {
 
           {filteredAndSortedIdes.length === 0 ? (
             <div className="text-center py-[var(--spacing-xl)] text-[var(--color-text-secondary)]">
-              {tPage('ides.noMatches')}
+              {tPage('noMatches')}
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[var(--spacing-md)]">
@@ -153,7 +153,7 @@ export default function IDEsPageClient({ locale }: Props) {
                   <div className="flex items-center gap-[var(--spacing-xs)] text-xs text-[var(--color-text-muted)] mt-auto">
                     <span>{ide.vendor}</span>
                     <span className="text-[var(--color-border)]">•</span>
-                    <span>{translateLicenseText(ide.license, tGlobal)}</span>
+                    <span>{translateLicenseText(ide.license, tShared)}</span>
                   </div>
                 </Link>
               ))}

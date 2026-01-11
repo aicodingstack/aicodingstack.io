@@ -37,7 +37,7 @@ export async function generateMetadata({
     return { title: 'IDE Not Found | AI Coding Stack' }
   }
 
-  const tShared = await getTranslations({ locale })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
   const licenseStr = ide.license ? translateLicenseText(ide.license, tShared) : ''
 
   return await generateSoftwareDetailMetadata({
@@ -68,8 +68,8 @@ export default async function IDEPage({
     notFound()
   }
 
-  const tPage = await getTranslations({ locale, namespace: 'pages.stacks.ideDetail' })
-  const tShared = await getTranslations({ locale })
+  const tPage = await getTranslations({ locale, namespace: 'pages.ideDetail' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Transform URLs for component props
   const websiteUrl = ide.websiteUrl || ide.resourceUrls?.download || undefined
@@ -99,8 +99,8 @@ export default async function IDEPage({
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tShared('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tShared('shared.categories.plural.ides'), href: '/ides' },
+    { name: tShared('terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tShared('categories.plural.ides'), href: '/ides' },
     { name: ide.name, href: `ides/${ide.id}` },
   ]
 

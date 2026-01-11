@@ -50,7 +50,7 @@ export async function generateMetadata({
           }
         : undefined,
     },
-    translationNamespace: 'pages.stacks.modelDetail',
+    translationNamespace: 'pages.modelDetail',
   })
 }
 
@@ -66,8 +66,8 @@ export default async function ModelPage({
     notFound()
   }
 
-  const tPage = await getTranslations({ locale, namespace: 'pages.stacks.modelDetail' })
-  const tShared = await getTranslations({ locale })
+  const tPage = await getTranslations({ locale, namespace: 'pages.modelDetail' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Generate JSON-LD schema
   const schema = await generateModelDetailSchema({
@@ -96,8 +96,8 @@ export default async function ModelPage({
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tShared('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tShared('shared.categories.plural.models'), href: '/models' },
+    { name: tShared('terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tShared('categories.plural.models'), href: '/models' },
     { name: model.name, href: `models/${model.id}` },
   ]
 
@@ -118,11 +118,7 @@ export default async function ModelPage({
           docsUrl={model.docsUrl || undefined}
         />
 
-        <PlatformLinks
-          platformUrls={model.platformUrls}
-          layout="horizontal"
-          gridCols="grid-cols-1 md:grid-cols-3"
-        />
+        <PlatformLinks platformUrls={model.platformUrls} />
 
         <ModelSpecifications model={model} />
 

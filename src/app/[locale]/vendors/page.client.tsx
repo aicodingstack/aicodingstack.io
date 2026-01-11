@@ -18,7 +18,7 @@ type Props = {
 }
 
 export default function VendorsPageClient({ locale }: Props) {
-  const tPage = useTranslations('pages.stacks')
+  const tPage = useTranslations('pages.vendors')
   const [searchQuery, setSearchQuery] = useState('')
 
   // Localize vendors
@@ -64,7 +64,7 @@ export default function VendorsPageClient({ locale }: Props) {
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)] py-[var(--spacing-lg)]">
         {/* Main Content */}
         <main className="w-full">
-          <PageHeader title={tPage('vendors.title')} subtitle={tPage('vendors.subtitle')} />
+          <PageHeader title={tPage('title')} subtitle={tPage('subtitle')} />
 
           <StackTabs activeStack="vendors" locale={locale} />
 
@@ -74,7 +74,7 @@ export default function VendorsPageClient({ locale }: Props) {
               type="text"
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
-              placeholder={tPage('vendors.search') || 'Search by name...'}
+              placeholder={tPage('search') || 'Search by name...'}
               className="w-full max-w-2xs px-[var(--spacing-sm)] py-1 text-sm border border-[var(--color-border)] bg-[var(--color-background)] text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-border-strong)] transition-colors"
             />
           </div>

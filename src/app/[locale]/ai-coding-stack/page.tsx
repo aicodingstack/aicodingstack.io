@@ -9,7 +9,7 @@ import type { LocalePageProps } from '@/types/locale'
 
 export async function generateMetadata({ params }: LocalePageProps) {
   const { locale } = await params
-  const tPage = await getTranslations({ locale, namespace: 'pages.stacks.overview' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.stacksOverview' })
 
   const title = buildTitle({ title: tPage('title') })
   const description = tPage('subtitle')
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: LocalePageProps) {
 
 export default async function AICodingStackPage({ params }: LocalePageProps) {
   const { locale } = await params
-  const tPage = await getTranslations({ locale, namespace: 'pages.stacks.overview' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.stacksOverview' })
 
   return (
     <>

@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: LocalePageProps) {
   return await generateListPageMetadata({
     locale: locale as Locale,
     category: 'ides',
-    translationNamespace: 'pages.stacks.ides',
+    translationNamespace: 'pages.ides',
   })
 }
 

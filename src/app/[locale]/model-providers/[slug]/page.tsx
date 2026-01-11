@@ -57,8 +57,8 @@ export default async function ProviderPage({
     notFound()
   }
 
-  const tPage = await getTranslations({ locale, namespace: 'pages.stacks.modelProviderDetail' })
-  const tShared = await getTranslations({ locale })
+  const tPage = await getTranslations({ locale, namespace: 'pages.modelProviderDetail' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Generate JSON-LD schema
   const schema = await generateVendorSchema({
@@ -72,8 +72,8 @@ export default async function ProviderPage({
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tShared('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tShared('shared.categories.plural.modelProviders'), href: '/model-providers' },
+    { name: tShared('terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tShared('categories.plural.modelProviders'), href: '/model-providers' },
     { name: provider.name, href: `model-providers/${provider.id}` },
   ]
 
@@ -95,17 +95,9 @@ export default async function ProviderPage({
           applyKeyUrl={provider.applyKeyUrl}
         />
 
-        <PlatformLinks
-          platformUrls={provider.platformUrls}
-          layout="horizontal"
-          gridCols="grid-cols-1 md:grid-cols-3"
-        />
+        <PlatformLinks platformUrls={provider.platformUrls} />
 
-        <CommunityLinks
-          communityUrls={provider.communityUrls}
-          layout="vertical"
-          gridCols="grid-cols-2 md:grid-cols-4"
-        />
+        <CommunityLinks communityUrls={provider.communityUrls} />
 
         <BackToNavigation href="/model-providers" title={tPage('allModelProviders')} />
       </main>

@@ -19,8 +19,8 @@ type Props = {
 }
 
 export default function ExtensionsPageClient({ locale }: Props) {
-  const tPage = useTranslations('pages.stacks')
-  const tGlobal = useTranslations()
+  const tPage = useTranslations('pages.extensions')
+  const tShared = useTranslations('shared')
   const [sortOrder, setSortOrder] = useState<'default' | 'name-asc' | 'name-desc'>('default')
   const [licenseFilters, setLicenseFilters] = useState<string[]>([])
   const [platformFilters, setPlatformFilters] = useState<string[]>([])
@@ -104,14 +104,14 @@ export default function ExtensionsPageClient({ locale }: Props) {
         {/* Main Content */}
         <main className="w-full">
           <PageHeader
-            title={tPage('extensions.title')}
-            subtitle={tPage('extensions.subtitle')}
+            title={tPage('title')}
+            subtitle={tPage('subtitle')}
             action={
               <Link
                 href="/extensions/comparison"
                 className="text-sm px-[var(--spacing-md)] py-[var(--spacing-xs)] border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-colors"
               >
-                {tPage('extensions.compareAll')} →
+                {tPage('compareAll')} →
               </Link>
             }
           />
@@ -133,7 +133,7 @@ export default function ExtensionsPageClient({ locale }: Props) {
 
           {filteredAndSortedExtensions.length === 0 ? (
             <div className="text-center py-[var(--spacing-xl)] text-[var(--color-text-secondary)]">
-              {tPage('extensions.noMatches')}
+              {tPage('noMatches')}
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[var(--spacing-md)]">
@@ -160,7 +160,7 @@ export default function ExtensionsPageClient({ locale }: Props) {
                     {extension.license && (
                       <>
                         <span className="text-[var(--color-border)]">•</span>
-                        <span>{translateLicenseText(extension.license, tGlobal)}</span>
+                        <span>{translateLicenseText(extension.license, tShared)}</span>
                       </>
                     )}
                   </div>

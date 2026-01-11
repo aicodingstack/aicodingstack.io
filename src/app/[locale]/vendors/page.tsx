@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return await generateListPageMetadata({
     locale: locale as Locale,
     category: 'vendors',
-    translationNamespace: 'pages.stacks.vendors',
+    translationNamespace: 'pages.vendors',
     additionalKeywords: [
       'LLM vendors',
       'Google',

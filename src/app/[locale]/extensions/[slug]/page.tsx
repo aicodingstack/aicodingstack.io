@@ -36,7 +36,7 @@ export async function generateMetadata({
     return { title: 'Extension Not Found | AI Coding Stack' }
   }
 
-  const tShared = await getTranslations({ locale })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
   const licenseStr = extension.license ? translateLicenseText(extension.license, tShared) : ''
 
   // Convert supportedIdes to platforms format for metadata generation
@@ -72,8 +72,8 @@ export default async function ExtensionPage({
     notFound()
   }
 
-  const tPage = await getTranslations({ locale, namespace: 'pages.stacks.extensionDetail' })
-  const tShared = await getTranslations({ locale })
+  const tPage = await getTranslations({ locale, namespace: 'pages.extensionDetail' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Transform URLs for component props
   const websiteUrl = extension.websiteUrl || extension.resourceUrls?.download || undefined
@@ -119,8 +119,8 @@ export default async function ExtensionPage({
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tShared('shared.terms.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tShared('shared.categories.plural.extensions'), href: '/extensions' },
+    { name: tShared('terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tShared('categories.plural.extensions'), href: '/extensions' },
     { name: extension.name, href: `extensions/${extension.id}` },
   ]
 

@@ -90,7 +90,7 @@ export default async function ArticlePage({ params }: Props) {
 
       <Breadcrumb
         items={[
-          { name: tShared('header.articles'), href: '/articles' },
+          { name: tShared('terms.articles'), href: '/articles' },
           { name: article.title, href: `/articles/${slug}` },
         ]}
       />

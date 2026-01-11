@@ -11,7 +11,7 @@ interface Props {
 
 export default async function Image({ params }: Props) {
   const { locale } = await params
-  const tPage = await getTranslations({ locale, namespace: 'pages.stacks.clis' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.clis' })
 
   return new ImageResponse(
     <OGImageTemplate

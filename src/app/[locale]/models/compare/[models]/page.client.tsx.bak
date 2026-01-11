@@ -1,0 +1,494 @@
+'use client'
+
+import { useEffect, useState } from 'react'
+import { VerifiedBadge } from '@/components/controls/VerifiedBadge'
+import type { Locale } from '@/i18n/config'
+import { Link, useRouter } from '@/i18n/navigation'
+import type {
+  ManifestBenchmarks,
+  ManifestModel,
+  ManifestPlatformUrls,
+  ManifestTokenPricing,
+} from '@/types/manifests'
+import type { ModelCapability, ModelInputModality } from '@/types/model-enums'
+
+const EMPTY_BENCHMARKS: ManifestBenchmarks = {
+  sweBench: null,
+  terminalBench: null,
+  mmmu: null,
+  mmmuPro: null,
+  webDevArena: null,
+  sciCode: null,
+  liveCodeBench: null,
+}
+
+const EMPTY_PLATFORM_URLS: ManifestPlatformUrls = {
+  huggingface: null,
+  artificialAnalysis: null,
+  openrouter: null,
+}
+
+const EMPTY_TOKEN_PRICING: ManifestTokenPricing = {
+  input: 0,
+  output: 0,
+  cache: null,
+}
+
+const EMPTY_MODALITIES: ModelInputModality[] = []
+const EMPTY_CAPABILITIES: ModelCapability[] = []
+
+const FALLBACK_MODEL: ManifestModel = {
+  id: '',
+  name: '',
+  vendor: '',
+  description: '',
+  translations: {},
+  verified: false,
+  websiteUrl: '',
+  docsUrl: null,
+  size: '',
+  contextWindow: 0,
+  maxOutput: 0,
+  tokenPricing: EMPTY_TOKEN_PRICING,
+  releaseDate: null,
+  lifecycle: 'latest',
+  knowledgeCutoff: null,
+  inputModalities: EMPTY_MODALITIES,
+  capabilities: EMPTY_CAPABILITIES,
+  benchmarks: EMPTY_BENCHMARKS,
+  platformUrls: EMPTY_PLATFORM_URLS,
+}
+
+interface ModelOption {
+  id: string
+  name: string
+}
+
+interface Row {
+  group: string
+  groupLabel: string
+  key: string
+  label: string
+  render: (model: ManifestModel) => React.ReactNode
+}
+
+interface ComparePageClientProps {
+  initialModels: ManifestModel[]
+  allModels: ModelOption[]
+  groups: string[]
+  locale: Locale
+}
+
+export default function ComparePageClient({
+  initialModels,
+  allModels,
+  groups,
+  locale,
+}: ComparePageClientProps) {
+  const router = useRouter()
+  const [selectedModel1, setSelectedModel1] = useState<string>(initialModels[0]?.id ?? '')
+  const [selectedModel2, setSelectedModel2] = useState<string>(initialModels[1]?.id ?? '')
+  const [prevModel1, setPrevModel1] = useState<string>(initialModels[0]?.id ?? '')
+  const [prevModel2, setPrevModel2] = useState<string>(initialModels[1]?.id ?? '')
+
+  const getRows = (): Row[] => {
+    return [
+      {
+        group: 'basicInfo',
+        groupLabel: 'basicInfo',
+        key: 'vendor',
+        label: 'vendor',
+        render: model => (
+          <Link
+            href={`/model-providers/${model.vendor.toLowerCase()}`}
+            className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] underline"
+          >
+            {model.vendor}
+          </Link>
+        ),
+      },
+      {
+        group: 'basicInfo',
+        groupLabel: 'basicInfo',
+        key: 'size',
+        label: 'modelSize',
+        render: model => model.size ?? '-',
+      },
+      {
+        group: 'basicInfo',
+        groupLabel: 'basicInfo',
+        key: 'description',
+        label: 'description',
+        render: model => (
+          <p className="text-xs leading-relaxed">
+            {model.translations?.[locale]?.description ?? model.description}
+          </p>
+        ),
+      },
+      {
+        group: 'basicInfo',
+        groupLabel: 'basicInfo',
+        key: 'verified',
+        label: 'verified',
+        render: model => (model.verified ? <VerifiedBadge /> : '-'),
+      },
+      {
+        group: 'basicInfo',
+        groupLabel: 'basicInfo',
+        key: 'lifecycle',
+        label: 'lifecycle',
+        render: model => model.lifecycle ?? '-',
+      },
+      {
+        group: 'basicInfo',
+        groupLabel: 'basicInfo',
+        key: 'releaseDate',
+        label: 'releaseDate',
+        render: model => model.releaseDate ?? '-',
+      },
+      {
+        group: 'basicInfo',
+        groupLabel: 'basicInfo',
+        key: 'knowledgeCutoff',
+        label: 'knowledgeCutoff',
+        render: model => model.knowledgeCutoff ?? '-',
+      },
+      {
+        group: 'capabilities',
+        groupLabel: 'capabilities',
+        key: 'inputModalities',
+        label: 'inputModalities',
+        render: model =>
+          model.inputModalities?.map(m => (
+            <span
+              key={m}
+              className="inline-block px-2 py-0.5 text-xs border border-[var(--color-border)] mr-1 mb-1 bg-[var(--color-bg)] text-[var(--color-text-secondary)]"
+            >
+              {m}
+            </span>
+          )) ?? '-',
+      },
+      {
+        group: 'capabilities',
+        groupLabel: 'capabilities',
+        key: 'capabilities',
+        label: 'capabilities',
+        render: model =>
+          model.capabilities?.map(c => (
+            <span
+              key={c}
+              className="inline-block px-2 py-0.5 text-xs border border-[var(--color-border)] mr-1 mb-1 bg-[var(--color-bg)] text-[var(--color-text-secondary)]"
+            >
+              {c}
+            </span>
+          )) ?? '-',
+      },
+      {
+        group: 'performance',
+        groupLabel: 'performance',
+        key: 'contextWindow',
+        label: 'contextWindow',
+        render: model =>
+          model.contextWindow ? `${(model.contextWindow / 1000).toFixed(0)}K` : '-',
+      },
+      {
+        group: 'performance',
+        groupLabel: 'performance',
+        key: 'maxOutput',
+        label: 'maxOutput',
+        render: model => (model.maxOutput ? `${(model.maxOutput / 1000).toFixed(0)}K` : '-'),
+      },
+      {
+        group: 'performance',
+        groupLabel: 'performance',
+        key: 'sweBench',
+        label: 'sweBench',
+        render: model => (model.benchmarks?.sweBench ? `${model.benchmarks.sweBench}%` : '-'),
+      },
+      {
+        group: 'performance',
+        groupLabel: 'performance',
+        key: 'terminalBench',
+        label: 'terminalBench',
+        render: model =>
+          model.benchmarks?.terminalBench ? `${model.benchmarks.terminalBench}%` : '-',
+      },
+      {
+        group: 'performance',
+        groupLabel: 'performance',
+        key: 'sciCode',
+        label: 'sciCode',
+        render: model => (model.benchmarks?.sciCode ? `${model.benchmarks.sciCode}%` : '-'),
+      },
+      {
+        group: 'performance',
+        groupLabel: 'performance',
+        key: 'liveCodeBench',
+        label: 'liveCodeBench',
+        render: model =>
+          model.benchmarks?.liveCodeBench ? `${model.benchmarks.liveCodeBench}%` : '-',
+      },
+      {
+        group: 'performance',
+        groupLabel: 'performance',
+        key: 'mmmu',
+        label: 'mmmu',
+        render: model => (model.benchmarks?.mmmu ? `${model.benchmarks.mmmu}%` : '-'),
+      },
+      {
+        group: 'performance',
+        groupLabel: 'performance',
+        key: 'mmmuPro',
+        label: 'mmmuPro',
+        render: model => (model.benchmarks?.mmmuPro ? `${model.benchmarks.mmmuPro}%` : '-'),
+      },
+      {
+        group: 'performance',
+        groupLabel: 'performance',
+        key: 'webDevArena',
+        label: 'webDevArena',
+        render: model => (model.benchmarks?.webDevArena ? `${model.benchmarks.webDevArena}%` : '-'),
+      },
+      {
+        group: 'pricing',
+        groupLabel: 'pricing',
+        key: 'inputPrice',
+        label: 'inputPrice',
+        render: model =>
+          model.tokenPricing?.input
+            ? `$${(model.tokenPricing.input / 1000000).toFixed(2)}/1M tokens`
+            : '-',
+      },
+      {
+        group: 'pricing',
+        groupLabel: 'pricing',
+        key: 'outputPrice',
+        label: 'outputPrice',
+        render: model =>
+          model.tokenPricing?.output
+            ? `$${(model.tokenPricing.output / 1000000).toFixed(2)}/1M tokens`
+            : '-',
+      },
+      {
+        group: 'pricing',
+        groupLabel: 'pricing',
+        key: 'cachePrice',
+        label: 'cachePrice',
+        render: model =>
+          model.tokenPricing?.cache
+            ? `$${(model.tokenPricing.cache / 1000000).toFixed(2)}/1M tokens`
+            : '-',
+      },
+      {
+        group: 'platforms',
+        groupLabel: 'platforms',
+        key: 'huggingface',
+        label: 'huggingface',
+        render: model =>
+          model.platformUrls?.huggingface ? (
+            <a
+              href={model.platformUrls.huggingface}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] underline"
+            >
+              Link
+            </a>
+          ) : (
+            '-'
+          ),
+      },
+      {
+        group: 'platforms',
+        groupLabel: 'platforms',
+        key: 'artificialAnalysis',
+        label: 'artificialAnalysis',
+        render: model =>
+          model.platformUrls?.artificialAnalysis ? (
+            <a
+              href={model.platformUrls.artificialAnalysis}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] underline"
+            >
+              Link
+            </a>
+          ) : (
+            '-'
+          ),
+      },
+      {
+        group: 'platforms',
+        groupLabel: 'platforms',
+        key: 'openrouter',
+        label: 'openrouter',
+        render: model =>
+          model.platformUrls?.openrouter ? (
+            <a
+              href={model.platformUrls.openrouter}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] underline"
+            >
+              Link
+            </a>
+          ) : (
+            '-'
+          ),
+      },
+    ]
+  }
+
+  const rowsByGroup = getRows().reduce(
+    (acc, row) => {
+      if (!acc[row.group]) {
+        acc[row.group] = []
+      }
+      acc[row.group]!.push(row)
+      return acc
+    },
+    {} as Record<string, Row[]>
+  )
+
+  const getAvailableModelsForSlot = (slotIndex: number): ModelOption[] => {
+    if (slotIndex === 0) {
+      return allModels.filter(m => m.id !== selectedModel2)
+    }
+    return allModels.filter(m => m.id !== selectedModel1)
+  }
+
+  // Update URL when both models are selected and at least one has changed
+  useEffect(() => {
+    if (selectedModel1 && selectedModel2 && selectedModel1 !== selectedModel2) {
+      if (selectedModel1 !== prevModel1 || selectedModel2 !== prevModel2) {
+        const url = `/models/compare/${selectedModel1}-vs-${selectedModel2}`
+        router.push(url)
+        setPrevModel1(selectedModel1)
+        setPrevModel2(selectedModel2)
+      }
+    }
+  }, [selectedModel1, selectedModel2, prevModel1, prevModel2, router])
+
+  const model1 = allModels.find(m => m.id === selectedModel1)
+  const model2 = allModels.find(m => m.id === selectedModel2)
+
+  return (
+    <div className="space-y-8">
+      {/* Model selection header */}
+      <div className="flex flex-col md:flex-row md:items-center md:justify-center gap-4">
+        <div className="flex flex-wrap gap-4 items-center">
+          <div className="flex flex-col gap-1">
+            <span className="text-xs text-[var(--color-text-muted)] text-center">Model 1</span>
+            <select
+              value={selectedModel1}
+              onChange={e => setSelectedModel1(e.target.value)}
+              className="px-4 py-2 bg-[var(--color-bg)] border border-[var(--color-border)] text-[var(--color-text)] min-w-[200px] min-h-[46px] text-center"
+            >
+              <option value="">Select a model</option>
+              {getAvailableModelsForSlot(0).map(m => (
+                <option key={m.id} value={m.id}>
+                  {m.name}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="flex flex-col gap-1">
+            <span className="text-xs text-[var(--color-text-muted)] text-center">Model 2</span>
+            <select
+              value={selectedModel2}
+              onChange={e => setSelectedModel2(e.target.value)}
+              className="px-4 py-2 bg-[var(--color-bg)] border border-[var(--color-border)] text-[var(--color-text)] min-w-[200px] min-h-[46px] text-center"
+            >
+              <option value="">Select a model</option>
+              {getAvailableModelsForSlot(1).map(m => (
+                <option key={m.id} value={m.id}>
+                  {m.name}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+      </div>
+
+      {/* Comparison table */}
+      {model1 && model2 && (
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse min-w-[600px]">
+            <thead>
+              <tr className="border-b border-t border-[var(--color-border-strong)]">
+                <th className="px-4 py-3 text-center min-w-[240px] w-[42%] border-r border-[var(--color-border)]">
+                  <div className="flex items-center justify-center gap-2">
+                    <img
+                      src={`https://cdn.aicodingstack.com/brands/${initialModels.find(m => m.id === selectedModel1)?.vendor?.toLowerCase() || ''}.png`}
+                      alt={initialModels.find(m => m.id === selectedModel1)?.vendor || ''}
+                      className="w-6 h-6"
+                      onError={e => {
+                        e.currentTarget.style.display = 'none'
+                      }}
+                    />
+                    <span className="font-semibold">{model1.name}</span>
+                  </div>
+                </th>
+                <th className="sticky left-0 z-20 bg-[var(--color-bg)] px-4 py-3 text-center text-sm font-semibold uppercase tracking-wider text-[var(--color-text-muted)] border-r border-[var(--color-border)] w-[16%]">
+                  Attribute
+                </th>
+                <th className="px-4 py-3 text-center min-w-[240px] w-[42%]">
+                  <div className="flex items-center justify-center gap-2">
+                    <img
+                      src={`https://cdn.aicodingstack.com/brands/${initialModels.find(m => m.id === selectedModel2)?.vendor?.toLowerCase() || ''}.png`}
+                      alt={initialModels.find(m => m.id === selectedModel2)?.vendor || ''}
+                      className="w-6 h-6"
+                      onError={e => {
+                        e.currentTarget.style.display = 'none'
+                      }}
+                    />
+                    <span className="font-semibold">{model2.name}</span>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {groups.map(group => {
+                const groupRows = rowsByGroup[group]
+                if (!groupRows) return null
+
+                return (
+                  <tr key={group} className="border-b border-[var(--color-border)]">
+                    <td
+                      colSpan={3}
+                      className="px-4 py-2 bg-[var(--color-hover)] text-center text-sm font-semibold uppercase tracking-wider"
+                    >
+                      {group}
+                    </td>
+                  </tr>
+                )
+              })}
+              {getRows().map(row => (
+                <tr
+                  key={row.key}
+                  className="border-b border-[var(--color-border)] hover:bg-[var(--color-hover)] transition-colors"
+                >
+                  <td className="px-4 py-3 text-center border-r border-[var(--color-border)] w-[42%]">
+                    {row.render(initialModels.find(m => m.id === selectedModel1) ?? FALLBACK_MODEL)}
+                  </td>
+                  <td className="sticky left-0 z-10 bg-[var(--color-bg)] px-4 py-3 bg-inherit border-r border-[var(--color-border)] whitespace-nowrap text-center w-[16%]">
+                    {row.label}
+                  </td>
+                  <td className="px-4 py-3 text-center w-[42%]">
+                    {row.render(initialModels.find(m => m.id === selectedModel2) ?? FALLBACK_MODEL)}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      {(!model1 || !model2) && (
+        <div className="text-center py-12 text-[var(--color-text-muted)]">
+          <p>Select 2 models to compare</p>
+        </div>
+      )}
+    </div>
+  )
+}
