@@ -1,0 +1,190 @@
+{
+  "productCommands": {
+    "command": "Command",
+    "install": "Install",
+    "launch": "Launch"
+  },
+  "vendorProducts": {
+    "title": "Products"
+  },
+  "vendorModels": {
+    "title": "Models"
+  },
+  "platformLinks": {
+    "title": "Find on AI Platforms",
+    "aiPlatforms": {
+      "huggingface": {
+        "title": "Hugging Face",
+        "description": "View model card and weights"
+      },
+      "artificialAnalysis": {
+        "title": "Artificial Analysis",
+        "description": "AI model leaderboard and benchmarks"
+      },
+      "openrouter": {
+        "title": "OpenRouter",
+        "description": "Compare and use multiple AI models"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "Loading star history...",
+    "title": "GitHub Star History",
+    "description": "Star growth trend over time",
+    "stars": "stars",
+    "fallbackNote": "Note: Displaying sample data. Star history API temporarily unavailable."
+  },
+  "productHero": {
+    "categories": {
+      "CLI": "@:shared.categories.singular.cli",
+      "EXTENSION": "@:shared.categories.singular.extension",
+      "IDE": "@:shared.categories.singular.ide",
+      "MODEL": "@:shared.categories.singular.model",
+      "PROVIDER": "@:shared.categories.singular.modelProvider",
+      "VENDOR": "@:shared.categories.singular.vendor"
+    },
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "getApiKey": "@:shared.labels.getApiKey",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "providerTypes": {
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
+    },
+    "runtime": "Runtime",
+    "stars": "@:shared.terms.stars",
+    "supportedIdes": "@:shared.terms.supportedIdes",
+    "type": "@:shared.terms.type",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "communityLinks": {
+    "blog": "Blog",
+    "blogDescription": "Read blog posts",
+    "community": "@:shared.terms.community",
+    "discord": "@:shared.platforms.discord",
+    "discordDescription": "Join community",
+    "github": "@:shared.platforms.github",
+    "githubDescription": "View repos",
+    "linkedin": "@:shared.platforms.linkedin",
+    "linkedinDescription": "@:shared.terms.followUs",
+    "reddit": "@:shared.platforms.reddit",
+    "redditDescription": "Join discussion",
+    "twitter": "@:shared.platforms.twitter",
+    "twitterDescription": "@:shared.terms.followUs",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "Watch videos"
+  },
+  "resourceLinks": {
+    "resources": "Resources",
+    "changelog": "Changelog",
+    "changelogDescription": "View changelog",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "Download latest version",
+    "issue": "Issue Tracker",
+    "issueDescription": "Report bugs and request features",
+    "mcp": "MCP Documentation",
+    "mcpDescription": "Learn about MCP integration",
+    "pricing": "@:shared.terms.pricing",
+    "pricingDescription": "View pricing plans"
+  },
+  "productPricing": {
+    "title": "@:shared.terms.pricing",
+    "viewFullDetails": "View full pricing details →"
+  },
+  "modelSpecifications": {
+    "title": "Specifications",
+    "modelSize": "@:shared.terms.modelSize",
+    "contextWindow": "Total Context",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "pricing": "@:shared.terms.pricing",
+    "input": "Input",
+    "output": "Output",
+    "cache": "Cache"
+  },
+  "benchmarks": {
+    "title": "Performance Benchmarks",
+    "sweBench": "SWE-bench Verified",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBench": "TerminalBench 2.0",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "mmmu": "MMMU",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuPro": "MMMU Pro",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "webDevArena": "WebDevArena",
+    "webDevArenaDesc": "Web development challenges",
+    "sciCode": "SciCode",
+    "sciCodeDesc": "Scientific code generation",
+    "liveCodeBench": "LiveCodeBench",
+    "liveCodeBenchDesc": "Live coding performance"
+  },
+  "relatedProducts": {
+    "cli": "@:shared.categories.singular.cli",
+    "extension": "@:shared.categories.singular.extension",
+    "ide": "@:shared.categories.singular.ide",
+    "title": "Related Products",
+    "viewProduct": "View Product"
+  },
+  "vendorMatrix": {
+    "cell": {
+      "summary": "{count} {category}"
+    },
+    "categories": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "provider": "Provider"
+    },
+    "categoriesPlural": {
+      "cli": "CLIs",
+      "extension": "Extensions",
+      "ide": "IDEs",
+      "model": "Models",
+      "provider": "Providers"
+    },
+    "controls": {
+      "clear": "Clear",
+      "sortByLabel": "Sort by:",
+      "sortName": "Name",
+      "sortProducts": "Products",
+      "vendorTypeLabel": "Vendor Type:"
+    },
+    "table": {
+      "noVendorsFound": "No vendors found",
+      "vendor": "Vendor"
+    },
+    "vendorTypes": {
+      "label": "Vendor Types:",
+      "types": {
+        "ai-native": {
+          "description": "Model + Development Tools",
+          "label": "AI Native"
+        },
+        "full-stack": {
+          "description": "IDE + CLI + Extension",
+          "label": "Full Stack"
+        },
+        "model-only": {
+          "description": "Model (with or without Provider)",
+          "label": "Model Only"
+        },
+        "provider-only": {
+          "description": "Provider only",
+          "label": "Provider Only"
+        },
+        "tool-only": {
+          "description": "IDE/CLI/Extension",
+          "label": "Tool Only"
+        }
+      }
+    }
+  },
+  "resources": {
+    "community": "@:shared.terms.community",
+    "resources": "@:shared.terms.resources"
+  }
+}

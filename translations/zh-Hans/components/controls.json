@@ -1,0 +1,30 @@
+{
+  "copyButton": {
+    "copied": "已复制！",
+    "copyToClipboard": "复制到剪贴板"
+  },
+  "filterSortBar": {
+    "clearFilters": "清除筛选",
+    "license": "许可证:",
+    "openSource": "@:shared.terms.openSource",
+    "platform": "平台:",
+    "proprietary": "@:shared.terms.proprietary",
+    "search": "@:shared.actions.search by name...",
+    "sort": "排序:",
+    "sortDefault": "默认",
+    "sortNameAsc": "名称 (A-Z)",
+    "sortNameDesc": "名称 (Z-A)"
+  },
+  "searchDialog": {
+    "placeholder": "输入以搜索...",
+    "empty": "Start typing to search...",
+    "noResultsFor": "No results for \"{query}\"",
+    "navigate": "to navigate",
+    "select": "to select",
+    "viewAllResults": "View all results for \"{query}\""
+  },
+  "searchInput": {
+    "placeholder": "搜索...",
+    "clear": "Clear search"
+  }
+}

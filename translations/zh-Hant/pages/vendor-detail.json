@@ -1,0 +1,29 @@
+{
+  "allVendors": "@:shared.categories.all.vendors",
+  "backTo": "@:shared.actions.backTo",
+  "breadcrumb": {
+    "aiCodingStack": "@:shared.terms.aiCodingStack",
+    "home": "首頁",
+    "vendors": "@:shared.categories.plural.vendors"
+  },
+  "categoryLabel": "@:shared.categories.singular.vendor",
+  "communityLinks": "@:shared.terms.communityLinks",
+  "connectLinkedIn": "在 LinkedIn 上聯繫",
+  "documentation": "@:shared.terms.documentation",
+  "followTwitter": "在 X/Twitter 上關注",
+  "indexLabel": "@:shared.terms.indexLabel",
+  "joinDiscord": "加入 Discord 社群",
+  "joinReddit": "加入 Reddit 社群",
+  "metaDescription": "探索 {name} 的 AI 產品與技術。",
+  "metaTitle": "AI 技術供應商 | 公司簡介 2025",
+  "models": "@:shared.categories.plural.models",
+  "products": "@:shared.terms.products",
+  "productsSubtitle": "探索來自 {vendorName} 的產品與服務",
+  "productsTitle": "@:shared.terms.products",
+  "quickLinks": "@:shared.labels.quickLinks",
+  "vendorDetails": "供應商詳情",
+  "viewGitHub": "檢視開放原始碼儲存庫",
+  "visitWebsite": "@:shared.terms.visitWebsite",
+  "watchYouTube": "在 YouTube 觀看影片",
+  "website": "@:shared.terms.website"
+}

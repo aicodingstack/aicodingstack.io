@@ -1,0 +1,7 @@
+{
+  "allCLIs": "@:shared.categories.all.clis",
+  "compareAll": "@:shared.actions.compareAll",
+  "noMatches": "Aucune CLI ne correspond à vos filtres",
+  "subtitle": "Assistants de codage en ligne de commande alimentés par l'IA",
+  "title": "CLI de Codage IA"
+}

@@ -2,7 +2,7 @@
   "clis": {
     "backTo": "返回命令行列表",
     "subtitle": "并排对比 AI 编码命令行工具的功能、定价和规格。",
-    "title": "命令行对比"
+    "title": "AI 编码 CLI 工具比较"
   },
   "columns": {
     "cache": "缓存",
@@ -38,22 +38,24 @@
   "extensions": {
     "backTo": "返回扩展插件列表",
     "subtitle": "并排对比 AI 编码扩展插件的功能、定价和规格。",
-    "title": "扩展插件对比"
+    "title": "AI 编码扩展插件比较"
   },
   "ides": {
     "backTo": "返回 IDE 列表",
     "subtitle": "并排对比 AI 增强 IDE 的功能、定价和规格。",
-    "title": "IDE 对比"
+    "title": "AI 编码 IDE 比较"
   },
   "linkTitles": {
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
     "officialWebsite": "@:shared.terms.visitWebsite"
   },
+  "modelCompareDescription": "并排对比 AI 编码模型：规格、定价、功能和基准测试。",
+  "modelCompareTitle": "对比 AI 编码模型：{model1} vs {model2}",
   "models": {
     "backTo": "返回模型列表",
     "subtitle": "并排对比 AI 编码模型的规格和定价。",
-    "title": "模型对比"
+    "title": "AI 编码模型比较"
   },
   "pricingValues": {
     "free": "免费",

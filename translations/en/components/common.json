@@ -1,0 +1,28 @@
+{
+  "footer": {
+    "copyright": "© 2025 AI Coding Stack • Built with ❤︎ • Open Source",
+    "openSource": "Open source AI coding metadata repository.",
+    "selectLanguage": "Select Language",
+    "tagline": "Your AI Coding Ecosystem Hub.",
+    "toggleTheme": "Toggle theme"
+  },
+  "header": {
+    "aiCodingLandscape": "AI Coding Landscape",
+    "aiCodingLandscapeDesc": "Visualize the complete AI coding ecosystem",
+    "aiCodingStack": "@:shared.terms.aiCodingStack",
+    "articles": "@:shared.terms.articles",
+    "closeMenu": "Close menu",
+    "collections": "@:shared.terms.collections",
+    "developmentTools": "Development Tools",
+    "intelligence": "Intelligence",
+    "landscape": "Landscape",
+    "manifesto": "@:shared.terms.manifesto",
+    "openMenu": "Open menu",
+    "openSourceRank": "Open Source Ranking",
+    "openSourceRankDesc": "Explore open source AI coding projects by GitHub stars",
+    "ranking": "Ranking",
+    "search": "@:shared.actions.search",
+    "searchPlaceholder": "Search...",
+    "toggleMenu": "Toggle menu"
+  }
+}

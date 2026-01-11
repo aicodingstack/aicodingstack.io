@@ -1,0 +1,7 @@
+{
+  "allExtensions": "@:shared.categories.all.extensions",
+  "compareAll": "@:shared.actions.compareAll",
+  "noMatches": "Aucune extension ne correspond à vos filtres",
+  "subtitle": "Extensions et plugins de codage alimentés par l'IA",
+  "title": "Extensions de Codage IA"
+}

@@ -1,0 +1,31 @@
+{
+  "clis": {
+    "description": "Büyük dil modellerinin gücünü doğrudan terminalinize getiren komut satırı AI yardımcıları. Karmaşık görevleri doğal dille, doğrudan kabuğunuzdan çalıştırın.",
+    "title": "CLI'lar"
+  },
+  "exploreStack": "Stack'ı Keşfet",
+  "extensions": {
+    "description": "Favori IDE'niz için AI destekli kodlama uzantıları ve eklentileri. Kod tamamlamadan akıllı yeniden düzenlemeye kadar, AI yardımıyla geliştirme deneyiminizi iyileştirin.",
+    "title": "Extensions"
+  },
+  "ides": {
+    "description": "Kod tabanınızı anlayan ve akıllı yardım sağlayan AI destekli entegre geliştirme ortamları. VS Code'dan Cursor'a, kodlamayı AI ile işbirliğine dönüştüren editörleri keşfedin.",
+    "title": "IDEs"
+  },
+  "modelProviders": {
+    "description": "Çeşitli AI modellerine erişim sunan LLM API sağlayıcıları. AI hizmetlerini uygulamalarınıza entegre edin.",
+    "title": "Model Providers"
+  },
+  "models": {
+    "description": "Zeka katmanı. Kod oluşturma, anlama ve analiz için optimize edilmiş büyük dil modelleri. Önde gelen AI modelleri arasında spesifikasyonları, fiyatları ve yetenekleri karşılaştırın.",
+    "title": "Models"
+  },
+  "overviewTitle": "AI Coding Stack Genel Bakışı",
+  "slogan": "Keşfet. Karşılaştır. 10x Daha Hızlı İnşa Edin.",
+  "subtitle": "Tam AI kodlama ekosistemini keşfedin: IDE'ler, CLI'lar, uzantılar, modeller ve sağlayıcılar.",
+  "title": "AI Coding Stack",
+  "vendors": {
+    "description": "AI teknolojilerini geliştiren önde gelen şirketler ve kuruluşlar. OpenAI'dan Anthropic'e, AI kodlama devriminin arkasındaki sağlayıcıları keşfedin.",
+    "title": "Vendors"
+  }
+}

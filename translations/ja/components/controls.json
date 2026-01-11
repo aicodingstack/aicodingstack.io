@@ -1,0 +1,18 @@
+{
+  "copyButton": {
+    "copied": "コピーしました！",
+    "copyToClipboard": "クリップボードにコピー"
+  },
+  "filterSortBar": {
+    "clearFilters": "フィルターをクリア",
+    "license": "ライセンス:",
+    "openSource": "@:shared.terms.openSource",
+    "platform": "プラットフォーム:",
+    "proprietary": "@:shared.terms.proprietary",
+    "search": "@:shared.actions.search by name...",
+    "sort": "並び替え:",
+    "sortDefault": "デフォルト",
+    "sortNameAsc": "名前 (A-Z)",
+    "sortNameDesc": "名前 (Z-A)"
+  }
+}

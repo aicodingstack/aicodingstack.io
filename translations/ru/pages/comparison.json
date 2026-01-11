@@ -2,7 +2,7 @@
   "clis": {
     "backTo": "Назад к CLI",
     "subtitle": "Ассистенты по кодированию в командной строке с ИИ",
-    "title": "CLI Comparison"
+    "title": "Сравнение CLI ИИ-кодинга"
   },
   "columns": {
     "cache": "Кэш",
@@ -38,22 +38,24 @@
   "extensions": {
     "backTo": "Назад к расширениям",
     "subtitle": "Расширения и плагины для кодирования с ИИ",
-    "title": "Extension Comparison"
+    "title": "Сравнение расширений ИИ-кодинга"
   },
   "ides": {
     "backTo": "Назад к IDE",
     "subtitle": "Интегрированные среды разработки с улучшениями ИИ",
-    "title": "IDE Comparison"
+    "title": "Сравнение IDE ИИ-кодинга"
   },
   "linkTitles": {
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
     "officialWebsite": "@:shared.terms.visitWebsite"
   },
+  "modelCompareDescription": "Сравните модели ИИ для кодирования бок о бок: спецификации, цены, возможности и бенчмарки.",
+  "modelCompareTitle": "Сравнение моделей ИИ для кодирования: {model1} vs {model2}",
   "models": {
     "backTo": "Назад к моделям",
     "subtitle": "Большие языковые модели, оптимизированные для генерации и анализа кода",
-    "title": "Model Comparison"
+    "title": "Сравнение моделей ИИ-кодинга"
   },
   "pricingValues": {
     "free": "Бесплатно",

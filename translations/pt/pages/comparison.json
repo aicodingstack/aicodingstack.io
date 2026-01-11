@@ -2,7 +2,7 @@
   "clis": {
     "backTo": "Voltar aos CLIs",
     "subtitle": "Compare características, preços e especificações de ferramentas de codificação de linha de comando de IA lado a lado.",
-    "title": "Comparação CLI"
+    "title": "Comparação de CLI de Codificação IA"
   },
   "columns": {
     "cache": "Cache",
@@ -38,22 +38,24 @@
   "extensions": {
     "backTo": "Voltar às Extensões",
     "subtitle": "Compare características, preços e especificações de extensões de codificação de IA lado a lado.",
-    "title": "Comparação de Extensões"
+    "title": "Comparação de Extensões de Codificação IA"
   },
   "ides": {
     "backTo": "Voltar aos IDEs",
     "subtitle": "Compare características, preços e especificações de IDEs com IA lado a lado.",
-    "title": "Comparação de IDEs"
+    "title": "Comparação de IDE de Codificação IA"
   },
   "linkTitles": {
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
     "officialWebsite": "@:shared.terms.visitWebsite"
   },
+  "modelCompareDescription": "Compare modelos de codificação IA lado a lado: especificações, preços, capacidades e benchmarks.",
+  "modelCompareTitle": "Comparar Modelos de Codificação IA: {model1} vs {model2}",
   "models": {
     "backTo": "Voltar aos Modelos",
     "subtitle": "Compare especificações e preços de modelos de codificação de IA lado a lado.",
-    "title": "Comparação de Modelos"
+    "title": "Comparação de Modelos de Codificação IA"
   },
   "pricingValues": {
     "free": "Grátis",

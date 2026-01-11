@@ -1,0 +1,189 @@
+{
+  "productCommands": {
+    "command": "Perintah",
+    "install": "Instal",
+    "launch": "Luncurkan"
+  },
+  "vendorProducts": {
+    "title": "Produk"
+  },
+  "vendorModels": {
+    "title": "Model"
+  },
+  "platformLinks": {
+    "title": "Temukan di Platform AI",
+    "aiPlatforms": {
+      "huggingface": {
+        "title": "Hugging Face",
+        "description": "Lihat kartu model dan bobot"
+      },
+      "artificialAnalysis": {
+        "title": "Artificial Analysis",
+        "description": "Papan peringkat dan benchmark model AI"
+      },
+      "openrouter": {
+        "title": "OpenRouter",
+        "description": "Bandingkan dan gunakan banyak model AI"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "Memuat riwayat bintang...",
+    "title": "Riwayat Bintang GitHub",
+    "description": "Tren pertumbuhan bintang dari waktu ke waktu",
+    "stars": "bintang",
+    "fallbackNote": "Catatan: Menampilkan data sampel. API riwayat bintang tidak tersedia sementara."
+  },
+  "productHero": {
+    "categories": {
+      "CLI": "@:shared.categories.singular.cli",
+      "EXTENSION": "@:shared.categories.singular.extension",
+      "IDE": "@:shared.categories.singular.ide",
+      "MODEL": "@:shared.categories.singular.model",
+      "PROVIDER": "@:shared.categories.singular.modelProvider",
+      "VENDOR": "@:shared.categories.singular.vendor"
+    },
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "getApiKey": "@:shared.labels.getApiKey",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "providerTypes": {
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
+    },
+    "runtime": "Runtime",
+    "stars": "@:shared.terms.stars",
+    "supportedIdes": "@:shared.terms.supportedIdes",
+    "type": "@:shared.terms.type",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "communityLinks": {
+    "blog": "Blog",
+    "blogDescription": "Baca postingan blog",
+    "community": "@:shared.terms.community",
+    "discord": "@:shared.platforms.discord",
+    "discordDescription": "Bergabung komunitas",
+    "github": "@:shared.platforms.github",
+    "githubDescription": "Lihat repositori",
+    "linkedin": "@:shared.platforms.linkedin",
+    "linkedinDescription": "@:shared.terms.followUs",
+    "reddit": "@:shared.platforms.reddit",
+    "redditDescription": "Ikuti diskusi",
+    "twitter": "@:shared.platforms.twitter",
+    "twitterDescription": "@:shared.terms.followUs",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "Tonton video"
+  },
+  "resourceLinks": {
+    "changelog": "Changelog",
+    "changelogDescription": "Lihat changelog",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "Unduh versi terbaru",
+    "issue": "Pelacak Masalah",
+    "issueDescription": "Laporkan bug dan minta fitur",
+    "mcp": "Dokumentasi MCP",
+    "mcpDescription": "Pelajari integrasi MCP",
+    "pricing": "@:shared.terms.pricing",
+    "pricingDescription": "Lihat paket harga"
+  },
+  "productPricing": {
+    "title": "@:shared.terms.pricing",
+    "viewFullDetails": "View full pricing details →"
+  },
+  "modelSpecifications": {
+    "title": "Specifications",
+    "modelSize": "@:shared.terms.modelSize",
+    "contextWindow": "Total Context",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "pricing": "@:shared.terms.pricing",
+    "input": "Input",
+    "output": "Output",
+    "cache": "Cache"
+  },
+  "benchmarks": {
+    "title": "Performance Benchmarks",
+    "sweBench": "SWE-bench Verified",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBench": "TerminalBench 2.0",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "mmmu": "MMMU",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuPro": "MMMU Pro",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "webDevArena": "WebDevArena",
+    "webDevArenaDesc": "Web development challenges",
+    "sciCode": "SciCode",
+    "sciCodeDesc": "Scientific code generation",
+    "liveCodeBench": "LiveCodeBench",
+    "liveCodeBenchDesc": "Live coding performance"
+  },
+  "relatedProducts": {
+    "cli": "@:shared.categories.singular.cli",
+    "extension": "@:shared.categories.singular.extension",
+    "ide": "@:shared.categories.singular.ide",
+    "title": "Produk Terkait",
+    "viewProduct": "Lihat Produk"
+  },
+  "vendorMatrix": {
+    "cell": {
+      "summary": "{count} {category}"
+    },
+    "categories": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "provider": "Provider"
+    },
+    "categoriesPlural": {
+      "cli": "CLIs",
+      "extension": "Extensions",
+      "ide": "IDEs",
+      "model": "Models",
+      "provider": "Providers"
+    },
+    "controls": {
+      "clear": "Clear",
+      "sortByLabel": "Sort by:",
+      "sortName": "Name",
+      "sortProducts": "Products",
+      "vendorTypeLabel": "Vendor Type:"
+    },
+    "table": {
+      "noVendorsFound": "No vendors found",
+      "vendor": "Vendor"
+    },
+    "vendorTypes": {
+      "label": "Vendor Types:",
+      "types": {
+        "ai-native": {
+          "description": "Model + Development Tools",
+          "label": "AI Native"
+        },
+        "full-stack": {
+          "description": "IDE + CLI + Extension",
+          "label": "Full Stack"
+        },
+        "model-only": {
+          "description": "Model (with or without Provider)",
+          "label": "Model Only"
+        },
+        "provider-only": {
+          "description": "Provider only",
+          "label": "Provider Only"
+        },
+        "tool-only": {
+          "description": "IDE/CLI/Extension",
+          "label": "Tool Only"
+        }
+      }
+    }
+  },
+  "resources": {
+    "community": "@:shared.terms.community",
+    "resources": "@:shared.terms.resources"
+  }
+}

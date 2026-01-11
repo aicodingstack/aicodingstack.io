@@ -2,7 +2,7 @@
   "clis": {
     "backTo": "Back to CLIs",
     "subtitle": "Compare features, pricing, and specifications of AI coding CLI tools side by side.",
-    "title": "CLI Comparison"
+    "title": "AI Coding CLI Comparison"
   },
   "columns": {
     "cache": "Cache",
@@ -38,22 +38,24 @@
   "extensions": {
     "backTo": "Back to Extensions",
     "subtitle": "Compare features, pricing, and specifications of AI coding extensions side by side.",
-    "title": "Extension Comparison"
+    "title": "AI Coding Extension Comparison"
   },
   "ides": {
     "backTo": "Back to IDEs",
     "subtitle": "Compare features, pricing, and specifications of AI-powered IDEs side by side.",
-    "title": "IDE Comparison"
+    "title": "AI Coding IDE Comparison"
   },
   "linkTitles": {
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
     "officialWebsite": "@:shared.terms.visitWebsite"
   },
+  "modelCompareDescription": "Compare AI coding models side by side: specifications, pricing, capabilities, and benchmarks.",
+  "modelCompareTitle": "Compare AI Coding Model: {model1} vs {model2}",
   "models": {
     "backTo": "Back to Models",
     "subtitle": "Compare specifications and pricing of AI coding models side by side.",
-    "title": "Model Comparison"
+    "title": "AI Coding Model Comparison"
   },
   "pricingValues": {
     "free": "Free",

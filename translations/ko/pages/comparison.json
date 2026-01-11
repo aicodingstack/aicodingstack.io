@@ -2,7 +2,7 @@
   "clis": {
     "backTo": "CLI로 돌아가기",
     "subtitle": "AI 기반 명령줄 코딩 어시스턴트",
-    "title": "CLI Comparison"
+    "title": "AI 코딩 CLI 비교"
   },
   "columns": {
     "cache": "캐시",
@@ -38,22 +38,24 @@
   "extensions": {
     "backTo": "확장 프로그램으로 돌아가기",
     "subtitle": "AI 기반 코딩 확장 프로그램 및 플러그인",
-    "title": "확장 프로그램 비교"
+    "title": "AI 코딩 확장 비교"
   },
   "ides": {
     "backTo": "IDE로 돌아가기",
     "subtitle": "AI 강화 통합 개발 환경",
-    "title": "IDE Comparison"
+    "title": "AI 코딩 IDE 비교"
   },
   "linkTitles": {
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
     "officialWebsite": "@:shared.terms.visitWebsite"
   },
+  "modelCompareDescription": "AI 코딩 모델을 나란히 비교: 사양, 가격, 기능, 벤치마크.",
+  "modelCompareTitle": "AI 코딩 모델 비교: {model1} vs {model2}",
   "models": {
     "backTo": "모델로 돌아가기",
     "subtitle": "AI 코딩 모델의 사양과 가격을 나란히 비교하세요.",
-    "title": "모델 비교"
+    "title": "AI 코딩 모델 비교"
   },
   "pricingValues": {
     "free": "무료",

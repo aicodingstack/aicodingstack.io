@@ -1,0 +1,10 @@
+{
+  "docsSidebar": {
+    "label": "@:shared.terms.documentation",
+    "title": "ドキュメント"
+  },
+  "sidebar": {
+    "backToTop": "@:shared.actions.backToTop",
+    "selectItem": "@:shared.actions.selectItem"
+  }
+}

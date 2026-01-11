@@ -1,0 +1,7 @@
+{
+  "allCLIs": "@:shared.categories.all.clis",
+  "compareAll": "@:shared.actions.compareAll",
+  "noMatches": "フィルターに一致する CLI はありません",
+  "subtitle": "AI 対応のコマンドラインコーディングアシスタント",
+  "title": "AI コーディング CLI"
+}

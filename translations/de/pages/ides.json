@@ -1,0 +1,7 @@
+{
+  "allIDEs": "@:shared.categories.all.ides",
+  "compareAll": "@:shared.actions.compareAll",
+  "noMatches": "Keine IDEs entsprechen Ihren Filtern",
+  "subtitle": "AI-verbesserte integrierte Entwicklungsumgebungen",
+  "title": "AI-Coding-IDEs"
+}

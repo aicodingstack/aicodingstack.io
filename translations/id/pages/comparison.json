@@ -2,7 +2,7 @@
   "clis": {
     "backTo": "Kembali ke CLI",
     "subtitle": "Asisten pengkodean baris perintah AI",
-    "title": "Perbandingan CLI"
+    "title": "Perbandingan CLI Coding AI"
   },
   "columns": {
     "cache": "Cache",
@@ -38,22 +38,24 @@
   "extensions": {
     "backTo": "Kembali ke Ekstensi",
     "subtitle": "Ekstensi dan plugin pengkodean AI",
-    "title": "Perbandingan Ekstensi"
+    "title": "Perbandingan Ekstensi Coding AI"
   },
   "ides": {
     "backTo": "Kembali ke IDE",
     "subtitle": "Lingkungan pengembangan terintegrasi yang ditingkatkan dengan AI",
-    "title": "Perbandingan IDE"
+    "title": "Perbandingan IDE Coding AI"
   },
   "linkTitles": {
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
     "officialWebsite": "@:shared.terms.visitWebsite"
   },
+  "modelCompareDescription": "Bandingkan model coding AI secara berdampingan: spesifikasi, harga, kapabilitas, dan benchmark.",
+  "modelCompareTitle": "Bandingkan Model Coding AI: {model1} vs {model2}",
   "models": {
     "backTo": "Kembali ke Model",
     "subtitle": "Model bahasa besar yang dioptimalkan untuk pembuatan dan analisis kode",
-    "title": "Perbandingan Model"
+    "title": "Perbandingan Model Coding AI"
   },
   "pricingValues": {
     "free": "Gratis",

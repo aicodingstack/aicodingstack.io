@@ -1,0 +1,189 @@
+{
+  "productCommands": {
+    "command": "Команда",
+    "install": "Установить",
+    "launch": "Запустить"
+  },
+  "vendorProducts": {
+    "title": "Продукты"
+  },
+  "vendorModels": {
+    "title": "Модели"
+  },
+  "platformLinks": {
+    "title": "Найти на AI платформах",
+    "aiPlatforms": {
+      "huggingface": {
+        "title": "Hugging Face",
+        "description": "Просмотреть модель и веса"
+      },
+      "artificialAnalysis": {
+        "title": "Artificial Analysis",
+        "description": "Лидерборд AI моделей и бенчмарки"
+      },
+      "openrouter": {
+        "title": "OpenRouter",
+        "description": "Сравнить и использовать несколько AI моделей"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "Загрузка истории звёзд...",
+    "title": "История звёзд GitHub",
+    "description": "Тенденция роста звёзд с течением времени",
+    "stars": "звёзд",
+    "fallbackNote": "Примечание: Отображение примерных данных. API истории звёзд временно недоступен."
+  },
+  "productHero": {
+    "categories": {
+      "CLI": "@:shared.categories.singular.cli",
+      "EXTENSION": "@:shared.categories.singular.extension",
+      "IDE": "@:shared.categories.singular.ide",
+      "MODEL": "@:shared.categories.singular.model",
+      "PROVIDER": "@:shared.categories.singular.modelProvider",
+      "VENDOR": "@:shared.categories.singular.vendor"
+    },
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "getApiKey": "@:shared.labels.getApiKey",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "providerTypes": {
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
+    },
+    "runtime": "Среда выполнения",
+    "stars": "@:shared.terms.stars",
+    "supportedIdes": "@:shared.terms.supportedIdes",
+    "type": "@:shared.terms.type",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "communityLinks": {
+    "blog": "Блог",
+    "blogDescription": "Читать статьи блога",
+    "community": "@:shared.terms.community",
+    "discord": "@:shared.platforms.discord",
+    "discordDescription": "Присоединиться к сообществу",
+    "github": "@:shared.platforms.github",
+    "githubDescription": "Просмотреть репозитории",
+    "linkedin": "@:shared.platforms.linkedin",
+    "linkedinDescription": "@:shared.terms.followUs",
+    "reddit": "@:shared.platforms.reddit",
+    "redditDescription": "Присоединиться к обсуждению",
+    "twitter": "@:shared.platforms.twitter",
+    "twitterDescription": "@:shared.terms.followUs",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "Смотреть видео"
+  },
+  "resourceLinks": {
+    "changelog": "История изменений",
+    "changelogDescription": "Просмотреть историю изменений",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "Загрузить последнюю версию",
+    "issue": "Трекер проблем",
+    "issueDescription": "Сообщить об ошибках и запросить функции",
+    "mcp": "Документация MCP",
+    "mcpDescription": "Узнать об интеграции MCP",
+    "pricing": "@:shared.terms.pricing",
+    "pricingDescription": "Просмотреть тарифные планы"
+  },
+  "productPricing": {
+    "title": "@:shared.terms.pricing",
+    "viewFullDetails": "Просмотреть полную информацию о ценах"
+  },
+  "modelSpecifications": {
+    "title": "Specifications",
+    "modelSize": "@:shared.terms.modelSize",
+    "contextWindow": "Total Context",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "pricing": "@:shared.terms.pricing",
+    "input": "Input",
+    "output": "Output",
+    "cache": "Cache"
+  },
+  "benchmarks": {
+    "title": "Performance Benchmarks",
+    "sweBench": "SWE-bench Verified",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBench": "TerminalBench 2.0",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "mmmu": "MMMU",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuPro": "MMMU Pro",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "webDevArena": "WebDevArena",
+    "webDevArenaDesc": "Web development challenges",
+    "sciCode": "SciCode",
+    "sciCodeDesc": "Scientific code generation",
+    "liveCodeBench": "LiveCodeBench",
+    "liveCodeBenchDesc": "Live coding performance"
+  },
+  "relatedProducts": {
+    "cli": "@:shared.categories.singular.cli",
+    "extension": "@:shared.categories.singular.extension",
+    "ide": "@:shared.categories.singular.ide",
+    "title": "Связанные продукты",
+    "viewProduct": "Просмотреть продукт"
+  },
+  "vendorMatrix": {
+    "cell": {
+      "summary": "{count} {category}"
+    },
+    "categories": {
+      "cli": "CLI",
+      "extension": "Расширение",
+      "ide": "IDE",
+      "model": "Модель",
+      "provider": "Поставщик"
+    },
+    "categoriesPlural": {
+      "cli": "CLI",
+      "extension": "Расширения",
+      "ide": "IDE",
+      "model": "Модели",
+      "provider": "Поставщики"
+    },
+    "controls": {
+      "clear": "Очистить",
+      "sortByLabel": "Сортировать:",
+      "sortName": "Имя",
+      "sortProducts": "Продукты",
+      "vendorTypeLabel": "Тип поставщика:"
+    },
+    "table": {
+      "noVendorsFound": "Поставщиков не найдено",
+      "vendor": "Поставщик"
+    },
+    "vendorTypes": {
+      "label": "Типы поставщиков:",
+      "types": {
+        "ai-native": {
+          "description": "Модель + Инструменты разработки",
+          "label": "AI-нативный"
+        },
+        "full-stack": {
+          "description": "IDE + CLI + Расширение",
+          "label": "Полный стек"
+        },
+        "model-only": {
+          "description": "Модель (с поставщиком или без)",
+          "label": "Только модель"
+        },
+        "provider-only": {
+          "description": "Только поставщик",
+          "label": "Только поставщик"
+        },
+        "tool-only": {
+          "description": "IDE/CLI/Расширение",
+          "label": "Только инструмент"
+        }
+      }
+    }
+  },
+  "resources": {
+    "community": "@:shared.terms.community",
+    "resources": "@:shared.terms.resources"
+  }
+}

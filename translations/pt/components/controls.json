@@ -1,0 +1,30 @@
+{
+  "copyButton": {
+    "copied": "Copiado!",
+    "copyToClipboard": "Copiar para a área de transferência"
+  },
+  "filterSortBar": {
+    "clearFilters": "Limpar filtros",
+    "license": "Licença:",
+    "openSource": "@:shared.terms.openSource",
+    "platform": "Plataforma:",
+    "proprietary": "@:shared.terms.proprietary",
+    "search": "@:shared.actions.search by name...",
+    "sort": "Ordenar:",
+    "sortDefault": "Padrão",
+    "sortNameAsc": "Nome (A-Z)",
+    "sortNameDesc": "Nome (Z-A)"
+  },
+  "searchDialog": {
+    "placeholder": "Digite para pesquisar...",
+    "empty": "Start typing to search...",
+    "noResultsFor": "No results for \"{query}\"",
+    "navigate": "to navigate",
+    "select": "to select",
+    "viewAllResults": "View all results for \"{query}\""
+  },
+  "searchInput": {
+    "placeholder": "Pesquisar...",
+    "clear": "Clear search"
+  }
+}

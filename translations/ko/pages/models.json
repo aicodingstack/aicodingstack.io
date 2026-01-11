@@ -1,0 +1,15 @@
+{
+  "compareAll": "@:shared.actions.compareAll",
+  "context": "컨텍스트:",
+  "lifecycle": {
+    "latest": "최신",
+    "maintained": "유지 관리",
+    "deprecated": "사용 안 함",
+    "noResults": "검색과 일치하는{lifecycle} 모델이 없습니다"
+  },
+  "pricing": "가격:",
+  "search": "이름으로 검색...",
+  "size": "크기:",
+  "subtitle": "AI 코딩 모델의 사양과 가격을 나란히 비교하세요.",
+  "title": "AI 코딩 모델"
+}

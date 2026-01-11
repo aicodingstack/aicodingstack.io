@@ -1,0 +1,190 @@
+{
+  "productCommands": {
+    "command": "Komut",
+    "install": "Yükle",
+    "launch": "Başlat"
+  },
+  "vendorProducts": {
+    "title": "Ürünler"
+  },
+  "vendorModels": {
+    "title": "Modeller"
+  },
+  "platformLinks": {
+    "title": "AI Platformlarında Bul",
+    "aiPlatforms": {
+      "huggingface": {
+        "title": "Hugging Face",
+        "description": "Model kartını ve ağırlıkları görüntüle"
+      },
+      "artificialAnalysis": {
+        "title": "Artificial Analysis",
+        "description": "AI modeli lider tablosu ve kıyaslamaları"
+      },
+      "openrouter": {
+        "title": "OpenRouter",
+        "description": "Birden çok AI modelini karşılaştırın ve kullanın"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "Yıldız geçmişi yükleniyor...",
+    "title": "GitHub Yıldız Geçmişi",
+    "description": "Zaman içinde yıldız artış trendi",
+    "stars": "yıldız",
+    "fallbackNote": "Not: Örnek veriler görüntüleniyor. Yıldız geçmişi API'si geçici olarak kullanılamıyor."
+  },
+  "productHero": {
+    "categories": {
+      "CLI": "@:shared.categories.singular.cli",
+      "EXTENSION": "@:shared.categories.singular.extension",
+      "IDE": "@:shared.categories.singular.ide",
+      "MODEL": "@:shared.categories.singular.model",
+      "PROVIDER": "@:shared.categories.singular.modelProvider",
+      "VENDOR": "@:shared.categories.singular.vendor"
+    },
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "getApiKey": "@:shared.labels.getApiKey",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "providerTypes": {
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
+    },
+    "runtime": "Çalışma Zamanı",
+    "stars": "@:shared.terms.stars",
+    "supportedIdes": "@:shared.terms.supportedIdes",
+    "type": "@:shared.terms.type",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "communityLinks": {
+    "blog": "Blog",
+    "blogDescription": "Blog gönderilerini oku",
+    "community": "@:shared.terms.community",
+    "discord": "@:shared.platforms.discord",
+    "discordDescription": "Topluluğa katıl",
+    "github": "@:shared.platforms.github",
+    "githubDescription": "Depoları görüntüle",
+    "linkedin": "@:shared.platforms.linkedin",
+    "linkedinDescription": "@:shared.terms.followUs",
+    "reddit": "@:shared.platforms.reddit",
+    "redditDescription": "Tartışmaya katıl",
+    "twitter": "@:shared.platforms.twitter",
+    "twitterDescription": "@:shared.terms.followUs",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "Videoları izle"
+  },
+  "resourceLinks": {
+    "resources": "Kaynaklar",
+    "changelog": "Değişiklik Günlüğü",
+    "changelogDescription": "Değişiklik günlüğünü görüntüle",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "En son sürümü indir",
+    "issue": "Sorun Takipçisi",
+    "issueDescription": "Hata bildirin ve özellik isteyin",
+    "mcp": "MCP Dokümantasyonu",
+    "mcpDescription": "MCP entegrasyonu hakkında bilgi edinin",
+    "pricing": "@:shared.terms.pricing",
+    "pricingDescription": "Fiyat planlarını görüntüle"
+  },
+  "productPricing": {
+    "title": "@:shared.terms.pricing",
+    "viewFullDetails": "Tam fiyat detaylarını görüntüle"
+  },
+  "modelSpecifications": {
+    "title": "Specifications",
+    "modelSize": "@:shared.terms.modelSize",
+    "contextWindow": "Total Context",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "pricing": "@:shared.terms.pricing",
+    "input": "Input",
+    "output": "Output",
+    "cache": "Cache"
+  },
+  "benchmarks": {
+    "title": "Performance Benchmarks",
+    "sweBench": "SWE-bench Verified",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBench": "TerminalBench 2.0",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "mmmu": "MMMU",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuPro": "MMMU Pro",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "webDevArena": "WebDevArena",
+    "webDevArenaDesc": "Web development challenges",
+    "sciCode": "SciCode",
+    "sciCodeDesc": "Scientific code generation",
+    "liveCodeBench": "LiveCodeBench",
+    "liveCodeBenchDesc": "Live coding performance"
+  },
+  "relatedProducts": {
+    "cli": "@:shared.categories.singular.cli",
+    "extension": "@:shared.categories.singular.extension",
+    "ide": "@:shared.categories.singular.ide",
+    "title": "İlgili Ürünler",
+    "viewProduct": "Ürünü Görüntüle"
+  },
+  "vendorMatrix": {
+    "cell": {
+      "summary": "{count} {category}"
+    },
+    "categories": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "provider": "Provider"
+    },
+    "categoriesPlural": {
+      "cli": "CLIs",
+      "extension": "Extensions",
+      "ide": "IDEs",
+      "model": "Models",
+      "provider": "Providers"
+    },
+    "controls": {
+      "clear": "Temizle",
+      "sortByLabel": "Sırala:",
+      "sortName": "Ad",
+      "sortProducts": "Ürünler",
+      "vendorTypeLabel": "Sağlayıcı Türü:"
+    },
+    "table": {
+      "noVendorsFound": "Sağlayıcı bulunamadı",
+      "vendor": "Sağlayıcı"
+    },
+    "vendorTypes": {
+      "label": "Sağlayıcı Türleri:",
+      "types": {
+        "ai-native": {
+          "description": "Model + Geliştirme Araçları",
+          "label": "AI Doğal"
+        },
+        "full-stack": {
+          "description": "IDE + CLI + Uzantı",
+          "label": "Full Stack"
+        },
+        "model-only": {
+          "description": "Model (Sağlayıcı ile veya olmadan)",
+          "label": "Sadece Model"
+        },
+        "provider-only": {
+          "description": "Sadece Sağlayıcı",
+          "label": "Sadece Sağlayıcı"
+        },
+        "tool-only": {
+          "description": "IDE/CLI/Uzantı",
+          "label": "Sadece Araç"
+        }
+      }
+    }
+  },
+  "resources": {
+    "community": "@:shared.terms.community",
+    "resources": "@:shared.terms.resources"
+  }
+}

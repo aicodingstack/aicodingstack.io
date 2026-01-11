@@ -1,0 +1,28 @@
+{
+  "footer": {
+    "copyright": "© 2025 AI Coding Stack • 用 ❤︎ 构建 • 开源",
+    "openSource": "开源 AI 编码元数据仓库。",
+    "selectLanguage": "选择语言",
+    "tagline": "你的 AI 编码生态中心。",
+    "toggleTheme": "切换主题"
+  },
+  "header": {
+    "aiCodingLandscape": "AI 编码全景图",
+    "aiCodingLandscapeDesc": "可视化 AI 编码生态系统全貌",
+    "aiCodingStack": "@:shared.terms.aiCodingStack",
+    "articles": "@:shared.terms.articles",
+    "closeMenu": "关闭菜单",
+    "collections": "@:shared.terms.collections",
+    "developmentTools": "开发工具",
+    "intelligence": "智能层",
+    "landscape": "全景图",
+    "manifesto": "@:shared.terms.manifesto",
+    "openMenu": "打开菜单",
+    "openSourceRank": "开源排行榜",
+    "openSourceRankDesc": "按 GitHub 星标数探索开源 AI 编码项目",
+    "ranking": "排行榜",
+    "search": "@:shared.actions.search",
+    "searchPlaceholder": "搜索...",
+    "toggleMenu": "切换菜单"
+  }
+}

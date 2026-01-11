@@ -1,0 +1,18 @@
+{
+  "copyButton": {
+    "copied": "Copié !",
+    "copyToClipboard": "Copier dans le presse-papiers"
+  },
+  "filterSortBar": {
+    "clearFilters": "Effacer les filtres",
+    "license": "Licence :",
+    "openSource": "@:shared.terms.openSource",
+    "platform": "Plateforme :",
+    "proprietary": "@:shared.terms.proprietary",
+    "search": "@:shared.actions.search by name...",
+    "sort": "Trier :",
+    "sortDefault": "Par défaut",
+    "sortNameAsc": "Nom (A-Z)",
+    "sortNameDesc": "Nom (Z-A)"
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "cliDetail": {
+    "allCLIs": "@:shared.categories.all.clis",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "clis": "@:shared.categories.plural.clis"
+    },
+    "categoryLabel": "@:shared.categories.singular.cli",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "clis": {
+    "allCLIs": "@:shared.categories.all.clis",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "没有符合筛选条件的 CLI",
+    "subtitle": "AI 驱动的命令行编码助手",
+    "title": "AI 编码 CLI 工具"
+  },
+  "extensionDetail": {
+    "allExtensions": "@:shared.categories.all.extensions",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "extensions": "@:shared.categories.plural.extensions"
+    },
+    "categoryLabel": "@:shared.categories.singular.extension",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "stars": "@:shared.terms.stars",
+    "supportedIdes": "@:shared.terms.supportedIdes",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "extensions": {
+    "allExtensions": "@:shared.categories.all.extensions",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "没有符合筛选条件的扩展",
+    "subtitle": "AI 驱动的编码扩展与插件",
+    "title": "AI 编码扩展插件"
+  },
+  "ideDetail": {
+    "allIDEs": "@:shared.categories.all.ides",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "ides": "@:shared.categories.plural.ides"
+    },
+    "categoryLabel": "@:shared.categories.singular.ide",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "modelCompare": {
+    "addModel": "+ 添加模型",
+    "allModels": "所有模型",
+    "artificialAnalysis": "Artificial Analysis",
+    "basicInfo": "基本信息",
+    "cachePrice": "缓存定价",
+    "capabilities": "功能",
+    "compareTitle": "比较 {model1} vs {model2}",
+    "contextWindow": "上下文窗口",
+    "description": "描述",
+    "huggingface": "Hugging Face",
+    "inputModalities": "输入模态",
+    "inputPrice": "输入定价",
+    "knowledgeCutoff": "知识",
+    "lifecycle": "生命周期",
+    "maxOutput": "最大输出",
+    "modelSize": "模型大小",
+    "openrouter": "OpenRouter",
+    "outputPrice": "输出定价",
+    "platforms": "平台",
+    "pricing": "定价",
+    "releaseDate": "发布日期",
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "vendor": "供应商",
+    "verified": "已验证"
+  },
+  "ides": {
+    "allIDEs": "@:shared.categories.all.ides",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "没有符合筛选条件的 IDE",
+    "subtitle": "AI 增强的集成开发环境",
+    "title": "AI 编码 IDE"
+  },
+  "modelDetail": {
+    "allModels": "@:shared.categories.all.models",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "models": "@:shared.categories.plural.models"
+    },
+    "cache": "Cache",
+    "categoryLabel": "@:shared.categories.singular.model",
+    "contextWindow": "内容窗口",
+    "documentation": "@:shared.terms.documentation",
+    "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
+    "input": "输入",
+    "labels": {
+      "artificialAnalysis": "@:shared.platforms.artificialAnalysis",
+      "context": "内容窗口",
+      "documentation": "@:shared.terms.documentation",
+      "huggingface": "@:shared.platforms.huggingface",
+      "maxOutput": "@:shared.terms.maxOutput",
+      "openrouter": "@:shared.platforms.openrouter",
+      "pricing": "@:shared.terms.pricing",
+      "size": "模型大小",
+      "website": "@:shared.terms.website"
+    },
+    "license": "@:shared.terms.license",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "metaTitle": "AI 编码模型 | 规格与定价 2025",
+    "modelSize": "@:shared.terms.modelSize",
+    "output": "输出",
+    "pricing": "@:shared.terms.pricing",
+    "specifications": "@:shared.labels.specifications",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "modelProviderDetail": {
+    "allModelProviders": "@:shared.categories.all.modelProviders",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "modelProviders": "@:shared.categories.plural.modelProviders"
+    },
+    "categoryLabel": "@:shared.categories.singular.modelProvider",
+    "communityLinks": "@:shared.terms.communityLinks",
+    "documentation": "@:shared.terms.documentation",
+    "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
+    "getApiKey": "@:shared.labels.getApiKey",
+    "indexLabel": "@:shared.terms.indexLabel",
+    "providerTypes": {
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
+    },
+    "type": "@:shared.terms.type",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "modelProviders": {
+    "foundationProviders": "@:shared.providerTypes.foundation-model-provider",
+    "search": "按名称搜索...",
+    "serviceProviders": "@:shared.providerTypes.model-service-provider",
+    "subtitle": "提供各种 AI 模型访问的 LLM API 提供者",
+    "title": "AI 编码模型提供商"
+  },
+  "models": {
+    "compareAll": "@:shared.actions.compareAll",
+    "context": "内容窗口：",
+    "lifecycle": {
+      "latest": "最新",
+      "maintained": "维护中",
+      "deprecated": "已弃用",
+      "noResults": "没有符合搜索条件的{lifecycle}模型"
+    },
+    "pricing": "定价：",
+    "search": "按名称搜索...",
+    "size": "大小：",
+    "subtitle": "针对代码生成与分析优化的大型语言模型",
+    "title": "AI 编码模型"
+  },
+  "overview": {
+    "clis": {
+      "description": "将大型语言模型的强大功能直接带到终端的命令行 AI 助手。在 shell 中用自然语言执行复杂任务。",
+      "title": "CLIs"
+    },
+    "exploreStack": "探索技术栈",
+    "extensions": {
+      "description": "为您喜爱的 IDE 提供的 AI 驱动编码扩展与插件。从代码自动补全到智能重构，用 AI 辅助增强您的开发体验。",
+      "title": "Extensions"
+    },
+    "ides": {
+      "description": "理解代码库并提供智能辅助的 AI 驱动集成开发环境。从 VS Code 到 Cursor，发现让编码与 AI 协作的编辑器。",
+      "title": "IDEs"
+    },
+    "modelProviders": {
+      "description": "提供各种 AI 模型访问的 LLM API 提供者。从 DeepSeek 到 OpenRouter，发现以统一 API 和模型访问为 AI 编码工具提供动力的平台。",
+      "title": "Model Providers"
+    },
+    "models": {
+      "description": "智能层。针对代码生成、理解和分析优化的大型语言模型。比较领先 AI 模型的规格、定价和能力。",
+      "title": "Models"
+    },
+    "overviewTitle": "AI 编码技术栈概览",
+    "slogan": "发现。比较。构建 10x 更快。",
+    "subtitle": "探索完整的 AI 编码生态系统：IDE、CLI、扩展、模型和提供者。",
+    "title": "AI Coding Stack",
+    "vendors": {
+      "description": "构建 AI 技术的领先公司和组织。从 OpenAI 到 Anthropic，发现 AI 编码革命背后的供应商。",
+      "title": "Vendors"
+    }
+  },
+  "vendorDetail": {
+    "allVendors": "@:shared.categories.all.vendors",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "home": "首页",
+      "vendors": "@:shared.categories.plural.vendors"
+    },
+    "categoryLabel": "@:shared.categories.singular.vendor",
+    "communityLinks": "@:shared.terms.communityLinks",
+    "connectLinkedIn": "在 LinkedIn 上联系",
+    "documentation": "@:shared.terms.documentation",
+    "followTwitter": "在 X/Twitter 上关注",
+    "indexLabel": "@:shared.terms.indexLabel",
+    "joinDiscord": "加入 Discord 社区",
+    "joinReddit": "加入 Reddit 社区",
+    "metaDescription": "探索 {name} 的 AI 产品与技术。",
+    "metaTitle": "AI 技术供应商 | 公司简介 2025",
+    "models": "@:shared.categories.plural.models",
+    "products": "@:shared.terms.products",
+    "productsSubtitle": "探索来自 {vendorName} 的产品与服务",
+    "productsTitle": "@:shared.terms.products",
+    "quickLinks": "@:shared.labels.quickLinks",
+    "vendorDetails": "供应商详情",
+    "viewGitHub": "查看开源仓库",
+    "visitWebsite": "@:shared.terms.visitWebsite",
+    "watchYouTube": "在 YouTube 观看视频",
+    "website": "@:shared.terms.website"
+  },
+  "vendors": {
+    "search": "按名称搜索...",
+    "subtitle": "构建 AI 技术的领先公司和组织",
+    "title": "AI 编码厂商"
+  }
+}

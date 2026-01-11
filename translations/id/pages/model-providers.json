@@ -1,0 +1,7 @@
+{
+  "foundationProviders": "@:shared.providerTypes.foundation-model-provider",
+  "search": "Cari berdasarkan nama...",
+  "serviceProviders": "@:shared.providerTypes.model-service-provider",
+  "subtitle": "Penyedia API LLM yang menawarkan akses ke berbagai model AI",
+  "title": "Penyedia Model Coding AI"
+}

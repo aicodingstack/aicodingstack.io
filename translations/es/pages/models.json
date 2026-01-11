@@ -1,0 +1,15 @@
+{
+  "compareAll": "@:shared.actions.compareAll",
+  "context": "Contexto:",
+  "lifecycle": {
+    "latest": "Recientes",
+    "maintained": "Mantenidos",
+    "deprecated": "Obsoletos",
+    "noResults": "Ningún modelo {lifecycle} coincide con tu búsqueda"
+  },
+  "pricing": "Precios:",
+  "search": "Buscar por nombre...",
+  "size": "Tamaño:",
+  "subtitle": "Modelos de lenguaje grandes optimizados para generación y análisis de código",
+  "title": "Modelos de Codificación con IA"
+}

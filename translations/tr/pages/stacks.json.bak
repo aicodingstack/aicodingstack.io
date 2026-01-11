@@ -1,0 +1,242 @@
+{
+  "cliDetail": {
+    "allCLIs": "@:shared.categories.all.clis",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "clis": "@:shared.categories.plural.clis"
+    },
+    "categoryLabel": "@:shared.categories.singular.cli",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "clis": {
+    "allCLIs": "@:shared.categories.all.clis",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "Filtrelerinize uygun CLI yok",
+    "subtitle": "AI destekli komut satırı kodlama yardımcıları",
+    "title": "AI Kodlama CLI'leri"
+  },
+  "extensionDetail": {
+    "allExtensions": "@:shared.categories.all.extensions",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "extensions": "@:shared.categories.plural.extensions"
+    },
+    "categoryLabel": "@:shared.categories.singular.extension",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "stars": "@:shared.terms.stars",
+    "supportedIdes": "@:shared.terms.supportedIdes",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "extensions": {
+    "allExtensions": "@:shared.categories.all.extensions",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "Filtrelerinize uygun uzantı yok",
+    "subtitle": "AI destekli kodlama uzantıları ve eklentileri",
+    "title": "AI Kodlama Eklentileri"
+  },
+  "ideDetail": {
+    "allIDEs": "@:shared.categories.all.ides",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "ides": "@:shared.categories.plural.ides"
+    },
+    "categoryLabel": "@:shared.categories.singular.ide",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "modelCompare": {
+    "addModel": "+ Model Ekle",
+    "allModels": "Tüm Modeller",
+    "artificialAnalysis": "Artificial Analysis",
+    "basicInfo": "Temel Bilgiler",
+    "cachePrice": "Önbellek Fiyatı",
+    "capabilities": "Yetenekler",
+    "compareTitle": "{model1} vs {model2} Karşılaştır",
+    "contextWindow": "Bağlam Penceresi",
+    "description": "Açıklama",
+    "huggingface": "Hugging Face",
+    "inputModalities": "Girdi Modları",
+    "inputPrice": "Girdi Fiyatı",
+    "knowledgeCutoff": "Bilgi",
+    "lifecycle": "Yaşam Döngüsü",
+    "maxOutput": "Maks Çıktı",
+    "modelSize": "Model Boyutu",
+    "openrouter": "OpenRouter",
+    "outputPrice": "Çıktı Fiyatı",
+    "platforms": "Platformlar",
+    "pricing": "Fiyatlandırma",
+    "releaseDate": "Yayın Tarihi",
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "vendor": "Sağlayıcı",
+    "verified": "Doğrulanmış"
+  },
+  "ides": {
+    "allIDEs": "@:shared.categories.all.ides",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "Filtrelerinize uygun IDE yok",
+    "subtitle": "AI ile geliştirilmiş entegre geliştirme ortamları",
+    "title": "AI Kodlama IDE'leri"
+  },
+  "modelDetail": {
+    "allModels": "@:shared.categories.all.models",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "models": "@:shared.categories.plural.models"
+    },
+    "cache": "Önbellek",
+    "categoryLabel": "@:shared.categories.singular.model",
+    "contextWindow": "Toplam Bağlam",
+    "documentation": "@:shared.terms.documentation",
+    "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
+    "input": "Giriş",
+    "labels": {
+      "artificialAnalysis": "@:shared.platforms.artificialAnalysis",
+      "context": "Bağlam",
+      "documentation": "@:shared.terms.documentation",
+      "huggingface": "@:shared.platforms.huggingface",
+      "maxOutput": "@:shared.terms.maxOutput",
+      "openrouter": "@:shared.platforms.openrouter",
+      "pricing": "@:shared.terms.pricing",
+      "size": "Boyut",
+      "website": "@:shared.terms.website"
+    },
+    "license": "@:shared.terms.license",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "metaTitle": "AI Coding Model | Specs & Pricing 2025",
+    "modelSize": "@:shared.terms.modelSize",
+    "output": "Çıkış",
+    "pricing": "@:shared.terms.pricing",
+    "specifications": "@:shared.labels.specifications",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "modelProviderDetail": {
+    "allModelProviders": "@:shared.categories.all.modelProviders",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "modelProviders": "@:shared.categories.plural.modelProviders"
+    },
+    "categoryLabel": "@:shared.categories.singular.modelProvider",
+    "communityLinks": "@:shared.terms.communityLinks",
+    "documentation": "@:shared.terms.documentation",
+    "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
+    "getApiKey": "@:shared.labels.getApiKey",
+    "indexLabel": "@:shared.terms.indexLabel",
+    "providerTypes": {
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
+    },
+    "type": "@:shared.terms.type",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "modelProviders": {
+    "foundationProviders": "@:shared.providerTypes.foundation-model-provider",
+    "search": "İsme göre ara...",
+    "serviceProviders": "@:shared.providerTypes.model-service-provider",
+    "subtitle": "Çeşitli AI modellerine erişim sunan LLM API sağlayıcıları",
+    "title": "AI Kodlama Model Sağlayıcıları"
+  },
+  "models": {
+    "compareAll": "@:shared.actions.compareAll",
+    "context": "Bağlam:",
+    "lifecycle": {
+      "latest": "En yeniler",
+      "maintained": "Bakım yapılan",
+      "deprecated": "Kullanımdan kaldırılan",
+      "noResults": "Aramanızla eşleşen {lifecycle} model yok"
+    },
+    "pricing": "Fiyatlandırma:",
+    "search": "İsme göre ara...",
+    "size": "Boyut:",
+    "subtitle": "Kod oluşturma ve analiz için optimize edilmiş büyük dil modelleri",
+    "title": "AI Kodlama Modelleri"
+  },
+  "overview": {
+    "clis": {
+      "description": "Büyük dil modellerinin gücünü doğrudan terminalinize getiren komut satırı AI yardımcıları. Karmaşık görevleri doğal dille, doğrudan kabuğunuzdan çalıştırın.",
+      "title": "CLI'lar"
+    },
+    "exploreStack": "Stack'ı Keşfet",
+    "extensions": {
+      "description": "Favori IDE'niz için AI destekli kodlama uzantıları ve eklentileri. Kod tamamlamadan akıllı yeniden düzenlemeye kadar, AI yardımıyla geliştirme deneyiminizi iyileştirin.",
+      "title": "Extensions"
+    },
+    "ides": {
+      "description": "Kod tabanınızı anlayan ve akıllı yardım sağlayan AI destekli entegre geliştirme ortamları. VS Code'dan Cursor'a, kodlamayı AI ile işbirliğine dönüştüren editörleri keşfedin.",
+      "title": "IDEs"
+    },
+    "modelProviders": {
+      "description": "Çeşitli AI modellerine erişim sunan LLM API sağlayıcıları. AI hizmetlerini uygulamalarınıza entegre edin.",
+      "title": "Model Providers"
+    },
+    "models": {
+      "description": "Zeka katmanı. Kod oluşturma, anlama ve analiz için optimize edilmiş büyük dil modelleri. Önde gelen AI modelleri arasında spesifikasyonları, fiyatları ve yetenekleri karşılaştırın.",
+      "title": "Models"
+    },
+    "overviewTitle": "AI Coding Stack Genel Bakışı",
+    "slogan": "Keşfet. Karşılaştır. 10x Daha Hızlı İnşa Edin.",
+    "subtitle": "Tam AI kodlama ekosistemini keşfedin: IDE'ler, CLI'lar, uzantılar, modeller ve sağlayıcılar.",
+    "title": "AI Coding Stack",
+    "vendors": {
+      "description": "AI teknolojilerini geliştiren önde gelen şirketler ve kuruluşlar. OpenAI'dan Anthropic'e, AI kodlama devriminin arkasındaki sağlayıcıları keşfedin.",
+      "title": "Vendors"
+    }
+  },
+  "vendorDetail": {
+    "allVendors": "@:shared.categories.all.vendors",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "home": "Ana Sayfa",
+      "vendors": "@:shared.categories.plural.vendors"
+    },
+    "categoryLabel": "@:shared.categories.singular.vendor",
+    "communityLinks": "@:shared.terms.communityLinks",
+    "connectLinkedIn": "LinkedIn'de bağlan",
+    "documentation": "@:shared.terms.documentation",
+    "followTwitter": "X/Twitter'da takip et",
+    "indexLabel": "@:shared.terms.indexLabel",
+    "joinDiscord": "Discord topluluğuna katıl",
+    "joinReddit": "Reddit topluluğuna katıl",
+    "metaDescription": "{name}'in AI ürünlerini ve teknolojilerini keşfedin.",
+    "metaTitle": "AI Teknoloji Sağlayıcısı | Şirket Profili 2025",
+    "models": "@:shared.categories.plural.models",
+    "products": "@:shared.terms.products",
+    "productsSubtitle": "{vendorName}'den ürün ve hizmetleri keşfedin",
+    "productsTitle": "@:shared.terms.products",
+    "quickLinks": "@:shared.labels.quickLinks",
+    "vendorDetails": "Sağlayıcı Detayları",
+    "viewGitHub": "Açık kaynak depolarını görüntüle",
+    "visitWebsite": "@:shared.terms.visitWebsite",
+    "watchYouTube": "YouTube'da videoları izle",
+    "website": "@:shared.terms.website"
+  },
+  "vendors": {
+    "search": "İsme göre ara...",
+    "subtitle": "AI teknolojilerini geliştiren önde gelen şirketler ve kuruluşlar",
+    "title": "AI Kodlama Satıcıları"
+  }
+}

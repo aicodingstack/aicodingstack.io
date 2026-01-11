@@ -1,0 +1,31 @@
+{
+  "clis": {
+    "description": "Kommandozeilen-AI-Assistenten, die die Kraft großer Sprachmodelle direkt in Ihr Terminal bringen. Führen Sie komplexe Aufgaben mit natürlicher Sprache direkt von Ihrer Shell aus.",
+    "title": "CLIs"
+  },
+  "exploreStack": "Stack Erkunden",
+  "extensions": {
+    "description": "AI-gestützte Coding-Erweiterungen und Plugins für Ihre bevorzugte IDE. Von Code-Vervollständigung bis zu intelligentem Refactoring verbessern Sie Ihre Entwicklungserfahrung mit AI-Unterstützung.",
+    "title": "Erweiterungen"
+  },
+  "ides": {
+    "description": "AI-gestützte integrierte Entwicklungsumgebungen, die Ihre Codebasis verstehen und intelligente Unterstützung bieten. Von VS Code bis Cursor entdecken Sie Editoren, die Coding mit AI kollaborativ machen.",
+    "title": "IDEs"
+  },
+  "modelProviders": {
+    "description": "LLM-API-Anbieter, die Zugang zu verschiedenen AI-Modellen bieten. Von DeepSeek bis OpenRouter entdecken Sie Plattformen, die Ihre AI-Coding-Tools mit einheitlichen APIs und Modellzugriff versorgen.",
+    "title": "Modellanbieter"
+  },
+  "models": {
+    "description": "Die Intelligenzschicht. Große Sprachmodelle optimiert für Code-Generierung, Verständnis und Analyse. Vergleichen Sie Spezifikationen, Preise und Fähigkeiten führender AI-Modelle.",
+    "title": "Modelle"
+  },
+  "overviewTitle": "AI Coding Stack Übersicht",
+  "slogan": "Entdecken. Vergleichen. 10x Schneller Entwickeln.",
+  "subtitle": "Erkunden Sie das gesamte AI-Coding-Ökosystem: IDEs, CLIs, Erweiterungen, Modelle und Anbieter.",
+  "title": "AI Coding Stack",
+  "vendors": {
+    "description": "Führende Unternehmen und Organisationen, die AI-Technologien entwickeln. Von OpenAI bis Anthropic entdecken Sie die Anbieter hinter der AI-Coding-Revolution.",
+    "title": "Anbieter"
+  }
+}

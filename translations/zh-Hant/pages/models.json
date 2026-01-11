@@ -1,0 +1,15 @@
+{
+  "compareAll": "@:shared.actions.compareAll",
+  "context": "內容視窗：",
+  "lifecycle": {
+    "latest": "最新",
+    "maintained": "維護中",
+    "deprecated": "已棄用",
+    "noResults": "沒有符合搜尋條件的{lifecycle}模型"
+  },
+  "pricing": "定價：",
+  "search": "依名稱搜尋...",
+  "size": "大小：",
+  "subtitle": "針對程式碼產生與分析優化的大型語言模型",
+  "title": "AI 編碼模型"
+}

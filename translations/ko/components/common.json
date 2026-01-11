@@ -1,0 +1,28 @@
+{
+  "footer": {
+    "copyright": "© 2025 AI Coding Stack • ❤︎로 구축 • 오픈 소스",
+    "openSource": "오픈 소스 AI 코딩 메타데이터 저장소.",
+    "selectLanguage": "언어 선택",
+    "tagline": "당신의 AI 코딩 생태계 허브.",
+    "toggleTheme": "테마 토글"
+  },
+  "header": {
+    "aiCodingLandscape": "AI 코딩 랜드스케이프",
+    "aiCodingLandscapeDesc": "완전한 AI 코딩 생태계를 시각화하세요",
+    "aiCodingStack": "@:shared.terms.aiCodingStack",
+    "articles": "@:shared.terms.articles",
+    "closeMenu": "메뉴 닫기",
+    "collections": "@:shared.terms.collections",
+    "developmentTools": "개발 도구",
+    "intelligence": "인텔리전스",
+    "landscape": "생태계",
+    "manifesto": "@:shared.terms.manifesto",
+    "openMenu": "메뉴 열기",
+    "openSourceRank": "오픈소스 순위",
+    "openSourceRankDesc": "GitHub 스타로 오픈 소스 AI 코딩 프로젝트를 탐색하세요",
+    "ranking": "순위",
+    "search": "@:shared.actions.search",
+    "searchPlaceholder": "검색...",
+    "toggleMenu": "메뉴 토글"
+  }
+}

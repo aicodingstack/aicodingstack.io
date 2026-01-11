@@ -1,0 +1,36 @@
+{
+  "allModels": "@:shared.categories.all.models",
+  "backTo": "@:shared.actions.backTo",
+  "breadcrumb": {
+    "aiCodingStack": "@:shared.terms.aiCodingStack",
+    "models": "@:shared.categories.plural.models"
+  },
+  "cache": "Cache",
+  "categoryLabel": "@:shared.categories.singular.model",
+  "contextWindow": "Contexte total",
+  "documentation": "@:shared.terms.documentation",
+  "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
+  "input": "Entrée",
+  "labels": {
+    "artificialAnalysis": "@:shared.platforms.artificialAnalysis",
+    "context": "Contexte",
+    "documentation": "@:shared.terms.documentation",
+    "huggingface": "@:shared.platforms.huggingface",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "openrouter": "@:shared.platforms.openrouter",
+    "pricing": "@:shared.terms.pricing",
+    "size": "Taille",
+    "website": "@:shared.terms.website"
+  },
+  "license": "@:shared.terms.license",
+  "maxOutput": "@:shared.terms.maxOutput",
+  "metaTitle": "AI Coding Model | Specs & Pricing 2025",
+  "modelSize": "@:shared.terms.modelSize",
+  "output": "Sortie",
+  "pricing": "@:shared.terms.pricing",
+  "specifications": "@:shared.labels.specifications",
+  "stars": "@:shared.terms.stars",
+  "vendor": "@:shared.terms.vendor",
+  "version": "@:shared.terms.version",
+  "visitWebsite": "@:shared.terms.visitWebsite"
+}

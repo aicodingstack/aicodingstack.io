@@ -2,7 +2,7 @@
   "clis": {
     "backTo": "Zurück zu CLIs",
     "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von AI-Coding-CLI-Tools nebeneinander.",
-    "title": "CLI-Vergleich"
+    "title": "AI-Coding-CLI-Vergleich"
   },
   "columns": {
     "cache": "Cache",
@@ -38,22 +38,24 @@
   "extensions": {
     "backTo": "Zurück zu Erweiterungen",
     "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von AI-Coding-Erweiterungen nebeneinander.",
-    "title": "Erweiterungs-Vergleich"
+    "title": "AI-Coding-Erweiterungs-Vergleich"
   },
   "ides": {
     "backTo": "Zurück zu IDEs",
     "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von AI-gestützten IDEs nebeneinander.",
-    "title": "IDE-Vergleich"
+    "title": "AI-Coding-IDE-Vergleich"
   },
   "linkTitles": {
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
     "officialWebsite": "@:shared.terms.visitWebsite"
   },
+  "modelCompareDescription": "Vergleichen Sie AI-Coding-Modelle nebeneinander: Spezifikationen, Preise, Funktionen und Benchmarks.",
+  "modelCompareTitle": "AI-Coding-Modell-Vergleich: {model1} vs {model2}",
   "models": {
     "backTo": "Zurück zu Modellen",
     "subtitle": "Vergleichen Sie Spezifikationen und Preise von AI-Coding-Modellen nebeneinander.",
-    "title": "Modell-Vergleich"
+    "title": "AI-Coding-Modell-Vergleich"
   },
   "pricingValues": {
     "free": "Kostenlos",

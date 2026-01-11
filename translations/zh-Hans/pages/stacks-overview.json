@@ -1,0 +1,31 @@
+{
+  "clis": {
+    "description": "将大型语言模型的强大功能直接带到终端的命令行 AI 助手。在 shell 中用自然语言执行复杂任务。",
+    "title": "CLIs"
+  },
+  "exploreStack": "探索技术栈",
+  "extensions": {
+    "description": "为您喜爱的 IDE 提供的 AI 驱动编码扩展与插件。从代码自动补全到智能重构，用 AI 辅助增强您的开发体验。",
+    "title": "Extensions"
+  },
+  "ides": {
+    "description": "理解代码库并提供智能辅助的 AI 驱动集成开发环境。从 VS Code 到 Cursor，发现让编码与 AI 协作的编辑器。",
+    "title": "IDEs"
+  },
+  "modelProviders": {
+    "description": "提供各种 AI 模型访问的 LLM API 提供者。从 DeepSeek 到 OpenRouter，发现以统一 API 和模型访问为 AI 编码工具提供动力的平台。",
+    "title": "Model Providers"
+  },
+  "models": {
+    "description": "智能层。针对代码生成、理解和分析优化的大型语言模型。比较领先 AI 模型的规格、定价和能力。",
+    "title": "Models"
+  },
+  "overviewTitle": "AI 编码技术栈概览",
+  "slogan": "发现。比较。构建 10x 更快。",
+  "subtitle": "探索完整的 AI 编码生态系统：IDE、CLI、扩展、模型和提供者。",
+  "title": "AI Coding Stack",
+  "vendors": {
+    "description": "构建 AI 技术的领先公司和组织。从 OpenAI 到 Anthropic，发现 AI 编码革命背后的供应商。",
+    "title": "Vendors"
+  }
+}

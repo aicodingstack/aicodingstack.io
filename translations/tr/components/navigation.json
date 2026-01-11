@@ -1,0 +1,9 @@
+{
+  "backToNavigation": {
+    "backTo": "@:shared.actions.backTo",
+    "indexLabel": "@:shared.terms.indexLabel"
+  },
+  "breadcrumb": {
+    "home": "Ana Sayfa"
+  }
+}

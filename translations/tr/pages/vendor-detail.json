@@ -1,0 +1,29 @@
+{
+  "allVendors": "@:shared.categories.all.vendors",
+  "backTo": "@:shared.actions.backTo",
+  "breadcrumb": {
+    "aiCodingStack": "@:shared.terms.aiCodingStack",
+    "home": "Ana Sayfa",
+    "vendors": "@:shared.categories.plural.vendors"
+  },
+  "categoryLabel": "@:shared.categories.singular.vendor",
+  "communityLinks": "@:shared.terms.communityLinks",
+  "connectLinkedIn": "LinkedIn'de bağlan",
+  "documentation": "@:shared.terms.documentation",
+  "followTwitter": "X/Twitter'da takip et",
+  "indexLabel": "@:shared.terms.indexLabel",
+  "joinDiscord": "Discord topluluğuna katıl",
+  "joinReddit": "Reddit topluluğuna katıl",
+  "metaDescription": "{name}'in AI ürünlerini ve teknolojilerini keşfedin.",
+  "metaTitle": "AI Teknoloji Sağlayıcısı | Şirket Profili 2025",
+  "models": "@:shared.categories.plural.models",
+  "products": "@:shared.terms.products",
+  "productsSubtitle": "{vendorName}'den ürün ve hizmetleri keşfedin",
+  "productsTitle": "@:shared.terms.products",
+  "quickLinks": "@:shared.labels.quickLinks",
+  "vendorDetails": "Sağlayıcı Detayları",
+  "viewGitHub": "Açık kaynak depolarını görüntüle",
+  "visitWebsite": "@:shared.terms.visitWebsite",
+  "watchYouTube": "YouTube'da videoları izle",
+  "website": "@:shared.terms.website"
+}

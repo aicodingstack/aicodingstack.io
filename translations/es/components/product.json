@@ -1,0 +1,189 @@
+{
+  "productCommands": {
+    "command": "Comando",
+    "install": "Instalar",
+    "launch": "Iniciar"
+  },
+  "vendorProducts": {
+    "title": "Productos"
+  },
+  "vendorModels": {
+    "title": "Modelos"
+  },
+  "platformLinks": {
+    "title": "Buscar en plataformas de IA",
+    "aiPlatforms": {
+      "huggingface": {
+        "title": "Hugging Face",
+        "description": "Ver tarjeta de modelo y pesos"
+      },
+      "artificialAnalysis": {
+        "title": "Artificial Analysis",
+        "description": "Tabla de clasificación y evaluaciones de modelos de IA"
+      },
+      "openrouter": {
+        "title": "OpenRouter",
+        "description": "Comparar y usar múltiples modelos de IA"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "Cargando historial de estrellas...",
+    "title": "Historial de estrellas de GitHub",
+    "description": "Tendencia de crecimiento de estrellas a lo largo del tiempo",
+    "stars": "estrellas",
+    "fallbackNote": "Nota: Mostrando datos de muestra. El API de historial de estrellas está temporalmente no disponible."
+  },
+  "productHero": {
+    "categories": {
+      "CLI": "@:shared.categories.singular.cli",
+      "EXTENSION": "@:shared.categories.singular.extension",
+      "IDE": "@:shared.categories.singular.ide",
+      "MODEL": "@:shared.categories.singular.model",
+      "PROVIDER": "@:shared.categories.singular.modelProvider",
+      "VENDOR": "@:shared.categories.singular.vendor"
+    },
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "getApiKey": "@:shared.labels.getApiKey",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "providerTypes": {
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
+    },
+    "runtime": "Tiempo de ejecución",
+    "stars": "@:shared.terms.stars",
+    "supportedIdes": "@:shared.terms.supportedIdes",
+    "type": "@:shared.terms.type",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "communityLinks": {
+    "blog": "Blog",
+    "blogDescription": "Leer publicaciones de blog",
+    "community": "@:shared.terms.community",
+    "discord": "@:shared.platforms.discord",
+    "discordDescription": "Unirse a la comunidad",
+    "github": "@:shared.platforms.github",
+    "githubDescription": "Ver repositorios",
+    "linkedin": "@:shared.platforms.linkedin",
+    "linkedinDescription": "@:shared.terms.followUs",
+    "reddit": "@:shared.platforms.reddit",
+    "redditDescription": "Unirse a la discusión",
+    "twitter": "@:shared.platforms.twitter",
+    "twitterDescription": "@:shared.terms.followUs",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "Ver videos"
+  },
+  "resourceLinks": {
+    "changelog": "Registro de cambios",
+    "changelogDescription": "Ver registro de cambios",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "Descargar la última versión",
+    "issue": "Rastreador de problemas",
+    "issueDescription": "Informar errores y solicitar funciones",
+    "mcp": "Documentación de MCP",
+    "mcpDescription": "Obtenga información sobre la integración MCP",
+    "pricing": "@:shared.terms.pricing",
+    "pricingDescription": "Ver planes de precios"
+  },
+  "productPricing": {
+    "title": "@:shared.terms.pricing",
+    "viewFullDetails": "View full pricing details →"
+  },
+  "modelSpecifications": {
+    "title": "Specifications",
+    "modelSize": "@:shared.terms.modelSize",
+    "contextWindow": "Total Context",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "pricing": "@:shared.terms.pricing",
+    "input": "Input",
+    "output": "Output",
+    "cache": "Cache"
+  },
+  "benchmarks": {
+    "title": "Performance Benchmarks",
+    "sweBench": "SWE-bench Verified",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBench": "TerminalBench 2.0",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "mmmu": "MMMU",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuPro": "MMMU Pro",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "webDevArena": "WebDevArena",
+    "webDevArenaDesc": "Web development challenges",
+    "sciCode": "SciCode",
+    "sciCodeDesc": "Scientific code generation",
+    "liveCodeBench": "LiveCodeBench",
+    "liveCodeBenchDesc": "Live coding performance"
+  },
+  "relatedProducts": {
+    "cli": "@:shared.categories.singular.cli",
+    "extension": "@:shared.categories.singular.extension",
+    "ide": "@:shared.categories.singular.ide",
+    "title": "Productos relacionados",
+    "viewProduct": "Ver producto"
+  },
+  "vendorMatrix": {
+    "cell": {
+      "summary": "{count} {category}"
+    },
+    "categories": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "provider": "Provider"
+    },
+    "categoriesPlural": {
+      "cli": "CLIs",
+      "extension": "Extensions",
+      "ide": "IDEs",
+      "model": "Models",
+      "provider": "Providers"
+    },
+    "controls": {
+      "clear": "Clear",
+      "sortByLabel": "Sort by:",
+      "sortName": "Name",
+      "sortProducts": "Products",
+      "vendorTypeLabel": "Vendor Type:"
+    },
+    "table": {
+      "noVendorsFound": "No vendors found",
+      "vendor": "Vendor"
+    },
+    "vendorTypes": {
+      "label": "Vendor Types:",
+      "types": {
+        "ai-native": {
+          "description": "Model + Development Tools",
+          "label": "AI Native"
+        },
+        "full-stack": {
+          "description": "IDE + CLI + Extension",
+          "label": "Full Stack"
+        },
+        "model-only": {
+          "description": "Model (with or without Provider)",
+          "label": "Model Only"
+        },
+        "provider-only": {
+          "description": "Provider only",
+          "label": "Provider Only"
+        },
+        "tool-only": {
+          "description": "IDE/CLI/Extension",
+          "label": "Tool Only"
+        }
+      }
+    }
+  },
+  "resources": {
+    "community": "@:shared.terms.community",
+    "resources": "@:shared.terms.resources"
+  }
+}

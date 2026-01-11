@@ -1,0 +1,28 @@
+{
+  "footer": {
+    "copyright": "© 2025 AI Coding Stack • Mit ❤︎ erstellt • Open Source",
+    "openSource": "Open-Source-KI-Coding-Metadaten-Repository.",
+    "selectLanguage": "Sprache auswählen",
+    "tagline": "Ihr AI-Coding-Ökosystem-Hub.",
+    "toggleTheme": "Thema umschalten"
+  },
+  "header": {
+    "aiCodingLandscape": "AI-Coding-Landschaft",
+    "aiCodingLandscapeDesc": "Visualisieren Sie das gesamte AI-Coding-Ökosystem",
+    "aiCodingStack": "@:shared.terms.aiCodingStack",
+    "articles": "@:shared.terms.articles",
+    "closeMenu": "Menü schließen",
+    "collections": "@:shared.terms.collections",
+    "developmentTools": "Entwicklungstools",
+    "intelligence": "Intelligenz",
+    "landscape": "Landschaft",
+    "manifesto": "@:shared.terms.manifesto",
+    "openMenu": "Menü öffnen",
+    "openSourceRank": "Open Source Ranking",
+    "openSourceRankDesc": "Erkunden Sie Open-Source-AI-Coding-Projekte nach GitHub-Sternen",
+    "ranking": "Ranking",
+    "search": "@:shared.actions.search",
+    "searchPlaceholder": "Suchen...",
+    "toggleMenu": "Menü umschalten"
+  }
+}

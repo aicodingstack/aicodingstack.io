@@ -1,0 +1,7 @@
+{
+  "allExtensions": "@:shared.categories.all.extensions",
+  "compareAll": "@:shared.actions.compareAll",
+  "noMatches": "No extensions match your filters",
+  "subtitle": "AI-powered coding extensions and plugins",
+  "title": "AI Coding Extensions"
+}

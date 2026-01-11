@@ -1,0 +1,242 @@
+{
+  "cliDetail": {
+    "allCLIs": "@:shared.categories.all.clis",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "clis": "@:shared.categories.plural.clis"
+    },
+    "categoryLabel": "@:shared.categories.singular.cli",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "clis": {
+    "allCLIs": "@:shared.categories.all.clis",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "No CLIs match your filters",
+    "subtitle": "AI-powered command-line coding assistants",
+    "title": "AI Coding CLIs"
+  },
+  "extensionDetail": {
+    "allExtensions": "@:shared.categories.all.extensions",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "extensions": "@:shared.categories.plural.extensions"
+    },
+    "categoryLabel": "@:shared.categories.singular.extension",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "stars": "@:shared.terms.stars",
+    "supportedIdes": "@:shared.terms.supportedIdes",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "extensions": {
+    "allExtensions": "@:shared.categories.all.extensions",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "No extensions match your filters",
+    "subtitle": "AI-powered coding extensions and plugins",
+    "title": "AI Coding Extensions"
+  },
+  "ideDetail": {
+    "allIDEs": "@:shared.categories.all.ides",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "ides": "@:shared.categories.plural.ides"
+    },
+    "categoryLabel": "@:shared.categories.singular.ide",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "ides": {
+    "allIDEs": "@:shared.categories.all.ides",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "No IDEs match your filters",
+    "subtitle": "AI-enhanced integrated development environments",
+    "title": "AI Coding IDEs"
+  },
+  "modelCompare": {
+    "addModel": "+ Add Model",
+    "allModels": "All Models",
+    "artificialAnalysis": "Artificial Analysis",
+    "basicInfo": "Basic Information",
+    "cachePrice": "Cache Price",
+    "capabilities": "Capabilities",
+    "compareTitle": "Compare {model1} vs {model2}",
+    "contextWindow": "Context Window",
+    "description": "Description",
+    "huggingface": "Hugging Face",
+    "inputModalities": "Input Modalities",
+    "inputPrice": "Input Price",
+    "knowledgeCutoff": "Knowledge Cutoff",
+    "lifecycle": "Lifecycle",
+    "maxOutput": "Max Output",
+    "modelSize": "Model Size",
+    "openrouter": "OpenRouter",
+    "outputPrice": "Output Price",
+    "platforms": "Platforms",
+    "pricing": "Pricing",
+    "releaseDate": "Release Date",
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "verified": "Verified",
+    "vendor": "Vendor"
+  },
+  "modelDetail": {
+    "allModels": "@:shared.categories.all.models",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "models": "@:shared.categories.plural.models"
+    },
+    "cache": "Cache",
+    "categoryLabel": "@:shared.categories.singular.model",
+    "contextWindow": "Total Context",
+    "documentation": "@:shared.terms.documentation",
+    "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
+    "input": "Input",
+    "labels": {
+      "artificialAnalysis": "@:shared.platforms.artificialAnalysis",
+      "context": "Context",
+      "documentation": "@:shared.terms.documentation",
+      "huggingface": "@:shared.platforms.huggingface",
+      "maxOutput": "@:shared.terms.maxOutput",
+      "openrouter": "@:shared.platforms.openrouter",
+      "pricing": "@:shared.terms.pricing",
+      "size": "Size",
+      "website": "@:shared.terms.website"
+    },
+    "license": "@:shared.terms.license",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "metaTitle": "AI Coding Model | Specs & Pricing 2025",
+    "modelSize": "@:shared.terms.modelSize",
+    "output": "Output",
+    "pricing": "@:shared.terms.pricing",
+    "specifications": "@:shared.labels.specifications",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "modelProviderDetail": {
+    "allModelProviders": "@:shared.categories.all.modelProviders",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "modelProviders": "@:shared.categories.plural.modelProviders"
+    },
+    "categoryLabel": "@:shared.categories.singular.modelProvider",
+    "communityLinks": "@:shared.terms.communityLinks",
+    "documentation": "@:shared.terms.documentation",
+    "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
+    "getApiKey": "@:shared.labels.getApiKey",
+    "indexLabel": "@:shared.terms.indexLabel",
+    "providerTypes": {
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
+    },
+    "type": "@:shared.terms.type",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "modelProviders": {
+    "foundationProviders": "@:shared.providerTypes.foundation-model-provider",
+    "search": "Search by name...",
+    "serviceProviders": "@:shared.providerTypes.model-service-provider",
+    "subtitle": "LLM API providers offering access to various AI models",
+    "title": "AI Coding Model Providers"
+  },
+  "models": {
+    "compareAll": "@:shared.actions.compareAll",
+    "context": "Context:",
+    "lifecycle": {
+      "latest": "Latest",
+      "maintained": "Maintained",
+      "deprecated": "Deprecated",
+      "noResults": "No {lifecycle} models match your search"
+    },
+    "pricing": "Pricing:",
+    "search": "Search by name...",
+    "size": "Size:",
+    "subtitle": "Large language models optimized for code generation and analysis",
+    "title": "AI Coding Models"
+  },
+  "overview": {
+    "clis": {
+      "description": "Command-line AI assistants that bring the power of large language models directly to your terminal. Execute complex tasks with natural language, right from your shell.",
+      "title": "CLIs"
+    },
+    "exploreStack": "Explore the Stack",
+    "extensions": {
+      "description": "AI-powered coding extensions and plugins for your favorite IDE. From code completion to intelligent refactoring, enhance your development experience with AI assistance.",
+      "title": "Extensions"
+    },
+    "ides": {
+      "description": "AI-powered integrated development environments that understand your codebase and provide intelligent assistance. From VS Code to Cursor, discover the editors that make coding collaborative with AI.",
+      "title": "IDEs"
+    },
+    "modelProviders": {
+      "description": "LLM API providers offering access to various AI models. From DeepSeek to OpenRouter, discover platforms that power your AI coding tools with unified APIs and model access.",
+      "title": "Model Providers"
+    },
+    "models": {
+      "description": "The intelligence layer. Large language models optimized for code generation, understanding, and analysis. Compare specs, pricing, and capabilities across leading AI models.",
+      "title": "Models"
+    },
+    "overviewTitle": "AI Coding Stack Overview",
+    "slogan": "Discover. Compare. Build 10x Faster.",
+    "subtitle": "Explore the complete AI coding ecosystem: IDEs, CLIs, extensions, models, and providers.",
+    "title": "AI Coding Stack",
+    "vendors": {
+      "description": "Leading companies and organizations building AI technology. From OpenAI to Anthropic, discover the vendors behind the AI coding revolution.",
+      "title": "Vendors"
+    }
+  },
+  "vendorDetail": {
+    "allVendors": "@:shared.categories.all.vendors",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "home": "Home",
+      "vendors": "@:shared.categories.plural.vendors"
+    },
+    "categoryLabel": "@:shared.categories.singular.vendor",
+    "communityLinks": "@:shared.terms.communityLinks",
+    "connectLinkedIn": "Connect on LinkedIn",
+    "documentation": "@:shared.terms.documentation",
+    "followTwitter": "Follow on Twitter",
+    "indexLabel": "@:shared.terms.indexLabel",
+    "joinDiscord": "Join Discord community",
+    "joinReddit": "Join Reddit community",
+    "metaDescription": "Explore {name}'s AI products and technology.",
+    "metaTitle": "AI Technology Vendor | Company Profile 2025",
+    "models": "@:shared.categories.plural.models",
+    "products": "@:shared.terms.products",
+    "productsSubtitle": "Explore products and services from {vendorName}",
+    "productsTitle": "@:shared.terms.products",
+    "quickLinks": "@:shared.labels.quickLinks",
+    "vendorDetails": "Vendor Details",
+    "viewGitHub": "View open source repositories",
+    "visitWebsite": "@:shared.terms.visitWebsite",
+    "watchYouTube": "Watch videos on YouTube",
+    "website": "@:shared.terms.website"
+  },
+  "vendors": {
+    "search": "Search by name...",
+    "subtitle": "Leading companies and organizations building AI technology",
+    "title": "AI Coding Vendors"
+  }
+}

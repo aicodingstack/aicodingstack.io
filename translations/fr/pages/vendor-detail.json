@@ -1,0 +1,29 @@
+{
+  "allVendors": "@:shared.categories.all.vendors",
+  "backTo": "@:shared.actions.backTo",
+  "breadcrumb": {
+    "aiCodingStack": "@:shared.terms.aiCodingStack",
+    "home": "Accueil",
+    "vendors": "@:shared.categories.plural.vendors"
+  },
+  "categoryLabel": "@:shared.categories.singular.vendor",
+  "communityLinks": "@:shared.terms.communityLinks",
+  "connectLinkedIn": "Se connecter sur LinkedIn",
+  "documentation": "@:shared.terms.documentation",
+  "followTwitter": "Suivre sur X/Twitter",
+  "indexLabel": "@:shared.terms.indexLabel",
+  "joinDiscord": "Rejoindre la communauté Discord",
+  "joinReddit": "Rejoindre la communauté Reddit",
+  "metaDescription": "Explorez les produits et technologie IA de {name}.",
+  "metaTitle": "Fournisseur de technologie IA | Profile d'entreprise 2025",
+  "models": "@:shared.categories.plural.models",
+  "products": "@:shared.terms.products",
+  "productsSubtitle": "Explorer les produits et services de {vendorName}",
+  "productsTitle": "@:shared.terms.products",
+  "quickLinks": "@:shared.labels.quickLinks",
+  "vendorDetails": "Détails du fournisseur",
+  "viewGitHub": "Voir les dépôts open source",
+  "visitWebsite": "@:shared.terms.visitWebsite",
+  "watchYouTube": "Regarder les vidéos sur YouTube",
+  "website": "@:shared.terms.website"
+}

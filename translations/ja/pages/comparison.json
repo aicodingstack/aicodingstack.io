@@ -2,7 +2,7 @@
   "clis": {
     "backTo": "CLIに戻る",
     "subtitle": "AIコーディングCLIツールの機能、価格、仕様を並べて比較",
-    "title": "CLI比較"
+    "title": "AI コーディング CLI 比較"
   },
   "columns": {
     "cache": "キャッシュ",
@@ -38,22 +38,24 @@
   "extensions": {
     "backTo": "拡張機能に戻る",
     "subtitle": "AIコーディング拡張機能とプラグインの機能、価格、仕様を並べて比較",
-    "title": "拡張機能比較"
+    "title": "AI コーディング拡張機能比較"
   },
   "ides": {
     "backTo": "IDEに戻る",
     "subtitle": "AI対応IDEの機能、価格、仕様を並べて比較",
-    "title": "IDE比較"
+    "title": "AI コーディング IDE 比較"
   },
   "linkTitles": {
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
     "officialWebsite": "@:shared.terms.visitWebsite"
   },
+  "modelCompareDescription": "AIコーディングモデルを並べて比較：仕様、価格、機能、ベンチマーク。",
+  "modelCompareTitle": "AIコーディングモデルを比較：{model1} vs {model2}",
   "models": {
     "backTo": "モデルに戻る",
     "subtitle": "コード生成と分析に最適化された大規模言語モデルの仕様と価格を並べて比較",
-    "title": "モデル比較"
+    "title": "AI コーディングモデル比較"
   },
   "pricingValues": {
     "free": "無料",

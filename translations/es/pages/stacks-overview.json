@@ -1,0 +1,31 @@
+{
+  "clis": {
+    "description": "Asistentes de IA de línea de comandos que llevan el poder de los grandes modelos de lenguaje directamente a tu terminal. Ejecuta tareas complejas con lenguaje natural, directamente desde tu shell.",
+    "title": "CLIs"
+  },
+  "exploreStack": "Explorar el Stack",
+  "extensions": {
+    "description": "Extensiones y complementos de codificación con IA para tu IDE favorito. Desde la finalización de código hasta la refactorización inteligente, mejora tu experiencia de desarrollo con asistencia de IA.",
+    "title": "Extensiones"
+  },
+  "ides": {
+    "description": "Entornos de desarrollo integrados con IA que entienden tu base de código y brindan asistencia inteligente. Desde VS Code hasta Cursor, descubre los editores que hacen que la codificación sea colaborativa con IA.",
+    "title": "IDEs"
+  },
+  "modelProviders": {
+    "description": "Proveedores de API de LLM que ofrecen acceso a varios modelos de IA. Integra servicios de IA en tus aplicaciones.",
+    "title": "Proveedores de Modelos"
+  },
+  "models": {
+    "description": "La capa de inteligencia. Grandes modelos de lenguaje optimizados para generación, comprensión y análisis de código. Compara especificaciones, precios y capacidades entre los principales modelos de IA.",
+    "title": "Modelos"
+  },
+  "overviewTitle": "Visión general de AI Coding Stack",
+  "slogan": "Descubrir. Comparar. Construir 10x más rápido.",
+  "subtitle": "Explora el ecosistema completo de codificación con IA: IDEs, CLIs, extensiones, modelos y proveedores.",
+  "title": "AI Coding Stack",
+  "vendors": {
+    "description": "Principales empresas y organizaciones que construyen tecnologías de IA. Desde OpenAI hasta Anthropic, descubre los proveedores detrás de la revolución de la codificación con IA.",
+    "title": "Proveedores"
+  }
+}

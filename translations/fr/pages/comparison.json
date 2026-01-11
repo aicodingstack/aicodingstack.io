@@ -2,7 +2,7 @@
   "clis": {
     "backTo": "Retour aux CLIs",
     "subtitle": "Comparez les fonctionnalités, les tarifs et les spécifications des outils de codage IA en ligne de commande côte à côte.",
-    "title": "Comparaison CLI"
+    "title": "Comparaison CLI de Codage IA"
   },
   "columns": {
     "cache": "Cache",
@@ -38,22 +38,24 @@
   "extensions": {
     "backTo": "Retour aux Extensions",
     "subtitle": "Comparez les fonctionnalités, les tarifs et les spécifications des extensions de codage IA côte à côte.",
-    "title": "Comparaison Extensions"
+    "title": "Comparaison d'Extensions de Codage IA"
   },
   "ides": {
     "backTo": "Retour aux IDEs",
     "subtitle": "Comparez les fonctionnalités, les tarifs et les spécifications des IDE propulsés par l'IA côte à côte.",
-    "title": "Comparaison IDE"
+    "title": "Comparaison de IDE de Codage IA"
   },
   "linkTitles": {
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
     "officialWebsite": "@:shared.terms.visitWebsite"
   },
+  "modelCompareDescription": "Comparez les modèles de codage IA côte à côte : spécifications, tarifs, capacités et benchmarks.",
+  "modelCompareTitle": "Comparaison de Modèles de Codage IA : {model1} vs {model2}",
   "models": {
     "backTo": "Retour aux Modèles",
     "subtitle": "Comparez les spécifications et les tarifs des modèles de codage AI côte à côte.",
-    "title": "Comparaison modèles"
+    "title": "Comparaison de Modèles de Codage IA"
   },
   "pricingValues": {
     "free": "Gratuit",

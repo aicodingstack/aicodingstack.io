@@ -1,0 +1,7 @@
+{
+  "foundationProviders": "@:shared.providerTypes.foundation-model-provider",
+  "search": "Поиск по названию...",
+  "serviceProviders": "@:shared.providerTypes.model-service-provider",
+  "subtitle": "Поставщики API LLM, предоставляющие доступ к различным моделям ИИ",
+  "title": "Поставщики моделей ИИ-кодинга"
+}

@@ -1,0 +1,7 @@
+{
+  "allExtensions": "@:shared.categories.all.extensions",
+  "compareAll": "@:shared.actions.compareAll",
+  "noMatches": "필터와 일치하는 확장 프로그램이 없습니다",
+  "subtitle": "AI 기반 코딩 확장 프로그램 및 플러그인",
+  "title": "AI 코딩 확장"
+}

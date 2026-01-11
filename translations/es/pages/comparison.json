@@ -2,7 +2,7 @@
   "clis": {
     "backTo": "Volver a CLIs",
     "subtitle": "Asistentes de codificación de línea de comandos con IA",
-    "title": "Comparación de CLI"
+    "title": "Comparación de CLI de Codificación con IA"
   },
   "columns": {
     "cache": "Caché",
@@ -38,22 +38,24 @@
   "extensions": {
     "backTo": "Volver a Extensiones",
     "subtitle": "Extensiones y complementos de codificación con IA",
-    "title": "Comparación de Extensiones"
+    "title": "Comparación de Extensiones de Codificación con IA"
   },
   "ides": {
     "backTo": "Volver a IDEs",
     "subtitle": "Entornos de desarrollo integrados mejorados con IA",
-    "title": "Comparación de IDEs"
+    "title": "Comparación de IDE de Codificación con IA"
   },
   "linkTitles": {
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
     "officialWebsite": "@:shared.terms.visitWebsite"
   },
+  "modelCompareDescription": "Compare modelos de codificación con IA lado a lado: especificaciones, precios, funcionalidades y benchmarks.",
+  "modelCompareTitle": "Comparación de Modelos de Codificación con IA: {model1} vs {model2}",
   "models": {
     "backTo": "Volver a Modelos",
     "subtitle": "Modelos de lenguaje grandes optimizados para generación y análisis de código",
-    "title": "Comparación de Modelos"
+    "title": "Comparación de Modelos de Codificación con IA"
   },
   "pricingValues": {
     "free": "Gratis",

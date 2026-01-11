@@ -1,0 +1,31 @@
+{
+  "clis": {
+    "description": "大規模言語モデルの力をターミナルに直接提供するコマンドライン AI アシスタント。シェルから自然言語で複雑なタスクを実行。",
+    "title": "CLIs"
+  },
+  "exploreStack": "スタックを探索",
+  "extensions": {
+    "description": "お気に入りの IDE 向けの AI 対応コーディング拡張機能とプラグイン。コード補完からインテリジェントなリファクタリングまで、AI アシスタンスで開発体験を向上。",
+    "title": "Extensions"
+  },
+  "ides": {
+    "description": "コードベースを理解しインテリジェンスを提供する AI 対応統合開発環境。VS Code から Cursor まで、コーディングを AI とコラボレーションさせるエディターを発見。",
+    "title": "IDEs"
+  },
+  "modelProviders": {
+    "description": "様々な AI モデルへのアクセスを提供する LLM API プロバイダー。DeepSeek から OpenRouter まで、統一された API とモデルアクセスで AI コーディングツールを強力化するプラットフォームを発見。",
+    "title": "Model Providers"
+  },
+  "models": {
+    "description": "インテリジェンス層。コード生成、理解、分析に最適化された大規模言語モデル。主要な AI モデル間の仕様、価格、機能を比較。",
+    "title": "Models"
+  },
+  "overviewTitle": "AI コーディングスタック概要",
+  "slogan": "発見。比較。10倍速で構築。",
+  "subtitle": "完全な AI コーディングエコシステムを探索：IDE、CLI、拡張機能、モデル、プロバイダー。",
+  "title": "AI Coding Stack",
+  "vendors": {
+    "description": "AI 技術を構築する主要な企業と組織。OpenAI から Anthropic まで、AI コーディング革命の背後にあるベンダーを発見。",
+    "title": "Vendors"
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "productCommands": {
+    "command": "命令",
+    "install": "安装",
+    "launch": "启动"
+  },
+  "vendorProducts": {
+    "title": "产品"
+  },
+  "vendorModels": {
+    "title": "模型"
+  },
+  "platformLinks": {
+    "title": "在 AI 平台上查找",
+    "aiPlatforms": {
+      "huggingface": {
+        "title": "Hugging Face",
+        "description": "查看模型卡片和权重"
+      },
+      "artificialAnalysis": {
+        "title": "Artificial Analysis",
+        "description": "AI 模型排行榜和基准测试"
+      },
+      "openrouter": {
+        "title": "OpenRouter",
+        "description": "比较并使用多个 AI 模型"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "加载星标历史...",
+    "title": "GitHub 星标历史",
+    "description": "星标增长趋势",
+    "stars": "星标数",
+    "fallbackNote": "注意：显示示例数据。星标历史 API 暂时不可用。"
+  },
+  "productHero": {
+    "categories": {
+      "CLI": "@:shared.categories.singular.cli",
+      "EXTENSION": "@:shared.categories.singular.extension",
+      "IDE": "@:shared.categories.singular.ide",
+      "MODEL": "@:shared.categories.singular.model",
+      "PROVIDER": "@:shared.categories.singular.modelProvider",
+      "VENDOR": "@:shared.categories.singular.vendor"
+    },
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "getApiKey": "@:shared.labels.getApiKey",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "providerTypes": {
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
+    },
+    "runtime": "运行时",
+    "stars": "@:shared.terms.stars",
+    "supportedIdes": "@:shared.terms.supportedIdes",
+    "type": "@:shared.terms.type",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "communityLinks": {
+    "blog": "博客",
+    "blogDescription": "阅读博客文章",
+    "community": "@:shared.terms.community",
+    "discord": "@:shared.platforms.discord",
+    "discordDescription": "加入社区",
+    "github": "@:shared.platforms.github",
+    "githubDescription": "查看代码仓库",
+    "linkedin": "@:shared.platforms.linkedin",
+    "linkedinDescription": "@:shared.terms.followUs",
+    "reddit": "@:shared.platforms.reddit",
+    "redditDescription": "参与讨论",
+    "twitter": "@:shared.platforms.twitter",
+    "twitterDescription": "@:shared.terms.followUs",
+    "youtube": "@:shared.platforms.youtube",
+    "youtubeDescription": "观看视频"
+  },
+  "resourceLinks": {
+    "changelog": "更新日志",
+    "changelogDescription": "查看更新日志",
+    "download": "@:shared.actions.download",
+    "downloadDescription": "下载最新版本",
+    "issue": "问题跟踪",
+    "issueDescription": "报告问题和请求功能",
+    "mcp": "MCP 文档",
+    "mcpDescription": "了解 MCP 集成",
+    "pricing": "@:shared.terms.pricing",
+    "pricingDescription": "查看定价方案"
+  },
+  "productPricing": {
+    "title": "@:shared.terms.pricing",
+    "viewFullDetails": "查看完整定价详情 →"
+  },
+  "modelSpecifications": {
+    "title": "Specifications",
+    "modelSize": "@:shared.terms.modelSize",
+    "contextWindow": "Total Context",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "pricing": "@:shared.terms.pricing",
+    "input": "Input",
+    "output": "Output",
+    "cache": "Cache"
+  },
+  "benchmarks": {
+    "title": "Performance Benchmarks",
+    "sweBench": "SWE-bench Verified",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBench": "TerminalBench 2.0",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "mmmu": "MMMU",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuPro": "MMMU Pro",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "webDevArena": "WebDevArena",
+    "webDevArenaDesc": "Web development challenges",
+    "sciCode": "SciCode",
+    "sciCodeDesc": "Scientific code generation",
+    "liveCodeBench": "LiveCodeBench",
+    "liveCodeBenchDesc": "Live coding performance"
+  },
+  "relatedProducts": {
+    "cli": "@:shared.categories.singular.cli",
+    "extension": "@:shared.categories.singular.extension",
+    "ide": "@:shared.categories.singular.ide",
+    "title": "相关产品",
+    "viewProduct": "查看产品"
+  },
+  "vendorMatrix": {
+    "cell": {
+      "summary": "{count} 个{category}"
+    },
+    "categories": {
+      "cli": "CLI",
+      "extension": "扩展",
+      "ide": "IDE",
+      "model": "模型",
+      "provider": "提供商"
+    },
+    "categoriesPlural": {
+      "cli": "CLI",
+      "extension": "扩展",
+      "ide": "IDE",
+      "model": "模型",
+      "provider": "提供商"
+    },
+    "controls": {
+      "clear": "清除",
+      "sortByLabel": "排序：",
+      "sortName": "名称",
+      "sortProducts": "产品",
+      "vendorTypeLabel": "厂商类型："
+    },
+    "table": {
+      "noVendorsFound": "未找到厂商",
+      "vendor": "厂商"
+    },
+    "vendorTypes": {
+      "label": "厂商类型：",
+      "types": {
+        "ai-native": {
+          "description": "模型 + 开发工具",
+          "label": "AI 原生"
+        },
+        "full-stack": {
+          "description": "IDE + CLI + 扩展",
+          "label": "全栈"
+        },
+        "model-only": {
+          "description": "模型（有或无提供商）",
+          "label": "仅模型"
+        },
+        "provider-only": {
+          "description": "仅提供商",
+          "label": "仅提供商"
+        },
+        "tool-only": {
+          "description": "IDE/CLI/扩展",
+          "label": "仅工具"
+        }
+      }
+    }
+  },
+  "resources": {
+    "community": "@:shared.terms.community",
+    "resources": "@:shared.terms.resources"
+  }
+}

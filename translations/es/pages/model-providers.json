@@ -1,0 +1,7 @@
+{
+  "foundationProviders": "@:shared.providerTypes.foundation-model-provider",
+  "search": "Buscar por nombre...",
+  "serviceProviders": "@:shared.providerTypes.model-service-provider",
+  "subtitle": "Proveedores de API de LLM que ofrecen acceso a varios modelos de IA",
+  "title": "Proveedores de Modelos de Codificación con IA"
+}

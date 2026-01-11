@@ -1,0 +1,29 @@
+{
+  "allVendors": "@:shared.categories.all.vendors",
+  "backTo": "@:shared.actions.backTo",
+  "breadcrumb": {
+    "aiCodingStack": "@:shared.terms.aiCodingStack",
+    "home": "Home",
+    "vendors": "@:shared.categories.plural.vendors"
+  },
+  "categoryLabel": "@:shared.categories.singular.vendor",
+  "communityLinks": "@:shared.terms.communityLinks",
+  "connectLinkedIn": "LinkedIn で接続",
+  "documentation": "@:shared.terms.documentation",
+  "followTwitter": "Twitter でフォロー",
+  "indexLabel": "@:shared.terms.indexLabel",
+  "joinDiscord": "Discord コミュニティに参加",
+  "joinReddit": "Reddit コミュニティに参加",
+  "metaDescription": "{name}の AI 製品と技術を探索。",
+  "metaTitle": "AI 技術ベンダー | 企業プロフィール 2025",
+  "models": "@:shared.categories.plural.models",
+  "products": "@:shared.terms.products",
+  "productsSubtitle": "{vendorName}の製品とサービスを探索",
+  "productsTitle": "@:shared.terms.products",
+  "quickLinks": "@:shared.labels.quickLinks",
+  "vendorDetails": "Vendor Details",
+  "viewGitHub": "オープンソースリポジトリを表示",
+  "visitWebsite": "@:shared.terms.visitWebsite",
+  "watchYouTube": "YouTube で動画を見る",
+  "website": "@:shared.terms.website"
+}

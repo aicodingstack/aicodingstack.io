@@ -1,0 +1,31 @@
+{
+  "clis": {
+    "description": "대규모 언어 모델의 힘을 터미널로 직접 가져오는 명령줄 AI 어시스턴트. 셸에서 바로 자연어로 복잡한 작업을 실행하세요.",
+    "title": "CLIs"
+  },
+  "exploreStack": "스택 탐색",
+  "extensions": {
+    "description": "좋아하는 IDE를 위한 AI 기반 코딩 확장 프로그램 및 플러그인. 코드 완성부터 지능형 리팩터링까지 AI 어시스턴트로 개발 경험을 향상하세요.",
+    "title": "Extensions"
+  },
+  "ides": {
+    "description": "코드베이스를 이해하고 지능형 어시스턴스를 제공하는 AI 기반 통합 개발 환경. VS Code에서 Cursor까지, 코딩을 AI와 협업하게 만드는 에디터를 발견하세요.",
+    "title": "IDEs"
+  },
+  "modelProviders": {
+    "description": "다양한 AI 모델에 액세스를 제공하는 LLM API 제공업체. DeepSeek에서 OpenRouter까지, 통합 API 및 모델 액세스로 AI 코딩 도구에 전력을 공급하는 플랫폼을 발견하세요.",
+    "title": "Model Providers"
+  },
+  "models": {
+    "description": "지능 계층. 코드 생성, 이해, 분석에 최적화된 대규모 언어 모델. 선도적인 AI 모델 간의 사양, 가격, 기능을 비교하세요.",
+    "title": "Models"
+  },
+  "overviewTitle": "AI 코딩 스택 개요",
+  "slogan": "발견하고, 비교하고, 10배 더 빠르게 구축하세요.",
+  "subtitle": "완전한 AI 코딩 생태계를 탐색하세요: IDE, CLI, 확장 프로그램, 모델, 제공업체.",
+  "title": "AI Coding Stack",
+  "vendors": {
+    "description": "AI 기술을 구축하는 선도적인 기업 및 조직. OpenAI에서 Anthropic까지, AI 코딩 혁명 뒤에 있는 벤더를 발견하세요.",
+    "title": "Vendors"
+  }
+}

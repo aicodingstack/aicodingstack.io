@@ -1,0 +1,7 @@
+{
+  "allIDEs": "@:shared.categories.all.ides",
+  "compareAll": "@:shared.actions.compareAll",
+  "noMatches": "Filtrelerinize uygun IDE yok",
+  "subtitle": "AI ile geliştirilmiş entegre geliştirme ortamları",
+  "title": "AI Kodlama IDE'leri"
+}

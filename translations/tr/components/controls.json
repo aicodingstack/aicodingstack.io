@@ -1,0 +1,30 @@
+{
+  "copyButton": {
+    "copied": "Kopyalandı!",
+    "copyToClipboard": "Panoya kopyala"
+  },
+  "filterSortBar": {
+    "clearFilters": "Filtreleri temizle",
+    "license": "Lisans:",
+    "openSource": "@:shared.terms.openSource",
+    "platform": "Platforma:",
+    "proprietary": "@:shared.terms.proprietary",
+    "search": "@:shared.actions.search by name...",
+    "sort": "Sırala:",
+    "sortDefault": "Varsayılan",
+    "sortNameAsc": "Ad (A-Z)",
+    "sortNameDesc": "Ad (Z-A)"
+  },
+  "searchDialog": {
+    "placeholder": "Aramak için yazın...",
+    "empty": "Start typing to search...",
+    "noResultsFor": "No results for \"{query}\"",
+    "navigate": "to navigate",
+    "select": "to select",
+    "viewAllResults": "View all results for \"{query}\""
+  },
+  "searchInput": {
+    "placeholder": "Ara...",
+    "clear": "Clear search"
+  }
+}

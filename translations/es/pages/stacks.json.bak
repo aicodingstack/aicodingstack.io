@@ -1,0 +1,242 @@
+{
+  "cliDetail": {
+    "allCLIs": "@:shared.categories.all.clis",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "clis": "@:shared.categories.plural.clis"
+    },
+    "categoryLabel": "@:shared.categories.singular.cli",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "clis": {
+    "allCLIs": "@:shared.categories.all.clis",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "Ningún CLI coincide con tus filtros",
+    "subtitle": "Asistentes de codificación de línea de comandos con IA",
+    "title": "CLI de Codificación con IA"
+  },
+  "extensionDetail": {
+    "allExtensions": "@:shared.categories.all.extensions",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "extensions": "@:shared.categories.plural.extensions"
+    },
+    "categoryLabel": "@:shared.categories.singular.extension",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "stars": "@:shared.terms.stars",
+    "supportedIdes": "@:shared.terms.supportedIdes",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "extensions": {
+    "allExtensions": "@:shared.categories.all.extensions",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "Ninguna extensión coincide con tus filtros",
+    "subtitle": "Extensiones y complementos de codificación con IA",
+    "title": "Extensiones de Codificación con IA"
+  },
+  "ideDetail": {
+    "allIDEs": "@:shared.categories.all.ides",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "ides": "@:shared.categories.plural.ides"
+    },
+    "categoryLabel": "@:shared.categories.singular.ide",
+    "documentation": "@:shared.terms.documentation",
+    "download": "@:shared.actions.download",
+    "license": "@:shared.terms.license",
+    "platforms": "@:shared.terms.platforms",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "modelCompare": {
+    "addModel": "+ Añadir modelo",
+    "allModels": "Todos los modelos",
+    "artificialAnalysis": "Artificial Analysis",
+    "basicInfo": "Información básica",
+    "cachePrice": "Precio de caché",
+    "capabilities": "Capacidades",
+    "compareTitle": "Comparar {model1} vs {model2}",
+    "contextWindow": "Ventana de contexto",
+    "description": "Descripción",
+    "huggingface": "Hugging Face",
+    "inputModalities": "Modalidades de entrada",
+    "inputPrice": "Precio de entrada",
+    "knowledgeCutoff": "Conocimiento",
+    "lifecycle": "Ciclo de vida",
+    "maxOutput": "Salida máxima",
+    "modelSize": "Tamaño del modelo",
+    "openrouter": "OpenRouter",
+    "outputPrice": "Precio de salida",
+    "platforms": "Plataformas",
+    "pricing": "Precios",
+    "releaseDate": "Fecha de lanzamiento",
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "vendor": "Proveedor",
+    "verified": "Verificado"
+  },
+  "ides": {
+    "allIDEs": "@:shared.categories.all.ides",
+    "compareAll": "@:shared.actions.compareAll",
+    "noMatches": "Ningún IDE coincide con tus filtros",
+    "subtitle": "Entornos de desarrollo integrados mejorados con IA",
+    "title": "IDE de Codificación con IA"
+  },
+  "modelDetail": {
+    "allModels": "@:shared.categories.all.models",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "models": "@:shared.categories.plural.models"
+    },
+    "cache": "Caché",
+    "categoryLabel": "@:shared.categories.singular.model",
+    "contextWindow": "Contexto total",
+    "documentation": "@:shared.terms.documentation",
+    "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
+    "input": "Entrada",
+    "labels": {
+      "artificialAnalysis": "@:shared.platforms.artificialAnalysis",
+      "context": "Context",
+      "documentation": "@:shared.terms.documentation",
+      "huggingface": "@:shared.platforms.huggingface",
+      "maxOutput": "@:shared.terms.maxOutput",
+      "openrouter": "@:shared.platforms.openrouter",
+      "pricing": "@:shared.terms.pricing",
+      "size": "Size",
+      "website": "@:shared.terms.website"
+    },
+    "license": "@:shared.terms.license",
+    "maxOutput": "@:shared.terms.maxOutput",
+    "metaTitle": "AI Coding Model | Specs & Pricing 2025",
+    "modelSize": "@:shared.terms.modelSize",
+    "output": "Salida",
+    "pricing": "@:shared.terms.pricing",
+    "specifications": "@:shared.labels.specifications",
+    "stars": "@:shared.terms.stars",
+    "vendor": "@:shared.terms.vendor",
+    "version": "@:shared.terms.version",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "modelProviderDetail": {
+    "allModelProviders": "@:shared.categories.all.modelProviders",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "modelProviders": "@:shared.categories.plural.modelProviders"
+    },
+    "categoryLabel": "@:shared.categories.singular.modelProvider",
+    "communityLinks": "@:shared.terms.communityLinks",
+    "documentation": "@:shared.terms.documentation",
+    "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
+    "getApiKey": "@:shared.labels.getApiKey",
+    "indexLabel": "@:shared.terms.indexLabel",
+    "providerTypes": {
+      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
+      "model-service-provider": "@:shared.providerTypes.model-service-provider"
+    },
+    "type": "@:shared.terms.type",
+    "visitWebsite": "@:shared.terms.visitWebsite"
+  },
+  "modelProviders": {
+    "foundationProviders": "@:shared.providerTypes.foundation-model-provider",
+    "search": "Buscar por nombre...",
+    "serviceProviders": "@:shared.providerTypes.model-service-provider",
+    "subtitle": "Proveedores de API de LLM que ofrecen acceso a varios modelos de IA",
+    "title": "Proveedores de Modelos de Codificación con IA"
+  },
+  "models": {
+    "compareAll": "@:shared.actions.compareAll",
+    "context": "Contexto:",
+    "lifecycle": {
+      "latest": "Recientes",
+      "maintained": "Mantenidos",
+      "deprecated": "Obsoletos",
+      "noResults": "Ningún modelo {lifecycle} coincide con tu búsqueda"
+    },
+    "pricing": "Precios:",
+    "search": "Buscar por nombre...",
+    "size": "Tamaño:",
+    "subtitle": "Modelos de lenguaje grandes optimizados para generación y análisis de código",
+    "title": "Modelos de Codificación con IA"
+  },
+  "overview": {
+    "clis": {
+      "description": "Asistentes de IA de línea de comandos que llevan el poder de los grandes modelos de lenguaje directamente a tu terminal. Ejecuta tareas complejas con lenguaje natural, directamente desde tu shell.",
+      "title": "CLIs"
+    },
+    "exploreStack": "Explorar el Stack",
+    "extensions": {
+      "description": "Extensiones y complementos de codificación con IA para tu IDE favorito. Desde la finalización de código hasta la refactorización inteligente, mejora tu experiencia de desarrollo con asistencia de IA.",
+      "title": "Extensiones"
+    },
+    "ides": {
+      "description": "Entornos de desarrollo integrados con IA que entienden tu base de código y brindan asistencia inteligente. Desde VS Code hasta Cursor, descubre los editores que hacen que la codificación sea colaborativa con IA.",
+      "title": "IDEs"
+    },
+    "modelProviders": {
+      "description": "Proveedores de API de LLM que ofrecen acceso a varios modelos de IA. Integra servicios de IA en tus aplicaciones.",
+      "title": "Proveedores de Modelos"
+    },
+    "models": {
+      "description": "La capa de inteligencia. Grandes modelos de lenguaje optimizados para generación, comprensión y análisis de código. Compara especificaciones, precios y capacidades entre los principales modelos de IA.",
+      "title": "Modelos"
+    },
+    "overviewTitle": "Visión general de AI Coding Stack",
+    "slogan": "Descubrir. Comparar. Construir 10x más rápido.",
+    "subtitle": "Explora el ecosistema completo de codificación con IA: IDEs, CLIs, extensiones, modelos y proveedores.",
+    "title": "AI Coding Stack",
+    "vendors": {
+      "description": "Principales empresas y organizaciones que construyen tecnologías de IA. Desde OpenAI hasta Anthropic, descubre los proveedores detrás de la revolución de la codificación con IA.",
+      "title": "Proveedores"
+    }
+  },
+  "vendorDetail": {
+    "allVendors": "@:shared.categories.all.vendors",
+    "backTo": "@:shared.actions.backTo",
+    "breadcrumb": {
+      "aiCodingStack": "@:shared.terms.aiCodingStack",
+      "home": "Inicio",
+      "vendors": "@:shared.categories.plural.vendors"
+    },
+    "categoryLabel": "@:shared.categories.singular.vendor",
+    "communityLinks": "@:shared.terms.communityLinks",
+    "connectLinkedIn": "Conectarse en LinkedIn",
+    "documentation": "@:shared.terms.documentation",
+    "followTwitter": "Seguir en X/Twitter",
+    "indexLabel": "@:shared.terms.indexLabel",
+    "joinDiscord": "Unirse a la comunidad de Discord",
+    "joinReddit": "Unirse a la comunidad de Reddit",
+    "metaDescription": "Explora los productos y tecnologías de IA de {name}.",
+    "metaTitle": "Proveedor de tecnología de IA | Perfil de empresa 2025",
+    "models": "@:shared.categories.plural.models",
+    "products": "@:shared.terms.products",
+    "productsSubtitle": "Explora productos y servicios de {vendorName}",
+    "productsTitle": "@:shared.terms.products",
+    "quickLinks": "@:shared.labels.quickLinks",
+    "vendorDetails": "Detalles del proveedor",
+    "viewGitHub": "Ver repositorios de código abierto",
+    "visitWebsite": "@:shared.terms.visitWebsite",
+    "watchYouTube": "Ver videos en YouTube",
+    "website": "@:shared.terms.website"
+  },
+  "vendors": {
+    "search": "Buscar por nombre...",
+    "subtitle": "Principales empresas y organizaciones que construyen tecnologías de IA",
+    "title": "Vendedores de Codificación con IA"
+  }
+}

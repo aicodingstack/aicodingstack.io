@@ -1,0 +1,7 @@
+{
+  "allIDEs": "@:shared.categories.all.ides",
+  "compareAll": "@:shared.actions.compareAll",
+  "noMatches": "IDE не соответствуют вашим фильтрам",
+  "subtitle": "Интегрированные среды разработки, улучшенные с помощью ИИ",
+  "title": "IDE ИИ-кодинга"
+}

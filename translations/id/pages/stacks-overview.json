@@ -1,0 +1,31 @@
+{
+  "clis": {
+    "description": "Asisten AI baris perintah yang membawa kekuatan model bahasa besar langsung ke terminal Anda. Eksekusi tugas kompleks dengan bahasa alami, langsung dari shell Anda.",
+    "title": "CLIs"
+  },
+  "exploreStack": "Jelajahi Technical Stack",
+  "extensions": {
+    "description": "Ekstensi dan plugin coding bertenaga AI untuk IDE favorit Anda. Dari pelengkapan kode ke refactoring cerdas, tingkatkan pengalaman pengembangan Anda dengan bantuan AI.",
+    "title": "Extensions"
+  },
+  "ides": {
+    "description": "Lingkungan pengembangan terintegrasi bertenaga AI yang memahami basis kode Anda dan memberikan bantuan cerdas. Dari VS Code ke Cursor, temukan editor yang membuat coding kolaboratif dengan AI.",
+    "title": "IDEs"
+  },
+  "modelProviders": {
+    "description": "Penyedia API LLM yang menawarkan akses ke berbagai model AI. Dari DeepSeek ke OpenRouter, temukan platform yang menggerakkan alat coding AI Anda dengan API terpadu dan akses model.",
+    "title": "Model Providers"
+  },
+  "models": {
+    "description": "Lapisan kecerdasan. Model bahasa besar yang dioptimalkan untuk generasi, pemahaman, dan analisis kode. Bandingkan spesifikasi, harga, dan kemampuan di seluruh model AI terkemuka.",
+    "title": "Models"
+  },
+  "overviewTitle": "Ikhtisar AI Coding Stack",
+  "slogan": "Discover. Compare. Build 10x Faster.",
+  "subtitle": "Jelajahi ekosistem coding AI yang lengkap: IDE, CLI, ekstensi, model, dan penyedia.",
+  "title": "AI Coding Stack",
+  "vendors": {
+    "description": "Perusahaan dan organisasi terkemuka yang membangun teknologi AI. Dari OpenAI hingga Anthropic, temukan penyedia di balik revolusi coding AI.",
+    "title": "Vendors"
+  }
+}

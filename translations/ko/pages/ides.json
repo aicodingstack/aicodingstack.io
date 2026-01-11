@@ -1,0 +1,7 @@
+{
+  "allIDEs": "@:shared.categories.all.ides",
+  "compareAll": "@:shared.actions.compareAll",
+  "noMatches": "필터와 일치하는 IDE가 없습니다",
+  "subtitle": "AI 강화 통합 개발 환경",
+  "title": "AI 코딩 IDE"
+}

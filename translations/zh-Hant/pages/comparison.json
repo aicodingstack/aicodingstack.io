@@ -2,7 +2,7 @@
   "clis": {
     "backTo": "返回 CLI",
     "subtitle": "並排比較 AI 編碼 CLI 工具的功能、價格和規格。",
-    "title": "CLI 比較"
+    "title": "AI 編碼 CLI 工具比較"
   },
   "columns": {
     "cache": "快取",
@@ -38,22 +38,24 @@
   "extensions": {
     "backTo": "返回擴充套件",
     "subtitle": "並排比較 AI 編碼擴充套件的功能、價格和規格。",
-    "title": "擴充套件比較"
+    "title": "AI 編碼擴充外掛比較"
   },
   "ides": {
     "backTo": "返回 IDE",
     "subtitle": "並排比較 AI 驅動 IDE 的功能、價格和規格。",
-    "title": "IDE 比較"
+    "title": "AI 編碼 IDE 比較"
   },
   "linkTitles": {
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
     "officialWebsite": "@:shared.terms.visitWebsite"
   },
+  "modelCompareDescription": "並排比較 AI 編碼模型：規格、定價、功能和基準測試。",
+  "modelCompareTitle": "比較 AI 編碼模型：{model1} vs {model2}",
   "models": {
     "backTo": "返回模型",
     "subtitle": "並排比較 AI 編碼模型的規格和價格。",
-    "title": "模型比較"
+    "title": "AI 編碼模型比較"
   },
   "pricingValues": {
     "free": "免費",

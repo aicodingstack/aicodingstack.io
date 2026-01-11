@@ -1,0 +1,10 @@
+{
+  "docsSidebar": {
+    "label": "@:shared.terms.documentation",
+    "title": "ДОКУМЕНТАЦИЯ"
+  },
+  "sidebar": {
+    "backToTop": "@:shared.actions.backToTop",
+    "selectItem": "@:shared.actions.selectItem"
+  }
+}

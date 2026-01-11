@@ -1,0 +1,18 @@
+{
+  "copyButton": {
+    "copied": "Disalin!",
+    "copyToClipboard": "Salin ke papan klip"
+  },
+  "filterSortBar": {
+    "clearFilters": "Hapus filter",
+    "license": "Lisensi:",
+    "openSource": "@:shared.terms.openSource",
+    "platform": "Platform:",
+    "proprietary": "@:shared.terms.proprietary",
+    "search": "@:shared.actions.search by name...",
+    "sort": "Urutkan:",
+    "sortDefault": "Default",
+    "sortNameAsc": "Nama (A-Z)",
+    "sortNameDesc": "Nama (Z-A)"
+  }
+}

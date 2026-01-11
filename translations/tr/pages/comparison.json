@@ -2,7 +2,7 @@
   "clis": {
     "backTo": "CLI'lere Dön",
     "subtitle": "AI kodlama CLI araçlarının özelliklerini, fiyatlarını ve spesifikasyonlarını yan yana karşılaştırın.",
-    "title": "CLI Karşılaştırması"
+    "title": "AI Kodlama CLI Karşılaştırması"
   },
   "columns": {
     "cache": "Önbellek",
@@ -38,22 +38,24 @@
   "extensions": {
     "backTo": "Eklentilere Dön",
     "subtitle": "AI kodlama eklentilerinin özelliklerini, fiyatlarını ve spesifikasyonlarını yan yana karşılaştırın.",
-    "title": "Eklenti Karşılaştırması"
+    "title": "AI Kodlama Eklenti Karşılaştırması"
   },
   "ides": {
     "backTo": "IDE'lere Dön",
     "subtitle": "AI destekli IDE'lerin özelliklerini, fiyatlarını ve spesifikasyonlarını yan yana karşılaştırın.",
-    "title": "IDE Karşılaştırması"
+    "title": "AI Kodlama IDE Karşılaştırması"
   },
   "linkTitles": {
     "documentation": "@:shared.terms.documentation",
     "download": "@:shared.actions.download",
     "officialWebsite": "@:shared.terms.visitWebsite"
   },
+  "modelCompareDescription": "AI kodlama modellerini yan yana karşılaştırın: spesifikasyonlar, fiyatlar, yetenekler ve kıyaslamalar.",
+  "modelCompareTitle": "AI Kodlama Model Karşılaştırması: {model1} vs {model2}",
   "models": {
     "backTo": "Modellere Dön",
     "subtitle": "AI kodlama modellerinin spesifikasyonlarını ve fiyatlarını yan yana karşılaştırın.",
-    "title": "Model Karşılaştırması"
+    "title": "AI Kodlama Model Karşılaştırması"
   },
   "pricingValues": {
     "free": " Ücretsiz",
