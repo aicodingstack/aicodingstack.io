@@ -28,6 +28,35 @@ When creating or modifying any page, module, or data:
 - **DRY principle for translations:** Before creating new translation keys, search existing translation modules thoroughly to reuse existing terms and phrases
 - **Consistency:** Use the same translation keys across similar contexts
 
+### Translation File Organization
+
+Follow the detailed architecture rules in [docs/I18N-ARCHITECTURE-RULES.md](docs/I18N-ARCHITECTURE-RULES.md) for organizing translation resources.
+
+**Core Principles:**
+1. **Page translations**: Each page or page group should have its own JSON file (e.g., `ides.json`, `ide-detail.json`)
+2. **Component translations**: Organize by component directory:
+   - `components/common.json` - Root-level components (Header, Footer, etc.)
+   - `components/navigation.json` - All navigation/* components
+   - `components/controls.json` - All controls/* components
+   - `components/sidebar.json` - All sidebar/* components
+   - `components/product.json` - All product/* components
+3. **Minimize `@:` references**: Use `tPage + tShared` or `tComponent + tShared` patterns in code instead of cross-namespace references in JSON
+4. **Metadata placement**: Co-locate page metadata (title, description, etc.) with page translations under a `meta` object
+5. **Multi-language workflow**: New translation keys should initially use English placeholders across all locales, with proper translation in a separate batch step
+
+**Usage Pattern:**
+```tsx
+// Pages
+const tPage = useTranslations('pages.modelDetail')
+const tShared = useTranslations('shared')
+
+// Components (root-level)
+const tComponent = useTranslations('components.common.header')
+
+// Components (subdirectories)
+const tComponent = useTranslations('components.navigation.breadcrumb')
+```
+
 ## Design System
 
 **Global Design Principles:**

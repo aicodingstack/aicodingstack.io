@@ -66,8 +66,8 @@ translations/
 import { useTranslations } from 'next-intl'
 
 export default function MyComponent() {
-  const t = useTranslations('shared')
-  return <h1>{t('welcome')}</h1>
+  const tComponent = useTranslations('shared')
+  return <h1>{tComponent('welcome')}</h1>
 }
 ```
 
@@ -305,8 +305,8 @@ import Link from 'next/link'
 
 ```typescript
 // ✅ Correct
-const t = useTranslations('shared')
-return <button>{t('submit')}</button>
+const tShared = useTranslations('shared')
+return <button>{tShared('submit')}</button>
 
 // ❌ Incorrect
 return <button>Submit</button>
