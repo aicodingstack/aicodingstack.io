@@ -300,34 +300,17 @@ export async function generateModelDetailMetadata(options: {
 export async function generateComparisonMetadata(options: {
   locale: Locale
   category: Category
-  translationNamespace?: string
 }): Promise<Metadata> {
-  const { locale, category, translationNamespace } = options
+  const { locale, category } = options
 
-  const categoryExamples = CATEGORY_EXAMPLES[category as keyof typeof CATEGORY_EXAMPLES]
   const categoryName = CATEGORY_DISPLAY_NAMES[category as keyof typeof CATEGORY_DISPLAY_NAMES] || ''
-  const examples = categoryExamples ? [...categoryExamples] : []
 
-  // Build title and description
-  // Use translations if available, otherwise use default English text
-  let title: string
-  let description: string
+  // Get translations for comparison page
+  const tPage = await getTranslations({ locale, namespace: 'pages.comparison' })
 
-  if (translationNamespace) {
-    try {
-      const tPage = await getTranslations({ locale, namespace: translationNamespace })
-      title = `${tPage('title')} - ${categoryName} Comparison | ${METADATA_DEFAULTS.siteName}`
-      description = tPage('description')
-    } catch {
-      // Fallback to default English text if translations not available
-      title = `Compare ${categoryName} - Side-by-Side Comparison | ${METADATA_DEFAULTS.siteName}`
-      description = `Compare specifications, features, and pricing of popular ${categoryName.toLowerCase()}. ${examples.length > 0 ? `${examples.join(', ')}, and more.` : ''}`
-    }
-  } else {
-    // Use default English text
-    title = `Compare ${categoryName} - Side-by-Side Comparison | ${METADATA_DEFAULTS.siteName}`
-    description = `Compare specifications, features, and pricing of popular ${categoryName.toLowerCase()}. ${examples.length > 0 ? `${examples.join(', ')}, and more.` : ''}`
-  }
+  // Build title and description using category-specific translations
+  const title = `${tPage(`${category}.title`)} - ${categoryName} Comparison | ${METADATA_DEFAULTS.siteName}`
+  const description = tPage(`${category}.subtitle`)
 
   // Build keywords
   const keywords = buildKeywords([

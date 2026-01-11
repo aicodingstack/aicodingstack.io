@@ -11,6 +11,7 @@ import ClaudeOpus45 from '../../../manifests/models/claude-opus-4-5.json'
 import ClaudeSonnet4 from '../../../manifests/models/claude-sonnet-4.json'
 import ClaudeSonnet45 from '../../../manifests/models/claude-sonnet-4-5.json'
 import Composer from '../../../manifests/models/composer.json'
+import Deepseek32 from '../../../manifests/models/deepseek-3-2.json'
 import DeepseekR1 from '../../../manifests/models/deepseek-r1.json'
 import DeepseekV3Terminus from '../../../manifests/models/deepseek-v3-terminus.json'
 import Gemini25Flash from '../../../manifests/models/gemini-2-5-flash.json'
@@ -46,6 +47,7 @@ export const modelsData = [
   ClaudeSonnet4,
   ClaudeSonnet45,
   Composer,
+  Deepseek32,
   DeepseekR1,
   DeepseekV3Terminus,
   Gemini25Flash,
