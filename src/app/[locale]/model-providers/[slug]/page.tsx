@@ -57,7 +57,6 @@ export default async function ProviderPage({
     notFound()
   }
 
-  const tPage = await getTranslations({ locale, namespace: 'pages.modelProviderDetail' })
   const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Generate JSON-LD schema
@@ -86,10 +85,10 @@ export default async function ProviderPage({
           name={provider.name}
           description={provider.description}
           category="PROVIDER"
-          categoryLabel={tPage('categoryLabel')}
+          categoryLabel={tShared('categories.singular.modelProvider')}
           verified={provider.verified ?? false}
           type={provider.type}
-          typeValue={provider.type ? tPage(`providerTypes.${provider.type}`) : undefined}
+          typeValue={provider.type ? tShared(`providerTypes.${provider.type}`) : undefined}
           websiteUrl={provider.websiteUrl}
           docsUrl={provider.docsUrl ?? null}
           applyKeyUrl={provider.applyKeyUrl}
@@ -99,7 +98,10 @@ export default async function ProviderPage({
 
         <CommunityLinks communityUrls={provider.communityUrls} />
 
-        <BackToNavigation href="/model-providers" title={tPage('allModelProviders')} />
+        <BackToNavigation
+          href="/model-providers"
+          title={tShared('categories.all.modelProviders')}
+        />
       </main>
     </PageLayout>
   )

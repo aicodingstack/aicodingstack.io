@@ -68,7 +68,6 @@ export default async function CLIPage({
     notFound()
   }
 
-  const tPage = await getTranslations({ locale, namespace: 'pages.cliDetail' })
   const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Transform URLs for component props
@@ -114,7 +113,7 @@ export default async function CLIPage({
           description={cli.description}
           vendor={cli.vendor}
           category="CLI"
-          categoryLabel={tPage('categoryLabel')}
+          categoryLabel={tShared('categories.singular.cli')}
           verified={cli.verified ?? false}
           latestVersion={cli.latestVersion}
           license={cli.license}
@@ -135,7 +134,7 @@ export default async function CLIPage({
 
         <ProductCommands install={cli.installCommand} launch={cli.launchCommand} />
 
-        <BackToNavigation href="/clis" title={tPage('allCLIs')} />
+        <BackToNavigation href="/clis" title={tShared('categories.all.clis')} />
       </main>
     </PageLayout>
   )

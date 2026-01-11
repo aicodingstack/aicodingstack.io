@@ -89,9 +89,9 @@ export default async function ModelPage({
 
   // Build additional info for ProductHero
   const additionalInfo = [
-    model.size && { label: tPage('modelSize'), value: model.size },
+    model.size && { label: tShared('terms.modelSize'), value: model.size },
     { label: tPage('contextWindow'), value: `${model.contextWindow.toLocaleString()} tokens` },
-    { label: tPage('maxOutput'), value: `${model.maxOutput.toLocaleString()} tokens` },
+    { label: tShared('terms.maxOutput'), value: `${model.maxOutput.toLocaleString()} tokens` },
   ].filter(Boolean) as { label: string; value: string }[]
 
   // Breadcrumb items
@@ -111,7 +111,7 @@ export default async function ModelPage({
           description={`by ${model.vendor}`}
           vendor={model.vendor}
           category="MODEL"
-          categoryLabel={tPage('categoryLabel')}
+          categoryLabel={tShared('categories.singular.model')}
           verified={model.verified ?? false}
           additionalInfo={additionalInfo}
           websiteUrl={model.websiteUrl || undefined}
@@ -124,7 +124,7 @@ export default async function ModelPage({
 
         <ModelBenchmarks benchmarks={model.benchmarks} />
 
-        <BackToNavigation href="/models" title={tPage('allModels')} />
+        <BackToNavigation href="/models" title={tShared('categories.all.models')} />
       </main>
     </PageLayout>
   )

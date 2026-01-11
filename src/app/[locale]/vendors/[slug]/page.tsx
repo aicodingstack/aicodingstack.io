@@ -83,7 +83,6 @@ export default async function VendorPage({
     notFound()
   }
 
-  const tPage = await getTranslations({ locale, namespace: 'pages.vendorDetail' })
   const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Generate JSON-LD schema
@@ -131,29 +130,25 @@ export default async function VendorPage({
     <PageLayout schema={schema}>
       <Breadcrumb items={breadcrumbItems} />
 
-      <ProductHero
-        name={vendor.name}
-        description={vendor.description}
-        category="VENDOR"
-        categoryLabel={tPage('categoryLabel')}
-        verified={vendor.verified ?? false}
-        websiteUrl={vendor.websiteUrl}
-        docsUrl={null}
-      />
+      <main className="max-w-8xl mx-auto px-[var(--spacing-md)]">
+        <ProductHero
+          name={vendor.name}
+          description={vendor.description}
+          category="VENDOR"
+          categoryLabel={tShared('categories.singular.vendor')}
+          verified={vendor.verified ?? false}
+          websiteUrl={vendor.websiteUrl}
+          docsUrl={null}
+        />
 
-      {/* Vendor Products (IDEs, CLIs, Extensions) */}
-      <VendorProducts products={vendorProducts} />
+        <VendorProducts products={vendorProducts} />
 
-      {/* Vendor Models */}
-      <VendorModels models={vendorModels} />
+        <VendorModels models={vendorModels} />
 
-      <CommunityLinks
-        communityUrls={vendor.communityUrls}
-        layout="vertical"
-        gridCols="grid-cols-2 md:grid-cols-4"
-      />
+        <CommunityLinks communityUrls={vendor.communityUrls} />
 
-      <BackToNavigation href="/vendors" title={tPage('allVendors')} />
+        <BackToNavigation href="/vendors" title={tShared('categories.all.vendors')} />
+      </main>
     </PageLayout>
   )
 }

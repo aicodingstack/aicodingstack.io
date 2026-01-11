@@ -72,7 +72,6 @@ export default async function ExtensionPage({
     notFound()
   }
 
-  const tPage = await getTranslations({ locale, namespace: 'pages.extensionDetail' })
   const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Transform URLs for component props
@@ -111,7 +110,7 @@ export default async function ExtensionPage({
     extension.supportedIdes && extension.supportedIdes.length > 0
       ? [
           {
-            label: tPage('supportedIdes') || 'Supported IDEs',
+            label: tShared('terms.supportedIdes'),
             value: extension.supportedIdes.map(ide => ide.ideId).join(', '),
           },
         ]
@@ -133,8 +132,8 @@ export default async function ExtensionPage({
           name={extension.name}
           description={extension.description}
           vendor={extension.vendor}
-          category="IDE"
-          categoryLabel={tPage('categoryLabel')}
+          category="EXTENSION"
+          categoryLabel={tShared('categories.singular.extension')}
           verified={extension.verified ?? false}
           latestVersion={extension.latestVersion}
           license={extension.license}
@@ -153,7 +152,7 @@ export default async function ExtensionPage({
 
         <CommunityLinks communityUrls={extension.communityUrls} />
 
-        <BackToNavigation href="/extensions" title={tPage('allExtensions')} />
+        <BackToNavigation href="/extensions" title={tShared('categories.all.extensions')} />
       </main>
     </PageLayout>
   )

@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 export interface ProductCommandsProps {
   install?: string | null
   launch?: string | null
-  command?: string | null // For MCP servers
+  command?: string | null
 }
 
 interface CommandSection {

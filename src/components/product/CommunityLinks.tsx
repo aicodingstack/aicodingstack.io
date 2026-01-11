@@ -22,6 +22,7 @@ export function CommunityLinks({
   gridCols = 'grid-cols-2 md:grid-cols-4 lg:grid-cols-7',
 }: CommunityLinksProps) {
   const tComponent = useTranslations('components.product.communityLinks')
+  const tShared = useTranslations('shared')
 
   if (!communityUrls) {
     return null
@@ -30,32 +31,32 @@ export function CommunityLinks({
   const links = [
     {
       key: 'linkedin',
-      title: tComponent('linkedin'),
-      description: tComponent('linkedinDescription'),
+      title: tShared('platforms.linkedin'),
+      description: tShared('terms.followUs'),
     },
     {
       key: 'twitter',
-      title: tComponent('twitter'),
-      description: tComponent('twitterDescription'),
+      title: tShared('platforms.twitter'),
+      description: tShared('terms.followUs'),
     },
     {
       key: 'github',
-      title: tComponent('github'),
+      title: tShared('platforms.github'),
       description: tComponent('githubDescription'),
     },
     {
       key: 'youtube',
-      title: tComponent('youtube'),
+      title: tShared('platforms.youtube'),
       description: tComponent('youtubeDescription'),
     },
     {
       key: 'discord',
-      title: tComponent('discord'),
+      title: tShared('platforms.discord'),
       description: tComponent('discordDescription'),
     },
     {
       key: 'reddit',
-      title: tComponent('reddit'),
+      title: tShared('platforms.reddit'),
       description: tComponent('redditDescription'),
     },
     {
@@ -67,7 +68,7 @@ export function CommunityLinks({
 
   return (
     <LinkCardGrid
-      title={tComponent('community')}
+      title={tShared('terms.community')}
       links={links}
       urls={communityUrls}
       layout={layout}

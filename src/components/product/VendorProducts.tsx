@@ -20,7 +20,7 @@ export function VendorProducts({ products }: { products: ProductWithType[] }) {
   }
 
   return (
-    <section className="max-w-8xl mx-auto px-[var(--spacing-md)] py-[var(--spacing-lg)]">
+    <section className="max-w-8xl mx-auto px-[var(--spacing-md)] my-[var(--spacing-lg)]">
       <h2 className="text-xl font-semibold tracking-tight mb-[var(--spacing-md)]">
         {tComponent('title')}
       </h2>

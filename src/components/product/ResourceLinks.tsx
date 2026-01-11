@@ -22,6 +22,7 @@ export function ResourceLinks({
   gridCols = 'grid-cols-2 md:grid-cols-4 lg:grid-cols-7',
 }: ResourceLinksProps) {
   const tComponent = useTranslations('components.product.resourceLinks')
+  const tShared = useTranslations('shared')
 
   if (!resourceUrls) {
     return null
@@ -30,7 +31,7 @@ export function ResourceLinks({
   const links = [
     {
       key: 'download',
-      title: tComponent('download'),
+      title: tShared('actions.download'),
       description: tComponent('downloadDescription'),
     },
     {
@@ -40,7 +41,7 @@ export function ResourceLinks({
     },
     {
       key: 'pricing',
-      title: tComponent('pricing'),
+      title: tShared('terms.pricing'),
       description: tComponent('pricingDescription'),
     },
     { key: 'mcp', title: tComponent('mcp'), description: tComponent('mcpDescription') },

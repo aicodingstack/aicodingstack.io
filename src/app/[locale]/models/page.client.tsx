@@ -20,6 +20,7 @@ type Props = {
 
 export default function ModelsPageClient({ locale }: Props) {
   const tPage = useTranslations('pages.models')
+  const tShared = useTranslations('shared')
   const [searchQuery, setSearchQuery] = useState('')
 
   // Localize models
@@ -87,7 +88,7 @@ export default function ModelsPageClient({ locale }: Props) {
                 href="/models/comparison"
                 className="text-sm px-[var(--spacing-md)] py-[var(--spacing-xs)] border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-colors"
               >
-                {tPage('compareAll')} →
+                {tShared('actions.compareAll')} →
               </Link>
             }
           />

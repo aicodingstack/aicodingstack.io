@@ -141,7 +141,7 @@ export default function ModelComparisonPageClient({ locale: _locale }: Props) {
   const columns: ComparisonColumn[] = [
     {
       key: 'vendor',
-      label: tPage('columns.vendor'),
+      label: tShared('terms.vendor'),
     },
     {
       key: 'links',
@@ -164,14 +164,14 @@ export default function ModelComparisonPageClient({ locale: _locale }: Props) {
                 target="_blank"
                 rel="noopener"
                 className="inline-flex items-center justify-center text-[var(--color-text)] hover:text-[var(--color-text-secondary)] transition-colors"
-                title={tPage('linkTitles.officialWebsite')}
+                title={tShared('terms.visitWebsite')}
               >
                 <Home className="w-3.5 h-3.5" />
               </a>
             ) : (
               <span
                 className="inline-flex items-center justify-center text-[var(--color-text-muted)] opacity-30"
-                title={tPage('linkTitles.officialWebsite')}
+                title={tShared('terms.visitWebsite')}
               >
                 <Home className="w-3.5 h-3.5" />
               </span>
@@ -189,7 +189,7 @@ export default function ModelComparisonPageClient({ locale: _locale }: Props) {
     },
     {
       key: 'size',
-      label: tPage('columns.modelSize'),
+      label: tShared('terms.modelSize'),
       render: (value: unknown) => {
         if (!value) return wrapWithAlign('-', 'right')
         return wrapWithAlign(value as string, 'right')
@@ -202,7 +202,7 @@ export default function ModelComparisonPageClient({ locale: _locale }: Props) {
     },
     {
       key: 'maxOutput',
-      label: tPage('columns.maxOutput'),
+      label: tShared('terms.maxOutput'),
       render: formatTokenCount,
     },
     ...PRICING_CONFIG.map(({ field, labelKey }) => ({
@@ -264,6 +264,7 @@ export default function ModelComparisonPageClient({ locale: _locale }: Props) {
             items={models as unknown as Record<string, unknown>[]}
             columns={columns}
             itemLinkPrefix={`/models`}
+            nameColumnLabel={tPage('columns.name')}
           />
         </div>
       </section>

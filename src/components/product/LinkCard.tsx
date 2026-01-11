@@ -93,7 +93,7 @@ export function LinkCardGrid<K extends string>({
   gridCols = 'grid-cols-1 md:grid-cols-3',
 }: LinkCardGridProps<K>) {
   return (
-    <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
+    <section className="my-[var(--spacing-lg)] border-b border-[var(--color-border)]">
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
         <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-sm)]">
           {title}

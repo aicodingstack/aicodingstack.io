@@ -14,6 +14,7 @@ export interface ModelSpecificationsProps {
  */
 export function ModelSpecifications({ model }: ModelSpecificationsProps) {
   const tComponent = useTranslations('components.product.modelSpecifications')
+  const tShared = useTranslations('shared')
   const hasContent =
     model.size ||
     model.contextWindow ||
@@ -37,7 +38,7 @@ export function ModelSpecifications({ model }: ModelSpecificationsProps) {
           {model.size && (
             <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">
               <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
-                {tComponent('modelSize')}
+                {tShared('terms.modelSize')}
               </h3>
               <p className="text-lg font-semibold tracking-tight">{model.size}</p>
             </div>
@@ -54,7 +55,7 @@ export function ModelSpecifications({ model }: ModelSpecificationsProps) {
 
           <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">
             <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
-              {tComponent('maxOutput')}
+              {tShared('terms.maxOutput')}
             </h3>
             <p className="text-lg font-semibold tracking-tight">
               {formatTokenCount(model.maxOutput)}
@@ -64,7 +65,7 @@ export function ModelSpecifications({ model }: ModelSpecificationsProps) {
           {model.tokenPricing && (
             <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">
               <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
-                {tComponent('pricing')}
+                {tShared('terms.pricing')}
               </h3>
               <div className="space-y-1">
                 {model.tokenPricing.input !== null && model.tokenPricing.input !== undefined && (

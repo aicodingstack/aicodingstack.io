@@ -8,6 +8,7 @@ export interface ProductPricingProps {
 
 export function ProductPricing({ pricing, pricingUrl }: ProductPricingProps) {
   const tComponent = useTranslations('components.product.productPricing')
+  const tShared = useTranslations('shared')
 
   if (!pricing || pricing.length === 0) {
     return null
@@ -17,7 +18,7 @@ export function ProductPricing({ pricing, pricingUrl }: ProductPricingProps) {
     <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
         <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-sm)]">
-          {tComponent('title')}
+          {tShared('terms.pricing')}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[var(--spacing-md)] mt-[var(--spacing-lg)]">

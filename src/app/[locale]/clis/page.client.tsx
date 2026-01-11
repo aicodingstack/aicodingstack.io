@@ -108,7 +108,7 @@ export default function CLIsPageClient({ locale }: Props) {
                 href="/clis/comparison"
                 className="text-sm px-[var(--spacing-md)] py-[var(--spacing-xs)] border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-colors"
               >
-                {tPage('compareAll')} →
+                {tShared('actions.compareAll')} →
               </Link>
             }
           />

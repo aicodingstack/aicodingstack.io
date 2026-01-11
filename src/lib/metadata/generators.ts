@@ -243,17 +243,18 @@ export async function generateModelDetailMetadata(options: {
   const { locale, slug, model, translationNamespace } = options
 
   const tPage = await getTranslations({ locale, namespace: translationNamespace })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Build title with model-specific translation
   const title = `${model.name} - ${tPage('metaTitle')}`
 
   // Build description with model specs
   const specs: string[] = []
-  if (model.size) specs.push(`${tPage('modelSize')}: ${model.size}`)
+  if (model.size) specs.push(`${tShared('terms.modelSize')}: ${model.size}`)
   if (model.contextWindow)
     specs.push(`${tPage('contextWindow')}: ${formatTokenCount(model.contextWindow)} tokens`)
   if (model.maxOutput)
-    specs.push(`${tPage('maxOutput')}: ${formatTokenCount(model.maxOutput)} tokens`)
+    specs.push(`${tShared('terms.maxOutput')}: ${formatTokenCount(model.maxOutput)} tokens`)
 
   const pricingDisplay = model.tokenPricing?.input
     ? `$${model.tokenPricing.input}/M tokens`
@@ -261,7 +262,7 @@ export async function generateModelDetailMetadata(options: {
       ? `$${model.tokenPricing.output}/M tokens`
       : null
 
-  if (pricingDisplay) specs.push(`${tPage('pricing')}: ${pricingDisplay}`)
+  if (pricingDisplay) specs.push(`${tShared('terms.pricing')}: ${pricingDisplay}`)
 
   const description = `${model.name} by ${model.vendor}. ${specs.join('. ')}. ${model.description}`
 

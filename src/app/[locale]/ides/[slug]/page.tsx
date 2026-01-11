@@ -68,7 +68,6 @@ export default async function IDEPage({
     notFound()
   }
 
-  const tPage = await getTranslations({ locale, namespace: 'pages.ideDetail' })
   const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Transform URLs for component props
@@ -114,7 +113,7 @@ export default async function IDEPage({
           description={ide.description}
           vendor={ide.vendor}
           category="IDE"
-          categoryLabel={tPage('categoryLabel')}
+          categoryLabel={tShared('categories.singular.ide')}
           verified={ide.verified ?? false}
           latestVersion={ide.latestVersion}
           license={ide.license}
@@ -135,7 +134,7 @@ export default async function IDEPage({
 
         <ProductCommands install={ide.installCommand} launch={ide.launchCommand} />
 
-        <BackToNavigation href="/ides" title={tPage('allIDEs')} />
+        <BackToNavigation href="/ides" title={tShared('categories.all.ides')} />
       </main>
     </PageLayout>
   )

@@ -19,6 +19,7 @@ type Props = {
 
 export default function ModelProvidersPageClient({ locale }: Props) {
   const tPage = useTranslations('pages.modelProviders')
+  const tShared = useTranslations('shared')
   const [searchQuery, setSearchQuery] = useState('')
 
   // Localize providers
@@ -86,7 +87,7 @@ export default function ModelProvidersPageClient({ locale }: Props) {
 
           <section className="mb-[var(--spacing-lg)]">
             <h2 className="text-base uppercase tracking-wide text-[var(--color-text-muted)] mb-[var(--spacing-sm)]">
-              {tPage('foundationProviders')}
+              {tShared('providerTypes.foundation-model-provider')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[var(--spacing-md)]">
               {foundationModelProviders.map(provider => (
@@ -114,7 +115,7 @@ export default function ModelProvidersPageClient({ locale }: Props) {
 
           <section>
             <h2 className="text-base uppercase tracking-wide text-[var(--color-text-muted)] mb-[var(--spacing-sm)]">
-              {tPage('serviceProviders')}
+              {tShared('providerTypes.model-service-provider')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[var(--spacing-md)]">
               {modelServiceProviders.map(provider => (

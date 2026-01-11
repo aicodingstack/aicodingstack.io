@@ -46,6 +46,7 @@ async function getFaqSchema(locale: string) {
 export default async function Home({ params }: LocalePageProps) {
   const { locale } = await params
   const tPage = await getTranslations({ locale, namespace: 'pages.home' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
   const faqItems = faqMetadata[locale] || faqMetadata.en || []
   const faqSchema = await getFaqSchema(locale)
 
@@ -89,7 +90,7 @@ export default async function Home({ params }: LocalePageProps) {
                 href="/ai-coding-stack"
                 className="inline-flex items-center gap-[var(--spacing-xs)] px-[var(--spacing-lg)] py-[var(--spacing-sm)] text-sm font-medium border border-[var(--color-border-strong)] bg-[var(--color-text)] text-[var(--color-bg)] hover:bg-[var(--color-text-secondary)] transition-all"
               >
-                {tPage('exploreTools')}
+                {tShared('actions.explore')}
               </Link>
               <Link
                 href="/docs"

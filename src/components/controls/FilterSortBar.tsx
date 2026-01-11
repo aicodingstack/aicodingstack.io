@@ -29,6 +29,7 @@ export default function FilterSortBar({
   onSearchChange,
 }: FilterSortBarProps) {
   const tComponent = useTranslations('components.controls.filterSortBar')
+  const tShared = useTranslations('shared')
   const [isSortOpen, setIsSortOpen] = useState(false)
   const sortRef = useRef<HTMLDivElement>(null)
 
@@ -90,7 +91,7 @@ export default function FilterSortBar({
               type="text"
               value={searchQuery}
               onChange={e => onSearchChange(e.target.value)}
-              placeholder={tComponent('search')}
+              placeholder={`${tShared('actions.search')}...`}
               className="flex-1 px-[var(--spacing-sm)] py-1 text-sm border border-[var(--color-border)] bg-[var(--color-background)] text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-border-strong)] transition-colors"
             />
           </div>
@@ -145,7 +146,7 @@ export default function FilterSortBar({
                 : 'border-[var(--color-border)] bg-[var(--color-background)] text-[var(--color-text-secondary)] hover:border-[var(--color-border-strong)]'
             }`}
           >
-            {tComponent('openSource')}
+            {tShared('terms.openSource')}
           </button>
           <button
             type="button"
@@ -156,7 +157,7 @@ export default function FilterSortBar({
                 : 'border-[var(--color-border)] bg-[var(--color-background)] text-[var(--color-text-secondary)] hover:border-[var(--color-border-strong)]'
             }`}
           >
-            {tComponent('proprietary')}
+            {tShared('terms.proprietary')}
           </button>
         </div>
 

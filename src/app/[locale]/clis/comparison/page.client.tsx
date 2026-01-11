@@ -24,21 +24,21 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
   const columns: ComparisonColumn[] = [
     {
       key: 'vendor',
-      label: tPage('columns.vendor'),
+      label: tShared('terms.vendor'),
     },
     {
       key: 'license',
-      label: tPage('columns.license'),
+      label: tShared('terms.license'),
       render: (value: unknown, item: Record<string, unknown>) =>
         renderLicense(value, item, tShared),
     },
     {
       key: 'latestVersion',
-      label: tPage('columns.version'),
+      label: tShared('terms.version'),
     },
     {
       key: 'platforms',
-      label: tPage('columns.platforms'),
+      label: tShared('terms.platforms'),
       render: (value: unknown) => {
         const platforms = value as Array<{ os: string }> | string[]
         if (!platforms || platforms.length === 0) return '-'
@@ -71,7 +71,7 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
     },
     {
       key: 'githubStars',
-      label: tPage('columns.githubStars'),
+      label: tShared('terms.stars'),
       render: (_: unknown, item: Record<string, unknown>) => {
         const id = item.id as string
         const stars = getGithubStars('clis', id)
@@ -132,7 +132,7 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
                 target="_blank"
                 rel="noopener"
                 className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] transition-colors"
-                title={tPage('linkTitles.officialWebsite')}
+                title={tShared('terms.visitWebsite')}
               >
                 <Home className="w-3.5 h-3.5" />
               </a>
@@ -147,7 +147,7 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
                 target="_blank"
                 rel="noopener"
                 className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] transition-colors"
-                title={tPage('linkTitles.download')}
+                title={tShared('actions.download')}
               >
                 <Download className="w-3.5 h-3.5" />
               </a>
@@ -162,7 +162,7 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
                 target="_blank"
                 rel="noopener"
                 className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] transition-colors"
-                title={tPage('linkTitles.documentation')}
+                title={tShared('terms.documentation')}
               >
                 <FileText className="w-3.5 h-3.5" />
               </a>
@@ -304,6 +304,7 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
             items={clis as unknown as Record<string, unknown>[]}
             columns={columns}
             itemLinkPrefix={`/clis`}
+            nameColumnLabel={tPage('columns.name')}
           />
         </div>
       </section>
