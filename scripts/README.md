@@ -1,10 +1,11 @@
 # Scripts Documentation
 
-This directory contains utility scripts for managing and validating the AI Coding Stack project. Scripts are organized into three categories:
+This directory contains utility scripts for managing and validating the AI Coding Stack project. Scripts are organized into four categories:
 
 - **`generate/`** - Generation scripts that create derived files
 - **`refactor/`** - Refactoring scripts that reorganize or reformat data
 - **`fetch/`** - Data fetching scripts that retrieve external data
+- **`validate/`** - URL validation scripts that check website accessibility
 
 ## Directory Structure
 
@@ -21,7 +22,15 @@ scripts/
 │   └── export-vendors.mjs
 ├── fetch/
 │   ├── index.mjs              # Entry point for all fetch scripts
-│   └── fetch-github-stars.mjs
+│   ├── fetch-github-stars.mjs
+│   └── compare-models.mjs
+├── validate/
+│   ├── visit-all-urls.mjs
+│   ├── visit-urls-en-static-all-slugs.mjs
+│   ├── visit-urls-en-static-one-slug.mjs
+│   ├── visit-urls-all-locales-static-all-slugs.mjs
+│   ├── visit-urls-all-locales-static-one-slug.mjs
+│   └── lib/                   # Shared validation utilities
 ├── _shared/
 │   └── runner.mjs             # Shared script runner for entry points
 └── temp/                      # Temporary experimental scripts
@@ -45,6 +54,9 @@ npm run refactor
 
 # Run all fetch scripts
 npm run fetch
+
+# Run all validation scripts (manual execution)
+node scripts/validate/visit-all-urls.mjs
 ```
 
 ### Running Individual Scripts
@@ -61,6 +73,11 @@ npm run refactor:sort-fields
 
 # Fetch scripts
 npm run fetch:github-stars
+
+# Validation scripts (run directly with node)
+node scripts/validate/visit-all-urls.mjs
+node scripts/validate/visit-urls-en-static-all-slugs.mjs
+node scripts/validate/visit-urls-all-locales-static-all-slugs.mjs
 ```
 
 Or directly using Node:
@@ -69,11 +86,17 @@ Or directly using Node:
 # Run generation/fetch scripts
 node scripts/generate/index.mjs metadata
 node scripts/fetch/index.mjs github-stars
+node scripts/fetch/index.mjs compare-models
 
 # Run specific refactor scripts
 node scripts/refactor/index.mjs sort-manifest-fields
 node scripts/refactor/index.mjs sort-locales-fields
 node scripts/refactor/index.mjs export-vendors
+
+# Run validation scripts
+node scripts/validate/visit-all-urls.mjs
+node scripts/validate/visit-urls-en-static-all-slugs.mjs
+node scripts/validate/visit-urls-all-locales-static-all-slugs.mjs
 ```
 
 ## Validation (Test-based)
@@ -242,6 +265,30 @@ node scripts/fetch/index.mjs github-stars
 
 **Note:** Without a GitHub token, you may hit rate limits (60 requests/hour).
 
+### compare-models.mjs
+
+Compares model manifest data with API reference data to identify mismatches.
+
+```bash
+node scripts/fetch/index.mjs compare-models
+# or
+node scripts/fetch/compare-models.mjs
+```
+
+**What it does:**
+- Reads model manifests from `manifests/models/`
+- Compares with API reference data from `tmp/models-dev-api.json`
+- Uses mapping from `manifests/mapping.json` to match vendors and models
+- Reports matched models, mismatched fields, and unmatched models
+
+**Output:**
+- Perfectly matched models (all fields match)
+- Matched models with field mismatches
+- Matched models with skipped fields (null in manifest)
+- Unmatched models (not found in API)
+
+**Note:** This script requires `tmp/models-dev-api.json` to be present. It's used for data validation and synchronization.
+
 ## Additional Tools
 
 ### Benchmark Fetcher
@@ -258,6 +305,87 @@ node .claude/skills/benchmark-fetcher/scripts/fetch-benchmarks.mjs
 - Updates model manifests with latest benchmark scores
 
 For full documentation, see `.claude/skills/benchmark-fetcher/SKILL.md`
+
+## URL Validation Scripts
+
+The `validate/` directory contains scripts for checking website URL accessibility. These scripts visit URLs and verify they return successful HTTP responses.
+
+### visit-all-urls.mjs
+
+Visits all URLs on the website (all locales, all static pages, all slugs).
+
+```bash
+node scripts/validate/visit-all-urls.mjs
+```
+
+**What it does:**
+- Builds a comprehensive list of all website URLs
+- Visits each URL with HTTP HEAD requests
+- Reports success/failure status for each URL
+- Supports retries and timeout handling
+
+**Environment variables:**
+- `BASE_URL` - Base URL to test (default: `http://localhost:3000`)
+
+### visit-urls-en-static-all-slugs.mjs
+
+Visits URLs with specific configuration: English locale only, all static pages, all slugs per route type.
+
+```bash
+node scripts/validate/visit-urls-en-static-all-slugs.mjs
+```
+
+**Configuration:**
+- Locales: English only
+- Static pages: All
+- Dynamic routes: All slugs for each route type
+
+### visit-urls-en-static-one-slug.mjs
+
+Visits URLs with specific configuration: English locale only, all static pages, one slug per route type.
+
+```bash
+node scripts/validate/visit-urls-en-static-one-slug.mjs
+```
+
+**Configuration:**
+- Locales: English only
+- Static pages: All
+- Dynamic routes: One slug per route type (for faster testing)
+
+### visit-urls-all-locales-static-all-slugs.mjs
+
+Visits URLs with specific configuration: All locales, all static pages, all slugs per route type.
+
+```bash
+node scripts/validate/visit-urls-all-locales-static-all-slugs.mjs
+```
+
+**Configuration:**
+- Locales: All configured locales
+- Static pages: All
+- Dynamic routes: All slugs for each route type
+
+### visit-urls-all-locales-static-one-slug.mjs
+
+Visits URLs with specific configuration: All locales, all static pages, one slug per route type.
+
+```bash
+node scripts/validate/visit-urls-all-locales-static-one-slug.mjs
+```
+
+**Configuration:**
+- Locales: All configured locales
+- Static pages: All
+- Dynamic routes: One slug per route type (for faster testing)
+
+**Common features:**
+- Concurrent requests (default: 5 concurrent)
+- Request timeout (default: 10 seconds)
+- Automatic retries (default: 2 retries)
+- Summary statistics
+
+**Note:** These scripts make HTTP requests and require the website to be running. They are useful for pre-deployment validation and CI/CD pipelines.
 
 ## Build Process
 
@@ -302,6 +430,9 @@ npm run refactor
 
 # Run all fetch scripts (if needed)
 npm run fetch
+
+# Run URL validation scripts (if needed)
+node scripts/validate/visit-all-urls.mjs
 ```
 
 Or run individual checks as needed:
@@ -313,6 +444,8 @@ npm run generate:metadata
 npm run refactor:sort-fields
 npm run refactor:sort-locales-fields
 npm run fetch:github-stars
+node scripts/fetch/index.mjs compare-models
+node scripts/validate/visit-all-urls.mjs
 ```
 
 ## Manual Execution
