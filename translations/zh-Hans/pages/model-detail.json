@@ -1,36 +1,11 @@
 {
-  "allModels": "@:shared.categories.all.models",
-  "backTo": "@:shared.actions.backTo",
-  "breadcrumb": {
-    "aiCodingStack": "@:shared.terms.aiCodingStack",
-    "models": "@:shared.categories.plural.models"
-  },
   "cache": "Cache",
-  "categoryLabel": "@:shared.categories.singular.model",
   "contextWindow": "内容窗口",
-  "documentation": "@:shared.terms.documentation",
-  "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
   "input": "输入",
   "labels": {
-    "artificialAnalysis": "@:shared.platforms.artificialAnalysis",
     "context": "内容窗口",
-    "documentation": "@:shared.terms.documentation",
-    "huggingface": "@:shared.platforms.huggingface",
-    "maxOutput": "@:shared.terms.maxOutput",
-    "openrouter": "@:shared.platforms.openrouter",
-    "pricing": "@:shared.terms.pricing",
-    "size": "模型大小",
-    "website": "@:shared.terms.website"
+    "size": "模型大小"
   },
-  "license": "@:shared.terms.license",
-  "maxOutput": "@:shared.terms.maxOutput",
   "metaTitle": "AI 编码模型 | 规格与定价 2025",
-  "modelSize": "@:shared.terms.modelSize",
-  "output": "输出",
-  "pricing": "@:shared.terms.pricing",
-  "specifications": "@:shared.labels.specifications",
-  "stars": "@:shared.terms.stars",
-  "vendor": "@:shared.terms.vendor",
-  "version": "@:shared.terms.version",
-  "visitWebsite": "@:shared.terms.visitWebsite"
+  "output": "输出"
 }

@@ -1,16 +1,1 @@
-{
-  "allCLIs": "@:shared.categories.all.clis",
-  "breadcrumb": {
-    "aiCodingStack": "@:shared.terms.aiCodingStack",
-    "clis": "@:shared.categories.plural.clis"
-  },
-  "categoryLabel": "@:shared.categories.singular.cli",
-  "documentation": "@:shared.terms.documentation",
-  "download": "@:shared.actions.download",
-  "license": "@:shared.terms.license",
-  "platforms": "@:shared.terms.platforms",
-  "stars": "@:shared.terms.stars",
-  "vendor": "@:shared.terms.vendor",
-  "version": "@:shared.terms.version",
-  "visitWebsite": "@:shared.terms.visitWebsite"
-}
+{}

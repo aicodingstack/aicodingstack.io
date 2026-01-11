@@ -1,6 +1,5 @@
 {
   "description": "Erkunden und vergleichen Sie AI-Coding-Tools: IDEs, CLIs, Erweiterungen, Modelle und Anbieter — alles an einem Ort.",
-  "exploreTools": "@:shared.actions.explore",
   "faq": "Häufig gestellte Fragen",
   "features": {
     "comparison": {

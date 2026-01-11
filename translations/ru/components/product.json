@@ -35,70 +35,33 @@
     "fallbackNote": "Примечание: Отображение примерных данных. API истории звёзд временно недоступен."
   },
   "productHero": {
-    "categories": {
-      "CLI": "@:shared.categories.singular.cli",
-      "EXTENSION": "@:shared.categories.singular.extension",
-      "IDE": "@:shared.categories.singular.ide",
-      "MODEL": "@:shared.categories.singular.model",
-      "PROVIDER": "@:shared.categories.singular.modelProvider",
-      "VENDOR": "@:shared.categories.singular.vendor"
-    },
-    "documentation": "@:shared.terms.documentation",
-    "download": "@:shared.actions.download",
-    "getApiKey": "@:shared.labels.getApiKey",
-    "license": "@:shared.terms.license",
-    "platforms": "@:shared.terms.platforms",
-    "providerTypes": {
-      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
-      "model-service-provider": "@:shared.providerTypes.model-service-provider"
-    },
-    "runtime": "Среда выполнения",
-    "stars": "@:shared.terms.stars",
-    "supportedIdes": "@:shared.terms.supportedIdes",
-    "type": "@:shared.terms.type",
-    "vendor": "@:shared.terms.vendor",
-    "version": "@:shared.terms.version",
-    "visitWebsite": "@:shared.terms.visitWebsite"
+    "runtime": "Среда выполнения"
   },
   "communityLinks": {
     "blog": "Блог",
     "blogDescription": "Читать статьи блога",
-    "community": "@:shared.terms.community",
-    "discord": "@:shared.platforms.discord",
     "discordDescription": "Присоединиться к сообществу",
-    "github": "@:shared.platforms.github",
     "githubDescription": "Просмотреть репозитории",
-    "linkedin": "@:shared.platforms.linkedin",
-    "linkedinDescription": "@:shared.terms.followUs",
-    "reddit": "@:shared.platforms.reddit",
     "redditDescription": "Присоединиться к обсуждению",
-    "twitter": "@:shared.platforms.twitter",
-    "twitterDescription": "@:shared.terms.followUs",
-    "youtube": "@:shared.platforms.youtube",
     "youtubeDescription": "Смотреть видео"
   },
   "resourceLinks": {
+    "resources": "Resources",
     "changelog": "История изменений",
     "changelogDescription": "Просмотреть историю изменений",
-    "download": "@:shared.actions.download",
     "downloadDescription": "Загрузить последнюю версию",
     "issue": "Трекер проблем",
     "issueDescription": "Сообщить об ошибках и запросить функции",
     "mcp": "Документация MCP",
     "mcpDescription": "Узнать об интеграции MCP",
-    "pricing": "@:shared.terms.pricing",
     "pricingDescription": "Просмотреть тарифные планы"
   },
   "productPricing": {
-    "title": "@:shared.terms.pricing",
     "viewFullDetails": "Просмотреть полную информацию о ценах"
   },
   "modelSpecifications": {
     "title": "Specifications",
-    "modelSize": "@:shared.terms.modelSize",
     "contextWindow": "Total Context",
-    "maxOutput": "@:shared.terms.maxOutput",
-    "pricing": "@:shared.terms.pricing",
     "input": "Input",
     "output": "Output",
     "cache": "Cache"
@@ -121,9 +84,6 @@
     "liveCodeBenchDesc": "Live coding performance"
   },
   "relatedProducts": {
-    "cli": "@:shared.categories.singular.cli",
-    "extension": "@:shared.categories.singular.extension",
-    "ide": "@:shared.categories.singular.ide",
     "title": "Связанные продукты",
     "viewProduct": "Просмотреть продукт"
   },
@@ -181,9 +141,5 @@
         }
       }
     }
-  },
-  "resources": {
-    "community": "@:shared.terms.community",
-    "resources": "@:shared.terms.resources"
   }
 }

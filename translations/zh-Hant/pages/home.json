@@ -1,6 +1,5 @@
 {
   "description": "探索和比較 AI 編碼工具：IDE、CLI、擴充套件、模型和供應商 — 全部在一個地方。",
-  "exploreTools": "@:shared.actions.explore",
   "faq": "常見問題",
   "features": {
     "comparison": {

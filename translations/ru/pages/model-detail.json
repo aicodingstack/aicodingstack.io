@@ -1,36 +1,11 @@
 {
-  "allModels": "@:shared.categories.all.models",
-  "backTo": "@:shared.actions.backTo",
-  "breadcrumb": {
-    "aiCodingStack": "@:shared.terms.aiCodingStack",
-    "models": "@:shared.categories.plural.models"
-  },
   "cache": "Кэш",
-  "categoryLabel": "@:shared.categories.singular.model",
   "contextWindow": "Общий контекст",
-  "documentation": "@:shared.terms.documentation",
-  "findOnAiPlatforms": "@:shared.labels.findOnAiPlatforms",
   "input": "Ввод",
   "labels": {
-    "artificialAnalysis": "@:shared.platforms.artificialAnalysis",
     "context": "Контекст",
-    "documentation": "@:shared.terms.documentation",
-    "huggingface": "@:shared.platforms.huggingface",
-    "maxOutput": "@:shared.terms.maxOutput",
-    "openrouter": "@:shared.platforms.openrouter",
-    "pricing": "@:shared.terms.pricing",
-    "size": "Размер",
-    "website": "@:shared.terms.website"
+    "size": "Размер"
   },
-  "license": "@:shared.terms.license",
-  "maxOutput": "@:shared.terms.maxOutput",
   "metaTitle": "AI Coding Model | Specs & Pricing 2025",
-  "modelSize": "@:shared.terms.modelSize",
-  "output": "Вывод",
-  "pricing": "@:shared.terms.pricing",
-  "specifications": "@:shared.labels.specifications",
-  "stars": "@:shared.terms.stars",
-  "vendor": "@:shared.terms.vendor",
-  "version": "@:shared.terms.version",
-  "visitWebsite": "@:shared.terms.visitWebsite"
+  "output": "Вывод"
 }

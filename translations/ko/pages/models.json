@@ -1,5 +1,4 @@
 {
-  "compareAll": "@:shared.actions.compareAll",
   "context": "컨텍스트:",
   "lifecycle": {
     "latest": "최신",

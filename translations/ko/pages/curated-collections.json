@@ -1,16 +1,20 @@
 {
+  "meta": {
+    "title": "Curated Collections - Essential AI Coding Resources",
+    "description": "Handpicked resources, specifications, protocols, and tools for AI coding. Featured articles, standards, and ecosystem utilities."
+  },
   "articles": {
-    "description": "업계 리더들의 AI 코딩에 관한 필독 기사",
-    "title": "추천 아티클"
+    "description": "Must-read articles about AI coding from industry leaders",
+    "title": "Featured Articles"
   },
   "specifications": {
-    "description": "현대 소프트웨어 개발을 위한 필수 표준 및 프로토콜",
-    "title": "사양 및 프로토콜"
+    "description": "Essential standards and protocols for modern software development",
+    "title": "Specifications & Protocols"
   },
-  "subtitle": "AI 기반 소프트웨어 개발의 미래에 대한 비전",
-  "title": "당신의 AI 코딩 생태계 허브",
+  "subtitle": "Handpicked resources, specifications, protocols, and tools for AI coding",
+  "title": "Curated Collections",
   "tools": {
-    "description": "AI 코딩 워크플로우를 위한 큐레이션된 도구 및 유틸리티",
-    "title": "생태계 도구"
+    "description": "Curated tools and utilities for AI coding workflows",
+    "title": "Ecosystem Tools"
   }
 }

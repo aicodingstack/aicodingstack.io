@@ -1,7 +1,5 @@
 {
-  "foundationProviders": "@:shared.providerTypes.foundation-model-provider",
   "search": "按名称搜索...",
-  "serviceProviders": "@:shared.providerTypes.model-service-provider",
   "subtitle": "提供各种 AI 模型访问的 LLM API 提供者",
   "title": "AI 编码模型提供商"
 }

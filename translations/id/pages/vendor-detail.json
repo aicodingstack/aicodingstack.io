@@ -1,29 +1,15 @@
 {
-  "allVendors": "@:shared.categories.all.vendors",
-  "backTo": "@:shared.actions.backTo",
   "breadcrumb": {
-    "aiCodingStack": "@:shared.terms.aiCodingStack",
-    "home": "Beranda",
-    "vendors": "@:shared.categories.plural.vendors"
+    "home": "Beranda"
   },
-  "categoryLabel": "@:shared.categories.singular.vendor",
-  "communityLinks": "@:shared.terms.communityLinks",
   "connectLinkedIn": "Berhubung di LinkedIn",
-  "documentation": "@:shared.terms.documentation",
   "followTwitter": "Ikuti di X/Twitter",
-  "indexLabel": "@:shared.terms.indexLabel",
   "joinDiscord": "Bergabung komunitas Discord",
   "joinReddit": "Bergabung komunitas Reddit",
   "metaDescription": "Jelajahi produk dan teknologi AI {name}.",
   "metaTitle": "Penyedia Teknologi AI | Profile Perusahaan 2025",
-  "models": "@:shared.categories.plural.models",
-  "products": "@:shared.terms.products",
   "productsSubtitle": "Jelajahi produk dan layanan dari {vendorName}",
-  "productsTitle": "@:shared.terms.products",
-  "quickLinks": "@:shared.labels.quickLinks",
   "vendorDetails": "Detail Vendor",
   "viewGitHub": "Lihat repositori open source",
-  "visitWebsite": "@:shared.terms.visitWebsite",
-  "watchYouTube": "Tonton video di YouTube",
-  "website": "@:shared.terms.website"
+  "watchYouTube": "Tonton video di YouTube"
 }

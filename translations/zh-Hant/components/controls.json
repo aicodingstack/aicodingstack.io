@@ -6,10 +6,7 @@
   "filterSortBar": {
     "clearFilters": "清除篩選",
     "license": "授權：",
-    "openSource": "@:shared.terms.openSource",
     "platform": "平台：",
-    "proprietary": "@:shared.terms.proprietary",
-    "search": "@:shared.actions.search by name...",
     "sort": "排序：",
     "sortDefault": "預設",
     "sortNameAsc": "名稱 (A-Z)",

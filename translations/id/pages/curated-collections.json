@@ -1,16 +1,20 @@
 {
+  "meta": {
+    "title": "Curated Collections - Essential AI Coding Resources",
+    "description": "Handpicked resources, specifications, protocols, and tools for AI coding. Featured articles, standards, and ecosystem utilities."
+  },
   "articles": {
-    "description": "Artikel wajib baca tentang coding AI dari pemimpin industri",
-    "title": "Artikel Unggulan"
+    "description": "Must-read articles about AI coding from industry leaders",
+    "title": "Featured Articles"
   },
   "specifications": {
-    "description": "Standar penting dan protokol untuk pengembangan perangkat lunak modern",
-    "title": "Spesifikasi & Protokol"
+    "description": "Essential standards and protocols for modern software development",
+    "title": "Specifications & Protocols"
   },
-  "subtitle": "Sumber daya, spesifikasi, protokol, dan alat yang dikurasi untuk coding AI",
-  "title": "Koleksi Kurasi",
+  "subtitle": "Handpicked resources, specifications, protocols, and tools for AI coding",
+  "title": "Curated Collections",
   "tools": {
-    "description": "Alat dan utilitas kurasi untuk alur kerja coding AI",
-    "title": "Alat Ekosistem"
+    "description": "Curated tools and utilities for AI coding workflows",
+    "title": "Ecosystem Tools"
   }
 }

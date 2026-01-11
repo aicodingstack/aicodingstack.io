@@ -1,6 +1,4 @@
 {
-  "allExtensions": "@:shared.categories.all.extensions",
-  "compareAll": "@:shared.actions.compareAll",
   "noMatches": "フィルターに一致する拡張機能はありません",
   "subtitle": "AI 対応のコーディング拡張機能とプラグイン",
   "title": "AI コーディング拡張機能"

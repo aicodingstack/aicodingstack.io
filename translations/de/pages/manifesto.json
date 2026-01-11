@@ -1,9 +1,13 @@
 {
+  "meta": {
+    "title": "Manifesto - AI Coding Stack",
+    "description": "Our vision for the future of AI-powered software development. Discover, compare, and build 10x faster with AI coding tools."
+  },
   "exploreStack": {
-    "subtitle": "Erkunden Sie das vollständige AI-Coding-Ökosystem: IDEs, CLIs, Erweiterungen, Modelle und Anbieter.",
+    "subtitle": "Explore the complete AI coding ecosystem: IDEs, CLIs, extensions, models, and providers.",
     "title": "AI Coding Stack"
   },
-  "slogan": "Entdecken. Vergleichen. 10x Schneller Entwickeln.",
-  "subtitle": "Unsere Vision für die Zukunft der AI-gestützten Softwareentwicklung",
-  "title": "Manifest"
+  "slogan": "Discover. Compare. Build 10x Faster.",
+  "subtitle": "Our vision for the future of AI-powered software development",
+  "title": "Manifesto"
 }

@@ -1,5 +1,4 @@
 {
-  "compareAll": "@:shared.actions.compareAll",
   "context": "內容視窗：",
   "lifecycle": {
     "latest": "最新",

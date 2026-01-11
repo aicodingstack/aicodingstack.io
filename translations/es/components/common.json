@@ -9,19 +9,14 @@
   "header": {
     "aiCodingLandscape": "Paisaje de Codificación con IA",
     "aiCodingLandscapeDesc": "Visualiza el ecosistema completo de codificación con IA",
-    "aiCodingStack": "@:shared.terms.aiCodingStack",
-    "articles": "@:shared.terms.articles",
     "closeMenu": "Cerrar menú",
-    "collections": "@:shared.terms.collections",
     "developmentTools": "Herramientas de desarrollo",
     "intelligence": "Inteligencia",
     "landscape": "Paisaje",
-    "manifesto": "@:shared.terms.manifesto",
     "openMenu": "Abrir menú",
     "openSourceRank": "Clasificación de Código Abierto",
     "openSourceRankDesc": "Explora proyectos de código abierto de codificación con IA por estrellas de GitHub",
     "ranking": "Clasificación",
-    "search": "@:shared.actions.search",
     "searchPlaceholder": "Buscar...",
     "toggleMenu": "Alternar menú"
   }

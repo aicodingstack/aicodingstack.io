@@ -35,71 +35,33 @@
     "fallbackNote": "注意：顯示範例資料。星標歷史 API 暫時無法使用。"
   },
   "productHero": {
-    "categories": {
-      "CLI": "@:shared.categories.singular.cli",
-      "EXTENSION": "@:shared.categories.singular.extension",
-      "IDE": "@:shared.categories.singular.ide",
-      "MODEL": "@:shared.categories.singular.model",
-      "PROVIDER": "@:shared.categories.singular.modelProvider",
-      "VENDOR": "@:shared.categories.singular.vendor"
-    },
-    "documentation": "@:shared.terms.documentation",
-    "download": "@:shared.actions.download",
-    "getApiKey": "@:shared.labels.getApiKey",
-    "license": "@:shared.terms.license",
-    "platforms": "@:shared.terms.platforms",
-    "providerTypes": {
-      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
-      "model-service-provider": "@:shared.providerTypes.model-service-provider"
-    },
-    "runtime": "執行期",
-    "stars": "@:shared.terms.stars",
-    "supportedIdes": "@:shared.terms.supportedIdes",
-    "type": "@:shared.terms.type",
-    "vendor": "@:shared.terms.vendor",
-    "version": "@:shared.terms.version",
-    "visitWebsite": "@:shared.terms.visitWebsite"
+    "runtime": "執行期"
   },
   "communityLinks": {
     "blog": "部落格",
     "blogDescription": "閱讀部落格文章",
-    "community": "@:shared.terms.community",
-    "discord": "@:shared.platforms.discord",
     "discordDescription": "加入社群",
-    "github": "@:shared.platforms.github",
     "githubDescription": "檢視儲存庫",
-    "linkedin": "@:shared.platforms.linkedin",
-    "linkedinDescription": "@:shared.terms.followUs",
-    "reddit": "@:shared.platforms.reddit",
     "redditDescription": "參與討論",
-    "twitter": "@:shared.platforms.twitter",
-    "twitterDescription": "@:shared.terms.followUs",
-    "youtube": "@:shared.platforms.youtube",
     "youtubeDescription": "觀看影片"
   },
   "resourceLinks": {
     "resources": "資源",
     "changelog": "更新日誌",
     "changelogDescription": "檢視更新日誌",
-    "download": "@:shared.actions.download",
     "downloadDescription": "下載最新版本",
     "issue": "問題追蹤",
     "issueDescription": "回報問題與請求功能",
     "mcp": "MCP 文件",
     "mcpDescription": "了解 MCP 整合",
-    "pricing": "@:shared.terms.pricing",
     "pricingDescription": "檢視定價方案"
   },
   "productPricing": {
-    "title": "@:shared.terms.pricing",
     "viewFullDetails": "View full pricing details →"
   },
   "modelSpecifications": {
     "title": "Specifications",
-    "modelSize": "@:shared.terms.modelSize",
     "contextWindow": "Total Context",
-    "maxOutput": "@:shared.terms.maxOutput",
-    "pricing": "@:shared.terms.pricing",
     "input": "Input",
     "output": "Output",
     "cache": "Cache"
@@ -122,9 +84,6 @@
     "liveCodeBenchDesc": "Live coding performance"
   },
   "relatedProducts": {
-    "cli": "@:shared.categories.singular.cli",
-    "extension": "@:shared.categories.singular.extension",
-    "ide": "@:shared.categories.singular.ide",
     "title": "相關產品",
     "viewProduct": "檢視產品"
   },
@@ -182,9 +141,5 @@
         }
       }
     }
-  },
-  "resources": {
-    "community": "@:shared.terms.community",
-    "resources": "@:shared.terms.resources"
   }
 }

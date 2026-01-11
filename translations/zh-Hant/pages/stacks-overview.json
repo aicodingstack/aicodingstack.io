@@ -1,31 +1,35 @@
 {
+  "meta": {
+    "title": "AI Coding Stack Overview",
+    "description": "Complete overview of the AI coding ecosystem. Explore IDEs, CLIs, extensions, models, and providers all in one place."
+  },
   "clis": {
-    "description": "將大型語言模型的強大功能直接帶到終端的命令列 AI 助理。用自然語言直接在 shell 中執行複雜任務。",
+    "description": "Command-line AI assistants that bring the power of large language models directly to your terminal. Execute complex tasks with natural language, right from your shell.",
     "title": "CLIs"
   },
-  "exploreStack": "探索技術堆疊",
+  "exploreStack": "Explore the Stack",
   "extensions": {
-    "description": "為您喜愛的 IDE 提供的 AI 驅動編碼擴充與外掛。從程式碼自動補全到智慧重構，用 AI 輔助增強您的開發體驗。",
+    "description": "AI-powered coding extensions and plugins for your favorite IDE. From code completion to intelligent refactoring, enhance your development experience with AI assistance.",
     "title": "Extensions"
   },
   "ides": {
-    "description": "理解程式碼庫並提供智慧輔助的 AI 驅動整合式開發環境。從 VS Code 到 Cursor，發現讓編碼與 AI 協作的編輯器。",
+    "description": "AI-powered integrated development environments that understand your codebase and provide intelligent assistance. From VS Code to Cursor, discover the editors that make coding collaborative with AI.",
     "title": "IDEs"
   },
   "modelProviders": {
-    "description": "提供各種 AI 模型存取的 LLM API 提供者。從 DeepSeek 到 OpenRouter，發現以統一 API 和模型存取為 AI 編碼工具提供動力的平台。",
+    "description": "LLM API providers offering access to various AI models. From DeepSeek to OpenRouter, discover platforms that power your AI coding tools with unified APIs and model access.",
     "title": "Model Providers"
   },
   "models": {
-    "description": "智慧層。針對程式碼產生、理解和分析優化的大型語言模型。比較領先 AI 模型的規格、定價和能力。",
+    "description": "The intelligence layer. Large language models optimized for code generation, understanding, and analysis. Compare specs, pricing, and capabilities across leading AI models.",
     "title": "Models"
   },
-  "overviewTitle": "AI 編碼技術堆疊總覽",
-  "slogan": "探索。比較。構建 10x 更快。",
-  "subtitle": "探索完整的 AI 編碼生態系統：IDE、命令列、終端、模型和提供者。",
+  "overviewTitle": "AI Coding Stack Overview",
+  "slogan": "Discover. Compare. Build 10x Faster.",
+  "subtitle": "Explore the complete AI coding ecosystem: IDEs, CLIs, extensions, models, and providers.",
   "title": "AI Coding Stack",
   "vendors": {
-    "description": "建構 AI 技術的領先公司和組織。從 OpenAI 到 Anthropic，發現 AI 編碼革命背後的供應商。",
+    "description": "Leading companies and organizations building AI technology. From OpenAI to Anthropic, discover the vendors behind the AI coding revolution.",
     "title": "Vendors"
   }
 }

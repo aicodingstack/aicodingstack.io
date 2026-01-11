@@ -1,6 +1,5 @@
 {
   "description": "AI コーディングツールを探索・比較：IDE、CLI、拡張機能、モデル、プロバイダー — すべて一箇所で。",
-  "exploreTools": "@:shared.actions.explore",
   "faq": "よくある質問",
   "features": {
     "comparison": {

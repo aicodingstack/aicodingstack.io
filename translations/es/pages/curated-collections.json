@@ -1,16 +1,20 @@
 {
+  "meta": {
+    "title": "Curated Collections - Essential AI Coding Resources",
+    "description": "Handpicked resources, specifications, protocols, and tools for AI coding. Featured articles, standards, and ecosystem utilities."
+  },
   "articles": {
-    "description": "Artículos de lectura obligatoria sobre codificación con IA de líderes de la industria",
-    "title": "Artículos destacados"
+    "description": "Must-read articles about AI coding from industry leaders",
+    "title": "Featured Articles"
   },
   "specifications": {
-    "description": "Estándares y protocolos esenciales para el desarrollo de software moderno",
-    "title": "Especificaciones y protocolos"
+    "description": "Essential standards and protocols for modern software development",
+    "title": "Specifications & Protocols"
   },
-  "subtitle": "Nuestra visión para el futuro del desarrollo de software potenciado por IA",
-  "title": "Colecciones curadas",
+  "subtitle": "Handpicked resources, specifications, protocols, and tools for AI coding",
+  "title": "Curated Collections",
   "tools": {
-    "description": "Herramientas y utilidades curadas para flujos de trabajo de codificación con IA",
-    "title": "Herramientas del ecosistema"
+    "description": "Curated tools and utilities for AI coding workflows",
+    "title": "Ecosystem Tools"
   }
 }

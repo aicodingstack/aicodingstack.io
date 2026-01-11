@@ -6,13 +6,14 @@
   "filterSortBar": {
     "clearFilters": "필터 지우기",
     "license": "라이선스:",
-    "openSource": "@:shared.terms.openSource",
     "platform": "플랫폼:",
-    "proprietary": "@:shared.terms.proprietary",
-    "search": "@:shared.actions.search by name...",
     "sort": "정렬:",
     "sortDefault": "기본값",
     "sortNameAsc": "이름 (A-Z)",
     "sortNameDesc": "이름 (Z-A)"
+  },
+  "searchInput": {
+    "placeholder": "Search...",
+    "clear": "Clear search"
   }
 }

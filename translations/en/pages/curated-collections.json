@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Curated Collections - Essential AI Coding Resources",
+    "description": "Handpicked resources, specifications, protocols, and tools for AI coding. Featured articles, standards, and ecosystem utilities."
+  },
   "articles": {
     "description": "Must-read articles about AI coding from industry leaders",
     "title": "Featured Articles"

@@ -1,7 +1,5 @@
 {
-  "foundationProviders": "@:shared.providerTypes.foundation-model-provider",
   "search": "Search by name...",
-  "serviceProviders": "@:shared.providerTypes.model-service-provider",
   "subtitle": "様々な AI モデルへのアクセスを提供する LLM API プロバイダー",
   "title": "AI コーディングモデルプロバイダー"
 }

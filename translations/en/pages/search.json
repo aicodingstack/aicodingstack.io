@@ -1,11 +1,7 @@
 {
-  "categories": {
-    "clis": "@:shared.categories.plural.clis",
-    "extensions": "@:shared.categories.plural.extensions",
-    "ides": "@:shared.categories.plural.ides",
-    "models": "@:shared.categories.plural.models",
-    "providers": "@:shared.categories.plural.modelProviders",
-    "vendors": "@:shared.categories.plural.vendors"
+  "meta": {
+    "title": "Search - AI Coding Stack",
+    "description": "Search across AI coding tools, models, providers, and resources. Find exactly what you need to enhance your development workflow."
   },
   "navigate": "to navigate",
   "noResults": "No results found",
@@ -15,13 +11,5 @@
   "resultsCountFor": "{count} {count, plural, one {result} other {results}} for \"{query}\"",
   "searching": "Searching...",
   "select": "to select",
-  "stacks": {
-    "clis": "@:shared.categories.plural.clis",
-    "extensions": "@:shared.categories.plural.extensions",
-    "ides": "@:shared.categories.plural.ides",
-    "modelProviders": "@:shared.categories.plural.modelProviders",
-    "models": "@:shared.categories.plural.models",
-    "vendors": "@:shared.categories.plural.vendors"
-  },
   "title": "Search Results"
 }

@@ -6,13 +6,14 @@
   "filterSortBar": {
     "clearFilters": "Filter löschen",
     "license": "Lizenz:",
-    "openSource": "@:shared.terms.openSource",
     "platform": "Plattform:",
-    "proprietary": "@:shared.terms.proprietary",
-    "search": "@:shared.actions.search by name...",
     "sort": "Sortieren:",
     "sortDefault": "Standard",
     "sortNameAsc": "Name (A-Z)",
     "sortNameDesc": "Name (Z-A)"
+  },
+  "searchInput": {
+    "placeholder": "Search...",
+    "clear": "Clear search"
   }
 }

@@ -35,70 +35,33 @@
     "fallbackNote": "Nota: Exibindo dados de exemplo. A API de histórico de estrelas está temporariamente indisponível."
   },
   "productHero": {
-    "categories": {
-      "CLI": "@:shared.categories.singular.cli",
-      "EXTENSION": "@:shared.categories.singular.extension",
-      "IDE": "@:shared.categories.singular.ide",
-      "MODEL": "@:shared.categories.singular.model",
-      "PROVIDER": "@:shared.categories.singular.modelProvider",
-      "VENDOR": "@:shared.categories.singular.vendor"
-    },
-    "documentation": "@:shared.terms.documentation",
-    "download": "@:shared.actions.download",
-    "getApiKey": "@:shared.labels.getApiKey",
-    "license": "@:shared.terms.license",
-    "platforms": "@:shared.terms.platforms",
-    "providerTypes": {
-      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
-      "model-service-provider": "@:shared.providerTypes.model-service-provider"
-    },
-    "runtime": "Runtime",
-    "stars": "@:shared.terms.stars",
-    "supportedIdes": "@:shared.terms.supportedIdes",
-    "type": "@:shared.terms.type",
-    "vendor": "@:shared.terms.vendor",
-    "version": "@:shared.terms.version",
-    "visitWebsite": "@:shared.terms.visitWebsite"
+    "runtime": "Runtime"
   },
   "communityLinks": {
     "blog": "Blog",
     "blogDescription": "Ler posts do blog",
-    "community": "@:shared.terms.community",
-    "discord": "@:shared.platforms.discord",
     "discordDescription": "Junte-se à comunidade",
-    "github": "@:shared.platforms.github",
     "githubDescription": "Ver repositórios",
-    "linkedin": "@:shared.platforms.linkedin",
-    "linkedinDescription": "@:shared.terms.followUs",
-    "reddit": "@:shared.platforms.reddit",
     "redditDescription": "Participar da discussão",
-    "twitter": "@:shared.platforms.twitter",
-    "twitterDescription": "@:shared.terms.followUs",
-    "youtube": "@:shared.platforms.youtube",
     "youtubeDescription": "Assistir vídeos"
   },
   "resourceLinks": {
+    "resources": "Resources",
     "changelog": "Changelog",
     "changelogDescription": "Ver changelog",
-    "download": "@:shared.actions.download",
     "downloadDescription": "Baixar versão mais recente",
     "issue": "Rastreador de Problemas",
     "issueDescription": "Informar bugs e solicitar recursos",
     "mcp": "Documentação de MCP",
     "mcpDescription": "Saiba mais sobre integração MCP",
-    "pricing": "@:shared.terms.pricing",
     "pricingDescription": "Ver planos de preços"
   },
   "productPricing": {
-    "title": "@:shared.terms.pricing",
     "viewFullDetails": "View full pricing details →"
   },
   "modelSpecifications": {
     "title": "Specifications",
-    "modelSize": "@:shared.terms.modelSize",
     "contextWindow": "Total Context",
-    "maxOutput": "@:shared.terms.maxOutput",
-    "pricing": "@:shared.terms.pricing",
     "input": "Input",
     "output": "Output",
     "cache": "Cache"
@@ -121,9 +84,6 @@
     "liveCodeBenchDesc": "Live coding performance"
   },
   "relatedProducts": {
-    "cli": "@:shared.categories.singular.cli",
-    "extension": "@:shared.categories.singular.extension",
-    "ide": "@:shared.categories.singular.ide",
     "title": "Produtos Relacionados",
     "viewProduct": "Ver Produto"
   },
@@ -181,9 +141,5 @@
         }
       }
     }
-  },
-  "resources": {
-    "community": "@:shared.terms.community",
-    "resources": "@:shared.terms.resources"
   }
 }

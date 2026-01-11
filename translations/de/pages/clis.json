@@ -1,6 +1,4 @@
 {
-  "allCLIs": "@:shared.categories.all.clis",
-  "compareAll": "@:shared.actions.compareAll",
   "noMatches": "Keine CLIs entsprechen Ihren Filtern",
   "subtitle": "AI-gestützte Kommandozeilen-Coding-Assistenten",
   "title": "AI-Coding-CLIs"

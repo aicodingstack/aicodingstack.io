@@ -1,5 +1,9 @@
 {
-  "keywords": "документы стека ИИ-кодирования, руководство по инструментам ИИ-кодирования, сравнение IDE, сравнение CLI, спецификации модели ИИ",
-  "subtitle": "Наше видение будущего разработки программного обеспечения на основе ИИ",
+  "meta": {
+    "title": "AI Coding Articles & Insights",
+    "description": "In-depth articles about AI coding tools, best practices, and the future of software development with AI assistants."
+  },
+  "keywords": "AI coding articles, AI development tutorials, AI coding best practices, LLM coding guides, AI IDE guides",
+  "subtitle": "Deep dives into AI coding: tutorials, insights, best practices for IDEs, CLIs, and LLM models. Learn how to build 10x faster with AI.",
   "title": "Articles"
 }

@@ -9,19 +9,14 @@
   "header": {
     "aiCodingLandscape": "AI Kodlama Manzarası",
     "aiCodingLandscapeDesc": "AI kodlama ekosisteminin tamamını görselleştirin",
-    "aiCodingStack": "@:shared.terms.aiCodingStack",
-    "articles": "@:shared.terms.articles",
     "closeMenu": "Menüyü kapat",
-    "collections": "@:shared.terms.collections",
     "developmentTools": "Geliştirme Araçları",
     "intelligence": "Zeka",
     "landscape": "Manzara",
-    "manifesto": "@:shared.terms.manifesto",
     "openMenu": "Menüyü aç",
     "openSourceRank": "Açık Kaynak Sıralaması",
     "openSourceRankDesc": "GitHub yıldızlarına göre açık kaynaklı AI kodlama projelerini keşfedin",
     "ranking": "Sıralama",
-    "search": "@:shared.actions.search",
     "searchPlaceholder": "Ara...",
     "toggleMenu": "Menüyü değiştir"
   }

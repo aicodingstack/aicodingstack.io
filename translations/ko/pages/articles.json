@@ -1,5 +1,9 @@
 {
-  "keywords": "AI 코딩 기사, AI 개발 튜토리얼, AI 모범 사례.",
-  "subtitle": "AI 기반 소프트웨어 개발의 미래에 대한 비전",
+  "meta": {
+    "title": "AI Coding Articles & Insights",
+    "description": "In-depth articles about AI coding tools, best practices, and the future of software development with AI assistants."
+  },
+  "keywords": "AI coding articles, AI development tutorials, AI coding best practices, LLM coding guides, AI IDE guides",
+  "subtitle": "Deep dives into AI coding: tutorials, insights, best practices for IDEs, CLIs, and LLM models. Learn how to build 10x faster with AI.",
   "title": "Articles"
 }

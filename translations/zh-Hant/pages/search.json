@@ -1,27 +1,15 @@
 {
-  "categories": {
-    "clis": "@:shared.categories.plural.clis",
-    "extensions": "@:shared.categories.plural.extensions",
-    "ides": "@:shared.categories.plural.ides",
-    "models": "@:shared.categories.plural.models",
-    "providers": "@:shared.categories.plural.modelProviders",
-    "vendors": "@:shared.categories.plural.vendors"
+  "meta": {
+    "title": "Search - AI Coding Stack",
+    "description": "Search across AI coding tools, models, providers, and resources. Find exactly what you need to enhance your development workflow."
   },
-  "navigate": "導航",
-  "noResults": "未找到結果",
-  "noResultsFor": "沒有找到 \"{query}\" 的結果",
-  "placeholder": "搜尋 AI 編碼工具...",
-  "resultsCount": "{count} 個結果",
-  "resultsCountFor": "找到 {count} 個 \"{query}\" 的結果",
-  "searching": "搜尋中...",
-  "select": "選擇",
-  "stacks": {
-    "clis": "@:shared.categories.plural.clis",
-    "extensions": "@:shared.categories.plural.extensions",
-    "ides": "@:shared.categories.plural.ides",
-    "modelProviders": "@:shared.categories.plural.modelProviders",
-    "models": "@:shared.categories.plural.models",
-    "vendors": "@:shared.categories.plural.vendors"
-  },
-  "title": "搜尋結果"
+  "navigate": "to navigate",
+  "noResults": "No results found",
+  "noResultsFor": "No results found for \"{query}\"",
+  "placeholder": "Search AI coding tools...",
+  "resultsCount": "{count} {count, plural, one {result} other {results}}",
+  "resultsCountFor": "{count} {count, plural, one {result} other {results}} for \"{query}\"",
+  "searching": "Searching...",
+  "select": "to select",
+  "title": "Search Results"
 }

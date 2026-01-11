@@ -6,13 +6,14 @@
   "filterSortBar": {
     "clearFilters": "Очистить фильтры",
     "license": "Лицензия:",
-    "openSource": "@:shared.terms.openSource",
     "platform": "Платформа:",
-    "proprietary": "@:shared.terms.proprietary",
-    "search": "@:shared.actions.search by name...",
     "sort": "Сортировка:",
     "sortDefault": "По умолчанию",
     "sortNameAsc": "Имя (А-Я)",
     "sortNameDesc": "Имя (Я-А)"
+  },
+  "searchInput": {
+    "placeholder": "Search...",
+    "clear": "Clear search"
   }
 }

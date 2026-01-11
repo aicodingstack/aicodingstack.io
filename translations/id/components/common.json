@@ -9,19 +9,14 @@
   "header": {
     "aiCodingLandscape": "Pemandangan Coding AI",
     "aiCodingLandscapeDesc": "Visualisasi ekosistem coding AI lengkap",
-    "aiCodingStack": "@:shared.terms.aiCodingStack",
-    "articles": "@:shared.terms.articles",
     "closeMenu": "Tutup menu",
-    "collections": "@:shared.terms.collections",
     "developmentTools": "Alat Pengembangan",
     "intelligence": "Kecerdasan",
     "landscape": "Pemandangan",
-    "manifesto": "@:shared.terms.manifesto",
     "openMenu": "Buka menu",
     "openSourceRank": "Peringkat Open Source",
     "openSourceRankDesc": "Jelajahi proyek coding AI open source berdasarkan bintang GitHub",
     "ranking": "Peringkat",
-    "search": "@:shared.actions.search",
     "searchPlaceholder": "Cari...",
     "toggleMenu": "Toggle menu"
   }

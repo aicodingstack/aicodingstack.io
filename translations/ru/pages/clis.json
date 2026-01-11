@@ -1,6 +1,4 @@
 {
-  "allCLIs": "@:shared.categories.all.clis",
-  "compareAll": "@:shared.actions.compareAll",
   "noMatches": "CLI не соответствует вашим фильтрам",
   "subtitle": "Ассистенты кодирования в командной строке на базе ИИ",
   "title": "CLI ИИ-кодинга"

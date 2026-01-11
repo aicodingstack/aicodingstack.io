@@ -35,70 +35,33 @@
     "fallbackNote": "注意：显示示例数据。星标历史 API 暂时不可用。"
   },
   "productHero": {
-    "categories": {
-      "CLI": "@:shared.categories.singular.cli",
-      "EXTENSION": "@:shared.categories.singular.extension",
-      "IDE": "@:shared.categories.singular.ide",
-      "MODEL": "@:shared.categories.singular.model",
-      "PROVIDER": "@:shared.categories.singular.modelProvider",
-      "VENDOR": "@:shared.categories.singular.vendor"
-    },
-    "documentation": "@:shared.terms.documentation",
-    "download": "@:shared.actions.download",
-    "getApiKey": "@:shared.labels.getApiKey",
-    "license": "@:shared.terms.license",
-    "platforms": "@:shared.terms.platforms",
-    "providerTypes": {
-      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
-      "model-service-provider": "@:shared.providerTypes.model-service-provider"
-    },
-    "runtime": "运行时",
-    "stars": "@:shared.terms.stars",
-    "supportedIdes": "@:shared.terms.supportedIdes",
-    "type": "@:shared.terms.type",
-    "vendor": "@:shared.terms.vendor",
-    "version": "@:shared.terms.version",
-    "visitWebsite": "@:shared.terms.visitWebsite"
+    "runtime": "运行时"
   },
   "communityLinks": {
     "blog": "博客",
     "blogDescription": "阅读博客文章",
-    "community": "@:shared.terms.community",
-    "discord": "@:shared.platforms.discord",
     "discordDescription": "加入社区",
-    "github": "@:shared.platforms.github",
     "githubDescription": "查看代码仓库",
-    "linkedin": "@:shared.platforms.linkedin",
-    "linkedinDescription": "@:shared.terms.followUs",
-    "reddit": "@:shared.platforms.reddit",
     "redditDescription": "参与讨论",
-    "twitter": "@:shared.platforms.twitter",
-    "twitterDescription": "@:shared.terms.followUs",
-    "youtube": "@:shared.platforms.youtube",
     "youtubeDescription": "观看视频"
   },
   "resourceLinks": {
+    "resources": "Resources",
     "changelog": "更新日志",
     "changelogDescription": "查看更新日志",
-    "download": "@:shared.actions.download",
     "downloadDescription": "下载最新版本",
     "issue": "问题跟踪",
     "issueDescription": "报告问题和请求功能",
     "mcp": "MCP 文档",
     "mcpDescription": "了解 MCP 集成",
-    "pricing": "@:shared.terms.pricing",
     "pricingDescription": "查看定价方案"
   },
   "productPricing": {
-    "title": "@:shared.terms.pricing",
     "viewFullDetails": "查看完整定价详情 →"
   },
   "modelSpecifications": {
     "title": "Specifications",
-    "modelSize": "@:shared.terms.modelSize",
     "contextWindow": "Total Context",
-    "maxOutput": "@:shared.terms.maxOutput",
-    "pricing": "@:shared.terms.pricing",
     "input": "Input",
     "output": "Output",
     "cache": "Cache"
@@ -121,9 +84,6 @@
     "liveCodeBenchDesc": "Live coding performance"
   },
   "relatedProducts": {
-    "cli": "@:shared.categories.singular.cli",
-    "extension": "@:shared.categories.singular.extension",
-    "ide": "@:shared.categories.singular.ide",
     "title": "相关产品",
     "viewProduct": "查看产品"
   },
@@ -181,9 +141,5 @@
         }
       }
     }
-  },
-  "resources": {
-    "community": "@:shared.terms.community",
-    "resources": "@:shared.terms.resources"
   }
 }

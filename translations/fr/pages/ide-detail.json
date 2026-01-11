@@ -1,16 +1,1 @@
-{
-  "allIDEs": "@:shared.categories.all.ides",
-  "breadcrumb": {
-    "aiCodingStack": "@:shared.terms.aiCodingStack",
-    "ides": "@:shared.categories.plural.ides"
-  },
-  "categoryLabel": "@:shared.categories.singular.ide",
-  "documentation": "@:shared.terms.documentation",
-  "download": "@:shared.actions.download",
-  "license": "@:shared.terms.license",
-  "platforms": "@:shared.terms.platforms",
-  "stars": "@:shared.terms.stars",
-  "vendor": "@:shared.terms.vendor",
-  "version": "@:shared.terms.version",
-  "visitWebsite": "@:shared.terms.visitWebsite"
-}
+{}

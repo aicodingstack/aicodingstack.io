@@ -1,29 +1,15 @@
 {
-  "allVendors": "@:shared.categories.all.vendors",
-  "backTo": "@:shared.actions.backTo",
   "breadcrumb": {
-    "aiCodingStack": "@:shared.terms.aiCodingStack",
-    "home": "Home",
-    "vendors": "@:shared.categories.plural.vendors"
+    "home": "Home"
   },
-  "categoryLabel": "@:shared.categories.singular.vendor",
-  "communityLinks": "@:shared.terms.communityLinks",
   "connectLinkedIn": "LinkedIn에서 연결",
-  "documentation": "@:shared.terms.documentation",
   "followTwitter": "Twitter에서 팔로우",
-  "indexLabel": "@:shared.terms.indexLabel",
   "joinDiscord": "Discord 커뮤니티에 가입",
   "joinReddit": "Reddit 커뮤니티에 가입",
   "metaDescription": "{name}의 AI 제품 및 기술을 탐색하세요.",
   "metaTitle": "AI 기술 벤더 | 회사 프로필 2025",
-  "models": "@:shared.categories.plural.models",
-  "products": "@:shared.terms.products",
   "productsSubtitle": "{vendorName}의 제품 및 서비스 탐색",
-  "productsTitle": "@:shared.terms.products",
-  "quickLinks": "@:shared.labels.quickLinks",
   "vendorDetails": "Vendor Details",
   "viewGitHub": "오픈소스 저장소 보기",
-  "visitWebsite": "@:shared.terms.visitWebsite",
-  "watchYouTube": "YouTube에서 비디오 보기",
-  "website": "@:shared.terms.website"
+  "watchYouTube": "YouTube에서 비디오 보기"
 }

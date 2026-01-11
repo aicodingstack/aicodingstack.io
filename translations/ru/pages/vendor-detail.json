@@ -1,29 +1,15 @@
 {
-  "allVendors": "@:shared.categories.all.vendors",
-  "backTo": "@:shared.actions.backTo",
   "breadcrumb": {
-    "aiCodingStack": "@:shared.terms.aiCodingStack",
-    "home": "Главная",
-    "vendors": "@:shared.categories.plural.vendors"
+    "home": "Главная"
   },
-  "categoryLabel": "@:shared.categories.singular.vendor",
-  "communityLinks": "@:shared.terms.communityLinks",
   "connectLinkedIn": "Подключиться на LinkedIn",
-  "documentation": "@:shared.terms.documentation",
   "followTwitter": "Подписаться на X/Twitter",
-  "indexLabel": "@:shared.terms.indexLabel",
   "joinDiscord": "Присоединиться к сообществу Discord",
   "joinReddit": "Присоединиться к сообществу Reddit",
   "metaDescription": "Изучите ИИ-продукты и технологии {name}.",
   "metaTitle": "Поставщик технологий ИИ | Профиль компании 2025",
-  "models": "@:shared.categories.plural.models",
-  "products": "@:shared.terms.products",
   "productsSubtitle": "Изучите продукты и услуги от {vendorName}",
-  "productsTitle": "@:shared.terms.products",
-  "quickLinks": "@:shared.labels.quickLinks",
   "vendorDetails": "Детали поставщика",
   "viewGitHub": "Просмотр репозиториев с открытым исходным кодом",
-  "visitWebsite": "@:shared.terms.visitWebsite",
-  "watchYouTube": "Смотреть видео на YouTube",
-  "website": "@:shared.terms.website"
+  "watchYouTube": "Смотреть видео на YouTube"
 }

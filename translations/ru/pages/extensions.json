@@ -1,6 +1,4 @@
 {
-  "allExtensions": "@:shared.categories.all.extensions",
-  "compareAll": "@:shared.actions.compareAll",
   "noMatches": "Расширения не соответствуют вашим фильтрам",
   "subtitle": "Расширения и плагины для кодирования на базе ИИ",
   "title": "Расширения ИИ-кодинга"

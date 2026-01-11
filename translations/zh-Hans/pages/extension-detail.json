@@ -1,16 +1,5 @@
 {
-  "allExtensions": "@:shared.categories.all.extensions",
-  "breadcrumb": {
-    "aiCodingStack": "@:shared.terms.aiCodingStack",
-    "extensions": "@:shared.categories.plural.extensions"
-  },
-  "categoryLabel": "@:shared.categories.singular.extension",
-  "documentation": "@:shared.terms.documentation",
-  "download": "@:shared.actions.download",
-  "license": "@:shared.terms.license",
-  "stars": "@:shared.terms.stars",
-  "supportedIdes": "@:shared.terms.supportedIdes",
-  "vendor": "@:shared.terms.vendor",
-  "version": "@:shared.terms.version",
-  "visitWebsite": "@:shared.terms.visitWebsite"
+  "supportedIdes": "支持的 IDE",
+  "categoryLabel": "扩展",
+  "allExtensions": "所有扩展"
 }

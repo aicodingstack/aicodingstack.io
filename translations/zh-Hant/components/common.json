@@ -9,19 +9,14 @@
   "header": {
     "aiCodingLandscape": "AI 編碼全景圖",
     "aiCodingLandscapeDesc": "視覺化 AI 編碼生態系統全貌",
-    "aiCodingStack": "@:shared.terms.aiCodingStack",
-    "articles": "@:shared.terms.articles",
     "closeMenu": "關閉選單",
-    "collections": "@:shared.terms.collections",
     "developmentTools": "開發工具",
     "intelligence": "智慧層",
     "landscape": "全景圖",
-    "manifesto": "@:shared.terms.manifesto",
     "openMenu": "開啟選單",
     "openSourceRank": "開放原始碼排行榜",
     "openSourceRankDesc": "依 GitHub 星標數探索開放原始碼 AI 編碼專案",
     "ranking": "排行榜",
-    "search": "@:shared.actions.search",
     "searchPlaceholder": "搜尋...",
     "toggleMenu": "切換選單"
   }

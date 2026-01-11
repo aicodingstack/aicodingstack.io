@@ -1,5 +1,9 @@
 {
-  "keywords": "artigos de codificação IA, tutoriais de desenvolvimento IA, melhores práticas IA.",
-  "subtitle": "Nossa visão para o futuro do desenvolvimento de software com IA",
+  "meta": {
+    "title": "AI Coding Articles & Insights",
+    "description": "In-depth articles about AI coding tools, best practices, and the future of software development with AI assistants."
+  },
+  "keywords": "AI coding articles, AI development tutorials, AI coding best practices, LLM coding guides, AI IDE guides",
+  "subtitle": "Deep dives into AI coding: tutorials, insights, best practices for IDEs, CLIs, and LLM models. Learn how to build 10x faster with AI.",
   "title": "Articles"
 }

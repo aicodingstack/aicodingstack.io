@@ -6,10 +6,7 @@
   "filterSortBar": {
     "clearFilters": "Filtreleri temizle",
     "license": "Lisans:",
-    "openSource": "@:shared.terms.openSource",
     "platform": "Platforma:",
-    "proprietary": "@:shared.terms.proprietary",
-    "search": "@:shared.actions.search by name...",
     "sort": "Sırala:",
     "sortDefault": "Varsayılan",
     "sortNameAsc": "Ad (A-Z)",

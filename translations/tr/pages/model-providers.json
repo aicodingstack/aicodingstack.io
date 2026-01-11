@@ -1,7 +1,5 @@
 {
-  "foundationProviders": "@:shared.providerTypes.foundation-model-provider",
   "search": "İsme göre ara...",
-  "serviceProviders": "@:shared.providerTypes.model-service-provider",
   "subtitle": "Çeşitli AI modellerine erişim sunan LLM API sağlayıcıları",
   "title": "AI Kodlama Model Sağlayıcıları"
 }

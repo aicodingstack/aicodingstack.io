@@ -1,31 +1,35 @@
 {
+  "meta": {
+    "title": "AI Coding Stack Overview",
+    "description": "Complete overview of the AI coding ecosystem. Explore IDEs, CLIs, extensions, models, and providers all in one place."
+  },
   "clis": {
-    "description": "大規模言語モデルの力をターミナルに直接提供するコマンドライン AI アシスタント。シェルから自然言語で複雑なタスクを実行。",
+    "description": "Command-line AI assistants that bring the power of large language models directly to your terminal. Execute complex tasks with natural language, right from your shell.",
     "title": "CLIs"
   },
-  "exploreStack": "スタックを探索",
+  "exploreStack": "Explore the Stack",
   "extensions": {
-    "description": "お気に入りの IDE 向けの AI 対応コーディング拡張機能とプラグイン。コード補完からインテリジェントなリファクタリングまで、AI アシスタンスで開発体験を向上。",
+    "description": "AI-powered coding extensions and plugins for your favorite IDE. From code completion to intelligent refactoring, enhance your development experience with AI assistance.",
     "title": "Extensions"
   },
   "ides": {
-    "description": "コードベースを理解しインテリジェンスを提供する AI 対応統合開発環境。VS Code から Cursor まで、コーディングを AI とコラボレーションさせるエディターを発見。",
+    "description": "AI-powered integrated development environments that understand your codebase and provide intelligent assistance. From VS Code to Cursor, discover the editors that make coding collaborative with AI.",
     "title": "IDEs"
   },
   "modelProviders": {
-    "description": "様々な AI モデルへのアクセスを提供する LLM API プロバイダー。DeepSeek から OpenRouter まで、統一された API とモデルアクセスで AI コーディングツールを強力化するプラットフォームを発見。",
+    "description": "LLM API providers offering access to various AI models. From DeepSeek to OpenRouter, discover platforms that power your AI coding tools with unified APIs and model access.",
     "title": "Model Providers"
   },
   "models": {
-    "description": "インテリジェンス層。コード生成、理解、分析に最適化された大規模言語モデル。主要な AI モデル間の仕様、価格、機能を比較。",
+    "description": "The intelligence layer. Large language models optimized for code generation, understanding, and analysis. Compare specs, pricing, and capabilities across leading AI models.",
     "title": "Models"
   },
-  "overviewTitle": "AI コーディングスタック概要",
-  "slogan": "発見。比較。10倍速で構築。",
-  "subtitle": "完全な AI コーディングエコシステムを探索：IDE、CLI、拡張機能、モデル、プロバイダー。",
+  "overviewTitle": "AI Coding Stack Overview",
+  "slogan": "Discover. Compare. Build 10x Faster.",
+  "subtitle": "Explore the complete AI coding ecosystem: IDEs, CLIs, extensions, models, and providers.",
   "title": "AI Coding Stack",
   "vendors": {
-    "description": "AI 技術を構築する主要な企業と組織。OpenAI から Anthropic まで、AI コーディング革命の背後にあるベンダーを発見。",
+    "description": "Leading companies and organizations building AI technology. From OpenAI to Anthropic, discover the vendors behind the AI coding revolution.",
     "title": "Vendors"
   }
 }

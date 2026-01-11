@@ -1,31 +1,35 @@
 {
-  "clis": {
-    "description": "Büyük dil modellerinin gücünü doğrudan terminalinize getiren komut satırı AI yardımcıları. Karmaşık görevleri doğal dille, doğrudan kabuğunuzdan çalıştırın.",
-    "title": "CLI'lar"
+  "meta": {
+    "title": "AI Coding Stack Overview",
+    "description": "Complete overview of the AI coding ecosystem. Explore IDEs, CLIs, extensions, models, and providers all in one place."
   },
-  "exploreStack": "Stack'ı Keşfet",
+  "clis": {
+    "description": "Command-line AI assistants that bring the power of large language models directly to your terminal. Execute complex tasks with natural language, right from your shell.",
+    "title": "CLIs"
+  },
+  "exploreStack": "Explore the Stack",
   "extensions": {
-    "description": "Favori IDE'niz için AI destekli kodlama uzantıları ve eklentileri. Kod tamamlamadan akıllı yeniden düzenlemeye kadar, AI yardımıyla geliştirme deneyiminizi iyileştirin.",
+    "description": "AI-powered coding extensions and plugins for your favorite IDE. From code completion to intelligent refactoring, enhance your development experience with AI assistance.",
     "title": "Extensions"
   },
   "ides": {
-    "description": "Kod tabanınızı anlayan ve akıllı yardım sağlayan AI destekli entegre geliştirme ortamları. VS Code'dan Cursor'a, kodlamayı AI ile işbirliğine dönüştüren editörleri keşfedin.",
+    "description": "AI-powered integrated development environments that understand your codebase and provide intelligent assistance. From VS Code to Cursor, discover the editors that make coding collaborative with AI.",
     "title": "IDEs"
   },
   "modelProviders": {
-    "description": "Çeşitli AI modellerine erişim sunan LLM API sağlayıcıları. AI hizmetlerini uygulamalarınıza entegre edin.",
+    "description": "LLM API providers offering access to various AI models. From DeepSeek to OpenRouter, discover platforms that power your AI coding tools with unified APIs and model access.",
     "title": "Model Providers"
   },
   "models": {
-    "description": "Zeka katmanı. Kod oluşturma, anlama ve analiz için optimize edilmiş büyük dil modelleri. Önde gelen AI modelleri arasında spesifikasyonları, fiyatları ve yetenekleri karşılaştırın.",
+    "description": "The intelligence layer. Large language models optimized for code generation, understanding, and analysis. Compare specs, pricing, and capabilities across leading AI models.",
     "title": "Models"
   },
-  "overviewTitle": "AI Coding Stack Genel Bakışı",
-  "slogan": "Keşfet. Karşılaştır. 10x Daha Hızlı İnşa Edin.",
-  "subtitle": "Tam AI kodlama ekosistemini keşfedin: IDE'ler, CLI'lar, uzantılar, modeller ve sağlayıcılar.",
+  "overviewTitle": "AI Coding Stack Overview",
+  "slogan": "Discover. Compare. Build 10x Faster.",
+  "subtitle": "Explore the complete AI coding ecosystem: IDEs, CLIs, extensions, models, and providers.",
   "title": "AI Coding Stack",
   "vendors": {
-    "description": "AI teknolojilerini geliştiren önde gelen şirketler ve kuruluşlar. OpenAI'dan Anthropic'e, AI kodlama devriminin arkasındaki sağlayıcıları keşfedin.",
+    "description": "Leading companies and organizations building AI technology. From OpenAI to Anthropic, discover the vendors behind the AI coding revolution.",
     "title": "Vendors"
   }
 }

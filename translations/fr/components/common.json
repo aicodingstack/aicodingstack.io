@@ -9,19 +9,14 @@
   "header": {
     "aiCodingLandscape": "Paysage du Codage IA",
     "aiCodingLandscapeDesc": "Visualisez l'écosystème complet du codage IA",
-    "aiCodingStack": "@:shared.terms.aiCodingStack",
-    "articles": "@:shared.terms.articles",
     "closeMenu": "Fermer le menu",
-    "collections": "@:shared.terms.collections",
     "developmentTools": "Outils de développement",
     "intelligence": "Intelligence",
     "landscape": "Paysage",
-    "manifesto": "@:shared.terms.manifesto",
     "openMenu": "Ouvrir le menu",
     "openSourceRank": "Classement Open Source",
     "openSourceRankDesc": "Explorez les projets de codage IA open source par étoiles GitHub",
     "ranking": "Classement",
-    "search": "@:shared.actions.search",
     "searchPlaceholder": "Rechercher...",
     "toggleMenu": "Basculer le menu"
   }

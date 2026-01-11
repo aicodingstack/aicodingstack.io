@@ -1,6 +1,5 @@
 {
   "description": "探索和对比 AI 编码工具:IDE、命令行、终端、模型和提供商 — 一站式平台。",
-  "exploreTools": "@:shared.actions.explore",
   "faq": "常见问题",
   "features": {
     "comparison": {

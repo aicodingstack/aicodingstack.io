@@ -1,6 +1,4 @@
 {
-  "allCLIs": "@:shared.categories.all.clis",
-  "compareAll": "@:shared.actions.compareAll",
   "noMatches": "没有符合筛选条件的 CLI",
   "subtitle": "AI 驱动的命令行编码助手",
   "title": "AI 编码 CLI 工具"

@@ -1,6 +1,5 @@
 {
   "description": "Explora y compara herramientas de codificación con IA: IDEs, CLIs, extensiones, modelos y proveedores — todo en un solo lugar.",
-  "exploreTools": "@:shared.actions.explore",
   "faq": "Preguntas frecuentes",
   "features": {
     "comparison": {

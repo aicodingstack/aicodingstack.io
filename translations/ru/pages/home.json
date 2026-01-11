@@ -1,6 +1,5 @@
 {
   "description": "Изучайте и сравнивайте инструменты ИИ-кодирования: IDE, CLI, расширения, модели и поставщики — все в одном месте.",
-  "exploreTools": "@:shared.actions.explore",
   "faq": "Часто задаваемые вопросы",
   "features": {
     "comparison": {

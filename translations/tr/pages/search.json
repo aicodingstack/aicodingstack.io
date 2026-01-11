@@ -1,27 +1,15 @@
 {
-  "categories": {
-    "clis": "@:shared.categories.plural.clis",
-    "extensions": "@:shared.categories.plural.extensions",
-    "ides": "@:shared.categories.plural.ides",
-    "models": "@:shared.categories.plural.models",
-    "providers": "@:shared.categories.plural.modelProviders",
-    "vendors": "@:shared.categories.plural.vendors"
+  "meta": {
+    "title": "Search - AI Coding Stack",
+    "description": "Search across AI coding tools, models, providers, and resources. Find exactly what you need to enhance your development workflow."
   },
-  "navigate": "gezinme",
-  "noResults": "Sonuç bulunamadı",
-  "noResultsFor": "\"{query}\" için sonuç bulunamadı",
-  "placeholder": "AI kodlama araçlarını ara...",
-  "resultsCount": "{count} {count, plural, one {sonuç} other {sonuç}}",
-  "resultsCountFor": "\"{query}\" için {count} {count, plural, one {sonuç} other {sonuç}}",
-  "searching": "Aranıyor...",
-  "select": "seç",
-  "stacks": {
-    "clis": "@:shared.categories.plural.clis",
-    "extensions": "@:shared.categories.plural.extensions",
-    "ides": "@:shared.categories.plural.ides",
-    "modelProviders": "@:shared.categories.plural.modelProviders",
-    "models": "@:shared.categories.plural.models",
-    "vendors": "@:shared.categories.plural.vendors"
-  },
-  "title": "Arama Sonuçları"
+  "navigate": "to navigate",
+  "noResults": "No results found",
+  "noResultsFor": "No results found for \"{query}\"",
+  "placeholder": "Search AI coding tools...",
+  "resultsCount": "{count} {count, plural, one {result} other {results}}",
+  "resultsCountFor": "{count} {count, plural, one {result} other {results}} for \"{query}\"",
+  "searching": "Searching...",
+  "select": "to select",
+  "title": "Search Results"
 }

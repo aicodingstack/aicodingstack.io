@@ -1,6 +1,4 @@
 {
-  "allCLIs": "@:shared.categories.all.clis",
-  "compareAll": "@:shared.actions.compareAll",
   "noMatches": "No CLIs match your filters",
   "subtitle": "AI-powered command-line coding assistants",
   "title": "AI Coding CLIs"

@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "AI Coding Landscape - Visual Ecosystem Overview",
+    "description": "Visualize the complete AI coding ecosystem. Explore relationships between IDEs, models, providers, and tools in an interactive landscape view."
+  },
   "title": "AI Coding Landscape",
   "description": "Visualize the complete AI coding ecosystem",
   "backToOverview": "AI Coding Stack Overview"

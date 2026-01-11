@@ -35,70 +35,33 @@
     "fallbackNote": "注: サンプルデータを表示中。スター履歴 API は一時的に利用できません。"
   },
   "productHero": {
-    "categories": {
-      "CLI": "@:shared.categories.singular.cli",
-      "EXTENSION": "@:shared.categories.singular.extension",
-      "IDE": "@:shared.categories.singular.ide",
-      "MODEL": "@:shared.categories.singular.model",
-      "PROVIDER": "@:shared.categories.singular.modelProvider",
-      "VENDOR": "@:shared.categories.singular.vendor"
-    },
-    "documentation": "@:shared.terms.documentation",
-    "download": "@:shared.actions.download",
-    "getApiKey": "@:shared.labels.getApiKey",
-    "license": "@:shared.terms.license",
-    "platforms": "@:shared.terms.platforms",
-    "providerTypes": {
-      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
-      "model-service-provider": "@:shared.providerTypes.model-service-provider"
-    },
-    "runtime": "ランタイム",
-    "stars": "@:shared.terms.stars",
-    "supportedIdes": "@:shared.terms.supportedIdes",
-    "type": "@:shared.terms.type",
-    "vendor": "@:shared.terms.vendor",
-    "version": "@:shared.terms.version",
-    "visitWebsite": "@:shared.terms.visitWebsite"
+    "runtime": "ランタイム"
   },
   "communityLinks": {
     "blog": "ブログ",
     "blogDescription": "ブログ記事を読む",
-    "community": "@:shared.terms.community",
-    "discord": "@:shared.platforms.discord",
     "discordDescription": "コミュニティに参加",
-    "github": "@:shared.platforms.github",
     "githubDescription": "リポジトリを表示",
-    "linkedin": "@:shared.platforms.linkedin",
-    "linkedinDescription": "@:shared.terms.followUs",
-    "reddit": "@:shared.platforms.reddit",
     "redditDescription": "ディスカッションに参加",
-    "twitter": "@:shared.platforms.twitter",
-    "twitterDescription": "@:shared.terms.followUs",
-    "youtube": "@:shared.platforms.youtube",
     "youtubeDescription": "動画を見る"
   },
   "resourceLinks": {
+    "resources": "Resources",
     "changelog": "変更履歴",
     "changelogDescription": "変更履歴を表示",
-    "download": "@:shared.actions.download",
     "downloadDescription": "最新バージョンをダウンロード",
     "issue": "課題トラッカー",
     "issueDescription": "バグを報告して機能をリクエスト",
     "mcp": "MCP ドキュメント",
     "mcpDescription": "MCP 統合について学ぶ",
-    "pricing": "@:shared.terms.pricing",
     "pricingDescription": "価格プランを表示"
   },
   "productPricing": {
-    "title": "@:shared.terms.pricing",
     "viewFullDetails": "View full pricing details →"
   },
   "modelSpecifications": {
     "title": "Specifications",
-    "modelSize": "@:shared.terms.modelSize",
     "contextWindow": "Total Context",
-    "maxOutput": "@:shared.terms.maxOutput",
-    "pricing": "@:shared.terms.pricing",
     "input": "Input",
     "output": "Output",
     "cache": "Cache"
@@ -121,9 +84,6 @@
     "liveCodeBenchDesc": "Live coding performance"
   },
   "relatedProducts": {
-    "cli": "@:shared.categories.singular.cli",
-    "extension": "@:shared.categories.singular.extension",
-    "ide": "@:shared.categories.singular.ide",
     "title": "関連製品",
     "viewProduct": "製品を表示"
   },
@@ -181,9 +141,5 @@
         }
       }
     }
-  },
-  "resources": {
-    "community": "@:shared.terms.community",
-    "resources": "@:shared.terms.resources"
   }
 }

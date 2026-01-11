@@ -35,70 +35,33 @@
     "fallbackNote": "참고: 샘플 데이터를 표시 중입니다. 스타 히스토리 API를 일시적으로 사용할 수 없습니다."
   },
   "productHero": {
-    "categories": {
-      "CLI": "@:shared.categories.singular.cli",
-      "EXTENSION": "@:shared.categories.singular.extension",
-      "IDE": "@:shared.categories.singular.ide",
-      "MODEL": "@:shared.categories.singular.model",
-      "PROVIDER": "@:shared.categories.singular.modelProvider",
-      "VENDOR": "@:shared.categories.singular.vendor"
-    },
-    "documentation": "@:shared.terms.documentation",
-    "download": "@:shared.actions.download",
-    "getApiKey": "@:shared.labels.getApiKey",
-    "license": "@:shared.terms.license",
-    "platforms": "@:shared.terms.platforms",
-    "providerTypes": {
-      "foundation-model-provider": "@:shared.providerTypes.foundation-model-provider",
-      "model-service-provider": "@:shared.providerTypes.model-service-provider"
-    },
-    "runtime": "런타임",
-    "stars": "@:shared.terms.stars",
-    "supportedIdes": "@:shared.terms.supportedIdes",
-    "type": "@:shared.terms.type",
-    "vendor": "@:shared.terms.vendor",
-    "version": "@:shared.terms.version",
-    "visitWebsite": "@:shared.terms.visitWebsite"
+    "runtime": "런타임"
   },
   "communityLinks": {
     "blog": "블로그",
     "blogDescription": "블로그 게시물 읽기",
-    "community": "@:shared.terms.community",
-    "discord": "@:shared.platforms.discord",
     "discordDescription": "커뮤니티 참여",
-    "github": "@:shared.platforms.github",
     "githubDescription": "저장소 보기",
-    "linkedin": "@:shared.platforms.linkedin",
-    "linkedinDescription": "@:shared.terms.followUs",
-    "reddit": "@:shared.platforms.reddit",
     "redditDescription": "토론 참여",
-    "twitter": "@:shared.platforms.twitter",
-    "twitterDescription": "@:shared.terms.followUs",
-    "youtube": "@:shared.platforms.youtube",
     "youtubeDescription": "동영상 보기"
   },
   "resourceLinks": {
+    "resources": "Resources",
     "changelog": "변경 로그",
     "changelogDescription": "변경 로그 보기",
-    "download": "@:shared.actions.download",
     "downloadDescription": "최신 버전 다운로드",
     "issue": "이슈 추적기",
     "issueDescription": "버그 보고 및 기능 요청",
     "mcp": "MCP 문서",
     "mcpDescription": "MCP 통합 알아보기",
-    "pricing": "@:shared.terms.pricing",
     "pricingDescription": "가격 플랜 보기"
   },
   "productPricing": {
-    "title": "@:shared.terms.pricing",
     "viewFullDetails": "전체 가격 세부 정보 보기 →"
   },
   "modelSpecifications": {
     "title": "Specifications",
-    "modelSize": "@:shared.terms.modelSize",
     "contextWindow": "Total Context",
-    "maxOutput": "@:shared.terms.maxOutput",
-    "pricing": "@:shared.terms.pricing",
     "input": "Input",
     "output": "Output",
     "cache": "Cache"
@@ -121,9 +84,6 @@
     "liveCodeBenchDesc": "Live coding performance"
   },
   "relatedProducts": {
-    "cli": "@:shared.categories.singular.cli",
-    "extension": "@:shared.categories.singular.extension",
-    "ide": "@:shared.categories.singular.ide",
     "title": "관련 제품",
     "viewProduct": "제품 보기"
   },
@@ -181,9 +141,5 @@
         }
       }
     }
-  },
-  "resources": {
-    "community": "@:shared.terms.community",
-    "resources": "@:shared.terms.resources"
   }
 }

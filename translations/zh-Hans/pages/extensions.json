@@ -1,6 +1,4 @@
 {
-  "allExtensions": "@:shared.categories.all.extensions",
-  "compareAll": "@:shared.actions.compareAll",
   "noMatches": "没有符合筛选条件的扩展",
   "subtitle": "AI 驱动的编码扩展与插件",
   "title": "AI 编码扩展插件"
