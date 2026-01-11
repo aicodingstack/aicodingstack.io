@@ -44,7 +44,7 @@ function getVendorTypeLabel(t: ReturnType<typeof useTranslations>, type: string)
 
 function MatrixCell({ products, category }: MatrixCellProps) {
   const [isExpanded, setIsExpanded] = useState(false)
-  const tComponents = useTranslations('components')
+  const tComponent = useTranslations('components.product.vendorMatrix')
 
   if (products.length === 0) {
     return (
@@ -102,9 +102,9 @@ function MatrixCell({ products, category }: MatrixCellProps) {
           <div>
             <div className="flex items-center justify-between mb-1">
               <span className="font-medium text-sm tracking-tight">
-                {tComponents('vendorMatrix.cell.summary', {
+                {tComponent('cell.summary', {
                   count: products.length,
-                  category: getCategoryLabel(tComponents, category, products.length),
+                  category: getCategoryLabel(tComponent, category, products.length),
                 })}
               </span>
               <span className="text-xs text-[var(--color-text-muted)]">
@@ -142,7 +142,7 @@ function MatrixCell({ products, category }: MatrixCellProps) {
 export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
   const [selectedVendorTypes, setSelectedVendorTypes] = useState<Set<string>>(new Set())
   const [sortBy, setSortBy] = useState<'name' | 'products'>('products')
-  const tComponents = useTranslations('components')
+  const tComponent = useTranslations('components.product.vendorMatrix')
 
   const filteredAndSortedData = useMemo(() => {
     let filtered = matrixData
@@ -252,7 +252,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
         {/* Vendor Type Filters */}
         <div className="flex flex-wrap gap-2 items-center">
           <span className="text-sm text-[var(--color-text-secondary)] font-light">
-            {tComponents('vendorMatrix.controls.vendorTypeLabel')}
+            {tComponent('controls.vendorTypeLabel')}
           </span>
           {vendorTypes.map(type => (
             <button
@@ -266,7 +266,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
               }`}
             >
               <span className="text-[var(--color-text-secondary)]">
-                {getVendorTypeLabel(tComponents, type)}
+                {getVendorTypeLabel(tComponent, type)}
               </span>
             </button>
           ))}
@@ -276,7 +276,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
               onClick={() => setSelectedVendorTypes(new Set())}
               className="px-3 py-1 text-xs border border-[var(--color-border)] hover:border-[var(--color-border-strong)] hover:bg-[var(--color-hover)] text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-all"
             >
-              {tComponents('vendorMatrix.controls.clear')}
+              {tComponent('controls.clear')}
             </button>
           )}
         </div>
@@ -284,7 +284,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
         {/* Sort Controls */}
         <div className="flex gap-2 items-center">
           <span className="text-sm text-[var(--color-text-secondary)] font-light">
-            {tComponents('vendorMatrix.controls.sortByLabel')}
+            {tComponent('controls.sortByLabel')}
           </span>
           <button
             type="button"
@@ -295,7 +295,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
                 : 'border-[var(--color-border)] hover:bg-[var(--color-hover)]'
             }`}
           >
-            {tComponents('vendorMatrix.controls.sortName')}
+            {tComponent('controls.sortName')}
           </button>
           <button
             type="button"
@@ -306,7 +306,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
                 : 'border-[var(--color-border)] hover:bg-[var(--color-hover)]'
             }`}
           >
-            {tComponents('vendorMatrix.controls.sortProducts')}
+            {tComponent('controls.sortProducts')}
           </button>
         </div>
       </div>
@@ -318,11 +318,11 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
             {/* Table Header */}
             <div className="grid grid-cols-[200px_repeat(5,1fr)] gap-2 p-[var(--spacing-sm)] bg-[var(--color-bg-subtle)] border-b border-[var(--color-border)] sticky top-0 z-20">
               <div className="font-medium text-sm text-[var(--color-text-secondary)] px-2">
-                {tComponents('vendorMatrix.table.vendor')}
+                {tComponent('table.vendor')}
               </div>
               {PRODUCT_CATEGORIES.map(cat => (
                 <div key={cat} className="font-medium text-sm text-center px-2">
-                  {tComponents(`vendorMatrix.categories.${cat}`)}
+                  {tComponent(`categories.${cat}`)}
                 </div>
               ))}
             </div>
@@ -332,7 +332,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
               <div className="space-y-2">
                 {filteredAndSortedData.length === 0 ? (
                   <div className="text-center py-12 text-[var(--color-text-muted)]">
-                    {tComponents('vendorMatrix.table.noVendorsFound')}
+                    {tComponent('table.noVendorsFound')}
                   </div>
                 ) : (
                   filteredAndSortedData.map(row => (
@@ -346,7 +346,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
                           {row.vendorName}
                         </Link>
                         <span className="text-xs text-[var(--color-text-muted)]">
-                          {getVendorTypeLabel(tComponents, row.vendorType)}
+                          {getVendorTypeLabel(tComponent, row.vendorType)}
                         </span>
                       </div>
 
@@ -368,38 +368,30 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
       {/* Legend */}
       <div className="p-[var(--spacing-md)] bg-[var(--color-bg-subtle)] border border-[var(--color-border)]">
         <p className="text-xs font-medium text-[var(--color-text-secondary)] mb-2">
-          {tComponents('vendorMatrix.vendorTypes.label')}
+          {tComponent('vendorTypes.label')}
         </p>
         <div className="flex flex-wrap gap-4 text-xs font-light text-[var(--color-text-secondary)]">
           <span>
-            <span className="font-medium">
-              {tComponents('vendorMatrix.vendorTypes.types.full-stack.label')}:
-            </span>{' '}
-            {tComponents('vendorMatrix.vendorTypes.types.full-stack.description')}
+            <span className="font-medium">{tComponent('vendorTypes.types.full-stack.label')}:</span>{' '}
+            {tComponent('vendorTypes.types.full-stack.description')}
+          </span>
+          <span>
+            <span className="font-medium">{tComponent('vendorTypes.types.ai-native.label')}:</span>{' '}
+            {tComponent('vendorTypes.types.ai-native.description')}
+          </span>
+          <span>
+            <span className="font-medium">{tComponent('vendorTypes.types.tool-only.label')}:</span>{' '}
+            {tComponent('vendorTypes.types.tool-only.description')}
+          </span>
+          <span>
+            <span className="font-medium">{tComponent('vendorTypes.types.model-only.label')}:</span>{' '}
+            {tComponent('vendorTypes.types.model-only.description')}
           </span>
           <span>
             <span className="font-medium">
-              {tComponents('vendorMatrix.vendorTypes.types.ai-native.label')}:
+              {tComponent('vendorTypes.types.provider-only.label')}:
             </span>{' '}
-            {tComponents('vendorMatrix.vendorTypes.types.ai-native.description')}
-          </span>
-          <span>
-            <span className="font-medium">
-              {tComponents('vendorMatrix.vendorTypes.types.tool-only.label')}:
-            </span>{' '}
-            {tComponents('vendorMatrix.vendorTypes.types.tool-only.description')}
-          </span>
-          <span>
-            <span className="font-medium">
-              {tComponents('vendorMatrix.vendorTypes.types.model-only.label')}:
-            </span>{' '}
-            {tComponents('vendorMatrix.vendorTypes.types.model-only.description')}
-          </span>
-          <span>
-            <span className="font-medium">
-              {tComponents('vendorMatrix.vendorTypes.types.provider-only.label')}:
-            </span>{' '}
-            {tComponents('vendorMatrix.vendorTypes.types.provider-only.description')}
+            {tComponent('vendorTypes.types.provider-only.description')}
           </span>
         </div>
       </div>

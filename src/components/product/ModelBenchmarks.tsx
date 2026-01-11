@@ -12,7 +12,7 @@ export interface ModelBenchmarksProps {
  * Displays performance benchmark scores for AI models.
  */
 export function ModelBenchmarks({ benchmarks }: ModelBenchmarksProps) {
-  const tComponents = useTranslations('components')
+  const tComponent = useTranslations('components.product.benchmarks')
   if (!benchmarks || !hasBenchmarks(benchmarks)) {
     return null
   }
@@ -21,7 +21,7 @@ export function ModelBenchmarks({ benchmarks }: ModelBenchmarksProps) {
     <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
         <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-sm)]">
-          {tComponents('benchmarks.title')}
+          {tComponent('title')}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[var(--spacing-md)] mt-[var(--spacing-lg)]">
@@ -32,14 +32,12 @@ export function ModelBenchmarks({ benchmarks }: ModelBenchmarksProps) {
             return (
               <div key={key} className="border border-[var(--color-border)] p-[var(--spacing-md)]">
                 <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
-                  {tComponents(`benchmarks.${key}`)}
+                  {tComponent(`${key}`)}
                 </h3>
                 <p className="text-lg font-semibold tracking-tight mb-1">
                   {formatBenchmarkValue(key, value)}
                 </p>
-                <p className="text-xs text-[var(--color-text-muted)]">
-                  {tComponents(`benchmarks.${key}Desc`)}
-                </p>
+                <p className="text-xs text-[var(--color-text-muted)]">{tComponent(`${key}Desc`)}</p>
               </div>
             )
           })}

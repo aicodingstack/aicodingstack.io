@@ -28,19 +28,18 @@ export default function FilterSortBar({
   searchQuery = '',
   onSearchChange,
 }: FilterSortBarProps) {
-  const tComponents = useTranslations('components')
+  const tComponent = useTranslations('components.controls.filterSortBar')
   const [isSortOpen, setIsSortOpen] = useState(false)
   const sortRef = useRef<HTMLDivElement>(null)
 
   const sortOptions = [
-    { value: 'default', label: tComponents('filterSortBar.sortDefault') },
-    { value: 'name-asc', label: tComponents('filterSortBar.sortNameAsc') },
-    { value: 'name-desc', label: tComponents('filterSortBar.sortNameDesc') },
+    { value: 'default', label: tComponent('sortDefault') },
+    { value: 'name-asc', label: tComponent('sortNameAsc') },
+    { value: 'name-desc', label: tComponent('sortNameDesc') },
   ]
 
   const currentSortLabel =
-    sortOptions.find(opt => opt.value === sortOrder)?.label ||
-    tComponents('filterSortBar.sortDefault')
+    sortOptions.find(opt => opt.value === sortOrder)?.label || tComponent('sortDefault')
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -91,7 +90,7 @@ export default function FilterSortBar({
               type="text"
               value={searchQuery}
               onChange={e => onSearchChange(e.target.value)}
-              placeholder={tComponents('filterSortBar.search')}
+              placeholder={tComponent('search')}
               className="flex-1 px-[var(--spacing-sm)] py-1 text-sm border border-[var(--color-border)] bg-[var(--color-background)] text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-border-strong)] transition-colors"
             />
           </div>
@@ -99,9 +98,7 @@ export default function FilterSortBar({
 
         {/* Sort Custom Dropdown */}
         <div className="flex items-center gap-[var(--spacing-xs)]">
-          <span className="text-xs text-[var(--color-text-muted)]">
-            {tComponents('filterSortBar.sort')}
-          </span>
+          <span className="text-xs text-[var(--color-text-muted)]">{tComponent('sort')}</span>
           <div className="relative" ref={sortRef}>
             <button
               type="button"
@@ -138,9 +135,7 @@ export default function FilterSortBar({
 
         {/* License Filter Buttons */}
         <div className="flex items-center gap-[var(--spacing-xs)]">
-          <span className="text-xs text-[var(--color-text-muted)]">
-            {tComponents('filterSortBar.license')}
-          </span>
+          <span className="text-xs text-[var(--color-text-muted)]">{tComponent('license')}</span>
           <button
             type="button"
             onClick={() => toggleLicense('open-source')}
@@ -150,7 +145,7 @@ export default function FilterSortBar({
                 : 'border-[var(--color-border)] bg-[var(--color-background)] text-[var(--color-text-secondary)] hover:border-[var(--color-border-strong)]'
             }`}
           >
-            {tComponents('filterSortBar.openSource')}
+            {tComponent('openSource')}
           </button>
           <button
             type="button"
@@ -161,14 +156,14 @@ export default function FilterSortBar({
                 : 'border-[var(--color-border)] bg-[var(--color-background)] text-[var(--color-text-secondary)] hover:border-[var(--color-border-strong)]'
             }`}
           >
-            {tComponents('filterSortBar.proprietary')}
+            {tComponent('proprietary')}
           </button>
         </div>
 
         {/* Platform Filter Buttons */}
         <div className="flex items-center gap-[var(--spacing-xs)]">
           <span className="text-xs text-[var(--color-text-muted)]">
-            {platformLabel || tComponents('filterSortBar.platform')}
+            {platformLabel || tComponent('platform')}
           </span>
           {availablePlatforms.map(platform => (
             <button
@@ -193,7 +188,7 @@ export default function FilterSortBar({
             onClick={clearFilters}
             className="ml-auto px-[var(--spacing-sm)] py-1 text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
           >
-            {tComponents('filterSortBar.clearFilters')}
+            {tComponent('clearFilters')}
           </button>
         )}
       </div>

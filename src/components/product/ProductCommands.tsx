@@ -36,12 +36,12 @@ function CommandSectionItem({ value, label }: Omit<CommandSection, 'labelKey'>) 
 }
 
 export function ProductCommands({ install, launch, command }: ProductCommandsProps) {
-  const tComponents = useTranslations('components')
+  const tComponent = useTranslations('components.product.productCommands')
 
   const commands: CommandSection[] = [
-    { value: install, labelKey: 'install', label: tComponents('productCommands.install') },
-    { value: launch, labelKey: 'launch', label: tComponents('productCommands.launch') },
-    { value: command, labelKey: 'command', label: tComponents('productCommands.command') },
+    { value: install, labelKey: 'install', label: tComponent('install') },
+    { value: launch, labelKey: 'launch', label: tComponent('launch') },
+    { value: command, labelKey: 'command', label: tComponent('command') },
   ]
 
   const hasAnyCommand = commands.some(cmd => cmd.value)

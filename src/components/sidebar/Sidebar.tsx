@@ -29,10 +29,10 @@ function Sidebar({
   desktopWidth = 'lg:w-[250px]',
 }: SidebarProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
-  const tComponents = useTranslations('components')
+  const tComponent = useTranslations('components.sidebar.sidebar')
 
   const activeItem = useMemo(() => items.find(item => item.id === activeId), [items, activeId])
-  const currentTitle = activeItem?.title || tComponents('sidebar.selectItem')
+  const currentTitle = activeItem?.title || tComponent('selectItem')
 
   const scrollToTop = useCallback(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -86,7 +86,7 @@ function Sidebar({
             type="button"
             onClick={scrollToTop}
             className="ml-[var(--spacing-sm)] p-[var(--spacing-xs)] hover:bg-[var(--color-hover)] transition-colors rounded"
-            aria-label={tComponents('sidebar.backToTop')}
+            aria-label={tComponent('backToTop')}
           >
             <svg
               className="w-6 h-6 text-[var(--color-text-secondary)]"

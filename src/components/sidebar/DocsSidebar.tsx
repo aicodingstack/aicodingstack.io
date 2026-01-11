@@ -21,7 +21,7 @@ const docOrder = [
 ]
 
 export default function DocsSidebar({ sections, activeSlug }: DocsSidebarProps) {
-  const tComponents = useTranslations('components')
+  const tComponent = useTranslations('components.sidebar.docsSidebar')
 
   // Sort sections by custom order
   const sortedSections = [...sections].sort((a, b) => {
@@ -71,8 +71,8 @@ export default function DocsSidebar({ sections, activeSlug }: DocsSidebarProps) 
     <Sidebar
       items={items}
       activeId={activeSlug}
-      title={tComponents('docsSidebar.title')}
-      label={tComponents('docsSidebar.label')}
+      title={tComponent('title')}
+      label={tComponent('label')}
       icon={icon}
       desktopWidth="lg:w-[250px]"
     />

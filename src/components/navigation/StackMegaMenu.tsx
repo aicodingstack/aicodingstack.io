@@ -49,10 +49,8 @@ const FeaturedLink = memo(function FeaturedLink({
 
   return (
     <Link href={href} onClick={onClose} className={`${featuredLinkClass} ${marginClass}`}>
-      <div className="font-medium mb-[var(--spacing-xs)]">{tComponents(`header.${titleKey}`)}</div>
-      <div className="text-xs text-[var(--color-text-secondary)]">
-        {tComponents(`header.${descKey}`)}
-      </div>
+      <div className="font-medium mb-[var(--spacing-xs)]">{tComponents(titleKey)}</div>
+      <div className="text-xs text-[var(--color-text-secondary)]">{tComponents(descKey)}</div>
     </Link>
   )
 })
@@ -68,7 +66,7 @@ const MenuColumn = memo(function MenuColumn({
 }: MenuColumn & { onClose: () => void; tComponents: ReturnType<typeof useTranslations> }) {
   return (
     <div>
-      <h4 className={columnTitleClass}>{tComponents(`header.${titleKey}`)}</h4>
+      <h4 className={columnTitleClass}>{tComponents(titleKey)}</h4>
       <ul className="space-y-1">
         {items.map(item => (
           <li key={item.href}>
@@ -83,7 +81,7 @@ const MenuColumn = memo(function MenuColumn({
 })
 
 export const StackMegaMenu = memo(function StackMegaMenu({ isOpen, onClose }: StackMegaMenuProps) {
-  const tComponents = useTranslations('components')
+  const tComponent = useTranslations('components.common.header')
   const tShared = useTranslations('shared')
 
   // Memoize menu sections to avoid recreating on every render
@@ -125,7 +123,7 @@ export const StackMegaMenu = memo(function StackMegaMenu({ isOpen, onClose }: St
         <div className="p-[var(--spacing-md)]">
           {/* Featured Links */}
           {featuredLinks.map(link => (
-            <FeaturedLink key={link.href} {...link} onClose={onClose} tComponents={tComponents} />
+            <FeaturedLink key={link.href} {...link} onClose={onClose} tComponents={tComponent} />
           ))}
 
           {/* Two Column Grid */}
@@ -135,7 +133,7 @@ export const StackMegaMenu = memo(function StackMegaMenu({ isOpen, onClose }: St
                 key={column.titleKey}
                 {...column}
                 onClose={onClose}
-                tComponents={tComponents}
+                tComponents={tComponent}
               />
             ))}
           </div>

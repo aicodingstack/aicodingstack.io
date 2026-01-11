@@ -58,7 +58,7 @@ export default function LanguageSwitcher() {
   const locale = useLocale() as Locale
   const router = useRouter()
   const pathname = usePathname()
-  const tComponents = useTranslations('components')
+  const tComponent = useTranslations('components.common.footer')
   const [isOpen, setIsOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
@@ -120,8 +120,8 @@ export default function LanguageSwitcher() {
         type="button"
         onClick={() => setIsOpen(!isOpen)}
         className="footer-control-button"
-        title={tComponents('footer.selectLanguage')}
-        aria-label={tComponents('footer.selectLanguage')}
+        title={tComponent('selectLanguage')}
+        aria-label={tComponent('selectLanguage')}
         aria-expanded={isOpen}
       >
         <Languages className="footer-control-icon" />

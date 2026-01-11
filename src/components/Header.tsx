@@ -32,7 +32,7 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeMegaMenu, setActiveMegaMenu] = useState<'aiCodingStack' | 'ranking' | null>(null)
   const [isSearchDialogOpen, setIsSearchDialogOpen] = useState(false)
-  const tComponents = useTranslations('components')
+  const tComponent = useTranslations('components.common.header')
 
   // Menu items configuration - memoized to avoid recreation on each render
   const menuItems = useMemo<MenuItem[]>(
@@ -107,7 +107,7 @@ function Header() {
               aria-expanded={isActive}
               aria-haspopup="true"
             >
-              {tComponents(`header.${item.translationKey}`)}
+              {tComponent(`${item.translationKey}`)}
             </Link>
             {item.megaMenuType === 'aiCodingStack' && (
               <StackMegaMenu isOpen={isActive} onClose={handleMegaMenuClose} />
@@ -123,17 +123,17 @@ function Header() {
         <li key={item.href}>
           {item.isExternal ? (
             <a href={item.href} target="_blank" rel="noopener" className={DESKTOP_LINK_CLASSES}>
-              → {tComponents(`header.${item.translationKey}`)}
+              → {tComponent(`${item.translationKey}`)}
             </a>
           ) : (
             <Link href={item.href} className={DESKTOP_LINK_CLASSES}>
-              {tComponents(`header.${item.translationKey}`)}
+              {tComponent(`${item.translationKey}`)}
             </Link>
           )}
         </li>
       )
     },
-    [activeMegaMenu, handleMegaMenuOpen, handleMegaMenuClose, tComponents]
+    [activeMegaMenu, handleMegaMenuOpen, handleMegaMenuClose, tComponent]
   )
 
   // Render mobile menu item
@@ -142,22 +142,22 @@ function Header() {
       <li key={item.href}>
         {item.isExternal ? (
           <a href={item.href} target="_blank" rel="noopener" className={MOBILE_LINK_CLASSES}>
-            → {tComponents(`header.${item.translationKey}`)}
+            → {tComponent(`${item.translationKey}`)}
           </a>
         ) : (
           <Link href={item.href} className={MOBILE_LINK_CLASSES} onClick={handleMenuClose}>
-            {tComponents(`header.${item.translationKey}`)}
+            {tComponent(`${item.translationKey}`)}
           </Link>
         )}
       </li>
     ),
-    [handleMenuClose, tComponents]
+    [handleMenuClose, tComponent]
   )
 
   // Memoized menu button label
   const menuButtonLabel = useMemo(
-    () => (isMenuOpen ? tComponents('header.closeMenu') : tComponents('header.openMenu')),
-    [isMenuOpen, tComponents]
+    () => (isMenuOpen ? tComponent('closeMenu') : tComponent('openMenu')),
+    [isMenuOpen, tComponent]
   )
 
   return (
@@ -206,7 +206,7 @@ function Header() {
                   d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                 />
               </svg>
-              <span className="flex-1 text-left">{tComponents('header.searchPlaceholder')}</span>
+              <span className="flex-1 text-left">{tComponent('searchPlaceholder')}</span>
               <kbd className="flex items-center gap-1 px-1.5 py-0.5 text-xs border border-[var(--color-border)]">
                 <Command className="w-3 h-3" />
                 <span>K</span>
@@ -221,7 +221,7 @@ function Header() {
               type="button"
               onClick={() => setIsSearchDialogOpen(true)}
               className="p-[var(--spacing-xs)] hover:bg-[var(--color-hover)] transition-colors"
-              aria-label={tComponents('header.search')}
+              aria-label={tComponent('search')}
             >
               <svg
                 className="w-5 h-5"
@@ -244,7 +244,7 @@ function Header() {
               type="button"
               onClick={handleMenuToggle}
               className="p-[var(--spacing-xs)] hover:bg-[var(--color-hover)] transition-colors"
-              aria-label={tComponents('header.toggleMenu')}
+              aria-label={tComponent('toggleMenu')}
             >
               <svg
                 className="w-6 h-6"

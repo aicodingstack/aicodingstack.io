@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { useRouter } from '@/i18n/navigation'
+import { buildManifestPath } from '@/lib/manifest-registry'
 import type { SearchResult } from '@/lib/search'
 import { getAutocompleteSuggestions } from '@/lib/search'
 
@@ -15,7 +16,8 @@ export interface SearchDialogProps {
 }
 
 export default function SearchDialog({ isOpen, onClose, locale }: SearchDialogProps) {
-  const t = useTranslations()
+  const tShared = useTranslations('shared')
+  const tComponent = useTranslations('components.controls.searchDialog')
   const router = useRouter()
   const [query, setQuery] = useState('')
   const [suggestions, setSuggestions] = useState<SearchResult[]>([])
@@ -48,7 +50,7 @@ export default function SearchDialog({ isOpen, onClose, locale }: SearchDialogPr
   // Navigate to result
   const navigateToResult = (result: SearchResult) => {
     onClose()
-    router.push(`/${result.category}/${result.id}`)
+    router.push(buildManifestPath(result.category, result.id))
   }
 
   // Navigate to search page
@@ -102,7 +104,7 @@ export default function SearchDialog({ isOpen, onClose, locale }: SearchDialogPr
             <Command.Input
               value={query}
               onValueChange={setQuery}
-              placeholder={t('components.header.searchPlaceholder')}
+              placeholder={tComponent('placeholder')}
               className="flex-1 bg-transparent text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] focus:outline-none text-base"
               autoFocus
             />
@@ -116,9 +118,7 @@ export default function SearchDialog({ isOpen, onClose, locale }: SearchDialogPr
             {/* Empty State */}
             <Command.Empty className="py-12 text-center">
               {query.trim() === '' ? (
-                <div className="text-[var(--color-text-muted)] text-sm">
-                  {t('pages.search.placeholder')}
-                </div>
+                <div className="text-[var(--color-text-muted)] text-sm">{tComponent('empty')}</div>
               ) : (
                 <div className="text-center">
                   <svg
@@ -136,7 +136,7 @@ export default function SearchDialog({ isOpen, onClose, locale }: SearchDialogPr
                     />
                   </svg>
                   <p className="text-sm text-[var(--color-text-muted)]">
-                    {t('pages.search.noResultsFor', { query })}
+                    {tComponent('noResultsFor', { query })}
                   </p>
                 </div>
               )}
@@ -163,8 +163,8 @@ export default function SearchDialog({ isOpen, onClose, locale }: SearchDialogPr
                       </div>
                       <div className="flex-shrink-0">
                         <span className="inline-block px-2 py-0.5 text-xs border border-[var(--color-border)] text-[var(--color-text-muted)]">
-                          {t(
-                            `shared.categories.plural.${result.category === 'providers' ? 'modelProviders' : result.category}`
+                          {tShared(
+                            `categories.plural.${result.category === 'providers' ? 'modelProviders' : result.category}`
                           )}
                         </span>
                       </div>
@@ -180,7 +180,7 @@ export default function SearchDialog({ isOpen, onClose, locale }: SearchDialogPr
                     className="px-4 py-3 cursor-pointer transition-colors border-t border-[var(--color-border)] data-[selected=true]:bg-[var(--color-hover)] aria-selected:bg-[var(--color-hover)] text-[var(--color-text-secondary)]"
                   >
                     <div className="flex items-center gap-2 text-sm">
-                      <span>View all results for &quot;{query}&quot;</span>
+                      <span>{tComponent('viewAllResults', { query })}</span>
                       <span className="ml-auto text-[var(--color-text-muted)]">→</span>
                     </div>
                   </Command.Item>
@@ -199,13 +199,13 @@ export default function SearchDialog({ isOpen, onClose, locale }: SearchDialogPr
                 <kbd className="px-1.5 py-0.5 border border-[var(--color-border)] bg-[var(--color-bg)]">
                   ↓
                 </kbd>
-                <span>{t('pages.search.navigate')}</span>
+                <span>{tComponent('navigate')}</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <kbd className="px-1.5 py-0.5 border border-[var(--color-border)] bg-[var(--color-bg)]">
                   ↵
                 </kbd>
-                <span>{t('pages.search.select')}</span>
+                <span>{tComponent('select')}</span>
               </div>
             </div>
           )}

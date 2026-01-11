@@ -75,7 +75,8 @@ export function ProductHero({
   applyKeyUrl,
   additionalUrls,
 }: ProductHeroProps) {
-  const tComponents = useTranslations('components')
+  const tComponent = useTranslations('components.product.productHero')
+  const tShared = useTranslations('shared')
 
   // Determine which platforms to display
   const displayPlatforms = platforms
@@ -116,9 +117,7 @@ export function ProductHero({
           <div className="inline-flex items-center gap-[var(--spacing-sm)] flex-wrap px-[var(--spacing-md)] py-[var(--spacing-md)] border border-[var(--color-border)] text-sm">
             {vendor && (
               <div className="flex gap-1">
-                <span className="text-[var(--color-text-muted)]">
-                  {tComponents('productHero.vendor')}:
-                </span>
+                <span className="text-[var(--color-text-muted)]">{tComponent('vendor')}:</span>
                 <span className="font-medium">{vendor}</span>
               </div>
             )}
@@ -127,9 +126,7 @@ export function ProductHero({
 
             {latestVersion && (
               <div className="flex gap-1">
-                <span className="text-[var(--color-text-muted)]">
-                  {tComponents('productHero.version')}:
-                </span>
+                <span className="text-[var(--color-text-muted)]">{tComponent('version')}:</span>
                 <span className="font-medium">{latestVersion}</span>
               </div>
             )}
@@ -138,13 +135,11 @@ export function ProductHero({
 
             {license && (
               <div className="flex gap-1">
-                <span className="text-[var(--color-text-muted)]">
-                  {tComponents('productHero.license')}:
-                </span>
+                <span className="text-[var(--color-text-muted)]">{tComponent('license')}:</span>
                 {renderLicense(
                   license,
                   '!font-medium hover:underline hover:decoration-dotted transition-colors underline-offset-2',
-                  tComponents
+                  tShared
                 )}
               </div>
             )}
@@ -155,9 +150,7 @@ export function ProductHero({
 
             {githubStars !== null && githubStars !== undefined && (
               <div className="flex gap-1">
-                <span className="text-[var(--color-text-muted)]">
-                  {tComponents('productHero.stars')}:
-                </span>
+                <span className="text-[var(--color-text-muted)]">{tComponent('stars')}:</span>
                 <span className="font-medium">{githubStars}k</span>
               </div>
             )}
@@ -199,7 +192,7 @@ export function ProductHero({
           <div className="flex justify-center mb-[var(--spacing-lg)]">
             <div className="inline-flex items-center gap-[var(--spacing-xs)] px-[var(--spacing-md)] py-[var(--spacing-sm)] bg-[var(--color-hover)] border border-[var(--color-border)]">
               <span className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium">
-                {tComponents('productHero.platforms')}:
+                {tComponent('platforms')}:
               </span>
               <div className="flex gap-[var(--spacing-xs)] flex-wrap">
                 {(['macOS', 'Windows', 'Linux'] as const).map(platform => {
@@ -228,7 +221,7 @@ export function ProductHero({
           <div className="flex justify-center mb-[var(--spacing-lg)]">
             <div className="inline-flex items-center gap-[var(--spacing-xs)] px-[var(--spacing-md)] py-[var(--spacing-sm)] bg-[var(--color-hover)] border border-[var(--color-border)]">
               <span className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium">
-                {tComponents('productHero.type')}:
+                {tComponent('type')}:
               </span>
               <span className="text-sm font-medium">{type}</span>
             </div>
@@ -244,7 +237,7 @@ export function ProductHero({
               rel="noopener"
               className="inline-flex items-center gap-[var(--spacing-xs)] px-[var(--spacing-md)] py-[var(--spacing-sm)] text-sm font-medium border border-[var(--color-border-strong)] bg-[var(--color-text)] text-[var(--color-bg)] hover:bg-[var(--color-text-secondary)] transition-all"
             >
-              <span>↗</span> {tComponents('productHero.visitWebsite')}
+              <span>↗</span> {tComponent('visitWebsite')}
             </a>
           )}
 
@@ -266,7 +259,7 @@ export function ProductHero({
               rel="noopener"
               className="inline-flex items-center gap-[var(--spacing-xs)] px-[var(--spacing-md)] py-[var(--spacing-sm)] text-sm font-medium border border-[var(--color-border-strong)] bg-transparent hover:bg-[var(--color-hover)] transition-all"
             >
-              <span>→</span> {tComponents('productHero.documentation')}
+              <span>→</span> {tComponent('documentation')}
             </a>
           )}
 
@@ -277,7 +270,7 @@ export function ProductHero({
               rel="noopener"
               className="inline-flex items-center gap-[var(--spacing-xs)] px-[var(--spacing-md)] py-[var(--spacing-sm)] text-sm font-medium border border-[var(--color-border-strong)] bg-transparent hover:bg-[var(--color-hover)] transition-all"
             >
-              <span>⬇</span> {tComponents('productHero.download')}
+              <span>⬇</span> {tComponent('download')}
             </a>
           )}
 
@@ -288,7 +281,7 @@ export function ProductHero({
               rel="noopener"
               className="inline-flex items-center gap-[var(--spacing-xs)] px-[var(--spacing-md)] py-[var(--spacing-sm)] text-sm font-medium border border-[var(--color-border-strong)] bg-transparent hover:bg-[var(--color-hover)] transition-all"
             >
-              <span>🔑</span> {tComponents('productHero.getApiKey')}
+              <span>🔑</span> {tComponent('getApiKey')}
             </a>
           )}
 

@@ -35,7 +35,7 @@ function FooterLinkList({ title, links }: FooterLinkListProps) {
 }
 
 export default function Footer() {
-  const tComponents = useTranslations('components')
+  const tComponent = useTranslations('components.common.footer')
   const tShared = useTranslations('shared')
 
   // Define link arrays (static hrefs, only labels depend on translations)
@@ -81,8 +81,8 @@ export default function Footer() {
             {tShared('terms.aiCodingStack')}
           </span>
           <p className="text-sm pb-[var(--spacing-sm)] leading-[1.8] text-[var(--color-text-secondary)] font-light">
-            {tComponents('footer.tagline')}
-            <span className="block mt-[var(--spacing-sm)]">{tComponents('footer.openSource')}</span>
+            {tComponent('tagline')}
+            <span className="block mt-[var(--spacing-sm)]">{tComponent('openSource')}</span>
           </p>
           <div className="flex gap-[var(--spacing-xs)]">
             <ThemeSwitcher />
@@ -96,7 +96,7 @@ export default function Footer() {
       </div>
 
       <div className="py-[var(--spacing-md)] text-center text-xs text-[var(--color-text-muted)]">
-        {tComponents('footer.copyright')}
+        {tComponent('copyright')}
       </div>
     </footer>
   )
