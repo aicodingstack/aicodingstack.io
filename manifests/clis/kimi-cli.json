@@ -79,6 +79,12 @@
       "installPath": null
     },
     {
+      "os": "Windows",
+      "installCommand": "uv tool install --python 3.13 kimi-cli",
+      "launchCommand": "kimi",
+      "installPath": null
+    },
+    {
       "os": "Linux",
       "installCommand": "uv tool install --python 3.13 kimi-cli",
       "launchCommand": "kimi",

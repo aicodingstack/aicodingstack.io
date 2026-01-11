@@ -54,6 +54,7 @@
   "lifecycle": "maintained",
   "knowledgeCutoff": "2024-09-30",
   "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
   "capabilities": ["tool-choice", "structured-outputs", "function-calling", "reasoning"],
   "benchmarks": {
     "sweBench": 71.8,
@@ -62,7 +63,7 @@
     "liveCodeBench": 28.7,
     "mmmu": 74.4,
     "mmmuPro": null,
-    "webDevArena": 148.0
+    "webDevArena": 148
   },
   "platformUrls": {
     "huggingface": null,

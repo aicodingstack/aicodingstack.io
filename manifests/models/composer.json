@@ -54,6 +54,7 @@
   "lifecycle": "latest",
   "knowledgeCutoff": null,
   "inputModalities": ["text"],
+  "outputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
   "benchmarks": {
     "sweBench": null,

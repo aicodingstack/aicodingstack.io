@@ -54,13 +54,14 @@
   "lifecycle": "maintained",
   "knowledgeCutoff": null,
   "inputModalities": ["text"],
+  "outputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
     "sweBench": 55.4,
     "terminalBench": 0.245,
     "sciCode": null,
     "liveCodeBench": null,
-    "mmmu": 68.0,
+    "mmmu": 68,
     "mmmuPro": null,
     "webDevArena": null
   },

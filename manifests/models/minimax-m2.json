@@ -54,6 +54,7 @@
   "lifecycle": "maintained",
   "knowledgeCutoff": "2025-10",
   "inputModalities": ["text"],
+  "outputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
     "sweBench": 61,
