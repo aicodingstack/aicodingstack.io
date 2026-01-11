@@ -9,7 +9,7 @@
  * - Product schemas: /manifests/$schemas/*.schema.json
  */
 
-import type { ModelCapability, ModelInputModality } from './model-enums'
+import type { ModelCapability, ModelInputModality, ModelOutputModality } from './model-enums'
 
 // =============================================================================
 // SECTION 1: Base Ref Types (from /manifests/$schemas/ref/)
@@ -237,6 +237,7 @@ export interface ManifestModel extends ManifestVendorEntity {
   lifecycle: ModelLifecycle
   knowledgeCutoff: string | null
   inputModalities: ModelInputModality[]
+  outputModalities: ModelOutputModality[]
   capabilities: ModelCapability[]
   benchmarks: ManifestBenchmarks
   platformUrls: ManifestPlatformUrls

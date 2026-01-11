@@ -67,6 +67,16 @@
           "uniqueItems": true,
           "minItems": 1
         },
+        "outputModalities": {
+          "type": "array",
+          "description": "Output modalities supported by the model",
+          "items": {
+            "type": "string",
+            "enum": ["text", "image", "audio", "video"]
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
         "capabilities": {
           "type": "array",
           "description": "Advanced capabilities supported by the model",
@@ -134,6 +144,7 @@
         "lifecycle",
         "knowledgeCutoff",
         "inputModalities",
+        "outputModalities",
         "capabilities",
         "benchmarks",
         "platformUrls"
