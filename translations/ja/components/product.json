@@ -4,25 +4,15 @@
     "install": "インストール",
     "launch": "起動"
   },
-  "vendorProducts": {
-    "title": "製品"
-  },
-  "vendorModels": {
-    "title": "モデル"
-  },
   "platformLinks": {
-    "title": "AI プラットフォームで探す",
     "aiPlatforms": {
       "huggingface": {
-        "title": "Hugging Face",
         "description": "モデルカードと重みを表示"
       },
       "artificialAnalysis": {
-        "title": "Artificial Analysis",
         "description": "AI モデルのリーダーボードとベンチマーク"
       },
       "openrouter": {
-        "title": "OpenRouter",
         "description": "複数の AI モデルを比較して使用"
       }
     }
@@ -46,7 +36,6 @@
     "youtubeDescription": "動画を見る"
   },
   "resourceLinks": {
-    "resources": "Resources",
     "changelog": "変更履歴",
     "changelogDescription": "変更履歴を表示",
     "downloadDescription": "最新バージョンをダウンロード",
@@ -56,31 +45,16 @@
     "mcpDescription": "MCP 統合について学ぶ",
     "pricingDescription": "価格プランを表示"
   },
-  "productPricing": {
-    "viewFullDetails": "View full pricing details →"
-  },
-  "modelSpecifications": {
-    "title": "Specifications",
-    "contextWindow": "Total Context",
-    "input": "Input",
-    "output": "Output",
-    "cache": "Cache"
-  },
+  "productPricing": {},
+  "modelSpecifications": {},
   "benchmarks": {
     "title": "Performance Benchmarks",
-    "sweBench": "SWE-bench Verified",
     "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBench": "TerminalBench 2.0",
     "terminalBenchDesc": "Command-line interface proficiency",
-    "mmmu": "MMMU",
     "mmmuDesc": "Multimodal understanding",
-    "mmmuPro": "MMMU Pro",
     "mmmuProDesc": "Advanced multimodal tasks",
-    "webDevArena": "WebDevArena",
     "webDevArenaDesc": "Web development challenges",
-    "sciCode": "SciCode",
     "sciCodeDesc": "Scientific code generation",
-    "liveCodeBench": "LiveCodeBench",
     "liveCodeBenchDesc": "Live coding performance"
   },
   "relatedProducts": {
@@ -91,30 +65,14 @@
     "cell": {
       "summary": "{count} {category}"
     },
-    "categories": {
-      "cli": "CLI",
-      "extension": "Extension",
-      "ide": "IDE",
-      "model": "Model",
-      "provider": "Provider"
-    },
-    "categoriesPlural": {
-      "cli": "CLIs",
-      "extension": "Extensions",
-      "ide": "IDEs",
-      "model": "Models",
-      "provider": "Providers"
-    },
     "controls": {
       "clear": "Clear",
       "sortByLabel": "Sort by:",
       "sortName": "Name",
-      "sortProducts": "Products",
       "vendorTypeLabel": "Vendor Type:"
     },
     "table": {
-      "noVendorsFound": "No vendors found",
-      "vendor": "Vendor"
+      "noVendorsFound": "No vendors found"
     },
     "vendorTypes": {
       "label": "Vendor Types:",

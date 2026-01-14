@@ -12,8 +12,16 @@
     "sortNameAsc": "Nom (A-Z)",
     "sortNameDesc": "Nom (Z-A)"
   },
+  "searchDialog": {
+    "placeholder": "Type to search...",
+    "empty": "Start typing to search...",
+    "noResultsFor": "No results for \"{query}\"",
+    "navigate": "to navigate",
+    "select": "to select",
+    "viewAllResults": "View all results for \"{query}\""
+  },
   "searchInput": {
-    "placeholder": "Search...",
+    "placeholder": "@:components.controls.searchInput.placeholder",
     "clear": "Clear search"
   }
 }

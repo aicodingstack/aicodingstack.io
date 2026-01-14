@@ -9,30 +9,19 @@
   },
   "noResults": "No open source projects found for this category.",
   "note": "Note: This page only shows projects with GitHub repositories. Some projects, while not open source, maintain GitHub repositories as user feedback channels.",
-  "productType": {
-    "cli": "CLI",
-    "extension": "Extension",
-    "ide": "IDE"
-  },
   "statistics": {
-    "closedSource": "Proprietary",
-    "closedSourceCount": "Proprietary Projects",
+    "closedSourceCount": "독점 프로젝트",
     "closedSourcePercentage": "Proprietary Percentage",
     "licenseBreakdown": "License Distribution",
-    "openSource": "Open Source",
-    "openSourceCount": "Open Source Projects",
+    "openSourceCount": "오픈 소스 프로젝트",
     "projects": "projects",
     "title": "Open Source vs Proprietary Distribution",
     "totalProjects": "Total Projects"
   },
   "table": {
-    "license": "License",
-    "name": "Name",
-    "openSourceTitle": "Open Source Projects ({count})",
-    "proprietaryTitle": "Proprietary Projects ({count})",
-    "rank": "Rank",
-    "stars": "Stars",
-    "type": "Type"
+    "openSourceTitle": "오픈 소스 프로젝트 ({count})",
+    "proprietaryTitle": "독점 프로젝트 ({count})",
+    "rank": "Rank"
   },
   "title": "Open Source Projects Ranking"
 }

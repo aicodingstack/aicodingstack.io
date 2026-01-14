@@ -4,25 +4,15 @@
     "install": "安裝",
     "launch": "啟動"
   },
-  "vendorProducts": {
-    "title": "產品"
-  },
-  "vendorModels": {
-    "title": "模型"
-  },
   "platformLinks": {
-    "title": "在 AI 平台上尋找",
     "aiPlatforms": {
       "huggingface": {
-        "title": "Hugging Face",
         "description": "查看模型卡片與權重"
       },
       "artificialAnalysis": {
-        "title": "Artificial Analysis",
         "description": "AI 模型排行榜與基準測試"
       },
       "openrouter": {
-        "title": "OpenRouter",
         "description": "比較並使用多個 AI 模型"
       }
     }
@@ -46,7 +36,6 @@
     "youtubeDescription": "觀看影片"
   },
   "resourceLinks": {
-    "resources": "資源",
     "changelog": "更新日誌",
     "changelogDescription": "檢視更新日誌",
     "downloadDescription": "下載最新版本",
@@ -56,31 +45,16 @@
     "mcpDescription": "了解 MCP 整合",
     "pricingDescription": "檢視定價方案"
   },
-  "productPricing": {
-    "viewFullDetails": "View full pricing details →"
-  },
-  "modelSpecifications": {
-    "title": "Specifications",
-    "contextWindow": "Total Context",
-    "input": "Input",
-    "output": "Output",
-    "cache": "Cache"
-  },
+  "productPricing": {},
+  "modelSpecifications": {},
   "benchmarks": {
     "title": "Performance Benchmarks",
-    "sweBench": "SWE-bench Verified",
     "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBench": "TerminalBench 2.0",
     "terminalBenchDesc": "Command-line interface proficiency",
-    "mmmu": "MMMU",
     "mmmuDesc": "Multimodal understanding",
-    "mmmuPro": "MMMU Pro",
     "mmmuProDesc": "Advanced multimodal tasks",
-    "webDevArena": "WebDevArena",
     "webDevArenaDesc": "Web development challenges",
-    "sciCode": "SciCode",
     "sciCodeDesc": "Scientific code generation",
-    "liveCodeBench": "LiveCodeBench",
     "liveCodeBenchDesc": "Live coding performance"
   },
   "relatedProducts": {
@@ -91,30 +65,14 @@
     "cell": {
       "summary": "{count} 個{category}"
     },
-    "categories": {
-      "cli": "CLI",
-      "extension": "Extension",
-      "ide": "IDE",
-      "model": "Model",
-      "provider": "Provider"
-    },
-    "categoriesPlural": {
-      "cli": "CLIs",
-      "extension": "Extensions",
-      "ide": "IDEs",
-      "model": "Models",
-      "provider": "Providers"
-    },
     "controls": {
       "clear": "清除",
       "sortByLabel": "排序方式：",
       "sortName": "名稱",
-      "sortProducts": "產品",
       "vendorTypeLabel": "供應商類型："
     },
     "table": {
-      "noVendorsFound": "未找到供應商",
-      "vendor": "供應商"
+      "noVendorsFound": "未找到供應商"
     },
     "vendorTypes": {
       "label": "供應商類型：",

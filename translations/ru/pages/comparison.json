@@ -5,6 +5,7 @@
     "title": "Сравнение CLI ИИ-кодинга"
   },
   "columns": {
+    "name": "Name",
     "cache": "Кэш",
     "capabilities": "Возможности",
     "contextLength": "Длина контекста",
@@ -24,8 +25,7 @@
     "startingPrice": "Начальная цена",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "web-dev-arena": "WebDev Arena",
-    "name": "Name"
+    "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "Назад к расширениям",

@@ -5,6 +5,7 @@
     "title": "AI-Coding-CLI-Vergleich"
   },
   "columns": {
+    "name": "Name",
     "cache": "Cache",
     "capabilities": "Funktionen",
     "contextLength": "Kontextlänge",
@@ -24,8 +25,7 @@
     "startingPrice": "Startpreis",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "web-dev-arena": "WebDev Arena",
-    "name": "Name"
+    "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "Zurück zu Erweiterungen",

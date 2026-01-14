@@ -12,28 +12,23 @@ import componentsNavigation from './components/navigation.json'
 import componentsProduct from './components/product.json'
 import componentsSidebar from './components/sidebar.json'
 import articles from './pages/articles.json'
-import cliDetail from './pages/cli-detail.json'
 import clis from './pages/clis.json'
 import comparison from './pages/comparison.json'
 import curatedCollections from './pages/curated-collections.json'
 import docs from './pages/docs.json'
-import extensionDetail from './pages/extension-detail.json'
 import extensions from './pages/extensions.json'
 // Page translations
 import home from './pages/home.json'
-import ideDetail from './pages/ide-detail.json'
 import ides from './pages/ides.json'
 import landscape from './pages/landscape.json'
 import manifesto from './pages/manifesto.json'
 import modelCompare from './pages/model-compare.json'
 import modelDetail from './pages/model-detail.json'
-import modelProviderDetail from './pages/model-provider-detail.json'
 import modelProviders from './pages/model-providers.json'
 import models from './pages/models.json'
 import openSourceRank from './pages/open-source-rank.json'
 import search from './pages/search.json'
 import stacksOverview from './pages/stacks-overview.json'
-import vendorDetail from './pages/vendor-detail.json'
 import vendors from './pages/vendors.json'
 // Shared translations
 import shared from './shared.json'
@@ -51,18 +46,13 @@ export default {
     curatedCollections,
     articles,
     ides,
-    ideDetail,
     clis,
-    cliDetail,
     extensions,
-    extensionDetail,
     models,
     modelDetail,
     modelCompare,
     modelProviders,
-    modelProviderDetail,
     vendors,
-    vendorDetail,
     stacksOverview,
   },
   components: {

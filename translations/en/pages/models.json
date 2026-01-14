@@ -1,13 +1,9 @@
 {
   "context": "Context:",
   "lifecycle": {
-    "latest": "Latest",
-    "maintained": "Maintained",
-    "deprecated": "Deprecated",
     "noResults": "No {lifecycle} models match your search"
   },
   "pricing": "Pricing:",
-  "search": "Search by name...",
   "size": "Size:",
   "subtitle": "Large language models optimized for code generation and analysis",
   "title": "AI Coding Models"

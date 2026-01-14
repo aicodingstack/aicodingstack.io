@@ -46,7 +46,6 @@
     "specificationsProtocols": "Specifications & Protocols",
     "stars": "Stars",
     "type": "Type",
-    "vendor": "Vendor",
     "version": "Versi",
     "visitWebsite": "Kunjungi situs web",
     "website": "Website",
@@ -71,6 +70,7 @@
       "ide": "IDE",
       "model": "Model",
       "modelProvider": "Model Provider",
+      "provider": "Provider",
       "vendor": "Vendor"
     },
     "plural": {
@@ -79,6 +79,7 @@
       "ides": "IDEs",
       "modelProviders": "Model Providers",
       "models": "Models",
+      "providers": "Providers",
       "vendors": "Vendors"
     },
     "all": {
@@ -91,10 +92,15 @@
     }
   },
   "labels": {
+    "cache": "Cache",
     "findOnAiPlatforms": "Temukan di Platform AI",
     "getApiKey": "Dapatkan Kunci API",
+    "input": "Input",
+    "output": "Output",
     "specifications": "Spesifikasi",
-    "quickLinks": "Tautan Cepat"
+    "quickLinks": "Tautan Cepat",
+    "totalContext": "Total Context",
+    "searchByName": "Search by name..."
   },
   "providerTypes": {
     "foundation-model-provider": "Penyedia Model Dasar",
@@ -105,5 +111,18 @@
     "maintained": "Dipertahankan",
     "deprecated": "Usang"
   },
-  "knowledgeCutoff": "Batas Pengetahuan"
+  "benchmarks": {
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "webDevArena": "WebDev Arena",
+    "liveCodeBench": "LiveCodeBench"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
+  }
 }

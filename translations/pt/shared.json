@@ -46,7 +46,6 @@
     "specificationsProtocols": "Especificações e protocolos",
     "stars": "Estrelas",
     "type": "Tipo",
-    "vendor": "Vendor",
     "version": "Versão",
     "visitWebsite": "Visitar Site",
     "website": "Site",
@@ -71,6 +70,7 @@
       "ide": "IDE",
       "model": "Model",
       "modelProvider": "Model Provider",
+      "provider": "Provider",
       "vendor": "Vendor"
     },
     "plural": {
@@ -79,6 +79,7 @@
       "ides": "IDEs",
       "modelProviders": "Model Providers",
       "models": "Models",
+      "providers": "Providers",
       "vendors": "Vendors"
     },
     "all": {
@@ -91,10 +92,15 @@
     }
   },
   "labels": {
+    "cache": "Cache",
     "findOnAiPlatforms": "Encontrar em plataformas de IA",
     "getApiKey": "Obter Chave de API",
+    "input": "Input",
+    "output": "Output",
     "specifications": "Especificações",
-    "quickLinks": "Links rápidos"
+    "quickLinks": "Links rápidos",
+    "totalContext": "Total Context",
+    "searchByName": "Search by name..."
   },
   "providerTypes": {
     "foundation-model-provider": "Provedor de Modelo Base",
@@ -105,5 +111,18 @@
     "maintained": "Maintained",
     "deprecated": "Deprecated"
   },
-  "knowledgeCutoff": "Knowledge Cutoff"
+  "benchmarks": {
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "webDevArena": "WebDev Arena",
+    "liveCodeBench": "LiveCodeBench"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
+  }
 }

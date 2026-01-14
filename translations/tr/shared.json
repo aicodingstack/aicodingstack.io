@@ -46,7 +46,6 @@
     "specificationsProtocols": "Specifications & Protocols",
     "stars": "Stars",
     "type": "Type",
-    "vendor": "Sağlayıcı",
     "version": "Sürüm",
     "visitWebsite": "Web Sitesini Ziyaret Et",
     "website": "Website",
@@ -71,6 +70,7 @@
       "ide": "IDE",
       "model": "Model",
       "modelProvider": "Model Provider",
+      "provider": "Provider",
       "vendor": "Vendor"
     },
     "plural": {
@@ -79,6 +79,7 @@
       "ides": "IDEs",
       "modelProviders": "Model Providers",
       "models": "Models",
+      "providers": "Providers",
       "vendors": "Vendors"
     },
     "all": {
@@ -91,10 +92,15 @@
     }
   },
   "labels": {
+    "cache": "Cache",
     "findOnAiPlatforms": "AI Platformlarında Bul",
     "getApiKey": "API Anahtarı Al",
+    "input": "Input",
+    "output": "Output",
     "specifications": "Özellikler",
-    "quickLinks": "Hızlı Bağlantılar"
+    "quickLinks": "Hızlı Bağlantılar",
+    "totalContext": "Total Context",
+    "searchByName": "Search by name..."
   },
   "providerTypes": {
     "foundation-model-provider": "Temel Model Sağlayıcısı",
@@ -105,5 +111,18 @@
     "maintained": "Maintained",
     "deprecated": "Deprecated"
   },
-  "knowledgeCutoff": "Knowledge Cutoff"
+  "benchmarks": {
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "webDevArena": "WebDev Arena",
+    "liveCodeBench": "LiveCodeBench"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
+  }
 }

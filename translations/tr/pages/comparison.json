@@ -5,6 +5,7 @@
     "title": "AI Kodlama CLI Karşılaştırması"
   },
   "columns": {
+    "name": "Name",
     "cache": "Önbellek",
     "capabilities": "Yetenekler",
     "contextLength": "Bağlam Uzunluğu",
@@ -24,8 +25,7 @@
     "startingPrice": "Başlangıç Fiyatı",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "web-dev-arena": "WebDev Arena",
-    "name": "Name"
+    "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "Eklentilere Dön",

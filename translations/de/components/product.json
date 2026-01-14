@@ -4,25 +4,15 @@
     "install": "Installieren",
     "launch": "Starten"
   },
-  "vendorProducts": {
-    "title": "Produkte"
-  },
-  "vendorModels": {
-    "title": "Modelle"
-  },
   "platformLinks": {
-    "title": "Auf AI-Plattformen finden",
     "aiPlatforms": {
       "huggingface": {
-        "title": "Hugging Face",
         "description": "Modellkarte und Gewichte anzeigen"
       },
       "artificialAnalysis": {
-        "title": "Artificial Analysis",
         "description": "AI-Modell-Leaderboard und Benchmarks"
       },
       "openrouter": {
-        "title": "OpenRouter",
         "description": "Mehrere AI-Modelle vergleichen und nutzen"
       }
     }
@@ -46,7 +36,6 @@
     "youtubeDescription": "Videos ansehen"
   },
   "resourceLinks": {
-    "resources": "Resources",
     "changelog": "Änderungsprotokoll",
     "changelogDescription": "Änderungsprotokoll anzeigen",
     "downloadDescription": "Neueste Version herunterladen",
@@ -56,31 +45,16 @@
     "mcpDescription": "Erfahren Sie mehr über MCP-Integration",
     "pricingDescription": "Preispläne anzeigen"
   },
-  "productPricing": {
-    "viewFullDetails": "Vollständige Preisdetails anzeigen →"
-  },
-  "modelSpecifications": {
-    "title": "Specifications",
-    "contextWindow": "Total Context",
-    "input": "Input",
-    "output": "Output",
-    "cache": "Cache"
-  },
+  "productPricing": {},
+  "modelSpecifications": {},
   "benchmarks": {
     "title": "Leistungsbenchmarks",
-    "sweBench": "SWE-bench Verified",
     "sweBenchDesc": "Echtwelt-Softwareentwicklungsaufgaben",
-    "terminalBench": "TerminalBench 2.0",
     "terminalBenchDesc": "Befehlszeilenschnittstellen-Kompetenz",
-    "mmmu": "MMMU",
     "mmmuDesc": "Multimodales Verstehen",
-    "mmmuPro": "MMMU Pro",
     "mmmuProDesc": "Erweiterte multimodale Aufgaben",
-    "webDevArena": "WebDevArena",
     "webDevArenaDesc": "Web-Entwicklungsherausforderungen",
-    "sciCode": "SciCode",
     "sciCodeDesc": "Wissenschaftliche Code-Generierung",
-    "liveCodeBench": "LiveCodeBench",
     "liveCodeBenchDesc": "Live-Coding-Leistung"
   },
   "relatedProducts": {
@@ -91,30 +65,14 @@
     "cell": {
       "summary": "{count} {category}"
     },
-    "categories": {
-      "cli": "CLI",
-      "extension": "Extension",
-      "ide": "IDE",
-      "model": "Model",
-      "provider": "Provider"
-    },
-    "categoriesPlural": {
-      "cli": "CLIs",
-      "extension": "Extensions",
-      "ide": "IDEs",
-      "model": "Models",
-      "provider": "Providers"
-    },
     "controls": {
       "clear": "Clear",
       "sortByLabel": "Sort by:",
       "sortName": "Name",
-      "sortProducts": "Products",
       "vendorTypeLabel": "Vendor Type:"
     },
     "table": {
-      "noVendorsFound": "No vendors found",
-      "vendor": "Vendor"
+      "noVendorsFound": "No vendors found"
     },
     "vendorTypes": {
       "label": "Vendor Types:",

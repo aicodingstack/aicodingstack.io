@@ -46,7 +46,6 @@
     "specificationsProtocols": "사양 및 프로토콜",
     "stars": "스타",
     "type": "유형",
-    "vendor": "벤더",
     "version": "버전",
     "visitWebsite": "웹사이트 방문",
     "website": "웹사이트",
@@ -71,6 +70,7 @@
       "ide": "IDE",
       "model": "Model",
       "modelProvider": "Model Provider",
+      "provider": "Provider",
       "vendor": "Vendor"
     },
     "plural": {
@@ -79,6 +79,7 @@
       "ides": "IDEs",
       "modelProviders": "Model Providers",
       "models": "Models",
+      "providers": "Providers",
       "vendors": "Vendors"
     },
     "all": {
@@ -91,10 +92,15 @@
     }
   },
   "labels": {
+    "cache": "Cache",
     "findOnAiPlatforms": "AI 플랫폼에서 찾기",
     "getApiKey": "API 키 얻기",
+    "input": "Input",
+    "output": "Output",
     "specifications": "사양",
-    "quickLinks": "빠른 링크"
+    "quickLinks": "빠른 링크",
+    "totalContext": "Total Context",
+    "searchByName": "Search by name..."
   },
   "providerTypes": {
     "foundation-model-provider": "기초 모델 제공자",
@@ -105,5 +111,18 @@
     "maintained": "Maintained",
     "deprecated": "Deprecated"
   },
-  "knowledgeCutoff": "Knowledge Cutoff"
+  "benchmarks": {
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "webDevArena": "WebDev Arena",
+    "liveCodeBench": "LiveCodeBench"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
+  }
 }

@@ -5,6 +5,7 @@
     "title": "AI コーディング CLI 比較"
   },
   "columns": {
+    "name": "Name",
     "cache": "キャッシュ",
     "capabilities": "機能",
     "contextLength": "コンテキスト長",
@@ -24,8 +25,7 @@
     "startingPrice": "開始価格",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "web-dev-arena": "WebDev Arena",
-    "name": "Name"
+    "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "拡張機能に戻る",

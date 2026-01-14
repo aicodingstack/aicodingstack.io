@@ -5,6 +5,7 @@
     "title": "Perbandingan CLI Coding AI"
   },
   "columns": {
+    "name": "Name",
     "cache": "Cache",
     "capabilities": "Kapasitas",
     "contextLength": "Panjang Konteks",
@@ -24,8 +25,7 @@
     "startingPrice": "Harga Mulai",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "web-dev-arena": "WebDev Arena",
-    "name": "Name"
+    "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "Kembali ke Ekstensi",

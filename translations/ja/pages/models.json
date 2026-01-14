@@ -1,13 +1,9 @@
 {
   "context": "コンテキスト:",
   "lifecycle": {
-    "latest": "最新",
-    "maintained": "保守中",
-    "deprecated": "非推奨",
     "noResults": "検索に一致する{lifecycle}モデルがありません"
   },
   "pricing": "価格:",
-  "search": "Search by name...",
   "size": "サイズ:",
   "subtitle": "コード生成と分析に最適化された大規模言語モデル",
   "title": "AI コーディングモデル"

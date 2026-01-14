@@ -46,7 +46,6 @@
     "specificationsProtocols": "仕様とプロトコル",
     "stars": "スター",
     "type": "タイプ",
-    "vendor": "Vendor",
     "version": "バージョン",
     "visitWebsite": "Web サイトを表示",
     "website": "Webサイト",
@@ -71,6 +70,7 @@
       "ide": "IDE",
       "model": "モデル",
       "modelProvider": "モデルプロバイダー",
+      "provider": "Provider",
       "vendor": "ベンダー"
     },
     "plural": {
@@ -79,6 +79,7 @@
       "ides": "IDE",
       "modelProviders": "モデルプロバイダー",
       "models": "モデル",
+      "providers": "Providers",
       "vendors": "ベンダー"
     },
     "all": {
@@ -91,10 +92,15 @@
     }
   },
   "labels": {
+    "cache": "Cache",
     "findOnAiPlatforms": "AIプラットフォームで探す",
     "getApiKey": "APIキーを取得",
+    "input": "Input",
+    "output": "Output",
     "specifications": "仕様",
-    "quickLinks": "クイックリンク"
+    "quickLinks": "クイックリンク",
+    "totalContext": "Total Context",
+    "searchByName": "Search by name..."
   },
   "providerTypes": {
     "foundation-model-provider": "基盤モデルプロバイダー",
@@ -105,5 +111,18 @@
     "maintained": "Maintained",
     "deprecated": "Deprecated"
   },
-  "knowledgeCutoff": "Knowledge Cutoff"
+  "benchmarks": {
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "webDevArena": "WebDev Arena",
+    "liveCodeBench": "LiveCodeBench"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
+  }
 }

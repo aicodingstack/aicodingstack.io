@@ -9,30 +9,19 @@
   },
   "noResults": "Aucun projet open source trouvé pour cette catégorie.",
   "note": "Note: Cette page affiche uniquement les projets avec des dépôts GitHub. Certains projets, bien qu'ils ne soient pas open source, maintiennent des dépôts GitHub comme canaux de retour des utilisateurs.",
-  "productType": {
-    "cli": "CLI",
-    "extension": "Extension",
-    "ide": "IDE"
-  },
   "statistics": {
-    "closedSource": "Propriétaire",
-    "closedSourceCount": "Projets Propriétaires",
+    "closedSourceCount": "Projets propriétaires",
     "closedSourcePercentage": "Pourcentage Propriétaire",
     "licenseBreakdown": "Distribution des Licences",
-    "openSource": "Open Source",
-    "openSourceCount": "Projets Open Source",
+    "openSourceCount": "Projets open source",
     "projects": "projets",
     "title": "Distribution Open Source vs Propriétaire",
     "totalProjects": "Total des Projets"
   },
   "table": {
-    "license": "Licence",
-    "name": "Nom",
-    "openSourceTitle": "Projets Open Source ({count})",
-    "proprietaryTitle": "Projets Propriétaires ({count})",
-    "rank": "Rang",
-    "stars": "Stars",
-    "type": "Type"
+    "openSourceTitle": "Projets open source ({count})",
+    "proprietaryTitle": "Projets propriétaires ({count})",
+    "rank": "Rang"
   },
   "title": "Classement des Projets Open Source"
 }

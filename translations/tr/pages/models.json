@@ -1,13 +1,9 @@
 {
   "context": "Bağlam:",
   "lifecycle": {
-    "latest": "En yeniler",
-    "maintained": "Bakım yapılan",
-    "deprecated": "Kullanımdan kaldırılan",
     "noResults": "Aramanızla eşleşen {lifecycle} model yok"
   },
   "pricing": "Fiyatlandırma:",
-  "search": "İsme göre ara...",
   "size": "Boyut:",
   "subtitle": "Kod oluşturma ve analiz için optimize edilmiş büyük dil modelleri",
   "title": "AI Kodlama Modelleri"

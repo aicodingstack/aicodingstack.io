@@ -5,6 +5,7 @@
     "title": "AI 编码 CLI 工具比较"
   },
   "columns": {
+    "name": "Name",
     "cache": "缓存",
     "capabilities": "功能",
     "contextLength": "上下文长度",
@@ -24,8 +25,7 @@
     "startingPrice": "起步价",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "web-dev-arena": "WebDev Arena",
-    "name": "Name"
+    "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "返回扩展插件列表",

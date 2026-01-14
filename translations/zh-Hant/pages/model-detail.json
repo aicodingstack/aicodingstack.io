@@ -1,11 +1,3 @@
 {
-  "cache": "Cache",
-  "contextWindow": "內容視窗",
-  "input": "輸入",
-  "labels": {
-    "context": "內容視窗",
-    "size": "模型大小"
-  },
-  "metaTitle": "AI 編碼模型 | 規格與定價 2025",
-  "output": "輸出"
+  "metaTitle": "AI 編碼模型 | 規格與定價 2025"
 }

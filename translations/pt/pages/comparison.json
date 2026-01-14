@@ -5,6 +5,7 @@
     "title": "Comparação de CLI de Codificação IA"
   },
   "columns": {
+    "name": "Name",
     "cache": "Cache",
     "capabilities": "Capacidades",
     "contextLength": "Comprimento do Contexto",
@@ -24,8 +25,7 @@
     "startingPrice": "Preço Inicial",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "web-dev-arena": "WebDev Arena",
-    "name": "Name"
+    "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "Voltar às Extensões",

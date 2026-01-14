@@ -5,6 +5,7 @@
     "title": "AI 코딩 CLI 비교"
   },
   "columns": {
+    "name": "Name",
     "cache": "캐시",
     "capabilities": "기능",
     "contextLength": "컨텍스트 길이",
@@ -24,8 +25,7 @@
     "startingPrice": "시작 가격",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "web-dev-arena": "WebDev Arena",
-    "name": "Name"
+    "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "확장 프로그램으로 돌아가기",

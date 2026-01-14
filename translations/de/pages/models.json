@@ -1,13 +1,9 @@
 {
   "context": "Kontext:",
   "lifecycle": {
-    "latest": "Neueste",
-    "maintained": "Gepflegt",
-    "deprecated": "Veraltet",
     "noResults": "Keine {lifecycle} Modelle entsprechen Ihrer Suche"
   },
   "pricing": "Preise:",
-  "search": "Nach Namen suchen...",
   "size": "Größe:",
   "subtitle": "Große Sprachmodelle optimiert für Code-Generierung und Analyse",
   "title": "AI-Coding-Modelle"

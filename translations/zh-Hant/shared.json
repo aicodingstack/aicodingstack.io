@@ -46,7 +46,6 @@
     "specificationsProtocols": "規格與協議",
     "stars": "星標",
     "type": "類型",
-    "vendor": "Vendor",
     "version": "版本",
     "visitWebsite": "造訪網站",
     "website": "網站",
@@ -71,6 +70,7 @@
       "ide": "IDE",
       "model": "Model",
       "modelProvider": "Model Provider",
+      "provider": "Provider",
       "vendor": "Vendor"
     },
     "plural": {
@@ -79,6 +79,7 @@
       "ides": "IDEs",
       "modelProviders": "Model Providers",
       "models": "Models",
+      "providers": "Providers",
       "vendors": "Vendors"
     },
     "all": {
@@ -91,10 +92,15 @@
     }
   },
   "labels": {
+    "cache": "Cache",
     "findOnAiPlatforms": "在 AI 平台上尋找",
     "getApiKey": "取得 API 金鑰",
+    "input": "Input",
+    "output": "Output",
     "specifications": "規格",
-    "quickLinks": "快速連結"
+    "quickLinks": "快速連結",
+    "totalContext": "Total Context",
+    "searchByName": "Search by name..."
   },
   "providerTypes": {
     "foundation-model-provider": "Foundation 模型提供者",
@@ -105,5 +111,18 @@
     "maintained": "維護中",
     "deprecated": "已廢棄"
   },
-  "knowledgeCutoff": "知識截止日期"
+  "benchmarks": {
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "webDevArena": "WebDev Arena",
+    "liveCodeBench": "LiveCodeBench"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
+  }
 }

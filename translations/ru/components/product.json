@@ -4,25 +4,15 @@
     "install": "Установить",
     "launch": "Запустить"
   },
-  "vendorProducts": {
-    "title": "Продукты"
-  },
-  "vendorModels": {
-    "title": "Модели"
-  },
   "platformLinks": {
-    "title": "Найти на AI платформах",
     "aiPlatforms": {
       "huggingface": {
-        "title": "Hugging Face",
         "description": "Просмотреть модель и веса"
       },
       "artificialAnalysis": {
-        "title": "Artificial Analysis",
         "description": "Лидерборд AI моделей и бенчмарки"
       },
       "openrouter": {
-        "title": "OpenRouter",
         "description": "Сравнить и использовать несколько AI моделей"
       }
     }
@@ -46,7 +36,6 @@
     "youtubeDescription": "Смотреть видео"
   },
   "resourceLinks": {
-    "resources": "Resources",
     "changelog": "История изменений",
     "changelogDescription": "Просмотреть историю изменений",
     "downloadDescription": "Загрузить последнюю версию",
@@ -56,31 +45,16 @@
     "mcpDescription": "Узнать об интеграции MCP",
     "pricingDescription": "Просмотреть тарифные планы"
   },
-  "productPricing": {
-    "viewFullDetails": "Просмотреть полную информацию о ценах"
-  },
-  "modelSpecifications": {
-    "title": "Specifications",
-    "contextWindow": "Total Context",
-    "input": "Input",
-    "output": "Output",
-    "cache": "Cache"
-  },
+  "productPricing": {},
+  "modelSpecifications": {},
   "benchmarks": {
     "title": "Performance Benchmarks",
-    "sweBench": "SWE-bench Verified",
     "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBench": "TerminalBench 2.0",
     "terminalBenchDesc": "Command-line interface proficiency",
-    "mmmu": "MMMU",
     "mmmuDesc": "Multimodal understanding",
-    "mmmuPro": "MMMU Pro",
     "mmmuProDesc": "Advanced multimodal tasks",
-    "webDevArena": "WebDevArena",
     "webDevArenaDesc": "Web development challenges",
-    "sciCode": "SciCode",
     "sciCodeDesc": "Scientific code generation",
-    "liveCodeBench": "LiveCodeBench",
     "liveCodeBenchDesc": "Live coding performance"
   },
   "relatedProducts": {
@@ -91,30 +65,14 @@
     "cell": {
       "summary": "{count} {category}"
     },
-    "categories": {
-      "cli": "CLI",
-      "extension": "Расширение",
-      "ide": "IDE",
-      "model": "Модель",
-      "provider": "Поставщик"
-    },
-    "categoriesPlural": {
-      "cli": "CLI",
-      "extension": "Расширения",
-      "ide": "IDE",
-      "model": "Модели",
-      "provider": "Поставщики"
-    },
     "controls": {
       "clear": "Очистить",
       "sortByLabel": "Сортировать:",
       "sortName": "Имя",
-      "sortProducts": "Продукты",
       "vendorTypeLabel": "Тип поставщика:"
     },
     "table": {
-      "noVendorsFound": "Поставщиков не найдено",
-      "vendor": "Поставщик"
+      "noVendorsFound": "Поставщиков не найдено"
     },
     "vendorTypes": {
       "label": "Типы поставщиков:",

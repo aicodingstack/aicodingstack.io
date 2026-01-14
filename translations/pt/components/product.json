@@ -4,25 +4,15 @@
     "install": "Instalar",
     "launch": "Iniciar"
   },
-  "vendorProducts": {
-    "title": "Produtos"
-  },
-  "vendorModels": {
-    "title": "Modelos"
-  },
   "platformLinks": {
-    "title": "Encontrar em plataformas de IA",
     "aiPlatforms": {
       "huggingface": {
-        "title": "Hugging Face",
         "description": "Ver cartão de modelo e pesos"
       },
       "artificialAnalysis": {
-        "title": "Artificial Analysis",
         "description": "Classificação e benchmarks de modelos de IA"
       },
       "openrouter": {
-        "title": "OpenRouter",
         "description": "Comparar e usar múltiplos modelos de IA"
       }
     }
@@ -46,7 +36,6 @@
     "youtubeDescription": "Assistir vídeos"
   },
   "resourceLinks": {
-    "resources": "Resources",
     "changelog": "Changelog",
     "changelogDescription": "Ver changelog",
     "downloadDescription": "Baixar versão mais recente",
@@ -56,31 +45,16 @@
     "mcpDescription": "Saiba mais sobre integração MCP",
     "pricingDescription": "Ver planos de preços"
   },
-  "productPricing": {
-    "viewFullDetails": "View full pricing details →"
-  },
-  "modelSpecifications": {
-    "title": "Specifications",
-    "contextWindow": "Total Context",
-    "input": "Input",
-    "output": "Output",
-    "cache": "Cache"
-  },
+  "productPricing": {},
+  "modelSpecifications": {},
   "benchmarks": {
     "title": "Performance Benchmarks",
-    "sweBench": "SWE-bench Verified",
     "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBench": "TerminalBench 2.0",
     "terminalBenchDesc": "Command-line interface proficiency",
-    "mmmu": "MMMU",
     "mmmuDesc": "Multimodal understanding",
-    "mmmuPro": "MMMU Pro",
     "mmmuProDesc": "Advanced multimodal tasks",
-    "webDevArena": "WebDevArena",
     "webDevArenaDesc": "Web development challenges",
-    "sciCode": "SciCode",
     "sciCodeDesc": "Scientific code generation",
-    "liveCodeBench": "LiveCodeBench",
     "liveCodeBenchDesc": "Live coding performance"
   },
   "relatedProducts": {
@@ -91,30 +65,14 @@
     "cell": {
       "summary": "{count} {category}"
     },
-    "categories": {
-      "cli": "CLI",
-      "extension": "Extension",
-      "ide": "IDE",
-      "model": "Model",
-      "provider": "Provider"
-    },
-    "categoriesPlural": {
-      "cli": "CLIs",
-      "extension": "Extensions",
-      "ide": "IDEs",
-      "model": "Models",
-      "provider": "Providers"
-    },
     "controls": {
       "clear": "Clear",
       "sortByLabel": "Sort by:",
       "sortName": "Name",
-      "sortProducts": "Products",
       "vendorTypeLabel": "Vendor Type:"
     },
     "table": {
-      "noVendorsFound": "No vendors found",
-      "vendor": "Vendor"
+      "noVendorsFound": "No vendors found"
     },
     "vendorTypes": {
       "label": "Vendor Types:",

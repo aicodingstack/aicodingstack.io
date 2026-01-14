@@ -1,13 +1,9 @@
 {
   "context": "Konteks:",
   "lifecycle": {
-    "latest": "Terbaru",
-    "maintained": "Dipelihara",
-    "deprecated": "Tidak digunakan",
     "noResults": "Tidak ada model {lifecycle} yang cocok dengan pencarian Anda"
   },
   "pricing": "Harga:",
-  "search": "Cari berdasarkan nama...",
   "size": "Ukuran:",
   "subtitle": "Model bahasa besar yang dioptimalkan untuk generasi dan analisis kode",
   "title": "Model Coding AI"

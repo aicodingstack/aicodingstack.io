@@ -1,13 +1,9 @@
 {
   "context": "Contexto:",
   "lifecycle": {
-    "latest": "Mais recentes",
-    "maintained": "Mantidos",
-    "deprecated": "Descontinuados",
     "noResults": "Nenhum modelo {lifecycle} corresponde à sua pesquisa"
   },
   "pricing": "Preços:",
-  "search": "Pesquisar por nome...",
   "size": "Tamanho:",
   "subtitle": "Modelos de linguagem grandes otimizados para geração e análise de código",
   "title": "Modelos de Codificação IA"

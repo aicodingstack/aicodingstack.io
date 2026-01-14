@@ -4,25 +4,15 @@
     "install": "Yükle",
     "launch": "Başlat"
   },
-  "vendorProducts": {
-    "title": "Ürünler"
-  },
-  "vendorModels": {
-    "title": "Modeller"
-  },
   "platformLinks": {
-    "title": "AI Platformlarında Bul",
     "aiPlatforms": {
       "huggingface": {
-        "title": "Hugging Face",
         "description": "Model kartını ve ağırlıkları görüntüle"
       },
       "artificialAnalysis": {
-        "title": "Artificial Analysis",
         "description": "AI modeli lider tablosu ve kıyaslamaları"
       },
       "openrouter": {
-        "title": "OpenRouter",
         "description": "Birden çok AI modelini karşılaştırın ve kullanın"
       }
     }
@@ -46,7 +36,6 @@
     "youtubeDescription": "Videoları izle"
   },
   "resourceLinks": {
-    "resources": "Kaynaklar",
     "changelog": "Değişiklik Günlüğü",
     "changelogDescription": "Değişiklik günlüğünü görüntüle",
     "downloadDescription": "En son sürümü indir",
@@ -56,31 +45,16 @@
     "mcpDescription": "MCP entegrasyonu hakkında bilgi edinin",
     "pricingDescription": "Fiyat planlarını görüntüle"
   },
-  "productPricing": {
-    "viewFullDetails": "Tam fiyat detaylarını görüntüle"
-  },
-  "modelSpecifications": {
-    "title": "Specifications",
-    "contextWindow": "Total Context",
-    "input": "Input",
-    "output": "Output",
-    "cache": "Cache"
-  },
+  "productPricing": {},
+  "modelSpecifications": {},
   "benchmarks": {
     "title": "Performance Benchmarks",
-    "sweBench": "SWE-bench Verified",
     "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBench": "TerminalBench 2.0",
     "terminalBenchDesc": "Command-line interface proficiency",
-    "mmmu": "MMMU",
     "mmmuDesc": "Multimodal understanding",
-    "mmmuPro": "MMMU Pro",
     "mmmuProDesc": "Advanced multimodal tasks",
-    "webDevArena": "WebDevArena",
     "webDevArenaDesc": "Web development challenges",
-    "sciCode": "SciCode",
     "sciCodeDesc": "Scientific code generation",
-    "liveCodeBench": "LiveCodeBench",
     "liveCodeBenchDesc": "Live coding performance"
   },
   "relatedProducts": {
@@ -91,30 +65,14 @@
     "cell": {
       "summary": "{count} {category}"
     },
-    "categories": {
-      "cli": "CLI",
-      "extension": "Extension",
-      "ide": "IDE",
-      "model": "Model",
-      "provider": "Provider"
-    },
-    "categoriesPlural": {
-      "cli": "CLIs",
-      "extension": "Extensions",
-      "ide": "IDEs",
-      "model": "Models",
-      "provider": "Providers"
-    },
     "controls": {
       "clear": "Temizle",
       "sortByLabel": "Sırala:",
       "sortName": "Ad",
-      "sortProducts": "Ürünler",
       "vendorTypeLabel": "Sağlayıcı Türü:"
     },
     "table": {
-      "noVendorsFound": "Sağlayıcı bulunamadı",
-      "vendor": "Sağlayıcı"
+      "noVendorsFound": "Sağlayıcı bulunamadı"
     },
     "vendorTypes": {
       "label": "Sağlayıcı Türleri:",
