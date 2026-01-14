@@ -110,7 +110,7 @@ export default function ModelsPageClient({ locale }: Props) {
           {(['latest', 'maintained', 'deprecated'] as const).map(lifecycle => (
             <section key={lifecycle} className="mb-[var(--spacing-lg)]">
               <h2 className="text-base uppercase tracking-wide text-[var(--color-text-muted)] mb-[var(--spacing-sm)]">
-                {tPage(`lifecycle.${lifecycle}`)}
+                {tShared(`lifecycle.${lifecycle}`)}
               </h2>
               {modelsByLifecycle[lifecycle].length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[var(--spacing-md)]">
@@ -159,7 +159,7 @@ export default function ModelsPageClient({ locale }: Props) {
               ) : (
                 <p className="text-sm text-[var(--color-text-muted)]">
                   {tPage('lifecycle.noResults', {
-                    lifecycle: tPage(`lifecycle.${lifecycle}`),
+                    lifecycle: tShared(`lifecycle.${lifecycle}`),
                   })}
                 </p>
               )}

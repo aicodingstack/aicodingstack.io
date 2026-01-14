@@ -11,11 +11,12 @@ import type { LocalePageProps } from '@/types/locale'
 export async function generateMetadata({ params }: LocalePageProps) {
   const { locale } = await params
   const tPage = await getTranslations({ locale, namespace: 'pages.manifesto' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   return generateStaticPageMetadata({
     locale: locale as Locale,
     basePath: 'manifesto',
-    title: buildTitle({ title: tPage('title') }),
+    title: buildTitle({ title: tShared('terms.manifesto') }),
     description: tPage('subtitle'),
     keywords: 'AI Coding Manifesto, AI development philosophy, AI coding principles',
     ogType: 'website',
@@ -25,6 +26,7 @@ export async function generateMetadata({ params }: LocalePageProps) {
 export default async function ManifestoPage({ params }: LocalePageProps) {
   const { locale } = await params
   const tPage = await getTranslations({ locale, namespace: 'pages.manifesto' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
   const ManifestoContent = await getManifestoComponent(locale)
 
   return (
@@ -32,7 +34,7 @@ export default async function ManifestoPage({ params }: LocalePageProps) {
       <Header />
 
       <main className="max-w-6xl mx-auto px-[var(--spacing-md)] pt-[var(--spacing-lg)]">
-        <PageHeader title={tPage('title')} subtitle={tPage('slogan')} />
+        <PageHeader title={tShared('terms.manifesto')} subtitle={tPage('slogan')} />
 
         {/* Manifesto Content */}
         <section className="prose prose-neutral dark:prose-invert max-w-none mb-[var(--spacing-xl)]">
@@ -47,7 +49,7 @@ export default async function ManifestoPage({ params }: LocalePageProps) {
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-xs)]">
-                {tPage('exploreStack.title')}
+                {tShared('terms.aiCodingStack')}
               </h2>
               <p className="text-sm text-[var(--color-text-secondary)]">
                 {tPage('exploreStack.subtitle')}

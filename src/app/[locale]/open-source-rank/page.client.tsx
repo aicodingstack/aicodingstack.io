@@ -43,6 +43,7 @@ function getProductTypeName(type: ProductType, t: (key: string) => string): stri
 
 export function OpenSourceRankPage() {
   const tPage = useTranslations('pages.openSourceRank')
+  const tShared = useTranslations('shared')
   const [selectedType, setSelectedType] = useState<ProductType | 'all'>('all')
 
   const { openSourceProjects, proprietaryProjects } = useMemo(() => {
@@ -293,13 +294,13 @@ export function OpenSourceRankPage() {
                       {tPage('table.name')}
                     </th>
                     <th className="text-left px-[var(--spacing-sm)] py-[var(--spacing-sm)] text-sm font-semibold">
-                      {tPage('table.type')}
+                      {tShared('terms.type')}
                     </th>
                     <th className="text-left px-[var(--spacing-sm)] py-[var(--spacing-sm)] text-sm font-semibold">
-                      {tPage('table.license')}
+                      {tShared('terms.license')}
                     </th>
                     <th className="text-right px-[var(--spacing-sm)] py-[var(--spacing-sm)] text-sm font-semibold w-32">
-                      {tPage('table.stars')}
+                      {tShared('terms.stars')}
                     </th>
                   </tr>
                 </thead>
@@ -524,7 +525,7 @@ export function OpenSourceRankPage() {
               <div className="border border-[var(--color-border)] p-[var(--spacing-sm)] flex items-center gap-[var(--spacing-sm)]">
                 <div className="w-4 h-4 flex-shrink-0 bg-gray-300" />
                 <div className="flex-1 min-w-0">
-                  <div className="text-sm font-medium truncate">Proprietary</div>
+                  <div className="text-sm font-medium truncate">{tShared('terms.proprietary')}</div>
                   <div className="text-xs text-[var(--color-text-secondary)]">
                     {stats.proprietary} {tPage('statistics.projects')} (
                     {stats.proprietaryPercentage}

@@ -24,7 +24,7 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
   const columns: ComparisonColumn[] = [
     {
       key: 'vendor',
-      label: tShared('terms.vendor'),
+      label: tShared('categories.singular.vendor'),
     },
     {
       key: 'license',

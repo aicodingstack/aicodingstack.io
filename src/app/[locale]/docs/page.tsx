@@ -13,8 +13,9 @@ type Props = {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   const tPage = await getTranslations({ locale, namespace: 'pages.docs' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
-  const title = buildTitle({ title: tPage('title') })
+  const title = buildTitle({ title: tShared('terms.documentation') })
   const description = tPage('subtitle')
 
   return generateStaticPageMetadata({
