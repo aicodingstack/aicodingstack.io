@@ -21,6 +21,7 @@ export function PlatformLinks({
   gridCols = 'grid-cols-1 md:grid-cols-3',
 }: PlatformLinksProps) {
   const tComponent = useTranslations('components.product.platformLinks')
+  const tShared = useTranslations('shared')
 
   if (!platformUrls) {
     return null
@@ -29,24 +30,24 @@ export function PlatformLinks({
   const links = [
     {
       key: 'huggingface',
-      title: tComponent('aiPlatforms.huggingface.title'),
+      title: tShared('platforms.huggingface'),
       description: tComponent('aiPlatforms.huggingface.description'),
     },
     {
       key: 'artificialAnalysis',
-      title: tComponent('aiPlatforms.artificialAnalysis.title'),
+      title: tShared('platforms.artificialAnalysis'),
       description: tComponent('aiPlatforms.artificialAnalysis.description'),
     },
     {
       key: 'openrouter',
-      title: tComponent('aiPlatforms.openrouter.title'),
+      title: tShared('platforms.openrouter'),
       description: tComponent('aiPlatforms.openrouter.description'),
     },
   ] as const
 
   return (
     <LinkCardGrid
-      title={tComponent('title')}
+      title={tShared('labels.findOnAiPlatforms')}
       links={links}
       urls={platformUrls}
       layout={layout}

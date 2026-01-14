@@ -20,14 +20,14 @@ interface MatrixCellProps {
  * Gets the localized label for a product category, with simple plural handling.
  */
 function getCategoryLabel(
-  t: ReturnType<typeof useTranslations>,
+  tShared: ReturnType<typeof useTranslations>,
   category: ProductCategory,
   count: number
 ): string {
   if (count === 1) {
-    return t(`categories.${category}`)
+    return tShared(`categories.${category}`)
   }
-  return t(`categoriesPlural.${category}`)
+  return tShared(`categories.plural.${category}`)
 }
 
 /**
@@ -45,6 +45,7 @@ function getVendorTypeLabel(t: ReturnType<typeof useTranslations>, type: string)
 function MatrixCell({ products, category }: MatrixCellProps) {
   const [isExpanded, setIsExpanded] = useState(false)
   const tComponent = useTranslations('components.product.vendorMatrix')
+  const tShared = useTranslations('shared')
 
   if (products.length === 0) {
     return (
@@ -104,7 +105,7 @@ function MatrixCell({ products, category }: MatrixCellProps) {
               <span className="font-medium text-sm tracking-tight">
                 {tComponent('cell.summary', {
                   count: products.length,
-                  category: getCategoryLabel(tComponent, category, products.length),
+                  category: getCategoryLabel(tShared, category, products.length),
                 })}
               </span>
               <span className="text-xs text-[var(--color-text-muted)]">
@@ -143,6 +144,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
   const [selectedVendorTypes, setSelectedVendorTypes] = useState<Set<string>>(new Set())
   const [sortBy, setSortBy] = useState<'name' | 'products'>('products')
   const tComponent = useTranslations('components.product.vendorMatrix')
+  const tShared = useTranslations('shared')
 
   const filteredAndSortedData = useMemo(() => {
     let filtered = matrixData
@@ -306,7 +308,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
                 : 'border-[var(--color-border)] hover:bg-[var(--color-hover)]'
             }`}
           >
-            {tComponent('controls.sortProducts')}
+            {tShared('terms.products')}
           </button>
         </div>
       </div>
@@ -322,7 +324,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
               </div>
               {PRODUCT_CATEGORIES.map(cat => (
                 <div key={cat} className="font-medium text-sm text-center px-2">
-                  {tComponent(`categories.${cat}`)}
+                  {tShared(`categories.singular.${cat}`)}
                 </div>
               ))}
             </div>

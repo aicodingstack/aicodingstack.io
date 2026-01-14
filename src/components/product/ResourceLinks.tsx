@@ -54,7 +54,7 @@ export function ResourceLinks({
 
   return (
     <LinkCardGrid
-      title={tComponent('resources')}
+      title={tShared('terms.resources')}
       links={links}
       urls={resourceUrls}
       layout={layout}

@@ -116,7 +116,9 @@ export function ProductHero({
           <div className="inline-flex items-center gap-[var(--spacing-sm)] flex-wrap px-[var(--spacing-md)] py-[var(--spacing-md)] border border-[var(--color-border)] text-sm">
             {vendor && (
               <div className="flex gap-1">
-                <span className="text-[var(--color-text-muted)]">{tShared('terms.vendor')}:</span>
+                <span className="text-[var(--color-text-muted)]">
+                  {tShared('categories.singular.vendor')}:
+                </span>
                 <span className="font-medium">{vendor}</span>
               </div>
             )}

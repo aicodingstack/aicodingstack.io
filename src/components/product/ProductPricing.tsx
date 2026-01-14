@@ -7,7 +7,6 @@ export interface ProductPricingProps {
 }
 
 export function ProductPricing({ pricing, pricingUrl }: ProductPricingProps) {
-  const tComponent = useTranslations('components.product.productPricing')
   const tShared = useTranslations('shared')
 
   if (!pricing || pricing.length === 0) {
@@ -50,7 +49,7 @@ export function ProductPricing({ pricing, pricingUrl }: ProductPricingProps) {
               rel="noopener"
               className="inline-flex items-center gap-[var(--spacing-xs)] text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
             >
-              {tComponent('viewFullDetails')}
+              {tShared('actions.viewFullDetails')}
             </a>
           </div>
         )}
