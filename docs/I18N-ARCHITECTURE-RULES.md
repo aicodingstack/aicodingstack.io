@@ -69,6 +69,8 @@ translations/
   └── ...
   ```
 
+**Note**: Every page translation file created under this rule **MUST include a `meta` section** as specified in Rule 4.
+
 **Rationale**:
 - Better file organization and maintainability
 - Easier to locate translations for specific pages
@@ -188,9 +190,14 @@ src/components/
 
 ---
 
-### Rule 4: Metadata Placement
+### Rule 4: Required Metadata Section
 
-**Principle**: Page metadata (meta title, description, keywords, OG tags) should be co-located with page translations.
+**Principle**: **Every page translation file MUST include a `meta` section** containing page metadata (meta title, description, keywords, OG tags). This is a mandatory requirement for all page translation files.
+
+**Requirement**:
+- ✅ **Required**: Every `pages/*.json` file must have a `meta` object
+- ✅ **Required**: The `meta` object must be present even if initially empty: `"meta": {}`
+- ✅ **Required**: All locales must include the `meta` section (can use English placeholders initially per Rule 5)
 
 **Implementation**:
 ```json
@@ -206,10 +213,23 @@ src/components/
 }
 ```
 
+**Minimum Required Structure**:
+Even if metadata is not yet defined, the file must include an empty meta object:
+```json
+{
+  "meta": {},
+  "title": "Page Title",
+  "...": "..."
+}
+```
+
 **Rationale**:
-- Single source of truth for page content
-- Easier to maintain consistency between visible content and metadata
-- Aligns with Next.js metadata generation patterns
+- **Consistency**: Ensures all pages follow the same structure
+- **Discoverability**: Makes it easy to identify which pages have metadata defined
+- **Type Safety**: Enables consistent type definitions across all page translations
+- **Single source of truth**: Co-locates page content and metadata
+- **Maintainability**: Easier to maintain consistency between visible content and metadata
+- **Next.js alignment**: Aligns with Next.js metadata generation patterns
 
 ---
 
@@ -311,9 +331,11 @@ To align the current codebase with these rules:
 - [ ] Remove @:shared references where code can use tShared
 - [ ] Update component code to use both tPage/tComponent and tShared
 
-### Phase 4: Standardize metadata
-- [ ] Ensure all pages have meta objects
-- [ ] Verify metadata localization completeness
+### Phase 4: Standardize metadata (MANDATORY)
+- [ ] **Audit all page translation files** - Verify every `pages/*.json` file includes a `meta` section
+- [ ] **Add missing metadata sections** - For any page without `meta`, add at minimum `"meta": {}`
+- [ ] **Populate metadata** - Fill in title, description, and keywords for all pages
+- [ ] **Verify metadata localization** - Ensure all locales have metadata sections (can use English placeholders initially)
 
 ### Phase 5: Establish translation workflow
 - [ ] Document the English placeholder → translation workflow
@@ -491,5 +513,7 @@ These rules establish a clear, scalable architecture for i18n translations that:
 - Simplifies development with English placeholder strategy
 - Reduces redundancy by minimizing cross-namespace @: references
 - Co-locates related content (metadata with page translations)
+
+**Critical Requirement**: Every page translation file (`pages/*.json`) **MUST include a `meta` section**, even if initially empty. This is a mandatory structural requirement that ensures consistency and enables proper metadata management across all pages.
 
 All future translation work should follow these guidelines.
