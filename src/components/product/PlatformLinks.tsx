@@ -20,7 +20,8 @@ export function PlatformLinks({
   layout = 'horizontal',
   gridCols = 'grid-cols-1 md:grid-cols-3',
 }: PlatformLinksProps) {
-  const t = useTranslations('components.platformLinks')
+  const tComponent = useTranslations('components.product.platformLinks')
+  const tShared = useTranslations('shared')
 
   if (!platformUrls) {
     return null
@@ -29,24 +30,24 @@ export function PlatformLinks({
   const links = [
     {
       key: 'huggingface',
-      title: t('aiPlatforms.huggingface.title'),
-      description: t('aiPlatforms.huggingface.description'),
+      title: tShared('platforms.huggingface'),
+      description: tComponent('aiPlatforms.huggingface.description'),
     },
     {
       key: 'artificialAnalysis',
-      title: t('aiPlatforms.artificialAnalysis.title'),
-      description: t('aiPlatforms.artificialAnalysis.description'),
+      title: tShared('platforms.artificialAnalysis'),
+      description: tComponent('aiPlatforms.artificialAnalysis.description'),
     },
     {
       key: 'openrouter',
-      title: t('aiPlatforms.openrouter.title'),
-      description: t('aiPlatforms.openrouter.description'),
+      title: tShared('platforms.openrouter'),
+      description: tComponent('aiPlatforms.openrouter.description'),
     },
-  ]
+  ] as const
 
   return (
     <LinkCardGrid
-      title={t('title')}
+      title={tShared('labels.findOnAiPlatforms')}
       links={links}
       urls={platformUrls}
       layout={layout}

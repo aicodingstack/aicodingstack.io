@@ -12,17 +12,18 @@ type Props = {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'pages.docs' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.docs' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
-  const title = buildTitle({ title: t('title') })
-  const description = t('subtitle')
+  const title = buildTitle({ title: tShared('terms.documentation') })
+  const description = tPage('subtitle')
 
   return generateStaticPageMetadata({
     locale: locale as Locale,
     basePath: 'docs',
     title,
     description,
-    keywords: t('keywords'),
+    keywords: tPage('keywords'),
     ogType: 'website',
   })
 }

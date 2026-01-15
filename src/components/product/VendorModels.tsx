@@ -4,15 +4,17 @@ import { formatTokenCount } from '@/lib/format'
 import type { ManifestModel } from '@/types/manifests'
 
 export function VendorModels({ models }: { models: ManifestModel[] }) {
-  const t = useTranslations('components.vendorModels')
+  const tComponent = useTranslations('components.product.vendorModels')
 
   if (models.length === 0) {
     return null
   }
 
   return (
-    <section className="max-w-8xl mx-auto px-[var(--spacing-md)] py-[var(--spacing-lg)]">
-      <h2 className="text-xl font-semibold tracking-tight mb-[var(--spacing-md)]">{t('title')}</h2>
+    <section className="max-w-8xl mx-auto px-[var(--spacing-md)] my-[var(--spacing-lg)]">
+      <h2 className="text-xl font-semibold tracking-tight mb-[var(--spacing-md)]">
+        {tComponent('title')}
+      </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[var(--spacing-md)]">
         {models.map(model => (

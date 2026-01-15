@@ -17,7 +17,8 @@
     "visit": "Visit {name}",
     "watch": "Watch on {platform}"
   },
-  "common": {
+  "terms": {
+    "aiCoding": "AI Coding",
     "aiCodingStack": "AI Coding Stack",
     "articles": "Articles",
     "collections": "Collections",
@@ -45,7 +46,11 @@
     "specificationsProtocols": "Specifications & Protocols",
     "stars": "Stars",
     "type": "Type",
-    "website": "Website"
+    "version": "Version",
+    "visitWebsite": "Visit Website",
+    "website": "Website",
+    "platforms": "Platforms",
+    "supportedIdes": "Supported IDEs"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -58,26 +63,66 @@
     "twitter": "X (Twitter)",
     "youtube": "YouTube"
   },
-  "stack": {
-    "cli": "CLI",
-    "extension": "Extension",
-    "ide": "IDE",
-    "model": "Model",
-    "modelProvider": "Model Provider",
-    "vendor": "Vendor"
+  "categories": {
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "provider": "Provider",
+      "vendor": "Vendor"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "providers": "Providers",
+      "vendors": "Vendors"
+    },
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    }
   },
-  "stacks": {
-    "allClis": "All CLIs",
-    "allExtensions": "All Extensions",
-    "allIdes": "All IDEs",
-    "allModelProviders": "All Model Providers",
-    "allModels": "All Models",
-    "allVendors": "All Vendors",
-    "clis": "CLIs",
-    "extensions": "Extensions",
-    "ides": "IDEs",
-    "modelProviders": "Model Providers",
-    "models": "Models",
-    "vendors": "Vendors"
+  "labels": {
+    "cache": "Cache",
+    "findOnAiPlatforms": "Find on AI Platforms",
+    "getApiKey": "Get API Key",
+    "input": "Input",
+    "output": "Output",
+    "specifications": "Specifications",
+    "quickLinks": "Quick Links",
+    "totalContext": "Total Context",
+    "searchByName": "Search by name..."
+  },
+  "providerTypes": {
+    "foundation-model-provider": "Foundation Model Provider",
+    "model-service-provider": "Model Service Provider"
+  },
+  "lifecycle": {
+    "latest": "Latest",
+    "maintained": "Maintained",
+    "deprecated": "Deprecated"
+  },
+  "benchmarks": {
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "webDevArena": "WebDev Arena",
+    "liveCodeBench": "LiveCodeBench"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
   }
 }

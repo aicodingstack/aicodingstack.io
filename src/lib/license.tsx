@@ -4,12 +4,12 @@ import type { ReactElement } from 'react'
 /**
  * Translate license value if it's a special case (like "Proprietary")
  * @param license - The license value to translate
- * @param t - Translation function for license keys
+ * @param t - Translation function for license keys (must be useTranslations('shared') or getTranslations({ locale, namespace: 'shared' }))
  * @returns Translated license value or original value
  */
 export function translateLicense(license: string, t: (key: string) => string): string {
   if (license.toLowerCase() === 'proprietary') {
-    return t('shared.common.proprietary')
+    return t('terms.proprietary')
   }
   return license
 }

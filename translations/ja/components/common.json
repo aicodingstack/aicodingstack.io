@@ -1,0 +1,23 @@
+{
+  "footer": {
+    "copyright": "© 2025 AI Coding Stack • ❤︎で構築 • オープンソース",
+    "openSource": "オープンソース AI コーディングメタデータリポジトリ。",
+    "selectLanguage": "言語を選択",
+    "tagline": "あなたの AI コーディングエコシステムのハブ。",
+    "toggleTheme": "テーマを切り替え"
+  },
+  "header": {
+    "aiCodingLandscape": "AI コーディングランドスケープ",
+    "aiCodingLandscapeDesc": "AI コーディングエコシステム全体を可視化",
+    "closeMenu": "メニューを閉じる",
+    "developmentTools": "開発ツール",
+    "intelligence": "インテリジェンス",
+    "landscape": "ランドスケープ",
+    "openMenu": "メニューを開く",
+    "openSourceRank": "オープンソースランキング",
+    "openSourceRankDesc": "GitHub スターでオープンソース AI コーディングプロジェクトを探索",
+    "ranking": "ランキング",
+    "searchPlaceholder": "検索...",
+    "toggleMenu": "メニューを切り替え"
+  }
+}

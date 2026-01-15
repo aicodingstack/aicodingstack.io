@@ -2,58 +2,47 @@
   "clis": {
     "backTo": "Volver a CLIs",
     "subtitle": "Asistentes de codificación de línea de comandos con IA",
-    "title": "@:shared.stacks.clis"
+    "title": "Comparación de CLI de Codificación con IA"
   },
   "columns": {
+    "name": "Name",
     "cache": "Caché",
     "capabilities": "Capacidades",
     "contextLength": "Longitud del contexto",
     "freePlan": "Plan gratuito",
-    "githubStars": "@:components.productHero.stars",
     "input": "Entrada",
     "inputModalities": "Modalidades de entrada",
-    "license": "@:components.productHero.license",
     "links": "Enlaces",
     "live-code-bench": "Live Code Bench",
-    "maxOutput": "@:shared.common.maxOutput",
     "maxPrice": "Precio máximo",
     "mmmu": "MMMU",
     "mmmu-pro": "MMMU Pro",
-    "modelSize": "@:shared.common.modelSize",
     "output": "Salida",
-    "platforms": "@:components.productHero.platforms",
-    "pricing": "@:shared.common.pricing",
     "pricingCache": "Precio de Caché",
     "pricingInput": "Precio de Entrada",
     "pricingOutput": "Precio de Salida",
     "sci-code": "SciCode",
     "startingPrice": "Precio inicial",
-    "supportedIdes": "@:components.productHero.supportedIdes",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version",
     "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "Volver a Extensiones",
     "subtitle": "Extensiones y complementos de codificación con IA",
-    "title": "@:shared.stacks.extensions"
+    "title": "Comparación de Extensiones de Codificación con IA"
   },
   "ides": {
     "backTo": "Volver a IDEs",
     "subtitle": "Entornos de desarrollo integrados mejorados con IA",
-    "title": "@:shared.stacks.ides"
+    "title": "Comparación de IDE de Codificación con IA"
   },
-  "linkTitles": {
-    "documentation": "@:components.productHero.documentation",
-    "download": "@:components.productHero.download",
-    "officialWebsite": "@:components.productHero.visitWebsite"
-  },
+  "modelCompareDescription": "Compare modelos de codificación con IA lado a lado: especificaciones, precios, funcionalidades y benchmarks.",
+  "modelCompareTitle": "Comparación de Modelos de Codificación con IA: {model1} vs {model2}",
   "models": {
     "backTo": "Volver a Modelos",
     "subtitle": "Modelos de lenguaje grandes optimizados para generación y análisis de código",
-    "title": "@:shared.stacks.models"
+    "title": "Comparación de Modelos de Codificación con IA"
   },
   "pricingValues": {
     "free": "Gratis",

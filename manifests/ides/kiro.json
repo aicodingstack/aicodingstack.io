@@ -8,7 +8,7 @@
       "description": "AWS 的智能 IDE，为 VS Code 带来规范驱动开发。使用 AI Agent 将自然语言规范转化为代码、自动化任务并与工作流集成。"
     },
     "de": {
-      "description": "Eine KI-gestützte IDE mit Fokus auf natürlichsprachliche Programmierung und intelligente Code-Generierung für schnellere Entwicklung."
+      "description": "Eine AI-gestützte IDE mit Fokus auf natürlichsprachliche Programmierung und intelligente Code-Generierung für schnellere Entwicklung."
     },
     "ko": {
       "description": "VS Code에 사양 기반 개발을 도입하는 AWS의 에이전트 기반 IDE입니다. AI 에이전트를 사용하여 자연어 사양을 코드로 변환하고, 작업을 자동화하며, 워크플로우와 통합합니다."

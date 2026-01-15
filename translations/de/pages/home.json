@@ -1,32 +1,30 @@
 {
-  "description": "Erkunden und vergleichen Sie KI-Coding-Tools: IDEs, CLIs, Erweiterungen, Modelle und Anbieter — alles an einem Ort.",
-  "exploreTools": "Tools Erkunden",
+  "description": "Erkunden und vergleichen Sie AI-Coding-Tools: IDEs, CLIs, Erweiterungen, Modelle und Anbieter — alles an einem Ort.",
   "faq": "Häufig gestellte Fragen",
   "features": {
     "comparison": {
-      "description": "Vergleichen Sie Tools nebeneinander mit detaillierten Spezifikationen, Preisen und Funktionen. Treffen Sie fundierte Entscheidungen darüber, welche KI-Coding-Tools am besten zu Ihrem Workflow passen.",
+      "description": "Vergleichen Sie Tools nebeneinander mit detaillierten Spezifikationen, Preisen und Funktionen. Treffen Sie fundierte Entscheidungen darüber, welche AI-Coding-Tools am besten zu Ihrem Workflow passen.",
       "title": "Intelligenter Vergleich"
     },
     "directory": {
-      "description": "Erkunden Sie eine kuratierte Sammlung von KI-Coding-Tools über IDEs, CLIs, Erweiterungen, Modelle und Anbieter hinweg. Alles an einem Ort, immer aktuell.",
+      "description": "Erkunden Sie eine kuratierte Sammlung von AI-Coding-Tools über IDEs, CLIs, Erweiterungen, Modelle und Anbieter hinweg. Alles an einem Ort, immer aktuell.",
       "title": "Umfassendes Verzeichnis"
     },
     "ecosystem": {
-      "description": "Visualisieren Sie das gesamte KI-Coding-Ökosystem mit interaktiven Landschaftsansichten. Verstehen Sie, wie verschiedene Tools, Modelle und Anbieter sich verbinden und ergänzen.",
+      "description": "Visualisieren Sie das gesamte AI-Coding-Ökosystem mit interaktiven Landschaftsansichten. Verstehen Sie, wie verschiedene Tools, Modelle und Anbieter sich verbinden und ergänzen.",
       "title": "Ökosystem-Übersicht"
     },
     "title": "Hauptfunktionen",
     "tracking": {
-      "description": "Bleiben Sie über die neuesten Entwicklungen, Versionen und Updates in der KI-Coding-Landschaft informiert. Verfolgen Sie neue Releases, Funktionserweiterungen und Ökosystemänderungen.",
+      "description": "Bleiben Sie über die neuesten Entwicklungen, Versionen und Updates in der AI-Coding-Landschaft informiert. Verfolgen Sie neue Releases, Funktionserweiterungen und Ökosystemänderungen.",
       "title": "Fortschrittsverfolgung"
     }
   },
   "meta": {
-    "description": "Umfassendes Verzeichnis für KI-Coding-Tools. Entdecken, vergleichen und erkunden Sie IDEs, CLIs, Erweiterungen, Modelle und Anbieter.",
-    "name": "AI Coding Stack",
-    "title": "AI Coding Stack - Ihr KI-Coding-Ökosystem-Hub"
+    "description": "Umfassendes Verzeichnis für AI-Coding-Tools. Entdecken, vergleichen und erkunden Sie IDEs, CLIs, Erweiterungen, Modelle und Anbieter.",
+    "title": "AI Coding Stack - Ihr AI-Coding-Ökosystem-Hub"
   },
   "readDocs": "Dokumentation Lesen",
   "subtitle": "Entdecken, Vergleichen, Schneller Entwickeln.",
-  "title": "Ihr KI-Coding-Ökosystem-Hub"
+  "title": "Ihr AI-Coding-Ökosystem-Hub"
 }

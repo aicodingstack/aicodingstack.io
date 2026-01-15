@@ -1,0 +1,73 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "glm-4-7",
+  "name": "GLM 4.7",
+  "description": "GLM 4.7 is an advanced language model from Z.ai with 128K context window, optimized for enhanced reasoning and multilingual understanding.",
+  "translations": {
+    "zh-Hans": {
+      "description": "GLM 4.7 是 Z.ai 推出的先进语言模型，具备 128K 上下文窗口，专为增强推理和多语言理解优化。"
+    },
+    "de": {
+      "description": "GLM 4.7 ist ein fortschrittliches Sprachmodell von Z.ai mit 128K-Kontextfenster, optimiert für verbessertes Schließen und mehrsprachiges Verständnis."
+    },
+    "ko": {
+      "description": "GLM 4.7은 Z.ai의 고급 언어 모델로, 128K 컨텍스트 윈도를 갖추고 있으며 향상된 추론 및 다국어 이해를 위해 최적화되었습니다."
+    },
+    "es": {
+      "description": "GLM 4.7 es un modelo de lenguaje avanzado de Z.ai con ventana de contexto de 128K, optimizado para razonamiento mejorado y comprensión multilingüe."
+    },
+    "fr": {
+      "description": "GLM 4.7 est un modele de langage avance de Z.ai avec une fenetre de contexte de 128K, optimise pour le raisonnement ameliore et la comprehension multilingue."
+    },
+    "id": {
+      "description": "GLM 4.7 adalah model bahasa canggih dari Z.ai dengan jendela konteks 128K, dioptimalkan untuk penalaran yang ditingkatkan dan pemahaman multibahasa."
+    },
+    "ja": {
+      "description": "Z.aiの高度な言語モデルGLM 4.7は、128Kコンテキストウィンドウを持ち、強化された推論と多言語理解のために最適化されています。"
+    },
+    "pt": {
+      "description": "GLM 4.7 é um modelo de linguagem avançado de Z.ai com janela de contexto de 128K, otimizado para raciocínio aprimorado e compreensão multilíngue."
+    },
+    "ru": {
+      "description": "GLM 4.7 - это продвинутая языковая модель от Z.ai с окном контекста 128K, оптимизированная для улучшенного рассуждения и многоязычного понимания."
+    },
+    "tr": {
+      "description": "GLM 4.7, Z.ai'den gelen gelismis bir dil modelidir ve 128K baglam penceresi ile gelismis muhakeme ve cok dilli anlas icin optimize edilmistir."
+    },
+    "zh-Hant": {
+      "description": "GLM 4.7 是 Z.ai 推出的先進語言模型，具備 128K 上下文視窗，專為增強推理和多語言理解優化。"
+    }
+  },
+  "verified": true,
+  "websiteUrl": "https://z.ai",
+  "docsUrl": "https://huggingface.co/zai-org/GLM-4.7",
+  "vendor": "Z.ai",
+  "size": "358B",
+  "contextWindow": 204800,
+  "maxOutput": 131072,
+  "tokenPricing": {
+    "input": 0.6,
+    "output": 2.2,
+    "cache": 0.11
+  },
+  "releaseDate": "2025-12-22",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2025-12",
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "sciCode": null,
+    "liveCodeBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/zai-org/GLM-4.7",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/glm-4-7",
+    "openrouter": "https://openrouter.ai/z-ai/glm-4-7"
+  }
+}

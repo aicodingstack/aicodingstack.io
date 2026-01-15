@@ -55,6 +55,7 @@
   },
   "models": {
     "composer": null,
+    "deepseek-3-2": null,
     "glm-4-6v": null
   }
 }

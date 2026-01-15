@@ -1,0 +1,103 @@
+{
+  "productCommands": {
+    "command": "Comando",
+    "install": "Instalar",
+    "launch": "Iniciar"
+  },
+  "platformLinks": {
+    "aiPlatforms": {
+      "huggingface": {
+        "description": "Ver tarjeta de modelo y pesos"
+      },
+      "artificialAnalysis": {
+        "description": "Tabla de clasificación y evaluaciones de modelos de IA"
+      },
+      "openrouter": {
+        "description": "Comparar y usar múltiples modelos de IA"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "Cargando historial de estrellas...",
+    "title": "Historial de estrellas de GitHub",
+    "description": "Tendencia de crecimiento de estrellas a lo largo del tiempo",
+    "stars": "estrellas",
+    "fallbackNote": "Nota: Mostrando datos de muestra. El API de historial de estrellas está temporalmente no disponible."
+  },
+  "productHero": {
+    "runtime": "Tiempo de ejecución"
+  },
+  "communityLinks": {
+    "blog": "Blog",
+    "blogDescription": "Leer publicaciones de blog",
+    "discordDescription": "Unirse a la comunidad",
+    "githubDescription": "Ver repositorios",
+    "redditDescription": "Unirse a la discusión",
+    "youtubeDescription": "Ver videos"
+  },
+  "resourceLinks": {
+    "changelog": "Registro de cambios",
+    "changelogDescription": "Ver registro de cambios",
+    "downloadDescription": "Descargar la última versión",
+    "issue": "Rastreador de problemas",
+    "issueDescription": "Informar errores y solicitar funciones",
+    "mcp": "Documentación de MCP",
+    "mcpDescription": "Obtenga información sobre la integración MCP",
+    "pricingDescription": "Ver planes de precios"
+  },
+  "productPricing": {},
+  "modelSpecifications": {},
+  "benchmarks": {
+    "title": "Performance Benchmarks",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "webDevArenaDesc": "Web development challenges",
+    "sciCodeDesc": "Scientific code generation",
+    "liveCodeBenchDesc": "Live coding performance"
+  },
+  "relatedProducts": {
+    "title": "Productos relacionados",
+    "viewProduct": "Ver producto"
+  },
+  "vendorMatrix": {
+    "cell": {
+      "summary": "{count} {category}"
+    },
+    "controls": {
+      "clear": "Clear",
+      "sortByLabel": "Sort by:",
+      "sortName": "Name",
+      "vendorTypeLabel": "Vendor Type:"
+    },
+    "table": {
+      "noVendorsFound": "No vendors found"
+    },
+    "vendorTypes": {
+      "label": "Vendor Types:",
+      "types": {
+        "ai-native": {
+          "description": "Model + Development Tools",
+          "label": "AI Native"
+        },
+        "full-stack": {
+          "description": "IDE + CLI + Extension",
+          "label": "Full Stack"
+        },
+        "model-only": {
+          "description": "Model (with or without Provider)",
+          "label": "Model Only"
+        },
+        "provider-only": {
+          "description": "Provider only",
+          "label": "Provider Only"
+        },
+        "tool-only": {
+          "description": "IDE/CLI/Extension",
+          "label": "Tool Only"
+        }
+      }
+    }
+  }
+}

@@ -2,58 +2,47 @@
   "clis": {
     "backTo": "Back to CLIs",
     "subtitle": "Compare features, pricing, and specifications of AI coding CLI tools side by side.",
-    "title": "CLI Comparison"
+    "title": "AI Coding CLI Comparison"
   },
   "columns": {
+    "name": "Name",
     "cache": "Cache",
     "capabilities": "Capabilities",
     "contextLength": "Context Length",
     "freePlan": "Free Plan",
-    "githubStars": "@:components.productHero.stars",
     "input": "Input",
     "inputModalities": "Input Modalities",
-    "license": "@:components.productHero.license",
     "links": "Links",
     "live-code-bench": "Live Code Bench",
-    "maxOutput": "@:shared.common.maxOutput",
     "maxPrice": "Max Price",
     "mmmu": "MMMU",
     "mmmu-pro": "MMMU Pro",
-    "modelSize": "@:shared.common.modelSize",
     "output": "Output",
-    "platforms": "@:components.productHero.platforms",
-    "pricing": "@:shared.common.pricing",
     "pricingCache": "Cache Pricing",
     "pricingInput": "Input Pricing",
     "pricingOutput": "Output Pricing",
     "sci-code": "SciCode",
     "startingPrice": "Starting Price",
-    "supportedIdes": "@:components.productHero.supportedIdes",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version",
     "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "Back to Extensions",
     "subtitle": "Compare features, pricing, and specifications of AI coding extensions side by side.",
-    "title": "Extension Comparison"
+    "title": "AI Coding Extension Comparison"
   },
   "ides": {
     "backTo": "Back to IDEs",
     "subtitle": "Compare features, pricing, and specifications of AI-powered IDEs side by side.",
-    "title": "IDE Comparison"
+    "title": "AI Coding IDE Comparison"
   },
-  "linkTitles": {
-    "documentation": "@:components.productHero.documentation",
-    "download": "@:components.productHero.download",
-    "officialWebsite": "@:components.productHero.visitWebsite"
-  },
+  "modelCompareDescription": "Compare AI coding models side by side: specifications, pricing, capabilities, and benchmarks.",
+  "modelCompareTitle": "Compare AI Coding Model: {model1} vs {model2}",
   "models": {
     "backTo": "Back to Models",
     "subtitle": "Compare specifications and pricing of AI coding models side by side.",
-    "title": "Model Comparison"
+    "title": "AI Coding Model Comparison"
   },
   "pricingValues": {
     "free": "Free",

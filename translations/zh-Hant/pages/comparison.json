@@ -2,58 +2,47 @@
   "clis": {
     "backTo": "返回 CLI",
     "subtitle": "並排比較 AI 編碼 CLI 工具的功能、價格和規格。",
-    "title": "CLI 比較"
+    "title": "AI 編碼 CLI 工具比較"
   },
   "columns": {
+    "name": "Name",
     "cache": "快取",
     "capabilities": "功能",
     "contextLength": "內容長度",
     "freePlan": "免費方案",
-    "githubStars": "Stars",
     "input": "輸入",
     "inputModalities": "輸入模態",
-    "license": "授權",
     "links": "連結",
     "live-code-bench": "Live Code Bench",
-    "maxOutput": "最大輸出",
     "maxPrice": "最高價格",
     "mmmu": "MMMU",
     "mmmu-pro": "MMMU Pro",
-    "modelSize": "模型大小",
     "output": "輸出",
-    "platforms": "平台",
-    "pricing": "價格",
     "pricingCache": "快取價格",
     "pricingInput": "輸入價格",
     "pricingOutput": "輸出價格",
     "sci-code": "SciCode",
     "startingPrice": "起價",
-    "supportedIdes": "支援的 IDE",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "vendor": "供應商",
-    "version": "版本",
     "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "返回擴充套件",
     "subtitle": "並排比較 AI 編碼擴充套件的功能、價格和規格。",
-    "title": "擴充套件比較"
+    "title": "AI 編碼擴充外掛比較"
   },
   "ides": {
     "backTo": "返回 IDE",
     "subtitle": "並排比較 AI 驅動 IDE 的功能、價格和規格。",
-    "title": "IDE 比較"
+    "title": "AI 編碼 IDE 比較"
   },
-  "linkTitles": {
-    "documentation": "文件",
-    "download": "下載",
-    "officialWebsite": "官方網站"
-  },
+  "modelCompareDescription": "並排比較 AI 編碼模型：規格、定價、功能和基準測試。",
+  "modelCompareTitle": "比較 AI 編碼模型：{model1} vs {model2}",
   "models": {
     "backTo": "返回模型",
     "subtitle": "並排比較 AI 編碼模型的規格和價格。",
-    "title": "模型比較"
+    "title": "AI 編碼模型比較"
   },
   "pricingValues": {
     "free": "免費",

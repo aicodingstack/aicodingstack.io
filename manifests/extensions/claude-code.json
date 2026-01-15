@@ -8,7 +8,7 @@
       "description": "Claude Code 是一个直接集成到 VS Code 中的 AI 编码助手。提供智能代码建议、解释，并帮助调试和代码生成。"
     },
     "de": {
-      "description": "Claude Code ist ein KI-Programmierassistent, der direkt in VS Code integriert ist. Bietet intelligente Codevorschläge, Erklärungen und hilft beim Debugging und bei der Code-Erstellung."
+      "description": "Claude Code ist ein AI-Programmierassistent, der direkt in VS Code integriert ist. Bietet intelligente Codevorschläge, Erklärungen und hilft beim Debugging und bei der Code-Erstellung."
     },
     "ko": {
       "description": "Claude Code는 VS Code에 직접 통합되는 AI 코딩 어시스턴트입니다. 스마트 코드 제안, 설명을 제공하며 디버깅과 코드 생성을 도와줍니다."

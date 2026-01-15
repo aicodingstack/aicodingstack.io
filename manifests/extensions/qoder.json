@@ -8,7 +8,7 @@
       "description": "将自主 AI 代理引入 IDE 的智能编码平台。具备代码补全、问答模式用于调试，以及代理模式用于复杂的多步骤开发任务。"
     },
     "de": {
-      "description": "Eine agentenbasierte Coding-Plattform, die autonome KI-Agenten in Ihre IDE bringt. Bietet Code-Vervollständigung, Ask-Modus für Debugging und Agent-Modus für komplexe mehrstufige Entwicklungsaufgaben."
+      "description": "Eine agentenbasierte Coding-Plattform, die autonome AI-Agenten in Ihre IDE bringt. Bietet Code-Vervollständigung, Ask-Modus für Debugging und Agent-Modus für komplexe mehrstufige Entwicklungsaufgaben."
     },
     "ko": {
       "description": "자율 AI 에이전트를 IDE로 가져오는 에이전트 기반 코딩 플랫폼입니다. 코드 자동 완성, 디버깅을 위한 Ask 모드 및 복잡한 다단계 개발 작업을 위한 Agent 모드를 제공합니다."

@@ -1,0 +1,27 @@
+{
+  "copyButton": {
+    "copied": "コピーしました！",
+    "copyToClipboard": "クリップボードにコピー"
+  },
+  "filterSortBar": {
+    "clearFilters": "フィルターをクリア",
+    "license": "ライセンス:",
+    "platform": "プラットフォーム:",
+    "sort": "並び替え:",
+    "sortDefault": "デフォルト",
+    "sortNameAsc": "名前 (A-Z)",
+    "sortNameDesc": "名前 (Z-A)"
+  },
+  "searchDialog": {
+    "placeholder": "Type to search...",
+    "empty": "Start typing to search...",
+    "noResultsFor": "No results for \"{query}\"",
+    "navigate": "to navigate",
+    "select": "to select",
+    "viewAllResults": "View all results for \"{query}\""
+  },
+  "searchInput": {
+    "placeholder": "@:components.controls.searchInput.placeholder",
+    "clear": "Clear search"
+  }
+}

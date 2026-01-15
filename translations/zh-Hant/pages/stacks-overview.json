@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "AI Coding Stack Overview",
+    "description": "Complete overview of the AI coding ecosystem. Explore IDEs, CLIs, extensions, models, and providers all in one place."
+  },
+  "clis": {
+    "description": "Command-line AI assistants that bring the power of large language models directly to your terminal. Execute complex tasks with natural language, right from your shell."
+  },
+  "exploreStack": "Explore the Stack",
+  "extensions": {
+    "description": "AI-powered coding extensions and plugins for your favorite IDE. From code completion to intelligent refactoring, enhance your development experience with AI assistance."
+  },
+  "ides": {
+    "description": "AI-powered integrated development environments that understand your codebase and provide intelligent assistance. From VS Code to Cursor, discover the editors that make coding collaborative with AI."
+  },
+  "modelProviders": {
+    "description": "LLM API providers offering access to various AI models. From DeepSeek to OpenRouter, discover platforms that power your AI coding tools with unified APIs and model access."
+  },
+  "models": {
+    "description": "The intelligence layer. Large language models optimized for code generation, understanding, and analysis. Compare specs, pricing, and capabilities across leading AI models."
+  },
+  "overviewTitle": "AI Coding Stack Overview",
+  "subtitle": "Explore the complete AI coding ecosystem: IDEs, CLIs, extensions, models, and providers.",
+  "vendors": {
+    "description": "Leading companies and organizations building AI technology. From OpenAI to Anthropic, discover the vendors behind the AI coding revolution."
+  }
+}

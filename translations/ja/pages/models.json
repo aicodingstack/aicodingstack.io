@@ -1,0 +1,10 @@
+{
+  "context": "コンテキスト:",
+  "lifecycle": {
+    "noResults": "検索に一致する{lifecycle}モデルがありません"
+  },
+  "pricing": "価格:",
+  "size": "サイズ:",
+  "subtitle": "コード生成と分析に最適化された大規模言語モデル",
+  "title": "AI コーディングモデル"
+}

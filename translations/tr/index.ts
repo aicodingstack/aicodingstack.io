@@ -1,25 +1,65 @@
-import components from './components.json'
+/**
+ * Translation exports for tr locale
+ *
+ * This file exports all translation resources for the tr locale.
+ * It follows the i18n architecture rules defined in docs/I18N-ARCHITECTURE-RULES.md
+ */
+
+// Component translations
+import componentsCommon from './components/common.json'
+import componentsControls from './components/controls.json'
+import componentsNavigation from './components/navigation.json'
+import componentsProduct from './components/product.json'
+import componentsSidebar from './components/sidebar.json'
 import articles from './pages/articles.json'
+import clis from './pages/clis.json'
 import comparison from './pages/comparison.json'
 import curatedCollections from './pages/curated-collections.json'
 import docs from './pages/docs.json'
+import extensions from './pages/extensions.json'
+// Page translations
 import home from './pages/home.json'
+import ides from './pages/ides.json'
+import landscape from './pages/landscape.json'
 import manifesto from './pages/manifesto.json'
-import stacks from './pages/stacks.json'
+import modelCompare from './pages/model-compare.json'
+import modelDetail from './pages/model-detail.json'
+import modelProviders from './pages/model-providers.json'
+import models from './pages/models.json'
+import openSourceRank from './pages/open-source-rank.json'
+import search from './pages/search.json'
+import stacksOverview from './pages/stacks-overview.json'
+import vendors from './pages/vendors.json'
+// Shared translations
 import shared from './shared.json'
 
-const messages = {
+export default {
   shared,
-  components,
   pages: {
     home,
-    manifesto,
-    docs,
-    articles,
-    curatedCollections,
-    ...stacks,
+    landscape,
     comparison,
+    manifesto,
+    search,
+    openSourceRank,
+    docs,
+    curatedCollections,
+    articles,
+    ides,
+    clis,
+    extensions,
+    models,
+    modelDetail,
+    modelCompare,
+    modelProviders,
+    vendors,
+    stacksOverview,
   },
-}
-
-export default messages
+  components: {
+    common: componentsCommon,
+    navigation: componentsNavigation,
+    controls: componentsControls,
+    sidebar: componentsSidebar,
+    product: componentsProduct,
+  },
+} as const

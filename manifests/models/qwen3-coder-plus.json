@@ -38,20 +38,23 @@
       "description": "阿里巴巴專有的開源 Qwen3 Coder 480B A35B 版本。強大的編碼代理模型，專長於通過工具調用和環境交互進行自主編程，結合了編碼能力和通用的多功能能力。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://qwenlm.com",
   "docsUrl": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B",
   "vendor": "Alibaba",
   "size": "480B",
-  "contextWindow": 128000,
-  "maxOutput": 8000,
+  "contextWindow": 1048576,
+  "maxOutput": 65536,
   "tokenPricing": {
     "input": 1,
-    "output": 1,
-    "cache": null
+    "output": 5,
+    "cache": 0.1
   },
-  "releaseDate": null,
+  "releaseDate": "2025-07-23",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2025-07",
   "inputModalities": ["text"],
+  "outputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
   "benchmarks": {
     "sweBench": null,
@@ -63,7 +66,7 @@
     "webDevArena": null
   },
   "platformUrls": {
-    "huggingface": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B",
+    "huggingface": null,
     "artificialAnalysis": null,
     "openrouter": "https://openrouter.ai/qwen/qwen3-coder-plus"
   }

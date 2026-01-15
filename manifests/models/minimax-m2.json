@@ -38,21 +38,24 @@
       "description": "MiniMax 推出的 230B 參數混合專家模型，具備 204.8K 上下文窗口，專為智能代理和編程任務設計。每次推理激活 10B 參數。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://platform.minimaxi.com",
   "docsUrl": "https://platform.minimaxi.com/docs/api-reference/text-openai-api",
   "vendor": "MiniMax",
   "size": "230B",
-  "contextWindow": 204000,
-  "maxOutput": 8000,
+  "contextWindow": 204800,
+  "maxOutput": 131072,
   "tokenPricing": {
-    "input": 0,
-    "output": 0,
-    "cache": null
+    "input": 0.3,
+    "output": 1.2,
+    "cache": 0.03
   },
-  "releaseDate": null,
+  "releaseDate": "2025-10-27",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2025-10",
   "inputModalities": ["text"],
-  "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
     "sweBench": 61,
     "terminalBench": 0.3,
@@ -63,8 +66,8 @@
     "webDevArena": null
   },
   "platformUrls": {
-    "huggingface": null,
-    "artificialAnalysis": null,
-    "openrouter": null
+    "huggingface": "https://huggingface.co/MiniMaxAI/MiniMax-M2",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/minimax-m2",
+    "openrouter": "https://openrouter.ai/minimax/minimax-m2"
   }
 }
