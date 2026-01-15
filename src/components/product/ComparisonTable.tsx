@@ -19,6 +19,7 @@ export interface ComparisonTableProps {
   itemNameKey?: string
   itemIdKey?: string
   stickyTopOffset?: number
+  nameColumnLabel?: string
 }
 
 export default function ComparisonTable({
@@ -28,6 +29,7 @@ export default function ComparisonTable({
   itemNameKey = 'name',
   itemIdKey = 'id',
   stickyTopOffset,
+  nameColumnLabel = 'Name',
 }: ComparisonTableProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const tableRef = useRef<HTMLTableElement>(null)
@@ -144,7 +146,7 @@ export default function ComparisonTable({
                     transform: `translateX(${scrollLeft}px)`,
                   }}
                 >
-                  Name
+                  {nameColumnLabel}
                 </th>
                 {columns.map((column, index) => (
                   <th
@@ -211,7 +213,7 @@ export default function ComparisonTable({
             >
               <tr className="border-b border-t border-[var(--color-border-strong)]">
                 <th className="sticky left-0 z-50 bg-[var(--color-bg)] px-[var(--spacing-md)] py-[var(--spacing-sm)] text-left text-sm font-semibold uppercase tracking-wider text-[var(--color-text-muted)] border-r border-[var(--color-border)]">
-                  Name
+                  {nameColumnLabel}
                 </th>
                 {columns.map(column => (
                   <th

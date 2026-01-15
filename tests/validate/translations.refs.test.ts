@@ -5,7 +5,7 @@ import { describe, it } from 'vitest'
 
 // TypeScript can import .mjs because allowJs=true and moduleResolution=bundler.
 // These exports are the source of truth for reference parsing/resolution.
-import { extractReferences, getValueByPath, resolveReference } from '../../src/i18n/lib-core.mjs'
+import { extractReferences, getValueByPath, resolveReference } from '../../src/i18n/lib-core'
 
 type Reference = { match: string; modifier?: string; path: string }
 

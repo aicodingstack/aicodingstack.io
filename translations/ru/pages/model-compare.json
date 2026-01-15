@@ -1,0 +1,14 @@
+{
+  "addModel": "+ Добавить модель",
+  "basicInfo": "Основная информация",
+  "cachePrice": "Цена кеша",
+  "compareTitle": "Сравнить {model1} vs {model2}",
+  "contextWindow": "Контекстное окно",
+  "description": "Описание",
+  "inputPrice": "Цена ввода",
+  "knowledgeCutoff": "Знания",
+  "lifecycle": "Жизненный цикл",
+  "outputPrice": "Цена вывода",
+  "releaseDate": "Дата выпуска",
+  "verified": "Проверено"
+}

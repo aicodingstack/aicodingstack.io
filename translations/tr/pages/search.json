@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "title": "Search - AI Coding Stack",
+    "description": "Search across AI coding tools, models, providers, and resources. Find exactly what you need to enhance your development workflow."
+  },
+  "noResults": "No results found",
+  "noResultsFor": "No results found for \"{query}\"",
+  "placeholder": "Search AI coding tools...",
+  "resultsCount": "{count} {count, plural, one {result} other {results}}",
+  "resultsCountFor": "{count} {count, plural, one {result} other {results}} for \"{query}\"",
+  "searching": "Searching...",
+  "title": "Search Results"
+}

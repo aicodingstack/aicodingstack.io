@@ -51,7 +51,10 @@
     "cache": null
   },
   "releaseDate": null,
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
   "inputModalities": ["text"],
+  "outputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
     "sweBench": null,

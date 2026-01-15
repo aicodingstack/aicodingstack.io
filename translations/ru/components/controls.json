@@ -1,0 +1,27 @@
+{
+  "copyButton": {
+    "copied": "Скопировано!",
+    "copyToClipboard": "Копировать в буфер обмена"
+  },
+  "filterSortBar": {
+    "clearFilters": "Очистить фильтры",
+    "license": "Лицензия:",
+    "platform": "Платформа:",
+    "sort": "Сортировка:",
+    "sortDefault": "По умолчанию",
+    "sortNameAsc": "Имя (А-Я)",
+    "sortNameDesc": "Имя (Я-А)"
+  },
+  "searchDialog": {
+    "placeholder": "Type to search...",
+    "empty": "Start typing to search...",
+    "noResultsFor": "No results for \"{query}\"",
+    "navigate": "to navigate",
+    "select": "to select",
+    "viewAllResults": "View all results for \"{query}\""
+  },
+  "searchInput": {
+    "placeholder": "@:components.controls.searchInput.placeholder",
+    "clear": "Clear search"
+  }
+}

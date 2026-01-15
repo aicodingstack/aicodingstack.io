@@ -8,7 +8,7 @@
       "description": "Kimi CLI 是一款新的 CLI Agent，可以帮助您完成软件开发任务和终端操作。具有类 Shell 的用户界面、Zsh 集成、Agent Client Protocol 支持和 MCP 支持。"
     },
     "de": {
-      "description": "Moonshot AIs Kimi CLI bringt Chinas führendes langes Kontext-KI-Modell in Ihr Terminal. Verarbeitet riesige Codebasen mit 200K+ Token-Fenster und bietet genaues Code-Verständnis."
+      "description": "Moonshot AIs Kimi CLI bringt Chinas führendes langes Kontext-AI-Modell in Ihr Terminal. Verarbeitet riesige Codebasen mit 200K+ Token-Fenster und bietet genaues Code-Verständnis."
     },
     "ko": {
       "description": "Kimi CLI는 소프트웨어 개발 작업과 터미널 작업을 도와주는 새로운 CLI 에이전트입니다. 쉘과 유사한 UI, Zsh 통합, 에이전트 클라이언트 프로토콜 지원 및 MCP 지원을 제공합니다."
@@ -74,6 +74,12 @@
   "platforms": [
     {
       "os": "macOS",
+      "installCommand": "uv tool install --python 3.13 kimi-cli",
+      "launchCommand": "kimi",
+      "installPath": null
+    },
+    {
+      "os": "Windows",
       "installCommand": "uv tool install --python 3.13 kimi-cli",
       "launchCommand": "kimi",
       "installPath": null

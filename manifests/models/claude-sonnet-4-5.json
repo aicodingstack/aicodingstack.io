@@ -38,21 +38,24 @@
       "description": "Anthropic 迄今為止最先進的 Sonnet 模型，針對真實世界的代理和編碼工作流程進行了優化。在 SWE-bench Verified 等編碼基準測試中表現出色，在系統設計、代碼安全和規範遵循方面有所提升。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://www.anthropic.com",
   "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
   "vendor": "Anthropic",
   "size": "Unknown",
   "contextWindow": 200000,
-  "maxOutput": 8000,
+  "maxOutput": 64000,
   "tokenPricing": {
     "input": 3,
-    "output": 3,
-    "cache": null
+    "output": 15,
+    "cache": 0.3
   },
-  "releaseDate": null,
-  "inputModalities": ["text"],
-  "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
+  "releaseDate": "2025-09-29",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2025-01",
+  "inputModalities": ["text", "image", "pdf"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "reasoning", "tool-choice", "structured-outputs"],
   "benchmarks": {
     "sweBench": 70.6,
     "terminalBench": 0.42,

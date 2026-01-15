@@ -1,0 +1,103 @@
+{
+  "productCommands": {
+    "command": "Befehl",
+    "install": "Installieren",
+    "launch": "Starten"
+  },
+  "platformLinks": {
+    "aiPlatforms": {
+      "huggingface": {
+        "description": "Modellkarte und Gewichte anzeigen"
+      },
+      "artificialAnalysis": {
+        "description": "AI-Modell-Leaderboard und Benchmarks"
+      },
+      "openrouter": {
+        "description": "Mehrere AI-Modelle vergleichen und nutzen"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "Star-Verlauf laden...",
+    "title": "GitHub Star-Verlauf",
+    "description": "Star-Wachstumstrend über Zeit",
+    "stars": "Stars",
+    "fallbackNote": "Hinweis: Beispieldaten werden angezeigt. Star-Verlauf API ist vorübergehend nicht verfügbar."
+  },
+  "productHero": {
+    "runtime": "Laufzeit"
+  },
+  "communityLinks": {
+    "blog": "Blog",
+    "blogDescription": "Blogbeiträge lesen",
+    "discordDescription": "Community beitreten",
+    "githubDescription": "Repositories ansehen",
+    "redditDescription": "Diskussion teilnehmen",
+    "youtubeDescription": "Videos ansehen"
+  },
+  "resourceLinks": {
+    "changelog": "Änderungsprotokoll",
+    "changelogDescription": "Änderungsprotokoll anzeigen",
+    "downloadDescription": "Neueste Version herunterladen",
+    "issue": "Issue-Tracker",
+    "issueDescription": "Fehler melden und Funktionen anfordern",
+    "mcp": "MCP-Dokumentation",
+    "mcpDescription": "Erfahren Sie mehr über MCP-Integration",
+    "pricingDescription": "Preispläne anzeigen"
+  },
+  "productPricing": {},
+  "modelSpecifications": {},
+  "benchmarks": {
+    "title": "Leistungsbenchmarks",
+    "sweBenchDesc": "Echtwelt-Softwareentwicklungsaufgaben",
+    "terminalBenchDesc": "Befehlszeilenschnittstellen-Kompetenz",
+    "mmmuDesc": "Multimodales Verstehen",
+    "mmmuProDesc": "Erweiterte multimodale Aufgaben",
+    "webDevArenaDesc": "Web-Entwicklungsherausforderungen",
+    "sciCodeDesc": "Wissenschaftliche Code-Generierung",
+    "liveCodeBenchDesc": "Live-Coding-Leistung"
+  },
+  "relatedProducts": {
+    "title": "Verwandte Produkte",
+    "viewProduct": "Produkt ansehen"
+  },
+  "vendorMatrix": {
+    "cell": {
+      "summary": "{count} {category}"
+    },
+    "controls": {
+      "clear": "Clear",
+      "sortByLabel": "Sort by:",
+      "sortName": "Name",
+      "vendorTypeLabel": "Vendor Type:"
+    },
+    "table": {
+      "noVendorsFound": "No vendors found"
+    },
+    "vendorTypes": {
+      "label": "Vendor Types:",
+      "types": {
+        "ai-native": {
+          "description": "Model + Development Tools",
+          "label": "AI Native"
+        },
+        "full-stack": {
+          "description": "IDE + CLI + Extension",
+          "label": "Full Stack"
+        },
+        "model-only": {
+          "description": "Model (with or without Provider)",
+          "label": "Model Only"
+        },
+        "provider-only": {
+          "description": "Provider only",
+          "label": "Provider Only"
+        },
+        "tool-only": {
+          "description": "IDE/CLI/Extension",
+          "label": "Tool Only"
+        }
+      }
+    }
+  }
+}

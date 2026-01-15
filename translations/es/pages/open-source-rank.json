@@ -1,0 +1,27 @@
+{
+  "description": "Descubre y explora herramientas de codificación IA de código abierto clasificadas por estrellas de GitHub. Compara IDEs, CLIs y extensiones para encontrar las herramientas perfectas para tu flujo de trabajo de desarrollo.",
+  "filter": {
+    "all": "Todos"
+  },
+  "meta": {
+    "description": "Clasificación de todos los proyectos de código abierto en AI Coding Stack, ordenados por estrellas de GitHub. Consulta las estadísticas y tendencias de las herramientas de código abierto vs propietarias.",
+    "title": "Clasificación de Proyectos de Código Abierto"
+  },
+  "noResults": "No se encontraron proyectos de código abierto para esta categoría.",
+  "note": "Nota: Esta página solo muestra proyectos con repositorios de GitHub. Algunos proyectos, aunque no sean de código abierto, mantienen repositorios de GitHub como canales de comentarios de usuarios.",
+  "statistics": {
+    "closedSourceCount": "Proyectos de código propietario",
+    "closedSourcePercentage": "Porcentaje Propietario",
+    "licenseBreakdown": "Distribución de Licencias",
+    "openSourceCount": "Proyectos de código abierto",
+    "projects": "proyectos",
+    "title": "Distribución de Código Abierto vs Propietario",
+    "totalProjects": "Total de Proyectos"
+  },
+  "table": {
+    "openSourceTitle": "Proyectos de código abierto ({count})",
+    "proprietaryTitle": "Proyectos de código propietario ({count})",
+    "rank": "Rango"
+  },
+  "title": "Clasificación de Proyectos de Código Abierto"
+}

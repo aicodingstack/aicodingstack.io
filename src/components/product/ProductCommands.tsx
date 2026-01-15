@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 export interface ProductCommandsProps {
   install?: string | null
   launch?: string | null
-  command?: string | null // For MCP servers
+  command?: string | null
 }
 
 interface CommandSection {
@@ -36,12 +36,12 @@ function CommandSectionItem({ value, label }: Omit<CommandSection, 'labelKey'>) 
 }
 
 export function ProductCommands({ install, launch, command }: ProductCommandsProps) {
-  const t = useTranslations('components.productCommands')
+  const tComponent = useTranslations('components.product.productCommands')
 
   const commands: CommandSection[] = [
-    { value: install, labelKey: 'install', label: t('install') },
-    { value: launch, labelKey: 'launch', label: t('launch') },
-    { value: command, labelKey: 'command', label: t('command') },
+    { value: install, labelKey: 'install', label: tComponent('install') },
+    { value: launch, labelKey: 'launch', label: tComponent('launch') },
+    { value: command, labelKey: 'command', label: tComponent('command') },
   ]
 
   const hasAnyCommand = commands.some(cmd => cmd.value)

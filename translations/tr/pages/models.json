@@ -1,0 +1,10 @@
+{
+  "context": "Bağlam:",
+  "lifecycle": {
+    "noResults": "Aramanızla eşleşen {lifecycle} model yok"
+  },
+  "pricing": "Fiyatlandırma:",
+  "size": "Boyut:",
+  "subtitle": "Kod oluşturma ve analiz için optimize edilmiş büyük dil modelleri",
+  "title": "AI Kodlama Modelleri"
+}

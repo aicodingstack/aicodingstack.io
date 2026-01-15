@@ -8,7 +8,7 @@
       "description": "Google 的 Gemini CLI 将先进的 AI 模型带到您的终端。提供代码补全、解释、测试生成和错误修复，同时支持多种语言。"
     },
     "de": {
-      "description": "Google Gemini CLI bringt KI-gestützte Codierungsassistenz mit Gemini-Modellen in Ihr Terminal. Bietet Konversations-Codierung, Multi-Turn-Dialoge und Integration mit Google Cloud-Diensten."
+      "description": "Google Gemini CLI bringt AI-gestützte Codierungsassistenz mit Gemini-Modellen in Ihr Terminal. Bietet Konversations-Codierung, Multi-Turn-Dialoge und Integration mit Google Cloud-Diensten."
     },
     "ko": {
       "description": "Google의 Gemini CLI는 고급 AI 모델을 터미널로 가져옵니다. 코드 완성, 설명, 테스트 생성 및 버그 수정을 제공하며 여러 언어를 지원합니다."

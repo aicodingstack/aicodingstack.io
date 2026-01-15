@@ -1,0 +1,61 @@
+{
+  "$schema": "../$schemas/provider.schema.json",
+  "id": "anthropic",
+  "name": "Anthropic",
+  "description": "An AI safety and research company, building reliable and interpretable AI systems including Claude for various applications in coding, analysis, and content generation.",
+  "translations": {
+    "zh-Hans": {
+      "description": "一家 AI 安全和研究公司，构建可靠且可解释的 AI 系统，包括 Claude，用于编码、分析和内容生成等各种应用。"
+    },
+    "de": {
+      "description": "AI-Sicherheitsunternehmen, das zuverlässige und interpretierbare Systeme entwickelt, einschließlich Claude für Codierung, Analyse und Inhaltserstellung."
+    },
+    "ko": {
+      "description": "코딩, 분석 및 콘텐츠 생성 등 다양한 애플리케이션을 위한 Claude를 포함하여 신뢰할 수 있고 해석 가능한 AI 시스템을 구축하는 AI 안전 및 연구 회사입니다."
+    },
+    "es": {
+      "description": "Una empresa de seguridad e investigación de IA, construyendo sistemas de IA confiables e interpretables, incluyendo Claude para varias aplicaciones en codificación, análisis y generación de contenido."
+    },
+    "fr": {
+      "description": "Une entreprise de sécurité et recherche en IA, construisant des systèmes d'IA fiables et interprétables, y compris Claude pour diverses applications en codage, analyse et création de contenu."
+    },
+    "id": {
+      "description": "Perusahaan keamanan dan riset AI, membangun sistem AI yang dapat diandalkan dan dapat diinterpretasikan, termasuk Claude untuk berbagai aplikasi dalam coding, analisis, dan pembuatan konten."
+    },
+    "ja": {
+      "description": "信頼性が高く解釈可能なAIシステムを構築するAI安全研究会社。コーディング、分析、コンテンツ生成など様々な用途向けのClaudeを含みます。"
+    },
+    "pt": {
+      "description": "Uma empresa de segurança e pesquisa de IA, construindo sistemas de IA confiáveis e interpretáveis, incluindo Claude para várias aplicações em codificação, análise e geração de conteúdo."
+    },
+    "ru": {
+      "description": "Компания по безопасности и исследованиям ИИ, создающая надежные и интерпретируемые системы ИИ, включая Claude для различных приложений в области программирования, анализа и создания контента."
+    },
+    "tr": {
+      "description": "Kodlama, analiz ve içerik oluşturma gibi çeşitli uygulamalar için Claude dahil olmak üzere güvenilir ve yorumlanabilir AI sistemleri geliştiren bir AI güvenliği ve araştırma şirketi."
+    },
+    "zh-Hant": {
+      "description": "一家 AI 安全和研究公司，構建可靠且可解釋的 AI 系統，包括 Claude，用於編碼、分析和內容生成等各種應用。"
+    }
+  },
+  "verified": false,
+  "websiteUrl": "https://anthropic.com",
+  "docsUrl": "https://docs.anthropic.com",
+  "vendor": "anthropic",
+  "type": "foundation-model-provider",
+  "applyKeyUrl": "https://console.anthropic.com/",
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/anthropics",
+    "artificialAnalysis": null,
+    "openrouter": "https://openrouter.ai/provider/anthropic"
+  },
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/anthropicresearch",
+    "twitter": "https://x.com/AnthropicAI",
+    "github": "https://github.com/anthropics",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": "https://www.anthropic.com/news"
+  }
+}

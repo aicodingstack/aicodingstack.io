@@ -8,7 +8,7 @@
       "description": "Qoder CLI 是 AI 驱动的编码助手，用于智能代码生成、调试和开发工作流。具有 TUI 模式、内联聊天和项目管理功能。"
     },
     "de": {
-      "description": "Qoder CLI ist ein KI-gesteuerter Codierungs-Assistent für intelligente Code-Generierung, Debugging und Entwicklungs-Workflows. Bietet TUI-Modus, Inline-Chat und Projektmanagement."
+      "description": "Qoder CLI ist ein AI-gesteuerter Codierungs-Assistent für intelligente Code-Generierung, Debugging und Entwicklungs-Workflows. Bietet TUI-Modus, Inline-Chat und Projektmanagement."
     },
     "ko": {
       "description": "Qoder CLI는 스마트 코드 생성, 디버깅 및 개발 워크플로우를 위한 AI 기반 코딩 어시스턴트입니다. TUI 모드, 인라인 채팅 및 프로젝트 관리 기능을 제공합니다."

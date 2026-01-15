@@ -2,7 +2,7 @@
   "$schema": "../$schemas/model.schema.json",
   "id": "composer",
   "name": "Composer",
-  "description": "Fast frontier coding model from Cursor optimized with RL for interactive software engineering, trained as a mixture-of-experts to deliver high-speed code assistance.",
+  "description": "Fast frontier coding model from Cursor optimized with RL for interactive software engineering, trained as a mixture-of-experts to deliveries high-speed code assistance.",
   "translations": {
     "zh-Hans": {
       "description": "Cursor 发布的高速前沿编码模型，采用 MoE 架构与强化学习针对交互式软件工程优化，可在真实开发环境中快速提供代码辅助。"
@@ -51,7 +51,10 @@
     "cache": null
   },
   "releaseDate": null,
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
   "inputModalities": ["text"],
+  "outputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
   "benchmarks": {
     "sweBench": null,

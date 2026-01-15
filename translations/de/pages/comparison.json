@@ -1,59 +1,48 @@
 {
   "clis": {
     "backTo": "Zurück zu CLIs",
-    "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von KI-Coding-CLI-Tools nebeneinander.",
-    "title": "CLI-Vergleich"
+    "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von AI-Coding-CLI-Tools nebeneinander.",
+    "title": "AI-Coding-CLI-Vergleich"
   },
   "columns": {
+    "name": "Name",
     "cache": "Cache",
     "capabilities": "Funktionen",
     "contextLength": "Kontextlänge",
     "freePlan": "Kostenloser Plan",
-    "githubStars": "Stars",
     "input": "Eingabe",
     "inputModalities": "Eingabemodalitäten",
-    "license": "Lizenz",
     "links": "Links",
     "live-code-bench": "Live Code Bench",
-    "maxOutput": "Max. Ausgabe",
     "maxPrice": "Höchstpreis",
     "mmmu": "MMMU",
     "mmmu-pro": "MMMU Pro",
-    "modelSize": "Modellgröße",
     "output": "Ausgabe",
-    "platforms": "Plattformen",
-    "pricing": "Preise",
     "pricingCache": "Cache-Preise",
     "pricingInput": "Eingabe-Preise",
     "pricingOutput": "Ausgabe-Preise",
     "sci-code": "SciCode",
     "startingPrice": "Startpreis",
-    "supportedIdes": "Unterstützte IDEs",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "vendor": "Anbieter",
-    "version": "Version",
     "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "Zurück zu Erweiterungen",
-    "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von KI-Coding-Erweiterungen nebeneinander.",
-    "title": "Erweiterungs-Vergleich"
+    "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von AI-Coding-Erweiterungen nebeneinander.",
+    "title": "AI-Coding-Erweiterungs-Vergleich"
   },
   "ides": {
     "backTo": "Zurück zu IDEs",
-    "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von KI-gestützten IDEs nebeneinander.",
-    "title": "IDE-Vergleich"
+    "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von AI-gestützten IDEs nebeneinander.",
+    "title": "AI-Coding-IDE-Vergleich"
   },
-  "linkTitles": {
-    "documentation": "Dokumentation",
-    "download": "Download",
-    "officialWebsite": "Offizielle Website"
-  },
+  "modelCompareDescription": "Vergleichen Sie AI-Coding-Modelle nebeneinander: Spezifikationen, Preise, Funktionen und Benchmarks.",
+  "modelCompareTitle": "AI-Coding-Modell-Vergleich: {model1} vs {model2}",
   "models": {
     "backTo": "Zurück zu Modellen",
-    "subtitle": "Vergleichen Sie Spezifikationen und Preise von KI-Coding-Modellen nebeneinander.",
-    "title": "Modell-Vergleich"
+    "subtitle": "Vergleichen Sie Spezifikationen und Preise von AI-Coding-Modellen nebeneinander.",
+    "title": "AI-Coding-Modell-Vergleich"
   },
   "pricingValues": {
     "free": "Kostenlos",

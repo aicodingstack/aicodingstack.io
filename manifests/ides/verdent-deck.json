@@ -8,7 +8,7 @@
       "description": "并行代理开发环境，管理多个 AI 编码代理并行处理复杂的功能级软件任务，内置 Git 工作树支持。"
     },
     "de": {
-      "description": "Parallele Agentenentwicklungsumgebung, die mehrere KI-Coding-Agenten parallel für komplexe Software-Aufgaben auf Feature-Ebene mit integrierter Git-Worktree-Unterstützung verwaltet."
+      "description": "Parallele Agentenentwicklungsumgebung, die mehrere AI-Coding-Agenten parallel für komplexe Software-Aufgaben auf Feature-Ebene mit integrierter Git-Worktree-Unterstützung verwaltet."
     },
     "ko": {
       "description": "복잡한 기능 수준의 소프트웨어 작업을 위해 여러 AI 코딩 에이전트를 병렬로 관리하는 병렬 에이전트 개발 환경으로, Git 워크트리 지원이 내장되어 있습니다."

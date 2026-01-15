@@ -28,6 +28,16 @@ export {
   SEO_CONFIG,
   SITE_CONFIG,
 } from './config'
+// Export generator parameter types
+export type {
+  ArticleMetadataParams,
+  ComparisonMetadataParams,
+  DocsMetadataParams,
+  ListPageMetadataParams,
+  ModelDetailMetadataParams,
+  SoftwareDetailMetadataParams,
+  StaticPageMetadataParams,
+} from './generators'
 // Export all generators
 export {
   generateArticleMetadata,
@@ -57,6 +67,40 @@ export {
   getAlternateOGLocale,
   mapLocaleToOG,
 } from './helpers'
+export type { PageTranslationRequirement, TranslationValidationError } from './i18n-validation'
+// Export i18n translation validation
+export {
+  assertPageTranslationComplete,
+  getTranslationStats,
+  PAGE_TRANSLATION_REQUIREMENTS,
+  REQUIRED_TRANSLATION_KEYS,
+  validateAllPageTranslations,
+  validatePageTranslations,
+} from './i18n-validation'
+export type { GeneratorType, PageMetadataConfig } from './registry'
+// Export page registry
+export {
+  getPageConfig,
+  getPagesByCategory,
+  getPagesByGeneratorType,
+  getRegistryStats,
+  getTotalPageCount,
+  isRegisteredPage,
+  PAGE_REGISTRY,
+  pageRequiresSlug,
+} from './registry'
+export type {
+  RecommendedMetadataFields,
+  RequiredMetadataFields,
+  ValidationError,
+} from './required-fields'
+// Export metadata validation
+export {
+  assertMetadataComplete,
+  hasRequiredFields,
+  logMetadataSummary,
+  validateMetadataCompleteness,
+} from './required-fields'
 // Export robots configuration
 export {
   DEFAULT_ROBOTS,

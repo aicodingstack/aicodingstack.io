@@ -1,0 +1,23 @@
+{
+  "footer": {
+    "copyright": "© 2025 AI Coding Stack • Construído com ❤︎ • Open Source",
+    "openSource": "Repositório de metadados de codificação IA de código aberto.",
+    "selectLanguage": "Selecionar idioma",
+    "tagline": "Seu centro do ecossistema de codificação IA.",
+    "toggleTheme": "Alternar tema"
+  },
+  "header": {
+    "aiCodingLandscape": "Paisagem de Codificação IA",
+    "aiCodingLandscapeDesc": "Visualize o ecossistema completo de codificação IA",
+    "closeMenu": "Fechar menu",
+    "developmentTools": "Ferramentas de desenvolvimento",
+    "intelligence": "Inteligência",
+    "landscape": "Paisagem",
+    "openMenu": "Abrir menu",
+    "openSourceRank": "Classificação Open Source",
+    "openSourceRankDesc": "Explore projetos de codificação IA open source por estrelas do GitHub",
+    "ranking": "Classificação",
+    "searchPlaceholder": "Pesquisar...",
+    "toggleMenu": "Alternar menu"
+  }
+}

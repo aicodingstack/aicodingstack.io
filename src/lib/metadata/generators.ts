@@ -28,6 +28,110 @@ import {
 } from './helpers'
 import { createPageMetadata, type PageType } from './templates'
 
+// =============================================================================
+// SECTION: Parameter Type Interfaces
+// =============================================================================
+
+/**
+ * Parameters for generateListPageMetadata
+ */
+export interface ListPageMetadataParams {
+  locale: Locale
+  category: Category
+  translationNamespace: string
+  additionalKeywords?: string[]
+}
+
+/**
+ * Parameters for generateSoftwareDetailMetadata
+ */
+export interface SoftwareDetailMetadataParams {
+  locale: Locale
+  category: Category
+  slug: string
+  product: {
+    name: string
+    description: string
+    vendor: string
+    platforms?: Array<{ os: string }> | string[]
+    pricing?: Array<{ value: number | null; currency?: string | null; per?: string | null }>
+    license?: string
+  }
+  typeDescription: string
+}
+
+/**
+ * Parameters for generateModelDetailMetadata
+ */
+export interface ModelDetailMetadataParams {
+  locale: Locale
+  slug: string
+  model: {
+    name: string
+    description: string
+    vendor: string
+    size?: string
+    contextWindow?: number
+    maxOutput?: number
+    tokenPricing?: {
+      input?: number
+      output?: number
+    }
+  }
+  translationNamespace: string
+}
+
+/**
+ * Parameters for generateComparisonMetadata
+ */
+export interface ComparisonMetadataParams {
+  locale: Locale
+  category: Category
+}
+
+/**
+ * Parameters for generateArticleMetadata
+ */
+export interface ArticleMetadataParams {
+  locale: Locale
+  slug: string
+  article: {
+    title: string
+    description: string
+    date: string
+    author?: string
+  }
+}
+
+/**
+ * Parameters for generateDocsMetadata
+ */
+export interface DocsMetadataParams {
+  locale: Locale
+  slug: string
+  doc: {
+    title: string
+    description: string
+  }
+}
+
+/**
+ * Parameters for generateStaticPageMetadata
+ */
+export interface StaticPageMetadataParams {
+  locale: Locale
+  basePath: string
+  title: string
+  description: string
+  keywords?: string
+  ogType?: 'website' | 'article'
+  pageType?: 'home' | 'static' | 'search'
+}
+
+// =============================================================================
+// SECTION: Generator Functions
+// =============================================================================
+
 /**
  * Internal helper: Build complete metadata with alternates, OpenGraph, and Twitter Card
  * Consolidates the common pattern across all generators
@@ -100,18 +204,13 @@ function buildMetadataWithSocial(options: CommonMetadataOptions): Metadata {
  * Generate metadata for category list pages (IDEs, CLIs, etc.)
  * Returns complete metadata with robots rules via PageType 'list'
  */
-export async function generateListPageMetadata(options: {
-  locale: Locale
-  category: Category
-  translationNamespace: string
-  additionalKeywords?: string[]
-}): Promise<Metadata> {
+export async function generateListPageMetadata(options: ListPageMetadataParams): Promise<Metadata> {
   const { locale, category, translationNamespace, additionalKeywords = [] } = options
 
-  const t = await getTranslations({ locale, namespace: translationNamespace })
+  const tPage = await getTranslations({ locale, namespace: translationNamespace })
 
-  const translatedTitle = t('title')
-  const description = t('subtitle')
+  const translatedTitle = tPage('title')
+  const description = tPage('subtitle')
 
   // Build SEO-optimized title
   const categoryExamples = CATEGORY_EXAMPLES[category as keyof typeof CATEGORY_EXAMPLES]
@@ -156,20 +255,9 @@ export async function generateListPageMetadata(options: {
  * Generate metadata for software product detail pages (IDEs, CLIs, Extensions)
  * Returns complete metadata with robots rules via PageType 'detail'
  */
-export async function generateSoftwareDetailMetadata(options: {
-  locale: Locale
-  category: Category
-  slug: string
-  product: {
-    name: string
-    description: string
-    vendor: string
-    platforms?: Array<{ os: string }> | string[]
-    pricing?: Array<{ value: number | null; currency: string | null; per: string | null }>
-    license?: string
-  }
-  typeDescription: string
-}): Promise<Metadata> {
+export async function generateSoftwareDetailMetadata(
+  options: SoftwareDetailMetadataParams
+): Promise<Metadata> {
   const { locale, category, slug, product, typeDescription } = options
 
   // Build title
@@ -223,36 +311,24 @@ export async function generateSoftwareDetailMetadata(options: {
  * Generate metadata for model detail pages
  * Returns complete metadata with robots rules via PageType 'detail'
  */
-export async function generateModelDetailMetadata(options: {
-  locale: Locale
-  slug: string
-  model: {
-    name: string
-    description: string
-    vendor: string
-    size?: string
-    contextWindow?: number
-    maxOutput?: number
-    tokenPricing?: {
-      input?: number
-      output?: number
-    }
-  }
-  translationNamespace: string
-}): Promise<Metadata> {
+export async function generateModelDetailMetadata(
+  options: ModelDetailMetadataParams
+): Promise<Metadata> {
   const { locale, slug, model, translationNamespace } = options
 
-  const t = await getTranslations({ locale, namespace: translationNamespace })
+  const tPage = await getTranslations({ locale, namespace: translationNamespace })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Build title with model-specific translation
-  const title = `${model.name} - ${t('metaTitle')}`
+  const title = `${model.name} - ${tPage('metaTitle')}`
 
   // Build description with model specs
   const specs: string[] = []
-  if (model.size) specs.push(`${t('modelSize')}: ${model.size}`)
+  if (model.size) specs.push(`${tShared('terms.modelSize')}: ${model.size}`)
   if (model.contextWindow)
-    specs.push(`${t('contextWindow')}: ${formatTokenCount(model.contextWindow)} tokens`)
-  if (model.maxOutput) specs.push(`${t('maxOutput')}: ${formatTokenCount(model.maxOutput)} tokens`)
+    specs.push(`${tPage('contextWindow')}: ${formatTokenCount(model.contextWindow)} tokens`)
+  if (model.maxOutput)
+    specs.push(`${tShared('terms.maxOutput')}: ${formatTokenCount(model.maxOutput)} tokens`)
 
   const pricingDisplay = model.tokenPricing?.input
     ? `$${model.tokenPricing.input}/M tokens`
@@ -260,7 +336,7 @@ export async function generateModelDetailMetadata(options: {
       ? `$${model.tokenPricing.output}/M tokens`
       : null
 
-  if (pricingDisplay) specs.push(`${t('pricing')}: ${pricingDisplay}`)
+  if (pricingDisplay) specs.push(`${tShared('terms.pricing')}: ${pricingDisplay}`)
 
   const description = `${model.name} by ${model.vendor}. ${specs.join('. ')}. ${model.description}`
 
@@ -273,7 +349,7 @@ export async function generateModelDetailMetadata(options: {
   ])
 
   // Social media titles
-  const socialTitle = `${model.name} - ${t('metaTitle')}`
+  const socialTitle = `${model.name} - ${tPage('metaTitle')}`
 
   // Use common metadata builder
   // Note: OG and Twitter images are automatically detected from opengraph-image.tsx files
@@ -296,37 +372,19 @@ export async function generateModelDetailMetadata(options: {
  * Generate metadata for comparison pages
  * Returns complete metadata with robots rules via PageType 'comparison'
  */
-export async function generateComparisonMetadata(options: {
-  locale: Locale
-  category: Category
-  translationNamespace?: string
-}): Promise<Metadata> {
-  const { locale, category, translationNamespace } = options
+export async function generateComparisonMetadata(
+  options: ComparisonMetadataParams
+): Promise<Metadata> {
+  const { locale, category } = options
 
-  const categoryExamples = CATEGORY_EXAMPLES[category as keyof typeof CATEGORY_EXAMPLES]
   const categoryName = CATEGORY_DISPLAY_NAMES[category as keyof typeof CATEGORY_DISPLAY_NAMES] || ''
-  const examples = categoryExamples ? [...categoryExamples] : []
 
-  // Build title and description
-  // Use translations if available, otherwise use default English text
-  let title: string
-  let description: string
+  // Get translations for comparison page
+  const tPage = await getTranslations({ locale, namespace: 'pages.comparison' })
 
-  if (translationNamespace) {
-    try {
-      const t = await getTranslations({ locale, namespace: translationNamespace })
-      title = `${t('title')} - ${categoryName} Comparison | ${METADATA_DEFAULTS.siteName}`
-      description = t('description')
-    } catch {
-      // Fallback to default English text if translations not available
-      title = `Compare ${categoryName} - Side-by-Side Comparison | ${METADATA_DEFAULTS.siteName}`
-      description = `Compare specifications, features, and pricing of popular ${categoryName.toLowerCase()}. ${examples.length > 0 ? `${examples.join(', ')}, and more.` : ''}`
-    }
-  } else {
-    // Use default English text
-    title = `Compare ${categoryName} - Side-by-Side Comparison | ${METADATA_DEFAULTS.siteName}`
-    description = `Compare specifications, features, and pricing of popular ${categoryName.toLowerCase()}. ${examples.length > 0 ? `${examples.join(', ')}, and more.` : ''}`
-  }
+  // Build title and description using category-specific translations
+  const title = `${tPage(`${category}.title`)} - ${categoryName} Comparison | ${METADATA_DEFAULTS.siteName}`
+  const description = tPage(`${category}.subtitle`)
 
   // Build keywords
   const keywords = buildKeywords([
@@ -361,16 +419,7 @@ export async function generateComparisonMetadata(options: {
  * Generate metadata for article pages
  * Returns complete metadata with robots rules via PageType 'article'
  */
-export async function generateArticleMetadata(options: {
-  locale: Locale
-  slug: string
-  article: {
-    title: string
-    description: string
-    date: string
-    author?: string
-  }
-}): Promise<Metadata> {
+export async function generateArticleMetadata(options: ArticleMetadataParams): Promise<Metadata> {
   const { locale, slug, article } = options
 
   // Build title
@@ -405,14 +454,7 @@ export async function generateArticleMetadata(options: {
  * Generate metadata for documentation pages
  * Returns complete metadata with robots rules via PageType 'docs'
  */
-export async function generateDocsMetadata(options: {
-  locale: Locale
-  slug: string
-  doc: {
-    title: string
-    description: string
-  }
-}): Promise<Metadata> {
+export async function generateDocsMetadata(options: DocsMetadataParams): Promise<Metadata> {
   const { locale, slug, doc } = options
 
   // Build title
@@ -447,15 +489,9 @@ export async function generateDocsMetadata(options: {
  * This is a generic generator for pages that don't fit other specialized categories.
  * Use this for marketing pages, info pages, etc. to avoid hand-rolling metadata.
  */
-export async function generateStaticPageMetadata(options: {
-  locale: Locale
-  basePath: string
-  title: string
-  description: string
-  keywords?: string
-  ogType?: 'website' | 'article'
-  pageType?: 'home' | 'static' | 'search'
-}): Promise<Metadata> {
+export async function generateStaticPageMetadata(
+  options: StaticPageMetadataParams
+): Promise<Metadata> {
   const {
     locale,
     basePath,

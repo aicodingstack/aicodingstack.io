@@ -3,7 +3,6 @@ import { getTranslations } from 'next-intl/server'
 import { BackToNavigation } from '@/components/navigation/BackToNavigation'
 import { Breadcrumb } from '@/components/navigation/Breadcrumb'
 import { CommunityLinks } from '@/components/product/CommunityLinks'
-import { ProductCommands } from '@/components/product/ProductCommands'
 import { ProductHero } from '@/components/product/ProductHero'
 import { ProductPricing } from '@/components/product/ProductPricing'
 import { RelatedProducts } from '@/components/product/RelatedProducts'
@@ -37,8 +36,8 @@ export async function generateMetadata({
     return { title: 'Extension Not Found | AI Coding Stack' }
   }
 
-  const tGlobal = await getTranslations({ locale })
-  const licenseStr = extension.license ? translateLicenseText(extension.license, tGlobal) : ''
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
+  const licenseStr = extension.license ? translateLicenseText(extension.license, tShared) : ''
 
   // Convert supportedIdes to platforms format for metadata generation
   const platforms = extension.supportedIdes?.map(ideSupport => ({
@@ -73,8 +72,7 @@ export default async function ExtensionPage({
     notFound()
   }
 
-  const t = await getTranslations({ locale, namespace: 'pages.extensionDetail' })
-  const tGlobal = await getTranslations({ locale })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Transform URLs for component props
   const websiteUrl = extension.websiteUrl || extension.resourceUrls?.download || undefined
@@ -93,7 +91,7 @@ export default async function ExtensionPage({
       version: extension.latestVersion,
       platforms: extension.supportedIdes?.map(ide => ({ os: ide.ideId })),
       pricing: extension.pricing,
-      license: extension.license ? translateLicenseText(extension.license, tGlobal) : undefined,
+      license: extension.license ? translateLicenseText(extension.license, tShared) : undefined,
     },
     category: 'extensions',
     locale: locale as Locale,
@@ -112,7 +110,7 @@ export default async function ExtensionPage({
     extension.supportedIdes && extension.supportedIdes.length > 0
       ? [
           {
-            label: t('supportedIdes') || 'Supported IDEs',
+            label: tShared('terms.supportedIdes'),
             value: extension.supportedIdes.map(ide => ide.ideId).join(', '),
           },
         ]
@@ -120,8 +118,8 @@ export default async function ExtensionPage({
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tGlobal('shared.stacks.extensions'), href: '/extensions' },
+    { name: tShared('terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tShared('categories.plural.extensions'), href: '/extensions' },
     { name: extension.name, href: `extensions/${extension.id}` },
   ]
 
@@ -134,8 +132,8 @@ export default async function ExtensionPage({
           name={extension.name}
           description={extension.description}
           vendor={extension.vendor}
-          category="IDE"
-          categoryLabel={t('categoryLabel')}
+          category="EXTENSION"
+          categoryLabel={tShared('categories.singular.extension')}
           verified={extension.verified ?? false}
           latestVersion={extension.latestVersion}
           license={extension.license}
@@ -154,9 +152,7 @@ export default async function ExtensionPage({
 
         <CommunityLinks communityUrls={extension.communityUrls} />
 
-        <ProductCommands install={extension.installCommand} launch={extension.launchCommand} />
-
-        <BackToNavigation href="/extensions" title={t('allExtensions')} />
+        <BackToNavigation href="/extensions" title={tShared('categories.all.extensions')} />
       </main>
     </PageLayout>
   )

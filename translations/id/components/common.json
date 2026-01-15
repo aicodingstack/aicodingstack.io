@@ -1,0 +1,23 @@
+{
+  "footer": {
+    "copyright": "© 2025 AI Coding Stack • Dibuat dengan ❤︎ • Open Source",
+    "openSource": "Repositori metadata coding AI open source.",
+    "selectLanguage": "Pilih Bahasa",
+    "tagline": "Pusat ekosistem coding AI Anda.",
+    "toggleTheme": "Ganti tema"
+  },
+  "header": {
+    "aiCodingLandscape": "Pemandangan Coding AI",
+    "aiCodingLandscapeDesc": "Visualisasi ekosistem coding AI lengkap",
+    "closeMenu": "Tutup menu",
+    "developmentTools": "Alat Pengembangan",
+    "intelligence": "Kecerdasan",
+    "landscape": "Pemandangan",
+    "openMenu": "Buka menu",
+    "openSourceRank": "Peringkat Open Source",
+    "openSourceRankDesc": "Jelajahi proyek coding AI open source berdasarkan bintang GitHub",
+    "ranking": "Peringkat",
+    "searchPlaceholder": "Cari...",
+    "toggleMenu": "Toggle menu"
+  }
+}

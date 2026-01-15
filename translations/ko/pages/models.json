@@ -1,0 +1,10 @@
+{
+  "context": "컨텍스트:",
+  "lifecycle": {
+    "noResults": "검색과 일치하는{lifecycle} 모델이 없습니다"
+  },
+  "pricing": "가격:",
+  "size": "크기:",
+  "subtitle": "AI 코딩 모델의 사양과 가격을 나란히 비교하세요.",
+  "title": "AI 코딩 모델"
+}

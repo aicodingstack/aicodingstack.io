@@ -23,7 +23,7 @@ export function formatBenchmarkValue(key: string, value: number): string {
  * @param benchmarks - The benchmarks object to check
  * @returns True if at least one benchmark has a non-null value
  */
-export function hasBenchmarks(benchmarks: Record<string, number | null> | undefined): boolean {
+export function hasBenchmarks(benchmarks: object | null | undefined): boolean {
   if (!benchmarks) return false
   return Object.values(benchmarks).some(value => value !== null && value !== undefined)
 }

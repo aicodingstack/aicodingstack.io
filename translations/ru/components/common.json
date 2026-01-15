@@ -1,0 +1,23 @@
+{
+  "footer": {
+    "copyright": "© 2025 AI Coding Stack • Создано с ❤︎ • Открытый исходный код",
+    "openSource": "Репозиторий метаданных AI-программирования с открытым исходным кодом.",
+    "selectLanguage": "Выбрать язык",
+    "tagline": "Ваш центр экосистемы AI-программирования.",
+    "toggleTheme": "Переключить тему"
+  },
+  "header": {
+    "aiCodingLandscape": "Ландшафт AI-программирования",
+    "aiCodingLandscapeDesc": "Визуализируйте полную экосистему AI-программирования",
+    "closeMenu": "Закрыть меню",
+    "developmentTools": "Инструменты разработки",
+    "intelligence": "Интеллект",
+    "landscape": "Ландшафт",
+    "openMenu": "Открыть меню",
+    "openSourceRank": "Рейтинг с открытым исходным кодом",
+    "openSourceRankDesc": "Исследуйте проекты AI-программирования с открытым исходным кодом по звёздам GitHub",
+    "ranking": "Рейтинг",
+    "searchPlaceholder": "Поиск...",
+    "toggleMenu": "Переключить меню"
+  }
+}

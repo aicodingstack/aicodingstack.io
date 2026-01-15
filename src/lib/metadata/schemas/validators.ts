@@ -329,7 +329,7 @@ export function validateAndLog(schema: AnySchema, pageName: string): void {
     }
 
     if (result.warnings.length > 0) {
-      console.warn('⚠️  Warnings:')
+      console.warn('⚠️  WarningMessages::')
       for (const warning of result.warnings) {
         console.warn(`  - ${warning}`)
       }

@@ -1,0 +1,14 @@
+{
+  "addModel": "+ モデルを追加",
+  "basicInfo": "基本情報",
+  "cachePrice": "キャッシュ価格",
+  "compareTitle": "{model1} vs {model2} を比較",
+  "contextWindow": "コンテキストウィンドウ",
+  "description": "説明",
+  "inputPrice": "入力価格",
+  "knowledgeCutoff": "知識",
+  "lifecycle": "ライフサイクル",
+  "outputPrice": "出力価格",
+  "releaseDate": "リリース日",
+  "verified": "検証済み"
+}
