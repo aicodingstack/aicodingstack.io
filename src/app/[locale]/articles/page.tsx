@@ -9,17 +9,20 @@ import { buildTitle, generateStaticPageMetadata } from '@/lib/metadata'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'pages.articles' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.articles' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
-  const title = buildTitle({ title: `${t('title')} - AI Coding Insights & Tutorials` })
-  const description = t('subtitle')
+  const title = buildTitle({
+    title: `${tShared('terms.articles')} - AI Coding Insights & Tutorials`,
+  })
+  const description = tPage('subtitle')
 
   return generateStaticPageMetadata({
     locale: locale as Locale,
     basePath: 'articles',
     title,
     description,
-    keywords: t('keywords'),
+    keywords: tPage('keywords'),
     ogType: 'website',
   })
 }
@@ -30,14 +33,15 @@ type Props = {
 
 export default async function ArticlesPage({ params }: Props) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'pages.articles' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.articles' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
   const articles = getArticles(locale)
   return (
     <>
       <Header />
 
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)] py-[var(--spacing-lg)]">
-        <PageHeader title={t('title')} subtitle={t('subtitle')} />
+        <PageHeader title={tShared('terms.articles')} subtitle={tPage('subtitle')} />
 
         {/* Articles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[var(--spacing-md)]">

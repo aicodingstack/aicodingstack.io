@@ -1,5 +1,8 @@
 {
-  "keywords": "AI 编码技术栈文档, AI 编码工具指南, IDE 对比, 命令行对比, AI 模型规格",
-  "subtitle": "AI Coding Stack 完整指南:探索工具、理解规格、选择 AI 编码工具,为你的工作流选择合适的 AI 编码工具。",
-  "title": "文档"
+  "meta": {
+    "title": "Documentation - AI Coding Stack",
+    "description": "Comprehensive documentation for AI Coding Stack. Learn how to use the platform, contribute to the project, and maximize your AI coding workflow."
+  },
+  "keywords": "AI coding stack docs, AI coding tools guide, IDE comparison, CLI comparison, AI model specs",
+  "subtitle": "Complete guide to AI Coding Stack: exploring tools, understanding specifications, and choosing the right AI coding tools for your workflow."
 }

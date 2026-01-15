@@ -38,20 +38,23 @@
       "description": "2025年4月發布的 GPT-4.1，在編碼和前端 Web 開發方面表現出特別顯著的改進，支持 100 萬 token 上下文視窗，適用於複雜的編碼任務。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://openai.com",
-  "docsUrl": "https://platform.openai.com/docs/models/gpt-4",
+  "docsUrl": "https://platform.openai.com/docs/models/gpt-4.1",
   "vendor": "OpenAI",
   "size": "Unknown",
-  "contextWindow": 1000000,
-  "maxOutput": 16000,
+  "contextWindow": 1047576,
+  "maxOutput": 32768,
   "tokenPricing": {
-    "input": 3,
-    "output": 15,
-    "cache": null
+    "input": 2,
+    "output": 8,
+    "cache": 0.5
   },
-  "releaseDate": "2025-04-01",
-  "inputModalities": ["text"],
+  "releaseDate": "2025-04-14",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2024-06-01",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
   "benchmarks": {
     "sweBench": 39.58,

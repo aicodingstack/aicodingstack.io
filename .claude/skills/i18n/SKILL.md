@@ -24,23 +24,60 @@ translations/
 │       ├── articles.json
 │       ├── curated-collections.json
 │       ├── stacks.json
-│       └── comparison.json
+│       ├── comparison.json
+│       ├── landscape.json
+│       ├── open-source-rank.json
+│       └── search.json
 ├── de/                    # German
+├── es/                    # Spanish
+├── fr/                    # French
+├── id/                    # Indonesian
+├── ja/                    # Japanese
+├── ko/                    # Korean
+├── pt/                    # Portuguese
+├── ru/                    # Russian
+├── tr/                    # Turkish
 ├── zh-Hans/               # Simplified Chinese
-└── ko/                    # Korean
+└── zh-Hant/               # Traditional Chinese
 ```
 
 **Important:** Each locale must maintain the exact same file structure and JSON key order as `en/`.
+
+## I18n Architecture
+
+The project has **two separate internationalization systems** that share the same 12 locale configuration:
+
+### 1. UI Translation System (next-intl)
+- **Purpose:** Translates static UI strings (buttons, labels, page content, etc.)
+- **Location:** `translations/{locale}/*.json`
+- **Usage:** Via `useTranslations()` hook or `getTranslations()` server function
+- **Managed by:** This skill's sync and translate commands
+
+### 2. Manifest Translation System
+- **Purpose:** Translates manifest data (IDEs, CLIs, models, providers, etc.)
+- **Location:** `manifests/**/*.json` (in each manifest file's `translations` field)
+- **Usage:** Via `localizeManifestItem()` and `localizeManifestItems()` functions
+- **Managed by:** Manual editing of manifest files or manifest automation tools
+
+**This skill manages only the UI Translation System.** For manifest translations, edit the manifest JSON files directly or use the manifest-automation skill.
 
 ## Enabled Locales
 
 Currently enabled locales in `src/i18n/config.ts`:
 - `en` - English (source of truth)
 - `de` - Deutsch (German)
-- `zh-Hans` - 简体中文 (Simplified Chinese)
+- `es` - Español (Spanish)
+- `fr` - Français (French)
+- `id` - Bahasa Indonesia (Indonesian)
+- `ja` - 日本語 (Japanese)
 - `ko` - 한국어 (Korean)
+- `pt` - Português (Portuguese)
+- `ru` - Русский (Russian)
+- `tr` - Türkçe (Turkish)
+- `zh-Hans` - 简体中文 (Simplified Chinese)
+- `zh-Hant` - 繁體中文 (Traditional Chinese)
 
-Additional locale directories may exist but are not enabled in the config.
+All 12 locales are fully enabled and must be maintained in sync.
 
 ## Subcommands
 
@@ -117,13 +154,13 @@ Generate translation tasks for Claude Code to translate missing content.
 When you need to translate content, use this command in Claude Code:
 
 ```
-Please run the i18n translate command for zh-Hans
+Please run the i18n translate command for ja
 ```
 
 Claude Code will execute:
 
 ```bash
-node .claude/skills/i18n/scripts/translate.mjs zh-Hans
+node .claude/skills/i18n/scripts/translate.mjs ja
 ```
 
 **Workflow:**
@@ -145,13 +182,13 @@ node .claude/skills/i18n/scripts/translate.mjs zh-Hans
 **Output Example:**
 
 ```
-🌐 Translation Assistant for zh-Hans
+🌐 Translation Assistant for ja
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📝 Translation Task
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Target Language: 简体中文 (Simplified Chinese)
+Target Language: 日本語 (Japanese)
 Entries to translate: 15
 
 Files affected:
@@ -168,12 +205,14 @@ Files affected:
 
 Content to translate:
 
+```json
 {
   "components.languageSwitcher.english": "English",
   "pages.home.hero.title": "Welcome to AI Coding Stack",
   "shared.navigation.docs": "Documentation",
   ...
 }
+```
 ```
 
 ---
@@ -205,7 +244,16 @@ Each locale has:
 // translations/en/index.ts
 import components from './components.json'
 import articles from './pages/articles.json'
-// ... other imports
+import comparison from './pages/comparison.json'
+import curatedCollections from './pages/curated-collections.json'
+import docs from './pages/docs.json'
+import home from './pages/home.json'
+import landscape from './pages/landscape.json'
+import manifesto from './pages/manifesto.json'
+import openSourceRank from './pages/open-source-rank.json'
+import search from './pages/search.json'
+import stacks from './pages/stacks.json'
+import shared from './shared.json'
 
 const messages = {
   shared,
@@ -216,8 +264,11 @@ const messages = {
     docs,
     articles,
     curatedCollections,
-    ...stacks,
+    stacks,
     comparison,
+    landscape,
+    openSourceRank,
+    search,
   },
 }
 
@@ -244,45 +295,59 @@ Becomes: `pages.home.hero.title = "Welcome"`
 
 ### Adding a New Language
 
+**Note:** The project currently supports 12 locales. To add a new locale (e.g., Italian 'it'):
+
 1. Add the locale to `src/i18n/config.ts`:
 
 ```typescript
-export const locales = ['en', 'de', 'zh-Hans', 'ko', 'ja'] as const; // Add 'ja'
+export const locales = [
+  'en', 'de', 'es', 'fr', 'id', 'ja', 'ko', 'pt', 'ru', 'tr', 'zh-Hans', 'zh-Hant',
+  'it'  // Add new locale
+] as const;
 ```
 
 2. Update locale names:
 
 ```typescript
 export const localeNames: Record<Locale, string> = {
-  // ...
-  ja: '日本語',
+  // ... existing locales
+  it: 'Italiano',
 }
 
 export const localeToOgLocale: Record<Locale, string> = {
-  // ...
-  ja: 'ja_JP',
+  // ... existing locales
+  it: 'it_IT',
 }
 ```
 
-3. Create the locale directory structure:
+3. Add to translate.mjs LOCALE_NAMES (`.claude/skills/i18n/scripts/translate.mjs`):
 
-```bash
-mkdir -p translations/ja/pages
-cp translations/en/index.ts translations/ja/index.ts
-cp translations/en/*.json translations/ja/
-cp translations/en/pages/*.json translations/ja/pages/
+```javascript
+const LOCALE_NAMES = {
+  // ... existing locales
+  it: 'Italiano (Italian)',
+}
 ```
 
-4. Run sync to ensure structure matches:
+4. Create the locale directory structure:
+
+```bash
+mkdir -p translations/it/pages
+cp translations/en/index.ts translations/it/index.ts
+cp translations/en/*.json translations/it/
+cp translations/en/pages/*.json translations/it/pages/
+```
+
+5. Run sync to ensure structure matches:
 
 ```
 Please run the i18n sync command
 ```
 
-5. Run translate to generate translation tasks:
+6. Run translate to generate translation tasks:
 
 ```
-Please run the i18n translate command for ja
+Please run the i18n translate command for it
 ```
 
 ## Best Practices
@@ -329,7 +394,45 @@ const rawMessages = (await import(`../../translations/${locale}/index.ts`)).defa
 const messages = resolveReferences(rawMessages)
 ```
 
-The JSON files are loaded through the index.ts for each locale, and the `resolveReferences` function handles `@:path` reference syntax.
+The JSON files are loaded through the index.ts for each locale, and the `resolveReferences` function handles reference syntax.
+
+### Reference Resolution
+
+The project supports **reference syntax** for reusing translations:
+
+**Basic Reference:** `@:path.to.key`
+```json
+{
+  "shared": {
+    "appName": "AI Coding Stack",
+    "welcome": "Welcome to @:shared.appName"
+  }
+}
+// Result: "Welcome to AI Coding Stack"
+```
+
+**Reference with Modifiers:** `@.modifier:path.to.key`
+
+Supported modifiers:
+- `@.upper:path` - Convert to UPPERCASE
+- `@.lower:path` - Convert to lowercase
+- `@.capitalize:path` - Capitalize first letter
+
+```json
+{
+  "terms": {
+    "documentation": "documentation",
+    "title": "@.capitalize:terms.documentation Guide"
+  }
+}
+// Result: "Documentation Guide"
+```
+
+**Important:**
+- References are resolved at runtime by `src/i18n/lib-core.ts`
+- Circular references are detected and will throw an error
+- References can be nested (references within references)
+- Keep reference syntax intact during translation
 
 ## License
 

@@ -8,7 +8,7 @@
       "description": "用 Rust 构建的下一代代码编辑器，专为与人类和 AI 的高性能协作而设计。具有智能编辑、多缓冲区编辑和原生 Git 支持。"
     },
     "de": {
-      "description": "Ein hochleistungsfähiger, kollaborativer Code-Editor mit eingebauter KI-Unterstützung, geschrieben in Rust. Bietet Echtzeit-Zusammenarbeit und integrierte Terminalbefehle."
+      "description": "Ein hochleistungsfähiger, kollaborativer Code-Editor mit eingebauter AI-Unterstützung, geschrieben in Rust. Bietet Echtzeit-Zusammenarbeit und integrierte Terminalbefehle."
     },
     "ko": {
       "description": "인간과 AI의 고성능 협업을 위해 Rust로 구축된 차세대 코드 편집기입니다. 에이전트 기반 편집, 다중 버퍼 편집 및 기본 Git 지원을 제공합니다."

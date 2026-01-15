@@ -2,10 +2,10 @@
  * Resolves reference syntax (@:path and @.modifier:path) in i18n messages
  * Supports nested references and detects circular references
  *
- * This module wraps the core logic from lib-core.mjs with TypeScript types
+ * This module wraps the core logic from lib-core.ts with TypeScript types
  */
 
-import { resolveReference } from './lib-core.mjs'
+import { resolveReference } from './lib-core'
 
 type Messages = Record<string, unknown>
 

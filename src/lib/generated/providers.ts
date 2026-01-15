@@ -4,9 +4,15 @@
  * Do not edit manually - run the script to regenerate
  */
 
+import Alibaba from '../../../manifests/providers/alibaba.json'
+import Anthropic from '../../../manifests/providers/anthropic.json'
 import Deepseek from '../../../manifests/providers/deepseek.json'
+import Google from '../../../manifests/providers/google.json'
+import Kwaikatonai from '../../../manifests/providers/kwaikatonai.json'
+import Meta from '../../../manifests/providers/meta.json'
 import Minimax from '../../../manifests/providers/minimax.json'
 import Moonshot from '../../../manifests/providers/moonshot.json'
+import Openai from '../../../manifests/providers/openai.json'
 import Openrouter from '../../../manifests/providers/openrouter.json'
 import Siliconflow from '../../../manifests/providers/siliconflow.json'
 import Xai from '../../../manifests/providers/xai.json'
@@ -14,15 +20,21 @@ import ZAi from '../../../manifests/providers/z-ai.json'
 import type { ManifestProvider } from '../../types/manifests'
 
 export const providersData = [
+  Alibaba,
+  Anthropic,
   Deepseek,
+  Google,
+  Kwaikatonai,
+  Meta,
   Minimax,
   Moonshot,
+  Openai,
   Openrouter,
   Siliconflow,
   Xai,
   ZAi,
 ] as unknown as ManifestProvider[]
 
-export type Provider = typeof Deepseek
+export type Provider = typeof Alibaba
 
 export default providersData

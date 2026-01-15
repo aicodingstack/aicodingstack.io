@@ -3,8 +3,8 @@
 export interface PricingTier {
   name: string
   value: number | null
-  currency: string | null
-  per: string | null
+  currency?: string | null
+  per?: string | null
   category: string
 }
 

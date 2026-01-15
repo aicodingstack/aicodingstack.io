@@ -1,0 +1,10 @@
+{
+  "context": "Kontext:",
+  "lifecycle": {
+    "noResults": "Keine {lifecycle} Modelle entsprechen Ihrer Suche"
+  },
+  "pricing": "Preise:",
+  "size": "Größe:",
+  "subtitle": "Große Sprachmodelle optimiert für Code-Generierung und Analyse",
+  "title": "AI-Coding-Modelle"
+}

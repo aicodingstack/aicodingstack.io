@@ -24,7 +24,7 @@ interface BackToNavigationProps {
  * <BackToNavigation href="/ides" title="All IDEs" />
  */
 export function BackToNavigation({ href, title }: BackToNavigationProps) {
-  const t = useTranslations('components.backToNavigation')
+  const tShared = useTranslations('shared')
 
   return (
     <section className="pt-[var(--spacing-lg)]">
@@ -34,10 +34,12 @@ export function BackToNavigation({ href, title }: BackToNavigationProps) {
           className="border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5 flex flex-col gap-1 text-center"
         >
           <span className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium">
-            ← {t('backTo')}
+            ← {tShared('actions.backTo')}
           </span>
           <span className="text-lg font-semibold tracking-tight">{title}</span>
-          <span className="text-xs text-[var(--color-text-muted)]">[{t('indexLabel')}]</span>
+          <span className="text-xs text-[var(--color-text-muted)]">
+            [{tShared('terms.indexLabel')}]
+          </span>
         </Link>
       </div>
     </section>

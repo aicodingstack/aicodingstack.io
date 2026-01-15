@@ -1,73 +1,73 @@
 ---
-title: 'Understanding MCP Servers: The Future of AI Context'
-description: 'Deep dive into Model Context Protocol servers, how they work, and why they are crucial for building intelligent AI coding assistants that truly understand your project.'
-date: '2025-01-10'
+title: "理解 MCP 伺服器：AI 上下文的未來"
+description: "深入了解模型上下文協議伺服器的工作原理，以及為什麼它們對構建真正理解你項目的智能 AI 編碼助手至關重要。"
+date: "2025-01-10"
 ---
 
-Model Context Protocol (MCP) servers represent a paradigm shift in how AI agents interact with external tools, data sources, and APIs. They are the connective tissue that transforms isolated AI models into context-aware coding companions that truly understand your project.
+模型上下文協議(MCP)伺服器代表了 AI Agent 與外部工具、數據源和 API 交互方式的範式轉變。它們是將孤立的 AI 模型轉變為真正理解你項目的上下文感知編碼夥伴的連接組織。
 
-## What is MCP?
+## 什麼是 MCP?
 
-The Model Context Protocol is an open standard developed by Anthropic that enables AI agents to securely connect to external data sources and tools. Think of MCP servers as specialized adapters that give your AI agent superpowers—whether that's reading from databases, searching the web, interacting with APIs, or accessing your filesystem.
+模型上下文協議是 Anthropic 開發的開放標準，使 AI Agent 能夠安全地連接到外部數據源和工具。可以把 MCP 伺服器想像成專門的適配器，賦予你的 AI Agent 超能力——無論是從數據庫讀取、搜索網頁、與 API 交互還是訪問你的文件系統。
 
-Unlike traditional API integrations that require custom code for each tool, MCP provides a standardized interface. This means any MCP-compatible AI agent can use any MCP server without custom integration work.
+與需要為每個工具編寫自定義代碼的傳統 API 集成不同，MCP 提供了標準化接口。這意味著任何兼容 MCP 的 AI Agent 都可以使用任何 MCP 伺服器，無需自定義集成工作。
 
-## How MCP Servers Work
+## MCP 伺服器的工作原理
 
-An MCP server is a lightweight process that exposes three core primitives:
+MCP 伺服器是一個輕量級進程，暴露三個核心原語：
 
-### Resources
+### 資源(Resources)
 
-Context and data that the AI can read. For example, a filesystem MCP server exposes your project files as resources.
+AI 可以讀取的上下文和數據。例如，文件系統 MCP 伺服器將你的項目文件作為資源暴露。
 
-### Tools
+### 工具(Tools)
 
-Actions the AI can perform. A web search MCP might expose a search tool, while a database MCP could provide query execution tools.
+AI 可以執行的操作。網頁搜索 MCP 可能暴露搜索工具，而數據庫 MCP 可以提供查詢執行工具。
 
-### Prompts
+### 提示(Prompts)
 
-Templated interactions that guide the AI. These can include best practices or common workflows specific to the tool.
+引導 AI 的模板化交互。這些可以包括特定於工具的最佳實踐或常見工作流。
 
-## Popular MCP Servers
+## 流行的 MCP 伺服器
 
-The MCP ecosystem is rapidly growing. Here are some essential servers:
+MCP 生態系統正在快速增長。以下是一些必備伺服器：
 
-- **Filesystem** - Access local files and directories
-- **Playwright** - Browser automation and web scraping
-- **Context7** - Up-to-date library documentation
-- **PostgreSQL** - Database queries and schema inspection
-- **GitHub** - Repository management and code search
-- **Brave Search** - Real-time web search capabilities
+- **Filesystem** - 訪問本地文件和目錄
+- **Playwright** - 瀏覽器自動化和網頁抓取
+- **Context7** - 最新的庫文檔
+- **PostgreSQL** - 數據庫查詢和模式檢查
+- **GitHub** - 倉庫管理和代碼搜索
+- **Brave Search** - 實時網頁搜索功能
 
-## Why MCP Matters for AI Coding
+## 為什麼 MCP 對 AI 編碼很重要
 
-Before MCP, AI coding assistants were essentially blind to your development environment. They could generate code based on training data, but couldn't access your actual project structure, read your configuration files, or interact with your development tools.
+在 MCP 之前，AI 編碼助手本質上對你的開發環境是盲目的。它們可以基於訓練數據生成代碼，但無法訪問你的實際項目結構、讀取配置文件或與開發工具交互。
 
-MCP changes this fundamentally. With MCP servers, your AI agent can:
+MCP 從根本上改變了這一點。有了 MCP 伺服器，你的 AI Agent 可以：
 
-- Understand your entire codebase structure through filesystem access
-- Look up current documentation for libraries you're using
-- Execute database queries to understand your data model
-- Search the web for the latest solutions to your specific problem
-- Interact with your Git repository to understand commit history
+- 通過文件系統訪問理解整個代碼庫結構
+- 查找你正在使用的庫的最新文檔
+- 執行數據庫查詢以理解你的數據模型
+- 在網上搜索針對你具體問題的最新解決方案
+- 與你的 Git 倉庫交互以理解提交歷史
 
-## Getting Started with MCP
+## MCP 入門
 
-Most modern AI coding tools now support MCP. Setting up your first MCP server typically involves:
+大多數現代 AI 編碼工具現在都支持 MCP。設置你的第一個 MCP 伺服器通常包括：
 
-### 1. Choose an MCP Server
+### 1. 選擇 MCP 伺服器
 
-Start with something simple like the filesystem or web search MCP server.
+從簡單的東西開始，如文件系統或網頁搜索 MCP 伺服器。
 
-### 2. Install the Server
+### 2. 安裝伺服器
 
-Most MCP servers are distributed as npm packages or Python modules. Follow the installation instructions for your chosen server.
+大多數 MCP 伺服器以 npm 包或 Python 模塊分發。按照你選擇的伺服器的安裝說明操作。
 
-### 3. Configure Your IDE
+### 3. 配置你的 IDE
 
-Add the MCP server configuration to your IDE's settings. The exact format varies by tool, but typically involves specifying the server's command and any required arguments.
+將 MCP 伺服器配置添加到 IDE 的設置中。確切的格式因工具而異，但通常涉及指定伺服器的命令和任何必需的參數。
 
-Here's an example configuration for Claude Code:
+以下是 Claude Code 的配置示例：
 
 ```json
 {
@@ -87,14 +87,14 @@ Here's an example configuration for Claude Code:
 }
 ```
 
-### 4. Test the Integration
+### 4. 測試集成
 
-Ask your AI agent to use the newly connected tools. For example, if you installed a filesystem MCP, try asking it to read a specific file from your project.
+讓你的 AI Agent 使用新連接的工具。例如，如果你安裝了文件系統 MCP，嘗試讓它從你的項目中讀取特定文件。
 
-## The Future of MCP
+## MCP 的未來
 
-The MCP ecosystem is still in its early stages, but the potential is enormous. As more developers build MCP servers for specialized tools and services, AI agents will become increasingly powerful and context-aware.
+MCP 生態系統仍處於早期階段，但潛力巨大。隨著更多開發者為專門的工具和服務構建 MCP 伺服器，AI Agent將變得越來越強大和上下文感知。
 
-We're moving toward a future where your AI coding assistant has seamless access to every tool in your development workflow—from your IDE to your cloud infrastructure. MCP is the protocol that makes this vision possible.
+我們正在走向這樣一個未來：你的 AI 編碼助手可以無縫訪問開發工作流中的每個工具——從 IDE 到雲基礎設施。MCP 是使這一願景成為可能協議。
 
-Explore the full catalog of available MCP servers in our [MCP Servers directory](/ai-coding-stack/mcp-servers) to find the right integrations for your workflow.
+在我們的 [MCP 伺服器目錄](/ai-coding-stack/mcp-servers) 中探索可用 MCP 伺服器的完整目錄，為你的工作流找到合適的集成。

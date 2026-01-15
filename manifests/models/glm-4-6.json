@@ -38,27 +38,30 @@
       "description": "GLM 4.6 是 Z.ai 推出的 9B 參數語言模型，具備 128K 上下文視窗，專為高效性能和多語言理解優化。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://z.ai",
   "docsUrl": "https://huggingface.co/zai-org/GLM-4.6",
   "vendor": "Z.ai",
   "size": "9B",
-  "contextWindow": 128000,
-  "maxOutput": 4000,
+  "contextWindow": 204800,
+  "maxOutput": 131072,
   "tokenPricing": {
-    "input": 0.1,
-    "output": 0.1,
-    "cache": null
+    "input": 0.6,
+    "output": 2.2,
+    "cache": 0.11
   },
-  "releaseDate": null,
+  "releaseDate": "2025-09-30",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
   "inputModalities": ["text"],
-  "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
     "sweBench": 55.4,
     "terminalBench": 0.245,
     "sciCode": null,
     "liveCodeBench": null,
-    "mmmu": 68.0,
+    "mmmu": 68,
     "mmmuPro": null,
     "webDevArena": null
   },

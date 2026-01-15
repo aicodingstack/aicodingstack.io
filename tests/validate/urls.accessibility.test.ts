@@ -114,7 +114,7 @@ function extractUrlsFromManifestItem(
   const docsUrl = extractUrlField(item, 'docsUrl', manifestFile, itemId)
   if (docsUrl) urls.push(docsUrl)
 
-  if (['clis', 'ides', 'extensions'].includes(manifestType)) {
+  if (['clis', 'ides', 'extensions', 'models'].includes(manifestType)) {
     const githubUrl = extractUrlField(item, 'githubUrl', manifestFile, itemId)
     if (githubUrl) urls.push(githubUrl)
 

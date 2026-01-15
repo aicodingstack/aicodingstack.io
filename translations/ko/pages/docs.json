@@ -1,5 +1,8 @@
 {
-  "keywords": "AI 코딩 스택 문서, AI 코딩 도구 가이드, IDE 비교, CLI 비교, AI 모델 사양",
-  "subtitle": "AI 기반 소프트웨어 개발의 미래에 대한 비전",
-  "title": "당신의 AI 코딩 생태계 허브"
+  "meta": {
+    "title": "Documentation - AI Coding Stack",
+    "description": "Comprehensive documentation for AI Coding Stack. Learn how to use the platform, contribute to the project, and maximize your AI coding workflow."
+  },
+  "keywords": "AI coding stack docs, AI coding tools guide, IDE comparison, CLI comparison, AI model specs",
+  "subtitle": "Complete guide to AI Coding Stack: exploring tools, understanding specifications, and choosing the right AI coding tools for your workflow."
 }

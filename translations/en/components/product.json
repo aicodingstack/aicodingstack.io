@@ -1,0 +1,103 @@
+{
+  "productCommands": {
+    "command": "Command",
+    "install": "Install",
+    "launch": "Launch"
+  },
+  "platformLinks": {
+    "aiPlatforms": {
+      "huggingface": {
+        "description": "View model card and weights"
+      },
+      "artificialAnalysis": {
+        "description": "AI model leaderboard and benchmarks"
+      },
+      "openrouter": {
+        "description": "Compare and use multiple AI models"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "Loading star history...",
+    "title": "GitHub Star History",
+    "description": "Star growth trend over time",
+    "stars": "stars",
+    "fallbackNote": "Note: Displaying sample data. Star history API temporarily unavailable."
+  },
+  "productHero": {
+    "runtime": "Runtime"
+  },
+  "communityLinks": {
+    "blog": "Blog",
+    "blogDescription": "Read blog posts",
+    "discordDescription": "Join community",
+    "githubDescription": "View repos",
+    "redditDescription": "Join discussion",
+    "youtubeDescription": "Watch videos"
+  },
+  "resourceLinks": {
+    "changelog": "Changelog",
+    "changelogDescription": "View changelog",
+    "downloadDescription": "Download latest version",
+    "issue": "Issue Tracker",
+    "issueDescription": "Report bugs and request features",
+    "mcp": "MCP Documentation",
+    "mcpDescription": "Learn about MCP integration",
+    "pricingDescription": "View pricing plans"
+  },
+  "productPricing": {},
+  "modelSpecifications": {},
+  "benchmarks": {
+    "title": "Performance Benchmarks",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "webDevArenaDesc": "Web development challenges",
+    "sciCodeDesc": "Scientific code generation",
+    "liveCodeBenchDesc": "Live coding performance"
+  },
+  "relatedProducts": {
+    "title": "Related Products",
+    "viewProduct": "View Product"
+  },
+  "vendorMatrix": {
+    "cell": {
+      "summary": "{count} {category}"
+    },
+    "controls": {
+      "clear": "Clear",
+      "sortByLabel": "Sort by:",
+      "sortName": "Name",
+      "vendorTypeLabel": "Vendor Type:"
+    },
+    "table": {
+      "noVendorsFound": "No vendors found"
+    },
+    "vendorTypes": {
+      "label": "Vendor Types:",
+      "types": {
+        "ai-native": {
+          "description": "Model + Development Tools",
+          "label": "AI Native"
+        },
+        "full-stack": {
+          "description": "IDE + CLI + Extension",
+          "label": "Full Stack"
+        },
+        "model-only": {
+          "description": "Model (with or without Provider)",
+          "label": "Model Only"
+        },
+        "provider-only": {
+          "description": "Provider only",
+          "label": "Provider Only"
+        },
+        "tool-only": {
+          "description": "IDE/CLI/Extension",
+          "label": "Tool Only"
+        }
+      }
+    }
+  }
+}

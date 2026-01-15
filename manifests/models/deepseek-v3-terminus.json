@@ -42,7 +42,7 @@
   "websiteUrl": "https://www.deepseek.com",
   "docsUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus",
   "vendor": "DeepSeek",
-  "size": "67B",
+  "size": "671B",
   "contextWindow": 64000,
   "maxOutput": 4000,
   "tokenPricing": {
@@ -51,7 +51,10 @@
     "cache": null
   },
   "releaseDate": null,
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
   "inputModalities": ["text"],
+  "outputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
     "sweBench": null,

@@ -17,35 +17,40 @@
     "visit": "造訪 {name}",
     "watch": "在 {platform} 上觀看"
   },
-  "common": {
-    "aiCodingStack": "AI 編碼技術堆疊",
+  "terms": {
+    "aiCoding": "AI 編碼",
+    "aiCodingStack": "AI Coding Stack",
     "articles": "文章",
-    "collections": "精選集合",
+    "collections": "收藏集",
     "community": "社群",
     "communityLinks": "社群連結",
     "comparison": "比較",
-    "curatedCollections": "精選集合",
-    "docs": "文件",
+    "curatedCollections": "精選收藏集",
+    "docs": "Docs",
     "documentation": "文件",
     "ecosystemTools": "生態系統工具",
-    "faq": "常見問題",
+    "faq": "FAQ",
     "featuredArticles": "精選文章",
     "followUs": "關注我們",
-    "indexLabel": "索引",
+    "indexLabel": "INDEX",
     "license": "授權",
     "manifesto": "宣言",
     "maxOutput": "最大輸出",
     "modelSize": "模型大小",
-    "openSource": "開放原始碼",
+    "openSource": "開源",
     "pricing": "定價",
     "products": "產品",
     "proprietary": "專有",
     "resources": "資源",
-    "slogan": "探索。比較。快 10 倍。",
-    "specificationsProtocols": "規格與協定",
-    "stars": "星標數",
+    "slogan": "探索。比較。構建 10x 更快。",
+    "specificationsProtocols": "規格與協議",
+    "stars": "星標",
     "type": "類型",
-    "website": "網站"
+    "version": "版本",
+    "visitWebsite": "造訪網站",
+    "website": "網站",
+    "platforms": "平台",
+    "supportedIdes": "支援的 IDE"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -58,26 +63,66 @@
     "twitter": "X (Twitter)",
     "youtube": "YouTube"
   },
-  "stack": {
-    "cli": "命令列",
-    "extension": "擴充套件",
-    "ide": "IDE",
-    "model": "模型",
-    "modelProvider": "模型提供者",
-    "vendor": "供應商"
+  "categories": {
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "provider": "Provider",
+      "vendor": "Vendor"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "providers": "Providers",
+      "vendors": "Vendors"
+    },
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    }
   },
-  "stacks": {
-    "allClis": "所有命令列",
-    "allExtensions": "所有擴充套件",
-    "allIdes": "所有 IDE",
-    "allModelProviders": "所有模型提供者",
-    "allModels": "所有模型",
-    "allVendors": "所有供應商",
-    "clis": "命令列",
-    "extensions": "擴充套件",
-    "ides": "IDE",
-    "modelProviders": "模型提供者",
-    "models": "模型",
-    "vendors": "供應商"
+  "labels": {
+    "cache": "Cache",
+    "findOnAiPlatforms": "在 AI 平台上尋找",
+    "getApiKey": "取得 API 金鑰",
+    "input": "Input",
+    "output": "Output",
+    "specifications": "規格",
+    "quickLinks": "快速連結",
+    "totalContext": "Total Context",
+    "searchByName": "Search by name..."
+  },
+  "providerTypes": {
+    "foundation-model-provider": "Foundation 模型提供者",
+    "model-service-provider": "模型服務提供者"
+  },
+  "lifecycle": {
+    "latest": "最新",
+    "maintained": "維護中",
+    "deprecated": "已廢棄"
+  },
+  "benchmarks": {
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "webDevArena": "WebDev Arena",
+    "liveCodeBench": "LiveCodeBench"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
   }
 }

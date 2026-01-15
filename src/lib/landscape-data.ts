@@ -24,6 +24,7 @@ import {
   vendorsData,
 } from './generated'
 import { getGithubStars } from './generated/github-stars'
+import { buildManifestPath } from './manifest-registry'
 
 // =============================================================================
 // TYPE DEFINITIONS
@@ -94,7 +95,7 @@ function ideToProduct(ide: ManifestIDE): LandscapeProduct {
     githubStars: getGithubStars('ides', ide.id),
     license: ide.license,
     latestVersion: ide.latestVersion,
-    path: `/ides/${ide.id}`,
+    path: buildManifestPath('ides', ide.id),
   }
 }
 
@@ -111,7 +112,7 @@ function cliToProduct(cli: ManifestCLI): LandscapeProduct {
     githubStars: getGithubStars('clis', cli.id),
     license: cli.license,
     latestVersion: cli.latestVersion,
-    path: `/clis/${cli.id}`,
+    path: buildManifestPath('clis', cli.id),
   }
 }
 
@@ -128,7 +129,7 @@ function extensionToProduct(ext: ManifestExtension): LandscapeProduct {
     githubStars: getGithubStars('extensions', ext.id),
     license: ext.license,
     latestVersion: ext.latestVersion,
-    path: `/extensions/${ext.id}`,
+    path: buildManifestPath('extensions', ext.id),
   }
 }
 
@@ -141,7 +142,7 @@ function modelToProduct(model: ManifestModel): LandscapeProduct {
     description: model.description,
     websiteUrl: model.websiteUrl || undefined,
     docsUrl: model.docsUrl || undefined,
-    path: `/models/${model.id}`,
+    path: buildManifestPath('models', model.id),
   }
 }
 
@@ -156,7 +157,7 @@ function providerToProduct(provider: ManifestProvider): LandscapeProduct {
     docsUrl: provider.docsUrl || undefined,
     githubUrl: null, // Providers don't have githubUrl in schema
     githubStars: null, // Providers don't have GitHub stars tracking
-    path: `/model-providers/${provider.id}`,
+    path: buildManifestPath('providers', provider.id),
   }
 }
 

@@ -1,0 +1,103 @@
+{
+  "productCommands": {
+    "command": "指令",
+    "install": "安裝",
+    "launch": "啟動"
+  },
+  "platformLinks": {
+    "aiPlatforms": {
+      "huggingface": {
+        "description": "查看模型卡片與權重"
+      },
+      "artificialAnalysis": {
+        "description": "AI 模型排行榜與基準測試"
+      },
+      "openrouter": {
+        "description": "比較並使用多個 AI 模型"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "載入星標歷史...",
+    "title": "GitHub 星標歷史",
+    "description": "星標增長趨勢",
+    "stars": "星標數",
+    "fallbackNote": "注意：顯示範例資料。星標歷史 API 暫時無法使用。"
+  },
+  "productHero": {
+    "runtime": "執行期"
+  },
+  "communityLinks": {
+    "blog": "部落格",
+    "blogDescription": "閱讀部落格文章",
+    "discordDescription": "加入社群",
+    "githubDescription": "檢視儲存庫",
+    "redditDescription": "參與討論",
+    "youtubeDescription": "觀看影片"
+  },
+  "resourceLinks": {
+    "changelog": "更新日誌",
+    "changelogDescription": "檢視更新日誌",
+    "downloadDescription": "下載最新版本",
+    "issue": "問題追蹤",
+    "issueDescription": "回報問題與請求功能",
+    "mcp": "MCP 文件",
+    "mcpDescription": "了解 MCP 整合",
+    "pricingDescription": "檢視定價方案"
+  },
+  "productPricing": {},
+  "modelSpecifications": {},
+  "benchmarks": {
+    "title": "Performance Benchmarks",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "webDevArenaDesc": "Web development challenges",
+    "sciCodeDesc": "Scientific code generation",
+    "liveCodeBenchDesc": "Live coding performance"
+  },
+  "relatedProducts": {
+    "title": "相關產品",
+    "viewProduct": "檢視產品"
+  },
+  "vendorMatrix": {
+    "cell": {
+      "summary": "{count} 個{category}"
+    },
+    "controls": {
+      "clear": "清除",
+      "sortByLabel": "排序方式：",
+      "sortName": "名稱",
+      "vendorTypeLabel": "供應商類型："
+    },
+    "table": {
+      "noVendorsFound": "未找到供應商"
+    },
+    "vendorTypes": {
+      "label": "供應商類型：",
+      "types": {
+        "ai-native": {
+          "description": "模型 + 開發工具",
+          "label": "AI 原生"
+        },
+        "full-stack": {
+          "description": "IDE + 命令列 + 擴充套件",
+          "label": "全端"
+        },
+        "model-only": {
+          "description": "模型（有或無提供者）",
+          "label": "僅模型"
+        },
+        "provider-only": {
+          "description": "僅提供者",
+          "label": "僅提供者"
+        },
+        "tool-only": {
+          "description": "IDE/命令列/擴充套件",
+          "label": "僅工具"
+        }
+      }
+    }
+  }
+}

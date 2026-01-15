@@ -2,58 +2,47 @@
   "clis": {
     "backTo": "Voltar aos CLIs",
     "subtitle": "Compare características, preços e especificações de ferramentas de codificação de linha de comando de IA lado a lado.",
-    "title": "Comparação CLI"
+    "title": "Comparação de CLI de Codificação IA"
   },
   "columns": {
+    "name": "Name",
     "cache": "Cache",
     "capabilities": "Capacidades",
     "contextLength": "Comprimento do Contexto",
     "freePlan": "Plano Gratuito",
-    "githubStars": "@:components.productHero.stars",
     "input": "Entrada",
     "inputModalities": "Modalidades de Entrada",
-    "license": "@:components.productHero.license",
     "links": "Links",
     "live-code-bench": "Live Code Bench",
-    "maxOutput": "@:shared.common.maxOutput",
     "maxPrice": "Preço Máximo",
     "mmmu": "MMMU",
     "mmmu-pro": "MMMU Pro",
-    "modelSize": "@:shared.common.modelSize",
     "output": "Saída",
-    "platforms": "@:components.productHero.platforms",
-    "pricing": "@:shared.common.pricing",
     "pricingCache": "Preço de Cache",
     "pricingInput": "Preço de Entrada",
     "pricingOutput": "Preço de Saída",
     "sci-code": "SciCode",
     "startingPrice": "Preço Inicial",
-    "supportedIdes": "@:components.productHero.supportedIdes",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version",
     "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "Voltar às Extensões",
     "subtitle": "Compare características, preços e especificações de extensões de codificação de IA lado a lado.",
-    "title": "Comparação de Extensões"
+    "title": "Comparação de Extensões de Codificação IA"
   },
   "ides": {
     "backTo": "Voltar aos IDEs",
     "subtitle": "Compare características, preços e especificações de IDEs com IA lado a lado.",
-    "title": "Comparação de IDEs"
+    "title": "Comparação de IDE de Codificação IA"
   },
-  "linkTitles": {
-    "documentation": "@:components.productHero.documentation",
-    "download": "@:components.productHero.download",
-    "officialWebsite": "@:components.productHero.visitWebsite"
-  },
+  "modelCompareDescription": "Compare modelos de codificação IA lado a lado: especificações, preços, capacidades e benchmarks.",
+  "modelCompareTitle": "Comparar Modelos de Codificação IA: {model1} vs {model2}",
   "models": {
     "backTo": "Voltar aos Modelos",
     "subtitle": "Compare especificações e preços de modelos de codificação de IA lado a lado.",
-    "title": "Comparação de Modelos"
+    "title": "Comparação de Modelos de Codificação IA"
   },
   "pricingValues": {
     "free": "Grátis",

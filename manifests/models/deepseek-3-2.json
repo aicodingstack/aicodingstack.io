@@ -1,0 +1,73 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "deepseek-3-2",
+  "name": "DeepSeek V3.2",
+  "description": "DeepSeek V3.2 is a reasoning-first model with 128K context window, designed for agent tasks with integrated thinking in tool-use capabilities.",
+  "translations": {
+    "zh-Hans": {
+      "description": "DeepSeek V3.2 是推理优先的模型，具备 128K 上下文窗口，专为智能体任务设计，将思考直接集成到工具使用中。"
+    },
+    "de": {
+      "description": "DeepSeek V3.2 ist ein reasoning-first Modell mit 128K-Kontextfenster, optimiert fur Agent-Tasks mit integriertem Denken in Tool-Use-Fahigkeiten."
+    },
+    "ko": {
+      "description": "DeepSeek V3.2은 128K 컨텍스트 윈도를 갖춘 추론 우선 모델로, 도구 사용에 통합된 생각 기능을 갖춘 에이전트 작업을 위해 설계되었습니다."
+    },
+    "es": {
+      "description": "DeepSeek V3.2 es un modelo de razonamiento prioritario con ventana de contexto de 128K, disenado para tareas de agentes con capacidades de pensamiento integrado en herramienta."
+    },
+    "fr": {
+      "description": "DeepSeek V3.2 est un modele raisonnement-prioritaire avec une fenetre de contexte de 128K, concu pour les taches d'agents avec des capacites de reflechion integrees dans l'utilisation d'outils."
+    },
+    "id": {
+      "description": "DeepSeek V3.2 adalah model penalaran prioritas dengan jendela konteks 128K, dirancang untuk tugas agen dengan kemampuan berpikir terintegrasi dalam penggunaan alat."
+    },
+    "ja": {
+      "description": "DeepSeek V3.2は128Kコンテキストウィンドウを持つ推論優先モデルで、ツール使用に統合された思考機能を持つエージェントタスクのために設計されています。"
+    },
+    "pt": {
+      "description": "DeepSeek V3.2 e um modelo de raciocinio prioritario com janela de contexto de 128K, projetado para tarefas de agentes com capacidades de pensamento integradas em uso de ferramentas."
+    },
+    "ru": {
+      "description": "DeepSeek V3.2 - это модель с приоритетом рассуждения с окном контекста 128K, разработанная для задач агентов с интегрированным мышлением в использовании инструментов."
+    },
+    "tr": {
+      "description": "DeepSeek V3.2, 128K baglam penceresine sahip oncelikli muhakeme modelidir, arac kullaniminda entegre dusunme yeteneklerine sahip ortam gorevleri icin tasarlanmistir."
+    },
+    "zh-Hant": {
+      "description": "DeepSeek V3.2 是推理優先的模型，具備 128K 上下文視窗，專為智能體任務設計，將思考直接整合到工具使用中。"
+    }
+  },
+  "verified": false,
+  "websiteUrl": "https://www.deepseek.com",
+  "docsUrl": "https://api-docs.deepseek.com/quick_start/pricing",
+  "vendor": "DeepSeek",
+  "size": "671B",
+  "contextWindow": 128000,
+  "maxOutput": 8000,
+  "tokenPricing": {
+    "input": 0.28,
+    "output": 0.42,
+    "cache": 0.028
+  },
+  "releaseDate": "2025-12-01",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "sciCode": null,
+    "liveCodeBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2",
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

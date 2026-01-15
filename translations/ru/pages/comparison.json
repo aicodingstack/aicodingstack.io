@@ -2,58 +2,47 @@
   "clis": {
     "backTo": "Назад к CLI",
     "subtitle": "Ассистенты по кодированию в командной строке с ИИ",
-    "title": "@:shared.stacks.clis"
+    "title": "Сравнение CLI ИИ-кодинга"
   },
   "columns": {
+    "name": "Name",
     "cache": "Кэш",
     "capabilities": "Возможности",
     "contextLength": "Длина контекста",
     "freePlan": "Бесплатный план",
-    "githubStars": "@:components.productHero.stars",
     "input": "Вход",
     "inputModalities": "Модальности ввода",
-    "license": "@:components.productHero.license",
     "links": "Ссылки",
     "live-code-bench": "Live Code Bench",
-    "maxOutput": "@:shared.common.maxOutput",
     "maxPrice": "Макс. цена",
     "mmmu": "MMMU",
     "mmmu-pro": "MMMU Pro",
-    "modelSize": "@:shared.common.modelSize",
     "output": "Выход",
-    "platforms": "@:components.productHero.platforms",
-    "pricing": "@:shared.common.pricing",
     "pricingCache": "Цена кэша",
     "pricingInput": "Цена ввода",
     "pricingOutput": "Цена вывода",
     "sci-code": "SciCode",
     "startingPrice": "Начальная цена",
-    "supportedIdes": "@:components.productHero.supportedIdes",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version",
     "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "Назад к расширениям",
     "subtitle": "Расширения и плагины для кодирования с ИИ",
-    "title": "@:shared.stacks.extensions"
+    "title": "Сравнение расширений ИИ-кодинга"
   },
   "ides": {
     "backTo": "Назад к IDE",
     "subtitle": "Интегрированные среды разработки с улучшениями ИИ",
-    "title": "@:shared.stacks.ides"
+    "title": "Сравнение IDE ИИ-кодинга"
   },
-  "linkTitles": {
-    "documentation": "@:components.productHero.documentation",
-    "download": "@:components.productHero.download",
-    "officialWebsite": "@:components.productHero.visitWebsite"
-  },
+  "modelCompareDescription": "Сравните модели ИИ для кодирования бок о бок: спецификации, цены, возможности и бенчмарки.",
+  "modelCompareTitle": "Сравнение моделей ИИ для кодирования: {model1} vs {model2}",
   "models": {
     "backTo": "Назад к моделям",
     "subtitle": "Большие языковые модели, оптимизированные для генерации и анализа кода",
-    "title": "@:shared.stacks.models"
+    "title": "Сравнение моделей ИИ-кодинга"
   },
   "pricingValues": {
     "free": "Бесплатно",

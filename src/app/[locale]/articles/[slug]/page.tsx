@@ -57,7 +57,7 @@ export default async function ArticlePage({ params }: Props) {
     notFound()
   }
 
-  const t = await getTranslations({ locale, namespace: 'components.header' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
   const ArticleContent = await getArticleComponent(locale, slug)
 
   if (!ArticleContent) {
@@ -90,7 +90,7 @@ export default async function ArticlePage({ params }: Props) {
 
       <Breadcrumb
         items={[
-          { name: t('articles'), href: '/articles' },
+          { name: tShared('terms.articles'), href: '/articles' },
           { name: article.title, href: `/articles/${slug}` },
         ]}
       />

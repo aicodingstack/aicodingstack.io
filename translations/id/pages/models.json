@@ -1,0 +1,10 @@
+{
+  "context": "Konteks:",
+  "lifecycle": {
+    "noResults": "Tidak ada model {lifecycle} yang cocok dengan pencarian Anda"
+  },
+  "pricing": "Harga:",
+  "size": "Ukuran:",
+  "subtitle": "Model bahasa besar yang dioptimalkan untuk generasi dan analisis kode",
+  "title": "Model Coding AI"
+}

@@ -1,0 +1,23 @@
+{
+  "footer": {
+    "copyright": "© 2025 AI Coding Stack • ❤︎ ile yapıldı • Açık Kaynak",
+    "openSource": "Açık kaynak AI kodlama metaveri deposu.",
+    "selectLanguage": "Dil Seçin",
+    "tagline": "AI Kodlama Ekosistemi Merkeziniz.",
+    "toggleTheme": "Tema değiştir"
+  },
+  "header": {
+    "aiCodingLandscape": "AI Kodlama Manzarası",
+    "aiCodingLandscapeDesc": "AI kodlama ekosisteminin tamamını görselleştirin",
+    "closeMenu": "Menüyü kapat",
+    "developmentTools": "Geliştirme Araçları",
+    "intelligence": "Zeka",
+    "landscape": "Manzara",
+    "openMenu": "Menüyü aç",
+    "openSourceRank": "Açık Kaynak Sıralaması",
+    "openSourceRankDesc": "GitHub yıldızlarına göre açık kaynaklı AI kodlama projelerini keşfedin",
+    "ranking": "Sıralama",
+    "searchPlaceholder": "Ara...",
+    "toggleMenu": "Menüyü değiştir"
+  }
+}
