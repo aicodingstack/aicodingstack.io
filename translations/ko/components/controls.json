@@ -1,0 +1,27 @@
+{
+  "copyButton": {
+    "copied": "복사됨!",
+    "copyToClipboard": "클립보드에 복사"
+  },
+  "filterSortBar": {
+    "clearFilters": "필터 지우기",
+    "license": "라이선스:",
+    "platform": "플랫폼:",
+    "sort": "정렬:",
+    "sortDefault": "기본값",
+    "sortNameAsc": "이름 (A-Z)",
+    "sortNameDesc": "이름 (Z-A)"
+  },
+  "searchDialog": {
+    "placeholder": "Type to search...",
+    "empty": "Start typing to search...",
+    "noResultsFor": "No results for \"{query}\"",
+    "navigate": "to navigate",
+    "select": "to select",
+    "viewAllResults": "View all results for \"{query}\""
+  },
+  "searchInput": {
+    "placeholder": "@:components.controls.searchInput.placeholder",
+    "clear": "Clear search"
+  }
+}

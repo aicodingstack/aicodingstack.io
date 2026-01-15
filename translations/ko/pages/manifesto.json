@@ -1,5 +1,10 @@
 {
-  "slogan": "발견하고, 비교하고, 10배 더 빠르게 구축하세요.",
-  "subtitle": "AI 기반 소프트웨어 개발의 미래에 대한 비전",
-  "title": "당신의 AI 코딩 생태계 허브"
+  "meta": {
+    "title": "Manifesto - AI Coding Stack",
+    "description": "Our vision for the future of AI-powered software development. Discover, compare, and build 10x faster with AI coding tools."
+  },
+  "exploreStack": {
+    "subtitle": "Explore the complete AI coding ecosystem: IDEs, CLIs, extensions, models, and providers."
+  },
+  "subtitle": "Our vision for the future of AI-powered software development"
 }

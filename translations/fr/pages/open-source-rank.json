@@ -1,0 +1,27 @@
+{
+  "description": "Découvrez et explorez les outils de codage IA open source classés par étoiles GitHub. Comparez les IDE, CLI et extensions pour trouver les outils parfaits pour votre flux de travail de développement.",
+  "filter": {
+    "all": "Tous"
+  },
+  "meta": {
+    "description": "Classement de tous les projets open source dans AI Coding Stack, triés par étoiles GitHub. Consultez les statistiques et tendances des outils open source vs propriétaires.",
+    "title": "Classement des Projets Open Source"
+  },
+  "noResults": "Aucun projet open source trouvé pour cette catégorie.",
+  "note": "Note: Cette page affiche uniquement les projets avec des dépôts GitHub. Certains projets, bien qu'ils ne soient pas open source, maintiennent des dépôts GitHub comme canaux de retour des utilisateurs.",
+  "statistics": {
+    "closedSourceCount": "Projets propriétaires",
+    "closedSourcePercentage": "Pourcentage Propriétaire",
+    "licenseBreakdown": "Distribution des Licences",
+    "openSourceCount": "Projets open source",
+    "projects": "projets",
+    "title": "Distribution Open Source vs Propriétaire",
+    "totalProjects": "Total des Projets"
+  },
+  "table": {
+    "openSourceTitle": "Projets open source ({count})",
+    "proprietaryTitle": "Projets propriétaires ({count})",
+    "rank": "Rang"
+  },
+  "title": "Classement des Projets Open Source"
+}

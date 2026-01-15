@@ -38,21 +38,24 @@
       "description": "Claude Opus 4 是 Anthropic 推出的 200K 上下文視窗語言模型，專為複雜的代碼生成任務設計。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://www.anthropic.com",
   "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
   "vendor": "Anthropic",
   "size": "Unknown",
   "contextWindow": 200000,
-  "maxOutput": 8000,
+  "maxOutput": 32000,
   "tokenPricing": {
     "input": 15,
     "output": 75,
-    "cache": null
+    "cache": 1.5
   },
-  "releaseDate": null,
-  "inputModalities": ["text"],
-  "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
+  "releaseDate": "2025-05-22",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "pdf"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "reasoning", "tool-choice", "structured-outputs"],
   "benchmarks": {
     "sweBench": 67.6,
     "terminalBench": 0.351,

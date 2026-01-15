@@ -1,0 +1,103 @@
+{
+  "productCommands": {
+    "command": "Komut",
+    "install": "Yükle",
+    "launch": "Başlat"
+  },
+  "platformLinks": {
+    "aiPlatforms": {
+      "huggingface": {
+        "description": "Model kartını ve ağırlıkları görüntüle"
+      },
+      "artificialAnalysis": {
+        "description": "AI modeli lider tablosu ve kıyaslamaları"
+      },
+      "openrouter": {
+        "description": "Birden çok AI modelini karşılaştırın ve kullanın"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "Yıldız geçmişi yükleniyor...",
+    "title": "GitHub Yıldız Geçmişi",
+    "description": "Zaman içinde yıldız artış trendi",
+    "stars": "yıldız",
+    "fallbackNote": "Not: Örnek veriler görüntüleniyor. Yıldız geçmişi API'si geçici olarak kullanılamıyor."
+  },
+  "productHero": {
+    "runtime": "Çalışma Zamanı"
+  },
+  "communityLinks": {
+    "blog": "Blog",
+    "blogDescription": "Blog gönderilerini oku",
+    "discordDescription": "Topluluğa katıl",
+    "githubDescription": "Depoları görüntüle",
+    "redditDescription": "Tartışmaya katıl",
+    "youtubeDescription": "Videoları izle"
+  },
+  "resourceLinks": {
+    "changelog": "Değişiklik Günlüğü",
+    "changelogDescription": "Değişiklik günlüğünü görüntüle",
+    "downloadDescription": "En son sürümü indir",
+    "issue": "Sorun Takipçisi",
+    "issueDescription": "Hata bildirin ve özellik isteyin",
+    "mcp": "MCP Dokümantasyonu",
+    "mcpDescription": "MCP entegrasyonu hakkında bilgi edinin",
+    "pricingDescription": "Fiyat planlarını görüntüle"
+  },
+  "productPricing": {},
+  "modelSpecifications": {},
+  "benchmarks": {
+    "title": "Performance Benchmarks",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "webDevArenaDesc": "Web development challenges",
+    "sciCodeDesc": "Scientific code generation",
+    "liveCodeBenchDesc": "Live coding performance"
+  },
+  "relatedProducts": {
+    "title": "İlgili Ürünler",
+    "viewProduct": "Ürünü Görüntüle"
+  },
+  "vendorMatrix": {
+    "cell": {
+      "summary": "{count} {category}"
+    },
+    "controls": {
+      "clear": "Temizle",
+      "sortByLabel": "Sırala:",
+      "sortName": "Ad",
+      "vendorTypeLabel": "Sağlayıcı Türü:"
+    },
+    "table": {
+      "noVendorsFound": "Sağlayıcı bulunamadı"
+    },
+    "vendorTypes": {
+      "label": "Sağlayıcı Türleri:",
+      "types": {
+        "ai-native": {
+          "description": "Model + Geliştirme Araçları",
+          "label": "AI Doğal"
+        },
+        "full-stack": {
+          "description": "IDE + CLI + Uzantı",
+          "label": "Full Stack"
+        },
+        "model-only": {
+          "description": "Model (Sağlayıcı ile veya olmadan)",
+          "label": "Sadece Model"
+        },
+        "provider-only": {
+          "description": "Sadece Sağlayıcı",
+          "label": "Sadece Sağlayıcı"
+        },
+        "tool-only": {
+          "description": "IDE/CLI/Uzantı",
+          "label": "Sadece Araç"
+        }
+      }
+    }
+  }
+}

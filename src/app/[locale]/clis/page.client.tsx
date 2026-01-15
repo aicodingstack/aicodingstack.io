@@ -19,8 +19,8 @@ type Props = {
 }
 
 export default function CLIsPageClient({ locale }: Props) {
-  const t = useTranslations('pages.clis')
-  const tGlobal = useTranslations()
+  const tPage = useTranslations('pages.clis')
+  const tShared = useTranslations('shared')
   const [sortOrder, setSortOrder] = useState<'default' | 'name-asc' | 'name-desc'>('default')
   const [licenseFilters, setLicenseFilters] = useState<string[]>([])
   const [platformFilters, setPlatformFilters] = useState<string[]>([])
@@ -101,14 +101,14 @@ export default function CLIsPageClient({ locale }: Props) {
         {/* Main Content */}
         <main className="w-full">
           <PageHeader
-            title={t('title')}
-            subtitle={t('subtitle')}
+            title={tPage('title')}
+            subtitle={tPage('subtitle')}
             action={
               <Link
                 href="/clis/comparison"
                 className="text-sm px-[var(--spacing-md)] py-[var(--spacing-xs)] border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-colors"
               >
-                {t('compareAll')} →
+                {tShared('actions.compareAll')} →
               </Link>
             }
           />
@@ -128,7 +128,7 @@ export default function CLIsPageClient({ locale }: Props) {
 
           {filteredAndSortedClis.length === 0 ? (
             <div className="text-center py-[var(--spacing-xl)] text-[var(--color-text-secondary)]">
-              {t('noMatches')}
+              {tPage('noMatches')}
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[var(--spacing-md)]">
@@ -153,7 +153,7 @@ export default function CLIsPageClient({ locale }: Props) {
                   <div className="flex items-center gap-[var(--spacing-xs)] text-xs text-[var(--color-text-muted)] mt-auto">
                     <span>{cli.vendor}</span>
                     <span className="text-[var(--color-border)]">•</span>
-                    <span>{translateLicenseText(cli.license, tGlobal)}</span>
+                    <span>{translateLicenseText(cli.license, tShared)}</span>
                   </div>
                 </Link>
               ))}

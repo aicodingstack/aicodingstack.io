@@ -37,8 +37,8 @@ export async function generateMetadata({
     return { title: 'CLI Not Found | AI Coding Stack' }
   }
 
-  const tGlobal = await getTranslations({ locale })
-  const licenseStr = cli.license ? translateLicenseText(cli.license, tGlobal) : ''
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
+  const licenseStr = cli.license ? translateLicenseText(cli.license, tShared) : ''
 
   return await generateSoftwareDetailMetadata({
     locale: locale as Locale,
@@ -68,8 +68,7 @@ export default async function CLIPage({
     notFound()
   }
 
-  const t = await getTranslations({ locale, namespace: 'pages.cliDetail' })
-  const tGlobal = await getTranslations({ locale })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Transform URLs for component props
   const websiteUrl = cli.websiteUrl || cli.resourceUrls?.download || undefined
@@ -88,7 +87,7 @@ export default async function CLIPage({
       version: cli.latestVersion,
       platforms: cli.platforms,
       pricing: cli.pricing,
-      license: cli.license ? translateLicenseText(cli.license, tGlobal) : undefined,
+      license: cli.license ? translateLicenseText(cli.license, tShared) : undefined,
     },
     category: 'clis',
     locale: locale as Locale,
@@ -99,8 +98,8 @@ export default async function CLIPage({
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tGlobal('shared.stacks.clis'), href: '/clis' },
+    { name: tShared('terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tShared('categories.plural.clis'), href: '/clis' },
     { name: cli.name, href: `clis/${cli.id}` },
   ]
 
@@ -114,7 +113,7 @@ export default async function CLIPage({
           description={cli.description}
           vendor={cli.vendor}
           category="CLI"
-          categoryLabel={t('categoryLabel')}
+          categoryLabel={tShared('categories.singular.cli')}
           verified={cli.verified ?? false}
           latestVersion={cli.latestVersion}
           license={cli.license}
@@ -135,7 +134,7 @@ export default async function CLIPage({
 
         <ProductCommands install={cli.installCommand} launch={cli.launchCommand} />
 
-        <BackToNavigation href="/clis" title={t('allCLIs')} />
+        <BackToNavigation href="/clis" title={tShared('categories.all.clis')} />
       </main>
     </PageLayout>
   )

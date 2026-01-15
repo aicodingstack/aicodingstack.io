@@ -66,8 +66,8 @@ export default async function ModelPage({
     notFound()
   }
 
-  const t = await getTranslations({ locale, namespace: 'pages.modelDetail' })
-  const tGlobal = await getTranslations({ locale })
+  const tPage = await getTranslations({ locale, namespace: 'pages.modelDetail' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Generate JSON-LD schema
   const schema = await generateModelDetailSchema({
@@ -89,15 +89,15 @@ export default async function ModelPage({
 
   // Build additional info for ProductHero
   const additionalInfo = [
-    model.size && { label: t('modelSize'), value: model.size },
-    { label: t('contextWindow'), value: `${model.contextWindow.toLocaleString()} tokens` },
-    { label: t('maxOutput'), value: `${model.maxOutput.toLocaleString()} tokens` },
+    model.size && { label: tShared('terms.modelSize'), value: model.size },
+    { label: tPage('contextWindow'), value: `${model.contextWindow.toLocaleString()} tokens` },
+    { label: tShared('terms.maxOutput'), value: `${model.maxOutput.toLocaleString()} tokens` },
   ].filter(Boolean) as { label: string; value: string }[]
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tGlobal('shared.stacks.models'), href: '/models' },
+    { name: tShared('terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tShared('categories.plural.models'), href: '/models' },
     { name: model.name, href: `models/${model.id}` },
   ]
 
@@ -111,24 +111,20 @@ export default async function ModelPage({
           description={`by ${model.vendor}`}
           vendor={model.vendor}
           category="MODEL"
-          categoryLabel={t('categoryLabel')}
+          categoryLabel={tShared('categories.singular.model')}
           verified={model.verified ?? false}
           additionalInfo={additionalInfo}
           websiteUrl={model.websiteUrl || undefined}
           docsUrl={model.docsUrl || undefined}
         />
 
-        <PlatformLinks
-          platformUrls={model.platformUrls}
-          layout="horizontal"
-          gridCols="grid-cols-1 md:grid-cols-3"
-        />
+        <PlatformLinks platformUrls={model.platformUrls} />
 
         <ModelSpecifications model={model} />
 
         <ModelBenchmarks benchmarks={model.benchmarks} />
 
-        <BackToNavigation href="/models" title={t('allModels')} />
+        <BackToNavigation href="/models" title={tShared('categories.all.models')} />
       </main>
     </PageLayout>
   )

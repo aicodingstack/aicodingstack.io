@@ -1,373 +1,429 @@
-# Schema Architecture Documentation
+# Schema Architecture
 
-## Schema Inheritance Hierarchy
+**Last Updated:** January 6, 2026
+
+This document describes the modular Schema.org structured data architecture for AI Coding Stack, which provides type-safe, reusable JSON-LD schema generation for SEO optimization.
+
+---
+
+## Overview
+
+The Schema system is built on a modular architecture with four main modules:
+
+- **`types.ts`** - TypeScript type definitions for all Schema.org types
+- **`builders.ts`** - Reusable schema builder functions
+- **`generators.ts`** - High-level schema generators for specific page types
+- **`validators.ts`** - Schema validation utilities
+
+All modules are exported through a single entry point at **`index.ts`**.
+
+## Directory Structure
 
 ```
-entity.schema.json (Base Entity)
-├── Fields: id, name, description, i18n, websiteUrl, docsUrl, verified
-├── Required: all
-│
-├── vendor-entity.schema.json
-│   ├── Adds: vendor
-│   ├── Required: vendor
-│   │
-│   ├── product.schema.json (Products: CLIs, IDEs, Terminals, Extensions)
-│   │   ├── Adds: latestVersion, githubUrl, githubStars, license, pricing, resourceUrls, communityUrls, relatedProducts
-│   │   ├── Required: latestVersion, githubUrl, githubStars, license, pricing, resourceUrls, communityUrls
-│   │   │
-│   │   ├── app.schema.json (Applications)
-│   │   │   ├── Adds: platforms, installCommand, launchCommand
-│   │   │   ├── Required: platforms
-│   │   │   │
-│   │   │   ├── clis.schema.json
-│   │   │   │   └── No additional fields
-│   │   │   │
-│   │   │   ├── ides.schema.json
-│   │   │   │   └── No additional fields
-│   │   │   │
-│   │   │   └── terminals.schema.json
-│   │   │       └── No additional fields
-│   │   │
-│   │   └── extensions.schema.json
-│   │       ├── Adds: supportedIdes
-│   │       └── Required: supportedIdes
-│   │
-│   ├── models.schema.json (AI Models)
-│   │   ├── Adds: latestVersion (nullable), githubUrl (nullable), githubStars (nullable)
-│   │   │        size, contextWindow, maxOutput, tokenPricing, platformUrls
-│   │   └── Required: size, contextWindow, maxOutput, tokenPricing, platformUrls
-│   │
-│   ├── providers.schema.json (Model Providers)
-│   │   ├── Adds: latestVersion (nullable), githubUrl (nullable, required), githubStars (nullable, required)
-│   │   │        type, applyKeyUrl, platformUrls, communityUrls
-│   │   └── Required: githubUrl, githubStars, type, applyKeyUrl, platformUrls, communityUrls
-│   │
-│       ├── Adds: latestVersion, githubUrl, githubStars, runtime, command
-│       └── Required: latestVersion, githubUrl, githubStars, runtime, command
-│
-└── vendors.schema.json (Vendors)
-    ├── Adds: communityUrls
-    └── Required: communityUrls
-
-collections.schema.json (Independent)
-└── No inheritance - standalone schema for curated collections
+src/lib/metadata/schemas/
+├── types.ts          # Schema.org type definitions
+├── builders.ts       # Reusable schema builders
+├── generators.ts     # High-level page-specific generators
+├── validators.ts     # Schema validation utilities
+└── index.ts          # Public API surface
 ```
 
-## Base Schemas (ref/)
+---
 
-### entity.schema.json
-**Purpose**: Core fields shared by all entities (products, models, providers, vendors, etc.)
+## Module: types.ts
 
-**Fields**:
-- `id` (string, pattern: `^[a-z0-9-]+$`): Unique identifier
-- `name` (string): Official name
-- `description` (string, maxLength: 200): Concise description
-- `translations` (object, → translations.schema.json): Translations
-- `websiteUrl` (string, uri, https): Official website
-- `docsUrl` (string/null, uri, https): Documentation URL
-- `verified` (boolean): Verification status
+Defines all Schema.org TypeScript interfaces following the official Schema.org vocabulary.
 
-**Required**: All fields
+### Base Types
+
+```typescript
+interface SchemaBase {
+  '@context': 'https://schema.org'
+  '@type': string
+}
+```
+
+### Supported Schema Types
+
+| Type | Purpose | Interface Name |
+|------|---------|----------------|
+| Organization | Company/Organization info | `SchemaOrganization` |
+| Person | Individual author info | `SchemaPerson` |
+| SoftwareApplication | IDEs, CLIs, Extensions | `SchemaSoftwareApplication` |
+| Product | Commercial products | `SchemaProduct` |
+| ItemList | List pages (IDEs, Models, etc.) | `SchemaItemList` |
+| BreadcrumbList | Navigation breadcrumbs | `SchemaBreadcrumbList` |
+| FAQPage | Frequently asked questions | `SchemaFAQPage` |
+| Article | Blog posts, articles | `SchemaArticle` |
+| WebSite | Site-wide search/identity | `SchemaWebSite` |
+| Offer | Pricing information | `SchemaOffer` |
+| AggregateRating | Review ratings | `SchemaAggregateRating` |
+
+### Key Interfaces
+
+```typescript
+// Core schema types
+export interface SchemaOrganization extends SchemaBase {
+  '@type': 'Organization'
+  name: string
+  url: string
+  logo?: string
+  description?: string
+  foundingDate?: string
+  sameAs?: string[]
+  contactPoint?: SchemaContactPoint
+}
+
+export interface SchemaSoftwareApplication extends SchemaBase {
+  '@type': 'SoftwareApplication'
+  name: string
+  applicationCategory: string
+  description: string
+  url: string
+  operatingSystem?: string
+  softwareVersion?: string
+  offers?: SchemaOffer | SchemaOffer[]
+  author: SchemaOrganization
+}
+
+export interface SchemaBreadcrumbList extends SchemaBase {
+  '@type': 'BreadcrumbList'
+  itemListElement: SchemaBreadcrumbListItem[]
+}
+
+export interface SchemaFAQPage extends SchemaBase {
+  '@type': 'FAQPage'
+  mainEntity: SchemaQuestion[]
+}
+```
 
 ---
 
-### vendor-entity.schema.json
-**Purpose**: Minimal extension adding vendor information
+## Module: builders.ts
 
-**Extends**: entity.schema.json
+Contains reusable builder functions that construct Schema.org objects from data.
 
-**Additional Fields**:
-- `vendor` (string): Company or organization name
+### Builder Functions
 
-**Required**: `vendor`
+| Builder | Schema Type | Purpose |
+|---------|-------------|---------|
+| `buildOrganizationSchema()` | Organization | Company/brand info |
+| `buildPersonSchema()` | Person | Author profiles |
+| `buildSoftwareApplicationSchema()` | SoftwareApplication | IDEs, CLIs, Extensions |
+| `buildProductSchema()` | Product | Commercial tools |
+| `buildItemListSchema()` | ItemList | List pages |
+| `buildBreadcrumbListSchema()` | BreadcrumbList | Navigation |
+| `buildArticleSchema()` | Article | Blog posts |
+| `buildFAQPageSchema()` | FAQPage | Questions/answers |
+| `buildWebSiteSchema()` | WebSite | Site search |
+| `buildOffersSchema()` | Offer | Pricing data |
+| `buildAggregateRatingSchema()` | AggregateRating | Review ratings |
 
-**Note**: This schema ONLY adds the `vendor` field. All other version/GitHub fields are defined by subschemas based on their specific needs.
+### Example: SoftwareApplication Builder
 
----
+```typescript
+import { buildSoftwareApplicationSchema } from '@/lib/metadata/schemas'
 
-### product.schema.json
-**Purpose**: Base schema for installable products (CLIs, IDEs, Terminals, Extensions)
+const schema = buildSoftwareApplicationSchema({
+  name: 'Cursor IDE',
+  description: 'AI-first code editor',
+  url: 'https://cursor.sh',
+  applicationCategory: 'DeveloperApplication',
+  applicationSubCategory: 'IDE',
+  operatingSystem: 'macOS, Windows, Linux',
+  version: '0.43.5',
+  vendorName: 'Anysphere',
+  vendorUrl: 'https://anysphere.co',
+  pricing: [
+    { name: 'Free', value: 0, currency: 'USD', per: 'month' },
+    { name: 'Pro', value: 20, currency: 'USD', per: 'month' },
+  ],
+  license: 'Proprietary',
+})
+```
 
-**Extends**: vendor-entity.schema.json
+### Example: BreadcrumbList Builder
 
-**Additional Fields**:
-- `latestVersion` (string): Product version (required, non-null)
-- `githubUrl` (string/null, uri, github.com): GitHub repository (nullable)
-- `githubStars` (number/null, ≥0): Star count (nullable)
-- `license` (string): SPDX identifier or "Proprietary"
-- `pricing` (array, minItems: 1): Pricing tiers (→ pricingTier)
-- `resourceUrls` (object, → resourceUrls): Product resources
-- `communityUrls` (object, → community-urls.schema.json): Community links
-- `relatedProducts` (array, → relatedProducts): Related products
+```typescript
+import { buildBreadcrumbListSchema } from '@/lib/metadata/schemas'
 
-**Required**: `latestVersion`, `githubUrl`, `githubStars`, `license`, `pricing`, `resourceUrls`, `communityUrls`
-
-**Definitions**:
-- `pricingTier`: name, value, currency, per, category
-- `resourceUrls`: download, changelog, pricing, mcp, issue
-- `relatedProducts`: type (ide/cli/extension), productId
-
----
-
-### app.schema.json
-**Purpose**: Schema for applications (CLIs, IDEs, Terminals)
-
-**Extends**: product.schema.json
-
-**Additional Fields**:
-- `platforms` (array, minItems: 1): Platform-specific details
-  - `os` (enum: macOS/Windows/Linux)
-  - `installPath` (string/null)
-  - `installCommand` (string/null)
-  - `launchCommand` (string/null)
-- `installCommand` (string/null): Top-level install command (optional, legacy)
-- `launchCommand` (string/null): Top-level launch command (optional, legacy)
-
-**Required**: `platforms`
-
-**Inherited**: `relatedProducts` (from product.schema.json)
-
----
-
-## Product Schemas
-
-### clis.schema.json
-**Type**: object  
-**Extends**: app.schema.json  
-**Additional**: None
-
-### ides.schema.json
-**Type**: object  
-**Extends**: app.schema.json  
-**Additional**: None
-
-### terminals.schema.json
-**Type**: object  
-**Extends**: app.schema.json  
-**Additional**: None
-
-### extensions.schema.json
-**Type**: object  
-**Extends**: product.schema.json  
-**Additional**:
-- `supportedIdes` (array, minItems: 1): IDE support information
-  - `ideId` (string): IDE identifier
-  - `marketplaceUrl` (string/null, uri)
-  - `installCommand` (string/null)
-  - `installUri` (string/null, uri)
-
-**Required**: `supportedIdes`
+const schema = buildBreadcrumbListSchema([
+  { name: 'Home', url: 'https://aicodingstack.io' },
+  { name: 'IDEs', url: 'https://aicodingstack.io/ides' },
+  { name: 'Cursor', url: 'https://aicodingstack.io/ides/cursor' },
+])
+```
 
 ---
 
-## Entity Schemas (Arrays)
+## Module: generators.ts
 
-### models.schema.json
-**Type**: array  
-**Extends**: vendor-entity.schema.json
+High-level generators that combine builders with manifest data to create page-specific schemas.
 
-**Additional Fields**:
-- `latestVersion` (string/null): Version (optional)
-- `githubUrl` (string/null, uri, github.com): Repository (optional)
-- `githubStars` (number/null, ≥0): Stars (optional)
-- `size` (string): Parameter size (e.g., "7B", "200B")
-- `contextWindow` (number): Context window in tokens (e.g., 128000)
-- `maxOutput` (number): Max output tokens (e.g., 4096)
-- `tokenPricing` (object): API pricing
-  - `input` (string): Input pricing
-  - `output` (string): Output pricing
-  - `cache` (string/null): Cache pricing
-- `platformUrls` (object, → platform-urls.schema.json): Third-party platforms
+### Generators
 
-**Required**: `size`, `contextWindow`, `maxOutput`, `tokenPricing`, `platformUrls`
+| Generator | For Page Type | Schemas Generated |
+|-----------|---------------|-------------------|
+| `generateRootOrganizationSchema()` | Root layout | Organization |
+| `generateWebSiteSchema()` | Root layout | WebSite |
+| `generateFAQPageSchema()` | Homepage | FAQPage |
+| `generateSoftwareDetailSchema()` | IDE/CLI/Extension detail | SoftwareApplication, BreadcrumbList |
+| `generateModelDetailSchema()` | Model detail | Product, BreadcrumbList |
+| `generateListPageSchema()` | Category list pages | ItemList |
+| `generateArticleSchema()` | Article pages | Article |
+| `generateDocsSchema()` | Documentation pages | Article |
+| `generateVendorSchema()` | Vendor pages | Organization |
 
----
+### Example: IDE Detail Page Schema
 
-### providers.schema.json
-**Type**: array  
-**Extends**: vendor-entity.schema.json
+```typescript
+import { generateSoftwareDetailSchema } from '@/lib/metadata/schemas'
 
-**Additional Fields**:
-- `latestVersion` (string/null): Version (optional)
-- `githubUrl` (string/null, uri, github.com): Repository (required but nullable)
-- `githubStars` (number/null, ≥0): Stars (required but nullable)
-- `type` (enum): "foundation-model-provider" or "model-service-provider"
-- `applyKeyUrl` (string/null, uri): API key application URL
-- `platformUrls` (object, → platform-urls.schema.json): Third-party platforms
-- `communityUrls` (object, → community-urls.schema.json): Community links
+const schema = await generateSoftwareDetailSchema({
+  product: ideData,        // From manifest
+  category: 'ides',
+  locale: 'en',
+  breadcrumbs: [
+    { name: 'Home', url: '/' },
+    { name: 'IDEs', url: '/ides' },
+    { name: ideData.name, url: `/ides/${ideData.slug}` },
+  ],
+})
+```
 
-**Required**: `githubUrl`, `githubStars`, `type`, `applyKeyUrl`, `platformUrls`, `communityUrls`
+### Generator Options
 
----
+#### SoftwareDetailSchemaOptions
 
-**Type**: array  
-**Extends**: vendor-entity.schema.json
+```typescript
+interface SoftwareDetailSchemaOptions {
+  product: IDE | CLI | Extension
+  category: 'ides' | 'clis' | 'extensions'
+  locale: Locale
+  breadcrumbs?: BreadcrumbItemData[]
+}
+```
 
-**Additional Fields**:
-- `latestVersion` (string): Version (required, non-null)
-- `githubUrl` (string, uri, github.com): Repository (required, non-null)
-- `githubStars` (number, ≥0): Stars (required, non-null)
-- `runtime` (enum): "Node.js", "Python", "Docker", "Other"
-- `command` (string): Command to run the integration server
+#### ModelDetailSchemaOptions
 
-**Required**: `latestVersion`, `githubUrl`, `githubStars`, `runtime`, `command`
-
----
-
-### vendors.schema.json
-**Type**: array  
-**Extends**: entity.schema.json (NOT vendor-entity)
-
-**Additional Fields**:
-- `communityUrls` (object, → community-urls.schema.json): Community links
-
-**Required**: `communityUrls`
+```typescript
+interface ModelDetailSchemaOptions {
+  product: Model
+  category: 'models'
+  locale: Locale
+  breadcrumbs?: BreadcrumbItemData[]
+}
+```
 
 ---
 
-### collections.schema.json
-**Type**: object  
-**Extends**: None (independent schema)
+## Module: validators.ts
 
-**Structure**:
-- `specifications`, `articles`, `tools` (collectionSection)
-  - `title`, `description`, `translations` (→ translations.schema.json), `cards`
-  - Cards contain: `title`, `translations`, `items`
-  - Items contain: `name`, `url`, `description`, `translations`
+Provides schema validation with detailed error reporting.
 
----
+### Validation Functions
 
-## Supporting Schemas (ref/)
+| Function | Purpose |
+|----------|---------|
+| `validateSchema()` | Validate any schema against requirements |
+| `validateOrThrow()` | Validate and throw on errors |
+| `validateAndLog()` | Validate and log results to console |
 
-### translations.schema.json
-**Purpose**: Internationalization translations
+### Validation Result
 
-**Pattern**: `^[a-z]{2}(-[A-Z][a-z]+)?$` (e.g., `zh-Hans`, `en`)
+```typescript
+interface ValidationResult {
+  valid: boolean
+  errors: string[]
+  warnings: string[]
+}
+```
 
-**Fields per locale**:
-- `name` (string, maxLength: 100): Translated name
-- `title` (string, maxLength: 100): Translated title  
-- `description` (string, maxLength: 200): Translated description
+### Example Validation
 
-**Required per locale**: None (flexible - use what's needed)
+```typescript
+import { validateAndLog } from '@/lib/metadata/schemas'
 
----
+const schema = generateSoftwareDetailSchema({ ... })
+const result = validateAndLog(schema, 'IDE Detail Page')
 
-### community-urls.schema.json
-**Purpose**: Social media and community presence URLs
-
-**Fields** (all string/null, uri, https):
-- `linkedin`: LinkedIn company page
-- `twitter`: Twitter/X profile
-- `github`: GitHub organization
-- `youtube`: YouTube channel
-- `discord`: Discord server
-- `reddit`: Reddit community
-- `blog`: Official blog
-
-**Required**: All fields (allows explicit null)
+// Output to console:
+// Schema validation: IDE Detail Page
+// Valid: true
+// Errors: 0
+// Warnings: 0
+```
 
 ---
 
-### platform-urls.schema.json
-**Purpose**: Third-party platform URLs (for models/providers)
+## Usage Patterns
 
-**Fields** (all string/null, uri):
-- `huggingface`: HuggingFace page (pattern: `^https://huggingface\\.co/`)
-- `artificialAnalysis`: Artificial Analysis page (pattern: `^https://artificialanalysis\\.ai/`)
-- `openrouter`: OpenRouter page (pattern: `^https://openrouter\\.ai/`)
+### 1. Root Layout (Organization + WebSite)
 
-**Required**: All fields (allows explicit null)
+```typescript
+// src/app/[locale]/layout.tsx
+import { generateRootOrganizationSchema, generateWebSiteSchema } from '@/lib/metadata/schemas'
 
----
+const organizationSchema = await generateRootOrganizationSchema()
+const websiteSchema = await generateWebSiteSchema()
 
-## Key Design Principles
+return (
+  <html>
+    <head>
+      <JsonLd data={organizationSchema} />
+      <JsonLd data={websiteSchema} />
+    </head>
+  </html>
+)
+```
 
-### 1. DRY (Don't Repeat Yourself)
-- Common fields defined once in base schemas
-- Subschemas only define their specific fields
-- `vendor-entity.schema.json` is minimal (only `vendor`)
-- Version/GitHub fields defined in each subschema based on needs
+### 2. Homepage (FAQPage)
 
-### 2. Flexible Inheritance
-- Child schemas can override parent field types
-- Example: `latestVersion` is string in product, but nullable in models/providers
+```typescript
+// src/app/[locale]/page.tsx
+import { generateFAQPageSchema } from '@/lib/metadata/schemas'
 
-### 3. Type Safety
-- Strict validation with `unevaluatedProperties: false`
-- All fields explicitly defined
-- Nullable fields use `["string", "null"]` pattern
+const questions = [
+  { question: 'What is AI Coding Stack?', answer: '...' },
+  { question: 'How can I contribute?', answer: '...' },
+  // ... more questions
+]
 
-### 4. Semantic Clarity
-- Field names match their purpose (`tokenPricing` vs `pricing`)
-- `blog` in `communityUrls` (not `resourceUrls`)
-- `relatedProducts` in `product.schema.json` (not duplicated)
+const faqSchema = await generateFAQPageSchema(questions)
 
-### 5. Consistent Patterns
-- All URL fields: `["string", "null"]`, format: "uri", pattern: "^https://"
-- All required fields with nullable type explicitly allow null values
-- Enum fields used for controlled vocabularies
+return (
+  <>
+    <JsonLd data={faqSchema} />
+    {/* Page content */}
+  </>
+)
+```
 
----
+### 3. Detail Page (SoftwareApplication + BreadcrumbList)
 
-## Field Requirement Strategy
+```typescript
+// src/app/[locale]/ides/[slug]/page.tsx
+import { generateSoftwareDetailSchema } from '@/lib/metadata/schemas'
 
-| Schema Level | latestVersion | githubUrl | githubStars | Rationale |
-|-------------|---------------|-----------|-------------|-----------|
-| **vendor-entity** | ❌ Not defined | ❌ Not defined | ❌ Not defined | Minimal base |
-| **product** | ✅ Required | ✅ Required (nullable) | ✅ Required (nullable) | Products have versions |
-| **models** | ⚪ Optional (nullable) | ⚪ Optional (nullable) | ⚪ Optional (nullable) | Models don't have traditional versions |
-| **providers** | ⚪ Optional (nullable) | ✅ Required (nullable) | ✅ Required (nullable) | Some providers have GitHub |
+const schema = await generateSoftwareDetailSchema({
+  product: ideData,
+  category: 'ides',
+  locale: params.locale,
+})
 
----
+return (
+  <>
+    <JsonLd data={schema} />
+    {/* Page content */}
+  </>
+)
+```
 
-## Data Structure Summary
+### 4. List Page (ItemList)
 
-### Products (object type)
-- **clis.json**: Array of CLI objects
-- **ides.json**: Array of IDE objects
-- **terminals.json**: Array of terminal objects
-- **extensions.json**: Array of extension objects
+```typescript
+// src/app/[locale]/ides/page.tsx
+import { generateListPageSchema } from '@/lib/metadata/schemas'
 
-### Entities (array type)
-- **models.json**: Array of model objects
-- **providers.json**: Array of provider objects
-- **vendors.json**: Array of vendor objects
+const schema = await generateListPageSchema({
+  items: ides.map((ide) => ({
+    name: ide.name,
+    url: baseUrl + `/ides/${ide.slug}`,
+    description: ide.description,
+  })),
+  itemName: 'IDEs',
+  itemDescription: 'AI-powered code editors',
+})
 
-### Collections (object type)
-- **collections.json**: Single object with specifications, articles, tools sections
-
----
-
-## Breaking Changes From Refactoring
-
-1. **pricing → tokenPricing** (models only)
-   - Avoids semantic conflict with product pricing
-   - Models use token-based pricing
-
-2. **cli → relatedProducts** (IDEs)
-   - String field converted to structured array
-   - Supports multiple related products of different types
-
-3. **blog field moved** (all products)
-   - From `resourceUrls.blog` to `communityUrls.blog`
-   - Blog is community content, not a product resource
-
-4. **New required fields**:
-   - All products: `githubUrl`, `githubStars`, `relatedProducts`
-   - Providers: `githubUrl`, `githubStars`
-   - communityUrls: `blog`
+return (
+  <>
+    <JsonLd data={schema} />
+    {/* Page content */}
+  </>
+)
+```
 
 ---
 
-## Validation
+## Schema Types by Page Type
 
-All schemas use JSON Schema Draft 2020-12 with strict mode:
-- `unevaluatedProperties: false` on top-level schemas
-- `additionalProperties: false` on nested definitions
-- Format and pattern validation for URLs
-- Enum validation for controlled vocabularies
+| Page Type | Schema(s) | Notes |
+|-----------|-----------|-------|
+| Home | Organization, WebSite, FAQPage | Root-level schemas |
+| IDE/CLI/Extension Detail | SoftwareApplication, BreadcrumbList | Software-specific |
+| Model Detail | Product, BreadcrumbList | Model-specific |
+| Vendor Detail | Organization | Company info |
+| List (IDEs/Models/etc.) | ItemList | Catalog-style |
+| Article | Article | Blog/content |
+| Documentation | Article (TechArticle) | Docs pages |
 
-**Validation Command**: `npm run test:validate`
+---
 
-**Current Status**: ✅ All 9 manifest files validated successfully
+## Type Safety
+
+All schema functions are fully typed. This ensures:
+
+1. **Compile-time validation** - Invalid properties are caught at build time
+2. **IDE autocompletion** - Schema properties are suggested in editors
+3. **Refactor safety** - Changes to schema types propagate through codebase
+
+```typescript
+const schema = buildSoftwareApplicationSchema({
+  name: 'Cursor',
+  // TypeScript error: Property 'invalidField' does not exist
+  invalidField: 'should not be here',
+})
+```
+
+---
+
+## Future Extensions
+
+To add a new schema type:
+
+1. Add type definition in `types.ts`
+2. Add builder in `builders.ts`
+3. Add generator in `generators.ts` (if needed for specific page)
+4. Export from `index.ts`
+
+### Example: Adding RatingReview Schema
+
+```typescript
+// 1. types.ts
+export interface SchemaRatingReview extends SchemaBase {
+  '@type': 'RatingReview'
+  reviewRating: SchemaAggregateRating
+  author: SchemaPerson
+}
+
+// 2. builders.ts
+export function buildRatingReviewSchema(...) { ... }
+
+// 3. index.ts
+export { buildRatingReviewSchema } from './builders'
+export type { SchemaRatingReview } from './types'
+```
+
+---
+
+## Testing
+
+Schemas are validated using the `validators.ts` module:
+
+```typescript
+import { validateOrThrow, validateAndLog } from '@/lib/metadata/schemas'
+
+// Development: Log validation results
+validateAndLog(schema, 'Page Name')
+
+// Production: Throw on errors
+validateOrThrow(schema)
+```
+
+---
+
+## References
+
+- [Schema.org Official Reference](https://schema.org/)
+- [JSON-LD Playground](https://json-ld.org/playground/)
+- [Google Structured Data Testing Tool](https://search.google.com/test/rich-results)

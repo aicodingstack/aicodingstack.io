@@ -1,5 +1,8 @@
 {
-  "keywords": "documentos de stack de codificación con IA, guía de herramientas de codificación con IA, comparación de IDE, comparación de CLI, especificaciones de modelo de IA",
-  "subtitle": "Nuestra visión para el futuro del desarrollo de software potenciado por IA",
-  "title": "@:shared.common.manifesto"
+  "meta": {
+    "title": "Documentation - AI Coding Stack",
+    "description": "Comprehensive documentation for AI Coding Stack. Learn how to use the platform, contribute to the project, and maximize your AI coding workflow."
+  },
+  "keywords": "AI coding stack docs, AI coding tools guide, IDE comparison, CLI comparison, AI model specs",
+  "subtitle": "Complete guide to AI Coding Stack: exploring tools, understanding specifications, and choosing the right AI coding tools for your workflow."
 }

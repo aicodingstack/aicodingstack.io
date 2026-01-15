@@ -2,13 +2,13 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "deepseek",
   "name": "DeepSeek",
-  "description": "A leading AI research company focused on developing advanced language models and AI technologies for coding and general intelligence.",
+  "description": "A leading AI research company focused on developing advanced language models and AI technology for coding and general intelligence.",
   "translations": {
     "zh-Hans": {
       "description": "领先的 AI 研究公司，专注于开发先进的语言模型和 AI 技术，用于编码和通用智能。"
     },
     "de": {
-      "description": "Ein führendes KI-Forschungsunternehmen, das sich auf die Entwicklung fortschrittlicher Sprachmodelle und KI-Technologien für Codierung und allgemeine Intelligenz konzentriert."
+      "description": "Ein führendes AI-Forschungsunternehmen, das sich auf die Entwicklung fortschrittlicher Sprachmodelle und AI-Technologien für Codierung und allgemeine Intelligenz konzentriert."
     },
     "ko": {
       "description": "코딩 및 일반 지능을 위한 고급 언어 모델과 AI 기술 개발에 집중하는 선도적인 AI 연구 기업입니다."
@@ -17,7 +17,7 @@
       "description": "Una empresa de investigación de IA líder centrada en el desarrollo de modelos de lenguaje avanzados y tecnologías de IA para la codificación y la inteligencia general."
     },
     "fr": {
-      "description": "Une entreprise de recherche en IA de premier plan axée sur le developpement de modeles de langue avances et de technologies IA pour le codage et l'intelligence generale."
+      "description": "Une entreprise de recherche en IA de premier plan axée sur le developpement de modeles de langue avances et de technologie IA pour le codage et l'intelligence generale."
     },
     "id": {
       "description": "Perusahaan riset AI terkemuka yang berfokus pada pengembangan model bahasa canggih dan teknologi AI untuk coding dan kecerdasan umum."

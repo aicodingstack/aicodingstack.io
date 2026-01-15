@@ -1,6 +1,5 @@
 {
   "description": "Jelajahi dan bandingkan alat coding AI: IDE, CLI, ekstensi, model, dan penyedia — semua di satu tempat.",
-  "exploreTools": "Jelajahi Alat",
   "faq": "Pertanyaan yang Sering Diajukan",
   "features": {
     "comparison": {
@@ -23,7 +22,6 @@
   },
   "meta": {
     "description": "Direktori komprehensif untuk alat coding AI. Temukan, bandingkan, dan jelajahi IDE, CLI, ekstensi, model, dan penyedia.",
-    "name": "AI Coding Stack",
     "title": "AI Coding Stack - Pusat Ekosistem Coding AI Anda"
   },
   "readDocs": "Baca Dokumentasi",

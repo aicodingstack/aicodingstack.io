@@ -43,14 +43,14 @@ const FeaturedLink = memo(function FeaturedLink({
   descKey,
   marginBottom = 'sm',
   onClose,
-  tNav,
-}: FeaturedLink & { onClose: () => void; tNav: ReturnType<typeof useTranslations<'header'>> }) {
+  tComponents,
+}: FeaturedLink & { onClose: () => void; tComponents: ReturnType<typeof useTranslations> }) {
   const marginClass = marginBottom === 'md' ? 'mb-[var(--spacing-md)]' : 'mb-[var(--spacing-sm)]'
 
   return (
     <Link href={href} onClick={onClose} className={`${featuredLinkClass} ${marginClass}`}>
-      <div className="font-medium mb-[var(--spacing-xs)]">{tNav(titleKey)}</div>
-      <div className="text-xs text-[var(--color-text-secondary)]">{tNav(descKey)}</div>
+      <div className="font-medium mb-[var(--spacing-xs)]">{tComponents(titleKey)}</div>
+      <div className="text-xs text-[var(--color-text-secondary)]">{tComponents(descKey)}</div>
     </Link>
   )
 })
@@ -62,11 +62,11 @@ const MenuColumn = memo(function MenuColumn({
   titleKey,
   items,
   onClose,
-  tNav,
-}: MenuColumn & { onClose: () => void; tNav: ReturnType<typeof useTranslations<'header'>> }) {
+  tComponents,
+}: MenuColumn & { onClose: () => void; tComponents: ReturnType<typeof useTranslations> }) {
   return (
     <div>
-      <h4 className={columnTitleClass}>{tNav(titleKey)}</h4>
+      <h4 className={columnTitleClass}>{tComponents(titleKey)}</h4>
       <ul className="space-y-1">
         {items.map(item => (
           <li key={item.href}>
@@ -81,23 +81,23 @@ const MenuColumn = memo(function MenuColumn({
 })
 
 export const StackMegaMenu = memo(function StackMegaMenu({ isOpen, onClose }: StackMegaMenuProps) {
-  const tStacks = useTranslations('shared.stacks')
-  const tNav = useTranslations('components.header')
+  const tComponent = useTranslations('components.common.header')
+  const tShared = useTranslations('shared')
 
   // Memoize menu sections to avoid recreating on every render
   const menuSections = useMemo(
     () => ({
       development: [
-        { name: tStacks('ides'), href: '/ides' },
-        { name: tStacks('clis'), href: '/clis' },
-        { name: tStacks('extensions'), href: '/extensions' },
+        { name: tShared('categories.plural.ides'), href: '/ides' },
+        { name: tShared('categories.plural.clis'), href: '/clis' },
+        { name: tShared('categories.plural.extensions'), href: '/extensions' },
       ] as MenuItem[],
       intelligence: [
-        { name: tStacks('models'), href: '/models' },
-        { name: tStacks('modelProviders'), href: '/model-providers' },
+        { name: tShared('categories.plural.models'), href: '/models' },
+        { name: tShared('categories.plural.modelProviders'), href: '/model-providers' },
       ] as MenuItem[],
     }),
-    [tStacks]
+    [tShared]
   )
 
   // Memoize featured links configuration
@@ -123,13 +123,18 @@ export const StackMegaMenu = memo(function StackMegaMenu({ isOpen, onClose }: St
         <div className="p-[var(--spacing-md)]">
           {/* Featured Links */}
           {featuredLinks.map(link => (
-            <FeaturedLink key={link.href} {...link} onClose={onClose} tNav={tNav} />
+            <FeaturedLink key={link.href} {...link} onClose={onClose} tComponents={tComponent} />
           ))}
 
           {/* Two Column Grid */}
           <div className="grid grid-cols-2 gap-[var(--spacing-md)]">
             {menuColumns.map(column => (
-              <MenuColumn key={column.titleKey} {...column} onClose={onClose} tNav={tNav} />
+              <MenuColumn
+                key={column.titleKey}
+                {...column}
+                onClose={onClose}
+                tComponents={tComponent}
+              />
             ))}
           </div>
 
@@ -140,7 +145,7 @@ export const StackMegaMenu = memo(function StackMegaMenu({ isOpen, onClose }: St
               onClick={onClose}
               className="block px-[var(--spacing-xs)] py-1 text-sm hover:bg-[var(--color-hover)] transition-colors"
             >
-              {tStacks('vendors')}
+              {tShared('categories.plural.vendors')}
             </Link>
           </div>
         </div>

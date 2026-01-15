@@ -8,7 +8,7 @@
       "description": "终端 AI 编码助手 CLI。理解代码库，通过自然语言执行任务，解释代码，管理 git 工作流，并支持 MCP 集成。"
     },
     "de": {
-      "description": "KI-Codierungsassistent CLI für Ihr Terminal. Versteht Ihre Codebasis, führt Aufgaben über natürliche Sprache aus, erklärt Code und verwaltet Git-Workflows mit MCP-Integration."
+      "description": "AI-Codierungsassistent CLI für Ihr Terminal. Versteht Ihre Codebasis, führt Aufgaben über natürliche Sprache aus, erklärt Code und verwaltet Git-Workflows mit MCP-Integration."
     },
     "ko": {
       "description": "터미널을 위한 AI 코딩 어시스턴트 CLI입니다. 코드베이스를 이해하고, 자연어로 작업을 실행하며, 코드를 설명하고, git 워크플로우를 관리하며 MCP 통합을 지원합니다."

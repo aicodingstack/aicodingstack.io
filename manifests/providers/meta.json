@@ -1,0 +1,61 @@
+{
+  "$schema": "../$schemas/provider.schema.json",
+  "id": "meta",
+  "name": "Meta AI",
+  "description": "Meta's AI research division providing open-source foundation models including Llama for various applications in coding, reasoning, and content generation.",
+  "translations": {
+    "zh-Hans": {
+      "description": "Meta 的 AI 研究部门，提供开源基础模型，包括 Llama，用于编码、推理和内容生成等各种应用。"
+    },
+    "de": {
+      "description": "Metas AI-Forschungsabteilung, die Open-Source-Foundation-Modelle bereitstellt, einschließlich Llama für verschiedene Anwendungen im Bereich Codierung, Reasoning und Inhaltserstellung."
+    },
+    "ko": {
+      "description": "코딩, 추론 및 콘텐츠 생성 등 다양한 애플리케이션을 위한 Llama를 포함하여 오픈 소스 기반 모델을 제공하는 Meta의 AI 연구 부서입니다."
+    },
+    "es": {
+      "description": "La división de investigación de IA de Meta, proporcionando modelos fundacionales de código abierto incluyendo Llama para varias aplicaciones en codificación, razonamiento y generación de contenido."
+    },
+    "fr": {
+      "description": "La division de recherche en IA de Meta, fournissant des modèles fondamentaux open source, y compris Llama pour diverses applications en codage, raisonnement et création de contenu."
+    },
+    "id": {
+      "description": "Divisi riset AI Meta yang menyediakan model foundation open source termasuk Llama untuk berbagai aplikasi dalam coding, reasoning, dan pembuatan konten."
+    },
+    "ja": {
+      "description": "コーディング、推論、コンテンツ生成など様々な用途向けのLlamaを含め、オープンソースの基盤モデルを提供するMetaのAI研究部門。"
+    },
+    "pt": {
+      "description": "A divisão de pesquisa de IA da Meta, fornecendo modelos de base open source, incluindo Llama para várias aplicações em codificação, raciocínio e geração de conteúdo."
+    },
+    "ru": {
+      "description": "Исследовательское подразделение ИИ Meta, предоставляющее открытые фундаментальные модели, включая Llama для различных приложений в области программирования, рассуждений и создания контента."
+    },
+    "tr": {
+      "description": "Çeşitli uygulamalarda kodlama, akıl yürütme ve içerik oluşturma için Llama dahil olmak üzere açık kaynaklı temel modeller sunan Meta'nın AI araştırma departmanı."
+    },
+    "zh-Hant": {
+      "description": "Meta 的 AI 研究部門，提供開源基礎模型，包括 Llama，用於編碼、推理和內容生成等各種應用。"
+    }
+  },
+  "verified": false,
+  "websiteUrl": "https://llama.meta.com",
+  "docsUrl": "https://llama.meta.com/docs/",
+  "vendor": "meta",
+  "type": "foundation-model-provider",
+  "applyKeyUrl": "https://www.llama.com/api/",
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/meta-llama",
+    "artificialAnalysis": null,
+    "openrouter": "https://openrouter.ai/provider/meta"
+  },
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/meta",
+    "twitter": "https://x.com/MetaAI",
+    "github": "https://github.com/meta-llama",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": "https://ai.meta.com/blog"
+  }
+}

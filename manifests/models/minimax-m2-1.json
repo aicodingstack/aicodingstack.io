@@ -1,0 +1,73 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "minimax-m2-1",
+  "name": "MiniMax M2.1",
+  "description": "An advanced large language model from MiniMax designed for comprehensive intelligence tasks including coding, reasoning, and tool use.",
+  "translations": {
+    "zh-Hans": {
+      "description": "MiniMax 推出的先进大语言模型，专为包括编程、推理和工具使用在内的综合智能任务设计。"
+    },
+    "de": {
+      "description": "Ein fortgeschrittenes Großsprachmodell von MiniMax, entwickelt für umfassende Intelligenzaufgaben einschließlich Programmierung, Schlussfolgern und Werkzeugnutzung."
+    },
+    "ko": {
+      "description": "코딩, 추론 및 도구 사용을 포함한 포괄적인 지능 작업을 위해 설계된 MiniMax의 고급 대형 언어 모델입니다."
+    },
+    "es": {
+      "description": "Un modelo de lenguaje grande avanzado de MiniMax diseñado para tareas de inteligencia integral que incluyen programación, razonamiento y uso de herramientas."
+    },
+    "fr": {
+      "description": "Un grand modele de langage avance de MiniMax concu pour des taches d'intelligence globale incluant la programmation, le raisonnement et l'utilisation d'outils."
+    },
+    "id": {
+      "description": "Model bahasa besar canggih dari MiniMax yang dirancang untuk tugas kecerdasan komprehensif termasuk coding, penalaran, dan penggunaan alat."
+    },
+    "ja": {
+      "description": "プログラミング、推論、ツール使用を含む包括的なインテリジェンス・タスクのために設計されたMiniMaxの高度な大規模言語モデル。"
+    },
+    "pt": {
+      "description": "Um modelo de linguagem grande avançado da MiniMax projetado para tarefas de inteligência abrangentes, incluindo programação, raciocínio e uso de ferramentas."
+    },
+    "ru": {
+      "description": "Продвинутая большая языковая модель от MiniMax, предназначенная для комплексных интеллектуальных задач, включая программирование, рассуждение и использование инструментов."
+    },
+    "tr": {
+      "description": "Kodlama, muhakeme ve arac kullanimi dahil kapsamli zeka gorevleri icin tasarlanmis, MiniMax'ten gelismis bir buyuk dil modeli."
+    },
+    "zh-Hant": {
+      "description": "MiniMax 推出的先進大語言模型，專為包括編程、推理和工具使用在內的綜合智能任務設計。"
+    }
+  },
+  "verified": true,
+  "websiteUrl": "https://minimaxi.ai",
+  "docsUrl": "https://www.minimax.io/news/minimax-m21",
+  "vendor": "MiniMax",
+  "size": "230B",
+  "contextWindow": 204800,
+  "maxOutput": 131072,
+  "tokenPricing": {
+    "input": 0.3,
+    "output": 1.2,
+    "cache": 0.03
+  },
+  "releaseDate": "2025-12-23",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2025-12",
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "sciCode": null,
+    "liveCodeBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/MiniMaxAI/MiniMax-M2.1",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/minimax-m2-1",
+    "openrouter": "https://openrouter.ai/minimax/minimax-m2.1"
+  }
+}

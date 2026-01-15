@@ -1,0 +1,61 @@
+{
+  "$schema": "../$schemas/provider.schema.json",
+  "id": "alibaba",
+  "name": "Alibaba Cloud",
+  "description": "Alibaba's cloud computing platform offering advanced AI services and language models including Qwen for enterprise and development applications.",
+  "translations": {
+    "zh-Hans": {
+      "description": "阿里巴巴的云计算平台，提供先进的 AI 服务和语言模型，包括用于企业和开发应用的通义千问（Qwen）。"
+    },
+    "de": {
+      "description": "Alibabas Cloud Computing-Plattform, die fortschrittliche AI-Dienste und Sprachmodelle anbietet, einschließlich Qwen für Unternehmens- und Entwicklungsanwendungen."
+    },
+    "ko": {
+      "description": "엔터프라이즈 및 개발 애플리케이션을 위한 Qwen을 포함하여 고급 AI 서비스와 언어 모델을 제공하는 Alibaba의 클라우드 컴퓨팅 플랫폼입니다."
+    },
+    "es": {
+      "description": "Plataforma de computación en la nube de Alibaba, ofreciendo servicios avanzados de IA y modelos de lenguaje, incluyendo Qwen para aplicaciones empresariales y de desarrollo."
+    },
+    "fr": {
+      "description": "Plateforme de cloud computing d'Alibaba, offrant des services d'IA avancés et des modèles de langage, incluant Qwen pour les applications d'entreprise et de développement."
+    },
+    "id": {
+      "description": "Platform komputasi cloud Alibaba yang menawarkan layanan AI canggih dan model bahasa termasuk Qwen untuk aplikasi enterprise dan pengembangan."
+    },
+    "ja": {
+      "description": "エンタープライズおよび開発アプリケーション向けのQwenを含め、高度なAIサービスと言語モデルを提供するAlibabaのクラウドコンピューティングプラットフォーム。"
+    },
+    "pt": {
+      "description": "Plataforma de computação em nuvem da Alibaba, oferecendo serviços avançados de IA e modelos de linguagem, incluindo Qwen para aplicações empresariais e de desenvolvimento."
+    },
+    "ru": {
+      "description": "Облачная вычислительная платформа Alibaba, предлагающая передовые ИИ-сервисы и языковые модели, включая Qwen для корпоративных и разработческих приложений."
+    },
+    "tr": {
+      "description": "Kurumsal ve geliştirme uygulamaları için Qwen dahil olmak üzere gelişmiş AI hizmetleri ve dil modelleri sunan Alibaba'nın bulut bilişim platformu."
+    },
+    "zh-Hant": {
+      "description": "阿里巴巴的雲計算平台，提供先進的 AI 服務和語言模型，包括用於企業和開發應用的通義千問（Qwen）。"
+    }
+  },
+  "verified": false,
+  "websiteUrl": "https://aliyun.com",
+  "docsUrl": "https://help.aliyun.com/zh/dashscope",
+  "vendor": "alibaba",
+  "type": "foundation-model-provider",
+  "applyKeyUrl": "https://dashscope.console.aliyun.com/apiKey",
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/Qwen",
+    "artificialAnalysis": null,
+    "openrouter": "https://openrouter.ai/provider/alibaba"
+  },
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/alibaba-cloud",
+    "twitter": "https://x.com/Aliyun_Dev",
+    "github": "https://github.com/QwenLM",
+    "youtube": "https://www.youtube.com/@AlibabaCloud",
+    "discord": null,
+    "reddit": null,
+    "blog": "https://developer.aliyun.com/group/"
+  }
+}

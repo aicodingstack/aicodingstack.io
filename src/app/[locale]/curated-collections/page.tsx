@@ -11,10 +11,13 @@ import type { LocalePageProps } from '@/types/locale'
 
 export async function generateMetadata({ params }: LocalePageProps) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'pages.curatedCollections' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.curatedCollections' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
-  const title = buildTitle({ title: `${t('title')} - AI Coding Specs, Protocols & Tools` })
-  const description = t('subtitle')
+  const title = buildTitle({
+    title: `${tShared('terms.curatedCollections')} - AI Coding Specs, Protocols & Tools`,
+  })
+  const description = tPage('subtitle')
 
   return generateStaticPageMetadata({
     locale: locale as Locale,
@@ -29,7 +32,8 @@ export async function generateMetadata({ params }: LocalePageProps) {
 
 export default async function CuratedCollectionsPage({ params }: LocalePageProps) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'pages.curatedCollections' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.curatedCollections' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
   const collections = getCollections(locale)
   const sectionIds = getCollectionSectionIds()
 
@@ -38,7 +42,7 @@ export default async function CuratedCollectionsPage({ params }: LocalePageProps
       <Header />
 
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)] py-[var(--spacing-lg)]">
-        <PageHeader title={t('title')} subtitle={t('subtitle')} />
+        <PageHeader title={tShared('terms.curatedCollections')} subtitle={tPage('subtitle')} />
 
         {/* Main Content with Sidebar */}
         <div className="flex gap-[var(--spacing-lg)]">

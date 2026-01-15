@@ -38,21 +38,24 @@
       "description": "OpenAI 最先進的模型，在推理、代碼質量和用戶體驗方面有重大改進。針對需要逐步推理、遵循指令和高準確性的複雜任務進行了優化。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://openai.com",
   "docsUrl": "https://platform.openai.com/docs/models/gpt-5",
   "vendor": "OpenAI",
   "size": "Unknown",
-  "contextWindow": 128000,
-  "maxOutput": 16000,
+  "contextWindow": 400000,
+  "maxOutput": 128000,
   "tokenPricing": {
     "input": 1.25,
-    "output": 1.25,
-    "cache": null
+    "output": 10,
+    "cache": 0.125
   },
-  "releaseDate": null,
-  "inputModalities": ["text"],
-  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "releaseDate": "2025-08-07",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2024-09-30",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["tool-choice", "structured-outputs", "function-calling", "reasoning"],
   "benchmarks": {
     "sweBench": 71.8,
     "terminalBench": 0.54,
@@ -60,7 +63,7 @@
     "liveCodeBench": 28.7,
     "mmmu": 74.4,
     "mmmuPro": null,
-    "webDevArena": 148.0
+    "webDevArena": 148
   },
   "platformUrls": {
     "huggingface": null,

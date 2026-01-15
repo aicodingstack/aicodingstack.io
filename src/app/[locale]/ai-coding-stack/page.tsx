@@ -9,10 +9,11 @@ import type { LocalePageProps } from '@/types/locale'
 
 export async function generateMetadata({ params }: LocalePageProps) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'pages.overview' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.stacksOverview' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
-  const title = buildTitle({ title: t('title') })
-  const description = t('subtitle')
+  const title = buildTitle({ title: tShared('terms.aiCodingStack') })
+  const description = tPage('subtitle')
 
   return generateStaticPageMetadata({
     locale: locale as Locale,
@@ -27,24 +28,25 @@ export async function generateMetadata({ params }: LocalePageProps) {
 
 export default async function AICodingStackPage({ params }: LocalePageProps) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'pages.overview' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.stacksOverview' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   return (
     <>
       <Header />
 
       <main className="max-w-8xl mx-auto px-[var(--spacing-md)] py-[var(--spacing-lg)]">
-        <PageHeader title={t('title')} subtitle={t('subtitle')} />
+        <PageHeader title={tShared('terms.aiCodingStack')} subtitle={tPage('subtitle')} />
 
         {/* Stacks Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[var(--spacing-md)]">
           {[
-            { key: 'ides', path: 'ides' },
-            { key: 'clis', path: 'clis' },
-            { key: 'extensions', path: 'extensions' },
-            { key: 'models', path: 'models' },
-            { key: 'modelProviders', path: 'model-providers' },
-            { key: 'vendors', path: 'vendors' },
+            { key: 'ides', path: 'ides', category: 'ides' as const },
+            { key: 'clis', path: 'clis', category: 'clis' as const },
+            { key: 'extensions', path: 'extensions', category: 'extensions' as const },
+            { key: 'models', path: 'models', category: 'models' as const },
+            { key: 'modelProviders', path: 'model-providers', category: 'modelProviders' as const },
+            { key: 'vendors', path: 'vendors', category: 'vendors' as const },
           ].map(stack => (
             <Link
               key={stack.key}
@@ -52,13 +54,15 @@ export default async function AICodingStackPage({ params }: LocalePageProps) {
               className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5 group"
             >
               <div className="flex justify-between items-start mb-[var(--spacing-md)]">
-                <h3 className="text-2xl font-semibold tracking-tight">{t(`${stack.key}.title`)}</h3>
+                <h3 className="text-2xl font-semibold tracking-tight">
+                  {tShared(`categories.plural.${stack.category}`)}
+                </h3>
                 <span className="text-2xl text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all">
                   →
                 </span>
               </div>
               <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] font-light">
-                {t(`${stack.key}.description`)}
+                {tPage(`${stack.key}.description`)}
               </p>
             </Link>
           ))}

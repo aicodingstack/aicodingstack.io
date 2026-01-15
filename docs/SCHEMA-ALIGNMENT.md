@@ -1,341 +1,403 @@
-# Schema Alignment Recommendations
+# Schema & TypeScript Type Alignment
+
+**Last Updated:** January 6, 2026
+
+This document tracks the alignment between JSON schema definitions in `manifests/$schemas/` and TypeScript types in `src/types/manifests.ts`.
+
+---
 
 ## Overview
 
-This document outlines the inconsistencies found across various schema definitions and provides recommendations for better alignment.
+The manifest system uses **one-to-one correspondence** between:
+- JSON schemas in `manifests/$schemas/` (validation and documentation)
+- TypeScript types in `src/types/manifests.ts` (type safety and IDE support)
 
-## Base Info Schema
+When modifying schema files, the corresponding TypeScript types **must be updated** to match.
 
-Created `manifests/$schemas/ref/entity.schema.json` to define the absolute minimum fields that ALL entities should have:
+---
 
-- `id` - Unique identifier
-- `name` - Official name
-- `description` - Concise description (max 200 chars)
-- `i18n` - Internationalization support
-- `websiteUrl` - Official website
-- `docsUrl` - Documentation URL (nullable)
-
-## Current Schema Structure
-
-### Schema Hierarchy
+## Schema Directory Structure
 
 ```
-entity.schema.json (NEW - minimal core fields)
-  ↓
-product.schema.json (products like CLI, IDE, Terminal)
-  ↓
-specific schemas (clis.schema.json, ides.schema.json, etc.)
+manifests/$schemas/
+├── ref/                               # Reusable base schemas
+│   ├── entity.schema.json             # Base entity (id, name, description)
+│   ├── vendor-entity.schema.json      # Entity + vendor, docsUrl
+│   ├── translations.schema.json       # i18n translations
+│   ├── community-urls.schema.json     # Social/Community URLs
+│   ├── platform-urls.schema.json      # Platform URLs (HuggingFace, etc.)
+│   ├── product.schema.json            # Base product schema
+│   └── app.schema.json                # Base app (product + platforms)
+├── cli.schema.json                    # CLI tools
+├── ide.schema.json                    # IDEs
+├── extension.schema.json              # Extensions
+├── model.schema.json                  # LLM Models
+├── provider.schema.json               # API Providers
+├── vendor.schema.json                 # Vendors
+├── collections.schema.json            # Curated collections
+└── github-stars.schema.json           # GitHub stars data
 ```
 
-### Entity Types
+---
 
-1. **Product-based** (use base-product):
-   - CLIs
-   - IDEs
-   - Terminals
-   - Extensions
+## Type Hierarchy
 
-2. **Service-based** (independent schemas):
-   - Models
-   - Providers
-   - MCPs
-   - Vendors
+### Base Reference Types
 
-## Identified Inconsistencies
+```
+entity.schema.json
+    extends ManifestEntity ↴
+        ↳ vendor-entity.schema.json extends ManifestVendorEntity
+            ↳ product.schema.json extends ManifestBaseProduct
+                ↳ app.schema.json extends ManifestBaseApp
+                    └── [cli, ide].schema.json
+```
 
-### 1. Documentation URL Field
+### Product-Based Schemas (extend app.schema.json)
 
-**Issue**: `docsUrl` handling is inconsistent
+| Schema | TypeScript Type | Parent Type |
+|--------|-----------------|-------------|
+| cli.schema.json | `ManifestCLI` | `ManifestBaseApp` |
+| ide.schema.json | `ManifestIDE` | `ManifestBaseApp` |
+| extension.schema.json | `ManifestExtension` | `ManifestBaseProduct` |
 
-| Schema | docsUrl Status | Current Definition |
-|--------|---------------|-------------------|
-| base-product | Optional (nullable) | `["string", "null"]` |
-| models | Missing | N/A |
-| providers | Required | `string` (non-null) |
-| vendors | Missing | N/A |
+### Independent Schemas
 
-**Recommendation**: 
-- Make `docsUrl` **optional (nullable)** across all schemas
-- Include it in all entity types
-- Use `["string", "null"]` format consistently
+| Schema | TypeScript Type | Parent Type |
+|--------|-----------------|-------------|
+| model.schema.json | `ManifestModel` | `ManifestVendorEntity` |
+| provider.schema.json | `ManifestProvider` | `ManifestVendorEntity` |
+| vendor.schema.json | `ManifestVendor` | `ManifestEntity` |
+| collections.schema.json | `ManifestCollections` | Independent |
+
+---
+
+## Type Alignment Status
+
+### ✅ Aligned - Complete One-to-One Correspondence
+
+| Schema File | TypeScript Type | Status |
+|-------------|-----------------|--------|
+| entity.schema.json | `ManifestEntity` | ✅ Aligned |
+| vendor-entity.schema.json | `ManifestVendorEntity` | ✅ Aligned |
+|Translations.schema.json | `ManifestTranslations` | ✅ Aligned |
+| community-urls.schema.json | `ManifestCommunityUrls` | ✅ Aligned |
+| platform-urls.schema.json | `ManifestPlatformUrls` | ✅ Aligned |
+| product.schema.json | `ManifestBaseProduct` | ✅ Aligned |
+| app.schema.json | `ManifestBaseApp` | ✅ Aligned |
+| cli.schema.json | `ManifestCLI` | ✅ Aligned |
+| ide.schema.json | `ManifestIDE` | ✅ Aligned |
+| extension.schema.json | `ManifestExtension` | ✅ Aligned |
+| model.schema.json | `ManifestModel` | ✅ Aligned |
+| provider.schema.json | `ManifestProvider` | ✅ Aligned |
+| vendor.schema.json | `ManifestVendor` | ✅ Aligned |
+| collections.schema.json | `ManifestCollections` | ✅ Aligned |
+| github-stars.schema.json | `ManifestGitHubStars` | ✅ Aligned |
+
+---
+
+## TypeScript Type Reference
+
+### Base Types
+
+```typescript
+// manifests/$schemas/ref/entity.schema.json → ManifestEntity
+export interface ManifestEntity {
+  id: string
+  name: string
+  description: string
+  translations: ManifestTranslations
+  verified: boolean
+  websiteUrl: string
+}
+
+// manifests/$schemas/ref/vendor-entity.schema.json → ManifestVendorEntity
+export interface ManifestVendorEntity extends ManifestEntity {
+  docsUrl: string | null
+  vendor: string
+}
+
+// manifests/$schemas/ref/translations.schema.json → ManifestTranslations
+export interface ManifestTranslations {
+  [locale: string]: {
+    name?: string
+    title?: string
+    description?: string
+  }
+}
+
+// manifests/$schemas/ref/community-urls.schema.json → ManifestCommunityUrls
+export interface ManifestCommunityUrls {
+  linkedin: string | null
+  twitter: string | null
+  github: string | null
+  youtube: string | null
+  discord: string | null
+  reddit: string | null
+  blog: string | null
+}
+
+// manifests/$schemas/ref/platform-urls.schema.json → ManifestPlatformUrls
+export interface ManifestPlatformUrls {
+  huggingface: string | null
+  artificialAnalysis: string | null
+  openrouter: string | null
+}
+```
+
+### Product Types
+
+```typescript
+// manifests/$schemas/ref/product.schema.json → ManifestBaseProduct
+export interface ManifestBaseProduct extends ManifestVendorEntity {
+  latestVersion: string
+  githubUrl: string | null
+  license: string
+  pricing: ManifestPricingTier[]
+  resourceUrls: ManifestResourceUrls
+  communityUrls: ManifestCommunityUrls
+  relatedProducts: ManifestRelatedProduct[]
+}
+
+// manifests/$schemas/ref/app.schema.json → ManifestBaseApp
+export interface ManifestBaseApp extends ManifestBaseProduct {
+  platforms: ManifestPlatformElement[]
+  installCommand?: string | null
+  launchCommand?: string | null
+}
+
+// manifests/$schemas/cli.schema.json → ManifestCLI
+export interface ManifestCLI extends ManifestBaseApp {}
+
+// manifests/$schemas/ide.schema.json → ManifestIDE
+export interface ManifestIDE extends ManifestBaseApp {}
+
+// manifests/$schemas/extension.schema.json → ManifestExtension
+export interface ManifestExtension extends ManifestBaseProduct {
+  supportedIdes: ManifestIDESupport[]
+}
+```
+
+### Independent Types
+
+```typescript
+// manifests/$schemas/model.schema.json → ManifestModel
+export interface ManifestModel extends ManifestVendorEntity {
+  size: string
+  contextWindow: number
+  maxOutput: number
+  tokenPricing: ManifestTokenPricing
+  releaseDate: string | null
+  inputModalities: ModelInputModality[]
+  capabilities: ModelCapability[]
+  benchmarks: ManifestBenchmarks
+  platformUrls: ManifestPlatformUrls
+}
+
+// manifests/$schemas/provider.schema.json → ManifestProvider
+export interface ManifestProvider extends ManifestVendorEntity {
+  type: 'foundation-model-provider' | 'model-service-provider'
+  applyKeyUrl: string | null
+  platformUrls: ManifestPlatformUrls
+  communityUrls: ManifestCommunityUrls
+}
+
+// manifests/$schemas/vendor.schema.json → ManifestVendor
+export interface ManifestVendor extends ManifestEntity {
+  communityUrls: ManifestCommunityUrls
+}
+```
+
+### Collection Types
+
+```typescript
+// manifests/$schemas/collections.schema.json → ManifestCollections
+export interface ManifestCollections {
+  specifications: ManifestCollectionSection
+  articles: ManifestCollectionSection
+  tools: ManifestCollectionSection
+  features: ManifestCollectionSection
+}
+
+export interface ManifestCollectionSection {
+  title: string
+  description: string
+  translations: ManifestTranslations
+  sections: ManifestCollectionSubSection[]
+}
+
+export interface ManifestCollectionSubSection {
+  title: string
+  translations: ManifestTranslations
+  items: ManifestCollectionItem[]
+}
+
+export interface ManifestCollectionItem {
+  name: string
+  url: string
+  description: string
+  translations: ManifestTranslations
+}
+```
+
+---
+
+## Type Guards
+
+Type guards are intentionally **not** defined in `src/types/manifests.ts` to keep it type-only.
+If runtime guards are needed, define them in a separate module under `src/lib/` (or `src/types/guards/`)
+so client components don't accidentally pull in runtime code when importing types.
+
+---
+
+## Utility Types
+
+```typescript
+// Array types for JSON file imports
+export type ManifestCLIArray = ManifestCLI[]
+export type ManifestIDEArray = ManifestIDE[]
+export type ManifestExtensionArray = ManifestExtension[]
+export type ManifestModelArray = ManifestModel[]
+export type ManifestProviderArray = ManifestProvider[]
+export type ManifestVendorArray = ManifestVendor[]
+
+// Union types
+export type ManifestProductType = ManifestIDE | ManifestCLI | ManifestExtension
+export type ManifestEntityType = ManifestEntity | ManifestVendorEntity | ManifestVendor | ManifestProductType | ManifestModel | ManifestProvider
+```
+
+---
+
+## Guidelines for Adding New Schemas
+
+### 1. Create JSON Schema
+
+```json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./ref/vendor-entity.schema.json" },
+    {
+      "type": "object",
+      "properties": {
+        "customField": {
+          "type": ["string", "null"],
+          "description": "Custom field description"
+        }
+      }
+    }
+  ]
+}
+```
+
+### 2. Add TypeScript Type
+
+```typescript
+// In src/types/manifests.ts
+export interface ManifestNewType extends ManifestVendorEntity {
+  customField: string | null
+}
+```
+
+### 3. Update Utility Types (if needed)
+
+```typescript
+export type ManifestNewTypeArray = ManifestNewType[]
+export type ManifestUnionType = ManifestNewType | ManifestExistingType
+```
+
+### 4. Update Type Guards (if needed)
+
+```typescript
+export function isManifestNewType(obj: unknown): obj is ManifestNewType {
+  return isManifestVendorEntity(obj) && 'customField' in obj
+}
+```
+
+---
+
+## Schema Validation
+
+The project includes JSON schema validation tests:
+
+```bash
+npm test -- manifests.schema.test
+```
+
+This validates all manifest JSON files against their schemas in `manifests/$schemas/`.
+
+---
+
+## Common Patterns
+
+### Nullable Fields
+
+All optional fields use the `["string", "null"]` pattern for flexibility:
 
 ```json
 "docsUrl": {
   "type": ["string", "null"],
-  "format": "uri",
-  "pattern": "^https://",
-  "description": "Documentation URL (null if not available)"
+  "format": "uri"
 }
 ```
 
-### 2. Pricing Field Format
-
-**Issue**: Inconsistent pricing format
-
-| Schema | Format | Example |
-|--------|--------|---------|
-| base-product | Array of objects | `[{name, value, currency, per, category}]` |
-| models | String | `"$0.002/1K tokens"` |
-| providers | Not included | N/A |
-
-**Recommendation**:
-- For **models**: Change to structured format or add a separate `pricingDetails` object
-- Consider adding `pricingUrl` field to point to detailed pricing pages
-
-**Proposed structure for models**:
-```json
-"pricing": {
-  "type": "object",
-  "properties": {
-    "input": {
-      "type": ["string", "null"],
-      "description": "Input token pricing (e.g., '$0.002/1K tokens')"
-    },
-    "output": {
-      "type": ["string", "null"],
-      "description": "Output token pricing (e.g., '$0.006/1K tokens')"
-    },
-    "display": {
-      "type": ["string", "null"],
-      "description": "Human-readable pricing summary"
-    }
-  }
+```typescript
+export interface ManifestVendorEntity extends ManifestEntity {
+  docsUrl: string | null
 }
 ```
 
-### 3. GitHub Integration
+### Localized Fields
 
-**Issue**: GitHub-related fields are inconsistent
-
-| Schema | githubStars | githubUrl | Approach |
-|--------|------------|-----------|----------|
-| base-product | ✓ (nullable) | Via communityUrls | Indirect |
-| models | ✗ Missing | ✗ Missing | None |
-| providers | ✗ Missing | Via communityUrls | Indirect |
-| vendors | ✗ Missing | Via communityUrls | Indirect |
-
-**Recommendation**:
-- Add `githubStars` field (nullable) to **all schemas**
-- Keep direct `githubUrl` in MCPs (makes sense for open source projects)
-- Use `communityUrls.github` for others
-
-### 4. Community URLs
-
-**Issue**: Not consistently included
-
-| Schema | Has communityUrls |
-|--------|------------------|
-| base-product | ✓ |
-| models | ✗ |
-| providers | ✓ |
-| vendors | ✓ |
-
-**Recommendation**:
-- Add `communityUrls` to **models** schema
-- Make it a standard field in `entity.schema.json` (but keep as additionalProperties: true)
-
-### 5. Platform/Page URLs Naming
-
-**Issue**: Inconsistent naming conventions
-
-| Schema | Field Name | Purpose |
-|--------|-----------|---------|
-| base-product | `resourceUrls` | Internal product pages (download, changelog, pricing, etc.) |
-| models | `platformUrls` | Third-party platform pages (Claude.ai, ChatGPT, etc.) |
-| providers | `platformUrls` | Third-party platform pages |
-
-**Recommendation**:
-- Keep both as separate concepts:
-  - `resourceUrls` - Official pages (download, changelog, pricing, blog, mcp, issue)
-  - `platformUrls` - Third-party platforms where product is available
-- Consider renaming `platformUrls` → `availableOn` for clarity
-- Add `resourceUrls` to models/providers if they have relevant pages
-
-### 6. Vendor Reference
-
-**Issue**: Vendor linking is inconsistent
-
-| Schema | Vendor Field | Format |
-|--------|-------------|--------|
-| base-product | `vendor` | String (name) |
-| models | `vendor` | String (name) |
-| providers | `vendor` | String (ID reference) |
-
-**Recommendation**:
-- Standardize on **both fields**:
-  - `vendor` - Display name (string)
-  - `vendor` - Reference ID (for data relations)
-- Update all schemas to include both
-- Make `vendor` required where vendor relationship is important
-
-### 7. License Information
-
-**Issue**: License field missing in several schemas
-
-| Schema | Has License |
-|--------|------------|
-| base-product | ✓ |
-| models | ✗ |
-| providers | ✗ |
-| vendors | ✗ |
-
-**Recommendation**:
-- Add `license` field to **models** (some are open-source)
-- Optional for providers and vendors
-
-### 8. Version Tracking
-
-**Issue**: Version field naming inconsistent
-
-| Schema | Field Name | Type |
-|--------|-----------|------|
-| base-product | `latestVersion` | `["string", "null"]` |
-| models | Missing | N/A |
-
-**Recommendation**:
-- Add `latestVersion` to models (some have version numbers like GPT-4)
-- Consider adding `releaseDate` field for version tracking
-
-## Implementation Priority
-
-### High Priority (Breaking Inconsistencies)
-
-1. ✅ Create `entity.schema.json`
-2. 🔴 Standardize `docsUrl` as nullable across all schemas
-3. 🔴 Add `vendor` to all schemas that reference vendors
-4. 🔴 Restructure models `pricing` field
-
-### Medium Priority (Missing Features)
-
-6. 🟡 Add `githubStars` to models and providers
-
-### Low Priority (Nice to Have)
-
-8. 🟢 Add `latestVersion` to models
-9. 🟢 Rename `platformUrls` for clarity
-10. 🟢 Add `releaseDate` field for version tracking
-
-## Proposed Updated Schemas
-
-### Models Schema Update
+Use the `translations` object for i18n support:
 
 ```json
-{
-  "properties": {
-    "id": "...",
-    "name": "...",
-    "vendor": "...",
-    "vendor": {
-      "type": "string",
-      "description": "Reference to vendor ID in vendors.json"
-    },
-    "license": {
-      "type": ["string", "null"],
-      "description": "License (e.g., 'MIT', 'Apache-2.0', 'Proprietary')"
-    },
-    "size": "...",
-    "contextWindow": "...",
-    "maxOutput": "...",
-    "pricing": {
-      "type": "object",
-      "properties": {
-        "input": {"type": ["string", "null"]},
-        "output": {"type": ["string", "null"]},
-        "display": {"type": ["string", "null"]}
-      }
-    },
-    "websiteUrl": "...",
-    "docsUrl": {
-      "type": ["string", "null"],
-      "format": "uri"
-    },
-    "githubStars": {
-      "type": ["number", "null"],
-      "minimum": 0
-    },
-    "latestVersion": {
-      "type": ["string", "null"]
-    },
-    "platformUrls": "...",
-    "communityUrls": {
-      "$ref": "./ref/community-urls.schema.json"
-    }
-  }
+"translations": {
+  "en": { "name": "Cursor" },
+  "zh-Hans": { "name": "Cursor 编辑器" }
 }
 ```
 
-### Providers Schema Update
+### Platform Lists
+
+Use arrays for platform-specific data:
 
 ```json
-{
-  "properties": {
-    "id": "...",
-    "name": "...",
-    "vendor": {
-      "type": "string",
-      "description": "Vendor display name"
-    },
-    "vendor": "...",
-    "docsUrl": {
-      "type": ["string", "null"],
-      "format": "uri"
-    },
-    "githubStars": {
-      "type": ["number", "null"],
-      "minimum": 0
-    },
-    "communityUrls": "..."
-  }
-}
+"platforms": [
+  { "os": "macOS", "installPath": "cursor" },
+  { "os": "Windows", "installPath": "cursor.exe" }
+]
 ```
 
-### MCPs Schema Update
+---
 
-```json
-{
-  "properties": {
-    "id": "...",
-    "name": "...",
-    "vendor": "...",
-    "vendor": {
-      "type": ["string", "null"],
-      "description": "Reference to vendor ID in vendors.json (if applicable)"
-    },
-    "license": {
-      "type": ["string", "null"],
-      "description": "License identifier"
-    },
-    "communityUrls": {
-      "$ref": "./ref/community-urls.schema.json"
-    },
-    "docsUrl": "...",
-    "githubUrl": "...",
-    "githubStars": "..."
-  }
-}
+## Migration Notes
+
+When updating schemas:
+
+1. ✅ **Always update corresponding TypeScript type in `src/types/manifests.ts`**
+2. ✅ **Use nullable types `null` for optional fields**
+3. ✅ **Add index signatures for extensibility**
+4. ✅ **Run validation tests after changes**
+5. ✅ **Update this document if the hierarchy changes**
+
+---
+
+## Validation Commands
+
+```bash
+# Validate all manifests against schemas
+npm run test:validate-manifests
+
+# Check TypeScript types
+npx tsc --noEmit
+
+# Lint manifest JSON files
+npm run lint:manifests
 ```
 
-## Migration Strategy
+---
 
-1. **Phase 1**: Create entity.schema.json ✅
-2. **Phase 2**: Update existing data files to match new schemas
-3. **Phase 3**: Update validation scripts
-4. **Phase 4**: Update UI components to handle new fields
-5. **Phase 5**: Deprecate old field formats with warnings
-
-## Testing Checklist
-
-- [ ] Validate all existing JSON files against updated schemas
-- [ ] Test backward compatibility with existing data
-- [ ] Update TypeScript types
-- [ ] Update documentation
-- [ ] Test UI rendering with new fields
-- [ ] Run full validation suite
-
-## Notes
-
-- All changes should maintain backward compatibility where possible
-- Use nullable types (`["string", "null"]`) for optional fields
-- Document migration path for breaking changes
-- Consider versioning schemas if breaking changes are necessary
-
+**Status**: All schemas and types are fully aligned ✅
+**Last Verified**: January 6, 2026

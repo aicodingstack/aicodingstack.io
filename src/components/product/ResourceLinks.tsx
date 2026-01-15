@@ -21,7 +21,8 @@ export function ResourceLinks({
   layout = 'vertical',
   gridCols = 'grid-cols-2 md:grid-cols-4 lg:grid-cols-7',
 }: ResourceLinksProps) {
-  const t = useTranslations('components')
+  const tComponent = useTranslations('components.product.resourceLinks')
+  const tShared = useTranslations('shared')
 
   if (!resourceUrls) {
     return null
@@ -30,30 +31,30 @@ export function ResourceLinks({
   const links = [
     {
       key: 'download',
-      title: t('resourceLinks.download'),
-      description: t('resourceLinks.downloadDescription'),
+      title: tShared('actions.download'),
+      description: tComponent('downloadDescription'),
     },
     {
       key: 'changelog',
-      title: t('resourceLinks.changelog'),
-      description: t('resourceLinks.changelogDescription'),
+      title: tComponent('changelog'),
+      description: tComponent('changelogDescription'),
     },
     {
       key: 'pricing',
-      title: t('resourceLinks.pricing'),
-      description: t('resourceLinks.pricingDescription'),
+      title: tShared('terms.pricing'),
+      description: tComponent('pricingDescription'),
     },
-    { key: 'mcp', title: t('resourceLinks.mcp'), description: t('resourceLinks.mcpDescription') },
+    { key: 'mcp', title: tComponent('mcp'), description: tComponent('mcpDescription') },
     {
       key: 'issue',
-      title: t('resourceLinks.issue'),
-      description: t('resourceLinks.issueDescription'),
+      title: tComponent('issue'),
+      description: tComponent('issueDescription'),
     },
-  ]
+  ] as const
 
   return (
     <LinkCardGrid
-      title={t('resources.resources')}
+      title={tShared('terms.resources')}
       links={links}
       urls={resourceUrls}
       layout={layout}
