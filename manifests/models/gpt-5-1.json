@@ -38,27 +38,30 @@
       "description": "GPT-5 系列的最新前沿級模型，提供更強的通用推理能力、改進的指令遵循和更自然的對話風格。使用自適應推理動態分配計算，對簡單查詢快速響應，同時對複雜任務進行更深入的思考。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://openai.com",
   "docsUrl": "https://platform.openai.com/docs/models/gpt-5.1",
   "vendor": "OpenAI",
   "size": "Unknown",
-  "contextWindow": 128000,
-  "maxOutput": 16000,
+  "contextWindow": 400000,
+  "maxOutput": 128000,
   "tokenPricing": {
     "input": 1.25,
-    "output": 1.25,
-    "cache": null
+    "output": 10,
+    "cache": 0.125
   },
-  "releaseDate": null,
-  "inputModalities": ["text"],
+  "releaseDate": "2025-11-13",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2024-09-30",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
-    "sweBench": 66.0,
+    "sweBench": 66,
     "terminalBench": 0.476,
     "sciCode": null,
     "liveCodeBench": null,
-    "mmmu": 76.0,
+    "mmmu": 76,
     "mmmuPro": null,
     "webDevArena": null
   },

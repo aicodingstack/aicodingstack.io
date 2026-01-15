@@ -17,35 +17,40 @@
     "visit": "Kunjungi {name}",
     "watch": "Tonton di {platform}"
   },
-  "common": {
+  "terms": {
+    "aiCoding": "Coding AI",
     "aiCodingStack": "AI Coding Stack",
-    "articles": "Artikel",
-    "collections": "Koleksi",
-    "community": "Komunitas",
-    "communityLinks": "Tautan Komunitas",
-    "comparison": "Perbandingan",
-    "curatedCollections": "Koleksi Kurasi",
-    "docs": "Dokumen",
-    "documentation": "Dokumentasi",
-    "ecosystemTools": "Alat Ekosistem",
+    "articles": "Articles",
+    "collections": "Collections",
+    "community": "Community",
+    "communityLinks": "Community Links",
+    "comparison": "Comparison",
+    "curatedCollections": "Curated Collections",
+    "docs": "Docs",
+    "documentation": "Documentation",
+    "ecosystemTools": "Ecosystem Tools",
     "faq": "FAQ",
-    "featuredArticles": "Artikel Unggulan",
-    "followUs": "Ikuti kami",
-    "indexLabel": "INDEKS",
-    "license": "Lisensi",
+    "featuredArticles": "Featured Articles",
+    "followUs": "Follow us",
+    "indexLabel": "INDEX",
+    "license": "License",
     "manifesto": "Manifesto",
-    "maxOutput": "Output Maksimum",
-    "modelSize": "Ukuran Model",
+    "maxOutput": "Max Output",
+    "modelSize": "Model Size",
     "openSource": "Open Source",
-    "pricing": "Harga",
-    "products": "Produk",
+    "pricing": "Pricing",
+    "products": "Products",
     "proprietary": "Proprietary",
-    "resources": "Sumber Daya",
-    "slogan": "Temukan. Bandingkan. Bangun 10x Lebih Cepat.",
-    "specificationsProtocols": "Spesifikasi & Protokol",
-    "stars": "Bintang",
-    "type": "Tipe",
-    "website": "Website"
+    "resources": "Resources",
+    "slogan": "Discover. Compare. Build 10x Faster.",
+    "specificationsProtocols": "Specifications & Protocols",
+    "stars": "Stars",
+    "type": "Type",
+    "version": "Versi",
+    "visitWebsite": "Kunjungi situs web",
+    "website": "Website",
+    "platforms": "Platform",
+    "supportedIdes": "IDE yang Didukung"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -58,26 +63,66 @@
     "twitter": "X (Twitter)",
     "youtube": "YouTube"
   },
-  "stack": {
-    "cli": "CLI",
-    "extension": "Ekstensi",
-    "ide": "IDE",
-    "model": "Model",
-    "modelProvider": "Penyedia Model",
-    "vendor": "Penyedia"
+  "categories": {
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "provider": "Provider",
+      "vendor": "Vendor"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "providers": "Providers",
+      "vendors": "Vendors"
+    },
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    }
   },
-  "stacks": {
-    "allClis": "Semua CLI",
-    "allExtensions": "Semua Ekstensi",
-    "allIdes": "Semua IDE",
-    "allModelProviders": "Semua Penyedia Model",
-    "allModels": "Semua Model",
-    "allVendors": "Semua Penyedia",
-    "clis": "CLI",
-    "extensions": "Ekstensi",
-    "ides": "IDE",
-    "modelProviders": "Penyedia Model",
-    "models": "Model",
-    "vendors": "Penyedia"
+  "labels": {
+    "cache": "Cache",
+    "findOnAiPlatforms": "Temukan di Platform AI",
+    "getApiKey": "Dapatkan Kunci API",
+    "input": "Input",
+    "output": "Output",
+    "specifications": "Spesifikasi",
+    "quickLinks": "Tautan Cepat",
+    "totalContext": "Total Context",
+    "searchByName": "Search by name..."
+  },
+  "providerTypes": {
+    "foundation-model-provider": "Penyedia Model Dasar",
+    "model-service-provider": "Penyedia Layanan Model"
+  },
+  "lifecycle": {
+    "latest": "Terbaru",
+    "maintained": "Dipertahankan",
+    "deprecated": "Usang"
+  },
+  "benchmarks": {
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "webDevArena": "WebDev Arena",
+    "liveCodeBench": "LiveCodeBench"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
   }
 }

@@ -2,58 +2,47 @@
   "clis": {
     "backTo": "CLI로 돌아가기",
     "subtitle": "AI 기반 명령줄 코딩 어시스턴트",
-    "title": "@:shared.stacks.clis"
+    "title": "AI 코딩 CLI 비교"
   },
   "columns": {
+    "name": "Name",
     "cache": "캐시",
     "capabilities": "기능",
     "contextLength": "컨텍스트 길이",
     "freePlan": "무료 플랜",
-    "githubStars": "스타",
     "input": "입력",
     "inputModalities": "입력 모달리티",
-    "license": "라이선스",
     "links": "링크",
     "live-code-bench": "Live Code Bench",
-    "maxOutput": "최대 출력",
     "maxPrice": "최대 가격",
     "mmmu": "MMMU",
     "mmmu-pro": "MMMU Pro",
-    "modelSize": "모델 크기",
     "output": "출력",
-    "platforms": "플랫폼",
-    "pricing": "가격",
     "pricingCache": "캐시 가격",
     "pricingInput": "입력 가격",
     "pricingOutput": "출력 가격",
     "sci-code": "SciCode",
     "startingPrice": "시작 가격",
-    "supportedIdes": "@:components.productHero.supportedIdes",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "vendor": "벤더",
-    "version": "버전",
     "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "확장 프로그램으로 돌아가기",
     "subtitle": "AI 기반 코딩 확장 프로그램 및 플러그인",
-    "title": "확장 프로그램 비교"
+    "title": "AI 코딩 확장 비교"
   },
   "ides": {
     "backTo": "IDE로 돌아가기",
     "subtitle": "AI 강화 통합 개발 환경",
-    "title": "@:shared.stacks.ides"
+    "title": "AI 코딩 IDE 비교"
   },
-  "linkTitles": {
-    "documentation": "문서",
-    "download": "다운로드",
-    "officialWebsite": "공식 웹사이트"
-  },
+  "modelCompareDescription": "AI 코딩 모델을 나란히 비교: 사양, 가격, 기능, 벤치마크.",
+  "modelCompareTitle": "AI 코딩 모델 비교: {model1} vs {model2}",
   "models": {
     "backTo": "모델로 돌아가기",
     "subtitle": "AI 코딩 모델의 사양과 가격을 나란히 비교하세요.",
-    "title": "모델 비교"
+    "title": "AI 코딩 모델 비교"
   },
   "pricingValues": {
     "free": "무료",

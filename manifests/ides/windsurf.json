@@ -8,7 +8,7 @@
       "description": "AI 原生 IDE，具有智能助手 Cascade，可自主生成、编辑、测试和部署代码。集成 MCP 服务器和插件钩子，让开发者保持心流状态。"
     },
     "de": {
-      "description": "Eine KI-native IDE mit dem \"Cascade\"-Assistenten, der autonom Code generiert, bearbeitet, testet und bereitstellt. Integriert MCP-Server und Plugin-Hooks für den Entwickler-Flow."
+      "description": "Eine AI-native IDE mit dem \"Cascade\"-Assistenten, der autonom Code generiert, bearbeitet, testet und bereitstellt. Integriert MCP-Server und Plugin-Hooks für den Entwickler-Flow."
     },
     "ko": {
       "description": "코드를 자율적으로 생성, 편집, 테스트 및 배포하는 스마트 어시스턴트 Cascade를 갖춘 AI 네이티브 IDE입니다. MCP 서버와 플러그인 후크를 통합하여 개발자의 흐름 상태를 유지합니다."

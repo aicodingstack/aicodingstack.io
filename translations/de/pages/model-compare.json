@@ -1,0 +1,14 @@
+{
+  "addModel": "+ Modell hinzufügen",
+  "basicInfo": "Grundinformationen",
+  "cachePrice": "Cache-Preis",
+  "compareTitle": "{model1} vs {model2} vergleichen",
+  "contextWindow": "Kontextfenster",
+  "description": "Beschreibung",
+  "inputPrice": "Eingabepreis",
+  "knowledgeCutoff": "Wissensgrenze",
+  "lifecycle": "Lebenszyklus",
+  "outputPrice": "Ausgabepreis",
+  "releaseDate": "Veröffentlichungsdatum",
+  "verified": "Verifiziert"
+}

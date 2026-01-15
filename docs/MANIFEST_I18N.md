@@ -1,185 +1,334 @@
-# Manifest i18n Guide
+# Manifest Internationalization (i18n)
 
-This document describes how to add multi-language support for manifest files.
+**Last Updated:** January 6, 2026
+
+---
 
 ## Overview
 
-We use **Solution 4 (Hybrid Approach)**: Add an `i18n` field to each manifest entry to store translations.
+The AI Coding Stack has **two separate internationalization systems** that share the same locale configuration:
 
-## Structure
+1. **UI Translation System** - Translates static UI strings using `next-intl`
+2. **Manifest Translation System** - Translates manifest data (using the same locales)
 
-```json
-{
-  "id": "example",
-  "name": "Example Tool",
-  "description": "This is an example tool for demonstration.",
-  // ... other fields ...
-  "i18n": {
-    "zh-Hans": {
-      "description": "这是一个用于演示的示例工具。"
-    }
-  }
-}
-```
+---
 
-## Supported Languages
+## System 1: UI Translation System (next-intl)
 
-Currently supported languages (defined in `src/i18n/config.ts`):
-- `en` (English) - Default language
-- `zh-Hans` (Simplified Chinese)
+### Supported Locales
 
-## Translatable Fields
+| Locale | Code | Status |
+|--------|------|--------|
+| English | `en` | ✅ Default |
+| German | `de` | ✅ Full |
+| Spanish | `es` | ✅ Full |
+| French | `fr` | ✅ Full |
+| Indonesian | `id` | ✅ Full |
+| Japanese | `ja` | ✅ Full |
+| Korean | `ko` | ✅ Full |
+| Portuguese | `pt` | ✅ Full |
+| Russian | `ru` | ✅ Full |
+| Turkish | `tr` | ✅ Full |
+| Simplified Chinese | `zh-Hans` | ✅ Full |
+| Traditional Chinese | `zh-Hant` | ✅ Full |
 
-Currently supports translating the following fields:
-- `description` - Tool description
+### Configuration
 
-Future extensions can include:
-- `name` - Tool name (if localized names are needed)
-- Other custom fields
-
-## Steps to Add Translations
-
-### 1. Add Translation in Manifest File
-
-Edit the corresponding manifest file (e.g., `manifests/terminals.json`):
-
-```json
-{
-  "id": "warp",
-  "name": "Warp",
-  "description": "Warp is a modern Rust-based terminal emulator with AI-powered features.",
-  "i18n": {
-    "zh-Hans": {
-      "description": "Warp 是一款基于 Rust 的现代终端模拟器，具有 AI 驱动的功能。"
-    }
-  }
-}
-```
-
-### 2. Use Translations in Code
-
-We provide utility functions in `src/lib/manifest-i18n.ts` to handle translations:
+**File:** `src/i18n/config.ts`
 
 ```typescript
-import { localizeManifestItem } from '@/lib/manifest-i18n';
-import type { Locale } from '@/i18n/config';
-import terminals from '@/../../manifests/terminals.json';
+export const defaultLocale = 'en'
+export const locales = ['en', 'de', 'es', 'fr', 'id', 'ja', 'ko', 'pt', 'ru', 'tr', 'zh-Hans', 'zh-Hant']
+```
 
-// In a page component
-export default async function TerminalPage({ params }) {
-  const { locale, slug } = await params;
-  const terminalRaw = terminals.find((t) => t.id === slug);
+### Translation Files
 
-  // Apply localization
-  const terminal = localizeManifestItem(terminalRaw, locale as Locale);
+**Directory:** `translations/{locale}/`
 
-  // Now terminal.description will automatically return the appropriate translation
-  // If locale is 'zh-Hans', returns Chinese; if 'en' or no translation, returns English
+```
+translations/
+├── en/                    # English (default)
+│   ├── components.json    # Component translations
+│   ├── pages/             # Page-specific translations
+│   │   ├── home.json
+│   │   ├── articles.json
+│   │   ├── comparison.json
+│   │   └── ...
+│   ├── shared.json        # Shared translations
+│   └── index.ts           # Entry point
+├── zh-Hans/               # Simplified Chinese
+└── ... (other locales)
+```
+
+### Usage in Components
+
+```typescript
+import { useTranslations } from 'next-intl'
+
+export default function MyComponent() {
+  const tComponent = useTranslations('shared')
+  return <h1>{tComponent('welcome')}</h1>
 }
 ```
 
-### 3. Batch Process Multiple Entries
-
-For list pages, use `localizeManifestItems`:
+### Usage in Server Components
 
 ```typescript
-import { localizeManifestItems } from '@/lib/manifest-i18n';
+import { getTranslations } from 'next-intl/server'
 
-const localizedTerminals = localizeManifestItems(terminals, locale);
+export default async function Page() {
+  const tPage = await getTranslations('home')
+  return <h1>{t('title')}</h1>
+}
 ```
 
-## API Reference
+### Navigation
 
-### `localizeManifestItem<T>(item: T, locale: Locale, fields?: (keyof T)[]): T`
+**File:** `src/i18n/navigation.ts`
 
-Applies localization to a single manifest entry.
+The `Link` component provides localized routing:
 
-**Parameters:**
-- `item` - Manifest entry object
-- `locale` - Target language ('en' or 'zh-Hans')
-- `fields` - List of fields to translate (optional, defaults to `['description']`)
+```typescript
+import { Link } from '@/i18n/navigation'
 
-**Returns:** A new object with translations applied
+// Automatically prepends the locale to the URL
+<Link href="/ides">IDEs</Link>  // → /en/ides or /zh-Hans/ides
+```
 
-### `localizeManifestItems<T>(items: T[], locale: Locale, fields?: (keyof T)[]): T[]`
+---
 
-Applies localization to an array of manifest entries.
+## System 2: Manifest Translation System
 
-**Parameters:**
-- `items` - Array of manifest entries
-- `locale` - Target language
-- `fields` - List of fields to translate (optional)
+### Purpose
 
-**Returns:** A new array with translations applied
+Translates manifest data (IDEs, CLIs, models, etc.) using the same **12 locales** as the UI system:
 
-### `getLocalizedField<T>(item: T, field: keyof T, locale: Locale): string`
+| Locale | Code | Status |
+|--------|------|--------|
+| English | `en` | ✅ Default (no translation needed) |
+| German | `de` | ✅ Supported via translations field |
+| Spanish | `es` | ✅ Supported via translations field |
+| French | `fr` | ✅ Supported via translations field |
+| Indonesian | `id` | ✅ Supported via translations field |
+| Japanese | `ja` | ✅ Supported via translations field |
+| Korean | `ko` | ✅ Supported via translations field |
+| Portuguese | `pt` | ✅ Supported via translations field |
+| Russian | `ru` | ✅ Supported via translations field |
+| Turkish | `tr` | ✅ Supported via translations field |
+| Simplified Chinese | `zh-Hans` | ✅ Supported via translations field |
+| Traditional Chinese | `zh-Hant` | ✅ Supported via translations field |
 
-Gets the localized value of a single field.
+### Core Module: `src/lib/manifest-i18n.ts`
 
-**Parameters:**
-- `item` - Manifest entry object
-- `field` - Field name
-- `locale` - Target language
+```typescript
+function localizeManifestItem<T>(
+  item: T,
+  locale: Locale,  // Any of the 18 supported locales
+  fields: (keyof T)[] = ['description']
+): T
 
-**Returns:** Localized field value (returns original value if no translation exists)
+function localizeManifestItems<T>(
+  items: T[],
+  locale: Locale,
+  fields?: (keyof T)[]
+): T[]
+```
 
-## Examples
+### Translation Structure
 
-### terminals.json Example
+Manifest items support translations through:
 
-```json
-[
-  {
-    "id": "iterm2",
-    "name": "iTerm2",
-    "vendor": "George Nachman",
-    "description": "iTerm2 is a terminal emulator for macOS.",
-    "i18n": {
-      "zh-Hans": {
-        "description": "iTerm2 是一款 macOS 终端模拟器。"
-      }
+```jsonc
+{
+  "id": "cursor",
+  "name": "Cursor",
+  "description": "An AI-powered code editor",
+  "translations": {
+    "zh-Hans": {
+      "name": "Cursor",
+      "description": "一款 AI 驱动的代码编辑器"
+    },
+    "de": {
+      "name": "Cursor",
+      "description": "Ein AI-gesteuerter Code-Editor"
+    },
+    "ko": {
+      "name": "Cursor",
+      "description": "AI 기반 코드 에디터"
     }
   }
-]
+}
 ```
 
-### providers.json Example
+### Usage Example
 
-```json
-[
-  {
-    "id": "deepseek",
-    "name": "DeepSeek",
-    "description": "A leading AI research company focused on developing advanced language models.",
-    "i18n": {
-      "zh-Hans": {
-        "description": "领先的 AI 研究公司，专注于开发先进的语言模型。"
-      }
+```typescript
+import { localizeManifestItems } from '@/lib/manifest-i18n'
+import { ides } from '@/lib/generated/ides'
+import type { Locale } from '@/i18n/config'
+
+export default function IDEList({ locale }: { locale: Locale }) {
+  const translatedIDEs = localizeManifestItems(ides, locale, ['description'])
+
+  return (
+    <ul>
+      {translatedIDEs.map(ide => (
+        <li key={ide.id}>{ide.description}</li>
+      ))}
+    </ul>
+  )
+}
+```
+
+---
+
+## Architecture Diagram
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    I18N SYSTEMS                                 │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                │
+│  Shared Locale Configuration:                                  │
+│  12 locales (en, de, es, fr, id, ja, ko, pt, ru, tr,         │
+│               zh-Hans, zh-Hant)                                │
+│                                                                │
+│  UI TRANSLATIONS (next-intl)                                    │
+│  ├── Uses: translations/{locale}/*.json                        │
+│  └── Used for: static UI strings                               │
+│                                                                │
+│  MANIFEST TRANSLATIONS (manifest-i18n.ts)                       │
+│  ├── Uses: item.translations field                             │
+│  └── Used for: manifest data (names, descriptions)             │
+│                                                                │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Translation Coverage
+
+### UI Content ✅
+
+All 12 locales have full UI translation coverage.
+
+### Manifest Data ⚠️
+
+The translation infrastructure is fully implemented, but actual translations need to be added to individual manifest files. Coverage varies by manifest type.
+
+### Adding Manifest Translations
+
+Include translations for all supported locales in manifest files:
+
+```jsonc
+{
+  "id": "my-tool",
+  "name": "My Tool",
+  "description": "A great development tool",
+  "translations": {
+    "zh-Hans": {
+      "name": "我的工具",
+      "description": "一个很棒的开发工具"
+    },
+    "zh-Hant": {
+      "name": "我的工具",
+      "description": "一個很棒的開發工具"
+    },
+    "de": {
+      "name": "Mein Werkzeug",
+      "description": "Ein großartiges Entwicklungswerkzeug"
+    },
+    "es": {
+      "name": "Mi Herramienta",
+      "description": "Una gran herramienta de desarrollo"
+    },
+    "fr": {
+      "name": "Mon Outil",
+      "description": "Un excellent outil de développement"
+    },
+    "id": {
+      "name": "Alat Saya",
+      "description": "Alat pengembangan yang hebat"
+    },
+    "ja": {
+      "name": "私のツール",
+      "description": "素晴らしい開発ツール"
+    },
+    "ko": {
+      "name": "내 도구",
+      "description": "훌륭한 개발 도구"
+    },
+    "pt": {
+      "name": "Minha Ferramenta",
+      "description": "Uma ótima ferramenta de desenvolvimento"
+    },
+    "ru": {
+      "name": "Мой инструмент",
+      "description": "Отличный инструмент для разработки"
+    },
+    "tr": {
+      "name": "Araçım",
+      "description": "Harika bir geliştirme aracı"
     }
   }
-]
+}
 ```
+
+---
+
+## Key Files
+
+| File | Purpose |
+|------|---------|
+| `src/i18n/config.ts` | Locale configuration |
+| `src/i18n/navigation.ts` | Localized Link component |
+| `src/i18n/lib-core.ts` | Reference resolution |
+| `src/i18n/request.ts` | Request config for next-intl |
+| `src/lib/manifest-i18n.ts` | Manifest translation layer |
+| `translations/{locale}/` | UI translation files |
+
+---
 
 ## Best Practices
 
-1. **Maintain Consistency** - Ensure all entries of the same type have translations for the same languages
-2. **Accurate Translation** - Translations should accurately convey the original meaning, avoid over-interpretation
-3. **Be Concise** - Descriptions should be brief and easy to understand
-4. **Validate JSON** - Ensure JSON format is correct after adding translations
-5. **Progressive Addition** - Start by adding translations for important entries, then gradually complete others
+### 1. Always Use Localized Link
 
-## Contributing Translations
+```typescript
+// ✅ Correct
+import { Link } from '@/i18n/navigation'
 
-We welcome contributors to add translations to manifests!
+// ❌ Incorrect
+import Link from 'next/link'
+```
 
-1. Fork this project
-2. Add `i18n` fields to manifest files
-3. Submit a PR describing your translations
-4. Wait for review and merge
+### 2. Use Translation Keys, Don't Hardcode
 
-## Future Extensions
+```typescript
+// ✅ Correct
+const tShared = useTranslations('shared')
+return <button>{tShared('submit')}</button>
 
-- Support for more languages (Japanese, Korean, etc.)
-- Support for more translatable fields
-- Automatic detection of missing translations
-- Translation quality check tools
+// ❌ Incorrect
+return <button>Submit</button>
+```
+
+### 3. Manifest Translation Fields
+
+Default translated field is `description`. Other fields can be translated:
+
+```typescript
+localizeManifestItem(item, locale, ['name', 'description'])
+```
+
+---
+
+## Related Documentation
+
+- `specs.md` - Project specifications
+- `COMPONENT-RELATIONSHIP-DIAGRAM.md` - Architecture overview
+- `SCHEMA-ARCHITECTURE.md` - Schema system details
+
+---
+
+**Version:** 2.0
+**Last Updated:** January 6, 2026

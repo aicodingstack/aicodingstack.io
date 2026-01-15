@@ -1,0 +1,27 @@
+{
+  "description": "Discover and explore open source AI coding tools ranked by GitHub stars. Compare IDEs, CLIs, and extensions to find the perfect tools for your development workflow.",
+  "filter": {
+    "all": "All"
+  },
+  "meta": {
+    "description": "Ranking of all open source projects in AI Coding Stack, sorted by GitHub stars. View statistics and trends of open source vs proprietary tools.",
+    "title": "Open Source Projects Ranking"
+  },
+  "noResults": "No open source projects found for this category.",
+  "note": "Note: This page only shows projects with GitHub repositories. Some projects, while not open source, maintain GitHub repositories as user feedback channels.",
+  "statistics": {
+    "closedSourceCount": "Tescilli Projeler",
+    "closedSourcePercentage": "Proprietary Percentage",
+    "licenseBreakdown": "License Distribution",
+    "openSourceCount": "Açık Kaynak Projeler",
+    "projects": "projects",
+    "title": "Open Source vs Proprietary Distribution",
+    "totalProjects": "Total Projects"
+  },
+  "table": {
+    "openSourceTitle": "Açık Kaynak Projeler ({count})",
+    "proprietaryTitle": "Tescilli Projeler ({count})",
+    "rank": "Rank"
+  },
+  "title": "Open Source Projects Ranking"
+}

@@ -17,7 +17,8 @@ export default function SearchInput({
   placeholder,
   onSearch,
 }: SearchInputProps) {
-  const t = useTranslations()
+  const tShared = useTranslations('shared')
+  const tComponent = useTranslations('components.controls.searchInput')
   const router = useRouter()
   const [query, setQuery] = useState(initialQuery)
   const [suggestions, setSuggestions] = useState<SearchResult[]>([])
@@ -28,7 +29,7 @@ export default function SearchInput({
   const debounceTimerRef = useRef<NodeJS.Timeout | null>(null)
   const hasUserInteracted = useRef(false)
 
-  const placeholderText = placeholder || t('components.header.searchPlaceholder')
+  const placeholderText = placeholder || tComponent('placeholder')
 
   // Debounce search suggestions
   useEffect(() => {
@@ -190,8 +191,8 @@ export default function SearchInput({
                 </div>
                 <div className="flex-shrink-0">
                   <span className="inline-block px-2 py-0.5 text-xs border border-[var(--color-border)] text-[var(--color-text-muted)]">
-                    {t(
-                      `shared.stacks.${result.category === 'providers' ? 'modelProviders' : result.category}`
+                    {tShared(
+                      `categories.plural.${result.category === 'providers' ? 'modelProviders' : result.category}`
                     )}
                   </span>
                 </div>

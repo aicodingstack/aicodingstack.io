@@ -1,0 +1,27 @@
+{
+  "copyButton": {
+    "copied": "Copié !",
+    "copyToClipboard": "Copier dans le presse-papiers"
+  },
+  "filterSortBar": {
+    "clearFilters": "Effacer les filtres",
+    "license": "Licence :",
+    "platform": "Plateforme :",
+    "sort": "Trier :",
+    "sortDefault": "Par défaut",
+    "sortNameAsc": "Nom (A-Z)",
+    "sortNameDesc": "Nom (Z-A)"
+  },
+  "searchDialog": {
+    "placeholder": "Type to search...",
+    "empty": "Start typing to search...",
+    "noResultsFor": "No results for \"{query}\"",
+    "navigate": "to navigate",
+    "select": "to select",
+    "viewAllResults": "View all results for \"{query}\""
+  },
+  "searchInput": {
+    "placeholder": "@:components.controls.searchInput.placeholder",
+    "clear": "Clear search"
+  }
+}

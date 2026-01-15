@@ -1,0 +1,14 @@
+{
+  "addModel": "+ Adicionar modelo",
+  "basicInfo": "Informações básicas",
+  "cachePrice": "Preço de cache",
+  "compareTitle": "Comparar {model1} vs {model2}",
+  "contextWindow": "Janela de contexto",
+  "description": "Descrição",
+  "inputPrice": "Preço de entrada",
+  "knowledgeCutoff": "Conhecimento",
+  "lifecycle": "Ciclo de vida",
+  "outputPrice": "Preço de saída",
+  "releaseDate": "Data de lançamento",
+  "verified": "Verificado"
+}

@@ -37,8 +37,8 @@ export async function generateMetadata({
     return { title: 'IDE Not Found | AI Coding Stack' }
   }
 
-  const tGlobal = await getTranslations({ locale })
-  const licenseStr = ide.license ? translateLicenseText(ide.license, tGlobal) : ''
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
+  const licenseStr = ide.license ? translateLicenseText(ide.license, tShared) : ''
 
   return await generateSoftwareDetailMetadata({
     locale: locale as Locale,
@@ -68,8 +68,7 @@ export default async function IDEPage({
     notFound()
   }
 
-  const t = await getTranslations({ locale, namespace: 'pages.ideDetail' })
-  const tGlobal = await getTranslations({ locale })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Transform URLs for component props
   const websiteUrl = ide.websiteUrl || ide.resourceUrls?.download || undefined
@@ -88,7 +87,7 @@ export default async function IDEPage({
       version: ide.latestVersion,
       platforms: ide.platforms,
       pricing: ide.pricing,
-      license: ide.license ? translateLicenseText(ide.license, tGlobal) : undefined,
+      license: ide.license ? translateLicenseText(ide.license, tShared) : undefined,
     },
     category: 'ides',
     locale: locale as Locale,
@@ -99,8 +98,8 @@ export default async function IDEPage({
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tGlobal('shared.stacks.ides'), href: '/ides' },
+    { name: tShared('terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tShared('categories.plural.ides'), href: '/ides' },
     { name: ide.name, href: `ides/${ide.id}` },
   ]
 
@@ -114,7 +113,7 @@ export default async function IDEPage({
           description={ide.description}
           vendor={ide.vendor}
           category="IDE"
-          categoryLabel={t('categoryLabel')}
+          categoryLabel={tShared('categories.singular.ide')}
           verified={ide.verified ?? false}
           latestVersion={ide.latestVersion}
           license={ide.license}
@@ -135,7 +134,7 @@ export default async function IDEPage({
 
         <ProductCommands install={ide.installCommand} launch={ide.launchCommand} />
 
-        <BackToNavigation href="/ides" title={t('allIDEs')} />
+        <BackToNavigation href="/ides" title={tShared('categories.all.ides')} />
       </main>
     </PageLayout>
   )

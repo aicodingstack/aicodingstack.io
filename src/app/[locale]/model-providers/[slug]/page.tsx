@@ -57,8 +57,7 @@ export default async function ProviderPage({
     notFound()
   }
 
-  const t = await getTranslations({ locale, namespace: 'pages.modelProviderDetail' })
-  const tGlobal = await getTranslations({ locale })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Generate JSON-LD schema
   const schema = await generateVendorSchema({
@@ -67,13 +66,13 @@ export default async function ProviderPage({
       description: provider.description,
       websiteUrl: provider.websiteUrl || '',
     },
-    locale: locale as 'en' | 'zh-Hans' | 'de' | 'ko',
+    locale: locale as Locale,
   })
 
   // Breadcrumb items
   const breadcrumbItems = [
-    { name: tGlobal('shared.common.aiCodingStack'), href: '/ai-coding-stack' },
-    { name: tGlobal('shared.stacks.modelProviders'), href: '/model-providers' },
+    { name: tShared('terms.aiCodingStack'), href: '/ai-coding-stack' },
+    { name: tShared('categories.plural.modelProviders'), href: '/model-providers' },
     { name: provider.name, href: `model-providers/${provider.id}` },
   ]
 
@@ -86,28 +85,23 @@ export default async function ProviderPage({
           name={provider.name}
           description={provider.description}
           category="PROVIDER"
-          categoryLabel={t('categoryLabel')}
+          categoryLabel={tShared('categories.singular.modelProvider')}
           verified={provider.verified ?? false}
           type={provider.type}
-          typeValue={provider.type ? t(`providerTypes.${provider.type}`) : undefined}
+          typeValue={provider.type ? tShared(`providerTypes.${provider.type}`) : undefined}
           websiteUrl={provider.websiteUrl}
           docsUrl={provider.docsUrl ?? null}
           applyKeyUrl={provider.applyKeyUrl}
         />
 
-        <PlatformLinks
-          platformUrls={provider.platformUrls}
-          layout="horizontal"
-          gridCols="grid-cols-1 md:grid-cols-3"
-        />
+        <PlatformLinks platformUrls={provider.platformUrls} />
 
-        <CommunityLinks
-          communityUrls={provider.communityUrls}
-          layout="vertical"
-          gridCols="grid-cols-2 md:grid-cols-4"
-        />
+        <CommunityLinks communityUrls={provider.communityUrls} />
 
-        <BackToNavigation href="/model-providers" title={t('allModelProviders')} />
+        <BackToNavigation
+          href="/model-providers"
+          title={tShared('categories.all.modelProviders')}
+        />
       </main>
     </PageLayout>
   )

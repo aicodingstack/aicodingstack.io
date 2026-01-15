@@ -2,58 +2,47 @@
   "clis": {
     "backTo": "Kembali ke CLI",
     "subtitle": "Asisten pengkodean baris perintah AI",
-    "title": "@:shared.stacks.clis"
+    "title": "Perbandingan CLI Coding AI"
   },
   "columns": {
+    "name": "Name",
     "cache": "Cache",
     "capabilities": "Kapasitas",
     "contextLength": "Panjang Konteks",
     "freePlan": "Rencana Gratis",
-    "githubStars": "@:components.productHero.stars",
     "input": "Input",
     "inputModalities": "Modalitas Input",
-    "license": "@:components.productHero.license",
     "links": "Tautan",
     "live-code-bench": "Live Code Bench",
-    "maxOutput": "@:shared.common.maxOutput",
     "maxPrice": "Harga Maksimum",
     "mmmu": "MMMU",
     "mmmu-pro": "MMMU Pro",
-    "modelSize": "@:shared.common.modelSize",
     "output": "Output",
-    "platforms": "@:components.productHero.platforms",
-    "pricing": "@:shared.common.pricing",
     "pricingCache": "Harga Cache",
     "pricingInput": "Harga Input",
     "pricingOutput": "Harga Output",
     "sci-code": "SciCode",
     "startingPrice": "Harga Mulai",
-    "supportedIdes": "@:components.productHero.supportedIdes",
     "swe-bench": "SWE-bench",
     "terminal-bench": "Terminal Bench",
-    "vendor": "@:components.productHero.vendor",
-    "version": "@:components.productHero.version",
     "web-dev-arena": "WebDev Arena"
   },
   "extensions": {
     "backTo": "Kembali ke Ekstensi",
     "subtitle": "Ekstensi dan plugin pengkodean AI",
-    "title": "@:shared.stacks.extensions"
+    "title": "Perbandingan Ekstensi Coding AI"
   },
   "ides": {
     "backTo": "Kembali ke IDE",
     "subtitle": "Lingkungan pengembangan terintegrasi yang ditingkatkan dengan AI",
-    "title": "@:shared.stacks.ides"
+    "title": "Perbandingan IDE Coding AI"
   },
-  "linkTitles": {
-    "documentation": "@:components.productHero.documentation",
-    "download": "@:components.productHero.download",
-    "officialWebsite": "@:components.productHero.visitWebsite"
-  },
+  "modelCompareDescription": "Bandingkan model coding AI secara berdampingan: spesifikasi, harga, kapabilitas, dan benchmark.",
+  "modelCompareTitle": "Bandingkan Model Coding AI: {model1} vs {model2}",
   "models": {
     "backTo": "Kembali ke Model",
     "subtitle": "Model bahasa besar yang dioptimalkan untuk pembuatan dan analisis kode",
-    "title": "@:shared.stacks.models"
+    "title": "Perbandingan Model Coding AI"
   },
   "pricingValues": {
     "free": "Gratis",

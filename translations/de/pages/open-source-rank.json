@@ -1,0 +1,27 @@
+{
+  "description": "Entdecken und erkunden Sie Open-Source-AI-Coding-Tools, sortiert nach GitHub-Sternen. Vergleichen Sie IDEs, CLIs und Erweiterungen, um die perfekten Tools für Ihren Entwicklungsworkflow zu finden.",
+  "filter": {
+    "all": "Alle"
+  },
+  "meta": {
+    "description": "Ranking aller Open-Source-Projekte im AI Coding Stack, sortiert nach GitHub-Sternen. Sehen Sie Statistiken und Trends von Open-Source- gegenüber proprietären Tools.",
+    "title": "Open-Source-Projekt-Ranking"
+  },
+  "noResults": "Keine Open-Source-Projekte für diese Kategorie gefunden.",
+  "note": "Hinweis: Diese Seite zeigt nur Projekte mit GitHub-Repositories. Einige Projekte unterhalten GitHub-Repositories als Benutzerfeedback-Kanäle, obwohl sie nicht Open Source sind.",
+  "statistics": {
+    "closedSourceCount": "Proprietäre Projekte",
+    "closedSourcePercentage": "Proprietärer Anteil",
+    "licenseBreakdown": "Lizenzverteilung",
+    "openSourceCount": "Open-Source-Projekte",
+    "projects": "Projekte",
+    "title": "Open-Source- und proprietäre Verteilung",
+    "totalProjects": "Gesamtprojekte"
+  },
+  "table": {
+    "openSourceTitle": "Open-Source-Projekte ({count})",
+    "proprietaryTitle": "Proprietäre Projekte ({count})",
+    "rank": "Rang"
+  },
+  "title": "Open-Source-Projekt-Ranking"
+}

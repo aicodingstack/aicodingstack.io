@@ -14,7 +14,7 @@ import { Link } from '@/i18n/navigation'
 interface MenuItem {
   href: string
   translationKey: string
-  namespace?: 'header' | 'common'
+  namespace?: 'header' | 'shared'
   isExternal?: boolean
   hasMegaMenu?: boolean
   megaMenuType?: 'aiCodingStack' | 'ranking'
@@ -32,16 +32,17 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeMegaMenu, setActiveMegaMenu] = useState<'aiCodingStack' | 'ranking' | null>(null)
   const [isSearchDialogOpen, setIsSearchDialogOpen] = useState(false)
-  const t = useTranslations('components.header')
+  const tComponent = useTranslations('components.common.header')
+  const tShared = useTranslations('shared')
 
   // Menu items configuration - memoized to avoid recreation on each render
   const menuItems = useMemo<MenuItem[]>(
     () => [
-      { href: '/manifesto', translationKey: 'manifesto', namespace: 'header' },
+      { href: '/manifesto', translationKey: 'terms.manifesto', namespace: 'shared' },
       {
         href: '/ai-coding-stack',
-        translationKey: 'aiCodingStack',
-        namespace: 'header',
+        translationKey: 'terms.aiCodingStack',
+        namespace: 'shared',
         hasMegaMenu: true,
         megaMenuType: 'aiCodingStack',
       },
@@ -53,7 +54,7 @@ function Header() {
         hasMegaMenu: true,
         megaMenuType: 'ranking',
       },
-      { href: '/curated-collections', translationKey: 'collections', namespace: 'header' },
+      { href: '/curated-collections', translationKey: 'terms.collections', namespace: 'shared' },
     ],
     []
   )
@@ -89,9 +90,21 @@ function Header() {
     return () => document.removeEventListener('keydown', handleKeyDown)
   }, [])
 
+  // Get translated text based on namespace
+  const getTranslation = useCallback(
+    (item: MenuItem) => {
+      return item.namespace === 'shared'
+        ? tShared(item.translationKey)
+        : tComponent(item.translationKey)
+    },
+    [tComponent, tShared]
+  )
+
   // Render desktop menu item
   const renderDesktopMenuItem = useCallback(
     (item: MenuItem) => {
+      const translatedText = getTranslation(item)
+
       if (item.hasMegaMenu && item.megaMenuType) {
         const isActive = activeMegaMenu === item.megaMenuType
         return (
@@ -107,7 +120,7 @@ function Header() {
               aria-expanded={isActive}
               aria-haspopup="true"
             >
-              {t(item.translationKey as never)}
+              {translatedText}
             </Link>
             {item.megaMenuType === 'aiCodingStack' && (
               <StackMegaMenu isOpen={isActive} onClose={handleMegaMenuClose} />
@@ -123,41 +136,44 @@ function Header() {
         <li key={item.href}>
           {item.isExternal ? (
             <a href={item.href} target="_blank" rel="noopener" className={DESKTOP_LINK_CLASSES}>
-              → {t(item.translationKey as never)}
+              → {translatedText}
             </a>
           ) : (
             <Link href={item.href} className={DESKTOP_LINK_CLASSES}>
-              {t(item.translationKey as never)}
+              {translatedText}
             </Link>
           )}
         </li>
       )
     },
-    [activeMegaMenu, handleMegaMenuOpen, handleMegaMenuClose, t]
+    [activeMegaMenu, handleMegaMenuOpen, handleMegaMenuClose, getTranslation]
   )
 
   // Render mobile menu item
   const renderMobileMenuItem = useCallback(
-    (item: MenuItem) => (
-      <li key={item.href}>
-        {item.isExternal ? (
-          <a href={item.href} target="_blank" rel="noopener" className={MOBILE_LINK_CLASSES}>
-            → {t(item.translationKey as never)}
-          </a>
-        ) : (
-          <Link href={item.href} className={MOBILE_LINK_CLASSES} onClick={handleMenuClose}>
-            {t(item.translationKey as never)}
-          </Link>
-        )}
-      </li>
-    ),
-    [handleMenuClose, t]
+    (item: MenuItem) => {
+      const translatedText = getTranslation(item)
+      return (
+        <li key={item.href}>
+          {item.isExternal ? (
+            <a href={item.href} target="_blank" rel="noopener" className={MOBILE_LINK_CLASSES}>
+              → {translatedText}
+            </a>
+          ) : (
+            <Link href={item.href} className={MOBILE_LINK_CLASSES} onClick={handleMenuClose}>
+              {translatedText}
+            </Link>
+          )}
+        </li>
+      )
+    },
+    [handleMenuClose, getTranslation]
   )
 
   // Memoized menu button label
   const menuButtonLabel = useMemo(
-    () => (isMenuOpen ? t('closeMenu') : t('openMenu')),
-    [isMenuOpen, t]
+    () => (isMenuOpen ? tComponent('closeMenu') : tComponent('openMenu')),
+    [isMenuOpen, tComponent]
   )
 
   return (
@@ -206,7 +222,7 @@ function Header() {
                   d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                 />
               </svg>
-              <span className="flex-1 text-left">{t('searchPlaceholder')}</span>
+              <span className="flex-1 text-left">{tComponent('searchPlaceholder')}</span>
               <kbd className="flex items-center gap-1 px-1.5 py-0.5 text-xs border border-[var(--color-border)]">
                 <Command className="w-3 h-3" />
                 <span>K</span>
@@ -221,7 +237,7 @@ function Header() {
               type="button"
               onClick={() => setIsSearchDialogOpen(true)}
               className="p-[var(--spacing-xs)] hover:bg-[var(--color-hover)] transition-colors"
-              aria-label={t('search')}
+              aria-label={tShared('actions.search')}
             >
               <svg
                 className="w-5 h-5"
@@ -244,7 +260,7 @@ function Header() {
               type="button"
               onClick={handleMenuToggle}
               className="p-[var(--spacing-xs)] hover:bg-[var(--color-hover)] transition-colors"
-              aria-label={t('toggleMenu')}
+              aria-label={tComponent('toggleMenu')}
             >
               <svg
                 className="w-6 h-6"

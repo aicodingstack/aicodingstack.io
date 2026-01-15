@@ -1,0 +1,27 @@
+{
+  "copyButton": {
+    "copied": "Disalin!",
+    "copyToClipboard": "Salin ke papan klip"
+  },
+  "filterSortBar": {
+    "clearFilters": "Hapus filter",
+    "license": "Lisensi:",
+    "platform": "Platform:",
+    "sort": "Urutkan:",
+    "sortDefault": "Default",
+    "sortNameAsc": "Nama (A-Z)",
+    "sortNameDesc": "Nama (Z-A)"
+  },
+  "searchDialog": {
+    "placeholder": "Type to search...",
+    "empty": "Start typing to search...",
+    "noResultsFor": "No results for \"{query}\"",
+    "navigate": "to navigate",
+    "select": "to select",
+    "viewAllResults": "View all results for \"{query}\""
+  },
+  "searchInput": {
+    "placeholder": "@:components.controls.searchInput.placeholder",
+    "clear": "Clear search"
+  }
+}
