@@ -1,0 +1,14 @@
+{
+  "addModel": "+ 新增模型",
+  "basicInfo": "基本資訊",
+  "cachePrice": "快取價格",
+  "compareTitle": "比較 {model1} vs {model2}",
+  "contextWindow": "內容視窗",
+  "description": "描述",
+  "inputPrice": "輸入價格",
+  "knowledgeCutoff": "知識",
+  "lifecycle": "生命週期",
+  "outputPrice": "輸出價格",
+  "releaseDate": "發布日期",
+  "verified": "已驗證"
+}

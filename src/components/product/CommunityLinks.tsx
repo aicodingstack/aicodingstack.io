@@ -21,7 +21,8 @@ export function CommunityLinks({
   layout = 'vertical',
   gridCols = 'grid-cols-2 md:grid-cols-4 lg:grid-cols-7',
 }: CommunityLinksProps) {
-  const t = useTranslations('components')
+  const tComponent = useTranslations('components.product.communityLinks')
+  const tShared = useTranslations('shared')
 
   if (!communityUrls) {
     return null
@@ -30,44 +31,44 @@ export function CommunityLinks({
   const links = [
     {
       key: 'linkedin',
-      title: t('communityLinks.linkedin'),
-      description: t('communityLinks.linkedinDescription'),
+      title: tShared('platforms.linkedin'),
+      description: tShared('terms.followUs'),
     },
     {
       key: 'twitter',
-      title: t('communityLinks.twitter'),
-      description: t('communityLinks.twitterDescription'),
+      title: tShared('platforms.twitter'),
+      description: tShared('terms.followUs'),
     },
     {
       key: 'github',
-      title: t('communityLinks.github'),
-      description: t('communityLinks.githubDescription'),
+      title: tShared('platforms.github'),
+      description: tComponent('githubDescription'),
     },
     {
       key: 'youtube',
-      title: t('communityLinks.youtube'),
-      description: t('communityLinks.youtubeDescription'),
+      title: tShared('platforms.youtube'),
+      description: tComponent('youtubeDescription'),
     },
     {
       key: 'discord',
-      title: t('communityLinks.discord'),
-      description: t('communityLinks.discordDescription'),
+      title: tShared('platforms.discord'),
+      description: tComponent('discordDescription'),
     },
     {
       key: 'reddit',
-      title: t('communityLinks.reddit'),
-      description: t('communityLinks.redditDescription'),
+      title: tShared('platforms.reddit'),
+      description: tComponent('redditDescription'),
     },
     {
       key: 'blog',
-      title: t('communityLinks.blog'),
-      description: t('communityLinks.blogDescription'),
+      title: tComponent('blog'),
+      description: tComponent('blogDescription'),
     },
-  ]
+  ] as const
 
   return (
     <LinkCardGrid
-      title={t('resources.community')}
+      title={tShared('terms.community')}
       links={links}
       urls={communityUrls}
       layout={layout}

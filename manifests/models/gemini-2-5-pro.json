@@ -8,7 +8,7 @@
       "description": "Google 最先进的 AI 模型，专为高级推理、编码、数学和科学任务设计。采用\"思考\"能力，能够通过增强的准确性和细致的上下文处理进行推理。"
     },
     "de": {
-      "description": "Googles Flagship-KI-Modell für fortgeschrittenes Reasoning, Codierung, Mathematik und Wissenschaft. Mit Thinking-Fähigkeiten für verbesserte Genauigkeit."
+      "description": "Googles Flagship-AI-Modell für fortgeschrittenes Reasoning, Codierung, Mathematik und Wissenschaft. Mit Thinking-Fähigkeiten für verbesserte Genauigkeit."
     },
     "ko": {
       "description": "고급 추론, 코딩, 수학 및 과학 작업을 위해 설계된 Google의 플래그십 AI 모델입니다. 향상된 정확도를 위해 \"생각\" 능력을 사용합니다."
@@ -38,20 +38,23 @@
       "description": "Google 最先進的 AI 模型，專為高級推理、編碼、數學和科學任務設計。採用\"思考\"能力，能夠通過增強的準確性和細緻的上下文處理進行推理。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://deepmind.google",
-  "docsUrl": "https://ai.google.dev/docs",
+  "docsUrl": "https://ai.google.dev/gemini-api/docs/models#gemini-2.5-pro",
   "vendor": "Google",
   "size": "Unknown",
-  "contextWindow": 128000,
-  "maxOutput": 8000,
+  "contextWindow": 1048576,
+  "maxOutput": 65536,
   "tokenPricing": {
     "input": 1.25,
-    "output": 1.25,
-    "cache": null
+    "output": 10,
+    "cache": 0.125
   },
-  "releaseDate": null,
-  "inputModalities": ["text"],
+  "releaseDate": "2025-05-06",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2025-05",
+  "inputModalities": ["text", "image", "pdf", "audio", "video"],
+  "outputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
     "sweBench": 53.6,

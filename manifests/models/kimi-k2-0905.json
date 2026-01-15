@@ -38,21 +38,24 @@
       "description": "月之暗面推出的 200B 參數大語言模型，具備 200K 上下文視窗，專為長文本推理和指令遵循優化。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://moonshot.ai",
   "docsUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct-0905",
   "vendor": "Moonshot",
-  "size": "200B",
-  "contextWindow": 200000,
-  "maxOutput": 8000,
+  "size": "1,000B",
+  "contextWindow": 262144,
+  "maxOutput": 262144,
   "tokenPricing": {
-    "input": 2,
-    "output": 2,
-    "cache": null
+    "input": 0.6,
+    "output": 2.5,
+    "cache": 0.15
   },
-  "releaseDate": null,
+  "releaseDate": "2025-09-05",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2025-09",
   "inputModalities": ["text"],
-  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
   "benchmarks": {
     "sweBench": 43.8,
     "terminalBench": 0.278,

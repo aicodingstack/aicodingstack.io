@@ -8,7 +8,7 @@
       "description": "开源 CLI Agent，将持续 AI 带到您的终端。使用任何模型构建和运行自定义 Agent，定义您自己的规则，并集成 MCP 工具，无供应商锁定。"
     },
     "de": {
-      "description": "Open-Source CLI-Agent, der kontinuierliche KI in Ihr Terminal bringt. Erstellen Sie Agenten mit jedem Modell, definieren Sie Regeln und integrieren Sie MCP-Tools ohne Vendor-Lock-in."
+      "description": "Open-Source CLI-Agent, der kontinuierliche AI in Ihr Terminal bringt. Erstellen Sie Agenten mit jedem Modell, definieren Sie Regeln und integrieren Sie MCP-Tools ohne Vendor-Lock-in."
     },
     "ko": {
       "description": "지속적인 AI를 터미널로 가져오는 오픈 소스 CLI 에이전트입니다. 모든 모델로 사용자 지정 에이전트를 구축하고 실행하며, 규칙을 정의하고 MCP 도구를 통합하여 공급업체 종속성을 피할 수 있습니다."

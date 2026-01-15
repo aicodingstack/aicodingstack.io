@@ -35,42 +35,40 @@ function FooterLinkList({ title, links }: FooterLinkListProps) {
 }
 
 export default function Footer() {
-  const tFooter = useTranslations('components.footer')
-  const tPlatforms = useTranslations('shared.platforms')
-  const tStacks = useTranslations('shared.stacks')
-  const tCommon = useTranslations('shared.common')
+  const tComponent = useTranslations('components.common.footer')
+  const tShared = useTranslations('shared')
 
   // Define link arrays (static hrefs, only labels depend on translations)
   const resourceLinks = [
-    { href: '/ides', label: tStacks('ides') },
-    { href: '/clis', label: tStacks('clis') },
-    { href: '/extensions', label: tStacks('extensions') },
-    { href: '/models', label: tStacks('models') },
-    { href: '/model-providers', label: tStacks('modelProviders') },
-    { href: '/vendors', label: tStacks('vendors') },
+    { href: '/ides', label: tShared('categories.plural.ides') },
+    { href: '/clis', label: tShared('categories.plural.clis') },
+    { href: '/extensions', label: tShared('categories.plural.extensions') },
+    { href: '/models', label: tShared('categories.plural.models') },
+    { href: '/model-providers', label: tShared('categories.plural.modelProviders') },
+    { href: '/vendors', label: tShared('categories.plural.vendors') },
   ]
 
   const documentationLinks = [
-    { href: '/docs', label: tCommon('docs') },
-    { href: '/articles', label: tCommon('articles') },
-    { href: '/curated-collections', label: tCommon('curatedCollections') },
-    { href: '/#faq', label: tCommon('faq') },
+    { href: '/docs', label: tShared('terms.docs') },
+    { href: '/articles', label: tShared('terms.articles') },
+    { href: '/curated-collections', label: tShared('terms.curatedCollections') },
+    { href: '/#faq', label: tShared('terms.faq') },
   ]
 
   const communityLinks = [
     {
       href: 'https://github.com/aicodingstack/aicodingstack.io',
-      label: tPlatforms('github'),
+      label: tShared('platforms.github'),
       isExternal: true,
     },
     {
       href: 'https://aicodingstack.io/discord',
-      label: tPlatforms('discord'),
+      label: tShared('platforms.discord'),
       isExternal: true,
     },
     {
       href: 'https://x.com/aicodingstack',
-      label: tPlatforms('twitter'),
+      label: tShared('platforms.twitter'),
       isExternal: false,
     },
   ]
@@ -79,10 +77,12 @@ export default function Footer() {
     <footer className="bg-[var(--color-bg)] max-w-8xl mx-auto px-[var(--spacing-md)] mt-[var(--spacing-lg)]">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-9 gap-[var(--spacing-lg)] py-[var(--spacing-lg)] border-y border-[var(--color-border)]">
         <div className="flex flex-col gap-[var(--spacing-sm)] lg:col-span-3">
-          <span className="text-sm font-semibold tracking-tight">{tCommon('aiCodingStack')}</span>
+          <span className="text-sm font-semibold tracking-tight">
+            {tShared('terms.aiCodingStack')}
+          </span>
           <p className="text-sm pb-[var(--spacing-sm)] leading-[1.8] text-[var(--color-text-secondary)] font-light">
-            {tFooter('tagline')}
-            <span className="block mt-[var(--spacing-sm)]">{tFooter('openSource')}</span>
+            {tComponent('tagline')}
+            <span className="block mt-[var(--spacing-sm)]">{tComponent('openSource')}</span>
           </p>
           <div className="flex gap-[var(--spacing-xs)]">
             <ThemeSwitcher />
@@ -90,13 +90,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <FooterLinkList title={tCommon('resources')} links={resourceLinks} />
-        <FooterLinkList title={tCommon('documentation')} links={documentationLinks} />
-        <FooterLinkList title={tCommon('community')} links={communityLinks} />
+        <FooterLinkList title={tShared('terms.resources')} links={resourceLinks} />
+        <FooterLinkList title={tShared('terms.documentation')} links={documentationLinks} />
+        <FooterLinkList title={tShared('terms.community')} links={communityLinks} />
       </div>
 
       <div className="py-[var(--spacing-md)] text-center text-xs text-[var(--color-text-muted)]">
-        {tFooter('copyright')}
+        {tComponent('copyright')}
       </div>
     </footer>
   )

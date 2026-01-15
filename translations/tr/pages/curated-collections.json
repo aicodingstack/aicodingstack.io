@@ -1,16 +1,16 @@
 {
+  "meta": {
+    "title": "Curated Collections - Essential AI Coding Resources",
+    "description": "Handpicked resources, specifications, protocols, and tools for AI coding. Featured articles, standards, and ecosystem utilities."
+  },
   "articles": {
-    "description": "Sektör liderlerinden AI kodlama hakkında mutlaka okunması gereken makaleler",
-    "title": "Öne Çıkan Makaleler"
+    "description": "Must-read articles about AI coding from industry leaders"
   },
   "specifications": {
-    "description": "Modern yazılım geliştirme için kritik standartlar ve protokoller",
-    "title": "Spesifikasyonlar ve Protokoller"
+    "description": "Essential standards and protocols for modern software development"
   },
-  "subtitle": "AI kodlama için küratörlü kaynaklar, spesifikasyonlar, protokoller ve araçlar",
-  "title": "Küratörlü Koleksiyonlar",
+  "subtitle": "Handpicked resources, specifications, protocols, and tools for AI coding",
   "tools": {
-    "description": "AI kodlama iş akışları için küratörlü araçlar ve yardımcı programlar",
-    "title": "Ekosistem Araçları"
+    "description": "Curated tools and utilities for AI coding workflows"
   }
 }

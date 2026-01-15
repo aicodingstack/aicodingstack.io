@@ -1,0 +1,14 @@
+{
+  "addModel": "+ Model Ekle",
+  "basicInfo": "Temel Bilgiler",
+  "cachePrice": "Önbellek Fiyatı",
+  "compareTitle": "{model1} vs {model2} Karşılaştır",
+  "contextWindow": "Bağlam Penceresi",
+  "description": "Açıklama",
+  "inputPrice": "Girdi Fiyatı",
+  "knowledgeCutoff": "Bilgi",
+  "lifecycle": "Yaşam Döngüsü",
+  "outputPrice": "Çıktı Fiyatı",
+  "releaseDate": "Yayın Tarihi",
+  "verified": "Doğrulanmış"
+}

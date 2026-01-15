@@ -212,7 +212,7 @@ export const generateListPageSchema = cache(
   async (options: ListPageSchemaOptions): Promise<SchemaItemList> => {
     const { items, category, locale, translationNamespace } = options
 
-    const t = await getTranslations({ locale, namespace: translationNamespace })
+    const tPage = await getTranslations({ locale, namespace: translationNamespace })
 
     const listItems: ListItemData[] = items.map(item => ({
       name: item.name,
@@ -221,8 +221,8 @@ export const generateListPageSchema = cache(
     }))
 
     return buildItemListSchema({
-      name: t('title'),
-      description: t('subtitle'),
+      name: tPage('title'),
+      description: tPage('subtitle'),
       itemType: 'SoftwareApplication',
       items: listItems,
     })

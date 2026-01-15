@@ -18,7 +18,7 @@ export interface BreadcrumbItem {
  * - Sticky behavior is enabled when scrolling using CSS position: sticky.
  */
 export function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
-  const t = useTranslations()
+  const tComponent = useTranslations('components.navigation.breadcrumb')
   const sectionRef = useRef<HTMLElement>(null)
 
   // Dynamically adjust sticky position based on header height
@@ -50,7 +50,7 @@ export function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
     {
       '@type': 'ListItem',
       position: 1,
-      name: t('components.breadcrumb.home'),
+      name: tComponent('home'),
       item: SITE_CONFIG.url,
     },
     ...items.map((item, index) => {

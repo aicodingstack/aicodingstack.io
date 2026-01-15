@@ -38,21 +38,24 @@
       "description": "一個 108B 基礎模型，具備原生多模態函數調用、128K 上下文和卓越的圖像-文本-文本任務視覺理解能力。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://z.ai/",
   "docsUrl": "https://docs.z.ai/guides/vlm/glm-4.6v",
   "vendor": "Z.ai",
   "size": "108B",
   "contextWindow": 128000,
-  "maxOutput": 16000,
+  "maxOutput": 24576,
   "tokenPricing": {
     "input": 0.3,
     "output": 0.9,
     "cache": 0.05
   },
-  "releaseDate": null,
-  "inputModalities": ["text", "image"],
-  "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
+  "releaseDate": "2025-12-08",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2025-12",
+  "inputModalities": ["text", "image", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
     "sweBench": null,
     "terminalBench": 0.245,
@@ -64,7 +67,7 @@
   },
   "platformUrls": {
     "huggingface": "https://huggingface.co/zai-org/GLM-4.6V",
-    "artificialAnalysis": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/glm-4-6v",
     "openrouter": "https://openrouter.ai/z-ai/glm-4.6v"
   }
 }

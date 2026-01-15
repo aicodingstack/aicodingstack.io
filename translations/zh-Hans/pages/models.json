@@ -1,0 +1,10 @@
+{
+  "context": "内容窗口：",
+  "lifecycle": {
+    "noResults": "没有符合搜索条件的{lifecycle}模型"
+  },
+  "pricing": "定价：",
+  "size": "大小：",
+  "subtitle": "针对代码生成与分析优化的大型语言模型",
+  "title": "AI 编码模型"
+}

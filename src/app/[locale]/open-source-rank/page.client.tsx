@@ -24,6 +24,7 @@ type OpenSourceProject = {
 
 function getLicenseDisplayName(license: string): string {
   if (license === 'Proprietary') return 'Proprietary'
+  if (license === 'Unknown') return 'Unknown'
   return license
 }
 
@@ -41,7 +42,8 @@ function getProductTypeName(type: ProductType, t: (key: string) => string): stri
 }
 
 export function OpenSourceRankPage() {
-  const t = useTranslations('components.openSourceRank')
+  const tPage = useTranslations('pages.openSourceRank')
+  const tShared = useTranslations('shared')
   const [selectedType, setSelectedType] = useState<ProductType | 'all'>('all')
 
   const { openSourceProjects, proprietaryProjects } = useMemo(() => {
@@ -230,7 +232,7 @@ export function OpenSourceRankPage() {
               : 'border-[var(--color-border)] hover:bg-[var(--color-hover)]'
           }`}
         >
-          {t('filter.all')} ({openSourceProjects.length + proprietaryProjects.length})
+          {tPage('filter.all')} ({openSourceProjects.length + proprietaryProjects.length})
         </button>
         <button
           type="button"
@@ -241,7 +243,7 @@ export function OpenSourceRankPage() {
               : 'border-[var(--color-border)] hover:bg-[var(--color-hover)]'
           }`}
         >
-          {t('productType.ide')} (
+          {tPage('productType.ide')} (
           {openSourceProjects.filter(p => p.type === 'ide').length +
             proprietaryProjects.filter(p => p.type === 'ide').length}
           )
@@ -255,7 +257,7 @@ export function OpenSourceRankPage() {
               : 'border-[var(--color-border)] hover:bg-[var(--color-hover)]'
           }`}
         >
-          {t('productType.cli')} (
+          {tPage('productType.cli')} (
           {openSourceProjects.filter(p => p.type === 'cli').length +
             proprietaryProjects.filter(p => p.type === 'cli').length}
           )
@@ -269,7 +271,7 @@ export function OpenSourceRankPage() {
               : 'border-[var(--color-border)] hover:bg-[var(--color-hover)]'
           }`}
         >
-          {t('productType.extension')} (
+          {tPage('productType.extension')} (
           {openSourceProjects.filter(p => p.type === 'extension').length +
             proprietaryProjects.filter(p => p.type === 'extension').length}
           )
@@ -286,19 +288,19 @@ export function OpenSourceRankPage() {
                 <thead>
                   <tr className="border-b border-[var(--color-border)] bg-[var(--color-hover)]">
                     <th className="text-left px-[var(--spacing-sm)] py-[var(--spacing-sm)] text-sm font-semibold w-16">
-                      {t('table.rank')}
+                      {tPage('table.rank')}
                     </th>
                     <th className="text-left px-[var(--spacing-sm)] py-[var(--spacing-sm)] text-sm font-semibold">
-                      {t('table.name')}
+                      {tPage('table.name')}
                     </th>
                     <th className="text-left px-[var(--spacing-sm)] py-[var(--spacing-sm)] text-sm font-semibold">
-                      {t('table.type')}
+                      {tShared('terms.type')}
                     </th>
                     <th className="text-left px-[var(--spacing-sm)] py-[var(--spacing-sm)] text-sm font-semibold">
-                      {t('table.license')}
+                      {tShared('terms.license')}
                     </th>
                     <th className="text-right px-[var(--spacing-sm)] py-[var(--spacing-sm)] text-sm font-semibold w-32">
-                      {t('table.stars')}
+                      {tShared('terms.stars')}
                     </th>
                   </tr>
                 </thead>
@@ -324,7 +326,7 @@ export function OpenSourceRankPage() {
                       </td>
                       <td className="px-[var(--spacing-sm)] py-[var(--spacing-sm)] text-sm">
                         <span className="inline-block px-2 py-0.5 text-xs border border-[var(--color-border)]">
-                          {getProductTypeName(project.type, t)}
+                          {getProductTypeName(project.type, tPage)}
                         </span>
                       </td>
                       <td className="px-[var(--spacing-sm)] py-[var(--spacing-sm)] text-sm text-[var(--color-text-secondary)]">
@@ -370,7 +372,7 @@ export function OpenSourceRankPage() {
 
               {projects.length === 0 && (
                 <div className="text-center py-[var(--spacing-lg)] text-[var(--color-text-secondary)]">
-                  {t('noResults')}
+                  {tPage('noResults')}
                 </div>
               )}
             </div>
@@ -382,14 +384,14 @@ export function OpenSourceRankPage() {
             {/* Open Source Projects Table */}
             {renderTable(
               filteredOpenSourceProjects,
-              t('table.openSourceTitle', { count: filteredOpenSourceProjects.length }) ||
+              tPage('table.openSourceTitle', { count: filteredOpenSourceProjects.length }) ||
                 `Open Source Projects (${filteredOpenSourceProjects.length})`
             )}
 
             {/* Proprietary Projects Table */}
             {renderTable(
               filteredProprietaryProjects,
-              t('table.proprietaryTitle', { count: filteredProprietaryProjects.length }) ||
+              tPage('table.proprietaryTitle', { count: filteredProprietaryProjects.length }) ||
                 `Proprietary Projects (${filteredProprietaryProjects.length})`
             )}
           </>
@@ -398,12 +400,14 @@ export function OpenSourceRankPage() {
 
       {/* Note Section */}
       <div className="mt-[var(--spacing-lg)] mb-[var(--spacing-lg)] p-[var(--spacing-sm)] border border-[var(--color-border)] bg-[var(--color-hover)] text-sm text-[var(--color-text-secondary)]">
-        {t('note')}
+        {tPage('note')}
       </div>
 
       {/* Statistics Section with Pie Chart */}
       <div className="mt-[var(--spacing-lg)] border border-[var(--color-border)] p-[var(--spacing-md)]">
-        <h2 className="text-xl font-semibold mb-[var(--spacing-md)]">{t('statistics.title')}</h2>
+        <h2 className="text-xl font-semibold mb-[var(--spacing-md)]">
+          {tPage('statistics.title')}
+        </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-[var(--spacing-lg)]">
           {/* Multi-color Pie Chart */}
@@ -478,7 +482,7 @@ export function OpenSourceRankPage() {
             <div className="text-center mt-[var(--spacing-sm)]">
               <div className="text-2xl font-bold">{stats.total}</div>
               <div className="text-sm text-[var(--color-text-secondary)]">
-                {t('statistics.totalProjects')}
+                {tPage('statistics.totalProjects')}
               </div>
             </div>
           </div>
@@ -486,7 +490,7 @@ export function OpenSourceRankPage() {
           {/* License Breakdown */}
           <div className="lg:col-span-2">
             <h3 className="text-sm font-semibold mb-[var(--spacing-sm)] text-[var(--color-text-secondary)]">
-              {t('statistics.licenseBreakdown')}
+              {tPage('statistics.licenseBreakdown')}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[var(--spacing-sm)]">
               {/* Open Source Licenses */}
@@ -510,7 +514,7 @@ export function OpenSourceRankPage() {
                     <div className="flex-1 min-w-0">
                       <div className="text-sm font-medium truncate">{stat.license}</div>
                       <div className="text-xs text-[var(--color-text-secondary)]">
-                        {stat.count} {t('statistics.projects')} ({stat.percentage}%)
+                        {stat.count} {tPage('statistics.projects')} ({stat.percentage}%)
                       </div>
                     </div>
                   </div>
@@ -521,9 +525,10 @@ export function OpenSourceRankPage() {
               <div className="border border-[var(--color-border)] p-[var(--spacing-sm)] flex items-center gap-[var(--spacing-sm)]">
                 <div className="w-4 h-4 flex-shrink-0 bg-gray-300" />
                 <div className="flex-1 min-w-0">
-                  <div className="text-sm font-medium truncate">Proprietary</div>
+                  <div className="text-sm font-medium truncate">{tShared('terms.proprietary')}</div>
                   <div className="text-xs text-[var(--color-text-secondary)]">
-                    {stats.proprietary} {t('statistics.projects')} ({stats.proprietaryPercentage}
+                    {stats.proprietary} {tPage('statistics.projects')} (
+                    {stats.proprietaryPercentage}
                     %)
                   </div>
                 </div>
@@ -534,7 +539,7 @@ export function OpenSourceRankPage() {
             <div className="mt-[var(--spacing-md)] grid grid-cols-2 gap-[var(--spacing-sm)]">
               <div className="border border-[var(--color-border)] p-[var(--spacing-sm)] bg-green-500/10">
                 <div className="text-sm text-[var(--color-text-secondary)] mb-1">
-                  {t('statistics.openSourceCount')}
+                  {tPage('statistics.openSourceCount')}
                 </div>
                 <div className="text-2xl font-bold text-green-500">
                   {stats.openSource} ({stats.openSourcePercentage}%)
@@ -543,7 +548,7 @@ export function OpenSourceRankPage() {
 
               <div className="border border-[var(--color-border)] p-[var(--spacing-sm)] bg-gray-500/10">
                 <div className="text-sm text-[var(--color-text-secondary)] mb-1">
-                  {t('statistics.closedSourceCount')}
+                  {tPage('statistics.closedSourceCount')}
                 </div>
                 <div className="text-2xl font-bold text-gray-500">
                   {stats.proprietary} ({stats.proprietaryPercentage}%)

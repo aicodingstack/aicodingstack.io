@@ -345,7 +345,9 @@ export function buildAlternates(options: {
  * Format price for display in descriptions
  */
 export function formatPriceForDescription(
-  pricing: Array<{ value: number | null; currency: string | null; per: string | null }> | undefined
+  pricing:
+    | Array<{ value: number | null; currency?: string | null; per?: string | null }>
+    | undefined
 ): string | null {
   if (!pricing || pricing.length === 0) return null
 

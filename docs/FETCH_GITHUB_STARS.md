@@ -1,84 +1,212 @@
 # GitHub Stars Fetcher
 
-This script fetches GitHub star counts for all projects in the manifest files and updates the `githubStars` field.
+**Last Updated:** January 6, 2026
 
-## Features
+This document describes the GitHub stars fetching system for AI Coding Stack.
 
-- Fetches star counts from GitHub API for all projects with GitHub URLs
-- Converts star counts to 'k' format (e.g., 1.5k, 23.4k)
-- Handles different JSON structures (direct `githubUrl` field vs nested `communityUrls.github`)
-- Supports GitHub authentication to avoid rate limits
-- Automatic retry delay to avoid hitting API rate limits
+---
 
-## Prerequisites
+## Overview
 
-```bash
-npm install
-# or if you only need the built-in Node.js modules, no installation needed
+The GitHub Stars Fetcher fetches star counts from the GitHub API for all projects in the manifest files and creates a centralized `github-stars.json` data file.
+
+**Implementation**: `scripts/fetch/fetch-github-stars.mjs`
+**Output**: `manifests/github-stars.json`
+
+---
+
+## Schema
+
+The stars data follows `manifests/$schemas/github-stars.schema.json`:
+
+```typescript
+interface ManifestGitHubStars {
+  extensions: { [productId: string]: number | null }
+  clis: { [productId: string]: number | null }
+  ides: { [productId: string]: number | null }
+}
 ```
+
+---
 
 ## Usage
 
-### Using npm script (Recommended)
+### Fetch Stars with GitHub Token (Recommended)
 
-#### Without GitHub Token (Rate Limited)
 ```bash
-npm run fetch:github-stars
+GITHUB_TOKEN=your_github_token_here npm run generate
 ```
 
-⚠️ **Warning**: Without authentication, you're limited to 60 requests per hour.
+### Fetch Stars Without Token (Rate Limited)
 
-#### With GitHub Token (Recommended)
 ```bash
-GITHUB_TOKEN=your_github_token_here npm run fetch:github-stars
+npm run generate
 ```
 
-With authentication, you get 5,000 requests per hour.
+### Direct Script Execution
 
-### Using Node.js directly
-
-#### Without GitHub Token
 ```bash
 node scripts/fetch/index.mjs github-stars
 ```
 
-#### With GitHub Token
-```bash
-GITHUB_TOKEN=your_github_token_here node scripts/fetch/index.mjs github-stars
-```
+---
 
 ## Getting a GitHub Token
 
 1. Go to https://github.com/settings/tokens
-2. Click "Generate new token" → "Generate new token (classic)"
+2. Click **Generate new token** → **Generate new token (classic)**
 3. Give it a name (e.g., "acs-stars-fetcher")
-4. Select scopes: Only need `public_repo` (or no scopes for public repos)
-5. Click "Generate token"
-6. Copy the token and use it in the command above
+4. Scopes: `public_repo` (or none for public repos only)
+5. Click **Generate token**
+6. Copy the token and use it as `GITHUB_TOKEN` environment variable
 
-## What It Does
+---
 
-The script processes these files:
-- `manifests/terminals.json` (uses `communityUrls.github` field)
-- `manifests/extensions.json` (uses `communityUrls.github` field)
-- `manifests/ides.json` (uses `communityUrls.github` field)
-- `manifests/clis.json` (uses `communityUrls.github` field)
-- `manifests/providers.json` (uses `communityUrls.github` field)
-- `manifests/vendors.json` (uses `communityUrls.github` field)
+## Rate Limits
+
+| Authentication | Requests | Time Period |
+|----------------|----------|-------------|
+| With token | 5,000 | 1 hour |
+| Without token | 60 | 1 hour |
+
+**Recommendation**: Always use a GitHub token to avoid rate limiting.
+
+---
+
+## How It Works
+
+### 1. Data Sources
+
+The script fetches GitHub URLs from these files:
+
+| Category | File | URL Field |
+|----------|------|-----------|
+| Extensions | `manifests/extensions/*.json` | `communityUrls.github` |
+| CLIs | `manifests/clis/*.json` | `communityUrls.github` |
+| IDEs | `manifests/ides/*.json` | `communityUrls.github` |
+| Models | `manifests/models/*.json` | `communityUrls.github` |
+
+### 2. Processing Steps
 
 For each project:
-1. Extracts the GitHub URL
-2. Parses owner/repo from the URL
-3. Fetches star count from GitHub API
-4. Converts to 'k' format (1 decimal place)
-5. Updates the `githubStars` field
 
-## Output Format
+1. Extract GitHub URL from `communityUrls.github` field
+2. Parse owner/repo from URL (e.g., `microsoft/playwright`)
+3. Fetch star count from GitHub API: `GET /repos/:owner/:repo/stargazers`
+4. Store raw star count (number)
+5. Write to `manifests/github-stars.json`
 
-The `githubStars` field will be populated with numbers in 'k' format:
-- `1500` stars → `1.5`
-- `23456` stars → `23.5`
-- `123` stars → `0.1`
+### 3. Output Format
+
+```json
+{
+  "extensions": {
+    "playwright": 90450,
+    "context7": 2150,
+    "claude-code": 5420
+  },
+  "clis": {
+    "github-copilot-cli": 3450,
+    "codex-cli": 1230
+  },
+  "ides": {
+    "cursor": 42000
+  }
+}
+```
+
+---
+
+## Display Format
+
+When displaying stars on the site, they are formatted with a helper function:
+
+```typescript
+// Formats: 42000 → "42k", 1500 → "1.5k", 150 → "150"
+function formatStars(stars: number | null): string
+```
+
+This is separate from the stored format (raw numbers).
+
+---
+
+## Usage in Components
+
+### Import Stars Data
+
+```typescript
+import { githubStars } from '@/lib/generated/github-stars'
+
+// Get stars for an IDE
+const cursorStars = githubStars.ides['cursor'] // Returns number or null
+
+// Display formatted
+const displayStars = formatStars(cursorStars) // "42k"
+```
+
+### ProductHero Component
+
+```typescript
+import { githubStars } from '@/lib/generated/github-stars'
+
+<ProductHero
+  name={ide.name}
+  description={ide.description}
+  githubStars={githubStars.ides[ide.id] ?? 0}
+/>
+```
+
+---
+
+## Files Involved
+
+| Category | File | Purpose |
+|----------|------|---------|
+| Script | `scripts/fetch/fetch-github-stars.mjs` | Fetch implementation |
+| Entry | `scripts/fetch/index.mjs` | Category runner |
+| Output | `manifests/github-stars.json` | Stars data |
+| Type | `src/types/manifests.ts` | `ManifestGitHubStars` interface |
+| Import | `src/lib/generated/github-stars.ts` | Typed import |
+| Schema | `manifests/$schemas/github-stars.schema.json` | Validation |
+
+---
+
+## Integration with Build Process
+
+The GitHub stars data is automatically generated as part of the build:
+
+```bash
+npm run generate  # Includes star fetching
+npm run dev       # Generate + start dev server
+npm run build     # Generate + build for production
+```
+
+---
+
+## Updating Stars
+
+To update star counts after changes to manifests:
+
+```bash
+# Single update
+npm run generate
+
+# Force rebuild
+rm manifests/github-stars.json && npm run generate
+```
+
+---
+
+## Error Handling
+
+The script handles:
+
+1. **Missing GitHub URLs**: Skips products without `communityUrls.github`
+2. **Private Repos**: Sets value to `null` for access errors
+3. **API Errors**: Logs error and continues
+4. **Rate Limits**: Logs warning and returns cached/empty data
+
+---
 
 ## Example Output
 
@@ -88,32 +216,22 @@ The `githubStars` field will be populated with numbers in 'k' format:
 ✅ Using GitHub token for authentication
 
   🔍 Fetching stars for Playwright (microsoft/playwright)...
-  ✅ Updated Playwright: 65.3k stars
+  ✅ Updated Playwright: 90450 stars
   🔍 Fetching stars for Context7 (upstash/context7)...
-  ✅ Updated Context7: 2.1k stars
-
+  ✅ Updated Context7: 2150 stars
 
 ==================================================
 🎉 All files processed!
 ==================================================
+
+✅ Written to manifests/github-stars.json
 ```
 
-## Error Handling
+---
 
-The script handles:
-- ❌ Invalid GitHub URLs
-- ❌ Repositories not found (404)
-- ❌ Rate limit errors (403)
-- ❌ Network errors
-- ⏭️ Projects without GitHub URLs (skipped)
+**Related Files:**
+- `src/lib/landscape-data.ts` - Uses stars for sorting
+- `src/components/product/ProductHero.tsx` - Displays stars on product pages
+- `src/app/[locale]/ides/comparison/page.client.tsx` - Comparison rankings
 
-## Rate Limiting
-
-The script includes a 1-second delay between requests to avoid hitting rate limits. You can adjust this in the code if needed.
-
-## Notes
-
-- Star counts are rounded to 1 decimal place in 'k' format
-- Projects without GitHub URLs are skipped
-- The script preserves all other fields in the JSON files
-- JSON files are formatted with 2-space indentation
+**Last Updated:** January 6, 2026

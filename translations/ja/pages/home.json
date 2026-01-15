@@ -1,6 +1,5 @@
 {
   "description": "AI コーディングツールを探索・比較：IDE、CLI、拡張機能、モデル、プロバイダー — すべて一箇所で。",
-  "exploreTools": "@:shared.actions.explore",
   "faq": "よくある質問",
   "features": {
     "comparison": {
@@ -23,10 +22,9 @@
   },
   "meta": {
     "description": "AI コーディングツールの包括的なディレクトリ。IDE、CLI、拡張機能、モデル、プロバイダーを発見、比較、探索。",
-    "name": "@:shared.common.aiCodingStack",
     "title": "AI Coding Stack - あなたの AI コーディングエコシステムのハブ"
   },
   "readDocs": "ドキュメントを読む",
   "subtitle": "AI 対応ソフトウェア開発の未来へのビジョン",
-  "title": "@:shared.common.manifesto"
+  "title": "あなたのAIコーディングエコシステムハブ"
 }

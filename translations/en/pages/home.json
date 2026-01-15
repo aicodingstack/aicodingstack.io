@@ -1,6 +1,5 @@
 {
   "description": "Explore and compare AI coding tools: IDEs, CLIs, extensions, models, and providers — all in one place.",
-  "exploreTools": "@:shared.actions.explore",
   "faq": "Frequently Asked Questions",
   "features": {
     "comparison": {
@@ -23,7 +22,6 @@
   },
   "meta": {
     "description": "Comprehensive directory for AI coding tools. Discover, compare and explore IDEs, CLIs, extensions, models and providers.",
-    "name": "@:shared.common.aiCodingStack",
     "title": "AI Coding Stack - Your AI Coding Ecosystem Hub"
   },
   "readDocs": "Read Documentation",

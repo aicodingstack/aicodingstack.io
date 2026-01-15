@@ -1,6 +1,5 @@
 {
   "description": "探索和对比 AI 编码工具:IDE、命令行、终端、模型和提供商 — 一站式平台。",
-  "exploreTools": "探索工具",
   "faq": "常见问题",
   "features": {
     "comparison": {
@@ -23,7 +22,6 @@
   },
   "meta": {
     "description": "AI 编码工具综合目录。发现、对比和探索 IDE、命令行、终端、模型和提供商。",
-    "name": "AI Coding Stack",
     "title": "AI Coding Stack - 你的 AI 编码生态中心"
   },
   "readDocs": "阅读文档",

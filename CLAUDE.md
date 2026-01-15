@@ -5,7 +5,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Internationalization (i18n)
 
 When creating or modifying any page, module, or data:
-- **MUST support at least 4 languages:** English, Simplified Chinese (zh-Hans), German (de), and Korean (ko), NEVER hardcode `'en' | 'zh-Hans'`
+- **MUST support all configured languages (18 total):**
+  - English (en)
+  - German (de)
+  - Spanish (es)
+  - French (fr)
+  - Indonesian (id)
+  - Japanese (ja)
+  - Korean (ko)
+  - Portuguese (pt)
+  - Russian (ru)
+  - Turkish (tr)
+  - Simplified Chinese (zh-Hans)
+  - Traditional Chinese (zh-Hant)
+
+- **NEVER hardcode** a subset of locales like `'en' | 'zh-Hans'`
 - **MUST use the localized Link component:** Always import and use `import { Link } from '@/i18n/navigation'` instead of Next.js default Link
 
 ### Localization Best Practices
@@ -13,6 +27,35 @@ When creating or modifying any page, module, or data:
 - **Metadata localization:** All meta information (titles, descriptions, keywords, OG tags, etc.) in pages MUST be properly localized
 - **DRY principle for translations:** Before creating new translation keys, search existing translation modules thoroughly to reuse existing terms and phrases
 - **Consistency:** Use the same translation keys across similar contexts
+
+### Translation File Organization
+
+Follow the detailed architecture rules in [docs/I18N-ARCHITECTURE-RULES.md](docs/I18N-ARCHITECTURE-RULES.md) for organizing translation resources.
+
+**Core Principles:**
+1. **Page translations**: Each page or page group should have its own JSON file (e.g., `ides.json`, `ide-detail.json`)
+2. **Component translations**: Organize by component directory:
+   - `components/common.json` - Root-level components (Header, Footer, etc.)
+   - `components/navigation.json` - All navigation/* components
+   - `components/controls.json` - All controls/* components
+   - `components/sidebar.json` - All sidebar/* components
+   - `components/product.json` - All product/* components
+3. **Minimize `@:` references**: Use `tPage + tShared` or `tComponent + tShared` patterns in code instead of cross-namespace references in JSON
+4. **Metadata placement**: Co-locate page metadata (title, description, etc.) with page translations under a `meta` object
+5. **Multi-language workflow**: New translation keys should initially use English placeholders across all locales, with proper translation in a separate batch step
+
+**Usage Pattern:**
+```tsx
+// Pages
+const tPage = useTranslations('pages.modelDetail')
+const tShared = useTranslations('shared')
+
+// Components (root-level)
+const tComponent = useTranslations('components.common.header')
+
+// Components (subdirectories)
+const tComponent = useTranslations('components.navigation.breadcrumb')
+```
 
 ## Design System
 

@@ -3,37 +3,24 @@
  * Provides unified search across all product categories
  */
 
-import type {
-  ManifestCLI,
-  ManifestExtension,
-  ManifestIDE,
-  ManifestModel,
-  ManifestProvider,
-  ManifestVendor,
-} from '@/types/manifests'
 import {
-  clisData,
-  extensionsData,
-  idesData,
-  modelsData,
-  providersData,
-  vendorsData,
-} from './generated'
+  getAllManifests,
+  type ManifestItem,
+  type ManifestCategory as RegistryCategory,
+} from './manifest-registry'
 
-export type SearchCategory = 'ides' | 'clis' | 'extensions' | 'models' | 'providers' | 'vendors'
+/**
+ * Search category type (re-export for convenience)
+ */
+export type SearchCategory = RegistryCategory
+export type ManifestCategory = RegistryCategory
 
 export interface SearchResult {
   id: string
   name: string
   description: string
   category: SearchCategory
-  data:
-    | ManifestIDE
-    | ManifestCLI
-    | ManifestExtension
-    | ManifestModel
-    | ManifestProvider
-    | ManifestVendor
+  data: ManifestItem
 }
 
 /**
@@ -107,75 +94,13 @@ function calculateRelevance(
  * Build unified search index from all product manifests
  */
 export function buildSearchIndex(): SearchResult[] {
-  const results: SearchResult[] = []
-
-  // Add IDEs
-  for (const ide of idesData) {
-    results.push({
-      id: ide.id,
-      name: ide.name,
-      description: ide.description,
-      category: 'ides',
-      data: ide,
-    })
-  }
-
-  // Add CLIs
-  for (const cli of clisData) {
-    results.push({
-      id: cli.id,
-      name: cli.name,
-      description: cli.description,
-      category: 'clis',
-      data: cli,
-    })
-  }
-
-  // Add Extensions
-  for (const extension of extensionsData) {
-    results.push({
-      id: extension.id,
-      name: extension.name,
-      description: extension.description,
-      category: 'extensions',
-      data: extension,
-    })
-  }
-
-  // Add Models
-  for (const model of modelsData) {
-    results.push({
-      id: model.id,
-      name: model.name,
-      description: model.description,
-      category: 'models',
-      data: model,
-    })
-  }
-
-  // Add Providers
-  for (const provider of providersData) {
-    results.push({
-      id: provider.id,
-      name: provider.name,
-      description: provider.description,
-      category: 'providers',
-      data: provider,
-    })
-  }
-
-  // Add Vendors
-  for (const vendor of vendorsData) {
-    results.push({
-      id: vendor.id,
-      name: vendor.name,
-      description: vendor.description,
-      category: 'vendors',
-      data: vendor,
-    })
-  }
-
-  return results
+  return getAllManifests().map(({ category, data: item }) => ({
+    id: item.id,
+    name: item.name,
+    description: item.description,
+    category,
+    data: item,
+  }))
 }
 
 /**

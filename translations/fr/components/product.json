@@ -1,0 +1,103 @@
+{
+  "productCommands": {
+    "command": "Commande",
+    "install": "Installer",
+    "launch": "Lancer"
+  },
+  "platformLinks": {
+    "aiPlatforms": {
+      "huggingface": {
+        "description": "Voir la fiche modèle et les poids"
+      },
+      "artificialAnalysis": {
+        "description": "Classement et benchmarks de modèles IA"
+      },
+      "openrouter": {
+        "description": "Comparer et utiliser plusieurs modèles IA"
+      }
+    }
+  },
+  "githubStarHistory": {
+    "loading": "Chargement de l'historique des étoiles...",
+    "title": "Historique des étoiles GitHub",
+    "description": "Tendance de croissance des étoiles au fil du temps",
+    "stars": "étoiles",
+    "fallbackNote": "Note : Affichage de données d'exemple. L'API d'historique des étoiles est temporairement indisponible."
+  },
+  "productHero": {
+    "runtime": "Exécution"
+  },
+  "communityLinks": {
+    "blog": "Blog",
+    "blogDescription": "Lire les articles de blog",
+    "discordDescription": "Rejoindre la communauté",
+    "githubDescription": "Voir les dépôts",
+    "redditDescription": "Rejoindre la discussion",
+    "youtubeDescription": "Regarder les vidéos"
+  },
+  "resourceLinks": {
+    "changelog": "Journal des modifications",
+    "changelogDescription": "Voir le journal des modifications",
+    "downloadDescription": "Télécharger la dernière version",
+    "issue": "Suivi des problèmes",
+    "issueDescription": "Signaler des bugs et demander des fonctionnalités",
+    "mcp": "Documentation MCP",
+    "mcpDescription": "En savoir plus sur l'intégration MCP",
+    "pricingDescription": "Voir les plans tarifaires"
+  },
+  "productPricing": {},
+  "modelSpecifications": {},
+  "benchmarks": {
+    "title": "Performance Benchmarks",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "webDevArenaDesc": "Web development challenges",
+    "sciCodeDesc": "Scientific code generation",
+    "liveCodeBenchDesc": "Live coding performance"
+  },
+  "relatedProducts": {
+    "title": "Produits associés",
+    "viewProduct": "Voir le produit"
+  },
+  "vendorMatrix": {
+    "cell": {
+      "summary": "{count} {category}"
+    },
+    "controls": {
+      "clear": "Clear",
+      "sortByLabel": "Sort by:",
+      "sortName": "Name",
+      "vendorTypeLabel": "Vendor Type:"
+    },
+    "table": {
+      "noVendorsFound": "No vendors found"
+    },
+    "vendorTypes": {
+      "label": "Vendor Types:",
+      "types": {
+        "ai-native": {
+          "description": "Model + Development Tools",
+          "label": "AI Native"
+        },
+        "full-stack": {
+          "description": "IDE + CLI + Extension",
+          "label": "Full Stack"
+        },
+        "model-only": {
+          "description": "Model (with or without Provider)",
+          "label": "Model Only"
+        },
+        "provider-only": {
+          "description": "Provider only",
+          "label": "Provider Only"
+        },
+        "tool-only": {
+          "description": "IDE/CLI/Extension",
+          "label": "Tool Only"
+        }
+      }
+    }
+  }
+}

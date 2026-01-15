@@ -8,7 +8,7 @@
       "description": "AI 驱动的命令行编码代理，直接在终端中编码。与 AI 交互以编写、审查和修改代码，支持多个提供商的前沿模型。"
     },
     "de": {
-      "description": "KI-gestützter Befehlszeilen-Agent zum Codieren direkt vom Terminal aus. Interagieren Sie mit KI, um Code mit Frontier-Modellen mehrerer Anbieter zu schreiben, zu überprüfen und zu ändern."
+      "description": "AI-gestützter Befehlszeilen-Agent zum Codieren direkt vom Terminal aus. Interagieren Sie mit AI, um Code mit Frontier-Modellen mehrerer Anbieter zu schreiben, zu überprüfen und zu ändern."
     },
     "ko": {
       "description": "터미널에서 직접 코딩할 수 있는 AI 기반 명령줄 에이전트입니다. 여러 제공업체의 최첨단 모델로 AI와 상호 작용하여 코드를 작성, 검토 및 수정합니다."

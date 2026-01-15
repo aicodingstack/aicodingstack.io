@@ -17,35 +17,40 @@
     "visit": "Посетить {name}",
     "watch": "Смотреть на {platform}"
   },
-  "common": {
+  "terms": {
+    "aiCoding": "ИИ-кодинг",
     "aiCodingStack": "AI Coding Stack",
-    "articles": "Статьи",
-    "collections": "Коллекции",
-    "community": "Сообщество",
-    "communityLinks": "Ссылки сообщества",
-    "comparison": "Сравнение",
-    "curatedCollections": "Курированные коллекции",
-    "docs": "Документы",
-    "documentation": "Документация",
-    "ecosystemTools": "Инструменты экосистемы",
+    "articles": "Articles",
+    "collections": "Collections",
+    "community": "Community",
+    "communityLinks": "Community Links",
+    "comparison": "Comparison",
+    "curatedCollections": "Curated Collections",
+    "docs": "Docs",
+    "documentation": "Documentation",
+    "ecosystemTools": "Ecosystem Tools",
     "faq": "FAQ",
-    "featuredArticles": "Рекомендуемые статьи",
-    "followUs": "Подписаться на нас",
-    "indexLabel": "ИНДЕКС",
-    "license": "Лицензия",
-    "manifesto": "Манифест",
-    "maxOutput": "Макс. вывод",
-    "modelSize": "Размер модели",
+    "featuredArticles": "Featured Articles",
+    "followUs": "Follow us",
+    "indexLabel": "INDEX",
+    "license": "License",
+    "manifesto": "Manifesto",
+    "maxOutput": "Max Output",
+    "modelSize": "Model Size",
     "openSource": "Open Source",
-    "pricing": "Цены",
-    "products": "Продукты",
-    "proprietary": "Собственный",
-    "resources": "Ресурсы",
-    "slogan": "Откройте. Сравните. Создавайте в 10 раз быстрее.",
-    "specificationsProtocols": "Спецификации и протоколы",
-    "stars": "Звезды",
-    "type": "Тип",
-    "website": "Веб-сайт"
+    "pricing": "Pricing",
+    "products": "Products",
+    "proprietary": "Proprietary",
+    "resources": "Resources",
+    "slogan": "Discover. Compare. Build 10x Faster.",
+    "specificationsProtocols": "Specifications & Protocols",
+    "stars": "Stars",
+    "type": "Type",
+    "version": "Версия",
+    "visitWebsite": "Веб-сайт",
+    "website": "Website",
+    "platforms": "Платформы",
+    "supportedIdes": "Поддерживаемые IDE"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -58,26 +63,66 @@
     "twitter": "X (Twitter)",
     "youtube": "YouTube"
   },
-  "stack": {
-    "cli": "CLI",
-    "extension": "Расширение",
-    "ide": "IDE",
-    "model": "Модель",
-    "modelProvider": "Поставщик модели",
-    "vendor": "Поставщик"
+  "categories": {
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "provider": "Provider",
+      "vendor": "Vendor"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "providers": "Providers",
+      "vendors": "Vendors"
+    },
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    }
   },
-  "stacks": {
-    "allClis": "Все CLI",
-    "allExtensions": "Все расширения",
-    "allIdes": "Все IDE",
-    "allModelProviders": "Все поставщики моделей",
-    "allModels": "Все модели",
-    "allVendors": "Все поставщики",
-    "clis": "CLI",
-    "extensions": "Расширения",
-    "ides": "IDE",
-    "modelProviders": "Поставщики моделей",
-    "models": "Модели",
-    "vendors": "Поставщики"
+  "labels": {
+    "cache": "Cache",
+    "findOnAiPlatforms": "Найти на AI-платформах",
+    "getApiKey": "Получить API ключ",
+    "input": "Input",
+    "output": "Output",
+    "specifications": "Спецификации",
+    "quickLinks": "Быстрые ссылки",
+    "totalContext": "Total Context",
+    "searchByName": "Search by name..."
+  },
+  "providerTypes": {
+    "foundation-model-provider": "Поставщик базовой модели",
+    "model-service-provider": "Поставщик сервисов моделей"
+  },
+  "lifecycle": {
+    "latest": "Latest",
+    "maintained": "Maintained",
+    "deprecated": "Deprecated"
+  },
+  "benchmarks": {
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "webDevArena": "WebDev Arena",
+    "liveCodeBench": "LiveCodeBench"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
   }
 }

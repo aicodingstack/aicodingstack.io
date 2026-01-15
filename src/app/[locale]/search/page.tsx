@@ -14,10 +14,10 @@ type Props = {
 export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const { locale } = await params
   const { q } = await searchParams
-  const t = await getTranslations({ locale, namespace: 'components.search' })
+  const tPage = await getTranslations({ locale, namespace: 'pages.search' })
 
-  const title = q ? t('resultsCountFor', { count: 0, query: q }) : t('title')
-  const description = t('placeholder')
+  const title = q ? tPage('resultsCountFor', { count: 0, query: q }) : tPage('title')
+  const description = tPage('placeholder')
 
   // Generate base metadata using unified generator with 'search' pageType for noindex
   const baseMetadata = await generateStaticPageMetadata({
