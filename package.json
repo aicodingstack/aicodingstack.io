@@ -43,13 +43,13 @@
     "cmdk": "^1.1.1",
     "lucide-react": "^0.562.0",
     "next": "^15.5.9",
-    "next-intl": "^4.6.1",
+    "next-intl": "^4.7.0",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "recharts": "^3.6.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.3.10",
+    "@biomejs/biome": "^2.3.11",
     "@cspell/dict-de-de": "^4.1.2",
     "@cspell/dict-es-es": "^3.0.8",
     "@cspell/dict-fr-fr": "^2.3.2",
@@ -62,7 +62,7 @@
     "@next/mdx": "^15.5.4",
     "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^22.19.2",
-    "@types/react": "^19.2.7",
+    "@types/react": "^19.2.8",
     "@types/react-dom": "^19.2.3",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
@@ -78,7 +78,7 @@
     "typescript": "^5.9.3",
     "user-agents": "^1.1.669",
     "vitest": "^4.0.16",
-    "wrangler": "^4.35.0"
+    "wrangler": "^4.58.0"
   },
   "repository": {
     "type": "git",
