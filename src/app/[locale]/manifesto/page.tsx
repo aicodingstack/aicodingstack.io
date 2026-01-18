@@ -52,7 +52,7 @@ export default async function ManifestoPage({ params }: LocalePageProps) {
                 {tShared('terms.aiCodingStack')}
               </h2>
               <p className="text-sm text-[var(--color-text-secondary)]">
-                {tPage('exploreStack.subtitle')}
+                {tShared('terms.ecosystemSubtitle')}
               </p>
             </div>
             <span className="text-4xl text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-2 transition-all">

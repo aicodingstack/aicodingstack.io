@@ -4,25 +4,146 @@
     "title": "Specifications & Protocols",
     "description": "Essential standards and protocols for modern software development",
     "translations": {
+      "en": {
+        "title": "Specifications & Protocols",
+        "description": "Essential standards and protocols for modern software development"
+      },
+      "de": {
+        "title": "Spezifikationen & Protokolle",
+        "description": "Wichtige Standards und Protokolle für die moderne Softwareentwicklung"
+      },
+      "es": {
+        "title": "Especificaciones y Protocolos",
+        "description": "Estándares y protocolos esenciales para el desarrollo de software moderno"
+      },
+      "fr": {
+        "title": "Spécifications et Protocoles",
+        "description": "Normes et protocoles essentiels pour le développement logiciel moderne"
+      },
+      "id": {
+        "title": "Spesifikasi & Protokol",
+        "description": "Standar dan protokol penting untuk pengembangan perangkat lunak modern"
+      },
+      "ja": {
+        "title": "仕様とプロトコル",
+        "description": "現代のソフトウェア開発に不可欠な標準とプロトコル"
+      },
+      "ko": {
+        "title": "사양 및 프로토콜",
+        "description": "현대 소프트웨어 개발을 위한 필수 표준 및 프로토콜"
+      },
+      "pt": {
+        "title": "Especificações e Protocolos",
+        "description": "Padrões e protocolos essenciais para desenvolvimento de software moderno"
+      },
+      "ru": {
+        "title": "Спецификации и протоколы",
+        "description": "Основные стандарты и протоколы для современной разработки программного обеспечения"
+      },
+      "tr": {
+        "title": "Spesifikasyonlar ve Protokoller",
+        "description": "Modern yazılım geliştirme için temel standartlar ve protokoller"
+      },
       "zh-Hans": {
         "title": "规范与协议",
         "description": "现代软件开发的基本标准和协议"
+      },
+      "zh-Hant": {
+        "title": "規範與協議",
+        "description": "現代軟體開發的基本標準和協議"
       }
     },
     "sections": [
       {
         "title": "Development Standards",
         "translations": {
+          "en": {
+            "title": "Development Standards"
+          },
+          "de": {
+            "title": "Entwicklungsstandards"
+          },
+          "es": {
+            "title": "Estándares de Desarrollo"
+          },
+          "fr": {
+            "title": "Normes de Développement"
+          },
+          "id": {
+            "title": "Standar Pengembangan"
+          },
+          "ja": {
+            "title": "開発標準"
+          },
+          "ko": {
+            "title": "개발 표준"
+          },
+          "pt": {
+            "title": "Padrões de Desenvolvimento"
+          },
+          "ru": {
+            "title": "Стандарты разработки"
+          },
+          "tr": {
+            "title": "Geliştirme Standartları"
+          },
           "zh-Hans": {
             "title": "开发标准"
+          },
+          "zh-Hant": {
+            "title": "開發標準"
           }
         },
         "items": [
           {
             "translations": {
+              "en": {
+                "name": "Conventional Commits",
+                "description": "Lightweight convention for structured commit messages that enable automated changelog generation and semantic versioning"
+              },
+              "de": {
+                "name": "Conventional Commits",
+                "description": "Leichtgewichtige Konvention für strukturierte Commit-Nachrichten, die automatische Changelog-Generierung und semantisches Versioning ermöglichen"
+              },
+              "es": {
+                "name": "Conventional Commits",
+                "description": "Convención ligera para mensajes de confirmación estructurados que permite la generación automática de changelog y versionado semántico"
+              },
+              "fr": {
+                "name": "Conventional Commits",
+                "description": "Convention légère pour les messages de commit structurés permettant la génération automatique de changelog et le versionnage sémantique"
+              },
+              "id": {
+                "name": "Conventional Commits",
+                "description": "Konvensi ringan untuk pesan commit terstruktur yang memungkinkan pembuatan changelog otomatis dan versioning semantik"
+              },
+              "ja": {
+                "name": "Conventional Commits",
+                "description": "自動変更履歴生成とセマンティックバージョニングを可能にする構造化コミットメッセージの軽量規約"
+              },
+              "ko": {
+                "name": "Conventional Commits",
+                "description": "자동 변경 로그 생성 및 시맨틱 버전 관리를 가능하게 하는 구조화된 커밋 메시지를 위한 경량 규칙"
+              },
+              "pt": {
+                "name": "Conventional Commits",
+                "description": "Convenção leve para mensagens de commit estruturadas que permitem geração automatizada de changelog e versionamento semântico"
+              },
+              "ru": {
+                "name": "Conventional Commits",
+                "description": "Легковесная конвенция для структурированных сообщений коммитов, позволяющая автоматически генерировать журнал изменений и использовать семантическое версионирование"
+              },
+              "tr": {
+                "name": "Conventional Commits",
+                "description": "Otomatik değişiklik kaydı oluşturma ve anlamsal sürüm oluşturmayı sağlayan yapılandırılmış commit mesajları için hafif bir kural"
+              },
               "zh-Hans": {
                 "name": "约定式提交",
                 "description": "结构化提交消息的轻量级约定，支持自动化变更日志生成和语义化版本控制"
+              },
+              "zh-Hant": {
+                "name": "約定式提交",
+                "description": "結構化提交訊息的輕量級約定，支援自動化變更日誌生成和語義化版本控制"
               }
             },
             "name": "Conventional Commits",
@@ -31,9 +152,53 @@
           },
           {
             "translations": {
+              "en": {
+                "name": "Semantic Versioning",
+                "description": "Versioning scheme using MAJOR.MINOR.PATCH format to communicate compatibility and impact of updates"
+              },
+              "de": {
+                "name": "Semantic Versioning",
+                "description": "Versionierungsschema im Format MAJOR.MINOR.PATCH zur Kommunikation von Kompatibilität und Auswirkungen von Updates"
+              },
+              "es": {
+                "name": "Semantic Versioning",
+                "description": "Esquema de versionado usando formato MAJOR.MINOR.PATCH para comunicar compatibilidad e impacto de actualizaciones"
+              },
+              "fr": {
+                "name": "Semantic Versioning",
+                "description": "Schéma de versionnage utilisant le format MAJOR.MINOR.PATCH pour communiquer la compatibilité et l'impact des mises à jour"
+              },
+              "id": {
+                "name": "Semantic Versioning",
+                "description": "Skema versioning menggunakan format MAJOR.MINOR.PATCH untuk mengkomunikasikan kompatibilitas dan dampak pembaruan"
+              },
+              "ja": {
+                "name": "Semantic Versioning",
+                "description": "互換性と更新の影響を伝えるためのMAJOR.MINOR.PATCH形式のバージョニングスキーム"
+              },
+              "ko": {
+                "name": "Semantic Versioning",
+                "description": "호환성 및 업데이트 영향을 전달하기 위해 MAJOR.MINOR.PATCH 형식을 사용하는 버전 관리 체계"
+              },
+              "pt": {
+                "name": "Semantic Versioning",
+                "description": "Esquema de versionamento usando formato MAJOR.MINOR.PATCH para comunicar compatibilidade e impacto de atualizações"
+              },
+              "ru": {
+                "name": "Semantic Versioning",
+                "description": "Схема версионирования, использующая формат MAJOR.MINOR.PATCH для обозначения совместимости и влияния обновлений"
+              },
+              "tr": {
+                "name": "Semantic Versioning",
+                "description": "MAJOR.MINOR.PATCH formatını kullanarak uyumluluk ve güncelleme etkilerini ileten sürüm oluşturma şeması"
+              },
               "zh-Hans": {
                 "name": "语义化版本",
                 "description": "使用 MAJOR.MINOR.PATCH 格式的版本控制方案，传达兼容性和更新影响"
+              },
+              "zh-Hant": {
+                "name": "語義化版本",
+                "description": "使用 MAJOR.MINOR.PATCH 格式的版本控制方案，傳達相容性和更新影響"
               }
             },
             "name": "Semantic Versioning",
@@ -45,16 +210,93 @@
       {
         "title": "Agent Protocols",
         "translations": {
+          "en": {
+            "title": "Agent Protocols"
+          },
+          "de": {
+            "title": "Agent-Protokolle"
+          },
+          "es": {
+            "title": "Protocolos de Agentes"
+          },
+          "fr": {
+            "title": "Protocoles d'Agents"
+          },
+          "id": {
+            "title": "Protokol Agent"
+          },
+          "ja": {
+            "title": "エージェントプロトコル"
+          },
+          "ko": {
+            "title": "에이전트 프로토콜"
+          },
+          "pt": {
+            "title": "Protocolos de Agentes"
+          },
+          "ru": {
+            "title": "Протоколы агентов"
+          },
+          "tr": {
+            "title": "Ajan Protokolleri"
+          },
           "zh-Hans": {
             "title": "Agent 协议"
+          },
+          "zh-Hant": {
+            "title": "Agent 協議"
           }
         },
         "items": [
           {
             "translations": {
+              "en": {
+                "name": "Agent2Agent (A2A)",
+                "description": "Open protocol enabling secure communication and collaboration between AI agents across different platforms"
+              },
+              "de": {
+                "name": "Agent2Agent (A2A)",
+                "description": "Offenes Protokoll für sichere Kommunikation und Zusammenarbeit zwischen KI-Agenten über verschiedene Plattformen hinweg"
+              },
+              "es": {
+                "name": "Agent2Agent (A2A)",
+                "description": "Protocolo abierto que permite comunicación y colaboración segura entre agentes de IA en diferentes plataformas"
+              },
+              "fr": {
+                "name": "Agent2Agent (A2A)",
+                "description": "Protocole ouvert permettant une communication et une collaboration sécurisées entre les agents IA sur différentes plateformes"
+              },
+              "id": {
+                "name": "Agent2Agent (A2A)",
+                "description": "Protokol terbuka yang memungkinkan komunikasi dan kolaborasi aman antar agen AI di berbagai platform"
+              },
+              "ja": {
+                "name": "Agent2Agent (A2A)",
+                "description": "異なるプラットフォーム間でAIエージェント間の安全な通信とコラボレーションを可能にするオープンプロトコル"
+              },
+              "ko": {
+                "name": "Agent2Agent (A2A)",
+                "description": "다양한 플랫폼에서 AI 에이전트 간의 안전한 통신과 협업을 가능하게 하는 개방형 프로토콜"
+              },
+              "pt": {
+                "name": "Agent2Agent (A2A)",
+                "description": "Protocolo aberto que permite comunicação e colaboração segura entre agentes de IA em diferentes plataformas"
+              },
+              "ru": {
+                "name": "Agent2Agent (A2A)",
+                "description": "Открытый протокол, обеспечивающий безопасную связь и взаимодействие между ИИ-агентами на разных платформах"
+              },
+              "tr": {
+                "name": "Agent2Agent (A2A)",
+                "description": "Farklı platformlardaki AI ajanları arasında güvenli iletişim ve işbirliği sağlayan açık protokol"
+              },
               "zh-Hans": {
                 "name": "Agent 间通信协议 (A2A)",
                 "description": "支持不同平台之间 AI Agent 安全通信和协作的开放协议"
+              },
+              "zh-Hant": {
+                "name": "Agent 間通訊協議 (A2A)",
+                "description": "支援不同平台之間 AI Agent 安全通訊和協作的開放協議"
               }
             },
             "name": "Agent2Agent (A2A)",
@@ -63,20 +305,53 @@
           },
           {
             "translations": {
-              "zh-Hans": {
-                "name": "Agent 客户端协议 (ACP)",
-                "description": "标准化代码编辑器与 Agent 之间通信的开放协议，用于自主代码修改"
-              }
-            },
-            "name": "Agent Client Protocol (ACP)",
-            "url": "https://agentclientprotocol.com",
-            "description": "Open protocol standardizing communication between code editors and coding agents for autonomous code modification"
-          },
-          {
-            "translations": {
+              "en": {
+                "name": "Agent Network Protocol (ANP)",
+                "description": "Decentralized protocol for trustless agent communication with DID-based identity and automatic protocol negotiation"
+              },
+              "de": {
+                "name": "Agent Network Protocol (ANP)",
+                "description": "Dezentralisiertes Protokoll für vertrauenslose Agentenkommunikation mit DID-basierter Identität und automatischer Protokollverhandlung"
+              },
+              "es": {
+                "name": "Agent Network Protocol (ANP)",
+                "description": "Protocolo descentralizado para comunicación sin confianza entre agentes con identidad basada en DID y negociación automática de protocolos"
+              },
+              "fr": {
+                "name": "Agent Network Protocol (ANP)",
+                "description": "Protocole décentralisé pour la communication sans confiance entre agents avec identité basée sur DID et négociation automatique de protocoles"
+              },
+              "id": {
+                "name": "Agent Network Protocol (ANP)",
+                "description": "Protokol terdesentralisasi untuk komunikasi agen tanpa kepercayaan dengan identitas berbasis DID dan negosiasi protok otomatis"
+              },
+              "ja": {
+                "name": "Agent Network Protocol (ANP)",
+                "description": "DIDベースのIDと自動プロトコルネゴシエーションを備えた、信頼不要のエージェント通信のための分散型プロトコル"
+              },
+              "ko": {
+                "name": "Agent Network Protocol (ANP)",
+                "description": "DID 기반 신원 및 자동 프로토콜 협상을 갖춘 신뢰 없는 에이전트 통신을 위한 분산형 프로토콜"
+              },
+              "pt": {
+                "name": "Agent Network Protocol (ANP)",
+                "description": "Protocolo descentralizado para comunicação sem confiança entre agentes com identidade baseada em DID e negociação automática de protocolos"
+              },
+              "ru": {
+                "name": "Agent Network Protocol (ANP)",
+                "description": "Децентрализованный протокол для бесправерочного взаимодействия агентов с идентификацией на основе DID и автоматическим согласованием протоколов"
+              },
+              "tr": {
+                "name": "Agent Network Protocol (ANP)",
+                "description": "DID tabanlı kimlik ve otomatik protokol görüşmesi ile güven gerektirmeyen ajan iletişimi için merkeziyetsiz protokol"
+              },
               "zh-Hans": {
                 "name": "Agent 网络协议 (ANP)",
                 "description": "基于 DID 身份和自动协议协商的去中心化无信任 Agent 通信协议"
+              },
+              "zh-Hant": {
+                "name": "Agent 網路協議 (ANP)",
+                "description": "基於 DID 身份和自動協議協商的去中心化無信任 Agent 通訊協議"
               }
             },
             "name": "Agent Network Protocol (ANP)",
@@ -85,14 +360,211 @@
           },
           {
             "translations": {
+              "en": {
+                "name": "Agent Payments Protocol (AP2)",
+                "description": "Open protocol for secure agent-led payments using verifiable digital credentials and authorization mandates"
+              },
+              "de": {
+                "name": "Agent Payments Protocol (AP2)",
+                "description": "Offenes Protokoll für sichere, agentengesteuerte Zahlungen mit verifizierbaren digitalen Nachweisen und Autorisierungsaufträgen"
+              },
+              "es": {
+                "name": "Agent Payments Protocol (AP2)",
+                "description": "Protocolo abierto para pagos seguros dirigidos por agentes utilizando credenciales digitales verificables y mandatos de autorización"
+              },
+              "fr": {
+                "name": "Agent Payments Protocol (AP2)",
+                "description": "Protocole ouvert pour les paiements sécurisés dirigés par des agents utilisant des informations d'identification numériques vérifiables et des mandats d'autorisation"
+              },
+              "id": {
+                "name": "Agent Payments Protocol (AP2)",
+                "description": "Protokol terbuka untuk pembayaran aman yang dipimpin agen menggunakan kredensial digital yang dapat diverifikasi dan mandat otorisasi"
+              },
+              "ja": {
+                "name": "Agent Payments Protocol (AP2)",
+                "description": "検証可能なデジタル認証情報と委任状を使用した、エージェント主導の安全な決済のためのオープンプロトコル"
+              },
+              "ko": {
+                "name": "Agent Payments Protocol (AP2)",
+                "description": "검증 가능한 디지털 자격 증명 및 인증 위임을 사용하는 에이전트 주도의 보안 결제를 위한 개방형 프로토콜"
+              },
+              "pt": {
+                "name": "Agent Payments Protocol (AP2)",
+                "description": "Protocolo aberto para pagamentos seguros liderados por agentes usando credenciais digitais verificáveis e mandatos de autorização"
+              },
+              "ru": {
+                "name": "Agent Payments Protocol (AP2)",
+                "description": "Открытый протокол для безопасных платежей, инициируемых агентами, с использованием проверяемых цифровых учетных данных и полномочий на авторизацию"
+              },
+              "tr": {
+                "name": "Agent Payments Protocol (AP2)",
+                "description": "Doğrulanabilir dijital kimlik bilgileri ve yetkilendirme mandaları kullanarak ajan liderliğinde güvenli ödemeler için açık protokol"
+              },
               "zh-Hans": {
                 "name": "Agent 支付协议 (AP2)",
                 "description": "使用可验证数字凭证和授权委托的安全 Agent 支付开放协议"
+              },
+              "zh-Hant": {
+                "name": "Agent 支付協議 (AP2)",
+                "description": "使用可驗證數字憑證和授權委託的安全 Agent 支付開放協議"
               }
             },
             "name": "Agent Payments Protocol (AP2)",
             "url": "https://ap2-protocol.org",
             "description": "Open protocol for secure agent-led payments using verifiable digital credentials and authorization mandates"
+          }
+        ]
+      },
+      {
+        "title": "Others",
+        "translations": {
+          "en": {
+            "title": "Others"
+          },
+          "de": {
+            "title": "Andere"
+          },
+          "es": {
+            "title": "Otros"
+          },
+          "fr": {
+            "title": "Autres"
+          },
+          "id": {
+            "title": "Lainnya"
+          },
+          "ja": {
+            "title": "その他"
+          },
+          "ko": {
+            "title": "기타"
+          },
+          "pt": {
+            "title": "Outros"
+          },
+          "ru": {
+            "title": "Другие"
+          },
+          "tr": {
+            "title": "Diğerleri"
+          },
+          "zh-Hans": {
+            "title": "其他"
+          },
+          "zh-Hant": {
+            "title": "其他"
+          }
+        },
+        "items": [
+          {
+            "translations": {
+              "en": {
+                "name": "Agent Client Protocol (ACP)",
+                "description": "Open protocol standardizing communication between code editors and coding agents for autonomous code modification"
+              },
+              "de": {
+                "name": "Agent Client Protocol (ACP)",
+                "description": "Offenes Protokoll zur Standardisierung der Kommunikation zwischen Code-Editoren und Coding-Agents für autonome Codeänderungen"
+              },
+              "es": {
+                "name": "Agent Client Protocol (ACP)",
+                "description": "Protocolo abierto que estandariza la comunicación entre editores de código y agentes de codificación para modificación autónoma de código"
+              },
+              "fr": {
+                "name": "Agent Client Protocol (ACP)",
+                "description": "Protocole ouvert normalisant la communication entre les éditeurs de code et les agents de codage pour la modification autonome du code"
+              },
+              "id": {
+                "name": "Agent Client Protocol (ACP)",
+                "description": "Protokol terbuka yang menstandarkan komunikasi antara editor kode dan agen pengoding untuk modifikasi kode otonom"
+              },
+              "ja": {
+                "name": "Agent Client Protocol (ACP)",
+                "description": "自律的なコード変更のためのコードエディタとコーディングエージェント間の通信を標準化するオープンプロトコル"
+              },
+              "ko": {
+                "name": "Agent Client Protocol (ACP)",
+                "description": "자율적인 코드 수정을 위한 코드 편집기와 코딩 에이전트 간의 통신을 표준화하는 개방형 프로토콜"
+              },
+              "pt": {
+                "name": "Agent Client Protocol (ACP)",
+                "description": "Protocolo aberto que padroniza a comunicação entre editores de código e agentes de codificação para modificação autônoma de código"
+              },
+              "ru": {
+                "name": "Agent Client Protocol (ACP)",
+                "description": "Открытый протокол, стандартизирующий взаимодействие между редакторами кода и агентами программирования для автономного изменения кода"
+              },
+              "tr": {
+                "name": "Agent Client Protocol (ACP)",
+                "description": "Otonom kod değişikliği için kod editörleri ve kodlama ajanları arasındaki iletişimi standartlaştıran açık protokol"
+              },
+              "zh-Hans": {
+                "name": "Agent 客户端协议 (ACP)",
+                "description": "标准化代码编辑器与 Agent 之间通信的开放协议，用于自主代码修改"
+              },
+              "zh-Hant": {
+                "name": "Agent 客戶端協議 (ACP)",
+                "description": "標準化代碼編輯器與 Agent 之間通訊的開放協議，用於自主代碼修改"
+              }
+            },
+            "name": "Agent Client Protocol (ACP)",
+            "url": "https://agentclientprotocol.com",
+            "description": "Open protocol standardizing communication between code editors and coding agents for autonomous code modification"
+          },
+          {
+            "name": "Open Responses",
+            "url": "https://www.openresponses.org",
+            "description": "Open specification for multi-provider, interoperable LLM interfaces based on OpenAI Responses API",
+            "translations": {
+              "en": {
+                "name": "Open Responses",
+                "description": "Open specification for multi-provider, interoperable LLM interfaces based on OpenAI Responses API"
+              },
+              "de": {
+                "name": "Open Responses",
+                "description": "Offene Spezifikation für Multi-Provider-, interoperable LLM-Schnittstellen basierend auf der OpenAI Responses API"
+              },
+              "es": {
+                "name": "Open Responses",
+                "description": "Especificación abierta para interfaces LLM interoperables y multiproveedor basada en la API de OpenAI Responses"
+              },
+              "fr": {
+                "name": "Open Responses",
+                "description": "Spécification ouverte pour les interfaces LLM interopérables et multi-fournisseurs basée sur l'API OpenAI Responses"
+              },
+              "id": {
+                "name": "Open Responses",
+                "description": "Spesifikasi terbuka untuk antarmuka LLM multi-penyedia yang dapat dioperasikan berdasarkan OpenAI Responses API"
+              },
+              "ja": {
+                "name": "Open Responses",
+                "description": "OpenAI Responses APIに基づくマルチプロバイダー、相互運用可能なLLMインターフェースのオープン仕様"
+              },
+              "ko": {
+                "name": "Open Responses",
+                "description": "OpenAI Responses API를 기반으로 하는 다중 공급업체 상호 운용 가능 LLM 인터페이스의 개방형 사양"
+              },
+              "pt": {
+                "name": "Open Responses",
+                "description": "Especificação aberta para interfaces LLM interoperáveis e multi-fornecedor baseada na OpenAI Responses API"
+              },
+              "ru": {
+                "name": "Open Responses",
+                "description": "Открытая спецификация для многоязычных, совместимых интерфейсов LLM на основе OpenAI Responses API"
+              },
+              "tr": {
+                "name": "Open Responses",
+                "description": "OpenAI Responses API tabanlı çok sağlayıcılı, birlikte çalışabilir LLM arayüzleri için açık spesifikasyon"
+              },
+              "zh-Hans": {
+                "name": "Open Responses",
+                "description": "基于 OpenAI Responses API 的多提供商、可互操作 LLM 接口的开放规范"
+              },
+              "zh-Hant": {
+                "name": "Open Responses",
+                "description": "基於 OpenAI Responses API 的多提供商、可互操作 LLM 介面的開放規範"
+              }
+            }
           }
         ]
       }
@@ -102,25 +574,122 @@
     "title": "Featured Articles",
     "description": "Must-read articles about AI coding from industry leaders",
     "translations": {
+      "en": {
+        "title": "Featured Articles",
+        "description": "Must-read articles about AI coding from industry leaders"
+      },
+      "de": {
+        "title": "Empfohlene Artikel",
+        "description": "Unverzichtbare Artikel über AI-Coding von Branchenführern"
+      },
+      "es": {
+        "title": "Artículos Destacados",
+        "description": "Artículos indispensables sobre codificación AI de líderes de la industria"
+      },
+      "fr": {
+        "title": "Articles en Vedette",
+        "description": "Articles incontournables sur le codage IA par des leaders de l'industrie"
+      },
+      "id": {
+        "title": "Artikel Pilihan",
+        "description": "Artikel wajib baca tentang AI coding dari pemimpin industri"
+      },
+      "ja": {
+        "title": "注目記事",
+        "description": "業界リーダーによるAIコーディングに関する必読記事"
+      },
+      "ko": {
+        "title": "추천 기사",
+        "description": "업계 리더들의 AI 코딩에 대한 필독 기사"
+      },
+      "pt": {
+        "title": "Artigos em Destaque",
+        "description": "Artigos obrigatórios sobre codificação AI de líderes da indústria"
+      },
+      "ru": {
+        "title": "Рекомендуемые статьи",
+        "description": "Обязательные статьи об AI-программировании от лидеров отрасли"
+      },
+      "tr": {
+        "title": "Öne Çıkan Makaleler",
+        "description": "Sektör liderlerinden AI kodlama hakkında okunması gereken makaleler"
+      },
       "zh-Hans": {
         "title": "精选文章",
         "description": "来自行业领袖的 AI 编码必读文章"
+      },
+      "zh-Hant": {
+        "title": "精選文章",
+        "description": "來自行業領袖的 AI 編碼必讀文章"
       }
     },
     "sections": [
       {
         "title": "OpenAI on Coding",
         "translations": {
-          "zh-Hans": {
-            "title": "OpenAI 关于编码"
-          }
+          "en": { "title": "OpenAI on Coding" },
+          "de": { "title": "OpenAI über Codierung" },
+          "es": { "title": "OpenAI sobre Codificación" },
+          "fr": { "title": "OpenAI sur le Codage" },
+          "id": { "title": "OpenAI tentang Coding" },
+          "ja": { "title": "コーディングに関するOpenAI" },
+          "ko": { "title": "코딩에 관한 OpenAI" },
+          "pt": { "title": "OpenAI sobre Codificação" },
+          "ru": { "title": "OpenAI о программировании" },
+          "tr": { "title": "Kodlama Hakkında OpenAI" },
+          "zh-Hans": { "title": "OpenAI 关于编码" },
+          "zh-Hant": { "title": "OpenAI 關於編碼" }
         },
         "items": [
           {
             "translations": {
+              "en": {
+                "name": "Building AI-Powered Applications",
+                "description": "Best practices for deploying AI applications in production"
+              },
+              "de": {
+                "name": "KI-gestützte Anwendungen erstellen",
+                "description": "Bewährte Methoden für die Bereitstellung von KI-Anwendungen in der Produktion"
+              },
+              "es": {
+                "name": "Construcción de Aplicaciones Impulsadas por IA",
+                "description": "Mejores prácticas para desplegar aplicaciones de IA en producción"
+              },
+              "fr": {
+                "name": "Créer des Applications Alimentées par l'IA",
+                "description": "Meilleures pratiques pour déployer des applications IA en production"
+              },
+              "id": {
+                "name": "Membangun Aplikasi Bertenaga AI",
+                "description": "Praktik terbaik untuk men-deploy aplikasi AI di lingkungan produksi"
+              },
+              "ja": {
+                "name": "AI搭載アプリケーションの構築",
+                "description": "本番環境でAIアプリケーションを展開するためのベストプラクティス"
+              },
+              "ko": {
+                "name": "AI 기반 애플리케이션 구축",
+                "description": "프로덕션 환경에서 AI 애플리케이션 배포를 위한 모범 사례"
+              },
+              "pt": {
+                "name": "Construindo Aplicações Alimentadas por AI",
+                "description": "Melhores práticas para implantar aplicações de AI em produção"
+              },
+              "ru": {
+                "name": "Создание приложений на базе ИИ",
+                "description": "Лучшие практики развертывания приложений ИИ в производственной среде"
+              },
+              "tr": {
+                "name": "AI Destekli Uygulamalar Oluşturma",
+                "description": "AI uygulamalarını prodüksiyonda dağıtmak için en iyi uygulamalar"
+              },
               "zh-Hans": {
                 "name": "构建 AI 驱动的应用",
                 "description": "在生产环境中部署 AI 应用的最佳实践"
+              },
+              "zh-Hant": {
+                "name": "構建 AI 驅動的應用",
+                "description": "在生產環境中部署 AI 應用的最佳實踐"
               }
             },
             "name": "Building AI-Powered Applications",
@@ -129,10 +698,48 @@
           },
           {
             "translations": {
-              "zh-Hans": {
-                "name": "提示工程指南",
-                "description": "制作有效代码生成提示的策略"
-              }
+              "en": {
+                "name": "Prompt Engineering Guide",
+                "description": "Strategies for crafting effective prompts for code generation"
+              },
+              "de": {
+                "name": "Prompt-Engineering-Leitfaden",
+                "description": "Strategien für die Erstellung effektiver Prompts für Codegenerierung"
+              },
+              "es": {
+                "name": "Guía de Ingeniería de Prompts",
+                "description": "Estrategias para crear prompts efectivos para generación de código"
+              },
+              "fr": {
+                "name": "Guide de l'Ingénierie des Prompts",
+                "description": "Stratégies pour crafting des prompts efficaces pour la génération de code"
+              },
+              "id": {
+                "name": "Panduan Prompt Engineering",
+                "description": "Strategi untuk crafting prompt efektif untuk generasi kode"
+              },
+              "ja": {
+                "name": "プロンプトエンジニアリングガイド",
+                "description": "コード生成のための効果的なプロンプトを作成する戦略"
+              },
+              "ko": {
+                "name": "프롬프트 엔지니어링 가이드",
+                "description": "코드 생성을 위한 효과적인 프롬프트 작성 전략"
+              },
+              "pt": {
+                "name": "Guia de Engenharia de Prompts",
+                "description": "Estratégias para criar prompts eficazes para geração de código"
+              },
+              "ru": {
+                "name": "Руководство по prompt engineering",
+                "description": "Стратегии создания эффективных промптов для генерации кода"
+              },
+              "tr": {
+                "name": "Prompt Mühendisliği Kılavuzu",
+                "description": "Kod üretimi için etkili istemler oluşturma stratejileri"
+              },
+              "zh-Hans": { "name": "提示工程指南", "description": "制作有效代码生成提示的策略" },
+              "zh-Hant": { "name": "提示工程指南", "description": "製作有效代碼生成提示的策略" }
             },
             "name": "Prompt Engineering Guide",
             "url": "https://platform.openai.com/docs/guides/prompt-engineering",
@@ -143,17 +750,64 @@
       {
         "title": "Cursor Insights",
         "translations": {
-          "zh-Hans": {
-            "title": "Cursor 见解"
-          }
+          "en": { "title": "Cursor Insights" },
+          "de": { "title": "Cursor-Erkenntnisse" },
+          "es": { "title": "Informaciones de Cursor" },
+          "fr": { "title": "Aperçus de Cursor" },
+          "id": { "title": "Wawasan Cursor" },
+          "ja": { "title": "Cursor の洞察" },
+          "ko": { "title": "Cursor 인사이트" },
+          "pt": { "title": "Insights do Cursor" },
+          "ru": { "title": "Инсайты Cursor" },
+          "tr": { "title": "Cursor İçgörüleri" },
+          "zh-Hans": { "title": "Cursor 见解" },
+          "zh-Hant": { "title": "Cursor 見解" }
         },
         "items": [
           {
             "translations": {
-              "zh-Hans": {
-                "name": "编程的未来",
-                "description": "AI 如何重塑开发工作流"
-              }
+              "en": {
+                "name": "The Future of Programming",
+                "description": "How AI is reshaping the development workflow"
+              },
+              "de": {
+                "name": "Die Zukunft des Programmierens",
+                "description": "Wie KI den Entwicklungs-Workflow neu gestaltet"
+              },
+              "es": {
+                "name": "El Futuro de la Programación",
+                "description": "Cómo la IA está reconfigurando el flujo de trabajo de desarrollo"
+              },
+              "fr": {
+                "name": "L'Avenir de la Programmation",
+                "description": "Comment l'IA redéfinit le flux de travail de développement"
+              },
+              "id": {
+                "name": "Masa Depang Programming",
+                "description": "Bagaimana AI membentuk kembali workflow pengembangan"
+              },
+              "ja": {
+                "name": "プログラミングの未来",
+                "description": "AIが開発ワークフローをどのように再構築しているか"
+              },
+              "ko": {
+                "name": "프로그래밍의 미래",
+                "description": "AI가 개발 워크플로우를 어떻게 재구성하는가"
+              },
+              "pt": {
+                "name": "O Futuro da Programação",
+                "description": "Como AI está remodelando o fluxo de trabalho de desenvolvimento"
+              },
+              "ru": {
+                "name": "Будущее программирования",
+                "description": "Как ИИ меняет рабочий процесс разработки"
+              },
+              "tr": {
+                "name": "Programlamanın Geleceği",
+                "description": "AI geliştirme iş akışını nasıl yeniden şekillendiriyor"
+              },
+              "zh-Hans": { "name": "编程的未来", "description": "AI 如何重塑开发工作流" },
+              "zh-Hant": { "name": "程式設計的未來", "description": "AI 如何重塑開發工作流" }
             },
             "name": "The Future of Programming",
             "url": "https://cursor.sh/blog",
@@ -161,10 +815,48 @@
           },
           {
             "translations": {
-              "zh-Hans": {
-                "name": "AI 优先的 IDE 设计",
-                "description": "设计无缝 AI 协作的 IDE"
-              }
+              "en": {
+                "name": "AI-First IDE Design",
+                "description": "Designing IDEs for seamless AI collaboration"
+              },
+              "de": {
+                "name": "KI-First-IDE-Design",
+                "description": "IDEs für nahtlose KI-Zusammenarbeit entwerfen"
+              },
+              "es": {
+                "name": "Diseño de IDE con IA en Primero",
+                "description": "Diseñando IDEs para colaboración IA fluida"
+              },
+              "fr": {
+                "name": "Conception IDE IA en Premier",
+                "description": "Concevoir des IDE pour une collaboration IA fluide"
+              },
+              "id": {
+                "name": "Desain IDE AI-First",
+                "description": "Merancang IDE untuk kolaborasi AI yang mulus"
+              },
+              "ja": {
+                "name": "AIファーストIDE設計",
+                "description": "シームレスなAIコラボレーションのためのIDE設計"
+              },
+              "ko": {
+                "name": "AI 우선 IDE 설계",
+                "description": "매끄러운 AI 협업을 위한 IDE 설계"
+              },
+              "pt": {
+                "name": "Design de IDE AI em Primeiro",
+                "description": "Projetando IDEs para colaboração AI perfeita"
+              },
+              "ru": {
+                "name": "Дизайн IDE с ИИ в первую очередь",
+                "description": "Проектирование IDE для бесшовного сотрудничества с ИИ"
+              },
+              "tr": {
+                "name": "AI Öncelikli IDE Tasarımı",
+                "description": "Kusursuz AI işbirliği için IDE'ler tasarlama"
+              },
+              "zh-Hans": { "name": "AI 优先的 IDE 设计", "description": "设计无缝 AI 协作的 IDE" },
+              "zh-Hant": { "name": "AI 優先的 IDE 設計", "description": "設計無縫 AI 協作的 IDE" }
             },
             "name": "AI-First IDE Design",
             "url": "https://cursor.sh/features",
@@ -175,16 +867,69 @@
       {
         "title": "Claude on AI Coding",
         "translations": {
-          "zh-Hans": {
-            "title": "Claude 关于 AI 编码"
-          }
+          "en": { "title": "Claude on AI Coding" },
+          "de": { "title": "Claude über AI-Coding" },
+          "es": { "title": "Claude sobre Codificación AI" },
+          "fr": { "title": "Claude sur le Codage IA" },
+          "id": { "title": "Claude tentang AI Coding" },
+          "ja": { "title": "AIコーディングに関するClaude" },
+          "ko": { "title": "AI 코딩에 관한 Claude" },
+          "pt": { "title": "Claude sobre Codificação AI" },
+          "ru": { "title": "Claude о AI-программировании" },
+          "tr": { "title": "AI Kodlama Hakkında Claude" },
+          "zh-Hans": { "title": "Claude 关于 AI 编码" },
+          "zh-Hant": { "title": "Claude 關於 AI 編碼" }
         },
         "items": [
           {
             "translations": {
+              "en": {
+                "name": "Building with Claude Code",
+                "description": "Introduction to Claude Code and its capabilities"
+              },
+              "de": {
+                "name": "Entwicklung mit Claude Code",
+                "description": "Einführung in Claude Code und seine Möglichkeiten"
+              },
+              "es": {
+                "name": "Construcción con Claude Code",
+                "description": "Introducción a Claude Code y sus capacidades"
+              },
+              "fr": {
+                "name": "Développement avec Claude Code",
+                "description": "Introduction à Claude Code et ses capacités"
+              },
+              "id": {
+                "name": "Membangun dengan Claude Code",
+                "description": "Pengenalan Claude Code dan kemampuannya"
+              },
+              "ja": {
+                "name": "Claude Code で構築する",
+                "description": "Claude Codeとその機能の紹介"
+              },
+              "ko": {
+                "name": "Claude Code로 구축하기",
+                "description": "Claude Code 및 해당 기능 소개"
+              },
+              "pt": {
+                "name": "Construindo com Claude Code",
+                "description": "Introdução ao Claude Code e suas capacidades"
+              },
+              "ru": {
+                "name": "Разработка с Claude Code",
+                "description": "Введение в Claude Code и его возможности"
+              },
+              "tr": {
+                "name": "Claude Code ile Geliştirme",
+                "description": "Claude Code ve yeteneklerine giriş"
+              },
               "zh-Hans": {
                 "name": "使用 Claude Code 构建",
                 "description": "Claude Code 及其功能介绍"
+              },
+              "zh-Hant": {
+                "name": "使用 Claude Code 構建",
+                "description": "Claude Code 及其功能介紹"
               }
             },
             "name": "Building with Claude Code",
@@ -193,9 +938,53 @@
           },
           {
             "translations": {
+              "en": {
+                "name": "MCP: A New Standard",
+                "description": "How Model Context Protocol enables better AI integrations"
+              },
+              "de": {
+                "name": "MCP: Ein Neuer Standard",
+                "description": "Wie das Model Context Protocol bessere KI-Integrationen ermöglicht"
+              },
+              "es": {
+                "name": "MCP: Un Nuevo Estándar",
+                "description": "Cómo el Protocolo de Contexto de Modelo permite mejores integraciones IA"
+              },
+              "fr": {
+                "name": "MCP: Un Nouveau Standard",
+                "description": "Comment le Protocole de Contexte de Modèle permet de meilleures intégrations IA"
+              },
+              "id": {
+                "name": "MCP: Standar Baru",
+                "description": "Bagaimana Model Context Protocol memungkinkan integrasi AI yang lebih baik"
+              },
+              "ja": {
+                "name": "MCP：新標準",
+                "description": "モデルコンテキストプロトコルがどのようにより良いAI統合を可能にするか"
+              },
+              "ko": {
+                "name": "MCP: 새로운 표준",
+                "description": "모델 컨텍스트 프로토콜이 더 나은 AI 통합을 가능하게 하는 방법"
+              },
+              "pt": {
+                "name": "MCP: Um Novo Padrão",
+                "description": "Como o Protocolo de Contexto de Modelo permite melhores integrações AI"
+              },
+              "ru": {
+                "name": "MCP: Новый стандарт",
+                "description": "Как протокол контекста модели обеспечивает лучшую интеграцию ИИ"
+              },
+              "tr": {
+                "name": "MCP: Yeni Bir Standard",
+                "description": "Model Bağlam Protokolü daha iyi AI entegrasyonları nasıl sağlar"
+              },
               "zh-Hans": {
                 "name": "MCP：新标准",
                 "description": "模型上下文协议如何实现更好的 AI 集成"
+              },
+              "zh-Hant": {
+                "name": "MCP：新標準",
+                "description": "模型上下文協議如何實現更好的 AI 集成"
               }
             },
             "name": "MCP: A New Standard",
@@ -207,17 +996,64 @@
       {
         "title": "Lovable Engineering",
         "translations": {
-          "zh-Hans": {
-            "title": "Lovable 工程"
-          }
+          "en": { "title": "Lovable Engineering" },
+          "de": { "title": "Lovable Engineering" },
+          "es": { "title": "Ingeniería Lovable" },
+          "fr": { "title": "Ingénierie Lovable" },
+          "id": { "title": "Lovable Engineering" },
+          "ja": { "title": "Lovable Engineering" },
+          "ko": { "title": "Lovable Engineering" },
+          "pt": { "title": "Lovable Engineering" },
+          "ru": { "title": "Lovable Engineering" },
+          "tr": { "title": "Lovable Engineering" },
+          "zh-Hans": { "title": "Lovable 工程" },
+          "zh-Hant": { "title": "Lovable 工程" }
         },
         "items": [
           {
             "translations": {
-              "zh-Hans": {
-                "name": "AI 原生开发",
-                "description": "构建为 AI 优先工作流设计的应用"
-              }
+              "en": {
+                "name": "AI-Native Development",
+                "description": "Building applications designed for AI-first workflows"
+              },
+              "de": {
+                "name": "KI-native Entwicklung",
+                "description": "Entwicklung von Anwendungen für KI-First-Workflows"
+              },
+              "es": {
+                "name": "Desarrollo Nativo de IA",
+                "description": "Construcción de aplicaciones diseñadas para flujos de trabajo IA-first"
+              },
+              "fr": {
+                "name": "Développement Natif IA",
+                "description": "Créer des applications conçues pour les flux de travail IA en premier"
+              },
+              "id": {
+                "name": "Pengembangan AI-Native",
+                "description": "Membangun aplikasi yang dirancang untuk workflow AI-first"
+              },
+              "ja": {
+                "name": "AIネイティブ開発",
+                "description": "AIファーストワークフロー向けに設計されたアプリケーションを構築する"
+              },
+              "ko": {
+                "name": "AI 네이티브 개발",
+                "description": "AI 우선 워크플로우를 위해 설계된 애플리케이션 구축"
+              },
+              "pt": {
+                "name": "Desenvolvimento AI-Nativo",
+                "description": "Construindo aplicações projetadas para workflows AI-first"
+              },
+              "ru": {
+                "name": "AI-Native разработка",
+                "description": "Создание приложений, спроектированных для AI-first рабочих процессов"
+              },
+              "tr": {
+                "name": "AI-Native Geliştirme",
+                "description": "AI öncelikli iş akışları için tasarlanmış uygulamalar oluşturma"
+              },
+              "zh-Hans": { "name": "AI 原生开发", "description": "构建为 AI 优先工作流设计的应用" },
+              "zh-Hant": { "name": "AI 原生開發", "description": "構建為 AI 優先工作流設計的應用" }
             },
             "name": "AI-Native Development",
             "url": "https://lovable.dev/blog",
@@ -225,10 +1061,48 @@
           },
           {
             "translations": {
-              "zh-Hans": {
-                "name": "编码副驾驶模式",
-                "description": "有效 AI 结对编程的常见模式"
-              }
+              "en": {
+                "name": "The Coding Copilot Pattern",
+                "description": "Common patterns for effective AI pair programming"
+              },
+              "de": {
+                "name": "Das Coding-Copilot-Muster",
+                "description": "Gemeinsame Muster für effektives KI-Pair-Programming"
+              },
+              "es": {
+                "name": "El Patrón de Copiloto de Codificación",
+                "description": "Patrones comunes para programación en pareja IA efectiva"
+              },
+              "fr": {
+                "name": "Le Pattern Copilote de Codage",
+                "description": "Motifs courants pour la programmation en paire IA efficace"
+              },
+              "id": {
+                "name": "Pola Coding Copilot",
+                "description": "Pola umum untuk pair programming AI yang efektif"
+              },
+              "ja": {
+                "name": "コーディングコパイロットパターン",
+                "description": "効果的なAIペアプログラミングのための一般的なパターン"
+              },
+              "ko": {
+                "name": "코딩 코파일럿 패턴",
+                "description": "효과적인 AI 페어 프로그래밍을 위한 일반적인 패턴"
+              },
+              "pt": {
+                "name": "O Padrão Copiloto de Codificação",
+                "description": "Padrões comuns para programação em par AI eficaz"
+              },
+              "ru": {
+                "name": "Паттерн coding-копилота",
+                "description": "Общие паттерны для эффективной pair-программирования с ИИ"
+              },
+              "tr": {
+                "name": "Kodlama Copilot Pattern",
+                "description": "Etkili AI pair programming için yaygın patternlar"
+              },
+              "zh-Hans": { "name": "编码副驾驶模式", "description": "有效 AI 结对编程的常见模式" },
+              "zh-Hant": { "name": "編碼副駕駛員模式", "description": "有效 AI 結對編程的常見模式" }
             },
             "name": "The Coding Copilot Pattern",
             "url": "https://lovable.dev/patterns",
@@ -242,25 +1116,116 @@
     "title": "Ecosystem Tools",
     "description": "Curated tools and utilities for AI coding workflows",
     "translations": {
-      "zh-Hans": {
-        "title": "生态系统工具",
-        "description": "AI 编码工作流的精选工具和实用程序"
-      }
+      "en": {
+        "title": "Ecosystem Tools",
+        "description": "Curated tools and utilities for AI coding workflows"
+      },
+      "de": {
+        "title": "Ökosystem-Tools",
+        "description": "Kuratierte Tools und Utilities für AI-Coding-Workflows"
+      },
+      "es": {
+        "title": "Herramientas del Ecosistema",
+        "description": "Herramientas y utilidades curadas para flujos de trabajo de codificación AI"
+      },
+      "fr": {
+        "title": "Outils de l'Écosystème",
+        "description": "Outils et utilitaires sélectionnés pour les flux de travail de codage IA"
+      },
+      "id": {
+        "title": "Alat Ekosistem",
+        "description": "Tools dan utilitas terkurasi untuk workflow AI coding"
+      },
+      "ja": {
+        "title": "エコシステムツール",
+        "description": "AIコーディングワークフロー向けの厳選ツールとユーティリティ"
+      },
+      "ko": {
+        "title": "에코시스템 도구",
+        "description": "AI 코딩 워크플로우를 위한 큐레이팅된 도구 및 유틸리티"
+      },
+      "pt": {
+        "title": "Ferramentas do Ecossistema",
+        "description": "Ferramentas e utilitários selecionados para workflows de codificação AI"
+      },
+      "ru": {
+        "title": "Инструменты экосистемы",
+        "description": "Отобранные инструменты и утилиты для AI-программирования"
+      },
+      "tr": {
+        "title": "Ekosistem Araçları",
+        "description": "AI kodlama iş akışları için küratörlü araçlar ve yardımcı programlar"
+      },
+      "zh-Hans": { "title": "生态系统工具", "description": "AI 编码工作流的精选工具和实用程序" },
+      "zh-Hant": { "title": "生態系統工具", "description": "AI 編碼工作流的精選工具和實用程序" }
     },
     "sections": [
       {
         "title": "Development Tools",
         "translations": {
-          "zh-Hans": {
-            "title": "开发工具"
-          }
+          "en": { "title": "Development Tools" },
+          "de": { "title": "Entwicklungstools" },
+          "es": { "title": "Herramientas de Desarrollo" },
+          "fr": { "title": "Outils de Développement" },
+          "id": { "title": "Alat Pengembangan" },
+          "ja": { "title": "開発ツール" },
+          "ko": { "title": "개발 도구" },
+          "pt": { "title": "Ferramentas de Desenvolvimento" },
+          "ru": { "title": "Инструменты разработки" },
+          "tr": { "title": "Geliştirme Araçları" },
+          "zh-Hans": { "title": "开发工具" },
+          "zh-Hant": { "title": "開發工具" }
         },
         "items": [
           {
             "translations": {
+              "en": {
+                "name": "OpenSpec",
+                "description": "Spec-driven development framework for AI coding assistants with organized change management and living documentation"
+              },
+              "de": {
+                "name": "OpenSpec",
+                "description": "Spec-gesteuertes Entwicklungsframework für AI-Coding-Assistants mit organisiertem Change-Management und lebender Dokumentation"
+              },
+              "es": {
+                "name": "OpenSpec",
+                "description": "Framework de desarrollo guiado por especificaciones para asistentes de codificación AI con gestión de cambios organizada y documentación viva"
+              },
+              "fr": {
+                "name": "OpenSpec",
+                "description": "Framework de développement piloté par spec pour les assistants de codage IA avec gestion des changements organisée et documentation vivante"
+              },
+              "id": {
+                "name": "OpenSpec",
+                "description": "Framework development spec-driven untuk asisten AI coding dengan manajemen perubahan terorganisir dan dokumentasi hidup"
+              },
+              "ja": {
+                "name": "OpenSpec",
+                "description": " organized change managementとliving documentationを備えたAIコーディングアシスタント向けのspec-driven開発フレームワーク"
+              },
+              "ko": {
+                "name": "OpenSpec",
+                "description": " organized change management과 living documentation을 갖춘 AI 코딩 어시스턴트를 위한 spec-driven development framework"
+              },
+              "pt": {
+                "name": "OpenSpec",
+                "description": "Framework de desenvolvimento orientado a especificações para assistentes de codificação AI com gerenciamento de mudanças organizado e documentação viva"
+              },
+              "ru": {
+                "name": "OpenSpec",
+                "description": "Фреймворк spec-driven разработки для AI-ассистентов программирования с организованным управлением изменениями и живой документацией"
+              },
+              "tr": {
+                "name": "OpenSpec",
+                "description": "Organize change management ve living documentation ile AI kodlama asistanları için spec-driven development framework"
+              },
               "zh-Hans": {
                 "name": "OpenSpec",
                 "description": "为 AI 编码助手设计的规范驱动开发框架，提供组织化的变更管理和活文档"
+              },
+              "zh-Hant": {
+                "name": "OpenSpec",
+                "description": "為 AI 編碼助手設計的規範驅動開發框架，提供組織化的變更管理和活文檔"
               }
             },
             "name": "OpenSpec",
@@ -269,9 +1234,53 @@
           },
           {
             "translations": {
+              "en": {
+                "name": "Spec Kit",
+                "description": "Toolkit for Spec-Driven Development that generates working implementations from executable specifications"
+              },
+              "de": {
+                "name": "Spec Kit",
+                "description": "Toolkit für Spec-Driven Development, das funktionierende Implementierungen aus ausführbaren Spezifikationen generiert"
+              },
+              "es": {
+                "name": "Spec Kit",
+                "description": "Toolkit para Desarrollo Guiado por Especificaciones que genera implementaciones funcionales desde especificaciones ejecutables"
+              },
+              "fr": {
+                "name": "Spec Kit",
+                "description": "Toolkit pour le Développement Piloté par Spec qui génère des implémentations fonctionnelles à partir de spécifications exécutables"
+              },
+              "id": {
+                "name": "Spec Kit",
+                "description": "Toolkit untuk Spec-Driven Development yang menghasilkan implementasi yang berfungsi dari spesifikasi yang dapat dieksekusi"
+              },
+              "ja": {
+                "name": "Spec Kit",
+                "description": "実行可能な仕様から動作する実装を生成するSpec-Driven Development用ツールキット"
+              },
+              "ko": {
+                "name": "Spec Kit",
+                "description": "실행 가능한 사양에서 작동하는 구현을 생성하는 Spec-Driven Development용 툴킷"
+              },
+              "pt": {
+                "name": "Spec Kit",
+                "description": "Toolkit para Desenvolvimento Orientado a Especificações que gera implementações funcionais a partir de especificações executáveis"
+              },
+              "ru": {
+                "name": "Spec Kit",
+                "description": "Набор инструментов для Spec-Driven разработки, генерирующий работающие реализации из исполняемых спецификаций"
+              },
+              "tr": {
+                "name": "Spec Kit",
+                "description": "Çalışan uygulamaları executable specifications'dan üreten Spec-Driven Development için araç seti"
+              },
               "zh-Hans": {
                 "name": "Spec Kit",
                 "description": "从可执行规范生成工作实现的规范驱动开发工具包"
+              },
+              "zh-Hant": {
+                "name": "Spec Kit",
+                "description": "從可執行規範生成工作實現的規範驅動開發工具包"
               }
             },
             "name": "Spec Kit",
@@ -280,9 +1289,53 @@
           },
           {
             "translations": {
+              "en": {
+                "name": "BMAD-METHOD",
+                "description": "Breakthrough Method for Agile AI-Driven Development with specialized AI agents for planning, architecture, and implementation"
+              },
+              "de": {
+                "name": "BMAD-METHOD",
+                "description": "Durchbruchsmethode für agiles KI-getriebenes Entwickeln mit spezialisierten KI-Agenten für Planung, Architektur und Implementierung"
+              },
+              "es": {
+                "name": "BMAD-METHOD",
+                "description": "Método innovador para Desarrollo Ágil Impulsado por IA con agentes IA especializados para planificación, arquitectura e implementación"
+              },
+              "fr": {
+                "name": "BMAD-METHOD",
+                "description": "Méthode innovante pour le Développement Agile Piloté par l'IA avec des agents IA spécialisés pour la planification, l'architecture et l'implémentation"
+              },
+              "id": {
+                "name": "BMAD-METHOD",
+                "description": "Metode terobosan untuk Agile AI-Driven Development dengan agen AI khusus untuk perencanaan, arsitektur, dan implementasi"
+              },
+              "ja": {
+                "name": "BMAD-METHOD",
+                "description": "計画、アーキテクチャ、実装のために特化したAIエージェントを備えたアジャイルAI主導開発のための画期的な方法"
+              },
+              "ko": {
+                "name": "BMAD-METHOD",
+                "description": "계획, 아키텍처, 구현을 위한 특화된 AI 에이전트를 갖춘 애자일 AI 주도 개발을 위한 획기적인 방법"
+              },
+              "pt": {
+                "name": "BMAD-METHOD",
+                "description": "Método inovador para Desenvolvimento Ágil Impulsionado por AI com agentes AI especializados para planejamento, arquitetura e implementação"
+              },
+              "ru": {
+                "name": "BMAD-METHOD",
+                "description": "Прорывной метод для Agile AI-Driven разработки со специализированными ИИ-агентами для планирования, архитектуры и реализации"
+              },
+              "tr": {
+                "name": "BMAD-METHOD",
+                "description": "Planlama, mimari ve implementasyon için uzmanlaşmış AI ajanları ile Agile AI-Driven Development için çığır açan yöntem"
+              },
               "zh-Hans": {
                 "name": "BMAD-METHOD",
                 "description": "敏捷 AI 驱动开发的突破性方法，配备专门的 AI Agent 用于规划、架构和实现"
+              },
+              "zh-Hant": {
+                "name": "BMAD-METHOD",
+                "description": "敏捷 AI 驅動開發的突破性方法，配備專門的 AI Agent 用於規劃、架構和實現"
               }
             },
             "name": "BMAD-METHOD",
@@ -294,21 +1347,117 @@
       {
         "title": "Productivity Utilities",
         "translations": {
-          "zh-Hans": {
-            "title": "生产力工具"
-          }
+          "en": { "title": "Productivity Utilities" },
+          "de": { "title": "Produktivitäts-Utilities" },
+          "es": { "title": "Utilidades de Productividad" },
+          "fr": { "title": "Utilitaires de Productivité" },
+          "id": { "title": "Utilitas Produktivitas" },
+          "ja": { "title": "生産性ユーティリティ" },
+          "ko": { "title": "생산성 유틸리티" },
+          "pt": { "title": "Utilitários de Produtividade" },
+          "ru": { "title": "Утилиты производительности" },
+          "tr": { "title": "Verimlilik Araçları" },
+          "zh-Hans": { "title": "生产力工具" },
+          "zh-Hant": { "title": "生產力工具" }
         },
         "items": [
           {
             "translations": {
-              "zh-Hans": {
+              "en": {
                 "name": "ccusage",
-                "description": "Claude Code 使用跟踪和分析工具"
-              }
+                "description": "Claude Code usage tracking and analytics tool"
+              },
+              "de": {
+                "name": "ccusage",
+                "description": "Claude-Code-Nutzungsverfolgungs- und Analysetool"
+              },
+              "es": {
+                "name": "ccusage",
+                "description": "Herramienta de seguimiento y análisis de uso de Claude Code"
+              },
+              "fr": {
+                "name": "ccusage",
+                "description": "Outil de suivi et d'analyse d'utilisation de Claude Code"
+              },
+              "id": {
+                "name": "ccusage",
+                "description": "Tool pelacakan dan analisis penggunaan Claude Code"
+              },
+              "ja": { "name": "ccusage", "description": "Claude Codeの使用追跡・分析ツール" },
+              "ko": { "name": "ccusage", "description": "Claude Code 사용 추적 및 분석 도구" },
+              "pt": {
+                "name": "ccusage",
+                "description": "Ferramenta de rastreamento e análise de uso do Claude Code"
+              },
+              "ru": {
+                "name": "ccusage",
+                "description": "Инструмент отслеживания и аналитики использования Claude Code"
+              },
+              "tr": {
+                "name": "ccusage",
+                "description": "Claude Code kullanım takibi ve analiz aracı"
+              },
+              "zh-Hans": { "name": "ccusage", "description": "Claude Code 使用跟踪和分析工具" },
+              "zh-Hant": { "name": "ccusage", "description": "Claude Code 使用追蹤和分析工具" }
             },
             "name": "ccusage",
             "url": "https://github.com/ryoppippi/ccusage",
             "description": "Claude Code usage tracking and analytics tool"
+          },
+          {
+            "translations": {
+              "en": {
+                "name": "ccstatusline",
+                "description": "Status line tool for Claude Code displaying real-time usage statistics and quota information"
+              },
+              "de": {
+                "name": "ccstatusline",
+                "description": "Statuszeilen-Tool für Claude Code mit Echtzeit-Nutzungsstatistiken und Kontingentinformationen"
+              },
+              "es": {
+                "name": "ccstatusline",
+                "description": "Herramienta de línea de estado para Claude Code que muestra estadísticas de uso en tiempo real e información de cuota"
+              },
+              "fr": {
+                "name": "ccstatusline",
+                "description": "Outil de ligne d'état pour Claude Code affichant les statistiques d'utilisation en temps réel et les informations de quota"
+              },
+              "id": {
+                "name": "ccstatusline",
+                "description": "Tool status bar untuk Claude Code menampilkan statistik penggunaan real-time dan informasi kuota"
+              },
+              "ja": {
+                "name": "ccstatusline",
+                "description": "リアルタイムの使用統計とクォータ情報を表示するClaude Codeのステータスラインツール"
+              },
+              "ko": {
+                "name": "ccstatusline",
+                "description": "실시간 사용 통계 및 할당량 정보를 표시하는 Claude Code용 상태 표시줄 도구"
+              },
+              "pt": {
+                "name": "ccstatusline",
+                "description": "Ferramenta de linha de status para Claude Code exibindo estatísticas de uso em tempo real e informações de quota"
+              },
+              "ru": {
+                "name": "ccstatusline",
+                "description": "Инструмент строки состояния для Claude Code, отображающий статистику использования в реальном времени и информацию о квоте"
+              },
+              "tr": {
+                "name": "ccstatusline",
+                "description": "Gerçek zamanlı kullanım istatistikleri ve kota bilgisi görüntüleyen Claude Code için durum çubuğu aracı"
+              },
+              "zh-Hans": {
+                "name": "ccstatusline",
+                "description": "Claude Code 状态栏工具，显示实时使用统计和配额信息"
+              },
+              "zh-Hant": {
+                "name": "ccstatusline",
+                "description": "Claude Code 狀態欄工具，顯示即時使用統計和配額資訊"
+              }
+            },
+            "name": "ccstatusline",
+            "url": "https://github.com/sirmalloc/ccstatusline",
+            "description": "Status line tool for Claude Code displaying real-time usage statistics and quota information"
           }
         ]
       }
@@ -318,18 +1467,62 @@
     "title": "Coding Features",
     "description": "Must-try features for AI coding workflows",
     "translations": {
-      "zh-Hans": {
-        "title": "编码功能",
-        "description": "AI 编码工作流的必备功能"
-      }
+      "en": {
+        "title": "Coding Features",
+        "description": "Must-try features for AI coding workflows"
+      },
+      "de": {
+        "title": "Coding-Features",
+        "description": "Unverzichtbare Features für AI-Coding-Workflows"
+      },
+      "es": {
+        "title": "Características de Codificación",
+        "description": "Características indispensables para flujos de trabajo de codificación AI"
+      },
+      "fr": {
+        "title": "Fonctionnalités de Codage",
+        "description": "Fonctionnalités indispensables pour les flux de travail de codage IA"
+      },
+      "id": {
+        "title": "Fitur Coding",
+        "description": "Fitur yang harus dicoba untuk workflow AI coding"
+      },
+      "ja": {
+        "title": "コーディング機能",
+        "description": "AIコーディングワークフロー向けの必須機能"
+      },
+      "ko": { "title": "코딩 기능", "description": "AI 코딩 워크플로우를 위한 필수 기능" },
+      "pt": {
+        "title": "Funcionalidades de Codificação",
+        "description": "Funcionalidades obrigatórias para workflows de codificação AI"
+      },
+      "ru": {
+        "title": "Функции программирования",
+        "description": "Обязательные функции для AI-программирования"
+      },
+      "tr": {
+        "title": "Kodlama Özellikleri",
+        "description": "AI kodlama iş akışları için mutlaka denenmesi gereken özellikler"
+      },
+      "zh-Hans": { "title": "编码功能", "description": "AI 编码工作流的必备功能" },
+      "zh-Hant": { "title": "編碼功能", "description": "AI 編碼工作流的必備功能" }
     },
     "sections": [
       {
         "title": "Open Standards",
         "translations": {
-          "zh-Hans": {
-            "title": "开放标准"
-          }
+          "en": { "title": "Open Standards" },
+          "de": { "title": "Offene Standards" },
+          "es": { "title": "Estándares Abiertos" },
+          "fr": { "title": "Standards Ouverts" },
+          "id": { "title": "Standar Terbuka" },
+          "ja": { "title": "オープン標準" },
+          "ko": { "title": "개방형 표준" },
+          "pt": { "title": "Padrões Abertos" },
+          "ru": { "title": "Открытые стандарты" },
+          "tr": { "title": "Açık Standartlar" },
+          "zh-Hans": { "title": "开放标准" },
+          "zh-Hant": { "title": "開放標準" }
         },
         "items": [
           {
@@ -337,9 +1530,53 @@
             "url": "https://agentskills.io",
             "description": "Modular capabilities that extend Agent's functionality through filesystem-based resources containing instructions, metadata, and optional scripts, enabling domain-specific expertise and workflows",
             "translations": {
+              "en": {
+                "name": "Agent Skills",
+                "description": "Modular capabilities that extend Agent's functionality through filesystem-based resources containing instructions, metadata, and optional scripts, enabling domain-specific expertise and workflows"
+              },
+              "de": {
+                "name": "Agent Skills",
+                "description": "Modulare Fähigkeiten, die Agenten durch dateisystembasierte Ressourcen mit Anweisungen und Skripten erweitern, domänenspezifische Expertise und Workflows ermöglichen"
+              },
+              "es": {
+                "name": "Habilidades de Agente",
+                "description": "Capacidades modulares que extienden la funcionalidad del Agente a través de recursos del sistema con instrucciones y scripts opcionales, permitiendo experiencia específica del dominio y workflows"
+              },
+              "fr": {
+                "name": "Compétences d'Agent",
+                "description": "Capacités modulaires qui étendent les fonctionnalités de l'Agent via des ressources du système avec instructions et scripts optionnels, permettant une expertise spécifique au domaine et workflows"
+              },
+              "id": {
+                "name": "Keterampilan Agent",
+                "description": "Kemampuan modular yang memperluas fungsionalitas Agent melalui sumber daya berbasis filesystem yang berisi instruksi, metadata, dan skrip opsional, memungkinkan keahlian domain-specific dan workflow"
+              },
+              "ja": {
+                "name": "Agent スキル",
+                "description": "命令、メタデータ、オプションスクリプトを含むファイルシステムベースのリソースを通じてAgentの機能を拡張するモジュラー機能で、ドメイン固有の専門知識とワークフローを実現します"
+              },
+              "ko": {
+                "name": "에이전트 스킬",
+                "description": "명령, 메타데이터, 선택적 스크립트를 포함하는 파일 시스템 기반 리소스를 통해 에이전트의 기능을 확장하는 모듈형 기능으로, 도메인별 전문성 및 워크플로우를 가능하게 합니다"
+              },
+              "pt": {
+                "name": "Habilidades de Agente",
+                "description": "Capacidades modulares que estendem a funcionalidade do Agente através de recursos do sistema de arquivos com instruções e scripts opcionais, permitindo expertise específica do domínio e workflows"
+              },
+              "ru": {
+                "name": "Навыки агента",
+                "description": "Модульные возможности, расширяющие функциональность агента через ресурсы файловой системы с инструкциями и скриптами, обеспечивающие предметную экспертизу и рабочие процессы"
+              },
+              "tr": {
+                "name": "Ajan Becerileri",
+                "description": "Dosya sistemi tabanlı kaynaklar aracılığıyla ajanın işlevselliğini genişleten modüler yetenekler, alanına özgü uzmanlık ve iş akışları sağlar"
+              },
               "zh-Hans": {
                 "name": "Agent 技能",
                 "description": "模块化能力，通过基于文件系统的资源（包含指令、元数据和可选脚本）扩展 Agent 的功能，实现领域专业知识和工作流"
+              },
+              "zh-Hant": {
+                "name": "Agent 技能",
+                "description": "模組化能力，通過基於文件系統的資源（包含指令、元數據和可選腳本）擴展 Agent 的功能，實現領域專業知識和工作流"
               }
             }
           },
@@ -348,9 +1585,53 @@
             "url": "https://modelcontextprotocol.io",
             "description": "Open standard connecting AI applications to external systems like data sources, tools, and workflows",
             "translations": {
+              "en": {
+                "name": "Model Context Protocol (MCP)",
+                "description": "Open standard connecting AI applications to external systems like data sources, tools, and workflows"
+              },
+              "de": {
+                "name": "Model Context Protocol (MCP)",
+                "description": "Offener Standard zur Verbindung von KI-Anwendungen mit externen Systemen wie Datenquellen, Tools und Workflows"
+              },
+              "es": {
+                "name": "Model Context Protocol (MCP)",
+                "description": "Estándar abierto que conecta aplicaciones de IA con sistemas externos como fuentes de datos, herramientas y flujos de trabajo"
+              },
+              "fr": {
+                "name": "Model Context Protocol (MCP)",
+                "description": "Standard ouvert connectant les applications IA aux systèmes externes tels que les sources de données, les outils et les flux de travail"
+              },
+              "id": {
+                "name": "Model Context Protocol (MCP)",
+                "description": "Standar terbuka yang menghubungkan aplikasi AI dengan sistem eksternal seperti sumber data, tools, dan workflow"
+              },
+              "ja": {
+                "name": "Model Context Protocol (MCP)",
+                "description": "データソース、ツール、ワークフローなどの外部システムにAIアプリケーションを接続するオープン標準"
+              },
+              "ko": {
+                "name": "Model Context Protocol (MCP)",
+                "description": "데이터 소스, 도구, 워크플로우와 같은 외부 시스템에 AI 애플리케이션을 연결하는 개방형 표준"
+              },
+              "pt": {
+                "name": "Model Context Protocol (MCP)",
+                "description": "Padrão aberto conectando aplicações AI a sistemas externos como fontes de dados, ferramentas e workflows"
+              },
+              "ru": {
+                "name": "Model Context Protocol (MCP)",
+                "description": "Открытый стандарт, соединяющий ИИ-приложения с внешними системами, такими как источники данных, инструменты и рабочие процессы"
+              },
+              "tr": {
+                "name": "Model Context Protocol (MCP)",
+                "description": "AI uygulamalarını veri kaynakları, araçlar ve iş akışları gibi harici sistemlere bağlayan açık standart"
+              },
               "zh-Hans": {
                 "name": "模型上下文协议 (MCP)",
                 "description": "将 AI 应用连接到外部系统（如数据源、工具和工作流）的开放标准"
+              },
+              "zh-Hant": {
+                "name": "模型上下文協議 (MCP)",
+                "description": "將 AI 應用連接到外部系統（如數據源、工具和工作流）的開放標準"
               }
             }
           },
@@ -359,9 +1640,53 @@
             "url": "https://agents.md",
             "description": "Open-format markdown file providing coding agents with project-specific instructions and context",
             "translations": {
+              "en": {
+                "name": "AGENTS.md",
+                "description": "Open-format markdown file providing coding agents with project-specific instructions and context"
+              },
+              "de": {
+                "name": "AGENTS.md",
+                "description": "Markdown-Datei im offenen Format, die Coding-Agents mit projektspezifischen Anweisungen und Kontext versorgt"
+              },
+              "es": {
+                "name": "AGENTS.md",
+                "description": "Archivo markdown de formato abierto que proporciona a los agentes de codificación instrucciones y contexto específicos del proyecto"
+              },
+              "fr": {
+                "name": "AGENTS.md",
+                "description": "Fichier markdown au format ouvert fournissant aux agents de codage des instructions et un contexte spécifiques au projet"
+              },
+              "id": {
+                "name": "AGENTS.md",
+                "description": "File markdown format terbuka yang menyediakan instruksi dan konteks spesifik proyek untuk agen coding"
+              },
+              "ja": {
+                "name": "AGENTS.md",
+                "description": "コーディングエージェントにプロジェクト固有の命令とコンテキストを提供するオープンフォーマットのMarkdownファイル"
+              },
+              "ko": {
+                "name": "AGENTS.md",
+                "description": "코딩 에이전트에게 프로젝트별 지침과 컨텍스트를 제공하는 개방형 형식의 마크다운 파일"
+              },
+              "pt": {
+                "name": "AGENTS.md",
+                "description": "Arquivo markdown de formato aberto fornecendo aos agentes de codificação instruções e contexto específicos do projeto"
+              },
+              "ru": {
+                "name": "AGENTS.md",
+                "description": "Файл markdown в открытом формате, предоставляющий кодирующим агентам проектные инструкции и контекст"
+              },
+              "tr": {
+                "name": "AGENTS.md",
+                "description": "Kodlama ajanlarına proje özel talimatlar ve bağlam sağlayan açık formatlı markdown dosyası"
+              },
               "zh-Hans": {
                 "name": "AGENTS.md",
                 "description": "为编码 Agent 提供项目特定指令和上下文的开放格式 Markdown 文件"
+              },
+              "zh-Hant": {
+                "name": "AGENTS.md",
+                "description": "為編碼 Agent 提供項目特定指令和上下文的開放格式 Markdown 文件"
               }
             }
           }
@@ -370,9 +1695,18 @@
       {
         "title": "Vendor Standards",
         "translations": {
-          "zh-Hans": {
-            "title": "厂商标准"
-          }
+          "en": { "title": "Vendor Standards" },
+          "de": { "title": "Anbieter-Standards" },
+          "es": { "title": "Estándares de Proveedores" },
+          "fr": { "title": "Normes des Fournisseurs" },
+          "id": { "title": "Standar Vendor" },
+          "ja": { "title": "ベンダー標準" },
+          "ko": { "title": "공급업체 표준" },
+          "pt": { "title": "Padrões de Fornecedores" },
+          "ru": { "title": "Стандарты поставщиков" },
+          "tr": { "title": "Satıcı Standartları" },
+          "zh-Hans": { "title": "厂商标准" },
+          "zh-Hant": { "title": "廠商標準" }
         },
         "items": [
           {
@@ -380,9 +1714,53 @@
             "url": "https://cursor.com/docs/agent/chat/commands",
             "description": "Custom commands that create reusable workflows triggered with a `/` prefix in the chat input, stored as Markdown files in project, global, or team locations",
             "translations": {
+              "en": {
+                "name": "Slash Commands",
+                "description": "Custom commands that create reusable workflows triggered with a `/` prefix in the chat input, stored as Markdown files in project, global, or team locations"
+              },
+              "de": {
+                "name": "Slash Commands",
+                "description": "Benutzerdefinierte Befehle, die wiederverwendbare Workflows erstellen, die mit einem `/`-Präfix im Chat ausgelöst werden, als Markdown-Dateien in Projekt-, globalen oder Team-Speicherorten gespeichert"
+              },
+              "es": {
+                "name": "Comandos Slash",
+                "description": "Comandos personalizados que crean flujos de trabajo reutilizables activados con un prefijo `/` en el chat, almacenados como archivos Markdown en ubicaciones de proyecto, globales o de equipo"
+              },
+              "fr": {
+                "name": "Commandes Slash",
+                "description": "Commandes personnalisés créant des flux de travail réutilisables déclenchés avec un préfixe `/` dans le chat, stockés en fichiers Markdown dans les emplacements de projet, globaux ou d'équipe"
+              },
+              "id": {
+                "name": "Slash Commands",
+                "description": "Perintah kustom yang membuat workflow reusable yang dipicu dengan prefix `/` di input chat, disimpan sebagai file Markdown di lokasi proyek, global, atau tim"
+              },
+              "ja": {
+                "name": "スラッシュコマンド",
+                "description": "チャット入力で`/`プレフィックスでトリガーされる再利用可能なワークフローを作成するカスタムコマンドで、プロジェクト、グローバル、チームの場所にMarkdownファイルとして保存されます"
+              },
+              "ko": {
+                "name": "슬래시 명령어",
+                "description": "채팅 입력에서 `/` 접두사로 트리거되는 재사용 가능한 워크플로우를 만드는 사용자 정의 명령으로, 프로젝트, 전역 또는 팀 위치에 Markdown 파일로 저장됩니다"
+              },
+              "pt": {
+                "name": "Comandos Slash",
+                "description": "Comandos personalizados que criam workflows reutilizáveis acionados com um prefixo `/` na entrada do chat, armazenados como arquivos Markdown em locais de projeto, global ou equipe"
+              },
+              "ru": {
+                "name": "Слэш-команды",
+                "description": "Пользовательские команды, создающие повторно используемые рабочие процессы, запускаемые префиксом `/` в чате, сохраняемые в виде файлов Markdown в проектных, глобальных или командных расположениях"
+              },
+              "tr": {
+                "name": "Slash Komutları",
+                "description": "Sohbet girdisinde `/` önekiyle tetiklenen yeniden kullanılabilir iş akışları oluşturan özel komutlar, proje, genel veya konumlarında Markdown dosyaları olarak saklanır"
+              },
               "zh-Hans": {
                 "name": "命令",
                 "description": "自定义命令，可通过聊天输入框中的 `/` 前缀触发可重用工作流，以 Markdown 文件形式存储在项目、全局或团队位置"
+              },
+              "zh-Hant": {
+                "name": "命令",
+                "description": "自訂命令，可通過聊天輸入框中的 `/` 前綴觸發可重用工作流，以 Markdown 文件形式存儲在項目、全局或團隊位置"
               }
             }
           },
@@ -391,9 +1769,53 @@
             "url": "https://cursor.com/docs/context/rules",
             "description": "System-level instructions for Agent that provide persistent, reusable context through Project Rules, User Rules, Team Rules, and AGENTS.md files",
             "translations": {
+              "en": {
+                "name": "Rules",
+                "description": "System-level instructions for Agent that provide persistent, reusable context through Project Rules, User Rules, Team Rules, and AGENTS.md files"
+              },
+              "de": {
+                "name": "Regeln",
+                "description": "Systemweite Anweisungen für Agent, die beständigen, wiederverwendbaren Kontext durch Project Rules, User Rules, Team Rules und AGENTS.md-Dateien bereitstellen"
+              },
+              "es": {
+                "name": "Reglas",
+                "description": "Instrucciones de nivel de sistema para el Agente que proporcionan contexto persistente y reutilizable a través de Project Rules, User Rules, Team Rules y archivos AGENTS.md"
+              },
+              "fr": {
+                "name": "Règles",
+                "description": "Instructions au niveau du système pour l'Agent fournissant un contexte persistant et réutilisable via les Project Rules, User Rules, Team Rules et fichiers AGENTS.md"
+              },
+              "id": {
+                "name": "Aturan",
+                "description": "Instruksi level sistem untuk Agent yang menyediakan context persisten, reusable melalui Project Rules, User Rules, Team Rules, dan file AGENTS.md"
+              },
+              "ja": {
+                "name": "ルール",
+                "description": "プロジェクトルール、ユーザールール、チームルール、AGENTS.mdファイルを通じて永続的で再利用可能なコンテキストを提供するAgent向けのシステムレベル命令"
+              },
+              "ko": {
+                "name": "규칙",
+                "description": "프로젝트 규칙, 사용자 규칙, 팀 규칙 및 AGENTS.md 파일을 통해 지속적이고 재사용 가능한 컨텍스트를 제공하는 에이전트용 시스템 수준 지침"
+              },
+              "pt": {
+                "name": "Regras",
+                "description": "Instruções de nível de sistema para o Agente que fornecem contexto persistente e reutilizável através de Project Rules, User Rules, Team Rules e arquivos AGENTS.md"
+              },
+              "ru": {
+                "name": "Правила",
+                "description": "Системные инструкции для агента, обеспечивающие постоянный, повторно используемый контекст через правила проекта, пользовательские правила, правила команды и файлы AGENTS.md"
+              },
+              "tr": {
+                "name": "Kurallar",
+                "description": "Proje Kuralları, Kullanıcı Kuralları, Takım Kuralları ve AGENTS.md dosyaları aracılığıyla kalıcı, yeniden kullanılabilir bağlam sağlayan Agent için sistem düzeyi talimatlar"
+              },
               "zh-Hans": {
                 "name": "规则",
                 "description": "为 Agent 提供系统级指令，通过项目规则、用户规则、团队规则和 AGENTS.md 文件提供持久、可重用的上下文"
+              },
+              "zh-Hant": {
+                "name": "規則",
+                "description": "為 Agent 提供系統級指令，通過項目規則、用戶規則、團隊規則和 AGENTS.md 文件提供持久、可重用的上下文"
               }
             }
           }
