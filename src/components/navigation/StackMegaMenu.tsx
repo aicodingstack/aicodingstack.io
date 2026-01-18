@@ -43,14 +43,14 @@ const FeaturedLink = memo(function FeaturedLink({
   descKey,
   marginBottom = 'sm',
   onClose,
-  tComponents,
-}: FeaturedLink & { onClose: () => void; tComponents: ReturnType<typeof useTranslations> }) {
+  tComponent,
+}: FeaturedLink & { onClose: () => void; tComponent: ReturnType<typeof useTranslations> }) {
   const marginClass = marginBottom === 'md' ? 'mb-[var(--spacing-md)]' : 'mb-[var(--spacing-sm)]'
 
   return (
     <Link href={href} onClick={onClose} className={`${featuredLinkClass} ${marginClass}`}>
-      <div className="font-medium mb-[var(--spacing-xs)]">{tComponents(titleKey)}</div>
-      <div className="text-xs text-[var(--color-text-secondary)]">{tComponents(descKey)}</div>
+      <div className="font-medium mb-[var(--spacing-xs)]">{tComponent(titleKey)}</div>
+      <div className="text-xs text-[var(--color-text-secondary)]">{tComponent(descKey)}</div>
     </Link>
   )
 })
@@ -62,11 +62,11 @@ const MenuColumn = memo(function MenuColumn({
   titleKey,
   items,
   onClose,
-  tComponents,
-}: MenuColumn & { onClose: () => void; tComponents: ReturnType<typeof useTranslations> }) {
+  tComponent,
+}: MenuColumn & { onClose: () => void; tComponent: ReturnType<typeof useTranslations> }) {
   return (
     <div>
-      <h4 className={columnTitleClass}>{tComponents(titleKey)}</h4>
+      <h4 className={columnTitleClass}>{tComponent(titleKey)}</h4>
       <ul className="space-y-1">
         {items.map(item => (
           <li key={item.href}>
@@ -123,7 +123,7 @@ export const StackMegaMenu = memo(function StackMegaMenu({ isOpen, onClose }: St
         <div className="p-[var(--spacing-md)]">
           {/* Featured Links */}
           {featuredLinks.map(link => (
-            <FeaturedLink key={link.href} {...link} onClose={onClose} tComponents={tComponent} />
+            <FeaturedLink key={link.href} {...link} onClose={onClose} tComponent={tComponent} />
           ))}
 
           {/* Two Column Grid */}
@@ -133,7 +133,7 @@ export const StackMegaMenu = memo(function StackMegaMenu({ isOpen, onClose }: St
                 key={column.titleKey}
                 {...column}
                 onClose={onClose}
-                tComponents={tComponent}
+                tComponent={tComponent}
               />
             ))}
           </div>

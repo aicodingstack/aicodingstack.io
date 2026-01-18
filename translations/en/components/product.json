@@ -61,6 +61,8 @@
     "title": "Related Products",
     "viewProduct": "View Product"
   },
+  "vendorModels": {},
+  "vendorProducts": {},
   "vendorMatrix": {
     "cell": {
       "summary": "{count} {category}"
@@ -68,7 +70,6 @@
     "controls": {
       "clear": "Clear",
       "sortByLabel": "Sort by:",
-      "sortName": "Name",
       "vendorTypeLabel": "Vendor Type:"
     },
     "table": {

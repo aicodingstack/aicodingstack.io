@@ -68,7 +68,6 @@
     "controls": {
       "clear": "Temizle",
       "sortByLabel": "Sırala:",
-      "sortName": "Ad",
       "vendorTypeLabel": "Sağlayıcı Türü:"
     },
     "table": {

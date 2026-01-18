@@ -12,7 +12,7 @@ export interface ModelBenchmarksProps {
  * Displays performance benchmark scores for AI models.
  */
 export function ModelBenchmarks({ benchmarks }: ModelBenchmarksProps) {
-  const tComponent = useTranslations('components.product.benchmarks')
+  const tComponent = useTranslations('components.product')
   if (!benchmarks || !hasBenchmarks(benchmarks)) {
     return null
   }
@@ -21,7 +21,7 @@ export function ModelBenchmarks({ benchmarks }: ModelBenchmarksProps) {
     <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
         <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-sm)]">
-          {tComponent('title')}
+          {tComponent('benchmarks.title')}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[var(--spacing-md)] mt-[var(--spacing-lg)]">

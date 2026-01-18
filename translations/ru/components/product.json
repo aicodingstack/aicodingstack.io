@@ -68,7 +68,6 @@
     "controls": {
       "clear": "Очистить",
       "sortByLabel": "Сортировать:",
-      "sortName": "Имя",
       "vendorTypeLabel": "Тип поставщика:"
     },
     "table": {

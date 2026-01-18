@@ -21,7 +21,7 @@ export function ResourceLinks({
   layout = 'vertical',
   gridCols = 'grid-cols-2 md:grid-cols-4 lg:grid-cols-7',
 }: ResourceLinksProps) {
-  const tComponent = useTranslations('components.product.resourceLinks')
+  const tComponent = useTranslations('components.product')
   const tShared = useTranslations('shared')
 
   if (!resourceUrls) {
@@ -32,23 +32,27 @@ export function ResourceLinks({
     {
       key: 'download',
       title: tShared('actions.download'),
-      description: tComponent('downloadDescription'),
+      description: tComponent('resourceLinks.downloadDescription'),
     },
     {
       key: 'changelog',
-      title: tComponent('changelog'),
-      description: tComponent('changelogDescription'),
+      title: tComponent('resourceLinks.changelog'),
+      description: tComponent('resourceLinks.changelogDescription'),
     },
     {
       key: 'pricing',
       title: tShared('terms.pricing'),
-      description: tComponent('pricingDescription'),
+      description: tComponent('resourceLinks.pricingDescription'),
     },
-    { key: 'mcp', title: tComponent('mcp'), description: tComponent('mcpDescription') },
+    {
+      key: 'mcp',
+      title: tComponent('resourceLinks.mcp'),
+      description: tComponent('resourceLinks.mcpDescription'),
+    },
     {
       key: 'issue',
-      title: tComponent('issue'),
-      description: tComponent('issueDescription'),
+      title: tComponent('resourceLinks.issue'),
+      description: tComponent('resourceLinks.issueDescription'),
     },
   ] as const
 

@@ -68,7 +68,6 @@
     "controls": {
       "clear": "清除",
       "sortByLabel": "排序方式：",
-      "sortName": "名稱",
       "vendorTypeLabel": "供應商類型："
     },
     "table": {

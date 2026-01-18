@@ -31,7 +31,7 @@ interface StarHistoryApiResponse {
 }
 
 export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
-  const tComponent = useTranslations('components.product.githubStarHistory')
+  const tComponent = useTranslations('components.product')
   const [data, setData] = useState<StarDataPoint[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -113,7 +113,7 @@ export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
           <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">
             <div className="flex items-center justify-center h-[300px]">
               <p className="text-sm text-[var(--color-text-muted)] animate-pulse">
-                {tComponent('loading')}
+                {tComponent('githubStarHistory.loading')}
               </p>
             </div>
           </div>
@@ -133,10 +133,10 @@ export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
           {/* Header */}
           <div className="mb-[var(--spacing-md)]">
             <h2 className="text-lg font-semibold tracking-tight mb-[var(--spacing-xs)]">
-              {tComponent('title')}
+              {tComponent('githubStarHistory.title')}
             </h2>
             <p className="text-sm text-[var(--color-text-secondary)] font-light">
-              {tComponent('description')}
+              {tComponent('githubStarHistory.description')}
             </p>
           </div>
 
@@ -189,8 +189,8 @@ export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
                     color: 'var(--color-text-secondary)',
                   }}
                   formatter={(value: number | undefined) => [
-                    `${value?.toLocaleString() ?? '0'} ${tComponent('stars')}`,
-                    tComponent('stars'),
+                    `${value?.toLocaleString() ?? '0'} ${tComponent('githubStarHistory.stars')}`,
+                    tComponent('githubStarHistory.stars'),
                   ]}
                 />
                 <Line
@@ -214,7 +214,7 @@ export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
           {error && (
             <div className="mt-[var(--spacing-sm)] pt-[var(--spacing-sm)] border-t border-[var(--color-border)]">
               <p className="text-xs text-[var(--color-text-muted)] font-light">
-                {tComponent('fallbackNote')}
+                {tComponent('githubStarHistory.fallbackNote')}
               </p>
             </div>
           )}

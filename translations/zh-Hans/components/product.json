@@ -68,7 +68,6 @@
     "controls": {
       "clear": "清除",
       "sortByLabel": "排序：",
-      "sortName": "名称",
       "vendorTypeLabel": "厂商类型："
     },
     "table": {

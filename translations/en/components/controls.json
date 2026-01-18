@@ -21,7 +21,6 @@
     "viewAllResults": "View all results for \"{query}\""
   },
   "searchInput": {
-    "placeholder": "Search...",
     "clear": "Clear search"
   }
 }

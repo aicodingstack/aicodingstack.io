@@ -68,7 +68,6 @@
     "controls": {
       "clear": "Clear",
       "sortByLabel": "Sort by:",
-      "sortName": "Name",
       "vendorTypeLabel": "Vendor Type:"
     },
     "table": {
