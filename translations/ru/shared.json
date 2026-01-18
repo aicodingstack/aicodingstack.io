@@ -15,7 +15,8 @@
     "view": "Просмотр {name}",
     "viewFullDetails": "Полные детали цен →",
     "visit": "Посетить {name}",
-    "watch": "Смотреть на {platform}"
+    "watch": "Смотреть на {platform}",
+    "searchPlaceholder": "Поиск..."
   },
   "terms": {
     "aiCoding": "ИИ-кодинг",
@@ -25,6 +26,7 @@
     "community": "Community",
     "communityLinks": "Community Links",
     "comparison": "Comparison",
+    "contextWindow": "ContextWindow",
     "curatedCollections": "Curated Collections",
     "docs": "Docs",
     "documentation": "Documentation",
@@ -50,7 +52,10 @@
     "visitWebsite": "Веб-сайт",
     "website": "Website",
     "platforms": "Платформы",
-    "supportedIdes": "Поддерживаемые IDE"
+    "supportedIdes": "Поддерживаемые IDE",
+    "landscapeTitle": "Ландшафт AI Coding",
+    "landscapeDescription": "Визуализация полной экосистемы AI coding",
+    "ecosystemSubtitle": "Изучите полную экосистему AI coding: IDE, CLI, расширения, модели и провайдеры."
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -100,7 +105,8 @@
     "specifications": "Спецификации",
     "quickLinks": "Быстрые ссылки",
     "totalContext": "Total Context",
-    "searchByName": "Search by name..."
+    "searchByName": "Search by name...",
+    "name": "Имя"
   },
   "providerTypes": {
     "foundation-model-provider": "Поставщик базовой модели",

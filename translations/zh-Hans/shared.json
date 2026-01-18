@@ -15,7 +15,8 @@
     "view": "查看 {name}",
     "viewFullDetails": "查看完整定价详情 →",
     "visit": "访问 {name}",
-    "watch": "在 {platform} 上观看"
+    "watch": "在 {platform} 上观看",
+    "searchPlaceholder": "搜索..."
   },
   "terms": {
     "aiCoding": "AI 编码",
@@ -25,6 +26,7 @@
     "community": "社区",
     "communityLinks": "社区链接",
     "comparison": "比较",
+    "contextWindow": "ContextWindow",
     "curatedCollections": "精选收藏集",
     "docs": "Docs",
     "documentation": "文档",
@@ -50,7 +52,10 @@
     "visitWebsite": "访问官网",
     "website": "网站",
     "platforms": "平台",
-    "supportedIdes": "支持的 IDE"
+    "supportedIdes": "支持的 IDE",
+    "landscapeTitle": "AI 编码全景",
+    "landscapeDescription": "可视化完整的 AI 编码生态系统",
+    "ecosystemSubtitle": "探索完整的 AI 编码生态系统：IDE、CLI、扩展、模型和提供商。"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -100,7 +105,8 @@
     "specifications": "规格",
     "quickLinks": "快速链接",
     "totalContext": "Total Context",
-    "searchByName": "Search by name..."
+    "searchByName": "Search by name...",
+    "name": "名称"
   },
   "providerTypes": {
     "foundation-model-provider": "基础模型提供商",

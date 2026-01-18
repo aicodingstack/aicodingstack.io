@@ -4,6 +4,7 @@
     "backToTop": "Back to top",
     "compare": "Compare",
     "compareAll": "Compare All",
+    "searchPlaceholder": "Search...",
     "connect": "Connect on {platform}",
     "discover": "Discover",
     "download": "Download",
@@ -25,6 +26,7 @@
     "community": "Community",
     "communityLinks": "Community Links",
     "comparison": "Comparison",
+    "contextWindow": "Context Window",
     "curatedCollections": "Curated Collections",
     "docs": "Docs",
     "documentation": "Documentation",
@@ -50,7 +52,10 @@
     "visitWebsite": "Visit Website",
     "website": "Website",
     "platforms": "Platforms",
-    "supportedIdes": "Supported IDEs"
+    "supportedIdes": "Supported IDEs",
+    "landscapeTitle": "AI Coding Landscape",
+    "landscapeDescription": "Visualize the complete AI coding ecosystem",
+    "ecosystemSubtitle": "Explore the complete AI coding ecosystem: IDEs, CLIs, extensions, models, and providers."
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -96,6 +101,7 @@
     "findOnAiPlatforms": "Find on AI Platforms",
     "getApiKey": "Get API Key",
     "input": "Input",
+    "name": "Name",
     "output": "Output",
     "specifications": "Specifications",
     "quickLinks": "Quick Links",

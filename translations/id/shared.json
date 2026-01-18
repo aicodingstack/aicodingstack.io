@@ -15,7 +15,8 @@
     "view": "Lihat {name}",
     "viewFullDetails": "Lihat detail harga lengkap →",
     "visit": "Kunjungi {name}",
-    "watch": "Tonton di {platform}"
+    "watch": "Tonton di {platform}",
+    "searchPlaceholder": "Cari..."
   },
   "terms": {
     "aiCoding": "Coding AI",
@@ -25,6 +26,7 @@
     "community": "Community",
     "communityLinks": "Community Links",
     "comparison": "Comparison",
+    "contextWindow": "ContextWindow",
     "curatedCollections": "Curated Collections",
     "docs": "Docs",
     "documentation": "Documentation",
@@ -50,7 +52,10 @@
     "visitWebsite": "Kunjungi situs web",
     "website": "Website",
     "platforms": "Platform",
-    "supportedIdes": "IDE yang Didukung"
+    "supportedIdes": "IDE yang Didukung",
+    "landscapeTitle": "Lanskap AI Coding",
+    "landscapeDescription": "Visualisasikan ekosistem AI coding lengkap",
+    "ecosystemSubtitle": "Jelajahi ekosistem AI coding lengkap: IDE, CLI, ekstensi, model, dan penyedia."
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -100,7 +105,8 @@
     "specifications": "Spesifikasi",
     "quickLinks": "Tautan Cepat",
     "totalContext": "Total Context",
-    "searchByName": "Search by name..."
+    "searchByName": "Search by name...",
+    "name": "Nama"
   },
   "providerTypes": {
     "foundation-model-provider": "Penyedia Model Dasar",

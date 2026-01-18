@@ -15,7 +15,8 @@
     "view": "Ver {name}",
     "viewFullDetails": "Ver detalles completos de precios →",
     "visit": "Visitar {name}",
-    "watch": "Ver en {platform}"
+    "watch": "Ver en {platform}",
+    "searchPlaceholder": "Buscar..."
   },
   "terms": {
     "aiCoding": "Codificación con IA",
@@ -25,6 +26,7 @@
     "community": "Comunidad",
     "communityLinks": "Enlaces de la comunidad",
     "comparison": "Comparación",
+    "contextWindow": "ContextWindow",
     "curatedCollections": "Colecciones curadas",
     "docs": "Documentación",
     "documentation": "Documentación",
@@ -50,7 +52,10 @@
     "visitWebsite": "Visitar sitio web",
     "website": "Sitio web",
     "platforms": "Plataformas",
-    "supportedIdes": "IDEs compatibles"
+    "supportedIdes": "IDEs compatibles",
+    "landscapeTitle": "Panorama de AI Coding",
+    "landscapeDescription": "Visualiza el ecosistema completo de AI coding",
+    "ecosystemSubtitle": "Explora el ecosistema completo de AI coding: IDEs, CLIs, extensiones, modelos y proveedores."
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -100,7 +105,8 @@
     "specifications": "Especificaciones",
     "quickLinks": "Enlaces rápidos",
     "totalContext": "Total Context",
-    "searchByName": "Search by name..."
+    "searchByName": "Search by name...",
+    "name": "Nombre"
   },
   "providerTypes": {
     "foundation-model-provider": "Proveedor de Modelo Base",

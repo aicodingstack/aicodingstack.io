@@ -15,7 +15,8 @@
     "view": "{name}を表示",
     "viewFullDetails": "完全な料金詳細を表示 →",
     "visit": "{name}を訪問",
-    "watch": "{platform}で視聴"
+    "watch": "{platform}で視聴",
+    "searchPlaceholder": "検索..."
   },
   "terms": {
     "aiCoding": "AI コーディング",
@@ -25,6 +26,7 @@
     "community": "コミュニティ",
     "communityLinks": "コミュニティリンク",
     "comparison": "比較",
+    "contextWindow": "ContextWindow",
     "curatedCollections": "キュレートされたコレクション",
     "docs": "ドキュメント",
     "documentation": "ドキュメント",
@@ -50,7 +52,10 @@
     "visitWebsite": "Web サイトを表示",
     "website": "Webサイト",
     "platforms": "プラットフォーム",
-    "supportedIdes": "対応 IDE"
+    "supportedIdes": "対応 IDE",
+    "landscapeTitle": "AIコーディングランドスケープ",
+    "landscapeDescription": "AIコーディングエコシステム全体を可視化",
+    "ecosystemSubtitle": "AIコーディングエコシステム全体を探索：IDE、CLI、拡張機能、モデル、プロバイダー。"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -100,7 +105,8 @@
     "specifications": "仕様",
     "quickLinks": "クイックリンク",
     "totalContext": "Total Context",
-    "searchByName": "Search by name..."
+    "searchByName": "Search by name...",
+    "name": "名前"
   },
   "providerTypes": {
     "foundation-model-provider": "基盤モデルプロバイダー",

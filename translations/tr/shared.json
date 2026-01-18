@@ -15,7 +15,8 @@
     "view": "{name}'ı gör",
     "viewFullDetails": "Tam fiyat detaylarını gör →",
     "visit": "{name}'i ziyaret et",
-    "watch": "{platform}'da izle"
+    "watch": "{platform}'da izle",
+    "searchPlaceholder": "Ara..."
   },
   "terms": {
     "aiCoding": "AI Kodlama",
@@ -25,6 +26,7 @@
     "community": "Community",
     "communityLinks": "Community Links",
     "comparison": "Comparison",
+    "contextWindow": "ContextWindow",
     "curatedCollections": "Curated Collections",
     "docs": "Docs",
     "documentation": "Documentation",
@@ -50,7 +52,10 @@
     "visitWebsite": "Web Sitesini Ziyaret Et",
     "website": "Website",
     "platforms": "Platformlar",
-    "supportedIdes": "Desteklenen IDE'ler"
+    "supportedIdes": "Desteklenen IDE'ler",
+    "landscapeTitle": "AI Kodlama Manzarası",
+    "landscapeDescription": "Tam AI kodlama ekosistemini görselleştirin",
+    "ecosystemSubtitle": "Tam AI kodlama ekosistemini keşfedin: IDE'ler, CLI'ler, uzantılar, modeller ve sağlayıcılar."
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -100,7 +105,8 @@
     "specifications": "Özellikler",
     "quickLinks": "Hızlı Bağlantılar",
     "totalContext": "Total Context",
-    "searchByName": "Search by name..."
+    "searchByName": "Search by name...",
+    "name": "Ad"
   },
   "providerTypes": {
     "foundation-model-provider": "Temel Model Sağlayıcısı",

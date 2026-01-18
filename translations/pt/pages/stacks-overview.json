@@ -20,7 +20,6 @@
     "description": "The intelligence layer. Large language models optimized for code generation, understanding, and analysis. Compare specs, pricing, and capabilities across leading AI models."
   },
   "overviewTitle": "AI Coding Stack Overview",
-  "subtitle": "Explore the complete AI coding ecosystem: IDEs, CLIs, extensions, models, and providers.",
   "vendors": {
     "description": "Leading companies and organizations building AI technology. From OpenAI to Anthropic, discover the vendors behind the AI coding revolution."
   }

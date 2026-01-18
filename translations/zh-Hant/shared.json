@@ -15,7 +15,8 @@
     "view": "檢視 {name}",
     "viewFullDetails": "檢視完整定價資訊 →",
     "visit": "造訪 {name}",
-    "watch": "在 {platform} 上觀看"
+    "watch": "在 {platform} 上觀看",
+    "searchPlaceholder": "搜尋..."
   },
   "terms": {
     "aiCoding": "AI 編碼",
@@ -25,6 +26,7 @@
     "community": "社群",
     "communityLinks": "社群連結",
     "comparison": "比較",
+    "contextWindow": "ContextWindow",
     "curatedCollections": "精選收藏集",
     "docs": "Docs",
     "documentation": "文件",
@@ -50,7 +52,10 @@
     "visitWebsite": "造訪網站",
     "website": "網站",
     "platforms": "平台",
-    "supportedIdes": "支援的 IDE"
+    "supportedIdes": "支援的 IDE",
+    "landscapeTitle": "AI 編碼全景",
+    "landscapeDescription": "視覺化完整的 AI 編碼生態系統",
+    "ecosystemSubtitle": "探索完整的 AI 編碼生態系統：IDE、CLI、擴充功能、模型和提供商。"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -100,7 +105,8 @@
     "specifications": "規格",
     "quickLinks": "快速連結",
     "totalContext": "Total Context",
-    "searchByName": "Search by name..."
+    "searchByName": "Search by name...",
+    "name": "名稱"
   },
   "providerTypes": {
     "foundation-model-provider": "Foundation 模型提供者",

@@ -5,27 +5,15 @@
     "title": "Comparaison CLI de Codage IA"
   },
   "columns": {
-    "name": "Name",
-    "cache": "Cache",
-    "capabilities": "Capacités",
     "contextLength": "Longueur du contexte",
     "freePlan": "Plan gratuit",
-    "input": "Entrée",
-    "inputModalities": "Modalités d'entrée",
     "links": "Liens",
     "live-code-bench": "Live Code Bench",
     "maxPrice": "Prix maximum",
-    "mmmu": "MMMU",
-    "mmmu-pro": "MMMU Pro",
-    "output": "Sortie",
     "pricingCache": "Tarif Cache",
     "pricingInput": "Tarif Entrée",
     "pricingOutput": "Tarif Sortie",
-    "sci-code": "SciCode",
-    "startingPrice": "Prix de départ",
-    "swe-bench": "SWE-bench",
-    "terminal-bench": "Terminal Bench",
-    "web-dev-arena": "WebDev Arena"
+    "startingPrice": "Prix de départ"
   },
   "extensions": {
     "backTo": "Retour aux Extensions",

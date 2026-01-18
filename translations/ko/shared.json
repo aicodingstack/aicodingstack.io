@@ -15,7 +15,8 @@
     "view": "{name} 보기",
     "viewFullDetails": "전체 가격 세부 정보 보기 →",
     "visit": "{name} 방문",
-    "watch": "{platform}에서 시청"
+    "watch": "{platform}에서 시청",
+    "searchPlaceholder": "검색..."
   },
   "terms": {
     "aiCoding": "AI 코딩",
@@ -25,6 +26,7 @@
     "community": "커뮤니티",
     "communityLinks": "커뮤니티 링크",
     "comparison": "비교",
+    "contextWindow": "ContextWindow",
     "curatedCollections": "선별된 컬렉션",
     "docs": "Docs",
     "documentation": "문서",
@@ -50,7 +52,10 @@
     "visitWebsite": "웹사이트 방문",
     "website": "웹사이트",
     "platforms": "플랫폼",
-    "supportedIdes": "지원되는 IDE"
+    "supportedIdes": "지원되는 IDE",
+    "landscapeTitle": "AI 코딩 랜드스케이프",
+    "landscapeDescription": "전체 AI 코딩 생태계 시각화",
+    "ecosystemSubtitle": "전체 AI 코딩 생태계 탐색: IDE, CLI, 확장, 모델 및 공급자."
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -100,7 +105,8 @@
     "specifications": "사양",
     "quickLinks": "빠른 링크",
     "totalContext": "Total Context",
-    "searchByName": "Search by name..."
+    "searchByName": "Search by name...",
+    "name": "이름"
   },
   "providerTypes": {
     "foundation-model-provider": "기초 모델 제공자",
