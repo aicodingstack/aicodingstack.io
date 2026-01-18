@@ -15,21 +15,26 @@ const __dirname = path.dirname(__filename)
 const ROOT_DIR = path.resolve(__dirname, '../..')
 const LOCALES_DIR = path.join(ROOT_DIR, 'locales')
 
+interface JsonFile {
+  fullPath: string
+  relativePath: string
+}
+
 /**
  * Recursively sort object keys alphabetically
  * Arrays are preserved as-is, only object keys are sorted
  */
-function sortObjectKeysRecursively(obj) {
+function sortObjectKeysRecursively(obj: unknown): unknown {
   if (Array.isArray(obj)) {
     return obj.map(item => sortObjectKeysRecursively(item))
   }
 
   if (obj && typeof obj === 'object') {
-    const sorted = {}
+    const sorted: Record<string, unknown> = {}
     const keys = Object.keys(obj).sort()
 
     for (const key of keys) {
-      sorted[key] = sortObjectKeysRecursively(obj[key])
+      sorted[key] = sortObjectKeysRecursively((obj as Record<string, unknown>)[key])
     }
 
     return sorted
@@ -41,7 +46,7 @@ function sortObjectKeysRecursively(obj) {
 /**
  * Process a single JSON file
  */
-async function processJsonFile(filePath, relativePath) {
+async function processJsonFile(filePath: string, relativePath: string): Promise<void> {
   try {
     // Read the file
     const content = await fs.readFile(filePath, 'utf-8')
@@ -56,15 +61,15 @@ async function processJsonFile(filePath, relativePath) {
 
     console.log(`  ✅ ${relativePath}`)
   } catch (error) {
-    console.error(`  ❌ Error processing ${relativePath}:`, error.message)
+    console.error(`  ❌ Error processing ${relativePath}:`, (error as Error).message)
   }
 }
 
 /**
  * Recursively find all JSON files in a directory
  */
-async function findJsonFiles(dirPath, basePath = dirPath) {
-  const jsonFiles = []
+async function findJsonFiles(dirPath: string, basePath = dirPath): Promise<JsonFile[]> {
+  const jsonFiles: JsonFile[] = []
 
   try {
     const entries = await fs.readdir(dirPath, { withFileTypes: true })
@@ -83,7 +88,7 @@ async function findJsonFiles(dirPath, basePath = dirPath) {
       }
     }
   } catch (error) {
-    console.error(`  ⚠️  Error reading directory ${dirPath}:`, error.message)
+    console.error(`  ⚠️  Error reading directory ${dirPath}:`, (error as Error).message)
   }
 
   return jsonFiles
@@ -92,7 +97,7 @@ async function findJsonFiles(dirPath, basePath = dirPath) {
 /**
  * Main function
  */
-async function main() {
+async function main(): Promise<void> {
   console.log('🔄 Sorting locales JSON files alphabetically...\n')
 
   // Find all JSON files in locales directory

@@ -16,13 +16,43 @@ const ROOT_DIR = path.resolve(__dirname, '../..')
 const MANIFESTS_DIR = path.join(ROOT_DIR, 'manifests')
 const VENDORS_DIR = path.join(MANIFESTS_DIR, 'vendors')
 
+interface VendorData {
+  name: string
+  websiteUrl: string | null
+  docsUrl: string | null
+  verified: boolean
+  communityUrls: CommunityUrls | null
+  i18n: Record<string, { description?: string }> | null
+}
+
+interface CommunityUrls {
+  linkedin: string | null
+  twitter: string | null
+  github: string | null
+  youtube: string | null
+  discord: string | null
+  reddit: string | null
+  blog: string | null
+}
+
+interface VendorObject {
+  id: string
+  name: string
+  description: string
+  i18n: Record<string, { description?: string }>
+  websiteUrl: string | null
+  docsUrl: string | null
+  verified: boolean
+  communityUrls: CommunityUrls
+}
+
 /**
  * Convert vendor name to vendor id
  * Rules: lowercase, replace spaces and dots with hyphens
- * @param {string} vendorName - The vendor name
- * @returns {string} The vendor id
+ * @param vendorName - The vendor name
+ * @returns The vendor id
  */
-function vendorNameToId(vendorName) {
+function vendorNameToId(vendorName: string): string {
   return vendorName
     .toLowerCase()
     .replace(/\s+/g, '-')
@@ -33,20 +63,20 @@ function vendorNameToId(vendorName) {
 
 /**
  * Load and parse a JSON file
- * @param {string} filePath - Path to the JSON file
- * @returns {Promise<Object>} Parsed JSON object
+ * @param filePath - Path to the JSON file
+ * @returns Parsed JSON object
  */
-async function loadJSON(filePath) {
-  const content = await fs.readFile(filePath, 'utf-8')
-  return JSON.parse(content)
+async function loadJSON(filePath: string): Promise<Record<string, unknown>> {
+  const content = await fs.readFile(filePath, 'utf8')
+  return JSON.parse(content) as Record<string, unknown>
 }
 
 /**
  * Check if a file exists
- * @param {string} filePath - Path to the file
- * @returns {Promise<boolean>} True if file exists
+ * @param filePath - Path to the file
+ * @returns True if file exists
  */
-async function fileExists(filePath) {
+async function fileExists(filePath: string): Promise<boolean> {
   try {
     await fs.access(filePath)
     return true
@@ -57,13 +87,13 @@ async function fileExists(filePath) {
 
 /**
  * Get all JSON files in a directory
- * @param {string} dirPath - Directory path
- * @returns {Promise<string[]>} Array of JSON file paths
+ * @param dirPath - Directory path
+ * @returns Array of JSON file paths
  */
-async function getJsonFiles(dirPath) {
+async function getJsonFiles(dirPath: string): Promise<string[]> {
   try {
     const entries = await fs.readdir(dirPath, { withFileTypes: true })
-    const jsonFiles = []
+    const jsonFiles: string[] = []
 
     for (const entry of entries) {
       if (entry.isFile() && entry.name.endsWith('.json')) {
@@ -80,12 +110,15 @@ async function getJsonFiles(dirPath) {
 /**
  * Merge community URLs objects
  * Priority: existing value > new value (if existing is null/undefined, use new)
- * @param {Object|null} existing - Existing communityUrls object
- * @param {Object|null} newUrls - New communityUrls object
- * @returns {Object} Merged communityUrls object
+ * @param existing - Existing communityUrls object
+ * @param newUrls - New communityUrls object
+ * @returns Merged communityUrls object
  */
-function mergeCommunityUrls(existing, newUrls) {
-  const result = {
+function mergeCommunityUrls(
+  existing: CommunityUrls | null,
+  newUrls: CommunityUrls | null
+): CommunityUrls {
+  const result: CommunityUrls = {
     linkedin: null,
     twitter: null,
     github: null,
@@ -97,18 +130,20 @@ function mergeCommunityUrls(existing, newUrls) {
 
   // Start with existing values
   if (existing) {
-    Object.keys(result).forEach(key => {
+    const keys = Object.keys(result) as Array<keyof CommunityUrls>
+    for (const key of keys) {
       result[key] = existing[key] || null
-    })
+    }
   }
 
   // Override with new values if existing is null
   if (newUrls) {
-    Object.keys(result).forEach(key => {
+    const keys = Object.keys(result) as Array<keyof CommunityUrls>
+    for (const key of keys) {
       if (!result[key] && newUrls[key]) {
         result[key] = newUrls[key]
       }
-    })
+    }
   }
 
   return result
@@ -117,12 +152,12 @@ function mergeCommunityUrls(existing, newUrls) {
 /**
  * Merge vendor information from multiple manifests
  * Priority: existing value > new value (if existing is null/undefined, use new)
- * @param {Object} existing - Existing vendor data
- * @param {Object} newData - New vendor data from manifest
- * @returns {Object} Merged vendor data
+ * @param existing - Existing vendor data
+ * @param newData - New vendor data from manifest
+ * @returns Merged vendor data
  */
-function mergeVendorData(existing, newData) {
-  const merged = { ...existing }
+function mergeVendorData(existing: VendorData, newData: VendorData): VendorData {
+  const merged: VendorData = { ...existing }
 
   // Merge basic fields
   if (!merged.websiteUrl && newData.websiteUrl) {
@@ -146,14 +181,14 @@ function mergeVendorData(existing, newData) {
       merged.i18n = {}
     }
     // Merge i18n descriptions for each locale
-    Object.keys(newData.i18n).forEach(locale => {
+    for (const locale of Object.keys(newData.i18n)) {
       if (!merged.i18n[locale]) {
         merged.i18n[locale] = {}
       }
       if (!merged.i18n[locale].description && newData.i18n[locale]?.description) {
         merged.i18n[locale].description = newData.i18n[locale].description
       }
-    })
+    }
   }
 
   return merged
@@ -161,21 +196,24 @@ function mergeVendorData(existing, newData) {
 
 /**
  * Extract vendor information from a manifest file
- * @param {Object} manifest - The manifest object
- * @returns {Object|null} Extracted vendor data or null if no vendor field
+ * @param manifest - The manifest object
+ * @returns Extracted vendor data or null if no vendor field
  */
-function extractVendorData(manifest) {
+function extractVendorData(manifest: Record<string, unknown>): VendorData | null {
   if (!manifest.vendor) {
     return null
   }
 
-  const vendorData = {
-    name: manifest.vendor,
-    websiteUrl: manifest.websiteUrl || null,
-    docsUrl: manifest.docsUrl || null,
-    verified: manifest.verified !== undefined ? manifest.verified : false,
-    communityUrls: manifest.communityUrls || null,
-    i18n: manifest.i18n || null,
+  const vendorData: VendorData = {
+    name: manifest.vendor as string,
+    websiteUrl: (manifest.websiteUrl as string | null) || null,
+    docsUrl: (manifest.docsUrl as string | null) || null,
+    verified:
+      (manifest.verified as boolean | undefined) !== undefined
+        ? (manifest.verified as boolean)
+        : false,
+    communityUrls: (manifest.communityUrls as CommunityUrls | null) || null,
+    i18n: (manifest.i18n as Record<string, { description?: string }> | null) || null,
   }
 
   return vendorData
@@ -183,18 +221,18 @@ function extractVendorData(manifest) {
 
 /**
  * Create a vendor file from vendor data
- * @param {string} vendorId - The vendor id
- * @param {Object} vendorData - The vendor data
- * @returns {Object} Complete vendor object
+ * @param vendorId - The vendor id
+ * @param vendorData - The vendor data
+ * @returns Complete vendor object
  */
-function createVendorObject(vendorId, vendorData) {
+function createVendorObject(vendorId: string, vendorData: VendorData): VendorObject {
   // Default description if not provided
   const defaultDescription = `${vendorData.name} is a vendor.`
 
-  const vendor = {
+  const vendor: VendorObject = {
     id: vendorId,
     name: vendorData.name,
-    description: vendorData.description || defaultDescription,
+    description: (vendorData as { description?: string }).description || defaultDescription,
     i18n: vendorData.i18n || {},
     websiteUrl: vendorData.websiteUrl || null,
     docsUrl: vendorData.docsUrl || null,
@@ -207,11 +245,13 @@ function createVendorObject(vendorId, vendorData) {
 
 /**
  * Process a single manifest file and extract vendor information
- * @param {string} manifestPath - Path to the manifest file
- * @param {Map<string, Object>} vendorsMap - Map of vendor id to vendor data
- * @returns {Promise<void>}
+ * @param manifestPath - Path to the manifest file
+ * @param vendorsMap - Map of vendor id to vendor data
  */
-async function processManifest(manifestPath, vendorsMap) {
+async function processManifest(
+  manifestPath: string,
+  vendorsMap: Map<string, VendorData>
+): Promise<void> {
   try {
     const manifest = await loadJSON(manifestPath)
     const vendorData = extractVendorData(manifest)
@@ -224,23 +264,25 @@ async function processManifest(manifestPath, vendorsMap) {
 
     // If vendor already exists in map, merge the data
     if (vendorsMap.has(vendorId)) {
-      const existing = vendorsMap.get(vendorId)
+      const existing = vendorsMap.get(vendorId)!
       vendorsMap.set(vendorId, mergeVendorData(existing, vendorData))
     } else {
       vendorsMap.set(vendorId, vendorData)
     }
   } catch (error) {
-    console.error(`  ⚠️  Error processing ${manifestPath}:`, error.message)
+    console.error(`  ⚠️  Error processing ${manifestPath}:`, (error as Error).message)
   }
 }
 
 /**
  * Process all manifest files in a directory
- * @param {string} categoryDir - Directory path
- * @param {Map<string, Object>} vendorsMap - Map of vendor id to vendor data
- * @returns {Promise<void>}
+ * @param categoryDir - Directory path
+ * @param vendorsMap - Map of vendor id to vendor data
  */
-async function processCategory(categoryDir, vendorsMap) {
+async function processCategory(
+  categoryDir: string,
+  vendorsMap: Map<string, VendorData>
+): Promise<void> {
   const jsonFiles = await getJsonFiles(categoryDir)
 
   if (jsonFiles.length === 0) {
@@ -255,14 +297,14 @@ async function processCategory(categoryDir, vendorsMap) {
 /**
  * Main function
  */
-async function main() {
+async function main(): Promise<void> {
   console.log('🔄 Exporting vendors from manifest files...\n')
 
   // Categories to process
   const categories = ['ides', 'clis', 'extensions', 'models', 'providers']
 
   // Map to store vendor data (vendorId -> vendorData)
-  const vendorsMap = new Map()
+  const vendorsMap = new Map<string, VendorData>()
 
   // Process all categories
   for (const category of categories) {

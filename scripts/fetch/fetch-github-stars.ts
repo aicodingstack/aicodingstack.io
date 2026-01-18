@@ -8,14 +8,19 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
 // GitHub API token (optional but recommended to avoid rate limits)
-// Set via environment variable: GITHUB_TOKEN=your_token_here node fetch-github-stars.mjs
+// Set via environment variable: GITHUB_TOKEN=your_token_here node fetch-github-stars.ts
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN
 
 // Path to the centralized GitHub stars data file
 const GITHUB_STARS_FILE = path.join(__dirname, '..', '..', 'data', 'github-stars.json')
 
+interface DirConfig {
+  directory: string
+  category: string
+}
+
 // Directories configuration - mapping manifest directories to categories
-const dirsConfig = [
+const dirsConfig: DirConfig[] = [
   {
     directory: 'manifests/extensions',
     category: 'extensions',
@@ -30,21 +35,50 @@ const dirsConfig = [
   },
 ]
 
+interface GithubRepo {
+  owner: string
+  repo: string
+}
+
+interface ProcessResult {
+  fileId: string
+  stars: number | null
+  updated: boolean
+  skipped: boolean
+  error: boolean
+}
+
+interface DirectoryResult {
+  categoryData: Record<string, number | null>
+  stats: {
+    updated: number
+    skipped: number
+    errors: number
+  }
+}
+
+interface StarsData {
+  extensions: Record<string, number | null>
+  clis: Record<string, number | null>
+  ides: Record<string, number | null>
+  [key: string]: Record<string, number | null>
+}
+
 // Extract owner and repo from GitHub URL
-function parseGithubUrl(url) {
+function parseGithubUrl(url: string): GithubRepo | null {
   if (!url) return null
   const match = url.match(/github\.com\/([^/]+)\/([^/]+)/)
-  if (!match) return null
+  if (!match || match.length < 3) return null
   return {
-    owner: match[1],
-    repo: match[2],
+    owner: match[1] ?? '',
+    repo: match[2] ?? '',
   }
 }
 
 // Fetch stars from GitHub API
-function fetchStars(owner, repo) {
+function fetchStars(owner: string, repo: string): Promise<number> {
   return new Promise((resolve, reject) => {
-    const options = {
+    const options: https.RequestOptions = {
       hostname: 'api.github.com',
       path: `/repos/${owner}/${repo}`,
       method: 'GET',
@@ -55,7 +89,10 @@ function fetchStars(owner, repo) {
     }
 
     if (GITHUB_TOKEN) {
-      options.headers.Authorization = `token ${GITHUB_TOKEN}`
+      options.headers = {
+        ...options.headers,
+        Authorization: `token ${GITHUB_TOKEN}`,
+      }
     }
 
     const req = https.request(options, res => {
@@ -74,7 +111,7 @@ function fetchStars(owner, repo) {
             const starsInK = parseFloat((stars / 1000).toFixed(1))
             resolve(starsInK)
           } catch (e) {
-            reject(new Error(`Failed to parse response: ${e.message}`))
+            reject(new Error(`Failed to parse response: ${(e as Error).message}`))
           }
         } else if (res.statusCode === 403) {
           reject(new Error('Rate limit exceeded. Please set GITHUB_TOKEN environment variable.'))
@@ -95,18 +132,18 @@ function fetchStars(owner, repo) {
 }
 
 // Extract file ID from filename (remove .json extension)
-function getFileId(fileName) {
+function getFileId(fileName: string): string {
   return fileName.replace(/\.json$/, '')
 }
 
 // Sleep function to avoid rate limiting
-function sleep(ms) {
+function sleep(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
 
 // Process a single JSON file
 // Returns the file ID (from filename) and stars count (or null if no githubUrl or error)
-async function processFile(filePath, fileName) {
+async function processFile(filePath: string, fileName: string): Promise<ProcessResult> {
   const fileId = getFileId(fileName)
   const content = fs.readFileSync(filePath, 'utf8')
   const item = JSON.parse(content)
@@ -135,14 +172,14 @@ async function processFile(filePath, fileName) {
     await sleep(1000)
     return { fileId, stars, updated: true, skipped: false, error: false }
   } catch (error) {
-    console.log(`  ❌ ${fileId}: Error fetching stars: ${error.message}`)
+    console.log(`  ❌ ${fileId}: Error fetching stars:`, (error as Error).message)
     return { fileId, stars: null, updated: false, skipped: false, error: true }
   }
 }
 
 // Process all files in a directory
 // Maps file names (without .json) to stars data based on githubUrl field
-async function processDirectory(dirConfig) {
+async function processDirectory(dirConfig: DirConfig): Promise<DirectoryResult> {
   const dirPath = path.join(__dirname, '..', '..', dirConfig.directory)
   console.log(`\n📁 Processing ${dirConfig.directory}...`)
 
@@ -162,7 +199,7 @@ async function processDirectory(dirConfig) {
   let updated = 0
   let skipped = 0
   let errors = 0
-  const categoryData = {}
+  const categoryData: Record<string, number | null> = {}
 
   // Process each file and map by filename (without .json extension)
   for (const file of files) {
@@ -184,23 +221,23 @@ async function processDirectory(dirConfig) {
 }
 
 // Main function
-async function main() {
+async function main(): Promise<void> {
   console.log('🚀 Starting GitHub stars fetcher...\n')
   console.log('📝 Note: Updating centralized github-stars.json file\n')
 
   if (!GITHUB_TOKEN) {
     console.log('⚠️  Warning: No GITHUB_TOKEN set. You may hit rate limits (60 requests/hour).')
-    console.log('   Set it with: GITHUB_TOKEN=your_token node fetch-github-stars.mjs\n')
+    console.log('   Set it with: GITHUB_TOKEN=your_token node fetch-github-stars.ts\n')
   } else {
     console.log('✅ Using GitHub token for authentication\n')
   }
 
   // Load existing stars data or create new structure
-  let starsData = { extensions: {}, clis: {}, ides: {} }
+  let starsData: StarsData = { extensions: {}, clis: {}, ides: {} }
   if (fs.existsSync(GITHUB_STARS_FILE)) {
     try {
       const content = fs.readFileSync(GITHUB_STARS_FILE, 'utf8')
-      starsData = JSON.parse(content)
+      starsData = JSON.parse(content) as StarsData
       console.log('📂 Loaded existing github-stars.json\n')
     } catch {
       console.log('⚠️  Failed to parse existing github-stars.json, creating new one\n')
@@ -220,8 +257,8 @@ async function main() {
       // Sort the category data by key (alphabetically)
       const sortedCategoryData = Object.keys(categoryData)
         .sort()
-        .reduce((acc, key) => {
-          acc[key] = categoryData[key]
+        .reduce<Record<string, number | null>>((acc, key) => {
+          acc[key] = categoryData[key] ?? null
           return acc
         }, {})
 
@@ -233,7 +270,7 @@ async function main() {
       totalSkipped += stats.skipped
       totalErrors += stats.errors
     } catch (error) {
-      console.error(`❌ Failed to process ${dirConfig.directory}:`, error.message)
+      console.error(`❌ Failed to process ${dirConfig.directory}:`, (error as Error).message)
       totalErrors++
     }
   }
@@ -243,7 +280,7 @@ async function main() {
     fs.writeFileSync(GITHUB_STARS_FILE, `${JSON.stringify(starsData, null, 2)}\n`, 'utf8')
     console.log('\n📝 Successfully updated data/github-stars.json')
   } catch (error) {
-    console.error('\n❌ Failed to write github-stars.json:', error.message)
+    console.error('\n❌ Failed to write github-stars.json:', (error as Error).message)
     process.exit(1)
   }
 
