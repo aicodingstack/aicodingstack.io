@@ -66,7 +66,6 @@ export default async function ModelPage({
     notFound()
   }
 
-  const tPage = await getTranslations({ locale, namespace: 'pages.modelDetail' })
   const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Generate JSON-LD schema
@@ -90,7 +89,10 @@ export default async function ModelPage({
   // Build additional info for ProductHero
   const additionalInfo = [
     model.size && { label: tShared('terms.modelSize'), value: model.size },
-    { label: tPage('contextWindow'), value: `${model.contextWindow.toLocaleString()} tokens` },
+    {
+      label: tShared('terms.contextWindow'),
+      value: `${model.contextWindow.toLocaleString()} tokens`,
+    },
     { label: tShared('terms.maxOutput'), value: `${model.maxOutput.toLocaleString()} tokens` },
   ].filter(Boolean) as { label: string; value: string }[]
 

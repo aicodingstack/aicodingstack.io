@@ -11,46 +11,71 @@
     "follow": "Suivre sur {platform}",
     "join": "Rejoindre {platform}",
     "search": "Rechercher",
+    "searchPlaceholder": "Rechercher...",
     "selectItem": "Sélectionner un élément",
     "view": "Voir {name}",
     "viewFullDetails": "Voir les détails complets des tarifs →",
     "visit": "Visiter {name}",
     "watch": "Regarder sur {platform}"
   },
-  "terms": {
-    "aiCoding": "Codage IA",
-    "aiCodingStack": "AI Coding Stack",
-    "articles": "Articles",
-    "collections": "Collections",
-    "community": "Communauté",
-    "communityLinks": "Liens de la communauté",
-    "comparison": "Comparaison",
-    "curatedCollections": "Collections sélectionnées",
-    "docs": "Documentation",
-    "documentation": "Documentation",
-    "ecosystemTools": "Outils de l'écosystème",
-    "faq": "FAQ",
-    "featuredArticles": "Articles en vedette",
-    "followUs": "Suivez-nous",
-    "indexLabel": "INDEX",
-    "license": "Licence",
-    "manifesto": "Manifeste",
-    "maxOutput": "Sortie maximale",
-    "modelSize": "Taille du modèle",
-    "openSource": "Open Source",
-    "pricing": "Tarifs",
-    "products": "Produits",
-    "proprietary": "Propriétaire",
-    "resources": "Ressources",
-    "slogan": "Découvrir. Comparer. Construire 10x plus vite.",
-    "specificationsProtocols": "Spécifications et protocoles",
-    "stars": "Étoiles",
-    "type": "Type",
-    "version": "Version",
-    "visitWebsite": "Visiter le site web",
-    "website": "Site web",
-    "platforms": "Plateformes",
-    "supportedIdes": "IDE compatibles"
+  "benchmarks": {
+    "liveCodeBench": "LiveCodeBench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "webDevArena": "WebDev Arena"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
+  },
+  "categories": {
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "providers": "Providers",
+      "vendors": "Vendors"
+    },
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "provider": "Provider",
+      "vendor": "Vendor"
+    }
+  },
+  "labels": {
+    "cache": "Cache",
+    "findOnAiPlatforms": "Trouver sur les plateformes IA",
+    "getApiKey": "Obtenir la clé API",
+    "input": "Input",
+    "name": "Nom",
+    "output": "Output",
+    "quickLinks": "Liens rapides",
+    "searchByName": "Search by name...",
+    "specifications": "Spécifications",
+    "totalContext": "Total Context"
+  },
+  "lifecycle": {
+    "deprecated": "Obsolète",
+    "latest": "Le plus récent",
+    "maintained": "Maintenu"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -63,66 +88,47 @@
     "twitter": "X (Twitter)",
     "youtube": "YouTube"
   },
-  "categories": {
-    "singular": {
-      "cli": "CLI",
-      "extension": "Extension",
-      "ide": "IDE",
-      "model": "Model",
-      "modelProvider": "Model Provider",
-      "provider": "Provider",
-      "vendor": "Vendor"
-    },
-    "plural": {
-      "clis": "CLIs",
-      "extensions": "Extensions",
-      "ides": "IDEs",
-      "modelProviders": "Model Providers",
-      "models": "Models",
-      "providers": "Providers",
-      "vendors": "Vendors"
-    },
-    "all": {
-      "clis": "All CLIs",
-      "extensions": "All Extensions",
-      "ides": "All IDEs",
-      "modelProviders": "All Model Providers",
-      "models": "All Models",
-      "vendors": "All Vendors"
-    }
-  },
-  "labels": {
-    "cache": "Cache",
-    "findOnAiPlatforms": "Trouver sur les plateformes IA",
-    "getApiKey": "Obtenir la clé API",
-    "input": "Input",
-    "output": "Output",
-    "specifications": "Spécifications",
-    "quickLinks": "Liens rapides",
-    "totalContext": "Total Context",
-    "searchByName": "Search by name..."
-  },
   "providerTypes": {
     "foundation-model-provider": "Fournisseur de Modèle Fondamental",
     "model-service-provider": "Fournisseur de Service de Modèle"
   },
-  "lifecycle": {
-    "latest": "Le plus récent",
-    "maintained": "Maintenu",
-    "deprecated": "Obsolète"
-  },
-  "benchmarks": {
-    "sciCode": "SciCode",
-    "sweBench": "SWE-bench",
-    "terminalBench": "Terminal Bench",
-    "mmmu": "MMMU",
-    "mmmuPro": "MMMU Pro",
-    "webDevArena": "WebDev Arena",
-    "liveCodeBench": "LiveCodeBench"
-  },
-  "capabilities": {
-    "capabilities": "Capabilities",
-    "inputModalities": "Input Modalities",
-    "outputModalities": "Output Modalities"
+  "terms": {
+    "aiCoding": "Codage IA",
+    "aiCodingStack": "AI Coding Stack",
+    "articles": "Articles",
+    "collections": "Collections",
+    "community": "Communauté",
+    "communityLinks": "Liens de la communauté",
+    "comparison": "Comparaison",
+    "contextWindow": "ContextWindow",
+    "curatedCollections": "Collections sélectionnées",
+    "docs": "Documentation",
+    "documentation": "Documentation",
+    "ecosystemSubtitle": "Explorez l'écosystème complet de l'AI coding : IDEs, CLIs, extensions, modèles et fournisseurs.",
+    "ecosystemTools": "Outils de l'écosystème",
+    "faq": "FAQ",
+    "featuredArticles": "Articles en vedette",
+    "followUs": "Suivez-nous",
+    "indexLabel": "INDEX",
+    "landscapeDescription": "Visualisez l'écosystème complet de l'AI coding",
+    "landscapeTitle": "Paysage AI Coding",
+    "license": "Licence",
+    "manifesto": "Manifeste",
+    "maxOutput": "Sortie maximale",
+    "modelSize": "Taille du modèle",
+    "openSource": "Open Source",
+    "platforms": "Plateformes",
+    "pricing": "Tarifs",
+    "products": "Produits",
+    "proprietary": "Propriétaire",
+    "resources": "Ressources",
+    "slogan": "Découvrir. Comparer. Construire 10x plus vite.",
+    "specificationsProtocols": "Spécifications et protocoles",
+    "stars": "Étoiles",
+    "supportedIdes": "IDE compatibles",
+    "type": "Type",
+    "version": "Version",
+    "visitWebsite": "Visiter le site web",
+    "website": "Site web"
   }
 }

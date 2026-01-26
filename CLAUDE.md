@@ -4,8 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Internationalization (i18n)
 
+**Translation Resources Location:** All translation files are located in the `translations/` directory at the project root, organized by locale code (e.g., `translations/en/`, `translations/zh-Hans/`).
+
 When creating or modifying any page, module, or data:
-- **MUST support all configured languages (18 total):**
+- **MUST support all configured languages (12 total):**
   - English (en)
   - German (de)
   - Spanish (es)

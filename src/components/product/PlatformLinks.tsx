@@ -20,7 +20,7 @@ export function PlatformLinks({
   layout = 'horizontal',
   gridCols = 'grid-cols-1 md:grid-cols-3',
 }: PlatformLinksProps) {
-  const tComponent = useTranslations('components.product.platformLinks')
+  const tComponent = useTranslations('components.product')
   const tShared = useTranslations('shared')
 
   if (!platformUrls) {
@@ -31,17 +31,17 @@ export function PlatformLinks({
     {
       key: 'huggingface',
       title: tShared('platforms.huggingface'),
-      description: tComponent('aiPlatforms.huggingface.description'),
+      description: tComponent('platformLinks.aiPlatforms.huggingface.description'),
     },
     {
       key: 'artificialAnalysis',
       title: tShared('platforms.artificialAnalysis'),
-      description: tComponent('aiPlatforms.artificialAnalysis.description'),
+      description: tComponent('platformLinks.aiPlatforms.artificialAnalysis.description'),
     },
     {
       key: 'openrouter',
       title: tShared('platforms.openrouter'),
-      description: tComponent('aiPlatforms.openrouter.description'),
+      description: tComponent('platformLinks.aiPlatforms.openrouter.description'),
     },
   ] as const
 

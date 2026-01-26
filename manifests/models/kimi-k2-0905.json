@@ -59,11 +59,11 @@
   "benchmarks": {
     "sweBench": 43.8,
     "terminalBench": 0.278,
-    "sciCode": null,
-    "liveCodeBench": null,
     "mmmu": null,
     "mmmuPro": null,
-    "webDevArena": null
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
   },
   "platformUrls": {
     "huggingface": "https://huggingface.co/moonshotai/Kimi-K2-Instruct-0905",

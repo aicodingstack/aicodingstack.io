@@ -5,27 +5,15 @@
     "title": "Сравнение CLI ИИ-кодинга"
   },
   "columns": {
-    "name": "Name",
-    "cache": "Кэш",
-    "capabilities": "Возможности",
     "contextLength": "Длина контекста",
     "freePlan": "Бесплатный план",
-    "input": "Вход",
-    "inputModalities": "Модальности ввода",
     "links": "Ссылки",
     "live-code-bench": "Live Code Bench",
     "maxPrice": "Макс. цена",
-    "mmmu": "MMMU",
-    "mmmu-pro": "MMMU Pro",
-    "output": "Выход",
     "pricingCache": "Цена кэша",
     "pricingInput": "Цена ввода",
     "pricingOutput": "Цена вывода",
-    "sci-code": "SciCode",
-    "startingPrice": "Начальная цена",
-    "swe-bench": "SWE-bench",
-    "terminal-bench": "Terminal Bench",
-    "web-dev-arena": "WebDev Arena"
+    "startingPrice": "Начальная цена"
   },
   "extensions": {
     "backTo": "Назад к расширениям",
