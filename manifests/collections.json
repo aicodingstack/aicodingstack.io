@@ -412,6 +412,61 @@
             "name": "Agent Payments Protocol (AP2)",
             "url": "https://ap2-protocol.org",
             "description": "Open protocol for secure agent-led payments using verifiable digital credentials and authorization mandates"
+          },
+          {
+            "translations": {
+              "en": {
+                "name": "Agentic Commerce Protocol (ACP)",
+                "description": "Open standard for programmatic commerce flows between AI agents and businesses, enabling secure transactions and payments"
+              },
+              "de": {
+                "name": "Agentic Commerce Protocol (ACP)",
+                "description": "Offener Standard für programmgesteuerte Commerce-Flows zwischen KI-Agenten und Unternehmen, enabling sichere Transaktionen und Zahlungen"
+              },
+              "es": {
+                "name": "Agentic Commerce Protocol (ACP)",
+                "description": "Estándar abierto para flujos de comercio programáticos entre agentes de IA y empresas, habilitando transacciones y pagos seguros"
+              },
+              "fr": {
+                "name": "Agentic Commerce Protocol (ACP)",
+                "description": "Standard ouvert pour les flux commerciaux programmatiques entre les agents IA et les entreprises, permettant des transactions et paiements sécurisés"
+              },
+              "id": {
+                "name": "Agentic Commerce Protocol (ACP)",
+                "description": "Standar terbuka untuk alur perdagangan terprogram antara agen AI dan bisnis, memungkinkan transaksi dan pembayaran aman"
+              },
+              "ja": {
+                "name": "Agentic Commerce Protocol (ACP)",
+                "description": "AIエージェントと企業間のプログラマティックコマースフローのためのオープン標準、安全なトランザクションと支払いを実現"
+              },
+              "ko": {
+                "name": "Agentic Commerce Protocol (ACP)",
+                "description": "AI 에이전트와 기업 간의 프로그래매틱 상거래 흐름을 위한 개방형 표준, 안전한 거래 및 지불 가능"
+              },
+              "pt": {
+                "name": "Agentic Commerce Protocol (ACP)",
+                "description": "Padrão aberto para fluxos de comércio programático entre agentes de IA e empresas, permitindo transações e pagamentos seguros"
+              },
+              "ru": {
+                "name": "Agentic Commerce Protocol (ACP)",
+                "description": "Открытый стандарт для программных торговых потоков между ИИ-агентами и предприятиями, обеспечивающий безопасные транзакции и платежи"
+              },
+              "tr": {
+                "name": "Agentic Commerce Protocol (ACP)",
+                "description": "AI ajanları ve işletmeler arasındaki programatik ticaret akışları için açık standart, güvenli işlemleri ve ödemeleri mümkün kılar"
+              },
+              "zh-Hans": {
+                "name": "Agent 商务协议 (ACP)",
+                "description": "AI Agent 与企业之间程序化商业流程的开放标准，实现安全交易和支付"
+              },
+              "zh-Hant": {
+                "name": "Agent 商務協議 (ACP)",
+                "description": "AI Agent 與企業之間程序化商業流程的開放標準，實現安全交易和支付"
+              }
+            },
+            "name": "Agentic Commerce Protocol (ACP)",
+            "url": "https://www.agenticcommerce.dev",
+            "description": "Open standard for programmatic commerce flows between AI agents and businesses, enabling secure transactions and payments"
           }
         ]
       },
