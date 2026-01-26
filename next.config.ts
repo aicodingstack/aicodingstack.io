@@ -91,12 +91,6 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: false,
   },
 
-  // ESLint configuration
-  eslint: {
-    // Set to true only if you want to skip linting during build
-    ignoreDuringBuilds: false,
-  },
-
   // Redirects configuration
   async redirects() {
     return [
