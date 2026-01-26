@@ -16,15 +16,53 @@ const ROOT_DIR = path.resolve(__dirname, '../..')
 const MANIFESTS_DIR = path.join(ROOT_DIR, 'manifests')
 const SCHEMAS_DIR = path.join(MANIFESTS_DIR, '$schemas')
 
+type JsonValue = string | number | boolean | null | JsonValue[] | { [key: string]: JsonValue }
+
+interface Schema {
+  $ref?: string
+  allOf?: Schema[]
+  properties?: Record<string, Schema>
+  items?: Schema
+  type?: string
+  patternProperties?: Record<string, Schema>
+  $defs?: Record<string, Schema>
+}
+
+interface ManifestCategory {
+  dir: string
+  schema: string
+}
+
+interface CategoryStats {
+  total: number
+  processed: number
+  errors: number
+  validationErrors: number
+}
+
+interface Stats {
+  totalFiles: number
+  processedFiles: number
+  errorFiles: number
+  totalErrors: number
+  categories: Record<string, CategoryStats>
+}
+
+interface ValidationError {
+  field: string
+  location: string
+  path: (string | number)[]
+}
+
 // Cache for loaded schemas to avoid redundant reads
-const schemaCache = new Map()
+const schemaCache = new Map<string, Schema>()
 
 /**
  * Load and parse a JSON file
  */
-async function loadJSON(filePath) {
+async function loadJSON(filePath: string): Promise<JsonValue> {
   try {
-    const content = await fs.readFile(filePath, 'utf-8')
+    const content = await fs.readFile(filePath, 'utf8')
     // Remove BOM if present
     const cleanContent = content.replace(/^\uFEFF/, '')
     // Trim whitespace
@@ -52,7 +90,7 @@ async function loadJSON(filePath) {
  * Resolve a $ref path to an absolute file path or return the path for internal references
  * Returns null for internal references (handled separately), or the resolved file path
  */
-function resolveRefPath(refPath, baseSchemaPath) {
+function resolveRefPath(refPath: string, baseSchemaPath: string): string | null {
   if (refPath.startsWith('#/')) {
     // Internal reference within the same schema (e.g., #/$defs/collectionSection)
     // Return null to indicate it should be resolved from the same schema
@@ -66,32 +104,34 @@ function resolveRefPath(refPath, baseSchemaPath) {
 /**
  * Resolve an internal reference (e.g., #/$defs/collectionSection) from a schema
  */
-function resolveInternalRef(refPath, schema) {
+function resolveInternalRef(refPath: string, schema: Schema): Schema | null {
   if (!refPath.startsWith('#/')) {
     return null
   }
 
   // Remove the #/ prefix
   const pathParts = refPath.slice(2).split('/')
-  let current = schema
+  let current: JsonValue = schema as JsonValue
 
   for (const part of pathParts) {
-    if (current && typeof current === 'object' && part in current) {
-      current = current[part]
+    if (current && typeof current === 'object' && !Array.isArray(current) && part in current) {
+      const next = (current as Record<string, JsonValue>)[part]
+      if (next === undefined) return null
+      current = next
     } else {
       return null
     }
   }
 
-  return current
+  return current as Schema
 }
 
 /**
  * Extract property order from a schema definition
  * Returns an array of property names in the order they appear in the schema
  */
-async function extractPropertyOrder(schema, schemaPath) {
-  const propertyOrder = []
+async function extractPropertyOrder(schema: Schema, schemaPath: string): Promise<string[]> {
+  const propertyOrder: string[] = []
 
   // Handle $ref at the root level
   if (schema.$ref) {
@@ -155,12 +195,12 @@ async function extractPropertyOrder(schema, schemaPath) {
 /**
  * Load a schema file with caching
  */
-async function loadSchema(schemaPath) {
+async function loadSchema(schemaPath: string): Promise<Schema> {
   if (schemaCache.has(schemaPath)) {
-    return schemaCache.get(schemaPath)
+    return schemaCache.get(schemaPath) as Schema
   }
 
-  const schema = await loadJSON(schemaPath)
+  const schema = (await loadJSON(schemaPath)) as Schema
   schemaCache.set(schemaPath, schema)
   return schema
 }
@@ -168,8 +208,12 @@ async function loadSchema(schemaPath) {
 /**
  * Find all nested property orders from a schema
  */
-async function findAllNestedOrders(schema, schemaPath, parentPath = []) {
-  const nestedOrders = new Map()
+async function findAllNestedOrders(
+  schema: Schema,
+  schemaPath: string,
+  parentPath: string[] = []
+): Promise<Map<string, string[]>> {
+  const nestedOrders = new Map<string, string[]>()
 
   // Handle allOf
   if (schema.allOf) {
@@ -178,7 +222,7 @@ async function findAllNestedOrders(schema, schemaPath, parentPath = []) {
       // Handle $ref in allOf
       if (subSchema.$ref) {
         const refPath = resolveRefPath(subSchema.$ref, schemaPath)
-        let refSchema = null
+        let refSchema: Schema | null = null
         let refSchemaPath = schemaPath
 
         if (refPath) {
@@ -209,13 +253,14 @@ async function findAllNestedOrders(schema, schemaPath, parentPath = []) {
   // Handle properties
   if (schema.properties) {
     for (const [propName, propSchema] of Object.entries(schema.properties)) {
-      const currentPath = [...parentPath, propName].join('.')
+      const currentPath = [...parentPath, propName]
+      const pathKey = currentPath.join('.')
 
       // Handle $ref
       if (propSchema.$ref) {
         const refPath = resolveRefPath(propSchema.$ref, schemaPath)
         const currentSchema = await loadSchema(schemaPath)
-        let refSchema = null
+        let refSchema: Schema | null = null
         let refSchemaPath = schemaPath
 
         if (refPath) {
@@ -230,13 +275,13 @@ async function findAllNestedOrders(schema, schemaPath, parentPath = []) {
         if (refSchema) {
           const order = await extractPropertyOrder(refSchema, refSchemaPath)
           if (order.length > 0) {
-            nestedOrders.set(currentPath, order)
+            nestedOrders.set(pathKey, order)
           }
 
           // Recursively find nested orders in the referenced schema
           const refNestedOrders = await findAllNestedOrders(refSchema, refSchemaPath, [])
           for (const [nestedPath, nestedOrder] of refNestedOrders) {
-            nestedOrders.set(`${currentPath}.${nestedPath}`, nestedOrder)
+            nestedOrders.set(`${pathKey}.${nestedPath}`, nestedOrder)
           }
         }
       }
@@ -244,7 +289,7 @@ async function findAllNestedOrders(schema, schemaPath, parentPath = []) {
       // Handle direct object properties
       if (propSchema.properties) {
         const order = Object.keys(propSchema.properties)
-        nestedOrders.set(currentPath, order)
+        nestedOrders.set(pathKey, order)
 
         // Recursively handle nested objects
         const deepOrders = await findAllNestedOrders(propSchema, schemaPath, [
@@ -258,11 +303,11 @@ async function findAllNestedOrders(schema, schemaPath, parentPath = []) {
 
       // Handle array items
       if (propSchema.items) {
-        const itemsPath = `${currentPath}.items`
+        const itemsPath = `${pathKey}.items`
         if (propSchema.items.$ref) {
           const refPath = resolveRefPath(propSchema.items.$ref, schemaPath)
           const currentSchema = await loadSchema(schemaPath)
-          let refSchema = null
+          let refSchema: Schema | null = null
           let refSchemaPath = schemaPath
 
           if (refPath) {
@@ -316,30 +361,39 @@ async function findAllNestedOrders(schema, schemaPath, parentPath = []) {
  * Sort object keys according to a specified order
  * $schema field is always placed first
  */
-function sortObjectKeys(obj, keyOrder) {
+function sortObjectKeys(obj: JsonValue, keyOrder: string[]): JsonValue {
   if (!obj || typeof obj !== 'object' || Array.isArray(obj)) {
     return obj
   }
 
-  const sorted = {}
+  const sorted: Record<string, JsonValue> = {}
   const objKeys = Object.keys(obj)
 
   // Always place $schema first if it exists
   if ('$schema' in obj) {
-    sorted.$schema = obj.$schema
+    const value = (obj as Record<string, JsonValue>).$schema
+    if (value !== undefined) {
+      sorted.$schema = value
+    }
   }
 
   // Then, add keys in the specified order (excluding $schema)
   for (const key of keyOrder) {
     if (key in obj && key !== '$schema') {
-      sorted[key] = obj[key]
+      const value = (obj as Record<string, JsonValue>)[key]
+      if (value !== undefined) {
+        sorted[key] = value
+      }
     }
   }
 
   // Then, add any remaining keys that weren't in the order (excluding $schema)
   for (const key of objKeys) {
     if (!(key in sorted) && key !== '$schema') {
-      sorted[key] = obj[key]
+      const value = (obj as Record<string, JsonValue>)[key]
+      if (value !== undefined) {
+        sorted[key] = value
+      }
     }
   }
 
@@ -351,12 +405,21 @@ function sortObjectKeys(obj, keyOrder) {
  * Also collects patternProperties information for dynamic keys
  */
 async function collectAllValidProperties(
-  schema,
-  schemaPath,
-  parentPath = [],
-  validProps = new Set(),
-  patternProps = new Map()
-) {
+  schema: Schema,
+  schemaPath: string,
+  parentPath: string[] = [],
+  validProps = new Set<string>(),
+  patternProps = new Map<
+    string,
+    { pattern: string; schema: Schema; schemaPath: string; properties: Set<string> }
+  >()
+): Promise<{
+  validProps: Set<string>
+  patternProps: Map<
+    string,
+    { pattern: string; schema: Schema; schemaPath: string; properties: Set<string> }
+  >
+}> {
   const currentSchema = await loadSchema(schemaPath)
 
   // Handle $ref at root level
@@ -460,7 +523,7 @@ async function collectAllValidProperties(
       // Recursively collect nested properties
       if (propSchema.$ref) {
         const refPath = resolveRefPath(propSchema.$ref, schemaPath)
-        let refSchema = null
+        let refSchema: Schema | null = null
         let refSchemaPath = schemaPath
 
         if (refPath) {
@@ -571,7 +634,7 @@ async function collectAllValidProperties(
 /**
  * Check if a key matches a pattern (for patternProperties)
  */
-function matchesPattern(key, pattern) {
+function matchesPattern(key: string, pattern: string): boolean {
   try {
     const regex = new RegExp(pattern)
     return regex.test(key)
@@ -583,8 +646,11 @@ function matchesPattern(key, pattern) {
 /**
  * Extract property names from a schema (for patternProperties validation)
  */
-async function extractPropertiesFromSchema(schema, schemaPath) {
-  const props = new Set()
+async function extractPropertiesFromSchema(
+  schema: Schema,
+  schemaPath: string
+): Promise<Set<string>> {
+  const props = new Set<string>()
   const currentSchema = await loadSchema(schemaPath)
 
   // Handle $ref
@@ -650,12 +716,15 @@ async function extractPropertiesFromSchema(schema, schemaPath) {
  * Validate manifest fields against schema
  */
 function validateManifestFields(
-  manifest,
-  validProps,
-  path = [],
-  errors = [],
-  patternProps = new Map()
-) {
+  manifest: JsonValue,
+  validProps: Set<string>,
+  path: (string | number)[] = [],
+  errors: ValidationError[] = [],
+  patternProps = new Map<
+    string,
+    { pattern: string; schema: Schema; schemaPath: string; properties: Set<string> }
+  >()
+): ValidationError[] {
   if (Array.isArray(manifest)) {
     manifest.forEach(item => {
       // For arrays, we don't validate the index itself, just the items
@@ -680,9 +749,9 @@ function validateManifestFields(
 
       // If parent uses patternProperties, check if current key matches
       if (patternInfo && path.length > 0) {
-        const currentKey = path[path.length - 1]
+        const currentKey = String(path[path.length - 1])
         if (!matchesPattern(currentKey, patternInfo.pattern)) {
-          patternInfo = null
+          patternInfo = undefined
         }
       }
     }
@@ -762,7 +831,11 @@ function validateManifestFields(
 /**
  * Recursively sort all nested objects in a data structure
  */
-function sortNestedObjects(data, nestedOrders, path = []) {
+function sortNestedObjects(
+  data: JsonValue,
+  nestedOrders: Map<string, string[]>,
+  path: string[] = []
+): JsonValue {
   if (Array.isArray(data)) {
     return data.map(item => sortNestedObjects(item, nestedOrders, path))
   }
@@ -773,11 +846,16 @@ function sortNestedObjects(data, nestedOrders, path = []) {
     const order = nestedOrders.get(currentPath)
 
     // Sort current level
-    const sorted = order ? sortObjectKeys(data, order) : { ...data }
+    const sorted = order ? sortObjectKeys(data, order) : (data as Record<string, JsonValue>)
 
     // Recursively sort nested objects
-    for (const [key, value] of Object.entries(sorted)) {
-      sorted[key] = sortNestedObjects(value, nestedOrders, [...path, key])
+    if (sorted && typeof sorted === 'object' && !Array.isArray(sorted)) {
+      for (const [key, value] of Object.entries(sorted)) {
+        ;(sorted as Record<string, JsonValue>)[key] = sortNestedObjects(value, nestedOrders, [
+          ...path,
+          key,
+        ])
+      }
     }
 
     return sorted
@@ -790,7 +868,11 @@ function sortNestedObjects(data, nestedOrders, path = []) {
  * Process a single manifest file
  * Returns validation errors count
  */
-async function processManifest(manifestPath, schemaPath, relativePath) {
+async function processManifest(
+  manifestPath: string,
+  schemaPath: string,
+  relativePath: string
+): Promise<{ errorCount: number; hasError: boolean }> {
   // Check if schema exists
   try {
     await fs.access(schemaPath)
@@ -826,7 +908,7 @@ async function processManifest(manifestPath, schemaPath, relativePath) {
   validProps.add('$schema')
 
   // Validate manifest fields
-  const validationErrors = []
+  const validationErrors: ValidationError[] = []
   if (Array.isArray(manifest)) {
     manifest.forEach((item, index) => {
       const errors = validateManifestFields(item, validProps, [index], [], patternProps)
@@ -850,7 +932,7 @@ async function processManifest(manifestPath, schemaPath, relativePath) {
 
   // Sort the manifest data
   // If schema is array type but manifest is object, treat it as a single item
-  let sortedManifest
+  let sortedManifest: JsonValue
   if (Array.isArray(manifest)) {
     sortedManifest = manifest.map(item => {
       const sorted = sortObjectKeys(item, propertyOrder)
@@ -871,10 +953,10 @@ async function processManifest(manifestPath, schemaPath, relativePath) {
 /**
  * Get all JSON files in a directory
  */
-async function getJsonFiles(dirPath) {
+async function getJsonFiles(dirPath: string): Promise<string[]> {
   try {
     const entries = await fs.readdir(dirPath, { withFileTypes: true })
-    const jsonFiles = []
+    const jsonFiles: string[] = []
 
     for (const entry of entries) {
       if (entry.isFile() && entry.name.endsWith('.json')) {
@@ -892,11 +974,11 @@ async function getJsonFiles(dirPath) {
 /**
  * Main function
  */
-async function main() {
+async function main(): Promise<void> {
   console.log('🔄 Sorting manifest fields according to schemas...\n')
 
   // Statistics
-  const stats = {
+  const stats: Stats = {
     totalFiles: 0,
     processedFiles: 0,
     errorFiles: 0,
@@ -905,7 +987,7 @@ async function main() {
   }
 
   // Mapping of subdirectories to their schema files
-  const manifestCategories = [
+  const manifestCategories: ManifestCategory[] = [
     { dir: 'vendors', schema: 'vendor.schema.json' },
     { dir: 'providers', schema: 'provider.schema.json' },
     { dir: 'models', schema: 'model.schema.json' },
@@ -940,19 +1022,19 @@ async function main() {
         const result = await processManifest(manifestPath, schemaPath, relativePath)
         if (result.hasError) {
           stats.errorFiles++
-          stats.categories[category.dir].errors++
+          stats.categories[category.dir]!.errors++
         } else {
           stats.processedFiles++
-          stats.categories[category.dir].processed++
+          stats.categories[category.dir]!.processed++
           if (result.errorCount > 0) {
             stats.totalErrors += result.errorCount
-            stats.categories[category.dir].validationErrors += result.errorCount
+            stats.categories[category.dir]!.validationErrors += result.errorCount
           }
         }
       } catch (error) {
-        console.error(`  ❌ Error processing ${relativePath}:`, error.message)
+        console.error(`  ❌ Error processing ${relativePath}:`, (error as Error).message)
         stats.errorFiles++
-        stats.categories[category.dir].errors++
+        stats.categories[category.dir]!.errors++
       }
     }
   }
@@ -973,7 +1055,7 @@ async function main() {
       }
     }
   } catch (error) {
-    console.error(`  ❌ Error processing collections.json:`, error.message)
+    console.error(`  ❌ Error processing collections.json:`, (error as Error).message)
     stats.totalFiles++
     stats.errorFiles++
   }
@@ -998,7 +1080,7 @@ async function main() {
   if (categoriesWithErrors.length > 0) {
     console.log('\nCategory breakdown:')
     for (const [category, catStats] of categoriesWithErrors) {
-      const parts = [`${category}: ${catStats.processed}/${catStats.total} processed`]
+      const parts: string[] = [`${category}: ${catStats.processed}/${catStats.total} processed`]
       if (catStats.errors > 0) {
         parts.push(`${catStats.errors} file error(s)`)
       }

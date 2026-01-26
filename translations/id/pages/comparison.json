@@ -5,27 +5,15 @@
     "title": "Perbandingan CLI Coding AI"
   },
   "columns": {
-    "name": "Name",
-    "cache": "Cache",
-    "capabilities": "Kapasitas",
     "contextLength": "Panjang Konteks",
     "freePlan": "Rencana Gratis",
-    "input": "Input",
-    "inputModalities": "Modalitas Input",
     "links": "Tautan",
     "live-code-bench": "Live Code Bench",
     "maxPrice": "Harga Maksimum",
-    "mmmu": "MMMU",
-    "mmmu-pro": "MMMU Pro",
-    "output": "Output",
     "pricingCache": "Harga Cache",
     "pricingInput": "Harga Input",
     "pricingOutput": "Harga Output",
-    "sci-code": "SciCode",
-    "startingPrice": "Harga Mulai",
-    "swe-bench": "SWE-bench",
-    "terminal-bench": "Terminal Bench",
-    "web-dev-arena": "WebDev Arena"
+    "startingPrice": "Harga Mulai"
   },
   "extensions": {
     "backTo": "Kembali ke Ekstensi",

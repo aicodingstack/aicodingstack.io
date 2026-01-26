@@ -7,8 +7,6 @@
     "toggleTheme": "切換主題"
   },
   "header": {
-    "aiCodingLandscape": "AI 編碼全景圖",
-    "aiCodingLandscapeDesc": "視覺化 AI 編碼生態系統全貌",
     "closeMenu": "關閉選單",
     "developmentTools": "開發工具",
     "intelligence": "智慧層",
@@ -17,7 +15,6 @@
     "openSourceRank": "開放原始碼排行榜",
     "openSourceRankDesc": "依 GitHub 星標數探索開放原始碼 AI 編碼專案",
     "ranking": "排行榜",
-    "searchPlaceholder": "搜尋...",
     "toggleMenu": "切換選單"
   }
 }

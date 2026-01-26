@@ -2,12 +2,22 @@
  * URL visiting utilities
  */
 
-import { REQUEST_DELAY } from './config.mjs'
+import { REQUEST_DELAY } from './config'
+import type { UrlInfo } from './url-builder'
+
+/**
+ * Visit result interface
+ */
+export interface VisitResult extends UrlInfo {
+  status: number | null
+  success: boolean
+  error: string | null
+}
 
 /**
  * Visit a URL with timeout and retries
  */
-export async function visitUrl(urlInfo, retries = 2) {
+export async function visitUrl(urlInfo: UrlInfo, retries = 2): Promise<VisitResult> {
   const REQUEST_TIMEOUT = 10000
 
   for (let attempt = 0; attempt <= retries; attempt++) {
@@ -39,11 +49,12 @@ export async function visitUrl(urlInfo, retries = 2) {
         continue
       }
 
+      const err = error as Error
       return {
         ...urlInfo,
         status: null,
         success: false,
-        error: error.name === 'AbortError' ? 'Request timeout' : error.message,
+        error: err.name === 'AbortError' ? 'Request timeout' : err.message,
       }
     }
   }
@@ -57,38 +68,57 @@ export async function visitUrl(urlInfo, retries = 2) {
 }
 
 /**
- * Visit all URLs sequentially (one by one)
+ * Visit all URLs with concurrency control
  */
-export async function visitAllUrls(urls) {
-  const results = []
+export async function visitAllUrlsConcurrent(
+  urls: UrlInfo[],
+  maxConcurrency = 1
+): Promise<VisitResult[]> {
+  const results: VisitResult[] = []
+  const queue = [...urls]
+  let processed = 0
   const total = urls.length
 
-  for (let i = 0; i < urls.length; i++) {
-    const urlInfo = urls[i]
-    const result = await visitUrl(urlInfo)
-    results.push(result)
+  async function worker(): Promise<void> {
+    while (queue.length > 0) {
+      const next = queue.shift()
+      if (!next) return
 
-    const processed = i + 1
+      const result = await visitUrl(next)
+      results.push(result)
+      processed++
 
-    if (result.success) {
-      console.log(`✓ [${processed}/${total}] ${result.url} (${result.status})`)
-    } else {
-      console.error(`✗ [${processed}/${total}] ${result.url} - ${result.error || result.status}`)
-    }
+      if (result.success) {
+        console.log(`✓ [${processed}/${total}] ${result.url} (${result.status})`)
+      } else {
+        console.error(`✗ [${processed}/${total}] ${result.url} - ${result.error || result.status}`)
+      }
 
-    // Add delay between requests to avoid overwhelming the server
-    if (i < urls.length - 1 && REQUEST_DELAY > 0) {
-      await new Promise(resolve => setTimeout(resolve, REQUEST_DELAY))
+      // Add delay between requests to avoid overwhelming the server
+      if (queue.length > 0 && REQUEST_DELAY > 0) {
+        await new Promise(resolve => setTimeout(resolve, REQUEST_DELAY))
+      }
     }
   }
+
+  const workers = Array.from({ length: Math.max(1, maxConcurrency) }, () => worker())
+  await Promise.all(workers)
 
   return results
 }
 
 /**
+ * Visit all URLs sequentially (one by one)
+ * Alias for visitAllUrlsConcurrent with concurrency=1
+ */
+export async function visitAllUrls(urls: UrlInfo[]): Promise<VisitResult[]> {
+  return visitAllUrlsConcurrent(urls, 1)
+}
+
+/**
  * Print summary of visit results
  */
-export function printSummary(results, startTime) {
+export function printSummary(results: VisitResult[], startTime: number): boolean {
   const endTime = Date.now()
   const successful = results.filter(r => r.success)
   const failed = results.filter(r => !r.success)

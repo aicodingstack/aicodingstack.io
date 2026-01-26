@@ -13,15 +13,14 @@
     "sortNameDesc": "名稱 (Z-A)"
   },
   "searchDialog": {
-    "placeholder": "輸入以搜尋...",
     "empty": "Start typing to search...",
-    "noResultsFor": "No results for \"{query}\"",
     "navigate": "to navigate",
+    "noResultsFor": "No results for \"{query}\"",
+    "placeholder": "輸入以搜尋...",
     "select": "to select",
     "viewAllResults": "View all results for \"{query}\""
   },
   "searchInput": {
-    "placeholder": "搜尋...",
     "clear": "Clear search"
   }
 }

@@ -59,11 +59,11 @@
   "benchmarks": {
     "sweBench": 61,
     "terminalBench": 0.3,
-    "sciCode": null,
-    "liveCodeBench": null,
     "mmmu": null,
     "mmmuPro": null,
-    "webDevArena": null
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
   },
   "platformUrls": {
     "huggingface": "https://huggingface.co/MiniMaxAI/MiniMax-M2",

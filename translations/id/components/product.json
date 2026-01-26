@@ -1,31 +1,13 @@
 {
-  "productCommands": {
-    "command": "Perintah",
-    "install": "Instal",
-    "launch": "Luncurkan"
-  },
-  "platformLinks": {
-    "aiPlatforms": {
-      "huggingface": {
-        "description": "Lihat kartu model dan bobot"
-      },
-      "artificialAnalysis": {
-        "description": "Papan peringkat dan benchmark model AI"
-      },
-      "openrouter": {
-        "description": "Bandingkan dan gunakan banyak model AI"
-      }
-    }
-  },
-  "githubStarHistory": {
-    "loading": "Memuat riwayat bintang...",
-    "title": "Riwayat Bintang GitHub",
-    "description": "Tren pertumbuhan bintang dari waktu ke waktu",
-    "stars": "bintang",
-    "fallbackNote": "Catatan: Menampilkan data sampel. API riwayat bintang tidak tersedia sementara."
-  },
-  "productHero": {
-    "runtime": "Runtime"
+  "benchmarks": {
+    "liveCodeBenchDesc": "Live coding performance",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "sciCodeDesc": "Scientific code generation",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "title": "Performance Benchmarks",
+    "webDevArenaDesc": "Web development challenges"
   },
   "communityLinks": {
     "blog": "Blog",
@@ -34,6 +16,40 @@
     "githubDescription": "Lihat repositori",
     "redditDescription": "Ikuti diskusi",
     "youtubeDescription": "Tonton video"
+  },
+  "githubStarHistory": {
+    "description": "Tren pertumbuhan bintang dari waktu ke waktu",
+    "fallbackNote": "Catatan: Menampilkan data sampel. API riwayat bintang tidak tersedia sementara.",
+    "loading": "Memuat riwayat bintang...",
+    "stars": "bintang",
+    "title": "Riwayat Bintang GitHub"
+  },
+  "modelSpecifications": {},
+  "platformLinks": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "Papan peringkat dan benchmark model AI"
+      },
+      "huggingface": {
+        "description": "Lihat kartu model dan bobot"
+      },
+      "openrouter": {
+        "description": "Bandingkan dan gunakan banyak model AI"
+      }
+    }
+  },
+  "productCommands": {
+    "command": "Perintah",
+    "install": "Instal",
+    "launch": "Luncurkan"
+  },
+  "productHero": {
+    "runtime": "Runtime"
+  },
+  "productPricing": {},
+  "relatedProducts": {
+    "title": "Produk Terkait",
+    "viewProduct": "Lihat Produk"
   },
   "resourceLinks": {
     "changelog": "Changelog",
@@ -45,22 +61,6 @@
     "mcpDescription": "Pelajari integrasi MCP",
     "pricingDescription": "Lihat paket harga"
   },
-  "productPricing": {},
-  "modelSpecifications": {},
-  "benchmarks": {
-    "title": "Performance Benchmarks",
-    "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBenchDesc": "Command-line interface proficiency",
-    "mmmuDesc": "Multimodal understanding",
-    "mmmuProDesc": "Advanced multimodal tasks",
-    "webDevArenaDesc": "Web development challenges",
-    "sciCodeDesc": "Scientific code generation",
-    "liveCodeBenchDesc": "Live coding performance"
-  },
-  "relatedProducts": {
-    "title": "Produk Terkait",
-    "viewProduct": "Lihat Produk"
-  },
   "vendorMatrix": {
     "cell": {
       "summary": "{count} {category}"
@@ -68,7 +68,6 @@
     "controls": {
       "clear": "Clear",
       "sortByLabel": "Sort by:",
-      "sortName": "Name",
       "vendorTypeLabel": "Vendor Type:"
     },
     "table": {

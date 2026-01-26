@@ -5,27 +5,15 @@
     "title": "AI コーディング CLI 比較"
   },
   "columns": {
-    "name": "Name",
-    "cache": "キャッシュ",
-    "capabilities": "機能",
     "contextLength": "コンテキスト長",
     "freePlan": "無料プラン",
-    "input": "入力",
-    "inputModalities": "入力モダリティ",
     "links": "リンク",
     "live-code-bench": "Live Code Bench",
     "maxPrice": "最大価格",
-    "mmmu": "MMMU",
-    "mmmu-pro": "MMMU Pro",
-    "output": "出力",
     "pricingCache": "キャッシュ価格",
     "pricingInput": "入力価格",
     "pricingOutput": "出力価格",
-    "sci-code": "SciCode",
-    "startingPrice": "開始価格",
-    "swe-bench": "SWE-bench",
-    "terminal-bench": "Terminal Bench",
-    "web-dev-arena": "WebDev Arena"
+    "startingPrice": "開始価格"
   },
   "extensions": {
     "backTo": "拡張機能に戻る",

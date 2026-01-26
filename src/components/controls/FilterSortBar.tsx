@@ -28,19 +28,20 @@ export default function FilterSortBar({
   searchQuery = '',
   onSearchChange,
 }: FilterSortBarProps) {
-  const tComponent = useTranslations('components.controls.filterSortBar')
+  const tComponent = useTranslations('components.controls')
   const tShared = useTranslations('shared')
   const [isSortOpen, setIsSortOpen] = useState(false)
   const sortRef = useRef<HTMLDivElement>(null)
 
   const sortOptions = [
-    { value: 'default', label: tComponent('sortDefault') },
-    { value: 'name-asc', label: tComponent('sortNameAsc') },
-    { value: 'name-desc', label: tComponent('sortNameDesc') },
+    { value: 'default', label: tComponent('filterSortBar.sortDefault') },
+    { value: 'name-asc', label: tComponent('filterSortBar.sortNameAsc') },
+    { value: 'name-desc', label: tComponent('filterSortBar.sortNameDesc') },
   ]
 
   const currentSortLabel =
-    sortOptions.find(opt => opt.value === sortOrder)?.label || tComponent('sortDefault')
+    sortOptions.find(opt => opt.value === sortOrder)?.label ||
+    tComponent('filterSortBar.sortDefault')
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -99,7 +100,9 @@ export default function FilterSortBar({
 
         {/* Sort Custom Dropdown */}
         <div className="flex items-center gap-[var(--spacing-xs)]">
-          <span className="text-xs text-[var(--color-text-muted)]">{tComponent('sort')}</span>
+          <span className="text-xs text-[var(--color-text-muted)]">
+            {tComponent('filterSortBar.sort')}
+          </span>
           <div className="relative" ref={sortRef}>
             <button
               type="button"
@@ -136,7 +139,9 @@ export default function FilterSortBar({
 
         {/* License Filter Buttons */}
         <div className="flex items-center gap-[var(--spacing-xs)]">
-          <span className="text-xs text-[var(--color-text-muted)]">{tComponent('license')}</span>
+          <span className="text-xs text-[var(--color-text-muted)]">
+            {tComponent('filterSortBar.license')}
+          </span>
           <button
             type="button"
             onClick={() => toggleLicense('open-source')}
@@ -164,7 +169,7 @@ export default function FilterSortBar({
         {/* Platform Filter Buttons */}
         <div className="flex items-center gap-[var(--spacing-xs)]">
           <span className="text-xs text-[var(--color-text-muted)]">
-            {platformLabel || tComponent('platform')}
+            {platformLabel || tComponent('filterSortBar.platform')}
           </span>
           {availablePlatforms.map(platform => (
             <button
@@ -189,7 +194,7 @@ export default function FilterSortBar({
             onClick={clearFilters}
             className="ml-auto px-[var(--spacing-sm)] py-1 text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
           >
-            {tComponent('clearFilters')}
+            {tComponent('filterSortBar.clearFilters')}
           </button>
         )}
       </div>

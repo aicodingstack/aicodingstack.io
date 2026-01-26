@@ -59,11 +59,11 @@
   "benchmarks": {
     "sweBench": null,
     "terminalBench": null,
-    "sciCode": null,
-    "liveCodeBench": null,
     "mmmu": null,
     "mmmuPro": null,
-    "webDevArena": null
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
   },
   "platformUrls": {
     "huggingface": "https://huggingface.co/zai-org/GLM-4.7",

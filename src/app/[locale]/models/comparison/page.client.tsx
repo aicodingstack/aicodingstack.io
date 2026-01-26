@@ -19,10 +19,6 @@ type Props = {
   locale: string
 }
 
-function camelToKebab(str: string): string {
-  return str.replace(/[A-Z]/g, match => `-${match.toLowerCase()}`)
-}
-
 // Helper to wrap content in a span with alignment
 function wrapWithAlign(
   content: string | React.ReactNode,
@@ -213,17 +209,17 @@ export default function ModelComparisonPageClient({ locale: _locale }: Props) {
     })),
     {
       key: 'inputModalities',
-      label: tPage('columns.inputModalities'),
+      label: tShared('capabilities.inputModalities'),
       render: createAbbreviationsRenderer(MODEL_INPUT_MODALITIES),
     },
     {
       key: 'capabilities',
-      label: tPage('columns.capabilities'),
+      label: tShared('capabilities.capabilities'),
       render: createAbbreviationsRenderer(MODEL_CAPABILITIES),
     },
     ...BENCHMARK_KEYS.map(key => ({
       key,
-      label: tPage(`columns.${camelToKebab(key)}`),
+      label: tShared(`benchmarks.${key}`),
       render: (_: unknown, item: Record<string, unknown>) => {
         const benchmarks = item.benchmarks as Record<string, number | null> | undefined
         const value = benchmarks?.[key]
@@ -264,7 +260,7 @@ export default function ModelComparisonPageClient({ locale: _locale }: Props) {
             items={models as unknown as Record<string, unknown>[]}
             columns={columns}
             itemLinkPrefix={`/models`}
-            nameColumnLabel={tPage('columns.name')}
+            nameColumnLabel={tShared('labels.name')}
           />
         </div>
       </section>

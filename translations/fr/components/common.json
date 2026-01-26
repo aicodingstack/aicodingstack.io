@@ -7,8 +7,6 @@
     "toggleTheme": "Changer de thème"
   },
   "header": {
-    "aiCodingLandscape": "Paysage du Codage IA",
-    "aiCodingLandscapeDesc": "Visualisez l'écosystème complet du codage IA",
     "closeMenu": "Fermer le menu",
     "developmentTools": "Outils de développement",
     "intelligence": "Intelligence",
@@ -17,7 +15,6 @@
     "openSourceRank": "Classement Open Source",
     "openSourceRankDesc": "Explorez les projets de codage IA open source par étoiles GitHub",
     "ranking": "Classement",
-    "searchPlaceholder": "Rechercher...",
     "toggleMenu": "Basculer le menu"
   }
 }
