@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
-  "language": "en,de,es,fr,id,it,pt,ru,tr",
-  "dictionaries": ["de", "es", "fr", "id", "it", "pt", "ru", "tr"],
+  "language": "en,de,es,fr,id,pt,ru,tr",
+  "dictionaries": ["de", "es", "fr", "id", "pt", "ru", "tr"],
   "dictionaryDefinitions": [
     {
       "name": "de",
@@ -25,11 +25,6 @@
       "description": "Indonesian dictionary"
     },
     {
-      "name": "it",
-      "path": "node_modules/@cspell/dict-it-it/dict/it-it.trie",
-      "description": "Italian dictionary"
-    },
-    {
       "name": "pt",
       "path": "node_modules/@cspell/dict-pt-pt/dict/Portuguese-European.trie.gz",
       "description": "Portuguese dictionary"
@@ -48,7 +43,17 @@
   "useGitignore": true,
   "ignorePaths": ["cloudflare-env.d.ts", "docs", ".claude"],
   "words": [
+    "Autorisierungsaufträgen",
+    "Entwicklungsframework",
+    "İçgörüleri",
+    "Versionierungsschema",
+    "interoperáveis",
+    "mengkomunikasikan",
+    "önekiyle",
+    "sağlayıcılı",
+    "ccstatusline",
     "API'lerle",
+    "aracidir",
     "Anthropics",
     "BYOK",
     "Benefíciate",
@@ -124,6 +129,7 @@
     "Tasarlanmistir",
     "tasarlandi",
     "Türkçe",
+    "TSESTree",
     "Vervollständigungstool",
     "agentco",
     "agentico",
@@ -197,6 +203,8 @@
     "kwaikatonai",
     "kwaikatonai",
     "Kwaikatonai",
+    "kwaikat",
+    "KwaiKAT",
     "laboratuvari",
     "linkedin",
     "mengdebug",

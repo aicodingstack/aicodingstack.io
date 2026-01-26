@@ -4,7 +4,7 @@ import { formatTokenCount } from '@/lib/format'
 import type { ManifestModel } from '@/types/manifests'
 
 export function VendorModels({ models }: { models: ManifestModel[] }) {
-  const tComponent = useTranslations('components.product.vendorModels')
+  const tShared = useTranslations('shared')
 
   if (models.length === 0) {
     return null
@@ -13,7 +13,7 @@ export function VendorModels({ models }: { models: ManifestModel[] }) {
   return (
     <section className="max-w-8xl mx-auto px-[var(--spacing-md)] my-[var(--spacing-lg)]">
       <h2 className="text-xl font-semibold tracking-tight mb-[var(--spacing-md)]">
-        {tComponent('title')}
+        {tShared('categories.plural.models')}
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[var(--spacing-md)]">

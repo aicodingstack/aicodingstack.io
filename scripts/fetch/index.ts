@@ -7,12 +7,12 @@
  * Can be called from CI or manually.
  *
  * Usage:
- *   node scripts/fetch/index.mjs [script-name]
+ *   node scripts/fetch/index.ts [script-name]
  *
  * If no script name is provided, runs all scripts.
  */
 
-import { runCategoryScripts } from '../_shared/runner.mjs'
+import { runCategoryScripts } from '../_shared/runner'
 
 runCategoryScripts({
   categoryName: 'fetch',

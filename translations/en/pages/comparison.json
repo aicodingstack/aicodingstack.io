@@ -5,27 +5,15 @@
     "title": "AI Coding CLI Comparison"
   },
   "columns": {
-    "name": "Name",
-    "cache": "Cache",
-    "capabilities": "Capabilities",
     "contextLength": "Context Length",
     "freePlan": "Free Plan",
-    "input": "Input",
-    "inputModalities": "Input Modalities",
     "links": "Links",
     "live-code-bench": "Live Code Bench",
     "maxPrice": "Max Price",
-    "mmmu": "MMMU",
-    "mmmu-pro": "MMMU Pro",
-    "output": "Output",
     "pricingCache": "Cache Pricing",
     "pricingInput": "Input Pricing",
     "pricingOutput": "Output Pricing",
-    "sci-code": "SciCode",
-    "startingPrice": "Starting Price",
-    "swe-bench": "SWE-bench",
-    "terminal-bench": "Terminal Bench",
-    "web-dev-arena": "WebDev Arena"
+    "startingPrice": "Starting Price"
   },
   "extensions": {
     "backTo": "Back to Extensions",

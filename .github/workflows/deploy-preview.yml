@@ -70,7 +70,8 @@ jobs:
             CONTEXT_LABEL="PR #${{ github.event.pull_request.number }}"
           else
             RAW_BRANCH="${{ github.ref_name }}"
-            SLUG="$(echo "$RAW_BRANCH" | tr '[:upper:]' '[:lower:]' | sed -E 's#[^a-z0-9]+#-#g; s#(^-+|-+$)##g' | cut -c1-40)"
+            # First sanitize and truncate, then clean up any trailing hyphens from truncation
+            SLUG="$(echo "$RAW_BRANCH" | tr '[:upper:]' '[:lower:]' | sed -E 's#[^a-z0-9]+#-#g' | cut -c1-40 | sed -E 's#-+$##g; s#(^-+)##g')"
             if [[ -z "$SLUG" ]]; then
               SLUG="branch"
             fi
@@ -116,7 +117,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: versions upload --preview-alias ${{ steps.preview_meta.outputs.preview_alias }}
+          command: versions upload --preview-alias ${{ steps.preview_meta.outputs.preview_alias }} --env=""
 
       - name: Comment Preview URL
         if: github.event_name == 'pull_request'

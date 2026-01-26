@@ -304,7 +304,7 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
             items={clis as unknown as Record<string, unknown>[]}
             columns={columns}
             itemLinkPrefix={`/clis`}
-            nameColumnLabel={tPage('columns.name')}
+            nameColumnLabel={tShared('labels.name')}
           />
         </div>
       </section>

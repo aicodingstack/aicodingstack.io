@@ -97,7 +97,7 @@ jobs:
       # TODO: Configure GITHUB_TOKEN with appropriate permissions
       # The fetch-github-stars script may need authentication
       - name: Fetch GitHub stars
-        run: node scripts/fetch-github-stars.mjs
+        run: npm run fetch:github-stars
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true

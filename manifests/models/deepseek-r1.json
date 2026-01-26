@@ -59,11 +59,11 @@
   "benchmarks": {
     "sweBench": null,
     "terminalBench": null,
-    "sciCode": 4.6,
-    "liveCodeBench": 73.1,
     "mmmu": null,
     "mmmuPro": null,
-    "webDevArena": null
+    "webDevArena": null,
+    "sciCode": 4.6,
+    "liveCodeBench": 73.1
   },
   "platformUrls": {
     "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
