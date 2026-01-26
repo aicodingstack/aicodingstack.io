@@ -19,13 +19,13 @@ function CommandSectionItem({ value, label }: Omit<CommandSection, 'labelKey'>) 
   if (!value) return null
 
   return (
-    <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
+    <section className="py-[var(--spacing-xl)] border-b border-[var(--color-border)]">
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
-        <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-sm)]">
+        <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-md)]">
           {label}
         </h2>
 
-        <div className="border border-[var(--color-border)] overflow-hidden mt-[var(--spacing-md)]">
+        <div className="border border-[var(--color-border)] overflow-hidden mt-[var(--spacing-lg)]">
           <pre className="p-[var(--spacing-md)] text-sm leading-relaxed overflow-x-auto bg-[var(--color-bg)]">
             $ {value}
           </pre>
@@ -36,12 +36,12 @@ function CommandSectionItem({ value, label }: Omit<CommandSection, 'labelKey'>) 
 }
 
 export function ProductCommands({ install, launch, command }: ProductCommandsProps) {
-  const tComponent = useTranslations('components.product.productCommands')
+  const tComponent = useTranslations('components.product')
 
   const commands: CommandSection[] = [
-    { value: install, labelKey: 'install', label: tComponent('install') },
-    { value: launch, labelKey: 'launch', label: tComponent('launch') },
-    { value: command, labelKey: 'command', label: tComponent('command') },
+    { value: install, labelKey: 'install', label: tComponent('productCommands.install') },
+    { value: launch, labelKey: 'launch', label: tComponent('productCommands.launch') },
+    { value: command, labelKey: 'command', label: tComponent('productCommands.command') },
   ]
 
   const hasAnyCommand = commands.some(cmd => cmd.value)

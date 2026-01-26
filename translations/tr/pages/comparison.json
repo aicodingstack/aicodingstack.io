@@ -5,27 +5,15 @@
     "title": "AI Kodlama CLI Karşılaştırması"
   },
   "columns": {
-    "name": "Name",
-    "cache": "Önbellek",
-    "capabilities": "Yetenekler",
     "contextLength": "Bağlam Uzunluğu",
     "freePlan": "Ücretsiz Plan",
-    "input": "Girdi",
-    "inputModalities": "Girdi Modları",
     "links": "Bağlantılar",
     "live-code-bench": "Live Code Bench",
     "maxPrice": "Maks. Fiyat",
-    "mmmu": "MMMU",
-    "mmmu-pro": "MMMU Pro",
-    "output": "Çıktı",
     "pricingCache": "Önbellek Fiyatı",
     "pricingInput": "Girdi Fiyatı",
     "pricingOutput": "Çıktı Fiyatı",
-    "sci-code": "SciCode",
-    "startingPrice": "Başlangıç Fiyatı",
-    "swe-bench": "SWE-bench",
-    "terminal-bench": "Terminal Bench",
-    "web-dev-arena": "WebDev Arena"
+    "startingPrice": "Başlangıç Fiyatı"
   },
   "extensions": {
     "backTo": "Eklentilere Dön",

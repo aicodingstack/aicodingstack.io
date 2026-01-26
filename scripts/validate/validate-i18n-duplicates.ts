@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env tsx
 /**
  * Script to analyze duplicate keys and values in translation files
  * Scans all JSON files in translations/en/ directory and reports:
@@ -15,24 +15,33 @@ const __dirname = path.dirname(__filename)
 const ROOT_DIR = path.resolve(__dirname, '../..')
 const TRANSLATIONS_DIR = path.join(ROOT_DIR, 'translations', 'en')
 
+interface FileInfo {
+  filePath: string
+  relativePath: string
+}
+
+interface KeyLocation {
+  file: string
+  fullKey: string
+}
+
+interface FlattenedObject {
+  [key: string]: string | number | boolean | null
+}
+
 /**
  * Flatten a nested object into dot-notation keys
- * @param {object} obj - The object to flatten
- * @param {string} prefix - The prefix for keys
- * @returns {object} - Flattened object with dot-notation keys
  */
-function flattenObject(obj, prefix = '') {
-  const flattened = {}
+function flattenObject(obj: Record<string, unknown>, prefix = ''): FlattenedObject {
+  const flattened: FlattenedObject = {}
 
   for (const [key, value] of Object.entries(obj)) {
     const newKey = prefix ? `${prefix}.${key}` : key
 
     if (value !== null && typeof value === 'object' && !Array.isArray(value)) {
-      // Recursively flatten nested objects
-      Object.assign(flattened, flattenObject(value, newKey))
+      Object.assign(flattened, flattenObject(value as Record<string, unknown>, newKey))
     } else {
-      // Store the value
-      flattened[newKey] = value
+      flattened[newKey] = value as string | number | boolean | null
     }
   }
 
@@ -41,27 +50,23 @@ function flattenObject(obj, prefix = '') {
 
 /**
  * Read and parse a JSON file
- * @param {string} filePath - Path to the JSON file
- * @returns {object|null} - Parsed JSON object or null if error
  */
-function readJsonFile(filePath) {
+function readJsonFile(filePath: string): Record<string, unknown> | null {
   try {
     const content = fs.readFileSync(filePath, 'utf8')
-    return JSON.parse(content)
+    return JSON.parse(content) as Record<string, unknown>
   } catch (error) {
-    console.warn(`Warning: Failed to read ${filePath}: ${error.message}`)
+    const err = error as Error
+    console.warn(`Warning: Failed to read ${filePath}: ${err.message}`)
     return null
   }
 }
 
 /**
  * Get all JSON files recursively from a directory
- * @param {string} dir - Directory to search
- * @param {string} baseDir - Base directory for relative paths
- * @returns {Array<{filePath: string, relativePath: string}>} - Array of file info
  */
-function getAllJsonFiles(dir, baseDir = dir) {
-  const files = []
+function getAllJsonFiles(dir: string, baseDir = dir): FileInfo[] {
+  const files: FileInfo[] = []
 
   if (!fs.existsSync(dir)) {
     return files
@@ -74,12 +79,11 @@ function getAllJsonFiles(dir, baseDir = dir) {
     const relativePath = path.relative(baseDir, fullPath)
 
     if (entry.isDirectory()) {
-      // Recursively search subdirectories
       files.push(...getAllJsonFiles(fullPath, baseDir))
     } else if (entry.isFile() && entry.name.endsWith('.json')) {
       files.push({
         filePath: fullPath,
-        relativePath: relativePath,
+        relativePath,
       })
     }
   }
@@ -88,51 +92,54 @@ function getAllJsonFiles(dir, baseDir = dir) {
 }
 
 /**
- * Analyze all translation files
- * @returns {object} - Analysis results
+ * Analysis results
  */
-function analyzeTranslations() {
+interface AnalysisResults {
+  totalFiles: number
+  totalKeys: number
+  duplicateKeys: Array<{ key: string; locations: KeyLocation[] }>
+  duplicateValues: Array<{ value: string; locations: KeyLocation[] }>
+}
+
+/**
+ * Analyze all translation files
+ */
+function analyzeTranslations(): AnalysisResults {
   const files = getAllJsonFiles(TRANSLATIONS_DIR)
-  const keyMap = new Map() // key -> Array of {file, fullKey}
-  const valueMap = new Map() // value -> Array of {file, fullKey}
+  const keyMap = new Map<string, KeyLocation[]>()
+  const valueMap = new Map<string, KeyLocation[]>()
 
   console.log(`Scanning ${files.length} translation files...\n`)
 
-  // Process each file
   for (const { filePath, relativePath } of files) {
     const data = readJsonFile(filePath)
     if (!data) continue
 
     const flattened = flattenObject(data)
 
-    // Track keys
     for (const [fullKey, value] of Object.entries(flattened)) {
-      // Track duplicate keys
       if (!keyMap.has(fullKey)) {
         keyMap.set(fullKey, [])
       }
-      keyMap.get(fullKey).push({ file: relativePath, fullKey })
+      keyMap.get(fullKey)!.push({ file: relativePath, fullKey })
 
-      // Track duplicate values (only for string values)
       if (typeof value === 'string') {
         if (!valueMap.has(value)) {
           valueMap.set(value, [])
         }
-        valueMap.get(value).push({ file: relativePath, fullKey })
+        valueMap.get(value)!.push({ file: relativePath, fullKey })
       }
     }
   }
 
-  // Find duplicate keys (keys that appear in multiple files)
-  const duplicateKeys = []
+  const duplicateKeys: Array<{ key: string; locations: KeyLocation[] }> = []
   for (const [key, locations] of keyMap.entries()) {
     if (locations.length > 1) {
       duplicateKeys.push({ key, locations })
     }
   }
 
-  // Find duplicate values (values used by multiple keys)
-  const duplicateValues = []
+  const duplicateValues: Array<{ value: string; locations: KeyLocation[] }> = []
   for (const [value, locations] of valueMap.entries()) {
     if (locations.length > 1) {
       duplicateValues.push({ value, locations })
@@ -150,7 +157,7 @@ function analyzeTranslations() {
 /**
  * Generate and print report
  */
-function printReport(results) {
+function printReport(results: AnalysisResults): void {
   const { totalFiles, totalKeys, duplicateKeys, duplicateValues } = results
 
   console.log('='.repeat(80))
@@ -158,7 +165,6 @@ function printReport(results) {
   console.log('='.repeat(80))
   console.log()
 
-  // Summary
   console.log('SUMMARY')
   console.log('-'.repeat(80))
   console.log(`Total files scanned: ${totalFiles}`)
@@ -167,7 +173,6 @@ function printReport(results) {
   console.log(`Duplicate values (same value for different keys): ${duplicateValues.length}`)
   console.log()
 
-  // Duplicate keys report
   if (duplicateKeys.length > 0) {
     console.log('='.repeat(80))
     console.log('DUPLICATE KEYS')
@@ -175,7 +180,6 @@ function printReport(results) {
     console.log('The following keys appear in multiple files:')
     console.log()
 
-    // Sort by key name for better readability
     duplicateKeys.sort((a, b) => a.key.localeCompare(b.key))
 
     for (const { key, locations } of duplicateKeys) {
@@ -194,7 +198,6 @@ function printReport(results) {
     console.log()
   }
 
-  // Duplicate values report
   if (duplicateValues.length > 0) {
     console.log('='.repeat(80))
     console.log('DUPLICATE VALUES')
@@ -202,11 +205,9 @@ function printReport(results) {
     console.log('The following values are used by multiple keys:')
     console.log()
 
-    // Sort by number of occurrences (descending) for better readability
     duplicateValues.sort((a, b) => b.locations.length - a.locations.length)
 
     for (const { value, locations } of duplicateValues) {
-      // Truncate long values for display
       const displayValue = value.length > 60 ? `${value.substring(0, 60)}...` : value
       console.log(`Value: "${displayValue}"`)
       console.log(`  Used by ${locations.length} key(s):`)
@@ -231,7 +232,7 @@ function printReport(results) {
 /**
  * Main function
  */
-function main() {
+function main(): void {
   if (!fs.existsSync(TRANSLATIONS_DIR)) {
     console.error(`Error: Translations directory not found: ${TRANSLATIONS_DIR}`)
     process.exit(1)
@@ -240,11 +241,9 @@ function main() {
   const results = analyzeTranslations()
   printReport(results)
 
-  // Exit with non-zero code if duplicates found
   if (results.duplicateKeys.length > 0 || results.duplicateValues.length > 0) {
     process.exit(1)
   }
 }
 
-// Run the script
 main()

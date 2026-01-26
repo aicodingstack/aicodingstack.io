@@ -47,8 +47,8 @@
   "maxOutput": 128000,
   "tokenPricing": {
     "input": 1.75,
-    "cache": 0.175,
-    "output": 14
+    "output": 14,
+    "cache": 0.175
   },
   "releaseDate": "2025-12-11",
   "lifecycle": "latest",
@@ -59,11 +59,11 @@
   "benchmarks": {
     "sweBench": null,
     "terminalBench": null,
-    "sciCode": null,
-    "liveCodeBench": null,
     "mmmu": null,
     "mmmuPro": null,
-    "webDevArena": null
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
   },
   "platformUrls": {
     "huggingface": null,

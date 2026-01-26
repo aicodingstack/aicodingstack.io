@@ -15,8 +15,30 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.join(__dirname, '../..')
 
+interface ArticleMetadata {
+  slug: string
+  title: string
+  description: string
+  date: string
+}
+
+interface DocSection {
+  id: string
+  slug: string
+  title: string
+}
+
+interface FaqItem {
+  title: string
+  content: string
+}
+
+interface CollectionSection {
+  [key: string]: unknown
+}
+
 // Read supported locales from i18n config
-function getSupportedLocales() {
+function getSupportedLocales(): string[] {
   const configPath = path.join(rootDir, 'src/i18n/config.ts')
   const configContent = fs.readFileSync(configPath, 'utf8')
   // Extract the content between "export const locales = [" and "] as const"
@@ -25,44 +47,48 @@ function getSupportedLocales() {
     throw new Error('Could not find locales export in src/i18n/config.ts')
   }
   // Extract all quoted strings from the array content
-  const stringMatches = arrayMatch[1].matchAll(/'([^']+)'/g)
-  return Array.from(stringMatches, m => m[1])
+  const stringMatches = arrayMatch[1]?.matchAll(/'([^']+)'/g)
+  if (!stringMatches) return []
+  return Array.from(stringMatches, m => m[1] ?? '').filter(Boolean)
 }
 
 const SUPPORTED_LOCALES = getSupportedLocales()
 
-function getMDXFiles(directory) {
+function getMDXFiles(directory: string): string[] {
   return fs.readdirSync(directory).filter(file => file.endsWith('.mdx'))
 }
 
-function parseMDXFrontmatter(filePath) {
+function parseMDXFrontmatter(filePath: string): Record<string, unknown> {
   const fileContents = fs.readFileSync(filePath, 'utf8')
   const { data } = matter(fileContents)
   return data
 }
 
-function getSlugFromFilename(fileName) {
+function getSlugFromFilename(fileName: string): string {
   return fileName.replace(/\.mdx$/, '')
 }
 
 // Parse FAQ sections from a unified index.mdx file
 // Each H1 heading becomes a FAQ item with its title and content
-function parseFaqSections(content) {
+function parseFaqSections(content: string): FaqItem[] {
   // Remove frontmatter if present
   const withoutFrontmatter = content.replace(/^---[\s\S]*?---\n/, '')
 
   // Split content by H1 headings (# Title)
-  const sections = []
+  const sections: FaqItem[] = []
   const h1Regex = /^# (.+)$/gm
-  const matches = []
+  const matches: { title: string; startIndex: number; endIndex: number }[] = []
 
   // Find all H1 headings and their positions
   let match = h1Regex.exec(withoutFrontmatter)
   while (match !== null) {
+    const title = match[1]?.trim() ?? ''
+    const index = match.index ?? 0
+    const matchLength = match[0]?.length ?? 0
     matches.push({
-      title: match[1].trim(),
-      startIndex: match.index,
-      endIndex: match.index + match[0].length,
+      title,
+      startIndex: index,
+      endIndex: index + matchLength,
     })
     match = h1Regex.exec(withoutFrontmatter)
   }
@@ -70,6 +96,7 @@ function parseFaqSections(content) {
   // Extract content for each section
   for (let i = 0; i < matches.length; i++) {
     const currentMatch = matches[i]
+    if (!currentMatch) continue
     const nextMatch = matches[i + 1]
 
     // Content is everything after the H1 until the next H1 (or end of file)
@@ -87,7 +114,7 @@ function parseFaqSections(content) {
 }
 
 // Generate articles metadata for a specific locale
-function generateArticlesMetadataForLocale(locale) {
+function generateArticlesMetadataForLocale(locale: string): ArticleMetadata[] {
   const articlesDirectory = path.join(rootDir, `content/articles/${locale}`)
 
   // Return empty array if locale directory doesn't exist
@@ -104,9 +131,9 @@ function generateArticlesMetadataForLocale(locale) {
 
     return {
       slug,
-      title: frontmatter.title,
-      description: frontmatter.description,
-      date: frontmatter.date,
+      title: frontmatter.title as string,
+      description: frontmatter.description as string,
+      date: frontmatter.date as string,
     }
   })
 
@@ -117,8 +144,8 @@ function generateArticlesMetadataForLocale(locale) {
 }
 
 // Generate articles metadata for all locales
-function generateArticlesMetadata() {
-  const articlesMetadata = {}
+function generateArticlesMetadata(): Record<string, ArticleMetadata[]> {
+  const articlesMetadata: Record<string, ArticleMetadata[]> = {}
 
   for (const locale of SUPPORTED_LOCALES) {
     articlesMetadata[locale] = generateArticlesMetadataForLocale(locale)
@@ -128,7 +155,7 @@ function generateArticlesMetadata() {
 }
 
 // Generate docs metadata for a specific locale
-function generateDocsMetadataForLocale(locale) {
+function generateDocsMetadataForLocale(locale: string): DocSection[] {
   const docsDirectory = path.join(rootDir, `content/docs/${locale}`)
 
   // Return empty array if locale directory doesn't exist
@@ -146,7 +173,7 @@ function generateDocsMetadataForLocale(locale) {
     return {
       id: slug,
       slug,
-      title: frontmatter.title,
+      title: frontmatter.title as string,
     }
   })
 
@@ -155,8 +182,8 @@ function generateDocsMetadataForLocale(locale) {
 }
 
 // Generate docs metadata for all locales
-function generateDocsMetadata() {
-  const docsMetadata = {}
+function generateDocsMetadata(): Record<string, DocSection[]> {
+  const docsMetadata: Record<string, DocSection[]> = {}
 
   for (const locale of SUPPORTED_LOCALES) {
     docsMetadata[locale] = generateDocsMetadataForLocale(locale)
@@ -166,7 +193,7 @@ function generateDocsMetadata() {
 }
 
 // Generate collections metadata from JSON file
-function generateCollectionsMetadata() {
+function generateCollectionsMetadata(): Record<string, CollectionSection> {
   const collectionsFile = path.join(rootDir, 'manifests/collections.json')
 
   if (!fs.existsSync(collectionsFile)) {
@@ -178,12 +205,13 @@ function generateCollectionsMetadata() {
   const collectionsData = JSON.parse(fileContents)
 
   // Remove $schema property as it's not part of the CollectionSection type
-  const { $schema: _$schema, ...collections } = collectionsData
-  return collections
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { $schema: _$schema, ...collections } = collectionsData as Record<string, unknown>
+  return collections as Record<string, CollectionSection>
 }
 
 // Generate FAQ metadata for a specific locale
-function generateFaqMetadataForLocale(locale) {
+function generateFaqMetadataForLocale(locale: string): FaqItem[] {
   const faqIndexPath = path.join(rootDir, `content/faq/${locale}/index.mdx`)
 
   // Return empty array if index file doesn't exist
@@ -199,8 +227,8 @@ function generateFaqMetadataForLocale(locale) {
 }
 
 // Generate FAQ metadata for all locales
-function generateFaqMetadata() {
-  const faqMetadata = {}
+function generateFaqMetadata(): Record<string, FaqItem[]> {
+  const faqMetadata: Record<string, FaqItem[]> = {}
 
   for (const locale of SUPPORTED_LOCALES) {
     faqMetadata[locale] = generateFaqMetadataForLocale(locale)
@@ -210,9 +238,9 @@ function generateFaqMetadata() {
 }
 
 // Generate stack counts from manifest files
-function generateStackCounts() {
+function generateStackCounts(): Record<string, number> {
   // Directories containing individual JSON files (new structure)
-  const manifestDirectories = {
+  const manifestDirectories: Record<string, string> = {
     ides: 'ides',
     clis: 'clis',
     extensions: 'extensions',
@@ -221,7 +249,7 @@ function generateStackCounts() {
     vendors: 'vendors',
   }
 
-  const stackCounts = {}
+  const stackCounts: Record<string, number> = {}
 
   // Count files in directories
   for (const [stackId, dirName] of Object.entries(manifestDirectories)) {
@@ -237,7 +265,7 @@ function generateStackCounts() {
       const files = fs.readdirSync(manifestDir).filter(file => file.endsWith('.json'))
       stackCounts[stackId] = files.length
     } catch (error) {
-      console.error(`❌ Error reading directory ${dirName}:`, error.message)
+      console.error(`❌ Error reading directory ${dirName}:`, (error as Error).message)
       stackCounts[stackId] = 0
     }
   }
@@ -246,12 +274,13 @@ function generateStackCounts() {
 }
 
 // Generate component imports for articles
-function generateArticleComponentsCode(articles) {
+function generateArticleComponentsCode(articles: Record<string, ArticleMetadata[]>): string {
   const locales = Object.keys(articles)
-  const componentLines = []
+  const componentLines: string[] = []
 
   for (const locale of locales) {
     const localeArticles = articles[locale]
+    if (!localeArticles) continue
     const componentEntries = localeArticles
       .map(article => {
         const importLine = `    '${article.slug}': () => import('@content/articles/${locale}/${article.slug}.mdx'),`
@@ -277,12 +306,13 @@ function generateArticleComponentsCode(articles) {
 }
 
 // Generate component imports for docs
-function generateDocComponentsCode(docs) {
+function generateDocComponentsCode(docs: Record<string, DocSection[]>): string {
   const locales = Object.keys(docs)
-  const componentLines = []
+  const componentLines: string[] = []
 
   for (const locale of locales) {
     const localeDocs = docs[locale]
+    if (!localeDocs) continue
     const componentEntries = localeDocs
       .map(doc => {
         // Use unquoted keys for simple identifiers
@@ -305,8 +335,8 @@ function generateDocComponentsCode(docs) {
 }
 
 // Generate component import for manifesto (single index.mdx per locale)
-function generateManifestoComponentsCode() {
-  const componentLines = []
+function generateManifestoComponentsCode(): string {
+  const componentLines: string[] = []
 
   for (const locale of SUPPORTED_LOCALES) {
     const manifestoIndex = path.join(rootDir, `content/manifesto/${locale}/index.mdx`)
@@ -323,7 +353,7 @@ function generateManifestoComponentsCode() {
 }
 
 // Main execution
-function main() {
+function main(): void {
   console.log('Generating MDX metadata...')
 
   const articles = generateArticlesMetadata()
@@ -341,10 +371,10 @@ function main() {
     fs.mkdirSync(outputDir, { recursive: true })
   }
 
-  const header = `// This file is auto-generated by scripts/generate-metadata.mjs\n// DO NOT EDIT MANUALLY`
+  const header = `// This file is auto-generated by scripts/generate-metadata.ts\n// DO NOT EDIT MANUALLY`
 
   // Custom JSON stringify that uses single quotes and unquoted keys
-  function formatObject(obj, indent = 0) {
+  function formatObject(obj: unknown, indent = 0): string {
     const spaces = '  '.repeat(indent)
     const innerSpaces = '  '.repeat(indent + 1)
 
@@ -361,10 +391,10 @@ function main() {
         .map(key => {
           const quotedKey =
             /^[a-zA-Z_][a-zA-Z0-9_]*$/.test(key) && !key.includes('-') ? key : `'${key}'`
-          const value = formatObject(obj[key], indent + 1)
+          const value = formatObject((obj as Record<string, unknown>)[key], indent + 1)
           // Check if the line would be too long (>80 chars) and split if needed
           const fullLine = `${innerSpaces}${quotedKey}: ${value}`
-          if (fullLine.length > 80 && typeof obj[key] === 'string') {
+          if (fullLine.length > 80 && typeof (obj as Record<string, unknown>)[key] === 'string') {
             return `${innerSpaces}${quotedKey}:\n${innerSpaces}  ${value}`
           }
           return fullLine
@@ -603,7 +633,7 @@ ${manifestoComponentsCode}
   }
 
   // Validate manifesto existence for all locales
-  const manifestoLocales = []
+  const manifestoLocales: string[] = []
   for (const locale of SUPPORTED_LOCALES) {
     const manifestoIndex = path.join(rootDir, `content/manifesto/${locale}/index.mdx`)
     if (fs.existsSync(manifestoIndex)) {
@@ -634,7 +664,7 @@ ${manifestoComponentsCode}
     })
     console.log(`✅ Formatting complete`)
   } catch (error) {
-    console.error(`⚠️  Biome formatting failed:`, error.message)
+    console.error(`⚠️  Biome formatting failed:`, (error as Error).message)
   }
 }
 

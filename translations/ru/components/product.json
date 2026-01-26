@@ -1,31 +1,13 @@
 {
-  "productCommands": {
-    "command": "Команда",
-    "install": "Установить",
-    "launch": "Запустить"
-  },
-  "platformLinks": {
-    "aiPlatforms": {
-      "huggingface": {
-        "description": "Просмотреть модель и веса"
-      },
-      "artificialAnalysis": {
-        "description": "Лидерборд AI моделей и бенчмарки"
-      },
-      "openrouter": {
-        "description": "Сравнить и использовать несколько AI моделей"
-      }
-    }
-  },
-  "githubStarHistory": {
-    "loading": "Загрузка истории звёзд...",
-    "title": "История звёзд GitHub",
-    "description": "Тенденция роста звёзд с течением времени",
-    "stars": "звёзд",
-    "fallbackNote": "Примечание: Отображение примерных данных. API истории звёзд временно недоступен."
-  },
-  "productHero": {
-    "runtime": "Среда выполнения"
+  "benchmarks": {
+    "liveCodeBenchDesc": "Live coding performance",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "sciCodeDesc": "Scientific code generation",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "title": "Performance Benchmarks",
+    "webDevArenaDesc": "Web development challenges"
   },
   "communityLinks": {
     "blog": "Блог",
@@ -34,6 +16,40 @@
     "githubDescription": "Просмотреть репозитории",
     "redditDescription": "Присоединиться к обсуждению",
     "youtubeDescription": "Смотреть видео"
+  },
+  "githubStarHistory": {
+    "description": "Тенденция роста звёзд с течением времени",
+    "fallbackNote": "Примечание: Отображение примерных данных. API истории звёзд временно недоступен.",
+    "loading": "Загрузка истории звёзд...",
+    "stars": "звёзд",
+    "title": "История звёзд GitHub"
+  },
+  "modelSpecifications": {},
+  "platformLinks": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "Лидерборд AI моделей и бенчмарки"
+      },
+      "huggingface": {
+        "description": "Просмотреть модель и веса"
+      },
+      "openrouter": {
+        "description": "Сравнить и использовать несколько AI моделей"
+      }
+    }
+  },
+  "productCommands": {
+    "command": "Команда",
+    "install": "Установить",
+    "launch": "Запустить"
+  },
+  "productHero": {
+    "runtime": "Среда выполнения"
+  },
+  "productPricing": {},
+  "relatedProducts": {
+    "title": "Связанные продукты",
+    "viewProduct": "Просмотреть продукт"
   },
   "resourceLinks": {
     "changelog": "История изменений",
@@ -45,22 +61,6 @@
     "mcpDescription": "Узнать об интеграции MCP",
     "pricingDescription": "Просмотреть тарифные планы"
   },
-  "productPricing": {},
-  "modelSpecifications": {},
-  "benchmarks": {
-    "title": "Performance Benchmarks",
-    "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBenchDesc": "Command-line interface proficiency",
-    "mmmuDesc": "Multimodal understanding",
-    "mmmuProDesc": "Advanced multimodal tasks",
-    "webDevArenaDesc": "Web development challenges",
-    "sciCodeDesc": "Scientific code generation",
-    "liveCodeBenchDesc": "Live coding performance"
-  },
-  "relatedProducts": {
-    "title": "Связанные продукты",
-    "viewProduct": "Просмотреть продукт"
-  },
   "vendorMatrix": {
     "cell": {
       "summary": "{count} {category}"
@@ -68,7 +68,6 @@
     "controls": {
       "clear": "Очистить",
       "sortByLabel": "Сортировать:",
-      "sortName": "Имя",
       "vendorTypeLabel": "Тип поставщика:"
     },
     "table": {

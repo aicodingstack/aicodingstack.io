@@ -10,10 +10,10 @@ import { buildTitle, generateStaticPageMetadata } from '@/lib/metadata'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
-  const tPage = await getTranslations({ locale, namespace: 'pages.landscape' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
-  const title = buildTitle({ title: tPage('title') })
-  const description = tPage('description')
+  const title = buildTitle({ title: tShared('terms.landscapeTitle') })
+  const description = tShared('terms.landscapeDescription')
 
   return generateStaticPageMetadata({
     locale: locale as Locale,
@@ -32,7 +32,7 @@ type Props = {
 
 export default async function Page({ params }: Props) {
   const { locale } = await params
-  const tPage = await getTranslations({ locale, namespace: 'pages.landscape' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   // Build vendor matrix data
   const matrixData = buildVendorMatrix()
@@ -41,13 +41,16 @@ export default async function Page({ params }: Props) {
     <>
       <Header />
       <main className="max-w-8xl mx-auto px-[var(--spacing-md)] pt-[var(--spacing-lg)]">
-        <PageHeader title={tPage('title')} subtitle={tPage('description')} />
+        <PageHeader
+          title={tShared('terms.landscapeTitle')}
+          subtitle={tShared('terms.landscapeDescription')}
+        />
 
         {/* Vendor Matrix */}
         <VendorMatrix matrixData={matrixData} />
 
         {/* Back to Overview */}
-        <BackToNavigation href="/ai-coding-stack" title={tPage('backToOverview')} />
+        <BackToNavigation href="/ai-coding-stack" title={tShared('terms.aiCodingStack')} />
       </main>
       <Footer />
     </>

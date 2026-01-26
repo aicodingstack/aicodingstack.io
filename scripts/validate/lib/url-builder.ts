@@ -2,24 +2,50 @@
  * URL building utilities
  */
 
-import { BASE_URL, getLocalePrefix, LOCALES } from './config.mjs'
+import { BASE_URL, LOCALES } from './config'
 import {
   getArticleSlugs,
   getDocSlugs,
   getDynamicRoutes,
   getSlugsFromManifests,
   getStaticRoutes,
-} from './routes.mjs'
+} from './routes'
+
+/**
+ * Get locale prefix for URL building
+ * Returns '' for 'en' (default locale) and '/{locale}' for others
+ */
+function getLocalePrefix(locale: string): string {
+  return locale === 'en' ? '' : `/${locale}`
+}
+
+/**
+ * URL info interface
+ */
+export interface UrlInfo {
+  url: string
+  route: string
+  locale: string
+  type: 'static' | 'dynamic'
+  slug?: string
+}
+
+/**
+ * Build URLs options
+ */
+export interface BuildUrlsOptions {
+  allLocales?: boolean
+  allSlugs?: boolean
+}
 
 /**
  * Build URLs based on configuration
- * @param {Object} options - Configuration options
- * @param {boolean} options.allLocales - Whether to visit all locales or just English
- * @param {boolean} options.allSlugs - Whether to visit all slugs or just one per route type
- * @returns {Array} Array of URL info objects
  */
-export function buildUrls({ allLocales = false, allSlugs = false }) {
-  const urls = []
+export function buildUrls({
+  allLocales = false,
+  allSlugs = false,
+}: BuildUrlsOptions = {}): UrlInfo[] {
+  const urls: UrlInfo[] = []
   const localesToUse = allLocales ? LOCALES : ['en']
 
   // Static routes
@@ -37,7 +63,7 @@ export function buildUrls({ allLocales = false, allSlugs = false }) {
 
   for (const { path: routePath, category } of dynamicRoutes) {
     const slugs = getSlugsFromManifests(category)
-    const slugsToVisit = allSlugs ? slugs : slugs.slice(0, 1) // Only first slug if not all slugs
+    const slugsToVisit = allSlugs ? slugs : slugs.slice(0, 1)
 
     for (const slug of slugsToVisit) {
       for (const locale of localesToUse) {

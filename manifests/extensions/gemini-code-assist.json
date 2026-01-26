@@ -3,8 +3,6 @@
   "id": "gemini-code-assist",
   "name": "Gemini Code Assist",
   "description": "Google's AI coding assistant with code completion, generation, and optimization for IDEs.",
-  "type": "extension",
-  "productId": "gemini-code-assist",
   "translations": {
     "zh-Hans": {
       "description": "Google 的 AI 代码辅助工具，提供 IDE 中的代码补全、生成和优化功能。"
@@ -98,5 +96,7 @@
       "marketplaceUrl": "https://plugins.jetbrains.com/plugin/24513-gemini-code-assist",
       "installUri": null
     }
-  ]
+  ],
+  "type": "extension",
+  "productId": "gemini-code-assist"
 }
