@@ -20,6 +20,7 @@
     "spell:fix": "cspell '**/*.{ts,tsx,js,jsx,json,md,mdx}' --show-suggestions",
     "test": "vitest",
     "test:ci": "vitest run --reporter=verbose",
+    "test:validate": "vitest run tests/validate --reporter=verbose",
     "test:urls": "RUN_URL_TESTS=1 vitest run tests/validate/urls.accessibility.test.ts --reporter=verbose",
     "validate:i18n": "npx tsx scripts/validate/validate-i18n.ts",
     "validate:i18n-usage": "npx tsx scripts/validate/validate-i18n-usage.ts",
