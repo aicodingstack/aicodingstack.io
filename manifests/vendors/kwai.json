@@ -1,0 +1,51 @@
+{
+  "id": "kwai",
+  "name": "Kwai",
+  "description": "Kwai is a vendor.",
+  "translations": {
+    "zh-Hans": {
+      "description": "快手的 AI 研究实验室，开发先进的编码模型和 AI 助手。"
+    },
+    "de": {
+      "description": "Kwais KI-Forschungslabor für die Entwicklung fortschrittlicher Codierungsmodelle und KI-Assistenten."
+    },
+    "ko": {
+      "description": "Kwai의 AI 연구소로 고급 코딩 모델과 AI 어시스턴트를 개발합니다."
+    },
+    "es": {
+      "description": "Laboratorio de investigación de IA de Kwai que desarrolla modelos de codificación avanzados y asistentes de IA."
+    },
+    "fr": {
+      "description": "Le laboratoire de recherche IA de Kwai développant des modèles de codage avancés et des assistants IA."
+    },
+    "id": {
+      "description": "Laboratorium penelitian AI Kwai yang mengembangkan model coding canggih dan asisten AI."
+    },
+    "ja": {
+      "description": "高度なコーディングモデルとAIアシスタントを開発するKwaiのAI研究ラボ。"
+    },
+    "pt": {
+      "description": "Laboratorio de pesquisa de IA da Kwai desenvolvendo modelos de codificacao avancados e assistentes de IA."
+    },
+    "ru": {
+      "description": "Исследовательская лаборатория ИИ Kwai, разрабатывающая передовые модели кодирования и ИИ-ассистенты."
+    },
+    "tr": {
+      "description": "Kwai'nin ileri duzey kodlama modelleri ve yardimci sise gelistirilen AI arastirma laboratuvari."
+    },
+    "zh-Hant": {
+      "description": "快手的 AI 研究實驗室，開發先進的編碼模型和 AI 助手。"
+    }
+  },
+  "verified": false,
+  "websiteUrl": "https://kwaikatonai.com",
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  }
+}
