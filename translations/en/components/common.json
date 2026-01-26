@@ -7,8 +7,6 @@
     "toggleTheme": "Toggle theme"
   },
   "header": {
-    "aiCodingLandscape": "AI Coding Landscape",
-    "aiCodingLandscapeDesc": "Visualize the complete AI coding ecosystem",
     "closeMenu": "Close menu",
     "developmentTools": "Development Tools",
     "intelligence": "Intelligence",
@@ -17,7 +15,6 @@
     "openSourceRank": "Open Source Ranking",
     "openSourceRankDesc": "Explore open source AI coding projects by GitHub stars",
     "ranking": "Ranking",
-    "searchPlaceholder": "Search...",
     "toggleMenu": "Toggle menu"
   }
 }

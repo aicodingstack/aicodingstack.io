@@ -13,15 +13,14 @@
     "sortNameDesc": "Nome (Z-A)"
   },
   "searchDialog": {
-    "placeholder": "Digite para pesquisar...",
     "empty": "Start typing to search...",
-    "noResultsFor": "No results for \"{query}\"",
     "navigate": "to navigate",
+    "noResultsFor": "No results for \"{query}\"",
+    "placeholder": "Digite para pesquisar...",
     "select": "to select",
     "viewAllResults": "View all results for \"{query}\""
   },
   "searchInput": {
-    "placeholder": "Pesquisar...",
     "clear": "Clear search"
   }
 }

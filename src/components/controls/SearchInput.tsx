@@ -18,7 +18,6 @@ export default function SearchInput({
   onSearch,
 }: SearchInputProps) {
   const tShared = useTranslations('shared')
-  const tComponent = useTranslations('components.controls.searchInput')
   const router = useRouter()
   const [query, setQuery] = useState(initialQuery)
   const [suggestions, setSuggestions] = useState<SearchResult[]>([])
@@ -29,7 +28,7 @@ export default function SearchInput({
   const debounceTimerRef = useRef<NodeJS.Timeout | null>(null)
   const hasUserInteracted = useRef(false)
 
-  const placeholderText = placeholder || tComponent('placeholder')
+  const placeholderText = placeholder || tShared('actions.searchPlaceholder')
 
   // Debounce search suggestions
   useEffect(() => {

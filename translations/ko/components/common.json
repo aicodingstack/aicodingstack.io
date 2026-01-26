@@ -7,8 +7,6 @@
     "toggleTheme": "테마 토글"
   },
   "header": {
-    "aiCodingLandscape": "AI 코딩 랜드스케이프",
-    "aiCodingLandscapeDesc": "완전한 AI 코딩 생태계를 시각화하세요",
     "closeMenu": "메뉴 닫기",
     "developmentTools": "개발 도구",
     "intelligence": "인텔리전스",
@@ -17,7 +15,6 @@
     "openSourceRank": "오픈소스 순위",
     "openSourceRankDesc": "GitHub 스타로 오픈 소스 AI 코딩 프로젝트를 탐색하세요",
     "ranking": "순위",
-    "searchPlaceholder": "검색...",
     "toggleMenu": "메뉴 토글"
   }
 }

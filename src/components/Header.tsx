@@ -32,7 +32,7 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeMegaMenu, setActiveMegaMenu] = useState<'aiCodingStack' | 'ranking' | null>(null)
   const [isSearchDialogOpen, setIsSearchDialogOpen] = useState(false)
-  const tComponent = useTranslations('components.common.header')
+  const tComponent = useTranslations('components.common')
   const tShared = useTranslations('shared')
 
   // Menu items configuration - memoized to avoid recreation on each render
@@ -46,10 +46,10 @@ function Header() {
         hasMegaMenu: true,
         megaMenuType: 'aiCodingStack',
       },
-      { href: '/ai-coding-landscape', translationKey: 'landscape', namespace: 'header' },
+      { href: '/ai-coding-landscape', translationKey: 'header.landscape', namespace: 'header' },
       {
         href: '#',
-        translationKey: 'ranking',
+        translationKey: 'header.ranking',
         namespace: 'header',
         hasMegaMenu: true,
         megaMenuType: 'ranking',
@@ -172,7 +172,7 @@ function Header() {
 
   // Memoized menu button label
   const menuButtonLabel = useMemo(
-    () => (isMenuOpen ? tComponent('closeMenu') : tComponent('openMenu')),
+    () => (isMenuOpen ? tComponent('header.closeMenu') : tComponent('header.openMenu')),
     [isMenuOpen, tComponent]
   )
 
@@ -222,7 +222,7 @@ function Header() {
                   d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                 />
               </svg>
-              <span className="flex-1 text-left">{tComponent('searchPlaceholder')}</span>
+              <span className="flex-1 text-left">{tShared('actions.searchPlaceholder')}</span>
               <kbd className="flex items-center gap-1 px-1.5 py-0.5 text-xs border border-[var(--color-border)]">
                 <Command className="w-3 h-3" />
                 <span>K</span>
@@ -260,7 +260,7 @@ function Header() {
               type="button"
               onClick={handleMenuToggle}
               className="p-[var(--spacing-xs)] hover:bg-[var(--color-hover)] transition-colors"
-              aria-label={tComponent('toggleMenu')}
+              aria-label={tComponent('header.toggleMenu')}
             >
               <svg
                 className="w-6 h-6"

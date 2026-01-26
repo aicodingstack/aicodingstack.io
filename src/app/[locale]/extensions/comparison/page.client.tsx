@@ -290,7 +290,7 @@ export default function ExtensionComparisonPageClient({ locale: _locale }: Props
             items={extensions as unknown as Record<string, unknown>[]}
             columns={columns}
             itemLinkPrefix={`/extensions`}
-            nameColumnLabel={tPage('columns.name')}
+            nameColumnLabel={tShared('labels.name')}
           />
         </div>
       </section>

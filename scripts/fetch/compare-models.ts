@@ -9,50 +9,152 @@ const manifestsDir = join(__dirname, '../../manifests/models')
 const apiDataFile = join(__dirname, '../../tmp/models-dev-api.json')
 const mappingFile = join(__dirname, '../../manifests/mapping.json')
 
+interface ComparisonResult {
+  match: boolean
+  skip: boolean
+  manifest?: unknown
+  api?: unknown
+}
+
+interface FieldComparison {
+  field: string
+  manifestKey: string
+  apiKey: string
+  match: boolean
+  skip: boolean
+  manifest?: unknown
+  api?: unknown
+}
+
+interface NormalizedApiModel {
+  name: string
+  releaseDate: string | null
+  contextWindow: number | null
+  maxOutput: number | null
+  inputModalities: string[]
+  tokenPricing: {
+    input: number | null
+    output: number | null
+    cache: number | null
+  }
+  capabilities: string[]
+}
+
+interface ModelResult {
+  modelId: string
+  apiModelId: string
+  vendor: string
+  vendorKey: string
+  vendorExists: boolean
+  modelExists: boolean
+  comparisons: FieldComparison[]
+}
+
+interface ApiData {
+  [vendorKey: string]: {
+    models?: {
+      [modelId: string]: {
+        name: string
+        release_date?: string | null
+        limit?: {
+          context?: number | null
+          output?: number | null
+        }
+        modalities?: {
+          input?: string[]
+        }
+        cost?: {
+          input?: number | null
+          output?: number | null
+          cache_read?: number | null
+        }
+        tool_call?: boolean
+        reasoning?: boolean
+      }
+    }
+  }
+}
+
+interface MappingData {
+  vendors: Record<string, string>
+  models: Record<string, string>
+}
+
 // Helper to compare values and return match status
-function compare(manifestValue, apiValue, _manifestKey, _apiKey) {
+function compare(
+  manifestValue: unknown,
+  apiValue: unknown,
+  _manifestKey: string,
+  _apiKey: string
+): ComparisonResult {
   if (manifestValue === null && apiValue === undefined) return { match: true, skip: true }
   if (manifestValue === null && apiValue === null) return { match: true, skip: false }
   if (manifestValue === null && apiValue !== undefined)
-    return { match: false, manifest: null, api: apiValue }
+    return { match: false, skip: false, manifest: null, api: apiValue }
   if (manifestValue !== null && apiValue === undefined)
-    return { match: false, manifest: manifestValue, api: null }
+    return { match: false, skip: false, manifest: manifestValue, api: null }
   if (manifestValue === apiValue) return { match: true, skip: false }
-  return { match: false, manifest: manifestValue, api: apiValue }
+  return { match: false, skip: false, manifest: manifestValue, api: apiValue }
 }
 
 // Convert API model data to manifest-compatible format for comparison
-function normalizeApiModel(apiModel) {
+function normalizeApiModel(apiModel: Record<string, unknown> | undefined): NormalizedApiModel {
+  if (!apiModel) {
+    return {
+      name: '',
+      releaseDate: null,
+      contextWindow: null,
+      maxOutput: null,
+      inputModalities: [],
+      tokenPricing: {
+        input: null,
+        output: null,
+        cache: null,
+      },
+      capabilities: [],
+    }
+  }
+
+  const model = apiModel as {
+    name: string
+    release_date?: string | null
+    limit?: { context?: number | null; output?: number | null } | null
+    modalities?: { input?: string[] } | null
+    cost?: { input?: number | null; output?: number | null; cache_read?: number | null } | null
+    tool_call?: boolean
+    reasoning?: boolean
+  }
+
   return {
-    name: apiModel.name,
-    releaseDate: apiModel.release_date || null,
-    contextWindow: apiModel.limit?.context || null,
-    maxOutput: apiModel.limit?.output || null,
-    inputModalities: apiModel.modalities?.input || [],
+    name: model.name,
+    releaseDate: model.release_date || null,
+    contextWindow: model.limit?.context || null,
+    maxOutput: model.limit?.output || null,
+    inputModalities: model.modalities?.input || [],
     tokenPricing: {
-      input: apiModel.cost?.input || null,
-      output: apiModel.cost?.output || null,
-      cache: apiModel.cost?.cache_read || null,
+      input: model.cost?.input || null,
+      output: model.cost?.output || null,
+      cache: model.cost?.cache_read || null,
     },
     capabilities: [
-      ...(apiModel.tool_call ? ['function-calling', 'tool-choice', 'structured-outputs'] : []),
-      ...(apiModel.reasoning ? ['reasoning'] : []),
+      ...(model.tool_call ? ['function-calling', 'tool-choice', 'structured-outputs'] : []),
+      ...(model.reasoning ? ['reasoning'] : []),
     ].sort(),
   }
 }
 
-async function main() {
+async function main(): Promise<void> {
   // Read API reference data and mapping
-  const apiData = JSON.parse(await readFile(apiDataFile, 'utf-8'))
+  const apiData = JSON.parse(await readFile(apiDataFile, 'utf-8')) as ApiData
   const { vendors: vendorMapping, models: modelMapping } = JSON.parse(
     await readFile(mappingFile, 'utf-8')
-  )
+  ) as MappingData
 
   // Read all model manifests
   const files = await readdir(manifestsDir)
   const manifestFiles = files.filter(f => f.endsWith('.json'))
 
-  const results = []
+  const results: ModelResult[] = []
 
   for (const file of manifestFiles) {
     const manifest = JSON.parse(await readFile(join(manifestsDir, file), 'utf-8'))
@@ -72,8 +174,8 @@ async function main() {
     const apiModel = vendorData?.models?.[apiModelId]
     const modelExists = !!apiModel
 
-    const comparisons = []
-    if (modelExists) {
+    const comparisons: FieldComparison[] = []
+    if (modelExists && apiModel) {
       const normalizedApi = normalizeApiModel(apiModel)
 
       // Compare releaseDate
@@ -81,7 +183,7 @@ async function main() {
         field: 'releaseDate',
         manifestKey: 'releaseDate',
         apiKey: 'release_date',
-        ...compare(manifest.releaseDate, normalizedApi.releaseDate),
+        ...compare(manifest.releaseDate, normalizedApi.releaseDate, 'releaseDate', 'release_date'),
       })
 
       // Compare contextWindow
@@ -89,7 +191,12 @@ async function main() {
         field: 'contextWindow',
         manifestKey: 'contextWindow',
         apiKey: 'limit.context',
-        ...compare(manifest.contextWindow, normalizedApi.contextWindow),
+        ...compare(
+          manifest.contextWindow,
+          normalizedApi.contextWindow,
+          'contextWindow',
+          'limit.context'
+        ),
       })
 
       // Compare maxOutput
@@ -97,7 +204,7 @@ async function main() {
         field: 'maxOutput',
         manifestKey: 'maxOutput',
         apiKey: 'limit.output',
-        ...compare(manifest.maxOutput, normalizedApi.maxOutput),
+        ...compare(manifest.maxOutput, normalizedApi.maxOutput, 'maxOutput', 'limit.output'),
       })
 
       // Compare inputModalities

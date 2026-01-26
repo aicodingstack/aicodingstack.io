@@ -5,27 +5,15 @@
     "title": "AI 코딩 CLI 비교"
   },
   "columns": {
-    "name": "Name",
-    "cache": "캐시",
-    "capabilities": "기능",
     "contextLength": "컨텍스트 길이",
     "freePlan": "무료 플랜",
-    "input": "입력",
-    "inputModalities": "입력 모달리티",
     "links": "링크",
     "live-code-bench": "Live Code Bench",
     "maxPrice": "최대 가격",
-    "mmmu": "MMMU",
-    "mmmu-pro": "MMMU Pro",
-    "output": "출력",
     "pricingCache": "캐시 가격",
     "pricingInput": "입력 가격",
     "pricingOutput": "출력 가격",
-    "sci-code": "SciCode",
-    "startingPrice": "시작 가격",
-    "swe-bench": "SWE-bench",
-    "terminal-bench": "Terminal Bench",
-    "web-dev-arena": "WebDev Arena"
+    "startingPrice": "시작 가격"
   },
   "extensions": {
     "backTo": "확장 프로그램으로 돌아가기",

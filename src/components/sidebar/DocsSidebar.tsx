@@ -21,7 +21,7 @@ const docOrder = [
 ]
 
 export default function DocsSidebar({ sections, activeSlug }: DocsSidebarProps) {
-  const tComponent = useTranslations('components.sidebar.docsSidebar')
+  const tComponent = useTranslations('components.sidebar')
   const tShared = useTranslations('shared')
 
   // Sort sections by custom order
@@ -72,7 +72,7 @@ export default function DocsSidebar({ sections, activeSlug }: DocsSidebarProps) 
     <Sidebar
       items={items}
       activeId={activeSlug}
-      title={tComponent('title')}
+      title={tComponent('docsSidebar.title')}
       label={tShared('terms.documentation')}
       icon={icon}
       desktopWidth="lg:w-[250px]"
