@@ -62,11 +62,11 @@
     "@next/mdx": "^15.5.4",
     "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^22.19.2",
-    "@types/react": "^19.2.8",
+    "@types/react": "^19.2.9",
     "@types/react-dom": "^19.2.3",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
-    "cspell": "^9.4.0",
+    "cspell": "^9.6.1",
     "gray-matter": "^4.0.3",
     "husky": "9.1.7",
     "lint-staged": "16.2.7",
@@ -77,8 +77,8 @@
     "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3",
     "user-agents": "^1.1.669",
-    "vitest": "^4.0.16",
-    "wrangler": "^4.58.0"
+    "vitest": "^4.0.18",
+    "wrangler": "^4.60.0"
   },
   "repository": {
     "type": "git",
