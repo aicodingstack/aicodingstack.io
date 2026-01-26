@@ -512,9 +512,6 @@
             "description": "Open protocol standardizing communication between code editors and coding agents for autonomous code modification"
           },
           {
-            "name": "Open Responses",
-            "url": "https://www.openresponses.org",
-            "description": "Open specification for multi-provider, interoperable LLM interfaces based on OpenAI Responses API",
             "translations": {
               "en": {
                 "name": "Open Responses",
@@ -564,7 +561,10 @@
                 "name": "Open Responses",
                 "description": "基於 OpenAI Responses API 的多提供商、可互操作 LLM 介面的開放規範"
               }
-            }
+            },
+            "name": "Open Responses",
+            "url": "https://www.openresponses.org",
+            "description": "Open specification for multi-provider, interoperable LLM interfaces based on OpenAI Responses API"
           }
         ]
       }
@@ -627,18 +627,42 @@
       {
         "title": "OpenAI on Coding",
         "translations": {
-          "en": { "title": "OpenAI on Coding" },
-          "de": { "title": "OpenAI über Codierung" },
-          "es": { "title": "OpenAI sobre Codificación" },
-          "fr": { "title": "OpenAI sur le Codage" },
-          "id": { "title": "OpenAI tentang Coding" },
-          "ja": { "title": "コーディングに関するOpenAI" },
-          "ko": { "title": "코딩에 관한 OpenAI" },
-          "pt": { "title": "OpenAI sobre Codificação" },
-          "ru": { "title": "OpenAI о программировании" },
-          "tr": { "title": "Kodlama Hakkında OpenAI" },
-          "zh-Hans": { "title": "OpenAI 关于编码" },
-          "zh-Hant": { "title": "OpenAI 關於編碼" }
+          "en": {
+            "title": "OpenAI on Coding"
+          },
+          "de": {
+            "title": "OpenAI über Codierung"
+          },
+          "es": {
+            "title": "OpenAI sobre Codificación"
+          },
+          "fr": {
+            "title": "OpenAI sur le Codage"
+          },
+          "id": {
+            "title": "OpenAI tentang Coding"
+          },
+          "ja": {
+            "title": "コーディングに関するOpenAI"
+          },
+          "ko": {
+            "title": "코딩에 관한 OpenAI"
+          },
+          "pt": {
+            "title": "OpenAI sobre Codificação"
+          },
+          "ru": {
+            "title": "OpenAI о программировании"
+          },
+          "tr": {
+            "title": "Kodlama Hakkında OpenAI"
+          },
+          "zh-Hans": {
+            "title": "OpenAI 关于编码"
+          },
+          "zh-Hant": {
+            "title": "OpenAI 關於編碼"
+          }
         },
         "items": [
           {
@@ -738,8 +762,14 @@
                 "name": "Prompt Mühendisliği Kılavuzu",
                 "description": "Kod üretimi için etkili istemler oluşturma stratejileri"
               },
-              "zh-Hans": { "name": "提示工程指南", "description": "制作有效代码生成提示的策略" },
-              "zh-Hant": { "name": "提示工程指南", "description": "製作有效代碼生成提示的策略" }
+              "zh-Hans": {
+                "name": "提示工程指南",
+                "description": "制作有效代码生成提示的策略"
+              },
+              "zh-Hant": {
+                "name": "提示工程指南",
+                "description": "製作有效代碼生成提示的策略"
+              }
             },
             "name": "Prompt Engineering Guide",
             "url": "https://platform.openai.com/docs/guides/prompt-engineering",
@@ -750,18 +780,42 @@
       {
         "title": "Cursor Insights",
         "translations": {
-          "en": { "title": "Cursor Insights" },
-          "de": { "title": "Cursor-Erkenntnisse" },
-          "es": { "title": "Informaciones de Cursor" },
-          "fr": { "title": "Aperçus de Cursor" },
-          "id": { "title": "Wawasan Cursor" },
-          "ja": { "title": "Cursor の洞察" },
-          "ko": { "title": "Cursor 인사이트" },
-          "pt": { "title": "Insights do Cursor" },
-          "ru": { "title": "Инсайты Cursor" },
-          "tr": { "title": "Cursor İçgörüleri" },
-          "zh-Hans": { "title": "Cursor 见解" },
-          "zh-Hant": { "title": "Cursor 見解" }
+          "en": {
+            "title": "Cursor Insights"
+          },
+          "de": {
+            "title": "Cursor-Erkenntnisse"
+          },
+          "es": {
+            "title": "Informaciones de Cursor"
+          },
+          "fr": {
+            "title": "Aperçus de Cursor"
+          },
+          "id": {
+            "title": "Wawasan Cursor"
+          },
+          "ja": {
+            "title": "Cursor の洞察"
+          },
+          "ko": {
+            "title": "Cursor 인사이트"
+          },
+          "pt": {
+            "title": "Insights do Cursor"
+          },
+          "ru": {
+            "title": "Инсайты Cursor"
+          },
+          "tr": {
+            "title": "Cursor İçgörüleri"
+          },
+          "zh-Hans": {
+            "title": "Cursor 见解"
+          },
+          "zh-Hant": {
+            "title": "Cursor 見解"
+          }
         },
         "items": [
           {
@@ -806,8 +860,14 @@
                 "name": "Programlamanın Geleceği",
                 "description": "AI geliştirme iş akışını nasıl yeniden şekillendiriyor"
               },
-              "zh-Hans": { "name": "编程的未来", "description": "AI 如何重塑开发工作流" },
-              "zh-Hant": { "name": "程式設計的未來", "description": "AI 如何重塑開發工作流" }
+              "zh-Hans": {
+                "name": "编程的未来",
+                "description": "AI 如何重塑开发工作流"
+              },
+              "zh-Hant": {
+                "name": "程式設計的未來",
+                "description": "AI 如何重塑開發工作流"
+              }
             },
             "name": "The Future of Programming",
             "url": "https://cursor.sh/blog",
@@ -855,8 +915,14 @@
                 "name": "AI Öncelikli IDE Tasarımı",
                 "description": "Kusursuz AI işbirliği için IDE'ler tasarlama"
               },
-              "zh-Hans": { "name": "AI 优先的 IDE 设计", "description": "设计无缝 AI 协作的 IDE" },
-              "zh-Hant": { "name": "AI 優先的 IDE 設計", "description": "設計無縫 AI 協作的 IDE" }
+              "zh-Hans": {
+                "name": "AI 优先的 IDE 设计",
+                "description": "设计无缝 AI 协作的 IDE"
+              },
+              "zh-Hant": {
+                "name": "AI 優先的 IDE 設計",
+                "description": "設計無縫 AI 協作的 IDE"
+              }
             },
             "name": "AI-First IDE Design",
             "url": "https://cursor.sh/features",
@@ -867,18 +933,42 @@
       {
         "title": "Claude on AI Coding",
         "translations": {
-          "en": { "title": "Claude on AI Coding" },
-          "de": { "title": "Claude über AI-Coding" },
-          "es": { "title": "Claude sobre Codificación AI" },
-          "fr": { "title": "Claude sur le Codage IA" },
-          "id": { "title": "Claude tentang AI Coding" },
-          "ja": { "title": "AIコーディングに関するClaude" },
-          "ko": { "title": "AI 코딩에 관한 Claude" },
-          "pt": { "title": "Claude sobre Codificação AI" },
-          "ru": { "title": "Claude о AI-программировании" },
-          "tr": { "title": "AI Kodlama Hakkında Claude" },
-          "zh-Hans": { "title": "Claude 关于 AI 编码" },
-          "zh-Hant": { "title": "Claude 關於 AI 編碼" }
+          "en": {
+            "title": "Claude on AI Coding"
+          },
+          "de": {
+            "title": "Claude über AI-Coding"
+          },
+          "es": {
+            "title": "Claude sobre Codificación AI"
+          },
+          "fr": {
+            "title": "Claude sur le Codage IA"
+          },
+          "id": {
+            "title": "Claude tentang AI Coding"
+          },
+          "ja": {
+            "title": "AIコーディングに関するClaude"
+          },
+          "ko": {
+            "title": "AI 코딩에 관한 Claude"
+          },
+          "pt": {
+            "title": "Claude sobre Codificação AI"
+          },
+          "ru": {
+            "title": "Claude о AI-программировании"
+          },
+          "tr": {
+            "title": "AI Kodlama Hakkında Claude"
+          },
+          "zh-Hans": {
+            "title": "Claude 关于 AI 编码"
+          },
+          "zh-Hant": {
+            "title": "Claude 關於 AI 編碼"
+          }
         },
         "items": [
           {
@@ -996,18 +1086,42 @@
       {
         "title": "Lovable Engineering",
         "translations": {
-          "en": { "title": "Lovable Engineering" },
-          "de": { "title": "Lovable Engineering" },
-          "es": { "title": "Ingeniería Lovable" },
-          "fr": { "title": "Ingénierie Lovable" },
-          "id": { "title": "Lovable Engineering" },
-          "ja": { "title": "Lovable Engineering" },
-          "ko": { "title": "Lovable Engineering" },
-          "pt": { "title": "Lovable Engineering" },
-          "ru": { "title": "Lovable Engineering" },
-          "tr": { "title": "Lovable Engineering" },
-          "zh-Hans": { "title": "Lovable 工程" },
-          "zh-Hant": { "title": "Lovable 工程" }
+          "en": {
+            "title": "Lovable Engineering"
+          },
+          "de": {
+            "title": "Lovable Engineering"
+          },
+          "es": {
+            "title": "Ingeniería Lovable"
+          },
+          "fr": {
+            "title": "Ingénierie Lovable"
+          },
+          "id": {
+            "title": "Lovable Engineering"
+          },
+          "ja": {
+            "title": "Lovable Engineering"
+          },
+          "ko": {
+            "title": "Lovable Engineering"
+          },
+          "pt": {
+            "title": "Lovable Engineering"
+          },
+          "ru": {
+            "title": "Lovable Engineering"
+          },
+          "tr": {
+            "title": "Lovable Engineering"
+          },
+          "zh-Hans": {
+            "title": "Lovable 工程"
+          },
+          "zh-Hant": {
+            "title": "Lovable 工程"
+          }
         },
         "items": [
           {
@@ -1052,8 +1166,14 @@
                 "name": "AI-Native Geliştirme",
                 "description": "AI öncelikli iş akışları için tasarlanmış uygulamalar oluşturma"
               },
-              "zh-Hans": { "name": "AI 原生开发", "description": "构建为 AI 优先工作流设计的应用" },
-              "zh-Hant": { "name": "AI 原生開發", "description": "構建為 AI 優先工作流設計的應用" }
+              "zh-Hans": {
+                "name": "AI 原生开发",
+                "description": "构建为 AI 优先工作流设计的应用"
+              },
+              "zh-Hant": {
+                "name": "AI 原生開發",
+                "description": "構建為 AI 優先工作流設計的應用"
+              }
             },
             "name": "AI-Native Development",
             "url": "https://lovable.dev/blog",
@@ -1101,8 +1221,14 @@
                 "name": "Kodlama Copilot Pattern",
                 "description": "Etkili AI pair programming için yaygın patternlar"
               },
-              "zh-Hans": { "name": "编码副驾驶模式", "description": "有效 AI 结对编程的常见模式" },
-              "zh-Hant": { "name": "編碼副駕駛員模式", "description": "有效 AI 結對編程的常見模式" }
+              "zh-Hans": {
+                "name": "编码副驾驶模式",
+                "description": "有效 AI 结对编程的常见模式"
+              },
+              "zh-Hant": {
+                "name": "編碼副駕駛員模式",
+                "description": "有效 AI 結對編程的常見模式"
+              }
             },
             "name": "The Coding Copilot Pattern",
             "url": "https://lovable.dev/patterns",
@@ -1156,25 +1282,55 @@
         "title": "Ekosistem Araçları",
         "description": "AI kodlama iş akışları için küratörlü araçlar ve yardımcı programlar"
       },
-      "zh-Hans": { "title": "生态系统工具", "description": "AI 编码工作流的精选工具和实用程序" },
-      "zh-Hant": { "title": "生態系統工具", "description": "AI 編碼工作流的精選工具和實用程序" }
+      "zh-Hans": {
+        "title": "生态系统工具",
+        "description": "AI 编码工作流的精选工具和实用程序"
+      },
+      "zh-Hant": {
+        "title": "生態系統工具",
+        "description": "AI 編碼工作流的精選工具和實用程序"
+      }
     },
     "sections": [
       {
         "title": "Development Tools",
         "translations": {
-          "en": { "title": "Development Tools" },
-          "de": { "title": "Entwicklungstools" },
-          "es": { "title": "Herramientas de Desarrollo" },
-          "fr": { "title": "Outils de Développement" },
-          "id": { "title": "Alat Pengembangan" },
-          "ja": { "title": "開発ツール" },
-          "ko": { "title": "개발 도구" },
-          "pt": { "title": "Ferramentas de Desenvolvimento" },
-          "ru": { "title": "Инструменты разработки" },
-          "tr": { "title": "Geliştirme Araçları" },
-          "zh-Hans": { "title": "开发工具" },
-          "zh-Hant": { "title": "開發工具" }
+          "en": {
+            "title": "Development Tools"
+          },
+          "de": {
+            "title": "Entwicklungstools"
+          },
+          "es": {
+            "title": "Herramientas de Desarrollo"
+          },
+          "fr": {
+            "title": "Outils de Développement"
+          },
+          "id": {
+            "title": "Alat Pengembangan"
+          },
+          "ja": {
+            "title": "開発ツール"
+          },
+          "ko": {
+            "title": "개발 도구"
+          },
+          "pt": {
+            "title": "Ferramentas de Desenvolvimento"
+          },
+          "ru": {
+            "title": "Инструменты разработки"
+          },
+          "tr": {
+            "title": "Geliştirme Araçları"
+          },
+          "zh-Hans": {
+            "title": "开发工具"
+          },
+          "zh-Hant": {
+            "title": "開發工具"
+          }
         },
         "items": [
           {
@@ -1347,18 +1503,42 @@
       {
         "title": "Productivity Utilities",
         "translations": {
-          "en": { "title": "Productivity Utilities" },
-          "de": { "title": "Produktivitäts-Utilities" },
-          "es": { "title": "Utilidades de Productividad" },
-          "fr": { "title": "Utilitaires de Productivité" },
-          "id": { "title": "Utilitas Produktivitas" },
-          "ja": { "title": "生産性ユーティリティ" },
-          "ko": { "title": "생산성 유틸리티" },
-          "pt": { "title": "Utilitários de Produtividade" },
-          "ru": { "title": "Утилиты производительности" },
-          "tr": { "title": "Verimlilik Araçları" },
-          "zh-Hans": { "title": "生产力工具" },
-          "zh-Hant": { "title": "生產力工具" }
+          "en": {
+            "title": "Productivity Utilities"
+          },
+          "de": {
+            "title": "Produktivitäts-Utilities"
+          },
+          "es": {
+            "title": "Utilidades de Productividad"
+          },
+          "fr": {
+            "title": "Utilitaires de Productivité"
+          },
+          "id": {
+            "title": "Utilitas Produktivitas"
+          },
+          "ja": {
+            "title": "生産性ユーティリティ"
+          },
+          "ko": {
+            "title": "생산성 유틸리티"
+          },
+          "pt": {
+            "title": "Utilitários de Produtividade"
+          },
+          "ru": {
+            "title": "Утилиты производительности"
+          },
+          "tr": {
+            "title": "Verimlilik Araçları"
+          },
+          "zh-Hans": {
+            "title": "生产力工具"
+          },
+          "zh-Hant": {
+            "title": "生產力工具"
+          }
         },
         "items": [
           {
@@ -1383,8 +1563,14 @@
                 "name": "ccusage",
                 "description": "Tool pelacakan dan analisis penggunaan Claude Code"
               },
-              "ja": { "name": "ccusage", "description": "Claude Codeの使用追跡・分析ツール" },
-              "ko": { "name": "ccusage", "description": "Claude Code 사용 추적 및 분석 도구" },
+              "ja": {
+                "name": "ccusage",
+                "description": "Claude Codeの使用追跡・分析ツール"
+              },
+              "ko": {
+                "name": "ccusage",
+                "description": "Claude Code 사용 추적 및 분석 도구"
+              },
               "pt": {
                 "name": "ccusage",
                 "description": "Ferramenta de rastreamento e análise de uso do Claude Code"
@@ -1397,8 +1583,14 @@
                 "name": "ccusage",
                 "description": "Claude Code kullanım takibi ve analiz aracı"
               },
-              "zh-Hans": { "name": "ccusage", "description": "Claude Code 使用跟踪和分析工具" },
-              "zh-Hant": { "name": "ccusage", "description": "Claude Code 使用追蹤和分析工具" }
+              "zh-Hans": {
+                "name": "ccusage",
+                "description": "Claude Code 使用跟踪和分析工具"
+              },
+              "zh-Hant": {
+                "name": "ccusage",
+                "description": "Claude Code 使用追蹤和分析工具"
+              }
             },
             "name": "ccusage",
             "url": "https://github.com/ryoppippi/ccusage",
@@ -1491,7 +1683,10 @@
         "title": "コーディング機能",
         "description": "AIコーディングワークフロー向けの必須機能"
       },
-      "ko": { "title": "코딩 기능", "description": "AI 코딩 워크플로우를 위한 필수 기능" },
+      "ko": {
+        "title": "코딩 기능",
+        "description": "AI 코딩 워크플로우를 위한 필수 기능"
+      },
       "pt": {
         "title": "Funcionalidades de Codificação",
         "description": "Funcionalidades obrigatórias para workflows de codificação AI"
@@ -1504,31 +1699,58 @@
         "title": "Kodlama Özellikleri",
         "description": "AI kodlama iş akışları için mutlaka denenmesi gereken özellikler"
       },
-      "zh-Hans": { "title": "编码功能", "description": "AI 编码工作流的必备功能" },
-      "zh-Hant": { "title": "編碼功能", "description": "AI 編碼工作流的必備功能" }
+      "zh-Hans": {
+        "title": "编码功能",
+        "description": "AI 编码工作流的必备功能"
+      },
+      "zh-Hant": {
+        "title": "編碼功能",
+        "description": "AI 編碼工作流的必備功能"
+      }
     },
     "sections": [
       {
         "title": "Open Standards",
         "translations": {
-          "en": { "title": "Open Standards" },
-          "de": { "title": "Offene Standards" },
-          "es": { "title": "Estándares Abiertos" },
-          "fr": { "title": "Standards Ouverts" },
-          "id": { "title": "Standar Terbuka" },
-          "ja": { "title": "オープン標準" },
-          "ko": { "title": "개방형 표준" },
-          "pt": { "title": "Padrões Abertos" },
-          "ru": { "title": "Открытые стандарты" },
-          "tr": { "title": "Açık Standartlar" },
-          "zh-Hans": { "title": "开放标准" },
-          "zh-Hant": { "title": "開放標準" }
+          "en": {
+            "title": "Open Standards"
+          },
+          "de": {
+            "title": "Offene Standards"
+          },
+          "es": {
+            "title": "Estándares Abiertos"
+          },
+          "fr": {
+            "title": "Standards Ouverts"
+          },
+          "id": {
+            "title": "Standar Terbuka"
+          },
+          "ja": {
+            "title": "オープン標準"
+          },
+          "ko": {
+            "title": "개방형 표준"
+          },
+          "pt": {
+            "title": "Padrões Abertos"
+          },
+          "ru": {
+            "title": "Открытые стандарты"
+          },
+          "tr": {
+            "title": "Açık Standartlar"
+          },
+          "zh-Hans": {
+            "title": "开放标准"
+          },
+          "zh-Hant": {
+            "title": "開放標準"
+          }
         },
         "items": [
           {
-            "name": "Agent Skills",
-            "url": "https://agentskills.io",
-            "description": "Modular capabilities that extend Agent's functionality through filesystem-based resources containing instructions, metadata, and optional scripts, enabling domain-specific expertise and workflows",
             "translations": {
               "en": {
                 "name": "Agent Skills",
@@ -1578,12 +1800,12 @@
                 "name": "Agent 技能",
                 "description": "模組化能力，通過基於文件系統的資源（包含指令、元數據和可選腳本）擴展 Agent 的功能，實現領域專業知識和工作流"
               }
-            }
+            },
+            "name": "Agent Skills",
+            "url": "https://agentskills.io",
+            "description": "Modular capabilities that extend Agent's functionality through filesystem-based resources containing instructions, metadata, and optional scripts, enabling domain-specific expertise and workflows"
           },
           {
-            "name": "Model Context Protocol (MCP)",
-            "url": "https://modelcontextprotocol.io",
-            "description": "Open standard connecting AI applications to external systems like data sources, tools, and workflows",
             "translations": {
               "en": {
                 "name": "Model Context Protocol (MCP)",
@@ -1633,12 +1855,12 @@
                 "name": "模型上下文協議 (MCP)",
                 "description": "將 AI 應用連接到外部系統（如數據源、工具和工作流）的開放標準"
               }
-            }
+            },
+            "name": "Model Context Protocol (MCP)",
+            "url": "https://modelcontextprotocol.io",
+            "description": "Open standard connecting AI applications to external systems like data sources, tools, and workflows"
           },
           {
-            "name": "AGENTS.md",
-            "url": "https://agents.md",
-            "description": "Open-format markdown file providing coding agents with project-specific instructions and context",
             "translations": {
               "en": {
                 "name": "AGENTS.md",
@@ -1688,31 +1910,55 @@
                 "name": "AGENTS.md",
                 "description": "為編碼 Agent 提供項目特定指令和上下文的開放格式 Markdown 文件"
               }
-            }
+            },
+            "name": "AGENTS.md",
+            "url": "https://agents.md",
+            "description": "Open-format markdown file providing coding agents with project-specific instructions and context"
           }
         ]
       },
       {
         "title": "Vendor Standards",
         "translations": {
-          "en": { "title": "Vendor Standards" },
-          "de": { "title": "Anbieter-Standards" },
-          "es": { "title": "Estándares de Proveedores" },
-          "fr": { "title": "Normes des Fournisseurs" },
-          "id": { "title": "Standar Vendor" },
-          "ja": { "title": "ベンダー標準" },
-          "ko": { "title": "공급업체 표준" },
-          "pt": { "title": "Padrões de Fornecedores" },
-          "ru": { "title": "Стандарты поставщиков" },
-          "tr": { "title": "Satıcı Standartları" },
-          "zh-Hans": { "title": "厂商标准" },
-          "zh-Hant": { "title": "廠商標準" }
+          "en": {
+            "title": "Vendor Standards"
+          },
+          "de": {
+            "title": "Anbieter-Standards"
+          },
+          "es": {
+            "title": "Estándares de Proveedores"
+          },
+          "fr": {
+            "title": "Normes des Fournisseurs"
+          },
+          "id": {
+            "title": "Standar Vendor"
+          },
+          "ja": {
+            "title": "ベンダー標準"
+          },
+          "ko": {
+            "title": "공급업체 표준"
+          },
+          "pt": {
+            "title": "Padrões de Fornecedores"
+          },
+          "ru": {
+            "title": "Стандарты поставщиков"
+          },
+          "tr": {
+            "title": "Satıcı Standartları"
+          },
+          "zh-Hans": {
+            "title": "厂商标准"
+          },
+          "zh-Hant": {
+            "title": "廠商標準"
+          }
         },
         "items": [
           {
-            "name": "Slash Commands",
-            "url": "https://cursor.com/docs/agent/chat/commands",
-            "description": "Custom commands that create reusable workflows triggered with a `/` prefix in the chat input, stored as Markdown files in project, global, or team locations",
             "translations": {
               "en": {
                 "name": "Slash Commands",
@@ -1762,12 +2008,12 @@
                 "name": "命令",
                 "description": "自訂命令，可通過聊天輸入框中的 `/` 前綴觸發可重用工作流，以 Markdown 文件形式存儲在項目、全局或團隊位置"
               }
-            }
+            },
+            "name": "Slash Commands",
+            "url": "https://cursor.com/docs/agent/chat/commands",
+            "description": "Custom commands that create reusable workflows triggered with a `/` prefix in the chat input, stored as Markdown files in project, global, or team locations"
           },
           {
-            "name": "Rules",
-            "url": "https://cursor.com/docs/context/rules",
-            "description": "System-level instructions for Agent that provide persistent, reusable context through Project Rules, User Rules, Team Rules, and AGENTS.md files",
             "translations": {
               "en": {
                 "name": "Rules",
@@ -1817,7 +2063,10 @@
                 "name": "規則",
                 "description": "為 Agent 提供系統級指令，通過項目規則、用戶規則、團隊規則和 AGENTS.md 文件提供持久、可重用的上下文"
               }
-            }
+            },
+            "name": "Rules",
+            "url": "https://cursor.com/docs/context/rules",
+            "description": "System-level instructions for Agent that provide persistent, reusable context through Project Rules, User Rules, Team Rules, and AGENTS.md files"
           }
         ]
       }

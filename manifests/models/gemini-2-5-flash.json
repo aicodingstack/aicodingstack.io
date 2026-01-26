@@ -59,11 +59,11 @@
   "benchmarks": {
     "sweBench": 28.73,
     "terminalBench": 0.171,
-    "sciCode": null,
-    "liveCodeBench": 60.6,
     "mmmu": 79.7,
     "mmmuPro": null,
-    "webDevArena": null
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": 60.6
   },
   "platformUrls": {
     "huggingface": null,
