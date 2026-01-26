@@ -243,7 +243,7 @@ export function OpenSourceRankPage() {
               : 'border-[var(--color-border)] hover:bg-[var(--color-hover)]'
           }`}
         >
-          {tPage('productType.ide')} (
+          {tShared('categories.plural.ides')} (
           {openSourceProjects.filter(p => p.type === 'ide').length +
             proprietaryProjects.filter(p => p.type === 'ide').length}
           )
@@ -257,7 +257,7 @@ export function OpenSourceRankPage() {
               : 'border-[var(--color-border)] hover:bg-[var(--color-hover)]'
           }`}
         >
-          {tPage('productType.cli')} (
+          {tShared('categories.plural.clis')} (
           {openSourceProjects.filter(p => p.type === 'cli').length +
             proprietaryProjects.filter(p => p.type === 'cli').length}
           )
@@ -271,7 +271,7 @@ export function OpenSourceRankPage() {
               : 'border-[var(--color-border)] hover:bg-[var(--color-hover)]'
           }`}
         >
-          {tPage('productType.extension')} (
+          {tShared('categories.plural.extensions')} (
           {openSourceProjects.filter(p => p.type === 'extension').length +
             proprietaryProjects.filter(p => p.type === 'extension').length}
           )
@@ -291,7 +291,7 @@ export function OpenSourceRankPage() {
                       {tPage('table.rank')}
                     </th>
                     <th className="text-left px-[var(--spacing-sm)] py-[var(--spacing-sm)] text-sm font-semibold">
-                      {tPage('table.name')}
+                      {tShared('labels.name')}
                     </th>
                     <th className="text-left px-[var(--spacing-sm)] py-[var(--spacing-sm)] text-sm font-semibold">
                       {tShared('terms.type')}

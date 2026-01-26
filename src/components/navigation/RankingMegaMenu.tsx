@@ -17,7 +17,7 @@ export const RankingMegaMenu = memo(function RankingMegaMenu({
   isOpen,
   onClose,
 }: RankingMegaMenuProps) {
-  const tComponent = useTranslations('components.common.header')
+  const tComponent = useTranslations('components.common')
 
   if (!isOpen) return null
 
@@ -30,9 +30,11 @@ export const RankingMegaMenu = memo(function RankingMegaMenu({
         <div className="p-[var(--spacing-md)]">
           {/* Open Source Ranking Link */}
           <Link href="/open-source-rank" onClick={onClose} className={featuredLinkClass}>
-            <div className="font-medium mb-[var(--spacing-xs)]">{tComponent('openSourceRank')}</div>
+            <div className="font-medium mb-[var(--spacing-xs)]">
+              {tComponent('header.openSourceRank')}
+            </div>
             <div className="text-xs text-[var(--color-text-secondary)]">
-              {tComponent('openSourceRankDesc')}
+              {tComponent('header.openSourceRankDesc')}
             </div>
           </Link>
         </div>

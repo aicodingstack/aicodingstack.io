@@ -31,8 +31,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function ComparePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
 
-  const tPage = await getTranslations({ locale, namespace: 'pages.modelCompare' })
   const tComparison = await getTranslations({ locale, namespace: 'pages.comparison' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   const groups = getComparisonGroups()
   const allModelsList = allModels.map(m => ({ id: m.id, name: m.name, vendor: m.vendor }))
@@ -54,7 +54,7 @@ export default async function ComparePage({ params }: { params: Promise<{ locale
           locale={locale as Locale}
         />
 
-        <BackToNavigation href="/models" title={tPage('allModels')} />
+        <BackToNavigation href="/models" title={tShared('categories.all.models')} />
       </main>
     </PageLayout>
   )

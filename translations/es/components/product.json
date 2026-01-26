@@ -1,31 +1,13 @@
 {
-  "productCommands": {
-    "command": "Comando",
-    "install": "Instalar",
-    "launch": "Iniciar"
-  },
-  "platformLinks": {
-    "aiPlatforms": {
-      "huggingface": {
-        "description": "Ver tarjeta de modelo y pesos"
-      },
-      "artificialAnalysis": {
-        "description": "Tabla de clasificación y evaluaciones de modelos de IA"
-      },
-      "openrouter": {
-        "description": "Comparar y usar múltiples modelos de IA"
-      }
-    }
-  },
-  "githubStarHistory": {
-    "loading": "Cargando historial de estrellas...",
-    "title": "Historial de estrellas de GitHub",
-    "description": "Tendencia de crecimiento de estrellas a lo largo del tiempo",
-    "stars": "estrellas",
-    "fallbackNote": "Nota: Mostrando datos de muestra. El API de historial de estrellas está temporalmente no disponible."
-  },
-  "productHero": {
-    "runtime": "Tiempo de ejecución"
+  "benchmarks": {
+    "liveCodeBenchDesc": "Live coding performance",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "sciCodeDesc": "Scientific code generation",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "title": "Performance Benchmarks",
+    "webDevArenaDesc": "Web development challenges"
   },
   "communityLinks": {
     "blog": "Blog",
@@ -34,6 +16,40 @@
     "githubDescription": "Ver repositorios",
     "redditDescription": "Unirse a la discusión",
     "youtubeDescription": "Ver videos"
+  },
+  "githubStarHistory": {
+    "description": "Tendencia de crecimiento de estrellas a lo largo del tiempo",
+    "fallbackNote": "Nota: Mostrando datos de muestra. El API de historial de estrellas está temporalmente no disponible.",
+    "loading": "Cargando historial de estrellas...",
+    "stars": "estrellas",
+    "title": "Historial de estrellas de GitHub"
+  },
+  "modelSpecifications": {},
+  "platformLinks": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "Tabla de clasificación y evaluaciones de modelos de IA"
+      },
+      "huggingface": {
+        "description": "Ver tarjeta de modelo y pesos"
+      },
+      "openrouter": {
+        "description": "Comparar y usar múltiples modelos de IA"
+      }
+    }
+  },
+  "productCommands": {
+    "command": "Comando",
+    "install": "Instalar",
+    "launch": "Iniciar"
+  },
+  "productHero": {
+    "runtime": "Tiempo de ejecución"
+  },
+  "productPricing": {},
+  "relatedProducts": {
+    "title": "Productos relacionados",
+    "viewProduct": "Ver producto"
   },
   "resourceLinks": {
     "changelog": "Registro de cambios",
@@ -45,22 +61,6 @@
     "mcpDescription": "Obtenga información sobre la integración MCP",
     "pricingDescription": "Ver planes de precios"
   },
-  "productPricing": {},
-  "modelSpecifications": {},
-  "benchmarks": {
-    "title": "Performance Benchmarks",
-    "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBenchDesc": "Command-line interface proficiency",
-    "mmmuDesc": "Multimodal understanding",
-    "mmmuProDesc": "Advanced multimodal tasks",
-    "webDevArenaDesc": "Web development challenges",
-    "sciCodeDesc": "Scientific code generation",
-    "liveCodeBenchDesc": "Live coding performance"
-  },
-  "relatedProducts": {
-    "title": "Productos relacionados",
-    "viewProduct": "Ver producto"
-  },
   "vendorMatrix": {
     "cell": {
       "summary": "{count} {category}"
@@ -68,7 +68,6 @@
     "controls": {
       "clear": "Clear",
       "sortByLabel": "Sort by:",
-      "sortName": "Name",
       "vendorTypeLabel": "Vendor Type:"
     },
     "table": {

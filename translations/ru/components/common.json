@@ -7,8 +7,6 @@
     "toggleTheme": "Переключить тему"
   },
   "header": {
-    "aiCodingLandscape": "Ландшафт AI-программирования",
-    "aiCodingLandscapeDesc": "Визуализируйте полную экосистему AI-программирования",
     "closeMenu": "Закрыть меню",
     "developmentTools": "Инструменты разработки",
     "intelligence": "Интеллект",
@@ -17,7 +15,6 @@
     "openSourceRank": "Рейтинг с открытым исходным кодом",
     "openSourceRankDesc": "Исследуйте проекты AI-программирования с открытым исходным кодом по звёздам GitHub",
     "ranking": "Рейтинг",
-    "searchPlaceholder": "Поиск...",
     "toggleMenu": "Переключить меню"
   }
 }

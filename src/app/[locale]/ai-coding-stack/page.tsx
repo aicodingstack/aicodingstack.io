@@ -9,11 +9,10 @@ import type { LocalePageProps } from '@/types/locale'
 
 export async function generateMetadata({ params }: LocalePageProps) {
   const { locale } = await params
-  const tPage = await getTranslations({ locale, namespace: 'pages.stacksOverview' })
   const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   const title = buildTitle({ title: tShared('terms.aiCodingStack') })
-  const description = tPage('subtitle')
+  const description = tShared('terms.ecosystemSubtitle')
 
   return generateStaticPageMetadata({
     locale: locale as Locale,
@@ -36,7 +35,10 @@ export default async function AICodingStackPage({ params }: LocalePageProps) {
       <Header />
 
       <main className="max-w-8xl mx-auto px-[var(--spacing-md)] py-[var(--spacing-lg)]">
-        <PageHeader title={tShared('terms.aiCodingStack')} subtitle={tPage('subtitle')} />
+        <PageHeader
+          title={tShared('terms.aiCodingStack')}
+          subtitle={tShared('terms.ecosystemSubtitle')}
+        />
 
         {/* Stacks Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[var(--spacing-md)]">

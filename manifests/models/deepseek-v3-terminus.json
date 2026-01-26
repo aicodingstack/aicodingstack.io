@@ -59,11 +59,11 @@
   "benchmarks": {
     "sweBench": null,
     "terminalBench": null,
-    "sciCode": 3.1,
-    "liveCodeBench": 27.2,
     "mmmu": null,
     "mmmuPro": null,
-    "webDevArena": null
+    "webDevArena": null,
+    "sciCode": 3.1,
+    "liveCodeBench": 27.2
   },
   "platformUrls": {
     "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus",

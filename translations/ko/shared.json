@@ -11,46 +11,71 @@
     "follow": "{platform}에서 팔로우",
     "join": "{platform} 가입",
     "search": "검색",
+    "searchPlaceholder": "검색...",
     "selectItem": "항목 선택",
     "view": "{name} 보기",
     "viewFullDetails": "전체 가격 세부 정보 보기 →",
     "visit": "{name} 방문",
     "watch": "{platform}에서 시청"
   },
-  "terms": {
-    "aiCoding": "AI 코딩",
-    "aiCodingStack": "AI Coding Stack",
-    "articles": "기사",
-    "collections": "컬렉션",
-    "community": "커뮤니티",
-    "communityLinks": "커뮤니티 링크",
-    "comparison": "비교",
-    "curatedCollections": "선별된 컬렉션",
-    "docs": "Docs",
-    "documentation": "문서",
-    "ecosystemTools": "생태계 도구",
-    "faq": "FAQ",
-    "featuredArticles": "추천 기사",
-    "followUs": "팔로우하기",
-    "indexLabel": "INDEX",
-    "license": "라이선스",
-    "manifesto": "선언문",
-    "maxOutput": "최대 출력",
-    "modelSize": "모델 크기",
-    "openSource": "오픈 소스",
-    "pricing": "가격",
-    "products": "제품",
-    "proprietary": "독점",
-    "resources": "리소스",
-    "slogan": "발견. 비교. 10배 더 빠르게 구축.",
-    "specificationsProtocols": "사양 및 프로토콜",
-    "stars": "스타",
-    "type": "유형",
-    "version": "버전",
-    "visitWebsite": "웹사이트 방문",
-    "website": "웹사이트",
-    "platforms": "플랫폼",
-    "supportedIdes": "지원되는 IDE"
+  "benchmarks": {
+    "liveCodeBench": "LiveCodeBench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "webDevArena": "WebDev Arena"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
+  },
+  "categories": {
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "providers": "Providers",
+      "vendors": "Vendors"
+    },
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "provider": "Provider",
+      "vendor": "Vendor"
+    }
+  },
+  "labels": {
+    "cache": "Cache",
+    "findOnAiPlatforms": "AI 플랫폼에서 찾기",
+    "getApiKey": "API 키 얻기",
+    "input": "Input",
+    "name": "이름",
+    "output": "Output",
+    "quickLinks": "빠른 링크",
+    "searchByName": "Search by name...",
+    "specifications": "사양",
+    "totalContext": "Total Context"
+  },
+  "lifecycle": {
+    "deprecated": "Deprecated",
+    "latest": "Latest",
+    "maintained": "Maintained"
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
@@ -63,66 +88,47 @@
     "twitter": "X (Twitter)",
     "youtube": "YouTube"
   },
-  "categories": {
-    "singular": {
-      "cli": "CLI",
-      "extension": "Extension",
-      "ide": "IDE",
-      "model": "Model",
-      "modelProvider": "Model Provider",
-      "provider": "Provider",
-      "vendor": "Vendor"
-    },
-    "plural": {
-      "clis": "CLIs",
-      "extensions": "Extensions",
-      "ides": "IDEs",
-      "modelProviders": "Model Providers",
-      "models": "Models",
-      "providers": "Providers",
-      "vendors": "Vendors"
-    },
-    "all": {
-      "clis": "All CLIs",
-      "extensions": "All Extensions",
-      "ides": "All IDEs",
-      "modelProviders": "All Model Providers",
-      "models": "All Models",
-      "vendors": "All Vendors"
-    }
-  },
-  "labels": {
-    "cache": "Cache",
-    "findOnAiPlatforms": "AI 플랫폼에서 찾기",
-    "getApiKey": "API 키 얻기",
-    "input": "Input",
-    "output": "Output",
-    "specifications": "사양",
-    "quickLinks": "빠른 링크",
-    "totalContext": "Total Context",
-    "searchByName": "Search by name..."
-  },
   "providerTypes": {
     "foundation-model-provider": "기초 모델 제공자",
     "model-service-provider": "모델 서비스 제공자"
   },
-  "lifecycle": {
-    "latest": "Latest",
-    "maintained": "Maintained",
-    "deprecated": "Deprecated"
-  },
-  "benchmarks": {
-    "sciCode": "SciCode",
-    "sweBench": "SWE-bench",
-    "terminalBench": "Terminal Bench",
-    "mmmu": "MMMU",
-    "mmmuPro": "MMMU Pro",
-    "webDevArena": "WebDev Arena",
-    "liveCodeBench": "LiveCodeBench"
-  },
-  "capabilities": {
-    "capabilities": "Capabilities",
-    "inputModalities": "Input Modalities",
-    "outputModalities": "Output Modalities"
+  "terms": {
+    "aiCoding": "AI 코딩",
+    "aiCodingStack": "AI Coding Stack",
+    "articles": "기사",
+    "collections": "컬렉션",
+    "community": "커뮤니티",
+    "communityLinks": "커뮤니티 링크",
+    "comparison": "비교",
+    "contextWindow": "ContextWindow",
+    "curatedCollections": "선별된 컬렉션",
+    "docs": "Docs",
+    "documentation": "문서",
+    "ecosystemSubtitle": "전체 AI 코딩 생태계 탐색: IDE, CLI, 확장, 모델 및 공급자.",
+    "ecosystemTools": "생태계 도구",
+    "faq": "FAQ",
+    "featuredArticles": "추천 기사",
+    "followUs": "팔로우하기",
+    "indexLabel": "INDEX",
+    "landscapeDescription": "전체 AI 코딩 생태계 시각화",
+    "landscapeTitle": "AI 코딩 랜드스케이프",
+    "license": "라이선스",
+    "manifesto": "선언문",
+    "maxOutput": "최대 출력",
+    "modelSize": "모델 크기",
+    "openSource": "오픈 소스",
+    "platforms": "플랫폼",
+    "pricing": "가격",
+    "products": "제품",
+    "proprietary": "독점",
+    "resources": "리소스",
+    "slogan": "발견. 비교. 10배 더 빠르게 구축.",
+    "specificationsProtocols": "사양 및 프로토콜",
+    "stars": "스타",
+    "supportedIdes": "지원되는 IDE",
+    "type": "유형",
+    "version": "버전",
+    "visitWebsite": "웹사이트 방문",
+    "website": "웹사이트"
   }
 }
