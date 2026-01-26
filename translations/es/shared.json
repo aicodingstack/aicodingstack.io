@@ -11,12 +11,86 @@
     "follow": "Seguir en {platform}",
     "join": "Unirse a {platform}",
     "search": "Buscar",
+    "searchPlaceholder": "Buscar...",
     "selectItem": "Seleccionar un elemento",
     "view": "Ver {name}",
     "viewFullDetails": "Ver detalles completos de precios →",
     "visit": "Visitar {name}",
-    "watch": "Ver en {platform}",
-    "searchPlaceholder": "Buscar..."
+    "watch": "Ver en {platform}"
+  },
+  "benchmarks": {
+    "liveCodeBench": "LiveCodeBench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "webDevArena": "WebDev Arena"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
+  },
+  "categories": {
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "providers": "Providers",
+      "vendors": "Vendors"
+    },
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "provider": "Provider",
+      "vendor": "Vendor"
+    }
+  },
+  "labels": {
+    "cache": "Cache",
+    "findOnAiPlatforms": "Encontrar en plataformas de IA",
+    "getApiKey": "Obtener Clave de API",
+    "input": "Input",
+    "name": "Nombre",
+    "output": "Output",
+    "quickLinks": "Enlaces rápidos",
+    "searchByName": "Search by name...",
+    "specifications": "Especificaciones",
+    "totalContext": "Total Context"
+  },
+  "lifecycle": {
+    "deprecated": "Obsoleto",
+    "latest": "Más reciente",
+    "maintained": "Mantenido"
+  },
+  "platforms": {
+    "artificialAnalysis": "Artificial Analysis",
+    "discord": "Discord",
+    "github": "GitHub",
+    "huggingface": "HuggingFace",
+    "linkedin": "LinkedIn",
+    "openrouter": "OpenRouter",
+    "reddit": "Reddit",
+    "twitter": "X (Twitter)",
+    "youtube": "YouTube"
+  },
+  "providerTypes": {
+    "foundation-model-provider": "Proveedor de Modelo Base",
+    "model-service-provider": "Proveedor de Servicio de Modelo"
   },
   "terms": {
     "aiCoding": "Codificación con IA",
@@ -30,16 +104,20 @@
     "curatedCollections": "Colecciones curadas",
     "docs": "Documentación",
     "documentation": "Documentación",
+    "ecosystemSubtitle": "Explora el ecosistema completo de AI coding: IDEs, CLIs, extensiones, modelos y proveedores.",
     "ecosystemTools": "Herramientas del ecosistema",
     "faq": "FAQ",
     "featuredArticles": "Artículos destacados",
     "followUs": "Síganos",
     "indexLabel": "INDEX",
+    "landscapeDescription": "Visualiza el ecosistema completo de AI coding",
+    "landscapeTitle": "Panorama de AI Coding",
     "license": "Licencia",
     "manifesto": "Manifiesto",
     "maxOutput": "Salida máxima",
     "modelSize": "Tamaño del modelo",
     "openSource": "Código Abierto",
+    "platforms": "Plataformas",
     "pricing": "Precios",
     "products": "Productos",
     "proprietary": "Propietario",
@@ -47,88 +125,10 @@
     "slogan": "Descubrir. Comparar. Construir 10x más rápido.",
     "specificationsProtocols": "Especificaciones y protocolos",
     "stars": "Estrellas",
+    "supportedIdes": "IDEs compatibles",
     "type": "Tipo",
     "version": "Versión",
     "visitWebsite": "Visitar sitio web",
-    "website": "Sitio web",
-    "platforms": "Plataformas",
-    "supportedIdes": "IDEs compatibles",
-    "landscapeTitle": "Panorama de AI Coding",
-    "landscapeDescription": "Visualiza el ecosistema completo de AI coding",
-    "ecosystemSubtitle": "Explora el ecosistema completo de AI coding: IDEs, CLIs, extensiones, modelos y proveedores."
-  },
-  "platforms": {
-    "artificialAnalysis": "Artificial Analysis",
-    "discord": "Discord",
-    "github": "GitHub",
-    "huggingface": "HuggingFace",
-    "linkedin": "LinkedIn",
-    "openrouter": "OpenRouter",
-    "reddit": "Reddit",
-    "twitter": "X (Twitter)",
-    "youtube": "YouTube"
-  },
-  "categories": {
-    "singular": {
-      "cli": "CLI",
-      "extension": "Extension",
-      "ide": "IDE",
-      "model": "Model",
-      "modelProvider": "Model Provider",
-      "provider": "Provider",
-      "vendor": "Vendor"
-    },
-    "plural": {
-      "clis": "CLIs",
-      "extensions": "Extensions",
-      "ides": "IDEs",
-      "modelProviders": "Model Providers",
-      "models": "Models",
-      "providers": "Providers",
-      "vendors": "Vendors"
-    },
-    "all": {
-      "clis": "All CLIs",
-      "extensions": "All Extensions",
-      "ides": "All IDEs",
-      "modelProviders": "All Model Providers",
-      "models": "All Models",
-      "vendors": "All Vendors"
-    }
-  },
-  "labels": {
-    "cache": "Cache",
-    "findOnAiPlatforms": "Encontrar en plataformas de IA",
-    "getApiKey": "Obtener Clave de API",
-    "input": "Input",
-    "output": "Output",
-    "specifications": "Especificaciones",
-    "quickLinks": "Enlaces rápidos",
-    "totalContext": "Total Context",
-    "searchByName": "Search by name...",
-    "name": "Nombre"
-  },
-  "providerTypes": {
-    "foundation-model-provider": "Proveedor de Modelo Base",
-    "model-service-provider": "Proveedor de Servicio de Modelo"
-  },
-  "lifecycle": {
-    "latest": "Más reciente",
-    "maintained": "Mantenido",
-    "deprecated": "Obsoleto"
-  },
-  "benchmarks": {
-    "sciCode": "SciCode",
-    "sweBench": "SWE-bench",
-    "terminalBench": "Terminal Bench",
-    "mmmu": "MMMU",
-    "mmmuPro": "MMMU Pro",
-    "webDevArena": "WebDev Arena",
-    "liveCodeBench": "LiveCodeBench"
-  },
-  "capabilities": {
-    "capabilities": "Capabilities",
-    "inputModalities": "Input Modalities",
-    "outputModalities": "Output Modalities"
+    "website": "Sitio web"
   }
 }

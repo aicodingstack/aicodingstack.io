@@ -1,8 +1,4 @@
 {
-  "meta": {
-    "title": "AI Coding Stack Overview",
-    "description": "Complete overview of the AI coding ecosystem. Explore IDEs, CLIs, extensions, models, and providers all in one place."
-  },
   "clis": {
     "description": "Command-line AI assistants that bring the power of large language models directly to your terminal. Execute complex tasks with natural language, right from your shell."
   },
@@ -12,6 +8,10 @@
   },
   "ides": {
     "description": "AI-powered integrated development environments that understand your codebase and provide intelligent assistance. From VS Code to Cursor, discover the editors that make coding collaborative with AI."
+  },
+  "meta": {
+    "description": "Complete overview of the AI coding ecosystem. Explore IDEs, CLIs, extensions, models, and providers all in one place.",
+    "title": "AI Coding Stack Overview"
   },
   "modelProviders": {
     "description": "LLM API providers offering access to various AI models. From DeepSeek to OpenRouter, discover platforms that power your AI coding tools with unified APIs and model access."

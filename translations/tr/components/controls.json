@@ -13,10 +13,10 @@
     "sortNameDesc": "Ad (Z-A)"
   },
   "searchDialog": {
-    "placeholder": "Aramak için yazın...",
     "empty": "Start typing to search...",
-    "noResultsFor": "No results for \"{query}\"",
     "navigate": "to navigate",
+    "noResultsFor": "No results for \"{query}\"",
+    "placeholder": "Aramak için yazın...",
     "select": "to select",
     "viewAllResults": "View all results for \"{query}\""
   },

@@ -11,12 +11,86 @@
     "follow": "{platform}でフォロー",
     "join": "{platform}に参加",
     "search": "検索",
+    "searchPlaceholder": "検索...",
     "selectItem": "アイテムを選択",
     "view": "{name}を表示",
     "viewFullDetails": "完全な料金詳細を表示 →",
     "visit": "{name}を訪問",
-    "watch": "{platform}で視聴",
-    "searchPlaceholder": "検索..."
+    "watch": "{platform}で視聴"
+  },
+  "benchmarks": {
+    "liveCodeBench": "LiveCodeBench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "webDevArena": "WebDev Arena"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
+  },
+  "categories": {
+    "all": {
+      "clis": "すべてのCLI",
+      "extensions": "すべての拡張機能",
+      "ides": "すべてのIDE",
+      "modelProviders": "すべてのモデルプロバイダー",
+      "models": "すべてのモデル",
+      "vendors": "すべてのベンダー"
+    },
+    "plural": {
+      "clis": "CLI",
+      "extensions": "拡張機能",
+      "ides": "IDE",
+      "modelProviders": "モデルプロバイダー",
+      "models": "モデル",
+      "providers": "Providers",
+      "vendors": "ベンダー"
+    },
+    "singular": {
+      "cli": "CLI",
+      "extension": "拡張機能",
+      "ide": "IDE",
+      "model": "モデル",
+      "modelProvider": "モデルプロバイダー",
+      "provider": "Provider",
+      "vendor": "ベンダー"
+    }
+  },
+  "labels": {
+    "cache": "Cache",
+    "findOnAiPlatforms": "AIプラットフォームで探す",
+    "getApiKey": "APIキーを取得",
+    "input": "Input",
+    "name": "名前",
+    "output": "Output",
+    "quickLinks": "クイックリンク",
+    "searchByName": "Search by name...",
+    "specifications": "仕様",
+    "totalContext": "Total Context"
+  },
+  "lifecycle": {
+    "deprecated": "Deprecated",
+    "latest": "Latest",
+    "maintained": "Maintained"
+  },
+  "platforms": {
+    "artificialAnalysis": "Artificial Analysis",
+    "discord": "Discord",
+    "github": "GitHub",
+    "huggingface": "HuggingFace",
+    "linkedin": "LinkedIn",
+    "openrouter": "OpenRouter",
+    "reddit": "Reddit",
+    "twitter": "X (Twitter)",
+    "youtube": "YouTube"
+  },
+  "providerTypes": {
+    "foundation-model-provider": "基盤モデルプロバイダー",
+    "model-service-provider": "モデルサービスプロバイダー"
   },
   "terms": {
     "aiCoding": "AI コーディング",
@@ -30,16 +104,20 @@
     "curatedCollections": "キュレートされたコレクション",
     "docs": "ドキュメント",
     "documentation": "ドキュメント",
+    "ecosystemSubtitle": "AIコーディングエコシステム全体を探索：IDE、CLI、拡張機能、モデル、プロバイダー。",
     "ecosystemTools": "エコシステムツール",
     "faq": "FAQ",
     "featuredArticles": "注目記事",
     "followUs": "フォローする",
     "indexLabel": "INDEX",
+    "landscapeDescription": "AIコーディングエコシステム全体を可視化",
+    "landscapeTitle": "AIコーディングランドスケープ",
     "license": "ライセンス",
     "manifesto": "Manifesto",
     "maxOutput": "最大出力",
     "modelSize": "モデルサイズ",
     "openSource": "オープンソース",
+    "platforms": "プラットフォーム",
     "pricing": "料金",
     "products": "製品",
     "proprietary": "プロプライエタリ",
@@ -47,88 +125,10 @@
     "slogan": "発見。比較。10倍速く構築。",
     "specificationsProtocols": "仕様とプロトコル",
     "stars": "スター",
+    "supportedIdes": "対応 IDE",
     "type": "タイプ",
     "version": "バージョン",
     "visitWebsite": "Web サイトを表示",
-    "website": "Webサイト",
-    "platforms": "プラットフォーム",
-    "supportedIdes": "対応 IDE",
-    "landscapeTitle": "AIコーディングランドスケープ",
-    "landscapeDescription": "AIコーディングエコシステム全体を可視化",
-    "ecosystemSubtitle": "AIコーディングエコシステム全体を探索：IDE、CLI、拡張機能、モデル、プロバイダー。"
-  },
-  "platforms": {
-    "artificialAnalysis": "Artificial Analysis",
-    "discord": "Discord",
-    "github": "GitHub",
-    "huggingface": "HuggingFace",
-    "linkedin": "LinkedIn",
-    "openrouter": "OpenRouter",
-    "reddit": "Reddit",
-    "twitter": "X (Twitter)",
-    "youtube": "YouTube"
-  },
-  "categories": {
-    "singular": {
-      "cli": "CLI",
-      "extension": "拡張機能",
-      "ide": "IDE",
-      "model": "モデル",
-      "modelProvider": "モデルプロバイダー",
-      "provider": "Provider",
-      "vendor": "ベンダー"
-    },
-    "plural": {
-      "clis": "CLI",
-      "extensions": "拡張機能",
-      "ides": "IDE",
-      "modelProviders": "モデルプロバイダー",
-      "models": "モデル",
-      "providers": "Providers",
-      "vendors": "ベンダー"
-    },
-    "all": {
-      "clis": "すべてのCLI",
-      "extensions": "すべての拡張機能",
-      "ides": "すべてのIDE",
-      "modelProviders": "すべてのモデルプロバイダー",
-      "models": "すべてのモデル",
-      "vendors": "すべてのベンダー"
-    }
-  },
-  "labels": {
-    "cache": "Cache",
-    "findOnAiPlatforms": "AIプラットフォームで探す",
-    "getApiKey": "APIキーを取得",
-    "input": "Input",
-    "output": "Output",
-    "specifications": "仕様",
-    "quickLinks": "クイックリンク",
-    "totalContext": "Total Context",
-    "searchByName": "Search by name...",
-    "name": "名前"
-  },
-  "providerTypes": {
-    "foundation-model-provider": "基盤モデルプロバイダー",
-    "model-service-provider": "モデルサービスプロバイダー"
-  },
-  "lifecycle": {
-    "latest": "Latest",
-    "maintained": "Maintained",
-    "deprecated": "Deprecated"
-  },
-  "benchmarks": {
-    "sciCode": "SciCode",
-    "sweBench": "SWE-bench",
-    "terminalBench": "Terminal Bench",
-    "mmmu": "MMMU",
-    "mmmuPro": "MMMU Pro",
-    "webDevArena": "WebDev Arena",
-    "liveCodeBench": "LiveCodeBench"
-  },
-  "capabilities": {
-    "capabilities": "Capabilities",
-    "inputModalities": "Input Modalities",
-    "outputModalities": "Output Modalities"
+    "website": "Webサイト"
   }
 }

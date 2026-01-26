@@ -1,31 +1,13 @@
 {
-  "productCommands": {
-    "command": "指令",
-    "install": "安裝",
-    "launch": "啟動"
-  },
-  "platformLinks": {
-    "aiPlatforms": {
-      "huggingface": {
-        "description": "查看模型卡片與權重"
-      },
-      "artificialAnalysis": {
-        "description": "AI 模型排行榜與基準測試"
-      },
-      "openrouter": {
-        "description": "比較並使用多個 AI 模型"
-      }
-    }
-  },
-  "githubStarHistory": {
-    "loading": "載入星標歷史...",
-    "title": "GitHub 星標歷史",
-    "description": "星標增長趨勢",
-    "stars": "星標數",
-    "fallbackNote": "注意：顯示範例資料。星標歷史 API 暫時無法使用。"
-  },
-  "productHero": {
-    "runtime": "執行期"
+  "benchmarks": {
+    "liveCodeBenchDesc": "Live coding performance",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "sciCodeDesc": "Scientific code generation",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "title": "Performance Benchmarks",
+    "webDevArenaDesc": "Web development challenges"
   },
   "communityLinks": {
     "blog": "部落格",
@@ -34,6 +16,40 @@
     "githubDescription": "檢視儲存庫",
     "redditDescription": "參與討論",
     "youtubeDescription": "觀看影片"
+  },
+  "githubStarHistory": {
+    "description": "星標增長趨勢",
+    "fallbackNote": "注意：顯示範例資料。星標歷史 API 暫時無法使用。",
+    "loading": "載入星標歷史...",
+    "stars": "星標數",
+    "title": "GitHub 星標歷史"
+  },
+  "modelSpecifications": {},
+  "platformLinks": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "AI 模型排行榜與基準測試"
+      },
+      "huggingface": {
+        "description": "查看模型卡片與權重"
+      },
+      "openrouter": {
+        "description": "比較並使用多個 AI 模型"
+      }
+    }
+  },
+  "productCommands": {
+    "command": "指令",
+    "install": "安裝",
+    "launch": "啟動"
+  },
+  "productHero": {
+    "runtime": "執行期"
+  },
+  "productPricing": {},
+  "relatedProducts": {
+    "title": "相關產品",
+    "viewProduct": "檢視產品"
   },
   "resourceLinks": {
     "changelog": "更新日誌",
@@ -44,22 +60,6 @@
     "mcp": "MCP 文件",
     "mcpDescription": "了解 MCP 整合",
     "pricingDescription": "檢視定價方案"
-  },
-  "productPricing": {},
-  "modelSpecifications": {},
-  "benchmarks": {
-    "title": "Performance Benchmarks",
-    "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBenchDesc": "Command-line interface proficiency",
-    "mmmuDesc": "Multimodal understanding",
-    "mmmuProDesc": "Advanced multimodal tasks",
-    "webDevArenaDesc": "Web development challenges",
-    "sciCodeDesc": "Scientific code generation",
-    "liveCodeBenchDesc": "Live coding performance"
-  },
-  "relatedProducts": {
-    "title": "相關產品",
-    "viewProduct": "檢視產品"
   },
   "vendorMatrix": {
     "cell": {

@@ -1,31 +1,13 @@
 {
-  "productCommands": {
-    "command": "Befehl",
-    "install": "Installieren",
-    "launch": "Starten"
-  },
-  "platformLinks": {
-    "aiPlatforms": {
-      "huggingface": {
-        "description": "Modellkarte und Gewichte anzeigen"
-      },
-      "artificialAnalysis": {
-        "description": "AI-Modell-Leaderboard und Benchmarks"
-      },
-      "openrouter": {
-        "description": "Mehrere AI-Modelle vergleichen und nutzen"
-      }
-    }
-  },
-  "githubStarHistory": {
-    "loading": "Star-Verlauf laden...",
-    "title": "GitHub Star-Verlauf",
-    "description": "Star-Wachstumstrend über Zeit",
-    "stars": "Stars",
-    "fallbackNote": "Hinweis: Beispieldaten werden angezeigt. Star-Verlauf API ist vorübergehend nicht verfügbar."
-  },
-  "productHero": {
-    "runtime": "Laufzeit"
+  "benchmarks": {
+    "liveCodeBenchDesc": "Live-Coding-Leistung",
+    "mmmuDesc": "Multimodales Verstehen",
+    "mmmuProDesc": "Erweiterte multimodale Aufgaben",
+    "sciCodeDesc": "Wissenschaftliche Code-Generierung",
+    "sweBenchDesc": "Echtwelt-Softwareentwicklungsaufgaben",
+    "terminalBenchDesc": "Befehlszeilenschnittstellen-Kompetenz",
+    "title": "Leistungsbenchmarks",
+    "webDevArenaDesc": "Web-Entwicklungsherausforderungen"
   },
   "communityLinks": {
     "blog": "Blog",
@@ -34,6 +16,40 @@
     "githubDescription": "Repositories ansehen",
     "redditDescription": "Diskussion teilnehmen",
     "youtubeDescription": "Videos ansehen"
+  },
+  "githubStarHistory": {
+    "description": "Star-Wachstumstrend über Zeit",
+    "fallbackNote": "Hinweis: Beispieldaten werden angezeigt. Star-Verlauf API ist vorübergehend nicht verfügbar.",
+    "loading": "Star-Verlauf laden...",
+    "stars": "Stars",
+    "title": "GitHub Star-Verlauf"
+  },
+  "modelSpecifications": {},
+  "platformLinks": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "AI-Modell-Leaderboard und Benchmarks"
+      },
+      "huggingface": {
+        "description": "Modellkarte und Gewichte anzeigen"
+      },
+      "openrouter": {
+        "description": "Mehrere AI-Modelle vergleichen und nutzen"
+      }
+    }
+  },
+  "productCommands": {
+    "command": "Befehl",
+    "install": "Installieren",
+    "launch": "Starten"
+  },
+  "productHero": {
+    "runtime": "Laufzeit"
+  },
+  "productPricing": {},
+  "relatedProducts": {
+    "title": "Verwandte Produkte",
+    "viewProduct": "Produkt ansehen"
   },
   "resourceLinks": {
     "changelog": "Änderungsprotokoll",
@@ -44,22 +60,6 @@
     "mcp": "MCP-Dokumentation",
     "mcpDescription": "Erfahren Sie mehr über MCP-Integration",
     "pricingDescription": "Preispläne anzeigen"
-  },
-  "productPricing": {},
-  "modelSpecifications": {},
-  "benchmarks": {
-    "title": "Leistungsbenchmarks",
-    "sweBenchDesc": "Echtwelt-Softwareentwicklungsaufgaben",
-    "terminalBenchDesc": "Befehlszeilenschnittstellen-Kompetenz",
-    "mmmuDesc": "Multimodales Verstehen",
-    "mmmuProDesc": "Erweiterte multimodale Aufgaben",
-    "webDevArenaDesc": "Web-Entwicklungsherausforderungen",
-    "sciCodeDesc": "Wissenschaftliche Code-Generierung",
-    "liveCodeBenchDesc": "Live-Coding-Leistung"
-  },
-  "relatedProducts": {
-    "title": "Verwandte Produkte",
-    "viewProduct": "Produkt ansehen"
   },
   "vendorMatrix": {
     "cell": {

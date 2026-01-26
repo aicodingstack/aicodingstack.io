@@ -11,12 +11,86 @@
     "follow": "Auf {platform} folgen",
     "join": "{platform} beitreten",
     "search": "Suchen",
+    "searchPlaceholder": "Suchen...",
     "selectItem": "Ein Element auswählen",
     "view": "{name} anzeigen",
     "viewFullDetails": "Vollständige Preisdetails anzeigen →",
     "visit": "{name} besuchen",
-    "watch": "Auf {platform} ansehen",
-    "searchPlaceholder": "Suchen..."
+    "watch": "Auf {platform} ansehen"
+  },
+  "benchmarks": {
+    "liveCodeBench": "LiveCodeBench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "webDevArena": "WebDev Arena"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
+  },
+  "categories": {
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "providers": "Providers",
+      "vendors": "Vendors"
+    },
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "provider": "Provider",
+      "vendor": "Vendor"
+    }
+  },
+  "labels": {
+    "cache": "Cache",
+    "findOnAiPlatforms": "Auf AI-Plattformen finden",
+    "getApiKey": "API-Schlüssel Abrufen",
+    "input": "Input",
+    "name": "Name",
+    "output": "Output",
+    "quickLinks": "Schnelllinks",
+    "searchByName": "Search by name...",
+    "specifications": "Spezifikationen",
+    "totalContext": "Total Context"
+  },
+  "lifecycle": {
+    "deprecated": "Veraltet",
+    "latest": "Neueste",
+    "maintained": "Gepflegt"
+  },
+  "platforms": {
+    "artificialAnalysis": "Artificial Analysis",
+    "discord": "Discord",
+    "github": "GitHub",
+    "huggingface": "HuggingFace",
+    "linkedin": "LinkedIn",
+    "openrouter": "OpenRouter",
+    "reddit": "Reddit",
+    "twitter": "X (Twitter)",
+    "youtube": "YouTube"
+  },
+  "providerTypes": {
+    "foundation-model-provider": "Foundation-Modellanbieter",
+    "model-service-provider": "Modell-Service-Anbieter"
   },
   "terms": {
     "aiCoding": "AI-Codierung",
@@ -30,16 +104,20 @@
     "curatedCollections": "Kuratierte Sammlungen",
     "docs": "Dokumentation",
     "documentation": "Dokumentation",
+    "ecosystemSubtitle": "Erkunden Sie das vollständige AI-Coding-Ökosystem: IDEs, CLIs, Erweiterungen, Modelle und Anbieter.",
     "ecosystemTools": "Ökosystem-Tools",
     "faq": "FAQ",
     "featuredArticles": "Herausragende Artikel",
     "followUs": "Folgen Sie uns",
     "indexLabel": "INDEX",
+    "landscapeDescription": "Visualisieren Sie das vollständige AI-Coding-Ökosystem",
+    "landscapeTitle": "AI-Coding-Landschaft",
     "license": "Lizenz",
     "manifesto": "Manifest",
     "maxOutput": "Maximale Ausgabe",
     "modelSize": "Modellgröße",
     "openSource": "Open Source",
+    "platforms": "Plattformen",
     "pricing": "Preise",
     "products": "Produkte",
     "proprietary": "Proprietär",
@@ -47,88 +125,10 @@
     "slogan": "Entdecken. Vergleichen. 10-mal schneller bauen.",
     "specificationsProtocols": "Spezifikationen & Protokolle",
     "stars": "Stars",
+    "supportedIdes": "Unterstützte IDEs",
     "type": "Typ",
     "version": "Version",
     "visitWebsite": "Website Besuchen",
-    "website": "Website",
-    "platforms": "Plattformen",
-    "supportedIdes": "Unterstützte IDEs",
-    "landscapeTitle": "AI-Coding-Landschaft",
-    "landscapeDescription": "Visualisieren Sie das vollständige AI-Coding-Ökosystem",
-    "ecosystemSubtitle": "Erkunden Sie das vollständige AI-Coding-Ökosystem: IDEs, CLIs, Erweiterungen, Modelle und Anbieter."
-  },
-  "platforms": {
-    "artificialAnalysis": "Artificial Analysis",
-    "discord": "Discord",
-    "github": "GitHub",
-    "huggingface": "HuggingFace",
-    "linkedin": "LinkedIn",
-    "openrouter": "OpenRouter",
-    "reddit": "Reddit",
-    "twitter": "X (Twitter)",
-    "youtube": "YouTube"
-  },
-  "categories": {
-    "singular": {
-      "cli": "CLI",
-      "extension": "Extension",
-      "ide": "IDE",
-      "model": "Model",
-      "modelProvider": "Model Provider",
-      "provider": "Provider",
-      "vendor": "Vendor"
-    },
-    "plural": {
-      "clis": "CLIs",
-      "extensions": "Extensions",
-      "ides": "IDEs",
-      "modelProviders": "Model Providers",
-      "models": "Models",
-      "providers": "Providers",
-      "vendors": "Vendors"
-    },
-    "all": {
-      "clis": "All CLIs",
-      "extensions": "All Extensions",
-      "ides": "All IDEs",
-      "modelProviders": "All Model Providers",
-      "models": "All Models",
-      "vendors": "All Vendors"
-    }
-  },
-  "labels": {
-    "cache": "Cache",
-    "findOnAiPlatforms": "Auf AI-Plattformen finden",
-    "getApiKey": "API-Schlüssel Abrufen",
-    "input": "Input",
-    "output": "Output",
-    "specifications": "Spezifikationen",
-    "quickLinks": "Schnelllinks",
-    "totalContext": "Total Context",
-    "searchByName": "Search by name...",
-    "name": "Name"
-  },
-  "providerTypes": {
-    "foundation-model-provider": "Foundation-Modellanbieter",
-    "model-service-provider": "Modell-Service-Anbieter"
-  },
-  "lifecycle": {
-    "latest": "Neueste",
-    "maintained": "Gepflegt",
-    "deprecated": "Veraltet"
-  },
-  "benchmarks": {
-    "sciCode": "SciCode",
-    "sweBench": "SWE-bench",
-    "terminalBench": "Terminal Bench",
-    "mmmu": "MMMU",
-    "mmmuPro": "MMMU Pro",
-    "webDevArena": "WebDev Arena",
-    "liveCodeBench": "LiveCodeBench"
-  },
-  "capabilities": {
-    "capabilities": "Capabilities",
-    "inputModalities": "Input Modalities",
-    "outputModalities": "Output Modalities"
+    "website": "Website"
   }
 }

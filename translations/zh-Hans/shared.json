@@ -11,12 +11,86 @@
     "follow": "在 {platform} 上关注",
     "join": "加入 {platform}",
     "search": "搜索",
+    "searchPlaceholder": "搜索...",
     "selectItem": "选择一项",
     "view": "查看 {name}",
     "viewFullDetails": "查看完整定价详情 →",
     "visit": "访问 {name}",
-    "watch": "在 {platform} 上观看",
-    "searchPlaceholder": "搜索..."
+    "watch": "在 {platform} 上观看"
+  },
+  "benchmarks": {
+    "liveCodeBench": "LiveCodeBench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "webDevArena": "WebDev Arena"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
+  },
+  "categories": {
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "providers": "Providers",
+      "vendors": "Vendors"
+    },
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "provider": "Provider",
+      "vendor": "Vendor"
+    }
+  },
+  "labels": {
+    "cache": "Cache",
+    "findOnAiPlatforms": "在 AI 平台上查找",
+    "getApiKey": "获取 API 密钥",
+    "input": "Input",
+    "name": "名称",
+    "output": "Output",
+    "quickLinks": "快速链接",
+    "searchByName": "Search by name...",
+    "specifications": "规格",
+    "totalContext": "Total Context"
+  },
+  "lifecycle": {
+    "deprecated": "Deprecated",
+    "latest": "Latest",
+    "maintained": "Maintained"
+  },
+  "platforms": {
+    "artificialAnalysis": "Artificial Analysis",
+    "discord": "Discord",
+    "github": "GitHub",
+    "huggingface": "HuggingFace",
+    "linkedin": "LinkedIn",
+    "openrouter": "OpenRouter",
+    "reddit": "Reddit",
+    "twitter": "X (Twitter)",
+    "youtube": "YouTube"
+  },
+  "providerTypes": {
+    "foundation-model-provider": "基础模型提供商",
+    "model-service-provider": "模型服务提供商"
   },
   "terms": {
     "aiCoding": "AI 编码",
@@ -30,16 +104,20 @@
     "curatedCollections": "精选收藏集",
     "docs": "Docs",
     "documentation": "文档",
+    "ecosystemSubtitle": "探索完整的 AI 编码生态系统：IDE、CLI、扩展、模型和提供商。",
     "ecosystemTools": "生态系统工具",
     "faq": "FAQ",
     "featuredArticles": "精选文章",
     "followUs": "关注我们",
     "indexLabel": "INDEX",
+    "landscapeDescription": "可视化完整的 AI 编码生态系统",
+    "landscapeTitle": "AI 编码全景",
     "license": "许可证",
     "manifesto": "宣言",
     "maxOutput": "最大输出",
     "modelSize": "模型大小",
     "openSource": "开源",
+    "platforms": "平台",
     "pricing": "定价",
     "products": "产品",
     "proprietary": "专有",
@@ -47,88 +125,10 @@
     "slogan": "发现。比较。构建 10x 更快。",
     "specificationsProtocols": "规范与协议",
     "stars": "星标",
+    "supportedIdes": "支持的 IDE",
     "type": "类型",
     "version": "版本",
     "visitWebsite": "访问官网",
-    "website": "网站",
-    "platforms": "平台",
-    "supportedIdes": "支持的 IDE",
-    "landscapeTitle": "AI 编码全景",
-    "landscapeDescription": "可视化完整的 AI 编码生态系统",
-    "ecosystemSubtitle": "探索完整的 AI 编码生态系统：IDE、CLI、扩展、模型和提供商。"
-  },
-  "platforms": {
-    "artificialAnalysis": "Artificial Analysis",
-    "discord": "Discord",
-    "github": "GitHub",
-    "huggingface": "HuggingFace",
-    "linkedin": "LinkedIn",
-    "openrouter": "OpenRouter",
-    "reddit": "Reddit",
-    "twitter": "X (Twitter)",
-    "youtube": "YouTube"
-  },
-  "categories": {
-    "singular": {
-      "cli": "CLI",
-      "extension": "Extension",
-      "ide": "IDE",
-      "model": "Model",
-      "modelProvider": "Model Provider",
-      "provider": "Provider",
-      "vendor": "Vendor"
-    },
-    "plural": {
-      "clis": "CLIs",
-      "extensions": "Extensions",
-      "ides": "IDEs",
-      "modelProviders": "Model Providers",
-      "models": "Models",
-      "providers": "Providers",
-      "vendors": "Vendors"
-    },
-    "all": {
-      "clis": "All CLIs",
-      "extensions": "All Extensions",
-      "ides": "All IDEs",
-      "modelProviders": "All Model Providers",
-      "models": "All Models",
-      "vendors": "All Vendors"
-    }
-  },
-  "labels": {
-    "cache": "Cache",
-    "findOnAiPlatforms": "在 AI 平台上查找",
-    "getApiKey": "获取 API 密钥",
-    "input": "Input",
-    "output": "Output",
-    "specifications": "规格",
-    "quickLinks": "快速链接",
-    "totalContext": "Total Context",
-    "searchByName": "Search by name...",
-    "name": "名称"
-  },
-  "providerTypes": {
-    "foundation-model-provider": "基础模型提供商",
-    "model-service-provider": "模型服务提供商"
-  },
-  "lifecycle": {
-    "latest": "Latest",
-    "maintained": "Maintained",
-    "deprecated": "Deprecated"
-  },
-  "benchmarks": {
-    "sciCode": "SciCode",
-    "sweBench": "SWE-bench",
-    "terminalBench": "Terminal Bench",
-    "mmmu": "MMMU",
-    "mmmuPro": "MMMU Pro",
-    "webDevArena": "WebDev Arena",
-    "liveCodeBench": "LiveCodeBench"
-  },
-  "capabilities": {
-    "capabilities": "Capabilities",
-    "inputModalities": "Input Modalities",
-    "outputModalities": "Output Modalities"
+    "website": "网站"
   }
 }

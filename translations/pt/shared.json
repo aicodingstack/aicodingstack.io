@@ -11,12 +11,86 @@
     "follow": "Seguir em {platform}",
     "join": "Juntar-se a {platform}",
     "search": "Pesquisar",
+    "searchPlaceholder": "Pesquisar...",
     "selectItem": "Selecionar um item",
     "view": "Ver {name}",
     "viewFullDetails": "Ver detalhes completos de preços →",
     "visit": "Visitar {name}",
-    "watch": "Assistir em {platform}",
-    "searchPlaceholder": "Pesquisar..."
+    "watch": "Assistir em {platform}"
+  },
+  "benchmarks": {
+    "liveCodeBench": "LiveCodeBench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "webDevArena": "WebDev Arena"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
+  },
+  "categories": {
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "providers": "Providers",
+      "vendors": "Vendors"
+    },
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "provider": "Provider",
+      "vendor": "Vendor"
+    }
+  },
+  "labels": {
+    "cache": "Cache",
+    "findOnAiPlatforms": "Encontrar em plataformas de IA",
+    "getApiKey": "Obter Chave de API",
+    "input": "Input",
+    "name": "Nome",
+    "output": "Output",
+    "quickLinks": "Links rápidos",
+    "searchByName": "Search by name...",
+    "specifications": "Especificações",
+    "totalContext": "Total Context"
+  },
+  "lifecycle": {
+    "deprecated": "Deprecated",
+    "latest": "Latest",
+    "maintained": "Maintained"
+  },
+  "platforms": {
+    "artificialAnalysis": "Artificial Analysis",
+    "discord": "Discord",
+    "github": "GitHub",
+    "huggingface": "HuggingFace",
+    "linkedin": "LinkedIn",
+    "openrouter": "OpenRouter",
+    "reddit": "Reddit",
+    "twitter": "X (Twitter)",
+    "youtube": "YouTube"
+  },
+  "providerTypes": {
+    "foundation-model-provider": "Provedor de Modelo Base",
+    "model-service-provider": "Provedor de Serviço de Modelo"
   },
   "terms": {
     "aiCoding": "Codificação IA",
@@ -30,16 +104,20 @@
     "curatedCollections": "Coleções curadas",
     "docs": "Documentação",
     "documentation": "Documentação",
+    "ecosystemSubtitle": "Explore o ecossistema completo de AI coding: IDEs, CLIs, extensões, modelos e provedores.",
     "ecosystemTools": "Ferramentas do ecossistema",
     "faq": "FAQ",
     "featuredArticles": "Artigos em destaque",
     "followUs": "Siga-nos",
     "indexLabel": "INDEX",
+    "landscapeDescription": "Visualize o ecossistema completo de AI coding",
+    "landscapeTitle": "Paisagem AI Coding",
     "license": "Licença",
     "manifesto": "Manifesto",
     "maxOutput": "Saída máxima",
     "modelSize": "Tamanho do modelo",
     "openSource": "Código Aberto",
+    "platforms": "Plataformas",
     "pricing": "Preços",
     "products": "Produtos",
     "proprietary": "Proprietário",
@@ -47,88 +125,10 @@
     "slogan": "Descobrir. Comparar. Construir 10x mais rápido.",
     "specificationsProtocols": "Especificações e protocolos",
     "stars": "Estrelas",
+    "supportedIdes": "IDEs Suportados",
     "type": "Tipo",
     "version": "Versão",
     "visitWebsite": "Visitar Site",
-    "website": "Site",
-    "platforms": "Plataformas",
-    "supportedIdes": "IDEs Suportados",
-    "landscapeTitle": "Paisagem AI Coding",
-    "landscapeDescription": "Visualize o ecossistema completo de AI coding",
-    "ecosystemSubtitle": "Explore o ecossistema completo de AI coding: IDEs, CLIs, extensões, modelos e provedores."
-  },
-  "platforms": {
-    "artificialAnalysis": "Artificial Analysis",
-    "discord": "Discord",
-    "github": "GitHub",
-    "huggingface": "HuggingFace",
-    "linkedin": "LinkedIn",
-    "openrouter": "OpenRouter",
-    "reddit": "Reddit",
-    "twitter": "X (Twitter)",
-    "youtube": "YouTube"
-  },
-  "categories": {
-    "singular": {
-      "cli": "CLI",
-      "extension": "Extension",
-      "ide": "IDE",
-      "model": "Model",
-      "modelProvider": "Model Provider",
-      "provider": "Provider",
-      "vendor": "Vendor"
-    },
-    "plural": {
-      "clis": "CLIs",
-      "extensions": "Extensions",
-      "ides": "IDEs",
-      "modelProviders": "Model Providers",
-      "models": "Models",
-      "providers": "Providers",
-      "vendors": "Vendors"
-    },
-    "all": {
-      "clis": "All CLIs",
-      "extensions": "All Extensions",
-      "ides": "All IDEs",
-      "modelProviders": "All Model Providers",
-      "models": "All Models",
-      "vendors": "All Vendors"
-    }
-  },
-  "labels": {
-    "cache": "Cache",
-    "findOnAiPlatforms": "Encontrar em plataformas de IA",
-    "getApiKey": "Obter Chave de API",
-    "input": "Input",
-    "output": "Output",
-    "specifications": "Especificações",
-    "quickLinks": "Links rápidos",
-    "totalContext": "Total Context",
-    "searchByName": "Search by name...",
-    "name": "Nome"
-  },
-  "providerTypes": {
-    "foundation-model-provider": "Provedor de Modelo Base",
-    "model-service-provider": "Provedor de Serviço de Modelo"
-  },
-  "lifecycle": {
-    "latest": "Latest",
-    "maintained": "Maintained",
-    "deprecated": "Deprecated"
-  },
-  "benchmarks": {
-    "sciCode": "SciCode",
-    "sweBench": "SWE-bench",
-    "terminalBench": "Terminal Bench",
-    "mmmu": "MMMU",
-    "mmmuPro": "MMMU Pro",
-    "webDevArena": "WebDev Arena",
-    "liveCodeBench": "LiveCodeBench"
-  },
-  "capabilities": {
-    "capabilities": "Capabilities",
-    "inputModalities": "Input Modalities",
-    "outputModalities": "Output Modalities"
+    "website": "Site"
   }
 }

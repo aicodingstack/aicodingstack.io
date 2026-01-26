@@ -1,31 +1,13 @@
 {
-  "productCommands": {
-    "command": "命令",
-    "install": "安装",
-    "launch": "启动"
-  },
-  "platformLinks": {
-    "aiPlatforms": {
-      "huggingface": {
-        "description": "查看模型卡片和权重"
-      },
-      "artificialAnalysis": {
-        "description": "AI 模型排行榜和基准测试"
-      },
-      "openrouter": {
-        "description": "比较并使用多个 AI 模型"
-      }
-    }
-  },
-  "githubStarHistory": {
-    "loading": "加载星标历史...",
-    "title": "GitHub 星标历史",
-    "description": "星标增长趋势",
-    "stars": "星标数",
-    "fallbackNote": "注意：显示示例数据。星标历史 API 暂时不可用。"
-  },
-  "productHero": {
-    "runtime": "运行时"
+  "benchmarks": {
+    "liveCodeBenchDesc": "Live coding performance",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "sciCodeDesc": "Scientific code generation",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "title": "Performance Benchmarks",
+    "webDevArenaDesc": "Web development challenges"
   },
   "communityLinks": {
     "blog": "博客",
@@ -34,6 +16,40 @@
     "githubDescription": "查看代码仓库",
     "redditDescription": "参与讨论",
     "youtubeDescription": "观看视频"
+  },
+  "githubStarHistory": {
+    "description": "星标增长趋势",
+    "fallbackNote": "注意：显示示例数据。星标历史 API 暂时不可用。",
+    "loading": "加载星标历史...",
+    "stars": "星标数",
+    "title": "GitHub 星标历史"
+  },
+  "modelSpecifications": {},
+  "platformLinks": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "AI 模型排行榜和基准测试"
+      },
+      "huggingface": {
+        "description": "查看模型卡片和权重"
+      },
+      "openrouter": {
+        "description": "比较并使用多个 AI 模型"
+      }
+    }
+  },
+  "productCommands": {
+    "command": "命令",
+    "install": "安装",
+    "launch": "启动"
+  },
+  "productHero": {
+    "runtime": "运行时"
+  },
+  "productPricing": {},
+  "relatedProducts": {
+    "title": "相关产品",
+    "viewProduct": "查看产品"
   },
   "resourceLinks": {
     "changelog": "更新日志",
@@ -44,22 +60,6 @@
     "mcp": "MCP 文档",
     "mcpDescription": "了解 MCP 集成",
     "pricingDescription": "查看定价方案"
-  },
-  "productPricing": {},
-  "modelSpecifications": {},
-  "benchmarks": {
-    "title": "Performance Benchmarks",
-    "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBenchDesc": "Command-line interface proficiency",
-    "mmmuDesc": "Multimodal understanding",
-    "mmmuProDesc": "Advanced multimodal tasks",
-    "webDevArenaDesc": "Web development challenges",
-    "sciCodeDesc": "Scientific code generation",
-    "liveCodeBenchDesc": "Live coding performance"
-  },
-  "relatedProducts": {
-    "title": "相关产品",
-    "viewProduct": "查看产品"
   },
   "vendorMatrix": {
     "cell": {

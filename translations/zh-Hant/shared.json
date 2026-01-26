@@ -11,12 +11,86 @@
     "follow": "在 {platform} 上關注",
     "join": "加入 {platform}",
     "search": "搜尋",
+    "searchPlaceholder": "搜尋...",
     "selectItem": "選擇項目",
     "view": "檢視 {name}",
     "viewFullDetails": "檢視完整定價資訊 →",
     "visit": "造訪 {name}",
-    "watch": "在 {platform} 上觀看",
-    "searchPlaceholder": "搜尋..."
+    "watch": "在 {platform} 上觀看"
+  },
+  "benchmarks": {
+    "liveCodeBench": "LiveCodeBench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "webDevArena": "WebDev Arena"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
+  },
+  "categories": {
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "providers": "Providers",
+      "vendors": "Vendors"
+    },
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "provider": "Provider",
+      "vendor": "Vendor"
+    }
+  },
+  "labels": {
+    "cache": "Cache",
+    "findOnAiPlatforms": "在 AI 平台上尋找",
+    "getApiKey": "取得 API 金鑰",
+    "input": "Input",
+    "name": "名稱",
+    "output": "Output",
+    "quickLinks": "快速連結",
+    "searchByName": "Search by name...",
+    "specifications": "規格",
+    "totalContext": "Total Context"
+  },
+  "lifecycle": {
+    "deprecated": "已廢棄",
+    "latest": "最新",
+    "maintained": "維護中"
+  },
+  "platforms": {
+    "artificialAnalysis": "Artificial Analysis",
+    "discord": "Discord",
+    "github": "GitHub",
+    "huggingface": "HuggingFace",
+    "linkedin": "LinkedIn",
+    "openrouter": "OpenRouter",
+    "reddit": "Reddit",
+    "twitter": "X (Twitter)",
+    "youtube": "YouTube"
+  },
+  "providerTypes": {
+    "foundation-model-provider": "Foundation 模型提供者",
+    "model-service-provider": "模型服務提供者"
   },
   "terms": {
     "aiCoding": "AI 編碼",
@@ -30,16 +104,20 @@
     "curatedCollections": "精選收藏集",
     "docs": "Docs",
     "documentation": "文件",
+    "ecosystemSubtitle": "探索完整的 AI 編碼生態系統：IDE、CLI、擴充功能、模型和提供商。",
     "ecosystemTools": "生態系統工具",
     "faq": "FAQ",
     "featuredArticles": "精選文章",
     "followUs": "關注我們",
     "indexLabel": "INDEX",
+    "landscapeDescription": "視覺化完整的 AI 編碼生態系統",
+    "landscapeTitle": "AI 編碼全景",
     "license": "授權",
     "manifesto": "宣言",
     "maxOutput": "最大輸出",
     "modelSize": "模型大小",
     "openSource": "開源",
+    "platforms": "平台",
     "pricing": "定價",
     "products": "產品",
     "proprietary": "專有",
@@ -47,88 +125,10 @@
     "slogan": "探索。比較。構建 10x 更快。",
     "specificationsProtocols": "規格與協議",
     "stars": "星標",
+    "supportedIdes": "支援的 IDE",
     "type": "類型",
     "version": "版本",
     "visitWebsite": "造訪網站",
-    "website": "網站",
-    "platforms": "平台",
-    "supportedIdes": "支援的 IDE",
-    "landscapeTitle": "AI 編碼全景",
-    "landscapeDescription": "視覺化完整的 AI 編碼生態系統",
-    "ecosystemSubtitle": "探索完整的 AI 編碼生態系統：IDE、CLI、擴充功能、模型和提供商。"
-  },
-  "platforms": {
-    "artificialAnalysis": "Artificial Analysis",
-    "discord": "Discord",
-    "github": "GitHub",
-    "huggingface": "HuggingFace",
-    "linkedin": "LinkedIn",
-    "openrouter": "OpenRouter",
-    "reddit": "Reddit",
-    "twitter": "X (Twitter)",
-    "youtube": "YouTube"
-  },
-  "categories": {
-    "singular": {
-      "cli": "CLI",
-      "extension": "Extension",
-      "ide": "IDE",
-      "model": "Model",
-      "modelProvider": "Model Provider",
-      "provider": "Provider",
-      "vendor": "Vendor"
-    },
-    "plural": {
-      "clis": "CLIs",
-      "extensions": "Extensions",
-      "ides": "IDEs",
-      "modelProviders": "Model Providers",
-      "models": "Models",
-      "providers": "Providers",
-      "vendors": "Vendors"
-    },
-    "all": {
-      "clis": "All CLIs",
-      "extensions": "All Extensions",
-      "ides": "All IDEs",
-      "modelProviders": "All Model Providers",
-      "models": "All Models",
-      "vendors": "All Vendors"
-    }
-  },
-  "labels": {
-    "cache": "Cache",
-    "findOnAiPlatforms": "在 AI 平台上尋找",
-    "getApiKey": "取得 API 金鑰",
-    "input": "Input",
-    "output": "Output",
-    "specifications": "規格",
-    "quickLinks": "快速連結",
-    "totalContext": "Total Context",
-    "searchByName": "Search by name...",
-    "name": "名稱"
-  },
-  "providerTypes": {
-    "foundation-model-provider": "Foundation 模型提供者",
-    "model-service-provider": "模型服務提供者"
-  },
-  "lifecycle": {
-    "latest": "最新",
-    "maintained": "維護中",
-    "deprecated": "已廢棄"
-  },
-  "benchmarks": {
-    "sciCode": "SciCode",
-    "sweBench": "SWE-bench",
-    "terminalBench": "Terminal Bench",
-    "mmmu": "MMMU",
-    "mmmuPro": "MMMU Pro",
-    "webDevArena": "WebDev Arena",
-    "liveCodeBench": "LiveCodeBench"
-  },
-  "capabilities": {
-    "capabilities": "Capabilities",
-    "inputModalities": "Input Modalities",
-    "outputModalities": "Output Modalities"
+    "website": "網站"
   }
 }

@@ -1,31 +1,13 @@
 {
-  "productCommands": {
-    "command": "Command",
-    "install": "Install",
-    "launch": "Launch"
-  },
-  "platformLinks": {
-    "aiPlatforms": {
-      "huggingface": {
-        "description": "View model card and weights"
-      },
-      "artificialAnalysis": {
-        "description": "AI model leaderboard and benchmarks"
-      },
-      "openrouter": {
-        "description": "Compare and use multiple AI models"
-      }
-    }
-  },
-  "githubStarHistory": {
-    "loading": "Loading star history...",
-    "title": "GitHub Star History",
-    "description": "Star growth trend over time",
-    "stars": "stars",
-    "fallbackNote": "Note: Displaying sample data. Star history API temporarily unavailable."
-  },
-  "productHero": {
-    "runtime": "Runtime"
+  "benchmarks": {
+    "liveCodeBenchDesc": "Live coding performance",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "sciCodeDesc": "Scientific code generation",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "title": "Performance Benchmarks",
+    "webDevArenaDesc": "Web development challenges"
   },
   "communityLinks": {
     "blog": "Blog",
@@ -34,6 +16,40 @@
     "githubDescription": "View repos",
     "redditDescription": "Join discussion",
     "youtubeDescription": "Watch videos"
+  },
+  "githubStarHistory": {
+    "description": "Star growth trend over time",
+    "fallbackNote": "Note: Displaying sample data. Star history API temporarily unavailable.",
+    "loading": "Loading star history...",
+    "stars": "stars",
+    "title": "GitHub Star History"
+  },
+  "modelSpecifications": {},
+  "platformLinks": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "AI model leaderboard and benchmarks"
+      },
+      "huggingface": {
+        "description": "View model card and weights"
+      },
+      "openrouter": {
+        "description": "Compare and use multiple AI models"
+      }
+    }
+  },
+  "productCommands": {
+    "command": "Command",
+    "install": "Install",
+    "launch": "Launch"
+  },
+  "productHero": {
+    "runtime": "Runtime"
+  },
+  "productPricing": {},
+  "relatedProducts": {
+    "title": "Related Products",
+    "viewProduct": "View Product"
   },
   "resourceLinks": {
     "changelog": "Changelog",
@@ -45,24 +61,6 @@
     "mcpDescription": "Learn about MCP integration",
     "pricingDescription": "View pricing plans"
   },
-  "productPricing": {},
-  "modelSpecifications": {},
-  "benchmarks": {
-    "title": "Performance Benchmarks",
-    "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBenchDesc": "Command-line interface proficiency",
-    "mmmuDesc": "Multimodal understanding",
-    "mmmuProDesc": "Advanced multimodal tasks",
-    "webDevArenaDesc": "Web development challenges",
-    "sciCodeDesc": "Scientific code generation",
-    "liveCodeBenchDesc": "Live coding performance"
-  },
-  "relatedProducts": {
-    "title": "Related Products",
-    "viewProduct": "View Product"
-  },
-  "vendorModels": {},
-  "vendorProducts": {},
   "vendorMatrix": {
     "cell": {
       "summary": "{count} {category}"
@@ -100,5 +98,7 @@
         }
       }
     }
-  }
+  },
+  "vendorModels": {},
+  "vendorProducts": {}
 }

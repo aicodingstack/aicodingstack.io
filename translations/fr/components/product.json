@@ -1,31 +1,13 @@
 {
-  "productCommands": {
-    "command": "Commande",
-    "install": "Installer",
-    "launch": "Lancer"
-  },
-  "platformLinks": {
-    "aiPlatforms": {
-      "huggingface": {
-        "description": "Voir la fiche modèle et les poids"
-      },
-      "artificialAnalysis": {
-        "description": "Classement et benchmarks de modèles IA"
-      },
-      "openrouter": {
-        "description": "Comparer et utiliser plusieurs modèles IA"
-      }
-    }
-  },
-  "githubStarHistory": {
-    "loading": "Chargement de l'historique des étoiles...",
-    "title": "Historique des étoiles GitHub",
-    "description": "Tendance de croissance des étoiles au fil du temps",
-    "stars": "étoiles",
-    "fallbackNote": "Note : Affichage de données d'exemple. L'API d'historique des étoiles est temporairement indisponible."
-  },
-  "productHero": {
-    "runtime": "Exécution"
+  "benchmarks": {
+    "liveCodeBenchDesc": "Live coding performance",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "sciCodeDesc": "Scientific code generation",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "title": "Performance Benchmarks",
+    "webDevArenaDesc": "Web development challenges"
   },
   "communityLinks": {
     "blog": "Blog",
@@ -34,6 +16,40 @@
     "githubDescription": "Voir les dépôts",
     "redditDescription": "Rejoindre la discussion",
     "youtubeDescription": "Regarder les vidéos"
+  },
+  "githubStarHistory": {
+    "description": "Tendance de croissance des étoiles au fil du temps",
+    "fallbackNote": "Note : Affichage de données d'exemple. L'API d'historique des étoiles est temporairement indisponible.",
+    "loading": "Chargement de l'historique des étoiles...",
+    "stars": "étoiles",
+    "title": "Historique des étoiles GitHub"
+  },
+  "modelSpecifications": {},
+  "platformLinks": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "Classement et benchmarks de modèles IA"
+      },
+      "huggingface": {
+        "description": "Voir la fiche modèle et les poids"
+      },
+      "openrouter": {
+        "description": "Comparer et utiliser plusieurs modèles IA"
+      }
+    }
+  },
+  "productCommands": {
+    "command": "Commande",
+    "install": "Installer",
+    "launch": "Lancer"
+  },
+  "productHero": {
+    "runtime": "Exécution"
+  },
+  "productPricing": {},
+  "relatedProducts": {
+    "title": "Produits associés",
+    "viewProduct": "Voir le produit"
   },
   "resourceLinks": {
     "changelog": "Journal des modifications",
@@ -44,22 +60,6 @@
     "mcp": "Documentation MCP",
     "mcpDescription": "En savoir plus sur l'intégration MCP",
     "pricingDescription": "Voir les plans tarifaires"
-  },
-  "productPricing": {},
-  "modelSpecifications": {},
-  "benchmarks": {
-    "title": "Performance Benchmarks",
-    "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBenchDesc": "Command-line interface proficiency",
-    "mmmuDesc": "Multimodal understanding",
-    "mmmuProDesc": "Advanced multimodal tasks",
-    "webDevArenaDesc": "Web development challenges",
-    "sciCodeDesc": "Scientific code generation",
-    "liveCodeBenchDesc": "Live coding performance"
-  },
-  "relatedProducts": {
-    "title": "Produits associés",
-    "viewProduct": "Voir le produit"
   },
   "vendorMatrix": {
     "cell": {

@@ -1,31 +1,13 @@
 {
-  "productCommands": {
-    "command": "Komut",
-    "install": "Yükle",
-    "launch": "Başlat"
-  },
-  "platformLinks": {
-    "aiPlatforms": {
-      "huggingface": {
-        "description": "Model kartını ve ağırlıkları görüntüle"
-      },
-      "artificialAnalysis": {
-        "description": "AI modeli lider tablosu ve kıyaslamaları"
-      },
-      "openrouter": {
-        "description": "Birden çok AI modelini karşılaştırın ve kullanın"
-      }
-    }
-  },
-  "githubStarHistory": {
-    "loading": "Yıldız geçmişi yükleniyor...",
-    "title": "GitHub Yıldız Geçmişi",
-    "description": "Zaman içinde yıldız artış trendi",
-    "stars": "yıldız",
-    "fallbackNote": "Not: Örnek veriler görüntüleniyor. Yıldız geçmişi API'si geçici olarak kullanılamıyor."
-  },
-  "productHero": {
-    "runtime": "Çalışma Zamanı"
+  "benchmarks": {
+    "liveCodeBenchDesc": "Live coding performance",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "sciCodeDesc": "Scientific code generation",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "title": "Performance Benchmarks",
+    "webDevArenaDesc": "Web development challenges"
   },
   "communityLinks": {
     "blog": "Blog",
@@ -34,6 +16,40 @@
     "githubDescription": "Depoları görüntüle",
     "redditDescription": "Tartışmaya katıl",
     "youtubeDescription": "Videoları izle"
+  },
+  "githubStarHistory": {
+    "description": "Zaman içinde yıldız artış trendi",
+    "fallbackNote": "Not: Örnek veriler görüntüleniyor. Yıldız geçmişi API'si geçici olarak kullanılamıyor.",
+    "loading": "Yıldız geçmişi yükleniyor...",
+    "stars": "yıldız",
+    "title": "GitHub Yıldız Geçmişi"
+  },
+  "modelSpecifications": {},
+  "platformLinks": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "AI modeli lider tablosu ve kıyaslamaları"
+      },
+      "huggingface": {
+        "description": "Model kartını ve ağırlıkları görüntüle"
+      },
+      "openrouter": {
+        "description": "Birden çok AI modelini karşılaştırın ve kullanın"
+      }
+    }
+  },
+  "productCommands": {
+    "command": "Komut",
+    "install": "Yükle",
+    "launch": "Başlat"
+  },
+  "productHero": {
+    "runtime": "Çalışma Zamanı"
+  },
+  "productPricing": {},
+  "relatedProducts": {
+    "title": "İlgili Ürünler",
+    "viewProduct": "Ürünü Görüntüle"
   },
   "resourceLinks": {
     "changelog": "Değişiklik Günlüğü",
@@ -44,22 +60,6 @@
     "mcp": "MCP Dokümantasyonu",
     "mcpDescription": "MCP entegrasyonu hakkında bilgi edinin",
     "pricingDescription": "Fiyat planlarını görüntüle"
-  },
-  "productPricing": {},
-  "modelSpecifications": {},
-  "benchmarks": {
-    "title": "Performance Benchmarks",
-    "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBenchDesc": "Command-line interface proficiency",
-    "mmmuDesc": "Multimodal understanding",
-    "mmmuProDesc": "Advanced multimodal tasks",
-    "webDevArenaDesc": "Web development challenges",
-    "sciCodeDesc": "Scientific code generation",
-    "liveCodeBenchDesc": "Live coding performance"
-  },
-  "relatedProducts": {
-    "title": "İlgili Ürünler",
-    "viewProduct": "Ürünü Görüntüle"
   },
   "vendorMatrix": {
     "cell": {

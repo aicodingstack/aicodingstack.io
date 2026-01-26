@@ -4,7 +4,6 @@
     "backToTop": "Back to top",
     "compare": "Compare",
     "compareAll": "Compare All",
-    "searchPlaceholder": "Search...",
     "connect": "Connect on {platform}",
     "discover": "Discover",
     "download": "Download",
@@ -12,11 +11,86 @@
     "follow": "Follow on {platform}",
     "join": "Join {platform}",
     "search": "Search",
+    "searchPlaceholder": "Search...",
     "selectItem": "Select an item",
     "view": "View {name}",
     "viewFullDetails": "View full pricing details →",
     "visit": "Visit {name}",
     "watch": "Watch on {platform}"
+  },
+  "benchmarks": {
+    "liveCodeBench": "LiveCodeBench",
+    "mmmu": "MMMU",
+    "mmmuPro": "MMMU Pro",
+    "sciCode": "SciCode",
+    "sweBench": "SWE-bench",
+    "terminalBench": "Terminal Bench",
+    "webDevArena": "WebDev Arena"
+  },
+  "capabilities": {
+    "capabilities": "Capabilities",
+    "inputModalities": "Input Modalities",
+    "outputModalities": "Output Modalities"
+  },
+  "categories": {
+    "all": {
+      "clis": "All CLIs",
+      "extensions": "All Extensions",
+      "ides": "All IDEs",
+      "modelProviders": "All Model Providers",
+      "models": "All Models",
+      "vendors": "All Vendors"
+    },
+    "plural": {
+      "clis": "CLIs",
+      "extensions": "Extensions",
+      "ides": "IDEs",
+      "modelProviders": "Model Providers",
+      "models": "Models",
+      "providers": "Providers",
+      "vendors": "Vendors"
+    },
+    "singular": {
+      "cli": "CLI",
+      "extension": "Extension",
+      "ide": "IDE",
+      "model": "Model",
+      "modelProvider": "Model Provider",
+      "provider": "Provider",
+      "vendor": "Vendor"
+    }
+  },
+  "labels": {
+    "cache": "Cache",
+    "findOnAiPlatforms": "Find on AI Platforms",
+    "getApiKey": "Get API Key",
+    "input": "Input",
+    "name": "Name",
+    "output": "Output",
+    "quickLinks": "Quick Links",
+    "searchByName": "Search by name...",
+    "specifications": "Specifications",
+    "totalContext": "Total Context"
+  },
+  "lifecycle": {
+    "deprecated": "Deprecated",
+    "latest": "Latest",
+    "maintained": "Maintained"
+  },
+  "platforms": {
+    "artificialAnalysis": "Artificial Analysis",
+    "discord": "Discord",
+    "github": "GitHub",
+    "huggingface": "HuggingFace",
+    "linkedin": "LinkedIn",
+    "openrouter": "OpenRouter",
+    "reddit": "Reddit",
+    "twitter": "X (Twitter)",
+    "youtube": "YouTube"
+  },
+  "providerTypes": {
+    "foundation-model-provider": "Foundation Model Provider",
+    "model-service-provider": "Model Service Provider"
   },
   "terms": {
     "aiCoding": "AI Coding",
@@ -30,16 +104,20 @@
     "curatedCollections": "Curated Collections",
     "docs": "Docs",
     "documentation": "Documentation",
+    "ecosystemSubtitle": "Explore the complete AI coding ecosystem: IDEs, CLIs, extensions, models, and providers.",
     "ecosystemTools": "Ecosystem Tools",
     "faq": "FAQ",
     "featuredArticles": "Featured Articles",
     "followUs": "Follow us",
     "indexLabel": "INDEX",
+    "landscapeDescription": "Visualize the complete AI coding ecosystem",
+    "landscapeTitle": "AI Coding Landscape",
     "license": "License",
     "manifesto": "Manifesto",
     "maxOutput": "Max Output",
     "modelSize": "Model Size",
     "openSource": "Open Source",
+    "platforms": "Platforms",
     "pricing": "Pricing",
     "products": "Products",
     "proprietary": "Proprietary",
@@ -47,88 +125,10 @@
     "slogan": "Discover. Compare. Build 10x Faster.",
     "specificationsProtocols": "Specifications & Protocols",
     "stars": "Stars",
+    "supportedIdes": "Supported IDEs",
     "type": "Type",
     "version": "Version",
     "visitWebsite": "Visit Website",
-    "website": "Website",
-    "platforms": "Platforms",
-    "supportedIdes": "Supported IDEs",
-    "landscapeTitle": "AI Coding Landscape",
-    "landscapeDescription": "Visualize the complete AI coding ecosystem",
-    "ecosystemSubtitle": "Explore the complete AI coding ecosystem: IDEs, CLIs, extensions, models, and providers."
-  },
-  "platforms": {
-    "artificialAnalysis": "Artificial Analysis",
-    "discord": "Discord",
-    "github": "GitHub",
-    "huggingface": "HuggingFace",
-    "linkedin": "LinkedIn",
-    "openrouter": "OpenRouter",
-    "reddit": "Reddit",
-    "twitter": "X (Twitter)",
-    "youtube": "YouTube"
-  },
-  "categories": {
-    "singular": {
-      "cli": "CLI",
-      "extension": "Extension",
-      "ide": "IDE",
-      "model": "Model",
-      "modelProvider": "Model Provider",
-      "provider": "Provider",
-      "vendor": "Vendor"
-    },
-    "plural": {
-      "clis": "CLIs",
-      "extensions": "Extensions",
-      "ides": "IDEs",
-      "modelProviders": "Model Providers",
-      "models": "Models",
-      "providers": "Providers",
-      "vendors": "Vendors"
-    },
-    "all": {
-      "clis": "All CLIs",
-      "extensions": "All Extensions",
-      "ides": "All IDEs",
-      "modelProviders": "All Model Providers",
-      "models": "All Models",
-      "vendors": "All Vendors"
-    }
-  },
-  "labels": {
-    "cache": "Cache",
-    "findOnAiPlatforms": "Find on AI Platforms",
-    "getApiKey": "Get API Key",
-    "input": "Input",
-    "name": "Name",
-    "output": "Output",
-    "specifications": "Specifications",
-    "quickLinks": "Quick Links",
-    "totalContext": "Total Context",
-    "searchByName": "Search by name..."
-  },
-  "providerTypes": {
-    "foundation-model-provider": "Foundation Model Provider",
-    "model-service-provider": "Model Service Provider"
-  },
-  "lifecycle": {
-    "latest": "Latest",
-    "maintained": "Maintained",
-    "deprecated": "Deprecated"
-  },
-  "benchmarks": {
-    "sciCode": "SciCode",
-    "sweBench": "SWE-bench",
-    "terminalBench": "Terminal Bench",
-    "mmmu": "MMMU",
-    "mmmuPro": "MMMU Pro",
-    "webDevArena": "WebDev Arena",
-    "liveCodeBench": "LiveCodeBench"
-  },
-  "capabilities": {
-    "capabilities": "Capabilities",
-    "inputModalities": "Input Modalities",
-    "outputModalities": "Output Modalities"
+    "website": "Website"
   }
 }

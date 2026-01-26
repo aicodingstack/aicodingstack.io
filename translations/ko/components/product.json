@@ -1,31 +1,13 @@
 {
-  "productCommands": {
-    "command": "명령",
-    "install": "설치",
-    "launch": "실행"
-  },
-  "platformLinks": {
-    "aiPlatforms": {
-      "huggingface": {
-        "description": "모델 카드 및 가중치 보기"
-      },
-      "artificialAnalysis": {
-        "description": "AI 모델 리더보드 및 벤치마크"
-      },
-      "openrouter": {
-        "description": "여러 AI 모델 비교 및 사용"
-      }
-    }
-  },
-  "githubStarHistory": {
-    "loading": "스타 히스토리 불러오는 중...",
-    "title": "GitHub 스타 히스토리",
-    "description": "시간 경과에 따른 스타 증가 추세",
-    "stars": "스타",
-    "fallbackNote": "참고: 샘플 데이터를 표시 중입니다. 스타 히스토리 API를 일시적으로 사용할 수 없습니다."
-  },
-  "productHero": {
-    "runtime": "런타임"
+  "benchmarks": {
+    "liveCodeBenchDesc": "Live coding performance",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "sciCodeDesc": "Scientific code generation",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "title": "Performance Benchmarks",
+    "webDevArenaDesc": "Web development challenges"
   },
   "communityLinks": {
     "blog": "블로그",
@@ -34,6 +16,40 @@
     "githubDescription": "저장소 보기",
     "redditDescription": "토론 참여",
     "youtubeDescription": "동영상 보기"
+  },
+  "githubStarHistory": {
+    "description": "시간 경과에 따른 스타 증가 추세",
+    "fallbackNote": "참고: 샘플 데이터를 표시 중입니다. 스타 히스토리 API를 일시적으로 사용할 수 없습니다.",
+    "loading": "스타 히스토리 불러오는 중...",
+    "stars": "스타",
+    "title": "GitHub 스타 히스토리"
+  },
+  "modelSpecifications": {},
+  "platformLinks": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "AI 모델 리더보드 및 벤치마크"
+      },
+      "huggingface": {
+        "description": "모델 카드 및 가중치 보기"
+      },
+      "openrouter": {
+        "description": "여러 AI 모델 비교 및 사용"
+      }
+    }
+  },
+  "productCommands": {
+    "command": "명령",
+    "install": "설치",
+    "launch": "실행"
+  },
+  "productHero": {
+    "runtime": "런타임"
+  },
+  "productPricing": {},
+  "relatedProducts": {
+    "title": "관련 제품",
+    "viewProduct": "제품 보기"
   },
   "resourceLinks": {
     "changelog": "변경 로그",
@@ -44,22 +60,6 @@
     "mcp": "MCP 문서",
     "mcpDescription": "MCP 통합 알아보기",
     "pricingDescription": "가격 플랜 보기"
-  },
-  "productPricing": {},
-  "modelSpecifications": {},
-  "benchmarks": {
-    "title": "Performance Benchmarks",
-    "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBenchDesc": "Command-line interface proficiency",
-    "mmmuDesc": "Multimodal understanding",
-    "mmmuProDesc": "Advanced multimodal tasks",
-    "webDevArenaDesc": "Web development challenges",
-    "sciCodeDesc": "Scientific code generation",
-    "liveCodeBenchDesc": "Live coding performance"
-  },
-  "relatedProducts": {
-    "title": "관련 제품",
-    "viewProduct": "제품 보기"
   },
   "vendorMatrix": {
     "cell": {
