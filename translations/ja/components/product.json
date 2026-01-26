@@ -1,31 +1,13 @@
 {
-  "productCommands": {
-    "command": "コマンド",
-    "install": "インストール",
-    "launch": "起動"
-  },
-  "platformLinks": {
-    "aiPlatforms": {
-      "huggingface": {
-        "description": "モデルカードと重みを表示"
-      },
-      "artificialAnalysis": {
-        "description": "AI モデルのリーダーボードとベンチマーク"
-      },
-      "openrouter": {
-        "description": "複数の AI モデルを比較して使用"
-      }
-    }
-  },
-  "githubStarHistory": {
-    "loading": "スター履歴を読み込み中...",
-    "title": "GitHub スター履歴",
-    "description": "スターの成長トレンド",
-    "stars": "スター",
-    "fallbackNote": "注: サンプルデータを表示中。スター履歴 API は一時的に利用できません。"
-  },
-  "productHero": {
-    "runtime": "ランタイム"
+  "benchmarks": {
+    "liveCodeBenchDesc": "Live coding performance",
+    "mmmuDesc": "Multimodal understanding",
+    "mmmuProDesc": "Advanced multimodal tasks",
+    "sciCodeDesc": "Scientific code generation",
+    "sweBenchDesc": "Real-world software engineering tasks",
+    "terminalBenchDesc": "Command-line interface proficiency",
+    "title": "Performance Benchmarks",
+    "webDevArenaDesc": "Web development challenges"
   },
   "communityLinks": {
     "blog": "ブログ",
@@ -34,6 +16,40 @@
     "githubDescription": "リポジトリを表示",
     "redditDescription": "ディスカッションに参加",
     "youtubeDescription": "動画を見る"
+  },
+  "githubStarHistory": {
+    "description": "スターの成長トレンド",
+    "fallbackNote": "注: サンプルデータを表示中。スター履歴 API は一時的に利用できません。",
+    "loading": "スター履歴を読み込み中...",
+    "stars": "スター",
+    "title": "GitHub スター履歴"
+  },
+  "modelSpecifications": {},
+  "platformLinks": {
+    "aiPlatforms": {
+      "artificialAnalysis": {
+        "description": "AI モデルのリーダーボードとベンチマーク"
+      },
+      "huggingface": {
+        "description": "モデルカードと重みを表示"
+      },
+      "openrouter": {
+        "description": "複数の AI モデルを比較して使用"
+      }
+    }
+  },
+  "productCommands": {
+    "command": "コマンド",
+    "install": "インストール",
+    "launch": "起動"
+  },
+  "productHero": {
+    "runtime": "ランタイム"
+  },
+  "productPricing": {},
+  "relatedProducts": {
+    "title": "関連製品",
+    "viewProduct": "製品を表示"
   },
   "resourceLinks": {
     "changelog": "変更履歴",
@@ -45,22 +61,6 @@
     "mcpDescription": "MCP 統合について学ぶ",
     "pricingDescription": "価格プランを表示"
   },
-  "productPricing": {},
-  "modelSpecifications": {},
-  "benchmarks": {
-    "title": "Performance Benchmarks",
-    "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBenchDesc": "Command-line interface proficiency",
-    "mmmuDesc": "Multimodal understanding",
-    "mmmuProDesc": "Advanced multimodal tasks",
-    "webDevArenaDesc": "Web development challenges",
-    "sciCodeDesc": "Scientific code generation",
-    "liveCodeBenchDesc": "Live coding performance"
-  },
-  "relatedProducts": {
-    "title": "関連製品",
-    "viewProduct": "製品を表示"
-  },
   "vendorMatrix": {
     "cell": {
       "summary": "{count} {category}"
@@ -68,7 +68,6 @@
     "controls": {
       "clear": "Clear",
       "sortByLabel": "Sort by:",
-      "sortName": "Name",
       "vendorTypeLabel": "Vendor Type:"
     },
     "table": {

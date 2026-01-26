@@ -7,8 +7,6 @@
     "toggleTheme": "Tema değiştir"
   },
   "header": {
-    "aiCodingLandscape": "AI Kodlama Manzarası",
-    "aiCodingLandscapeDesc": "AI kodlama ekosisteminin tamamını görselleştirin",
     "closeMenu": "Menüyü kapat",
     "developmentTools": "Geliştirme Araçları",
     "intelligence": "Zeka",
@@ -17,7 +15,6 @@
     "openSourceRank": "Açık Kaynak Sıralaması",
     "openSourceRankDesc": "GitHub yıldızlarına göre açık kaynaklı AI kodlama projelerini keşfedin",
     "ranking": "Sıralama",
-    "searchPlaceholder": "Ara...",
     "toggleMenu": "Menüyü değiştir"
   }
 }

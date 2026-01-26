@@ -326,7 +326,7 @@ export async function generateModelDetailMetadata(
   const specs: string[] = []
   if (model.size) specs.push(`${tShared('terms.modelSize')}: ${model.size}`)
   if (model.contextWindow)
-    specs.push(`${tPage('contextWindow')}: ${formatTokenCount(model.contextWindow)} tokens`)
+    specs.push(`${tShared('terms.contextWindow')}: ${formatTokenCount(model.contextWindow)} tokens`)
   if (model.maxOutput)
     specs.push(`${tShared('terms.maxOutput')}: ${formatTokenCount(model.maxOutput)} tokens`)
 

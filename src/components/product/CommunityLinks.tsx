@@ -21,7 +21,7 @@ export function CommunityLinks({
   layout = 'vertical',
   gridCols = 'grid-cols-2 md:grid-cols-4 lg:grid-cols-7',
 }: CommunityLinksProps) {
-  const tComponent = useTranslations('components.product.communityLinks')
+  const tComponent = useTranslations('components.product')
   const tShared = useTranslations('shared')
 
   if (!communityUrls) {
@@ -42,27 +42,27 @@ export function CommunityLinks({
     {
       key: 'github',
       title: tShared('platforms.github'),
-      description: tComponent('githubDescription'),
+      description: tComponent('communityLinks.githubDescription'),
     },
     {
       key: 'youtube',
       title: tShared('platforms.youtube'),
-      description: tComponent('youtubeDescription'),
+      description: tComponent('communityLinks.youtubeDescription'),
     },
     {
       key: 'discord',
       title: tShared('platforms.discord'),
-      description: tComponent('discordDescription'),
+      description: tComponent('communityLinks.discordDescription'),
     },
     {
       key: 'reddit',
       title: tShared('platforms.reddit'),
-      description: tComponent('redditDescription'),
+      description: tComponent('communityLinks.redditDescription'),
     },
     {
       key: 'blog',
-      title: tComponent('blog'),
-      description: tComponent('blogDescription'),
+      title: tComponent('communityLinks.blog'),
+      description: tComponent('communityLinks.blogDescription'),
     },
   ] as const
 

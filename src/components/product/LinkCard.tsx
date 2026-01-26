@@ -93,13 +93,13 @@ export function LinkCardGrid<K extends string>({
   gridCols = 'grid-cols-1 md:grid-cols-3',
 }: LinkCardGridProps<K>) {
   return (
-    <section className="my-[var(--spacing-lg)] border-b border-[var(--color-border)]">
+    <section className="py-[var(--spacing-xl)] border-b border-[var(--color-border)]">
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
-        <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-sm)]">
+        <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-md)]">
           {title}
         </h2>
 
-        <div className={`grid ${gridCols} gap-[var(--spacing-md)] mt-[var(--spacing-lg)]`}>
+        <div className={`grid ${gridCols} gap-[var(--spacing-md)] mt-[var(--spacing-xl)]`}>
           {links.map(link => (
             <LinkCard
               key={link.key}

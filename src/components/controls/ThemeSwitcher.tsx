@@ -10,15 +10,15 @@ import { useTheme } from '../ThemeProvider'
  */
 export default function ThemeSwitcher() {
   const { theme, toggleTheme } = useTheme()
-  const tComponent = useTranslations('components.common.footer')
+  const tComponent = useTranslations('components.common')
 
   return (
     <button
       type="button"
       onClick={toggleTheme}
       className="footer-control-button"
-      title={tComponent('toggleTheme')}
-      aria-label={tComponent('toggleTheme')}
+      title={tComponent('footer.toggleTheme')}
+      aria-label={tComponent('footer.toggleTheme')}
     >
       {theme === 'light' ? (
         <Moon className="footer-control-icon" />

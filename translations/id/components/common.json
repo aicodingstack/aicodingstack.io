@@ -7,8 +7,6 @@
     "toggleTheme": "Ganti tema"
   },
   "header": {
-    "aiCodingLandscape": "Pemandangan Coding AI",
-    "aiCodingLandscapeDesc": "Visualisasi ekosistem coding AI lengkap",
     "closeMenu": "Tutup menu",
     "developmentTools": "Alat Pengembangan",
     "intelligence": "Kecerdasan",
@@ -17,7 +15,6 @@
     "openSourceRank": "Peringkat Open Source",
     "openSourceRankDesc": "Jelajahi proyek coding AI open source berdasarkan bintang GitHub",
     "ranking": "Peringkat",
-    "searchPlaceholder": "Cari...",
     "toggleMenu": "Toggle menu"
   }
 }

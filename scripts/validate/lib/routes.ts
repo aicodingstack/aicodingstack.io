@@ -4,20 +4,20 @@
 
 import fs from 'node:fs'
 import path from 'node:path'
-import { ROOT_DIR } from './config.mjs'
+import { ROOT_DIR } from './config'
 
 /**
  * Read JSON file
  */
-export function readJsonFile(filePath) {
+export function readJsonFile(filePath: string): Record<string, unknown> {
   const content = fs.readFileSync(filePath, 'utf8')
-  return JSON.parse(content)
+  return JSON.parse(content) as Record<string, unknown>
 }
 
 /**
  * Get all static routes
  */
-export function getStaticRoutes() {
+export function getStaticRoutes(): string[] {
   return [
     '/',
     '/ides',
@@ -44,24 +44,25 @@ export function getStaticRoutes() {
 /**
  * Get all slugs from manifests directory
  */
-export function getSlugsFromManifests(category) {
+export function getSlugsFromManifests(category: string): string[] {
   const manifestsDir = path.join(ROOT_DIR, 'manifests', category)
   if (!fs.existsSync(manifestsDir)) {
     return []
   }
 
   const files = fs.readdirSync(manifestsDir).filter(f => f.endsWith('.json'))
-  const slugs = []
+  const slugs: string[] = []
 
   for (const file of files) {
     const filePath = path.join(manifestsDir, file)
     try {
       const data = readJsonFile(filePath)
       if (data && typeof data === 'object' && data.id) {
-        slugs.push(data.id)
+        slugs.push(data.id as string)
       }
     } catch (error) {
-      console.warn(`Warning: Failed to read ${filePath}: ${error.message}`)
+      const err = error as Error
+      console.warn(`Warning: Failed to read ${filePath}: ${err.message}`)
     }
   }
 
@@ -71,9 +72,8 @@ export function getSlugsFromManifests(category) {
 /**
  * Get article slugs from content directory
  */
-export function getArticleSlugs() {
+export function getArticleSlugs(): string[] {
   try {
-    // Read from content directory
     const articlesDir = path.join(ROOT_DIR, 'content/articles/en')
     if (!fs.existsSync(articlesDir)) {
       return []
@@ -82,7 +82,8 @@ export function getArticleSlugs() {
     const files = fs.readdirSync(articlesDir).filter(f => f.endsWith('.mdx'))
     return files.map(file => file.replace('.mdx', ''))
   } catch (error) {
-    console.warn(`Warning: Failed to get article slugs: ${error.message}`)
+    const err = error as Error
+    console.warn(`Warning: Failed to get article slugs: ${err.message}`)
     return []
   }
 }
@@ -90,7 +91,7 @@ export function getArticleSlugs() {
 /**
  * Get doc slugs from content directory
  */
-export function getDocSlugs() {
+export function getDocSlugs(): string[] {
   try {
     const docsDir = path.join(ROOT_DIR, 'content/docs/en')
     if (!fs.existsSync(docsDir)) {
@@ -100,15 +101,24 @@ export function getDocSlugs() {
     const files = fs.readdirSync(docsDir).filter(f => f.endsWith('.mdx'))
     return files.map(file => file.replace('.mdx', ''))
   } catch (error) {
-    console.warn(`Warning: Failed to get doc slugs: ${error.message}`)
+    const err = error as Error
+    console.warn(`Warning: Failed to get doc slugs: ${err.message}`)
     return []
   }
 }
 
 /**
+ * Dynamic route configuration
+ */
+export interface DynamicRoute {
+  path: string
+  category: string
+}
+
+/**
  * Get dynamic route configurations
  */
-export function getDynamicRoutes() {
+export function getDynamicRoutes(): DynamicRoute[] {
   return [
     { path: '/ides', category: 'ides' },
     { path: '/clis', category: 'clis' },

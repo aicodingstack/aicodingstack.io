@@ -304,7 +304,7 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
             items={ides as unknown as Record<string, unknown>[]}
             columns={columns}
             itemLinkPrefix={`/ides`}
-            nameColumnLabel={tPage('columns.name')}
+            nameColumnLabel={tShared('labels.name')}
           />
         </div>
       </section>

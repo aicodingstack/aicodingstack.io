@@ -5,27 +5,15 @@
     "title": "AI 編碼 CLI 工具比較"
   },
   "columns": {
-    "name": "Name",
-    "cache": "快取",
-    "capabilities": "功能",
     "contextLength": "內容長度",
     "freePlan": "免費方案",
-    "input": "輸入",
-    "inputModalities": "輸入模態",
     "links": "連結",
     "live-code-bench": "Live Code Bench",
     "maxPrice": "最高價格",
-    "mmmu": "MMMU",
-    "mmmu-pro": "MMMU Pro",
-    "output": "輸出",
     "pricingCache": "快取價格",
     "pricingInput": "輸入價格",
     "pricingOutput": "輸出價格",
-    "sci-code": "SciCode",
-    "startingPrice": "起價",
-    "swe-bench": "SWE-bench",
-    "terminal-bench": "Terminal Bench",
-    "web-dev-arena": "WebDev Arena"
+    "startingPrice": "起價"
   },
   "extensions": {
     "backTo": "返回擴充套件",
