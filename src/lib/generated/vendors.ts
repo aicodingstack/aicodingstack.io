@@ -12,14 +12,18 @@ import Augment from '../../../manifests/vendors/augment.json'
 import Aws from '../../../manifests/vendors/aws.json'
 import Bytedance from '../../../manifests/vendors/bytedance.json'
 import Cline from '../../../manifests/vendors/cline.json'
+import ClineBot from '../../../manifests/vendors/cline-bot.json'
 import Cognition from '../../../manifests/vendors/cognition.json'
 import Continue from '../../../manifests/vendors/continue.json'
+import ContinueDev from '../../../manifests/vendors/continue-dev.json'
 import Deepseek from '../../../manifests/vendors/deepseek.json'
 import FactoryAi from '../../../manifests/vendors/factory-ai.json'
 import Github from '../../../manifests/vendors/github.json'
 import Google from '../../../manifests/vendors/google.json'
 import Jetbrains from '../../../manifests/vendors/jetbrains.json'
 import Kilo from '../../../manifests/vendors/kilo.json'
+import Kwai from '../../../manifests/vendors/kwai.json'
+import Kwaikat from '../../../manifests/vendors/kwaikat.json'
 import Meta from '../../../manifests/vendors/meta.json'
 import Microsoft from '../../../manifests/vendors/microsoft.json'
 import Minimax from '../../../manifests/vendors/minimax.json'
@@ -51,14 +55,18 @@ export const vendorsData = [
   Aws,
   Bytedance,
   Cline,
+  ClineBot,
   Cognition,
   Continue,
+  ContinueDev,
   Deepseek,
   FactoryAi,
   Github,
   Google,
   Jetbrains,
   Kilo,
+  Kwai,
+  Kwaikat,
   Meta,
   Microsoft,
   Minimax,

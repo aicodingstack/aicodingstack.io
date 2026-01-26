@@ -932,10 +932,6 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
               'Open protocol standardizing communication between code editors and coding agents for autonomous code modification',
           },
           {
-            name: 'Open Responses',
-            url: 'https://www.openresponses.org',
-            description:
-              'Open specification for multi-provider, interoperable LLM interfaces based on OpenAI Responses API',
             translations: {
               en: {
                 name: 'Open Responses',
@@ -996,6 +992,10 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: '基於 OpenAI Responses API 的多提供商、可互操作 LLM 介面的開放規範',
               },
             },
+            name: 'Open Responses',
+            url: 'https://www.openresponses.org',
+            description:
+              'Open specification for multi-provider, interoperable LLM interfaces based on OpenAI Responses API',
           },
         ],
       },
@@ -2236,10 +2236,6 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
         },
         items: [
           {
-            name: 'Agent Skills',
-            url: 'https://agentskills.io',
-            description:
-              "Modular capabilities that extend Agent's functionality through filesystem-based resources containing instructions, metadata, and optional scripts, enabling domain-specific expertise and workflows",
             translations: {
               en: {
                 name: 'Agent Skills',
@@ -2302,12 +2298,12 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                   '模組化能力，通過基於文件系統的資源（包含指令、元數據和可選腳本）擴展 Agent 的功能，實現領域專業知識和工作流',
               },
             },
+            name: 'Agent Skills',
+            url: 'https://agentskills.io',
+            description:
+              "Modular capabilities that extend Agent's functionality through filesystem-based resources containing instructions, metadata, and optional scripts, enabling domain-specific expertise and workflows",
           },
           {
-            name: 'Model Context Protocol (MCP)',
-            url: 'https://modelcontextprotocol.io',
-            description:
-              'Open standard connecting AI applications to external systems like data sources, tools, and workflows',
             translations: {
               en: {
                 name: 'Model Context Protocol (MCP)',
@@ -2368,12 +2364,12 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: '將 AI 應用連接到外部系統（如數據源、工具和工作流）的開放標準',
               },
             },
+            name: 'Model Context Protocol (MCP)',
+            url: 'https://modelcontextprotocol.io',
+            description:
+              'Open standard connecting AI applications to external systems like data sources, tools, and workflows',
           },
           {
-            name: 'AGENTS.md',
-            url: 'https://agents.md',
-            description:
-              'Open-format markdown file providing coding agents with project-specific instructions and context',
             translations: {
               en: {
                 name: 'AGENTS.md',
@@ -2434,6 +2430,10 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: '為編碼 Agent 提供項目特定指令和上下文的開放格式 Markdown 文件',
               },
             },
+            name: 'AGENTS.md',
+            url: 'https://agents.md',
+            description:
+              'Open-format markdown file providing coding agents with project-specific instructions and context',
           },
         ],
       },
@@ -2479,10 +2479,6 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
         },
         items: [
           {
-            name: 'Slash Commands',
-            url: 'https://cursor.com/docs/agent/chat/commands',
-            description:
-              'Custom commands that create reusable workflows triggered with a `/` prefix in the chat input, stored as Markdown files in project, global, or team locations',
             translations: {
               en: {
                 name: 'Slash Commands',
@@ -2545,12 +2541,12 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                   '自訂命令，可通過聊天輸入框中的 `/` 前綴觸發可重用工作流，以 Markdown 文件形式存儲在項目、全局或團隊位置',
               },
             },
+            name: 'Slash Commands',
+            url: 'https://cursor.com/docs/agent/chat/commands',
+            description:
+              'Custom commands that create reusable workflows triggered with a `/` prefix in the chat input, stored as Markdown files in project, global, or team locations',
           },
           {
-            name: 'Rules',
-            url: 'https://cursor.com/docs/context/rules',
-            description:
-              'System-level instructions for Agent that provide persistent, reusable context through Project Rules, User Rules, Team Rules, and AGENTS.md files',
             translations: {
               en: {
                 name: 'Rules',
@@ -2613,6 +2609,10 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                   '為 Agent 提供系統級指令，通過項目規則、用戶規則、團隊規則和 AGENTS.md 文件提供持久、可重用的上下文',
               },
             },
+            name: 'Rules',
+            url: 'https://cursor.com/docs/context/rules',
+            description:
+              'System-level instructions for Agent that provide persistent, reusable context through Project Rules, User Rules, Team Rules, and AGENTS.md files',
           },
         ],
       },
@@ -2958,5 +2958,5 @@ export const stackCounts: Record<string, number> = {
   extensions: 15,
   models: 33,
   'model-providers': 13,
-  vendors: 36,
+  vendors: 40,
 }
