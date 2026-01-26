@@ -71,9 +71,9 @@ export function RelatedProducts({ products = [] }: RelatedProductsProps) {
   }
 
   return (
-    <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
+    <section className="py-[var(--spacing-xl)] border-b border-[var(--color-border)]">
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
-        <h2 className="text-xl font-semibold tracking-tight mb-[var(--spacing-md)]">
+        <h2 className="text-xl font-semibold tracking-tight mb-[var(--spacing-lg)]">
           {tComponent('relatedProducts.title')}
         </h2>
 

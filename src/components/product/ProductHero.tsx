@@ -105,7 +105,7 @@ export function ProductHero({
         </div>
 
         {/* Description */}
-        <p className="text-lg text-[var(--color-text-secondary)] font-light leading-relaxed mb-[var(--spacing-lg)]">
+        <p className="text-lg text-[var(--color-text-secondary)] font-light leading-relaxed mb-[var(--spacing-xl)]">
           {description}
         </p>
       </div>
@@ -113,7 +113,7 @@ export function ProductHero({
       {/* Metadata Bar - Content-based width */}
       {(vendor || latestVersion || license || (additionalInfo && additionalInfo.length > 0)) && (
         <div className="flex justify-center mb-[var(--spacing-lg)] px-[var(--spacing-md)]">
-          <div className="inline-flex items-center gap-[var(--spacing-sm)] flex-wrap px-[var(--spacing-md)] py-[var(--spacing-md)] border border-[var(--color-border)] text-sm">
+          <div className="inline-flex items-center gap-[var(--spacing-md)] flex-wrap px-[var(--spacing-md)] py-[var(--spacing-sm)] border border-[var(--color-border)] text-sm">
             {vendor && (
               <div className="flex gap-1">
                 <span className="text-[var(--color-text-muted)]">

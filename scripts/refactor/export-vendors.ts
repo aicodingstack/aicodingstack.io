@@ -19,10 +19,9 @@ const VENDORS_DIR = path.join(MANIFESTS_DIR, 'vendors')
 interface VendorData {
   name: string
   websiteUrl: string | null
-  docsUrl: string | null
   verified: boolean
   communityUrls: CommunityUrls | null
-  i18n: Record<string, { description?: string }> | null
+  translations: Record<string, { description?: string }> | null
 }
 
 interface CommunityUrls {
@@ -39,10 +38,9 @@ interface VendorObject {
   id: string
   name: string
   description: string
-  i18n: Record<string, { description?: string }>
-  websiteUrl: string | null
-  docsUrl: string | null
+  translations: Record<string, { description?: string }>
   verified: boolean
+  websiteUrl: string | null
   communityUrls: CommunityUrls
 }
 
@@ -164,10 +162,6 @@ function mergeVendorData(existing: VendorData, newData: VendorData): VendorData 
     merged.websiteUrl = newData.websiteUrl
   }
 
-  if (!merged.docsUrl && newData.docsUrl) {
-    merged.docsUrl = newData.docsUrl
-  }
-
   if (merged.verified === undefined && newData.verified !== undefined) {
     merged.verified = newData.verified
   }
@@ -175,18 +169,18 @@ function mergeVendorData(existing: VendorData, newData: VendorData): VendorData 
   // Merge communityUrls
   merged.communityUrls = mergeCommunityUrls(merged.communityUrls, newData.communityUrls)
 
-  // Merge i18n if both exist
-  if (newData.i18n) {
-    if (!merged.i18n) {
-      merged.i18n = {}
+  // Merge translations if both exist
+  if (newData.translations) {
+    if (!merged.translations) {
+      merged.translations = {}
     }
-    // Merge i18n descriptions for each locale
-    for (const locale of Object.keys(newData.i18n)) {
-      if (!merged.i18n[locale]) {
-        merged.i18n[locale] = {}
+    // Merge translations descriptions for each locale
+    for (const locale of Object.keys(newData.translations)) {
+      if (!merged.translations[locale]) {
+        merged.translations[locale] = {}
       }
-      if (!merged.i18n[locale].description && newData.i18n[locale]?.description) {
-        merged.i18n[locale].description = newData.i18n[locale].description
+      if (!merged.translations[locale].description && newData.translations[locale]?.description) {
+        merged.translations[locale].description = newData.translations[locale].description
       }
     }
   }
@@ -207,13 +201,13 @@ function extractVendorData(manifest: Record<string, unknown>): VendorData | null
   const vendorData: VendorData = {
     name: manifest.vendor as string,
     websiteUrl: (manifest.websiteUrl as string | null) || null,
-    docsUrl: (manifest.docsUrl as string | null) || null,
     verified:
       (manifest.verified as boolean | undefined) !== undefined
         ? (manifest.verified as boolean)
         : false,
     communityUrls: (manifest.communityUrls as CommunityUrls | null) || null,
-    i18n: (manifest.i18n as Record<string, { description?: string }> | null) || null,
+    translations:
+      (manifest.translations as Record<string, { description?: string }> | null) || null,
   }
 
   return vendorData
@@ -233,10 +227,9 @@ function createVendorObject(vendorId: string, vendorData: VendorData): VendorObj
     id: vendorId,
     name: vendorData.name,
     description: (vendorData as { description?: string }).description || defaultDescription,
-    i18n: vendorData.i18n || {},
-    websiteUrl: vendorData.websiteUrl || null,
-    docsUrl: vendorData.docsUrl || null,
+    translations: vendorData.translations || {},
     verified: vendorData.verified !== undefined ? vendorData.verified : false,
+    websiteUrl: vendorData.websiteUrl || null,
     communityUrls: mergeCommunityUrls(null, vendorData.communityUrls),
   }
 

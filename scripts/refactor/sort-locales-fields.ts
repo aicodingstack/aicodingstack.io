@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * Sort fields in all locales JSON files alphabetically
- * This script recursively processes all JSON files in the locales directory
+ * Sort fields in all translation JSON files alphabetically
+ * This script recursively processes all JSON files in the translations directory
  * and sorts their object keys alphabetically (including nested objects).
  */
 
@@ -13,7 +13,7 @@ import { fileURLToPath } from 'node:url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const ROOT_DIR = path.resolve(__dirname, '../..')
-const LOCALES_DIR = path.join(ROOT_DIR, 'locales')
+const LOCALES_DIR = path.join(ROOT_DIR, 'translations')
 
 interface JsonFile {
   fullPath: string
@@ -98,13 +98,13 @@ async function findJsonFiles(dirPath: string, basePath = dirPath): Promise<JsonF
  * Main function
  */
 async function main(): Promise<void> {
-  console.log('🔄 Sorting locales JSON files alphabetically...\n')
+  console.log('🔄 Sorting translations JSON files alphabetically...\n')
 
-  // Find all JSON files in locales directory
+  // Find all JSON files in translations directory
   const jsonFiles = await findJsonFiles(LOCALES_DIR)
 
   if (jsonFiles.length === 0) {
-    console.log('⚠️  No JSON files found in locales directory')
+    console.log('⚠️  No JSON files found in translations directory')
     return
   }
 
