@@ -7,8 +7,6 @@
     "toggleTheme": "切换主题"
   },
   "header": {
-    "aiCodingLandscape": "AI 编码全景图",
-    "aiCodingLandscapeDesc": "可视化 AI 编码生态系统全貌",
     "closeMenu": "关闭菜单",
     "developmentTools": "开发工具",
     "intelligence": "智能层",
@@ -17,7 +15,6 @@
     "openSourceRank": "开源排行榜",
     "openSourceRankDesc": "按 GitHub 星标数探索开源 AI 编码项目",
     "ranking": "排行榜",
-    "searchPlaceholder": "搜索...",
     "toggleMenu": "切换菜单"
   }
 }

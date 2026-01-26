@@ -1,0 +1,51 @@
+{
+  "id": "kwaikat",
+  "name": "KwaiKAT",
+  "description": "KwaiKAT is a vendor.",
+  "translations": {
+    "zh-Hans": {
+      "description": "KwaiKAT 最先进的代理编码模型，属于 KAT-Coder 系列。专为自主编程设计，具备工具调用、多轮交互和指令遵循能力。"
+    },
+    "de": {
+      "description": "KwaiKATs modernstes agentic Coding-Modell aus der KAT-Coder-Serie. Speziell fur autonomes Programmierung entwickelt mit Tool-Calling, Multi-Turn-Interaktion und Instruction-Following-Fahigkeiten."
+    },
+    "ko": {
+      "description": "KwaiKAT의 KAT-Coder 시리즈에서 가장 진보된 에이전트 코딩 모델입니다. 도구 호출, 다중 턴 상호작용 및 명령 따르기 기능을 갖춘 자율 프로그래밍을 위해 설계되었습니다."
+    },
+    "es": {
+      "description": "Modelo de codificacion agentico mas avanzado de KwaiKAT en la serie KAT-Coder. Diseñado para programacion autonoma con llamadas a herramientas, interaccion multi-turno y seguimiento de instrucciones."
+    },
+    "fr": {
+      "description": "Le modele de codage agentique le plus avance de KwaiKAT dans la serie KAT-Coder. Conçu pour la programmation autonome avec appel d'outils, interaction multi-tours et suivi d'instructions."
+    },
+    "id": {
+      "description": "Model coding agentik paling canggih dari KwaiKAT dalam seri KAT-Coder. Dirancang khusus untuk pemrograman otonom dengan kemampuan pemanggilan alat, interaksi multi-turn, dan pengikutan instruksi."
+    },
+    "ja": {
+      "description": "KwaiKATのKAT-Coderシリーズで最も高度なエージェント型コーディングモデル。ツール呼び出し、マルチターン対話、命令追従機能を備えた自律プログラミング向けに設計されています。"
+    },
+    "pt": {
+      "description": "Modelo de codificacao agentico mais avancado da KwaiKAT na serie KAT-Coder. Projetado para programacao autonoma com chamada de ferramentas, interacao multi-turno e seguimento de instrucoes."
+    },
+    "ru": {
+      "description": "Самая продвинутая агентная модель кодирования KwaiKAT в серии KAT-Coder. Разработана для автономного программирования с вызовом инструментов, многоходового взаимодействия и выполнения инструкций."
+    },
+    "tr": {
+      "description": "KwaiKAT'in KAT-Coder serisindeki en gelismis agentik kodlama modeli. Ara cagirma, cok turlu etkilesim ve talimat takip etme yetenekleri ile otonom programlama icin tasarlanmistir."
+    },
+    "zh-Hant": {
+      "description": "KwaiKAT 最先進的代理編碼模型，屬於 KAT-Coder 系列。專為自主編程設計，具備工具調用、多輪交互和指令遵循能力。"
+    }
+  },
+  "verified": false,
+  "websiteUrl": "https://openrouter.ai/kwaipilot",
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  }
+}

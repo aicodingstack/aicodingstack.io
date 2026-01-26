@@ -13,7 +13,7 @@ const PRODUCT_TYPE_LABELS = {
 } as const
 
 export function VendorProducts({ products }: { products: ProductWithType[] }) {
-  const tComponent = useTranslations('components.product.vendorProducts')
+  const tShared = useTranslations('shared')
 
   if (products.length === 0) {
     return null
@@ -22,7 +22,7 @@ export function VendorProducts({ products }: { products: ProductWithType[] }) {
   return (
     <section className="max-w-8xl mx-auto px-[var(--spacing-md)] my-[var(--spacing-lg)]">
       <h2 className="text-xl font-semibold tracking-tight mb-[var(--spacing-md)]">
-        {tComponent('title')}
+        {tShared('terms.products')}
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[var(--spacing-md)]">

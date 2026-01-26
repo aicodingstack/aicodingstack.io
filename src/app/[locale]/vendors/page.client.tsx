@@ -19,6 +19,7 @@ type Props = {
 
 export default function VendorsPageClient({ locale }: Props) {
   const tPage = useTranslations('pages.vendors')
+  const tShared = useTranslations('shared')
   const [searchQuery, setSearchQuery] = useState('')
 
   // Localize vendors
@@ -74,7 +75,7 @@ export default function VendorsPageClient({ locale }: Props) {
               type="text"
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
-              placeholder={tPage('search') || 'Search by name...'}
+              placeholder={tShared('labels.searchByName')}
               className="w-full max-w-2xs px-[var(--spacing-sm)] py-1 text-sm border border-[var(--color-border)] bg-[var(--color-background)] text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-border-strong)] transition-colors"
             />
           </div>

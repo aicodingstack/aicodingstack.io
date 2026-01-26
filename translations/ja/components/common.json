@@ -7,8 +7,6 @@
     "toggleTheme": "テーマを切り替え"
   },
   "header": {
-    "aiCodingLandscape": "AI コーディングランドスケープ",
-    "aiCodingLandscapeDesc": "AI コーディングエコシステム全体を可視化",
     "closeMenu": "メニューを閉じる",
     "developmentTools": "開発ツール",
     "intelligence": "インテリジェンス",
@@ -17,7 +15,6 @@
     "openSourceRank": "オープンソースランキング",
     "openSourceRankDesc": "GitHub スターでオープンソース AI コーディングプロジェクトを探索",
     "ranking": "ランキング",
-    "searchPlaceholder": "検索...",
     "toggleMenu": "メニューを切り替え"
   }
 }

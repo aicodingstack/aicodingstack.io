@@ -124,8 +124,8 @@ export default async function ComparePage({
   const { locale, models } = await params
   const modelIds = parseModelsParam(models)
 
-  const tPage = await getTranslations({ locale, namespace: 'pages.modelCompare' })
   const tComparison = await getTranslations({ locale, namespace: 'pages.comparison' })
+  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   const comparisonModels: ManifestModel[] = []
   let pageTitle = tComparison('models.title')
@@ -169,7 +169,7 @@ export default async function ComparePage({
           locale={locale as Locale}
         />
 
-        <BackToNavigation href="/models" title={tPage('allModels')} />
+        <BackToNavigation href="/models" title={tShared('categories.all.models')} />
       </main>
     </PageLayout>
   )
