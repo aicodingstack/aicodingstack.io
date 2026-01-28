@@ -2,10 +2,6 @@ import bundleAnalyzer from '@next/bundle-analyzer'
 import createMDX from '@next/mdx'
 import type { NextConfig } from 'next'
 import createNextIntlPlugin from 'next-intl/plugin'
-import rehypeHighlight from 'rehype-highlight'
-import remarkFrontmatter from 'remark-frontmatter'
-import remarkGfm from 'remark-gfm'
-import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
 
@@ -91,10 +87,17 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: false,
   },
 
-  // ESLint configuration
-  eslint: {
-    // Set to true only if you want to skip linting during build
-    ignoreDuringBuilds: false,
+  // Rewrites to fix locale-prefixed static assets in dev mode
+  async rewrites() {
+    return {
+      beforeFiles: [
+        // Rewrite locale-prefixed _next paths to correct paths
+        {
+          source: '/:locale/_next/:path*',
+          destination: '/_next/:path*',
+        },
+      ],
+    }
   },
 
   // Redirects configuration
@@ -164,8 +167,14 @@ const nextConfig: NextConfig = {
 const withMDX = createMDX({
   extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter, remarkGfm],
-    rehypePlugins: [rehypeHighlight],
+    // String-based config for Turbopack compatibility (Next.js 16+)
+    remarkPlugins: [
+      'remark-frontmatter', // Parse and hide YAML frontmatter
+      'remark-gfm', // GitHub Flavored Markdown (tables, task lists, etc.)
+    ],
+    rehypePlugins: [
+      'rehype-highlight', // Code syntax highlighting
+    ],
   },
 })
 

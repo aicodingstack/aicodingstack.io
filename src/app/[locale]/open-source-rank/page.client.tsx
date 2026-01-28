@@ -31,11 +31,11 @@ function getLicenseDisplayName(license: string): string {
 function getProductTypeName(type: ProductType, t: (key: string) => string): string {
   switch (type) {
     case 'ide':
-      return t('productType.ide')
+      return t('categories.singular.ide')
     case 'cli':
-      return t('productType.cli')
+      return t('categories.singular.cli')
     case 'extension':
-      return t('productType.extension')
+      return t('categories.singular.extension')
     default:
       return type
   }
@@ -326,7 +326,7 @@ export function OpenSourceRankPage() {
                       </td>
                       <td className="px-[var(--spacing-sm)] py-[var(--spacing-sm)] text-sm">
                         <span className="inline-block px-2 py-0.5 text-xs border border-[var(--color-border)]">
-                          {getProductTypeName(project.type, tPage)}
+                          {getProductTypeName(project.type, tShared)}
                         </span>
                       </td>
                       <td className="px-[var(--spacing-sm)] py-[var(--spacing-sm)] text-sm text-[var(--color-text-secondary)]">
