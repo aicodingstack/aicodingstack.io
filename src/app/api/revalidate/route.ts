@@ -131,7 +131,7 @@ export async function POST(request: NextRequest) {
       })
     } else if (tag) {
       // Revalidate by tag
-      revalidateTag(tag)
+      revalidateTag(tag, 'layout')
       return NextResponse.json({
         revalidated: true,
         type: 'tag',

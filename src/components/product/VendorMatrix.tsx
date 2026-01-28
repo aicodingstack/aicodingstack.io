@@ -42,7 +42,7 @@ function getCategoryLabel(
  * Gets the localized vendor type label. Falls back to the raw type when missing.
  */
 function getVendorTypeLabel(t: ReturnType<typeof useTranslations>, type: string): string {
-  const key = `vendorTypes.types.${type}.label`
+  const key = `vendorMatrix.vendorTypes.types.${type}.label`
   try {
     return t(key)
   } catch {
