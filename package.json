@@ -45,9 +45,9 @@
   "dependencies": {
     "@mdx-js/react": "^3.1.1",
     "@next/third-parties": "^16.1.2",
-    "@opennextjs/cloudflare": "^1.15.1",
+    "@opennextjs/cloudflare": "^1.16.5",
     "cmdk": "^1.1.1",
-    "lucide-react": "^0.563.0",
+    "lucide-react": "^0.564.0",
     "next": "^16.1.4",
     "next-intl": "^4.7.0",
     "react": "^19.2.1",
