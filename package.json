@@ -68,14 +68,14 @@
     "@next/mdx": "^16.1.2",
     "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^22.19.2",
-    "@types/react": "^19.2.9",
+    "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@typescript-eslint/parser": "^8.53.0",
+    "@typescript-eslint/parser": "^8.55.0",
     "@typescript-eslint/types": "^8.53.0",
-    "agent-browser": "^0.8.4",
-    "ajv": "^8.17.1",
+    "agent-browser": "^0.10.0",
+    "ajv": "^8.18.0",
     "ajv-formats": "^3.0.1",
-    "cspell": "^9.6.1",
+    "cspell": "^9.6.4",
     "gray-matter": "^4.0.3",
     "husky": "9.1.7",
     "lint-staged": "16.2.7",
@@ -87,7 +87,7 @@
     "typescript": "^5.9.3",
     "user-agents": "^1.1.669",
     "vitest": "^4.0.18",
-    "wrangler": "^4.60.0"
+    "wrangler": "^4.65.0"
   },
   "repository": {
     "type": "git",
