@@ -109,7 +109,7 @@ jobs:
           BUILD_TIME: ${{ github.event.head_commit.timestamp }}
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: build-output
           path: |
