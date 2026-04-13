@@ -48,10 +48,10 @@
     "@opennextjs/cloudflare": "^1.15.1",
     "cmdk": "^1.1.1",
     "lucide-react": "^0.563.0",
-    "next": "^16.1.4",
-    "next-intl": "^4.7.0",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
+    "next": "^16.2.3",
+    "next-intl": "^4.9.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
     "recharts": "^3.7.0"
   },
   "devDependencies": {
@@ -68,7 +68,7 @@
     "@next/mdx": "^16.1.2",
     "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^22.19.2",
-    "@types/react": "^19.2.9",
+    "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@typescript-eslint/parser": "^8.53.0",
     "@typescript-eslint/types": "^8.53.0",
