@@ -38,7 +38,7 @@ jobs:
 
       - name: Create issue if URLs are broken
         if: failure()
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const title = '🔗 Broken URLs detected in manifests';

@@ -58,7 +58,7 @@ jobs:
         continue-on-error: true
 
       - name: Comment Cleanup Status
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         env:
           SHOULD_CLEANUP: ${{ steps.cleanup_guard.outputs.should_cleanup }}
           SKIP_REASON: ${{ steps.cleanup_guard.outputs.reason }}

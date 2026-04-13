@@ -66,7 +66,7 @@ jobs:
 
       - name: Comment on major updates
         if: steps.metadata.outputs.update-type == 'version-update:semver-major'
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             github.rest.issues.createComment({
@@ -87,7 +87,7 @@ jobs:
             })
 
       - name: Label based on update type
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const updateType = '${{ steps.metadata.outputs.update-type }}';
