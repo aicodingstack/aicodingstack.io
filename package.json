@@ -86,7 +86,7 @@
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "user-agents": "^1.1.669",
-    "vitest": "^4.0.18",
+    "vitest": "^4.1.0",
     "wrangler": "^4.60.0"
   },
   "repository": {
