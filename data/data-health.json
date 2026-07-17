@@ -10,9 +10,9 @@
   },
   "summary": {
     "totalRecords": 134,
-    "recordsWithSources": 0,
-    "verifiedRecords": 36,
-    "provenanceComplete": 0,
+    "recordsWithSources": 6,
+    "verifiedRecords": 39,
+    "provenanceComplete": 6,
     "staleVerifiedRecords": 0,
     "translationPlaceholderValues": 1411,
     "danglingRelationships": 5,
@@ -20,8 +20,8 @@
     "productsWithPricing": 48,
     "productRecords": 48,
     "errors": 0,
-    "warnings": 41,
-    "info": 134
+    "warnings": 38,
+    "info": 128
   },
   "byCategory": {
     "ides": {
@@ -45,13 +45,13 @@
     "models": {
       "total": 33,
       "verified": 28,
-      "provenanceComplete": 0,
+      "provenanceComplete": 3,
       "stale": 0
     },
     "providers": {
       "total": 13,
-      "verified": 1,
-      "provenanceComplete": 0,
+      "verified": 4,
+      "provenanceComplete": 3,
       "stale": 0
     },
     "vendors": {
@@ -193,13 +193,6 @@
       "severity": "warning",
       "code": "verified-without-provenance",
       "category": "models",
-      "id": "claude-haiku-4-5",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
       "id": "claude-opus-4",
       "message": "Verified record is missing sources, review date, reviewer, or confidence."
     },
@@ -243,13 +236,6 @@
       "code": "verified-without-provenance",
       "category": "models",
       "id": "gemini-2-5-pro",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "gemini-3-flash",
       "message": "Verified record is missing sources, review date, reviewer, or confidence."
     },
     {
@@ -313,13 +299,6 @@
       "code": "verified-without-provenance",
       "category": "models",
       "id": "gpt-5-1-codex",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "gpt-5-2",
       "message": "Verified record is missing sources, review date, reviewer, or confidence."
     },
     {
@@ -746,13 +725,6 @@
       "severity": "info",
       "code": "missing-sources",
       "category": "models",
-      "id": "claude-haiku-4-5",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
       "id": "claude-opus-4",
       "message": "No structured source references are recorded."
     },
@@ -830,13 +802,6 @@
       "severity": "info",
       "code": "missing-sources",
       "category": "models",
-      "id": "gemini-3-flash",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
       "id": "gemini-3-pro",
       "message": "No structured source references are recorded."
     },
@@ -894,13 +859,6 @@
       "code": "missing-sources",
       "category": "models",
       "id": "gpt-5-1-codex",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "gpt-5-2",
       "message": "No structured source references are recorded."
     },
     {
@@ -984,21 +942,7 @@
       "severity": "info",
       "code": "missing-sources",
       "category": "providers",
-      "id": "anthropic",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "providers",
       "id": "deepseek",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "providers",
-      "id": "google",
       "message": "No structured source references are recorded."
     },
     {
@@ -1027,13 +971,6 @@
       "code": "missing-sources",
       "category": "providers",
       "id": "moonshot",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "providers",
-      "id": "openai",
       "message": "No structured source references are recorded."
     },
     {

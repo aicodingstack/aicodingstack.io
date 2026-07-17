@@ -38,9 +38,29 @@
       "description": "領先的 AI 研究和部署公司，提供先進的語言模型和 AI 服務，包括用於各類應用的 GPT 系列。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://openai.com/about/",
+      "title": "OpenAI — About",
+      "fields": ["name", "description", "websiteUrl", "vendor"]
+    },
+    {
+      "url": "https://developers.openai.com/api/docs",
+      "title": "OpenAI API documentation",
+      "fields": ["docsUrl", "type"]
+    },
+    {
+      "url": "https://platform.openai.com/api-keys",
+      "title": "OpenAI API keys",
+      "fields": ["applyKeyUrl"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-18",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://openai.com",
-  "docsUrl": "https://platform.openai.com/docs",
+  "docsUrl": "https://developers.openai.com/api/docs",
   "vendor": "openai",
   "type": "foundation-model-provider",
   "applyKeyUrl": "https://platform.openai.com/api-keys",
