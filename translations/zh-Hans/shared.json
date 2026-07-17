@@ -28,9 +28,13 @@
     "webDevArena": "WebDev Arena"
   },
   "capabilities": {
-    "capabilities": "Capabilities",
-    "inputModalities": "Input Modalities",
-    "outputModalities": "Output Modalities"
+    "capabilities": "能力",
+    "functionCalling": "函数调用",
+    "inputModalities": "输入模态",
+    "outputModalities": "输出模态",
+    "reasoning": "推理",
+    "structuredOutputs": "结构化输出",
+    "toolChoice": "工具选择"
   },
   "categories": {
     "all": {
@@ -96,6 +100,7 @@
     "aiCoding": "AI 编码",
     "aiCodingStack": "AI Coding Stack",
     "articles": "文章",
+    "benchmarks": "基准测试",
     "collections": "收藏集",
     "community": "社区",
     "communityLinks": "社区链接",

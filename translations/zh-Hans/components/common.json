@@ -1,6 +1,6 @@
 {
   "footer": {
-    "copyright": "© 2025 AI Coding Stack • 用 ❤︎ 构建 • 开源",
+    "copyright": "© {year} AI Coding Stack • 用 ❤︎ 构建 • 开源",
     "openSource": "开源 AI 编码元数据仓库。",
     "selectLanguage": "选择语言",
     "tagline": "你的 AI 编码生态中心。",

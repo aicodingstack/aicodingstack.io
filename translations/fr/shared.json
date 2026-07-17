@@ -28,9 +28,13 @@
     "webDevArena": "WebDev Arena"
   },
   "capabilities": {
-    "capabilities": "Capabilities",
-    "inputModalities": "Input Modalities",
-    "outputModalities": "Output Modalities"
+    "capabilities": "Capacités",
+    "functionCalling": "Appel de fonction",
+    "inputModalities": "Modalités d'entrée",
+    "outputModalities": "Modalités de sortie",
+    "reasoning": "Raisonnement",
+    "structuredOutputs": "Sorties structurées",
+    "toolChoice": "Choix d'outil"
   },
   "categories": {
     "all": {
@@ -96,6 +100,7 @@
     "aiCoding": "Codage IA",
     "aiCodingStack": "AI Coding Stack",
     "articles": "Articles",
+    "benchmarks": "Bancs d'essai",
     "collections": "Collections",
     "community": "Communauté",
     "communityLinks": "Liens de la communauté",

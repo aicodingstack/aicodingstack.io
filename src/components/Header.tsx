@@ -48,7 +48,7 @@ function Header() {
       },
       { href: '/ai-coding-landscape', translationKey: 'header.landscape', namespace: 'header' },
       {
-        href: '#',
+        href: '/open-source-rank',
         translationKey: 'header.ranking',
         namespace: 'header',
         hasMegaMenu: true,
@@ -113,6 +113,10 @@ function Header() {
             className="relative"
             onMouseEnter={() => handleMegaMenuOpen(item.megaMenuType!)}
             onMouseLeave={handleMegaMenuClose}
+            onFocus={() => handleMegaMenuOpen(item.megaMenuType!)}
+            onBlur={event => {
+              if (!event.currentTarget.contains(event.relatedTarget)) handleMegaMenuClose()
+            }}
           >
             <Link
               href={item.href}

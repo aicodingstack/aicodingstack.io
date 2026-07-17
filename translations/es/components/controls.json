@@ -13,6 +13,7 @@
     "sortNameDesc": "Nombre (Z-A)"
   },
   "searchDialog": {
+    "close": "Cerrar selector de comparación",
     "empty": "Start typing to search...",
     "navigate": "to navigate",
     "noResultsFor": "No results for \"{query}\"",

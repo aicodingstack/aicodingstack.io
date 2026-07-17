@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
+import { ModelCompareSelector } from '@/components/controls/ModelCompareSelector'
 import { BackToNavigation } from '@/components/navigation/BackToNavigation'
 import { Breadcrumb } from '@/components/navigation/Breadcrumb'
 import { ModelBenchmarks } from '@/components/product/ModelBenchmarks'
@@ -119,6 +120,10 @@ export default async function ModelPage({
           websiteUrl={model.websiteUrl || undefined}
           docsUrl={model.docsUrl || undefined}
         />
+
+        <div className="flex justify-end py-[var(--spacing-sm)] border-b border-[var(--color-border)]">
+          <ModelCompareSelector currentModelId={model.id} />
+        </div>
 
         <PlatformLinks platformUrls={model.platformUrls} />
 

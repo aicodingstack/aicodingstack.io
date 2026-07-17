@@ -9,5 +9,7 @@
   "lifecycle": "Siklus Hidup",
   "outputPrice": "Harga Output",
   "releaseDate": "Tanggal Rilis",
+  "selectModel": "Pilih model",
+  "selectTwoModels": "Pilih dua model untuk dibandingkan",
   "verified": "Terverifikasi"
 }

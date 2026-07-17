@@ -9,5 +9,7 @@
   "lifecycle": "Cycle de vie",
   "outputPrice": "Prix de sortie",
   "releaseDate": "Date de sortie",
+  "selectModel": "Sélectionner un modèle",
+  "selectTwoModels": "Sélectionnez deux modèles à comparer",
   "verified": "Vérifié"
 }

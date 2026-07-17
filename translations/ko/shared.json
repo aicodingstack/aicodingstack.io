@@ -28,9 +28,13 @@
     "webDevArena": "WebDev Arena"
   },
   "capabilities": {
-    "capabilities": "Capabilities",
-    "inputModalities": "Input Modalities",
-    "outputModalities": "Output Modalities"
+    "capabilities": "기능",
+    "functionCalling": "함수 호출",
+    "inputModalities": "입력 모달리티",
+    "outputModalities": "출력 모달리티",
+    "reasoning": "추론",
+    "structuredOutputs": "구조화된 출력",
+    "toolChoice": "도구 선택"
   },
   "categories": {
     "all": {
@@ -96,6 +100,7 @@
     "aiCoding": "AI 코딩",
     "aiCodingStack": "AI Coding Stack",
     "articles": "기사",
+    "benchmarks": "벤치마크",
     "collections": "컬렉션",
     "community": "커뮤니티",
     "communityLinks": "커뮤니티 링크",

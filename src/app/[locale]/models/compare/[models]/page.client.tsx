@@ -1,9 +1,11 @@
 'use client'
 
 import { ExternalLink } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { Fragment, useEffect, useState } from 'react'
 import type { Locale } from '@/i18n/config'
 import { Link, useRouter } from '@/i18n/navigation'
+import { providersData } from '@/lib/generated'
 import type {
   ManifestBenchmarks,
   ManifestModel,
@@ -66,8 +68,14 @@ const formatNumberToK = (value: number | null | undefined): string => {
   return value ? `${(value / 1000).toFixed(0)}K` : '-'
 }
 
-const formatPrice = (value: number | null | undefined): string => {
-  return value ? `$${(value / 1000000).toFixed(2)} / 1M tokens` : '-'
+const formatPrice = (value: number | null | undefined, locale: string): string => {
+  if (value === null || value === undefined) return '-'
+  const price = new Intl.NumberFormat(locale, {
+    style: 'currency',
+    currency: 'USD',
+    maximumFractionDigits: 3,
+  }).format(value)
+  return `${price} / 1M tokens`
 }
 
 const formatPercentage = (value: number | null | undefined): string => {
@@ -87,8 +95,11 @@ const createNumberToKRenderer = (getValue: (model: ManifestModel) => number | nu
   return (model: ManifestModel) => formatNumberToK(getValue(model))
 }
 
-const createPriceRenderer = (getValue: (model: ManifestModel) => number | null | undefined) => {
-  return (model: ManifestModel) => formatPrice(getValue(model))
+const createPriceRenderer = (
+  getValue: (model: ManifestModel) => number | null | undefined,
+  locale: string
+) => {
+  return (model: ManifestModel) => formatPrice(getValue(model), locale)
 }
 
 const createBenchmarkRenderer = (getValue: (model: ManifestModel) => number | null | undefined) => {
@@ -164,22 +175,35 @@ export default function ComparePageClient({
   allModels,
   modelsMap,
   groups,
-  locale: _locale,
+  locale,
 }: ComparePageClientProps) {
   const router = useRouter()
+  const tPage = useTranslations('pages.modelCompare')
+  const tShared = useTranslations('shared')
   const [selectedModel1, setSelectedModel1] = useState<string>(initialModels[0]?.id ?? '')
   const [selectedModel2, setSelectedModel2] = useState<string>(initialModels[1]?.id ?? '')
   const [prevModel1, setPrevModel1] = useState<string>(initialModels[0]?.id ?? '')
   const [prevModel2, setPrevModel2] = useState<string>(initialModels[1]?.id ?? '')
+
+  const findProviderId = (vendor: string): string | null => {
+    const normalizedVendor = vendor.toLocaleLowerCase()
+    return (
+      providersData.find(
+        provider =>
+          provider.name.toLocaleLowerCase() === normalizedVendor ||
+          provider.vendor.toLocaleLowerCase() === normalizedVendor
+      )?.id ?? null
+    )
+  }
 
   const getRows = (): Row[] => {
     // Basic info rows
     const basicInfoRows: Row[] = [
       {
         group: 'basicInfo',
-        groupLabel: 'basicInfo',
+        groupLabel: tPage('basicInfo'),
         key: 'name',
-        label: 'model',
+        label: tShared('categories.singular.model'),
         render: model => (
           <div className="flex items-center justify-center gap-2">
             <span className="font-semibold">{model.name}</span>
@@ -188,37 +212,42 @@ export default function ComparePageClient({
       },
       {
         group: 'basicInfo',
-        groupLabel: 'basicInfo',
+        groupLabel: tPage('basicInfo'),
         key: 'vendor',
-        label: 'vendor',
-        render: model => (
-          <Link
-            href={`/model-providers/${model.vendor.toLowerCase()}`}
-            className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] underline"
-          >
-            {model.vendor}
-          </Link>
-        ),
+        label: tShared('categories.singular.vendor'),
+        render: model => {
+          const providerId = findProviderId(model.vendor)
+          return providerId ? (
+            <Link
+              href={`/model-providers/${providerId}`}
+              className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] underline"
+            >
+              {model.vendor}
+            </Link>
+          ) : (
+            model.vendor
+          )
+        },
       },
       {
         group: 'basicInfo',
-        groupLabel: 'basicInfo',
+        groupLabel: tPage('basicInfo'),
         key: 'lifecycle',
-        label: 'lifecycle',
-        render: createSimpleRenderer(m => m.lifecycle),
+        label: tPage('lifecycle'),
+        render: model => tShared(`lifecycle.${model.lifecycle}`),
       },
       {
         group: 'basicInfo',
-        groupLabel: 'basicInfo',
+        groupLabel: tPage('basicInfo'),
         key: 'releaseDate',
-        label: 'releaseDate',
+        label: tPage('releaseDate'),
         render: createSimpleRenderer(m => m.releaseDate),
       },
       {
         group: 'basicInfo',
-        groupLabel: 'basicInfo',
+        groupLabel: tPage('basicInfo'),
         key: 'knowledgeCutoff',
-        label: 'knowledgeCutoff',
+        label: tPage('knowledgeCutoff'),
         render: createSimpleRenderer(m => m.knowledgeCutoff),
       },
     ]
@@ -227,65 +256,65 @@ export default function ComparePageClient({
     const capabilitiesRows: Row[] = [
       {
         group: 'capabilities',
-        groupLabel: 'capabilities',
+        groupLabel: tShared('capabilities.capabilities'),
         key: 'size',
-        label: 'modelSize',
+        label: tShared('terms.modelSize'),
         render: createSimpleRenderer(m => m.size),
       },
       {
         group: 'capabilities',
-        groupLabel: 'capabilities',
+        groupLabel: tShared('capabilities.capabilities'),
         key: 'contextWindow',
-        label: 'contextWindow',
+        label: tShared('terms.contextWindow'),
         render: createNumberToKRenderer(m => m.contextWindow),
       },
       {
         group: 'capabilities',
-        groupLabel: 'capabilities',
+        groupLabel: tShared('capabilities.capabilities'),
         key: 'maxOutput',
-        label: 'maxOutput',
+        label: tShared('terms.maxOutput'),
         render: createNumberToKRenderer(m => m.maxOutput),
       },
       {
         group: 'capabilities',
-        groupLabel: 'capabilities',
+        groupLabel: tShared('capabilities.capabilities'),
         key: 'inputModalities',
-        label: 'inputModalities',
+        label: tShared('capabilities.inputModalities'),
         render: createTagsRenderer(m => m.inputModalities),
       },
       {
         group: 'capabilities',
-        groupLabel: 'capabilities',
+        groupLabel: tShared('capabilities.capabilities'),
         key: 'outputModalities',
-        label: 'outputModalities',
+        label: tShared('capabilities.outputModalities'),
         render: createTagsRenderer(m => m.outputModalities),
       },
       {
         group: 'capabilities',
-        groupLabel: 'capabilities',
+        groupLabel: tShared('capabilities.capabilities'),
         key: 'function-calling',
-        label: 'function-calling',
+        label: tShared('capabilities.functionCalling'),
         render: createCapabilityCheckRenderer('function-calling'),
       },
       {
         group: 'capabilities',
-        groupLabel: 'capabilities',
+        groupLabel: tShared('capabilities.capabilities'),
         key: 'tool-choice',
-        label: 'tool-choice',
+        label: tShared('capabilities.toolChoice'),
         render: createCapabilityCheckRenderer('tool-choice'),
       },
       {
         group: 'capabilities',
-        groupLabel: 'capabilities',
+        groupLabel: tShared('capabilities.capabilities'),
         key: 'structured-outputs',
-        label: 'structured-outputs',
+        label: tShared('capabilities.structuredOutputs'),
         render: createCapabilityCheckRenderer('structured-outputs'),
       },
       {
         group: 'capabilities',
-        groupLabel: 'capabilities',
+        groupLabel: tShared('capabilities.capabilities'),
         key: 'reasoning',
-        label: 'reasoning',
+        label: tShared('capabilities.reasoning'),
         render: createCapabilityCheckRenderer('reasoning'),
       },
     ]
@@ -294,24 +323,24 @@ export default function ComparePageClient({
     const pricingRows: Row[] = [
       {
         group: 'pricing',
-        groupLabel: 'pricing',
+        groupLabel: tShared('terms.pricing'),
         key: 'inputPrice',
-        label: 'inputPrice',
-        render: createPriceRenderer(m => m.tokenPricing?.input),
+        label: tPage('inputPrice'),
+        render: createPriceRenderer(m => m.tokenPricing?.input, locale),
       },
       {
         group: 'pricing',
-        groupLabel: 'pricing',
+        groupLabel: tShared('terms.pricing'),
         key: 'outputPrice',
-        label: 'outputPrice',
-        render: createPriceRenderer(m => m.tokenPricing?.output),
+        label: tPage('outputPrice'),
+        render: createPriceRenderer(m => m.tokenPricing?.output, locale),
       },
       {
         group: 'pricing',
-        groupLabel: 'pricing',
+        groupLabel: tShared('terms.pricing'),
         key: 'cachePrice',
-        label: 'cachePrice',
-        render: createPriceRenderer(m => m.tokenPricing?.cache),
+        label: tPage('cachePrice'),
+        render: createPriceRenderer(m => m.tokenPricing?.cache, locale),
       },
     ]
 
@@ -327,9 +356,9 @@ export default function ComparePageClient({
     ]
     const benchmarkRows: Row[] = benchmarkKeys.map(key => ({
       group: 'benchmark',
-      groupLabel: 'benchmark',
+      groupLabel: tShared('terms.benchmarks'),
       key,
-      label: key,
+      label: tShared(`benchmarks.${key}`),
       render: createBenchmarkRenderer(m => m.benchmarks?.[key] ?? null),
     }))
 
@@ -341,9 +370,9 @@ export default function ComparePageClient({
     ]
     const platformRows: Row[] = platformKeys.map(key => ({
       group: 'platforms',
-      groupLabel: 'ai platforms',
+      groupLabel: tShared('labels.findOnAiPlatforms'),
       key,
-      label: key,
+      label: tShared(`platforms.${key}`),
       render: createPlatformLinkRenderer(m => m.platformUrls?.[key] ?? null),
     }))
 
@@ -432,7 +461,7 @@ export default function ComparePageClient({
         className="appearance-none px-4 py-0 pr-8 bg-[var(--color-bg)] border border-[var(--color-border)] text-[var(--color-text)] min-w-[200px] min-h-[46px] text-center w-full cursor-pointer"
         style={selectStyle}
       >
-        <option value="">Select a model</option>
+        <option value="">{tPage('selectModel')}</option>
         {availableModels.map(m => (
           <option key={m.id} value={m.id}>
             {m.name}
@@ -505,7 +534,7 @@ export default function ComparePageClient({
                         colSpan={4}
                         className="px-4 py-2 bg-[var(--color-hover)] text-center text-sm font-semibold uppercase tracking-wider"
                       >
-                        {group}
+                        {groupRows[0]?.groupLabel}
                       </td>
                     </tr>
                     {groupRows.map(row => (
@@ -537,7 +566,7 @@ export default function ComparePageClient({
 
       {(!model1 || !model2) && (
         <div className="text-center py-12 text-[var(--color-text-muted)]">
-          <p>Select 2 models to compare</p>
+          <p>{tPage('selectTwoModels')}</p>
         </div>
       )}
     </div>

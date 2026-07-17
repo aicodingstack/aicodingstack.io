@@ -10,7 +10,7 @@ import ComparisonPageClient from './[models]/page.client'
 export const revalidate = 3600
 
 function getComparisonGroups(): string[] {
-  return ['basicInfo', 'capabilities', 'performance', 'pricing', 'platforms']
+  return ['basicInfo', 'capabilities', 'pricing', 'benchmark', 'platforms']
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {

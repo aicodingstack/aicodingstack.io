@@ -13,6 +13,7 @@
     "sortNameDesc": "名称 (Z-A)"
   },
   "searchDialog": {
+    "close": "关闭比较选择器",
     "empty": "Start typing to search...",
     "navigate": "to navigate",
     "noResultsFor": "No results for \"{query}\"",

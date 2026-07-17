@@ -1,6 +1,6 @@
 {
   "footer": {
-    "copyright": "© 2025 AI Coding Stack • Construido con ❤︎ • Código abierto",
+    "copyright": "© {year} AI Coding Stack • Construido con ❤︎ • Código abierto",
     "openSource": "Repositorio de metadatos de codificación con IA de código abierto.",
     "selectLanguage": "Seleccionar idioma",
     "tagline": "Tu centro del ecosistema de codificación con IA.",

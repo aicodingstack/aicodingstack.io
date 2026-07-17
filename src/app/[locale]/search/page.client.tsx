@@ -7,6 +7,7 @@ import SearchInput from '@/components/controls/SearchInput'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import { Link, useRouter } from '@/i18n/navigation'
+import { buildManifestPath } from '@/lib/manifest-registry'
 import type { SearchResult } from '@/lib/search'
 import { search } from '@/lib/search'
 
@@ -49,11 +50,6 @@ export default function SearchPageClient({ locale, initialQuery }: Props) {
     setTimeout(() => setIsSearching(false), 300)
   }
 
-  // Get category route
-  const getCategoryRoute = (category: string, id: string) => {
-    return `/${category}/${id}`
-  }
-
   return (
     <>
       <Header />
@@ -94,7 +90,7 @@ export default function SearchPageClient({ locale, initialQuery }: Props) {
                   {results.map(result => (
                     <Link
                       key={`${result.category}-${result.id}`}
-                      href={getCategoryRoute(result.category, result.id)}
+                      href={buildManifestPath(result.category, result.id)}
                       className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5 group flex flex-col"
                     >
                       {/* Header with category badge */}

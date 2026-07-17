@@ -36,6 +36,25 @@ function getLocalizedName(
   return item.name
 }
 
+function getLocalizedDescription(
+  item: { description: string; translations?: { [locale: string]: { description?: string } } },
+  locale?: string
+): string {
+  if (locale && item.translations?.[locale]?.description) {
+    return item.translations[locale].description
+  }
+  return item.description
+}
+
+function flattenSearchValue(value: unknown): string[] {
+  if (typeof value === 'string') return [value]
+  if (Array.isArray(value)) return value.flatMap(flattenSearchValue)
+  if (value && typeof value === 'object') {
+    return Object.values(value).flatMap(flattenSearchValue)
+  }
+  return []
+}
+
 /**
  * Check if query matches item name (supports translations)
  */
@@ -45,21 +64,33 @@ function matchesQuery(
     description: string
     translations?: { [locale: string]: { name?: string; description?: string } }
   },
-  query: string
+  query: string,
+  locale?: string
 ): boolean {
   const lowerQuery = query.toLowerCase()
-
-  // Search in default name only
-  if (item.name.toLowerCase().includes(lowerQuery)) return true
-
-  // Search in translations (name only)
-  if (item.translations) {
-    for (const translation of Object.values(item.translations)) {
-      if (translation.name?.toLowerCase().includes(lowerQuery)) return true
-    }
+  const searchableItem = item as typeof item & {
+    vendor?: string
+    capabilities?: string[]
+    inputModalities?: string[]
+    outputModalities?: string[]
+    platforms?: unknown
+    type?: string
   }
+  const translation = locale ? item.translations?.[locale] : undefined
+  const values = [
+    item.name,
+    item.description,
+    translation?.name,
+    translation?.description,
+    searchableItem.vendor,
+    searchableItem.type,
+    ...flattenSearchValue(searchableItem.capabilities),
+    ...flattenSearchValue(searchableItem.inputModalities),
+    ...flattenSearchValue(searchableItem.outputModalities),
+    ...flattenSearchValue(searchableItem.platforms),
+  ]
 
-  return false
+  return values.some(value => value?.toLowerCase().includes(lowerQuery))
 }
 
 /**
@@ -70,13 +101,14 @@ function calculateRelevance(
   item: {
     name: string
     description: string
-    i18n?: { [locale: string]: { name?: string; description?: string } }
+    translations?: { [locale: string]: { name?: string; description?: string } }
   },
   query: string,
   locale?: string
 ): number {
   const lowerQuery = query.toLowerCase()
   const name = getLocalizedName(item, locale).toLowerCase()
+  const description = getLocalizedDescription(item, locale).toLowerCase()
 
   // Exact match in name
   if (name === lowerQuery) return 100
@@ -87,17 +119,19 @@ function calculateRelevance(
   // Contains query in name
   if (name.includes(lowerQuery)) return 80
 
-  return 0
+  if (description.includes(lowerQuery)) return 50
+
+  return 10
 }
 
 /**
  * Build unified search index from all product manifests
  */
-export function buildSearchIndex(): SearchResult[] {
+export function buildSearchIndex(locale?: string): SearchResult[] {
   return getAllManifests().map(({ category, data: item }) => ({
     id: item.id,
-    name: item.name,
-    description: item.description,
+    name: getLocalizedName(item, locale),
+    description: getLocalizedDescription(item, locale),
     category,
     data: item,
   }))
@@ -114,9 +148,9 @@ export function search(query: string, locale?: string): SearchResult[] {
     return []
   }
 
-  const index = buildSearchIndex()
+  const index = buildSearchIndex(locale)
   const results = index
-    .filter(item => matchesQuery(item.data, query))
+    .filter(item => matchesQuery(item.data, query, locale))
     .map(item => ({
       ...item,
       relevance: calculateRelevance(item.data, query, locale),

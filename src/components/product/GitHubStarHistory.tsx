@@ -50,22 +50,9 @@ export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
         const [, owner, repo] = match
         const repoFullName = `${owner}/${repo}`
 
-        // Use Star History API
-        const response = await fetch(
-          `https://api.star-history.com/svg?repos=${repoFullName}&type=Date`
-        )
-
-        if (!response.ok) {
-          throw new Error('Failed to fetch star history')
-        }
-
-        // Star History API returns SVG, but we can use their JSON endpoint
-        // Alternative: use GitHub API directly
         const jsonResponse = await fetch(`https://api.star-history.com/json?repos=${repoFullName}`)
 
         if (!jsonResponse.ok) {
-          // Fallback: generate mock data based on current stars
-          // This is a temporary solution until we implement proper data fetching
           throw new Error('Star history API unavailable')
         }
 
@@ -85,19 +72,7 @@ export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
       } catch (err) {
         console.error('Error fetching star history:', err)
         setError(err instanceof Error ? err.message : 'Failed to load star history')
-
-        // Generate fallback data for demonstration
-        const currentDate = new Date()
-        const fallbackData: StarDataPoint[] = []
-        for (let i = 12; i >= 0; i--) {
-          const date = new Date(currentDate)
-          date.setMonth(date.getMonth() - i)
-          fallbackData.push({
-            date: date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' }),
-            stars: Math.floor(Math.random() * 50000) + 10000, // Mock data
-          })
-        }
-        setData(fallbackData)
+        setData([])
       } finally {
         setLoading(false)
       }
@@ -122,9 +97,7 @@ export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
     )
   }
 
-  if (error && data.length === 0) {
-    return null // Don't show anything if there's an error and no fallback data
-  }
+  if (error || data.length === 0) return null
 
   return (
     <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
@@ -139,7 +112,6 @@ export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
               {tComponent('githubStarHistory.description')}
             </p>
           </div>
-
           {/* Chart */}
           <div className="w-full h-[300px]">
             <ResponsiveContainer width="100%" height="100%">
@@ -209,15 +181,6 @@ export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
               </LineChart>
             </ResponsiveContainer>
           </div>
-
-          {/* Footer Note */}
-          {error && (
-            <div className="mt-[var(--spacing-sm)] pt-[var(--spacing-sm)] border-t border-[var(--color-border)]">
-              <p className="text-xs text-[var(--color-text-muted)] font-light">
-                {tComponent('githubStarHistory.fallbackNote')}
-              </p>
-            </div>
-          )}
         </div>
       </div>
     </section>

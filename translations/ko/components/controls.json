@@ -13,6 +13,7 @@
     "sortNameDesc": "이름 (Z-A)"
   },
   "searchDialog": {
+    "close": "비교 선택기 닫기",
     "empty": "Start typing to search...",
     "navigate": "to navigate",
     "noResultsFor": "No results for \"{query}\"",
