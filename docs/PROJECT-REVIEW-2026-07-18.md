@@ -74,7 +74,7 @@ Baseline captured on 2026-07-18:
   integrity, translation placeholders, and missing pricing/benchmark values.
 - [x] Add freshness policies (for example 30/60/90-day review thresholds by field/category).
 - [ ] Automate change discovery from official sources, but keep human review before merge.
-- [ ] Populate a real changelog from manifest diffs instead of keeping an empty static file.
+- [x] Populate a real changelog from manifest diffs instead of keeping an empty static file.
 
 ## P1 — Product Experience
 
@@ -93,7 +93,7 @@ Baseline captured on 2026-07-18:
 ## P1 — Quality Gates
 
 - [x] Add route-contract tests for every manifest category.
-- [ ] Add browser-level smoke tests for search, navigation, detail pages, locale switching, and
+- [x] Add browser-level smoke tests for search, navigation, detail pages, locale switching, and
   comparison selection.
 - [ ] Add automated accessibility checks for dialogs, menus, comparison tables, and mobile nav.
 - [x] Run generation in CI and fail when tracked generated output differs.
@@ -171,3 +171,9 @@ evidence; completed items are reflected in the checklists and implementation log
   a permanent redirect, and removed its duplicate comparison implementation.
 - Added a persistent two-model selection shared by model cards, detail-page comparison actions,
   canonical pair URLs, and the comparison selector; adding a third model replaces the oldest pick.
+- Added Playwright browser smoke coverage for search-to-detail navigation, locale-preserving route
+  switches, and persistent model comparison selections, and made it a required CI job.
+- Replaced the empty changelog placeholder with a deterministic manifest-diff record and added a CI
+  guard requiring future manifest changes to be represented in `data/changelogs.json`.
+- Fixed the search result category badge to use the shared translated category names after browser
+  testing exposed a missing runtime message lookup.
