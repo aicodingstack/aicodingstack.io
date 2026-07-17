@@ -79,9 +79,9 @@ Baseline captured on 2026-07-18:
 ## P1 — Product Experience
 
 - [x] Stop statically generating every possible two-model comparison pair.
-- [ ] Unify `/models/comparison` and `/models/compare/...` into one understandable comparison
+- [x] Unify `/models/comparison` and `/models/compare/...` into one understandable comparison
   journey.
-- [ ] Add “compare” actions to cards and detail pages with persistent selected items.
+- [x] Add “compare” actions to cards and detail pages with persistent selected items.
 - [x] Search localized names/descriptions, capabilities, modalities, platforms, vendors, and types.
 - [ ] Add explicit use-case metadata and include it in search when the schema supports it.
 - [ ] Add guided selection filters: interface, budget, model freedom, privacy/local execution,
@@ -167,3 +167,7 @@ evidence; completed items are reflected in the checklists and implementation log
   providers and representative GPT-5.2, Claude Haiku 4.5, and Gemini 3 Flash model records.
 - Corrected GPT-5.2 from `latest` to `maintained` after its official model page identified it as a
   previous frontier model that remains available.
+- Made `/models/compare` the canonical model comparison journey, retained the old all-model URL as
+  a permanent redirect, and removed its duplicate comparison implementation.
+- Added a persistent two-model selection shared by model cards, detail-page comparison actions,
+  canonical pair URLs, and the comparison selector; adding a third model replaces the oldest pick.

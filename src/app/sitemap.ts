@@ -64,7 +64,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/ides/comparison', priority: 0.7, changeFreq: 'weekly' as const },
     { path: '/clis/comparison', priority: 0.7, changeFreq: 'weekly' as const },
     { path: '/extensions/comparison', priority: 0.7, changeFreq: 'weekly' as const },
-    { path: '/models/comparison', priority: 0.7, changeFreq: 'weekly' as const },
     { path: '/models/compare', priority: 0.7, changeFreq: 'weekly' as const },
   ]
 

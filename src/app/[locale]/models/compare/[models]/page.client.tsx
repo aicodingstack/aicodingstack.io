@@ -2,10 +2,12 @@
 
 import { ExternalLink } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { Fragment, useEffect, useState } from 'react'
+import { Fragment, useEffect, useRef } from 'react'
+import { useModelComparison } from '@/components/controls/useModelComparison'
 import type { Locale } from '@/i18n/config'
 import { Link, useRouter } from '@/i18n/navigation'
 import { providersData } from '@/lib/generated'
+import { buildModelComparisonPath } from '@/lib/model-comparison'
 import type {
   ManifestBenchmarks,
   ManifestModel,
@@ -180,10 +182,17 @@ export default function ComparePageClient({
   const router = useRouter()
   const tPage = useTranslations('pages.modelCompare')
   const tShared = useTranslations('shared')
-  const [selectedModel1, setSelectedModel1] = useState<string>(initialModels[0]?.id ?? '')
-  const [selectedModel2, setSelectedModel2] = useState<string>(initialModels[1]?.id ?? '')
-  const [prevModel1, setPrevModel1] = useState<string>(initialModels[0]?.id ?? '')
-  const [prevModel2, setPrevModel2] = useState<string>(initialModels[1]?.id ?? '')
+  const initialModelIds = initialModels.map(model => model.id)
+  const { selectedIds, isHydrated, setSelection } = useModelComparison(initialModelIds)
+  const selectedModel1 = selectedIds[0] ?? ''
+  const selectedModel2 = selectedIds[1] ?? ''
+  const lastComparisonPath = useRef(buildModelComparisonPath(initialModelIds))
+
+  const updateModelSlot = (slotIndex: number, value: string) => {
+    const nextSelection = [selectedModel1, selectedModel2]
+    nextSelection[slotIndex] = value
+    setSelection(nextSelection.filter(Boolean))
+  }
 
   const findProviderId = (vendor: string): string | null => {
     const normalizedVendor = vendor.toLocaleLowerCase()
@@ -471,17 +480,14 @@ export default function ComparePageClient({
     )
   }
 
-  // Update URL when both models are selected and at least one has changed
+  // Keep the shareable URL aligned with the persisted selection.
   useEffect(() => {
-    if (selectedModel1 && selectedModel2 && selectedModel1 !== selectedModel2) {
-      if (selectedModel1 !== prevModel1 || selectedModel2 !== prevModel2) {
-        const url = `/models/compare/${selectedModel1}-vs-${selectedModel2}`
-        router.push(url)
-        setPrevModel1(selectedModel1)
-        setPrevModel2(selectedModel2)
-      }
-    }
-  }, [selectedModel1, selectedModel2, prevModel1, prevModel2, router])
+    if (!isHydrated) return
+    const nextPath = buildModelComparisonPath(selectedIds)
+    if (nextPath === lastComparisonPath.current) return
+    lastComparisonPath.current = nextPath
+    router.replace(nextPath)
+  }, [isHydrated, router, selectedIds])
 
   const model1 = allModels.find(m => m.id === selectedModel1)
   const model2 = allModels.find(m => m.id === selectedModel2)
@@ -498,7 +504,7 @@ export default function ComparePageClient({
                 <div className="flex flex-col gap-2 items-center">
                   <ModelSelect
                     value={selectedModel1}
-                    onChange={setSelectedModel1}
+                    onChange={value => updateModelSlot(0, value)}
                     availableModels={getAvailableModelsForSlot(0)}
                   />
                 </div>
@@ -507,7 +513,7 @@ export default function ComparePageClient({
                 <div className="flex flex-col gap-2 items-center">
                   <ModelSelect
                     value={selectedModel2}
-                    onChange={setSelectedModel2}
+                    onChange={value => updateModelSlot(1, value)}
                     availableModels={getAvailableModelsForSlot(1)}
                   />
                 </div>

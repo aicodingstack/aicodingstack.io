@@ -176,7 +176,7 @@ export const PAGE_TRANSLATION_REQUIREMENTS: Record<string, PageTranslationRequir
   },
 
   // ========== Comparison Pages (4个) ==========
-  '/models/comparison': {
+  '/models/compare': {
     namespace: 'pages.comparison',
     requiredKeys: ['models.title', 'models.subtitle'] as const,
     type: 'comparison',
