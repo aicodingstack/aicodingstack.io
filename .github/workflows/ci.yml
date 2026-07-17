@@ -68,6 +68,9 @@ jobs:
       - name: Run tests
         run: npm run test:ci
 
+      - name: Check data health
+        run: npm run data-health:check
+
   spell-check:
     name: Spell Check
     runs-on: ubuntu-latest
