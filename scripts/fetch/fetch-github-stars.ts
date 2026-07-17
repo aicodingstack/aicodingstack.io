@@ -179,7 +179,10 @@ async function processFile(filePath: string, fileName: string): Promise<ProcessR
 
 // Process all files in a directory
 // Maps file names (without .json) to stars data based on githubUrl field
-async function processDirectory(dirConfig: DirConfig): Promise<DirectoryResult> {
+async function processDirectory(
+  dirConfig: DirConfig,
+  existingCategoryData: Record<string, number | null>
+): Promise<DirectoryResult> {
   const dirPath = path.join(__dirname, '..', '..', dirConfig.directory)
   console.log(`\n📁 Processing ${dirConfig.directory}...`)
 
@@ -211,7 +214,9 @@ async function processDirectory(dirConfig: DirConfig): Promise<DirectoryResult> 
     if (result.error) errors++
 
     // Map file ID (filename without .json) to stars value (can be null)
-    categoryData[result.fileId] = result.stars
+    categoryData[result.fileId] = result.error
+      ? (existingCategoryData[result.fileId] ?? null)
+      : result.stars
   }
 
   console.log(
@@ -252,7 +257,10 @@ async function main(): Promise<void> {
   // Maps file names to stars based on githubUrl field in each manifest file
   for (const dirConfig of dirsConfig) {
     try {
-      const { categoryData, stats } = await processDirectory(dirConfig)
+      const { categoryData, stats } = await processDirectory(
+        dirConfig,
+        starsData[dirConfig.category] ?? {}
+      )
 
       // Sort the category data by key (alphabetically)
       const sortedCategoryData = Object.keys(categoryData)
