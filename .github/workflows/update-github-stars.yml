@@ -41,7 +41,7 @@ jobs:
       - name: Check for changes
         id: git-check
         run: |
-          git diff --exit-code manifests/github-stars.json src/lib/generated/github-stars.ts || echo "changes=true" >> $GITHUB_OUTPUT
+          git diff --exit-code data/github-stars.json src/lib/generated/github-stars.ts || echo "changes=true" >> $GITHUB_OUTPUT
 
       - name: Create Pull Request
         if: steps.git-check.outputs.changes == 'true'
@@ -55,7 +55,7 @@ jobs:
             Automated weekly update of GitHub stars data.
 
             ### Changes
-            - Updated `manifests/github-stars.json` with latest star counts
+            - Updated `data/github-stars.json` with latest star counts
             - Regenerated `src/lib/generated/github-stars.ts`
 
             ### Source

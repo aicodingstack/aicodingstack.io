@@ -15,10 +15,10 @@
 /manifests/**/*.json @aicodingstack/maintainers
 
 # Schema files - require careful review as they affect validation
-/manifests/schemas/**/*.json @aicodingstack/maintainers
+/manifests/$schemas/**/*.json @aicodingstack/maintainers
 
 # Build and validation scripts - require careful review
-/scripts/**/*.mjs @aicodingstack/maintainers
+/scripts/**/*.ts @aicodingstack/maintainers
 
 # GitHub Actions workflows - require review for security
 /.github/workflows/**/*.yml @aicodingstack/maintainers
@@ -26,7 +26,7 @@
 # Configuration files
 /package.json @aicodingstack/maintainers
 /tsconfig.json @aicodingstack/maintainers
-/next.config.mjs @aicodingstack/maintainers
+/next.config.ts @aicodingstack/maintainers
 /wrangler.toml @aicodingstack/maintainers
 
 # Documentation - can be reviewed by broader team

@@ -108,6 +108,9 @@ jobs:
         env:
           BUILD_TIME: ${{ github.event.head_commit.timestamp }}
 
+      - name: Verify generated source is current
+        run: git diff --exit-code -- src/lib/generated
+
       - name: Upload build artifacts
         uses: actions/upload-artifact@v6
         with:
@@ -125,8 +128,8 @@ jobs:
     steps:
       - name: Check all jobs
         run: |
-          if [[ "${{ contains(needs.*.result, 'failure') }}" == "true" ]]; then
-            echo "One or more CI jobs failed"
+          if [[ "${{ contains(needs.*.result, 'failure') }}" == "true" || "${{ contains(needs.*.result, 'cancelled') }}" == "true" || "${{ contains(needs.*.result, 'skipped') }}" == "true" ]]; then
+            echo "One or more required CI jobs failed, were cancelled, or were skipped"
             exit 1
           fi
           echo "All CI jobs passed successfully"

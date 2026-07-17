@@ -1,8 +1,7 @@
 name: Deploy Staging
 
 on:
-  push:
-    branches: [develop]
+  workflow_dispatch:
 
 concurrency:
   group: staging-deploy
@@ -38,7 +37,7 @@ jobs:
       - name: Build with OpenNext
         run: npm run build
         env:
-          BUILD_TIME: ${{ github.event.head_commit.timestamp }}
+          BUILD_TIME: ${{ github.event.repository.updated_at }}
 
       - name: Deploy to Staging
         run: npx --no-install opennextjs-cloudflare deploy --env staging
