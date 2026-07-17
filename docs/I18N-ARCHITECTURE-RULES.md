@@ -385,7 +385,7 @@ To align the current codebase with these rules:
     "closeMenu": "Close menu"
   },
   "footer": {
-    "copyright": "© 2025 AI Coding Stack • Built with ❤︎ • Open Source",
+    "copyright": "© {year} AI Coding Stack • Built with ❤︎ • Open Source",
     "tagline": "Your AI Coding Ecosystem Hub.",
     "openSource": "Open source AI coding metadata repository.",
     "selectLanguage": "Select Language",

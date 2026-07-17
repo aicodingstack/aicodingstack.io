@@ -76,32 +76,33 @@ aicodingstack.io/
 ```
 manifests/
 ├── $schemas/             # JSON Schema definitions for validation
-│   ├── ides.schema.json
-│   ├── clis.schema.json
-│   ├── extensions.schema.json
-│   ├── models.schema.json
-│   ├── providers.schema.json
-│   ├── vendors.schema.json
+│   ├── ide.schema.json
+│   ├── cli.schema.json
+│   ├── extension.schema.json
+│   ├── model.schema.json
+│   ├── provider.schema.json
+│   ├── vendor.schema.json
 │   └── github-stars.schema.json
-├── ides/*.jsonc          # IDE manifest files
-├── clis/*.jsonc          # CLI manifest files
-├── extensions/*.jsonc    # Extension manifest files
-├── models/*.jsonc        # Model manifest files
-├── providers/*.jsonc     # Provider manifest files
-├── vendors/*.jsonc       # Vendor manifest files
-└── github-stars.json     # Centralized star counts
+├── ides/*.json           # IDE manifest files
+├── clis/*.json           # CLI manifest files
+├── extensions/*.json     # Extension manifest files
+├── models/*.json         # Model manifest files
+├── providers/*.json      # Provider manifest files
+├── vendors/*.json        # Vendor manifest files
 ```
+
+`data/github-stars.json` stores the centralized star counts.
 
 ### scripts/ (Build Tools)
 ```
 scripts/
 ├── fetch/                # Data fetching scripts
-│   ├── fetch-github-stars.mjs
-│   └── index.mjs
+│   ├── fetch-github-stars.ts
+│   └── index.ts
 ├── generate/             # Code generation scripts
-│   ├── generate-i18n.mjs
-│   ├── generate-manifests.mjs
-│   └── index.mjs
+│   ├── generate-manifest-indexes.ts
+│   ├── generate-metadata.ts
+│   └── index.ts
 ├── refactor/             # Refactoring utilities
 └── _shared/              # Shared utilities for scripts
 ```
@@ -173,10 +174,10 @@ The manifest system is the core data layer:
 │                     MANIFEST SYSTEM                             │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                │
-│  manifests/*.jsonc (Source)                                     │
+│  manifests/**/*.json (Source)                                  │
 │         │                                                      │
 │         ▼                                                      │
-│  scripts/generate/generate-manifests.mjs                       │
+│  scripts/generate/generate-manifest-indexes.ts                 │
 │         │                                                      │
 │         ▼                                                      │
 │  src/lib/generated/*.ts (Typed Access)                         │
@@ -258,9 +259,9 @@ The manifest system is the core data layer:
 │                                                                │
 │  Scripts for fetching external data:                            │
 │                                                                │
-│  scripts/fetch/fetch-github-stars.mjs                           │
+│  scripts/fetch/fetch-github-stars.ts                            │
 │  ├── Fetches from GitHub API                                    │
-│  └── Writes to manifests/github-stars.json                       │
+│  └── Writes to data/github-stars.json                            │
 │                                                                │
 │  Scheduled workflows:                                           │
 │  .github/workflows/update-github-stars.yml (daily)              │
@@ -352,8 +353,8 @@ The manifest system is the core data layer:
 │  npm run generate                                               │
 │         │                                                      │
 │         ▼                                                      │
-│  Script: generate-manifests.mjs                                │
-│  ├── Reads manifests/*.jsonc                                   │
+│  Script: generate-manifest-indexes.ts                          │
+│  ├── Reads manifests/**/*.json                                 │
 │  ├── Validates against schemas                                 │
 │  └── Writes src/lib/generated/*.ts                             │
 │         │                                                      │

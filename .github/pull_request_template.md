@@ -55,9 +55,9 @@ Closes #(issue number)
 <!-- Describe how you tested your changes -->
 
 - [ ] Local build passes (`npm run build`)
-- [ ] All validation checks pass (`npm run validate:manifests`)
+- [ ] All validation checks pass (`npm run test:validate`)
 - [ ] URL validation passes (`npm run validate:urls`)
-- [ ] Linting passes (`npm run lint`)
+- [ ] Static analysis passes (`npm run biome:check`)
 - [ ] Spell check passes (`npm run spell`)
 
 ## Screenshots (if applicable)

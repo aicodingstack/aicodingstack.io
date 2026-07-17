@@ -8,7 +8,7 @@ body:
       value: |
         Thank you for contributing to AI Coding Stack! This form will guide you through adding or updating metadata for AI coding tools.
 
-        Please check our [Schema Documentation](https://github.com/aicodingstack/aicodingstack.io/tree/main/manifests/schemas) to understand the required fields.
+        Please check our [Schema Documentation](https://github.com/aicodingstack/aicodingstack.io/tree/main/manifests/%24schemas) to understand the required fields.
 
   - type: dropdown
     id: contribution-type
@@ -95,9 +95,9 @@ body:
         For **Providers**: Include supported models, API documentation
 
         See schema files for complete field requirements:
-        - [Model Schema](https://github.com/aicodingstack/aicodingstack.io/blob/main/manifests/schemas/model.schema.json)
-        - [IDE Schema](https://github.com/aicodingstack/aicodingstack.io/blob/main/manifests/schemas/ide.schema.json)
-        - [CLI Schema](https://github.com/aicodingstack/aicodingstack.io/blob/main/manifests/schemas/cli.schema.json)
+        - [Model Schema](https://github.com/aicodingstack/aicodingstack.io/blob/main/manifests/%24schemas/model.schema.json)
+        - [IDE Schema](https://github.com/aicodingstack/aicodingstack.io/blob/main/manifests/%24schemas/ide.schema.json)
+        - [CLI Schema](https://github.com/aicodingstack/aicodingstack.io/blob/main/manifests/%24schemas/cli.schema.json)
       placeholder: |
         Example for a model:
         - Size: 175B parameters
