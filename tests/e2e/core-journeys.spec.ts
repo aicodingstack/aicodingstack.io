@@ -33,7 +33,7 @@ test('model comparison selection persists across routes', async ({ page }) => {
 test('language switching preserves the current detail route', async ({ page }) => {
   await page.goto('/models/gpt-5-2')
   await page.getByRole('button', { name: 'Select language' }).click()
-  await page.getByRole('button', { name: '简体中文' }).click()
+  await page.getByRole('menuitemradio', { name: '简体中文' }).click()
 
   await expect(page).toHaveURL(/\/zh-Hans\/models\/gpt-5-2$/)
   await expect(page.getByRole('heading', { name: 'GPT-5.2', level: 1 })).toBeVisible()

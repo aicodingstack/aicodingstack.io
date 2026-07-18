@@ -22,7 +22,8 @@ export function LinkCard({ href, title, description, layout = 'horizontal' }: Li
   if (!hasHref) {
     return (
       <div
-        className={`border border-[var(--color-border)] p-[var(--spacing-md)] opacity-40 pointer-events-none ${isHorizontal ? '' : 'text-center'}`}
+        aria-disabled="true"
+        className={`border border-[var(--color-border)] bg-[var(--color-hover)] p-[var(--spacing-md)] ${isHorizontal ? '' : 'text-center'}`}
       >
         {isHorizontal ? (
           <div className="flex items-center justify-between">

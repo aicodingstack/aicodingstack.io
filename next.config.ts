@@ -36,6 +36,8 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
 
+  allowedDevOrigins: ['localhost'],
+
   // Required for OpenNext Cloudflare adapter
   output: 'standalone',
 
@@ -140,16 +142,20 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // Aggressive caching for Next.js static assets
-      {
-        source: '/_next/static/:path*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
-      },
+      ...(process.env.NODE_ENV === 'production'
+        ? [
+            // Development assets must remain revalidatable for hydration and HMR.
+            {
+              source: '/_next/static/:path*',
+              headers: [
+                {
+                  key: 'Cache-Control',
+                  value: 'public, max-age=31536000, immutable',
+                },
+              ],
+            },
+          ]
+        : []),
       // Cache images and media files
       {
         source: '/images/:path*',

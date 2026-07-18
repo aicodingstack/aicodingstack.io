@@ -14,6 +14,7 @@
     "biome:unsafe": "biome check --write --unsafe .",
     "check": "npm run format && npm run biome && biome check . && npm run spell && npm run type-check",
     "type-check": "tsc --noEmit --incremental",
+    "security:audit": "npm audit --audit-level=high --registry=https://registry.npmjs.org",
     "deps:check-latest": "npm outdated",
     "deps:update": "npm update",
     "spell": "cspell '**/*.{ts,tsx,js,jsx,json,md,mdx}'",
@@ -52,17 +53,18 @@
   },
   "dependencies": {
     "@mdx-js/react": "^3.1.1",
-    "@next/third-parties": "^16.1.2",
-    "@opennextjs/cloudflare": "^1.15.1",
+    "@next/third-parties": "^16.2.10",
+    "@opennextjs/cloudflare": "^1.20.1",
     "cmdk": "^1.1.1",
     "lucide-react": "^0.563.0",
-    "next": "^16.1.4",
-    "next-intl": "^4.7.0",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
+    "next": "^16.2.10",
+    "next-intl": "^4.13.2",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "recharts": "^3.7.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
     "@biomejs/biome": "^2.3.12",
     "@cspell/dict-de-de": "^4.1.2",
     "@cspell/dict-es-es": "^3.0.8",
@@ -72,8 +74,8 @@
     "@cspell/dict-ru_ru": "^2.3.2",
     "@cspell/dict-tr-tr": "^3.0.6",
     "@mdx-js/loader": "^3.1.1",
-    "@next/bundle-analyzer": "^16.1.2",
-    "@next/mdx": "^16.1.2",
+    "@next/bundle-analyzer": "^16.2.10",
+    "@next/mdx": "^16.2.10",
     "@playwright/test": "^1.61.1",
     "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^22.19.2",
@@ -82,7 +84,7 @@
     "@typescript-eslint/parser": "^8.53.0",
     "@typescript-eslint/types": "^8.53.0",
     "agent-browser": "^0.8.4",
-    "ajv": "^8.17.1",
+    "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
     "cspell": "^9.6.1",
     "gray-matter": "^4.0.3",
@@ -95,8 +97,8 @@
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "user-agents": "^1.1.669",
-    "vitest": "^4.0.18",
-    "wrangler": "^4.60.0"
+    "vitest": "^4.1.10",
+    "wrangler": "^4.112.0"
   },
   "repository": {
     "type": "git",
@@ -110,6 +112,9 @@
   "homepage": "https://github.com/aicodingstack/aicodingstack.io#readme",
   "engines": {
     "node": "^22.0.0"
+  },
+  "overrides": {
+    "postcss": "^8.5.19"
   },
   "browserslist": [
     "defaults and fully supports es6-module",

@@ -76,6 +76,9 @@ export default function SearchDialog({ isOpen, onClose, locale }: SearchDialogPr
       {/* Command Dialog */}
       <div className="fixed inset-0 z-[101] flex items-start justify-center pt-[15vh] px-4 pointer-events-none">
         <Command
+          role="dialog"
+          aria-modal="true"
+          aria-label={tShared('actions.search')}
           className="w-full max-w-xl bg-[var(--color-bg)] border border-[var(--color-border)] shadow-2xl overflow-hidden pointer-events-auto"
           shouldFilter={false}
           onKeyDown={(e: React.KeyboardEvent) => {
@@ -108,44 +111,44 @@ export default function SearchDialog({ isOpen, onClose, locale }: SearchDialogPr
               className="flex-1 bg-transparent text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] focus:outline-none text-base"
               autoFocus
             />
-            <kbd className="hidden sm:inline-block px-2 py-1 text-xs text-[var(--color-text-muted)] border border-[var(--color-border)] bg-[var(--color-hover)]">
+            <kbd className="hidden sm:inline-block px-2 py-1 text-xs text-[var(--color-text)] border border-[var(--color-border)] bg-[var(--color-hover)]">
               ESC
             </kbd>
           </div>
 
           {/* Results */}
           <Command.List className="max-h-[400px] overflow-y-auto">
-            {/* Empty State */}
-            <Command.Empty className="py-12 text-center">
-              {query.trim() === '' ? (
-                <div className="text-[var(--color-text-muted)] text-sm">
-                  {tComponent('searchDialog.empty')}
-                </div>
-              ) : (
-                <div className="text-center">
-                  <svg
-                    className="w-12 h-12 mx-auto mb-3 text-[var(--color-text-muted)]"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1}
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                    />
-                  </svg>
-                  <p className="text-sm text-[var(--color-text-muted)]">
-                    {tComponent('searchDialog.noResultsFor', { query })}
-                  </p>
-                </div>
-              )}
-            </Command.Empty>
-
-            {/* Results List */}
-            {suggestions.length > 0 && (
+            {suggestions.length === 0 ? (
+              <Command.Item value="empty-state" disabled className="block py-12 text-center">
+                <output aria-live="polite" className="block w-full">
+                  {query.trim() === '' ? (
+                    <div className="text-[var(--color-text-muted)] text-sm">
+                      {tComponent('searchDialog.empty')}
+                    </div>
+                  ) : (
+                    <div className="text-center">
+                      <svg
+                        className="w-12 h-12 mx-auto mb-3 text-[var(--color-text-muted)]"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1}
+                        aria-hidden="true"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                        />
+                      </svg>
+                      <p className="text-sm text-[var(--color-text-muted)]">
+                        {tComponent('searchDialog.noResultsFor', { query })}
+                      </p>
+                    </div>
+                  )}
+                </output>
+              </Command.Item>
+            ) : (
               <Command.Group>
                 {suggestions.map(result => (
                   <Command.Item
