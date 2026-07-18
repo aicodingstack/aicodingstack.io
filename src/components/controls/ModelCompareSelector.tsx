@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl'
 import { useId, useState } from 'react'
 import { Link } from '@/i18n/navigation'
 import { modelsData } from '@/lib/generated'
+import { useModelComparison } from './useModelComparison'
 
 interface ModelCompareSelectorProps {
   currentModelId: string
@@ -20,6 +21,7 @@ export function ModelCompareSelector({
   const dropdownId = useId()
   const [isOpen, setIsOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
+  const { setSelection } = useModelComparison()
 
   const normalizedQuery = searchQuery.trim().toLocaleLowerCase()
   const lifecycleOrder: Record<string, number> = { latest: 0, maintained: 1, deprecated: 2 }
@@ -94,7 +96,10 @@ export function ModelCompareSelector({
                     <li key={model.id}>
                       <Link
                         href={`/models/compare/${currentModelId}-vs-${model.id}`}
-                        onClick={() => setIsOpen(false)}
+                        onClick={() => {
+                          setSelection([currentModelId, model.id])
+                          setIsOpen(false)
+                        }}
                         className="block px-3 py-2 text-sm hover:bg-[var(--color-hover)] transition-colors"
                       >
                         <div className="font-medium">{model.name}</div>

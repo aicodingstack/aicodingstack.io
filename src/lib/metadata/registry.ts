@@ -174,7 +174,7 @@ export const PAGE_REGISTRY: Record<string, PageMetadataConfig> = {
   },
 
   // ========== Comparison Pages (4) ==========
-  '/models/comparison': {
+  '/models/compare': {
     generatorType: 'comparison',
     pageType: 'comparison',
     category: 'models',

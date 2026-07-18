@@ -1,7 +1,9 @@
 'use client'
 
+import { Check, Scale } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useMemo, useState } from 'react'
+import { useModelComparison } from '@/components/controls/useModelComparison'
 import { VerifiedBadge } from '@/components/controls/VerifiedBadge'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
@@ -12,6 +14,7 @@ import { Link } from '@/i18n/navigation'
 import { formatTokenCount } from '@/lib/format'
 import { modelsData } from '@/lib/generated'
 import { localizeManifestItems } from '@/lib/manifest-i18n'
+import { buildModelComparisonPath } from '@/lib/model-comparison'
 import type { ManifestModel } from '@/types/manifests'
 
 type Props = {
@@ -22,6 +25,7 @@ export default function ModelsPageClient({ locale }: Props) {
   const tPage = useTranslations('pages.models')
   const tShared = useTranslations('shared')
   const [searchQuery, setSearchQuery] = useState('')
+  const { selectedIds, toggleModel } = useModelComparison()
 
   // Localize models
   const localizedModels = useMemo(() => {
@@ -85,10 +89,10 @@ export default function ModelsPageClient({ locale }: Props) {
             subtitle={tPage('subtitle')}
             action={
               <Link
-                href="/models/comparison"
+                href={buildModelComparisonPath(selectedIds)}
                 className="text-sm px-[var(--spacing-md)] py-[var(--spacing-xs)] border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-colors"
               >
-                {tShared('actions.compareAll')} →
+                {tShared('actions.compare')} ({selectedIds.length}/2) →
               </Link>
             }
           />
@@ -115,45 +119,68 @@ export default function ModelsPageClient({ locale }: Props) {
               {modelsByLifecycle[lifecycle].length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[var(--spacing-md)]">
                   {modelsByLifecycle[lifecycle].map(model => (
-                    <Link
+                    <article
                       key={model.name}
-                      href={`/models/${model.id}`}
-                      className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5 group"
+                      className={`border p-[var(--spacing-md)] transition-all hover:-translate-y-0.5 group ${
+                        selectedIds.includes(model.id)
+                          ? 'border-[var(--color-border-strong)] bg-[var(--color-hover)]'
+                          : 'border-[var(--color-border)] hover:border-[var(--color-border-strong)]'
+                      }`}
                     >
-                      <div className="flex justify-between items-start mb-[var(--spacing-sm)]">
-                        <div className="flex items-center gap-[var(--spacing-xs)]">
-                          <h3 className="text-lg font-semibold tracking-tight">{model.name}</h3>
-                          {model.verified && <VerifiedBadge size="sm" />}
-                        </div>
-                        <span className="text-lg text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all">
-                          →
-                        </span>
-                      </div>
-                      <div className="space-y-[var(--spacing-xs)] mb-[var(--spacing-md)]">
-                        <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
-                          <span className="text-[var(--color-text-muted)]">{tPage('size')}</span>
-                          <span className="text-[var(--color-text-secondary)]">{model.size}</span>
-                        </div>
-                        <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
-                          <span className="text-[var(--color-text-muted)]">{tPage('context')}</span>
-                          <span className="text-[var(--color-text-secondary)]">
-                            {formatTokenCount(model.contextWindow)}
+                      <Link href={`/models/${model.id}`} className="block">
+                        <div className="flex justify-between items-start mb-[var(--spacing-sm)]">
+                          <div className="flex items-center gap-[var(--spacing-xs)]">
+                            <h3 className="text-lg font-semibold tracking-tight">{model.name}</h3>
+                            {model.verified && <VerifiedBadge size="sm" />}
+                          </div>
+                          <span className="text-lg text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all">
+                            →
                           </span>
                         </div>
-                        <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
-                          <span className="text-[var(--color-text-muted)]">{tPage('pricing')}</span>
-                          <span className="text-[var(--color-text-secondary)]">
-                            {model.tokenPricing?.input !== null &&
-                            model.tokenPricing?.input !== undefined
-                              ? `$${model.tokenPricing.input}/M`
-                              : '-'}
-                          </span>
+                        <div className="space-y-[var(--spacing-xs)] mb-[var(--spacing-md)]">
+                          <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
+                            <span className="text-[var(--color-text-muted)]">{tPage('size')}</span>
+                            <span className="text-[var(--color-text-secondary)]">{model.size}</span>
+                          </div>
+                          <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
+                            <span className="text-[var(--color-text-muted)]">
+                              {tPage('context')}
+                            </span>
+                            <span className="text-[var(--color-text-secondary)]">
+                              {formatTokenCount(model.contextWindow)}
+                            </span>
+                          </div>
+                          <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
+                            <span className="text-[var(--color-text-muted)]">
+                              {tPage('pricing')}
+                            </span>
+                            <span className="text-[var(--color-text-secondary)]">
+                              {model.tokenPricing?.input !== null &&
+                              model.tokenPricing?.input !== undefined
+                                ? `$${model.tokenPricing.input}/M`
+                                : '-'}
+                            </span>
+                          </div>
                         </div>
-                      </div>
-                      <div className="flex items-center gap-[var(--spacing-xs)] text-xs text-[var(--color-text-muted)]">
-                        <span>{model.vendor}</span>
-                      </div>
-                    </Link>
+                        <div className="flex items-center gap-[var(--spacing-xs)] text-xs text-[var(--color-text-muted)]">
+                          <span>{model.vendor}</span>
+                        </div>
+                      </Link>
+                      <button
+                        type="button"
+                        aria-pressed={selectedIds.includes(model.id)}
+                        title={`${tShared('actions.compare')}: ${model.name}`}
+                        onClick={() => toggleModel(model.id)}
+                        className="mt-[var(--spacing-sm)] inline-flex w-full items-center justify-center gap-[var(--spacing-xs)] border-t border-[var(--color-border)] pt-[var(--spacing-sm)] text-xs font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
+                      >
+                        {selectedIds.includes(model.id) ? (
+                          <Check className="h-3.5 w-3.5" aria-hidden="true" />
+                        ) : (
+                          <Scale className="h-3.5 w-3.5" aria-hidden="true" />
+                        )}
+                        {tShared('actions.compare')}
+                      </button>
+                    </article>
                   ))}
                 </div>
               ) : (
