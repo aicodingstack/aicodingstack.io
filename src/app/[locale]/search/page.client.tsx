@@ -18,6 +18,7 @@ type Props = {
 
 export default function SearchPageClient({ locale, initialQuery }: Props) {
   const tPage = useTranslations('pages.search')
+  const tShared = useTranslations('shared')
   const router = useRouter()
   const searchParams = useSearchParams()
   const [query, setQuery] = useState(initialQuery)
@@ -101,8 +102,8 @@ export default function SearchPageClient({ locale, initialQuery }: Props) {
                           </h3>
                           <div className="mt-1">
                             <span className="inline-block px-2 py-0.5 text-xs border border-[var(--color-border)] text-[var(--color-text-muted)]">
-                              {tPage(
-                                `stacks.${result.category === 'providers' ? 'modelProviders' : result.category}`
+                              {tShared(
+                                `categories.plural.${result.category === 'providers' ? 'modelProviders' : result.category}`
                               )}
                             </span>
                           </div>

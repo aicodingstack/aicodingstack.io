@@ -1,1 +1,63 @@
-{}
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "2026-07-18-project-review",
+      "date": "2026-07-18",
+      "summary": "Backfilled official-source provenance for priority providers and models",
+      "changes": [
+        {
+          "category": "models",
+          "id": "claude-haiku-4-5",
+          "change": "updated",
+          "fields": ["docsUrl", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-flash",
+          "change": "updated",
+          "fields": ["docsUrl", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-2",
+          "change": "updated",
+          "fields": [
+            "docsUrl",
+            "lifecycle",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "providers",
+          "id": "anthropic",
+          "change": "updated",
+          "fields": [
+            "applyKeyUrl",
+            "docsUrl",
+            "verified",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "providers",
+          "id": "google",
+          "change": "updated",
+          "fields": ["docsUrl", "verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "providers",
+          "id": "openai",
+          "change": "updated",
+          "fields": ["docsUrl", "verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        }
+      ]
+    }
+  ]
+}
