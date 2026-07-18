@@ -70,9 +70,9 @@ Baseline captured on 2026-07-18:
   - Candidate fields: `sources`, `lastVerifiedAt`, `verifiedBy`, `confidence`, and field-level
     effective dates where pricing or benchmarks change independently.
 - [ ] Backfill provenance for all verified entries before treating verification as authoritative.
-- [ ] Generate a data-health report covering freshness, missing sources, broken URLs, relationship
+- [x] Generate a data-health report covering freshness, missing sources, broken URLs, relationship
   integrity, translation placeholders, and missing pricing/benchmark values.
-- [ ] Add freshness policies (for example 30/60/90-day review thresholds by field/category).
+- [x] Add freshness policies (for example 30/60/90-day review thresholds by field/category).
 - [ ] Automate change discovery from official sources, but keep human review before merge.
 - [ ] Populate a real changelog from manifest diffs instead of keeping an empty static file.
 
@@ -160,3 +160,6 @@ evidence; completed items are reflected in the checklists and implementation log
   `null`.
 - Added route/search regression tests and completed production verification: Biome, TypeScript,
   25 tests, manifest validation, generation, Next.js build, and OpenNext Cloudflare bundling.
+- Added a reproducible data-health scorecard and JSON snapshot covering provenance, freshness,
+  relationship integrity, translation placeholders, pricing, and benchmark coverage; CI now rejects
+  invalid or stale snapshots while leaving legacy migration debt visible as warnings and inventory.

@@ -12,6 +12,8 @@ Repository automation is written in TypeScript and executed with `tsx`. Prefer t
 | Sort manifest fields | `npm run refactor:sort-fields` | Reorders manifest JSON using schema order |
 | Fetch GitHub stars | `npm run fetch:github-stars` | Updates `data/github-stars.json` |
 | Validate manifests and data | `npm run test:validate` | Runs the validation test suite |
+| Check data health | `npm run data-health:check` | Fails on invalid health-report data |
+| Refresh data-health snapshot | `npm run data-health:report` | Writes `data/data-health.json` and `docs/DATA-HEALTH.md` |
 | Validate i18n structure | `npm run validate:i18n` | Checks locale alignment and translation shape |
 | Validate i18n usage | `npm run validate:i18n-usage` | Checks translation keys referenced by source |
 | Validate duplicate i18n values | `npm run validate:i18n-duplicates` | Reports duplicated translation content |
