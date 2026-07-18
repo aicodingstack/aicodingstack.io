@@ -36,10 +36,12 @@ Example:
 
 ## Current rollout state
 
-Legacy records may have `verified: true` without structured provenance because the boolean predates these fields. Treat those badges as evidence of a prior team review, not as a current freshness guarantee. They will be backfilled category by category; no source or review date should be invented merely to complete the fields.
+Legacy records may have `verified: true` without structured provenance because the boolean predates these fields. Treat those badges as evidence of a prior team review, not as a current freshness guarantee. They are being backfilled category by category; no source or review date should be invented merely to complete the fields. The first official-source batch covers OpenAI, Anthropic, and Google providers plus one representative model from each.
 
 For new entries and material updates, a `verified: true` change should include at least one authoritative source, `lastVerifiedAt`, `verifiedBy`, and `confidence`. Official product documentation and pricing pages are preferred over third-party summaries. Benchmark fields should cite the benchmark owner or an official model report.
 
-## Freshness direction
+## Freshness policy
 
-The next data-health automation should report verified records without provenance, records older than their category threshold, broken source URLs, and fields such as pricing or benchmarks with no field-level source. Until that automation is in place, freshness review remains a pull-request responsibility.
+Run `npm run data-health:report` after manifest or translation changes and commit both generated snapshots. CI runs `npm run data-health:check` to reject invalid or stale snapshots.
+
+The current review thresholds are 30 days for models and providers, 60 days for IDEs, CLIs, and extensions, and 90 days for vendors. Threshold findings remain warnings so that legacy debt stays visible without blocking unrelated work. Network reachability is checked by the separate scheduled URL workflow; source authority and field coverage remain pull-request review responsibilities.

@@ -39,8 +39,37 @@
     }
   },
   "verified": true,
+  "sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "title": "Claude models overview",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "lifecycle",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "title": "Claude API pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-haiku-4-5",
+      "title": "Introducing Claude Haiku 4.5",
+      "fields": ["name", "description", "releaseDate"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-18",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
   "websiteUrl": "https://www.anthropic.com",
-  "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
+  "docsUrl": "https://platform.claude.com/docs/en/about-claude/models/overview",
   "vendor": "Anthropic",
   "size": "Unknown",
   "contextWindow": 200000,

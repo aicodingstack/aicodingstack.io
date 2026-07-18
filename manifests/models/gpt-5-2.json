@@ -39,8 +39,33 @@
     }
   },
   "verified": true,
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.2",
+      "title": "GPT-5.2 model documentation",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "lifecycle",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-5-2/",
+      "title": "Introducing GPT-5.2",
+      "fields": ["name", "description", "releaseDate"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-18",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
   "websiteUrl": "https://openai.com",
-  "docsUrl": "https://platform.openai.com/docs/models/gpt-5.2",
+  "docsUrl": "https://developers.openai.com/api/docs/models/gpt-5.2",
   "vendor": "OpenAI",
   "size": "Unknown",
   "contextWindow": 400000,
@@ -51,7 +76,7 @@
     "cache": 0.175
   },
   "releaseDate": "2025-12-11",
-  "lifecycle": "latest",
+  "lifecycle": "maintained",
   "knowledgeCutoff": "2025-08-31",
   "inputModalities": ["text", "image"],
   "outputModalities": ["text"],

@@ -163,3 +163,7 @@ evidence; completed items are reflected in the checklists and implementation log
 - Added a reproducible data-health scorecard and JSON snapshot covering provenance, freshness,
   relationship integrity, translation placeholders, pricing, and benchmark coverage; CI now rejects
   invalid or stale snapshots while leaving legacy migration debt visible as warnings and inventory.
+- Completed the first official-source provenance batch for the OpenAI, Anthropic, and Google
+  providers and representative GPT-5.2, Claude Haiku 4.5, and Gemini 3 Flash model records.
+- Corrected GPT-5.2 from `latest` to `maintained` after its official model page identified it as a
+  previous frontier model that remains available.

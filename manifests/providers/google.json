@@ -38,9 +38,29 @@
       "description": "Google 的 AI 部門，提供先進的語言模型和 AI 服務，包括 Gemini，用於各類應用中的編碼、推理和內容生成。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://ai.google/",
+      "title": "Google AI",
+      "fields": ["name", "description", "websiteUrl", "vendor"]
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs",
+      "title": "Gemini API documentation",
+      "fields": ["docsUrl", "type"]
+    },
+    {
+      "url": "https://aistudio.google.com/app/apikey",
+      "title": "Google AI Studio API keys",
+      "fields": ["applyKeyUrl"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-18",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://ai.google.dev",
-  "docsUrl": "https://ai.google.dev/docs",
+  "docsUrl": "https://ai.google.dev/gemini-api/docs",
   "vendor": "google",
   "type": "foundation-model-provider",
   "applyKeyUrl": "https://aistudio.google.com/app/apikey",

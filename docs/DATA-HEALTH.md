@@ -7,15 +7,15 @@ Snapshot date: 2026-07-18. Regenerate with `npm run data-health:report`.
 | Metric | Value |
 | --- | ---: |
 | Manifest records | 134 |
-| Records with structured sources | 0 |
-| Verified records | 36 |
-| Verified with complete provenance | 0 |
+| Records with structured sources | 6 |
+| Verified records | 39 |
+| Verified with complete provenance | 6 |
 | Stale verified records | 0 |
 | Non-English values identical to English | 1411 |
 | Dangling product relationships | 5 |
 | Model benchmark coverage | 28.1% |
 | Products with pricing | 48/48 |
-| Errors / warnings / info | 0 / 41 / 134 |
+| Errors / warnings / info | 0 / 38 / 128 |
 
 ## Category Breakdown
 
@@ -24,8 +24,8 @@ Snapshot date: 2026-07-18. Regenerate with `npm run data-health:report`.
 | ides | 13 | 0 | 0 | 0 |
 | clis | 20 | 2 | 0 | 0 |
 | extensions | 15 | 3 | 0 | 0 |
-| models | 33 | 28 | 0 | 0 |
-| providers | 13 | 1 | 0 | 0 |
+| models | 33 | 28 | 3 | 0 |
+| providers | 13 | 4 | 3 | 0 |
 | vendors | 40 | 2 | 0 | 0 |
 
 ## Translation Placeholder Proxy
@@ -50,8 +50,8 @@ Exact English matches are a triage signal; product names and technical terms can
 
 | Issue | Count |
 | --- | ---: |
-| missing-sources | 134 |
-| verified-without-provenance | 36 |
+| missing-sources | 128 |
+| verified-without-provenance | 33 |
 | dangling-related-product | 5 |
 
 ## Priority Queue
@@ -71,7 +71,6 @@ visible in the scorecards and `data/data-health.json`.
 | warning | verified-without-provenance | extensions/claude-code | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | extensions/gemini-code-assist | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | extensions/kilo-code | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/claude-haiku-4-5 | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/claude-opus-4 | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/claude-opus-4-1 | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/claude-opus-4-5 | Verified record is missing sources, review date, reviewer, or confidence. |
@@ -79,7 +78,6 @@ visible in the scorecards and `data/data-health.json`.
 | warning | verified-without-provenance | models/claude-sonnet-4-5 | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/gemini-2-5-flash | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/gemini-2-5-pro | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/gemini-3-flash | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/gemini-3-pro | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/glm-4-6 | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/glm-4-6v | Verified record is missing sources, review date, reviewer, or confidence. |
@@ -89,7 +87,6 @@ visible in the scorecards and `data/data-health.json`.
 | warning | verified-without-provenance | models/gpt-5 | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/gpt-5-1 | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/gpt-5-1-codex | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/gpt-5-2 | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/gpt-5-codex | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/grok-code-fast-1 | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/kimi-k2-0905 | Verified record is missing sources, review date, reviewer, or confidence. |

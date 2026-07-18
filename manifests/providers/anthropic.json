@@ -38,12 +38,32 @@
       "description": "一家 AI 安全和研究公司，構建可靠且可解釋的 AI 系統，包括 Claude，用於編碼、分析和內容生成等各種應用。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.anthropic.com/company",
+      "title": "Anthropic — Company",
+      "fields": ["name", "description", "websiteUrl", "vendor"]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/home",
+      "title": "Claude Platform documentation",
+      "fields": ["docsUrl", "type"]
+    },
+    {
+      "url": "https://platform.claude.com/",
+      "title": "Claude Platform console",
+      "fields": ["applyKeyUrl"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-18",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://anthropic.com",
-  "docsUrl": "https://docs.anthropic.com",
+  "docsUrl": "https://platform.claude.com/docs/en/home",
   "vendor": "anthropic",
   "type": "foundation-model-provider",
-  "applyKeyUrl": "https://console.anthropic.com/",
+  "applyKeyUrl": "https://platform.claude.com/",
   "platformUrls": {
     "huggingface": "https://huggingface.co/anthropics",
     "artificialAnalysis": null,
