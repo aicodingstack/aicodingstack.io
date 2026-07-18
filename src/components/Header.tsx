@@ -265,6 +265,8 @@ function Header() {
               onClick={handleMenuToggle}
               className="p-[var(--spacing-xs)] hover:bg-[var(--color-hover)] transition-colors"
               aria-label={tComponent('header.toggleMenu')}
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-navigation"
             >
               <svg
                 className="w-6 h-6"
@@ -296,11 +298,15 @@ function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-[var(--color-border)] py-[var(--spacing-sm)]">
+          <nav
+            id="mobile-navigation"
+            aria-label={tComponent('header.toggleMenu')}
+            className="md:hidden border-t border-[var(--color-border)] py-[var(--spacing-sm)]"
+          >
             <ul className="flex flex-col gap-[var(--spacing-sm)] list-none">
               {menuItems.map(renderMobileMenuItem)}
             </ul>
-          </div>
+          </nav>
         )}
       </div>
 

@@ -129,10 +129,16 @@ export default function LanguageSwitcher() {
       </button>
 
       {isOpen && (
-        <div className="absolute bottom-full left-0 mb-1 min-w-[160px] bg-[var(--color-bg)] border border-[var(--color-border)] shadow-lg">
+        <div
+          role="menu"
+          aria-label={tComponent('footer.selectLanguage')}
+          className="absolute bottom-full left-0 mb-1 min-w-[160px] bg-[var(--color-bg)] border border-[var(--color-border)] shadow-lg"
+        >
           {locales.map(loc => (
             <button
               type="button"
+              role="menuitemradio"
+              aria-checked={loc === locale}
               key={loc}
               onClick={() => switchLocale(loc)}
               className={`w-full text-left px-[var(--spacing-sm)] py-[var(--spacing-xs)] text-xs hover:bg-[var(--color-hover)] transition-colors ${

@@ -135,14 +135,15 @@ const createCapabilityCheckRenderer = (capabilityName: ModelCapability) => {
 }
 
 const createPlatformLinkRenderer = (
-  getUrl: (model: ManifestModel) => string | null | undefined
+  getUrl: (model: ManifestModel) => string | null | undefined,
+  label: string
 ) => {
   return (model: ManifestModel) => {
     const url = getUrl(model)
     if (!url) return '-'
     return (
       <div className="flex justify-center">
-        <a href={url} target="_blank" rel="noopener noreferrer">
+        <a href={url} target="_blank" rel="noopener noreferrer" aria-label={label}>
           <ExternalLink className="w-4 h-4 text-[var(--color-text)] hover:text-[var(--color-text-secondary)]" />
         </a>
       </div>
@@ -382,7 +383,10 @@ export default function ComparePageClient({
       groupLabel: tShared('labels.findOnAiPlatforms'),
       key,
       label: tShared(`platforms.${key}`),
-      render: createPlatformLinkRenderer(m => m.platformUrls?.[key] ?? null),
+      render: createPlatformLinkRenderer(
+        m => m.platformUrls?.[key] ?? null,
+        tShared(`platforms.${key}`)
+      ),
     }))
 
     return [
@@ -451,10 +455,12 @@ export default function ComparePageClient({
     value,
     onChange,
     availableModels,
+    label,
   }: {
     value: string
     onChange: (value: string) => void
     availableModels: ModelOption[]
+    label: string
   }) => {
     const selectStyle = {
       // cspell:disable-next-line
@@ -465,6 +471,7 @@ export default function ComparePageClient({
 
     return (
       <select
+        aria-label={label}
         value={value}
         onChange={e => onChange(e.target.value)}
         className="appearance-none px-4 py-0 pr-8 bg-[var(--color-bg)] border border-[var(--color-border)] text-[var(--color-text)] min-w-[200px] min-h-[46px] text-center w-full cursor-pointer"
@@ -506,6 +513,7 @@ export default function ComparePageClient({
                     value={selectedModel1}
                     onChange={value => updateModelSlot(0, value)}
                     availableModels={getAvailableModelsForSlot(0)}
+                    label={`${tPage('selectModel')} 1`}
                   />
                 </div>
               </td>
@@ -515,6 +523,7 @@ export default function ComparePageClient({
                     value={selectedModel2}
                     onChange={value => updateModelSlot(1, value)}
                     availableModels={getAvailableModelsForSlot(1)}
+                    label={`${tPage('selectModel')} 2`}
                   />
                 </div>
               </td>

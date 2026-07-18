@@ -13,6 +13,7 @@ Repository automation is written in TypeScript and executed with `tsx`. Prefer t
 | Fetch GitHub stars | `npm run fetch:github-stars` | Updates `data/github-stars.json` |
 | Validate manifests and data | `npm run test:validate` | Runs the validation test suite |
 | Run browser smoke tests | `npm run test:e2e` | Exercises core journeys in Chromium against a local Next.js server |
+| Audit dependencies | `npm run security:audit` | Fails on high or critical npm advisories in the full dependency tree |
 | Check data health | `npm run data-health:check` | Fails on invalid health-report data |
 | Refresh data-health snapshot | `npm run data-health:report` | Writes `data/data-health.json` and `docs/DATA-HEALTH.md` |
 | Check manifest changelog | `npm run changelog:check` | Requires manifest diffs to be represented in `data/changelogs.json` |

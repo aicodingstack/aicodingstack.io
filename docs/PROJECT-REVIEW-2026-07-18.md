@@ -95,10 +95,10 @@ Baseline captured on 2026-07-18:
 - [x] Add route-contract tests for every manifest category.
 - [x] Add browser-level smoke tests for search, navigation, detail pages, locale switching, and
   comparison selection.
-- [ ] Add automated accessibility checks for dialogs, menus, comparison tables, and mobile nav.
+- [x] Add automated accessibility checks for dialogs, menus, comparison tables, and mobile nav.
 - [x] Run generation in CI and fail when tracked generated output differs.
 - [x] Make the aggregate CI job fail on cancelled or skipped required jobs as well as failures.
-- [ ] Add a small security workflow/policy for dependency and application review.
+- [x] Add a small security workflow/policy for dependency and application review.
 
 ## P2 — Architecture and Scale
 
@@ -177,3 +177,10 @@ evidence; completed items are reflected in the checklists and implementation log
   guard requiring future manifest changes to be represented in `data/changelogs.json`.
 - Fixed the search result category badge to use the shared translated category names after browser
   testing exposed a missing runtime message lookup.
+- Upgraded Next.js, OpenNext Cloudflare, next-intl, React, Vitest, Wrangler, and AJV to compatible
+  patched releases; refreshed vulnerable transitives and reduced `npm audit` from 42 advisories to
+  zero without accepting automated framework downgrades.
+- Added a required high/critical dependency-audit CI job and documented the security triage policy.
+- Added Axe browser checks for the search dialog, language menu, model comparison tables, and
+  expanded mobile navigation, fixing the accessible names, ARIA relationships, decorative content,
+  and contrast issues those checks exposed.

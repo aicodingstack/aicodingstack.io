@@ -81,7 +81,7 @@ If you're contributing to this project, please follow these security guidelines:
 
 ### Current Architecture
 
-AI Coding Stack is a static Next.js website deployed on Cloudflare Pages:
+AI Coding Stack is a mostly static Next.js website deployed on Cloudflare Workers:
 
 - **No user authentication**: The site doesn't handle user credentials
 - **No user data collection**: We don't store personal information
@@ -97,7 +97,8 @@ AI Coding Stack is a static Next.js website deployed on Cloudflare Pages:
 
 2. **Dependency vulnerabilities**: npm packages may have vulnerabilities
    - Mitigation: Dependabot automatic updates
-   - Regular security audits with `npm audit`
+   - CI blocks high and critical advisories across production and development dependencies
+   - Run the same audit locally with `npm run security:audit`
 
 3. **XSS risks**: User-contributed content could introduce XSS
    - Mitigation: All content is sanitized and validated
@@ -146,6 +147,16 @@ If you're deploying AI Coding Stack, ensure:
 - Enable security headers
 - Configure CSP (Content Security Policy)
 - Enable DDoS protection
+
+## Dependency Audit Policy
+
+- Dependabot checks npm and GitHub Actions dependencies every Monday.
+- Pull requests and `main` pushes run `npm run security:audit` against the official npm advisory
+  service.
+- High and critical advisories block CI. Moderate and low advisories require documented triage and
+  should be resolved in the next compatible dependency update.
+- Security upgrades should stay within supported framework and adapter ranges; do not accept an
+  automated downgrade solely to reduce the audit count.
 
 ## Contact
 

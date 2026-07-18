@@ -59,7 +59,7 @@ export default async function Home({ params }: LocalePageProps) {
       <section className="my-[var(--spacing-lg)]">
         <div className="max-w-6xl mx-auto px-[var(--spacing-md)]">
           <div className="text-center max-w-6xl mx-auto">
-            <div className="mb-[var(--spacing-md)] overflow-x-auto">
+            <div className="mb-[var(--spacing-md)] overflow-x-auto" aria-hidden="true">
               <pre className="text-[0.3rem] md:text-[0.45rem] leading-[1.3] inline-block text-left bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent">
                 {`╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
 ║                                                                                                                   ║
