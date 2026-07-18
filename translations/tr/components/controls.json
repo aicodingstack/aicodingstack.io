@@ -13,6 +13,7 @@
     "sortNameDesc": "Ad (Z-A)"
   },
   "searchDialog": {
+    "close": "Karşılaştırma seçiciyi kapat",
     "empty": "Start typing to search...",
     "navigate": "to navigate",
     "noResultsFor": "No results for \"{query}\"",

@@ -1,6 +1,6 @@
 {
   "footer": {
-    "copyright": "© 2025 AI Coding Stack • ❤︎로 구축 • 오픈 소스",
+    "copyright": "© {year} AI Coding Stack • ❤︎로 구축 • 오픈 소스",
     "openSource": "오픈 소스 AI 코딩 메타데이터 저장소.",
     "selectLanguage": "언어 선택",
     "tagline": "당신의 AI 코딩 생태계 허브.",

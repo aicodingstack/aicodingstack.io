@@ -388,13 +388,13 @@ When updating schemas:
 
 ```bash
 # Validate all manifests against schemas
-npm run test:validate-manifests
+npm run test:validate
 
 # Check TypeScript types
-npx tsc --noEmit
+npm run type-check
 
 # Lint manifest JSON files
-npm run lint:manifests
+npm run biome:check
 ```
 
 ---

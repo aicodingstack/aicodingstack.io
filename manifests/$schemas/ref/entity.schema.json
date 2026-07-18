@@ -25,7 +25,30 @@
     },
     "verified": {
       "type": "boolean",
-      "description": "Whether the entity has been verified by the AI Coding Stack team (default value is false)"
+      "description": "Whether the entity has been reviewed by the AI Coding Stack team against cited sources. Legacy verified records may not yet include structured provenance."
+    },
+    "sources": {
+      "type": "array",
+      "description": "Sources used to verify this entity or individual fields",
+      "items": {
+        "$ref": "#/$defs/source"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "lastVerifiedAt": {
+      "type": "string",
+      "format": "date",
+      "description": "Date when the cited facts were last reviewed (ISO 8601, YYYY-MM-DD)"
+    },
+    "verifiedBy": {
+      "type": ["string", "null"],
+      "description": "GitHub handle or automation identifier responsible for the latest review"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"],
+      "description": "Overall confidence in the current record based on source quality and recency"
     },
     "websiteUrl": {
       "type": "string",
@@ -34,5 +57,33 @@
       "description": "Official website URL"
     }
   },
-  "required": ["id", "name", "description", "translations", "verified", "websiteUrl"]
+  "required": ["id", "name", "description", "translations", "verified", "websiteUrl"],
+  "$defs": {
+    "source": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://",
+          "description": "Authoritative source URL"
+        },
+        "title": {
+          "type": "string",
+          "description": "Human-readable source title"
+        },
+        "fields": {
+          "type": "array",
+          "description": "Manifest fields supported by this source; omit when it supports the whole record",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": ["url"],
+      "additionalProperties": false
+    }
+  }
 }

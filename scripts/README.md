@@ -1,457 +1,54 @@
-# Scripts Documentation
+# Scripts
 
-This directory contains utility scripts for managing and validating the AI Coding Stack project. Scripts are organized into four categories:
+Repository automation is written in TypeScript and executed with `tsx`. Prefer the npm commands below so local and CI behavior stay aligned.
 
-- **`generate/`** - Generation scripts that create derived files
-- **`refactor/`** - Refactoring scripts that reorganize or reformat data
-- **`fetch/`** - Data fetching scripts that retrieve external data
-- **`validate/`** - URL validation scripts that check website accessibility
+## Commands
 
-## Directory Structure
+| Purpose | Command | Output or effect |
+| --- | --- | --- |
+| Generate all derived source | `npm run generate` | Rebuilds `src/lib/generated/` |
+| Generate manifest indexes | `npm run generate:manifests` | Rebuilds typed manifest modules |
+| Generate content metadata | `npm run generate:metadata` | Rebuilds article, docs, FAQ, and manifesto metadata |
+| Sort manifest fields | `npm run refactor:sort-fields` | Reorders manifest JSON using schema order |
+| Fetch GitHub stars | `npm run fetch:github-stars` | Updates `data/github-stars.json` |
+| Validate manifests and data | `npm run test:validate` | Runs the validation test suite |
+| Validate i18n structure | `npm run validate:i18n` | Checks locale alignment and translation shape |
+| Validate i18n usage | `npm run validate:i18n-usage` | Checks translation keys referenced by source |
+| Validate duplicate i18n values | `npm run validate:i18n-duplicates` | Reports duplicated translation content |
+| Check representative URLs | `npm run validate:urls:quick` | Runs the default network URL check |
+| Check every URL | `npm run validate:urls:all` | Checks all locales and slugs |
 
-```
+Networked commands can fail because an external service is unavailable. CI keeps URL validation separate from deterministic manifest, type, and build checks.
+
+## Layout
+
+```text
 scripts/
-├── generate/
-│   ├── index.mjs              # Entry point for all generation scripts
-│   ├── generate-manifest-indexes.mjs
-│   └── generate-metadata.mjs
-├── refactor/
-│   ├── index.mjs              # Entry point for all refactoring scripts
-│   ├── sort-manifest-fields.mjs
-│   ├── sort-locales-fields.mjs
-│   └── export-vendors.mjs
-├── fetch/
-│   ├── index.mjs              # Entry point for all fetch scripts
-│   ├── fetch-github-stars.mjs
-│   └── compare-models.mjs
-├── validate/
-│   ├── visit-all-urls.mjs
-│   ├── visit-urls-en-static-all-slugs.mjs
-│   ├── visit-urls-en-static-one-slug.mjs
-│   ├── visit-urls-all-locales-static-all-slugs.mjs
-│   ├── visit-urls-all-locales-static-one-slug.mjs
-│   └── lib/                   # Shared validation utilities
-├── _shared/
-│   └── runner.mjs             # Shared script runner for entry points
-└── temp/                      # Temporary experimental scripts
+├── _shared/       shared runner utilities
+├── fetch/         external data refreshes and comparison helpers
+├── generate/      derived TypeScript source generation
+├── refactor/      mechanical manifest and locale maintenance
+├── validate/      i18n and URL validation
+└── temp/          ignored experimental workspace
 ```
 
-## Usage
-
-### Running All Scripts in a Category
-
-Each category has an entry point script (`index.mjs`) that can run all scripts in that category:
+Each category with an `index.ts` auto-discovers sibling `.ts` scripts. A filename such as `generate-manifest-indexes.ts` is exposed as `manifest-indexes`:
 
 ```bash
-# Run all validation tests
-npm run test:validate
-
-# Run all generation scripts
-npm run generate
-
-# Run all refactoring scripts
-npm run refactor
-
-# Run all fetch scripts
-npm run fetch
-
-# Run all validation scripts (manual execution)
-node scripts/validate/visit-all-urls.mjs
+npx tsx scripts/generate/index.ts manifest-indexes
+npx tsx scripts/refactor/index.ts export-vendors
+npx tsx scripts/fetch/index.ts github-stars
 ```
 
-### Running Individual Scripts
+## Generated files
 
-You can also run individual scripts by passing the script name to the entry point:
+Generated modules under `src/lib/generated/` are committed. After changing manifests or content, run `npm run generate` and include the resulting deterministic diff. CI regenerates these files and fails when the committed output is stale.
 
-```bash
-# Generation scripts
-npm run generate:manifests
-npm run generate:metadata
+`data/github-stars.json` is source data, not generated build output. Update it with `npm run fetch:github-stars`; the dedicated scheduled workflow also opens a pull request when values change.
 
-# Refactoring scripts
-npm run refactor:sort-fields
+## Adding a script
 
-# Fetch scripts
-npm run fetch:github-stars
-
-# Validation scripts (run directly with node)
-node scripts/validate/visit-all-urls.mjs
-node scripts/validate/visit-urls-en-static-all-slugs.mjs
-node scripts/validate/visit-urls-all-locales-static-all-slugs.mjs
-```
-
-Or directly using Node:
-
-```bash
-# Run generation/fetch scripts
-node scripts/generate/index.mjs metadata
-node scripts/fetch/index.mjs github-stars
-node scripts/fetch/index.mjs compare-models
-
-# Run specific refactor scripts
-node scripts/refactor/index.mjs sort-manifest-fields
-node scripts/refactor/index.mjs sort-locales-fields
-node scripts/refactor/index.mjs export-vendors
-
-# Run validation scripts
-node scripts/validate/visit-all-urls.mjs
-node scripts/validate/visit-urls-en-static-all-slugs.mjs
-node scripts/validate/visit-urls-all-locales-static-all-slugs.mjs
-```
-
-## Validation (Test-based)
-
-Validation is implemented as **Vitest-based automated tests** under `tests/validate/`.
-
-### Run all validations (recommended)
-
-```bash
-npm run test:validate
-```
-
-**What it checks:**
-- JSON syntax validity
-- Schema compliance for each manifest type
-- Required fields presence
-- Field format validation (URLs, enums, etc.)
-- Filename matches the `id` field in the manifest
-
-**Manifest types validated:**
-- `manifests/clis/*.json` - CLI tools
-- `manifests/ides/*.json` - IDEs
-- `manifests/extensions/*.json` - Editor extensions
-- `manifests/providers/*.json` - API providers
-- `manifests/models/*.json` - LLM models
-- `manifests/vendors/*.json` - Vendor information
-- `manifests/collections.json` - Collections data
-
-### Run GitHub stars consistency validation
-
-```bash
-npm run test:validate
-```
-
-**What it checks:**
-- All entries in `github-stars.json` have corresponding manifest files
-- All manifest files are present in `github-stars.json`
-- No orphaned entries in either direction
-
-**Categories validated:**
-- `extensions`
-- `clis`
-- `ides`
-
-**Common issues:**
-- Orphaned entries: Entries in `github-stars.json` without manifest files
-- Missing entries: Manifest files without corresponding `github-stars.json` entries
-
-**How to fix:**
-1. Remove orphaned entries from `data/github-stars.json`
-2. Add missing entries to `data/github-stars.json` (set value to `null` if unknown)
-3. Or remove unused manifest files if they are not needed
-
-### Run URL validation (networked; CI-oriented)
-
-```bash
-npm run test:urls
-```
-
-**What it checks:**
-- URL accessibility (HTTP status codes)
-- Network connectivity
-- URL format validity
-
-**Note:** This check makes HTTP requests and can be flaky; it is typically run in CI and configured as non-blocking.
-
-## Generation Scripts
-
-### generate-manifest-indexes.mjs
-
-Generates TypeScript index files from individual manifest files.
-
-```bash
-npm run generate:manifests
-```
-
-**What it generates:**
-- `src/lib/generated/ides.ts` - IDE manifest index
-- `src/lib/generated/clis.ts` - CLI manifest index
-- `src/lib/generated/models.ts` - Model manifest index
-- `src/lib/generated/providers.ts` - Provider manifest index
-- `src/lib/generated/extensions.ts` - Extension manifest index
-- `src/lib/generated/vendors.ts` - Vendor manifest index
-- `src/lib/generated/index.ts` - Main manifest index
-- `src/lib/generated/github-stars.ts` - GitHub stars data
-
-### generate-metadata.mjs
-
-Generates TypeScript metadata files from MDX content and manifest data.
-
-```bash
-npm run generate:metadata
-```
-
-**What it generates:**
-- `src/lib/generated/metadata.ts` - Articles, docs, FAQ, and collections metadata
-- `src/lib/generated/articles.ts` - Article components and metadata
-- `src/lib/generated/docs.ts` - Doc components and metadata
-- `src/lib/generated/manifesto.ts` - Manifesto component loader
-
-## Refactoring Scripts
-
-### sort-manifest-fields.mjs
-
-Sorts fields in manifest JSON files according to their schema definitions.
-
-```bash
-npm run refactor:sort-fields
-# or
-node scripts/refactor/index.mjs sort-manifest-fields
-```
-
-**What it does:**
-- Reorders fields in manifest files to match schema property order
-- Ensures consistent field ordering across all manifests
-- Handles nested objects and arrays
-
-### sort-locales-fields.mjs
-
-Sorts fields in locale translation JSON files alphabetically for consistency.
-
-```bash
-node scripts/refactor/index.mjs sort-locales-fields
-```
-
-**What it does:**
-- Sorts keys in translation files (`translations/*/pages/*.json`, `translations/*/components.json`, etc.)
-- Ensures consistent ordering across all locale files
-- Helps with maintainability and git diff readability
-
-### export-vendors.mjs
-
-Exports vendor information from manifest files to vendor manifests.
-
-```bash
-node scripts/refactor/index.mjs export-vendors
-```
-
-**What it does:**
-- Extracts vendor data from ide, cli, extension, model, and provider manifests
-- Creates vendor files in `manifests/vendors/` if they don't already exist
-- Merges vendor information from multiple manifest sources
-- Skips existing vendor files (does not overwrite)
-
-**Note:** This script only creates new vendor files. It will skip vendors that already have a manifest file.
-
-## Data Fetching Scripts
-
-### fetch-github-stars.mjs
-
-Fetches GitHub star counts for projects listed in manifests.
-
-```bash
-npm run fetch:github-stars
-# or
-node scripts/fetch/index.mjs github-stars
-```
-
-**What it does:**
-- Read `githubUrl` from manifest files
-- Fetches star counts from GitHub API
-- Updates `data/github-stars.json` with latest counts
-
-**Environment variables:**
-- `GITHUB_TOKEN` - Optional GitHub token to avoid rate limits (recommended)
-
-**Note:** Without a GitHub token, you may hit rate limits (60 requests/hour).
-
-### compare-models.mjs
-
-Compares model manifest data with API reference data to identify mismatches.
-
-```bash
-node scripts/fetch/index.mjs compare-models
-# or
-node scripts/fetch/compare-models.mjs
-```
-
-**What it does:**
-- Reads model manifests from `manifests/models/`
-- Compares with API reference data from `tmp/models-dev-api.json`
-- Uses mapping from `manifests/mapping.json` to match vendors and models
-- Reports matched models, mismatched fields, and unmatched models
-
-**Output:**
-- Perfectly matched models (all fields match)
-- Matched models with field mismatches
-- Matched models with skipped fields (null in manifest)
-- Unmatched models (not found in API)
-
-**Note:** This script requires `tmp/models-dev-api.json` to be present. It's used for data validation and synchronization.
-
-## Additional Tools
-
-### Benchmark Fetcher
-
-Fetching benchmark performance data is handled by a separate skill:
-
-```bash
-node .claude/skills/benchmark-fetcher/scripts/fetch-benchmarks.mjs
-```
-
-**What it does:**
-- Fetches benchmark scores from 6 leaderboard websites using Playwright MCP
-- Supports SWE-bench, TerminalBench, SciCode, LiveCodeBench, MMMU, MMMU Pro, and WebDevArena
-- Updates model manifests with latest benchmark scores
-
-For full documentation, see `.claude/skills/benchmark-fetcher/SKILL.md`
-
-## URL Validation Scripts
-
-The `validate/` directory contains scripts for checking website URL accessibility. These scripts visit URLs and verify they return successful HTTP responses.
-
-### visit-all-urls.mjs
-
-Visits all URLs on the website (all locales, all static pages, all slugs).
-
-```bash
-node scripts/validate/visit-all-urls.mjs
-```
-
-**What it does:**
-- Builds a comprehensive list of all website URLs
-- Visits each URL with HTTP HEAD requests
-- Reports success/failure status for each URL
-- Supports retries and timeout handling
-
-**Environment variables:**
-- `BASE_URL` - Base URL to test (default: `http://localhost:3000`)
-
-### visit-urls-en-static-all-slugs.mjs
-
-Visits URLs with specific configuration: English locale only, all static pages, all slugs per route type.
-
-```bash
-node scripts/validate/visit-urls-en-static-all-slugs.mjs
-```
-
-**Configuration:**
-- Locales: English only
-- Static pages: All
-- Dynamic routes: All slugs for each route type
-
-### visit-urls-en-static-one-slug.mjs
-
-Visits URLs with specific configuration: English locale only, all static pages, one slug per route type.
-
-```bash
-node scripts/validate/visit-urls-en-static-one-slug.mjs
-```
-
-**Configuration:**
-- Locales: English only
-- Static pages: All
-- Dynamic routes: One slug per route type (for faster testing)
-
-### visit-urls-all-locales-static-all-slugs.mjs
-
-Visits URLs with specific configuration: All locales, all static pages, all slugs per route type.
-
-```bash
-node scripts/validate/visit-urls-all-locales-static-all-slugs.mjs
-```
-
-**Configuration:**
-- Locales: All configured locales
-- Static pages: All
-- Dynamic routes: All slugs for each route type
-
-### visit-urls-all-locales-static-one-slug.mjs
-
-Visits URLs with specific configuration: All locales, all static pages, one slug per route type.
-
-```bash
-node scripts/validate/visit-urls-all-locales-static-one-slug.mjs
-```
-
-**Configuration:**
-- Locales: All configured locales
-- Static pages: All
-- Dynamic routes: One slug per route type (for faster testing)
-
-**Common features:**
-- Concurrent requests (default: 5 concurrent)
-- Request timeout (default: 10 seconds)
-- Automatic retries (default: 2 retries)
-- Summary statistics
-
-**Note:** These scripts make HTTP requests and require the website to be running. They are useful for pre-deployment validation and CI/CD pipelines.
-
-## Build Process
-
-The build process runs validation tests and generation scripts automatically:
-
-```bash
-npm run build:next
-```
-
-This runs in order:
-1. `test:validate` - Validate repository data integrity (schemas, translations, alignment, etc.)
-3. `generate:manifests` - Generate manifest indexes
-4. `generate:metadata` - Generate TypeScript metadata
-5. Next.js build
-
-## Development Workflow
-
-During development, use:
-
-```bash
-npm run dev
-```
-
-This will:
-1. Generate manifest indexes
-2. Generate metadata
-3. Start Next.js development server
-
-## CI/CD Integration
-
-For CI/CD pipelines, you can run the validation test suite:
-
-```bash
-# Run validations (recommended for CI)
-npm run test:validate
-
-# Run all generation scripts
-npm run generate
-
-# Run all refactoring scripts
-npm run refactor
-
-# Run all fetch scripts (if needed)
-npm run fetch
-
-# Run URL validation scripts (if needed)
-node scripts/validate/visit-all-urls.mjs
-```
-
-Or run individual checks as needed:
-
-```bash
-npm run test:validate
-npm run generate:manifests
-npm run generate:metadata
-npm run refactor:sort-fields
-npm run refactor:sort-locales-fields
-npm run fetch:github-stars
-node scripts/fetch/index.mjs compare-models
-node scripts/validate/visit-all-urls.mjs
-```
-
-## Manual Execution
-
-To run tests manually without npm, you can use Vitest directly:
-
-```bash
-vitest run tests/validate --reporter=verbose
-```
+1. Add a TypeScript file to the relevant category.
+2. Use the category prefix when it improves discovery, for example `generate-example.ts` becomes `example`.
+3. Add an npm script only when the command is part of the normal contributor or CI workflow.
+4. Document external writes, required environment variables, and failure behavior.

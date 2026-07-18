@@ -1,6 +1,13 @@
 import type { MetadataRoute } from 'next'
 import { locales } from '@/i18n/config'
-import { clisData, idesData, modelsData, providersData } from '@/lib/generated'
+import {
+  clisData,
+  extensionsData,
+  idesData,
+  modelsData,
+  providersData,
+  vendorsData,
+} from '@/lib/generated'
 import { articles } from '@/lib/generated/articles'
 import { docSections } from '@/lib/generated/docs'
 import { SITE_CONFIG } from '@/lib/metadata/config'
@@ -51,6 +58,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/ai-coding-stack', priority: 0.9, changeFreq: 'weekly' as const },
     { path: '/docs', priority: 0.8, changeFreq: 'weekly' as const },
     { path: '/curated-collections', priority: 0.7, changeFreq: 'monthly' as const },
+    { path: '/manifesto', priority: 0.7, changeFreq: 'monthly' as const },
+    { path: '/ai-coding-landscape', priority: 0.8, changeFreq: 'weekly' as const },
+    { path: '/open-source-rank', priority: 0.8, changeFreq: 'daily' as const },
+    { path: '/ides/comparison', priority: 0.7, changeFreq: 'weekly' as const },
+    { path: '/clis/comparison', priority: 0.7, changeFreq: 'weekly' as const },
+    { path: '/extensions/comparison', priority: 0.7, changeFreq: 'weekly' as const },
+    { path: '/models/comparison', priority: 0.7, changeFreq: 'weekly' as const },
+    { path: '/models/compare', priority: 0.7, changeFreq: 'weekly' as const },
   ]
 
   const staticPages: MetadataRoute.Sitemap = staticPaths.flatMap(({ path, priority, changeFreq }) =>
@@ -123,6 +138,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       })
     )
 
+  const extensionDetailPages: MetadataRoute.Sitemap = (extensionsData as unknown as ManifestItem[])
+    .filter(extension => extension.id)
+    .flatMap(extension =>
+      generateLocalizedPages(baseUrl, `/extensions/${extension.id}`, {
+        lastModified: buildDate,
+        changeFrequency: 'weekly' as const,
+        priority: 0.6,
+      })
+    )
+
+  const vendorDetailPages: MetadataRoute.Sitemap = (vendorsData as unknown as ManifestItem[])
+    .filter(vendor => vendor.id)
+    .flatMap(vendor =>
+      generateLocalizedPages(baseUrl, `/vendors/${vendor.id}`, {
+        lastModified: buildDate,
+        changeFrequency: 'weekly' as const,
+        priority: 0.6,
+      })
+    )
+
   return [
     ...staticPages,
     ...articlePages,
@@ -131,5 +166,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...cliDetailPages,
     ...modelDetailPages,
     ...providerDetailPages,
+    ...extensionDetailPages,
+    ...vendorDetailPages,
   ]
 }

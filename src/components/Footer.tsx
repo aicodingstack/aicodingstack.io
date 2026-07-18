@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import LanguageSwitcher from '@/components/controls/LanguageSwitcher'
 import ThemeSwitcher from '@/components/controls/ThemeSwitcher'
 import { Link } from '@/i18n/navigation'
+import { METADATA_DEFAULTS } from '@/lib/metadata/config'
 
 // Footer link list component to reduce code duplication
 interface FooterLinkListProps {
@@ -96,7 +97,7 @@ export default function Footer() {
       </div>
 
       <div className="py-[var(--spacing-md)] text-center text-xs text-[var(--color-text-muted)]">
-        {tComponent('footer.copyright')}
+        {tComponent('footer.copyright', { year: METADATA_DEFAULTS.currentYear })}
       </div>
     </footer>
   )

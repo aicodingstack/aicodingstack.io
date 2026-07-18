@@ -9,5 +9,7 @@
   "lifecycle": "수명 주기",
   "outputPrice": "출력 가격",
   "releaseDate": "출시일",
+  "selectModel": "모델 선택",
+  "selectTwoModels": "비교할 모델 두 개를 선택하세요",
   "verified": "확인됨"
 }

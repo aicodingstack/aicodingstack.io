@@ -10,25 +10,6 @@ import ComparisonPageClient from './page.client'
 
 export const revalidate = 3600
 
-export async function generateStaticParams() {
-  const allModelIds = allModels.map(m => m.id)
-  const params: { models: string }[] = []
-
-  // Generate all two-model comparisons
-  for (let i = 0; i < allModelIds.length; i++) {
-    for (let j = i + 1; j < allModelIds.length; j++) {
-      params.push({
-        models: `${allModelIds[i]}-vs-${allModelIds[j]}`,
-      })
-    }
-  }
-
-  // Add empty path for dynamic selection
-  params.push({ models: '' })
-
-  return params
-}
-
 export async function generateMetadata({
   params,
 }: {

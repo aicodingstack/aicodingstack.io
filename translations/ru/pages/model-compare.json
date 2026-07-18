@@ -9,5 +9,7 @@
   "lifecycle": "Жизненный цикл",
   "outputPrice": "Цена вывода",
   "releaseDate": "Дата выпуска",
+  "selectModel": "Выбрать модель",
+  "selectTwoModels": "Выберите две модели для сравнения",
   "verified": "Проверено"
 }

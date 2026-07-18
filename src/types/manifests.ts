@@ -58,6 +58,16 @@ export interface ManifestPlatformUrls {
 }
 
 /**
+ * Source used to verify a manifest record or selected fields.
+ * Based on: /manifests/$schemas/ref/entity.schema.json#$defs/source
+ */
+export interface ManifestSource {
+  url: string
+  title?: string
+  fields?: string[]
+}
+
+/**
  * Base Entity - Fundamental properties all manifests share
  * Based on: /manifests/$schemas/ref/entity.schema.json
  */
@@ -67,6 +77,10 @@ export interface ManifestEntity {
   description: string
   translations: ManifestTranslations
   verified: boolean
+  sources?: ManifestSource[]
+  lastVerifiedAt?: string
+  verifiedBy?: string | null
+  confidence?: 'high' | 'medium' | 'low'
   websiteUrl: string
 }
 

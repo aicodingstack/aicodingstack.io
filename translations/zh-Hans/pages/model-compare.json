@@ -9,5 +9,7 @@
   "lifecycle": "生命周期",
   "outputPrice": "输出定价",
   "releaseDate": "发布日期",
+  "selectModel": "选择模型",
+  "selectTwoModels": "选择两个模型进行比较",
   "verified": "已验证"
 }

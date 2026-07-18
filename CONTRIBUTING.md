@@ -73,7 +73,7 @@ Want to contribute code? Great! Please:
 
 ### Prerequisites
 
-- **Node.js**: 20.x or higher
+- **Node.js**: 22.x or higher
 - **npm**: Latest version
 - **Git**: For version control
 
@@ -85,7 +85,7 @@ git clone https://github.com/aicodingstack/aicodingstack.io.git
 cd aicodingstack.io
 
 # Install dependencies
-npm install
+npm ci
 
 # Run validation tests
 npm run test:validate
@@ -106,9 +106,10 @@ Visit `http://localhost:3000` to see the site.
 - `npm run build` - Build for production
 - `npm run test:validate` - Run repository validation tests (schemas, translations, alignment, etc.)
 - `npm run test:urls` - Check URL accessibility (networked; CI-oriented)
-- `npm run lint` - Run ESLint
+- `npm run biome:check` - Run static analysis
+- `npm run type-check` - Run TypeScript checks
 - `npm run spell` - Run spell checker
-- `npm test` - Run tests (if available)
+- `npm test` - Run the Vitest suite in watch mode
 
 ## Manifest File Guidelines
 
@@ -121,61 +122,34 @@ All manifest files must conform to their respective JSON schemas located in `man
 - [Model Schema](manifests/$schemas/model.schema.json)
 - [Provider Schema](manifests/$schemas/provider.schema.json)
 
-### Example: Adding a New IDE
+### Examples
 
-Create a file in `manifests/ides/your-ide.json`:
+The schemas are authoritative and require fields that differ by category. Start from a current, validated manifest rather than copying an abbreviated snippet:
 
-```json
-{
-  "name": "Your IDE",
-  "id": "your-ide",
-  "vendor": "Your Company",
-  "description": "A brief description of what makes this IDE unique",
-  "websiteUrl": "https://example.com",
-  "docsUrl": "https://docs.example.com",
-  "latestVersion": "1.0.0",
-  "platforms": ["Windows", "macOS", "Linux"],
-  "pricing": {
-    "model": "freemium",
-    "free": true
-  }
-}
-```
+- [IDE example](manifests/ides/cursor.json)
+- [Model example](manifests/models/gpt-5-2.json)
 
-### Example: Adding a New Model
-
-Create a file in `manifests/models/your-model.json`:
-
-```json
-{
-  "name": "Your Model",
-  "id": "your-model",
-  "vendor": "Your Company",
-  "size": "175B",
-  "contextWindow": 128000,
-  "maxOutput": 4096,
-  "pricing": {
-    "input": 0.01,
-    "output": 0.03,
-    "currency": "USD",
-    "unit": "1K tokens"
-  },
-  "urls": {
-    "website": "https://example.com",
-    "documentation": "https://docs.example.com"
-  }
-}
-```
+Copy the closest existing manifest, update its `$schema`, `id`, content, translations, and URLs, then run the validation commands below.
 
 ### Field Requirements
 
-#### Common Fields (All Types)
-- **`name`**: Official product name (required)
-- **`id`**: Lowercase, hyphenated identifier (required, unique)
-- **`vendor`**: Company or organization name (required)
-- **`description`**: Clear, concise description (required)
-- **`websiteUrl`**: Official website (required)
-- **`docsUrl`**: Documentation URL (recommended)
+#### Common Fields (Most Types)
+
+- **`$schema`**: Relative path to the category schema
+- **`name`**: Official product name
+- **`id`**: Lowercase, hyphenated identifier that matches the filename
+- **`vendor`**: Company or organization name
+- **`description`**: Clear, concise default-language description
+- **`translations`**: Localized fields required by the category schema
+- **`websiteUrl`**: Official website
+- **`docsUrl`**: Documentation URL
+- **`sources`**: Authoritative URLs supporting the record or named fields
+- **`lastVerifiedAt`**: Date the cited facts were last reviewed
+- **`verifiedBy`**: GitHub handle or automation identifier responsible for the review
+- **`confidence`**: `high`, `medium`, or `low`, based on source quality and recency
+
+For new or updated records marked `verified: true`, include the provenance fields above. See
+[Data Trust and Verification](docs/DATA-TRUST.md) for the badge semantics and rollout policy.
 
 #### Model-Specific Fields
 - **`size`**: Model size (e.g., "175B", "70B")
@@ -257,7 +231,8 @@ chore(deps): update Next.js to 15.1.0
 3. ✅ **Validate locally**:
    ```bash
    npm run test:validate
-   npm run test:urls
+   npm run biome:check
+   npm run type-check
    npm run spell
    npm run build
    ```
@@ -275,7 +250,7 @@ chore(deps): update Next.js to 15.1.0
 
 ### Review Process
 
-- **Automated checks**: CI must pass (lint, validate, build)
+- **Automated checks**: CI must pass (Biome, types, validation, spell check, and build)
 - **Maintainer review**: At least 1 approval required
 - **Response time**: We aim to review within 3-5 business days
 - **Merge**: Once approved, maintainers will merge your PR

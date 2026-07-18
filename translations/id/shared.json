@@ -28,9 +28,13 @@
     "webDevArena": "WebDev Arena"
   },
   "capabilities": {
-    "capabilities": "Capabilities",
-    "inputModalities": "Input Modalities",
-    "outputModalities": "Output Modalities"
+    "capabilities": "Kemampuan",
+    "functionCalling": "Pemanggilan fungsi",
+    "inputModalities": "Modalitas masukan",
+    "outputModalities": "Modalitas keluaran",
+    "reasoning": "Penalaran",
+    "structuredOutputs": "Keluaran terstruktur",
+    "toolChoice": "Pemilihan alat"
   },
   "categories": {
     "all": {
@@ -96,6 +100,7 @@
     "aiCoding": "Coding AI",
     "aiCodingStack": "AI Coding Stack",
     "articles": "Articles",
+    "benchmarks": "Tolok ukur",
     "collections": "Collections",
     "community": "Community",
     "communityLinks": "Community Links",

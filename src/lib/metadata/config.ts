@@ -33,7 +33,7 @@ export const OG_IMAGE_CONFIG = {
 } as const
 
 export const METADATA_DEFAULTS = {
-  currentYear: 2025,
+  currentYear: new Date().getUTCFullYear(),
   titleSeparator: ' - ',
   listSeparator: ' | ',
   siteName: 'AI Coding Stack',

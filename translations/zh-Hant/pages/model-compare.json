@@ -9,5 +9,7 @@
   "lifecycle": "生命週期",
   "outputPrice": "輸出價格",
   "releaseDate": "發布日期",
+  "selectModel": "選擇模型",
+  "selectTwoModels": "選擇兩個模型進行比較",
   "verified": "已驗證"
 }

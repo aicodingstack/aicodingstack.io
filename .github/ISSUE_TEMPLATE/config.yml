@@ -7,5 +7,5 @@ contact_links:
     url: https://github.com/aicodingstack/aicodingstack.io/blob/main/docs
     about: Read the technical documentation
   - name: Schema Documentation
-    url: https://github.com/aicodingstack/aicodingstack.io/tree/main/manifests/schemas
+    url: https://github.com/aicodingstack/aicodingstack.io/tree/main/manifests/%24schemas
     about: View JSON schema documentation for manifests

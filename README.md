@@ -122,7 +122,7 @@ All manifest files are automatically validated against JSON schemas. Make sure y
 
 ## Tech Stack
 
-- **Framework**: Next.js 15 with App Router
+- **Framework**: Next.js 16 with App Router
 - **Styling**: Tailwind CSS 4
 - **Internationalization**: next-intl
 - **Content**: MDX for documentation
