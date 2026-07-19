@@ -39,10 +39,40 @@
     }
   },
   "verified": true,
+  "sources": [
+    {
+      "url": "https://code.claude.com/docs/en/how-claude-code-works",
+      "title": "How Claude Code works",
+      "fields": ["name", "description", "websiteUrl", "docsUrl"]
+    },
+    {
+      "url": "https://code.claude.com/docs/en/installation",
+      "title": "Claude Code installation",
+      "fields": ["platforms"]
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.215",
+      "title": "Claude Code v2.1.215 release",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
+    },
+    {
+      "url": "https://claude.com/pricing",
+      "title": "Claude plans and pricing",
+      "fields": ["pricing"]
+    },
+    {
+      "url": "https://code.claude.com/docs/en/mcp",
+      "title": "Claude Code MCP documentation",
+      "fields": ["description", "resourceUrls.mcp"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-19",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
   "websiteUrl": "https://code.claude.com",
-  "docsUrl": "https://docs.claude.com",
+  "docsUrl": "https://code.claude.com/docs",
   "vendor": "Anthropic",
-  "latestVersion": "2.0.56",
+  "latestVersion": "2.1.215",
   "githubUrl": "https://github.com/anthropics/claude-code",
   "license": "Proprietary",
   "pricing": [
@@ -93,7 +123,7 @@
     "download": null,
     "changelog": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
     "pricing": "https://claude.com/pricing",
-    "mcp": "https://docs.claude.com/en/docs/claude-code/mcp",
+    "mcp": "https://code.claude.com/docs/en/mcp",
     "issue": "https://github.com/anthropics/claude-code/issues"
   },
   "communityUrls": {

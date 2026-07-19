@@ -184,3 +184,15 @@ evidence; completed items are reflected in the checklists and implementation log
 - Added Axe browser checks for the search dialog, language menu, model comparison tables, and
   expanded mobile navigation, fixing the accessible names, ARIA relationships, decorative content,
   and contrast issues those checks exposed.
+
+### 2026-07-19
+
+- Merged the six project-review delivery PRs into `main` in dependency order after revalidating each
+  layer's independent diff and completing the final combined CI run.
+- Corrected five dangling product relationships, distinguishing actual catalog products from local
+  IDE launch commands, and made future dangling relationships fail the data-health CI check.
+- Added official-source provenance for Claude Code CLI, Claude Code IDE integrations, and Gemini
+  Code Assist; refreshed current documentation, releases, licensing, and product editions where the
+  official sources showed that legacy values had changed.
+- Improved the health snapshot from 6 to 9 records with complete provenance, reduced warnings from
+  38 to 30, and eliminated all dangling relationships.

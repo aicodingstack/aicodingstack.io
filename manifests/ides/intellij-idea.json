@@ -84,12 +84,7 @@
     "reddit": "https://www.reddit.com/r/IntelliJIDEA",
     "blog": "https://blog.jetbrains.com/idea"
   },
-  "relatedProducts": [
-    {
-      "type": "cli",
-      "productId": "idea"
-    }
-  ],
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",

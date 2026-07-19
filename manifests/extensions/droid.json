@@ -94,7 +94,7 @@
   "relatedProducts": [
     {
       "type": "cli",
-      "productId": "factory"
+      "productId": "droid-cli"
     }
   ],
   "supportedIdes": [
