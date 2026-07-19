@@ -84,12 +84,7 @@
     "reddit": null,
     "blog": "https://zed.dev/blog"
   },
-  "relatedProducts": [
-    {
-      "type": "cli",
-      "productId": "zed"
-    }
-  ],
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",

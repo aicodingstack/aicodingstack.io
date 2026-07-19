@@ -44,7 +44,7 @@ describe('data health reporting', () => {
     })
   })
 
-  it('reports missing provenance, stale reviews, and missing relationships', () => {
+  it('treats missing relationships as errors alongside provenance and freshness warnings', () => {
     const report = analyzeDataHealth(
       [
         record('ides', 'editor', {
@@ -66,7 +66,8 @@ describe('data health reporting', () => {
       recordsWithSources: 0,
       staleVerifiedRecords: 1,
       danglingRelationships: 1,
-      warnings: 3,
+      errors: 1,
+      warnings: 2,
       info: 1,
     })
   })

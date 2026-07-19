@@ -1,29 +1,29 @@
 # Data Health Report
 
-Snapshot date: 2026-07-18. Regenerate with `npm run data-health:report`.
+Snapshot date: 2026-07-19. Regenerate with `npm run data-health:report`.
 
 ## Scorecard
 
 | Metric | Value |
 | --- | ---: |
 | Manifest records | 134 |
-| Records with structured sources | 6 |
+| Records with structured sources | 9 |
 | Verified records | 39 |
-| Verified with complete provenance | 6 |
+| Verified with complete provenance | 9 |
 | Stale verified records | 0 |
 | Non-English values identical to English | 1411 |
-| Dangling product relationships | 5 |
+| Dangling product relationships | 0 |
 | Model benchmark coverage | 28.1% |
 | Products with pricing | 48/48 |
-| Errors / warnings / info | 0 / 38 / 128 |
+| Errors / warnings / info | 0 / 30 / 125 |
 
 ## Category Breakdown
 
 | Category | Total | Verified | Provenance complete | Stale |
 | --- | ---: | ---: | ---: | ---: |
 | ides | 13 | 0 | 0 | 0 |
-| clis | 20 | 2 | 0 | 0 |
-| extensions | 15 | 3 | 0 | 0 |
+| clis | 20 | 2 | 1 | 0 |
+| extensions | 15 | 3 | 2 | 0 |
 | models | 33 | 28 | 3 | 0 |
 | providers | 13 | 4 | 3 | 0 |
 | vendors | 40 | 2 | 0 | 0 |
@@ -50,9 +50,8 @@ Exact English matches are a triage signal; product names and technical terms can
 
 | Issue | Count |
 | --- | ---: |
-| missing-sources | 128 |
-| verified-without-provenance | 33 |
-| dangling-related-product | 5 |
+| missing-sources | 125 |
+| verified-without-provenance | 30 |
 
 ## Priority Queue
 
@@ -61,15 +60,7 @@ visible in the scorecards and `data/data-health.json`.
 
 | Severity | Issue | Record | Detail |
 | --- | --- | --- | --- |
-| warning | dangling-related-product | extensions/droid | References missing clis/factory. |
-| warning | dangling-related-product | extensions/qoder | References missing ides/qoder-ide. |
-| warning | dangling-related-product | ides/intellij-idea | References missing clis/idea. |
-| warning | dangling-related-product | ides/vscode | References missing clis/code. |
-| warning | dangling-related-product | ides/zed | References missing clis/zed. |
-| warning | verified-without-provenance | clis/claude-code-cli | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | clis/kilo-code-cli | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | extensions/claude-code | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | extensions/gemini-code-assist | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | extensions/kilo-code | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/claude-opus-4 | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/claude-opus-4-1 | Verified record is missing sources, review date, reviewer, or confidence. |

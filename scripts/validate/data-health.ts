@@ -316,7 +316,7 @@ export function analyzeDataHealth(
         const productId = getString(related.productId)
         if (targetCategory && productId && !idsByCategory.get(targetCategory)?.has(productId)) {
           issues.push({
-            severity: 'warning',
+            severity: 'error',
             code: 'dangling-related-product',
             category: record.category,
             id,

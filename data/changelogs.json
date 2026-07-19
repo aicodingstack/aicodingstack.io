@@ -2,6 +2,88 @@
   "version": 1,
   "entries": [
     {
+      "id": "2026-07-19-data-integrity",
+      "date": "2026-07-19",
+      "summary": "Fixed product relationships and expanded official-source provenance for coding assistants",
+      "changes": [
+        {
+          "category": "clis",
+          "id": "claude-code-cli",
+          "change": "updated",
+          "fields": [
+            "docsUrl",
+            "latestVersion",
+            "resourceUrls",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "extensions",
+          "id": "claude-code",
+          "change": "updated",
+          "fields": [
+            "docsUrl",
+            "latestVersion",
+            "resourceUrls",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "extensions",
+          "id": "droid",
+          "change": "updated",
+          "fields": ["relatedProducts"]
+        },
+        {
+          "category": "extensions",
+          "id": "gemini-code-assist",
+          "change": "updated",
+          "fields": [
+            "docsUrl",
+            "latestVersion",
+            "license",
+            "pricing",
+            "resourceUrls",
+            "supportedIdes",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "extensions",
+          "id": "qoder",
+          "change": "updated",
+          "fields": ["relatedProducts"]
+        },
+        {
+          "category": "ides",
+          "id": "intellij-idea",
+          "change": "updated",
+          "fields": ["relatedProducts"]
+        },
+        {
+          "category": "ides",
+          "id": "vscode",
+          "change": "updated",
+          "fields": ["relatedProducts"]
+        },
+        {
+          "category": "ides",
+          "id": "zed",
+          "change": "updated",
+          "fields": ["relatedProducts"]
+        }
+      ]
+    },
+    {
       "id": "2026-07-18-project-review",
       "date": "2026-07-18",
       "summary": "Backfilled official-source provenance for priority providers and models",
