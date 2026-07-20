@@ -1,0 +1,97 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "claude-sonnet-5",
+  "name": "Claude Sonnet 5",
+  "description": "Anthropic's next-generation Sonnet model combining speed and intelligence for planning, tool use, coding, and autonomous agentic work.",
+  "translations": {
+    "de": {
+      "description": "Anthropics Sonnet-Modell der nächsten Generation, das Geschwindigkeit und Intelligenz für Planung, Werkzeugnutzung, Programmierung und autonome agentische Arbeit verbindet."
+    },
+    "es": {
+      "description": "El modelo Sonnet de próxima generación de Anthropic combina velocidad e inteligencia para planificación, uso de herramientas, programación y trabajo agéntico autónomo."
+    },
+    "fr": {
+      "description": "Le modèle Sonnet nouvelle génération d’Anthropic allie vitesse et intelligence pour la planification, les outils, le codage et le travail agentique autonome."
+    },
+    "id": {
+      "description": "Model Sonnet generasi berikutnya dari Anthropic yang memadukan kecepatan dan kecerdasan untuk perencanaan, penggunaan alat, pemrograman, dan kerja agentik otonom."
+    },
+    "ja": {
+      "description": "計画、ツール利用、コーディング、自律的なエージェント作業に向けて速度と知能を両立する、Anthropicの次世代Sonnetモデル。"
+    },
+    "ko": {
+      "description": "계획, 도구 사용, 코딩, 자율 에이전트 작업을 위해 속도와 지능을 결합한 Anthropic의 차세대 Sonnet 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo Sonnet de próxima geração da Anthropic combina velocidade e inteligência para planejamento, uso de ferramentas, programação e trabalho agêntico autônomo."
+    },
+    "ru": {
+      "description": "Модель Anthropic Sonnet нового поколения, сочетающая скорость и интеллект для планирования, работы с инструментами, программирования и автономных агентных задач."
+    },
+    "tr": {
+      "description": "Anthropic’in planlama, araç kullanımı, kodlama ve otonom aracı çalışmaları için hız ile zekâyı birleştiren yeni nesil Sonnet modeli."
+    },
+    "zh-Hans": {
+      "description": "Anthropic 新一代 Sonnet 模型，在速度与智能之间取得平衡，适用于规划、工具调用、编码和自主智能体工作。"
+    },
+    "zh-Hant": {
+      "description": "Anthropic 新一代 Sonnet 模型，在速度與智慧之間取得平衡，適用於規劃、工具呼叫、編碼和自主智慧體工作。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "title": "Claude models overview",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "title": "Introducing Claude Sonnet 5",
+      "fields": ["name", "description", "releaseDate", "lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-20",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.anthropic.com",
+  "docsUrl": "https://platform.claude.com/docs/en/about-claude/models/whats-new-sonnet-5",
+  "vendor": "Anthropic",
+  "size": "Unknown",
+  "contextWindow": 1000000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "input": 2,
+    "output": 10,
+    "cache": 0.2
+  },
+  "releaseDate": "2026-06-30",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2026-01",
+  "inputModalities": ["text", "image", "pdf"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

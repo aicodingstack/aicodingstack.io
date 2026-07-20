@@ -1,19 +1,19 @@
 # Data Health Report
 
-Snapshot date: 2026-07-19. Regenerate with `npm run data-health:report`.
+Snapshot date: 2026-07-20. Regenerate with `npm run data-health:report`.
 
 ## Scorecard
 
 | Metric | Value |
 | --- | ---: |
-| Manifest records | 134 |
-| Records with structured sources | 9 |
-| Verified records | 39 |
-| Verified with complete provenance | 9 |
+| Manifest records | 143 |
+| Records with structured sources | 18 |
+| Verified records | 48 |
+| Verified with complete provenance | 18 |
 | Stale verified records | 0 |
 | Non-English values identical to English | 1411 |
 | Dangling product relationships | 0 |
-| Model benchmark coverage | 28.1% |
+| Model benchmark coverage | 22.4% |
 | Products with pricing | 48/48 |
 | Errors / warnings / info | 0 / 30 / 125 |
 
@@ -24,7 +24,7 @@ Snapshot date: 2026-07-19. Regenerate with `npm run data-health:report`.
 | ides | 13 | 0 | 0 | 0 |
 | clis | 20 | 2 | 1 | 0 |
 | extensions | 15 | 3 | 2 | 0 |
-| models | 33 | 28 | 3 | 0 |
+| models | 42 | 37 | 12 | 0 |
 | providers | 13 | 4 | 3 | 0 |
 | vendors | 40 | 2 | 0 | 0 |
 

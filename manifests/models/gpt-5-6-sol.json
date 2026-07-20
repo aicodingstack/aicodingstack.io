@@ -1,0 +1,97 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gpt-5-6-sol",
+  "name": "GPT-5.6 Sol",
+  "description": "OpenAI's flagship GPT-5.6 model for complex professional work across coding, research, science, cybersecurity, computer use, and design.",
+  "translations": {
+    "de": {
+      "description": "OpenAIs GPT-5.6-Flaggschiffmodell für anspruchsvolle professionelle Aufgaben in Programmierung, Forschung, Wissenschaft, Cybersicherheit, Computernutzung und Design."
+    },
+    "es": {
+      "description": "El modelo insignia GPT-5.6 de OpenAI para trabajos profesionales complejos de programación, investigación, ciencia, ciberseguridad, uso de computadoras y diseño."
+    },
+    "fr": {
+      "description": "Le modèle phare GPT-5.6 d’OpenAI pour les travaux professionnels complexes en programmation, recherche, science, cybersécurité, utilisation informatique et design."
+    },
+    "id": {
+      "description": "Model unggulan GPT-5.6 dari OpenAI untuk pekerjaan profesional kompleks dalam pemrograman, riset, sains, keamanan siber, penggunaan komputer, dan desain."
+    },
+    "ja": {
+      "description": "OpenAIのGPT-5.6フラッグシップモデル。コーディング、研究、科学、サイバーセキュリティ、コンピューター操作、デザインなどの複雑な専門業務向け。"
+    },
+    "ko": {
+      "description": "코딩, 연구, 과학, 사이버 보안, 컴퓨터 사용, 디자인 등 복잡한 전문 업무를 위한 OpenAI의 GPT-5.6 플래그십 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo principal GPT-5.6 da OpenAI para trabalhos profissionais complexos em programação, pesquisa, ciência, cibersegurança, uso de computadores e design."
+    },
+    "ru": {
+      "description": "Флагманская модель OpenAI GPT-5.6 для сложных профессиональных задач в программировании, исследованиях, науке, кибербезопасности, работе с компьютером и дизайне."
+    },
+    "tr": {
+      "description": "OpenAI’ın kodlama, araştırma, bilim, siber güvenlik, bilgisayar kullanımı ve tasarım alanlarındaki karmaşık profesyonel işler için amiral gemisi GPT-5.6 modeli."
+    },
+    "zh-Hans": {
+      "description": "OpenAI 的 GPT-5.6 旗舰模型，面向编码、研究、科学、网络安全、计算机使用和设计等复杂专业工作。"
+    },
+    "zh-Hant": {
+      "description": "OpenAI 的 GPT-5.6 旗艦模型，面向編碼、研究、科學、網路安全、電腦使用和設計等複雜專業工作。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "title": "GPT-5.6 Sol model documentation",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/gpt-5-6/",
+      "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+      "fields": ["name", "description", "releaseDate", "lifecycle", "tokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-20",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://openai.com",
+  "docsUrl": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+  "vendor": "OpenAI",
+  "size": "Unknown",
+  "contextWindow": 1050000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "input": 5,
+    "output": 30,
+    "cache": 0.5
+  },
+  "releaseDate": "2026-07-09",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2026-02-16",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}
