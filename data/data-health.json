@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-19",
+  "asOf": "2026-07-20",
   "thresholds": {
     "models": 30,
     "providers": 30,
@@ -9,14 +9,14 @@
     "vendors": 90
   },
   "summary": {
-    "totalRecords": 134,
-    "recordsWithSources": 9,
-    "verifiedRecords": 39,
-    "provenanceComplete": 9,
+    "totalRecords": 143,
+    "recordsWithSources": 18,
+    "verifiedRecords": 48,
+    "provenanceComplete": 18,
     "staleVerifiedRecords": 0,
     "translationPlaceholderValues": 1411,
     "danglingRelationships": 0,
-    "modelBenchmarkCoverage": 28.1,
+    "modelBenchmarkCoverage": 22.4,
     "productsWithPricing": 48,
     "productRecords": 48,
     "errors": 0,
@@ -43,9 +43,9 @@
       "stale": 0
     },
     "models": {
-      "total": 33,
-      "verified": 28,
-      "provenanceComplete": 3,
+      "total": 42,
+      "verified": 37,
+      "provenanceComplete": 12,
       "stale": 0
     },
     "providers": {
