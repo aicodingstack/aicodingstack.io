@@ -4,18 +4,24 @@
  * Do not edit manually - run the script to regenerate
  */
 
+import ClaudeFable5 from '../../../manifests/models/claude-fable-5.json'
 import ClaudeHaiku45 from '../../../manifests/models/claude-haiku-4-5.json'
 import ClaudeOpus4 from '../../../manifests/models/claude-opus-4.json'
 import ClaudeOpus41 from '../../../manifests/models/claude-opus-4-1.json'
 import ClaudeOpus45 from '../../../manifests/models/claude-opus-4-5.json'
+import ClaudeOpus48 from '../../../manifests/models/claude-opus-4-8.json'
 import ClaudeSonnet4 from '../../../manifests/models/claude-sonnet-4.json'
 import ClaudeSonnet45 from '../../../manifests/models/claude-sonnet-4-5.json'
+import ClaudeSonnet5 from '../../../manifests/models/claude-sonnet-5.json'
 import Composer from '../../../manifests/models/composer.json'
 import Deepseek32 from '../../../manifests/models/deepseek-3-2.json'
 import DeepseekR1 from '../../../manifests/models/deepseek-r1.json'
 import DeepseekV3Terminus from '../../../manifests/models/deepseek-v3-terminus.json'
 import Gemini25Flash from '../../../manifests/models/gemini-2-5-flash.json'
 import Gemini25Pro from '../../../manifests/models/gemini-2-5-pro.json'
+import Gemini31FlashLite from '../../../manifests/models/gemini-3-1-flash-lite.json'
+import Gemini31ProPreview from '../../../manifests/models/gemini-3-1-pro-preview.json'
+import Gemini35Flash from '../../../manifests/models/gemini-3-5-flash.json'
 import Gemini3Flash from '../../../manifests/models/gemini-3-flash.json'
 import Gemini3Pro from '../../../manifests/models/gemini-3-pro.json'
 import Glm46 from '../../../manifests/models/glm-4-6.json'
@@ -27,6 +33,9 @@ import Gpt5 from '../../../manifests/models/gpt-5.json'
 import Gpt51 from '../../../manifests/models/gpt-5-1.json'
 import Gpt51Codex from '../../../manifests/models/gpt-5-1-codex.json'
 import Gpt52 from '../../../manifests/models/gpt-5-2.json'
+import Gpt56Luna from '../../../manifests/models/gpt-5-6-luna.json'
+import Gpt56Sol from '../../../manifests/models/gpt-5-6-sol.json'
+import Gpt56Terra from '../../../manifests/models/gpt-5-6-terra.json'
 import Gpt5Codex from '../../../manifests/models/gpt-5-codex.json'
 import GrokCodeFast1 from '../../../manifests/models/grok-code-fast-1.json'
 import KatCoderProV1 from '../../../manifests/models/kat-coder-pro-v1.json'
@@ -40,18 +49,24 @@ import Qwen3CoderPlus from '../../../manifests/models/qwen3-coder-plus.json'
 import type { ManifestModel } from '../../types/manifests'
 
 export const modelsData = [
+  ClaudeFable5,
   ClaudeHaiku45,
   ClaudeOpus4,
   ClaudeOpus41,
   ClaudeOpus45,
+  ClaudeOpus48,
   ClaudeSonnet4,
   ClaudeSonnet45,
+  ClaudeSonnet5,
   Composer,
   Deepseek32,
   DeepseekR1,
   DeepseekV3Terminus,
   Gemini25Flash,
   Gemini25Pro,
+  Gemini31FlashLite,
+  Gemini31ProPreview,
+  Gemini35Flash,
   Gemini3Flash,
   Gemini3Pro,
   Glm46,
@@ -63,6 +78,9 @@ export const modelsData = [
   Gpt51,
   Gpt51Codex,
   Gpt52,
+  Gpt56Luna,
+  Gpt56Sol,
+  Gpt56Terra,
   Gpt5Codex,
   GrokCodeFast1,
   KatCoderProV1,
@@ -75,6 +93,6 @@ export const modelsData = [
   Qwen3CoderPlus,
 ] as unknown as ManifestModel[]
 
-export type Model = typeof ClaudeHaiku45
+export type Model = typeof ClaudeFable5
 
 export default modelsData

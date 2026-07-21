@@ -1,0 +1,101 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gemini-3-1-flash-lite",
+  "name": "Gemini 3.1 Flash-Lite",
+  "description": "Google's stable low-latency, cost-efficient multimodal model for high-volume agentic tasks, translation, extraction, and lightweight processing.",
+  "translations": {
+    "de": {
+      "description": "Googles stabiles multimodales Modell mit geringer Latenz und hoher Kosteneffizienz für agentische Aufgaben mit hohem Volumen, Übersetzung, Extraktion und leichte Verarbeitung."
+    },
+    "es": {
+      "description": "El modelo multimodal estable, de baja latencia y rentable de Google para tareas agénticas de gran volumen, traducción, extracción y procesamiento ligero."
+    },
+    "fr": {
+      "description": "Le modèle multimodal stable, économique et à faible latence de Google pour les tâches agentiques volumineuses, la traduction, l’extraction et le traitement léger."
+    },
+    "id": {
+      "description": "Model multimodal stabil Google berlatensi rendah dan hemat biaya untuk tugas agentik bervolume tinggi, penerjemahan, ekstraksi, dan pemrosesan ringan."
+    },
+    "ja": {
+      "description": "大規模なエージェントタスク、翻訳、抽出、軽量処理向けに、低レイテンシーと高いコスト効率を備えたGoogleの安定版マルチモーダルモデル。"
+    },
+    "ko": {
+      "description": "대규모 에이전트 작업, 번역, 추출, 경량 처리를 위한 Google의 안정적이고 지연 시간이 짧은 비용 효율적 멀티모달 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo multimodal estável, de baixa latência e econômico do Google para tarefas agênticas de alto volume, tradução, extração e processamento leve."
+    },
+    "ru": {
+      "description": "Стабильная мультимодальная модель Google с низкой задержкой и выгодной стоимостью для массовых агентных задач, перевода, извлечения и лёгкой обработки."
+    },
+    "tr": {
+      "description": "Google’ın yüksek hacimli aracı görevler, çeviri, çıkarım ve hafif işleme için kararlı, düşük gecikmeli ve uygun maliyetli çok modlu modeli."
+    },
+    "zh-Hans": {
+      "description": "Google 稳定的低延迟、高性价比多模态模型，适用于大规模智能体任务、翻译、信息抽取和轻量处理。"
+    },
+    "zh-Hant": {
+      "description": "Google 穩定的低延遲、高性價比多模態模型，適用於大規模智慧體任務、翻譯、資訊擷取和輕量處理。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite",
+      "title": "Gemini 3.1 Flash-Lite model documentation",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "title": "Gemini Developer API pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "title": "Gemini API release notes",
+      "fields": ["name", "description", "releaseDate", "lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-20",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://deepmind.google",
+  "docsUrl": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite",
+  "vendor": "Google",
+  "size": "Unknown",
+  "contextWindow": 1048576,
+  "maxOutput": 65536,
+  "tokenPricing": {
+    "input": 0.25,
+    "output": 1.5,
+    "cache": 0.025
+  },
+  "releaseDate": "2026-05-07",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2025-01",
+  "inputModalities": ["text", "image", "pdf", "audio", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

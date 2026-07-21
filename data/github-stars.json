@@ -54,8 +54,17 @@
     "zed": 87.3
   },
   "models": {
+    "claude-fable-5": null,
+    "claude-opus-4-8": null,
+    "claude-sonnet-5": null,
     "composer": null,
     "deepseek-3-2": null,
-    "glm-4-6v": null
+    "gemini-3-1-flash-lite": null,
+    "gemini-3-1-pro-preview": null,
+    "gemini-3-5-flash": null,
+    "glm-4-6v": null,
+    "gpt-5-6-luna": null,
+    "gpt-5-6-sol": null,
+    "gpt-5-6-terra": null
   }
 }

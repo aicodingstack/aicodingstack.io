@@ -1,0 +1,101 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gemini-3-1-pro-preview",
+  "name": "Gemini 3.1 Pro Preview",
+  "description": "Google's preview model for advanced reasoning, software engineering, multimodal understanding, and reliable multi-step agentic workflows.",
+  "translations": {
+    "de": {
+      "description": "Googles Vorschaumodell für fortgeschrittenes Schlussfolgern, Softwareentwicklung, multimodales Verständnis und zuverlässige mehrstufige agentische Abläufe."
+    },
+    "es": {
+      "description": "El modelo preliminar de Google para razonamiento avanzado, ingeniería de software, comprensión multimodal y flujos agénticos fiables de varios pasos."
+    },
+    "fr": {
+      "description": "Le modèle en préversion de Google pour le raisonnement avancé, l’ingénierie logicielle, la compréhension multimodale et les flux agentiques fiables en plusieurs étapes."
+    },
+    "id": {
+      "description": "Model pratinjau Google untuk penalaran tingkat lanjut, rekayasa perangkat lunak, pemahaman multimodal, dan alur kerja agentik bertahap yang andal."
+    },
+    "ja": {
+      "description": "高度な推論、ソフトウェアエンジニアリング、マルチモーダル理解、信頼性の高い多段階エージェントワークフロー向けのGoogleプレビューモデル。"
+    },
+    "ko": {
+      "description": "고급 추론, 소프트웨어 엔지니어링, 멀티모달 이해, 신뢰할 수 있는 다단계 에이전트 워크플로를 위한 Google 미리보기 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo de prévia do Google para raciocínio avançado, engenharia de software, compreensão multimodal e fluxos agênticos confiáveis de várias etapas."
+    },
+    "ru": {
+      "description": "Предварительная модель Google для продвинутых рассуждений, разработки ПО, мультимодального понимания и надёжных многоэтапных агентных процессов."
+    },
+    "tr": {
+      "description": "Google’ın gelişmiş akıl yürütme, yazılım mühendisliği, çok modlu anlama ve güvenilir çok adımlı aracı iş akışları için önizleme modeli."
+    },
+    "zh-Hans": {
+      "description": "Google 面向高级推理、软件工程、多模态理解和可靠多步骤智能体工作流的预览模型。"
+    },
+    "zh-Hant": {
+      "description": "Google 面向高階推理、軟體工程、多模態理解和可靠多步驟智慧體工作流的預覽模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview",
+      "title": "Gemini 3.1 Pro Preview model documentation",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "title": "Gemini Developer API pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+      "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
+      "fields": ["name", "description", "releaseDate", "lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-20",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://deepmind.google",
+  "docsUrl": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview",
+  "vendor": "Google",
+  "size": "Unknown",
+  "contextWindow": 1048576,
+  "maxOutput": 65536,
+  "tokenPricing": {
+    "input": 2,
+    "output": 12,
+    "cache": 0.2
+  },
+  "releaseDate": "2026-02-19",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2025-01",
+  "inputModalities": ["text", "image", "pdf", "audio", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}
