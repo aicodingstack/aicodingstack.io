@@ -2,6 +2,7 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "cline",
   "name": "Cline",
+  "aliases": ["Cline Bot"],
   "description": "Open-source autonomous coding agent for VS Code with model-agnostic design, MCP integration, and human-in-the-loop approval, trusted by 4M+ developers worldwide.",
   "translations": {
     "zh-Hans": {

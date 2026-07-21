@@ -40,6 +40,7 @@ export default function VendorsPageClient({ locale }: Props) {
       result = result.filter(vendor => {
         // Search in main name
         if (vendor.name.toLowerCase().includes(query)) return true
+        if (vendor.aliases?.some(alias => alias.toLowerCase().includes(query))) return true
         // Search in translations names if available
         if (vendor.translations) {
           return Object.values(vendor.translations).some(

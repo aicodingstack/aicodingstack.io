@@ -1,0 +1,65 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "gitlab",
+  "name": "GitLab",
+  "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools.",
+  "translations": {
+    "de": {
+      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+    },
+    "es": {
+      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+    },
+    "fr": {
+      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+    },
+    "id": {
+      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+    },
+    "ja": {
+      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+    },
+    "ko": {
+      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+    },
+    "pt": {
+      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+    },
+    "ru": {
+      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+    },
+    "tr": {
+      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+    },
+    "zh-Hans": {
+      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+    },
+    "zh-Hant": {
+      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://about.gitlab.com/company/",
+      "title": "About GitLab"
+    },
+    {
+      "url": "https://github.com/gitlabhq",
+      "title": "GitLab GitHub organization"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://about.gitlab.com",
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/gitlab-com",
+    "twitter": "https://x.com/gitlab",
+    "github": "https://github.com/gitlabhq",
+    "youtube": "https://www.youtube.com/@GitLab",
+    "discord": null,
+    "reddit": null,
+    "blog": "https://about.gitlab.com/blog"
+  }
+}

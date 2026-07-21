@@ -10,6 +10,15 @@
     {
       "type": "object",
       "properties": {
+        "aliases": {
+          "type": "array",
+          "description": "Alternative names that resolve to this canonical vendor",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
         "communityUrls": {
           "$ref": "./ref/community-urls.schema.json"
         }

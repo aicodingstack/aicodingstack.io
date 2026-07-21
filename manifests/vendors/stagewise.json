@@ -1,0 +1,65 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "stagewise",
+  "name": "stagewise",
+  "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows.",
+  "translations": {
+    "de": {
+      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+    },
+    "es": {
+      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+    },
+    "fr": {
+      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+    },
+    "id": {
+      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+    },
+    "ja": {
+      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+    },
+    "ko": {
+      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+    },
+    "pt": {
+      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+    },
+    "ru": {
+      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+    },
+    "tr": {
+      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+    },
+    "zh-Hans": {
+      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+    },
+    "zh-Hant": {
+      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://stagewise.io/",
+      "title": "stagewise official site"
+    },
+    {
+      "url": "https://github.com/stagewise-io",
+      "title": "stagewise GitHub organization"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://stagewise.io",
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/stagewise_io",
+    "github": "https://github.com/stagewise-io",
+    "youtube": null,
+    "discord": "https://discord.gg/stagewise",
+    "reddit": null,
+    "blog": null
+  }
+}

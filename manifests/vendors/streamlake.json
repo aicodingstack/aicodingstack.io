@@ -2,6 +2,7 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "streamlake",
   "name": "StreamLake",
+  "aliases": ["Kwai", "Kuaishou"],
   "description": "Video cloud service brand of Kuaishou providing live streaming, video processing, and content delivery capabilities leveraging experience from short-video platform operations.",
   "translations": {
     "zh-Hans": {

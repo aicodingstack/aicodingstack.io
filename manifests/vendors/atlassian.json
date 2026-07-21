@@ -1,0 +1,65 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "atlassian",
+  "name": "Atlassian",
+  "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent.",
+  "translations": {
+    "de": {
+      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+    },
+    "es": {
+      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+    },
+    "fr": {
+      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+    },
+    "id": {
+      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+    },
+    "ja": {
+      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+    },
+    "ko": {
+      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+    },
+    "pt": {
+      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+    },
+    "ru": {
+      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+    },
+    "tr": {
+      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+    },
+    "zh-Hans": {
+      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+    },
+    "zh-Hant": {
+      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://www.atlassian.com/company",
+      "title": "About Atlassian"
+    },
+    {
+      "url": "https://www.atlassian.com/software/rovo-dev",
+      "title": "Rovo Dev"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.atlassian.com",
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/atlassian",
+    "twitter": "https://x.com/Atlassian",
+    "github": "https://github.com/atlassian",
+    "youtube": "https://www.youtube.com/@Atlassian",
+    "discord": null,
+    "reddit": "https://www.reddit.com/r/atlassian",
+    "blog": "https://www.atlassian.com/blog"
+  }
+}

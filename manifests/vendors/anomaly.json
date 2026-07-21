@@ -1,0 +1,66 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "anomaly",
+  "name": "Anomaly",
+  "aliases": ["Anomaly Co."],
+  "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces.",
+  "translations": {
+    "de": {
+      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+    },
+    "es": {
+      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+    },
+    "fr": {
+      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+    },
+    "id": {
+      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+    },
+    "ja": {
+      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+    },
+    "ko": {
+      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+    },
+    "pt": {
+      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+    },
+    "ru": {
+      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+    },
+    "tr": {
+      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+    },
+    "zh-Hans": {
+      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+    },
+    "zh-Hant": {
+      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://anoma.ly",
+      "title": "Anomaly official site"
+    },
+    {
+      "url": "https://github.com/anomalyco",
+      "title": "Anomaly GitHub organization"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://anoma.ly",
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/opencode",
+    "github": "https://github.com/anomalyco",
+    "youtube": null,
+    "discord": "https://discord.gg/opencode",
+    "reddit": null,
+    "blog": null
+  }
+}

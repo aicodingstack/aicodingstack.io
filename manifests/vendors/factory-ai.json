@@ -2,6 +2,7 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "factory-ai",
   "name": "Factory AI",
+  "aliases": ["Factory.ai"],
   "description": "Agent-native software development company building autonomous AI Droids that automate the software development lifecycle, saving enterprises over 500,000 engineering hours.",
   "translations": {
     "zh-Hans": {
