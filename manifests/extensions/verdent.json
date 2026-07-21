@@ -2,6 +2,7 @@
   "$schema": "../$schemas/extension.schema.json",
   "id": "verdent",
   "name": "Verdent",
+  "familyId": "verdent",
   "description": "Advanced agentic coding assistant that orchestrates multiple AI agents in parallel to tackle complex software tasks with structured planning, verification, and customizable subagents.",
   "translations": {
     "zh-Hans": {
@@ -79,7 +80,7 @@
   },
   "relatedProducts": [
     {
-      "type": "ide",
+      "type": "desktop",
       "productId": "verdent-deck"
     }
   ],

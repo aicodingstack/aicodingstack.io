@@ -1,0 +1,115 @@
+{
+  "$schema": "../$schemas/desktop.schema.json",
+  "id": "air",
+  "name": "Air",
+  "familyId": "air",
+  "description": "JetBrains Air is a standalone desktop environment for delegating, running, and reviewing parallel coding-agent tasks.",
+  "translations": {
+    "zh-Hans": {
+      "description": "JetBrains Air 是一款独立桌面环境，用于委派、运行和审查并行的编码智能体任务。"
+    },
+    "de": {
+      "description": "JetBrains Air ist eine eigenständige Desktop-Umgebung zum Delegieren, Ausführen und Prüfen paralleler Coding-Agent-Aufgaben."
+    },
+    "ko": {
+      "description": "JetBrains Air는 병렬 코딩 에이전트 작업을 위임하고 실행하며 검토할 수 있는 독립형 데스크톱 환경입니다."
+    },
+    "es": {
+      "description": "JetBrains Air es un entorno de escritorio independiente para delegar, ejecutar y revisar tareas paralelas de agentes de programación."
+    },
+    "fr": {
+      "description": "JetBrains Air est un environnement de bureau autonome pour déléguer, exécuter et examiner des tâches parallèles d’agents de codage."
+    },
+    "id": {
+      "description": "JetBrains Air adalah lingkungan desktop mandiri untuk mendelegasikan, menjalankan, dan meninjau tugas agen coding secara paralel."
+    },
+    "ja": {
+      "description": "JetBrains Airは、並列で動作するコーディングエージェントのタスクを委任、実行、レビューするためのスタンドアロンデスクトップ環境です。"
+    },
+    "pt": {
+      "description": "O JetBrains Air é um ambiente de desktop independente para delegar, executar e revisar tarefas paralelas de agentes de programação."
+    },
+    "ru": {
+      "description": "JetBrains Air — автономная настольная среда для делегирования, запуска и проверки параллельных задач агентов программирования."
+    },
+    "tr": {
+      "description": "JetBrains Air, paralel kodlama ajanı görevlerini devretmek, çalıştırmak ve incelemek için bağımsız bir masaüstü ortamıdır."
+    },
+    "zh-Hant": {
+      "description": "JetBrains Air 是一款獨立桌面環境，用於委派、執行和審查並行的程式設計智慧體任務。"
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://air.dev/",
+      "title": "JetBrains Air product site",
+      "fields": ["description", "websiteUrl", "docsUrl", "vendor", "license", "pricing"]
+    },
+    {
+      "url": "https://air.dev/download",
+      "title": "JetBrains Air downloads",
+      "fields": ["platforms", "resourceUrls.download"]
+    },
+    {
+      "url": "https://air.dev/changelog",
+      "title": "JetBrains Air changelog",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://air.dev",
+  "docsUrl": "https://www.jetbrains.com/help/air",
+  "vendor": "JetBrains",
+  "latestVersion": "262.132.21",
+  "githubUrl": null,
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Preview Download",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://air.dev/download",
+    "changelog": "https://air.dev/changelog",
+    "pricing": "https://air.dev/#faq",
+    "mcp": null,
+    "issue": "https://youtrack.jetbrains.com/projects/AIR"
+  },
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/jetbrains",
+    "twitter": "https://x.com/getsome_air",
+    "github": null,
+    "youtube": null,
+    "discord": "https://discord.com/invite/jetbrains",
+    "reddit": null,
+    "blog": "https://blog.jetbrains.com/air/"
+  },
+  "relatedProducts": [],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": "/Applications/Air.app",
+      "installCommand": null,
+      "launchCommand": "open -a \"Air\""
+    },
+    {
+      "os": "Windows",
+      "installPath": null,
+      "installCommand": null,
+      "launchCommand": null
+    },
+    {
+      "os": "Linux",
+      "installPath": null,
+      "installCommand": null,
+      "launchCommand": null
+    }
+  ]
+}

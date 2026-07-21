@@ -1,323 +1,146 @@
 #!/usr/bin/env node
 
-/**
- * Sync all locale translation files with en/ as source of truth
- *
- * This script:
- * 1. Reads translations/en/ JSON files as the reference
- * 2. Scans all other enabled locale directories in translations/
- * 3. Adds missing keys (with English text as placeholder)
- * 4. Removes extra keys not present in English files
- * 5. Preserves JSON structure, key order, and formatting
- */
-
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
-
-// ANSI color codes for terminal output
-const colors = {
-  reset: '\x1b[0m',
-  green: '\x1b[32m',
-  red: '\x1b[31m',
-  yellow: '\x1b[33m',
-  blue: '\x1b[34m',
-  cyan: '\x1b[36m',
-}
-
-// Get project root (4 levels up from .claude/skills/i18n/scripts/)
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const PROJECT_ROOT = path.resolve(__dirname, '../../../../')
 const TRANSLATIONS_DIR = path.join(PROJECT_ROOT, 'translations')
 const EN_DIR = path.join(TRANSLATIONS_DIR, 'en')
+const write = process.argv.includes('--write')
 
-/**
- * Get enabled locales from src/i18n/config.ts
- * @returns {string[]} Array of enabled locale codes
- */
+if (write && process.argv.includes('--check')) {
+  console.error('Choose either --check or --write, not both.')
+  process.exit(1)
+}
+
 function getEnabledLocales() {
-  const configPath = path.join(PROJECT_ROOT, 'src/i18n/config.ts')
-  const configContent = fs.readFileSync(configPath, 'utf-8')
-
-  // Extract locales array from the config file
-  const match = configContent.match(/export const locales\s*=\s*\[([^\]]+)\]/s)
-  if (!match) {
-    throw new Error('Could not find locales array in src/i18n/config.ts')
-  }
-
-  // Parse the locale codes
-  const localesArray = match[1]
-  const localeMatches = localesArray.matchAll(/'([^']+)'/g)
-  return [...localeMatches].map(m => m[1])
+  const content = fs.readFileSync(path.join(PROJECT_ROOT, 'src/i18n/config.ts'), 'utf8')
+  const match = content.match(/export const locales\s*=\s*\[([^\]]+)\]/s)
+  if (!match) throw new Error('Could not parse locales from src/i18n/config.ts')
+  return [...match[1].matchAll(/'([^']+)'/g)].map(item => item[1])
 }
 
-/**
- * Get all JSON files in a directory recursively
- * @param {string} dir - Directory to scan
- * @returns {string[]} Array of relative JSON file paths
- */
 function getJsonFiles(dir) {
+  if (!fs.existsSync(dir)) return []
   const files = []
-
-  function traverse(currentDir, relativePath = '') {
-    const entries = fs.readdirSync(currentDir, { withFileTypes: true })
-
-    for (const entry of entries) {
-      if (entry.isDirectory()) {
-        traverse(path.join(currentDir, entry.name), path.join(relativePath, entry.name))
-      } else if (entry.isFile() && entry.name.endsWith('.json')) {
-        files.push(path.join(relativePath, entry.name))
-      }
+  function visit(current, relative = '') {
+    for (const entry of fs.readdirSync(current, { withFileTypes: true })) {
+      const nextRelative = path.join(relative, entry.name)
+      if (entry.isDirectory()) visit(path.join(current, entry.name), nextRelative)
+      else if (entry.isFile() && entry.name.endsWith('.json')) files.push(nextRelative)
     }
   }
-
-  traverse(dir)
-  return files
+  visit(dir)
+  return files.sort()
 }
 
-/**
- * Recursively get all keys from a nested object
- * @param {Object} obj - The object to traverse
- * @param {string} prefix - Current key path prefix
- * @returns {string[]} Array of dot-notation key paths
- */
-function getAllKeys(obj, prefix = '') {
-  const keys = []
-
-  for (const [key, value] of Object.entries(obj)) {
-    const fullKey = prefix ? `${prefix}.${key}` : key
-
-    if (value !== null && typeof value === 'object' && !Array.isArray(value)) {
-      keys.push(...getAllKeys(value, fullKey))
-    } else {
-      keys.push(fullKey)
-    }
-  }
-
-  return keys
-}
-
-/**
- * Recursively rebuild object with same structure and order as reference
- * @param {Object} reference - The reference object (en.json)
- * @param {Object} target - The target object to sync
- * @param {Array} added - Array to track added keys
- * @param {Array} removed - Array to track removed keys
- * @param {string} prefix - Current key path prefix
- * @returns {Object} Rebuilt object with same structure as reference
- */
-function rebuildWithSameOrder(reference, target, added, removed, prefix = '') {
-  const result = {}
-
-  // Iterate through reference keys in order
-  for (const [key, refValue] of Object.entries(reference)) {
-    const fullKey = prefix ? `${prefix}.${key}` : key
-
-    if (refValue !== null && typeof refValue === 'object' && !Array.isArray(refValue)) {
-      // It's a nested object
-      if (
-        key in target &&
-        typeof target[key] === 'object' &&
-        target[key] !== null &&
-        !Array.isArray(target[key])
-      ) {
-        // Recursively rebuild nested object
-        result[key] = rebuildWithSameOrder(refValue, target[key], added, removed, fullKey)
-      } else {
-        // Missing nested object, use reference structure
-        result[key] = rebuildWithSameOrder(refValue, {}, added, removed, fullKey)
-        // Track all leaf keys as added
-        const leafKeys = getAllKeys(refValue, fullKey)
-        added.push(...leafKeys)
-      }
-    } else {
-      // It's a leaf value
-      if (key in target) {
-        // Use target's translation
-        result[key] = target[key]
-      } else {
-        // Missing key, use English as placeholder
-        result[key] = refValue
-        added.push(fullKey)
-      }
-    }
-  }
-
-  // Track removed keys (keys in target but not in reference)
-  for (const key in target) {
-    const fullKey = prefix ? `${prefix}.${key}` : key
-    if (!(key in reference)) {
-      if (typeof target[key] === 'object' && target[key] !== null && !Array.isArray(target[key])) {
-        const leafKeys = getAllKeys(target[key], fullKey)
-        removed.push(...leafKeys)
-      } else {
-        removed.push(fullKey)
-      }
-    }
-  }
-
-  return result
-}
-
-/**
- * Sync a target JSON file with the English reference
- * @param {string} enFile - Path to the English reference file
- * @param {string} targetFile - Path to the target language file
- * @returns {Object} Sync report
- */
-function syncJsonFile(enFile, targetFile) {
-  const enData = JSON.parse(fs.readFileSync(enFile, 'utf-8'))
-
-  // Create target directory if it doesn't exist
-  const targetDir = path.dirname(targetFile)
-  if (!fs.existsSync(targetDir)) {
-    fs.mkdirSync(targetDir, { recursive: true })
-  }
-
-  let added = []
-  const removed = []
-
-  if (fs.existsSync(targetFile)) {
-    const targetData = JSON.parse(fs.readFileSync(targetFile, 'utf-8'))
-    const syncedData = rebuildWithSameOrder(enData, targetData, added, removed)
-    fs.writeFileSync(targetFile, `${JSON.stringify(syncedData, null, 2)}\n`, 'utf-8')
-  } else {
-    // File doesn't exist, create it with English content
-    fs.writeFileSync(targetFile, `${JSON.stringify(enData, null, 2)}\n`, 'utf-8')
-    added = getAllKeys(enData)
-  }
-
-  return { added, removed }
-}
-
-/**
- * Main sync function
- */
-function main() {
-  console.log(`${colors.cyan}🔄 Syncing translation files with en/...${colors.reset}\n`)
-
-  // Check if translations directory exists
-  if (!fs.existsSync(TRANSLATIONS_DIR)) {
-    console.error(
-      `${colors.red}✗ Translations directory not found: ${TRANSLATIONS_DIR}${colors.reset}`
+function leafKeys(value, prefix = '') {
+  if (value && typeof value === 'object' && !Array.isArray(value)) {
+    return Object.entries(value).flatMap(([key, child]) =>
+      leafKeys(child, prefix ? `${prefix}.${key}` : key)
     )
-    process.exit(1)
   }
+  return [prefix]
+}
 
-  // Check if English directory exists
-  if (!fs.existsSync(EN_DIR)) {
-    console.error(`${colors.red}✗ English directory not found: ${EN_DIR}${colors.reset}`)
-    process.exit(1)
-  }
+function synchronize(reference, target, prefix = '') {
+  const result = {}
+  const added = []
+  const removed = []
+  const targetObject = target && typeof target === 'object' && !Array.isArray(target) ? target : {}
 
-  // Get enabled locales
-  const enabledLocales = getEnabledLocales()
-  const targetLocales = enabledLocales.filter(locale => locale !== 'en')
-
-  if (targetLocales.length === 0) {
-    console.log(`${colors.yellow}⚠ No other locales enabled in config${colors.reset}`)
-    return
-  }
-
-  // Get all JSON files in English directory (relative paths)
-  const jsonFiles = getJsonFiles(EN_DIR)
-
-  if (jsonFiles.length === 0) {
-    console.log(`${colors.yellow}⚠ No JSON files found in en/${colors.reset}`)
-    return
-  }
-
-  let totalAdded = 0
-  let totalRemoved = 0
-  let filesModified = 0
-  const localeReports = {}
-
-  // Sync each locale
-  for (const locale of targetLocales) {
-    const localeDir = path.join(TRANSLATIONS_DIR, locale)
-    const localeAdded = []
-    const localeRemoved = []
-    const fileChanges = []
-
-    // Check if locale directory exists
-    if (!fs.existsSync(localeDir)) {
-      console.log(`${colors.yellow}⚠ Creating directory for ${locale}/${colors.reset}`)
-      fs.mkdirSync(localeDir, { recursive: true })
-    }
-
-    // Sync each JSON file
-    for (const relativePath of jsonFiles) {
-      const enFile = path.join(EN_DIR, relativePath)
-      const targetFile = path.join(localeDir, relativePath)
-
-      const { added, removed } = syncJsonFile(enFile, targetFile)
-
-      if (added.length > 0 || removed.length > 0) {
-        fileChanges.push({ file: relativePath, added, removed })
-        localeAdded.push(...added)
-        localeRemoved.push(...removed)
+  for (const [key, referenceValue] of Object.entries(reference)) {
+    const field = prefix ? `${prefix}.${key}` : key
+    if (referenceValue && typeof referenceValue === 'object' && !Array.isArray(referenceValue)) {
+      const nested = synchronize(referenceValue, targetObject[key], field)
+      result[key] = nested.result
+      added.push(...nested.added)
+      removed.push(...nested.removed)
+    } else if (Object.hasOwn(targetObject, key)) {
+      const targetValue = targetObject[key]
+      const referenceIsArray = Array.isArray(referenceValue)
+      const targetIsArray = Array.isArray(targetValue)
+      const targetIsObject = targetValue !== null && typeof targetValue === 'object'
+      if ((referenceIsArray && targetIsArray) || (!referenceIsArray && !targetIsObject)) {
+        result[key] = targetValue
+      } else {
+        result[key] = referenceValue
+        added.push(field)
+        removed.push(...leafKeys(targetValue, field))
       }
-    }
-
-    localeReports[locale] = {
-      added: localeAdded,
-      removed: localeRemoved,
-      fileChanges,
-    }
-
-    totalAdded += localeAdded.length
-    totalRemoved += localeRemoved.length
-    if (fileChanges.length > 0) filesModified++
-  }
-
-  // Display results
-  for (const locale of targetLocales) {
-    const report = localeReports[locale]
-
-    if (report.fileChanges.length > 0) {
-      console.log(`${colors.green}✓${colors.reset} Synced ${colors.blue}${locale}/${colors.reset}`)
-
-      for (const change of report.fileChanges) {
-        if (change.added.length > 0) {
-          console.log(
-            `  ${colors.green}+${colors.reset} Added ${change.added.length} key${change.added.length > 1 ? 's' : ''} in ${colors.blue}${change.file}${colors.reset}`
-          )
-        }
-        if (change.removed.length > 0) {
-          console.log(
-            `  ${colors.red}-${colors.reset} Removed ${change.removed.length} key${change.removed.length > 1 ? 's' : ''} in ${colors.blue}${change.file}${colors.reset}`
-          )
-        }
-      }
-
-      console.log('')
     } else {
-      console.log(
-        `${colors.green}✓${colors.reset} ${colors.blue}${locale}/${colors.reset} already in sync`
-      )
+      result[key] = referenceValue
+      added.push(field)
     }
   }
 
-  // Summary
-  console.log(`${colors.cyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${colors.reset}`)
+  for (const [key, value] of Object.entries(targetObject)) {
+    if (!Object.hasOwn(reference, key)) {
+      const field = prefix ? `${prefix}.${key}` : key
+      removed.push(...leafKeys(value, field))
+    }
+  }
+  return { result, added, removed }
+}
 
-  if (filesModified > 0) {
-    console.log(`${colors.green}✓ Sync complete!${colors.reset}`)
-    console.log(`  Modified: ${filesModified} locale${filesModified > 1 ? 's' : ''}`)
-    console.log(`  Added: ${totalAdded} key${totalAdded > 1 ? 's' : ''}`)
-    console.log(`  Removed: ${totalRemoved} key${totalRemoved > 1 ? 's' : ''}`)
+function main() {
+  if (!fs.existsSync(EN_DIR)) throw new Error(`English translations not found: ${EN_DIR}`)
+  const locales = getEnabledLocales().filter(locale => locale !== 'en')
+  const englishFiles = getJsonFiles(EN_DIR)
+  let driftCount = 0
+  let extraFileCount = 0
+
+  for (const locale of locales) {
+    const localeDir = path.join(TRANSLATIONS_DIR, locale)
+    const localeFiles = getJsonFiles(localeDir)
+    const extraFiles = localeFiles.filter(file => !englishFiles.includes(file))
+    for (const relativePath of extraFiles) {
+      console.log(`${locale}: extra file requires manual review: ${relativePath}`)
+      driftCount++
+      extraFileCount++
+    }
+
+    for (const relativePath of englishFiles) {
+      const reference = JSON.parse(fs.readFileSync(path.join(EN_DIR, relativePath), 'utf8'))
+      const targetPath = path.join(localeDir, relativePath)
+      const exists = fs.existsSync(targetPath)
+      const target = exists ? JSON.parse(fs.readFileSync(targetPath, 'utf8')) : {}
+      const synced = synchronize(reference, target)
+      if (!exists || synced.added.length > 0 || synced.removed.length > 0) {
+        driftCount++
+        console.log(
+          `${locale}/${relativePath}: ${exists ? '' : 'missing file; '}${synced.added.length} key(s) to add, ${synced.removed.length} key(s) to remove`
+        )
+        if (synced.added.length) console.log(`  add: ${synced.added.join(', ')}`)
+        if (synced.removed.length) console.log(`  remove: ${synced.removed.join(', ')}`)
+        if (write) {
+          fs.mkdirSync(path.dirname(targetPath), { recursive: true })
+          fs.writeFileSync(targetPath, `${JSON.stringify(synced.result, null, 2)}\n`, 'utf8')
+        }
+      }
+    }
+  }
+
+  if (driftCount === 0) {
+    console.log('All locale JSON structures match English.')
+    return
+  }
+  if (write) {
+    console.log(
+      `Synchronized ${driftCount} structural difference(s). Extra files were not deleted.`
+    )
+    if (extraFileCount > 0) process.exitCode = 1
   } else {
-    console.log(`${colors.green}✓ all locales are already in sync${colors.reset}`)
+    console.error(`Found ${driftCount} structural difference(s). Preview only; no files changed.`)
+    process.exitCode = 1
   }
 }
 
-// Run the script
 try {
   main()
 } catch (error) {
-  console.error(`${colors.red}✗ Error: ${error.message}${colors.reset}`)
-  console.error(error.stack)
+  console.error(`i18n sync failed: ${error.message}`)
   process.exit(1)
 }

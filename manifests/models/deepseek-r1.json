@@ -2,7 +2,7 @@
   "$schema": "../$schemas/model.schema.json",
   "id": "deepseek-r1",
   "name": "DeepSeek R1",
-  "description": "DeepSeek R1 is a 1.3B parameter language model with 128K context window, designed for advanced reasoning and code generation tasks.",
+  "description": "DeepSeek's open-weight 671B MoE reasoning model for mathematics, coding, and complex problem solving.",
   "translations": {
     "zh-Hans": {
       "description": "DeepSeek R1 是 1.3B 参数的语言模型，具备 128K 上下文窗口，专为高级推理和代码生成任务设计。"
@@ -38,20 +38,43 @@
       "description": "DeepSeek R1 是 1.3B 參數的語言模型，具備 128K 上下文視窗，專為高級推理和代碼生成任務設計。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "title": "Official DeepSeek-R1 model card",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "releaseDate",
+        "lifecycle",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "platformUrls"
+      ]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.deepseek.com",
   "docsUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
   "vendor": "DeepSeek",
   "size": "671B",
-  "contextWindow": 64000,
-  "maxOutput": 4000,
+  "contextWindow": 128000,
+  "maxOutput": null,
   "tokenPricing": {
-    "input": 0.14,
-    "output": 0.14,
-    "cache": null
+    "status": "unavailable",
+    "reason": "historical-price-unverified",
+    "primaryOffer": null,
+    "offers": []
   },
-  "releaseDate": null,
-  "lifecycle": "latest",
+  "releaseDate": "2025-01-20",
+  "lifecycle": "maintained",
   "knowledgeCutoff": null,
   "inputModalities": ["text"],
   "outputModalities": ["text"],

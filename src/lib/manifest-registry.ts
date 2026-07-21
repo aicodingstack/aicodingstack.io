@@ -7,6 +7,7 @@
 
 import type {
   ManifestCLI,
+  ManifestDesktop,
   ManifestExtension,
   ManifestIDE,
   ManifestModel,
@@ -15,6 +16,7 @@ import type {
 } from '@/types/manifests'
 import {
   clisData,
+  desktopsData,
   extensionsData,
   idesData,
   modelsData,
@@ -25,7 +27,14 @@ import {
 /**
  * Supported manifest categories
  */
-export type ManifestCategory = 'ides' | 'clis' | 'extensions' | 'models' | 'providers' | 'vendors'
+export type ManifestCategory =
+  | 'ides'
+  | 'clis'
+  | 'desktops'
+  | 'extensions'
+  | 'models'
+  | 'providers'
+  | 'vendors'
 
 /**
  * Unified manifest type for all categories
@@ -33,6 +42,7 @@ export type ManifestCategory = 'ides' | 'clis' | 'extensions' | 'models' | 'prov
 export type ManifestItem =
   | ManifestIDE
   | ManifestCLI
+  | ManifestDesktop
   | ManifestExtension
   | ManifestModel
   | ManifestProvider
@@ -60,6 +70,7 @@ export interface CategoryConfig {
 const CATEGORY_CONFIG: Record<ManifestCategory, CategoryConfig> = {
   ides: { routeBase: 'ides', dataKey: 'ides' },
   clis: { routeBase: 'clis', dataKey: 'clis' },
+  desktops: { routeBase: 'desktops', dataKey: 'desktops' },
   extensions: { routeBase: 'extensions', dataKey: 'extensions' },
   models: { routeBase: 'models', dataKey: 'models' },
   providers: { routeBase: 'model-providers', dataKey: 'providers' },
@@ -72,6 +83,7 @@ const CATEGORY_CONFIG: Record<ManifestCategory, CategoryConfig> = {
 const MANIFEST_DATA: Record<ManifestCategory, ManifestItem[]> = {
   ides: idesData,
   clis: clisData,
+  desktops: desktopsData,
   extensions: extensionsData,
   models: modelsData,
   providers: providersData,

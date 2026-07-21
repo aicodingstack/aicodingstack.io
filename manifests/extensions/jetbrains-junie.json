@@ -2,6 +2,7 @@
   "$schema": "../$schemas/extension.schema.json",
   "id": "jetbrains-junie",
   "name": "JetBrains Junie",
+  "familyId": "junie",
   "description": "JetBrains Junie is an AI coding agent that autonomously executes tasks or collaborates with developers. It handles routine tasks independently while assisting with complex work.",
   "translations": {
     "zh-Hans": {
@@ -84,7 +85,7 @@
     "reddit": "https://www.reddit.com/r/JetBrains",
     "blog": "https://blog.jetbrains.com/junie"
   },
-  "relatedProducts": [],
+  "relatedProducts": [{ "type": "cli", "productId": "junie-cli" }],
   "supportedIdes": [
     {
       "ideId": "jetbrains",

@@ -1,0 +1,112 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "llama-4-scout",
+  "name": "Llama 4 Scout",
+  "description": "Meta's open-weight multimodal MoE with a 10M-token context window for reasoning over large codebases and long documents.",
+  "translations": {
+    "de": {
+      "description": "Metas multimodales Open-Weight-MoE mit 10-Millionen-Token-Kontext für Schlussfolgerungen über große Codebasen und lange Dokumente."
+    },
+    "es": {
+      "description": "El MoE multimodal de pesos abiertos de Meta con contexto de 10 millones de tokens para razonar sobre grandes bases de código y documentos largos."
+    },
+    "fr": {
+      "description": "Le MoE multimodal à poids ouverts de Meta, avec 10 millions de jetons de contexte, pour analyser de grands codes et de longs documents."
+    },
+    "id": {
+      "description": "MoE multimodal berbobot terbuka Meta dengan konteks 10 juta token untuk menalar basis kode besar dan dokumen panjang."
+    },
+    "ja": {
+      "description": "大規模コードベースや長文書を推論するための1,000万トークンコンテキストを備えたMetaのオープンウェイト・マルチモーダルMoE。"
+    },
+    "ko": {
+      "description": "대규모 코드베이스와 긴 문서를 추론할 수 있는 1천만 토큰 컨텍스트를 갖춘 Meta의 오픈 웨이트 멀티모달 MoE입니다."
+    },
+    "pt": {
+      "description": "O MoE multimodal de pesos abertos da Meta com contexto de 10 milhões de tokens para raciocinar sobre grandes bases de código e documentos longos."
+    },
+    "ru": {
+      "description": "Мультимодальная MoE-модель Meta с открытыми весами и контекстом 10 млн токенов для анализа больших кодовых баз и длинных документов."
+    },
+    "tr": {
+      "description": "Meta'nın büyük kod tabanları ve uzun belgeler üzerinde akıl yürütmek için 10 milyon belirteç bağlamlı açık ağırlıklı çok modlu MoE modeli."
+    },
+    "zh-Hans": {
+      "description": "Meta 的开放权重多模态 MoE，提供 1000 万 token 上下文，用于分析大型代码库和长文档。"
+    },
+    "zh-Hant": {
+      "description": "Meta 的開放權重多模態 MoE，提供 1000 萬 token 上下文，用於分析大型程式碼庫和長文件。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+      "title": "Introducing Llama 4",
+      "fields": [
+        "name",
+        "description",
+        "releaseDate",
+        "lifecycle",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "title": "Llama 4 Scout official model card",
+      "fields": ["size", "contextWindow", "knowledgeCutoff", "platformUrls.huggingface"]
+    },
+    {
+      "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "title": "Llama 4 Scout official model card — MMMU; Instruction-tuned model; 0-shot accuracy; label: Llama 4 Scout; observed 2026-07-21",
+      "fields": ["benchmarks.mmmu"]
+    },
+    {
+      "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "title": "Llama 4 Scout official model card — MMMU-Pro; Instruction-tuned model; 0-shot; average of Standard and Vision task scores; label: Llama 4 Scout; observed 2026-07-21",
+      "fields": ["benchmarks.mmmuPro"]
+    },
+    {
+      "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "title": "Llama 4 Scout official model card — LiveCodeBench, 2024-10-01 to 2025-02-01; Instruction-tuned model; 0-shot pass@1; label: Llama 4 Scout; observed 2026-07-21",
+      "fields": ["benchmarks.liveCodeBench"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://ai.meta.com",
+  "docsUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+  "vendor": "Meta",
+  "size": "109B (17B active)",
+  "contextWindow": 10000000,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "not-applicable",
+    "reason": "open-weights-only",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "releaseDate": "2025-04-05",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2024-08",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": [],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": 69.4,
+    "mmmuPro": 52.2,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": 32.8
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

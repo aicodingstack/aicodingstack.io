@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url'
 export const MANIFEST_CATEGORIES = [
   'ides',
   'clis',
+  'desktops',
   'extensions',
   'models',
   'providers',
@@ -21,6 +22,7 @@ const FRESHNESS_THRESHOLDS: Record<ManifestCategory, number> = {
   providers: 30,
   ides: 60,
   clis: 60,
+  desktops: 60,
   extensions: 60,
   vendors: 90,
 }
@@ -28,6 +30,7 @@ const FRESHNESS_THRESHOLDS: Record<ManifestCategory, number> = {
 const RELATED_PRODUCT_CATEGORIES: Record<string, ManifestCategory> = {
   ide: 'ides',
   cli: 'clis',
+  desktop: 'desktops',
   extension: 'extensions',
 }
 
@@ -148,7 +151,7 @@ function countPricingCoverage(records: ManifestRecord[]): {
   total: number
 } {
   const products = records.filter(record =>
-    ['ides', 'clis', 'extensions'].includes(record.category)
+    ['ides', 'clis', 'desktops', 'extensions'].includes(record.category)
   )
   return {
     covered: products.filter(

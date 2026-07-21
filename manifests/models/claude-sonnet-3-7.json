@@ -1,0 +1,114 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "claude-sonnet-3-7",
+  "name": "Claude Sonnet 3.7",
+  "description": "Anthropic's first hybrid reasoning model and the original Claude Code model, built for agentic coding, front-end development, and complex tool use.",
+  "translations": {
+    "de": {
+      "description": "Anthropics erstes hybrides Reasoning-Modell und ursprüngliches Claude-Code-Modell für agentisches Coding, Frontend-Entwicklung und komplexe Werkzeuge."
+    },
+    "es": {
+      "description": "El primer modelo híbrido de razonamiento de Anthropic y modelo original de Claude Code para código agéntico, desarrollo frontal y herramientas complejas."
+    },
+    "fr": {
+      "description": "Le premier modèle de raisonnement hybride d’Anthropic et modèle Claude Code d’origine, conçu pour le codage agentique, le front-end et les outils complexes."
+    },
+    "id": {
+      "description": "Model penalaran hibrida pertama Anthropic dan model awal Claude Code untuk coding agentik, pengembangan front-end, dan penggunaan alat kompleks."
+    },
+    "ja": {
+      "description": "エージェント型コーディング、フロントエンド開発、複雑なツール利用向けに作られたAnthropic初のハイブリッド推論モデル兼初代Claude Codeモデル。"
+    },
+    "ko": {
+      "description": "에이전트 코딩, 프런트엔드 개발 및 복잡한 도구 사용을 위해 구축된 Anthropic 최초의 하이브리드 추론 모델이자 초기 Claude Code 모델입니다."
+    },
+    "pt": {
+      "description": "O primeiro modelo híbrido de raciocínio da Anthropic e modelo original do Claude Code, criado para código agêntico, front-end e ferramentas complexas."
+    },
+    "ru": {
+      "description": "Первая гибридная модель рассуждений Anthropic и исходная модель Claude Code для агентного программирования, разработки интерфейсов и сложных инструментов."
+    },
+    "tr": {
+      "description": "Anthropic'in aracı kodlama, ön uç geliştirme ve karmaşık araç kullanımı için ilk melez akıl yürütme ve özgün Claude Code modeli."
+    },
+    "zh-Hans": {
+      "description": "Anthropic 首个混合推理模型，也是最初的 Claude Code 模型，面向智能体编码、前端开发和复杂工具调用。"
+    },
+    "zh-Hant": {
+      "description": "Anthropic 首個混合推理模型，也是最初的 Claude Code 模型，面向智慧體編碼、前端開發和複雜工具呼叫。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.anthropic.com/news/claude-3-7-sonnet",
+      "title": "Claude 3.7 Sonnet and Claude Code",
+      "fields": [
+        "name",
+        "description",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "releaseDate",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+      "title": "Anthropic model deprecations",
+      "fields": ["lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.anthropic.com",
+  "docsUrl": "https://www.anthropic.com/news/claude-3-7-sonnet",
+  "vendor": "Anthropic",
+  "size": null,
+  "contextWindow": 200000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 3,
+              "output": 15,
+              "cacheRead": 0.3,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2025-02-24",
+  "lifecycle": "deprecated",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "pdf"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

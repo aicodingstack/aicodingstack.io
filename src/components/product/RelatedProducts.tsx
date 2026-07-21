@@ -2,12 +2,17 @@
 
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
-import type { ManifestCLI, ManifestExtension, ManifestIDE } from '@/types/manifests'
+import type {
+  ManifestCLI,
+  ManifestDesktop,
+  ManifestExtension,
+  ManifestIDE,
+} from '@/types/manifests'
 
 export interface RelatedProductsProps {
   products?: Array<{
-    type: 'ide' | 'cli' | 'extension'
-    data: ManifestIDE | ManifestCLI | ManifestExtension | null
+    type: 'ide' | 'cli' | 'extension' | 'desktop'
+    data: ManifestIDE | ManifestCLI | ManifestExtension | ManifestDesktop | null
   }>
 }
 
@@ -29,7 +34,7 @@ export function RelatedProducts({ products = [] }: RelatedProductsProps) {
   }
 
   // Get type label
-  const getTypeLabel = (type: 'ide' | 'cli' | 'extension') => {
+  const getTypeLabel = (type: 'ide' | 'cli' | 'extension' | 'desktop') => {
     switch (type) {
       case 'ide':
         return tShared('categories.singular.ide')
@@ -37,11 +42,13 @@ export function RelatedProducts({ products = [] }: RelatedProductsProps) {
         return tShared('categories.singular.cli')
       case 'extension':
         return tShared('categories.singular.extension')
+      case 'desktop':
+        return tShared('categories.singular.desktop')
     }
   }
 
   // Get type route
-  const getTypeRoute = (type: 'ide' | 'cli' | 'extension') => {
+  const getTypeRoute = (type: 'ide' | 'cli' | 'extension' | 'desktop') => {
     switch (type) {
       case 'ide':
         return 'ides'
@@ -49,11 +56,13 @@ export function RelatedProducts({ products = [] }: RelatedProductsProps) {
         return 'clis'
       case 'extension':
         return 'extensions'
+      case 'desktop':
+        return 'desktops'
     }
   }
 
   // Get ASCII art for type
-  const getTypeAsciiArt = (type: 'ide' | 'cli' | 'extension') => {
+  const getTypeAsciiArt = (type: 'ide' | 'cli' | 'extension' | 'desktop') => {
     switch (type) {
       case 'ide':
         return `┌─────┐
@@ -67,6 +76,10 @@ export function RelatedProducts({ products = [] }: RelatedProductsProps) {
         return `┌─────┬───┐
 │ EXT │ ⚡ │
 └─────┴───┘`
+      case 'desktop':
+        return `┌─────────┐
+│ DESKTOP │
+└─────────┘`
     }
   }
 

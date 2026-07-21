@@ -9,6 +9,7 @@
 
 import type {
   ManifestCLI,
+  ManifestDesktop,
   ManifestExtension,
   ManifestIDE,
   ManifestModel,
@@ -17,6 +18,7 @@ import type {
 } from '@/types/manifests'
 import {
   clisData,
+  desktopsData,
   extensionsData,
   idesData,
   modelsData,
@@ -25,12 +27,22 @@ import {
 } from './generated'
 import { getGithubStars } from './generated/github-stars'
 import { buildManifestPath } from './manifest-registry'
+import { normalizeVendorName, vendorMatches } from './vendor-identity'
 
 // =============================================================================
 // TYPE DEFINITIONS
 // =============================================================================
 
-export type ProductCategory = 'ide' | 'cli' | 'extension' | 'model' | 'provider'
+export type ProductCategory = 'ide' | 'cli' | 'desktop' | 'extension' | 'model' | 'provider'
+
+export const LANDSCAPE_PRODUCT_CATEGORIES = [
+  'ide',
+  'extension',
+  'cli',
+  'desktop',
+  'model',
+  'provider',
+] as const satisfies readonly ProductCategory[]
 
 export interface LandscapeProduct {
   id: string
@@ -52,6 +64,7 @@ export interface VendorEcosystem {
   products: {
     ides: LandscapeProduct[]
     clis: LandscapeProduct[]
+    desktops: LandscapeProduct[]
     extensions: LandscapeProduct[]
     models: LandscapeProduct[]
     providers: LandscapeProduct[]
@@ -116,6 +129,23 @@ function cliToProduct(cli: ManifestCLI): LandscapeProduct {
   }
 }
 
+function desktopToProduct(desktop: ManifestDesktop): LandscapeProduct {
+  return {
+    id: desktop.id,
+    name: desktop.name,
+    vendor: desktop.vendor,
+    category: 'desktop',
+    description: desktop.description,
+    websiteUrl: desktop.websiteUrl,
+    docsUrl: desktop.docsUrl || undefined,
+    githubUrl: desktop.githubUrl,
+    githubStars: getGithubStars('desktops', desktop.id),
+    license: desktop.license,
+    latestVersion: desktop.latestVersion,
+    path: buildManifestPath('desktops', desktop.id),
+  }
+}
+
 function extensionToProduct(ext: ManifestExtension): LandscapeProduct {
   return {
     id: ext.id,
@@ -172,6 +202,7 @@ export function getAllProducts(): LandscapeProduct[] {
   const products: LandscapeProduct[] = [
     ...idesData.map(ideToProduct),
     ...clisData.map(cliToProduct),
+    ...desktopsData.map(desktopToProduct),
     ...extensionsData.map(extensionToProduct),
     ...modelsData.map(modelToProduct),
     ...providersData.map(providerToProduct),
@@ -183,39 +214,48 @@ export function getAllProducts(): LandscapeProduct[] {
 /**
  * Get products by a specific vendor
  */
-export function getProductsByVendor(vendorName: string): LandscapeProduct[] {
-  const normalizedVendorName = vendorName.toLowerCase()
+export function getProductsByVendor(vendor: ManifestVendor | string): LandscapeProduct[] {
+  const matchesVendor = (candidate: string): boolean =>
+    typeof vendor === 'string'
+      ? normalizeVendorName(candidate) === normalizeVendorName(vendor)
+      : vendorMatches(vendor, candidate)
   const products: LandscapeProduct[] = []
 
   idesData.forEach(ide => {
-    if (ide.vendor?.toLowerCase() === normalizedVendorName) {
+    if (matchesVendor(ide.vendor)) {
       products.push(ideToProduct(ide))
     }
   })
 
   clisData.forEach(cli => {
-    if (cli.vendor?.toLowerCase() === normalizedVendorName) {
+    if (matchesVendor(cli.vendor)) {
       products.push(cliToProduct(cli))
     }
   })
 
+  desktopsData.forEach(desktop => {
+    if (matchesVendor(desktop.vendor)) {
+      products.push(desktopToProduct(desktop))
+    }
+  })
+
   extensionsData.forEach(ext => {
-    if (ext.vendor?.toLowerCase() === normalizedVendorName) {
+    if (matchesVendor(ext.vendor)) {
       products.push(extensionToProduct(ext))
     }
   })
 
   modelsData.forEach(model => {
-    if (model.vendor?.toLowerCase() === normalizedVendorName) {
+    if (matchesVendor(model.vendor)) {
       products.push(modelToProduct(model))
     }
   })
 
   providersData.forEach(provider => {
-    const matchesVendor = provider.vendor?.toLowerCase() === normalizedVendorName
-    const matchesName = provider.name?.toLowerCase() === normalizedVendorName
+    const matchesProviderVendor = matchesVendor(provider.vendor)
+    const matchesName = matchesVendor(provider.name)
 
-    if (matchesVendor || matchesName) {
+    if (matchesProviderVendor || matchesName) {
       products.push(providerToProduct(provider))
     }
   })
@@ -229,17 +269,19 @@ export function getProductsByVendor(vendorName: string): LandscapeProduct[] {
 function determineVendorType(products: {
   ides: LandscapeProduct[]
   clis: LandscapeProduct[]
+  desktops: LandscapeProduct[]
   extensions: LandscapeProduct[]
   models: LandscapeProduct[]
   providers: LandscapeProduct[]
 }): VendorType {
   const hasIDE = products.ides.length > 0
   const hasCLI = products.clis.length > 0
+  const hasDesktop = products.desktops.length > 0
   const hasExtension = products.extensions.length > 0
   const hasModel = products.models.length > 0
   const hasProvider = products.providers.length > 0
 
-  const hasTools = hasIDE || hasCLI || hasExtension
+  const hasTools = hasIDE || hasCLI || hasDesktop || hasExtension
   const hasAI = hasModel || hasProvider
 
   if (hasIDE && hasCLI && hasExtension) {
@@ -275,11 +317,12 @@ export function buildVendorEcosystems(): VendorEcosystem[] {
   const ecosystems: VendorEcosystem[] = []
 
   vendorsData.forEach(vendor => {
-    const allProducts = getProductsByVendor(vendor.name)
+    const allProducts = getProductsByVendor(vendor)
 
     const products = {
       ides: allProducts.filter(p => p.category === 'ide'),
       clis: allProducts.filter(p => p.category === 'cli'),
+      desktops: allProducts.filter(p => p.category === 'desktop'),
       extensions: allProducts.filter(p => p.category === 'extension'),
       models: allProducts.filter(p => p.category === 'model'),
       providers: allProducts.filter(p => p.category === 'provider'),
@@ -344,10 +387,46 @@ export interface VendorMatrixRow {
   cells: {
     ide: LandscapeProduct[]
     cli: LandscapeProduct[]
+    desktop: LandscapeProduct[]
     extension: LandscapeProduct[]
     model: LandscapeProduct[]
     provider: LandscapeProduct[]
   }
+}
+
+/**
+ * Prioritize vendors with models, place model-less providers last, then compare coverage.
+ * Coverage ties follow the visible column order before falling back to vendor name.
+ */
+export function compareVendorMatrixRowsByProducts(a: VendorMatrixRow, b: VendorMatrixRow): number {
+  const getPriorityGroup = (row: VendorMatrixRow) => {
+    if (row.cells.model.length > 0) return 0
+    if (row.cells.provider.length > 0) return 2
+    return 1
+  }
+
+  const priorityDifference = getPriorityGroup(a) - getPriorityGroup(b)
+  if (priorityDifference !== 0) {
+    return priorityDifference
+  }
+
+  const getCategoryCoverage = (row: VendorMatrixRow) =>
+    LANDSCAPE_PRODUCT_CATEGORIES.filter(category => row.cells[category].length > 0).length
+
+  const coverageDifference = getCategoryCoverage(b) - getCategoryCoverage(a)
+  if (coverageDifference !== 0) {
+    return coverageDifference
+  }
+
+  for (const category of LANDSCAPE_PRODUCT_CATEGORIES) {
+    const categoryDifference =
+      Number(b.cells[category].length > 0) - Number(a.cells[category].length > 0)
+    if (categoryDifference !== 0) {
+      return categoryDifference
+    }
+  }
+
+  return a.vendorName.localeCompare(b.vendorName)
 }
 
 /**
@@ -363,6 +442,7 @@ export function buildVendorMatrix(): VendorMatrixRow[] {
     cells: {
       ide: eco.products.ides,
       cli: eco.products.clis,
+      desktop: eco.products.desktops,
       extension: eco.products.extensions,
       model: eco.products.models,
       provider: eco.products.providers,

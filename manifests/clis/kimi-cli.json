@@ -1,53 +1,71 @@
 {
   "$schema": "../$schemas/cli.schema.json",
   "id": "kimi-cli",
-  "name": "Kimi CLI",
-  "description": "Kimi CLI is a new CLI agent that can help you with your software development tasks and terminal operations. Features shell-like UI, Zsh integration, Agent Client Protocol support, and MCP support.",
+  "name": "Kimi Code CLI",
+  "familyId": "kimi-code",
+  "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension.",
   "translations": {
-    "zh-Hans": {
-      "description": "Kimi CLI 是一款新的 CLI Agent，可以帮助您完成软件开发任务和终端操作。具有类 Shell 的用户界面、Zsh 集成、Agent Client Protocol 支持和 MCP 支持。"
-    },
     "de": {
-      "description": "Moonshot AIs Kimi CLI bringt Chinas führendes langes Kontext-AI-Modell in Ihr Terminal. Verarbeitet riesige Codebasen mit 200K+ Token-Fenster und bietet genaues Code-Verständnis."
-    },
-    "ko": {
-      "description": "Kimi CLI는 소프트웨어 개발 작업과 터미널 작업을 도와주는 새로운 CLI 에이전트입니다. 쉘과 유사한 UI, Zsh 통합, 에이전트 클라이언트 프로토콜 지원 및 MCP 지원을 제공합니다."
+      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
     },
     "es": {
-      "description": "Kimi CLI es un nuevo agente CLI para tareas de desarrollo. Tiene interfaz tipo shell, integracion Zsh, soporte protocolo cliente agente y soporte MCP."
+      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
     },
     "fr": {
-      "description": "Kimi CLI est un nouvel agent CLI pour taches de developpement. Offre interface type shell, integration Zsh, support protocole client agent et support MCP."
+      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
     },
     "id": {
-      "description": "Kimi CLI adalah agen CLI baru yang bisa membantu tugas pengembangan perangkat lunak dan operasi terminal. Memiliki UI shell, integrasi Zsh, dukungan protokol klien agen, dan dukungan MCP."
+      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
     },
     "ja": {
-      "description": "Kimi CLIは、ソフトウェア開発タスクと端末操作を支援する新しいCLIエージェントです。シェルライクなUI、Zsh統合、エージェントクライアントプロトコルサポート、MCPサポートを備えています。"
+      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
+    },
+    "ko": {
+      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
     },
     "pt": {
-      "description": "Kimi CLI e novo agente CLI que pode ajudar com tarefas desenvolvimento software e operacoes terminal. Apresenta interface tipo shell, integracao Zsh, suporte protocolo cliente agente e suporte MCP."
+      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
     },
     "ru": {
-      "description": "Kimi CLI - новый агент CLI, который может помочь с задачами разработки ПО и терминальными операциями. Имеет интерфейс shell, интеграцию Zsh, поддержку протокола клиента агента и MCP."
+      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
     },
     "tr": {
-      "description": "Kimi CLI, yazilim gelistirme gorevlerinize yardimci olabilen yeni CLI aracidir. Shell benzeri arayuz, Zsh entegrasyonu, AracI Musteri Istemcisi Protokolu ve MCP destegi ozelliklerine sahiptir."
+      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
+    },
+    "zh-Hans": {
+      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
     },
     "zh-Hant": {
-      "description": "Kimi CLI 是一款新的 CLI Agent，可以協助您完成軟體開發任務和終端操作。具備類 Shell 的使用者介面、Zsh 整合、Agent Client Protocol 支援和 MCP 支援。"
+      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
     }
   },
   "verified": false,
-  "websiteUrl": "https://github.com/MoonshotAI/kimi-cli",
-  "docsUrl": "https://github.com/MoonshotAI/kimi-cli#readme",
+  "sources": [
+    {
+      "url": "https://www.kimi.com/resources/kimi-code-introduction",
+      "title": "Kimi Code introduction"
+    },
+    {
+      "url": "https://github.com/MoonshotAI/kimi-code",
+      "title": "Kimi Code repository"
+    },
+    {
+      "url": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html",
+      "title": "Kimi Code release notes"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.kimi.com/code",
+  "docsUrl": "https://www.kimi.com/code/docs/en",
   "vendor": "Moonshot AI",
-  "latestVersion": "0.42",
-  "githubUrl": "https://github.com/MoonshotAI/kimi-cli",
+  "latestVersion": "0.28.0",
+  "githubUrl": "https://github.com/MoonshotAI/kimi-code",
   "license": "Apache-2.0",
   "pricing": [
     {
-      "name": "Free Tier",
+      "name": "Free",
       "value": 0,
       "currency": null,
       "per": null,
@@ -55,40 +73,45 @@
     }
   ],
   "resourceUrls": {
-    "download": null,
-    "changelog": "https://github.com/MoonshotAI/kimi-cli/releases",
+    "download": "https://www.kimi.com/code/docs/en/kimi-code/quickstart.html",
+    "changelog": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html",
     "pricing": null,
-    "mcp": null,
-    "issue": "https://github.com/MoonshotAI/kimi-cli/issues"
+    "mcp": "https://www.kimi.com/code/docs/en/kimi-code/mcp.html",
+    "issue": "https://github.com/MoonshotAI/kimi-code/issues"
   },
   "communityUrls": {
     "linkedin": null,
-    "twitter": null,
-    "github": "https://github.com/MoonshotAI/kimi-cli",
+    "twitter": "https://x.com/Kimi_Moonshot",
+    "github": "https://github.com/MoonshotAI/kimi-code",
     "youtube": null,
     "discord": null,
     "reddit": null,
     "blog": null
   },
-  "relatedProducts": [],
+  "relatedProducts": [
+    {
+      "type": "extension",
+      "productId": "kimi-code"
+    }
+  ],
   "platforms": [
     {
       "os": "macOS",
-      "installCommand": "uv tool install --python 3.13 kimi-cli",
-      "launchCommand": "kimi",
-      "installPath": null
+      "installPath": null,
+      "installCommand": "uv tool install kimi-code",
+      "launchCommand": "kimi"
     },
     {
       "os": "Windows",
-      "installCommand": "uv tool install --python 3.13 kimi-cli",
-      "launchCommand": "kimi",
-      "installPath": null
+      "installPath": null,
+      "installCommand": "uv tool install kimi-code",
+      "launchCommand": "kimi"
     },
     {
       "os": "Linux",
-      "installCommand": "uv tool install --python 3.13 kimi-cli",
-      "launchCommand": "kimi",
-      "installPath": null
+      "installPath": null,
+      "installCommand": "uv tool install kimi-code",
+      "launchCommand": "kimi"
     }
   ]
 }

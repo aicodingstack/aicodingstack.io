@@ -15,8 +15,12 @@ import GeminiCodeAssist from '../../../manifests/extensions/gemini-code-assist.j
 import GithubCopilot from '../../../manifests/extensions/github-copilot.json'
 import JetbrainsJunie from '../../../manifests/extensions/jetbrains-junie.json'
 import KiloCode from '../../../manifests/extensions/kilo-code.json'
+import KimiCode from '../../../manifests/extensions/kimi-code.json'
+import MistralVibe from '../../../manifests/extensions/mistral-vibe.json'
+import OpencodeExtension from '../../../manifests/extensions/opencode-extension.json'
 import Qoder from '../../../manifests/extensions/qoder.json'
 import RooCode from '../../../manifests/extensions/roo-code.json'
+import RovoDev from '../../../manifests/extensions/rovo-dev.json'
 import Tabnine from '../../../manifests/extensions/tabnine.json'
 import Verdent from '../../../manifests/extensions/verdent.json'
 import type { ManifestExtension } from '../../types/manifests'
@@ -33,8 +37,12 @@ export const extensionsData = [
   GithubCopilot,
   JetbrainsJunie,
   KiloCode,
+  KimiCode,
+  MistralVibe,
+  OpencodeExtension,
   Qoder,
   RooCode,
+  RovoDev,
   Tabnine,
   Verdent,
 ] as unknown as ManifestExtension[]

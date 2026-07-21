@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Base Product Schema",
-  "description": "Common fields for all product types (CLI, IDE)",
+  "description": "Common fields for all development-tool product surfaces",
   "type": "object",
   "allOf": [
     {
@@ -10,6 +10,11 @@
     {
       "type": "object",
       "properties": {
+        "familyId": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "description": "Stable product-family identifier shared by related IDE, CLI, extension, and desktop surfaces"
+        },
         "latestVersion": {
           "type": "string",
           "description": "The latest stable version number (typically found on download page or changelog page)"
@@ -58,13 +63,13 @@
   "$defs": {
     "relatedProducts": {
       "type": "array",
-      "description": "Related products (IDEs, CLIs, or extensions)",
+      "description": "Related products (IDEs, CLIs, extensions, or desktop apps)",
       "items": {
         "type": "object",
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["ide", "cli", "extension"],
+            "enum": ["ide", "cli", "extension", "desktop"],
             "description": "Type of the related product"
           },
           "productId": {

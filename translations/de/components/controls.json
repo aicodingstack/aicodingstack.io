@@ -3,6 +3,16 @@
     "copied": "Kopiert!",
     "copyToClipboard": "In die Zwischenablage kopieren"
   },
+  "currencySwitcher": {
+    "cny": "In CNY umrechnen",
+    "label": "Währungsanzeige",
+    "loadingRate": "Referenzwechselkurs wird geladen…",
+    "native": "Originalwährung beibehalten",
+    "nativeShort": "Originalwährung",
+    "rateUnavailable": "Referenzwechselkurs nicht verfügbar; Originalpreise werden angezeigt.",
+    "referenceRate": "Referenzkurs: 1 USD = {rate} CNY ({date})",
+    "usd": "In USD umrechnen"
+  },
   "filterSortBar": {
     "clearFilters": "Filter löschen",
     "license": "Lizenz:",

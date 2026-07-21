@@ -1,0 +1,117 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "claude-sonnet-3",
+  "name": "Claude Sonnet 3",
+  "description": "Anthropic's balanced Claude 3 model for scalable coding, data processing, visual understanding, and enterprise workflows.",
+  "translations": {
+    "de": {
+      "description": "Anthropics ausgewogenes Claude-3-Modell für skalierbares Coding, Datenverarbeitung, visuelles Verständnis und Unternehmensabläufe."
+    },
+    "es": {
+      "description": "El modelo equilibrado Claude 3 de Anthropic para código escalable, procesamiento de datos, comprensión visual y flujos empresariales."
+    },
+    "fr": {
+      "description": "Le modèle Claude 3 équilibré d’Anthropic pour le codage évolutif, le traitement des données, la vision et les flux d’entreprise."
+    },
+    "id": {
+      "description": "Model Claude 3 seimbang Anthropic untuk coding berskala, pemrosesan data, pemahaman visual, dan alur kerja perusahaan."
+    },
+    "ja": {
+      "description": "スケーラブルなコーディング、データ処理、視覚理解、企業ワークフロー向けのAnthropic製バランス型Claude 3モデル。"
+    },
+    "ko": {
+      "description": "확장 가능한 코딩, 데이터 처리, 시각적 이해 및 기업 워크플로를 위한 Anthropic의 균형형 Claude 3 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo equilibrado Claude 3 da Anthropic para código escalável, processamento de dados, compreensão visual e fluxos empresariais."
+    },
+    "ru": {
+      "description": "Сбалансированная модель Claude 3 от Anthropic для масштабируемого программирования, обработки данных, визуального анализа и корпоративных процессов."
+    },
+    "tr": {
+      "description": "Anthropic'in ölçeklenebilir kodlama, veri işleme, görsel anlama ve kurumsal iş akışları için dengeli Claude 3 modeli."
+    },
+    "zh-Hans": {
+      "description": "Anthropic 面向规模化编码、数据处理、视觉理解和企业工作流的均衡型 Claude 3 模型。"
+    },
+    "zh-Hant": {
+      "description": "Anthropic 面向規模化編碼、資料處理、視覺理解和企業工作流程的均衡型 Claude 3 模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.anthropic.com/news/claude-3-family",
+      "title": "Introducing the Claude 3 model family",
+      "fields": [
+        "name",
+        "description",
+        "contextWindow",
+        "tokenPricing",
+        "releaseDate",
+        "inputModalities",
+        "outputModalities"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+      "title": "Anthropic model deprecations",
+      "fields": ["lifecycle"]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "title": "Claude Platform release notes",
+      "fields": ["capabilities"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.anthropic.com",
+  "docsUrl": "https://www.anthropic.com/news/claude-3-family",
+  "vendor": "Anthropic",
+  "size": null,
+  "contextWindow": 200000,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 3,
+              "output": 15,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2024-03-04",
+  "lifecycle": "deprecated",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

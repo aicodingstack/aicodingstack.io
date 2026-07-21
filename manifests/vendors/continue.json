@@ -2,6 +2,7 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "continue",
   "name": "Continue",
+  "aliases": ["Continue Dev"],
   "description": "Open-source platform enabling developers to automate coding workflows through background agents, CLI tools, and IDE integrations with multi-model support.",
   "translations": {
     "zh-Hans": {

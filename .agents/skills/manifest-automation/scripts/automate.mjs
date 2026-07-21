@@ -17,7 +17,6 @@ import {
   SCHEMA_PATHS,
   WORKFLOW_PATHS,
 } from './lib/config.mjs'
-import { updateGithubStarsEntry } from './lib/github-stars-updater.mjs'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -113,7 +112,7 @@ if (mode === 'update') {
 const workflowContent = fs.readFileSync(workflowFullPath, 'utf-8')
 
 // Output instructions
-console.log('🤖 Manifest Automation Skill')
+console.log('📋 Manifest Workflow Preparation')
 console.log('━'.repeat(60))
 console.log('')
 console.log(`Mode:   ${mode.toUpperCase()}`)
@@ -134,11 +133,10 @@ if (mode === 'update') {
   console.log('You are updating an existing manifest. Follow these rules:\n')
   console.log('1. **Load existing manifest** from:', manifestPath)
   console.log('2. **Follow the workflow below** to extract fresh data')
-  console.log('3. **Apply smart merge** using merge-strategies.mjs:')
-  console.log('   - AUTO_UPDATE fields: Replace with new values')
-  console.log('   - PRESERVE fields: Keep existing (id, name, verified, i18n, relatedProducts)')
-  console.log('   - MERGE_ADDITIVE fields: Add new items to arrays/objects')
-  console.log('   - CONDITIONAL fields: Present both for review')
+  console.log('3. **Use smart merge only as an advisory diff**:')
+  console.log('   - Verify every mutable fact against a current authoritative source')
+  console.log('   - Preserve identity, relationships, and translations for manual review')
+  console.log('   - Merge arrays by schema identity and reject incompatible evidence')
   console.log('4. **Generate change report** showing what was updated/added/preserved')
   console.log('5. **Write updated manifest** back to the same path\n')
   console.log('━'.repeat(60))
@@ -148,44 +146,35 @@ if (mode === 'update') {
 console.log(workflowContent)
 console.log('')
 console.log('━'.repeat(60))
-console.log('🎯 Retry & Error Handling Rules')
+console.log('🎯 Evidence and Error Handling Rules')
 console.log('━'.repeat(60))
 console.log('')
-console.log(`• Maximum ${RETRY_CONFIG.maxAttempts} attempts per field`)
-console.log(`• After ${RETRY_CONFIG.maxAttempts} failures: Add TODO comment`)
-console.log('• Use Playwright MCP for dynamic content')
-console.log('• Use WebSearch for discovery (GitHub, social, platforms)')
-console.log('• Save draft even with missing fields')
-console.log('• Generate completion report at end\n')
+console.log(`• Make at most ${RETRY_CONFIG.maxAttempts} materially different attempts per field`)
+console.log('• Prefer official documentation, repositories, model cards, and marketplaces')
+console.log('• Do not guess values or put comments/placeholders into JSON')
+console.log('• Report unresolved fields separately; stop if a required field cannot be verified')
+console.log('• Record source provenance and verification metadata required by the schema\n')
 
-if (mode === 'create') {
-  console.log('TODO Comment Format:')
-  console.log(
-    '  "discord": null, // TODO: Could not auto-discover after 3 attempts. Not found in footer or search results.\n'
-  )
-} else {
+if (mode === 'update') {
   console.log('Change Tracking:')
   console.log('  Track all changes using merge-strategies.mjs')
   console.log('  Generate report with updated/added/preserved/needsReview fields\n')
 }
 
 console.log('━'.repeat(60))
-console.log('📝 Post-Creation/Update Steps')
+console.log('📝 Required Validation')
 console.log('━'.repeat(60))
 console.log('')
-console.log('After creating or updating the manifest:')
-console.log('1. Save the manifest file')
-console.log('2. Update github-stars.json automatically:')
-console.log(`   - Will add entry: ${type}s["${name}"] = null`)
-console.log('   - Stars will be fetched in next scheduled update')
-console.log('3. Generate completion report')
+console.log('After editing and reviewing the manifest:')
+console.log('1. npm run changelog:generate')
+console.log('2. npm run generate')
+console.log('3. npm run test:validate')
+console.log('4. npm run validate:i18n')
+console.log('5. npm run data-health:check')
 console.log('')
 console.log('━'.repeat(60))
 console.log('')
-console.log('✅ Ready! Execute workflow above.')
-console.log('')
-console.log('⚠️  IMPORTANT: After saving the manifest, remember to update github-stars.json')
+console.log('✅ Ready. The helper prepared instructions; it did not browse or edit files.')
 console.log('')
 
-// Export helper function for Claude to use in manifest-automation skill
-export { updateGithubStarsEntry, type as manifestType, name as manifestName, mode as operationMode }
+export { type as manifestType, name as manifestName, mode as operationMode }

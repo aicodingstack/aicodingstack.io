@@ -5,30 +5,30 @@
  */
 
 import Alibaba from '../../../manifests/vendors/alibaba.json'
+import Anomaly from '../../../manifests/vendors/anomaly.json'
 import AntGroup from '../../../manifests/vendors/ant-group.json'
 import Anthropic from '../../../manifests/vendors/anthropic.json'
 import Anysphere from '../../../manifests/vendors/anysphere.json'
+import Atlassian from '../../../manifests/vendors/atlassian.json'
 import Augment from '../../../manifests/vendors/augment.json'
 import Aws from '../../../manifests/vendors/aws.json'
 import Bytedance from '../../../manifests/vendors/bytedance.json'
 import Cline from '../../../manifests/vendors/cline.json'
-import ClineBot from '../../../manifests/vendors/cline-bot.json'
 import Cognition from '../../../manifests/vendors/cognition.json'
 import Continue from '../../../manifests/vendors/continue.json'
-import ContinueDev from '../../../manifests/vendors/continue-dev.json'
 import Deepseek from '../../../manifests/vendors/deepseek.json'
 import FactoryAi from '../../../manifests/vendors/factory-ai.json'
 import Github from '../../../manifests/vendors/github.json'
+import Gitlab from '../../../manifests/vendors/gitlab.json'
 import Google from '../../../manifests/vendors/google.json'
 import Jetbrains from '../../../manifests/vendors/jetbrains.json'
 import Kilo from '../../../manifests/vendors/kilo.json'
-import Kwai from '../../../manifests/vendors/kwai.json'
-import Kwaikat from '../../../manifests/vendors/kwaikat.json'
 import Meta from '../../../manifests/vendors/meta.json'
 import Microsoft from '../../../manifests/vendors/microsoft.json'
 import Minimax from '../../../manifests/vendors/minimax.json'
+import MistralAi from '../../../manifests/vendors/mistral-ai.json'
 import Moonshot from '../../../manifests/vendors/moonshot.json'
-import MoonshotAi from '../../../manifests/vendors/moonshot-ai.json'
+import OhMyPi from '../../../manifests/vendors/oh-my-pi.json'
 import Openai from '../../../manifests/vendors/openai.json'
 import Openrouter from '../../../manifests/vendors/openrouter.json'
 import Orionstar from '../../../manifests/vendors/orionstar.json'
@@ -37,6 +37,7 @@ import ShareaiLab from '../../../manifests/vendors/shareai-lab.json'
 import Siliconflow from '../../../manifests/vendors/siliconflow.json'
 import Sourcegraph from '../../../manifests/vendors/sourcegraph.json'
 import Sst from '../../../manifests/vendors/sst.json'
+import Stagewise from '../../../manifests/vendors/stagewise.json'
 import Streamlake from '../../../manifests/vendors/streamlake.json'
 import Tabnine from '../../../manifests/vendors/tabnine.json'
 import Tencent from '../../../manifests/vendors/tencent.json'
@@ -48,30 +49,30 @@ import type { ManifestVendor } from '../../types/manifests'
 
 export const vendorsData = [
   Alibaba,
+  Anomaly,
   AntGroup,
   Anthropic,
   Anysphere,
+  Atlassian,
   Augment,
   Aws,
   Bytedance,
   Cline,
-  ClineBot,
   Cognition,
   Continue,
-  ContinueDev,
   Deepseek,
   FactoryAi,
   Github,
+  Gitlab,
   Google,
   Jetbrains,
   Kilo,
-  Kwai,
-  Kwaikat,
   Meta,
   Microsoft,
   Minimax,
+  MistralAi,
   Moonshot,
-  MoonshotAi,
+  OhMyPi,
   Openai,
   Openrouter,
   Orionstar,
@@ -80,6 +81,7 @@ export const vendorsData = [
   Siliconflow,
   Sourcegraph,
   Sst,
+  Stagewise,
   Streamlake,
   Tabnine,
   Tencent,

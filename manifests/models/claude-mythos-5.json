@@ -1,0 +1,117 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "claude-mythos-5",
+  "name": "Claude Mythos 5",
+  "description": "Anthropic's limited-availability model for approved Project Glasswing customers, focused on advanced defensive cybersecurity and complex agentic work.",
+  "translations": {
+    "de": {
+      "description": "Anthropics Modell mit begrenzter Verfügbarkeit für genehmigte Project-Glasswing-Kunden, fokussiert auf fortgeschrittene defensive Cybersicherheit und komplexe Agentenarbeit."
+    },
+    "es": {
+      "description": "El modelo de disponibilidad limitada de Anthropic para clientes aprobados de Project Glasswing, centrado en ciberseguridad defensiva avanzada y trabajo agéntico complejo."
+    },
+    "fr": {
+      "description": "Le modèle à disponibilité limitée d’Anthropic pour les clients approuvés de Project Glasswing, axé sur la cybersécurité défensive avancée et les agents complexes."
+    },
+    "id": {
+      "description": "Model Anthropic dengan ketersediaan terbatas bagi pelanggan Project Glasswing yang disetujui, berfokus pada keamanan siber defensif dan pekerjaan agentik kompleks."
+    },
+    "ja": {
+      "description": "Project Glasswingの承認顧客向けに限定提供され、高度な防御的サイバーセキュリティと複雑なエージェント作業に特化したAnthropicモデル。"
+    },
+    "ko": {
+      "description": "승인된 Project Glasswing 고객에게 제한 제공되며 고급 방어 사이버 보안과 복잡한 에이전트 작업에 중점을 둔 Anthropic 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo de disponibilidade limitada da Anthropic para clientes aprovados do Project Glasswing, focado em cibersegurança defensiva avançada e trabalho agêntico complexo."
+    },
+    "ru": {
+      "description": "Модель Anthropic с ограниченным доступом для одобренных клиентов Project Glasswing, ориентированная на защитную кибербезопасность и сложные агентные задачи."
+    },
+    "tr": {
+      "description": "Anthropic'in onaylı Project Glasswing müşterilerine sınırlı sunulan, gelişmiş savunma siber güvenliği ve karmaşık aracı çalışmalara odaklı modeli."
+    },
+    "zh-Hans": {
+      "description": "Anthropic 面向获批 Project Glasswing 客户限量提供的模型，专注于高级防御性网络安全和复杂智能体工作。"
+    },
+    "zh-Hant": {
+      "description": "Anthropic 面向獲批 Project Glasswing 客戶限量提供的模型，專注於高階防禦性網路安全和複雜智慧體工作。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/introducing-claude-fable-5-and-claude-mythos-5",
+      "title": "Introducing Claude Fable 5 and Claude Mythos 5",
+      "fields": [
+        "name",
+        "description",
+        "releaseDate",
+        "lifecycle",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "title": "Claude models overview",
+      "fields": ["docsUrl", "contextWindow", "maxOutput", "knowledgeCutoff"]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "title": "Claude API pricing",
+      "fields": ["tokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.anthropic.com",
+  "docsUrl": "https://platform.claude.com/docs/en/about-claude/models/introducing-claude-fable-5-and-claude-mythos-5",
+  "vendor": "Anthropic",
+  "size": null,
+  "contextWindow": 1000000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 10,
+              "output": 50,
+              "cacheRead": 1,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-06-09",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2026-01",
+  "inputModalities": ["text", "image", "pdf"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

@@ -1,15 +1,21 @@
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
-import type { ManifestCLI, ManifestExtension, ManifestIDE } from '@/types/manifests'
+import type {
+  ManifestCLI,
+  ManifestDesktop,
+  ManifestExtension,
+  ManifestIDE,
+} from '@/types/manifests'
 
-type ProductWithType = (ManifestIDE | ManifestCLI | ManifestExtension) & {
-  type: 'ide' | 'cli' | 'extension'
+type ProductWithType = (ManifestIDE | ManifestCLI | ManifestExtension | ManifestDesktop) & {
+  type: 'ide' | 'cli' | 'extension' | 'desktop'
 }
 
 const PRODUCT_TYPE_LABELS = {
   ide: 'IDE',
   cli: 'CLI',
   extension: 'Extension',
+  desktop: 'Desktop',
 } as const
 
 export function VendorProducts({ products }: { products: ProductWithType[] }) {
@@ -29,7 +35,7 @@ export function VendorProducts({ products }: { products: ProductWithType[] }) {
         {products.map(product => (
           <Link
             key={product.id}
-            href={`/${product.type === 'ide' ? 'ides' : product.type === 'cli' ? 'clis' : 'extensions'}/${product.id}`}
+            href={`/${product.type === 'ide' ? 'ides' : product.type === 'cli' ? 'clis' : product.type === 'desktop' ? 'desktops' : 'extensions'}/${product.id}`}
             className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5 group"
           >
             <div className="flex items-start justify-between mb-[var(--spacing-xs)]">

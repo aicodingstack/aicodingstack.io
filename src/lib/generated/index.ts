@@ -6,6 +6,8 @@
 
 export type { Cli } from './clis'
 export { clisData } from './clis'
+export type { Desktop } from './desktops'
+export { desktopsData } from './desktops'
 export type { Extension } from './extensions'
 export { extensionsData } from './extensions'
 export type { Ide } from './ides'

@@ -17,13 +17,20 @@ import DeepvCode from '../../../manifests/clis/deepv-code.json'
 import DroidCli from '../../../manifests/clis/droid-cli.json'
 import GeminiCli from '../../../manifests/clis/gemini-cli.json'
 import GithubCopilotCli from '../../../manifests/clis/github-copilot-cli.json'
+import GitlabDuoCli from '../../../manifests/clis/gitlab-duo-cli.json'
+import GrokBuild from '../../../manifests/clis/grok-build.json'
+import JunieCli from '../../../manifests/clis/junie-cli.json'
 import KiloCodeCli from '../../../manifests/clis/kilo-code-cli.json'
 import KimiCli from '../../../manifests/clis/kimi-cli.json'
 import KiroCli from '../../../manifests/clis/kiro-cli.json'
 import Kode from '../../../manifests/clis/kode.json'
+import MistralVibeCli from '../../../manifests/clis/mistral-vibe-cli.json'
 import NeovateCode from '../../../manifests/clis/neovate-code.json'
+import Omp from '../../../manifests/clis/omp.json'
 import Opencode from '../../../manifests/clis/opencode.json'
 import QoderCli from '../../../manifests/clis/qoder-cli.json'
+import QwenCode from '../../../manifests/clis/qwen-code.json'
+import RovoDevCli from '../../../manifests/clis/rovo-dev-cli.json'
 import type { ManifestCLI } from '../../types/manifests'
 
 export const clisData = [
@@ -40,13 +47,20 @@ export const clisData = [
   DroidCli,
   GeminiCli,
   GithubCopilotCli,
+  GitlabDuoCli,
+  GrokBuild,
+  JunieCli,
   KiloCodeCli,
   KimiCli,
   KiroCli,
   Kode,
+  MistralVibeCli,
   NeovateCode,
+  Omp,
   Opencode,
   QoderCli,
+  QwenCode,
+  RovoDevCli,
 ] as unknown as ManifestCLI[]
 
 export type Cli = typeof AmazonQDeveloperCli

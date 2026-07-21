@@ -33,6 +33,10 @@ const dirsConfig: DirConfig[] = [
     directory: 'manifests/clis',
     category: 'clis',
   },
+  {
+    directory: 'manifests/desktops',
+    category: 'desktops',
+  },
 ]
 
 interface GithubRepo {
@@ -60,6 +64,7 @@ interface DirectoryResult {
 interface StarsData {
   extensions: Record<string, number | null>
   clis: Record<string, number | null>
+  desktops: Record<string, number | null>
   ides: Record<string, number | null>
   [key: string]: Record<string, number | null>
 }
@@ -238,7 +243,7 @@ async function main(): Promise<void> {
   }
 
   // Load existing stars data or create new structure
-  let starsData: StarsData = { extensions: {}, clis: {}, ides: {} }
+  let starsData: StarsData = { extensions: {}, clis: {}, desktops: {}, ides: {} }
   if (fs.existsSync(GITHUB_STARS_FILE)) {
     try {
       const content = fs.readFileSync(GITHUB_STARS_FILE, 'utf8')

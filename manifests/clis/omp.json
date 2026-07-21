@@ -1,0 +1,120 @@
+{
+  "$schema": "../$schemas/cli.schema.json",
+  "id": "omp",
+  "name": "omp",
+  "familyId": "omp",
+  "description": "omp is an open source terminal coding agent with hash-anchored edits, LSP and debugger integration, subagents, persistent code runtimes, and support for 40+ model providers.",
+  "translations": {
+    "de": {
+      "description": "omp ist ein Open-Source-Coding-Agent für das Terminal mit hash-verankerten Änderungen, LSP- und Debugger-Integration, Subagenten, persistenten Code-Laufzeiten und über 40 Modellanbietern."
+    },
+    "es": {
+      "description": "omp es un agente de programación de código abierto para terminal, con ediciones ancladas por hash, integración LSP y depurador, subagentes, runtimes persistentes y más de 40 proveedores de modelos."
+    },
+    "fr": {
+      "description": "omp est un agent de codage open source pour terminal, avec modifications ancrées par hash, intégration LSP et débogueur, sous-agents, runtimes persistants et plus de 40 fournisseurs de modèles."
+    },
+    "id": {
+      "description": "omp adalah agen coding terminal sumber terbuka dengan pengeditan berbasis hash, integrasi LSP dan debugger, subagen, runtime kode persisten, serta dukungan untuk 40+ penyedia model."
+    },
+    "ja": {
+      "description": "ompは、ハッシュ固定編集、LSPとデバッガーの統合、サブエージェント、永続的なコード実行環境、40以上のモデルプロバイダーを備えたオープンソースのターミナル向けコーディングエージェントです。"
+    },
+    "ko": {
+      "description": "omp는 해시 기반 편집, LSP 및 디버거 통합, 하위 에이전트, 영구 코드 런타임, 40개 이상의 모델 제공업체 지원을 갖춘 오픈 소스 터미널 코딩 에이전트입니다."
+    },
+    "pt": {
+      "description": "omp é um agente de programação open source para terminal, com edições ancoradas por hash, integração LSP e depurador, subagentes, runtimes persistentes e mais de 40 provedores de modelos."
+    },
+    "ru": {
+      "description": "omp — терминальный агент для программирования с открытым кодом, hash-привязанными правками, интеграцией LSP и отладчика, субагентами, постоянными средами выполнения и 40+ поставщиками моделей."
+    },
+    "tr": {
+      "description": "omp; hash bağlantılı düzenlemeler, LSP ve hata ayıklayıcı entegrasyonu, alt ajanlar, kalıcı kod çalışma ortamları ve 40'tan fazla model sağlayıcısı sunan açık kaynak terminal kodlama ajanıdır."
+    },
+    "zh-Hans": {
+      "description": "omp 是一款开源终端编码 Agent，支持哈希锚定编辑、LSP 与调试器集成、子 Agent、持久化代码运行时以及 40 多家模型提供商。"
+    },
+    "zh-Hant": {
+      "description": "omp 是一款開源終端編碼 Agent，支援雜湊錨定編輯、LSP 與除錯器整合、子 Agent、持久化程式碼執行環境以及 40 多家模型供應商。"
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://omp.sh",
+      "title": "omp official site",
+      "fields": ["name", "description", "websiteUrl", "docsUrl"]
+    },
+    {
+      "url": "https://github.com/can1357/oh-my-pi",
+      "title": "Oh My Pi official repository",
+      "fields": ["description", "githubUrl", "platforms", "communityUrls", "resourceUrls.issue"]
+    },
+    {
+      "url": "https://github.com/can1357/oh-my-pi/releases",
+      "title": "Oh My Pi releases",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
+    },
+    {
+      "url": "https://github.com/can1357/oh-my-pi/blob/main/LICENSE",
+      "title": "Oh My Pi MIT license",
+      "fields": ["license", "pricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://omp.sh",
+  "docsUrl": "https://omp.sh/docs",
+  "vendor": "Oh My Pi",
+  "latestVersion": "17.0.6",
+  "githubUrl": "https://github.com/can1357/oh-my-pi",
+  "license": "MIT",
+  "pricing": [
+    {
+      "name": "Open Source",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://omp.sh",
+    "changelog": "https://github.com/can1357/oh-my-pi/releases",
+    "pricing": null,
+    "mcp": null,
+    "issue": "https://github.com/can1357/oh-my-pi/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": "https://github.com/can1357/oh-my-pi",
+    "youtube": null,
+    "discord": "https://discord.com/invite/4NMW9cdXZa",
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installCommand": "curl -fsSL https://omp.sh/install | sh",
+      "launchCommand": "omp",
+      "installPath": null
+    },
+    {
+      "os": "Windows",
+      "installCommand": "irm https://omp.sh/install.ps1 | iex",
+      "launchCommand": "omp",
+      "installPath": null
+    },
+    {
+      "os": "Linux",
+      "installCommand": "curl -fsSL https://omp.sh/install | sh",
+      "launchCommand": "omp",
+      "installPath": null
+    }
+  ]
+}

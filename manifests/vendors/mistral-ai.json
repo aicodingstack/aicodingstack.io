@@ -1,0 +1,68 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "mistral-ai",
+  "name": "Mistral AI",
+  "aliases": ["Mistral"],
+  "description": "European AI company developing open-weight and commercial frontier models, including Codestral and Devstral coding models, developer tools, and deployment infrastructure.",
+  "translations": {
+    "de": {
+      "description": "Europäisches KI-Unternehmen, das offene und kommerzielle Frontier-Modelle entwickelt, darunter die Coding-Modelle Codestral und Devstral sowie Entwicklerwerkzeuge und Bereitstellungsinfrastruktur."
+    },
+    "es": {
+      "description": "Empresa europea de IA que desarrolla modelos abiertos y comerciales, incluidos Codestral y Devstral para programación, herramientas para desarrolladores e infraestructura de despliegue."
+    },
+    "fr": {
+      "description": "Entreprise européenne d'IA développant des modèles de pointe ouverts et commerciaux, dont les modèles de code Codestral et Devstral, des outils de développement et une infrastructure de déploiement."
+    },
+    "id": {
+      "description": "Perusahaan AI Eropa yang mengembangkan model frontier berbobot terbuka dan komersial, termasuk model coding Codestral dan Devstral, alat pengembang, serta infrastruktur deployment."
+    },
+    "ja": {
+      "description": "CodestralやDevstralなどのコーディングモデル、開発者ツール、デプロイ基盤を含む、オープンウェイトおよび商用の最先端モデルを開発する欧州のAI企業です。"
+    },
+    "ko": {
+      "description": "Codestral과 Devstral 코딩 모델, 개발자 도구 및 배포 인프라를 포함한 오픈 웨이트 및 상용 프런티어 모델을 개발하는 유럽 AI 기업입니다."
+    },
+    "pt": {
+      "description": "Empresa europeia de IA que desenvolve modelos abertos e comerciais, incluindo Codestral e Devstral para programação, ferramentas de desenvolvimento e infraestrutura de implantação."
+    },
+    "ru": {
+      "description": "Европейская ИИ-компания, разрабатывающая открытые и коммерческие передовые модели, включая модели для программирования Codestral и Devstral, инструменты разработчика и инфраструктуру развертывания."
+    },
+    "tr": {
+      "description": "Codestral ve Devstral kodlama modelleri, geliştirici araçları ve dağıtım altyapısı dahil olmak üzere açık ağırlıklı ve ticari öncü modeller geliştiren Avrupalı yapay zeka şirketi."
+    },
+    "zh-Hans": {
+      "description": "欧洲 AI 公司，开发开放权重和商业前沿模型，包括 Codestral、Devstral 编码模型，以及开发者工具和部署基础设施。"
+    },
+    "zh-Hant": {
+      "description": "歐洲 AI 公司，開發開放權重和商業前沿模型，包括 Codestral、Devstral 編碼模型，以及開發者工具和部署基礎設施。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://mistral.ai/about/",
+      "title": "About Mistral",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://mistral.ai/models/",
+      "title": "Mistral models",
+      "fields": ["description"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex",
+  "confidence": "high",
+  "websiteUrl": "https://mistral.ai",
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": "https://github.com/mistralai",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": "https://mistral.ai/news/"
+  }
+}

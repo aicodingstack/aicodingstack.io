@@ -1,0 +1,112 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "kimi-k3",
+  "name": "Kimi K3",
+  "description": "Moonshot AI's 2.8T-parameter, natively multimodal frontier model with 1M context for long-horizon coding, knowledge work, and deep reasoning.",
+  "translations": {
+    "de": {
+      "description": "Moonshot AIs nativ multimodales Frontier-Modell mit 2,8 Bio. Parametern und 1 Mio. Kontext für langfristige Programmierung, Wissensarbeit und tiefes Denken."
+    },
+    "es": {
+      "description": "El modelo de frontera multimodal nativo de Moonshot AI, con 2,8T parámetros y contexto de 1M, para programación prolongada, trabajo del conocimiento y razonamiento profundo."
+    },
+    "fr": {
+      "description": "Le modèle de pointe nativement multimodal de Moonshot AI, avec 2,8 Bn de paramètres et 1 M de contexte, pour le codage long, le savoir et le raisonnement profond."
+    },
+    "id": {
+      "description": "Model frontier multimodal native Moonshot AI dengan 2,8T parameter dan konteks 1M untuk coding jangka panjang, pekerjaan pengetahuan, dan penalaran mendalam."
+    },
+    "ja": {
+      "description": "2.8兆パラメータ、ネイティブマルチモーダル、100万コンテキストを備え、長期コーディング、知識労働、深い推論に対応するMoonshot AIのフロンティアモデル。"
+    },
+    "ko": {
+      "description": "2.8T 매개변수, 네이티브 멀티모달 및 100만 컨텍스트로 장기 코딩, 지식 업무와 심층 추론을 지원하는 Moonshot AI 프런티어 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo de fronteira multimodal nativo da Moonshot AI, com 2,8T parâmetros e contexto de 1M, para programação prolongada, trabalho de conhecimento e raciocínio profundo."
+    },
+    "ru": {
+      "description": "Передовая нативно-мультимодальная модель Moonshot AI с 2,8 трлн параметров и контекстом 1 млн для длительного программирования и глубоких рассуждений."
+    },
+    "tr": {
+      "description": "Moonshot AI'ın 2,8T parametreli, yerel çok modlu ve 1M bağlamlı; uzun süreli kodlama, bilgi çalışmaları ve derin akıl yürütme için öncü modeli."
+    },
+    "zh-Hans": {
+      "description": "Moonshot AI 的 2.8 万亿参数原生多模态前沿模型，提供 100 万 token 上下文，面向长周期编码、知识工作和深度推理。"
+    },
+    "zh-Hant": {
+      "description": "Moonshot AI 的 2.8 兆參數原生多模態前沿模型，提供 100 萬 token 上下文，面向長週期編碼、知識工作和深度推理。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.moonshot.ai",
+      "title": "Moonshot AI Kimi K3 overview",
+      "fields": [
+        "name",
+        "description",
+        "size",
+        "contextWindow",
+        "releaseDate",
+        "inputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://platform.kimi.ai/docs/pricing/chat-k3",
+      "title": "Kimi K3 official API pricing",
+      "fields": ["tokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
+  "websiteUrl": "https://www.moonshot.ai",
+  "docsUrl": "https://platform.moonshot.ai/docs",
+  "vendor": "Moonshot",
+  "size": "2.8T",
+  "contextWindow": 1000000,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 3,
+              "output": 15,
+              "cacheRead": 0.3,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-07-16",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

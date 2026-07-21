@@ -43,13 +43,9 @@ export async function generateMetadata({
       vendor: model.vendor,
       size: model.size ?? undefined,
       contextWindow: model.contextWindow,
-      maxOutput: model.maxOutput,
-      tokenPricing: model.tokenPricing
-        ? {
-            input: model.tokenPricing.input ?? undefined,
-            output: model.tokenPricing.output ?? undefined,
-          }
-        : undefined,
+      maxOutput: model.maxOutput ?? undefined,
+      lifecycle: model.lifecycle,
+      tokenPricing: model.tokenPricing,
     },
     translationNamespace: 'pages.modelDetail',
   })
@@ -76,15 +72,10 @@ export default async function ModelPage({
       description: model.description,
       vendor: model.vendor,
       websiteUrl: model.websiteUrl || undefined,
-      tokenPricing: model.tokenPricing
-        ? {
-            input: model.tokenPricing.input ?? undefined,
-            output: model.tokenPricing.output ?? undefined,
-            cache: model.tokenPricing.cache ?? undefined,
-          }
-        : undefined,
+      lifecycle: model.lifecycle,
+      tokenPricing: model.tokenPricing,
     },
-    locale: locale as 'en' | 'zh-Hans' | 'de' | 'ko',
+    locale: locale as Locale,
   })
 
   // Build additional info for ProductHero
@@ -94,7 +85,10 @@ export default async function ModelPage({
       label: tShared('terms.contextWindow'),
       value: `${model.contextWindow.toLocaleString()} tokens`,
     },
-    { label: tShared('terms.maxOutput'), value: `${model.maxOutput.toLocaleString()} tokens` },
+    model.maxOutput !== null && {
+      label: tShared('terms.maxOutput'),
+      value: `${model.maxOutput.toLocaleString()} tokens`,
+    },
   ].filter(Boolean) as { label: string; value: string }[]
 
   // Breadcrumb items

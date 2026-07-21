@@ -117,6 +117,11 @@ export const PAGE_TRANSLATION_REQUIREMENTS: Record<string, PageTranslationRequir
     requiredKeys: REQUIRED_TRANSLATION_KEYS.list,
     type: 'list',
   },
+  '/desktops': {
+    namespace: 'pages.desktops',
+    requiredKeys: REQUIRED_TRANSLATION_KEYS.list,
+    type: 'list',
+  },
   '/extensions': {
     namespace: 'pages.extensions',
     requiredKeys: REQUIRED_TRANSLATION_KEYS.list,
@@ -147,6 +152,11 @@ export const PAGE_TRANSLATION_REQUIREMENTS: Record<string, PageTranslationRequir
   '/clis/[slug]': {
     namespace: 'pages.cliDetail',
     requiredKeys: ['name', 'description'] as const,
+    type: 'staticSimple',
+  },
+  '/desktops/[slug]': {
+    namespace: 'pages.desktops',
+    requiredKeys: ['title', 'subtitle'] as const,
     type: 'staticSimple',
   },
   '/extensions/[slug]': {

@@ -3,6 +3,16 @@
     "copied": "Copied!",
     "copyToClipboard": "Copy to clipboard"
   },
+  "currencySwitcher": {
+    "cny": "Convert to CNY",
+    "label": "Currency display",
+    "loadingRate": "Loading reference exchange rate…",
+    "native": "Keep original currency",
+    "nativeShort": "Original",
+    "rateUnavailable": "Reference exchange rate unavailable; original prices are shown.",
+    "referenceRate": "Reference rate: 1 USD = {rate} CNY ({date})",
+    "usd": "Convert to USD"
+  },
   "filterSortBar": {
     "clearFilters": "Clear filters",
     "license": "License:",

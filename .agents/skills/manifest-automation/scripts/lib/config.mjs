@@ -5,11 +5,12 @@
  */
 
 // Supported manifest types
-export const MANIFEST_TYPES = ['cli', 'extension', 'ide', 'model', 'provider', 'vendor']
+export const MANIFEST_TYPES = ['cli', 'desktop', 'extension', 'ide', 'model', 'provider', 'vendor']
 
 // Schema path mapping
 export const SCHEMA_PATHS = {
   cli: 'manifests/$schemas/cli.schema.json',
+  desktop: 'manifests/$schemas/desktop.schema.json',
   extension: 'manifests/$schemas/extension.schema.json',
   ide: 'manifests/$schemas/ide.schema.json',
   model: 'manifests/$schemas/model.schema.json',
@@ -20,6 +21,7 @@ export const SCHEMA_PATHS = {
 // Manifest output path mapping
 export const MANIFEST_PATHS = {
   cli: name => `manifests/clis/${name}.json`,
+  desktop: name => `manifests/desktops/${name}.json`,
   extension: name => `manifests/extensions/${name}.json`,
   ide: name => `manifests/ides/${name}.json`,
   model: name => `manifests/models/${name}.json`,
@@ -29,12 +31,13 @@ export const MANIFEST_PATHS = {
 
 // Workflow file mapping
 export const WORKFLOW_PATHS = {
-  cli: '.claude/skills/manifest-automation/scripts/workflows/cli-workflow.md',
-  extension: '.claude/skills/manifest-automation/scripts/workflows/extension-workflow.md',
-  ide: '.claude/skills/manifest-automation/scripts/workflows/ide-workflow.md',
-  model: '.claude/skills/manifest-automation/scripts/workflows/model-workflow.md',
-  provider: '.claude/skills/manifest-automation/scripts/workflows/provider-workflow.md',
-  vendor: '.claude/skills/manifest-automation/scripts/workflows/vendor-workflow.md',
+  cli: '.agents/skills/manifest-automation/scripts/workflows/cli-workflow.md',
+  desktop: '.agents/skills/manifest-automation/scripts/workflows/desktop-workflow.md',
+  extension: '.agents/skills/manifest-automation/scripts/workflows/extension-workflow.md',
+  ide: '.agents/skills/manifest-automation/scripts/workflows/ide-workflow.md',
+  model: '.agents/skills/manifest-automation/scripts/workflows/model-workflow.md',
+  provider: '.agents/skills/manifest-automation/scripts/workflows/provider-workflow.md',
+  vendor: '.agents/skills/manifest-automation/scripts/workflows/vendor-workflow.md',
 }
 
 // Retry configuration
@@ -45,10 +48,9 @@ export const RETRY_CONFIG = {
 
 // Field categories for smart merge
 export const FIELD_CATEGORIES = {
-  // Always update from official source
+  // May update only after verification against a current authoritative source.
   AUTO_UPDATE: [
     'latestVersion',
-    'description',
     'websiteUrl',
     'docsUrl',
     'resourceUrls.changelog',
@@ -59,18 +61,28 @@ export const FIELD_CATEGORIES = {
     'maxOutput',
   ],
 
-  // Never update (user-curated)
-  PRESERVE: ['id', 'name', 'verified', 'i18n', 'relatedProducts'],
+  // Preserve identity, relationships, and localized copy for manual review.
+  PRESERVE: ['id', 'familyId', 'name', 'translations', 'relatedProducts', 'vendor', 'provider'],
 
   // Smart merge: add new, keep existing
-  MERGE_ADDITIVE: ['communityUrls', 'platformUrls', 'supportedIdes', 'platforms', 'pricing'],
+  MERGE_ADDITIVE: ['communityUrls', 'platformUrls', 'supportedIdes', 'platforms'],
 
   // Present both for Claude to decide
-  CONDITIONAL: ['license', 'vendor'],
+  CONDITIONAL: [
+    'description',
+    'license',
+    'pricing',
+    'releaseDate',
+    'lifecycle',
+    'sources',
+    'lastVerifiedAt',
+    'verifiedBy',
+    'confidence',
+  ],
 }
 
 // Platform OS enum values
-export const PLATFORM_OS = ['macos', 'windows', 'linux', 'web']
+export const PLATFORM_OS = ['macOS', 'Windows', 'Linux']
 
 // IDE enum values for extensions
 export const IDE_TYPES = ['vscode', 'cursor', 'windsurf', 'trae', 'zed', 'jetbrains']

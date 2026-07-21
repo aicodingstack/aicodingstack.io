@@ -1,7 +1,8 @@
 {
   "addModel": "+ モデルを追加",
   "basicInfo": "基本情報",
-  "cachePrice": "キャッシュ価格",
+  "cacheReadPrice": "キャッシュ読み取り価格",
+  "cacheWritePrice": "キャッシュ書き込み価格",
   "compareTitle": "{model1} vs {model2} を比較",
   "description": "説明",
   "inputPrice": "入力価格",

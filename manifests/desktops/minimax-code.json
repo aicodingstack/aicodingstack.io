@@ -1,0 +1,109 @@
+{
+  "$schema": "../$schemas/desktop.schema.json",
+  "translations": {
+    "de": {
+      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+    },
+    "es": {
+      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+    },
+    "fr": {
+      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+    },
+    "id": {
+      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+    },
+    "ja": {
+      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+    },
+    "ko": {
+      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+    },
+    "pt": {
+      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+    },
+    "ru": {
+      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+    },
+    "tr": {
+      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+    },
+    "zh-Hans": {
+      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+    },
+    "zh-Hant": {
+      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://agent.minimax.io/download",
+      "title": "MiniMax Agent downloads"
+    },
+    {
+      "url": "https://platform.minimax.io/subscribe/token-plan",
+      "title": "MiniMax coding plans"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
+  "id": "minimax-code",
+  "name": "MiniMax Code",
+  "familyId": "minimax-code",
+  "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows.",
+  "websiteUrl": "https://agent.minimax.io",
+  "docsUrl": "https://agent.minimax.io/download",
+  "vendor": "MiniMax",
+  "latestVersion": "Latest",
+  "githubUrl": null,
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Free",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    },
+    {
+      "name": "Coding Plan",
+      "value": null,
+      "currency": null,
+      "per": "subscription",
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://agent.minimax.io/download",
+    "changelog": null,
+    "pricing": "https://platform.minimax.io/subscribe/token-plan",
+    "mcp": null,
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/MiniMax__AI",
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": "/Applications/MiniMax Code.app",
+      "installCommand": null,
+      "launchCommand": null
+    },
+    {
+      "os": "Windows",
+      "installPath": "%LOCALAPPDATA%\\Programs\\MiniMax Code",
+      "installCommand": null,
+      "launchCommand": null
+    }
+  ]
+}

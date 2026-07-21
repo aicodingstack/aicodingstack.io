@@ -1,0 +1,118 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "claude-sonnet-3-5-20240620",
+  "name": "Claude Sonnet 3.5 (June 2024)",
+  "description": "Anthropic's first Claude 3.5 Sonnet snapshot, a major coding upgrade with strong repository editing, visual reasoning, and tool use.",
+  "translations": {
+    "de": {
+      "description": "Anthropics erster Claude-3.5-Sonnet-Snapshot, ein großes Coding-Upgrade mit starker Repository-Bearbeitung, visuellem Reasoning und Werkzeugnutzung."
+    },
+    "es": {
+      "description": "La primera versión de Claude 3.5 Sonnet de Anthropic, una gran mejora de código con edición de repositorios, razonamiento visual y herramientas."
+    },
+    "fr": {
+      "description": "Le premier snapshot Claude 3.5 Sonnet d’Anthropic, une avancée majeure en codage avec édition de dépôts, raisonnement visuel et outils."
+    },
+    "id": {
+      "description": "Snapshot Claude 3.5 Sonnet pertama Anthropic, peningkatan besar untuk coding dengan penyuntingan repositori, penalaran visual, dan alat."
+    },
+    "ja": {
+      "description": "リポジトリ編集、視覚推論、ツール利用を大きく強化した、Anthropic初のClaude 3.5 Sonnetスナップショット。"
+    },
+    "ko": {
+      "description": "저장소 편집, 시각적 추론 및 도구 사용을 크게 향상한 Anthropic의 첫 Claude 3.5 Sonnet 스냅샷입니다."
+    },
+    "pt": {
+      "description": "O primeiro snapshot Claude 3.5 Sonnet da Anthropic, uma grande evolução em código com edição de repositórios, raciocínio visual e ferramentas."
+    },
+    "ru": {
+      "description": "Первый снимок Claude 3.5 Sonnet от Anthropic: крупное улучшение программирования, редактирования репозиториев, визуального анализа и инструментов."
+    },
+    "tr": {
+      "description": "Anthropic'in depo düzenleme, görsel akıl yürütme ve araç kullanımında büyük kodlama gelişimi sunan ilk Claude 3.5 Sonnet sürümü."
+    },
+    "zh-Hans": {
+      "description": "Anthropic 的首个 Claude 3.5 Sonnet 快照，在仓库编辑、视觉推理和工具调用方面实现重大编码升级。"
+    },
+    "zh-Hant": {
+      "description": "Anthropic 的首個 Claude 3.5 Sonnet 快照，在儲存庫編輯、視覺推理和工具呼叫方面實現重大編碼升級。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "title": "Introducing Claude 3.5 Sonnet",
+      "fields": [
+        "name",
+        "description",
+        "contextWindow",
+        "tokenPricing",
+        "releaseDate",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "title": "Claude Platform release notes",
+      "fields": ["maxOutput", "releaseDate", "inputModalities", "capabilities"]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+      "title": "Anthropic model deprecations",
+      "fields": ["lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.anthropic.com",
+  "docsUrl": "https://www.anthropic.com/news/claude-3-5-sonnet",
+  "vendor": "Anthropic",
+  "size": null,
+  "contextWindow": 200000,
+  "maxOutput": 8192,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 3,
+              "output": 15,
+              "cacheRead": 0.3,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2024-06-20",
+  "lifecycle": "deprecated",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "pdf"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

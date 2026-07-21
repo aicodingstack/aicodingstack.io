@@ -1,0 +1,126 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "claude-sonnet-4-6",
+  "name": "Claude Sonnet 4.6",
+  "description": "Anthropic's balanced model for agentic coding, search, computer use, and everyday production work with a 1M-token context window.",
+  "translations": {
+    "de": {
+      "description": "Anthropics ausgewogenes Modell für agentische Programmierung, Suche, Computernutzung und tägliche Produktionsarbeit mit 1 Mio. Token Kontext."
+    },
+    "es": {
+      "description": "El modelo equilibrado de Anthropic para programación agéntica, búsqueda, uso de computadoras y producción diaria con contexto de 1 millón de tokens."
+    },
+    "fr": {
+      "description": "Le modèle équilibré d’Anthropic pour le codage agentique, la recherche, l’ordinateur et la production quotidienne avec 1 million de jetons de contexte."
+    },
+    "id": {
+      "description": "Model seimbang Anthropic untuk coding agentik, pencarian, penggunaan komputer, dan pekerjaan produksi harian dengan konteks 1 juta token."
+    },
+    "ja": {
+      "description": "100万トークンのコンテキストを備え、エージェント型コーディング、検索、コンピューター操作、日常の本番業務に対応するAnthropicのバランス型モデル。"
+    },
+    "ko": {
+      "description": "100만 토큰 컨텍스트로 에이전트 코딩, 검색, 컴퓨터 사용 및 일상적인 프로덕션 작업을 지원하는 Anthropic의 균형형 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo equilibrado da Anthropic para programação agêntica, pesquisa, uso do computador e produção diária com contexto de 1 milhão de tokens."
+    },
+    "ru": {
+      "description": "Сбалансированная модель Anthropic для агентного программирования, поиска, управления компьютером и повседневной работы с контекстом 1 млн токенов."
+    },
+    "tr": {
+      "description": "Anthropic'in 1 milyon token bağlamla aracı kodlama, arama, bilgisayar kullanımı ve günlük üretim işleri için dengeli modeli."
+    },
+    "zh-Hans": {
+      "description": "Anthropic 面向智能体编码、搜索、计算机使用和日常生产工作的均衡模型，提供 100 万 token 上下文。"
+    },
+    "zh-Hant": {
+      "description": "Anthropic 面向智慧體編碼、搜尋、電腦使用和日常生產工作的均衡模型，提供 100 萬 token 上下文。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "title": "Claude models overview",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "lifecycle"
+      ]
+    },
+    {
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-4-6.html",
+      "title": "Claude Sonnet 4.6 model details",
+      "fields": [
+        "releaseDate",
+        "knowledgeCutoff",
+        "contextWindow",
+        "maxOutput",
+        "inputModalities",
+        "outputModalities"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+      "title": "Introducing Claude Sonnet 4.6",
+      "fields": ["name", "description", "releaseDate"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.anthropic.com",
+  "docsUrl": "https://platform.claude.com/docs/en/about-claude/models/overview",
+  "vendor": "Anthropic",
+  "size": null,
+  "contextWindow": 1000000,
+  "maxOutput": 64000,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 3,
+              "output": 15,
+              "cacheRead": 0.3,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-02-17",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2025-08",
+  "inputModalities": ["text", "image", "pdf"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

@@ -1,0 +1,154 @@
+{
+  "$schema": "../$schemas/desktop.schema.json",
+  "translations": {
+    "de": {
+      "description": "Qoder Desktop ist eine autonome Entwicklungsumgebung mit Coding-Agenten, tiefem Codebasisverständnis, intelligenter Vervollständigung sowie Editor- und Quest-Arbeitsbereichen."
+    },
+    "es": {
+      "description": "Qoder Desktop es un entorno de desarrollo autónomo con agentes de programación, comprensión profunda del código, autocompletado inteligente y espacios Editor y Quest."
+    },
+    "fr": {
+      "description": "Qoder Desktop est un environnement de développement autonome avec agents de codage, compréhension approfondie du code, complétion intelligente et espaces Editor et Quest."
+    },
+    "id": {
+      "description": "Qoder Desktop adalah desktop pengembangan otonom dengan agen coding, pemahaman mendalam atas basis kode, pelengkapan cerdas, serta ruang kerja Editor dan Quest."
+    },
+    "ja": {
+      "description": "Qoder Desktopは、コーディングエージェント、コードベースの深い理解、インテリジェント補完、共同作業と委任のためのEditorとQuestを備えた自律開発デスクトップです。"
+    },
+    "ko": {
+      "description": "Qoder Desktop은 코딩 에이전트, 코드베이스 심층 이해, 지능형 자동 완성, 협업과 위임을 위한 Editor 및 Quest 작업 공간을 갖춘 자율 개발 데스크톱입니다."
+    },
+    "pt": {
+      "description": "Qoder Desktop é um ambiente de desenvolvimento autônomo com agentes de código, compreensão profunda da base, preenchimento inteligente e espaços Editor e Quest."
+    },
+    "ru": {
+      "description": "Qoder Desktop — автономная среда разработки с агентами, глубоким пониманием кодовой базы, умным автодополнением и рабочими пространствами Editor и Quest."
+    },
+    "tr": {
+      "description": "Qoder Desktop; kodlama ajanları, derin kod tabanı anlayışı, akıllı tamamlama ve iş birliği ile görev devri için Editor ve Quest alanları sunan otonom geliştirme masaüstüdür."
+    },
+    "zh-Hans": {
+      "description": "Qoder Desktop 是一款自主开发桌面应用，具备编码智能体、深度代码库理解、智能补全，以及用于协作和任务委派的 Editor 与 Quest 工作区。"
+    },
+    "zh-Hant": {
+      "description": "Qoder Desktop 是一款自主開發桌面應用，具備編碼智慧代理、深度程式碼庫理解、智慧補全，以及用於協作和任務委派的 Editor 與 Quest 工作區。"
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://qoder.com/desktop",
+      "title": "Qoder Desktop"
+    },
+    {
+      "url": "https://qoder.com/download",
+      "title": "Qoder downloads",
+      "fields": ["resourceUrls.download", "platforms"]
+    },
+    {
+      "url": "https://qoder.com/en/changelog",
+      "title": "Qoder changelog",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
+    },
+    {
+      "url": "https://docs.qoder.com/account/pricing",
+      "title": "Qoder pricing documentation",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://qoder.com/blog/qoder-1.0",
+      "title": "Introducing Qoder 1.0",
+      "fields": ["familyId", "relatedProducts"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "id": "qoder",
+  "name": "Qoder Desktop",
+  "familyId": "qoder",
+  "description": "Qoder Desktop is an autonomous development desktop with coding agents, deep codebase awareness, intelligent autocomplete, and Editor and Quest workspaces.",
+  "websiteUrl": "https://qoder.com/desktop",
+  "docsUrl": "https://docs.qoder.com",
+  "vendor": "Alibaba",
+  "latestVersion": "1.15.0",
+  "githubUrl": null,
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Community Edition",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    },
+    {
+      "name": "Pro",
+      "value": 20,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Pro+",
+      "value": 60,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Ultra",
+      "value": 200,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://qoder.com/download",
+    "changelog": "https://qoder.com/en/changelog",
+    "pricing": "https://qoder.com/pricing",
+    "mcp": null,
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/Qoder_ai_ide",
+    "github": "https://github.com/QoderAI",
+    "youtube": "https://www.youtube.com/@qoder_ai",
+    "discord": "https://discord.gg/NRpVfWbn",
+    "reddit": "https://www.reddit.com/r/Qoder",
+    "blog": "https://qoder.com/blog"
+  },
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "qoder-cli"
+    },
+    {
+      "type": "extension",
+      "productId": "qoder"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": null,
+      "installCommand": null,
+      "launchCommand": null
+    },
+    {
+      "os": "Windows",
+      "installPath": null,
+      "installCommand": null,
+      "launchCommand": null
+    },
+    {
+      "os": "Linux",
+      "installPath": null,
+      "installCommand": null,
+      "launchCommand": null
+    }
+  ]
+}

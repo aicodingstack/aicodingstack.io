@@ -3,11 +3,13 @@
 import { ExternalLink } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Fragment, useEffect, useRef } from 'react'
+import { useCurrency } from '@/components/CurrencyProvider'
 import { useModelComparison } from '@/components/controls/useModelComparison'
 import type { Locale } from '@/i18n/config'
 import { Link, useRouter } from '@/i18n/navigation'
 import { providersData } from '@/lib/generated'
 import { buildModelComparisonPath } from '@/lib/model-comparison'
+import { type CurrencyConversion, formatPrimaryTokenRate } from '@/lib/model-pricing'
 import type {
   ManifestBenchmarks,
   ManifestModel,
@@ -33,9 +35,10 @@ const EMPTY_PLATFORM_URLS: ManifestPlatformUrls = {
 }
 
 const EMPTY_TOKEN_PRICING: ManifestTokenPricing = {
-  input: 0,
-  output: 0,
-  cache: null,
+  status: 'unavailable',
+  reason: 'official-price-not-published',
+  primaryOffer: null,
+  offers: [],
 }
 
 const EMPTY_INPUT_MODALITIES: ModelInputModality[] = []
@@ -70,16 +73,6 @@ const formatNumberToK = (value: number | null | undefined): string => {
   return value ? `${(value / 1000).toFixed(0)}K` : '-'
 }
 
-const formatPrice = (value: number | null | undefined, locale: string): string => {
-  if (value === null || value === undefined) return '-'
-  const price = new Intl.NumberFormat(locale, {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: 3,
-  }).format(value)
-  return `${price} / 1M tokens`
-}
-
 const formatPercentage = (value: number | null | undefined): string => {
   return value ? `${value}%` : '-'
 }
@@ -98,10 +91,15 @@ const createNumberToKRenderer = (getValue: (model: ManifestModel) => number | nu
 }
 
 const createPriceRenderer = (
-  getValue: (model: ManifestModel) => number | null | undefined,
-  locale: string
+  rate: 'input' | 'output' | 'cacheRead' | 'cacheWrite',
+  locale: string,
+  conversion: CurrencyConversion | null,
+  formatPerMillion: (price: string) => string
 ) => {
-  return (model: ManifestModel) => formatPrice(getValue(model), locale)
+  return (model: ManifestModel) => {
+    const price = formatPrimaryTokenRate(model.tokenPricing, rate, locale, conversion)
+    return price ? formatPerMillion(price) : '-'
+  }
 }
 
 const createBenchmarkRenderer = (getValue: (model: ManifestModel) => number | null | undefined) => {
@@ -183,6 +181,7 @@ export default function ComparePageClient({
   const router = useRouter()
   const tPage = useTranslations('pages.modelCompare')
   const tShared = useTranslations('shared')
+  const { conversion } = useCurrency()
   const initialModelIds = initialModels.map(model => model.id)
   const { selectedIds, isHydrated, setSelection } = useModelComparison(initialModelIds)
   const selectedModel1 = selectedIds[0] ?? ''
@@ -336,21 +335,36 @@ export default function ComparePageClient({
         groupLabel: tShared('terms.pricing'),
         key: 'inputPrice',
         label: tPage('inputPrice'),
-        render: createPriceRenderer(m => m.tokenPricing?.input, locale),
+        render: createPriceRenderer('input', locale, conversion, price =>
+          tShared('modelPricing.perMillionTokens', { price })
+        ),
       },
       {
         group: 'pricing',
         groupLabel: tShared('terms.pricing'),
         key: 'outputPrice',
         label: tPage('outputPrice'),
-        render: createPriceRenderer(m => m.tokenPricing?.output, locale),
+        render: createPriceRenderer('output', locale, conversion, price =>
+          tShared('modelPricing.perMillionTokens', { price })
+        ),
       },
       {
         group: 'pricing',
         groupLabel: tShared('terms.pricing'),
-        key: 'cachePrice',
-        label: tPage('cachePrice'),
-        render: createPriceRenderer(m => m.tokenPricing?.cache, locale),
+        key: 'cacheReadPrice',
+        label: tPage('cacheReadPrice'),
+        render: createPriceRenderer('cacheRead', locale, conversion, price =>
+          tShared('modelPricing.perMillionTokens', { price })
+        ),
+      },
+      {
+        group: 'pricing',
+        groupLabel: tShared('terms.pricing'),
+        key: 'cacheWritePrice',
+        label: tPage('cacheWritePrice'),
+        render: createPriceRenderer('cacheWrite', locale, conversion, price =>
+          tShared('modelPricing.perMillionTokens', { price })
+        ),
       },
     ]
 

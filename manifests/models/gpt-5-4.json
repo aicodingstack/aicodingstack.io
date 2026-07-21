@@ -1,0 +1,114 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gpt-5-4",
+  "name": "GPT-5.4",
+  "description": "OpenAI's frontier model for complex professional work, including coding, tool use, computer operation, and long-context workflows.",
+  "translations": {
+    "de": {
+      "description": "OpenAIs Frontier-Modell für komplexe professionelle Arbeit, einschließlich Programmierung, Werkzeugnutzung, Computerbedienung und Langkontext-Abläufen."
+    },
+    "es": {
+      "description": "El modelo de frontera de OpenAI para trabajo profesional complejo, incluida programación, uso de herramientas, manejo de computadoras y contexto largo."
+    },
+    "fr": {
+      "description": "Le modèle de pointe d’OpenAI pour les tâches professionnelles complexes, notamment le codage, les outils, l’utilisation d’ordinateurs et le contexte long."
+    },
+    "id": {
+      "description": "Model frontier OpenAI untuk pekerjaan profesional kompleks, termasuk coding, penggunaan alat, pengoperasian komputer, dan alur konteks panjang."
+    },
+    "ja": {
+      "description": "コーディング、ツール利用、コンピューター操作、長いコンテキストのワークフローなど、複雑な専門業務向けのOpenAIフロンティアモデル。"
+    },
+    "ko": {
+      "description": "코딩, 도구 사용, 컴퓨터 조작 및 긴 컨텍스트 워크플로를 포함한 복잡한 전문 업무용 OpenAI 프런티어 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo de fronteira da OpenAI para trabalho profissional complexo, incluindo programação, uso de ferramentas, operação de computadores e contexto longo."
+    },
+    "ru": {
+      "description": "Передовая модель OpenAI для сложной профессиональной работы, включая программирование, инструменты, управление компьютером и длинный контекст."
+    },
+    "tr": {
+      "description": "OpenAI'ın kodlama, araç kullanımı, bilgisayar işletimi ve uzun bağlamlı iş akışları dahil karmaşık profesyonel işler için öncü modeli."
+    },
+    "zh-Hans": {
+      "description": "OpenAI 面向复杂专业工作的前沿模型，涵盖编码、工具使用、计算机操作和长上下文工作流。"
+    },
+    "zh-Hant": {
+      "description": "OpenAI 面向複雜專業工作的前沿模型，涵蓋編碼、工具使用、電腦操作和長上下文工作流程。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.4",
+      "title": "GPT-5.4 model documentation",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "releaseDate"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-5-4/",
+      "title": "Introducing GPT-5.4",
+      "fields": ["name", "description", "releaseDate", "lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://openai.com",
+  "docsUrl": "https://developers.openai.com/api/docs/models/gpt-5.4",
+  "vendor": "OpenAI",
+  "size": null,
+  "contextWindow": 1050000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 2.5,
+              "output": 15,
+              "cacheRead": 0.25,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-03-05",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2025-08-31",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

@@ -52,8 +52,8 @@ export function saveGithubStars(data) {
 }
 
 /**
- * Get the category name (plural form) from manifest type
- * @param {string} type - Manifest type (cli, extension, ide, model, provider, vendor)
+ * Get the tracked category name from manifest type.
+ * @param {string} type - Manifest type (cli, extension, ide, model)
  * @returns {string} Category name for github-stars.json
  */
 function getCategoryName(type) {
@@ -62,11 +62,9 @@ function getCategoryName(type) {
     extension: 'extensions',
     ide: 'ides',
     model: 'models',
-    provider: 'providers',
-    vendor: 'vendors',
   }
 
-  return mapping[type] || `${type}s`
+  return mapping[type] || null
 }
 
 /**
@@ -85,9 +83,11 @@ export function updateGithubStarsEntry(type, id, options = {}) {
     const githubStars = loadGithubStars()
     const category = getCategoryName(type)
 
-    // Ensure category exists
-    if (!githubStars[category]) {
-      githubStars[category] = {}
+    if (!category || !Object.hasOwn(githubStars, category)) {
+      return {
+        status: 'skipped',
+        message: `Manifest type "${type}" is not tracked by data/github-stars.json`,
+      }
     }
 
     // Check if entry already exists
@@ -102,8 +102,8 @@ export function updateGithubStarsEntry(type, id, options = {}) {
 
     if (!isNew && !exists) {
       return {
-        status: 'warning',
-        message: `Entry "${id}" does not exist in github-stars.json under "${category}", adding as new`,
+        status: 'skipped',
+        message: `Entry "${id}" does not exist in github-stars.json under "${category}"; no change made. Verify the official repository, then use the add command.`,
       }
     }
 
@@ -147,6 +147,13 @@ export function removeGithubStarsEntry(type, id) {
   try {
     const githubStars = loadGithubStars()
     const category = getCategoryName(type)
+
+    if (!category || !Object.hasOwn(githubStars, category)) {
+      return {
+        status: 'skipped',
+        message: `Manifest type "${type}" is not tracked by data/github-stars.json`,
+      }
+    }
 
     if (!githubStars[category] || !(id in githubStars[category])) {
       return {

@@ -1,7 +1,8 @@
 {
   "addModel": "+ Tambah Model",
   "basicInfo": "Informasi Dasar",
-  "cachePrice": "Harga Cache",
+  "cacheReadPrice": "Harga baca cache",
+  "cacheWritePrice": "Harga tulis cache",
   "compareTitle": "Bandingkan {model1} vs {model2}",
   "description": "Deskripsi",
   "inputPrice": "Harga Input",

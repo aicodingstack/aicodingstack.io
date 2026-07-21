@@ -11,6 +11,7 @@ import { PageLayout } from '@/layouts/PageLayout'
 import { getVendor } from '@/lib/data/fetchers'
 import {
   clisData as clis,
+  desktopsData as desktops,
   extensionsData as extensions,
   idesData as ides,
   modelsData as models,
@@ -19,7 +20,15 @@ import {
 import { localizeManifestItem } from '@/lib/manifest-i18n'
 import { generateSoftwareDetailMetadata } from '@/lib/metadata'
 import { generateVendorSchema } from '@/lib/metadata/schemas'
-import type { ManifestCLI, ManifestExtension, ManifestIDE, ManifestModel } from '@/types/manifests'
+import { vendorMatches } from '@/lib/vendor-identity'
+import type {
+  ManifestCLI,
+  ManifestDesktop,
+  ManifestExtension,
+  ManifestIDE,
+  ManifestModel,
+  ManifestVendor,
+} from '@/types/manifests'
 
 export const revalidate = 3600
 
@@ -60,11 +69,11 @@ export async function generateMetadata({
  */
 function findVendorItems<TLocalized>(
   items: { vendor: string }[],
-  vendorName: string,
+  vendor: ManifestVendor,
   locale: Locale
 ): TLocalized[] {
   const localized = items
-    .filter(item => item.vendor === vendorName)
+    .filter(item => vendorMatches(vendor, item.vendor))
     .map(item => localizeManifestItem(item as unknown as Record<string, unknown>, locale as Locale))
     .filter((m): m is NonNullable<typeof m> => m !== null)
 
@@ -96,28 +105,30 @@ export default async function VendorPage({
   })
 
   // Find all products by this vendor
-  // Note: Products store vendor.name, not vendor.id, so we match against vendor.name
-  const vendorIdes = findVendorItems<ManifestIDE>(ides, vendor.name, locale as Locale).map(ide => ({
+  const vendorIdes = findVendorItems<ManifestIDE>(ides, vendor, locale as Locale).map(ide => ({
     ...ide,
     type: 'ide' as const,
   }))
 
-  const vendorClis = findVendorItems<ManifestCLI>(clis, vendor.name, locale as Locale).map(cli => ({
+  const vendorClis = findVendorItems<ManifestCLI>(clis, vendor, locale as Locale).map(cli => ({
     ...cli,
     type: 'cli' as const,
   }))
 
+  const vendorDesktops = findVendorItems<ManifestDesktop>(desktops, vendor, locale as Locale).map(
+    desktop => ({ ...desktop, type: 'desktop' as const })
+  )
+
   const vendorExtensions = findVendorItems<ManifestExtension>(
     extensions,
-    vendor.name,
+    vendor,
     locale as Locale
   ).map(ext => ({ ...ext, type: 'extension' as const }))
 
-  const vendorProducts = [...vendorIdes, ...vendorClis, ...vendorExtensions]
+  const vendorProducts = [...vendorIdes, ...vendorClis, ...vendorDesktops, ...vendorExtensions]
 
   // Find all models by this vendor
-  // Note: Models also store vendor.name, not vendor.id
-  const vendorModels = findVendorItems<ManifestModel>(models, vendor.name, locale as Locale)
+  const vendorModels = findVendorItems<ManifestModel>(models, vendor, locale as Locale)
 
   // Breadcrumb items
   const breadcrumbItems = [

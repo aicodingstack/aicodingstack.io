@@ -3,6 +3,7 @@
 import { Check, Scale } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useMemo, useState } from 'react'
+import { useCurrency } from '@/components/CurrencyProvider'
 import { useModelComparison } from '@/components/controls/useModelComparison'
 import { VerifiedBadge } from '@/components/controls/VerifiedBadge'
 import Footer from '@/components/Footer'
@@ -15,6 +16,7 @@ import { formatTokenCount } from '@/lib/format'
 import { modelsData } from '@/lib/generated'
 import { localizeManifestItems } from '@/lib/manifest-i18n'
 import { buildModelComparisonPath } from '@/lib/model-comparison'
+import { formatPrimaryTokenRate } from '@/lib/model-pricing'
 import type { ManifestModel } from '@/types/manifests'
 
 type Props = {
@@ -25,6 +27,7 @@ export default function ModelsPageClient({ locale }: Props) {
   const tPage = useTranslations('pages.models')
   const tShared = useTranslations('shared')
   const [searchQuery, setSearchQuery] = useState('')
+  const { conversion } = useCurrency()
   const { selectedIds, toggleModel } = useModelComparison()
 
   // Localize models
@@ -76,6 +79,13 @@ export default function ModelsPageClient({ locale }: Props) {
     })
     return groups
   }, [filteredModels])
+
+  const formatListPrice = (model: ManifestModel): string => {
+    const price = formatPrimaryTokenRate(model.tokenPricing, 'input', locale, conversion)
+    return price
+      ? tShared('modelPricing.perMillionTokens', { price })
+      : tShared('modelPricing.notAvailable')
+  }
 
   return (
     <>
@@ -140,7 +150,9 @@ export default function ModelsPageClient({ locale }: Props) {
                         <div className="space-y-[var(--spacing-xs)] mb-[var(--spacing-md)]">
                           <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
                             <span className="text-[var(--color-text-muted)]">{tPage('size')}</span>
-                            <span className="text-[var(--color-text-secondary)]">{model.size}</span>
+                            <span className="text-[var(--color-text-secondary)]">
+                              {model.size ?? '—'}
+                            </span>
                           </div>
                           <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
                             <span className="text-[var(--color-text-muted)]">
@@ -155,10 +167,7 @@ export default function ModelsPageClient({ locale }: Props) {
                               {tPage('pricing')}
                             </span>
                             <span className="text-[var(--color-text-secondary)]">
-                              {model.tokenPricing?.input !== null &&
-                              model.tokenPricing?.input !== undefined
-                                ? `$${model.tokenPricing.input}/M`
-                                : '-'}
+                              {formatListPrice(model)}
                             </span>
                           </div>
                         </div>

@@ -1,0 +1,100 @@
+{
+  "$schema": "../$schemas/extension.schema.json",
+  "translations": {
+    "de": {
+      "description": "Kimi Code for VS Code integrates Moonshot AI's coding agent with editor context, repository-aware changes, terminal operations, and shared workflows with Kimi Code CLI."
+    },
+    "es": {
+      "description": "Kimi Code for VS Code integrates Moonshot AI's coding agent with editor context, repository-aware changes, terminal operations, and shared workflows with Kimi Code CLI."
+    },
+    "fr": {
+      "description": "Kimi Code for VS Code integrates Moonshot AI's coding agent with editor context, repository-aware changes, terminal operations, and shared workflows with Kimi Code CLI."
+    },
+    "id": {
+      "description": "Kimi Code for VS Code integrates Moonshot AI's coding agent with editor context, repository-aware changes, terminal operations, and shared workflows with Kimi Code CLI."
+    },
+    "ja": {
+      "description": "Kimi Code for VS Code integrates Moonshot AI's coding agent with editor context, repository-aware changes, terminal operations, and shared workflows with Kimi Code CLI."
+    },
+    "ko": {
+      "description": "Kimi Code for VS Code integrates Moonshot AI's coding agent with editor context, repository-aware changes, terminal operations, and shared workflows with Kimi Code CLI."
+    },
+    "pt": {
+      "description": "Kimi Code for VS Code integrates Moonshot AI's coding agent with editor context, repository-aware changes, terminal operations, and shared workflows with Kimi Code CLI."
+    },
+    "ru": {
+      "description": "Kimi Code for VS Code integrates Moonshot AI's coding agent with editor context, repository-aware changes, terminal operations, and shared workflows with Kimi Code CLI."
+    },
+    "tr": {
+      "description": "Kimi Code for VS Code integrates Moonshot AI's coding agent with editor context, repository-aware changes, terminal operations, and shared workflows with Kimi Code CLI."
+    },
+    "zh-Hans": {
+      "description": "Kimi Code for VS Code integrates Moonshot AI's coding agent with editor context, repository-aware changes, terminal operations, and shared workflows with Kimi Code CLI."
+    },
+    "zh-Hant": {
+      "description": "Kimi Code for VS Code integrates Moonshot AI's coding agent with editor context, repository-aware changes, terminal operations, and shared workflows with Kimi Code CLI."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://www.kimi.com/resources/kimi-code-introduction",
+      "title": "Kimi Code introduction"
+    },
+    {
+      "url": "https://github.com/MoonshotAI/kimi-code",
+      "title": "Kimi Code repository"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "id": "kimi-code",
+  "name": "Kimi Code for VS Code",
+  "familyId": "kimi-code",
+  "description": "Kimi Code for VS Code integrates Moonshot AI's coding agent with editor context, repository-aware changes, terminal operations, and shared workflows with Kimi Code CLI.",
+  "websiteUrl": "https://www.kimi.com/code",
+  "docsUrl": "https://www.kimi.com/code/docs/en",
+  "vendor": "Moonshot AI",
+  "latestVersion": "Latest",
+  "githubUrl": "https://github.com/MoonshotAI/kimi-code",
+  "license": "Apache-2.0",
+  "pricing": [
+    {
+      "name": "Free",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": null,
+    "changelog": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html",
+    "pricing": null,
+    "mcp": null,
+    "issue": "https://github.com/MoonshotAI/kimi-code/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/Kimi_Moonshot",
+    "github": "https://github.com/MoonshotAI/kimi-code",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "kimi-cli"
+    }
+  ],
+  "supportedIdes": [
+    {
+      "ideId": "vscode",
+      "marketplaceUrl": null,
+      "installUri": null
+    }
+  ]
+}

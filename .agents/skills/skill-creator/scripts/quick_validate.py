@@ -1,65 +1,73 @@
 #!/usr/bin/env python3
-"""
-Quick validation script for skills - minimal version
-"""
+"""Fast structural validation for a skill directory."""
 
-import sys
-import os
 import re
+import sys
 from pathlib import Path
 
-def validate_skill(skill_path):
-    """Basic validation of a skill"""
-    skill_path = Path(skill_path)
+NAME_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
-    # Check SKILL.md exists
-    skill_md = skill_path / 'SKILL.md'
-    if not skill_md.exists():
+
+def parse_frontmatter(content: str):
+    match = re.match(r"\A---\r?\n(.*?)\r?\n---(?:\r?\n|\Z)", content, re.DOTALL)
+    if not match:
+        return None, "SKILL.md must start with a closed YAML frontmatter block"
+
+    values = {}
+    for line in match.group(1).splitlines():
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        field = re.match(r"^([A-Za-z][A-Za-z0-9_-]*):\s*(.*)$", line)
+        if not field:
+            return None, f"Unsupported frontmatter line: {line}"
+        key, value = field.groups()
+        values[key] = value.strip().strip('"\'')
+    return (values, match.end()), None
+
+
+def validate_skill(skill_path):
+    skill_path = Path(skill_path)
+    errors = []
+    if not skill_path.exists() or not skill_path.is_dir():
+        return False, f"Skill directory not found: {skill_path}"
+
+    skill_md = skill_path / "SKILL.md"
+    if not skill_md.is_file():
         return False, "SKILL.md not found"
 
-    # Read and validate frontmatter
-    content = skill_md.read_text()
-    if not content.startswith('---'):
-        return False, "No YAML frontmatter found"
+    content = skill_md.read_text(encoding="utf-8")
+    parsed, error = parse_frontmatter(content)
+    if error:
+        return False, error
+    frontmatter, body_start = parsed
 
-    # Extract frontmatter
-    match = re.match(r'^---\n(.*?)\n---', content, re.DOTALL)
-    if not match:
-        return False, "Invalid frontmatter format"
+    name = frontmatter.get("name", "")
+    description = frontmatter.get("description", "")
+    if not NAME_PATTERN.fullmatch(name) or len(name) > 64:
+        errors.append("name must be a hyphen-case identifier of at most 64 characters")
+    if name != skill_path.name:
+        errors.append(f"frontmatter name '{name}' must match directory name '{skill_path.name}'")
+    if not 20 <= len(description) <= 1024:
+        errors.append("description must be 20-1024 characters")
+    if "<" in description or ">" in description:
+        errors.append("description cannot contain angle brackets")
+    if "TODO" in description or "[TODO" in content:
+        errors.append("replace all TODO placeholders before validation")
+    if not content[body_start:].strip():
+        errors.append("SKILL.md must contain instructions after frontmatter")
 
-    frontmatter = match.group(1)
+    for item in skill_path.rglob("*"):
+        if item.is_symlink():
+            errors.append(f"symbolic links are not allowed in packaged skills: {item.relative_to(skill_path)}")
+    if errors:
+        return False, "\n- ".join(["Skill validation failed:", *errors])
+    return True, "Skill structure is valid"
 
-    # Check required fields
-    if 'name:' not in frontmatter:
-        return False, "Missing 'name' in frontmatter"
-    if 'description:' not in frontmatter:
-        return False, "Missing 'description' in frontmatter"
-
-    # Extract name for validation
-    name_match = re.search(r'name:\s*(.+)', frontmatter)
-    if name_match:
-        name = name_match.group(1).strip()
-        # Check naming convention (hyphen-case: lowercase with hyphens)
-        if not re.match(r'^[a-z0-9-]+$', name):
-            return False, f"Name '{name}' should be hyphen-case (lowercase letters, digits, and hyphens only)"
-        if name.startswith('-') or name.endswith('-') or '--' in name:
-            return False, f"Name '{name}' cannot start/end with hyphen or contain consecutive hyphens"
-
-    # Extract and validate description
-    desc_match = re.search(r'description:\s*(.+)', frontmatter)
-    if desc_match:
-        description = desc_match.group(1).strip()
-        # Check for angle brackets
-        if '<' in description or '>' in description:
-            return False, "Description cannot contain angle brackets (< or >)"
-
-    return True, "Skill is valid!"
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: python quick_validate.py <skill_directory>")
+        print("Usage: python3 quick_validate.py <skill-directory>")
         sys.exit(1)
-
     valid, message = validate_skill(sys.argv[1])
     print(message)
     sys.exit(0 if valid else 1)

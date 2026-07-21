@@ -97,8 +97,29 @@ describe('Metadata Generators', () => {
           contextWindow: 128000,
           maxOutput: 8192,
           tokenPricing: {
-            input: 0.27,
-            output: 1.1,
+            status: 'available',
+            primaryOffer: 'global-standard',
+            offers: [
+              {
+                id: 'global-standard',
+                currency: 'USD',
+                region: 'global',
+                serviceTier: 'standard',
+                effectiveFrom: null,
+                effectiveTo: null,
+                tiers: [
+                  {
+                    condition: null,
+                    rates: {
+                      input: 0.27,
+                      output: 1.1,
+                      cacheRead: null,
+                      cacheWrite: null,
+                    },
+                  },
+                ],
+              },
+            ],
           },
         },
         translationNamespace: 'pages.models',

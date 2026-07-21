@@ -39,6 +39,16 @@
     }
   },
   "verified": true,
+  "sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+      "title": "Anthropic model deprecations",
+      "fields": ["lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.anthropic.com",
   "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
   "vendor": "Anthropic",
@@ -46,12 +56,32 @@
   "contextWindow": 200000,
   "maxOutput": 64000,
   "tokenPricing": {
-    "input": 3,
-    "output": 15,
-    "cache": 0.3
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 3,
+              "output": 15,
+              "cacheRead": 0.3,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
   },
   "releaseDate": "2025-05-22",
-  "lifecycle": "maintained",
+  "lifecycle": "deprecated",
   "knowledgeCutoff": null,
   "inputModalities": ["text", "image", "pdf"],
   "outputModalities": ["text"],

@@ -39,6 +39,7 @@
   "categories": {
     "all": {
       "clis": "All CLIs",
+      "desktops": "All Desktop Apps",
       "extensions": "All Extensions",
       "ides": "All IDEs",
       "modelProviders": "All Model Providers",
@@ -47,6 +48,7 @@
     },
     "plural": {
       "clis": "CLIs",
+      "desktops": "Desktop",
       "extensions": "Extensions",
       "ides": "IDEs",
       "modelProviders": "Model Providers",
@@ -56,6 +58,7 @@
     },
     "singular": {
       "cli": "CLI",
+      "desktop": "Desktop",
       "extension": "Extension",
       "ide": "IDE",
       "model": "Model",
@@ -80,6 +83,31 @@
     "deprecated": "Deprecated",
     "latest": "Latest",
     "maintained": "Maintained"
+  },
+  "modelPricing": {
+    "cacheRead": "Чтение кеша",
+    "cacheWrite": "Запись кеша",
+    "conditions": {
+      "over": "Более {min} {metric}",
+      "range": "{min}–{max} {metric}",
+      "upTo": "До {max} {metric}"
+    },
+    "ended": "Завершено {date}",
+    "globalRegion": "Глобально",
+    "historical": "Исторические цены",
+    "metrics": {
+      "contextTokens": "токенов контекста",
+      "inputTokens": "входных токенов"
+    },
+    "notAvailable": "Недоступно",
+    "perMillionTokens": "{price} / 1 млн токенов",
+    "reasons": {
+      "historicalPriceUnverified": "Историческая цена API не проверена.",
+      "officialPriceNotPublished": "Официальная цена за токены не опубликована.",
+      "openWeightsOnly": "Только открытые веса; цены собственного API за токены нет.",
+      "subscriptionOnly": "Только подписка; цены API на основе токенов нет.",
+      "unsupportedPricingStructure": "Официальную структуру цен пока невозможно точно представить."
+    }
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",

@@ -2,7 +2,7 @@
   "$schema": "../$schemas/model.schema.json",
   "id": "deepseek-v3-terminus",
   "name": "DeepSeek V3.1 Terminus",
-  "description": "DeepSeek V3.1 Terminus-extended version with 67B parameters and 64K context window, designed for advanced reasoning and code generation tasks.",
+  "description": "DeepSeek V3.1 Terminus improves language consistency and optimizes code-agent and search-agent behavior over V3.1.",
   "translations": {
     "zh-Hans": {
       "description": "DeepSeek V3.1 Terminus 扩展版本，67B 参数，64K 上下文窗口，专为高级推理和代码生成任务设计。"
@@ -38,20 +38,43 @@
       "description": "DeepSeek V3.1 Terminus 擴展版本，67B 參數，64K 上下文視窗，專為高級推理和代碼生成任務設計。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://api-docs.deepseek.com/news/news250922",
+      "title": "DeepSeek-V3.1-Terminus release notes",
+      "fields": ["name", "description", "releaseDate", "lifecycle", "capabilities"]
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus",
+      "title": "Official DeepSeek-V3.1-Terminus model card",
+      "fields": [
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "platformUrls"
+      ]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.deepseek.com",
   "docsUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus",
   "vendor": "DeepSeek",
   "size": "671B",
-  "contextWindow": 64000,
-  "maxOutput": 4000,
+  "contextWindow": 128000,
+  "maxOutput": null,
   "tokenPricing": {
-    "input": 0.14,
-    "output": 0.14,
-    "cache": null
+    "status": "unavailable",
+    "reason": "historical-price-unverified",
+    "primaryOffer": null,
+    "offers": []
   },
-  "releaseDate": null,
-  "lifecycle": "latest",
+  "releaseDate": "2025-09-22",
+  "lifecycle": "maintained",
   "knowledgeCutoff": null,
   "inputModalities": ["text"],
   "outputModalities": ["text"],

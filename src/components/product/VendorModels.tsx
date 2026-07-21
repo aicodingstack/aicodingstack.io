@@ -42,9 +42,11 @@ export function VendorModels({ models }: { models: ManifestModel[] }) {
                   <span className="px-2 py-0.5 bg-[var(--color-background-muted)] text-[var(--color-text-secondary)] border border-[var(--color-border)]">
                     {formatTokenCount(model.contextWindow)} context
                   </span>
-                  <span className="px-2 py-0.5 bg-[var(--color-background-muted)] text-[var(--color-text-secondary)] border border-[var(--color-border)]">
-                    {formatTokenCount(model.maxOutput)} output
-                  </span>
+                  {model.maxOutput !== null && (
+                    <span className="px-2 py-0.5 bg-[var(--color-background-muted)] text-[var(--color-text-secondary)] border border-[var(--color-border)]">
+                      {formatTokenCount(model.maxOutput)} output
+                    </span>
+                  )}
                 </div>
               </div>
               <span className="text-lg text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all ml-[var(--spacing-xs)]">

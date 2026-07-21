@@ -13,6 +13,7 @@ export interface ModelBenchmarksProps {
  */
 export function ModelBenchmarks({ benchmarks }: ModelBenchmarksProps) {
   const tComponent = useTranslations('components.product')
+  const tShared = useTranslations('shared')
   if (!benchmarks || !hasBenchmarks(benchmarks)) {
     return null
   }
@@ -32,12 +33,14 @@ export function ModelBenchmarks({ benchmarks }: ModelBenchmarksProps) {
             return (
               <div key={key} className="border border-[var(--color-border)] p-[var(--spacing-md)]">
                 <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
-                  {tComponent(`${key}`)}
+                  {tShared(`benchmarks.${key}`)}
                 </h3>
                 <p className="text-lg font-semibold tracking-tight mb-1">
                   {formatBenchmarkValue(key, value)}
                 </p>
-                <p className="text-xs text-[var(--color-text-muted)]">{tComponent(`${key}Desc`)}</p>
+                <p className="text-xs text-[var(--color-text-muted)]">
+                  {tComponent(`benchmarks.${key}Desc`)}
+                </p>
               </div>
             )
           })}

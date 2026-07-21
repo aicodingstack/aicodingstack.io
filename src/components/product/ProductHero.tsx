@@ -8,7 +8,7 @@ export interface ProductHeroProps {
   name: string
   description: string
   vendor?: string
-  category: 'CLI' | 'IDE' | 'EXTENSION' | 'PROVIDER' | 'MODEL' | 'VENDOR'
+  category: 'CLI' | 'IDE' | 'DESKTOP' | 'EXTENSION' | 'PROVIDER' | 'MODEL' | 'VENDOR'
   categoryLabel?: string // Optional custom label for the badge
   verified?: boolean // Whether the product is verified
 
@@ -17,7 +17,7 @@ export interface ProductHeroProps {
   license?: string
   githubStars?: number | null
 
-  // Platform support (for CLI/IDE)
+  // Platform support (for CLI/IDE/Desktop)
   platforms?: ('macOS' | 'Windows' | 'Linux')[]
   showAllPlatforms?: boolean // Whether to show BSD platforms when supported
 

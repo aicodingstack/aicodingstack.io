@@ -1,0 +1,118 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "qwen3-7-plus",
+  "name": "Qwen3.7 Plus",
+  "description": "Alibaba's multimodal Qwen model balancing coding, reasoning, speed, and cost with a 1M-token context window.",
+  "translations": {
+    "de": {
+      "description": "Alibabas multimodales Qwen-Modell mit 1-Million-Token-Kontext, das Coding, Reasoning, Geschwindigkeit und Kosten ausbalanciert."
+    },
+    "es": {
+      "description": "El modelo Qwen multimodal de Alibaba con un contexto de un millón de tokens que equilibra código, razonamiento, velocidad y coste."
+    },
+    "fr": {
+      "description": "Le modèle Qwen multimodal d’Alibaba, doté d’un contexte d’un million de jetons, équilibrant codage, raisonnement, vitesse et coût."
+    },
+    "id": {
+      "description": "Model Qwen multimodal Alibaba dengan konteks 1 juta token yang menyeimbangkan coding, penalaran, kecepatan, dan biaya."
+    },
+    "ja": {
+      "description": "100万トークンのコンテキストでコーディング、推論、速度、コストのバランスを取るAlibabaのマルチモーダルQwenモデル。"
+    },
+    "ko": {
+      "description": "100만 토큰 컨텍스트에서 코딩, 추론, 속도 및 비용의 균형을 맞춘 Alibaba의 멀티모달 Qwen 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo Qwen multimodal da Alibaba com contexto de um milhão de tokens que equilibra código, raciocínio, velocidade e custo."
+    },
+    "ru": {
+      "description": "Мультимодальная модель Qwen от Alibaba с контекстом 1 млн токенов, сочетающая программирование, рассуждения, скорость и стоимость."
+    },
+    "tr": {
+      "description": "Alibaba'nın 1 milyon belirteç bağlamında kodlama, akıl yürütme, hız ve maliyeti dengeleyen çok modlu Qwen modeli."
+    },
+    "zh-Hans": {
+      "description": "阿里巴巴提供 100 万 token 上下文，在编码、推理、速度和成本之间取得平衡的多模态 Qwen 模型。"
+    },
+    "zh-Hant": {
+      "description": "阿里巴巴提供 100 萬 token 上下文，在編碼、推理、速度和成本之間取得平衡的多模態 Qwen 模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://help.aliyun.com/en/model-studio/model-pricing",
+      "title": "Alibaba Cloud Model Studio model list and pricing",
+      "fields": ["name", "releaseDate", "lifecycle", "contextWindow", "maxOutput", "tokenPricing"]
+    },
+    {
+      "url": "https://help.aliyun.com/en/model-studio/vision-model/",
+      "title": "Qwen multimodal model documentation",
+      "fields": ["description", "inputModalities", "outputModalities", "capabilities"]
+    },
+    {
+      "url": "https://help.aliyun.com/en/model-studio/coding-plan",
+      "title": "Model Studio Coding Plan",
+      "fields": ["lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.alibabacloud.com/product/modelstudio",
+  "docsUrl": "https://help.aliyun.com/en/model-studio/model-pricing",
+  "vendor": "Alibaba",
+  "size": null,
+  "contextWindow": 1000000,
+  "maxOutput": 64000,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "cn-standard",
+    "offers": [
+      {
+        "id": "cn-standard",
+        "currency": "CNY",
+        "region": "CN",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": { "metric": "inputTokens", "min": 1, "max": 256000 },
+            "rates": {
+              "input": 2,
+              "output": 8,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          },
+          {
+            "condition": { "metric": "inputTokens", "min": 256001, "max": 1000000 },
+            "rates": {
+              "input": 6,
+              "output": 24,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-05-26",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

@@ -1,0 +1,124 @@
+{
+  "$schema": "../$schemas/cli.schema.json",
+  "id": "rovo-dev-cli",
+  "name": "Rovo Dev CLI",
+  "familyId": "rovo-dev",
+  "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence.",
+  "translations": {
+    "de": {
+      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+    },
+    "es": {
+      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+    },
+    "fr": {
+      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+    },
+    "id": {
+      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+    },
+    "ja": {
+      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+    },
+    "ko": {
+      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+    },
+    "pt": {
+      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+    },
+    "ru": {
+      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+    },
+    "tr": {
+      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+    },
+    "zh-Hans": {
+      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+    },
+    "zh-Hant": {
+      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://www.atlassian.com/blog/blog/announcements/rovo-dev-command-line-interface",
+      "title": "Rovo Dev agent, now available in the CLI"
+    },
+    {
+      "url": "https://support.atlassian.com/rovo/docs/install-and-run-rovo-dev-cli-on-your-device/",
+      "title": "Install and run Rovo Dev CLI"
+    },
+    {
+      "url": "https://www.atlassian.com/software/rovo-dev/pricing",
+      "title": "Rovo Dev pricing"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.atlassian.com/software/rovo-dev",
+  "docsUrl": "https://support.atlassian.com/rovo/docs/use-rovo-dev-cli/",
+  "vendor": "Atlassian",
+  "latestVersion": "Latest",
+  "githubUrl": null,
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Rovo Dev Free",
+      "value": 0,
+      "currency": null,
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Rovo Dev Standard",
+      "value": 20,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Business"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://support.atlassian.com/rovo/docs/install-and-run-rovo-dev-cli-on-your-device/",
+    "changelog": "https://support.atlassian.com/rovo/docs/rovo-dev-cli-commands/",
+    "pricing": "https://www.atlassian.com/software/rovo-dev/pricing",
+    "mcp": "https://support.atlassian.com/rovo/docs/use-rovo-dev-cli/",
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/atlassian",
+    "twitter": "https://x.com/Atlassian",
+    "github": null,
+    "youtube": "https://www.youtube.com/@Atlassian",
+    "discord": null,
+    "reddit": "https://www.reddit.com/r/atlassian",
+    "blog": "https://www.atlassian.com/blog"
+  },
+  "relatedProducts": [
+    {
+      "type": "extension",
+      "productId": "rovo-dev"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": null,
+      "installCommand": null,
+      "launchCommand": "acli rovodev run"
+    },
+    {
+      "os": "Windows",
+      "installPath": null,
+      "installCommand": null,
+      "launchCommand": "acli rovodev run"
+    },
+    {
+      "os": "Linux",
+      "installPath": null,
+      "installCommand": null,
+      "launchCommand": "acli rovodev run"
+    }
+  ]
+}

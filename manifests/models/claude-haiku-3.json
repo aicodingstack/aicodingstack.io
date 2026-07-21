@@ -1,0 +1,114 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "claude-haiku-3",
+  "name": "Claude Haiku 3",
+  "description": "Anthropic's fast, low-cost Claude 3 model for lightweight coding, high-volume processing, visual analysis, and responsive applications.",
+  "translations": {
+    "de": {
+      "description": "Anthropics schnelles, kostengünstiges Claude-3-Modell für leichtes Coding, Massenverarbeitung, visuelle Analyse und reaktionsschnelle Anwendungen."
+    },
+    "es": {
+      "description": "El modelo Claude 3 rápido y económico de Anthropic para código ligero, procesamiento masivo, análisis visual y aplicaciones ágiles."
+    },
+    "fr": {
+      "description": "Le modèle Claude 3 rapide et économique d’Anthropic pour le codage léger, le traitement à grande échelle, l’analyse visuelle et les applications réactives."
+    },
+    "id": {
+      "description": "Model Claude 3 Anthropic yang cepat dan hemat untuk coding ringan, pemrosesan volume tinggi, analisis visual, dan aplikasi responsif."
+    },
+    "ja": {
+      "description": "軽量なコーディング、大量処理、視覚分析、応答性の高いアプリ向けのAnthropic製高速・低コストClaude 3モデル。"
+    },
+    "ko": {
+      "description": "가벼운 코딩, 대량 처리, 시각 분석 및 반응형 애플리케이션을 위한 Anthropic의 빠르고 저렴한 Claude 3 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo Claude 3 rápido e econômico da Anthropic para código leve, processamento em volume, análise visual e aplicações responsivas."
+    },
+    "ru": {
+      "description": "Быстрая и экономичная модель Claude 3 от Anthropic для лёгкого программирования, массовой обработки, визуального анализа и интерактивных приложений."
+    },
+    "tr": {
+      "description": "Anthropic'in hafif kodlama, yüksek hacimli işleme, görsel analiz ve hızlı yanıt veren uygulamalar için hızlı ve düşük maliyetli Claude 3 modeli."
+    },
+    "zh-Hans": {
+      "description": "Anthropic 面向轻量编码、高吞吐处理、视觉分析和响应式应用的快速低成本 Claude 3 模型。"
+    },
+    "zh-Hant": {
+      "description": "Anthropic 面向輕量編碼、高吞吐處理、視覺分析和回應式應用的快速低成本 Claude 3 模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.anthropic.com/news/claude-3-haiku",
+      "title": "Claude 3 Haiku launch",
+      "fields": ["name", "description", "releaseDate", "inputModalities", "outputModalities"]
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-3-family",
+      "title": "Introducing the Claude 3 model family",
+      "fields": ["contextWindow", "tokenPricing"]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+      "title": "Anthropic model deprecations",
+      "fields": ["lifecycle"]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "title": "Claude Platform release notes",
+      "fields": ["capabilities"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.anthropic.com",
+  "docsUrl": "https://www.anthropic.com/news/claude-3-haiku",
+  "vendor": "Anthropic",
+  "size": null,
+  "contextWindow": 200000,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 0.25,
+              "output": 1.25,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2024-03-13",
+  "lifecycle": "deprecated",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

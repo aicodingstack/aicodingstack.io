@@ -45,6 +45,7 @@ export default async function AICodingStackPage({ params }: LocalePageProps) {
           {[
             { key: 'ides', path: 'ides', category: 'ides' as const },
             { key: 'clis', path: 'clis', category: 'clis' as const },
+            { key: 'desktops', path: 'desktops', category: 'desktops' as const },
             { key: 'extensions', path: 'extensions', category: 'extensions' as const },
             { key: 'models', path: 'models', category: 'models' as const },
             { key: 'modelProviders', path: 'model-providers', category: 'modelProviders' as const },

@@ -1,0 +1,130 @@
+{
+  "$schema": "../$schemas/desktop.schema.json",
+  "translations": {
+    "de": {
+      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+    },
+    "es": {
+      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+    },
+    "fr": {
+      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+    },
+    "id": {
+      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+    },
+    "ja": {
+      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+    },
+    "ko": {
+      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+    },
+    "pt": {
+      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+    },
+    "ru": {
+      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+    },
+    "tr": {
+      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+    },
+    "zh-Hans": {
+      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+    },
+    "zh-Hant": {
+      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://openai.com/index/introducing-the-codex-app/",
+      "title": "Introducing the Codex app"
+    },
+    {
+      "url": "https://developers.openai.com/codex/app",
+      "title": "Codex app documentation"
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/open-source",
+      "title": "Codex open-source components",
+      "fields": ["githubUrl", "license"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "id": "codex-app",
+  "name": "Codex App",
+  "familyId": "codex",
+  "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations.",
+  "websiteUrl": "https://openai.com/codex",
+  "docsUrl": "https://developers.openai.com/codex/app",
+  "vendor": "OpenAI",
+  "latestVersion": "Latest",
+  "githubUrl": null,
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "ChatGPT Plus",
+      "value": 20,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "ChatGPT Pro",
+      "value": 200,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "ChatGPT Business",
+      "value": 30,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Business"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://openai.com/codex",
+    "changelog": "https://developers.openai.com/codex/changelog",
+    "pricing": "https://openai.com/pricing",
+    "mcp": null,
+    "issue": "https://github.com/openai/codex/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/OpenAI",
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": "https://openai.com/news"
+  },
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "codex-cli"
+    },
+    {
+      "type": "extension",
+      "productId": "codex"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": "/Applications/Codex.app",
+      "installCommand": null,
+      "launchCommand": null
+    },
+    {
+      "os": "Windows",
+      "installPath": "%LOCALAPPDATA%\\Programs\\Codex",
+      "installCommand": null,
+      "launchCommand": null
+    }
+  ]
+}

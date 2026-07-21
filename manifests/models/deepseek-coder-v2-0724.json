@@ -1,0 +1,98 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "deepseek-coder-v2-0724",
+  "name": "DeepSeek-Coder-V2 Instruct 0724",
+  "description": "Open-weight MoE coding model supporting 338 programming languages, code completion, insertion, tools, and JSON output.",
+  "translations": {
+    "zh-Hans": {
+      "description": "DeepSeek-Coder-V2 Instruct 0724 是 DeepSeek 发布的独立模型版本，具备明确的编程或软件工程能力。"
+    },
+    "de": {
+      "description": "DeepSeek-Coder-V2 Instruct 0724 ist eine eigenständige Modellversion von DeepSeek mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+    },
+    "es": {
+      "description": "DeepSeek-Coder-V2 Instruct 0724 es una versión de modelo independiente de DeepSeek con capacidades explícitas de programación o ingeniería de software."
+    },
+    "fr": {
+      "description": "DeepSeek-Coder-V2 Instruct 0724 est une version de modèle distincte de DeepSeek, dotée de capacités explicites en programmation ou en génie logiciel."
+    },
+    "id": {
+      "description": "DeepSeek-Coder-V2 Instruct 0724 adalah versi model mandiri dari DeepSeek dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+    },
+    "ja": {
+      "description": "DeepSeek-Coder-V2 Instruct 0724 は DeepSeek が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+    },
+    "ko": {
+      "description": "DeepSeek-Coder-V2 Instruct 0724은(는) DeepSeek가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+    },
+    "pt": {
+      "description": "DeepSeek-Coder-V2 Instruct 0724 é uma versão de modelo independente da DeepSeek, com capacidades explícitas de programação ou engenharia de software."
+    },
+    "ru": {
+      "description": "DeepSeek-Coder-V2 Instruct 0724 — самостоятельная версия модели от DeepSeek с явно заявленными возможностями программирования или разработки ПО."
+    },
+    "tr": {
+      "description": "DeepSeek-Coder-V2 Instruct 0724, DeepSeek tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+    },
+    "zh-Hant": {
+      "description": "DeepSeek-Coder-V2 Instruct 0724 是 DeepSeek 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct-0724",
+      "title": "DeepSeek-Coder-V2 Instruct 0724 official documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "releaseDate",
+        "lifecycle",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.deepseek.com",
+  "docsUrl": "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct-0724",
+  "vendor": "DeepSeek",
+  "size": "236B (21B active)",
+  "contextWindow": 128000,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "not-applicable",
+    "reason": "open-weights-only",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "releaseDate": "2024-07-24",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct-0724",
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

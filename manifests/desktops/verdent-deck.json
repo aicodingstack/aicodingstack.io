@@ -1,0 +1,114 @@
+{
+  "$schema": "../$schemas/desktop.schema.json",
+  "translations": {
+    "de": {
+      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+    },
+    "es": {
+      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+    },
+    "fr": {
+      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+    },
+    "id": {
+      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+    },
+    "ja": {
+      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+    },
+    "ko": {
+      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+    },
+    "pt": {
+      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+    },
+    "ru": {
+      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+    },
+    "tr": {
+      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+    },
+    "zh-Hans": {
+      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+    },
+    "zh-Hant": {
+      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://www.verdent.ai/docs/verdent/getting-started/overview",
+      "title": "Verdent desktop overview"
+    },
+    {
+      "url": "https://www.verdent.ai/docs/verdent/getting-started/installation",
+      "title": "Verdent installation"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "id": "verdent-deck",
+  "name": "Verdent Deck",
+  "familyId": "verdent",
+  "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes.",
+  "websiteUrl": "https://www.verdent.ai",
+  "docsUrl": "https://www.verdent.ai/docs/verdent/getting-started/overview",
+  "vendor": "Verdent AI",
+  "latestVersion": "1.5.0",
+  "githubUrl": "https://github.com/verdentAI/docs",
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Free Trial",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    },
+    {
+      "name": "Pro",
+      "value": 19,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://www.verdent.ai/download",
+    "changelog": "https://www.verdent.ai/changelog",
+    "pricing": "https://www.verdent.ai/pricing",
+    "mcp": "https://docs.verdent.ai/verdent-for-vscode/advanced-features/mcp",
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/verdent",
+    "twitter": "https://x.com/verdent",
+    "github": "https://github.com/verdentAI",
+    "youtube": null,
+    "discord": "https://discord.gg/NGjXEZcbJq",
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [
+    {
+      "type": "extension",
+      "productId": "verdent"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": "/Applications/Verdent Deck.app",
+      "installCommand": null,
+      "launchCommand": null
+    },
+    {
+      "os": "Windows",
+      "installPath": "%LOCALAPPDATA%\\Verdent Deck",
+      "installCommand": null,
+      "launchCommand": null
+    }
+  ]
+}

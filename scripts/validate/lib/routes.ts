@@ -22,6 +22,7 @@ export function getStaticRoutes(): string[] {
     '/',
     '/ides',
     '/clis',
+    '/desktops',
     '/extensions',
     '/models',
     '/model-providers',
@@ -122,6 +123,7 @@ export function getDynamicRoutes(): DynamicRoute[] {
   return [
     { path: '/ides', category: 'ides' },
     { path: '/clis', category: 'clis' },
+    { path: '/desktops', category: 'desktops' },
     { path: '/extensions', category: 'extensions' },
     { path: '/models', category: 'models' },
     { path: '/model-providers', category: 'providers' },

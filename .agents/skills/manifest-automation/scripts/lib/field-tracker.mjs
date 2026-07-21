@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Field Tracker - Tracks extraction attempts and generates TODO comments
+ * Field Tracker - Tracks evidence-gathering attempts and unresolved fields.
  */
 
 import { RETRY_CONFIG } from './config.mjs'
@@ -79,11 +79,11 @@ export class FieldTracker {
   }
 
   /**
-   * Generate TODO comment for a failed field
+   * Return a report-safe note for a failed field.
    * @param {string} fieldPath
    * @returns {string}
    */
-  generateTODO(fieldPath) {
+  generateUnresolvedNote(fieldPath) {
     const field = this.fields.get(fieldPath)
     if (!field || field.status !== 'failed') {
       return ''
@@ -92,7 +92,7 @@ export class FieldTracker {
     const attempts = field.attempts || this.maxAttempts
     const reason = field.reason || 'Not found'
 
-    return `// TODO: Could not auto-discover after ${attempts} attempts. ${reason}`
+    return `Unresolved after ${attempts} attempts: ${reason}`
   }
 
   /**
@@ -159,7 +159,7 @@ export class FieldTracker {
     }
 
     if (report.failed > 0) {
-      output += `\n❌ Failed Extraction (${report.failed} field${report.failed > 1 ? 's' : ''}, marked with TODO):\n`
+      output += `\n❌ Unresolved Fields (${report.failed} field${report.failed > 1 ? 's' : ''}):\n`
       report.fields.failed.forEach((field, index) => {
         output += `   ${index + 1}. ${field.path} (${field.attempts} attempts)\n`
         output += `      Reason: ${field.reason}\n`
@@ -171,8 +171,9 @@ export class FieldTracker {
     output += `1. Review manifest file: ${manifestPath}\n`
 
     if (report.failed > 0) {
-      output += '2. Manually fill TODO-marked fields if information available\n'
-      output += '3. Update verified field once data confirmed accurate\n'
+      output +=
+        '2. Resolve required fields from authoritative sources; do not guess or add JSON comments\n'
+      output += '3. Update provenance and verification metadata\n'
       output += '4. Run validation: npm run test:validate\n'
     } else {
       output += '2. Update verified field if data confirmed accurate\n'

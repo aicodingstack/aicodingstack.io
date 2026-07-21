@@ -75,6 +75,7 @@ function matchesQuery(
     outputModalities?: string[]
     platforms?: unknown
     type?: string
+    aliases?: string[]
   }
   const translation = locale ? item.translations?.[locale] : undefined
   const values = [
@@ -84,6 +85,7 @@ function matchesQuery(
     translation?.description,
     searchableItem.vendor,
     searchableItem.type,
+    ...flattenSearchValue(searchableItem.aliases),
     ...flattenSearchValue(searchableItem.capabilities),
     ...flattenSearchValue(searchableItem.inputModalities),
     ...flattenSearchValue(searchableItem.outputModalities),
@@ -109,6 +111,9 @@ function calculateRelevance(
   const lowerQuery = query.toLowerCase()
   const name = getLocalizedName(item, locale).toLowerCase()
   const description = getLocalizedDescription(item, locale).toLowerCase()
+  const aliases = (item as typeof item & { aliases?: string[] }).aliases?.map(alias =>
+    alias.toLowerCase()
+  )
 
   // Exact match in name
   if (name === lowerQuery) return 100
@@ -118,6 +123,10 @@ function calculateRelevance(
 
   // Contains query in name
   if (name.includes(lowerQuery)) return 80
+
+  if (aliases?.includes(lowerQuery)) return 75
+
+  if (aliases?.some(alias => alias.includes(lowerQuery))) return 70
 
   if (description.includes(lowerQuery)) return 50
 

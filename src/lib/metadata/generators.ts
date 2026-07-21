@@ -7,6 +7,8 @@
 import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import { formatTokenCount } from '@/lib/format'
+import { formatPrimaryTokenRate } from '@/lib/model-pricing'
+import type { ManifestTokenPricing, ModelLifecycle } from '@/types/manifests'
 import {
   CATEGORY_DISPLAY_NAMES,
   CATEGORY_EXAMPLES,
@@ -73,10 +75,8 @@ export interface ModelDetailMetadataParams {
     size?: string
     contextWindow?: number
     maxOutput?: number
-    tokenPricing?: {
-      input?: number
-      output?: number
-    }
+    lifecycle?: ModelLifecycle
+    tokenPricing?: ManifestTokenPricing
   }
   translationNamespace: string
 }
@@ -330,13 +330,13 @@ export async function generateModelDetailMetadata(
   if (model.maxOutput)
     specs.push(`${tShared('terms.maxOutput')}: ${formatTokenCount(model.maxOutput)} tokens`)
 
-  const pricingDisplay = model.tokenPricing?.input
-    ? `$${model.tokenPricing.input}/M tokens`
-    : model.tokenPricing?.output
-      ? `$${model.tokenPricing.output}/M tokens`
+  const pricingDisplay =
+    model.lifecycle !== 'deprecated' && model.tokenPricing
+      ? (formatPrimaryTokenRate(model.tokenPricing, 'input', locale) ??
+        formatPrimaryTokenRate(model.tokenPricing, 'output', locale))
       : null
 
-  if (pricingDisplay) specs.push(`${tShared('terms.pricing')}: ${pricingDisplay}`)
+  if (pricingDisplay) specs.push(`${tShared('terms.pricing')}: ${pricingDisplay}/M tokens`)
 
   const description = `${model.name} by ${model.vendor}. ${specs.join('. ')}. ${model.description}`
 

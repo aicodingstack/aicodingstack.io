@@ -1,0 +1,112 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "qwen3-7-max",
+  "name": "Qwen3.7-Max",
+  "description": "Alibaba's Qwen3.7 flagship for programming, office productivity, tool use, and long-horizon autonomous tasks with a 1M-token context window.",
+  "translations": {
+    "de": {
+      "description": "Alibabas Qwen3.7-Flaggschiff für Programmierung, Büroproduktivität, Werkzeugnutzung und langfristige autonome Aufgaben mit 1 Mio. Token Kontext."
+    },
+    "es": {
+      "description": "El modelo insignia Qwen3.7 de Alibaba para programación, productividad, uso de herramientas y tareas autónomas prolongadas con contexto de 1 millón de tokens."
+    },
+    "fr": {
+      "description": "Le modèle phare Qwen3.7 d’Alibaba pour le codage, la productivité, les outils et les tâches autonomes longues avec 1 million de jetons de contexte."
+    },
+    "id": {
+      "description": "Model unggulan Qwen3.7 Alibaba untuk coding, produktivitas kantor, penggunaan alat, dan tugas otonom jangka panjang dengan konteks 1 juta token."
+    },
+    "ja": {
+      "description": "100万トークンのコンテキストを備え、プログラミング、オフィス生産性、ツール利用、長期の自律タスクに対応するAlibabaのQwen3.7旗艦モデル。"
+    },
+    "ko": {
+      "description": "100만 토큰 컨텍스트로 프로그래밍, 사무 생산성, 도구 사용 및 장기 자율 작업을 지원하는 Alibaba의 Qwen3.7 플래그십 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo principal Qwen3.7 da Alibaba para programação, produtividade, uso de ferramentas e tarefas autônomas prolongadas com contexto de 1 milhão de tokens."
+    },
+    "ru": {
+      "description": "Флагманская модель Alibaba Qwen3.7 для программирования, офисной работы, инструментов и длительных автономных задач с контекстом 1 млн токенов."
+    },
+    "tr": {
+      "description": "Alibaba'nın 1 milyon token bağlamla programlama, ofis üretkenliği, araç kullanımı ve uzun süreli otonom görevler için Qwen3.7 amiral modeli."
+    },
+    "zh-Hans": {
+      "description": "阿里巴巴面向编程、办公生产力、工具使用和长周期自主任务的 Qwen3.7 旗舰模型，提供 100 万 token 上下文。"
+    },
+    "zh-Hant": {
+      "description": "阿里巴巴面向程式設計、辦公生產力、工具使用和長週期自主任務的 Qwen3.7 旗艦模型，提供 100 萬 token 上下文。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://help.aliyun.com/en/model-studio/newly-released-models",
+      "title": "Alibaba Cloud Model Studio model lifecycle and updates",
+      "fields": [
+        "name",
+        "description",
+        "releaseDate",
+        "lifecycle",
+        "contextWindow",
+        "capabilities",
+        "inputModalities"
+      ]
+    },
+    {
+      "url": "https://help.aliyun.com/en/model-studio/model-pricing",
+      "title": "Alibaba Cloud Model Studio model pricing",
+      "fields": ["docsUrl", "contextWindow", "tokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://qwen.ai",
+  "docsUrl": "https://help.aliyun.com/en/model-studio/models",
+  "vendor": "Alibaba",
+  "size": null,
+  "contextWindow": 1000000,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "cn-standard",
+    "offers": [
+      {
+        "id": "cn-standard",
+        "currency": "CNY",
+        "region": "CN",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 12,
+              "output": 36,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-05-21",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

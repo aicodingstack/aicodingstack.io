@@ -39,11 +39,21 @@
     }
   },
   "verified": false,
+  "sources": [
+    {
+      "url": "https://github.com/OrionStarAI/EasyCode",
+      "title": "Easy Code repository (formerly DeepV Code)",
+      "fields": ["githubUrl", "license", "resourceUrls.issue"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
   "websiteUrl": "https://dvcode.deepvlab.ai",
   "docsUrl": "https://deepvcode.com/guides",
   "vendor": "OrionStar",
   "latestVersion": "0.1.0",
-  "githubUrl": "https://github.com/OrionStarAI/DeepVCode",
+  "githubUrl": "https://github.com/OrionStarAI/EasyCode",
   "license": "Apache-2.0",
   "pricing": [
     {
@@ -73,7 +83,7 @@
     "changelog": null,
     "pricing": "https://dvcode.deepvlab.ai/pricing",
     "mcp": null,
-    "issue": "https://github.com/OrionStarAI/DeepVCode/issues"
+    "issue": "https://github.com/OrionStarAI/EasyCode/issues"
   },
   "communityUrls": {
     "linkedin": null,

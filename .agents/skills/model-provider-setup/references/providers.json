@@ -1,45 +1,37 @@
 {
-  "providers": [
+  "version": 2,
+  "notes": [
+    "Model IDs are intentionally omitted because provider catalogs change frequently.",
+    "Verify base URLs, wire API support, model IDs, and authentication against current official provider documentation before editing config.toml.",
+    "Provider configuration belongs in user-level ~/.codex/config.toml; project config cannot redirect provider authentication."
+  ],
+  "templates": [
     {
-      "id": "zai",
-      "name": "Z.AI (GLM Models)",
-      "description": "China-based provider with GLM-4.7-coding and other GLM models",
-      "baseUrl": "https://api.z.ai/api/anthropic",
-      "models": [
-        {
-          "id": "glm-4.7-coding-preview",
-          "name": "GLM-4.7 Coding Preview",
-          "description": "Latest GLM coding model for enhanced code generation"
-        },
-        {
-          "id": "glm-4-plus",
-          "name": "GLM-4 Plus",
-          "description": "Advanced general-purpose GLM model"
-        }
-      ]
+      "id": "openai-proxy",
+      "kind": "built-in-openai-base-url",
+      "configKey": "openai_base_url",
+      "description": "Use when the built-in OpenAI provider is routed through an OpenAI-compatible proxy or regional endpoint."
     },
     {
-      "id": "openrouter",
-      "name": "OpenRouter",
-      "description": "Unified API gateway for multiple AI model providers",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "models": [
-        {
-          "id": "anthropic/claude-3.5-sonnet",
-          "name": "Claude 3.5 Sonnet",
-          "description": "Anthropic's Claude 3.5 Sonnet via OpenRouter"
-        },
-        {
-          "id": "anthropic/claude-3-opus",
-          "name": "Claude 3 Opus",
-          "description": "Anthropic's most capable Claude 3 model via OpenRouter"
-        },
-        {
-          "id": "openai/gpt-4-turbo",
-          "name": "GPT-4 Turbo",
-          "description": "OpenAI's GPT-4 Turbo via OpenRouter"
-        }
-      ]
+      "id": "custom-responses-provider",
+      "kind": "custom",
+      "requiredFields": ["name", "base_url", "env_key", "wire_api"],
+      "wireApi": "responses",
+      "description": "Use only after confirming that the provider implements the OpenAI Responses API expected by Codex."
+    },
+    {
+      "id": "mistral",
+      "kind": "official-manual-example",
+      "name": "Mistral",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "envKey": "MISTRAL_API_KEY",
+      "description": "Example documented by the Codex manual; verify the current model ID and feature compatibility with Mistral before use."
+    },
+    {
+      "id": "local-oss",
+      "kind": "built-in-local",
+      "providers": ["ollama", "lmstudio"],
+      "description": "Use Codex OSS mode and a built-in local provider instead of redefining reserved provider IDs."
     }
   ]
 }

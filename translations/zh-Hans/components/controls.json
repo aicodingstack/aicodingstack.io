@@ -3,6 +3,16 @@
     "copied": "已复制！",
     "copyToClipboard": "复制到剪贴板"
   },
+  "currencySwitcher": {
+    "cny": "换算为人民币",
+    "label": "价格显示币种",
+    "loadingRate": "正在加载参考汇率…",
+    "native": "保持原始币种",
+    "nativeShort": "原币",
+    "rateUnavailable": "参考汇率暂不可用，当前显示原始价格。",
+    "referenceRate": "参考汇率：1 美元 = {rate} 人民币（{date}）",
+    "usd": "换算为美元"
+  },
   "filterSortBar": {
     "clearFilters": "清除筛选",
     "license": "许可证:",

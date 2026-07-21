@@ -2,6 +2,9 @@
   "clis": {
     "description": "Command-line AI assistants that bring the power of large language models directly to your terminal. Execute complex tasks with natural language, right from your shell."
   },
+  "desktops": {
+    "description": "Standalone desktop coding agents for coordinating parallel work, reviewing changes, and managing local development workflows."
+  },
   "exploreStack": "Explore the Stack",
   "extensions": {
     "description": "AI-powered coding extensions and plugins for your favorite IDE. From code completion to intelligent refactoring, enhance your development experience with AI assistance."

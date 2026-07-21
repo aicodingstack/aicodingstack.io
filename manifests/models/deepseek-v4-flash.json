@@ -1,0 +1,124 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "deepseek-v4-flash",
+  "name": "DeepSeek-V4-Flash",
+  "description": "DeepSeek's efficient open-weight V4 model with 284B total and 13B active parameters, 1M context, dual thinking modes, JSON output, and tool calls.",
+  "translations": {
+    "de": {
+      "description": "DeepSeeks effizientes Open-Weight-V4-Modell mit 284 Mrd. Gesamt- und 13 Mrd. aktiven Parametern, 1 Mio. Kontext, zwei Denkmodi, JSON und Werkzeugaufrufen."
+    },
+    "es": {
+      "description": "El modelo V4 eficiente y de pesos abiertos de DeepSeek, con 284B parámetros totales y 13B activos, contexto de 1M, dos modos de pensamiento, JSON y herramientas."
+    },
+    "fr": {
+      "description": "Le modèle V4 efficace à poids ouverts de DeepSeek, avec 284 Md de paramètres dont 13 Md actifs, contexte 1 M, deux modes de réflexion, JSON et outils."
+    },
+    "id": {
+      "description": "Model V4 open-weight efisien dari DeepSeek dengan 284B parameter total dan 13B aktif, konteks 1M, dua mode berpikir, keluaran JSON, dan pemanggilan alat."
+    },
+    "ja": {
+      "description": "総2840億・アクティブ130億パラメータ、100万コンテキスト、2種類の思考モード、JSON出力、ツール呼び出しを備えたDeepSeekの効率的なオープンウェイトV4モデル。"
+    },
+    "ko": {
+      "description": "총 284B 및 활성 13B 매개변수, 100만 컨텍스트, 이중 사고 모드, JSON 출력과 도구 호출을 지원하는 DeepSeek의 효율적인 오픈 웨이트 V4 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo V4 eficiente e de pesos abertos da DeepSeek, com 284B parâmetros totais e 13B ativos, contexto de 1M, dois modos de pensamento, JSON e ferramentas."
+    },
+    "ru": {
+      "description": "Эффективная открытая модель DeepSeek V4: 284 млрд параметров, 13 млрд активных, контекст 1 млн, два режима рассуждений, JSON и вызов инструментов."
+    },
+    "tr": {
+      "description": "DeepSeek'in 284B toplam ve 13B aktif parametreli, 1M bağlamlı, çift düşünme modlu, JSON çıktılı ve araç çağrılı verimli açık ağırlıklı V4 modeli."
+    },
+    "zh-Hans": {
+      "description": "DeepSeek 的高效开放权重 V4 模型，2840 亿总参数、130 亿激活参数，支持 100 万上下文、双思考模式、JSON 输出和工具调用。"
+    },
+    "zh-Hant": {
+      "description": "DeepSeek 的高效開放權重 V4 模型，2840 億總參數、130 億啟用參數，支援 100 萬上下文、雙思考模式、JSON 輸出和工具呼叫。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://api-docs.deepseek.com/news/news260424/",
+      "title": "DeepSeek V4 Preview release",
+      "fields": [
+        "name",
+        "description",
+        "size",
+        "releaseDate",
+        "lifecycle",
+        "contextWindow",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "title": "DeepSeek models and pricing",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.deepseek.com",
+  "docsUrl": "https://api-docs.deepseek.com/quick_start/pricing",
+  "vendor": "DeepSeek",
+  "size": "284B total / 13B active",
+  "contextWindow": 1000000,
+  "maxOutput": 384000,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 0.14,
+              "output": 0.28,
+              "cacheRead": 0.0028,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-04-24",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

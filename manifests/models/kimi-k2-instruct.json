@@ -1,0 +1,102 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "kimi-k2-instruct",
+  "name": "Kimi K2 Instruct",
+  "description": "Original Kimi K2 instruct release, a one-trillion-parameter MoE model built for agentic coding and tool use.",
+  "translations": {
+    "zh-Hans": {
+      "description": "Kimi K2 Instruct 是 Moonshot 发布的独立模型版本，具备明确的编程或软件工程能力。"
+    },
+    "de": {
+      "description": "Kimi K2 Instruct ist eine eigenständige Modellversion von Moonshot mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+    },
+    "es": {
+      "description": "Kimi K2 Instruct es una versión de modelo independiente de Moonshot con capacidades explícitas de programación o ingeniería de software."
+    },
+    "fr": {
+      "description": "Kimi K2 Instruct est une version de modèle distincte de Moonshot, dotée de capacités explicites en programmation ou en génie logiciel."
+    },
+    "id": {
+      "description": "Kimi K2 Instruct adalah versi model mandiri dari Moonshot dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+    },
+    "ja": {
+      "description": "Kimi K2 Instruct は Moonshot が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+    },
+    "ko": {
+      "description": "Kimi K2 Instruct은(는) Moonshot가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+    },
+    "pt": {
+      "description": "Kimi K2 Instruct é uma versão de modelo independente da Moonshot, com capacidades explícitas de programação ou engenharia de software."
+    },
+    "ru": {
+      "description": "Kimi K2 Instruct — самостоятельная версия модели от Moonshot с явно заявленными возможностями программирования или разработки ПО."
+    },
+    "tr": {
+      "description": "Kimi K2 Instruct, Moonshot tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+    },
+    "zh-Hant": {
+      "description": "Kimi K2 Instruct 是 Moonshot 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+      "title": "Kimi K2 Instruct official documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "maxOutput",
+        "releaseDate",
+        "lifecycle",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://platform.kimi.ai/docs/models",
+      "title": "Kimi API model availability and K2 retirement notice",
+      "fields": ["lifecycle", "tokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.moonshot.ai",
+  "docsUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+  "vendor": "Moonshot",
+  "size": "1T (32B active)",
+  "contextWindow": 131072,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "unavailable",
+    "reason": "historical-price-unverified",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "releaseDate": "2025-07-11",
+  "lifecycle": "deprecated",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

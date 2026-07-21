@@ -2964,10 +2964,11 @@ export const faqMetadata: Record<string, FaqItem[]> = {
 }
 
 export const stackCounts: Record<string, number> = {
-  ides: 13,
-  clis: 20,
-  extensions: 15,
-  models: 42,
+  ides: 10,
+  clis: 27,
+  desktops: 12,
+  extensions: 19,
+  models: 125,
   'model-providers': 13,
-  vendors: 40,
+  vendors: 41,
 }

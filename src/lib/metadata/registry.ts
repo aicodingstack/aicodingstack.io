@@ -99,6 +99,12 @@ export const PAGE_REGISTRY: Record<string, PageMetadataConfig> = {
     category: 'clis',
     translationNamespace: 'pages.clis',
   },
+  '/desktops': {
+    generatorType: 'list',
+    pageType: 'list',
+    category: 'desktops',
+    translationNamespace: 'pages.desktops',
+  },
   '/extensions': {
     generatorType: 'list',
     pageType: 'list',
@@ -138,6 +144,13 @@ export const PAGE_REGISTRY: Record<string, PageMetadataConfig> = {
     generatorType: 'software-detail',
     pageType: 'detail',
     category: 'clis',
+    requiresSlug: true,
+    requiresProduct: true,
+  },
+  '/desktops/[slug]': {
+    generatorType: 'software-detail',
+    pageType: 'detail',
+    category: 'desktops',
     requiresSlug: true,
     requiresProduct: true,
   },

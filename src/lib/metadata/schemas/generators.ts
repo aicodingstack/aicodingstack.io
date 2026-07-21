@@ -7,6 +7,8 @@
 import { getTranslations } from 'next-intl/server'
 import { cache } from 'react'
 import type { Locale } from '@/i18n/config'
+import { getPrimaryTokenPricingOffer, hasCurrentSingleTierPricing } from '@/lib/model-pricing'
+import type { ManifestTokenPricing, ModelLifecycle } from '@/types/manifests'
 import { SITE_CONFIG } from '../config'
 import {
   type ArticleSchemaOptions,
@@ -100,11 +102,8 @@ export interface ModelData {
   vendor: string
   vendorUrl?: string
   websiteUrl?: string
-  tokenPricing?: {
-    input?: number
-    output?: number
-    cache?: number
-  }
+  lifecycle?: ModelLifecycle
+  tokenPricing?: ManifestTokenPricing
 }
 
 /**
@@ -123,21 +122,28 @@ export const generateModelDetailSchema = cache(
   async (options: ModelDetailSchemaOptions): Promise<SchemaProduct> => {
     const { model } = options
 
-    // Transform token pricing to pricing tiers
+    // Only publish unambiguous current, single-tier prices as Schema.org offers.
     const pricing: PricingTierData[] = []
-    if (model.tokenPricing?.input) {
+    const offer = model.tokenPricing ? getPrimaryTokenPricingOffer(model.tokenPricing) : null
+    const rates =
+      model.lifecycle !== 'deprecated' &&
+      model.tokenPricing &&
+      hasCurrentSingleTierPricing(model.tokenPricing)
+        ? offer?.tiers[0]?.rates
+        : null
+    if (offer && rates?.input !== null && rates?.input !== undefined) {
       pricing.push({
         name: 'Input Tokens',
-        value: model.tokenPricing.input,
-        currency: 'USD',
+        value: rates.input,
+        currency: offer.currency,
         per: 'million tokens',
       })
     }
-    if (model.tokenPricing?.output) {
+    if (offer && rates?.output !== null && rates?.output !== undefined) {
       pricing.push({
         name: 'Output Tokens',
-        value: model.tokenPricing.output,
-        currency: 'USD',
+        value: rates.output,
+        currency: offer.currency,
         per: 'million tokens',
       })
     }

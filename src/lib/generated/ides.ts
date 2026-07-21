@@ -4,37 +4,31 @@
  * Do not edit manually - run the script to regenerate
  */
 
-import Air from '../../../manifests/ides/air.json'
 import Antigravity from '../../../manifests/ides/antigravity.json'
 import Codebuddy from '../../../manifests/ides/codebuddy.json'
 import Codeflicker from '../../../manifests/ides/codeflicker.json'
 import Cursor from '../../../manifests/ides/cursor.json'
 import IntellijIdea from '../../../manifests/ides/intellij-idea.json'
 import Kiro from '../../../manifests/ides/kiro.json'
-import Qoder from '../../../manifests/ides/qoder.json'
 import Trae from '../../../manifests/ides/trae.json'
-import VerdentDeck from '../../../manifests/ides/verdent-deck.json'
 import Vscode from '../../../manifests/ides/vscode.json'
 import Windsurf from '../../../manifests/ides/windsurf.json'
 import Zed from '../../../manifests/ides/zed.json'
 import type { ManifestIDE } from '../../types/manifests'
 
 export const idesData = [
-  Air,
   Antigravity,
   Codebuddy,
   Codeflicker,
   Cursor,
   IntellijIdea,
   Kiro,
-  Qoder,
   Trae,
-  VerdentDeck,
   Vscode,
   Windsurf,
   Zed,
 ] as unknown as ManifestIDE[]
 
-export type Ide = typeof Air
+export type Ide = typeof Antigravity
 
 export default idesData

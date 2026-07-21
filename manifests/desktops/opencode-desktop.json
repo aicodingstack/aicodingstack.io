@@ -1,0 +1,117 @@
+{
+  "$schema": "../$schemas/desktop.schema.json",
+  "translations": {
+    "de": {
+      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+    },
+    "es": {
+      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+    },
+    "fr": {
+      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+    },
+    "id": {
+      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+    },
+    "ja": {
+      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+    },
+    "ko": {
+      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+    },
+    "pt": {
+      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+    },
+    "ru": {
+      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+    },
+    "tr": {
+      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+    },
+    "zh-Hans": {
+      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+    },
+    "zh-Hant": {
+      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://opencode.ai/download",
+      "title": "OpenCode downloads"
+    },
+    {
+      "url": "https://github.com/anomalyco/opencode",
+      "title": "OpenCode repository"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "id": "opencode-desktop",
+  "name": "OpenCode Desktop",
+  "familyId": "opencode",
+  "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers.",
+  "websiteUrl": "https://opencode.ai/download",
+  "docsUrl": "https://opencode.ai/docs",
+  "vendor": "Anomaly",
+  "latestVersion": "Latest",
+  "githubUrl": "https://github.com/anomalyco/opencode",
+  "license": "MIT",
+  "pricing": [
+    {
+      "name": "Open Source",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://opencode.ai/download",
+    "changelog": "https://github.com/anomalyco/opencode/releases",
+    "pricing": "https://opencode.ai/zen",
+    "mcp": null,
+    "issue": "https://github.com/anomalyco/opencode/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/opencode",
+    "github": "https://github.com/anomalyco/opencode",
+    "youtube": null,
+    "discord": "https://discord.gg/opencode",
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "opencode"
+    },
+    {
+      "type": "extension",
+      "productId": "opencode-extension"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": "/Applications/OpenCode.app",
+      "installCommand": "brew install --cask opencode-desktop",
+      "launchCommand": null
+    },
+    {
+      "os": "Windows",
+      "installPath": "%LOCALAPPDATA%\\Programs\\OpenCode",
+      "installCommand": null,
+      "launchCommand": null
+    },
+    {
+      "os": "Linux",
+      "installPath": "/opt/OpenCode",
+      "installCommand": null,
+      "launchCommand": null
+    }
+  ]
+}

@@ -3,6 +3,16 @@
     "copied": "Kopyalandı!",
     "copyToClipboard": "Panoya kopyala"
   },
+  "currencySwitcher": {
+    "cny": "CNY'ye dönüştür",
+    "label": "Görüntüleme para birimi",
+    "loadingRate": "Referans döviz kuru yükleniyor…",
+    "native": "Orijinal para birimini koru",
+    "nativeShort": "Orijinal",
+    "rateUnavailable": "Referans döviz kuru kullanılamıyor; orijinal fiyatlar gösteriliyor.",
+    "referenceRate": "Referans kur: 1 USD = {rate} CNY ({date})",
+    "usd": "USD'ye dönüştür"
+  },
   "filterSortBar": {
     "clearFilters": "Filtreleri temizle",
     "license": "Lisans:",

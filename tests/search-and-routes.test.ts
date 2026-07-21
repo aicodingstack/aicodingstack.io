@@ -16,6 +16,7 @@ describe('manifest route contracts', () => {
     ).toEqual({
       ides: 'ides',
       clis: 'clis',
+      desktops: 'desktops',
       extensions: 'extensions',
       models: 'models',
       providers: 'model-providers',
@@ -47,5 +48,13 @@ describe('search', () => {
   it('searches vendors and model capabilities', () => {
     expect(search('Anysphere').some(result => result.id === 'cursor')).toBe(true)
     expect(search('structured-outputs').some(result => result.category === 'models')).toBe(true)
+  })
+
+  it('searches canonical vendors by alias', () => {
+    const results = search('Cline Bot', 'en')
+
+    expect(results.some(result => result.category === 'vendors' && result.id === 'cline')).toBe(
+      true
+    )
   })
 })

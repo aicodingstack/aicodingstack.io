@@ -37,6 +37,7 @@ interface CommunityUrls {
 interface VendorObject {
   id: string
   name: string
+  aliases?: string[]
   description: string
   translations: Record<string, { description?: string }>
   verified: boolean
@@ -57,6 +58,10 @@ function vendorNameToId(vendorName: string): string {
     .replace(/\./g, '-')
     .replace(/-+/g, '-')
     .replace(/^-|-$/g, '')
+}
+
+function normalizeVendorName(vendorName: string): string {
+  return vendorName.trim().toLocaleLowerCase()
 }
 
 /**
@@ -103,6 +108,36 @@ async function getJsonFiles(dirPath: string): Promise<string[]> {
   } catch {
     return []
   }
+}
+
+/**
+ * Build a lookup from canonical vendor names and aliases to their stable IDs.
+ * Conflicting identities are rejected so an alias can never point at two vendors.
+ */
+async function loadVendorIdentityIndex(): Promise<Map<string, string>> {
+  const identityIndex = new Map<string, string>()
+
+  for (const vendorFile of await getJsonFiles(VENDORS_DIR)) {
+    const vendor = await loadJSON(vendorFile)
+    const vendorId = vendor.id as string
+    const names = [
+      vendor.name as string,
+      ...(Array.isArray(vendor.aliases) ? (vendor.aliases as string[]) : []),
+    ]
+
+    for (const name of names) {
+      const identity = normalizeVendorName(name)
+      const existingVendorId = identityIndex.get(identity)
+      if (existingVendorId && existingVendorId !== vendorId) {
+        throw new Error(
+          `Vendor identity "${name}" is claimed by both ${existingVendorId} and ${vendorId}`
+        )
+      }
+      identityIndex.set(identity, vendorId)
+    }
+  }
+
+  return identityIndex
 }
 
 /**
@@ -243,7 +278,8 @@ function createVendorObject(vendorId: string, vendorData: VendorData): VendorObj
  */
 async function processManifest(
   manifestPath: string,
-  vendorsMap: Map<string, VendorData>
+  vendorsMap: Map<string, VendorData>,
+  identityIndex: Map<string, string>
 ): Promise<void> {
   try {
     const manifest = await loadJSON(manifestPath)
@@ -253,7 +289,8 @@ async function processManifest(
       return
     }
 
-    const vendorId = vendorNameToId(vendorData.name)
+    const vendorId =
+      identityIndex.get(normalizeVendorName(vendorData.name)) ?? vendorNameToId(vendorData.name)
 
     // If vendor already exists in map, merge the data
     if (vendorsMap.has(vendorId)) {
@@ -274,7 +311,8 @@ async function processManifest(
  */
 async function processCategory(
   categoryDir: string,
-  vendorsMap: Map<string, VendorData>
+  vendorsMap: Map<string, VendorData>,
+  identityIndex: Map<string, string>
 ): Promise<void> {
   const jsonFiles = await getJsonFiles(categoryDir)
 
@@ -283,7 +321,7 @@ async function processCategory(
   }
 
   for (const jsonFile of jsonFiles) {
-    await processManifest(jsonFile, vendorsMap)
+    await processManifest(jsonFile, vendorsMap, identityIndex)
   }
 }
 
@@ -294,17 +332,18 @@ async function main(): Promise<void> {
   console.log('🔄 Exporting vendors from manifest files...\n')
 
   // Categories to process
-  const categories = ['ides', 'clis', 'extensions', 'models', 'providers']
+  const categories = ['ides', 'clis', 'desktops', 'extensions', 'models', 'providers']
 
   // Map to store vendor data (vendorId -> vendorData)
   const vendorsMap = new Map<string, VendorData>()
+  const identityIndex = await loadVendorIdentityIndex()
 
   // Process all categories
   for (const category of categories) {
     const categoryDir = path.join(MANIFESTS_DIR, category)
     console.log(`📁 Processing ${category}/...`)
 
-    await processCategory(categoryDir, vendorsMap)
+    await processCategory(categoryDir, vendorsMap, identityIndex)
   }
 
   console.log(`\n📊 Found ${vendorsMap.size} unique vendors\n`)

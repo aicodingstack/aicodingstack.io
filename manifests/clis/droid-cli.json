@@ -2,6 +2,7 @@
   "$schema": "../$schemas/cli.schema.json",
   "id": "droid-cli",
   "name": "Droid CLI",
+  "familyId": "droid",
   "description": "Factory AI's Droid CLI is a terminal-based coding agent that handles complete feature development from planning to testing. Integrates with enterprise tools and provides transparent diff reviews.",
   "translations": {
     "zh-Hans": {
@@ -84,7 +85,10 @@
     "reddit": null,
     "blog": null
   },
-  "relatedProducts": [],
+  "relatedProducts": [
+    { "type": "desktop", "productId": "factory-desktop" },
+    { "type": "extension", "productId": "droid" }
+  ],
   "platforms": [
     {
       "os": "macOS",

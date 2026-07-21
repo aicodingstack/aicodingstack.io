@@ -1,0 +1,117 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gemini-2-5-flash-lite",
+  "name": "Gemini 2.5 Flash-Lite",
+  "description": "Fast, cost-efficient Gemini 2.5 model with optional thinking, code execution, tools, and multimodal input.",
+  "translations": {
+    "zh-Hans": {
+      "description": "Gemini 2.5 Flash-Lite 是 Google 发布的独立模型版本，具备明确的编程或软件工程能力。"
+    },
+    "de": {
+      "description": "Gemini 2.5 Flash-Lite ist eine eigenständige Modellversion von Google mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+    },
+    "es": {
+      "description": "Gemini 2.5 Flash-Lite es una versión de modelo independiente de Google con capacidades explícitas de programación o ingeniería de software."
+    },
+    "fr": {
+      "description": "Gemini 2.5 Flash-Lite est une version de modèle distincte de Google, dotée de capacités explicites en programmation ou en génie logiciel."
+    },
+    "id": {
+      "description": "Gemini 2.5 Flash-Lite adalah versi model mandiri dari Google dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+    },
+    "ja": {
+      "description": "Gemini 2.5 Flash-Lite は Google が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+    },
+    "ko": {
+      "description": "Gemini 2.5 Flash-Lite은(는) Google가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+    },
+    "pt": {
+      "description": "Gemini 2.5 Flash-Lite é uma versão de modelo independente da Google, com capacidades explícitas de programação ou engenharia de software."
+    },
+    "ru": {
+      "description": "Gemini 2.5 Flash-Lite — самостоятельная версия модели от Google с явно заявленными возможностями программирования или разработки ПО."
+    },
+    "tr": {
+      "description": "Gemini 2.5 Flash-Lite, Google tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+    },
+    "zh-Hant": {
+      "description": "Gemini 2.5 Flash-Lite 是 Google 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-lite",
+      "title": "Gemini 2.5 Flash-Lite official documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "releaseDate",
+        "lifecycle",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://deepmind.google",
+  "docsUrl": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-lite",
+  "vendor": "Google",
+  "size": null,
+  "contextWindow": 1048576,
+  "maxOutput": 65536,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 0.1,
+              "output": 0.4,
+              "cacheRead": 0.01,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2025-07-22",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2025-01",
+  "inputModalities": ["text", "image", "pdf", "audio", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

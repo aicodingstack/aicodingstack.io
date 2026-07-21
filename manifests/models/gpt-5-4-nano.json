@@ -1,0 +1,113 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gpt-5-4-nano",
+  "name": "GPT-5.4 nano",
+  "description": "OpenAI's smallest GPT-5.4 model for high-volume classification, extraction, ranking, multimodal tasks, and simpler coding subagents.",
+  "translations": {
+    "de": {
+      "description": "OpenAIs kleinstes GPT-5.4-Modell für Klassifikation, Extraktion, Ranking, multimodale Aufgaben und einfachere Coding-Subagenten mit hohem Volumen."
+    },
+    "es": {
+      "description": "El modelo GPT-5.4 más pequeño de OpenAI para clasificación, extracción, ranking, tareas multimodales y subagentes de programación sencillos a gran escala."
+    },
+    "fr": {
+      "description": "Le plus petit modèle GPT-5.4 d’OpenAI pour la classification, l’extraction, le classement, le multimodal et les sous-agents de codage simples à grand volume."
+    },
+    "id": {
+      "description": "Model GPT-5.4 terkecil OpenAI untuk klasifikasi, ekstraksi, peringkat, tugas multimodal, dan subagen coding sederhana bervolume tinggi."
+    },
+    "ja": {
+      "description": "大量の分類、抽出、ランキング、マルチモーダル処理、より単純なコーディングサブエージェント向けのOpenAI最小GPT-5.4モデル。"
+    },
+    "ko": {
+      "description": "대규모 분류, 추출, 순위 지정, 멀티모달 작업 및 단순한 코딩 하위 에이전트를 위한 OpenAI의 가장 작은 GPT-5.4 모델입니다."
+    },
+    "pt": {
+      "description": "O menor modelo GPT-5.4 da OpenAI para classificação, extração, ranking, tarefas multimodais e subagentes de programação simples em grande volume."
+    },
+    "ru": {
+      "description": "Самая компактная модель OpenAI GPT-5.4 для массовой классификации, извлечения, ранжирования, мультимодальных задач и простых субагентов."
+    },
+    "tr": {
+      "description": "OpenAI'ın yüksek hacimli sınıflandırma, çıkarma, sıralama, çok modlu görevler ve daha basit kodlama alt aracıları için en küçük GPT-5.4 modeli."
+    },
+    "zh-Hans": {
+      "description": "OpenAI 最小的 GPT-5.4 模型，面向高吞吐分类、提取、排序、多模态任务和较简单的编码子智能体。"
+    },
+    "zh-Hant": {
+      "description": "OpenAI 最小的 GPT-5.4 模型，面向高吞吐分類、擷取、排序、多模態任務和較簡單的編碼子智慧體。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.4-nano",
+      "title": "GPT-5.4 nano model documentation",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+      "title": "Introducing GPT-5.4 mini and nano",
+      "fields": ["name", "description", "releaseDate", "lifecycle", "benchmarks"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://openai.com",
+  "docsUrl": "https://developers.openai.com/api/docs/models/gpt-5.4-nano",
+  "vendor": "OpenAI",
+  "size": null,
+  "contextWindow": 400000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 0.2,
+              "output": 1.25,
+              "cacheRead": 0.02,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-03-17",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2025-08-31",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": 0.463,
+    "mmmu": null,
+    "mmmuPro": 66.1,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

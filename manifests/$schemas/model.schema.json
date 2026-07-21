@@ -11,36 +11,19 @@
       "type": "object",
       "properties": {
         "size": {
-          "type": "string",
-          "description": "Model parameter size (e.g., '7B', '32B', '200B')"
+          "type": ["string", "null"],
+          "description": "Model parameter size (e.g., '7B', '32B', '200B'), null when the vendor does not disclose it"
         },
         "contextWindow": {
           "type": "number",
           "description": "Total context window size in tokens (e.g., 32000, 64000, 200000)"
         },
         "maxOutput": {
-          "type": "number",
-          "description": "Maximum output token size in tokens (e.g., 4096, 8192)"
+          "type": ["number", "null"],
+          "description": "Maximum output token size in tokens (e.g., 4096, 8192), null when undocumented"
         },
         "tokenPricing": {
-          "type": "object",
-          "description": "Token-based pricing information for API usage (in $/M tokens)",
-          "properties": {
-            "input": {
-              "type": "number",
-              "description": "Input token pricing in $/M tokens (e.g., 0.14 for $0.14/1M tokens)"
-            },
-            "output": {
-              "type": "number",
-              "description": "Output token pricing in $/M tokens (e.g., 0.42 for $0.42/1M tokens)"
-            },
-            "cache": {
-              "type": ["number", "null"],
-              "description": "Cache token pricing in $/M tokens (e.g., 0.07 for $0.07/1M tokens, null if not applicable)"
-            }
-          },
-          "required": ["input", "output", "cache"],
-          "additionalProperties": false
+          "$ref": "#/$defs/tokenPricing"
         },
         "releaseDate": {
           "type": ["string", "null"],
@@ -150,5 +133,191 @@
         "platformUrls"
       ]
     }
-  ]
+  ],
+  "$defs": {
+    "tokenPricing": {
+      "description": "First-party, pay-as-you-go standard API token pricing. Rates use the offer's native currency per million tokens.",
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "status": {
+              "const": "available"
+            },
+            "primaryOffer": {
+              "type": "string",
+              "pattern": "^[a-z0-9-]+$"
+            },
+            "offers": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/tokenPricingOffer"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          },
+          "required": ["status", "primaryOffer", "offers"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "status": {
+              "const": "not-applicable"
+            },
+            "reason": {
+              "type": "string",
+              "enum": ["open-weights-only", "subscription-only"]
+            },
+            "primaryOffer": {
+              "type": "null"
+            },
+            "offers": {
+              "type": "array",
+              "maxItems": 0
+            }
+          },
+          "required": ["status", "reason", "primaryOffer", "offers"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "status": {
+              "const": "unavailable"
+            },
+            "reason": {
+              "type": "string",
+              "enum": [
+                "official-price-not-published",
+                "historical-price-unverified",
+                "unsupported-pricing-structure"
+              ]
+            },
+            "primaryOffer": {
+              "type": "null"
+            },
+            "offers": {
+              "type": "array",
+              "maxItems": 0
+            }
+          },
+          "required": ["status", "reason", "primaryOffer", "offers"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "tokenPricingOffer": {
+      "type": "object",
+      "description": "A first-party API pricing offer for one region and service tier.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "currency": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}$",
+          "description": "ISO 4217 currency code"
+        },
+        "region": {
+          "type": "string",
+          "pattern": "^(global|[A-Z]{2})$",
+          "description": "global or an ISO 3166-1 alpha-2 region code"
+        },
+        "serviceTier": {
+          "const": "standard"
+        },
+        "effectiveFrom": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "effectiveTo": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "tiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/tokenPricingTier"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "currency",
+        "region",
+        "serviceTier",
+        "effectiveFrom",
+        "effectiveTo",
+        "tiers"
+      ],
+      "additionalProperties": false
+    },
+    "tokenPricingTier": {
+      "type": "object",
+      "properties": {
+        "condition": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/tokenPricingCondition"
+            }
+          ]
+        },
+        "rates": {
+          "$ref": "#/$defs/tokenPricingRates"
+        }
+      },
+      "required": ["condition", "rates"],
+      "additionalProperties": false
+    },
+    "tokenPricingCondition": {
+      "type": "object",
+      "properties": {
+        "metric": {
+          "type": "string",
+          "enum": ["inputTokens", "contextTokens"]
+        },
+        "min": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "max": {
+          "type": ["number", "null"],
+          "minimum": 0
+        }
+      },
+      "required": ["metric", "min", "max"],
+      "additionalProperties": false
+    },
+    "tokenPricingRates": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "output": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "cacheRead": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "cacheWrite": {
+          "type": ["number", "null"],
+          "minimum": 0
+        }
+      },
+      "required": ["input", "output", "cacheRead", "cacheWrite"],
+      "additionalProperties": false
+    }
+  }
 }

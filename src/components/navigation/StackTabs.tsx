@@ -5,7 +5,14 @@ import { memo, useMemo } from 'react'
 import { Link } from '@/i18n/navigation'
 import { stackCounts } from '@/lib/generated/metadata'
 
-type StackId = 'ides' | 'clis' | 'extensions' | 'models' | 'model-providers' | 'vendors'
+type StackId =
+  | 'ides'
+  | 'clis'
+  | 'desktops'
+  | 'extensions'
+  | 'models'
+  | 'model-providers'
+  | 'vendors'
 
 interface StackTabsProps {
   activeStack: StackId
@@ -26,6 +33,11 @@ function StackTabs({ activeStack, locale: _locale }: StackTabsProps) {
         id: 'clis' as StackId,
         title: tShared('categories.plural.clis'),
         path: `/clis`,
+      },
+      {
+        id: 'desktops' as StackId,
+        title: tShared('categories.plural.desktops'),
+        path: `/desktops`,
       },
       {
         id: 'extensions' as StackId,

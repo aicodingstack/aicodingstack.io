@@ -1,0 +1,112 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "llama-4-maverick",
+  "name": "Llama 4 Maverick",
+  "description": "Meta's open-weight multimodal MoE for coding, reasoning, multilingual work, and long-context text and image understanding.",
+  "translations": {
+    "de": {
+      "description": "Metas multimodales Open-Weight-MoE für Coding, Reasoning, mehrsprachige Arbeit und langkontextuelles Text- und Bildverständnis."
+    },
+    "es": {
+      "description": "El MoE multimodal de pesos abiertos de Meta para código, razonamiento, trabajo multilingüe y comprensión de texto e imagen de contexto largo."
+    },
+    "fr": {
+      "description": "Le MoE multimodal à poids ouverts de Meta pour le codage, le raisonnement, le multilingue et la compréhension de textes et images à long contexte."
+    },
+    "id": {
+      "description": "MoE multimodal berbobot terbuka Meta untuk coding, penalaran, pekerjaan multibahasa, serta pemahaman teks dan gambar dengan konteks panjang."
+    },
+    "ja": {
+      "description": "コーディング、推論、多言語作業、長いコンテキストでのテキスト・画像理解向けのMeta製オープンウェイト・マルチモーダルMoE。"
+    },
+    "ko": {
+      "description": "코딩, 추론, 다국어 작업 및 긴 컨텍스트의 텍스트·이미지 이해를 위한 Meta의 오픈 웨이트 멀티모달 MoE입니다."
+    },
+    "pt": {
+      "description": "O MoE multimodal de pesos abertos da Meta para código, raciocínio, trabalho multilíngue e compreensão de texto e imagem em contexto longo."
+    },
+    "ru": {
+      "description": "Мультимодальная MoE-модель Meta с открытыми весами для программирования, рассуждений, разных языков и длинного контекста текста и изображений."
+    },
+    "tr": {
+      "description": "Meta'nın kodlama, akıl yürütme, çok dilli çalışma ve uzun bağlamlı metin ile görüntü anlama için açık ağırlıklı çok modlu MoE modeli."
+    },
+    "zh-Hans": {
+      "description": "Meta 面向编码、推理、多语言工作及长上下文文本和图像理解的开放权重多模态 MoE。"
+    },
+    "zh-Hant": {
+      "description": "Meta 面向編碼、推理、多語言工作及長上下文文字和圖像理解的開放權重多模態 MoE。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+      "title": "Introducing Llama 4",
+      "fields": [
+        "name",
+        "description",
+        "releaseDate",
+        "lifecycle",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "title": "Llama 4 Maverick official model card",
+      "fields": ["size", "contextWindow", "knowledgeCutoff", "platformUrls.huggingface"]
+    },
+    {
+      "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "title": "Llama 4 Maverick official model card — MMMU; Instruction-tuned model; 0-shot accuracy; label: Llama 4 Maverick; observed 2026-07-21",
+      "fields": ["benchmarks.mmmu"]
+    },
+    {
+      "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "title": "Llama 4 Maverick official model card — MMMU-Pro; Instruction-tuned model; 0-shot; average of Standard and Vision task scores; label: Llama 4 Maverick; observed 2026-07-21",
+      "fields": ["benchmarks.mmmuPro"]
+    },
+    {
+      "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "title": "Llama 4 Maverick official model card — LiveCodeBench, 2024-10-01 to 2025-02-01; Instruction-tuned model; 0-shot pass@1; label: Llama 4 Maverick; observed 2026-07-21",
+      "fields": ["benchmarks.liveCodeBench"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://ai.meta.com",
+  "docsUrl": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+  "vendor": "Meta",
+  "size": "400B (17B active)",
+  "contextWindow": 1000000,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "not-applicable",
+    "reason": "open-weights-only",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "releaseDate": "2025-04-05",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2024-08",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": [],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": 73.4,
+    "mmmuPro": 59.6,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": 43.4
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

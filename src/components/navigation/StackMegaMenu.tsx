@@ -90,6 +90,7 @@ export const StackMegaMenu = memo(function StackMegaMenu({ isOpen, onClose }: St
       development: [
         { name: tShared('categories.plural.ides'), href: '/ides' },
         { name: tShared('categories.plural.clis'), href: '/clis' },
+        { name: tShared('categories.plural.desktops'), href: '/desktops' },
         { name: tShared('categories.plural.extensions'), href: '/extensions' },
       ] as MenuItem[],
       intelligence: [

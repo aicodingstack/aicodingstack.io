@@ -1,7 +1,8 @@
 {
   "$schema": "../$schemas/ide.schema.json",
   "id": "trae",
-  "name": "TRAE",
+  "name": "TRAE IDE",
+  "familyId": "trae",
   "description": "An AI-powered IDE that acts as a 10x \"AI engineer,\" providing real-time code completion, chat-based assistance, and autonomous code generation (Builder/SOLO mode) for end-to-end development.",
   "translations": {
     "zh-Hans": {
@@ -39,10 +40,40 @@
     }
   },
   "verified": false,
-  "websiteUrl": "https://www.trae.ai",
+  "sources": [
+    {
+      "url": "https://www.trae.ai/solo-code",
+      "title": "TRAE IDE",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://www.trae.ai/blog/trae_work_0609",
+      "title": "Introducing TRAE Work",
+      "fields": ["familyId", "relatedProducts"]
+    },
+    {
+      "url": "https://www.trae.ai/download",
+      "title": "TRAE Download Center",
+      "fields": ["platforms", "resourceUrls.download"]
+    },
+    {
+      "url": "https://www.trae.ai/changelog",
+      "title": "TRAE changelog",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
+    },
+    {
+      "url": "https://www.trae.ai/pricing",
+      "title": "TRAE pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.trae.ai/solo-code",
   "docsUrl": "https://docs.trae.ai",
   "vendor": "ByteDance",
-  "latestVersion": "2.7.1",
+  "latestVersion": "3.5.71",
   "githubUrl": null,
   "license": "Proprietary",
   "pricing": [
@@ -54,8 +85,29 @@
       "category": "Individual"
     },
     {
+      "name": "Lite",
+      "value": 3,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
       "name": "Pro",
       "value": 10,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Pro+",
+      "value": 30,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Ultra",
+      "value": 100,
       "currency": "USD",
       "per": "month",
       "category": "Individual"
@@ -77,7 +129,12 @@
     "reddit": "https://www.reddit.com/r/Trae_ai",
     "blog": "https://www.trae.ai/blog"
   },
-  "relatedProducts": [],
+  "relatedProducts": [
+    {
+      "type": "desktop",
+      "productId": "trae-work"
+    }
+  ],
   "platforms": [
     {
       "os": "macOS",

@@ -2,6 +2,7 @@
   "$schema": "../$schemas/cli.schema.json",
   "id": "claude-code-cli",
   "name": "Claude Code",
+  "familyId": "claude-code",
   "description": "AI coding assistant CLI for your terminal. Understands your codebase, executes tasks via natural language, explains code, and manages git workflows with MCP integration.",
   "translations": {
     "zh-Hans": {
@@ -136,6 +137,7 @@
     "blog": "https://www.claude.com/blog"
   },
   "relatedProducts": [
+    { "type": "desktop", "productId": "claude-code-desktop" },
     {
       "type": "extension",
       "productId": "claude-code"

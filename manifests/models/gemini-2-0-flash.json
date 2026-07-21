@@ -1,0 +1,117 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gemini-2-0-flash",
+  "name": "Gemini 2.0 Flash",
+  "description": "Multimodal Gemini model for fast agentic tasks, code generation, tool use, and a one-million-token context.",
+  "translations": {
+    "zh-Hans": {
+      "description": "Gemini 2.0 Flash 是 Google 发布的独立模型版本，具备明确的编程或软件工程能力。"
+    },
+    "de": {
+      "description": "Gemini 2.0 Flash ist eine eigenständige Modellversion von Google mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+    },
+    "es": {
+      "description": "Gemini 2.0 Flash es una versión de modelo independiente de Google con capacidades explícitas de programación o ingeniería de software."
+    },
+    "fr": {
+      "description": "Gemini 2.0 Flash est une version de modèle distincte de Google, dotée de capacités explicites en programmation ou en génie logiciel."
+    },
+    "id": {
+      "description": "Gemini 2.0 Flash adalah versi model mandiri dari Google dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+    },
+    "ja": {
+      "description": "Gemini 2.0 Flash は Google が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+    },
+    "ko": {
+      "description": "Gemini 2.0 Flash은(는) Google가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+    },
+    "pt": {
+      "description": "Gemini 2.0 Flash é uma versão de modelo independente da Google, com capacidades explícitas de programação ou engenharia de software."
+    },
+    "ru": {
+      "description": "Gemini 2.0 Flash — самостоятельная версия модели от Google с явно заявленными возможностями программирования или разработки ПО."
+    },
+    "tr": {
+      "description": "Gemini 2.0 Flash, Google tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+    },
+    "zh-Hant": {
+      "description": "Gemini 2.0 Flash 是 Google 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.0-flash",
+      "title": "Gemini 2.0 Flash official documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "releaseDate",
+        "lifecycle",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://deepmind.google",
+  "docsUrl": "https://ai.google.dev/gemini-api/docs/models/gemini-2.0-flash",
+  "vendor": "Google",
+  "size": null,
+  "contextWindow": 1048576,
+  "maxOutput": 8192,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 0.1,
+              "output": 0.4,
+              "cacheRead": 0.025,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2025-02-05",
+  "lifecycle": "deprecated",
+  "knowledgeCutoff": "2024-08",
+  "inputModalities": ["text", "image", "pdf", "audio", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

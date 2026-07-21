@@ -41,7 +41,7 @@
   "verified": false,
   "websiteUrl": "https://kwaikatonai.com",
   "docsUrl": "https://openrouter.ai/kwaipilot",
-  "vendor": "Kwai",
+  "vendor": "StreamLake",
   "type": "foundation-model-provider",
   "applyKeyUrl": null,
   "platformUrls": {

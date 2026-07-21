@@ -992,6 +992,7 @@ async function main(): Promise<void> {
     { dir: 'providers', schema: 'provider.schema.json' },
     { dir: 'models', schema: 'model.schema.json' },
     { dir: 'ides', schema: 'ide.schema.json' },
+    { dir: 'desktops', schema: 'desktop.schema.json' },
     { dir: 'extensions', schema: 'extension.schema.json' },
     { dir: 'clis', schema: 'cli.schema.json' },
   ]

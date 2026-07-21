@@ -1,7 +1,8 @@
 {
   "$schema": "../$schemas/vendor.schema.json",
   "id": "moonshot",
-  "name": "Moonshot",
+  "name": "Moonshot AI",
+  "aliases": ["Moonshot"],
   "description": "An AI company specializing in large language models and intelligent applications, known for the Kimi AI assistant.",
   "translations": {
     "zh-Hans": {

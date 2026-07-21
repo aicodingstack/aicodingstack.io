@@ -243,6 +243,7 @@ function generateStackCounts(): Record<string, number> {
   const manifestDirectories: Record<string, string> = {
     ides: 'ides',
     clis: 'clis',
+    desktops: 'desktops',
     extensions: 'extensions',
     models: 'models',
     'model-providers': 'providers',

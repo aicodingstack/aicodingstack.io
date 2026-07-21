@@ -39,6 +39,7 @@
   "categories": {
     "all": {
       "clis": "すべてのCLI",
+      "desktops": "すべてのデスクトップアプリ",
       "extensions": "すべての拡張機能",
       "ides": "すべてのIDE",
       "modelProviders": "すべてのモデルプロバイダー",
@@ -47,6 +48,7 @@
     },
     "plural": {
       "clis": "CLI",
+      "desktops": "デスクトップ",
       "extensions": "拡張機能",
       "ides": "IDE",
       "modelProviders": "モデルプロバイダー",
@@ -56,6 +58,7 @@
     },
     "singular": {
       "cli": "CLI",
+      "desktop": "デスクトップ",
       "extension": "拡張機能",
       "ide": "IDE",
       "model": "モデル",
@@ -80,6 +83,31 @@
     "deprecated": "Deprecated",
     "latest": "Latest",
     "maintained": "Maintained"
+  },
+  "modelPricing": {
+    "cacheRead": "キャッシュ読み取り",
+    "cacheWrite": "キャッシュ書き込み",
+    "conditions": {
+      "over": "{min} {metric}超",
+      "range": "{min}–{max} {metric}",
+      "upTo": "{max} {metric}以下"
+    },
+    "ended": "終了日: {date}",
+    "globalRegion": "グローバル",
+    "historical": "過去の料金",
+    "metrics": {
+      "contextTokens": "コンテキストトークン",
+      "inputTokens": "入力トークン"
+    },
+    "notAvailable": "利用不可",
+    "perMillionTokens": "{price} / 100万トークン",
+    "reasons": {
+      "historicalPriceUnverified": "過去のAPI料金は検証されていません。",
+      "officialPriceNotPublished": "公式のトークン料金は公開されていません。",
+      "openWeightsOnly": "オープンウェイトのみで、提供元によるトークンAPI料金はありません。",
+      "subscriptionOnly": "サブスクリプションのみで、トークン単位のAPI料金はありません。",
+      "unsupportedPricingStructure": "公式の料金体系はまだ正確に表現できません。"
+    }
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",

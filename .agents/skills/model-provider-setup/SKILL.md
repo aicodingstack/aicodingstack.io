@@ -1,124 +1,93 @@
 ---
 name: model-provider-setup
-description: Configure Codex to use alternative AI model providers by setting up custom API endpoints and authentication. Use this skill when users want to switch from default Anthropic models to providers like Z.AI, OpenRouter, or other custom endpoints with compatible APIs.
+description: Configures Codex custom model providers in user-level config.toml. Use when a user wants Codex to connect to an OpenAI-compatible proxy, hosted provider, Azure endpoint, or local Ollama/LM Studio runtime.
 ---
 
 # Model Provider Setup
 
-## Overview
+Configure Codex model providers without exposing credentials or writing unsupported project-local settings.
 
-This skill configures `.Codex/settings.local.json` to use alternative AI model providers that offer Anthropic-compatible APIs. It guides the setup of custom base URLs, model selections, and API authentication for providers beyond the default Anthropic service.
+## Safety and scope
 
-## When to Use This Skill
+- Read the current Codex configuration documentation before changing provider settings.
+- Write provider configuration only to the user's `~/.codex/config.toml`. Codex ignores provider and credential-routing keys in project `.codex/config.toml`.
+- Never write API keys into the repository, `config.toml`, chat output, or shell history. Store only the environment-variable name in `env_key` and let the user set its value securely.
+- Preserve unrelated TOML settings and comments. Inspect the existing file before editing.
+- Do not assume an Anthropic-compatible endpoint works with Codex. Confirm that the endpoint supports the wire API selected for Codex, normally the OpenAI Responses API.
+- Do not guess model IDs. Obtain the exact ID from the provider's current official model catalog.
 
-Use this skill when users:
-- Want to switch to alternative model providers (Z.AI, OpenRouter, etc.)
-- Need to configure custom API endpoints for Codex
-- Ask about setting up API keys for different providers
-- Request help configuring model provider settings
+## Workflow
 
-## Setup Workflow
+1. Read `references/providers.json` for maintained templates and limitations.
+2. Determine the requested target:
+   - built-in OpenAI provider with a different base URL;
+   - custom hosted provider or proxy;
+   - built-in local provider (`ollama` or `lmstudio`);
+   - built-in Amazon Bedrock provider;
+   - Azure OpenAI-compatible endpoint.
+3. Verify the provider's current official documentation for:
+   - base URL;
+   - supported wire API;
+   - exact model ID;
+   - required authentication environment variable;
+   - required query parameters or headers.
+4. Show the proposed non-secret TOML diff before writing when the choice is ambiguous.
+5. Obtain authorization to modify user-level configuration, then update `~/.codex/config.toml` while preserving unrelated settings.
+6. Ask the user to set the required environment variable outside the repository. Never request that the secret be pasted into chat when a local secret store or shell environment is available.
+7. Validate with a read-only command such as `codex --version` and, when available, a minimal provider/model listing or one-off invocation. Do not send a billable API request without user authorization.
+8. Tell the user whether Codex must be restarted or a new session opened for the change to take effect.
 
-### Step 1: Read Provider Configurations
+## Configuration patterns
 
-Read the provider configurations from `references/providers.json` to understand available providers, their base URLs, and supported models.
+### Built-in OpenAI provider through a proxy
 
-The JSON structure contains:
-- Provider ID and display name
-- Description of the provider
-- Base URL for API requests
-- List of available models with IDs and descriptions
+Use `openai_base_url` when only the built-in OpenAI provider's endpoint changes:
 
-### Step 2: Present Provider Options to User
-
-Use the `AskUserQuestion` tool to present available providers to the user. Structure the question as follows:
-
-**Question format:**
-- Header: "Provider"
-- Question: "Which model provider would you like to configure?"
-- Options: Build from providers.json, using provider name as label and description as the option description
-- multiSelect: false (single provider selection)
-
-### Step 3: Present Model Options for Selected Provider
-
-After the user selects a provider, use `AskUserQuestion` again to let them choose a model from that provider's available models.
-
-**Question format:**
-- Header: "Model"
-- Question: "Which model would you like to use?"
-- Options: Build from the selected provider's models array, using model name as label and description as the option description
-- multiSelect: false (single model selection)
-
-### Step 4: Collect API Key
-
-Use `AskUserQuestion` to collect the API key for the selected provider.
-
-**Question format:**
-- Header: "API Key"
-- Question: "Please enter your API key for [provider name]:"
-- Options: Provide 2 options:
-  - Label: "I'll enter my API key", Description: "Type or paste your API key in the 'Other' field below"
-  - Label: "I'll add it manually later", Description: "Set up the configuration with a placeholder that you'll replace later"
-- multiSelect: false
-
-**Important:** If the user selects "Other" and provides a custom text input, that is their API key. If they choose "I'll add it manually later", use the placeholder `"<YOUR_API_KEY_HERE>"`.
-
-### Step 5: Update .Codex/settings.local.json
-
-Read the existing `.Codex/settings.local.json` file if it exists. If it doesn't exist, create a new one.
-
-Update or create the configuration with the following structure:
-
-```json
-{
-  "env": {
-    "ANTHROPIC_BASE_URL": "<selected provider's baseUrl>",
-    "ANTHROPIC_MODEL": "<selected model's id>",
-    "ANTHROPIC_AUTH_TOKEN": "<user's API key or placeholder>"
-  }
-}
+```toml
+openai_base_url = "https://proxy.example.com/v1"
+model = "provider-model-id"
 ```
 
-**Important considerations:**
-- Preserve any existing configuration in settings.local.json that is not related to these three env variables
-- Merge the new env variables with existing ones
-- Use proper JSON formatting with 2-space indentation
+### Custom provider
 
-### Step 6: Confirm Setup
+Use a non-reserved provider ID. `openai`, `ollama`, and `lmstudio` are reserved.
 
-After updating the configuration file, inform the user:
-1. Which provider and model were configured
-2. The location of the settings file: `.Codex/settings.local.json`
-3. If a placeholder was used, remind them to replace `<YOUR_API_KEY_HERE>` with their actual API key
-4. Note that they need to restart Codex for the changes to take effect
+```toml
+model = "provider-model-id"
+model_provider = "example"
 
-## Adding New Providers
-
-To add new model providers to this skill, edit `references/providers.json` and add a new provider object with the following structure:
-
-```json
-{
-  "id": "unique-provider-id",
-  "name": "Display Name",
-  "description": "Brief description of the provider",
-  "baseUrl": "https://api.example.com/v1",
-  "models": [
-    {
-      "id": "model-identifier",
-      "name": "Model Display Name",
-      "description": "Brief description of the model"
-    }
-  ]
-}
+[model_providers.example]
+name = "Example provider"
+base_url = "https://api.example.com/v1"
+env_key = "EXAMPLE_API_KEY"
+wire_api = "responses"
 ```
 
-## Resources
+Add only officially required headers or query parameters:
 
-### references/providers.json
+```toml
+[model_providers.example]
+http_headers = { "X-Example-Header" = "value" }
+env_http_headers = { "X-Secret-Header" = "EXAMPLE_HEADER_VALUE" }
+query_params = { api-version = "documented-version" }
+```
 
-Contains the configuration database for all supported model providers. This file includes:
-- Provider metadata (ID, name, description)
-- API base URLs
-- Available models for each provider
+### Local providers
 
-This file should be read at the start of the workflow to populate the provider and model selection options.
+Prefer Codex's built-in OSS mode instead of redefining reserved providers:
+
+```toml
+oss_provider = "ollama" # or "lmstudio"
+```
+
+Run Codex with `--oss`; use `--local-provider` for a one-off selection.
+
+## Unsupported legacy configuration
+
+Do not create `.Codex/settings.local.json` and do not set `ANTHROPIC_BASE_URL`, `ANTHROPIC_MODEL`, or `ANTHROPIC_AUTH_TOKEN` as a Codex configuration. Those settings describe a different client and wire protocol.
+
+## Maintenance
+
+- Keep `references/providers.json` limited to durable configuration templates. Do not hardcode a model catalog that becomes stale quickly.
+- Prefer official Codex documentation for configuration semantics and official provider documentation for endpoint/model facts.
+- Re-verify provider compatibility whenever Codex changes its supported wire APIs.

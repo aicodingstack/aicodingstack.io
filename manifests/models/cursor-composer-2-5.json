@@ -1,0 +1,118 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "cursor-composer-2-5",
+  "name": "Cursor Composer 2.5",
+  "description": "Cursor's efficient coding agent model for interactive development, reliable tool use, and long-running software engineering tasks.",
+  "translations": {
+    "de": {
+      "description": "Cursors effizientes Coding-Agent-Modell für interaktive Entwicklung, zuverlässige Werkzeugnutzung und langfristige Softwareaufgaben."
+    },
+    "es": {
+      "description": "El eficiente modelo de agente de código de Cursor para desarrollo interactivo, uso fiable de herramientas y tareas de software prolongadas."
+    },
+    "fr": {
+      "description": "Le modèle d’agent de codage efficace de Cursor pour le développement interactif, l’usage fiable d’outils et les tâches logicielles longues."
+    },
+    "id": {
+      "description": "Model agen coding efisien Cursor untuk pengembangan interaktif, penggunaan alat yang andal, dan tugas rekayasa perangkat lunak jangka panjang."
+    },
+    "ja": {
+      "description": "対話的な開発、信頼性の高いツール利用、長時間のソフトウェア開発向けに設計されたCursorの効率的なコーディングエージェント。"
+    },
+    "ko": {
+      "description": "대화형 개발, 안정적인 도구 사용 및 장기 소프트웨어 엔지니어링 작업을 위한 Cursor의 효율적인 코딩 에이전트 모델입니다."
+    },
+    "pt": {
+      "description": "O eficiente modelo de agente de código da Cursor para desenvolvimento interativo, uso confiável de ferramentas e tarefas prolongadas de software."
+    },
+    "ru": {
+      "description": "Эффективная модель агента программирования Cursor для интерактивной разработки, надёжных инструментов и длительных инженерных задач."
+    },
+    "tr": {
+      "description": "Cursor'ın etkileşimli geliştirme, güvenilir araç kullanımı ve uzun süreli yazılım mühendisliği görevleri için verimli kodlama aracısı modeli."
+    },
+    "zh-Hans": {
+      "description": "Cursor 面向交互式开发、可靠工具调用和长周期软件工程任务的高效编码智能体模型。"
+    },
+    "zh-Hant": {
+      "description": "Cursor 面向互動式開發、可靠工具呼叫和長週期軟體工程任務的高效編碼智慧體模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://cursor.com/composer",
+      "title": "Composer 2.5 model page",
+      "fields": ["name", "description", "tokenPricing", "capabilities", "lifecycle"]
+    },
+    {
+      "url": "https://cursor.com/changelog/composer-2-5",
+      "title": "Composer 2.5 launch",
+      "fields": ["releaseDate"]
+    },
+    {
+      "url": "https://docs.cursor.com/models",
+      "title": "Cursor model context documentation",
+      "fields": ["docsUrl", "contextWindow", "inputModalities", "outputModalities"]
+    },
+    {
+      "url": "https://cursor.com/composer",
+      "title": "Cursor Composer 2.5 benchmark — Terminal-Bench 2.0; Cursor vendor evaluation reported on the official Composer 2.5 model page; label: Composer 2.5; observed 2026-07-21",
+      "fields": ["benchmarks.terminalBench"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
+  "websiteUrl": "https://cursor.com",
+  "docsUrl": "https://docs.cursor.com/models",
+  "vendor": "Anysphere",
+  "size": null,
+  "contextWindow": 200000,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 0.5,
+              "output": 2.5,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-05-18",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": 0.693,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

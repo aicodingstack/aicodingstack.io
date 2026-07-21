@@ -1,6 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+import CurrencySwitcher from '@/components/controls/CurrencySwitcher'
 import LanguageSwitcher from '@/components/controls/LanguageSwitcher'
 import ThemeSwitcher from '@/components/controls/ThemeSwitcher'
 import { Link } from '@/i18n/navigation'
@@ -43,6 +44,7 @@ export default function Footer() {
   const resourceLinks = [
     { href: '/ides', label: tShared('categories.plural.ides') },
     { href: '/clis', label: tShared('categories.plural.clis') },
+    { href: '/desktops', label: tShared('categories.plural.desktops') },
     { href: '/extensions', label: tShared('categories.plural.extensions') },
     { href: '/models', label: tShared('categories.plural.models') },
     { href: '/model-providers', label: tShared('categories.plural.modelProviders') },
@@ -85,8 +87,9 @@ export default function Footer() {
             {tComponent('footer.tagline')}
             <span className="block mt-[var(--spacing-sm)]">{tComponent('footer.openSource')}</span>
           </p>
-          <div className="flex gap-[var(--spacing-xs)]">
+          <div className="flex flex-wrap gap-[var(--spacing-xs)]">
             <ThemeSwitcher />
+            <CurrencySwitcher />
             <LanguageSwitcher />
           </div>
         </div>

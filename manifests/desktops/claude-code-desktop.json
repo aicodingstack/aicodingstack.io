@@ -1,0 +1,125 @@
+{
+  "$schema": "../$schemas/desktop.schema.json",
+  "translations": {
+    "de": {
+      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+    },
+    "es": {
+      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+    },
+    "fr": {
+      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+    },
+    "id": {
+      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+    },
+    "ja": {
+      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+    },
+    "ko": {
+      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+    },
+    "pt": {
+      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+    },
+    "ru": {
+      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+    },
+    "tr": {
+      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+    },
+    "zh-Hans": {
+      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+    },
+    "zh-Hant": {
+      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://claude.com/blog/claude-code-desktop-redesign",
+      "title": "Claude Code Desktop redesign"
+    },
+    {
+      "url": "https://code.claude.com/docs/en/desktop",
+      "title": "Claude Code Desktop documentation"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "id": "claude-code-desktop",
+  "name": "Claude Code Desktop",
+  "familyId": "claude-code",
+  "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal.",
+  "websiteUrl": "https://claude.com/product/claude-code",
+  "docsUrl": "https://code.claude.com/docs/en/desktop",
+  "vendor": "Anthropic",
+  "latestVersion": "Latest",
+  "githubUrl": "https://github.com/anthropics/claude-code",
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Pro",
+      "value": 20,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Max 5x",
+      "value": 100,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Max 20x",
+      "value": 200,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://claude.com/download",
+    "changelog": "https://claude.com/blog/claude-code-desktop-redesign",
+    "pricing": "https://claude.com/pricing",
+    "mcp": "https://code.claude.com/docs/en/mcp",
+    "issue": "https://github.com/anthropics/claude-code/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/claudeai",
+    "github": "https://github.com/anthropics/claude-code",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": "https://claude.com/blog"
+  },
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "claude-code-cli"
+    },
+    {
+      "type": "extension",
+      "productId": "claude-code"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": "/Applications/Claude.app",
+      "installCommand": null,
+      "launchCommand": null
+    },
+    {
+      "os": "Windows",
+      "installPath": "%LOCALAPPDATA%\\Programs\\Claude",
+      "installCommand": null,
+      "launchCommand": null
+    }
+  ]
+}

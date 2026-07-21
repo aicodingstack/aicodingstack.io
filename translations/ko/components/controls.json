@@ -3,6 +3,16 @@
     "copied": "복사됨!",
     "copyToClipboard": "클립보드에 복사"
   },
+  "currencySwitcher": {
+    "cny": "CNY로 환산",
+    "label": "표시 통화",
+    "loadingRate": "기준 환율을 불러오는 중…",
+    "native": "원래 통화 유지",
+    "nativeShort": "원 통화",
+    "rateUnavailable": "기준 환율을 사용할 수 없어 원래 가격을 표시합니다.",
+    "referenceRate": "기준 환율: 1 USD = {rate} CNY ({date})",
+    "usd": "USD로 환산"
+  },
   "filterSortBar": {
     "clearFilters": "필터 지우기",
     "license": "라이선스:",

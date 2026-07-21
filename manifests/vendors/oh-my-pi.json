@@ -1,0 +1,66 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "oh-my-pi",
+  "name": "Oh My Pi",
+  "aliases": ["omp", "Oh-My-Pi"],
+  "description": "Oh My Pi is the open source project behind omp, a terminal coding agent with LSP, debugger, subagent, multi-provider model, and native cross-platform tooling.",
+  "translations": {
+    "de": {
+      "description": "Oh My Pi ist das Open-Source-Projekt hinter omp, einem Terminal-Coding-Agent mit LSP, Debugger, Subagenten, mehreren Modellanbietern und nativen plattformübergreifenden Werkzeugen."
+    },
+    "es": {
+      "description": "Oh My Pi es el proyecto de código abierto detrás de omp, un agente de terminal con LSP, depurador, subagentes, múltiples proveedores de modelos y herramientas nativas multiplataforma."
+    },
+    "fr": {
+      "description": "Oh My Pi est le projet open source derrière omp, un agent de terminal avec LSP, débogueur, sous-agents, plusieurs fournisseurs de modèles et des outils natifs multiplateformes."
+    },
+    "id": {
+      "description": "Oh My Pi adalah proyek sumber terbuka di balik omp, agen coding terminal dengan LSP, debugger, subagen, dukungan banyak penyedia model, dan perangkat lintas platform native."
+    },
+    "ja": {
+      "description": "Oh My Piはompを開発するオープンソースプロジェクトです。ompはLSP、デバッガー、サブエージェント、複数のモデルプロバイダー、ネイティブなクロスプラットフォーム機能を備えたターミナル向けコーディングエージェントです。"
+    },
+    "ko": {
+      "description": "Oh My Pi는 omp를 개발하는 오픈 소스 프로젝트입니다. omp는 LSP, 디버거, 하위 에이전트, 다중 모델 제공업체 및 네이티브 크로스 플랫폼 도구를 갖춘 터미널 코딩 에이전트입니다."
+    },
+    "pt": {
+      "description": "Oh My Pi é o projeto open source por trás do omp, um agente de terminal com LSP, depurador, subagentes, vários provedores de modelos e ferramentas nativas multiplataforma."
+    },
+    "ru": {
+      "description": "Oh My Pi — открытый проект, развивающий omp: терминальный агент с LSP, отладчиком, субагентами, поддержкой нескольких поставщиков моделей и нативными кроссплатформенными инструментами."
+    },
+    "tr": {
+      "description": "Oh My Pi; LSP, hata ayıklayıcı, alt ajanlar, çoklu model sağlayıcı desteği ve yerel çapraz platform araçları sunan terminal kodlama ajanı omp'nin arkasındaki açık kaynak projedir."
+    },
+    "zh-Hans": {
+      "description": "Oh My Pi 是 omp 背后的开源项目；omp 是一款终端编码 Agent，支持 LSP、调试器、子 Agent、多模型提供商和原生跨平台工具。"
+    },
+    "zh-Hant": {
+      "description": "Oh My Pi 是 omp 背後的開源專案；omp 是一款終端編碼 Agent，支援 LSP、除錯器、子 Agent、多模型供應商和原生跨平台工具。"
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://omp.sh",
+      "title": "omp official site"
+    },
+    {
+      "url": "https://github.com/can1357/oh-my-pi",
+      "title": "Oh My Pi official repository"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://omp.sh",
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": "https://github.com/can1357/oh-my-pi",
+    "youtube": null,
+    "discord": "https://discord.com/invite/4NMW9cdXZa",
+    "reddit": null,
+    "blog": null
+  }
+}

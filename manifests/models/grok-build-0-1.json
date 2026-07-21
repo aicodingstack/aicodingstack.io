@@ -1,0 +1,117 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "grok-build-0-1",
+  "name": "Grok Build 0.1",
+  "description": "Dedicated coding model trained for agentic software engineering, web development, and tool-driven workflows.",
+  "translations": {
+    "zh-Hans": {
+      "description": "Grok Build 0.1 是 xAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+    },
+    "de": {
+      "description": "Grok Build 0.1 ist eine eigenständige Modellversion von xAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+    },
+    "es": {
+      "description": "Grok Build 0.1 es una versión de modelo independiente de xAI con capacidades explícitas de programación o ingeniería de software."
+    },
+    "fr": {
+      "description": "Grok Build 0.1 est une version de modèle distincte de xAI, dotée de capacités explicites en programmation ou en génie logiciel."
+    },
+    "id": {
+      "description": "Grok Build 0.1 adalah versi model mandiri dari xAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+    },
+    "ja": {
+      "description": "Grok Build 0.1 は xAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+    },
+    "ko": {
+      "description": "Grok Build 0.1은(는) xAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+    },
+    "pt": {
+      "description": "Grok Build 0.1 é uma versão de modelo independente da xAI, com capacidades explícitas de programação ou engenharia de software."
+    },
+    "ru": {
+      "description": "Grok Build 0.1 — самостоятельная версия модели от xAI с явно заявленными возможностями программирования или разработки ПО."
+    },
+    "tr": {
+      "description": "Grok Build 0.1, xAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+    },
+    "zh-Hant": {
+      "description": "Grok Build 0.1 是 xAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.x.ai/developers/models/grok-build-0.1",
+      "title": "Grok Build 0.1 official documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "releaseDate",
+        "lifecycle",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://x.ai",
+  "docsUrl": "https://docs.x.ai/developers/models/grok-build-0.1",
+  "vendor": "xAI",
+  "size": null,
+  "contextWindow": 256000,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 1,
+              "output": 2,
+              "cacheRead": 0.2,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-05-19",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}
