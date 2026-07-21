@@ -61,7 +61,7 @@
     "next-intl": "^4.13.2",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "recharts": "^3.7.0"
+    "recharts": "^3.9.2"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.12.1",
@@ -83,7 +83,7 @@
     "@types/react-dom": "^19.2.3",
     "@typescript-eslint/parser": "^8.64.0",
     "@typescript-eslint/types": "^8.53.0",
-    "agent-browser": "^0.32.3",
+    "agent-browser": "0.27.0",
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
     "cspell": "^9.6.1",

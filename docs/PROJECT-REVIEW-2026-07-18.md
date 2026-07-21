@@ -196,3 +196,14 @@ evidence; completed items are reflected in the checklists and implementation log
   official sources showed that legacy values had changed.
 - Improved the health snapshot from 6 to 9 records with complete provenance, reduced warnings from
   38 to 30, and eliminated all dangling relationships.
+
+### 2026-07-20
+
+- Prioritized catalog freshness ahead of further legacy provenance backfill so users can compare
+  the models that vendors currently recommend.
+- Added GPT-5.6 Sol, Terra, and Luna; Claude Fable 5, Opus 4.8, and Sonnet 5; and Gemini 3.5 Flash,
+  3.1 Pro Preview, and 3.1 Flash-Lite.
+- Recorded official specifications, current API pricing, lifecycle, release dates, capabilities,
+  and field-level provenance for all nine models, with descriptions across all supported locales.
+- Increased complete provenance coverage from 9 to 18 records while keeping data-health findings at
+  0 errors and 30 legacy warnings.
