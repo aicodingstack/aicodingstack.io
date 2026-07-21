@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-18",
+  "asOf": "2026-07-20",
   "thresholds": {
     "models": 30,
     "providers": 30,
@@ -9,19 +9,19 @@
     "vendors": 90
   },
   "summary": {
-    "totalRecords": 134,
-    "recordsWithSources": 6,
-    "verifiedRecords": 39,
-    "provenanceComplete": 6,
+    "totalRecords": 143,
+    "recordsWithSources": 18,
+    "verifiedRecords": 48,
+    "provenanceComplete": 18,
     "staleVerifiedRecords": 0,
     "translationPlaceholderValues": 1411,
-    "danglingRelationships": 5,
-    "modelBenchmarkCoverage": 28.1,
+    "danglingRelationships": 0,
+    "modelBenchmarkCoverage": 22.4,
     "productsWithPricing": 48,
     "productRecords": 48,
     "errors": 0,
-    "warnings": 38,
-    "info": 128
+    "warnings": 30,
+    "info": 125
   },
   "byCategory": {
     "ides": {
@@ -33,19 +33,19 @@
     "clis": {
       "total": 20,
       "verified": 2,
-      "provenanceComplete": 0,
+      "provenanceComplete": 1,
       "stale": 0
     },
     "extensions": {
       "total": 15,
       "verified": 3,
-      "provenanceComplete": 0,
+      "provenanceComplete": 2,
       "stale": 0
     },
     "models": {
-      "total": 33,
-      "verified": 28,
-      "provenanceComplete": 3,
+      "total": 42,
+      "verified": 37,
+      "provenanceComplete": 12,
       "stale": 0
     },
     "providers": {
@@ -121,65 +121,9 @@
   "issues": [
     {
       "severity": "warning",
-      "code": "dangling-related-product",
-      "category": "extensions",
-      "id": "droid",
-      "message": "References missing clis/factory."
-    },
-    {
-      "severity": "warning",
-      "code": "dangling-related-product",
-      "category": "extensions",
-      "id": "qoder",
-      "message": "References missing ides/qoder-ide."
-    },
-    {
-      "severity": "warning",
-      "code": "dangling-related-product",
-      "category": "ides",
-      "id": "intellij-idea",
-      "message": "References missing clis/idea."
-    },
-    {
-      "severity": "warning",
-      "code": "dangling-related-product",
-      "category": "ides",
-      "id": "vscode",
-      "message": "References missing clis/code."
-    },
-    {
-      "severity": "warning",
-      "code": "dangling-related-product",
-      "category": "ides",
-      "id": "zed",
-      "message": "References missing clis/zed."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "clis",
-      "id": "claude-code-cli",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
       "code": "verified-without-provenance",
       "category": "clis",
       "id": "kilo-code-cli",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "extensions",
-      "id": "claude-code",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "extensions",
-      "id": "gemini-code-assist",
       "message": "Verified record is missing sources, review date, reviewer, or confidence."
     },
     {
@@ -410,13 +354,6 @@
       "severity": "info",
       "code": "missing-sources",
       "category": "clis",
-      "id": "claude-code-cli",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
       "id": "cline-cli",
       "message": "No structured source references are recorded."
     },
@@ -543,13 +480,6 @@
       "severity": "info",
       "code": "missing-sources",
       "category": "extensions",
-      "id": "claude-code",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "extensions",
       "id": "cline",
       "message": "No structured source references are recorded."
     },
@@ -572,13 +502,6 @@
       "code": "missing-sources",
       "category": "extensions",
       "id": "droid",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "extensions",
-      "id": "gemini-code-assist",
       "message": "No structured source references are recorded."
     },
     {

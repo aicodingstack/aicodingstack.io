@@ -39,10 +39,35 @@
     }
   },
   "verified": true,
+  "sources": [
+    {
+      "url": "https://code.claude.com/docs/en/ide-integrations",
+      "title": "Claude Code for VS Code",
+      "fields": ["description", "supportedIdes"]
+    },
+    {
+      "url": "https://code.claude.com/docs/en/jetbrains",
+      "title": "Claude Code for JetBrains IDEs",
+      "fields": ["supportedIdes"]
+    },
+    {
+      "url": "https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code",
+      "title": "Claude Code for VS Code marketplace listing",
+      "fields": ["name", "websiteUrl", "supportedIdes"]
+    },
+    {
+      "url": "https://claude.com/pricing",
+      "title": "Claude plans and pricing",
+      "fields": ["pricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-19",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
   "websiteUrl": "https://code.claude.com",
-  "docsUrl": "https://docs.claude.com",
+  "docsUrl": "https://code.claude.com/docs/en/ide-integrations",
   "vendor": "Anthropic",
-  "latestVersion": "2.0.42",
+  "latestVersion": "Latest",
   "githubUrl": "https://github.com/anthropics/claude-code",
   "license": "Proprietary",
   "pricing": [
@@ -93,7 +118,7 @@
     "download": null,
     "changelog": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
     "pricing": "https://claude.com/pricing",
-    "mcp": "https://docs.claude.com/en/docs/claude-code/mcp",
+    "mcp": "https://code.claude.com/docs/en/mcp",
     "issue": "https://github.com/anthropics/claude-code/issues"
   },
   "communityUrls": {

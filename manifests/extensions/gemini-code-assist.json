@@ -39,39 +39,71 @@
     }
   },
   "verified": true,
-  "websiteUrl": "https://codeassist.google/",
-  "docsUrl": "https://developers.google.com/code-assist",
-  "vendor": "Google",
-  "latestVersion": "1.0.0",
-  "githubUrl": null,
-  "license": "Freemium",
-  "pricing": [
+  "sources": [
     {
-      "name": "Individual",
-      "value": 0,
-      "currency": null,
-      "per": "month",
-      "category": "Individual"
+      "url": "https://docs.cloud.google.com/gemini/docs/codeassist/overview",
+      "title": "Gemini Code Assist Standard and Enterprise overview",
+      "fields": ["name", "description", "docsUrl", "supportedIdes"]
     },
     {
-      "name": "Teams",
+      "url": "https://docs.cloud.google.com/gemini/docs/codeassist/release-notes",
+      "title": "Gemini Code Assist release notes",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
+    },
+    {
+      "url": "https://cloud.google.com/products/gemini/pricing",
+      "title": "Gemini for Google Cloud pricing",
+      "fields": ["pricing"]
+    },
+    {
+      "url": "https://marketplace.visualstudio.com/items/Google.geminicodeassist/license",
+      "title": "Gemini Code Assist plugin license",
+      "fields": ["license"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-19",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
+  "websiteUrl": "https://codeassist.google/",
+  "docsUrl": "https://docs.cloud.google.com/gemini/docs/codeassist/overview",
+  "vendor": "Google",
+  "latestVersion": "VS Code 2.87.0 / JetBrains 1.54.1",
+  "githubUrl": null,
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Standard (Monthly Commitment)",
+      "value": 22.8,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Business"
+    },
+    {
+      "name": "Standard (12-Month Commitment)",
       "value": 19,
       "currency": "USD",
       "per": "user/month",
       "category": "Business"
     },
     {
-      "name": "Enterprise",
-      "value": null,
-      "currency": null,
-      "per": "custom",
+      "name": "Enterprise (Monthly Commitment)",
+      "value": 54,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Enterprise"
+    },
+    {
+      "name": "Enterprise (12-Month Commitment)",
+      "value": 45,
+      "currency": "USD",
+      "per": "user/month",
       "category": "Enterprise"
     }
   ],
   "resourceUrls": {
-    "download": "https://marketplace.visualstudio.com/items?itemName=google.gemini-code-assist",
-    "changelog": "https://developers.google.com/code-assist/changelog",
-    "pricing": "https://developers.google.com/code-assist/pricing",
+    "download": "https://marketplace.visualstudio.com/items?itemName=Google.geminicodeassist",
+    "changelog": "https://docs.cloud.google.com/gemini/docs/codeassist/release-notes",
+    "pricing": "https://cloud.google.com/products/gemini/pricing",
     "mcp": null,
     "issue": null
   },
@@ -88,8 +120,8 @@
   "supportedIdes": [
     {
       "ideId": "vscode",
-      "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=google.gemini-code-assist",
-      "installUri": "vscode:extension/google.gemini-code-assist"
+      "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=Google.geminicodeassist",
+      "installUri": "vscode:extension/Google.geminicodeassist"
     },
     {
       "ideId": "jetbrains",

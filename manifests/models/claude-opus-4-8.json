@@ -1,0 +1,97 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "claude-opus-4-8",
+  "name": "Claude Opus 4.8",
+  "description": "Anthropic's Opus model for complex agentic coding and enterprise work, with a 1M-token context window, adaptive thinking, and 128K output.",
+  "translations": {
+    "de": {
+      "description": "Anthropics Opus-Modell für komplexe agentische Programmierung und Unternehmensarbeit mit 1 Mio. Token Kontext, adaptivem Denken und 128K Ausgabe."
+    },
+    "es": {
+      "description": "El modelo Opus de Anthropic para programación agéntica compleja y trabajo empresarial, con contexto de 1 millón de tokens, pensamiento adaptativo y salida de 128K."
+    },
+    "fr": {
+      "description": "Le modèle Opus d’Anthropic pour le codage agentique complexe et le travail d’entreprise, avec 1 million de jetons de contexte, pensée adaptative et sortie de 128K."
+    },
+    "id": {
+      "description": "Model Opus dari Anthropic untuk pemrograman agentik kompleks dan pekerjaan perusahaan, dengan konteks 1 juta token, pemikiran adaptif, dan keluaran 128K."
+    },
+    "ja": {
+      "description": "100万トークンのコンテキスト、適応型思考、128K出力を備え、複雑なエージェント型コーディングと企業業務に対応するAnthropicのOpusモデル。"
+    },
+    "ko": {
+      "description": "100만 토큰 컨텍스트, 적응형 사고, 128K 출력을 갖춘 복잡한 에이전트 코딩 및 엔터프라이즈 업무용 Anthropic Opus 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo Opus da Anthropic para programação agêntica complexa e trabalho empresarial, com contexto de 1 milhão de tokens, pensamento adaptativo e saída de 128K."
+    },
+    "ru": {
+      "description": "Модель Anthropic Opus для сложного агентного программирования и корпоративных задач с контекстом 1 млн токенов, адаптивным мышлением и выводом 128K."
+    },
+    "tr": {
+      "description": "Anthropic’in 1 milyon token bağlam, uyarlanabilir düşünme ve 128K çıktı sunan karmaşık aracı kodlama ve kurumsal iş modeli Opus."
+    },
+    "zh-Hans": {
+      "description": "Anthropic 面向复杂智能体编码和企业工作的 Opus 模型，提供 100 万 token 上下文、自适应思考和 128K 输出。"
+    },
+    "zh-Hant": {
+      "description": "Anthropic 面向複雜智慧體編碼和企業工作的 Opus 模型，提供 100 萬 token 上下文、自適應思考和 128K 輸出。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "title": "Claude models overview",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "title": "Introducing Claude Opus 4.8",
+      "fields": ["name", "description", "releaseDate", "lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-20",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.anthropic.com",
+  "docsUrl": "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-8",
+  "vendor": "Anthropic",
+  "size": "Unknown",
+  "contextWindow": 1000000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "input": 5,
+    "output": 25,
+    "cache": 0.5
+  },
+  "releaseDate": "2026-05-28",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2026-01",
+  "inputModalities": ["text", "image", "pdf"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

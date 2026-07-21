@@ -70,12 +70,7 @@
     "reddit": "https://www.reddit.com/r/vscode",
     "blog": "https://code.visualstudio.com/blogs"
   },
-  "relatedProducts": [
-    {
-      "type": "cli",
-      "productId": "code"
-    }
-  ],
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",

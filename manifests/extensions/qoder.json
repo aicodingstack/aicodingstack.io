@@ -77,7 +77,7 @@
     },
     {
       "type": "ide",
-      "productId": "qoder-ide"
+      "productId": "qoder"
     }
   ],
   "supportedIdes": [

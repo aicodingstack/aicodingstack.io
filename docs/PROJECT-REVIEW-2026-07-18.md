@@ -184,3 +184,26 @@ evidence; completed items are reflected in the checklists and implementation log
 - Added Axe browser checks for the search dialog, language menu, model comparison tables, and
   expanded mobile navigation, fixing the accessible names, ARIA relationships, decorative content,
   and contrast issues those checks exposed.
+
+### 2026-07-19
+
+- Merged the six project-review delivery PRs into `main` in dependency order after revalidating each
+  layer's independent diff and completing the final combined CI run.
+- Corrected five dangling product relationships, distinguishing actual catalog products from local
+  IDE launch commands, and made future dangling relationships fail the data-health CI check.
+- Added official-source provenance for Claude Code CLI, Claude Code IDE integrations, and Gemini
+  Code Assist; refreshed current documentation, releases, licensing, and product editions where the
+  official sources showed that legacy values had changed.
+- Improved the health snapshot from 6 to 9 records with complete provenance, reduced warnings from
+  38 to 30, and eliminated all dangling relationships.
+
+### 2026-07-20
+
+- Prioritized catalog freshness ahead of further legacy provenance backfill so users can compare
+  the models that vendors currently recommend.
+- Added GPT-5.6 Sol, Terra, and Luna; Claude Fable 5, Opus 4.8, and Sonnet 5; and Gemini 3.5 Flash,
+  3.1 Pro Preview, and 3.1 Flash-Lite.
+- Recorded official specifications, current API pricing, lifecycle, release dates, capabilities,
+  and field-level provenance for all nine models, with descriptions across all supported locales.
+- Increased complete provenance coverage from 9 to 18 records while keeping data-health findings at
+  0 errors and 30 legacy warnings.
