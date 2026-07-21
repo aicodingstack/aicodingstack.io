@@ -160,7 +160,7 @@ export function GitHubStarHistory({ githubUrl }: GitHubStarHistoryProps) {
                   itemStyle={{
                     color: 'var(--color-text-secondary)',
                   }}
-                  formatter={(value: number | undefined) => [
+                  formatter={value => [
                     `${value?.toLocaleString() ?? '0'} ${tComponent('githubStarHistory.stars')}`,
                     tComponent('githubStarHistory.stars'),
                   ]}
