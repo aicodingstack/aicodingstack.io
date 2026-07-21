@@ -3022,7 +3022,7 @@ export const stackCounts: Record<string, number> = {
   ides: 13,
   clis: 20,
   extensions: 15,
-  models: 33,
+  models: 42,
   'model-providers': 13,
   vendors: 40,
 }

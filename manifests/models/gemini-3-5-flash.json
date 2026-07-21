@@ -1,0 +1,101 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gemini-3-5-flash",
+  "name": "Gemini 3.5 Flash",
+  "description": "Google's stable frontier model for fast agentic and coding workflows, optimized for sub-agents, multi-step execution, and long-horizon tasks at scale.",
+  "translations": {
+    "de": {
+      "description": "Googles stabiles Frontier-Modell für schnelle agentische und Programmierabläufe, optimiert für Unteragenten, mehrstufige Ausführung und langfristige Aufgaben im großen Maßstab."
+    },
+    "es": {
+      "description": "El modelo de frontera estable de Google para flujos agénticos y de programación rápidos, optimizado para subagentes, ejecución multietapa y tareas de largo alcance a escala."
+    },
+    "fr": {
+      "description": "Le modèle frontière stable de Google pour les flux agentiques et de codage rapides, optimisé pour les sous-agents, l’exécution en plusieurs étapes et les tâches longues à grande échelle."
+    },
+    "id": {
+      "description": "Model frontier stabil Google untuk alur kerja agentik dan pemrograman cepat, dioptimalkan bagi subagen, eksekusi bertahap, dan tugas jangka panjang dalam skala besar."
+    },
+    "ja": {
+      "description": "高速なエージェント型・コーディングワークフロー向けのGoogleの安定版フロンティアモデル。サブエージェント、多段階実行、大規模な長期タスクに最適化。"
+    },
+    "ko": {
+      "description": "빠른 에이전트 및 코딩 워크플로를 위한 Google의 안정형 프런티어 모델로, 하위 에이전트, 다단계 실행, 대규모 장기 작업에 최적화되었습니다."
+    },
+    "pt": {
+      "description": "O modelo de fronteira estável do Google para fluxos agênticos e de programação rápidos, otimizado para subagentes, execução em várias etapas e tarefas longas em escala."
+    },
+    "ru": {
+      "description": "Стабильная передовая модель Google для быстрых агентных и программных процессов, оптимизированная для субагентов, многоэтапного выполнения и длительных масштабных задач."
+    },
+    "tr": {
+      "description": "Google’ın hızlı aracı ve kodlama iş akışları için alt aracılara, çok adımlı yürütmeye ve geniş ölçekte uzun vadeli görevlere optimize edilmiş kararlı öncü modeli."
+    },
+    "zh-Hans": {
+      "description": "Google 面向快速智能体与编码工作流的稳定前沿模型，针对子智能体、多步骤执行和大规模长周期任务进行了优化。"
+    },
+    "zh-Hant": {
+      "description": "Google 面向快速智慧體與編碼工作流的穩定前沿模型，針對子智慧體、多步驟執行和大規模長週期任務進行了最佳化。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash",
+      "title": "Gemini 3.5 Flash model documentation",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "title": "Gemini Developer API pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "title": "Gemini API release notes",
+      "fields": ["name", "description", "releaseDate", "lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-20",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://deepmind.google",
+  "docsUrl": "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash",
+  "vendor": "Google",
+  "size": "Unknown",
+  "contextWindow": 1048576,
+  "maxOutput": 65536,
+  "tokenPricing": {
+    "input": 0.75,
+    "output": 4.5,
+    "cache": 0.08
+  },
+  "releaseDate": "2026-05-19",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2025-01",
+  "inputModalities": ["text", "image", "pdf", "audio", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": 0.762,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

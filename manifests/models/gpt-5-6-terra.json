@@ -1,0 +1,97 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gpt-5-6-terra",
+  "name": "GPT-5.6 Terra",
+  "description": "OpenAI's balanced GPT-5.6 model for everyday professional work, combining high intelligence with lower cost than the flagship Sol tier.",
+  "translations": {
+    "de": {
+      "description": "OpenAIs ausgewogenes GPT-5.6-Modell für die tägliche professionelle Arbeit, das hohe Intelligenz mit geringeren Kosten als die Sol-Flaggschiffstufe verbindet."
+    },
+    "es": {
+      "description": "El modelo equilibrado GPT-5.6 de OpenAI para el trabajo profesional diario, que combina gran inteligencia con un coste menor que el nivel insignia Sol."
+    },
+    "fr": {
+      "description": "Le modèle GPT-5.6 équilibré d’OpenAI pour le travail professionnel quotidien, alliant une grande intelligence à un coût inférieur au niveau phare Sol."
+    },
+    "id": {
+      "description": "Model GPT-5.6 seimbang dari OpenAI untuk pekerjaan profesional sehari-hari, memadukan kecerdasan tinggi dengan biaya lebih rendah daripada tingkat unggulan Sol."
+    },
+    "ja": {
+      "description": "日常の専門業務向けに高い知能とSolフラッグシップ層より低いコストを両立した、OpenAIのバランス型GPT-5.6モデル。"
+    },
+    "ko": {
+      "description": "높은 지능과 플래그십 Sol 등급보다 낮은 비용을 결합한, 일상적인 전문 업무용 OpenAI GPT-5.6 균형형 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo equilibrado GPT-5.6 da OpenAI para o trabalho profissional diário, combinando alta inteligência com custo inferior ao nível principal Sol."
+    },
+    "ru": {
+      "description": "Сбалансированная модель OpenAI GPT-5.6 для повседневной профессиональной работы, сочетающая высокий интеллект с меньшей стоимостью, чем флагманский уровень Sol."
+    },
+    "tr": {
+      "description": "OpenAI’ın günlük profesyonel işler için yüksek zekâyı amiral gemisi Sol katmanından daha düşük maliyetle birleştiren dengeli GPT-5.6 modeli."
+    },
+    "zh-Hans": {
+      "description": "OpenAI 面向日常专业工作的均衡型 GPT-5.6 模型，在高智能与低于旗舰 Sol 档的成本之间取得平衡。"
+    },
+    "zh-Hant": {
+      "description": "OpenAI 面向日常專業工作的均衡型 GPT-5.6 模型，在高智慧與低於旗艦 Sol 檔的成本之間取得平衡。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+      "title": "GPT-5.6 Terra model documentation",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/gpt-5-6/",
+      "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+      "fields": ["name", "description", "releaseDate", "lifecycle", "tokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-20",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://openai.com",
+  "docsUrl": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+  "vendor": "OpenAI",
+  "size": "Unknown",
+  "contextWindow": 1050000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "input": 2.5,
+    "output": 15,
+    "cache": 0.25
+  },
+  "releaseDate": "2026-07-09",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2026-02-16",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}
