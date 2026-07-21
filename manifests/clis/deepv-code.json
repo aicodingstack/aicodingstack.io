@@ -39,8 +39,8 @@
     }
   },
   "verified": false,
-  "websiteUrl": "https://dvcode.deepvlab.ai/",
-  "docsUrl": "https://deepvcode.com/guides/",
+  "websiteUrl": "https://dvcode.deepvlab.ai",
+  "docsUrl": "https://deepvcode.com/guides",
   "vendor": "OrionStar",
   "latestVersion": "0.1.0",
   "githubUrl": "https://github.com/OrionStarAI/DeepVCode",

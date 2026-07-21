@@ -1078,7 +1078,7 @@
               }
             },
             "name": "Building with Claude Code",
-            "url": "https://www.anthropic.com/news/claude-code",
+            "url": "https://www.anthropic.com/news/claude-3-7-sonnet",
             "description": "Introduction to Claude Code and its capabilities"
           },
           {
@@ -1233,61 +1233,6 @@
             "name": "AI-Native Development",
             "url": "https://lovable.dev/blog",
             "description": "Building applications designed for AI-first workflows"
-          },
-          {
-            "translations": {
-              "en": {
-                "name": "The Coding Copilot Pattern",
-                "description": "Common patterns for effective AI pair programming"
-              },
-              "de": {
-                "name": "Das Coding-Copilot-Muster",
-                "description": "Gemeinsame Muster für effektives KI-Pair-Programming"
-              },
-              "es": {
-                "name": "El Patrón de Copiloto de Codificación",
-                "description": "Patrones comunes para programación en pareja IA efectiva"
-              },
-              "fr": {
-                "name": "Le Pattern Copilote de Codage",
-                "description": "Motifs courants pour la programmation en paire IA efficace"
-              },
-              "id": {
-                "name": "Pola Coding Copilot",
-                "description": "Pola umum untuk pair programming AI yang efektif"
-              },
-              "ja": {
-                "name": "コーディングコパイロットパターン",
-                "description": "効果的なAIペアプログラミングのための一般的なパターン"
-              },
-              "ko": {
-                "name": "코딩 코파일럿 패턴",
-                "description": "효과적인 AI 페어 프로그래밍을 위한 일반적인 패턴"
-              },
-              "pt": {
-                "name": "O Padrão Copiloto de Codificação",
-                "description": "Padrões comuns para programação em par AI eficaz"
-              },
-              "ru": {
-                "name": "Паттерн coding-копилота",
-                "description": "Общие паттерны для эффективной pair-программирования с ИИ"
-              },
-              "tr": {
-                "name": "Kodlama Copilot Pattern",
-                "description": "Etkili AI pair programming için yaygın patternlar"
-              },
-              "zh-Hans": {
-                "name": "编码副驾驶模式",
-                "description": "有效 AI 结对编程的常见模式"
-              },
-              "zh-Hant": {
-                "name": "編碼副駕駛員模式",
-                "description": "有效 AI 結對編程的常見模式"
-              }
-            },
-            "name": "The Coding Copilot Pattern",
-            "url": "https://lovable.dev/patterns",
-            "description": "Common patterns for effective AI pair programming"
           }
         ]
       }

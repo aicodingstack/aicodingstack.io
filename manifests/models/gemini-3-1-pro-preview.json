@@ -59,7 +59,7 @@
       "fields": ["tokenPricing"]
     },
     {
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro",
       "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
       "fields": ["name", "description", "releaseDate", "lifecycle"]
     }

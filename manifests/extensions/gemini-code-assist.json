@@ -64,7 +64,7 @@
   "lastVerifiedAt": "2026-07-19",
   "verifiedBy": "codex-agent",
   "confidence": "medium",
-  "websiteUrl": "https://codeassist.google/",
+  "websiteUrl": "https://codeassist.google",
   "docsUrl": "https://docs.cloud.google.com/gemini/docs/codeassist/overview",
   "vendor": "Google",
   "latestVersion": "VS Code 2.87.0 / JetBrains 1.54.1",
@@ -114,7 +114,7 @@
     "youtube": "https://www.youtube.com/@GoogleDevelopers",
     "discord": null,
     "reddit": null,
-    "blog": "https://developers.google.com/code-assist/blog"
+    "blog": null
   },
   "relatedProducts": [],
   "supportedIdes": [

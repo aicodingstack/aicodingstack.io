@@ -39,8 +39,8 @@
     }
   },
   "verified": false,
-  "websiteUrl": "https://air.dev/",
-  "docsUrl": "https://www.jetbrains.com/help/air/",
+  "websiteUrl": "https://air.dev",
+  "docsUrl": "https://www.jetbrains.com/help/air",
   "vendor": "JetBrains",
   "latestVersion": "Preview",
   "githubUrl": null,
@@ -55,7 +55,7 @@
     }
   ],
   "resourceUrls": {
-    "download": "https://air.dev/",
+    "download": "https://air.dev",
     "changelog": null,
     "pricing": null,
     "mcp": null,
