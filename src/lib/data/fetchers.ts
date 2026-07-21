@@ -2,6 +2,7 @@ import { cache } from 'react'
 import type { Locale } from '@/i18n/config'
 import {
   clisData,
+  desktopsData,
   extensionsData,
   idesData,
   modelsData,
@@ -13,6 +14,7 @@ import { getDocBySlug } from '@/lib/generated/docs'
 import { localizeManifestItem } from '@/lib/manifest-i18n'
 import type {
   ManifestCLI,
+  ManifestDesktop,
   ManifestExtension,
   ManifestIDE,
   ManifestModel,
@@ -47,6 +49,17 @@ export const getCLI = cache(async (slug: string, locale: Locale) => {
     cliRaw as unknown as Record<string, unknown>,
     locale
   ) as unknown as ManifestCLI
+})
+
+/** Cached fetcher for standalone desktop coding-agent data. */
+export const getDesktop = cache(async (slug: string, locale: Locale) => {
+  const desktopRaw = desktopsData.find(desktop => desktop.id === slug)
+  if (!desktopRaw) return null
+
+  return localizeManifestItem(
+    desktopRaw as unknown as Record<string, unknown>,
+    locale
+  ) as unknown as ManifestDesktop
 })
 
 /**
@@ -102,7 +115,7 @@ export const getModelProvider = cache(async (slug: string, locale: Locale) => {
 
 /**
  * Cached fetcher for related products
- * Fetches multiple related products (IDE/CLI/Extension) from relatedProducts array
+ * Fetches multiple related products from the relatedProducts array
  * Uses React cache() to prevent duplicate fetching
  */
 export const getRelatedProducts = cache(
@@ -111,8 +124,8 @@ export const getRelatedProducts = cache(
     locale: Locale
   ): Promise<
     Array<{
-      type: 'ide' | 'cli' | 'extension'
-      data: ManifestIDE | ManifestCLI | ManifestExtension | null
+      type: 'ide' | 'cli' | 'extension' | 'desktop'
+      data: ManifestIDE | ManifestCLI | ManifestExtension | ManifestDesktop | null
     }>
   > => {
     if (!relatedProducts || relatedProducts.length === 0) {
@@ -126,6 +139,7 @@ export const getRelatedProducts = cache(
           if (rel.type === 'ide') data = await getIDE(rel.productId, locale)
           else if (rel.type === 'cli') data = await getCLI(rel.productId, locale)
           else if (rel.type === 'extension') data = await getExtension(rel.productId, locale)
+          else if (rel.type === 'desktop') data = await getDesktop(rel.productId, locale)
 
           return { type: rel.type, data }
         } catch {

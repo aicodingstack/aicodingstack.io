@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next'
 import { locales } from '@/i18n/config'
 import {
   clisData,
+  desktopsData,
   extensionsData,
   idesData,
   modelsData,
@@ -50,6 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/', priority: 1, changeFreq: 'weekly' as const },
     { path: '/ides', priority: 0.8, changeFreq: 'daily' as const },
     { path: '/clis', priority: 0.8, changeFreq: 'daily' as const },
+    { path: '/desktops', priority: 0.8, changeFreq: 'daily' as const },
     { path: '/extensions', priority: 0.8, changeFreq: 'daily' as const },
     { path: '/models', priority: 0.8, changeFreq: 'daily' as const },
     { path: '/model-providers', priority: 0.8, changeFreq: 'daily' as const },
@@ -115,6 +117,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       })
     )
 
+  const desktopDetailPages: MetadataRoute.Sitemap = (desktopsData as unknown as ManifestItem[])
+    .filter(desktop => desktop.id)
+    .flatMap(desktop =>
+      generateLocalizedPages(baseUrl, `/desktops/${desktop.id}`, {
+        lastModified: buildDate,
+        changeFrequency: 'weekly' as const,
+        priority: 0.6,
+      })
+    )
+
   // Model detail pages - generate for all locales (更频繁更新)
   const modelDetailPages: MetadataRoute.Sitemap = (modelsData as unknown as ManifestItem[])
     .filter(model => model.id)
@@ -163,6 +175,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...docPages,
     ...ideDetailPages,
     ...cliDetailPages,
+    ...desktopDetailPages,
     ...modelDetailPages,
     ...providerDetailPages,
     ...extensionDetailPages,

@@ -21,13 +21,22 @@ const MANIFESTS_DIR = path.join(__dirname, '../../manifests')
 const OUTPUT_DIR = path.join(__dirname, '../../src/lib/generated')
 
 // Manifest types to process
-const MANIFEST_TYPES = ['ides', 'clis', 'models', 'providers', 'extensions', 'vendors'] as const
+const MANIFEST_TYPES = [
+  'ides',
+  'clis',
+  'desktops',
+  'models',
+  'providers',
+  'extensions',
+  'vendors',
+] as const
 
 type ManifestType = (typeof MANIFEST_TYPES)[number]
 
 interface ImportData {
   varName: string
   statement: string
+  sortKey: string
 }
 
 /**
@@ -80,11 +89,11 @@ function generateIndexFile(typeName: ManifestType): void {
     const id = file.replace('.json', '')
     const varName = toPascalCase(id)
     const relativePath = `../../../manifests/${typeName}/${file}`
-    return { varName, statement: `import ${varName} from '${relativePath}'` }
+    return { varName, statement: `import ${varName} from '${relativePath}'`, sortKey: relativePath }
   })
 
   // Sort imports alphabetically by variable name
-  importData.sort((a, b) => a.varName.localeCompare(b.varName))
+  importData.sort((a, b) => a.sortKey.localeCompare(b.sortKey, 'en', { numeric: true }))
   const imports = importData.map(item => item.statement).join('\n')
 
   // Generate array export using sorted variable names
@@ -105,6 +114,7 @@ function generateIndexFile(typeName: ManifestType): void {
   const typeImportMap: Record<ManifestType, string> = {
     ides: 'ManifestIDE',
     clis: 'ManifestCLI',
+    desktops: 'ManifestDesktop',
     models: 'ManifestModel',
     providers: 'ManifestProvider',
     extensions: 'ManifestExtension',
@@ -157,7 +167,7 @@ function generateMainIndex(): void {
     .sort((a, b) => {
       const typeA = a.type.match(/\{ (\w+) \}/)?.[1] || ''
       const typeB = b.type.match(/\{ (\w+) \}/)?.[1] || ''
-      return typeA.localeCompare(typeB)
+      return typeA.localeCompare(typeB, 'en', { numeric: true })
     })
     .flatMap(item => [item.type, item.data])
     .join('\n')
@@ -203,7 +213,7 @@ export const githubStarsData = githubStarsJson as GithubStarsData
 
 /**
  * Get GitHub stars for a specific product
- * @param category - The product category (extensions, clis, ides)
+ * @param category - The product category (extensions, clis, desktops, ides)
  * @param id - The product ID
  * @returns The number of stars (in thousands) or null if not available
  */
@@ -255,14 +265,14 @@ function main(): void {
   console.log('✅ All index files generated successfully!')
   console.log('='.repeat(60))
 
-  // Run biome formatting on generated files
-  console.log(`\n🎨 Formatting generated files with Biome...`)
+  // Format generated files and organize imports with the repository's Biome rules.
+  console.log(`\n🎨 Checking generated files with Biome...`)
   try {
-    execSync(`npx biome format --write ${OUTPUT_DIR}`, {
+    execSync(`npx biome check --write ${OUTPUT_DIR}`, {
       cwd: path.join(__dirname, '../..'),
       stdio: 'inherit',
     })
-    console.log(`✅ Formatting complete`)
+    console.log(`✅ Formatting and import organization complete`)
   } catch (error) {
     console.error(`⚠️  Biome formatting failed:`, (error as Error).message)
   }

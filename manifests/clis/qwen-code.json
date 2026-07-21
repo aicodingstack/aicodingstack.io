@@ -1,0 +1,108 @@
+{
+  "$schema": "../$schemas/cli.schema.json",
+  "translations": {
+    "de": {
+      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+    },
+    "es": {
+      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+    },
+    "fr": {
+      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+    },
+    "id": {
+      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+    },
+    "ja": {
+      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+    },
+    "ko": {
+      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+    },
+    "pt": {
+      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+    },
+    "ru": {
+      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+    },
+    "tr": {
+      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+    },
+    "zh-Hans": {
+      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+    },
+    "zh-Hant": {
+      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://github.com/QwenLM/qwen-code",
+      "title": "Qwen Code repository"
+    },
+    {
+      "url": "https://qwenlm.github.io/qwen-code-docs/",
+      "title": "Qwen Code documentation"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "id": "qwen-code",
+  "name": "Qwen Code",
+  "familyId": "qwen-code",
+  "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models.",
+  "websiteUrl": "https://qwenlm.github.io/qwen-code-docs",
+  "docsUrl": "https://qwenlm.github.io/qwen-code-docs",
+  "vendor": "Alibaba",
+  "latestVersion": "0.18.0",
+  "githubUrl": "https://github.com/QwenLM/qwen-code",
+  "license": "Apache-2.0",
+  "pricing": [
+    {
+      "name": "Open Source",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://qwenlm.github.io/qwen-code-docs/en/users/quickstart/installation",
+    "changelog": "https://github.com/QwenLM/qwen-code/releases",
+    "pricing": null,
+    "mcp": null,
+    "issue": "https://github.com/QwenLM/qwen-code/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/Alibaba_Qwen",
+    "github": "https://github.com/QwenLM/qwen-code",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": null,
+      "installCommand": "npm install -g @qwen-code/qwen-code@latest",
+      "launchCommand": "qwen"
+    },
+    {
+      "os": "Windows",
+      "installPath": null,
+      "installCommand": "npm install -g @qwen-code/qwen-code@latest",
+      "launchCommand": "qwen"
+    },
+    {
+      "os": "Linux",
+      "installPath": null,
+      "installCommand": "npm install -g @qwen-code/qwen-code@latest",
+      "launchCommand": "qwen"
+    }
+  ]
+}

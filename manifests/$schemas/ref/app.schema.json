@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "app.schema.json",
   "title": "Base App Schema",
-  "description": "Common fields for application products (CLI, IDE)",
+  "description": "Common fields for application products (CLI, IDE, desktop)",
   "type": "object",
   "allOf": [
     {

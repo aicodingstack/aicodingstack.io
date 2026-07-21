@@ -1,0 +1,125 @@
+{
+  "$schema": "../$schemas/desktop.schema.json",
+  "translations": {
+    "de": {
+      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+    },
+    "es": {
+      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+    },
+    "fr": {
+      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+    },
+    "id": {
+      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+    },
+    "ja": {
+      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+    },
+    "ko": {
+      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+    },
+    "pt": {
+      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+    },
+    "ru": {
+      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+    },
+    "tr": {
+      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+    },
+    "zh-Hans": {
+      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+    },
+    "zh-Hant": {
+      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://factory.ai/product/desktop",
+      "title": "Factory Desktop"
+    },
+    {
+      "url": "https://docs.factory.ai/welcome/index",
+      "title": "Factory documentation"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "id": "factory-desktop",
+  "name": "Factory Desktop",
+  "familyId": "droid",
+  "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions.",
+  "websiteUrl": "https://factory.ai/product/desktop",
+  "docsUrl": "https://docs.factory.ai/welcome/index",
+  "vendor": "Factory AI",
+  "latestVersion": "Latest",
+  "githubUrl": null,
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Pro",
+      "value": 20,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Max",
+      "value": 200,
+      "currency": "USD",
+      "per": "month",
+      "category": "Business"
+    },
+    {
+      "name": "Enterprise",
+      "value": null,
+      "currency": null,
+      "per": "custom",
+      "category": "Enterprise"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://factory.ai/product/desktop",
+    "changelog": null,
+    "pricing": "https://docs.factory.ai/pricing",
+    "mcp": null,
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/FactoryAI",
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": "https://factory.ai/news"
+  },
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "droid-cli"
+    },
+    {
+      "type": "extension",
+      "productId": "droid"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": "/Applications/Factory.app",
+      "installCommand": null,
+      "launchCommand": null
+    },
+    {
+      "os": "Windows",
+      "installPath": "%LOCALAPPDATA%\\Programs\\Factory",
+      "installCommand": null,
+      "launchCommand": null
+    }
+  ]
+}

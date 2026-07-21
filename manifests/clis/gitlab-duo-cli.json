@@ -1,0 +1,108 @@
+{
+  "$schema": "../$schemas/cli.schema.json",
+  "translations": {
+    "de": {
+      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+    },
+    "es": {
+      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+    },
+    "fr": {
+      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+    },
+    "id": {
+      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+    },
+    "ja": {
+      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+    },
+    "ko": {
+      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+    },
+    "pt": {
+      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+    },
+    "ru": {
+      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+    },
+    "tr": {
+      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+    },
+    "zh-Hans": {
+      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+    },
+    "zh-Hant": {
+      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://about.gitlab.com/blog/gitlab-duo-cli-generally-available/",
+      "title": "GitLab Duo CLI general availability"
+    },
+    {
+      "url": "https://about.gitlab.com/blog/gitlab-duo-cli/",
+      "title": "GitLab Duo CLI beta"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "id": "gitlab-duo-cli",
+  "name": "GitLab Duo CLI",
+  "familyId": "gitlab-duo",
+  "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows.",
+  "websiteUrl": "https://about.gitlab.com/gitlab-duo",
+  "docsUrl": "https://docs.gitlab.com/editor_extensions/gitlab_cli",
+  "vendor": "GitLab",
+  "latestVersion": "Latest",
+  "githubUrl": null,
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "GitLab Duo",
+      "value": null,
+      "currency": null,
+      "per": "subscription",
+      "category": "Business"
+    }
+  ],
+  "resourceUrls": {
+    "download": null,
+    "changelog": "https://about.gitlab.com/blog/gitlab-duo-cli-generally-available/",
+    "pricing": "https://about.gitlab.com/pricing",
+    "mcp": null,
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/gitlab",
+    "github": "https://github.com/gitlabhq",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": "https://about.gitlab.com/blog"
+  },
+  "relatedProducts": [],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": null,
+      "installCommand": null,
+      "launchCommand": "glab duo"
+    },
+    {
+      "os": "Windows",
+      "installPath": null,
+      "installCommand": null,
+      "launchCommand": "glab duo"
+    },
+    {
+      "os": "Linux",
+      "installPath": null,
+      "installCommand": null,
+      "launchCommand": "glab duo"
+    }
+  ]
+}

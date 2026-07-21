@@ -1,0 +1,121 @@
+{
+  "$schema": "../$schemas/extension.schema.json",
+  "id": "rovo-dev",
+  "name": "Rovo Dev for VS Code",
+  "familyId": "rovo-dev",
+  "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context.",
+  "translations": {
+    "de": {
+      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+    },
+    "es": {
+      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+    },
+    "fr": {
+      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+    },
+    "id": {
+      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+    },
+    "ja": {
+      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+    },
+    "ko": {
+      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+    },
+    "pt": {
+      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+    },
+    "ru": {
+      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+    },
+    "tr": {
+      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+    },
+    "zh-Hans": {
+      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+    },
+    "zh-Hant": {
+      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://www.atlassian.com/blog/announcements/rovo-dev-now-generally-available-in-vs-code",
+      "title": "Rovo Dev is generally available in VS Code"
+    },
+    {
+      "url": "https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode",
+      "title": "Atlassian VS Code extension"
+    },
+    {
+      "url": "https://www.atlassian.com/software/rovo-dev/pricing",
+      "title": "Rovo Dev pricing"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode",
+  "docsUrl": "https://support.atlassian.com/rovo/docs/work-with-rovo-dev-agents/",
+  "vendor": "Atlassian",
+  "latestVersion": "Latest",
+  "githubUrl": null,
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Rovo Dev Free",
+      "value": 0,
+      "currency": null,
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Rovo Dev Standard",
+      "value": 20,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Business"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode",
+    "changelog": "https://marketplace.visualstudio.com/items/Atlassian.atlascode/changelog",
+    "pricing": "https://www.atlassian.com/software/rovo-dev/pricing",
+    "mcp": null,
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/atlassian",
+    "twitter": "https://x.com/Atlassian",
+    "github": null,
+    "youtube": "https://www.youtube.com/@Atlassian",
+    "discord": null,
+    "reddit": "https://www.reddit.com/r/atlassian",
+    "blog": "https://www.atlassian.com/blog"
+  },
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "rovo-dev-cli"
+    }
+  ],
+  "supportedIdes": [
+    {
+      "ideId": "vscode",
+      "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode",
+      "installUri": "vscode:extension/Atlassian.atlascode"
+    },
+    {
+      "ideId": "cursor",
+      "marketplaceUrl": null,
+      "installUri": "cursor:extension/Atlassian.atlascode"
+    },
+    {
+      "ideId": "windsurf",
+      "marketplaceUrl": null,
+      "installUri": "windsurf:extension/Atlassian.atlascode"
+    }
+  ]
+}

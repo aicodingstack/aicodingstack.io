@@ -12,6 +12,7 @@ const ALL_REVALIDATION_PATHS = [
   // Product categories
   'ides',
   'clis',
+  'desktops',
   'extensions',
   'models',
   'model-providers',
@@ -33,11 +34,12 @@ const ALL_REVALIDATION_PATHS = [
 const CATEGORY_PATHS: Record<string, string[]> = {
   ides: ['ides'],
   clis: ['clis'],
+  desktops: ['desktops'],
   extensions: ['extensions'],
   models: ['models'],
   providers: ['model-providers'],
   vendors: ['vendors'],
-  tools: ['ides', 'clis', 'extensions'],
+  tools: ['ides', 'clis', 'desktops', 'extensions'],
   content: ['articles', 'ai-coding-stack', 'docs'],
 }
 

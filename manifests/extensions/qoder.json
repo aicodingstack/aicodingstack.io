@@ -2,6 +2,7 @@
   "$schema": "../$schemas/extension.schema.json",
   "id": "qoder",
   "name": "Qoder",
+  "familyId": "qoder",
   "description": "An agentic coding platform that brings autonomous AI agents to your IDE. Features code completion, Ask mode for debugging, and Agent mode for complex multi-step development tasks.",
   "translations": {
     "zh-Hans": {
@@ -76,7 +77,7 @@
       "productId": "qoder-cli"
     },
     {
-      "type": "ide",
+      "type": "desktop",
       "productId": "qoder"
     }
   ],

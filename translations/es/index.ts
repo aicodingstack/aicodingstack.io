@@ -15,6 +15,7 @@ import articles from './pages/articles.json'
 import clis from './pages/clis.json'
 import comparison from './pages/comparison.json'
 import curatedCollections from './pages/curated-collections.json'
+import desktops from './pages/desktops.json'
 import docs from './pages/docs.json'
 import extensions from './pages/extensions.json'
 // Page translations
@@ -47,6 +48,7 @@ export default {
     articles,
     ides,
     clis,
+    desktops,
     extensions,
     models,
     modelDetail,

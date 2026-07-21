@@ -9,4 +9,5 @@ export const routing = defineRouting({
   locales,
   defaultLocale,
   localePrefix: 'as-needed',
+  localeDetection: true,
 })

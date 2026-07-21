@@ -1,0 +1,113 @@
+{
+  "$schema": "../$schemas/cli.schema.json",
+  "translations": {
+    "de": {
+      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+    },
+    "es": {
+      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+    },
+    "fr": {
+      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+    },
+    "id": {
+      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+    },
+    "ja": {
+      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+    },
+    "ko": {
+      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+    },
+    "pt": {
+      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+    },
+    "ru": {
+      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+    },
+    "tr": {
+      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+    },
+    "zh-Hans": {
+      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+    },
+    "zh-Hant": {
+      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://blog.jetbrains.com/junie/2026/03/junie-cli-the-llm-agnostic-coding-agent-is-now-in-beta/",
+      "title": "Junie CLI beta"
+    },
+    {
+      "url": "https://www.jetbrains.com/junie/",
+      "title": "Junie product site"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "id": "junie-cli",
+  "name": "Junie CLI",
+  "familyId": "junie",
+  "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations.",
+  "websiteUrl": "https://www.jetbrains.com/junie",
+  "docsUrl": "https://www.jetbrains.com/help/junie/junie-cli.html",
+  "vendor": "JetBrains",
+  "latestVersion": "Beta",
+  "githubUrl": null,
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Beta",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": null,
+    "changelog": "https://blog.jetbrains.com/junie/2026/03/junie-cli-the-llm-agnostic-coding-agent-is-now-in-beta/",
+    "pricing": null,
+    "mcp": null,
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/jetbrains",
+    "github": null,
+    "youtube": "https://www.youtube.com/@JetBrainsTV",
+    "discord": null,
+    "reddit": null,
+    "blog": "https://blog.jetbrains.com/junie"
+  },
+  "relatedProducts": [
+    {
+      "type": "extension",
+      "productId": "jetbrains-junie"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": null,
+      "installCommand": null,
+      "launchCommand": "junie"
+    },
+    {
+      "os": "Windows",
+      "installPath": null,
+      "installCommand": null,
+      "launchCommand": "junie"
+    },
+    {
+      "os": "Linux",
+      "installPath": null,
+      "installCommand": null,
+      "launchCommand": "junie"
+    }
+  ]
+}

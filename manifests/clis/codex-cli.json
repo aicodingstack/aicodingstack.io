@@ -2,6 +2,7 @@
   "$schema": "../$schemas/cli.schema.json",
   "id": "codex-cli",
   "name": "Codex CLI",
+  "familyId": "codex",
   "description": "OpenAI's Codex CLI is a local coding agent that reads, modifies, and runs code through natural language commands. Enables building, debugging, and automating coding tasks.",
   "translations": {
     "zh-Hans": {
@@ -91,7 +92,10 @@
     "reddit": null,
     "blog": "https://openai.com/news"
   },
-  "relatedProducts": [],
+  "relatedProducts": [
+    { "type": "desktop", "productId": "codex-app" },
+    { "type": "extension", "productId": "codex" }
+  ],
   "platforms": [
     {
       "os": "macOS",

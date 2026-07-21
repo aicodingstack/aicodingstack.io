@@ -46,14 +46,16 @@ function getGithubStarIds(githubStars: unknown, category: string): string[] {
  */
 function validateGithubStarsConsistency(rootDir: string): string[] {
   const failures: string[] = []
-  const categories = ['extensions', 'clis', 'ides'] as const
+  const categories = ['extensions', 'clis', 'desktops', 'ides'] as const
 
   const githubStarsPath = path.join(rootDir, 'data', 'github-stars.json')
   const githubStars = readJsonFile(githubStarsPath)
+  const githubStarsRecord = githubStars as Record<string, Record<string, number | null>>
 
   for (const category of categories) {
     const manifestIds = getManifestIds(rootDir, category)
     const githubStarIds = getGithubStarIds(githubStars, category)
+    const categoryStars = githubStarsRecord[category] ?? {}
 
     const orphaned = githubStarIds.filter(id => !manifestIds.includes(id))
     const missing = manifestIds.filter(id => !githubStarIds.includes(id))
@@ -67,6 +69,18 @@ function validateGithubStarsConsistency(rootDir: string): string[] {
       failures.push(
         `[${category}] manifest files missing in data/github-stars.json:\n${missing.map(i => `- ${i}`).join('\n')}`
       )
+    }
+
+    for (const id of manifestIds) {
+      if (!(id in categoryStars)) continue
+
+      const manifestPath = path.join(rootDir, 'manifests', category, `${id}.json`)
+      const manifest = readJsonFile(manifestPath) as Record<string, unknown>
+      if (manifest.githubUrl === null && categoryStars[id] !== null) {
+        failures.push(
+          `[${category}] ${id} has githubUrl: null but a non-null star count in data/github-stars.json`
+        )
+      }
     }
   }
 

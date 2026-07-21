@@ -2,6 +2,7 @@
   "$schema": "../$schemas/cli.schema.json",
   "id": "opencode",
   "name": "OpenCode",
+  "familyId": "opencode",
   "description": "OpenCode is an open source AI coding agent built for the terminal. Features native TUI, LSP support, multi-session capability, and works with 75+ LLM providers including local models.",
   "translations": {
     "zh-Hans": {
@@ -41,9 +42,9 @@
   "verified": false,
   "websiteUrl": "https://opencode.ai",
   "docsUrl": "https://opencode.ai",
-  "vendor": "SST",
+  "vendor": "Anomaly",
   "latestVersion": "0.15.16",
-  "githubUrl": "https://github.com/sst/opencode",
+  "githubUrl": "https://github.com/anomalyco/opencode",
   "license": "MIT",
   "pricing": [
     {
@@ -63,21 +64,24 @@
   ],
   "resourceUrls": {
     "download": "https://opencode.ai",
-    "changelog": "https://github.com/sst/opencode/releases",
+    "changelog": "https://github.com/anomalyco/opencode/releases",
     "pricing": "https://opencode.ai",
     "mcp": null,
-    "issue": "https://github.com/sst/opencode/issues"
+    "issue": "https://github.com/anomalyco/opencode/issues"
   },
   "communityUrls": {
     "linkedin": null,
     "twitter": "https://x.com/opencode",
-    "github": "https://github.com/sst/opencode",
+    "github": "https://github.com/anomalyco/opencode",
     "youtube": null,
     "discord": "https://discord.gg/opencode",
     "reddit": null,
     "blog": null
   },
-  "relatedProducts": [],
+  "relatedProducts": [
+    { "type": "desktop", "productId": "opencode-desktop" },
+    { "type": "extension", "productId": "opencode-extension" }
+  ],
   "platforms": [
     {
       "os": "macOS",

@@ -1,0 +1,108 @@
+{
+  "$schema": "../$schemas/cli.schema.json",
+  "translations": {
+    "de": {
+      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+    },
+    "es": {
+      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+    },
+    "fr": {
+      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+    },
+    "id": {
+      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+    },
+    "ja": {
+      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+    },
+    "ko": {
+      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+    },
+    "pt": {
+      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+    },
+    "ru": {
+      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+    },
+    "tr": {
+      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+    },
+    "zh-Hans": {
+      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+    },
+    "zh-Hant": {
+      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://x.ai/news/grok-build-cli",
+      "title": "Introducing Grok Build"
+    },
+    {
+      "url": "https://x.ai/build/changelog",
+      "title": "Grok Build changelog"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "id": "grok-build",
+  "name": "Grok Build",
+  "familyId": "grok-build",
+  "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks.",
+  "websiteUrl": "https://x.ai/build",
+  "docsUrl": "https://x.ai/cli",
+  "vendor": "xAI",
+  "latestVersion": "0.2.94",
+  "githubUrl": null,
+  "license": "Apache-2.0",
+  "pricing": [
+    {
+      "name": "Free",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://x.ai/cli",
+    "changelog": "https://x.ai/build/changelog",
+    "pricing": null,
+    "mcp": null,
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/xai",
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": "https://x.ai/news"
+  },
+  "relatedProducts": [],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": null,
+      "installCommand": "npm install -g @xai/grok-cli",
+      "launchCommand": "grok"
+    },
+    {
+      "os": "Windows",
+      "installPath": null,
+      "installCommand": "npm install -g @xai/grok-cli",
+      "launchCommand": "grok"
+    },
+    {
+      "os": "Linux",
+      "installPath": null,
+      "installCommand": "npm install -g @xai/grok-cli",
+      "launchCommand": "grok"
+    }
+  ]
+}

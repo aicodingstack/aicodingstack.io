@@ -1,0 +1,114 @@
+{
+  "$schema": "../$schemas/extension.schema.json",
+  "translations": {
+    "de": {
+      "description": "Mistral Vibe for VS Code brings Mistral's coding agent into the editor for repository-aware chat, code changes, command execution, and agentic development workflows."
+    },
+    "es": {
+      "description": "Mistral Vibe for VS Code brings Mistral's coding agent into the editor for repository-aware chat, code changes, command execution, and agentic development workflows."
+    },
+    "fr": {
+      "description": "Mistral Vibe for VS Code brings Mistral's coding agent into the editor for repository-aware chat, code changes, command execution, and agentic development workflows."
+    },
+    "id": {
+      "description": "Mistral Vibe for VS Code brings Mistral's coding agent into the editor for repository-aware chat, code changes, command execution, and agentic development workflows."
+    },
+    "ja": {
+      "description": "Mistral Vibe for VS Code brings Mistral's coding agent into the editor for repository-aware chat, code changes, command execution, and agentic development workflows."
+    },
+    "ko": {
+      "description": "Mistral Vibe for VS Code brings Mistral's coding agent into the editor for repository-aware chat, code changes, command execution, and agentic development workflows."
+    },
+    "pt": {
+      "description": "Mistral Vibe for VS Code brings Mistral's coding agent into the editor for repository-aware chat, code changes, command execution, and agentic development workflows."
+    },
+    "ru": {
+      "description": "Mistral Vibe for VS Code brings Mistral's coding agent into the editor for repository-aware chat, code changes, command execution, and agentic development workflows."
+    },
+    "tr": {
+      "description": "Mistral Vibe for VS Code brings Mistral's coding agent into the editor for repository-aware chat, code changes, command execution, and agentic development workflows."
+    },
+    "zh-Hans": {
+      "description": "Mistral Vibe for VS Code brings Mistral's coding agent into the editor for repository-aware chat, code changes, command execution, and agentic development workflows."
+    },
+    "zh-Hant": {
+      "description": "Mistral Vibe for VS Code brings Mistral's coding agent into the editor for repository-aware chat, code changes, command execution, and agentic development workflows."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://mistral.ai/news/vibe-agent/",
+      "title": "Introducing Mistral Vibe"
+    },
+    {
+      "url": "https://docs.mistral.ai/vibe/code/overview",
+      "title": "Mistral Vibe documentation"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "id": "mistral-vibe",
+  "name": "Mistral Vibe for VS Code",
+  "familyId": "mistral-vibe",
+  "description": "Mistral Vibe for VS Code brings Mistral's coding agent into the editor for repository-aware chat, code changes, command execution, and agentic development workflows.",
+  "websiteUrl": "https://mistral.ai/products/vibe",
+  "docsUrl": "https://docs.mistral.ai/vibe/code/overview",
+  "vendor": "Mistral AI",
+  "latestVersion": "Latest",
+  "githubUrl": null,
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Free",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    },
+    {
+      "name": "Pro",
+      "value": 14.99,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Team",
+      "value": 24.99,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Business"
+    }
+  ],
+  "resourceUrls": {
+    "download": null,
+    "changelog": null,
+    "pricing": "https://mistral.ai/pricing",
+    "mcp": null,
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/MistralAI",
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": "https://mistral.ai/news"
+  },
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "mistral-vibe-cli"
+    }
+  ],
+  "supportedIdes": [
+    {
+      "ideId": "vscode",
+      "marketplaceUrl": null,
+      "installUri": null
+    }
+  ]
+}

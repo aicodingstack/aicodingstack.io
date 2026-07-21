@@ -1,0 +1,114 @@
+{
+  "$schema": "../$schemas/extension.schema.json",
+  "translations": {
+    "de": {
+      "description": "OpenCode Extension connects the open source OpenCode agent to VS Code-compatible editors for editor context, file references, and shared terminal-agent sessions."
+    },
+    "es": {
+      "description": "OpenCode Extension connects the open source OpenCode agent to VS Code-compatible editors for editor context, file references, and shared terminal-agent sessions."
+    },
+    "fr": {
+      "description": "OpenCode Extension connects the open source OpenCode agent to VS Code-compatible editors for editor context, file references, and shared terminal-agent sessions."
+    },
+    "id": {
+      "description": "OpenCode Extension connects the open source OpenCode agent to VS Code-compatible editors for editor context, file references, and shared terminal-agent sessions."
+    },
+    "ja": {
+      "description": "OpenCode Extension connects the open source OpenCode agent to VS Code-compatible editors for editor context, file references, and shared terminal-agent sessions."
+    },
+    "ko": {
+      "description": "OpenCode Extension connects the open source OpenCode agent to VS Code-compatible editors for editor context, file references, and shared terminal-agent sessions."
+    },
+    "pt": {
+      "description": "OpenCode Extension connects the open source OpenCode agent to VS Code-compatible editors for editor context, file references, and shared terminal-agent sessions."
+    },
+    "ru": {
+      "description": "OpenCode Extension connects the open source OpenCode agent to VS Code-compatible editors for editor context, file references, and shared terminal-agent sessions."
+    },
+    "tr": {
+      "description": "OpenCode Extension connects the open source OpenCode agent to VS Code-compatible editors for editor context, file references, and shared terminal-agent sessions."
+    },
+    "zh-Hans": {
+      "description": "OpenCode Extension connects the open source OpenCode agent to VS Code-compatible editors for editor context, file references, and shared terminal-agent sessions."
+    },
+    "zh-Hant": {
+      "description": "OpenCode Extension connects the open source OpenCode agent to VS Code-compatible editors for editor context, file references, and shared terminal-agent sessions."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://opencode.ai/download",
+      "title": "OpenCode downloads"
+    },
+    {
+      "url": "https://github.com/anomalyco/opencode",
+      "title": "OpenCode repository"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "id": "opencode-extension",
+  "name": "OpenCode Extension",
+  "familyId": "opencode",
+  "description": "OpenCode Extension connects the open source OpenCode agent to VS Code-compatible editors for editor context, file references, and shared terminal-agent sessions.",
+  "websiteUrl": "https://opencode.ai/download",
+  "docsUrl": "https://opencode.ai/docs/ide",
+  "vendor": "Anomaly",
+  "latestVersion": "Latest",
+  "githubUrl": "https://github.com/anomalyco/opencode",
+  "license": "MIT",
+  "pricing": [
+    {
+      "name": "Open Source",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://opencode.ai/download",
+    "changelog": "https://github.com/anomalyco/opencode/releases",
+    "pricing": "https://opencode.ai/zen",
+    "mcp": null,
+    "issue": "https://github.com/anomalyco/opencode/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/opencode",
+    "github": "https://github.com/anomalyco/opencode",
+    "youtube": null,
+    "discord": "https://discord.gg/opencode",
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "opencode"
+    },
+    {
+      "type": "desktop",
+      "productId": "opencode-desktop"
+    }
+  ],
+  "supportedIdes": [
+    {
+      "ideId": "vscode",
+      "marketplaceUrl": null,
+      "installUri": null
+    },
+    {
+      "ideId": "cursor",
+      "marketplaceUrl": null,
+      "installUri": null
+    },
+    {
+      "ideId": "zed",
+      "marketplaceUrl": null,
+      "installUri": null
+    }
+  ]
+}

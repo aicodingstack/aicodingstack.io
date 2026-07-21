@@ -2,6 +2,7 @@
   "$schema": "../$schemas/extension.schema.json",
   "id": "droid",
   "name": "Droid",
+  "familyId": "droid",
   "description": "An AI development platform providing \"Droids\" - autonomous coding agents that automate software tasks across workflows. Droids refactor code, handle debugging and tests, and generate features.",
   "translations": {
     "zh-Hans": {
@@ -92,6 +93,7 @@
     "blog": "https://factory.ai/news"
   },
   "relatedProducts": [
+    { "type": "desktop", "productId": "factory-desktop" },
     {
       "type": "cli",
       "productId": "droid-cli"

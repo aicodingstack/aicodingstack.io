@@ -24,6 +24,7 @@ export const OG_IMAGE_CONFIG = {
   paths: {
     ides: '/og-images/ides',
     clis: '/og-images/clis',
+    desktops: '/og-images/desktops',
     extensions: '/og-images/extensions',
     models: '/og-images/models',
     modelProviders: '/og-images/model-providers',
@@ -91,6 +92,13 @@ export const CATEGORY_SEO_KEYWORDS = {
     'Codex',
     'Claude Code',
   ],
+  desktops: [
+    'desktop coding agent',
+    'AI desktop app',
+    'agent command center',
+    'parallel coding agents',
+    'local coding agent',
+  ],
   extensions: [
     'AI extension',
     'IDE extension',
@@ -129,6 +137,7 @@ export const CATEGORY_SEO_KEYWORDS = {
 export const CATEGORY_DISPLAY_NAMES = {
   ides: 'AI-Powered IDEs',
   clis: 'AI Coding Assistant CLIs',
+  desktops: 'Desktop Coding Agents',
   extensions: 'IDE Extensions',
   models: 'Coding LLM Models',
   modelProviders: 'LLM API Providers',
@@ -141,6 +150,7 @@ export const CATEGORY_DISPLAY_NAMES = {
 export const CATEGORY_EXAMPLES = {
   ides: ['VS Code', 'Cursor', 'TRAE'],
   clis: ['Codex', 'Claude Code'],
+  desktops: ['Codex App', 'Claude Code Desktop', 'OpenCode'],
   extensions: ['Copilot', 'Tabnine', 'Codeium'],
   models: ['DeepSeek V3.1', 'Kimi K2', 'GLM 4.5', 'Qwen3 Coder'],
   modelProviders: ['DeepSeek', 'Moonshot', 'SiliconFlow', 'OpenRouter'],

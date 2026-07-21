@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url'
 const MANIFEST_CATEGORIES = [
   'ides',
   'clis',
+  'desktops',
   'extensions',
   'models',
   'providers',

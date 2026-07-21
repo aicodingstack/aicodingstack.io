@@ -1,0 +1,108 @@
+{
+  "$schema": "../$schemas/desktop.schema.json",
+  "translations": {
+    "de": {
+      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+    },
+    "es": {
+      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+    },
+    "fr": {
+      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+    },
+    "id": {
+      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+    },
+    "ja": {
+      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+    },
+    "ko": {
+      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+    },
+    "pt": {
+      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+    },
+    "ru": {
+      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+    },
+    "tr": {
+      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+    },
+    "zh-Hans": {
+      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+    },
+    "zh-Hant": {
+      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://zcode.z.ai/en/docs/welcome",
+      "title": "ZCode documentation"
+    },
+    {
+      "url": "https://zcode.z.ai/en/changelog",
+      "title": "ZCode changelog"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "id": "zcode",
+  "name": "ZCode",
+  "familyId": "zcode",
+  "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools.",
+  "websiteUrl": "https://zcode.z.ai",
+  "docsUrl": "https://zcode.z.ai/en/docs/welcome",
+  "vendor": "Z.ai",
+  "latestVersion": "3.3.6",
+  "githubUrl": null,
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Free Download",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://zcode.z.ai/en/docs/install",
+    "changelog": "https://zcode.z.ai/en/changelog",
+    "pricing": null,
+    "mcp": null,
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": "/Applications/ZCode.app",
+      "installCommand": null,
+      "launchCommand": null
+    },
+    {
+      "os": "Windows",
+      "installPath": "%LOCALAPPDATA%\\Programs\\ZCode",
+      "installCommand": null,
+      "launchCommand": null
+    },
+    {
+      "os": "Linux",
+      "installPath": "/opt/ZCode",
+      "installCommand": null,
+      "launchCommand": null
+    }
+  ]
+}

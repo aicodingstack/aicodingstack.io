@@ -45,6 +45,26 @@
       },
       "additionalProperties": false
     },
+    "desktops": {
+      "type": "object",
+      "description": "GitHub stars for desktop coding agents",
+      "patternProperties": {
+        "^[a-z0-9-]+$": {
+          "oneOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "description": "Number of GitHub stars in thousands (e.g., 42 = 42k stars)"
+            },
+            {
+              "type": "null",
+              "description": "No GitHub stars data available"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
     "ides": {
       "type": "object",
       "description": "GitHub stars for IDEs",
@@ -66,6 +86,6 @@
       "additionalProperties": false
     }
   },
-  "required": ["extensions", "clis", "ides"],
+  "required": ["extensions", "clis", "desktops", "ides"],
   "additionalProperties": false
 }

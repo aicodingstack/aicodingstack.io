@@ -2,6 +2,7 @@
   "$schema": "../$schemas/extension.schema.json",
   "id": "claude-code",
   "name": "Claude Code",
+  "familyId": "claude-code",
   "description": "Claude Code is an AI coding assistant that integrates directly into VS Code. It provides intelligent code suggestions, explanations, and helps with debugging and code generation.",
   "translations": {
     "zh-Hans": {
@@ -131,6 +132,7 @@
     "blog": "https://www.claude.com/blog"
   },
   "relatedProducts": [
+    { "type": "desktop", "productId": "claude-code-desktop" },
     {
       "type": "cli",
       "productId": "claude-code-cli"

@@ -1,0 +1,108 @@
+{
+  "$schema": "../$schemas/desktop.schema.json",
+  "translations": {
+    "de": {
+      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+    },
+    "es": {
+      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+    },
+    "fr": {
+      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+    },
+    "id": {
+      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+    },
+    "ja": {
+      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+    },
+    "ko": {
+      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+    },
+    "pt": {
+      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+    },
+    "ru": {
+      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+    },
+    "tr": {
+      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+    },
+    "zh-Hans": {
+      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+    },
+    "zh-Hant": {
+      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+    }
+  },
+  "verified": false,
+  "sources": [
+    {
+      "url": "https://stagewise.io/",
+      "title": "stagewise product site"
+    },
+    {
+      "url": "https://github.com/stagewise-io/stagewise",
+      "title": "stagewise repository"
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "id": "stagewise",
+  "name": "stagewise",
+  "familyId": "stagewise",
+  "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers.",
+  "websiteUrl": "https://stagewise.io",
+  "docsUrl": "https://stagewise.io/docs",
+  "vendor": "stagewise",
+  "latestVersion": "1.2.1",
+  "githubUrl": "https://github.com/stagewise-io/stagewise",
+  "license": "AGPL-3.0-only",
+  "pricing": [
+    {
+      "name": "Open Source",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://stagewise.io",
+    "changelog": "https://stagewise.io/news/release-week-may-25-31",
+    "pricing": null,
+    "mcp": null,
+    "issue": "https://github.com/stagewise-io/stagewise/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/stagewise_io",
+    "github": "https://github.com/stagewise-io/stagewise",
+    "youtube": null,
+    "discord": "https://discord.gg/stagewise",
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": "/Applications/stagewise.app",
+      "installCommand": null,
+      "launchCommand": null
+    },
+    {
+      "os": "Windows",
+      "installPath": "%LOCALAPPDATA%\\Programs\\stagewise",
+      "installCommand": null,
+      "launchCommand": null
+    },
+    {
+      "os": "Linux",
+      "installPath": "/opt/stagewise",
+      "installCommand": null,
+      "launchCommand": null
+    }
+  ]
+}

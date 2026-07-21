@@ -5,11 +5,12 @@ import { useMemo, useState } from 'react'
 import { VerifiedBadge } from '@/components/controls/VerifiedBadge'
 import { Link } from '@/i18n/navigation'
 import { clisData } from '@/lib/generated/clis'
+import { desktopsData } from '@/lib/generated/desktops'
 import { extensionsData } from '@/lib/generated/extensions'
 import { githubStarsData } from '@/lib/generated/github-stars'
 import { idesData } from '@/lib/generated/ides'
 
-type ProductType = 'ide' | 'cli' | 'extension'
+type ProductType = 'ide' | 'cli' | 'desktop' | 'extension'
 
 type OpenSourceProject = {
   id: string
@@ -36,6 +37,8 @@ function getProductTypeName(type: ProductType, t: (key: string) => string): stri
       return t('categories.singular.cli')
     case 'extension':
       return t('categories.singular.extension')
+    case 'desktop':
+      return t('categories.singular.desktop')
     default:
       return type
   }
@@ -108,6 +111,27 @@ export function OpenSourceRankPage() {
       } else if (isOpenSource || hasStars) {
         openSource.push(project)
       }
+    })
+
+    desktopsData.forEach(desktop => {
+      const stars = githubStarsData.desktops?.[desktop.id] ?? null
+      const hasStars = stars !== null && stars > 0
+      const isProprietary = desktop.license === 'Proprietary'
+      if (isProprietary && !hasStars) return
+
+      const project = {
+        id: desktop.id,
+        name: desktop.name,
+        type: 'desktop' as ProductType,
+        license: desktop.license || 'Unknown',
+        stars: stars || 0,
+        githubUrl: desktop.githubUrl || null,
+        websiteUrl: desktop.websiteUrl || null,
+        verified: desktop.verified ?? false,
+      }
+
+      if (isProprietary && hasStars) proprietary.push(project)
+      else openSource.push(project)
     })
 
     // Process Extensions
@@ -225,6 +249,20 @@ export function OpenSourceRankPage() {
       <div className="mb-[var(--spacing-md)] flex gap-[var(--spacing-xs)] flex-wrap">
         <button
           type="button"
+          onClick={() => setSelectedType('desktop')}
+          className={`px-[var(--spacing-sm)] py-[var(--spacing-xs)] text-sm border transition-all ${
+            selectedType === 'desktop'
+              ? 'border-[var(--color-border-strong)] bg-[var(--color-hover)]'
+              : 'border-[var(--color-border)] hover:bg-[var(--color-hover)]'
+          }`}
+        >
+          {tShared('categories.plural.desktops')} (
+          {openSourceProjects.filter(p => p.type === 'desktop').length +
+            proprietaryProjects.filter(p => p.type === 'desktop').length}
+          )
+        </button>
+        <button
+          type="button"
           onClick={() => setSelectedType('all')}
           className={`px-[var(--spacing-sm)] py-[var(--spacing-xs)] text-sm border transition-all ${
             selectedType === 'all'
@@ -316,7 +354,7 @@ export function OpenSourceRankPage() {
                       <td className="px-[var(--spacing-sm)] py-[var(--spacing-sm)]">
                         <div className="flex items-center gap-[var(--spacing-xs)]">
                           <Link
-                            href={`/${project.type === 'ide' ? 'ides' : project.type === 'cli' ? 'clis' : 'extensions'}/${project.id}`}
+                            href={`/${project.type === 'ide' ? 'ides' : project.type === 'cli' ? 'clis' : project.type === 'desktop' ? 'desktops' : 'extensions'}/${project.id}`}
                             className="font-medium hover:text-blue-500 transition-colors"
                           >
                             {project.name}

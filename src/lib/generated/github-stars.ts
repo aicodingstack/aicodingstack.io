@@ -12,7 +12,7 @@ export const githubStarsData = githubStarsJson as GithubStarsData
 
 /**
  * Get GitHub stars for a specific product
- * @param category - The product category (extensions, clis, ides)
+ * @param category - The product category (extensions, clis, desktops, ides)
  * @param id - The product ID
  * @returns The number of stars (in thousands) or null if not available
  */
