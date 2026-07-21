@@ -3,13 +3,21 @@
 import { useTranslations } from 'next-intl'
 import { useMemo, useState } from 'react'
 import { Link } from '@/i18n/navigation'
-import type { LandscapeProduct, ProductCategory, VendorMatrixRow } from '@/lib/landscape-data'
+import {
+  compareVendorMatrixRowsByProducts,
+  LANDSCAPE_PRODUCT_CATEGORIES,
+  type LandscapeProduct,
+  type ProductCategory,
+  type VendorMatrixRow,
+} from '@/lib/landscape-data'
 
 interface VendorMatrixProps {
   matrixData: VendorMatrixRow[]
 }
 
-const PRODUCT_CATEGORIES: ProductCategory[] = ['ide', 'cli', 'extension', 'model', 'provider']
+const MATRIX_GRID_STYLE = {
+  gridTemplateColumns: '200px repeat(6, minmax(0, 1fr))',
+} as const
 
 interface MatrixCellProps {
   products: LandscapeProduct[]
@@ -30,6 +38,7 @@ function getCategoryLabel(
   // Map singular to plural key for shared categories
   const pluralMap: Record<ProductCategory, string> = {
     cli: 'clis',
+    desktop: 'desktops',
     extension: 'extensions',
     ide: 'ides',
     model: 'models',
@@ -57,7 +66,7 @@ function MatrixCell({ products, category }: MatrixCellProps) {
 
   if (products.length === 0) {
     return (
-      <div className="h-full min-h-[80px] border border-dashed border-[var(--color-border)] bg-[var(--color-bg-subtle)]" />
+      <div className="min-h-[80px] border border-dashed border-[var(--color-border)] bg-[var(--color-bg-subtle)]" />
     )
   }
 
@@ -67,9 +76,9 @@ function MatrixCell({ products, category }: MatrixCellProps) {
     return (
       <Link
         href={product.path}
-        className="block h-full min-h-[80px] border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-all p-[var(--spacing-sm)] bg-[var(--color-bg-subtle)] hover:bg-[var(--color-hover)] group"
+        className="block min-h-[80px] border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-all p-[var(--spacing-sm)] bg-[var(--color-bg-subtle)] hover:bg-[var(--color-hover)] group"
       >
-        <div className="flex flex-col h-full justify-between">
+        <div className="flex flex-col justify-between">
           <div>
             <h4 className="font-medium text-sm tracking-tight mb-1 group-hover:text-[var(--color-text)] transition-colors line-clamp-2">
               {product.name}
@@ -83,7 +92,7 @@ function MatrixCell({ products, category }: MatrixCellProps) {
   // Two products - display directly without collapse
   if (products.length === 2) {
     return (
-      <div className="h-full min-h-[80px] flex flex-col gap-1">
+      <div className="min-h-[80px] flex flex-col gap-1">
         {products.map(product => (
           <Link
             key={product.id}
@@ -101,13 +110,13 @@ function MatrixCell({ products, category }: MatrixCellProps) {
 
   // Three or more products - show collapse menu
   return (
-    <div className="relative h-full min-h-[80px]">
+    <div className="relative min-h-[80px]">
       <button
         type="button"
         onClick={() => setIsExpanded(!isExpanded)}
-        className="w-full h-full border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-all p-[var(--spacing-sm)] bg-[var(--color-bg-subtle)] hover:bg-[var(--color-hover)] text-left"
+        className="absolute inset-0 w-full border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-all p-[var(--spacing-sm)] bg-[var(--color-bg-subtle)] hover:bg-[var(--color-hover)] text-left"
       >
-        <div className="flex flex-col h-full justify-between">
+        <div className="flex flex-col justify-between">
           <div>
             <div className="flex items-center justify-between mb-1">
               <span className="font-medium text-sm tracking-tight">
@@ -168,76 +177,7 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
         return a.vendorName.localeCompare(b.vendorName)
       }
 
-      // Define column groups: first part (high priority) and second part (low priority)
-      const FIRST_PART_CATEGORIES = PRODUCT_CATEGORIES.slice(0, 3) // ide, cli, extension
-      const SECOND_PART_CATEGORIES = PRODUCT_CATEGORIES.slice(3) // model, provider
-
-      // Helper function to get column count for a specific set of categories
-      const getColumnCount = (row: VendorMatrixRow, categories: ProductCategory[]) => {
-        return categories.filter(cat => row.cells[cat] && row.cells[cat].length > 0).length
-      }
-
-      // Helper function to get column order (left to right) for a specific set of categories
-      const getColumnOrder = (row: VendorMatrixRow, categories: ProductCategory[]) => {
-        return categories.filter(cat => row.cells[cat] && row.cells[cat].length > 0).map(cat => cat)
-      }
-
-      // Helper function to compare column order
-      const compareColumnOrder = (
-        aOrder: ProductCategory[],
-        bOrder: ProductCategory[],
-        categories: ProductCategory[]
-      ) => {
-        for (let i = 0; i < Math.min(aOrder.length, bOrder.length); i++) {
-          const aIndex = categories.indexOf(aOrder[i]!)
-          const bIndex = categories.indexOf(bOrder[i]!)
-          if (aIndex !== bIndex) {
-            return aIndex - bIndex
-          }
-        }
-        return 0
-      }
-
-      // 1. Sort by first part column count (descending)
-      const aFirstPartCount = getColumnCount(a, FIRST_PART_CATEGORIES)
-      const bFirstPartCount = getColumnCount(b, FIRST_PART_CATEGORIES)
-      if (aFirstPartCount !== bFirstPartCount) {
-        return bFirstPartCount - aFirstPartCount
-      }
-
-      // 2. If first part column count is the same, sort by second part column count (descending)
-      const aSecondPartCount = getColumnCount(a, SECOND_PART_CATEGORIES)
-      const bSecondPartCount = getColumnCount(b, SECOND_PART_CATEGORIES)
-      if (aSecondPartCount !== bSecondPartCount) {
-        return bSecondPartCount - aSecondPartCount
-      }
-
-      // 3. If both column counts are the same, sort by first part column order (left to right)
-      const aFirstPartOrder = getColumnOrder(a, FIRST_PART_CATEGORIES)
-      const bFirstPartOrder = getColumnOrder(b, FIRST_PART_CATEGORIES)
-      const firstPartOrderComparison = compareColumnOrder(
-        aFirstPartOrder,
-        bFirstPartOrder,
-        FIRST_PART_CATEGORIES
-      )
-      if (firstPartOrderComparison !== 0) {
-        return firstPartOrderComparison
-      }
-
-      // 4. If first part order is also the same, sort by second part column order (left to right)
-      const aSecondPartOrder = getColumnOrder(a, SECOND_PART_CATEGORIES)
-      const bSecondPartOrder = getColumnOrder(b, SECOND_PART_CATEGORIES)
-      const secondPartOrderComparison = compareColumnOrder(
-        aSecondPartOrder,
-        bSecondPartOrder,
-        SECOND_PART_CATEGORIES
-      )
-      if (secondPartOrderComparison !== 0) {
-        return secondPartOrderComparison
-      }
-
-      // 5. If everything is the same, sort alphabetically by vendor name
-      return a.vendorName.localeCompare(b.vendorName)
+      return compareVendorMatrixRowsByProducts(a, b)
     })
 
     return sorted
@@ -322,15 +262,18 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
       </div>
 
       {/* Matrix Table */}
-      <div className="border border-[var(--color-border)] overflow-hidden">
+      <div className="border border-[var(--color-border)]">
         <div className="overflow-x-auto">
-          <div className="min-w-[800px]">
+          <div className="min-w-[1200px]">
             {/* Table Header */}
-            <div className="grid grid-cols-[200px_repeat(5,1fr)] gap-2 p-[var(--spacing-sm)] bg-[var(--color-bg-subtle)] border-b border-[var(--color-border)] sticky top-0 z-20">
+            <div
+              className="grid gap-2 p-[var(--spacing-sm)] bg-[var(--color-bg-subtle)] border-b border-[var(--color-border)]"
+              style={MATRIX_GRID_STYLE}
+            >
               <div className="font-medium text-sm text-[var(--color-text-secondary)] px-2">
                 {tShared('categories.singular.vendor')}
               </div>
-              {PRODUCT_CATEGORIES.map(cat => (
+              {LANDSCAPE_PRODUCT_CATEGORIES.map(cat => (
                 <div key={cat} className="font-medium text-sm text-center px-2">
                   {tShared(`categories.singular.${cat}`)}
                 </div>
@@ -346,7 +289,11 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
                   </div>
                 ) : (
                   filteredAndSortedData.map(row => (
-                    <div key={row.vendorId} className="grid grid-cols-[200px_repeat(5,1fr)] gap-2">
+                    <div
+                      key={row.vendorId}
+                      className="grid items-stretch gap-2"
+                      style={MATRIX_GRID_STYLE}
+                    >
                       {/* Vendor Name */}
                       <div className="flex flex-col justify-center px-2 border-r border-[var(--color-border)]">
                         <Link
@@ -361,10 +308,8 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
                       </div>
 
                       {/* Product Cells */}
-                      {PRODUCT_CATEGORIES.map(cat => (
-                        <div key={cat}>
-                          <MatrixCell products={row.cells[cat]} category={cat} />
-                        </div>
+                      {LANDSCAPE_PRODUCT_CATEGORIES.map(cat => (
+                        <MatrixCell key={cat} products={row.cells[cat]} category={cat} />
                       ))}
                     </div>
                   ))
