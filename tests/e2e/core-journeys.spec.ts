@@ -14,8 +14,11 @@ test('search opens a model detail page', async ({ page }) => {
 test('model comparison selection persists across routes', async ({ page }) => {
   await page.goto('/models')
 
-  await page.getByTitle('Compare: Gemini 3 Flash').click()
-  await page.getByTitle('Compare: GPT-5.2').click()
+  const geminiCompare = page.getByTitle('Compare: Gemini 3 Flash', { exact: true })
+  const gptCompare = page.getByTitle('Compare: GPT-5.2', { exact: true })
+
+  await geminiCompare.click()
+  await gptCompare.click()
 
   const compareLink = page.getByRole('link', { name: /Compare \(2\/2\)/ })
   await expect(compareLink).toBeVisible()
@@ -26,8 +29,8 @@ test('model comparison selection persists across routes', async ({ page }) => {
   await expect(page.locator('select').nth(1)).toHaveValue('gpt-5-2')
 
   await page.goto('/models')
-  await expect(page.getByTitle('Compare: Gemini 3 Flash')).toHaveAttribute('aria-pressed', 'true')
-  await expect(page.getByTitle('Compare: GPT-5.2')).toHaveAttribute('aria-pressed', 'true')
+  await expect(geminiCompare).toHaveAttribute('aria-pressed', 'true')
+  await expect(gptCompare).toHaveAttribute('aria-pressed', 'true')
 })
 
 test('language switching preserves the current detail route', async ({ page }) => {
