@@ -5,39 +5,46 @@
     "providers": 30,
     "ides": 60,
     "clis": 60,
+    "desktops": 60,
     "extensions": 60,
     "vendors": 90
   },
   "summary": {
-    "totalRecords": 226,
-    "recordsWithSources": 114,
-    "verifiedRecords": 134,
-    "provenanceComplete": 114,
+    "totalRecords": 247,
+    "recordsWithSources": 149,
+    "verifiedRecords": 135,
+    "provenanceComplete": 117,
     "staleVerifiedRecords": 0,
-    "translationPlaceholderValues": 1411,
+    "translationPlaceholderValues": 1506,
     "danglingRelationships": 0,
     "modelBenchmarkCoverage": 9.7,
-    "productsWithPricing": 48,
-    "productRecords": 48,
+    "productsWithPricing": 67,
+    "productRecords": 68,
     "errors": 0,
-    "warnings": 20,
-    "info": 112
+    "warnings": 18,
+    "info": 98
   },
   "byCategory": {
     "ides": {
-      "total": 13,
+      "total": 10,
       "verified": 0,
       "provenanceComplete": 0,
       "stale": 0
     },
     "clis": {
-      "total": 20,
+      "total": 27,
       "verified": 2,
       "provenanceComplete": 1,
       "stale": 0
     },
+    "desktops": {
+      "total": 12,
+      "verified": 0,
+      "provenanceComplete": 0,
+      "stale": 0
+    },
     "extensions": {
-      "total": 15,
+      "total": 19,
       "verified": 3,
       "provenanceComplete": 2,
       "stale": 0
@@ -45,7 +52,7 @@
     "models": {
       "total": 125,
       "verified": 123,
-      "provenanceComplete": 108,
+      "provenanceComplete": 110,
       "stale": 0
     },
     "providers": {
@@ -55,67 +62,67 @@
       "stale": 0
     },
     "vendors": {
-      "total": 40,
-      "verified": 2,
-      "provenanceComplete": 0,
+      "total": 41,
+      "verified": 3,
+      "provenanceComplete": 1,
       "stale": 0
     }
   },
   "translationsByLocale": {
     "de": {
-      "totalStrings": 329,
-      "matchingEnglish": 120,
-      "matchingEnglishPercent": 36.5
+      "totalStrings": 362,
+      "matchingEnglish": 130,
+      "matchingEnglishPercent": 35.9
     },
     "es": {
-      "totalStrings": 329,
-      "matchingEnglish": 116,
-      "matchingEnglishPercent": 35.3
+      "totalStrings": 362,
+      "matchingEnglish": 126,
+      "matchingEnglishPercent": 34.8
     },
     "fr": {
-      "totalStrings": 329,
-      "matchingEnglish": 126,
-      "matchingEnglishPercent": 38.3
+      "totalStrings": 362,
+      "matchingEnglish": 136,
+      "matchingEnglishPercent": 37.6
     },
     "id": {
-      "totalStrings": 329,
-      "matchingEnglish": 160,
-      "matchingEnglishPercent": 48.6
+      "totalStrings": 362,
+      "matchingEnglish": 170,
+      "matchingEnglishPercent": 47
     },
     "ja": {
-      "totalStrings": 329,
-      "matchingEnglish": 117,
-      "matchingEnglishPercent": 35.6
+      "totalStrings": 362,
+      "matchingEnglish": 122,
+      "matchingEnglishPercent": 33.7
     },
     "ko": {
-      "totalStrings": 329,
-      "matchingEnglish": 133,
-      "matchingEnglishPercent": 40.4
+      "totalStrings": 362,
+      "matchingEnglish": 141,
+      "matchingEnglishPercent": 39
     },
     "pt": {
-      "totalStrings": 329,
-      "matchingEnglish": 126,
-      "matchingEnglishPercent": 38.3
+      "totalStrings": 362,
+      "matchingEnglish": 136,
+      "matchingEnglishPercent": 37.6
     },
     "ru": {
-      "totalStrings": 329,
-      "matchingEnglish": 142,
-      "matchingEnglishPercent": 43.2
+      "totalStrings": 362,
+      "matchingEnglish": 150,
+      "matchingEnglishPercent": 41.4
     },
     "tr": {
-      "totalStrings": 329,
-      "matchingEnglish": 142,
-      "matchingEnglishPercent": 43.2
+      "totalStrings": 362,
+      "matchingEnglish": 150,
+      "matchingEnglishPercent": 41.4
     },
     "zh-Hans": {
-      "totalStrings": 329,
-      "matchingEnglish": 116,
-      "matchingEnglishPercent": 35.3
+      "totalStrings": 362,
+      "matchingEnglish": 124,
+      "matchingEnglishPercent": 34.3
     },
     "zh-Hant": {
-      "totalStrings": 329,
-      "matchingEnglish": 113,
-      "matchingEnglishPercent": 34.3
+      "totalStrings": 362,
+      "matchingEnglish": 121,
+      "matchingEnglishPercent": 33.4
     }
   },
   "issues": [
@@ -187,20 +194,6 @@
       "code": "verified-without-provenance",
       "category": "models",
       "id": "gpt-5-codex",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "kimi-k2-0905",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "kimi-k2-thinking",
       "message": "Verified record is missing sources, review date, reviewer, or confidence."
     },
     {
@@ -319,13 +312,6 @@
       "severity": "info",
       "code": "missing-sources",
       "category": "clis",
-      "id": "deepv-code",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
       "id": "droid-cli",
       "message": "No structured source references are recorded."
     },
@@ -348,13 +334,6 @@
       "code": "missing-sources",
       "category": "clis",
       "id": "kilo-code-cli",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "kimi-cli",
       "message": "No structured source references are recorded."
     },
     {
@@ -411,13 +390,6 @@
       "code": "missing-sources",
       "category": "extensions",
       "id": "cline",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "extensions",
-      "id": "codex",
       "message": "No structured source references are recorded."
     },
     {
@@ -487,13 +459,6 @@
       "severity": "info",
       "code": "missing-sources",
       "category": "ides",
-      "id": "air",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "ides",
       "id": "antigravity",
       "message": "No structured source references are recorded."
     },
@@ -530,27 +495,6 @@
       "code": "missing-sources",
       "category": "ides",
       "id": "kiro",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "ides",
-      "id": "qoder",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "ides",
-      "id": "trae",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "ides",
-      "id": "verdent-deck",
       "message": "No structured source references are recorded."
     },
     {
@@ -642,20 +586,6 @@
       "code": "missing-sources",
       "category": "models",
       "id": "kat-coder-pro-v1",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "kimi-k2-0905",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "kimi-k2-thinking",
       "message": "No structured source references are recorded."
     },
     {
@@ -823,13 +753,6 @@
       "severity": "info",
       "code": "missing-sources",
       "category": "vendors",
-      "id": "cline-bot",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
       "id": "cognition",
       "message": "No structured source references are recorded."
     },
@@ -838,13 +761,6 @@
       "code": "missing-sources",
       "category": "vendors",
       "id": "continue",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "continue-dev",
       "message": "No structured source references are recorded."
     },
     {
@@ -893,20 +809,6 @@
       "severity": "info",
       "code": "missing-sources",
       "category": "vendors",
-      "id": "kwai",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "kwaikat",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
       "id": "meta",
       "message": "No structured source references are recorded."
     },
@@ -929,13 +831,6 @@
       "code": "missing-sources",
       "category": "vendors",
       "id": "moonshot",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "moonshot-ai",
       "message": "No structured source references are recorded."
     },
     {

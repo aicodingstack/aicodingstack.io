@@ -6,27 +6,28 @@ Snapshot date: 2026-07-21. Regenerate with `npm run data-health:report`.
 
 | Metric | Value |
 | --- | ---: |
-| Manifest records | 226 |
-| Records with structured sources | 114 |
-| Verified records | 134 |
-| Verified with complete provenance | 114 |
+| Manifest records | 247 |
+| Records with structured sources | 149 |
+| Verified records | 135 |
+| Verified with complete provenance | 117 |
 | Stale verified records | 0 |
-| Non-English values identical to English | 1411 |
+| Non-English values identical to English | 1506 |
 | Dangling product relationships | 0 |
 | Model benchmark coverage | 9.7% |
-| Products with pricing | 48/48 |
-| Errors / warnings / info | 0 / 20 / 112 |
+| Products with pricing | 67/68 |
+| Errors / warnings / info | 0 / 18 / 98 |
 
 ## Category Breakdown
 
 | Category | Total | Verified | Provenance complete | Stale |
 | --- | ---: | ---: | ---: | ---: |
-| ides | 13 | 0 | 0 | 0 |
-| clis | 20 | 2 | 1 | 0 |
-| extensions | 15 | 3 | 2 | 0 |
-| models | 125 | 123 | 108 | 0 |
+| ides | 10 | 0 | 0 | 0 |
+| clis | 27 | 2 | 1 | 0 |
+| desktops | 12 | 0 | 0 | 0 |
+| extensions | 19 | 3 | 2 | 0 |
+| models | 125 | 123 | 110 | 0 |
 | providers | 13 | 4 | 3 | 0 |
-| vendors | 40 | 2 | 0 | 0 |
+| vendors | 41 | 3 | 1 | 0 |
 
 ## Translation Placeholder Proxy
 
@@ -34,24 +35,24 @@ Exact English matches are a triage signal; product names and technical terms can
 
 | Locale | Comparable strings | Exact English matches | Match rate |
 | --- | ---: | ---: | ---: |
-| de | 329 | 120 | 36.5% |
-| es | 329 | 116 | 35.3% |
-| fr | 329 | 126 | 38.3% |
-| id | 329 | 160 | 48.6% |
-| ja | 329 | 117 | 35.6% |
-| ko | 329 | 133 | 40.4% |
-| pt | 329 | 126 | 38.3% |
-| ru | 329 | 142 | 43.2% |
-| tr | 329 | 142 | 43.2% |
-| zh-Hans | 329 | 116 | 35.3% |
-| zh-Hant | 329 | 113 | 34.3% |
+| de | 362 | 130 | 35.9% |
+| es | 362 | 126 | 34.8% |
+| fr | 362 | 136 | 37.6% |
+| id | 362 | 170 | 47% |
+| ja | 362 | 122 | 33.7% |
+| ko | 362 | 141 | 39% |
+| pt | 362 | 136 | 37.6% |
+| ru | 362 | 150 | 41.4% |
+| tr | 362 | 150 | 41.4% |
+| zh-Hans | 362 | 124 | 34.3% |
+| zh-Hant | 362 | 121 | 33.4% |
 
 ## Backlog by Issue Type
 
 | Issue | Count |
 | --- | ---: |
-| missing-sources | 112 |
-| verified-without-provenance | 20 |
+| missing-sources | 98 |
+| verified-without-provenance | 18 |
 
 ## Priority Queue
 
@@ -70,8 +71,6 @@ visible in the scorecards and `data/data-health.json`.
 | warning | verified-without-provenance | models/gpt-5-1 | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/gpt-5-1-codex | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/gpt-5-codex | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/kimi-k2-0905 | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/kimi-k2-thinking | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/minimax-m2 | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/minimax-m2-1 | Verified record is missing sources, review date, reviewer, or confidence. |
 | warning | verified-without-provenance | models/qwen3-coder-30b-a3b | Verified record is missing sources, review date, reviewer, or confidence. |

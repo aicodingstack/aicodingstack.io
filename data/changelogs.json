@@ -137,8 +137,867 @@
     {
       "id": "2026-07-21-manifest-update",
       "date": "2026-07-21",
-      "summary": "97 manifest records changed",
+      "summary": "183 manifest records changed",
       "changes": [
+        {
+          "category": "clis",
+          "id": "claude-code-cli",
+          "change": "updated",
+          "fields": ["relatedProducts", "familyId"]
+        },
+        {
+          "category": "clis",
+          "id": "codex-cli",
+          "change": "updated",
+          "fields": ["relatedProducts", "familyId"]
+        },
+        {
+          "category": "clis",
+          "id": "deepv-code",
+          "change": "updated",
+          "fields": [
+            "githubUrl",
+            "resourceUrls",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "droid-cli",
+          "change": "updated",
+          "fields": ["relatedProducts", "familyId"]
+        },
+        {
+          "category": "clis",
+          "id": "gitlab-duo-cli",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "grok-build",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "junie-cli",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "kimi-cli",
+          "change": "updated",
+          "fields": [
+            "communityUrls",
+            "description",
+            "docsUrl",
+            "githubUrl",
+            "latestVersion",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "translations",
+            "websiteUrl",
+            "confidence",
+            "familyId",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "mistral-vibe-cli",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "omp",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "opencode",
+          "change": "updated",
+          "fields": [
+            "communityUrls",
+            "githubUrl",
+            "relatedProducts",
+            "resourceUrls",
+            "vendor",
+            "familyId"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "qoder-cli",
+          "change": "updated",
+          "fields": ["relatedProducts", "familyId"]
+        },
+        {
+          "category": "clis",
+          "id": "qwen-code",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "rovo-dev-cli",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "desktops",
+          "id": "air",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "desktops",
+          "id": "claude-code-desktop",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "desktops",
+          "id": "codex-app",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "desktops",
+          "id": "factory-desktop",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "desktops",
+          "id": "minimax-code",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "desktops",
+          "id": "opencode-desktop",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "desktops",
+          "id": "qoder",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "desktops",
+          "id": "stagewise",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "desktops",
+          "id": "trae-work",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "desktops",
+          "id": "verdent-deck",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "desktops",
+          "id": "workbuddy",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "desktops",
+          "id": "zcode",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "extensions",
+          "id": "claude-code",
+          "change": "updated",
+          "fields": ["relatedProducts", "familyId"]
+        },
+        {
+          "category": "extensions",
+          "id": "codex",
+          "change": "updated",
+          "fields": [
+            "communityUrls",
+            "docsUrl",
+            "githubUrl",
+            "latestVersion",
+            "license",
+            "relatedProducts",
+            "resourceUrls",
+            "confidence",
+            "familyId",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "extensions",
+          "id": "droid",
+          "change": "updated",
+          "fields": ["relatedProducts", "familyId"]
+        },
+        {
+          "category": "extensions",
+          "id": "jetbrains-junie",
+          "change": "updated",
+          "fields": ["relatedProducts", "familyId"]
+        },
+        {
+          "category": "extensions",
+          "id": "kimi-code",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "supportedIdes",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "extensions",
+          "id": "mistral-vibe",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "supportedIdes",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "extensions",
+          "id": "opencode-extension",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "supportedIdes",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "extensions",
+          "id": "qoder",
+          "change": "updated",
+          "fields": ["relatedProducts", "familyId"]
+        },
+        {
+          "category": "extensions",
+          "id": "rovo-dev",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "supportedIdes",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "extensions",
+          "id": "verdent",
+          "change": "updated",
+          "fields": ["relatedProducts", "familyId"]
+        },
+        {
+          "category": "ides",
+          "id": "air",
+          "change": "removed",
+          "fields": [
+            "communityUrls",
+            "description",
+            "docsUrl",
+            "githubUrl",
+            "id",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "translations",
+            "vendor",
+            "verified",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "ides",
+          "id": "qoder",
+          "change": "removed",
+          "fields": [
+            "communityUrls",
+            "description",
+            "docsUrl",
+            "githubUrl",
+            "id",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "translations",
+            "vendor",
+            "verified",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "ides",
+          "id": "trae",
+          "change": "updated",
+          "fields": [
+            "latestVersion",
+            "name",
+            "pricing",
+            "relatedProducts",
+            "websiteUrl",
+            "confidence",
+            "familyId",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "ides",
+          "id": "verdent-deck",
+          "change": "removed",
+          "fields": [
+            "communityUrls",
+            "description",
+            "docsUrl",
+            "githubUrl",
+            "id",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "translations",
+            "vendor",
+            "verified",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "claude-fable-5",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
         {
           "category": "models",
           "id": "claude-haiku-3",
@@ -200,6 +1059,12 @@
             "verifiedBy",
             "websiteUrl"
           ]
+        },
+        {
+          "category": "models",
+          "id": "claude-haiku-4-5",
+          "change": "updated",
+          "fields": ["tokenPricing"]
         },
         {
           "category": "models",
@@ -267,19 +1132,40 @@
           "category": "models",
           "id": "claude-opus-4",
           "change": "updated",
-          "fields": ["lifecycle", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+          "fields": [
+            "lifecycle",
+            "tokenPricing",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
         },
         {
           "category": "models",
           "id": "claude-opus-4-1",
           "change": "updated",
-          "fields": ["lifecycle", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+          "fields": [
+            "lifecycle",
+            "tokenPricing",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
         },
         {
           "category": "models",
           "id": "claude-opus-4-5",
           "change": "updated",
-          "fields": ["lifecycle", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+          "fields": [
+            "lifecycle",
+            "tokenPricing",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
         },
         {
           "category": "models",
@@ -342,6 +1228,12 @@
             "verifiedBy",
             "websiteUrl"
           ]
+        },
+        {
+          "category": "models",
+          "id": "claude-opus-4-8",
+          "change": "updated",
+          "fields": ["tokenPricing"]
         },
         {
           "category": "models",
@@ -471,13 +1363,27 @@
           "category": "models",
           "id": "claude-sonnet-4",
           "change": "updated",
-          "fields": ["lifecycle", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+          "fields": [
+            "lifecycle",
+            "tokenPricing",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
         },
         {
           "category": "models",
           "id": "claude-sonnet-4-5",
           "change": "updated",
-          "fields": ["lifecycle", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+          "fields": [
+            "lifecycle",
+            "tokenPricing",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
         },
         {
           "category": "models",
@@ -509,6 +1415,12 @@
             "verifiedBy",
             "websiteUrl"
           ]
+        },
+        {
+          "category": "models",
+          "id": "claude-sonnet-5",
+          "change": "updated",
+          "fields": ["tokenPricing"]
         },
         {
           "category": "models",
@@ -605,6 +1517,12 @@
         },
         {
           "category": "models",
+          "id": "composer",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
           "id": "cursor-composer-2",
           "change": "added",
           "fields": [
@@ -671,6 +1589,7 @@
           "change": "updated",
           "fields": [
             "lifecycle",
+            "tokenPricing",
             "verified",
             "confidence",
             "lastVerifiedAt",
@@ -1156,6 +2075,7 @@
             "knowledgeCutoff",
             "releaseDate",
             "size",
+            "tokenPricing",
             "confidence",
             "lastVerifiedAt",
             "sources",
@@ -1201,6 +2121,7 @@
             "knowledgeCutoff",
             "releaseDate",
             "size",
+            "tokenPricing",
             "confidence",
             "lastVerifiedAt",
             "sources",
@@ -1209,9 +2130,40 @@
         },
         {
           "category": "models",
+          "id": "gemini-3-1-flash-lite",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-1-pro-preview",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-5-flash",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-flash",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
           "id": "gemini-3-pro",
           "change": "updated",
-          "fields": ["lifecycle", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+          "fields": [
+            "lifecycle",
+            "tokenPricing",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
         },
         {
           "category": "models",
@@ -1246,6 +2198,18 @@
         },
         {
           "category": "models",
+          "id": "glm-4-6",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
+          "id": "glm-4-6v",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
           "id": "glm-4-7",
           "change": "updated",
           "fields": [
@@ -1253,6 +2217,7 @@
             "docsUrl",
             "knowledgeCutoff",
             "lifecycle",
+            "tokenPricing",
             "translations",
             "confidence",
             "lastVerifiedAt",
@@ -1355,6 +2320,12 @@
         },
         {
           "category": "models",
+          "id": "gpt-4-1",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
           "id": "gpt-4-1-mini",
           "change": "added",
           "fields": [
@@ -1417,6 +2388,12 @@
         },
         {
           "category": "models",
+          "id": "gpt-4o",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
           "id": "gpt-4o-mini",
           "change": "added",
           "fields": [
@@ -1445,6 +2422,24 @@
             "verifiedBy",
             "websiteUrl"
           ]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-1",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-1-codex",
+          "change": "updated",
+          "fields": ["tokenPricing"]
         },
         {
           "category": "models",
@@ -1507,6 +2502,12 @@
             "verifiedBy",
             "websiteUrl"
           ]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-2",
+          "change": "updated",
+          "fields": ["tokenPricing"]
         },
         {
           "category": "models",
@@ -1786,6 +2787,30 @@
             "verifiedBy",
             "websiteUrl"
           ]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-6-luna",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-6-sol",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-6-terra",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-codex",
+          "change": "updated",
+          "fields": ["tokenPricing"]
         },
         {
           "category": "models",
@@ -2101,13 +3126,20 @@
           "category": "models",
           "id": "grok-code-fast-1",
           "change": "updated",
-          "fields": ["lifecycle", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+          "fields": [
+            "lifecycle",
+            "tokenPricing",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
         },
         {
           "category": "models",
           "id": "kat-coder-pro-v1",
           "change": "updated",
-          "fields": ["benchmarks"]
+          "fields": ["benchmarks", "tokenPricing", "vendor"]
         },
         {
           "category": "models",
@@ -2138,6 +3170,19 @@
             "verified",
             "verifiedBy",
             "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "kimi-k2-0905",
+          "change": "updated",
+          "fields": [
+            "lifecycle",
+            "tokenPricing",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
           ]
         },
         {
@@ -2266,6 +3311,19 @@
         },
         {
           "category": "models",
+          "id": "kimi-k2-thinking",
+          "change": "updated",
+          "fields": [
+            "lifecycle",
+            "tokenPricing",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "models",
           "id": "kimi-k3",
           "change": "added",
           "fields": [
@@ -2356,6 +3414,18 @@
             "verifiedBy",
             "websiteUrl"
           ]
+        },
+        {
+          "category": "models",
+          "id": "minimax-m2",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
+          "id": "minimax-m2-1",
+          "change": "updated",
+          "fields": ["tokenPricing"]
         },
         {
           "category": "models",
@@ -2762,6 +3832,18 @@
         },
         {
           "category": "models",
+          "id": "qwen3-coder-30b-a3b",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
+          "id": "qwen3-coder-480b-a35b",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
           "id": "qwen3-coder-flash",
           "change": "added",
           "fields": [
@@ -2824,6 +3906,12 @@
         },
         {
           "category": "models",
+          "id": "qwen3-coder-plus",
+          "change": "updated",
+          "fields": ["tokenPricing"]
+        },
+        {
+          "category": "models",
           "id": "qwen3-max-2026-01-23",
           "change": "added",
           "fields": [
@@ -2852,6 +3940,229 @@
             "verifiedBy",
             "websiteUrl"
           ]
+        },
+        {
+          "category": "providers",
+          "id": "kwaikatonai",
+          "change": "updated",
+          "fields": ["vendor"]
+        },
+        {
+          "category": "vendors",
+          "id": "anomaly",
+          "change": "added",
+          "fields": [
+            "aliases",
+            "communityUrls",
+            "confidence",
+            "description",
+            "id",
+            "lastVerifiedAt",
+            "name",
+            "sources",
+            "translations",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "atlassian",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "id",
+            "lastVerifiedAt",
+            "name",
+            "sources",
+            "translations",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "cline",
+          "change": "updated",
+          "fields": ["aliases"]
+        },
+        {
+          "category": "vendors",
+          "id": "cline-bot",
+          "change": "removed",
+          "fields": [
+            "communityUrls",
+            "description",
+            "id",
+            "name",
+            "translations",
+            "verified",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "continue",
+          "change": "updated",
+          "fields": ["aliases"]
+        },
+        {
+          "category": "vendors",
+          "id": "continue-dev",
+          "change": "removed",
+          "fields": [
+            "communityUrls",
+            "description",
+            "id",
+            "name",
+            "translations",
+            "verified",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "factory-ai",
+          "change": "updated",
+          "fields": ["aliases"]
+        },
+        {
+          "category": "vendors",
+          "id": "gitlab",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "id",
+            "lastVerifiedAt",
+            "name",
+            "sources",
+            "translations",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "kwai",
+          "change": "removed",
+          "fields": [
+            "communityUrls",
+            "description",
+            "id",
+            "name",
+            "translations",
+            "verified",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "kwaikat",
+          "change": "removed",
+          "fields": [
+            "communityUrls",
+            "description",
+            "id",
+            "name",
+            "translations",
+            "verified",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "mistral-ai",
+          "change": "added",
+          "fields": [
+            "aliases",
+            "communityUrls",
+            "confidence",
+            "description",
+            "id",
+            "lastVerifiedAt",
+            "name",
+            "sources",
+            "translations",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "moonshot",
+          "change": "updated",
+          "fields": ["name", "aliases"]
+        },
+        {
+          "category": "vendors",
+          "id": "moonshot-ai",
+          "change": "removed",
+          "fields": [
+            "communityUrls",
+            "description",
+            "id",
+            "name",
+            "translations",
+            "verified",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "oh-my-pi",
+          "change": "added",
+          "fields": [
+            "aliases",
+            "communityUrls",
+            "confidence",
+            "description",
+            "id",
+            "lastVerifiedAt",
+            "name",
+            "sources",
+            "translations",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "stagewise",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "id",
+            "lastVerifiedAt",
+            "name",
+            "sources",
+            "translations",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "streamlake",
+          "change": "updated",
+          "fields": ["aliases"]
+        },
+        {
+          "category": "vendors",
+          "id": "z-ai",
+          "change": "updated",
+          "fields": ["aliases"]
         }
       ]
     },
