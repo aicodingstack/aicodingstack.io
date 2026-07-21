@@ -1,0 +1,89 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gpt-5-4-mini",
+  "name": "GPT-5.4 mini",
+  "description": "OpenAI's fast and efficient GPT-5.4 model for coding, computer use, multimodal understanding, tool use, and subagent workloads.",
+  "translations": {
+    "de": {
+      "description": "OpenAIs schnelles und effizientes GPT-5.4-Modell für Programmierung, Computernutzung, multimodales Verständnis, Werkzeuge und Subagenten."
+    },
+    "es": {
+      "description": "El modelo GPT-5.4 rápido y eficiente de OpenAI para programación, uso de computadoras, comprensión multimodal, herramientas y subagentes."
+    },
+    "fr": {
+      "description": "Le modèle GPT-5.4 rapide et efficace d’OpenAI pour le codage, l’ordinateur, la compréhension multimodale, les outils et les sous-agents."
+    },
+    "id": {
+      "description": "Model GPT-5.4 OpenAI yang cepat dan efisien untuk coding, penggunaan komputer, pemahaman multimodal, penggunaan alat, dan beban kerja subagen."
+    },
+    "ja": {
+      "description": "コーディング、コンピューター操作、マルチモーダル理解、ツール利用、サブエージェント処理向けの高速で効率的なOpenAI GPT-5.4モデル。"
+    },
+    "ko": {
+      "description": "코딩, 컴퓨터 사용, 멀티모달 이해, 도구 사용 및 하위 에이전트 워크로드를 위한 빠르고 효율적인 OpenAI GPT-5.4 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo GPT-5.4 rápido e eficiente da OpenAI para programação, uso de computadores, compreensão multimodal, ferramentas e subagentes."
+    },
+    "ru": {
+      "description": "Быстрая и эффективная модель OpenAI GPT-5.4 для программирования, управления компьютером, мультимодального понимания, инструментов и субагентов."
+    },
+    "tr": {
+      "description": "OpenAI'ın kodlama, bilgisayar kullanımı, çok modlu anlama, araç kullanımı ve alt aracı iş yükleri için hızlı ve verimli GPT-5.4 modeli."
+    },
+    "zh-Hans": {
+      "description": "OpenAI 面向编码、计算机使用、多模态理解、工具使用和子智能体工作负载的快速高效 GPT-5.4 模型。"
+    },
+    "zh-Hant": {
+      "description": "OpenAI 面向編碼、電腦使用、多模態理解、工具使用和子智慧體工作負載的快速高效 GPT-5.4 模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+      "title": "GPT-5.4 mini model documentation",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+      "title": "Introducing GPT-5.4 mini and nano",
+      "fields": ["name", "description", "releaseDate", "lifecycle", "benchmarks"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://openai.com",
+  "docsUrl": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+  "vendor": "OpenAI",
+  "size": null,
+  "contextWindow": 400000,
+  "maxOutput": 128000,
+  "tokenPricing": { "input": 0.75, "output": 4.5, "cache": 0.075 },
+  "releaseDate": "2026-03-17",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2025-08-31",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": 0.6,
+    "mmmu": null,
+    "mmmuPro": 76.6,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

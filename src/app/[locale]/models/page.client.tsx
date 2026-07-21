@@ -140,7 +140,9 @@ export default function ModelsPageClient({ locale }: Props) {
                         <div className="space-y-[var(--spacing-xs)] mb-[var(--spacing-md)]">
                           <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
                             <span className="text-[var(--color-text-muted)]">{tPage('size')}</span>
-                            <span className="text-[var(--color-text-secondary)]">{model.size}</span>
+                            <span className="text-[var(--color-text-secondary)]">
+                              {model.size ?? '—'}
+                            </span>
                           </div>
                           <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
                             <span className="text-[var(--color-text-muted)]">

@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-20",
+  "asOf": "2026-07-21",
   "thresholds": {
     "models": 30,
     "providers": 30,
@@ -9,19 +9,19 @@
     "vendors": 90
   },
   "summary": {
-    "totalRecords": 143,
-    "recordsWithSources": 18,
-    "verifiedRecords": 48,
-    "provenanceComplete": 18,
+    "totalRecords": 226,
+    "recordsWithSources": 114,
+    "verifiedRecords": 134,
+    "provenanceComplete": 114,
     "staleVerifiedRecords": 0,
     "translationPlaceholderValues": 1411,
     "danglingRelationships": 0,
-    "modelBenchmarkCoverage": 22.4,
+    "modelBenchmarkCoverage": 9.7,
     "productsWithPricing": 48,
     "productRecords": 48,
     "errors": 0,
-    "warnings": 30,
-    "info": 125
+    "warnings": 20,
+    "info": 112
   },
   "byCategory": {
     "ides": {
@@ -43,9 +43,9 @@
       "stale": 0
     },
     "models": {
-      "total": 42,
-      "verified": 37,
-      "provenanceComplete": 12,
+      "total": 125,
+      "verified": 123,
+      "provenanceComplete": 108,
       "stale": 0
     },
     "providers": {
@@ -137,62 +137,6 @@
       "severity": "warning",
       "code": "verified-without-provenance",
       "category": "models",
-      "id": "claude-opus-4",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "claude-opus-4-1",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "claude-opus-4-5",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "claude-sonnet-4",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "claude-sonnet-4-5",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "gemini-2-5-flash",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "gemini-2-5-pro",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "gemini-3-pro",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
       "id": "glm-4-6",
       "message": "Verified record is missing sources, review date, reviewer, or confidence."
     },
@@ -201,13 +145,6 @@
       "code": "verified-without-provenance",
       "category": "models",
       "id": "glm-4-6v",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "glm-4-7",
       "message": "Verified record is missing sources, review date, reviewer, or confidence."
     },
     {
@@ -250,13 +187,6 @@
       "code": "verified-without-provenance",
       "category": "models",
       "id": "gpt-5-codex",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "grok-code-fast-1",
       "message": "Verified record is missing sources, review date, reviewer, or confidence."
     },
     {
@@ -648,84 +578,7 @@
       "severity": "info",
       "code": "missing-sources",
       "category": "models",
-      "id": "claude-opus-4",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "claude-opus-4-1",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "claude-opus-4-5",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "claude-sonnet-4",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "claude-sonnet-4-5",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
       "id": "composer",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "deepseek-3-2",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "deepseek-r1",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "deepseek-v3-terminus",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "gemini-2-5-flash",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "gemini-2-5-pro",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "gemini-3-pro",
       "message": "No structured source references are recorded."
     },
     {
@@ -740,13 +593,6 @@
       "code": "missing-sources",
       "category": "models",
       "id": "glm-4-6v",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "glm-4-7",
       "message": "No structured source references are recorded."
     },
     {
@@ -789,13 +635,6 @@
       "code": "missing-sources",
       "category": "models",
       "id": "gpt-5-codex",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "grok-code-fast-1",
       "message": "No structured source references are recorded."
     },
     {

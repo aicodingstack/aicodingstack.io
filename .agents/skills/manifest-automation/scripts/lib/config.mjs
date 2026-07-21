@@ -29,12 +29,12 @@ export const MANIFEST_PATHS = {
 
 // Workflow file mapping
 export const WORKFLOW_PATHS = {
-  cli: '.claude/skills/manifest-automation/scripts/workflows/cli-workflow.md',
-  extension: '.claude/skills/manifest-automation/scripts/workflows/extension-workflow.md',
-  ide: '.claude/skills/manifest-automation/scripts/workflows/ide-workflow.md',
-  model: '.claude/skills/manifest-automation/scripts/workflows/model-workflow.md',
-  provider: '.claude/skills/manifest-automation/scripts/workflows/provider-workflow.md',
-  vendor: '.claude/skills/manifest-automation/scripts/workflows/vendor-workflow.md',
+  cli: '.agents/skills/manifest-automation/scripts/workflows/cli-workflow.md',
+  extension: '.agents/skills/manifest-automation/scripts/workflows/extension-workflow.md',
+  ide: '.agents/skills/manifest-automation/scripts/workflows/ide-workflow.md',
+  model: '.agents/skills/manifest-automation/scripts/workflows/model-workflow.md',
+  provider: '.agents/skills/manifest-automation/scripts/workflows/provider-workflow.md',
+  vendor: '.agents/skills/manifest-automation/scripts/workflows/vendor-workflow.md',
 }
 
 // Retry configuration
@@ -45,10 +45,9 @@ export const RETRY_CONFIG = {
 
 // Field categories for smart merge
 export const FIELD_CATEGORIES = {
-  // Always update from official source
+  // May update only after verification against a current authoritative source.
   AUTO_UPDATE: [
     'latestVersion',
-    'description',
     'websiteUrl',
     'docsUrl',
     'resourceUrls.changelog',
@@ -59,14 +58,24 @@ export const FIELD_CATEGORIES = {
     'maxOutput',
   ],
 
-  // Never update (user-curated)
-  PRESERVE: ['id', 'name', 'verified', 'i18n', 'relatedProducts'],
+  // Preserve identity, relationships, and localized copy for manual review.
+  PRESERVE: ['id', 'name', 'translations', 'relatedProducts', 'vendor', 'provider'],
 
   // Smart merge: add new, keep existing
-  MERGE_ADDITIVE: ['communityUrls', 'platformUrls', 'supportedIdes', 'platforms', 'pricing'],
+  MERGE_ADDITIVE: ['communityUrls', 'platformUrls', 'supportedIdes', 'platforms'],
 
   // Present both for Claude to decide
-  CONDITIONAL: ['license', 'vendor'],
+  CONDITIONAL: [
+    'description',
+    'license',
+    'pricing',
+    'releaseDate',
+    'lifecycle',
+    'sources',
+    'lastVerifiedAt',
+    'verifiedBy',
+    'confidence',
+  ],
 }
 
 // Platform OS enum values

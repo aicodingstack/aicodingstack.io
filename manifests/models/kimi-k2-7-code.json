@@ -1,0 +1,99 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "kimi-k2-7-code",
+  "name": "Kimi K2.7 Code",
+  "description": "Moonshot AI's open-weight coding agent model for long-horizon software engineering, efficient reasoning, tool use, and visual inputs.",
+  "translations": {
+    "de": {
+      "description": "Moonshot AIs Open-Weight-Coding-Agent für langfristige Softwareentwicklung, effizientes Reasoning, Werkzeugnutzung und visuelle Eingaben."
+    },
+    "es": {
+      "description": "El agente de código de pesos abiertos de Moonshot AI para ingeniería de software prolongada, razonamiento eficiente, herramientas y entradas visuales."
+    },
+    "fr": {
+      "description": "L’agent de codage à poids ouverts de Moonshot AI pour l’ingénierie logicielle longue, le raisonnement efficace, les outils et les entrées visuelles."
+    },
+    "id": {
+      "description": "Model agen coding berbobot terbuka Moonshot AI untuk rekayasa perangkat lunak jangka panjang, penalaran efisien, alat, dan input visual."
+    },
+    "ja": {
+      "description": "長時間のソフトウェア開発、効率的な推論、ツール利用、視覚入力向けのMoonshot AI製オープンウェイト・コーディングエージェント。"
+    },
+    "ko": {
+      "description": "장기 소프트웨어 엔지니어링, 효율적인 추론, 도구 사용 및 시각 입력을 위한 Moonshot AI의 오픈 웨이트 코딩 에이전트 모델입니다."
+    },
+    "pt": {
+      "description": "O agente de código de pesos abertos da Moonshot AI para engenharia de software prolongada, raciocínio eficiente, ferramentas e entradas visuais."
+    },
+    "ru": {
+      "description": "Агент программирования Moonshot AI с открытыми весами для длительной разработки, эффективных рассуждений, инструментов и визуального ввода."
+    },
+    "tr": {
+      "description": "Moonshot AI'ın uzun süreli yazılım mühendisliği, verimli akıl yürütme, araç kullanımı ve görsel girdiler için açık ağırlıklı kodlama aracısı modeli."
+    },
+    "zh-Hans": {
+      "description": "Moonshot AI 面向长周期软件工程、高效推理、工具调用和视觉输入的开放权重编码智能体模型。"
+    },
+    "zh-Hant": {
+      "description": "Moonshot AI 面向長週期軟體工程、高效推理、工具呼叫和視覺輸入的開放權重編碼智慧體模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.kimi.com/resources/kimi-k2-7-code",
+      "title": "Kimi K2.7 Code model page",
+      "fields": [
+        "name",
+        "description",
+        "size",
+        "contextWindow",
+        "tokenPricing",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "lifecycle"
+      ]
+    },
+    {
+      "url": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html",
+      "title": "Kimi Code release notes",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+      "title": "Kimi K2.7 Code official model card",
+      "fields": ["size", "contextWindow", "platformUrls.huggingface"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.kimi.com",
+  "docsUrl": "https://www.kimi.com/resources/kimi-k2-7-code",
+  "vendor": "Moonshot",
+  "size": "1T (32B active)",
+  "contextWindow": 262144,
+  "maxOutput": null,
+  "tokenPricing": { "input": 0.95, "output": 4, "cache": 0.19 },
+  "releaseDate": "2026-06-12",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

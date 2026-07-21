@@ -39,10 +39,36 @@
     }
   },
   "verified": true,
+  "sources": [
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-pro",
+      "title": "Gemini 2.5 Pro model documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+      "title": "Gemini model lifecycle documentation",
+      "fields": ["releaseDate", "lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://deepmind.google",
   "docsUrl": "https://ai.google.dev/gemini-api/docs/models#gemini-2.5-pro",
   "vendor": "Google",
-  "size": "Unknown",
+  "size": null,
   "contextWindow": 1048576,
   "maxOutput": 65536,
   "tokenPricing": {
@@ -50,9 +76,9 @@
     "output": 10,
     "cache": 0.125
   },
-  "releaseDate": "2025-05-06",
+  "releaseDate": "2025-06-17",
   "lifecycle": "maintained",
-  "knowledgeCutoff": "2025-05",
+  "knowledgeCutoff": "2025-01",
   "inputModalities": ["text", "image", "pdf", "audio", "video"],
   "outputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],

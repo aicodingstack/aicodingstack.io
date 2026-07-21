@@ -1,0 +1,100 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "mistral-medium-3-5",
+  "name": "Mistral Medium 3.5",
+  "description": "Mistral AI's open-weight frontier-class multimodal model for agentic and coding workloads, with adjustable reasoning and a 256K-token context window.",
+  "translations": {
+    "de": {
+      "description": "Mistral AIs offenes, multimodales Frontier-Modell für agentische und Programmieraufgaben mit anpassbarem Schlussfolgern und einem Kontextfenster von 256K Token."
+    },
+    "es": {
+      "description": "El modelo multimodal de frontera con pesos abiertos de Mistral AI para tareas agénticas y de programación, con razonamiento ajustable y una ventana de contexto de 256K tokens."
+    },
+    "fr": {
+      "description": "Le modèle multimodal de pointe à poids ouverts de Mistral AI pour les tâches agentiques et le codage, avec raisonnement réglable et fenêtre de contexte de 256K jetons."
+    },
+    "id": {
+      "description": "Model multimodal frontier open-weight Mistral AI untuk beban kerja agentik dan coding, dengan penalaran yang dapat disesuaikan dan jendela konteks 256K token."
+    },
+    "ja": {
+      "description": "エージェントおよびコーディング用途向けに、調整可能な推論と256Kトークンのコンテキストを備えたMistral AIのオープンウェイト・マルチモーダルフロンティアモデル。"
+    },
+    "ko": {
+      "description": "에이전트 및 코딩 작업을 위해 조절 가능한 추론과 256K 토큰 컨텍스트를 제공하는 Mistral AI의 오픈 웨이트 멀티모달 프런티어 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo multimodal de fronteira com pesos abertos da Mistral AI para tarefas agênticas e programação, com raciocínio ajustável e janela de contexto de 256K tokens."
+    },
+    "ru": {
+      "description": "Открытая мультимодальная передовая модель Mistral AI для агентных задач и программирования с настраиваемыми рассуждениями и контекстом 256K токенов."
+    },
+    "tr": {
+      "description": "Mistral AI'ın aracı ve kodlama iş yükleri için ayarlanabilir akıl yürütme ve 256K token bağlam penceresi sunan açık ağırlıklı çok modlu öncü modeli."
+    },
+    "zh-Hans": {
+      "description": "Mistral AI 面向智能体与编码任务的开放权重多模态前沿模型，支持可调节推理和 256K token 上下文窗口。"
+    },
+    "zh-Hant": {
+      "description": "Mistral AI 面向智慧體與編碼任務的開放權重多模態前沿模型，支援可調節推理和 256K token 上下文視窗。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
+      "title": "Mistral Medium 3.5 model card",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "tokenPricing",
+        "releaseDate",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://docs.mistral.ai/models/model-selection-guide?models=mistral-medium-3-5-26-04",
+      "title": "Mistral model selection guide",
+      "fields": ["size"]
+    },
+    {
+      "url": "https://docs.mistral.ai/resources/changelogs",
+      "title": "Mistral platform changelog",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://mistral.ai/pricing/api/",
+      "title": "Mistral API pricing",
+      "fields": ["tokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://mistral.ai/models",
+  "docsUrl": "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
+  "vendor": "Mistral AI",
+  "size": "128B",
+  "contextWindow": 256000,
+  "maxOutput": null,
+  "tokenPricing": { "input": 1.5, "output": 7.5, "cache": null },
+  "releaseDate": "2026-04-28",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

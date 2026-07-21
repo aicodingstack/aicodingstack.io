@@ -5,92 +5,258 @@
  */
 
 import ClaudeFable5 from '../../../manifests/models/claude-fable-5.json'
+import ClaudeHaiku3 from '../../../manifests/models/claude-haiku-3.json'
+import ClaudeHaiku35 from '../../../manifests/models/claude-haiku-3-5.json'
 import ClaudeHaiku45 from '../../../manifests/models/claude-haiku-4-5.json'
+import ClaudeMythos5 from '../../../manifests/models/claude-mythos-5.json'
+import ClaudeOpus3 from '../../../manifests/models/claude-opus-3.json'
 import ClaudeOpus4 from '../../../manifests/models/claude-opus-4.json'
 import ClaudeOpus41 from '../../../manifests/models/claude-opus-4-1.json'
 import ClaudeOpus45 from '../../../manifests/models/claude-opus-4-5.json'
+import ClaudeOpus46 from '../../../manifests/models/claude-opus-4-6.json'
+import ClaudeOpus47 from '../../../manifests/models/claude-opus-4-7.json'
 import ClaudeOpus48 from '../../../manifests/models/claude-opus-4-8.json'
+import ClaudeSonnet3 from '../../../manifests/models/claude-sonnet-3.json'
+import ClaudeSonnet3520240620 from '../../../manifests/models/claude-sonnet-3-5-20240620.json'
+import ClaudeSonnet3520241022 from '../../../manifests/models/claude-sonnet-3-5-20241022.json'
+import ClaudeSonnet37 from '../../../manifests/models/claude-sonnet-3-7.json'
 import ClaudeSonnet4 from '../../../manifests/models/claude-sonnet-4.json'
 import ClaudeSonnet45 from '../../../manifests/models/claude-sonnet-4-5.json'
+import ClaudeSonnet46 from '../../../manifests/models/claude-sonnet-4-6.json'
 import ClaudeSonnet5 from '../../../manifests/models/claude-sonnet-5.json'
+import Codestral2405 from '../../../manifests/models/codestral-2405.json'
+import Codestral2501 from '../../../manifests/models/codestral-2501.json'
+import Codestral2508 from '../../../manifests/models/codestral-2508.json'
 import Composer from '../../../manifests/models/composer.json'
+import CursorComposer2 from '../../../manifests/models/cursor-composer-2.json'
+import CursorComposer25 from '../../../manifests/models/cursor-composer-2-5.json'
 import Deepseek32 from '../../../manifests/models/deepseek-3-2.json'
+import DeepseekCoderV20724 from '../../../manifests/models/deepseek-coder-v2-0724.json'
 import DeepseekR1 from '../../../manifests/models/deepseek-r1.json'
+import DeepseekR10528 from '../../../manifests/models/deepseek-r1-0528.json'
+import DeepseekV3 from '../../../manifests/models/deepseek-v3.json'
+import DeepseekV31 from '../../../manifests/models/deepseek-v3-1.json'
+import DeepseekV32Exp from '../../../manifests/models/deepseek-v3-2-exp.json'
 import DeepseekV3Terminus from '../../../manifests/models/deepseek-v3-terminus.json'
+import DeepseekV4Flash from '../../../manifests/models/deepseek-v4-flash.json'
+import DeepseekV4Pro from '../../../manifests/models/deepseek-v4-pro.json'
+import Devstral2 from '../../../manifests/models/devstral-2.json'
+import DevstralMedium10 from '../../../manifests/models/devstral-medium-1-0.json'
+import DevstralSmall10 from '../../../manifests/models/devstral-small-1-0.json'
+import DevstralSmall11 from '../../../manifests/models/devstral-small-1-1.json'
+import DevstralSmall2 from '../../../manifests/models/devstral-small-2.json'
+import Gemini20Flash from '../../../manifests/models/gemini-2-0-flash.json'
+import Gemini20FlashLite from '../../../manifests/models/gemini-2-0-flash-lite.json'
 import Gemini25Flash from '../../../manifests/models/gemini-2-5-flash.json'
+import Gemini25FlashLite from '../../../manifests/models/gemini-2-5-flash-lite.json'
 import Gemini25Pro from '../../../manifests/models/gemini-2-5-pro.json'
 import Gemini31FlashLite from '../../../manifests/models/gemini-3-1-flash-lite.json'
 import Gemini31ProPreview from '../../../manifests/models/gemini-3-1-pro-preview.json'
 import Gemini35Flash from '../../../manifests/models/gemini-3-5-flash.json'
 import Gemini3Flash from '../../../manifests/models/gemini-3-flash.json'
 import Gemini3Pro from '../../../manifests/models/gemini-3-pro.json'
+import Glm45 from '../../../manifests/models/glm-4-5.json'
 import Glm46 from '../../../manifests/models/glm-4-6.json'
 import Glm46v from '../../../manifests/models/glm-4-6v.json'
 import Glm47 from '../../../manifests/models/glm-4-7.json'
+import Glm5 from '../../../manifests/models/glm-5.json'
+import Glm51 from '../../../manifests/models/glm-5-1.json'
+import Glm52 from '../../../manifests/models/glm-5-2.json'
 import Gpt41 from '../../../manifests/models/gpt-4-1.json'
+import Gpt41Mini from '../../../manifests/models/gpt-4-1-mini.json'
+import Gpt41Nano from '../../../manifests/models/gpt-4-1-nano.json'
 import Gpt4o from '../../../manifests/models/gpt-4o.json'
+import Gpt4oMini from '../../../manifests/models/gpt-4o-mini.json'
 import Gpt5 from '../../../manifests/models/gpt-5.json'
 import Gpt51 from '../../../manifests/models/gpt-5-1.json'
 import Gpt51Codex from '../../../manifests/models/gpt-5-1-codex.json'
+import Gpt51CodexMax from '../../../manifests/models/gpt-5-1-codex-max.json'
+import Gpt51CodexMini from '../../../manifests/models/gpt-5-1-codex-mini.json'
 import Gpt52 from '../../../manifests/models/gpt-5-2.json'
+import Gpt52Codex from '../../../manifests/models/gpt-5-2-codex.json'
+import Gpt52Pro from '../../../manifests/models/gpt-5-2-pro.json'
+import Gpt53Codex from '../../../manifests/models/gpt-5-3-codex.json'
+import Gpt54 from '../../../manifests/models/gpt-5-4.json'
+import Gpt54Mini from '../../../manifests/models/gpt-5-4-mini.json'
+import Gpt54Nano from '../../../manifests/models/gpt-5-4-nano.json'
+import Gpt54Pro from '../../../manifests/models/gpt-5-4-pro.json'
+import Gpt55 from '../../../manifests/models/gpt-5-5.json'
+import Gpt55Pro from '../../../manifests/models/gpt-5-5-pro.json'
 import Gpt56Luna from '../../../manifests/models/gpt-5-6-luna.json'
 import Gpt56Sol from '../../../manifests/models/gpt-5-6-sol.json'
 import Gpt56Terra from '../../../manifests/models/gpt-5-6-terra.json'
 import Gpt5Codex from '../../../manifests/models/gpt-5-codex.json'
+import Gpt5Mini from '../../../manifests/models/gpt-5-mini.json'
+import Gpt5Nano from '../../../manifests/models/gpt-5-nano.json'
+import Gpt5Pro from '../../../manifests/models/gpt-5-pro.json'
+import Grok4 from '../../../manifests/models/grok-4.json'
+import Grok41Fast from '../../../manifests/models/grok-4-1-fast.json'
+import Grok43 from '../../../manifests/models/grok-4-3.json'
+import Grok45 from '../../../manifests/models/grok-4-5.json'
+import Grok420 from '../../../manifests/models/grok-4-20.json'
+import Grok4Fast from '../../../manifests/models/grok-4-fast.json'
+import GrokBuild01 from '../../../manifests/models/grok-build-0-1.json'
 import GrokCodeFast1 from '../../../manifests/models/grok-code-fast-1.json'
 import KatCoderProV1 from '../../../manifests/models/kat-coder-pro-v1.json'
+import KimiDev72b from '../../../manifests/models/kimi-dev-72b.json'
+import KimiK25 from '../../../manifests/models/kimi-k2-5.json'
+import KimiK26 from '../../../manifests/models/kimi-k2-6.json'
+import KimiK27Code from '../../../manifests/models/kimi-k2-7-code.json'
 import KimiK20905 from '../../../manifests/models/kimi-k2-0905.json'
+import KimiK2Instruct from '../../../manifests/models/kimi-k2-instruct.json'
 import KimiK2Thinking from '../../../manifests/models/kimi-k2-thinking.json'
+import KimiK3 from '../../../manifests/models/kimi-k3.json'
+import Llama4Maverick from '../../../manifests/models/llama-4-maverick.json'
+import Llama4Scout from '../../../manifests/models/llama-4-scout.json'
 import MinimaxM2 from '../../../manifests/models/minimax-m2.json'
 import MinimaxM21 from '../../../manifests/models/minimax-m2-1.json'
+import MinimaxM25 from '../../../manifests/models/minimax-m2-5.json'
+import MinimaxM27 from '../../../manifests/models/minimax-m2-7.json'
+import MinimaxM3 from '../../../manifests/models/minimax-m3.json'
+import MistralMedium35 from '../../../manifests/models/mistral-medium-3-5.json'
+import MistralSmall4 from '../../../manifests/models/mistral-small-4.json'
+import MuseSpark11 from '../../../manifests/models/muse-spark-1-1.json'
+import O3 from '../../../manifests/models/o3.json'
+import O3Mini from '../../../manifests/models/o3-mini.json'
+import O4Mini from '../../../manifests/models/o4-mini.json'
+import Qwen35Plus from '../../../manifests/models/qwen3-5-plus.json'
+import Qwen36Plus from '../../../manifests/models/qwen3-6-plus.json'
+import Qwen37Max from '../../../manifests/models/qwen3-7-max.json'
+import Qwen37Plus from '../../../manifests/models/qwen3-7-plus.json'
 import Qwen3Coder30bA3b from '../../../manifests/models/qwen3-coder-30b-a3b.json'
 import Qwen3Coder480bA35b from '../../../manifests/models/qwen3-coder-480b-a35b.json'
+import Qwen3CoderFlash from '../../../manifests/models/qwen3-coder-flash.json'
+import Qwen3CoderNext from '../../../manifests/models/qwen3-coder-next.json'
 import Qwen3CoderPlus from '../../../manifests/models/qwen3-coder-plus.json'
+import Qwen3Max20260123 from '../../../manifests/models/qwen3-max-2026-01-23.json'
 import type { ManifestModel } from '../../types/manifests'
 
 export const modelsData = [
   ClaudeFable5,
+  ClaudeHaiku3,
+  ClaudeHaiku35,
   ClaudeHaiku45,
+  ClaudeMythos5,
+  ClaudeOpus3,
   ClaudeOpus4,
   ClaudeOpus41,
   ClaudeOpus45,
+  ClaudeOpus46,
+  ClaudeOpus47,
   ClaudeOpus48,
+  ClaudeSonnet3,
+  ClaudeSonnet3520240620,
+  ClaudeSonnet3520241022,
+  ClaudeSonnet37,
   ClaudeSonnet4,
   ClaudeSonnet45,
+  ClaudeSonnet46,
   ClaudeSonnet5,
+  Codestral2405,
+  Codestral2501,
+  Codestral2508,
   Composer,
+  CursorComposer2,
+  CursorComposer25,
   Deepseek32,
+  DeepseekCoderV20724,
   DeepseekR1,
+  DeepseekR10528,
+  DeepseekV3,
+  DeepseekV31,
+  DeepseekV32Exp,
   DeepseekV3Terminus,
+  DeepseekV4Flash,
+  DeepseekV4Pro,
+  Devstral2,
+  DevstralMedium10,
+  DevstralSmall10,
+  DevstralSmall11,
+  DevstralSmall2,
+  Gemini20Flash,
+  Gemini20FlashLite,
   Gemini25Flash,
+  Gemini25FlashLite,
   Gemini25Pro,
   Gemini31FlashLite,
   Gemini31ProPreview,
   Gemini35Flash,
   Gemini3Flash,
   Gemini3Pro,
+  Glm45,
   Glm46,
   Glm46v,
   Glm47,
+  Glm5,
+  Glm51,
+  Glm52,
   Gpt41,
+  Gpt41Mini,
+  Gpt41Nano,
   Gpt4o,
+  Gpt4oMini,
   Gpt5,
   Gpt51,
   Gpt51Codex,
+  Gpt51CodexMax,
+  Gpt51CodexMini,
   Gpt52,
+  Gpt52Codex,
+  Gpt52Pro,
+  Gpt53Codex,
+  Gpt54,
+  Gpt54Mini,
+  Gpt54Nano,
+  Gpt54Pro,
+  Gpt55,
+  Gpt55Pro,
   Gpt56Luna,
   Gpt56Sol,
   Gpt56Terra,
   Gpt5Codex,
+  Gpt5Mini,
+  Gpt5Nano,
+  Gpt5Pro,
+  Grok4,
+  Grok41Fast,
+  Grok420,
+  Grok43,
+  Grok45,
+  Grok4Fast,
+  GrokBuild01,
   GrokCodeFast1,
   KatCoderProV1,
+  KimiDev72b,
   KimiK20905,
+  KimiK25,
+  KimiK26,
+  KimiK27Code,
+  KimiK2Instruct,
   KimiK2Thinking,
+  KimiK3,
+  Llama4Maverick,
+  Llama4Scout,
   MinimaxM2,
   MinimaxM21,
+  MinimaxM25,
+  MinimaxM27,
+  MinimaxM3,
+  MistralMedium35,
+  MistralSmall4,
+  MuseSpark11,
+  O3,
+  O3Mini,
+  O4Mini,
+  Qwen35Plus,
+  Qwen36Plus,
+  Qwen37Max,
+  Qwen37Plus,
   Qwen3Coder30bA3b,
   Qwen3Coder480bA35b,
+  Qwen3CoderFlash,
+  Qwen3CoderNext,
   Qwen3CoderPlus,
+  Qwen3Max20260123,
 ] as unknown as ManifestModel[]
 
 export type Model = typeof ClaudeFable5

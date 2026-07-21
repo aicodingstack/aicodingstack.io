@@ -1,0 +1,104 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "glm-5",
+  "name": "GLM-5",
+  "description": "Z.ai's 744B open-weight foundation model for agentic engineering, complex system development, and long-horizon coding tasks.",
+  "translations": {
+    "de": {
+      "description": "Z.ais offenes 744B-Foundation-Modell für agentische Softwareentwicklung, komplexe Systementwicklung und langfristige Programmieraufgaben."
+    },
+    "es": {
+      "description": "El modelo fundacional de pesos abiertos de 744B de Z.ai para ingeniería agéntica, desarrollo de sistemas complejos y tareas de programación prolongadas."
+    },
+    "fr": {
+      "description": "Le modèle fondamental ouvert de 744B de Z.ai pour l’ingénierie agentique, les systèmes complexes et les tâches de codage de longue durée."
+    },
+    "id": {
+      "description": "Model foundation open-weight 744B Z.ai untuk rekayasa agentik, pengembangan sistem kompleks, dan tugas coding jangka panjang."
+    },
+    "ja": {
+      "description": "エージェント型エンジニアリング、複雑なシステム開発、長期コーディングタスク向けのZ.ai製744Bオープンウェイト基盤モデル。"
+    },
+    "ko": {
+      "description": "에이전트 엔지니어링, 복잡한 시스템 개발 및 장기 코딩 작업을 위한 Z.ai의 744B 오픈 웨이트 기반 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo fundamental de pesos abertos de 744B da Z.ai para engenharia agêntica, sistemas complexos e tarefas de programação prolongadas."
+    },
+    "ru": {
+      "description": "Открытая базовая модель Z.ai на 744B параметров для агентной разработки, сложных систем и длительных задач программирования."
+    },
+    "tr": {
+      "description": "Z.ai'ın aracı mühendislik, karmaşık sistem geliştirme ve uzun süreli kodlama görevleri için 744B açık ağırlıklı temel modeli."
+    },
+    "zh-Hans": {
+      "description": "Z.ai 面向智能体工程、复杂系统开发和长周期编码任务的 744B 开放权重基础模型。"
+    },
+    "zh-Hant": {
+      "description": "Z.ai 面向智慧體工程、複雜系統開發和長週期編碼任務的 744B 開放權重基礎模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.z.ai/guides/llm/glm-5",
+      "title": "GLM-5 model documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "maxOutput",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "title": "Z.ai model release notes",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "title": "Z.ai API pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://huggingface.co/zai-org/GLM-5",
+      "title": "Official GLM-5 weights and model card",
+      "fields": ["size", "platformUrls"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://z.ai",
+  "docsUrl": "https://docs.z.ai/guides/llm/glm-5",
+  "vendor": "Z.ai",
+  "size": "744B (40B active)",
+  "contextWindow": 204800,
+  "maxOutput": 131072,
+  "tokenPricing": { "input": 1, "output": 3.2, "cache": 0.2 },
+  "releaseDate": "2026-02-12",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/zai-org/GLM-5",
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

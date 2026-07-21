@@ -1,0 +1,103 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "glm-5-1",
+  "name": "GLM-5.1",
+  "description": "Z.ai's open-weight flagship for long-horizon agentic engineering, sustained autonomous coding, and production-grade delivery across tasks lasting up to eight hours.",
+  "translations": {
+    "de": {
+      "description": "Z.ais offenes Flaggschiff für langfristige agentische Entwicklung, anhaltend autonomes Programmieren und produktionsreife Ergebnisse bei Aufgaben bis zu acht Stunden."
+    },
+    "es": {
+      "description": "El modelo insignia de pesos abiertos de Z.ai para ingeniería agéntica prolongada, programación autónoma sostenida y entregas de producción en tareas de hasta ocho horas."
+    },
+    "fr": {
+      "description": "Le modèle phare ouvert de Z.ai pour l’ingénierie agentique longue, le codage autonome continu et des livrables de production sur des tâches allant jusqu’à huit heures."
+    },
+    "id": {
+      "description": "Model unggulan open-weight Z.ai untuk rekayasa agentik jangka panjang, coding otonom berkelanjutan, dan hasil siap produksi pada tugas hingga delapan jam."
+    },
+    "ja": {
+      "description": "最長8時間のタスクで、長期エージェント型エンジニアリング、継続的な自律コーディング、本番品質の成果物に対応するZ.aiのオープンウェイト旗艦モデル。"
+    },
+    "ko": {
+      "description": "최대 8시간 작업에서 장기 에이전트 엔지니어링, 지속적인 자율 코딩 및 프로덕션급 결과물을 제공하는 Z.ai의 오픈 웨이트 플래그십 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo principal de pesos abertos da Z.ai para engenharia agêntica prolongada, programação autônoma contínua e entregas de produção em tarefas de até oito horas."
+    },
+    "ru": {
+      "description": "Открытая флагманская модель Z.ai для длительной агентной разработки, автономного программирования и готовых результатов в задачах продолжительностью до восьми часов."
+    },
+    "tr": {
+      "description": "Z.ai'ın sekiz saate kadar süren görevlerde uzun vadeli aracı mühendislik, sürekli otonom kodlama ve üretim kalitesinde teslimat için açık ağırlıklı amiral modeli."
+    },
+    "zh-Hans": {
+      "description": "Z.ai 面向长周期智能体工程、持续自主编码和最长八小时任务生产级交付的开放权重旗舰模型。"
+    },
+    "zh-Hant": {
+      "description": "Z.ai 面向長週期智慧體工程、持續自主編碼和最長八小時任務生產級交付的開放權重旗艦模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.z.ai/guides/llm/glm-5.1",
+      "title": "GLM-5.1 model documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "title": "Z.ai model release notes",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "title": "Z.ai API pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://huggingface.co/zai-org/GLM-5.1",
+      "title": "Official GLM-5.1 weights and model card",
+      "fields": ["size", "platformUrls"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://z.ai",
+  "docsUrl": "https://docs.z.ai/guides/llm/glm-5.1",
+  "vendor": "Z.ai",
+  "size": "754B",
+  "contextWindow": 204800,
+  "maxOutput": 131072,
+  "tokenPricing": { "input": 1.4, "output": 4.4, "cache": 0.26 },
+  "releaseDate": "2026-04-07",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/zai-org/GLM-5.1",
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

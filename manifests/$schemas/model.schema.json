@@ -11,28 +11,28 @@
       "type": "object",
       "properties": {
         "size": {
-          "type": "string",
-          "description": "Model parameter size (e.g., '7B', '32B', '200B')"
+          "type": ["string", "null"],
+          "description": "Model parameter size (e.g., '7B', '32B', '200B'), null when the vendor does not disclose it"
         },
         "contextWindow": {
           "type": "number",
           "description": "Total context window size in tokens (e.g., 32000, 64000, 200000)"
         },
         "maxOutput": {
-          "type": "number",
-          "description": "Maximum output token size in tokens (e.g., 4096, 8192)"
+          "type": ["number", "null"],
+          "description": "Maximum output token size in tokens (e.g., 4096, 8192), null when undocumented"
         },
         "tokenPricing": {
           "type": "object",
           "description": "Token-based pricing information for API usage (in $/M tokens)",
           "properties": {
             "input": {
-              "type": "number",
-              "description": "Input token pricing in $/M tokens (e.g., 0.14 for $0.14/1M tokens)"
+              "type": ["number", "null"],
+              "description": "Input token pricing in USD per million tokens, null when unavailable or not representable as a single USD rate"
             },
             "output": {
-              "type": "number",
-              "description": "Output token pricing in $/M tokens (e.g., 0.42 for $0.42/1M tokens)"
+              "type": ["number", "null"],
+              "description": "Output token pricing in USD per million tokens, null when unavailable or not representable as a single USD rate"
             },
             "cache": {
               "type": ["number", "null"],

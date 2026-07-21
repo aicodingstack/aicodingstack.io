@@ -52,14 +52,16 @@ export function ModelSpecifications({ model }: ModelSpecificationsProps) {
             </p>
           </div>
 
-          <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">
-            <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
-              {tShared('terms.maxOutput')}
-            </h3>
-            <p className="text-lg font-semibold tracking-tight">
-              {formatTokenCount(model.maxOutput)}
-            </p>
-          </div>
+          {model.maxOutput !== null && (
+            <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">
+              <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
+                {tShared('terms.maxOutput')}
+              </h3>
+              <p className="text-lg font-semibold tracking-tight">
+                {formatTokenCount(model.maxOutput)}
+              </p>
+            </div>
+          )}
 
           {model.tokenPricing && (
             <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">

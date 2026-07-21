@@ -1,0 +1,97 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gpt-5-2-codex",
+  "name": "GPT-5.2-Codex",
+  "description": "GPT-5.2 variant optimized for long-horizon agentic coding, code review, and software engineering workflows.",
+  "translations": {
+    "zh-Hans": {
+      "description": "GPT-5.2-Codex 是 OpenAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+    },
+    "de": {
+      "description": "GPT-5.2-Codex ist eine eigenständige Modellversion von OpenAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+    },
+    "es": {
+      "description": "GPT-5.2-Codex es una versión de modelo independiente de OpenAI con capacidades explícitas de programación o ingeniería de software."
+    },
+    "fr": {
+      "description": "GPT-5.2-Codex est une version de modèle distincte de OpenAI, dotée de capacités explicites en programmation ou en génie logiciel."
+    },
+    "id": {
+      "description": "GPT-5.2-Codex adalah versi model mandiri dari OpenAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+    },
+    "ja": {
+      "description": "GPT-5.2-Codex は OpenAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+    },
+    "ko": {
+      "description": "GPT-5.2-Codex은(는) OpenAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+    },
+    "pt": {
+      "description": "GPT-5.2-Codex é uma versão de modelo independente da OpenAI, com capacidades explícitas de programação ou engenharia de software."
+    },
+    "ru": {
+      "description": "GPT-5.2-Codex — самостоятельная версия модели от OpenAI с явно заявленными возможностями программирования или разработки ПО."
+    },
+    "tr": {
+      "description": "GPT-5.2-Codex, OpenAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+    },
+    "zh-Hant": {
+      "description": "GPT-5.2-Codex 是 OpenAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.2-codex",
+      "title": "GPT-5.2-Codex official documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "releaseDate",
+        "lifecycle",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://openai.com",
+  "docsUrl": "https://developers.openai.com/api/docs/models/gpt-5.2-codex",
+  "vendor": "OpenAI",
+  "size": null,
+  "contextWindow": 400000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "input": 1.75,
+    "output": 14,
+    "cache": 0.175
+  },
+  "releaseDate": "2025-12-18",
+  "lifecycle": "deprecated",
+  "knowledgeCutoff": "2025-08-31",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

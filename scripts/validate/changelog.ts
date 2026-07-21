@@ -91,7 +91,7 @@ function parseManifestPath(filePath: string): { category: ManifestCategory; id: 
 
 export function collectManifestChanges(rootDir: string, base: string): ManifestChange[] {
   const manifestPaths = MANIFEST_CATEGORIES.map(category => `manifests/${category}`)
-  const output = runGit(rootDir, [
+  const trackedOutput = runGit(rootDir, [
     'diff',
     '--name-status',
     '--find-renames',
@@ -99,10 +99,21 @@ export function collectManifestChanges(rootDir: string, base: string): ManifestC
     '--',
     ...manifestPaths,
   ])
-  if (!output) return []
+  const untrackedOutput = runGit(rootDir, [
+    'ls-files',
+    '--others',
+    '--exclude-standard',
+    '--',
+    ...manifestPaths,
+  ])
+  const lines = [
+    ...(trackedOutput ? trackedOutput.split('\n') : []),
+    ...(untrackedOutput ? untrackedOutput.split('\n').map(filePath => `A\t${filePath}`) : []),
+  ]
+  if (lines.length === 0) return []
 
   const changes: ManifestChange[] = []
-  for (const line of output.split('\n')) {
+  for (const line of lines) {
     const [status = '', firstPath, secondPath] = line.split('\t')
     const paths = status.startsWith('R') ? [firstPath, secondPath] : [firstPath]
     for (const filePath of paths.filter((value): value is string => Boolean(value))) {

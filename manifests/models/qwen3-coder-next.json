@@ -1,0 +1,99 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "qwen3-coder-next",
+  "name": "Qwen3-Coder-Next",
+  "description": "Alibaba's sparse open-weight coding model with 80B total and 3B active parameters, built for efficient long-context coding agents.",
+  "translations": {
+    "de": {
+      "description": "Alibabas spärliches Open-Weight-Coding-Modell mit 80B Gesamt- und 3B aktiven Parametern für effiziente Coding-Agenten mit langem Kontext."
+    },
+    "es": {
+      "description": "El modelo de código disperso y pesos abiertos de Alibaba, con 80B parámetros totales y 3B activos, para agentes eficientes de contexto largo."
+    },
+    "fr": {
+      "description": "Le modèle de codage sparse à poids ouverts d’Alibaba, avec 80B paramètres au total et 3B actifs, conçu pour les agents efficaces à long contexte."
+    },
+    "id": {
+      "description": "Model coding sparse berbobot terbuka Alibaba dengan 80B parameter total dan 3B aktif, dibuat untuk agen coding konteks panjang yang efisien."
+    },
+    "ja": {
+      "description": "総80B・アクティブ3Bパラメータで、効率的な長文脈コーディングエージェント向けに設計されたAlibabaの疎なオープンウェイトモデル。"
+    },
+    "ko": {
+      "description": "총 800억·활성 30억 매개변수로 효율적인 장문맥 코딩 에이전트를 위해 설계된 Alibaba의 희소 오픈 웨이트 코딩 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo de código esparso e pesos abertos da Alibaba, com 80B parâmetros totais e 3B ativos, para agentes eficientes de contexto longo."
+    },
+    "ru": {
+      "description": "Разреженная модель Alibaba с открытыми весами, 80 млрд общих и 3 млрд активных параметров, для эффективных агентов с длинным контекстом."
+    },
+    "tr": {
+      "description": "Alibaba'nın verimli uzun bağlamlı kodlama aracıları için 80B toplam ve 3B etkin parametreli seyrek açık ağırlıklı kodlama modeli."
+    },
+    "zh-Hans": {
+      "description": "阿里巴巴总参数 80B、激活参数 3B，面向高效长上下文编码智能体的稀疏开放权重模型。"
+    },
+    "zh-Hant": {
+      "description": "阿里巴巴總參數 80B、啟用參數 3B，面向高效長上下文編碼智慧體的稀疏開放權重模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next",
+      "title": "Qwen3-Coder-Next official model card",
+      "fields": [
+        "name",
+        "description",
+        "size",
+        "contextWindow",
+        "releaseDate",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "platformUrls.huggingface"
+      ]
+    },
+    {
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "title": "Qwen3-Coder official repository",
+      "fields": ["description", "lifecycle", "capabilities"]
+    },
+    {
+      "url": "https://help.aliyun.com/en/model-studio/qwen-coder",
+      "title": "Alibaba Cloud Qwen Coder documentation",
+      "fields": ["docsUrl", "tokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://qwen.ai",
+  "docsUrl": "https://help.aliyun.com/en/model-studio/qwen-coder",
+  "vendor": "Alibaba",
+  "size": "80B (3B active)",
+  "contextWindow": 262144,
+  "maxOutput": null,
+  "tokenPricing": { "input": null, "output": null, "cache": null },
+  "releaseDate": "2026-02-03",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/Qwen/Qwen3-Coder-Next",
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

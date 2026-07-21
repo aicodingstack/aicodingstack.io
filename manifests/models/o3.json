@@ -1,0 +1,97 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "o3",
+  "name": "o3",
+  "description": "Reasoning model for complex coding, mathematics, science, and visual analysis tasks.",
+  "translations": {
+    "zh-Hans": {
+      "description": "o3 是 OpenAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+    },
+    "de": {
+      "description": "o3 ist eine eigenständige Modellversion von OpenAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+    },
+    "es": {
+      "description": "o3 es una versión de modelo independiente de OpenAI con capacidades explícitas de programación o ingeniería de software."
+    },
+    "fr": {
+      "description": "o3 est une version de modèle distincte de OpenAI, dotée de capacités explicites en programmation ou en génie logiciel."
+    },
+    "id": {
+      "description": "o3 adalah versi model mandiri dari OpenAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+    },
+    "ja": {
+      "description": "o3 は OpenAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+    },
+    "ko": {
+      "description": "o3은(는) OpenAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+    },
+    "pt": {
+      "description": "o3 é uma versão de modelo independente da OpenAI, com capacidades explícitas de programação ou engenharia de software."
+    },
+    "ru": {
+      "description": "o3 — самостоятельная версия модели от OpenAI с явно заявленными возможностями программирования или разработки ПО."
+    },
+    "tr": {
+      "description": "o3, OpenAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+    },
+    "zh-Hant": {
+      "description": "o3 是 OpenAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/o3",
+      "title": "o3 official documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "releaseDate",
+        "lifecycle",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://openai.com",
+  "docsUrl": "https://developers.openai.com/api/docs/models/o3",
+  "vendor": "OpenAI",
+  "size": null,
+  "contextWindow": 200000,
+  "maxOutput": 100000,
+  "tokenPricing": {
+    "input": 2,
+    "output": 8,
+    "cache": 0.5
+  },
+  "releaseDate": "2025-04-16",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2024-06-01",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

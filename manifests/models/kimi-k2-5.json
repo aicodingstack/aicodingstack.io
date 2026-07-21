@@ -1,0 +1,126 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "kimi-k2-5",
+  "name": "Kimi K2.5",
+  "description": "Moonshot AI's open-weight multimodal agentic model for visual coding, reasoning, tool use, and coordinated long-horizon workflows.",
+  "translations": {
+    "de": {
+      "description": "Moonshot AIs multimodales Open-Weight-Agentenmodell für visuelles Coding, Reasoning, Werkzeugnutzung und koordinierte Langzeitabläufe."
+    },
+    "es": {
+      "description": "El modelo agéntico multimodal de pesos abiertos de Moonshot AI para código visual, razonamiento, herramientas y flujos coordinados prolongados."
+    },
+    "fr": {
+      "description": "Le modèle agentique multimodal à poids ouverts de Moonshot AI pour le codage visuel, le raisonnement, les outils et les longs flux coordonnés."
+    },
+    "id": {
+      "description": "Model agentik multimodal berbobot terbuka Moonshot AI untuk coding visual, penalaran, penggunaan alat, dan alur jangka panjang terkoordinasi."
+    },
+    "ja": {
+      "description": "視覚的コーディング、推論、ツール利用、連携した長時間ワークフロー向けのMoonshot AI製オープンウェイト・マルチモーダルエージェントモデル。"
+    },
+    "ko": {
+      "description": "비주얼 코딩, 추론, 도구 사용 및 조율된 장기 워크플로를 위한 Moonshot AI의 오픈 웨이트 멀티모달 에이전트 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo agêntico multimodal de pesos abertos da Moonshot AI para código visual, raciocínio, ferramentas e fluxos prolongados coordenados."
+    },
+    "ru": {
+      "description": "Мультимодальная агентная модель Moonshot AI с открытыми весами для визуального программирования, рассуждений, инструментов и долгих процессов."
+    },
+    "tr": {
+      "description": "Moonshot AI'ın görsel kodlama, akıl yürütme, araç kullanımı ve koordineli uzun süreli iş akışları için açık ağırlıklı çok modlu aracı modeli."
+    },
+    "zh-Hans": {
+      "description": "Moonshot AI 面向视觉编码、推理、工具调用和协同长周期工作流的开放权重多模态智能体模型。"
+    },
+    "zh-Hant": {
+      "description": "Moonshot AI 面向視覺編碼、推理、工具呼叫和協同長週期工作流程的開放權重多模態智慧體模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://github.com/MoonshotAI/Kimi-K2.5",
+      "title": "Kimi K2.5 official repository",
+      "fields": [
+        "name",
+        "description",
+        "size",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.5",
+      "title": "Kimi K2.5 official model card",
+      "fields": ["size", "contextWindow", "platformUrls.huggingface"]
+    },
+    {
+      "url": "https://www.moonshot.ai/news/kimi-k2-instruct-release",
+      "title": "Kimi release timeline",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://github.com/MoonshotAI/Kimi-K2.5",
+      "title": "Kimi K2.5 official benchmark table — SWE-bench Verified; Moonshot internal agent framework with minimal tools and tailored prompts; non-thinking mode; average of 5 runs; label: Kimi K2.5; observed 2026-07-21",
+      "fields": ["benchmarks.sweBench"]
+    },
+    {
+      "url": "https://github.com/MoonshotAI/Kimi-K2.5",
+      "title": "Kimi K2.5 official benchmark table — Terminal-Bench 2.0; Terminus-2 default framework and JSON parser; non-thinking mode; average of 5 runs; label: Kimi K2.5; observed 2026-07-21",
+      "fields": ["benchmarks.terminalBench"]
+    },
+    {
+      "url": "https://github.com/MoonshotAI/Kimi-K2.5",
+      "title": "Kimi K2.5 official benchmark table — MMMU-Pro; Official protocol preserving prompt order and prepending images; 64K maximum length; average of 3 runs; label: Kimi K2.5; observed 2026-07-21",
+      "fields": ["benchmarks.mmmuPro"]
+    },
+    {
+      "url": "https://github.com/MoonshotAI/Kimi-K2.5",
+      "title": "Kimi K2.5 official benchmark table — SciCode; Moonshot vendor evaluation in the coding benchmark suite; average of 5 runs; label: Kimi K2.5; observed 2026-07-21",
+      "fields": ["benchmarks.sciCode"]
+    },
+    {
+      "url": "https://github.com/MoonshotAI/Kimi-K2.5",
+      "title": "Kimi K2.5 official benchmark table — LiveCodeBench v6; Moonshot vendor evaluation in the coding benchmark suite; average of 5 runs; label: Kimi K2.5; observed 2026-07-21",
+      "fields": ["benchmarks.liveCodeBench"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.moonshot.ai",
+  "docsUrl": "https://github.com/MoonshotAI/Kimi-K2.5",
+  "vendor": "Moonshot",
+  "size": "1T (32B active)",
+  "contextWindow": 262144,
+  "maxOutput": null,
+  "tokenPricing": {
+    "input": null,
+    "output": null,
+    "cache": null
+  },
+  "releaseDate": "2026-01-27",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "reasoning"],
+  "benchmarks": {
+    "sweBench": 76.8,
+    "terminalBench": 0.508,
+    "mmmu": null,
+    "mmmuPro": 78.5,
+    "webDevArena": null,
+    "sciCode": 48.7,
+    "liveCodeBench": 85
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/moonshotai/Kimi-K2.5",
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

@@ -58,7 +58,7 @@
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
     "sweBench": null,
-    "terminalBench": 8.5,
+    "terminalBench": null,
     "mmmu": null,
     "mmmuPro": null,
     "webDevArena": null,

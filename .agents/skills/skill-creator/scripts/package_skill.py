@@ -3,17 +3,19 @@
 Skill Packager - Creates a distributable zip file of a skill folder
 
 Usage:
-    python utils/package_skill.py <path/to/skill-folder> [output-directory]
+    python3 package_skill.py <path/to/skill-folder> [output-directory]
 
 Example:
-    python utils/package_skill.py skills/public/my-skill
-    python utils/package_skill.py skills/public/my-skill ./dist
+    python3 package_skill.py .agents/skills/my-skill /tmp/skill-dist
 """
 
 import sys
 import zipfile
 from pathlib import Path
 from quick_validate import validate_skill
+
+TRANSIENT_NAMES = {".DS_Store", "__pycache__"}
+TRANSIENT_SUFFIXES = {".pyc", ".pyo"}
 
 
 def package_skill(skill_path, output_dir=None):
@@ -57,6 +59,9 @@ def package_skill(skill_path, output_dir=None):
     skill_name = skill_path.name
     if output_dir:
         output_path = Path(output_dir).resolve()
+        if output_path == skill_path or skill_path in output_path.parents:
+            print("❌ Error: output directory cannot be inside the skill directory")
+            return None
         output_path.mkdir(parents=True, exist_ok=True)
     else:
         output_path = Path.cwd()
@@ -65,13 +70,17 @@ def package_skill(skill_path, output_dir=None):
 
     # Create the zip file
     try:
-        with zipfile.ZipFile(zip_filename, 'w', zipfile.ZIP_DEFLATED) as zipf:
+        with zipfile.ZipFile(zip_filename, 'w', zipfile.ZIP_DEFLATED) as archive:
             # Walk through the skill directory
-            for file_path in skill_path.rglob('*'):
-                if file_path.is_file():
+            for file_path in sorted(skill_path.rglob('*')):
+                relative_parts = file_path.relative_to(skill_path).parts
+                is_transient = any(part in TRANSIENT_NAMES for part in relative_parts) or (
+                    file_path.suffix in TRANSIENT_SUFFIXES
+                )
+                if file_path.is_file() and not is_transient:
                     # Calculate the relative path within the zip
                     arcname = file_path.relative_to(skill_path.parent)
-                    zipf.write(file_path, arcname)
+                    archive.write(file_path, arcname)
                     print(f"  Added: {arcname}")
 
         print(f"\n✅ Successfully packaged skill to: {zip_filename}")
@@ -84,10 +93,9 @@ def package_skill(skill_path, output_dir=None):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python utils/package_skill.py <path/to/skill-folder> [output-directory]")
+        print("Usage: python3 package_skill.py <path/to/skill-folder> [output-directory]")
         print("\nExample:")
-        print("  python utils/package_skill.py skills/public/my-skill")
-        print("  python utils/package_skill.py skills/public/my-skill ./dist")
+        print("  python3 package_skill.py .agents/skills/my-skill /tmp/skill-dist")
         sys.exit(1)
 
     skill_path = sys.argv[1]

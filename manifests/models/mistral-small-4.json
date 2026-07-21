@@ -1,0 +1,95 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "mistral-small-4",
+  "name": "Mistral Small 4",
+  "description": "Mistral AI's open-weight hybrid model combining instruction following, reasoning, coding, and multimodal understanding in an efficient MoE.",
+  "translations": {
+    "de": {
+      "description": "Mistral AIs hybrides Open-Weight-Modell, das Anweisungsbefolgung, Reasoning, Coding und multimodales Verständnis in einem effizienten MoE vereint."
+    },
+    "es": {
+      "description": "El modelo híbrido de pesos abiertos de Mistral AI que combina instrucciones, razonamiento, código y comprensión multimodal en un MoE eficiente."
+    },
+    "fr": {
+      "description": "Le modèle hybride à poids ouverts de Mistral AI réunissant suivi d’instructions, raisonnement, codage et compréhension multimodale dans un MoE efficace."
+    },
+    "id": {
+      "description": "Model hibrida berbobot terbuka Mistral AI yang menggabungkan kepatuhan instruksi, penalaran, coding, dan pemahaman multimodal dalam MoE efisien."
+    },
+    "ja": {
+      "description": "指示追従、推論、コーディング、マルチモーダル理解を効率的なMoEに統合したMistral AIのオープンウェイト・ハイブリッドモデル。"
+    },
+    "ko": {
+      "description": "지시 이행, 추론, 코딩 및 멀티모달 이해를 효율적인 MoE에 결합한 Mistral AI의 오픈 웨이트 하이브리드 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo híbrido de pesos abertos da Mistral AI que combina instruções, raciocínio, código e compreensão multimodal em um MoE eficiente."
+    },
+    "ru": {
+      "description": "Гибридная модель Mistral AI с открытыми весами, объединяющая выполнение инструкций, рассуждения, код и мультимодальное понимание в эффективной MoE."
+    },
+    "tr": {
+      "description": "Mistral AI'ın talimat izleme, akıl yürütme, kodlama ve çok modlu anlamayı verimli bir MoE'de birleştiren açık ağırlıklı melez modeli."
+    },
+    "zh-Hans": {
+      "description": "Mistral AI 在高效 MoE 中融合指令遵循、推理、编码和多模态理解的开放权重混合模型。"
+    },
+    "zh-Hant": {
+      "description": "Mistral AI 在高效 MoE 中融合指令遵循、推理、編碼和多模態理解的開放權重混合模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03",
+      "title": "Mistral Small 4 model card",
+      "fields": [
+        "name",
+        "description",
+        "size",
+        "contextWindow",
+        "releaseDate",
+        "lifecycle",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://docs.mistral.ai/models/model-selection-guide?models=mistral-small-4-0-26-03",
+      "title": "Mistral model selection guide",
+      "fields": ["lifecycle", "capabilities"]
+    },
+    {
+      "url": "https://mistral.ai/pricing/api/",
+      "title": "Mistral API pricing",
+      "fields": ["tokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://mistral.ai",
+  "docsUrl": "https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03",
+  "vendor": "Mistral AI",
+  "size": "119B (6.5B active)",
+  "contextWindow": 262144,
+  "maxOutput": null,
+  "tokenPricing": { "input": 0.15, "output": 0.6, "cache": null },
+  "releaseDate": "2026-03-16",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

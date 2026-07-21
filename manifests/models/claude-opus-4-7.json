@@ -1,0 +1,102 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "claude-opus-4-7",
+  "name": "Claude Opus 4.7",
+  "description": "Anthropic's Opus model for complex reasoning, agentic coding, long-horizon work, computer use, and reliable execution across large codebases.",
+  "translations": {
+    "de": {
+      "description": "Anthropics Opus-Modell für komplexes Denken, agentische Programmierung, langfristige Aufgaben, Computernutzung und zuverlässige Arbeit in großen Codebasen."
+    },
+    "es": {
+      "description": "El modelo Opus de Anthropic para razonamiento complejo, programación agéntica, trabajo prolongado, uso de computadoras y ejecución fiable en grandes bases de código."
+    },
+    "fr": {
+      "description": "Le modèle Opus d’Anthropic pour le raisonnement complexe, le codage agentique, les tâches longues, l’ordinateur et l’exécution fiable sur de grandes bases de code."
+    },
+    "id": {
+      "description": "Model Opus Anthropic untuk penalaran kompleks, coding agentik, pekerjaan jangka panjang, penggunaan komputer, dan eksekusi andal pada basis kode besar."
+    },
+    "ja": {
+      "description": "複雑な推論、エージェント型コーディング、長期作業、コンピューター操作、大規模コードベースでの確実な実行に対応するAnthropicのOpusモデル。"
+    },
+    "ko": {
+      "description": "복잡한 추론, 에이전트 코딩, 장기 작업, 컴퓨터 사용 및 대규모 코드베이스의 안정적인 실행을 위한 Anthropic Opus 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo Opus da Anthropic para raciocínio complexo, programação agêntica, trabalho prolongado, uso do computador e execução confiável em grandes bases de código."
+    },
+    "ru": {
+      "description": "Модель Anthropic Opus для сложных рассуждений, агентного программирования, длительных задач, управления компьютером и надёжной работы с крупным кодом."
+    },
+    "tr": {
+      "description": "Anthropic'in karmaşık akıl yürütme, aracı kodlama, uzun vadeli çalışma, bilgisayar kullanımı ve büyük kod tabanlarında güvenilir yürütme için Opus modeli."
+    },
+    "zh-Hans": {
+      "description": "Anthropic 面向复杂推理、智能体编码、长周期工作、计算机使用和大型代码库可靠执行的 Opus 模型。"
+    },
+    "zh-Hant": {
+      "description": "Anthropic 面向複雜推理、智慧體編碼、長週期工作、電腦使用和大型程式碼庫可靠執行的 Opus 模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "title": "Claude models overview",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "lifecycle"
+      ]
+    },
+    {
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-4-7.html",
+      "title": "Claude Opus 4.7 model details",
+      "fields": [
+        "releaseDate",
+        "knowledgeCutoff",
+        "contextWindow",
+        "maxOutput",
+        "inputModalities",
+        "outputModalities"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "title": "Introducing Claude Opus 4.7",
+      "fields": ["name", "description", "releaseDate"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.anthropic.com",
+  "docsUrl": "https://platform.claude.com/docs/en/about-claude/models/overview",
+  "vendor": "Anthropic",
+  "size": null,
+  "contextWindow": 1000000,
+  "maxOutput": 128000,
+  "tokenPricing": { "input": 5, "output": 25, "cache": 0.5 },
+  "releaseDate": "2026-04-16",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2026-01",
+  "inputModalities": ["text", "image", "pdf"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

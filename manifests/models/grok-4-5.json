@@ -1,0 +1,93 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "grok-4-5",
+  "name": "Grok 4.5",
+  "description": "SpaceXAI's frontier model for coding, agentic tasks, engineering, knowledge work, configurable reasoning, and tool-driven workflows.",
+  "translations": {
+    "de": {
+      "description": "SpaceXAIs Frontier-Modell für Programmierung, agentische Aufgaben, Ingenieurwesen, Wissensarbeit, konfigurierbares Denken und werkzeuggestützte Abläufe."
+    },
+    "es": {
+      "description": "El modelo de frontera de SpaceXAI para programación, tareas agénticas, ingeniería, trabajo del conocimiento, razonamiento configurable y flujos con herramientas."
+    },
+    "fr": {
+      "description": "Le modèle de pointe de SpaceXAI pour le codage, les tâches agentiques, l’ingénierie, le travail intellectuel, le raisonnement configurable et les outils."
+    },
+    "id": {
+      "description": "Model frontier SpaceXAI untuk coding, tugas agentik, rekayasa, pekerjaan pengetahuan, penalaran yang dapat diatur, dan alur berbasis alat."
+    },
+    "ja": {
+      "description": "コーディング、エージェントタスク、エンジニアリング、知識労働、設定可能な推論、ツール駆動ワークフロー向けのSpaceXAIフロンティアモデル。"
+    },
+    "ko": {
+      "description": "코딩, 에이전트 작업, 엔지니어링, 지식 업무, 구성 가능한 추론 및 도구 기반 워크플로를 위한 SpaceXAI 프런티어 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo de fronteira da SpaceXAI para programação, tarefas agênticas, engenharia, trabalho de conhecimento, raciocínio configurável e fluxos com ferramentas."
+    },
+    "ru": {
+      "description": "Передовая модель SpaceXAI для программирования, агентных задач, инженерии, интеллектуальной работы, настраиваемых рассуждений и инструментов."
+    },
+    "tr": {
+      "description": "SpaceXAI'ın kodlama, aracı görevler, mühendislik, bilgi çalışmaları, yapılandırılabilir akıl yürütme ve araç odaklı iş akışları için öncü modeli."
+    },
+    "zh-Hans": {
+      "description": "SpaceXAI 面向编码、智能体任务、工程、知识工作、可配置推理和工具驱动工作流的前沿模型。"
+    },
+    "zh-Hant": {
+      "description": "SpaceXAI 面向編碼、智慧體任務、工程、知識工作、可設定推理和工具驅動工作流程的前沿模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.x.ai/developers/models/grok-4.5",
+      "title": "Grok 4.5 model documentation",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://x.ai/news/grok-4-5",
+      "title": "Introducing Grok 4.5",
+      "fields": ["name", "description", "lifecycle", "tokenPricing"]
+    },
+    {
+      "url": "https://docs.x.ai/developers/release-notes",
+      "title": "SpaceXAI API release notes",
+      "fields": ["releaseDate"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://x.ai",
+  "docsUrl": "https://docs.x.ai/developers/models/grok-4.5",
+  "vendor": "xAI",
+  "size": null,
+  "contextWindow": 500000,
+  "maxOutput": null,
+  "tokenPricing": { "input": 2, "output": 6, "cache": 0.5 },
+  "releaseDate": "2026-07-08",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2026-02-01",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

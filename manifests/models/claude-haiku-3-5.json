@@ -1,0 +1,90 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "claude-haiku-3-5",
+  "name": "Claude Haiku 3.5",
+  "description": "Anthropic's fast Claude 3.5 model for cost-efficient coding, accurate tool use, sub-agents, and high-volume application workloads.",
+  "translations": {
+    "de": {
+      "description": "Anthropics schnelles Claude-3.5-Modell für kosteneffizientes Coding, präzise Werkzeugnutzung, Sub-Agenten und Anwendungen mit hohem Volumen."
+    },
+    "es": {
+      "description": "El rápido modelo Claude 3.5 de Anthropic para código rentable, uso preciso de herramientas, subagentes y aplicaciones de gran volumen."
+    },
+    "fr": {
+      "description": "Le modèle Claude 3.5 rapide d’Anthropic pour le codage économique, l’usage précis d’outils, les sous-agents et les applications à grand volume."
+    },
+    "id": {
+      "description": "Model Claude 3.5 Anthropic yang cepat untuk coding hemat biaya, penggunaan alat akurat, sub-agen, dan beban aplikasi bervolume tinggi."
+    },
+    "ja": {
+      "description": "費用効率の高いコーディング、正確なツール利用、サブエージェント、大量処理アプリ向けのAnthropic製高速Claude 3.5モデル。"
+    },
+    "ko": {
+      "description": "비용 효율적인 코딩, 정확한 도구 사용, 하위 에이전트 및 대용량 애플리케이션 작업을 위한 Anthropic의 빠른 Claude 3.5 모델입니다."
+    },
+    "pt": {
+      "description": "O rápido modelo Claude 3.5 da Anthropic para código econômico, uso preciso de ferramentas, subagentes e aplicações de alto volume."
+    },
+    "ru": {
+      "description": "Быстрая модель Claude 3.5 от Anthropic для экономичного программирования, точных инструментов, субагентов и высоконагруженных приложений."
+    },
+    "tr": {
+      "description": "Anthropic'in uygun maliyetli kodlama, doğru araç kullanımı, alt aracılar ve yüksek hacimli uygulama iş yükleri için hızlı Claude 3.5 modeli."
+    },
+    "zh-Hans": {
+      "description": "Anthropic 面向高性价比编码、精确工具调用、子智能体和高吞吐应用负载的快速 Claude 3.5 模型。"
+    },
+    "zh-Hant": {
+      "description": "Anthropic 面向高性價比編碼、精確工具呼叫、子智慧體和高吞吐應用負載的快速 Claude 3.5 模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+      "title": "Claude 3.5 Haiku announcement",
+      "fields": ["name", "description", "tokenPricing", "capabilities"]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "title": "Claude Platform release notes",
+      "fields": ["releaseDate", "inputModalities", "outputModalities", "capabilities"]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "title": "Claude Platform pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+      "title": "Anthropic model deprecations",
+      "fields": ["lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.anthropic.com",
+  "docsUrl": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+  "vendor": "Anthropic",
+  "size": null,
+  "contextWindow": 200000,
+  "maxOutput": null,
+  "tokenPricing": { "input": 0.8, "output": 4, "cache": 0.08 },
+  "releaseDate": "2024-11-04",
+  "lifecycle": "deprecated",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

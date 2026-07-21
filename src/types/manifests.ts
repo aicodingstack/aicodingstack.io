@@ -213,8 +213,8 @@ export interface ManifestExtension extends ManifestBaseProduct {
  * Based on: /manifests/$schemas/model.schema.json
  */
 export interface ManifestTokenPricing {
-  input: number
-  output: number
+  input: number | null
+  output: number | null
   cache: number | null
 }
 
@@ -243,9 +243,9 @@ export type ModelLifecycle = 'latest' | 'maintained' | 'deprecated'
  * Extends: ManifestVendorEntity
  */
 export interface ManifestModel extends ManifestVendorEntity {
-  size: string
+  size: string | null
   contextWindow: number
-  maxOutput: number
+  maxOutput: number | null
   tokenPricing: ManifestTokenPricing
   releaseDate: string | null
   lifecycle: ModelLifecycle

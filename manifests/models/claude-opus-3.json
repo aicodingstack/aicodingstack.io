@@ -1,0 +1,93 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "claude-opus-3",
+  "name": "Claude Opus 3",
+  "description": "Anthropic's former flagship Claude 3 model for complex reasoning, coding, analysis, tool use, and multimodal tasks.",
+  "translations": {
+    "de": {
+      "description": "Anthropics ehemaliges Claude-3-Flaggschiff für komplexes Reasoning, Coding, Analyse, Werkzeugnutzung und multimodale Aufgaben."
+    },
+    "es": {
+      "description": "El antiguo modelo insignia Claude 3 de Anthropic para razonamiento complejo, código, análisis, herramientas y tareas multimodales."
+    },
+    "fr": {
+      "description": "L’ancien modèle phare Claude 3 d’Anthropic pour le raisonnement complexe, le codage, l’analyse, les outils et les tâches multimodales."
+    },
+    "id": {
+      "description": "Mantan model unggulan Claude 3 Anthropic untuk penalaran kompleks, coding, analisis, penggunaan alat, dan tugas multimodal."
+    },
+    "ja": {
+      "description": "複雑な推論、コーディング、分析、ツール利用、マルチモーダル作業向けに提供されたAnthropicの旧Claude 3フラッグシップモデル。"
+    },
+    "ko": {
+      "description": "복잡한 추론, 코딩, 분석, 도구 사용 및 멀티모달 작업을 위한 Anthropic의 이전 Claude 3 플래그십 모델입니다."
+    },
+    "pt": {
+      "description": "O antigo modelo principal Claude 3 da Anthropic para raciocínio complexo, código, análise, ferramentas e tarefas multimodais."
+    },
+    "ru": {
+      "description": "Бывшая флагманская модель Claude 3 от Anthropic для сложных рассуждений, программирования, анализа, инструментов и мультимодальных задач."
+    },
+    "tr": {
+      "description": "Anthropic'in karmaşık akıl yürütme, kodlama, analiz, araç kullanımı ve çok modlu görevler için eski amiral gemisi Claude 3 modeli."
+    },
+    "zh-Hans": {
+      "description": "Anthropic 曾经的 Claude 3 旗舰模型，面向复杂推理、编码、分析、工具调用和多模态任务。"
+    },
+    "zh-Hant": {
+      "description": "Anthropic 曾經的 Claude 3 旗艦模型，面向複雜推理、編碼、分析、工具呼叫和多模態任務。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.anthropic.com/news/claude-3-family",
+      "title": "Introducing the Claude 3 model family",
+      "fields": [
+        "name",
+        "description",
+        "contextWindow",
+        "tokenPricing",
+        "releaseDate",
+        "inputModalities",
+        "outputModalities"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+      "title": "Anthropic model deprecations",
+      "fields": ["lifecycle"]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "title": "Claude Platform release notes",
+      "fields": ["capabilities"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.anthropic.com",
+  "docsUrl": "https://www.anthropic.com/news/claude-3-family",
+  "vendor": "Anthropic",
+  "size": null,
+  "contextWindow": 200000,
+  "maxOutput": null,
+  "tokenPricing": { "input": 15, "output": 75, "cache": null },
+  "releaseDate": "2024-03-04",
+  "lifecycle": "deprecated",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

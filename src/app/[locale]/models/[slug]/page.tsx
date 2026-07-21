@@ -43,7 +43,7 @@ export async function generateMetadata({
       vendor: model.vendor,
       size: model.size ?? undefined,
       contextWindow: model.contextWindow,
-      maxOutput: model.maxOutput,
+      maxOutput: model.maxOutput ?? undefined,
       tokenPricing: model.tokenPricing
         ? {
             input: model.tokenPricing.input ?? undefined,
@@ -84,7 +84,7 @@ export default async function ModelPage({
           }
         : undefined,
     },
-    locale: locale as 'en' | 'zh-Hans' | 'de' | 'ko',
+    locale: locale as Locale,
   })
 
   // Build additional info for ProductHero
@@ -94,7 +94,10 @@ export default async function ModelPage({
       label: tShared('terms.contextWindow'),
       value: `${model.contextWindow.toLocaleString()} tokens`,
     },
-    { label: tShared('terms.maxOutput'), value: `${model.maxOutput.toLocaleString()} tokens` },
+    model.maxOutput !== null && {
+      label: tShared('terms.maxOutput'),
+      value: `${model.maxOutput.toLocaleString()} tokens`,
+    },
   ].filter(Boolean) as { label: string; value: string }[]
 
   // Breadcrumb items

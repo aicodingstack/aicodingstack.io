@@ -1,0 +1,97 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "devstral-2",
+  "name": "Devstral 2",
+  "description": "Open 123B code-agent model for autonomous software engineering with a 256K context window.",
+  "translations": {
+    "zh-Hans": {
+      "description": "Devstral 2 是 Mistral 发布的独立模型版本，具备明确的编程或软件工程能力。"
+    },
+    "de": {
+      "description": "Devstral 2 ist eine eigenständige Modellversion von Mistral mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+    },
+    "es": {
+      "description": "Devstral 2 es una versión de modelo independiente de Mistral con capacidades explícitas de programación o ingeniería de software."
+    },
+    "fr": {
+      "description": "Devstral 2 est une version de modèle distincte de Mistral, dotée de capacités explicites en programmation ou en génie logiciel."
+    },
+    "id": {
+      "description": "Devstral 2 adalah versi model mandiri dari Mistral dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+    },
+    "ja": {
+      "description": "Devstral 2 は Mistral が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+    },
+    "ko": {
+      "description": "Devstral 2은(는) Mistral가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+    },
+    "pt": {
+      "description": "Devstral 2 é uma versão de modelo independente da Mistral, com capacidades explícitas de programação ou engenharia de software."
+    },
+    "ru": {
+      "description": "Devstral 2 — самостоятельная версия модели от Mistral с явно заявленными возможностями программирования или разработки ПО."
+    },
+    "tr": {
+      "description": "Devstral 2, Mistral tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+    },
+    "zh-Hant": {
+      "description": "Devstral 2 是 Mistral 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://mistral.ai/news/devstral-2-vibe-cli",
+      "title": "Devstral 2 official documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "releaseDate",
+        "lifecycle",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://mistral.ai",
+  "docsUrl": "https://mistral.ai/news/devstral-2-vibe-cli",
+  "vendor": "Mistral AI",
+  "size": "123B",
+  "contextWindow": 262144,
+  "maxOutput": null,
+  "tokenPricing": {
+    "input": 0.4,
+    "output": 2,
+    "cache": null
+  },
+  "releaseDate": "2025-12-09",
+  "lifecycle": "deprecated",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

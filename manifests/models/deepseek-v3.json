@@ -1,0 +1,97 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "deepseek-v3",
+  "name": "DeepSeek-V3",
+  "description": "Open-weight MoE model that established the V3 coding, reasoning, and general-purpose model line.",
+  "translations": {
+    "zh-Hans": {
+      "description": "DeepSeek-V3 是 DeepSeek 发布的独立模型版本，具备明确的编程或软件工程能力。"
+    },
+    "de": {
+      "description": "DeepSeek-V3 ist eine eigenständige Modellversion von DeepSeek mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+    },
+    "es": {
+      "description": "DeepSeek-V3 es una versión de modelo independiente de DeepSeek con capacidades explícitas de programación o ingeniería de software."
+    },
+    "fr": {
+      "description": "DeepSeek-V3 est une version de modèle distincte de DeepSeek, dotée de capacités explicites en programmation ou en génie logiciel."
+    },
+    "id": {
+      "description": "DeepSeek-V3 adalah versi model mandiri dari DeepSeek dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+    },
+    "ja": {
+      "description": "DeepSeek-V3 は DeepSeek が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+    },
+    "ko": {
+      "description": "DeepSeek-V3은(는) DeepSeek가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+    },
+    "pt": {
+      "description": "DeepSeek-V3 é uma versão de modelo independente da DeepSeek, com capacidades explícitas de programação ou engenharia de software."
+    },
+    "ru": {
+      "description": "DeepSeek-V3 — самостоятельная версия модели от DeepSeek с явно заявленными возможностями программирования или разработки ПО."
+    },
+    "tr": {
+      "description": "DeepSeek-V3, DeepSeek tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+    },
+    "zh-Hant": {
+      "description": "DeepSeek-V3 是 DeepSeek 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://api-docs.deepseek.com/news/news1226",
+      "title": "DeepSeek-V3 official documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "releaseDate",
+        "lifecycle",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.deepseek.com",
+  "docsUrl": "https://api-docs.deepseek.com/news/news1226",
+  "vendor": "DeepSeek",
+  "size": "671B (37B active)",
+  "contextWindow": 64000,
+  "maxOutput": 8192,
+  "tokenPricing": {
+    "input": null,
+    "output": null,
+    "cache": null
+  },
+  "releaseDate": "2024-12-26",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

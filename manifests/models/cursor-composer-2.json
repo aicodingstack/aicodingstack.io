@@ -1,0 +1,98 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "cursor-composer-2",
+  "name": "Cursor Composer 2",
+  "description": "Cursor's retired coding agent model for long-horizon software engineering, now routed to Composer 2.5.",
+  "translations": {
+    "de": {
+      "description": "Cursors eingestelltes Coding-Agent-Modell für langfristige Softwareentwicklung, das jetzt an Composer 2.5 weitergeleitet wird."
+    },
+    "es": {
+      "description": "El modelo retirado de agente de código de Cursor para ingeniería de software prolongada, ahora redirigido a Composer 2.5."
+    },
+    "fr": {
+      "description": "L’ancien modèle d’agent de codage de Cursor pour l’ingénierie logicielle au long cours, désormais redirigé vers Composer 2.5."
+    },
+    "id": {
+      "description": "Model agen coding Cursor yang telah dihentikan untuk rekayasa perangkat lunak jangka panjang, kini dialihkan ke Composer 2.5."
+    },
+    "ja": {
+      "description": "長時間のソフトウェア開発向けに提供され、現在はComposer 2.5へ転送されるCursorの旧コーディングエージェントモデル。"
+    },
+    "ko": {
+      "description": "장기 소프트웨어 엔지니어링용으로 제공되었으며 현재 Composer 2.5로 라우팅되는 Cursor의 종료된 코딩 에이전트 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo descontinuado de agente de código da Cursor para engenharia de software prolongada, agora redirecionado ao Composer 2.5."
+    },
+    "ru": {
+      "description": "Снятая с эксплуатации модель агента программирования Cursor для длительной разработки, теперь перенаправляемая на Composer 2.5."
+    },
+    "tr": {
+      "description": "Cursor'ın uzun süreli yazılım mühendisliği için kullanımdan kaldırılmış ve artık Composer 2.5'e yönlendirilen kodlama aracısı modeli."
+    },
+    "zh-Hans": {
+      "description": "Cursor 面向长周期软件工程的已退役编码智能体模型，目前请求会转发到 Composer 2.5。"
+    },
+    "zh-Hant": {
+      "description": "Cursor 面向長週期軟體工程的已退役編碼智慧體模型，目前請求會轉發到 Composer 2.5。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://cursor.com/blog/composer-2",
+      "title": "Composer 2 launch",
+      "fields": ["name", "description", "releaseDate", "tokenPricing", "capabilities"]
+    },
+    {
+      "url": "https://cursor.com/changelog/page/1",
+      "title": "Composer 2 routes to Composer 2.5",
+      "fields": ["lifecycle"]
+    },
+    {
+      "url": "https://docs.cursor.com/models",
+      "title": "Cursor model context documentation",
+      "fields": ["docsUrl", "contextWindow", "inputModalities", "outputModalities"]
+    },
+    {
+      "url": "https://cursor.com/blog/composer-2",
+      "title": "Cursor Composer 2 launch benchmark — Terminal-Bench 2.0; Official Harbor harness with default settings; 5 iterations per model-agent pair; average score; label: Composer 2; observed 2026-07-21",
+      "fields": ["benchmarks.terminalBench"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
+  "websiteUrl": "https://cursor.com",
+  "docsUrl": "https://docs.cursor.com/models",
+  "vendor": "Anysphere",
+  "size": null,
+  "contextWindow": 200000,
+  "maxOutput": null,
+  "tokenPricing": {
+    "input": 0.5,
+    "output": 2.5,
+    "cache": null
+  },
+  "releaseDate": "2026-03-19",
+  "lifecycle": "deprecated",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": 0.617,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

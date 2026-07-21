@@ -38,7 +38,34 @@
       "description": "DeepSeek V3.2 是推理優先的模型，具備 128K 上下文視窗，專為智能體任務設計，將思考直接整合到工具使用中。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://api-docs.deepseek.com/news/news251201",
+      "title": "DeepSeek-V3.2 release announcement",
+      "fields": ["name", "description", "releaseDate", "lifecycle", "capabilities"]
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2",
+      "title": "Official DeepSeek-V3.2 model card",
+      "fields": [
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "platformUrls"
+      ]
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "title": "DeepSeek API pricing",
+      "fields": ["tokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.deepseek.com",
   "docsUrl": "https://api-docs.deepseek.com/quick_start/pricing",
   "vendor": "DeepSeek",
@@ -51,7 +78,7 @@
     "cache": 0.028
   },
   "releaseDate": "2025-12-01",
-  "lifecycle": "latest",
+  "lifecycle": "maintained",
   "knowledgeCutoff": null,
   "inputModalities": ["text"],
   "outputModalities": ["text"],

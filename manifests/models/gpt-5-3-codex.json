@@ -1,0 +1,89 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gpt-5-3-codex",
+  "name": "GPT-5.3-Codex",
+  "description": "OpenAI's agentic coding model for long-running software engineering, research, tool use, and complex computer-based work.",
+  "translations": {
+    "de": {
+      "description": "OpenAIs agentisches Coding-Modell für langlaufende Softwareentwicklung, Recherche, Werkzeugnutzung und komplexe Computerarbeit."
+    },
+    "es": {
+      "description": "El modelo de programación agéntica de OpenAI para ingeniería de software prolongada, investigación, uso de herramientas y trabajo informático complejo."
+    },
+    "fr": {
+      "description": "Le modèle de codage agentique d’OpenAI pour l’ingénierie logicielle de longue durée, la recherche, les outils et les tâches informatiques complexes."
+    },
+    "id": {
+      "description": "Model coding agentik OpenAI untuk rekayasa perangkat lunak jangka panjang, riset, penggunaan alat, dan pekerjaan komputer yang kompleks."
+    },
+    "ja": {
+      "description": "長時間のソフトウェア開発、調査、ツール利用、複雑なコンピューター作業に対応するOpenAIのエージェント型コーディングモデル。"
+    },
+    "ko": {
+      "description": "장시간 소프트웨어 엔지니어링, 연구, 도구 사용 및 복잡한 컴퓨터 작업을 위한 OpenAI의 에이전트 코딩 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo de programação agêntica da OpenAI para engenharia de software prolongada, pesquisa, uso de ferramentas e trabalho complexo no computador."
+    },
+    "ru": {
+      "description": "Агентная модель OpenAI для длительной разработки ПО, исследований, использования инструментов и сложной работы за компьютером."
+    },
+    "tr": {
+      "description": "OpenAI'ın uzun süreli yazılım mühendisliği, araştırma, araç kullanımı ve karmaşık bilgisayar işleri için aracı kodlama modeli."
+    },
+    "zh-Hans": {
+      "description": "OpenAI 面向长时间软件工程、研究、工具使用和复杂计算机工作的智能体编码模型。"
+    },
+    "zh-Hant": {
+      "description": "OpenAI 面向長時間軟體工程、研究、工具使用和複雜電腦工作的智慧體編碼模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.3-codex",
+      "title": "GPT-5.3-Codex model documentation",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-5-3-codex/",
+      "title": "Introducing GPT-5.3-Codex",
+      "fields": ["name", "description", "releaseDate", "lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://openai.com",
+  "docsUrl": "https://developers.openai.com/api/docs/models/gpt-5.3-codex",
+  "vendor": "OpenAI",
+  "size": null,
+  "contextWindow": 400000,
+  "maxOutput": 128000,
+  "tokenPricing": { "input": 1.75, "output": 14, "cache": 0.175 },
+  "releaseDate": "2026-02-05",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2025-08-31",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

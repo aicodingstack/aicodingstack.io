@@ -1,289 +1,216 @@
 #!/usr/bin/env node
 
-/**
- * Benchmark Fetcher - Main Entry Point
- *
- * Usage:
- *   node fetch-benchmarks.mjs
- *   node fetch-benchmarks.mjs --benchmarks swebench,terminalBench
- *   node fetch-benchmarks.mjs --models claude-sonnet-4-5,gpt-4o
- *   node fetch-benchmarks.mjs --dry-run
- */
-
 import fs from 'node:fs/promises'
 import path from 'node:path'
-import { extractors } from './lib/benchmark-extractors.mjs'
-import { BENCHMARKS, DEBUG_CONFIG, MANIFEST_PATHS, RETRY_CONFIG } from './lib/config.mjs'
-import { updateManifests } from './lib/manifest-updater.mjs'
-import { getUnmappedModels } from './lib/model-name-mapper.mjs'
-import { generateReport } from './lib/report-generator.mjs'
+import { BENCHMARKS, MODELS_DIR } from './lib/config.mjs'
 
-// Parse command-line arguments
-const args = parseArgs(process.argv.slice(2))
+const HELP = `Usage:
+  node .agents/skills/benchmark-fetcher/scripts/fetch-benchmarks.mjs <evidence.json> [--apply] [--replace]
 
-// Validate arguments
-validateArgs(args)
+Default behavior is preview-only. --replace is valid only with --apply.`
 
-// Main execution
-const startTime = Date.now()
+const args = process.argv.slice(2)
+if (args.includes('--help') || args.includes('-h')) {
+  console.log(HELP)
+  process.exit(0)
+}
 
-main()
-  .then(() => {
-    console.log('\n✅ Benchmark fetch completed successfully')
-    process.exit(0)
-  })
-  .catch(error => {
-    console.error('\n❌ Benchmark fetch failed:', error.message)
-    console.error(error.stack)
-    process.exit(1)
-  })
+const apply = args.includes('--apply')
+const replace = args.includes('--replace')
+const inputPath = args.find(arg => !arg.startsWith('--'))
 
-/**
- * Main workflow
- */
+if (!inputPath || (replace && !apply)) {
+  console.error(HELP)
+  process.exit(1)
+}
+
+const isoDate = /^\d{4}-(0[1-9]|1[0-2])-([0-2]\d|3[01])$/
+
+function isValidDate(value) {
+  if (!isoDate.test(value)) return false
+  const date = new Date(`${value}T00:00:00Z`)
+  const today = new Date().toISOString().slice(0, 10)
+  return (
+    !Number.isNaN(date.valueOf()) && date.toISOString().slice(0, 10) === value && value <= today
+  )
+}
+
+function requireText(record, field, index, errors) {
+  if (typeof record[field] !== 'string' || record[field].trim() === '') {
+    errors.push(`records[${index}].${field} must be a non-empty string`)
+  }
+}
+
+function validateRecord(record, index, seen, errors) {
+  for (const field of [
+    'modelId',
+    'modelLabel',
+    'benchmark',
+    'benchmarkVersion',
+    'evaluation',
+    'sourceUrl',
+    'sourceTitle',
+    'observedAt',
+    'verifiedBy',
+  ]) {
+    requireText(record, field, index, errors)
+  }
+
+  const definition = BENCHMARKS[record.benchmark]
+  if (!definition) {
+    errors.push(`records[${index}].benchmark must be one of: ${Object.keys(BENCHMARKS).join(', ')}`)
+  }
+  if (typeof record.score !== 'number' || !Number.isFinite(record.score)) {
+    errors.push(`records[${index}].score must be a finite number`)
+  } else if (
+    definition &&
+    (record.score < definition.min || (definition.max !== null && record.score > definition.max))
+  ) {
+    const range =
+      definition.max === null
+        ? `at least ${definition.min}`
+        : `between ${definition.min} and ${definition.max}`
+    errors.push(`records[${index}].score must be ${range} for ${record.benchmark}`)
+  }
+  if (typeof record.sourceUrl === 'string' && !record.sourceUrl.startsWith('https://')) {
+    errors.push(`records[${index}].sourceUrl must use HTTPS`)
+  }
+  if (typeof record.observedAt === 'string' && !isValidDate(record.observedAt)) {
+    errors.push(`records[${index}].observedAt must use YYYY-MM-DD`)
+  }
+
+  const identity = `${record.modelId}:${record.benchmark}`
+  if (seen.has(identity)) {
+    errors.push(`records[${index}] duplicates ${identity}`)
+  }
+  seen.add(identity)
+}
+
+function buildSource(record) {
+  return {
+    url: record.sourceUrl,
+    title: `${record.sourceTitle} — ${record.benchmarkVersion}; ${record.evaluation}; label: ${record.modelLabel}; observed ${record.observedAt}`,
+    fields: [`benchmarks.${record.benchmark}`],
+  }
+}
+
+function mergeSource(sources, incoming) {
+  const result = Array.isArray(sources) ? structuredClone(sources) : []
+  const existing = result.find(
+    source => source.url === incoming.url && source.title === incoming.title
+  )
+  if (!existing) {
+    result.push(incoming)
+    return result
+  }
+
+  existing.fields = [...new Set([...(existing.fields || []), ...incoming.fields])]
+  return result
+}
+
+async function writeAtomic(filePath, manifest) {
+  const temporaryPath = `${filePath}.benchmark-fetcher.tmp`
+  await fs.writeFile(temporaryPath, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8')
+  await fs.rename(temporaryPath, filePath)
+}
+
 async function main() {
-  console.log('🤖 Benchmark Fetcher')
-  console.log('='.repeat(80))
-
-  // 1. Load configuration
-  console.log('\n📋 Loading configuration...')
-  const mappings = await loadMappings()
-  const manifests = await loadAllManifests()
-
-  console.log(`  ✓ Loaded ${Object.keys(manifests).length} model manifests`)
-  console.log(`  ✓ Loaded mapping configuration (version ${mappings.version})`)
-
-  if (args.dryRun) {
-    console.log('\n⚠️  DRY RUN MODE - No manifests will be modified')
+  const raw = JSON.parse(await fs.readFile(path.resolve(inputPath), 'utf8'))
+  const records = raw.records
+  if (!Array.isArray(records) || records.length === 0) {
+    throw new Error('Input must contain a non-empty records array')
   }
 
-  // Filter benchmarks if specified
-  const benchmarksToFetch = args.benchmarks
-    ? BENCHMARKS.filter(b => args.benchmarks.includes(b.id))
-    : BENCHMARKS
-
-  console.log(`\n📊 Will fetch ${benchmarksToFetch.length} benchmarks`)
-
-  // 2. Initialize MCP tools (placeholder - actual MCP tools will be injected)
-  const mcpTools = await initializeMCPTools()
-
-  // 3. Process each benchmark sequentially
-  console.log(`\n${'='.repeat(80)}`)
-  const benchmarkResults = {}
-
-  for (const benchmark of benchmarksToFetch) {
-    console.log(`\n📊 Fetching ${benchmark.name} (${benchmark.id})`)
-    console.log('-'.repeat(80))
-
-    try {
-      const result = await extractWithRetry(extractors[benchmark.id], mcpTools, mappings, benchmark)
-      benchmarkResults[benchmark.id] = {
-        success: true,
-        ...result,
-      }
-
-      const dataCount = result.data instanceof Map ? result.data.size : 0
-      console.log(`  ✅ Success! Extracted ${dataCount} model scores`)
-    } catch (error) {
-      console.error(`  ❌ Failed: ${error.message}`)
-      benchmarkResults[benchmark.id] = {
-        success: false,
-        error: error.message,
-        data: new Map(),
-        unmappedModels: [],
-      }
-    }
+  const errors = []
+  const seen = new Set()
+  for (const [index, record] of records.entries()) {
+    validateRecord(record, index, seen, errors)
+  }
+  if (errors.length > 0) {
+    throw new Error(`Invalid evidence:\n- ${errors.join('\n- ')}`)
   }
 
-  // 4. Update manifests (unless dry-run)
-  let manifestUpdates = []
+  const staged = new Map()
+  const changes = []
+  const conflicts = []
 
-  if (!args.dryRun) {
-    console.log(`\n${'='.repeat(80)}`)
-    console.log('💾 Updating Manifests')
-    console.log('='.repeat(80))
-
-    // Filter manifests if specific models were requested
-    let manifestsToUpdate = manifests
-    if (args.models) {
-      manifestsToUpdate = {}
-      for (const modelId of args.models) {
-        if (manifests[modelId]) {
-          manifestsToUpdate[modelId] = manifests[modelId]
-        }
+  for (const record of records) {
+    const manifestPath = path.join(MODELS_DIR, `${record.modelId}.json`)
+    let manifest = staged.get(record.modelId)
+    if (!manifest) {
+      try {
+        manifest = JSON.parse(await fs.readFile(manifestPath, 'utf8'))
+      } catch (error) {
+        if (error.code === 'ENOENT') throw new Error(`Unknown modelId: ${record.modelId}`)
+        throw error
       }
+      if (manifest.id !== record.modelId) {
+        throw new Error(`Manifest ID mismatch in ${manifestPath}`)
+      }
+      if (!manifest.benchmarks || typeof manifest.benchmarks !== 'object') {
+        throw new Error(`Manifest has no benchmarks object: ${manifestPath}`)
+      }
+      staged.set(record.modelId, manifest)
     }
 
-    manifestUpdates = await updateManifests(
-      manifestsToUpdate,
-      benchmarkResults,
-      MANIFEST_PATHS.modelsDir
-    )
-
-    console.log(`\n  ✅ Updated ${manifestUpdates.filter(u => u.success).length} manifests`)
-  }
-
-  // 5. Generate completion report
-  const unmappedModels = getUnmappedModels(benchmarkResults, mappings)
-  const executionTime = Date.now() - startTime
-
-  generateReport(benchmarkResults, manifestUpdates, unmappedModels, executionTime, args.dryRun)
-
-  // 6. Cleanup (if needed)
-  await cleanupMCPTools(mcpTools)
-}
-
-/**
- * Extract benchmark data with retry logic
- */
-async function extractWithRetry(extractor, mcpTools, mappings, benchmark) {
-  let lastError = null
-
-  for (let attempt = 1; attempt <= RETRY_CONFIG.maxAttempts; attempt++) {
-    try {
-      const result = await extractor(mcpTools, mappings)
-      return result
-    } catch (error) {
-      lastError = error
-      console.error(`  ⚠️  Attempt ${attempt}/${RETRY_CONFIG.maxAttempts} failed: ${error.message}`)
-
-      if (attempt < RETRY_CONFIG.maxAttempts) {
-        // Calculate exponential backoff delay
-        const delay = Math.min(
-          RETRY_CONFIG.initialDelay * RETRY_CONFIG.backoffFactor ** (attempt - 1),
-          RETRY_CONFIG.maxDelay
-        )
-        console.log(`  ⏳ Retrying in ${delay / 1000}s...`)
-        await sleep(delay)
-      } else {
-        // Final attempt failed - take debug screenshot if enabled
-        if (DEBUG_CONFIG.saveScreenshots && mcpTools.take_screenshot) {
-          const screenshotPath = path.join(DEBUG_CONFIG.screenshotDir, `${benchmark.id}-error.png`)
-          try {
-            await fs.mkdir(DEBUG_CONFIG.screenshotDir, { recursive: true })
-            await mcpTools.take_screenshot({ filePath: screenshotPath })
-            console.log(`  📸 Debug screenshot saved: ${screenshotPath}`)
-          } catch (_screenshotError) {
-            // Ignore screenshot errors
-          }
-        }
+    const previous = manifest.benchmarks?.[record.benchmark]
+    if (previous === record.score) {
+      manifest.sources = mergeSource(manifest.sources, buildSource(record))
+      if (!manifest.lastVerifiedAt || record.observedAt >= manifest.lastVerifiedAt) {
+        manifest.lastVerifiedAt = record.observedAt
+        manifest.verifiedBy = record.verifiedBy
       }
+      if (!manifest.confidence) manifest.confidence = 'medium'
+      changes.push({ ...record, previous, action: 'verify' })
+      continue
     }
-  }
-
-  throw lastError
-}
-
-/**
- * Load model name mappings from configuration file
- */
-async function loadMappings() {
-  const content = await fs.readFile(MANIFEST_PATHS.mappings, 'utf8')
-  return JSON.parse(content)
-}
-
-/**
- * Load all model manifests from manifests/models/
- */
-async function loadAllManifests() {
-  const manifestFiles = await fs.readdir(MANIFEST_PATHS.modelsDir)
-  const manifests = {}
-
-  for (const file of manifestFiles) {
-    if (!file.endsWith('.json')) {
+    if (previous !== null && previous !== undefined && !replace) {
+      conflicts.push({ ...record, previous })
       continue
     }
 
-    const manifestPath = path.join(MANIFEST_PATHS.modelsDir, file)
-    const content = await fs.readFile(manifestPath, 'utf8')
-    const manifest = JSON.parse(content)
-
-    if (manifest.id) {
-      manifests[manifest.id] = manifest
+    manifest.benchmarks[record.benchmark] = record.score
+    manifest.sources = mergeSource(manifest.sources, buildSource(record))
+    if (!manifest.lastVerifiedAt || record.observedAt >= manifest.lastVerifiedAt) {
+      manifest.lastVerifiedAt = record.observedAt
+      manifest.verifiedBy = record.verifiedBy
     }
+    if (!manifest.confidence) manifest.confidence = 'medium'
+    changes.push({
+      ...record,
+      previous,
+      action: previous === null || previous === undefined ? 'add' : 'replace',
+    })
   }
 
-  return manifests
-}
-
-/**
- * Initialize MCP Chrome DevTools tools
- * NOTE: This is a placeholder. In actual execution, MCP tools will be available
- * through the Claude Code environment automatically.
- */
-async function initializeMCPTools() {
-  // In the Claude Code environment, MCP tools are available globally
-  // This function is a placeholder for any initialization logic needed
-
-  // Check if MCP tools are available
-  if (typeof mcp__chrome_devtools__navigate_page === 'undefined') {
-    console.warn('⚠️  Warning: MCP Chrome DevTools tools not detected')
-    console.warn('   This script requires Chrome DevTools MCP to be enabled')
-    console.warn('   Extractors will fail if MCP tools are not available')
+  console.log(apply ? 'Benchmark import plan (apply requested)' : 'Benchmark import preview')
+  for (const change of changes) {
+    console.log(
+      `- ${change.modelId}.${change.benchmark}: ${String(change.previous)} -> ${change.score} (${change.action})`
+    )
+  }
+  for (const conflict of conflicts) {
+    console.error(
+      `- CONFLICT ${conflict.modelId}.${conflict.benchmark}: ${conflict.previous} -> ${conflict.score}; review comparability and use --apply --replace only if justified`
+    )
   }
 
-  return {
-    navigate_page: mcp__chrome_devtools__navigate_page,
-    wait_for: mcp__chrome_devtools__wait_for,
-    take_snapshot: mcp__chrome_devtools__take_snapshot,
-    take_screenshot: mcp__chrome_devtools__take_screenshot,
+  if (conflicts.length > 0) {
+    throw new Error(`${conflicts.length} overwrite conflict(s) require explicit review`)
   }
-}
-
-/**
- * Cleanup MCP tools
- */
-async function cleanupMCPTools(_mcpTools) {
-  // No cleanup needed currently
-  // MCP tools are managed by Claude Code environment
-}
-
-/**
- * Parse command-line arguments
- */
-function parseArgs(argv) {
-  const args = {
-    benchmarks: null, // Array of benchmark IDs or null for all
-    models: null, // Array of model IDs or null for all
-    dryRun: false,
+  if (!apply) {
+    console.log('Preview only; no files changed.')
+    return
   }
 
-  for (let i = 0; i < argv.length; i++) {
-    const arg = argv[i]
-
-    if (arg === '--benchmarks' && i + 1 < argv.length) {
-      args.benchmarks = argv[i + 1].split(',').map(s => s.trim())
-      i++
-    } else if (arg === '--models' && i + 1 < argv.length) {
-      args.models = argv[i + 1].split(',').map(s => s.trim())
-      i++
-    } else if (arg === '--dry-run') {
-      args.dryRun = true
-    }
+  const changedModelIds = new Set(changes.map(change => change.modelId))
+  for (const modelId of changedModelIds) {
+    await writeAtomic(path.join(MODELS_DIR, `${modelId}.json`), staged.get(modelId))
   }
-
-  return args
+  console.log(`Applied changes to ${changedModelIds.size} manifest(s). Review the Git diff.`)
 }
 
-/**
- * Validate command-line arguments
- */
-function validateArgs(args) {
-  if (args.benchmarks) {
-    const validBenchmarkIds = BENCHMARKS.map(b => b.id)
-    for (const benchmarkId of args.benchmarks) {
-      if (!validBenchmarkIds.includes(benchmarkId)) {
-        console.error(`❌ Invalid benchmark ID: ${benchmarkId}`)
-        console.error(`   Valid IDs: ${validBenchmarkIds.join(', ')}`)
-        process.exit(1)
-      }
-    }
-  }
-}
-
-/**
- * Sleep utility
- */
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms))
-}
+main().catch(error => {
+  console.error(`Benchmark import failed: ${error.message}`)
+  process.exit(1)
+})

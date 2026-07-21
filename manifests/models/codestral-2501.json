@@ -1,0 +1,97 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "codestral-2501",
+  "name": "Codestral 25.01",
+  "description": "Codestral snapshot for code completion, correction, test generation, and fill-in-the-middle workflows.",
+  "translations": {
+    "zh-Hans": {
+      "description": "Codestral 25.01 是 Mistral 发布的独立模型版本，具备明确的编程或软件工程能力。"
+    },
+    "de": {
+      "description": "Codestral 25.01 ist eine eigenständige Modellversion von Mistral mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+    },
+    "es": {
+      "description": "Codestral 25.01 es una versión de modelo independiente de Mistral con capacidades explícitas de programación o ingeniería de software."
+    },
+    "fr": {
+      "description": "Codestral 25.01 est une version de modèle distincte de Mistral, dotée de capacités explicites en programmation ou en génie logiciel."
+    },
+    "id": {
+      "description": "Codestral 25.01 adalah versi model mandiri dari Mistral dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+    },
+    "ja": {
+      "description": "Codestral 25.01 は Mistral が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+    },
+    "ko": {
+      "description": "Codestral 25.01은(는) Mistral가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+    },
+    "pt": {
+      "description": "Codestral 25.01 é uma versão de modelo independente da Mistral, com capacidades explícitas de programação ou engenharia de software."
+    },
+    "ru": {
+      "description": "Codestral 25.01 — самостоятельная версия модели от Mistral с явно заявленными возможностями программирования или разработки ПО."
+    },
+    "tr": {
+      "description": "Codestral 25.01, Mistral tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+    },
+    "zh-Hant": {
+      "description": "Codestral 25.01 是 Mistral 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.mistral.ai/models/model-cards/codestral-25-01",
+      "title": "Codestral 25.01 official documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "releaseDate",
+        "lifecycle",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://mistral.ai",
+  "docsUrl": "https://docs.mistral.ai/models/model-cards/codestral-25-01",
+  "vendor": "Mistral AI",
+  "size": null,
+  "contextWindow": 262144,
+  "maxOutput": null,
+  "tokenPricing": {
+    "input": null,
+    "output": null,
+    "cache": null
+  },
+  "releaseDate": "2025-01-13",
+  "lifecycle": "deprecated",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

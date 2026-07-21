@@ -1,126 +1,36 @@
-# IDE Manifest Workflow
+# IDE manifest workflow
 
-This workflow guides you through creating or updating an IDE manifest with focus on GUI installation and downloads.
+## Read before editing
 
-## Required Fields (from ide.schema.json)
+- `manifests/$schemas/ide.schema.json` and referenced schemas
+- `src/types/manifests.ts`
+- the target manifest and two current IDE examples
+- the related vendor manifest
 
-**Entity + Product fields**: Same as CLI
+## Evidence checklist
 
-**App fields:**
-- `platforms` (array of {os, installPath, installCommand, launchCommand})
+Use official download pages, system requirements, release notes, documentation, pricing, and licensing information. Verify the stable version independently for each release channel when channels differ.
 
-## Workflow
+For platform data:
 
-Follow **CLI workflow** with these IDE-specific adjustments:
+- record only OS values supported by the schema;
+- distinguish an installer/download URL from an install command;
+- do not invent default filesystem paths;
+- record CLI launch commands only when documented;
+- represent unavailable optional values as schema-valid `null`.
 
-## Phase 1-2: Core Info & Installation
+## Create or update
 
-**Differences from CLI:**
+1. Keep filename, `id`, official name, and vendor ID aligned.
+2. Use the latest stable version, not an insider/nightly build unless explicitly represented as such.
+3. Use an SPDX identifier or `Proprietary` for the license.
+4. Copy pricing values and billing units without conversion or extrapolation.
+5. Preserve curated product relationships unless verified.
+6. Add or refresh source and verification metadata based on current evidence.
+7. Keep translations complete for every locale declared in `src/i18n/config.ts` and update them together when English meaning changes.
 
-1. **Focus on GUI installation** rather than command-line:
-   - Download page for installer files (.dmg, .exe, .deb, .AppImage)
-   - Installation wizards and GUI installers
-   - App Store distributions (Mac App Store, Microsoft Store)
+Never store JSON comments, TODOs, guessed paths, or placeholder links.
 
-2. **Installation patterns**:
+## Validation
 
-   **macOS**:
-   - DMG file download
-   - installPath: `/Applications/<Name>.app`
-   - installCommand: Download and drag to Applications (or `brew install --cask <name>`)
-   - launchCommand: Application name or `open -a "<Name>"`
-
-   **Windows**:
-   - EXE or MSI installer
-   - installPath: `C:\\Program Files\\<Name>` or `%LOCALAPPDATA%\\<Name>`
-   - installCommand: Download and run installer (or `winget install <name>`)
-   - launchCommand: Start menu or executable path
-
-   **Linux**:
-   - .deb, .rpm, .AppImage, or Snap package
-   - installPath: `/usr/bin/<name>` or `/opt/<name>`
-   - installCommand: `sudo apt install <name>`, `snap install <name>`, etc.
-   - launchCommand: `<name>` or desktop entry
-
-3. **Download URLs** (`resourceUrls.download`):
-   - Direct links to installer files
-   - Download page with OS detection
-   - Release pages with multiple OS versions
-
-## Phase 3-7: Same as CLI
-
-- GitHub discovery
-- Version extraction
-- Pricing (may include licenses for teams)
-- Resource URLs
-- Community URLs
-
-## Phase 8: Generate Manifest
-
-```json
-{
-  "$schema": "../$schemas/ide.schema.json",
-  "id": "<name>",
-  "name": "<Official Name>",
-  "description": "<Max 200 chars>",
-  "i18n": {},
-  "websiteUrl": "<https://...>",
-  "docsUrl": "<https://... or null>",
-  "verified": false,
-  "vendor": "<Company Name>",
-  "latestVersion": "<1.2.0>",
-  "githubUrl": "<https://github.com/...>",
-  "license": "<SPDX or Proprietary>",
-  "pricing": [...],
-  "resourceUrls": {
-    "download": "<https://.../download>",
-    "changelog": "<url or null>",
-    "pricing": "<url or null>",
-    "mcp": "<url or null>",
-    "issue": "<https://github.com/.../issues>"
-  },
-  "communityUrls": {...},
-  "relatedProducts": [],
-  "platforms": [
-    {
-      "os": "macos",
-      "installPath": "/Applications/Name.app",
-      "installCommand": "brew install --cask name",
-      "launchCommand": "open -a \"Name\""
-    },
-    {
-      "os": "windows",
-      "installPath": "%LOCALAPPDATA%\\Name",
-      "installCommand": "winget install Name.Name",
-      "launchCommand": "Name"
-    },
-    {
-      "os": "linux",
-      "installPath": "/usr/bin/name",
-      "installCommand": "sudo snap install name --classic",
-      "launchCommand": "name"
-    }
-  ]
-}
-```
-
-## Common IDE Install Patterns
-
-| OS | Package Manager | Command | Install Path |
-|----|----------------|---------|--------------|
-| macOS | Homebrew Cask | `brew install --cask <name>` | `/Applications/<Name>.app` |
-| macOS | DMG | Download → Drag to Applications | `/Applications/<Name>.app` |
-| Windows | Winget | `winget install <id>` | `%LOCALAPPDATA%\<Name>` or `C:\Program Files\<Name>` |
-| Windows | Installer | Download .exe → Run | `C:\Program Files\<Name>` |
-| Linux | Snap | `snap install <name> --classic` | `/snap/<name>` |
-| Linux | APT | `apt install <name>` | `/usr/bin/<name>` |
-| Linux | Flatpak | `flatpak install <name>` | `/var/lib/flatpak` |
-
-## Key Differences from CLI
-
-- Emphasize GUI installation over command-line
-- Include download page URLs for installers
-- Launch commands are often just the app name or GUI launcher
-- May include App Store links
-- Installation paths are app bundles (.app) on macOS
-- Some IDEs are web-based (os: "web", no installPath)
+Run the parent skill's validation sequence. Manually review platform entries for copied CLI instructions that do not apply to the desktop application.

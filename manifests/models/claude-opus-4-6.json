@@ -1,0 +1,101 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "claude-opus-4-6",
+  "name": "Claude Opus 4.6",
+  "description": "Anthropic's flagship model for sustained agentic tasks, careful planning, large codebases, computer use, and complex professional work.",
+  "translations": {
+    "de": {
+      "description": "Anthropics Flaggschiffmodell für ausdauernde agentische Aufgaben, sorgfältige Planung, große Codebasen, Computernutzung und komplexe Facharbeit."
+    },
+    "es": {
+      "description": "El modelo insignia de Anthropic para tareas agénticas prolongadas, planificación cuidadosa, grandes bases de código, uso de computadoras y trabajo complejo."
+    },
+    "fr": {
+      "description": "Le modèle phare d’Anthropic pour les tâches agentiques prolongées, la planification, les grandes bases de code, l’ordinateur et le travail complexe."
+    },
+    "id": {
+      "description": "Model unggulan Anthropic untuk tugas agentik berkelanjutan, perencanaan cermat, basis kode besar, penggunaan komputer, dan pekerjaan profesional kompleks."
+    },
+    "ja": {
+      "description": "長時間のエージェントタスク、慎重な計画、大規模コードベース、コンピューター操作、複雑な専門業務向けのAnthropic旗艦モデル。"
+    },
+    "ko": {
+      "description": "지속적인 에이전트 작업, 신중한 계획, 대규모 코드베이스, 컴퓨터 사용 및 복잡한 전문 업무를 위한 Anthropic 플래그십 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo principal da Anthropic para tarefas agênticas prolongadas, planejamento cuidadoso, grandes bases de código, uso do computador e trabalho complexo."
+    },
+    "ru": {
+      "description": "Флагманская модель Anthropic для длительных агентных задач, тщательного планирования, крупных кодовых баз, управления компьютером и сложной работы."
+    },
+    "tr": {
+      "description": "Anthropic'in uzun süreli aracı görevler, dikkatli planlama, büyük kod tabanları, bilgisayar kullanımı ve karmaşık profesyonel işler için amiral modeli."
+    },
+    "zh-Hans": {
+      "description": "Anthropic 面向长时间智能体任务、周密规划、大型代码库、计算机使用和复杂专业工作的旗舰模型。"
+    },
+    "zh-Hant": {
+      "description": "Anthropic 面向長時間智慧體任務、周密規劃、大型程式碼庫、電腦使用和複雜專業工作的旗艦模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "title": "Claude models overview",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "lifecycle"
+      ]
+    },
+    {
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-4-6.html",
+      "title": "Claude Opus 4.6 model details",
+      "fields": [
+        "releaseDate",
+        "knowledgeCutoff",
+        "contextWindow",
+        "maxOutput",
+        "inputModalities",
+        "outputModalities"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-opus-4-6",
+      "title": "Introducing Claude Opus 4.6",
+      "fields": ["name", "description", "releaseDate"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.anthropic.com",
+  "docsUrl": "https://platform.claude.com/docs/en/about-claude/models/overview",
+  "vendor": "Anthropic",
+  "size": null,
+  "contextWindow": 1000000,
+  "maxOutput": 128000,
+  "tokenPricing": { "input": 5, "output": 25, "cache": 0.5 },
+  "releaseDate": "2026-02-05",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2025-05",
+  "inputModalities": ["text", "image", "pdf"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

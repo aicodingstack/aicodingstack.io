@@ -1,0 +1,108 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "minimax-m2-5",
+  "name": "MiniMax M2.5",
+  "description": "MiniMax's open-weight reasoning model for coding, agentic tool use, search, and end-to-end software development.",
+  "translations": {
+    "de": {
+      "description": "MiniMax' Open-Weight-Reasoning-Modell für Coding, agentische Werkzeugnutzung, Suche und durchgängige Softwareentwicklung."
+    },
+    "es": {
+      "description": "El modelo de razonamiento de pesos abiertos de MiniMax para código, herramientas agénticas, búsqueda y desarrollo integral de software."
+    },
+    "fr": {
+      "description": "Le modèle de raisonnement à poids ouverts de MiniMax pour le codage, les outils agentiques, la recherche et le développement logiciel complet."
+    },
+    "id": {
+      "description": "Model penalaran berbobot terbuka MiniMax untuk coding, penggunaan alat agentik, pencarian, dan pengembangan perangkat lunak menyeluruh."
+    },
+    "ja": {
+      "description": "コーディング、エージェント型ツール利用、検索、エンドツーエンドのソフトウェア開発向けのMiniMax製オープンウェイト推論モデル。"
+    },
+    "ko": {
+      "description": "코딩, 에이전트 도구 사용, 검색 및 엔드투엔드 소프트웨어 개발을 위한 MiniMax의 오픈 웨이트 추론 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo de raciocínio de pesos abertos da MiniMax para código, ferramentas agênticas, busca e desenvolvimento completo de software."
+    },
+    "ru": {
+      "description": "Модель рассуждений MiniMax с открытыми весами для программирования, агентных инструментов, поиска и полного цикла разработки ПО."
+    },
+    "tr": {
+      "description": "MiniMax'in kodlama, aracı araç kullanımı, arama ve uçtan uca yazılım geliştirme için açık ağırlıklı akıl yürütme modeli."
+    },
+    "zh-Hans": {
+      "description": "MiniMax 面向编码、智能体工具调用、搜索和端到端软件开发的开放权重推理模型。"
+    },
+    "zh-Hant": {
+      "description": "MiniMax 面向編碼、智慧體工具呼叫、搜尋和端到端軟體開發的開放權重推理模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.minimax.io/news/minimax-m25",
+      "title": "MiniMax M2.5 launch",
+      "fields": ["name", "description", "releaseDate", "lifecycle", "capabilities"]
+    },
+    {
+      "url": "https://platform.minimax.io/docs/api-reference/api-overview",
+      "title": "MiniMax API overview",
+      "fields": ["docsUrl", "contextWindow", "inputModalities", "outputModalities"]
+    },
+    {
+      "url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "title": "MiniMax pay-as-you-go pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5",
+      "title": "MiniMax M2.5 official model card",
+      "fields": ["size", "platformUrls.huggingface"]
+    },
+    {
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5",
+      "title": "MiniMax M2.5 official model card — SWE-bench Verified; Claude Code scaffold with an overridden prompt; average of 4 runs; label: MiniMax M2.5; observed 2026-07-21",
+      "fields": ["benchmarks.sweBench"]
+    },
+    {
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5",
+      "title": "MiniMax M2.5 official model card — SciCode; MiniMax vendor evaluation reported in the official model card; label: MiniMax M2.5; observed 2026-07-21",
+      "fields": ["benchmarks.sciCode"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.minimax.io",
+  "docsUrl": "https://platform.minimax.io/docs/api-reference/api-overview",
+  "vendor": "MiniMax",
+  "size": "229B",
+  "contextWindow": 204800,
+  "maxOutput": null,
+  "tokenPricing": {
+    "input": 0.3,
+    "output": 1.2,
+    "cache": 0.03
+  },
+  "releaseDate": "2026-02-12",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "reasoning"],
+  "benchmarks": {
+    "sweBench": 80.2,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": 44.4,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5",
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
+}

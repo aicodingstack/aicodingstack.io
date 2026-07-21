@@ -1,0 +1,90 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gpt-5-5",
+  "name": "GPT-5.5",
+  "description": "OpenAI's frontier model for agentic coding, computer use, knowledge work, scientific research, and complex multi-tool tasks.",
+  "translations": {
+    "de": {
+      "description": "OpenAIs Frontier-Modell für agentische Programmierung, Computernutzung, Wissensarbeit, wissenschaftliche Forschung und komplexe Multi-Tool-Aufgaben."
+    },
+    "es": {
+      "description": "El modelo de frontera de OpenAI para programación agéntica, uso de computadoras, trabajo del conocimiento, investigación científica y tareas multiherramienta."
+    },
+    "fr": {
+      "description": "Le modèle de pointe d’OpenAI pour le codage agentique, l’utilisation d’ordinateurs, le travail intellectuel, la recherche et les tâches multi-outils."
+    },
+    "id": {
+      "description": "Model frontier OpenAI untuk coding agentik, penggunaan komputer, pekerjaan pengetahuan, riset ilmiah, dan tugas multi-alat yang kompleks."
+    },
+    "ja": {
+      "description": "エージェント型コーディング、コンピューター操作、知識労働、科学研究、複雑なマルチツール作業向けのOpenAIフロンティアモデル。"
+    },
+    "ko": {
+      "description": "에이전트 코딩, 컴퓨터 사용, 지식 업무, 과학 연구 및 복잡한 다중 도구 작업을 위한 OpenAI 프런티어 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo de fronteira da OpenAI para programação agêntica, uso de computadores, trabalho de conhecimento, pesquisa científica e tarefas multiferramenta."
+    },
+    "ru": {
+      "description": "Передовая модель OpenAI для агентного программирования, управления компьютером, интеллектуальной работы, исследований и сложных задач с инструментами."
+    },
+    "tr": {
+      "description": "OpenAI'ın aracı kodlama, bilgisayar kullanımı, bilgi çalışmaları, bilimsel araştırma ve karmaşık çok araçlı görevler için öncü modeli."
+    },
+    "zh-Hans": {
+      "description": "OpenAI 面向智能体编码、计算机使用、知识工作、科学研究和复杂多工具任务的前沿模型。"
+    },
+    "zh-Hant": {
+      "description": "OpenAI 面向智慧體編碼、電腦使用、知識工作、科學研究和複雜多工具任務的前沿模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "title": "GPT-5.5 model documentation",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "releaseDate"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-5-5/",
+      "title": "Introducing GPT-5.5",
+      "fields": ["name", "description", "releaseDate", "lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://openai.com",
+  "docsUrl": "https://developers.openai.com/api/docs/models/gpt-5.5",
+  "vendor": "OpenAI",
+  "size": null,
+  "contextWindow": 1050000,
+  "maxOutput": 128000,
+  "tokenPricing": { "input": 5, "output": 30, "cache": 0.5 },
+  "releaseDate": "2026-04-23",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": "2025-12-01",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

@@ -39,6 +39,16 @@
     }
   },
   "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.x.ai/developers/migration/may-15-retirement",
+      "title": "xAI May 15 model retirement notice",
+      "fields": ["lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://x.ai",
   "docsUrl": "https://docs.x.ai/docs/models/grok-code-fast-1",
   "vendor": "xAI",
@@ -51,7 +61,7 @@
     "cache": 0.02
   },
   "releaseDate": "2025-08-28",
-  "lifecycle": "latest",
+  "lifecycle": "deprecated",
   "knowledgeCutoff": null,
   "inputModalities": ["text"],
   "outputModalities": ["text"],

@@ -1,0 +1,89 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "muse-spark-1-1",
+  "name": "Muse Spark 1.1",
+  "description": "Meta's multimodal reasoning model for coding agents, long-running tool use, computer operation, and complex software engineering.",
+  "translations": {
+    "de": {
+      "description": "Metas multimodales Reasoning-Modell für Coding-Agenten, langfristige Werkzeugnutzung, Computersteuerung und komplexe Softwareentwicklung."
+    },
+    "es": {
+      "description": "El modelo de razonamiento multimodal de Meta para agentes de código, uso prolongado de herramientas, control informático e ingeniería compleja."
+    },
+    "fr": {
+      "description": "Le modèle de raisonnement multimodal de Meta pour les agents de codage, l’usage prolongé d’outils, le pilotage informatique et l’ingénierie complexe."
+    },
+    "id": {
+      "description": "Model penalaran multimodal Meta untuk agen coding, penggunaan alat jangka panjang, operasi komputer, dan rekayasa perangkat lunak kompleks."
+    },
+    "ja": {
+      "description": "コーディングエージェント、長時間のツール利用、コンピューター操作、複雑なソフトウェア開発向けのMeta製マルチモーダル推論モデル。"
+    },
+    "ko": {
+      "description": "코딩 에이전트, 장기 도구 사용, 컴퓨터 조작 및 복잡한 소프트웨어 엔지니어링을 위한 Meta의 멀티모달 추론 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo de raciocínio multimodal da Meta para agentes de código, uso prolongado de ferramentas, operação de computadores e engenharia complexa."
+    },
+    "ru": {
+      "description": "Мультимодальная модель рассуждений Meta для агентов программирования, длительной работы с инструментами и сложной разработки."
+    },
+    "tr": {
+      "description": "Meta'nın kodlama aracıları, uzun süreli araç kullanımı, bilgisayar kontrolü ve karmaşık yazılım mühendisliği için çok modlu akıl yürütme modeli."
+    },
+    "zh-Hans": {
+      "description": "Meta 面向编码智能体、长时间工具调用、计算机操作和复杂软件工程的多模态推理模型。"
+    },
+    "zh-Hant": {
+      "description": "Meta 面向編碼智慧體、長時間工具呼叫、電腦操作和複雜軟體工程的多模態推理模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+      "title": "Introducing Muse Spark 1.1",
+      "fields": [
+        "name",
+        "description",
+        "contextWindow",
+        "releaseDate",
+        "lifecycle",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://developer.meta.com/ai",
+      "title": "Meta Model API documentation",
+      "fields": ["docsUrl"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-21",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://ai.meta.com",
+  "docsUrl": "https://developer.meta.com/ai",
+  "vendor": "Meta",
+  "size": null,
+  "contextWindow": 1000000,
+  "maxOutput": null,
+  "tokenPricing": { "input": null, "output": null, "cache": null },
+  "releaseDate": "2026-07-09",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "pdf", "audio", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}
