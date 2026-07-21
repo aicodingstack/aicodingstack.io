@@ -2,6 +2,139 @@
   "version": 1,
   "entries": [
     {
+      "id": "2026-07-21-url-validation",
+      "date": "2026-07-21",
+      "summary": "Normalized and repaired manifest URLs flagged by scheduled validation",
+      "changes": [
+        {
+          "category": "clis",
+          "id": "amazon-q-developer-cli",
+          "change": "updated",
+          "fields": ["websiteUrl"]
+        },
+        {
+          "category": "clis",
+          "id": "deepv-code",
+          "change": "updated",
+          "fields": ["docsUrl", "websiteUrl"]
+        },
+        {
+          "category": "clis",
+          "id": "droid-cli",
+          "change": "updated",
+          "fields": ["resourceUrls"]
+        },
+        {
+          "category": "clis",
+          "id": "qoder-cli",
+          "change": "updated",
+          "fields": ["docsUrl"]
+        },
+        {
+          "category": "extensions",
+          "id": "gemini-code-assist",
+          "change": "updated",
+          "fields": ["communityUrls", "websiteUrl"]
+        },
+        {
+          "category": "ides",
+          "id": "air",
+          "change": "updated",
+          "fields": ["docsUrl", "resourceUrls", "websiteUrl"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-1-pro-preview",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-flash",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "models",
+          "id": "glm-4-6v",
+          "change": "updated",
+          "fields": ["websiteUrl"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-2",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-6-luna",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-6-sol",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-6-terra",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "providers",
+          "id": "alibaba",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "providers",
+          "id": "anthropic",
+          "change": "updated",
+          "fields": ["applyKeyUrl", "sources"]
+        },
+        {
+          "category": "providers",
+          "id": "google",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "providers",
+          "id": "meta",
+          "change": "updated",
+          "fields": ["applyKeyUrl", "docsUrl"]
+        },
+        {
+          "category": "providers",
+          "id": "moonshot",
+          "change": "updated",
+          "fields": ["platformUrls"]
+        },
+        {
+          "category": "providers",
+          "id": "openai",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "vendors",
+          "id": "orionstar",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "vendors",
+          "id": "tabnine",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        }
+      ]
+    },
+    {
       "id": "2026-07-20-latest-models",
       "date": "2026-07-20",
       "summary": "Added current flagship model families from OpenAI, Anthropic, and Google",
