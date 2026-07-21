@@ -40,10 +40,10 @@
   },
   "verified": false,
   "websiteUrl": "https://llama.meta.com",
-  "docsUrl": "https://llama.meta.com/docs/",
+  "docsUrl": "https://llama.meta.com/docs",
   "vendor": "meta",
   "type": "foundation-model-provider",
-  "applyKeyUrl": "https://www.llama.com/api/",
+  "applyKeyUrl": "https://www.llama.com/api",
   "platformUrls": {
     "huggingface": "https://huggingface.co/meta-llama",
     "artificialAnalysis": null,

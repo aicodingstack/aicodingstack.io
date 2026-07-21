@@ -39,7 +39,7 @@
     }
   },
   "verified": false,
-  "websiteUrl": "https://aws.amazon.com/q/developer/",
+  "websiteUrl": "https://aws.amazon.com/q/developer",
   "docsUrl": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line.html",
   "vendor": "AWS",
   "latestVersion": "v1.18.1",

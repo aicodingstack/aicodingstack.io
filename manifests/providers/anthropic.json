@@ -51,7 +51,7 @@
       "fields": ["docsUrl", "type"]
     },
     {
-      "url": "https://platform.claude.com/",
+      "url": "https://platform.claude.com",
       "title": "Claude Platform console",
       "fields": ["applyKeyUrl"]
     }
@@ -63,7 +63,7 @@
   "docsUrl": "https://platform.claude.com/docs/en/home",
   "vendor": "anthropic",
   "type": "foundation-model-provider",
-  "applyKeyUrl": "https://platform.claude.com/",
+  "applyKeyUrl": "https://platform.claude.com",
   "platformUrls": {
     "huggingface": "https://huggingface.co/anthropics",
     "artificialAnalysis": null,

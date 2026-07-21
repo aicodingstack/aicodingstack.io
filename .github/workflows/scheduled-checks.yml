@@ -29,15 +29,20 @@ jobs:
 
       - name: Validate URLs
         id: validate
-        run: npm run test:urls
+        run: npm run test:urls 2>&1 | tee url-validation.log
         continue-on-error: true
+        env:
+          NO_COLOR: '1'
 
       - name: Create issue if URLs are broken
         if: steps.validate.outcome == 'failure'
         uses: actions/github-script@v8
         with:
           script: |
+            const fs = require('node:fs');
             const title = '🔗 Broken URLs detected in manifests';
+            const output = fs.readFileSync('url-validation.log', 'utf8');
+            const excerpt = output.slice(-6000);
             const body = `## Scheduled URL Validation Failed
 
             The weekly URL validation check has detected broken or inaccessible URLs in the manifest files.
@@ -49,8 +54,10 @@ jobs:
             - Update or remove broken URLs
             - Consider if these tools/services have been discontinued
 
-            ### Affected Files
-            Check the workflow logs for specific files and URLs that failed validation.
+            ### Validation Output
+            \`\`\`text
+            ${excerpt}
+            \`\`\`
 
             ---
             *This issue was automatically created by the scheduled URL validation workflow.*`;
@@ -77,6 +84,35 @@ jobs:
                 repo: context.repo.repo,
                 issue_number: issues.data[0].number,
                 body: body
+              });
+            }
+
+      - name: Close resolved URL validation issues
+        if: steps.validate.outcome == 'success'
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'automated,url-validation',
+              per_page: 100
+            });
+
+            for (const issue of issues) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: `URL validation passed in ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}. Closing this automated maintenance issue.`
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                state: 'closed',
+                state_reason: 'completed'
               });
             }
 

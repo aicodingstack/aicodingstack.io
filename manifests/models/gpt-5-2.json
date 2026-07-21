@@ -56,7 +56,7 @@
       ]
     },
     {
-      "url": "https://openai.com/index/introducing-gpt-5-2/",
+      "url": "https://openai.com/index/introducing-gpt-5-2",
       "title": "Introducing GPT-5.2",
       "fields": ["name", "description", "releaseDate"]
     }

@@ -56,7 +56,7 @@
       ]
     },
     {
-      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-3-flash/",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-3-flash",
       "title": "Introducing Gemini 3 Flash",
       "fields": ["name", "description", "releaseDate"]
     }

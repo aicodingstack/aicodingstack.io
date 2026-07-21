@@ -55,7 +55,7 @@
       ]
     },
     {
-      "url": "https://openai.com/index/gpt-5-6/",
+      "url": "https://openai.com/index/gpt-5-6",
       "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
       "fields": ["name", "description", "releaseDate", "lifecycle", "tokenPricing"]
     }

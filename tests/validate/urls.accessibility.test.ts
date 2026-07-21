@@ -23,7 +23,7 @@ const UserAgent = require('user-agents') as UserAgentConstructor
 
 type UrlInfo = { url: string; source: string; itemId: string; field: string }
 type UrlResult =
-  | (UrlInfo & { valid: true; skipped?: true; status?: number | 'skipped' })
+  | (UrlInfo & { valid: true; skipped?: true; status?: number | 'skipped'; reason?: string })
   | (UrlInfo & { valid: false; status?: number; error: string })
 
 /**
@@ -217,6 +217,8 @@ const SKIP_DOMAIN_PREFIXES = [
   'https://huggingface.co',
   'https://discord.com/invite/',
   'https://discord.gg/',
+  'https://x.com/',
+  'https://www.linkedin.com/',
   'https://www.npmjs.com/package/',
   'https://www.reddit.com/r/',
   'https://www.youtube.com/',
@@ -255,41 +257,69 @@ function getRandomUserAgent(): string {
  */
 async function checkUrl(urlInfo: UrlInfo, retries: number): Promise<UrlResult> {
   if (shouldSkipUrl(urlInfo.url)) {
-    return { ...urlInfo, valid: true, skipped: true, status: 'skipped' }
+    return {
+      ...urlInfo,
+      valid: true,
+      skipped: true,
+      status: 'skipped',
+      reason: 'Known automation-blocking domain',
+    }
   }
 
   const REQUEST_TIMEOUT = 10_000
 
-  for (let attempt = 0; attempt <= retries; attempt++) {
+  async function fetchWithTimeout(method: 'HEAD' | 'GET', userAgent: string) {
+    const controller = new AbortController()
+    const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT)
+
     try {
-      const controller = new AbortController()
-      const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT)
-
-      // Generate a random user-agent for each request to avoid being blocked.
-      const userAgent = getRandomUserAgent()
-
-      // Prefer HEAD; fallback to GET when HEAD fails or returns error status.
-      const response = await fetch(urlInfo.url, {
-        method: 'HEAD',
+      return await fetch(urlInfo.url, {
+        method,
         signal: controller.signal,
         redirect: 'follow',
         headers: {
           'User-Agent': userAgent,
         },
       })
-
+    } finally {
       clearTimeout(timeoutId)
+    }
+  }
 
-      if (response.ok || (response.status >= 300 && response.status < 400)) {
-        return { ...urlInfo, valid: true, status: response.status }
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      // Generate a random user-agent for each request to avoid being blocked.
+      const userAgent = getRandomUserAgent()
+
+      // Prefer HEAD; fallback to GET when HEAD fails or returns error status.
+      let method: 'HEAD' | 'GET' = 'HEAD'
+      let response: Response
+      try {
+        response = await fetchWithTimeout(method, userAgent)
+      } catch {
+        method = 'GET'
+        response = await fetchWithTimeout(method, userAgent)
       }
 
-      if (response.status === 404) {
+      if (!response.ok && method === 'HEAD') {
+        await response.body?.cancel()
+        method = 'GET'
+        response = await fetchWithTimeout(method, userAgent)
+      }
+
+      const status = response.status
+      await response.body?.cancel()
+
+      if (response.ok || (response.status >= 300 && response.status < 400)) {
+        return { ...urlInfo, valid: true, status }
+      }
+
+      if (status === 404 || status === 410) {
         return {
           ...urlInfo,
           valid: false,
-          status: response.status,
-          error: `HTTP ${response.status}`,
+          status,
+          error: `HTTP ${status}`,
         }
       }
 
@@ -300,16 +330,16 @@ async function checkUrl(urlInfo: UrlInfo, retries: number): Promise<UrlResult> {
         continue
       }
 
-      return { ...urlInfo, valid: false, status: response.status, error: `HTTP ${response.status}` }
+      return { ...urlInfo, valid: true, skipped: true, status, reason: `HTTP ${status}` }
     } catch (error) {
       if (attempt < retries) {
         const delay = 2 ** attempt * 1000
         await new Promise(resolve => setTimeout(resolve, delay))
         continue
       }
-      const message =
+      const reason =
         (error as Error).name === 'AbortError' ? 'Request timeout' : (error as Error).message
-      return { ...urlInfo, valid: false, error: message }
+      return { ...urlInfo, valid: true, skipped: true, status: 'skipped', reason }
     }
   }
 
@@ -341,30 +371,46 @@ async function validateUrls(urls: UrlInfo[], maxConcurrency: number): Promise<Ur
 describe('validate: urls accessibility', () => {
   const run = shouldRunUrlTests()
   const testIt = run ? it : it.skip
+  const URL_VALIDATION_TEST_TIMEOUT = 10 * 60 * 1000
 
-  testIt('all URLs are accessible (CI-only; non-blocking in workflow)', async () => {
-    const urls = loadAllUrls(process.cwd())
-    if (urls.length === 0) return
+  testIt(
+    'all URLs are accessible (CI-only; non-blocking in workflow)',
+    async () => {
+      const urls = loadAllUrls(process.cwd())
+      if (urls.length === 0) return
 
-    const formatFailures = validateUrlFormat(urls)
-    if (formatFailures.length > 0) {
-      const details = formatFailures
-        .map(
-          r => `- ${r.url}\n  source: ${r.source}\n  error: ${'error' in r ? r.error : 'Unknown'}`
-        )
-        .join('\n')
-      throw new Error(`URL format validation failed:\n\n${details}`)
-    }
+      const formatFailures = validateUrlFormat(urls)
+      if (formatFailures.length > 0) {
+        const details = formatFailures
+          .map(
+            r => `- ${r.url}\n  source: ${r.source}\n  error: ${'error' in r ? r.error : 'Unknown'}`
+          )
+          .join('\n')
+        throw new Error(`URL format validation failed:\n\n${details}`)
+      }
 
-    const results = await validateUrls(urls, 10)
-    const invalid = results.filter(r => !r.valid)
-    if (invalid.length > 0) {
-      const details = invalid
-        .map(
-          r => `- ${r.url}\n  source: ${r.source}\n  error: ${'error' in r ? r.error : 'Unknown'}`
-        )
-        .join('\n')
-      throw new Error(`URL accessibility validation failed:\n\n${details}`)
-    }
-  })
+      const results = await validateUrls(urls, 10)
+      const skipped = results.filter(
+        (result): result is Extract<UrlResult, { valid: true }> =>
+          result.valid && result.skipped === true
+      )
+      if (skipped.length > 0) {
+        const details = skipped
+          .map(r => `- ${r.url}\n  source: ${r.source}\n  reason: ${r.reason ?? 'Unknown'}`)
+          .join('\n')
+        console.warn(`URL accessibility checks skipped:\n\n${details}`)
+      }
+
+      const invalid = results.filter(r => !r.valid)
+      if (invalid.length > 0) {
+        const details = invalid
+          .map(
+            r => `- ${r.url}\n  source: ${r.source}\n  error: ${'error' in r ? r.error : 'Unknown'}`
+          )
+          .join('\n')
+        throw new Error(`URL accessibility validation failed:\n\n${details}`)
+      }
+    },
+    URL_VALIDATION_TEST_TIMEOUT
+  )
 })

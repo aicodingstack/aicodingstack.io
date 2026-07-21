@@ -41,7 +41,7 @@
   "verified": true,
   "sources": [
     {
-      "url": "https://ai.google/",
+      "url": "https://ai.google",
       "title": "Google AI",
       "fields": ["name", "description", "websiteUrl", "vendor"]
     },

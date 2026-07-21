@@ -41,7 +41,7 @@
   "verified": true,
   "sources": [
     {
-      "url": "https://openai.com/about/",
+      "url": "https://openai.com/about",
       "title": "OpenAI — About",
       "fields": ["name", "description", "websiteUrl", "vendor"]
     },

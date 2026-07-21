@@ -46,7 +46,7 @@
   "applyKeyUrl": "https://platform.moonshot.ai/console/api-keys",
   "platformUrls": {
     "huggingface": "https://huggingface.co/moonshotai",
-    "artificialAnalysis": "https://artificialanalysis.ai/providers/moonshot_ai",
+    "artificialAnalysis": null,
     "openrouter": "https://openrouter.ai/provider/moonshotai"
   },
   "communityUrls": {
