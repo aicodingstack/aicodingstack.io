@@ -1,0 +1,90 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-12-14",
+  "description": "Maps website-specific model names to manifest IDs for benchmark data extraction",
+  "mappings": {
+    "swebench": {
+      "websiteModels": {
+        "Claude 4.5 Opus medium (20251101)": "claude-opus-4-1",
+        "Claude 4.5 Sonnet (20250929)": "claude-sonnet-4-5",
+        "Claude 4 Opus (20250514)": "claude-opus-4",
+        "Claude 4 Sonnet (20250514)": "claude-sonnet-4",
+        "Gemini 3 Pro Preview (2025-11-18)": "gemini-3-pro",
+        "Gemini 2.5 Pro (2025-05-06)": "gemini-2-5-pro",
+        "Gemini 2.5 Flash (2025-04-17)": "gemini-2-5-flash",
+        "GPT-5.2 (2025-12-11) (high reasoning)": "gpt-5",
+        "GPT-5.2 (2025-12-11)": "gpt-5",
+        "GPT-5.1-codex (medium reasoning)": "gpt-5-1-codex",
+        "GPT-5.1 (2025-11-13) (medium reasoning)": "gpt-5-1",
+        "GPT-5 (2025-08-07) (medium reasoning)": "gpt-5",
+        "GPT-4.1 (2025-04-14)": "gpt-4-1",
+        "GPT-4o (2024-11-20)": "gpt-4o",
+        "DeepSeek V3.2 Reasoner": "deepseek-r1",
+        "DeepSeek V3 Terminus": "deepseek-v3-terminus",
+        "GLM-4.6 (T=1)": "glm-4-6",
+        "GLM-4.5 (2025-08-22)": "glm-4-6"
+      }
+    },
+    "terminalBench": {
+      "websiteModels": {
+        "Claude Opus 4.5": "claude-opus-4-1",
+        "Claude Sonnet 4.5": "claude-sonnet-4-5",
+        "Claude Opus 4.1": "claude-opus-4-1",
+        "Claude Haiku 4.5": "claude-haiku-4-5",
+        "Gemini 3 Pro": "gemini-3-pro",
+        "Gemini 2.5 Pro": "gemini-2-5-pro",
+        "Gemini 2.5 Flash": "gemini-2-5-flash",
+        "GPT-5.2": "gpt-5",
+        "GPT-5.1-Codex-Max": "gpt-5-1-codex",
+        "GPT-5.1-Codex": "gpt-5-1-codex",
+        "GPT-5.1-Codex-Mini": "gpt-5-1-codex",
+        "GPT-5.1": "gpt-5-1",
+        "GPT-5-Codex": "gpt-5-codex",
+        "GPT-5": "gpt-5",
+        "GPT-5-Mini": "gpt-5",
+        "GPT-5-Nano": "gpt-5",
+        "GPT-4o": "gpt-4o",
+        "Grok Code Fast 1": "grok-code-fast-1",
+        "Grok 4": "grok-4",
+        "GLM 4.6": "glm-4-6"
+      }
+    },
+    "mmmu": {
+      "websiteModels": {
+        "Claude-Sonnet-4.5": "claude-sonnet-4-5",
+        "Claude Sonnet 4.5": "claude-sonnet-4-5",
+        "Claude Opus 4.1": "claude-opus-4-1",
+        "Gemini-2.5-Pro": "gemini-2-5-pro",
+        "Gemini 2.5 Pro": "gemini-2-5-pro",
+        "GPT-4o": "gpt-4o",
+        "GPT-5": "gpt-5"
+      }
+    },
+    "sciCode": {
+      "websiteModels": {
+        "Claude Sonnet 4.5": "claude-sonnet-4-5",
+        "GPT-4o": "gpt-4o",
+        "GPT-5": "gpt-5",
+        "DeepSeek R1": "deepseek-r1",
+        "DeepSeek V3": "deepseek-v3-terminus"
+      }
+    },
+    "liveCodeBench": {
+      "websiteModels": {
+        "claude-sonnet-4-5": "claude-sonnet-4-5",
+        "claude-sonnet-4.5": "claude-sonnet-4-5",
+        "gpt-4o": "gpt-4o",
+        "gpt-5": "gpt-5",
+        "gemini-2.5-pro": "gemini-2-5-pro",
+        "gemini-2-5-flash": "gemini-2-5-flash"
+      }
+    },
+    "webDevArena": {
+      "websiteModels": {
+        "Claude Sonnet 4.5": "claude-sonnet-4-5",
+        "GPT-4o": "gpt-4o",
+        "GPT-5": "gpt-5"
+      }
+    }
+  }
+}
