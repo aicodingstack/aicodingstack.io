@@ -63,7 +63,12 @@
     {
       "url": "https://help.aliyun.com/en/model-studio/qwen-coder",
       "title": "Alibaba Cloud Qwen Coder documentation",
-      "fields": ["docsUrl", "tokenPricing"]
+      "fields": ["docsUrl"]
+    },
+    {
+      "url": "https://help.aliyun.com/en/model-studio/model-pricing",
+      "title": "Alibaba Cloud Model Studio model pricing",
+      "fields": ["tokenPricing"]
     }
   ],
   "lastVerifiedAt": "2026-07-21",
@@ -75,7 +80,49 @@
   "size": "80B (3B active)",
   "contextWindow": 262144,
   "maxOutput": null,
-  "tokenPricing": { "input": null, "output": null, "cache": null },
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "cn-standard",
+    "offers": [
+      {
+        "id": "cn-standard",
+        "currency": "CNY",
+        "region": "CN",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": { "metric": "inputTokens", "min": 1, "max": 32000 },
+            "rates": {
+              "input": 1,
+              "output": 4,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          },
+          {
+            "condition": { "metric": "inputTokens", "min": 32001, "max": 128000 },
+            "rates": {
+              "input": 1.5,
+              "output": 6,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          },
+          {
+            "condition": { "metric": "inputTokens", "min": 128001, "max": 256000 },
+            "rates": {
+              "input": 2.5,
+              "output": 10,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
   "releaseDate": "2026-02-03",
   "lifecycle": "maintained",
   "knowledgeCutoff": null,

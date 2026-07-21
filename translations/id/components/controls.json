@@ -3,6 +3,16 @@
     "copied": "Disalin!",
     "copyToClipboard": "Salin ke papan klip"
   },
+  "currencySwitcher": {
+    "cny": "Konversi ke CNY",
+    "label": "Mata uang tampilan",
+    "loadingRate": "Memuat kurs referensi…",
+    "native": "Pertahankan mata uang asli",
+    "nativeShort": "Asli",
+    "rateUnavailable": "Kurs referensi tidak tersedia; harga asli ditampilkan.",
+    "referenceRate": "Kurs referensi: 1 USD = {rate} CNY ({date})",
+    "usd": "Konversi ke USD"
+  },
   "filterSortBar": {
     "clearFilters": "Hapus filter",
     "license": "Lisensi:",

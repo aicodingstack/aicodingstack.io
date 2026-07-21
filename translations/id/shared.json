@@ -39,6 +39,7 @@
   "categories": {
     "all": {
       "clis": "All CLIs",
+      "desktops": "All Desktop Apps",
       "extensions": "All Extensions",
       "ides": "All IDEs",
       "modelProviders": "All Model Providers",
@@ -47,6 +48,7 @@
     },
     "plural": {
       "clis": "CLIs",
+      "desktops": "Desktop",
       "extensions": "Extensions",
       "ides": "IDEs",
       "modelProviders": "Model Providers",
@@ -56,6 +58,7 @@
     },
     "singular": {
       "cli": "CLI",
+      "desktop": "Desktop",
       "extension": "Extension",
       "ide": "IDE",
       "model": "Model",
@@ -80,6 +83,31 @@
     "deprecated": "Usang",
     "latest": "Terbaru",
     "maintained": "Dipertahankan"
+  },
+  "modelPricing": {
+    "cacheRead": "Baca cache",
+    "cacheWrite": "Tulis cache",
+    "conditions": {
+      "over": "Lebih dari {min} {metric}",
+      "range": "{min}–{max} {metric}",
+      "upTo": "Hingga {max} {metric}"
+    },
+    "ended": "Berakhir {date}",
+    "globalRegion": "Global",
+    "historical": "Harga historis",
+    "metrics": {
+      "contextTokens": "token konteks",
+      "inputTokens": "token input"
+    },
+    "notAvailable": "Tidak tersedia",
+    "perMillionTokens": "{price} / 1M tokens",
+    "reasons": {
+      "historicalPriceUnverified": "Harga historis API belum diverifikasi.",
+      "officialPriceNotPublished": "Harga token resmi belum dipublikasikan.",
+      "openWeightsOnly": "Hanya bobot terbuka; tidak ada harga API token pihak pertama.",
+      "subscriptionOnly": "Hanya berlangganan; tidak ada harga API berbasis token.",
+      "unsupportedPricingStructure": "Struktur harga resmi belum dapat direpresentasikan secara akurat."
+    }
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",

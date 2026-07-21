@@ -1,7 +1,8 @@
 {
   "addModel": "+ 모델 추가",
   "basicInfo": "기본 정보",
-  "cachePrice": "캐시 가격",
+  "cacheReadPrice": "캐시 읽기 가격",
+  "cacheWritePrice": "캐시 쓰기 가격",
   "compareTitle": "{model1} vs {model2} 비교",
   "description": "설명",
   "inputPrice": "입력 가격",

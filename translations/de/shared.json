@@ -39,6 +39,7 @@
   "categories": {
     "all": {
       "clis": "All CLIs",
+      "desktops": "All Desktop Apps",
       "extensions": "All Extensions",
       "ides": "All IDEs",
       "modelProviders": "All Model Providers",
@@ -47,6 +48,7 @@
     },
     "plural": {
       "clis": "CLIs",
+      "desktops": "Desktop",
       "extensions": "Extensions",
       "ides": "IDEs",
       "modelProviders": "Model Providers",
@@ -56,6 +58,7 @@
     },
     "singular": {
       "cli": "CLI",
+      "desktop": "Desktop",
       "extension": "Extension",
       "ide": "IDE",
       "model": "Model",
@@ -80,6 +83,31 @@
     "deprecated": "Veraltet",
     "latest": "Neueste",
     "maintained": "Gepflegt"
+  },
+  "modelPricing": {
+    "cacheRead": "Cache-Lesen",
+    "cacheWrite": "Cache-Schreiben",
+    "conditions": {
+      "over": "Über {min} {metric}",
+      "range": "{min}–{max} {metric}",
+      "upTo": "Bis zu {max} {metric}"
+    },
+    "ended": "Beendet am {date}",
+    "globalRegion": "Global",
+    "historical": "Historische Preise",
+    "metrics": {
+      "contextTokens": "Kontext-Tokens",
+      "inputTokens": "Eingabe-Tokens"
+    },
+    "notAvailable": "Nicht verfügbar",
+    "perMillionTokens": "{price} / 1M tokens",
+    "reasons": {
+      "historicalPriceUnverified": "Der historische API-Preis wurde nicht verifiziert.",
+      "officialPriceNotPublished": "Es wurde kein offizieller Token-Preis veröffentlicht.",
+      "openWeightsOnly": "Nur offene Gewichte; kein Token-API-Preis des Erstanbieters.",
+      "subscriptionOnly": "Nur im Abonnement; kein tokenbasierter API-Preis.",
+      "unsupportedPricingStructure": "Die offizielle Preisstruktur kann noch nicht genau dargestellt werden."
+    }
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",

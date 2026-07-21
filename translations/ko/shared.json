@@ -39,6 +39,7 @@
   "categories": {
     "all": {
       "clis": "All CLIs",
+      "desktops": "All Desktop Apps",
       "extensions": "All Extensions",
       "ides": "All IDEs",
       "modelProviders": "All Model Providers",
@@ -47,6 +48,7 @@
     },
     "plural": {
       "clis": "CLIs",
+      "desktops": "Desktop",
       "extensions": "Extensions",
       "ides": "IDEs",
       "modelProviders": "Model Providers",
@@ -56,6 +58,7 @@
     },
     "singular": {
       "cli": "CLI",
+      "desktop": "Desktop",
       "extension": "Extension",
       "ide": "IDE",
       "model": "Model",
@@ -80,6 +83,31 @@
     "deprecated": "Deprecated",
     "latest": "Latest",
     "maintained": "Maintained"
+  },
+  "modelPricing": {
+    "cacheRead": "캐시 읽기",
+    "cacheWrite": "캐시 쓰기",
+    "conditions": {
+      "over": "{min} {metric} 초과",
+      "range": "{min}–{max} {metric}",
+      "upTo": "최대 {max} {metric}"
+    },
+    "ended": "종료일 {date}",
+    "globalRegion": "글로벌",
+    "historical": "과거 가격",
+    "metrics": {
+      "contextTokens": "컨텍스트 토큰",
+      "inputTokens": "입력 토큰"
+    },
+    "notAvailable": "사용할 수 없음",
+    "perMillionTokens": "{price} / 100만 토큰",
+    "reasons": {
+      "historicalPriceUnverified": "과거 API 가격이 확인되지 않았습니다.",
+      "officialPriceNotPublished": "공식 토큰 가격이 공개되지 않았습니다.",
+      "openWeightsOnly": "오픈 웨이트만 제공되며 자사 토큰 API 가격은 없습니다.",
+      "subscriptionOnly": "구독 전용이며 토큰 기반 API 가격은 없습니다.",
+      "unsupportedPricingStructure": "공식 가격 구조를 아직 정확하게 표현할 수 없습니다."
+    }
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",

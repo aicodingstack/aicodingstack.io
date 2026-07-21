@@ -126,7 +126,7 @@ export interface ManifestPricingTier {
  * Based on: /manifests/$schemas/ref/product.schema.json#$defs/relatedProducts
  */
 export interface ManifestRelatedProduct {
-  type: 'ide' | 'cli' | 'extension'
+  type: 'ide' | 'cli' | 'extension' | 'desktop'
   productId: string
 }
 
@@ -147,6 +147,8 @@ export interface ManifestPlatformElement {
  * Extends: ManifestVendorEntity
  */
 export interface ManifestBaseProduct extends ManifestVendorEntity {
+  /** Stable identifier shared by every surface in the same product family */
+  familyId?: string
   latestVersion: string
   githubUrl: string | null
   license: string
@@ -186,6 +188,12 @@ export interface ManifestCLI extends ManifestBaseApp {}
 export interface ManifestIDE extends ManifestBaseApp {}
 
 /**
+ * Standalone desktop coding-agent application
+ * Based on: /manifests/$schemas/desktop.schema.json
+ */
+export interface ManifestDesktop extends ManifestBaseApp {}
+
+/**
  * IDE Support information for extensions
  * Based on: /manifests/$schemas/extension.schema.json#$defs/ideSupport
  */
@@ -212,11 +220,57 @@ export interface ManifestExtension extends ManifestBaseProduct {
  * Token-based pricing information for API usage
  * Based on: /manifests/$schemas/model.schema.json
  */
-export interface ManifestTokenPricing {
+export type ManifestTokenPricingReason =
+  | 'open-weights-only'
+  | 'subscription-only'
+  | 'official-price-not-published'
+  | 'historical-price-unverified'
+  | 'unsupported-pricing-structure'
+
+export type ManifestTokenPricingRate = 'input' | 'output' | 'cacheRead' | 'cacheWrite'
+
+export interface ManifestTokenPricingRates {
   input: number | null
   output: number | null
-  cache: number | null
+  cacheRead: number | null
+  cacheWrite: number | null
 }
+
+export interface ManifestTokenPricingCondition {
+  metric: 'inputTokens' | 'contextTokens'
+  min: number | null
+  max: number | null
+}
+
+export interface ManifestTokenPricingTier {
+  condition: ManifestTokenPricingCondition | null
+  rates: ManifestTokenPricingRates
+}
+
+export interface ManifestTokenPricingOffer {
+  id: string
+  currency: string
+  region: 'global' | string
+  serviceTier: 'standard'
+  effectiveFrom: string | null
+  effectiveTo: string | null
+  tiers: ManifestTokenPricingTier[]
+}
+
+export interface ManifestAvailableTokenPricing {
+  status: 'available'
+  primaryOffer: string
+  offers: ManifestTokenPricingOffer[]
+}
+
+export interface ManifestUnavailableTokenPricing {
+  status: 'not-applicable' | 'unavailable'
+  reason: ManifestTokenPricingReason
+  primaryOffer: null
+  offers: []
+}
+
+export type ManifestTokenPricing = ManifestAvailableTokenPricing | ManifestUnavailableTokenPricing
 
 /**
  * Benchmark scores
@@ -275,6 +329,7 @@ export interface ManifestProvider extends ManifestVendorEntity {
  * Extends: ManifestEntity
  */
 export interface ManifestVendor extends ManifestEntity {
+  aliases?: string[]
   communityUrls: ManifestCommunityUrls
 }
 
@@ -334,6 +389,7 @@ export interface ManifestCollections {
  * Based on: /manifests/$schemas/github-stars.schema.json
  */
 export interface ManifestGitHubStars {
+  desktops: { [productId: string]: number | null }
   extensions: { [productId: string]: number | null }
   clis: { [productId: string]: number | null }
   ides: { [productId: string]: number | null }
@@ -347,6 +403,7 @@ export interface ManifestGitHubStars {
  * Manifest file imports return arrays of these types
  */
 export type ManifestCLIArray = ManifestCLI[]
+export type ManifestDesktopArray = ManifestDesktop[]
 export type ManifestIDEArray = ManifestIDE[]
 export type ManifestExtensionArray = ManifestExtension[]
 export type ManifestModelArray = ManifestModel[]
@@ -360,7 +417,7 @@ export type ManifestVendorArray = ManifestVendor[]
 /**
  * Union type of all product types
  */
-export type ManifestProductType = ManifestIDE | ManifestCLI | ManifestExtension
+export type ManifestProductType = ManifestIDE | ManifestCLI | ManifestExtension | ManifestDesktop
 
 /**
  * Union type of all manifest entity types

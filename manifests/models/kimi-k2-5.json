@@ -59,6 +59,11 @@
       "fields": ["size", "contextWindow", "platformUrls.huggingface"]
     },
     {
+      "url": "https://platform.kimi.ai/docs/pricing/chat-k25",
+      "title": "Kimi K2.5 official API pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
       "url": "https://www.moonshot.ai/news/kimi-k2-instruct-release",
       "title": "Kimi release timeline",
       "fields": ["releaseDate", "lifecycle"]
@@ -99,9 +104,29 @@
   "contextWindow": 262144,
   "maxOutput": null,
   "tokenPricing": {
-    "input": null,
-    "output": null,
-    "cache": null
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 0.6,
+              "output": 3,
+              "cacheRead": 0.1,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
   },
   "releaseDate": "2026-01-27",
   "lifecycle": "maintained",

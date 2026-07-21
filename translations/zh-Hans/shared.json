@@ -39,6 +39,7 @@
   "categories": {
     "all": {
       "clis": "All CLIs",
+      "desktops": "All Desktop Apps",
       "extensions": "All Extensions",
       "ides": "All IDEs",
       "modelProviders": "All Model Providers",
@@ -47,6 +48,7 @@
     },
     "plural": {
       "clis": "CLIs",
+      "desktops": "Desktop",
       "extensions": "Extensions",
       "ides": "IDEs",
       "modelProviders": "Model Providers",
@@ -56,6 +58,7 @@
     },
     "singular": {
       "cli": "CLI",
+      "desktop": "Desktop",
       "extension": "Extension",
       "ide": "IDE",
       "model": "Model",
@@ -80,6 +83,31 @@
     "deprecated": "Deprecated",
     "latest": "Latest",
     "maintained": "Maintained"
+  },
+  "modelPricing": {
+    "cacheRead": "缓存读取",
+    "cacheWrite": "缓存写入",
+    "conditions": {
+      "over": "超过 {min} {metric}",
+      "range": "{min}–{max} {metric}",
+      "upTo": "不超过 {max} {metric}"
+    },
+    "ended": "截止于 {date}",
+    "globalRegion": "全球",
+    "historical": "历史价格",
+    "metrics": {
+      "contextTokens": "上下文 token",
+      "inputTokens": "输入 token"
+    },
+    "notAvailable": "暂无",
+    "perMillionTokens": "{price} / 百万 token",
+    "reasons": {
+      "historicalPriceUnverified": "历史 API 价格尚未核实。",
+      "officialPriceNotPublished": "官方尚未公布 token 价格。",
+      "openWeightsOnly": "仅提供开放权重，没有官方一方 token API 价格。",
+      "subscriptionOnly": "仅提供订阅方案，没有按 token 计费的 API 价格。",
+      "unsupportedPricingStructure": "当前尚无法准确表示官方价格结构。"
+    }
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",

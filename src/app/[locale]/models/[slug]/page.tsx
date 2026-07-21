@@ -44,12 +44,8 @@ export async function generateMetadata({
       size: model.size ?? undefined,
       contextWindow: model.contextWindow,
       maxOutput: model.maxOutput ?? undefined,
-      tokenPricing: model.tokenPricing
-        ? {
-            input: model.tokenPricing.input ?? undefined,
-            output: model.tokenPricing.output ?? undefined,
-          }
-        : undefined,
+      lifecycle: model.lifecycle,
+      tokenPricing: model.tokenPricing,
     },
     translationNamespace: 'pages.modelDetail',
   })
@@ -76,13 +72,8 @@ export default async function ModelPage({
       description: model.description,
       vendor: model.vendor,
       websiteUrl: model.websiteUrl || undefined,
-      tokenPricing: model.tokenPricing
-        ? {
-            input: model.tokenPricing.input ?? undefined,
-            output: model.tokenPricing.output ?? undefined,
-            cache: model.tokenPricing.cache ?? undefined,
-          }
-        : undefined,
+      lifecycle: model.lifecycle,
+      tokenPricing: model.tokenPricing,
     },
     locale: locale as Locale,
   })

@@ -3,6 +3,16 @@
     "copied": "Скопировано!",
     "copyToClipboard": "Копировать в буфер обмена"
   },
+  "currencySwitcher": {
+    "cny": "Пересчитать в CNY",
+    "label": "Валюта отображения",
+    "loadingRate": "Загрузка справочного курса…",
+    "native": "Сохранить исходную валюту",
+    "nativeShort": "Исходная",
+    "rateUnavailable": "Справочный курс недоступен; показаны исходные цены.",
+    "referenceRate": "Справочный курс: 1 USD = {rate} CNY ({date})",
+    "usd": "Пересчитать в USD"
+  },
   "filterSortBar": {
     "clearFilters": "Очистить фильтры",
     "license": "Лицензия:",

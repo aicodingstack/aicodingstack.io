@@ -50,7 +50,6 @@
         "size",
         "contextWindow",
         "maxOutput",
-        "tokenPricing",
         "releaseDate",
         "lifecycle",
         "knowledgeCutoff",
@@ -58,6 +57,11 @@
         "outputModalities",
         "capabilities"
       ]
+    },
+    {
+      "url": "https://help.aliyun.com/en/model-studio/model-pricing",
+      "title": "Alibaba Cloud Model Studio model pricing",
+      "fields": ["tokenPricing"]
     }
   ],
   "lastVerifiedAt": "2026-07-21",
@@ -70,9 +74,38 @@
   "contextWindow": 1000000,
   "maxOutput": 65536,
   "tokenPricing": {
-    "input": null,
-    "output": null,
-    "cache": null
+    "status": "available",
+    "primaryOffer": "cn-standard",
+    "offers": [
+      {
+        "id": "cn-standard",
+        "currency": "CNY",
+        "region": "CN",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": { "metric": "inputTokens", "min": 1, "max": 256000 },
+            "rates": {
+              "input": 2,
+              "output": 12,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          },
+          {
+            "condition": { "metric": "inputTokens", "min": 256001, "max": 1000000 },
+            "rates": {
+              "input": 8,
+              "output": 48,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
   },
   "releaseDate": "2026-04-02",
   "lifecycle": "maintained",

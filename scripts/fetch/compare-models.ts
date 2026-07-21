@@ -80,6 +80,34 @@ interface MappingData {
   models: Record<string, string>
 }
 
+function getPrimaryManifestRates(manifest: {
+  tokenPricing?: {
+    status?: string
+    primaryOffer?: string | null
+    offers?: Array<{
+      id: string
+      tiers: Array<{
+        rates: {
+          input: number | null
+          output: number | null
+          cacheRead: number | null
+        }
+      }>
+    }>
+  }
+}): { input: number | null; output: number | null; cacheRead: number | null } {
+  const pricing = manifest.tokenPricing
+  if (pricing?.status !== 'available') return { input: null, output: null, cacheRead: null }
+  const offer =
+    pricing.offers?.find(candidate => candidate.id === pricing.primaryOffer) ?? pricing.offers?.[0]
+  const rates = offer?.tiers[0]?.rates
+  return {
+    input: rates?.input ?? null,
+    output: rates?.output ?? null,
+    cacheRead: rates?.cacheRead ?? null,
+  }
+}
+
 // Helper to compare values and return match status
 function compare(
   manifestValue: unknown,
@@ -223,41 +251,42 @@ async function main(): Promise<void> {
       })
 
       // Compare tokenPricing
+      const manifestRates = getPrimaryManifestRates(manifest)
       const inputPriceMatch = compare(
-        manifest.tokenPricing.input,
+        manifestRates.input,
         normalizedApi.tokenPricing.input,
         'input',
         'input'
       )
       comparisons.push({
         field: 'tokenPricing.input',
-        manifestKey: 'tokenPricing.input',
+        manifestKey: 'tokenPricing.offers[].tiers[].rates.input',
         apiKey: 'cost.input',
         ...inputPriceMatch,
       })
 
       const outputPriceMatch = compare(
-        manifest.tokenPricing.output,
+        manifestRates.output,
         normalizedApi.tokenPricing.output,
         'output',
         'output'
       )
       comparisons.push({
         field: 'tokenPricing.output',
-        manifestKey: 'tokenPricing.output',
+        manifestKey: 'tokenPricing.offers[].tiers[].rates.output',
         apiKey: 'cost.output',
         ...outputPriceMatch,
       })
 
       const cachePriceMatch = compare(
-        manifest.tokenPricing.cache,
+        manifestRates.cacheRead,
         normalizedApi.tokenPricing.cache,
         'cache',
         'cache_read'
       )
       comparisons.push({
-        field: 'tokenPricing.cache',
-        manifestKey: 'tokenPricing.cache',
+        field: 'tokenPricing.cacheRead',
+        manifestKey: 'tokenPricing.offers[].tiers[].rates.cacheRead',
         apiKey: 'cost.cache_read',
         ...cachePriceMatch,
       })

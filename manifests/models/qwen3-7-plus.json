@@ -65,7 +65,40 @@
   "size": null,
   "contextWindow": 1000000,
   "maxOutput": 64000,
-  "tokenPricing": { "input": null, "output": null, "cache": null },
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "cn-standard",
+    "offers": [
+      {
+        "id": "cn-standard",
+        "currency": "CNY",
+        "region": "CN",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": { "metric": "inputTokens", "min": 1, "max": 256000 },
+            "rates": {
+              "input": 2,
+              "output": 8,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          },
+          {
+            "condition": { "metric": "inputTokens", "min": 256001, "max": 1000000 },
+            "rates": {
+              "input": 6,
+              "output": 24,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
   "releaseDate": "2026-05-26",
   "lifecycle": "latest",
   "knowledgeCutoff": null,

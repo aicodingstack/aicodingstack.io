@@ -1,7 +1,8 @@
 {
   "addModel": "+ Add Model",
   "basicInfo": "Basic Information",
-  "cachePrice": "Cache Price",
+  "cacheReadPrice": "Cache Read Price",
+  "cacheWritePrice": "Cache Write Price",
   "compareTitle": "Compare {model1} vs {model2}",
   "description": "Description",
   "inputPrice": "Input Price",

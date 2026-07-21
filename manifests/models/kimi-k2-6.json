@@ -50,7 +50,6 @@
         "size",
         "contextWindow",
         "maxOutput",
-        "tokenPricing",
         "releaseDate",
         "lifecycle",
         "knowledgeCutoff",
@@ -58,6 +57,11 @@
         "outputModalities",
         "capabilities"
       ]
+    },
+    {
+      "url": "https://platform.kimi.ai/docs/pricing/chat-k26",
+      "title": "Kimi K2.6 official API pricing",
+      "fields": ["tokenPricing"]
     }
   ],
   "lastVerifiedAt": "2026-07-21",
@@ -70,9 +74,29 @@
   "contextWindow": 262144,
   "maxOutput": null,
   "tokenPricing": {
-    "input": null,
-    "output": null,
-    "cache": null
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 0.95,
+              "output": 4,
+              "cacheRead": 0.16,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
   },
   "releaseDate": "2026-04-20",
   "lifecycle": "maintained",

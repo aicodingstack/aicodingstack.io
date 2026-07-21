@@ -3,6 +3,16 @@
     "copied": "Copié !",
     "copyToClipboard": "Copier dans le presse-papiers"
   },
+  "currencySwitcher": {
+    "cny": "Convertir en CNY",
+    "label": "Devise d’affichage",
+    "loadingRate": "Chargement du taux de change de référence…",
+    "native": "Conserver la devise d’origine",
+    "nativeShort": "Devise d’origine",
+    "rateUnavailable": "Taux de change de référence indisponible ; les prix d’origine sont affichés.",
+    "referenceRate": "Taux de référence : 1 USD = {rate} CNY ({date})",
+    "usd": "Convertir en USD"
+  },
   "filterSortBar": {
     "clearFilters": "Effacer les filtres",
     "license": "Licence :",

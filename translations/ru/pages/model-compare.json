@@ -1,7 +1,8 @@
 {
   "addModel": "+ Добавить модель",
   "basicInfo": "Основная информация",
-  "cachePrice": "Цена кеша",
+  "cacheReadPrice": "Цена чтения кеша",
+  "cacheWritePrice": "Цена записи кеша",
   "compareTitle": "Сравнить {model1} vs {model2}",
   "description": "Описание",
   "inputPrice": "Цена ввода",

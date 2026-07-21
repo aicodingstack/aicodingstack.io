@@ -52,6 +52,11 @@
         "inputModalities",
         "capabilities"
       ]
+    },
+    {
+      "url": "https://platform.kimi.ai/docs/pricing/chat-k3",
+      "title": "Kimi K3 official API pricing",
+      "fields": ["tokenPricing"]
     }
   ],
   "lastVerifiedAt": "2026-07-21",
@@ -63,7 +68,31 @@
   "size": "2.8T",
   "contextWindow": 1000000,
   "maxOutput": null,
-  "tokenPricing": { "input": null, "output": null, "cache": null },
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 3,
+              "output": 15,
+              "cacheRead": 0.3,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
   "releaseDate": "2026-07-16",
   "lifecycle": "latest",
   "knowledgeCutoff": null,

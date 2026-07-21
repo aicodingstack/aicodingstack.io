@@ -1,7 +1,8 @@
 {
   "addModel": "+ Adicionar modelo",
   "basicInfo": "Informações básicas",
-  "cachePrice": "Preço de cache",
+  "cacheReadPrice": "Preço de leitura de cache",
+  "cacheWritePrice": "Preço de gravação de cache",
   "compareTitle": "Comparar {model1} vs {model2}",
   "description": "Descrição",
   "inputPrice": "Preço de entrada",

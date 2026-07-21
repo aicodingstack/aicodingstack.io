@@ -69,7 +69,31 @@
   "size": null,
   "contextWindow": 400000,
   "maxOutput": 128000,
-  "tokenPricing": { "input": 0.2, "output": 1.25, "cache": 0.02 },
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 0.2,
+              "output": 1.25,
+              "cacheRead": 0.02,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
   "releaseDate": "2026-03-17",
   "lifecycle": "maintained",
   "knowledgeCutoff": "2025-08-31",

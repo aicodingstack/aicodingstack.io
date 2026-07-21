@@ -3,6 +3,16 @@
     "copied": "コピーしました！",
     "copyToClipboard": "クリップボードにコピー"
   },
+  "currencySwitcher": {
+    "cny": "CNY に換算",
+    "label": "表示通貨",
+    "loadingRate": "参考為替レートを読み込み中…",
+    "native": "元の通貨を維持",
+    "nativeShort": "元通貨",
+    "rateUnavailable": "参考為替レートを取得できないため、元の価格を表示しています。",
+    "referenceRate": "参考レート：1 USD = {rate} CNY（{date}）",
+    "usd": "USD に換算"
+  },
   "filterSortBar": {
     "clearFilters": "フィルターをクリア",
     "license": "ライセンス:",

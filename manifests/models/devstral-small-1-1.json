@@ -70,9 +70,10 @@
   "contextWindow": 131072,
   "maxOutput": null,
   "tokenPricing": {
-    "input": null,
-    "output": null,
-    "cache": null
+    "status": "unavailable",
+    "reason": "historical-price-unverified",
+    "primaryOffer": null,
+    "offers": []
   },
   "releaseDate": "2025-07-10",
   "lifecycle": "deprecated",

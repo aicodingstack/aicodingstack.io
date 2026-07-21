@@ -50,7 +50,6 @@
         "size",
         "contextWindow",
         "maxOutput",
-        "tokenPricing",
         "releaseDate",
         "lifecycle",
         "knowledgeCutoff",
@@ -58,6 +57,11 @@
         "outputModalities",
         "capabilities"
       ]
+    },
+    {
+      "url": "https://platform.kimi.ai/docs/models",
+      "title": "Kimi API model availability and K2 retirement notice",
+      "fields": ["lifecycle", "tokenPricing"]
     }
   ],
   "lastVerifiedAt": "2026-07-21",
@@ -70,12 +74,13 @@
   "contextWindow": 131072,
   "maxOutput": null,
   "tokenPricing": {
-    "input": null,
-    "output": null,
-    "cache": null
+    "status": "unavailable",
+    "reason": "historical-price-unverified",
+    "primaryOffer": null,
+    "offers": []
   },
   "releaseDate": "2025-07-11",
-  "lifecycle": "maintained",
+  "lifecycle": "deprecated",
   "knowledgeCutoff": null,
   "inputModalities": ["text"],
   "outputModalities": ["text"],

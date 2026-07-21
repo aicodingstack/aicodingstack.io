@@ -75,7 +75,31 @@
   "size": "1T (32B active)",
   "contextWindow": 262144,
   "maxOutput": null,
-  "tokenPricing": { "input": 0.95, "output": 4, "cache": 0.19 },
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 0.95,
+              "output": 4,
+              "cacheRead": 0.19,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
   "releaseDate": "2026-06-12",
   "lifecycle": "latest",
   "knowledgeCutoff": null,

@@ -70,9 +70,10 @@
   "contextWindow": 128000,
   "maxOutput": null,
   "tokenPricing": {
-    "input": null,
-    "output": null,
-    "cache": null
+    "status": "not-applicable",
+    "reason": "open-weights-only",
+    "primaryOffer": null,
+    "offers": []
   },
   "releaseDate": "2024-07-24",
   "lifecycle": "maintained",

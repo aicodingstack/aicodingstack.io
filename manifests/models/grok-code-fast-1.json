@@ -56,9 +56,29 @@
   "contextWindow": 256000,
   "maxOutput": 10000,
   "tokenPricing": {
-    "input": 0.2,
-    "output": 1.5,
-    "cache": 0.02
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 0.2,
+              "output": 1.5,
+              "cacheRead": 0.02,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
   },
   "releaseDate": "2025-08-28",
   "lifecycle": "deprecated",

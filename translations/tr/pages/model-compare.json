@@ -1,7 +1,8 @@
 {
   "addModel": "+ Model Ekle",
   "basicInfo": "Temel Bilgiler",
-  "cachePrice": "Önbellek Fiyatı",
+  "cacheReadPrice": "Önbellek okuma fiyatı",
+  "cacheWritePrice": "Önbellek yazma fiyatı",
   "compareTitle": "{model1} vs {model2} Karşılaştır",
   "description": "Açıklama",
   "inputPrice": "Girdi Fiyatı",

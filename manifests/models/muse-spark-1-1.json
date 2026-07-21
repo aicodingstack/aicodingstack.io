@@ -69,7 +69,12 @@
   "size": null,
   "contextWindow": 1000000,
   "maxOutput": null,
-  "tokenPricing": { "input": null, "output": null, "cache": null },
+  "tokenPricing": {
+    "status": "not-applicable",
+    "reason": "open-weights-only",
+    "primaryOffer": null,
+    "offers": []
+  },
   "releaseDate": "2026-07-09",
   "lifecycle": "latest",
   "knowledgeCutoff": null,

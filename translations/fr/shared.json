@@ -39,6 +39,7 @@
   "categories": {
     "all": {
       "clis": "All CLIs",
+      "desktops": "All Desktop Apps",
       "extensions": "All Extensions",
       "ides": "All IDEs",
       "modelProviders": "All Model Providers",
@@ -47,6 +48,7 @@
     },
     "plural": {
       "clis": "CLIs",
+      "desktops": "Desktop",
       "extensions": "Extensions",
       "ides": "IDEs",
       "modelProviders": "Model Providers",
@@ -56,6 +58,7 @@
     },
     "singular": {
       "cli": "CLI",
+      "desktop": "Desktop",
       "extension": "Extension",
       "ide": "IDE",
       "model": "Model",
@@ -80,6 +83,31 @@
     "deprecated": "Obsolète",
     "latest": "Le plus récent",
     "maintained": "Maintenu"
+  },
+  "modelPricing": {
+    "cacheRead": "Lecture du cache",
+    "cacheWrite": "Écriture du cache",
+    "conditions": {
+      "over": "Plus de {min} {metric}",
+      "range": "{min}–{max} {metric}",
+      "upTo": "Jusqu’à {max} {metric}"
+    },
+    "ended": "Terminé le {date}",
+    "globalRegion": "Global",
+    "historical": "Tarification historique",
+    "metrics": {
+      "contextTokens": "jetons de contexte",
+      "inputTokens": "jetons d’entrée"
+    },
+    "notAvailable": "Indisponible",
+    "perMillionTokens": "{price} / 1M tokens",
+    "reasons": {
+      "historicalPriceUnverified": "Le prix historique de l’API n’a pas été vérifié.",
+      "officialPriceNotPublished": "Aucun prix officiel par jeton n’a été publié.",
+      "openWeightsOnly": "Poids ouverts uniquement ; aucun prix d’API par jeton du fournisseur d’origine.",
+      "subscriptionOnly": "Abonnement uniquement ; aucun prix d’API basé sur les jetons.",
+      "unsupportedPricingStructure": "La structure tarifaire officielle ne peut pas encore être représentée avec précision."
+    }
   },
   "platforms": {
     "artificialAnalysis": "Artificial Analysis",
