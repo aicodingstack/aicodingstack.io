@@ -1,6 +1,6 @@
 ---
 name: manifest-automation
-description: Prepares and guides evidence-backed creation or updates of CLI, extension, IDE, model, provider, and vendor manifests in this repository. Use when manifest data must be researched, merged, localized, and validated against the current schemas.
+description: Prepares and guides evidence-backed creation or updates of CLI, desktop, extension, IDE, model, provider, and vendor manifests in this repository. Use when manifest data must be researched, merged, localized, and validated against the current schemas.
 ---
 
 # Manifest Automation
@@ -14,7 +14,7 @@ node .agents/skills/manifest-automation/scripts/automate.mjs create model exampl
 node .agents/skills/manifest-automation/scripts/automate.mjs update model existing-model
 ```
 
-Supported types: `cli`, `extension`, `ide`, `model`, `provider`, and `vendor`.
+Supported types: `cli`, `desktop`, `extension`, `ide`, `model`, `provider`, and `vendor`.
 
 ## Required workflow
 
@@ -30,6 +30,8 @@ Supported types: `cli`, `extension`, `ide`, `model`, `provider`, and `vendor`.
 ## Merge policy
 
 - Immutable identity fields such as `id` are preserved.
+- Use `familyId` to group surfaces that official sources present as one product family; keep `relatedProducts` bidirectional for explicit navigation.
+- Classify a standalone native app for delegating or supervising coding agents as `desktop`. Keep products whose primary first-party surface is an editor under `ide`; do not classify web or cloud-only services as desktop products.
 - Mutable facts may change only with current, authoritative evidence.
 - Object arrays are merged by their schema identity, not by raw object equality.
 - Pricing, license, lifecycle, availability, model limits, install commands, and marketplace identifiers require explicit verification.
@@ -40,7 +42,7 @@ The merge helper is advisory. Always inspect its proposed result before applying
 
 ## GitHub stars
 
-`data/github-stars.json` tracks only `cli`, `extension`, `ide`, and `model` entries. Add an entry only when the entity has an official GitHub repository and the repository's fetch workflow supports that manifest. Providers and vendors are not tracked.
+`data/github-stars.json` tracks `cli`, `desktop`, `extension`, `ide`, and selected `model` entries. Every CLI, desktop, extension, and IDE manifest must have a corresponding entry; use `null` when no official repository or trustworthy count is available. Providers and vendors are not tracked.
 
 ## Validation
 
