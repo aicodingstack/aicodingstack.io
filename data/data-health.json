@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-21",
+  "asOf": "2026-07-22",
   "thresholds": {
     "models": 30,
     "providers": 30,
@@ -10,19 +10,19 @@
     "vendors": 90
   },
   "summary": {
-    "totalRecords": 247,
-    "recordsWithSources": 149,
-    "verifiedRecords": 135,
-    "provenanceComplete": 117,
+    "totalRecords": 250,
+    "recordsWithSources": 153,
+    "verifiedRecords": 139,
+    "provenanceComplete": 121,
     "staleVerifiedRecords": 0,
-    "translationPlaceholderValues": 1506,
+    "translationPlaceholderValues": 1500,
     "danglingRelationships": 0,
-    "modelBenchmarkCoverage": 9.7,
-    "productsWithPricing": 67,
-    "productRecords": 68,
+    "modelBenchmarkCoverage": 9.6,
+    "productsWithPricing": 68,
+    "productRecords": 69,
     "errors": 0,
     "warnings": 18,
-    "info": 98
+    "info": 97
   },
   "byCategory": {
     "ides": {
@@ -32,9 +32,9 @@
       "stale": 0
     },
     "clis": {
-      "total": 27,
-      "verified": 2,
-      "provenanceComplete": 1,
+      "total": 28,
+      "verified": 4,
+      "provenanceComplete": 3,
       "stale": 0
     },
     "desktops": {
@@ -50,9 +50,9 @@
       "stale": 0
     },
     "models": {
-      "total": 125,
-      "verified": 123,
-      "provenanceComplete": 110,
+      "total": 127,
+      "verified": 125,
+      "provenanceComplete": 112,
       "stale": 0
     },
     "providers": {
@@ -91,33 +91,33 @@
     },
     "ja": {
       "totalStrings": 362,
-      "matchingEnglish": 122,
-      "matchingEnglishPercent": 33.7
+      "matchingEnglish": 121,
+      "matchingEnglishPercent": 33.4
     },
     "ko": {
       "totalStrings": 362,
-      "matchingEnglish": 141,
-      "matchingEnglishPercent": 39
+      "matchingEnglish": 140,
+      "matchingEnglishPercent": 38.7
     },
     "pt": {
       "totalStrings": 362,
-      "matchingEnglish": 136,
-      "matchingEnglishPercent": 37.6
+      "matchingEnglish": 135,
+      "matchingEnglishPercent": 37.3
     },
     "ru": {
       "totalStrings": 362,
-      "matchingEnglish": 150,
-      "matchingEnglishPercent": 41.4
+      "matchingEnglish": 149,
+      "matchingEnglishPercent": 41.2
     },
     "tr": {
       "totalStrings": 362,
-      "matchingEnglish": 150,
-      "matchingEnglishPercent": 41.4
+      "matchingEnglish": 149,
+      "matchingEnglishPercent": 41.2
     },
     "zh-Hans": {
       "totalStrings": 362,
-      "matchingEnglish": 124,
-      "matchingEnglishPercent": 34.3
+      "matchingEnglish": 123,
+      "matchingEnglishPercent": 34
     },
     "zh-Hant": {
       "totalStrings": 362,
@@ -313,13 +313,6 @@
       "code": "missing-sources",
       "category": "clis",
       "id": "droid-cli",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "gemini-cli",
       "message": "No structured source references are recorded."
     },
     {

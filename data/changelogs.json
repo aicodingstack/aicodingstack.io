@@ -2,6 +2,156 @@
   "version": 1,
   "entries": [
     {
+      "id": "2026-07-22-manifest-update",
+      "date": "2026-07-22",
+      "summary": "9 manifest records changed",
+      "changes": [
+        {
+          "category": "clis",
+          "id": "antigravity-cli",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "gemini-cli",
+          "change": "updated",
+          "fields": [
+            "latestVersion",
+            "pricing",
+            "relatedProducts",
+            "verified",
+            "confidence",
+            "deprecated",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "grok-build",
+          "change": "updated",
+          "fields": [
+            "communityUrls",
+            "githubUrl",
+            "lastVerifiedAt",
+            "latestVersion",
+            "resourceUrls",
+            "sources"
+          ]
+        },
+        {
+          "category": "ides",
+          "id": "antigravity",
+          "change": "updated",
+          "fields": ["relatedProducts", "familyId"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-1-flash-lite",
+          "change": "updated",
+          "fields": ["lastVerifiedAt", "lifecycle"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-5-flash",
+          "change": "updated",
+          "fields": ["lastVerifiedAt", "lifecycle"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-5-flash-lite",
+          "change": "added",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-6-flash",
+          "change": "added",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-flash",
+          "change": "updated",
+          "fields": ["lastVerifiedAt", "lifecycle"]
+        }
+      ]
+    },
+    {
       "id": "2026-07-21-url-validation",
       "date": "2026-07-21",
       "summary": "Normalized and repaired manifest URLs flagged by scheduled validation",

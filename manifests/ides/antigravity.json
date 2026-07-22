@@ -2,6 +2,7 @@
   "$schema": "../$schemas/ide.schema.json",
   "id": "antigravity",
   "name": "Antigravity",
+  "familyId": "antigravity",
   "description": "Google's AI-powered integrated development environment (IDE) for modern software development with advanced AI capabilities.",
   "translations": {
     "zh-Hans": {
@@ -84,7 +85,12 @@
     "reddit": "https://www.reddit.com/r/google_antigravity",
     "blog": "https://antigravity.google/blog"
   },
-  "relatedProducts": [],
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "antigravity-cli"
+    }
+  ],
   "platforms": [
     {
       "os": "macOS",

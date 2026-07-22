@@ -2965,10 +2965,10 @@ export const faqMetadata: Record<string, FaqItem[]> = {
 
 export const stackCounts: Record<string, number> = {
   ides: 10,
-  clis: 27,
+  clis: 28,
   desktops: 12,
   extensions: 19,
-  models: 125,
+  models: 127,
   'model-providers': 13,
   vendors: 41,
 }

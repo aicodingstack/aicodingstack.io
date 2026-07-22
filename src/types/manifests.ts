@@ -77,6 +77,7 @@ export interface ManifestEntity {
   description: string
   translations: ManifestTranslations
   verified: boolean
+  deprecated?: boolean
   sources?: ManifestSource[]
   lastVerifiedAt?: string
   verifiedBy?: string | null

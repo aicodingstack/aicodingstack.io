@@ -27,6 +27,10 @@
       "type": "boolean",
       "description": "Whether the entity has been reviewed by the AI Coding Stack team against cited sources. Legacy verified records may not yet include structured provenance."
     },
+    "deprecated": {
+      "type": "boolean",
+      "description": "Whether the entity has been superseded or is no longer recommended for general use. Omit or set to false when no deprecation is recorded."
+    },
     "sources": {
       "type": "array",
       "description": "Sources used to verify this entity or individual fields",

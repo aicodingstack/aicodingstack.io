@@ -22,6 +22,7 @@
   },
   "clis": {
     "amazon-q-developer-cli": 2,
+    "antigravity-cli": 1.7,
     "amp-cli": null,
     "augment-code-cli": 0.3,
     "claude-code-cli": 138.5,
@@ -35,7 +36,7 @@
     "gemini-cli": 106.1,
     "github-copilot-cli": 11,
     "gitlab-duo-cli": null,
-    "grok-build": null,
+    "grok-build": 21.6,
     "junie-cli": null,
     "kilo-code-cli": 26.4,
     "kimi-cli": 4.3,

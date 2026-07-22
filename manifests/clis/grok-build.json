@@ -43,10 +43,21 @@
     },
     {
       "url": "https://x.ai/build/changelog",
-      "title": "Grok Build changelog"
+      "title": "Grok Build changelog",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
+    },
+    {
+      "url": "https://x.ai/news/grok-build-open-source",
+      "title": "Grok Build is Now Open Source",
+      "fields": ["githubUrl", "license"]
+    },
+    {
+      "url": "https://github.com/xai-org/grok-build",
+      "title": "Grok Build official repository",
+      "fields": ["githubUrl", "license", "resourceUrls.issue", "communityUrls.github"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-22",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "grok-build",
@@ -56,8 +67,8 @@
   "websiteUrl": "https://x.ai/build",
   "docsUrl": "https://x.ai/cli",
   "vendor": "xAI",
-  "latestVersion": "0.2.94",
-  "githubUrl": null,
+  "latestVersion": "0.2.106",
+  "githubUrl": "https://github.com/xai-org/grok-build",
   "license": "Apache-2.0",
   "pricing": [
     {
@@ -73,12 +84,12 @@
     "changelog": "https://x.ai/build/changelog",
     "pricing": null,
     "mcp": null,
-    "issue": null
+    "issue": "https://github.com/xai-org/grok-build/issues"
   },
   "communityUrls": {
     "linkedin": null,
     "twitter": "https://x.com/xai",
-    "github": null,
+    "github": "https://github.com/xai-org/grok-build",
     "youtube": null,
     "discord": null,
     "reddit": null,

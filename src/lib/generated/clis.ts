@@ -6,6 +6,7 @@
 
 import AmazonQDeveloperCli from '../../../manifests/clis/amazon-q-developer-cli.json'
 import AmpCli from '../../../manifests/clis/amp-cli.json'
+import AntigravityCli from '../../../manifests/clis/antigravity-cli.json'
 import AugmentCodeCli from '../../../manifests/clis/augment-code-cli.json'
 import ClaudeCodeCli from '../../../manifests/clis/claude-code-cli.json'
 import ClineCli from '../../../manifests/clis/cline-cli.json'
@@ -36,6 +37,7 @@ import type { ManifestCLI } from '../../types/manifests'
 export const clisData = [
   AmazonQDeveloperCli,
   AmpCli,
+  AntigravityCli,
   AugmentCodeCli,
   ClaudeCodeCli,
   ClineCli,

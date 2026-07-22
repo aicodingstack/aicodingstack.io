@@ -64,7 +64,7 @@
       "fields": ["name", "description", "releaseDate", "lifecycle"]
     }
   ],
-  "lastVerifiedAt": "2026-07-20",
+  "lastVerifiedAt": "2026-07-22",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://deepmind.google",
@@ -99,7 +99,7 @@
     ]
   },
   "releaseDate": "2026-05-07",
-  "lifecycle": "latest",
+  "lifecycle": "maintained",
   "knowledgeCutoff": "2025-01",
   "inputModalities": ["text", "image", "pdf", "audio", "video"],
   "outputModalities": ["text"],

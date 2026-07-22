@@ -53,6 +53,8 @@ import Gemini25Pro from '../../../manifests/models/gemini-2-5-pro.json'
 import Gemini31FlashLite from '../../../manifests/models/gemini-3-1-flash-lite.json'
 import Gemini31ProPreview from '../../../manifests/models/gemini-3-1-pro-preview.json'
 import Gemini35Flash from '../../../manifests/models/gemini-3-5-flash.json'
+import Gemini35FlashLite from '../../../manifests/models/gemini-3-5-flash-lite.json'
+import Gemini36Flash from '../../../manifests/models/gemini-3-6-flash.json'
 import Gemini3Flash from '../../../manifests/models/gemini-3-flash.json'
 import Gemini3Pro from '../../../manifests/models/gemini-3-pro.json'
 import Glm45 from '../../../manifests/models/glm-4-5.json'
@@ -180,7 +182,9 @@ export const modelsData = [
   Gemini25Pro,
   Gemini31FlashLite,
   Gemini31ProPreview,
+  Gemini35FlashLite,
   Gemini35Flash,
+  Gemini36Flash,
   Gemini3Flash,
   Gemini3Pro,
   Glm45,

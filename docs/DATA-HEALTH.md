@@ -1,31 +1,31 @@
 # Data Health Report
 
-Snapshot date: 2026-07-21. Regenerate with `npm run data-health:report`.
+Snapshot date: 2026-07-22. Regenerate with `npm run data-health:report`.
 
 ## Scorecard
 
 | Metric | Value |
 | --- | ---: |
-| Manifest records | 247 |
-| Records with structured sources | 149 |
-| Verified records | 135 |
-| Verified with complete provenance | 117 |
+| Manifest records | 250 |
+| Records with structured sources | 153 |
+| Verified records | 139 |
+| Verified with complete provenance | 121 |
 | Stale verified records | 0 |
-| Non-English values identical to English | 1506 |
+| Non-English values identical to English | 1500 |
 | Dangling product relationships | 0 |
-| Model benchmark coverage | 9.7% |
-| Products with pricing | 67/68 |
-| Errors / warnings / info | 0 / 18 / 98 |
+| Model benchmark coverage | 9.6% |
+| Products with pricing | 68/69 |
+| Errors / warnings / info | 0 / 18 / 97 |
 
 ## Category Breakdown
 
 | Category | Total | Verified | Provenance complete | Stale |
 | --- | ---: | ---: | ---: | ---: |
 | ides | 10 | 0 | 0 | 0 |
-| clis | 27 | 2 | 1 | 0 |
+| clis | 28 | 4 | 3 | 0 |
 | desktops | 12 | 0 | 0 | 0 |
 | extensions | 19 | 3 | 2 | 0 |
-| models | 125 | 123 | 110 | 0 |
+| models | 127 | 125 | 112 | 0 |
 | providers | 13 | 4 | 3 | 0 |
 | vendors | 41 | 3 | 1 | 0 |
 
@@ -39,19 +39,19 @@ Exact English matches are a triage signal; product names and technical terms can
 | es | 362 | 126 | 34.8% |
 | fr | 362 | 136 | 37.6% |
 | id | 362 | 170 | 47% |
-| ja | 362 | 122 | 33.7% |
-| ko | 362 | 141 | 39% |
-| pt | 362 | 136 | 37.6% |
-| ru | 362 | 150 | 41.4% |
-| tr | 362 | 150 | 41.4% |
-| zh-Hans | 362 | 124 | 34.3% |
+| ja | 362 | 121 | 33.4% |
+| ko | 362 | 140 | 38.7% |
+| pt | 362 | 135 | 37.3% |
+| ru | 362 | 149 | 41.2% |
+| tr | 362 | 149 | 41.2% |
+| zh-Hans | 362 | 123 | 34% |
 | zh-Hant | 362 | 121 | 33.4% |
 
 ## Backlog by Issue Type
 
 | Issue | Count |
 | --- | ---: |
-| missing-sources | 98 |
+| missing-sources | 97 |
 | verified-without-provenance | 18 |
 
 ## Priority Queue

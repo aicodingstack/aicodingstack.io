@@ -80,7 +80,7 @@
     "totalContext": "Total Context"
   },
   "lifecycle": {
-    "deprecated": "Deprecated",
+    "deprecated": "非推奨",
     "latest": "Latest",
     "maintained": "Maintained"
   },
