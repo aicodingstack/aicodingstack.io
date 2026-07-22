@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { useMemo, useState } from 'react'
+import { DeprecatedBadge } from '@/components/controls/DeprecatedBadge'
 import FilterSortBar from '@/components/controls/FilterSortBar'
 import { VerifiedBadge } from '@/components/controls/VerifiedBadge'
 import Footer from '@/components/Footer'
@@ -142,6 +143,7 @@ export default function CLIsPageClient({ locale }: Props) {
                     <div className="flex items-center gap-[var(--spacing-xs)]">
                       <h3 className="text-lg font-semibold tracking-tight">{cli.name}</h3>
                       {cli.verified && <VerifiedBadge size="sm" />}
+                      {cli.deprecated && <DeprecatedBadge />}
                     </div>
                     <span className="text-lg text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all">
                       →

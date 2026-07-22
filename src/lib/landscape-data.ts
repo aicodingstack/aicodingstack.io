@@ -50,6 +50,7 @@ export interface LandscapeProduct {
   vendor: string
   category: ProductCategory
   description: string
+  deprecated?: boolean
   websiteUrl?: string
   docsUrl?: string
   githubUrl?: string | null
@@ -102,6 +103,7 @@ function ideToProduct(ide: ManifestIDE): LandscapeProduct {
     vendor: ide.vendor,
     category: 'ide',
     description: ide.description,
+    deprecated: ide.deprecated,
     websiteUrl: ide.websiteUrl,
     docsUrl: ide.docsUrl || undefined,
     githubUrl: ide.githubUrl,
@@ -119,6 +121,7 @@ function cliToProduct(cli: ManifestCLI): LandscapeProduct {
     vendor: cli.vendor,
     category: 'cli',
     description: cli.description,
+    deprecated: cli.deprecated,
     websiteUrl: cli.websiteUrl,
     docsUrl: cli.docsUrl || undefined,
     githubUrl: cli.githubUrl,
@@ -136,6 +139,7 @@ function desktopToProduct(desktop: ManifestDesktop): LandscapeProduct {
     vendor: desktop.vendor,
     category: 'desktop',
     description: desktop.description,
+    deprecated: desktop.deprecated,
     websiteUrl: desktop.websiteUrl,
     docsUrl: desktop.docsUrl || undefined,
     githubUrl: desktop.githubUrl,
@@ -153,6 +157,7 @@ function extensionToProduct(ext: ManifestExtension): LandscapeProduct {
     vendor: ext.vendor,
     category: 'extension',
     description: ext.description,
+    deprecated: ext.deprecated,
     websiteUrl: ext.websiteUrl,
     docsUrl: ext.docsUrl || undefined,
     githubUrl: ext.githubUrl,
@@ -170,6 +175,7 @@ function modelToProduct(model: ManifestModel): LandscapeProduct {
     vendor: model.vendor,
     category: 'model',
     description: model.description,
+    deprecated: model.deprecated,
     websiteUrl: model.websiteUrl || undefined,
     docsUrl: model.docsUrl || undefined,
     path: buildManifestPath('models', model.id),
@@ -183,6 +189,7 @@ function providerToProduct(provider: ManifestProvider): LandscapeProduct {
     vendor: provider.vendor,
     category: 'provider',
     description: provider.description,
+    deprecated: provider.deprecated,
     websiteUrl: provider.websiteUrl,
     docsUrl: provider.docsUrl || undefined,
     githubUrl: null, // Providers don't have githubUrl in schema

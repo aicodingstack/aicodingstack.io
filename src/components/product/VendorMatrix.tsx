@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { useMemo, useState } from 'react'
+import { DeprecatedBadge } from '@/components/controls/DeprecatedBadge'
 import { Link } from '@/i18n/navigation'
 import {
   compareVendorMatrixRowsByProducts,
@@ -80,9 +81,12 @@ function MatrixCell({ products, category }: MatrixCellProps) {
       >
         <div className="flex flex-col justify-between">
           <div>
-            <h4 className="font-medium text-sm tracking-tight mb-1 group-hover:text-[var(--color-text)] transition-colors line-clamp-2">
-              {product.name}
-            </h4>
+            <div className="flex flex-wrap items-center gap-1 mb-1">
+              <h4 className="font-medium text-sm tracking-tight group-hover:text-[var(--color-text)] transition-colors line-clamp-2">
+                {product.name}
+              </h4>
+              {product.deprecated && <DeprecatedBadge />}
+            </div>
           </div>
         </div>
       </Link>
@@ -99,9 +103,12 @@ function MatrixCell({ products, category }: MatrixCellProps) {
             href={product.path}
             className="flex-1 border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-all p-[var(--spacing-sm)] bg-[var(--color-bg-subtle)] hover:bg-[var(--color-hover)] group"
           >
-            <h4 className="font-medium text-sm tracking-tight group-hover:text-[var(--color-text)] transition-colors line-clamp-2">
-              {product.name}
-            </h4>
+            <div className="flex flex-wrap items-center gap-1">
+              <h4 className="font-medium text-sm tracking-tight group-hover:text-[var(--color-text)] transition-colors line-clamp-2">
+                {product.name}
+              </h4>
+              {product.deprecated && <DeprecatedBadge />}
+            </div>
           </Link>
         ))}
       </div>
@@ -146,7 +153,10 @@ function MatrixCell({ products, category }: MatrixCellProps) {
             >
               <div className="flex items-center justify-between">
                 <div className="flex-1 min-w-0">
-                  <h5 className="font-medium text-sm tracking-tight truncate">{product.name}</h5>
+                  <div className="flex items-center gap-1">
+                    <h5 className="font-medium text-sm tracking-tight truncate">{product.name}</h5>
+                    {product.deprecated && <DeprecatedBadge />}
+                  </div>
                 </div>
               </div>
             </Link>

@@ -115,6 +115,7 @@ export default async function CLIPage({
           category="CLI"
           categoryLabel={tShared('categories.singular.cli')}
           verified={cli.verified ?? false}
+          deprecated={cli.deprecated ?? false}
           latestVersion={cli.latestVersion}
           license={cli.license}
           githubStars={getGithubStars('clis', cli.id)}

@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import {
+  buildVendorMatrix,
   compareVendorMatrixRowsByProducts,
   LANDSCAPE_PRODUCT_CATEGORIES,
   type LandscapeProduct,
@@ -103,5 +104,12 @@ describe('landscape matrix ordering', () => {
     const alpha = createRow('Alpha', ['model', 'ide'])
 
     expect([zulu, alpha].sort(compareVendorMatrixRowsByProducts)).toEqual([alpha, zulu])
+  })
+
+  it('propagates entity deprecation status to landscape products', () => {
+    const google = buildVendorMatrix().find(row => row.vendorId === 'google')
+    const geminiCli = google?.cells.cli.find(product => product.id === 'gemini-cli')
+
+    expect(geminiCli?.deprecated).toBe(true)
   })
 })
