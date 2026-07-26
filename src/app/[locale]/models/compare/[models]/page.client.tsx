@@ -69,8 +69,14 @@ const FALLBACK_MODEL: ManifestModel = {
 }
 
 // Helper functions for formatting
-const formatNumberToK = (value: number | null | undefined): string => {
-  return value ? `${(value / 1000).toFixed(0)}K` : '-'
+const formatNumberToK = (value: number | null | undefined, locale: string): string => {
+  if (!value) return '-'
+
+  const thousands = new Intl.NumberFormat(locale, {
+    maximumFractionDigits: 0,
+  }).format(value / 1000)
+
+  return `${thousands}K`
 }
 
 const formatPercentage = (value: number | null | undefined): string => {
@@ -86,8 +92,11 @@ const createSimpleRenderer = (getValue: (model: ManifestModel) => string | null 
   return (model: ManifestModel) => formatSimpleValue(getValue(model))
 }
 
-const createNumberToKRenderer = (getValue: (model: ManifestModel) => number | null | undefined) => {
-  return (model: ManifestModel) => formatNumberToK(getValue(model))
+const createNumberToKRenderer = (
+  getValue: (model: ManifestModel) => number | null | undefined,
+  locale: string
+) => {
+  return (model: ManifestModel) => formatNumberToK(getValue(model), locale)
 }
 
 const createPriceRenderer = (
@@ -275,14 +284,14 @@ export default function ComparePageClient({
         groupLabel: tShared('capabilities.capabilities'),
         key: 'contextWindow',
         label: tShared('terms.contextWindow'),
-        render: createNumberToKRenderer(m => m.contextWindow),
+        render: createNumberToKRenderer(m => m.contextWindow, locale),
       },
       {
         group: 'capabilities',
         groupLabel: tShared('capabilities.capabilities'),
         key: 'maxOutput',
         label: tShared('terms.maxOutput'),
-        render: createNumberToKRenderer(m => m.maxOutput),
+        render: createNumberToKRenderer(m => m.maxOutput, locale),
       },
       {
         group: 'capabilities',
