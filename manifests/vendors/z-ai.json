@@ -3,6 +3,10 @@
   "id": "z-ai",
   "name": "Z.ai",
   "aliases": ["z-ai"],
+  "themeColor": {
+    "light": "#334155",
+    "dark": "#94A3B8"
+  },
   "description": "An AI platform offering advanced language models and AI services for various applications including coding and content generation.",
   "translations": {
     "zh-Hans": {

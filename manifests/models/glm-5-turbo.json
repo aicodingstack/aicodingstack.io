@@ -1,0 +1,122 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "glm-5-turbo",
+  "name": "GLM-5-Turbo",
+  "description": "A proprietary model optimized for high-throughput, long-chain agent workflows, tool use, and complex instruction execution.",
+  "translations": {
+    "de": {
+      "description": "Ein proprietäres Modell für durchsatzstarke, lange Agentenabläufe, Werkzeugnutzung und die Ausführung komplexer Anweisungen."
+    },
+    "es": {
+      "description": "Un modelo propietario optimizado para flujos agénticos largos y de alto rendimiento, uso de herramientas y ejecución de instrucciones complejas."
+    },
+    "fr": {
+      "description": "Un modèle propriétaire optimisé pour les workflows agentiques longs à haut débit, l’usage d’outils et l’exécution d’instructions complexes."
+    },
+    "id": {
+      "description": "Model proprietari yang dioptimalkan untuk alur agen panjang berthroughput tinggi, penggunaan alat, dan eksekusi instruksi kompleks."
+    },
+    "ja": {
+      "description": "高スループットの長期エージェントワークフロー、ツール利用、複雑な指示の実行向けに最適化されたプロプライエタリモデルです。"
+    },
+    "ko": {
+      "description": "고처리량 장기 에이전트 워크플로, 도구 사용 및 복잡한 지시 실행에 최적화된 독점 모델입니다."
+    },
+    "pt": {
+      "description": "Um modelo proprietário otimizado para fluxos agênticos longos e de alto rendimento, uso de ferramentas e execução de instruções complexas."
+    },
+    "ru": {
+      "description": "Закрытая модель для высокопроизводительных длинных агентных процессов, работы с инструментами и выполнения сложных инструкций."
+    },
+    "tr": {
+      "description": "Yüksek hacimli, uzun zincirli aracı iş akışları, araç kullanımı ve karmaşık talimat yürütme için optimize edilmiş tescilli model."
+    },
+    "zh-Hans": {
+      "description": "一款面向高吞吐、长链路智能体工作流、工具使用和复杂指令执行优化的闭源模型。"
+    },
+    "zh-Hant": {
+      "description": "一款面向高吞吐、長鏈路智慧體工作流程、工具使用和複雜指令執行最佳化的閉源模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.z.ai/guides/llm/glm-5-turbo",
+      "title": "GLM-5-Turbo model documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "title": "Z.ai model release notes",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "title": "Z.ai API pricing",
+      "fields": ["tokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-26",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://z.ai",
+  "docsUrl": "https://docs.z.ai/guides/llm/glm-5-turbo",
+  "vendor": "Z.ai",
+  "size": null,
+  "contextWindow": 204800,
+  "maxOutput": 131072,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 1.2,
+              "output": 4,
+              "cacheRead": 0.24,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-03-15",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/glm-5-turbo",
+    "openrouter": null
+  }
+}

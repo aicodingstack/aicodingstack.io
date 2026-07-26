@@ -31,7 +31,6 @@
     "codex-cli": 100.3,
     "continue-cli": 35,
     "cursor-cli": 33.1,
-    "deepv-code": 0.4,
     "droid-cli": null,
     "gemini-cli": 106.1,
     "github-copilot-cli": 11,
@@ -67,7 +66,6 @@
   "ides": {
     "antigravity": null,
     "codebuddy": null,
-    "codeflicker": null,
     "cursor": 33.1,
     "intellij-idea": 20.4,
     "kiro": 4.1,
@@ -82,7 +80,6 @@
     "claude-sonnet-5": null,
     "composer": null,
     "deepseek-3-2": null,
-    "gemini-3-1-flash-lite": null,
     "gemini-3-1-pro-preview": null,
     "gemini-3-5-flash": null,
     "glm-4-6v": null,

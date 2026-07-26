@@ -39,6 +39,10 @@ Search snippets are not evidence. Open the source and verify that it describes t
 
 Strict JSON only. Do not add TODO comments, placeholder sources, or benchmark guesses.
 
+## Catalog inclusion gate
+
+A new model manifest requires a published Artificial Analysis Intelligence Index result compatible with `data/artificial-analysis-index.json`. Other Artificial Analysis products, including Coding Agent Index and Agentic Index, do not satisfy this gate. The fixed legacy exception baseline is documented in `docs/DATA-TRUST.md` and must not grow.
+
 ## Validation
 
 Run the parent skill's validation sequence. Recalculate price units manually and inspect benchmark diffs for evaluation incompatibilities.

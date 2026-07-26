@@ -1,0 +1,125 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "qwen3-6-27b",
+  "name": "Qwen3.6-27B",
+  "description": "Dense open-weight Qwen3.6 model for multimodal reasoning and agentic coding, with 27.8B parameters, hybrid thinking, and a 262K-token context.",
+  "translations": {
+    "de": {
+      "description": "Dichtes Qwen3.6-Modell mit offenen Gewichten für multimodales Schlussfolgern und agentisches Coding, mit 27,8B Parametern, hybridem Denken und 262K Kontext."
+    },
+    "es": {
+      "description": "Modelo Qwen3.6 denso y de pesos abiertos para razonamiento multimodal y programación agéntica, con 27,8B parámetros, pensamiento híbrido y 262K de contexto."
+    },
+    "fr": {
+      "description": "Modèle Qwen3.6 dense à poids ouverts pour le raisonnement multimodal et le codage agentique, avec 27,8B paramètres, pensée hybride et 262K de contexte."
+    },
+    "id": {
+      "description": "Model Qwen3.6 dense berbobot terbuka untuk penalaran multimodal dan coding agentik, dengan 27,8B parameter, pemikiran hibrida, dan konteks 262K."
+    },
+    "ja": {
+      "description": "27.8Bパラメータ、ハイブリッド思考、262Kコンテキストを備え、マルチモーダル推論とエージェント型コーディングに対応する高密度なQwen3.6オープンウェイトモデル。"
+    },
+    "ko": {
+      "description": "278억 매개변수, 하이브리드 사고, 262K 컨텍스트로 멀티모달 추론과 에이전트 코딩을 지원하는 밀집형 Qwen3.6 오픈 웨이트 모델입니다."
+    },
+    "pt": {
+      "description": "Modelo Qwen3.6 denso e de pesos abertos para raciocínio multimodal e programação agêntica, com 27,8B parâmetros, pensamento híbrido e contexto de 262K."
+    },
+    "ru": {
+      "description": "Плотная модель Qwen3.6 с открытыми весами для мультимодального рассуждения и агентного программирования: 27,8 млрд параметров, гибридное мышление и контекст 262K."
+    },
+    "tr": {
+      "description": "27,8B parametre, hibrit düşünme ve 262K bağlamla çok modlu akıl yürütme ve aracılı kodlama için yoğun, açık ağırlıklı Qwen3.6 modeli."
+    },
+    "zh-Hans": {
+      "description": "面向多模态推理和智能体编程的稠密开放权重 Qwen3.6 模型，拥有 27.8B 参数、混合思考模式和 262K 上下文。"
+    },
+    "zh-Hant": {
+      "description": "面向多模態推理和智慧體程式設計的稠密開放權重 Qwen3.6 模型，擁有 27.8B 參數、混合思考模式和 262K 上下文。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://qwen.ai/blog?id=qwen3.6-27b&lang=en",
+      "title": "Qwen3.6-27B official release announcement",
+      "fields": ["name", "description", "docsUrl", "releaseDate", "capabilities"]
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "title": "Qwen3.6-27B official model card",
+      "fields": [
+        "size",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "platformUrls.huggingface"
+      ]
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "title": "Alibaba Cloud Model Studio model pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/qwen3-6-27b/",
+      "title": "Artificial Analysis Qwen3.6-27B model page",
+      "fields": ["releaseDate", "platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-26",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://qwen.ai",
+  "docsUrl": "https://qwen.ai/blog?id=qwen3.6-27b&lang=en",
+  "vendor": "Alibaba",
+  "size": "27.8B",
+  "contextWindow": 262144,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "sg-standard",
+    "offers": [
+      {
+        "id": "sg-standard",
+        "currency": "USD",
+        "region": "SG",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": { "metric": "inputTokens", "min": 1, "max": 256000 },
+            "rates": {
+              "input": 0.6,
+              "output": 3.6,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-04-22",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/Qwen/Qwen3.6-27B",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-6-27b/",
+    "openrouter": null
+  }
+}

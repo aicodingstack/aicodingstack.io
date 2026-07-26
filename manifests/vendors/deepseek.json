@@ -2,6 +2,10 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "deepseek",
   "name": "DeepSeek",
+  "themeColor": {
+    "light": "#4D6BFE",
+    "dark": "#4D6BFE"
+  },
   "description": "A leading AI research company focused on developing advanced language models and AI technology for coding and general intelligence.",
   "translations": {
     "zh-Hans": {

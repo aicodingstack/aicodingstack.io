@@ -2,6 +2,10 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "anthropic",
   "name": "Anthropic",
+  "themeColor": {
+    "light": "#D97757",
+    "dark": "#E58A6B"
+  },
   "description": "An AI safety company focused on building reliable, interpretable, and steerable AI systems.",
   "translations": {
     "zh-Hans": {

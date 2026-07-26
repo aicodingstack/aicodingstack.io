@@ -12,7 +12,9 @@
       "properties": {
         "size": {
           "type": ["string", "null"],
-          "description": "Model parameter size (e.g., '7B', '32B', '200B'), null when the vendor does not disclose it"
+          "minLength": 1,
+          "not": { "const": "Unknown" },
+          "description": "Officially disclosed model parameter size (e.g., '7B', '32B', '200B'); null when the vendor does not disclose it. Placeholder strings such as 'Unknown' are forbidden."
         },
         "contextWindow": {
           "type": "number",

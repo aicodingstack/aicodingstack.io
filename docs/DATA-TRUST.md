@@ -40,6 +40,12 @@ Legacy records may have `verified: true` without structured provenance because t
 
 For new entries and material updates, a `verified: true` change should include at least one authoritative source, `lastVerifiedAt`, `verifiedBy`, and `confidence`. Official product documentation and pricing pages are preferred over third-party summaries. Benchmark fields should cite the benchmark owner or an official model report.
 
+## Model catalog inclusion
+
+Every new model catalog entry must have a published Artificial Analysis Intelligence Index result compatible with the index version tracked in `data/artificial-analysis-index.json`. Artificial Analysis Coding Agent Index, Agentic Index, individual benchmark scores, and provider-only measurements are different metrics and must not be substituted or mixed into the model Intelligence Index.
+
+`legacyMissingModelIds` records the fixed baseline of older catalog models that do not yet meet this requirement. The list may shrink when a compatible result becomes available, but must not grow. Tests reject newly added model manifests without a matching Intelligence Index entry.
+
 ## Freshness policy
 
 Run `npm run data-health:report` after manifest or translation changes and commit both generated snapshots. CI runs `npm run data-health:check` to reject invalid or stale snapshots.

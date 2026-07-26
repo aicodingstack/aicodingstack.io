@@ -331,6 +331,10 @@ export interface ManifestProvider extends ManifestVendorEntity {
  */
 export interface ManifestVendor extends ManifestEntity {
   aliases?: string[]
+  themeColor?: {
+    light: string
+    dark: string
+  }
   communityUrls: ManifestCommunityUrls
 }
 

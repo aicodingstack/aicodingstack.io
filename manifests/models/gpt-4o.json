@@ -42,7 +42,7 @@
   "websiteUrl": "https://openai.com",
   "docsUrl": "https://platform.openai.com/docs/models/gpt-4o-latest",
   "vendor": "OpenAI",
-  "size": "Unknown",
+  "size": null,
   "contextWindow": 128000,
   "maxOutput": 16384,
   "tokenPricing": {

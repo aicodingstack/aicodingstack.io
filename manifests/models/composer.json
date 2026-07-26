@@ -42,7 +42,7 @@
   "websiteUrl": "https://cursor.com",
   "docsUrl": "https://cursor.com/blog/composer",
   "vendor": "Anysphere",
-  "size": "Unknown",
+  "size": null,
   "contextWindow": 128000,
   "maxOutput": 8000,
   "tokenPricing": {
