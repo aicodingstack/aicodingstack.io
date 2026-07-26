@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "모델 지능 지수",
+    "description": "코딩 모델의 지능 점수 변화를 공급업체 및 모델 계열별로 추적합니다.",
+    "keywords": "모델 지능 지수, AI 모델 타임라인, 코딩 모델 벤치마크, 모델 출시 이력"
+  },
+  "title": "모델 지능 지수",
+  "description": "출시 시점에 따른 코딩 모델 지능의 변화를 살펴보세요.",
+  "releaseDate": "출시일",
+  "chart": {
+    "title": "시간에 따른 성능",
+    "axisHint": "출시일 × Index",
+    "modelCount": "카탈로그 모델 {count}개",
+    "indexAxis": "Intelligence Index"
+  },
+  "filter": {
+    "label": "공급업체별 필터",
+    "showAll": "모두 표시"
+  },
+  "list": {
+    "title": "모델 인덱스",
+    "description": "모델을 출시일 또는 Index 점수로 정렬할 수 있습니다. 막대 길이는 동일한 척도를 사용합니다.",
+    "index": "Index",
+    "barLabel": "{model} Index: {score}"
+  },
+  "source": {
+    "attribution": "Artificial Analysis Intelligence Index v{version}, {date} 기준. 출처:",
+    "estimated": "*는 Artificial Analysis가 표시한 추정값입니다. 점수는 명시된 모델 구성에 해당합니다.",
+    "methodology": "평가 방법"
+  }
+}

@@ -14,6 +14,8 @@
     "openMenu": "메뉴 열기",
     "openSourceRank": "오픈소스 순위",
     "openSourceRankDesc": "GitHub 스타로 오픈 소스 AI 코딩 프로젝트를 탐색하세요",
+    "modelIntelligenceIndex": "모델 지능 지수",
+    "modelIntelligenceIndexDesc": "출시별 모델 지능 변화를 추적",
     "ranking": "순위",
     "toggleMenu": "메뉴 토글"
   }

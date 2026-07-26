@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Indeks Kecerdasan Model",
+    "description": "Lacak skor kecerdasan model coding dari waktu ke waktu, dikelompokkan berdasarkan vendor dan seri model.",
+    "keywords": "indeks kecerdasan model, linimasa model AI, benchmark model coding, riwayat rilis model"
+  },
+  "title": "Indeks Kecerdasan Model",
+  "description": "Jelajahi perubahan kecerdasan model coding di setiap tanggal rilis.",
+  "releaseDate": "Tanggal rilis",
+  "chart": {
+    "title": "Kapabilitas dari waktu ke waktu",
+    "axisHint": "Tanggal rilis × Index",
+    "modelCount": "{count} model katalog",
+    "indexAxis": "Intelligence Index"
+  },
+  "filter": {
+    "label": "Filter berdasarkan vendor",
+    "showAll": "Tampilkan semua"
+  },
+  "list": {
+    "title": "Indeks model",
+    "description": "Urutkan model berdasarkan tanggal rilis atau skor Index. Panjang bar menggunakan skala yang sama.",
+    "index": "Indeks",
+    "barLabel": "Indeks {model}: {score}"
+  },
+  "source": {
+    "attribution": "Artificial Analysis Intelligence Index v{version}, diamati {date}. Sumber:",
+    "estimated": "* menandai estimasi yang ditampilkan Artificial Analysis. Skor mengikuti konfigurasi model yang tercantum.",
+    "methodology": "Metodologi"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Model Intelligence Index",
+    "description": "Track coding model intelligence scores over time, grouped by vendor and model series.",
+    "keywords": "model intelligence index, AI model timeline, coding model benchmarks, model release history"
+  },
+  "title": "Model Intelligence Index",
+  "description": "Explore how coding model intelligence changes across release dates.",
+  "releaseDate": "Release date",
+  "chart": {
+    "title": "Capability over time",
+    "axisHint": "Release date × Index",
+    "modelCount": "{count} catalog models",
+    "indexAxis": "Intelligence Index"
+  },
+  "filter": {
+    "label": "Filter by vendor",
+    "showAll": "Show all"
+  },
+  "list": {
+    "title": "Model index",
+    "description": "Sort models by release date or Index score. Bar lengths use the same scale.",
+    "index": "Index",
+    "barLabel": "{model} Index: {score}"
+  },
+  "source": {
+    "attribution": "Artificial Analysis Intelligence Index v{version}, observed {date}. Source:",
+    "estimated": "* marks estimates shown by Artificial Analysis. Scores reflect the listed model configuration.",
+    "methodology": "Methodology"
+  }
+}

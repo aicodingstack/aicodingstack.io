@@ -52,7 +52,7 @@ export interface PageTranslationRequirement {
  * Registry of all pages and their translation requirements
  */
 export const PAGE_TRANSLATION_REQUIREMENTS: Record<string, PageTranslationRequirement> = {
-  // ========== Static Pages with meta object (7个) ==========
+  // ========== Static Pages with meta object (8个) ==========
   '/': {
     namespace: 'pages.home',
     requiredKeys: REQUIRED_TRANSLATION_KEYS.staticWithMeta,
@@ -80,6 +80,11 @@ export const PAGE_TRANSLATION_REQUIREMENTS: Record<string, PageTranslationRequir
   },
   '/open-source-rank': {
     namespace: 'pages.openSourceRank',
+    requiredKeys: REQUIRED_TRANSLATION_KEYS.staticWithMeta,
+    type: 'staticWithMeta',
+  },
+  '/model-intelligence-index': {
+    namespace: 'pages.modelIntelligenceIndex',
     requiredKeys: REQUIRED_TRANSLATION_KEYS.staticWithMeta,
     type: 'staticWithMeta',
   },

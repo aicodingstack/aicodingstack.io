@@ -63,6 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/manifesto', priority: 0.7, changeFreq: 'monthly' as const },
     { path: '/ai-coding-landscape', priority: 0.8, changeFreq: 'weekly' as const },
     { path: '/open-source-rank', priority: 0.8, changeFreq: 'daily' as const },
+    { path: '/model-intelligence-index', priority: 0.8, changeFreq: 'weekly' as const },
     { path: '/ides/comparison', priority: 0.7, changeFreq: 'weekly' as const },
     { path: '/clis/comparison', priority: 0.7, changeFreq: 'weekly' as const },
     { path: '/extensions/comparison', priority: 0.7, changeFreq: 'weekly' as const },

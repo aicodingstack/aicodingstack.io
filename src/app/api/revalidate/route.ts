@@ -25,6 +25,7 @@ const ALL_REVALIDATION_PATHS = [
   'manifesto',
   'ai-coding-landscape',
   'open-source-rank',
+  'model-intelligence-index',
   'search',
 ]
 
@@ -36,7 +37,7 @@ const CATEGORY_PATHS: Record<string, string[]> = {
   clis: ['clis'],
   desktops: ['desktops'],
   extensions: ['extensions'],
-  models: ['models'],
+  models: ['models', 'model-intelligence-index'],
   providers: ['model-providers'],
   vendors: ['vendors'],
   tools: ['ides', 'clis', 'desktops', 'extensions'],

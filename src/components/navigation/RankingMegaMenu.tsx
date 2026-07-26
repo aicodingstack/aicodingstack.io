@@ -37,6 +37,19 @@ export const RankingMegaMenu = memo(function RankingMegaMenu({
               {tComponent('header.openSourceRankDesc')}
             </div>
           </Link>
+
+          <Link
+            href="/model-intelligence-index"
+            onClick={onClose}
+            className={`${featuredLinkClass} mt-[var(--spacing-xs)]`}
+          >
+            <div className="font-medium mb-[var(--spacing-xs)]">
+              {tComponent('header.modelIntelligenceIndex')}
+            </div>
+            <div className="text-xs text-[var(--color-text-secondary)]">
+              {tComponent('header.modelIntelligenceIndexDesc')}
+            </div>
+          </Link>
         </div>
       </div>
     </div>
