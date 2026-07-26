@@ -138,14 +138,11 @@ export default function ModelsPageClient({ locale }: Props) {
                       }`}
                     >
                       <Link href={`/models/${model.id}`} className="block">
-                        <div className="flex justify-between items-start mb-[var(--spacing-sm)]">
+                        <div className="flex items-start mb-[var(--spacing-sm)]">
                           <div className="flex items-center gap-[var(--spacing-xs)]">
                             <h3 className="text-lg font-semibold tracking-tight">{model.name}</h3>
                             {model.verified && <VerifiedBadge size="sm" />}
                           </div>
-                          <span className="text-lg text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all">
-                            →
-                          </span>
                         </div>
                         <div className="space-y-[var(--spacing-xs)] mb-[var(--spacing-md)]">
                           <div className="flex items-center gap-[var(--spacing-sm)] text-xs">

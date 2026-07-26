@@ -2,6 +2,10 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "minimax",
   "name": "MiniMax",
+  "themeColor": {
+    "light": "#E84B8A",
+    "dark": "#E84B8A"
+  },
   "description": "An AI company specializing in multimodal general large language models, offering advanced AI services including text, speech, music, image, and video generation.",
   "translations": {
     "zh-Hans": {

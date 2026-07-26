@@ -1,0 +1,138 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "qwen3-6-max-preview",
+  "name": "Qwen3.6-Max-Preview",
+  "description": "Proprietary Qwen3.6 flagship preview for agentic coding, knowledge, and instruction following, later superseded by Qwen3.7-Max.",
+  "translations": {
+    "de": {
+      "description": "Proprietäre Qwen3.6-Flaggschiff-Vorschau für agentisches Coding, Wissen und Anweisungsbefolgung, später durch Qwen3.7-Max abgelöst."
+    },
+    "es": {
+      "description": "Vista previa propietaria del modelo insignia Qwen3.6 para programación agéntica, conocimiento y seguimiento de instrucciones, reemplazada después por Qwen3.7-Max."
+    },
+    "fr": {
+      "description": "Aperçu propriétaire du modèle phare Qwen3.6 pour le codage agentique, les connaissances et le suivi d’instructions, ensuite remplacé par Qwen3.7-Max."
+    },
+    "id": {
+      "description": "Pratinjau model unggulan Qwen3.6 proprietari untuk coding agentik, pengetahuan, dan kepatuhan instruksi, kemudian digantikan oleh Qwen3.7-Max."
+    },
+    "ja": {
+      "description": "エージェント型コーディング、知識、指示追従に対応するQwen3.6独自旗艦モデルのプレビュー。後にQwen3.7-Maxへ置き換えられました。"
+    },
+    "ko": {
+      "description": "에이전트 코딩, 지식 및 지시 이행을 위한 독점 Qwen3.6 플래그십 프리뷰로, 이후 Qwen3.7-Max로 대체되었습니다."
+    },
+    "pt": {
+      "description": "Prévia proprietária do modelo principal Qwen3.6 para programação agêntica, conhecimento e seguimento de instruções, depois substituída pelo Qwen3.7-Max."
+    },
+    "ru": {
+      "description": "Предварительная версия закрытой флагманской модели Qwen3.6 для агентного программирования, знаний и следования инструкциям, позднее заменённая Qwen3.7-Max."
+    },
+    "tr": {
+      "description": "Aracılı kodlama, bilgi ve talimat takibi için özel Qwen3.6 amiral modeli önizlemesi; daha sonra Qwen3.7-Max ile değiştirildi."
+    },
+    "zh-Hans": {
+      "description": "面向智能体编程、知识和指令遵循的闭源 Qwen3.6 旗舰预览模型，后由 Qwen3.7-Max 取代。"
+    },
+    "zh-Hant": {
+      "description": "面向智慧體程式設計、知識和指令遵循的閉源 Qwen3.6 旗艦預覽模型，後由 Qwen3.7-Max 取代。"
+    }
+  },
+  "verified": true,
+  "deprecated": true,
+  "sources": [
+    {
+      "url": "https://qwen.ai/blog?id=qwen3.6-max-preview",
+      "title": "Qwen3.6-Max-Preview official release announcement",
+      "fields": ["name", "description", "docsUrl", "capabilities"]
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+      "title": "Alibaba Cloud Model Studio text generation models",
+      "fields": ["deprecated", "contextWindow", "capabilities"]
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-depreciation",
+      "title": "Alibaba Cloud Model Studio model lifecycle",
+      "fields": ["deprecated", "lifecycle"]
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "title": "Alibaba Cloud Model Studio model pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/qwen3-6-max/",
+      "title": "Artificial Analysis Qwen3.6 Max model page",
+      "fields": [
+        "releaseDate",
+        "inputModalities",
+        "outputModalities",
+        "platformUrls.artificialAnalysis"
+      ]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-26",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://qwen.ai",
+  "docsUrl": "https://qwen.ai/blog?id=qwen3.6-max-preview",
+  "vendor": "Alibaba",
+  "size": null,
+  "contextWindow": 256000,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "sg-standard",
+    "offers": [
+      {
+        "id": "sg-standard",
+        "currency": "USD",
+        "region": "SG",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": { "metric": "inputTokens", "min": 1, "max": 128000 },
+            "rates": {
+              "input": 1.3,
+              "output": 7.8,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          },
+          {
+            "condition": { "metric": "inputTokens", "min": 128001, "max": 256000 },
+            "rates": {
+              "input": 2,
+              "output": 12,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-04-20",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-6-max/",
+    "openrouter": null
+  }
+}

@@ -2,6 +2,10 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "meta",
   "name": "Meta",
+  "themeColor": {
+    "light": "#0866FF",
+    "dark": "#0866FF"
+  },
   "description": "Technology company building AI tools and open-source models like Llama, advancing research through open science to connect people and enable innovation worldwide.",
   "translations": {
     "zh-Hans": {

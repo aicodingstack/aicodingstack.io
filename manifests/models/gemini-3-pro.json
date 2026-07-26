@@ -52,7 +52,7 @@
   "websiteUrl": "https://deepmind.google",
   "docsUrl": "https://ai.google.dev/gemini-api/docs/models#gemini-3-pro",
   "vendor": "Google",
-  "size": "Unknown",
+  "size": null,
   "contextWindow": 1048576,
   "maxOutput": 65536,
   "tokenPricing": {

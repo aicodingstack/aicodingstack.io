@@ -8,7 +8,6 @@ import Alibaba from '../../../manifests/providers/alibaba.json'
 import Anthropic from '../../../manifests/providers/anthropic.json'
 import Deepseek from '../../../manifests/providers/deepseek.json'
 import Google from '../../../manifests/providers/google.json'
-import Kwaikatonai from '../../../manifests/providers/kwaikatonai.json'
 import Meta from '../../../manifests/providers/meta.json'
 import Minimax from '../../../manifests/providers/minimax.json'
 import Moonshot from '../../../manifests/providers/moonshot.json'
@@ -24,7 +23,6 @@ export const providersData = [
   Anthropic,
   Deepseek,
   Google,
-  Kwaikatonai,
   Meta,
   Minimax,
   Moonshot,

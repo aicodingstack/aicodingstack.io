@@ -42,7 +42,7 @@
   "websiteUrl": "https://openai.com",
   "docsUrl": "https://platform.openai.com/docs/models/gpt-5.1-codex",
   "vendor": "OpenAI",
-  "size": "Unknown",
+  "size": null,
   "contextWindow": 400000,
   "maxOutput": 128000,
   "tokenPricing": {

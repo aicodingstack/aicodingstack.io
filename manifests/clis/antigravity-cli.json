@@ -1,0 +1,151 @@
+{
+  "$schema": "../$schemas/cli.schema.json",
+  "id": "antigravity-cli",
+  "name": "Antigravity CLI",
+  "familyId": "antigravity",
+  "description": "Google's terminal-first coding agent for invoking, monitoring, and orchestrating Antigravity agents with subagents, multi-file editing, tools, MCP, skills, and remote SSH support.",
+  "translations": {
+    "de": {
+      "description": "Googles terminalorientierter Coding-Agent zum Starten, Überwachen und Orchestrieren von Antigravity-Agenten mit Subagenten, Dateiwerkzeugen, MCP, Skills und Remote-SSH."
+    },
+    "es": {
+      "description": "El agente de programación de Google para terminal permite ejecutar, supervisar y orquestar agentes de Antigravity con subagentes, edición de archivos, MCP, skills y SSH remoto."
+    },
+    "fr": {
+      "description": "L'agent de codage de Google conçu pour le terminal permet de lancer, suivre et orchestrer des agents Antigravity avec sous-agents, outils de fichiers, MCP, skills et SSH distant."
+    },
+    "id": {
+      "description": "Agen coding Google yang mengutamakan terminal untuk menjalankan, memantau, dan mengatur agen Antigravity dengan subagen, alat berkas, MCP, skill, dan SSH jarak jauh."
+    },
+    "ja": {
+      "description": "Google のターミナル中心のコーディングエージェント。サブエージェント、複数ファイル編集、ツール、MCP、スキル、リモート SSH に対応し、Antigravity エージェントを実行・監視・統括します。"
+    },
+    "ko": {
+      "description": "Google의 터미널 중심 코딩 에이전트로, 하위 에이전트, 다중 파일 편집, 도구, MCP, 스킬, 원격 SSH를 활용해 Antigravity 에이전트를 실행하고 모니터링하며 조율합니다."
+    },
+    "pt": {
+      "description": "O agente de programação do Google voltado ao terminal executa, monitora e orquestra agentes Antigravity com subagentes, edição de arquivos, MCP, skills e SSH remoto."
+    },
+    "ru": {
+      "description": "Терминальный ИИ-агент Google для запуска, мониторинга и оркестрации агентов Antigravity с субагентами, файловыми инструментами, MCP, навыками и удалённым SSH."
+    },
+    "tr": {
+      "description": "Google'ın terminal odaklı kodlama aracısı; alt aracılar, çoklu dosya düzenleme, araçlar, MCP, beceriler ve uzak SSH ile Antigravity aracılarını çalıştırır ve yönetir."
+    },
+    "zh-Hans": {
+      "description": "Google 面向终端的编程智能体，可通过子智能体、多文件编辑、工具、MCP、Skills 和远程 SSH 调用、监控并编排 Antigravity 智能体。"
+    },
+    "zh-Hant": {
+      "description": "Google 面向終端的程式設計智慧體，可透過子智慧體、多檔案編輯、工具、MCP、Skills 和遠端 SSH 呼叫、監控並編排 Antigravity 智慧體。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://antigravity.google/blog/introducing-google-antigravity-cli",
+      "title": "Introducing Google Antigravity CLI"
+    },
+    {
+      "url": "https://antigravity.google/product/antigravity-cli",
+      "title": "Antigravity CLI product page"
+    },
+    {
+      "url": "https://github.com/google-antigravity/antigravity-cli",
+      "title": "Antigravity CLI official repository"
+    },
+    {
+      "url": "https://antigravity.google/pricing",
+      "title": "Google Antigravity pricing"
+    },
+    {
+      "url": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/",
+      "title": "Transitioning Gemini CLI to Antigravity CLI",
+      "fields": ["relatedProducts"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-22",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://antigravity.google/product/antigravity-cli",
+  "docsUrl": "https://antigravity.google/docs/cli/overview",
+  "vendor": "Google",
+  "latestVersion": "1.1.5",
+  "githubUrl": "https://github.com/google-antigravity/antigravity-cli",
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Individual",
+      "value": 0,
+      "currency": null,
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Google AI Pro",
+      "value": null,
+      "currency": null,
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Google AI Ultra",
+      "value": null,
+      "currency": null,
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Organization",
+      "value": null,
+      "currency": null,
+      "per": "usage",
+      "category": "Enterprise"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://antigravity.google/download",
+    "changelog": "https://antigravity.google/changelog",
+    "pricing": "https://antigravity.google/pricing",
+    "mcp": "https://antigravity.google/docs/mcp",
+    "issue": "https://github.com/google-antigravity/antigravity-cli/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/antigravity",
+    "github": "https://github.com/google-antigravity/antigravity-cli",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": "https://antigravity.google/blog/introducing-google-antigravity-cli"
+  },
+  "relatedProducts": [
+    {
+      "type": "ide",
+      "productId": "antigravity"
+    },
+    {
+      "type": "cli",
+      "productId": "gemini-cli"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": "~/.local/bin/agy",
+      "installCommand": "curl -fsSL https://antigravity.google/cli/install.sh | bash",
+      "launchCommand": "agy"
+    },
+    {
+      "os": "Windows",
+      "installPath": "C:\\Users\\<Username>\\AppData\\Local\\agy\\bin",
+      "installCommand": "irm https://antigravity.google/cli/install.ps1 | iex",
+      "launchCommand": "agy"
+    },
+    {
+      "os": "Linux",
+      "installPath": "~/.local/bin/agy",
+      "installCommand": "curl -fsSL https://antigravity.google/cli/install.sh | bash",
+      "launchCommand": "agy"
+    }
+  ]
+}

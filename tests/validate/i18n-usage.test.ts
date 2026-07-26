@@ -142,17 +142,6 @@ function loadTranslations(): TranslationIndex {
     byKey: new Map(),
   }
 
-  // Mapping from kebab-case file names to camelCase namespace names
-  // This matches the exports in translations/en/index.ts
-  const fileNameToNamespace: Record<string, string> = {
-    'curated-collections': 'curatedCollections',
-    'model-compare': 'modelCompare',
-    'model-detail': 'modelDetail',
-    'model-providers': 'modelProviders',
-    'open-source-rank': 'openSourceRank',
-    'stacks-overview': 'stacksOverview',
-  }
-
   // Load English translations as reference
   const enDir = path.join(TRANSLATIONS_DIR, 'en')
 
@@ -176,8 +165,10 @@ function loadTranslations(): TranslationIndex {
         // Namespace is derived from file path
         // For pages: convert kebab-case file names to camelCase to match index.ts exports
         let namespaceWithoutExt = entry.name.replace('.json', '')
-        if (baseNamespace === 'pages' && fileNameToNamespace[namespaceWithoutExt]) {
-          namespaceWithoutExt = fileNameToNamespace[namespaceWithoutExt]!
+        if (baseNamespace === 'pages') {
+          namespaceWithoutExt = namespaceWithoutExt.replace(/-([a-z])/g, (_match, letter) =>
+            letter.toUpperCase()
+          )
         }
 
         const namespace = baseNamespace

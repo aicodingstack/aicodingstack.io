@@ -1,0 +1,122 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "glm-5v-turbo",
+  "name": "GLM-5V-Turbo",
+  "description": "Z.ai's proprietary multimodal coding model for visual coding, GUI agents, long-horizon planning, and complex action execution.",
+  "translations": {
+    "de": {
+      "description": "Z.ais proprietäres multimodales Programmiermodell für visuelles Coding, GUI-Agenten, langfristige Planung und komplexe Aktionsausführung."
+    },
+    "es": {
+      "description": "El modelo propietario multimodal de Z.ai para programación visual, agentes GUI, planificación prolongada y ejecución de acciones complejas."
+    },
+    "fr": {
+      "description": "Le modèle propriétaire multimodal de Z.ai pour le codage visuel, les agents GUI, la planification longue et l’exécution d’actions complexes."
+    },
+    "id": {
+      "description": "Model coding multimodal proprietari Z.ai untuk coding visual, agen GUI, perencanaan jangka panjang, dan eksekusi tindakan kompleks."
+    },
+    "ja": {
+      "description": "視覚コーディング、GUIエージェント、長期計画、複雑なアクション実行向けのZ.ai製プロプライエタリマルチモーダルモデルです。"
+    },
+    "ko": {
+      "description": "시각 코딩, GUI 에이전트, 장기 계획 및 복잡한 작업 실행을 위한 Z.ai의 독점 멀티모달 코딩 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo proprietário multimodal da Z.ai para programação visual, agentes GUI, planejamento prolongado e execução de ações complexas."
+    },
+    "ru": {
+      "description": "Закрытая мультимодальная модель Z.ai для визуального программирования, GUI-агентов, долгосрочного планирования и сложных действий."
+    },
+    "tr": {
+      "description": "Görsel kodlama, GUI aracıları, uzun vadeli planlama ve karmaşık eylem yürütme için Z.ai'ın tescilli çok modlu kodlama modeli."
+    },
+    "zh-Hans": {
+      "description": "Z.ai 面向视觉编码、GUI 智能体、长周期规划和复杂动作执行的闭源多模态编码模型。"
+    },
+    "zh-Hant": {
+      "description": "Z.ai 面向視覺編碼、GUI 智慧體、長週期規劃和複雜動作執行的閉源多模態編碼模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.z.ai/guides/vlm/glm-5v-turbo",
+      "title": "GLM-5V-Turbo model documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "title": "Z.ai model release notes",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "title": "Z.ai API pricing",
+      "fields": ["tokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-26",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://z.ai",
+  "docsUrl": "https://docs.z.ai/guides/vlm/glm-5v-turbo",
+  "vendor": "Z.ai",
+  "size": null,
+  "contextWindow": 204800,
+  "maxOutput": 131072,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 1.2,
+              "output": 4,
+              "cacheRead": 0.24,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-04-01",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/glm-5v-turbo",
+    "openrouter": null
+  }
+}

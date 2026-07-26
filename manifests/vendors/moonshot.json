@@ -3,6 +3,10 @@
   "id": "moonshot",
   "name": "Moonshot AI",
   "aliases": ["Moonshot"],
+  "themeColor": {
+    "light": "#6E5AE6",
+    "dark": "#6E5AE6"
+  },
   "description": "An AI company specializing in large language models and intelligent applications, known for the Kimi AI assistant.",
   "translations": {
     "zh-Hans": {

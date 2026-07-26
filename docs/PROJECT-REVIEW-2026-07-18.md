@@ -129,7 +129,7 @@ evidence; completed items are reflected in the checklists and implementation log
 - `src/app/[locale]/models/compare/[models]/page.client.tsx` renders several internal keys and
   English-only strings directly.
 - Model comparison provider URLs are inferred from display names, which does not work for values
-  such as `Z.ai`, `KwaiKAT`, or non-provider vendors.
+  such as `Z.ai` or non-provider vendors.
 - `src/app/[locale]/models/compare/[models]/page.tsx` generates model pairs with O(n²) growth.
 - `.github/workflows/deploy-staging.yml` listens to the removed `develop` branch.
 - Stars updates are duplicated across two workflows and one workflow references an obsolete path.

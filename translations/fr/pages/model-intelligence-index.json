@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Indice d’intelligence des modèles",
+    "description": "Suivez dans le temps les scores d’intelligence des modèles de code, regroupés par fournisseur et série.",
+    "keywords": "indice d’intelligence des modèles, chronologie des modèles IA, benchmarks des modèles de code, historique des sorties"
+  },
+  "title": "Indice d’intelligence des modèles",
+  "description": "Découvrez l’évolution de l’intelligence des modèles de code au fil des sorties.",
+  "releaseDate": "Date de sortie",
+  "chart": {
+    "title": "Capacités au fil du temps",
+    "axisHint": "Date de sortie × Index",
+    "modelCount": "{count} modèles du catalogue",
+    "indexAxis": "Intelligence Index"
+  },
+  "filter": {
+    "label": "Filtrer par fournisseur",
+    "showAll": "Tout afficher"
+  },
+  "list": {
+    "title": "Indice des modèles",
+    "description": "Triez les modèles par date de sortie ou score Index. Les barres utilisent la même échelle.",
+    "index": "Indice",
+    "barLabel": "Indice de {model} : {score}"
+  },
+  "source": {
+    "attribution": "Artificial Analysis Intelligence Index v{version}, relevé le {date}. Source :",
+    "estimated": "* signale les estimations affichées par Artificial Analysis. Les scores correspondent à la configuration indiquée.",
+    "methodology": "Méthodologie"
+  }
+}

@@ -40,7 +40,7 @@ export interface PageMetadataConfig {
  * Maps page routes to their metadata configuration
  */
 export const PAGE_REGISTRY: Record<string, PageMetadataConfig> = {
-  // ========== Static Pages (11) ==========
+  // ========== Static Pages (12) ==========
   '/': {
     generatorType: 'static',
     pageType: 'home',
@@ -72,6 +72,10 @@ export const PAGE_REGISTRY: Record<string, PageMetadataConfig> = {
     pageType: 'static',
   },
   '/open-source-rank': {
+    generatorType: 'static',
+    pageType: 'static',
+  },
+  '/model-intelligence-index': {
     generatorType: 'static',
     pageType: 'static',
   },
@@ -209,8 +213,8 @@ export const PAGE_REGISTRY: Record<string, PageMetadataConfig> = {
   },
 }
 
-// 总计: 29 个页面
-// - 静态页面: 11 个（包括首页、manifesto、docs、articles、search 等）
+// 总计: 30 个页面
+// - 静态页面: 12 个（包括首页、manifesto、docs、articles、search 等）
 // - 列表页面: 6 个
 // - 详情页面: 8 个
 // - 比较页面: 4 个

@@ -38,21 +38,35 @@
       "description": "Google 的 Gemini CLI 將先進的 AI 模型帶到您的終端。提供程式碼補全、說明、測試生成和錯誤修復，同時支援多種語言。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "deprecated": true,
+  "sources": [
+    {
+      "url": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/",
+      "title": "Transitioning Gemini CLI to Antigravity CLI",
+      "fields": ["deprecated", "pricing", "relatedProducts"]
+    },
+    {
+      "url": "https://geminicli.com/docs/changelogs/latest/",
+      "title": "Gemini CLI latest stable release",
+      "fields": ["latestVersion"]
+    },
+    {
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "title": "Gemini CLI official repository",
+      "fields": ["githubUrl", "license", "platforms"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-22",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://geminicli.com",
   "docsUrl": "https://geminicli.com/docs",
   "vendor": "Google",
-  "latestVersion": "0.5.4",
+  "latestVersion": "0.50.0",
   "githubUrl": "https://github.com/google-gemini/gemini-cli",
   "license": "Apache-2.0",
   "pricing": [
-    {
-      "name": "Individual (Free)",
-      "value": 0,
-      "currency": null,
-      "per": null,
-      "category": "Individual"
-    },
     {
       "name": "Gemini Code Assist Standard",
       "value": null,
@@ -84,7 +98,12 @@
     "reddit": null,
     "blog": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-cli-custom-slash-commands"
   },
-  "relatedProducts": [],
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "antigravity-cli"
+    }
+  ],
   "platforms": [
     {
       "os": "macOS",

@@ -2,6 +2,10 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "alibaba",
   "name": "Alibaba",
+  "themeColor": {
+    "light": "#D95F00",
+    "dark": "#FF8A3D"
+  },
   "description": "Chinese multinational technology company specializing in e-commerce, retail, cloud computing, AI, and digital services through platforms like Alibaba.com, Taobao, and Alibaba Cloud.",
   "translations": {
     "zh-Hans": {

@@ -31,14 +31,12 @@ import Moonshot from '../../../manifests/vendors/moonshot.json'
 import OhMyPi from '../../../manifests/vendors/oh-my-pi.json'
 import Openai from '../../../manifests/vendors/openai.json'
 import Openrouter from '../../../manifests/vendors/openrouter.json'
-import Orionstar from '../../../manifests/vendors/orionstar.json'
 import RooCode from '../../../manifests/vendors/roo-code.json'
 import ShareaiLab from '../../../manifests/vendors/shareai-lab.json'
 import Siliconflow from '../../../manifests/vendors/siliconflow.json'
 import Sourcegraph from '../../../manifests/vendors/sourcegraph.json'
 import Sst from '../../../manifests/vendors/sst.json'
 import Stagewise from '../../../manifests/vendors/stagewise.json'
-import Streamlake from '../../../manifests/vendors/streamlake.json'
 import Tabnine from '../../../manifests/vendors/tabnine.json'
 import Tencent from '../../../manifests/vendors/tencent.json'
 import VerdentAi from '../../../manifests/vendors/verdent-ai.json'
@@ -75,14 +73,12 @@ export const vendorsData = [
   OhMyPi,
   Openai,
   Openrouter,
-  Orionstar,
   RooCode,
   ShareaiLab,
   Siliconflow,
   Sourcegraph,
   Sst,
   Stagewise,
-  Streamlake,
   Tabnine,
   Tencent,
   VerdentAi,

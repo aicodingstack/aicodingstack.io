@@ -14,6 +14,8 @@
     "openMenu": "Открыть меню",
     "openSourceRank": "Рейтинг с открытым исходным кодом",
     "openSourceRankDesc": "Исследуйте проекты AI-программирования с открытым исходным кодом по звёздам GitHub",
+    "modelIntelligenceIndex": "Индекс интеллекта моделей",
+    "modelIntelligenceIndexDesc": "Отслеживайте интеллект моделей от выпуска к выпуску",
     "ranking": "Рейтинг",
     "toggleMenu": "Переключить меню"
   }

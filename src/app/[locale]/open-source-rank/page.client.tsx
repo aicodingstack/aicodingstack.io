@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { useMemo, useState } from 'react'
+import { DeprecatedBadge } from '@/components/controls/DeprecatedBadge'
 import { VerifiedBadge } from '@/components/controls/VerifiedBadge'
 import { Link } from '@/i18n/navigation'
 import { clisData } from '@/lib/generated/clis'
@@ -21,6 +22,7 @@ type OpenSourceProject = {
   githubUrl: string | null
   websiteUrl: string | null
   verified?: boolean
+  deprecated?: boolean
 }
 
 function getLicenseDisplayName(license: string): string {
@@ -74,6 +76,7 @@ export function OpenSourceRankPage() {
         githubUrl: ide.githubUrl || null,
         websiteUrl: ide.websiteUrl || null,
         verified: ide.verified ?? false,
+        deprecated: ide.deprecated ?? false,
       }
 
       if (isProprietary && hasStars) {
@@ -104,6 +107,7 @@ export function OpenSourceRankPage() {
         githubUrl: cli.githubUrl || null,
         websiteUrl: cli.websiteUrl || null,
         verified: cli.verified ?? false,
+        deprecated: cli.deprecated ?? false,
       }
 
       if (isProprietary && hasStars) {
@@ -128,6 +132,7 @@ export function OpenSourceRankPage() {
         githubUrl: desktop.githubUrl || null,
         websiteUrl: desktop.websiteUrl || null,
         verified: desktop.verified ?? false,
+        deprecated: desktop.deprecated ?? false,
       }
 
       if (isProprietary && hasStars) proprietary.push(project)
@@ -155,6 +160,7 @@ export function OpenSourceRankPage() {
         githubUrl: ext.githubUrl || null,
         websiteUrl: ext.websiteUrl || null,
         verified: ext.verified ?? false,
+        deprecated: ext.deprecated ?? false,
       }
 
       if (isProprietary && hasStars) {
@@ -360,6 +366,7 @@ export function OpenSourceRankPage() {
                             {project.name}
                           </Link>
                           {project.verified && <VerifiedBadge size="sm" />}
+                          {project.deprecated && <DeprecatedBadge />}
                         </div>
                       </td>
                       <td className="px-[var(--spacing-sm)] py-[var(--spacing-sm)] text-sm">

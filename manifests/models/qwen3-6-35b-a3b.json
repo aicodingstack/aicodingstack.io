@@ -1,0 +1,130 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "qwen3-6-35b-a3b",
+  "name": "Qwen3.6-35B-A3B",
+  "description": "Open-weight Qwen3.6 MoE model for agentic coding and multimodal reasoning, with 35B total and 3B active parameters, offered through the API as Qwen3.6-Flash.",
+  "translations": {
+    "de": {
+      "description": "Qwen3.6-MoE-Modell mit offenen Gewichten für agentisches Coding und multimodales Schlussfolgern, mit 35B Gesamt- und 3B aktiven Parametern; API-Name Qwen3.6-Flash."
+    },
+    "es": {
+      "description": "Modelo Qwen3.6 MoE de pesos abiertos para programación agéntica y razonamiento multimodal, con 35B parámetros totales y 3B activos; en la API se llama Qwen3.6-Flash."
+    },
+    "fr": {
+      "description": "Modèle Qwen3.6 MoE à poids ouverts pour le codage agentique et le raisonnement multimodal, avec 35B paramètres au total et 3B actifs, proposé comme Qwen3.6-Flash via API."
+    },
+    "id": {
+      "description": "Model Qwen3.6 MoE berbobot terbuka untuk coding agentik dan penalaran multimodal, dengan 35B parameter total dan 3B aktif; nama API-nya Qwen3.6-Flash."
+    },
+    "ja": {
+      "description": "総35B・アクティブ3Bパラメータで、エージェント型コーディングとマルチモーダル推論に対応するQwen3.6 MoEオープンウェイトモデル。API名はQwen3.6-Flash。"
+    },
+    "ko": {
+      "description": "총 350억·활성 30억 매개변수로 에이전트 코딩과 멀티모달 추론을 지원하는 Qwen3.6 MoE 오픈 웨이트 모델이며 API 이름은 Qwen3.6-Flash입니다."
+    },
+    "pt": {
+      "description": "Modelo Qwen3.6 MoE de pesos abertos para programação agêntica e raciocínio multimodal, com 35B parâmetros totais e 3B ativos; oferecido na API como Qwen3.6-Flash."
+    },
+    "ru": {
+      "description": "MoE-модель Qwen3.6 с открытыми весами для агентного программирования и мультимодального рассуждения: 35 млрд параметров, 3 млрд активных; API-имя Qwen3.6-Flash."
+    },
+    "tr": {
+      "description": "35B toplam ve 3B etkin parametreyle aracılı kodlama ve çok modlu akıl yürütme için açık ağırlıklı Qwen3.6 MoE modeli; API adı Qwen3.6-Flash."
+    },
+    "zh-Hans": {
+      "description": "面向智能体编程和多模态推理的开放权重 Qwen3.6 MoE 模型，总参数 35B、激活参数 3B，API 名称为 Qwen3.6-Flash。"
+    },
+    "zh-Hant": {
+      "description": "面向智慧體程式設計和多模態推理的開放權重 Qwen3.6 MoE 模型，總參數 35B、啟用參數 3B，API 名稱為 Qwen3.6-Flash。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+      "title": "Qwen3.6-35B-A3B official release announcement",
+      "fields": ["name", "description", "docsUrl", "releaseDate", "capabilities"]
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "title": "Qwen3.6-35B-A3B official model card",
+      "fields": [
+        "size",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "platformUrls.huggingface"
+      ]
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "title": "Alibaba Cloud Model Studio model release list",
+      "fields": ["description", "releaseDate"]
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "title": "Alibaba Cloud Model Studio model pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/qwen3-6-35b-a3b/",
+      "title": "Artificial Analysis Qwen3.6-35B-A3B model page",
+      "fields": ["releaseDate", "platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-26",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://qwen.ai",
+  "docsUrl": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+  "vendor": "Alibaba",
+  "size": "35B (3B active)",
+  "contextWindow": 262144,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": { "metric": "inputTokens", "min": 1, "max": 256000 },
+            "rates": {
+              "input": 0.248,
+              "output": 1.485,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-04-16",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-6-35b-a3b/",
+    "openrouter": null
+  }
+}

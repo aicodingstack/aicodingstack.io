@@ -19,6 +19,24 @@
           },
           "uniqueItems": true
         },
+        "themeColor": {
+          "type": "object",
+          "description": "Curated default UI accent colors associated with this vendor",
+          "properties": {
+            "light": {
+              "type": "string",
+              "description": "Accent color rendered on the light theme",
+              "pattern": "^#[0-9A-Fa-f]{6}$"
+            },
+            "dark": {
+              "type": "string",
+              "description": "Accent color rendered on the dark theme",
+              "pattern": "^#[0-9A-Fa-f]{6}$"
+            }
+          },
+          "required": ["light", "dark"],
+          "additionalProperties": false
+        },
         "communityUrls": {
           "$ref": "./ref/community-urls.schema.json"
         }

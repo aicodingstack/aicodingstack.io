@@ -2,6 +2,10 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "xai",
   "name": "xAI",
+  "themeColor": {
+    "light": "#4A4A4A",
+    "dark": "#A3A3A3"
+  },
   "description": "AI company advancing scientific discovery and understanding of the universe, creator of Grok AI models and the world's largest AI supercomputer, Colossus.",
   "translations": {
     "zh-Hans": {

@@ -3,6 +3,10 @@
   "id": "mistral-ai",
   "name": "Mistral AI",
   "aliases": ["Mistral"],
+  "themeColor": {
+    "light": "#D95F00",
+    "dark": "#FF8A33"
+  },
   "description": "European AI company developing open-weight and commercial frontier models, including Codestral and Devstral coding models, developer tools, and deployment infrastructure.",
   "translations": {
     "de": {

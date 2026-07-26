@@ -52,7 +52,7 @@
   "websiteUrl": "https://www.anthropic.com",
   "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
   "vendor": "Anthropic",
-  "size": "Unknown",
+  "size": null,
   "contextWindow": 200000,
   "maxOutput": 32000,
   "tokenPricing": {

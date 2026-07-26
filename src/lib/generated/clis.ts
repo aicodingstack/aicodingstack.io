@@ -6,6 +6,7 @@
 
 import AmazonQDeveloperCli from '../../../manifests/clis/amazon-q-developer-cli.json'
 import AmpCli from '../../../manifests/clis/amp-cli.json'
+import AntigravityCli from '../../../manifests/clis/antigravity-cli.json'
 import AugmentCodeCli from '../../../manifests/clis/augment-code-cli.json'
 import ClaudeCodeCli from '../../../manifests/clis/claude-code-cli.json'
 import ClineCli from '../../../manifests/clis/cline-cli.json'
@@ -13,7 +14,6 @@ import CodebuddyCli from '../../../manifests/clis/codebuddy-cli.json'
 import CodexCli from '../../../manifests/clis/codex-cli.json'
 import ContinueCli from '../../../manifests/clis/continue-cli.json'
 import CursorCli from '../../../manifests/clis/cursor-cli.json'
-import DeepvCode from '../../../manifests/clis/deepv-code.json'
 import DroidCli from '../../../manifests/clis/droid-cli.json'
 import GeminiCli from '../../../manifests/clis/gemini-cli.json'
 import GithubCopilotCli from '../../../manifests/clis/github-copilot-cli.json'
@@ -36,6 +36,7 @@ import type { ManifestCLI } from '../../types/manifests'
 export const clisData = [
   AmazonQDeveloperCli,
   AmpCli,
+  AntigravityCli,
   AugmentCodeCli,
   ClaudeCodeCli,
   ClineCli,
@@ -43,7 +44,6 @@ export const clisData = [
   CodexCli,
   ContinueCli,
   CursorCli,
-  DeepvCode,
   DroidCli,
   GeminiCli,
   GithubCopilotCli,

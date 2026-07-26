@@ -1,0 +1,127 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "glm-4-5v",
+  "name": "GLM-4.5V",
+  "description": "A 106B visual reasoning MoE model with 12B active parameters for image, video, document, GUI, and web coding tasks.",
+  "translations": {
+    "de": {
+      "description": "Ein visuelles 106B-MoE-Modell mit 12B aktiven Parametern für Bild-, Video-, Dokument-, GUI- und Webprogrammieraufgaben."
+    },
+    "es": {
+      "description": "Un modelo MoE de razonamiento visual de 106B con 12B parámetros activos para tareas de imagen, vídeo, documentos, GUI y programación web."
+    },
+    "fr": {
+      "description": "Un modèle MoE de raisonnement visuel de 106B avec 12B paramètres actifs pour l’image, la vidéo, les documents, les GUI et le codage web."
+    },
+    "id": {
+      "description": "Model MoE penalaran visual 106B dengan 12B parameter aktif untuk tugas gambar, video, dokumen, GUI, dan coding web."
+    },
+    "ja": {
+      "description": "画像、動画、文書、GUI、Webコーディング向けの、総106B・活性12Bパラメータの視覚推論MoEモデルです。"
+    },
+    "ko": {
+      "description": "이미지, 동영상, 문서, GUI 및 웹 코딩 작업을 위한 총 106B, 활성 12B 파라미터의 시각 추론 MoE 모델입니다."
+    },
+    "pt": {
+      "description": "Um modelo MoE de raciocínio visual de 106B com 12B parâmetros ativos para imagem, vídeo, documentos, GUI e programação web."
+    },
+    "ru": {
+      "description": "Визуальная MoE-модель на 106B параметров с 12B активных параметров для изображений, видео, документов, GUI и веб-разработки."
+    },
+    "tr": {
+      "description": "Görüntü, video, belge, GUI ve web kodlama görevleri için 12B etkin parametreli 106B görsel akıl yürütme MoE modeli."
+    },
+    "zh-Hans": {
+      "description": "一款总参数 106B、激活参数 12B 的视觉推理 MoE 模型，面向图像、视频、文档、GUI 和网页编码任务。"
+    },
+    "zh-Hant": {
+      "description": "一款總參數 106B、啟用參數 12B 的視覺推理 MoE 模型，面向圖像、影片、文件、GUI 和網頁編碼任務。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.z.ai/guides/vlm/glm-4.5v",
+      "title": "GLM-4.5V model documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "maxOutput",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "title": "Z.ai model release notes",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "title": "Z.ai API pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://huggingface.co/zai-org/GLM-4.5V",
+      "title": "Official GLM-4.5V model card",
+      "fields": ["contextWindow", "platformUrls"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-26",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://z.ai",
+  "docsUrl": "https://docs.z.ai/guides/vlm/glm-4.5v",
+  "vendor": "Z.ai",
+  "size": "106B (12B active)",
+  "contextWindow": 65536,
+  "maxOutput": 16384,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 0.6,
+              "output": 1.8,
+              "cacheRead": 0.11,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2025-08-11",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/zai-org/GLM-4.5V",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/glm-4-5v",
+    "openrouter": null
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "glm-4-5-air",
+  "name": "GLM-4.5-Air",
+  "description": "A 106B MoE model with 12B active parameters, built for efficient agentic coding, reasoning, and tool use.",
+  "translations": {
+    "de": {
+      "description": "Ein 106B-MoE-Modell mit 12B aktiven Parametern für effizientes agentisches Programmieren, Schlussfolgern und den Einsatz von Werkzeugen."
+    },
+    "es": {
+      "description": "Un modelo MoE de 106B con 12B parámetros activos, creado para programación agéntica, razonamiento y uso de herramientas eficientes."
+    },
+    "fr": {
+      "description": "Un modèle MoE de 106B avec 12B paramètres actifs, conçu pour le codage agentique, le raisonnement et l’usage efficace d’outils."
+    },
+    "id": {
+      "description": "Model MoE 106B dengan 12B parameter aktif untuk coding agentik, penalaran, dan penggunaan alat yang efisien."
+    },
+    "ja": {
+      "description": "効率的なエージェント型コーディング、推論、ツール利用向けに設計された、総106B・活性12BパラメータのMoEモデルです。"
+    },
+    "ko": {
+      "description": "효율적인 에이전트 코딩, 추론 및 도구 사용을 위해 설계된 총 106B, 활성 12B 파라미터의 MoE 모델입니다."
+    },
+    "pt": {
+      "description": "Um modelo MoE de 106B com 12B parâmetros ativos, criado para programação agêntica, raciocínio e uso eficiente de ferramentas."
+    },
+    "ru": {
+      "description": "MoE-модель на 106B параметров с 12B активных параметров для эффективного агентного программирования, рассуждений и работы с инструментами."
+    },
+    "tr": {
+      "description": "Verimli aracı kodlama, akıl yürütme ve araç kullanımı için geliştirilmiş, 12B etkin parametreli 106B MoE modeli."
+    },
+    "zh-Hans": {
+      "description": "一款总参数 106B、激活参数 12B 的 MoE 模型，面向高效的智能体编码、推理和工具使用。"
+    },
+    "zh-Hant": {
+      "description": "一款總參數 106B、啟用參數 12B 的 MoE 模型，面向高效的智慧體編碼、推理和工具使用。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.z.ai/guides/llm/glm-4.5",
+      "title": "GLM-4.5 series documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "title": "Z.ai model release notes",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "title": "Z.ai API pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://huggingface.co/zai-org/GLM-4.5-Air",
+      "title": "Official GLM-4.5-Air model card",
+      "fields": ["size", "platformUrls"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-26",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://z.ai",
+  "docsUrl": "https://docs.z.ai/guides/llm/glm-4.5",
+  "vendor": "Z.ai",
+  "size": "106B (12B active)",
+  "contextWindow": 131072,
+  "maxOutput": 98304,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 0.2,
+              "output": 1.1,
+              "cacheRead": 0.03,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2025-07-28",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/zai-org/GLM-4.5-Air",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/glm-4-5-air",
+    "openrouter": null
+  }
+}

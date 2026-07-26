@@ -2,6 +2,10 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "google",
   "name": "Google",
+  "themeColor": {
+    "light": "#4285F4",
+    "dark": "#4285F4"
+  },
   "description": "A multinational technology company specializing in Internet-related services and products, including AI and machine learning.",
   "translations": {
     "zh-Hans": {

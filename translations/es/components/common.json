@@ -14,6 +14,8 @@
     "openMenu": "Abrir menú",
     "openSourceRank": "Clasificación de Código Abierto",
     "openSourceRankDesc": "Explora proyectos de código abierto de codificación con IA por estrellas de GitHub",
+    "modelIntelligenceIndex": "Índice de inteligencia de modelos",
+    "modelIntelligenceIndexDesc": "Sigue la inteligencia de los modelos entre lanzamientos",
     "ranking": "Clasificación",
     "toggleMenu": "Alternar menú"
   }

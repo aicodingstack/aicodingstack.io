@@ -14,6 +14,8 @@
     "openMenu": "Menüyü aç",
     "openSourceRank": "Açık Kaynak Sıralaması",
     "openSourceRankDesc": "GitHub yıldızlarına göre açık kaynaklı AI kodlama projelerini keşfedin",
+    "modelIntelligenceIndex": "Model Zekâsı Endeksi",
+    "modelIntelligenceIndexDesc": "Model zekâ puanlarını sürümler arasında izleyin",
     "ranking": "Sıralama",
     "toggleMenu": "Menüyü değiştir"
   }

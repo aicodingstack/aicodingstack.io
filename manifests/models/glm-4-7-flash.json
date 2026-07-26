@@ -1,0 +1,127 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "glm-4-7-flash",
+  "name": "GLM-4.7-Flash",
+  "description": "A lightweight 30B-A3B MoE model for fast coding, reasoning, and agentic tasks with a 200K context window.",
+  "translations": {
+    "de": {
+      "description": "Ein leichtes 30B-A3B-MoE-Modell für schnelles Programmieren, Schlussfolgern und agentische Aufgaben mit 200K Kontext."
+    },
+    "es": {
+      "description": "Un modelo MoE ligero 30B-A3B para programación, razonamiento y tareas agénticas rápidas con una ventana de contexto de 200K."
+    },
+    "fr": {
+      "description": "Un modèle MoE léger 30B-A3B pour le codage, le raisonnement et les tâches agentiques rapides avec un contexte de 200K."
+    },
+    "id": {
+      "description": "Model MoE ringan 30B-A3B untuk coding, penalaran, dan tugas agentik cepat dengan jendela konteks 200K."
+    },
+    "ja": {
+      "description": "200Kコンテキストを備え、高速なコーディング、推論、エージェントタスクに対応する軽量30B-A3B MoEモデルです。"
+    },
+    "ko": {
+      "description": "200K 컨텍스트 창에서 빠른 코딩, 추론 및 에이전트 작업을 지원하는 경량 30B-A3B MoE 모델입니다."
+    },
+    "pt": {
+      "description": "Um modelo MoE leve 30B-A3B para programação, raciocínio e tarefas agênticas rápidas com janela de contexto de 200K."
+    },
+    "ru": {
+      "description": "Лёгкая MoE-модель 30B-A3B для быстрого программирования, рассуждений и агентных задач с контекстом 200K."
+    },
+    "tr": {
+      "description": "200K bağlam penceresiyle hızlı kodlama, akıl yürütme ve aracı görevler için hafif 30B-A3B MoE modeli."
+    },
+    "zh-Hans": {
+      "description": "一款轻量级 30B-A3B MoE 模型，具备 200K 上下文窗口，面向高速编码、推理和智能体任务。"
+    },
+    "zh-Hant": {
+      "description": "一款輕量級 30B-A3B MoE 模型，具備 200K 上下文視窗，面向高速編碼、推理和智慧體任務。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.z.ai/guides/llm/glm-4.7",
+      "title": "GLM-4.7 series documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "title": "Z.ai model release notes",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "title": "Z.ai API pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://huggingface.co/zai-org/GLM-4.7-Flash",
+      "title": "Official GLM-4.7-Flash model card",
+      "fields": ["size", "platformUrls"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-26",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://z.ai",
+  "docsUrl": "https://docs.z.ai/guides/llm/glm-4.7",
+  "vendor": "Z.ai",
+  "size": "31.2B (3B active)",
+  "contextWindow": 204800,
+  "maxOutput": 131072,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-01-19",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/zai-org/GLM-4.7-Flash",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/glm-4-7-flash",
+    "openrouter": null
+  }
+}

@@ -77,6 +77,7 @@ export interface ManifestEntity {
   description: string
   translations: ManifestTranslations
   verified: boolean
+  deprecated?: boolean
   sources?: ManifestSource[]
   lastVerifiedAt?: string
   verifiedBy?: string | null
@@ -330,6 +331,10 @@ export interface ManifestProvider extends ManifestVendorEntity {
  */
 export interface ManifestVendor extends ManifestEntity {
   aliases?: string[]
+  themeColor?: {
+    light: string
+    dark: string
+  }
   communityUrls: ManifestCommunityUrls
 }
 

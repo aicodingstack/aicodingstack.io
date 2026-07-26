@@ -52,7 +52,7 @@
   "websiteUrl": "https://x.ai",
   "docsUrl": "https://docs.x.ai/docs/models/grok-code-fast-1",
   "vendor": "xAI",
-  "size": "Unknown",
+  "size": null,
   "contextWindow": 256000,
   "maxOutput": 10000,
   "tokenPricing": {

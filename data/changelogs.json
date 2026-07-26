@@ -2,6 +2,1963 @@
   "version": 1,
   "entries": [
     {
+      "id": "2026-07-26-manifest-update",
+      "date": "2026-07-26",
+      "summary": "77 manifest records changed",
+      "changes": [
+        {
+          "category": "clis",
+          "id": "antigravity-cli",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "deepv-code",
+          "change": "removed",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "gemini-cli",
+          "change": "updated",
+          "fields": [
+            "latestVersion",
+            "pricing",
+            "relatedProducts",
+            "verified",
+            "confidence",
+            "deprecated",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "grok-build",
+          "change": "updated",
+          "fields": [
+            "communityUrls",
+            "githubUrl",
+            "lastVerifiedAt",
+            "latestVersion",
+            "resourceUrls",
+            "sources"
+          ]
+        },
+        {
+          "category": "ides",
+          "id": "antigravity",
+          "change": "updated",
+          "fields": ["relatedProducts", "familyId"]
+        },
+        {
+          "category": "ides",
+          "id": "codeflicker",
+          "change": "removed",
+          "fields": [
+            "communityUrls",
+            "description",
+            "docsUrl",
+            "githubUrl",
+            "id",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "translations",
+            "vendor",
+            "verified",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "claude-fable-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-haiku-4-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-mythos-5",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "claude-opus-4",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-opus-4-1",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-opus-4-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-opus-4-8",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-sonnet-4",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-sonnet-4-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-sonnet-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "codestral-2405",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "codestral-2501",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "codestral-2508",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "composer",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "deepseek-coder-v2-0724",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "devstral-medium-1-0",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "devstral-small-1-0",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "devstral-small-1-1",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gemini-2-0-flash-lite",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-1-flash-lite",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-1-pro-preview",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-5-flash",
+          "change": "updated",
+          "fields": ["lastVerifiedAt", "lifecycle", "size"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-5-flash-lite",
+          "change": "added",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-6-flash",
+          "change": "added",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-flash",
+          "change": "updated",
+          "fields": ["lastVerifiedAt", "lifecycle", "size"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-pro",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "glm-4-5-air",
+          "change": "added",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "glm-4-5v",
+          "change": "added",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "glm-4-7-flash",
+          "change": "added",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "glm-5-turbo",
+          "change": "added",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "glm-5v-turbo",
+          "change": "added",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gpt-4-1",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-4o",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-1",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-1-codex",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-1-codex-max",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-2",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-2-pro",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-4-pro",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-5-pro",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-6-luna",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-6-sol",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-6-terra",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-codex",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-pro",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "grok-build-0-1",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "grok-code-fast-1",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "kat-coder-pro-v1",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "kimi-dev-72b",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "qwen3-5-plus",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "qwen3-6-27b",
+          "change": "added",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "qwen3-6-35b-a3b",
+          "change": "added",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "qwen3-6-max-preview",
+          "change": "added",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "deprecated",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "qwen3-coder-flash",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "qwen3-coder-plus",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "qwen3-max-2026-01-23",
+          "change": "removed",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "providers",
+          "id": "kwaikatonai",
+          "change": "removed",
+          "fields": [
+            "applyKeyUrl",
+            "communityUrls",
+            "description",
+            "docsUrl",
+            "id",
+            "name",
+            "platformUrls",
+            "translations",
+            "type",
+            "vendor",
+            "verified",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "alibaba",
+          "change": "updated",
+          "fields": ["themeColor"]
+        },
+        {
+          "category": "vendors",
+          "id": "anthropic",
+          "change": "updated",
+          "fields": ["themeColor"]
+        },
+        {
+          "category": "vendors",
+          "id": "deepseek",
+          "change": "updated",
+          "fields": ["themeColor"]
+        },
+        {
+          "category": "vendors",
+          "id": "google",
+          "change": "updated",
+          "fields": ["themeColor"]
+        },
+        {
+          "category": "vendors",
+          "id": "meta",
+          "change": "updated",
+          "fields": ["themeColor"]
+        },
+        {
+          "category": "vendors",
+          "id": "minimax",
+          "change": "updated",
+          "fields": ["themeColor"]
+        },
+        {
+          "category": "vendors",
+          "id": "mistral-ai",
+          "change": "updated",
+          "fields": ["themeColor"]
+        },
+        {
+          "category": "vendors",
+          "id": "moonshot",
+          "change": "updated",
+          "fields": ["themeColor"]
+        },
+        {
+          "category": "vendors",
+          "id": "openai",
+          "change": "updated",
+          "fields": ["themeColor"]
+        },
+        {
+          "category": "vendors",
+          "id": "orionstar",
+          "change": "removed",
+          "fields": [
+            "communityUrls",
+            "description",
+            "id",
+            "name",
+            "translations",
+            "verified",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "streamlake",
+          "change": "removed",
+          "fields": [
+            "aliases",
+            "communityUrls",
+            "description",
+            "id",
+            "name",
+            "translations",
+            "verified",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "xai",
+          "change": "updated",
+          "fields": ["themeColor"]
+        },
+        {
+          "category": "vendors",
+          "id": "z-ai",
+          "change": "updated",
+          "fields": ["themeColor"]
+        }
+      ]
+    },
+    {
+      "id": "2026-07-25-manifest-update",
+      "date": "2026-07-25",
+      "summary": "33 manifest records changed",
+      "changes": [
+        {
+          "category": "clis",
+          "id": "antigravity-cli",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "gemini-cli",
+          "change": "updated",
+          "fields": [
+            "latestVersion",
+            "pricing",
+            "relatedProducts",
+            "verified",
+            "confidence",
+            "deprecated",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "grok-build",
+          "change": "updated",
+          "fields": [
+            "communityUrls",
+            "githubUrl",
+            "lastVerifiedAt",
+            "latestVersion",
+            "resourceUrls",
+            "sources"
+          ]
+        },
+        {
+          "category": "ides",
+          "id": "antigravity",
+          "change": "updated",
+          "fields": ["relatedProducts", "familyId"]
+        },
+        {
+          "category": "models",
+          "id": "claude-fable-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-haiku-4-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-opus-4",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-opus-4-1",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-opus-4-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-opus-4-8",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-sonnet-4",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-sonnet-4-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-sonnet-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "composer",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-1-flash-lite",
+          "change": "updated",
+          "fields": ["lastVerifiedAt", "lifecycle", "size"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-1-pro-preview",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-5-flash",
+          "change": "updated",
+          "fields": ["lastVerifiedAt", "lifecycle", "size"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-5-flash-lite",
+          "change": "added",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-6-flash",
+          "change": "added",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-flash",
+          "change": "updated",
+          "fields": ["lastVerifiedAt", "lifecycle", "size"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-pro",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-4-1",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-4o",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-1",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-1-codex",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-2",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-6-luna",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-6-sol",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-6-terra",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-codex",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "grok-code-fast-1",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "kat-coder-pro-v1",
+          "change": "updated",
+          "fields": ["size"]
+        }
+      ]
+    },
+    {
+      "id": "2026-07-22-manifest-update",
+      "date": "2026-07-22",
+      "summary": "33 manifest records changed",
+      "changes": [
+        {
+          "category": "clis",
+          "id": "antigravity-cli",
+          "change": "added",
+          "fields": [
+            "communityUrls",
+            "confidence",
+            "description",
+            "docsUrl",
+            "familyId",
+            "githubUrl",
+            "id",
+            "lastVerifiedAt",
+            "latestVersion",
+            "license",
+            "name",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "sources",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "gemini-cli",
+          "change": "updated",
+          "fields": [
+            "latestVersion",
+            "pricing",
+            "relatedProducts",
+            "verified",
+            "confidence",
+            "deprecated",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "grok-build",
+          "change": "updated",
+          "fields": [
+            "communityUrls",
+            "githubUrl",
+            "lastVerifiedAt",
+            "latestVersion",
+            "resourceUrls",
+            "sources"
+          ]
+        },
+        {
+          "category": "ides",
+          "id": "antigravity",
+          "change": "updated",
+          "fields": ["relatedProducts", "familyId"]
+        },
+        {
+          "category": "models",
+          "id": "claude-fable-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-haiku-4-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-opus-4",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-opus-4-1",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-opus-4-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-opus-4-8",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-sonnet-4",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-sonnet-4-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "claude-sonnet-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "composer",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-1-flash-lite",
+          "change": "updated",
+          "fields": ["lastVerifiedAt", "lifecycle", "size"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-1-pro-preview",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-5-flash",
+          "change": "updated",
+          "fields": ["lastVerifiedAt", "lifecycle", "size"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-5-flash-lite",
+          "change": "added",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-6-flash",
+          "change": "added",
+          "fields": [
+            "benchmarks",
+            "capabilities",
+            "confidence",
+            "contextWindow",
+            "description",
+            "docsUrl",
+            "id",
+            "inputModalities",
+            "knowledgeCutoff",
+            "lastVerifiedAt",
+            "lifecycle",
+            "maxOutput",
+            "name",
+            "outputModalities",
+            "platformUrls",
+            "releaseDate",
+            "size",
+            "sources",
+            "tokenPricing",
+            "translations",
+            "vendor",
+            "verified",
+            "verifiedBy",
+            "websiteUrl"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-flash",
+          "change": "updated",
+          "fields": ["lastVerifiedAt", "lifecycle", "size"]
+        },
+        {
+          "category": "models",
+          "id": "gemini-3-pro",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-4-1",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-4o",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-1",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-1-codex",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-2",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-6-luna",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-6-sol",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-6-terra",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-codex",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "grok-code-fast-1",
+          "change": "updated",
+          "fields": ["size"]
+        },
+        {
+          "category": "models",
+          "id": "kat-coder-pro-v1",
+          "change": "updated",
+          "fields": ["size"]
+        }
+      ]
+    },
+    {
       "id": "2026-07-21-url-validation",
       "date": "2026-07-21",
       "summary": "Normalized and repaired manifest URLs flagged by scheduled validation",

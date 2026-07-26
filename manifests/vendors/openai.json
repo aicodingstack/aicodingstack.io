@@ -2,6 +2,10 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "openai",
   "name": "OpenAI",
+  "themeColor": {
+    "light": "#10A37F",
+    "dark": "#10A37F"
+  },
   "description": "A leading AI research company focused on developing safe and beneficial artificial general intelligence.",
   "translations": {
     "zh-Hans": {

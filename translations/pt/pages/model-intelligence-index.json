@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Índice de inteligência dos modelos",
+    "description": "Acompanhe as pontuações de inteligência dos modelos de programação ao longo do tempo, agrupadas por fornecedor e série.",
+    "keywords": "índice de inteligência dos modelos, cronologia de modelos de IA, benchmarks de modelos de programação, histórico de lançamentos"
+  },
+  "title": "Índice de inteligência dos modelos",
+  "description": "Explore como a inteligência dos modelos de programação muda entre lançamentos.",
+  "releaseDate": "Data de lançamento",
+  "chart": {
+    "title": "Capacidade ao longo do tempo",
+    "axisHint": "Data de lançamento × Index",
+    "modelCount": "{count} modelos no catálogo",
+    "indexAxis": "Intelligence Index"
+  },
+  "filter": {
+    "label": "Filtrar por fornecedor",
+    "showAll": "Mostrar todos"
+  },
+  "list": {
+    "title": "Índice de modelos",
+    "description": "Ordene os modelos por data de lançamento ou pontuação do Index. As barras usam a mesma escala.",
+    "index": "Índice",
+    "barLabel": "Índice de {model}: {score}"
+  },
+  "source": {
+    "attribution": "Artificial Analysis Intelligence Index v{version}, consultado em {date}. Fonte:",
+    "estimated": "* assinala estimativas apresentadas pela Artificial Analysis. As pontuações correspondem à configuração indicada.",
+    "methodology": "Metodologia"
+  }
+}
