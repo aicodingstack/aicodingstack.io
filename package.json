@@ -58,9 +58,9 @@
     "cmdk": "^1.1.1",
     "lucide-react": "^0.563.0",
     "next": "^16.2.10",
-    "next-intl": "^4.13.2",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
+    "next-intl": "^4.13.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
     "recharts": "^3.9.2"
   },
   "devDependencies": {
