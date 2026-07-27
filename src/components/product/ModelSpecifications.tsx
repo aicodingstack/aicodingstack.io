@@ -33,6 +33,8 @@ export function ModelSpecifications({ model }: ModelSpecificationsProps) {
   const tShared = useTranslations('shared')
   const { conversion } = useCurrency()
   const hasContent = model.size || model.contextWindow || model.maxOutput || model.tokenPricing
+  const currencyNames = new Intl.DisplayNames(locale, { type: 'currency' })
+  const formatCurrencyName = (currency: string) => currencyNames.of(currency) ?? currency
 
   const formatCondition = (condition: ManifestTokenPricingCondition | null): string | null => {
     if (!condition) return null
@@ -128,8 +130,8 @@ export function ModelSpecifications({ model }: ModelSpecificationsProps) {
                           </span>
                           <span>
                             {offer.currency === displayCurrency
-                              ? displayCurrency
-                              : `${offer.currency} → ${displayCurrency}`}
+                              ? formatCurrencyName(displayCurrency)
+                              : `${formatCurrencyName(offer.currency)} → ${formatCurrencyName(displayCurrency)}`}
                           </span>
                           {historical && <span>{tShared('modelPricing.historical')}</span>}
                           {offer.effectiveTo && (

@@ -14,8 +14,10 @@
     "openMenu": "Buka menu",
     "openSourceRank": "Peringkat Open Source",
     "openSourceRankDesc": "Jelajahi proyek coding AI open source berdasarkan bintang GitHub",
-    "modelIntelligenceIndex": "Indeks Kecerdasan Model",
-    "modelIntelligenceIndexDesc": "Lacak kecerdasan model di setiap rilis",
+    "modelIntelligenceIndex": "Indeks Kecerdasan Model Komprehensif",
+    "modelIntelligenceIndexDesc": "Lacak kecerdasan komprehensif model di setiap rilis",
+    "modelPriceIntelligenceIndex": "Harga Model × Kecerdasan",
+    "modelPriceIntelligenceIndexDesc": "Bandingkan model populer berdasarkan harga API dan kecerdasan",
     "ranking": "Peringkat",
     "toggleMenu": "Toggle menu"
   }

@@ -1,0 +1,104 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "mimo-v2-5",
+  "name": "MiMo-V2.5",
+  "description": "The Xiaomi open-weight 310B MoE model for multimodal understanding, long-context reasoning, and agentic workflows across text, image, video, and audio.",
+  "translations": {
+    "de": {
+      "description": "Das offene 310B-MoE-Modell von Xiaomi für multimodales Verstehen, Langkontext-Schlussfolgern und agentische Abläufe mit Text, Bild, Video und Audio."
+    },
+    "es": {
+      "description": "Modelo MoE abierto de Xiaomi con 310B parámetros para comprensión multimodal, razonamiento de contexto largo y agentes con texto, imagen, vídeo y audio."
+    },
+    "fr": {
+      "description": "Modèle MoE ouvert de Xiaomi à 310B paramètres pour la compréhension multimodale, le raisonnement long contexte et les agents sur texte, image, vidéo et audio."
+    },
+    "id": {
+      "description": "Model MoE berbobot terbuka Xiaomi dengan 310B parameter untuk pemahaman multimodal, penalaran konteks panjang, dan alur agentik berbasis teks, gambar, video, dan audio."
+    },
+    "ja": {
+      "description": "テキスト、画像、動画、音声のマルチモーダル理解、長文脈推論、エージェントワークフローに対応するXiaomiの310BオープンウェイトMoEモデル。"
+    },
+    "ko": {
+      "description": "텍스트, 이미지, 비디오와 오디오의 멀티모달 이해, 장문맥 추론과 에이전트 워크플로를 위한 Xiaomi의 310B 오픈 웨이트 MoE 모델입니다."
+    },
+    "pt": {
+      "description": "Modelo MoE aberto da Xiaomi com 310B parâmetros para compreensão multimodal, raciocínio de contexto longo e agentes com texto, imagem, vídeo e áudio."
+    },
+    "ru": {
+      "description": "MoE-модель Xiaomi с открытыми весами и 310 млрд параметров для мультимодального понимания, длинного контекста и агентных процессов с текстом, изображениями, видео и аудио."
+    },
+    "tr": {
+      "description": "Metin, görüntü, video ve ses üzerinde çok modlu anlama, uzun bağlamlı akıl yürütme ve aracı iş akışları için Xiaomi'nin 310B açık ağırlıklı MoE modeli."
+    },
+    "zh-Hans": {
+      "description": "Xiaomi 面向文本、图像、视频和音频多模态理解、长上下文推理及智能体工作流的 310B 开放权重 MoE 模型。"
+    },
+    "zh-Hant": {
+      "description": "Xiaomi 面向文字、圖像、影片和音訊多模態理解、長上下文推理及智慧體工作流的 310B 開放權重 MoE 模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+      "title": "MiMo-V2.5 official model card",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "platformUrls.huggingface"
+      ]
+    },
+    {
+      "url": "https://mimo.xiaomi.com/mimo-v2-5",
+      "title": "Xiaomi MiMo-V2.5 official release announcement",
+      "fields": ["releaseDate"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/mimo-v2-5-0424",
+      "title": "Artificial Analysis MiMo-V2.5 model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-27",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://mimo.xiaomi.com/",
+  "docsUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+  "vendor": "Xiaomi",
+  "size": "310B (15B active)",
+  "contextWindow": 1048576,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "unavailable",
+    "reason": "official-price-not-published",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "releaseDate": "2026-04-22",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "audio", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/mimo-v2-5-0424",
+    "openrouter": null
+  }
+}

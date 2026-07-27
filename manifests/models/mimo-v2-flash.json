@@ -1,0 +1,100 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "mimo-v2-flash",
+  "name": "MiMo-V2-Flash",
+  "description": "The Xiaomi open-weight 309B MoE language model for efficient reasoning, coding, and agentic tasks, with 15B active parameters and 256K context.",
+  "translations": {
+    "de": {
+      "description": "Das offene 309B-MoE-Sprachmodell von Xiaomi für effizientes Schlussfolgern, Coding und agentische Aufgaben mit 15B aktiven Parametern und 256K Kontext."
+    },
+    "es": {
+      "description": "Modelo de lenguaje MoE abierto de Xiaomi con 309B parámetros para razonamiento, programación y agentes eficientes, con 15B activos y contexto de 256K."
+    },
+    "fr": {
+      "description": "Modèle de langage MoE ouvert de Xiaomi à 309B paramètres pour le raisonnement, le codage et les agents efficaces, avec 15B actifs et un contexte de 256K."
+    },
+    "id": {
+      "description": "Model bahasa MoE berbobot terbuka Xiaomi dengan 309B parameter untuk penalaran, coding, dan tugas agentik yang efisien, dengan 15B aktif dan konteks 256K."
+    },
+    "ja": {
+      "description": "効率的な推論、コーディング、エージェントタスク向けのXiaomi製309BオープンウェイトMoE言語モデル。15Bパラメータを使用し、256K文脈に対応。"
+    },
+    "ko": {
+      "description": "효율적인 추론, 코딩과 에이전트 작업을 위한 Xiaomi의 309B 오픈 웨이트 MoE 언어 모델로, 15B 활성 매개변수와 256K 컨텍스트를 제공합니다."
+    },
+    "pt": {
+      "description": "Modelo de linguagem MoE aberto da Xiaomi com 309B parâmetros para raciocínio, programação e agentes eficientes, com 15B ativos e contexto de 256K."
+    },
+    "ru": {
+      "description": "MoE-модель Xiaomi с открытыми весами и 309 млрд параметров для эффективных рассуждений, программирования и агентов, с 15 млрд активных параметров и контекстом 256K."
+    },
+    "tr": {
+      "description": "Verimli akıl yürütme, kodlama ve aracı görevler için Xiaomi'nin 309B açık ağırlıklı MoE dil modeli; 15B etkin parametre ve 256K bağlam sunar."
+    },
+    "zh-Hans": {
+      "description": "Xiaomi 面向高效推理、编程和智能体任务的 309B 开放权重 MoE 语言模型，激活参数 15B，上下文 256K。"
+    },
+    "zh-Hant": {
+      "description": "Xiaomi 面向高效推理、程式設計和智慧體任務的 309B 開放權重 MoE 語言模型，啟用參數 15B，上下文 256K。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash",
+      "title": "MiMo-V2-Flash official model card",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "releaseDate",
+        "platformUrls.huggingface"
+      ]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/mimo-v2-flash",
+      "title": "Artificial Analysis MiMo-V2-Flash model page",
+      "fields": ["releaseDate", "platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-27",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://mimo.xiaomi.com/",
+  "docsUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash",
+  "vendor": "Xiaomi",
+  "size": "309B (15B active)",
+  "contextWindow": 262144,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "unavailable",
+    "reason": "official-price-not-published",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "releaseDate": "2025-12-16",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/mimo-v2-flash",
+    "openrouter": null
+  }
+}

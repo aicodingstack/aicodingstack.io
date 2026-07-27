@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-26",
+  "asOf": "2026-07-27",
   "thresholds": {
     "models": 30,
     "providers": 30,
@@ -10,14 +10,14 @@
     "vendors": 90
   },
   "summary": {
-    "totalRecords": 231,
-    "recordsWithSources": 140,
-    "verifiedRecords": 126,
-    "provenanceComplete": 109,
+    "totalRecords": 242,
+    "recordsWithSources": 151,
+    "verifiedRecords": 137,
+    "provenanceComplete": 120,
     "staleVerifiedRecords": 0,
-    "translationPlaceholderValues": 1520,
+    "translationPlaceholderValues": 1262,
     "danglingRelationships": 0,
-    "modelBenchmarkCoverage": 10.5,
+    "modelBenchmarkCoverage": 9.6,
     "productsWithPricing": 66,
     "productRecords": 67,
     "errors": 0,
@@ -50,9 +50,9 @@
       "stale": 0
     },
     "models": {
-      "total": 113,
-      "verified": 112,
-      "provenanceComplete": 100,
+      "total": 123,
+      "verified": 122,
+      "provenanceComplete": 110,
       "stale": 0
     },
     "providers": {
@@ -62,67 +62,67 @@
       "stale": 0
     },
     "vendors": {
-      "total": 39,
-      "verified": 3,
-      "provenanceComplete": 1,
+      "total": 40,
+      "verified": 4,
+      "provenanceComplete": 2,
       "stale": 0
     }
   },
   "translationsByLocale": {
     "de": {
-      "totalStrings": 383,
-      "matchingEnglish": 133,
-      "matchingEnglishPercent": 34.7
+      "totalStrings": 410,
+      "matchingEnglish": 113,
+      "matchingEnglishPercent": 27.6
     },
     "es": {
-      "totalStrings": 383,
-      "matchingEnglish": 127,
-      "matchingEnglishPercent": 33.2
+      "totalStrings": 410,
+      "matchingEnglish": 104,
+      "matchingEnglishPercent": 25.4
     },
     "fr": {
-      "totalStrings": 383,
-      "matchingEnglish": 137,
-      "matchingEnglishPercent": 35.8
+      "totalStrings": 410,
+      "matchingEnglish": 115,
+      "matchingEnglishPercent": 28
     },
     "id": {
-      "totalStrings": 383,
-      "matchingEnglish": 171,
-      "matchingEnglishPercent": 44.6
+      "totalStrings": 410,
+      "matchingEnglish": 149,
+      "matchingEnglishPercent": 36.3
     },
     "ja": {
-      "totalStrings": 383,
-      "matchingEnglish": 123,
-      "matchingEnglishPercent": 32.1
+      "totalStrings": 410,
+      "matchingEnglish": 107,
+      "matchingEnglishPercent": 26.1
     },
     "ko": {
-      "totalStrings": 383,
-      "matchingEnglish": 143,
-      "matchingEnglishPercent": 37.3
+      "totalStrings": 410,
+      "matchingEnglish": 115,
+      "matchingEnglishPercent": 28
     },
     "pt": {
-      "totalStrings": 383,
-      "matchingEnglish": 136,
-      "matchingEnglishPercent": 35.5
+      "totalStrings": 410,
+      "matchingEnglish": 114,
+      "matchingEnglishPercent": 27.8
     },
     "ru": {
-      "totalStrings": 383,
-      "matchingEnglish": 150,
-      "matchingEnglishPercent": 39.2
+      "totalStrings": 410,
+      "matchingEnglish": 124,
+      "matchingEnglishPercent": 30.2
     },
     "tr": {
-      "totalStrings": 383,
-      "matchingEnglish": 152,
-      "matchingEnglishPercent": 39.7
+      "totalStrings": 410,
+      "matchingEnglish": 125,
+      "matchingEnglishPercent": 30.5
     },
     "zh-Hans": {
-      "totalStrings": 383,
-      "matchingEnglish": 125,
-      "matchingEnglishPercent": 32.6
+      "totalStrings": 410,
+      "matchingEnglish": 98,
+      "matchingEnglishPercent": 23.9
     },
     "zh-Hant": {
-      "totalStrings": 383,
-      "matchingEnglish": 123,
-      "matchingEnglishPercent": 32.1
+      "totalStrings": 410,
+      "matchingEnglish": 98,
+      "matchingEnglishPercent": 23.9
     }
   },
   "issues": [

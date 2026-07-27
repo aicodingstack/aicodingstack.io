@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Preço do modelo × Inteligência",
+    "description": "Compare modelos de IA populares por preço de tokens da API e índice de inteligência.",
+    "keywords": "comparação de preços de IA, inteligência de modelos, preços API LLM, preço desempenho"
+  },
+  "title": "Preço do modelo × Inteligência",
+  "description": "Compare modelos populares por preço de API e capacidade de inteligência.",
+  "chart": {
+    "title": "Capacidade em cada faixa de preço",
+    "axisHint": "Preço combinado da API × Índice de inteligência",
+    "modelCount": "{count} modelos selecionados",
+    "priceAxis": "USD por 1 milhão de tokens · 90% entrada + 10% saída",
+    "indexAxis": "Índice de inteligência",
+    "scale": {
+      "label": "Escala de preços",
+      "linear": "Linear",
+      "logarithmic": "Logarítmica"
+    }
+  },
+  "filter": {
+    "label": "Filtrar por fornecedor",
+    "showAll": "Mostrar todos"
+  },
+  "list": {
+    "title": "Modelos selecionados",
+    "description": "Preços de API comparáveis em USD por milhão de tokens. Ordene por preço combinado ou índice de inteligência.",
+    "blended": "Preço combinado",
+    "priceUnit": "USD / 1 milhão de tokens",
+    "index": "Índice"
+  },
+  "source": {
+    "attribution": "Índice de inteligência da Artificial Analysis v{version}, observado em {date}. Fonte:",
+    "pricing": "Os preços usam as fontes oficiais de API do catálogo; quando não há um preço próprio comparável em USD, são complementados por ofertas de API comparáveis acompanhadas pela Artificial Analysis. O preço combinado pondera entrada em {input}% e saída em {output}%; descontos de cache não estão incluídos.",
+    "methodology": "Metodologia do índice de inteligência",
+    "fallbackPricingSources": "Fontes de preços complementares:"
+  }
+}

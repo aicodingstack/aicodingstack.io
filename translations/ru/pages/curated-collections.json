@@ -1,16 +1,16 @@
 {
   "articles": {
-    "description": "Must-read articles about AI coding from industry leaders"
+    "description": "Обязательные к прочтению статьи об ИИ-разработке от лидеров отрасли"
   },
   "meta": {
-    "description": "Handpicked resources, specifications, protocols, and tools for AI coding. Featured articles, standards, and ecosystem utilities.",
-    "title": "Curated Collections - Essential AI Coding Resources"
+    "description": "Отобранные ресурсы, спецификации, протоколы и инструменты для ИИ-разработки. Избранные статьи, стандарты и утилиты экосистемы.",
+    "title": "Избранные коллекции — Основные ресурсы для ИИ-разработки"
   },
   "specifications": {
-    "description": "Essential standards and protocols for modern software development"
+    "description": "Основные стандарты и протоколы современной разработки ПО"
   },
-  "subtitle": "Handpicked resources, specifications, protocols, and tools for AI coding",
+  "subtitle": "Отобранные ресурсы, спецификации, протоколы и инструменты для ИИ-разработки",
   "tools": {
-    "description": "Curated tools and utilities for AI coding workflows"
+    "description": "Отобранные инструменты и утилиты для рабочих процессов ИИ-разработки"
   }
 }

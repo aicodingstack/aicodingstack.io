@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Harga Model × Kecerdasan",
+    "description": "Bandingkan model AI populer berdasarkan harga token API dan skor Indeks Kecerdasan.",
+    "keywords": "perbandingan harga model AI, kecerdasan model, harga API LLM, harga kinerja"
+  },
+  "title": "Harga Model × Kecerdasan",
+  "description": "Lihat perbandingan model populer berdasarkan harga API dan kemampuan kecerdasan.",
+  "chart": {
+    "title": "Kemampuan pada setiap harga",
+    "axisHint": "Harga API gabungan × Indeks Kecerdasan",
+    "modelCount": "{count} model terpilih",
+    "priceAxis": "USD per 1 juta token · 90% input + 10% output",
+    "indexAxis": "Indeks Kecerdasan",
+    "scale": {
+      "label": "Skala harga",
+      "linear": "Linear",
+      "logarithmic": "Logaritmik"
+    }
+  },
+  "filter": {
+    "label": "Filter menurut vendor",
+    "showAll": "Tampilkan semua"
+  },
+  "list": {
+    "title": "Model terpilih",
+    "description": "Harga API USD yang sebanding per satu juta token. Urutkan menurut harga gabungan atau Indeks Kecerdasan.",
+    "blended": "Harga gabungan",
+    "priceUnit": "USD / 1 juta token",
+    "index": "Indeks"
+  },
+  "source": {
+    "attribution": "Indeks Kecerdasan Artificial Analysis v{version}, diamati {date}. Sumber:",
+    "pricing": "Harga menggunakan sumber API resmi dalam katalog; bila harga USD pihak pertama yang sebanding tidak tersedia, data dilengkapi dengan penawaran API sebanding yang dilacak Artificial Analysis. Harga gabungan memberi bobot input {input}% dan output {output}%; diskon cache tidak disertakan.",
+    "methodology": "Metodologi indeks kecerdasan",
+    "fallbackPricingSources": "Sumber harga tambahan:"
+  }
+}

@@ -52,7 +52,7 @@ export interface PageTranslationRequirement {
  * Registry of all pages and their translation requirements
  */
 export const PAGE_TRANSLATION_REQUIREMENTS: Record<string, PageTranslationRequirement> = {
-  // ========== Static Pages with meta object (8个) ==========
+  // ========== Static Pages with meta object (9个) ==========
   '/': {
     namespace: 'pages.home',
     requiredKeys: REQUIRED_TRANSLATION_KEYS.staticWithMeta,
@@ -85,6 +85,11 @@ export const PAGE_TRANSLATION_REQUIREMENTS: Record<string, PageTranslationRequir
   },
   '/model-intelligence-index': {
     namespace: 'pages.modelIntelligenceIndex',
+    requiredKeys: REQUIRED_TRANSLATION_KEYS.staticWithMeta,
+    type: 'staticWithMeta',
+  },
+  '/model-price-intelligence-index': {
+    namespace: 'pages.modelPriceIntelligenceIndex',
     requiredKeys: REQUIRED_TRANSLATION_KEYS.staticWithMeta,
     type: 'staticWithMeta',
   },
@@ -213,8 +218,8 @@ export const PAGE_TRANSLATION_REQUIREMENTS: Record<string, PageTranslationRequir
   },
 }
 
-// 总计: 29 个页面的翻译需求
-// - 有 meta 对象的静态页面: 7 个
+// 总计: 31 个页面的翻译需求
+// - 有 meta 对象的静态页面: 9 个
 // - Articles & Docs 列表页: 2 个
 // - 分类列表页: 6 个
 // - 详情页: 8 个

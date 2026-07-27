@@ -1,31 +1,32 @@
 {
   "meta": {
-    "title": "モデル知能指数",
-    "description": "コーディングモデルの知能スコアの推移を、ベンダーとモデル系列ごとに追跡します。",
-    "keywords": "モデル知能指数, AIモデル年表, コーディングモデルベンチマーク, モデルリリース履歴"
+    "title": "モデル総合知能指数",
+    "description": "AIモデルの総合知能スコアの推移を、ベンダーとモデル系列ごとに追跡します。",
+    "keywords": "モデル総合知能指数, AIモデル年表, AI総合ベンチマーク, モデルリリース履歴"
   },
-  "title": "モデル知能指数",
-  "description": "リリースごとのコーディングモデルの知能の変化を確認できます。",
+  "title": "モデル総合知能指数",
+  "description": "リリースごとのモデルの総合知能の変化を確認できます。",
   "releaseDate": "リリース日",
   "chart": {
     "title": "能力の推移",
-    "axisHint": "リリース日 × Index",
+    "axisHint": "リリース日 × 指数",
     "modelCount": "カタログ内のモデル {count} 件",
-    "indexAxis": "Intelligence Index"
+    "indexAxis": "総合知能指数"
   },
   "filter": {
     "label": "ベンダーで絞り込む",
-    "showAll": "すべて表示"
+    "showAll": "すべて表示",
+    "seriesLabel": "シリーズで絞り込む"
   },
   "list": {
     "title": "モデル指数",
-    "description": "モデルをリリース日または Index スコアで並べ替えられます。バーの長さは同一スケールです。",
-    "index": "Index",
-    "barLabel": "{model} の Index：{score}"
+    "description": "モデルをリリース日または指数スコアで並べ替えられます。バーの長さは同一スケールです。",
+    "index": "指数",
+    "barLabel": "{model} の指数：{score}"
   },
   "source": {
-    "attribution": "Artificial Analysis Intelligence Index v{version}、{date} 時点。出典：",
-    "estimated": "* は Artificial Analysis が表示する推定値です。スコアは記載されたモデル構成に対応します。",
+    "attribution": "Artificial Analysis 総合知能指数 v{version}、{date} 時点。出典：",
+    "estimated": "* は Artificial Analysis が表示する推定値です。スコアは記載されたモデル構成と総合知能指数に対応し、コーディング指数ではありません。",
     "methodology": "評価方法"
   }
 }

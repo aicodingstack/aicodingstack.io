@@ -1,16 +1,16 @@
 {
   "articles": {
-    "description": "Must-read articles about AI coding from industry leaders"
+    "description": "업계 리더들이 쓴 AI 코딩 필독 기사"
   },
   "meta": {
-    "description": "Handpicked resources, specifications, protocols, and tools for AI coding. Featured articles, standards, and ecosystem utilities.",
-    "title": "Curated Collections - Essential AI Coding Resources"
+    "description": "AI 코딩을 위해 엄선한 리소스, 사양, 프로토콜 및 도구입니다. 주요 기사, 표준 및 생태계 유틸리티를 제공합니다.",
+    "title": "엄선된 컬렉션 - AI 코딩 필수 리소스"
   },
   "specifications": {
-    "description": "Essential standards and protocols for modern software development"
+    "description": "현대 소프트웨어 개발을 위한 필수 표준 및 프로토콜"
   },
-  "subtitle": "Handpicked resources, specifications, protocols, and tools for AI coding",
+  "subtitle": "AI 코딩을 위해 엄선한 리소스, 사양, 프로토콜 및 도구",
   "tools": {
-    "description": "Curated tools and utilities for AI coding workflows"
+    "description": "AI 코딩 워크플로를 위해 엄선한 도구 및 유틸리티"
   }
 }

@@ -61,15 +61,15 @@ export function createTimelineTicks([start, end]: [number, number], tickCount = 
 }
 
 function getOpenAISeries(id: string): string {
+  if (id.startsWith('o') && id.includes('mini')) return 'o mini'
+  if (id.includes('mini')) return 'GPT mini(Terra)'
   if (id.startsWith('o')) return 'o-series'
   if (id.includes('codex')) return 'GPT Codex'
-  if (id.startsWith('gpt-5-6-sol')) return 'GPT Sol'
-  if (id.startsWith('gpt-5-6-terra')) return 'GPT Terra'
-  if (id.startsWith('gpt-5-6-luna')) return 'GPT Luna'
-  if (id.includes('mini')) return 'GPT mini'
-  if (id.includes('nano')) return 'GPT nano'
-  if (id.startsWith('gpt-4')) return 'GPT-4'
-  return 'GPT'
+  if (id.startsWith('gpt-5-6-sol')) return 'GPT (Sol)'
+  if (id.startsWith('gpt-5-6-terra')) return 'GPT mini(Terra)'
+  if (id.startsWith('gpt-5-6-luna')) return 'GPT nano(Luna)'
+  if (id.includes('nano')) return 'GPT nano(Luna)'
+  return 'GPT (Sol)'
 }
 
 function getSeries(id: string, vendor: string): string {
@@ -84,6 +84,7 @@ function getSeries(id: string, vendor: string): string {
   if (vendor === 'OpenAI') return getOpenAISeries(id)
 
   if (vendor === 'Google') {
+    if (id.startsWith('gemma-')) return 'Gemma'
     if (id.includes('flash-lite')) return 'Gemini Flash-Lite'
     if (id.includes('flash')) return 'Gemini Flash'
     if (id.includes('pro')) return 'Gemini Pro'
@@ -91,11 +92,9 @@ function getSeries(id: string, vendor: string): string {
   }
 
   if (vendor === 'DeepSeek') {
-    if (id.includes('-r')) return 'DeepSeek R'
     if (id.includes('coder')) return 'DeepSeek Coder'
     if (id.includes('flash')) return 'DeepSeek Flash'
-    if (id.includes('pro')) return 'DeepSeek Pro'
-    return 'DeepSeek V'
+    return 'DeepSeek'
   }
 
   if (vendor === 'Mistral AI') {
@@ -116,12 +115,21 @@ function getSeries(id: string, vendor: string): string {
     if (id.includes('coder')) return 'Qwen Coder'
     if (id.includes('max')) return 'Qwen Max'
     if (id.includes('plus')) return 'Qwen Plus'
-    return 'Qwen'
+    return 'Qwen Open'
   }
 
   if (vendor === 'Moonshot') {
     if (id.includes('code')) return 'Kimi Code'
     return 'Kimi'
+  }
+
+  if (vendor === 'Tencent') return 'Hunyuan'
+
+  if (vendor === 'Xiaomi') {
+    if (id === 'mimo-v2-5-pro') return 'MiMo Pro'
+    if (id === 'mimo-v2-5') return 'MiMo'
+    if (id === 'mimo-v2-flash') return 'MiMo Flash'
+    return 'MiMo'
   }
 
   if (vendor === 'Meta') {
@@ -131,8 +139,7 @@ function getSeries(id: string, vendor: string): string {
 
   if (vendor === 'Z.ai') {
     if (/^glm-\d+(?:-\d+)?v(?:-|$)/.test(id)) return 'GLM Vision'
-    if (id.includes('flash')) return 'GLM Flash'
-    if (id.includes('air')) return 'GLM Air'
+    if (id.includes('flash') || id.includes('air')) return 'GLM Air / Flash'
     if (id.includes('turbo')) return 'GLM Turbo'
     return 'GLM'
   }
@@ -169,6 +176,20 @@ export const modelIntelligencePoints = allModelIntelligencePoints.filter(
 )
 
 const groupedSeries = new Map<string, ModelIntelligenceSeries>()
+const SERIES_ORDER_BY_VENDOR: Record<string, readonly string[]> = {
+  Alibaba: ['Qwen Max', 'Qwen Plus', 'Qwen Coder', 'Qwen Open'],
+  DeepSeek: ['DeepSeek', 'DeepSeek Flash', 'DeepSeek Coder'],
+  Google: ['Gemini Pro', 'Gemini Flash', 'Gemini Flash-Lite', 'Gemma'],
+  OpenAI: ['GPT (Sol)', 'GPT mini(Terra)', 'GPT nano(Luna)', 'GPT Codex', 'o mini', 'o-series'],
+  Xiaomi: ['MiMo Pro', 'MiMo', 'MiMo Flash'],
+  'Z.ai': ['GLM', 'GLM Air / Flash', 'GLM Vision', 'GLM Turbo'],
+}
+
+function getSeriesOrder(vendor: string, series: string): number {
+  const index = SERIES_ORDER_BY_VENDOR[vendor]?.indexOf(series) ?? -1
+
+  return index === -1 ? Number.MAX_SAFE_INTEGER : index
+}
 
 for (const point of modelIntelligencePoints) {
   const id = `${point.vendor}:${point.series}`
@@ -197,11 +218,12 @@ const sortedSeries = Array.from(groupedSeries.values())
   .sort(
     (a, b) =>
       a.vendor.localeCompare(b.vendor) ||
+      getSeriesOrder(a.vendor, a.name) - getSeriesOrder(b.vendor, b.name) ||
       a.name.localeCompare(b.name, 'en', { numeric: true, sensitivity: 'base' })
   )
 
 const seriesIndexByVendor = new Map<string, number>()
-const DASH_PATTERNS = [null, '6 4', '2 4', '10 4 2 4']
+const DASH_PATTERNS = [null, '6 4', '10 4 2 4', '2 4']
 const MARKERS: ModelIntelligenceMarker[] = [
   'circle',
   'square',

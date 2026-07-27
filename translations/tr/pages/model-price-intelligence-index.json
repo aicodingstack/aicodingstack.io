@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Model Fiyatı × Zekâ",
+    "description": "Yaygın yapay zekâ modellerini API token fiyatı ve Zekâ Endeksi puanına göre karşılaştırın.",
+    "keywords": "yapay zekâ model fiyat karşılaştırması, model zekâsı, LLM API fiyatları, fiyat performans"
+  },
+  "title": "Model Fiyatı × Zekâ",
+  "description": "Yaygın modelleri API fiyatı ve zekâ yeteneğine göre karşılaştırın.",
+  "chart": {
+    "title": "Her fiyat düzeyinde yetenek",
+    "axisHint": "Karma API fiyatı × Zekâ Endeksi",
+    "modelCount": "{count} seçili model",
+    "priceAxis": "1 milyon token başına USD · %90 girdi + %10 çıktı",
+    "indexAxis": "Zekâ Endeksi",
+    "scale": {
+      "label": "Fiyat ölçeği",
+      "linear": "Doğrusal",
+      "logarithmic": "Logaritmik"
+    }
+  },
+  "filter": {
+    "label": "Sağlayıcıya göre filtrele",
+    "showAll": "Tümünü göster"
+  },
+  "list": {
+    "title": "Seçili modeller",
+    "description": "Bir milyon token başına karşılaştırılabilir USD API fiyatları. Karma fiyata veya Zekâ Endeksi'ne göre sıralayın.",
+    "blended": "Karma fiyat",
+    "priceUnit": "USD / 1 milyon token",
+    "index": "Endeks"
+  },
+  "source": {
+    "attribution": "Artificial Analysis Zekâ Endeksi v{version}, gözlem tarihi {date}. Kaynak:",
+    "pricing": "Fiyatlar katalogdaki resmi API kaynaklarını kullanır; karşılaştırılabilir birinci taraf USD fiyatı yoksa Artificial Analysis tarafından izlenen karşılaştırılabilir API teklifleriyle tamamlanır. Karma fiyatın %{input} girdiden ve %{output} çıktıdan oluşur; önbellek indirimleri hariçtir.",
+    "methodology": "Zekâ endeksi metodolojisi",
+    "fallbackPricingSources": "Ek fiyat kaynakları:"
+  }
+}

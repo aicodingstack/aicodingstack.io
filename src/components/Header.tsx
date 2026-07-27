@@ -6,7 +6,7 @@ import { useParams } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { memo, useCallback, useEffect, useMemo, useState } from 'react'
 import SearchDialog from '@/components/controls/SearchDialog'
-import { RankingMegaMenu } from '@/components/navigation/RankingMegaMenu'
+import { RankingMegaMenu, rankingMenuItems } from '@/components/navigation/RankingMegaMenu'
 import { StackMegaMenu } from '@/components/navigation/StackMegaMenu'
 import { Link } from '@/i18n/navigation'
 
@@ -48,7 +48,7 @@ function Header() {
       },
       { href: '/ai-coding-landscape', translationKey: 'header.landscape', namespace: 'header' },
       {
-        href: '/open-source-rank',
+        href: '/model-intelligence-index',
         translationKey: 'header.ranking',
         namespace: 'header',
         hasMegaMenu: true,
@@ -157,6 +157,11 @@ function Header() {
   const renderMobileMenuItem = useCallback(
     (item: MenuItem) => {
       const translatedText = getTranslation(item)
+      const rankingChildItems =
+        item.megaMenuType === 'ranking'
+          ? rankingMenuItems.filter(rankingItem => rankingItem.href !== item.href)
+          : []
+
       return (
         <li key={item.href}>
           {item.isExternal ? (
@@ -168,10 +173,25 @@ function Header() {
               {translatedText}
             </Link>
           )}
+          {rankingChildItems.length > 0 && (
+            <ul className="ml-[var(--spacing-sm)] mt-[var(--spacing-xs)] flex list-none flex-col gap-[var(--spacing-xs)] border-l border-[var(--color-border)] pl-[var(--spacing-sm)]">
+              {rankingChildItems.map(rankingItem => (
+                <li key={rankingItem.href}>
+                  <Link
+                    href={rankingItem.href}
+                    className={MOBILE_LINK_CLASSES}
+                    onClick={handleMenuClose}
+                  >
+                    {tComponent(rankingItem.titleKey)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
         </li>
       )
     },
-    [handleMenuClose, getTranslation]
+    [handleMenuClose, getTranslation, tComponent]
   )
 
   // Memoized menu button label
