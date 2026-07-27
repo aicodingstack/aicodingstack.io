@@ -31,8 +31,8 @@ const selectedModels: SelectedModel[] = [
     labelDx: -8,
     labelDy: 18,
     labelAnchor: 'end',
-    linearLabelDx: 18,
-    linearLabelDy: 28,
+    linearLabelDx: 150,
+    linearLabelDy: 16,
     linearLabelAnchor: 'start',
   },
   {
@@ -63,8 +63,8 @@ const selectedModels: SelectedModel[] = [
     labelDx: -12,
     labelDy: 24,
     labelAnchor: 'end',
-    linearLabelDx: -16,
-    linearLabelDy: 34,
+    linearLabelDx: -20,
+    linearLabelDy: 0,
     linearLabelAnchor: 'end',
   },
   {
@@ -101,11 +101,11 @@ const selectedModels: SelectedModel[] = [
   { modelId: 'gemini-3-6-flash', labelDx: -18, labelDy: 24, labelAnchor: 'end' },
   { modelId: 'grok-4-5', labelDx: 18, labelDy: -24, labelAnchor: 'start' },
   { modelId: 'claude-haiku-4-5', labelDx: -10, labelDy: -10, labelAnchor: 'end' },
-  { modelId: 'claude-sonnet-5', labelDx: 8, labelDy: -10, labelAnchor: 'start' },
+  { modelId: 'claude-sonnet-5', labelDx: 8, labelDy: 22, labelAnchor: 'start' },
   {
     modelId: 'qwen3-7-max',
     labelDx: -10,
-    labelDy: -28,
+    labelDy: 24,
     labelAnchor: 'end',
     usdPriceOverride: {
       input: 2.5,
@@ -116,7 +116,7 @@ const selectedModels: SelectedModel[] = [
   { modelId: 'gemini-3-1-pro-preview', labelDx: 8, labelDy: 18, labelAnchor: 'start' },
   { modelId: 'gpt-5-6-terra', labelDx: 8, labelDy: -32, labelAnchor: 'start' },
   { modelId: 'kimi-k3', labelDx: -8, labelDy: -42, labelAnchor: 'end' },
-  { modelId: 'claude-opus-5', labelDx: -8, labelDy: 18, labelAnchor: 'end' },
+  { modelId: 'claude-opus-5', labelDx: -8, labelDy: 34, labelAnchor: 'end' },
   { modelId: 'gpt-5-6-sol', labelDx: 8, labelDy: -10, labelAnchor: 'start' },
 ]
 

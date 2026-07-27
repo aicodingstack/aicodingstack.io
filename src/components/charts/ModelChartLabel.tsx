@@ -74,23 +74,23 @@ export function ModelChartLabel({ modelId, placement, value, viewBox }: ModelCha
       : placement.textAnchor === 'end'
         ? x - labelWidth
         : x
-  const showLeader = Math.abs(placement.dy) > 20 || Math.abs(placement.dx) > 12
+  const leaderEndX =
+    placement.textAnchor === 'start' ? x - 3 : placement.textAnchor === 'end' ? x + 3 : x
+  const leaderEndY = y + (placement.dy < 0 ? 3 : placement.dy > 0 ? -10 : -3)
 
   return (
     <g>
-      {showLeader && (
-        <line
-          x1={pointX}
-          y1={pointY}
-          x2={x}
-          y2={y + (placement.dy < 0 ? 3 : -10)}
-          stroke="var(--color-text-muted)"
-          strokeDasharray="4 4"
-          strokeOpacity={0.45}
-          strokeWidth={0.6}
-          pointerEvents="none"
-        />
-      )}
+      <line
+        x1={pointX}
+        y1={pointY}
+        x2={leaderEndX}
+        y2={leaderEndY}
+        stroke="var(--color-text-muted)"
+        strokeDasharray="4 4"
+        strokeOpacity={0.45}
+        strokeWidth={0.6}
+        pointerEvents="none"
+      />
       {/* biome-ignore lint/a11y/useSemanticElements: SVG labels cannot render HTML buttons. */}
       <g
         role="button"
