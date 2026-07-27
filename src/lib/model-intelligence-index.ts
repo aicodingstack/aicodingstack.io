@@ -178,6 +178,7 @@ export const modelIntelligencePoints = allModelIntelligencePoints.filter(
 const groupedSeries = new Map<string, ModelIntelligenceSeries>()
 const SERIES_ORDER_BY_VENDOR: Record<string, readonly string[]> = {
   Alibaba: ['Qwen Max', 'Qwen Plus', 'Qwen Coder', 'Qwen Open'],
+  Anthropic: ['Claude Opus', 'Claude Sonnet', 'Claude Haiku', 'Claude Fable'],
   DeepSeek: ['DeepSeek', 'DeepSeek Flash', 'DeepSeek Coder'],
   Google: ['Gemini Pro', 'Gemini Flash', 'Gemini Flash-Lite', 'Gemma'],
   OpenAI: ['GPT (Sol)', 'GPT mini(Terra)', 'GPT nano(Luna)', 'GPT Codex', 'o mini', 'o-series'],

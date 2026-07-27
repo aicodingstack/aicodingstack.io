@@ -172,6 +172,23 @@ describe('model intelligence index', () => {
     ).toEqual(['Qwen Open', 'Qwen Open'])
   })
 
+  it('orders Claude product lines from Opus through Fable', () => {
+    const claudeSeries = modelIntelligenceSeries.filter(series => series.vendor === 'Anthropic')
+
+    expect(claudeSeries.map(series => series.name)).toEqual([
+      'Claude Opus',
+      'Claude Sonnet',
+      'Claude Haiku',
+      'Claude Fable',
+    ])
+    expect(claudeSeries.map(series => [series.marker, series.dash])).toEqual([
+      ['circle', null],
+      ['square', '6 4'],
+      ['triangle', '10 4 2 4'],
+      ['diamond', '2 4'],
+    ])
+  })
+
   it('names and orders the three connected GPT product lines', () => {
     const openAISeries = modelIntelligenceSeries.filter(series => series.vendor === 'OpenAI')
 
