@@ -14,8 +14,10 @@
     "openMenu": "打开菜单",
     "openSourceRank": "开源排行榜",
     "openSourceRankDesc": "按 GitHub 星标数探索开源 AI 编码项目",
-    "modelIntelligenceIndex": "模型智能指数",
-    "modelIntelligenceIndexDesc": "追踪模型智能指数随版本发布的变化",
+    "modelIntelligenceIndex": "模型综合智能指数",
+    "modelIntelligenceIndexDesc": "追踪模型综合智能指数随版本发布的变化",
+    "modelPriceIntelligenceIndex": "模型价格 × 智能指数",
+    "modelPriceIntelligenceIndexDesc": "按 API 价格与智能指数对比各家主流模型",
     "ranking": "排行榜",
     "toggleMenu": "切换菜单"
   }

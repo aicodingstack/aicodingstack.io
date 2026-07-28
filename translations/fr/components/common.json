@@ -14,8 +14,10 @@
     "openMenu": "Ouvrir le menu",
     "openSourceRank": "Classement Open Source",
     "openSourceRankDesc": "Explorez les projets de codage IA open source par étoiles GitHub",
-    "modelIntelligenceIndex": "Indice d’intelligence des modèles",
-    "modelIntelligenceIndexDesc": "Suivez l’intelligence des modèles au fil des sorties",
+    "modelIntelligenceIndex": "Indice d’intelligence globale des modèles",
+    "modelIntelligenceIndexDesc": "Suivez l’intelligence globale des modèles au fil des sorties",
+    "modelPriceIntelligenceIndex": "Prix du modèle × Intelligence",
+    "modelPriceIntelligenceIndexDesc": "Comparez les modèles courants par prix API et intelligence",
     "ranking": "Classement",
     "toggleMenu": "Basculer le menu"
   }

@@ -14,8 +14,10 @@
     "openMenu": "メニューを開く",
     "openSourceRank": "オープンソースランキング",
     "openSourceRankDesc": "GitHub スターでオープンソース AI コーディングプロジェクトを探索",
-    "modelIntelligenceIndex": "モデル知能指数",
-    "modelIntelligenceIndexDesc": "リリースごとのモデル知能の変化を追跡",
+    "modelIntelligenceIndex": "モデル総合知能指数",
+    "modelIntelligenceIndexDesc": "リリースごとのモデル総合知能の変化を追跡",
+    "modelPriceIntelligenceIndex": "モデル価格 × インテリジェンス",
+    "modelPriceIntelligenceIndexDesc": "主要モデルをAPI価格とインテリジェンスで比較",
     "ranking": "ランキング",
     "toggleMenu": "メニューを切り替え"
   }

@@ -14,8 +14,10 @@
     "openMenu": "Menüyü aç",
     "openSourceRank": "Açık Kaynak Sıralaması",
     "openSourceRankDesc": "GitHub yıldızlarına göre açık kaynaklı AI kodlama projelerini keşfedin",
-    "modelIntelligenceIndex": "Model Zekâsı Endeksi",
-    "modelIntelligenceIndexDesc": "Model zekâ puanlarını sürümler arasında izleyin",
+    "modelIntelligenceIndex": "Kapsamlı Model Zekâsı Endeksi",
+    "modelIntelligenceIndexDesc": "Kapsamlı model zekâ puanlarını sürümler arasında izleyin",
+    "modelPriceIntelligenceIndex": "Model Fiyatı × Zekâ",
+    "modelPriceIntelligenceIndexDesc": "Yaygın modelleri API fiyatı ve zekâ ile karşılaştırın",
     "ranking": "Sıralama",
     "toggleMenu": "Menüyü değiştir"
   }

@@ -6,6 +6,13 @@
     "light": "#E84B8A",
     "dark": "#E84B8A"
   },
+  "modelSeries": [
+    {
+      "id": "minimax-m",
+      "name": "MiniMax M",
+      "modelIds": ["minimax-m2", "minimax-m2-1", "minimax-m2-5", "minimax-m2-7", "minimax-m3"]
+    }
+  ],
   "description": "An AI company specializing in multimodal general large language models, offering advanced AI services including text, speech, music, image, and video generation.",
   "translations": {
     "zh-Hans": {

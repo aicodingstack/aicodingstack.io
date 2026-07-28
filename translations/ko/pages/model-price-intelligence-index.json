@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "모델 가격 × 인텔리전스",
+    "description": "주요 AI 모델을 API 토큰 가격과 종합 지능 지수로 비교합니다.",
+    "keywords": "AI 모델 가격 비교, 모델 지능, LLM API 가격, 가격 성능"
+  },
+  "title": "모델 가격 × 인텔리전스",
+  "description": "주요 모델의 API 가격과 인텔리전스 역량을 비교해 보세요.",
+  "chart": {
+    "title": "가격대별 역량",
+    "axisHint": "혼합 API 가격 × 종합 지능 지수",
+    "modelCount": "선택한 모델 {count}개",
+    "priceAxis": "토큰 100만 개당 USD · 입력 90% + 출력 10%",
+    "indexAxis": "종합 지능 지수",
+    "scale": {
+      "label": "가격 눈금",
+      "linear": "선형",
+      "logarithmic": "로그"
+    }
+  },
+  "filter": {
+    "label": "공급업체로 필터",
+    "showAll": "모두 표시"
+  },
+  "list": {
+    "title": "선택한 모델",
+    "description": "토큰 100만 개당 비교 가능한 USD API 가격입니다. 혼합 가격 또는 종합 지능 지수로 정렬할 수 있습니다.",
+    "blended": "혼합 가격",
+    "priceUnit": "USD / 토큰 100만 개",
+    "index": "지수"
+  },
+  "source": {
+    "attribution": "Artificial Analysis 종합 지능 지수 v{version}, 관측일 {date}. 출처:",
+    "pricing": "가격은 카탈로그의 공식 API 자료를 사용하며, 비교 가능한 자사 USD 요금이 없으면 Artificial Analysis가 추적한 비교 가능한 API 요금으로 보완합니다. 혼합 가격은 입력 {input}%, 출력 {output}%로 가중하며 캐시 할인은 제외합니다.",
+    "methodology": "지능 지수 방법론",
+    "fallbackPricingSources": "보완 가격 출처:"
+  }
+}

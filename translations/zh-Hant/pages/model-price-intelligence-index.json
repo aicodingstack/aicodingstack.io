@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "模型價格 × 智慧指數",
+    "description": "按 API Token 價格和智慧指數比較各家主流 AI 模型。",
+    "keywords": "AI 模型價格比較, 模型智能能力, LLM API 定價, 性價比"
+  },
+  "title": "模型價格 × 智慧指數",
+  "description": "比較各家主流模型的 API 價格與智慧指數。",
+  "chart": {
+    "title": "不同價格下的能力",
+    "axisHint": "混合 API 價格 × 智慧指數",
+    "modelCount": "{count} 個精選模型",
+    "priceAxis": "每百萬 Token 美元價格 · 輸入 90% + 輸出 10%",
+    "indexAxis": "智慧指數",
+    "scale": {
+      "label": "價格標尺",
+      "linear": "線性",
+      "logarithmic": "對數"
+    }
+  },
+  "filter": {
+    "label": "按廠商篩選",
+    "showAll": "顯示全部"
+  },
+  "list": {
+    "title": "精選模型",
+    "description": "可比較的美元 API 價格，可按混合價格或智慧指數排序。",
+    "blended": "混合價格",
+    "priceUnit": "美元 / 百萬 Token",
+    "index": "指數"
+  },
+  "source": {
+    "attribution": "Artificial Analysis 智慧指數 v{version}，觀測日期 {date}。來源：",
+    "pricing": "價格優先採用目錄收錄的官方 API 資訊；缺少可比的第一方美元價格時，補充採用 Artificial Analysis 追蹤的可比 API 報價。混合價格按輸入 {input}%、輸出 {output}% 加權，不計快取折扣。",
+    "methodology": "智慧指數方法",
+    "fallbackPricingSources": "補充價格來源："
+  }
+}

@@ -14,8 +14,10 @@
     "openMenu": "Menü öffnen",
     "openSourceRank": "Open Source Ranking",
     "openSourceRankDesc": "Erkunden Sie Open-Source-AI-Coding-Projekte nach GitHub-Sternen",
-    "modelIntelligenceIndex": "Modellintelligenz-Index",
-    "modelIntelligenceIndexDesc": "Intelligenzwerte von Modellen über Veröffentlichungen hinweg verfolgen",
+    "modelIntelligenceIndex": "Umfassender Modellintelligenz-Index",
+    "modelIntelligenceIndexDesc": "Umfassende Modellintelligenz über Veröffentlichungen hinweg verfolgen",
+    "modelPriceIntelligenceIndex": "Modellpreis × Intelligenz",
+    "modelPriceIntelligenceIndexDesc": "Gängige Modelle nach API-Preis und Intelligenz vergleichen",
     "ranking": "Ranking",
     "toggleMenu": "Menü umschalten"
   }

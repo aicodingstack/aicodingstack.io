@@ -98,4 +98,7 @@ const tComponent = useTranslations('components.navigation.breadcrumb')
 ## Development Workflow
 
 - **Development server:** Do not start `npm run dev` automatically. User will start it manually when needed.
+- **Standalone preview assets:** Before starting `.next/standalone/server.js`, sync `public/` into `.next/standalone/public/` and `.next/static/` into `.next/standalone/.next/static/`. Repeat this after every production build because Next.js regenerates `.next/standalone/`. Never start the standalone server without these assets.
+- **Standalone preview host:** The standalone server `HOSTNAME` must match the hostname used in the preview URL. For a `http://localhost:<port>` preview, start with `HOSTNAME=localhost`; do not substitute `127.0.0.1`, because locale middleware rewrites can otherwise become self-redirects.
+- **Standalone preview verification:** After starting or restarting a standalone preview, verify that one default-locale URL without a locale prefix returns `200`, one locale-prefixed URL returns `200`, and a stylesheet referenced by the page returns `200` with a CSS content type. When using tmux, include the asset sync and matching `HOSTNAME` in the pane start command.
 - **Git commits:** Do not create commits autonomously. Always ask the user before committing changes.

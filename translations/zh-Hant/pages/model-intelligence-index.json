@@ -1,31 +1,32 @@
 {
   "meta": {
-    "title": "模型智慧指數",
-    "description": "依廠商和模型系列追蹤 Coding 模型智慧指數隨時間的變化。",
-    "keywords": "模型智慧指數, AI 模型時間線, Coding 模型基準, 模型發布歷史"
+    "title": "模型綜合智慧指數",
+    "description": "依廠商和模型系列追蹤 AI 模型綜合智慧指數隨時間的變化。",
+    "keywords": "模型綜合智慧指數, AI 模型時間線, AI 綜合基準, 模型發布歷史"
   },
-  "title": "模型智慧指數",
-  "description": "查看 Coding 模型智慧指數隨發布時間的變化。",
+  "title": "模型綜合智慧指數",
+  "description": "查看 AI 模型綜合智慧指數隨發布時間的變化。",
   "releaseDate": "發布時間",
   "chart": {
     "title": "能力隨時間的變化",
-    "axisHint": "發布時間 × Index",
+    "axisHint": "發布時間 × 指數",
     "modelCount": "目錄中的 {count} 個模型",
-    "indexAxis": "Intelligence Index"
+    "indexAxis": "智慧指數"
   },
   "filter": {
     "label": "依廠商篩選",
-    "showAll": "顯示全部"
+    "showAll": "顯示全部",
+    "seriesLabel": "依系列篩選"
   },
   "list": {
-    "title": "模型 Index",
-    "description": "可依發布時間或 Index 值排序，長條長度使用相同比例。",
-    "index": "Index",
-    "barLabel": "{model} 的 Index：{score}"
+    "title": "模型指數",
+    "description": "可依發布時間或指數值排序，長條長度使用相同比例。",
+    "index": "指數",
+    "barLabel": "{model} 的指數：{score}"
   },
   "source": {
-    "attribution": "Artificial Analysis Intelligence Index v{version}，資料觀察於 {date}。來源：",
-    "estimated": "* 表示 Artificial Analysis 標記的估算值；分數對應列表中註明的模型設定。",
+    "attribution": "Artificial Analysis 智慧指數 v{version}，資料觀察於 {date}。來源：",
+    "estimated": "* 表示 Artificial Analysis 標記的估算值；分數對應列表中註明的模型設定和綜合智慧指數，而不是程式設計指數。",
     "methodology": "查看方法說明"
   }
 }

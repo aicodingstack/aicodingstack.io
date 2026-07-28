@@ -6,6 +6,54 @@
     "light": "#10A37F",
     "dark": "#10A37F"
   },
+  "modelSeries": [
+    {
+      "id": "gpt-sol",
+      "name": "GPT (Sol)",
+      "modelIds": [
+        "gpt-4o",
+        "gpt-4-1",
+        "gpt-5",
+        "gpt-5-1",
+        "gpt-5-2",
+        "gpt-5-4",
+        "gpt-5-5",
+        "gpt-5-6-sol"
+      ]
+    },
+    {
+      "id": "gpt-mini-terra",
+      "name": "GPT mini(Terra)",
+      "modelIds": [
+        "gpt-4o-mini",
+        "gpt-4-1-mini",
+        "gpt-5-mini",
+        "gpt-5-1-codex-mini",
+        "gpt-5-4-mini",
+        "gpt-5-6-terra"
+      ]
+    },
+    {
+      "id": "gpt-nano-luna",
+      "name": "GPT nano(Luna)",
+      "modelIds": ["gpt-4-1-nano", "gpt-5-nano", "gpt-5-4-nano", "gpt-5-6-luna"]
+    },
+    {
+      "id": "gpt-codex",
+      "name": "GPT Codex",
+      "modelIds": ["gpt-5-codex", "gpt-5-1-codex", "gpt-5-2-codex", "gpt-5-3-codex"]
+    },
+    {
+      "id": "o-mini",
+      "name": "o mini",
+      "modelIds": ["o3-mini", "o4-mini"]
+    },
+    {
+      "id": "o-series",
+      "name": "o-series",
+      "modelIds": ["o3"]
+    }
+  ],
   "description": "A leading AI research company focused on developing safe and beneficial artificial general intelligence.",
   "translations": {
     "zh-Hans": {

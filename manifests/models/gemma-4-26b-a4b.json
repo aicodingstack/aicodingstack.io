@@ -1,0 +1,108 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gemma-4-26b-a4b",
+  "name": "Gemma 4 26B A4B",
+  "description": "Google DeepMind's open-weight multimodal MoE model with 26B total and 4B active parameters for efficient reasoning, coding, visual tasks, and agents.",
+  "translations": {
+    "de": {
+      "description": "Google DeepMinds offenes multimodales MoE-Modell mit 26B Gesamt- und 4B aktiven Parametern für effizientes Schlussfolgern, Coding, visuelle Aufgaben und Agenten."
+    },
+    "es": {
+      "description": "Modelo MoE multimodal abierto de Google DeepMind con 26B parámetros totales y 4B activos para razonamiento, programación, visión y agentes eficientes."
+    },
+    "fr": {
+      "description": "Modèle MoE multimodal ouvert de Google DeepMind avec 26B paramètres au total et 4B actifs pour le raisonnement, le codage, la vision et les agents efficaces."
+    },
+    "id": {
+      "description": "Model MoE multimodal berbobot terbuka Google DeepMind dengan 26B parameter total dan 4B aktif untuk penalaran, coding, tugas visual, dan agen yang efisien."
+    },
+    "ja": {
+      "description": "効率的な推論、コーディング、視覚タスク、エージェントに対応するGoogle DeepMindのオープンウェイト・マルチモーダルMoEモデル。総26B、アクティブ4B。"
+    },
+    "ko": {
+      "description": "효율적인 추론, 코딩, 시각 작업과 에이전트를 위한 Google DeepMind의 오픈 웨이트 멀티모달 MoE 모델로, 총 26B 및 활성 4B 매개변수를 갖습니다."
+    },
+    "pt": {
+      "description": "Modelo MoE multimodal aberto do Google DeepMind com 26B parâmetros totais e 4B ativos para raciocínio, programação, visão e agentes eficientes."
+    },
+    "ru": {
+      "description": "Открытая мультимодальная MoE-модель Google DeepMind с 26 млрд параметров и 4 млрд активных для эффективных рассуждений, программирования, визуальных задач и агентов."
+    },
+    "tr": {
+      "description": "Verimli akıl yürütme, kodlama, görsel görevler ve aracılar için Google DeepMind'ın 26B toplam ve 4B etkin parametreli açık ağırlıklı çok modlu MoE modeli."
+    },
+    "zh-Hans": {
+      "description": "Google DeepMind 面向高效推理、编程、视觉任务和智能体的开放权重多模态 MoE 模型，总参数 26B、激活参数 4B。"
+    },
+    "zh-Hant": {
+      "description": "Google DeepMind 面向高效推理、程式設計、視覺任務和智慧體的開放權重多模態 MoE 模型，總參數 26B、啟用參數 4B。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "title": "Gemma 4 official model card",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+      "title": "Gemma 4 official launch announcement",
+      "fields": ["description", "releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "title": "Gemma 4 26B A4B official model repository",
+      "fields": ["size", "platformUrls.huggingface"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/gemma-4-26b-a4b",
+      "title": "Artificial Analysis Gemma 4 26B A4B model page",
+      "fields": ["releaseDate", "platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-27",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://deepmind.google",
+  "docsUrl": "https://ai.google.dev/gemma/docs/core/model_card_4",
+  "vendor": "Google",
+  "size": "26B (4B active)",
+  "contextWindow": 262144,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "not-applicable",
+    "reason": "open-weights-only",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "releaseDate": "2026-04-02",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gemma-4-26b-a4b",
+    "openrouter": null
+  }
+}

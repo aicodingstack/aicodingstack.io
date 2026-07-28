@@ -1,0 +1,154 @@
+{
+  "$schema": "./$schemas/model-price-intelligence-index.schema.json",
+  "inputShare": 0.9,
+  "outputShare": 0.1,
+  "models": [
+    {
+      "modelId": "deepseek-v4-flash",
+      "labelDx": -8,
+      "labelDy": 18,
+      "labelAnchor": "end",
+      "linearLabelDx": 150,
+      "linearLabelDy": 16,
+      "linearLabelAnchor": "start"
+    },
+    {
+      "modelId": "deepseek-v4-pro",
+      "labelDx": -12,
+      "labelDy": -14,
+      "labelAnchor": "end",
+      "linearLabelDx": 16,
+      "linearLabelDy": -40,
+      "linearLabelAnchor": "start"
+    },
+    {
+      "modelId": "hy3",
+      "labelDx": 12,
+      "labelDy": -28,
+      "labelAnchor": "start",
+      "linearLabelDx": -16,
+      "linearLabelDy": -46,
+      "linearLabelAnchor": "end",
+      "usdPriceOverride": {
+        "input": 0.14,
+        "output": 0.58,
+        "sourceUrl": "https://artificialanalysis.ai/models/hy3"
+      }
+    },
+    {
+      "modelId": "minimax-m3",
+      "labelDx": -12,
+      "labelDy": 24,
+      "labelAnchor": "end",
+      "linearLabelDx": -20,
+      "linearLabelDy": 0,
+      "linearLabelAnchor": "end"
+    },
+    {
+      "modelId": "qwen3-6-35b-a3b",
+      "labelDx": -10,
+      "labelDy": -10,
+      "labelAnchor": "end",
+      "linearLabelDx": 10,
+      "linearLabelDy": 22,
+      "linearLabelAnchor": "start"
+    },
+    {
+      "modelId": "qwen3-7-plus",
+      "labelDx": 10,
+      "labelDy": -10,
+      "labelAnchor": "start",
+      "linearLabelDx": 18,
+      "linearLabelDy": -22,
+      "linearLabelAnchor": "start",
+      "usdPriceOverride": {
+        "input": 0.4,
+        "output": 1.6,
+        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-7-plus"
+      }
+    },
+    {
+      "modelId": "glm-5-2",
+      "labelDx": -22,
+      "labelDy": -18,
+      "labelAnchor": "end"
+    },
+    {
+      "modelId": "gpt-5-6-luna",
+      "labelDx": 0,
+      "labelDy": -42,
+      "labelAnchor": "middle"
+    },
+    {
+      "modelId": "gemini-3-5-flash-lite",
+      "labelDx": 14,
+      "labelDy": 28,
+      "labelAnchor": "start"
+    },
+    {
+      "modelId": "gemini-3-6-flash",
+      "labelDx": -18,
+      "labelDy": 24,
+      "labelAnchor": "end"
+    },
+    {
+      "modelId": "grok-4-5",
+      "labelDx": 18,
+      "labelDy": -24,
+      "labelAnchor": "start"
+    },
+    {
+      "modelId": "claude-haiku-4-5",
+      "labelDx": -10,
+      "labelDy": -10,
+      "labelAnchor": "end"
+    },
+    {
+      "modelId": "claude-sonnet-5",
+      "labelDx": 8,
+      "labelDy": 22,
+      "labelAnchor": "start"
+    },
+    {
+      "modelId": "qwen3-7-max",
+      "labelDx": -10,
+      "labelDy": 24,
+      "labelAnchor": "end",
+      "usdPriceOverride": {
+        "input": 2.5,
+        "output": 7.5,
+        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-7-max"
+      }
+    },
+    {
+      "modelId": "gemini-3-1-pro-preview",
+      "labelDx": 8,
+      "labelDy": 18,
+      "labelAnchor": "start"
+    },
+    {
+      "modelId": "gpt-5-6-terra",
+      "labelDx": 8,
+      "labelDy": -32,
+      "labelAnchor": "start"
+    },
+    {
+      "modelId": "kimi-k3",
+      "labelDx": -8,
+      "labelDy": -42,
+      "labelAnchor": "end"
+    },
+    {
+      "modelId": "claude-opus-5",
+      "labelDx": -8,
+      "labelDy": 34,
+      "labelAnchor": "end"
+    },
+    {
+      "modelId": "gpt-5-6-sol",
+      "labelDx": 8,
+      "labelDy": -10,
+      "labelAnchor": "start"
+    }
+  ]
+}

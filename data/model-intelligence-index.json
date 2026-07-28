@@ -1,0 +1,4 @@
+{
+  "$schema": "./$schemas/model-intelligence-index.schema.json",
+  "hiddenVendorIds": ["mistral-ai"]
+}

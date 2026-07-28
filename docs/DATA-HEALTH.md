@@ -1,19 +1,19 @@
 # Data Health Report
 
-Snapshot date: 2026-07-26. Regenerate with `npm run data-health:report`.
+Snapshot date: 2026-07-28. Regenerate with `npm run data-health:report`.
 
 ## Scorecard
 
 | Metric | Value |
 | --- | ---: |
-| Manifest records | 231 |
-| Records with structured sources | 140 |
-| Verified records | 126 |
-| Verified with complete provenance | 109 |
+| Manifest records | 242 |
+| Records with structured sources | 151 |
+| Verified records | 137 |
+| Verified with complete provenance | 120 |
 | Stale verified records | 0 |
-| Non-English values identical to English | 1520 |
+| Non-English values identical to English | 1262 |
 | Dangling product relationships | 0 |
-| Model benchmark coverage | 10.5% |
+| Model benchmark coverage | 9.6% |
 | Products with pricing | 66/67 |
 | Errors / warnings / info | 0 / 17 / 91 |
 
@@ -25,9 +25,9 @@ Snapshot date: 2026-07-26. Regenerate with `npm run data-health:report`.
 | clis | 27 | 4 | 3 | 0 |
 | desktops | 12 | 0 | 0 | 0 |
 | extensions | 19 | 3 | 2 | 0 |
-| models | 113 | 112 | 100 | 0 |
+| models | 123 | 122 | 110 | 0 |
 | providers | 12 | 4 | 3 | 0 |
-| vendors | 39 | 3 | 1 | 0 |
+| vendors | 40 | 4 | 2 | 0 |
 
 ## Translation Placeholder Proxy
 
@@ -35,17 +35,17 @@ Exact English matches are a triage signal; product names and technical terms can
 
 | Locale | Comparable strings | Exact English matches | Match rate |
 | --- | ---: | ---: | ---: |
-| de | 383 | 133 | 34.7% |
-| es | 383 | 127 | 33.2% |
-| fr | 383 | 137 | 35.8% |
-| id | 383 | 171 | 44.6% |
-| ja | 383 | 123 | 32.1% |
-| ko | 383 | 143 | 37.3% |
-| pt | 383 | 136 | 35.5% |
-| ru | 383 | 150 | 39.2% |
-| tr | 383 | 152 | 39.7% |
-| zh-Hans | 383 | 125 | 32.6% |
-| zh-Hant | 383 | 123 | 32.1% |
+| de | 411 | 113 | 27.5% |
+| es | 411 | 104 | 25.3% |
+| fr | 411 | 115 | 28% |
+| id | 411 | 149 | 36.3% |
+| ja | 411 | 107 | 26% |
+| ko | 411 | 115 | 28% |
+| pt | 411 | 114 | 27.7% |
+| ru | 411 | 124 | 30.2% |
+| tr | 411 | 125 | 30.4% |
+| zh-Hans | 411 | 98 | 23.8% |
+| zh-Hant | 411 | 98 | 23.8% |
 
 ## Backlog by Issue Type
 

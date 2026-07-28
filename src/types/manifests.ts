@@ -335,7 +335,17 @@ export interface ManifestVendor extends ManifestEntity {
     light: string
     dark: string
   }
+  modelSeries?: ManifestModelSeries[]
   communityUrls: ManifestCommunityUrls
+}
+
+export interface ManifestModelSeries {
+  /** Stable vendor-scoped identifier for the model product line */
+  id: string
+  /** Reader-facing product-line name */
+  name: string
+  /** Catalog model IDs assigned to this product line */
+  modelIds: string[]
 }
 
 // =============================================================================

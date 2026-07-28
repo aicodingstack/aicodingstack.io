@@ -6,6 +6,27 @@
     "light": "#4D6BFE",
     "dark": "#4D6BFE"
   },
+  "modelSeries": [
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "modelIds": [
+        "deepseek-v3",
+        "deepseek-r1",
+        "deepseek-r1-0528",
+        "deepseek-v3-1",
+        "deepseek-v3-terminus",
+        "deepseek-v3-2-exp",
+        "deepseek-3-2",
+        "deepseek-v4-pro"
+      ]
+    },
+    {
+      "id": "deepseek-flash",
+      "name": "DeepSeek Flash",
+      "modelIds": ["deepseek-v4-flash"]
+    }
+  ],
   "description": "A leading AI research company focused on developing advanced language models and AI technology for coding and general intelligence.",
   "translations": {
     "zh-Hans": {

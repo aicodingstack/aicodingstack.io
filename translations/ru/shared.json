@@ -43,46 +43,46 @@
       "extensions": "All Extensions",
       "ides": "All IDEs",
       "modelProviders": "All Model Providers",
-      "models": "All Models",
+      "models": "Все модели",
       "vendors": "All Vendors"
     },
     "plural": {
-      "clis": "CLIs",
-      "desktops": "Desktop",
-      "extensions": "Extensions",
-      "ides": "IDEs",
-      "modelProviders": "Model Providers",
-      "models": "Models",
-      "providers": "Providers",
-      "vendors": "Vendors"
+      "clis": "CLI",
+      "desktops": "Настольные приложения",
+      "extensions": "Расширения",
+      "ides": "IDE",
+      "modelProviders": "Поставщики моделей",
+      "models": "Модели",
+      "providers": "Провайдеры",
+      "vendors": "Разработчики"
     },
     "singular": {
       "cli": "CLI",
       "desktop": "Desktop",
       "extension": "Extension",
       "ide": "IDE",
-      "model": "Model",
+      "model": "Модель",
       "modelProvider": "Model Provider",
       "provider": "Provider",
-      "vendor": "Vendor"
+      "vendor": "Разработчик"
     }
   },
   "labels": {
     "cache": "Cache",
     "findOnAiPlatforms": "Найти на AI-платформах",
     "getApiKey": "Получить API ключ",
-    "input": "Input",
+    "input": "Ввод",
     "name": "Имя",
-    "output": "Output",
+    "output": "Вывод",
     "quickLinks": "Быстрые ссылки",
-    "searchByName": "Search by name...",
+    "searchByName": "Поиск по названию...",
     "specifications": "Спецификации",
-    "totalContext": "Total Context"
+    "totalContext": "Общий контекст"
   },
   "lifecycle": {
     "deprecated": "Устарело",
-    "latest": "Latest",
-    "maintained": "Maintained"
+    "latest": "Новейшие",
+    "maintained": "Поддерживаются"
   },
   "modelPricing": {
     "cacheRead": "Чтение кеша",
@@ -129,20 +129,21 @@
     "aiCodingStack": "AI Coding Stack",
     "articles": "Articles",
     "benchmarks": "Тесты",
+    "by": "от",
     "collections": "Collections",
     "community": "Community",
     "communityLinks": "Community Links",
     "comparison": "Comparison",
-    "contextWindow": "ContextWindow",
+    "contextWindow": "Контекстное окно",
     "curatedCollections": "Curated Collections",
-    "docs": "Docs",
+    "docs": "Документация",
     "documentation": "Documentation",
     "ecosystemSubtitle": "Изучите полную экосистему AI coding: IDE, CLI, расширения, модели и провайдеры.",
     "ecosystemTools": "Ecosystem Tools",
     "faq": "FAQ",
     "featuredArticles": "Featured Articles",
     "followUs": "Follow us",
-    "indexLabel": "INDEX",
+    "indexLabel": "Индекс",
     "landscapeDescription": "Визуализация полной экосистемы AI coding",
     "landscapeTitle": "Ландшафт AI Coding",
     "license": "License",

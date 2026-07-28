@@ -6,6 +6,34 @@
     "light": "#4285F4",
     "dark": "#4285F4"
   },
+  "modelSeries": [
+    {
+      "id": "gemini-pro",
+      "name": "Gemini Pro",
+      "modelIds": ["gemini-2-5-pro", "gemini-3-pro", "gemini-3-1-pro-preview"]
+    },
+    {
+      "id": "gemini-flash",
+      "name": "Gemini Flash",
+      "modelIds": [
+        "gemini-2-0-flash",
+        "gemini-2-5-flash",
+        "gemini-3-flash",
+        "gemini-3-5-flash",
+        "gemini-3-6-flash"
+      ]
+    },
+    {
+      "id": "gemini-flash-lite",
+      "name": "Gemini Flash-Lite",
+      "modelIds": ["gemini-2-5-flash-lite", "gemini-3-5-flash-lite"]
+    },
+    {
+      "id": "gemma",
+      "name": "Gemma",
+      "modelIds": ["gemma-4-26b-a4b", "gemma-4-31b"]
+    }
+  ],
   "description": "A multinational technology company specializing in Internet-related services and products, including AI and machine learning.",
   "translations": {
     "zh-Hans": {

@@ -3,7 +3,6 @@
 import { ArrowDown, ArrowUp, ArrowUpDown } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useEffect, useMemo, useRef, useState } from 'react'
-import type { LabelProps } from 'recharts'
 import {
   CartesianGrid,
   LabelList,
@@ -15,6 +14,11 @@ import {
   XAxis,
   YAxis,
 } from 'recharts'
+import {
+  estimateModelChartLabelWidth,
+  ModelChartLabel,
+  ModelChartPoint,
+} from '@/components/charts/ModelChartLabel'
 import { useTheme } from '@/components/ThemeProvider'
 import { Link } from '@/i18n/navigation'
 import type {
@@ -95,15 +99,6 @@ const MODEL_LABEL_CANDIDATES: ModelLabelPlacement[] = [
   ),
 ]
 
-function estimateLabelWidth(label: string): number {
-  const width = Array.from(label).reduce(
-    (total, character) => total + (character.codePointAt(0)! > 0xff ? 10 : 6.5),
-    0
-  )
-
-  return Math.min(Math.max(width, 24), 180)
-}
-
 function getLabelBox(
   pointX: number,
   pointY: number,
@@ -169,7 +164,7 @@ function createModelLabelPlacements(
   for (const point of orderedPoints) {
     const pointX = ((point.timestamp - xMin) / xRange) * layoutWidth
     const pointY = (1 - point.score / scoreRange) * LABEL_LAYOUT_HEIGHT
-    const labelWidth = estimateLabelWidth(point.name)
+    const labelWidth = estimateModelChartLabelWidth(point.name)
     let bestCandidate = DEFAULT_MODEL_LABEL_PLACEMENT
     let bestBox = getLabelBox(pointX, pointY, labelWidth, bestCandidate)
     let bestPenalty = Number.POSITIVE_INFINITY
@@ -210,49 +205,6 @@ function formatDate(value: string | number, locale: string, includeDay = false):
   }).format(date)
 }
 
-function ModelPointLabel({
-  value,
-  viewBox,
-  placement,
-}: LabelProps & { placement: ModelLabelPlacement }) {
-  if (!viewBox || !('x' in viewBox) || !('y' in viewBox)) return <g />
-
-  const pointX = viewBox.x + ('width' in viewBox ? (viewBox.width ?? 0) / 2 : 0)
-  const pointY = viewBox.y + ('height' in viewBox ? (viewBox.height ?? 0) / 2 : 0)
-  const x = pointX + placement.dx
-  const y = pointY + placement.dy
-  const showLeader = Math.abs(placement.dy) > 20 || Math.abs(placement.dx) > 12
-
-  return (
-    <g pointerEvents="none">
-      {showLeader && (
-        <line
-          x1={pointX}
-          y1={pointY}
-          x2={x}
-          y2={y + (placement.dy < 0 ? 3 : -10)}
-          stroke="var(--color-text-muted)"
-          strokeOpacity={0.45}
-          strokeWidth={0.6}
-        />
-      )}
-      <text
-        x={x}
-        y={y}
-        fill="var(--color-text)"
-        stroke="var(--color-bg)"
-        strokeWidth={3}
-        paintOrder="stroke"
-        textAnchor={placement.textAnchor}
-        fontFamily="var(--font-mono)"
-        fontSize={10}
-      >
-        {String(value)}
-      </text>
-    </g>
-  )
-}
-
 function SeriesMarker({ marker, color }: { marker: ModelIntelligenceMarker; color: string }) {
   return <Symbols type={marker} cx={8} cy={4} size={18} fill={color} />
 }
@@ -267,6 +219,7 @@ export function ModelIntelligenceIndexPage({
   const tShared = useTranslations('shared')
   const { theme } = useTheme()
   const [selectedVendors, setSelectedVendors] = useState<string[]>([])
+  const [selectedSeries, setSelectedSeries] = useState<string[]>([])
   const chartContainerRef = useRef<HTMLDivElement>(null)
   const [labelLayoutWidth, setLabelLayoutWidth] = useState(MIN_CHART_WIDTH - CHART_HORIZONTAL_INSET)
   const [sort, setSort] = useState<{ field: SortField; direction: SortDirection }>({
@@ -290,21 +243,37 @@ export function ModelIntelligenceIndexPage({
   }, [points])
 
   const selectedVendorSet = useMemo(() => new Set(selectedVendors), [selectedVendors])
+  const selectedSeriesSet = useMemo(() => new Set(selectedSeries), [selectedSeries])
   const showAllVendors = selectedVendors.length === 0
+  const showAllSeries = selectedSeries.length === 0
+  const showAllFilters = showAllVendors && showAllSeries
   const visibleSeries = useMemo(
-    () => (showAllVendors ? series : series.filter(item => selectedVendorSet.has(item.vendor))),
+    () =>
+      series.filter(
+        item =>
+          (showAllVendors || selectedVendorSet.has(item.vendor)) &&
+          (showAllSeries || selectedSeriesSet.has(item.id))
+      ),
+    [selectedSeriesSet, selectedVendorSet, series, showAllSeries, showAllVendors]
+  )
+  const visibleSeriesSet = useMemo(
+    () => new Set(visibleSeries.map(item => item.id)),
+    [visibleSeries]
+  )
+  const selectedVendorSeries = useMemo(
+    () => (showAllVendors ? [] : series.filter(item => selectedVendorSet.has(item.vendor))),
     [selectedVendorSet, series, showAllVendors]
   )
   const visiblePoints = useMemo(
-    () => (showAllVendors ? points : points.filter(point => selectedVendorSet.has(point.vendor))),
-    [points, selectedVendorSet, showAllVendors]
+    () => points.filter(point => visibleSeriesSet.has(`${point.vendor}:${point.seriesId}`)),
+    [points, visibleSeriesSet]
   )
   const labelPlacements = useMemo(
     () =>
-      showAllVendors
+      showAllFilters
         ? new Map<string, ModelLabelPlacement>()
         : createModelLabelPlacements(visiblePoints, xDomain, yMax, labelLayoutWidth),
-    [visiblePoints, xDomain, yMax, labelLayoutWidth, showAllVendors]
+    [visiblePoints, xDomain, yMax, labelLayoutWidth, showAllFilters]
   )
 
   useEffect(() => {
@@ -352,13 +321,38 @@ export function ModelIntelligenceIndexPage({
 
     return Array.from(grouped.entries())
   }, [series])
+  const smallGridRemainder = seriesByVendor.length % 2
+  const smallLastRowStart =
+    seriesByVendor.length - (smallGridRemainder === 0 ? 2 : smallGridRemainder)
+  const largeGridRemainder = seriesByVendor.length % 4
+  const largeLastRowStart =
+    seriesByVendor.length - (largeGridRemainder === 0 ? 4 : largeGridRemainder)
 
   function toggleVendor(vendor: string) {
+    const isSelected = selectedVendorSet.has(vendor)
+
     setSelectedVendors(current =>
       current.includes(vendor)
         ? current.filter(selectedVendor => selectedVendor !== vendor)
         : [...current, vendor]
     )
+
+    if (isSelected) {
+      setSelectedSeries(current => current.filter(seriesId => !seriesId.startsWith(`${vendor}:`)))
+    }
+  }
+
+  function toggleSeries(seriesId: string) {
+    setSelectedSeries(current =>
+      current.includes(seriesId)
+        ? current.filter(selectedSeriesId => selectedSeriesId !== seriesId)
+        : [...current, seriesId]
+    )
+  }
+
+  function clearVendorFilters() {
+    setSelectedVendors([])
+    setSelectedSeries([])
   }
 
   function toggleSort(field: SortField) {
@@ -505,10 +499,10 @@ export function ModelIntelligenceIndexPage({
                       strokeDasharray: item.dash ?? undefined,
                     }}
                     lineType="joint"
-                    shape={item.marker}
+                    shape={<ModelChartPoint type={item.marker} />}
                     isAnimationActive={false}
                   >
-                    {!showAllVendors && (
+                    {!showAllFilters && (
                       <LabelList
                         dataKey="name"
                         content={labelProps => {
@@ -517,7 +511,15 @@ export function ModelIntelligenceIndexPage({
                             (point && labelPlacements.get(point.modelId)) ??
                             DEFAULT_MODEL_LABEL_PLACEMENT
 
-                          return <ModelPointLabel {...labelProps} placement={placement} />
+                          if (!point) return <g />
+
+                          return (
+                            <ModelChartLabel
+                              {...labelProps}
+                              modelId={point.modelId}
+                              placement={placement}
+                            />
+                          )
                         }}
                       />
                     )}
@@ -530,36 +532,87 @@ export function ModelIntelligenceIndexPage({
 
         <fieldset className="m-0 min-w-0 border-0 p-0">
           <legend className="sr-only">{tPage('filter.label')}</legend>
-          <div className="flex items-center justify-between gap-4 border-t border-[var(--color-border)] px-[var(--spacing-sm)] py-2">
-            <span className="font-mono text-xs text-[var(--color-text-secondary)]">
-              {tPage('filter.label')}
-            </span>
-            <button
-              type="button"
-              aria-pressed={showAllVendors}
-              className={`border border-[var(--color-border-strong)] px-3 py-1.5 font-mono text-xs transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-text)] ${
-                showAllVendors
-                  ? 'bg-[var(--color-text)] text-[var(--color-bg)]'
-                  : 'hover:bg-[var(--color-hover)]'
-              }`}
-              onClick={() => setSelectedVendors([])}
-            >
-              {tPage('filter.showAll')}
-            </button>
+          <div className="flex min-h-12 flex-col gap-2 border-t border-[var(--color-border)] px-[var(--spacing-sm)] py-2 lg:flex-row lg:items-center lg:justify-between">
+            <div className="flex min-w-0 flex-1 flex-wrap items-center gap-2">
+              <span className="mr-1 shrink-0 font-mono text-xs text-[var(--color-text-secondary)]">
+                {tPage('filter.seriesLabel')}
+              </span>
+              {selectedVendorSeries.map(item => {
+                const isSelected = selectedSeriesSet.has(item.id)
+
+                return (
+                  <button
+                    key={item.id}
+                    type="button"
+                    aria-pressed={isSelected}
+                    className={`flex items-center gap-1.5 border px-2 py-1 font-mono text-[11px] transition-colors focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[var(--color-text)] ${
+                      isSelected
+                        ? 'border-[var(--color-border)] bg-[var(--color-hover)] text-[var(--color-text)]'
+                        : 'border-[var(--color-border)] text-[var(--color-text-secondary)] hover:border-[var(--color-border-strong)] hover:bg-[var(--color-hover)]'
+                    }`}
+                    style={
+                      isSelected
+                        ? {
+                            boxShadow: `inset 2px 0 0 ${item.color[theme]}`,
+                          }
+                        : undefined
+                    }
+                    onClick={() => toggleSeries(item.id)}
+                  >
+                    <svg aria-hidden="true" className="h-2 w-4" viewBox="0 0 16 8">
+                      <line
+                        x1="0"
+                        y1="4"
+                        x2="16"
+                        y2="4"
+                        stroke={item.color[theme]}
+                        strokeDasharray={item.dash ?? undefined}
+                        strokeWidth="1.5"
+                      />
+                      <SeriesMarker marker={item.marker} color={item.color[theme]} />
+                    </svg>
+                    {item.name}
+                  </button>
+                )
+              })}
+            </div>
+
+            <div className="flex shrink-0 items-center justify-between gap-4 lg:justify-end">
+              <span className="font-mono text-xs text-[var(--color-text-secondary)]">
+                {tPage('filter.label')}
+              </span>
+              <button
+                type="button"
+                aria-pressed={showAllVendors}
+                className={`border border-[var(--color-border-strong)] px-3 py-1.5 font-mono text-xs transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-text)] ${
+                  showAllVendors
+                    ? 'bg-[var(--color-text)] text-[var(--color-bg)]'
+                    : 'hover:bg-[var(--color-hover)]'
+                }`}
+                onClick={clearVendorFilters}
+              >
+                {tPage('filter.showAll')}
+              </button>
+            </div>
           </div>
 
           <div className="grid border-t border-[var(--color-border)] sm:grid-cols-2 lg:grid-cols-4">
-            {seriesByVendor.map(([vendor, vendorSeries]) => {
+            {seriesByVendor.map(([vendor, vendorSeries], vendorIndex) => {
               const isSelected = selectedVendorSet.has(vendor)
+              const isLastVendor = vendorIndex === seriesByVendor.length - 1
+              const isInSmallLastRow = vendorIndex >= smallLastRowStart
+              const isInLargeLastRow = vendorIndex >= largeLastRowStart
 
               return (
                 <button
                   key={vendor}
                   type="button"
                   aria-pressed={isSelected}
-                  className={`min-h-28 border-b border-[var(--color-border)] p-[var(--spacing-sm)] text-left transition-colors hover:bg-[var(--color-hover)] focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[var(--color-text)] sm:border-r lg:[&:nth-last-child(-n+4)]:border-b-0 ${
-                    isSelected ? 'bg-[var(--color-hover)]' : ''
-                  }`}
+                  className={`min-h-28 border-b border-[var(--color-border)] p-[var(--spacing-sm)] text-left transition-colors hover:bg-[var(--color-hover)] focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[var(--color-text)] sm:border-r ${
+                    isLastVendor ? 'border-b-0' : ''
+                  } ${isInSmallLastRow ? 'sm:border-b-0' : ''} ${
+                    isInLargeLastRow ? 'lg:border-b-0' : ''
+                  } ${isSelected ? 'bg-[var(--color-hover)]' : ''}`}
                   style={
                     isSelected
                       ? {
@@ -625,11 +678,11 @@ export function ModelIntelligenceIndexPage({
           <table className="w-full min-w-[720px] border-collapse">
             <caption className="sr-only">{tPage('list.title')}</caption>
             <thead>
-              <tr className="border-b border-[var(--color-border-strong)] text-left font-mono text-xs text-[var(--color-text-secondary)]">
-                <th className="w-[44%] px-[var(--spacing-sm)] py-3 font-normal">
+              <tr className="border-b border-[var(--color-border)] text-left font-mono text-xs text-[var(--color-text-secondary)]">
+                <th className="w-[44%] px-[var(--spacing-sm)] py-3 font-semibold">
                   {tShared('categories.singular.model')}
                 </th>
-                <th aria-sort={getAriaSort('releaseDate')} className="w-[18%] p-0 font-normal">
+                <th aria-sort={getAriaSort('releaseDate')} className="w-[18%] p-0 font-semibold">
                   <button
                     type="button"
                     className={`flex w-full items-center gap-1.5 px-[var(--spacing-sm)] py-3 text-left hover:text-[var(--color-text)] focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[var(--color-text)] ${
@@ -641,7 +694,7 @@ export function ModelIntelligenceIndexPage({
                     {renderSortIcon('releaseDate')}
                   </button>
                 </th>
-                <th aria-sort={getAriaSort('index')} className="w-[38%] p-0 font-normal">
+                <th aria-sort={getAriaSort('index')} className="w-[38%] p-0 font-semibold">
                   <button
                     type="button"
                     className={`flex w-full items-center gap-1.5 px-[var(--spacing-sm)] py-3 text-left hover:text-[var(--color-text)] focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[var(--color-text)] ${

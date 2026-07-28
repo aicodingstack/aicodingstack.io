@@ -6,6 +6,46 @@
     "light": "#D97757",
     "dark": "#E58A6B"
   },
+  "modelSeries": [
+    {
+      "id": "claude-opus",
+      "name": "Claude Opus",
+      "modelIds": [
+        "claude-opus-3",
+        "claude-opus-4",
+        "claude-opus-4-1",
+        "claude-opus-4-5",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5"
+      ]
+    },
+    {
+      "id": "claude-sonnet",
+      "name": "Claude Sonnet",
+      "modelIds": [
+        "claude-sonnet-3",
+        "claude-sonnet-3-5-20240620",
+        "claude-sonnet-3-5-20241022",
+        "claude-sonnet-3-7",
+        "claude-sonnet-4",
+        "claude-sonnet-4-5",
+        "claude-sonnet-4-6",
+        "claude-sonnet-5"
+      ]
+    },
+    {
+      "id": "claude-haiku",
+      "name": "Claude Haiku",
+      "modelIds": ["claude-haiku-3", "claude-haiku-3-5", "claude-haiku-4-5"]
+    },
+    {
+      "id": "claude-fable",
+      "name": "Claude Fable",
+      "modelIds": ["claude-fable-5"]
+    }
+  ],
   "description": "An AI safety company focused on building reliable, interpretable, and steerable AI systems.",
   "translations": {
     "zh-Hans": {
