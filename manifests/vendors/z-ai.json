@@ -7,6 +7,28 @@
     "light": "#334155",
     "dark": "#94A3B8"
   },
+  "modelSeries": [
+    {
+      "id": "glm",
+      "name": "GLM",
+      "modelIds": ["glm-4-5", "glm-4-6", "glm-4-7", "glm-5", "glm-5-1", "glm-5-2"]
+    },
+    {
+      "id": "glm-air-flash",
+      "name": "GLM Air / Flash",
+      "modelIds": ["glm-4-5-air", "glm-4-7-flash"]
+    },
+    {
+      "id": "glm-vision",
+      "name": "GLM Vision",
+      "modelIds": ["glm-4-5v", "glm-4-6v", "glm-5v-turbo"]
+    },
+    {
+      "id": "glm-turbo",
+      "name": "GLM Turbo",
+      "modelIds": ["glm-5-turbo"]
+    }
+  ],
   "description": "An AI platform offering advanced language models and AI services for various applications including coding and content generation.",
   "translations": {
     "zh-Hans": {

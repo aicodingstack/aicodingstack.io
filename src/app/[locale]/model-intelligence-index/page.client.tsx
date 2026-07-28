@@ -265,7 +265,7 @@ export function ModelIntelligenceIndexPage({
     [selectedVendorSet, series, showAllVendors]
   )
   const visiblePoints = useMemo(
-    () => points.filter(point => visibleSeriesSet.has(`${point.vendor}:${point.series}`)),
+    () => points.filter(point => visibleSeriesSet.has(`${point.vendor}:${point.seriesId}`)),
     [points, visibleSeriesSet]
   )
   const labelPlacements = useMemo(

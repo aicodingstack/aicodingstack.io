@@ -62,7 +62,36 @@ describe('model intelligence index', () => {
       expect(point.score).toBeGreaterThanOrEqual(0)
       expect(point.score).toBeLessThanOrEqual(100)
       expect(point.series.length).toBeGreaterThan(0)
+      expect(point.seriesId).toMatch(/^[a-z0-9-]+$/)
+      expect(point.seriesOrder).toBeGreaterThanOrEqual(0)
     }
+  })
+
+  it('loads model-series membership from schema-backed vendor manifests', () => {
+    const modelsById = new Map(modelsData.map(model => [model.id, model]))
+    const assignedModelIds = new Set<string>()
+
+    for (const vendor of vendorsData) {
+      const seriesIds = new Set<string>()
+
+      for (const series of vendor.modelSeries ?? []) {
+        expect(seriesIds.has(series.id)).toBe(false)
+        seriesIds.add(series.id)
+
+        for (const modelId of series.modelIds) {
+          expect(assignedModelIds.has(modelId)).toBe(false)
+          assignedModelIds.add(modelId)
+
+          const model = modelsById.get(modelId)
+          expect(model).toBeDefined()
+          expect(findVendorByName(vendorsData, model!.vendor)?.id).toBe(vendor.id)
+        }
+      }
+    }
+
+    expect(
+      allModelIntelligencePoints.filter(point => !assignedModelIds.has(point.modelId))
+    ).toEqual([])
   })
 
   it('requires every new catalog model to have an Intelligence Index entry', () => {

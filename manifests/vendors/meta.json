@@ -6,6 +6,18 @@
     "light": "#0866FF",
     "dark": "#0866FF"
   },
+  "modelSeries": [
+    {
+      "id": "llama",
+      "name": "Llama",
+      "modelIds": ["llama-4-scout", "llama-4-maverick"]
+    },
+    {
+      "id": "muse",
+      "name": "Muse",
+      "modelIds": ["muse-spark-1-1"]
+    }
+  ],
   "description": "Technology company building AI tools and open-source models like Llama, advancing research through open science to connect people and enable innovation worldwide.",
   "translations": {
     "zh-Hans": {

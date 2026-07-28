@@ -6,6 +6,23 @@
     "light": "#4A4A4A",
     "dark": "#A3A3A3"
   },
+  "modelSeries": [
+    {
+      "id": "grok",
+      "name": "Grok",
+      "modelIds": ["grok-4", "grok-4-20", "grok-4-3", "grok-4-5"]
+    },
+    {
+      "id": "grok-code",
+      "name": "Grok Code",
+      "modelIds": ["grok-code-fast-1"]
+    },
+    {
+      "id": "grok-fast",
+      "name": "Grok Fast",
+      "modelIds": ["grok-4-fast", "grok-4-1-fast"]
+    }
+  ],
   "description": "AI company advancing scientific discovery and understanding of the universe, creator of Grok AI models and the world's largest AI supercomputer, Colossus.",
   "translations": {
     "zh-Hans": {

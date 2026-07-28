@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Model Price Intelligence Index Configuration",
+  "description": "Curated model selection, price weighting, and chart-label placement for the model price-intelligence ranking.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "inputShare": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "outputShare": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "models": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/selectedModel"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "required": ["$schema", "inputShare", "outputShare", "models"],
+  "additionalProperties": false,
+  "$defs": {
+    "labelAnchor": {
+      "type": "string",
+      "enum": ["start", "middle", "end"]
+    },
+    "selectedModel": {
+      "type": "object",
+      "properties": {
+        "modelId": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "labelDx": {
+          "type": "number"
+        },
+        "labelDy": {
+          "type": "number"
+        },
+        "labelAnchor": {
+          "$ref": "#/$defs/labelAnchor"
+        },
+        "linearLabelDx": {
+          "type": "number"
+        },
+        "linearLabelDy": {
+          "type": "number"
+        },
+        "linearLabelAnchor": {
+          "$ref": "#/$defs/labelAnchor"
+        },
+        "usdPriceOverride": {
+          "$ref": "#/$defs/usdPriceOverride"
+        }
+      },
+      "required": ["modelId", "labelDx", "labelDy", "labelAnchor"],
+      "additionalProperties": false
+    },
+    "usdPriceOverride": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "output": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "sourceUrl": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        }
+      },
+      "required": ["input", "output", "sourceUrl"],
+      "additionalProperties": false
+    }
+  }
+}

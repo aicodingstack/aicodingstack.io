@@ -2,13 +2,24 @@ import { modelsData } from '@/lib/generated/models'
 import { vendorsData } from '@/lib/generated/vendors'
 import { findVendorByName } from '@/lib/vendor-identity'
 import artificialAnalysisData from '../../data/artificial-analysis-index.json'
+import modelIntelligenceData from '../../data/model-intelligence-index.json'
 
 const FALLBACK_COLOR: ModelIntelligenceThemeColor = {
   light: '#6b7280',
   dark: '#9ca3af',
 }
 
-export const modelIntelligenceHiddenVendors = ['Mistral AI'] as const
+export const modelIntelligenceHiddenVendors = modelIntelligenceData.hiddenVendorIds.map(
+  vendorId => {
+    const vendor = vendorsData.find(candidate => candidate.id === vendorId)
+
+    if (!vendor) {
+      throw new Error(`Model intelligence configuration has no matching vendor: ${vendorId}`)
+    }
+
+    return vendor.name
+  }
+)
 export const modelIntelligenceLegacyMissingModelIds = artificialAnalysisData.legacyMissingModelIds
 
 export interface ModelIntelligenceThemeColor {
@@ -30,6 +41,8 @@ export interface ModelIntelligencePoint {
   name: string
   vendor: string
   series: string
+  seriesId: string
+  seriesOrder: number
   score: number
   estimated: boolean
   configuration: string
@@ -42,6 +55,7 @@ export interface ModelIntelligenceSeries {
   id: string
   vendor: string
   name: string
+  order: number
   color: ModelIntelligenceThemeColor
   dash: string | null
   marker: ModelIntelligenceMarker
@@ -60,95 +74,33 @@ export function createTimelineTicks([start, end]: [number, number], tickCount = 
   return ticks.filter((tick, index) => index === 0 || tick !== ticks[index - 1])
 }
 
-function getOpenAISeries(id: string): string {
-  if (id.startsWith('o') && id.includes('mini')) return 'o mini'
-  if (id.includes('mini')) return 'GPT mini(Terra)'
-  if (id.startsWith('o')) return 'o-series'
-  if (id.includes('codex')) return 'GPT Codex'
-  if (id.startsWith('gpt-5-6-sol')) return 'GPT (Sol)'
-  if (id.startsWith('gpt-5-6-terra')) return 'GPT mini(Terra)'
-  if (id.startsWith('gpt-5-6-luna')) return 'GPT nano(Luna)'
-  if (id.includes('nano')) return 'GPT nano(Luna)'
-  return 'GPT (Sol)'
-}
-
-function getSeries(id: string, vendor: string): string {
-  if (vendor === 'Anthropic') {
-    if (id.includes('opus')) return 'Claude Opus'
-    if (id.includes('sonnet')) return 'Claude Sonnet'
-    if (id.includes('haiku')) return 'Claude Haiku'
-    if (id.includes('fable')) return 'Claude Fable'
-    return 'Claude'
-  }
-
-  if (vendor === 'OpenAI') return getOpenAISeries(id)
-
-  if (vendor === 'Google') {
-    if (id.startsWith('gemma-')) return 'Gemma'
-    if (id.includes('flash-lite')) return 'Gemini Flash-Lite'
-    if (id.includes('flash')) return 'Gemini Flash'
-    if (id.includes('pro')) return 'Gemini Pro'
-    return 'Gemini'
-  }
-
-  if (vendor === 'DeepSeek') {
-    if (id.includes('coder')) return 'DeepSeek Coder'
-    if (id.includes('flash')) return 'DeepSeek Flash'
-    return 'DeepSeek'
-  }
-
-  if (vendor === 'Mistral AI') {
-    if (id.startsWith('devstral')) return 'Devstral'
-    if (id.startsWith('codestral')) return 'Codestral'
-    if (id.includes('medium')) return 'Mistral Medium'
-    if (id.includes('small')) return 'Mistral Small'
-    return 'Mistral'
-  }
-
-  if (vendor === 'xAI') {
-    if (id.includes('code')) return 'Grok Code'
-    if (id.includes('fast')) return 'Grok Fast'
-    return 'Grok'
-  }
-
-  if (vendor === 'Alibaba') {
-    if (id.includes('coder')) return 'Qwen Coder'
-    if (id.includes('max')) return 'Qwen Max'
-    if (id.includes('plus')) return 'Qwen Plus'
-    return 'Qwen Open'
-  }
-
-  if (vendor === 'Moonshot') {
-    if (id.includes('code')) return 'Kimi Code'
-    return 'Kimi'
-  }
-
-  if (vendor === 'Tencent') return 'Hunyuan'
-
-  if (vendor === 'Xiaomi') {
-    if (id === 'mimo-v2-5-pro') return 'MiMo Pro'
-    if (id === 'mimo-v2-5') return 'MiMo'
-    if (id === 'mimo-v2-flash') return 'MiMo Flash'
-    return 'MiMo'
-  }
-
-  if (vendor === 'Meta') {
-    if (id.startsWith('llama')) return 'Llama'
-    if (id.startsWith('muse')) return 'Muse'
-  }
-
-  if (vendor === 'Z.ai') {
-    if (/^glm-\d+(?:-\d+)?v(?:-|$)/.test(id)) return 'GLM Vision'
-    if (id.includes('flash') || id.includes('air')) return 'GLM Air / Flash'
-    if (id.includes('turbo')) return 'GLM Turbo'
-    return 'GLM'
-  }
-
-  if (vendor === 'MiniMax') return 'MiniMax M'
-  return vendor
-}
-
 const modelById = new Map(modelsData.map(model => [model.id, model]))
+const modelSeriesByModelId = new Map<
+  string,
+  {
+    vendorId: string
+    seriesId: string
+    seriesName: string
+    seriesOrder: number
+  }
+>()
+
+for (const vendor of vendorsData) {
+  vendor.modelSeries?.forEach((series, seriesOrder) => {
+    for (const modelId of series.modelIds) {
+      if (modelSeriesByModelId.has(modelId)) {
+        throw new Error(`Model belongs to multiple vendor series: ${modelId}`)
+      }
+
+      modelSeriesByModelId.set(modelId, {
+        vendorId: vendor.id,
+        seriesId: series.id,
+        seriesName: series.name,
+        seriesOrder,
+      })
+    }
+  })
+}
 
 export const allModelIntelligencePoints: ModelIntelligencePoint[] =
   artificialAnalysisData.entries.map(entry => {
@@ -158,14 +110,28 @@ export const allModelIntelligencePoints: ModelIntelligencePoint[] =
       throw new Error(`Artificial Analysis entry has no matching dated model: ${entry.modelId}`)
     }
 
+    const series = modelSeriesByModelId.get(model.id)
+
+    if (!series) {
+      throw new Error(`Artificial Analysis model has no vendor series: ${model.id}`)
+    }
+
+    const vendor = findVendorByName(vendorsData, model.vendor)
+
+    if (!vendor || series.vendorId !== vendor.id) {
+      throw new Error(`Model series vendor does not match model vendor: ${model.id}`)
+    }
+
     return {
       ...entry,
       name: model.name,
       vendor: model.vendor,
-      series: getSeries(model.id, model.vendor),
+      series: series.seriesName,
+      seriesId: series.seriesId,
+      seriesOrder: series.seriesOrder,
       releaseDate: model.releaseDate,
       timestamp: Date.parse(`${model.releaseDate}T00:00:00Z`),
-      color: findVendorByName(vendorsData, model.vendor)?.themeColor ?? FALLBACK_COLOR,
+      color: vendor.themeColor ?? FALLBACK_COLOR,
     }
   })
 
@@ -176,24 +142,9 @@ export const modelIntelligencePoints = allModelIntelligencePoints.filter(
 )
 
 const groupedSeries = new Map<string, ModelIntelligenceSeries>()
-const SERIES_ORDER_BY_VENDOR: Record<string, readonly string[]> = {
-  Alibaba: ['Qwen Max', 'Qwen Plus', 'Qwen Coder', 'Qwen Open'],
-  Anthropic: ['Claude Opus', 'Claude Sonnet', 'Claude Haiku', 'Claude Fable'],
-  DeepSeek: ['DeepSeek', 'DeepSeek Flash', 'DeepSeek Coder'],
-  Google: ['Gemini Pro', 'Gemini Flash', 'Gemini Flash-Lite', 'Gemma'],
-  OpenAI: ['GPT (Sol)', 'GPT mini(Terra)', 'GPT nano(Luna)', 'GPT Codex', 'o mini', 'o-series'],
-  Xiaomi: ['MiMo Pro', 'MiMo', 'MiMo Flash'],
-  'Z.ai': ['GLM', 'GLM Air / Flash', 'GLM Vision', 'GLM Turbo'],
-}
-
-function getSeriesOrder(vendor: string, series: string): number {
-  const index = SERIES_ORDER_BY_VENDOR[vendor]?.indexOf(series) ?? -1
-
-  return index === -1 ? Number.MAX_SAFE_INTEGER : index
-}
 
 for (const point of modelIntelligencePoints) {
-  const id = `${point.vendor}:${point.series}`
+  const id = `${point.vendor}:${point.seriesId}`
   const existing = groupedSeries.get(id)
 
   if (existing) {
@@ -203,6 +154,7 @@ for (const point of modelIntelligencePoints) {
       id,
       vendor: point.vendor,
       name: point.series,
+      order: point.seriesOrder,
       color: point.color,
       dash: null,
       marker: 'circle',
@@ -219,7 +171,7 @@ const sortedSeries = Array.from(groupedSeries.values())
   .sort(
     (a, b) =>
       a.vendor.localeCompare(b.vendor) ||
-      getSeriesOrder(a.vendor, a.name) - getSeriesOrder(b.vendor, b.name) ||
+      a.order - b.order ||
       a.name.localeCompare(b.name, 'en', { numeric: true, sensitivity: 'base' })
   )
 

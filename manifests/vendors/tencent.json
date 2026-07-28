@@ -6,6 +6,13 @@
     "light": "#0052A3",
     "dark": "#66B3FF"
   },
+  "modelSeries": [
+    {
+      "id": "hunyuan",
+      "name": "Hunyuan",
+      "modelIds": ["hy3"]
+    }
+  ],
   "description": "World's largest video game vendor and technology conglomerate offering social networks, messaging (WeChat/QQ), cloud services, payment systems, and AI technology.",
   "translations": {
     "zh-Hans": {

@@ -7,6 +7,23 @@
     "light": "#D95F00",
     "dark": "#FF8A33"
   },
+  "modelSeries": [
+    {
+      "id": "devstral",
+      "name": "Devstral",
+      "modelIds": ["devstral-2", "devstral-small-2"]
+    },
+    {
+      "id": "mistral-medium",
+      "name": "Mistral Medium",
+      "modelIds": ["mistral-medium-3-5"]
+    },
+    {
+      "id": "mistral-small",
+      "name": "Mistral Small",
+      "modelIds": ["mistral-small-4"]
+    }
+  ],
   "description": "European AI company developing open-weight and commercial frontier models, including Codestral and Devstral coding models, developer tools, and deployment infrastructure.",
   "translations": {
     "de": {

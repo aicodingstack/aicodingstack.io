@@ -6,6 +6,23 @@
     "light": "#E85D00",
     "dark": "#FF7A1A"
   },
+  "modelSeries": [
+    {
+      "id": "mimo-pro",
+      "name": "MiMo Pro",
+      "modelIds": ["mimo-v2-5-pro"]
+    },
+    {
+      "id": "mimo",
+      "name": "MiMo",
+      "modelIds": ["mimo-v2-5"]
+    },
+    {
+      "id": "mimo-flash",
+      "name": "MiMo Flash",
+      "modelIds": ["mimo-v2-flash"]
+    }
+  ],
   "description": "A global technology company developing smartphones, connected devices, intelligent systems, and the Xiaomi MiMo family of AI models.",
   "translations": {
     "de": {
