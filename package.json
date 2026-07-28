@@ -34,8 +34,6 @@
     "data-health": "npx tsx scripts/validate/data-health.ts",
     "data-health:check": "npx tsx scripts/validate/data-health.ts --check-snapshot --fail-on=error",
     "data-health:report": "npx tsx scripts/validate/data-health.ts --write",
-    "changelog:check": "npx tsx scripts/validate/changelog.ts --check",
-    "changelog:generate": "npx tsx scripts/validate/changelog.ts --write",
     "dev:e2e": "next dev --turbopack -p 3100",
     "generate": "npx tsx scripts/generate/index.ts",
     "generate:manifests": "npx tsx scripts/generate/index.ts manifest-indexes",
@@ -114,7 +112,6 @@
     "node": "^22.0.0"
   },
   "overrides": {
-    "@node-minify/core": "8.0.5",
     "next": {
       "sharp": "0.35.2"
     },

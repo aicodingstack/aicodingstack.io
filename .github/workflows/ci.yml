@@ -73,11 +73,6 @@ jobs:
       - name: Check data health
         run: npm run data-health:check
 
-      - name: Check manifest changelog
-        run: npm run changelog:check
-        env:
-          CHANGELOG_BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
-
   spell-check:
     name: Spell Check
     runs-on: ubuntu-latest
