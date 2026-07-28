@@ -19,157 +19,100 @@ type ManifestItem = {
 }
 
 function getLocalizedUrl(baseUrl: string, path: string, locale: string): string {
+  const localizedPath = path === '/' ? '' : path
+
   if (locale === 'en') {
-    return `${baseUrl}${path}`
+    return `${baseUrl}${localizedPath}`
   }
-  return `${baseUrl}/${locale}${path}`
+  return `${baseUrl}/${locale}${localizedPath}`
 }
 
 function generateLocalizedPages(
   baseUrl: string,
   path: string,
-  options: Omit<MetadataRoute.Sitemap[0], 'url' | 'alternates'>
+  options: Pick<MetadataRoute.Sitemap[0], 'lastModified'> = {}
 ): MetadataRoute.Sitemap {
   return locales.map(locale => ({
     url: getLocalizedUrl(baseUrl, path, locale),
-    alternates: {
-      languages: Object.fromEntries(locales.map(loc => [loc, getLocalizedUrl(baseUrl, path, loc)])),
-    },
     ...options,
   }))
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = SITE_CONFIG.url
-  const currentDate = new Date()
-
-  // Use build time for more accurate lastModified
-  const buildDate = process.env.BUILD_TIME ? new Date(process.env.BUILD_TIME) : currentDate
 
   // Static pages - generate for all locales
   const staticPaths = [
-    { path: '/', priority: 1, changeFreq: 'weekly' as const },
-    { path: '/ides', priority: 0.8, changeFreq: 'daily' as const },
-    { path: '/clis', priority: 0.8, changeFreq: 'daily' as const },
-    { path: '/desktops', priority: 0.8, changeFreq: 'daily' as const },
-    { path: '/extensions', priority: 0.8, changeFreq: 'daily' as const },
-    { path: '/models', priority: 0.8, changeFreq: 'daily' as const },
-    { path: '/model-providers', priority: 0.8, changeFreq: 'daily' as const },
-    { path: '/vendors', priority: 0.8, changeFreq: 'daily' as const },
-    { path: '/articles', priority: 0.8, changeFreq: 'daily' as const },
-    { path: '/ai-coding-stack', priority: 0.9, changeFreq: 'weekly' as const },
-    { path: '/docs', priority: 0.8, changeFreq: 'weekly' as const },
-    { path: '/curated-collections', priority: 0.7, changeFreq: 'monthly' as const },
-    { path: '/manifesto', priority: 0.7, changeFreq: 'monthly' as const },
-    { path: '/ai-coding-landscape', priority: 0.8, changeFreq: 'weekly' as const },
-    { path: '/open-source-rank', priority: 0.8, changeFreq: 'daily' as const },
-    { path: '/model-intelligence-index', priority: 0.8, changeFreq: 'weekly' as const },
-    { path: '/model-price-intelligence-index', priority: 0.8, changeFreq: 'weekly' as const },
-    { path: '/ides/comparison', priority: 0.7, changeFreq: 'weekly' as const },
-    { path: '/clis/comparison', priority: 0.7, changeFreq: 'weekly' as const },
-    { path: '/extensions/comparison', priority: 0.7, changeFreq: 'weekly' as const },
-    { path: '/models/compare', priority: 0.7, changeFreq: 'weekly' as const },
+    '/',
+    '/ides',
+    '/clis',
+    '/desktops',
+    '/extensions',
+    '/models',
+    '/model-providers',
+    '/vendors',
+    '/articles',
+    '/ai-coding-stack',
+    '/docs',
+    '/curated-collections',
+    '/manifesto',
+    '/ai-coding-landscape',
+    '/open-source-rank',
+    '/model-intelligence-index',
+    '/model-price-intelligence-index',
+    '/ides/comparison',
+    '/clis/comparison',
+    '/extensions/comparison',
+    '/models/compare',
   ]
 
-  const staticPages: MetadataRoute.Sitemap = staticPaths.flatMap(({ path, priority, changeFreq }) =>
-    generateLocalizedPages(baseUrl, path, {
-      lastModified: buildDate,
-      changeFrequency: changeFreq,
-      priority,
-    })
+  const staticPages: MetadataRoute.Sitemap = staticPaths.flatMap(path =>
+    generateLocalizedPages(baseUrl, path)
   )
 
   // Article pages - generate for all locales
   const articlePages: MetadataRoute.Sitemap = articles.flatMap(article =>
     generateLocalizedPages(baseUrl, `/articles/${article.slug}`, {
       lastModified: new Date(article.date),
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
     })
   )
 
   // Doc pages - generate for all locales
   const docPages: MetadataRoute.Sitemap = docSections.flatMap(doc =>
-    generateLocalizedPages(baseUrl, `/docs/${doc.slug}`, {
-      lastModified: buildDate,
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    })
+    generateLocalizedPages(baseUrl, `/docs/${doc.slug}`)
   )
 
   // IDE detail pages - generate for all locales
   const ideDetailPages: MetadataRoute.Sitemap = (idesData as unknown as ManifestItem[])
     .filter(ide => ide.id)
-    .flatMap(ide =>
-      generateLocalizedPages(baseUrl, `/ides/${ide.id}`, {
-        lastModified: buildDate,
-        changeFrequency: 'weekly' as const,
-        priority: 0.6,
-      })
-    )
+    .flatMap(ide => generateLocalizedPages(baseUrl, `/ides/${ide.id}`))
 
   // CLI detail pages - generate for all locales
   const cliDetailPages: MetadataRoute.Sitemap = (clisData as unknown as ManifestItem[])
     .filter(cli => cli.id)
-    .flatMap(cli =>
-      generateLocalizedPages(baseUrl, `/clis/${cli.id}`, {
-        lastModified: buildDate,
-        changeFrequency: 'weekly' as const,
-        priority: 0.6,
-      })
-    )
+    .flatMap(cli => generateLocalizedPages(baseUrl, `/clis/${cli.id}`))
 
   const desktopDetailPages: MetadataRoute.Sitemap = (desktopsData as unknown as ManifestItem[])
     .filter(desktop => desktop.id)
-    .flatMap(desktop =>
-      generateLocalizedPages(baseUrl, `/desktops/${desktop.id}`, {
-        lastModified: buildDate,
-        changeFrequency: 'weekly' as const,
-        priority: 0.6,
-      })
-    )
+    .flatMap(desktop => generateLocalizedPages(baseUrl, `/desktops/${desktop.id}`))
 
-  // Model detail pages - generate for all locales (更频繁更新)
+  // Model detail pages - generate for all locales
   const modelDetailPages: MetadataRoute.Sitemap = (modelsData as unknown as ManifestItem[])
     .filter(model => model.id)
-    .flatMap(model =>
-      generateLocalizedPages(baseUrl, `/models/${model.id}`, {
-        lastModified: buildDate,
-        changeFrequency: 'daily' as const,
-        priority: 0.6,
-      })
-    )
+    .flatMap(model => generateLocalizedPages(baseUrl, `/models/${model.id}`))
 
   // Provider detail pages - generate for all locales
   const providerDetailPages: MetadataRoute.Sitemap = (providersData as unknown as ManifestItem[])
     .filter(provider => provider.id)
-    .flatMap(provider =>
-      generateLocalizedPages(baseUrl, `/model-providers/${provider.id}`, {
-        lastModified: buildDate,
-        changeFrequency: 'weekly' as const,
-        priority: 0.6,
-      })
-    )
+    .flatMap(provider => generateLocalizedPages(baseUrl, `/model-providers/${provider.id}`))
 
   const extensionDetailPages: MetadataRoute.Sitemap = (extensionsData as unknown as ManifestItem[])
     .filter(extension => extension.id)
-    .flatMap(extension =>
-      generateLocalizedPages(baseUrl, `/extensions/${extension.id}`, {
-        lastModified: buildDate,
-        changeFrequency: 'weekly' as const,
-        priority: 0.6,
-      })
-    )
+    .flatMap(extension => generateLocalizedPages(baseUrl, `/extensions/${extension.id}`))
 
   const vendorDetailPages: MetadataRoute.Sitemap = (vendorsData as unknown as ManifestItem[])
     .filter(vendor => vendor.id)
-    .flatMap(vendor =>
-      generateLocalizedPages(baseUrl, `/vendors/${vendor.id}`, {
-        lastModified: buildDate,
-        changeFrequency: 'weekly' as const,
-        priority: 0.6,
-      })
-    )
+    .flatMap(vendor => generateLocalizedPages(baseUrl, `/vendors/${vendor.id}`))
 
   return [
     ...staticPages,
