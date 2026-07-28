@@ -78,10 +78,6 @@
   "vendor": "Continue Dev",
   "familyId": "continue",
   "latestVersion": "2.0.0",
-  "releaseTracking": {
-    "provider": "npm",
-    "identifier": "@continuedev/cli"
-  },
   "githubUrl": "https://github.com/continuedev/continue",
   "license": "Apache-2.0",
   "pricing": [],
