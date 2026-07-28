@@ -65,6 +65,11 @@ export interface ManifestSource {
   url: string
   title?: string
   fields?: string[]
+  changeTracking?: {
+    method: 'normalized-content-sha256'
+    digest: string | null
+    observedAt: string | null
+  }
 }
 
 /**
@@ -132,6 +137,29 @@ export interface ManifestRelatedProduct {
 }
 
 /**
+ * Declarative latest-version source
+ * Based on: /manifests/$schemas/ref/product.schema.json#$defs/releaseTracking
+ */
+export type ManifestReleaseTracking =
+  | {
+      provider: 'npm'
+      identifier: string
+      channel?: string
+    }
+  | {
+      provider: 'homebrew-formula' | 'homebrew-cask' | 'crates-io' | 'pypi'
+      identifier: string
+    }
+  | {
+      provider: 'vscode-marketplace'
+      identifier: string
+    }
+  | {
+      provider: 'github-release'
+      identifier: string
+    }
+
+/**
  * Platform installation information
  * Based on: /manifests/$schemas/ref/app.schema.json
  */
@@ -151,6 +179,7 @@ export interface ManifestBaseProduct extends ManifestVendorEntity {
   /** Stable identifier shared by every surface in the same product family */
   familyId?: string
   latestVersion: string
+  releaseTracking?: ManifestReleaseTracking
   githubUrl: string | null
   license: string
   pricing: ManifestPricingTier[]
@@ -274,6 +303,17 @@ export interface ManifestUnavailableTokenPricing {
 
 export type ManifestTokenPricing = ManifestAvailableTokenPricing | ManifestUnavailableTokenPricing
 
+export interface ManifestReferenceTokenPricing {
+  currency: string
+  basis: 'first-party-api' | 'provider-median'
+  rates: ManifestTokenPricingRates
+  source: {
+    name: string
+    url: string
+    observedAt: string
+  }
+}
+
 /**
  * Benchmark scores
  * Based on: /manifests/$schemas/model.schema.json
@@ -286,6 +326,18 @@ export interface ManifestBenchmarks {
   webDevArena: number | null
   sciCode: number | null
   liveCodeBench: number | null
+}
+
+/**
+ * Exact upstream benchmark leaderboard entry
+ * Based on: /manifests/$schemas/model.schema.json#$defs/benchmarkTracking
+ */
+export interface ManifestBenchmarkTracking {
+  provider: 'swe-bench'
+  benchmark: 'sweBench'
+  leaderboard: 'Verified'
+  resultId: string
+  modelLabel: string
 }
 
 /**
@@ -303,6 +355,7 @@ export interface ManifestModel extends ManifestVendorEntity {
   contextWindow: number
   maxOutput: number | null
   tokenPricing: ManifestTokenPricing
+  referenceTokenPricing?: ManifestReferenceTokenPricing
   releaseDate: string | null
   lifecycle: ModelLifecycle
   knowledgeCutoff: string | null
@@ -310,6 +363,7 @@ export interface ManifestModel extends ManifestVendorEntity {
   outputModalities: ModelOutputModality[]
   capabilities: ModelCapability[]
   benchmarks: ManifestBenchmarks
+  benchmarkTracking?: ManifestBenchmarkTracking[]
   platformUrls: ManifestPlatformUrls
 }
 

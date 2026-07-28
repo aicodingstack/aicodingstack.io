@@ -85,6 +85,15 @@
     "sciCode": null,
     "liveCodeBench": null
   },
+  "benchmarkTracking": [
+    {
+      "provider": "swe-bench",
+      "benchmark": "sweBench",
+      "leaderboard": "Verified",
+      "resultId": "20250726_mini-v1.0.0_gpt-4.1-2025-04-14",
+      "modelLabel": "mini-SWE-agent + GPT-4.1 (2025-04-14)"
+    }
+  ],
   "platformUrls": {
     "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-4-1",

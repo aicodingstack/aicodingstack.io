@@ -42,7 +42,11 @@
   "websiteUrl": "https://www.codebuddy.ai/cli",
   "docsUrl": "https://www.codebuddy.ai/docs/cli",
   "vendor": "Tencent",
-  "latestVersion": "Latest",
+  "latestVersion": "1.0.0",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "codebuddy-cli"
+  },
   "githubUrl": null,
   "license": "Proprietary",
   "pricing": [

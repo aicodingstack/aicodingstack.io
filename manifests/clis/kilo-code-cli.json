@@ -43,6 +43,10 @@
   "docsUrl": "https://kilo.ai/docs/code-with-ai/platforms/cli",
   "vendor": "Kilo",
   "latestVersion": "7.4.16",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "@kilocode/cli"
+  },
   "githubUrl": "https://github.com/Kilo-Org/kilocode",
   "license": "Apache-2.0",
   "familyId": "kilo-code",

@@ -63,7 +63,12 @@
     {
       "url": "https://mistral.ai/pricing/api/",
       "title": "Mistral API pricing",
-      "fields": ["tokenPricing"]
+      "fields": ["tokenPricing"],
+      "changeTracking": {
+        "method": "normalized-content-sha256",
+        "digest": "sha256:740ecd45540ba01718b7682233cefd2f5b1f4dae7d40a16887e750dc9a0b84f0",
+        "observedAt": "2026-07-28"
+      }
     }
   ],
   "lastVerifiedAt": "2026-07-21",

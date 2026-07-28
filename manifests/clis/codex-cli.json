@@ -43,7 +43,11 @@
   "websiteUrl": "https://openai.com/codex",
   "docsUrl": "https://developers.openai.com/codex/cli",
   "vendor": "OpenAI",
-  "latestVersion": "0.44.0",
+  "latestVersion": "0.145.0",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "@openai/codex"
+  },
   "githubUrl": "https://github.com/openai/codex",
   "license": "Apache-2.0",
   "pricing": [

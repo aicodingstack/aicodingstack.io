@@ -42,7 +42,11 @@
   "websiteUrl": "https://neovateai.dev",
   "docsUrl": "https://neovateai.dev/en/docs/overview",
   "vendor": "Ant Group",
-  "latestVersion": "0.12.7",
+  "latestVersion": "0.28.5",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "@neovate/code"
+  },
   "githubUrl": "https://github.com/neovateai/neovate-code",
   "license": "MIT",
   "pricing": [

@@ -4,6 +4,7 @@ import {
   type ModelIntelligenceThemeColor,
   modelIntelligenceMeta,
 } from '@/lib/model-intelligence-index'
+import type { ManifestModel } from '@/types/manifests'
 import modelPriceIntelligenceData from '../../data/model-price-intelligence-index.json'
 
 const INPUT_SHARE = modelPriceIntelligenceData.inputShare
@@ -19,11 +20,6 @@ interface SelectedModel {
   linearLabelDx?: number
   linearLabelDy?: number
   linearLabelAnchor?: LabelAnchor
-  usdPriceOverride?: {
-    input: number
-    output: number
-    sourceUrl: string
-  }
 }
 
 const selectedModels = modelPriceIntelligenceData.models as SelectedModel[]
@@ -46,11 +42,58 @@ export interface ModelPriceIntelligencePoint {
   linearLabelDx?: number
   linearLabelDy?: number
   linearLabelAnchor?: LabelAnchor
-  pricingSource: 'catalog' | 'artificial-analysis'
+  pricingSource: 'official' | 'reference'
   pricingSourceUrl: string | null
 }
 
-const modelById = new Map(modelsData.map(model => [model.id, model]))
+interface ComparableUsdPricing {
+  input: number
+  output: number
+  source: ModelPriceIntelligencePoint['pricingSource']
+  sourceUrl: string | null
+}
+
+function getComparableUsdPricing(model: ManifestModel): ComparableUsdPricing {
+  const primaryOffer =
+    model.tokenPricing.status === 'available'
+      ? model.tokenPricing.offers.find(offer => offer.id === model.tokenPricing.primaryOffer)
+      : undefined
+  const primaryRates = primaryOffer?.tiers[0]?.rates
+
+  if (
+    primaryOffer?.currency === 'USD' &&
+    primaryRates?.input !== null &&
+    primaryRates?.input !== undefined &&
+    primaryRates.output !== null &&
+    primaryRates.output !== undefined
+  ) {
+    return {
+      input: primaryRates.input,
+      output: primaryRates.output,
+      source: 'official',
+      sourceUrl: null,
+    }
+  }
+
+  const referencePricing = model.referenceTokenPricing
+
+  if (
+    referencePricing?.currency === 'USD' &&
+    referencePricing.rates.input !== null &&
+    referencePricing.rates.output !== null
+  ) {
+    return {
+      input: referencePricing.rates.input,
+      output: referencePricing.rates.output,
+      source: 'reference',
+      sourceUrl: referencePricing.source.url,
+    }
+  }
+
+  throw new Error(`Price-intelligence selection has no comparable USD pricing: ${model.id}`)
+}
+
+const modelById = new Map((modelsData as ManifestModel[]).map(model => [model.id, model] as const))
 const intelligenceByModelId = new Map(
   allModelIntelligencePoints.map(point => [point.modelId, point])
 )
@@ -70,31 +113,7 @@ export const modelPriceIntelligencePoints: ModelPriceIntelligencePoint[] = selec
       )
     }
 
-    if (!selection.usdPriceOverride && model.tokenPricing.status !== 'available') {
-      throw new Error(
-        `Price-intelligence selection has no available token pricing: ${selection.modelId}`
-      )
-    }
-
-    const primaryOffer =
-      model.tokenPricing.status === 'available'
-        ? model.tokenPricing.offers.find(offer => offer.id === model.tokenPricing.primaryOffer)
-        : undefined
-    const primaryTier = primaryOffer?.tiers[0]
-    const inputPrice = selection.usdPriceOverride?.input ?? primaryTier?.rates.input
-    const outputPrice = selection.usdPriceOverride?.output ?? primaryTier?.rates.output
-
-    if (
-      (!selection.usdPriceOverride && primaryOffer?.currency !== 'USD') ||
-      inputPrice === null ||
-      inputPrice === undefined ||
-      outputPrice === null ||
-      outputPrice === undefined
-    ) {
-      throw new Error(
-        `Price-intelligence selection requires comparable USD input and output pricing: ${selection.modelId}`
-      )
-    }
+    const pricing = getComparableUsdPricing(model)
 
     return {
       name: model.name,
@@ -102,13 +121,13 @@ export const modelPriceIntelligencePoints: ModelPriceIntelligencePoint[] = selec
       score: intelligence.score,
       estimated: intelligence.estimated,
       configuration: intelligence.configuration,
-      inputPrice,
-      outputPrice,
-      blendedPrice: inputPrice * INPUT_SHARE + outputPrice * OUTPUT_SHARE,
+      inputPrice: pricing.input,
+      outputPrice: pricing.output,
+      blendedPrice: pricing.input * INPUT_SHARE + pricing.output * OUTPUT_SHARE,
       currency: 'USD',
       color: intelligence.color,
-      pricingSource: selection.usdPriceOverride ? 'artificial-analysis' : 'catalog',
-      pricingSourceUrl: selection.usdPriceOverride?.sourceUrl ?? null,
+      pricingSource: pricing.source,
+      pricingSourceUrl: pricing.sourceUrl,
       ...selection,
     }
   }
@@ -140,7 +159,7 @@ export const modelPriceIntelligenceMeta = {
         point
       ): point is ModelPriceIntelligencePoint & {
         pricingSourceUrl: string
-      } => point.pricingSource === 'artificial-analysis' && point.pricingSourceUrl !== null
+      } => point.pricingSource === 'reference' && point.pricingSourceUrl !== null
     )
     .map(point => ({
       modelId: point.modelId,

@@ -43,7 +43,12 @@
     {
       "url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
       "title": "Anthropic model deprecations",
-      "fields": ["lifecycle"]
+      "fields": ["lifecycle"],
+      "changeTracking": {
+        "method": "normalized-content-sha256",
+        "digest": "sha256:af2e27075e6c7826cf4d7ef23f722bcbf0406d5bc0adaa0facf07e3b92b9c0b0",
+        "observedAt": "2026-07-28"
+      }
     }
   ],
   "lastVerifiedAt": "2026-07-21",
@@ -95,6 +100,15 @@
     "sciCode": 1.5,
     "liveCodeBench": 46.9
   },
+  "benchmarkTracking": [
+    {
+      "provider": "swe-bench",
+      "benchmark": "sweBench",
+      "leaderboard": "Verified",
+      "resultId": "20250802_mini-v1.0.0_claude-4-opus-20250514",
+      "modelLabel": "mini-SWE-agent + Claude 4 Opus (20250514)"
+    }
+  ],
   "platformUrls": {
     "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/claude-4-opus",

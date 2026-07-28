@@ -28,12 +28,7 @@
       "labelAnchor": "start",
       "linearLabelDx": -16,
       "linearLabelDy": -46,
-      "linearLabelAnchor": "end",
-      "usdPriceOverride": {
-        "input": 0.14,
-        "output": 0.58,
-        "sourceUrl": "https://artificialanalysis.ai/models/hy3"
-      }
+      "linearLabelAnchor": "end"
     },
     {
       "modelId": "minimax-m3",
@@ -60,12 +55,7 @@
       "labelAnchor": "start",
       "linearLabelDx": 18,
       "linearLabelDy": -22,
-      "linearLabelAnchor": "start",
-      "usdPriceOverride": {
-        "input": 0.4,
-        "output": 1.6,
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-7-plus"
-      }
+      "linearLabelAnchor": "start"
     },
     {
       "modelId": "glm-5-2",
@@ -113,12 +103,7 @@
       "modelId": "qwen3-7-max",
       "labelDx": -10,
       "labelDy": 24,
-      "labelAnchor": "end",
-      "usdPriceOverride": {
-        "input": 2.5,
-        "output": 7.5,
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-7-max"
-      }
+      "labelAnchor": "end"
     },
     {
       "modelId": "gemini-3-1-pro-preview",
@@ -143,6 +128,15 @@
       "labelDx": -8,
       "labelDy": 34,
       "labelAnchor": "end"
+    },
+    {
+      "modelId": "claude-fable-5",
+      "labelDx": 12,
+      "labelDy": -14,
+      "labelAnchor": "start",
+      "linearLabelDx": -10,
+      "linearLabelDy": -14,
+      "linearLabelAnchor": "end"
     },
     {
       "modelId": "gpt-5-6-sol",

@@ -42,7 +42,11 @@
   "websiteUrl": "https://cline.bot/cline-cli",
   "docsUrl": "https://cline.bot/docs",
   "vendor": "Cline Bot",
-  "latestVersion": "Preview",
+  "latestVersion": "3.0.46",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "cline"
+  },
   "githubUrl": null,
   "license": "Proprietary",
   "pricing": [

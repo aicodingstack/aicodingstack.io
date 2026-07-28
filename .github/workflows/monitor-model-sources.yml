@@ -1,0 +1,65 @@
+name: Monitor Model Pricing and Lifecycle Sources
+
+on:
+  schedule:
+    - cron: '0 4 * * 1'
+  workflow_dispatch:
+
+concurrency:
+  group: monitor-model-sources
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  monitor-model-sources:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check monitored official sources
+        run: npm run fetch:model-sources
+
+      - name: Validate monitoring metadata
+        run: |
+          npm run test:validate
+          npm run format:check
+          npm run biome:check
+          git diff --check
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code manifests/models || echo "changes=true" >> "$GITHUB_OUTPUT"
+
+      - name: Create review pull request
+        if: steps.git-check.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore(data): flag changed model sources'
+          title: 'chore(data): review changed model sources'
+          body: |
+            ## Review required
+            One or more monitored official pricing or lifecycle pages changed.
+
+            This automation updates only normalized source-content digests and observation dates.
+            It deliberately does **not** change token prices, model availability, lifecycle status,
+            or any other model fact. Review the cited official pages before changing those fields.
+          branch: auto-review-model-sources
+          delete-branch: true
+          labels: |
+            automated

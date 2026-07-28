@@ -63,7 +63,11 @@
   "websiteUrl": "https://openai.com/codex",
   "docsUrl": "https://developers.openai.com/codex/ide",
   "vendor": "OpenAI",
-  "latestVersion": "Latest",
+  "latestVersion": "26.5721.30844",
+  "releaseTracking": {
+    "provider": "vscode-marketplace",
+    "identifier": "openai.chatgpt"
+  },
   "githubUrl": null,
   "license": "Proprietary",
   "pricing": [

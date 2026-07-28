@@ -43,7 +43,11 @@
   "websiteUrl": "https://factory.ai",
   "docsUrl": "https://docs.factory.ai",
   "vendor": "Factory.ai",
-  "latestVersion": "Latest",
+  "latestVersion": "0.2.3",
+  "releaseTracking": {
+    "provider": "vscode-marketplace",
+    "identifier": "Factory.factory-vscode-extension"
+  },
   "githubUrl": null,
   "license": "Proprietary",
   "pricing": [

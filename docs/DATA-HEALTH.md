@@ -1,6 +1,6 @@
 # Data Health Report
 
-Snapshot date: 2026-07-28. Regenerate with `npm run data-health:report`.
+Snapshot date: 2026-07-29. Regenerate with `npm run data-health:report`.
 
 ## Scorecard
 

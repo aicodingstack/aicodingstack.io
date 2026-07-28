@@ -85,6 +85,15 @@
     "sciCode": null,
     "liveCodeBench": null
   },
+  "benchmarkTracking": [
+    {
+      "provider": "swe-bench",
+      "benchmark": "sweBench",
+      "leaderboard": "Verified",
+      "resultId": "20251201_mini-v1.17.1_glm-4.6",
+      "modelLabel": "mini-SWE-agent + GLM-4.6 (T=1)"
+    }
+  ],
   "platformUrls": {
     "huggingface": "https://huggingface.co/zai-org/GLM-4.6",
     "artificialAnalysis": "https://artificialanalysis.ai/models/glm-4-6",

@@ -42,7 +42,11 @@
   "websiteUrl": "https://github.com/shareAI-lab/Kode",
   "docsUrl": "https://github.com/shareAI-lab/Kode/blob/main/README.md",
   "vendor": "shareAI Lab",
-  "latestVersion": "1.2.0",
+  "latestVersion": "2.2.1",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "@shareai-lab/kode"
+  },
   "githubUrl": "https://github.com/shareAI-lab/Kode-cli",
   "license": "Apache-2.0",
   "pricing": [

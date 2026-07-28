@@ -2,24 +2,12 @@ import { modelsData } from '@/lib/generated/models'
 import { vendorsData } from '@/lib/generated/vendors'
 import { findVendorByName } from '@/lib/vendor-identity'
 import artificialAnalysisData from '../../data/artificial-analysis-index.json'
-import modelIntelligenceData from '../../data/model-intelligence-index.json'
 
 const FALLBACK_COLOR: ModelIntelligenceThemeColor = {
   light: '#6b7280',
   dark: '#9ca3af',
 }
 
-export const modelIntelligenceHiddenVendors = modelIntelligenceData.hiddenVendorIds.map(
-  vendorId => {
-    const vendor = vendorsData.find(candidate => candidate.id === vendorId)
-
-    if (!vendor) {
-      throw new Error(`Model intelligence configuration has no matching vendor: ${vendorId}`)
-    }
-
-    return vendor.name
-  }
-)
 export const modelIntelligenceLegacyMissingModelIds = artificialAnalysisData.legacyMissingModelIds
 
 export interface ModelIntelligenceThemeColor {
@@ -135,15 +123,9 @@ export const allModelIntelligencePoints: ModelIntelligencePoint[] =
     }
   })
 
-const hiddenVendorSet = new Set<string>(modelIntelligenceHiddenVendors)
-
-export const modelIntelligencePoints = allModelIntelligencePoints.filter(
-  point => !hiddenVendorSet.has(point.vendor)
-)
-
 const groupedSeries = new Map<string, ModelIntelligenceSeries>()
 
-for (const point of modelIntelligencePoints) {
+for (const point of allModelIntelligencePoints) {
   const id = `${point.vendor}:${point.seriesId}`
   const existing = groupedSeries.get(id)
 

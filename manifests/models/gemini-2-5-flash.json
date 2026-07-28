@@ -111,6 +111,15 @@
     "sciCode": null,
     "liveCodeBench": 60.6
   },
+  "benchmarkTracking": [
+    {
+      "provider": "swe-bench",
+      "benchmark": "sweBench",
+      "leaderboard": "Verified",
+      "resultId": "20250726_mini-v1.0.0_gemini-2.5-flash",
+      "modelLabel": "mini-SWE-agent + Gemini 2.5 Flash (2025-04-17)"
+    }
+  ],
   "platformUrls": {
     "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/gemini-2-5-flash",

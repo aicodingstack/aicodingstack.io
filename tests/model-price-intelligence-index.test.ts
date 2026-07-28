@@ -21,6 +21,7 @@ describe('model price-intelligence index', () => {
         'gpt-5-6-terra',
         'claude-haiku-4-5',
         'claude-opus-5',
+        'claude-fable-5',
         'hy3',
       ])
     )
@@ -41,7 +42,7 @@ describe('model price-intelligence index', () => {
 
   it('uses reviewed USD API prices when the catalog offer is not directly comparable', () => {
     const fallbackPoints = modelPriceIntelligencePoints.filter(
-      point => point.pricingSource === 'artificial-analysis'
+      point => point.pricingSource === 'reference'
     )
 
     expect(fallbackPoints.map(point => point.modelId)).toEqual([

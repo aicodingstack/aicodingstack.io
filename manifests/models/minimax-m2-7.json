@@ -53,7 +53,12 @@
     {
       "url": "https://platform.minimax.io/docs/guides/pricing-paygo",
       "title": "MiniMax pay-as-you-go pricing",
-      "fields": ["tokenPricing"]
+      "fields": ["tokenPricing"],
+      "changeTracking": {
+        "method": "normalized-content-sha256",
+        "digest": "sha256:40b4c27c5a485ab71d531141a4f328d3bff0f1c2eb6c9d31103523119aadaae3",
+        "observedAt": "2026-07-28"
+      }
     },
     {
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",

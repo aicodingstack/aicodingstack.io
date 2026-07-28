@@ -56,7 +56,11 @@
   "websiteUrl": "https://opencode.ai/download",
   "docsUrl": "https://opencode.ai/docs",
   "vendor": "Anomaly",
-  "latestVersion": "Latest",
+  "latestVersion": "1.18.8",
+  "releaseTracking": {
+    "provider": "homebrew-cask",
+    "identifier": "opencode-desktop"
+  },
   "githubUrl": "https://github.com/anomalyco/opencode",
   "license": "MIT",
   "pricing": [

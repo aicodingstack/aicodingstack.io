@@ -1,0 +1,119 @@
+name: Check Current Data Health
+
+on:
+  schedule:
+    - cron: '0 3 * * 1'
+  workflow_dispatch:
+
+concurrency:
+  group: check-current-data-health
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-data-health:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check current data health
+        id: data-health
+        continue-on-error: true
+        run: |
+          npx tsx scripts/validate/data-health.ts \
+            --as-of="$(TZ=Asia/Shanghai date +%F)" \
+            --fail-on=error \
+            --fail-on-code=stale-verification,future-verification-date \
+            2>&1 | tee data-health-current.log
+
+      - name: Report stale or invalid data
+        if: steps.data-health.outcome == 'failure'
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const fs = require('node:fs');
+            const title = 'Current manifest data requires review';
+            const output = fs.readFileSync('data-health-current.log', 'utf8').slice(-6000);
+            const body = `## Current Data Health Check Failed
+
+            The scheduled check evaluates freshness against today's date in Asia/Shanghai without
+            rewriting the committed snapshot.
+
+            **Check run:** [View details](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+            \`\`\`text
+            ${output}
+            \`\`\``;
+
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'automated',
+              per_page: 100
+            });
+            const existingIssue = issues.find(issue => issue.title === title);
+
+            if (!existingIssue) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ['automated', 'maintenance']
+              });
+            } else {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existingIssue.number,
+                body
+              });
+            }
+
+      - name: Close resolved data-health issues
+        if: steps.data-health.outcome == 'success'
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'automated',
+              per_page: 100
+            });
+
+            for (const issue of issues.filter(issue => issue.title === 'Current manifest data requires review')) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: `Current-date data health passed in ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}.`
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                state: 'closed',
+                state_reason: 'completed'
+              });
+            }
+
+      - name: Fail after reporting
+        if: steps.data-health.outcome == 'failure'
+        run: exit 1

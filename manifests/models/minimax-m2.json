@@ -85,6 +85,15 @@
     "sciCode": null,
     "liveCodeBench": null
   },
+  "benchmarkTracking": [
+    {
+      "provider": "swe-bench",
+      "benchmark": "sweBench",
+      "leaderboard": "Verified",
+      "resultId": "20251124_mini-v1.17.0_minimax-m2",
+      "modelLabel": "mini-SWE-agent + Minimax M2"
+    }
+  ],
   "platformUrls": {
     "huggingface": "https://huggingface.co/MiniMaxAI/MiniMax-M2",
     "artificialAnalysis": "https://artificialanalysis.ai/models/minimax-m2",

@@ -1,0 +1,76 @@
+name: Update Product Versions
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+
+concurrency:
+  group: update-product-versions
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-product-versions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh tracked product versions
+        run: npm run fetch:product-versions
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Regenerate manifest modules
+        run: npm run generate:manifests
+
+      - name: Validate updated data
+        run: |
+          npm run test:validate
+          npm run validate:i18n
+          npm run data-health:check
+          npm run format:check
+          npm run biome:check
+          git diff --check
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code manifests src/lib/generated || echo "changes=true" >> "$GITHUB_OUTPUT"
+
+      - name: Create pull request
+        if: steps.git-check.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore(data): refresh product versions'
+          title: 'chore(data): refresh product versions'
+          body: |
+            ## Summary
+            Automated refresh of product versions from the registry sources declared in each manifest.
+
+            ## Validation
+            - Manifest schemas
+            - Generated manifest modules
+            - Internationalization structure
+            - Data health
+
+            The workflow preserves existing values when any configured source cannot be verified.
+          branch: auto-update-product-versions
+          delete-branch: true
+          labels: |
+            automated

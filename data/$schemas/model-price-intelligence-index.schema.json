@@ -57,32 +57,9 @@
         },
         "linearLabelAnchor": {
           "$ref": "#/$defs/labelAnchor"
-        },
-        "usdPriceOverride": {
-          "$ref": "#/$defs/usdPriceOverride"
         }
       },
       "required": ["modelId", "labelDx", "labelDy", "labelAnchor"],
-      "additionalProperties": false
-    },
-    "usdPriceOverride": {
-      "type": "object",
-      "properties": {
-        "input": {
-          "type": "number",
-          "exclusiveMinimum": 0
-        },
-        "output": {
-          "type": "number",
-          "exclusiveMinimum": 0
-        },
-        "sourceUrl": {
-          "type": "string",
-          "format": "uri",
-          "pattern": "^https://"
-        }
-      },
-      "required": ["input", "output", "sourceUrl"],
       "additionalProperties": false
     }
   }

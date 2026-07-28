@@ -19,6 +19,10 @@
           "type": "string",
           "description": "The latest stable version number (typically found on download page or changelog page)"
         },
+        "releaseTracking": {
+          "$ref": "#/$defs/releaseTracking",
+          "description": "Optional declarative source used to refresh latestVersion without embedding product data in synchronization code"
+        },
         "githubUrl": {
           "type": ["string", "null"],
           "format": "uri",
@@ -62,6 +66,70 @@
     }
   ],
   "$defs": {
+    "releaseTracking": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "provider": {
+              "const": "npm"
+            },
+            "identifier": {
+              "type": "string",
+              "minLength": 1
+            },
+            "channel": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9._-]*$"
+            }
+          },
+          "required": ["provider", "identifier"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "provider": {
+              "enum": ["homebrew-formula", "homebrew-cask", "crates-io", "pypi"]
+            },
+            "identifier": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9+._@-]*$"
+            }
+          },
+          "required": ["provider", "identifier"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "provider": {
+              "const": "vscode-marketplace"
+            },
+            "identifier": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*\\.[a-zA-Z0-9][a-zA-Z0-9._-]*$"
+            }
+          },
+          "required": ["provider", "identifier"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "provider": {
+              "const": "github-release"
+            },
+            "identifier": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9._-]+/[a-zA-Z0-9._-]+$"
+            }
+          },
+          "required": ["provider", "identifier"],
+          "additionalProperties": false
+        }
+      ]
+    },
     "relatedProducts": {
       "type": "array",
       "description": "Related products (IDEs, CLIs, extensions, or desktop apps)",
