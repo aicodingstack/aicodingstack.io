@@ -4,6 +4,7 @@ import {
   analyzeDataHealth,
   type ManifestRecord,
   renderDataHealthMarkdown,
+  shouldFailDataHealth,
 } from '../scripts/validate/data-health'
 
 function record(
@@ -142,5 +143,23 @@ describe('data health reporting', () => {
 
   it('rejects a malformed report date', () => {
     expect(() => analyzeDataHealth([], '2026-02-30')).toThrow('Invalid --as-of date')
+  })
+
+  it('can fail on selected issue codes without failing on every warning', () => {
+    const report = analyzeDataHealth(
+      [
+        record('models', 'stale-model', {
+          verified: true,
+          sources: [{ url: 'https://example.com' }],
+          lastVerifiedAt: '2026-01-01',
+          verifiedBy: 'test',
+          confidence: 'high',
+        }),
+      ],
+      '2026-07-28'
+    )
+
+    expect(shouldFailDataHealth(report, 'error')).toBe(false)
+    expect(shouldFailDataHealth(report, 'error', new Set(['stale-verification']))).toBe(true)
   })
 })

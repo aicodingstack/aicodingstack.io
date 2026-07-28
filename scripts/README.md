@@ -11,13 +11,17 @@ Repository automation is written in TypeScript and executed with `tsx`. Prefer t
 | Generate content metadata | `npm run generate:metadata` | Rebuilds article, docs, FAQ, and manifesto metadata |
 | Sort manifest fields | `npm run refactor:sort-fields` | Reorders manifest JSON using schema order |
 | Fetch GitHub stars | `npm run fetch:github-stars` | Updates `data/github-stars.json` |
+| Refresh product versions | `npm run fetch:product-versions` | Updates manifest `latestVersion` values from configured package registries |
+| Check product versions | `npm run fetch:product-versions:check` | Fails when a configured registry reports a newer stable version |
+| Refresh benchmark scores | `npm run fetch:benchmarks` | Updates exact configured entries from official structured leaderboards |
+| Check benchmark scores | `npm run fetch:benchmarks:check` | Fails when an exact configured leaderboard score changed |
+| Record model source changes | `npm run fetch:model-sources` | Updates only monitored official-source content digests |
+| Check model sources | `npm run fetch:model-sources:check` | Fails when monitored pricing or lifecycle source content changed |
 | Validate manifests and data | `npm run test:validate` | Runs the validation test suite |
 | Run browser smoke tests | `npm run test:e2e` | Exercises core journeys in Chromium against a local Next.js server |
 | Audit dependencies | `npm run security:audit` | Fails on high or critical npm advisories in the full dependency tree |
 | Check data health | `npm run data-health:check` | Fails on invalid health-report data |
 | Refresh data-health snapshot | `npm run data-health:report` | Writes `data/data-health.json` and `docs/DATA-HEALTH.md` |
-| Check manifest changelog | `npm run changelog:check` | Requires manifest diffs to be represented in `data/changelogs.json` |
-| Generate manifest changelog | `npm run changelog:generate -- --base=<ref> --id=<id> --summary="<text>"` | Adds or replaces one entry from a Git diff |
 | Validate i18n structure | `npm run validate:i18n` | Checks locale alignment and translation shape |
 | Validate i18n usage | `npm run validate:i18n-usage` | Checks translation keys referenced by source |
 | Validate duplicate i18n values | `npm run validate:i18n-duplicates` | Reports duplicated translation content |
@@ -44,6 +48,9 @@ Each category with an `index.ts` auto-discovers sibling `.ts` scripts. A filenam
 npx tsx scripts/generate/index.ts manifest-indexes
 npx tsx scripts/refactor/index.ts export-vendors
 npx tsx scripts/fetch/index.ts github-stars
+npx tsx scripts/fetch/fetch-product-versions.ts --check
+npx tsx scripts/fetch/fetch-benchmarks.ts --check
+npx tsx scripts/fetch/fetch-model-sources.ts --check
 ```
 
 ## Generated files
@@ -51,6 +58,12 @@ npx tsx scripts/fetch/index.ts github-stars
 Generated modules under `src/lib/generated/` are committed. After changing manifests or content, run `npm run generate` and include the resulting deterministic diff. CI regenerates these files and fails when the committed output is stale.
 
 `data/github-stars.json` is source data, not generated build output. Update it with `npm run fetch:github-stars`; the dedicated scheduled workflow also opens a pull request when values change.
+
+Product-version synchronization is declarative and runs separately from the generic `npm run fetch` batch. Add `releaseTracking` to a product manifest with an official npm, PyPI, Homebrew, crates.io, GitHub Releases, or Visual Studio Marketplace identifier. The generic version fetcher reads that manifest configuration; product identifiers must not be hardcoded in TypeScript. Failed lookups leave every manifest unchanged, and the scheduled workflow opens a pull request rather than pushing directly to `main`.
+
+Benchmark synchronization also keeps model-to-result mappings in JSON manifests. An exact upstream result ID and exact displayed label are both required; a renamed or missing result fails closed instead of fuzzy matching another model or evaluation setup.
+
+Pricing and lifecycle monitoring fingerprints only explicitly configured official source pages. A source-content change updates the source digest in a review pull request; it never modifies `tokenPricing`, `lifecycle`, or other model facts automatically.
 
 ## Adding a script
 

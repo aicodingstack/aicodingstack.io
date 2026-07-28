@@ -27,6 +27,10 @@
         "tokenPricing": {
           "$ref": "#/$defs/tokenPricing"
         },
+        "referenceTokenPricing": {
+          "$ref": "#/$defs/referenceTokenPricing",
+          "description": "Optional externally tracked token pricing used when the first-party offer is unavailable or not directly comparable. This must not replace tokenPricing."
+        },
         "releaseDate": {
           "type": ["string", "null"],
           "format": "date",
@@ -115,6 +119,15 @@
           ],
           "additionalProperties": false
         },
+        "benchmarkTracking": {
+          "type": "array",
+          "description": "Exact upstream leaderboard entries used to refresh benchmark fields without fuzzy model-name matching",
+          "items": {
+            "$ref": "#/$defs/benchmarkTracking"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
         "platformUrls": {
           "$ref": "./ref/platform-urls.schema.json",
           "description": "URLs to various third-party platform pages for this model"
@@ -137,6 +150,30 @@
     }
   ],
   "$defs": {
+    "benchmarkTracking": {
+      "type": "object",
+      "properties": {
+        "provider": {
+          "const": "swe-bench"
+        },
+        "benchmark": {
+          "const": "sweBench"
+        },
+        "leaderboard": {
+          "const": "Verified"
+        },
+        "resultId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "modelLabel": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": ["provider", "benchmark", "leaderboard", "resultId", "modelLabel"],
+      "additionalProperties": false
+    },
     "tokenPricing": {
       "description": "First-party, pay-as-you-go standard API token pricing. Rates use the offer's native currency per million tokens.",
       "oneOf": [
@@ -319,6 +356,46 @@
         }
       },
       "required": ["input", "output", "cacheRead", "cacheWrite"],
+      "additionalProperties": false
+    },
+    "referenceTokenPricing": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}$",
+          "description": "ISO 4217 currency code"
+        },
+        "basis": {
+          "type": "string",
+          "enum": ["first-party-api", "provider-median"],
+          "description": "Whether the tracked price represents the model vendor's API or a median across third-party API providers"
+        },
+        "rates": {
+          "$ref": "#/$defs/tokenPricingRates"
+        },
+        "source": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https://"
+            },
+            "observedAt": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          "required": ["name", "url", "observedAt"],
+          "additionalProperties": false
+        }
+      },
+      "required": ["currency", "basis", "rates", "source"],
       "additionalProperties": false
     }
   }

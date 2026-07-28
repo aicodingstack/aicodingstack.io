@@ -43,7 +43,11 @@
   "websiteUrl": "https://opencode.ai",
   "docsUrl": "https://opencode.ai",
   "vendor": "Anomaly",
-  "latestVersion": "0.15.16",
+  "latestVersion": "1.18.8",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "opencode-ai"
+  },
   "githubUrl": "https://github.com/anomalyco/opencode",
   "license": "MIT",
   "pricing": [

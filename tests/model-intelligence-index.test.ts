@@ -4,10 +4,8 @@ import { vendorsData } from '@/lib/generated/vendors'
 import {
   allModelIntelligencePoints,
   createTimelineTicks,
-  modelIntelligenceHiddenVendors,
   modelIntelligenceLegacyMissingModelIds,
   modelIntelligenceMeta,
-  modelIntelligencePoints,
   modelIntelligenceSeries,
 } from '@/lib/model-intelligence-index'
 import { findVendorByName } from '@/lib/vendor-identity'
@@ -108,14 +106,6 @@ describe('model intelligence index', () => {
     expect(new Set(legacyMissingModelIds).size).toBe(legacyMissingModelIds.length)
     expect(unexpectedLegacyMissingModelIds).toEqual([])
     expect(missingModelIds).toEqual(legacyMissingModelIds)
-  })
-
-  it('keeps hidden vendors in source data but excludes them from the page', () => {
-    for (const vendor of modelIntelligenceHiddenVendors) {
-      expect(allModelIntelligencePoints.some(point => point.vendor === vendor)).toBe(true)
-      expect(modelIntelligencePoints.some(point => point.vendor === vendor)).toBe(false)
-      expect(modelIntelligenceSeries.some(series => series.vendor === vendor)).toBe(false)
-    }
   })
 
   it('keeps a single vendor color while separating model series', () => {

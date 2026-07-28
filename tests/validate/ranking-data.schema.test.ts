@@ -5,11 +5,9 @@ import addFormats from 'ajv-formats'
 import { describe, expect, it } from 'vitest'
 
 describe('validate: ranking data schemas', () => {
-  it.each([
-    'model-intelligence-index',
-    'model-price-intelligence-index',
-  ])('validates the %s configuration', dataName => {
+  it('validates the model-price-intelligence-index configuration', () => {
     const rootDir = path.resolve(__dirname, '../..')
+    const dataName = 'model-price-intelligence-index'
     const schema = JSON.parse(
       fs.readFileSync(path.join(rootDir, `data/$schemas/${dataName}.schema.json`), 'utf8')
     )

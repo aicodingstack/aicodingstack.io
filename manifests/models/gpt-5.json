@@ -85,6 +85,15 @@
     "sciCode": 1.5,
     "liveCodeBench": 28.7
   },
+  "benchmarkTracking": [
+    {
+      "provider": "swe-bench",
+      "benchmark": "sweBench",
+      "leaderboard": "Verified",
+      "resultId": "20250807_openhands_gpt5",
+      "modelLabel": "OpenHands + GPT-5"
+    }
+  ],
   "platformUrls": {
     "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-5",

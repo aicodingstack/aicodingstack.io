@@ -84,9 +84,31 @@
           },
           "minItems": 1,
           "uniqueItems": true
+        },
+        "changeTracking": {
+          "$ref": "#/$defs/sourceChangeTracking",
+          "description": "Optional content fingerprint used to detect upstream source changes without automatically accepting field-value changes"
         }
       },
       "required": ["url"],
+      "additionalProperties": false
+    },
+    "sourceChangeTracking": {
+      "type": "object",
+      "properties": {
+        "method": {
+          "const": "normalized-content-sha256"
+        },
+        "digest": {
+          "type": ["string", "null"],
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "observedAt": {
+          "type": ["string", "null"],
+          "format": "date"
+        }
+      },
+      "required": ["method", "digest", "observedAt"],
       "additionalProperties": false
     }
   }

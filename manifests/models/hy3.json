@@ -63,10 +63,10 @@
     {
       "url": "https://artificialanalysis.ai/models/hy3",
       "title": "Artificial Analysis Hy3 model page",
-      "fields": ["releaseDate", "platformUrls.artificialAnalysis"]
+      "fields": ["releaseDate", "referenceTokenPricing", "platformUrls.artificialAnalysis"]
     }
   ],
-  "lastVerifiedAt": "2026-07-27",
+  "lastVerifiedAt": "2026-07-28",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.tencent.com",
@@ -80,6 +80,21 @@
     "reason": "official-price-not-published",
     "primaryOffer": null,
     "offers": []
+  },
+  "referenceTokenPricing": {
+    "currency": "USD",
+    "basis": "provider-median",
+    "rates": {
+      "input": 0.14,
+      "output": 0.58,
+      "cacheRead": 0.035,
+      "cacheWrite": null
+    },
+    "source": {
+      "name": "Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/hy3",
+      "observedAt": "2026-07-28"
+    }
   },
   "releaseDate": "2026-07-06",
   "lifecycle": "latest",

@@ -56,7 +56,11 @@
   "websiteUrl": "https://mistral.ai/products/vibe",
   "docsUrl": "https://docs.mistral.ai/vibe/code/overview",
   "vendor": "Mistral AI",
-  "latestVersion": "Latest",
+  "latestVersion": "1.14.4",
+  "releaseTracking": {
+    "provider": "vscode-marketplace",
+    "identifier": "mistralai.mistral-vibe-code"
+  },
   "githubUrl": null,
   "license": "Proprietary",
   "pricing": [

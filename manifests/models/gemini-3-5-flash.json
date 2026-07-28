@@ -56,12 +56,22 @@
     {
       "url": "https://ai.google.dev/gemini-api/docs/pricing",
       "title": "Gemini Developer API pricing",
-      "fields": ["tokenPricing"]
+      "fields": ["tokenPricing"],
+      "changeTracking": {
+        "method": "normalized-content-sha256",
+        "digest": "sha256:aab4d993819344eb390d8e59a37ab5d9712daca3ed395b4271bbebb586bb0c50",
+        "observedAt": "2026-07-28"
+      }
     },
     {
       "url": "https://ai.google.dev/gemini-api/docs/changelog",
       "title": "Gemini API release notes",
-      "fields": ["name", "description", "releaseDate", "lifecycle"]
+      "fields": ["name", "description", "releaseDate", "lifecycle"],
+      "changeTracking": {
+        "method": "normalized-content-sha256",
+        "digest": "sha256:d903a1d48cc08625d5514f5f0d800daed7c207f46cfa33dcef4dcbb98ab16065",
+        "observedAt": "2026-07-28"
+      }
     }
   ],
   "lastVerifiedAt": "2026-07-22",

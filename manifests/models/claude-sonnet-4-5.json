@@ -95,6 +95,15 @@
     "sciCode": null,
     "liveCodeBench": 46.9
   },
+  "benchmarkTracking": [
+    {
+      "provider": "swe-bench",
+      "benchmark": "sweBench",
+      "leaderboard": "Verified",
+      "resultId": "20250929_mini-v1.13.3_sonnet-4-5-20250929",
+      "modelLabel": "mini-SWE-agent + Claude 4.5 Sonnet (20250929)"
+    }
+  ],
   "platformUrls": {
     "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/claude-4-5-sonnet",

@@ -16,6 +16,7 @@ import { runCategoryScripts } from '../_shared/runner'
 
 runCategoryScripts({
   categoryName: 'fetch',
+  excludes: ['benchmarks', 'model-sources', 'product-versions'],
 }).catch(error => {
   console.error('Fatal error:', error)
   process.exit(1)

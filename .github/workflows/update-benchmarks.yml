@@ -1,0 +1,73 @@
+name: Update Benchmarks
+
+on:
+  schedule:
+    - cron: '30 2 * * 1'
+  workflow_dispatch:
+
+concurrency:
+  group: update-benchmarks
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-benchmarks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh exact benchmark mappings
+        run: npm run fetch:benchmarks
+
+      - name: Regenerate manifest modules
+        run: npm run generate:manifests
+
+      - name: Validate updated data
+        run: |
+          npm run test:validate
+          npm run data-health:check
+          npm run format:check
+          npm run biome:check
+          git diff --check
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code manifests src/lib/generated || echo "changes=true" >> "$GITHUB_OUTPUT"
+
+      - name: Create pull request
+        if: steps.git-check.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore(data): refresh benchmark scores'
+          title: 'chore(data): refresh benchmark scores'
+          body: |
+            ## Summary
+            Automated refresh from exact entries in the official SWE-bench leaderboard data.
+
+            Each model manifest declares the upstream result ID and exact displayed label. The
+            refresh fails rather than applying fuzzy model-name matching.
+
+            ## Validation
+            - Manifest schemas
+            - Generated manifest modules
+            - Data health
+          branch: auto-update-benchmarks
+          delete-branch: true
+          labels: |
+            automated

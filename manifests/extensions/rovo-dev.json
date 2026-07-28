@@ -60,7 +60,11 @@
   "websiteUrl": "https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode",
   "docsUrl": "https://support.atlassian.com/rovo/docs/work-with-rovo-dev-agents/",
   "vendor": "Atlassian",
-  "latestVersion": "Latest",
+  "latestVersion": "4.1.191",
+  "releaseTracking": {
+    "provider": "vscode-marketplace",
+    "identifier": "Atlassian.atlascode"
+  },
   "githubUrl": null,
   "license": "Proprietary",
   "pricing": [

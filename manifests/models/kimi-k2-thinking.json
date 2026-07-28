@@ -43,7 +43,12 @@
     {
       "url": "https://platform.kimi.ai/docs/models",
       "title": "Kimi API model availability and K2 retirement notice",
-      "fields": ["lifecycle", "tokenPricing"]
+      "fields": ["lifecycle", "tokenPricing"],
+      "changeTracking": {
+        "method": "normalized-content-sha256",
+        "digest": "sha256:50692812b00a1b51ddd80947258f053d2317be53e34384d7421d2e9034d3b60d",
+        "observedAt": "2026-07-28"
+      }
     }
   ],
   "lastVerifiedAt": "2026-07-21",

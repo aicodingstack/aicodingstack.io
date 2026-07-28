@@ -598,6 +598,21 @@ function getArgument(name: string): string | null {
   return process.argv.find(argument => argument.startsWith(prefix))?.slice(prefix.length) ?? null
 }
 
+export function shouldFailDataHealth(
+  report: DataHealthReport,
+  failOn: string,
+  failOnCodes: Set<string> = new Set()
+): boolean {
+  if (!['error', 'warning', 'never'].includes(failOn)) {
+    throw new Error(`Invalid --fail-on value: ${failOn}`)
+  }
+  return (
+    (failOn === 'error' && report.summary.errors > 0) ||
+    (failOn === 'warning' && report.summary.errors + report.summary.warnings > 0) ||
+    report.issues.some(issue => failOnCodes.has(issue.code))
+  )
+}
+
 async function main(): Promise<void> {
   const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
   const snapshotPath = path.join(rootDir, 'data', 'data-health.json')
@@ -631,13 +646,13 @@ async function main(): Promise<void> {
   }
 
   const failOn = getArgument('fail-on') ?? 'never'
-  if (!['error', 'warning', 'never'].includes(failOn)) {
-    throw new Error(`Invalid --fail-on value: ${failOn}`)
-  }
-  if (
-    (failOn === 'error' && report.summary.errors > 0) ||
-    (failOn === 'warning' && report.summary.errors + report.summary.warnings > 0)
-  ) {
+  const failOnCodes = new Set(
+    (getArgument('fail-on-code') ?? '')
+      .split(',')
+      .map(code => code.trim())
+      .filter(Boolean)
+  )
+  if (shouldFailDataHealth(report, failOn, failOnCodes)) {
     process.exitCode = 1
   }
 }
