@@ -65,7 +65,32 @@
       "description": "AI 平台，為各種應用提供先進的語言模型和 AI 服務，包括編碼和內容生成。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://z.ai/company",
+      "title": "About Z.ai",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://docs.z.ai/guides/overview/overview",
+      "title": "Z.ai platform overview",
+      "fields": ["description"]
+    },
+    {
+      "url": "https://github.com/zai-org",
+      "title": "Z.ai official GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://x.com/Z_AI_Official",
+      "title": "Z.ai twitter community",
+      "fields": ["communityUrls.twitter"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://z.ai",
   "communityUrls": {
     "linkedin": null,

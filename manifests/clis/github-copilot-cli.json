@@ -91,12 +91,12 @@
   },
   "communityUrls": {
     "linkedin": null,
-    "twitter": "https://x.com/github",
+    "twitter": null,
     "github": "https://github.com/github/copilot-cli",
-    "youtube": "https://www.youtube.com/@github",
+    "youtube": null,
     "discord": null,
     "reddit": null,
-    "blog": "https://github.blog"
+    "blog": null
   },
   "relatedProducts": [],
   "platforms": [
@@ -117,6 +117,13 @@
       "installCommand": "npm install -g @github/copilot",
       "launchCommand": "copilot",
       "installPath": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/github/copilot-cli",
+      "title": "GitHub Copilot CLI github community",
+      "fields": ["communityUrls.github"]
     }
   ]
 }

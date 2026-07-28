@@ -63,7 +63,37 @@
       "description": "領先的 AI 研究公司，專注於開發先進的語言模型和 AI 技術，用於編碼和通用智能。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.deepseek.com/en/transparency/",
+      "title": "DeepSeek transparency center",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/deepseek-ai",
+      "title": "DeepSeek official GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/deepseek-ai",
+      "title": "DeepSeek linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/DeepSeekAI",
+      "title": "DeepSeek twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.reddit.com/r/DeepSeekAI",
+      "title": "DeepSeek reddit community",
+      "fields": ["communityUrls.reddit"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.deepseek.com",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/deepseek-ai",

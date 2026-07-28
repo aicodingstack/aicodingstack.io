@@ -89,5 +89,32 @@
     "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-4-1",
     "openrouter": "https://openrouter.ai/openai/gpt-4.1"
-  }
+  },
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-4.1",
+      "title": "OpenAI GPT-4.1 model documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "lifecycle"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/gpt-4-1/",
+      "title": "Introducing GPT-4.1 in the API",
+      "fields": ["releaseDate", "description", "tokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

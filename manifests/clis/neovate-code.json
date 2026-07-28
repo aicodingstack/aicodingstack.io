@@ -104,5 +104,17 @@
       "launchCommand": "neovate (alias: neo)",
       "installPath": null
     }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/neovateai/neovate-code",
+      "title": "Neovate Code github community",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://neovateai.dev/en/blog",
+      "title": "Neovate Code blog community",
+      "fields": ["communityUrls.blog"]
+    }
   ]
 }

@@ -62,7 +62,27 @@
       "description": "專注於大型語言模型和智能應用的 AI 公司，以 Kimi AI 助手而聞名。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.moonshot.ai/about",
+      "title": "About Moonshot AI",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/moonshotai",
+      "title": "Moonshot AI official GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://x.com/MoonshotAI",
+      "title": "Moonshot AI twitter community",
+      "fields": ["communityUrls.twitter"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.moonshot.ai",
   "communityUrls": {
     "linkedin": null,

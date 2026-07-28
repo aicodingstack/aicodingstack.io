@@ -82,7 +82,37 @@
       "description": "專注於構建可靠、可解釋和可控制的 AI 系統的 AI 安全公司。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.anthropic.com/company",
+      "title": "Anthropic company",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/anthropics",
+      "title": "Anthropic official GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/anthropic",
+      "title": "Anthropic linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/AnthropicAI",
+      "title": "Anthropic twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.reddit.com/r/AnthropicAI",
+      "title": "Anthropic reddit community",
+      "fields": ["communityUrls.reddit"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.anthropic.com",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/anthropic",

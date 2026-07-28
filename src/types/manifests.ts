@@ -155,6 +155,7 @@ export interface ManifestBaseProduct extends ManifestVendorEntity {
   license: string
   pricing: ManifestPricingTier[]
   resourceUrls: ManifestResourceUrls
+  /** Product-specific URLs; organization URLs are inherited from the vendor. */
   communityUrls: ManifestCommunityUrls
   relatedProducts: ManifestRelatedProduct[]
 }
@@ -321,6 +322,7 @@ export interface ManifestProvider extends ManifestVendorEntity {
   type: 'foundation-model-provider' | 'model-service-provider'
   applyKeyUrl: string | null
   platformUrls: ManifestPlatformUrls
+  /** Provider-specific URLs; organization URLs are inherited from the vendor. */
   communityUrls: ManifestCommunityUrls
 }
 

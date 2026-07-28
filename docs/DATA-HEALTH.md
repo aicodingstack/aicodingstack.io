@@ -7,27 +7,29 @@ Snapshot date: 2026-07-28. Regenerate with `npm run data-health:report`.
 | Metric | Value |
 | --- | ---: |
 | Manifest records | 242 |
-| Records with structured sources | 151 |
-| Verified records | 137 |
-| Verified with complete provenance | 120 |
+| Records with structured sources | 231 |
+| Verified records | 176 |
+| Verified with complete provenance | 176 |
 | Stale verified records | 0 |
 | Non-English values identical to English | 1262 |
 | Dangling product relationships | 0 |
-| Model benchmark coverage | 9.6% |
-| Products with pricing | 66/67 |
-| Errors / warnings / info | 0 / 17 / 91 |
+| Model benchmark coverage | 9.5% |
+| Products with pricing | 63/67 |
+| Community URLs with provenance | 302/302 |
+| Duplicated vendor community URLs | 0 |
+| Errors / warnings / info | 0 / 0 / 11 |
 
 ## Category Breakdown
 
 | Category | Total | Verified | Provenance complete | Stale |
 | --- | ---: | ---: | ---: | ---: |
 | ides | 9 | 0 | 0 | 0 |
-| clis | 27 | 4 | 3 | 0 |
+| clis | 27 | 5 | 5 | 0 |
 | desktops | 12 | 0 | 0 | 0 |
-| extensions | 19 | 3 | 2 | 0 |
-| models | 123 | 122 | 110 | 0 |
-| providers | 12 | 4 | 3 | 0 |
-| vendors | 40 | 4 | 2 | 0 |
+| extensions | 19 | 5 | 5 | 0 |
+| models | 123 | 122 | 122 | 0 |
+| providers | 12 | 4 | 4 | 0 |
+| vendors | 40 | 40 | 40 | 0 |
 
 ## Translation Placeholder Proxy
 
@@ -51,8 +53,7 @@ Exact English matches are a triage signal; product names and technical terms can
 
 | Issue | Count |
 | --- | ---: |
-| missing-sources | 91 |
-| verified-without-provenance | 17 |
+| missing-sources | 11 |
 
 ## Priority Queue
 
@@ -61,23 +62,7 @@ visible in the scorecards and `data/data-health.json`.
 
 | Severity | Issue | Record | Detail |
 | --- | --- | --- | --- |
-| warning | verified-without-provenance | clis/kilo-code-cli | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | extensions/kilo-code | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/glm-4-6 | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/glm-4-6v | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/gpt-4-1 | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/gpt-4o | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/gpt-5 | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/gpt-5-1 | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/gpt-5-1-codex | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/gpt-5-codex | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/minimax-m2 | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/minimax-m2-1 | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/qwen3-coder-30b-a3b | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | models/qwen3-coder-480b-a35b | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | providers/siliconflow | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | vendors/kilo | Verified record is missing sources, review date, reviewer, or confidence. |
-| warning | verified-without-provenance | vendors/siliconflow | Verified record is missing sources, review date, reviewer, or confidence. |
+| — | — | — | No priority issues. |
 
 ## Freshness Thresholds
 

@@ -77,12 +77,12 @@
   },
   "communityUrls": {
     "linkedin": null,
-    "twitter": "https://x.com/gitlab",
-    "github": "https://github.com/gitlabhq",
+    "twitter": null,
+    "github": null,
     "youtube": null,
     "discord": null,
     "reddit": null,
-    "blog": "https://about.gitlab.com/blog"
+    "blog": null
   },
   "relatedProducts": [],
   "platforms": [

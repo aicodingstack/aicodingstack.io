@@ -4,7 +4,989 @@
     {
       "id": "2026-07-28-manifest-update",
       "date": "2026-07-28",
-      "summary": "23 manifest records changed",
+      "summary": "Catalog provenance and community links completed",
+      "changes": [
+        {
+          "category": "clis",
+          "id": "amazon-q-developer-cli",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "clis",
+          "id": "amp-cli",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "clis",
+          "id": "augment-code-cli",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "clis",
+          "id": "claude-code-cli",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "clis",
+          "id": "cline-cli",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "clis",
+          "id": "codebuddy-cli",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "clis",
+          "id": "codex-cli",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "clis",
+          "id": "continue-cli",
+          "change": "updated",
+          "fields": [
+            "communityUrls",
+            "description",
+            "latestVersion",
+            "platforms",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "translations",
+            "verified",
+            "confidence",
+            "deprecated",
+            "familyId",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "cursor-cli",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "clis",
+          "id": "droid-cli",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "clis",
+          "id": "gemini-cli",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "clis",
+          "id": "github-copilot-cli",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "clis",
+          "id": "gitlab-duo-cli",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "clis",
+          "id": "grok-build",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "clis",
+          "id": "junie-cli",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "clis",
+          "id": "kilo-code-cli",
+          "change": "updated",
+          "fields": [
+            "communityUrls",
+            "docsUrl",
+            "latestVersion",
+            "resourceUrls",
+            "websiteUrl",
+            "confidence",
+            "familyId",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "clis",
+          "id": "kiro-cli",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "clis",
+          "id": "kode",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "clis",
+          "id": "neovate-code",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "clis",
+          "id": "omp",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "clis",
+          "id": "opencode",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "clis",
+          "id": "qoder-cli",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "clis",
+          "id": "rovo-dev-cli",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "desktops",
+          "id": "air",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "desktops",
+          "id": "codex-app",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "desktops",
+          "id": "factory-desktop",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "desktops",
+          "id": "opencode-desktop",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "desktops",
+          "id": "qoder",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "desktops",
+          "id": "stagewise",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "desktops",
+          "id": "trae-work",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "desktops",
+          "id": "verdent-deck",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "extensions",
+          "id": "amp",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "extensions",
+          "id": "augment-code",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "extensions",
+          "id": "claude-code",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "extensions",
+          "id": "cline",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "extensions",
+          "id": "codex",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "extensions",
+          "id": "continue",
+          "change": "updated",
+          "fields": [
+            "communityUrls",
+            "description",
+            "latestVersion",
+            "pricing",
+            "relatedProducts",
+            "resourceUrls",
+            "supportedIdes",
+            "translations",
+            "verified",
+            "confidence",
+            "deprecated",
+            "familyId",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "extensions",
+          "id": "droid",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "extensions",
+          "id": "gemini-code-assist",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "extensions",
+          "id": "github-copilot",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "extensions",
+          "id": "jetbrains-junie",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "extensions",
+          "id": "kilo-code",
+          "change": "updated",
+          "fields": [
+            "communityUrls",
+            "latestVersion",
+            "confidence",
+            "familyId",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "extensions",
+          "id": "opencode-extension",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "extensions",
+          "id": "qoder",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "extensions",
+          "id": "roo-code",
+          "change": "updated",
+          "fields": [
+            "communityUrls",
+            "description",
+            "docsUrl",
+            "latestVersion",
+            "pricing",
+            "resourceUrls",
+            "translations",
+            "verified",
+            "websiteUrl",
+            "confidence",
+            "deprecated",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "extensions",
+          "id": "rovo-dev",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "extensions",
+          "id": "tabnine",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "extensions",
+          "id": "verdent",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "ides",
+          "id": "antigravity",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "ides",
+          "id": "codebuddy",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "ides",
+          "id": "cursor",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "ides",
+          "id": "intellij-idea",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "ides",
+          "id": "kiro",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "ides",
+          "id": "trae",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "ides",
+          "id": "vscode",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "ides",
+          "id": "windsurf",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "ides",
+          "id": "zed",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "models",
+          "id": "glm-4-6",
+          "change": "updated",
+          "fields": [
+            "description",
+            "size",
+            "translations",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "glm-4-6v",
+          "change": "updated",
+          "fields": [
+            "benchmarks",
+            "description",
+            "knowledgeCutoff",
+            "lifecycle",
+            "maxOutput",
+            "size",
+            "translations",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gpt-4-1",
+          "change": "updated",
+          "fields": ["confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-4o",
+          "change": "updated",
+          "fields": [
+            "docsUrl",
+            "lifecycle",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5",
+          "change": "updated",
+          "fields": ["docsUrl", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-1",
+          "change": "updated",
+          "fields": ["docsUrl", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-1-codex",
+          "change": "updated",
+          "fields": [
+            "docsUrl",
+            "lifecycle",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "gpt-5-codex",
+          "change": "updated",
+          "fields": [
+            "docsUrl",
+            "lifecycle",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "minimax-m2",
+          "change": "updated",
+          "fields": [
+            "docsUrl",
+            "knowledgeCutoff",
+            "maxOutput",
+            "tokenPricing",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "minimax-m2-1",
+          "change": "updated",
+          "fields": [
+            "docsUrl",
+            "knowledgeCutoff",
+            "lifecycle",
+            "maxOutput",
+            "tokenPricing",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "qwen3-coder-30b-a3b",
+          "change": "updated",
+          "fields": [
+            "description",
+            "knowledgeCutoff",
+            "lifecycle",
+            "size",
+            "tokenPricing",
+            "translations",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "models",
+          "id": "qwen3-coder-480b-a35b",
+          "change": "updated",
+          "fields": [
+            "description",
+            "knowledgeCutoff",
+            "lifecycle",
+            "tokenPricing",
+            "translations",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "providers",
+          "id": "alibaba",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "providers",
+          "id": "anthropic",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "providers",
+          "id": "deepseek",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "providers",
+          "id": "google",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "providers",
+          "id": "meta",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "providers",
+          "id": "moonshot",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "providers",
+          "id": "openai",
+          "change": "updated",
+          "fields": ["communityUrls", "sources"]
+        },
+        {
+          "category": "providers",
+          "id": "openrouter",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "providers",
+          "id": "siliconflow",
+          "change": "updated",
+          "fields": ["communityUrls", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "providers",
+          "id": "xai",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "providers",
+          "id": "z-ai",
+          "change": "updated",
+          "fields": ["communityUrls"]
+        },
+        {
+          "category": "vendors",
+          "id": "alibaba",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "anomaly",
+          "change": "updated",
+          "fields": ["lastVerifiedAt", "sources", "verified"]
+        },
+        {
+          "category": "vendors",
+          "id": "ant-group",
+          "change": "updated",
+          "fields": [
+            "description",
+            "translations",
+            "verified",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "anthropic",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "anysphere",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "atlassian",
+          "change": "updated",
+          "fields": ["lastVerifiedAt", "sources", "verified"]
+        },
+        {
+          "category": "vendors",
+          "id": "augment",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "aws",
+          "change": "updated",
+          "fields": [
+            "description",
+            "translations",
+            "verified",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "bytedance",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "cline",
+          "change": "updated",
+          "fields": [
+            "description",
+            "translations",
+            "verified",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "cognition",
+          "change": "updated",
+          "fields": [
+            "verified",
+            "websiteUrl",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "continue",
+          "change": "updated",
+          "fields": [
+            "description",
+            "translations",
+            "verified",
+            "confidence",
+            "deprecated",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "deepseek",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "factory-ai",
+          "change": "updated",
+          "fields": [
+            "description",
+            "translations",
+            "verified",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "github",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "gitlab",
+          "change": "updated",
+          "fields": ["lastVerifiedAt", "sources", "verified"]
+        },
+        {
+          "category": "vendors",
+          "id": "google",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "jetbrains",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "kilo",
+          "change": "updated",
+          "fields": ["confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "meta",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "microsoft",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "minimax",
+          "change": "updated",
+          "fields": [
+            "communityUrls",
+            "verified",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "mistral-ai",
+          "change": "updated",
+          "fields": ["sources"]
+        },
+        {
+          "category": "vendors",
+          "id": "moonshot",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "oh-my-pi",
+          "change": "updated",
+          "fields": ["lastVerifiedAt", "sources", "verified"]
+        },
+        {
+          "category": "vendors",
+          "id": "openai",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "openrouter",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "roo-code",
+          "change": "updated",
+          "fields": [
+            "description",
+            "translations",
+            "verified",
+            "websiteUrl",
+            "confidence",
+            "deprecated",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "shareai-lab",
+          "change": "updated",
+          "fields": [
+            "description",
+            "translations",
+            "verified",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "siliconflow",
+          "change": "updated",
+          "fields": ["confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "sourcegraph",
+          "change": "updated",
+          "fields": [
+            "description",
+            "translations",
+            "verified",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "sst",
+          "change": "updated",
+          "fields": [
+            "communityUrls",
+            "description",
+            "translations",
+            "verified",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "stagewise",
+          "change": "updated",
+          "fields": ["lastVerifiedAt", "sources", "verified"]
+        },
+        {
+          "category": "vendors",
+          "id": "tabnine",
+          "change": "updated",
+          "fields": [
+            "description",
+            "translations",
+            "verified",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "tencent",
+          "change": "updated",
+          "fields": [
+            "description",
+            "translations",
+            "verified",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "verdent-ai",
+          "change": "updated",
+          "fields": [
+            "description",
+            "translations",
+            "verified",
+            "confidence",
+            "lastVerifiedAt",
+            "sources",
+            "verifiedBy"
+          ]
+        },
+        {
+          "category": "vendors",
+          "id": "xai",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "z-ai",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "zed-industries",
+          "change": "updated",
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        }
+      ]
+    },
+    {
+      "id": "2026-07-27-manifest-update",
+      "date": "2026-07-27",
+      "summary": "22 manifest records changed",
       "changes": [
         {
           "category": "models",
@@ -320,67 +1302,61 @@
           "category": "vendors",
           "id": "alibaba",
           "change": "updated",
-          "fields": ["modelSeries"]
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
         },
         {
           "category": "vendors",
           "id": "anthropic",
           "change": "updated",
-          "fields": ["modelSeries"]
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
         },
         {
           "category": "vendors",
           "id": "deepseek",
           "change": "updated",
-          "fields": ["modelSeries"]
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
         },
         {
           "category": "vendors",
           "id": "google",
           "change": "updated",
-          "fields": ["modelSeries"]
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
         },
         {
           "category": "vendors",
-          "id": "meta",
+          "id": "kilo",
           "change": "updated",
-          "fields": ["modelSeries"]
-        },
-        {
-          "category": "vendors",
-          "id": "minimax",
-          "change": "updated",
-          "fields": ["modelSeries"]
-        },
-        {
-          "category": "vendors",
-          "id": "mistral-ai",
-          "change": "updated",
-          "fields": ["modelSeries"]
+          "fields": ["confidence", "lastVerifiedAt", "sources", "verifiedBy"]
         },
         {
           "category": "vendors",
           "id": "moonshot",
           "change": "updated",
-          "fields": ["modelSeries"]
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
         },
         {
           "category": "vendors",
           "id": "openai",
           "change": "updated",
-          "fields": ["modelSeries"]
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
+        },
+        {
+          "category": "vendors",
+          "id": "siliconflow",
+          "change": "updated",
+          "fields": ["confidence", "lastVerifiedAt", "sources", "verifiedBy"]
         },
         {
           "category": "vendors",
           "id": "tencent",
           "change": "updated",
-          "fields": ["modelSeries", "themeColor"]
+          "fields": ["themeColor"]
         },
         {
           "category": "vendors",
           "id": "xai",
           "change": "updated",
-          "fields": ["modelSeries"]
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
         },
         {
           "category": "vendors",
@@ -392,7 +1368,6 @@
             "description",
             "id",
             "lastVerifiedAt",
-            "modelSeries",
             "name",
             "sources",
             "themeColor",
@@ -406,349 +1381,7 @@
           "category": "vendors",
           "id": "z-ai",
           "change": "updated",
-          "fields": ["modelSeries"]
-        }
-      ]
-    },
-    {
-      "id": "2026-07-27-manifest-update",
-      "date": "2026-07-27",
-      "summary": "12 manifest records changed",
-      "changes": [
-        {
-          "category": "models",
-          "id": "claude-opus-5",
-          "change": "added",
-          "fields": [
-            "benchmarks",
-            "capabilities",
-            "confidence",
-            "contextWindow",
-            "description",
-            "docsUrl",
-            "id",
-            "inputModalities",
-            "knowledgeCutoff",
-            "lastVerifiedAt",
-            "lifecycle",
-            "maxOutput",
-            "name",
-            "outputModalities",
-            "platformUrls",
-            "releaseDate",
-            "size",
-            "sources",
-            "tokenPricing",
-            "translations",
-            "vendor",
-            "verified",
-            "verifiedBy",
-            "websiteUrl"
-          ]
-        },
-        {
-          "category": "models",
-          "id": "gemma-4-26b-a4b",
-          "change": "added",
-          "fields": [
-            "benchmarks",
-            "capabilities",
-            "confidence",
-            "contextWindow",
-            "description",
-            "docsUrl",
-            "id",
-            "inputModalities",
-            "knowledgeCutoff",
-            "lastVerifiedAt",
-            "lifecycle",
-            "maxOutput",
-            "name",
-            "outputModalities",
-            "platformUrls",
-            "releaseDate",
-            "size",
-            "sources",
-            "tokenPricing",
-            "translations",
-            "vendor",
-            "verified",
-            "verifiedBy",
-            "websiteUrl"
-          ]
-        },
-        {
-          "category": "models",
-          "id": "gemma-4-31b",
-          "change": "added",
-          "fields": [
-            "benchmarks",
-            "capabilities",
-            "confidence",
-            "contextWindow",
-            "description",
-            "docsUrl",
-            "id",
-            "inputModalities",
-            "knowledgeCutoff",
-            "lastVerifiedAt",
-            "lifecycle",
-            "maxOutput",
-            "name",
-            "outputModalities",
-            "platformUrls",
-            "releaseDate",
-            "size",
-            "sources",
-            "tokenPricing",
-            "translations",
-            "vendor",
-            "verified",
-            "verifiedBy",
-            "websiteUrl"
-          ]
-        },
-        {
-          "category": "models",
-          "id": "hy3",
-          "change": "added",
-          "fields": [
-            "benchmarks",
-            "capabilities",
-            "confidence",
-            "contextWindow",
-            "description",
-            "docsUrl",
-            "id",
-            "inputModalities",
-            "knowledgeCutoff",
-            "lastVerifiedAt",
-            "lifecycle",
-            "maxOutput",
-            "name",
-            "outputModalities",
-            "platformUrls",
-            "releaseDate",
-            "size",
-            "sources",
-            "tokenPricing",
-            "translations",
-            "vendor",
-            "verified",
-            "verifiedBy",
-            "websiteUrl"
-          ]
-        },
-        {
-          "category": "models",
-          "id": "mimo-v2-5",
-          "change": "added",
-          "fields": [
-            "benchmarks",
-            "capabilities",
-            "confidence",
-            "contextWindow",
-            "description",
-            "docsUrl",
-            "id",
-            "inputModalities",
-            "knowledgeCutoff",
-            "lastVerifiedAt",
-            "lifecycle",
-            "maxOutput",
-            "name",
-            "outputModalities",
-            "platformUrls",
-            "releaseDate",
-            "size",
-            "sources",
-            "tokenPricing",
-            "translations",
-            "vendor",
-            "verified",
-            "verifiedBy",
-            "websiteUrl"
-          ]
-        },
-        {
-          "category": "models",
-          "id": "mimo-v2-5-pro",
-          "change": "added",
-          "fields": [
-            "benchmarks",
-            "capabilities",
-            "confidence",
-            "contextWindow",
-            "description",
-            "docsUrl",
-            "id",
-            "inputModalities",
-            "knowledgeCutoff",
-            "lastVerifiedAt",
-            "lifecycle",
-            "maxOutput",
-            "name",
-            "outputModalities",
-            "platformUrls",
-            "releaseDate",
-            "size",
-            "sources",
-            "tokenPricing",
-            "translations",
-            "vendor",
-            "verified",
-            "verifiedBy",
-            "websiteUrl"
-          ]
-        },
-        {
-          "category": "models",
-          "id": "mimo-v2-flash",
-          "change": "added",
-          "fields": [
-            "benchmarks",
-            "capabilities",
-            "confidence",
-            "contextWindow",
-            "description",
-            "docsUrl",
-            "id",
-            "inputModalities",
-            "knowledgeCutoff",
-            "lastVerifiedAt",
-            "lifecycle",
-            "maxOutput",
-            "name",
-            "outputModalities",
-            "platformUrls",
-            "releaseDate",
-            "size",
-            "sources",
-            "tokenPricing",
-            "translations",
-            "vendor",
-            "verified",
-            "verifiedBy",
-            "websiteUrl"
-          ]
-        },
-        {
-          "category": "models",
-          "id": "qwen3-5-122b-a10b",
-          "change": "added",
-          "fields": [
-            "benchmarks",
-            "capabilities",
-            "confidence",
-            "contextWindow",
-            "description",
-            "docsUrl",
-            "id",
-            "inputModalities",
-            "knowledgeCutoff",
-            "lastVerifiedAt",
-            "lifecycle",
-            "maxOutput",
-            "name",
-            "outputModalities",
-            "platformUrls",
-            "releaseDate",
-            "size",
-            "sources",
-            "tokenPricing",
-            "translations",
-            "vendor",
-            "verified",
-            "verifiedBy",
-            "websiteUrl"
-          ]
-        },
-        {
-          "category": "models",
-          "id": "qwen3-5-35b-a3b",
-          "change": "added",
-          "fields": [
-            "benchmarks",
-            "capabilities",
-            "confidence",
-            "contextWindow",
-            "description",
-            "docsUrl",
-            "id",
-            "inputModalities",
-            "knowledgeCutoff",
-            "lastVerifiedAt",
-            "lifecycle",
-            "maxOutput",
-            "name",
-            "outputModalities",
-            "platformUrls",
-            "releaseDate",
-            "size",
-            "sources",
-            "tokenPricing",
-            "translations",
-            "vendor",
-            "verified",
-            "verifiedBy",
-            "websiteUrl"
-          ]
-        },
-        {
-          "category": "models",
-          "id": "qwen3-5-397b-a17b",
-          "change": "added",
-          "fields": [
-            "benchmarks",
-            "capabilities",
-            "confidence",
-            "contextWindow",
-            "description",
-            "docsUrl",
-            "id",
-            "inputModalities",
-            "knowledgeCutoff",
-            "lastVerifiedAt",
-            "lifecycle",
-            "maxOutput",
-            "name",
-            "outputModalities",
-            "platformUrls",
-            "releaseDate",
-            "size",
-            "sources",
-            "tokenPricing",
-            "translations",
-            "vendor",
-            "verified",
-            "verifiedBy",
-            "websiteUrl"
-          ]
-        },
-        {
-          "category": "vendors",
-          "id": "tencent",
-          "change": "updated",
-          "fields": ["themeColor"]
-        },
-        {
-          "category": "vendors",
-          "id": "xiaomi",
-          "change": "added",
-          "fields": [
-            "communityUrls",
-            "confidence",
-            "description",
-            "id",
-            "lastVerifiedAt",
-            "name",
-            "sources",
-            "themeColor",
-            "translations",
-            "verified",
-            "verifiedBy",
-            "websiteUrl"
-          ]
+          "fields": ["verified", "confidence", "lastVerifiedAt", "sources", "verifiedBy"]
         }
       ]
     },

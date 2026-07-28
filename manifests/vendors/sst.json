@@ -2,48 +2,73 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "sst",
   "name": "SST",
-  "description": "Open-source framework for building modern full-stack applications on AWS using serverless architecture, backed by Y Combinator with Pulumi and Terraform engine.",
+  "description": "SST is an open-source framework for building full-stack applications on your own infrastructure using Pulumi and Terraform providers.",
   "translations": {
     "zh-Hans": {
-      "description": "开源框架,使用无服务器架构在 AWS 上构建现代全栈应用,由 Y Combinator 支持,采用 Pulumi 和 Terraform 引擎。"
+      "description": "SST 是一个开源框架，用于通过 Pulumi 和 Terraform 提供商在自有基础设施上构建全栈应用。"
     },
     "de": {
-      "description": "Open-Source-Framework zum Erstellen moderner Full-Stack-Anwendungen auf AWS mit serverloser Architektur, unterstützt von Y Combinator."
+      "description": "SST ist ein Open-Source-Framework zum Erstellen von Full-Stack-Anwendungen auf eigener Infrastruktur mit Pulumi- und Terraform-Providern."
     },
     "ko": {
-      "description": "서버리스 아키텍처를 사용하여 AWS에서 현대적인 풀스택 애플리케이션을 구축하는 오픈 소스 프레임워크로, Y Combinator의 지원을 받으며 Pulumi 및 Terraform 엔진을 사용합니다."
+      "description": "SST는 Pulumi 및 Terraform 공급자를 사용하여 자체 인프라에 풀스택 애플리케이션을 구축하는 오픈 소스 프레임워크입니다."
     },
     "es": {
-      "description": "Framework de código abierto para construir aplicaciones full-stack modernas en AWS usando arquitectura serverless, respaldado por Y Combinator con motor Pulumi y Terraform."
+      "description": "SST es un framework de código abierto para crear aplicaciones full-stack en infraestructura propia mediante proveedores de Pulumi y Terraform."
     },
     "fr": {
-      "description": "Framework open source pour créer des applications full-stack modernes sur AWS utilisant l'architecture serverless, soutenu par Y Combinator avec moteur Pulumi et Terraform."
+      "description": "SST est un framework open source pour créer des applications full-stack sur votre infrastructure avec des fournisseurs Pulumi et Terraform."
     },
     "id": {
-      "description": "Framework open source untuk membangun aplikasi full-stack modern di AWS menggunakan arsitektur serverless, didukung oleh Y Combinator dengan mesin Pulumi dan Terraform."
+      "description": "SST adalah framework open source untuk membangun aplikasi full-stack di infrastruktur sendiri menggunakan penyedia Pulumi dan Terraform."
     },
     "ja": {
-      "description": "サーバーレスアーキテクチャを使用してAWSでモダンなフルスタックアプリケーションを構築するためのオープンソースフレームワーク。Y Combinatorが支援し、PulumiおよびTerraformエンジンを採用。"
+      "description": "SSTは、PulumiおよびTerraformプロバイダーを利用して、自身のインフラストラクチャ上にフルスタックアプリケーションを構築するオープンソースフレームワークです。"
     },
     "pt": {
-      "description": "Framework de código aberto para criar aplicações full-stack modernas na AWS usando arquitetura serverless, apoiado por Y Combinator com motor Pulumi e Terraform."
+      "description": "SST é um framework de código aberto para criar aplicações full-stack na sua própria infraestrutura usando provedores Pulumi e Terraform."
     },
     "ru": {
-      "description": "Фреймворк с открытым исходным кодом для создания современных полнофункциональных приложений на AWS с использованием бессерверной архитектуры, поддерживаемый Y Combinator с движком Pulumi и Terraform."
+      "description": "SST — открытый фреймворк для создания полнофункциональных приложений в собственной инфраструктуре с помощью провайдеров Pulumi и Terraform."
     },
     "tr": {
-      "description": "Pulumi ve Terraform motoru ile Y Combinator tarafından desteklenen, sunucusuz mimari kullanarak AWS'de modern full-stack uygulamalar oluşturmak için açık kaynak bir framework."
+      "description": "SST, Pulumi ve Terraform sağlayıcılarını kullanarak kendi altyapınızda full-stack uygulamalar oluşturmak için açık kaynaklı bir framework'tür."
     },
     "zh-Hant": {
-      "description": "開源框架，使用無伺服器架構在 AWS 上建構現代全棧應用，由 Y Combinator 支持，採用 Pulumi 和 Terraform 引擎。"
+      "description": "SST 是一個開源框架，用於透過 Pulumi 和 Terraform 供應商在自有基礎設施上建構全端應用。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://sst.dev/docs",
+      "title": "What is SST",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/anomalyco/sst",
+      "title": "SST official repository",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://x.com/SST_dev",
+      "title": "SST twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://discord.gg/sst",
+      "title": "SST discord community",
+      "fields": ["communityUrls.discord"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://sst.dev",
   "communityUrls": {
     "linkedin": null,
     "twitter": "https://x.com/SST_dev",
-    "github": "https://github.com/sst/sst",
+    "github": "https://github.com/anomalyco/sst",
     "youtube": null,
     "discord": "https://discord.gg/sst",
     "reddit": null,

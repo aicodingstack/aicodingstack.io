@@ -54,6 +54,16 @@
       "url": "https://platform.claude.com",
       "title": "Claude Platform console",
       "fields": ["applyKeyUrl"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/anthropicresearch",
+      "title": "Anthropic linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://www.anthropic.com/news",
+      "title": "Anthropic blog community",
+      "fields": ["communityUrls.blog"]
     }
   ],
   "lastVerifiedAt": "2026-07-18",
@@ -71,8 +81,8 @@
   },
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/anthropicresearch",
-    "twitter": "https://x.com/AnthropicAI",
-    "github": "https://github.com/anthropics",
+    "twitter": null,
+    "github": null,
     "youtube": null,
     "discord": null,
     "reddit": null,

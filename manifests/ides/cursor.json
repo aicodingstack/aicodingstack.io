@@ -130,5 +130,37 @@
       "launchCommand": "cursor",
       "installPath": null
     }
+  ],
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/company/cursorai",
+      "title": "Cursor linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/cursor_ai",
+      "title": "Cursor twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://github.com/cursor/cursor",
+      "title": "Cursor github community",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.youtube.com/@cursor_ai",
+      "title": "Cursor youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://www.reddit.com/r/cursor",
+      "title": "Cursor reddit community",
+      "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://cursor.com/blog",
+      "title": "Cursor blog community",
+      "fields": ["communityUrls.blog"]
+    }
   ]
 }

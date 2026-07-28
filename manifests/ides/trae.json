@@ -65,6 +65,21 @@
       "url": "https://www.trae.ai/pricing",
       "title": "TRAE pricing",
       "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://x.com/Trae_ai",
+      "title": "TRAE IDE twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.reddit.com/r/Trae_ai",
+      "title": "TRAE IDE reddit community",
+      "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://www.trae.ai/blog",
+      "title": "TRAE IDE blog community",
+      "fields": ["communityUrls.blog"]
     }
   ],
   "lastVerifiedAt": "2026-07-21",

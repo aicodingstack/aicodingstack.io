@@ -2,47 +2,47 @@
   "$schema": "../$schemas/model.schema.json",
   "id": "glm-4-6",
   "name": "GLM 4.6",
-  "description": "GLM 4.6 is a 9B parameter language model from Z.ai with 128K context window, optimized for efficient performance and multilingual understanding.",
+  "description": "GLM 4.6 is Z.ai's 357B-parameter model with a 200K context window, built for coding, reasoning, tool use, and agentic tasks.",
   "translations": {
     "zh-Hans": {
-      "description": "GLM 4.6 是 Z.ai 推出的 9B 参数语言模型，具备 128K 上下文窗口，专为高效性能和多语言理解优化。"
+      "description": "GLM 4.6 是 Z.ai 推出的 357B 参数模型，具备 200K 上下文窗口，面向编程、推理、工具使用和智能体任务。"
     },
     "de": {
-      "description": "GLM 4.6 ist ein 9B-Parameter-Sprachmodell von Z.ai mit 128K-Kontextfenster, optimiert für effiziente Leistung und mehrsprachiges Verständnis."
+      "description": "GLM 4.6 ist ein Modell von Z.ai mit 357B Parametern und einem 200K-Kontextfenster für Programmierung, Schlussfolgern, Werkzeugnutzung und agentische Aufgaben."
     },
     "ko": {
-      "description": "GLM 4.6은 Z.ai의 9B 파라미터 언어 모델로, 128K 컨텍스트 윈도를 갖추고 있으며 효율적인 성능과 다국어 이해를 위해 최적화되었습니다."
+      "description": "GLM 4.6은 Z.ai의 357B 파라미터 모델로, 200K 컨텍스트 윈도를 갖추고 코딩, 추론, 도구 사용 및 에이전트 작업을 위해 설계되었습니다."
     },
     "es": {
-      "description": "GLM 4.6 es un modelo de lenguaje con 9B de parametros de Z.ai con ventana de contexto de 128K, optimizado para rendimiento eficiente y comprension multilingue."
+      "description": "GLM 4.6 es un modelo de Z.ai con 357B de parametros y una ventana de contexto de 200K, creado para programacion, razonamiento, uso de herramientas y tareas agenticas."
     },
     "fr": {
-      "description": "GLM 4.6 est un modele de langage avec 9B de parametres de Z.ai avec une fenetre de contexte de 128K, optimise pour les performances efficaces et la comprehension multilingue."
+      "description": "GLM 4.6 est un modele de Z.ai avec 357B de parametres et une fenetre de contexte de 200K, concu pour le codage, le raisonnement, l'utilisation d'outils et les taches agentiques."
     },
     "id": {
-      "description": "GLM 4.6 adalah model bahasa dengan 9B parameter dari Z.ai dengan jendela konteks 128K, dioptimalkan untuk performa efisien dan pemahaman multibahasa."
+      "description": "GLM 4.6 adalah model 357B parameter dari Z.ai dengan jendela konteks 200K, dibuat untuk coding, penalaran, penggunaan alat, dan tugas agen."
     },
     "ja": {
-      "description": "Z.aiの9Bパラメータ言語モデルGLM 4.6は、128Kコンテキストウィンドウを持ち、効率的なパフォーマンスと多言語理解のために最適化されています。"
+      "description": "GLM 4.6はZ.aiの357Bパラメータモデルで、200Kコンテキストウィンドウを備え、コーディング、推論、ツール利用、エージェントタスク向けに設計されています。"
     },
     "pt": {
-      "description": "GLM 4.6 e um modelo de linguagem com 9B de parametros de Z.ai com janela de contexto de 128K, otimizado para desempenho eficiente e compreensao multilingue."
+      "description": "GLM 4.6 e um modelo da Z.ai com 357B de parametros e janela de contexto de 200K, criado para programacao, raciocinio, uso de ferramentas e tarefas agenticas."
     },
     "ru": {
-      "description": "GLM 4.6 - языковая модель с 9B параметров от Z.ai с окном контекста 128K, оптимизированная для эффективной производительности и многоязычного понимания."
+      "description": "GLM 4.6 — модель Z.ai с 357B параметров и контекстным окном 200K, созданная для программирования, рассуждений, использования инструментов и агентных задач."
     },
     "tr": {
-      "description": "GLM 4.6, Z.ai'den gelen 128K baglam penceresine sahip 9B parametreli dil modeli, verimli performans ve cok dilli anlas icin optimize edilmistir."
+      "description": "GLM 4.6, Z.ai'nin 357B parametreli ve 200K baglam pencereli; kodlama, muhakeme, arac kullanimi ve ajan gorevleri icin gelistirilmis modelidir."
     },
     "zh-Hant": {
-      "description": "GLM 4.6 是 Z.ai 推出的 9B 參數語言模型，具備 128K 上下文視窗，專為高效性能和多語言理解優化。"
+      "description": "GLM 4.6 是 Z.ai 推出的 357B 參數模型，具備 200K 上下文視窗，面向編程、推理、工具使用和智能體任務。"
     }
   },
   "verified": true,
   "websiteUrl": "https://z.ai",
   "docsUrl": "https://huggingface.co/zai-org/GLM-4.6",
   "vendor": "Z.ai",
-  "size": "9B",
+  "size": "357B",
   "contextWindow": 204800,
   "maxOutput": 131072,
   "tokenPricing": {
@@ -89,5 +89,39 @@
     "huggingface": "https://huggingface.co/zai-org/GLM-4.6",
     "artificialAnalysis": "https://artificialanalysis.ai/models/glm-4-6",
     "openrouter": "https://openrouter.ai/z-ai/glm-4.6"
-  }
+  },
+  "sources": [
+    {
+      "url": "https://docs.z.ai/guides/llm/glm-4.6",
+      "title": "Z.ai GLM-4.6 model guide",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/zai-org/GLM-4.6",
+      "title": "Z.ai official GLM-4.6 model card",
+      "fields": ["size", "platformUrls.huggingface", "benchmarks"]
+    },
+    {
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "title": "Z.ai model release notes",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "title": "Z.ai API pricing",
+      "fields": ["tokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

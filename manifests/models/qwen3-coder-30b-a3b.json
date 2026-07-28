@@ -2,66 +2,96 @@
   "$schema": "../$schemas/model.schema.json",
   "id": "qwen3-coder-30b-a3b",
   "name": "Qwen3 Coder 30B-A3B",
-  "description": "Qwen3 Coder is a specialized code generation model with 32B parameters and 32K context window, optimized for efficient code writing and debugging tasks.",
+  "description": "Qwen3 Coder 30B-A3B is a code model with 30.5B total and 3.3B activated parameters, plus a native 262,144-token context window for agentic coding.",
   "translations": {
     "zh-Hans": {
-      "description": "Qwen3 Coder 是专为代码生成设计的模型，32B 参数，32K 上下文窗口，优化了代码编写和调试任务的效率。"
+      "description": "Qwen3 Coder 30B-A3B 是一款代码模型，拥有 30.5B 总参数和 3.3B 激活参数，并具备原生 262,144 token 上下文窗口，面向智能体编程。"
     },
     "de": {
-      "description": "Qwen3 Coder ist ein spezialisiertes Code-Generierungsmodell mit 32B-Parametern und 32K-Kontextfenster, optimiert für effizientes Coden und Debugging."
+      "description": "Qwen3 Coder 30B-A3B ist ein Codemodell mit 30,5B Gesamt- und 3,3B aktiven Parametern sowie einem nativen Kontextfenster von 262.144 Token für agentisches Programmieren."
     },
     "ko": {
-      "description": "Qwen3 Coder는 코드 생성을 위해 설계된 모델로, 32B 파라미터와 32K 컨텍스트 윈도를 갖추고 있으며 효율적인 코드 작성 및 디버깅 작업에 최적화되었습니다."
+      "description": "Qwen3 Coder 30B-A3B는 총 30.5B, 활성 3.3B 파라미터와 네이티브 262,144 토큰 컨텍스트 윈도를 갖춘 에이전트 코딩 모델입니다."
     },
     "es": {
-      "description": "Qwen3 Coder es un modelo especializado en generacion de codigo con 32B parametros y ventana de contexto 32K, optimizado para escritura de codigo eficiente y tareas de depuracion."
+      "description": "Qwen3 Coder 30B-A3B es un modelo de codigo con 30,5B parametros totales y 3,3B activos, ademas de una ventana de contexto nativa de 262.144 tokens para programacion agentica."
     },
     "fr": {
-      "description": "Qwen3 Coder est un modele specialise dans la generation de code avec 32B de parametres et une fenetre de contexte de 32K, optimise pour une ecriture de code efficace et des taches de debogage."
+      "description": "Qwen3 Coder 30B-A3B est un modele de code avec 30,5B parametres au total, 3,3B actifs et une fenetre de contexte native de 262 144 jetons pour le codage agentique."
     },
     "id": {
-      "description": "Qwen3 Coder adalah model spesialisasi pembuatan kode dengan 32B parameter dan jendela konteks 32K, dioptimalkan untuk penulisan kode efisien dan tugas debugging."
+      "description": "Qwen3 Coder 30B-A3B adalah model kode dengan total 30,5B dan 3,3B parameter aktif serta jendela konteks native 262.144 token untuk coding agentik."
     },
     "ja": {
-      "description": "Qwen3 Coderは32Bパラメータと32Kコンテキストウィンドウを持つコード生成専門モデルで、効率的なコード作成とデバッグタスクに最適化されています。"
+      "description": "Qwen3 Coder 30B-A3Bは、総30.5B・有効3.3Bパラメータとネイティブ262,144トークンのコンテキストを備えたエージェントコーディングモデルです。"
     },
     "pt": {
-      "description": "Qwen3 Coder e um modelo especializado em geracao de codigo com 32B parametres e janela de contexto 32K, otimizado para escrita de codigo eficiente e tarefas de depuracao."
+      "description": "Qwen3 Coder 30B-A3B e um modelo de codigo com 30,5B parametros totais e 3,3B ativos, alem de uma janela de contexto nativa de 262.144 tokens para programacao agentica."
     },
     "ru": {
-      "description": "Qwen3 Coder - это специализированная модель генерации кода с 32B параметрами и окном контекста 32K, оптимизированная для эффективного написания кода и задач отладки."
+      "description": "Qwen3 Coder 30B-A3B — модель для кода с 30,5B параметров всего, 3,3B активных и нативным контекстным окном 262 144 токена для агентного программирования."
     },
     "tr": {
-      "description": "Qwen3 Coder, 32B parametre ve 32K icerik penceresine sahip kod uretim ozellestirilmis modeldir, verimli kod yazma ve hata ayiklama gorevleri icin optimize edilmistir."
+      "description": "Qwen3 Coder 30B-A3B, toplam 30,5B ve etkin 3,3B parametre ile ajan tabanli kodlama icin yerel 262.144 token baglam penceresine sahip bir kod modelidir."
     },
     "zh-Hant": {
-      "description": "Qwen3 Coder 是專為代碼生成設計的模型，32B 參數，32K 上下文窗口，優化了代碼編寫和調試任務的效率。"
+      "description": "Qwen3 Coder 30B-A3B 是一款程式碼模型，擁有 30.5B 總參數和 3.3B 啟用參數，並具備原生 262,144 token 上下文視窗，面向智能體編程。"
     }
   },
   "verified": true,
   "websiteUrl": "https://qwen.ai",
   "docsUrl": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "vendor": "Alibaba",
-  "size": "30B",
+  "size": "30.5B",
   "contextWindow": 262144,
   "maxOutput": 65536,
   "tokenPricing": {
     "status": "available",
-    "primaryOffer": "global-standard",
+    "primaryOffer": "sg-standard",
     "offers": [
       {
-        "id": "global-standard",
+        "id": "sg-standard",
         "currency": "USD",
-        "region": "global",
+        "region": "SG",
         "serviceTier": "standard",
         "effectiveFrom": null,
         "effectiveTo": null,
         "tiers": [
           {
-            "condition": null,
+            "condition": {
+              "metric": "inputTokens",
+              "min": 1,
+              "max": 32000
+            },
             "rates": {
               "input": 0.45,
               "output": 2.25,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          },
+          {
+            "condition": {
+              "metric": "inputTokens",
+              "min": 32001,
+              "max": 128000
+            },
+            "rates": {
+              "input": 0.75,
+              "output": 3.75,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          },
+          {
+            "condition": {
+              "metric": "inputTokens",
+              "min": 128001,
+              "max": 200000
+            },
+            "rates": {
+              "input": 1.2,
+              "output": 6,
               "cacheRead": null,
               "cacheWrite": null
             }
@@ -71,8 +101,8 @@
     ]
   },
   "releaseDate": "2025-07-31",
-  "lifecycle": "latest",
-  "knowledgeCutoff": "2025-07",
+  "lifecycle": "deprecated",
+  "knowledgeCutoff": null,
   "inputModalities": ["text"],
   "outputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
@@ -89,5 +119,37 @@
     "huggingface": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
     "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-coder-30b-a3b-instruct",
     "openrouter": "https://openrouter.ai/qwen/qwen3-coder-30b-a3b-instruct"
-  }
+  },
+  "sources": [
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "title": "Qwen3-Coder-30B-A3B-Instruct model card",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "maxOutput",
+        "releaseDate",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "platformUrls.huggingface"
+      ]
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "title": "Alibaba Cloud Model Studio pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-depreciation",
+      "title": "Alibaba Cloud Model Studio model lifecycle",
+      "fields": ["lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

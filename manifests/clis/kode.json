@@ -90,5 +90,12 @@
       "launchCommand": "kode (alias: kwa or kd)",
       "installPath": null
     }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/shareAI-lab/Kode-cli",
+      "title": "Kode github community",
+      "fields": ["communityUrls.github"]
+    }
   ]
 }

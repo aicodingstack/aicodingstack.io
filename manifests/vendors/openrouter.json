@@ -38,7 +38,32 @@
       "description": "統一的 API 平台，透過單一接口提供來自不同提供商的多個 AI 模型的訪問。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://openrouter.ai/support",
+      "title": "OpenRouter support and product overview",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/openrouter-ai",
+      "title": "OpenRouter GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://x.com/OpenRouterAI",
+      "title": "OpenRouter twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://discord.gg/openrouter",
+      "title": "OpenRouter discord community",
+      "fields": ["communityUrls.discord"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://openrouter.ai",
   "communityUrls": {
     "linkedin": null,

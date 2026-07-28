@@ -7,10 +7,17 @@ import Header from '@/components/Header'
 import { Breadcrumb } from '@/components/navigation/Breadcrumb'
 import ComparisonTable, { type ComparisonColumn } from '@/components/product/ComparisonTable'
 import { Link } from '@/i18n/navigation'
-import { extensionsData as extensions } from '@/lib/generated'
+import { withVendorCommunityUrlsForCatalog } from '@/lib/community-urls'
+import { extensionsData, vendorsData } from '@/lib/generated'
 import { getGithubStars } from '@/lib/generated/github-stars'
 import { renderLicense } from '@/lib/license'
 import { formatPrice, type PricingTier } from '@/lib/pricing'
+import type { ManifestExtension, ManifestVendor } from '@/types/manifests'
+
+const extensions = withVendorCommunityUrlsForCatalog(
+  extensionsData as unknown as ManifestExtension[],
+  vendorsData as unknown as ManifestVendor[]
+)
 
 type Props = {
   locale: string
@@ -61,12 +68,7 @@ export default function ExtensionComparisonPageClient({ locale: _locale }: Props
       render: (_: unknown, item: Record<string, unknown>) => {
         const id = item.id as string
         const stars = getGithubStars('extensions', id)
-        const communityUrls = item.communityUrls as
-          | {
-              github?: string
-            }
-          | undefined
-        const githubUrl = communityUrls?.github
+        const githubUrl = item.githubUrl as string | null | undefined
 
         if (stars === null || stars === undefined)
           return <span className="text-right block">-</span>

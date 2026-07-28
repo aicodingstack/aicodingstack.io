@@ -70,6 +70,21 @@
       "url": "https://www.trae.ai/terms-of-service",
       "title": "TRAE Terms of Service",
       "fields": ["license"]
+    },
+    {
+      "url": "https://x.com/Trae_ai",
+      "title": "TRAE Work twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.reddit.com/r/Trae_ai",
+      "title": "TRAE Work reddit community",
+      "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://www.trae.ai/blog",
+      "title": "TRAE Work blog community",
+      "fields": ["communityUrls.blog"]
     }
   ],
   "lastVerifiedAt": "2026-07-21",

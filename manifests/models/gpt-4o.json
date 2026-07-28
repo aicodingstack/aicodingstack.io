@@ -40,7 +40,7 @@
   },
   "verified": true,
   "websiteUrl": "https://openai.com",
-  "docsUrl": "https://platform.openai.com/docs/models/gpt-4o-latest",
+  "docsUrl": "https://developers.openai.com/api/docs/models/gpt-4o",
   "vendor": "OpenAI",
   "size": null,
   "contextWindow": 128000,
@@ -71,7 +71,7 @@
     ]
   },
   "releaseDate": "2024-05-13",
-  "lifecycle": "deprecated",
+  "lifecycle": "maintained",
   "knowledgeCutoff": "2023-10-01",
   "inputModalities": ["text", "image"],
   "outputModalities": ["text"],
@@ -89,5 +89,32 @@
     "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-4o",
     "openrouter": "https://openrouter.ai/openai/gpt-4o"
-  }
+  },
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-4o",
+      "title": "OpenAI GPT-4o model documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "lifecycle"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/hello-gpt-4o/",
+      "title": "Hello GPT-4o",
+      "fields": ["releaseDate", "description"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

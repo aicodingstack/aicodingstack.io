@@ -55,6 +55,21 @@
       "url": "https://air.dev/changelog",
       "title": "JetBrains Air changelog",
       "fields": ["latestVersion", "resourceUrls.changelog"]
+    },
+    {
+      "url": "https://x.com/getsome_air",
+      "title": "Air twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://discord.com/invite/jetbrains",
+      "title": "Air discord community",
+      "fields": ["communityUrls.discord"]
+    },
+    {
+      "url": "https://blog.jetbrains.com/air/",
+      "title": "Air blog community",
+      "fields": ["communityUrls.blog"]
     }
   ],
   "lastVerifiedAt": "2026-07-21",
@@ -83,7 +98,7 @@
     "issue": "https://youtrack.jetbrains.com/projects/AIR"
   },
   "communityUrls": {
-    "linkedin": "https://www.linkedin.com/company/jetbrains",
+    "linkedin": null,
     "twitter": "https://x.com/getsome_air",
     "github": null,
     "youtube": null,
