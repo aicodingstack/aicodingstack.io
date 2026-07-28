@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-27",
+  "asOf": "2026-07-28",
   "thresholds": {
     "models": 30,
     "providers": 30,
@@ -70,59 +70,59 @@
   },
   "translationsByLocale": {
     "de": {
-      "totalStrings": 410,
+      "totalStrings": 411,
       "matchingEnglish": 113,
-      "matchingEnglishPercent": 27.6
+      "matchingEnglishPercent": 27.5
     },
     "es": {
-      "totalStrings": 410,
+      "totalStrings": 411,
       "matchingEnglish": 104,
-      "matchingEnglishPercent": 25.4
+      "matchingEnglishPercent": 25.3
     },
     "fr": {
-      "totalStrings": 410,
+      "totalStrings": 411,
       "matchingEnglish": 115,
       "matchingEnglishPercent": 28
     },
     "id": {
-      "totalStrings": 410,
+      "totalStrings": 411,
       "matchingEnglish": 149,
       "matchingEnglishPercent": 36.3
     },
     "ja": {
-      "totalStrings": 410,
+      "totalStrings": 411,
       "matchingEnglish": 107,
-      "matchingEnglishPercent": 26.1
+      "matchingEnglishPercent": 26
     },
     "ko": {
-      "totalStrings": 410,
+      "totalStrings": 411,
       "matchingEnglish": 115,
       "matchingEnglishPercent": 28
     },
     "pt": {
-      "totalStrings": 410,
+      "totalStrings": 411,
       "matchingEnglish": 114,
-      "matchingEnglishPercent": 27.8
+      "matchingEnglishPercent": 27.7
     },
     "ru": {
-      "totalStrings": 410,
+      "totalStrings": 411,
       "matchingEnglish": 124,
       "matchingEnglishPercent": 30.2
     },
     "tr": {
-      "totalStrings": 410,
+      "totalStrings": 411,
       "matchingEnglish": 125,
-      "matchingEnglishPercent": 30.5
+      "matchingEnglishPercent": 30.4
     },
     "zh-Hans": {
-      "totalStrings": 410,
+      "totalStrings": 411,
       "matchingEnglish": 98,
-      "matchingEnglishPercent": 23.9
+      "matchingEnglishPercent": 23.8
     },
     "zh-Hant": {
-      "totalStrings": 410,
+      "totalStrings": 411,
       "matchingEnglish": 98,
-      "matchingEnglishPercent": 23.9
+      "matchingEnglishPercent": 23.8
     }
   },
   "issues": [
