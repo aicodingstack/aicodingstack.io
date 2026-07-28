@@ -3,43 +3,73 @@
   "id": "cline",
   "name": "Cline",
   "aliases": ["Cline Bot"],
-  "description": "Open-source autonomous coding agent for VS Code with model-agnostic design, MCP integration, and human-in-the-loop approval, trusted by 4M+ developers worldwide.",
+  "description": "Cline is an open-source coding agent for editors and terminals with model choice, MCP integration, and permission-based control.",
   "translations": {
     "zh-Hans": {
-      "description": "VS Code 的开源自主编码智能体,模型无关设计、MCP 集成和人机协作审批,受到全球 400 万以上开发者信赖。"
+      "description": "Cline 是一款面向编辑器和终端的开源编码 Agent，支持模型选择、MCP 集成和基于权限的控制。"
     },
     "de": {
-      "description": "Open-Source autonomer Codierungs-Agent für VS Code mit modell-agnostischem Design, MCP-Integration und menschlicher Genehmigungsschleife."
+      "description": "Cline ist ein Open-Source-Coding-Agent für Editoren und Terminals mit Modellauswahl, MCP-Integration und berechtigungsbasierter Kontrolle."
     },
     "ko": {
-      "description": "VS Code용 오픈 소스 자율 코딩 에이전트로, 모덐 통합 설계, MCP 통합 및 사람이 루프에 있는 승인을 갖추고 있으며 전 세계 400만 명 이상의 개발자가 신뢰합니다."
+      "description": "Cline은 모델 선택, MCP 통합 및 권한 기반 제어를 지원하는 편집기와 터미널용 오픈 소스 코딩 에이전트입니다."
     },
     "es": {
-      "description": "Agente de codificación autónomo de código abierto para VS Code con diseño agnóstico de modelos, integración MCP y aprobación de bucle humano, confiado por más de 4 millones de desarrolladores en to..."
+      "description": "Cline es un agente de programación de código abierto para editores y terminales con elección de modelos, integración MCP y control basado en permisos."
     },
     "fr": {
-      "description": "Agent de codage autonome open source pour VS Code avec conception agnostique de modeles, integration MCP et approbation en boucle humaine, approuve par plus de 4 millions de développeurs mondiaux."
+      "description": "Cline est un agent de codage open source pour éditeurs et terminaux, avec choix du modèle, intégration MCP et contrôle fondé sur les autorisations."
     },
     "id": {
-      "description": "Agen coding otonom open-source untuk VS Code dengan desain agnostik model, integrasi MCP, dan persetujuan human-in-the-loop, dipercaya oleh lebih dari 4 juta pengembang di seluruh dunia."
+      "description": "Cline adalah agen coding open source untuk editor dan terminal dengan pilihan model, integrasi MCP, dan kontrol berbasis izin."
     },
     "ja": {
-      "description": "モデルに依存しない設計、MCP統合、人間がループに入る承認を備えたVS Code用オープンソース自律型コーディングエージェント。世界中の400万人以上の開発者に信頼されています。"
+      "description": "Clineは、モデル選択、MCP統合、権限ベースの制御に対応したエディターおよびターミナル向けのオープンソースコーディングエージェントです。"
     },
     "pt": {
-      "description": "Agente de codificação autônomo de código aberto para VS Code com design agnóstico de modelos, integração MCP e aprovação loop humano, confiável por mais de 4 milhões de desenvolvedores em todo o mu..."
+      "description": "Cline é um agente de programação de código aberto para editores e terminais, com escolha de modelos, integração MCP e controle baseado em permissões."
     },
     "ru": {
-      "description": "Автономный агент программирования с открытым исходным кодом для VS Code с независимым от модели дизайном, интеграцией MCP и человеческим подтверждением, которому доверяют более 4 миллионов разработ..."
+      "description": "Cline — открытый агент программирования для редакторов и терминалов с выбором моделей, интеграцией MCP и управлением на основе разрешений."
     },
     "tr": {
-      "description": "VS Code için açık kaynaklı otonom kodlama aracı, model agnostik tasarım, MCP entegrasyonu ve insan-onaylı onay sistemine sahiptir ve dünya çapında 4 milyondan fazla geliştirici tarafından güvenilme..."
+      "description": "Cline; model seçimi, MCP entegrasyonu ve izin tabanlı kontrol sunan, editörler ve terminaller için açık kaynaklı bir kodlama ajanıdır."
     },
     "zh-Hant": {
-      "description": "VS Code 的開源自動編碼智能體，模型無關設計、MCP 集成和人機协作審批，受到全球 400 萬以上開發者信賴。"
+      "description": "Cline 是一款面向編輯器和終端的開源編碼 Agent，支援模型選擇、MCP 整合和基於權限的控制。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://cline.bot/",
+      "title": "Cline official site",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/cline/cline",
+      "title": "Cline official repository",
+      "fields": ["description", "communityUrls.github"]
+    },
+    {
+      "url": "https://x.com/clinebot",
+      "title": "Cline twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.reddit.com/r/Cline",
+      "title": "Cline reddit community",
+      "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://cline.bot/blog",
+      "title": "Cline blog community",
+      "fields": ["communityUrls.blog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://cline.bot",
   "communityUrls": {
     "linkedin": null,

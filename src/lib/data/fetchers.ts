@@ -1,5 +1,6 @@
 import { cache } from 'react'
 import type { Locale } from '@/i18n/config'
+import { withVendorCommunityUrls } from '@/lib/community-urls'
 import {
   clisData,
   desktopsData,
@@ -31,10 +32,11 @@ export const getIDE = cache(async (slug: string, locale: Locale) => {
   const ideRaw = idesData.find(i => i.id === slug)
   if (!ideRaw) return null
 
-  return localizeManifestItem(
+  const ide = localizeManifestItem(
     ideRaw as unknown as Record<string, unknown>,
     locale
   ) as unknown as ManifestIDE
+  return withVendorCommunityUrls(ide, vendorsData as unknown as ManifestVendor[])
 })
 
 /**
@@ -45,10 +47,11 @@ export const getCLI = cache(async (slug: string, locale: Locale) => {
   const cliRaw = clisData.find(c => c.id === slug)
   if (!cliRaw) return null
 
-  return localizeManifestItem(
+  const cli = localizeManifestItem(
     cliRaw as unknown as Record<string, unknown>,
     locale
   ) as unknown as ManifestCLI
+  return withVendorCommunityUrls(cli, vendorsData as unknown as ManifestVendor[])
 })
 
 /** Cached fetcher for standalone desktop coding-agent data. */
@@ -56,10 +59,11 @@ export const getDesktop = cache(async (slug: string, locale: Locale) => {
   const desktopRaw = desktopsData.find(desktop => desktop.id === slug)
   if (!desktopRaw) return null
 
-  return localizeManifestItem(
+  const desktop = localizeManifestItem(
     desktopRaw as unknown as Record<string, unknown>,
     locale
   ) as unknown as ManifestDesktop
+  return withVendorCommunityUrls(desktop, vendorsData as unknown as ManifestVendor[])
 })
 
 /**
@@ -79,10 +83,11 @@ export const getExtension = cache(async (slug: string, locale: Locale) => {
   const extensionRaw = extensionsData.find(e => e.id === slug)
   if (!extensionRaw) return null
 
-  return localizeManifestItem(
+  const extension = localizeManifestItem(
     extensionRaw as unknown as Record<string, unknown>,
     locale
   ) as unknown as ManifestExtension
+  return withVendorCommunityUrls(extension, vendorsData as unknown as ManifestVendor[])
 })
 
 /**
@@ -107,10 +112,11 @@ export const getModelProvider = cache(async (slug: string, locale: Locale) => {
   const providerRaw = providersData.find(p => p.id === slug)
   if (!providerRaw) return null
 
-  return localizeManifestItem(
+  const provider = localizeManifestItem(
     providerRaw as unknown as Record<string, unknown>,
     locale
   ) as unknown as ManifestProvider
+  return withVendorCommunityUrls(provider, vendorsData as unknown as ManifestVendor[])
 })
 
 /**

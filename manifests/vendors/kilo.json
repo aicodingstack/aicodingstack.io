@@ -39,6 +39,51 @@
     }
   },
   "verified": true,
+  "sources": [
+    {
+      "url": "https://kilo.ai/",
+      "title": "Kilo official website",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/Kilo-Org/kilocode",
+      "title": "Kilo official repository",
+      "fields": ["description", "communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/kilo-code",
+      "title": "Kilo linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/kilocode",
+      "title": "Kilo twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.youtube.com/@Kilo-Code",
+      "title": "Kilo youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://kilo.ai/discord",
+      "title": "Kilo discord community",
+      "fields": ["communityUrls.discord"]
+    },
+    {
+      "url": "https://www.reddit.com/r/kilocode",
+      "title": "Kilo reddit community",
+      "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://blog.kilo.ai",
+      "title": "Kilo blog community",
+      "fields": ["communityUrls.blog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://kilo.ai",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/kilo-code",

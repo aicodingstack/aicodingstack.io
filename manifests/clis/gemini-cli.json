@@ -54,7 +54,17 @@
     {
       "url": "https://github.com/google-gemini/gemini-cli",
       "title": "Gemini CLI official repository",
-      "fields": ["githubUrl", "license", "platforms"]
+      "fields": ["githubUrl", "license", "platforms", "communityUrls.github"]
+    },
+    {
+      "url": "https://www.youtube.com/@GoogleDevelopers",
+      "title": "Gemini CLI youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-cli-custom-slash-commands",
+      "title": "Gemini CLI blog community",
+      "fields": ["communityUrls.blog"]
     }
   ],
   "lastVerifiedAt": "2026-07-22",

@@ -39,18 +39,25 @@
       "description": "Oh My Pi 是 omp 背後的開源專案；omp 是一款終端編碼 Agent，支援 LSP、除錯器、子 Agent、多模型供應商和原生跨平台工具。"
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://omp.sh",
-      "title": "omp official site"
+      "title": "omp official site",
+      "fields": ["name", "aliases", "description", "websiteUrl"]
     },
     {
       "url": "https://github.com/can1357/oh-my-pi",
-      "title": "Oh My Pi official repository"
+      "title": "Oh My Pi official repository",
+      "fields": ["description", "communityUrls.github"]
+    },
+    {
+      "url": "https://discord.com/invite/4NMW9cdXZa",
+      "title": "Oh My Pi discord community",
+      "fields": ["communityUrls.discord"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-28",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://omp.sh",

@@ -98,6 +98,48 @@ describe('data health reporting', () => {
     expect(markdown).toContain('| zh-Hans | 2 | 1 | 50% |')
   })
 
+  it('requires provenance for community URLs and rejects vendor duplication', () => {
+    const report = analyzeDataHealth(
+      [
+        record('vendors', 'example', {
+          name: 'Example',
+          communityUrls: {
+            github: 'https://github.com/example',
+          },
+          sources: [
+            {
+              url: 'https://github.com/example',
+              fields: ['communityUrls.github'],
+            },
+          ],
+        }),
+        record('clis', 'example-cli', {
+          vendor: 'Example',
+          communityUrls: {
+            github: 'https://github.com/example',
+            twitter: 'https://x.com/example_cli',
+          },
+          sources: [
+            {
+              url: 'https://github.com/example',
+              fields: ['communityUrls.github'],
+            },
+          ],
+        }),
+      ],
+      '2026-07-18'
+    )
+
+    expect(
+      report.issues.filter(issue => issue.severity === 'warning').map(issue => issue.code)
+    ).toEqual(['community-url-without-provenance', 'duplicated-vendor-community-url'])
+    expect(report.summary).toMatchObject({
+      communityUrlsPopulated: 3,
+      communityUrlsWithProvenance: 2,
+      duplicatedVendorCommunityUrls: 1,
+    })
+  })
+
   it('rejects a malformed report date', () => {
     expect(() => analyzeDataHealth([], '2026-02-30')).toThrow('Invalid --as-of date')
   })

@@ -90,5 +90,27 @@
       "launchCommand": "code",
       "installPath": null
     }
+  ],
+  "sources": [
+    {
+      "url": "https://x.com/code",
+      "title": "Visual Studio Code twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://github.com/microsoft/vscode",
+      "title": "Visual Studio Code github community",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.reddit.com/r/vscode",
+      "title": "Visual Studio Code reddit community",
+      "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://code.visualstudio.com/blogs",
+      "title": "Visual Studio Code blog community",
+      "fields": ["communityUrls.blog"]
+    }
   ]
 }

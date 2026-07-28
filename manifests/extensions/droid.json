@@ -85,15 +85,18 @@
   },
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/factoryai",
-    "twitter": "https://x.com/FactoryAI",
+    "twitter": null,
     "github": null,
     "youtube": null,
     "discord": null,
     "reddit": null,
-    "blog": "https://factory.ai/news"
+    "blog": null
   },
   "relatedProducts": [
-    { "type": "desktop", "productId": "factory-desktop" },
+    {
+      "type": "desktop",
+      "productId": "factory-desktop"
+    },
     {
       "type": "cli",
       "productId": "droid-cli"
@@ -104,6 +107,13 @@
       "ideId": "vscode",
       "marketplaceUrl": null,
       "installUri": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/company/factoryai",
+      "title": "Droid linkedin community",
+      "fields": ["communityUrls.linkedin"]
     }
   ]
 }

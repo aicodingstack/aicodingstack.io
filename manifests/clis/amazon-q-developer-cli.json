@@ -76,10 +76,10 @@
     "issue": "https://github.com/aws/amazon-q-developer-cli/issues"
   },
   "communityUrls": {
-    "linkedin": "https://www.linkedin.com/company/amazon-web-services",
-    "twitter": "https://x.com/awscloud",
+    "linkedin": null,
+    "twitter": null,
     "github": "https://github.com/aws/amazon-q-developer-cli",
-    "youtube": "https://www.youtube.com/@amazonwebservices",
+    "youtube": null,
     "discord": null,
     "reddit": null,
     "blog": "https://aws.amazon.com/blogs/aws"
@@ -103,6 +103,18 @@
       "installCommand": "brew install --cask amazon-q",
       "launchCommand": "q",
       "installPath": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/aws/amazon-q-developer-cli",
+      "title": "Amazon Q Developer CLI github community",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws",
+      "title": "Amazon Q Developer CLI blog community",
+      "fields": ["communityUrls.blog"]
     }
   ]
 }

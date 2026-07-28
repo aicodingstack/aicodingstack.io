@@ -50,6 +50,11 @@
       "url": "https://learn.chatgpt.com/docs/open-source",
       "title": "Codex open-source components",
       "fields": ["githubUrl", "license", "resourceUrls.issue"]
+    },
+    {
+      "url": "https://openai.com/news",
+      "title": "Codex blog community",
+      "fields": ["communityUrls.blog"]
     }
   ],
   "lastVerifiedAt": "2026-07-21",
@@ -100,7 +105,7 @@
   },
   "communityUrls": {
     "linkedin": null,
-    "twitter": "https://x.com/OpenAI",
+    "twitter": null,
     "github": null,
     "youtube": null,
     "discord": null,
@@ -108,7 +113,10 @@
     "blog": "https://openai.com/news"
   },
   "relatedProducts": [
-    { "type": "desktop", "productId": "codex-app" },
+    {
+      "type": "desktop",
+      "productId": "codex-app"
+    },
     {
       "type": "cli",
       "productId": "codex-cli"

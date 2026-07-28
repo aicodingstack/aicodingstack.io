@@ -54,7 +54,42 @@
       "description": "科技公司，構建 AI 工具和開源模型（如 Llama），透過開放科學推進研究，連接全球人們並推動創新。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://ai.meta.com/open/",
+      "title": "Meta open source AI",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://ai.meta.com/resources/models-and-libraries/",
+      "title": "Meta AI models and libraries",
+      "fields": ["description"]
+    },
+    {
+      "url": "https://github.com/meta-llama",
+      "title": "Meta Llama GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/meta",
+      "title": "Meta linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/AIatMeta",
+      "title": "Meta twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://ai.meta.com/blog",
+      "title": "Meta blog community",
+      "fields": ["communityUrls.blog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://ai.meta.com",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/meta",

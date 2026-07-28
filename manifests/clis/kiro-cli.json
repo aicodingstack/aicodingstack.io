@@ -123,5 +123,37 @@
       "launchCommand": "kiro-cli",
       "installPath": "~/.local/bin"
     }
+  ],
+  "sources": [
+    {
+      "url": "https://x.com/kirodotdev",
+      "title": "Kiro CLI twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://github.com/kirodotdev",
+      "title": "Kiro CLI github community",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.youtube.com/@kirodotdev",
+      "title": "Kiro CLI youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://discord.gg/kirodotdev",
+      "title": "Kiro CLI discord community",
+      "fields": ["communityUrls.discord"]
+    },
+    {
+      "url": "https://www.reddit.com/r/kiroIDE",
+      "title": "Kiro CLI reddit community",
+      "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://kiro.dev/blog",
+      "title": "Kiro CLI blog community",
+      "fields": ["communityUrls.blog"]
+    }
   ]
 }

@@ -2,40 +2,40 @@
   "$schema": "../$schemas/model.schema.json",
   "id": "qwen3-coder-480b-a35b",
   "name": "Qwen3 Coder 480B-A35B",
-  "description": "Qwen3 Coder is a specialized code generation model with 32B parameters and 32K context window, designed for software development and programming assistance.",
+  "description": "Qwen3 Coder 480B-A35B is a code model with 480B total and 35B activated parameters, plus a native 262,144-token context window for agentic coding.",
   "translations": {
     "zh-Hans": {
-      "description": "Qwen3 Coder 是专为代码生成设计的模型，32B 参数，32K 上下文窗口，面向软件开发编程助手场景。"
+      "description": "Qwen3 Coder 480B-A35B 是一款代码模型，拥有 480B 总参数和 35B 激活参数，并具备原生 262,144 token 上下文窗口，面向智能体编程。"
     },
     "de": {
-      "description": "Qwen3 Coder ist ein spezialisiertes Code-Generierungsmodell mit 32B-Parametern und 32K-Kontextfenster, entwickelt für Softwareentwicklung und Programmierassistent."
+      "description": "Qwen3 Coder 480B-A35B ist ein Codemodell mit 480B Gesamt- und 35B aktiven Parametern sowie einem nativen Kontextfenster von 262.144 Token für agentisches Programmieren."
     },
     "ko": {
-      "description": "Qwen3 Coder는 코드 생성을 위해 설계된 모델로, 32B 파라미터와 32K 컨텍스트 윈도를 갖추고 소프트웨어 개발 및 프로그래밍 어시스턴트 시나리오를 지향합니다."
+      "description": "Qwen3 Coder 480B-A35B는 총 480B, 활성 35B 파라미터와 네이티브 262,144 토큰 컨텍스트 윈도를 갖춘 에이전트 코딩 모델입니다."
     },
     "es": {
-      "description": "Qwen3 Coder es un modelo especializado en generacion de codigo con parametros de 32B y ventana de contexto de 32K, disenado para desarrollo de software y asistencia de programacion."
+      "description": "Qwen3 Coder 480B-A35B es un modelo de codigo con 480B parametros totales y 35B activos, ademas de una ventana de contexto nativa de 262.144 tokens para programacion agentica."
     },
     "fr": {
-      "description": "Qwen3 Coder est un modele specialise dans la generation de code avec 32B de parametres et une fenetre de contexte de 32K, concu pour le developpement logiciels et l'assistance en programmation."
+      "description": "Qwen3 Coder 480B-A35B est un modele de code avec 480B parametres au total, 35B actifs et une fenetre de contexte native de 262 144 jetons pour le codage agentique."
     },
     "id": {
-      "description": "Qwen3 Coder adalah model spesialisasi pembuatan kode dengan parameter 32B dan jendela konteks 32K, dirancang untuk pengembangan perangkat lunak dan asistensi pemrograman."
+      "description": "Qwen3 Coder 480B-A35B adalah model kode dengan total 480B dan 35B parameter aktif serta jendela konteks native 262.144 token untuk coding agentik."
     },
     "ja": {
-      "description": "Qwen3 Coderは32Bパラメータと32Kコンテキストウィンドウを持つコード生成専門モデルで、ソフトウェア開発とプログラミングアシスタントのために設計されています。"
+      "description": "Qwen3 Coder 480B-A35Bは、総480B・有効35Bパラメータとネイティブ262,144トークンのコンテキストを備えたエージェントコーディングモデルです。"
     },
     "pt": {
-      "description": "Qwen3 Coder e um modelo especializado em geracao de codigo com parametros de 32B e janela de contexto de 32K, projetado para desenvolvimento de software e assistencia de programacao."
+      "description": "Qwen3 Coder 480B-A35B e um modelo de codigo com 480B parametros totais e 35B ativos, alem de uma janela de contexto nativa de 262.144 tokens para programacao agentica."
     },
     "ru": {
-      "description": "Qwen3 Coder - это специализированная модель генерации кода с 32B параметрами и окном контекста 32K, разработанная для разработки программного обеспечения и помощи в программировании."
+      "description": "Qwen3 Coder 480B-A35B — модель для кода с 480B параметров всего, 35B активных и нативным контекстным окном 262 144 токена для агентного программирования."
     },
     "tr": {
-      "description": "Qwen3 Coder, 32B parametre ve 32K icerik penceresine uzmanlastirilmis bir kod uretim modelidir, yazilim gelistirme ve programlama asistani icin tasarlanmistir."
+      "description": "Qwen3 Coder 480B-A35B, toplam 480B ve etkin 35B parametre ile ajan tabanli kodlama icin yerel 262.144 token baglam penceresine sahip bir kod modelidir."
     },
     "zh-Hant": {
-      "description": "Qwen3 Coder 是專為代碼生成設計的模型，32B 參數，32K 上下文窗口，面向軟件開發編程助手場景。"
+      "description": "Qwen3 Coder 480B-A35B 是一款程式碼模型，擁有 480B 總參數和 35B 啟用參數，並具備原生 262,144 token 上下文視窗，面向智能體編程。"
     }
   },
   "verified": true,
@@ -47,21 +47,51 @@
   "maxOutput": 65536,
   "tokenPricing": {
     "status": "available",
-    "primaryOffer": "global-standard",
+    "primaryOffer": "sg-standard",
     "offers": [
       {
-        "id": "global-standard",
+        "id": "sg-standard",
         "currency": "USD",
-        "region": "global",
+        "region": "SG",
         "serviceTier": "standard",
         "effectiveFrom": null,
         "effectiveTo": null,
         "tiers": [
           {
-            "condition": null,
+            "condition": {
+              "metric": "inputTokens",
+              "min": 1,
+              "max": 32000
+            },
             "rates": {
               "input": 1.5,
               "output": 7.5,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          },
+          {
+            "condition": {
+              "metric": "inputTokens",
+              "min": 32001,
+              "max": 128000
+            },
+            "rates": {
+              "input": 2.7,
+              "output": 13.5,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          },
+          {
+            "condition": {
+              "metric": "inputTokens",
+              "min": 128001,
+              "max": 200000
+            },
+            "rates": {
+              "input": 4.5,
+              "output": 22.5,
               "cacheRead": null,
               "cacheWrite": null
             }
@@ -71,8 +101,8 @@
     ]
   },
   "releaseDate": "2025-07-22",
-  "lifecycle": "latest",
-  "knowledgeCutoff": "2025-07",
+  "lifecycle": "deprecated",
+  "knowledgeCutoff": null,
   "inputModalities": ["text"],
   "outputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs"],
@@ -89,5 +119,41 @@
     "huggingface": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
     "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-coder-480b-a35b-instruct",
     "openrouter": "https://openrouter.ai/qwen/qwen3-coder"
-  }
+  },
+  "sources": [
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+      "title": "Qwen3-Coder-480B-A35B-Instruct model card",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "maxOutput",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "platformUrls.huggingface"
+      ]
+    },
+    {
+      "url": "https://qwenlm.github.io/blog/qwen3-coder/",
+      "title": "Qwen3-Coder announcement",
+      "fields": ["releaseDate", "description"]
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "title": "Alibaba Cloud Model Studio pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-depreciation",
+      "title": "Alibaba Cloud Model Studio model lifecycle",
+      "fields": ["lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

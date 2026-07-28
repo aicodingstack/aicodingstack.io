@@ -82,7 +82,7 @@
     "youtube": null,
     "discord": null,
     "reddit": null,
-    "blog": null
+    "blog": "https://www.codebuddy.ai/blog"
   },
   "relatedProducts": [],
   "platforms": [
@@ -103,6 +103,13 @@
       "installCommand": "npm install -g codebuddy-cli",
       "launchCommand": "codebuddy",
       "installPath": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.codebuddy.ai/blog",
+      "title": "CodeBuddy blog",
+      "fields": ["communityUrls.blog"]
     }
   ]
 }

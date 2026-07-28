@@ -2,106 +2,124 @@
   "$schema": "../$schemas/cli.schema.json",
   "id": "continue-cli",
   "name": "Continue CLI",
-  "description": "Open-source CLI agent that brings continuous AI to your terminal. Build and run custom agents with any model, define your own rules, and integrate MCP tools without vendor lock-in.",
+  "description": "Continue CLI was an open-source terminal coding agent. Cursor acquired Continue; version 2.0.0 was its final release, and the project is no longer actively maintained.",
   "translations": {
     "zh-Hans": {
-      "description": "开源 CLI Agent，将持续 AI 带到您的终端。使用任何模型构建和运行自定义 Agent，定义您自己的规则，并集成 MCP 工具，无供应商锁定。"
+      "description": "Continue CLI 曾是一款开源终端编码 Agent。Cursor 收购 Continue 后，2.0.0 成为最终版本，该项目不再积极维护。"
     },
     "de": {
-      "description": "Open-Source CLI-Agent, der kontinuierliche AI in Ihr Terminal bringt. Erstellen Sie Agenten mit jedem Modell, definieren Sie Regeln und integrieren Sie MCP-Tools ohne Vendor-Lock-in."
+      "description": "Continue CLI war ein Open-Source-Coding-Agent für das Terminal. Cursor übernahm Continue; Version 2.0.0 war die letzte Veröffentlichung, und das Projekt wird nicht mehr aktiv gepflegt."
     },
     "ko": {
-      "description": "지속적인 AI를 터미널로 가져오는 오픈 소스 CLI 에이전트입니다. 모든 모델로 사용자 지정 에이전트를 구축하고 실행하며, 규칙을 정의하고 MCP 도구를 통합하여 공급업체 종속성을 피할 수 있습니다."
+      "description": "Continue CLI는 오픈 소스 터미널 코딩 에이전트였습니다. Cursor가 Continue를 인수했으며, 2.0.0이 최종 릴리스이고 프로젝트는 더 이상 적극적으로 유지 관리되지 않습니다."
     },
     "es": {
-      "description": "Agente CLI open source que trae IA continua a terminal. Construye agentes personalizados con modelo, define reglas y herramientas MCP sin bloqueo."
+      "description": "Continue CLI fue un agente de programación de terminal de código abierto. Cursor adquirió Continue; la versión 2.0.0 fue la última y el proyecto ya no se mantiene activamente."
     },
     "fr": {
-      "description": "Agent CLI open source qui apporte une IA continue a terminal. Construisez et executez des agents personnalises, definissez regles et integrez outils MCP."
+      "description": "Continue CLI était un agent de codage open source pour terminal. Cursor a acquis Continue ; la version 2.0.0 fut la dernière et le projet n’est plus activement maintenu."
     },
     "id": {
-      "description": "Agen CLI open source yang membawa AI berkelanjutan ke terminal. Membangun agen kustom dengan model, menentukan aturan dan mengintegrasikan alat MCP tanpa vendor."
+      "description": "Continue CLI adalah agen coding terminal open source. Cursor mengakuisisi Continue; versi 2.0.0 menjadi rilis terakhir dan proyek ini tidak lagi dipelihara secara aktif."
     },
     "ja": {
-      "description": "継続的なAIをターミナルにもたらすオープンソースCLIエージェント。任意のモデルでカスタムエージェントを構築・実行し、独自のルールを定義し、ベンダーロックインなしでMCPツールを統合します。"
+      "description": "Continue CLIはオープンソースのターミナル向けコーディングエージェントでした。CursorがContinueを買収し、2.0.0が最終リリースとなり、プロジェクトは現在積極的に保守されていません。"
     },
     "pt": {
-      "description": "Agente CLI open source que traz IA continua ao terminal. Construa agentes personalizados com modelo, defina regras e integre ferramentas MCP sem bloqueio."
+      "description": "Continue CLI foi um agente de programação de terminal de código aberto. A Cursor adquiriu a Continue; a versão 2.0.0 foi a última e o projeto não é mais mantido ativamente."
     },
     "ru": {
-      "description": "Открытый агент CLI приносит непрерывный ИИ в терминал. Создавайте пользовательские агенты с моделью, определяйте правила и интегрируйте MCP без блокировки."
+      "description": "Continue CLI был открытым агентом программирования для терминала. Cursor приобрела Continue; версия 2.0.0 стала последней, и проект больше активно не поддерживается."
     },
     "tr": {
-      "description": "Surekli AI getiren acik kaynakli CLI aracidir. Herhangi bir modelle ozel aracilar insa edin ve calistirin, kendi kurallarinizi belirleyin, satci kilitlenmesi olmadan MCP entegre edin."
+      "description": "Continue CLI, açık kaynaklı bir terminal kodlama ajanıydı. Cursor, Continue’u satın aldı; 2.0.0 son sürüm oldu ve proje artık aktif olarak sürdürülmüyor."
     },
     "zh-Hant": {
-      "description": "開源 CLI Agent，將持續 AI 帶到您的終端。使用任何模型建構和執行自訂 Agent，定義您自己的規則，並整合 MCP 工具，無供應商鎖定。"
+      "description": "Continue CLI 曾是一款開源終端編碼 Agent。Cursor 收購 Continue 後，2.0.0 成為最終版本，該專案不再積極維護。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "deprecated": true,
+  "sources": [
+    {
+      "url": "https://continue.dev/",
+      "title": "Continue acquisition announcement",
+      "fields": ["description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/continuedev/continue",
+      "title": "Continue final release and maintenance notice",
+      "fields": [
+        "description",
+        "deprecated",
+        "latestVersion",
+        "githubUrl",
+        "license",
+        "resourceUrls.changelog",
+        "resourceUrls.issue"
+      ]
+    },
+    {
+      "url": "https://docs.continue.dev/cli/quickstart",
+      "title": "Continue CLI final installation and launch instructions",
+      "fields": ["docsUrl", "resourceUrls.download", "platforms"]
+    },
+    {
+      "url": "https://docs.continue.dev/customize/deep-dives/mcp",
+      "title": "Continue MCP documentation",
+      "fields": ["resourceUrls.mcp"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.continue.dev",
   "docsUrl": "https://docs.continue.dev",
   "vendor": "Continue Dev",
-  "latestVersion": "1.5.18",
+  "familyId": "continue",
+  "latestVersion": "2.0.0",
   "githubUrl": "https://github.com/continuedev/continue",
   "license": "Apache-2.0",
-  "pricing": [
-    {
-      "name": "Solo (Open Source)",
-      "value": 0,
-      "currency": null,
-      "per": null,
-      "category": "Individual"
-    },
-    {
-      "name": "Team",
-      "value": null,
-      "currency": null,
-      "per": "custom",
-      "category": "Business"
-    },
-    {
-      "name": "Enterprise",
-      "value": null,
-      "currency": null,
-      "per": "custom",
-      "category": "Enterprise"
-    }
-  ],
+  "pricing": [],
   "resourceUrls": {
-    "download": "https://github.com/continuedev/continue/releases",
+    "download": "https://www.npmjs.com/package/@continuedev/cli",
     "changelog": "https://github.com/continuedev/continue/releases",
-    "pricing": "https://hub.continue.dev/pricing",
-    "mcp": null,
+    "pricing": null,
+    "mcp": "https://docs.continue.dev/customize/deep-dives/mcp",
     "issue": "https://github.com/continuedev/continue/issues"
   },
   "communityUrls": {
     "linkedin": null,
     "twitter": null,
-    "github": "https://github.com/continuedev/continue",
+    "github": null,
     "youtube": null,
-    "discord": "https://discord.gg/continue",
+    "discord": null,
     "reddit": null,
-    "blog": "https://www.continue.dev/blog"
+    "blog": null
   },
-  "relatedProducts": [],
+  "relatedProducts": [
+    {
+      "type": "extension",
+      "productId": "continue"
+    }
+  ],
   "platforms": [
     {
       "os": "macOS",
-      "installCommand": "npm install -g @continuedev/continue-cli",
-      "launchCommand": "continue",
+      "installCommand": "npm install -g @continuedev/cli",
+      "launchCommand": "cn",
       "installPath": null
     },
     {
       "os": "Windows",
-      "installCommand": "npm install -g @continuedev/continue-cli",
-      "launchCommand": "continue",
+      "installCommand": "npm install -g @continuedev/cli",
+      "launchCommand": "cn",
       "installPath": null
     },
     {
       "os": "Linux",
-      "installCommand": "npm install -g @continuedev/continue-cli",
-      "launchCommand": "continue",
+      "installCommand": "npm install -g @continuedev/cli",
+      "launchCommand": "cn",
       "installPath": null
     }
   ]

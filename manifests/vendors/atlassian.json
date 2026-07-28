@@ -38,18 +38,50 @@
       "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://www.atlassian.com/company",
-      "title": "About Atlassian"
+      "title": "About Atlassian",
+      "fields": ["name", "description", "websiteUrl"]
     },
     {
       "url": "https://www.atlassian.com/software/rovo-dev",
-      "title": "Rovo Dev"
+      "title": "Rovo Dev",
+      "fields": ["description"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/atlassian",
+      "title": "Atlassian linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/Atlassian",
+      "title": "Atlassian twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://github.com/atlassian",
+      "title": "Atlassian github community",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.youtube.com/@Atlassian",
+      "title": "Atlassian youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://www.reddit.com/r/atlassian",
+      "title": "Atlassian reddit community",
+      "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://www.atlassian.com/blog",
+      "title": "Atlassian blog community",
+      "fields": ["communityUrls.blog"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-28",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.atlassian.com",

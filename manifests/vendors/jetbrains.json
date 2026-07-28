@@ -38,7 +38,37 @@
       "description": "軟體開發工具公司，為大多數程式設計語言創建智慧 IDE，包括 IntelliJ IDEA、PyCharm 以及 Kotlin 程式設計語言。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.jetbrains.com/company/",
+      "title": "About JetBrains",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/JetBrains",
+      "title": "JetBrains verified GitHub organization",
+      "fields": [
+        "description",
+        "communityUrls.linkedin",
+        "communityUrls.twitter",
+        "communityUrls.github"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@JetBrainsTV",
+      "title": "JetBrains youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://blog.jetbrains.com",
+      "title": "JetBrains blog community",
+      "fields": ["communityUrls.blog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.jetbrains.com",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/jetbrains",

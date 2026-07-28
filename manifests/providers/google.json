@@ -54,6 +54,21 @@
       "url": "https://aistudio.google.com/app/apikey",
       "title": "Google AI Studio API keys",
       "fields": ["applyKeyUrl"]
+    },
+    {
+      "url": "https://x.com/GoogleDevelopers",
+      "title": "Google AI twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.youtube.com/@googledevs",
+      "title": "Google AI youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://blog.google/technology/ai",
+      "title": "Google AI blog community",
+      "fields": ["communityUrls.blog"]
     }
   ],
   "lastVerifiedAt": "2026-07-18",
@@ -70,9 +85,9 @@
     "openrouter": "https://openrouter.ai/provider/google"
   },
   "communityUrls": {
-    "linkedin": "https://www.linkedin.com/company/google",
+    "linkedin": null,
     "twitter": "https://x.com/GoogleDevelopers",
-    "github": "https://github.com/google",
+    "github": null,
     "youtube": "https://www.youtube.com/@googledevs",
     "discord": null,
     "reddit": null,

@@ -39,12 +39,13 @@
     }
   },
   "verified": true,
-  "websiteUrl": "https://kilo.ai/cli",
-  "docsUrl": "https://kilo.ai/docs/cli",
+  "websiteUrl": "https://kilo.ai",
+  "docsUrl": "https://kilo.ai/docs/code-with-ai/platforms/cli",
   "vendor": "Kilo",
-  "latestVersion": "0.6.0",
+  "latestVersion": "7.4.16",
   "githubUrl": "https://github.com/Kilo-Org/kilocode",
   "license": "Apache-2.0",
+  "familyId": "kilo-code",
   "pricing": [
     {
       "name": "Free",
@@ -69,20 +70,20 @@
     }
   ],
   "resourceUrls": {
-    "download": "https://kilo.ai/cli",
+    "download": "https://kilo.ai/docs/code-with-ai/platforms/cli",
     "changelog": "https://github.com/Kilo-Org/kilocode/releases",
     "pricing": "https://kilo.ai/pricing",
     "mcp": null,
     "issue": "https://github.com/Kilo-Org/kilocode/issues"
   },
   "communityUrls": {
-    "linkedin": "https://www.linkedin.com/company/kilo-code",
-    "twitter": "https://x.com/kilocode",
-    "github": "https://github.com/Kilo-Org/kilocode",
-    "youtube": "https://www.youtube.com/@Kilo-Code",
-    "discord": "https://kilo.ai/discord",
-    "reddit": "https://www.reddit.com/r/kilocode",
-    "blog": "https://blog.kilo.ai"
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
   },
   "relatedProducts": [
     {
@@ -109,5 +110,36 @@
       "launchCommand": "kilo",
       "installPath": null
     }
-  ]
+  ],
+  "sources": [
+    {
+      "url": "https://kilo.ai/docs/getting-started",
+      "title": "Kilo Code product overview",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://kilo.ai/docs/code-with-ai/platforms/cli",
+      "title": "Kilo Code CLI installation and platform documentation",
+      "fields": ["docsUrl", "resourceUrls.download", "platforms"]
+    },
+    {
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.4.16",
+      "title": "Kilo Code 7.4.16 release",
+      "fields": [
+        "latestVersion",
+        "githubUrl",
+        "license",
+        "resourceUrls.changelog",
+        "resourceUrls.issue"
+      ]
+    },
+    {
+      "url": "https://kilo.ai/pricing",
+      "title": "Kilo Code pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

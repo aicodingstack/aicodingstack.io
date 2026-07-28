@@ -38,18 +38,40 @@
       "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://about.gitlab.com/company/",
-      "title": "About GitLab"
+      "title": "About GitLab",
+      "fields": ["name", "description", "websiteUrl"]
     },
     {
       "url": "https://github.com/gitlabhq",
-      "title": "GitLab GitHub organization"
+      "title": "GitLab GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/gitlab-com",
+      "title": "GitLab linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/gitlab",
+      "title": "GitLab twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.youtube.com/@GitLab",
+      "title": "GitLab youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://about.gitlab.com/blog",
+      "title": "GitLab blog community",
+      "fields": ["communityUrls.blog"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-28",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://about.gitlab.com",

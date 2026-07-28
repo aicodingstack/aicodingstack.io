@@ -77,12 +77,12 @@
   },
   "communityUrls": {
     "linkedin": null,
-    "twitter": "https://x.com/zeddotdev",
-    "github": "https://github.com/zed-industries/zed",
-    "youtube": "https://www.youtube.com/@zeddotdev",
+    "twitter": null,
+    "github": null,
+    "youtube": null,
     "discord": null,
     "reddit": null,
-    "blog": "https://zed.dev/blog"
+    "blog": null
   },
   "relatedProducts": [],
   "platforms": [
