@@ -4,6 +4,7 @@ import PageHeader from '@/components/PageHeader'
 import type { Locale } from '@/i18n/config'
 import { PageLayout } from '@/layouts/PageLayout'
 import { modelsData as allModels } from '@/lib/generated'
+import { generateStaticPageMetadata } from '@/lib/metadata'
 import type { ManifestModel } from '@/types/manifests'
 import ComparisonPageClient from './[models]/page.client'
 
@@ -17,15 +18,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'pages.comparison' })
 
-  return {
-    title: t('models.title'),
+  return generateStaticPageMetadata({
+    locale: locale as Locale,
+    basePath: 'models/compare',
+    title: `${t('models.title')} ${new Date().getUTCFullYear()}`,
     description: t('models.subtitle'),
-    openGraph: {
-      title: t('models.title'),
-      description: t('models.subtitle'),
-      type: 'website',
-    },
-  }
+    keywords:
+      'AI coding model comparison, compare coding LLMs, LLM pricing comparison, context window comparison',
+    ogType: 'website',
+  })
 }
 
 export default async function ComparePage({ params }: { params: Promise<{ locale: string }> }) {

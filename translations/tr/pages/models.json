@@ -1,7 +1,16 @@
 {
   "context": "Bağlam:",
+  "guide": {
+    "compareModels": "Modelleri yan yana karşılaştır",
+    "description": "Kodlama modellerini bağlam penceresi, token fiyatı, yaşam döngüsü ve sağlayıcıya göre karşılaştırın. Ayrıntılı özellikler için yan yana karşılaştırmayı kullanın, ardından model kullanılabilirliği için API sağlayıcılarını inceleyin.",
+    "exploreProviders": "Model sağlayıcılarını keşfet",
+    "title": "AI kodlama modelleri nasıl karşılaştırılır"
+  },
   "lifecycle": {
     "noResults": "Aramanızla eşleşen {lifecycle} model yok"
+  },
+  "meta": {
+    "description": "AI kodlama modellerini bağlam penceresi, token fiyatı, yaşam döngüsü ve sağlayıcıya göre karşılaştırın. Önde gelen geliştiricilerin güncel kodlama LLM modellerini keşfedin."
   },
   "pricing": "Fiyatlandırma:",
   "size": "Boyut:",

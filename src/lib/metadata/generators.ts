@@ -11,7 +11,6 @@ import { formatPrimaryTokenRate } from '@/lib/model-pricing'
 import type { ManifestTokenPricing, ModelLifecycle } from '@/types/manifests'
 import {
   CATEGORY_DISPLAY_NAMES,
-  CATEGORY_EXAMPLES,
   CATEGORY_SEO_KEYWORDS,
   type Category,
   type Locale,
@@ -210,17 +209,13 @@ export async function generateListPageMetadata(options: ListPageMetadataParams):
   const tPage = await getTranslations({ locale, namespace: translationNamespace })
 
   const translatedTitle = tPage('title')
-  const description = tPage('subtitle')
+  const description = tPage.has('meta.description') ? tPage('meta.description') : tPage('subtitle')
 
   // Build SEO-optimized title
-  const categoryExamples = CATEGORY_EXAMPLES[category as keyof typeof CATEGORY_EXAMPLES]
   const categoryKeywords = CATEGORY_SEO_KEYWORDS[category as keyof typeof CATEGORY_SEO_KEYWORDS]
 
   const title = buildListPageTitle({
     translatedTitle,
-    categoryName:
-      CATEGORY_DISPLAY_NAMES[category as keyof typeof CATEGORY_DISPLAY_NAMES] || translatedTitle,
-    examples: categoryExamples ? [...categoryExamples] : [],
     year: METADATA_DEFAULTS.currentYear,
   })
 
@@ -383,7 +378,7 @@ export async function generateComparisonMetadata(
   const tPage = await getTranslations({ locale, namespace: 'pages.comparison' })
 
   // Build title and description using category-specific translations
-  const title = `${tPage(`${category}.title`)} - ${categoryName} Comparison | ${METADATA_DEFAULTS.siteName}`
+  const title = `${tPage(`${category}.title`)} ${METADATA_DEFAULTS.currentYear}`
   const description = tPage(`${category}.subtitle`)
 
   // Build keywords
@@ -423,7 +418,7 @@ export async function generateArticleMetadata(options: ArticleMetadataParams): P
   const { locale, slug, article } = options
 
   // Build title
-  const title = `${article.title} | ${METADATA_DEFAULTS.siteName} Articles`
+  const title = article.title
 
   // Build description
   const description = article.description
@@ -458,7 +453,7 @@ export async function generateDocsMetadata(options: DocsMetadataParams): Promise
   const { locale, slug, doc } = options
 
   // Build title
-  const title = `${doc.title} | ${METADATA_DEFAULTS.siteName} Documentation`
+  const title = `${doc.title} Documentation`
 
   // Build description
   const description = doc.description

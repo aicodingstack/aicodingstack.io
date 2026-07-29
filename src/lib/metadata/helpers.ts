@@ -53,7 +53,7 @@ export function buildTitle(options: {
   const {
     title,
     suffix,
-    includeSiteName = true,
+    includeSiteName = false,
     separator = METADATA_DEFAULTS.titleSeparator,
   } = options
 
@@ -71,30 +71,13 @@ export function buildTitle(options: {
 /**
  * Builds SEO-optimized list page title
  */
-export function buildListPageTitle(options: {
-  translatedTitle: string
-  categoryName: string
-  examples?: string[]
-  year?: number
-}): string {
-  const {
-    translatedTitle,
-    categoryName,
-    examples = [],
-    year = METADATA_DEFAULTS.currentYear,
-  } = options
+export function buildListPageTitle(options: { translatedTitle: string; year?: number }): string {
+  const { translatedTitle, year = METADATA_DEFAULTS.currentYear } = options
 
-  const parts = [translatedTitle, `-`, `Best ${categoryName} ${year}`]
-
-  if (examples.length > 0) {
-    parts.push(METADATA_DEFAULTS.listSeparator)
-    parts.push(examples.join(', '))
-  }
-
-  parts.push(METADATA_DEFAULTS.titleSeparator)
-  parts.push(METADATA_DEFAULTS.siteName)
-
-  return parts.join(' ').replace(/\s+/g, ' ') // Clean up multiple spaces
+  // The locale layout appends the site name through its title template.
+  // Keep the page-specific title concise so search results do not repeat the
+  // brand or truncate the primary query.
+  return `${translatedTitle} ${year}`
 }
 
 /**

@@ -109,6 +109,29 @@ export default function ModelsPageClient({ locale }: Props) {
 
           <StackTabs activeStack="models" locale={locale} />
 
+          <section className="mb-[var(--spacing-lg)] max-w-6xl border-y border-[var(--color-border)] py-[var(--spacing-md)]">
+            <h2 className="mb-[var(--spacing-xs)] text-lg font-semibold tracking-tight">
+              {tPage('guide.title')}
+            </h2>
+            <p className="max-w-4xl text-sm leading-relaxed text-[var(--color-text-secondary)]">
+              {tPage('guide.description')}
+            </p>
+            <div className="mt-[var(--spacing-sm)] flex flex-wrap gap-[var(--spacing-md)] text-sm">
+              <Link
+                href={buildModelComparisonPath(selectedIds)}
+                className="text-[var(--color-text-secondary)] underline-offset-4 hover:text-[var(--color-text)] hover:underline"
+              >
+                {tPage('guide.compareModels')} →
+              </Link>
+              <Link
+                href="/model-providers"
+                className="text-[var(--color-text-secondary)] underline-offset-4 hover:text-[var(--color-text)] hover:underline"
+              >
+                {tPage('guide.exploreProviders')} →
+              </Link>
+            </div>
+          </section>
+
           {/* Search Box */}
           <div className="mb-[var(--spacing-md)]">
             <input
