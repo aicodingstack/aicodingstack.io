@@ -55,10 +55,10 @@ When translating:
 ## Validate
 
 ```bash
-npm run validate:i18n
-npm run validate:i18n-usage
-npm run validate:i18n-duplicates
-npm run test:validate
+pnpm validate:i18n
+pnpm validate:i18n-usage
+pnpm validate:i18n-duplicates
+pnpm test:validate
 ```
 
-For release-ready work, also run `npm run check` and `npm run test:ci`.
+For release-ready work, also run `pnpm check` and `pnpm test:ci`.

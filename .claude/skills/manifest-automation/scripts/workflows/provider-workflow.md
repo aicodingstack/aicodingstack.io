@@ -142,7 +142,7 @@ Set to null if not applicable.
 
 Run validation:
 ```bash
-npm run test:validate
+pnpm test:validate
 ```
 
 ## Provider Type Examples

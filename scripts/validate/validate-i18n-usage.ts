@@ -1,4 +1,4 @@
-#!/usr/bin/env -S npx tsx
+#!/usr/bin/env -S pnpm exec tsx
 
 /**
  * I18N Usage Validation Script
@@ -17,9 +17,9 @@
  *    - Statistics are reported (not considered errors)
  *
  * Usage:
- *   npx tsx scripts/validate/validate-i18n-usage.ts
- *   npx tsx scripts/validate/validate-i18n-usage.ts --locale de
- *   npx tsx scripts/validate/validate-i18n-usage.ts --format json --output report.json
+ *   pnpm exec tsx scripts/validate/validate-i18n-usage.ts
+ *   pnpm exec tsx scripts/validate/validate-i18n-usage.ts --locale de
+ *   pnpm exec tsx scripts/validate/validate-i18n-usage.ts --format json --output report.json
  */
 
 import path from 'node:path'

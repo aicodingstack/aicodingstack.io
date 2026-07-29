@@ -101,7 +101,7 @@ const idePath = buildManifestPath('ides', 'cursor') // '/ides/cursor'
 **Installation:** Already in `package.json:62`
 
 ```bash
-npm install --save-dev @next/bundle-analyzer
+pnpm add -D @next/bundle-analyzer
 ```
 
 **Configuration:** `next.config.ts:12-14`
@@ -112,7 +112,7 @@ const withBundleAnalyzer = bundleAnalyzer({
 });
 ```
 
-**Usage:** `npm run analyze`
+**Usage:** `pnpm analyze`
 
 ### ISR Configuration
 
@@ -193,29 +193,29 @@ export function WebVitals() {
 
 ```bash
 # Analysis
-npm run analyze
+pnpm analyze
 
 # Development server
-npm run dev
+pnpm dev
 
 # Build
-npm run build:next
+pnpm build:next
 
 # Full build (for Cloudflare)
-npm run build
+pnpm build
 ```
 
 ### Performance Testing
 
 ```bash
 # Lighthouse
-npx lighthouse https://aicodingstack.io --view
+pnpm dlx lighthouse https://aicodingstack.io --view
 
 # PageSpeed Insights
 # Visit: https://pagespeed.web.dev/
 
 # Bundle analysis
-npm run analyze
+pnpm analyze
 ```
 
 ---
@@ -320,7 +320,7 @@ The AI Coding Stack project has **excellent performance characteristics** with a
 
 ### Maintenance Guidelines
 
-- Run `npm run analyze` periodically to check bundle sizes
+- Run `pnpm analyze` periodically to check bundle sizes
 - Monitor Core Web Vitals in production
 - Keep revalidation interval aligned with content update frequency
 - Use category-based revalidation for batch updates

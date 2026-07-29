@@ -268,7 +268,7 @@ function main(): void {
   // Format generated files and organize imports with the repository's Biome rules.
   console.log(`\n🎨 Checking generated files with Biome...`)
   try {
-    execSync(`npx biome check --write ${OUTPUT_DIR}`, {
+    execSync(`pnpm exec biome check --write ${OUTPUT_DIR}`, {
       cwd: path.join(__dirname, '../..'),
       stdio: 'inherit',
     })

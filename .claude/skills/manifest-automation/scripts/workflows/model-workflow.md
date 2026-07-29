@@ -209,7 +209,7 @@ Follow standard entity extraction:
 
 Run validation:
 ```bash
-npm run test:validate
+pnpm test:validate
 ```
 
 ## Common Patterns

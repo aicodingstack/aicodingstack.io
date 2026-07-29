@@ -73,8 +73,8 @@ Want to contribute code? Great! Please:
 
 ### Prerequisites
 
-- **Node.js**: 22.x or higher
-- **npm**: Latest version
+- **Node.js**: 22.x
+- **pnpm**: 11.17.0 (pinned by `packageManager`)
 - **Git**: For version control
 
 ### Local Setup
@@ -85,31 +85,31 @@ git clone https://github.com/aicodingstack/aicodingstack.io.git
 cd aicodingstack.io
 
 # Install dependencies
-npm ci
+pnpm install --frozen-lockfile
 
 # Run validation tests
-npm run test:validate
+pnpm test:validate
 
 # Generate manifests and metadata
-npm run generate:manifests
-npm run generate:metadata
+pnpm generate:manifests
+pnpm generate:metadata
 
 # Start development server
-npm run dev
+pnpm dev
 ```
 
 Visit `http://localhost:3000` to see the site.
 
 ### Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run test:validate` - Run repository validation tests (schemas, translations, alignment, etc.)
-- `npm run test:urls` - Check URL accessibility (networked; CI-oriented)
-- `npm run biome:check` - Run static analysis
-- `npm run type-check` - Run TypeScript checks
-- `npm run spell` - Run spell checker
-- `npm test` - Run the Vitest suite in watch mode
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm test:validate` - Run repository validation tests (schemas, translations, alignment, etc.)
+- `pnpm test:urls` - Check URL accessibility (networked; CI-oriented)
+- `pnpm biome:check` - Run static analysis
+- `pnpm type-check` - Run TypeScript checks
+- `pnpm spell` - Run spell checker
+- `pnpm test` - Run the Vitest suite in watch mode
 
 ## Manifest File Guidelines
 
@@ -163,10 +163,10 @@ Before submitting, validate your manifest:
 
 ```bash
 # Run validation tests
-npm run test:validate
+pnpm test:validate
 
 # Validate URLs (networked)
-npm run test:urls
+pnpm test:urls
 ```
 
 ### Best Practices
@@ -230,11 +230,11 @@ chore(deps): update Next.js to 15.1.0
 2. ✅ **Make your changes** following the guidelines
 3. ✅ **Validate locally**:
    ```bash
-   npm run test:validate
-   npm run biome:check
-   npm run type-check
-   npm run spell
-   npm run build
+   pnpm test:validate
+   pnpm biome:check
+   pnpm type-check
+   pnpm spell
+   pnpm build
    ```
 4. ✅ **Commit with conventional commits**
 5. ✅ **Update documentation** if needed

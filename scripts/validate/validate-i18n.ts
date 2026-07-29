@@ -1,7 +1,7 @@
 #!/usr/bin/env tsx
 /**
  * Validate i18n translations for metadata
- * Run with: npm run validate:i18n
+ * Run with: pnpm validate:i18n
  */
 
 import {

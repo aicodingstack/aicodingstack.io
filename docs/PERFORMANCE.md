@@ -153,7 +153,7 @@ Monitors:
 ### 1. Accurate Build Timestamps
 
 ```bash
-BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%SZ) npm run build
+BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%SZ) pnpm build
 ```
 
 Sitemap uses actual build time instead of runtime timestamp, providing accurate `lastModified` data for search engines.
@@ -184,19 +184,19 @@ compress: true  // Enable gzip compression
 3. **Keep CSS scoped** to components when possible
 4. **Minimize JavaScript bundle** - avoid large dependencies
 5. **Use ISR** for data that changes infrequently
-6. **Test performance** locally with `npm run analyze`
+6. **Test performance** locally with `pnpm analyze`
 
 ## Performance Testing
 
 ```bash
 # Analyze bundle size
-npm run analyze
+pnpm analyze
 
 # Build with production optimizations
-npm run build
+pnpm build
 
 # Lighthouse CI (recommended)
-npm install -g @lhci/cli
+pnpm add --global @lhci/cli
 lhci autorun
 ```
 

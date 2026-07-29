@@ -167,7 +167,7 @@ Follow **Phase 6** from CLI workflow:
 
 Run validation and fix errors:
 ```bash
-npm run test:validate
+pnpm test:validate
 ```
 
 ## Common Marketplace Patterns

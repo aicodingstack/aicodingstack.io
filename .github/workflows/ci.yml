@@ -18,17 +18,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v7
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: '22'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup pnpm
+        uses: ./.github/actions/setup-pnpm
 
       - name: Run Biome check
-        run: npm run biome:check
+        run: pnpm biome:check
 
   type-check:
     name: Type Check
@@ -37,17 +31,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v7
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: '22'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup pnpm
+        uses: ./.github/actions/setup-pnpm
 
       - name: Run TypeScript type check
-        run: npm run type-check
+        run: pnpm type-check
 
   test:
     name: Test
@@ -58,20 +46,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: '22'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup pnpm
+        uses: ./.github/actions/setup-pnpm
 
       - name: Run tests
-        run: npm run test:ci
+        run: pnpm test:ci
 
       - name: Check data health
-        run: npm run data-health:check
+        run: pnpm data-health:check
 
   spell-check:
     name: Spell Check
@@ -80,17 +62,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v7
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: '22'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup pnpm
+        uses: ./.github/actions/setup-pnpm
 
       - name: Run CSpell
-        run: npm run spell
+        run: pnpm spell
 
   security:
     name: Dependency Audit
@@ -99,17 +75,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v7
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: '22'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup pnpm
+        uses: ./.github/actions/setup-pnpm
 
       - name: Block high and critical advisories
-        run: npm run security:audit
+        run: pnpm security:audit
 
   build:
     name: Build
@@ -118,17 +88,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v7
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: '22'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup pnpm
+        uses: ./.github/actions/setup-pnpm
 
       - name: Build Next.js application
-        run: npm run build
+        run: pnpm build
         env:
           BUILD_TIME: ${{ github.event.head_commit.timestamp }}
 
@@ -152,20 +116,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v7
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: '22'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup pnpm
+        uses: ./.github/actions/setup-pnpm
 
       - name: Install Chromium
-        run: npx playwright install --with-deps chromium
+        run: pnpm exec playwright install --with-deps chromium
 
       - name: Run browser smoke tests
-        run: npm run test:e2e:ci
+        run: pnpm test:e2e:ci
 
   ci-success:
     name: CI Success

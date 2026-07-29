@@ -163,7 +163,7 @@ This is the simplest method - Cloudflare handles everything automatically.
    ```
    Project name: aicodingstack
    Production branch: main
-   Build command: npm run build
+   Build command: pnpm build
    Build output directory: .open-next
    Root directory: /
    ```

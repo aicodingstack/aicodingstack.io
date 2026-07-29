@@ -88,7 +88,7 @@ node .claude/skills/manifest-automation/scripts/automate.mjs update extension co
    - Write manifest JSON to appropriate path
    - For IDE/CLI/Extension: check vendor manifest exists, create if missing
    - Update `data/github-stars.json`
-   - Run `npm run generate` to regenerate TypeScript data files
+   - Run `pnpm generate` to regenerate TypeScript data files
    - Run schema validation
    - Report success/failures to user
 
@@ -342,7 +342,7 @@ Status: DRAFT (3 fields incomplete)
 2. Manually fill TODO-marked fields if information available
 3. Add i18n translations (zh-Hans, de, ko)
 4. Update verified field once data confirmed accurate
-5. Run validation: npm run test:validate
+5. Run validation: pnpm test:validate
 
 Note: Vendor manifest, github-stars.json, and TypeScript files already updated.
 ```
@@ -433,7 +433,7 @@ After running this skill, expect:
 1. **Manifest file**: `manifests/<type>s/<name>.json`
 2. **With TODO comments**: For failed field extractions
 3. **Valid against schema**: `manifests/$schemas/<type>.schema.json`
-4. **Ready for validation**: Run `npm run test:validate`
+4. **Ready for validation**: Run `pnpm test:validate`
 
 ## GitHub Stars Update
 
@@ -520,7 +520,7 @@ updateGithubStarsEntry(manifestType, manifestName, { isNew: operationMode === 'c
 3. **Add translations**: Populate `i18n` object with localized content (zh-Hans, de, ko)
 4. **Set verified**: Change `verified` to `true` if data is confirmed accurate
 5. **Add related products**: Manually curate `relatedProducts` array
-6. **Run validation**: Ensure schema compliance with `npm run test:validate`
+6. **Run validation**: Ensure schema compliance with `pnpm test:validate`
 7. **Commit changes**: Add manifest to git repository
 
 Note: Vendor manifest and github-stars.json are automatically handled during creation.

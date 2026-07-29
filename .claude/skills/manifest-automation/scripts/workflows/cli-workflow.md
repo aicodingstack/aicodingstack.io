@@ -269,7 +269,7 @@ This workflow guides you through creating or updating a CLI manifest using advan
 
 1. **Run schema validation**:
    ```bash
-   npm run test:validate
+   pnpm test:validate
    ```
 
 2. **Fix any validation errors**:

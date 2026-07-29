@@ -350,7 +350,7 @@ The manifest system is the core data layer:
 │                    BUILD-TIME DATA FLOW                         │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                │
-│  npm run generate                                               │
+│  pnpm generate                                               │
 │         │                                                      │
 │         ▼                                                      │
 │  Script: generate-manifest-indexes.ts                          │

@@ -49,11 +49,10 @@ The merge helper is advisory. Always inspect its proposed result before applying
 At minimum run:
 
 ```bash
-npm run changelog:generate
-npm run generate
-npm run test:validate
-npm run validate:i18n
-npm run data-health:check
+pnpm generate
+pnpm test:validate
+pnpm validate:i18n
+pnpm data-health:check
 ```
 
-Run `npm run check` and `npm run test:ci` before handing off a release-ready change.
+Run `pnpm check` and `pnpm test:ci` before handing off a release-ready change.

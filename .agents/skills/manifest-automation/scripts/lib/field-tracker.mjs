@@ -174,10 +174,10 @@ export class FieldTracker {
       output +=
         '2. Resolve required fields from authoritative sources; do not guess or add JSON comments\n'
       output += '3. Update provenance and verification metadata\n'
-      output += '4. Run validation: npm run test:validate\n'
+      output += '4. Run validation: pnpm test:validate\n'
     } else {
       output += '2. Update verified field if data confirmed accurate\n'
-      output += '3. Run validation: npm run test:validate\n'
+      output += '3. Run validation: pnpm test:validate\n'
     }
 
     return output

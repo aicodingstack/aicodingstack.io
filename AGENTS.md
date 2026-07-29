@@ -30,7 +30,7 @@
 
 ## Development Workflow
 
-- Do not start `npm run dev` automatically; the user starts it when needed.
+- Do not start `pnpm dev` automatically; the user starts it when needed.
 - Before every `.next/standalone/server.js` start, including after each production build, sync `public/` to `.next/standalone/public/` and `.next/static/` to `.next/standalone/.next/static/`.
 - Match standalone `HOSTNAME` to the preview URL hostname. For `http://localhost:<port>`, use `HOSTNAME=localhost`, never `127.0.0.1`.
 - After each standalone start or restart, verify a default-locale URL, a locale-prefixed URL, and a referenced stylesheet all return `200`, with the stylesheet served as CSS. A tmux start command must include asset sync and the matching `HOSTNAME`.

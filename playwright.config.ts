@@ -22,7 +22,7 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'npm run dev:e2e',
+    command: 'pnpm dev:e2e',
     // Locale negotiation redirects anonymous page requests once to set a cookie.
     // Use the locale-independent health endpoint so readiness checks cannot enter that redirect flow.
     url: `http://${host}:${port}/api/revalidate`,

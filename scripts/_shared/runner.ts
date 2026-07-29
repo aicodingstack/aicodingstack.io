@@ -29,7 +29,7 @@ export interface CategoryConfig {
  */
 export function runScript(scriptPath: string): Promise<void> {
   return new Promise((resolve, reject) => {
-    const child: ChildProcess = spawn('npx', ['tsx', scriptPath], {
+    const child: ChildProcess = spawn('pnpm', ['exec', 'tsx', scriptPath], {
       stdio: 'inherit',
       shell: false,
     })

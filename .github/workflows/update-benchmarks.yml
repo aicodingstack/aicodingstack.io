@@ -21,27 +21,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: '22'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup pnpm
+        uses: ./.github/actions/setup-pnpm
 
       - name: Refresh exact benchmark mappings
-        run: npm run fetch:benchmarks
+        run: pnpm fetch:benchmarks
 
       - name: Regenerate manifest modules
-        run: npm run generate:manifests
+        run: pnpm generate:manifests
 
       - name: Validate updated data
         run: |
-          npm run test:validate
-          npm run data-health:check
-          npm run format:check
-          npm run biome:check
+          pnpm test:validate
+          pnpm data-health:check
+          pnpm format:check
+          pnpm biome:check
           git diff --check
 
       - name: Check for changes

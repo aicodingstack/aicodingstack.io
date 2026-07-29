@@ -21,20 +21,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: '22'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup pnpm
+        uses: ./.github/actions/setup-pnpm
 
       - name: Check current data health
         id: data-health
         continue-on-error: true
         run: |
-          npx tsx scripts/validate/data-health.ts \
+          pnpm exec tsx scripts/validate/data-health.ts \
             --as-of="$(TZ=Asia/Shanghai date +%F)" \
             --fail-on=error \
             --fail-on-code=stale-verification,future-verification-date \

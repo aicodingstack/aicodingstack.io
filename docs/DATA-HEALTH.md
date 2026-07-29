@@ -1,6 +1,6 @@
 # Data Health Report
 
-Snapshot date: 2026-07-29. Regenerate with `npm run data-health:report`.
+Snapshot date: 2026-07-30. Regenerate with `pnpm data-health:report`.
 
 ## Scorecard
 
@@ -11,7 +11,7 @@ Snapshot date: 2026-07-29. Regenerate with `npm run data-health:report`.
 | Verified records | 176 |
 | Verified with complete provenance | 176 |
 | Stale verified records | 0 |
-| Non-English values identical to English | 1262 |
+| Non-English values identical to English | 1190 |
 | Dangling product relationships | 0 |
 | Model benchmark coverage | 9.5% |
 | Products with pricing | 63/67 |
@@ -37,17 +37,17 @@ Exact English matches are a triage signal; product names and technical terms can
 
 | Locale | Comparable strings | Exact English matches | Match rate |
 | --- | ---: | ---: | ---: |
-| de | 416 | 113 | 27.2% |
-| es | 416 | 104 | 25% |
-| fr | 416 | 115 | 27.6% |
-| id | 416 | 149 | 35.8% |
-| ja | 416 | 107 | 25.7% |
-| ko | 416 | 115 | 27.6% |
-| pt | 416 | 114 | 27.4% |
-| ru | 416 | 124 | 29.8% |
-| tr | 416 | 125 | 30% |
-| zh-Hans | 416 | 98 | 23.6% |
-| zh-Hant | 416 | 98 | 23.6% |
+| de | 416 | 106 | 25.5% |
+| es | 416 | 98 | 23.6% |
+| fr | 416 | 108 | 26% |
+| id | 416 | 142 | 34.1% |
+| ja | 416 | 100 | 24% |
+| ko | 416 | 108 | 26% |
+| pt | 416 | 108 | 26% |
+| ru | 416 | 117 | 28.1% |
+| tr | 416 | 119 | 28.6% |
+| zh-Hans | 416 | 92 | 22.1% |
+| zh-Hant | 416 | 92 | 22.1% |
 
 ## Backlog by Issue Type
 

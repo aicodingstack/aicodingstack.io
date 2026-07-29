@@ -322,7 +322,7 @@ export function isManifestNewType(obj: unknown): obj is ManifestNewType {
 The project includes JSON schema validation tests:
 
 ```bash
-npm test -- manifests.schema.test
+pnpm test -- manifests.schema.test
 ```
 
 This validates all manifest JSON files against their schemas in `manifests/$schemas/`.
@@ -388,13 +388,13 @@ When updating schemas:
 
 ```bash
 # Validate all manifests against schemas
-npm run test:validate
+pnpm test:validate
 
 # Check TypeScript types
-npm run type-check
+pnpm type-check
 
 # Lint manifest JSON files
-npm run biome:check
+pnpm biome:check
 ```
 
 ---

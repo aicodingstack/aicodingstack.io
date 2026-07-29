@@ -234,7 +234,7 @@ function printNextSteps(isDryRun, unmappedModels, benchmarkResults) {
   }
 
   if (!isDryRun) {
-    steps.push('Run validation: npm run test:validate')
+    steps.push('Run validation: pnpm test:validate')
     steps.push('Commit changes when satisfied')
   }
 
