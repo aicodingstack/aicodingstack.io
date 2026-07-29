@@ -1,0 +1,17 @@
+packages:
+  - .
+
+overrides:
+  # OpenNext 1.20 requires the v8 minifier API.
+  '@node-minify/core': 8.0.5
+  # Next 16.2.12 still permits vulnerable transitive versions.
+  'next>sharp': 0.35.2
+  postcss: ^8.5.19
+
+allowBuilds:
+  '@parcel/watcher': true
+  '@swc/core': true
+  agent-browser: true
+  esbuild: true
+  sharp: true
+  workerd: true

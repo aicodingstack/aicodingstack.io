@@ -659,7 +659,7 @@ ${manifestoComponentsCode}
   // Run biome formatting on generated files
   console.log(`\n🎨 Formatting generated files with Biome...`)
   try {
-    execSync(`npx biome format --write ${outputDir}`, {
+    execSync(`pnpm exec biome format --write ${outputDir}`, {
       cwd: rootDir,
       stdio: 'inherit',
     })

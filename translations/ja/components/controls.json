@@ -24,14 +24,14 @@
   },
   "searchDialog": {
     "close": "比較セレクターを閉じる",
-    "empty": "Start typing to search...",
-    "navigate": "to navigate",
-    "noResultsFor": "No results for \"{query}\"",
-    "placeholder": "Type to search...",
-    "select": "to select",
-    "viewAllResults": "View all results for \"{query}\""
+    "empty": "入力して検索を開始...",
+    "navigate": "で移動",
+    "noResultsFor": "「{query}」の検索結果はありません",
+    "placeholder": "入力して検索...",
+    "select": "で選択",
+    "viewAllResults": "「{query}」の検索結果をすべて表示"
   },
   "searchInput": {
-    "clear": "Clear search"
+    "clear": "検索をクリア"
   }
 }

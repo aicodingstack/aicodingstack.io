@@ -1,6 +1,6 @@
 version: 2
 updates:
-  # npm dependencies
+  # JavaScript dependencies (GitHub names this ecosystem "npm" for npm-compatible registries)
   - package-ecosystem: "npm"
     directory: "/"
     schedule:

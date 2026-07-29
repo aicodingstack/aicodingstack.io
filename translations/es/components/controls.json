@@ -24,14 +24,14 @@
   },
   "searchDialog": {
     "close": "Cerrar selector de comparación",
-    "empty": "Start typing to search...",
-    "navigate": "to navigate",
-    "noResultsFor": "No results for \"{query}\"",
+    "empty": "Empieza a escribir para buscar...",
+    "navigate": "para navegar",
+    "noResultsFor": "No hay resultados para «{query}»",
     "placeholder": "Escribir para buscar...",
-    "select": "to select",
-    "viewAllResults": "View all results for \"{query}\""
+    "select": "para seleccionar",
+    "viewAllResults": "Ver todos los resultados para «{query}»"
   },
   "searchInput": {
-    "clear": "Clear search"
+    "clear": "Borrar búsqueda"
   }
 }

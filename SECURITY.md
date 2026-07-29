@@ -95,10 +95,10 @@ AI Coding Stack is a mostly static Next.js website deployed on Cloudflare Worker
    - Mitigation: We validate URLs during CI/CD
    - Manual review of all URL additions
 
-2. **Dependency vulnerabilities**: npm packages may have vulnerabilities
+2. **Dependency vulnerabilities**: JavaScript packages may have vulnerabilities
    - Mitigation: Dependabot automatic updates
    - CI blocks high and critical advisories across production and development dependencies
-   - Run the same audit locally with `npm run security:audit`
+   - Run the same audit locally with `pnpm security:audit`
 
 3. **XSS risks**: User-contributed content could introduce XSS
    - Mitigation: All content is sanitized and validated
@@ -150,8 +150,8 @@ If you're deploying AI Coding Stack, ensure:
 
 ## Dependency Audit Policy
 
-- Dependabot checks npm and GitHub Actions dependencies every Monday.
-- Pull requests and `main` pushes run `npm run security:audit` against the official npm advisory
+- Dependabot checks JavaScript and GitHub Actions dependencies every Monday.
+- Pull requests and `main` pushes run `pnpm security:audit` against the official npm advisory
   service.
 - High and critical advisories block CI. Moderate and low advisories require documented triage and
   should be resolved in the next compatible dependency update.

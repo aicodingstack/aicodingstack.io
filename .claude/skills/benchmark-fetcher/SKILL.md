@@ -294,7 +294,7 @@ Average time per benchmark:   7.5s
 1. Review updated manifests in manifests/models/
 2. Add unmapped models to references/model-name-mappings.json
 3. Retry failed benchmarks if needed
-4. Run validation: npm run test:validate
+4. Run validation: pnpm test:validate
 5. Commit changes when satisfied
 ```
 
@@ -338,7 +338,7 @@ await mcp__chrome-devtools__take_screenshot({
 
 1. **Run during off-peak hours** to avoid rate limiting
 2. **Review unmapped models** and update mappings before next run
-3. **Validate manifests** after updates: `npm run test:validate`
+3. **Validate manifests** after updates: `pnpm test:validate`
 4. **Check for website changes** if extraction fails repeatedly
 5. **Keep mappings updated** as new models appear on leaderboards
 
@@ -380,7 +380,7 @@ Always validate manifests after updates:
 
 ```bash
 # Run schema validation
-npm run test:validate
+pnpm test:validate
 
 # Check JSON formatting
 node -c manifests/models/*.json
@@ -391,5 +391,5 @@ node -c manifests/models/*.json
 1. **Review updates**: Check manifest changes make sense
 2. **Update mappings**: Add newly discovered models to `model-name-mappings.json`
 3. **Retry failures**: Re-run with `--benchmarks` for failed benchmarks
-4. **Validate**: Run `npm run test:validate` to ensure schema compliance
+4. **Validate**: Run `pnpm test:validate` to ensure schema compliance
 5. **Commit changes**: Commit updated manifests to repository

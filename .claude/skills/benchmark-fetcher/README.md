@@ -172,7 +172,7 @@ The skill uses a 3-tier fallback strategy to map website model names to manifest
 
 3. **Validate**
    ```bash
-   npm run test:validate
+   pnpm test:validate
    ```
 
 4. **Commit Changes**

@@ -23,25 +23,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v7
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: '22'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup pnpm
+        uses: ./.github/actions/setup-pnpm
 
       - name: Run CI tests
-        run: npm run test:ci
+        run: pnpm test:ci
 
       - name: Build with OpenNext
-        run: npm run build
+        run: pnpm build
         env:
           BUILD_TIME: ${{ github.event.head_commit.timestamp }}
 
       - name: Deploy to Production
-        run: npx --no-install opennextjs-cloudflare deploy --env production
+        run: pnpm exec opennextjs-cloudflare deploy --env production
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

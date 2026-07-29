@@ -522,7 +522,7 @@ validateAndLog(schema, 'IDE Detail Page')
 
 1. **Schema Validation**
 ```bash
-npm run dev
+pnpm dev
 # Check console for schema validation warnings
 ```
 

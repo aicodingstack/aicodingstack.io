@@ -24,14 +24,14 @@
   },
   "searchDialog": {
     "close": "Закрыть выбор сравнения",
-    "empty": "Start typing to search...",
-    "navigate": "to navigate",
-    "noResultsFor": "No results for \"{query}\"",
-    "placeholder": "Type to search...",
-    "select": "to select",
-    "viewAllResults": "View all results for \"{query}\""
+    "empty": "Начните вводить текст для поиска...",
+    "navigate": "для навигации",
+    "noResultsFor": "Нет результатов по запросу «{query}»",
+    "placeholder": "Введите запрос...",
+    "select": "для выбора",
+    "viewAllResults": "Показать все результаты по запросу «{query}»"
   },
   "searchInput": {
-    "clear": "Clear search"
+    "clear": "Очистить поиск"
   }
 }

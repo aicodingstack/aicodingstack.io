@@ -54,11 +54,11 @@ Closes #(issue number)
 
 <!-- Describe how you tested your changes -->
 
-- [ ] Local build passes (`npm run build`)
-- [ ] All validation checks pass (`npm run test:validate`)
-- [ ] URL validation passes (`npm run validate:urls`)
-- [ ] Static analysis passes (`npm run biome:check`)
-- [ ] Spell check passes (`npm run spell`)
+- [ ] Local build passes (`pnpm build`)
+- [ ] All validation checks pass (`pnpm test:validate`)
+- [ ] URL validation passes (`pnpm validate:urls`)
+- [ ] Static analysis passes (`pnpm biome:check`)
+- [ ] Spell check passes (`pnpm spell`)
 
 ## Screenshots (if applicable)
 

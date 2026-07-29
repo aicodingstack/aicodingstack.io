@@ -7,13 +7,13 @@ The stars refresh reads `githubUrl` from IDE, CLI, and extension manifests, quer
 Use a token for the normal GitHub API rate limit:
 
 ```bash
-GITHUB_TOKEN=your_token npm run fetch:github-stars
+GITHUB_TOKEN=your_token pnpm fetch:github-stars
 ```
 
 Unauthenticated runs are supported but are limited to 60 requests per hour:
 
 ```bash
-npm run fetch:github-stars
+pnpm fetch:github-stars
 ```
 
 The implementation is `scripts/fetch/fetch-github-stars.ts`; the category runner is `scripts/fetch/index.ts`.
@@ -37,7 +37,7 @@ Values are stored in thousands with one decimal place, matching the current UI c
 `.github/workflows/update-github-stars.yml` runs weekly and can also be dispatched manually. It:
 
 1. installs the locked dependencies;
-2. runs `npm run fetch:github-stars` with `GITHUB_TOKEN`;
+2. runs `pnpm fetch:github-stars` with `GITHUB_TOKEN`;
 3. validates the manifest data;
 4. opens a pull request when `data/github-stars.json` changed.
 

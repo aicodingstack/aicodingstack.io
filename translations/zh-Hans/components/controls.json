@@ -24,14 +24,14 @@
   },
   "searchDialog": {
     "close": "关闭比较选择器",
-    "empty": "Start typing to search...",
-    "navigate": "to navigate",
-    "noResultsFor": "No results for \"{query}\"",
+    "empty": "输入内容开始搜索...",
+    "navigate": "导航",
+    "noResultsFor": "未找到“{query}”的相关结果",
     "placeholder": "输入以搜索...",
-    "select": "to select",
-    "viewAllResults": "View all results for \"{query}\""
+    "select": "选择",
+    "viewAllResults": "查看“{query}”的全部结果"
   },
   "searchInput": {
-    "clear": "Clear search"
+    "clear": "清除搜索"
   }
 }

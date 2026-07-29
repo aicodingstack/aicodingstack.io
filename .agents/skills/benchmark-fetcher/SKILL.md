@@ -37,9 +37,8 @@ This is an evidence-review workflow with a deterministic importer. The Node scri
 ```bash
 node .agents/skills/benchmark-fetcher/scripts/fetch-benchmarks.mjs evidence.json
 node .agents/skills/benchmark-fetcher/scripts/fetch-benchmarks.mjs evidence.json --apply
-npm run changelog:generate
-npm run test:validate
-npm run data-health:check
+pnpm test:validate
+pnpm data-health:check
 ```
 
-Run `npm run check` and `npm run test:ci` before release handoff.
+Run `pnpm check` and `pnpm test:ci` before release handoff.

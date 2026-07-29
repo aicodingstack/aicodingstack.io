@@ -119,7 +119,7 @@ This workflow guides you through creating or updating a Vendor manifest - the si
 
 Run validation:
 ```bash
-npm run test:validate
+pnpm test:validate
 ```
 
 ## Examples

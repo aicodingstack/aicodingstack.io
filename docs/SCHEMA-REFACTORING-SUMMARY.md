@@ -154,5 +154,5 @@ All manifest files now pass validation:
 1. **Consistent Naming**: Always use descriptive field names that reflect the specific use case
 2. **Schema Composition**: Prefer composition over duplication - create reusable schema fragments
 3. **Documentation**: Keep this summary updated when making future schema changes
-4. **Validation**: Always run `npm run test:validate` before committing schema changes
+4. **Validation**: Always run `pnpm test:validate` before committing schema changes
 

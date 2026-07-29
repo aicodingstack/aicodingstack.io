@@ -48,6 +48,6 @@ Every new model catalog entry must have a published Artificial Analysis Intellig
 
 ## Freshness policy
 
-Run `npm run data-health:report` after manifest or translation changes and commit both generated snapshots. CI runs `npm run data-health:check` to reject invalid or stale snapshots.
+Run `pnpm data-health:report` after manifest or translation changes and commit both generated snapshots. CI runs `pnpm data-health:check` to reject invalid or stale snapshots.
 
 The current review thresholds are 30 days for models and providers, 60 days for IDEs, CLIs, and extensions, and 90 days for vendors. Threshold findings remain warnings so that legacy debt stays visible without blocking unrelated work. Dangling product relationships are errors because they always point to nonexistent records and can break navigation. Network reachability is checked by the separate scheduled URL workflow; source authority and field coverage remain pull-request review responsibilities.

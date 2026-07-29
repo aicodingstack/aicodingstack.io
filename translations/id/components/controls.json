@@ -24,14 +24,14 @@
   },
   "searchDialog": {
     "close": "Tutup pemilih perbandingan",
-    "empty": "Start typing to search...",
-    "navigate": "to navigate",
-    "noResultsFor": "No results for \"{query}\"",
-    "placeholder": "Type to search...",
-    "select": "to select",
-    "viewAllResults": "View all results for \"{query}\""
+    "empty": "Mulai mengetik untuk mencari...",
+    "navigate": "untuk menavigasi",
+    "noResultsFor": "Tidak ada hasil untuk “{query}”",
+    "placeholder": "Ketik untuk mencari...",
+    "select": "untuk memilih",
+    "viewAllResults": "Lihat semua hasil untuk “{query}”"
   },
   "searchInput": {
-    "clear": "Clear search"
+    "clear": "Hapus pencarian"
   }
 }

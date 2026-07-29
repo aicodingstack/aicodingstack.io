@@ -521,7 +521,7 @@ export function renderDataHealthMarkdown(report: DataHealthReport): string {
 
   return `# Data Health Report
 
-Snapshot date: ${report.asOf}. Regenerate with \`npm run data-health:report\`.
+Snapshot date: ${report.asOf}. Regenerate with \`pnpm data-health:report\`.
 
 ## Scorecard
 
@@ -642,7 +642,7 @@ async function main(): Promise<void> {
     (fs.readFileSync(snapshotPath, 'utf8') !== jsonOutput ||
       fs.readFileSync(markdownPath, 'utf8') !== markdownOutput)
   ) {
-    throw new Error('Data-health snapshot is stale; run npm run data-health:report')
+    throw new Error('Data-health snapshot is stale; run pnpm data-health:report')
   }
 
   const failOn = getArgument('fail-on') ?? 'never'

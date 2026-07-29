@@ -173,10 +173,10 @@ export class FieldTracker {
     if (report.failed > 0) {
       output += '2. Manually fill TODO-marked fields if information available\n'
       output += '3. Update verified field once data confirmed accurate\n'
-      output += '4. Run validation: npm run test:validate\n'
+      output += '4. Run validation: pnpm test:validate\n'
     } else {
       output += '2. Update verified field if data confirmed accurate\n'
-      output += '3. Run validation: npm run test:validate\n'
+      output += '3. Run validation: pnpm test:validate\n'
     }
 
     return output

@@ -27,31 +27,35 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+
       - name: Setup Node.js
         uses: actions/setup-node@v7
         with:
           node-version: '22'
-          cache: 'npm'
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
 
-      - name: Fix lockfile (npm install)
-        run: npm install --ignore-scripts --no-audit --no-fund
+      - name: Fix lockfile
+        run: pnpm install --lockfile-only --ignore-scripts
 
       - name: Detect lockfile changes
         id: lockfile
         run: |
-          if [[ -n "$(git status --porcelain package-lock.json)" ]]; then
+          if [[ -n "$(git status --porcelain pnpm-lock.yaml)" ]]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
           else
             echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Commit updated package-lock.json
+      - name: Commit updated pnpm-lock.yaml
         if: steps.lockfile.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add package-lock.json
-          git commit -m "chore(deps): update package-lock.json"
+          git add pnpm-lock.yaml
+          git commit -m "chore(deps): update pnpm lockfile"
           git push
 
       - name: Enable auto-merge for minor and patch updates

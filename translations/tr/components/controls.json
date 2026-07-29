@@ -24,14 +24,14 @@
   },
   "searchDialog": {
     "close": "Karşılaştırma seçiciyi kapat",
-    "empty": "Start typing to search...",
-    "navigate": "to navigate",
-    "noResultsFor": "No results for \"{query}\"",
+    "empty": "Aramak için yazmaya başlayın...",
+    "navigate": "gezinmek için",
+    "noResultsFor": "“{query}” için sonuç bulunamadı",
     "placeholder": "Aramak için yazın...",
-    "select": "to select",
-    "viewAllResults": "View all results for \"{query}\""
+    "select": "seçmek için",
+    "viewAllResults": "“{query}” için tüm sonuçları görüntüle"
   },
   "searchInput": {
-    "clear": "Clear search"
+    "clear": "Aramayı temizle"
   }
 }
