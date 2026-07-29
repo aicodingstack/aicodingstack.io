@@ -1,7 +1,16 @@
 {
   "context": "內容視窗：",
+  "guide": {
+    "compareModels": "並排比較模型",
+    "description": "依上下文視窗、Token 價格、生命週期和提供者比較編碼模型。使用並排比較查看詳細規格，再到 API 提供者頁面確認模型可用性。",
+    "exploreProviders": "瀏覽模型提供者",
+    "title": "如何比較 AI 編碼模型"
+  },
   "lifecycle": {
     "noResults": "沒有符合搜尋條件的{lifecycle}模型"
+  },
+  "meta": {
+    "description": "依上下文視窗、Token 價格、生命週期和提供者比較 AI 編碼模型，瀏覽主要模型開發商目前提供的編碼大型語言模型。"
   },
   "pricing": "定價：",
   "size": "大小：",

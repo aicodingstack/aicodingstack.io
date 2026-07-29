@@ -1,7 +1,16 @@
 {
   "context": "Contexto:",
+  "guide": {
+    "compareModels": "Comparar modelos lado a lado",
+    "description": "Compare modelos de codificação por janela de contexto, preço por token, ciclo de vida e provedor. Use a comparação lado a lado para ver especificações detalhadas e depois consulte os provedores de API para verificar a disponibilidade.",
+    "exploreProviders": "Explorar provedores de modelos",
+    "title": "Como comparar modelos de codificação IA"
+  },
   "lifecycle": {
     "noResults": "Nenhum modelo {lifecycle} corresponde à sua pesquisa"
+  },
+  "meta": {
+    "description": "Compare modelos de codificação IA por janela de contexto, preço por token, ciclo de vida e provedor. Explore LLMs de código atuais dos principais desenvolvedores."
   },
   "pricing": "Preços:",
   "size": "Tamanho:",
