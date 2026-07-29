@@ -1,16 +1,16 @@
 {
   "articles": {
-    "description": "Must-read articles about AI coding from industry leaders"
+    "description": "AIコーディングに関する業界リーダーの必読記事"
   },
   "meta": {
-    "description": "Handpicked resources, specifications, protocols, and tools for AI coding. Featured articles, standards, and ecosystem utilities.",
-    "title": "Curated Collections - Essential AI Coding Resources"
+    "description": "AIコーディング向けに厳選したリソース、仕様、プロトコル、ツール。注目記事、標準、エコシステムのユーティリティを掲載しています。",
+    "title": "厳選コレクション - AIコーディングの必須リソース"
   },
   "specifications": {
-    "description": "Essential standards and protocols for modern software development"
+    "description": "現代のソフトウェア開発に不可欠な標準とプロトコル"
   },
-  "subtitle": "Handpicked resources, specifications, protocols, and tools for AI coding",
+  "subtitle": "AIコーディング向けに厳選したリソース、仕様、プロトコル、ツール",
   "tools": {
-    "description": "Curated tools and utilities for AI coding workflows"
+    "description": "AIコーディングのワークフロー向けに厳選したツールとユーティリティ"
   }
 }

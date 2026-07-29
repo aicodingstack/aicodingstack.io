@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Modellpreis × Intelligenz",
+    "description": "Vergleiche gängige KI-Modelle nach API-Tokenpreis und Intelligenzindex.",
+    "keywords": "KI-Modell Preisvergleich, Modellintelligenz, LLM API Preise, Preis Leistung"
+  },
+  "title": "Modellpreis × Intelligenz",
+  "description": "Vergleiche gängige Modelle nach API-Preis und Intelligenzleistung.",
+  "chart": {
+    "title": "Leistung in jeder Preisklasse",
+    "axisHint": "Gemischter API-Preis × Intelligenzindex",
+    "modelCount": "{count} ausgewählte Modelle",
+    "priceAxis": "USD pro 1 Mio. Token · 90 % Eingabe + 10 % Ausgabe",
+    "indexAxis": "Intelligenzindex",
+    "scale": {
+      "label": "Preisskala",
+      "linear": "Linear",
+      "logarithmic": "Logarithmisch"
+    }
+  },
+  "filter": {
+    "label": "Nach Anbieter filtern",
+    "showAll": "Alle anzeigen"
+  },
+  "list": {
+    "title": "Ausgewählte Modelle",
+    "description": "Vergleichbare API-Preise in USD pro Million Token. Nach Mischpreis oder Intelligenzindex sortieren.",
+    "blended": "Mischpreis",
+    "priceUnit": "USD / 1 Mio. Token",
+    "index": "Index"
+  },
+  "source": {
+    "attribution": "Artificial Analysis Intelligenzindex v{version}, beobachtet am {date}. Quelle:",
+    "pricing": "Die Preise basieren auf den offiziellen API-Quellen des Katalogs; fehlt ein vergleichbarer Erstanbieterpreis in USD, werden sie durch vergleichbare, von Artificial Analysis erfasste API-Angebote ergänzt. Der Mischpreis gewichtet Eingabe mit {input} % und Ausgabe mit {output} %; Cache-Rabatte sind ausgeschlossen.",
+    "methodology": "Methodik des Intelligenzindex",
+    "fallbackPricingSources": "Ergänzende Preisquellen:"
+  }
+}

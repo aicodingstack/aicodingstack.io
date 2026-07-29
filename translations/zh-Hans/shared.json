@@ -43,46 +43,46 @@
       "extensions": "All Extensions",
       "ides": "All IDEs",
       "modelProviders": "All Model Providers",
-      "models": "All Models",
+      "models": "所有模型",
       "vendors": "All Vendors"
     },
     "plural": {
-      "clis": "CLIs",
-      "desktops": "Desktop",
-      "extensions": "Extensions",
-      "ides": "IDEs",
-      "modelProviders": "Model Providers",
-      "models": "Models",
-      "providers": "Providers",
-      "vendors": "Vendors"
+      "clis": "命令行工具",
+      "desktops": "桌面应用",
+      "extensions": "扩展",
+      "ides": "集成开发环境",
+      "modelProviders": "模型提供商",
+      "models": "模型",
+      "providers": "提供商",
+      "vendors": "厂商"
     },
     "singular": {
       "cli": "CLI",
       "desktop": "Desktop",
       "extension": "Extension",
       "ide": "IDE",
-      "model": "Model",
+      "model": "模型",
       "modelProvider": "Model Provider",
       "provider": "Provider",
-      "vendor": "Vendor"
+      "vendor": "厂商"
     }
   },
   "labels": {
     "cache": "Cache",
     "findOnAiPlatforms": "在 AI 平台上查找",
     "getApiKey": "获取 API 密钥",
-    "input": "Input",
+    "input": "输入",
     "name": "名称",
-    "output": "Output",
+    "output": "输出",
     "quickLinks": "快速链接",
-    "searchByName": "Search by name...",
+    "searchByName": "按名称搜索...",
     "specifications": "规格",
-    "totalContext": "Total Context"
+    "totalContext": "总上下文"
   },
   "lifecycle": {
     "deprecated": "已弃用",
-    "latest": "Latest",
-    "maintained": "Maintained"
+    "latest": "最新",
+    "maintained": "维护中"
   },
   "modelPricing": {
     "cacheRead": "缓存读取",
@@ -129,20 +129,21 @@
     "aiCodingStack": "AI Coding Stack",
     "articles": "文章",
     "benchmarks": "基准测试",
+    "by": "由",
     "collections": "收藏集",
     "community": "社区",
     "communityLinks": "社区链接",
     "comparison": "比较",
-    "contextWindow": "ContextWindow",
+    "contextWindow": "上下文窗口",
     "curatedCollections": "精选收藏集",
-    "docs": "Docs",
+    "docs": "文档",
     "documentation": "文档",
     "ecosystemSubtitle": "探索完整的 AI 编码生态系统：IDE、CLI、扩展、模型和提供商。",
     "ecosystemTools": "生态系统工具",
     "faq": "FAQ",
     "featuredArticles": "精选文章",
     "followUs": "关注我们",
-    "indexLabel": "INDEX",
+    "indexLabel": "索引",
     "landscapeDescription": "可视化完整的 AI 编码生态系统",
     "landscapeTitle": "AI 编码全景",
     "license": "许可证",

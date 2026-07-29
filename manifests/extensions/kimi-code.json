@@ -56,7 +56,11 @@
   "websiteUrl": "https://www.kimi.com/code",
   "docsUrl": "https://www.kimi.com/code/docs/en",
   "vendor": "Moonshot AI",
-  "latestVersion": "Latest",
+  "latestVersion": "0.6.4",
+  "releaseTracking": {
+    "provider": "vscode-marketplace",
+    "identifier": "moonshot-ai.kimi-code"
+  },
   "githubUrl": "https://github.com/MoonshotAI/kimi-code",
   "license": "Apache-2.0",
   "pricing": [

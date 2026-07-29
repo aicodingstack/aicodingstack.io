@@ -2,43 +2,73 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "verdent-ai",
   "name": "Verdent AI",
-  "description": "AI-native software company developing agentic coding tools that empower human developers to deliveries complex, enterprise-grade code through parallel AI agent orchestration.",
+  "description": "Verdent develops agentic coding tools that plan, build, test, and run software work through parallel AI agents.",
   "translations": {
     "zh-Hans": {
-      "description": "AI 原生软件公司，开发代理编码工具，通过并行 AI 代理编排，赋能人类开发者交付复杂的企业级代码。"
+      "description": "Verdent 开发 Agent 编码工具，通过并行 AI Agent 规划、构建、测试和执行软件工作。"
     },
     "de": {
-      "description": "AI-natives Softwareunternehmen, das Agentenbasierte Coding-Tools entwickelt, die menschliche Entwickler befähigen, komplexen Enterprise-Code durch parallele AI-Agentenorchestration zu liefern."
+      "description": "Verdent entwickelt agentische Coding-Werkzeuge, die Softwarearbeiten mit parallelen AI-Agenten planen, erstellen, testen und ausführen."
     },
     "ko": {
-      "description": "병렬 AI 에이전트 오케스트레이션을 통해 개발자가 복잡한 엔터프라이즈급 코드를 제공할 수 있도록 지원하는 에이전트 코딩 도구를 개발하는 AI 네이티브 소프트웨어 회사입니다."
+      "description": "Verdent는 병렬 AI 에이전트를 통해 소프트웨어 작업을 계획, 구축, 테스트 및 실행하는 에이전트 코딩 도구를 개발합니다."
     },
     "es": {
-      "description": "Empresa de software nativa de IA que desarrolla herramientas de codificacion de agentes, capacita a los desarrolladores humanos para entregar codigo complejo de nivel empresarial a traves de la orq..."
+      "description": "Verdent desarrolla herramientas de programación agéntica que planifican, construyen, prueban y ejecutan trabajo de software mediante agentes de IA paralelos."
     },
     "fr": {
-      "description": "Societe de logiciels natives IA qui developpe des outils de codage d'agents, permet aux developpeurs humains de fournir du code complexe de niveau entreprise par l'orchestration parallele d'agents IA."
+      "description": "Verdent développe des outils de codage agentique qui planifient, construisent, testent et exécutent des travaux logiciels via des agents IA parallèles."
     },
     "id": {
-      "description": "Perusahaan software AI-native yang mengembangkan tools coding agen, memberdayakan pengembang manusia untuk mengirimkan kode kompleks level enterprise melalui orkestrasi agen AI paralel."
+      "description": "Verdent mengembangkan alat coding agentik yang merencanakan, membangun, menguji, dan menjalankan pekerjaan software melalui agen AI paralel."
     },
     "ja": {
-      "description": "エージェントコーディングツールを開発するAIネイティブソフトウェア企業で、並列AIエージェント調整を通じて、人間の開発者が複雑なエンタープライズレベルのコードを提供できるようにします。"
+      "description": "Verdentは、並列AIエージェントを通じてソフトウェア作業を計画、構築、テスト、実行するエージェント型コーディングツールを開発しています。"
     },
     "pt": {
-      "description": "Empresa de software nativo de IA que desenvolve ferramentas de codificacao de agentes, permite aos desenvolvedores humanos entregar codigo complexo de nivel empresarial por meio da orquestracao par..."
+      "description": "A Verdent desenvolve ferramentas de programação agêntica que planejam, constroem, testam e executam trabalho de software por meio de agentes de IA paralelos."
     },
     "ru": {
-      "description": "Компания программного обеспечения, ориентированная на ИИ, разрабатывающая агентные инструменты программирования, позволяющие разработчикам-людям создавать сложный корпоративный код через параллельн..."
+      "description": "Verdent разрабатывает агентные инструменты программирования, которые планируют, создают, тестируют и выполняют программные задачи через параллельных ИИ-агентов."
     },
     "tr": {
-      "description": "AI-native yazılım şirketi, paralel AI aracı orkestrasyonu yoluyla insan geliştiricilerin karmaşık kurumsal kod sunmasını sağlayan ajan kodlama araçları geliştirir."
+      "description": "Verdent, paralel AI ajanlarıyla yazılım çalışmalarını planlayan, oluşturan, test eden ve yürüten ajan kodlama araçları geliştirir."
     },
     "zh-Hant": {
-      "description": "AI 原生軟體公司，開發代理編碼工具，透過並行 AI 代理編排，賦能人類開發者交付複雜的企業級代碼。"
+      "description": "Verdent 開發 Agent 編碼工具，透過並行 AI Agent 規劃、建構、測試和執行軟體工作。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.verdent.ai/",
+      "title": "Verdent official site",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/verdentAI",
+      "title": "Verdent GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/verdent-ai",
+      "title": "Verdent AI linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/verdent_ai",
+      "title": "Verdent AI twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://discord.gg/NGjXEZcbJq",
+      "title": "Verdent AI discord community",
+      "fields": ["communityUrls.discord"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.verdent.ai",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/verdent-ai",

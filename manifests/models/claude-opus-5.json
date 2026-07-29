@@ -1,0 +1,124 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "claude-opus-5",
+  "name": "Claude Opus 5",
+  "description": "Anthropic's Opus model for complex agentic coding, deep reasoning, and enterprise work, with a 1M-token context window and 128K output.",
+  "translations": {
+    "de": {
+      "description": "Anthropics Opus-Modell für komplexes agentisches Coding, tiefes Schlussfolgern und Unternehmensarbeit mit 1 Mio. Token Kontext und 128K Ausgabe."
+    },
+    "es": {
+      "description": "Modelo Opus de Anthropic para programación agéntica compleja, razonamiento profundo y trabajo empresarial, con contexto de 1M tokens y salida de 128K."
+    },
+    "fr": {
+      "description": "Modèle Opus d’Anthropic pour le codage agentique complexe, le raisonnement approfondi et le travail d’entreprise, avec 1 M de jetons de contexte et 128K en sortie."
+    },
+    "id": {
+      "description": "Model Opus Anthropic untuk coding agentik kompleks, penalaran mendalam, dan pekerjaan perusahaan, dengan konteks 1 juta token dan keluaran 128K."
+    },
+    "ja": {
+      "description": "100万トークンのコンテキストと128K出力を備え、複雑なエージェント型コーディング、深い推論、企業業務に対応するAnthropicのOpusモデル。"
+    },
+    "ko": {
+      "description": "100만 토큰 컨텍스트와 128K 출력을 갖추고 복잡한 에이전트 코딩, 심층 추론과 엔터프라이즈 업무를 지원하는 Anthropic Opus 모델입니다."
+    },
+    "pt": {
+      "description": "Modelo Opus da Anthropic para programação agêntica complexa, raciocínio profundo e trabalho empresarial, com contexto de 1M tokens e saída de 128K."
+    },
+    "ru": {
+      "description": "Модель Anthropic Opus для сложного агентного программирования, глубоких рассуждений и корпоративных задач с контекстом 1 млн токенов и выводом 128K."
+    },
+    "tr": {
+      "description": "1 milyon token bağlam ve 128K çıktı ile karmaşık aracılı kodlama, derin akıl yürütme ve kurumsal işler için Anthropic Opus modeli."
+    },
+    "zh-Hans": {
+      "description": "Anthropic 面向复杂智能体编码、深度推理和企业工作的 Opus 模型，提供 100 万 token 上下文和 128K 输出。"
+    },
+    "zh-Hant": {
+      "description": "Anthropic 面向複雜智慧體編碼、深度推理和企業工作的 Opus 模型，提供 100 萬 token 上下文和 128K 輸出。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/whats-new-opus-5",
+      "title": "What's new in Claude Opus 5",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "releaseDate",
+        "lifecycle",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "title": "Claude Platform pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/claude-opus-5",
+      "title": "Artificial Analysis Claude Opus 5 model page",
+      "fields": ["releaseDate", "platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-27",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.anthropic.com",
+  "docsUrl": "https://platform.claude.com/docs/en/about-claude/models/whats-new-opus-5",
+  "vendor": "Anthropic",
+  "size": null,
+  "contextWindow": 1000000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": "2026-07-24",
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 5,
+              "output": 25,
+              "cacheRead": 0.5,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-07-24",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "pdf"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/claude-opus-5",
+    "openrouter": null
+  }
+}

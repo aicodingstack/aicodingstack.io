@@ -3,43 +3,73 @@
   "id": "factory-ai",
   "name": "Factory AI",
   "aliases": ["Factory.ai"],
-  "description": "Agent-native software development company building autonomous AI Droids that automate the software development lifecycle, saving enterprises over 500,000 engineering hours.",
+  "description": "Factory builds a self-improving software development system that operates across the software lifecycle with flexible model and deployment options.",
   "translations": {
     "zh-Hans": {
-      "description": "智能体原生软件开发公司,构建自主 AI Droids 自动化软件开发生命周期,为企业节省超过 50 万工程小时。"
+      "description": "Factory 构建可自我改进的软件开发系统，覆盖整个软件开发生命周期，并提供灵活的模型和部署选项。"
     },
     "de": {
-      "description": "Agentenbasiertes Softwareentwicklungsunternehmen, das autonome AI-Droids entwickelt, die den Software-Entwicklungslebenszyklus automatisieren."
+      "description": "Factory entwickelt ein selbstverbesserndes Softwaresystem für den gesamten Entwicklungszyklus mit flexiblen Modell- und Bereitstellungsoptionen."
     },
     "ko": {
-      "description": "소프트웨어 개발 수명 주기 자동화를 위한 자율 AI Droids를 구축하는 에이전트 기반 소프트웨어 개발 기업으로, 기업에 50만 시간 이상의 엔지니어링 시간을 절약합니다."
+      "description": "Factory는 유연한 모델 및 배포 옵션으로 소프트웨어 개발 수명 주기 전반에서 작동하는 자체 개선 소프트웨어 개발 시스템을 구축합니다."
     },
     "es": {
-      "description": "Empresa de desarrollo de software nativo de agentes que construye Droids de IA autónomos para automatizar el ciclo de vida de desarrollo de software, ahorrando a las empresas más de 500,000 horas d..."
+      "description": "Factory crea un sistema de desarrollo de software que mejora continuamente y opera en todo el ciclo de vida con opciones flexibles de modelos y despliegue."
     },
     "fr": {
-      "description": "Société de développement de logiciel natif d'agents construisant des Droids IA autonomes pour automatiser le cycle de vie de développement logiciel, économisant aux entreprises plus de 500,000 heur..."
+      "description": "Factory développe un système logiciel auto-améliorant couvrant tout le cycle de développement avec des options flexibles de modèles et de déploiement."
     },
     "id": {
-      "description": "Perusahaan pengembangan perangkat lunak native-agent yang membangun Droids AI otonom untuk mengotomatisasi siklus hidup pengembangan perangkat lunak, menghemat lebih dari 500,000 jam engineering un..."
+      "description": "Factory membangun sistem pengembangan software yang terus berkembang dan bekerja di seluruh siklus pengembangan dengan pilihan model dan penerapan yang fleksibel."
     },
     "ja": {
-      "description": "自律的なAI Droidsを構築してソフトウェア開発ライフサイクルを自動化し、企業に50万時間以上のエンジニアリング時間を節約する、エージェントネイティブソフトウェア開発企業。"
+      "description": "Factoryは、柔軟なモデルとデプロイ方法を備え、ソフトウェア開発ライフサイクル全体で動作する自己改善型の開発システムを構築しています。"
     },
     "pt": {
-      "description": "Empresa de desenvolvimento de software nativo de agentes construíndo Droids de IA autônomos para automatizar o ciclo de vida de desenvolvimento de software, economizando para empresas mais de 500,0..."
+      "description": "A Factory cria um sistema de desenvolvimento de software que se aprimora e atua em todo o ciclo de vida, com opções flexíveis de modelos e implantação."
     },
     "ru": {
-      "description": "Компания по разработке программного обеспечения с агентным подходом, создающая автономные AI Droids для автоматизации жизненного цикла разработки ПО, экономящая предприятиям более 500,000 инженерны..."
+      "description": "Factory создаёт саморазвивающуюся систему разработки ПО для всего жизненного цикла с гибким выбором моделей и способов развёртывания."
     },
     "tr": {
-      "description": "Yazılım geliştirme yaşam döngüsünü otomatize eden otonom AI Droid'ları oluşturan, şirketlere 500.000'den fazla mühendislik saati kazandıran ajan-native yazılım geliştirme şirketi."
+      "description": "Factory, esnek model ve dağıtım seçenekleriyle yazılım geliştirme yaşam döngüsünün tamamında çalışan, kendini geliştiren bir yazılım sistemi oluşturur."
     },
     "zh-Hant": {
-      "description": "智慧體原生軟體開發公司，構建自主 AI Droids 自動化軟體開發生命週期，為企業節省超過 50 萬工程小時。"
+      "description": "Factory 建構可自我改進的軟體開發系統，涵蓋整個軟體開發生命週期，並提供靈活的模型和部署選項。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://factory.ai/",
+      "title": "Factory official site",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/Factory-AI",
+      "title": "Factory official GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/factory-hq",
+      "title": "Factory AI linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/FactoryAI",
+      "title": "Factory AI twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://factory.ai/news",
+      "title": "Factory AI blog community",
+      "fields": ["communityUrls.blog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://factory.ai",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/factory-hq",

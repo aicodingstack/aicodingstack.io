@@ -1,0 +1,104 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "mimo-v2-5-pro",
+  "name": "MiMo-V2.5-Pro",
+  "description": "The Xiaomi open-weight 1.02T-parameter MoE model for complex software engineering, long-horizon agents, and reasoning across a 1M-token context.",
+  "translations": {
+    "de": {
+      "description": "Das offene MoE-Modell von Xiaomi mit 1,02 Bio. Parametern für komplexe Softwareentwicklung, langfristige Agenten und Schlussfolgern über 1 Mio. Token Kontext."
+    },
+    "es": {
+      "description": "Modelo MoE de pesos abiertos de Xiaomi con 1,02T parámetros para ingeniería de software compleja, agentes prolongados y razonamiento con contexto de 1M tokens."
+    },
+    "fr": {
+      "description": "Modèle MoE à poids ouverts de Xiaomi, doté de 1,02 T de paramètres, pour l’ingénierie logicielle complexe, les agents de longue durée et le raisonnement sur 1 M de jetons."
+    },
+    "id": {
+      "description": "Model MoE berbobot terbuka Xiaomi dengan 1,02T parameter untuk rekayasa perangkat lunak kompleks, agen jangka panjang, dan penalaran dalam konteks 1 juta token."
+    },
+    "ja": {
+      "description": "複雑なソフトウェア開発、長期エージェント、100万トークン文脈での推論に対応する、Xiaomiの1.02兆パラメータのオープンウェイトMoEモデル。"
+    },
+    "ko": {
+      "description": "복잡한 소프트웨어 엔지니어링, 장기 에이전트와 100만 토큰 컨텍스트 추론을 위한 Xiaomi의 1.02조 매개변수 오픈 웨이트 MoE 모델입니다."
+    },
+    "pt": {
+      "description": "Modelo MoE de pesos abertos da Xiaomi com 1,02T parâmetros para engenharia de software complexa, agentes de longa duração e raciocínio em contexto de 1M tokens."
+    },
+    "ru": {
+      "description": "MoE-модель Xiaomi с открытыми весами и 1,02 трлн параметров для сложной разработки ПО, долгих агентных задач и рассуждений в контексте 1 млн токенов."
+    },
+    "tr": {
+      "description": "Karmaşık yazılım mühendisliği, uzun süreli aracılar ve 1 milyon token bağlamda akıl yürütme için Xiaomi'nin 1,02T parametreli açık ağırlıklı MoE modeli."
+    },
+    "zh-Hans": {
+      "description": "Xiaomi 面向复杂软件工程、长周期智能体和 100 万 token 上下文推理的开放权重 MoE 模型，总参数 1.02 万亿。"
+    },
+    "zh-Hant": {
+      "description": "Xiaomi 面向複雜軟體工程、長週期智慧體和 100 萬 token 上下文推理的開放權重 MoE 模型，總參數 1.02 兆。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
+      "title": "MiMo-V2.5-Pro official model card",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "platformUrls.huggingface"
+      ]
+    },
+    {
+      "url": "https://mimo.xiaomi.com/mimo-v2-5",
+      "title": "Xiaomi MiMo-V2.5 official release announcement",
+      "fields": ["releaseDate"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/mimo-v2-5-pro",
+      "title": "Artificial Analysis MiMo-V2.5-Pro model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-27",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://mimo.xiaomi.com/",
+  "docsUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
+  "vendor": "Xiaomi",
+  "size": "1.02T (42B active)",
+  "contextWindow": 1048576,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "unavailable",
+    "reason": "official-price-not-published",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "releaseDate": "2026-04-22",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/mimo-v2-5-pro",
+    "openrouter": null
+  }
+}

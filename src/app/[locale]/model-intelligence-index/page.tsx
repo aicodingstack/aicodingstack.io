@@ -5,8 +5,8 @@ import PageHeader from '@/components/PageHeader'
 import type { Locale } from '@/i18n/config'
 import { buildTitle, generateStaticPageMetadata } from '@/lib/metadata'
 import {
+  allModelIntelligencePoints,
   modelIntelligenceMeta,
-  modelIntelligencePoints,
   modelIntelligenceSeries,
 } from '@/lib/model-intelligence-index'
 import { ModelIntelligenceIndexPage } from './page.client'
@@ -46,7 +46,7 @@ export default async function Page({ params }: Props) {
           <ModelIntelligenceIndexPage
             locale={locale}
             meta={modelIntelligenceMeta}
-            points={modelIntelligencePoints}
+            points={allModelIntelligencePoints}
             series={modelIntelligenceSeries}
           />
         </div>

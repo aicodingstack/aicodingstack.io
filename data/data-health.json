@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-26",
+  "asOf": "2026-07-29",
   "thresholds": {
     "models": 30,
     "providers": 30,
@@ -10,19 +10,22 @@
     "vendors": 90
   },
   "summary": {
-    "totalRecords": 231,
-    "recordsWithSources": 140,
-    "verifiedRecords": 126,
-    "provenanceComplete": 109,
+    "totalRecords": 242,
+    "recordsWithSources": 231,
+    "verifiedRecords": 176,
+    "provenanceComplete": 176,
     "staleVerifiedRecords": 0,
-    "translationPlaceholderValues": 1520,
+    "translationPlaceholderValues": 1262,
     "danglingRelationships": 0,
-    "modelBenchmarkCoverage": 10.5,
-    "productsWithPricing": 66,
+    "modelBenchmarkCoverage": 9.5,
+    "productsWithPricing": 63,
     "productRecords": 67,
+    "communityUrlsPopulated": 302,
+    "communityUrlsWithProvenance": 302,
+    "duplicatedVendorCommunityUrls": 0,
     "errors": 0,
-    "warnings": 17,
-    "info": 91
+    "warnings": 0,
+    "info": 11
   },
   "byCategory": {
     "ides": {
@@ -33,8 +36,8 @@
     },
     "clis": {
       "total": 27,
-      "verified": 4,
-      "provenanceComplete": 3,
+      "verified": 5,
+      "provenanceComplete": 5,
       "stale": 0
     },
     "desktops": {
@@ -45,330 +48,92 @@
     },
     "extensions": {
       "total": 19,
-      "verified": 3,
-      "provenanceComplete": 2,
+      "verified": 5,
+      "provenanceComplete": 5,
       "stale": 0
     },
     "models": {
-      "total": 113,
-      "verified": 112,
-      "provenanceComplete": 100,
+      "total": 123,
+      "verified": 122,
+      "provenanceComplete": 122,
       "stale": 0
     },
     "providers": {
       "total": 12,
       "verified": 4,
-      "provenanceComplete": 3,
+      "provenanceComplete": 4,
       "stale": 0
     },
     "vendors": {
-      "total": 39,
-      "verified": 3,
-      "provenanceComplete": 1,
+      "total": 40,
+      "verified": 40,
+      "provenanceComplete": 40,
       "stale": 0
     }
   },
   "translationsByLocale": {
     "de": {
-      "totalStrings": 383,
-      "matchingEnglish": 133,
-      "matchingEnglishPercent": 34.7
+      "totalStrings": 416,
+      "matchingEnglish": 113,
+      "matchingEnglishPercent": 27.2
     },
     "es": {
-      "totalStrings": 383,
-      "matchingEnglish": 127,
-      "matchingEnglishPercent": 33.2
+      "totalStrings": 416,
+      "matchingEnglish": 104,
+      "matchingEnglishPercent": 25
     },
     "fr": {
-      "totalStrings": 383,
-      "matchingEnglish": 137,
-      "matchingEnglishPercent": 35.8
+      "totalStrings": 416,
+      "matchingEnglish": 115,
+      "matchingEnglishPercent": 27.6
     },
     "id": {
-      "totalStrings": 383,
-      "matchingEnglish": 171,
-      "matchingEnglishPercent": 44.6
+      "totalStrings": 416,
+      "matchingEnglish": 149,
+      "matchingEnglishPercent": 35.8
     },
     "ja": {
-      "totalStrings": 383,
-      "matchingEnglish": 123,
-      "matchingEnglishPercent": 32.1
+      "totalStrings": 416,
+      "matchingEnglish": 107,
+      "matchingEnglishPercent": 25.7
     },
     "ko": {
-      "totalStrings": 383,
-      "matchingEnglish": 143,
-      "matchingEnglishPercent": 37.3
+      "totalStrings": 416,
+      "matchingEnglish": 115,
+      "matchingEnglishPercent": 27.6
     },
     "pt": {
-      "totalStrings": 383,
-      "matchingEnglish": 136,
-      "matchingEnglishPercent": 35.5
+      "totalStrings": 416,
+      "matchingEnglish": 114,
+      "matchingEnglishPercent": 27.4
     },
     "ru": {
-      "totalStrings": 383,
-      "matchingEnglish": 150,
-      "matchingEnglishPercent": 39.2
+      "totalStrings": 416,
+      "matchingEnglish": 124,
+      "matchingEnglishPercent": 29.8
     },
     "tr": {
-      "totalStrings": 383,
-      "matchingEnglish": 152,
-      "matchingEnglishPercent": 39.7
+      "totalStrings": 416,
+      "matchingEnglish": 125,
+      "matchingEnglishPercent": 30
     },
     "zh-Hans": {
-      "totalStrings": 383,
-      "matchingEnglish": 125,
-      "matchingEnglishPercent": 32.6
+      "totalStrings": 416,
+      "matchingEnglish": 98,
+      "matchingEnglishPercent": 23.6
     },
     "zh-Hant": {
-      "totalStrings": 383,
-      "matchingEnglish": 123,
-      "matchingEnglishPercent": 32.1
+      "totalStrings": 416,
+      "matchingEnglish": 98,
+      "matchingEnglishPercent": 23.6
     }
   },
   "issues": [
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "clis",
-      "id": "kilo-code-cli",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "extensions",
-      "id": "kilo-code",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "glm-4-6",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "glm-4-6v",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "gpt-4-1",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "gpt-4o",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "gpt-5",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "gpt-5-1",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "gpt-5-1-codex",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "gpt-5-codex",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "minimax-m2",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "minimax-m2-1",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "qwen3-coder-30b-a3b",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "models",
-      "id": "qwen3-coder-480b-a35b",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "providers",
-      "id": "siliconflow",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "vendors",
-      "id": "kilo",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "warning",
-      "code": "verified-without-provenance",
-      "category": "vendors",
-      "id": "siliconflow",
-      "message": "Verified record is missing sources, review date, reviewer, or confidence."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "amazon-q-developer-cli",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "amp-cli",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "augment-code-cli",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "cline-cli",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "codebuddy-cli",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "codex-cli",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "continue-cli",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "cursor-cli",
-      "message": "No structured source references are recorded."
-    },
     {
       "severity": "info",
       "code": "missing-sources",
       "category": "clis",
       "id": "droid-cli",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "github-copilot-cli",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "kilo-code-cli",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "kiro-cli",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "kode",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "neovate-code",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "opencode",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "qoder-cli",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "extensions",
-      "id": "amp",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "extensions",
-      "id": "augment-code",
       "message": "No structured source references are recorded."
     },
     {
@@ -382,112 +147,7 @@
       "severity": "info",
       "code": "missing-sources",
       "category": "extensions",
-      "id": "continue",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "extensions",
-      "id": "droid",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "extensions",
-      "id": "github-copilot",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "extensions",
-      "id": "jetbrains-junie",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "extensions",
-      "id": "kilo-code",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "extensions",
-      "id": "qoder",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "extensions",
-      "id": "roo-code",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "extensions",
       "id": "tabnine",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "extensions",
-      "id": "verdent",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "ides",
-      "id": "antigravity",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "ides",
-      "id": "codebuddy",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "ides",
-      "id": "cursor",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "ides",
-      "id": "intellij-idea",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "ides",
-      "id": "kiro",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "ides",
-      "id": "vscode",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "ides",
-      "id": "windsurf",
       "message": "No structured source references are recorded."
     },
     {
@@ -507,106 +167,8 @@
     {
       "severity": "info",
       "code": "missing-sources",
-      "category": "models",
-      "id": "glm-4-6",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "glm-4-6v",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "gpt-4-1",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "gpt-4o",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "gpt-5",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "gpt-5-1",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "gpt-5-1-codex",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "gpt-5-codex",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "minimax-m2",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "minimax-m2-1",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "qwen3-coder-30b-a3b",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "qwen3-coder-480b-a35b",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "providers",
-      "id": "alibaba",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
       "category": "providers",
       "id": "deepseek",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "providers",
-      "id": "meta",
       "message": "No structured source references are recorded."
     },
     {
@@ -634,13 +196,6 @@
       "severity": "info",
       "code": "missing-sources",
       "category": "providers",
-      "id": "siliconflow",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "providers",
       "id": "xai",
       "message": "No structured source references are recorded."
     },
@@ -649,237 +204,6 @@
       "code": "missing-sources",
       "category": "providers",
       "id": "z-ai",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "alibaba",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "ant-group",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "anthropic",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "anysphere",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "augment",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "aws",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "bytedance",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "cline",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "cognition",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "continue",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "deepseek",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "factory-ai",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "github",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "google",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "jetbrains",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "kilo",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "meta",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "microsoft",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "minimax",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "moonshot",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "openai",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "openrouter",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "roo-code",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "shareai-lab",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "siliconflow",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "sourcegraph",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "sst",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "tabnine",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "tencent",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "verdent-ai",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "xai",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "z-ai",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "vendors",
-      "id": "zed-industries",
       "message": "No structured source references are recorded."
     }
   ]

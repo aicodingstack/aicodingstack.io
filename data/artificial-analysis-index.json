@@ -3,7 +3,7 @@
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
   "methodologyUrl": "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
   "indexVersion": "4.1",
-  "observedAt": "2026-07-26",
+  "observedAt": "2026-07-27",
   "legacyMissingModelIds": ["composer", "cursor-composer-2", "cursor-composer-2-5"],
   "entries": [
     {
@@ -71,6 +71,12 @@
       "score": 56,
       "estimated": false,
       "configuration": "Claude Opus 4.8 (max)"
+    },
+    {
+      "modelId": "claude-opus-5",
+      "score": 61,
+      "estimated": false,
+      "configuration": "Claude Opus 5 (max)"
     },
     {
       "modelId": "claude-sonnet-3",
@@ -245,6 +251,18 @@
       "score": 40,
       "estimated": true,
       "configuration": "Gemini 3 Pro Preview (high)"
+    },
+    {
+      "modelId": "gemma-4-26b-a4b",
+      "score": 26,
+      "estimated": false,
+      "configuration": "Gemma 4 26B A4B (Reasoning)"
+    },
+    {
+      "modelId": "gemma-4-31b",
+      "score": 29,
+      "estimated": false,
+      "configuration": "Gemma 4 31B (Reasoning)"
     },
     {
       "modelId": "glm-4-5",
@@ -493,6 +511,12 @@
       "configuration": "Grok Code Fast 1"
     },
     {
+      "modelId": "hy3",
+      "score": 41,
+      "estimated": false,
+      "configuration": "Hy3"
+    },
+    {
       "modelId": "kimi-k2-instruct",
       "score": 19,
       "estimated": true,
@@ -577,6 +601,24 @@
       "configuration": "MiniMax-M3"
     },
     {
+      "modelId": "mimo-v2-5",
+      "score": 37,
+      "estimated": false,
+      "configuration": "MiMo-V2.5"
+    },
+    {
+      "modelId": "mimo-v2-5-pro",
+      "score": 42,
+      "estimated": false,
+      "configuration": "MiMo-V2.5-Pro"
+    },
+    {
+      "modelId": "mimo-v2-flash",
+      "score": 25,
+      "estimated": false,
+      "configuration": "MiMo-V2-Flash (Non-reasoning)"
+    },
+    {
       "modelId": "mistral-medium-3-5",
       "score": 30,
       "estimated": false,
@@ -611,6 +653,24 @@
       "score": 26,
       "estimated": true,
       "configuration": "o4-mini (high)"
+    },
+    {
+      "modelId": "qwen3-5-122b-a10b",
+      "score": 32,
+      "estimated": false,
+      "configuration": "Qwen3.5 122B A10B (Reasoning)"
+    },
+    {
+      "modelId": "qwen3-5-35b-a3b",
+      "score": 24,
+      "estimated": false,
+      "configuration": "Qwen3.5 35B A3B (Non-reasoning)"
+    },
+    {
+      "modelId": "qwen3-5-397b-a17b",
+      "score": 34,
+      "estimated": false,
+      "configuration": "Qwen3.5 397B A17B (Reasoning)"
     },
     {
       "modelId": "qwen3-coder-30b-a3b",

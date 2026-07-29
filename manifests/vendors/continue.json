@@ -3,43 +3,84 @@
   "id": "continue",
   "name": "Continue",
   "aliases": ["Continue Dev"],
-  "description": "Open-source platform enabling developers to automate coding workflows through background agents, CLI tools, and IDE integrations with multi-model support.",
+  "description": "Continue was an open-source coding agent for CLI, VS Code, and JetBrains. It was acquired by Cursor, and the project is no longer actively maintained.",
   "translations": {
     "zh-Hans": {
-      "description": "开源平台，通过后台代理、CLI 工具和 IDE 集成以及多模型支持，帮助开发者自动化编码工作流程。"
+      "description": "Continue 曾是一款面向 CLI、VS Code 和 JetBrains 的开源编码 Agent。Continue 已被 Cursor 收购，该项目不再积极维护。"
     },
     "de": {
-      "description": "Open-Source-Plattform zur Automatisierung von Coding-Workflows durch Hintergrund-Agenten, CLI-Tools und IDE-Integrationen mit Multi-Modell-Unterstützung."
+      "description": "Continue war ein Open-Source-Coding-Agent für CLI, VS Code und JetBrains. Cursor übernahm Continue; das Projekt wird nicht mehr aktiv gepflegt."
     },
     "ko": {
-      "description": "백그라운드 에이전트, CLI 도구 및 IDE 통합 그리고 다중 모델 지원을 통해 개발자가 코딩 워크플로우를 자동화할 수 있도록 하는 오픈 소스 플랫폼입니다."
+      "description": "Continue는 CLI, VS Code 및 JetBrains용 오픈 소스 코딩 에이전트였습니다. Cursor가 Continue를 인수했으며, 이 프로젝트는 더 이상 적극적으로 유지 관리되지 않습니다."
     },
     "es": {
-      "description": "Plataforma de código abierto que permite a los desarrolladores automatizar flujos de trabajo de codificación a través de agentes de fondo, herramientas CLI e integraciones IDE con soporte multi-mod..."
+      "description": "Continue fue un agente de programación de código abierto para CLI, VS Code y JetBrains. Cursor adquirió Continue y el proyecto ya no se mantiene activamente."
     },
     "fr": {
-      "description": "Plateforme open source permettant aux développeurs d'automatiser les flux de travail de codage via agents d'arrière-plan, outils CLI et intégrations IDE avec support multi-modèle."
+      "description": "Continue était un agent de codage open source pour CLI, VS Code et JetBrains. Cursor a acquis Continue et le projet n’est plus activement maintenu."
     },
     "id": {
-      "description": "Platform open source yang memungkinkan pengembang mengotomatisasi alur kerja coding melalui agen latar belakang, tools CLI dan integrasi IDE dengan dukungan multi-model."
+      "description": "Continue adalah agen coding open source untuk CLI, VS Code, dan JetBrains. Cursor mengakuisisi Continue dan proyek ini tidak lagi dipelihara secara aktif."
     },
     "ja": {
-      "description": "バックグラウンドエージェント、CLIツール、IDE統合、マルチモデルサポートを通じて開発者がコーディングワークフローを自動化できるようにするオープンソースプラットフォーム。"
+      "description": "ContinueはCLI、VS Code、JetBrains向けのオープンソースコーディングエージェントでした。CursorがContinueを買収し、現在このプロジェクトは積極的に保守されていません。"
     },
     "pt": {
-      "description": "Plataforma de código aberto permitindo aos desenvolvedores automatizar fluxos de trabalho de codificação através de agentes de fundo, ferramentas CLI e integrações IDE com suporte multi-modelo."
+      "description": "Continue foi um agente de programação de código aberto para CLI, VS Code e JetBrains. A Cursor adquiriu a Continue e o projeto não é mais mantido ativamente."
     },
     "ru": {
-      "description": "Платформа с открытым исходным кодом, позволяющая разработчикам автоматизировать рабочие процессы программирования через фоновых агентов, инструменты CLI и интеграции IDE с мульти-модельной поддержкой."
+      "description": "Continue был открытым агентом программирования для CLI, VS Code и JetBrains. Cursor приобрела Continue, и проект больше активно не поддерживается."
     },
     "tr": {
-      "description": "Arka plan aracileri, CLI araçları ve IDE entegrasyonları ile çoklu model desteği aracılığıyla geliştiricilerin kodlama iş akışlarını otomatikleştirmesini sağlayan açık kaynaklı platform."
+      "description": "Continue, CLI, VS Code ve JetBrains için açık kaynaklı bir kodlama ajanıydı. Cursor, Continue’u satın aldı ve proje artık aktif olarak sürdürülmüyor."
     },
     "zh-Hant": {
-      "description": "開源平台，通過後台代理、CLI 工具和 IDE 整合以及多模型支援，幫助開發者自動化編碼工作流程。"
+      "description": "Continue 曾是一款面向 CLI、VS Code 和 JetBrains 的開源編碼 Agent。Continue 已被 Cursor 收購，該專案不再積極維護。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "deprecated": true,
+  "sources": [
+    {
+      "url": "https://www.continue.dev/",
+      "title": "Continue acquisition announcement",
+      "fields": ["description", "websiteUrl"]
+    },
+    {
+      "url": "https://docs.continue.dev/index",
+      "title": "Continue final release notice",
+      "fields": ["name", "description", "deprecated", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/continuedev/continue",
+      "title": "Continue archived repository",
+      "fields": ["description", "deprecated", "communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/continuedev",
+      "title": "Continue linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/continuedev",
+      "title": "Continue twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://discord.com/invite/EfJEfdFnDQ",
+      "title": "Continue discord community",
+      "fields": ["communityUrls.discord"]
+    },
+    {
+      "url": "https://blog.continue.dev",
+      "title": "Continue blog community",
+      "fields": ["communityUrls.blog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://continue.dev",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/continuedev",

@@ -51,10 +51,10 @@
   },
   "communityUrls": {
     "linkedin": null,
-    "twitter": "https://x.com/OpenRouterAI",
-    "github": "https://github.com/openrouter-ai",
+    "twitter": null,
+    "github": null,
     "youtube": null,
-    "discord": "https://discord.gg/openrouter",
+    "discord": null,
     "reddit": null,
     "blog": null
   }

@@ -2,86 +2,99 @@
   "$schema": "../$schemas/extension.schema.json",
   "id": "roo-code",
   "name": "Roo Code",
-  "description": "Roo Code is an open-source AI-powered coding assistant with specialized modes for planning, architecture, and debugging. It's model-agnostic with granular auto-approval and full customization.",
+  "description": "Roo Code was an open-source AI coding extension for VS Code with configurable modes and model support. The extension shut down and its repository was archived on May 15, 2026.",
   "translations": {
     "zh-Hans": {
-      "description": "Roo Code 是一个开源的 AI 驱动编码助手，提供用于规划、架构、调试等的专门模式。它支持任何 AI 模型，具有精细的自动批准和完全自定义功能。"
+      "description": "Roo Code 曾是一款面向 VS Code、支持可配置模式和多种模型的开源 AI 编码扩展。该扩展已停止运营，其仓库于 2026 年 5 月 15 日归档。"
     },
     "de": {
-      "description": "Roo Code ist ein Open-Source-AI-Programmierassistent mit spezialisierten Modi für Planung, Architektur und Debugging. Modellagnostisch mit granularer Auto-Genehmigung und vollständiger Anpassbarkeit."
+      "description": "Roo Code war eine Open-Source-AI-Coding-Erweiterung für VS Code mit konfigurierbaren Modi und Modellunterstützung. Die Erweiterung wurde eingestellt und das Repository am 15. Mai 2026 archiviert."
     },
     "ko": {
-      "description": "Roo Code는 계획, 아키텍처, 디버깅 등을 위한 전문 모드를 제공하는 오픈 소스 AI 코딩 어시스턴트입니다. 모든 AI 모델을 지원하며 세밀한 자동 승인과 완전한 사용자 정의가 가능합니다."
+      "description": "Roo Code는 구성 가능한 모드와 여러 모델을 지원하던 VS Code용 오픈 소스 AI 코딩 확장 기능이었습니다. 확장 기능이 종료되었고 저장소는 2026년 5월 15일에 보관 처리되었습니다."
     },
     "es": {
-      "description": "Roo Code es un asistente de codificación de IA de código abierto con modos especializados para planificación, arquitectura y depuración..."
+      "description": "Roo Code fue una extensión de programación con IA de código abierto para VS Code, con modos configurables y soporte de modelos. La extensión cerró y el repositorio se archivó el 15 de mayo de 2026."
     },
     "fr": {
-      "description": "Roo Code est un assistant de codage IA open source avec des modes spécialisés pour la planification, l'architecture et le débogage..."
+      "description": "Roo Code était une extension de codage IA open source pour VS Code, avec des modes configurables et la prise en charge de modèles. L’extension a fermé et le dépôt a été archivé le 15 mai 2026."
     },
     "id": {
-      "description": "Roo Code adalah asisten coding AI open source dengan mode khusus untuk perencanaan, arsitektur, dan debugging. Agnostik model dengan approval otomatis granular dan kustomisasi penuh."
+      "description": "Roo Code adalah ekstensi coding AI open source untuk VS Code dengan mode yang dapat diatur dan dukungan model. Ekstensi tersebut ditutup dan repositori diarsipkan pada 15 Mei 2026."
     },
     "ja": {
-      "description": "Roo Codeは、計画、アーキテクチャ、デバッグ用の専門モードを備えたオープンソースのAIコーディングアシスタントです。モデルに依存せず、粒度の細かい自動承認と完全なカスタマイズが可能です。"
+      "description": "Roo Codeは、設定可能なモードと複数モデルに対応したVS Code向けのオープンソースAIコーディング拡張機能でした。拡張機能は終了し、リポジトリは2026年5月15日にアーカイブされました。"
     },
     "pt": {
-      "description": "Roo Code e um assistente de codificacao de IA de codigo aberto com modos especializados para planejamento, arquitetura e depuracao..."
+      "description": "Roo Code foi uma extensão de programação com IA de código aberto para VS Code, com modos configuráveis e suporte a modelos. A extensão foi encerrada e o repositório arquivado em 15 de maio de 2026."
     },
     "ru": {
-      "description": "Roo Code — это ассистент программирования на базе ИИ с открытым исходным кодом, имеющий специализированные режимы для планирования, архитектуры и отладки..."
+      "description": "Roo Code был открытым ИИ-расширением для VS Code с настраиваемыми режимами и поддержкой моделей. Расширение закрыто, а репозиторий архивирован 15 мая 2026 года."
     },
     "tr": {
-      "description": "Roo Code, planlama, mimari ve hata ayıklama için özel modlara sahip açık kaynaklı bir AI kodlama asistanıdır. Granüler otomatik onay ve tam özelleştirme ile model bağımsızdır."
+      "description": "Roo Code, yapılandırılabilir modlara ve model desteğine sahip açık kaynaklı bir VS Code AI kodlama uzantısıydı. Uzantı kapatıldı ve depo 15 Mayıs 2026 tarihinde arşivlendi."
     },
     "zh-Hant": {
-      "description": "Roo Code 是一個開源的 AI 驅動編碼助手，提供用於規劃、架構、除錯等的專門模式。它支援任何 AI 模型，具有精細的自動批准和完全自訂功能。"
+      "description": "Roo Code 曾是一款面向 VS Code、支援可設定模式和多種模型的開源 AI 編碼擴充功能。該擴充功能已停止營運，其儲存庫於 2026 年 5 月 15 日封存。"
     }
   },
-  "verified": false,
-  "websiteUrl": "https://roocode.com",
-  "docsUrl": "https://docs.roocode.com",
-  "vendor": "Roo Code",
-  "latestVersion": "3.28.18",
-  "githubUrl": "https://github.com/RooCodeInc/Roo-Code",
-  "license": "Apache-2.0",
-  "pricing": [
+  "verified": true,
+  "deprecated": true,
+  "sources": [
     {
-      "name": "Free (Open Source)",
-      "value": 0,
-      "currency": null,
-      "per": null,
-      "category": "Individual"
+      "url": "https://github.com/RooCodeInc/Roo-Code",
+      "title": "Roo Code extension shutdown and archive notice",
+      "fields": [
+        "name",
+        "description",
+        "deprecated",
+        "websiteUrl",
+        "githubUrl",
+        "license",
+        "resourceUrls.changelog",
+        "resourceUrls.issue"
+      ]
     },
     {
-      "name": "Cloud",
-      "value": null,
-      "currency": null,
-      "per": "custom",
-      "category": "Business"
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.54.0",
+      "title": "Roo Code final release",
+      "fields": ["latestVersion"]
     },
     {
-      "name": "Enterprise",
-      "value": null,
-      "currency": null,
-      "per": "custom",
-      "category": "Enterprise"
+      "url": "https://docs.roocode.com/",
+      "title": "Roo Code archived documentation",
+      "fields": ["docsUrl"]
+    },
+    {
+      "url": "https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline",
+      "title": "Roo Code VS Code Marketplace listing",
+      "fields": ["resourceUrls.download", "supportedIdes"]
     }
   ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://github.com/RooCodeInc/Roo-Code",
+  "docsUrl": "https://roocodeinc.github.io/Roo-Code/",
+  "vendor": "Roo Code",
+  "latestVersion": "3.54.0",
+  "githubUrl": "https://github.com/RooCodeInc/Roo-Code",
+  "license": "Apache-2.0",
+  "pricing": [],
   "resourceUrls": {
     "download": "https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline",
     "changelog": "https://github.com/RooCodeInc/Roo-Code/releases",
-    "pricing": "https://roocode.com/pricing",
+    "pricing": null,
     "mcp": null,
     "issue": "https://github.com/RooCodeInc/Roo-Code/issues"
   },
   "communityUrls": {
-    "linkedin": "https://www.linkedin.com/company/roo-code",
-    "twitter": "https://x.com/roocode",
-    "github": "https://github.com/RooCodeInc/Roo-Code",
-    "youtube": "https://www.youtube.com/@roocode",
-    "discord": "https://discord.gg/roocode",
-    "reddit": "https://www.reddit.com/r/roocode",
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
     "blog": null
   },
   "relatedProducts": [],

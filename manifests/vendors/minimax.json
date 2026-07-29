@@ -6,6 +6,13 @@
     "light": "#E84B8A",
     "dark": "#E84B8A"
   },
+  "modelSeries": [
+    {
+      "id": "minimax-m",
+      "name": "MiniMax M",
+      "modelIds": ["minimax-m2", "minimax-m2-1", "minimax-m2-5", "minimax-m2-7", "minimax-m3"]
+    }
+  ],
   "description": "An AI company specializing in multimodal general large language models, offering advanced AI services including text, speech, music, image, and video generation.",
   "translations": {
     "zh-Hans": {
@@ -42,14 +49,39 @@
       "description": "專注於多模態通用大模型研發的 AI 公司，提供包括文本、語音、音樂、圖像和影片生成在內的先進 AI 服務。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.minimax.io/about",
+      "title": "About MiniMax",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/MiniMax-AI",
+      "title": "MiniMax official GitHub organization",
+      "fields": ["description"]
+    },
+    {
+      "url": "https://platform.minimax.io/docs/guides/text-generation",
+      "title": "MiniMax API documentation",
+      "fields": [
+        "communityUrls.linkedin",
+        "communityUrls.twitter",
+        "communityUrls.github",
+        "communityUrls.discord"
+      ]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://platform.minimaxi.com",
   "communityUrls": {
-    "linkedin": null,
-    "twitter": null,
-    "github": null,
+    "linkedin": "https://www.linkedin.com/company/minimax-ai",
+    "twitter": "https://x.com/MiniMax_AI",
+    "github": "https://github.com/MiniMax-AI",
     "youtube": null,
-    "discord": null,
+    "discord": "https://discord.com/invite/mmx",
     "reddit": null,
     "blog": null
   }

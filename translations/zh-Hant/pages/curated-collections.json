@@ -1,16 +1,16 @@
 {
   "articles": {
-    "description": "Must-read articles about AI coding from industry leaders"
+    "description": "業界領袖撰寫的 AI 編碼必讀文章"
   },
   "meta": {
-    "description": "Handpicked resources, specifications, protocols, and tools for AI coding. Featured articles, standards, and ecosystem utilities.",
-    "title": "Curated Collections - Essential AI Coding Resources"
+    "description": "精選面向 AI 編碼的資源、規範、協定和工具，涵蓋優質文章、開發標準與生態系統實用工具。",
+    "title": "精選收藏集 - AI 編碼必備資源"
   },
   "specifications": {
-    "description": "Essential standards and protocols for modern software development"
+    "description": "現代軟體開發的核心標準與協定"
   },
-  "subtitle": "Handpicked resources, specifications, protocols, and tools for AI coding",
+  "subtitle": "精選面向 AI 編碼的資源、規範、協定和工具",
   "tools": {
-    "description": "Curated tools and utilities for AI coding workflows"
+    "description": "為 AI 編碼工作流程精選的工具與實用程式"
   }
 }

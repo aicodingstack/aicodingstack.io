@@ -2,43 +2,84 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "tencent",
   "name": "Tencent",
-  "description": "World's largest video game vendor and technology conglomerate offering social networks, messaging (WeChat/QQ), cloud services, payment systems, and AI technology.",
+  "themeColor": {
+    "light": "#0052A3",
+    "dark": "#66B3FF"
+  },
+  "modelSeries": [
+    {
+      "id": "hunyuan",
+      "name": "Hunyuan",
+      "modelIds": ["hy3"]
+    }
+  ],
+  "description": "Tencent is an internet and technology company providing communication and social services, video games and digital content, cloud computing, FinTech, and AI technologies.",
   "translations": {
     "zh-Hans": {
-      "description": "全球最大的视频游戏厂商和科技集团,提供社交网络、即时通讯(微信/QQ)、云服务、支付系统和 AI 技术。"
+      "description": "腾讯是一家互联网与科技公司，提供通信与社交服务、电子游戏与数字内容、云计算、金融科技和 AI 技术。"
     },
     "de": {
-      "description": "Weltweit größter Videospielanbieter und Technologiekonzern mit sozialen Netzwerken, Messaging (WeChat/QQ), Cloud-Services und AI-Technologie."
+      "description": "Tencent ist ein Internet- und Technologieunternehmen, das Kommunikations- und soziale Dienste, Videospiele und digitale Inhalte, Cloud-Computing, FinTech und AI-Technologien anbietet."
     },
     "ko": {
-      "description": "세계 최대의 비디오 게임 제조사이자 기술 그룹으로, 소셜 네트워크, 메신저(위챗/QQ), 클라우드 서비스, 결제 시스템 및 AI 기술을 제공합니다."
+      "description": "Tencent는 커뮤니케이션 및 소셜 서비스, 비디오 게임과 디지털 콘텐츠, 클라우드 컴퓨팅, 핀테크 및 AI 기술을 제공하는 인터넷·기술 기업입니다."
     },
     "es": {
-      "description": "El mayor proveedor mundial de videojuegos y conglomerado tecnologico, ofrece redes sociales, mensajeria (WeChat/QQ), servicios en la nube, sistemas de pago y tecnologia de IA."
+      "description": "Tencent es una empresa de internet y tecnología que ofrece servicios de comunicación y redes sociales, videojuegos y contenido digital, computación en la nube, FinTech y tecnologías de IA."
     },
     "fr": {
-      "description": "Le plus grand fournisseur mondial de jeux video et conglomerat technologique, offre reseaux sociaux, messagerie (WeChat/QQ), services cloud, systemes de paiement et technologie IA."
+      "description": "Tencent est une entreprise technologique proposant des services sociaux, des jeux vidéo, des contenus numériques, le cloud, la FinTech et des technologies d’IA."
     },
     "id": {
-      "description": "Penyedia video game terbesar di dunia dan konglomerat teknologi, menyediakan jaringan sosial, messaging (WeChat/QQ), layanan cloud, sistem pembayaran, dan teknologi AI."
+      "description": "Tencent adalah perusahaan internet dan teknologi yang menyediakan layanan komunikasi dan sosial, gim video dan konten digital, komputasi awan, FinTech, serta teknologi AI."
     },
     "ja": {
-      "description": "世界最大のビデオゲームメーカーおよび技術コングロマリットで、ソーシャルネットワーク、メッセージング（WeChat/QQ）、クラウドサービス、決済システム、AI技術を提供しています。"
+      "description": "Tencentは、コミュニケーションおよびソーシャルサービス、ビデオゲームとデジタルコンテンツ、クラウドコンピューティング、FinTech、AI技術を提供するインターネット・テクノロジー企業です。"
     },
     "pt": {
-      "description": "O maior provedor mundial de jogos eletronicos e conglomerado tecnologico, oferece redes sociais, mensageria (WeChat/QQ), servicos em nuvem, sistemas de pagamento e tecnologia de IA."
+      "description": "A Tencent é uma empresa de internet e tecnologia que oferece serviços de comunicação e sociais, jogos e conteúdo digital, computação em nuvem, FinTech e tecnologias de IA."
     },
     "ru": {
-      "description": "Крупнейший в мире поставщик видеоигр и технологический конгломерат, предлагающий социальные сети, мессенджер (WeChat/QQ), облачные сервисы, платежные системы и технологии ИИ."
+      "description": "Tencent — интернет- и технологическая компания, предоставляющая коммуникационные и социальные сервисы, видеоигры и цифровой контент, облачные вычисления, FinTech и технологии ИИ."
     },
     "tr": {
-      "description": "Dünyanın en büyük video oyunu sağlayıcısı ve teknoloji grubu, sosyal ağlar, mesajlaşma (WeChat/QQ), bulut hizmetleri, ödeme sistemleri ve AI teknolojisi sunar."
+      "description": "Tencent; iletişim ve sosyal hizmetler, video oyunları ve dijital içerik, bulut bilişim, FinTech ve AI teknolojileri sunan bir internet ve teknoloji şirketidir."
     },
     "zh-Hant": {
-      "description": "全球最大的視頻遊戲廠商和科技集團，提供社交網絡、即時通訊（微信/QQ）、雲服務、支付系統和 AI 技術。"
+      "description": "騰訊是一家網際網路與科技公司，提供通訊與社交服務、電子遊戲與數位內容、雲端運算、金融科技和 AI 技術。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.tencent.com/en-us/about.html",
+      "title": "About Tencent",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://www.tencent.com/en-us/business.html",
+      "title": "Tencent businesses",
+      "fields": ["description"]
+    },
+    {
+      "url": "https://github.com/Tencent",
+      "title": "Tencent verified GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/tencentglobal",
+      "title": "Tencent linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/TencentGlobal",
+      "title": "Tencent twitter community",
+      "fields": ["communityUrls.twitter"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.tencent.com",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/tencentglobal",

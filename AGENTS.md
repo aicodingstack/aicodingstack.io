@@ -1,101 +1,37 @@
 # AGENTS.md
 
-This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.
+## Internationalization
 
-## Internationalization (i18n)
+- Translation resources live under `translations/`. Every page, module, and data change must support every locale configured in `src/i18n/config.ts`; never hardcode a locale subset.
+- Always use `Link` from `@/i18n/navigation`, not the Next.js default.
+- Localize page metadata and reuse existing translation keys and shared phrases before adding new ones.
+- Follow [docs/I18N-ARCHITECTURE-RULES.md](docs/I18N-ARCHITECTURE-RULES.md): keep page and component translations in their prescribed namespaces, co-locate page metadata under `meta`, and minimize cross-namespace `@:` references.
+- Add new keys to every locale with English placeholders first; perform proper translation as a separate batch.
 
-**Translation Resources Location:** All translation files are located in the `translations/` directory at the project root, organized by locale code (e.g., `translations/en/`, `translations/zh-Hans/`).
+## Data and Schema
 
-When creating or modifying any page, module, or data:
-- **MUST support all configured languages (12 total):**
-  - English (en)
-  - German (de)
-  - Spanish (es)
-  - French (fr)
-  - Indonesian (id)
-  - Japanese (ja)
-  - Korean (ko)
-  - Portuguese (pt)
-  - Russian (ru)
-  - Turkish (tr)
-  - Simplified Chinese (zh-Hans)
-  - Traditional Chinese (zh-Hant)
+- Never store product, catalog, editorial, ranking, pricing, benchmark, configuration, or other independently adjustable data in `.ts` or `.tsx` files.
+- Store data in schema-validated JSON under `data/`, the appropriate manifest, or translation resources. This includes curated selections, display order, metadata, prices, scores, timelines, chart-label placement, and ranking weights.
+- TypeScript may contain types, loaders, validators, transformations, calculations, presentation logic, and implementation-only constants with no product or editorial meaning. When uncertain, treat a value as data.
+- Update the JSON schema, corresponding TypeScript type, and validation tests together whenever a data shape changes.
+- Keep `src/types/manifests.ts` in one-to-one correspondence with the schemas under `manifests/$schemas/`.
 
-- **NEVER hardcode** a subset of locales like `'en' | 'zh-Hans'`
-- **MUST use the localized Link component:** Always import and use `import { Link } from '@/i18n/navigation'` instead of Next.js default Link
+## Design
 
-### Localization Best Practices
+- Use the existing extremely minimalist visual language: sharp corners, restrained low-saturation color, and accents only where necessary.
+- Prefer Lucide SVG icons; do not use emoji or text characters as icons.
+- Use `max-w-8xl` globally and `max-w-6xl` for content pages and the homepage.
 
-- **Metadata localization:** All meta information (titles, descriptions, keywords, OG tags, etc.) in pages MUST be properly localized
-- **DRY principle for translations:** Before creating new translation keys, search existing translation modules thoroughly to reuse existing terms and phrases
-- **Consistency:** Use the same translation keys across similar contexts
+## Metadata and SEO
 
-### Translation File Organization
-
-Follow the detailed architecture rules in [docs/I18N-ARCHITECTURE-RULES.md](docs/I18N-ARCHITECTURE-RULES.md) for organizing translation resources.
-
-**Core Principles:**
-1. **Page translations**: Each page or page group should have its own JSON file (e.g., `ides.json`, `ide-detail.json`)
-2. **Component translations**: Organize by component directory:
-   - `components/common.json` - Root-level components (Header, Footer, etc.)
-   - `components/navigation.json` - All navigation/* components
-   - `components/controls.json` - All controls/* components
-   - `components/sidebar.json` - All sidebar/* components
-   - `components/product.json` - All product/* components
-3. **Minimize `@:` references**: Use `tPage + tShared` or `tComponent + tShared` patterns in code instead of cross-namespace references in JSON
-4. **Metadata placement**: Co-locate page metadata (title, description, etc.) with page translations under a `meta` object
-5. **Multi-language workflow**: New translation keys should initially use English placeholders across all locales, with proper translation in a separate batch step
-
-**Usage Pattern:**
-```tsx
-// Pages
-const tPage = useTranslations('pages.modelDetail')
-const tShared = useTranslations('shared')
-
-// Components (root-level)
-const tComponent = useTranslations('components.common.header')
-
-// Components (subdirectories)
-const tComponent = useTranslations('components.navigation.breadcrumb')
-```
-
-## Design System
-
-**Global Design Principles:**
-
-- **Minimalist approach:** Follow a unified, extremely minimalist design style throughout the entire application
-- **No rounded corners:** All controls, components, labels, and UI elements MUST use sharp corners (border-radius: 0)
-- **Restrained color usage:** Use colors extremely sparingly and intentionally. Prefer grayscale and limit accent colors to essential UI elements only. If colors must be used, prefer low-saturation designs.
-- **Icon usage:** Prefer using Lucide SVG icons. Avoid using emoji or any other characters as icons.
-- **Page width:**
-  - `max-w-8xl`: for all pages globally
-  - `max-w-6xl`: for content pages and homepage
-
-## Coding Principles
-
-### DRY - Don't Repeat Yourself
-- Eliminate code duplication by extracting common logic
-- Reuse existing components, functions, and translation keys
-- Create shared utilities when patterns emerge
-
-### Type Safety & Schema Alignment
-- **Manifest type definitions:** Always ensure that `src/types/manifests.ts` stays in one-to-one correspondence with the JSON schemas in `manifests/$schemas/`
-- When modifying schema files, update the corresponding TypeScript types accordingly
-- When adding new types, verify they match the schema structure exactly
-- Maintain consistency between schema definitions and type definitions to prevent runtime errors
-
-## Metadata & SEO
-
-- **File-based OG images:** Use `opengraph-image.tsx` files for all routes, NOT code-based image paths
-- **Request memoization:** Wrap all data fetchers with React `cache()` to prevent duplicate fetching in `generateMetadata()` and page components
-- **Type-safe locales:** Always use `import type { Locale } from '@/i18n/config'`
-- **Auto-detected OG images:** Do NOT manually specify `images` in OpenGraph metadata - Next.js auto-detects `opengraph-image.tsx` files
-
-**OG Image Design:**
-- Size: 1200x630px (OpenGraph standard)
-- Follow global design system strictly
+- Use route-level `opengraph-image.tsx` files; do not manually set OpenGraph image paths. OG images are 1200×630 and follow the design system.
+- Wrap data fetchers shared by `generateMetadata()` and page rendering with React `cache()`.
+- Use `Locale` from `@/i18n/config` for locale types.
 
 ## Development Workflow
 
-- **Development server:** Do not start `npm run dev` automatically. User will start it manually when needed.
-- **Git commits:** Do not create commits autonomously. Always ask the user before committing changes.
+- Do not start `npm run dev` automatically; the user starts it when needed.
+- Before every `.next/standalone/server.js` start, including after each production build, sync `public/` to `.next/standalone/public/` and `.next/static/` to `.next/standalone/.next/static/`.
+- Match standalone `HOSTNAME` to the preview URL hostname. For `http://localhost:<port>`, use `HOSTNAME=localhost`, never `127.0.0.1`.
+- After each standalone start or restart, verify a default-locale URL, a locale-prefixed URL, and a referenced stylesheet all return `200`, with the stylesheet served as CSS. A tmux start command must include asset sync and the matching `HOSTNAME`.
+- Never create a commit without asking the user first.

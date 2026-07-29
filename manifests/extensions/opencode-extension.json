@@ -56,7 +56,11 @@
   "websiteUrl": "https://opencode.ai/download",
   "docsUrl": "https://opencode.ai/docs/ide",
   "vendor": "Anomaly",
-  "latestVersion": "Latest",
+  "latestVersion": "0.0.13",
+  "releaseTracking": {
+    "provider": "vscode-marketplace",
+    "identifier": "sst-dev.opencode"
+  },
   "githubUrl": "https://github.com/anomalyco/opencode",
   "license": "MIT",
   "pricing": [
@@ -77,10 +81,10 @@
   },
   "communityUrls": {
     "linkedin": null,
-    "twitter": "https://x.com/opencode",
+    "twitter": null,
     "github": "https://github.com/anomalyco/opencode",
     "youtube": null,
-    "discord": "https://discord.gg/opencode",
+    "discord": null,
     "reddit": null,
     "blog": null
   },

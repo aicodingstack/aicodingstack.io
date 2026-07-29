@@ -6,6 +6,23 @@
     "light": "#4A4A4A",
     "dark": "#A3A3A3"
   },
+  "modelSeries": [
+    {
+      "id": "grok",
+      "name": "Grok",
+      "modelIds": ["grok-4", "grok-4-20", "grok-4-3", "grok-4-5"]
+    },
+    {
+      "id": "grok-code",
+      "name": "Grok Code",
+      "modelIds": ["grok-code-fast-1"]
+    },
+    {
+      "id": "grok-fast",
+      "name": "Grok Fast",
+      "modelIds": ["grok-4-fast", "grok-4-1-fast"]
+    }
+  ],
   "description": "AI company advancing scientific discovery and understanding of the universe, creator of Grok AI models and the world's largest AI supercomputer, Colossus.",
   "translations": {
     "zh-Hans": {
@@ -42,7 +59,42 @@
       "description": "致力於推進科學發現和理解宇宙的 AI 公司，創造了 Grok AI 模型和全球最大的 AI 超級計算機 Colossus。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://x.ai/company",
+      "title": "SpaceXAI company",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://x.ai/news/xai-joins-spacex",
+      "title": "xAI joins SpaceX",
+      "fields": ["name"]
+    },
+    {
+      "url": "https://github.com/xai-org",
+      "title": "SpaceXAI official GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/xai",
+      "title": "xAI linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/xai",
+      "title": "xAI twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://x.ai/news",
+      "title": "xAI blog community",
+      "fields": ["communityUrls.blog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://x.ai",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/xai",

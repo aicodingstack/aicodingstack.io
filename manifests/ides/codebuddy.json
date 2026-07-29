@@ -98,5 +98,12 @@
       "launchCommand": "codebuddy",
       "installPath": null
     }
+  ],
+  "sources": [
+    {
+      "url": "https://www.codebuddy.ai/blog",
+      "title": "CodeBuddy IDE blog community",
+      "fields": ["communityUrls.blog"]
+    }
   ]
 }

@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: LocalePageProps) {
   const { locale } = await params
   const tPage = await getTranslations({ locale, namespace: 'pages.home.meta' })
 
-  const title = buildTitle({ title: tPage('title'), includeSiteName: false })
+  const title = buildTitle({ title: tPage('title'), includeSiteName: true })
   const description = tPage('description')
 
   return generateStaticPageMetadata({

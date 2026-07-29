@@ -25,6 +25,15 @@ interface MatrixCellProps {
   category: ProductCategory
 }
 
+const CATEGORY_PLURAL_KEYS: Record<ProductCategory, string> = {
+  cli: 'clis',
+  desktop: 'desktops',
+  extension: 'extensions',
+  ide: 'ides',
+  model: 'models',
+  provider: 'providers',
+}
+
 /**
  * Gets the localized label for a product category, with simple plural handling.
  */
@@ -36,16 +45,7 @@ function getCategoryLabel(
   if (count === 1) {
     return tShared(`categories.singular.${category}`)
   }
-  // Map singular to plural key for shared categories
-  const pluralMap: Record<ProductCategory, string> = {
-    cli: 'clis',
-    desktop: 'desktops',
-    extension: 'extensions',
-    ide: 'ides',
-    model: 'models',
-    provider: 'providers',
-  }
-  return tShared(`categories.plural.${pluralMap[category]}`)
+  return tShared(`categories.plural.${CATEGORY_PLURAL_KEYS[category]}`)
 }
 
 /**
@@ -281,11 +281,11 @@ export default function VendorMatrix({ matrixData }: VendorMatrixProps) {
               style={MATRIX_GRID_STYLE}
             >
               <div className="font-medium text-sm text-[var(--color-text-secondary)] px-2">
-                {tShared('categories.singular.vendor')}
+                {tShared('categories.plural.vendors')}
               </div>
               {LANDSCAPE_PRODUCT_CATEGORIES.map(cat => (
                 <div key={cat} className="font-medium text-sm text-center px-2">
-                  {tShared(`categories.singular.${cat}`)}
+                  {tShared(`categories.plural.${CATEGORY_PLURAL_KEYS[cat]}`)}
                 </div>
               ))}
             </div>

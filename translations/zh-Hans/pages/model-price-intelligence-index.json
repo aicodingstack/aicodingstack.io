@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "模型价格 × 智能指数",
+    "description": "按 API Token 价格和智能指数比较各家主流 AI 模型。",
+    "keywords": "AI 模型价格对比, 模型智能能力, LLM API 定价, 性价比"
+  },
+  "title": "模型价格 × 智能指数",
+  "description": "对比各家主流模型的 API 价格与智能指数。",
+  "chart": {
+    "title": "不同价格下的能力",
+    "axisHint": "混合 API 价格 × 智能指数",
+    "modelCount": "{count} 个精选模型",
+    "priceAxis": "每百万 Token 美元价格 · 输入 90% + 输出 10%",
+    "indexAxis": "智能指数",
+    "scale": {
+      "label": "价格标尺",
+      "linear": "线性",
+      "logarithmic": "对数"
+    }
+  },
+  "filter": {
+    "label": "按厂商筛选",
+    "showAll": "显示全部"
+  },
+  "list": {
+    "title": "精选模型",
+    "description": "可比的美元 API 价格，可按混合价格或智能指数排序。",
+    "blended": "混合价格",
+    "priceUnit": "美元 / 百万 Token",
+    "index": "指数"
+  },
+  "source": {
+    "attribution": "Artificial Analysis 智能指数 v{version}，观测日期 {date}。来源：",
+    "pricing": "价格优先采用目录收录的官方 API 信息；缺少可比的第一方美元价格时，补充采用 Artificial Analysis 跟踪的可比 API 报价。混合价格按输入 {input}%、输出 {output}% 加权，不计缓存折扣。",
+    "methodology": "智能指数方法",
+    "fallbackPricingSources": "补充价格来源："
+  }
+}

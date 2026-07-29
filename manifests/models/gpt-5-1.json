@@ -40,7 +40,7 @@
   },
   "verified": true,
   "websiteUrl": "https://openai.com",
-  "docsUrl": "https://platform.openai.com/docs/models/gpt-5.1",
+  "docsUrl": "https://developers.openai.com/api/docs/models/gpt-5.1",
   "vendor": "OpenAI",
   "size": null,
   "contextWindow": 400000,
@@ -85,9 +85,50 @@
     "sciCode": null,
     "liveCodeBench": null
   },
+  "benchmarkTracking": [
+    {
+      "provider": "swe-bench",
+      "benchmark": "sweBench",
+      "leaderboard": "Verified",
+      "resultId": "20251120_mini-v1.15.0_gpt-5.1-2025-11-13",
+      "modelLabel": "mini-SWE-agent + GPT-5.1 (2025-11-13) (medium reasoning)"
+    }
+  ],
   "platformUrls": {
     "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-5-1",
     "openrouter": "https://openrouter.ai/openai/gpt-5.1"
-  }
+  },
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.1",
+      "title": "OpenAI GPT-5.1 model documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "lifecycle"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/gpt-5-1-for-developers/",
+      "title": "GPT-5.1 for developers",
+      "fields": ["releaseDate", "description", "tokenPricing"]
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "title": "OpenAI API deprecations",
+      "fields": ["lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

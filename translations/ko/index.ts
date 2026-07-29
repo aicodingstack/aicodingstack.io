@@ -26,6 +26,7 @@ import manifesto from './pages/manifesto.json'
 import modelCompare from './pages/model-compare.json'
 import modelDetail from './pages/model-detail.json'
 import modelIntelligenceIndex from './pages/model-intelligence-index.json'
+import modelPriceIntelligenceIndex from './pages/model-price-intelligence-index.json'
 import modelProviders from './pages/model-providers.json'
 import models from './pages/models.json'
 import openSourceRank from './pages/open-source-rank.json'
@@ -54,6 +55,7 @@ export default {
     models,
     modelDetail,
     modelIntelligenceIndex,
+    modelPriceIntelligenceIndex,
     modelCompare,
     modelProviders,
     vendors,

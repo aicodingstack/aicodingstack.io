@@ -42,7 +42,11 @@
   "websiteUrl": "https://cursor.com/cli",
   "docsUrl": "https://cursor.com/docs/cli/overview",
   "vendor": "Anysphere",
-  "latestVersion": "2025.11.25-e276529",
+  "latestVersion": "2026.07.23-e383d2b",
+  "releaseTracking": {
+    "provider": "homebrew-cask",
+    "identifier": "cursor-cli"
+  },
   "githubUrl": "https://github.com/cursor/cursor",
   "license": "Proprietary",
   "pricing": [
@@ -129,6 +133,38 @@
       "installPath": null,
       "installCommand": "curl https://cursor.com/install -fsS | bash",
       "launchCommand": "cursor-agent"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/company/cursorai",
+      "title": "Cursor CLI linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/cursor_ai",
+      "title": "Cursor CLI twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://github.com/cursor",
+      "title": "Cursor CLI github community",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.youtube.com/@cursor_ai",
+      "title": "Cursor CLI youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://www.reddit.com/r/cursor",
+      "title": "Cursor CLI reddit community",
+      "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://cursor.com/blog",
+      "title": "Cursor CLI blog community",
+      "fields": ["communityUrls.blog"]
     }
   ]
 }

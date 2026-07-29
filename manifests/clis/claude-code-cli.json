@@ -65,6 +65,41 @@
       "url": "https://code.claude.com/docs/en/mcp",
       "title": "Claude Code MCP documentation",
       "fields": ["description", "resourceUrls.mcp"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/anthropicresearch",
+      "title": "Claude Code linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/claudeai",
+      "title": "Claude Code twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code",
+      "title": "Claude Code github community",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.youtube.com/@anthropic-ai",
+      "title": "Claude Code youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://anthropic.com/discord",
+      "title": "Claude Code discord community",
+      "fields": ["communityUrls.discord"]
+    },
+    {
+      "url": "https://www.reddit.com/r/ClaudeCode",
+      "title": "Claude Code reddit community",
+      "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://www.claude.com/blog",
+      "title": "Claude Code blog community",
+      "fields": ["communityUrls.blog"]
     }
   ],
   "lastVerifiedAt": "2026-07-19",
@@ -73,7 +108,11 @@
   "websiteUrl": "https://code.claude.com",
   "docsUrl": "https://code.claude.com/docs",
   "vendor": "Anthropic",
-  "latestVersion": "2.1.215",
+  "latestVersion": "2.1.220",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "@anthropic-ai/claude-code"
+  },
   "githubUrl": "https://github.com/anthropics/claude-code",
   "license": "Proprietary",
   "pricing": [
@@ -137,7 +176,10 @@
     "blog": "https://www.claude.com/blog"
   },
   "relatedProducts": [
-    { "type": "desktop", "productId": "claude-code-desktop" },
+    {
+      "type": "desktop",
+      "productId": "claude-code-desktop"
+    },
     {
       "type": "extension",
       "productId": "claude-code"

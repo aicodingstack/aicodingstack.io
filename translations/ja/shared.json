@@ -53,7 +53,7 @@
       "ides": "IDE",
       "modelProviders": "モデルプロバイダー",
       "models": "モデル",
-      "providers": "Providers",
+      "providers": "プロバイダー",
       "vendors": "ベンダー"
     },
     "singular": {
@@ -71,18 +71,18 @@
     "cache": "Cache",
     "findOnAiPlatforms": "AIプラットフォームで探す",
     "getApiKey": "APIキーを取得",
-    "input": "Input",
+    "input": "入力",
     "name": "名前",
-    "output": "Output",
+    "output": "出力",
     "quickLinks": "クイックリンク",
-    "searchByName": "Search by name...",
+    "searchByName": "名前で検索...",
     "specifications": "仕様",
-    "totalContext": "Total Context"
+    "totalContext": "総コンテキスト"
   },
   "lifecycle": {
     "deprecated": "非推奨",
-    "latest": "Latest",
-    "maintained": "Maintained"
+    "latest": "最新",
+    "maintained": "メンテナンス中"
   },
   "modelPricing": {
     "cacheRead": "キャッシュ読み取り",
@@ -129,11 +129,12 @@
     "aiCodingStack": "AI Coding Stack",
     "articles": "記事",
     "benchmarks": "ベンチマーク",
+    "by": "開発元",
     "collections": "コレクション",
     "community": "コミュニティ",
     "communityLinks": "コミュニティリンク",
     "comparison": "比較",
-    "contextWindow": "ContextWindow",
+    "contextWindow": "コンテキストウィンドウ",
     "curatedCollections": "キュレートされたコレクション",
     "docs": "ドキュメント",
     "documentation": "ドキュメント",
@@ -142,7 +143,7 @@
     "faq": "FAQ",
     "featuredArticles": "注目記事",
     "followUs": "フォローする",
-    "indexLabel": "INDEX",
+    "indexLabel": "インデックス",
     "landscapeDescription": "AIコーディングエコシステム全体を可視化",
     "landscapeTitle": "AIコーディングランドスケープ",
     "license": "ライセンス",

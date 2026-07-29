@@ -37,11 +37,49 @@
           "required": ["light", "dark"],
           "additionalProperties": false
         },
+        "modelSeries": {
+          "type": "array",
+          "description": "Curated model product lines in display-priority order. Each catalog model ID may belong to at most one series for this vendor.",
+          "items": {
+            "$ref": "#/$defs/modelSeries"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
         "communityUrls": {
           "$ref": "./ref/community-urls.schema.json"
         }
       },
       "required": ["communityUrls"]
     }
-  ]
+  ],
+  "$defs": {
+    "modelSeries": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable vendor-scoped identifier for the model product line",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "name": {
+          "type": "string",
+          "description": "Reader-facing product-line name",
+          "minLength": 1
+        },
+        "modelIds": {
+          "type": "array",
+          "description": "Catalog model IDs assigned to this product line",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": ["id", "name", "modelIds"],
+      "additionalProperties": false
+    }
+  }
 }

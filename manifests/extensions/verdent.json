@@ -72,9 +72,9 @@
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/verdent",
     "twitter": "https://x.com/verdent",
-    "github": "https://github.com/verdentAI",
+    "github": null,
     "youtube": null,
-    "discord": "https://discord.gg/NGjXEZcbJq",
+    "discord": null,
     "reddit": null,
     "blog": null
   },
@@ -89,6 +89,18 @@
       "ideId": "vscode",
       "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=VerdentAI.verdent",
       "installUri": "vscode:extension/VerdentAI.verdent"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/company/verdent",
+      "title": "Verdent linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/verdent",
+      "title": "Verdent twitter community",
+      "fields": ["communityUrls.twitter"]
     }
   ]
 }

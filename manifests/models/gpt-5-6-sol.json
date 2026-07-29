@@ -52,7 +52,12 @@
         "inputModalities",
         "outputModalities",
         "capabilities"
-      ]
+      ],
+      "changeTracking": {
+        "method": "normalized-content-sha256",
+        "digest": "sha256:a8689d63a32710a7b7c1ecb3b7898d57820ce6de6a68f5bec671e606685af349",
+        "observedAt": "2026-07-28"
+      }
     },
     {
       "url": "https://openai.com/index/gpt-5-6",

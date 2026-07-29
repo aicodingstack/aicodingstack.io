@@ -51,15 +51,30 @@
         "contextWindow",
         "capabilities",
         "inputModalities"
-      ]
+      ],
+      "changeTracking": {
+        "method": "normalized-content-sha256",
+        "digest": "sha256:1d3b2eb8b5a808acf23c0f5183039c4fd5056eca009e35c4a896a3661a82c108",
+        "observedAt": "2026-07-28"
+      }
     },
     {
       "url": "https://help.aliyun.com/en/model-studio/model-pricing",
       "title": "Alibaba Cloud Model Studio model pricing",
-      "fields": ["docsUrl", "contextWindow", "tokenPricing"]
+      "fields": ["docsUrl", "contextWindow", "tokenPricing"],
+      "changeTracking": {
+        "method": "normalized-content-sha256",
+        "digest": "sha256:ea84e2dc7741e6a43646a6c2576e6c78384434821fac0d1774a79993cbc85023",
+        "observedAt": "2026-07-28"
+      }
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/qwen3-7-max",
+      "title": "Artificial Analysis Qwen3.7 Max model page",
+      "fields": ["referenceTokenPricing", "platformUrls.artificialAnalysis"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-28",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://qwen.ai",
@@ -93,6 +108,21 @@
       }
     ]
   },
+  "referenceTokenPricing": {
+    "currency": "USD",
+    "basis": "first-party-api",
+    "rates": {
+      "input": 2.5,
+      "output": 7.5,
+      "cacheRead": 0.25,
+      "cacheWrite": 3.125
+    },
+    "source": {
+      "name": "Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/qwen3-7-max",
+      "observedAt": "2026-07-28"
+    }
+  },
   "releaseDate": "2026-05-21",
   "lifecycle": "latest",
   "knowledgeCutoff": null,
@@ -108,5 +138,9 @@
     "sciCode": null,
     "liveCodeBench": null
   },
-  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-7-max",
+    "openrouter": null
+  }
 }
