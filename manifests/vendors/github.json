@@ -38,7 +38,47 @@
       "description": "AI 驅動的開發者平台，讓數百萬開發者能夠協作編寫程式碼，從規劃到部署，內建安全和自動化功能。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://github.com/about/",
+      "title": "About GitHub",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/github",
+      "title": "GitHub official organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/github",
+      "title": "GitHub linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/github",
+      "title": "GitHub twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.youtube.com/@github",
+      "title": "GitHub youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://discord.com/invite/github",
+      "title": "GitHub discord community",
+      "fields": ["communityUrls.discord"]
+    },
+    {
+      "url": "https://github.blog",
+      "title": "GitHub blog community",
+      "fields": ["communityUrls.blog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://github.com",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/github",

@@ -1,16 +1,16 @@
 {
   "articles": {
-    "description": "Must-read articles about AI coding from industry leaders"
+    "description": "Sektör liderlerinden yapay zekâ destekli kodlama hakkında okunması gereken makaleler"
   },
   "meta": {
-    "description": "Handpicked resources, specifications, protocols, and tools for AI coding. Featured articles, standards, and ecosystem utilities.",
-    "title": "Curated Collections - Essential AI Coding Resources"
+    "description": "Yapay zekâ destekli kodlama için özenle seçilmiş kaynaklar, teknik özellikler, protokoller ve araçlar. Öne çıkan makaleler, standartlar ve ekosistem yardımcı araçları.",
+    "title": "Seçilmiş Koleksiyonlar - Yapay Zekâ Destekli Kodlama için Temel Kaynaklar"
   },
   "specifications": {
-    "description": "Essential standards and protocols for modern software development"
+    "description": "Modern yazılım geliştirme için temel standartlar ve protokoller"
   },
-  "subtitle": "Handpicked resources, specifications, protocols, and tools for AI coding",
+  "subtitle": "Yapay zekâ destekli kodlama için özenle seçilmiş kaynaklar, teknik özellikler, protokoller ve araçlar",
   "tools": {
-    "description": "Curated tools and utilities for AI coding workflows"
+    "description": "Yapay zekâ destekli kodlama iş akışları için seçilmiş araçlar ve yardımcı programlar"
   }
 }

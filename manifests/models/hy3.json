@@ -1,0 +1,119 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "hy3",
+  "name": "Hy3",
+  "description": "Tencent's open-weight MoE language model for reasoning, coding, tool use, and long-horizon agent tasks, with 295B parameters and a 256K context window.",
+  "translations": {
+    "de": {
+      "description": "Tencents offenes MoE-Sprachmodell für Schlussfolgern, Coding, Werkzeugnutzung und langfristige Agentenaufgaben mit 295B Parametern und 256K Kontext."
+    },
+    "es": {
+      "description": "Modelo de lenguaje MoE abierto de Tencent para razonamiento, programación, uso de herramientas y agentes prolongados, con 295B parámetros y contexto de 256K."
+    },
+    "fr": {
+      "description": "Modèle de langage MoE ouvert de Tencent pour le raisonnement, le codage, les outils et les agents de longue durée, avec 295B paramètres et un contexte de 256K."
+    },
+    "id": {
+      "description": "Model bahasa MoE berbobot terbuka Tencent untuk penalaran, coding, penggunaan alat, dan tugas agen jangka panjang, dengan 295B parameter dan konteks 256K."
+    },
+    "ja": {
+      "description": "推論、コーディング、ツール利用、長期エージェントタスクに対応するTencentの295BオープンウェイトMoE言語モデル。256Kコンテキストを備える。"
+    },
+    "ko": {
+      "description": "추론, 코딩, 도구 사용과 장기 에이전트 작업을 위한 Tencent의 295B 오픈 웨이트 MoE 언어 모델로, 256K 컨텍스트를 제공합니다."
+    },
+    "pt": {
+      "description": "Modelo de linguagem MoE aberto da Tencent para raciocínio, programação, uso de ferramentas e agentes prolongados, com 295B parâmetros e contexto de 256K."
+    },
+    "ru": {
+      "description": "MoE-модель Tencent с открытыми весами и 295 млрд параметров для рассуждений, программирования, инструментов и длительных агентных задач с контекстом 256K."
+    },
+    "tr": {
+      "description": "Akıl yürütme, kodlama, araç kullanımı ve uzun süreli aracı görevler için Tencent'in 295B açık ağırlıklı MoE dil modeli; 256K bağlam sunar."
+    },
+    "zh-Hans": {
+      "description": "Tencent 面向推理、编程、工具使用和长周期智能体任务的 295B 开放权重 MoE 语言模型，提供 256K 上下文。"
+    },
+    "zh-Hant": {
+      "description": "Tencent 面向推理、程式設計、工具使用和長週期智慧體任務的 295B 開放權重 MoE 語言模型，提供 256K 上下文。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://huggingface.co/tencent/Hy3",
+      "title": "Tencent Hy3 official model card",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "platformUrls.huggingface"
+      ]
+    },
+    {
+      "url": "https://www.tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/",
+      "title": "Tencent Hy3 official release announcement",
+      "fields": ["description", "releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/hy3",
+      "title": "Artificial Analysis Hy3 model page",
+      "fields": ["releaseDate", "referenceTokenPricing", "platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.tencent.com",
+  "docsUrl": "https://huggingface.co/tencent/Hy3",
+  "vendor": "Tencent",
+  "size": "295B + 3.8B MTP (21B active)",
+  "contextWindow": 262144,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "unavailable",
+    "reason": "official-price-not-published",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "referenceTokenPricing": {
+    "currency": "USD",
+    "basis": "provider-median",
+    "rates": {
+      "input": 0.14,
+      "output": 0.58,
+      "cacheRead": 0.035,
+      "cacheWrite": null
+    },
+    "source": {
+      "name": "Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/hy3",
+      "observedAt": "2026-07-28"
+    }
+  },
+  "releaseDate": "2026-07-06",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/tencent/Hy3",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/hy3",
+    "openrouter": null
+  }
+}

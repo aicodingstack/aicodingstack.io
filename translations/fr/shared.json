@@ -43,41 +43,41 @@
       "extensions": "All Extensions",
       "ides": "All IDEs",
       "modelProviders": "All Model Providers",
-      "models": "All Models",
+      "models": "Tous les modèles",
       "vendors": "All Vendors"
     },
     "plural": {
-      "clis": "CLIs",
-      "desktops": "Desktop",
+      "clis": "CLI",
+      "desktops": "Applications de bureau",
       "extensions": "Extensions",
-      "ides": "IDEs",
-      "modelProviders": "Model Providers",
-      "models": "Models",
-      "providers": "Providers",
-      "vendors": "Vendors"
+      "ides": "EDI",
+      "modelProviders": "Fournisseurs de modèles",
+      "models": "Modèles",
+      "providers": "Fournisseurs",
+      "vendors": "Éditeurs"
     },
     "singular": {
       "cli": "CLI",
       "desktop": "Desktop",
       "extension": "Extension",
       "ide": "IDE",
-      "model": "Model",
+      "model": "Modèle",
       "modelProvider": "Model Provider",
       "provider": "Provider",
-      "vendor": "Vendor"
+      "vendor": "Éditeur"
     }
   },
   "labels": {
     "cache": "Cache",
     "findOnAiPlatforms": "Trouver sur les plateformes IA",
     "getApiKey": "Obtenir la clé API",
-    "input": "Input",
+    "input": "Entrée",
     "name": "Nom",
-    "output": "Output",
+    "output": "Sortie",
     "quickLinks": "Liens rapides",
-    "searchByName": "Search by name...",
+    "searchByName": "Rechercher par nom...",
     "specifications": "Spécifications",
-    "totalContext": "Total Context"
+    "totalContext": "Contexte total"
   },
   "lifecycle": {
     "deprecated": "Obsolète",
@@ -129,11 +129,12 @@
     "aiCodingStack": "AI Coding Stack",
     "articles": "Articles",
     "benchmarks": "Bancs d'essai",
+    "by": "par",
     "collections": "Collections",
     "community": "Communauté",
     "communityLinks": "Liens de la communauté",
     "comparison": "Comparaison",
-    "contextWindow": "ContextWindow",
+    "contextWindow": "Fenêtre de contexte",
     "curatedCollections": "Collections sélectionnées",
     "docs": "Documentation",
     "documentation": "Documentation",
@@ -142,7 +143,7 @@
     "faq": "FAQ",
     "featuredArticles": "Articles en vedette",
     "followUs": "Suivez-nous",
-    "indexLabel": "INDEX",
+    "indexLabel": "Index",
     "landscapeDescription": "Visualisez l'écosystème complet de l'AI coding",
     "landscapeTitle": "Paysage AI Coding",
     "license": "Licence",

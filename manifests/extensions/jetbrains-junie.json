@@ -77,20 +77,37 @@
     "issue": "https://youtrack.jetbrains.com/issues"
   },
   "communityUrls": {
-    "linkedin": "https://www.linkedin.com/company/jetbrains",
-    "twitter": "https://x.com/jetbrains",
+    "linkedin": null,
+    "twitter": null,
     "github": null,
-    "youtube": "https://www.youtube.com/@JetBrainsTV",
+    "youtube": null,
     "discord": null,
     "reddit": "https://www.reddit.com/r/JetBrains",
     "blog": "https://blog.jetbrains.com/junie"
   },
-  "relatedProducts": [{ "type": "cli", "productId": "junie-cli" }],
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "junie-cli"
+    }
+  ],
   "supportedIdes": [
     {
       "ideId": "jetbrains",
       "marketplaceUrl": "https://plugins.jetbrains.com/plugin/26104-junie-the-ai-coding-agent-by-jetbrains",
       "installUri": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.reddit.com/r/JetBrains",
+      "title": "JetBrains Junie reddit community",
+      "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://blog.jetbrains.com/junie",
+      "title": "JetBrains Junie blog community",
+      "fields": ["communityUrls.blog"]
     }
   ]
 }

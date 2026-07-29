@@ -1,7 +1,16 @@
 {
   "context": "Konteks:",
+  "guide": {
+    "compareModels": "Bandingkan model berdampingan",
+    "description": "Bandingkan model coding berdasarkan jendela konteks, harga token, siklus hidup, dan penyedia. Gunakan perbandingan berdampingan untuk spesifikasi terperinci, lalu tinjau penyedia API untuk ketersediaan model.",
+    "exploreProviders": "Jelajahi penyedia model",
+    "title": "Cara membandingkan model coding AI"
+  },
   "lifecycle": {
     "noResults": "Tidak ada model {lifecycle} yang cocok dengan pencarian Anda"
+  },
+  "meta": {
+    "description": "Bandingkan model coding AI berdasarkan jendela konteks, harga token, siklus hidup, dan penyedia. Jelajahi LLM coding terkini dari pengembang model terkemuka."
   },
   "pricing": "Harga:",
   "size": "Ukuran:",

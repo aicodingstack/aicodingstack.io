@@ -57,7 +57,12 @@
         "inputModalities",
         "outputModalities",
         "capabilities"
-      ]
+      ],
+      "changeTracking": {
+        "method": "normalized-content-sha256",
+        "digest": "sha256:ce3ca747e8bec4e13b038be6f1c3ccfafc8a0ec7d70c12ccada9bb27c4fa9ed6",
+        "observedAt": "2026-07-28"
+      }
     }
   ],
   "lastVerifiedAt": "2026-07-21",

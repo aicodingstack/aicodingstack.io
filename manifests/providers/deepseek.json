@@ -50,12 +50,12 @@
     "openrouter": "https://openrouter.ai/provider/deepseek"
   },
   "communityUrls": {
-    "linkedin": "https://www.linkedin.com/company/deepseek-ai",
-    "twitter": "https://x.com/DeepSeekAI",
-    "github": "https://github.com/deepseek-ai",
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
     "youtube": null,
     "discord": null,
-    "reddit": "https://www.reddit.com/r/DeepSeekAI",
+    "reddit": null,
     "blog": null
   }
 }

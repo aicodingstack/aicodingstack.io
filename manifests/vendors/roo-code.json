@@ -2,44 +2,80 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "roo-code",
   "name": "Roo Code",
-  "description": "Open-source AI coding assistant providing a dev team of AI agents in VS Code with multi-file capabilities, model flexibility, and permission-based control.",
+  "description": "Roo Code was an open-source AI coding agent for editors; its extension was shut down and its official repository was archived on May 15, 2026.",
   "translations": {
     "zh-Hans": {
-      "description": "开源 AI 编码助手,在 VS Code 中提供 AI 智能体开发团队,具有多文件能力、模型灵活性和基于权限的控制。"
+      "description": "Roo Code 曾是一款面向编辑器的开源 AI 编码 Agent；其扩展已停止运营，官方仓库于 2026 年 5 月 15 日归档。"
     },
     "de": {
-      "description": "Open-Source-AI-Coding-Assistent mit einem Team von AI-Agenten in VS Code, Multi-Datei-Fähigkeiten und berechtigungsbasierter Kontrolle."
+      "description": "Roo Code war ein Open-Source-AI-Coding-Agent für Editoren; die Erweiterung wurde eingestellt und das offizielle Repository am 15. Mai 2026 archiviert."
     },
     "ko": {
-      "description": "VS Code에서 에이전트 개발 팀을 제공하는 오픈 소스 AI 코딩 어시스턴트로, 다중 파일 기능, 모델 유연성 및 권한 기반 제어를 갖추고 있습니다."
+      "description": "Roo Code는 편집기용 오픈 소스 AI 코딩 에이전트였으며, 확장 기능이 종료되고 공식 저장소가 2026년 5월 15일에 보관 처리되었습니다."
     },
     "es": {
-      "description": "Asistente de codificación IA de código abierto que proporciona un equipo de agentes de desarrollo en VS Code, con capacidades de múltiples archivos, flexibilidad de modelo y control basado en permi..."
+      "description": "Roo Code fue un agente de programación con IA de código abierto para editores; la extensión cerró y el repositorio oficial se archivó el 15 de mayo de 2026."
     },
     "fr": {
-      "description": "Assistant de codage IA open source fournissant une equipe d'agents de developpement dans VS Code, avec capacites de fichiers multiples, flexibilite de modele et controle base sur les permissions."
+      "description": "Roo Code était un agent de codage IA open source pour éditeurs ; son extension a fermé et son dépôt officiel a été archivé le 15 mai 2026."
     },
     "id": {
-      "description": "Asisten coding open-source yang menyediakan tim agent pengembangan di VS Code, dengan kemampuan multi-file, fleksibilitas model, dan kontrol berbasis izin."
+      "description": "Roo Code adalah agen coding AI open source untuk editor; ekstensi tersebut ditutup dan repositori resmi diarsipkan pada 15 Mei 2026."
     },
     "ja": {
-      "description": "VS CodeでAI開発エージェントチームを提供するオープンソースAIコーディングアシスタントで、マルチファイル機能、モデルの柔軟性、許可ベースの制御を備えています。"
+      "description": "Roo Codeはエディター向けのオープンソースAIコーディングエージェントでしたが、拡張機能は終了し、公式リポジトリは2026年5月15日にアーカイブされました。"
     },
     "pt": {
-      "description": "Assistente de codificação IA de código aberto que fornece uma equipe de agentes de desenvolvimento no VS Code, com capacidades de arquivos múltiplos, flexibilidade de modelo e controle baseado em p..."
+      "description": "Roo Code foi um agente de programação com IA de código aberto para editores; a extensão foi encerrada e o repositório oficial arquivado em 15 de maio de 2026."
     },
     "ru": {
-      "description": "Ассистент программирования ИИ с открытым исходным кодом, обеспечивающий команду агентов разработки в VS Code с возможностями работы с несколькими файлами, гибкостью модели и управлением на основе р..."
+      "description": "Roo Code был открытым ИИ-агентом программирования для редакторов; расширение закрыто, а официальный репозиторий архивирован 15 мая 2026 года."
     },
     "tr": {
-      "description": "VS Code'da bir AI geliştirme ekibi sağlayan açık kaynaklı AI kodlama asistanı, çoklu dosyet kapasitesi, model esnekliği ve izin tabanlı kontrol özelliklerine sahiptir."
+      "description": "Roo Code, editörler için açık kaynaklı bir AI kodlama ajanıydı; uzantısı kapatıldı ve resmi deposu 15 Mayıs 2026 tarihinde arşivlendi."
     },
     "zh-Hant": {
-      "description": "開源 AI 編碼助手，在 VS Code 中提供 AI 智能體開發團隊，具有多文件能力、模型靈活性和基於權限的控制。"
+      "description": "Roo Code 曾是一款面向編輯器的開源 AI 編碼 Agent；其擴充功能已停止營運，官方儲存庫於 2026 年 5 月 15 日封存。"
     }
   },
-  "verified": false,
-  "websiteUrl": "https://roocode.com",
+  "verified": true,
+  "deprecated": true,
+  "sources": [
+    {
+      "url": "https://github.com/RooCodeInc/Roo-Code",
+      "title": "Roo Code shutdown and archive notice",
+      "fields": ["name", "description", "deprecated", "websiteUrl", "communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/roo-code",
+      "title": "Roo Code linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/roocode",
+      "title": "Roo Code twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.youtube.com/@roocode",
+      "title": "Roo Code youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://discord.gg/roocode",
+      "title": "Roo Code discord community",
+      "fields": ["communityUrls.discord"]
+    },
+    {
+      "url": "https://www.reddit.com/r/roocode",
+      "title": "Roo Code reddit community",
+      "fields": ["communityUrls.reddit"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://github.com/RooCodeInc",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/roo-code",
     "twitter": "https://x.com/roocode",

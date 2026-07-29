@@ -39,6 +39,46 @@
     }
   },
   "verified": true,
+  "sources": [
+    {
+      "url": "https://www.siliconflow.com/products",
+      "title": "SiliconFlow products and services",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://docs.siliconflow.com/en/userguide/introduction",
+      "title": "SiliconFlow product introduction",
+      "fields": ["description"]
+    },
+    {
+      "url": "https://github.com/siliconflow",
+      "title": "SiliconFlow official GitHub organization",
+      "fields": [
+        "description",
+        "communityUrls.linkedin",
+        "communityUrls.twitter",
+        "communityUrls.github"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@SiliconFlowAI",
+      "title": "SiliconFlow youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://discord.com/invite/7Ey3dVNFpT",
+      "title": "SiliconFlow discord community",
+      "fields": ["communityUrls.discord"]
+    },
+    {
+      "url": "https://www.siliconflow.com/blog",
+      "title": "SiliconFlow blog community",
+      "fields": ["communityUrls.blog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://siliconflow.com",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/siliconflow",

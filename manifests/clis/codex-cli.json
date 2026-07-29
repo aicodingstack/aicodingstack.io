@@ -43,7 +43,11 @@
   "websiteUrl": "https://openai.com/codex",
   "docsUrl": "https://developers.openai.com/codex/cli",
   "vendor": "OpenAI",
-  "latestVersion": "0.44.0",
+  "latestVersion": "0.145.0",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "@openai/codex"
+  },
   "githubUrl": "https://github.com/openai/codex",
   "license": "Apache-2.0",
   "pricing": [
@@ -85,7 +89,7 @@
   },
   "communityUrls": {
     "linkedin": null,
-    "twitter": "https://x.com/OpenAI",
+    "twitter": null,
     "github": "https://github.com/openai/codex",
     "youtube": null,
     "discord": null,
@@ -93,8 +97,14 @@
     "blog": "https://openai.com/news"
   },
   "relatedProducts": [
-    { "type": "desktop", "productId": "codex-app" },
-    { "type": "extension", "productId": "codex" }
+    {
+      "type": "desktop",
+      "productId": "codex-app"
+    },
+    {
+      "type": "extension",
+      "productId": "codex"
+    }
   ],
   "platforms": [
     {
@@ -114,6 +124,18 @@
       "installCommand": "npm install -g @openai/codex",
       "launchCommand": "codex",
       "installPath": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/openai/codex",
+      "title": "Codex CLI github community",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://openai.com/news",
+      "title": "Codex CLI blog community",
+      "fields": ["communityUrls.blog"]
     }
   ]
 }

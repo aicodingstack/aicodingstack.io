@@ -1,31 +1,32 @@
 {
   "meta": {
-    "title": "모델 지능 지수",
-    "description": "코딩 모델의 지능 점수 변화를 공급업체 및 모델 계열별로 추적합니다.",
-    "keywords": "모델 지능 지수, AI 모델 타임라인, 코딩 모델 벤치마크, 모델 출시 이력"
+    "title": "모델 종합 지능 지수",
+    "description": "AI 모델의 종합 지능 점수 변화를 공급업체 및 모델 계열별로 추적합니다.",
+    "keywords": "모델 종합 지능 지수, AI 모델 타임라인, 종합 AI 벤치마크, 모델 출시 이력"
   },
-  "title": "모델 지능 지수",
-  "description": "출시 시점에 따른 코딩 모델 지능의 변화를 살펴보세요.",
+  "title": "모델 종합 지능 지수",
+  "description": "출시 시점에 따른 모델의 종합 지능 변화를 살펴보세요.",
   "releaseDate": "출시일",
   "chart": {
     "title": "시간에 따른 성능",
-    "axisHint": "출시일 × Index",
+    "axisHint": "출시일 × 지수",
     "modelCount": "카탈로그 모델 {count}개",
-    "indexAxis": "Intelligence Index"
+    "indexAxis": "종합 지능 지수"
   },
   "filter": {
     "label": "공급업체별 필터",
-    "showAll": "모두 표시"
+    "showAll": "모두 표시",
+    "seriesLabel": "시리즈별 필터"
   },
   "list": {
-    "title": "모델 인덱스",
-    "description": "모델을 출시일 또는 Index 점수로 정렬할 수 있습니다. 막대 길이는 동일한 척도를 사용합니다.",
-    "index": "Index",
-    "barLabel": "{model} Index: {score}"
+    "title": "모델 지수",
+    "description": "모델을 출시일 또는 지수 점수로 정렬할 수 있습니다. 막대 길이는 동일한 척도를 사용합니다.",
+    "index": "지수",
+    "barLabel": "{model} 지수: {score}"
   },
   "source": {
-    "attribution": "Artificial Analysis Intelligence Index v{version}, {date} 기준. 출처:",
-    "estimated": "*는 Artificial Analysis가 표시한 추정값입니다. 점수는 명시된 모델 구성에 해당합니다.",
+    "attribution": "Artificial Analysis 종합 지능 지수 v{version}, {date} 기준. 출처:",
+    "estimated": "*는 Artificial Analysis가 표시한 추정값입니다. 점수는 명시된 모델 구성과 종합 지능 지수에 해당하며 코딩 지수가 아닙니다.",
     "methodology": "평가 방법"
   }
 }

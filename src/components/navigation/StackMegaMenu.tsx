@@ -10,7 +10,7 @@ interface StackMegaMenuProps {
 }
 
 interface MenuItem {
-  name: string
+  translationKey: string
   href: string
 }
 
@@ -64,6 +64,8 @@ const MenuColumn = memo(function MenuColumn({
   onClose,
   tComponent,
 }: MenuColumn & { onClose: () => void; tComponent: ReturnType<typeof useTranslations> }) {
+  const tShared = useTranslations('shared')
+
   return (
     <div>
       <h4 className={columnTitleClass}>{tComponent(titleKey)}</h4>
@@ -71,7 +73,7 @@ const MenuColumn = memo(function MenuColumn({
         {items.map(item => (
           <li key={item.href}>
             <Link href={item.href} onClick={onClose} className={menuItemLinkClass}>
-              {item.name}
+              {tShared(item.translationKey)}
             </Link>
           </li>
         ))}
@@ -84,21 +86,21 @@ export const StackMegaMenu = memo(function StackMegaMenu({ isOpen, onClose }: St
   const tComponent = useTranslations('components.common.header')
   const tShared = useTranslations('shared')
 
-  // Memoize menu sections to avoid recreating on every render
+  // Keep translation keys stable, but resolve their values when the menu items render.
   const menuSections = useMemo(
     () => ({
       development: [
-        { name: tShared('categories.plural.ides'), href: '/ides' },
-        { name: tShared('categories.plural.clis'), href: '/clis' },
-        { name: tShared('categories.plural.desktops'), href: '/desktops' },
-        { name: tShared('categories.plural.extensions'), href: '/extensions' },
+        { translationKey: 'categories.plural.ides', href: '/ides' },
+        { translationKey: 'categories.plural.clis', href: '/clis' },
+        { translationKey: 'categories.plural.desktops', href: '/desktops' },
+        { translationKey: 'categories.plural.extensions', href: '/extensions' },
       ] as MenuItem[],
       intelligence: [
-        { name: tShared('categories.plural.models'), href: '/models' },
-        { name: tShared('categories.plural.modelProviders'), href: '/model-providers' },
+        { translationKey: 'categories.plural.models', href: '/models' },
+        { translationKey: 'categories.plural.modelProviders', href: '/model-providers' },
       ] as MenuItem[],
     }),
-    [tShared]
+    []
   )
 
   // Memoize featured links configuration

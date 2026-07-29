@@ -110,5 +110,32 @@
       "launchCommand": null,
       "installPath": null
     }
+  ],
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/company/google-antigravity",
+      "title": "Antigravity linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/antigravity",
+      "title": "Antigravity twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.youtube.com/@googleantigravity",
+      "title": "Antigravity youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://www.reddit.com/r/google_antigravity",
+      "title": "Antigravity reddit community",
+      "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://antigravity.google/blog",
+      "title": "Antigravity blog community",
+      "fields": ["communityUrls.blog"]
+    }
   ]
 }

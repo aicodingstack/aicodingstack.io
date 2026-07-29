@@ -2,43 +2,73 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "sourcegraph",
   "name": "Sourcegraph",
-  "description": "A code intelligence platform providing universal code search, navigation, and AI-powered development tools including the Amp coding agent.",
+  "description": "Sourcegraph provides code search, code intelligence, and agentic tools that help humans and AI agents understand and change large codebases.",
   "translations": {
     "zh-Hans": {
-      "description": "代码智能平台，提供通用代码搜索、导航和 AI 驱动的开发工具，包括 Amp 编码 Agent。"
+      "description": "Sourcegraph 提供代码搜索、代码智能和 Agent 工具，帮助人类和 AI Agent 理解并修改大型代码库。"
     },
     "de": {
-      "description": "Eine Code-Intelligenz-Plattform mit universeller Codesuche, Navigation und AI-gesteuerten Entwicklungstools einschließlich des Amp-Coding-Agenten."
+      "description": "Sourcegraph bietet Codesuche, Code-Intelligenz und agentische Werkzeuge, die Menschen und AI-Agenten beim Verstehen und Ändern großer Codebasen helfen."
     },
     "ko": {
-      "description": "범용 코드 검색, 탐색 및 AI 기반 개발 도구(Amp 코딩 에이전트 포함)를 제공하는 코드 인텔리전스 플랫폼입니다."
+      "description": "Sourcegraph는 사람과 AI 에이전트가 대규모 코드베이스를 이해하고 변경하도록 돕는 코드 검색, 코드 인텔리전스 및 에이전트 도구를 제공합니다."
     },
     "es": {
-      "description": "Plataforma de inteligencia de codigo que proporciona busqueda universal de codigo, navegacion y herramientas de desarrollo impulsadas por IA, incluido el agente de codificacion Amp."
+      "description": "Sourcegraph ofrece búsqueda e inteligencia de código y herramientas agénticas para que personas y agentes de IA comprendan y cambien grandes bases de código."
     },
     "fr": {
-      "description": "Plateforme d'intelligence de code offrant une recherche universelle de code, une navigation et des outils de developpement alimentes par IA, incluant l'agent de codage Amp."
+      "description": "Sourcegraph fournit recherche et intelligence de code ainsi que des outils agentiques pour comprendre et modifier de grandes bases de code."
     },
     "id": {
-      "description": "Platform kecerdasan kode yang menyediakan pencarian kode universal, navigasi, dan tools pengembangan bertenaga AI, termasuk agen coding Amp."
+      "description": "Sourcegraph menyediakan pencarian kode, kecerdasan kode, dan alat agentik yang membantu manusia dan agen AI memahami serta mengubah basis kode besar."
     },
     "ja": {
-      "description": "汎用的なコード検索、ナビゲーション、AI駆動の開発ツール（Ampコーディングエージェントを含む）を提供するコードインテリジェンスプラットフォーム。"
+      "description": "Sourcegraphは、人間とAIエージェントが大規模なコードベースを理解して変更できるよう、コード検索、コードインテリジェンス、エージェントツールを提供します。"
     },
     "pt": {
-      "description": "Plataforma de inteligencia de codigo que fornece busca universal de codigo, navegacao e ferramentas de desenvolvimento impulsionadas por IA, incluindo o agente de codificacao Amp."
+      "description": "A Sourcegraph oferece busca e inteligência de código e ferramentas agênticas para ajudar pessoas e agentes de IA a entender e alterar grandes bases de código."
     },
     "ru": {
-      "description": "Платформа кодовой разведки, обеспечивающая универсальный поиск кода, навигацию и инструменты разработки на базе ИИ, включая агент кодирования Amp."
+      "description": "Sourcegraph предоставляет поиск и анализ кода, а также агентные инструменты, помогающие людям и ИИ-агентам понимать и изменять большие кодовые базы."
     },
     "tr": {
-      "description": "Amp kodlama aracı dahil olmak üzere evrensel kod araması, gezinme ve AI destekli geliştirme araçları sunan bir kod zeka platformu."
+      "description": "Sourcegraph, insanların ve AI ajanlarının büyük kod tabanlarını anlamasına ve değiştirmesine yardımcı olan kod arama, kod zekâsı ve ajan araçları sunar."
     },
     "zh-Hant": {
-      "description": "代碼智能平台，提供通用代碼搜索、導航和 AI 驅動的開發工具，包括 Amp 編碼 Agent。"
+      "description": "Sourcegraph 提供程式碼搜尋、程式碼智慧和 Agent 工具，協助人類和 AI Agent 理解並修改大型程式碼庫。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://sourcegraph.com/",
+      "title": "Sourcegraph official site",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/sourcegraph",
+      "title": "Sourcegraph verified GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/sourcegraph",
+      "title": "Sourcegraph linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/sourcegraph",
+      "title": "Sourcegraph twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.youtube.com/@sourcegraph",
+      "title": "Sourcegraph youtube community",
+      "fields": ["communityUrls.youtube"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://sourcegraph.com",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/sourcegraph",

@@ -42,7 +42,11 @@
   "websiteUrl": "https://github.com/features/copilot/cli",
   "docsUrl": "https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli",
   "vendor": "GitHub",
-  "latestVersion": "0.0.365",
+  "latestVersion": "1.0.75",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "@github/copilot"
+  },
   "githubUrl": "https://github.com/github/copilot-cli",
   "license": "Proprietary",
   "pricing": [
@@ -91,12 +95,12 @@
   },
   "communityUrls": {
     "linkedin": null,
-    "twitter": "https://x.com/github",
+    "twitter": null,
     "github": "https://github.com/github/copilot-cli",
-    "youtube": "https://www.youtube.com/@github",
+    "youtube": null,
     "discord": null,
     "reddit": null,
-    "blog": "https://github.blog"
+    "blog": null
   },
   "relatedProducts": [],
   "platforms": [
@@ -117,6 +121,13 @@
       "installCommand": "npm install -g @github/copilot",
       "launchCommand": "copilot",
       "installPath": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/github/copilot-cli",
+      "title": "GitHub Copilot CLI github community",
+      "fields": ["communityUrls.github"]
     }
   ]
 }

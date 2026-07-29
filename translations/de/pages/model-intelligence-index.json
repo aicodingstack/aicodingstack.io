@@ -1,31 +1,32 @@
 {
   "meta": {
-    "title": "Modellintelligenz-Index",
-    "description": "Verfolgen Sie die Intelligenzwerte von Coding-Modellen im Zeitverlauf, gruppiert nach Anbieter und Modellreihe.",
-    "keywords": "Modellintelligenz-Index, Zeitleiste für KI-Modelle, Benchmarks für Coding-Modelle, Veröffentlichungshistorie"
+    "title": "Umfassender Modellintelligenz-Index",
+    "description": "Verfolgen Sie umfassende Intelligenzwerte von KI-Modellen im Zeitverlauf, gruppiert nach Anbieter und Modellreihe.",
+    "keywords": "umfassender Modellintelligenz-Index, Zeitleiste für KI-Modelle, umfassende KI-Benchmarks, Veröffentlichungshistorie"
   },
-  "title": "Modellintelligenz-Index",
-  "description": "Entdecken Sie, wie sich die Intelligenz von Coding-Modellen über ihre Veröffentlichungen hinweg verändert.",
+  "title": "Umfassender Modellintelligenz-Index",
+  "description": "Entdecken Sie, wie sich die umfassende Intelligenz von Modellen über ihre Veröffentlichungen hinweg verändert.",
   "releaseDate": "Veröffentlichungsdatum",
   "chart": {
     "title": "Leistungsfähigkeit im Zeitverlauf",
     "axisHint": "Veröffentlichungsdatum × Index",
     "modelCount": "{count} Modelle im Katalog",
-    "indexAxis": "Intelligence Index"
+    "indexAxis": "Intelligenzindex"
   },
   "filter": {
     "label": "Nach Anbieter filtern",
-    "showAll": "Alle anzeigen"
+    "showAll": "Alle anzeigen",
+    "seriesLabel": "Nach Serie filtern"
   },
   "list": {
     "title": "Modellindex",
     "description": "Sortieren Sie Modelle nach Veröffentlichungsdatum oder Indexwert. Die Balkenlängen verwenden dieselbe Skala.",
     "index": "Index",
-    "barLabel": "{model} Index: {score}"
+    "barLabel": "{model}-Index: {score}"
   },
   "source": {
-    "attribution": "Artificial Analysis Intelligence Index v{version}, abgerufen am {date}. Quelle:",
-    "estimated": "* kennzeichnet von Artificial Analysis ausgewiesene Schätzwerte. Die Werte gelten für die angegebene Modellkonfiguration.",
+    "attribution": "Artificial Analysis Intelligenzindex v{version}, abgerufen am {date}. Quelle:",
+    "estimated": "* kennzeichnet von Artificial Analysis ausgewiesene Schätzwerte. Die Werte gelten für die angegebene Modellkonfiguration und den zusammengesetzten Intelligenzindex, nicht den Coding-Index.",
     "methodology": "Methodik"
   }
 }

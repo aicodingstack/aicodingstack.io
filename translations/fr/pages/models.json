@@ -1,7 +1,16 @@
 {
   "context": "Contexte :",
+  "guide": {
+    "compareModels": "Comparer les modèles côte à côte",
+    "description": "Comparez les modèles de codage selon la fenêtre de contexte, le prix des jetons, le cycle de vie et le fournisseur. Utilisez la comparaison côte à côte pour les spécifications détaillées, puis consultez les fournisseurs d’API pour connaître la disponibilité.",
+    "exploreProviders": "Explorer les fournisseurs de modèles",
+    "title": "Comment comparer les modèles de codage IA"
+  },
   "lifecycle": {
     "noResults": "Aucun modèle {lifecycle} ne correspond à votre recherche"
+  },
+  "meta": {
+    "description": "Comparez les modèles de codage IA par fenêtre de contexte, prix des jetons, cycle de vie et fournisseur. Explorez les LLM de code actuels des principaux développeurs."
   },
   "pricing": "Tarifs :",
   "size": "Taille :",

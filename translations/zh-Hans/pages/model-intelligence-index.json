@@ -1,31 +1,32 @@
 {
   "meta": {
-    "title": "模型智能指数",
-    "description": "按厂商和模型系列追踪 Coding 模型智能指数随时间的变化。",
-    "keywords": "模型智能指数, AI 模型时间线, Coding 模型基准, 模型发布历史"
+    "title": "模型综合智能指数",
+    "description": "按厂商和模型系列追踪 AI 模型综合智能指数随时间的变化。",
+    "keywords": "模型综合智能指数, AI 模型时间线, AI 综合基准, 模型发布历史"
   },
-  "title": "模型智能指数",
-  "description": "查看 Coding 模型智能指数随发布时间的变化。",
+  "title": "模型综合智能指数",
+  "description": "查看 AI 模型综合智能指数随发布时间的变化。",
   "releaseDate": "发布时间",
   "chart": {
     "title": "能力随时间的变化",
-    "axisHint": "发布时间 × Index",
+    "axisHint": "发布时间 × 指数",
     "modelCount": "目录中的 {count} 个模型",
-    "indexAxis": "Intelligence Index"
+    "indexAxis": "智能指数"
   },
   "filter": {
     "label": "按厂商筛选",
-    "showAll": "显示全部"
+    "showAll": "显示全部",
+    "seriesLabel": "按系列筛选"
   },
   "list": {
-    "title": "模型 Index",
-    "description": "可按发布时间或 Index 值排序，条形长度使用相同比例。",
-    "index": "Index",
-    "barLabel": "{model} 的 Index：{score}"
+    "title": "模型指数",
+    "description": "可按发布时间或指数值排序，条形长度使用相同比例。",
+    "index": "指数",
+    "barLabel": "{model} 的指数：{score}"
   },
   "source": {
-    "attribution": "Artificial Analysis Intelligence Index v{version}，数据观察于 {date}。来源：",
-    "estimated": "* 表示 Artificial Analysis 标记的估算值；分数对应列表中注明的模型配置。",
+    "attribution": "Artificial Analysis 智能指数 v{version}，数据观察于 {date}。来源：",
+    "estimated": "* 表示 Artificial Analysis 标记的估算值；分数对应列表中注明的模型配置和综合智能指数，而不是编程指数。",
     "methodology": "查看方法说明"
   }
 }

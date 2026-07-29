@@ -39,18 +39,30 @@
       "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://anoma.ly",
-      "title": "Anomaly official site"
+      "title": "Anomaly official site",
+      "fields": ["name", "description", "websiteUrl"]
     },
     {
       "url": "https://github.com/anomalyco",
-      "title": "Anomaly GitHub organization"
+      "title": "Anomaly GitHub organization",
+      "fields": ["description", "communityUrls.github"]
+    },
+    {
+      "url": "https://x.com/opencode",
+      "title": "Anomaly twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://discord.gg/opencode",
+      "title": "Anomaly discord community",
+      "fields": ["communityUrls.discord"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-28",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://anoma.ly",

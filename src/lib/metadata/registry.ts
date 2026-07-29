@@ -79,6 +79,10 @@ export const PAGE_REGISTRY: Record<string, PageMetadataConfig> = {
     generatorType: 'static',
     pageType: 'static',
   },
+  '/model-price-intelligence-index': {
+    generatorType: 'static',
+    pageType: 'static',
+  },
   '/curated-collections': {
     generatorType: 'static',
     pageType: 'static',

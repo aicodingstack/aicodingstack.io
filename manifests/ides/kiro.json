@@ -118,5 +118,17 @@
       "launchCommand": "kiro",
       "installPath": null
     }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/kirodotdev/Kiro",
+      "title": "Kiro github community",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://kiro.dev/blog",
+      "title": "Kiro blog community",
+      "fields": ["communityUrls.blog"]
+    }
   ]
 }

@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Model Price × Intelligence",
+    "description": "Compare mainstream AI models by API token price and Intelligence Index score.",
+    "keywords": "AI model price comparison, model intelligence, LLM API pricing, price performance"
+  },
+  "title": "Model Price × Intelligence",
+  "description": "See how mainstream models compare on API price and intelligence capability.",
+  "chart": {
+    "title": "Capability at every price",
+    "axisHint": "Blended API price × Intelligence Index",
+    "modelCount": "{count} selected models",
+    "priceAxis": "USD per 1M tokens · 90% input + 10% output",
+    "indexAxis": "Intelligence Index",
+    "scale": {
+      "label": "Price scale",
+      "linear": "Linear",
+      "logarithmic": "Logarithmic"
+    }
+  },
+  "filter": {
+    "label": "Filter by vendor",
+    "showAll": "Show all"
+  },
+  "list": {
+    "title": "Selected models",
+    "description": "Comparable USD API pricing per million tokens. Sort by blended price or Intelligence Index.",
+    "blended": "Blended price",
+    "priceUnit": "USD / 1M tokens",
+    "index": "Index"
+  },
+  "source": {
+    "attribution": "Artificial Analysis Intelligence Index v{version}, observed {date}. Source:",
+    "pricing": "Prices use the catalog's official API sources; where no comparable first-party USD price is available, they are supplemented by comparable API offers tracked by Artificial Analysis. Blended price weights input at {input}% and output at {output}%; cache discounts are excluded.",
+    "methodology": "Intelligence methodology",
+    "fallbackPricingSources": "Supplemental price sources:"
+  }
+}

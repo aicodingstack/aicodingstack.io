@@ -43,46 +43,46 @@
       "extensions": "All Extensions",
       "ides": "All IDEs",
       "modelProviders": "All Model Providers",
-      "models": "All Models",
+      "models": "모든 모델",
       "vendors": "All Vendors"
     },
     "plural": {
-      "clis": "CLIs",
-      "desktops": "Desktop",
-      "extensions": "Extensions",
-      "ides": "IDEs",
-      "modelProviders": "Model Providers",
-      "models": "Models",
-      "providers": "Providers",
-      "vendors": "Vendors"
+      "clis": "CLI",
+      "desktops": "데스크톱 앱",
+      "extensions": "확장 프로그램",
+      "ides": "IDE",
+      "modelProviders": "모델 제공업체",
+      "models": "모델",
+      "providers": "제공업체",
+      "vendors": "공급업체"
     },
     "singular": {
       "cli": "CLI",
       "desktop": "Desktop",
       "extension": "Extension",
       "ide": "IDE",
-      "model": "Model",
+      "model": "모델",
       "modelProvider": "Model Provider",
       "provider": "Provider",
-      "vendor": "Vendor"
+      "vendor": "공급업체"
     }
   },
   "labels": {
     "cache": "Cache",
     "findOnAiPlatforms": "AI 플랫폼에서 찾기",
     "getApiKey": "API 키 얻기",
-    "input": "Input",
+    "input": "입력",
     "name": "이름",
-    "output": "Output",
+    "output": "출력",
     "quickLinks": "빠른 링크",
-    "searchByName": "Search by name...",
+    "searchByName": "이름으로 검색...",
     "specifications": "사양",
-    "totalContext": "Total Context"
+    "totalContext": "전체 컨텍스트"
   },
   "lifecycle": {
     "deprecated": "사용 중단",
-    "latest": "Latest",
-    "maintained": "Maintained"
+    "latest": "최신",
+    "maintained": "유지 관리 중"
   },
   "modelPricing": {
     "cacheRead": "캐시 읽기",
@@ -129,20 +129,21 @@
     "aiCodingStack": "AI Coding Stack",
     "articles": "기사",
     "benchmarks": "벤치마크",
+    "by": "제작",
     "collections": "컬렉션",
     "community": "커뮤니티",
     "communityLinks": "커뮤니티 링크",
     "comparison": "비교",
-    "contextWindow": "ContextWindow",
+    "contextWindow": "컨텍스트 창",
     "curatedCollections": "선별된 컬렉션",
-    "docs": "Docs",
+    "docs": "문서",
     "documentation": "문서",
     "ecosystemSubtitle": "전체 AI 코딩 생태계 탐색: IDE, CLI, 확장, 모델 및 공급자.",
     "ecosystemTools": "생태계 도구",
     "faq": "FAQ",
     "featuredArticles": "추천 기사",
     "followUs": "팔로우하기",
-    "indexLabel": "INDEX",
+    "indexLabel": "색인",
     "landscapeDescription": "전체 AI 코딩 생태계 시각화",
     "landscapeTitle": "AI 코딩 랜드스케이프",
     "license": "라이선스",

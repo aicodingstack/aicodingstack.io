@@ -60,7 +60,12 @@
     {
       "url": "https://api-docs.deepseek.com/quick_start/pricing",
       "title": "DeepSeek API pricing",
-      "fields": ["tokenPricing"]
+      "fields": ["tokenPricing"],
+      "changeTracking": {
+        "method": "normalized-content-sha256",
+        "digest": "sha256:d1c1fc8b58ad75475827f978beac79318391da95b942891f47a8aafe811712ba",
+        "observedAt": "2026-07-28"
+      }
     }
   ],
   "lastVerifiedAt": "2026-07-21",

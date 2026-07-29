@@ -7,6 +7,25 @@
     "light": "#6E5AE6",
     "dark": "#6E5AE6"
   },
+  "modelSeries": [
+    {
+      "id": "kimi",
+      "name": "Kimi",
+      "modelIds": [
+        "kimi-k2-instruct",
+        "kimi-k2-0905",
+        "kimi-k2-thinking",
+        "kimi-k2-5",
+        "kimi-k2-6",
+        "kimi-k3"
+      ]
+    },
+    {
+      "id": "kimi-code",
+      "name": "Kimi Code",
+      "modelIds": ["kimi-k2-7-code"]
+    }
+  ],
   "description": "An AI company specializing in large language models and intelligent applications, known for the Kimi AI assistant.",
   "translations": {
     "zh-Hans": {
@@ -43,7 +62,27 @@
       "description": "專注於大型語言模型和智能應用的 AI 公司，以 Kimi AI 助手而聞名。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.moonshot.ai/about",
+      "title": "About Moonshot AI",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/moonshotai",
+      "title": "Moonshot AI official GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://x.com/MoonshotAI",
+      "title": "Moonshot AI twitter community",
+      "fields": ["communityUrls.twitter"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.moonshot.ai",
   "communityUrls": {
     "linkedin": null,

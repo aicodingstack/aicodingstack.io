@@ -1,0 +1,108 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gemma-4-31b",
+  "name": "Gemma 4 31B",
+  "description": "Google DeepMind's open-weight 31B multimodal model for reasoning, coding, visual understanding, function calling, and agentic workflows with 256K context.",
+  "translations": {
+    "de": {
+      "description": "Google DeepMinds offenes multimodales 31B-Modell für Schlussfolgern, Coding, visuelles Verstehen, Funktionsaufrufe und agentische Abläufe mit 256K Kontext."
+    },
+    "es": {
+      "description": "Modelo multimodal abierto de Google DeepMind con 31B parámetros para razonamiento, programación, visión, llamadas a funciones y agentes con contexto de 256K."
+    },
+    "fr": {
+      "description": "Modèle multimodal ouvert de Google DeepMind à 31B paramètres pour le raisonnement, le codage, la vision, l’appel de fonctions et les agents avec un contexte de 256K."
+    },
+    "id": {
+      "description": "Model multimodal berbobot terbuka Google DeepMind dengan 31B parameter untuk penalaran, coding, pemahaman visual, pemanggilan fungsi, dan agen dengan konteks 256K."
+    },
+    "ja": {
+      "description": "推論、コーディング、視覚理解、関数呼び出し、エージェントワークフローに対応し、256K文脈を備えるGoogle DeepMindの31Bオープンウェイトモデル。"
+    },
+    "ko": {
+      "description": "추론, 코딩, 시각 이해, 함수 호출과 에이전트 워크플로를 지원하고 256K 컨텍스트를 제공하는 Google DeepMind의 31B 오픈 웨이트 멀티모달 모델입니다."
+    },
+    "pt": {
+      "description": "Modelo multimodal aberto do Google DeepMind com 31B parâmetros para raciocínio, programação, visão, chamadas de função e agentes com contexto de 256K."
+    },
+    "ru": {
+      "description": "Открытая мультимодальная модель Google DeepMind на 31 млрд параметров для рассуждений, программирования, визуального понимания, функций и агентов с контекстом 256K."
+    },
+    "tr": {
+      "description": "Akıl yürütme, kodlama, görsel anlama, işlev çağırma ve aracı iş akışları için Google DeepMind'ın 256K bağlamlı 31B açık ağırlıklı çok modlu modeli."
+    },
+    "zh-Hans": {
+      "description": "Google DeepMind 面向推理、编程、视觉理解、函数调用和智能体工作流的 31B 开放权重多模态模型，提供 256K 上下文。"
+    },
+    "zh-Hant": {
+      "description": "Google DeepMind 面向推理、程式設計、視覺理解、函式呼叫和智慧體工作流的 31B 開放權重多模態模型，提供 256K 上下文。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "title": "Gemma 4 official model card",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+      "title": "Gemma 4 official launch announcement",
+      "fields": ["description", "releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-31B-it",
+      "title": "Gemma 4 31B official model repository",
+      "fields": ["size", "platformUrls.huggingface"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/gemma-4-31b",
+      "title": "Artificial Analysis Gemma 4 31B model page",
+      "fields": ["releaseDate", "platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-27",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://deepmind.google",
+  "docsUrl": "https://ai.google.dev/gemma/docs/core/model_card_4",
+  "vendor": "Google",
+  "size": "31B",
+  "contextWindow": 262144,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "not-applicable",
+    "reason": "open-weights-only",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "releaseDate": "2026-04-02",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/google/gemma-4-31B-it",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gemma-4-31b",
+    "openrouter": null
+  }
+}

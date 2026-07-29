@@ -38,7 +38,27 @@
       "description": "中國跨國互聯網科技公司，TikTok 的母公司，利用 AI 和機器學習構建內容平台，包括抖音、剪映和飛書。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.bytedance.com/en/",
+      "title": "About ByteDance",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/bytedance",
+      "title": "ByteDance GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/bytedance",
+      "title": "ByteDance linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.bytedance.com",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/bytedance",

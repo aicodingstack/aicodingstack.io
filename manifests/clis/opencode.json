@@ -43,7 +43,11 @@
   "websiteUrl": "https://opencode.ai",
   "docsUrl": "https://opencode.ai",
   "vendor": "Anomaly",
-  "latestVersion": "0.15.16",
+  "latestVersion": "1.18.8",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "opencode-ai"
+  },
   "githubUrl": "https://github.com/anomalyco/opencode",
   "license": "MIT",
   "pricing": [
@@ -71,16 +75,22 @@
   },
   "communityUrls": {
     "linkedin": null,
-    "twitter": "https://x.com/opencode",
+    "twitter": null,
     "github": "https://github.com/anomalyco/opencode",
     "youtube": null,
-    "discord": "https://discord.gg/opencode",
+    "discord": null,
     "reddit": null,
     "blog": null
   },
   "relatedProducts": [
-    { "type": "desktop", "productId": "opencode-desktop" },
-    { "type": "extension", "productId": "opencode-extension" }
+    {
+      "type": "desktop",
+      "productId": "opencode-desktop"
+    },
+    {
+      "type": "extension",
+      "productId": "opencode-extension"
+    }
   ],
   "platforms": [
     {
@@ -100,6 +110,13 @@
       "installCommand": "npm i -g opencode-ai@latest",
       "launchCommand": "opencode",
       "installPath": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/anomalyco/opencode",
+      "title": "OpenCode github community",
+      "fields": ["communityUrls.github"]
     }
   ]
 }

@@ -2,43 +2,58 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "shareai-lab",
   "name": "shareAI Lab",
-  "description": "Open-source AI community organization promoting AI democratization and accelerating AGI progress through collaborative development and research projects.",
+  "description": "shareAI Lab is an open-source organization developing AI agent tools and learning projects, including Kode CLI and agent runtimes.",
   "translations": {
     "zh-Hans": {
-      "description": "开源 AI 社区组织,致力于推动 AI 民主化和加速 AGI 进展,通过协作开发和研究项目实现目标。"
+      "description": "shareAI Lab 是一个开发 AI Agent 工具和学习项目的开源组织，包括 Kode CLI 和 Agent 运行时。"
     },
     "de": {
-      "description": "Open-Source-AI-Community-Organisation zur Förderung der AI-Demokratisierung und Beschleunigung des AGI-Fortschritts durch kollaborative Entwicklung."
+      "description": "shareAI Lab ist eine Open-Source-Organisation, die AI-Agentenwerkzeuge und Lernprojekte entwickelt, darunter Kode CLI und Agentenlaufzeiten."
     },
     "ko": {
-      "description": "AI 민주화를 촉진하고 AGI 발전을 가속화하는 오픈 소스 AI 커뮤니티 조직으로, 협업 개발 및 연구 프로젝트를 통해 목표를 실현합니다."
+      "description": "shareAI Lab은 Kode CLI와 에이전트 런타임을 포함한 AI 에이전트 도구 및 학습 프로젝트를 개발하는 오픈 소스 조직입니다."
     },
     "es": {
-      "description": "Organización comunitaria de IA de código abierto que promueve la democratización de la IA y acelera el progreso de AGI, logrando objetivos a través de desarrollo colaborativo y proyectos de investi..."
+      "description": "shareAI Lab es una organización de código abierto que desarrolla herramientas y proyectos educativos de agentes de IA, incluidos Kode CLI y runtimes de agentes."
     },
     "fr": {
-      "description": "Organisation communautaire IA open source promouvant la démocratisation de l'IA et accélérant le progrès AGI, réalisant des objectifs via le développement collaboratif et projets de recherche."
+      "description": "shareAI Lab est une organisation open source qui développe des outils d’agents IA et des projets pédagogiques, dont Kode CLI et des runtimes d’agents."
     },
     "id": {
-      "description": "Organisasi komunitas AI open source yang mempromosikan demokratisasi AI dan mempercepat kemajuan AGI, mencapai tujuan melalui pengembangan kolaboratif dan proyek riset."
+      "description": "shareAI Lab adalah organisasi open source yang mengembangkan alat agen AI dan proyek pembelajaran, termasuk Kode CLI dan runtime agen."
     },
     "ja": {
-      "description": "AIの民主化とAGIの進歩を加速させるためのオープンソースAIコミュニティ組織。協調的な開発と研究プロジェクトを通じて目標を達成します。"
+      "description": "shareAI Labは、Kode CLIやエージェントランタイムなどのAIエージェントツールと学習プロジェクトを開発するオープンソース組織です。"
     },
     "pt": {
-      "description": "Organização comunitária IA de código aberto promovendo a democratização da IA e acelerando o progresso AGI, alcançando objetivos através de desenvolvimento colaborativo e projetos de pesquisa."
+      "description": "A shareAI Lab é uma organização de código aberto que desenvolve ferramentas de agentes de IA e projetos educativos, incluindo Kode CLI e runtimes de agentes."
     },
     "ru": {
-      "description": "Сообщественная организация с открытым исходным кодом по ИИ, продвигающая демократизацию ИИ и ускорение прогресса AGI, достигающая целей через совместную разработку и исследовательские проекты."
+      "description": "shareAI Lab — открытая организация, разрабатывающая инструменты ИИ-агентов и учебные проекты, включая Kode CLI и среды выполнения агентов."
     },
     "tr": {
-      "description": "AI demokratizasyonunu ve AGI ilerlemesini hızlandıran açık kaynaklı AI topluluk organizasyonu, işbirlikçi geliştirme ve araştırma projeleri yoluyla hedefler gerçekleştiriyor."
+      "description": "shareAI Lab; Kode CLI ve ajan çalışma zamanları dahil AI ajan araçları ve öğrenme projeleri geliştiren açık kaynaklı bir kuruluştur."
     },
     "zh-Hant": {
-      "description": "開源 AI 社區組織，致力於推動 AI 民主化和加速 AGI 進展，透過協作開發和研究專案實現目標。"
+      "description": "shareAI Lab 是一個開發 AI Agent 工具和學習專案的開源組織，包括 Kode CLI 和 Agent 執行環境。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://github.com/shareAI-lab",
+      "title": "shareAI Lab official GitHub organization",
+      "fields": ["name", "description", "websiteUrl", "communityUrls.github"]
+    },
+    {
+      "url": "https://x.com/baicai003",
+      "title": "shareAI Lab twitter community",
+      "fields": ["communityUrls.twitter"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
   "websiteUrl": "https://github.com/shareAI-lab",
   "communityUrls": {
     "linkedin": null,

@@ -50,12 +50,47 @@
     "openrouter": "https://openrouter.ai/provider/siliconflow"
   },
   "communityUrls": {
-    "linkedin": "https://www.linkedin.com/company/siliconflow",
-    "twitter": "https://x.com/SiliconFlowAI",
-    "github": "https://github.com/siliconflow",
-    "youtube": "https://www.youtube.com/@SiliconFlowAI",
-    "discord": "https://discord.com/invite/7Ey3dVNFpT",
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
+    "discord": null,
     "reddit": null,
-    "blog": "https://www.siliconflow.com/blog"
-  }
+    "blog": null
+  },
+  "sources": [
+    {
+      "url": "https://www.siliconflow.com/products",
+      "title": "SiliconFlow products and services",
+      "fields": ["name", "description", "websiteUrl", "type"]
+    },
+    {
+      "url": "https://docs.siliconflow.com/en/userguide/quickstart",
+      "title": "SiliconFlow API quick start",
+      "fields": ["docsUrl", "applyKeyUrl"]
+    },
+    {
+      "url": "https://www.siliconflow.com/en/pricing",
+      "title": "SiliconFlow model service pricing",
+      "fields": ["description"]
+    },
+    {
+      "url": "https://huggingface.co/siliconflow",
+      "title": "SiliconFlow Hugging Face organization",
+      "fields": ["platformUrls.huggingface"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/providers/siliconflow",
+      "title": "SiliconFlow on Artificial Analysis",
+      "fields": ["platformUrls.artificialAnalysis"]
+    },
+    {
+      "url": "https://openrouter.ai/provider/siliconflow",
+      "title": "SiliconFlow on OpenRouter",
+      "fields": ["platformUrls.openrouter"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

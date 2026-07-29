@@ -83,13 +83,13 @@
     "issue": "https://github.com/codota/TabNine/issues"
   },
   "communityUrls": {
-    "linkedin": "https://www.linkedin.com/company/tabnine",
-    "twitter": "https://x.com/TabNine",
-    "github": "https://github.com/codota/TabNine",
-    "youtube": "https://www.youtube.com/@TabNine",
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
     "discord": null,
     "reddit": null,
-    "blog": "https://www.tabnine.com/blog"
+    "blog": null
   },
   "relatedProducts": [],
   "supportedIdes": [

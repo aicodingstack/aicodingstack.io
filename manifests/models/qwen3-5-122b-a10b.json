@@ -1,0 +1,137 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "qwen3-5-122b-a10b",
+  "name": "Qwen3.5-122B-A10B",
+  "description": "Alibaba's open-weight multimodal MoE model with 122B total and 10B active parameters for efficient reasoning, coding, agents, and visual tasks.",
+  "translations": {
+    "de": {
+      "description": "Alibabas offenes multimodales MoE-Modell mit 122B Gesamt- und 10B aktiven Parametern für effizientes Schlussfolgern, Coding, Agenten und visuelle Aufgaben."
+    },
+    "es": {
+      "description": "Modelo MoE multimodal abierto de Alibaba con 122B parámetros totales y 10B activos para razonamiento, programación, agentes y tareas visuales eficientes."
+    },
+    "fr": {
+      "description": "Modèle MoE multimodal ouvert d’Alibaba avec 122B paramètres au total et 10B actifs pour le raisonnement, le codage, les agents et les tâches visuelles."
+    },
+    "id": {
+      "description": "Model MoE multimodal berbobot terbuka Alibaba dengan 122B parameter total dan 10B aktif untuk penalaran, coding, agen, dan tugas visual yang efisien."
+    },
+    "ja": {
+      "description": "効率的な推論、コーディング、エージェント、視覚タスクに対応するAlibabaのオープンウェイト・マルチモーダルMoEモデル。総122B、アクティブ10B。"
+    },
+    "ko": {
+      "description": "효율적인 추론, 코딩, 에이전트와 시각 작업을 위한 Alibaba의 오픈 웨이트 멀티모달 MoE 모델로, 총 122B 및 활성 10B 매개변수를 갖습니다."
+    },
+    "pt": {
+      "description": "Modelo MoE multimodal aberto da Alibaba com 122B parâmetros totais e 10B ativos para raciocínio, programação, agentes e tarefas visuais eficientes."
+    },
+    "ru": {
+      "description": "Открытая мультимодальная MoE-модель Alibaba со 122 млрд параметров и 10 млрд активных для эффективных рассуждений, программирования, агентов и визуальных задач."
+    },
+    "tr": {
+      "description": "Verimli akıl yürütme, kodlama, aracılar ve görsel görevler için Alibaba'nın 122B toplam ve 10B etkin parametreli açık ağırlıklı çok modlu MoE modeli."
+    },
+    "zh-Hans": {
+      "description": "Alibaba 面向高效推理、编程、智能体和视觉任务的开放权重多模态 MoE 模型，总参数 122B、激活参数 10B。"
+    },
+    "zh-Hant": {
+      "description": "Alibaba 面向高效推理、程式設計、智慧體和視覺任務的開放權重多模態 MoE 模型，總參數 122B、啟用參數 10B。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B",
+      "title": "Qwen3.5-122B-A10B official model card",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "platformUrls.huggingface"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3.5-122B-A10B",
+      "title": "Qwen3.5-122B-A10B official repository metadata",
+      "fields": ["releaseDate"]
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "title": "Alibaba Cloud Model Studio model pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/qwen3-5-122b-a10b",
+      "title": "Artificial Analysis Qwen3.5 122B A10B model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-27",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://qwen.ai",
+  "docsUrl": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B",
+  "vendor": "Alibaba",
+  "size": "122B (10B active)",
+  "contextWindow": 262144,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": { "metric": "inputTokens", "min": 1, "max": 128000 },
+            "rates": {
+              "input": 0.115,
+              "output": 0.917,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          },
+          {
+            "condition": { "metric": "inputTokens", "min": 128001, "max": 256000 },
+            "rates": {
+              "input": 0.287,
+              "output": 2.294,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-02-24",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-5-122b-a10b",
+    "openrouter": null
+  }
+}

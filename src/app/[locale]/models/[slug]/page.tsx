@@ -8,11 +8,13 @@ import { ModelSpecifications } from '@/components/product/ModelSpecifications'
 import { PlatformLinks } from '@/components/product/PlatformLinks'
 import { ProductHero } from '@/components/product/ProductHero'
 import type { Locale } from '@/i18n/config'
+import { Link } from '@/i18n/navigation'
 import { PageLayout } from '@/layouts/PageLayout'
 import { getModel } from '@/lib/data/fetchers'
-import { modelsData as models } from '@/lib/generated'
+import { modelsData as models, vendorsData } from '@/lib/generated'
 import { generateModelDetailMetadata } from '@/lib/metadata'
 import { generateModelDetailSchema } from '@/lib/metadata/schemas'
+import { findVendorByName } from '@/lib/vendor-identity'
 
 export const revalidate = 3600
 
@@ -64,6 +66,8 @@ export default async function ModelPage({
   }
 
   const tShared = await getTranslations({ locale, namespace: 'shared' })
+  const vendorRecord = findVendorByName(vendorsData, model.vendor)
+  const vendorHref = vendorRecord ? `/vendors/${vendorRecord.id}` : undefined
 
   // Generate JSON-LD schema
   const schema = await generateModelDetailSchema({
@@ -105,8 +109,23 @@ export default async function ModelPage({
       <main className="max-w-8xl mx-auto px-[var(--spacing-md)]">
         <ProductHero
           name={model.name}
-          description={`by ${model.vendor}`}
+          description={
+            <>
+              {tShared('terms.by')}{' '}
+              {vendorHref ? (
+                <Link
+                  href={vendorHref}
+                  className="font-medium underline-offset-4 hover:underline hover:text-[var(--color-text)] transition-colors"
+                >
+                  {model.vendor}
+                </Link>
+              ) : (
+                model.vendor
+              )}
+            </>
+          }
           vendor={model.vendor}
+          vendorHref={vendorHref}
           category="MODEL"
           categoryLabel={tShared('categories.singular.model')}
           verified={model.verified ?? false}

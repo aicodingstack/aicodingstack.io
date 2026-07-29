@@ -12,12 +12,11 @@ import type { LocalePageProps } from '@/types/locale'
 export async function generateMetadata({ params }: LocalePageProps) {
   const { locale } = await params
   const tPage = await getTranslations({ locale, namespace: 'pages.curatedCollections' })
-  const tShared = await getTranslations({ locale, namespace: 'shared' })
 
   const title = buildTitle({
-    title: `${tShared('terms.curatedCollections')} - AI Coding Specs, Protocols & Tools`,
+    title: tPage('meta.title'),
   })
-  const description = tPage('subtitle')
+  const description = tPage('meta.description')
 
   return generateStaticPageMetadata({
     locale: locale as Locale,

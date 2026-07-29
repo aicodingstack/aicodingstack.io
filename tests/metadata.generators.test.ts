@@ -1,5 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import {
+  buildListPageTitle,
+  buildTitle,
   generateArticleMetadata,
   generateComparisonMetadata,
   generateDocsMetadata,
@@ -8,6 +10,21 @@ import {
   generateSoftwareDetailMetadata,
   generateStaticPageMetadata,
 } from '@/lib/metadata'
+
+describe('Metadata title helpers', () => {
+  it('leaves the site name to the root layout title template by default', () => {
+    expect(buildTitle({ title: 'AI Coding Models' })).toBe('AI Coding Models')
+  })
+
+  it('builds a concise localized list title without examples or a repeated brand', () => {
+    expect(
+      buildListPageTitle({
+        translatedTitle: 'AI Coding Models',
+        year: 2026,
+      })
+    ).toBe('AI Coding Models 2026')
+  })
+})
 
 /**
  * Test suite to verify metadata generators produce correct structure

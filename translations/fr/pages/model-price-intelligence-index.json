@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Prix du modèle × Intelligence",
+    "description": "Comparez les modèles d’IA courants par prix des jetons API et indice d’intelligence.",
+    "keywords": "comparaison prix modèles IA, intelligence des modèles, tarifs API LLM, rapport qualité prix"
+  },
+  "title": "Prix du modèle × Intelligence",
+  "description": "Comparez les modèles courants selon leur prix API et leur capacité d’intelligence.",
+  "chart": {
+    "title": "La capacité à chaque niveau de prix",
+    "axisHint": "Prix API pondéré × Indice d’intelligence",
+    "modelCount": "{count} modèles sélectionnés",
+    "priceAxis": "USD par million de jetons · 90 % entrée + 10 % sortie",
+    "indexAxis": "Indice d’intelligence",
+    "scale": {
+      "label": "Échelle de prix",
+      "linear": "Linéaire",
+      "logarithmic": "Logarithmique"
+    }
+  },
+  "filter": {
+    "label": "Filtrer par fournisseur",
+    "showAll": "Tout afficher"
+  },
+  "list": {
+    "title": "Modèles sélectionnés",
+    "description": "Tarifs API comparables en USD par million de jetons. Triez par prix pondéré ou indice d’intelligence.",
+    "blended": "Prix pondéré",
+    "priceUnit": "USD / 1 M de jetons",
+    "index": "Indice"
+  },
+  "source": {
+    "attribution": "Indice d’intelligence d’Artificial Analysis v{version}, observé le {date}. Source :",
+    "pricing": "Les prix utilisent les sources API officielles du catalogue ; lorsqu’aucun prix propriétaire comparable en USD n’est disponible, ils sont complétés par des offres API comparables suivies par Artificial Analysis. Le prix pondéré compte {input} % d’entrée et {output} % de sortie ; les remises de cache sont exclues.",
+    "methodology": "Méthodologie de l’indice d’intelligence",
+    "fallbackPricingSources": "Sources tarifaires complémentaires :"
+  }
+}

@@ -57,5 +57,32 @@
     "discord": null,
     "reddit": null,
     "blog": "https://developer.aliyun.com/group"
-  }
+  },
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/company/alibaba-cloud",
+      "title": "Alibaba Cloud linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/Aliyun_Dev",
+      "title": "Alibaba Cloud twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://github.com/QwenLM",
+      "title": "Alibaba Cloud github community",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.youtube.com/@AlibabaCloud",
+      "title": "Alibaba Cloud youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://developer.aliyun.com/group",
+      "title": "Alibaba Cloud blog community",
+      "fields": ["communityUrls.blog"]
+    }
+  ]
 }

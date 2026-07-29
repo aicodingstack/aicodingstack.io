@@ -1,7 +1,16 @@
 {
   "context": "Kontext:",
+  "guide": {
+    "compareModels": "Modelle direkt vergleichen",
+    "description": "Vergleichen Sie Coding-Modelle nach Kontextfenster, Tokenpreisen, Lebenszyklus und Anbieter. Nutzen Sie den direkten Vergleich für detaillierte Spezifikationen und prüfen Sie anschließend die API-Anbieter auf Modellverfügbarkeit.",
+    "exploreProviders": "Modellanbieter entdecken",
+    "title": "So vergleichen Sie AI-Coding-Modelle"
+  },
   "lifecycle": {
     "noResults": "Keine {lifecycle} Modelle entsprechen Ihrer Suche"
+  },
+  "meta": {
+    "description": "Vergleichen Sie AI-Coding-Modelle nach Kontextfenster, Tokenpreisen, Lebenszyklus und Anbieter. Entdecken Sie aktuelle Coding-LLMs führender Modellentwickler."
   },
   "pricing": "Preise:",
   "size": "Größe:",

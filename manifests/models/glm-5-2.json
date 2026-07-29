@@ -57,12 +57,22 @@
     {
       "url": "https://docs.z.ai/release-notes/new-released",
       "title": "Z.ai model release notes",
-      "fields": ["releaseDate", "lifecycle"]
+      "fields": ["releaseDate", "lifecycle"],
+      "changeTracking": {
+        "method": "normalized-content-sha256",
+        "digest": "sha256:5b5ab3620167e1331f3de0aeeefe0cb5df12d59e706e0228bac5dcab6248a6fe",
+        "observedAt": "2026-07-28"
+      }
     },
     {
       "url": "https://docs.z.ai/guides/overview/pricing",
       "title": "Z.ai API pricing",
-      "fields": ["tokenPricing"]
+      "fields": ["tokenPricing"],
+      "changeTracking": {
+        "method": "normalized-content-sha256",
+        "digest": "sha256:3f331fe3d6f5ed696378e4c29c6ce553f463417299d5aa2d222ad8b48fe3ec7a",
+        "observedAt": "2026-07-28"
+      }
     },
     {
       "url": "https://huggingface.co/zai-org/GLM-5.2",

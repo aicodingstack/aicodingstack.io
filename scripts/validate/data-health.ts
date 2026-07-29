@@ -44,6 +44,16 @@ const BENCHMARK_KEYS = [
   'liveCodeBench',
 ] as const
 
+const COMMUNITY_URL_KEYS = [
+  'linkedin',
+  'twitter',
+  'github',
+  'youtube',
+  'discord',
+  'reddit',
+  'blog',
+] as const
+
 export interface ManifestRecord {
   category: ManifestCategory
   filePath: string
@@ -90,6 +100,9 @@ export interface DataHealthReport {
     modelBenchmarkCoverage: number
     productsWithPricing: number
     productRecords: number
+    communityUrlsPopulated: number
+    communityUrlsWithProvenance: number
+    duplicatedVendorCommunityUrls: number
     errors: number
     warnings: number
     info: number
@@ -119,6 +132,35 @@ function hasCompleteProvenance(data: Record<string, unknown>): boolean {
 
 function hasSources(data: Record<string, unknown>): boolean {
   return Array.isArray(data.sources) && data.sources.length > 0
+}
+
+function getCommunityUrls(data: Record<string, unknown>): Record<string, unknown> | null {
+  const communityUrls = data.communityUrls
+  return communityUrls && typeof communityUrls === 'object' && !Array.isArray(communityUrls)
+    ? (communityUrls as Record<string, unknown>)
+    : null
+}
+
+function sourceSupportsField(data: Record<string, unknown>, fieldPath: string): boolean {
+  return (
+    Array.isArray(data.sources) &&
+    data.sources.some(source => {
+      if (!source || typeof source !== 'object' || Array.isArray(source)) return false
+      const fields = (source as Record<string, unknown>).fields
+      return (
+        !Array.isArray(fields) || fields.includes('communityUrls') || fields.includes(fieldPath)
+      )
+    })
+  )
+}
+
+function getVendorIdentityNames(data: Record<string, unknown>): string[] {
+  const aliases = Array.isArray(data.aliases)
+    ? data.aliases.map(getString).filter((value): value is string => Boolean(value))
+    : []
+  return [getString(data.id), getString(data.name), ...aliases]
+    .filter((value): value is string => Boolean(value))
+    .map(value => value.toLocaleLowerCase())
 }
 
 function parseIsoDate(value: string): Date | null {
@@ -245,12 +287,24 @@ export function analyzeDataHealth(
     )
   }
 
+  const vendorsByIdentity = new Map<string, ManifestRecord>()
+  for (const vendor of records.filter(record => record.category === 'vendors')) {
+    for (const identity of getVendorIdentityNames(vendor.data)) {
+      vendorsByIdentity.set(identity, vendor)
+    }
+  }
+
   for (const record of records) {
     const id = getId(record)
     const categoryHealth = byCategory[record.category]
     categoryHealth.total++
     const verified = record.data.verified === true
     const provenanceComplete = hasCompleteProvenance(record.data)
+    const communityUrls = getCommunityUrls(record.data)
+    const vendorName = getString(record.data.vendor)?.toLocaleLowerCase()
+    const vendorCommunityUrls = vendorName
+      ? getCommunityUrls(vendorsByIdentity.get(vendorName)?.data ?? {})
+      : null
 
     if (!hasSources(record.data)) {
       issues.push({
@@ -260,6 +314,34 @@ export function analyzeDataHealth(
         id,
         message: 'No structured source references are recorded.',
       })
+    }
+
+    if (communityUrls) {
+      for (const key of COMMUNITY_URL_KEYS) {
+        const url = getString(communityUrls[key])
+        if (!url) continue
+
+        const fieldPath = `communityUrls.${key}`
+        if (!sourceSupportsField(record.data, fieldPath)) {
+          issues.push({
+            severity: 'warning',
+            code: 'community-url-without-provenance',
+            category: record.category,
+            id,
+            message: `${fieldPath} has no matching structured source.`,
+          })
+        }
+
+        if (url === getString(vendorCommunityUrls?.[key])) {
+          issues.push({
+            severity: 'warning',
+            code: 'duplicated-vendor-community-url',
+            category: record.category,
+            id,
+            message: `${fieldPath} duplicates the vendor URL; inherit it at read time instead.`,
+          })
+        }
+      }
     }
 
     if (verified) {
@@ -361,6 +443,14 @@ export function analyzeDataHealth(
       })
   )
   const pricing = countPricingCoverage(records)
+  const populatedCommunityUrls = records.flatMap(record => {
+    const communityUrls = getCommunityUrls(record.data)
+    if (!communityUrls) return []
+    return COMMUNITY_URL_KEYS.flatMap(key => {
+      const url = getString(communityUrls[key])
+      return url ? [{ record, fieldPath: `communityUrls.${key}` }] : []
+    })
+  })
   return {
     asOf: asOfInput,
     thresholds: { ...FRESHNESS_THRESHOLDS },
@@ -384,6 +474,13 @@ export function analyzeDataHealth(
       modelBenchmarkCoverage: countBenchmarkCoverage(records),
       productsWithPricing: pricing.covered,
       productRecords: pricing.total,
+      communityUrlsPopulated: populatedCommunityUrls.length,
+      communityUrlsWithProvenance: populatedCommunityUrls.filter(({ record, fieldPath }) =>
+        sourceSupportsField(record.data, fieldPath)
+      ).length,
+      duplicatedVendorCommunityUrls: issues.filter(
+        issue => issue.code === 'duplicated-vendor-community-url'
+      ).length,
       errors: issues.filter(issue => issue.severity === 'error').length,
       warnings: issues.filter(issue => issue.severity === 'warning').length,
       info: issues.filter(issue => issue.severity === 'info').length,
@@ -439,6 +536,8 @@ Snapshot date: ${report.asOf}. Regenerate with \`npm run data-health:report\`.
 | Dangling product relationships | ${report.summary.danglingRelationships} |
 | Model benchmark coverage | ${report.summary.modelBenchmarkCoverage}% |
 | Products with pricing | ${report.summary.productsWithPricing}/${report.summary.productRecords} |
+| Community URLs with provenance | ${report.summary.communityUrlsWithProvenance}/${report.summary.communityUrlsPopulated} |
+| Duplicated vendor community URLs | ${report.summary.duplicatedVendorCommunityUrls} |
 | Errors / warnings / info | ${report.summary.errors} / ${report.summary.warnings} / ${report.summary.info} |
 
 ## Category Breakdown
@@ -488,6 +587,8 @@ function renderConsoleSummary(report: DataHealthReport): string {
     `English-identical translations: ${report.summary.translationPlaceholderValues}`,
     `Dangling relationships: ${report.summary.danglingRelationships}`,
     `Model benchmark coverage: ${report.summary.modelBenchmarkCoverage}%`,
+    `Community URL provenance: ${report.summary.communityUrlsWithProvenance}/${report.summary.communityUrlsPopulated}`,
+    `Duplicated vendor community URLs: ${report.summary.duplicatedVendorCommunityUrls}`,
     `Issues: ${report.summary.errors} errors, ${report.summary.warnings} warnings, ${report.summary.info} info`,
   ].join('\n')
 }
@@ -495,6 +596,21 @@ function renderConsoleSummary(report: DataHealthReport): string {
 function getArgument(name: string): string | null {
   const prefix = `--${name}=`
   return process.argv.find(argument => argument.startsWith(prefix))?.slice(prefix.length) ?? null
+}
+
+export function shouldFailDataHealth(
+  report: DataHealthReport,
+  failOn: string,
+  failOnCodes: Set<string> = new Set()
+): boolean {
+  if (!['error', 'warning', 'never'].includes(failOn)) {
+    throw new Error(`Invalid --fail-on value: ${failOn}`)
+  }
+  return (
+    (failOn === 'error' && report.summary.errors > 0) ||
+    (failOn === 'warning' && report.summary.errors + report.summary.warnings > 0) ||
+    report.issues.some(issue => failOnCodes.has(issue.code))
+  )
 }
 
 async function main(): Promise<void> {
@@ -530,13 +646,13 @@ async function main(): Promise<void> {
   }
 
   const failOn = getArgument('fail-on') ?? 'never'
-  if (!['error', 'warning', 'never'].includes(failOn)) {
-    throw new Error(`Invalid --fail-on value: ${failOn}`)
-  }
-  if (
-    (failOn === 'error' && report.summary.errors > 0) ||
-    (failOn === 'warning' && report.summary.errors + report.summary.warnings > 0)
-  ) {
+  const failOnCodes = new Set(
+    (getArgument('fail-on-code') ?? '')
+      .split(',')
+      .map(code => code.trim())
+      .filter(Boolean)
+  )
+  if (shouldFailDataHealth(report, failOn, failOnCodes)) {
     process.exitCode = 1
   }
 }

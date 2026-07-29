@@ -54,6 +54,16 @@
       "url": "https://platform.openai.com/api-keys",
       "title": "OpenAI API keys",
       "fields": ["applyKeyUrl"]
+    },
+    {
+      "url": "https://www.youtube.com/@openai",
+      "title": "OpenAI youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://openai.com/blog",
+      "title": "OpenAI blog community",
+      "fields": ["communityUrls.blog"]
     }
   ],
   "lastVerifiedAt": "2026-07-18",
@@ -70,9 +80,9 @@
     "openrouter": "https://openrouter.ai/provider/openai"
   },
   "communityUrls": {
-    "linkedin": "https://www.linkedin.com/company/openai",
-    "twitter": "https://x.com/OpenAI",
-    "github": "https://github.com/openai",
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
     "youtube": "https://www.youtube.com/@openai",
     "discord": null,
     "reddit": null,

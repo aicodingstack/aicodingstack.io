@@ -1,31 +1,32 @@
 {
   "meta": {
-    "title": "Índice de inteligencia de modelos",
-    "description": "Sigue las puntuaciones de inteligencia de los modelos de programación a lo largo del tiempo, agrupadas por proveedor y serie.",
-    "keywords": "índice de inteligencia de modelos, cronología de modelos de IA, benchmarks de modelos de programación, historial de lanzamientos"
+    "title": "Índice integral de inteligencia de modelos",
+    "description": "Sigue las puntuaciones integrales de inteligencia de los modelos de IA a lo largo del tiempo, agrupadas por proveedor y serie.",
+    "keywords": "índice integral de inteligencia de modelos, cronología de modelos de IA, benchmarks integrales de IA, historial de lanzamientos"
   },
-  "title": "Índice de inteligencia de modelos",
-  "description": "Explora cómo cambia la inteligencia de los modelos de programación entre lanzamientos.",
+  "title": "Índice integral de inteligencia de modelos",
+  "description": "Explora cómo cambia la inteligencia integral de los modelos entre lanzamientos.",
   "releaseDate": "Fecha de lanzamiento",
   "chart": {
     "title": "Capacidad a lo largo del tiempo",
-    "axisHint": "Fecha de lanzamiento × Index",
+    "axisHint": "Fecha de lanzamiento × Índice",
     "modelCount": "{count} modelos del catálogo",
-    "indexAxis": "Intelligence Index"
+    "indexAxis": "Índice de inteligencia"
   },
   "filter": {
     "label": "Filtrar por proveedor",
-    "showAll": "Mostrar todos"
+    "showAll": "Mostrar todos",
+    "seriesLabel": "Filtrar por serie"
   },
   "list": {
     "title": "Índice de modelos",
-    "description": "Ordena los modelos por fecha de lanzamiento o puntuación del Index. Las barras utilizan la misma escala.",
+    "description": "Ordena los modelos por fecha de lanzamiento o puntuación del índice. Las barras utilizan la misma escala.",
     "index": "Índice",
     "barLabel": "Índice de {model}: {score}"
   },
   "source": {
-    "attribution": "Artificial Analysis Intelligence Index v{version}, consultado el {date}. Fuente:",
-    "estimated": "* indica estimaciones mostradas por Artificial Analysis. Las puntuaciones corresponden a la configuración indicada.",
+    "attribution": "Índice de inteligencia de Artificial Analysis v{version}, consultado el {date}. Fuente:",
+    "estimated": "* indica estimaciones mostradas por Artificial Analysis. Las puntuaciones corresponden a la configuración indicada y al índice de inteligencia compuesto, no al índice de programación.",
     "methodology": "Metodología"
   }
 }

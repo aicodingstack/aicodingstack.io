@@ -38,8 +38,38 @@
       "description": "專注於 AI 軟體工程的應用型 AI 實驗室，創造了 Devin - 首個能夠自主編寫、調試和部署程式碼的 AI 軟體工程師。"
     }
   },
-  "verified": false,
-  "websiteUrl": "https://cognition.ai",
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://cognition.com/",
+      "title": "Cognition official site",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/CognitionAI",
+      "title": "Cognition GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/cognition-ai-labs",
+      "title": "Cognition linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/cognition_labs",
+      "title": "Cognition twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://cognition.ai/blog",
+      "title": "Cognition blog community",
+      "fields": ["communityUrls.blog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://cognition.com",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/cognition-ai-labs",
     "twitter": "https://x.com/cognition_labs",

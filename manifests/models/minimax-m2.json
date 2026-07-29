@@ -40,11 +40,11 @@
   },
   "verified": true,
   "websiteUrl": "https://platform.minimaxi.com",
-  "docsUrl": "https://platform.minimaxi.com/docs/api-reference/text-openai-api",
+  "docsUrl": "https://platform.minimax.io/docs/guides/text-generation",
   "vendor": "MiniMax",
   "size": "230B",
   "contextWindow": 204800,
-  "maxOutput": 131072,
+  "maxOutput": null,
   "tokenPricing": {
     "status": "available",
     "primaryOffer": "global-standard",
@@ -63,7 +63,7 @@
               "input": 0.3,
               "output": 1.2,
               "cacheRead": 0.03,
-              "cacheWrite": null
+              "cacheWrite": 0.375
             }
           }
         ]
@@ -72,7 +72,7 @@
   },
   "releaseDate": "2025-10-27",
   "lifecycle": "maintained",
-  "knowledgeCutoff": "2025-10",
+  "knowledgeCutoff": null,
   "inputModalities": ["text"],
   "outputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
@@ -85,9 +85,50 @@
     "sciCode": null,
     "liveCodeBench": null
   },
+  "benchmarkTracking": [
+    {
+      "provider": "swe-bench",
+      "benchmark": "sweBench",
+      "leaderboard": "Verified",
+      "resultId": "20251124_mini-v1.17.0_minimax-m2",
+      "modelLabel": "mini-SWE-agent + Minimax M2"
+    }
+  ],
   "platformUrls": {
     "huggingface": "https://huggingface.co/MiniMaxAI/MiniMax-M2",
     "artificialAnalysis": "https://artificialanalysis.ai/models/minimax-m2",
     "openrouter": "https://openrouter.ai/minimax/minimax-m2"
-  }
+  },
+  "sources": [
+    {
+      "url": "https://www.minimax.io/news/minimax-m2",
+      "title": "MiniMax M2 announcement",
+      "fields": ["name", "description", "size", "releaseDate", "capabilities"]
+    },
+    {
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2",
+      "title": "MiniMax M2 model card",
+      "fields": ["size", "platformUrls.huggingface"]
+    },
+    {
+      "url": "https://platform.minimax.io/docs/guides/text-generation",
+      "title": "MiniMax text generation guide",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "lifecycle"
+      ]
+    },
+    {
+      "url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "title": "MiniMax pay-as-you-go pricing",
+      "fields": ["tokenPricing", "lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

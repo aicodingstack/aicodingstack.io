@@ -42,7 +42,11 @@
   "websiteUrl": "https://cline.bot/cline-cli",
   "docsUrl": "https://cline.bot/docs",
   "vendor": "Cline Bot",
-  "latestVersion": "Preview",
+  "latestVersion": "3.0.46",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "cline"
+  },
   "githubUrl": null,
   "license": "Proprietary",
   "pricing": [
@@ -63,12 +67,12 @@
   },
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/clinebot",
-    "twitter": "https://x.com/clinebot",
+    "twitter": null,
     "github": null,
     "youtube": null,
     "discord": null,
     "reddit": "https://www.reddit.com/r/cline",
-    "blog": "https://cline.bot/blog"
+    "blog": null
   },
   "relatedProducts": [],
   "platforms": [
@@ -89,6 +93,18 @@
       "installCommand": "npm install -g cline",
       "launchCommand": "cline",
       "installPath": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/company/clinebot",
+      "title": "Cline CLI linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://www.reddit.com/r/cline",
+      "title": "Cline CLI reddit community",
+      "fields": ["communityUrls.reddit"]
     }
   ]
 }
