@@ -93,7 +93,7 @@
     "cspell": "^9.6.1",
     "gray-matter": "^4.0.3",
     "husky": "9.1.7",
-    "lint-staged": "16.2.7",
+    "lint-staged": "17.2.0",
     "rehype-highlight": "^7.0.2",
     "remark-frontmatter": "^5.0.0",
     "remark-gfm": "^4.0.1",
