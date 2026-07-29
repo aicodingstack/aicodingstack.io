@@ -6,6 +6,27 @@
     "light": "#4D6BFE",
     "dark": "#4D6BFE"
   },
+  "modelSeries": [
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "modelIds": [
+        "deepseek-v3",
+        "deepseek-r1",
+        "deepseek-r1-0528",
+        "deepseek-v3-1",
+        "deepseek-v3-terminus",
+        "deepseek-v3-2-exp",
+        "deepseek-3-2",
+        "deepseek-v4-pro"
+      ]
+    },
+    {
+      "id": "deepseek-flash",
+      "name": "DeepSeek Flash",
+      "modelIds": ["deepseek-v4-flash"]
+    }
+  ],
   "description": "A leading AI research company focused on developing advanced language models and AI technology for coding and general intelligence.",
   "translations": {
     "zh-Hans": {
@@ -42,7 +63,37 @@
       "description": "領先的 AI 研究公司，專注於開發先進的語言模型和 AI 技術，用於編碼和通用智能。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.deepseek.com/en/transparency/",
+      "title": "DeepSeek transparency center",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/deepseek-ai",
+      "title": "DeepSeek official GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/deepseek-ai",
+      "title": "DeepSeek linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/DeepSeekAI",
+      "title": "DeepSeek twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.reddit.com/r/DeepSeekAI",
+      "title": "DeepSeek reddit community",
+      "fields": ["communityUrls.reddit"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.deepseek.com",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/deepseek-ai",

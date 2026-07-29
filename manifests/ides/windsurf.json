@@ -111,5 +111,27 @@
       "launchCommand": "windsurf",
       "installPath": null
     }
+  ],
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/company/windsurf",
+      "title": "Windsurf Editor linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/windsurf",
+      "title": "Windsurf Editor twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.youtube.com/@windsurf",
+      "title": "Windsurf Editor youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://windsurf.com/blog",
+      "title": "Windsurf Editor blog community",
+      "fields": ["communityUrls.blog"]
+    }
   ]
 }

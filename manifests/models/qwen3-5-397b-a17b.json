@@ -1,0 +1,137 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "qwen3-5-397b-a17b",
+  "name": "Qwen3.5-397B-A17B",
+  "description": "Alibaba's open-weight multimodal MoE model with 397B total and 17B active parameters for reasoning, coding, agents, and visual understanding.",
+  "translations": {
+    "de": {
+      "description": "Alibabas offenes multimodales MoE-Modell mit 397B Gesamt- und 17B aktiven Parametern für Schlussfolgern, Coding, Agenten und visuelles Verstehen."
+    },
+    "es": {
+      "description": "Modelo MoE multimodal abierto de Alibaba con 397B parámetros totales y 17B activos para razonamiento, programación, agentes y comprensión visual."
+    },
+    "fr": {
+      "description": "Modèle MoE multimodal ouvert d’Alibaba avec 397B paramètres au total et 17B actifs pour le raisonnement, le codage, les agents et la compréhension visuelle."
+    },
+    "id": {
+      "description": "Model MoE multimodal berbobot terbuka Alibaba dengan 397B parameter total dan 17B aktif untuk penalaran, coding, agen, dan pemahaman visual."
+    },
+    "ja": {
+      "description": "推論、コーディング、エージェント、視覚理解に対応するAlibabaのオープンウェイト・マルチモーダルMoEモデル。総397B、アクティブ17Bパラメータ。"
+    },
+    "ko": {
+      "description": "추론, 코딩, 에이전트와 시각 이해를 위한 Alibaba의 오픈 웨이트 멀티모달 MoE 모델로, 총 397B 및 활성 17B 매개변수를 갖습니다."
+    },
+    "pt": {
+      "description": "Modelo MoE multimodal aberto da Alibaba com 397B parâmetros totais e 17B ativos para raciocínio, programação, agentes e compreensão visual."
+    },
+    "ru": {
+      "description": "Открытая мультимодальная MoE-модель Alibaba с 397 млрд параметров и 17 млрд активных для рассуждений, программирования, агентов и визуального понимания."
+    },
+    "tr": {
+      "description": "Akıl yürütme, kodlama, aracılar ve görsel anlama için Alibaba'nın 397B toplam ve 17B etkin parametreli açık ağırlıklı çok modlu MoE modeli."
+    },
+    "zh-Hans": {
+      "description": "Alibaba 面向推理、编程、智能体和视觉理解的开放权重多模态 MoE 模型，总参数 397B、激活参数 17B。"
+    },
+    "zh-Hant": {
+      "description": "Alibaba 面向推理、程式設計、智慧體和視覺理解的開放權重多模態 MoE 模型，總參數 397B、啟用參數 17B。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B",
+      "title": "Qwen3.5-397B-A17B official model card",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "platformUrls.huggingface"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3.5-397B-A17B",
+      "title": "Qwen3.5-397B-A17B official repository metadata",
+      "fields": ["releaseDate"]
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "title": "Alibaba Cloud Model Studio model pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/qwen3-5-397b-a17b",
+      "title": "Artificial Analysis Qwen3.5 397B A17B model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-27",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://qwen.ai",
+  "docsUrl": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B",
+  "vendor": "Alibaba",
+  "size": "397B (17B active)",
+  "contextWindow": 262144,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": { "metric": "inputTokens", "min": 1, "max": 128000 },
+            "rates": {
+              "input": 0.172,
+              "output": 1.032,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          },
+          {
+            "condition": { "metric": "inputTokens", "min": 128001, "max": 256000 },
+            "rates": {
+              "input": 0.43,
+              "output": 2.58,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-02-16",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-5-397b-a17b",
+    "openrouter": null
+  }
+}

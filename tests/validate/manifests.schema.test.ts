@@ -132,6 +132,7 @@ function validateAllManifests(rootDir: string): string[] {
 
   const manifestSchemaMap: Record<string, string> = {
     clis: 'cli.schema.json',
+    desktops: 'desktop.schema.json',
     ides: 'ide.schema.json',
     extensions: 'extension.schema.json',
     providers: 'provider.schema.json',

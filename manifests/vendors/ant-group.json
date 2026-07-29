@@ -2,43 +2,58 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "ant-group",
   "name": "Ant Group",
-  "description": "Digital financial services company operating Alipay, the world's largest mobile payment platform serving over 1.3 billion users and providing fintech solutions globally.",
+  "description": "Ant Group is an open internet platform supporting digital payments, digital financial services, and the digital transformation of businesses.",
   "translations": {
     "zh-Hans": {
-      "description": "数字金融服务公司,运营全球最大的移动支付平台支付宝,服务超过 13 亿用户,提供全球金融科技解决方案。"
+      "description": "蚂蚁集团是一家开放互联网平台，支持数字支付、数字金融服务以及企业数字化转型。"
     },
     "de": {
-      "description": "Digitales Finanzdienstleistungsunternehmen, das Alipay betreibt, die weltweit größte mobile Zahlungsplattform mit über 1,3 Milliarden Nutzern."
+      "description": "Ant Group ist eine offene Internetplattform für digitale Zahlungen, digitale Finanzdienstleistungen und die digitale Transformation von Unternehmen."
     },
     "ko": {
-      "description": "13억 명 이상의 사용자에게 서비스를 제공하는 세계 최대의 모바일 결제 플랫폼인 알리페이를 운영하는 디지털 금융 서비스 기업으로, 글로벌 핀테크 솔루션을 제공합니다."
+      "description": "Ant Group은 디지털 결제, 디지털 금융 서비스 및 기업의 디지털 전환을 지원하는 개방형 인터넷 플랫폼입니다."
     },
     "es": {
-      "description": "Empresa de servicios financieros digitales que opera Alipay, la plataforma de pago móvil más grande del mundo dando servicio a más de 1300 millones de usuarios y proporcionando soluciones fintech g..."
+      "description": "Ant Group es una plataforma abierta de internet que ofrece pagos digitales, servicios financieros digitales y transformación digital para empresas."
     },
     "fr": {
-      "description": "Société de services financiers numériques exploitant Alipay, la plus grande plateforme de paiement mobile au monde servant plus de 1,3 milliard d'utilisateurs et fournissant des solutions fintech m..."
+      "description": "Ant Group est une plateforme internet ouverte qui soutient les paiements et services financiers numériques ainsi que la transformation numérique des entreprises."
     },
     "id": {
-      "description": "Perusahaan jasa keuangan digital yang mengoperasikan Alipay, platform pembayaran mobile terbesar di dunia melayani lebih dari 1,3 miliar pengguna dan menyediakan solusi fintech secara global."
+      "description": "Ant Group adalah platform internet terbuka yang mendukung pembayaran digital, layanan keuangan digital, dan transformasi digital bisnis."
     },
     "ja": {
-      "description": "世界最大のモバイル決済プラットフォームAlipayを運営し、13億人以上のユーザーにサービスを提供し、グローバルなフィンテックソリューションを提供するデジタル金融サービス会社。"
+      "description": "Ant Groupは、デジタル決済、デジタル金融サービス、企業のデジタル変革を支援するオープンなインターネットプラットフォームです。"
     },
     "pt": {
-      "description": "Empresa de serviços financeiros digitais que opera Alipay, a maior plataforma de pagamento móvel do mundo atendendo mais de 1,3 bilhão de usuários e fornecendo soluções fintech globalmente."
+      "description": "A Ant Group é uma plataforma aberta de internet que apoia pagamentos digitais, serviços financeiros digitais e a transformação digital de empresas."
     },
     "ru": {
-      "description": "Компания цифровых финансовых услуг, управляющая Alipay — крупнейшей в мире мобильной платежной платформой, обслуживающей более 1,3 миллиарда пользователей и предоставляющей глобальные финтех-решения."
+      "description": "Ant Group — открытая интернет-платформа для цифровых платежей, цифровых финансовых услуг и цифровой трансформации бизнеса."
     },
     "tr": {
-      "description": "13 milyardan fazla kullanıcıya hizmet veren dünya'nın en büyük mobil ödeme platformu Alipay'i işleten dijital finansal hizmetler şirketi, küresel fintech çözümleri sağlar."
+      "description": "Ant Group; dijital ödemeleri, dijital finansal hizmetleri ve işletmelerin dijital dönüşümünü destekleyen açık bir internet platformudur."
     },
     "zh-Hant": {
-      "description": "數字金融服務公司，運營全球最大的移動支付平台支付寶，服務超過 13 億用戶，提供全球金融科技解決方案。"
+      "description": "螞蟻集團是一家開放網際網路平台，支援數位支付、數位金融服務以及企業數位化轉型。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.antgroup.com/en",
+      "title": "Ant Group company profile",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/ant-group",
+      "title": "Ant Group linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.antgroup.com",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/ant-group",

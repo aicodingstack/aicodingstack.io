@@ -111,6 +111,15 @@
     "sciCode": 1.5,
     "liveCodeBench": 71.8
   },
+  "benchmarkTracking": [
+    {
+      "provider": "swe-bench",
+      "benchmark": "sweBench",
+      "leaderboard": "Verified",
+      "resultId": "20250726_mini-v1.0.0_gemini-2.5-pro",
+      "modelLabel": "mini-SWE-agent + Gemini 2.5 Pro (2025-05-06)"
+    }
+  ],
   "platformUrls": {
     "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/gemini-2-5-pro",

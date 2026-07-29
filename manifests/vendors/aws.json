@@ -2,43 +2,78 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "aws",
   "name": "AWS",
-  "description": "World's most comprehensive cloud platform providing 240+ services including compute, storage, AI/ML, and databases to help organizations innovate faster and lower costs.",
+  "description": "AWS is a cloud platform offering infrastructure and cloud and AI capabilities for compute, storage, databases, machine learning, and other workloads.",
   "translations": {
     "zh-Hans": {
-      "description": "全球最全面的云平台,提供 240 多项服务,包括计算、存储、AI/ML 和数据库,帮助组织更快创新并降低成本。"
+      "description": "AWS 是一个云平台，为计算、存储、数据库、机器学习及其他工作负载提供基础设施、云和 AI 能力。"
     },
     "de": {
-      "description": "Weltweit umfassendste Cloud-Plattform mit über 240 Services für Computing, Speicher, AI/ML und Datenbanken für schnellere Innovation und Kostensenkung."
+      "description": "AWS ist eine Cloud-Plattform mit Infrastruktur-, Cloud- und AI-Funktionen für Computing, Speicher, Datenbanken, maschinelles Lernen und weitere Workloads."
     },
     "ko": {
-      "description": "컴퓨팅, 스토리지, AI/ML 및 데이터베이스를 포함한 240개 이상의 서비스를 제공하는 세계에서 가장 포괄적인 클라우드 플랫폼으로, 조직이 더 빠르게 혁신하고 비용을 절감할 수 있도록 돕습니다."
+      "description": "AWS는 컴퓨팅, 스토리지, 데이터베이스, 머신러닝 및 기타 워크로드를 위한 인프라와 클라우드 및 AI 기능을 제공하는 클라우드 플랫폼입니다."
     },
     "es": {
-      "description": "Plataforma en la nube más comprehensiva del mundo, ofrece más de 240 servicios incluyendo computación, almacenamiento, IA/ML y bases de datos para ayudar a las organizaciones a innovar más rápido y..."
+      "description": "AWS es una plataforma de nube con infraestructura y capacidades de nube e IA para cómputo, almacenamiento, bases de datos, aprendizaje automático y otras cargas."
     },
     "fr": {
-      "description": "Plateforme cloud la plus complète au monde, offrant 240+ services incluant le calcul, le stockage, l'IA/ML et les bases de données pour aider les organisations à innover plus vite et à réduire les ..."
+      "description": "AWS est une plateforme cloud offrant une infrastructure et des capacités cloud et IA pour le calcul, le stockage, les bases de données et l’apprentissage automatique."
     },
     "id": {
-      "description": "Platform cloud paling komprehensif di dunia, menyediakan 240+ layanan termasuk komputasi, penyimpanan, AI/ML dan database untuk membantu organisasi berinovasi lebih cepat dan mengurangi biaya."
+      "description": "AWS adalah platform cloud yang menyediakan infrastruktur serta kemampuan cloud dan AI untuk komputasi, penyimpanan, basis data, machine learning, dan beban kerja lain."
     },
     "ja": {
-      "description": "世界で最も包括的なクラウドプラットフォーム。コンピューティング、ストレージ、AI/ML、データベースを含む240以上のサービスを提供し、組織がより速く革新し、コストを削減できるようにします。"
+      "description": "AWSは、コンピューティング、ストレージ、データベース、機械学習などのワークロード向けにインフラストラクチャ、クラウド、AI機能を提供するクラウドプラットフォームです。"
     },
     "pt": {
-      "description": "Plataforma em nuvem mais abrangente do mundo, fornece mais de 240 serviços incluindo computação, armazenamento, IA/ML e bancos de dados para ajudar as organizações a inovar mais rápido e reduzir cu..."
+      "description": "A AWS é uma plataforma de nuvem que oferece infraestrutura e recursos de nuvem e IA para computação, armazenamento, bancos de dados, aprendizado de máquina e outras cargas."
     },
     "ru": {
-      "description": "Самая полная облачная платформа в мире, предлагающая более 240 сервисов, включая вычислительные мощности, хранилище, ИИ/МL и базы данных, помогая организациям быстрее внедрять инновации и снижать р..."
+      "description": "AWS — облачная платформа с инфраструктурой и возможностями облачных вычислений и ИИ для вычислений, хранения, баз данных, машинного обучения и других нагрузок."
     },
     "tr": {
-      "description": "Dünyanın en kapsamlı bulut platformu, kuruluşların daha hızlı inovasyon yapmasına ve maliyetleri düşürmesine yardımcı olmak için 240+ hizmet sunuyor, bunlar arasında hesaplama, depolama, AI/ML ve v..."
+      "description": "AWS; işlem, depolama, veritabanları, makine öğrenimi ve diğer iş yükleri için altyapı, bulut ve AI yetenekleri sunan bir bulut platformudur."
     },
     "zh-Hant": {
-      "description": "全球最全面的雲端平台，提供 240 多項服務，包括運算、儲存、AI/ML 和資料庫，幫助組織更快創新並降低成本。"
+      "description": "AWS 是一個雲端平台，為運算、儲存、資料庫、機器學習及其他工作負載提供基礎設施、雲端和 AI 能力。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/what-is-aws/",
+      "title": "What is AWS",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/aws",
+      "title": "AWS verified GitHub organization",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/amazon-web-services",
+      "title": "AWS linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/awscloud",
+      "title": "AWS twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.youtube.com/@amazonwebservices",
+      "title": "AWS youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://aws.amazon.com/blogs",
+      "title": "AWS blog community",
+      "fields": ["communityUrls.blog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://aws.amazon.com",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/amazon-web-services",

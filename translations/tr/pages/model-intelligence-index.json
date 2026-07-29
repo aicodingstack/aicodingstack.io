@@ -1,31 +1,32 @@
 {
   "meta": {
-    "title": "Model Zekâsı Endeksi",
-    "description": "Kodlama modellerinin zekâ puanlarını sağlayıcı ve model serisine göre zaman içinde izleyin.",
-    "keywords": "model zekâsı endeksi, AI model zaman çizelgesi, kodlama modeli benchmarkları, model sürüm geçmişi"
+    "title": "Kapsamlı Model Zekâsı Endeksi",
+    "description": "AI modellerinin kapsamlı zekâ puanlarını sağlayıcı ve model serisine göre zaman içinde izleyin.",
+    "keywords": "kapsamlı model zekâsı endeksi, AI model zaman çizelgesi, kapsamlı AI benchmarkları, model sürüm geçmişi"
   },
-  "title": "Model Zekâsı Endeksi",
-  "description": "Kodlama modellerinin zekâ puanlarının sürümler arasında nasıl değiştiğini keşfedin.",
+  "title": "Kapsamlı Model Zekâsı Endeksi",
+  "description": "Modellerin kapsamlı zekâ puanlarının sürümler arasında nasıl değiştiğini keşfedin.",
   "releaseDate": "Sürüm tarihi",
   "chart": {
     "title": "Zaman içinde yetenek",
-    "axisHint": "Sürüm tarihi × Index",
+    "axisHint": "Sürüm tarihi × Endeks",
     "modelCount": "Katalogda {count} model",
-    "indexAxis": "Intelligence Index"
+    "indexAxis": "Zekâ Endeksi"
   },
   "filter": {
     "label": "Sağlayıcıya göre filtrele",
-    "showAll": "Tümünü göster"
+    "showAll": "Tümünü göster",
+    "seriesLabel": "Seriye göre filtrele"
   },
   "list": {
     "title": "Model indeksi",
-    "description": "Modelleri sürüm tarihine veya Index puanına göre sıralayın. Çubuk uzunlukları aynı ölçeği kullanır.",
-    "index": "Index",
-    "barLabel": "{model} Index: {score}"
+    "description": "Modelleri sürüm tarihine veya endeks puanına göre sıralayın. Çubuk uzunlukları aynı ölçeği kullanır.",
+    "index": "Endeks",
+    "barLabel": "{model} Endeksi: {score}"
   },
   "source": {
-    "attribution": "Artificial Analysis Intelligence Index v{version}, {date} tarihinde gözlemlendi. Kaynak:",
-    "estimated": "* Artificial Analysis tarafından gösterilen tahminleri belirtir. Puanlar listelenen model yapılandırmasını yansıtır.",
+    "attribution": "Artificial Analysis Zekâ Endeksi v{version}, {date} tarihinde gözlemlendi. Kaynak:",
+    "estimated": "* Artificial Analysis tarafından gösterilen tahminleri belirtir. Puanlar listelenen model yapılandırmasına ve bileşik Zekâ Endeksi'ne aittir; Kodlama Endeksi değildir.",
     "methodology": "Metodoloji"
   }
 }

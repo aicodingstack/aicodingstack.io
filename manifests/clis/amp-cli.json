@@ -101,5 +101,17 @@
       "launchCommand": "amp",
       "installPath": null
     }
+  ],
+  "sources": [
+    {
+      "url": "https://x.com/ampcode",
+      "title": "Amp twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://discord.com/invite/GT742pq9rS",
+      "title": "Amp discord community",
+      "fields": ["communityUrls.discord"]
+    }
   ]
 }

@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "モデル価格 × インテリジェンス",
+    "description": "主要なAIモデルをAPIトークン価格と総合知能指数で比較します。",
+    "keywords": "AIモデル価格比較, モデル知能, LLM API料金, コストパフォーマンス"
+  },
+  "title": "モデル価格 × インテリジェンス",
+  "description": "主要モデルのAPI価格とインテリジェンス能力を比較します。",
+  "chart": {
+    "title": "価格帯ごとの能力",
+    "axisHint": "加重API価格 × 総合知能指数",
+    "modelCount": "選択したモデル {count} 件",
+    "priceAxis": "100万トークンあたりUSD · 入力90% + 出力10%",
+    "indexAxis": "総合知能指数",
+    "scale": {
+      "label": "価格スケール",
+      "linear": "線形",
+      "logarithmic": "対数"
+    }
+  },
+  "filter": {
+    "label": "ベンダーで絞り込む",
+    "showAll": "すべて表示"
+  },
+  "list": {
+    "title": "選択したモデル",
+    "description": "100万トークンあたりの比較可能な米ドル建てAPI料金です。加重価格または総合知能指数で並べ替えられます。",
+    "blended": "加重価格",
+    "priceUnit": "USD / 100万トークン",
+    "index": "指数"
+  },
+  "source": {
+    "attribution": "Artificial Analysis 総合知能指数 v{version}、観測日 {date}。出典：",
+    "pricing": "価格はカタログ掲載の公式API情報を使用し、比較可能なファーストパーティの米ドル料金がない場合はArtificial Analysisが追跡する比較可能なAPI料金で補完します。加重価格は入力を{input}%、出力を{output}%として算出し、キャッシュ割引は含みません。",
+    "methodology": "知能指数の方法論",
+    "fallbackPricingSources": "補完価格の出典："
+  }
+}

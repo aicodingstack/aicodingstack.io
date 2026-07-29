@@ -67,7 +67,7 @@
     "twitter": "https://x.com/Qoder_ai_ide",
     "github": "https://github.com/QoderAI",
     "youtube": "https://www.youtube.com/@qoder_ai",
-    "discord": "https://discord.gg/NRpVfWbn",
+    "discord": "https://discord.gg/8NrHCxESyQ",
     "reddit": "https://www.reddit.com/r/Qoder",
     "blog": "https://qoder.com/blog"
   },
@@ -86,6 +86,38 @@
       "ideId": "jetbrains",
       "marketplaceUrl": "https://plugins.jetbrains.com/plugin/28926-qoder--think-deeper-build-better-",
       "installUri": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://x.com/Qoder_ai_ide",
+      "title": "Qoder twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://github.com/QoderAI",
+      "title": "Qoder github community",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.youtube.com/@qoder_ai",
+      "title": "Qoder youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://github.com/QoderAI",
+      "title": "Qoder discord community",
+      "fields": ["communityUrls.discord"]
+    },
+    {
+      "url": "https://www.reddit.com/r/Qoder",
+      "title": "Qoder reddit community",
+      "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://qoder.com/blog",
+      "title": "Qoder blog community",
+      "fields": ["communityUrls.blog"]
     }
   ]
 }

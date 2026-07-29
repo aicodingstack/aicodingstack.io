@@ -57,7 +57,12 @@
     {
       "url": "https://platform.claude.com/docs/en/about-claude/pricing",
       "title": "Claude API pricing",
-      "fields": ["tokenPricing"]
+      "fields": ["tokenPricing"],
+      "changeTracking": {
+        "method": "normalized-content-sha256",
+        "digest": "sha256:2ff7f541d89a824c7125b0cfab826e4b839e85f2ded2613c746415903266274b",
+        "observedAt": "2026-07-28"
+      }
     },
     {
       "url": "https://www.anthropic.com/news/claude-haiku-4-5",

@@ -15,6 +15,7 @@ import ClaudeOpus45 from '../../../manifests/models/claude-opus-4-5.json'
 import ClaudeOpus46 from '../../../manifests/models/claude-opus-4-6.json'
 import ClaudeOpus47 from '../../../manifests/models/claude-opus-4-7.json'
 import ClaudeOpus48 from '../../../manifests/models/claude-opus-4-8.json'
+import ClaudeOpus5 from '../../../manifests/models/claude-opus-5.json'
 import ClaudeSonnet3 from '../../../manifests/models/claude-sonnet-3.json'
 import ClaudeSonnet3520240620 from '../../../manifests/models/claude-sonnet-3-5-20240620.json'
 import ClaudeSonnet3520241022 from '../../../manifests/models/claude-sonnet-3-5-20241022.json'
@@ -47,6 +48,8 @@ import Gemini35FlashLite from '../../../manifests/models/gemini-3-5-flash-lite.j
 import Gemini36Flash from '../../../manifests/models/gemini-3-6-flash.json'
 import Gemini3Flash from '../../../manifests/models/gemini-3-flash.json'
 import Gemini3Pro from '../../../manifests/models/gemini-3-pro.json'
+import Gemma426bA4b from '../../../manifests/models/gemma-4-26b-a4b.json'
+import Gemma431b from '../../../manifests/models/gemma-4-31b.json'
 import Glm45 from '../../../manifests/models/glm-4-5.json'
 import Glm45Air from '../../../manifests/models/glm-4-5-air.json'
 import Glm45v from '../../../manifests/models/glm-4-5v.json'
@@ -88,6 +91,7 @@ import Grok45 from '../../../manifests/models/grok-4-5.json'
 import Grok420 from '../../../manifests/models/grok-4-20.json'
 import Grok4Fast from '../../../manifests/models/grok-4-fast.json'
 import GrokCodeFast1 from '../../../manifests/models/grok-code-fast-1.json'
+import Hy3 from '../../../manifests/models/hy3.json'
 import KimiK25 from '../../../manifests/models/kimi-k2-5.json'
 import KimiK26 from '../../../manifests/models/kimi-k2-6.json'
 import KimiK27Code from '../../../manifests/models/kimi-k2-7-code.json'
@@ -97,6 +101,9 @@ import KimiK2Thinking from '../../../manifests/models/kimi-k2-thinking.json'
 import KimiK3 from '../../../manifests/models/kimi-k3.json'
 import Llama4Maverick from '../../../manifests/models/llama-4-maverick.json'
 import Llama4Scout from '../../../manifests/models/llama-4-scout.json'
+import MimoV25 from '../../../manifests/models/mimo-v2-5.json'
+import MimoV25Pro from '../../../manifests/models/mimo-v2-5-pro.json'
+import MimoV2Flash from '../../../manifests/models/mimo-v2-flash.json'
 import MinimaxM2 from '../../../manifests/models/minimax-m2.json'
 import MinimaxM21 from '../../../manifests/models/minimax-m2-1.json'
 import MinimaxM25 from '../../../manifests/models/minimax-m2-5.json'
@@ -108,6 +115,9 @@ import MuseSpark11 from '../../../manifests/models/muse-spark-1-1.json'
 import O3 from '../../../manifests/models/o3.json'
 import O3Mini from '../../../manifests/models/o3-mini.json'
 import O4Mini from '../../../manifests/models/o4-mini.json'
+import Qwen3535bA3b from '../../../manifests/models/qwen3-5-35b-a3b.json'
+import Qwen35122bA10b from '../../../manifests/models/qwen3-5-122b-a10b.json'
+import Qwen35397bA17b from '../../../manifests/models/qwen3-5-397b-a17b.json'
 import Qwen3627b from '../../../manifests/models/qwen3-6-27b.json'
 import Qwen3635bA3b from '../../../manifests/models/qwen3-6-35b-a3b.json'
 import Qwen36MaxPreview from '../../../manifests/models/qwen3-6-max-preview.json'
@@ -131,6 +141,7 @@ export const modelsData = [
   ClaudeOpus47,
   ClaudeOpus48,
   ClaudeOpus4,
+  ClaudeOpus5,
   ClaudeSonnet3520240620,
   ClaudeSonnet3520241022,
   ClaudeSonnet37,
@@ -163,6 +174,8 @@ export const modelsData = [
   Gemini36Flash,
   Gemini3Flash,
   Gemini3Pro,
+  Gemma426bA4b,
+  Gemma431b,
   Glm45Air,
   Glm45,
   Glm45v,
@@ -204,6 +217,7 @@ export const modelsData = [
   Grok4Fast,
   Grok4,
   GrokCodeFast1,
+  Hy3,
   KimiK25,
   KimiK26,
   KimiK27Code,
@@ -213,6 +227,9 @@ export const modelsData = [
   KimiK3,
   Llama4Maverick,
   Llama4Scout,
+  MimoV25Pro,
+  MimoV25,
+  MimoV2Flash,
   MinimaxM21,
   MinimaxM25,
   MinimaxM27,
@@ -224,6 +241,9 @@ export const modelsData = [
   O3Mini,
   O3,
   O4Mini,
+  Qwen3535bA3b,
+  Qwen35122bA10b,
+  Qwen35397bA17b,
   Qwen3627b,
   Qwen3635bA3b,
   Qwen36MaxPreview,

@@ -1,0 +1,88 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "xiaomi",
+  "name": "Xiaomi",
+  "themeColor": {
+    "light": "#E85D00",
+    "dark": "#FF7A1A"
+  },
+  "modelSeries": [
+    {
+      "id": "mimo-pro",
+      "name": "MiMo Pro",
+      "modelIds": ["mimo-v2-5-pro"]
+    },
+    {
+      "id": "mimo",
+      "name": "MiMo",
+      "modelIds": ["mimo-v2-5"]
+    },
+    {
+      "id": "mimo-flash",
+      "name": "MiMo Flash",
+      "modelIds": ["mimo-v2-flash"]
+    }
+  ],
+  "description": "A global technology company developing smartphones, connected devices, intelligent systems, and the Xiaomi MiMo family of AI models.",
+  "translations": {
+    "de": {
+      "description": "Ein globales Technologieunternehmen, das Smartphones, vernetzte Geräte, intelligente Systeme und die Xiaomi-MiMo-Familie von AI-Modellen entwickelt."
+    },
+    "es": {
+      "description": "Empresa tecnológica global que desarrolla teléfonos, dispositivos conectados, sistemas inteligentes y la familia de modelos de IA Xiaomi MiMo."
+    },
+    "fr": {
+      "description": "Entreprise technologique mondiale développant des smartphones, des appareils connectés, des systèmes intelligents et la famille de modèles d’IA Xiaomi MiMo."
+    },
+    "id": {
+      "description": "Perusahaan teknologi global yang mengembangkan ponsel, perangkat terhubung, sistem cerdas, dan keluarga model AI Xiaomi MiMo."
+    },
+    "ja": {
+      "description": "スマートフォン、コネクテッドデバイス、インテリジェントシステム、Xiaomi MiMo AIモデル群を開発するグローバルテクノロジー企業。"
+    },
+    "ko": {
+      "description": "스마트폰, 연결형 기기, 지능형 시스템과 Xiaomi MiMo AI 모델 제품군을 개발하는 글로벌 기술 기업입니다."
+    },
+    "pt": {
+      "description": "Empresa global de tecnologia que desenvolve smartphones, dispositivos conectados, sistemas inteligentes e a família de modelos de IA Xiaomi MiMo."
+    },
+    "ru": {
+      "description": "Глобальная технологическая компания, разрабатывающая смартфоны, подключённые устройства, интеллектуальные системы и семейство AI-моделей Xiaomi MiMo."
+    },
+    "tr": {
+      "description": "Akıllı telefonlar, bağlantılı cihazlar, akıllı sistemler ve Xiaomi MiMo AI model ailesini geliştiren küresel bir teknoloji şirketi."
+    },
+    "zh-Hans": {
+      "description": "开发智能手机、互联设备、智能系统和 Xiaomi MiMo AI 模型系列的全球科技公司。"
+    },
+    "zh-Hant": {
+      "description": "開發智慧型手機、互聯裝置、智慧系統和 Xiaomi MiMo AI 模型系列的全球科技公司。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://mimo.xiaomi.com/",
+      "title": "Xiaomi MiMo official website",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/XiaomiMiMo",
+      "title": "Xiaomi MiMo official GitHub organization",
+      "fields": ["communityUrls.github"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-27",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://mimo.xiaomi.com/",
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": "https://github.com/XiaomiMiMo",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  }
+}

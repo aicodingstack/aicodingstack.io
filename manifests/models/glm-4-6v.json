@@ -2,49 +2,49 @@
   "$schema": "../$schemas/model.schema.json",
   "id": "glm-4-6v",
   "name": "GLM-4.6V",
-  "description": "A 108B foundation model with native multimodal function calling, 128K context, and SoTA visual understanding for image-text-to-text tasks.",
+  "description": "A 106B foundation model with native multimodal function calling, 128K context, and advanced visual understanding for image-text-to-text tasks.",
   "translations": {
     "zh-Hans": {
-      "description": "一个 108B 基础模型，具备原生多模态函数调用、128K 上下文和卓越的图像-文本-文本任务视觉理解能力。"
+      "description": "一个 106B 基础模型，具备原生多模态函数调用、128K 上下文和先进的图像文本理解能力。"
     },
     "de": {
-      "description": "Ein 108B-Basismodell mit nativer multimodaler Funktionsaufrufung, 128K-Kontext und hervorragendem visuellen Verständnis für Bild-zu-Text-Aufgaben."
+      "description": "Ein 106B-Basismodell mit nativen multimodalen Funktionsaufrufen, 128K-Kontext und fortschrittlichem visuellem Verständnis für Bild-Text-Aufgaben."
     },
     "ko": {
-      "description": "108B 기본 모델로, 기본적인 멀티모달 함수 호출, 128K 컨텍스트 및 이미지-텍스트 변환 작업에 뛰어난 시각 이해 능력을 갖추고 있습니다."
+      "description": "106B 기본 모델로, 네이티브 멀티모달 함수 호출, 128K 컨텍스트 및 이미지-텍스트 작업을 위한 고급 시각 이해 능력을 갖추고 있습니다."
     },
     "es": {
-      "description": "Un modelo base de 108B con invocacion de funciones multimodal nativa, contexto de 128K y comprension visual sobresaliente para tareas de imagen-a-texto."
+      "description": "Un modelo base de 106B con invocacion de funciones multimodal nativa, contexto de 128K y comprension visual avanzada para tareas de imagen y texto."
     },
     "fr": {
-      "description": "Un modele de base de 108B avec appel de fonction multimodal natif, contexte de 128K et comprehension visuelle exceptionnelle pour les taches image-a-texte."
+      "description": "Un modele de base de 106B avec appel de fonction multimodal natif, contexte de 128K et comprehension visuelle avancee pour les taches image-texte."
     },
     "id": {
-      "description": "Model dasar 108B dengan pemanggilan fungsi multimodal asli, konteks 128K dan pemahaman visual luar biasa untuk tugas gambar-ke-teks."
+      "description": "Model dasar 106B dengan pemanggilan fungsi multimodal native, konteks 128K, dan pemahaman visual canggih untuk tugas gambar-teks."
     },
     "ja": {
-      "description": "ネイティブマルチモーダル関数呼び出し、128Kコンテキスト、画像からテキストへのタスクのための優れた視覚理解を備えた108Bベースモデル。"
+      "description": "ネイティブなマルチモーダル関数呼び出し、128Kコンテキスト、画像テキストタスク向けの高度な視覚理解を備えた106B基盤モデル。"
     },
     "pt": {
-      "description": "Um modelo base de 108B com invocacao de funcoes multimodal nativa, contexto de 128K e compreensao visual sobresaliente para tarefas de imagem-para-texto."
+      "description": "Um modelo base de 106B com chamadas de funcao multimodais nativas, contexto de 128K e compreensao visual avancada para tarefas de imagem e texto."
     },
     "ru": {
-      "description": "Базовая модель 108B с собственной мультифункциональностью, контекстом 128K и превосходным визуальным пониманием для задач изображение-в-текст."
+      "description": "Базовая модель 106B с нативным мультимодальным вызовом функций, контекстом 128K и продвинутым визуальным пониманием для задач с изображениями и текстом."
     },
     "tr": {
-      "description": "Orijinal cok modlu fonksiyon cagirme, 128K baglam ve goruntuye-metin gorevleri icin mukemmel gorsel anlasima sahip 108B temel model."
+      "description": "Yerel cok modlu fonksiyon cagirma, 128K baglam ve goruntu-metin gorevleri icin gelismis gorsel anlama ozelliklerine sahip 106B temel model."
     },
     "zh-Hant": {
-      "description": "一個 108B 基礎模型，具備原生多模態函數調用、128K 上下文和卓越的圖像-文本-文本任務視覺理解能力。"
+      "description": "一個 106B 基礎模型，具備原生多模態函數調用、128K 上下文和先進的圖像文字理解能力。"
     }
   },
   "verified": true,
   "websiteUrl": "https://z.ai",
   "docsUrl": "https://docs.z.ai/guides/vlm/glm-4.6v",
   "vendor": "Z.ai",
-  "size": "108B",
+  "size": "106B",
   "contextWindow": 128000,
-  "maxOutput": 24576,
+  "maxOutput": 32768,
   "tokenPricing": {
     "status": "available",
     "primaryOffer": "global-standard",
@@ -71,14 +71,14 @@
     ]
   },
   "releaseDate": "2025-12-08",
-  "lifecycle": "latest",
-  "knowledgeCutoff": "2025-12",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
   "inputModalities": ["text", "image", "video"],
   "outputModalities": ["text"],
   "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
     "sweBench": null,
-    "terminalBench": 0.245,
+    "terminalBench": null,
     "mmmu": null,
     "mmmuPro": null,
     "webDevArena": null,
@@ -89,5 +89,43 @@
     "huggingface": "https://huggingface.co/zai-org/GLM-4.6V",
     "artificialAnalysis": "https://artificialanalysis.ai/models/glm-4-6v",
     "openrouter": "https://openrouter.ai/z-ai/glm-4.6v"
-  }
+  },
+  "sources": [
+    {
+      "url": "https://docs.z.ai/guides/vlm/glm-4.6v",
+      "title": "Z.ai GLM-4.6V model guide",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/zai-org/GLM-4.6V",
+      "title": "Z.ai official GLM-4.6V model card",
+      "fields": ["size", "platformUrls.huggingface"]
+    },
+    {
+      "url": "https://docs.z.ai/guides/overview/concept-param",
+      "title": "Z.ai model output limits",
+      "fields": ["maxOutput"]
+    },
+    {
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "title": "Z.ai model release notes",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "title": "Z.ai API pricing",
+      "fields": ["tokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

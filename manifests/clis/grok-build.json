@@ -88,12 +88,12 @@
   },
   "communityUrls": {
     "linkedin": null,
-    "twitter": "https://x.com/xai",
+    "twitter": null,
     "github": "https://github.com/xai-org/grok-build",
     "youtube": null,
     "discord": null,
     "reddit": null,
-    "blog": "https://x.ai/news"
+    "blog": null
   },
   "relatedProducts": [],
   "platforms": [

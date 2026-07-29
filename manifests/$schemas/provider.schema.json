@@ -26,7 +26,7 @@
         },
         "communityUrls": {
           "$ref": "./ref/community-urls.schema.json",
-          "description": "Community presence URLs for the provider"
+          "description": "Provider-specific community URLs. Organization-level URLs belong to the vendor record and are inherited at read time."
         }
       },
       "required": ["type", "applyKeyUrl", "platformUrls", "communityUrls"]

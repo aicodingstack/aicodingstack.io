@@ -8,10 +8,17 @@ import Header from '@/components/Header'
 import { Breadcrumb } from '@/components/navigation/Breadcrumb'
 import ComparisonTable, { type ComparisonColumn } from '@/components/product/ComparisonTable'
 import { Link } from '@/i18n/navigation'
-import { clisData as clis } from '@/lib/generated'
+import { withVendorCommunityUrlsForCatalog } from '@/lib/community-urls'
+import { clisData, vendorsData } from '@/lib/generated'
 import { getGithubStars } from '@/lib/generated/github-stars'
 import { renderLicense } from '@/lib/license'
 import { formatPrice, type PricingTier } from '@/lib/pricing'
+import type { ManifestCLI, ManifestVendor } from '@/types/manifests'
+
+const clis = withVendorCommunityUrlsForCatalog(
+  clisData as unknown as ManifestCLI[],
+  vendorsData as unknown as ManifestVendor[]
+)
 
 type Props = {
   locale: string
@@ -75,12 +82,7 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
       render: (_: unknown, item: Record<string, unknown>) => {
         const id = item.id as string
         const stars = getGithubStars('clis', id)
-        const communityUrls = item.communityUrls as
-          | {
-              github?: string
-            }
-          | undefined
-        const githubUrl = communityUrls?.github
+        const githubUrl = item.githubUrl as string | null | undefined
 
         if (stars === null || stars === undefined)
           return <span className="text-right block">-</span>

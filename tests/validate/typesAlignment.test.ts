@@ -144,6 +144,11 @@ function validateTypesAlignment(rootDir: string): string[] {
       iface: 'ManifestCLI',
       name: 'CLI',
     },
+    {
+      schema: path.join(schemasDir, 'desktop.schema.json'),
+      iface: 'ManifestDesktop',
+      name: 'Desktop',
+    },
   ] as const
 
   for (const check of checks) {

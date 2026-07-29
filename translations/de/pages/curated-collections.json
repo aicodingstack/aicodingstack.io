@@ -1,16 +1,16 @@
 {
   "articles": {
-    "description": "Must-read articles about AI coding from industry leaders"
+    "description": "Pflichtlektüre zum KI-gestützten Programmieren von führenden Köpfen der Branche"
   },
   "meta": {
-    "description": "Handpicked resources, specifications, protocols, and tools for AI coding. Featured articles, standards, and ecosystem utilities.",
-    "title": "Curated Collections - Essential AI Coding Resources"
+    "description": "Ausgewählte Ressourcen, Spezifikationen, Protokolle und Werkzeuge für KI-gestütztes Programmieren. Mit ausgewählten Artikeln, Standards und Werkzeugen für das Ökosystem.",
+    "title": "Ausgewählte Sammlungen – Wichtige Ressourcen für KI-gestütztes Programmieren"
   },
   "specifications": {
-    "description": "Essential standards and protocols for modern software development"
+    "description": "Wichtige Standards und Protokolle für moderne Softwareentwicklung"
   },
-  "subtitle": "Handpicked resources, specifications, protocols, and tools for AI coding",
+  "subtitle": "Ausgewählte Ressourcen, Spezifikationen, Protokolle und Werkzeuge für KI-gestütztes Programmieren",
   "tools": {
-    "description": "Curated tools and utilities for AI coding workflows"
+    "description": "Ausgewählte Werkzeuge und Hilfsmittel für KI-gestützte Programmierabläufe"
   }
 }

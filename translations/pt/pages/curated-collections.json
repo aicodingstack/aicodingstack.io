@@ -1,16 +1,16 @@
 {
   "articles": {
-    "description": "Must-read articles about AI coding from industry leaders"
+    "description": "Artigos essenciais sobre programação com IA escritos por líderes do setor"
   },
   "meta": {
-    "description": "Handpicked resources, specifications, protocols, and tools for AI coding. Featured articles, standards, and ecosystem utilities.",
-    "title": "Curated Collections - Essential AI Coding Resources"
+    "description": "Recursos, especificações, protocolos e ferramentas selecionados para programação com IA. Inclui artigos em destaque, padrões e utilitários do ecossistema.",
+    "title": "Coleções selecionadas - Recursos essenciais para programação com IA"
   },
   "specifications": {
-    "description": "Essential standards and protocols for modern software development"
+    "description": "Padrões e protocolos essenciais para o desenvolvimento moderno de software"
   },
-  "subtitle": "Handpicked resources, specifications, protocols, and tools for AI coding",
+  "subtitle": "Recursos, especificações, protocolos e ferramentas selecionados para programação com IA",
   "tools": {
-    "description": "Curated tools and utilities for AI coding workflows"
+    "description": "Ferramentas e utilitários selecionados para fluxos de trabalho de programação com IA"
   }
 }

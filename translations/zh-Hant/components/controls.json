@@ -5,10 +5,10 @@
   },
   "currencySwitcher": {
     "cny": "換算為人民幣",
-    "label": "價格顯示幣別",
+    "label": "價格幣別",
     "loadingRate": "正在載入參考匯率…",
-    "native": "保留原始幣別",
-    "nativeShort": "原幣",
+    "native": "顯示原始幣別",
+    "nativeShort": "原始幣別",
     "rateUnavailable": "參考匯率暫時無法使用，目前顯示原始價格。",
     "referenceRate": "參考匯率：1 美元 = {rate} 人民幣（{date}）",
     "usd": "換算為美元"

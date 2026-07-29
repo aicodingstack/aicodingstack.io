@@ -54,9 +54,14 @@
       "url": "https://help.aliyun.com/en/model-studio/coding-plan",
       "title": "Model Studio Coding Plan",
       "fields": ["lifecycle"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/qwen3-7-plus",
+      "title": "Artificial Analysis Qwen3.7 Plus model page",
+      "fields": ["referenceTokenPricing", "platformUrls.artificialAnalysis"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-28",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.alibabacloud.com/product/modelstudio",
@@ -99,6 +104,21 @@
       }
     ]
   },
+  "referenceTokenPricing": {
+    "currency": "USD",
+    "basis": "first-party-api",
+    "rates": {
+      "input": 0.4,
+      "output": 1.6,
+      "cacheRead": 0.04,
+      "cacheWrite": 0.5
+    },
+    "source": {
+      "name": "Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/qwen3-7-plus",
+      "observedAt": "2026-07-28"
+    }
+  },
   "releaseDate": "2026-05-26",
   "lifecycle": "latest",
   "knowledgeCutoff": null,
@@ -114,5 +134,9 @@
     "sciCode": null,
     "liveCodeBench": null
   },
-  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-7-plus",
+    "openrouter": null
+  }
 }

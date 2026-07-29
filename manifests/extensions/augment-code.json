@@ -76,9 +76,9 @@
     "issue": null
   },
   "communityUrls": {
-    "linkedin": "https://www.linkedin.com/company/augmentinc",
-    "twitter": "https://x.com/augmentcode",
-    "github": "https://github.com/augmentcode",
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
     "youtube": null,
     "discord": null,
     "reddit": null,
@@ -95,6 +95,13 @@
       "ideId": "jetbrains",
       "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=augment.vscode-augment",
       "installUri": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.augmentcode.com/blog",
+      "title": "Augment Code blog community",
+      "fields": ["communityUrls.blog"]
     }
   ]
 }

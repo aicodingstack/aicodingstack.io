@@ -59,6 +59,11 @@
       "url": "https://marketplace.visualstudio.com/items/Google.geminicodeassist/license",
       "title": "Gemini Code Assist plugin license",
       "fields": ["license"]
+    },
+    {
+      "url": "https://www.youtube.com/@GoogleDevelopers",
+      "title": "Gemini Code Assist youtube community",
+      "fields": ["communityUrls.youtube"]
     }
   ],
   "lastVerifiedAt": "2026-07-19",
@@ -108,9 +113,9 @@
     "issue": null
   },
   "communityUrls": {
-    "linkedin": "https://www.linkedin.com/company/google",
+    "linkedin": null,
     "twitter": null,
-    "github": "https://github.com/google",
+    "github": null,
     "youtube": "https://www.youtube.com/@GoogleDevelopers",
     "discord": null,
     "reddit": null,

@@ -26,6 +26,7 @@ const ALL_REVALIDATION_PATHS = [
   'ai-coding-landscape',
   'open-source-rank',
   'model-intelligence-index',
+  'model-price-intelligence-index',
   'search',
 ]
 
@@ -37,7 +38,7 @@ const CATEGORY_PATHS: Record<string, string[]> = {
   clis: ['clis'],
   desktops: ['desktops'],
   extensions: ['extensions'],
-  models: ['models', 'model-intelligence-index'],
+  models: ['models', 'model-intelligence-index', 'model-price-intelligence-index'],
   providers: ['model-providers'],
   vendors: ['vendors'],
   tools: ['ides', 'clis', 'desktops', 'extensions'],

@@ -34,8 +34,6 @@
     "data-health": "npx tsx scripts/validate/data-health.ts",
     "data-health:check": "npx tsx scripts/validate/data-health.ts --check-snapshot --fail-on=error",
     "data-health:report": "npx tsx scripts/validate/data-health.ts --write",
-    "changelog:check": "npx tsx scripts/validate/changelog.ts --check",
-    "changelog:generate": "npx tsx scripts/validate/changelog.ts --write",
     "dev:e2e": "next dev --turbopack -p 3100",
     "generate": "npx tsx scripts/generate/index.ts",
     "generate:manifests": "npx tsx scripts/generate/index.ts manifest-indexes",
@@ -44,7 +42,12 @@
     "refactor:sort-fields": "npx tsx scripts/refactor/index.ts sort-manifest-fields",
     "fetch": "npx tsx scripts/fetch/index.ts",
     "fetch:github-stars": "npx tsx scripts/fetch/index.ts github-stars",
-    "fetch:benchmarks": "npx tsx scripts/fetch/index.ts benchmarks",
+    "fetch:product-versions": "npx tsx scripts/fetch/fetch-product-versions.ts --write",
+    "fetch:product-versions:check": "npx tsx scripts/fetch/fetch-product-versions.ts --check",
+    "fetch:benchmarks": "npx tsx scripts/fetch/fetch-benchmarks.ts --write",
+    "fetch:benchmarks:check": "npx tsx scripts/fetch/fetch-benchmarks.ts --check",
+    "fetch:model-sources": "npx tsx scripts/fetch/fetch-model-sources.ts --write",
+    "fetch:model-sources:check": "npx tsx scripts/fetch/fetch-model-sources.ts --check",
     "deploy": "npm run build:next && opennextjs-cloudflare build --skipBuild && opennextjs-cloudflare deploy",
     "preview": "npm run build:next && opennextjs-cloudflare build --skipBuild && opennextjs-cloudflare preview",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts",
@@ -114,7 +117,10 @@
     "node": "^22.0.0"
   },
   "overrides": {
-    "@node-minify/core": "8.0.5",
+    "@node-minify/core": {
+      ".": "9.0.2",
+      "glob": "12.0.0"
+    },
     "next": {
       "sharp": "0.35.2"
     },

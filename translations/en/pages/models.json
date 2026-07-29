@@ -1,7 +1,16 @@
 {
   "context": "Context:",
+  "guide": {
+    "compareModels": "Compare models side by side",
+    "description": "Compare coding models by context window, token pricing, lifecycle, and provider. Use the side-by-side comparison for detailed specifications, then review API providers for model availability.",
+    "exploreProviders": "Explore model providers",
+    "title": "How to compare AI coding models"
+  },
   "lifecycle": {
     "noResults": "No {lifecycle} models match your search"
+  },
+  "meta": {
+    "description": "Compare AI coding models by context window, token pricing, lifecycle, and provider. Explore current coding LLMs from leading model developers."
   },
   "pricing": "Pricing:",
   "size": "Size:",

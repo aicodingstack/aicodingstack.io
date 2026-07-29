@@ -2,13 +2,15 @@ import { useTranslations } from 'next-intl'
 import React from 'react'
 import { DeprecatedBadge } from '@/components/controls/DeprecatedBadge'
 import { VerifiedBadge } from '@/components/controls/VerifiedBadge'
+import { Link } from '@/i18n/navigation'
 import { renderLicense } from '@/lib/license'
 
 export interface ProductHeroProps {
   // Product identity
   name: string
-  description: string
+  description: React.ReactNode
   vendor?: string
+  vendorHref?: string
   category: 'CLI' | 'IDE' | 'DESKTOP' | 'EXTENSION' | 'PROVIDER' | 'MODEL' | 'VENDOR'
   categoryLabel?: string // Optional custom label for the badge
   verified?: boolean // Whether the product is verified
@@ -59,6 +61,7 @@ export function ProductHero({
   name,
   description,
   vendor,
+  vendorHref,
   category,
   categoryLabel,
   verified = false,
@@ -123,7 +126,16 @@ export function ProductHero({
                 <span className="text-[var(--color-text-muted)]">
                   {tShared('categories.singular.vendor')}:
                 </span>
-                <span className="font-medium">{vendor}</span>
+                {vendorHref ? (
+                  <Link
+                    href={vendorHref}
+                    className="font-medium underline-offset-2 hover:underline hover:text-[var(--color-text-secondary)] transition-colors"
+                  >
+                    {vendor}
+                  </Link>
+                ) : (
+                  <span className="font-medium">{vendor}</span>
+                )}
               </div>
             )}
 

@@ -41,6 +41,7 @@ import Tabnine from '../../../manifests/vendors/tabnine.json'
 import Tencent from '../../../manifests/vendors/tencent.json'
 import VerdentAi from '../../../manifests/vendors/verdent-ai.json'
 import Xai from '../../../manifests/vendors/xai.json'
+import Xiaomi from '../../../manifests/vendors/xiaomi.json'
 import ZAi from '../../../manifests/vendors/z-ai.json'
 import ZedIndustries from '../../../manifests/vendors/zed-industries.json'
 import type { ManifestVendor } from '../../types/manifests'
@@ -83,6 +84,7 @@ export const vendorsData = [
   Tencent,
   VerdentAi,
   Xai,
+  Xiaomi,
   ZAi,
   ZedIndustries,
 ] as unknown as ManifestVendor[]

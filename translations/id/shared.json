@@ -43,18 +43,18 @@
       "extensions": "All Extensions",
       "ides": "All IDEs",
       "modelProviders": "All Model Providers",
-      "models": "All Models",
+      "models": "Semua model",
       "vendors": "All Vendors"
     },
     "plural": {
-      "clis": "CLIs",
-      "desktops": "Desktop",
-      "extensions": "Extensions",
-      "ides": "IDEs",
-      "modelProviders": "Model Providers",
-      "models": "Models",
-      "providers": "Providers",
-      "vendors": "Vendors"
+      "clis": "CLI",
+      "desktops": "Aplikasi desktop",
+      "extensions": "Ekstensi",
+      "ides": "IDE",
+      "modelProviders": "Penyedia model",
+      "models": "Model",
+      "providers": "Penyedia",
+      "vendors": "Vendor"
     },
     "singular": {
       "cli": "CLI",
@@ -64,20 +64,20 @@
       "model": "Model",
       "modelProvider": "Model Provider",
       "provider": "Provider",
-      "vendor": "Vendor"
+      "vendor": "Produsen"
     }
   },
   "labels": {
     "cache": "Cache",
     "findOnAiPlatforms": "Temukan di Platform AI",
     "getApiKey": "Dapatkan Kunci API",
-    "input": "Input",
+    "input": "Masukan",
     "name": "Nama",
-    "output": "Output",
+    "output": "Keluaran",
     "quickLinks": "Tautan Cepat",
-    "searchByName": "Search by name...",
+    "searchByName": "Cari berdasarkan nama...",
     "specifications": "Spesifikasi",
-    "totalContext": "Total Context"
+    "totalContext": "Konteks total"
   },
   "lifecycle": {
     "deprecated": "Usang",
@@ -129,20 +129,21 @@
     "aiCodingStack": "AI Coding Stack",
     "articles": "Articles",
     "benchmarks": "Tolok ukur",
+    "by": "oleh",
     "collections": "Collections",
     "community": "Community",
     "communityLinks": "Community Links",
     "comparison": "Comparison",
-    "contextWindow": "ContextWindow",
+    "contextWindow": "Jendela konteks",
     "curatedCollections": "Curated Collections",
-    "docs": "Docs",
+    "docs": "Dokumentasi",
     "documentation": "Documentation",
     "ecosystemSubtitle": "Jelajahi ekosistem AI coding lengkap: IDE, CLI, ekstensi, model, dan penyedia.",
     "ecosystemTools": "Ecosystem Tools",
     "faq": "FAQ",
     "featuredArticles": "Featured Articles",
     "followUs": "Follow us",
-    "indexLabel": "INDEX",
+    "indexLabel": "Indeks",
     "landscapeDescription": "Visualisasikan ekosistem AI coding lengkap",
     "landscapeTitle": "Lanskap AI Coding",
     "license": "License",

@@ -1,0 +1,137 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "qwen3-5-35b-a3b",
+  "name": "Qwen3.5-35B-A3B",
+  "description": "Alibaba's compact open-weight multimodal MoE model with 35B total and 3B active parameters for fast coding, agent, reasoning, and visual workloads.",
+  "translations": {
+    "de": {
+      "description": "Alibabas kompaktes offenes multimodales MoE-Modell mit 35B Gesamt- und 3B aktiven Parametern für schnelles Coding, Agenten, Schlussfolgern und visuelle Aufgaben."
+    },
+    "es": {
+      "description": "Modelo MoE multimodal abierto y compacto de Alibaba con 35B parámetros totales y 3B activos para programación, agentes, razonamiento y tareas visuales rápidas."
+    },
+    "fr": {
+      "description": "Modèle MoE multimodal ouvert et compact d’Alibaba avec 35B paramètres au total et 3B actifs pour le codage, les agents, le raisonnement et les tâches visuelles rapides."
+    },
+    "id": {
+      "description": "Model MoE multimodal berbobot terbuka dan ringkas dari Alibaba dengan 35B parameter total dan 3B aktif untuk coding, agen, penalaran, dan tugas visual yang cepat."
+    },
+    "ja": {
+      "description": "高速なコーディング、エージェント、推論、視覚処理向けのAlibaba製コンパクトなオープンウェイト・マルチモーダルMoEモデル。総35B、アクティブ3B。"
+    },
+    "ko": {
+      "description": "빠른 코딩, 에이전트, 추론과 시각 작업을 위한 Alibaba의 소형 오픈 웨이트 멀티모달 MoE 모델로, 총 35B 및 활성 3B 매개변수를 갖습니다."
+    },
+    "pt": {
+      "description": "Modelo MoE multimodal aberto e compacto da Alibaba com 35B parâmetros totais e 3B ativos para programação, agentes, raciocínio e tarefas visuais rápidas."
+    },
+    "ru": {
+      "description": "Компактная открытая мультимодальная MoE-модель Alibaba с 35 млрд параметров и 3 млрд активных для быстрого программирования, агентов, рассуждений и визуальных задач."
+    },
+    "tr": {
+      "description": "Hızlı kodlama, aracılar, akıl yürütme ve görsel işler için Alibaba'nın 35B toplam ve 3B etkin parametreli kompakt açık ağırlıklı çok modlu MoE modeli."
+    },
+    "zh-Hans": {
+      "description": "Alibaba 面向快速编程、智能体、推理和视觉任务的紧凑型开放权重多模态 MoE 模型，总参数 35B、激活参数 3B。"
+    },
+    "zh-Hant": {
+      "description": "Alibaba 面向快速程式設計、智慧體、推理和視覺任務的緊湊型開放權重多模態 MoE 模型，總參數 35B、啟用參數 3B。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
+      "title": "Qwen3.5-35B-A3B official model card",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "platformUrls.huggingface"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3.5-35B-A3B",
+      "title": "Qwen3.5-35B-A3B official repository metadata",
+      "fields": ["releaseDate"]
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "title": "Alibaba Cloud Model Studio model pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/qwen3-5-35b-a3b-non-reasoning",
+      "title": "Artificial Analysis Qwen3.5 35B A3B model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-27",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://qwen.ai",
+  "docsUrl": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
+  "vendor": "Alibaba",
+  "size": "35B (3B active)",
+  "contextWindow": 262144,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": { "metric": "inputTokens", "min": 1, "max": 128000 },
+            "rates": {
+              "input": 0.057,
+              "output": 0.459,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          },
+          {
+            "condition": { "metric": "inputTokens", "min": 128001, "max": 256000 },
+            "rates": {
+              "input": 0.229,
+              "output": 1.835,
+              "cacheRead": null,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-02-24",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-5-35b-a3b-non-reasoning",
+    "openrouter": null
+  }
+}

@@ -77,12 +77,12 @@
   },
   "communityUrls": {
     "linkedin": null,
-    "twitter": "https://x.com/clinebot",
-    "github": "https://github.com/cline/cline",
+    "twitter": null,
+    "github": null,
     "youtube": null,
     "discord": null,
-    "reddit": "https://www.reddit.com/r/Cline",
-    "blog": "https://cline.bot/blog"
+    "reddit": null,
+    "blog": null
   },
   "relatedProducts": [],
   "supportedIdes": [

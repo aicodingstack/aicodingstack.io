@@ -76,10 +76,10 @@
     "issue": "https://youtrack.jetbrains.com/issues/IDEA"
   },
   "communityUrls": {
-    "linkedin": "https://www.linkedin.com/company/jetbrains",
+    "linkedin": null,
     "twitter": "https://x.com/intellijidea",
     "github": "https://github.com/JetBrains/intellij-community",
-    "youtube": "https://www.youtube.com/@JetBrainsTV",
+    "youtube": null,
     "discord": null,
     "reddit": "https://www.reddit.com/r/IntelliJIDEA",
     "blog": "https://blog.jetbrains.com/idea"
@@ -103,6 +103,28 @@
       "installCommand": "https://www.jetbrains.com/idea/download",
       "launchCommand": "idea",
       "installPath": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://x.com/intellijidea",
+      "title": "IntelliJ IDEA twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://github.com/JetBrains/intellij-community",
+      "title": "IntelliJ IDEA github community",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.reddit.com/r/IntelliJIDEA",
+      "title": "IntelliJ IDEA reddit community",
+      "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://blog.jetbrains.com/idea",
+      "title": "IntelliJ IDEA blog community",
+      "fields": ["communityUrls.blog"]
     }
   ]
 }

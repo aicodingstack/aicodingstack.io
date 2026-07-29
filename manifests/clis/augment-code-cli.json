@@ -76,8 +76,8 @@
     "issue": null
   },
   "communityUrls": {
-    "linkedin": "https://www.linkedin.com/company/augmentinc",
-    "twitter": "https://x.com/augmentcode",
+    "linkedin": null,
+    "twitter": null,
     "github": "https://github.com/augmentcode/auggie",
     "youtube": null,
     "discord": null,
@@ -108,6 +108,18 @@
       "installCommand": "npm install -g @augmentcode/npm i @augmentcode/auggie",
       "launchCommand": "auggie",
       "installPath": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/augmentcode/auggie",
+      "title": "Augment Code CLI github community",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.augmentcode.com/blog",
+      "title": "Augment Code CLI blog community",
+      "fields": ["communityUrls.blog"]
     }
   ]
 }

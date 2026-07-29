@@ -78,7 +78,7 @@
   },
   "communityUrls": {
     "linkedin": null,
-    "twitter": "https://x.com/FactoryAI",
+    "twitter": null,
     "github": null,
     "youtube": null,
     "discord": null,
@@ -86,8 +86,14 @@
     "blog": null
   },
   "relatedProducts": [
-    { "type": "desktop", "productId": "factory-desktop" },
-    { "type": "extension", "productId": "droid" }
+    {
+      "type": "desktop",
+      "productId": "factory-desktop"
+    },
+    {
+      "type": "extension",
+      "productId": "droid"
+    }
   ],
   "platforms": [
     {

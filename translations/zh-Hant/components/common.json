@@ -14,8 +14,10 @@
     "openMenu": "開啟選單",
     "openSourceRank": "開放原始碼排行榜",
     "openSourceRankDesc": "依 GitHub 星標數探索開放原始碼 AI 編碼專案",
-    "modelIntelligenceIndex": "模型智慧指數",
-    "modelIntelligenceIndexDesc": "追蹤模型智慧指數隨版本發布的變化",
+    "modelIntelligenceIndex": "模型綜合智慧指數",
+    "modelIntelligenceIndexDesc": "追蹤模型綜合智慧指數隨版本發布的變化",
+    "modelPriceIntelligenceIndex": "模型價格 × 智慧指數",
+    "modelPriceIntelligenceIndexDesc": "按 API 價格與智慧指數比較各家主流模型",
     "ranking": "排行榜",
     "toggleMenu": "切換選單"
   }

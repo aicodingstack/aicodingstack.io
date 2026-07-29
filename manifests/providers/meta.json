@@ -50,12 +50,19 @@
     "openrouter": "https://openrouter.ai/provider/meta"
   },
   "communityUrls": {
-    "linkedin": "https://www.linkedin.com/company/meta",
+    "linkedin": null,
     "twitter": "https://x.com/MetaAI",
-    "github": "https://github.com/meta-llama",
+    "github": null,
     "youtube": null,
     "discord": null,
     "reddit": null,
-    "blog": "https://ai.meta.com/blog"
-  }
+    "blog": null
+  },
+  "sources": [
+    {
+      "url": "https://x.com/MetaAI",
+      "title": "Meta AI twitter community",
+      "fields": ["communityUrls.twitter"]
+    }
+  ]
 }

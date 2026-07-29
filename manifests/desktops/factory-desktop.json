@@ -91,12 +91,12 @@
   },
   "communityUrls": {
     "linkedin": null,
-    "twitter": "https://x.com/FactoryAI",
+    "twitter": null,
     "github": null,
     "youtube": null,
     "discord": null,
     "reddit": null,
-    "blog": "https://factory.ai/news"
+    "blog": null
   },
   "relatedProducts": [
     {

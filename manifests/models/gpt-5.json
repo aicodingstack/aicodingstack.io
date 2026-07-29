@@ -40,7 +40,7 @@
   },
   "verified": true,
   "websiteUrl": "https://openai.com",
-  "docsUrl": "https://platform.openai.com/docs/models/gpt-5",
+  "docsUrl": "https://developers.openai.com/api/docs/models/gpt-5",
   "vendor": "OpenAI",
   "size": null,
   "contextWindow": 400000,
@@ -85,9 +85,50 @@
     "sciCode": 1.5,
     "liveCodeBench": 28.7
   },
+  "benchmarkTracking": [
+    {
+      "provider": "swe-bench",
+      "benchmark": "sweBench",
+      "leaderboard": "Verified",
+      "resultId": "20250807_openhands_gpt5",
+      "modelLabel": "OpenHands + GPT-5"
+    }
+  ],
   "platformUrls": {
     "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-5",
     "openrouter": "https://openrouter.ai/openai/gpt-5"
-  }
+  },
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5",
+      "title": "OpenAI GPT-5 model documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "lifecycle"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-5-for-developers/",
+      "title": "Introducing GPT-5 for developers",
+      "fields": ["releaseDate", "description", "tokenPricing"]
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "title": "OpenAI API deprecations",
+      "fields": ["lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

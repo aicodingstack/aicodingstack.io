@@ -38,7 +38,47 @@
       "description": "由 Atom 和 Tree-sitter 創作者打造的高效能多人協作代碼編輯器，用 Rust 構建，專為人類和 AI 協作而設計。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://zed.dev/",
+      "title": "Zed official site",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/zed-industries/zed",
+      "title": "Zed official repository",
+      "fields": ["description", "communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/zeddotdev",
+      "title": "Zed Industries linkedin community",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://x.com/zeddotdev",
+      "title": "Zed Industries twitter community",
+      "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.youtube.com/@zeddotdev",
+      "title": "Zed Industries youtube community",
+      "fields": ["communityUrls.youtube"]
+    },
+    {
+      "url": "https://discord.com/invite/qSDQ8VWc7k",
+      "title": "Zed Industries discord community",
+      "fields": ["communityUrls.discord"]
+    },
+    {
+      "url": "https://zed.dev/blog",
+      "title": "Zed Industries blog community",
+      "fields": ["communityUrls.blog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://zed.dev",
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/zeddotdev",
