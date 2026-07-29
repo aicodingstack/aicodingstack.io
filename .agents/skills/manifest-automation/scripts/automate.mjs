@@ -176,4 +176,4 @@ console.log('')
 console.log('✅ Ready. The helper prepared instructions; it did not browse or edit files.')
 console.log('')
 
-export { type as manifestType, name as manifestName, mode as operationMode }
+export { mode as operationMode, name as manifestName, type as manifestType }

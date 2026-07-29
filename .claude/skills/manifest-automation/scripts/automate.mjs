@@ -188,4 +188,4 @@ console.log('⚠️  IMPORTANT: After saving the manifest, remember to update gi
 console.log('')
 
 // Export helper function for Claude to use in manifest-automation skill
-export { updateGithubStarsEntry, type as manifestType, name as manifestName, mode as operationMode }
+export { mode as operationMode, name as manifestName, type as manifestType, updateGithubStarsEntry }

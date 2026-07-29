@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>AI Coding Stack</title>
   <defs>
     <linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="51" y1="103" x2="461" y2="409">
       <stop offset="0" stop-color="#2b7fff" />
