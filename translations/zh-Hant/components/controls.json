@@ -24,14 +24,14 @@
   },
   "searchDialog": {
     "close": "關閉比較選擇器",
-    "empty": "Start typing to search...",
-    "navigate": "to navigate",
-    "noResultsFor": "No results for \"{query}\"",
+    "empty": "輸入內容開始搜尋...",
+    "navigate": "導覽",
+    "noResultsFor": "找不到「{query}」的相關結果",
     "placeholder": "輸入以搜尋...",
-    "select": "to select",
-    "viewAllResults": "View all results for \"{query}\""
+    "select": "選取",
+    "viewAllResults": "查看「{query}」的所有結果"
   },
   "searchInput": {
-    "clear": "Clear search"
+    "clear": "清除搜尋"
   }
 }

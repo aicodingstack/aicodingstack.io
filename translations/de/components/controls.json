@@ -24,14 +24,14 @@
   },
   "searchDialog": {
     "close": "Vergleichsauswahl schließen",
-    "empty": "Start typing to search...",
-    "navigate": "to navigate",
-    "noResultsFor": "No results for \"{query}\"",
-    "placeholder": "Type to search...",
-    "select": "to select",
-    "viewAllResults": "View all results for \"{query}\""
+    "empty": "Zum Suchen Text eingeben...",
+    "navigate": "zum Navigieren",
+    "noResultsFor": "Keine Ergebnisse für „{query}“",
+    "placeholder": "Zum Suchen tippen...",
+    "select": "zum Auswählen",
+    "viewAllResults": "Alle Ergebnisse für „{query}“ anzeigen"
   },
   "searchInput": {
-    "clear": "Clear search"
+    "clear": "Suche löschen"
   }
 }
