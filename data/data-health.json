@@ -73,59 +73,59 @@
   },
   "translationsByLocale": {
     "de": {
-      "totalStrings": 411,
+      "totalStrings": 416,
       "matchingEnglish": 113,
-      "matchingEnglishPercent": 27.5
+      "matchingEnglishPercent": 27.2
     },
     "es": {
-      "totalStrings": 411,
+      "totalStrings": 416,
       "matchingEnglish": 104,
-      "matchingEnglishPercent": 25.3
+      "matchingEnglishPercent": 25
     },
     "fr": {
-      "totalStrings": 411,
+      "totalStrings": 416,
       "matchingEnglish": 115,
-      "matchingEnglishPercent": 28
+      "matchingEnglishPercent": 27.6
     },
     "id": {
-      "totalStrings": 411,
+      "totalStrings": 416,
       "matchingEnglish": 149,
-      "matchingEnglishPercent": 36.3
+      "matchingEnglishPercent": 35.8
     },
     "ja": {
-      "totalStrings": 411,
+      "totalStrings": 416,
       "matchingEnglish": 107,
-      "matchingEnglishPercent": 26
+      "matchingEnglishPercent": 25.7
     },
     "ko": {
-      "totalStrings": 411,
+      "totalStrings": 416,
       "matchingEnglish": 115,
-      "matchingEnglishPercent": 28
+      "matchingEnglishPercent": 27.6
     },
     "pt": {
-      "totalStrings": 411,
+      "totalStrings": 416,
       "matchingEnglish": 114,
-      "matchingEnglishPercent": 27.7
+      "matchingEnglishPercent": 27.4
     },
     "ru": {
-      "totalStrings": 411,
+      "totalStrings": 416,
       "matchingEnglish": 124,
-      "matchingEnglishPercent": 30.2
+      "matchingEnglishPercent": 29.8
     },
     "tr": {
-      "totalStrings": 411,
+      "totalStrings": 416,
       "matchingEnglish": 125,
-      "matchingEnglishPercent": 30.4
+      "matchingEnglishPercent": 30
     },
     "zh-Hans": {
-      "totalStrings": 411,
+      "totalStrings": 416,
       "matchingEnglish": 98,
-      "matchingEnglishPercent": 23.8
+      "matchingEnglishPercent": 23.6
     },
     "zh-Hant": {
-      "totalStrings": 411,
+      "totalStrings": 416,
       "matchingEnglish": 98,
-      "matchingEnglishPercent": 23.8
+      "matchingEnglishPercent": 23.6
     }
   },
   "issues": [
