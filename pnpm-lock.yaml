@@ -104,9 +104,6 @@ importers:
       '@typescript-eslint/types':
         specifier: ^8.65.0
         version: 8.65.0
-      agent-browser:
-        specifier: 0.33.0
-        version: 0.33.0
       ajv:
         specifier: ^8.20.0
         version: 8.20.0
@@ -2396,11 +2393,6 @@ packages:
   acorn@8.17.0:
     resolution: {integrity: sha512-xRQbDb9BnwDafYNn6Vwl839DYVjqXYb1XVGtWAZ1kcDc6iwAL4hg3B1dZlRiuENFeO2H53gFG3in621AdERVAg==}
     engines: {node: '>=0.4.0'}
-    hasBin: true
-
-  agent-browser@0.33.0:
-    resolution: {integrity: sha512-1N5asChiJ8VeqBa8vw/b7g/mw5qelWuowKB6/PNI8CRBLFtNPqgdmzRZyzbRJgajsoB9sBTC1ORpPmIay1ulzQ==}
-    engines: {node: '>=24.0.0', pnpm: '>=11.0.0'}
     hasBin: true
 
   agentkeepalive@4.6.0:
@@ -6850,8 +6842,6 @@ snapshots:
       acorn: 8.17.0
 
   acorn@8.17.0: {}
-
-  agent-browser@0.33.0: {}
 
   agentkeepalive@4.6.0:
     dependencies:

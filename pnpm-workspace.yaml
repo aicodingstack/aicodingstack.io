@@ -11,7 +11,6 @@ overrides:
 allowBuilds:
   '@parcel/watcher': true
   '@swc/core': true
-  agent-browser: true
   esbuild: true
   sharp: true
   workerd: true
