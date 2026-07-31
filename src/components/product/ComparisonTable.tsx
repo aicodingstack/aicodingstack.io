@@ -1,7 +1,9 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { DeprecatedBadge } from '@/components/controls/DeprecatedBadge'
 import { Link } from '@/i18n/navigation'
+import { sortDeprecatedLast } from '@/lib/deprecated'
 
 export interface ComparisonColumn {
   key: string
@@ -41,6 +43,7 @@ export default function ComparisonTable({
   const [scrollLeft, setScrollLeft] = useState<number>(0)
   const [calculatedOffset, setCalculatedOffset] = useState<number>(0)
   const columnWidthsMeasured = useRef(false)
+  const sortedItems = useMemo(() => sortDeprecatedLast(items), [items])
 
   useEffect(() => {
     // Calculate sticky offset based on header and breadcrumb heights
@@ -231,7 +234,7 @@ export default function ComparisonTable({
               </tr>
             </thead>
             <tbody>
-              {items.map((item, index) => (
+              {sortedItems.map((item, index) => (
                 <tr
                   key={item[itemIdKey] as string}
                   className={`border-b border-[var(--color-border)] hover:bg-[var(--color-hover)] transition-colors ${
@@ -239,12 +242,15 @@ export default function ComparisonTable({
                   }`}
                 >
                   <td className="sticky left-0 z-10 bg-inherit px-[var(--spacing-md)] py-[var(--spacing-sm)] font-medium border-r border-[var(--color-border)] whitespace-nowrap">
-                    <Link
-                      href={`${itemLinkPrefix}/${item[itemIdKey] as string}`}
-                      className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] hover:underline transition-colors"
-                    >
-                      {item[itemNameKey] as string}
-                    </Link>
+                    <div className="inline-flex items-center gap-[var(--spacing-xs)]">
+                      <Link
+                        href={`${itemLinkPrefix}/${item[itemIdKey] as string}`}
+                        className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] hover:underline transition-colors"
+                      >
+                        {item[itemNameKey] as string}
+                      </Link>
+                      {item.deprecated === true && <DeprecatedBadge />}
+                    </div>
                   </td>
                   {columns.map(column => (
                     <td
