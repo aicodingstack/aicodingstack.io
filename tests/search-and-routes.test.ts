@@ -57,4 +57,10 @@ describe('search', () => {
       true
     )
   })
+
+  it('searches curated collection items and links to their page anchor', () => {
+    const result = search('CLIProxyAPI', 'en').find(item => item.category === 'collections')
+
+    expect(result?.href).toBe('/curated-collections#tools-productivity-utilities-cliproxyapi')
+  })
 })

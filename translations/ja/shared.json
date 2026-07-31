@@ -47,6 +47,7 @@
       "vendors": "すべてのベンダー"
     },
     "plural": {
+      "collections": "コレクション",
       "clis": "CLI",
       "desktops": "デスクトップ",
       "extensions": "拡張機能",

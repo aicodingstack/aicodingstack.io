@@ -1,4 +1,11 @@
 {
+  "opensInNewTab": "새 탭에서 열림",
+  "published": "게시일",
+  "sectionNavigation": "컬렉션 섹션",
+  "status": {
+    "publicPreview": "공개 미리보기"
+  },
+  "verified": "확인됨",
   "articles": {
     "description": "업계 리더들이 쓴 AI 코딩 필독 기사"
   },

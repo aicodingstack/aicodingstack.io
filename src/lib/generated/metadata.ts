@@ -409,6 +409,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
     },
     sections: [
       {
+        id: 'development-standards',
         title: 'Development Standards',
         translations: {
           en: {
@@ -510,6 +511,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: '結構化提交訊息的輕量級約定，支援自動化變更日誌生成和語義化版本控制',
               },
             },
+            id: 'conventional-commits',
             name: 'Conventional Commits',
             url: 'https://www.conventionalcommits.org',
             description:
@@ -576,6 +578,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: '使用 MAJOR.MINOR.PATCH 格式的版本控制方案，傳達相容性和更新影響',
               },
             },
+            id: 'semantic-versioning',
             name: 'Semantic Versioning',
             url: 'https://semver.org',
             description:
@@ -584,6 +587,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
         ],
       },
       {
+        id: 'agent-protocols',
         title: 'Agent Protocols',
         translations: {
           en: {
@@ -685,6 +689,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: '支援不同平台之間 AI Agent 安全通訊和協作的開放協議',
               },
             },
+            id: 'agent2agent',
             name: 'Agent2Agent (A2A)',
             url: 'https://a2a-protocol.org',
             description:
@@ -751,6 +756,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: '基於 DID 身份和自動協議協商的去中心化無信任 Agent 通訊協議',
               },
             },
+            id: 'agent-network-protocol',
             name: 'Agent Network Protocol (ANP)',
             url: 'https://agent-network-protocol.com',
             description:
@@ -817,6 +823,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: '使用可驗證數字憑證和授權委託的安全 Agent 支付開放協議',
               },
             },
+            id: 'agent-payments-protocol',
             name: 'Agent Payments Protocol (AP2)',
             url: 'https://ap2-protocol.org',
             description:
@@ -883,6 +890,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: 'AI Agent 與企業之間程序化商業流程的開放標準，實現安全交易和支付',
               },
             },
+            id: 'agentic-commerce-protocol',
             name: 'Agentic Commerce Protocol (ACP)',
             url: 'https://www.agenticcommerce.dev',
             description:
@@ -891,6 +899,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
         ],
       },
       {
+        id: 'other-protocols',
         title: 'Others',
         translations: {
           en: {
@@ -992,6 +1001,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: '標準化代碼編輯器與 Agent 之間通訊的開放協議，用於自主代碼修改',
               },
             },
+            id: 'agent-client-protocol',
             name: 'Agent Client Protocol (ACP)',
             url: 'https://agentclientprotocol.com',
             description:
@@ -1058,6 +1068,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: '基於 OpenAI Responses API 的多提供商、可互操作 LLM 介面的開放規範',
               },
             },
+            id: 'open-responses',
             name: 'Open Responses',
             url: 'https://www.openresponses.org',
             description:
@@ -1122,6 +1133,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
     },
     sections: [
       {
+        id: 'openai-coding',
         title: 'OpenAI on Coding',
         translations: {
           en: {
@@ -1165,118 +1177,149 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
           {
             translations: {
               en: {
-                name: 'Building AI-Powered Applications',
-                description: 'Best practices for deploying AI applications in production',
+                name: 'Unrolling the Codex agent loop',
+                description:
+                  'Engineering deep dive into the loop connecting prompts, model inference, tool calls, and code changes in Codex',
               },
               de: {
-                name: 'KI-gestützte Anwendungen erstellen',
+                name: 'Unrolling the Codex agent loop',
                 description:
-                  'Bewährte Methoden für die Bereitstellung von KI-Anwendungen in der Produktion',
+                  'Technischer Einblick in die Codex-Schleife, die Prompts, Modellinferenz, Tool-Aufrufe und Codeänderungen verbindet',
               },
               es: {
-                name: 'Construcción de Aplicaciones Impulsadas por IA',
-                description: 'Mejores prácticas para desplegar aplicaciones de IA en producción',
+                name: 'Unrolling the Codex agent loop',
+                description:
+                  'Análisis técnico del bucle de Codex que conecta prompts, inferencia del modelo, llamadas a herramientas y cambios de código',
               },
               fr: {
-                name: "Créer des Applications Alimentées par l'IA",
-                description: 'Meilleures pratiques pour déployer des applications IA en production',
+                name: 'Unrolling the Codex agent loop',
+                description:
+                  'Analyse technique de la boucle Codex reliant prompts, inférence du modèle, appels d’outils et modifications du code',
               },
               id: {
-                name: 'Membangun Aplikasi Bertenaga AI',
-                description: 'Praktik terbaik untuk men-deploy aplikasi AI di lingkungan produksi',
+                name: 'Unrolling the Codex agent loop',
+                description:
+                  'Ulasan teknis tentang loop Codex yang menghubungkan prompt, inferensi model, pemanggilan tool, dan perubahan kode',
               },
               ja: {
-                name: 'AI搭載アプリケーションの構築',
-                description: '本番環境でAIアプリケーションを展開するためのベストプラクティス',
+                name: 'Unrolling the Codex agent loop',
+                description:
+                  'プロンプト、モデル推論、ツール呼び出し、コード変更を結ぶCodexのエージェントループを詳しく解説',
               },
               ko: {
-                name: 'AI 기반 애플리케이션 구축',
-                description: '프로덕션 환경에서 AI 애플리케이션 배포를 위한 모범 사례',
+                name: 'Unrolling the Codex agent loop',
+                description:
+                  '프롬프트, 모델 추론, 도구 호출, 코드 변경을 연결하는 Codex 에이전트 루프의 기술적 분석',
               },
               pt: {
-                name: 'Construindo Aplicações Alimentadas por AI',
-                description: 'Melhores práticas para implantar aplicações de AI em produção',
+                name: 'Unrolling the Codex agent loop',
+                description:
+                  'Análise técnica do loop do Codex que conecta prompts, inferência do modelo, chamadas de ferramentas e alterações de código',
               },
               ru: {
-                name: 'Создание приложений на базе ИИ',
-                description: 'Лучшие практики развертывания приложений ИИ в производственной среде',
+                name: 'Unrolling the Codex agent loop',
+                description:
+                  'Технический разбор цикла Codex, связывающего промпты, вывод модели, вызовы инструментов и изменения кода',
               },
               tr: {
-                name: 'AI Destekli Uygulamalar Oluşturma',
-                description: 'AI uygulamalarını prodüksiyonda dağıtmak için en iyi uygulamalar',
+                name: 'Unrolling the Codex agent loop',
+                description:
+                  'İstemleri, model çıkarımını, araç çağrılarını ve kod değişikliklerini bağlayan Codex döngüsünün teknik incelemesi',
               },
               'zh-Hans': {
-                name: '构建 AI 驱动的应用',
-                description: '在生产环境中部署 AI 应用的最佳实践',
+                name: 'Unrolling the Codex agent loop',
+                description:
+                  '深入解析 Codex 如何通过 Agent 循环连接提示、模型推理、工具调用与代码修改',
               },
               'zh-Hant': {
-                name: '構建 AI 驅動的應用',
-                description: '在生產環境中部署 AI 應用的最佳實踐',
+                name: 'Unrolling the Codex agent loop',
+                description:
+                  '深入解析 Codex 如何透過 Agent 迴圈連接提示、模型推理、工具呼叫與程式碼修改',
               },
             },
-            name: 'Building AI-Powered Applications',
-            url: 'https://platform.openai.com/docs/guides/production-best-practices',
-            description: 'Best practices for deploying AI applications in production',
+            id: 'unrolling-codex-agent-loop',
+            name: 'Unrolling the Codex agent loop',
+            url: 'https://openai.com/index/unrolling-the-codex-agent-loop/',
+            description:
+              'Engineering deep dive into the loop connecting prompts, model inference, tool calls, and code changes in Codex',
+            publishedAt: '2026-01-23',
+            lastVerifiedAt: '2026-07-31',
           },
           {
             translations: {
               en: {
-                name: 'Prompt Engineering Guide',
-                description: 'Strategies for crafting effective prompts for code generation',
+                name: 'Work with Codex from anywhere',
+                description:
+                  'How mobile access, Remote SSH, hooks, and programmatic tokens extend long-running Codex workflows',
               },
               de: {
-                name: 'Prompt-Engineering-Leitfaden',
-                description: 'Strategien für die Erstellung effektiver Prompts für Codegenerierung',
+                name: 'Work with Codex from anywhere',
+                description:
+                  'Wie mobiler Zugriff, Remote SSH, Hooks und programmatische Tokens langlaufende Codex-Workflows erweitern',
               },
               es: {
-                name: 'Guía de Ingeniería de Prompts',
-                description: 'Estrategias para crear prompts efectivos para generación de código',
+                name: 'Work with Codex from anywhere',
+                description:
+                  'Cómo el acceso móvil, Remote SSH, los hooks y los tokens programáticos amplían los flujos de trabajo prolongados de Codex',
               },
               fr: {
-                name: "Guide de l'Ingénierie des Prompts",
+                name: 'Work with Codex from anywhere',
                 description:
-                  'Stratégies pour crafting des prompts efficaces pour la génération de code',
+                  'Comment l’accès mobile, Remote SSH, les hooks et les jetons programmatiques étendent les workflows Codex de longue durée',
               },
               id: {
-                name: 'Panduan Prompt Engineering',
-                description: 'Strategi untuk crafting prompt efektif untuk generasi kode',
+                name: 'Work with Codex from anywhere',
+                description:
+                  'Cara akses seluler, Remote SSH, hook, dan token programatis memperluas workflow Codex yang berjalan lama',
               },
               ja: {
-                name: 'プロンプトエンジニアリングガイド',
-                description: 'コード生成のための効果的なプロンプトを作成する戦略',
+                name: 'Work with Codex from anywhere',
+                description:
+                  'モバイルアクセス、Remote SSH、フック、プログラム用トークンで長時間実行するCodexワークフローを拡張する方法',
               },
               ko: {
-                name: '프롬프트 엔지니어링 가이드',
-                description: '코드 생성을 위한 효과적인 프롬프트 작성 전략',
+                name: 'Work with Codex from anywhere',
+                description:
+                  '모바일 액세스, Remote SSH, 훅, 프로그래밍 방식 토큰으로 장기 실행 Codex 워크플로를 확장하는 방법',
               },
               pt: {
-                name: 'Guia de Engenharia de Prompts',
-                description: 'Estratégias para criar prompts eficazes para geração de código',
+                name: 'Work with Codex from anywhere',
+                description:
+                  'Como acesso móvel, Remote SSH, hooks e tokens programáticos ampliam fluxos de trabalho longos do Codex',
               },
               ru: {
-                name: 'Руководство по prompt engineering',
-                description: 'Стратегии создания эффективных промптов для генерации кода',
+                name: 'Work with Codex from anywhere',
+                description:
+                  'Как мобильный доступ, Remote SSH, хуки и программные токены расширяют длительные рабочие процессы Codex',
               },
               tr: {
-                name: 'Prompt Mühendisliği Kılavuzu',
-                description: 'Kod üretimi için etkili istemler oluşturma stratejileri',
+                name: 'Work with Codex from anywhere',
+                description:
+                  'Mobil erişim, Remote SSH, hook’lar ve programatik token’ların uzun süreli Codex iş akışlarını nasıl genişlettiği',
               },
               'zh-Hans': {
-                name: '提示工程指南',
-                description: '制作有效代码生成提示的策略',
+                name: 'Work with Codex from anywhere',
+                description:
+                  '介绍移动访问、Remote SSH、Hooks 和程序化令牌如何扩展长时间运行的 Codex 工作流',
               },
               'zh-Hant': {
-                name: '提示工程指南',
-                description: '製作有效代碼生成提示的策略',
+                name: 'Work with Codex from anywhere',
+                description:
+                  '介紹行動存取、Remote SSH、Hooks 和程式化權杖如何擴展長時間執行的 Codex 工作流程',
               },
             },
-            name: 'Prompt Engineering Guide',
-            url: 'https://platform.openai.com/docs/guides/prompt-engineering',
-            description: 'Strategies for crafting effective prompts for code generation',
+            id: 'work-with-codex-from-anywhere',
+            name: 'Work with Codex from anywhere',
+            url: 'https://openai.com/index/work-with-codex-from-anywhere/',
+            description:
+              'How mobile access, Remote SSH, hooks, and programmatic tokens extend long-running Codex workflows',
+            publishedAt: '2026-05-14',
+            lastVerifiedAt: '2026-07-31',
           },
         ],
       },
       {
+        id: 'cursor-insights',
         title: 'Cursor Insights',
         translations: {
           en: {
@@ -1320,116 +1363,145 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
           {
             translations: {
               en: {
-                name: 'The Future of Programming',
-                description: 'How AI is reshaping the development workflow',
+                name: 'The third era of AI software development',
+                description:
+                  "Cursor's view of the shift from synchronous coding agents to autonomous cloud agents working in parallel",
               },
               de: {
-                name: 'Die Zukunft des Programmierens',
-                description: 'Wie KI den Entwicklungs-Workflow neu gestaltet',
+                name: 'The third era of AI software development',
+                description:
+                  'Cursors Sicht auf den Wandel von synchronen Coding-Agenten zu autonomen Cloud-Agenten, die parallel arbeiten',
               },
               es: {
-                name: 'El Futuro de la Programación',
-                description: 'Cómo la IA está reconfigurando el flujo de trabajo de desarrollo',
+                name: 'The third era of AI software development',
+                description:
+                  'La visión de Cursor sobre el paso de agentes de código síncronos a agentes autónomos en la nube que trabajan en paralelo',
               },
               fr: {
-                name: "L'Avenir de la Programmation",
-                description: "Comment l'IA redéfinit le flux de travail de développement",
+                name: 'The third era of AI software development',
+                description:
+                  'La vision de Cursor du passage des agents de codage synchrones aux agents cloud autonomes travaillant en parallèle',
               },
               id: {
-                name: 'Masa Depang Programming',
-                description: 'Bagaimana AI membentuk kembali workflow pengembangan',
+                name: 'The third era of AI software development',
+                description:
+                  'Pandangan Cursor tentang peralihan dari agen coding sinkron ke agen cloud otonom yang bekerja secara paralel',
               },
               ja: {
-                name: 'プログラミングの未来',
-                description: 'AIが開発ワークフローをどのように再構築しているか',
+                name: 'The third era of AI software development',
+                description:
+                  '同期型コーディングエージェントから並列稼働する自律型クラウドエージェントへの移行を描くCursorの展望',
               },
               ko: {
-                name: '프로그래밍의 미래',
-                description: 'AI가 개발 워크플로우를 어떻게 재구성하는가',
+                name: 'The third era of AI software development',
+                description:
+                  '동기식 코딩 에이전트에서 병렬로 작동하는 자율 클라우드 에이전트로의 전환에 대한 Cursor의 관점',
               },
               pt: {
-                name: 'O Futuro da Programação',
-                description: 'Como AI está remodelando o fluxo de trabalho de desenvolvimento',
+                name: 'The third era of AI software development',
+                description:
+                  'A visão da Cursor sobre a transição de agentes de código síncronos para agentes autônomos na nuvem trabalhando em paralelo',
               },
               ru: {
-                name: 'Будущее программирования',
-                description: 'Как ИИ меняет рабочий процесс разработки',
+                name: 'The third era of AI software development',
+                description:
+                  'Взгляд Cursor на переход от синхронных агентов программирования к автономным облачным агентам, работающим параллельно',
               },
               tr: {
-                name: 'Programlamanın Geleceği',
-                description: 'AI geliştirme iş akışını nasıl yeniden şekillendiriyor',
+                name: 'The third era of AI software development',
+                description:
+                  'Cursor’ın eşzamanlı kodlama ajanlarından paralel çalışan otonom bulut ajanlarına geçişe bakışı',
               },
               'zh-Hans': {
-                name: '编程的未来',
-                description: 'AI 如何重塑开发工作流',
+                name: 'The third era of AI software development',
+                description: 'Cursor 对软件开发从同步编码 Agent 转向并行自主云端 Agent 的判断',
               },
               'zh-Hant': {
-                name: '程式設計的未來',
-                description: 'AI 如何重塑開發工作流',
+                name: 'The third era of AI software development',
+                description: 'Cursor 對軟體開發從同步編碼 Agent 轉向平行自主雲端 Agent 的判斷',
               },
             },
-            name: 'The Future of Programming',
-            url: 'https://cursor.sh/blog',
-            description: 'How AI is reshaping the development workflow',
+            id: 'third-era-ai-software-development',
+            name: 'The third era of AI software development',
+            url: 'https://cursor.com/blog/third-era',
+            description:
+              "Cursor's view of the shift from synchronous coding agents to autonomous cloud agents working in parallel",
+            publishedAt: '2026-02-26',
+            lastVerifiedAt: '2026-07-31',
           },
           {
             translations: {
               en: {
-                name: 'AI-First IDE Design',
-                description: 'Designing IDEs for seamless AI collaboration',
+                name: 'Continually improving our agent harness',
+                description:
+                  'How Cursor evolves context management, evaluates agent quality, and repairs harness regressions',
               },
               de: {
-                name: 'KI-First-IDE-Design',
-                description: 'IDEs für nahtlose KI-Zusammenarbeit entwerfen',
+                name: 'Continually improving our agent harness',
+                description:
+                  'Wie Cursor Kontextverwaltung weiterentwickelt, Agentenqualität bewertet und Regressionen im Harness behebt',
               },
               es: {
-                name: 'Diseño de IDE con IA en Primero',
-                description: 'Diseñando IDEs para colaboración IA fluida',
+                name: 'Continually improving our agent harness',
+                description:
+                  'Cómo Cursor evoluciona la gestión de contexto, evalúa la calidad de los agentes y corrige regresiones del harness',
               },
               fr: {
-                name: 'Conception IDE IA en Premier',
-                description: 'Concevoir des IDE pour une collaboration IA fluide',
+                name: 'Continually improving our agent harness',
+                description:
+                  'Comment Cursor fait évoluer la gestion du contexte, évalue la qualité des agents et corrige les régressions du harness',
               },
               id: {
-                name: 'Desain IDE AI-First',
-                description: 'Merancang IDE untuk kolaborasi AI yang mulus',
+                name: 'Continually improving our agent harness',
+                description:
+                  'Cara Cursor mengembangkan manajemen konteks, mengevaluasi kualitas agen, dan memperbaiki regresi harness',
               },
               ja: {
-                name: 'AIファーストIDE設計',
-                description: 'シームレスなAIコラボレーションのためのIDE設計',
+                name: 'Continually improving our agent harness',
+                description:
+                  'Cursorがコンテキスト管理を進化させ、エージェント品質を評価し、ハーネスの回帰を修復する方法',
               },
               ko: {
-                name: 'AI 우선 IDE 설계',
-                description: '매끄러운 AI 협업을 위한 IDE 설계',
+                name: 'Continually improving our agent harness',
+                description:
+                  'Cursor가 컨텍스트 관리를 발전시키고 에이전트 품질을 평가하며 하네스 회귀를 복구하는 방법',
               },
               pt: {
-                name: 'Design de IDE AI em Primeiro',
-                description: 'Projetando IDEs para colaboração AI perfeita',
+                name: 'Continually improving our agent harness',
+                description:
+                  'Como a Cursor evolui o gerenciamento de contexto, avalia a qualidade dos agentes e corrige regressões do harness',
               },
               ru: {
-                name: 'Дизайн IDE с ИИ в первую очередь',
-                description: 'Проектирование IDE для бесшовного сотрудничества с ИИ',
+                name: 'Continually improving our agent harness',
+                description:
+                  'Как Cursor развивает управление контекстом, оценивает качество агентов и устраняет регрессии в агентном контуре',
               },
               tr: {
-                name: 'AI Öncelikli IDE Tasarımı',
-                description: "Kusursuz AI işbirliği için IDE'ler tasarlama",
+                name: 'Continually improving our agent harness',
+                description:
+                  'Cursor’ın bağlam yönetimini geliştirme, ajan kalitesini değerlendirme ve harness gerilemelerini düzeltme yöntemi',
               },
               'zh-Hans': {
-                name: 'AI 优先的 IDE 设计',
-                description: '设计无缝 AI 协作的 IDE',
+                name: 'Continually improving our agent harness',
+                description: 'Cursor 如何演进上下文管理、评估 Agent 质量并修复 Agent Harness 回归',
               },
               'zh-Hant': {
-                name: 'AI 優先的 IDE 設計',
-                description: '設計無縫 AI 協作的 IDE',
+                name: 'Continually improving our agent harness',
+                description: 'Cursor 如何演進上下文管理、評估 Agent 品質並修復 Agent Harness 回歸',
               },
             },
-            name: 'AI-First IDE Design',
-            url: 'https://cursor.sh/features',
-            description: 'Designing IDEs for seamless AI collaboration',
+            id: 'improving-agent-harness',
+            name: 'Continually improving our agent harness',
+            url: 'https://cursor.com/blog/continually-improving-agent-harness',
+            description:
+              'How Cursor evolves context management, evaluates agent quality, and repairs harness regressions',
+            publishedAt: '2026-04-30',
+            lastVerifiedAt: '2026-07-31',
           },
         ],
       },
       {
+        id: 'anthropic-coding',
         title: 'Claude on AI Coding',
         translations: {
           en: {
@@ -1473,120 +1545,148 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
           {
             translations: {
               en: {
-                name: 'Building with Claude Code',
-                description: 'Introduction to Claude Code and its capabilities',
+                name: 'Enabling Claude Code to work more autonomously',
+                description:
+                  'Claude Code updates spanning checkpoints, subagents, hooks, background tasks, and its native VS Code extension',
               },
               de: {
-                name: 'Entwicklung mit Claude Code',
-                description: 'Einführung in Claude Code und seine Möglichkeiten',
+                name: 'Enabling Claude Code to work more autonomously',
+                description:
+                  'Claude-Code-Neuerungen zu Checkpoints, Subagenten, Hooks, Hintergrundaufgaben und der nativen VS-Code-Erweiterung',
               },
               es: {
-                name: 'Construcción con Claude Code',
-                description: 'Introducción a Claude Code y sus capacidades',
+                name: 'Enabling Claude Code to work more autonomously',
+                description:
+                  'Novedades de Claude Code sobre checkpoints, subagentes, hooks, tareas en segundo plano y su extensión nativa para VS Code',
               },
               fr: {
-                name: 'Développement avec Claude Code',
-                description: 'Introduction à Claude Code et ses capacités',
+                name: 'Enabling Claude Code to work more autonomously',
+                description:
+                  'Nouveautés de Claude Code sur les checkpoints, sous-agents, hooks, tâches en arrière-plan et son extension VS Code native',
               },
               id: {
-                name: 'Membangun dengan Claude Code',
-                description: 'Pengenalan Claude Code dan kemampuannya',
+                name: 'Enabling Claude Code to work more autonomously',
+                description:
+                  'Pembaruan Claude Code mencakup checkpoint, subagen, hook, tugas latar belakang, dan ekstensi native VS Code',
               },
               ja: {
-                name: 'Claude Code で構築する',
-                description: 'Claude Codeとその機能の紹介',
+                name: 'Enabling Claude Code to work more autonomously',
+                description:
+                  'チェックポイント、サブエージェント、フック、バックグラウンドタスク、ネイティブVS Code拡張を含むClaude Codeの更新',
               },
               ko: {
-                name: 'Claude Code로 구축하기',
-                description: 'Claude Code 및 해당 기능 소개',
+                name: 'Enabling Claude Code to work more autonomously',
+                description:
+                  '체크포인트, 하위 에이전트, 훅, 백그라운드 작업, 네이티브 VS Code 확장을 아우르는 Claude Code 업데이트',
               },
               pt: {
-                name: 'Construindo com Claude Code',
-                description: 'Introdução ao Claude Code e suas capacidades',
+                name: 'Enabling Claude Code to work more autonomously',
+                description:
+                  'Novidades do Claude Code sobre checkpoints, subagentes, hooks, tarefas em segundo plano e sua extensão nativa para VS Code',
               },
               ru: {
-                name: 'Разработка с Claude Code',
-                description: 'Введение в Claude Code и его возможности',
+                name: 'Enabling Claude Code to work more autonomously',
+                description:
+                  'Обновления Claude Code: контрольные точки, субагенты, хуки, фоновые задачи и нативное расширение для VS Code',
               },
               tr: {
-                name: 'Claude Code ile Geliştirme',
-                description: 'Claude Code ve yeteneklerine giriş',
+                name: 'Enabling Claude Code to work more autonomously',
+                description:
+                  'Kontrol noktaları, alt ajanlar, hook’lar, arka plan görevleri ve yerel VS Code uzantısını kapsayan Claude Code güncellemeleri',
               },
               'zh-Hans': {
-                name: '使用 Claude Code 构建',
-                description: 'Claude Code 及其功能介绍',
+                name: 'Enabling Claude Code to work more autonomously',
+                description:
+                  '介绍 Claude Code 的检查点、子 Agent、Hooks、后台任务和原生 VS Code 扩展',
               },
               'zh-Hant': {
-                name: '使用 Claude Code 構建',
-                description: 'Claude Code 及其功能介紹',
+                name: 'Enabling Claude Code to work more autonomously',
+                description:
+                  '介紹 Claude Code 的檢查點、子 Agent、Hooks、背景任務和原生 VS Code 擴充功能',
               },
             },
-            name: 'Building with Claude Code',
-            url: 'https://www.anthropic.com/news/claude-3-7-sonnet',
-            description: 'Introduction to Claude Code and its capabilities',
+            id: 'enabling-claude-code-autonomy',
+            name: 'Enabling Claude Code to work more autonomously',
+            url: 'https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously',
+            description:
+              'Claude Code updates spanning checkpoints, subagents, hooks, background tasks, and its native VS Code extension',
+            publishedAt: '2025-09-29',
+            lastVerifiedAt: '2026-07-31',
           },
           {
             translations: {
               en: {
-                name: 'MCP: A New Standard',
-                description: 'How Model Context Protocol enables better AI integrations',
+                name: 'Introducing the Model Context Protocol',
+                description:
+                  "Anthropic's introduction to the open standard connecting AI assistants with data sources, tools, and development environments",
               },
               de: {
-                name: 'MCP: Ein Neuer Standard',
-                description: 'Wie das Model Context Protocol bessere KI-Integrationen ermöglicht',
+                name: 'Introducing the Model Context Protocol',
+                description:
+                  'Anthropics Einführung in den offenen Standard, der KI-Assistenten mit Datenquellen, Tools und Entwicklungsumgebungen verbindet',
               },
               es: {
-                name: 'MCP: Un Nuevo Estándar',
+                name: 'Introducing the Model Context Protocol',
                 description:
-                  'Cómo el Protocolo de Contexto de Modelo permite mejores integraciones IA',
+                  'Introducción de Anthropic al estándar abierto que conecta asistentes de IA con fuentes de datos, herramientas y entornos de desarrollo',
               },
               fr: {
-                name: 'MCP: Un Nouveau Standard',
+                name: 'Introducing the Model Context Protocol',
                 description:
-                  'Comment le Protocole de Contexte de Modèle permet de meilleures intégrations IA',
+                  'Présentation par Anthropic du standard ouvert reliant les assistants IA aux sources de données, outils et environnements de développement',
               },
               id: {
-                name: 'MCP: Standar Baru',
+                name: 'Introducing the Model Context Protocol',
                 description:
-                  'Bagaimana Model Context Protocol memungkinkan integrasi AI yang lebih baik',
+                  'Pengenalan Anthropic terhadap standar terbuka yang menghubungkan asisten AI dengan sumber data, tool, dan lingkungan pengembangan',
               },
               ja: {
-                name: 'MCP：新標準',
-                description: 'モデルコンテキストプロトコルがどのようにより良いAI統合を可能にするか',
+                name: 'Introducing the Model Context Protocol',
+                description:
+                  'AIアシスタントをデータソース、ツール、開発環境に接続するオープン標準についてのAnthropicによる紹介',
               },
               ko: {
-                name: 'MCP: 새로운 표준',
-                description: '모델 컨텍스트 프로토콜이 더 나은 AI 통합을 가능하게 하는 방법',
+                name: 'Introducing the Model Context Protocol',
+                description:
+                  'AI 어시스턴트를 데이터 소스, 도구, 개발 환경에 연결하는 개방형 표준에 대한 Anthropic의 소개',
               },
               pt: {
-                name: 'MCP: Um Novo Padrão',
+                name: 'Introducing the Model Context Protocol',
                 description:
-                  'Como o Protocolo de Contexto de Modelo permite melhores integrações AI',
+                  'Introdução da Anthropic ao padrão aberto que conecta assistentes de IA a fontes de dados, ferramentas e ambientes de desenvolvimento',
               },
               ru: {
-                name: 'MCP: Новый стандарт',
-                description: 'Как протокол контекста модели обеспечивает лучшую интеграцию ИИ',
+                name: 'Introducing the Model Context Protocol',
+                description:
+                  'Введение Anthropic в открытый стандарт, соединяющий ИИ-ассистентов с источниками данных, инструментами и средами разработки',
               },
               tr: {
-                name: 'MCP: Yeni Bir Standard',
-                description: 'Model Bağlam Protokolü daha iyi AI entegrasyonları nasıl sağlar',
+                name: 'Introducing the Model Context Protocol',
+                description:
+                  'AI asistanlarını veri kaynakları, araçlar ve geliştirme ortamlarıyla bağlayan açık standarda Anthropic’in girişi',
               },
               'zh-Hans': {
-                name: 'MCP：新标准',
-                description: '模型上下文协议如何实现更好的 AI 集成',
+                name: 'Introducing the Model Context Protocol',
+                description: 'Anthropic 对连接 AI 助手、数据源、工具和开发环境的开放标准的首次介绍',
               },
               'zh-Hant': {
-                name: 'MCP：新標準',
-                description: '模型上下文協議如何實現更好的 AI 集成',
+                name: 'Introducing the Model Context Protocol',
+                description:
+                  'Anthropic 對連接 AI 助手、資料來源、工具和開發環境的開放標準的首次介紹',
               },
             },
-            name: 'MCP: A New Standard',
+            id: 'introducing-model-context-protocol',
+            name: 'Introducing the Model Context Protocol',
             url: 'https://www.anthropic.com/news/model-context-protocol',
-            description: 'How Model Context Protocol enables better AI integrations',
+            description:
+              "Anthropic's introduction to the open standard connecting AI assistants with data sources, tools, and development environments",
+            publishedAt: '2024-11-25',
+            lastVerifiedAt: '2026-07-31',
           },
         ],
       },
       {
+        id: 'lovable-engineering',
         title: 'Lovable Engineering',
         translations: {
           en: {
@@ -1630,59 +1730,73 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
           {
             translations: {
               en: {
-                name: 'AI-Native Development',
-                description: 'Building applications designed for AI-first workflows',
+                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                description:
+                  'First-hand lessons from moving toward multi-agent implementation, review automation, and stacked changes at Lovable',
               },
               de: {
-                name: 'KI-native Entwicklung',
-                description: 'Entwicklung von Anwendungen für KI-First-Workflows',
+                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                description:
+                  'Erfahrungen aus erster Hand mit Multi-Agenten-Implementierung, automatisiertem Review und gestapelten Änderungen bei Lovable',
               },
               es: {
-                name: 'Desarrollo Nativo de IA',
+                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
                 description:
-                  'Construcción de aplicaciones diseñadas para flujos de trabajo IA-first',
+                  'Lecciones de primera mano sobre implementación multiagente, revisión automatizada y cambios apilados en Lovable',
               },
               fr: {
-                name: 'Développement Natif IA',
+                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
                 description:
-                  'Créer des applications conçues pour les flux de travail IA en premier',
+                  'Retour d’expérience sur l’implémentation multi-agent, l’automatisation des revues et les changements empilés chez Lovable',
               },
               id: {
-                name: 'Pengembangan AI-Native',
-                description: 'Membangun aplikasi yang dirancang untuk workflow AI-first',
+                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                description:
+                  'Pelajaran langsung tentang implementasi multi-agen, otomatisasi review, dan perubahan bertumpuk di Lovable',
               },
               ja: {
-                name: 'AIネイティブ開発',
-                description: 'AIファーストワークフロー向けに設計されたアプリケーションを構築する',
+                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                description:
+                  'Lovableにおけるマルチエージェント実装、レビュー自動化、スタックされた変更への移行から得た実践的な知見',
               },
               ko: {
-                name: 'AI 네이티브 개발',
-                description: 'AI 우선 워크플로우를 위해 설계된 애플리케이션 구축',
+                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                description:
+                  'Lovable에서 멀티 에이전트 구현, 리뷰 자동화, 스택형 변경으로 전환하며 얻은 실전 교훈',
               },
               pt: {
-                name: 'Desenvolvimento AI-Nativo',
-                description: 'Construindo aplicações projetadas para workflows AI-first',
+                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                description:
+                  'Lições práticas sobre implementação multiagente, automação de revisão e alterações empilhadas na Lovable',
               },
               ru: {
-                name: 'AI-Native разработка',
-                description: 'Создание приложений, спроектированных для AI-first рабочих процессов',
+                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                description:
+                  'Практические выводы о мультиагентной реализации, автоматизации ревью и пакетах связанных изменений в Lovable',
               },
               tr: {
-                name: 'AI-Native Geliştirme',
-                description: 'AI öncelikli iş akışları için tasarlanmış uygulamalar oluşturma',
+                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                description:
+                  'Lovable’da çok ajanlı uygulama, inceleme otomasyonu ve yığınlanmış değişikliklere geçişten çıkarılan dersler',
               },
               'zh-Hans': {
-                name: 'AI 原生开发',
-                description: '构建为 AI 优先工作流设计的应用',
+                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                description:
+                  '来自 Lovable 的一线经验：如何走向多 Agent 实现、自动化审查与堆叠式变更',
               },
               'zh-Hant': {
-                name: 'AI 原生開發',
-                description: '構建為 AI 優先工作流設計的應用',
+                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                description:
+                  '來自 Lovable 的第一線經驗：如何走向多 Agent 實作、自動化審查與堆疊式變更',
               },
             },
-            name: 'AI-Native Development',
-            url: 'https://lovable.dev/blog',
-            description: 'Building applications designed for AI-first workflows',
+            id: 'scaling-agentic-coding-at-lovable',
+            name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+            url: 'https://lovable.dev/blog/85000-in-tokens-later-scaling-agentic-coding-at-lovable',
+            description:
+              'First-hand lessons from moving toward multi-agent implementation, review automation, and stacked changes at Lovable',
+            publishedAt: '2026-07-03',
+            lastVerifiedAt: '2026-07-31',
           },
         ],
       },
@@ -1743,6 +1857,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
     },
     sections: [
       {
+        id: 'development-tools',
         title: 'Development Tools',
         translations: {
           en: {
@@ -1844,6 +1959,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: '為 AI 編碼助手設計的規範驅動開發框架，提供組織化的變更管理和活文檔',
               },
             },
+            id: 'openspec',
             name: 'OpenSpec',
             url: 'https://openspec.dev',
             description:
@@ -1910,6 +2026,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: '從可執行規範生成工作實現的規範驅動開發工具包',
               },
             },
+            id: 'spec-kit',
             name: 'Spec Kit',
             url: 'https://github.com/github/spec-kit',
             description:
@@ -1978,14 +2095,154 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                   '敏捷 AI 驅動開發的突破性方法，配備專門的 AI Agent 用於規劃、架構和實現',
               },
             },
+            id: 'bmad-method',
             name: 'BMAD-METHOD',
             url: 'https://github.com/bmad-code-org/BMAD-METHOD',
             description:
               'Breakthrough Method for Agile AI-Driven Development with specialized AI agents for planning, architecture, and implementation',
           },
+          {
+            translations: {
+              en: {
+                name: 'Grill Me',
+                description:
+                  'Agent skill that stress-tests plans and designs through a focused, one-question-at-a-time interview',
+              },
+              de: {
+                name: 'Grill Me',
+                description:
+                  'Agenten-Skill, der Pläne und Designs durch ein fokussiertes Interview mit jeweils einer Frage einem Stresstest unterzieht',
+              },
+              es: {
+                name: 'Grill Me',
+                description:
+                  'Habilidad de agente que pone a prueba planes y diseños mediante una entrevista enfocada, con una pregunta a la vez',
+              },
+              fr: {
+                name: 'Grill Me',
+                description:
+                  "Compétence d'agent qui met les plans et conceptions à l'épreuve grâce à un entretien ciblé, une question à la fois",
+              },
+              id: {
+                name: 'Grill Me',
+                description:
+                  'Skill agen yang menguji ketahanan rencana dan desain melalui wawancara terfokus, satu pertanyaan setiap kali',
+              },
+              ja: {
+                name: 'Grill Me',
+                description:
+                  '一度に一つの質問を行う集中インタビューで、計画や設計をストレステストするエージェントスキル',
+              },
+              ko: {
+                name: 'Grill Me',
+                description:
+                  '한 번에 하나씩 질문하는 집중 인터뷰를 통해 계획과 설계를 검증하는 에이전트 스킬',
+              },
+              pt: {
+                name: 'Grill Me',
+                description:
+                  'Skill de agente que testa planos e designs por meio de uma entrevista focada, com uma pergunta de cada vez',
+              },
+              ru: {
+                name: 'Grill Me',
+                description:
+                  'Навык агента для стресс-тестирования планов и архитектуры через сфокусированное интервью по одному вопросу за раз',
+              },
+              tr: {
+                name: 'Grill Me',
+                description:
+                  'Planları ve tasarımları her seferinde tek soruluk odaklı bir görüşmeyle stres testine tabi tutan ajan becerisi',
+              },
+              'zh-Hans': {
+                name: 'Grill Me',
+                description: '通过一次一个问题的聚焦访谈，对计划和设计进行压力测试的 Agent Skill',
+              },
+              'zh-Hant': {
+                name: 'Grill Me',
+                description: '透過一次一個問題的聚焦訪談，對計畫和設計進行壓力測試的 Agent Skill',
+              },
+            },
+            id: 'grill-me',
+            name: 'Grill Me',
+            url: 'https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md',
+            description:
+              'Agent skill that stress-tests plans and designs through a focused, one-question-at-a-time interview',
+            lastVerifiedAt: '2026-07-31',
+          },
+          {
+            translations: {
+              en: {
+                name: 'Superpowers',
+                description:
+                  'Agentic skills framework and software development methodology spanning planning, TDD, debugging, code review, and execution',
+              },
+              de: {
+                name: 'Superpowers',
+                description:
+                  'Agentisches Skills-Framework und Softwareentwicklungsmethodik für Planung, TDD, Debugging, Code-Review und Umsetzung',
+              },
+              es: {
+                name: 'Superpowers',
+                description:
+                  'Framework de habilidades agénticas y metodología de desarrollo de software para planificación, TDD, depuración, revisión de código y ejecución',
+              },
+              fr: {
+                name: 'Superpowers',
+                description:
+                  'Framework de compétences agentiques et méthodologie de développement logiciel couvrant planification, TDD, débogage, revue de code et exécution',
+              },
+              id: {
+                name: 'Superpowers',
+                description:
+                  'Framework skill agentik dan metodologi pengembangan perangkat lunak untuk perencanaan, TDD, debugging, code review, dan eksekusi',
+              },
+              ja: {
+                name: 'Superpowers',
+                description:
+                  '計画、TDD、デバッグ、コードレビュー、実行を網羅するエージェントスキルフレームワーク兼ソフトウェア開発方法論',
+              },
+              ko: {
+                name: 'Superpowers',
+                description:
+                  '계획, TDD, 디버깅, 코드 리뷰 및 실행을 아우르는 에이전트 스킬 프레임워크이자 소프트웨어 개발 방법론',
+              },
+              pt: {
+                name: 'Superpowers',
+                description:
+                  'Framework de skills agênticas e metodologia de desenvolvimento de software para planejamento, TDD, depuração, revisão de código e execução',
+              },
+              ru: {
+                name: 'Superpowers',
+                description:
+                  'Фреймворк агентных навыков и методология разработки ПО, охватывающие планирование, TDD, отладку, ревью кода и выполнение',
+              },
+              tr: {
+                name: 'Superpowers',
+                description:
+                  'Planlama, TDD, hata ayıklama, kod inceleme ve uygulamayı kapsayan ajanik beceri çerçevesi ve yazılım geliştirme metodolojisi',
+              },
+              'zh-Hans': {
+                name: 'Superpowers',
+                description:
+                  '覆盖规划、TDD、调试、代码审查和执行的 Agent Skill 框架与软件开发方法论',
+              },
+              'zh-Hant': {
+                name: 'Superpowers',
+                description:
+                  '涵蓋規劃、TDD、除錯、程式碼審查和執行的 Agent Skill 框架與軟體開發方法論',
+              },
+            },
+            id: 'superpowers',
+            name: 'Superpowers',
+            url: 'https://github.com/obra/superpowers',
+            description:
+              'Agentic skills framework and software development methodology spanning planning, TDD, debugging, code review, and execution',
+            lastVerifiedAt: '2026-07-31',
+          },
         ],
       },
       {
+        id: 'productivity-utilities',
         title: 'Productivity Utilities',
         translations: {
           en: {
@@ -2077,6 +2334,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: 'Claude Code 使用追蹤和分析工具',
               },
             },
+            id: 'ccusage',
             name: 'ccusage',
             url: 'https://github.com/ryoppippi/ccusage',
             description: 'Claude Code usage tracking and analytics tool',
@@ -2142,10 +2400,286 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: 'Claude Code 狀態欄工具，顯示即時使用統計和配額資訊',
               },
             },
+            id: 'ccstatusline',
             name: 'ccstatusline',
             url: 'https://github.com/sirmalloc/ccstatusline',
             description:
               'Status line tool for Claude Code displaying real-time usage statistics and quota information',
+          },
+          {
+            translations: {
+              en: {
+                name: 'Claude Code Router',
+                description:
+                  'Local control plane for routing AI coding agents across models, providers, and tools',
+              },
+              de: {
+                name: 'Claude Code Router',
+                description:
+                  'Lokale Steuerungsebene zur Weiterleitung von AI-Coding-Agenten über Modelle, Anbieter und Tools hinweg',
+              },
+              es: {
+                name: 'Claude Code Router',
+                description:
+                  'Plano de control local para enrutar agentes de codificación AI entre modelos, proveedores y herramientas',
+              },
+              fr: {
+                name: 'Claude Code Router',
+                description:
+                  'Plan de contrôle local pour router les agents de codage IA entre modèles, fournisseurs et outils',
+              },
+              id: {
+                name: 'Claude Code Router',
+                description:
+                  'Control plane lokal untuk merutekan agen AI coding di antara model, provider, dan tool',
+              },
+              ja: {
+                name: 'Claude Code Router',
+                description:
+                  'AIコーディングエージェントをモデル、プロバイダー、ツール間でルーティングするローカルコントロールプレーン',
+              },
+              ko: {
+                name: 'Claude Code Router',
+                description:
+                  'AI 코딩 에이전트를 모델, 제공업체 및 도구 사이에서 라우팅하는 로컬 제어 영역',
+              },
+              pt: {
+                name: 'Claude Code Router',
+                description:
+                  'Plano de controle local para rotear agentes de codificação AI entre modelos, provedores e ferramentas',
+              },
+              ru: {
+                name: 'Claude Code Router',
+                description:
+                  'Локальная плоскость управления для маршрутизации AI-агентов программирования между моделями, провайдерами и инструментами',
+              },
+              tr: {
+                name: 'Claude Code Router',
+                description:
+                  'AI kodlama ajanlarını modeller, sağlayıcılar ve araçlar arasında yönlendiren yerel kontrol düzlemi',
+              },
+              'zh-Hans': {
+                name: 'Claude Code Router',
+                description: '在模型、提供商和工具之间路由 AI 编码 Agent 的本地控制平面',
+              },
+              'zh-Hant': {
+                name: 'Claude Code Router',
+                description: '在模型、供應商和工具之間路由 AI 編碼 Agent 的本地控制平面',
+              },
+            },
+            id: 'claude-code-router',
+            name: 'Claude Code Router',
+            url: 'https://github.com/musistudio/claude-code-router',
+            description:
+              'Local control plane for routing AI coding agents across models, providers, and tools',
+            lastVerifiedAt: '2026-07-31',
+          },
+          {
+            translations: {
+              en: {
+                name: 'Vibe Kanban',
+                description:
+                  'Kanban workspace for planning, reviewing, and orchestrating parallel AI coding agent tasks',
+              },
+              de: {
+                name: 'Vibe Kanban',
+                description:
+                  'Kanban-Arbeitsbereich zum Planen, Prüfen und Orchestrieren paralleler Aufgaben von AI-Coding-Agenten',
+              },
+              es: {
+                name: 'Vibe Kanban',
+                description:
+                  'Espacio Kanban para planificar, revisar y orquestar tareas paralelas de agentes de codificación AI',
+              },
+              fr: {
+                name: 'Vibe Kanban',
+                description:
+                  "Espace Kanban pour planifier, examiner et orchestrer des tâches parallèles d'agents de codage IA",
+              },
+              id: {
+                name: 'Vibe Kanban',
+                description:
+                  'Workspace Kanban untuk merencanakan, meninjau, dan mengorkestrasi tugas agen AI coding secara paralel',
+              },
+              ja: {
+                name: 'Vibe Kanban',
+                description:
+                  '複数のAIコーディングエージェントのタスクを計画、レビュー、オーケストレーションするKanbanワークスペース',
+              },
+              ko: {
+                name: 'Vibe Kanban',
+                description:
+                  '병렬 AI 코딩 에이전트 작업을 계획, 검토 및 오케스트레이션하는 Kanban 작업 공간',
+              },
+              pt: {
+                name: 'Vibe Kanban',
+                description:
+                  'Espaço Kanban para planejar, revisar e orquestrar tarefas paralelas de agentes de codificação AI',
+              },
+              ru: {
+                name: 'Vibe Kanban',
+                description:
+                  'Kanban-пространство для планирования, проверки и оркестрации параллельных задач AI-агентов программирования',
+              },
+              tr: {
+                name: 'Vibe Kanban',
+                description:
+                  'Paralel AI kodlama ajanı görevlerini planlamak, incelemek ve orkestre etmek için Kanban çalışma alanı',
+              },
+              'zh-Hans': {
+                name: 'Vibe Kanban',
+                description: '用于规划、审查和编排并行 AI 编码 Agent 任务的看板工作区',
+              },
+              'zh-Hant': {
+                name: 'Vibe Kanban',
+                description: '用於規劃、審查和編排平行 AI 編碼 Agent 任務的看板工作區',
+              },
+            },
+            id: 'vibe-kanban',
+            name: 'Vibe Kanban',
+            url: 'https://github.com/BloopAI/vibe-kanban',
+            description:
+              'Kanban workspace for planning, reviewing, and orchestrating parallel AI coding agent tasks',
+            lastVerifiedAt: '2026-07-31',
+          },
+          {
+            translations: {
+              en: {
+                name: 'CLIProxyAPI',
+                description:
+                  'Local proxy exposing OpenAI-, Gemini-, Claude-, Codex-, and Grok-compatible APIs with OAuth and multi-account routing',
+              },
+              de: {
+                name: 'CLIProxyAPI',
+                description:
+                  'Lokaler Proxy mit OpenAI-, Gemini-, Claude-, Codex- und Grok-kompatiblen APIs sowie OAuth und Multi-Account-Routing',
+              },
+              es: {
+                name: 'CLIProxyAPI',
+                description:
+                  'Proxy local con API compatibles con OpenAI, Gemini, Claude, Codex y Grok, además de OAuth y enrutamiento multicuenta',
+              },
+              fr: {
+                name: 'CLIProxyAPI',
+                description:
+                  'Proxy local exposant des API compatibles OpenAI, Gemini, Claude, Codex et Grok avec OAuth et routage multicompte',
+              },
+              id: {
+                name: 'CLIProxyAPI',
+                description:
+                  'Proxy lokal yang menyediakan API kompatibel OpenAI, Gemini, Claude, Codex, dan Grok dengan OAuth dan routing multi-akun',
+              },
+              ja: {
+                name: 'CLIProxyAPI',
+                description:
+                  'OpenAI、Gemini、Claude、Codex、Grok互換APIをOAuthと複数アカウントルーティング付きで提供するローカルプロキシ',
+              },
+              ko: {
+                name: 'CLIProxyAPI',
+                description:
+                  'OAuth 및 다중 계정 라우팅과 함께 OpenAI, Gemini, Claude, Codex, Grok 호환 API를 제공하는 로컬 프록시',
+              },
+              pt: {
+                name: 'CLIProxyAPI',
+                description:
+                  'Proxy local com APIs compatíveis com OpenAI, Gemini, Claude, Codex e Grok, além de OAuth e roteamento de múltiplas contas',
+              },
+              ru: {
+                name: 'CLIProxyAPI',
+                description:
+                  'Локальный прокси с совместимыми API OpenAI, Gemini, Claude, Codex и Grok, OAuth и маршрутизацией нескольких аккаунтов',
+              },
+              tr: {
+                name: 'CLIProxyAPI',
+                description:
+                  "OAuth ve çoklu hesap yönlendirme ile OpenAI, Gemini, Claude, Codex ve Grok uyumlu API'ler sunan yerel proxy",
+              },
+              'zh-Hans': {
+                name: 'CLIProxyAPI',
+                description:
+                  '通过本地代理提供兼容 OpenAI、Gemini、Claude、Codex 和 Grok 的 API，支持 OAuth 与多账号路由',
+              },
+              'zh-Hant': {
+                name: 'CLIProxyAPI',
+                description:
+                  '透過本機代理提供相容 OpenAI、Gemini、Claude、Codex 和 Grok 的 API，支援 OAuth 與多帳號路由',
+              },
+            },
+            id: 'cliproxyapi',
+            name: 'CLIProxyAPI',
+            url: 'https://github.com/router-for-me/CLIProxyAPI',
+            description:
+              'Local proxy exposing OpenAI-, Gemini-, Claude-, Codex-, and Grok-compatible APIs with OAuth and multi-account routing',
+            lastVerifiedAt: '2026-07-31',
+          },
+          {
+            translations: {
+              en: {
+                name: 'Google Code Wiki',
+                description:
+                  'Public-preview service that continuously generates linked documentation, diagrams, and Gemini-powered chat for public code repositories',
+              },
+              de: {
+                name: 'Google Code Wiki',
+                description:
+                  'Public-Preview-Dienst, der verlinkte Dokumentation, Diagramme und Gemini-gestützten Chat für öffentliche Code-Repositories laufend generiert',
+              },
+              es: {
+                name: 'Google Code Wiki',
+                description:
+                  'Servicio en vista previa pública que genera continuamente documentación enlazada, diagramas y chat con Gemini para repositorios públicos',
+              },
+              fr: {
+                name: 'Google Code Wiki',
+                description:
+                  'Service en aperçu public qui génère en continu documentation liée, diagrammes et chat alimenté par Gemini pour les dépôts publics',
+              },
+              id: {
+                name: 'Google Code Wiki',
+                description:
+                  'Layanan public preview yang terus menghasilkan dokumentasi tertaut, diagram, dan chat berbasis Gemini untuk repositori publik',
+              },
+              ja: {
+                name: 'Google Code Wiki',
+                description:
+                  '公開コードリポジトリ向けに、リンク付きドキュメント、図、Gemini搭載チャットを継続生成するパブリックプレビューサービス',
+              },
+              ko: {
+                name: 'Google Code Wiki',
+                description:
+                  '공개 코드 저장소를 위해 연결된 문서, 다이어그램 및 Gemini 기반 채팅을 지속적으로 생성하는 공개 미리보기 서비스',
+              },
+              pt: {
+                name: 'Google Code Wiki',
+                description:
+                  'Serviço em visualização pública que gera continuamente documentação vinculada, diagramas e chat com Gemini para repositórios públicos',
+              },
+              ru: {
+                name: 'Google Code Wiki',
+                description:
+                  'Сервис в публичном превью, непрерывно создающий связанную документацию, диаграммы и чат на Gemini для открытых репозиториев',
+              },
+              tr: {
+                name: 'Google Code Wiki',
+                description:
+                  'Açık kod depoları için bağlantılı dokümantasyon, diyagramlar ve Gemini destekli sohbeti sürekli üreten herkese açık önizleme hizmeti',
+              },
+              'zh-Hans': {
+                name: 'Google Code Wiki',
+                description: '面向公开代码库持续生成关联文档、架构图和 Gemini 问答的公开预览服务',
+              },
+              'zh-Hant': {
+                name: 'Google Code Wiki',
+                description: '面向公開程式碼庫持續生成關聯文件、架構圖和 Gemini 問答的公開預覽服務',
+              },
+            },
+            id: 'google-code-wiki',
+            name: 'Google Code Wiki',
+            url: 'https://codewiki.google',
+            description:
+              'Public-preview service that continuously generates linked documentation, diagrams, and Gemini-powered chat for public code repositories',
+            lastVerifiedAt: '2026-07-31',
+            status: 'public-preview',
           },
         ],
       },
@@ -2206,6 +2740,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
     },
     sections: [
       {
+        id: 'open-standards',
         title: 'Open Standards',
         translations: {
           en: {
@@ -2309,6 +2844,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                   '模組化能力，通過基於文件系統的資源（包含指令、元數據和可選腳本）擴展 Agent 的功能，實現領域專業知識和工作流',
               },
             },
+            id: 'agent-skills',
             name: 'Agent Skills',
             url: 'https://agentskills.io',
             description:
@@ -2375,6 +2911,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: '將 AI 應用連接到外部系統（如數據源、工具和工作流）的開放標準',
               },
             },
+            id: 'model-context-protocol',
             name: 'Model Context Protocol (MCP)',
             url: 'https://modelcontextprotocol.io',
             description:
@@ -2441,6 +2978,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                 description: '為編碼 Agent 提供項目特定指令和上下文的開放格式 Markdown 文件',
               },
             },
+            id: 'agents-md',
             name: 'AGENTS.md',
             url: 'https://agents.md',
             description:
@@ -2449,6 +2987,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
         ],
       },
       {
+        id: 'vendor-standards',
         title: 'Vendor Standards',
         translations: {
           en: {
@@ -2552,6 +3091,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                   '自訂命令，可通過聊天輸入框中的 `/` 前綴觸發可重用工作流，以 Markdown 文件形式存儲在項目、全局或團隊位置',
               },
             },
+            id: 'slash-commands',
             name: 'Slash Commands',
             url: 'https://cursor.com/docs/agent/chat/commands',
             description:
@@ -2620,6 +3160,7 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                   '為 Agent 提供系統級指令，通過項目規則、用戶規則、團隊規則和 AGENTS.md 文件提供持久、可重用的上下文',
               },
             },
+            id: 'rules',
             name: 'Rules',
             url: 'https://cursor.com/docs/context/rules',
             description:

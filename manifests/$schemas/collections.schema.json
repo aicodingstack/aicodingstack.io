@@ -53,6 +53,11 @@
       "type": "object",
       "description": "A subsection containing a title, translations, and items",
       "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "description": "Stable identifier for layout, navigation, and search anchors"
+        },
         "title": {
           "type": "string",
           "description": "Subsection title"
@@ -70,13 +75,18 @@
           "minItems": 0
         }
       },
-      "required": ["title", "translations", "items"],
+      "required": ["id", "title", "translations", "items"],
       "additionalProperties": false
     },
     "collectionItem": {
       "type": "object",
       "description": "An individual item within a collection subsection",
       "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "description": "Stable identifier for search results and deep links"
+        },
         "name": {
           "type": "string",
           "description": "Item name"
@@ -91,12 +101,27 @@
           "type": "string",
           "description": "Item description"
         },
+        "publishedAt": {
+          "type": "string",
+          "format": "date",
+          "description": "Original publication date for editorial content"
+        },
+        "lastVerifiedAt": {
+          "type": "string",
+          "format": "date",
+          "description": "Date when the URL and description were last verified"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["public-preview"],
+          "description": "Current reader-facing availability status when noteworthy"
+        },
         "translations": {
           "$ref": "./ref/translations.schema.json",
           "description": "Internationalization translations for item fields"
         }
       },
-      "required": ["name", "url", "description", "translations"],
+      "required": ["id", "name", "url", "description", "translations"],
       "additionalProperties": false
     }
   }

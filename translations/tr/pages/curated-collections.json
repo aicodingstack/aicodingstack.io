@@ -1,4 +1,11 @@
 {
+  "opensInNewTab": "Yeni sekmede açılır",
+  "published": "Yayınlandı",
+  "sectionNavigation": "Koleksiyon bölümleri",
+  "status": {
+    "publicPreview": "Herkese Açık Önizleme"
+  },
+  "verified": "Doğrulandı",
   "articles": {
     "description": "Sektör liderlerinden yapay zekâ destekli kodlama hakkında okunması gereken makaleler"
   },

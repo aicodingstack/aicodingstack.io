@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { useRouter } from '@/i18n/navigation'
-import { buildManifestPath } from '@/lib/manifest-registry'
 import type { SearchResult } from '@/lib/search'
 import { getAutocompleteSuggestions } from '@/lib/search'
 
@@ -50,7 +49,7 @@ export default function SearchDialog({ isOpen, onClose, locale }: SearchDialogPr
   // Navigate to result
   const navigateToResult = (result: SearchResult) => {
     onClose()
-    router.push(buildManifestPath(result.category, result.id))
+    router.push(result.href)
   }
 
   // Navigate to search page

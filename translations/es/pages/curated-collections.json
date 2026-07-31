@@ -1,4 +1,11 @@
 {
+  "opensInNewTab": "Se abre en una pestaña nueva",
+  "published": "Publicado",
+  "sectionNavigation": "Secciones de la colección",
+  "status": {
+    "publicPreview": "Vista previa pública"
+  },
+  "verified": "Verificado",
   "articles": {
     "description": "Artículos imprescindibles sobre programación con IA escritos por líderes del sector"
   },

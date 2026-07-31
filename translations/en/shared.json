@@ -47,6 +47,7 @@
       "vendors": "All Vendors"
     },
     "plural": {
+      "collections": "Collections",
       "clis": "CLIs",
       "desktops": "Desktop",
       "extensions": "Extensions",

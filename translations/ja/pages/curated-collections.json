@@ -1,4 +1,11 @@
 {
+  "opensInNewTab": "新しいタブで開きます",
+  "published": "公開日",
+  "sectionNavigation": "コレクションのセクション",
+  "status": {
+    "publicPreview": "公開プレビュー"
+  },
+  "verified": "確認済み",
   "articles": {
     "description": "AIコーディングに関する業界リーダーの必読記事"
   },

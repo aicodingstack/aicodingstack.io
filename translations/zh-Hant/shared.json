@@ -47,6 +47,7 @@
       "vendors": "All Vendors"
     },
     "plural": {
+      "collections": "收藏集",
       "clis": "命令列工具",
       "desktops": "桌面應用程式",
       "extensions": "擴充功能",

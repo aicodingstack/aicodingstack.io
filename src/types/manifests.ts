@@ -413,9 +413,13 @@ export interface ManifestModelSeries {
  * Based on: /manifests/$schemas/collections.schema.json#$defs/collectionItem
  */
 export interface ManifestCollectionItem {
+  id: string
   name: string
   url: string
   description: string
+  publishedAt?: string
+  lastVerifiedAt?: string
+  status?: 'public-preview'
   translations: ManifestTranslations
 }
 
@@ -424,6 +428,7 @@ export interface ManifestCollectionItem {
  * Based on: /manifests/$schemas/collections.schema.json#$defs/collectionSubSection
  */
 export interface ManifestCollectionSubSection {
+  id: string
   title: string
   translations: ManifestTranslations
   items: ManifestCollectionItem[]

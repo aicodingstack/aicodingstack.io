@@ -44,8 +44,12 @@ export default async function CuratedCollectionsPage({ params }: LocalePageProps
         <PageHeader title={tShared('terms.curatedCollections')} subtitle={tPage('subtitle')} />
 
         {/* Main Content with Sidebar */}
-        <div className="flex gap-[var(--spacing-lg)]">
-          <CollectionScrollbar sectionIds={sectionIds} collections={collections} />
+        <div className="flex flex-col gap-[var(--spacing-lg)] lg:flex-row">
+          <CollectionScrollbar
+            sectionIds={sectionIds}
+            collections={collections}
+            label={tPage('sectionNavigation')}
+          />
 
           {/* Main Content */}
           <div className="flex-1 min-w-0">
@@ -55,7 +59,14 @@ export default async function CuratedCollectionsPage({ params }: LocalePageProps
                 <CollectionSection
                   key={sectionId}
                   id={sectionId}
+                  locale={locale}
                   section={collections[sectionId]!}
+                  labels={{
+                    opensInNewTab: tPage('opensInNewTab'),
+                    published: tPage('published'),
+                    verified: tPage('verified'),
+                    publicPreview: tPage('status.publicPreview'),
+                  }}
                 />
               ))}
           </div>
