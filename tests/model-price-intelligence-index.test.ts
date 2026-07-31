@@ -40,6 +40,17 @@ describe('model price-intelligence index', () => {
     }
   })
 
+  it('uses the reduced GPT-5.6 Luna short-context price', () => {
+    const luna = modelPriceIntelligencePoints.find(point => point.modelId === 'gpt-5-6-luna')
+
+    expect(luna).toMatchObject({
+      inputPrice: 0.2,
+      outputPrice: 1.2,
+      pricingSource: 'official',
+    })
+    expect(luna?.blendedPrice).toBeCloseTo(0.3)
+  })
+
   it('uses reviewed USD API prices when the catalog offer is not directly comparable', () => {
     const fallbackPoints = modelPriceIntelligencePoints.filter(
       point => point.pricingSource === 'reference'
