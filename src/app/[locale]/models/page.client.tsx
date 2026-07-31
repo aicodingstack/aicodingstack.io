@@ -16,7 +16,8 @@ import { formatTokenCount } from '@/lib/format'
 import { modelsData } from '@/lib/generated'
 import { localizeManifestItems } from '@/lib/manifest-i18n'
 import { buildModelComparisonPath } from '@/lib/model-comparison'
-import { formatPrimaryTokenRate } from '@/lib/model-pricing'
+import { groupModelsByLifecycle } from '@/lib/model-list'
+import { formatModelTokenRate } from '@/lib/model-pricing'
 import type { ManifestModel } from '@/types/manifests'
 
 type Props = {
@@ -67,21 +68,10 @@ export default function ModelsPageClient({ locale }: Props) {
   }, [localizedModels, searchQuery])
 
   // Group filtered models by lifecycle
-  const modelsByLifecycle = useMemo(() => {
-    const groups = {
-      latest: [] as ManifestModel[],
-      maintained: [] as ManifestModel[],
-      deprecated: [] as ManifestModel[],
-    }
-    filteredModels.forEach(model => {
-      const lifecycle = model.lifecycle || 'maintained'
-      groups[lifecycle].push(model)
-    })
-    return groups
-  }, [filteredModels])
+  const modelsByLifecycle = useMemo(() => groupModelsByLifecycle(filteredModels), [filteredModels])
 
   const formatListPrice = (model: ManifestModel): string => {
-    const price = formatPrimaryTokenRate(model.tokenPricing, 'input', locale, conversion)
+    const price = formatModelTokenRate(model, 'input', locale, conversion)
     return price
       ? tShared('modelPricing.perMillionTokens', { price })
       : tShared('modelPricing.notAvailable')
@@ -109,11 +99,11 @@ export default function ModelsPageClient({ locale }: Props) {
 
           <StackTabs activeStack="models" locale={locale} />
 
-          <section className="mb-[var(--spacing-lg)] max-w-6xl border-y border-[var(--color-border)] py-[var(--spacing-md)]">
+          <section className="mb-[var(--spacing-lg)] border-y border-[var(--color-border)] py-[var(--spacing-md)]">
             <h2 className="mb-[var(--spacing-xs)] text-lg font-semibold tracking-tight">
               {tPage('guide.title')}
             </h2>
-            <p className="max-w-4xl text-sm leading-relaxed text-[var(--color-text-secondary)]">
+            <p className="text-sm leading-relaxed text-[var(--color-text-secondary)]">
               {tPage('guide.description')}
             </p>
             <div className="mt-[var(--spacing-sm)] flex flex-wrap gap-[var(--spacing-md)] text-sm">
@@ -150,28 +140,35 @@ export default function ModelsPageClient({ locale }: Props) {
                 {tShared(`lifecycle.${lifecycle}`)}
               </h2>
               {modelsByLifecycle[lifecycle].length > 0 ? (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[var(--spacing-md)]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-[var(--spacing-md)]">
                   {modelsByLifecycle[lifecycle].map(model => (
                     <article
                       key={model.name}
-                      className={`border p-[var(--spacing-md)] transition-all hover:-translate-y-0.5 group ${
+                      className={`group flex flex-col border p-[var(--spacing-md)] transition-all hover:-translate-y-0.5 ${
                         selectedIds.includes(model.id)
                           ? 'border-[var(--color-border-strong)] bg-[var(--color-hover)]'
                           : 'border-[var(--color-border)] hover:border-[var(--color-border-strong)]'
                       }`}
                     >
-                      <Link href={`/models/${model.id}`} className="block">
+                      <Link href={`/models/${model.id}`} className="block flex-1">
                         <div className="flex items-start mb-[var(--spacing-sm)]">
-                          <div className="flex items-center gap-[var(--spacing-xs)]">
-                            <h3 className="text-lg font-semibold tracking-tight">{model.name}</h3>
+                          <div className="inline-flex items-center gap-[var(--spacing-xs)] whitespace-nowrap">
+                            <h3 className="text-lg font-semibold tracking-tight whitespace-nowrap">
+                              {model.name}
+                            </h3>
                             {model.verified && <VerifiedBadge size="sm" />}
                           </div>
                         </div>
-                        <div className="space-y-[var(--spacing-xs)] mb-[var(--spacing-md)]">
+                        <div className="mb-[var(--spacing-sm)] space-y-[var(--spacing-xs)]">
                           <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
                             <span className="text-[var(--color-text-muted)]">{tPage('size')}</span>
                             <span className="text-[var(--color-text-secondary)]">
-                              {model.size ?? '—'}
+                              {model.size && model.activeParameters
+                                ? tShared('modelParameters.totalAndActive', {
+                                    total: model.size,
+                                    active: model.activeParameters,
+                                  })
+                                : (model.size ?? '—')}
                             </span>
                           </div>
                           <div className="flex items-center gap-[var(--spacing-sm)] text-xs">
@@ -191,24 +188,26 @@ export default function ModelsPageClient({ locale }: Props) {
                             </span>
                           </div>
                         </div>
-                        <div className="flex items-center gap-[var(--spacing-xs)] text-xs text-[var(--color-text-muted)]">
-                          <span>{model.vendor}</span>
-                        </div>
                       </Link>
-                      <button
-                        type="button"
-                        aria-pressed={selectedIds.includes(model.id)}
-                        title={`${tShared('actions.compare')}: ${model.name}`}
-                        onClick={() => toggleModel(model.id)}
-                        className="mt-[var(--spacing-sm)] inline-flex w-full items-center justify-center gap-[var(--spacing-xs)] border-t border-[var(--color-border)] pt-[var(--spacing-sm)] text-xs font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
-                      >
-                        {selectedIds.includes(model.id) ? (
-                          <Check className="h-3.5 w-3.5" aria-hidden="true" />
-                        ) : (
-                          <Scale className="h-3.5 w-3.5" aria-hidden="true" />
-                        )}
-                        {tShared('actions.compare')}
-                      </button>
+                      <div className="mt-[var(--spacing-xs)] flex items-center justify-between gap-[var(--spacing-sm)] border-t border-[var(--color-border)] pt-[var(--spacing-sm)]">
+                        <span className="text-xs text-[var(--color-text-muted)]">
+                          {model.vendor}
+                        </span>
+                        <button
+                          type="button"
+                          aria-pressed={selectedIds.includes(model.id)}
+                          title={`${tShared('actions.compare')}: ${model.name}`}
+                          onClick={() => toggleModel(model.id)}
+                          className="inline-flex items-center gap-[var(--spacing-xs)] text-xs font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
+                        >
+                          {selectedIds.includes(model.id) ? (
+                            <Check className="h-3.5 w-3.5" aria-hidden="true" />
+                          ) : (
+                            <Scale className="h-3.5 w-3.5" aria-hidden="true" />
+                          )}
+                          {tShared('actions.compare')}
+                        </button>
+                      </div>
                     </article>
                   ))}
                 </div>

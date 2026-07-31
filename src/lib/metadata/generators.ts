@@ -7,8 +7,12 @@
 import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import { formatTokenCount } from '@/lib/format'
-import { formatPrimaryTokenRate } from '@/lib/model-pricing'
-import type { ManifestTokenPricing, ModelLifecycle } from '@/types/manifests'
+import { formatModelTokenRate } from '@/lib/model-pricing'
+import type {
+  ManifestReferenceTokenPricing,
+  ManifestTokenPricing,
+  ModelLifecycle,
+} from '@/types/manifests'
 import {
   CATEGORY_DISPLAY_NAMES,
   CATEGORY_SEO_KEYWORDS,
@@ -72,10 +76,12 @@ export interface ModelDetailMetadataParams {
     description: string
     vendor: string
     size?: string
+    activeParameters?: string
     contextWindow?: number
     maxOutput?: number
     lifecycle?: ModelLifecycle
     tokenPricing?: ManifestTokenPricing
+    referenceTokenPricing?: ManifestReferenceTokenPricing
   }
   translationNamespace: string
 }
@@ -319,7 +325,15 @@ export async function generateModelDetailMetadata(
 
   // Build description with model specs
   const specs: string[] = []
-  if (model.size) specs.push(`${tShared('terms.modelSize')}: ${model.size}`)
+  if (model.size) {
+    const parameterSize = model.activeParameters
+      ? tShared('modelParameters.totalAndActive', {
+          total: model.size,
+          active: model.activeParameters,
+        })
+      : model.size
+    specs.push(`${tShared('terms.modelSize')}: ${parameterSize}`)
+  }
   if (model.contextWindow)
     specs.push(`${tShared('terms.contextWindow')}: ${formatTokenCount(model.contextWindow)} tokens`)
   if (model.maxOutput)
@@ -327,8 +341,22 @@ export async function generateModelDetailMetadata(
 
   const pricingDisplay =
     model.lifecycle !== 'deprecated' && model.tokenPricing
-      ? (formatPrimaryTokenRate(model.tokenPricing, 'input', locale) ??
-        formatPrimaryTokenRate(model.tokenPricing, 'output', locale))
+      ? (formatModelTokenRate(
+          {
+            tokenPricing: model.tokenPricing,
+            referenceTokenPricing: model.referenceTokenPricing,
+          },
+          'input',
+          locale
+        ) ??
+        formatModelTokenRate(
+          {
+            tokenPricing: model.tokenPricing,
+            referenceTokenPricing: model.referenceTokenPricing,
+          },
+          'output',
+          locale
+        ))
       : null
 
   if (pricingDisplay) specs.push(`${tShared('terms.pricing')}: ${pricingDisplay}/M tokens`)
@@ -340,6 +368,7 @@ export async function generateModelDetailMetadata(
     model.name,
     model.vendor,
     model.size || '',
+    model.activeParameters || '',
     [...CATEGORY_SEO_KEYWORDS.models],
   ])
 

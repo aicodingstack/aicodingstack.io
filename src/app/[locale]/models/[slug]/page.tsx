@@ -44,10 +44,12 @@ export async function generateMetadata({
       description: model.description || '',
       vendor: model.vendor,
       size: model.size ?? undefined,
+      activeParameters: model.activeParameters ?? undefined,
       contextWindow: model.contextWindow,
       maxOutput: model.maxOutput ?? undefined,
       lifecycle: model.lifecycle,
       tokenPricing: model.tokenPricing,
+      referenceTokenPricing: model.referenceTokenPricing,
     },
     translationNamespace: 'pages.modelDetail',
   })
@@ -84,7 +86,15 @@ export default async function ModelPage({
 
   // Build additional info for ProductHero
   const additionalInfo = [
-    model.size && { label: tShared('terms.modelSize'), value: model.size },
+    model.size && {
+      label: tShared('terms.modelSize'),
+      value: model.activeParameters
+        ? tShared('modelParameters.totalAndActive', {
+            total: model.size,
+            active: model.activeParameters,
+          })
+        : model.size,
+    },
     {
       label: tShared('terms.contextWindow'),
       value: `${model.contextWindow.toLocaleString()} tokens`,

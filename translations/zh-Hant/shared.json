@@ -84,6 +84,9 @@
     "latest": "最新",
     "maintained": "維護中"
   },
+  "modelParameters": {
+    "totalAndActive": "{total} 總參數 / {active} 啟用參數"
+  },
   "modelPricing": {
     "cacheRead": "快取讀取",
     "cacheWrite": "快取寫入",

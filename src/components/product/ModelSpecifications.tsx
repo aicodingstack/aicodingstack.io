@@ -3,7 +3,12 @@
 import { useLocale, useTranslations } from 'next-intl'
 import { useCurrency } from '@/components/CurrencyProvider'
 import { formatTokenCount } from '@/lib/format'
-import { convertTokenRate, formatTokenRate, isTokenPricingAvailable } from '@/lib/model-pricing'
+import {
+  convertTokenRate,
+  formatReferenceTokenRate,
+  formatTokenRate,
+  isTokenPricingAvailable,
+} from '@/lib/model-pricing'
 import type {
   ManifestModel,
   ManifestTokenPricingCondition,
@@ -11,7 +16,16 @@ import type {
 } from '@/types/manifests'
 
 export interface ModelSpecificationsProps {
-  model: Pick<ManifestModel, 'size' | 'contextWindow' | 'maxOutput' | 'tokenPricing' | 'lifecycle'>
+  model: Pick<
+    ManifestModel,
+    | 'size'
+    | 'activeParameters'
+    | 'contextWindow'
+    | 'maxOutput'
+    | 'tokenPricing'
+    | 'referenceTokenPricing'
+    | 'lifecycle'
+  >
 }
 
 const reasonKeys: Record<ManifestTokenPricingReason, string> = {
@@ -32,7 +46,14 @@ export function ModelSpecifications({ model }: ModelSpecificationsProps) {
   const locale = useLocale()
   const tShared = useTranslations('shared')
   const { conversion } = useCurrency()
-  const hasContent = model.size || model.contextWindow || model.maxOutput || model.tokenPricing
+  const parameterSize =
+    model.size && model.activeParameters
+      ? tShared('modelParameters.totalAndActive', {
+          total: model.size,
+          active: model.activeParameters,
+        })
+      : model.size
+  const hasContent = parameterSize || model.contextWindow || model.maxOutput || model.tokenPricing
   const currencyNames = new Intl.DisplayNames(locale, { type: 'currency' })
   const formatCurrencyName = (currency: string) => currencyNames.of(currency) ?? currency
 
@@ -80,12 +101,12 @@ export function ModelSpecifications({ model }: ModelSpecificationsProps) {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[var(--spacing-md)] mt-[var(--spacing-lg)]">
-          {model.size && (
+          {parameterSize && (
             <div className="border border-[var(--color-border)] p-[var(--spacing-md)]">
               <h3 className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider font-medium mb-[var(--spacing-xs)]">
                 {tShared('terms.modelSize')}
               </h3>
-              <p className="text-lg font-semibold tracking-tight">{model.size}</p>
+              <p className="text-lg font-semibold tracking-tight">{parameterSize}</p>
             </div>
           )}
 
@@ -144,10 +165,13 @@ export function ModelSpecifications({ model }: ModelSpecificationsProps) {
                             </span>
                           )}
                         </div>
-                        {offer.tiers.map((tier, index) => {
+                        {offer.tiers.map(tier => {
                           const condition = formatCondition(tier.condition)
+                          const tierKey = tier.condition
+                            ? `${tier.condition.metric}-${tier.condition.min ?? 'min'}-${tier.condition.max ?? 'max'}`
+                            : 'default'
                           return (
-                            <div key={`${offer.id}-${index}`} className="space-y-1">
+                            <div key={`${offer.id}-${tierKey}`} className="space-y-1">
                               {condition && (
                                 <p className="text-xs font-medium text-[var(--color-text-secondary)]">
                                   {condition}
@@ -181,6 +205,39 @@ export function ModelSpecifications({ model }: ModelSpecificationsProps) {
                       </div>
                     )
                   })}
+                </div>
+              ) : model.referenceTokenPricing ? (
+                <div className="space-y-[var(--spacing-sm)]">
+                  <p className="text-sm text-[var(--color-text-secondary)]">
+                    {tShared(reasonKeys[model.tokenPricing.reason])}
+                  </p>
+                  <div className="space-y-1 border-t border-[var(--color-border)] pt-[var(--spacing-sm)]">
+                    {rateRows.map(([rate, label]) => {
+                      const price = formatReferenceTokenRate(
+                        model.referenceTokenPricing!,
+                        rate,
+                        locale,
+                        conversion
+                      )
+                      if (!price) return null
+                      return (
+                        <p key={rate} className="text-sm">
+                          <span className="text-[var(--color-text-muted)] text-xs">{label} </span>
+                          <span className="font-semibold tracking-tight">
+                            {tShared('modelPricing.perMillionTokens', { price })}
+                          </span>
+                        </p>
+                      )
+                    })}
+                    <a
+                      href={model.referenceTokenPricing.source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-xs text-[var(--color-text-muted)] underline-offset-4 hover:text-[var(--color-text)] hover:underline"
+                    >
+                      {model.referenceTokenPricing.source.name}
+                    </a>
+                  </div>
                 </div>
               ) : (
                 <p className="text-sm text-[var(--color-text-secondary)]">

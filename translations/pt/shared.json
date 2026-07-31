@@ -84,6 +84,9 @@
     "latest": "Mais recentes",
     "maintained": "Mantidos"
   },
+  "modelParameters": {
+    "totalAndActive": "{total} no total / {active} ativos"
+  },
   "modelPricing": {
     "cacheRead": "Leitura de cache",
     "cacheWrite": "Gravação de cache",
