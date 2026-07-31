@@ -1,6 +1,86 @@
 {
   "clis": {
-    "backTo": "Zurück zu CLIs",
+    "guide": {
+      "criteria": [
+        {
+          "description": "Beginnen Sie mit den Betriebssystemen Ihres Teams. Eine CLI für alle benötigten Entwicklungsrechner lässt sich leichter standardisieren und warten.",
+          "title": "Plattform-Eignung"
+        },
+        {
+          "description": "Vergleichen Sie Gratisangebote und Einstiegspreise und prüfen Sie danach die offizielle Preisseite. Nutzungslimits und enthaltene Modelle beeinflussen die tatsächlichen Kosten.",
+          "title": "Preismodell"
+        },
+        {
+          "description": "Lizenz- und GitHub-Links zeigen, ob ein Tool quelloffen oder proprietär ist, und ermöglichen die Prüfung des Projekts.",
+          "title": "Lizenz und Quellcode"
+        },
+        {
+          "description": "Website, Dokumentation, Download, Änderungsprotokoll und Issues zeigen Installation, Updates und Support.",
+          "title": "Prüfpfad"
+        }
+      ],
+      "faqTitle": "Fragen zu KI-Coding-CLIs",
+      "faqs": [
+        {
+          "description": "Eine KI-Coding-CLI ist ein Kommandozeilenwerkzeug zum Prüfen von Repositories, Bearbeiten von Dateien, Ausführen von Befehlen und Erledigen von Coding-Aufgaben. Produkte unterscheiden sich bei Modellzugang, Plattformen, Preisen, Lizenzen und Ausführungskontrolle.",
+          "title": "Was ist eine KI-Coding-CLI?"
+        },
+        {
+          "description": "Keine CLI ist für jeden Workflow die beste. Wählen Sie Tools, die Ihre Plattformen, Ihr Budget, Ihre Lizenzanforderungen und die bereits genutzten Modelle und Dienste unterstützen.",
+          "title": "Welche KI-Coding-CLI ist die beste?"
+        },
+        {
+          "description": "Manche CLIs bieten einen Gratisplan oder einen Open-Source-Client, während Modellnutzung oder Hosting kostenpflichtig sein können. Filtern Sie zuerst nach Gratisplan und Einstiegspreis und prüfen Sie die aktuellen Grenzen beim Anbieter.",
+          "title": "Gibt es kostenlose KI-Coding-CLIs?"
+        },
+        {
+          "description": "Viele Tools unterstützen Windows, macOS und Linux, andere nur einen Teil davon. Prüfen Sie die Plattformsymbole und anschließend die Installationsanforderungen in der offiziellen Dokumentation.",
+          "title": "Funktionieren sie unter Windows, macOS und Linux?"
+        }
+      ],
+      "intro": "Vergleichen Sie {count} KI-Coding-CLIs anhand derselben Kriterien: Plattformen, Preise, Lizenz, GitHub-Sterne und Projektlinks sowie offizielle Quellen. Definieren Sie Ihre Anforderungen, erstellen Sie eine Auswahlliste und prüfen Sie veränderliche Produktdetails direkt beim Anbieter.",
+      "profiles": [
+        {
+          "description": "Plattformen, Preise und offizielle Quellen des Terminal-Agenten von Anthropic.",
+          "href": "/clis/claude-code-cli",
+          "title": "Claude Code CLI"
+        },
+        {
+          "description": "Installation, Lizenz und offizielle Quellen der Coding-CLI von OpenAI.",
+          "href": "/clis/codex-cli",
+          "title": "Codex CLI"
+        },
+        {
+          "description": "Plattformen, Quellcode und Dokumentation des Terminal-Agenten von Google.",
+          "href": "/clis/gemini-cli",
+          "title": "Gemini CLI"
+        },
+        {
+          "description": "Plattformen, Lizenz, Preise und Projektlinks der OpenCode CLI.",
+          "href": "/clis/opencode",
+          "title": "OpenCode"
+        }
+      ],
+      "profilesIntro": "Die folgenden Links führen direkt zu bereits in der Tabelle aufgeführten Produktdatensätzen; sie sind keine Rangliste oder Empfehlung. Öffnen Sie jeden Datensatz, um Manifestdaten und Primärquellen zu prüfen.",
+      "profilesTitle": "CLI-Produktprofile öffnen",
+      "shortlistIntro": "Nutzen Sie einen einheitlichen Prozess, damit Popularität nicht die Workflow-Eignung ersetzt.",
+      "shortlistTitle": "CLI-Auswahl in drei Schritten",
+      "steps": [
+        {
+          "description": "Notieren Sie Betriebssysteme, Budget, Lizenzanforderungen und benötigte Dokumentations- oder Quellcodezugänge.",
+          "title": "Anforderungen festlegen"
+        },
+        {
+          "description": "Entfernen Sie unpassende Tools und vergleichen Sie die übrigen Einträge anhand derselben Spalten.",
+          "title": "Einheitlich filtern"
+        },
+        {
+          "description": "Prüfen Sie vor einem Testlauf Installation, Preise, aktuelle Version und Support in den offiziellen Quellen.",
+          "title": "Prüfen und testen"
+        }
+      ],
+      "title": "So vergleichen Sie KI-Coding-CLIs"
+    },
     "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von AI-Coding-CLI-Tools nebeneinander.",
     "title": "AI-Coding-CLI-Vergleich"
   },
@@ -16,13 +96,181 @@
     "startingPrice": "Startpreis"
   },
   "extensions": {
-    "backTo": "Zurück zu Erweiterungen",
-    "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von AI-Coding-Erweiterungen nebeneinander.",
+    "guide": {
+      "criteria": [
+        {
+          "title": "Kompatibilität mit der Host-IDE",
+          "description": "Beginnen Sie mit den Editoren, die Ihr Team bereits nutzt. Die Spalte „Unterstützte IDEs“ zeigt, ob eine Erweiterung zu VS Code, JetBrains-Produkten oder einem anderen Host passt."
+        },
+        {
+          "title": "Preismodell",
+          "description": "Vergleichen Sie kostenlose Tarife und Einstiegspreise und prüfen Sie Nutzungslimits sowie enthaltene Dienste auf der offiziellen Preisseite. Auch eine kostenlose Erweiterung kann kostenpflichtigen Modellzugriff benötigen."
+        },
+        {
+          "title": "Lizenz und Wartung",
+          "description": "Nutzen Sie Lizenz, GitHub-Sterne und Projektlinks sowie das Veraltet-Kennzeichen, um Open-Source-Projekte von proprietären oder eingestellten Produkten zu unterscheiden."
+        },
+        {
+          "title": "Prüfpfad",
+          "description": "Öffnen Sie vor der Installation Website, Marketplace oder Download, Dokumentation, Changelog und Issue-Tracker. Diese Primärquellen bestätigen aktuelle Kompatibilität und Support."
+        }
+      ],
+      "faqTitle": "Fragen zu AI-Coding-Erweiterungen",
+      "faqs": [
+        {
+          "title": "Was ist eine AI-Coding-Erweiterung?",
+          "description": "Eine AI-Coding-Erweiterung ergänzt einen bestehenden Editor oder eine IDE um Programmierunterstützung. Je nach Produkt gehören Vervollständigung, Chat, Repository-Kontext, Bearbeitungsabläufe oder Agent-Funktionen dazu."
+        },
+        {
+          "title": "Welche AI-Coding-Erweiterung ist die beste?",
+          "description": "Es gibt keine beste Erweiterung für alle. Filtern Sie zuerst nach Host-IDE, Betriebsumgebung, Budget und Lizenz. Vergleichen Sie die verbleibenden Produkte mit offizieller Dokumentation und einem kleinen Repository-Test."
+        },
+        {
+          "title": "Gibt es kostenlose AI-Coding-Erweiterungen?",
+          "description": "Einige Erweiterungen bieten kostenlose Tarife oder Open-Source-Clients, während Modellnutzung und bereitgestellte Dienste kostenpflichtig sein können. Nutzen Sie die Preisspalten als ersten Filter und bestätigen Sie aktuelle Limits beim Anbieter."
+        },
+        {
+          "title": "Wie unterscheidet sich eine Erweiterung von einer AI-Coding-IDE?",
+          "description": "Eine Erweiterung läuft in einem vorhandenen Editor und übernimmt dessen Arbeitsabläufe. Eine eigenständige AI-Coding-IDE steuert die gesamte Editor-Erfahrung. Vergleichen Sie Erweiterungen, wenn Sie Ihren Host behalten möchten."
+        },
+        {
+          "title": "Unterstützen diese Erweiterungen VS Code und JetBrains-IDEs?",
+          "description": "Die Kompatibilität variiert. Prüfen Sie die Spalte „Unterstützte IDEs“ und bestätigen Sie anschließend die genaue Editor-Version und Betriebssystemanforderungen im offiziellen Marketplace oder in der Installationsanleitung."
+        }
+      ],
+      "intro": "Vergleichen Sie {count} AI-Coding-Erweiterungen anhand derselben Signale: unterstützte IDEs, Preise, Lizenz, GitHub-Sterne und Projektlinks, Lebenszyklus und offizielle Quellen. Filtern Sie zuerst nach Kompatibilität und prüfen Sie veränderliche Details vor der Installation an der Quelle.",
+      "profiles": [
+        {
+          "title": "GitHub Copilot",
+          "href": "/extensions/github-copilot",
+          "description": "Prüfen Sie unterstützte IDEs, Preise, Lizenz, GitHub-Sterne und Projektlinks sowie offizielle Quellen."
+        },
+        {
+          "title": "Cline",
+          "href": "/extensions/cline",
+          "description": "Prüfen Sie unterstützte IDEs, Preise, Lizenz, Quellrepository und Dokumentation."
+        },
+        {
+          "title": "Gemini Code Assist",
+          "href": "/extensions/gemini-code-assist",
+          "description": "Prüfen Sie Kompatibilität, Preise, Projektlinks und offizielle Dokumentation."
+        },
+        {
+          "title": "JetBrains Junie",
+          "href": "/extensions/jetbrains-junie",
+          "description": "Prüfen Sie Host-Kompatibilität, Preise, Projektlinks und offizielle Quellen."
+        }
+      ],
+      "profilesIntro": "Die folgenden Links führen direkt zu bereits in der Tabelle aufgeführten Produktdatensätzen; sie sind keine Rangliste oder Empfehlung. Öffnen Sie jeden Datensatz, um Manifestdaten, Lebenszyklusstatus und Primärquellen zu prüfen.",
+      "profilesTitle": "Erweiterungsprofile öffnen",
+      "shortlistIntro": "Nutzen Sie einen einheitlichen Ablauf, damit Popularität nicht wichtiger wird als Editor-Kompatibilität und Wartungsstatus.",
+      "shortlistTitle": "Erweiterungen in drei Schritten auswählen",
+      "steps": [
+        {
+          "title": "Kompatibilitätsregeln festlegen",
+          "description": "Notieren Sie erforderliche IDEs und Versionen, Budget, Lizenzanforderungen und ob Quellzugriff zwingend ist."
+        },
+        {
+          "title": "Einheitlich filtern",
+          "description": "Entfernen Sie inkompatible oder veraltete Produkte und vergleichen Sie den Rest nach Preis, Lizenz, GitHub-Sternen, Projektlinks und offiziellen Quellen."
+        },
+        {
+          "title": "Prüfen und testen",
+          "description": "Öffnen Sie Produktdatensatz und offizielle Installation. Bestätigen Sie Kompatibilität, aktuelle Preise, Berechtigungen und Support vor einem Repository-Test."
+        }
+      ],
+      "title": "AI-Coding-Erweiterungen vergleichen"
+    },
+    "subtitle": "Vergleichen Sie AI-Coding-Erweiterungen nach unterstützten IDEs, Preisen, Lizenz, GitHub-Sternen und Projektlinks, Lebenszyklus und offiziellen Quellen.",
     "title": "AI-Coding-Erweiterungs-Vergleich"
   },
   "ides": {
-    "backTo": "Zurück zu IDEs",
-    "subtitle": "Vergleichen Sie Funktionen, Preise und Spezifikationen von AI-gestützten IDEs nebeneinander.",
+    "guide": {
+      "criteria": [
+        {
+          "title": "Plattform-Eignung",
+          "description": "Beginnen Sie mit den Betriebssystemen Ihres Teams. Eine IDE, die alle erforderlichen Entwicklungsrechner unterstützt, lässt sich leichter bewerten, standardisieren und warten."
+        },
+        {
+          "title": "Preismodell",
+          "description": "Vergleichen Sie kostenlose Tarife, Einstiegspreise und bezahlte Stufen und bestätigen Sie aktuelle Limits auf der offiziellen Preisseite. Vertragsdetails beeinflussen die tatsächlichen Einführungskosten."
+        },
+        {
+          "title": "Lizenz und Quellcode",
+          "description": "Nutzen Sie Lizenz- und GitHub-Links, um Open-Source-Editoren von proprietären Produkten zu unterscheiden und das Projekt hinter jeder IDE zu prüfen."
+        },
+        {
+          "title": "Prüfpfad",
+          "description": "Folgen Sie Website, Dokumentation, Download, Changelog und Issue-Links. Diese Primärquellen zeigen Installation, Aktualisierung und Support der IDE."
+        }
+      ],
+      "faqTitle": "Fragen zu AI-Coding-IDEs",
+      "faqs": [
+        {
+          "title": "Was ist eine AI-Coding-IDE?",
+          "description": "Eine AI-Coding-IDE integriert Programmierunterstützung in die Editor-Erfahrung. Produkte können Vervollständigung, Chat, Repository-Kontext, Codebearbeitung, Terminalzugriff und Agent-Abläufe kombinieren, unterscheiden sich aber bei Plattform, Preis und Lizenz."
+        },
+        {
+          "title": "Welche AI-Coding-IDE ist die beste?",
+          "description": "Es gibt keine beste IDE für jeden Ablauf. Wählen Sie Produkte aus, die auf Ihren Systemen laufen, Budget und Lizenz erfüllen und zur Arbeitsweise des Teams passen. Prüfen Sie die Kandidaten mit offizieller Dokumentation und einem Pilotversuch."
+        },
+        {
+          "title": "Gibt es kostenlose AI-Coding-IDEs?",
+          "description": "Einige AI-Coding-IDEs bieten kostenlose Tarife oder basieren auf Open-Source-Editoren, während Modellnutzung oder bereitgestellte Funktionen kostenpflichtig sein können. Nutzen Sie die Preisspalten als ersten Filter."
+        },
+        {
+          "title": "Wie unterscheidet sich eine AI-Coding-IDE von einer Erweiterung?",
+          "description": "Eine AI-Coding-IDE steuert die gesamte Editor-Erfahrung. Eine Erweiterung ergänzt eine bestehende IDE. Wählen Sie eine IDE, wenn ein Umstieg möglich ist, und eine Erweiterung, wenn der bestehende Host erhalten bleiben soll."
+        },
+        {
+          "title": "Laufen AI-Coding-IDEs unter Windows, macOS und Linux?",
+          "description": "Die Plattformunterstützung variiert. Prüfen Sie die Symbole für macOS, Windows und Linux in der Tabelle und bestätigen Sie Systemanforderungen im offiziellen Download oder in der Installationsanleitung."
+        }
+      ],
+      "intro": "Vergleichen Sie {count} AI-Coding-IDEs anhand einheitlicher Signale: Plattformunterstützung, Preise, Lizenz, GitHub-Sterne und Projektlinks sowie offizielle Quellen. Beginnen Sie mit Teamvorgaben, erstellen Sie eine Auswahl und bestätigen Sie aktuelle Details vor dem Wechsel an der Quelle.",
+      "profiles": [
+        {
+          "title": "Cursor",
+          "href": "/ides/cursor",
+          "description": "Prüfen Sie unterstützte Plattformen, Preise, Lizenz, GitHub-Sterne und Projektlinks sowie offizielle Quellen."
+        },
+        {
+          "title": "Windsurf Editor",
+          "href": "/ides/windsurf",
+          "description": "Prüfen Sie unterstützte Plattformen, Preise, Lizenz, Projektlinks und Dokumentation."
+        },
+        {
+          "title": "Kiro",
+          "href": "/ides/kiro",
+          "description": "Prüfen Sie unterstützte Plattformen, Preise, Lizenz, Projektlinks und offizielle Quellen."
+        },
+        {
+          "title": "Antigravity",
+          "href": "/ides/antigravity",
+          "description": "Prüfen Sie unterstützte Plattformen, Preise, Lizenz, Projektlinks und Dokumentation."
+        }
+      ],
+      "profilesIntro": "Die folgenden Links führen direkt zu bereits in der Tabelle aufgeführten Produktdatensätzen; sie sind keine Rangliste oder Empfehlung. Öffnen Sie jeden Datensatz, um Manifestdaten und Primärquellen zu prüfen.",
+      "profilesTitle": "IDE-Produktprofile öffnen",
+      "shortlistIntro": "Nutzen Sie einen einheitlichen Ablauf, damit Popularität nicht Plattform- und Workflow-Eignung ersetzt.",
+      "shortlistTitle": "IDE-Auswahl in drei Schritten",
+      "steps": [
+        {
+          "title": "Vorgaben festlegen",
+          "description": "Notieren Sie erforderliche Betriebssysteme, Budgetgrenzen, Lizenzanforderungen und unverzichtbare Editor-Abläufe."
+        },
+        {
+          "title": "Einheitlich filtern",
+          "description": "Entfernen Sie IDEs, die diese Vorgaben nicht erfüllen, und vergleichen Sie die verbleibenden Einträge anhand derselben Spalten."
+        },
+        {
+          "title": "Prüfen und pilotieren",
+          "description": "Öffnen Sie Produktdatensatz und offizielle Links. Bestätigen Sie Installation, Preise, aktuelle Version und Support vor dem Pilotversuch."
+        }
+      ],
+      "title": "AI-Coding-IDEs vergleichen"
+    },
+    "subtitle": "Vergleichen Sie AI-Coding-IDEs nach Preisen, Plattformen, Lizenz, GitHub-Sternen und Projektlinks sowie offiziellen Quellen, bevor Sie eine Entwicklungsumgebung wählen.",
     "title": "AI-Coding-IDE-Vergleich"
   },
   "modelCompareDescription": "Vergleichen Sie AI-Coding-Modelle nebeneinander: Spezifikationen, Preise, Funktionen und Benchmarks.",
@@ -31,5 +279,8 @@
     "backTo": "Zurück zu Modellen",
     "subtitle": "Vergleichen Sie Spezifikationen und Preise von AI-Coding-Modellen nebeneinander.",
     "title": "AI-Coding-Modell-Vergleich"
+  },
+  "table": {
+    "scrollHint": "Scrollen Sie horizontal, um alle Spalten anzuzeigen."
   }
 }

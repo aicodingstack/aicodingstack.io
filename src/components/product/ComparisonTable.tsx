@@ -1,7 +1,9 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { DeprecatedBadge } from '@/components/controls/DeprecatedBadge'
 import { Link } from '@/i18n/navigation'
+import { sortDeprecatedLast } from '@/lib/deprecated'
 
 export interface ComparisonColumn {
   key: string
@@ -20,6 +22,8 @@ export interface ComparisonTableProps {
   itemIdKey?: string
   stickyTopOffset?: number
   nameColumnLabel?: string
+  caption: string
+  scrollHint: string
 }
 
 export default function ComparisonTable({
@@ -30,6 +34,8 @@ export default function ComparisonTable({
   itemIdKey = 'id',
   stickyTopOffset,
   nameColumnLabel = 'Name',
+  caption,
+  scrollHint,
 }: ComparisonTableProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const tableRef = useRef<HTMLTableElement>(null)
@@ -41,6 +47,7 @@ export default function ComparisonTable({
   const [scrollLeft, setScrollLeft] = useState<number>(0)
   const [calculatedOffset, setCalculatedOffset] = useState<number>(0)
   const columnWidthsMeasured = useRef(false)
+  const sortedItems = useMemo(() => sortDeprecatedLast(items), [items])
 
   useEffect(() => {
     // Calculate sticky offset based on header and breadcrumb heights
@@ -116,6 +123,7 @@ export default function ComparisonTable({
       {/* Fixed header wrapper with clipping */}
       {isFixed && containerRef.current && (
         <div
+          aria-hidden="true"
           className="fixed z-30 overflow-hidden"
           style={{
             top: `${calculatedOffset}px`,
@@ -167,9 +175,13 @@ export default function ComparisonTable({
         </div>
       )}
 
+      <p className="mb-[var(--spacing-xs)] text-xs text-[var(--color-text-muted)] md:hidden">
+        {scrollHint}
+      </p>
       <div ref={containerRef} className="w-full overflow-x-auto relative">
         <div className="min-w-[1200px]">
           <table ref={tableRef} className="w-full border-collapse">
+            <caption className="sr-only">{caption}</caption>
             {/* Placeholder to prevent content jump when thead becomes fixed */}
             {isFixed && (
               <thead aria-hidden="true" style={{ visibility: 'hidden' }}>
@@ -212,12 +224,16 @@ export default function ComparisonTable({
               className={!isFixed ? 'relative z-10 bg-[var(--color-bg)]' : 'sr-only'}
             >
               <tr className="border-b border-t border-[var(--color-border-strong)]">
-                <th className="sticky left-0 z-50 bg-[var(--color-bg)] px-[var(--spacing-md)] py-[var(--spacing-sm)] text-left text-sm font-semibold uppercase tracking-wider text-[var(--color-text-muted)] border-r border-[var(--color-border)]">
+                <th
+                  scope="col"
+                  className="sticky left-0 z-50 bg-[var(--color-bg)] px-[var(--spacing-md)] py-[var(--spacing-sm)] text-left text-sm font-semibold uppercase tracking-wider text-[var(--color-text-muted)] border-r border-[var(--color-border)]"
+                >
                   {nameColumnLabel}
                 </th>
                 {columns.map(column => (
                   <th
                     key={column.key}
+                    scope="col"
                     className="pl-[var(--spacing-md)] pr-0 py-[var(--spacing-sm)] text-left text-sm font-semibold uppercase tracking-wider text-[var(--color-text-muted)] whitespace-nowrap"
                     style={{
                       ...(column.minWidth && { minWidth: column.minWidth }),
@@ -231,21 +247,27 @@ export default function ComparisonTable({
               </tr>
             </thead>
             <tbody>
-              {items.map((item, index) => (
+              {sortedItems.map((item, index) => (
                 <tr
                   key={item[itemIdKey] as string}
                   className={`border-b border-[var(--color-border)] hover:bg-[var(--color-hover)] transition-colors ${
                     index % 2 === 0 ? 'bg-[var(--color-bg)]' : 'bg-[var(--color-hover)]'
                   }`}
                 >
-                  <td className="sticky left-0 z-10 bg-inherit px-[var(--spacing-md)] py-[var(--spacing-sm)] font-medium border-r border-[var(--color-border)] whitespace-nowrap">
-                    <Link
-                      href={`${itemLinkPrefix}/${item[itemIdKey] as string}`}
-                      className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] hover:underline transition-colors"
-                    >
-                      {item[itemNameKey] as string}
-                    </Link>
-                  </td>
+                  <th
+                    scope="row"
+                    className="sticky left-0 z-10 bg-inherit px-[var(--spacing-md)] py-[var(--spacing-sm)] text-left font-medium border-r border-[var(--color-border)] whitespace-nowrap"
+                  >
+                    <div className="inline-flex items-center gap-[var(--spacing-xs)]">
+                      <Link
+                        href={`${itemLinkPrefix}/${item[itemIdKey] as string}`}
+                        className="text-[var(--color-text)] hover:text-[var(--color-text-secondary)] hover:underline transition-colors"
+                      >
+                        {item[itemNameKey] as string}
+                      </Link>
+                      {item.deprecated === true && <DeprecatedBadge />}
+                    </div>
+                  </th>
                   {columns.map(column => (
                     <td
                       key={column.key}

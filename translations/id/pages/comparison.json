@@ -1,6 +1,86 @@
 {
   "clis": {
-    "backTo": "Kembali ke CLI",
+    "guide": {
+      "criteria": [
+        {
+          "description": "Mulai dari sistem operasi tim Anda. CLI yang mendukung semua mesin pengembangan lebih mudah distandardisasi dan dipelihara.",
+          "title": "Kesesuaian platform"
+        },
+        {
+          "description": "Bandingkan paket gratis dan harga awal, lalu periksa sumber harga resmi. Batas penggunaan dan model yang disertakan memengaruhi biaya nyata.",
+          "title": "Model harga"
+        },
+        {
+          "description": "Gunakan lisensi dan tautan GitHub untuk membedakan alat sumber terbuka dan produk proprietari serta memeriksa proyek.",
+          "title": "Lisensi dan sumber"
+        },
+        {
+          "description": "Situs, dokumentasi, unduhan, catatan perubahan, dan isu resmi menjelaskan instalasi, pembaruan, dan dukungan.",
+          "title": "Jalur verifikasi"
+        }
+      ],
+      "faqTitle": "Pertanyaan CLI coding AI",
+      "faqs": [
+        {
+          "description": "CLI coding AI membantu pengembang memeriksa repositori, mengedit berkas, menjalankan perintah, dan menyelesaikan tugas dari terminal. Produk berbeda dalam akses model, sistem operasi, harga, lisensi, dan kontrol eksekusi.",
+          "title": "Apa itu CLI coding AI?"
+        },
+        {
+          "description": "Tidak ada satu CLI terbaik untuk semua alur kerja. Pilih alat yang sesuai dengan platform, anggaran, lisensi, serta model dan layanan tim Anda.",
+          "title": "CLI coding AI mana yang terbaik?"
+        },
+        {
+          "description": "Sebagian menawarkan paket gratis atau klien sumber terbuka, tetapi model atau fitur terkelola mungkin tetap berbayar. Saring lewat Paket Gratis dan Harga Awal, lalu periksa batas resmi.",
+          "title": "Apakah ada CLI coding AI gratis?"
+        },
+        {
+          "description": "Banyak alat mendukung Windows, macOS, dan Linux; lainnya hanya sebagian. Periksa ikon platform dan persyaratan instalasi resmi.",
+          "title": "Apakah berfungsi di Windows, macOS, dan Linux?"
+        }
+      ],
+      "intro": "Bandingkan {count} CLI coding AI dengan kriteria yang sama: platform, harga, lisensi, bintang GitHub dan tautan proyek, serta sumber resmi. Tetapkan batasan, buat daftar pendek, dan verifikasi informasi yang dapat berubah di sumbernya.",
+      "profiles": [
+        {
+          "description": "Platform, harga, dan sumber resmi agen terminal Anthropic.",
+          "href": "/clis/claude-code-cli",
+          "title": "Claude Code CLI"
+        },
+        {
+          "description": "Instalasi, lisensi, dan sumber resmi CLI OpenAI.",
+          "href": "/clis/codex-cli",
+          "title": "Codex CLI"
+        },
+        {
+          "description": "Platform, repositori sumber, dan dokumentasi agen terminal Google.",
+          "href": "/clis/gemini-cli",
+          "title": "Gemini CLI"
+        },
+        {
+          "description": "Platform, lisensi, harga, dan tautan proyek OpenCode.",
+          "href": "/clis/opencode",
+          "title": "OpenCode"
+        }
+      ],
+      "profilesIntro": "Tautan di bawah adalah pintasan ke catatan produk yang sudah tercantum dalam tabel, bukan peringkat atau rekomendasi. Buka setiap catatan untuk memeriksa data manifes dan sumber primer.",
+      "profilesTitle": "Jelajahi profil produk CLI",
+      "shortlistIntro": "Gunakan proses yang konsisten agar popularitas tidak menggantikan kecocokan alur kerja.",
+      "shortlistTitle": "Buat daftar pendek dalam tiga langkah",
+      "steps": [
+        {
+          "description": "Catat sistem operasi, anggaran, lisensi, serta kebutuhan dokumentasi atau akses sumber.",
+          "title": "Tetapkan batasan"
+        },
+        {
+          "description": "Singkirkan alat yang tidak sesuai lalu bandingkan sisanya dengan kolom yang sama.",
+          "title": "Saring secara konsisten"
+        },
+        {
+          "description": "Konfirmasi instalasi, harga, versi, dan dukungan melalui tautan resmi sebelum uji coba.",
+          "title": "Verifikasi dan uji"
+        }
+      ],
+      "title": "Cara membandingkan CLI coding AI"
+    },
     "subtitle": "Asisten pengkodean baris perintah AI",
     "title": "Perbandingan CLI Coding AI"
   },
@@ -16,13 +96,181 @@
     "startingPrice": "Harga Mulai"
   },
   "extensions": {
-    "backTo": "Kembali ke Ekstensi",
-    "subtitle": "Ekstensi dan plugin pengkodean AI",
+    "guide": {
+      "criteria": [
+        {
+          "title": "Kompatibilitas IDE host",
+          "description": "Mulai dari editor yang sudah digunakan tim. Kolom IDE yang Didukung menunjukkan apakah ekstensi cocok untuk VS Code, produk JetBrains, atau host lain sebelum membandingkan faktor lainnya."
+        },
+        {
+          "title": "Model harga",
+          "description": "Bandingkan paket gratis dan harga awal, lalu periksa batas penggunaan dan layanan yang disertakan di halaman harga resmi. Ekstensi gratis tetap dapat memerlukan akses model berbayar."
+        },
+        {
+          "title": "Lisensi dan pemeliharaan",
+          "description": "Gunakan lisensi, bintang GitHub, tautan proyek, dan label usang untuk membedakan proyek open source dari produk proprietari atau yang telah dihentikan."
+        },
+        {
+          "title": "Jalur verifikasi",
+          "description": "Sebelum memasang, buka situs, marketplace atau unduhan, dokumentasi, changelog, dan pelacak isu resmi untuk memastikan kompatibilitas dan dukungan saat ini."
+        }
+      ],
+      "faqTitle": "Pertanyaan tentang ekstensi coding AI",
+      "faqs": [
+        {
+          "title": "Apa itu ekstensi coding AI?",
+          "description": "Ekstensi coding AI menambahkan bantuan pemrograman ke editor atau IDE yang sudah ada. Produk dapat menyediakan penyelesaian, chat, konteks repositori, alur pengeditan, atau fitur Agent sambil mempertahankan aplikasi host."
+        },
+        {
+          "title": "Ekstensi coding AI mana yang terbaik?",
+          "description": "Tidak ada satu pilihan terbaik untuk semua orang. Saring berdasarkan IDE host, lingkungan, anggaran, dan lisensi, lalu bandingkan kandidat melalui dokumentasi resmi dan uji coba pada repositori kecil."
+        },
+        {
+          "title": "Apakah ada ekstensi coding AI gratis?",
+          "description": "Sebagian menawarkan paket gratis atau klien open source, tetapi penggunaan model dan layanan terkelola dapat berbayar. Gunakan kolom harga sebagai filter awal, lalu konfirmasi batas terbaru kepada penyedia."
+        },
+        {
+          "title": "Apa bedanya dengan IDE coding AI?",
+          "description": "Ekstensi berjalan di dalam editor yang ada dan mengikuti alurnya. IDE coding AI mandiri mengendalikan seluruh pengalaman editor. Bandingkan ekstensi jika Anda ingin mempertahankan host saat ini."
+        },
+        {
+          "title": "Apakah mendukung VS Code dan IDE JetBrains?",
+          "description": "Kompatibilitas berbeda menurut produk. Periksa kolom IDE yang Didukung, lalu pastikan versi editor dan persyaratan sistem di marketplace atau panduan instalasi resmi."
+        }
+      ],
+      "intro": "Bandingkan {count} ekstensi coding AI dengan sinyal yang sama: IDE yang didukung, harga, lisensi, bintang GitHub dan tautan proyek, siklus hidup, dan sumber resmi. Saring kompatibilitas terlebih dahulu dan verifikasi detail yang berubah sebelum instalasi.",
+      "profiles": [
+        {
+          "title": "GitHub Copilot",
+          "href": "/extensions/github-copilot",
+          "description": "Tinjau IDE yang didukung, harga, lisensi, bintang GitHub, tautan proyek, dan sumber resmi."
+        },
+        {
+          "title": "Cline",
+          "href": "/extensions/cline",
+          "description": "Tinjau IDE yang didukung, harga, lisensi, repositori sumber, dan dokumentasi."
+        },
+        {
+          "title": "Gemini Code Assist",
+          "href": "/extensions/gemini-code-assist",
+          "description": "Tinjau kompatibilitas, harga, tautan proyek, dan dokumentasi resmi."
+        },
+        {
+          "title": "JetBrains Junie",
+          "href": "/extensions/jetbrains-junie",
+          "description": "Tinjau kompatibilitas host, harga, tautan proyek, dan sumber resmi."
+        }
+      ],
+      "profilesIntro": "Tautan di bawah adalah pintasan ke catatan produk yang sudah tercantum dalam tabel, bukan peringkat atau rekomendasi. Buka setiap catatan untuk memeriksa data manifes, status siklus hidup, dan sumber primer.",
+      "profilesTitle": "Jelajahi profil produk ekstensi",
+      "shortlistIntro": "Gunakan proses yang konsisten agar popularitas tidak mengalahkan kompatibilitas dan status pemeliharaan.",
+      "shortlistTitle": "Buat daftar pendek ekstensi dalam tiga langkah",
+      "steps": [
+        {
+          "title": "Tetapkan batas kompatibilitas",
+          "description": "Daftar IDE dan versi wajib, anggaran, persyaratan lisensi, serta kebutuhan akses kode sumber."
+        },
+        {
+          "title": "Saring secara konsisten",
+          "description": "Hapus produk yang tidak kompatibel atau usang, lalu bandingkan sisanya berdasarkan harga, lisensi, bintang GitHub, tautan proyek, dan sumber resmi."
+        },
+        {
+          "title": "Verifikasi dan uji",
+          "description": "Buka catatan dan instalasi resmi. Pastikan kompatibilitas, harga terbaru, izin, dan dukungan sebelum uji repositori."
+        }
+      ],
+      "title": "Cara membandingkan ekstensi coding AI"
+    },
+    "subtitle": "Bandingkan ekstensi coding AI berdasarkan IDE yang didukung, harga, lisensi, bintang GitHub dan tautan proyek, siklus hidup, dan sumber resmi.",
     "title": "Perbandingan Ekstensi Coding AI"
   },
   "ides": {
-    "backTo": "Kembali ke IDE",
-    "subtitle": "Lingkungan pengembangan terintegrasi yang ditingkatkan dengan AI",
+    "guide": {
+      "criteria": [
+        {
+          "title": "Kesesuaian platform",
+          "description": "Mulai dari sistem operasi tim. IDE yang mendukung semua perangkat pengembangan wajib lebih mudah dievaluasi, distandardisasi, dan dipelihara."
+        },
+        {
+          "title": "Model harga",
+          "description": "Bandingkan paket gratis, harga awal, dan tingkat berbayar, lalu konfirmasi batas terbaru di halaman resmi. Detail langganan memengaruhi biaya adopsi sebenarnya."
+        },
+        {
+          "title": "Lisensi dan sumber",
+          "description": "Gunakan lisensi dan tautan GitHub untuk membedakan editor open source dari produk proprietari dan memeriksa proyek di balik setiap IDE."
+        },
+        {
+          "title": "Jalur verifikasi",
+          "description": "Ikuti situs, dokumentasi, unduhan, changelog, dan tautan isu resmi. Sumber ini menunjukkan cara IDE dipasang, diperbarui, dan didukung."
+        }
+      ],
+      "faqTitle": "Pertanyaan tentang IDE coding AI",
+      "faqs": [
+        {
+          "title": "Apa itu IDE coding AI?",
+          "description": "IDE coding AI adalah lingkungan pengembangan yang mengintegrasikan bantuan pemrograman ke pengalaman editor. Produk dapat menggabungkan penyelesaian, chat, konteks repositori, pengeditan, terminal, dan alur Agent."
+        },
+        {
+          "title": "IDE coding AI mana yang terbaik?",
+          "description": "Tidak ada satu IDE terbaik untuk semua alur. Pilih produk yang sesuai dengan sistem, anggaran, lisensi, serta cara tim mengedit, meninjau, dan menjalankan kode, lalu verifikasi melalui dokumentasi dan pilot."
+        },
+        {
+          "title": "Apakah ada IDE coding AI gratis?",
+          "description": "Sebagian memiliki paket gratis atau berbasis editor open source, tetapi penggunaan model atau fitur terkelola dapat berbayar. Gunakan kolom harga sebagai filter awal."
+        },
+        {
+          "title": "Apa bedanya dengan ekstensi?",
+          "description": "IDE coding AI mengendalikan seluruh pengalaman editor. Ekstensi menambahkan bantuan ke IDE yang ada. Pilih IDE jika bisa mengadopsi lingkungan baru, atau ekstensi jika host saat ini harus dipertahankan."
+        },
+        {
+          "title": "Apakah bekerja di Windows, macOS, dan Linux?",
+          "description": "Dukungan platform berbeda menurut produk. Periksa ikon macOS, Windows, dan Linux, lalu konfirmasi persyaratan sistem di unduhan atau dokumentasi instalasi resmi."
+        }
+      ],
+      "intro": "Bandingkan {count} IDE coding AI dengan sinyal konsisten: platform, harga, lisensi, bintang GitHub dan tautan proyek, serta sumber resmi. Mulai dari batas tim, buat daftar pendek, dan verifikasi detail terbaru sebelum mengganti lingkungan.",
+      "profiles": [
+        {
+          "title": "Cursor",
+          "href": "/ides/cursor",
+          "description": "Tinjau platform, harga, lisensi, bintang GitHub, tautan proyek, dan sumber resmi."
+        },
+        {
+          "title": "Windsurf Editor",
+          "href": "/ides/windsurf",
+          "description": "Tinjau platform, harga, lisensi, tautan proyek, dan dokumentasi."
+        },
+        {
+          "title": "Kiro",
+          "href": "/ides/kiro",
+          "description": "Tinjau platform, harga, lisensi, tautan proyek, dan sumber resmi."
+        },
+        {
+          "title": "Antigravity",
+          "href": "/ides/antigravity",
+          "description": "Tinjau platform, harga, lisensi, tautan proyek, dan dokumentasi."
+        }
+      ],
+      "profilesIntro": "Tautan di bawah adalah pintasan ke catatan produk yang sudah tercantum dalam tabel, bukan peringkat atau rekomendasi. Buka setiap catatan untuk memeriksa data manifes dan sumber primer.",
+      "profilesTitle": "Jelajahi profil produk IDE",
+      "shortlistIntro": "Gunakan proses yang konsisten agar popularitas tidak menggantikan kesesuaian platform dan alur kerja.",
+      "shortlistTitle": "Buat daftar pendek IDE dalam tiga langkah",
+      "steps": [
+        {
+          "title": "Tetapkan batas",
+          "description": "Daftar sistem operasi wajib, batas anggaran, persyaratan lisensi, dan alur editor yang harus dipertahankan tim."
+        },
+        {
+          "title": "Saring secara konsisten",
+          "description": "Hapus IDE yang tidak memenuhi batas tersebut dan bandingkan sisanya dengan kolom yang sama."
+        },
+        {
+          "title": "Verifikasi dan pilot",
+          "description": "Buka catatan dan tautan resmi. Pastikan instalasi, harga, versi terbaru, dan dukungan sebelum pilot."
+        }
+      ],
+      "title": "Cara membandingkan IDE coding AI"
+    },
+    "subtitle": "Bandingkan IDE coding AI berdasarkan harga, dukungan platform, lisensi, bintang GitHub, tautan proyek, dan sumber resmi sebelum memilih lingkungan.",
     "title": "Perbandingan IDE Coding AI"
   },
   "modelCompareDescription": "Bandingkan model coding AI secara berdampingan: spesifikasi, harga, kapabilitas, dan benchmark.",
@@ -31,5 +279,8 @@
     "backTo": "Kembali ke Model",
     "subtitle": "Model bahasa besar yang dioptimalkan untuk pembuatan dan analisis kode",
     "title": "Perbandingan Model Coding AI"
+  },
+  "table": {
+    "scrollHint": "Gulir secara horizontal untuk melihat semua kolom."
   }
 }

@@ -1,6 +1,86 @@
 {
   "clis": {
-    "backTo": "CLI'lere Dön",
+    "guide": {
+      "criteria": [
+        {
+          "description": "Ekibinizin işletim sistemleriyle başlayın. Tüm geliştirme makinelerini destekleyen bir CLI daha kolay standartlaştırılır.",
+          "title": "Platform uyumu"
+        },
+        {
+          "description": "Ücretsiz planları ve başlangıç fiyatlarını karşılaştırıp resmi fiyat kaynağını kontrol edin. Limitler ve modeller gerçek maliyeti değiştirir.",
+          "title": "Fiyatlandırma modeli"
+        },
+        {
+          "description": "Açık kaynak ve tescilli ürünleri ayırmak ve projeyi incelemek için lisans ve GitHub bağlantılarını kullanın.",
+          "title": "Lisans ve kaynak"
+        },
+        {
+          "description": "Resmi site, belgeler, indirme, değişiklik günlüğü ve sorun bağlantıları kurulum, güncelleme ve desteği gösterir.",
+          "title": "Doğrulama yolu"
+        }
+      ],
+      "faqTitle": "AI kodlama CLI soruları",
+      "faqs": [
+        {
+          "description": "AI kodlama CLI; depoları inceleme, dosya düzenleme, komut çalıştırma ve terminalden görev tamamlama aracıdır. Ürünler model erişimi, platform, fiyat, lisans ve yürütme kontrolünde farklılaşır.",
+          "title": "AI kodlama CLI nedir?"
+        },
+        {
+          "description": "Her iş akışı için tek bir en iyi CLI yoktur. Platform, bütçe, lisans, kaynak erişimi ve mevcut hizmetlerinize uyan araçları seçin.",
+          "title": "Hangi AI kodlama CLI en iyidir?"
+        },
+        {
+          "description": "Ücretsiz plan veya açık kaynak istemci, model ve barındırılan özelliklerin ücretsiz olduğu anlamına gelmez. Önce Ücretsiz Plan ve Başlangıç Fiyatı ile filtreleyin.",
+          "title": "Ücretsiz AI kodlama CLI var mı?"
+        },
+        {
+          "description": "Birçok araç Windows, macOS ve Linux'u, bazıları yalnızca bir bölümünü destekler. Platform simgelerini ve resmi kurulum gereksinimlerini kontrol edin.",
+          "title": "Windows, macOS ve Linux'ta çalışır mı?"
+        }
+      ],
+      "intro": "{count} AI kodlama CLI aracını aynı ölçütlerle karşılaştırın: platform, fiyat, lisans, GitHub yıldızları ve proje bağlantıları ile resmi kaynaklar. Kısıtları belirleyin, kısa liste oluşturun ve değişen bilgileri kaynağından doğrulayın.",
+      "profiles": [
+        {
+          "description": "Anthropic terminal aracının platformları, fiyatı ve resmi kaynakları.",
+          "href": "/clis/claude-code-cli",
+          "title": "Claude Code CLI"
+        },
+        {
+          "description": "OpenAI CLI kurulum yolları, lisansı ve resmi kaynakları.",
+          "href": "/clis/codex-cli",
+          "title": "Codex CLI"
+        },
+        {
+          "description": "Google terminal aracının platformları, kaynak deposu ve belgeleri.",
+          "href": "/clis/gemini-cli",
+          "title": "Gemini CLI"
+        },
+        {
+          "description": "OpenCode platformları, lisansı, fiyatı ve proje bağlantıları.",
+          "href": "/clis/opencode",
+          "title": "OpenCode"
+        }
+      ],
+      "profilesIntro": "Aşağıdaki bağlantılar, tabloda zaten listelenen ürün kayıtlarına giden kısayollardır; sıralama veya öneri değildir. Manifest verilerini ve birincil kaynakları incelemek için her kaydı açın.",
+      "profilesTitle": "CLI ürün profillerini inceleyin",
+      "shortlistIntro": "Popülerliğin iş akışı uyumunun yerini almaması için tutarlı bir süreç kullanın.",
+      "shortlistTitle": "Üç adımda kısa liste",
+      "steps": [
+        {
+          "description": "Gerekli sistemleri, bütçeyi, lisansı ve belge veya kaynak erişimi gereksinimlerini listeleyin.",
+          "title": "Kısıtları belirleyin"
+        },
+        {
+          "description": "Uymayan araçları çıkarın ve kalanları aynı sütunlarla karşılaştırın.",
+          "title": "Tutarlı filtreleyin"
+        },
+        {
+          "description": "Denemeden önce kurulum, fiyat, sürüm ve desteği resmi bağlantılardan doğrulayın.",
+          "title": "Doğrulayın ve deneyin"
+        }
+      ],
+      "title": "AI kodlama CLI araçları nasıl karşılaştırılır?"
+    },
     "subtitle": "AI kodlama CLI araçlarının özelliklerini, fiyatlarını ve spesifikasyonlarını yan yana karşılaştırın.",
     "title": "AI Kodlama CLI Karşılaştırması"
   },
@@ -16,13 +96,181 @@
     "startingPrice": "Başlangıç Fiyatı"
   },
   "extensions": {
-    "backTo": "Eklentilere Dön",
-    "subtitle": "AI kodlama eklentilerinin özelliklerini, fiyatlarını ve spesifikasyonlarını yan yana karşılaştırın.",
+    "guide": {
+      "criteria": [
+        {
+          "title": "Ana IDE uyumluluğu",
+          "description": "Ekibin kullandığı editörlerle başlayın. Desteklenen IDE sütunu, diğer koşulları karşılaştırmadan önce VS Code, JetBrains ürünleri veya başka bir ana uygulamayla uyumu gösterir."
+        },
+        {
+          "title": "Fiyatlandırma modeli",
+          "description": "Ücretsiz planları ve başlangıç fiyatlarını karşılaştırın; kullanım sınırlarını ve hizmetleri resmi sayfada doğrulayın. Ücretsiz bir eklenti bile ücretli model erişimi gerektirebilir."
+        },
+        {
+          "title": "Lisans ve bakım",
+          "description": "Açık kaynak projelerini tescilli veya sonlandırılmış ürünlerden ayırmak için lisans, GitHub yıldızları, proje bağlantıları ve kullanımdan kaldırıldı rozetini kullanın."
+        },
+        {
+          "title": "Doğrulama yolu",
+          "description": "Kurulumdan önce resmi siteyi, mağaza veya indirme sayfasını, belgeleri, değişiklik günlüğünü ve sorun takipçisini açarak güncel uyum ve desteği doğrulayın."
+        }
+      ],
+      "faqTitle": "AI kodlama eklentisi soruları",
+      "faqs": [
+        {
+          "title": "AI kodlama eklentisi nedir?",
+          "description": "Mevcut bir editöre veya IDE’ye kodlama yardımı ekleyen yazılımdır. Tamamlama, sohbet, depo bağlamı, düzenleme akışları veya Agent özellikleri sunarken alışılmış ana uygulamayı koruyabilir."
+        },
+        {
+          "title": "En iyi AI kodlama eklentisi hangisi?",
+          "description": "Herkes için tek bir en iyi ürün yoktur. Ana IDE, ortam, bütçe ve lisansa göre filtreleyin; kalan adayları resmi belgeler ve küçük bir depo denemesiyle karşılaştırın."
+        },
+        {
+          "title": "Ücretsiz AI kodlama eklentileri var mı?",
+          "description": "Bazıları ücretsiz plan veya açık kaynak istemci sunar; model kullanımı ve barındırılan hizmetler ücretli olabilir. Fiyat sütunlarını ilk filtre olarak kullanın ve sınırları sağlayıcıdan doğrulayın."
+        },
+        {
+          "title": "AI kodlama IDE’sinden farkı nedir?",
+          "description": "Eklenti mevcut editör içinde çalışır ve onun akışını devralır. Bağımsız AI kodlama IDE’si tüm editör deneyimini kontrol eder. Mevcut ana uygulamayı korumak istiyorsanız eklentileri karşılaştırın."
+        },
+        {
+          "title": "VS Code ve JetBrains için destek sunuyor mu?",
+          "description": "Uyumluluk ürüne göre değişir. Desteklenen IDE sütununu kontrol edin, ardından editör sürümünü ve sistem gereksinimlerini resmi mağaza veya kurulum kılavuzunda doğrulayın."
+        }
+      ],
+      "intro": "{count} AI kodlama eklentisini aynı sinyallerle karşılaştırın: desteklenen IDE’ler, fiyat, lisans, GitHub yıldızları ve proje bağlantıları, yaşam döngüsü ve resmi kaynaklar. Önce uyumluluğa göre filtreleyin ve kurulumdan önce değişen ayrıntıları doğrulayın.",
+      "profiles": [
+        {
+          "title": "GitHub Copilot",
+          "href": "/extensions/github-copilot",
+          "description": "Desteklenen IDE’leri, fiyatları, lisansı, GitHub yıldızlarını, proje bağlantılarını ve resmi kaynakları inceleyin."
+        },
+        {
+          "title": "Cline",
+          "href": "/extensions/cline",
+          "description": "Desteklenen IDE’leri, fiyatları, lisansı, kaynak deposunu ve belgeleri inceleyin."
+        },
+        {
+          "title": "Gemini Code Assist",
+          "href": "/extensions/gemini-code-assist",
+          "description": "Uyumluluğu, fiyatları, proje bağlantılarını ve resmi belgeleri inceleyin."
+        },
+        {
+          "title": "JetBrains Junie",
+          "href": "/extensions/jetbrains-junie",
+          "description": "Ana uygulama uyumluluğunu, fiyatları, proje bağlantılarını ve resmi kaynakları inceleyin."
+        }
+      ],
+      "profilesIntro": "Aşağıdaki bağlantılar, tabloda zaten listelenen ürün kayıtlarına giden kısayollardır; sıralama veya öneri değildir. Manifest verilerini, yaşam döngüsü durumunu ve birincil kaynakları incelemek için her kaydı açın.",
+      "profilesTitle": "Eklenti ürün profillerini inceleyin",
+      "shortlistIntro": "Popülerliğin editör uyumluluğu ve bakım durumunun önüne geçmemesi için tutarlı bir süreç kullanın.",
+      "shortlistTitle": "Üç adımda eklenti kısa listesi oluşturun",
+      "steps": [
+        {
+          "title": "Uyumluluk koşullarını belirleyin",
+          "description": "Zorunlu IDE ve sürümleri, bütçeyi, lisans gereksinimlerini ve kaynak erişimi ihtiyacını listeleyin."
+        },
+        {
+          "title": "Tutarlı biçimde filtreleyin",
+          "description": "Uyumsuz veya kullanımdan kaldırılmış ürünleri çıkarın; kalanları fiyat, lisans, GitHub yıldızları, proje bağlantıları ve resmi kaynaklarla karşılaştırın."
+        },
+        {
+          "title": "Doğrulayın ve deneyin",
+          "description": "Ürün kaydını ve resmi kurulumu açın. Depoda denemeden önce uyumluluk, güncel fiyat, izinler ve desteği doğrulayın."
+        }
+      ],
+      "title": "AI kodlama eklentileri nasıl karşılaştırılır?"
+    },
+    "subtitle": "AI kodlama eklentilerini desteklenen IDE, fiyat, lisans, GitHub yıldızları ve proje bağlantıları, yaşam döngüsü ve resmi kaynaklara göre karşılaştırın.",
     "title": "AI Kodlama Eklenti Karşılaştırması"
   },
   "ides": {
-    "backTo": "IDE'lere Dön",
-    "subtitle": "AI destekli IDE'lerin özelliklerini, fiyatlarını ve spesifikasyonlarını yan yana karşılaştırın.",
+    "guide": {
+      "criteria": [
+        {
+          "title": "Platform uyumu",
+          "description": "Ekibin kullandığı işletim sistemleriyle başlayın. Tüm gerekli geliştirme makinelerini destekleyen bir IDE’yi değerlendirmek, standartlaştırmak ve sürdürmek daha kolaydır."
+        },
+        {
+          "title": "Fiyatlandırma modeli",
+          "description": "Ücretsiz planları, başlangıç fiyatlarını ve ücretli katmanları karşılaştırın; güncel sınırları resmi sayfada doğrulayın. Abonelik ayrıntıları gerçek benimseme maliyetini etkiler."
+        },
+        {
+          "title": "Lisans ve kaynak",
+          "description": "Açık kaynak editörleri tescilli ürünlerden ayırmak ve her IDE’nin arkasındaki projeyi incelemek için lisans ve GitHub bağlantılarını kullanın."
+        },
+        {
+          "title": "Doğrulama yolu",
+          "description": "Resmi site, belgeler, indirme, değişiklik günlüğü ve sorun bağlantıları IDE’nin nasıl kurulduğunu, güncellendiğini ve desteklendiğini gösterir."
+        }
+      ],
+      "faqTitle": "AI kodlama IDE’si soruları",
+      "faqs": [
+        {
+          "title": "AI kodlama IDE’si nedir?",
+          "description": "Kodlama yardımını editör deneyimine entegre eden bir geliştirme ortamıdır. Tamamlama, sohbet, depo bağlamı, kod düzenleme, terminal ve Agent akışlarını birleştirebilir; platform, fiyat ve lisansları farklıdır."
+        },
+        {
+          "title": "En iyi AI kodlama IDE’si hangisi?",
+          "description": "Tüm iş akışları için tek bir en iyi IDE yoktur. Sistemlere, bütçeye, lisansa ve ekibin çalışma biçimine uyan ürünleri seçin; adayları resmi belgeler ve pilotla doğrulayın."
+        },
+        {
+          "title": "Ücretsiz AI kodlama IDE’leri var mı?",
+          "description": "Bazıları ücretsiz plan sunar veya açık kaynak editörlere dayanır; model kullanımı ya da barındırılan özellikler ücretli olabilir. Fiyat sütunlarını ilk filtre olarak kullanın."
+        },
+        {
+          "title": "Eklentiden farkı nedir?",
+          "description": "AI kodlama IDE’si tüm editör deneyimini kontrol eder. Eklenti mevcut IDE’ye yardım ekler. Yeni bir ortamı benimseyebiliyorsanız IDE, mevcut ana uygulama önemliyse eklenti düşünün."
+        },
+        {
+          "title": "Windows, macOS ve Linux’ta çalışır mı?",
+          "description": "Platform desteği ürüne göre değişir. macOS, Windows ve Linux simgelerini kontrol edin ve sistem gereksinimlerini resmi indirme veya kurulum belgesinde doğrulayın."
+        }
+      ],
+      "intro": "{count} AI kodlama IDE’sini tutarlı sinyallerle karşılaştırın: platform desteği, fiyat, lisans, GitHub yıldızları ve proje bağlantıları ile resmi kaynaklar. Ekip koşullarından kısa liste oluşturun ve ortam değiştirmeden önce güncel ayrıntıları doğrulayın.",
+      "profiles": [
+        {
+          "title": "Cursor",
+          "href": "/ides/cursor",
+          "description": "Desteklenen platformları, fiyatları, lisansı, GitHub yıldızlarını, proje bağlantılarını ve resmi kaynakları inceleyin."
+        },
+        {
+          "title": "Windsurf Editor",
+          "href": "/ides/windsurf",
+          "description": "Desteklenen platformları, fiyatları, lisansı, proje bağlantılarını ve belgeleri inceleyin."
+        },
+        {
+          "title": "Kiro",
+          "href": "/ides/kiro",
+          "description": "Desteklenen platformları, fiyatları, lisansı, proje bağlantılarını ve resmi kaynakları inceleyin."
+        },
+        {
+          "title": "Antigravity",
+          "href": "/ides/antigravity",
+          "description": "Desteklenen platformları, fiyatları, lisansı, proje bağlantılarını ve belgeleri inceleyin."
+        }
+      ],
+      "profilesIntro": "Aşağıdaki bağlantılar, tabloda zaten listelenen ürün kayıtlarına giden kısayollardır; sıralama veya öneri değildir. Manifest verilerini ve birincil kaynakları incelemek için her kaydı açın.",
+      "profilesTitle": "IDE ürün profillerini inceleyin",
+      "shortlistIntro": "Popülerliğin platform ve iş akışı uyumunun yerini almaması için tutarlı bir süreç kullanın.",
+      "shortlistTitle": "Üç adımda IDE kısa listesi oluşturun",
+      "steps": [
+        {
+          "title": "Koşulları belirleyin",
+          "description": "Zorunlu işletim sistemlerini, bütçeyi, lisans gereksinimlerini ve korunması gereken editör akışlarını listeleyin."
+        },
+        {
+          "title": "Tutarlı biçimde filtreleyin",
+          "description": "Koşullara uymayan IDE’leri çıkarın ve kalanları aynı sütunlarla karşılaştırın."
+        },
+        {
+          "title": "Doğrulayın ve pilot yapın",
+          "description": "Ürün kaydını ve resmi bağlantıları açın. Pilot öncesinde kurulum, fiyat, güncel sürüm ve desteği doğrulayın."
+        }
+      ],
+      "title": "AI kodlama IDE’leri nasıl karşılaştırılır?"
+    },
+    "subtitle": "AI kodlama için IDE seçeneklerini fiyat, platform desteği, lisans, GitHub yıldızları, proje bağlantıları ve resmi kaynaklara göre karşılaştırın.",
     "title": "AI Kodlama IDE Karşılaştırması"
   },
   "modelCompareDescription": "AI kodlama modellerini yan yana karşılaştırın: spesifikasyonlar, fiyatlar, yetenekler ve kıyaslamalar.",
@@ -31,5 +279,8 @@
     "backTo": "Modellere Dön",
     "subtitle": "AI kodlama modellerinin spesifikasyonlarını ve fiyatlarını yan yana karşılaştırın.",
     "title": "AI Kodlama Model Karşılaştırması"
+  },
+  "table": {
+    "scrollHint": "Tüm sütunları görmek için yatay kaydırın."
   }
 }

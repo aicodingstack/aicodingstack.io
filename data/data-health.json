@@ -73,59 +73,59 @@
   },
   "translationsByLocale": {
     "de": {
-      "totalStrings": 423,
+      "totalStrings": 442,
       "matchingEnglish": 106,
-      "matchingEnglishPercent": 25.1
+      "matchingEnglishPercent": 24
     },
     "es": {
-      "totalStrings": 423,
+      "totalStrings": 442,
       "matchingEnglish": 98,
-      "matchingEnglishPercent": 23.2
+      "matchingEnglishPercent": 22.2
     },
     "fr": {
-      "totalStrings": 423,
+      "totalStrings": 442,
       "matchingEnglish": 108,
-      "matchingEnglishPercent": 25.5
+      "matchingEnglishPercent": 24.4
     },
     "id": {
-      "totalStrings": 423,
+      "totalStrings": 442,
       "matchingEnglish": 142,
-      "matchingEnglishPercent": 33.6
+      "matchingEnglishPercent": 32.1
     },
     "ja": {
-      "totalStrings": 423,
+      "totalStrings": 442,
       "matchingEnglish": 100,
-      "matchingEnglishPercent": 23.6
+      "matchingEnglishPercent": 22.6
     },
     "ko": {
-      "totalStrings": 423,
+      "totalStrings": 442,
       "matchingEnglish": 108,
-      "matchingEnglishPercent": 25.5
+      "matchingEnglishPercent": 24.4
     },
     "pt": {
-      "totalStrings": 423,
+      "totalStrings": 442,
       "matchingEnglish": 108,
-      "matchingEnglishPercent": 25.5
+      "matchingEnglishPercent": 24.4
     },
     "ru": {
-      "totalStrings": 423,
+      "totalStrings": 442,
       "matchingEnglish": 117,
-      "matchingEnglishPercent": 27.7
+      "matchingEnglishPercent": 26.5
     },
     "tr": {
-      "totalStrings": 423,
+      "totalStrings": 442,
       "matchingEnglish": 119,
-      "matchingEnglishPercent": 28.1
+      "matchingEnglishPercent": 26.9
     },
     "zh-Hans": {
-      "totalStrings": 423,
+      "totalStrings": 442,
       "matchingEnglish": 92,
-      "matchingEnglishPercent": 21.7
+      "matchingEnglishPercent": 20.8
     },
     "zh-Hant": {
-      "totalStrings": 423,
+      "totalStrings": 442,
       "matchingEnglish": 92,
-      "matchingEnglishPercent": 21.7
+      "matchingEnglishPercent": 20.8
     }
   },
   "issues": [

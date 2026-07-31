@@ -1,7 +1,87 @@
 {
   "clis": {
-    "backTo": "返回命令行列表",
-    "subtitle": "并排对比 AI 编码命令行工具的功能、定价和规格。",
+    "guide": {
+      "criteria": [
+        {
+          "description": "先确认团队使用的操作系统。能够覆盖所有开发设备的 CLI 更容易统一部署和维护。",
+          "title": "平台适配"
+        },
+        {
+          "description": "先比较免费方案与起步价格，再查看官方定价来源。用量限制和所含模型都会影响实际成本。",
+          "title": "定价模式"
+        },
+        {
+          "description": "通过许可证和 GitHub 链接区分开源工具与专有产品，并检查每个 CLI 背后的项目。",
+          "title": "许可证与源代码"
+        },
+        {
+          "description": "查看官网、文档、下载、变更日志和问题跟踪链接，确认工具如何安装、更新和获得支持。",
+          "title": "核验路径"
+        }
+      ],
+      "faqTitle": "AI 编码 CLI 常见问题",
+      "faqs": [
+        {
+          "description": "AI 编码 CLI 是一种命令行工具，可帮助开发者在终端中检查代码库、编辑文件、执行命令并完成编码任务。不同产品在模型接入、操作系统支持、定价、许可证和工具执行控制方面有所区别。",
+          "title": "什么是 AI 编码 CLI？"
+        },
+        {
+          "description": "没有一个 CLI 能适合所有工作流。应优先筛选支持所需平台、符合预算与许可证要求，并能接入团队现有模型和服务的工具。",
+          "title": "哪个 AI 编码 CLI 最好？"
+        },
+        {
+          "description": "部分 AI 编码 CLI 提供免费方案或开源客户端，但模型用量或托管功能仍可能收费。先用“免费方案”和“起步价”列筛选，再到官方定价页确认当前限制。",
+          "title": "有免费的 AI 编码 CLI 吗？"
+        },
+        {
+          "description": "许多工具支持 Windows、macOS 和 Linux，也有工具只支持其中部分平台。采用前先查看表格中的平台图标，再通过官方文档确认安装要求。",
+          "title": "AI 编码 CLI 支持 Windows、macOS 和 Linux 吗？"
+        }
+      ],
+      "intro": "使用统一且实用的指标比较 {count} 个 AI 编码 CLI：平台支持、定价、许可证、GitHub 星标与项目链接，以及官方资源。先明确工作流约束并建立候选清单，在采用终端编码代理前从一手来源核验会变化的产品信息。",
+      "profiles": [
+        {
+          "description": "查看 Anthropic 终端代理的平台支持、定价和官方资源。",
+          "href": "/clis/claude-code-cli",
+          "title": "Claude Code CLI"
+        },
+        {
+          "description": "查看 OpenAI 编码 CLI 的安装方式、许可证和官方资源。",
+          "href": "/clis/codex-cli",
+          "title": "Codex CLI"
+        },
+        {
+          "description": "查看 Google 终端编码代理的平台覆盖、源代码仓库和文档。",
+          "href": "/clis/gemini-cli",
+          "title": "Gemini CLI"
+        },
+        {
+          "description": "查看 OpenCode CLI 的平台支持、许可证、定价和项目链接。",
+          "href": "/clis/opencode",
+          "title": "OpenCode"
+        }
+      ],
+      "profilesIntro": "以下链接只是表格中已有产品记录的快捷入口，不是排名或推荐。打开各条记录可查看 manifest 数据和一手来源。",
+      "profilesTitle": "查看 CLI 产品档案",
+      "shortlistIntro": "使用一致的流程，避免用产品热度代替工作流适配度。",
+      "shortlistTitle": "三步建立 CLI 候选清单",
+      "steps": [
+        {
+          "description": "列出所需操作系统、预算上限、许可证要求，以及是否必须提供官方文档或源代码访问。",
+          "title": "明确约束"
+        },
+        {
+          "description": "用表格排除不符合约束的工具，再按相同列比较剩余条目。",
+          "title": "统一筛选"
+        },
+        {
+          "description": "打开产品记录和官方链接，在试用前确认安装、定价、当前版本和支持情况。",
+          "title": "核验并试用"
+        }
+      ],
+      "title": "如何比较 AI 编码 CLI 工具"
+    },
+    "subtitle": "按定价、平台支持、许可证、GitHub 星标与项目链接和官方资源比较 AI 编码 CLI，选择适合你的终端编码代理。",
     "title": "AI 编码 CLI 工具比较"
   },
   "columns": {
@@ -16,13 +96,181 @@
     "startingPrice": "起步价"
   },
   "extensions": {
-    "backTo": "返回扩展插件列表",
-    "subtitle": "并排对比 AI 编码扩展插件的功能、定价和规格。",
+    "guide": {
+      "criteria": [
+        {
+          "title": "宿主 IDE 兼容性",
+          "description": "先确认团队正在使用的编辑器。“支持的 IDE”列可帮助你判断扩展是否适用于 VS Code、JetBrains 产品或其他宿主，再继续比较其余条件。"
+        },
+        {
+          "title": "定价模式",
+          "description": "比较免费计划和起步价格，再到官方定价页核实用量限制与包含的服务。免费扩展仍可能需要付费模型访问。"
+        },
+        {
+          "title": "许可证与维护状态",
+          "description": "结合许可证、GitHub 星标与项目链接和弃用标记，区分开源项目、专有产品以及已经停止维护的产品。"
+        },
+        {
+          "title": "验证路径",
+          "description": "安装前打开官方网站、市场或下载页、文档、变更日志和问题跟踪器。这些一手来源可以确认当前兼容性与支持状态。"
+        }
+      ],
+      "faqTitle": "AI 编码扩展常见问题",
+      "faqs": [
+        {
+          "title": "什么是 AI 编码扩展？",
+          "description": "AI 编码扩展是在现有编辑器或 IDE 中加入编码辅助能力的软件。不同产品可能提供补全、对话、代码库上下文、编辑工作流或 Agent 功能，同时让开发者继续使用熟悉的宿主应用。"
+        },
+        {
+          "title": "哪个 AI 编码扩展最好？",
+          "description": "没有一个扩展适合所有开发者。先按宿主 IDE、运行环境、预算和许可证要求筛选，再用官方文档和小型代码库试用比较剩余产品。"
+        },
+        {
+          "title": "有免费的 AI 编码扩展吗？",
+          "description": "部分扩展提供免费计划或开源客户端，但模型用量和托管服务仍可能收费。可先用“免费计划”和“起步价格”列筛选，再向提供商确认最新限制。"
+        },
+        {
+          "title": "扩展与 AI 编码 IDE 有什么区别？",
+          "description": "扩展运行在现有编辑器中，并沿用其主要工作流；独立 AI 编码 IDE 控制完整的编辑器体验。希望保留当前宿主时比较扩展，愿意更换开发环境时再比较 IDE。"
+        },
+        {
+          "title": "这些扩展支持 VS Code 和 JetBrains IDE 吗？",
+          "description": "兼容性因产品而异。先查看每个条目的“支持的 IDE”列，再打开官方市场或安装文档，核实具体编辑器版本和操作系统要求。"
+        }
+      ],
+      "intro": "使用相同的实用信号比较 {count} 个 AI 编码扩展：支持的 IDE、定价、许可证、GitHub 星标与项目链接、生命周期和官方资源。先按兼容性筛选，再在安装前从一手来源核实易变的产品信息。",
+      "profiles": [
+        {
+          "title": "GitHub Copilot",
+          "href": "/extensions/github-copilot",
+          "description": "查看 GitHub Copilot 支持的 IDE、定价、许可证、GitHub 星标与项目链接和官方资源。"
+        },
+        {
+          "title": "Cline",
+          "href": "/extensions/cline",
+          "description": "查看 Cline 支持的 IDE、定价、许可证、源代码仓库和文档。"
+        },
+        {
+          "title": "Gemini Code Assist",
+          "href": "/extensions/gemini-code-assist",
+          "description": "查看 Gemini Code Assist 的兼容性、定价、项目链接和官方文档。"
+        },
+        {
+          "title": "JetBrains Junie",
+          "href": "/extensions/jetbrains-junie",
+          "description": "查看 JetBrains Junie 的宿主兼容性、定价、项目链接和官方资源。"
+        }
+      ],
+      "profilesIntro": "以下链接只是表格中已有产品记录的快捷入口，不是排名或推荐。打开各条记录可查看 manifest 数据、生命周期状态和一手来源。",
+      "profilesTitle": "查看扩展产品档案",
+      "shortlistIntro": "采用一致的流程，避免产品热度盖过编辑器兼容性和维护状态。",
+      "shortlistTitle": "用三步建立扩展候选清单",
+      "steps": [
+        {
+          "title": "设定兼容性约束",
+          "description": "列出必须支持的 IDE 和编辑器版本、预算、许可证要求，以及是否必须提供源代码访问。"
+        },
+        {
+          "title": "统一筛选",
+          "description": "用表格排除不兼容或已弃用的产品，再按定价、许可证、GitHub 星标与项目链接和官方资源比较剩余条目。"
+        },
+        {
+          "title": "验证并试用",
+          "description": "打开产品记录和官方安装来源，在代码库试用前确认兼容性、当前定价、权限和支持状态。"
+        }
+      ],
+      "title": "如何比较 AI 编码扩展"
+    },
+    "subtitle": "按支持的 IDE、定价、许可证、GitHub 星标与项目链接、生命周期和官方资源比较 AI 编码扩展，再选择适合编辑器的编码助手。",
     "title": "AI 编码扩展插件比较"
   },
   "ides": {
-    "backTo": "返回 IDE 列表",
-    "subtitle": "并排对比 AI 增强 IDE 的功能、定价和规格。",
+    "guide": {
+      "criteria": [
+        {
+          "title": "平台适配",
+          "description": "先确认团队使用的操作系统。支持所有必要开发设备的 IDE 更容易评估、标准化和维护。"
+        },
+        {
+          "title": "定价模式",
+          "description": "比较免费计划、起步价格和付费层级，再到官方定价页确认最新限制。订阅细节会改变实际采用成本。"
+        },
+        {
+          "title": "许可证与源代码",
+          "description": "通过许可证和 GitHub 链接区分开源编辑器与专有产品，并检查每个 IDE 背后的项目或上游编辑器。"
+        },
+        {
+          "title": "验证路径",
+          "description": "访问官方网站、文档、下载页、变更日志和问题链接。这些一手来源说明 IDE 如何安装、更新和获得支持。"
+        }
+      ],
+      "faqTitle": "AI 编码 IDE 常见问题",
+      "faqs": [
+        {
+          "title": "什么是 AI 编码 IDE？",
+          "description": "AI 编码 IDE 是把编码辅助能力集成到编辑器体验中的开发环境。产品可能组合补全、对话、代码库上下文、代码编辑、终端访问和 Agent 工作流，但平台、定价、许可证与集成方式各不相同。"
+        },
+        {
+          "title": "哪个 AI 编码 IDE 最好？",
+          "description": "没有一个 IDE 适合所有工作流。先筛选能在团队操作系统上运行、符合预算和许可证要求，并匹配编辑、评审与运行代码方式的产品，再用官方文档和试点验证候选项。"
+        },
+        {
+          "title": "有免费的 AI 编码 IDE 吗？",
+          "description": "部分 AI 编码 IDE 提供免费计划或基于开源编辑器，但模型用量和托管功能仍可能收费。先用定价列筛选，再向提供商确认最新限制。"
+        },
+        {
+          "title": "AI 编码 IDE 与扩展有什么区别？",
+          "description": "AI 编码 IDE 控制完整的编辑器体验；AI 扩展是在现有 IDE 中加入辅助能力。愿意采用新环境时选择 IDE，更看重保留当前宿主时考虑扩展。"
+        },
+        {
+          "title": "AI 编码 IDE 支持 Windows、macOS 和 Linux 吗？",
+          "description": "平台支持因产品而异。先查看表格中的 macOS、Windows 和 Linux 图标，再打开官方下载或安装文档核实系统要求。"
+        }
+      ],
+      "intro": "使用一致的信号比较 {count} 个 AI 编码 IDE：平台支持、定价、许可证、GitHub 星标与项目链接和官方资源。先明确团队约束，建立候选清单，再在更换开发环境前从一手来源核实当前产品信息。",
+      "profiles": [
+        {
+          "title": "Cursor",
+          "href": "/ides/cursor",
+          "description": "查看 Cursor 支持的平台、定价、许可证、GitHub 星标与项目链接和官方资源。"
+        },
+        {
+          "title": "Windsurf Editor",
+          "href": "/ides/windsurf",
+          "description": "查看 Windsurf Editor 支持的平台、定价、许可证、项目链接和文档。"
+        },
+        {
+          "title": "Kiro",
+          "href": "/ides/kiro",
+          "description": "查看 Kiro 支持的平台、定价、许可证、项目链接和官方资源。"
+        },
+        {
+          "title": "Antigravity",
+          "href": "/ides/antigravity",
+          "description": "查看 Antigravity 支持的平台、定价、许可证、项目链接和文档。"
+        }
+      ],
+      "profilesIntro": "以下链接只是表格中已有产品记录的快捷入口，不是排名或推荐。打开各条记录可查看 manifest 数据和一手来源。",
+      "profilesTitle": "查看 IDE 产品档案",
+      "shortlistIntro": "采用一致的流程，避免产品热度取代平台和工作流适配。",
+      "shortlistTitle": "用三步建立 IDE 候选清单",
+      "steps": [
+        {
+          "title": "设定约束",
+          "description": "列出必要的操作系统、预算上限、许可证要求，以及团队不能失去的编辑器工作流。"
+        },
+        {
+          "title": "统一筛选",
+          "description": "用表格排除不符合约束的 IDE，再按相同列比较剩余条目。"
+        },
+        {
+          "title": "验证并试点",
+          "description": "打开产品记录和官方链接，在试点前确认安装方式、定价、当前版本和支持状态。"
+        }
+      ],
+      "title": "如何比较 AI 编码 IDE"
+    },
+    "subtitle": "按定价、平台支持、许可证、GitHub 星标与项目链接和官方资源比较 AI 编码 IDE，再为团队选择开发环境。",
     "title": "AI 编码 IDE 比较"
   },
   "modelCompareDescription": "并排对比 AI 编码模型：规格、定价、功能和基准测试。",
@@ -31,5 +279,8 @@
     "backTo": "返回模型列表",
     "subtitle": "并排对比 AI 编码模型的规格和定价。",
     "title": "AI 编码模型比较"
+  },
+  "table": {
+    "scrollHint": "横向滚动以查看所有列。"
   }
 }

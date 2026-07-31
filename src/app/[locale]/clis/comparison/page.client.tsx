@@ -6,9 +6,13 @@ import { AppleIcon, LinuxIcon, WindowsIcon } from '@/components/controls/Platfor
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import { Breadcrumb } from '@/components/navigation/Breadcrumb'
+import ComparisonGuide, {
+  type ComparisonGuideContent,
+  type ComparisonGuideItem,
+  type ComparisonProfileItem,
+} from '@/components/product/ComparisonGuide'
 import ComparisonTable, { type ComparisonColumn } from '@/components/product/ComparisonTable'
 import { PricingSummaryValue } from '@/components/product/ProductPricing'
-import { Link } from '@/i18n/navigation'
 import { withVendorCommunityUrlsForCatalog } from '@/lib/community-urls'
 import { clisData, vendorsData } from '@/lib/generated'
 import { getGithubStars } from '@/lib/generated/github-stars'
@@ -28,6 +32,19 @@ type Props = {
 export default function CLIComparisonPageClient({ locale: _locale }: Props) {
   const tPage = useTranslations('pages.comparison')
   const tShared = useTranslations('shared')
+  const guideContent: ComparisonGuideContent = {
+    title: tPage('clis.guide.title'),
+    intro: tPage('clis.guide.intro', { count: clis.length }),
+    criteria: tPage.raw('clis.guide.criteria') as ComparisonGuideItem[],
+    shortlistTitle: tPage('clis.guide.shortlistTitle'),
+    shortlistIntro: tPage('clis.guide.shortlistIntro'),
+    steps: tPage.raw('clis.guide.steps') as ComparisonGuideItem[],
+    profilesTitle: tPage('clis.guide.profilesTitle'),
+    profilesIntro: tPage('clis.guide.profilesIntro'),
+    profiles: tPage.raw('clis.guide.profiles') as ComparisonProfileItem[],
+    faqTitle: tPage('clis.guide.faqTitle'),
+    faqs: tPage.raw('clis.guide.faqs') as ComparisonGuideItem[],
+  }
 
   const columns: ComparisonColumn[] = [
     {
@@ -279,7 +296,7 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
       />
 
       {/* Page Header */}
-      <section className="py-[var(--spacing-lg)] border-[var(--color-border)]">
+      <section className="pt-[var(--spacing-lg)] pb-[var(--spacing-md)]">
         <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
           <h1 className="text-3xl font-semibold tracking-[-0.03em] mb-[var(--spacing-sm)]">
             {tPage('clis.title')}
@@ -291,28 +308,23 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
       </section>
 
       {/* Comparison Table */}
-      <section className="pb-[var(--spacing-lg)] border-b border-[var(--color-border)]">
+      <section
+        id="comparison-table"
+        className="scroll-mt-32 pb-[var(--spacing-xl)] border-b border-[var(--color-border)]"
+      >
         <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
           <ComparisonTable
             items={clis as unknown as Record<string, unknown>[]}
             columns={columns}
             itemLinkPrefix={`/clis`}
             nameColumnLabel={tShared('labels.name')}
+            caption={tPage('clis.title')}
+            scrollHint={tPage('table.scrollHint')}
           />
         </div>
       </section>
 
-      {/* Back Navigation */}
-      <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
-        <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
-          <Link
-            href="/clis"
-            className="inline-flex items-center gap-[var(--spacing-xs)] text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
-          >
-            ← {tPage('clis.backTo')}
-          </Link>
-        </div>
-      </section>
+      <ComparisonGuide content={guideContent} />
 
       <Footer />
     </>

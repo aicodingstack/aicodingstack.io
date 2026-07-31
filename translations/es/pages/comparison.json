@@ -1,6 +1,86 @@
 {
   "clis": {
-    "backTo": "Volver a CLIs",
+    "guide": {
+      "criteria": [
+        {
+          "description": "Empieza por los sistemas operativos de tu equipo. Una CLI compatible con todas las máquinas necesarias es más fácil de estandarizar y mantener.",
+          "title": "Compatibilidad de plataforma"
+        },
+        {
+          "description": "Compara los planes gratuitos y precios iniciales y consulta después la fuente oficial. Los límites y modelos incluidos cambian el coste real.",
+          "title": "Modelo de precios"
+        },
+        {
+          "description": "Usa la licencia y GitHub para distinguir herramientas de código abierto de productos propietarios y revisar cada proyecto.",
+          "title": "Licencia y código fuente"
+        },
+        {
+          "description": "La web, documentación, descarga, registro de cambios e incidencias oficiales muestran cómo se instala, actualiza y mantiene la herramienta.",
+          "title": "Ruta de verificación"
+        }
+      ],
+      "faqTitle": "Preguntas sobre CLI de programación con IA",
+      "faqs": [
+        {
+          "description": "Una CLI de programación con IA ayuda a revisar repositorios, editar archivos, ejecutar comandos y completar tareas desde la terminal. Los productos difieren en modelos, sistemas operativos, precios, licencias y control de ejecución.",
+          "title": "¿Qué es una CLI de programación con IA?"
+        },
+        {
+          "description": "No existe una única CLI mejor para todos. Selecciona herramientas compatibles con tus plataformas, presupuesto, licencia y los modelos y servicios que ya usa tu equipo.",
+          "title": "¿Cuál es la mejor CLI de programación con IA?"
+        },
+        {
+          "description": "Algunas ofrecen plan gratuito o cliente abierto, pero el uso de modelos o funciones alojadas puede tener coste. Filtra por Plan gratuito y Precio inicial y confirma los límites en la página oficial.",
+          "title": "¿Hay CLI de programación con IA gratuitas?"
+        },
+        {
+          "description": "Muchas herramientas funcionan en Windows, macOS y Linux; otras solo en algunos. Revisa los iconos y confirma los requisitos en la documentación oficial antes de adoptarlas.",
+          "title": "¿Funcionan en Windows, macOS y Linux?"
+        }
+      ],
+      "intro": "Compara {count} CLI de programación con IA con los mismos criterios: plataformas, precios, licencia, estrellas de GitHub y enlaces del proyecto, y fuentes oficiales. Define tus restricciones, crea una selección y verifica en la fuente los datos que pueden cambiar.",
+      "profiles": [
+        {
+          "description": "Plataformas, precios y recursos oficiales del agente de terminal de Anthropic.",
+          "href": "/clis/claude-code-cli",
+          "title": "Claude Code CLI"
+        },
+        {
+          "description": "Instalación, licencia y recursos oficiales de la CLI de OpenAI.",
+          "href": "/clis/codex-cli",
+          "title": "Codex CLI"
+        },
+        {
+          "description": "Plataformas, repositorio y documentación del agente de terminal de Google.",
+          "href": "/clis/gemini-cli",
+          "title": "Gemini CLI"
+        },
+        {
+          "description": "Plataformas, licencia, precios y enlaces del proyecto OpenCode.",
+          "href": "/clis/opencode",
+          "title": "OpenCode"
+        }
+      ],
+      "profilesIntro": "Los siguientes enlaces son accesos directos a registros de productos ya incluidos en la tabla, no una clasificación ni una recomendación. Abre cada registro para consultar sus datos de manifiesto y fuentes primarias.",
+      "profilesTitle": "Explorar perfiles de productos CLI",
+      "shortlistIntro": "Usa un proceso uniforme para que la popularidad no sustituya el ajuste al flujo de trabajo.",
+      "shortlistTitle": "Crea una selección en tres pasos",
+      "steps": [
+        {
+          "description": "Enumera sistemas operativos, presupuesto, licencia y si necesitas documentación oficial o acceso al código.",
+          "title": "Define tus restricciones"
+        },
+        {
+          "description": "Descarta con la tabla las herramientas que no encajan y compara el resto con las mismas columnas.",
+          "title": "Filtra de forma uniforme"
+        },
+        {
+          "description": "Confirma instalación, precio, versión actual y soporte en los enlaces oficiales antes de una prueba.",
+          "title": "Verifica y prueba"
+        }
+      ],
+      "title": "Cómo comparar CLI de programación con IA"
+    },
     "subtitle": "Asistentes de codificación de línea de comandos con IA",
     "title": "Comparación de CLI de Codificación con IA"
   },
@@ -16,13 +96,181 @@
     "startingPrice": "Precio inicial"
   },
   "extensions": {
-    "backTo": "Volver a Extensiones",
-    "subtitle": "Extensiones y complementos de codificación con IA",
+    "guide": {
+      "criteria": [
+        {
+          "title": "Compatibilidad con el IDE anfitrión",
+          "description": "Empieza por los editores que ya usa tu equipo. La columna de IDE compatibles indica si una extensión funciona con VS Code, productos JetBrains u otro anfitrión antes de comparar lo demás."
+        },
+        {
+          "title": "Modelo de precios",
+          "description": "Compara planes gratuitos y precios iniciales, y confirma límites y servicios en la página oficial. Una extensión gratuita puede requerir acceso de pago a modelos."
+        },
+        {
+          "title": "Licencia y mantenimiento",
+          "description": "Usa la licencia, las estrellas de GitHub, los enlaces del proyecto y la etiqueta de obsoleto para distinguir proyectos abiertos de productos propietarios o discontinuados."
+        },
+        {
+          "title": "Ruta de verificación",
+          "description": "Antes de instalar, abre el sitio, marketplace o descarga, documentación, registro de cambios y seguimiento de incidencias. Estas fuentes confirman compatibilidad y soporte actuales."
+        }
+      ],
+      "faqTitle": "Preguntas sobre extensiones de programación con IA",
+      "faqs": [
+        {
+          "title": "¿Qué es una extensión de programación con IA?",
+          "description": "Es software que añade asistencia de programación a un editor o IDE existente. Puede ofrecer completado, chat, contexto del repositorio, flujos de edición o funciones de Agent sin abandonar la aplicación anfitriona."
+        },
+        {
+          "title": "¿Cuál es la mejor extensión de programación con IA?",
+          "description": "No existe una mejor para todos. Filtra por IDE anfitrión, entorno, presupuesto y licencia. Después compara las candidatas con documentación oficial y una prueba en un repositorio pequeño."
+        },
+        {
+          "title": "¿Hay extensiones de programación con IA gratuitas?",
+          "description": "Algunas tienen planes gratuitos o clientes de código abierto, aunque el uso de modelos y los servicios alojados pueden costar. Usa las columnas de precios como primer filtro y confirma los límites con el proveedor."
+        },
+        {
+          "title": "¿En qué se diferencia de un IDE de programación con IA?",
+          "description": "Una extensión funciona dentro de un editor existente y hereda su flujo. Un IDE independiente controla toda la experiencia. Compara extensiones si quieres conservar tu anfitrión actual."
+        },
+        {
+          "title": "¿Son compatibles con VS Code y los IDE de JetBrains?",
+          "description": "La compatibilidad varía. Consulta la columna de IDE compatibles y verifica la versión exacta del editor y los requisitos del sistema en el marketplace o la guía oficial."
+        }
+      ],
+      "intro": "Compara {count} extensiones de programación con IA con las mismas señales: IDE compatibles, precios, licencia, estrellas de GitHub y enlaces del proyecto, ciclo de vida y recursos oficiales. Filtra primero por compatibilidad y verifica los detalles cambiantes antes de instalar.",
+      "profiles": [
+        {
+          "title": "GitHub Copilot",
+          "href": "/extensions/github-copilot",
+          "description": "Revisa IDE compatibles, precios, licencia, estrellas de GitHub, enlaces del proyecto y recursos oficiales."
+        },
+        {
+          "title": "Cline",
+          "href": "/extensions/cline",
+          "description": "Revisa IDE compatibles, precios, licencia, repositorio y documentación."
+        },
+        {
+          "title": "Gemini Code Assist",
+          "href": "/extensions/gemini-code-assist",
+          "description": "Revisa compatibilidad, precios, enlaces del proyecto y documentación oficial."
+        },
+        {
+          "title": "JetBrains Junie",
+          "href": "/extensions/jetbrains-junie",
+          "description": "Revisa compatibilidad con el anfitrión, precios, enlaces y recursos oficiales."
+        }
+      ],
+      "profilesIntro": "Los siguientes enlaces son accesos directos a registros de productos ya incluidos en la tabla, no una clasificación ni una recomendación. Abre cada registro para consultar sus datos de manifiesto, estado del ciclo de vida y fuentes primarias.",
+      "profilesTitle": "Explorar perfiles de extensiones",
+      "shortlistIntro": "Usa un proceso uniforme para que la popularidad no pese más que la compatibilidad y el mantenimiento.",
+      "shortlistTitle": "Crear una lista de extensiones en tres pasos",
+      "steps": [
+        {
+          "title": "Definir requisitos de compatibilidad",
+          "description": "Enumera los IDE y versiones obligatorios, presupuesto, requisitos de licencia y si necesitas acceso al código fuente."
+        },
+        {
+          "title": "Filtrar de forma uniforme",
+          "description": "Elimina productos incompatibles u obsoletos y compara el resto por precio, licencia, estrellas de GitHub, enlaces del proyecto y recursos oficiales."
+        },
+        {
+          "title": "Verificar y probar",
+          "description": "Abre el registro y la instalación oficial. Confirma compatibilidad, precios actuales, permisos y soporte antes de probar en un repositorio."
+        }
+      ],
+      "title": "Cómo comparar extensiones de programación con IA"
+    },
+    "subtitle": "Compara extensiones de programación con IA por IDE compatibles, precios, licencia, estrellas de GitHub y enlaces del proyecto, ciclo de vida y recursos oficiales.",
     "title": "Comparación de Extensiones de Codificación con IA"
   },
   "ides": {
-    "backTo": "Volver a IDEs",
-    "subtitle": "Entornos de desarrollo integrados mejorados con IA",
+    "guide": {
+      "criteria": [
+        {
+          "title": "Compatibilidad de plataforma",
+          "description": "Empieza por los sistemas operativos de tu equipo. Un IDE compatible con todos los equipos necesarios es más fácil de evaluar, estandarizar y mantener."
+        },
+        {
+          "title": "Modelo de precios",
+          "description": "Compara planes gratuitos, precios iniciales y niveles de pago, y confirma los límites actuales en la página oficial. Los detalles de suscripción cambian el coste real."
+        },
+        {
+          "title": "Licencia y código fuente",
+          "description": "Usa la licencia y los enlaces de GitHub para distinguir editores abiertos de productos propietarios y examinar el proyecto que hay detrás de cada IDE."
+        },
+        {
+          "title": "Ruta de verificación",
+          "description": "Sigue el sitio oficial, documentación, descarga, cambios e incidencias. Estas fuentes muestran cómo se instala, actualiza y mantiene el IDE."
+        }
+      ],
+      "faqTitle": "Preguntas sobre IDE de programación con IA",
+      "faqs": [
+        {
+          "title": "¿Qué es un IDE de programación con IA?",
+          "description": "Es un entorno que integra asistencia de programación en la experiencia del editor. Puede combinar completado, chat, contexto del repositorio, edición, terminal y flujos de Agent, con diferencias de plataforma, precio y licencia."
+        },
+        {
+          "title": "¿Cuál es el mejor IDE de programación con IA?",
+          "description": "No hay uno mejor para todos. Selecciona productos compatibles con tus sistemas, presupuesto, licencia y forma de editar, revisar y ejecutar código. Confirma los finalistas con documentación oficial y una prueba piloto."
+        },
+        {
+          "title": "¿Hay IDE de programación con IA gratuitos?",
+          "description": "Algunos ofrecen planes gratuitos o se basan en editores abiertos, aunque el uso de modelos o funciones alojadas puede costar. Usa las columnas de precios como primer filtro."
+        },
+        {
+          "title": "¿En qué se diferencia de una extensión?",
+          "description": "Un IDE de programación con IA controla toda la experiencia del editor. Una extensión añade asistencia a un IDE existente. Elige un IDE si puedes adoptar un entorno nuevo y una extensión si debes conservar el anfitrión."
+        },
+        {
+          "title": "¿Funcionan en Windows, macOS y Linux?",
+          "description": "La compatibilidad varía. Comprueba los iconos de macOS, Windows y Linux y confirma los requisitos del sistema en la descarga o documentación oficial."
+        }
+      ],
+      "intro": "Compara {count} IDE de programación con IA con señales uniformes: plataformas, precios, licencia, estrellas de GitHub y enlaces del proyecto, y recursos oficiales. Parte de las restricciones del equipo, crea una lista y verifica los detalles actuales antes de cambiar de entorno.",
+      "profiles": [
+        {
+          "title": "Cursor",
+          "href": "/ides/cursor",
+          "description": "Revisa plataformas, precios, licencia, estrellas de GitHub, enlaces del proyecto y recursos oficiales."
+        },
+        {
+          "title": "Windsurf Editor",
+          "href": "/ides/windsurf",
+          "description": "Revisa plataformas, precios, licencia, enlaces del proyecto y documentación."
+        },
+        {
+          "title": "Kiro",
+          "href": "/ides/kiro",
+          "description": "Revisa plataformas, precios, licencia, enlaces y recursos oficiales."
+        },
+        {
+          "title": "Antigravity",
+          "href": "/ides/antigravity",
+          "description": "Revisa plataformas, precios, licencia, enlaces y documentación."
+        }
+      ],
+      "profilesIntro": "Los siguientes enlaces son accesos directos a registros de productos ya incluidos en la tabla, no una clasificación ni una recomendación. Abre cada registro para consultar sus datos de manifiesto y fuentes primarias.",
+      "profilesTitle": "Explorar perfiles de productos IDE",
+      "shortlistIntro": "Usa un proceso uniforme para que la popularidad no sustituya el ajuste a plataforma y flujo de trabajo.",
+      "shortlistTitle": "Crear una lista de IDE en tres pasos",
+      "steps": [
+        {
+          "title": "Definir restricciones",
+          "description": "Enumera sistemas operativos, presupuesto, requisitos de licencia y flujos del editor que tu equipo debe conservar."
+        },
+        {
+          "title": "Filtrar de forma uniforme",
+          "description": "Elimina los IDE que no cumplan las restricciones y compara los restantes con las mismas columnas."
+        },
+        {
+          "title": "Verificar y pilotar",
+          "description": "Abre cada registro y enlace oficial. Confirma instalación, precios, versión actual y soporte antes de un piloto."
+        }
+      ],
+      "title": "Cómo comparar IDE de programación con IA"
+    },
+    "subtitle": "Compara IDE de programación con IA por precios, plataformas, licencia, estrellas de GitHub, enlaces del proyecto y recursos oficiales antes de elegir un entorno.",
     "title": "Comparación de IDE de Codificación con IA"
   },
   "modelCompareDescription": "Compare modelos de codificación con IA lado a lado: especificaciones, precios, funcionalidades y benchmarks.",
@@ -31,5 +279,8 @@
     "backTo": "Volver a Modelos",
     "subtitle": "Modelos de lenguaje grandes optimizados para generación y análisis de código",
     "title": "Comparación de Modelos de Codificación con IA"
+  },
+  "table": {
+    "scrollHint": "Desplázate horizontalmente para ver todas las columnas."
   }
 }
