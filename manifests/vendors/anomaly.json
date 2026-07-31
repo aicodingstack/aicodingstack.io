@@ -6,37 +6,37 @@
   "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces.",
   "translations": {
     "de": {
-      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+      "description": "Anomaly entwickelt OpenCode, einen quelloffenen Coding-Agenten für Terminal-, Desktop- und Editor-Oberflächen."
     },
     "es": {
-      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+      "description": "Anomaly desarrolla OpenCode, un agente de programación de código abierto disponible en terminal, escritorio y editor."
     },
     "fr": {
-      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+      "description": "Anomaly développe OpenCode, un agent de codage open source disponible dans le terminal, sur le bureau et dans l’éditeur."
     },
     "id": {
-      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+      "description": "Anomaly mengembangkan OpenCode, agen coding sumber terbuka yang tersedia di terminal, desktop, dan editor."
     },
     "ja": {
-      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+      "description": "Anomaly は、ターミナル、デスクトップ、エディターで利用できるオープンソースのコーディングエージェント OpenCode を開発しています。"
     },
     "ko": {
-      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+      "description": "Anomaly는 터미널, 데스크톱, 편집기에서 사용할 수 있는 오픈 소스 코딩 에이전트 OpenCode를 개발합니다."
     },
     "pt": {
-      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+      "description": "A Anomaly desenvolve o OpenCode, um agente de programação de código aberto disponível no terminal, no desktop e no editor."
     },
     "ru": {
-      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+      "description": "Anomaly разрабатывает OpenCode — агент программирования с открытым исходным кодом для терминала, настольной среды и редактора."
     },
     "tr": {
-      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+      "description": "Anomaly, terminal, masaüstü ve editör arayüzlerinde kullanılabilen açık kaynaklı kodlama aracısı OpenCode'u geliştirir."
     },
     "zh-Hans": {
-      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+      "description": "Anomaly 开发了 OpenCode，这是一款可在终端、桌面和编辑器中使用的开源编码代理。"
     },
     "zh-Hant": {
-      "description": "Anomaly develops OpenCode, an open source coding agent available across terminal, desktop, and editor surfaces."
+      "description": "Anomaly 開發了 OpenCode，這是一款可在終端機、桌面和編輯器中使用的開源編碼代理。"
     }
   },
   "verified": true,

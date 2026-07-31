@@ -38,13 +38,13 @@
   },
   "categories": {
     "all": {
-      "clis": "All CLIs",
-      "desktops": "All Desktop Apps",
-      "extensions": "All Extensions",
-      "ides": "All IDEs",
-      "modelProviders": "All Model Providers",
+      "clis": "全部 CLI",
+      "desktops": "全部桌面应用",
+      "extensions": "全部扩展",
+      "ides": "全部 IDE",
+      "modelProviders": "全部模型提供商",
       "models": "所有模型",
-      "vendors": "All Vendors"
+      "vendors": "全部厂商"
     },
     "plural": {
       "collections": "收藏集",
@@ -59,17 +59,17 @@
     },
     "singular": {
       "cli": "CLI",
-      "desktop": "Desktop",
-      "extension": "Extension",
+      "desktop": "桌面应用",
+      "extension": "扩展",
       "ide": "IDE",
       "model": "模型",
-      "modelProvider": "Model Provider",
-      "provider": "Provider",
+      "modelProvider": "模型提供商",
+      "provider": "提供商",
       "vendor": "厂商"
     }
   },
   "labels": {
-    "cache": "Cache",
+    "cache": "缓存",
     "findOnAiPlatforms": "在 AI 平台上查找",
     "getApiKey": "获取 API 密钥",
     "input": "输入",

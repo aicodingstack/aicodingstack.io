@@ -2,37 +2,37 @@
   "$schema": "../$schemas/desktop.schema.json",
   "translations": {
     "de": {
-      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+      "description": "Codex App ist OpenAIs Desktop-Schaltzentrale zum parallelen Ausführen von Coding-Agenten, Prüfen von Änderungen, Nutzen von Worktrees und Teilen von Sitzungen mit Codex CLI und IDE-Integrationen."
     },
     "es": {
-      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+      "description": "Codex App es el centro de control de escritorio de OpenAI para ejecutar agentes de programación en paralelo, revisar cambios, usar worktrees y compartir sesiones con Codex CLI e integraciones de IDE."
     },
     "fr": {
-      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+      "description": "Codex App est le centre de contrôle d’OpenAI pour exécuter des agents en parallèle, examiner les changements, utiliser des worktrees et partager des sessions avec Codex CLI et les intégrations d’IDE."
     },
     "id": {
-      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+      "description": "Codex App adalah pusat kendali desktop dari OpenAI untuk menjalankan agen coding secara paralel, meninjau perubahan, menggunakan worktree, dan berbagi sesi dengan Codex CLI serta integrasi IDE."
     },
     "ja": {
-      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+      "description": "Codex App は、コーディングエージェントの並列実行、変更の確認、worktree の利用、Codex CLI や IDE 統合とのセッション共有に対応する OpenAI のデスクトップ司令塔です。"
     },
     "ko": {
-      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+      "description": "Codex App은 코딩 에이전트 병렬 실행, 변경 사항 검토, worktree 사용, Codex CLI 및 IDE 통합과의 세션 공유를 위한 OpenAI의 데스크톱 명령 센터입니다."
     },
     "pt": {
-      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+      "description": "O Codex App é a central da OpenAI para executar agentes em paralelo, revisar alterações, usar worktrees e compartilhar sessões com o Codex CLI e integrações de IDE."
     },
     "ru": {
-      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+      "description": "Codex App — центр управления OpenAI для параллельного запуска агентов программирования, просмотра изменений, использования worktree и обмена сеансами с Codex CLI и интеграциями IDE."
     },
     "tr": {
-      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+      "description": "Codex App, aracıları paralel çalıştırmak, değişiklikleri incelemek, worktree kullanmak ve oturumları Codex CLI ile IDE entegrasyonlarında paylaşmak için OpenAI'ın masaüstü komuta merkezidir."
     },
     "zh-Hans": {
-      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+      "description": "Codex App 是 OpenAI 的桌面指挥中心，可并行运行编码代理、审查变更、使用 worktree，并与 Codex CLI 和 IDE 集成共享会话。"
     },
     "zh-Hant": {
-      "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
+      "description": "Codex App 是 OpenAI 的桌面指揮中心，可平行執行編碼代理、檢查變更、使用 worktree，並與 Codex CLI 和 IDE 整合共享工作階段。"
     }
   },
   "verified": true,

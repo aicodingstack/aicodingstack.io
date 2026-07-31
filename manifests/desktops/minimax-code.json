@@ -2,37 +2,37 @@
   "$schema": "../$schemas/desktop.schema.json",
   "translations": {
     "de": {
-      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+      "description": "MiniMax Code ist ein Desktop-Agent für macOS und Windows mit Agententeams, dauerhaftem Gedächtnis, wiederverwendbaren Skills, geplanten Aufgaben und Entwicklungsabläufen auf Arbeitsbereichsebene."
     },
     "es": {
-      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+      "description": "MiniMax Code es un agente de escritorio para macOS y Windows con equipos de agentes, memoria persistente, habilidades reutilizables, tareas programadas y flujos de desarrollo del espacio de trabajo."
     },
     "fr": {
-      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+      "description": "MiniMax Code est un agent pour macOS et Windows, avec des équipes d’agents, une mémoire persistante, des skills réutilisables, des tâches planifiées et des flux à l’échelle de l’espace de travail."
     },
     "id": {
-      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+      "description": "MiniMax Code adalah agen coding desktop untuk macOS dan Windows dengan tim agen, memori persisten, skill yang dapat digunakan kembali, tugas terjadwal, dan alur kerja pengembangan tingkat ruang kerja."
     },
     "ja": {
-      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+      "description": "MiniMax Code は、エージェントチーム、永続メモリ、再利用可能なスキル、スケジュールタスク、ワークスペース単位の開発ワークフローを備えた macOS・Windows 向けデスクトップコーディングエージェントです。"
     },
     "ko": {
-      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+      "description": "MiniMax Code는 에이전트 팀, 지속형 메모리, 재사용 가능한 스킬, 예약 작업, 작업 공간 수준 개발 워크플로를 갖춘 macOS 및 Windows용 데스크톱 코딩 에이전트입니다."
     },
     "pt": {
-      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+      "description": "O MiniMax Code é um agente para macOS e Windows com equipes de agentes, memória persistente, habilidades reutilizáveis, tarefas agendadas e fluxos de desenvolvimento do espaço de trabalho."
     },
     "ru": {
-      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+      "description": "MiniMax Code — настольный агент для macOS и Windows с командами агентов, постоянной памятью, многоразовыми навыками, запланированными задачами и процессами разработки рабочей области."
     },
     "tr": {
-      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+      "description": "MiniMax Code; aracı ekipleri, kalıcı bellek, yeniden kullanılabilir beceriler, zamanlanmış görevler ve çalışma alanı düzeyinde iş akışları sunan bir macOS ve Windows masaüstü aracısıdır."
     },
     "zh-Hans": {
-      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+      "description": "MiniMax Code 是面向 macOS 和 Windows 的桌面编码代理，提供代理团队、持久记忆、可复用技能、计划任务和工作区级开发工作流。"
     },
     "zh-Hant": {
-      "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
+      "description": "MiniMax Code 是適用於 macOS 和 Windows 的桌面編碼代理，提供代理團隊、持久記憶、可重複利用的技能、排程任務和工作區層級開發工作流程。"
     }
   },
   "verified": true,

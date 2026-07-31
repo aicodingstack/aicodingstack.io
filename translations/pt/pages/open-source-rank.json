@@ -21,7 +21,7 @@
   "table": {
     "openSourceTitle": "Projetos open source ({count})",
     "proprietaryTitle": "Projetos proprietários ({count})",
-    "rank": "Rank"
+    "rank": "Classificação"
   },
   "title": "Classificação de Projetos de Código Aberto"
 }

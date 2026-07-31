@@ -1,8 +1,8 @@
 {
-  "keywords": "AI coding articles, AI development tutorials, AI coding best practices, LLM coding guides, AI IDE guides",
+  "keywords": "статьи о программировании с ИИ, руководства по разработке с ИИ, лучшие практики программирования с ИИ, руководства по программированию с LLM, руководства по ИИ-IDE",
   "meta": {
-    "description": "In-depth articles about AI coding tools, best practices, and the future of software development with AI assistants.",
-    "title": "AI Coding Articles & Insights"
+    "description": "Подробные статьи об инструментах программирования с ИИ, лучших практиках и будущем разработки программного обеспечения с ИИ-ассистентами.",
+    "title": "Статьи и аналитика о программировании с ИИ"
   },
-  "subtitle": "Deep dives into AI coding: tutorials, insights, best practices for IDEs, CLIs, and LLM models. Learn how to build 10x faster with AI."
+  "subtitle": "Глубокое погружение в программирование с ИИ: руководства, аналитика и лучшие практики для IDE, CLI и моделей LLM. Узнайте, как разрабатывать в десять раз быстрее с ИИ."
 }

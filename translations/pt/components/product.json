@@ -1,13 +1,13 @@
 {
   "benchmarks": {
-    "liveCodeBenchDesc": "Live coding performance",
-    "mmmuDesc": "Multimodal understanding",
-    "mmmuProDesc": "Advanced multimodal tasks",
-    "sciCodeDesc": "Scientific code generation",
-    "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBenchDesc": "Command-line interface proficiency",
-    "title": "Performance Benchmarks",
-    "webDevArenaDesc": "Web development challenges"
+    "liveCodeBenchDesc": "Desempenho de programação ao vivo",
+    "mmmuDesc": "Compreensão multimodal",
+    "mmmuProDesc": "Tarefas multimodais avançadas",
+    "sciCodeDesc": "Geração de código científico",
+    "sweBenchDesc": "Tarefas reais de engenharia de software",
+    "terminalBenchDesc": "Proficiência na interface de linha de comando",
+    "title": "Testes de desempenho",
+    "webDevArenaDesc": "Desafios de desenvolvimento web"
   },
   "communityLinks": {
     "blog": "Blog",
@@ -44,7 +44,7 @@
     "launch": "Iniciar"
   },
   "productHero": {
-    "runtime": "Runtime"
+    "runtime": "Ambiente de execução"
   },
   "productPricing": {
     "custom": "Contactar vendas",
@@ -62,7 +62,7 @@
     "viewProduct": "Ver Produto"
   },
   "resourceLinks": {
-    "changelog": "Changelog",
+    "changelog": "Registro de alterações",
     "changelogDescription": "Ver changelog",
     "downloadDescription": "Baixar versão mais recente",
     "issue": "Rastreador de Problemas",
@@ -76,35 +76,35 @@
       "summary": "{count} {category}"
     },
     "controls": {
-      "clear": "Clear",
-      "sortByLabel": "Sort by:",
-      "vendorTypeLabel": "Vendor Type:"
+      "clear": "Redefinir",
+      "sortByLabel": "Ordenar por:",
+      "vendorTypeLabel": "Tipo de fornecedor:"
     },
     "table": {
-      "noVendorsFound": "No vendors found"
+      "noVendorsFound": "Nenhum fornecedor encontrado"
     },
     "vendorTypes": {
-      "label": "Vendor Types:",
+      "label": "Tipos de fornecedor:",
       "types": {
         "ai-native": {
-          "description": "Model + Development Tools",
-          "label": "AI Native"
+          "description": "Modelo + ferramentas de desenvolvimento",
+          "label": "Nativo de IA"
         },
         "full-stack": {
-          "description": "IDE + CLI + Extension",
-          "label": "Full Stack"
+          "description": "IDE + CLI + extensão",
+          "label": "Full stack"
         },
         "model-only": {
-          "description": "Model (with or without Provider)",
-          "label": "Model Only"
+          "description": "Modelo (com ou sem provedor)",
+          "label": "Somente modelo"
         },
         "provider-only": {
-          "description": "Provider only",
-          "label": "Provider Only"
+          "description": "Somente provedor",
+          "label": "Somente provedor"
         },
         "tool-only": {
-          "description": "IDE/CLI/Extension",
-          "label": "Tool Only"
+          "description": "IDE/CLI/extensão",
+          "label": "Somente ferramentas"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
-  "keywords": "AI coding articles, AI development tutorials, AI coding best practices, LLM coding guides, AI IDE guides",
+  "keywords": "AI 程式設計文章, AI 開發教學, AI 程式設計最佳實務, LLM 程式設計指南, AI IDE 指南",
   "meta": {
-    "description": "In-depth articles about AI coding tools, best practices, and the future of software development with AI assistants.",
-    "title": "AI Coding Articles & Insights"
+    "description": "深入介紹 AI 程式設計工具、最佳實務，以及 AI 助手驅動的軟體開發未來。",
+    "title": "AI 程式設計文章與洞察"
   },
-  "subtitle": "Deep dives into AI coding: tutorials, insights, best practices for IDEs, CLIs, and LLM models. Learn how to build 10x faster with AI."
+  "subtitle": "深入探索 AI 程式設計：涵蓋 IDE、CLI 和 LLM 模型的教學、洞察與最佳實務，學習如何透過 AI 將開發速度提升十倍。"
 }

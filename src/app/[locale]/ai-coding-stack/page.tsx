@@ -4,23 +4,18 @@ import Header from '@/components/Header'
 import PageHeader from '@/components/PageHeader'
 import type { Locale } from '@/i18n/config'
 import { Link } from '@/i18n/navigation'
-import { buildTitle, generateStaticPageMetadata } from '@/lib/metadata'
+import { generateStaticPageMetadata } from '@/lib/metadata'
 import type { LocalePageProps } from '@/types/locale'
 
 export async function generateMetadata({ params }: LocalePageProps) {
   const { locale } = await params
-  const tShared = await getTranslations({ locale, namespace: 'shared' })
-
-  const title = buildTitle({ title: tShared('terms.aiCodingStack') })
-  const description = tShared('terms.ecosystemSubtitle')
+  const tPage = await getTranslations({ locale, namespace: 'pages.stacksOverview' })
 
   return generateStaticPageMetadata({
     locale: locale as Locale,
     basePath: 'ai-coding-stack',
-    title,
-    description,
-    keywords:
-      'AI Coding Stack, AI development tools, AI IDE, AI CLI, LLM models, AI coding ecosystem',
+    title: tPage('meta.title'),
+    description: tPage('meta.description'),
     ogType: 'website',
   })
 }

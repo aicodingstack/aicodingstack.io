@@ -2,37 +2,37 @@
   "$schema": "../$schemas/desktop.schema.json",
   "translations": {
     "de": {
-      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+      "description": "ZCode ist die eigenständige Desktop-Coding-Umgebung von Z.ai für agentische Entwicklung, Projektplanung, Codeänderungen, Terminalausführung und wiederverwendbare ADE-Werkzeuge."
     },
     "es": {
-      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+      "description": "ZCode es el entorno de programación de escritorio independiente de Z.ai para desarrollo agéntico, planificación de proyectos, cambios de código, ejecución en terminal y herramientas ADE reutilizables."
     },
     "fr": {
-      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+      "description": "ZCode est l’environnement autonome de Z.ai pour le développement agentique, la planification de projets, les changements de code, l’exécution dans le terminal et les outils ADE réutilisables."
     },
     "id": {
-      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+      "description": "ZCode adalah lingkungan coding desktop mandiri dari Z.ai untuk pengembangan agentik, perencanaan proyek, perubahan kode, eksekusi terminal, dan alat ADE yang dapat digunakan kembali."
     },
     "ja": {
-      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+      "description": "ZCode は、エージェント型開発、プロジェクト計画、コード変更、ターミナル実行、再利用可能な ADE ツールに対応する Z.ai のスタンドアロン型デスクトップコーディング環境です。"
     },
     "ko": {
-      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+      "description": "ZCode는 에이전틱 개발, 프로젝트 계획, 코드 변경, 터미널 실행, 재사용 가능한 ADE 도구를 위한 Z.ai의 독립형 데스크톱 코딩 환경입니다."
     },
     "pt": {
-      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+      "description": "O ZCode é o ambiente independente da Z.ai para desenvolvimento agêntico, planejamento de projetos, alterações de código, execução no terminal e ferramentas ADE reutilizáveis."
     },
     "ru": {
-      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+      "description": "ZCode — отдельная настольная среда программирования Z.ai для агентной разработки, планирования проектов, изменения кода, выполнения команд в терминале и использования многоразовых инструментов ADE."
     },
     "tr": {
-      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+      "description": "ZCode, aracılı geliştirme, proje planlama, kod değişiklikleri, terminal yürütme ve yeniden kullanılabilir ADE araçları için Z.ai'ın bağımsız masaüstü kodlama ortamıdır."
     },
     "zh-Hans": {
-      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+      "description": "ZCode 是 Z.ai 的独立桌面编码环境，支持代理式开发、项目规划、代码变更、终端执行和可复用的 ADE 工具。"
     },
     "zh-Hant": {
-      "description": "ZCode is Z.ai's standalone desktop coding environment for agentic development, project planning, code changes, terminal execution, and reusable ADE tools."
+      "description": "ZCode 是 Z.ai 的獨立桌面編碼環境，支援代理式開發、專案規劃、程式碼變更、終端機執行和可重複利用的 ADE 工具。"
     }
   },
   "verified": false,

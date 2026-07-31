@@ -5,37 +5,37 @@
   "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent.",
   "translations": {
     "de": {
-      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+      "description": "Atlassian entwickelt Kollaborations- und DevOps-Produkte, darunter Jira, Confluence, Bitbucket und den Coding-Agenten Rovo Dev."
     },
     "es": {
-      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+      "description": "Atlassian desarrolla productos de colaboración y DevOps, entre ellos Jira, Confluence, Bitbucket y el agente de programación Rovo Dev."
     },
     "fr": {
-      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+      "description": "Atlassian développe des produits de collaboration et de DevOps, notamment Jira, Confluence, Bitbucket et l’agent de codage Rovo Dev."
     },
     "id": {
-      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+      "description": "Atlassian mengembangkan produk kolaborasi dan DevOps, termasuk Jira, Confluence, Bitbucket, dan agen coding Rovo Dev."
     },
     "ja": {
-      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+      "description": "Atlassian は、Jira、Confluence、Bitbucket、コーディングエージェント Rovo Dev などのコラボレーションおよび DevOps 製品を開発しています。"
     },
     "ko": {
-      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+      "description": "Atlassian은 Jira, Confluence, Bitbucket, Rovo Dev 코딩 에이전트를 비롯한 협업 및 DevOps 제품을 개발합니다."
     },
     "pt": {
-      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+      "description": "A Atlassian desenvolve produtos de colaboração e DevOps, incluindo Jira, Confluence, Bitbucket e o agente de programação Rovo Dev."
     },
     "ru": {
-      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+      "description": "Atlassian разрабатывает продукты для совместной работы и DevOps, включая Jira, Confluence, Bitbucket и агент программирования Rovo Dev."
     },
     "tr": {
-      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+      "description": "Atlassian; Jira, Confluence, Bitbucket ve Rovo Dev kodlama aracısı dahil olmak üzere iş birliği ve DevOps ürünleri geliştirir."
     },
     "zh-Hans": {
-      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+      "description": "Atlassian 开发协作和 DevOps 产品，包括 Jira、Confluence、Bitbucket 以及 Rovo Dev 编码代理。"
     },
     "zh-Hant": {
-      "description": "Atlassian develops collaboration and DevOps products including Jira, Confluence, Bitbucket, and the Rovo Dev coding agent."
+      "description": "Atlassian 開發協作和 DevOps 產品，包括 Jira、Confluence、Bitbucket 以及 Rovo Dev 編碼代理。"
     }
   },
   "verified": true,

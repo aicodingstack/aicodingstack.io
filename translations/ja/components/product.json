@@ -1,13 +1,13 @@
 {
   "benchmarks": {
-    "liveCodeBenchDesc": "Live coding performance",
-    "mmmuDesc": "Multimodal understanding",
-    "mmmuProDesc": "Advanced multimodal tasks",
-    "sciCodeDesc": "Scientific code generation",
-    "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBenchDesc": "Command-line interface proficiency",
-    "title": "Performance Benchmarks",
-    "webDevArenaDesc": "Web development challenges"
+    "liveCodeBenchDesc": "ライブコーディング性能",
+    "mmmuDesc": "マルチモーダル理解",
+    "mmmuProDesc": "高度なマルチモーダルタスク",
+    "sciCodeDesc": "科学コード生成",
+    "sweBenchDesc": "実際のソフトウェアエンジニアリングタスク",
+    "terminalBenchDesc": "コマンドライン操作能力",
+    "title": "性能ベンチマーク",
+    "webDevArenaDesc": "Web 開発の課題"
   },
   "communityLinks": {
     "blog": "ブログ",
@@ -76,35 +76,35 @@
       "summary": "{count} {category}"
     },
     "controls": {
-      "clear": "Clear",
-      "sortByLabel": "Sort by:",
-      "vendorTypeLabel": "Vendor Type:"
+      "clear": "リセット",
+      "sortByLabel": "並び順:",
+      "vendorTypeLabel": "ベンダー種別:"
     },
     "table": {
-      "noVendorsFound": "No vendors found"
+      "noVendorsFound": "ベンダーが見つかりません"
     },
     "vendorTypes": {
-      "label": "Vendor Types:",
+      "label": "ベンダー種別:",
       "types": {
         "ai-native": {
-          "description": "Model + Development Tools",
-          "label": "AI Native"
+          "description": "モデル + 開発ツール",
+          "label": "AI ネイティブ"
         },
         "full-stack": {
-          "description": "IDE + CLI + Extension",
-          "label": "Full Stack"
+          "description": "IDE + CLI + 拡張機能",
+          "label": "フルスタック"
         },
         "model-only": {
-          "description": "Model (with or without Provider)",
-          "label": "Model Only"
+          "description": "モデル（プロバイダーの有無を問わず）",
+          "label": "モデルのみ"
         },
         "provider-only": {
-          "description": "Provider only",
-          "label": "Provider Only"
+          "description": "プロバイダーのみ",
+          "label": "プロバイダーのみ"
         },
         "tool-only": {
-          "description": "IDE/CLI/Extension",
-          "label": "Tool Only"
+          "description": "IDE/CLI/拡張機能",
+          "label": "ツールのみ"
         }
       }
     }

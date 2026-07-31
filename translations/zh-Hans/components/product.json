@@ -1,13 +1,13 @@
 {
   "benchmarks": {
-    "liveCodeBenchDesc": "Live coding performance",
-    "mmmuDesc": "Multimodal understanding",
-    "mmmuProDesc": "Advanced multimodal tasks",
-    "sciCodeDesc": "Scientific code generation",
-    "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBenchDesc": "Command-line interface proficiency",
-    "title": "Performance Benchmarks",
-    "webDevArenaDesc": "Web development challenges"
+    "liveCodeBenchDesc": "实时编码性能",
+    "mmmuDesc": "多模态理解",
+    "mmmuProDesc": "高级多模态任务",
+    "sciCodeDesc": "科学代码生成",
+    "sweBenchDesc": "真实软件工程任务",
+    "terminalBenchDesc": "命令行界面能力",
+    "title": "性能基准测试",
+    "webDevArenaDesc": "Web 开发挑战"
   },
   "communityLinks": {
     "blog": "博客",

@@ -29,6 +29,7 @@
     "validate:i18n": "tsx scripts/validate/validate-i18n.ts",
     "validate:i18n-usage": "tsx scripts/validate/validate-i18n-usage.ts",
     "validate:i18n-duplicates": "tsx scripts/validate/validate-i18n-duplicates.ts",
+    "validate:i18n-placeholders": "tsx scripts/validate/validate-i18n-placeholders.ts",
     "validate:urls": "tsx scripts/validate/visit-urls.ts",
     "validate:urls:all": "tsx scripts/validate/visit-urls.ts --locales all --slugs all",
     "validate:urls:quick": "tsx scripts/validate/visit-urls.ts",

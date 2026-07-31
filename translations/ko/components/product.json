@@ -1,13 +1,13 @@
 {
   "benchmarks": {
-    "liveCodeBenchDesc": "Live coding performance",
-    "mmmuDesc": "Multimodal understanding",
-    "mmmuProDesc": "Advanced multimodal tasks",
-    "sciCodeDesc": "Scientific code generation",
-    "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBenchDesc": "Command-line interface proficiency",
-    "title": "Performance Benchmarks",
-    "webDevArenaDesc": "Web development challenges"
+    "liveCodeBenchDesc": "라이브 코딩 성능",
+    "mmmuDesc": "멀티모달 이해",
+    "mmmuProDesc": "고급 멀티모달 작업",
+    "sciCodeDesc": "과학 코드 생성",
+    "sweBenchDesc": "실제 소프트웨어 엔지니어링 작업",
+    "terminalBenchDesc": "명령줄 인터페이스 숙련도",
+    "title": "성능 벤치마크",
+    "webDevArenaDesc": "웹 개발 과제"
   },
   "communityLinks": {
     "blog": "블로그",
@@ -76,35 +76,35 @@
       "summary": "{count} {category}"
     },
     "controls": {
-      "clear": "Clear",
-      "sortByLabel": "Sort by:",
-      "vendorTypeLabel": "Vendor Type:"
+      "clear": "초기화",
+      "sortByLabel": "정렬 기준:",
+      "vendorTypeLabel": "공급업체 유형:"
     },
     "table": {
-      "noVendorsFound": "No vendors found"
+      "noVendorsFound": "공급업체를 찾을 수 없습니다"
     },
     "vendorTypes": {
-      "label": "Vendor Types:",
+      "label": "공급업체 유형:",
       "types": {
         "ai-native": {
-          "description": "Model + Development Tools",
-          "label": "AI Native"
+          "description": "모델 + 개발 도구",
+          "label": "AI 네이티브"
         },
         "full-stack": {
-          "description": "IDE + CLI + Extension",
-          "label": "Full Stack"
+          "description": "IDE + CLI + 확장 프로그램",
+          "label": "풀 스택"
         },
         "model-only": {
-          "description": "Model (with or without Provider)",
-          "label": "Model Only"
+          "description": "모델(제공업체 포함 또는 미포함)",
+          "label": "모델 전용"
         },
         "provider-only": {
-          "description": "Provider only",
-          "label": "Provider Only"
+          "description": "제공업체 전용",
+          "label": "제공업체 전용"
         },
         "tool-only": {
-          "description": "IDE/CLI/Extension",
-          "label": "Tool Only"
+          "description": "IDE/CLI/확장 프로그램",
+          "label": "도구 전용"
         }
       }
     }

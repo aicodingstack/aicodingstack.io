@@ -38,13 +38,13 @@
   },
   "categories": {
     "all": {
-      "clis": "All CLIs",
-      "desktops": "All Desktop Apps",
-      "extensions": "All Extensions",
-      "ides": "All IDEs",
-      "modelProviders": "All Model Providers",
+      "clis": "Todas las CLI",
+      "desktops": "Todas las aplicaciones de escritorio",
+      "extensions": "Todas las extensiones",
+      "ides": "Todos los IDE",
+      "modelProviders": "Todos los proveedores de modelos",
       "models": "Todos los modelos",
-      "vendors": "All Vendors"
+      "vendors": "Todos los fabricantes"
     },
     "plural": {
       "collections": "Colecciones",
@@ -59,17 +59,17 @@
     },
     "singular": {
       "cli": "CLI",
-      "desktop": "Desktop",
-      "extension": "Extension",
+      "desktop": "Aplicación de escritorio",
+      "extension": "Extensión",
       "ide": "IDE",
       "model": "Modelo",
-      "modelProvider": "Model Provider",
-      "provider": "Provider",
+      "modelProvider": "Proveedor de modelos",
+      "provider": "Proveedor",
       "vendor": "Fabricante"
     }
   },
   "labels": {
-    "cache": "Cache",
+    "cache": "Caché",
     "findOnAiPlatforms": "Encontrar en plataformas de IA",
     "getApiKey": "Obtener Clave de API",
     "input": "Entrada",
@@ -101,7 +101,7 @@
       "inputTokens": "tokens de entrada"
     },
     "notAvailable": "No disponible",
-    "perMillionTokens": "{price} / 1M tokens",
+    "perMillionTokens": "{price} / 1 millón de tokens",
     "reasons": {
       "historicalPriceUnverified": "El precio histórico de la API no ha sido verificado.",
       "officialPriceNotPublished": "No se ha publicado un precio oficial por token.",

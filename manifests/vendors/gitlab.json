@@ -5,37 +5,37 @@
   "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools.",
   "translations": {
     "de": {
-      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+      "description": "GitLab ist ein DevSecOps-Plattformunternehmen, das Quellcodeverwaltung, CI/CD, Zusammenarbeit und Werkzeuge für KI-gestützte Softwareentwicklung anbietet."
     },
     "es": {
-      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+      "description": "GitLab es una empresa de plataformas DevSecOps que ofrece control de código fuente, CI/CD, colaboración y herramientas de desarrollo de software asistido por IA."
     },
     "fr": {
-      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+      "description": "GitLab est une entreprise de plateforme DevSecOps proposant gestion du code source, CI/CD, collaboration et outils de développement logiciel assisté par l’IA."
     },
     "id": {
-      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+      "description": "GitLab adalah perusahaan platform DevSecOps yang menyediakan kontrol sumber, CI/CD, kolaborasi, dan alat pengembangan perangkat lunak dengan bantuan AI."
     },
     "ja": {
-      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+      "description": "GitLab は、ソース管理、CI/CD、コラボレーション、AI 支援ソフトウェア開発ツールを提供する DevSecOps プラットフォーム企業です。"
     },
     "ko": {
-      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+      "description": "GitLab은 소스 제어, CI/CD, 협업, AI 지원 소프트웨어 개발 도구를 제공하는 DevSecOps 플랫폼 기업입니다."
     },
     "pt": {
-      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+      "description": "A GitLab é uma empresa de plataforma DevSecOps que oferece controle de código-fonte, CI/CD, colaboração e ferramentas de desenvolvimento de software assistido por IA."
     },
     "ru": {
-      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+      "description": "GitLab — компания, развивающая платформу DevSecOps с управлением исходным кодом, CI/CD, совместной работой и средствами разработки ПО с поддержкой ИИ."
     },
     "tr": {
-      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+      "description": "GitLab; kaynak kontrolü, CI/CD, iş birliği ve yapay zekâ destekli yazılım geliştirme araçları sunan bir DevSecOps platform şirketidir."
     },
     "zh-Hans": {
-      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+      "description": "GitLab 是一家 DevSecOps 平台公司，提供源代码控制、CI/CD、协作和 AI 辅助软件开发工具。"
     },
     "zh-Hant": {
-      "description": "GitLab is a DevSecOps platform company providing source control, CI/CD, collaboration, and AI-assisted software development tools."
+      "description": "GitLab 是一家 DevSecOps 平台公司，提供原始碼控制、CI/CD、協作和 AI 輔助軟體開發工具。"
     }
   },
   "verified": true,

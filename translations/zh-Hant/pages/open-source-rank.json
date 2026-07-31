@@ -1,27 +1,27 @@
 {
-  "description": "Discover and explore open source AI coding tools ranked by GitHub stars. Compare IDEs, CLIs, and extensions to find the perfect tools for your development workflow.",
+  "description": "探索依 GitHub 星標數排名的開源 AI 程式設計工具。比較 IDE、CLI 和擴充功能，為你的開發工作流程找到最合適的工具。",
   "filter": {
-    "all": "All"
+    "all": "全部"
   },
   "meta": {
-    "description": "Ranking of all open source projects in AI Coding Stack, sorted by GitHub stars. View statistics and trends of open source vs proprietary tools.",
-    "title": "Open Source Projects Ranking"
+    "description": "AI Coding Stack 中所有開源專案的排名，依 GitHub 星標數排序。查看開源與專有工具的統計資料和趨勢。",
+    "title": "開源專案排名"
   },
-  "noResults": "No open source projects found for this category.",
-  "note": "Note: This page only shows projects with GitHub repositories. Some projects, while not open source, maintain GitHub repositories as user feedback channels.",
+  "noResults": "此類別中沒有開源專案。",
+  "note": "注意：本頁面僅顯示擁有 GitHub 儲存庫的專案。部分專案雖非開源，但仍將 GitHub 儲存庫作為使用者意見回饋管道。",
   "statistics": {
     "closedSourceCount": "專有專案",
-    "closedSourcePercentage": "Proprietary Percentage",
-    "licenseBreakdown": "License Distribution",
+    "closedSourcePercentage": "專有專案占比",
+    "licenseBreakdown": "授權條款分布",
     "openSourceCount": "開源專案",
-    "projects": "projects",
-    "title": "Open Source vs Proprietary Distribution",
-    "totalProjects": "Total Projects"
+    "projects": "個專案",
+    "title": "開源與專有專案分布",
+    "totalProjects": "專案總數"
   },
   "table": {
     "openSourceTitle": "開源專案 ({count})",
     "proprietaryTitle": "專有專案 ({count})",
-    "rank": "Rank"
+    "rank": "排名"
   },
-  "title": "Open Source Projects Ranking"
+  "title": "開源專案排名"
 }

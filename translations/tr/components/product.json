@@ -1,13 +1,13 @@
 {
   "benchmarks": {
-    "liveCodeBenchDesc": "Live coding performance",
-    "mmmuDesc": "Multimodal understanding",
-    "mmmuProDesc": "Advanced multimodal tasks",
-    "sciCodeDesc": "Scientific code generation",
-    "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBenchDesc": "Command-line interface proficiency",
-    "title": "Performance Benchmarks",
-    "webDevArenaDesc": "Web development challenges"
+    "liveCodeBenchDesc": "Canlı kodlama performansı",
+    "mmmuDesc": "Çok modlu anlama",
+    "mmmuProDesc": "Gelişmiş çok modlu görevler",
+    "sciCodeDesc": "Bilimsel kod üretimi",
+    "sweBenchDesc": "Gerçek dünya yazılım mühendisliği görevleri",
+    "terminalBenchDesc": "Komut satırı arayüzü yetkinliği",
+    "title": "Performans Karşılaştırmaları",
+    "webDevArenaDesc": "Web geliştirme zorlukları"
   },
   "communityLinks": {
     "blog": "Blog",
@@ -92,7 +92,7 @@
         },
         "full-stack": {
           "description": "IDE + CLI + Uzantı",
-          "label": "Full Stack"
+          "label": "Tam Yığın"
         },
         "model-only": {
           "description": "Model (Sağlayıcı ile veya olmadan)",

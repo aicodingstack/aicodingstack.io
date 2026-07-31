@@ -6,37 +6,37 @@
   "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context.",
   "translations": {
     "de": {
-      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+      "description": "Rovo Dev für VS Code ist der Editor-Coding-Agent von Atlassian für codebezogenen Chat, Planung, Bearbeitungen, Tests, Änderungsprüfung und Zugriff auf Kontext aus Jira und Confluence."
     },
     "es": {
-      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+      "description": "Rovo Dev para VS Code es el agente de editor de Atlassian, con chat basado en el código, planificación, ediciones, pruebas, revisión de cambios y acceso al contexto de Jira y Confluence."
     },
     "fr": {
-      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+      "description": "Rovo Dev pour VS Code est l’agent de codage pour éditeur d’Atlassian, avec chat contextuel au code, planification, modifications, tests, examen des changements et accès au contexte Jira et Confluence."
     },
     "id": {
-      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+      "description": "Rovo Dev untuk VS Code adalah agen coding editor dari Atlassian untuk chat berbasis kode, perencanaan, pengeditan, pengujian, peninjauan perubahan, serta akses ke konteks Jira dan Confluence."
     },
     "ja": {
-      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+      "description": "Rovo Dev for VS Code は、コードを考慮したチャット、計画、編集、テスト、変更レビュー、Jira と Confluence のコンテキストへのアクセスに対応する Atlassian のエディター向けコーディングエージェントです。"
     },
     "ko": {
-      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+      "description": "Rovo Dev for VS Code는 코드 인식 채팅, 계획, 편집, 테스트, 변경 사항 검토, Jira 및 Confluence 컨텍스트 접근을 위한 Atlassian의 편집기 코딩 에이전트입니다."
     },
     "pt": {
-      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+      "description": "O Rovo Dev para VS Code é o agente de editor da Atlassian, com chat baseado no código, planejamento, edições, testes, revisão de alterações e acesso ao contexto do Jira e do Confluence."
     },
     "ru": {
-      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+      "description": "Rovo Dev для VS Code — агент программирования Atlassian для редактора с чатом по коду, планированием, редактированием, тестами, просмотром изменений и доступом к контексту Jira и Confluence."
     },
     "tr": {
-      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+      "description": "Rovo Dev for VS Code, kod odaklı sohbet, planlama, düzenleme, test, değişiklik inceleme ve Jira ile Confluence bağlamına erişim sunan Atlassian editör kodlama aracısıdır."
     },
     "zh-Hans": {
-      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+      "description": "Rovo Dev for VS Code 是 Atlassian 的编辑器编码代理，支持代码感知聊天、规划、编辑、测试、变更审查，以及访问 Jira 和 Confluence 上下文。"
     },
     "zh-Hant": {
-      "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
+      "description": "Rovo Dev for VS Code 是 Atlassian 的編輯器編碼代理，支援程式碼感知聊天、規劃、編輯、測試、變更檢查，以及存取 Jira 和 Confluence 內容。"
     }
   },
   "verified": true,

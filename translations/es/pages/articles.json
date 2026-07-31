@@ -1,8 +1,8 @@
 {
-  "keywords": "AI coding articles, AI development tutorials, AI coding best practices, LLM coding guides, AI IDE guides",
+  "keywords": "artículos sobre programación con IA, tutoriales de desarrollo con IA, buenas prácticas de programación con IA, guías de programación con LLM, guías de IDE con IA",
   "meta": {
-    "description": "In-depth articles about AI coding tools, best practices, and the future of software development with AI assistants.",
-    "title": "AI Coding Articles & Insights"
+    "description": "Artículos detallados sobre herramientas de programación con IA, buenas prácticas y el futuro del desarrollo de software con asistentes de IA.",
+    "title": "Artículos y perspectivas sobre programación con IA"
   },
-  "subtitle": "Deep dives into AI coding: tutorials, insights, best practices for IDEs, CLIs, and LLM models. Learn how to build 10x faster with AI."
+  "subtitle": "Análisis a fondo de la programación con IA: tutoriales, perspectivas y buenas prácticas para IDE, CLI y modelos LLM. Aprende a desarrollar diez veces más rápido con IA."
 }

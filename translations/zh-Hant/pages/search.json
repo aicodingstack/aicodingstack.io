@@ -1,13 +1,13 @@
 {
   "meta": {
-    "description": "Search across AI coding tools, models, providers, and resources. Find exactly what you need to enhance your development workflow.",
-    "title": "Search - AI Coding Stack"
+    "description": "搜尋 AI 程式設計工具、模型、供應商和資源，精確找到提升開發工作流程所需的內容。",
+    "title": "搜尋 – AI Coding Stack"
   },
-  "noResults": "No results found",
-  "noResultsFor": "No results found for \"{query}\"",
-  "placeholder": "Search AI coding tools...",
-  "resultsCount": "{count} {count, plural, one {result} other {results}}",
-  "resultsCountFor": "{count} {count, plural, one {result} other {results}} for \"{query}\"",
-  "searching": "Searching...",
-  "title": "Search Results"
+  "noResults": "找不到結果",
+  "noResultsFor": "找不到與「{query}」相關的結果",
+  "placeholder": "搜尋 AI 程式設計工具...",
+  "resultsCount": "{count} {count, plural, one {筆結果} other {筆結果}}",
+  "resultsCountFor": "「{query}」有 {count} {count, plural, one {筆結果} other {筆結果}}",
+  "searching": "正在搜尋...",
+  "title": "搜尋結果"
 }

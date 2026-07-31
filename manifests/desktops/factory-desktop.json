@@ -2,37 +2,37 @@
   "$schema": "../$schemas/desktop.schema.json",
   "translations": {
     "de": {
-      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+      "description": "Factory Desktop ist ein Arbeitsbereich zum Koordinieren von Droids, parallelen Ausführen von Coding-Aufgaben, Prüfen von Vorschauen und Diffs sowie Verwalten dauerhafter Entwicklungssitzungen."
     },
     "es": {
-      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+      "description": "Factory Desktop es un espacio independiente para coordinar Droids, ejecutar tareas en paralelo, revisar vistas previas y diferencias, y gestionar sesiones de desarrollo persistentes."
     },
     "fr": {
-      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+      "description": "Factory Desktop est un espace autonome pour coordonner des Droids, exécuter des tâches en parallèle, examiner les aperçus et les diffs, et gérer des sessions de développement persistantes."
     },
     "id": {
-      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+      "description": "Factory Desktop adalah ruang kerja mandiri untuk mengoordinasikan Droids, menjalankan tugas coding secara paralel, meninjau pratinjau dan diff, serta mengelola sesi pengembangan persisten."
     },
     "ja": {
-      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+      "description": "Factory Desktop は、Droids の調整、コーディングタスクの並列実行、プレビューと diff の確認、永続的な開発セッションの管理に対応するスタンドアロン型ワークスペースです。"
     },
     "ko": {
-      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+      "description": "Factory Desktop은 Droids 조정, 코딩 작업 병렬 실행, 미리보기와 diff 검토, 지속형 개발 세션 관리를 위한 독립형 작업 공간입니다."
     },
     "pt": {
-      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+      "description": "O Factory Desktop é um espaço independente para coordenar Droids, executar tarefas em paralelo, revisar prévias e diffs e administrar sessões de desenvolvimento persistentes."
     },
     "ru": {
-      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+      "description": "Factory Desktop — отдельная рабочая среда для координации Droids, параллельного выполнения задач программирования, просмотра предпросмотров и diff, а также управления постоянными сеансами разработки."
     },
     "tr": {
-      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+      "description": "Factory Desktop, Droids'leri koordine etmek, kodlama görevlerini paralel çalıştırmak, ön izleme ve diff'leri incelemek ve kalıcı geliştirme oturumlarını yönetmek için bağımsız bir çalışma alanıdır."
     },
     "zh-Hans": {
-      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+      "description": "Factory Desktop 是一个独立工作区，可用于协调 Droids、并行运行编码任务、审查预览和差异，以及管理持久化开发会话。"
     },
     "zh-Hant": {
-      "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
+      "description": "Factory Desktop 是一個獨立工作區，可用於協調 Droids、平行執行編碼任務、檢查預覽和差異，以及管理持久化開發工作階段。"
     }
   },
   "verified": true,

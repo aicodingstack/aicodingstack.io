@@ -2,37 +2,37 @@
   "$schema": "../$schemas/cli.schema.json",
   "translations": {
     "de": {
-      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+      "description": "Qwen Code ist der quelloffene Terminal-Coding-Agent von Alibaba zum Verstehen großer Codebasen, Bearbeiten von Dateien, Ausführen von Befehlen und Verbinden mit Qwen- oder OpenAI-kompatiblen Modellen."
     },
     "es": {
-      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+      "description": "Qwen Code es el agente de terminal de código abierto de Alibaba para comprender grandes bases de código, editar archivos, ejecutar comandos y conectarse a Qwen o a modelos compatibles con OpenAI."
     },
     "fr": {
-      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+      "description": "Qwen Code est l’agent de terminal open source d’Alibaba pour comprendre les bases de code, modifier des fichiers, exécuter des commandes et se connecter à Qwen ou à des modèles compatibles OpenAI."
     },
     "id": {
-      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+      "description": "Qwen Code adalah agen terminal sumber terbuka Alibaba untuk memahami basis kode besar, mengedit berkas, menjalankan perintah, dan terhubung ke Qwen atau model yang kompatibel dengan OpenAI."
     },
     "ja": {
-      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+      "description": "Qwen Code は、大規模コードベースの理解、ファイル編集、コマンド実行、Qwen または OpenAI 互換モデルへの接続に対応する Alibaba のオープンソースのターミナル向けコーディングエージェントです。"
     },
     "ko": {
-      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+      "description": "Qwen Code는 대규모 코드베이스 이해, 파일 편집, 명령 실행, Qwen 또는 OpenAI 호환 모델 연결을 위한 Alibaba의 오픈 소스 터미널 코딩 에이전트입니다."
     },
     "pt": {
-      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+      "description": "O Qwen Code é o agente de terminal de código aberto da Alibaba para compreender grandes bases de código, editar arquivos, executar comandos e conectar-se ao Qwen ou a modelos compatíveis com OpenAI."
     },
     "ru": {
-      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+      "description": "Qwen Code — терминальный агент Alibaba с открытым кодом для анализа больших кодовых баз, редактирования файлов, выполнения команд и подключения к Qwen или моделям, совместимым с OpenAI."
     },
     "tr": {
-      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+      "description": "Qwen Code, büyük kod tabanlarını anlamak, dosyaları düzenlemek, komutları yürütmek ve Qwen ya da OpenAI uyumlu modellere bağlanmak için Alibaba'nın açık kaynaklı terminal kodlama aracısıdır."
     },
     "zh-Hans": {
-      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+      "description": "Qwen Code 是 Alibaba 的开源终端编码代理，可用于理解大型代码库、编辑文件、执行命令，并连接 Qwen 或兼容 OpenAI 的模型。"
     },
     "zh-Hant": {
-      "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models."
+      "description": "Qwen Code 是 Alibaba 的開源終端編碼代理，可用於理解大型程式碼庫、編輯檔案、執行命令，並連接 Qwen 或相容 OpenAI 的模型。"
     }
   },
   "verified": false,

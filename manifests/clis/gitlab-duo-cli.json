@@ -2,37 +2,37 @@
   "$schema": "../$schemas/cli.schema.json",
   "translations": {
     "de": {
-      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+      "description": "GitLab Duo CLI ist der Terminal-Coding-Agent von GitLab zum Verstehen von Projekten, Bearbeiten von Code, Ausführen von Tests und Einbinden KI-gestützter Arbeit in GitLab-Entwicklungsabläufe."
     },
     "es": {
-      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+      "description": "GitLab Duo CLI es el agente de terminal de GitLab para comprender proyectos, editar código, ejecutar pruebas e integrar el trabajo asistido por IA en los flujos de desarrollo de GitLab."
     },
     "fr": {
-      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+      "description": "GitLab Duo CLI est l’agent de codage en terminal de GitLab pour comprendre les projets, modifier le code, exécuter des tests et intégrer le travail assisté par l’IA aux flux de développement GitLab."
     },
     "id": {
-      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+      "description": "GitLab Duo CLI adalah agen coding terminal dari GitLab untuk memahami proyek, mengedit kode, menjalankan pengujian, dan mengintegrasikan pekerjaan dengan bantuan AI ke alur kerja pengembangan GitLab."
     },
     "ja": {
-      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+      "description": "GitLab Duo CLI は、プロジェクトの理解、コード編集、テスト実行、AI 支援作業と GitLab 開発ワークフローの統合に対応する GitLab のターミナル向けコーディングエージェントです。"
     },
     "ko": {
-      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+      "description": "GitLab Duo CLI는 프로젝트 이해, 코드 편집, 테스트 실행, AI 지원 작업과 GitLab 개발 워크플로의 통합을 위한 GitLab의 터미널 코딩 에이전트입니다."
     },
     "pt": {
-      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+      "description": "O GitLab Duo CLI é o agente de terminal da GitLab para compreender projetos, editar código, executar testes e integrar o trabalho assistido por IA aos fluxos de desenvolvimento do GitLab."
     },
     "ru": {
-      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+      "description": "GitLab Duo CLI — терминальный агент программирования GitLab для анализа проектов, редактирования кода, запуска тестов и интеграции работы с ИИ в процессы разработки GitLab."
     },
     "tr": {
-      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+      "description": "GitLab Duo CLI, projeleri anlamak, kodu düzenlemek, testleri çalıştırmak ve yapay zekâ destekli çalışmaları GitLab geliştirme iş akışlarıyla bütünleştirmek için GitLab'ın terminal kodlama aracısıdır."
     },
     "zh-Hans": {
-      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+      "description": "GitLab Duo CLI 是 GitLab 的终端编码代理，可用于理解项目、编辑代码、运行测试，并将 AI 辅助工作集成到 GitLab 开发工作流中。"
     },
     "zh-Hant": {
-      "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
+      "description": "GitLab Duo CLI 是 GitLab 的終端編碼代理，可用於理解專案、編輯程式碼、執行測試，並將 AI 輔助工作整合到 GitLab 開發工作流程中。"
     }
   },
   "verified": true,

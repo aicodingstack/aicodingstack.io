@@ -1,29 +1,29 @@
 {
   "clis": {
-    "description": "Command-line AI assistants that bring the power of large language models directly to your terminal. Execute complex tasks with natural language, right from your shell."
+    "description": "命令行 AI 助手将大语言模型的能力直接带入终端，让你可以在 shell 中使用自然语言执行复杂任务。"
   },
   "desktops": {
-    "description": "Standalone desktop coding agents for coordinating parallel work, reviewing changes, and managing local development workflows."
+    "description": "独立桌面编码代理，用于协调并行工作、审查变更和管理本地开发工作流。"
   },
-  "exploreStack": "Explore the Stack",
+  "exploreStack": "探索技术栈",
   "extensions": {
-    "description": "AI-powered coding extensions and plugins for your favorite IDE. From code completion to intelligent refactoring, enhance your development experience with AI assistance."
+    "description": "适用于常用 IDE 的 AI 编码扩展与插件。从代码补全到智能重构，用 AI 助手改善开发体验。"
   },
   "ides": {
-    "description": "AI-powered integrated development environments that understand your codebase and provide intelligent assistance. From VS Code to Cursor, discover the editors that make coding collaborative with AI."
+    "description": "理解代码库并提供智能辅助的 AI 集成开发环境。从 VS Code 到 Cursor，探索能够与 AI 协作编码的编辑器。"
   },
   "meta": {
-    "description": "Complete overview of the AI coding ecosystem. Explore IDEs, CLIs, extensions, models, and providers all in one place.",
-    "title": "AI Coding Stack Overview"
+    "description": "全面了解 AI 编码生态，在一个页面中探索 IDE、CLI、扩展、模型和模型提供商。",
+    "title": "AI 编码技术栈概览"
   },
   "modelProviders": {
-    "description": "LLM API providers offering access to various AI models. From DeepSeek to OpenRouter, discover platforms that power your AI coding tools with unified APIs and model access."
+    "description": "提供多种 AI 模型访问能力的 LLM API 提供商。从 DeepSeek 到 OpenRouter，探索通过统一 API 和模型访问能力支持 AI 编码工具的平台。"
   },
   "models": {
-    "description": "The intelligence layer. Large language models optimized for code generation, understanding, and analysis. Compare specs, pricing, and capabilities across leading AI models."
+    "description": "智能层：针对代码生成、理解和分析优化的大语言模型。比较主流 AI 模型的规格、价格和能力。"
   },
-  "overviewTitle": "AI Coding Stack Overview",
+  "overviewTitle": "AI 编码技术栈概览",
   "vendors": {
-    "description": "Leading companies and organizations building AI technology. From OpenAI to Anthropic, discover the vendors behind the AI coding revolution."
+    "description": "构建 AI 技术的领先公司和组织。从 OpenAI 到 Anthropic，探索推动 AI 编码发展的厂商。"
   }
 }

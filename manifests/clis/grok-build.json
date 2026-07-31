@@ -2,37 +2,37 @@
   "$schema": "../$schemas/cli.schema.json",
   "translations": {
     "de": {
-      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+      "description": "Grok Build ist der quelloffene Terminal-Coding-Agent von xAI zum Erkunden von Repositories, Bearbeiten von Code, Ausführen von Befehlen und Erledigen durchgängiger Entwicklungsaufgaben."
     },
     "es": {
-      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+      "description": "Grok Build es el agente de programación en terminal de código abierto de xAI para explorar repositorios, editar código, ejecutar comandos y completar tareas de desarrollo de principio a fin."
     },
     "fr": {
-      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+      "description": "Grok Build est l’agent de codage en terminal open source de xAI pour explorer les dépôts, modifier le code, exécuter des commandes et mener à bien des tâches de développement de bout en bout."
     },
     "id": {
-      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+      "description": "Grok Build adalah agen coding terminal sumber terbuka dari xAI untuk menjelajahi repositori, mengedit kode, menjalankan perintah, dan menyelesaikan tugas pengembangan dari awal hingga akhir."
     },
     "ja": {
-      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+      "description": "Grok Build は、リポジトリの探索、コード編集、コマンド実行、エンドツーエンドの開発タスクに対応する xAI のオープンソースのターミナル向けコーディングエージェントです。"
     },
     "ko": {
-      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+      "description": "Grok Build는 저장소 탐색, 코드 편집, 명령 실행, 엔드투엔드 개발 작업 완료를 위한 xAI의 오픈 소스 터미널 코딩 에이전트입니다."
     },
     "pt": {
-      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+      "description": "O Grok Build é o agente de programação no terminal de código aberto da xAI para explorar repositórios, editar código, executar comandos e concluir tarefas de desenvolvimento de ponta a ponta."
     },
     "ru": {
-      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+      "description": "Grok Build — терминальный агент программирования xAI с открытым исходным кодом для изучения репозиториев, редактирования кода, выполнения команд и решения сквозных задач разработки."
     },
     "tr": {
-      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+      "description": "Grok Build, depoları keşfetmek, kodu düzenlemek, komutları çalıştırmak ve uçtan uca geliştirme görevlerini tamamlamak için xAI'ın açık kaynaklı terminal kodlama aracısıdır."
     },
     "zh-Hans": {
-      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+      "description": "Grok Build 是 xAI 的开源终端编码代理，可用于探索代码仓库、编辑代码、运行命令和完成端到端开发任务。"
     },
     "zh-Hant": {
-      "description": "Grok Build is xAI's open source terminal coding agent for exploring repositories, editing code, running commands, and completing end-to-end development tasks."
+      "description": "Grok Build 是 xAI 的開源終端編碼代理，可用於探索程式碼儲存庫、編輯程式碼、執行命令和完成端對端開發任務。"
     }
   },
   "verified": false,

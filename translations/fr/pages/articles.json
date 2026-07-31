@@ -1,8 +1,8 @@
 {
-  "keywords": "AI coding articles, AI development tutorials, AI coding best practices, LLM coding guides, AI IDE guides",
+  "keywords": "articles sur le codage avec l’IA, tutoriels de développement avec l’IA, bonnes pratiques du codage avec l’IA, guides de codage avec les LLM, guides des IDE avec IA",
   "meta": {
-    "description": "In-depth articles about AI coding tools, best practices, and the future of software development with AI assistants.",
-    "title": "AI Coding Articles & Insights"
+    "description": "Articles approfondis sur les outils de codage avec l’IA, les bonnes pratiques et l’avenir du développement logiciel avec des assistants IA.",
+    "title": "Articles et analyses sur le codage avec l’IA"
   },
-  "subtitle": "Deep dives into AI coding: tutorials, insights, best practices for IDEs, CLIs, and LLM models. Learn how to build 10x faster with AI."
+  "subtitle": "Analyses approfondies du codage avec l’IA : tutoriels, perspectives et bonnes pratiques pour les IDE, les CLI et les modèles LLM. Apprenez à développer dix fois plus vite avec l’IA."
 }

@@ -1,8 +1,8 @@
 {
-  "keywords": "AI coding articles, AI development tutorials, AI coding best practices, LLM coding guides, AI IDE guides",
+  "keywords": "Yapay zekâ kodlama makaleleri, yapay zekâ geliştirme eğitimleri, yapay zekâ kodlama en iyi uygulamaları, LLM kodlama rehberleri, yapay zekâ IDE rehberleri",
   "meta": {
-    "description": "In-depth articles about AI coding tools, best practices, and the future of software development with AI assistants.",
-    "title": "AI Coding Articles & Insights"
+    "description": "Yapay zekâ kodlama araçları, en iyi uygulamalar ve yapay zekâ asistanlarıyla yazılım geliştirmenin geleceği hakkında ayrıntılı makaleler.",
+    "title": "Yapay Zekâ Kodlama Makaleleri ve Görüşler"
   },
-  "subtitle": "Deep dives into AI coding: tutorials, insights, best practices for IDEs, CLIs, and LLM models. Learn how to build 10x faster with AI."
+  "subtitle": "Yapay zekâ kodlamasını derinlemesine inceleyin: IDE'ler, CLI'lar ve LLM modelleri için eğitimler, içgörüler ve en iyi uygulamalar. Yapay zekâ ile on kat daha hızlı geliştirmeyi öğrenin."
 }

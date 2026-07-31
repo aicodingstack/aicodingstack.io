@@ -1,13 +1,13 @@
 {
   "meta": {
-    "description": "Search across AI coding tools, models, providers, and resources. Find exactly what you need to enhance your development workflow.",
-    "title": "Search - AI Coding Stack"
+    "description": "Pesquise ferramentas de programação com IA, modelos, provedores e recursos. Encontre exatamente o que precisa para aprimorar seu fluxo de desenvolvimento.",
+    "title": "Pesquisa – AI Coding Stack"
   },
-  "noResults": "No results found",
-  "noResultsFor": "No results found for \"{query}\"",
-  "placeholder": "Search AI coding tools...",
-  "resultsCount": "{count} {count, plural, one {result} other {results}}",
-  "resultsCountFor": "{count} {count, plural, one {result} other {results}} for \"{query}\"",
-  "searching": "Searching...",
-  "title": "Search Results"
+  "noResults": "Nenhum resultado encontrado",
+  "noResultsFor": "Nenhum resultado encontrado para “{query}”",
+  "placeholder": "Pesquisar ferramentas de programação com IA...",
+  "resultsCount": "{count} {count, plural, one {resultado} other {resultados}}",
+  "resultsCountFor": "{count} {count, plural, one {resultado} other {resultados}} para “{query}”",
+  "searching": "Pesquisando...",
+  "title": "Resultados da pesquisa"
 }

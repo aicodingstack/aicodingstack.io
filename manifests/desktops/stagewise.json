@@ -2,37 +2,37 @@
   "$schema": "../$schemas/desktop.schema.json",
   "translations": {
     "de": {
-      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+      "description": "stagewise ist ein quelloffener Desktop-Coding-Agent mit Multi-Agenten-Sitzungen, Git-Worktree-Isolierung, Änderungsprüfung und Unterstützung für Modellanbieter in der Cloud und lokal."
     },
     "es": {
-      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+      "description": "stagewise es un agente de escritorio de código abierto con sesiones multiagente, aislamiento mediante Git worktrees, revisión de cambios y compatibilidad con proveedores de modelos alojados y locales."
     },
     "fr": {
-      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+      "description": "stagewise est un agent de bureau open source avec des sessions multi-agents, l’isolation par Git worktree, l’examen des changements et la prise en charge de modèles hébergés ou locaux."
     },
     "id": {
-      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+      "description": "stagewise adalah agen coding desktop sumber terbuka dengan sesi multiagen, isolasi Git worktree, peninjauan perubahan, serta dukungan bagi penyedia model cloud dan lokal."
     },
     "ja": {
-      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+      "description": "stagewise は、マルチエージェントセッション、Git worktree による分離、変更レビュー、ホスト型・ローカルモデルプロバイダーへの対応を備えたオープンソースのデスクトップコーディングエージェントです。"
     },
     "ko": {
-      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+      "description": "stagewise는 멀티 에이전트 세션, Git worktree 격리, 변경 사항 검토, 호스팅 및 로컬 모델 제공자 지원을 갖춘 오픈 소스 데스크톱 코딩 에이전트입니다."
     },
     "pt": {
-      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+      "description": "O stagewise é um agente de programação para desktop de código aberto, com sessões multiagente, isolamento por Git worktree, revisão de alterações e suporte a provedores de modelos hospedados e locais."
     },
     "ru": {
-      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+      "description": "stagewise — настольный агент с открытым кодом, сеансами с несколькими агентами, изоляцией через Git worktree, просмотром изменений и поддержкой облачных и локальных поставщиков моделей."
     },
     "tr": {
-      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+      "description": "stagewise; çok aracılı oturumlar, Git worktree yalıtımı, değişiklik inceleme ve barındırılan ya da yerel model sağlayıcıları desteği sunan açık kaynaklı bir masaüstü kodlama aracısıdır."
     },
     "zh-Hans": {
-      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+      "description": "stagewise 是一款开源桌面编码代理，提供多代理会话、Git worktree 隔离、变更审查，以及对托管和本地模型提供商的支持。"
     },
     "zh-Hant": {
-      "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers."
+      "description": "stagewise 是一款開源桌面編碼代理，提供多代理工作階段、Git worktree 隔離、變更檢查，以及對託管和本機模型供應商的支援。"
     }
   },
   "verified": false,

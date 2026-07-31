@@ -38,13 +38,13 @@
   },
   "categories": {
     "all": {
-      "clis": "All CLIs",
-      "desktops": "All Desktop Apps",
-      "extensions": "All Extensions",
-      "ides": "All IDEs",
-      "modelProviders": "All Model Providers",
+      "clis": "모든 CLI",
+      "desktops": "모든 데스크톱 앱",
+      "extensions": "모든 확장 프로그램",
+      "ides": "모든 IDE",
+      "modelProviders": "모든 모델 제공업체",
       "models": "모든 모델",
-      "vendors": "All Vendors"
+      "vendors": "모든 공급업체"
     },
     "plural": {
       "collections": "컬렉션",
@@ -59,17 +59,17 @@
     },
     "singular": {
       "cli": "CLI",
-      "desktop": "Desktop",
-      "extension": "Extension",
+      "desktop": "데스크톱 앱",
+      "extension": "확장 프로그램",
       "ide": "IDE",
       "model": "모델",
-      "modelProvider": "Model Provider",
-      "provider": "Provider",
+      "modelProvider": "모델 제공업체",
+      "provider": "제공업체",
       "vendor": "공급업체"
     }
   },
   "labels": {
-    "cache": "Cache",
+    "cache": "캐시",
     "findOnAiPlatforms": "AI 플랫폼에서 찾기",
     "getApiKey": "API 키 얻기",
     "input": "입력",

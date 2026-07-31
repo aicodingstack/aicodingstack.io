@@ -1,13 +1,13 @@
 {
   "meta": {
-    "description": "Search across AI coding tools, models, providers, and resources. Find exactly what you need to enhance your development workflow.",
-    "title": "Search - AI Coding Stack"
+    "description": "AIコーディングツール、モデル、プロバイダー、リソースを横断検索できます。開発ワークフローの改善に必要なものを的確に見つけましょう。",
+    "title": "検索 – AI Coding Stack"
   },
-  "noResults": "No results found",
-  "noResultsFor": "No results found for \"{query}\"",
-  "placeholder": "Search AI coding tools...",
-  "resultsCount": "{count} {count, plural, one {result} other {results}}",
-  "resultsCountFor": "{count} {count, plural, one {result} other {results}} for \"{query}\"",
-  "searching": "Searching...",
-  "title": "Search Results"
+  "noResults": "結果が見つかりません",
+  "noResultsFor": "「{query}」の結果が見つかりません",
+  "placeholder": "AIコーディングツールを検索...",
+  "resultsCount": "{count} {count, plural, one {件の結果} other {件の結果}}",
+  "resultsCountFor": "「{query}」の結果：{count} {count, plural, one {件} other {件}}",
+  "searching": "検索中...",
+  "title": "検索結果"
 }

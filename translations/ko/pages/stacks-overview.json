@@ -1,29 +1,29 @@
 {
   "clis": {
-    "description": "Command-line AI assistants that bring the power of large language models directly to your terminal. Execute complex tasks with natural language, right from your shell."
+    "description": "대규모 언어 모델의 기능을 터미널에서 바로 활용하는 명령줄 AI 도우미입니다. 셸에서 자연어로 복잡한 작업을 실행할 수 있습니다."
   },
   "desktops": {
-    "description": "Standalone desktop coding agents for coordinating parallel work, reviewing changes, and managing local development workflows."
+    "description": "병렬 작업 조정, 변경 사항 검토, 로컬 개발 워크플로 관리를 위한 독립형 데스크톱 코딩 에이전트입니다."
   },
-  "exploreStack": "Explore the Stack",
+  "exploreStack": "스택 살펴보기",
   "extensions": {
-    "description": "AI-powered coding extensions and plugins for your favorite IDE. From code completion to intelligent refactoring, enhance your development experience with AI assistance."
+    "description": "선호하는 IDE에서 사용하는 AI 기반 코딩 확장 프로그램과 플러그인입니다. 코드 완성부터 지능형 리팩터링까지 AI 지원으로 개발 경험을 향상합니다."
   },
   "ides": {
-    "description": "AI-powered integrated development environments that understand your codebase and provide intelligent assistance. From VS Code to Cursor, discover the editors that make coding collaborative with AI."
+    "description": "코드베이스를 이해하고 지능형 지원을 제공하는 AI 기반 통합 개발 환경입니다. VS Code부터 Cursor까지 AI와 협업할 수 있는 편집기를 살펴보세요."
   },
   "meta": {
-    "description": "Complete overview of the AI coding ecosystem. Explore IDEs, CLIs, extensions, models, and providers all in one place.",
-    "title": "AI Coding Stack Overview"
+    "description": "AI 코딩 생태계의 전체 개요입니다. IDE, CLI, 확장 프로그램, 모델, 제공업체를 한곳에서 살펴보세요.",
+    "title": "AI Coding Stack 개요"
   },
   "modelProviders": {
-    "description": "LLM API providers offering access to various AI models. From DeepSeek to OpenRouter, discover platforms that power your AI coding tools with unified APIs and model access."
+    "description": "다양한 AI 모델에 대한 접근을 제공하는 LLM API 제공업체입니다. DeepSeek부터 OpenRouter까지 통합 API와 모델 접근으로 AI 코딩 도구를 지원하는 플랫폼을 살펴보세요."
   },
   "models": {
-    "description": "The intelligence layer. Large language models optimized for code generation, understanding, and analysis. Compare specs, pricing, and capabilities across leading AI models."
+    "description": "지능 계층입니다. 코드 생성, 이해, 분석에 최적화된 대규모 언어 모델의 사양, 가격, 기능을 비교하세요."
   },
-  "overviewTitle": "AI Coding Stack Overview",
+  "overviewTitle": "AI Coding Stack 개요",
   "vendors": {
-    "description": "Leading companies and organizations building AI technology. From OpenAI to Anthropic, discover the vendors behind the AI coding revolution."
+    "description": "AI 기술을 구축하는 주요 기업과 조직입니다. OpenAI부터 Anthropic까지 AI 코딩의 발전을 이끄는 벤더를 살펴보세요."
   }
 }

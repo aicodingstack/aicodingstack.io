@@ -1,13 +1,13 @@
 {
   "meta": {
-    "description": "Search across AI coding tools, models, providers, and resources. Find exactly what you need to enhance your development workflow.",
-    "title": "Search - AI Coding Stack"
+    "description": "Yapay zekâ kodlama araçları, modeller, sağlayıcılar ve kaynaklar arasında arama yapın. Geliştirme iş akışınızı iyileştirmek için tam olarak ihtiyacınız olanı bulun.",
+    "title": "Arama – AI Coding Stack"
   },
-  "noResults": "No results found",
-  "noResultsFor": "No results found for \"{query}\"",
-  "placeholder": "Search AI coding tools...",
-  "resultsCount": "{count} {count, plural, one {result} other {results}}",
-  "resultsCountFor": "{count} {count, plural, one {result} other {results}} for \"{query}\"",
-  "searching": "Searching...",
-  "title": "Search Results"
+  "noResults": "Sonuç bulunamadı",
+  "noResultsFor": "“{query}” için sonuç bulunamadı",
+  "placeholder": "Yapay zekâ kodlama araçlarında ara...",
+  "resultsCount": "{count} {count, plural, one {sonuç} other {sonuç}}",
+  "resultsCountFor": "“{query}” için {count} {count, plural, one {sonuç} other {sonuç}}",
+  "searching": "Aranıyor...",
+  "title": "Arama Sonuçları"
 }
