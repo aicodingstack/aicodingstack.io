@@ -5,9 +5,13 @@ import { useTranslations } from 'next-intl'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import { Breadcrumb } from '@/components/navigation/Breadcrumb'
+import ComparisonGuide, {
+  type ComparisonGuideContent,
+  type ComparisonGuideItem,
+  type ComparisonProfileItem,
+} from '@/components/product/ComparisonGuide'
 import ComparisonTable, { type ComparisonColumn } from '@/components/product/ComparisonTable'
 import { PricingSummaryValue } from '@/components/product/ProductPricing'
-import { Link } from '@/i18n/navigation'
 import { withVendorCommunityUrlsForCatalog } from '@/lib/community-urls'
 import { extensionsData, vendorsData } from '@/lib/generated'
 import { getGithubStars } from '@/lib/generated/github-stars'
@@ -27,6 +31,19 @@ type Props = {
 export default function ExtensionComparisonPageClient({ locale: _locale }: Props) {
   const tPage = useTranslations('pages.comparison')
   const tShared = useTranslations('shared')
+  const guideContent: ComparisonGuideContent = {
+    title: tPage('extensions.guide.title'),
+    intro: tPage('extensions.guide.intro', { count: extensions.length }),
+    criteria: tPage.raw('extensions.guide.criteria') as ComparisonGuideItem[],
+    shortlistTitle: tPage('extensions.guide.shortlistTitle'),
+    shortlistIntro: tPage('extensions.guide.shortlistIntro'),
+    steps: tPage.raw('extensions.guide.steps') as ComparisonGuideItem[],
+    profilesTitle: tPage('extensions.guide.profilesTitle'),
+    profilesIntro: tPage('extensions.guide.profilesIntro'),
+    profiles: tPage.raw('extensions.guide.profiles') as ComparisonProfileItem[],
+    faqTitle: tPage('extensions.guide.faqTitle'),
+    faqs: tPage.raw('extensions.guide.faqs') as ComparisonGuideItem[],
+  }
 
   const columns: ComparisonColumn[] = [
     {
@@ -265,7 +282,7 @@ export default function ExtensionComparisonPageClient({ locale: _locale }: Props
       />
 
       {/* Page Header */}
-      <section className="py-[var(--spacing-lg)] border-[var(--color-border)]">
+      <section className="pt-[var(--spacing-lg)] pb-[var(--spacing-md)]">
         <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
           <h1 className="text-3xl font-semibold tracking-[-0.03em] mb-[var(--spacing-sm)]">
             {tPage('extensions.title')}
@@ -277,7 +294,7 @@ export default function ExtensionComparisonPageClient({ locale: _locale }: Props
       </section>
 
       {/* Comparison Table */}
-      <section className="pb-[var(--spacing-lg)] border-b border-[var(--color-border)]">
+      <section className="pb-[var(--spacing-xl)] border-b border-[var(--color-border)]">
         <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
           <ComparisonTable
             items={extensions as unknown as Record<string, unknown>[]}
@@ -288,17 +305,7 @@ export default function ExtensionComparisonPageClient({ locale: _locale }: Props
         </div>
       </section>
 
-      {/* Back Navigation */}
-      <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
-        <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
-          <Link
-            href="/extensions"
-            className="inline-flex items-center gap-[var(--spacing-xs)] text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
-          >
-            ← {tPage('extensions.backTo')}
-          </Link>
-        </div>
-      </section>
+      <ComparisonGuide content={guideContent} />
 
       <Footer />
     </>

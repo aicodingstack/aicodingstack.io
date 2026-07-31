@@ -6,9 +6,13 @@ import { AppleIcon, LinuxIcon, WindowsIcon } from '@/components/controls/Platfor
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import { Breadcrumb } from '@/components/navigation/Breadcrumb'
+import ComparisonGuide, {
+  type ComparisonGuideContent,
+  type ComparisonGuideItem,
+  type ComparisonProfileItem,
+} from '@/components/product/ComparisonGuide'
 import ComparisonTable, { type ComparisonColumn } from '@/components/product/ComparisonTable'
 import { PricingSummaryValue } from '@/components/product/ProductPricing'
-import { Link } from '@/i18n/navigation'
 import { withVendorCommunityUrlsForCatalog } from '@/lib/community-urls'
 import { idesData, vendorsData } from '@/lib/generated'
 import { getGithubStars } from '@/lib/generated/github-stars'
@@ -28,6 +32,19 @@ type Props = {
 export default function IDEComparisonPageClient({ locale: _locale }: Props) {
   const tPage = useTranslations('pages.comparison')
   const tShared = useTranslations('shared')
+  const guideContent: ComparisonGuideContent = {
+    title: tPage('ides.guide.title'),
+    intro: tPage('ides.guide.intro', { count: ides.length }),
+    criteria: tPage.raw('ides.guide.criteria') as ComparisonGuideItem[],
+    shortlistTitle: tPage('ides.guide.shortlistTitle'),
+    shortlistIntro: tPage('ides.guide.shortlistIntro'),
+    steps: tPage.raw('ides.guide.steps') as ComparisonGuideItem[],
+    profilesTitle: tPage('ides.guide.profilesTitle'),
+    profilesIntro: tPage('ides.guide.profilesIntro'),
+    profiles: tPage.raw('ides.guide.profiles') as ComparisonProfileItem[],
+    faqTitle: tPage('ides.guide.faqTitle'),
+    faqs: tPage.raw('ides.guide.faqs') as ComparisonGuideItem[],
+  }
 
   const columns: ComparisonColumn[] = [
     {
@@ -279,7 +296,7 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
       />
 
       {/* Page Header */}
-      <section className="py-[var(--spacing-lg)] border-[var(--color-border)]">
+      <section className="pt-[var(--spacing-lg)] pb-[var(--spacing-md)]">
         <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
           <h1 className="text-3xl font-semibold tracking-[-0.03em] mb-[var(--spacing-sm)]">
             {tPage('ides.title')}
@@ -291,7 +308,7 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
       </section>
 
       {/* Comparison Table */}
-      <section className="pb-[var(--spacing-lg)] border-b border-[var(--color-border)]">
+      <section className="pb-[var(--spacing-xl)] border-b border-[var(--color-border)]">
         <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
           <ComparisonTable
             items={ides as unknown as Record<string, unknown>[]}
@@ -302,17 +319,7 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
         </div>
       </section>
 
-      {/* Back Navigation */}
-      <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
-        <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
-          <Link
-            href="/ides"
-            className="inline-flex items-center gap-[var(--spacing-xs)] text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
-          >
-            ← {tPage('ides.backTo')}
-          </Link>
-        </div>
-      </section>
+      <ComparisonGuide content={guideContent} />
 
       <Footer />
     </>

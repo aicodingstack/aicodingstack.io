@@ -1,6 +1,86 @@
 {
   "clis": {
-    "backTo": "返回 CLI",
+    "guide": {
+      "criteria": [
+        {
+          "description": "先確認團隊使用的作業系統。能涵蓋所有開發裝置的 CLI 更容易統一部署與維護。",
+          "title": "平台適配"
+        },
+        {
+          "description": "先比較免費方案與起始價格，再查看官方定價來源。用量限制與所含模型會影響實際成本。",
+          "title": "定價模式"
+        },
+        {
+          "description": "透過授權條款與 GitHub 連結區分開源工具和專有產品，並檢視每個專案。",
+          "title": "授權與原始碼"
+        },
+        {
+          "description": "查看官網、文件、下載、變更記錄和問題連結，確認安裝、更新與支援方式。",
+          "title": "核驗路徑"
+        }
+      ],
+      "faqTitle": "AI 編碼 CLI 常見問題",
+      "faqs": [
+        {
+          "description": "AI 編碼 CLI 是協助開發者在終端檢視程式庫、編輯檔案、執行命令並完成編碼任務的命令列工具。產品在模型存取、平台、定價、授權和執行控制方面有所不同。",
+          "title": "什麼是 AI 編碼 CLI？"
+        },
+        {
+          "description": "沒有一個 CLI 適合所有工作流程。應選擇符合平台、預算、授權、原始碼存取，以及團隊現有模型與服務的工具。",
+          "title": "哪個 AI 編碼 CLI 最好？"
+        },
+        {
+          "description": "部分 CLI 提供免費方案或開源用戶端，但模型或託管功能仍可能收費。先以免費方案和起始價格篩選，再確認官方限制。",
+          "title": "有免費的 AI 編碼 CLI 嗎？"
+        },
+        {
+          "description": "許多工具支援 Windows、macOS 和 Linux，也有工具只支援部分平台。請查看表格圖示並以官方文件確認安裝需求。",
+          "title": "支援 Windows、macOS 和 Linux 嗎？"
+        }
+      ],
+      "intro": "以平台支援、定價、授權、專案活躍度和官方資源等一致指標比較 {count} 個 AI 編碼 CLI。先釐清工作流程限制並建立候選清單，採用前從第一手來源核驗會變動的資訊。",
+      "profiles": [
+        {
+          "description": "查看 Anthropic 終端代理的平台、定價和官方資源。",
+          "href": "/clis/claude-code-cli",
+          "title": "Claude Code CLI"
+        },
+        {
+          "description": "查看 OpenAI 編碼 CLI 的安裝、授權和官方資源。",
+          "href": "/clis/codex-cli",
+          "title": "Codex CLI"
+        },
+        {
+          "description": "查看 Google 終端代理的平台、原始碼儲存庫和文件。",
+          "href": "/clis/gemini-cli",
+          "title": "Gemini CLI"
+        },
+        {
+          "description": "查看 OpenCode CLI 的平台、授權、定價和專案連結。",
+          "href": "/clis/opencode",
+          "title": "OpenCode"
+        }
+      ],
+      "profilesIntro": "這些條目是研究起點，不是排名。開啟記錄可查看目前資料和第一手來源。",
+      "profilesTitle": "查看代表性 CLI 條目",
+      "shortlistIntro": "使用一致流程，避免以產品熱度取代工作流程適配度。",
+      "shortlistTitle": "三步建立 CLI 候選清單",
+      "steps": [
+        {
+          "description": "列出作業系統、預算、授權，以及文件或原始碼存取需求。",
+          "title": "設定限制"
+        },
+        {
+          "description": "排除不符合限制的工具，再以相同欄位比較其餘條目。",
+          "title": "一致篩選"
+        },
+        {
+          "description": "試用前透過產品記錄和官方連結確認安裝、定價、版本與支援。",
+          "title": "核驗並試用"
+        }
+      ],
+      "title": "如何比較 AI 編碼 CLI 工具"
+    },
     "subtitle": "並排比較 AI 編碼 CLI 工具的功能、價格和規格。",
     "title": "AI 編碼 CLI 工具比較"
   },
@@ -16,13 +96,181 @@
     "startingPrice": "起價"
   },
   "extensions": {
-    "backTo": "返回擴充套件",
-    "subtitle": "並排比較 AI 編碼擴充套件的功能、價格和規格。",
+    "guide": {
+      "criteria": [
+        {
+          "title": "宿主 IDE 相容性",
+          "description": "先確認團隊正在使用的編輯器。「支援的 IDE」欄可協助判斷擴充套件是否適用於 VS Code、JetBrains 產品或其他宿主，再繼續比較其餘條件。"
+        },
+        {
+          "title": "價格模式",
+          "description": "比較免費方案和起始價格，再到官方價格頁核實用量限制與包含的服務。免費擴充套件仍可能需要付費模型存取。"
+        },
+        {
+          "title": "授權與維護狀態",
+          "description": "結合授權、GitHub 活躍度和棄用標記，區分活躍的開源專案、專有產品以及已停止維護的產品。"
+        },
+        {
+          "title": "驗證路徑",
+          "description": "安裝前開啟官方網站、市集或下載頁、文件、變更日誌和問題追蹤器。這些第一手來源可確認目前相容性與支援狀態。"
+        }
+      ],
+      "faqTitle": "AI 編碼擴充套件常見問題",
+      "faqs": [
+        {
+          "title": "什麼是 AI 編碼擴充套件？",
+          "description": "AI 編碼擴充套件是在現有編輯器或 IDE 中加入編碼輔助能力的軟體。不同產品可能提供補全、對話、程式碼庫上下文、編輯工作流程或 Agent 功能，同時讓開發者繼續使用熟悉的宿主應用程式。"
+        },
+        {
+          "title": "哪個 AI 編碼擴充套件最好？",
+          "description": "沒有一個擴充套件適合所有開發者。先依宿主 IDE、執行環境、預算和授權要求篩選，再用官方文件和小型程式碼庫試用比較剩餘產品。"
+        },
+        {
+          "title": "有免費的 AI 編碼擴充套件嗎？",
+          "description": "部分擴充套件提供免費方案或開源用戶端，但模型用量和託管服務仍可能收費。可先用「免費方案」和「起始價格」欄篩選，再向供應商確認最新限制。"
+        },
+        {
+          "title": "擴充套件與 AI 編碼 IDE 有什麼不同？",
+          "description": "擴充套件在現有編輯器中執行並沿用其主要工作流程；獨立 AI 編碼 IDE 控制完整的編輯器體驗。希望保留目前宿主時比較擴充套件，願意更換開發環境時再比較 IDE。"
+        },
+        {
+          "title": "這些擴充套件支援 VS Code 和 JetBrains IDE 嗎？",
+          "description": "相容性因產品而異。先查看各項目的「支援的 IDE」欄，再開啟官方市集或安裝文件，核實具體編輯器版本和作業系統要求。"
+        }
+      ],
+      "intro": "使用相同的實用訊號比較 {count} 個 AI 編碼擴充套件：支援的 IDE、價格、授權、專案活躍度、生命週期和官方資源。先依相容性篩選，再在安裝前從第一手來源核實易變的產品資訊。",
+      "profiles": [
+        {
+          "title": "GitHub Copilot",
+          "href": "/extensions/github-copilot",
+          "description": "查看 GitHub Copilot 支援的 IDE、價格、授權、專案活躍度和官方資源。"
+        },
+        {
+          "title": "Cline",
+          "href": "/extensions/cline",
+          "description": "查看 Cline 支援的 IDE、價格、授權、原始碼儲存庫和文件。"
+        },
+        {
+          "title": "Gemini Code Assist",
+          "href": "/extensions/gemini-code-assist",
+          "description": "查看 Gemini Code Assist 的相容性、價格、專案連結和官方文件。"
+        },
+        {
+          "title": "JetBrains Junie",
+          "href": "/extensions/jetbrains-junie",
+          "description": "查看 JetBrains Junie 的宿主相容性、價格、專案連結和官方資源。"
+        }
+      ],
+      "profilesIntro": "這些檔案只是起點，不代表排名。開啟每筆記錄，檢查目前的 manifest 資料、生命週期狀態和第一手來源。",
+      "profilesTitle": "查看代表性擴充套件檔案",
+      "shortlistIntro": "採用一致流程，避免產品熱度蓋過編輯器相容性和維護狀態。",
+      "shortlistTitle": "用三個步驟建立擴充套件候選清單",
+      "steps": [
+        {
+          "title": "設定相容性限制",
+          "description": "列出必須支援的 IDE 和編輯器版本、預算、授權要求，以及是否必須提供原始碼存取。"
+        },
+        {
+          "title": "一致篩選",
+          "description": "用表格排除不相容或已棄用的產品，再依價格、授權、活躍度和官方資源比較其餘項目。"
+        },
+        {
+          "title": "驗證並試用",
+          "description": "開啟產品記錄和官方安裝來源，在程式碼庫試用前確認相容性、目前價格、權限和支援狀態。"
+        }
+      ],
+      "title": "如何比較 AI 編碼擴充套件"
+    },
+    "subtitle": "依支援的 IDE、價格、授權、GitHub 活躍度、生命週期和官方資源比較 AI 編碼擴充套件，再選擇適合編輯器的編碼助手。",
     "title": "AI 編碼擴充外掛比較"
   },
   "ides": {
-    "backTo": "返回 IDE",
-    "subtitle": "並排比較 AI 驅動 IDE 的功能、價格和規格。",
+    "guide": {
+      "criteria": [
+        {
+          "title": "平台適配",
+          "description": "先確認團隊使用的作業系統。支援所有必要開發裝置的 IDE 更容易評估、標準化和維護。"
+        },
+        {
+          "title": "價格模式",
+          "description": "比較免費方案、起始價格和付費層級，再到官方價格頁確認最新限制。訂閱細節會改變實際採用成本。"
+        },
+        {
+          "title": "授權與原始碼",
+          "description": "透過授權和 GitHub 連結區分開源編輯器與專有產品，並檢查每個 IDE 背後的專案或上游編輯器。"
+        },
+        {
+          "title": "驗證路徑",
+          "description": "造訪官方網站、文件、下載頁、變更日誌和問題連結。這些第一手來源說明 IDE 如何安裝、更新及獲得支援。"
+        }
+      ],
+      "faqTitle": "AI 編碼 IDE 常見問題",
+      "faqs": [
+        {
+          "title": "什麼是 AI 編碼 IDE？",
+          "description": "AI 編碼 IDE 是把編碼輔助能力整合到編輯器體驗中的開發環境。產品可能結合補全、對話、程式碼庫上下文、程式碼編輯、終端存取和 Agent 工作流程，但平台、價格、授權與整合方式各不相同。"
+        },
+        {
+          "title": "哪個 AI 編碼 IDE 最好？",
+          "description": "沒有一個 IDE 適合所有工作流程。先篩選能在團隊作業系統上執行、符合預算和授權要求，並契合編輯、審查與執行程式碼方式的產品，再用官方文件和試點驗證候選項。"
+        },
+        {
+          "title": "有免費的 AI 編碼 IDE 嗎？",
+          "description": "部分 AI 編碼 IDE 提供免費方案或基於開源編輯器，但模型用量和託管功能仍可能收費。先用價格欄篩選，再向供應商確認最新限制。"
+        },
+        {
+          "title": "AI 編碼 IDE 與擴充套件有什麼不同？",
+          "description": "AI 編碼 IDE 控制完整的編輯器體驗；AI 擴充套件是在現有 IDE 中加入輔助能力。願意採用新環境時選擇 IDE，更重視保留目前宿主時考慮擴充套件。"
+        },
+        {
+          "title": "AI 編碼 IDE 支援 Windows、macOS 和 Linux 嗎？",
+          "description": "平台支援因產品而異。先查看表格中的 macOS、Windows 和 Linux 圖示，再開啟官方下載或安裝文件核實系統要求。"
+        }
+      ],
+      "intro": "使用一致的訊號比較 {count} 個 AI 編碼 IDE：平台支援、價格、授權、專案活躍度和官方資源。先明確團隊限制，建立候選清單，再在更換開發環境前從第一手來源核實目前產品資訊。",
+      "profiles": [
+        {
+          "title": "Cursor",
+          "href": "/ides/cursor",
+          "description": "查看 Cursor 支援的平台、價格、授權、專案活躍度和官方資源。"
+        },
+        {
+          "title": "Windsurf Editor",
+          "href": "/ides/windsurf",
+          "description": "查看 Windsurf Editor 支援的平台、價格、授權、專案連結和文件。"
+        },
+        {
+          "title": "Kiro",
+          "href": "/ides/kiro",
+          "description": "查看 Kiro 支援的平台、價格、授權、專案連結和官方資源。"
+        },
+        {
+          "title": "Antigravity",
+          "href": "/ides/antigravity",
+          "description": "查看 Antigravity 支援的平台、價格、授權、專案連結和文件。"
+        }
+      ],
+      "profilesIntro": "這些檔案只是起點，不代表排名。開啟每筆記錄，檢查目前的 manifest 資料和第一手來源。",
+      "profilesTitle": "查看代表性 IDE 檔案",
+      "shortlistIntro": "採用一致流程，避免產品熱度取代平台和工作流程適配。",
+      "shortlistTitle": "用三個步驟建立 IDE 候選清單",
+      "steps": [
+        {
+          "title": "設定限制",
+          "description": "列出必要的作業系統、預算上限、授權要求，以及團隊不能失去的編輯器工作流程。"
+        },
+        {
+          "title": "一致篩選",
+          "description": "用表格排除不符合限制的 IDE，再依相同欄位比較其餘項目。"
+        },
+        {
+          "title": "驗證並試點",
+          "description": "開啟產品記錄和官方連結，在試點前確認安裝方式、價格、目前版本和支援狀態。"
+        }
+      ],
+      "title": "如何比較 AI 編碼 IDE"
+    },
+    "subtitle": "依價格、平台支援、授權、GitHub 活躍度和官方資源比較 AI 編碼 IDE，再為團隊選擇開發環境。",
     "title": "AI 編碼 IDE 比較"
   },
   "modelCompareDescription": "並排比較 AI 編碼模型：規格、定價、功能和基準測試。",

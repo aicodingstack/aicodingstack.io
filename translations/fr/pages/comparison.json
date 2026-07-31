@@ -1,6 +1,86 @@
 {
   "clis": {
-    "backTo": "Retour aux CLIs",
+    "guide": {
+      "criteria": [
+        {
+          "description": "Commencez par les systèmes de votre équipe. Une CLI compatible avec toutes les machines requises est plus facile à standardiser et à maintenir.",
+          "title": "Compatibilité des plateformes"
+        },
+        {
+          "description": "Comparez les offres gratuites et les prix de départ, puis vérifiez la tarification officielle. Les limites et modèles inclus modifient le coût réel.",
+          "title": "Modèle tarifaire"
+        },
+        {
+          "description": "La licence et GitHub permettent de distinguer les outils open source des produits propriétaires et d’examiner chaque projet.",
+          "title": "Licence et code source"
+        },
+        {
+          "description": "Le site, la documentation, le téléchargement, le journal et les tickets officiels expliquent l’installation, les mises à jour et le support.",
+          "title": "Parcours de vérification"
+        }
+      ],
+      "faqTitle": "Questions sur les CLI de codage IA",
+      "faqs": [
+        {
+          "description": "Une CLI de codage IA aide à examiner des dépôts, modifier des fichiers, exécuter des commandes et accomplir des tâches depuis le terminal. Les produits diffèrent par les modèles, plateformes, prix, licences et contrôles d’exécution.",
+          "title": "Qu’est-ce qu’une CLI de codage IA ?"
+        },
+        {
+          "description": "Aucune CLI n’est idéale pour tous les usages. Retenez celles qui respectent vos plateformes, votre budget, vos licences et les modèles et services déjà utilisés.",
+          "title": "Quelle CLI de codage IA choisir ?"
+        },
+        {
+          "description": "Certaines proposent une offre gratuite ou un client open source, mais les modèles ou fonctions hébergées peuvent rester payants. Filtrez par offre gratuite et prix de départ, puis vérifiez les limites officielles.",
+          "title": "Existe-t-il des CLI de codage IA gratuites ?"
+        },
+        {
+          "description": "Beaucoup prennent en charge Windows, macOS et Linux, d’autres seulement une partie. Consultez les icônes puis les exigences d’installation officielles.",
+          "title": "Fonctionnent-elles sous Windows, macOS et Linux ?"
+        }
+      ],
+      "intro": "Comparez {count} CLI de codage IA selon les mêmes critères : plateformes, prix, licence, activité du projet et sources officielles. Définissez vos contraintes, créez une sélection et vérifiez à la source les informations susceptibles de changer.",
+      "profiles": [
+        {
+          "description": "Plateformes, prix et ressources officielles de l’agent terminal d’Anthropic.",
+          "href": "/clis/claude-code-cli",
+          "title": "Claude Code CLI"
+        },
+        {
+          "description": "Installation, licence et ressources officielles de la CLI d’OpenAI.",
+          "href": "/clis/codex-cli",
+          "title": "Codex CLI"
+        },
+        {
+          "description": "Plateformes, dépôt source et documentation de l’agent terminal de Google.",
+          "href": "/clis/gemini-cli",
+          "title": "Gemini CLI"
+        },
+        {
+          "description": "Plateformes, licence, prix et liens du projet OpenCode.",
+          "href": "/clis/opencode",
+          "title": "OpenCode"
+        }
+      ],
+      "profilesIntro": "Ces profils sont des points de départ, pas un classement. Chaque fiche présente les données actuelles et les sources primaires.",
+      "profilesTitle": "Examiner des profils représentatifs",
+      "shortlistIntro": "Suivez un processus uniforme afin que la popularité ne remplace pas l’adéquation au flux de travail.",
+      "shortlistTitle": "Créer une sélection en trois étapes",
+      "steps": [
+        {
+          "description": "Listez systèmes, budget, licences et besoins en documentation ou en accès au code source.",
+          "title": "Définir les contraintes"
+        },
+        {
+          "description": "Écartez les outils incompatibles puis comparez les autres avec les mêmes colonnes.",
+          "title": "Filtrer uniformément"
+        },
+        {
+          "description": "Vérifiez installation, prix, version et support dans les liens officiels avant un essai.",
+          "title": "Vérifier et tester"
+        }
+      ],
+      "title": "Comment comparer les CLI de codage IA"
+    },
     "subtitle": "Comparez les fonctionnalités, les tarifs et les spécifications des outils de codage IA en ligne de commande côte à côte.",
     "title": "Comparaison CLI de Codage IA"
   },
@@ -16,13 +96,181 @@
     "startingPrice": "Prix de départ"
   },
   "extensions": {
-    "backTo": "Retour aux Extensions",
-    "subtitle": "Comparez les fonctionnalités, les tarifs et les spécifications des extensions de codage IA côte à côte.",
+    "guide": {
+      "criteria": [
+        {
+          "title": "Compatibilité avec l’IDE hôte",
+          "description": "Commencez par les éditeurs utilisés par votre équipe. La colonne des IDE pris en charge indique si une extension convient à VS Code, aux produits JetBrains ou à un autre hôte."
+        },
+        {
+          "title": "Modèle tarifaire",
+          "description": "Comparez les offres gratuites et les prix de départ, puis vérifiez limites et services sur la page officielle. Une extension gratuite peut nécessiter un accès payant aux modèles."
+        },
+        {
+          "title": "Licence et maintenance",
+          "description": "Utilisez la licence, l’activité GitHub et le badge obsolète pour distinguer les projets open source actifs des produits propriétaires ou abandonnés."
+        },
+        {
+          "title": "Parcours de vérification",
+          "description": "Avant l’installation, ouvrez le site, la marketplace ou le téléchargement, la documentation, le journal des changements et le suivi des problèmes afin de confirmer compatibilité et support."
+        }
+      ],
+      "faqTitle": "Questions sur les extensions de codage IA",
+      "faqs": [
+        {
+          "title": "Qu’est-ce qu’une extension de codage IA ?",
+          "description": "C’est un logiciel qui ajoute une assistance au codage dans un éditeur ou IDE existant. Il peut proposer complétion, chat, contexte du dépôt, flux d’édition ou fonctions Agent tout en conservant l’application hôte."
+        },
+        {
+          "title": "Quelle extension de codage IA choisir ?",
+          "description": "Aucune n’est meilleure pour tous. Filtrez selon l’IDE hôte, l’environnement, le budget et la licence, puis comparez les candidates avec la documentation officielle et un essai sur un petit dépôt."
+        },
+        {
+          "title": "Existe-t-il des extensions de codage IA gratuites ?",
+          "description": "Certaines proposent une offre gratuite ou un client open source, mais l’utilisation des modèles et les services hébergés peuvent être payants. Utilisez les colonnes tarifaires puis confirmez les limites auprès du fournisseur."
+        },
+        {
+          "title": "Quelle différence avec un IDE de codage IA ?",
+          "description": "Une extension s’exécute dans un éditeur existant et reprend son flux de travail. Un IDE autonome contrôle toute l’expérience. Comparez les extensions si vous souhaitez garder votre hôte actuel."
+        },
+        {
+          "title": "Ces extensions prennent-elles en charge VS Code et JetBrains ?",
+          "description": "La compatibilité varie. Consultez la colonne des IDE pris en charge, puis confirmez la version exacte et les exigences système dans la marketplace ou le guide d’installation officiel."
+        }
+      ],
+      "intro": "Comparez {count} extensions de codage IA avec les mêmes signaux : IDE pris en charge, tarifs, licence, activité du projet, cycle de vie et ressources officielles. Filtrez d’abord la compatibilité et vérifiez les détails changeants avant installation.",
+      "profiles": [
+        {
+          "title": "GitHub Copilot",
+          "href": "/extensions/github-copilot",
+          "description": "Consultez les IDE pris en charge, tarifs, licence, activité et ressources officielles."
+        },
+        {
+          "title": "Cline",
+          "href": "/extensions/cline",
+          "description": "Consultez les IDE pris en charge, tarifs, licence, dépôt source et documentation."
+        },
+        {
+          "title": "Gemini Code Assist",
+          "href": "/extensions/gemini-code-assist",
+          "description": "Consultez la compatibilité, les tarifs, les liens du projet et la documentation officielle."
+        },
+        {
+          "title": "JetBrains Junie",
+          "href": "/extensions/jetbrains-junie",
+          "description": "Consultez la compatibilité hôte, les tarifs, les liens et les ressources officielles."
+        }
+      ],
+      "profilesIntro": "Ces profils sont des points de départ, pas un classement. Ouvrez chaque fiche pour examiner ses données actuelles, son cycle de vie et ses sources primaires.",
+      "profilesTitle": "Examiner des profils d’extensions représentatifs",
+      "shortlistIntro": "Suivez un processus cohérent pour que la popularité ne l’emporte pas sur la compatibilité et la maintenance.",
+      "shortlistTitle": "Créer une sélection en trois étapes",
+      "steps": [
+        {
+          "title": "Définir les contraintes",
+          "description": "Listez les IDE et versions requis, le budget, les exigences de licence et le besoin éventuel d’accès au code source."
+        },
+        {
+          "title": "Filtrer de façon cohérente",
+          "description": "Écartez les produits incompatibles ou obsolètes, puis comparez le reste selon prix, licence, activité et ressources officielles."
+        },
+        {
+          "title": "Vérifier et essayer",
+          "description": "Ouvrez la fiche et l’installation officielle. Confirmez compatibilité, tarifs, autorisations et support avant un essai sur dépôt."
+        }
+      ],
+      "title": "Comment comparer les extensions de codage IA"
+    },
+    "subtitle": "Comparez les extensions de codage IA par IDE pris en charge, tarifs, licence, activité GitHub, cycle de vie et ressources officielles.",
     "title": "Comparaison d'Extensions de Codage IA"
   },
   "ides": {
-    "backTo": "Retour aux IDEs",
-    "subtitle": "Comparez les fonctionnalités, les tarifs et les spécifications des IDE propulsés par l'IA côte à côte.",
+    "guide": {
+      "criteria": [
+        {
+          "title": "Compatibilité des plateformes",
+          "description": "Commencez par les systèmes de votre équipe. Un IDE compatible avec toutes les machines nécessaires est plus simple à évaluer, standardiser et maintenir."
+        },
+        {
+          "title": "Modèle tarifaire",
+          "description": "Comparez les offres gratuites, prix de départ et niveaux payants, puis confirmez les limites sur la page officielle. Les modalités d’abonnement influencent le coût réel."
+        },
+        {
+          "title": "Licence et code source",
+          "description": "Utilisez la licence et les liens GitHub pour distinguer éditeurs open source et produits propriétaires et examiner le projet derrière chaque IDE."
+        },
+        {
+          "title": "Parcours de vérification",
+          "description": "Suivez le site, la documentation, le téléchargement, le journal des changements et les problèmes. Ces sources montrent comment l’IDE est installé, mis à jour et pris en charge."
+        }
+      ],
+      "faqTitle": "Questions sur les IDE de codage IA",
+      "faqs": [
+        {
+          "title": "Qu’est-ce qu’un IDE de codage IA ?",
+          "description": "C’est un environnement qui intègre l’assistance au codage dans l’éditeur. Il peut combiner complétion, chat, contexte du dépôt, édition, terminal et flux Agent, avec des plateformes, tarifs et licences différents."
+        },
+        {
+          "title": "Quel IDE de codage IA choisir ?",
+          "description": "Aucun n’est meilleur pour tous les flux. Sélectionnez ceux qui correspondent aux systèmes, au budget, à la licence et aux pratiques de l’équipe, puis vérifiez les candidats avec la documentation officielle et un pilote."
+        },
+        {
+          "title": "Existe-t-il des IDE de codage IA gratuits ?",
+          "description": "Certains proposent une offre gratuite ou reposent sur des éditeurs open source, mais l’utilisation des modèles ou les fonctions hébergées peuvent être payantes. Utilisez les colonnes tarifaires comme premier filtre."
+        },
+        {
+          "title": "Quelle différence avec une extension ?",
+          "description": "Un IDE de codage IA contrôle toute l’expérience d’édition. Une extension ajoute une assistance à un IDE existant. Choisissez un IDE si vous pouvez adopter un nouvel environnement, sinon envisagez une extension."
+        },
+        {
+          "title": "Fonctionnent-ils sous Windows, macOS et Linux ?",
+          "description": "La prise en charge varie. Consultez les icônes macOS, Windows et Linux, puis confirmez les exigences système dans le téléchargement ou la documentation d’installation officielle."
+        }
+      ],
+      "intro": "Comparez {count} IDE de codage IA avec des signaux cohérents : plateformes, tarifs, licence, activité du projet et ressources officielles. Partez des contraintes de l’équipe, créez une sélection et vérifiez les détails actuels avant de changer d’environnement.",
+      "profiles": [
+        {
+          "title": "Cursor",
+          "href": "/ides/cursor",
+          "description": "Consultez les plateformes, tarifs, licence, activité et ressources officielles."
+        },
+        {
+          "title": "Windsurf Editor",
+          "href": "/ides/windsurf",
+          "description": "Consultez les plateformes, tarifs, licence, liens du projet et documentation."
+        },
+        {
+          "title": "Kiro",
+          "href": "/ides/kiro",
+          "description": "Consultez les plateformes, tarifs, licence, liens et ressources officielles."
+        },
+        {
+          "title": "Antigravity",
+          "href": "/ides/antigravity",
+          "description": "Consultez les plateformes, tarifs, licence, liens et documentation."
+        }
+      ],
+      "profilesIntro": "Ces profils sont des points de départ, pas un classement. Ouvrez chaque fiche pour consulter ses données actuelles et ses sources primaires.",
+      "profilesTitle": "Examiner des profils d’IDE représentatifs",
+      "shortlistIntro": "Suivez un processus cohérent pour que la popularité ne remplace pas l’adéquation à la plateforme et au flux de travail.",
+      "shortlistTitle": "Créer une sélection d’IDE en trois étapes",
+      "steps": [
+        {
+          "title": "Définir les contraintes",
+          "description": "Listez systèmes requis, budget, exigences de licence et flux d’éditeur que l’équipe doit conserver."
+        },
+        {
+          "title": "Filtrer de façon cohérente",
+          "description": "Écartez les IDE qui ne respectent pas ces contraintes et comparez les autres avec les mêmes colonnes."
+        },
+        {
+          "title": "Vérifier et piloter",
+          "description": "Ouvrez chaque fiche et lien officiel. Confirmez installation, tarifs, version et support avant un pilote."
+        }
+      ],
+      "title": "Comment comparer les IDE de codage IA"
+    },
+    "subtitle": "Comparez les IDE de codage IA par tarifs, plateformes, licence, activité GitHub et ressources officielles avant de choisir un environnement.",
     "title": "Comparaison de IDE de Codage IA"
   },
   "modelCompareDescription": "Comparez les modèles de codage IA côte à côte : spécifications, tarifs, capacités et benchmarks.",
