@@ -281,10 +281,16 @@ describe('model intelligence index', () => {
     const mistralSeries = modelIntelligenceSeries.filter(series => series.vendor === 'Mistral AI')
 
     expect(mistralSeries.map(series => series.name)).toEqual([
-      'Devstral 2',
-      'Devstral Small 2',
-      'Mistral Medium 3.5',
-      'Mistral Small 4',
+      'Devstral',
+      'Devstral Small',
+      'Mistral Medium',
+      'Mistral Small',
+    ])
+    expect(mistralSeries.map(series => series.id)).toEqual([
+      'Mistral AI:devstral-2',
+      'Mistral AI:devstral-small-2',
+      'Mistral AI:mistral-medium-3-5',
+      'Mistral AI:mistral-small-4',
     ])
     expect(mistralSeries.map(series => series.points.map(point => point.modelId))).toEqual([
       ['devstral-2'],

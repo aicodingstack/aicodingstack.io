@@ -10,22 +10,22 @@
   "modelSeries": [
     {
       "id": "devstral-2",
-      "name": "Devstral 2",
+      "name": "Devstral",
       "modelIds": ["devstral-2"]
     },
     {
       "id": "devstral-small-2",
-      "name": "Devstral Small 2",
+      "name": "Devstral Small",
       "modelIds": ["devstral-small-2"]
     },
     {
       "id": "mistral-medium-3-5",
-      "name": "Mistral Medium 3.5",
+      "name": "Mistral Medium",
       "modelIds": ["mistral-medium-3-5"]
     },
     {
       "id": "mistral-small-4",
-      "name": "Mistral Small 4",
+      "name": "Mistral Small",
       "modelIds": ["mistral-small-4"]
     }
   ],
@@ -88,7 +88,7 @@
       "fields": ["communityUrls.blog"]
     }
   ],
-  "lastVerifiedAt": "2026-07-30",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex",
   "confidence": "high",
   "websiteUrl": "https://mistral.ai",
