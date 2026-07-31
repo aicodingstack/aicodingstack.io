@@ -47,6 +47,7 @@
       "vendors": "All Vendors"
     },
     "plural": {
+      "collections": "Koleksiyonlar",
       "clis": "CLI'lar",
       "desktops": "Masaüstü uygulamaları",
       "extensions": "Uzantılar",

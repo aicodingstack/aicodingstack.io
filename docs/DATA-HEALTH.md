@@ -11,7 +11,7 @@ Snapshot date: 2026-07-31. Regenerate with `pnpm data-health:report`.
 | Verified records | 215 |
 | Verified with complete provenance | 215 |
 | Stale verified records | 0 |
-| Non-English values identical to English | 1190 |
+| Non-English values identical to English | 1191 |
 | Dangling product relationships | 0 |
 | Model benchmark coverage | 9.5% |
 | Products with pricing | 67/67 |
@@ -37,17 +37,17 @@ Exact English matches are a triage signal; product names and technical terms can
 
 | Locale | Comparable strings | Exact English matches | Match rate |
 | --- | ---: | ---: | ---: |
-| de | 442 | 106 | 24% |
-| es | 442 | 98 | 22.2% |
-| fr | 442 | 108 | 24.4% |
-| id | 442 | 142 | 32.1% |
-| ja | 442 | 100 | 22.6% |
-| ko | 442 | 108 | 24.4% |
-| pt | 442 | 108 | 24.4% |
-| ru | 442 | 117 | 26.5% |
-| tr | 442 | 119 | 26.9% |
-| zh-Hans | 442 | 92 | 20.8% |
-| zh-Hant | 442 | 92 | 20.8% |
+| de | 448 | 106 | 23.7% |
+| es | 448 | 98 | 21.9% |
+| fr | 448 | 109 | 24.3% |
+| id | 448 | 142 | 31.7% |
+| ja | 448 | 100 | 22.3% |
+| ko | 448 | 108 | 24.1% |
+| pt | 448 | 108 | 24.1% |
+| ru | 448 | 117 | 26.1% |
+| tr | 448 | 119 | 26.6% |
+| zh-Hans | 448 | 92 | 20.5% |
+| zh-Hant | 448 | 92 | 20.5% |
 
 ## Backlog by Issue Type
 

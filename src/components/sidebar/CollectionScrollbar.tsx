@@ -1,14 +1,20 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
+import { Link } from '@/i18n/navigation'
 import type { Collections } from '@/lib/collections'
 
 interface CollectionScrollbarProps {
   sectionIds: string[]
   collections: Collections
+  label: string
 }
 
-export default function CollectionScrollbar({ sectionIds, collections }: CollectionScrollbarProps) {
+export default function CollectionScrollbar({
+  sectionIds,
+  collections,
+  label,
+}: CollectionScrollbarProps) {
   const [activeSection, setActiveSection] = useState(sectionIds[0] || '')
 
   const sections = useMemo(
@@ -39,32 +45,21 @@ export default function CollectionScrollbar({ sectionIds, collections }: Collect
     return () => window.removeEventListener('scroll', handleScroll)
   }, [sections])
 
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId)
-    if (section) {
-      const offset = 80
-      const elementPosition = section.getBoundingClientRect().top
-      const offsetPosition = elementPosition + window.pageYOffset - offset
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth',
-      })
-    }
-  }
-
   return (
-    <aside className="hidden lg:block w-[200px] flex-shrink-0">
-      <div className="sticky top-[100px]">
-        <nav className="space-y-[var(--spacing-xs)]">
+    <aside className="sticky top-[73px] z-20 w-full shrink-0 bg-[var(--color-bg)] lg:top-[100px] lg:w-[200px] lg:self-start">
+      <div>
+        <nav
+          aria-label={label}
+          className="flex overflow-x-auto border-y border-[var(--color-border)] py-[var(--spacing-xs)] lg:block lg:space-y-[var(--spacing-xs)] lg:border-0 lg:py-0"
+        >
           {sections.map(section => (
-            <button
+            <Link
               key={section.id}
-              type="button"
-              onClick={() => scrollToSection(section.id)}
+              href={`#${section.id}`}
+              aria-current={activeSection === section.id ? 'location' : undefined}
               className={`
-                w-full text-left text-sm px-[var(--spacing-sm)] py-[var(--spacing-xs)]
-                transition-all cursor-pointer
+                shrink-0 whitespace-nowrap text-left text-sm px-[var(--spacing-sm)] py-[var(--spacing-xs)]
+                transition-all lg:block lg:w-full
                 ${
                   activeSection === section.id
                     ? 'bg-[var(--color-hover)] text-[var(--color-text)] font-medium'
@@ -73,7 +68,7 @@ export default function CollectionScrollbar({ sectionIds, collections }: Collect
               `}
             >
               {section.title}
-            </button>
+            </Link>
           ))}
         </nav>
       </div>

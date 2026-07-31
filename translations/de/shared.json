@@ -47,6 +47,7 @@
       "vendors": "All Vendors"
     },
     "plural": {
+      "collections": "Sammlungen",
       "clis": "CLIs",
       "desktops": "Desktop-Apps",
       "extensions": "Erweiterungen",

@@ -1,4 +1,11 @@
 {
+  "opensInNewTab": "Terbuka di tab baru",
+  "published": "Diterbitkan",
+  "sectionNavigation": "Bagian koleksi",
+  "status": {
+    "publicPreview": "Pratinjau Publik"
+  },
+  "verified": "Terverifikasi",
   "articles": {
     "description": "Artikel wajib baca tentang coding AI dari para pemimpin industri"
   },

@@ -1,4 +1,11 @@
 {
+  "opensInNewTab": "Wird in einem neuen Tab geöffnet",
+  "published": "Veröffentlicht",
+  "sectionNavigation": "Sammlungsabschnitte",
+  "status": {
+    "publicPreview": "Öffentliche Vorschau"
+  },
+  "verified": "Geprüft",
   "articles": {
     "description": "Pflichtlektüre zum KI-gestützten Programmieren von führenden Köpfen der Branche"
   },

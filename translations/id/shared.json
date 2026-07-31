@@ -47,6 +47,7 @@
       "vendors": "All Vendors"
     },
     "plural": {
+      "collections": "Koleksi",
       "clis": "CLI",
       "desktops": "Aplikasi desktop",
       "extensions": "Ekstensi",

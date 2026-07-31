@@ -3,7 +3,9 @@
  * Provides unified search across all product categories
  */
 
+import { getCollectionSearchEntries } from './collections'
 import {
+  buildManifestPath,
   getAllManifests,
   type ManifestItem,
   type ManifestCategory as RegistryCategory,
@@ -12,15 +14,24 @@ import {
 /**
  * Search category type (re-export for convenience)
  */
-export type SearchCategory = RegistryCategory
+export type SearchCategory = RegistryCategory | 'collections'
 export type ManifestCategory = RegistryCategory
+
+type SearchableData = {
+  id: string
+  name: string
+  description: string
+  translations?: { [locale: string]: { name?: string; description?: string } }
+  [key: string]: unknown
+}
 
 export interface SearchResult {
   id: string
   name: string
   description: string
   category: SearchCategory
-  data: ManifestItem
+  href: string
+  data: SearchableData
 }
 
 /**
@@ -137,13 +148,21 @@ function calculateRelevance(
  * Build unified search index from all product manifests
  */
 export function buildSearchIndex(locale?: string): SearchResult[] {
-  return getAllManifests().map(({ category, data: item }) => ({
+  const manifestResults = getAllManifests().map(({ category, data: item }) => ({
     id: item.id,
     name: getLocalizedName(item, locale),
     description: getLocalizedDescription(item, locale),
     category,
-    data: item,
+    href: buildManifestPath(category, item.id),
+    data: item as ManifestItem & SearchableData,
   }))
+  const collectionResults = getCollectionSearchEntries(locale ?? 'en').map(entry => ({
+    ...entry,
+    category: 'collections' as const,
+    data: entry.data as SearchableData,
+  }))
+
+  return [...manifestResults, ...collectionResults]
 }
 
 /**

@@ -3,9 +3,13 @@ import type { Locale } from '@/i18n/config'
 import { localizeManifestItem } from './manifest-i18n'
 
 export interface CollectionItem {
+  id: string
   name: string
   url: string
   description: string
+  publishedAt?: string
+  lastVerifiedAt?: string
+  status?: 'public-preview'
   i18n?: {
     [locale: string]: {
       name?: string
@@ -17,6 +21,7 @@ export interface CollectionItem {
 }
 
 export interface CollectionSubSection {
+  id: string
   title: string
   items: CollectionItem[]
   i18n?: {
@@ -44,6 +49,22 @@ export interface CollectionSection {
 
 export interface Collections {
   [key: string]: CollectionSection
+}
+
+export interface CollectionSearchEntry {
+  id: string
+  name: string
+  description: string
+  href: string
+  data: CollectionItem
+}
+
+export function getCollectionItemAnchor(
+  sectionId: string,
+  subSectionId: string,
+  itemId: string
+): string {
+  return `${sectionId}-${subSectionId}-${itemId}`
 }
 
 // Localize a single collection item
@@ -88,4 +109,28 @@ export function getCollections(locale: string): Collections {
 // Get collection section IDs in order
 export function getCollectionSectionIds(): string[] {
   return Object.keys(collectionsData).filter(key => key !== '$schema')
+}
+
+export function getCollectionSearchEntries(locale: string): CollectionSearchEntry[] {
+  const collections = getCollections(locale)
+  const entries: CollectionSearchEntry[] = []
+
+  for (const sectionId of getCollectionSectionIds()) {
+    const section = collections[sectionId]
+    if (!section) continue
+
+    for (const subSection of section.sections) {
+      for (const item of subSection.items) {
+        entries.push({
+          id: getCollectionItemAnchor(sectionId, subSection.id, item.id),
+          name: item.name,
+          description: item.description,
+          href: `/curated-collections#${getCollectionItemAnchor(sectionId, subSection.id, item.id)}`,
+          data: item,
+        })
+      }
+    }
+  }
+
+  return entries
 }

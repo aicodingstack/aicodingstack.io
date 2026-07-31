@@ -1,4 +1,11 @@
 {
+  "opensInNewTab": "在新标签页中打开",
+  "published": "发布于",
+  "sectionNavigation": "收藏集分区",
+  "status": {
+    "publicPreview": "公开预览"
+  },
+  "verified": "核验于",
   "articles": {
     "description": "行业领袖关于 AI 编码的必读文章"
   },

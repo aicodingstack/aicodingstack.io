@@ -1,4 +1,11 @@
 {
+  "opensInNewTab": "S’ouvre dans un nouvel onglet",
+  "published": "Publié",
+  "sectionNavigation": "Sections de la collection",
+  "status": {
+    "publicPreview": "Aperçu public"
+  },
+  "verified": "Vérifié",
   "articles": {
     "description": "Articles incontournables sur le codage avec l’IA, rédigés par des experts du secteur"
   },

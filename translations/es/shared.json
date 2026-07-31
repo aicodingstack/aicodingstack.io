@@ -47,6 +47,7 @@
       "vendors": "All Vendors"
     },
     "plural": {
+      "collections": "Colecciones",
       "clis": "CLI",
       "desktops": "Aplicaciones de escritorio",
       "extensions": "Extensiones",

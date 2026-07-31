@@ -47,6 +47,7 @@
       "vendors": "All Vendors"
     },
     "plural": {
+      "collections": "컬렉션",
       "clis": "CLI",
       "desktops": "데스크톱 앱",
       "extensions": "확장 프로그램",

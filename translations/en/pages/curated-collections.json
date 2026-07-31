@@ -1,4 +1,11 @@
 {
+  "opensInNewTab": "Opens in a new tab",
+  "published": "Published",
+  "sectionNavigation": "Collection sections",
+  "status": {
+    "publicPreview": "Public Preview"
+  },
+  "verified": "Verified",
   "articles": {
     "description": "Must-read articles about AI coding from industry leaders"
   },

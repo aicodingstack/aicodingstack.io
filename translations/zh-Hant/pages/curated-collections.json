@@ -1,4 +1,11 @@
 {
+  "opensInNewTab": "在新分頁中開啟",
+  "published": "發布於",
+  "sectionNavigation": "收藏集分區",
+  "status": {
+    "publicPreview": "公開預覽"
+  },
+  "verified": "核驗於",
   "articles": {
     "description": "業界領袖撰寫的 AI 編碼必讀文章"
   },
