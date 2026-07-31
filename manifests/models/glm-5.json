@@ -48,6 +48,7 @@
         "description",
         "docsUrl",
         "size",
+        "activeParameters",
         "contextWindow",
         "maxOutput",
         "inputModalities",
@@ -68,7 +69,7 @@
     {
       "url": "https://huggingface.co/zai-org/GLM-5",
       "title": "Official GLM-5 weights and model card",
-      "fields": ["size", "platformUrls"]
+      "fields": ["size", "activeParameters", "platformUrls"]
     }
   ],
   "lastVerifiedAt": "2026-07-21",
@@ -77,7 +78,8 @@
   "websiteUrl": "https://z.ai",
   "docsUrl": "https://docs.z.ai/guides/llm/glm-5",
   "vendor": "Z.ai",
-  "size": "744B (40B active)",
+  "size": "744B",
+  "activeParameters": "40B",
   "contextWindow": 204800,
   "maxOutput": 131072,
   "tokenPricing": {

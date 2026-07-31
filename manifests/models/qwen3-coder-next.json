@@ -47,6 +47,7 @@
         "name",
         "description",
         "size",
+        "activeParameters",
         "contextWindow",
         "releaseDate",
         "inputModalities",
@@ -77,7 +78,8 @@
   "websiteUrl": "https://qwen.ai",
   "docsUrl": "https://help.aliyun.com/en/model-studio/qwen-coder",
   "vendor": "Alibaba",
-  "size": "80B (3B active)",
+  "size": "80B",
+  "activeParameters": "3B",
   "contextWindow": 262144,
   "maxOutput": null,
   "tokenPricing": {

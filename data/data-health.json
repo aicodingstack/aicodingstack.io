@@ -10,14 +10,14 @@
     "vendors": 90
   },
   "summary": {
-    "totalRecords": 242,
-    "recordsWithSources": 235,
-    "verifiedRecords": 215,
-    "provenanceComplete": 215,
+    "totalRecords": 243,
+    "recordsWithSources": 237,
+    "verifiedRecords": 216,
+    "provenanceComplete": 216,
     "staleVerifiedRecords": 0,
     "translationPlaceholderValues": 300,
     "danglingRelationships": 0,
-    "modelBenchmarkCoverage": 9.5,
+    "modelBenchmarkCoverage": 9.4,
     "productsWithPricing": 67,
     "productRecords": 67,
     "communityUrlsPopulated": 302,
@@ -25,7 +25,7 @@
     "duplicatedVendorCommunityUrls": 0,
     "errors": 0,
     "warnings": 0,
-    "info": 7
+    "info": 6
   },
   "byCategory": {
     "ides": {
@@ -53,9 +53,9 @@
       "stale": 0
     },
     "models": {
-      "total": 123,
-      "verified": 122,
-      "provenanceComplete": 122,
+      "total": 124,
+      "verified": 123,
+      "provenanceComplete": 123,
       "stale": 0
     },
     "providers": {
@@ -129,13 +129,6 @@
     }
   },
   "issues": [
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "composer",
-      "message": "No structured source references are recorded."
-    },
     {
       "severity": "info",
       "code": "missing-sources",

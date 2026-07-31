@@ -67,7 +67,7 @@
     {
       "url": "https://huggingface.co/zai-org/GLM-4.5-Air",
       "title": "Official GLM-4.5-Air model card",
-      "fields": ["size", "platformUrls"]
+      "fields": ["size", "activeParameters", "platformUrls"]
     }
   ],
   "lastVerifiedAt": "2026-07-26",
@@ -76,7 +76,8 @@
   "websiteUrl": "https://z.ai",
   "docsUrl": "https://docs.z.ai/guides/llm/glm-4.5",
   "vendor": "Z.ai",
-  "size": "106B (12B active)",
+  "size": "106B",
+  "activeParameters": "12B",
   "contextWindow": 131072,
   "maxOutput": 98304,
   "tokenPricing": {

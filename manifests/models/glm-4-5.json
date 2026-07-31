@@ -48,6 +48,7 @@
         "description",
         "docsUrl",
         "size",
+        "activeParameters",
         "contextWindow",
         "maxOutput",
         "tokenPricing",
@@ -66,7 +67,8 @@
   "websiteUrl": "https://z.ai",
   "docsUrl": "https://docs.z.ai/guides/llm/glm-4.5",
   "vendor": "Z.ai",
-  "size": "355B (32B active)",
+  "size": "355B",
+  "activeParameters": "32B",
   "contextWindow": 131072,
   "maxOutput": 98304,
   "tokenPricing": {

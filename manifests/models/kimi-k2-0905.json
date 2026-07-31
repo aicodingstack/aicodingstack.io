@@ -2,40 +2,40 @@
   "$schema": "../$schemas/model.schema.json",
   "id": "kimi-k2-0905",
   "name": "Kimi K2 0905",
-  "description": "A 200B parameter large language model from Moonshot AI with 200K context window, optimized for long-context reasoning and instruction following.",
+  "description": "A 1T parameter large language model from Moonshot AI with a 256K context window, optimized for long-context reasoning and instruction following.",
   "translations": {
     "zh-Hans": {
-      "description": "月之暗面推出的 200B 参数大语言模型，具备 200K 上下文窗口，专为长文本推理和指令遵循优化。"
+      "description": "月之暗面推出的 1T 参数大语言模型，具备 256K 上下文窗口，专为长文本推理和指令遵循优化。"
     },
     "de": {
-      "description": "Ein 200B-Parameter-Großsprachmodell von Moonshot AI mit 200K-Kontextfenster, optimiert für Long-Context-Reasoning und Instruction-Following."
+      "description": "Ein 1T-Parameter-Großsprachmodell von Moonshot AI mit 256K-Kontextfenster, optimiert für Long-Context-Reasoning und Instruction-Following."
     },
     "ko": {
-      "description": "Moonshot AI의 200B 파라미터 대형 언어 모델로, 200K 컨텍스트 윈도를 갖추고 있으며 긴 컨텍스트 추론 및 지시 따르기에 최적화되었습니다."
+      "description": "Moonshot AI의 1T 파라미터 대형 언어 모델로, 256K 컨텍스트 윈도를 갖추고 있으며 긴 컨텍스트 추론 및 지시 따르기에 최적화되었습니다."
     },
     "es": {
-      "description": "Un modelo de lenguaje grande con 200B de parámetros de Moonshot AI con ventana de contexto de 200K, optimizado para razonamiento de contexto largo y seguimiento de instrucciones."
+      "description": "Un modelo de lenguaje grande con 1T de parámetros de Moonshot AI y una ventana de contexto de 256K, optimizado para razonamiento de contexto largo y seguimiento de instrucciones."
     },
     "fr": {
-      "description": "Un grand modèle de langage avec 200B de paramètres de Moonshot AI avec fenêtre de contexte de 200K, optimisé pour le raisonnement de contexte long et le suivi des instructions."
+      "description": "Un grand modèle de langage de Moonshot AI avec 1T de paramètres et une fenêtre de contexte de 256K, optimisé pour le raisonnement en contexte long et le suivi des instructions."
     },
     "id": {
-      "description": "Model bahasa besar dengan 200B parameter dari Moonshot AI dengan jendela konteks 200K, dioptimalkan untuk penalaran konteks panjang dan mengikuti instruksi."
+      "description": "Model bahasa besar Moonshot AI dengan 1T parameter dan jendela konteks 256K, dioptimalkan untuk penalaran konteks panjang dan mengikuti instruksi."
     },
     "ja": {
-      "description": "Moonshot AIの200Bパラメータの大規模言語モデルで、200Kコンテキストウィンドウを備え、長い文脈推論と指示追従のために最適化されています。"
+      "description": "Moonshot AIの1Tパラメータの大規模言語モデルで、256Kコンテキストウィンドウを備え、長い文脈推論と指示追従のために最適化されています。"
     },
     "pt": {
-      "description": "Um modelo de linguagem grande com 200B de parâmetros de Moonshot AI com janela de contexto de 200K, otimizado para raciocínio de contexto longo e seguimento de instruções."
+      "description": "Um modelo de linguagem grande da Moonshot AI com 1T de parâmetros e janela de contexto de 256K, otimizado para raciocínio de contexto longo e seguimento de instruções."
     },
     "ru": {
-      "description": "Большая языковая модель с 200B параметров от Moonshot AI с окном контекста 200K, оптимизированная для рассуждения на длинном контексте и следования инструкциям."
+      "description": "Большая языковая модель Moonshot AI с 1T параметров и контекстным окном 256K, оптимизированная для рассуждений в длинном контексте и следования инструкциям."
     },
     "tr": {
-      "description": "Moonshot AI’ın 200B parametreli ve 200K bağlamlı büyük dil modeli; uzun bağlamlı akıl yürütme ve talimat izleme için optimize edilmiştir."
+      "description": "Moonshot AI’ın 1T parametreli ve 256K bağlamlı büyük dil modeli; uzun bağlamlı akıl yürütme ve talimat izleme için optimize edilmiştir."
     },
     "zh-Hant": {
-      "description": "月之暗面推出的 200B 參數大語言模型，具備 200K 上下文視窗，專為長文本推理和指令遵循最佳化。"
+      "description": "月之暗面推出的 1T 參數大語言模型，具備 256K 上下文視窗，專為長文本推理和指令遵循最佳化。"
     }
   },
   "verified": true,
@@ -44,15 +44,28 @@
       "url": "https://platform.kimi.ai/docs/models",
       "title": "Kimi API model availability and K2 retirement notice",
       "fields": ["lifecycle", "tokenPricing"]
+    },
+    {
+      "url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct-0905",
+      "title": "Kimi K2 Instruct 0905 official model card",
+      "fields": [
+        "description",
+        "docsUrl",
+        "size",
+        "activeParameters",
+        "contextWindow",
+        "platformUrls.huggingface"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "medium",
   "websiteUrl": "https://moonshot.ai",
   "docsUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct-0905",
   "vendor": "Moonshot",
-  "size": "1,000B",
+  "size": "1T",
+  "activeParameters": "32B",
   "contextWindow": 262144,
   "maxOutput": 262144,
   "tokenPricing": {

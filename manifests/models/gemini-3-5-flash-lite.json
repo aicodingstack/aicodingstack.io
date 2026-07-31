@@ -68,13 +68,14 @@
       "fields": ["name", "releaseDate", "lifecycle"]
     }
   ],
-  "lastVerifiedAt": "2026-07-22",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://deepmind.google",
   "docsUrl": "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash-lite",
   "vendor": "Google",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 1048576,
   "maxOutput": 65536,
   "tokenPricing": {

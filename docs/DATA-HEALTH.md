@@ -6,18 +6,18 @@ Snapshot date: 2026-07-31. Regenerate with `pnpm data-health:report`.
 
 | Metric | Value |
 | --- | ---: |
-| Manifest records | 242 |
-| Records with structured sources | 235 |
-| Verified records | 215 |
-| Verified with complete provenance | 215 |
+| Manifest records | 243 |
+| Records with structured sources | 237 |
+| Verified records | 216 |
+| Verified with complete provenance | 216 |
 | Stale verified records | 0 |
 | Non-English values identical to English | 300 |
 | Dangling product relationships | 0 |
-| Model benchmark coverage | 9.5% |
+| Model benchmark coverage | 9.4% |
 | Products with pricing | 67/67 |
 | Community URLs with provenance | 302/302 |
 | Duplicated vendor community URLs | 0 |
-| Errors / warnings / info | 0 / 0 / 7 |
+| Errors / warnings / info | 0 / 0 / 6 |
 
 ## Category Breakdown
 
@@ -27,7 +27,7 @@ Snapshot date: 2026-07-31. Regenerate with `pnpm data-health:report`.
 | clis | 27 | 18 | 18 | 0 |
 | desktops | 12 | 7 | 7 | 0 |
 | extensions | 19 | 17 | 17 | 0 |
-| models | 123 | 122 | 122 | 0 |
+| models | 124 | 123 | 123 | 0 |
 | providers | 12 | 4 | 4 | 0 |
 | vendors | 40 | 40 | 40 | 0 |
 
@@ -53,7 +53,7 @@ Exact English matches are a triage signal; product names and technical terms can
 
 | Issue | Count |
 | --- | ---: |
-| missing-sources | 7 |
+| missing-sources | 6 |
 
 ## Priority Queue
 

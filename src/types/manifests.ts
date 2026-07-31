@@ -352,6 +352,7 @@ export type ModelLifecycle = 'latest' | 'maintained' | 'deprecated'
  */
 export interface ManifestModel extends ManifestVendorEntity {
   size: string | null
+  activeParameters: string | null
   contextWindow: number
   maxOutput: number | null
   tokenPricing: ManifestTokenPricing

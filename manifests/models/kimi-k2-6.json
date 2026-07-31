@@ -48,6 +48,7 @@
         "description",
         "docsUrl",
         "size",
+        "activeParameters",
         "contextWindow",
         "maxOutput",
         "releaseDate",
@@ -70,7 +71,8 @@
   "websiteUrl": "https://www.moonshot.ai",
   "docsUrl": "https://huggingface.co/moonshotai/Kimi-K2.6",
   "vendor": "Moonshot",
-  "size": "1T (32B active)",
+  "size": "1T",
+  "activeParameters": "32B",
   "contextWindow": 262144,
   "maxOutput": null,
   "tokenPricing": {

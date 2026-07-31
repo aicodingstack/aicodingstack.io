@@ -48,6 +48,7 @@
         "description",
         "docsUrl",
         "size",
+        "activeParameters",
         "contextWindow",
         "maxOutput",
         "releaseDate",
@@ -62,15 +63,21 @@
       "url": "https://platform.kimi.ai/docs/models",
       "title": "Kimi API model availability and K2 retirement notice",
       "fields": ["lifecycle", "tokenPricing"]
+    },
+    {
+      "url": "https://models.dev/api.json",
+      "title": "Models.dev pricing catalog",
+      "fields": ["referenceTokenPricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.moonshot.ai",
   "docsUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
   "vendor": "Moonshot",
-  "size": "1T (32B active)",
+  "size": "1T",
+  "activeParameters": "32B",
   "contextWindow": 131072,
   "maxOutput": null,
   "tokenPricing": {
@@ -78,6 +85,16 @@
     "reason": "historical-price-unverified",
     "primaryOffer": null,
     "offers": []
+  },
+  "referenceTokenPricing": {
+    "currency": "USD",
+    "basis": "provider-median",
+    "rates": { "input": 0.57, "output": 2.3, "cacheRead": null, "cacheWrite": null },
+    "source": {
+      "name": "Models.dev provider median",
+      "url": "https://models.dev/api.json",
+      "observedAt": "2026-07-31"
+    }
   },
   "releaseDate": "2025-07-11",
   "lifecycle": "deprecated",

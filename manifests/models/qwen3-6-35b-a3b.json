@@ -50,6 +50,7 @@
       "title": "Qwen3.6-35B-A3B official model card",
       "fields": [
         "size",
+        "activeParameters",
         "contextWindow",
         "inputModalities",
         "outputModalities",
@@ -79,7 +80,8 @@
   "websiteUrl": "https://qwen.ai",
   "docsUrl": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
   "vendor": "Alibaba",
-  "size": "35B (3B active)",
+  "size": "35B",
+  "activeParameters": "3B",
   "contextWindow": 262144,
   "maxOutput": null,
   "tokenPricing": {

@@ -56,7 +56,13 @@
     {
       "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
       "title": "Llama 4 Maverick official model card",
-      "fields": ["size", "contextWindow", "knowledgeCutoff", "platformUrls.huggingface"]
+      "fields": [
+        "size",
+        "activeParameters",
+        "contextWindow",
+        "knowledgeCutoff",
+        "platformUrls.huggingface"
+      ]
     },
     {
       "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
@@ -72,15 +78,21 @@
       "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
       "title": "Llama 4 Maverick official model card — LiveCodeBench, 2024-10-01 to 2025-02-01; Instruction-tuned model; 0-shot pass@1; label: Llama 4 Maverick; observed 2026-07-21",
       "fields": ["benchmarks.liveCodeBench"]
+    },
+    {
+      "url": "https://models.dev/api.json",
+      "title": "Models.dev pricing catalog",
+      "fields": ["referenceTokenPricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://ai.meta.com",
   "docsUrl": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
   "vendor": "Meta",
-  "size": "400B (17B active)",
+  "size": "400B",
+  "activeParameters": "17B",
   "contextWindow": 1000000,
   "maxOutput": null,
   "tokenPricing": {
@@ -88,6 +100,16 @@
     "reason": "open-weights-only",
     "primaryOffer": null,
     "offers": []
+  },
+  "referenceTokenPricing": {
+    "currency": "USD",
+    "basis": "provider-median",
+    "rates": { "input": 0.2, "output": 0.8, "cacheRead": 0.0525, "cacheWrite": null },
+    "source": {
+      "name": "Models.dev provider median",
+      "url": "https://models.dev/api.json",
+      "observedAt": "2026-07-31"
+    }
   },
   "releaseDate": "2025-04-05",
   "lifecycle": "maintained",

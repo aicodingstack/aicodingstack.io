@@ -72,6 +72,7 @@
   "docsUrl": "https://www.anthropic.com/news/claude-3-5-sonnet",
   "vendor": "Anthropic",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 200000,
   "maxOutput": 8192,
   "tokenPricing": {

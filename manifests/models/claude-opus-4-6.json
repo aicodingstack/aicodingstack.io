@@ -79,6 +79,7 @@
   "docsUrl": "https://platform.claude.com/docs/en/about-claude/models/overview",
   "vendor": "Anthropic",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 1000000,
   "maxOutput": 128000,
   "tokenPricing": {

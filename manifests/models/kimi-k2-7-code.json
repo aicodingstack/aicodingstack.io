@@ -47,32 +47,38 @@
         "name",
         "description",
         "size",
+        "activeParameters",
         "contextWindow",
         "tokenPricing",
         "inputModalities",
         "outputModalities",
-        "capabilities",
-        "lifecycle"
+        "capabilities"
       ]
     },
     {
       "url": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html",
       "title": "Kimi Code release notes",
-      "fields": ["releaseDate", "lifecycle"]
+      "fields": ["releaseDate"]
+    },
+    {
+      "url": "https://www.kimi.com/code/docs/en/kimi-code/models.html",
+      "title": "Current Kimi Code model availability",
+      "fields": ["lifecycle"]
     },
     {
       "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
       "title": "Kimi K2.7 Code official model card",
-      "fields": ["size", "contextWindow", "platformUrls.huggingface"]
+      "fields": ["size", "activeParameters", "contextWindow", "platformUrls.huggingface"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.kimi.com",
   "docsUrl": "https://www.kimi.com/resources/kimi-k2-7-code",
   "vendor": "Moonshot",
-  "size": "1T (32B active)",
+  "size": "1T",
+  "activeParameters": "32B",
   "contextWindow": 262144,
   "maxOutput": null,
   "tokenPricing": {
@@ -101,7 +107,7 @@
     ]
   },
   "releaseDate": "2026-06-12",
-  "lifecycle": "latest",
+  "lifecycle": "maintained",
   "knowledgeCutoff": null,
   "inputModalities": ["text", "image", "video"],
   "outputModalities": ["text"],

@@ -67,6 +67,7 @@
   "docsUrl": "https://x.ai/news/grok-4-1-fast",
   "vendor": "xAI",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 2000000,
   "maxOutput": null,
   "tokenPricing": {

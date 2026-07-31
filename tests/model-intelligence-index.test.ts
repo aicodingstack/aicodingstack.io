@@ -241,7 +241,17 @@ describe('model intelligence index', () => {
       'deepseek-3-2',
       'deepseek-v4-pro',
     ])
-    expect(deepSeekSeries[1]?.points.map(point => point.modelId)).toEqual(['deepseek-v4-flash'])
+    expect(
+      deepSeekSeries[1]?.points.map(point => [
+        point.modelId,
+        point.score,
+        point.estimated,
+        point.configuration,
+      ])
+    ).toEqual([
+      ['deepseek-v4-flash-preview', 40, false, 'DeepSeek V4 Flash (max)'],
+      ['deepseek-v4-flash', 50, false, 'DeepSeek V4 Flash 0731 (max)'],
+    ])
   })
 
   it('orders Google product lines from Gemini Pro through Gemma', () => {

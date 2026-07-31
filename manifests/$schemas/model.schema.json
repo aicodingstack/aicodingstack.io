@@ -13,8 +13,14 @@
         "size": {
           "type": ["string", "null"],
           "minLength": 1,
+          "pattern": "^(?:[1-9][0-9]{0,2}(?:\\.[0-9]*[1-9])?[MB]|[1-9][0-9]*(?:\\.[0-9]*[1-9])?T)$",
           "not": { "const": "Unknown" },
-          "description": "Officially disclosed model parameter size (e.g., '7B', '32B', '200B'); null when the vendor does not disclose it. Placeholder strings such as 'Unknown' are forbidden."
+          "description": "Officially disclosed total model parameter size in canonical M/B/T notation (e.g., '7B', '32B', '1T'); null when the vendor does not disclose it. Use the largest exact unit, without commas, leading zeroes, or trailing decimal zeroes. Activated parameters belong in activeParameters. Placeholder strings such as 'Unknown' are forbidden."
+        },
+        "activeParameters": {
+          "type": ["string", "null"],
+          "pattern": "^(?:[1-9][0-9]{0,2}(?:\\.[0-9]*[1-9])?[MB]|[1-9][0-9]*(?:\\.[0-9]*[1-9])?T)$",
+          "description": "Officially disclosed activated parameter count for sparse or mixture-of-experts models in canonical M/B/T notation (e.g., '3B', '17B', '6.5B'); null when not applicable or undisclosed. Use the largest exact unit, without commas, leading zeroes, or trailing decimal zeroes."
         },
         "contextWindow": {
           "type": "number",
@@ -135,6 +141,7 @@
       },
       "required": [
         "size",
+        "activeParameters",
         "contextWindow",
         "maxOutput",
         "tokenPricing",

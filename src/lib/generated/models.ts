@@ -35,6 +35,7 @@ import DeepseekV31 from '../../../manifests/models/deepseek-v3-1.json'
 import DeepseekV32Exp from '../../../manifests/models/deepseek-v3-2-exp.json'
 import DeepseekV3Terminus from '../../../manifests/models/deepseek-v3-terminus.json'
 import DeepseekV4Flash from '../../../manifests/models/deepseek-v4-flash.json'
+import DeepseekV4FlashPreview from '../../../manifests/models/deepseek-v4-flash-preview.json'
 import DeepseekV4Pro from '../../../manifests/models/deepseek-v4-pro.json'
 import Devstral2 from '../../../manifests/models/devstral-2.json'
 import DevstralSmall2 from '../../../manifests/models/devstral-small-2.json'
@@ -160,6 +161,7 @@ export const modelsData = [
   DeepseekV32Exp,
   DeepseekV3Terminus,
   DeepseekV3,
+  DeepseekV4FlashPreview,
   DeepseekV4Flash,
   DeepseekV4Pro,
   Devstral2,

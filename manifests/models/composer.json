@@ -2,7 +2,7 @@
   "$schema": "../$schemas/model.schema.json",
   "id": "composer",
   "name": "Composer",
-  "description": "Fast frontier coding model from Cursor optimized with RL for interactive software engineering, trained as a mixture-of-experts to deliveries high-speed code assistance.",
+  "description": "Fast frontier coding model from Cursor optimized with RL for interactive software engineering and trained as a mixture-of-experts for high-speed code assistance.",
   "translations": {
     "zh-Hans": {
       "description": "Cursor 发布的高速前沿编码模型，采用 MoE 架构与强化学习针对交互式软件工程优化，可在真实开发环境中快速提供代码辅助。"
@@ -39,10 +39,31 @@
     }
   },
   "verified": false,
+  "sources": [
+    {
+      "url": "https://cursor.com/changelog/2-0",
+      "title": "Cursor 2.0 Composer launch",
+      "fields": ["name", "releaseDate"]
+    },
+    {
+      "url": "https://cursor.com/blog/composer",
+      "title": "Composer model research announcement",
+      "fields": ["description", "capabilities"]
+    },
+    {
+      "url": "https://forum.cursor.com/t/clarification-on-composer-1-retirement-march-16-migration-email/154239/3",
+      "title": "Composer 1 retirement confirmation",
+      "fields": ["lifecycle"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
   "websiteUrl": "https://cursor.com",
   "docsUrl": "https://cursor.com/blog/composer",
   "vendor": "Anysphere",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 128000,
   "maxOutput": 8000,
   "tokenPricing": {
@@ -70,8 +91,8 @@
       }
     ]
   },
-  "releaseDate": null,
-  "lifecycle": "latest",
+  "releaseDate": "2025-10-29",
+  "lifecycle": "deprecated",
   "knowledgeCutoff": null,
   "inputModalities": ["text"],
   "outputModalities": ["text"],

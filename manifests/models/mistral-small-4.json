@@ -47,6 +47,7 @@
         "name",
         "description",
         "size",
+        "activeParameters",
         "contextWindow",
         "releaseDate",
         "lifecycle",
@@ -77,7 +78,8 @@
   "websiteUrl": "https://mistral.ai",
   "docsUrl": "https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03",
   "vendor": "Mistral AI",
-  "size": "119B (6.5B active)",
+  "size": "119B",
+  "activeParameters": "6.5B",
   "contextWindow": 262144,
   "maxOutput": null,
   "tokenPricing": {

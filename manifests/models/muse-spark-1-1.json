@@ -49,6 +49,7 @@
         "contextWindow",
         "releaseDate",
         "lifecycle",
+        "tokenPricing",
         "inputModalities",
         "outputModalities",
         "capabilities"
@@ -58,22 +59,38 @@
       "url": "https://developer.meta.com/ai",
       "title": "Meta Model API documentation",
       "fields": ["docsUrl"]
+    },
+    {
+      "url": "https://models.dev/api.json",
+      "title": "Models.dev Meta pricing record",
+      "fields": ["referenceTokenPricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://ai.meta.com",
   "docsUrl": "https://developer.meta.com/ai",
   "vendor": "Meta",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 1000000,
   "maxOutput": null,
   "tokenPricing": {
-    "status": "not-applicable",
-    "reason": "open-weights-only",
+    "status": "unavailable",
+    "reason": "official-price-not-published",
     "primaryOffer": null,
     "offers": []
+  },
+  "referenceTokenPricing": {
+    "currency": "USD",
+    "basis": "first-party-api",
+    "rates": { "input": 1.25, "output": 4.25, "cacheRead": 0.15, "cacheWrite": null },
+    "source": {
+      "name": "Models.dev — Meta",
+      "url": "https://models.dev/api.json",
+      "observedAt": "2026-07-31"
+    }
   },
   "releaseDate": "2026-07-09",
   "lifecycle": "latest",

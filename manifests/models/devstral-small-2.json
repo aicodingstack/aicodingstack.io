@@ -67,6 +67,7 @@
   "docsUrl": "https://docs.mistral.ai/models/model-cards/devstral-small-2-25-12",
   "vendor": "Mistral AI",
   "size": "24B",
+  "activeParameters": null,
   "contextWindow": 262144,
   "maxOutput": null,
   "tokenPricing": {

@@ -66,6 +66,7 @@
   "docsUrl": "https://platform.moonshot.ai/docs",
   "vendor": "Moonshot",
   "size": "2.8T",
+  "activeParameters": null,
   "contextWindow": 1000000,
   "maxOutput": null,
   "tokenPricing": {

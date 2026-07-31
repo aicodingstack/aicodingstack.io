@@ -48,6 +48,7 @@
         "description",
         "docsUrl",
         "size",
+        "activeParameters",
         "contextWindow",
         "inputModalities",
         "outputModalities",
@@ -60,15 +61,21 @@
       "url": "https://artificialanalysis.ai/models/mimo-v2-flash",
       "title": "Artificial Analysis MiMo-V2-Flash model page",
       "fields": ["releaseDate", "platformUrls.artificialAnalysis"]
+    },
+    {
+      "url": "https://models.dev/api.json",
+      "title": "Models.dev Xiaomi pricing records",
+      "fields": ["referenceTokenPricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-27",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://mimo.xiaomi.com/",
   "docsUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash",
   "vendor": "Xiaomi",
-  "size": "309B (15B active)",
+  "size": "309B",
+  "activeParameters": "15B",
   "contextWindow": 262144,
   "maxOutput": null,
   "tokenPricing": {
@@ -76,6 +83,16 @@
     "reason": "official-price-not-published",
     "primaryOffer": null,
     "offers": []
+  },
+  "referenceTokenPricing": {
+    "currency": "USD",
+    "basis": "first-party-api",
+    "rates": { "input": 0.14, "output": 0.28, "cacheRead": 0.0028, "cacheWrite": null },
+    "source": {
+      "name": "Models.dev — Xiaomi",
+      "url": "https://models.dev/api.json",
+      "observedAt": "2026-07-31"
+    }
   },
   "releaseDate": "2025-12-16",
   "lifecycle": "maintained",

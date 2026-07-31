@@ -79,6 +79,7 @@
   "docsUrl": "https://qwen.ai/blog?id=qwen3.6-max-preview",
   "vendor": "Alibaba",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 256000,
   "maxOutput": null,
   "tokenPricing": {

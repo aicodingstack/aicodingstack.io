@@ -48,6 +48,7 @@
         "description",
         "docsUrl",
         "size",
+        "activeParameters",
         "contextWindow",
         "inputModalities",
         "outputModalities",
@@ -64,15 +65,21 @@
       "url": "https://artificialanalysis.ai/models/mimo-v2-5-pro",
       "title": "Artificial Analysis MiMo-V2.5-Pro model page",
       "fields": ["platformUrls.artificialAnalysis"]
+    },
+    {
+      "url": "https://models.dev/api.json",
+      "title": "Models.dev Xiaomi pricing records",
+      "fields": ["referenceTokenPricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-27",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://mimo.xiaomi.com/",
   "docsUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
   "vendor": "Xiaomi",
-  "size": "1.02T (42B active)",
+  "size": "1.02T",
+  "activeParameters": "42B",
   "contextWindow": 1048576,
   "maxOutput": null,
   "tokenPricing": {
@@ -80,6 +87,16 @@
     "reason": "official-price-not-published",
     "primaryOffer": null,
     "offers": []
+  },
+  "referenceTokenPricing": {
+    "currency": "USD",
+    "basis": "first-party-api",
+    "rates": { "input": 0.435, "output": 0.87, "cacheRead": 0.0036, "cacheWrite": null },
+    "source": {
+      "name": "Models.dev — Xiaomi",
+      "url": "https://models.dev/api.json",
+      "observedAt": "2026-07-31"
+    }
   },
   "releaseDate": "2026-04-22",
   "lifecycle": "latest",

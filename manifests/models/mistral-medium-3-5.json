@@ -78,6 +78,7 @@
   "docsUrl": "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
   "vendor": "Mistral AI",
   "size": "128B",
+  "activeParameters": null,
   "contextWindow": 256000,
   "maxOutput": null,
   "tokenPricing": {
