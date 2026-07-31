@@ -5,37 +5,37 @@
   "description": "Hybrid thinking and non-thinking model with stronger agentic coding, tool use, and a 128K context window.",
   "translations": {
     "zh-Hans": {
-      "description": "DeepSeek-V3.1 是 DeepSeek 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "支持思考与非思考模式，强化智能体编码和工具使用，并提供 128K 上下文窗口。"
     },
     "de": {
-      "description": "DeepSeek-V3.1 ist eine eigenständige Modellversion von DeepSeek mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Modell mit Denk- und Direktmodus, stärkerem agentischem Coding, Werkzeugnutzung und 128K Kontext."
     },
     "es": {
-      "description": "DeepSeek-V3.1 es una versión de modelo independiente de DeepSeek con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo con modos de razonamiento y respuesta directa, mejor programación agéntica, herramientas y contexto de 128K."
     },
     "fr": {
-      "description": "DeepSeek-V3.1 est une version de modèle distincte de DeepSeek, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle avec modes raisonné et direct, meilleur codage agentique, outils et contexte de 128K."
     },
     "id": {
-      "description": "DeepSeek-V3.1 adalah versi model mandiri dari DeepSeek dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model dengan mode berpikir dan nonberpikir, coding agentik yang lebih kuat, penggunaan alat, dan konteks 128K."
     },
     "ja": {
-      "description": "DeepSeek-V3.1 は DeepSeek が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "思考・非思考モード、強化されたエージェント型コーディング、ツール利用、128Kコンテキストを備えたモデル。"
     },
     "ko": {
-      "description": "DeepSeek-V3.1은(는) DeepSeek가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "사고·비사고 모드, 강화된 에이전트 코딩과 도구 사용, 128K 컨텍스트를 지원하는 모델입니다."
     },
     "pt": {
-      "description": "DeepSeek-V3.1 é uma versão de modelo independente da DeepSeek, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo com modos de raciocínio e resposta direta, programação agêntica mais forte, ferramentas e contexto de 128K."
     },
     "ru": {
-      "description": "DeepSeek-V3.1 — самостоятельная версия модели от DeepSeek с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Модель с режимами рассуждения и прямого ответа, улучшенным агентным программированием, инструментами и контекстом 128K."
     },
     "tr": {
-      "description": "DeepSeek-V3.1, DeepSeek tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Düşünme ve doğrudan yanıt modları, güçlü ajan tabanlı kodlama, araç kullanımı ve 128K bağlam sunan model."
     },
     "zh-Hant": {
-      "description": "DeepSeek-V3.1 是 DeepSeek 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "支援思考與非思考模式，強化代理程式設計和工具使用，並提供 128K 上下文視窗。"
     }
   },
   "verified": true,

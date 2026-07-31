@@ -29,13 +29,13 @@
       "description": "Модель Anthropic Opus для сложного агентного программирования и корпоративных задач с контекстом 1 млн токенов, адаптивным мышлением и выводом 128K."
     },
     "tr": {
-      "description": "Anthropic’in 1 milyon token bağlam, uyarlanabilir düşünme ve 128K çıktı sunan karmaşık aracı kodlama ve kurumsal iş modeli Opus."
+      "description": "Anthropic’in 1 milyon token bağlam, uyarlanabilir düşünme ve 128K çıktı sunan karmaşık ajan tabanlı kodlama ve kurumsal iş modeli Opus."
     },
     "zh-Hans": {
       "description": "Anthropic 面向复杂智能体编码和企业工作的 Opus 模型，提供 100 万 token 上下文、自适应思考和 128K 输出。"
     },
     "zh-Hant": {
-      "description": "Anthropic 面向複雜智慧體編碼和企業工作的 Opus 模型，提供 100 萬 token 上下文、自適應思考和 128K 輸出。"
+      "description": "Anthropic 面向複雜智慧體程式設計和企業工作的 Opus 模型，提供 100 萬 token 上下文、調適式思考和 128K 輸出。"
     }
   },
   "verified": true,

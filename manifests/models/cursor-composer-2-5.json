@@ -29,13 +29,13 @@
       "description": "Эффективная модель агента программирования Cursor для интерактивной разработки, надёжных инструментов и длительных инженерных задач."
     },
     "tr": {
-      "description": "Cursor'ın etkileşimli geliştirme, güvenilir araç kullanımı ve uzun süreli yazılım mühendisliği görevleri için verimli kodlama aracısı modeli."
+      "description": "Cursor'ın etkileşimli geliştirme, güvenilir araç kullanımı ve uzun süreli yazılım mühendisliği görevleri için verimli kodlama ajanı modeli."
     },
     "zh-Hans": {
       "description": "Cursor 面向交互式开发、可靠工具调用和长周期软件工程任务的高效编码智能体模型。"
     },
     "zh-Hant": {
-      "description": "Cursor 面向互動式開發、可靠工具呼叫和長週期軟體工程任務的高效編碼智慧體模型。"
+      "description": "Cursor 面向互動式開發、可靠工具呼叫和長週期軟體工程任務的高效程式設計智慧體模型。"
     }
   },
   "verified": true,

@@ -41,10 +41,10 @@
       "description": "코딩 및 콘텐츠 생성을 포함한 다양한 응용 프로그램을 위한 고급 언어 모델과 AI 서비스를 제공하는 AI 플랫폼입니다."
     },
     "es": {
-      "description": "Plataforma IA que ofrece modelos de lenguaje avanzados y servicios IA para varias aplicaciones, incluyendo codificacion y generacion de contenido."
+      "description": "Plataforma de IA que ofrece modelos de lenguaje avanzados y servicios de IA para distintas aplicaciones, incluidas la programación y la generación de contenido."
     },
     "fr": {
-      "description": "Plateforme IA offrant des modeles de langage avances et des services IA pour diverses applications, incluant codage et generation de contenu."
+      "description": "Plateforme d’IA proposant des modèles de langage avancés et des services d’IA pour diverses applications, notamment la programmation et la création de contenu."
     },
     "id": {
       "description": "Platform AI yang menawarkan model bahasa canggih dan layanan AI untuk berbagai aplikasi, termasuk coding dan pembuatan konten."
@@ -53,7 +53,7 @@
       "description": "コーディングとコンテンツ生成を含む様々なアプリケーションのために高度な言語モデルとAIサービスを提供するAIプラットフォーム。"
     },
     "pt": {
-      "description": "Plataforma de IA que oferece modelos de linguagem avancados e servicos de IA para varias aplicacoes, incluindo codificacao e geracao de conteudo."
+      "description": "Plataforma de IA que oferece modelos de linguagem e serviços avançados para vários aplicativos, incluindo programação e geração de conteúdo."
     },
     "ru": {
       "description": "Платформа ИИ, предоставляющая передовые языковые модели и услуги ИИ для различных приложений, включая программирование и создание контента."
@@ -62,7 +62,7 @@
       "description": "Kodlama ve içerik oluşturma dahil olmak üzere çeşitli uygulamalar için gelişmiş dil modelleri ve AI hizmetleri sunan bir AI platformu."
     },
     "zh-Hant": {
-      "description": "AI 平台，為各種應用提供先進的語言模型和 AI 服務，包括編碼和內容生成。"
+      "description": "AI 平台，為各種應用提供先進的語言模型和 AI 服務，包括程式設計和內容產生。"
     }
   },
   "verified": true,

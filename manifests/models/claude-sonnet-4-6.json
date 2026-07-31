@@ -29,13 +29,13 @@
       "description": "Сбалансированная модель Anthropic для агентного программирования, поиска, управления компьютером и повседневной работы с контекстом 1 млн токенов."
     },
     "tr": {
-      "description": "Anthropic'in 1 milyon token bağlamla aracı kodlama, arama, bilgisayar kullanımı ve günlük üretim işleri için dengeli modeli."
+      "description": "Anthropic'in 1 milyon token bağlamla ajan tabanlı kodlama, arama, bilgisayar kullanımı ve günlük üretim işleri için dengeli modeli."
     },
     "zh-Hans": {
       "description": "Anthropic 面向智能体编码、搜索、计算机使用和日常生产工作的均衡模型，提供 100 万 token 上下文。"
     },
     "zh-Hant": {
-      "description": "Anthropic 面向智慧體編碼、搜尋、電腦使用和日常生產工作的均衡模型，提供 100 萬 token 上下文。"
+      "description": "Anthropic 面向智慧體程式設計、搜尋、電腦使用和日常生產工作的均衡模型，提供 100 萬 token 上下文。"
     }
   },
   "verified": true,

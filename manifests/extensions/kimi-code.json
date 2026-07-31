@@ -20,7 +20,7 @@
       "description": "Kimi Code for VS Code는 Moonshot AI의 코딩 에이전트를 편집기 컨텍스트, 저장소 인식 변경, 터미널 작업, Kimi Code CLI와 공유하는 워크플로에 통합합니다."
     },
     "pt": {
-      "description": "O Kimi Code para VS Code integra o agente da Moonshot AI ao contexto do editor, a alterações do repositório, operações de terminal e fluxos compartilhados com o Kimi Code CLI."
+      "description": "O Kimi Code para VS Code integra o agente da Moonshot AI ao contexto do editor, às mudanças no repositório, às operações de terminal e aos fluxos compartilhados com o Kimi Code CLI."
     },
     "ru": {
       "description": "Kimi Code для VS Code интегрирует агент программирования Moonshot AI с контекстом редактора, изменениями с учетом репозитория, операциями терминала и общими процессами с Kimi Code CLI."
@@ -32,7 +32,7 @@
       "description": "Kimi Code for VS Code 将 Moonshot AI 的编码代理与编辑器上下文、仓库感知变更、终端操作，以及 Kimi Code CLI 的共享工作流集成起来。"
     },
     "zh-Hant": {
-      "description": "Kimi Code for VS Code 將 Moonshot AI 的編碼代理與編輯器內容、儲存庫感知變更、終端機操作，以及 Kimi Code CLI 的共享工作流程整合起來。"
+      "description": "Kimi Code for VS Code 將 Moonshot AI 的程式設計代理與編輯器內容、儲存庫感知變更、終端機操作，以及 Kimi Code CLI 的共享工作流程整合起來。"
     }
   },
   "verified": false,

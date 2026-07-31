@@ -32,7 +32,7 @@
       "description": "Factory Desktop 是一个独立工作区，可用于协调 Droids、并行运行编码任务、审查预览和差异，以及管理持久化开发会话。"
     },
     "zh-Hant": {
-      "description": "Factory Desktop 是一個獨立工作區，可用於協調 Droids、平行執行編碼任務、檢查預覽和差異，以及管理持久化開發工作階段。"
+      "description": "Factory Desktop 是一個獨立工作區，可用於協調 Droids、平行執行程式設計任務、檢查預覽和差異，以及管理持久化開發工作階段。"
     }
   },
   "verified": true,

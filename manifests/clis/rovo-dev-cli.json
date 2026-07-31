@@ -36,7 +36,7 @@
       "description": "Rovo Dev CLI 是 Atlassian 的终端编码代理，可用于理解代码仓库、生成和重构代码、运行测试、使用 worktree，以及连接 Jira 和 Confluence。"
     },
     "zh-Hant": {
-      "description": "Rovo Dev CLI 是 Atlassian 的終端編碼代理，可用於理解程式碼儲存庫、產生和重構程式碼、執行測試、使用 worktree，以及連接 Jira 和 Confluence。"
+      "description": "Rovo Dev CLI 是 Atlassian 的終端機程式設計代理，可用於理解程式碼儲存庫、產生和重構程式碼、執行測試、使用 worktree，以及連接 Jira 和 Confluence。"
     }
   },
   "verified": false,

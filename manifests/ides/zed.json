@@ -35,7 +35,7 @@
       "description": "İnsanlar ve AI ile yüksek performanslı işbirliği için Rust ile inşa edilmiş yeni nesil kod düzenleyici. Ajan tabanlı düzenleme, çoklu tampon düzenleme ve yerel Git desteği özelliklerine sahiptir."
     },
     "zh-Hant": {
-      "description": "用 Rust 構建的下一代代碼編輯器，專為與人類和 AI 的高性能協作而設計。具有智能編輯、多緩衝區編輯和原生 Git 支持。"
+      "description": "以 Rust 建置的次世代程式碼編輯器，專為人類與 AI 的高效能協作而設計，具備智慧編輯、多緩衝區編輯與原生 Git 支援。"
     }
   },
   "verified": true,

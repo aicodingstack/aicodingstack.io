@@ -29,7 +29,7 @@
       "description": "Закрытая модель для высокопроизводительных длинных агентных процессов, работы с инструментами и выполнения сложных инструкций."
     },
     "tr": {
-      "description": "Yüksek hacimli, uzun zincirli aracı iş akışları, araç kullanımı ve karmaşık talimat yürütme için optimize edilmiş tescilli model."
+      "description": "Yüksek hacimli, uzun zincirli ajan iş akışları, araç kullanımı ve karmaşık talimat yürütme için optimize edilmiş tescilli model."
     },
     "zh-Hans": {
       "description": "一款面向高吞吐、长链路智能体工作流、工具使用和复杂指令执行优化的闭源模型。"

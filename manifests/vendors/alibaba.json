@@ -46,10 +46,10 @@
       "description": "알리바바.com, 타오바오 및 알리바바 클라우드와 같은 플랫폼을 통해 전자상거래, 소매, 클라우드 컴퓨팅, AI 및 디지털 서비스를 전문으로 하는 중국의 다국적 기술 기업입니다."
     },
     "es": {
-      "description": "Empresa multinacional de tecnología china especializada en comercio electrónico, comercio minorista, computación en la nube, IA y servicios digitales a través de plataformas como Alibaba..."
+      "description": "Multinacional tecnológica china especializada en comercio electrónico, venta minorista, nube, IA y servicios digitales mediante plataformas como Alibaba.com, Taobao y Alibaba Cloud."
     },
     "fr": {
-      "description": "Société technologique multinationale chinoise specialisée dans le commerce électronique, le commerce de détail, le cloud computing, l'IA et les services numériques via des plateformes comme Alibaba..."
+      "description": "Multinationale chinoise spécialisée dans le commerce électronique, la vente au détail, le cloud, l’IA et les services numériques via des plateformes comme Alibaba.com, Taobao et Alibaba Cloud."
     },
     "id": {
       "description": "Perusahaan teknologi multinasional Tiongkok yang berspesialisasi dalam e-commerce, ritel, cloud computing, AI, dan layanan digital melalui platform seperti Alibaba.com, Taobao, dan Alibaba Cloud."
@@ -58,16 +58,16 @@
       "description": "Alibaba.com、Taobao、Alibaba Cloudなどのプラットフォームを通じて、eコマース、小売、クラウドコンピューティング、AI、デジタルサービスを専門とする中国の多国籍テクノロジー企業。"
     },
     "pt": {
-      "description": "Empresa multinacional de tecnologia chinesa especializada em e-commerce, varejo, computação em nuvem, IA e serviços digitais através de plataformas como Alibaba.com, Taobao e Alibaba Cloud."
+      "description": "Empresa multinacional chinesa de tecnologia especializada em e-commerce, varejo, computação em nuvem, IA e serviços digitais por plataformas como Alibaba.com, Taobao e Alibaba Cloud."
     },
     "ru": {
-      "description": "Китайская транснациональная технологическая компания, специализирующаяся на электронной коммерции, розничной торговле, облачных вычислениях, ИИ и цифровых услугах через такие платформы, как Alibaba..."
+      "description": "Китайская транснациональная технологическая компания в сфере электронной коммерции, розничной торговли, облачных вычислений, ИИ и цифровых услуг, развивающая Alibaba.com, Taobao и Alibaba Cloud."
     },
     "tr": {
       "description": "Alibaba.com, Taobao ve Alibaba Cloud gibi platformlar üzerinden e-ticaret, perakende, bulut bilişim, yapay zeka ve dijital hizmetlere odaklanan Çin merkezli çok uluslu teknoloji şirketi."
     },
     "zh-Hant": {
-      "description": "中國跨國科技公司，專注於電子商務、零售、雲計算、AI 和數字服務，旗下擁有阿裡巴巴、淘寶和阿裡雲等平台。"
+      "description": "中國跨國科技公司，專注於電子商務、零售、雲端運算、AI 與數位服務，旗下平台包括 Alibaba.com、淘寶與阿里雲。"
     }
   },
   "verified": true,

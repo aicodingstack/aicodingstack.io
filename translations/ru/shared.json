@@ -81,9 +81,9 @@
     "totalContext": "Общий контекст"
   },
   "lifecycle": {
-    "deprecated": "Устарело",
-    "latest": "Новейшие",
-    "maintained": "Поддерживаются"
+    "deprecated": "Устаревшая",
+    "latest": "Новая",
+    "maintained": "Поддерживаемая"
   },
   "modelPricing": {
     "cacheRead": "Чтение кеша",

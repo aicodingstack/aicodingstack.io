@@ -5,37 +5,37 @@
   "description": "Experimental V3.2 checkpoint introducing sparse attention for more efficient long-context coding and agent tasks.",
   "translations": {
     "zh-Hans": {
-      "description": "DeepSeek-V3.2-Exp 是 DeepSeek 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "实验性 V3.2 模型，引入稀疏注意力，以提高长上下文编码和智能体任务的效率。"
     },
     "de": {
-      "description": "DeepSeek-V3.2-Exp ist eine eigenständige Modellversion von DeepSeek mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Experimenteller V3.2-Checkpoint mit Sparse Attention für effizienteres Langkontext-Coding und Agentenaufgaben."
     },
     "es": {
-      "description": "DeepSeek-V3.2-Exp es una versión de modelo independiente de DeepSeek con capacidades explícitas de programación o ingeniería de software."
+      "description": "Versión experimental V3.2 con atención dispersa para programación de contexto largo y tareas agénticas más eficientes."
     },
     "fr": {
-      "description": "DeepSeek-V3.2-Exp est une version de modèle distincte de DeepSeek, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Version expérimentale V3.2 avec attention clairsemée pour le codage à contexte long et les tâches agentiques."
     },
     "id": {
-      "description": "DeepSeek-V3.2-Exp adalah versi model mandiri dari DeepSeek dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Checkpoint eksperimental V3.2 dengan sparse attention untuk coding konteks panjang dan tugas agen yang lebih efisien."
     },
     "ja": {
-      "description": "DeepSeek-V3.2-Exp は DeepSeek が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "長文脈のコーディングとエージェント処理を効率化するスパースアテンションを導入した実験版V3.2。"
     },
     "ko": {
-      "description": "DeepSeek-V3.2-Exp은(는) DeepSeek가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "긴 컨텍스트 코딩과 에이전트 작업 효율을 높이는 희소 어텐션을 도입한 실험용 V3.2 체크포인트입니다."
     },
     "pt": {
-      "description": "DeepSeek-V3.2-Exp é uma versão de modelo independente da DeepSeek, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Versão experimental V3.2 com atenção esparsa para programação de contexto longo e tarefas agênticas mais eficientes."
     },
     "ru": {
-      "description": "DeepSeek-V3.2-Exp — самостоятельная версия модели от DeepSeek с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Экспериментальная версия V3.2 с разреженным вниманием для эффективной работы с длинным контекстом и агентами."
     },
     "tr": {
-      "description": "DeepSeek-V3.2-Exp, DeepSeek tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Uzun bağlamlı kodlama ve ajan görevlerini verimli kılan seyrek dikkat mekanizmalı deneysel V3.2 sürümü."
     },
     "zh-Hant": {
-      "description": "DeepSeek-V3.2-Exp 是 DeepSeek 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "實驗性 V3.2 模型，引入稀疏注意力，以提升長上下文程式設計和代理任務的效率。"
     }
   },
   "verified": true,

@@ -29,13 +29,13 @@
       "description": "Модель рассуждений MiniMax с открытыми весами для программирования, агентных инструментов, поиска и полного цикла разработки ПО."
     },
     "tr": {
-      "description": "MiniMax'in kodlama, aracı araç kullanımı, arama ve uçtan uca yazılım geliştirme için açık ağırlıklı akıl yürütme modeli."
+      "description": "MiniMax'in kodlama, ajanların araç kullanımı, arama ve uçtan uca yazılım geliştirme için açık ağırlıklı akıl yürütme modeli."
     },
     "zh-Hans": {
       "description": "MiniMax 面向编码、智能体工具调用、搜索和端到端软件开发的开放权重推理模型。"
     },
     "zh-Hant": {
-      "description": "MiniMax 面向編碼、智慧體工具呼叫、搜尋和端到端軟體開發的開放權重推理模型。"
+      "description": "MiniMax 面向程式設計、智慧體工具呼叫、搜尋和端到端軟體開發的開放權重推理模型。"
     }
   },
   "verified": true,

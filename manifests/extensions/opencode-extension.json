@@ -32,7 +32,7 @@
       "description": "OpenCode Extension 将开源 OpenCode 代理连接到兼容 VS Code 的编辑器，提供编辑器上下文、文件引用，以及终端代理共享会话。"
     },
     "zh-Hant": {
-      "description": "OpenCode Extension 將開源 OpenCode 代理連接到相容 VS Code 的編輯器，提供編輯器內容、檔案參照，以及終端代理共享工作階段。"
+      "description": "OpenCode Extension 將開放原始碼 OpenCode 代理連接到相容 VS Code 的編輯器，提供編輯器內容、檔案參照，以及終端機代理共享工作階段。"
     }
   },
   "verified": false,

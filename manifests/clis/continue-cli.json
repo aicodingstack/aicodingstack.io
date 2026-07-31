@@ -35,7 +35,7 @@
       "description": "Continue CLI, açık kaynaklı bir terminal kodlama ajanıydı. Cursor, Continue’u satın aldı; 2.0.0 son sürüm oldu ve proje artık aktif olarak sürdürülmüyor."
     },
     "zh-Hant": {
-      "description": "Continue CLI 曾是一款開源終端編碼 Agent。Cursor 收購 Continue 後，2.0.0 成為最終版本，該專案不再積極維護。"
+      "description": "Continue CLI 曾是一款開放原始碼終端機程式設計 Agent。Cursor 收購 Continue 後，2.0.0 成為最終版本，該專案不再積極維護。"
     }
   },
   "verified": true,

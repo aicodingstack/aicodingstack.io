@@ -5,23 +5,23 @@
   },
   "meta": {
     "description": "Classificação de todos os projetos de código aberto no AI Coding Stack, ordenados por estrelas do GitHub. Veja estatísticas e tendências de ferramentas de código aberto vs proprietárias.",
-    "title": "Classificação de Projetos de Código Aberto"
+    "title": "Classificação de projetos de código aberto"
   },
   "noResults": "Nenhum projeto de código aberto encontrado para esta categoria.",
   "note": "Nota: Esta página mostra apenas projetos com repositórios GitHub. Alguns projetos, embora não sejam de código aberto, mantêm repositórios GitHub como canais de feedback dos usuários.",
   "statistics": {
     "closedSourceCount": "Projetos proprietários",
-    "closedSourcePercentage": "Porcentagem Proprietária",
-    "licenseBreakdown": "Distribuição de Licenças",
-    "openSourceCount": "Projetos open source",
+    "closedSourcePercentage": "Porcentagem proprietária",
+    "licenseBreakdown": "Distribuição de licenças",
+    "openSourceCount": "Projetos de código aberto",
     "projects": "projetos",
-    "title": "Distribuição de Código Aberto vs Proprietário",
-    "totalProjects": "Total de Projetos"
+    "title": "Distribuição entre código aberto e proprietário",
+    "totalProjects": "Total de projetos"
   },
   "table": {
-    "openSourceTitle": "Projetos open source ({count})",
+    "openSourceTitle": "Projetos de código aberto ({count})",
     "proprietaryTitle": "Projetos proprietários ({count})",
     "rank": "Classificação"
   },
-  "title": "Classificação de Projetos de Código Aberto"
+  "title": "Classificação de projetos de código aberto"
 }

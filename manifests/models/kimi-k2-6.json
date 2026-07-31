@@ -5,37 +5,37 @@
   "description": "Native multimodal agentic model for long-horizon coding, coding-driven design, autonomous execution, and agent swarms.",
   "translations": {
     "zh-Hans": {
-      "description": "Kimi K2.6 是 Moonshot 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "原生多模态智能体模型，面向长周期编码、代码驱动设计、自主执行和智能体集群。"
     },
     "de": {
-      "description": "Kimi K2.6 ist eine eigenständige Modellversion von Moonshot mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Nativ multimodales Agentenmodell für langfristiges Coding, codegestütztes Design, autonome Ausführung und Agentenschwärme."
     },
     "es": {
-      "description": "Kimi K2.6 es una versión de modelo independiente de Moonshot con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo agéntico multimodal nativo para programación prolongada, diseño guiado por código, ejecución autónoma y enjambres de agentes."
     },
     "fr": {
-      "description": "Kimi K2.6 est une version de modèle distincte de Moonshot, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle agentique multimodal natif pour le codage de longue durée, la conception par le code, l’exécution autonome et les essaims d’agents."
     },
     "id": {
-      "description": "Kimi K2.6 adalah versi model mandiri dari Moonshot dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model agen multimodal native untuk coding jangka panjang, desain berbasis kode, eksekusi otonom, dan kawanan agen."
     },
     "ja": {
-      "description": "Kimi K2.6 は Moonshot が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "長時間のコーディング、コード駆動設計、自律実行、エージェントスウォーム向けのネイティブマルチモーダルモデル。"
     },
     "ko": {
-      "description": "Kimi K2.6은(는) Moonshot가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "장기 코딩, 코드 기반 설계, 자율 실행과 에이전트 스웜을 위한 네이티브 멀티모달 에이전트 모델입니다."
     },
     "pt": {
-      "description": "Kimi K2.6 é uma versão de modelo independente da Moonshot, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo agêntico multimodal nativo para programação prolongada, design guiado por código, execução autônoma e enxames de agentes."
     },
     "ru": {
-      "description": "Kimi K2.6 — самостоятельная версия модели от Moonshot с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Нативная мультимодальная агентная модель для длительного программирования, проектирования через код, автономного выполнения и роев агентов."
     },
     "tr": {
-      "description": "Kimi K2.6, Moonshot tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Uzun süreli kodlama, kod odaklı tasarım, otonom yürütme ve ajan sürüleri için yerel çok modlu ajan modeli."
     },
     "zh-Hant": {
-      "description": "Kimi K2.6 是 Moonshot 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "原生多模態代理模型，面向長週期程式設計、程式碼驅動設計、自主執行和代理群組。"
     }
   },
   "verified": true,

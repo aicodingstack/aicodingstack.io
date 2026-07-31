@@ -5,37 +5,37 @@
   "description": "Multimodal Gemini model for fast agentic tasks, code generation, tool use, and a one-million-token context.",
   "translations": {
     "zh-Hans": {
-      "description": "Gemini 2.0 Flash 是 Google 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "面向快速智能体任务、代码生成和工具使用的多模态 Gemini 模型，提供 100 万 token 上下文。"
     },
     "de": {
-      "description": "Gemini 2.0 Flash ist eine eigenständige Modellversion von Google mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Multimodales Gemini-Modell für schnelle Agentenaufgaben, Codegenerierung, Werkzeuge und eine Million Token Kontext."
     },
     "es": {
-      "description": "Gemini 2.0 Flash es una versión de modelo independiente de Google con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo Gemini multimodal para tareas agénticas rápidas, generación de código, herramientas y un millón de tokens de contexto."
     },
     "fr": {
-      "description": "Gemini 2.0 Flash est une version de modèle distincte de Google, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle Gemini multimodal pour les tâches agentiques rapides, la génération de code, les outils et un million de jetons de contexte."
     },
     "id": {
-      "description": "Gemini 2.0 Flash adalah versi model mandiri dari Google dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model Gemini multimodal untuk tugas agen cepat, pembuatan kode, penggunaan alat, dan konteks satu juta token."
     },
     "ja": {
-      "description": "Gemini 2.0 Flash は Google が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "高速なエージェント処理、コード生成、ツール利用、100万トークンのコンテキストに対応するマルチモーダルGeminiモデル。"
     },
     "ko": {
-      "description": "Gemini 2.0 Flash은(는) Google가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "빠른 에이전트 작업, 코드 생성과 도구 사용, 100만 토큰 컨텍스트를 지원하는 멀티모달 Gemini 모델입니다."
     },
     "pt": {
-      "description": "Gemini 2.0 Flash é uma versão de modelo independente da Google, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo Gemini multimodal para tarefas agênticas rápidas, geração de código, ferramentas e contexto de um milhão de tokens."
     },
     "ru": {
-      "description": "Gemini 2.0 Flash — самостоятельная версия модели от Google с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Мультимодальная модель Gemini для быстрых агентных задач, генерации кода, инструментов и контекста в миллион токенов."
     },
     "tr": {
-      "description": "Gemini 2.0 Flash, Google tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Hızlı ajan görevleri, kod üretimi, araç kullanımı ve bir milyon token bağlam için çok modlu Gemini modeli."
     },
     "zh-Hant": {
-      "description": "Gemini 2.0 Flash 是 Google 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "面向快速代理任務、程式碼生成和工具使用的多模態 Gemini 模型，提供 100 萬 token 上下文。"
     }
   },
   "verified": true,

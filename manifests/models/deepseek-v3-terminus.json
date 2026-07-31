@@ -5,37 +5,37 @@
   "description": "DeepSeek V3.1 Terminus improves language consistency and optimizes code-agent and search-agent behavior over V3.1.",
   "translations": {
     "zh-Hans": {
-      "description": "DeepSeek V3.1 Terminus 扩展版本，67B 参数，64K 上下文窗口，专为高级推理和代码生成任务设计。"
+      "description": "DeepSeek V3.1 Terminus 在 V3.1 基础上提升语言一致性，并优化代码智能体和搜索智能体的行为。"
     },
     "de": {
-      "description": "Erweiterte Version von DeepSeek V3.1 Terminus mit 67B-Parametern und 64K-Kontextfenster, entwickelt für fortgeschrittenes Reasoning und Code-Generierung."
+      "description": "DeepSeek V3.1 Terminus verbessert gegenüber V3.1 die Sprachkonsistenz sowie das Verhalten von Code- und Suchagenten."
     },
     "ko": {
-      "description": "DeepSeek V3.1 Terminus 확장 버전으로, 67B 파라미터와 64K 컨텍스트 윈도를 갖추고 있으며고급 추론 및 코드 생성 작업을 위해 설계되었습니다."
+      "description": "DeepSeek V3.1 Terminus는 V3.1보다 언어 일관성과 코드·검색 에이전트 동작을 개선했습니다."
     },
     "es": {
-      "description": "Version extendida de DeepSeek V3.1 Terminus con 67B de parametros y ventana de contexto de 64K, disenada para tareas avanzadas de razonamiento y generacion de codigo."
+      "description": "DeepSeek V3.1 Terminus mejora la coherencia lingüística y el comportamiento de los agentes de código y búsqueda respecto a V3.1."
     },
     "fr": {
-      "description": "Version etendue de DeepSeek V3.1 Terminus avec 67B de parametres et une fenetre de contexte de 64K, concu pour des taches avancees de raisonnement et de generation de code."
+      "description": "DeepSeek V3.1 Terminus améliore la cohérence linguistique et le comportement des agents de code et de recherche par rapport à V3.1."
     },
     "id": {
-      "description": "Versi terperpanjang dari DeepSeek V3.1 Terminus dengan 67B parameter dan jendela konteks 64K, dirancang untuk tugas penalaran dan pembuatan kode tingkat lanjut."
+      "description": "DeepSeek V3.1 Terminus meningkatkan konsistensi bahasa serta perilaku agen kode dan pencarian dibandingkan V3.1."
     },
     "ja": {
-      "description": "DeepSeek V3.1 Terminusの拡張版、67Bパラメータ、64Kコンテキストウィンドウを備え、高度な推論とコード生成タスクのために設計されています。"
+      "description": "DeepSeek V3.1 Terminusは、V3.1より言語の一貫性とコード・検索エージェントの動作を改善しています。"
     },
     "pt": {
-      "description": "Versao estendida de DeepSeek V3.1 Terminus com 67B de parametros e janela de contexto de 64K, projetada para tarefas avancadas de raciocinio e geracao de codigo."
+      "description": "O DeepSeek V3.1 Terminus melhora a consistência linguística e o comportamento de agentes de código e pesquisa em relação ao V3.1."
     },
     "ru": {
-      "description": "Расширенная версия DeepSeek V3.1 Terminus с 67B параметрами и окном контекста 64K, разработанная для сложных задач рассуждения и генерации кода."
+      "description": "DeepSeek V3.1 Terminus улучшает языковую согласованность и работу агентов программирования и поиска по сравнению с V3.1."
     },
     "tr": {
-      "description": "67B parametre ve 64K baglam penceresine sahip DeepSeek V3.1 Terminus genisletilmis surumu, gelismis muhakeme ve kod olusturma gorevleri icin tasarlanmisitir."
+      "description": "DeepSeek V3.1 Terminus, V3.1’e göre dil tutarlılığını ve kodlama ile arama ajanlarının davranışını iyileştirir."
     },
     "zh-Hant": {
-      "description": "DeepSeek V3.1 Terminus 擴展版本，67B 參數，64K 上下文視窗，專為高級推理和代碼生成任務設計。"
+      "description": "DeepSeek V3.1 Terminus 在 V3.1 基礎上提升語言一致性，並最佳化程式碼代理和搜尋代理的行為。"
     }
   },
   "verified": true,

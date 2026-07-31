@@ -24,7 +24,7 @@
       "description": "omp는 해시 기반 편집, LSP 및 디버거 통합, 하위 에이전트, 영구 코드 런타임, 40개 이상의 모델 제공업체 지원을 갖춘 오픈 소스 터미널 코딩 에이전트입니다."
     },
     "pt": {
-      "description": "omp é um agente de programação open source para terminal, com edições ancoradas por hash, integração LSP e depurador, subagentes, runtimes persistentes e mais de 40 provedores de modelos."
+      "description": "omp é um agente de programação de código aberto para o terminal, com edições ancoradas por hash, integração a LSP e depurador, subagentes, runtimes persistentes e mais de 40 provedores de modelos."
     },
     "ru": {
       "description": "omp — терминальный агент для программирования с открытым кодом, hash-привязанными правками, интеграцией LSP и отладчика, субагентами, постоянными средами выполнения и 40+ поставщиками моделей."
@@ -36,7 +36,7 @@
       "description": "omp 是一款开源终端编码 Agent，支持哈希锚定编辑、LSP 与调试器集成、子 Agent、持久化代码运行时以及 40 多家模型提供商。"
     },
     "zh-Hant": {
-      "description": "omp 是一款開源終端編碼 Agent，支援雜湊錨定編輯、LSP 與除錯器整合、子 Agent、持久化程式碼執行環境以及 40 多家模型供應商。"
+      "description": "omp 是一款開放原始碼終端機程式設計 Agent，支援雜湊錨定編輯、LSP 與除錯器整合、子 Agent、持久化程式碼執行環境以及 40 多家模型供應商。"
     }
   },
   "verified": false,

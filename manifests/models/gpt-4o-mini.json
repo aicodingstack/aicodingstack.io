@@ -5,37 +5,37 @@
   "description": "Fast, affordable GPT-4o variant for focused tasks, including code generation and structured tool workflows.",
   "translations": {
     "zh-Hans": {
-      "description": "GPT-4o mini 是 OpenAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "快速且经济的 GPT-4o 变体，适合代码生成和结构化工具工作流等明确任务。"
     },
     "de": {
-      "description": "GPT-4o mini ist eine eigenständige Modellversion von OpenAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Schnelle, preiswerte GPT-4o-Variante für fokussierte Aufgaben wie Codegenerierung und strukturierte Werkzeugabläufe."
     },
     "es": {
-      "description": "GPT-4o mini es una versión de modelo independiente de OpenAI con capacidades explícitas de programación o ingeniería de software."
+      "description": "Variante rápida y económica de GPT-4o para tareas concretas, incluida la generación de código y flujos de herramientas estructurados."
     },
     "fr": {
-      "description": "GPT-4o mini est une version de modèle distincte de OpenAI, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Variante rapide et abordable de GPT-4o pour des tâches ciblées, dont la génération de code et les flux d’outils structurés."
     },
     "id": {
-      "description": "GPT-4o mini adalah versi model mandiri dari OpenAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Varian GPT-4o yang cepat dan terjangkau untuk tugas terfokus, termasuk pembuatan kode dan alur alat terstruktur."
     },
     "ja": {
-      "description": "GPT-4o mini は OpenAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "コード生成や構造化ツールワークフローなど、目的を絞った処理向けの高速で低価格なGPT-4o派生モデル。"
     },
     "ko": {
-      "description": "GPT-4o mini은(는) OpenAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "코드 생성과 구조화된 도구 워크플로 등 집중형 작업을 위한 빠르고 경제적인 GPT-4o 변형입니다."
     },
     "pt": {
-      "description": "GPT-4o mini é uma versão de modelo independente da OpenAI, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Variante rápida e acessível do GPT-4o para tarefas específicas, incluindo geração de código e fluxos estruturados de ferramentas."
     },
     "ru": {
-      "description": "GPT-4o mini — самостоятельная версия модели от OpenAI с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Быстрая и доступная версия GPT-4o для прикладных задач, включая генерацию кода и структурированные цепочки инструментов."
     },
     "tr": {
-      "description": "GPT-4o mini, OpenAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Kod üretimi ve yapılandırılmış araç iş akışları gibi odaklı görevler için hızlı ve uygun maliyetli GPT-4o çeşidi."
     },
     "zh-Hant": {
-      "description": "GPT-4o mini 是 OpenAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "快速且經濟的 GPT-4o 變體，適合程式碼生成和結構化工具工作流程等明確任務。"
     }
   },
   "verified": true,

@@ -1,5 +1,5 @@
 ---
-title: "Comprendre les Serveurs MCP : L'Avenir du Contexte IA"
+title: "Comprendre les serveurs MCP : l'avenir du contexte IA"
 description: "Un approfondissement des serveurs du Protocole de Contexte de Modèle, comment ils fonctionnent et pourquoi ils sont cruciaux pour construire des assistants de programmation IA intelligents qui comprennent vraiment votre projet."
 date: "2025-01-10"
 ---
@@ -12,7 +12,7 @@ Le Protocole de Contexte de Modèle est un standard ouvert développé par Anthr
 
 Contrairement aux intégrations d'API traditionnelles qui nécessitent du code personnalisé pour chaque outil, MCP fournit une interface standardisée. Cela signifie que tout agent IA compatible MCP peut utiliser n'importe quel serveur MCP sans travail d'intégration personnalisé.
 
-## Comment les Serveurs MCP Fonctionnent
+## Comment fonctionnent les serveurs MCP
 
 Un serveur MCP est un processus léger qui expose trois primitives principales :
 
@@ -28,7 +28,7 @@ Actions que l'IA peut effectuer. Un serveur MCP de recherche web pourrait expose
 
 Interactions avec modèles qui guident l'IA. Ceux-ci peuvent inclure des meilleures pratiques ou des flux de travail courants spécifiques à l'outil.
 
-## Serveurs MCP Populaires
+## Serveurs MCP populaires
 
 L'écosystème MCP croît rapidement. Voici quelques serveurs essentiels :
 
@@ -39,7 +39,7 @@ L'écosystème MCP croît rapidement. Voici quelques serveurs essentiels :
 - **GitHub** - Gestion de dépôt et recherche de code
 - **Brave Search** - Capacités de recherche web en temps réel
 
-## Pourquoi MCP est Important pour AI Coding
+## Pourquoi MCP est important pour AI Coding
 
 Avant MCP, les assistants de programmation IA étaient essentiellement aveugles à votre environnement de développement. Ils pouvaient générer du code basé sur des données d'entraînement, mais ne pouvaient pas accéder à la structure réelle de votre projet, lire vos fichiers de configuration ou interagir avec vos outils de développement.
 
@@ -55,11 +55,11 @@ MCP change fondamentalement cela. Avec les serveurs MCP, votre agent IA peut :
 
 La plupart des outils modernes de programmation IA prennent désormais en charge MCP. La configuration de votre premier serveur MCP implique généralement :
 
-### 1. Choisissez un Serveur MCP
+### 1. Choisissez un serveur MCP
 
 Commencez avec quelque chose de simple comme le serveur MCP de système de fichiers ou de recherche web.
 
-### 2. Installez le Serveur
+### 2. Installez le serveur
 
 La plupart des serveurs MCP sont distribués sous forme de packages npm ou de modules Python. Suivez les instructions d'installation pour votre serveur choisi.
 
@@ -74,24 +74,24 @@ Voici un exemple de configuration pour Claude Code :
   "mcpServers": {
     "filesystem": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/chemin/vers/votre/projet"]
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/path/to/your/project"]
     },
     "brave-search": {
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-brave-search"],
       "env": {
-        "BRAVE_API_KEY": "votre-clé-api-ici"
+        "BRAVE_API_KEY": "your-api-key-here"
       }
     }
   }
 }
 ```
 
-### 4. Testez l'Intégration
+### 4. Testez l'intégration
 
 Demandez à votre agent IA d'utiliser les outils nouvellement connectés. Par exemple, si vous avez installé un serveur MCP de système de fichiers, essayez de lui demander de lire un fichier spécifique de votre projet.
 
-## L'Avenir de MCP
+## L'avenir de MCP
 
 L'écosystème MCP est encore à ses débuts, mais le potentiel est énorme. À mesure que plus de développeurs construiront des serveurs MCP pour des outils et services spécialisés, les agents IA deviendront de plus en plus puissants et conscients du contexte.
 

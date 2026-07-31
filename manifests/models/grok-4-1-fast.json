@@ -5,37 +5,37 @@
   "description": "Tool-calling Grok model for production agents, code execution, search, and long-context workflows.",
   "translations": {
     "zh-Hans": {
-      "description": "Grok 4.1 Fast 是 xAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "支持工具调用的 Grok 模型，面向生产智能体、代码执行、搜索和长上下文工作流。"
     },
     "de": {
-      "description": "Grok 4.1 Fast ist eine eigenständige Modellversion von xAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Grok-Modell mit Werkzeugaufrufen für Produktionsagenten, Codeausführung, Suche und Langkontext-Abläufe."
     },
     "es": {
-      "description": "Grok 4.1 Fast es una versión de modelo independiente de xAI con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo Grok con llamadas a herramientas para agentes de producción, ejecución de código, búsqueda y flujos de contexto largo."
     },
     "fr": {
-      "description": "Grok 4.1 Fast est une version de modèle distincte de xAI, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle Grok avec appels d’outils pour les agents en production, l’exécution de code, la recherche et les longs contextes."
     },
     "id": {
-      "description": "Grok 4.1 Fast adalah versi model mandiri dari xAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model Grok dengan pemanggilan alat untuk agen produksi, eksekusi kode, pencarian, dan alur konteks panjang."
     },
     "ja": {
-      "description": "Grok 4.1 Fast は xAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "本番エージェント、コード実行、検索、長文脈ワークフロー向けのツール呼び出し対応Grokモデル。"
     },
     "ko": {
-      "description": "Grok 4.1 Fast은(는) xAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "프로덕션 에이전트, 코드 실행, 검색과 긴 컨텍스트 워크플로를 위한 도구 호출형 Grok 모델입니다."
     },
     "pt": {
-      "description": "Grok 4.1 Fast é uma versão de modelo independente da xAI, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo Grok com chamadas de ferramentas para agentes em produção, execução de código, pesquisa e fluxos de contexto longo."
     },
     "ru": {
-      "description": "Grok 4.1 Fast — самостоятельная версия модели от xAI с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Модель Grok с вызовом инструментов для промышленных агентов, выполнения кода, поиска и работы с длинным контекстом."
     },
     "tr": {
-      "description": "Grok 4.1 Fast, xAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Üretim ajanları, kod çalıştırma, arama ve uzun bağlamlı iş akışları için araç çağrılı Grok modeli."
     },
     "zh-Hant": {
-      "description": "Grok 4.1 Fast 是 xAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "支援工具呼叫的 Grok 模型，面向正式環境代理、程式碼執行、搜尋和長上下文工作流程。"
     }
   },
   "verified": true,

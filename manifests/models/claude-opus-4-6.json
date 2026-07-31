@@ -29,7 +29,7 @@
       "description": "Флагманская модель Anthropic для длительных агентных задач, тщательного планирования, крупных кодовых баз, управления компьютером и сложной работы."
     },
     "tr": {
-      "description": "Anthropic'in uzun süreli aracı görevler, dikkatli planlama, büyük kod tabanları, bilgisayar kullanımı ve karmaşık profesyonel işler için amiral modeli."
+      "description": "Anthropic'in uzun süreli ajan görevleri, dikkatli planlama, büyük kod tabanları, bilgisayar kullanımı ve karmaşık profesyonel işler için amiral modeli."
     },
     "zh-Hans": {
       "description": "Anthropic 面向长时间智能体任务、周密规划、大型代码库、计算机使用和复杂专业工作的旗舰模型。"

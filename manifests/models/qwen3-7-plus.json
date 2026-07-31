@@ -35,7 +35,7 @@
       "description": "阿里巴巴提供 100 万 token 上下文，在编码、推理、速度和成本之间取得平衡的多模态 Qwen 模型。"
     },
     "zh-Hant": {
-      "description": "阿里巴巴提供 100 萬 token 上下文，在編碼、推理、速度和成本之間取得平衡的多模態 Qwen 模型。"
+      "description": "阿里巴巴提供 100 萬 token 上下文，在程式設計、推理、速度和成本之間取得平衡的多模態 Qwen 模型。"
     }
   },
   "verified": true,

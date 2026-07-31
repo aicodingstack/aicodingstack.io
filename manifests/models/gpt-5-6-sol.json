@@ -35,7 +35,7 @@
       "description": "OpenAI 的 GPT-5.6 旗舰模型，面向编码、研究、科学、网络安全、计算机使用和设计等复杂专业工作。"
     },
     "zh-Hant": {
-      "description": "OpenAI 的 GPT-5.6 旗艦模型，面向編碼、研究、科學、網路安全、電腦使用和設計等複雜專業工作。"
+      "description": "OpenAI 的 GPT-5.6 旗艦模型，面向程式設計、研究、科學、網路安全、電腦使用和設計等複雜專業工作。"
     }
   },
   "verified": true,

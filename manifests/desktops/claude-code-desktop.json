@@ -32,7 +32,7 @@
       "description": "Claude Code Desktop 是 Anthropic 的独立编码应用，支持并行运行会话、审查差异、编辑文件，以及使用集成终端工作。"
     },
     "zh-Hant": {
-      "description": "Claude Code Desktop 是 Anthropic 的獨立編碼應用程式，支援平行執行工作階段、檢查差異、編輯檔案，以及使用整合式終端機工作。"
+      "description": "Claude Code Desktop 是 Anthropic 的獨立程式設計應用程式，支援平行執行工作階段、檢查差異、編輯檔案，以及使用整合式終端機工作。"
     }
   },
   "verified": true,

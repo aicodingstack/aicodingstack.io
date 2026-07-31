@@ -32,7 +32,7 @@
       "description": "Qwen Code 是 Alibaba 的开源终端编码代理，可用于理解大型代码库、编辑文件、执行命令，并连接 Qwen 或兼容 OpenAI 的模型。"
     },
     "zh-Hant": {
-      "description": "Qwen Code 是 Alibaba 的開源終端編碼代理，可用於理解大型程式碼庫、編輯檔案、執行命令，並連接 Qwen 或相容 OpenAI 的模型。"
+      "description": "Qwen Code 是 Alibaba 的開放原始碼終端機程式設計代理，可用於理解大型程式碼庫、編輯檔案、執行命令，並連接 Qwen 或相容 OpenAI 的模型。"
     }
   },
   "verified": false,

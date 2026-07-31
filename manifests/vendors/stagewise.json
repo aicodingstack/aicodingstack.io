@@ -35,7 +35,7 @@
       "description": "stagewise 开发了一款开源桌面编码代理，专注于并行代理会话、隔离的 worktree 和本地开发工作流。"
     },
     "zh-Hant": {
-      "description": "stagewise 開發了一款開源桌面編碼代理，專注於平行代理工作階段、隔離的 worktree 和本機開發工作流程。"
+      "description": "stagewise 開發了一款開放原始碼桌面程式設計代理，專注於平行代理工作階段、隔離的 worktree 和本機開發工作流程。"
     }
   },
   "verified": true,

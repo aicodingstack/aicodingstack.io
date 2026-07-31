@@ -32,7 +32,7 @@
       "description": "Grok Build 是 xAI 的开源终端编码代理，可用于探索代码仓库、编辑代码、运行命令和完成端到端开发任务。"
     },
     "zh-Hant": {
-      "description": "Grok Build 是 xAI 的開源終端編碼代理，可用於探索程式碼儲存庫、編輯程式碼、執行命令和完成端對端開發任務。"
+      "description": "Grok Build 是 xAI 的開放原始碼終端機程式設計代理，可用於探索程式碼儲存庫、編輯程式碼、執行命令和完成端對端開發任務。"
     }
   },
   "verified": false,

@@ -5,37 +5,37 @@
   "description": "Open-weight MoE model purpose-built for agentic coding, tool use, reasoning, debugging, and frontend development.",
   "translations": {
     "zh-Hans": {
-      "description": "GLM-4.5 是 Z.ai 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "专为智能体编码、工具使用、推理、调试和前端开发打造的开放权重 MoE 模型。"
     },
     "de": {
-      "description": "GLM-4.5 ist eine eigenständige Modellversion von Z.ai mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Open-Weight-MoE-Modell für agentisches Coding, Werkzeuge, Schlussfolgern, Debugging und Frontend-Entwicklung."
     },
     "es": {
-      "description": "GLM-4.5 es una versión de modelo independiente de Z.ai con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo MoE de pesos abiertos creado para programación agéntica, herramientas, razonamiento, depuración y desarrollo frontend."
     },
     "fr": {
-      "description": "GLM-4.5 est une version de modèle distincte de Z.ai, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle MoE à poids ouverts conçu pour le codage agentique, les outils, le raisonnement, le débogage et le développement frontend."
     },
     "id": {
-      "description": "GLM-4.5 adalah versi model mandiri dari Z.ai dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model MoE open-weight untuk coding agentik, penggunaan alat, penalaran, debugging, dan pengembangan frontend."
     },
     "ja": {
-      "description": "GLM-4.5 は Z.ai が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "エージェント型コーディング、ツール利用、推論、デバッグ、フロントエンド開発向けのオープンウェイトMoEモデル。"
     },
     "ko": {
-      "description": "GLM-4.5은(는) Z.ai가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "에이전트 코딩, 도구 사용, 추론, 디버깅과 프런트엔드 개발을 위해 만든 오픈 웨이트 MoE 모델입니다."
     },
     "pt": {
-      "description": "GLM-4.5 é uma versão de modelo independente da Z.ai, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo MoE de pesos abertos criado para programação agêntica, ferramentas, raciocínio, depuração e desenvolvimento frontend."
     },
     "ru": {
-      "description": "GLM-4.5 — самостоятельная версия модели от Z.ai с явно заявленными возможностями программирования или разработки ПО."
+      "description": "MoE-модель с открытыми весами для агентного программирования, инструментов, рассуждений, отладки и frontend-разработки."
     },
     "tr": {
-      "description": "GLM-4.5, Z.ai tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Aracı kodlama, araç kullanımı, akıl yürütme, hata ayıklama ve frontend geliştirme için açık ağırlıklı MoE modeli."
     },
     "zh-Hant": {
-      "description": "GLM-4.5 是 Z.ai 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "專為代理程式設計、工具使用、推理、偵錯和前端開發打造的開放權重 MoE 模型。"
     }
   },
   "verified": true,

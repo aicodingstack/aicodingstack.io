@@ -29,13 +29,13 @@
       "description": "Открытая мультимодальная передовая модель Mistral AI для агентных задач и программирования с настраиваемыми рассуждениями и контекстом 256K токенов."
     },
     "tr": {
-      "description": "Mistral AI'ın aracı ve kodlama iş yükleri için ayarlanabilir akıl yürütme ve 256K token bağlam penceresi sunan açık ağırlıklı çok modlu öncü modeli."
+      "description": "Mistral AI'ın ajan ve kodlama iş yükleri için ayarlanabilir akıl yürütme ve 256K token bağlam penceresi sunan açık ağırlıklı çok modlu öncü modeli."
     },
     "zh-Hans": {
       "description": "Mistral AI 面向智能体与编码任务的开放权重多模态前沿模型，支持可调节推理和 256K token 上下文窗口。"
     },
     "zh-Hant": {
-      "description": "Mistral AI 面向智慧體與編碼任務的開放權重多模態前沿模型，支援可調節推理和 256K token 上下文視窗。"
+      "description": "Mistral AI 面向智慧體與程式設計任務的開放權重多模態前沿模型，支援可調節推理和 256K token 上下文視窗。"
     }
   },
   "verified": true,

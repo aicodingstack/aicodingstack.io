@@ -36,7 +36,7 @@
       "description": "Google 面向终端的编程智能体，可通过子智能体、多文件编辑、工具、MCP、Skills 和远程 SSH 调用、监控并编排 Antigravity 智能体。"
     },
     "zh-Hant": {
-      "description": "Google 面向終端的程式設計智慧體，可透過子智慧體、多檔案編輯、工具、MCP、Skills 和遠端 SSH 呼叫、監控並編排 Antigravity 智慧體。"
+      "description": "Google 面向終端機的程式設計智慧體，可透過子智慧體、多檔案編輯、工具、MCP、Skills 和遠端 SSH 呼叫、監控並編排 Antigravity 智慧體。"
     }
   },
   "verified": true,

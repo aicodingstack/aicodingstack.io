@@ -8,34 +8,34 @@
       "description": "一个极速推理模型，在代理式编码方面表现出色，在 Kilo Code 中限时免费提供。注意：提示和完成内容会被 xAI 记录并用于改进模型。"
     },
     "de": {
-      "description": "Ein extrem schnelles Reasoning-Modell, das im agenticen Coding glänzt, für begrenzte Zeit kostenlos in Kilo Code verfügbar..."
+      "description": "Sehr schnelles Reasoning-Modell für agentisches Coding, zeitweise kostenlos in Kilo Code. Hinweis: xAI protokolliert Prompts und Ausgaben und nutzt sie zur Modellverbesserung."
     },
     "ko": {
       "description": "에이전트 코딩에서 뛰어난 성능을 발휘하는 극도로 빠른 추론 모델로, 제한된 시간 동안 Kilo Code에서 무료로 제공됩니다. 참고: 프롬프트와 완성 내용은 xAI에 의해 기록되어 모델 개선에 사용됩니다."
     },
     "es": {
-      "description": "Un modelo de razonamiento extremadamente rápido que sobresale en el codificación de agentes, disponible gratuitamente por tiempo limitado en Kilo Code..."
+      "description": "Modelo de razonamiento muy rápido para programación agéntica, gratis temporalmente en Kilo Code. Nota: xAI registra prompts y respuestas y los usa para mejorar el modelo."
     },
     "fr": {
-      "description": "Un modèle de raisonnement extrêmement rapide qui excellents dans le codage agentic, accessible gratuitement pour une durée limitée dans Kilo Code..."
+      "description": "Modèle de raisonnement très rapide pour le codage agentique, gratuit temporairement dans Kilo Code. Note : xAI journalise requêtes et réponses pour améliorer le modèle."
     },
     "id": {
-      "description": "Model penalaran ultra cepat yang unggul dalam pengkodean berbasis agen, tersedia gratis untuk waktu terbatas di Kilo Code..."
+      "description": "Model penalaran sangat cepat untuk coding agentik, gratis sementara di Kilo Code. Catatan: xAI mencatat prompt dan keluaran serta memakainya untuk meningkatkan model."
     },
     "ja": {
       "description": "エージェンティックコーディングに優れ、極めて高速な推論モデル。期間限定でKilo Codeで無料で利用可能です。注：プロンプトと完了結果はxAIによって記録され、モデルの改善に使用されます。"
     },
     "pt": {
-      "description": "Um modelo de raciocínio extremamente rápido que se destaca em codificação agentiva, acessível gratuitamente por tempo limitado no Kilo Code..."
+      "description": "Modelo de raciocínio muito rápido para programação agêntica, grátis por tempo limitado no Kilo Code. Nota: a xAI registra prompts e respostas para melhorar o modelo."
     },
     "ru": {
-      "description": "Модель рассуждения невероятно быстрая и excelente в агентском кодировании, доступная бесплатно на ограниченное время в Kilo Code..."
+      "description": "Очень быстрая модель для агентного программирования, временно бесплатная в Kilo Code. Важно: xAI записывает запросы и ответы и использует их для улучшения модели."
     },
     "tr": {
-      "description": "Aracental kodlamada uzmanlaşan ve son derece hızlı bir muhakeme modeli, sınırlı süre için Kilo Code'da ücretsiz olarak kullanılabilir..."
+      "description": "Aracı kodlamada çok hızlı bir akıl yürütme modeli; sınırlı süre Kilo Code’da ücretsiz. Not: xAI istem ve yanıtları kaydeder, modeli geliştirmek için kullanır."
     },
     "zh-Hant": {
-      "description": "一個極速推理模型，在代理式編碼方面表現出色，在 Kilo Code 中限時免費提供。注意：提示和完成內容會被 xAI 記錄並用於改進模型。"
+      "description": "一個極速推理模型，在代理式程式設計方面表現出色，在 Kilo Code 中限時免費提供。注意：提示和完成內容會被 xAI 記錄並用於改進模型。"
     }
   },
   "verified": true,

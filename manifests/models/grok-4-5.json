@@ -29,13 +29,13 @@
       "description": "Передовая модель SpaceXAI для программирования, агентных задач, инженерии, интеллектуальной работы, настраиваемых рассуждений и инструментов."
     },
     "tr": {
-      "description": "SpaceXAI'ın kodlama, aracı görevler, mühendislik, bilgi çalışmaları, yapılandırılabilir akıl yürütme ve araç odaklı iş akışları için öncü modeli."
+      "description": "SpaceXAI'ın kodlama, ajan görevleri, mühendislik, bilgi çalışmaları, yapılandırılabilir akıl yürütme ve araç odaklı iş akışları için öncü modeli."
     },
     "zh-Hans": {
       "description": "SpaceXAI 面向编码、智能体任务、工程、知识工作、可配置推理和工具驱动工作流的前沿模型。"
     },
     "zh-Hant": {
-      "description": "SpaceXAI 面向編碼、智慧體任務、工程、知識工作、可設定推理和工具驅動工作流程的前沿模型。"
+      "description": "SpaceXAI 面向程式設計、智慧體任務、工程、知識工作、可設定推理和工具驅動工作流程的前沿模型。"
     }
   },
   "verified": true,

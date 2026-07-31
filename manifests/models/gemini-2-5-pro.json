@@ -14,10 +14,10 @@
       "description": "고급 추론, 코딩, 수학 및 과학 작업을 위해 설계된 Google의 플래그십 AI 모델입니다. 향상된 정확도를 위해 \"생각\" 능력을 사용합니다."
     },
     "es": {
-      "description": "El modelo IA insignia de Google para razonamiento avanzado, codificacion, matematicas y ciencia. Emplea capacidades de \"pensamiento\" para una precision mejorada y un manejo del contexto sutil."
+      "description": "El modelo IA insignia de Google para razonamiento avanzado, codificación, matemáticas y ciencia. Emplea capacidades de \"pensamiento\" para una precisión mejorada y un manejo del contexto sutil."
     },
     "fr": {
-      "description": "Le modele IA phare de Google pour le raisonnement avance, le codage, les mathematiques et les sciences..."
+      "description": "Modèle d’IA phare de Google pour le raisonnement avancé, le codage, les mathématiques et les sciences ; ses capacités de réflexion améliorent précision et compréhension du contexte."
     },
     "id": {
       "description": "Model AI unggulan Google untuk penalaran tingkat lanjut, coding, matematika, dan sains. Mempekerjakan kemampuan \"pemikiran\" untuk presisi yang ditingkatkan dan penanganan konteks yang halus."
@@ -26,16 +26,16 @@
       "description": "高度な推論、コーディング、数学、科学のためのGoogleのフラッグシップAIモデル。\"思考\"能力を用いて、精度を向上させ、繊細なコンテキスト処理を実現します。"
     },
     "pt": {
-      "description": "O modelo AI insigne do Google para raciocinio avancado, codificacao, matematica e ciencia. Emprega capacidades de \"pensamento\" para precisao melhorada e tratamento de contexto sutil."
+      "description": "O principal modelo de IA do Google para raciocínio avançado, programação e matemática. Usa recursos de pensamento para melhorar a precisão e lidar com nuances de contexto."
     },
     "ru": {
       "description": "Флагманская модель AI от Google для сложных рассуждений, программирования, математики и науки. Использует возможности \"мышления\" для улучшенной точности и тонкой обработки контекста."
     },
     "tr": {
-      "description": "Gelismis muhakeme, kodlama, matematik ve bilim icin Google'in insigne AI modeli. Gelistirilmis dogruluk ve hassas baglam isleme icin \"dusunme\" yetenekleri kullanir."
+      "description": "Google’ın ileri düzey akıl yürütme, kodlama, matematik ve bilim için amiral AI modeli; düşünme yetenekleri doğruluğu ve incelikli bağlam işlemeyi geliştirir."
     },
     "zh-Hant": {
-      "description": "Google 最先進的 AI 模型，專為高級推理、編碼、數學和科學任務設計。採用\"思考\"能力，能夠通過增強的準確性和細緻的上下文處理進行推理。"
+      "description": "Google 最先進的 AI 模型，專為進階推理、程式設計、數學和科學任務設計。採用\"思考\"能力，能夠透過增強的準確性和細緻的上下文處理進行推理。"
     }
   },
   "verified": true,

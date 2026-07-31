@@ -14,10 +14,10 @@
       "description": "GLM 4.6은 Z.ai의 357B 파라미터 모델로, 200K 컨텍스트 윈도를 갖추고 코딩, 추론, 도구 사용 및 에이전트 작업을 위해 설계되었습니다."
     },
     "es": {
-      "description": "GLM 4.6 es un modelo de Z.ai con 357B de parametros y una ventana de contexto de 200K, creado para programacion, razonamiento, uso de herramientas y tareas agenticas."
+      "description": "GLM 4.6 es un modelo de Z.ai con 357B de parámetros y una ventana de contexto de 200K, creado para programación, razonamiento, uso de herramientas y tareas agénticas."
     },
     "fr": {
-      "description": "GLM 4.6 est un modele de Z.ai avec 357B de parametres et une fenetre de contexte de 200K, concu pour le codage, le raisonnement, l'utilisation d'outils et les taches agentiques."
+      "description": "GLM 4.6 est un modèle de Z.ai avec 357B de paramètres et une fenêtre de contexte de 200K, conçu pour le codage, le raisonnement, l'utilisation d'outils et les tâches agentiques."
     },
     "id": {
       "description": "GLM 4.6 adalah model 357B parameter dari Z.ai dengan jendela konteks 200K, dibuat untuk coding, penalaran, penggunaan alat, dan tugas agen."
@@ -26,16 +26,16 @@
       "description": "GLM 4.6はZ.aiの357Bパラメータモデルで、200Kコンテキストウィンドウを備え、コーディング、推論、ツール利用、エージェントタスク向けに設計されています。"
     },
     "pt": {
-      "description": "GLM 4.6 e um modelo da Z.ai com 357B de parametros e janela de contexto de 200K, criado para programacao, raciocinio, uso de ferramentas e tarefas agenticas."
+      "description": "GLM 4.6 é um modelo da Z.ai com 357 bilhões de parâmetros e janela de contexto de 200 mil tokens, criado para programação, raciocínio, uso de ferramentas e tarefas agênticas."
     },
     "ru": {
       "description": "GLM 4.6 — модель Z.ai с 357B параметров и контекстным окном 200K, созданная для программирования, рассуждений, использования инструментов и агентных задач."
     },
     "tr": {
-      "description": "GLM 4.6, Z.ai'nin 357B parametreli ve 200K baglam pencereli; kodlama, muhakeme, arac kullanimi ve ajan gorevleri icin gelistirilmis modelidir."
+      "description": "GLM 4.6, Z.ai'nin 357B parametreli ve 200K bağlam pencereli; kodlama, muhakeme, araç kullanımı ve ajan görevleri için geliştirilmiş modelidir."
     },
     "zh-Hant": {
-      "description": "GLM 4.6 是 Z.ai 推出的 357B 參數模型，具備 200K 上下文視窗，面向編程、推理、工具使用和智能體任務。"
+      "description": "GLM 4.6 是 Z.ai 推出的 357B 參數模型，具備 200K 上下文視窗，面向程式設計、推理、工具使用和智慧體任務。"
     }
   },
   "verified": true,

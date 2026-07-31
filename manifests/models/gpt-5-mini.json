@@ -5,37 +5,37 @@
   "description": "Cost-efficient GPT-5 variant for precise, well-defined coding and high-volume agent tasks.",
   "translations": {
     "zh-Hans": {
-      "description": "GPT-5 mini 是 OpenAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "经济型 GPT-5 变体，适合精确、定义清晰的编码和大规模智能体任务。"
     },
     "de": {
-      "description": "GPT-5 mini ist eine eigenständige Modellversion von OpenAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Kosteneffiziente GPT-5-Variante für präzise, klar definierte Coding-Aufgaben und Agentenarbeit in großem Umfang."
     },
     "es": {
-      "description": "GPT-5 mini es una versión de modelo independiente de OpenAI con capacidades explícitas de programación o ingeniería de software."
+      "description": "Variante económica de GPT-5 para programación precisa y bien definida, y tareas agénticas de gran volumen."
     },
     "fr": {
-      "description": "GPT-5 mini est une version de modèle distincte de OpenAI, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Variante économique de GPT-5 pour le codage précis et bien défini et les tâches agentiques à grand volume."
     },
     "id": {
-      "description": "GPT-5 mini adalah versi model mandiri dari OpenAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Varian GPT-5 hemat biaya untuk coding yang presisi dan terdefinisi jelas serta tugas agen bervolume tinggi."
     },
     "ja": {
-      "description": "GPT-5 mini は OpenAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "正確で明確なコーディングと大量のエージェント処理向けの、コスト効率に優れたGPT-5派生モデル。"
     },
     "ko": {
-      "description": "GPT-5 mini은(는) OpenAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "정밀하고 명확한 코딩과 대규모 에이전트 작업을 위한 경제적인 GPT-5 변형입니다."
     },
     "pt": {
-      "description": "GPT-5 mini é uma versão de modelo independente da OpenAI, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Variante de menor custo do GPT-5 para programação precisa e bem definida e tarefas agênticas em grande volume."
     },
     "ru": {
-      "description": "GPT-5 mini — самостоятельная версия модели от OpenAI с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Экономичная версия GPT-5 для точных, чётко заданных задач программирования и массовых агентных операций."
     },
     "tr": {
-      "description": "GPT-5 mini, OpenAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Kesin, iyi tanımlanmış kodlama ve yüksek hacimli ajan görevleri için ekonomik GPT-5 çeşidi."
     },
     "zh-Hant": {
-      "description": "GPT-5 mini 是 OpenAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "經濟型 GPT-5 變體，適合精確、定義清楚的程式設計和大量代理任務。"
     }
   },
   "verified": true,

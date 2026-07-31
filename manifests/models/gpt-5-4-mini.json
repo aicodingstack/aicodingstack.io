@@ -29,13 +29,13 @@
       "description": "Быстрая и эффективная модель OpenAI GPT-5.4 для программирования, управления компьютером, мультимодального понимания, инструментов и субагентов."
     },
     "tr": {
-      "description": "OpenAI'ın kodlama, bilgisayar kullanımı, çok modlu anlama, araç kullanımı ve alt aracı iş yükleri için hızlı ve verimli GPT-5.4 modeli."
+      "description": "OpenAI'ın kodlama, bilgisayar kullanımı, çok modlu anlama, araç kullanımı ve alt ajan iş yükleri için hızlı ve verimli GPT-5.4 modeli."
     },
     "zh-Hans": {
       "description": "OpenAI 面向编码、计算机使用、多模态理解、工具使用和子智能体工作负载的快速高效 GPT-5.4 模型。"
     },
     "zh-Hant": {
-      "description": "OpenAI 面向編碼、電腦使用、多模態理解、工具使用和子智慧體工作負載的快速高效 GPT-5.4 模型。"
+      "description": "OpenAI 面向程式設計、電腦使用、多模態理解、工具使用和子智慧體工作負載的快速高效 GPT-5.4 模型。"
     }
   },
   "verified": true,

@@ -81,8 +81,8 @@
       ],
       "title": "Cómo comparar CLI de programación con IA"
     },
-    "subtitle": "Asistentes de codificación de línea de comandos con IA",
-    "title": "Comparación de CLI de Codificación con IA"
+    "subtitle": "Compara las CLI de programación con IA por precio, compatibilidad de plataformas, licencia, estrellas de GitHub, enlaces del proyecto y recursos oficiales para elegir el agente de terminal adecuado.",
+    "title": "Comparación de CLI de codificación con IA"
   },
   "columns": {
     "contextLength": "Longitud del contexto",
@@ -182,7 +182,7 @@
       "title": "Cómo comparar extensiones de programación con IA"
     },
     "subtitle": "Compara extensiones de programación con IA por IDE compatibles, precios, licencia, estrellas de GitHub y enlaces del proyecto, ciclo de vida y recursos oficiales.",
-    "title": "Comparación de Extensiones de Codificación con IA"
+    "title": "Comparación de extensiones de codificación con IA"
   },
   "ides": {
     "guide": {
@@ -271,14 +271,14 @@
       "title": "Cómo comparar IDE de programación con IA"
     },
     "subtitle": "Compara IDE de programación con IA por precios, plataformas, licencia, estrellas de GitHub, enlaces del proyecto y recursos oficiales antes de elegir un entorno.",
-    "title": "Comparación de IDE de Codificación con IA"
+    "title": "Comparación de IDE de codificación con IA"
   },
   "modelCompareDescription": "Compare modelos de codificación con IA lado a lado: especificaciones, precios, funcionalidades y benchmarks.",
-  "modelCompareTitle": "Comparación de Modelos de Codificación con IA: {model1} vs {model2}",
+  "modelCompareTitle": "Comparación de modelos de codificación con IA: {model1} vs. {model2}",
   "models": {
     "backTo": "Volver a Modelos",
     "subtitle": "Modelos de lenguaje grandes optimizados para generación y análisis de código",
-    "title": "Comparación de Modelos de Codificación con IA"
+    "title": "Comparación de modelos de codificación con IA"
   },
   "table": {
     "scrollHint": "Desplázate horizontalmente para ver todas las columnas."

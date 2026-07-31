@@ -32,7 +32,7 @@
       "description": "Tencent WorkBuddy 是一款 AI 智能体桌面工作台，提供 Coding Mode，可进行代码生成、审查、调试、重构及自主执行本地任务。"
     },
     "zh-Hant": {
-      "description": "Tencent WorkBuddy 是一款 AI 智慧代理桌面工作台，提供 Coding Mode，可進行程式碼生成、審查、除錯、重構及自主執行本機任務。"
+      "description": "Tencent WorkBuddy 是一款 AI 智慧代理桌面工作台，提供 Coding Mode，可進行程式碼產生、審查、除錯、重構及自主執行本機任務。"
     }
   },
   "verified": true,

@@ -32,7 +32,7 @@
       "description": "Qoder Desktop 是一款自主开发桌面应用，具备编码智能体、深度代码库理解、智能补全，以及用于协作和任务委派的 Editor 与 Quest 工作区。"
     },
     "zh-Hant": {
-      "description": "Qoder Desktop 是一款自主開發桌面應用，具備編碼智慧代理、深度程式碼庫理解、智慧補全，以及用於協作和任務委派的 Editor 與 Quest 工作區。"
+      "description": "Qoder Desktop 是一款自主開發桌面應用，具備程式設計智慧代理、深度程式碼庫理解、智慧補全，以及用於協作和任務委派的 Editor 與 Quest 工作區。"
     }
   },
   "verified": true,

@@ -26,7 +26,7 @@
       "description": "エンタープライズおよび開発アプリケーション向けのQwenを含め、高度なAIサービスと言語モデルを提供するAlibabaのクラウドコンピューティングプラットフォーム。"
     },
     "pt": {
-      "description": "Plataforma de computação em nuvem da Alibaba, oferecendo serviços avançados de IA e modelos de linguagem, incluindo Qwen para aplicações empresariais e de desenvolvimento."
+      "description": "Plataforma de computação em nuvem da Alibaba que oferece serviços avançados de IA e modelos de linguagem, incluindo Qwen, para aplicativos empresariais e de desenvolvimento."
     },
     "ru": {
       "description": "Облачная вычислительная платформа Alibaba, предлагающая передовые ИИ-сервисы и языковые модели, включая Qwen для корпоративных и разработческих приложений."
@@ -35,7 +35,7 @@
       "description": "Kurumsal ve geliştirme uygulamaları için Qwen dahil olmak üzere gelişmiş AI hizmetleri ve dil modelleri sunan Alibaba'nın bulut bilişim platformu."
     },
     "zh-Hant": {
-      "description": "阿里巴巴的雲計算平台，提供先進的 AI 服務和語言模型，包括用於企業和開發應用的通義千問（Qwen）。"
+      "description": "阿里巴巴的雲端運算平台，提供先進的 AI 服務和語言模型，包括用於企業和開發應用的通義千問（Qwen）。"
     }
   },
   "verified": false,

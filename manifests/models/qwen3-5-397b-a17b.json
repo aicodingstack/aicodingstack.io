@@ -29,7 +29,7 @@
       "description": "Открытая мультимодальная MoE-модель Alibaba с 397 млрд параметров и 17 млрд активных для рассуждений, программирования, агентов и визуального понимания."
     },
     "tr": {
-      "description": "Akıl yürütme, kodlama, aracılar ve görsel anlama için Alibaba'nın 397B toplam ve 17B etkin parametreli açık ağırlıklı çok modlu MoE modeli."
+      "description": "Akıl yürütme, kodlama, ajanlar ve görsel anlama için Alibaba'nın 397B toplam ve 17B etkin parametreli açık ağırlıklı çok modlu MoE modeli."
     },
     "zh-Hans": {
       "description": "Alibaba 面向推理、编程、智能体和视觉理解的开放权重多模态 MoE 模型，总参数 397B、激活参数 17B。"

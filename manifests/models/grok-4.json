@@ -5,37 +5,37 @@
   "description": "Frontier reasoning model with native tool use, visual input, real-time search integration, and strong coding performance.",
   "translations": {
     "zh-Hans": {
-      "description": "Grok 4 是 xAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "前沿推理模型，原生支持工具使用、视觉输入、实时搜索，并具备强大的编码性能。"
     },
     "de": {
-      "description": "Grok 4 ist eine eigenständige Modellversion von xAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Frontiermodell für Schlussfolgern mit nativer Werkzeugnutzung, Bildeingabe, Echtzeitsuche und starker Coding-Leistung."
     },
     "es": {
-      "description": "Grok 4 es una versión de modelo independiente de xAI con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo de razonamiento de frontera con herramientas nativas, entrada visual, búsqueda en tiempo real y gran rendimiento en programación."
     },
     "fr": {
-      "description": "Grok 4 est une version de modèle distincte de xAI, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle de raisonnement de pointe avec outils natifs, entrée visuelle, recherche en temps réel et hautes performances en codage."
     },
     "id": {
-      "description": "Grok 4 adalah versi model mandiri dari xAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model penalaran frontier dengan alat bawaan, input visual, pencarian waktu nyata, dan performa coding yang kuat."
     },
     "ja": {
-      "description": "Grok 4 は xAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "ネイティブなツール利用、画像入力、リアルタイム検索、優れたコーディング性能を備えた最先端推論モデル。"
     },
     "ko": {
-      "description": "Grok 4은(는) xAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "기본 도구 사용, 이미지 입력, 실시간 검색과 강력한 코딩 성능을 갖춘 최첨단 추론 모델입니다."
     },
     "pt": {
-      "description": "Grok 4 é uma versão de modelo independente da xAI, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo de raciocínio de fronteira com ferramentas nativas, entrada visual, pesquisa em tempo real e ótimo desempenho em programação."
     },
     "ru": {
-      "description": "Grok 4 — самостоятельная версия модели от xAI с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Передовая модель рассуждений со встроенными инструментами, визуальным вводом, поиском в реальном времени и сильным программированием."
     },
     "tr": {
-      "description": "Grok 4, xAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Yerel araç kullanımı, görsel girdi, gerçek zamanlı arama ve güçlü kodlama performansına sahip öncü akıl yürütme modeli."
     },
     "zh-Hant": {
-      "description": "Grok 4 是 xAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "前沿推理模型，原生支援工具使用、視覺輸入、即時搜尋，並具備強大的程式設計效能。"
     }
   },
   "verified": true,

@@ -5,7 +5,7 @@
   "description": "Tabnine is an AI coding platform with code completion, chat, and agentic workflows across IDE and CLI, with flexible private deployment options.",
   "translations": {
     "zh-Hans": {
-      "description": "Tabnine 是一个 AI 编码平台，在 IDE 和 CLI 中提供代码补全、聊天和 Agent 工作流，并支持灵活的私有化部署。"
+      "description": "Tabnine 是一个 AI 编码平台，在 IDE 和 CLI 中提供代码补全、聊天和 Agent 工作流，并支持灵活的私有部署。"
     },
     "de": {
       "description": "Tabnine ist eine AI-Coding-Plattform mit Codevervollständigung, Chat und autonomen Workflows in IDE und CLI sowie flexiblen privaten Bereitstellungen."
@@ -35,7 +35,7 @@
       "description": "Tabnine; IDE ve CLI'da kod tamamlama, sohbet ve ajan iş akışları ile esnek özel dağıtım seçenekleri sunan bir AI kodlama platformudur."
     },
     "zh-Hant": {
-      "description": "Tabnine 是一個 AI 編碼平台，在 IDE 和 CLI 中提供程式碼補全、聊天和 Agent 工作流程，並支援靈活的私有化部署。"
+      "description": "Tabnine 是一個 AI 程式設計平台，在 IDE 和 CLI 中提供程式碼補全、聊天和 Agent 工作流程，並支援靈活的私有部署。"
     }
   },
   "verified": true,

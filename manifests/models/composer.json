@@ -14,10 +14,10 @@
       "description": "Cursor에서 출시한 고속 최전선 코딩 모델로, MoE 아키텍처와 강화 학습을 사용하여 대화형 소프트웨어 엔지니어링에 최적화되어 있습니다."
     },
     "es": {
-      "description": "Modelo de codificacion de alta velocidad de la vanguardia de Cursor, optimizado con RL como una mezcla de expertos para la ingenieria de software interactiva."
+      "description": "Modelo de codificación de alta velocidad de la vanguardia de Cursor, optimizado con RL como una mezcla de expertos para la ingeniería de software interactiva."
     },
     "fr": {
-      "description": "Modele de codage de haute vitesse a la pointe de Cursor, optimise avec RL comme un melange d'experts pour le genie logiciel interactif."
+      "description": "Modèle de codage à haute vitesse de Cursor, optimisé par apprentissage par renforcement comme mélange d’experts pour le génie logiciel interactif."
     },
     "id": {
       "description": "Model coding kecepatan tinggi dari depan Cursor, dioptimalkan dengan RL sebagai campuran ahli untuk rekayasa perangkat lunak interaktif."
@@ -26,16 +26,16 @@
       "description": "Cursorの高速最先端コーディングモデルで、RLとMoE構造で対話型ソフトウェアエンジニアリングに最適化されています。"
     },
     "pt": {
-      "description": "Modelo de codificacao de alta velocidade de ponta do Cursor, otimizado com RL como uma mistura de especialistas para engenharia de software interativa."
+      "description": "Modelo avançado de programação em alta velocidade do Cursor, otimizado com aprendizado por reforço como uma mistura de especialistas para engenharia de software interativa."
     },
     "ru": {
       "description": "Быстрая передовая модель программирования от Cursor, оптимизированная с помощью RL как смесь экспертов для интерактивной разработки программного обеспечения."
     },
     "tr": {
-      "description": "Cursor'den gelen yuksek hizli son teknoloji kodlama modeli, etkilesimli yazilim muhendisligi icin RL ile optimize edilmis uzman karsisim olarak egitilmistir."
+      "description": "Cursor’ın etkileşimli yazılım mühendisliği için pekiştirmeli öğrenmeyle uzmanlar karışımı olarak optimize edilmiş yüksek hızlı, öncü kodlama modeli."
     },
     "zh-Hant": {
-      "description": "Cursor 發布的高速前沿編碼模型，採用 MoE 架構與強化學習針對交互式軟件工程優化，可在真實開發環境中快速提供代碼輔助。"
+      "description": "Cursor 發布的高速前沿程式設計模型，採用 MoE 架構與強化學習針對互動式軟體工程最佳化，可在真實開發環境中快速提供程式碼輔助。"
     }
   },
   "verified": false,

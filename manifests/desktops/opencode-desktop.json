@@ -32,7 +32,7 @@
       "description": "OpenCode Desktop 是开源 OpenCode 编码代理的独立桌面界面，提供本地项目会话，并支持多种托管和本地模型提供商。"
     },
     "zh-Hant": {
-      "description": "OpenCode Desktop 是開源 OpenCode 編碼代理的獨立桌面介面，提供本機專案工作階段，並支援多種託管和本機模型供應商。"
+      "description": "OpenCode Desktop 是開放原始碼 OpenCode 程式設計代理的獨立桌面介面，提供本機專案工作階段，並支援多種託管和本機模型供應商。"
     }
   },
   "verified": false,

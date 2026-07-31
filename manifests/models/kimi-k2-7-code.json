@@ -29,13 +29,13 @@
       "description": "Агент программирования Moonshot AI с открытыми весами для длительной разработки, эффективных рассуждений, инструментов и визуального ввода."
     },
     "tr": {
-      "description": "Moonshot AI'ın uzun süreli yazılım mühendisliği, verimli akıl yürütme, araç kullanımı ve görsel girdiler için açık ağırlıklı kodlama aracısı modeli."
+      "description": "Moonshot AI'ın uzun süreli yazılım mühendisliği, verimli akıl yürütme, araç kullanımı ve görsel girdiler için açık ağırlıklı kodlama ajanı modeli."
     },
     "zh-Hans": {
       "description": "Moonshot AI 面向长周期软件工程、高效推理、工具调用和视觉输入的开放权重编码智能体模型。"
     },
     "zh-Hant": {
-      "description": "Moonshot AI 面向長週期軟體工程、高效推理、工具呼叫和視覺輸入的開放權重編碼智慧體模型。"
+      "description": "Moonshot AI 面向長週期軟體工程、高效推理、工具呼叫和視覺輸入的開放權重程式設計智慧體模型。"
     }
   },
   "verified": true,

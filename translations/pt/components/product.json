@@ -22,7 +22,7 @@
     "fallbackNote": "Nota: Exibindo dados de exemplo. A API de histórico de estrelas está temporariamente indisponível.",
     "loading": "Carregando histórico de estrelas...",
     "stars": "estrelas",
-    "title": "Histórico de Estrelas do GitHub"
+    "title": "Histórico de estrelas do GitHub"
   },
   "modelSpecifications": {},
   "platformLinks": {
@@ -53,7 +53,7 @@
     "perCredit": "{price}/crédito",
     "perHour": "{price}/hora",
     "perMonth": "{price}/mês",
-    "perUserMonth": "{price}/utilizador/mês",
+    "perUserMonth": "{price}/usuário/mês",
     "perYear": "{price}/ano",
     "usageBased": "Baseado no uso"
   },

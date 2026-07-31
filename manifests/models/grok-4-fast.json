@@ -5,37 +5,37 @@
   "description": "Cost-efficient Grok 4 model with a two-million-token context and unified reasoning and non-reasoning modes.",
   "translations": {
     "zh-Hans": {
-      "description": "Grok 4 Fast 是 xAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "经济型 Grok 4 模型，提供 200 万 token 上下文，并统一支持推理和非推理模式。"
     },
     "de": {
-      "description": "Grok 4 Fast ist eine eigenständige Modellversion von xAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Kosteneffizientes Grok-4-Modell mit zwei Millionen Token Kontext sowie einheitlichem Denk- und Direktmodus."
     },
     "es": {
-      "description": "Grok 4 Fast es una versión de modelo independiente de xAI con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo Grok 4 económico con dos millones de tokens de contexto y modos unificados de razonamiento y respuesta directa."
     },
     "fr": {
-      "description": "Grok 4 Fast est une version de modèle distincte de xAI, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle Grok 4 économique avec deux millions de jetons de contexte et des modes unifiés raisonné et direct."
     },
     "id": {
-      "description": "Grok 4 Fast adalah versi model mandiri dari xAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model Grok 4 hemat biaya dengan konteks dua juta token serta mode penalaran dan nonpenalaran terpadu."
     },
     "ja": {
-      "description": "Grok 4 Fast は xAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "200万トークンのコンテキストと統合された推論・非推論モードを備えた、低コストなGrok 4モデル。"
     },
     "ko": {
-      "description": "Grok 4 Fast은(는) xAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "200만 토큰 컨텍스트와 통합된 추론·비추론 모드를 지원하는 경제적인 Grok 4 모델입니다."
     },
     "pt": {
-      "description": "Grok 4 Fast é uma versão de modelo independente da xAI, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo Grok 4 econômico com contexto de dois milhões de tokens e modos unificados de raciocínio e resposta direta."
     },
     "ru": {
-      "description": "Grok 4 Fast — самостоятельная версия модели от xAI с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Экономичная модель Grok 4 с контекстом в два миллиона токенов и едиными режимами рассуждения и прямого ответа."
     },
     "tr": {
-      "description": "Grok 4 Fast, xAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "İki milyon token bağlam ile birleşik düşünme ve doğrudan yanıt modları sunan ekonomik Grok 4 modeli."
     },
     "zh-Hant": {
-      "description": "Grok 4 Fast 是 xAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "經濟型 Grok 4 模型，提供 200 萬 token 上下文，並統一支援推理和非推理模式。"
     }
   },
   "verified": true,

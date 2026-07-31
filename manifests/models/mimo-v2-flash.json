@@ -29,7 +29,7 @@
       "description": "MoE-модель Xiaomi с открытыми весами и 309 млрд параметров для эффективных рассуждений, программирования и агентов, с 15 млрд активных параметров и контекстом 256K."
     },
     "tr": {
-      "description": "Verimli akıl yürütme, kodlama ve aracı görevler için Xiaomi'nin 309B açık ağırlıklı MoE dil modeli; 15B etkin parametre ve 256K bağlam sunar."
+      "description": "Verimli akıl yürütme, kodlama ve ajan görevleri için Xiaomi'nin 309B açık ağırlıklı MoE dil modeli; 15B etkin parametre ve 256K bağlam sunar."
     },
     "zh-Hans": {
       "description": "Xiaomi 面向高效推理、编程和智能体任务的 309B 开放权重 MoE 语言模型，激活参数 15B，上下文 256K。"

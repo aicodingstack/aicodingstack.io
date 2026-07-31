@@ -21,22 +21,22 @@
       "description": "Assistant de codage avancé qui orchestre plusieurs agents IA en parallèle pour résoudre des tâches logicielles complexes avec planification structurée, vérification et sous-agents personnalisables."
     },
     "id": {
-      "description": "Asisten coding tingkat lanjut yang mengorkestrasi beberapa agen AI secara paralel untuk menangani tugas perangkat lunak kompleks dengan perencanaan terstruktur, verifikasi, dan sub-agen yang dapat ..."
+      "description": "Asisten pemrograman canggih yang mengatur beberapa agen AI secara paralel untuk tugas perangkat lunak kompleks dengan perencanaan terstruktur, verifikasi, dan subagen yang dapat disesuaikan."
     },
     "ja": {
       "description": "構造化された計画、検証、カスタマイズ可能なサブエージェントにより、複雑なソフトウェアタスクに対処するために複数のAIエージェントを並列にオーケストレーションする高度なエージェントコーディングアシスタントです。"
     },
     "pt": {
-      "description": "Assistente de codificacao avancado que orquestra multiplos agentes de IA em paralelo para enfrentar tarefas de software complexas com planejamento estruturado, verificacao e sub-agentes customizaveis."
+      "description": "Assistente agêntico avançado que orquestra vários agentes de IA em paralelo para tarefas complexas de software, com planejamento estruturado, verificação e subagentes personalizáveis."
     },
     "ru": {
-      "description": "Продвинутый помошник по программированию, который оркестрирует несколько ИИ-агентов параллельно для решения сложных задач разработки ПО со структурированным планированием, верификацией и настраивае..."
+      "description": "Продвинутый помощник, параллельно координирующий нескольких ИИ-агентов для сложных задач разработки со структурированным планированием, проверкой и настраиваемыми субагентами."
     },
     "tr": {
-      "description": "Yapilandirilmis planlama, dogrulama ve ozellestirilebilir alt aracilar ile karmaik yazılım gorevlerini cozumlemek icin birden fazla AI aracısını paralel olarak orkestre eden gelismis aracı tabanlı ..."
+      "description": "Karmaşık yazılım görevleri için birçok yapay zekâ aracısını paralel yöneten gelişmiş kodlama yardımcısı. Yapılandırılmış planlama, doğrulama ve özelleştirilebilir alt aracılar sunar."
     },
     "zh-Hant": {
-      "description": "先進的代理編碼助手，協調多個 AI 代理並行處理複雜的軟體任務，具有結構化規劃、驗證和可自訂子代理。"
+      "description": "先進的代理程式設計助手，協調多個 AI 代理並行處理複雜的軟體任務，具有結構化規劃、驗證和可自訂子代理。"
     }
   },
   "verified": true,

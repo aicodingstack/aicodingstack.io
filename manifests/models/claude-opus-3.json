@@ -35,7 +35,7 @@
       "description": "Anthropic 曾经的 Claude 3 旗舰模型，面向复杂推理、编码、分析、工具调用和多模态任务。"
     },
     "zh-Hant": {
-      "description": "Anthropic 曾經的 Claude 3 旗艦模型，面向複雜推理、編碼、分析、工具呼叫和多模態任務。"
+      "description": "Anthropic 曾經的 Claude 3 旗艦模型，面向複雜推理、程式設計、分析、工具呼叫和多模態任務。"
     }
   },
   "verified": true,

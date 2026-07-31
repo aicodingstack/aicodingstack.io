@@ -14,28 +14,28 @@
       "description": "추론, 코드 품질 및 사용자 경험에 큰 개선이 있는 OpenAI의 가장 진보된 모델입니다. 점진적 추론, 지시 따르기 및 높은 정확도가 필요한 복잡한 작업에 최적화되었습니다."
     },
     "es": {
-      "description": "El modelo mas avanzado de OpenAI con mejoras importantes en razonamiento, calidad de codigo y experiencia de usuario..."
+      "description": "El modelo más avanzado de OpenAI, con grandes mejoras en razonamiento, calidad de código y experiencia de uso, optimizado para tareas complejas de alta precisión."
     },
     "fr": {
-      "description": "Le modele le plus avance d'OpenAI avec des ameliorations importantes en raisonnement, qualite de code et experience utilisateur..."
+      "description": "Le modèle le plus avancé d’OpenAI, nettement amélioré en raisonnement, qualité du code et expérience utilisateur, pour les tâches complexes exigeant une grande précision."
     },
     "id": {
-      "description": "Model paling canggih OpenAI dengan peningkatan penting dalam penalaran, kualitas kode, dan pengalaman pengguna..."
+      "description": "Model tercanggih OpenAI dengan peningkatan besar dalam penalaran, kualitas kode, dan pengalaman pengguna, untuk tugas kompleks yang membutuhkan akurasi tinggi."
     },
     "ja": {
       "description": "推論、コード品質、ユーザーエクスペリエンスにおいて重要な改善がなされたOpenAIの最先端モデル。段階的な推論、指示の遵守、高い精度を必要とする複雑なタスクのために最適化されています。"
     },
     "pt": {
-      "description": "O modelo mais avancado da OpenAI com melhoras importantes em raciocinio, qualidade de codigo e experiencia do usuario..."
+      "description": "O modelo mais avançado da OpenAI, com grandes melhorias em raciocínio, qualidade de código e experiência do usuário, para tarefas complexas de alta precisão."
     },
     "ru": {
-      "description": "Самая передовая модель от OpenAI с важными улучшениями в рассуждении, качестве кода и пользовательском опыте..."
+      "description": "Самая продвинутая модель OpenAI с заметными улучшениями рассуждений, качества кода и UX, оптимизированная для сложных задач с высокой точностью."
     },
     "tr": {
-      "description": "OpenAI'nin en gelismis modeli; muhakeme, kod kalitesi ve kullanici deneyiminde onemli iyilestirmeler var..."
+      "description": "OpenAI’nin akıl yürütme, kod kalitesi ve kullanıcı deneyiminde büyük ilerleme sunan en gelişmiş modeli; yüksek doğruluk isteyen karmaşık görevler için optimize edilmiştir."
     },
     "zh-Hant": {
-      "description": "OpenAI 最先進的模型，在推理、代碼質量和用戶體驗方面有重大改進。針對需要逐步推理、遵循指令和高準確性的複雜任務進行了優化。"
+      "description": "OpenAI 最先進的模型，在推理、程式碼品質和使用者體驗方面有重大改進。針對需要逐步推理、遵循指令和高準確性的複雜任務進行了最佳化。"
     }
   },
   "verified": true,

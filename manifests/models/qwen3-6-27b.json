@@ -29,7 +29,7 @@
       "description": "Плотная модель Qwen3.6 с открытыми весами для мультимодального рассуждения и агентного программирования: 27,8 млрд параметров, гибридное мышление и контекст 262K."
     },
     "tr": {
-      "description": "27,8B parametre, hibrit düşünme ve 262K bağlamla çok modlu akıl yürütme ve aracılı kodlama için yoğun, açık ağırlıklı Qwen3.6 modeli."
+      "description": "27,8B parametre, hibrit düşünme ve 262K bağlamla çok modlu akıl yürütme ve ajan tabanlı kodlama için yoğun, açık ağırlıklı Qwen3.6 modeli."
     },
     "zh-Hans": {
       "description": "面向多模态推理和智能体编程的稠密开放权重 Qwen3.6 模型，拥有 27.8B 参数、混合思考模式和 262K 上下文。"

@@ -3,7 +3,7 @@
     "guide": {
       "criteria": [
         {
-          "description": "Comece pelos sistemas operativos da equipa. Uma CLI compatível com todas as máquinas necessárias é mais fácil de padronizar e manter.",
+          "description": "Comece pelos sistemas operacionais usados pela equipe. Uma CLI compatível com todas as máquinas necessárias é mais fácil de padronizar e manter.",
           "title": "Compatibilidade de plataforma"
         },
         {
@@ -22,15 +22,15 @@
       "faqTitle": "Perguntas sobre CLI de programação com IA",
       "faqs": [
         {
-          "description": "Uma CLI de programação com IA ajuda a analisar repositórios, editar ficheiros, executar comandos e concluir tarefas no terminal. Os produtos diferem em modelos, sistemas, preços, licenças e controlo de execução.",
+          "description": "Uma CLI de programação com IA ajuda a analisar repositórios, editar arquivos, executar comandos e concluir tarefas no terminal. Os produtos diferem em modelos, sistemas, preços, licenças e controle de execução.",
           "title": "O que é uma CLI de programação com IA?"
         },
         {
-          "description": "Não existe uma única CLI ideal para todos. Escolha as que correspondem às plataformas, orçamento, licenças e modelos e serviços usados pela equipa.",
+          "description": "Não existe uma única CLI ideal para todos. Escolha as opções compatíveis com suas plataformas, orçamento, licenças, modelos e serviços usados pela equipe.",
           "title": "Qual é a melhor CLI de programação com IA?"
         },
         {
-          "description": "Algumas oferecem plano gratuito ou cliente aberto, mas modelos e funções alojadas podem ter custos. Filtre por Plano gratuito e Preço inicial e confirme os limites oficiais.",
+          "description": "Algumas oferecem plano gratuito ou cliente de código aberto, mas modelos e recursos hospedados podem ter custos. Filtre por Plano gratuito e Preço inicial e confirme os limites oficiais.",
           "title": "Existem CLI de programação com IA gratuitas?"
         },
         {
@@ -56,12 +56,12 @@
           "title": "Gemini CLI"
         },
         {
-          "description": "Plataformas, licença, preços e ligações do projeto OpenCode.",
+          "description": "Plataformas, licença, preços e links do projeto OpenCode.",
           "href": "/clis/opencode",
           "title": "OpenCode"
         }
       ],
-      "profilesIntro": "Os links abaixo são atalhos para registos de produtos já incluídos na tabela, não uma classificação nem uma recomendação. Abra cada registo para consultar os dados do manifesto e as fontes primárias.",
+      "profilesIntro": "Os links abaixo são atalhos para registros de produtos já incluídos na tabela, não uma classificação nem uma recomendação. Abra cada registro para consultar os dados do manifest e as fontes primárias.",
       "profilesTitle": "Explorar perfis de produtos CLI",
       "shortlistIntro": "Use um processo uniforme para que a popularidade não substitua a adequação ao fluxo de trabalho.",
       "shortlistTitle": "Criar uma seleção em três passos",
@@ -71,18 +71,18 @@
           "title": "Definir restrições"
         },
         {
-          "description": "Exclua ferramentas incompatíveis e compare as restantes nas mesmas colunas.",
+          "description": "Exclua ferramentas incompatíveis e compare as demais nas mesmas colunas.",
           "title": "Filtrar de forma uniforme"
         },
         {
-          "description": "Confirme instalação, preços, versão e suporte nas ligações oficiais antes do teste.",
+          "description": "Confirme instalação, preços, versão e suporte nos links oficiais antes do teste.",
           "title": "Verificar e testar"
         }
       ],
       "title": "Como comparar CLI de programação com IA"
     },
-    "subtitle": "Compare características, preços e especificações de ferramentas de codificação de linha de comando de IA lado a lado.",
-    "title": "Comparação de CLI de Codificação IA"
+    "subtitle": "Compare CLIs de programação com IA por preço, suporte a plataformas, licença, estrelas no GitHub, links do projeto e recursos oficiais para escolher o agente de terminal ideal.",
+    "title": "Comparação de CLI de programação com IA"
   },
   "columns": {
     "contextLength": "Comprimento do Contexto",
@@ -99,8 +99,8 @@
     "guide": {
       "criteria": [
         {
-          "title": "Compatibilidade com o IDE anfitrião",
-          "description": "Comece pelos editores que a equipa já utiliza. A coluna de IDEs suportados mostra se a extensão funciona no VS Code, em produtos JetBrains ou noutro anfitrião."
+          "title": "Compatibilidade com o IDE host",
+          "description": "Comece pelos editores que a equipe já utiliza. A coluna de IDEs compatíveis mostra se a extensão funciona no VS Code, em produtos JetBrains ou em outro aplicativo host."
         },
         {
           "title": "Modelo de preços",
@@ -108,30 +108,30 @@
         },
         {
           "title": "Licença e manutenção",
-          "description": "Use a licença, as estrelas no GitHub, os links do projeto e o selo de descontinuado para distinguir projetos open source de produtos proprietários ou encerrados."
+          "description": "Use a licença, as estrelas no GitHub, os links do projeto e o selo de descontinuado para distinguir projetos de código aberto de produtos proprietários ou encerrados."
         },
         {
           "title": "Caminho de verificação",
-          "description": "Antes de instalar, abra o site, marketplace ou download, documentação, registo de alterações e questões. Estas fontes confirmam compatibilidade e suporte atuais."
+          "description": "Antes de instalar, abra o site, marketplace ou download, a documentação, o histórico de alterações e o rastreador de problemas. Essas fontes confirmam a compatibilidade e o suporte atuais."
         }
       ],
       "faqTitle": "Perguntas sobre extensões de programação com IA",
       "faqs": [
         {
           "title": "O que é uma extensão de programação com IA?",
-          "description": "É software que adiciona assistência de programação a um editor ou IDE existente. Pode oferecer conclusão, chat, contexto do repositório, fluxos de edição ou funções Agent sem abandonar a aplicação anfitriã."
+          "description": "É um software que adiciona assistência de programação a um editor ou IDE existente. Pode oferecer conclusão, chat, contexto do repositório, fluxos de edição ou recursos de agente sem sair do aplicativo host."
         },
         {
           "title": "Qual é a melhor extensão de programação com IA?",
-          "description": "Não existe uma melhor para todos. Filtre pelo IDE anfitrião, ambiente, orçamento e licença. Depois compare as candidatas com documentação oficial e um teste num pequeno repositório."
+          "description": "Não existe uma opção melhor para todos. Filtre pelo IDE host, ambiente, orçamento e licença. Depois compare as candidatas com a documentação oficial e um teste em um pequeno repositório."
         },
         {
           "title": "Existem extensões de programação com IA gratuitas?",
-          "description": "Algumas têm planos gratuitos ou clientes open source, embora a utilização de modelos e serviços alojados possa ser paga. Use as colunas de preço como primeiro filtro e confirme os limites com o fornecedor."
+          "description": "Algumas têm planos gratuitos ou clientes de código aberto, embora o uso de modelos e serviços hospedados possa ser pago. Use as colunas de preço como primeiro filtro e confirme os limites com o fornecedor."
         },
         {
           "title": "Qual é a diferença para um IDE de programação com IA?",
-          "description": "Uma extensão funciona dentro de um editor existente e herda o seu fluxo. Um IDE independente controla toda a experiência. Compare extensões se quiser manter o anfitrião atual."
+          "description": "Uma extensão funciona dentro de um editor existente e herda seu fluxo. Um IDE independente controla toda a experiência. Compare extensões se quiser manter o aplicativo host atual."
         },
         {
           "title": "São compatíveis com VS Code e IDEs JetBrains?",
@@ -153,15 +153,15 @@
         {
           "title": "Gemini Code Assist",
           "href": "/extensions/gemini-code-assist",
-          "description": "Consulte compatibilidade, preços, ligações do projeto e documentação oficial."
+          "description": "Consulte compatibilidade, preços, links do projeto e documentação oficial."
         },
         {
           "title": "JetBrains Junie",
           "href": "/extensions/jetbrains-junie",
-          "description": "Consulte compatibilidade do anfitrião, preços, ligações e recursos oficiais."
+          "description": "Consulte compatibilidade com o aplicativo host, preços, links e recursos oficiais."
         }
       ],
-      "profilesIntro": "Os links abaixo são atalhos para registos de produtos já incluídos na tabela, não uma classificação nem uma recomendação. Abra cada registo para consultar os dados do manifesto, o estado do ciclo de vida e as fontes primárias.",
+      "profilesIntro": "Os links abaixo são atalhos para registros de produtos já incluídos na tabela, não uma classificação nem uma recomendação. Abra cada registro para consultar os dados do manifest, o estado do ciclo de vida e as fontes primárias.",
       "profilesTitle": "Explorar perfis de extensões",
       "shortlistIntro": "Use um processo consistente para que a popularidade não se sobreponha à compatibilidade e manutenção.",
       "shortlistTitle": "Criar uma seleção de extensões em três passos",
@@ -172,51 +172,51 @@
         },
         {
           "title": "Filtrar de forma consistente",
-          "description": "Remova produtos incompatíveis ou descontinuados e compare os restantes por preço, licença, estrelas no GitHub, links do projeto e recursos oficiais."
+          "description": "Remova produtos incompatíveis ou descontinuados e compare os demais por preço, licença, estrelas no GitHub, links do projeto e recursos oficiais."
         },
         {
           "title": "Verificar e testar",
-          "description": "Abra o registo e a instalação oficial. Confirme compatibilidade, preços atuais, permissões e suporte antes de testar num repositório."
+          "description": "Abra o registro e a página oficial de instalação. Confirme compatibilidade, preços atuais, permissões e suporte antes de testar em um repositório."
         }
       ],
       "title": "Como comparar extensões de programação com IA"
     },
     "subtitle": "Compare extensões de programação com IA por IDEs suportados, preços, licença, estrelas no GitHub e links do projeto, ciclo de vida e recursos oficiais.",
-    "title": "Comparação de Extensões de Codificação IA"
+    "title": "Comparação de extensões de programação com IA"
   },
   "ides": {
     "guide": {
       "criteria": [
         {
           "title": "Compatibilidade de plataforma",
-          "description": "Comece pelos sistemas operativos da equipa. Um IDE compatível com todas as máquinas necessárias é mais fácil de avaliar, padronizar e manter."
+          "description": "Comece pelos sistemas operacionais usados pela equipe. Um IDE compatível com todas as máquinas necessárias é mais fácil de avaliar, padronizar e manter."
         },
         {
           "title": "Modelo de preços",
-          "description": "Compare planos gratuitos, preços iniciais e níveis pagos e confirme limites na página oficial. Os detalhes da subscrição afetam o custo real de adoção."
+          "description": "Compare planos gratuitos, preços iniciais e níveis pagos e confirme os limites na página oficial. Os detalhes da assinatura afetam o custo real de adoção."
         },
         {
           "title": "Licença e código fonte",
-          "description": "Use a licença e ligações do GitHub para distinguir editores open source de produtos proprietários e examinar o projeto por trás de cada IDE."
+          "description": "Use a licença e os links do GitHub para distinguir editores de código aberto de produtos proprietários e examinar o projeto por trás de cada IDE."
         },
         {
           "title": "Caminho de verificação",
-          "description": "Siga o site, documentação, download, alterações e questões oficiais. Estas fontes mostram como o IDE é instalado, atualizado e suportado."
+          "description": "Consulte o site, a documentação, o download, o histórico de alterações e o rastreador de problemas oficiais. Essas fontes mostram como o IDE é instalado, atualizado e mantido."
         }
       ],
       "faqTitle": "Perguntas sobre IDEs de programação com IA",
       "faqs": [
         {
           "title": "O que é um IDE de programação com IA?",
-          "description": "É um ambiente que integra assistência de programação na experiência do editor. Pode combinar conclusão, chat, contexto do repositório, edição, terminal e fluxos Agent, com diferenças de plataforma, preço e licença."
+          "description": "É um ambiente que integra assistência de programação à experiência do editor. Pode combinar conclusão, chat, contexto do repositório, edição, terminal e fluxos de agente, com diferenças de plataforma, preço e licença."
         },
         {
           "title": "Qual é o melhor IDE de programação com IA?",
-          "description": "Não existe um melhor para todos. Selecione produtos compatíveis com os sistemas, orçamento, licença e práticas da equipa e confirme os finalistas com documentação oficial e um piloto."
+          "description": "Não existe um IDE melhor para todos. Selecione produtos compatíveis com os sistemas, o orçamento, a licença e as práticas da equipe e confirme os finalistas com a documentação oficial e um piloto."
         },
         {
           "title": "Existem IDEs de programação com IA gratuitos?",
-          "description": "Alguns oferecem planos gratuitos ou baseiam-se em editores open source, mas a utilização de modelos ou funções alojadas pode ser paga. Use as colunas de preço como primeiro filtro."
+          "description": "Alguns oferecem planos gratuitos ou se baseiam em editores de código aberto, mas o uso de modelos ou recursos hospedados pode ser pago. Use as colunas de preço como primeiro filtro."
         },
         {
           "title": "Qual é a diferença para uma extensão?",
@@ -224,10 +224,10 @@
         },
         {
           "title": "Funcionam em Windows, macOS e Linux?",
-          "description": "O suporte varia. Consulte os ícones de macOS, Windows e Linux e confirme os requisitos na transferência ou documentação de instalação oficial."
+          "description": "O suporte varia. Consulte os ícones de macOS, Windows e Linux e confirme os requisitos na página de download ou na documentação oficial de instalação."
         }
       ],
-      "intro": "Compare {count} IDEs de programação com IA com sinais consistentes: plataformas, preços, licença, estrelas no GitHub e links do projeto, e recursos oficiais. Comece pelas restrições da equipa, crie uma seleção e confirme os detalhes atuais antes de mudar de ambiente.",
+      "intro": "Compare {count} IDEs de programação com IA com critérios consistentes: plataformas, preços, licença, estrelas no GitHub, links do projeto e recursos oficiais. Comece pelas restrições da equipe, crie uma seleção e confirme os detalhes atuais antes de mudar de ambiente.",
       "profiles": [
         {
           "title": "Cursor",
@@ -237,48 +237,48 @@
         {
           "title": "Windsurf Editor",
           "href": "/ides/windsurf",
-          "description": "Consulte plataformas, preços, licença, ligações do projeto e documentação."
+          "description": "Consulte plataformas, preços, licença, links do projeto e documentação."
         },
         {
           "title": "Kiro",
           "href": "/ides/kiro",
-          "description": "Consulte plataformas, preços, licença, ligações e recursos oficiais."
+          "description": "Consulte plataformas, preços, licença, links e recursos oficiais."
         },
         {
           "title": "Antigravity",
           "href": "/ides/antigravity",
-          "description": "Consulte plataformas, preços, licença, ligações e documentação."
+          "description": "Consulte plataformas, preços, licença, links e documentação."
         }
       ],
-      "profilesIntro": "Os links abaixo são atalhos para registos de produtos já incluídos na tabela, não uma classificação nem uma recomendação. Abra cada registo para consultar os dados do manifesto e as fontes primárias.",
+      "profilesIntro": "Os links abaixo são atalhos para registros de produtos já incluídos na tabela, não uma classificação nem uma recomendação. Abra cada registro para consultar os dados do manifest e as fontes primárias.",
       "profilesTitle": "Explorar perfis de produtos IDE",
       "shortlistIntro": "Use um processo consistente para que a popularidade não substitua a adequação à plataforma e ao fluxo.",
       "shortlistTitle": "Criar uma seleção de IDEs em três passos",
       "steps": [
         {
           "title": "Definir restrições",
-          "description": "Liste sistemas obrigatórios, orçamento, requisitos de licença e fluxos do editor que a equipa deve manter."
+          "description": "Liste os sistemas obrigatórios, o orçamento, os requisitos de licença e os fluxos do editor que a equipe precisa manter."
         },
         {
           "title": "Filtrar de forma consistente",
-          "description": "Remova IDEs que não cumprem as restrições e compare os restantes com as mesmas colunas."
+          "description": "Remova os IDEs que não atendem às restrições e compare os demais nas mesmas colunas."
         },
         {
           "title": "Verificar e pilotar",
-          "description": "Abra cada registo e ligação oficial. Confirme instalação, preços, versão atual e suporte antes de um piloto."
+          "description": "Abra cada registro e link oficial. Confirme instalação, preços, versão atual e suporte antes de um piloto."
         }
       ],
       "title": "Como comparar IDEs de programação com IA"
     },
     "subtitle": "Compare IDEs de programação com IA por preços, plataformas, licença, estrelas no GitHub, links do projeto e recursos oficiais antes de escolher um ambiente.",
-    "title": "Comparação de IDE de Codificação IA"
+    "title": "Comparação de IDEs de programação com IA"
   },
-  "modelCompareDescription": "Compare modelos de codificação IA lado a lado: especificações, preços, capacidades e benchmarks.",
-  "modelCompareTitle": "Comparar Modelos de Codificação IA: {model1} vs {model2}",
+  "modelCompareDescription": "Compare modelos de programação com IA lado a lado: especificações, preços, recursos e benchmarks.",
+  "modelCompareTitle": "Comparação de modelos de programação com IA: {model1} vs. {model2}",
   "models": {
     "backTo": "Voltar aos Modelos",
     "subtitle": "Compare especificações e preços de modelos de codificação de IA lado a lado.",
-    "title": "Comparação de Modelos de Codificação IA"
+    "title": "Comparação de modelos de programação com IA"
   },
   "table": {
     "scrollHint": "Role horizontalmente para ver todas as colunas."

@@ -5,37 +5,37 @@
   "description": "Open 123B code-agent model for autonomous software engineering with a 256K context window.",
   "translations": {
     "zh-Hans": {
-      "description": "Devstral 2 是 Mistral 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "面向自主软件工程的开放 123B 代码智能体模型，提供 256K 上下文窗口。"
     },
     "de": {
-      "description": "Devstral 2 ist eine eigenständige Modellversion von Mistral mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Offenes 123B-Code-Agentenmodell für autonome Softwareentwicklung mit 256K Kontext."
     },
     "es": {
-      "description": "Devstral 2 es una versión de modelo independiente de Mistral con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo abierto de agente de código de 123B para ingeniería de software autónoma, con contexto de 256K."
     },
     "fr": {
-      "description": "Devstral 2 est une version de modèle distincte de Mistral, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle ouvert d’agent de code de 123 Md pour l’ingénierie logicielle autonome, avec contexte de 256K."
     },
     "id": {
-      "description": "Devstral 2 adalah versi model mandiri dari Mistral dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model agen kode terbuka 123B untuk rekayasa perangkat lunak otonom dengan konteks 256K."
     },
     "ja": {
-      "description": "Devstral 2 は Mistral が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "256Kコンテキストを備え、自律的なソフトウェア開発に対応するオープンな123Bコードエージェントモデル。"
     },
     "ko": {
-      "description": "Devstral 2은(는) Mistral가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "256K 컨텍스트로 자율 소프트웨어 엔지니어링을 수행하는 123B 오픈 코드 에이전트 모델입니다."
     },
     "pt": {
-      "description": "Devstral 2 é uma versão de modelo independente da Mistral, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo aberto de agente de código de 123B para engenharia de software autônoma, com contexto de 256K."
     },
     "ru": {
-      "description": "Devstral 2 — самостоятельная версия модели от Mistral с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Открытая модель кодового агента на 123 млрд параметров для автономной разработки ПО с контекстом 256K."
     },
     "tr": {
-      "description": "Devstral 2, Mistral tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "256K bağlamla otonom yazılım mühendisliği için geliştirilmiş açık 123B kod ajanı modeli."
     },
     "zh-Hant": {
-      "description": "Devstral 2 是 Mistral 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "面向自主軟體工程的開放 123B 程式碼代理模型，提供 256K 上下文視窗。"
     }
   },
   "verified": true,

@@ -26,7 +26,7 @@
       "description": "SSTは、PulumiおよびTerraformプロバイダーを利用して、自身のインフラストラクチャ上にフルスタックアプリケーションを構築するオープンソースフレームワークです。"
     },
     "pt": {
-      "description": "SST é um framework de código aberto para criar aplicações full-stack na sua própria infraestrutura usando provedores Pulumi e Terraform."
+      "description": "SST é um framework de código aberto para criar aplicativos full-stack na própria infraestrutura usando provedores do Pulumi e do Terraform."
     },
     "ru": {
       "description": "SST — открытый фреймворк для создания полнофункциональных приложений в собственной инфраструктуре с помощью провайдеров Pulumi и Terraform."
@@ -35,7 +35,7 @@
       "description": "SST, Pulumi ve Terraform sağlayıcılarını kullanarak kendi altyapınızda full-stack uygulamalar oluşturmak için açık kaynaklı bir framework'tür."
     },
     "zh-Hant": {
-      "description": "SST 是一個開源框架，用於透過 Pulumi 和 Terraform 供應商在自有基礎設施上建構全端應用。"
+      "description": "SST 是一個開放原始碼框架，用於透過 Pulumi 和 Terraform 供應商在自有基礎設施上建構全端應用。"
     }
   },
   "verified": true,

@@ -29,13 +29,13 @@
       "description": "Мультимодальная агентная модель Moonshot AI с открытыми весами для визуального программирования, рассуждений, инструментов и долгих процессов."
     },
     "tr": {
-      "description": "Moonshot AI'ın görsel kodlama, akıl yürütme, araç kullanımı ve koordineli uzun süreli iş akışları için açık ağırlıklı çok modlu aracı modeli."
+      "description": "Moonshot AI'ın görsel kodlama, akıl yürütme, araç kullanımı ve koordineli uzun süreli iş akışları için açık ağırlıklı çok modlu ajan modeli."
     },
     "zh-Hans": {
       "description": "Moonshot AI 面向视觉编码、推理、工具调用和协同长周期工作流的开放权重多模态智能体模型。"
     },
     "zh-Hant": {
-      "description": "Moonshot AI 面向視覺編碼、推理、工具呼叫和協同長週期工作流程的開放權重多模態智慧體模型。"
+      "description": "Moonshot AI 面向視覺程式設計、推理、工具呼叫和協同長週期工作流程的開放權重多模態智慧體模型。"
     }
   },
   "verified": true,

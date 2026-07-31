@@ -6,7 +6,7 @@
   "compareTitle": "{model1} vs {model2} を比較",
   "description": "説明",
   "inputPrice": "入力価格",
-  "knowledgeCutoff": "知識",
+  "knowledgeCutoff": "知識のカットオフ",
   "lifecycle": "ライフサイクル",
   "outputPrice": "出力価格",
   "releaseDate": "リリース日",

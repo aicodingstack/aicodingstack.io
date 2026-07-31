@@ -15,10 +15,10 @@
       "description": "OpenCode는 터미널용으로 빌드된 오픈 소스 AI 코딩 에이전트입니다. 네이티브 TUI, LSP 지원, 다중 세션 기능을 갖추고 있으며 로컬 모델을 포함하여 75개 이상의 LLM 제공업체를 지원합니다."
     },
     "es": {
-      "description": "OpenCode es agente codificacion IA open source para terminal. Cuenta con TUI nativo, soporte LSP, multiples sesiones y funciona con 75+ proveedores LLM."
+      "description": "OpenCode es un agente de IA y código abierto para el terminal. Incluye TUI nativa, LSP, varias sesiones y más de 75 proveedores de LLM, incluidos modelos locales."
     },
     "fr": {
-      "description": "OpenCode est un agent de codage IA a code ouvert construit pour le terminal. Offre TUI natif, support LSP, capacite multi-session et fonctionne avec 75+ fournisseurs LLM y compris les modeles locaux."
+      "description": "OpenCode est un agent IA open source pour terminal. Il propose une TUI native, LSP, plusieurs sessions et plus de 75 fournisseurs de LLM, dont des modèles locaux."
     },
     "id": {
       "description": "OpenCode adalah agen coding AI open source yang dibangun untuk terminal. Memiliki TUI asli, dukungan LSP, kemampuan multi-sesi, dan bekerja dengan 75+ penyedia LLM termasuk model lokal."
@@ -27,16 +27,16 @@
       "description": "OpenCodeは、ターミナル用に構築されたオープンソースAIコーディングエージェントです。ネイティブTUI、LSPサポート、マルチセッション機能を備え、ローカルモデルを含む75以上のLLMプロバイダーで動作します。"
     },
     "pt": {
-      "description": "OpenCode e agente de codificacao AI open source para terminal. Apresenta TUI nativo, suporte LSP, multi-sessao e funciona com 75+ fornecedores LLM."
+      "description": "OpenCode é um agente de programação com IA de código aberto para o terminal. Oferece TUI nativa, suporte a LSP, várias sessões e compatibilidade com mais de 75 provedores de LLM."
     },
     "ru": {
       "description": "OpenCode - агент кодирования ИИ с открытым исходным кодом для терминала. Обладает TUI встроенным, поддержкой LSP, множественными сессиями и 75+ LLM поставщиков."
     },
     "tr": {
-      "description": "OpenCode, terminal icin insa edilmis acik kaynakli AI kodlama aracidir. Dogal TUI, LSP destegi, coklu oturum yetenegine sahiptir ve yerel modeller dahil 75+ LLM saglayicisiyla calisir."
+      "description": "OpenCode, terminal için açık kaynaklı bir yapay zekâ aracısıdır. Yerel TUI, LSP ve çoklu oturum desteği sunar; yerel modeller dahil 75’ten fazla LLM sağlayıcısıyla çalışır."
     },
     "zh-Hant": {
-      "description": "OpenCode 是一個為終端構建的開源 AI 編碼 Agent。具有原生 TUI、LSP 支援、多會話功能，支援 75+ 個 LLM 提供商，包括本機模型。"
+      "description": "OpenCode 是一個為終端機建置的開放原始碼 AI 程式設計 Agent。具有原生 TUI、LSP 支援、多工作階段功能，支援 75+ 個 LLM 供應商，包括本機模型。"
     }
   },
   "verified": false,

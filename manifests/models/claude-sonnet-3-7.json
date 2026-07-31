@@ -29,13 +29,13 @@
       "description": "Первая гибридная модель рассуждений Anthropic и исходная модель Claude Code для агентного программирования, разработки интерфейсов и сложных инструментов."
     },
     "tr": {
-      "description": "Anthropic'in aracı kodlama, ön uç geliştirme ve karmaşık araç kullanımı için ilk melez akıl yürütme ve özgün Claude Code modeli."
+      "description": "Anthropic'in ajan tabanlı kodlama, ön uç geliştirme ve karmaşık araç kullanımı için ilk melez akıl yürütme ve özgün Claude Code modeli."
     },
     "zh-Hans": {
       "description": "Anthropic 首个混合推理模型，也是最初的 Claude Code 模型，面向智能体编码、前端开发和复杂工具调用。"
     },
     "zh-Hant": {
-      "description": "Anthropic 首個混合推理模型，也是最初的 Claude Code 模型，面向智慧體編碼、前端開發和複雜工具呼叫。"
+      "description": "Anthropic 首個混合推理模型，也是最初的 Claude Code 模型，面向智慧體程式設計、前端開發和複雜工具呼叫。"
     }
   },
   "verified": true,

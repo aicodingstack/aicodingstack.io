@@ -81,8 +81,8 @@
       ],
       "title": "Comment comparer les CLI de codage IA"
     },
-    "subtitle": "Comparez les fonctionnalités, les tarifs et les spécifications des outils de codage IA en ligne de commande côte à côte.",
-    "title": "Comparaison CLI de Codage IA"
+    "subtitle": "Comparez les CLI de codage IA par tarif, plateformes prises en charge, licence, étoiles GitHub, liens du projet et ressources officielles afin de choisir l’agent de codage en terminal adapté.",
+    "title": "Comparaison des CLI de codage IA"
   },
   "columns": {
     "contextLength": "Longueur du contexte",
@@ -182,7 +182,7 @@
       "title": "Comment comparer les extensions de codage IA"
     },
     "subtitle": "Comparez les extensions de codage IA par IDE pris en charge, tarifs, licence, étoiles GitHub et liens du projet, cycle de vie et ressources officielles.",
-    "title": "Comparaison d'Extensions de Codage IA"
+    "title": "Comparaison des extensions de codage IA"
   },
   "ides": {
     "guide": {
@@ -271,14 +271,14 @@
       "title": "Comment comparer les IDE de codage IA"
     },
     "subtitle": "Comparez les IDE de codage IA par tarifs, plateformes, licence, étoiles GitHub, liens du projet et ressources officielles avant de choisir un environnement.",
-    "title": "Comparaison de IDE de Codage IA"
+    "title": "Comparaison des IDE de codage IA"
   },
   "modelCompareDescription": "Comparez les modèles de codage IA côte à côte : spécifications, tarifs, capacités et benchmarks.",
-  "modelCompareTitle": "Comparaison de Modèles de Codage IA : {model1} vs {model2}",
+  "modelCompareTitle": "Comparaison de modèles de codage IA : {model1} contre {model2}",
   "models": {
     "backTo": "Retour aux Modèles",
     "subtitle": "Comparez les spécifications et les tarifs des modèles de codage AI côte à côte.",
-    "title": "Comparaison de Modèles de Codage IA"
+    "title": "Comparaison des modèles de codage IA"
   },
   "table": {
     "scrollHint": "Faites défiler horizontalement pour voir toutes les colonnes."

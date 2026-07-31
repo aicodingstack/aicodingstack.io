@@ -26,7 +26,7 @@
       "description": "コーディングやコンテンツ生成などの様々な用途向けの高度な言語モデルとAIサービスを提供するAIプラットフォーム。"
     },
     "pt": {
-      "description": "Uma plataforma de IA que oferece modelos de linguagem avançados e serviços de IA para várias aplicações, incluindo criação de código e conteúdo."
+      "description": "Plataforma de IA que oferece modelos de linguagem e serviços avançados para vários aplicativos, incluindo criação de código e conteúdo."
     },
     "ru": {
       "description": "Платформа AI, предлагающая передовые языковые модели и AI-сервисы для различных приложений, включая программирование и создание контента."
@@ -35,7 +35,7 @@
       "description": "Kodlama ve içerik oluşturma dahil çeşitli uygulamalar için gelişmiş dil modelleri ve AI hizmetleri sunan bir AI platformu."
     },
     "zh-Hant": {
-      "description": "AI 平台，為各種應用提供先進的語言模型和 AI 服務，包括編碼和內容生成。"
+      "description": "AI 平台，為各種應用提供先進的語言模型和 AI 服務，包括程式設計和內容產生。"
     }
   },
   "verified": false,

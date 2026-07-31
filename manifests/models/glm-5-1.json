@@ -29,13 +29,13 @@
       "description": "Открытая флагманская модель Z.ai для длительной агентной разработки, автономного программирования и готовых результатов в задачах продолжительностью до восьми часов."
     },
     "tr": {
-      "description": "Z.ai'ın sekiz saate kadar süren görevlerde uzun vadeli aracı mühendislik, sürekli otonom kodlama ve üretim kalitesinde teslimat için açık ağırlıklı amiral modeli."
+      "description": "Z.ai'ın sekiz saate kadar süren görevlerde uzun vadeli ajan tabanlı mühendislik, sürekli otonom kodlama ve üretim kalitesinde teslimat için açık ağırlıklı amiral modeli."
     },
     "zh-Hans": {
       "description": "Z.ai 面向长周期智能体工程、持续自主编码和最长八小时任务生产级交付的开放权重旗舰模型。"
     },
     "zh-Hant": {
-      "description": "Z.ai 面向長週期智慧體工程、持續自主編碼和最長八小時任務生產級交付的開放權重旗艦模型。"
+      "description": "Z.ai 面向長週期智慧體工程、持續自主程式設計和最長八小時任務生產級交付的開放權重旗艦模型。"
     }
   },
   "verified": true,

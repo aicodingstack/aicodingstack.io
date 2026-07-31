@@ -32,7 +32,7 @@
       "description": "GitLab Duo CLI 是 GitLab 的终端编码代理，可用于理解项目、编辑代码、运行测试，并将 AI 辅助工作集成到 GitLab 开发工作流中。"
     },
     "zh-Hant": {
-      "description": "GitLab Duo CLI 是 GitLab 的終端編碼代理，可用於理解專案、編輯程式碼、執行測試，並將 AI 輔助工作整合到 GitLab 開發工作流程中。"
+      "description": "GitLab Duo CLI 是 GitLab 的終端機程式設計代理，可用於理解專案、編輯程式碼、執行測試，並將 AI 輔助工作整合到 GitLab 開發工作流程中。"
     }
   },
   "verified": true,

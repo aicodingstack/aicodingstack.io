@@ -35,7 +35,7 @@
       "description": "AWS ajan IDE'si, spesifikasyon tabanlı geliştirme için VS Code'a entegrasyon. Doğal dil spesifikasyonlarını koda çevirir, görevleri otomatik eder."
     },
     "zh-Hant": {
-      "description": "AWS 的智能 IDE，為 VS Code 帶來規範驅動開發。使用 AI Agent 將自然語言規範轉化為代碼、自動化任務並與工作流集成。"
+      "description": "AWS 的智慧 IDE，將規格驅動開發帶入 VS Code，使用 AI Agent 把自然語言規格轉換成程式碼、自動執行任務並整合工作流程。"
     }
   },
   "verified": true,

@@ -29,7 +29,7 @@
       "description": "MoE-модель Xiaomi с открытыми весами и 310 млрд параметров для мультимодального понимания, длинного контекста и агентных процессов с текстом, изображениями, видео и аудио."
     },
     "tr": {
-      "description": "Metin, görüntü, video ve ses üzerinde çok modlu anlama, uzun bağlamlı akıl yürütme ve aracı iş akışları için Xiaomi'nin 310B açık ağırlıklı MoE modeli."
+      "description": "Metin, görüntü, video ve ses üzerinde çok modlu anlama, uzun bağlamlı akıl yürütme ve ajan iş akışları için Xiaomi'nin 310B açık ağırlıklı MoE modeli."
     },
     "zh-Hans": {
       "description": "Xiaomi 面向文本、图像、视频和音频多模态理解、长上下文推理及智能体工作流的 310B 开放权重 MoE 模型。"

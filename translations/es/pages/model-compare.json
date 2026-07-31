@@ -6,7 +6,7 @@
   "compareTitle": "Comparar {model1} vs {model2}",
   "description": "Descripción",
   "inputPrice": "Precio de entrada",
-  "knowledgeCutoff": "Conocimiento",
+  "knowledgeCutoff": "Fecha límite de conocimiento",
   "lifecycle": "Ciclo de vida",
   "outputPrice": "Precio de salida",
   "releaseDate": "Fecha de lanzamiento",

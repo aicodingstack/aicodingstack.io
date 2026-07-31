@@ -29,13 +29,13 @@
       "description": "MoE-модель на 106B параметров с 12B активных параметров для эффективного агентного программирования, рассуждений и работы с инструментами."
     },
     "tr": {
-      "description": "Verimli aracı kodlama, akıl yürütme ve araç kullanımı için geliştirilmiş, 12B etkin parametreli 106B MoE modeli."
+      "description": "Verimli ajan tabanlı kodlama, akıl yürütme ve araç kullanımı için geliştirilmiş, 12B etkin parametreli 106B MoE modeli."
     },
     "zh-Hans": {
       "description": "一款总参数 106B、激活参数 12B 的 MoE 模型，面向高效的智能体编码、推理和工具使用。"
     },
     "zh-Hant": {
-      "description": "一款總參數 106B、啟用參數 12B 的 MoE 模型，面向高效的智慧體編碼、推理和工具使用。"
+      "description": "一款總參數 106B、啟用參數 12B 的 MoE 模型，面向高效的智慧體程式設計、推理和工具使用。"
     }
   },
   "verified": true,

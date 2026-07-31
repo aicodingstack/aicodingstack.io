@@ -5,37 +5,37 @@
   "description": "Updated DeepSeek-R1 reasoning checkpoint with improved coding, mathematics, and reduced hallucination behavior.",
   "translations": {
     "zh-Hans": {
-      "description": "DeepSeek-R1-0528 是 DeepSeek 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "更新版 DeepSeek-R1 推理模型，提升了编码和数学能力，并减少了幻觉。"
     },
     "de": {
-      "description": "DeepSeek-R1-0528 ist eine eigenständige Modellversion von DeepSeek mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Aktualisierter DeepSeek-R1-Checkpoint mit verbessertem Coding und mathematischem Denken sowie weniger Halluzinationen."
     },
     "es": {
-      "description": "DeepSeek-R1-0528 es una versión de modelo independiente de DeepSeek con capacidades explícitas de programación o ingeniería de software."
+      "description": "Versión actualizada de DeepSeek-R1 con mejoras en programación y matemáticas, y menos alucinaciones."
     },
     "fr": {
-      "description": "DeepSeek-R1-0528 est une version de modèle distincte de DeepSeek, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Version actualisée de DeepSeek-R1, améliorée en codage et en mathématiques, avec moins d’hallucinations."
     },
     "id": {
-      "description": "DeepSeek-R1-0528 adalah versi model mandiri dari DeepSeek dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Checkpoint DeepSeek-R1 terbaru dengan kemampuan coding dan matematika yang lebih baik serta halusinasi yang lebih rendah."
     },
     "ja": {
-      "description": "DeepSeek-R1-0528 は DeepSeek が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "コーディングと数学の能力を高め、ハルシネーションを抑えたDeepSeek-R1の更新版チェックポイント。"
     },
     "ko": {
-      "description": "DeepSeek-R1-0528은(는) DeepSeek가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "코딩과 수학 성능을 높이고 환각을 줄인 DeepSeek-R1 업데이트 체크포인트입니다."
     },
     "pt": {
-      "description": "DeepSeek-R1-0528 é uma versão de modelo independente da DeepSeek, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Checkpoint atualizado do DeepSeek-R1, com melhorias em programação e matemática e menos alucinações."
     },
     "ru": {
-      "description": "DeepSeek-R1-0528 — самостоятельная версия модели от DeepSeek с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Обновлённая версия DeepSeek-R1 с улучшениями в программировании и математике и меньшим числом галлюцинаций."
     },
     "tr": {
-      "description": "DeepSeek-R1-0528, DeepSeek tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Kodlama ve matematik yetenekleri geliştirilmiş, halüsinasyonları azaltılmış güncel DeepSeek-R1 sürümü."
     },
     "zh-Hant": {
-      "description": "DeepSeek-R1-0528 是 DeepSeek 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "更新版 DeepSeek-R1 推理模型，提升了程式設計和數學能力，並減少幻覺。"
     }
   },
   "verified": true,

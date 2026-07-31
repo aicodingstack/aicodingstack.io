@@ -14,10 +14,10 @@
       "description": "프로토타입에서 프로덕션까지 구축하기 위한 에이전트 기반 AI 개발 CLI입니다. 사양 기반 개발, 에이전트 후크, 웹 검색 기능 및 터미널에서의 자연어 코딩 지원을 제공합니다."
     },
     "es": {
-      "description": "CLI desarrollo IA agente de prototipo a produccion. Ofrece desarrollo especificaciones, ganchos agente, busqueda web y asistencia codificacion natural."
+      "description": "CLI de desarrollo con IA agéntica, del prototipo a producción. Incluye especificaciones, hooks de agentes, búsqueda web y asistencia de programación en lenguaje natural."
     },
     "fr": {
-      "description": "CLI developpement IA agentique de prototype a production. Offre developpement specification, crochets agent, capacites web et assistance codage naturel."
+      "description": "CLI de développement par IA agentique, du prototype à la production. Elle propose des spécifications, des hooks d’agents, la recherche web et une assistance au codage en langage naturel."
     },
     "id": {
       "description": "CLI pengembangan AI agentic untuk membangun dari prototipe hingga produksi. Memiliki pengembangan spesifikasi, hook agen, kemampuan web, dan bantuan coding bahasa alami di terminal."
@@ -26,16 +26,16 @@
       "description": "プロトタイプから本番環境への構築のためのエージェント型AI開発CLI。スペック駆動開発、エージェントフック、ウェブ検索機能、ターミナルでの自然言語コーディング支援を特徴としています。"
     },
     "pt": {
-      "description": "CLI desenvolvimento IA agente de prototipo ate producao. Oferece desenvolvimento especificacoes, ganchos agente, web e assistencia codificacao natural."
+      "description": "CLI de desenvolvimento agêntico com IA, do protótipo à produção. Oferece desenvolvimento orientado por especificações, hooks de agente, busca na web e assistência em linguagem natural."
     },
     "ru": {
       "description": "CLI агентного ИИ-разработки для создания от прототипа. Обладает разработкой спецификаций, агентными хуками, веб-поиск и поддержкой кодирования."
     },
     "tr": {
-      "description": "Prototipten uretimeye kadar insa etmek icin ajentik AI gelistirme CLI. Spesifikasyon odakli gelistirme, ajent kanca, web arama ve terminalinizde dogal dil kodlama destek ozelliklerine sahiptir."
+      "description": "Prototipten üretime kadar geliştirme için eylem odaklı yapay zekâ CLI aracıdır. Belirtim odaklı geliştirme, ajan bağlantıları, web araması ve terminalde doğal dille kodlama yardımı sunar."
     },
     "zh-Hant": {
-      "description": "用於從原型到生產的智慧 AI 開發 CLI。具備規範驅動開發、代理掛鉤、網絡搜尋功能，以及終端中的自然語言編碼輔助。"
+      "description": "用於從原型到生產的智慧 AI 開發 CLI。具備規範驅動開發、Agent hook、網路搜尋功能，以及終端機中的自然語言程式設計輔助。"
     }
   },
   "verified": true,

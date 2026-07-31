@@ -5,37 +5,37 @@
   "description": "Reasoning model for complex coding, mathematics, science, and visual analysis tasks.",
   "translations": {
     "zh-Hans": {
-      "description": "o3 是 OpenAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "面向复杂编码、数学、科学和视觉分析任务的推理模型。"
     },
     "de": {
-      "description": "o3 ist eine eigenständige Modellversion von OpenAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Reasoning-Modell für komplexe Aufgaben in Coding, Mathematik, Naturwissenschaften und visueller Analyse."
     },
     "es": {
-      "description": "o3 es una versión de modelo independiente de OpenAI con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo de razonamiento para tareas complejas de programación, matemáticas, ciencias y análisis visual."
     },
     "fr": {
-      "description": "o3 est une version de modèle distincte de OpenAI, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle de raisonnement pour les tâches complexes de codage, de mathématiques, de sciences et d’analyse visuelle."
     },
     "id": {
-      "description": "o3 adalah versi model mandiri dari OpenAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model penalaran untuk tugas kompleks dalam coding, matematika, sains, dan analisis visual."
     },
     "ja": {
-      "description": "o3 は OpenAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "複雑なコーディング、数学、科学、画像分析タスク向けの推論モデル。"
     },
     "ko": {
-      "description": "o3은(는) OpenAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "복잡한 코딩, 수학, 과학과 시각 분석 작업을 위한 추론 모델입니다."
     },
     "pt": {
-      "description": "o3 é uma versão de modelo independente da OpenAI, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo de raciocínio para tarefas complexas de programação, matemática, ciências e análise visual."
     },
     "ru": {
-      "description": "o3 — самостоятельная версия модели от OpenAI с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Модель рассуждений для сложных задач программирования, математики, естественных наук и визуального анализа."
     },
     "tr": {
-      "description": "o3, OpenAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Karmaşık kodlama, matematik, bilim ve görsel analiz görevleri için akıl yürütme modeli."
     },
     "zh-Hant": {
-      "description": "o3 是 OpenAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "面向複雜程式設計、數學、科學和視覺分析任務的推理模型。"
     }
   },
   "verified": true,

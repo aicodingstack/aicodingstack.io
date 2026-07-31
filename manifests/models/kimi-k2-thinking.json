@@ -17,7 +17,7 @@
       "description": "Una variante enfocada en razonamiento del modelo Kimi K2 de Moonshot AI con capacidades de pensamiento extendido para la resolución de problemas complejos y tareas de razonamiento de múltiples pasos."
     },
     "fr": {
-      "description": "Une variante axée sur le raisonnement du modèle Kimi K2 de Moonshot AI avec des capacités de penséeétendues pour la résolution de problèmes complexes et des tâches de raisonnement en plusieurs étapes."
+      "description": "Variante de Kimi K2 de Moonshot AI axée sur le raisonnement, avec une réflexion prolongée pour résoudre les problèmes complexes et les tâches en plusieurs étapes."
     },
     "id": {
       "description": "Varian berfokus pada penalaran dari model Kimi K2 Moonshot AI dengan kemampuan berpikir yang diperluas untuk pemecahan masalah kompleks dan tugas penalaran multi-langkah."
@@ -26,16 +26,16 @@
       "description": "Moonshot AIのKimi K2モデルの推論に特化したバリアントで、複雑な問題解決と複数段階の推論タスクのための拡張された思考能力を備えています。"
     },
     "pt": {
-      "description": "Uma variante focada em raciocinio do modelo Kimi K2 da Moonshot AI com capacidades de pensamento estendido para resolução de problemas complexos e tarefas de raciocinio de múltiplos passos."
+      "description": "Uma variante focada em raciocínio do modelo Kimi K2 da Moonshot AI com capacidades de pensamento estendido para resolução de problemas complexos e tarefas de raciocínio de múltiplos passos."
     },
     "ru": {
       "description": "Вариант модели Kimi K2 от Moonshot AI, ориентированный на рассуждения, с расширенными мыслительными возможностями для решения сложных проблем и многошаговых задач."
     },
     "tr": {
-      "description": "Karmasik problem cozme ve cok adimli muhakeme gorevleri icin genisletilmis dusunme yeteneklerine sahip, Moonshot AI'den Kimi K2 modelinin muhakeme odakli bir varyanti."
+      "description": "Karmaşık problem çözme ve çok adımlı akıl yürütme için genişletilmiş düşünme yetenekleri sunan, Moonshot AI’ın Kimi K2 modelinin muhakeme odaklı çeşidi."
     },
     "zh-Hant": {
-      "description": "月之暗面推出的 Kimi K2 推理聚焦模型，具備擴展思考能力，專為複雜問題解決和多步推理任務優化。"
+      "description": "月之暗面推出的 Kimi K2 推理聚焦模型，具備擴展思考能力，專為複雜問題解決和多步推理任務最佳化。"
     }
   },
   "verified": true,

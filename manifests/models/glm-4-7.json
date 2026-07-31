@@ -29,13 +29,13 @@
       "description": "GLM 4.7 — открытая модель Z.ai для программирования, рассуждений и агентных задач с контекстом 200K токенов и максимальным выводом 128K."
     },
     "tr": {
-      "description": "GLM 4.7, kodlama, akıl yürütme ve aracı görevler için 200K token bağlam ve en fazla 128K çıktı sunan Z.ai açık ağırlık modelidir."
+      "description": "GLM 4.7, kodlama, akıl yürütme ve ajan görevleri için 200K token bağlam ve en fazla 128K çıktı sunan Z.ai açık ağırlık modelidir."
     },
     "zh-Hans": {
       "description": "GLM 4.7 是 Z.ai 面向编码、推理和智能体任务的开放权重模型，具备 200K token 上下文窗口和 128K 最大输出。"
     },
     "zh-Hant": {
-      "description": "GLM 4.7 是 Z.ai 面向編碼、推理和智慧體任務的開放權重模型，具備 200K token 上下文視窗和 128K 最大輸出。"
+      "description": "GLM 4.7 是 Z.ai 面向程式設計、推理和智慧體任務的開放權重模型，具備 200K token 上下文視窗和 128K 最大輸出。"
     }
   },
   "verified": true,

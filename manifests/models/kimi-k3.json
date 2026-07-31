@@ -14,7 +14,7 @@
       "description": "Le modèle de pointe nativement multimodal de Moonshot AI, avec 2,8 Bn de paramètres et 1 M de contexte, pour le codage long, le savoir et le raisonnement profond."
     },
     "id": {
-      "description": "Model frontier multimodal native Moonshot AI dengan 2,8T parameter dan konteks 1M untuk coding jangka panjang, pekerjaan pengetahuan, dan penalaran mendalam."
+      "description": "Model multimodal frontier bawaan Moonshot AI dengan 2,8T parameter dan konteks 1M untuk coding jangka panjang, pekerjaan pengetahuan, dan penalaran mendalam."
     },
     "ja": {
       "description": "2.8兆パラメータ、ネイティブマルチモーダル、100万コンテキストを備え、長期コーディング、知識労働、深い推論に対応するMoonshot AIのフロンティアモデル。"
@@ -35,7 +35,7 @@
       "description": "Moonshot AI 的 2.8 万亿参数原生多模态前沿模型，提供 100 万 token 上下文，面向长周期编码、知识工作和深度推理。"
     },
     "zh-Hant": {
-      "description": "Moonshot AI 的 2.8 兆參數原生多模態前沿模型，提供 100 萬 token 上下文，面向長週期編碼、知識工作和深度推理。"
+      "description": "Moonshot AI 的 2.8 兆參數原生多模態前沿模型，提供 100 萬 token 上下文，面向長週期程式設計、知識工作和深度推理。"
     }
   },
   "verified": true,

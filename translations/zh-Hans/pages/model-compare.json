@@ -6,7 +6,7 @@
   "compareTitle": "比较 {model1} vs {model2}",
   "description": "描述",
   "inputPrice": "输入定价",
-  "knowledgeCutoff": "知识",
+  "knowledgeCutoff": "知识截止日期",
   "lifecycle": "生命周期",
   "outputPrice": "输出定价",
   "releaseDate": "发布日期",

@@ -14,28 +14,28 @@
       "description": "GPT-5 시리즈의 최신 최첨단 모델로, 더 강력한 일반 추론 능력, 개선된 지시 따르기 및 더 자연적인 대화 스타일을 제공합니다. 간단 쿼리에 대한 빠른 응답과 복잡한 작업에 대한 깊이 있는 사고를 위해 적응형 추론을 사용합니다."
     },
     "es": {
-      "description": "Modelo de ultima generación de la serie GPT-5, ofrece razonamiento más fuerte, seguimiento de instrucciones mejorado y estilo de conversación más natural..."
+      "description": "Modelo reciente de la serie GPT-5 con razonamiento más fuerte y conversación natural; adapta el razonamiento para responder rápido a lo simple y profundizar en lo complejo."
     },
     "fr": {
-      "description": "Dernier modèle de pointe de la série GPT-5, offrant un raisonnement plus fort, un suivi d'instructions amélioré et un style de conversation plus naturel..."
+      "description": "Modèle récent de la série GPT-5, au raisonnement renforcé et aux échanges naturels ; il adapte son raisonnement pour répondre vite ou approfondir les tâches complexes."
     },
     "id": {
-      "description": "Model terdepan seri GPT-5, menawarkan penalaran lebih kuat, pengikutan instruksi yang ditingkatkan, dan gaya percakapan yang lebih natural..."
+      "description": "Model seri GPT-5 dengan penalaran lebih kuat dan percakapan alami; penalaran adaptif menjawab pertanyaan sederhana dengan cepat dan mendalami tugas kompleks."
     },
     "ja": {
       "description": "GPT-5シリーズの最新の最先端モデルで、より強力な汎用推論能力、改善された命令追従、より自然な対話スタイルを提供します。適応的推論を使用して、単純なクエリには迅速に応答しながら、複雑なタスクにはより深い思考を提供します。"
     },
     "pt": {
-      "description": "Ultimo modelo de ponta da série GPT-5, oferece raciocínio mais forte, seguimento de instruções melhorado e estilo de conversação mais natural..."
+      "description": "Modelo recente da série GPT-5 com raciocínio mais forte e conversa natural; adapta o raciocínio para responder rápido ao simples e aprofundar tarefas complexas."
     },
     "ru": {
-      "description": "Последняя модель переднего уровня серии GPT-5, обеспечивающая более сильные возможности рассуждения, улучшенное следование инструкциям и более естественный стиль общения..."
+      "description": "Новая модель серии GPT-5 с усиленными рассуждениями и естественным диалогом; адаптивно отвечает быстро на простые запросы и глубоко — на сложные."
     },
     "tr": {
-      "description": "GPT-5 serisinin en son modeli, daha güçlü muhakeme, gelişmiş talimat takibi ve daha doğal konuşma tarzı sunar..."
+      "description": "Daha güçlü akıl yürütme ve doğal konuşma sunan güncel GPT-5 modeli; basit sorulara hızlı, karmaşık görevlere derin yanıt vermek için düşünme düzeyini uyarlar."
     },
     "zh-Hant": {
-      "description": "GPT-5 系列的最新前沿級模型，提供更強的通用推理能力、改進的指令遵循和更自然的對話風格。使用自適應推理動態分配計算，對簡單查詢快速響應，同時對複雜任務進行更深入的思考。"
+      "description": "GPT-5 系列的最新前沿級模型，提供更強的通用推理能力、改進的指令遵循和更自然的對話風格。使用調適式推理動態分配計算，對簡單查詢快速回應，同時對複雜任務進行更深入的思考。"
     }
   },
   "verified": true,

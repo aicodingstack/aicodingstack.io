@@ -26,7 +26,7 @@
       "description": "単一のインターフェースを通じて、複数のプロバイダーの複数のAIモデルにアクセスできる統一APIプラットフォーム。"
     },
     "pt": {
-      "description": "Uma plataforma API unificada que fornece acesso a múltiplos modelos de IA de diferentes fornecedores através de uma única interface."
+      "description": "Plataforma de API unificada que oferece acesso a vários modelos de IA de diferentes provedores por uma única interface."
     },
     "ru": {
       "description": "Унифицированная платформа API, обеспечивающая доступ к нескольким моделям ИИ от различных провайдеров через единый интерфейс."
@@ -35,7 +35,7 @@
       "description": "Tek bir arayüz üzerinden çeşitli sağlayıcılardan birden fazla AI modeline erişim sağlayan birleştirilmiş bir API platformu."
     },
     "zh-Hant": {
-      "description": "統一的 API 平台，透過單一接口提供來自不同提供商的多個 AI 模型的存取。"
+      "description": "統一的 API 平台，透過單一介面提供來自不同供應商的多個 AI 模型的存取。"
     }
   },
   "verified": false,

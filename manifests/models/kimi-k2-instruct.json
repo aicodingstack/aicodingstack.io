@@ -5,37 +5,37 @@
   "description": "Original Kimi K2 instruct release, a one-trillion-parameter MoE model built for agentic coding and tool use.",
   "translations": {
     "zh-Hans": {
-      "description": "Kimi K2 Instruct 是 Moonshot 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "初代 Kimi K2 Instruct，一款为智能体编码和工具使用打造的万亿参数 MoE 模型。"
     },
     "de": {
-      "description": "Kimi K2 Instruct ist eine eigenständige Modellversion von Moonshot mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Ursprüngliche Kimi-K2-Instruct-Version: MoE-Modell mit einer Billion Parametern für agentisches Coding und Werkzeugnutzung."
     },
     "es": {
-      "description": "Kimi K2 Instruct es una versión de modelo independiente de Moonshot con capacidades explícitas de programación o ingeniería de software."
+      "description": "Versión original Kimi K2 Instruct, un modelo MoE de un billón de parámetros para programación agéntica y herramientas."
     },
     "fr": {
-      "description": "Kimi K2 Instruct est une version de modèle distincte de Moonshot, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Version Kimi K2 Instruct d’origine, un modèle MoE de mille milliards de paramètres pour le codage agentique et les outils."
     },
     "id": {
-      "description": "Kimi K2 Instruct adalah versi model mandiri dari Moonshot dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Rilis awal Kimi K2 Instruct, model MoE satu triliun parameter untuk coding agentik dan penggunaan alat."
     },
     "ja": {
-      "description": "Kimi K2 Instruct は Moonshot が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "エージェント型コーディングとツール利用向けに構築された1兆パラメータMoEモデル、初代Kimi K2 Instruct。"
     },
     "ko": {
-      "description": "Kimi K2 Instruct은(는) Moonshot가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "에이전트 코딩과 도구 사용을 위해 만든 1조 매개변수 MoE 모델인 최초의 Kimi K2 Instruct 릴리스입니다."
     },
     "pt": {
-      "description": "Kimi K2 Instruct é uma versão de modelo independente da Moonshot, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Versão original do Kimi K2 Instruct, um modelo MoE com 1T de parâmetros para programação agêntica e uso de ferramentas."
     },
     "ru": {
-      "description": "Kimi K2 Instruct — самостоятельная версия модели от Moonshot с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Первая версия Kimi K2 Instruct — MoE-модель с триллионом параметров для агентного программирования и инструментов."
     },
     "tr": {
-      "description": "Kimi K2 Instruct, Moonshot tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Aracı kodlama ve araç kullanımı için geliştirilmiş bir trilyon parametreli MoE modeli olan ilk Kimi K2 Instruct sürümü."
     },
     "zh-Hant": {
-      "description": "Kimi K2 Instruct 是 Moonshot 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "初代 Kimi K2 Instruct，一款為代理程式設計和工具使用打造的兆參數 MoE 模型。"
     }
   },
   "verified": true,

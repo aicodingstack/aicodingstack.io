@@ -6,7 +6,7 @@
   "compareTitle": "{model1} vs {model2} vergleichen",
   "description": "Beschreibung",
   "inputPrice": "Eingabepreis",
-  "knowledgeCutoff": "Wissensgrenze",
+  "knowledgeCutoff": "Wissensstand bis",
   "lifecycle": "Lebenszyklus",
   "outputPrice": "Ausgabepreis",
   "releaseDate": "Veröffentlichungsdatum",

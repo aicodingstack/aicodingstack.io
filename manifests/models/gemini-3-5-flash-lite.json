@@ -29,13 +29,13 @@
       "description": "Самая быстрая и экономичная мультимодальная модель Google класса 3.5 для массовых задач субагентов, программирования, разбора документов и извлечения данных."
     },
     "tr": {
-      "description": "Google’ın yüksek hacimli alt aracı, kodlama, belge ayrıştırma ve veri çıkarma iş yükleri için en hızlı ve uygun maliyetli 3.5 sınıfı çok modlu modeli."
+      "description": "Google’ın yüksek hacimli alt ajan, kodlama, belge ayrıştırma ve veri çıkarma iş yükleri için en hızlı ve uygun maliyetli 3.5 sınıfı çok modlu modeli."
     },
     "zh-Hans": {
       "description": "Google 速度最快、成本效益最高的 3.5 级多模态模型，面向大规模子智能体、编码、文档解析和数据抽取工作负载。"
     },
     "zh-Hant": {
-      "description": "Google 速度最快、成本效益最高的 3.5 級多模態模型，面向大規模子智慧體、編碼、文件解析和資料擷取工作負載。"
+      "description": "Google 速度最快、成本效益最高的 3.5 級多模態模型，面向大規模子智慧體、程式設計、文件解析和資料擷取工作負載。"
     }
   },
   "verified": true,

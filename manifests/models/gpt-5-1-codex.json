@@ -14,10 +14,10 @@
       "description": "소프트웨어 엔지니어링 및 코딩 워크플로우에 최적화된 GPT-5.1의 전문 버전입니다. 대화형 개발 및 복잡한 엔지니어링 작업을 독립적으로 실행하도록 설계되었습니다. 프로젝트 구축, 기능 개발, 디버깅, 대규모 리팩터링 및 코드 리뷰를 지원합니다."
     },
     "es": {
-      "description": "Version especializada de GPT-5..."
+      "description": "GPT-5.1 optimizado para ingeniería de software: desarrollo interactivo, tareas complejas, creación de proyectos y funciones, depuración, refactorización y revisión de código."
     },
     "fr": {
-      "description": "Version specialisee de GPT-5..."
+      "description": "GPT-5.1 optimisé pour l’ingénierie logicielle : développement interactif, tâches complexes, projets et fonctionnalités, débogage, refactorisation et revue de code."
     },
     "id": {
       "description": "Versi spesialisasi GPT-5.1 untuk rekayasa perangkat lunak. Dirancang untuk pengembangan interaktif, tugas kompleks, pembangunan proyek, pengembangan fitur, debugging, refactoring, dan review kode."
@@ -26,16 +26,16 @@
       "description": "ソフトウェアエンジニアリング向けに最適化されたGPT-5.1の専門バージョンです。対話型開発、複雑なタスク、プロジェクト構築、機能開発、デバッグ、リファクタリング、コードレビューをサポートしています。"
     },
     "pt": {
-      "description": "Versao especializada de GPT-5..."
+      "description": "GPT-5.1 otimizado para engenharia de software: desenvolvimento interativo, tarefas complexas, projetos e recursos, depuração, refatoração e revisão de código."
     },
     "ru": {
       "description": "Специализированная версия GPT-5.1 для программной инженерии. Разработана для интерактивной разработки, сложных задач, создания проектов, разработки функций, отладки, рефакторинга и обзора кода."
     },
     "tr": {
-      "description": "Yazılım muhendisligi için optimize edilmis GPT-5..."
+      "description": "Yazılım mühendisliği için optimize edilmiş GPT-5.1; etkileşimli geliştirme, karmaşık görevler, proje ve özellik oluşturma, hata ayıklama, yeniden düzenleme ve kod inceleme sunar."
     },
     "zh-Hant": {
-      "description": "GPT-5.1 的專門版本，針對軟件工程和編碼工作流程進行了優化。專為交互式開發會話和長時間獨立執行複雜工程任務而設計。支持從零開始構建項目、功能開發、調試、大規模重構和代碼審查。"
+      "description": "GPT-5.1 的專門版本，針對軟體工程和程式設計工作流程進行了最佳化。專為互動式開發會話和長時間獨立執行複雜工程任務而設計。支援從零開始建置專案、功能開發、偵錯、大規模重構和程式碼審查。"
     }
   },
   "verified": true,

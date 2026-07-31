@@ -36,7 +36,7 @@
       "description": "Kimi Code CLI 是 Moonshot AI 的终端编码代理，支持代码仓库探索、文件编辑、命令执行、MCP 工具，以及与其 VS Code 扩展共享工作流。"
     },
     "zh-Hant": {
-      "description": "Kimi Code CLI 是 Moonshot AI 的終端編碼代理，支援程式碼儲存庫探索、檔案編輯、命令執行、MCP 工具，以及與其 VS Code 擴充功能共享工作流程。"
+      "description": "Kimi Code CLI 是 Moonshot AI 的終端機程式設計代理，支援程式碼儲存庫探索、檔案編輯、命令執行、MCP 工具，以及與其 VS Code 擴充功能共享工作流程。"
     }
   },
   "verified": false,

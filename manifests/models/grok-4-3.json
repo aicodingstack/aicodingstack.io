@@ -5,37 +5,37 @@
   "description": "Frontier Grok model for coding and enterprise agents with one-million-token context and configurable reasoning effort.",
   "translations": {
     "zh-Hans": {
-      "description": "Grok 4.3 是 xAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "面向编码和企业智能体的前沿 Grok 模型，提供 100 万 token 上下文和可配置推理强度。"
     },
     "de": {
-      "description": "Grok 4.3 ist eine eigenständige Modellversion von xAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Grok-Frontiermodell für Coding- und Unternehmensagenten mit einer Million Token Kontext und konfigurierbarem Denkaufwand."
     },
     "es": {
-      "description": "Grok 4.3 es una versión de modelo independiente de xAI con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo Grok de frontera para agentes de programación y empresa, con un millón de tokens de contexto y razonamiento configurable."
     },
     "fr": {
-      "description": "Grok 4.3 est une version de modèle distincte de xAI, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle Grok de pointe pour les agents de codage et d’entreprise, avec un million de jetons de contexte et un raisonnement réglable."
     },
     "id": {
-      "description": "Grok 4.3 adalah versi model mandiri dari xAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model frontier Grok untuk agen coding dan perusahaan dengan konteks satu juta token dan tingkat penalaran yang dapat diatur."
     },
     "ja": {
-      "description": "Grok 4.3 は xAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "100万トークンのコンテキストと調整可能な推論量を備えた、コーディング・企業エージェント向けGrok最先端モデル。"
     },
     "ko": {
-      "description": "Grok 4.3은(는) xAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "100만 토큰 컨텍스트와 조정 가능한 추론 수준을 갖춘 코딩·엔터프라이즈 에이전트용 Grok 최첨단 모델입니다."
     },
     "pt": {
-      "description": "Grok 4.3 é uma versão de modelo independente da xAI, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo Grok de fronteira para agentes de programação e empresas, com contexto de um milhão de tokens e raciocínio configurável."
     },
     "ru": {
-      "description": "Grok 4.3 — самостоятельная версия модели от xAI с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Передовая модель Grok для программных и корпоративных агентов с контекстом в миллион токенов и настраиваемой глубиной рассуждений."
     },
     "tr": {
-      "description": "Grok 4.3, xAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Bir milyon token bağlam ve ayarlanabilir akıl yürütme düzeyiyle kodlama ve kurumsal ajanlar için öncü Grok modeli."
     },
     "zh-Hant": {
-      "description": "Grok 4.3 是 xAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "面向程式設計和企業代理的前沿 Grok 模型，提供 100 萬 token 上下文和可設定推理強度。"
     }
   },
   "verified": true,

@@ -20,7 +20,7 @@
       "description": "ZCode는 에이전틱 개발, 프로젝트 계획, 코드 변경, 터미널 실행, 재사용 가능한 ADE 도구를 위한 Z.ai의 독립형 데스크톱 코딩 환경입니다."
     },
     "pt": {
-      "description": "O ZCode é o ambiente independente da Z.ai para desenvolvimento agêntico, planejamento de projetos, alterações de código, execução no terminal e ferramentas ADE reutilizáveis."
+      "description": "O ZCode é o ambiente independente da Z.ai para desenvolvimento agêntico, planejamento de projetos, mudanças no código, execução no terminal e ferramentas ADE reutilizáveis."
     },
     "ru": {
       "description": "ZCode — отдельная настольная среда программирования Z.ai для агентной разработки, планирования проектов, изменения кода, выполнения команд в терминале и использования многоразовых инструментов ADE."
@@ -32,7 +32,7 @@
       "description": "ZCode 是 Z.ai 的独立桌面编码环境，支持代理式开发、项目规划、代码变更、终端执行和可复用的 ADE 工具。"
     },
     "zh-Hant": {
-      "description": "ZCode 是 Z.ai 的獨立桌面編碼環境，支援代理式開發、專案規劃、程式碼變更、終端機執行和可重複利用的 ADE 工具。"
+      "description": "ZCode 是 Z.ai 的獨立桌面程式設計環境，支援代理式開發、專案規劃、程式碼變更、終端機執行和可重複利用的 ADE 工具。"
     }
   },
   "verified": false,

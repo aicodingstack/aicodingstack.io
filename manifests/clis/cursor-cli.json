@@ -14,10 +14,10 @@
       "description": "터미널에서 직접 코딩할 수 있는 AI 기반 명령줄 에이전트입니다. 여러 제공업체의 최첨단 모델로 AI와 상호 작용하여 코드를 작성, 검토 및 수정합니다."
     },
     "es": {
-      "description": "Agente IA linea de comandos para codificar desde terminal. Interactua con IA para escribir, revisar y modificar codigo con modelos vanguardia."
+      "description": "Agente de línea de comandos con IA para programar directamente desde el terminal. Permite escribir, revisar y modificar código con modelos avanzados de varios proveedores."
     },
     "fr": {
-      "description": "Agent IA ligne de commande pour coder depuis terminal. Interagissez avec IA pour ecrire, reviser et modifier code avec modeles pointe de plusieurs fournisseurs."
+      "description": "Agent en ligne de commande propulsé par l’IA pour coder directement depuis le terminal. Il permet d’écrire, de réviser et de modifier du code avec des modèles avancés de plusieurs fournisseurs."
     },
     "id": {
       "description": "Agen baris perintah bertenaga AI untuk coding langsung dari terminal Anda. Berinteraksi dengan AI untuk menulis, meninjau, dan mengubah kode dengan model frontier dari beberapa penyedia."
@@ -26,16 +26,16 @@
       "description": "ターミナルから直接コーディングするAI搭載のエージェント型コマンドラインです。複数のプロバイダーの最先端モデルでAIと対話し、コードを記述、レビュー、修正します。"
     },
     "pt": {
-      "description": "Agente IA linha de comandos para codificar do terminal. Interaja com IA para escrever, rever e modificar codigos com modelos vanguardia."
+      "description": "Agente de IA para programar diretamente no terminal. Interaja com modelos avançados de vários provedores para escrever, revisar e modificar código."
     },
     "ru": {
       "description": "Агент командной строки на базе ИИ для кодирования прямо из вашего терминала. Взаимодействуйте с ИИ для написания, проверки и изменения кода с помощью передовых моделей от нескольких поставщиков."
     },
     "tr": {
-      "description": "Terminalinizden dogrudan kodlama icin AI destekli komut satiri aracidir. Birden fazla saglayicinin modlari ile AI ile etkilesime kurarak kod yazin, inceleyin ve degistirin."
+      "description": "Doğrudan terminalden kodlama yapmak için yapay zekâ destekli komut satırı aracısıdır. Birden çok sağlayıcının ileri düzey modelleriyle kod yazmayı, incelemeyi ve değiştirmeyi sağlar."
     },
     "zh-Hant": {
-      "description": "AI 驅動的命令列編碼代理，直接在終端中編碼。與 AI 互動以撰寫、審查和修改程式碼，支援多個提供商的前沿模型。"
+      "description": "AI 驅動的命令列程式設計代理，直接在終端機中程式設計。與 AI 互動以撰寫、審查和修改程式碼，支援多個供應商的前沿模型。"
     }
   },
   "verified": true,

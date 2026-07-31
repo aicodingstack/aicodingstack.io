@@ -35,7 +35,7 @@
       "description": "Anthropic 面向规模化编码、数据处理、视觉理解和企业工作流的均衡型 Claude 3 模型。"
     },
     "zh-Hant": {
-      "description": "Anthropic 面向規模化編碼、資料處理、視覺理解和企業工作流程的均衡型 Claude 3 模型。"
+      "description": "Anthropic 面向規模化程式設計、資料處理、視覺理解和企業工作流程的均衡型 Claude 3 模型。"
     }
   },
   "verified": true,

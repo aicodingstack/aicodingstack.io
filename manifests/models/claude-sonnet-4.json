@@ -14,28 +14,28 @@
       "description": "Sonnet 3.7의 기능을 크게 향상하여 코딩 및 추론 작업에서 개선된 정밀도와 제어 가능성을 제공합니다. SWE-bench에서 72.7%를 달성하여 능력과 연산 효율성 사이의 균형을 이룹니다."
     },
     "es": {
-      "description": "Mejora significativamente las capacidades de su predecesor Sonnet 3..."
+      "description": "Mejora Sonnet 3.7 en precisión y control para programación y razonamiento; alcanza 72,7 % en SWE-bench y equilibra capacidad y eficiencia computacional."
     },
     "fr": {
-      "description": "Ameliore significativement les capacites de son predecesseur Sonnet 3..."
+      "description": "Améliore Sonnet 3.7 en précision et en contrôle pour le codage et le raisonnement ; atteint 72,7 % sur SWE-bench et équilibre capacité et efficacité."
     },
     "id": {
-      "description": "Meningkatkan secara signifikan kemampuan pendahulu Sonnet 3..."
+      "description": "Meningkatkan Sonnet 3.7 dalam presisi dan kendali coding serta penalaran; meraih 72,7% di SWE-bench dengan keseimbangan kemampuan dan efisiensi."
     },
     "ja": {
       "description": "前身のSonnet 3.7の能力を大幅に強化し、コーディングと推論タスクで優れたパフォーマンスを発揮し、精度と制御性が向上しました。SWE-benchで72.7%を達成し、能力と計算効率のバランスをとりました。"
     },
     "pt": {
-      "description": "Melhora significativamente as capacidades do seu antecessor Sonnet 3..."
+      "description": "Aprimora o Sonnet 3.7 em precisão e controle para programação e raciocínio; alcança 72,7% no SWE-bench e equilibra capacidade e eficiência."
     },
     "ru": {
-      "description": "Значительно улучшает возможности своего предшественника Sonnet 3..."
+      "description": "Улучшает точность и управляемость Sonnet 3.7 в программировании и рассуждениях; набирает 72,7% в SWE-bench, сочетая возможности и эффективность."
     },
     "tr": {
-      "description": "Oncedeli Sonnet 3..."
+      "description": "Sonnet 3.7’nin kodlama ve akıl yürütmedeki doğruluk ve denetlenebilirliğini geliştirir; SWE-bench’te %72,7 ile yetenek ve verimliliği dengeler."
     },
     "zh-Hant": {
-      "description": "顯著增強了其前身 Sonnet 3.7 的能力，在編碼和推理任務方面表現出色，具有改進的精度和可控性。在 SWE-bench 上達到 72.7% 的最先進性能，Sonnet 4 在能力和計算效率之間取得了平衡。"
+      "description": "顯著增強了其前身 Sonnet 3.7 的能力，在程式設計和推理任務方面表現出色，具有改進的精度和可控性。在 SWE-bench 上達到 72.7% 的最先進效能，Sonnet 4 在能力和計算效率之間取得了平衡。"
     }
   },
   "verified": true,

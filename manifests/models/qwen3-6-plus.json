@@ -5,37 +5,37 @@
   "description": "Multimodal Qwen model offered in Alibaba Cloud Coding Plan for coding agents and long-context development tasks.",
   "translations": {
     "zh-Hans": {
-      "description": "Qwen3.6 Plus 是 Alibaba 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "阿里云 Coding Plan 提供的多模态 Qwen 模型，面向编码智能体和长上下文开发任务。"
     },
     "de": {
-      "description": "Qwen3.6 Plus ist eine eigenständige Modellversion von Alibaba mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Multimodales Qwen-Modell im Alibaba Cloud Coding Plan für Coding-Agenten und Langkontext-Entwicklungsaufgaben."
     },
     "es": {
-      "description": "Qwen3.6 Plus es una versión de modelo independiente de Alibaba con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo Qwen multimodal del Coding Plan de Alibaba Cloud para agentes de programación y desarrollo con contexto largo."
     },
     "fr": {
-      "description": "Qwen3.6 Plus est une version de modèle distincte de Alibaba, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle Qwen multimodal proposé dans le Coding Plan d’Alibaba Cloud pour les agents de codage et le développement en contexte long."
     },
     "id": {
-      "description": "Qwen3.6 Plus adalah versi model mandiri dari Alibaba dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model Qwen multimodal dalam Alibaba Cloud Coding Plan untuk agen coding dan tugas pengembangan berkonteks panjang."
     },
     "ja": {
-      "description": "Qwen3.6 Plus は Alibaba が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "Alibaba Cloud Coding Planで提供される、コーディングエージェントと長文脈の開発向けマルチモーダルQwenモデル。"
     },
     "ko": {
-      "description": "Qwen3.6 Plus은(는) Alibaba가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "Alibaba Cloud Coding Plan에서 제공하는 코딩 에이전트와 긴 컨텍스트 개발 작업용 멀티모달 Qwen 모델입니다."
     },
     "pt": {
-      "description": "Qwen3.6 Plus é uma versão de modelo independente da Alibaba, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo Qwen multimodal oferecido no Coding Plan da Alibaba Cloud para agentes de programação e desenvolvimento de contexto longo."
     },
     "ru": {
-      "description": "Qwen3.6 Plus — самостоятельная версия модели от Alibaba с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Мультимодальная модель Qwen в Alibaba Cloud Coding Plan для программных агентов и разработки с длинным контекстом."
     },
     "tr": {
-      "description": "Qwen3.6 Plus, Alibaba tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Alibaba Cloud Coding Plan kapsamında kodlama ajanları ve uzun bağlamlı geliştirme görevleri için sunulan çok modlu Qwen modeli."
     },
     "zh-Hant": {
-      "description": "Qwen3.6 Plus 是 Alibaba 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "阿里雲 Coding Plan 提供的多模態 Qwen 模型，面向程式設計代理和長上下文開發任務。"
     }
   },
   "verified": true,
