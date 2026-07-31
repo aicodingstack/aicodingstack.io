@@ -40,7 +40,7 @@
     }
   },
   "verified": true,
-  "lastVerifiedAt": "2026-07-30",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://antigravity.google",
@@ -51,25 +51,46 @@
   "license": "Proprietary",
   "pricing": [
     {
-      "name": "Google AI Pro",
-      "value": 20,
+      "name": "Individual",
+      "value": 0,
+      "currency": null,
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Google AI Pro (5 TB)",
+      "value": 19.99,
       "currency": "USD",
       "per": "month",
       "category": "Individual"
     },
     {
-      "name": "Google AI Ultra 100",
-      "value": 100,
+      "name": "Google AI Pro (10 TB)",
+      "value": 49.99,
       "currency": "USD",
       "per": "month",
       "category": "Individual"
     },
     {
-      "name": "Google AI Ultra 200",
-      "value": 200,
+      "name": "Google AI Ultra (5x limits)",
+      "value": 99.99,
       "currency": "USD",
       "per": "month",
       "category": "Individual"
+    },
+    {
+      "name": "Google AI Ultra (20x limits)",
+      "value": 199.99,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Organization",
+      "value": null,
+      "currency": null,
+      "per": "usage",
+      "category": "Enterprise"
     }
   ],
   "resourceUrls": {
@@ -144,6 +165,11 @@
       "url": "https://antigravity.google/blog/changes-to-antigravity-plans",
       "title": "Changes to Antigravity plans",
       "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://one.google.com/about/google-ai-plans/",
+      "title": "Google AI plans",
+      "fields": ["pricing"]
     }
   ]
 }
