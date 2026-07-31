@@ -378,7 +378,7 @@ export async function generateComparisonMetadata(
   const tPage = await getTranslations({ locale, namespace: 'pages.comparison' })
 
   // Build title and description using category-specific translations
-  const title = `${tPage(`${category}.title`)} ${METADATA_DEFAULTS.currentYear}`
+  const title = tPage(`${category}.title`)
   const description = tPage(`${category}.subtitle`)
 
   // Build keywords

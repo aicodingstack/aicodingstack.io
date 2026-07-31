@@ -315,6 +315,8 @@ export default function IDEComparisonPageClient({ locale: _locale }: Props) {
             columns={columns}
             itemLinkPrefix={`/ides`}
             nameColumnLabel={tShared('labels.name')}
+            caption={tPage('ides.title')}
+            scrollHint={tPage('table.scrollHint')}
           />
         </div>
       </section>

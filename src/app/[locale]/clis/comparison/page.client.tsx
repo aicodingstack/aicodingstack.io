@@ -318,6 +318,8 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
             columns={columns}
             itemLinkPrefix={`/clis`}
             nameColumnLabel={tShared('labels.name')}
+            caption={tPage('clis.title')}
+            scrollHint={tPage('table.scrollHint')}
           />
         </div>
       </section>

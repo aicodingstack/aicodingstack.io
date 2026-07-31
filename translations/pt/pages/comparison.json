@@ -38,7 +38,7 @@
           "title": "Funcionam em Windows, macOS e Linux?"
         }
       ],
-      "intro": "Compare {count} CLI de programação com IA pelos mesmos critérios: plataformas, preços, licença, atividade e fontes oficiais. Defina restrições, crie uma seleção e confirme na fonte os dados que podem mudar.",
+      "intro": "Compare {count} CLI de programação com IA pelos mesmos critérios: plataformas, preços, licença, estrelas no GitHub e links do projeto, e fontes oficiais. Defina restrições, crie uma seleção e confirme na fonte os dados que podem mudar.",
       "profiles": [
         {
           "description": "Plataformas, preços e recursos oficiais do agente de terminal da Anthropic.",
@@ -61,8 +61,8 @@
           "title": "OpenCode"
         }
       ],
-      "profilesIntro": "Estes perfis são pontos de partida, não uma classificação. Abra cada registo para dados atuais e fontes primárias.",
-      "profilesTitle": "Analisar perfis representativos",
+      "profilesIntro": "Os links abaixo são atalhos para registos de produtos já incluídos na tabela, não uma classificação nem uma recomendação. Abra cada registo para consultar os dados do manifesto e as fontes primárias.",
+      "profilesTitle": "Explorar perfis de produtos CLI",
       "shortlistIntro": "Use um processo uniforme para que a popularidade não substitua a adequação ao fluxo de trabalho.",
       "shortlistTitle": "Criar uma seleção em três passos",
       "steps": [
@@ -108,7 +108,7 @@
         },
         {
           "title": "Licença e manutenção",
-          "description": "Use a licença, a atividade no GitHub e o selo de descontinuado para distinguir projetos open source ativos de produtos proprietários ou encerrados."
+          "description": "Use a licença, as estrelas no GitHub, os links do projeto e o selo de descontinuado para distinguir projetos open source de produtos proprietários ou encerrados."
         },
         {
           "title": "Caminho de verificação",
@@ -138,12 +138,12 @@
           "description": "A compatibilidade varia. Consulte a coluna de IDEs suportados e confirme a versão exata do editor e requisitos do sistema no marketplace ou guia oficial."
         }
       ],
-      "intro": "Compare {count} extensões de programação com IA com os mesmos sinais: IDEs suportados, preços, licença, atividade, ciclo de vida e recursos oficiais. Filtre primeiro pela compatibilidade e confirme detalhes variáveis antes da instalação.",
+      "intro": "Compare {count} extensões de programação com IA com os mesmos sinais: IDEs suportados, preços, licença, estrelas no GitHub e links do projeto, ciclo de vida e recursos oficiais. Filtre primeiro pela compatibilidade e confirme detalhes variáveis antes da instalação.",
       "profiles": [
         {
           "title": "GitHub Copilot",
           "href": "/extensions/github-copilot",
-          "description": "Consulte IDEs suportados, preços, licença, atividade e recursos oficiais."
+          "description": "Consulte IDEs suportados, preços, licença, estrelas no GitHub, links do projeto e recursos oficiais."
         },
         {
           "title": "Cline",
@@ -161,8 +161,8 @@
           "description": "Consulte compatibilidade do anfitrião, preços, ligações e recursos oficiais."
         }
       ],
-      "profilesIntro": "Estes perfis são pontos de partida, não uma classificação. Abra cada registo para consultar dados atuais, ciclo de vida e fontes primárias.",
-      "profilesTitle": "Examinar perfis representativos de extensões",
+      "profilesIntro": "Os links abaixo são atalhos para registos de produtos já incluídos na tabela, não uma classificação nem uma recomendação. Abra cada registo para consultar os dados do manifesto, o estado do ciclo de vida e as fontes primárias.",
+      "profilesTitle": "Explorar perfis de extensões",
       "shortlistIntro": "Use um processo consistente para que a popularidade não se sobreponha à compatibilidade e manutenção.",
       "shortlistTitle": "Criar uma seleção de extensões em três passos",
       "steps": [
@@ -172,7 +172,7 @@
         },
         {
           "title": "Filtrar de forma consistente",
-          "description": "Remova produtos incompatíveis ou descontinuados e compare os restantes por preço, licença, atividade e recursos oficiais."
+          "description": "Remova produtos incompatíveis ou descontinuados e compare os restantes por preço, licença, estrelas no GitHub, links do projeto e recursos oficiais."
         },
         {
           "title": "Verificar e testar",
@@ -181,7 +181,7 @@
       ],
       "title": "Como comparar extensões de programação com IA"
     },
-    "subtitle": "Compare extensões de programação com IA por IDEs suportados, preços, licença, atividade no GitHub, ciclo de vida e recursos oficiais.",
+    "subtitle": "Compare extensões de programação com IA por IDEs suportados, preços, licença, estrelas no GitHub e links do projeto, ciclo de vida e recursos oficiais.",
     "title": "Comparação de Extensões de Codificação IA"
   },
   "ides": {
@@ -227,12 +227,12 @@
           "description": "O suporte varia. Consulte os ícones de macOS, Windows e Linux e confirme os requisitos na transferência ou documentação de instalação oficial."
         }
       ],
-      "intro": "Compare {count} IDEs de programação com IA com sinais consistentes: plataformas, preços, licença, atividade e recursos oficiais. Comece pelas restrições da equipa, crie uma seleção e confirme os detalhes atuais antes de mudar de ambiente.",
+      "intro": "Compare {count} IDEs de programação com IA com sinais consistentes: plataformas, preços, licença, estrelas no GitHub e links do projeto, e recursos oficiais. Comece pelas restrições da equipa, crie uma seleção e confirme os detalhes atuais antes de mudar de ambiente.",
       "profiles": [
         {
           "title": "Cursor",
           "href": "/ides/cursor",
-          "description": "Consulte plataformas, preços, licença, atividade e recursos oficiais."
+          "description": "Consulte plataformas, preços, licença, estrelas no GitHub, links do projeto e recursos oficiais."
         },
         {
           "title": "Windsurf Editor",
@@ -250,8 +250,8 @@
           "description": "Consulte plataformas, preços, licença, ligações e documentação."
         }
       ],
-      "profilesIntro": "Estes perfis são pontos de partida, não uma classificação. Abra cada registo para consultar dados atuais e fontes primárias.",
-      "profilesTitle": "Examinar perfis representativos de IDEs",
+      "profilesIntro": "Os links abaixo são atalhos para registos de produtos já incluídos na tabela, não uma classificação nem uma recomendação. Abra cada registo para consultar os dados do manifesto e as fontes primárias.",
+      "profilesTitle": "Explorar perfis de produtos IDE",
       "shortlistIntro": "Use um processo consistente para que a popularidade não substitua a adequação à plataforma e ao fluxo.",
       "shortlistTitle": "Criar uma seleção de IDEs em três passos",
       "steps": [
@@ -270,7 +270,7 @@
       ],
       "title": "Como comparar IDEs de programação com IA"
     },
-    "subtitle": "Compare IDEs de programação com IA por preços, plataformas, licença, atividade no GitHub e recursos oficiais antes de escolher um ambiente.",
+    "subtitle": "Compare IDEs de programação com IA por preços, plataformas, licença, estrelas no GitHub, links do projeto e recursos oficiais antes de escolher um ambiente.",
     "title": "Comparação de IDE de Codificação IA"
   },
   "modelCompareDescription": "Compare modelos de codificação IA lado a lado: especificações, preços, capacidades e benchmarks.",
@@ -279,5 +279,8 @@
     "backTo": "Voltar aos Modelos",
     "subtitle": "Compare especificações e preços de modelos de codificação de IA lado a lado.",
     "title": "Comparação de Modelos de Codificação IA"
+  },
+  "table": {
+    "scrollHint": "Role horizontalmente para ver todas as colunas."
   }
 }

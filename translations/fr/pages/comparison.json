@@ -38,7 +38,7 @@
           "title": "Fonctionnent-elles sous Windows, macOS et Linux ?"
         }
       ],
-      "intro": "Comparez {count} CLI de codage IA selon les mêmes critères : plateformes, prix, licence, activité du projet et sources officielles. Définissez vos contraintes, créez une sélection et vérifiez à la source les informations susceptibles de changer.",
+      "intro": "Comparez {count} CLI de codage IA selon les mêmes critères : plateformes, prix, licence, étoiles GitHub et liens du projet, et sources officielles. Définissez vos contraintes, créez une sélection et vérifiez à la source les informations susceptibles de changer.",
       "profiles": [
         {
           "description": "Plateformes, prix et ressources officielles de l’agent terminal d’Anthropic.",
@@ -61,8 +61,8 @@
           "title": "OpenCode"
         }
       ],
-      "profilesIntro": "Ces profils sont des points de départ, pas un classement. Chaque fiche présente les données actuelles et les sources primaires.",
-      "profilesTitle": "Examiner des profils représentatifs",
+      "profilesIntro": "Les liens ci-dessous sont des raccourcis vers des fiches de produits déjà présentes dans le tableau, et non un classement ou une recommandation. Ouvrez chaque fiche pour consulter ses données de manifeste et ses sources primaires.",
+      "profilesTitle": "Explorer les fiches de produits CLI",
       "shortlistIntro": "Suivez un processus uniforme afin que la popularité ne remplace pas l’adéquation au flux de travail.",
       "shortlistTitle": "Créer une sélection en trois étapes",
       "steps": [
@@ -108,7 +108,7 @@
         },
         {
           "title": "Licence et maintenance",
-          "description": "Utilisez la licence, l’activité GitHub et le badge obsolète pour distinguer les projets open source actifs des produits propriétaires ou abandonnés."
+          "description": "Utilisez la licence, les étoiles GitHub, les liens du projet et le badge obsolète pour distinguer les projets open source des produits propriétaires ou abandonnés."
         },
         {
           "title": "Parcours de vérification",
@@ -138,12 +138,12 @@
           "description": "La compatibilité varie. Consultez la colonne des IDE pris en charge, puis confirmez la version exacte et les exigences système dans la marketplace ou le guide d’installation officiel."
         }
       ],
-      "intro": "Comparez {count} extensions de codage IA avec les mêmes signaux : IDE pris en charge, tarifs, licence, activité du projet, cycle de vie et ressources officielles. Filtrez d’abord la compatibilité et vérifiez les détails changeants avant installation.",
+      "intro": "Comparez {count} extensions de codage IA avec les mêmes signaux : IDE pris en charge, tarifs, licence, étoiles GitHub et liens du projet, cycle de vie et ressources officielles. Filtrez d’abord la compatibilité et vérifiez les détails changeants avant installation.",
       "profiles": [
         {
           "title": "GitHub Copilot",
           "href": "/extensions/github-copilot",
-          "description": "Consultez les IDE pris en charge, tarifs, licence, activité et ressources officielles."
+          "description": "Consultez les IDE pris en charge, tarifs, licence, étoiles GitHub, liens du projet et ressources officielles."
         },
         {
           "title": "Cline",
@@ -161,8 +161,8 @@
           "description": "Consultez la compatibilité hôte, les tarifs, les liens et les ressources officielles."
         }
       ],
-      "profilesIntro": "Ces profils sont des points de départ, pas un classement. Ouvrez chaque fiche pour examiner ses données actuelles, son cycle de vie et ses sources primaires.",
-      "profilesTitle": "Examiner des profils d’extensions représentatifs",
+      "profilesIntro": "Les liens ci-dessous sont des raccourcis vers des fiches de produits déjà présentes dans le tableau, et non un classement ou une recommandation. Ouvrez chaque fiche pour consulter ses données de manifeste, son état de cycle de vie et ses sources primaires.",
+      "profilesTitle": "Explorer les fiches d’extensions",
       "shortlistIntro": "Suivez un processus cohérent pour que la popularité ne l’emporte pas sur la compatibilité et la maintenance.",
       "shortlistTitle": "Créer une sélection en trois étapes",
       "steps": [
@@ -172,7 +172,7 @@
         },
         {
           "title": "Filtrer de façon cohérente",
-          "description": "Écartez les produits incompatibles ou obsolètes, puis comparez le reste selon prix, licence, activité et ressources officielles."
+          "description": "Écartez les produits incompatibles ou obsolètes, puis comparez le reste selon prix, licence, étoiles GitHub, liens du projet et ressources officielles."
         },
         {
           "title": "Vérifier et essayer",
@@ -181,7 +181,7 @@
       ],
       "title": "Comment comparer les extensions de codage IA"
     },
-    "subtitle": "Comparez les extensions de codage IA par IDE pris en charge, tarifs, licence, activité GitHub, cycle de vie et ressources officielles.",
+    "subtitle": "Comparez les extensions de codage IA par IDE pris en charge, tarifs, licence, étoiles GitHub et liens du projet, cycle de vie et ressources officielles.",
     "title": "Comparaison d'Extensions de Codage IA"
   },
   "ides": {
@@ -227,12 +227,12 @@
           "description": "La prise en charge varie. Consultez les icônes macOS, Windows et Linux, puis confirmez les exigences système dans le téléchargement ou la documentation d’installation officielle."
         }
       ],
-      "intro": "Comparez {count} IDE de codage IA avec des signaux cohérents : plateformes, tarifs, licence, activité du projet et ressources officielles. Partez des contraintes de l’équipe, créez une sélection et vérifiez les détails actuels avant de changer d’environnement.",
+      "intro": "Comparez {count} IDE de codage IA avec des signaux cohérents : plateformes, tarifs, licence, étoiles GitHub et liens du projet, et ressources officielles. Partez des contraintes de l’équipe, créez une sélection et vérifiez les détails actuels avant de changer d’environnement.",
       "profiles": [
         {
           "title": "Cursor",
           "href": "/ides/cursor",
-          "description": "Consultez les plateformes, tarifs, licence, activité et ressources officielles."
+          "description": "Consultez les plateformes, tarifs, licence, étoiles GitHub, liens du projet et ressources officielles."
         },
         {
           "title": "Windsurf Editor",
@@ -250,8 +250,8 @@
           "description": "Consultez les plateformes, tarifs, licence, liens et documentation."
         }
       ],
-      "profilesIntro": "Ces profils sont des points de départ, pas un classement. Ouvrez chaque fiche pour consulter ses données actuelles et ses sources primaires.",
-      "profilesTitle": "Examiner des profils d’IDE représentatifs",
+      "profilesIntro": "Les liens ci-dessous sont des raccourcis vers des fiches de produits déjà présentes dans le tableau, et non un classement ou une recommandation. Ouvrez chaque fiche pour consulter ses données de manifeste et ses sources primaires.",
+      "profilesTitle": "Explorer les fiches de produits IDE",
       "shortlistIntro": "Suivez un processus cohérent pour que la popularité ne remplace pas l’adéquation à la plateforme et au flux de travail.",
       "shortlistTitle": "Créer une sélection d’IDE en trois étapes",
       "steps": [
@@ -270,7 +270,7 @@
       ],
       "title": "Comment comparer les IDE de codage IA"
     },
-    "subtitle": "Comparez les IDE de codage IA par tarifs, plateformes, licence, activité GitHub et ressources officielles avant de choisir un environnement.",
+    "subtitle": "Comparez les IDE de codage IA par tarifs, plateformes, licence, étoiles GitHub, liens du projet et ressources officielles avant de choisir un environnement.",
     "title": "Comparaison de IDE de Codage IA"
   },
   "modelCompareDescription": "Comparez les modèles de codage IA côte à côte : spécifications, tarifs, capacités et benchmarks.",
@@ -279,5 +279,8 @@
     "backTo": "Retour aux Modèles",
     "subtitle": "Comparez les spécifications et les tarifs des modèles de codage AI côte à côte.",
     "title": "Comparaison de Modèles de Codage IA"
+  },
+  "table": {
+    "scrollHint": "Faites défiler horizontalement pour voir toutes les colonnes."
   }
 }

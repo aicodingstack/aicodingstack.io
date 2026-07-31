@@ -38,7 +38,7 @@
           "title": "Funktionieren sie unter Windows, macOS und Linux?"
         }
       ],
-      "intro": "Vergleichen Sie {count} KI-Coding-CLIs anhand derselben Kriterien: Plattformen, Preise, Lizenz, Projektaktivität und offizielle Quellen. Definieren Sie Ihre Anforderungen, erstellen Sie eine Auswahlliste und prüfen Sie veränderliche Produktdetails direkt beim Anbieter.",
+      "intro": "Vergleichen Sie {count} KI-Coding-CLIs anhand derselben Kriterien: Plattformen, Preise, Lizenz, GitHub-Sterne und Projektlinks sowie offizielle Quellen. Definieren Sie Ihre Anforderungen, erstellen Sie eine Auswahlliste und prüfen Sie veränderliche Produktdetails direkt beim Anbieter.",
       "profiles": [
         {
           "description": "Plattformen, Preise und offizielle Quellen des Terminal-Agenten von Anthropic.",
@@ -61,8 +61,8 @@
           "title": "OpenCode"
         }
       ],
-      "profilesIntro": "Diese Profile sind Ausgangspunkte, keine Rangliste. Jeder Eintrag zeigt aktuelle Manifestdaten und Primärquellen.",
-      "profilesTitle": "Repräsentative CLI-Profile prüfen",
+      "profilesIntro": "Die folgenden Links führen direkt zu bereits in der Tabelle aufgeführten Produktdatensätzen; sie sind keine Rangliste oder Empfehlung. Öffnen Sie jeden Datensatz, um Manifestdaten und Primärquellen zu prüfen.",
+      "profilesTitle": "CLI-Produktprofile öffnen",
       "shortlistIntro": "Nutzen Sie einen einheitlichen Prozess, damit Popularität nicht die Workflow-Eignung ersetzt.",
       "shortlistTitle": "CLI-Auswahl in drei Schritten",
       "steps": [
@@ -108,7 +108,7 @@
         },
         {
           "title": "Lizenz und Wartung",
-          "description": "Nutzen Sie Lizenz, GitHub-Aktivität und das Veraltet-Kennzeichen, um aktive Open-Source-Projekte von proprietären oder eingestellten Produkten zu unterscheiden."
+          "description": "Nutzen Sie Lizenz, GitHub-Sterne und Projektlinks sowie das Veraltet-Kennzeichen, um Open-Source-Projekte von proprietären oder eingestellten Produkten zu unterscheiden."
         },
         {
           "title": "Prüfpfad",
@@ -138,12 +138,12 @@
           "description": "Die Kompatibilität variiert. Prüfen Sie die Spalte „Unterstützte IDEs“ und bestätigen Sie anschließend die genaue Editor-Version und Betriebssystemanforderungen im offiziellen Marketplace oder in der Installationsanleitung."
         }
       ],
-      "intro": "Vergleichen Sie {count} AI-Coding-Erweiterungen anhand derselben Signale: unterstützte IDEs, Preise, Lizenz, Projektaktivität, Lebenszyklus und offizielle Quellen. Filtern Sie zuerst nach Kompatibilität und prüfen Sie veränderliche Details vor der Installation an der Quelle.",
+      "intro": "Vergleichen Sie {count} AI-Coding-Erweiterungen anhand derselben Signale: unterstützte IDEs, Preise, Lizenz, GitHub-Sterne und Projektlinks, Lebenszyklus und offizielle Quellen. Filtern Sie zuerst nach Kompatibilität und prüfen Sie veränderliche Details vor der Installation an der Quelle.",
       "profiles": [
         {
           "title": "GitHub Copilot",
           "href": "/extensions/github-copilot",
-          "description": "Prüfen Sie unterstützte IDEs, Preise, Lizenz, Projektaktivität und offizielle Quellen."
+          "description": "Prüfen Sie unterstützte IDEs, Preise, Lizenz, GitHub-Sterne und Projektlinks sowie offizielle Quellen."
         },
         {
           "title": "Cline",
@@ -161,8 +161,8 @@
           "description": "Prüfen Sie Host-Kompatibilität, Preise, Projektlinks und offizielle Quellen."
         }
       ],
-      "profilesIntro": "Diese Profile sind Startpunkte, keine Rangliste. Öffnen Sie jeden Datensatz, um aktuelle Manifest-Daten, Lebenszyklus und Primärquellen zu prüfen.",
-      "profilesTitle": "Repräsentative Erweiterungsprofile prüfen",
+      "profilesIntro": "Die folgenden Links führen direkt zu bereits in der Tabelle aufgeführten Produktdatensätzen; sie sind keine Rangliste oder Empfehlung. Öffnen Sie jeden Datensatz, um Manifestdaten, Lebenszyklusstatus und Primärquellen zu prüfen.",
+      "profilesTitle": "Erweiterungsprofile öffnen",
       "shortlistIntro": "Nutzen Sie einen einheitlichen Ablauf, damit Popularität nicht wichtiger wird als Editor-Kompatibilität und Wartungsstatus.",
       "shortlistTitle": "Erweiterungen in drei Schritten auswählen",
       "steps": [
@@ -172,7 +172,7 @@
         },
         {
           "title": "Einheitlich filtern",
-          "description": "Entfernen Sie inkompatible oder veraltete Produkte und vergleichen Sie den Rest nach Preis, Lizenz, Aktivität und offiziellen Quellen."
+          "description": "Entfernen Sie inkompatible oder veraltete Produkte und vergleichen Sie den Rest nach Preis, Lizenz, GitHub-Sternen, Projektlinks und offiziellen Quellen."
         },
         {
           "title": "Prüfen und testen",
@@ -181,7 +181,7 @@
       ],
       "title": "AI-Coding-Erweiterungen vergleichen"
     },
-    "subtitle": "Vergleichen Sie AI-Coding-Erweiterungen nach unterstützten IDEs, Preisen, Lizenz, GitHub-Aktivität, Lebenszyklus und offiziellen Quellen.",
+    "subtitle": "Vergleichen Sie AI-Coding-Erweiterungen nach unterstützten IDEs, Preisen, Lizenz, GitHub-Sternen und Projektlinks, Lebenszyklus und offiziellen Quellen.",
     "title": "AI-Coding-Erweiterungs-Vergleich"
   },
   "ides": {
@@ -227,12 +227,12 @@
           "description": "Die Plattformunterstützung variiert. Prüfen Sie die Symbole für macOS, Windows und Linux in der Tabelle und bestätigen Sie Systemanforderungen im offiziellen Download oder in der Installationsanleitung."
         }
       ],
-      "intro": "Vergleichen Sie {count} AI-Coding-IDEs anhand einheitlicher Signale: Plattformunterstützung, Preise, Lizenz, Projektaktivität und offizielle Quellen. Beginnen Sie mit Teamvorgaben, erstellen Sie eine Auswahl und bestätigen Sie aktuelle Details vor dem Wechsel an der Quelle.",
+      "intro": "Vergleichen Sie {count} AI-Coding-IDEs anhand einheitlicher Signale: Plattformunterstützung, Preise, Lizenz, GitHub-Sterne und Projektlinks sowie offizielle Quellen. Beginnen Sie mit Teamvorgaben, erstellen Sie eine Auswahl und bestätigen Sie aktuelle Details vor dem Wechsel an der Quelle.",
       "profiles": [
         {
           "title": "Cursor",
           "href": "/ides/cursor",
-          "description": "Prüfen Sie unterstützte Plattformen, Preise, Lizenz, Projektaktivität und offizielle Quellen."
+          "description": "Prüfen Sie unterstützte Plattformen, Preise, Lizenz, GitHub-Sterne und Projektlinks sowie offizielle Quellen."
         },
         {
           "title": "Windsurf Editor",
@@ -250,8 +250,8 @@
           "description": "Prüfen Sie unterstützte Plattformen, Preise, Lizenz, Projektlinks und Dokumentation."
         }
       ],
-      "profilesIntro": "Diese Profile sind Startpunkte, keine Rangliste. Öffnen Sie jeden Datensatz, um aktuelle Manifest-Daten und Primärquellen zu prüfen.",
-      "profilesTitle": "Repräsentative IDE-Profile prüfen",
+      "profilesIntro": "Die folgenden Links führen direkt zu bereits in der Tabelle aufgeführten Produktdatensätzen; sie sind keine Rangliste oder Empfehlung. Öffnen Sie jeden Datensatz, um Manifestdaten und Primärquellen zu prüfen.",
+      "profilesTitle": "IDE-Produktprofile öffnen",
       "shortlistIntro": "Nutzen Sie einen einheitlichen Ablauf, damit Popularität nicht Plattform- und Workflow-Eignung ersetzt.",
       "shortlistTitle": "IDE-Auswahl in drei Schritten",
       "steps": [
@@ -270,7 +270,7 @@
       ],
       "title": "AI-Coding-IDEs vergleichen"
     },
-    "subtitle": "Vergleichen Sie AI-Coding-IDEs nach Preisen, Plattformen, Lizenz, GitHub-Aktivität und offiziellen Quellen, bevor Sie eine Entwicklungsumgebung wählen.",
+    "subtitle": "Vergleichen Sie AI-Coding-IDEs nach Preisen, Plattformen, Lizenz, GitHub-Sternen und Projektlinks sowie offiziellen Quellen, bevor Sie eine Entwicklungsumgebung wählen.",
     "title": "AI-Coding-IDE-Vergleich"
   },
   "modelCompareDescription": "Vergleichen Sie AI-Coding-Modelle nebeneinander: Spezifikationen, Preise, Funktionen und Benchmarks.",
@@ -279,5 +279,8 @@
     "backTo": "Zurück zu Modellen",
     "subtitle": "Vergleichen Sie Spezifikationen und Preise von AI-Coding-Modellen nebeneinander.",
     "title": "AI-Coding-Modell-Vergleich"
+  },
+  "table": {
+    "scrollHint": "Scrollen Sie horizontal, um alle Spalten anzuzeigen."
   }
 }

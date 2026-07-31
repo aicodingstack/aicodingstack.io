@@ -301,6 +301,8 @@ export default function ExtensionComparisonPageClient({ locale: _locale }: Props
             columns={columns}
             itemLinkPrefix={`/extensions`}
             nameColumnLabel={tShared('labels.name')}
+            caption={tPage('extensions.title')}
+            scrollHint={tPage('table.scrollHint')}
           />
         </div>
       </section>

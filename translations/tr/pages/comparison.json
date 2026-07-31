@@ -38,7 +38,7 @@
           "title": "Windows, macOS ve Linux'ta çalışır mı?"
         }
       ],
-      "intro": "{count} AI kodlama CLI aracını aynı ölçütlerle karşılaştırın: platform, fiyat, lisans, proje etkinliği ve resmi kaynaklar. Kısıtları belirleyin, kısa liste oluşturun ve değişen bilgileri kaynağından doğrulayın.",
+      "intro": "{count} AI kodlama CLI aracını aynı ölçütlerle karşılaştırın: platform, fiyat, lisans, GitHub yıldızları ve proje bağlantıları ile resmi kaynaklar. Kısıtları belirleyin, kısa liste oluşturun ve değişen bilgileri kaynağından doğrulayın.",
       "profiles": [
         {
           "description": "Anthropic terminal aracının platformları, fiyatı ve resmi kaynakları.",
@@ -61,8 +61,8 @@
           "title": "OpenCode"
         }
       ],
-      "profilesIntro": "Bu profiller başlangıç noktasıdır, sıralama değildir. Her kayıt güncel verileri ve birincil kaynakları gösterir.",
-      "profilesTitle": "Örnek CLI profilleri",
+      "profilesIntro": "Aşağıdaki bağlantılar, tabloda zaten listelenen ürün kayıtlarına giden kısayollardır; sıralama veya öneri değildir. Manifest verilerini ve birincil kaynakları incelemek için her kaydı açın.",
+      "profilesTitle": "CLI ürün profillerini inceleyin",
       "shortlistIntro": "Popülerliğin iş akışı uyumunun yerini almaması için tutarlı bir süreç kullanın.",
       "shortlistTitle": "Üç adımda kısa liste",
       "steps": [
@@ -108,7 +108,7 @@
         },
         {
           "title": "Lisans ve bakım",
-          "description": "Etkin açık kaynak projelerini tescilli veya sonlandırılmış ürünlerden ayırmak için lisans, GitHub etkinliği ve kullanımdan kaldırıldı rozetini kullanın."
+          "description": "Açık kaynak projelerini tescilli veya sonlandırılmış ürünlerden ayırmak için lisans, GitHub yıldızları, proje bağlantıları ve kullanımdan kaldırıldı rozetini kullanın."
         },
         {
           "title": "Doğrulama yolu",
@@ -138,12 +138,12 @@
           "description": "Uyumluluk ürüne göre değişir. Desteklenen IDE sütununu kontrol edin, ardından editör sürümünü ve sistem gereksinimlerini resmi mağaza veya kurulum kılavuzunda doğrulayın."
         }
       ],
-      "intro": "{count} AI kodlama eklentisini aynı sinyallerle karşılaştırın: desteklenen IDE’ler, fiyat, lisans, proje etkinliği, yaşam döngüsü ve resmi kaynaklar. Önce uyumluluğa göre filtreleyin ve kurulumdan önce değişen ayrıntıları doğrulayın.",
+      "intro": "{count} AI kodlama eklentisini aynı sinyallerle karşılaştırın: desteklenen IDE’ler, fiyat, lisans, GitHub yıldızları ve proje bağlantıları, yaşam döngüsü ve resmi kaynaklar. Önce uyumluluğa göre filtreleyin ve kurulumdan önce değişen ayrıntıları doğrulayın.",
       "profiles": [
         {
           "title": "GitHub Copilot",
           "href": "/extensions/github-copilot",
-          "description": "Desteklenen IDE’leri, fiyatları, lisansı, proje etkinliğini ve resmi kaynakları inceleyin."
+          "description": "Desteklenen IDE’leri, fiyatları, lisansı, GitHub yıldızlarını, proje bağlantılarını ve resmi kaynakları inceleyin."
         },
         {
           "title": "Cline",
@@ -161,8 +161,8 @@
           "description": "Ana uygulama uyumluluğunu, fiyatları, proje bağlantılarını ve resmi kaynakları inceleyin."
         }
       ],
-      "profilesIntro": "Bu profiller bir sıralama değil, başlangıç noktasıdır. Güncel manifest verilerini, yaşam döngüsünü ve birincil kaynakları her kayıtta inceleyin.",
-      "profilesTitle": "Temsili eklenti profillerini inceleyin",
+      "profilesIntro": "Aşağıdaki bağlantılar, tabloda zaten listelenen ürün kayıtlarına giden kısayollardır; sıralama veya öneri değildir. Manifest verilerini, yaşam döngüsü durumunu ve birincil kaynakları incelemek için her kaydı açın.",
+      "profilesTitle": "Eklenti ürün profillerini inceleyin",
       "shortlistIntro": "Popülerliğin editör uyumluluğu ve bakım durumunun önüne geçmemesi için tutarlı bir süreç kullanın.",
       "shortlistTitle": "Üç adımda eklenti kısa listesi oluşturun",
       "steps": [
@@ -172,7 +172,7 @@
         },
         {
           "title": "Tutarlı biçimde filtreleyin",
-          "description": "Uyumsuz veya kullanımdan kaldırılmış ürünleri çıkarın; kalanları fiyat, lisans, etkinlik ve resmi kaynaklarla karşılaştırın."
+          "description": "Uyumsuz veya kullanımdan kaldırılmış ürünleri çıkarın; kalanları fiyat, lisans, GitHub yıldızları, proje bağlantıları ve resmi kaynaklarla karşılaştırın."
         },
         {
           "title": "Doğrulayın ve deneyin",
@@ -181,7 +181,7 @@
       ],
       "title": "AI kodlama eklentileri nasıl karşılaştırılır?"
     },
-    "subtitle": "AI kodlama eklentilerini desteklenen IDE, fiyat, lisans, GitHub etkinliği, yaşam döngüsü ve resmi kaynaklara göre karşılaştırın.",
+    "subtitle": "AI kodlama eklentilerini desteklenen IDE, fiyat, lisans, GitHub yıldızları ve proje bağlantıları, yaşam döngüsü ve resmi kaynaklara göre karşılaştırın.",
     "title": "AI Kodlama Eklenti Karşılaştırması"
   },
   "ides": {
@@ -227,12 +227,12 @@
           "description": "Platform desteği ürüne göre değişir. macOS, Windows ve Linux simgelerini kontrol edin ve sistem gereksinimlerini resmi indirme veya kurulum belgesinde doğrulayın."
         }
       ],
-      "intro": "{count} AI kodlama IDE’sini tutarlı sinyallerle karşılaştırın: platform desteği, fiyat, lisans, proje etkinliği ve resmi kaynaklar. Ekip koşullarından kısa liste oluşturun ve ortam değiştirmeden önce güncel ayrıntıları doğrulayın.",
+      "intro": "{count} AI kodlama IDE’sini tutarlı sinyallerle karşılaştırın: platform desteği, fiyat, lisans, GitHub yıldızları ve proje bağlantıları ile resmi kaynaklar. Ekip koşullarından kısa liste oluşturun ve ortam değiştirmeden önce güncel ayrıntıları doğrulayın.",
       "profiles": [
         {
           "title": "Cursor",
           "href": "/ides/cursor",
-          "description": "Desteklenen platformları, fiyatları, lisansı, proje etkinliğini ve resmi kaynakları inceleyin."
+          "description": "Desteklenen platformları, fiyatları, lisansı, GitHub yıldızlarını, proje bağlantılarını ve resmi kaynakları inceleyin."
         },
         {
           "title": "Windsurf Editor",
@@ -250,8 +250,8 @@
           "description": "Desteklenen platformları, fiyatları, lisansı, proje bağlantılarını ve belgeleri inceleyin."
         }
       ],
-      "profilesIntro": "Bu profiller bir sıralama değil, başlangıç noktasıdır. Güncel manifest verilerini ve birincil kaynakları her kayıtta inceleyin.",
-      "profilesTitle": "Temsili IDE profillerini inceleyin",
+      "profilesIntro": "Aşağıdaki bağlantılar, tabloda zaten listelenen ürün kayıtlarına giden kısayollardır; sıralama veya öneri değildir. Manifest verilerini ve birincil kaynakları incelemek için her kaydı açın.",
+      "profilesTitle": "IDE ürün profillerini inceleyin",
       "shortlistIntro": "Popülerliğin platform ve iş akışı uyumunun yerini almaması için tutarlı bir süreç kullanın.",
       "shortlistTitle": "Üç adımda IDE kısa listesi oluşturun",
       "steps": [
@@ -270,7 +270,7 @@
       ],
       "title": "AI kodlama IDE’leri nasıl karşılaştırılır?"
     },
-    "subtitle": "AI kodlama için IDE seçeneklerini fiyat, platform desteği, lisans, GitHub etkinliği ve resmi kaynaklara göre karşılaştırın.",
+    "subtitle": "AI kodlama için IDE seçeneklerini fiyat, platform desteği, lisans, GitHub yıldızları, proje bağlantıları ve resmi kaynaklara göre karşılaştırın.",
     "title": "AI Kodlama IDE Karşılaştırması"
   },
   "modelCompareDescription": "AI kodlama modellerini yan yana karşılaştırın: spesifikasyonlar, fiyatlar, yetenekler ve kıyaslamalar.",
@@ -279,5 +279,8 @@
     "backTo": "Modellere Dön",
     "subtitle": "AI kodlama modellerinin spesifikasyonlarını ve fiyatlarını yan yana karşılaştırın.",
     "title": "AI Kodlama Model Karşılaştırması"
+  },
+  "table": {
+    "scrollHint": "Tüm sütunları görmek için yatay kaydırın."
   }
 }

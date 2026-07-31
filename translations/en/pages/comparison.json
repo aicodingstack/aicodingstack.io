@@ -38,7 +38,7 @@
           "title": "Do AI coding CLIs work on Windows, macOS, and Linux?"
         }
       ],
-      "intro": "Compare {count} AI coding CLI tools using the same practical signals: platform support, pricing, license, project activity, and official resources. Start with your workflow constraints, build a shortlist, and verify changing product details at the source before you adopt a terminal coding agent.",
+      "intro": "Compare {count} AI coding CLI tools using the same practical signals: platform support, pricing, license, GitHub stars and project links, and official resources. Start with your workflow constraints, build a shortlist, and verify changing product details at the source before you adopt a terminal coding agent.",
       "profiles": [
         {
           "description": "Review Anthropic's terminal agent, supported platforms, pricing, and official resources.",
@@ -61,8 +61,8 @@
           "title": "OpenCode"
         }
       ],
-      "profilesIntro": "Use these profiles as a neutral sample rather than a ranking. Open each record to inspect its current manifest data and primary sources.",
-      "profilesTitle": "Inspect representative CLI profiles",
+      "profilesIntro": "The links below are shortcuts to CLI records already listed in the table, not a ranking or recommendation. Open each record to inspect its manifest data and primary sources.",
+      "profilesTitle": "Explore CLI product profiles",
       "shortlistIntro": "Use one consistent process so product popularity does not replace workflow fit.",
       "shortlistTitle": "Build a CLI shortlist in three steps",
       "steps": [
@@ -81,7 +81,7 @@
       ],
       "title": "How to compare AI coding CLI tools"
     },
-    "subtitle": "Compare AI coding CLI tools by pricing, platform support, license, GitHub activity, and official resources to choose the right terminal coding agent.",
+    "subtitle": "Compare AI coding CLI tools by pricing, platform support, license, GitHub stars and project links, and official resources to choose the right terminal coding agent.",
     "title": "AI Coding CLI Comparison"
   },
   "columns": {
@@ -107,7 +107,7 @@
           "title": "Pricing model"
         },
         {
-          "description": "Use the license, GitHub activity, and deprecated badge to distinguish active open-source projects from proprietary or discontinued products.",
+          "description": "Use the license, GitHub stars and project links, and deprecated badge to distinguish open-source projects from proprietary or discontinued products.",
           "title": "License and maintenance"
         },
         {
@@ -138,10 +138,10 @@
           "title": "Do these extensions support VS Code and JetBrains IDEs?"
         }
       ],
-      "intro": "Compare {count} AI coding extensions using the same practical signals: supported IDEs, pricing, license, project activity, lifecycle, and official resources. Filter for compatibility first, then verify changing product details at the source before installation.",
+      "intro": "Compare {count} AI coding extensions using the same practical signals: supported IDEs, pricing, license, GitHub stars and project links, lifecycle, and official resources. Filter for compatibility first, then verify changing product details at the source before installation.",
       "profiles": [
         {
-          "description": "Review GitHub Copilot's supported IDEs, pricing, license, project activity, and official resources.",
+          "description": "Review GitHub Copilot's supported IDEs, pricing, license, GitHub stars and project links, and official resources.",
           "href": "/extensions/github-copilot",
           "title": "GitHub Copilot"
         },
@@ -161,8 +161,8 @@
           "title": "JetBrains Junie"
         }
       ],
-      "profilesIntro": "These profiles are starting points, not a ranking. Open each record to inspect its current manifest data, lifecycle status, and primary sources.",
-      "profilesTitle": "Inspect representative extension profiles",
+      "profilesIntro": "The links below are shortcuts to extension records already listed in the table, not a ranking or recommendation. Open each record to inspect its manifest data, lifecycle status, and primary sources.",
+      "profilesTitle": "Explore extension product profiles",
       "shortlistIntro": "Use one consistent process so popularity does not outweigh editor compatibility and maintenance status.",
       "shortlistTitle": "Build an extension shortlist in three steps",
       "steps": [
@@ -171,7 +171,7 @@
           "title": "Set compatibility constraints"
         },
         {
-          "description": "Use the table to remove incompatible or deprecated products, then compare the remaining entries across pricing, license, activity, and official resources.",
+          "description": "Use the table to remove incompatible or deprecated products, then compare the remaining entries across pricing, license, GitHub stars and project links, and official resources.",
           "title": "Filter consistently"
         },
         {
@@ -181,7 +181,7 @@
       ],
       "title": "How to compare AI coding extensions"
     },
-    "subtitle": "Compare AI coding extensions by supported IDEs, pricing, license, GitHub activity, lifecycle, and official resources before choosing an editor assistant.",
+    "subtitle": "Compare AI coding extensions by supported IDEs, pricing, license, GitHub stars and project links, lifecycle, and official resources before choosing an editor assistant.",
     "title": "AI Coding Extension Comparison"
   },
   "ides": {
@@ -227,10 +227,10 @@
           "title": "Do AI coding IDEs work on Windows, macOS, and Linux?"
         }
       ],
-      "intro": "Compare {count} AI coding IDEs using consistent signals: platform support, pricing, license, project activity, and official resources. Start with team constraints, build a shortlist, and verify current product details at the source before changing development environments.",
+      "intro": "Compare {count} AI coding IDEs using consistent signals: platform support, pricing, license, GitHub stars and project links, and official resources. Start with team constraints, build a shortlist, and verify current product details at the source before changing development environments.",
       "profiles": [
         {
-          "description": "Review Cursor's supported platforms, pricing, license, project activity, and official resources.",
+          "description": "Review Cursor's supported platforms, pricing, license, GitHub stars and project links, and official resources.",
           "href": "/ides/cursor",
           "title": "Cursor"
         },
@@ -250,8 +250,8 @@
           "title": "Antigravity"
         }
       ],
-      "profilesIntro": "These profiles are starting points, not a ranking. Open each record to inspect its current manifest data and primary sources.",
-      "profilesTitle": "Inspect representative IDE profiles",
+      "profilesIntro": "The links below are shortcuts to IDE records already listed in the table, not a ranking or recommendation. Open each record to inspect its manifest data and primary sources.",
+      "profilesTitle": "Explore IDE product profiles",
       "shortlistIntro": "Use one consistent process so product popularity does not replace platform and workflow fit.",
       "shortlistTitle": "Build an IDE shortlist in three steps",
       "steps": [
@@ -270,7 +270,7 @@
       ],
       "title": "How to compare AI coding IDEs"
     },
-    "subtitle": "Compare AI coding IDEs by pricing, platform support, license, GitHub activity, and official resources before choosing a development environment for your team.",
+    "subtitle": "Compare AI coding IDEs by pricing, platform support, license, GitHub stars and project links, and official resources before choosing a development environment for your team.",
     "title": "AI Coding IDE Comparison"
   },
   "modelCompareDescription": "Compare AI coding models side by side: specifications, pricing, capabilities, and benchmarks.",
@@ -279,5 +279,8 @@
     "backTo": "Back to Models",
     "subtitle": "Compare specifications and pricing of AI coding models side by side.",
     "title": "AI Coding Model Comparison"
+  },
+  "table": {
+    "scrollHint": "Scroll horizontally to view all columns."
   }
 }

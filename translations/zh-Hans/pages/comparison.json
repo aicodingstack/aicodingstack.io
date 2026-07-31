@@ -38,7 +38,7 @@
           "title": "AI 编码 CLI 支持 Windows、macOS 和 Linux 吗？"
         }
       ],
-      "intro": "使用统一且实用的指标比较 {count} 个 AI 编码 CLI：平台支持、定价、许可证、项目活跃度和官方资源。先明确工作流约束并建立候选清单，在采用终端编码代理前从一手来源核验会变化的产品信息。",
+      "intro": "使用统一且实用的指标比较 {count} 个 AI 编码 CLI：平台支持、定价、许可证、GitHub 星标与项目链接，以及官方资源。先明确工作流约束并建立候选清单，在采用终端编码代理前从一手来源核验会变化的产品信息。",
       "profiles": [
         {
           "description": "查看 Anthropic 终端代理的平台支持、定价和官方资源。",
@@ -61,8 +61,8 @@
           "title": "OpenCode"
         }
       ],
-      "profilesIntro": "这些条目是调研起点，不是排名。打开各条记录可查看当前 manifest 数据和一手来源。",
-      "profilesTitle": "查看代表性 CLI 条目",
+      "profilesIntro": "以下链接只是表格中已有产品记录的快捷入口，不是排名或推荐。打开各条记录可查看 manifest 数据和一手来源。",
+      "profilesTitle": "查看 CLI 产品档案",
       "shortlistIntro": "使用一致的流程，避免用产品热度代替工作流适配度。",
       "shortlistTitle": "三步建立 CLI 候选清单",
       "steps": [
@@ -81,7 +81,7 @@
       ],
       "title": "如何比较 AI 编码 CLI 工具"
     },
-    "subtitle": "按定价、平台支持、许可证、GitHub 活跃度和官方资源比较 AI 编码 CLI，选择适合你的终端编码代理。",
+    "subtitle": "按定价、平台支持、许可证、GitHub 星标与项目链接和官方资源比较 AI 编码 CLI，选择适合你的终端编码代理。",
     "title": "AI 编码 CLI 工具比较"
   },
   "columns": {
@@ -108,7 +108,7 @@
         },
         {
           "title": "许可证与维护状态",
-          "description": "结合许可证、GitHub 活跃度和弃用标记，区分活跃的开源项目、专有产品以及已经停止维护的产品。"
+          "description": "结合许可证、GitHub 星标与项目链接和弃用标记，区分开源项目、专有产品以及已经停止维护的产品。"
         },
         {
           "title": "验证路径",
@@ -138,12 +138,12 @@
           "description": "兼容性因产品而异。先查看每个条目的“支持的 IDE”列，再打开官方市场或安装文档，核实具体编辑器版本和操作系统要求。"
         }
       ],
-      "intro": "使用相同的实用信号比较 {count} 个 AI 编码扩展：支持的 IDE、定价、许可证、项目活跃度、生命周期和官方资源。先按兼容性筛选，再在安装前从一手来源核实易变的产品信息。",
+      "intro": "使用相同的实用信号比较 {count} 个 AI 编码扩展：支持的 IDE、定价、许可证、GitHub 星标与项目链接、生命周期和官方资源。先按兼容性筛选，再在安装前从一手来源核实易变的产品信息。",
       "profiles": [
         {
           "title": "GitHub Copilot",
           "href": "/extensions/github-copilot",
-          "description": "查看 GitHub Copilot 支持的 IDE、定价、许可证、项目活跃度和官方资源。"
+          "description": "查看 GitHub Copilot 支持的 IDE、定价、许可证、GitHub 星标与项目链接和官方资源。"
         },
         {
           "title": "Cline",
@@ -161,8 +161,8 @@
           "description": "查看 JetBrains Junie 的宿主兼容性、定价、项目链接和官方资源。"
         }
       ],
-      "profilesIntro": "这些档案只是起点，不代表排名。打开每条记录，检查其当前 manifest 数据、生命周期状态和一手来源。",
-      "profilesTitle": "查看代表性扩展档案",
+      "profilesIntro": "以下链接只是表格中已有产品记录的快捷入口，不是排名或推荐。打开各条记录可查看 manifest 数据、生命周期状态和一手来源。",
+      "profilesTitle": "查看扩展产品档案",
       "shortlistIntro": "采用一致的流程，避免产品热度盖过编辑器兼容性和维护状态。",
       "shortlistTitle": "用三步建立扩展候选清单",
       "steps": [
@@ -172,7 +172,7 @@
         },
         {
           "title": "统一筛选",
-          "description": "用表格排除不兼容或已弃用的产品，再按定价、许可证、活跃度和官方资源比较剩余条目。"
+          "description": "用表格排除不兼容或已弃用的产品，再按定价、许可证、GitHub 星标与项目链接和官方资源比较剩余条目。"
         },
         {
           "title": "验证并试用",
@@ -181,7 +181,7 @@
       ],
       "title": "如何比较 AI 编码扩展"
     },
-    "subtitle": "按支持的 IDE、定价、许可证、GitHub 活跃度、生命周期和官方资源比较 AI 编码扩展，再选择适合编辑器的编码助手。",
+    "subtitle": "按支持的 IDE、定价、许可证、GitHub 星标与项目链接、生命周期和官方资源比较 AI 编码扩展，再选择适合编辑器的编码助手。",
     "title": "AI 编码扩展插件比较"
   },
   "ides": {
@@ -227,12 +227,12 @@
           "description": "平台支持因产品而异。先查看表格中的 macOS、Windows 和 Linux 图标，再打开官方下载或安装文档核实系统要求。"
         }
       ],
-      "intro": "使用一致的信号比较 {count} 个 AI 编码 IDE：平台支持、定价、许可证、项目活跃度和官方资源。先明确团队约束，建立候选清单，再在更换开发环境前从一手来源核实当前产品信息。",
+      "intro": "使用一致的信号比较 {count} 个 AI 编码 IDE：平台支持、定价、许可证、GitHub 星标与项目链接和官方资源。先明确团队约束，建立候选清单，再在更换开发环境前从一手来源核实当前产品信息。",
       "profiles": [
         {
           "title": "Cursor",
           "href": "/ides/cursor",
-          "description": "查看 Cursor 支持的平台、定价、许可证、项目活跃度和官方资源。"
+          "description": "查看 Cursor 支持的平台、定价、许可证、GitHub 星标与项目链接和官方资源。"
         },
         {
           "title": "Windsurf Editor",
@@ -250,8 +250,8 @@
           "description": "查看 Antigravity 支持的平台、定价、许可证、项目链接和文档。"
         }
       ],
-      "profilesIntro": "这些档案只是起点，不代表排名。打开每条记录，检查其当前 manifest 数据和一手来源。",
-      "profilesTitle": "查看代表性 IDE 档案",
+      "profilesIntro": "以下链接只是表格中已有产品记录的快捷入口，不是排名或推荐。打开各条记录可查看 manifest 数据和一手来源。",
+      "profilesTitle": "查看 IDE 产品档案",
       "shortlistIntro": "采用一致的流程，避免产品热度取代平台和工作流适配。",
       "shortlistTitle": "用三步建立 IDE 候选清单",
       "steps": [
@@ -270,7 +270,7 @@
       ],
       "title": "如何比较 AI 编码 IDE"
     },
-    "subtitle": "按定价、平台支持、许可证、GitHub 活跃度和官方资源比较 AI 编码 IDE，再为团队选择开发环境。",
+    "subtitle": "按定价、平台支持、许可证、GitHub 星标与项目链接和官方资源比较 AI 编码 IDE，再为团队选择开发环境。",
     "title": "AI 编码 IDE 比较"
   },
   "modelCompareDescription": "并排对比 AI 编码模型：规格、定价、功能和基准测试。",
@@ -279,5 +279,8 @@
     "backTo": "返回模型列表",
     "subtitle": "并排对比 AI 编码模型的规格和定价。",
     "title": "AI 编码模型比较"
+  },
+  "table": {
+    "scrollHint": "横向滚动以查看所有列。"
   }
 }

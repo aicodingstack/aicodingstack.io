@@ -38,7 +38,7 @@
           "title": "支援 Windows、macOS 和 Linux 嗎？"
         }
       ],
-      "intro": "以平台支援、定價、授權、專案活躍度和官方資源等一致指標比較 {count} 個 AI 編碼 CLI。先釐清工作流程限制並建立候選清單，採用前從第一手來源核驗會變動的資訊。",
+      "intro": "以平台支援、定價、授權、GitHub 星標與專案連結和官方資源等一致指標比較 {count} 個 AI 編碼 CLI。先釐清工作流程限制並建立候選清單，採用前從第一手來源核驗會變動的資訊。",
       "profiles": [
         {
           "description": "查看 Anthropic 終端代理的平台、定價和官方資源。",
@@ -61,8 +61,8 @@
           "title": "OpenCode"
         }
       ],
-      "profilesIntro": "這些條目是研究起點，不是排名。開啟記錄可查看目前資料和第一手來源。",
-      "profilesTitle": "查看代表性 CLI 條目",
+      "profilesIntro": "以下連結只是表格中已有產品記錄的快捷入口，不是排名或推薦。開啟各筆記錄可查看 manifest 資料和第一手來源。",
+      "profilesTitle": "查看 CLI 產品檔案",
       "shortlistIntro": "使用一致流程，避免以產品熱度取代工作流程適配度。",
       "shortlistTitle": "三步建立 CLI 候選清單",
       "steps": [
@@ -108,7 +108,7 @@
         },
         {
           "title": "授權與維護狀態",
-          "description": "結合授權、GitHub 活躍度和棄用標記，區分活躍的開源專案、專有產品以及已停止維護的產品。"
+          "description": "結合授權、GitHub 星標與專案連結和棄用標記，區分開源專案、專有產品以及已停止維護的產品。"
         },
         {
           "title": "驗證路徑",
@@ -138,12 +138,12 @@
           "description": "相容性因產品而異。先查看各項目的「支援的 IDE」欄，再開啟官方市集或安裝文件，核實具體編輯器版本和作業系統要求。"
         }
       ],
-      "intro": "使用相同的實用訊號比較 {count} 個 AI 編碼擴充套件：支援的 IDE、價格、授權、專案活躍度、生命週期和官方資源。先依相容性篩選，再在安裝前從第一手來源核實易變的產品資訊。",
+      "intro": "使用相同的實用訊號比較 {count} 個 AI 編碼擴充套件：支援的 IDE、價格、授權、GitHub 星標與專案連結、生命週期和官方資源。先依相容性篩選，再在安裝前從第一手來源核實易變的產品資訊。",
       "profiles": [
         {
           "title": "GitHub Copilot",
           "href": "/extensions/github-copilot",
-          "description": "查看 GitHub Copilot 支援的 IDE、價格、授權、專案活躍度和官方資源。"
+          "description": "查看 GitHub Copilot 支援的 IDE、價格、授權、GitHub 星標與專案連結和官方資源。"
         },
         {
           "title": "Cline",
@@ -161,8 +161,8 @@
           "description": "查看 JetBrains Junie 的宿主相容性、價格、專案連結和官方資源。"
         }
       ],
-      "profilesIntro": "這些檔案只是起點，不代表排名。開啟每筆記錄，檢查目前的 manifest 資料、生命週期狀態和第一手來源。",
-      "profilesTitle": "查看代表性擴充套件檔案",
+      "profilesIntro": "以下連結只是表格中已有產品記錄的快捷入口，不是排名或推薦。開啟各筆記錄可查看 manifest 資料、生命週期狀態和第一手來源。",
+      "profilesTitle": "查看擴充套件產品檔案",
       "shortlistIntro": "採用一致流程，避免產品熱度蓋過編輯器相容性和維護狀態。",
       "shortlistTitle": "用三個步驟建立擴充套件候選清單",
       "steps": [
@@ -172,7 +172,7 @@
         },
         {
           "title": "一致篩選",
-          "description": "用表格排除不相容或已棄用的產品，再依價格、授權、活躍度和官方資源比較其餘項目。"
+          "description": "用表格排除不相容或已棄用的產品，再依價格、授權、GitHub 星標與專案連結和官方資源比較其餘項目。"
         },
         {
           "title": "驗證並試用",
@@ -181,7 +181,7 @@
       ],
       "title": "如何比較 AI 編碼擴充套件"
     },
-    "subtitle": "依支援的 IDE、價格、授權、GitHub 活躍度、生命週期和官方資源比較 AI 編碼擴充套件，再選擇適合編輯器的編碼助手。",
+    "subtitle": "依支援的 IDE、價格、授權、GitHub 星標與專案連結、生命週期和官方資源比較 AI 編碼擴充套件，再選擇適合編輯器的編碼助手。",
     "title": "AI 編碼擴充外掛比較"
   },
   "ides": {
@@ -227,12 +227,12 @@
           "description": "平台支援因產品而異。先查看表格中的 macOS、Windows 和 Linux 圖示，再開啟官方下載或安裝文件核實系統要求。"
         }
       ],
-      "intro": "使用一致的訊號比較 {count} 個 AI 編碼 IDE：平台支援、價格、授權、專案活躍度和官方資源。先明確團隊限制，建立候選清單，再在更換開發環境前從第一手來源核實目前產品資訊。",
+      "intro": "使用一致的訊號比較 {count} 個 AI 編碼 IDE：平台支援、價格、授權、GitHub 星標與專案連結和官方資源。先明確團隊限制，建立候選清單，再在更換開發環境前從第一手來源核實目前產品資訊。",
       "profiles": [
         {
           "title": "Cursor",
           "href": "/ides/cursor",
-          "description": "查看 Cursor 支援的平台、價格、授權、專案活躍度和官方資源。"
+          "description": "查看 Cursor 支援的平台、價格、授權、GitHub 星標與專案連結和官方資源。"
         },
         {
           "title": "Windsurf Editor",
@@ -250,8 +250,8 @@
           "description": "查看 Antigravity 支援的平台、價格、授權、專案連結和文件。"
         }
       ],
-      "profilesIntro": "這些檔案只是起點，不代表排名。開啟每筆記錄，檢查目前的 manifest 資料和第一手來源。",
-      "profilesTitle": "查看代表性 IDE 檔案",
+      "profilesIntro": "以下連結只是表格中已有產品記錄的快捷入口，不是排名或推薦。開啟各筆記錄可查看 manifest 資料和第一手來源。",
+      "profilesTitle": "查看 IDE 產品檔案",
       "shortlistIntro": "採用一致流程，避免產品熱度取代平台和工作流程適配。",
       "shortlistTitle": "用三個步驟建立 IDE 候選清單",
       "steps": [
@@ -270,7 +270,7 @@
       ],
       "title": "如何比較 AI 編碼 IDE"
     },
-    "subtitle": "依價格、平台支援、授權、GitHub 活躍度和官方資源比較 AI 編碼 IDE，再為團隊選擇開發環境。",
+    "subtitle": "依價格、平台支援、授權、GitHub 星標與專案連結和官方資源比較 AI 編碼 IDE，再為團隊選擇開發環境。",
     "title": "AI 編碼 IDE 比較"
   },
   "modelCompareDescription": "並排比較 AI 編碼模型：規格、定價、功能和基準測試。",
@@ -279,5 +279,8 @@
     "backTo": "返回模型",
     "subtitle": "並排比較 AI 編碼模型的規格和價格。",
     "title": "AI 編碼模型比較"
+  },
+  "table": {
+    "scrollHint": "橫向捲動以查看所有欄位。"
   }
 }

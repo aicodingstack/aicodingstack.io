@@ -38,7 +38,7 @@
           "title": "Apakah berfungsi di Windows, macOS, dan Linux?"
         }
       ],
-      "intro": "Bandingkan {count} CLI coding AI dengan kriteria yang sama: platform, harga, lisensi, aktivitas proyek, dan sumber resmi. Tetapkan batasan, buat daftar pendek, dan verifikasi informasi yang dapat berubah di sumbernya.",
+      "intro": "Bandingkan {count} CLI coding AI dengan kriteria yang sama: platform, harga, lisensi, bintang GitHub dan tautan proyek, serta sumber resmi. Tetapkan batasan, buat daftar pendek, dan verifikasi informasi yang dapat berubah di sumbernya.",
       "profiles": [
         {
           "description": "Platform, harga, dan sumber resmi agen terminal Anthropic.",
@@ -61,8 +61,8 @@
           "title": "OpenCode"
         }
       ],
-      "profilesIntro": "Profil ini adalah titik awal, bukan peringkat. Buka setiap catatan untuk data terkini dan sumber primer.",
-      "profilesTitle": "Periksa profil CLI perwakilan",
+      "profilesIntro": "Tautan di bawah adalah pintasan ke catatan produk yang sudah tercantum dalam tabel, bukan peringkat atau rekomendasi. Buka setiap catatan untuk memeriksa data manifes dan sumber primer.",
+      "profilesTitle": "Jelajahi profil produk CLI",
       "shortlistIntro": "Gunakan proses yang konsisten agar popularitas tidak menggantikan kecocokan alur kerja.",
       "shortlistTitle": "Buat daftar pendek dalam tiga langkah",
       "steps": [
@@ -108,7 +108,7 @@
         },
         {
           "title": "Lisensi dan pemeliharaan",
-          "description": "Gunakan lisensi, aktivitas GitHub, dan label usang untuk membedakan proyek open source aktif dari produk proprietari atau yang telah dihentikan."
+          "description": "Gunakan lisensi, bintang GitHub, tautan proyek, dan label usang untuk membedakan proyek open source dari produk proprietari atau yang telah dihentikan."
         },
         {
           "title": "Jalur verifikasi",
@@ -138,12 +138,12 @@
           "description": "Kompatibilitas berbeda menurut produk. Periksa kolom IDE yang Didukung, lalu pastikan versi editor dan persyaratan sistem di marketplace atau panduan instalasi resmi."
         }
       ],
-      "intro": "Bandingkan {count} ekstensi coding AI dengan sinyal yang sama: IDE yang didukung, harga, lisensi, aktivitas proyek, siklus hidup, dan sumber resmi. Saring kompatibilitas terlebih dahulu dan verifikasi detail yang berubah sebelum instalasi.",
+      "intro": "Bandingkan {count} ekstensi coding AI dengan sinyal yang sama: IDE yang didukung, harga, lisensi, bintang GitHub dan tautan proyek, siklus hidup, dan sumber resmi. Saring kompatibilitas terlebih dahulu dan verifikasi detail yang berubah sebelum instalasi.",
       "profiles": [
         {
           "title": "GitHub Copilot",
           "href": "/extensions/github-copilot",
-          "description": "Tinjau IDE yang didukung, harga, lisensi, aktivitas proyek, dan sumber resmi."
+          "description": "Tinjau IDE yang didukung, harga, lisensi, bintang GitHub, tautan proyek, dan sumber resmi."
         },
         {
           "title": "Cline",
@@ -161,8 +161,8 @@
           "description": "Tinjau kompatibilitas host, harga, tautan proyek, dan sumber resmi."
         }
       ],
-      "profilesIntro": "Profil ini adalah titik awal, bukan peringkat. Buka setiap catatan untuk memeriksa data manifest, siklus hidup, dan sumber primer terbaru.",
-      "profilesTitle": "Periksa profil ekstensi perwakilan",
+      "profilesIntro": "Tautan di bawah adalah pintasan ke catatan produk yang sudah tercantum dalam tabel, bukan peringkat atau rekomendasi. Buka setiap catatan untuk memeriksa data manifes, status siklus hidup, dan sumber primer.",
+      "profilesTitle": "Jelajahi profil produk ekstensi",
       "shortlistIntro": "Gunakan proses yang konsisten agar popularitas tidak mengalahkan kompatibilitas dan status pemeliharaan.",
       "shortlistTitle": "Buat daftar pendek ekstensi dalam tiga langkah",
       "steps": [
@@ -172,7 +172,7 @@
         },
         {
           "title": "Saring secara konsisten",
-          "description": "Hapus produk yang tidak kompatibel atau usang, lalu bandingkan sisanya berdasarkan harga, lisensi, aktivitas, dan sumber resmi."
+          "description": "Hapus produk yang tidak kompatibel atau usang, lalu bandingkan sisanya berdasarkan harga, lisensi, bintang GitHub, tautan proyek, dan sumber resmi."
         },
         {
           "title": "Verifikasi dan uji",
@@ -181,7 +181,7 @@
       ],
       "title": "Cara membandingkan ekstensi coding AI"
     },
-    "subtitle": "Bandingkan ekstensi coding AI berdasarkan IDE yang didukung, harga, lisensi, aktivitas GitHub, siklus hidup, dan sumber resmi.",
+    "subtitle": "Bandingkan ekstensi coding AI berdasarkan IDE yang didukung, harga, lisensi, bintang GitHub dan tautan proyek, siklus hidup, dan sumber resmi.",
     "title": "Perbandingan Ekstensi Coding AI"
   },
   "ides": {
@@ -227,12 +227,12 @@
           "description": "Dukungan platform berbeda menurut produk. Periksa ikon macOS, Windows, dan Linux, lalu konfirmasi persyaratan sistem di unduhan atau dokumentasi instalasi resmi."
         }
       ],
-      "intro": "Bandingkan {count} IDE coding AI dengan sinyal konsisten: platform, harga, lisensi, aktivitas proyek, dan sumber resmi. Mulai dari batas tim, buat daftar pendek, dan verifikasi detail terbaru sebelum mengganti lingkungan.",
+      "intro": "Bandingkan {count} IDE coding AI dengan sinyal konsisten: platform, harga, lisensi, bintang GitHub dan tautan proyek, serta sumber resmi. Mulai dari batas tim, buat daftar pendek, dan verifikasi detail terbaru sebelum mengganti lingkungan.",
       "profiles": [
         {
           "title": "Cursor",
           "href": "/ides/cursor",
-          "description": "Tinjau platform, harga, lisensi, aktivitas proyek, dan sumber resmi."
+          "description": "Tinjau platform, harga, lisensi, bintang GitHub, tautan proyek, dan sumber resmi."
         },
         {
           "title": "Windsurf Editor",
@@ -250,8 +250,8 @@
           "description": "Tinjau platform, harga, lisensi, tautan proyek, dan dokumentasi."
         }
       ],
-      "profilesIntro": "Profil ini adalah titik awal, bukan peringkat. Buka setiap catatan untuk memeriksa data manifest dan sumber primer terbaru.",
-      "profilesTitle": "Periksa profil IDE perwakilan",
+      "profilesIntro": "Tautan di bawah adalah pintasan ke catatan produk yang sudah tercantum dalam tabel, bukan peringkat atau rekomendasi. Buka setiap catatan untuk memeriksa data manifes dan sumber primer.",
+      "profilesTitle": "Jelajahi profil produk IDE",
       "shortlistIntro": "Gunakan proses yang konsisten agar popularitas tidak menggantikan kesesuaian platform dan alur kerja.",
       "shortlistTitle": "Buat daftar pendek IDE dalam tiga langkah",
       "steps": [
@@ -270,7 +270,7 @@
       ],
       "title": "Cara membandingkan IDE coding AI"
     },
-    "subtitle": "Bandingkan IDE coding AI berdasarkan harga, dukungan platform, lisensi, aktivitas GitHub, dan sumber resmi sebelum memilih lingkungan.",
+    "subtitle": "Bandingkan IDE coding AI berdasarkan harga, dukungan platform, lisensi, bintang GitHub, tautan proyek, dan sumber resmi sebelum memilih lingkungan.",
     "title": "Perbandingan IDE Coding AI"
   },
   "modelCompareDescription": "Bandingkan model coding AI secara berdampingan: spesifikasi, harga, kapabilitas, dan benchmark.",
@@ -279,5 +279,8 @@
     "backTo": "Kembali ke Model",
     "subtitle": "Model bahasa besar yang dioptimalkan untuk pembuatan dan analisis kode",
     "title": "Perbandingan Model Coding AI"
+  },
+  "table": {
+    "scrollHint": "Gulir secara horizontal untuk melihat semua kolom."
   }
 }
