@@ -2,37 +2,37 @@
   "$schema": "../$schemas/cli.schema.json",
   "translations": {
     "de": {
-      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+      "description": "Junie CLI ist JetBrains’ modellunabhängiger Terminal-Agent zum Planen von Änderungen, Bearbeiten von Repositories, Ausführen von Entwicklungswerkzeugen und Nutzen wiederverwendbarer Einstellungen."
     },
     "es": {
-      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+      "description": "Junie CLI es el agente de terminal independiente del modelo de JetBrains para planificar cambios, editar repositorios, ejecutar herramientas y usar configuraciones de agente reutilizables."
     },
     "fr": {
-      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+      "description": "Junie CLI est l’agent de terminal indépendant du modèle de JetBrains pour planifier les changements, modifier les dépôts, exécuter des outils et utiliser des configurations réutilisables."
     },
     "id": {
-      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+      "description": "Junie CLI adalah agen terminal agnostik model dari JetBrains untuk merencanakan perubahan, mengedit repositori, menjalankan alat pengembangan, dan memakai konfigurasi agen yang dapat dipakai kembali."
     },
     "ja": {
-      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+      "description": "Junie CLI は、変更の計画、リポジトリ編集、開発ツールの実行、再利用可能なエージェント設定に対応する JetBrains のモデル非依存ターミナル向けコーディングエージェントです。"
     },
     "ko": {
-      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+      "description": "Junie CLI는 변경 계획, 저장소 편집, 개발 도구 실행, 재사용 가능한 에이전트 구성 활용을 위한 JetBrains의 모델 독립형 터미널 코딩 에이전트입니다."
     },
     "pt": {
-      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+      "description": "O Junie CLI é o agente de terminal independente de modelo da JetBrains para planejar mudanças, editar repositórios, executar ferramentas e usar configurações de agente reutilizáveis."
     },
     "ru": {
-      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+      "description": "Junie CLI — не зависящий от модели терминальный агент JetBrains для планирования изменений, редактирования репозиториев, запуска средств разработки и использования многоразовых конфигураций."
     },
     "tr": {
-      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+      "description": "Junie CLI, değişiklikleri planlamak, depoları düzenlemek, geliştirme araçlarını çalıştırmak ve yeniden kullanılabilir yapılandırmalar için JetBrains'in modelden bağımsız terminal aracısıdır."
     },
     "zh-Hans": {
-      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+      "description": "Junie CLI 是 JetBrains 的模型无关终端编码代理，可用于规划变更、编辑代码仓库、运行开发工具和使用可复用的代理配置。"
     },
     "zh-Hant": {
-      "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations."
+      "description": "Junie CLI 是 JetBrains 的模型無關終端機程式設計代理，可用於規劃變更、編輯程式碼儲存庫、執行開發工具和使用可重複利用的代理設定。"
     }
   },
   "verified": false,

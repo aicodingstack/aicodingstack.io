@@ -14,10 +14,10 @@
       "description": "OpenAI의 차세대 고성능 모델로, GPT-5.1을 기반으로 향상된 추론 능력, 더 큰 컨텍스트 이해 및 개선된 코딩 성능 기능을 갖추고 있습니다."
     },
     "es": {
-      "description": "Modelo de alto rendimiento de nueva generacion de OpenAI, mejorando sobre GPT-5.1 con razonamiento mejorado y mejor codificacion."
+      "description": "Modelo de alto rendimiento de nueva generación de OpenAI, mejorando sobre GPT-5.1 con razonamiento mejorado y mejor codificación."
     },
     "fr": {
-      "description": "Modele haute performance de nouvelle generation d'OpenAI, sur GPT-5.1 avec raisonnement ameliore et meilleur codage."
+      "description": "Modèle haute performance de nouvelle génération d’OpenAI, améliorant GPT-5.1 avec un raisonnement et un codage renforcés."
     },
     "id": {
       "description": "Model kinerja tinggi generasi baru dari OpenAI, membangun di atas GPT-5.1 dengan kemampuan penalaran yang ditingkatkan, pemahaman konteks yang lebih besar, dan fitur performa coding yang lebih baik."
@@ -26,16 +26,16 @@
       "description": "OpenAIの次世代高性能モデルで、GPT-5.1をベースに強化された推論能力、より大きなコンテキスト理解、そして改善されたコーディングパフォーマンス機能を備えています。"
     },
     "pt": {
-      "description": "Modelo alto desempenho nova geracao OpenAI, baseado no GPT-5.1 com raciocinio aprimorado e melhor codificacao."
+      "description": "Modelo de alto desempenho da nova geração da OpenAI, baseado no GPT-5.1, com raciocínio aprimorado e melhor desempenho em programação."
     },
     "ru": {
       "description": "Модель новой генерации высокой производительности от OpenAI, на базе GPT-5.1 с улучшенным рассуждением и кодированием."
     },
     "tr": {
-      "description": "OpenAI'nin yeni nesil yuksek performansli modeli, GPT-5.1 uzerine insa edilmis gelismis muhakeme yetenekleri, daha genis baglam anlayisi ve gelismis kodlama performans ozellikleri ile."
+      "description": "OpenAI’ın GPT-5.1 üzerine kurulu yeni nesil yüksek performanslı modeli; gelişmiş akıl yürütme, daha geniş bağlam anlayışı ve daha iyi kodlama performansı sunar."
     },
     "zh-Hant": {
-      "description": "OpenAI 的新一代高性能模型，在 GPT-5.1 的基礎上進行了增強，具有更強的推理能力、更大的上下文理解和改進的編碼性能功能。"
+      "description": "OpenAI 的新一代高效能模型，在 GPT-5.1 的基礎上進行了增強，具有更強的推理能力、更大的上下文理解和改進的程式設計效能功能。"
     }
   },
   "verified": true,

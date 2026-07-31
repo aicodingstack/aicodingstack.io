@@ -1,7 +1,7 @@
 {
-  "backToOverview": "AI Coding Stack Overview",
+  "backToOverview": "AI Coding Stack 概览",
   "meta": {
-    "description": "Visualize the complete AI coding ecosystem. Explore relationships between IDEs, models, providers, and tools in an interactive landscape view.",
-    "title": "AI Coding Landscape - Visual Ecosystem Overview"
+    "description": "可视化完整的 AI 编程生态系统，在交互式全景图中探索 IDE、模型、提供商和工具之间的关系。",
+    "title": "AI 编程全景图 – 生态系统可视化概览"
   }
 }

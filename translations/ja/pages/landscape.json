@@ -1,7 +1,7 @@
 {
-  "backToOverview": "AI Coding Stack Overview",
+  "backToOverview": "AI Coding Stackの概要",
   "meta": {
-    "description": "Visualize the complete AI coding ecosystem. Explore relationships between IDEs, models, providers, and tools in an interactive landscape view.",
-    "title": "AI Coding Landscape - Visual Ecosystem Overview"
+    "description": "AIコーディングのエコシステム全体を可視化します。インタラクティブなランドスケープで、IDE、モデル、プロバイダー、ツールの関係を探索できます。",
+    "title": "AIコーディングランドスケープ – エコシステムの全体像"
   }
 }

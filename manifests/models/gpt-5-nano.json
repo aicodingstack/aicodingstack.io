@@ -5,37 +5,37 @@
   "description": "Smallest GPT-5 variant for low-latency coding utilities, classification, extraction, and automation.",
   "translations": {
     "zh-Hans": {
-      "description": "GPT-5 nano 是 OpenAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "最小的 GPT-5 变体，适合低延迟编码工具、分类、提取和自动化。"
     },
     "de": {
-      "description": "GPT-5 nano ist eine eigenständige Modellversion von OpenAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Kleinste GPT-5-Variante für latenzarme Coding-Hilfen, Klassifizierung, Extraktion und Automatisierung."
     },
     "es": {
-      "description": "GPT-5 nano es una versión de modelo independiente de OpenAI con capacidades explícitas de programación o ingeniería de software."
+      "description": "La variante GPT-5 más pequeña para utilidades de programación de baja latencia, clasificación, extracción y automatización."
     },
     "fr": {
-      "description": "GPT-5 nano est une version de modèle distincte de OpenAI, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "La plus petite variante de GPT-5 pour les outils de codage à faible latence, la classification, l’extraction et l’automatisation."
     },
     "id": {
-      "description": "GPT-5 nano adalah versi model mandiri dari OpenAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Varian GPT-5 terkecil untuk utilitas coding berlatensi rendah, klasifikasi, ekstraksi, dan otomatisasi."
     },
     "ja": {
-      "description": "GPT-5 nano は OpenAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "低遅延のコーディング補助、分類、抽出、自動化向けの最小GPT-5派生モデル。"
     },
     "ko": {
-      "description": "GPT-5 nano은(는) OpenAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "낮은 지연 시간의 코딩 유틸리티, 분류, 추출과 자동화를 위한 최소형 GPT-5 변형입니다."
     },
     "pt": {
-      "description": "GPT-5 nano é uma versão de modelo independente da OpenAI, com capacidades explícitas de programação ou engenharia de software."
+      "description": "A menor variante do GPT-5 para utilitários de programação de baixa latência, classificação, extração e automação."
     },
     "ru": {
-      "description": "GPT-5 nano — самостоятельная версия модели от OpenAI с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Самая компактная версия GPT-5 для программных утилит с низкой задержкой, классификации, извлечения и автоматизации."
     },
     "tr": {
-      "description": "GPT-5 nano, OpenAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Düşük gecikmeli kodlama araçları, sınıflandırma, çıkarma ve otomasyon için en küçük GPT-5 çeşidi."
     },
     "zh-Hant": {
-      "description": "GPT-5 nano 是 OpenAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "最小的 GPT-5 變體，適合低延遲程式設計工具、分類、擷取和自動化。"
     }
   },
   "verified": true,

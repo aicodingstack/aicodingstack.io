@@ -29,13 +29,13 @@
       "description": "Лёгкая MoE-модель 30B-A3B для быстрого программирования, рассуждений и агентных задач с контекстом 200K."
     },
     "tr": {
-      "description": "200K bağlam penceresiyle hızlı kodlama, akıl yürütme ve aracı görevler için hafif 30B-A3B MoE modeli."
+      "description": "200K bağlam penceresiyle hızlı kodlama, akıl yürütme ve ajan görevleri için hafif 30B-A3B MoE modeli."
     },
     "zh-Hans": {
       "description": "一款轻量级 30B-A3B MoE 模型，具备 200K 上下文窗口，面向高速编码、推理和智能体任务。"
     },
     "zh-Hant": {
-      "description": "一款輕量級 30B-A3B MoE 模型，具備 200K 上下文視窗，面向高速編碼、推理和智慧體任務。"
+      "description": "一款輕量級 30B-A3B MoE 模型，具備 200K 上下文視窗，面向高速程式設計、推理和智慧體任務。"
     }
   },
   "verified": true,

@@ -29,13 +29,13 @@
       "description": "Самая компактная модель OpenAI GPT-5.4 для массовой классификации, извлечения, ранжирования, мультимодальных задач и простых субагентов."
     },
     "tr": {
-      "description": "OpenAI'ın yüksek hacimli sınıflandırma, çıkarma, sıralama, çok modlu görevler ve daha basit kodlama alt aracıları için en küçük GPT-5.4 modeli."
+      "description": "OpenAI'ın yüksek hacimli sınıflandırma, çıkarma, sıralama, çok modlu görevler ve basit kodlama alt ajanları için en küçük GPT-5.4 modeli."
     },
     "zh-Hans": {
       "description": "OpenAI 最小的 GPT-5.4 模型，面向高吞吐分类、提取、排序、多模态任务和较简单的编码子智能体。"
     },
     "zh-Hant": {
-      "description": "OpenAI 最小的 GPT-5.4 模型，面向高吞吐分類、擷取、排序、多模態任務和較簡單的編碼子智慧體。"
+      "description": "OpenAI 最小的 GPT-5.4 模型，面向高吞吐分類、擷取、排序、多模態任務和較簡單的程式設計子智慧體。"
     }
   },
   "verified": true,

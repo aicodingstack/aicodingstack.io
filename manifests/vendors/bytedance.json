@@ -26,7 +26,7 @@
       "description": "TikTokの親会社である中国の多国籍インターネット技術企業。AIと機械学習を活用して、抖音、剪映、Larkなどを含むコンテンツプラットフォームを構築しています。"
     },
     "pt": {
-      "description": "Empresa multinacional chinesa de tecnologia internet por trás do TikTok, aproveita IA e aprendizado de máquina para plataformas de conteúdo incluindo Douyin, CapCut e Lark."
+      "description": "Empresa multinacional chinesa de tecnologia para internet, controladora do TikTok, que usa IA e aprendizado de máquina em plataformas como Douyin, CapCut e Lark."
     },
     "ru": {
       "description": "Китайская многонациональная интернет-технологическая компания, стоящая за TikTok, использует ИИ и машинное обучение для создания контент-платформ, включая Douyin, CapCut и Lark."
@@ -35,7 +35,7 @@
       "description": "TikTok'in arkasındaki Çinli çok uluslu internet teknolojisi şirketi, Douyin, CapCut ve Lark dahil olmak üzere içerik platformları için AI ve makine öğreniminden yararlanır."
     },
     "zh-Hant": {
-      "description": "中國跨國互聯網科技公司，TikTok 的母公司，利用 AI 和機器學習構建內容平台，包括抖音、剪映和飛書。"
+      "description": "中國跨國網際網路科技公司，TikTok 的母公司，利用 AI 和機器學習建置內容平台，包括抖音、剪映和飛書。"
     }
   },
   "verified": true,

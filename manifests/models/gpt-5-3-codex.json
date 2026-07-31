@@ -29,13 +29,13 @@
       "description": "Агентная модель OpenAI для длительной разработки ПО, исследований, использования инструментов и сложной работы за компьютером."
     },
     "tr": {
-      "description": "OpenAI'ın uzun süreli yazılım mühendisliği, araştırma, araç kullanımı ve karmaşık bilgisayar işleri için aracı kodlama modeli."
+      "description": "OpenAI'ın uzun süreli yazılım mühendisliği, araştırma, araç kullanımı ve karmaşık bilgisayar işleri için ajan tabanlı kodlama modeli."
     },
     "zh-Hans": {
       "description": "OpenAI 面向长时间软件工程、研究、工具使用和复杂计算机工作的智能体编码模型。"
     },
     "zh-Hant": {
-      "description": "OpenAI 面向長時間軟體工程、研究、工具使用和複雜電腦工作的智慧體編碼模型。"
+      "description": "OpenAI 面向長時間軟體工程、研究、工具使用和複雜電腦工作的智慧體程式設計模型。"
     }
   },
   "verified": true,

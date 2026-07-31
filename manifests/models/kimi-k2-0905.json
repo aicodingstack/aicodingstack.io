@@ -14,10 +14,10 @@
       "description": "Moonshot AI의 200B 파라미터 대형 언어 모델로, 200K 컨텍스트 윈도를 갖추고 있으며 긴 컨텍스트 추론 및 지시 따르기에 최적화되었습니다."
     },
     "es": {
-      "description": "Un modelo de lenguaje grande con 200B de parametros de Moonshot AI con ventana de contexto de 200K, optimizado para razonamiento de contexto largo y seguimiento de instrucciones."
+      "description": "Un modelo de lenguaje grande con 200B de parámetros de Moonshot AI con ventana de contexto de 200K, optimizado para razonamiento de contexto largo y seguimiento de instrucciones."
     },
     "fr": {
-      "description": "Un grand modele de langage avec 200B de parametres de Moonshot AI avec fenetre de contexte de 200K, optimise pour le raisonnement de contexte long et le suivi des instructions."
+      "description": "Un grand modèle de langage avec 200B de paramètres de Moonshot AI avec fenêtre de contexte de 200K, optimisé pour le raisonnement de contexte long et le suivi des instructions."
     },
     "id": {
       "description": "Model bahasa besar dengan 200B parameter dari Moonshot AI dengan jendela konteks 200K, dioptimalkan untuk penalaran konteks panjang dan mengikuti instruksi."
@@ -26,16 +26,16 @@
       "description": "Moonshot AIの200Bパラメータの大規模言語モデルで、200Kコンテキストウィンドウを備え、長い文脈推論と指示追従のために最適化されています。"
     },
     "pt": {
-      "description": "Um modelo de linguagem grande com 200B de parametros de Moonshot AI com janela de contexto de 200K, otimizado para raciocinio de contexto longo e seguimento de instrucoes."
+      "description": "Um modelo de linguagem grande com 200B de parâmetros de Moonshot AI com janela de contexto de 200K, otimizado para raciocínio de contexto longo e seguimento de instruções."
     },
     "ru": {
       "description": "Большая языковая модель с 200B параметров от Moonshot AI с окном контекста 200K, оптимизированная для рассуждения на длинном контексте и следования инструкциям."
     },
     "tr": {
-      "description": "Moonshot AI'den 200K baglam penceresine sahip 200B parametreli buyuk dil modeli, uzun baglam muhakemesi ve talimat takibi icin optimize edilmistir."
+      "description": "Moonshot AI’ın 200B parametreli ve 200K bağlamlı büyük dil modeli; uzun bağlamlı akıl yürütme ve talimat izleme için optimize edilmiştir."
     },
     "zh-Hant": {
-      "description": "月之暗面推出的 200B 參數大語言模型，具備 200K 上下文視窗，專為長文本推理和指令遵循優化。"
+      "description": "月之暗面推出的 200B 參數大語言模型，具備 200K 上下文視窗，專為長文本推理和指令遵循最佳化。"
     }
   },
   "verified": true,

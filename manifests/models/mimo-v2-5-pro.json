@@ -29,7 +29,7 @@
       "description": "MoE-модель Xiaomi с открытыми весами и 1,02 трлн параметров для сложной разработки ПО, долгих агентных задач и рассуждений в контексте 1 млн токенов."
     },
     "tr": {
-      "description": "Karmaşık yazılım mühendisliği, uzun süreli aracılar ve 1 milyon token bağlamda akıl yürütme için Xiaomi'nin 1,02T parametreli açık ağırlıklı MoE modeli."
+      "description": "Karmaşık yazılım mühendisliği, uzun süreli ajanlar ve 1 milyon token bağlamda akıl yürütme için Xiaomi'nin 1,02T parametreli açık ağırlıklı MoE modeli."
     },
     "zh-Hans": {
       "description": "Xiaomi 面向复杂软件工程、长周期智能体和 100 万 token 上下文推理的开放权重 MoE 模型，总参数 1.02 万亿。"

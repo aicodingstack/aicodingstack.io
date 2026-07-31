@@ -5,37 +5,37 @@
   "description": "High-performance multiplayer code editor built in Rust by the creators of Atom and Tree-sitter, designed for collaboration with humans and AI.",
   "translations": {
     "zh-Hans": {
-      "description": "由 Atom 和 Tree-sitter 创作者打造的高性能多人协作代码编辑器,用 Rust 构建,专为人类和 AI 协作而设计。"
+      "description": "由 Atom 和 Tree-sitter 的创作者使用 Rust 打造的高性能多人协作代码编辑器，专为人类与 AI 协作而设计。"
     },
     "de": {
-      "description": "Hochleistungs-Multiplayer-Code-Editor in Rust von den Entwicklern von Atom und Tree-sitter, entwickelt für die Zusammenarbeit mit Menschen und AI."
+      "description": "Ein leistungsstarker, in Rust entwickelter Mehrbenutzer-Codeeditor von den Schöpfern von Atom und Tree-sitter, ausgelegt auf die Zusammenarbeit von Menschen und KI."
     },
     "ko": {
       "description": "Atom과 Tree-sitter 제작자가 Rust로 만든 고성능 멀티플레이어 코드 편집기로, 인간과 AI의 협업을 위해 설계되었습니다."
     },
     "es": {
-      "description": "Editor de codigo de alto rendimiento para varios jugadores construido en Rust por los creadores de Atom y Tree-sitter, diseñado para la colaboracion con humanos e IA."
+      "description": "Editor de código colaborativo de alto rendimiento, creado en Rust por los autores de Atom y Tree-sitter y diseñado para la colaboración entre personas e IA."
     },
     "fr": {
-      "description": "Editeur de code haute performance multijoueur construit en Rust par les createurs d'Atom et Tree-sitter, concu pour la collaboration avec humains et IA."
+      "description": "Éditeur de code collaboratif haute performance, développé en Rust par les créateurs d’Atom et de Tree-sitter et conçu pour la collaboration entre humains et IA."
     },
     "id": {
-      "description": "Editor kode multiplayer berkinerja tinggi dibangun dengan Rust oleh pembuat Atom dan Tree-sitter, didesain untuk kolaborasi manusIA dan AI."
+      "description": "Editor kode kolaboratif berperforma tinggi yang dibuat dengan Rust oleh pencipta Atom dan Tree-sitter, serta dirancang untuk kolaborasi manusia dan AI."
     },
     "ja": {
       "description": "AtomとTree-sitterの作成者によるRust製の高性能マルチプレイヤーコードエディタで、人間とAIの協力のために設計されています。"
     },
     "pt": {
-      "description": "Editor de codigo de alto desempenho multiplayer construido em Rust pelos criadores do Atom e Tree-sitter, projetado para colaboracao com humanos e IA."
+      "description": "Editor de código colaborativo de alto desempenho, criado em Rust pelos autores do Atom e do Tree-sitter e projetado para a colaboração entre pessoas e IA."
     },
     "ru": {
       "description": "Высокопроизводительный многопользовательский редактор кода на Rust от создателей Atom и Tree-sitter, созданный для сотрудничества людей и ИИ."
     },
     "tr": {
-      "description": "Atom ve Tree-sitter yaratıcıları tarafından Rust ile oluşturulmuş yüksek performanslı çok oyunculu kod düzenleyici, insanlar ve AI ile işbirliği için tasarlanmıştır."
+      "description": "Atom ve Tree-sitter’ın yaratıcıları tarafından Rust ile geliştirilen, insanlar ile yapay zekâ iş birliği için tasarlanmış yüksek performanslı ortak çalışma kod düzenleyicisi."
     },
     "zh-Hant": {
-      "description": "由 Atom 和 Tree-sitter 創作者打造的高效能多人協作代碼編輯器，用 Rust 構建，專為人類和 AI 協作而設計。"
+      "description": "由 Atom 和 Tree-sitter 的創作者使用 Rust 打造的高效能多人協作程式碼編輯器，專為人類與 AI 協作而設計。"
     }
   },
   "verified": true,

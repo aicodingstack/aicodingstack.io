@@ -29,13 +29,13 @@
       "description": "Открытая базовая модель Z.ai на 744B параметров для агентной разработки, сложных систем и длительных задач программирования."
     },
     "tr": {
-      "description": "Z.ai'ın aracı mühendislik, karmaşık sistem geliştirme ve uzun süreli kodlama görevleri için 744B açık ağırlıklı temel modeli."
+      "description": "Z.ai'ın ajan tabanlı mühendislik, karmaşık sistem geliştirme ve uzun süreli kodlama görevleri için 744B açık ağırlıklı temel modeli."
     },
     "zh-Hans": {
       "description": "Z.ai 面向智能体工程、复杂系统开发和长周期编码任务的 744B 开放权重基础模型。"
     },
     "zh-Hant": {
-      "description": "Z.ai 面向智慧體工程、複雜系統開發和長週期編碼任務的 744B 開放權重基礎模型。"
+      "description": "Z.ai 面向智慧體工程、複雜系統開發和長週期程式設計任務的 744B 開放權重基礎模型。"
     }
   },
   "verified": true,

@@ -17,7 +17,7 @@
       "description": "Un modelo de lenguaje grande avanzado de MiniMax diseñado para tareas de inteligencia integral que incluyen programación, razonamiento y uso de herramientas."
     },
     "fr": {
-      "description": "Un grand modele de langage avance de MiniMax concu pour des taches d'intelligence globale incluant la programmation, le raisonnement et l'utilisation d'outils."
+      "description": "Un grand modèle de langage avancé de MiniMax conçu pour des tâches d'intelligence globale incluant la programmation, le raisonnement et l'utilisation d'outils."
     },
     "id": {
       "description": "Model bahasa besar canggih dari MiniMax yang dirancang untuk tugas kecerdasan komprehensif termasuk coding, penalaran, dan penggunaan alat."
@@ -32,10 +32,10 @@
       "description": "Продвинутая большая языковая модель от MiniMax, предназначенная для комплексных интеллектуальных задач, включая программирование, рассуждение и использование инструментов."
     },
     "tr": {
-      "description": "Kodlama, muhakeme ve arac kullanimi dahil kapsamli zeka gorevleri icin tasarlanmis, MiniMax'ten gelismis bir buyuk dil modeli."
+      "description": "Kodlama, akıl yürütme ve araç kullanımı dahil kapsamlı zekâ görevleri için tasarlanmış, MiniMax’ın gelişmiş büyük dil modeli."
     },
     "zh-Hant": {
-      "description": "MiniMax 推出的先進大語言模型，專為包括編程、推理和工具使用在內的綜合智能任務設計。"
+      "description": "MiniMax 推出的先進大語言模型，專為包括程式設計、推理和工具使用在內的綜合智能任務設計。"
     }
   },
   "verified": true,

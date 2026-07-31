@@ -26,7 +26,7 @@
       "description": "業界最先端のコンテキストエンジンを搭載したAIソフトウェア開発プラットフォーム。自律的なコーディングエージェントとコードベース認識ツールを提供します。"
     },
     "pt": {
-      "description": "Uma plataforma de desenvolvimento de software alimentada por IA com um mecanismo de contexto líder na indústria, fornecendo agentes de codificação autônomos e ferramentas conscientes da base de cód..."
+      "description": "Plataforma de desenvolvimento de software com IA, apoiada por um mecanismo de contexto líder do setor e capaz de oferecer agentes de programação autônomos e ferramentas cientes da base de código."
     },
     "ru": {
       "description": "Платформа разработки программного обеспечения на базе ИИ с движком контекста, ставшим эталоном в отрасли, предоставляющая автономные агенты кодирования и инструменты, учитывающие базу кода."
@@ -35,7 +35,7 @@
       "description": "Sektör lideri bir bağlam motoru tarafından desteklenen AI destekli yazılım geliştirme platformu, otonom kodlama aracıları ve kod tabanı farkında araçlar sunar."
     },
     "zh-Hant": {
-      "description": "由業界領先的上下文引擎支援的 AI 軟體開發平台，提供自主編碼 Agent 和程式碼庫感知工具。"
+      "description": "由業界領先的情境引擎支援的 AI 軟體開發平台，提供自主程式設計 Agent 和程式碼庫感知工具。"
     }
   },
   "verified": true,

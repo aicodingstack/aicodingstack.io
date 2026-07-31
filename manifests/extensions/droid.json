@@ -18,25 +18,25 @@
       "description": "Plataforma de desarrollo AI con Droids - agentes autónomos que automatizan tareas software. Refactorizan código, gestionan depuración y pruebas, y generan funcionalidades."
     },
     "fr": {
-      "description": "Plateforme de développement AI avec Droids - agents autonomes pour automatiser taches logicielles. Refactorisent code, gerent débogage et tests, et génèrent fonctionnalités."
+      "description": "Plateforme d’IA proposant des « Droids », agents autonomes qui automatisent les tâches logicielles. Ils refactorisent le code, gèrent le débogage et les tests, et créent des fonctionnalités."
     },
     "id": {
-      "description": "Platform pengembangan AI dengan Droids - agen otonom yang mengotomatisasi tugas software. Refactoring kode, debugging dan testing, dan membuat fitur."
+      "description": "Platform AI dengan Droids, agen otonom yang mengotomatiskan tugas perangkat lunak. Droids merapikan kode, menangani debugging dan pengujian, serta membuat fitur."
     },
     "ja": {
       "description": "ワークフロー全体でソフトウェアタスクを自動化する自律コーディングエージェント「Droids」を提供するAI開発プラットフォーム。Droidsはコードのリファクタリング、デバッグおよびテストの処理、機能生成を行います。"
     },
     "pt": {
-      "description": "Plataforma de desenvolvimento AI com Droids - agentes autónomos que automatizam tarefas software. Refatoram código, depuração e testes, e geram funcionalidades."
+      "description": "Plataforma de desenvolvimento com IA que oferece Droids, agentes autônomos que automatizam tarefas de software, refatoram código, cuidam de depuração e testes e criam funcionalidades."
     },
     "ru": {
       "description": "Платформа разработки AI с Droids — автономными агентами для автоматизации задач. Рефакторинг кода, отладка и тесты, создание функциональности."
     },
     "tr": {
-      "description": "Iş akislarindaki yazilim gorevlerini otomatize eden otonom kodlama araclari sunan AI gelistirme platformu. Droids refactor eder, hata ayiklama ve testleri ele alir."
+      "description": "Yazılım görevlerini otomatikleştiren otonom Droids aracılarını sunan yapay zekâ platformudur. Droids kodu yeniden düzenler, hata ayıklama ve testleri yürütür, özellikler üretir."
     },
     "zh-Hant": {
-      "description": "AI 開發平台，提供 Droids —— 在工作流程中自動化軟體任務的自主編碼 Agent。Droids 重構程式碼、處理除錯和測試並生成功能。"
+      "description": "AI 開發平台，提供 Droids —— 在工作流程中自動化軟體任務的自主程式設計 Agent。Droids 重構程式碼、處理除錯和測試並產生功能。"
     }
   },
   "verified": true,

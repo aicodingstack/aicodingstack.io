@@ -14,10 +14,10 @@
       "description": "고급 추론, 코딩, 수학 및 과학 작업을 효율적으로 수행하기 위해 설계된 Google의 차세대 빠른 추론 모델입니다. 통합 \\\"생각\\\" 능력은 최적화된 성능으로 더 높은 정확도를 가능하게 합니다."
     },
     "es": {
-      "description": "Modelo de razonamiento rapido de Google para razonamiento avanzado eficiente, codificacion, matematicas y ciencia."
+      "description": "Modelo de razonamiento rápido de Google para razonamiento avanzado eficiente, codificación, matemáticas y ciencia."
     },
     "fr": {
-      "description": "Modele de raisonnement rapide de Google pour raisonnement avance efficace, codage, mathematiques et science."
+      "description": "Modèle de raisonnement rapide de Google pour le raisonnement avancé efficace, le codage, les mathématiques et les sciences."
     },
     "id": {
       "description": "Model penalaran cepat Google untuk penalaran tingkat lanjut efisien, coding, matematika, dan sains."
@@ -26,16 +26,16 @@
       "description": "Googleの次世代高速推論モデルで、効率的な高度な推論、コーディング、数学、科学タスクのために設計されています。統合された\\\"思考\\\"能力により、最適化されたパフォーマンスでより高い精度を実現します。"
     },
     "pt": {
-      "description": "Modelo de raciocinio rapido do Google para raciocinio avancado eficiente, codificacao, matematica e ciencia."
+      "description": "Modelo de raciocínio rápido do Google para raciocínio avançado eficiente, programação, matemática e ciência."
     },
     "ru": {
       "description": "Быстрая модель рассуждения Google для эффективного рассуждения, программирования, математики и науки."
     },
     "tr": {
-      "description": "Google'in hizli muhakeme modeli, gelismis muhakeme, kodlama, matematik ve bilim icin tasarlandi."
+      "description": "Google’ın hızlı akıl yürütme modeli, verimli ileri düzey akıl yürütme, kodlama, matematik ve bilim için tasarlanmıştır."
     },
     "zh-Hant": {
-      "description": "Google 的下一代快速推理模型，專為高效的高級推理、編碼、數學和科學任務設計。內置\\\"思考\\\"能力能夠在優化性能的同時提供更高的準確性。"
+      "description": "Google 的下一代快速推理模型，專為高效的進階推理、程式設計、數學和科學任務設計。內建\\\"思考\\\"能力能夠在最佳化效能的同時提供更高的準確性。"
     }
   },
   "verified": true,

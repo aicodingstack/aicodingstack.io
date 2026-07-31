@@ -29,7 +29,7 @@
       "description": "Открытая мультимодальная MoE-модель Google DeepMind с 26 млрд параметров и 4 млрд активных для эффективных рассуждений, программирования, визуальных задач и агентов."
     },
     "tr": {
-      "description": "Verimli akıl yürütme, kodlama, görsel görevler ve aracılar için Google DeepMind'ın 26B toplam ve 4B etkin parametreli açık ağırlıklı çok modlu MoE modeli."
+      "description": "Verimli akıl yürütme, kodlama, görsel görevler ve ajanlar için Google DeepMind'ın 26B toplam ve 4B etkin parametreli açık ağırlıklı çok modlu MoE modeli."
     },
     "zh-Hans": {
       "description": "Google DeepMind 面向高效推理、编程、视觉任务和智能体的开放权重多模态 MoE 模型，总参数 26B、激活参数 4B。"

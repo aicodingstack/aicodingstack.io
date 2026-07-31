@@ -20,7 +20,7 @@
       "description": "Vibe CLI는 저장소 탐색, 계획, 코드 편집, 명령 실행 및 구성 가능한 에이전트 워크플로를 위한 Mistral AI의 터미널 코딩 에이전트입니다."
     },
     "pt": {
-      "description": "Vibe CLI é o agente de programação no terminal da Mistral AI para explorar repositórios, planear, editar código, executar comandos e configurar fluxos de agentes."
+      "description": "Vibe CLI é o agente de programação no terminal da Mistral AI para explorar repositórios, planejar, editar código, executar comandos e configurar fluxos de agentes."
     },
     "ru": {
       "description": "Vibe CLI — терминальный агент Mistral AI для изучения репозиториев, планирования, редактирования кода, выполнения команд и настраиваемых рабочих процессов."
@@ -32,7 +32,7 @@
       "description": "Vibe CLI 是 Mistral AI 的终端编码 Agent，用于探索代码仓库、规划、编辑代码、执行命令和配置 Agent 工作流。"
     },
     "zh-Hant": {
-      "description": "Vibe CLI 是 Mistral AI 的終端編碼 Agent，用於探索程式碼儲存庫、規劃、編輯程式碼、執行命令和設定 Agent 工作流程。"
+      "description": "Vibe CLI 是 Mistral AI 的終端機程式設計 Agent，用於探索程式碼儲存庫、規劃、編輯程式碼、執行命令和設定 Agent 工作流程。"
     }
   },
   "verified": true,

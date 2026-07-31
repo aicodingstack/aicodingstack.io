@@ -6,11 +6,10 @@
   "compareTitle": "{model1} vs {model2} 비교",
   "description": "설명",
   "inputPrice": "입력 가격",
-  "knowledgeCutoff": "지식",
+  "knowledgeCutoff": "지식 기준일",
   "lifecycle": "수명 주기",
   "outputPrice": "출력 가격",
   "releaseDate": "출시일",
   "selectModel": "모델 선택",
-  "selectTwoModels": "비교할 모델 두 개를 선택하세요",
-  "verified": "확인됨"
+  "selectTwoModels": "비교할 모델 두 개를 선택하세요"
 }

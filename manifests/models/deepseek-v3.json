@@ -5,37 +5,37 @@
   "description": "Open-weight MoE model that established the V3 coding, reasoning, and general-purpose model line.",
   "translations": {
     "zh-Hans": {
-      "description": "DeepSeek-V3 是 DeepSeek 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "开放权重 MoE 模型，奠定了 V3 编码、推理和通用模型系列。"
     },
     "de": {
-      "description": "DeepSeek-V3 ist eine eigenständige Modellversion von DeepSeek mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Open-Weight-MoE-Modell, das die V3-Reihe für Coding, Schlussfolgern und allgemeine Aufgaben begründete."
     },
     "es": {
-      "description": "DeepSeek-V3 es una versión de modelo independiente de DeepSeek con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo MoE de pesos abiertos que inició la línea V3 para programación, razonamiento y uso general."
     },
     "fr": {
-      "description": "DeepSeek-V3 est une version de modèle distincte de DeepSeek, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle MoE à poids ouverts à l’origine de la gamme V3 pour le codage, le raisonnement et les usages généraux."
     },
     "id": {
-      "description": "DeepSeek-V3 adalah versi model mandiri dari DeepSeek dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model MoE open-weight yang menjadi dasar lini V3 untuk coding, penalaran, dan penggunaan umum."
     },
     "ja": {
-      "description": "DeepSeek-V3 は DeepSeek が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "V3のコーディング、推論、汎用モデル系列を確立したオープンウェイトMoEモデル。"
     },
     "ko": {
-      "description": "DeepSeek-V3은(는) DeepSeek가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "V3 코딩·추론·범용 모델 계열의 기반이 된 오픈 웨이트 MoE 모델입니다."
     },
     "pt": {
-      "description": "DeepSeek-V3 é uma versão de modelo independente da DeepSeek, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo MoE de pesos abertos que estabeleceu a linha V3 para programação, raciocínio e uso geral."
     },
     "ru": {
-      "description": "DeepSeek-V3 — самостоятельная версия модели от DeepSeek с явно заявленными возможностями программирования или разработки ПО."
+      "description": "MoE-модель с открытыми весами, положившая начало линейке V3 для программирования, рассуждений и общих задач."
     },
     "tr": {
-      "description": "DeepSeek-V3, DeepSeek tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "V3 kodlama, akıl yürütme ve genel amaçlı model serisini başlatan açık ağırlıklı MoE modeli."
     },
     "zh-Hant": {
-      "description": "DeepSeek-V3 是 DeepSeek 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "開放權重 MoE 模型，奠定了 V3 程式設計、推理和通用模型系列。"
     }
   },
   "verified": true,

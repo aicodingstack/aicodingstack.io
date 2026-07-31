@@ -5,37 +5,37 @@
   "description": "High-performance Grok model with one-million-token context, configurable reasoning, and agentic tool calling.",
   "translations": {
     "zh-Hans": {
-      "description": "Grok 4.20 是 xAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "高性能 Grok 模型，提供 100 万 token 上下文、可配置推理和智能体工具调用。"
     },
     "de": {
-      "description": "Grok 4.20 ist eine eigenständige Modellversion von xAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Leistungsstarkes Grok-Modell mit einer Million Token Kontext, konfigurierbarem Schlussfolgern und agentischen Werkzeugaufrufen."
     },
     "es": {
-      "description": "Grok 4.20 es una versión de modelo independiente de xAI con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo Grok de alto rendimiento con un millón de tokens de contexto, razonamiento configurable y herramientas agénticas."
     },
     "fr": {
-      "description": "Grok 4.20 est une version de modèle distincte de xAI, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle Grok performant avec un million de jetons de contexte, un raisonnement configurable et des appels d’outils agentiques."
     },
     "id": {
-      "description": "Grok 4.20 adalah versi model mandiri dari xAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model Grok berperforma tinggi dengan konteks satu juta token, penalaran yang dapat diatur, dan pemanggilan alat agentik."
     },
     "ja": {
-      "description": "Grok 4.20 は xAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "100万トークンのコンテキスト、調整可能な推論、エージェント型ツール呼び出しを備えた高性能Grokモデル。"
     },
     "ko": {
-      "description": "Grok 4.20은(는) xAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "100만 토큰 컨텍스트, 조정 가능한 추론과 에이전트 도구 호출을 지원하는 고성능 Grok 모델입니다."
     },
     "pt": {
-      "description": "Grok 4.20 é uma versão de modelo independente da xAI, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo Grok de alto desempenho com contexto de um milhão de tokens, raciocínio configurável e ferramentas agênticas."
     },
     "ru": {
-      "description": "Grok 4.20 — самостоятельная версия модели от xAI с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Высокопроизводительная модель Grok с контекстом в миллион токенов, настраиваемыми рассуждениями и агентным вызовом инструментов."
     },
     "tr": {
-      "description": "Grok 4.20, xAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Bir milyon token bağlam, yapılandırılabilir akıl yürütme ve ajanlara yönelik araç çağrıları sunan yüksek performanslı Grok modeli."
     },
     "zh-Hant": {
-      "description": "Grok 4.20 是 xAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "高效能 Grok 模型，提供 100 萬 token 上下文、可設定推理和代理工具呼叫。"
     }
   },
   "verified": true,

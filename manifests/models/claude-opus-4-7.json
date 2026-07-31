@@ -29,13 +29,13 @@
       "description": "Модель Anthropic Opus для сложных рассуждений, агентного программирования, длительных задач, управления компьютером и надёжной работы с крупным кодом."
     },
     "tr": {
-      "description": "Anthropic'in karmaşık akıl yürütme, aracı kodlama, uzun vadeli çalışma, bilgisayar kullanımı ve büyük kod tabanlarında güvenilir yürütme için Opus modeli."
+      "description": "Anthropic'in karmaşık akıl yürütme, ajan tabanlı kodlama, uzun vadeli çalışma, bilgisayar kullanımı ve büyük kod tabanlarında güvenilir yürütme için Opus modeli."
     },
     "zh-Hans": {
       "description": "Anthropic 面向复杂推理、智能体编码、长周期工作、计算机使用和大型代码库可靠执行的 Opus 模型。"
     },
     "zh-Hant": {
-      "description": "Anthropic 面向複雜推理、智慧體編碼、長週期工作、電腦使用和大型程式碼庫可靠執行的 Opus 模型。"
+      "description": "Anthropic 面向複雜推理、智慧體程式設計、長週期工作、電腦使用和大型程式碼庫可靠執行的 Opus 模型。"
     }
   },
   "verified": true,

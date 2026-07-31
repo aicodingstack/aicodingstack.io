@@ -29,7 +29,7 @@
       "description": "Агентная модель MiniMax с открытыми весами для сложной разработки, диагностики инцидентов, мультиагентных команд, навыков и динамического поиска инструментов."
     },
     "tr": {
-      "description": "MiniMax'in karmaşık yazılım mühendisliği, olay tanılama, çok aracılı ekipler, beceriler ve dinamik araç arama için açık ağırlıklı aracı modeli."
+      "description": "MiniMax'in karmaşık yazılım mühendisliği, olay tanılama, çok ajanlı ekipler, beceriler ve dinamik araç arama için açık ağırlıklı ajan modeli."
     },
     "zh-Hans": {
       "description": "MiniMax 面向复杂软件工程、故障诊断、多智能体团队、技能和动态工具搜索的开放权重智能体模型。"

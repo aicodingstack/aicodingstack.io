@@ -15,10 +15,10 @@
       "description": "JetBrains Junie는 작업을 자율적으로 실행하거나 개발자와 협업할 수 있는 AI 코딩 에이전트입니다. 일상 작업을 독립적으로 처리하며 복잡한 작업을 지원합니다."
     },
     "es": {
-      "description": "JetBrains Junie es un agente de codificación de IA que ejecuta tareas de forma autónoma o colabora con desarrolladores..."
+      "description": "JetBrains Junie es un agente de programación con IA que ejecuta tareas de forma autónoma o colabora con desarrolladores. Resuelve por sí solo las tareas rutinarias y ayuda con trabajos complejos."
     },
     "fr": {
-      "description": "JetBrains Junie est un agent de codage IA qui exécute des tâches de manière autonome ou collabore avec les développeurs..."
+      "description": "JetBrains Junie est un agent de programmation IA qui exécute des tâches de façon autonome ou collabore avec les développeurs. Il traite seul les tâches courantes et aide sur les travaux complexes."
     },
     "id": {
       "description": "JetBrains Junie adalah agen coding AI yang secara otonom mengeksekusi tugas atau berkolaborasi dengan pengembang. Menangani tugas rutin secara independen sambil membantu pekerjaan kompleks."
@@ -27,7 +27,7 @@
       "description": "JetBrains Junieは、タスクを自律的に実行または開発者と連携するAIコーディングエージェントです。日常的なタスクを独立して処理しながら、複雑な作業を支援します。"
     },
     "pt": {
-      "description": "JetBrains Junie e um agente de codificacao de IA que executa tarefas de forma autonoma ou colabora com desenvolvedores..."
+      "description": "JetBrains Junie é um agente de programação com IA que executa tarefas de forma autônoma ou colabora com desenvolvedores. Lida sozinho com tarefas rotineiras e auxilia em trabalhos complexos."
     },
     "ru": {
       "description": "JetBrains Junie — это ИИ-агент по программированию, который автономно выполняет задачи или сотрудничает с разработчиками. Самостоятельно обрабатывает рутинные задачи и помогает со сложной работой."
@@ -36,7 +36,7 @@
       "description": "JetBrains Junie, görevleri otonom olarak yürüten veya geliştiricilerle işbirliği yapan bir AI kodlama aracısıdır. Karmaşık çalışmalara yardımcı olurken rutin görevleri bağımsız olarak ele alır."
     },
     "zh-Hant": {
-      "description": "JetBrains Junie 是一個 AI 編碼 Agent，可以自主執行工作或與開發者協作。它獨立處理例行工作，同時協助複雜工作。"
+      "description": "JetBrains Junie 是一個 AI 程式設計 Agent，可以自主執行工作或與開發者協作。它獨立處理例行工作，同時協助複雜工作。"
     }
   },
   "verified": true,

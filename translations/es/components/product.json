@@ -1,13 +1,13 @@
 {
   "benchmarks": {
-    "liveCodeBenchDesc": "Live coding performance",
-    "mmmuDesc": "Multimodal understanding",
-    "mmmuProDesc": "Advanced multimodal tasks",
-    "sciCodeDesc": "Scientific code generation",
-    "sweBenchDesc": "Real-world software engineering tasks",
-    "terminalBenchDesc": "Command-line interface proficiency",
-    "title": "Performance Benchmarks",
-    "webDevArenaDesc": "Web development challenges"
+    "liveCodeBenchDesc": "Rendimiento de programación en vivo",
+    "mmmuDesc": "Comprensión multimodal",
+    "mmmuProDesc": "Tareas multimodales avanzadas",
+    "sciCodeDesc": "Generación de código científico",
+    "sweBenchDesc": "Tareas reales de ingeniería de software",
+    "terminalBenchDesc": "Dominio de la interfaz de línea de comandos",
+    "title": "Pruebas de rendimiento",
+    "webDevArenaDesc": "Desafíos de desarrollo web"
   },
   "communityLinks": {
     "blog": "Blog",
@@ -76,35 +76,35 @@
       "summary": "{count} {category}"
     },
     "controls": {
-      "clear": "Clear",
-      "sortByLabel": "Sort by:",
-      "vendorTypeLabel": "Vendor Type:"
+      "clear": "Restablecer",
+      "sortByLabel": "Ordenar por:",
+      "vendorTypeLabel": "Tipo de fabricante:"
     },
     "table": {
-      "noVendorsFound": "No vendors found"
+      "noVendorsFound": "No se encontraron fabricantes"
     },
     "vendorTypes": {
-      "label": "Vendor Types:",
+      "label": "Tipos de fabricante:",
       "types": {
         "ai-native": {
-          "description": "Model + Development Tools",
-          "label": "AI Native"
+          "description": "Modelo + herramientas de desarrollo",
+          "label": "Nativo de IA"
         },
         "full-stack": {
-          "description": "IDE + CLI + Extension",
-          "label": "Full Stack"
+          "description": "IDE + CLI + extensión",
+          "label": "Pila completa"
         },
         "model-only": {
-          "description": "Model (with or without Provider)",
-          "label": "Model Only"
+          "description": "Modelo (con o sin proveedor)",
+          "label": "Solo modelo"
         },
         "provider-only": {
-          "description": "Provider only",
-          "label": "Provider Only"
+          "description": "Solo proveedor",
+          "label": "Solo proveedor"
         },
         "tool-only": {
-          "description": "IDE/CLI/Extension",
-          "label": "Tool Only"
+          "description": "IDE/CLI/extensión",
+          "label": "Solo herramientas"
         }
       }
     }

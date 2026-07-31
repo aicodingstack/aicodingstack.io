@@ -29,13 +29,13 @@
       "description": "Открытая флагманская модель Z.ai для длительного агентного программирования, гибкой глубины рассуждений и устойчивой работы с контекстом 1 млн токенов."
     },
     "tr": {
-      "description": "Z.ai'ın uzun süreli aracı kodlama, esnek akıl yürütme düzeyi ve 1 milyon token bağlamda kararlı çalışma için açık ağırlıklı amiral modeli."
+      "description": "Z.ai'ın uzun süreli ajan tabanlı kodlama, esnek akıl yürütme düzeyi ve 1 milyon token bağlamda kararlı çalışma için açık ağırlıklı amiral modeli."
     },
     "zh-Hans": {
       "description": "Z.ai 面向长周期智能体编码、灵活推理强度和 100 万 token 上下文稳定工作的开放权重旗舰模型。"
     },
     "zh-Hant": {
-      "description": "Z.ai 面向長週期智慧體編碼、彈性推理強度和 100 萬 token 上下文穩定工作的開放權重旗艦模型。"
+      "description": "Z.ai 面向長週期智慧體程式設計、彈性推理強度和 100 萬 token 上下文穩定工作的開放權重旗艦模型。"
     }
   },
   "verified": true,

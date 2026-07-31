@@ -35,7 +35,7 @@
       "description": "Roo Code, yapılandırılabilir modlara ve model desteğine sahip açık kaynaklı bir VS Code AI kodlama uzantısıydı. Uzantı kapatıldı ve depo 15 Mayıs 2026 tarihinde arşivlendi."
     },
     "zh-Hant": {
-      "description": "Roo Code 曾是一款面向 VS Code、支援可設定模式和多種模型的開源 AI 編碼擴充功能。該擴充功能已停止營運，其儲存庫於 2026 年 5 月 15 日封存。"
+      "description": "Roo Code 曾是一款面向 VS Code、支援可設定模式和多種模型的開放原始碼 AI 程式設計擴充功能。該擴充功能已停止營運，其儲存庫於 2026 年 5 月 15 日封存。"
     }
   },
   "verified": true,

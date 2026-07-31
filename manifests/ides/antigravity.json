@@ -21,7 +21,7 @@
       "description": "L'environnement de développement intégré (IDE) de Google propulsé par l'IA pour le développement moderne de logiciels avec des fonctionnalités avancées d'IA."
     },
     "id": {
-      "description": "Integrated development environment (IDE) Google bertenaga AI untuk pengembangan perangkat lunak modern dengan kemampuan AI canggih."
+      "description": "Lingkungan pengembangan terpadu (IDE) Google berbasis AI untuk pengembangan perangkat lunak modern, dengan kemampuan AI tingkat lanjut."
     },
     "ja": {
       "description": "高度なAI機能を備えた、現代のソフトウェア開発のためのGoogleのAI搭載統合開発環境（IDE）。"
@@ -36,7 +36,7 @@
       "description": "Modern yazılım geliştirme için gelişmiş AI yetenekleriyle Google'ın destekli geliştirme ortamı (IDE)."
     },
     "zh-Hant": {
-      "description": "Google 的 AI 驅動集成開發環境（IDE），用於現代軟件開發，具有先進的 AI 功能。"
+      "description": "Google 的 AI 驅動整合開發環境（IDE），為現代軟體開發提供進階 AI 功能。"
     }
   },
   "verified": true,

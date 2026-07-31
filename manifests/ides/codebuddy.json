@@ -8,13 +8,13 @@
       "description": "腾讯的 AI 编码助手，提供智能代码补全、多文件代码生成（Craft 模式）、设计转代码转换和集成部署工具。"
     },
     "de": {
-      "description": "Eine AI-gestützte Entwicklungsumgebung mit intelligentem Code-Assistenten für Entwicklungsworkflows und Debugging."
+      "description": "Tencents AI-Codierungsassistent bietet intelligente Codevervollständigung, Mehrdatei-Codegenerierung im Craft-Modus, Design-zu-Code-Konvertierung und integrierte Bereitstellungswerkzeuge."
     },
     "ko": {
       "description": "텐센트의 AI 코딩 어시스턴트로, 스마트 코드 자동 완성, 다중 파일 코드 생성(Craft 모드), 디자인-투-코드 변환 및 통합 배포 도구를 제공합니다."
     },
     "es": {
-      "description": "IDE de alto rendimiento con capacidades de colaboración IA para desarrolladores. Edición inteligente y soporte nativo Git."
+      "description": "El asistente de programación con IA de Tencent ofrece completado inteligente, código en varios archivos (modo Craft), conversión de diseño a código y herramientas de despliegue integradas."
     },
     "fr": {
       "description": "L'assistant de codage IA de Tencent offrant autocomplétion intelligente de code, génération de code multi-fichiers (mode Craft), conversion design-vers-code et outils de déploiement intégrés."
@@ -26,16 +26,16 @@
       "description": "TencentのAIコーディングアシスタント。インテリジェントなコード補完、マルチファイルコード生成（Craftモード）、デザインからコードへの変換、統合デプロイツールを提供します。"
     },
     "pt": {
-      "description": "IDE de alto desempenho com capacidades de colaboração IA para desenvolvedores. Edição inteligente e suporte nativo Git."
+      "description": "O assistente de programação com IA da Tencent oferece preenchimento inteligente, código em vários arquivos (modo Craft), conversão de design em código e ferramentas integradas de implantação."
     },
     "ru": {
-      "description": "Высокопроизводительная среда разработки с коллаборацией ИИ. Умное редактирование и встроенная поддержка Git."
+      "description": "ИИ-помощник Tencent для программирования предлагает умное автодополнение, генерацию кода в нескольких файлах (режим Craft), преобразование дизайна в код и встроенные инструменты развёртывания."
     },
     "tr": {
       "description": "Tencent'in AI kodlama asistanı, akıllı kod tamamlama, çoklu dosya kod üretimi (Craft modu), tasarımdan koda dönüşüm ve entegre dağıtım araçları sunar."
     },
     "zh-Hant": {
-      "description": "騰訊的 AI 編碼助手，提供智能代碼補全、多文件代碼生成（Craft 模式）、設計轉代碼轉換和集成部署工具。"
+      "description": "騰訊的 AI 程式設計助理提供智慧程式碼補全、多檔案程式碼產生（Craft 模式）、設計轉程式碼，以及整合式部署工具。"
     }
   },
   "verified": true,

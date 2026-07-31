@@ -27,7 +27,7 @@
       "description": "Claude CodeはVS Codeに直接統合されるAIコーディングアシスタントです。インテリジェントなコード提案、説明を提供し、デバッグとコード生成を支援します。"
     },
     "pt": {
-      "description": "Claude Code e um assistente de programacao de IA que se integra diretamente ao VS Code. Provide sugestoes inteligentes de codigo, explicacoes e ajuda na depuracao e geracao de codigo."
+      "description": "Claude Code é um assistente de programação com IA integrado ao VS Code. Oferece sugestões inteligentes de código, explicações e ajuda na depuração e geração de código."
     },
     "ru": {
       "description": "Claude Code — это ИИ-помощник по программированию, который напрямую интегрируется в VS Code. Предоставляет интеллектуальные предложения кода, объяснения и помогает в отладке и генерации кода."
@@ -36,7 +36,7 @@
       "description": "Claude Code, VS Code'a doğrudan entegre olan bir AI kodlama asistanıdır. Akıllı kod önerileri, açıklamalar sunar ve hata ayıklama ile kod oluşturmayı destekler."
     },
     "zh-Hant": {
-      "description": "Claude Code 是一個直接整合到 VS Code 中的 AI 編碼助手。提供智能程式碼建議、解釋，並協助除錯和程式碼生成。"
+      "description": "Claude Code 是一個直接整合到 VS Code 中的 AI 程式設計助手。提供智慧程式碼建議、解釋，並協助除錯和程式碼產生。"
     }
   },
   "verified": true,

@@ -1,29 +1,29 @@
 {
   "clis": {
-    "description": "Command-line AI assistants that bring the power of large language models directly to your terminal. Execute complex tasks with natural language, right from your shell."
+    "description": "Los asistentes de IA para la línea de comandos llevan la potencia de los grandes modelos de lenguaje directamente al terminal. Ejecuta tareas complejas con lenguaje natural desde el shell."
   },
   "desktops": {
-    "description": "Standalone desktop coding agents for coordinating parallel work, reviewing changes, and managing local development workflows."
+    "description": "Agentes de programación de escritorio independientes para coordinar trabajo en paralelo, revisar cambios y gestionar flujos de desarrollo locales."
   },
-  "exploreStack": "Explore the Stack",
+  "exploreStack": "Explorar el stack",
   "extensions": {
-    "description": "AI-powered coding extensions and plugins for your favorite IDE. From code completion to intelligent refactoring, enhance your development experience with AI assistance."
+    "description": "Extensiones y complementos de programación con IA para tu IDE favorita. Desde el autocompletado hasta la refactorización inteligente, mejora tu experiencia de desarrollo con asistencia de IA."
   },
   "ides": {
-    "description": "AI-powered integrated development environments that understand your codebase and provide intelligent assistance. From VS Code to Cursor, discover the editors that make coding collaborative with AI."
+    "description": "Entornos de desarrollo integrados con IA que comprenden tu base de código y ofrecen asistencia inteligente. De VS Code a Cursor, descubre editores que facilitan la colaboración con IA."
   },
   "meta": {
-    "description": "Complete overview of the AI coding ecosystem. Explore IDEs, CLIs, extensions, models, and providers all in one place.",
-    "title": "AI Coding Stack Overview"
+    "description": "Panorama completo del ecosistema de programación con IA. Explora IDE, CLI, extensiones, modelos y proveedores en un solo lugar.",
+    "title": "Panorama de AI Coding Stack"
   },
   "modelProviders": {
-    "description": "LLM API providers offering access to various AI models. From DeepSeek to OpenRouter, discover platforms that power your AI coding tools with unified APIs and model access."
+    "description": "Proveedores de API para LLM que ofrecen acceso a diversos modelos de IA. De DeepSeek a OpenRouter, descubre plataformas que impulsan tus herramientas de programación con API unificadas y acceso a modelos."
   },
   "models": {
-    "description": "The intelligence layer. Large language models optimized for code generation, understanding, and analysis. Compare specs, pricing, and capabilities across leading AI models."
+    "description": "La capa de inteligencia: grandes modelos de lenguaje optimizados para generar, comprender y analizar código. Compara especificaciones, precios y capacidades de los principales modelos de IA."
   },
-  "overviewTitle": "AI Coding Stack Overview",
+  "overviewTitle": "Panorama de AI Coding Stack",
   "vendors": {
-    "description": "Leading companies and organizations building AI technology. From OpenAI to Anthropic, discover the vendors behind the AI coding revolution."
+    "description": "Empresas y organizaciones líderes que desarrollan tecnología de IA. De OpenAI a Anthropic, descubre los proveedores detrás de la evolución de la programación con IA."
   }
 }

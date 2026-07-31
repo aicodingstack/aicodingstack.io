@@ -5,37 +5,37 @@
   "description": "Smaller and more cost-effective GPT-5.1-Codex variant for agentic coding workloads.",
   "translations": {
     "zh-Hans": {
-      "description": "GPT-5.1-Codex mini 是 OpenAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "面向智能体编码工作负载的更小、更经济的 GPT-5.1-Codex 变体。"
     },
     "de": {
-      "description": "GPT-5.1-Codex mini ist eine eigenständige Modellversion von OpenAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Kleinere und kostengünstigere GPT-5.1-Codex-Variante für agentische Coding-Aufgaben."
     },
     "es": {
-      "description": "GPT-5.1-Codex mini es una versión de modelo independiente de OpenAI con capacidades explícitas de programación o ingeniería de software."
+      "description": "Variante más pequeña y económica de GPT-5.1-Codex para cargas de programación agéntica."
     },
     "fr": {
-      "description": "GPT-5.1-Codex mini est une version de modèle distincte de OpenAI, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Variante plus petite et économique de GPT-5.1-Codex pour les tâches de codage agentique."
     },
     "id": {
-      "description": "GPT-5.1-Codex mini adalah versi model mandiri dari OpenAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Varian GPT-5.1-Codex yang lebih kecil dan hemat biaya untuk beban kerja coding agentik."
     },
     "ja": {
-      "description": "GPT-5.1-Codex mini は OpenAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "エージェント型コーディング向けの、より小さく低コストなGPT-5.1-Codex派生モデル。"
     },
     "ko": {
-      "description": "GPT-5.1-Codex mini은(는) OpenAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "에이전트 코딩 작업을 위한 더 작고 경제적인 GPT-5.1-Codex 변형입니다."
     },
     "pt": {
-      "description": "GPT-5.1-Codex mini é uma versão de modelo independente da OpenAI, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Variante menor e de menor custo do GPT-5.1-Codex para cargas de programação agêntica."
     },
     "ru": {
-      "description": "GPT-5.1-Codex mini — самостоятельная версия модели от OpenAI с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Уменьшенная и более экономичная версия GPT-5.1-Codex для агентного программирования."
     },
     "tr": {
-      "description": "GPT-5.1-Codex mini, OpenAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Aracı kodlama iş yükleri için daha küçük ve ekonomik GPT-5.1-Codex çeşidi."
     },
     "zh-Hant": {
-      "description": "GPT-5.1-Codex mini 是 OpenAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "面向代理程式設計工作負載的較小、更經濟的 GPT-5.1-Codex 變體。"
     }
   },
   "verified": true,

@@ -26,7 +26,7 @@
       "description": "Auggie CLIは、Augmentのコンテキストエンジンを使う自律型AIエージェントをターミナルに提供し、ネイティブTUI、自動ワークフロー、コードベース対応支援を備えています。"
     },
     "pt": {
-      "description": "Auggie CLI leva agentes de IA autónomos ao terminal com o motor de contexto da Augment, TUI nativa, fluxos automatizados e assistência ciente da base de código."
+      "description": "Auggie CLI leva agentes autônomos de IA ao terminal com o mecanismo de contexto da Augment, uma TUI nativa, fluxos automatizados e assistência ciente da base de código."
     },
     "ru": {
       "description": "Auggie CLI переносит автономных ИИ-агентов в терминал с контекстным движком Augment, нативным TUI, автоматизированными процессами и учетом кодовой базы."
@@ -35,7 +35,7 @@
       "description": "Auggie CLI, Augment'ın bağlam motoruyla otonom AI ajanlarını terminale getirir; yerel TUI, otomatik iş akışları ve kod tabanı farkındalığı sunar."
     },
     "zh-Hant": {
-      "description": "Auggie CLI 將自主 AI Agent 帶到終端，並使用 Augment 的上下文引擎，提供原生 TUI、自動化工作流程和程式碼庫感知輔助。"
+      "description": "Auggie CLI 將自主 AI Agent 帶到終端機，並使用 Augment 的情境引擎，提供原生 TUI、自動化工作流程和程式碼庫感知輔助。"
     }
   },
   "verified": true,

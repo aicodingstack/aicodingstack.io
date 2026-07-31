@@ -36,7 +36,7 @@
       "description": "OpenAI'nin Codex'i, IDE'niz için bir AI kodlama asistanı uzantısıdır. Doğal dil komutları aracılığıyla kodu okur, değiştirir ve çalıştırarak kod oluşturma, hata ayıklama ve otomasyon sağlar."
     },
     "zh-Hant": {
-      "description": "OpenAI 的 Codex 是一個整合到 IDE 中的 AI 編碼助手擴充功能。透過自然語言指令讀取、修改和執行程式碼，支援建構、除錯和自動化編碼任務。"
+      "description": "OpenAI 的 Codex 是一個整合到 IDE 中的 AI 程式設計助手擴充功能。透過自然語言指令讀取、修改和執行程式碼，支援建構、除錯和自動化程式設計任務。"
     }
   },
   "verified": true,

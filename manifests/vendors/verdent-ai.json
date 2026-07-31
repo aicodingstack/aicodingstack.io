@@ -35,7 +35,7 @@
       "description": "Verdent, paralel AI ajanlarıyla yazılım çalışmalarını planlayan, oluşturan, test eden ve yürüten ajan kodlama araçları geliştirir."
     },
     "zh-Hant": {
-      "description": "Verdent 開發 Agent 編碼工具，透過並行 AI Agent 規劃、建構、測試和執行軟體工作。"
+      "description": "Verdent 開發 Agent 程式設計工具，透過並行 AI Agent 規劃、建構、測試和執行軟體工作。"
     }
   },
   "verified": true,

@@ -20,22 +20,22 @@
       "description": "GitHub Copilot est un programmeur IA pour écrire du code plus rapidement. Tire le contexte des commentaires et du code pour suggérer lignes et fonctions."
     },
     "id": {
-      "description": "GitHub Copilot adalah AI pair programmer yang membantu menulis kode lebih cepat dan dengan usaha lebih sedikit..."
+      "description": "GitHub Copilot adalah rekan pemrograman AI yang membantu menulis kode lebih cepat. Copilot memakai konteks komentar dan kode untuk menyarankan baris kode atau fungsi lengkap."
     },
     "ja": {
       "description": "GitHub Copilotは、より少ない労力でより早くコードを記述できるようにするAIペアプログラマーです。コメントとコードからコンテキストを抽出し、個々の行と完全な関数を提案します。"
     },
     "pt": {
-      "description": "GitHub Copilot e um programador de pares de IA que ajuda a escrever codigo mais rapido e com menos esforco. Extrai contexto de comentarios e codigo para sugerir linhas individuais e funcoes completas."
+      "description": "GitHub Copilot é um parceiro de programação com IA que ajuda a escrever código mais rápido e com menos esforço. Usa comentários e código como contexto para sugerir linhas e funções completas."
     },
     "ru": {
-      "description": "GitHub Copilot — это парный программатор на базе ИИ, который помогает писать код быстрее и с меньшими усилиями..."
+      "description": "GitHub Copilot — ИИ-партнёр по программированию, который помогает писать код быстрее и с меньшими усилиями. Он учитывает комментарии и код, чтобы предлагать отдельные строки и целые функции."
     },
     "tr": {
       "description": "GitHub Copilot, daha az çabayla daha hızlı kod yazmanıza yardımcı olan bir AI pair programcıdır. Yorumlardan ve koddan bağlam çıkararak tek satırlar ve tam işlevleri önerir."
     },
     "zh-Hant": {
-      "description": "GitHub Copilot 是一個 AI 結對程式設計師，幫助您更快地編寫程式碼並減少工作量。它從註釋和程式碼中提取上下文，建議單行程式碼和整個函式。"
+      "description": "GitHub Copilot 是一個 AI 結對程式設計師，幫助您更快地撰寫程式碼並減少工作量。它從註釋和程式碼中提取情境，建議單行程式碼和整個函式。"
     }
   },
   "verified": true,

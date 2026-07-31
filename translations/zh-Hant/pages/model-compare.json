@@ -6,11 +6,10 @@
   "compareTitle": "比較 {model1} vs {model2}",
   "description": "描述",
   "inputPrice": "輸入價格",
-  "knowledgeCutoff": "知識",
+  "knowledgeCutoff": "知識更新截止日期",
   "lifecycle": "生命週期",
   "outputPrice": "輸出價格",
   "releaseDate": "發布日期",
   "selectModel": "選擇模型",
-  "selectTwoModels": "選擇兩個模型進行比較",
-  "verified": "已驗證"
+  "selectTwoModels": "選擇兩個模型進行比較"
 }

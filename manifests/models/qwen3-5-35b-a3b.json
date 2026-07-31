@@ -29,7 +29,7 @@
       "description": "Компактная открытая мультимодальная MoE-модель Alibaba с 35 млрд параметров и 3 млрд активных для быстрого программирования, агентов, рассуждений и визуальных задач."
     },
     "tr": {
-      "description": "Hızlı kodlama, aracılar, akıl yürütme ve görsel işler için Alibaba'nın 35B toplam ve 3B etkin parametreli kompakt açık ağırlıklı çok modlu MoE modeli."
+      "description": "Hızlı kodlama, ajanlar, akıl yürütme ve görsel işler için Alibaba'nın 35B toplam ve 3B etkin parametreli kompakt açık ağırlıklı çok modlu MoE modeli."
     },
     "zh-Hans": {
       "description": "Alibaba 面向快速编程、智能体、推理和视觉任务的紧凑型开放权重多模态 MoE 模型，总参数 35B、激活参数 3B。"

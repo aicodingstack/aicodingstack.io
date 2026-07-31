@@ -1,14 +1,14 @@
 ---
-title: "Premiers Pas"
+title: "Premiers pas"
 ---
 
-# Premiers Pas
+# Premiers pas
 
 AI Coding Stack est un répertoire complet et un référentiel de métadonnées pour l'écosystème de codage IA. Ce guide vous aidera à comprendre comment utiliser le site web et contribuer au projet.
 
 ## Explorer le Stack
 
-### Parcourir les Catégories
+### Parcourir les catégories
 
 Visitez [aicodingstack.io](https://aicodingstack.io) pour explorer différentes catégories d'outils de codage IA :
 
@@ -17,15 +17,15 @@ Visitez [aicodingstack.io](https://aicodingstack.io) pour explorer différentes 
 - **Modèles** - Comparez les grands modèles de langage pour le codage (Kimi K2, DeepSeek V3.1, GLM 4.5, Qwen3 Coder)
 - **Fournisseurs** - Examinez les fournisseurs d'API LLM (DeepSeek, Moonshot, SiliconFlow, OpenRouter)
 
-### Comparer les Outils
+### Comparer les outils
 
 Utilisez le site web pour comparer différents outils côte à côte, en examinant leurs fonctionnalités, capacités et liens vers la documentation officielle.
 
-## Contribuer aux Métadonnées
+## Contribuer aux métadonnées
 
 AI Coding Stack est maintenu par la communauté. Vous pouvez contribuer en ajoutant de nouveaux outils ou en mettant à jour les entrées existantes dans nos fichiers de manifeste.
 
-### Comprendre les Manifestes
+### Comprendre les manifestes
 
 Toutes les métadonnées d'outils sont stockées dans des fichiers JSON dans le répertoire `manifests/` :
 
@@ -34,7 +34,7 @@ Toutes les métadonnées d'outils sont stockées dans des fichiers JSON dans le 
 - `models.json` - Métadonnées de modèles LLM
 - `providers.json` - Métadonnées de fournisseurs d'API
 
-### Ajouter un Nouvel Outil
+### Ajouter un nouvel outil
 
 1. Clonez le dépôt
 2. Localisez le fichier de manifeste approprié dans `manifests/`
@@ -42,15 +42,15 @@ Toutes les métadonnées d'outils sont stockées dans des fichiers JSON dans le 
 4. Assurez-vous que toutes les URL sont accessibles
 5. Soumettez une demande d'extraction
 
-### Exemples de Schémas de Manifeste
+### Exemples de schémas de manifeste
 
 **Pour les IDEs/CLIs :**
 ```json
 {
-  "name": "Nom de l'Outil",
+  "name": "Tool Name",
   "id": "tool-id",
-  "vendor": "Nom du Fournisseur",
-  "description": "Description brève",
+  "vendor": "Vendor Name",
+  "description": "Brief description",
   "websiteUrl": "https://...",
   "docsUrl": "https://...",
   "latestVersion": "1.0.0"
@@ -60,8 +60,8 @@ Toutes les métadonnées d'outils sont stockées dans des fichiers JSON dans le 
 **Pour les Modèles :**
 ```json
 {
-  "name": "Nom du Modèle",
-  "vendor": "Fournisseur",
+  "name": "Model Name",
+  "vendor": "Vendor",
   "id": "model-id",
   "size": "70B",
   "contextWindow": 128000,
@@ -71,7 +71,7 @@ Toutes les métadonnées d'outils sont stockées dans des fichiers JSON dans le 
 }
 ```
 
-## Étapes Suivantes
+## Étapes suivantes
 
 - Parcourez le [AI Coding Stack](/ai-coding-stack) pour découvrir des outils
 - Consultez le répertoire `manifests/` pour voir comment les métadonnées sont structurées

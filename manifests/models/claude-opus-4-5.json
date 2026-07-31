@@ -17,7 +17,7 @@
       "description": "Claude Opus 4.5, modelo insignia de Anthropic: razonamiento avanzado, 200K de contexto, multimodal (texto, imagen, PDF)."
     },
     "fr": {
-      "description": "Claude Opus 4.5, modele phare d'Anthropic : raisonnement avance, contexte 200K, multimodal (texte, image, PDF)."
+      "description": "Claude Opus 4.5, modèle phare d'Anthropic : raisonnement avancé, contexte 200K, multimodal (texte, image, PDF)."
     },
     "id": {
       "description": "Model unggulan Anthropic Claude Opus 4.5: penalaran kuat, konteks 200K, multimodal (teks, gambar, PDF)."
@@ -26,13 +26,13 @@
       "description": "Anthropicの旗艦Claude Opus 4.5：強力な推論、200Kコンテキスト、マルチモーダル（テキスト・画像・PDF）。"
     },
     "pt": {
-      "description": "Claude Opus 4.5, modelo flagship da Anthropic: raciocinio forte, contexto 200K, multimodal (texto, imagem, PDF)."
+      "description": "Claude Opus 4.5, modelo flagship da Anthropic: raciocínio forte, contexto 200K, multimodal (texto, imagem, PDF)."
     },
     "ru": {
       "description": "Флагман Anthropic Claude Opus 4.5: сильное рассуждение, контекст 200K, мультимодальный ввод (текст, изображение, PDF)."
     },
     "tr": {
-      "description": "Anthropic'in amiral gemisi Claude Opus 4.5: guclu muhakeme, 200K baglam, cok modlu (metin, resim, PDF)."
+      "description": "Anthropic'in amiral gemisi Claude Opus 4.5: guclu muhakeme, 200K bağlam, çok modlu (metin, resim, PDF)."
     },
     "zh-Hant": {
       "description": "Anthropic 旗艦 Claude Opus 4.5：更強推理、200K 上下文、多模態（文字/圖像/PDF）。"

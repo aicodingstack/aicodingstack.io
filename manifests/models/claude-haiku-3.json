@@ -23,7 +23,7 @@
       "description": "가벼운 코딩, 대량 처리, 시각 분석 및 반응형 애플리케이션을 위한 Anthropic의 빠르고 저렴한 Claude 3 모델입니다."
     },
     "pt": {
-      "description": "O modelo Claude 3 rápido e econômico da Anthropic para código leve, processamento em volume, análise visual e aplicações responsivas."
+      "description": "O modelo Claude 3 rápido e econômico da Anthropic para programação leve, processamento em volume, análise visual e aplicativos responsivos."
     },
     "ru": {
       "description": "Быстрая и экономичная модель Claude 3 от Anthropic для лёгкого программирования, массовой обработки, визуального анализа и интерактивных приложений."
@@ -35,7 +35,7 @@
       "description": "Anthropic 面向轻量编码、高吞吐处理、视觉分析和响应式应用的快速低成本 Claude 3 模型。"
     },
     "zh-Hant": {
-      "description": "Anthropic 面向輕量編碼、高吞吐處理、視覺分析和回應式應用的快速低成本 Claude 3 模型。"
+      "description": "Anthropic 面向輕量程式設計、高吞吐處理、視覺分析和回應式應用的快速低成本 Claude 3 模型。"
     }
   },
   "verified": true,

@@ -6,11 +6,10 @@
   "compareTitle": "Bandingkan {model1} vs {model2}",
   "description": "Deskripsi",
   "inputPrice": "Harga Input",
-  "knowledgeCutoff": "Pengetahuan",
+  "knowledgeCutoff": "Batas pengetahuan",
   "lifecycle": "Siklus Hidup",
   "outputPrice": "Harga Output",
   "releaseDate": "Tanggal Rilis",
   "selectModel": "Pilih model",
-  "selectTwoModels": "Pilih dua model untuk dibandingkan",
-  "verified": "Terverifikasi"
+  "selectTwoModels": "Pilih dua model untuk dibandingkan"
 }

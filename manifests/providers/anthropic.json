@@ -26,7 +26,7 @@
       "description": "信頼性が高く解釈可能なAIシステムを構築するAI安全研究会社。コーディング、分析、コンテンツ生成など様々な用途向けのClaudeを含みます。"
     },
     "pt": {
-      "description": "Uma empresa de segurança e pesquisa de IA, construindo sistemas de IA confiáveis e interpretáveis, incluindo Claude para várias aplicações em codificação, análise e geração de conteúdo."
+      "description": "Empresa de segurança e pesquisa em IA que cria sistemas confiáveis e interpretáveis, incluindo o Claude, para vários aplicativos de programação, análise e geração de conteúdo."
     },
     "ru": {
       "description": "Компания по безопасности и исследованиям ИИ, создающая надежные и интерпретируемые системы ИИ, включая Claude для различных приложений в области программирования, анализа и создания контента."
@@ -35,7 +35,7 @@
       "description": "Kodlama, analiz ve içerik oluşturma gibi çeşitli uygulamalar için Claude dahil olmak üzere güvenilir ve yorumlanabilir AI sistemleri geliştiren bir AI güvenliği ve araştırma şirketi."
     },
     "zh-Hant": {
-      "description": "一家 AI 安全和研究公司，構建可靠且可解釋的 AI 系統，包括 Claude，用於編碼、分析和內容生成等各種應用。"
+      "description": "一家 AI 安全和研究公司，建置可靠且可解釋的 AI 系統，包括 Claude，用於程式設計、分析和內容產生等各種應用。"
     }
   },
   "verified": true,

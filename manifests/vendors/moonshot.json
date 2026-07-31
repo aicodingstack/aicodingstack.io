@@ -38,10 +38,10 @@
       "description": "대형 언어 모델 및 지능형 애플리케이션에 특화된 AI 기업으로, Kimi AI 어시스턴트로 유명합니다."
     },
     "es": {
-      "description": "Una compania de IA especializada en modelos de lenguaje grandes y aplicaciones inteligentes, conocida por el asistente IA Kimi."
+      "description": "Empresa de IA especializada en grandes modelos de lenguaje y aplicaciones inteligentes, conocida por el asistente de IA Kimi."
     },
     "fr": {
-      "description": "Societe IA specialisee dans les modeles de langue grands et les applications intelligentes, connue pour l'assistant IA Kimi."
+      "description": "Entreprise d’IA spécialisée dans les grands modèles de langage et les applications intelligentes, connue pour l’assistant IA Kimi."
     },
     "id": {
       "description": "Perusahaan AI yang mengkhususkan diri pada model bahasa besar dan aplikasi cerdas, dikenal dengan asisten AI Kimi."
@@ -50,7 +50,7 @@
       "description": "大規模言語モデルとインテリジェントアプリケーションに特化したAI企業で、Kimi AIアシスタントで有名です。"
     },
     "pt": {
-      "description": "Uma empresa de IA especializada em modelos de linguagem grandes e aplicacoes inteligentes, conhecida pelo assistente IA Kimi."
+      "description": "Empresa de IA especializada em grandes modelos de linguagem e aplicativos inteligentes, conhecida pelo assistente de IA Kimi."
     },
     "ru": {
       "description": "Компания ИИ, специализирующаяся на больших языковых моделях и интеллектуальных приложениях, известная ассистентом ИИ Kimi."
@@ -59,7 +59,7 @@
       "description": "Büyük dil modelleri ve akıllı uygulamalarda uzmanlaşmış bir AI şirketi, Kimi AI asistanıyla bilinir."
     },
     "zh-Hant": {
-      "description": "專注於大型語言模型和智能應用的 AI 公司，以 Kimi AI 助手而聞名。"
+      "description": "專注於大型語言模型和智慧應用的 AI 公司，以 Kimi AI 助手而聞名。"
     }
   },
   "verified": true,

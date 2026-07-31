@@ -29,13 +29,13 @@
       "description": "Обновлённый снимок Claude 3.5 Sonnet от Anthropic с улучшенным агентным программированием, инструментами, управлением компьютером и разработкой."
     },
     "tr": {
-      "description": "Anthropic'in daha güçlü aracı kodlama, araç kullanımı, bilgisayar yönetimi ve yazılım mühendisliği sunan geliştirilmiş Claude 3.5 Sonnet sürümü."
+      "description": "Anthropic'in daha güçlü ajan tabanlı kodlama, araç kullanımı, bilgisayar yönetimi ve yazılım mühendisliği sunan geliştirilmiş Claude 3.5 Sonnet sürümü."
     },
     "zh-Hans": {
       "description": "Anthropic 升级版 Claude 3.5 Sonnet 快照，强化了智能体编码、工具调用、计算机操作和软件工程能力。"
     },
     "zh-Hant": {
-      "description": "Anthropic 升級版 Claude 3.5 Sonnet 快照，強化了智慧體編碼、工具呼叫、電腦操作和軟體工程能力。"
+      "description": "Anthropic 升級版 Claude 3.5 Sonnet 快照，強化了智慧體程式設計、工具呼叫、電腦操作和軟體工程能力。"
     }
   },
   "verified": true,

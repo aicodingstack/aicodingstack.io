@@ -29,13 +29,13 @@
       "description": "Модель Anthropic Sonnet нового поколения, сочетающая скорость и интеллект для планирования, работы с инструментами, программирования и автономных агентных задач."
     },
     "tr": {
-      "description": "Anthropic’in planlama, araç kullanımı, kodlama ve otonom aracı çalışmaları için hız ile zekâyı birleştiren yeni nesil Sonnet modeli."
+      "description": "Anthropic’in planlama, araç kullanımı, kodlama ve otonom ajan çalışmaları için hız ile zekâyı birleştiren yeni nesil Sonnet modeli."
     },
     "zh-Hans": {
       "description": "Anthropic 新一代 Sonnet 模型，在速度与智能之间取得平衡，适用于规划、工具调用、编码和自主智能体工作。"
     },
     "zh-Hant": {
-      "description": "Anthropic 新一代 Sonnet 模型，在速度與智慧之間取得平衡，適用於規劃、工具呼叫、編碼和自主智慧體工作。"
+      "description": "Anthropic 新一代 Sonnet 模型，在速度與智慧之間取得平衡，適用於規劃、工具呼叫、程式設計和自主智慧體工作。"
     }
   },
   "verified": true,

@@ -6,11 +6,10 @@
   "compareTitle": "Comparer {model1} vs {model2}",
   "description": "Description",
   "inputPrice": "Prix d'entrée",
-  "knowledgeCutoff": "Date de connaissance",
+  "knowledgeCutoff": "Date limite des connaissances",
   "lifecycle": "Cycle de vie",
   "outputPrice": "Prix de sortie",
   "releaseDate": "Date de sortie",
   "selectModel": "Sélectionner un modèle",
-  "selectTwoModels": "Sélectionnez deux modèles à comparer",
-  "verified": "Vérifié"
+  "selectTwoModels": "Sélectionnez deux modèles à comparer"
 }

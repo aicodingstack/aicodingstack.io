@@ -5,37 +5,37 @@
   "description": "GPT-5.2 variant optimized for long-horizon agentic coding, code review, and software engineering workflows.",
   "translations": {
     "zh-Hans": {
-      "description": "GPT-5.2-Codex 是 OpenAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "针对长周期智能体编码、代码审查和软件工程工作流优化的 GPT-5.2 变体。"
     },
     "de": {
-      "description": "GPT-5.2-Codex ist eine eigenständige Modellversion von OpenAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "GPT-5.2-Variante für langfristige agentische Coding-Aufgaben, Code-Reviews und Softwareentwicklungsabläufe."
     },
     "es": {
-      "description": "GPT-5.2-Codex es una versión de modelo independiente de OpenAI con capacidades explícitas de programación o ingeniería de software."
+      "description": "Variante de GPT-5.2 optimizada para programación agéntica prolongada, revisión de código y flujos de ingeniería de software."
     },
     "fr": {
-      "description": "GPT-5.2-Codex est une version de modèle distincte de OpenAI, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Variante de GPT-5.2 optimisée pour le codage agentique de longue durée, la revue de code et l’ingénierie logicielle."
     },
     "id": {
-      "description": "GPT-5.2-Codex adalah versi model mandiri dari OpenAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Varian GPT-5.2 untuk coding agentik jangka panjang, tinjauan kode, dan alur rekayasa perangkat lunak."
     },
     "ja": {
-      "description": "GPT-5.2-Codex は OpenAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "長時間のエージェント型コーディング、コードレビュー、ソフトウェア開発ワークフロー向けに最適化されたGPT-5.2派生モデル。"
     },
     "ko": {
-      "description": "GPT-5.2-Codex은(는) OpenAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "장기 에이전트 코딩, 코드 리뷰와 소프트웨어 엔지니어링 워크플로에 최적화된 GPT-5.2 변형입니다."
     },
     "pt": {
-      "description": "GPT-5.2-Codex é uma versão de modelo independente da OpenAI, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Variante do GPT-5.2 otimizada para programação agêntica de longa duração, revisão de código e engenharia de software."
     },
     "ru": {
-      "description": "GPT-5.2-Codex — самостоятельная версия модели от OpenAI с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Версия GPT-5.2 для длительного агентного программирования, ревью кода и процессов разработки ПО."
     },
     "tr": {
-      "description": "GPT-5.2-Codex, OpenAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Uzun süreli ajan tabanlı kodlama, kod inceleme ve yazılım mühendisliği iş akışları için optimize edilmiş GPT-5.2 çeşidi."
     },
     "zh-Hant": {
-      "description": "GPT-5.2-Codex 是 OpenAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "針對長週期代理程式設計、程式碼審查和軟體工程工作流程最佳化的 GPT-5.2 變體。"
     }
   },
   "verified": true,

@@ -14,10 +14,10 @@
       "description": "CodeBuddy CLI는 스마트 코드 생성, 디버깅 및 개발 워크플로우를 터미널에 통합하는 AI 기반 코드 편집기입니다. TUI 모드와 인라인 채팅을 제공합니다."
     },
     "es": {
-      "description": "CodeBuddy CLI es un editor de codigo impulsado por IA que integra generacion inteligente de codigo, depuracion y flujos de trabajo de desarrollo en tu terminal. Ofrece modo TUI y chat en linea."
+      "description": "CodeBuddy CLI es un editor con IA que integra generación inteligente de código, depuración y flujos de desarrollo en el terminal. Ofrece modo TUI y chat en línea."
     },
     "fr": {
-      "description": "CodeBuddy CLI est editeur de code IA qui integre generation intelligente de code, debogage et workflows developpement dans votre terminal. Propose mode TUI."
+      "description": "CodeBuddy CLI est un éditeur IA qui intègre génération intelligente de code, débogage et flux de développement dans le terminal. Il propose un mode TUI et une discussion intégrée."
     },
     "id": {
       "description": "CodeBuddy CLI adalah editor kode bertenaga AI yang mengintegrasikan pembuatan kode cerdas, debugging, dan alur kerja pengembangan ke terminal Anda. Menawarkan mode TUI dan obrolan sebaris."
@@ -26,16 +26,16 @@
       "description": "CodeBuddy CLIは、インテリジェントなコード生成、デバッグ、開発ワークフローをターミナルに統合するAI駆動のコードエディタです。TUIモードとインラインチャット機能を備えています。"
     },
     "pt": {
-      "description": "CodeBuddy CLI e um editor de codigo alimentado por IA que integra geracao inteligente de codigo, depuracao e fluxos de trabalho de desenvolvimento no seu terminal. Oferece modo TUI e chat em linha."
+      "description": "CodeBuddy CLI é um editor com IA que integra geração inteligente de código, depuração e fluxos de desenvolvimento no terminal. Oferece modo TUI e chat em linha."
     },
     "ru": {
       "description": "CodeBuddy CLI - это редактор кода на базе ИИ, который интегрирует интеллектуальную генерацию кода, отладку и рабочие процессы разработки в ваш терминал. Предлагает режим TUI и встроенный чат."
     },
     "tr": {
-      "description": "CodeBuddy CLI, akili kod olusturma, hata ayiklama ve gelistirme is akislarini terminalinize entegre eden AI destekli bir kod duzenleyicidir. TUI modu ve satir ici sohbet sunar."
+      "description": "CodeBuddy CLI, akıllı kod üretimi, hata ayıklama ve geliştirme iş akışlarını terminale getiren yapay zekâ destekli bir düzenleyicidir. TUI modu ve satır içi sohbet sunar."
     },
     "zh-Hant": {
-      "description": "CodeBuddy CLI 是 AI 驅動的程式碼編輯器，將智慧程式碼生成、除錯和開發工作流程整合到您的終端。具有 TUI 模式和內聯聊天功能。"
+      "description": "CodeBuddy CLI 是 AI 驅動的程式碼編輯器，將智慧程式碼產生、除錯和開發工作流程整合到您的終端機。具有 TUI 模式和行內聊天功能。"
     }
   },
   "verified": true,

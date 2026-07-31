@@ -1,14 +1,14 @@
 ---
-title: "Primeros Pasos"
+title: "Primeros pasos"
 ---
 
-# Primeros Pasos
+# Primeros pasos
 
 AI Coding Stack es un directorio integral y repositorio de metadatos para el ecosistema de programación con IA. Esta guía te ayudará a entender cómo usar el sitio web y contribuir al proyecto.
 
-## Explorando el Stack
+## Explorar el stack
 
-### Explorar Categorías
+### Explorar categorías
 
 Visita [aicodingstack.io](https://aicodingstack.io) para explorar diferentes categorías de herramientas de programación con IA:
 
@@ -17,15 +17,15 @@ Visita [aicodingstack.io](https://aicodingstack.io) para explorar diferentes cat
 - **Modelos** - Compara modelos de lenguaje grande para programación (Kimi K2, DeepSeek V3.1, GLM 4.5, Qwen3 Coder)
 - **Proveedores** - Revisa proveedores de API de LLM (DeepSeek, Moonshot, SiliconFlow, OpenRouter)
 
-### Comparar Herramientas
+### Comparar herramientas
 
 Usa el sitio web para comparar diferentes herramientas lado a lado, revisando sus características, capacidades y enlaces a documentación oficial.
 
-## Contribuir a los Metadatos
+## Contribuir a los metadatos
 
 AI Coding Stack es mantenido por la comunidad. Puedes contribuir agregando nuevas herramientas o actualizando entradas existentes en nuestros archivos de manifiesto.
 
-### Comprender los Manifiestos
+### Comprender los manifiestos
 
 Todos los metadatos de herramientas se almacenan en archivos JSON en el directorio `manifests/`:
 
@@ -34,7 +34,7 @@ Todos los metadatos de herramientas se almacenan en archivos JSON en el director
 - `models.json` - Metadatos de modelos LLM
 - `providers.json` - Metadatos de proveedores de API
 
-### Agregar una Nueva Herramienta
+### Agregar una nueva herramienta
 
 1. Clona el repositorio
 2. Ubica el archivo de manifiesto apropiado en `manifests/`
@@ -42,15 +42,15 @@ Todos los metadatos de herramientas se almacenan en archivos JSON en el director
 4. Asegúrate de que todas las URLs sean accesibles
 5. Envía una solicitud de extracción
 
-### Ejemplos de Esquemas de Manifiesto
+### Ejemplos de esquemas de manifiesto
 
 **Para IDEs/CLIs:**
 ```json
 {
-  "name": "Nombre de Herramienta",
+  "name": "Tool Name",
   "id": "tool-id",
-  "vendor": "Nombre de Proveedor",
-  "description": "Descripción breve",
+  "vendor": "Vendor Name",
+  "description": "Brief description",
   "websiteUrl": "https://...",
   "docsUrl": "https://...",
   "latestVersion": "1.0.0"
@@ -60,8 +60,8 @@ Todos los metadatos de herramientas se almacenan en archivos JSON en el director
 **Para Modelos:**
 ```json
 {
-  "name": "Nombre de Modelo",
-  "vendor": "Proveedor",
+  "name": "Model Name",
+  "vendor": "Vendor",
   "id": "model-id",
   "size": "70B",
   "contextWindow": 128000,
@@ -71,7 +71,7 @@ Todos los metadatos de herramientas se almacenan en archivos JSON en el director
 }
 ```
 
-## Siguientes Pasos
+## Siguientes pasos
 
 - Navega por el [AI Coding Stack](/ai-coding-stack) para descubrir herramientas
 - Revisa el directorio `manifests/` para ver cómo están estructurados los metadatos

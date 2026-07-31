@@ -35,7 +35,7 @@
       "description": "Otonom olarak kod oluşturan, düzenleyen, test eden ve dağıtan \"Cascade\" asistanına sahip native bir AI IDE. MCP sunucularını ve plugin hook'larını entegre ederek geliştirici akış durumunu korur."
     },
     "zh-Hant": {
-      "description": "AI 原生 IDE，具有智能助手 Cascade，可自主生成、編輯、測試和部署代碼。集成 MCP 服務器和插件鉤子，讓開發者保持心流狀態。"
+      "description": "AI 原生 IDE，內建智慧助理 Cascade，可自主產生、編輯、測試及部署程式碼；並整合 MCP 伺服器與外掛程式 hook，協助開發者維持心流。"
     }
   },
   "verified": true,

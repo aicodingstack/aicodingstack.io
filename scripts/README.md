@@ -24,7 +24,7 @@ Repository automation is written in TypeScript and executed with `tsx`. Prefer t
 | Refresh data-health snapshot | `pnpm data-health:report` | Writes `data/data-health.json` and `docs/DATA-HEALTH.md` |
 | Validate i18n structure | `pnpm validate:i18n` | Checks locale alignment and translation shape |
 | Validate i18n usage | `pnpm validate:i18n-usage` | Checks translation keys referenced by source |
-| Validate duplicate i18n values | `pnpm validate:i18n-duplicates` | Reports duplicated translation content |
+| Validate duplicate i18n values | `pnpm validate:i18n-duplicates` | Fails on new cross-namespace duplicate English values |
 | Check representative URLs | `pnpm validate:urls:quick` | Runs the default network URL check |
 | Check every URL | `pnpm validate:urls:all` | Checks all locales and slugs |
 

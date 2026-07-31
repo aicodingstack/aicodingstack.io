@@ -29,13 +29,13 @@
       "description": "Снятая с эксплуатации модель агента программирования Cursor для длительной разработки, теперь перенаправляемая на Composer 2.5."
     },
     "tr": {
-      "description": "Cursor'ın uzun süreli yazılım mühendisliği için kullanımdan kaldırılmış ve artık Composer 2.5'e yönlendirilen kodlama aracısı modeli."
+      "description": "Cursor'ın uzun süreli yazılım mühendisliği için kullanımdan kaldırılmış ve artık Composer 2.5'e yönlendirilen kodlama ajanı modeli."
     },
     "zh-Hans": {
       "description": "Cursor 面向长周期软件工程的已退役编码智能体模型，目前请求会转发到 Composer 2.5。"
     },
     "zh-Hant": {
-      "description": "Cursor 面向長週期軟體工程的已退役編碼智慧體模型，目前請求會轉發到 Composer 2.5。"
+      "description": "Cursor 面向長週期軟體工程的已退役程式設計智慧體模型，目前請求會轉發到 Composer 2.5。"
     }
   },
   "verified": true,

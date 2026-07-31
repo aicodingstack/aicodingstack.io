@@ -14,10 +14,10 @@
       "description": "Claude Opus 4는 복잡한 코드 생성 작업을 위해 설계된 Anthropic의 200K 컨텍스트 윈도 언어 모델입니다."
     },
     "es": {
-      "description": "Claude Opus 4 es un modelo de lenguaje con ventana de contexto de 200K de Anthropic, disenado para tareas complejas de generacion de codigo."
+      "description": "Claude Opus 4 es un modelo de lenguaje con ventana de contexto de 200K de Anthropic, diseñado para tareas complejas de generación de código."
     },
     "fr": {
-      "description": "Claude Opus 4 est un modele de langue avec fenetre de contexte de 200K d'Anthropic, concu pour les taches complexes de generation de code."
+      "description": "Claude Opus 4 est un modèle de langue avec fenêtre de contexte de 200K d'Anthropic, conçu pour les tâches complexes de génération de code."
     },
     "id": {
       "description": "Claude Opus 4 adalah model bahasa dengan jendela konteks 200K dari Anthropic, dirancang untuk tugas kompleks pembuatan kode."
@@ -26,16 +26,16 @@
       "description": "Claude Opus 4200Kコンテキストウィンドウの言語モデルで、複雑なコード生成タスクのために設計されました。"
     },
     "pt": {
-      "description": "Claude Opus 4 e um modelo de linguagem com janela de contexto de 200K da Anthropic, projetado para tarefas complexas de geracao de codigo."
+      "description": "Claude Opus 4 é um modelo de linguagem da Anthropic com janela de contexto de 200 mil tokens, projetado para tarefas complexas de geração de código."
     },
     "ru": {
       "description": "Claude Opus 4 - языковая модель с окном контекста 200K от Anthropic, разработанная для сложных задач генерации кода."
     },
     "tr": {
-      "description": "Claude Opus 4, Anthropic'ten gelen 200K baglam penceresine sahip dil modeli karmasik kod olusturma gorevleri icin tasarlanmistir."
+      "description": "Claude Opus 4, Anthropic'ten gelen 200K bağlam penceresine sahip dil modeli karmaşık kod oluşturma görevleri için tasarlanmıştır."
     },
     "zh-Hant": {
-      "description": "Claude Opus 4 是 Anthropic 推出的 200K 上下文視窗語言模型，專為複雜的代碼生成任務設計。"
+      "description": "Claude Opus 4 是 Anthropic 推出的 200K 上下文視窗語言模型，專為複雜的程式碼生成任務設計。"
     }
   },
   "verified": true,

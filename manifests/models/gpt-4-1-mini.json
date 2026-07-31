@@ -5,37 +5,37 @@
   "description": "Smaller GPT-4.1 model for efficient instruction following, long-context code work, and tool-driven applications.",
   "translations": {
     "zh-Hans": {
-      "description": "GPT-4.1 mini 是 OpenAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "更小的 GPT-4.1 模型，适合高效遵循指令、长上下文代码工作和工具驱动的应用。"
     },
     "de": {
-      "description": "GPT-4.1 mini ist eine eigenständige Modellversion von OpenAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Kleineres GPT-4.1-Modell für effiziente Anweisungsbefolgung, Langkontext-Codearbeit und werkzeuggestützte Anwendungen."
     },
     "es": {
-      "description": "GPT-4.1 mini es una versión de modelo independiente de OpenAI con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo GPT-4.1 más pequeño para seguir instrucciones, trabajar con código de contexto largo y crear aplicaciones con herramientas."
     },
     "fr": {
-      "description": "GPT-4.1 mini est une version de modèle distincte de OpenAI, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle GPT-4.1 plus petit pour suivre efficacement les instructions, traiter du code en contexte long et utiliser des outils."
     },
     "id": {
-      "description": "GPT-4.1 mini adalah versi model mandiri dari OpenAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model GPT-4.1 yang lebih kecil untuk mengikuti instruksi, mengerjakan kode berkonteks panjang, dan aplikasi berbasis alat."
     },
     "ja": {
-      "description": "GPT-4.1 mini は OpenAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "効率的な指示追従、長文脈のコード作業、ツール駆動アプリ向けの小型GPT-4.1モデル。"
     },
     "ko": {
-      "description": "GPT-4.1 mini은(는) OpenAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "효율적인 지시 수행, 긴 컨텍스트 코드 작업과 도구 기반 앱을 위한 소형 GPT-4.1 모델입니다."
     },
     "pt": {
-      "description": "GPT-4.1 mini é uma versão de modelo independente da OpenAI, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo GPT-4.1 menor para seguir instruções com eficiência, trabalhar com código de contexto longo e usar ferramentas."
     },
     "ru": {
-      "description": "GPT-4.1 mini — самостоятельная версия модели от OpenAI с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Уменьшенная модель GPT-4.1 для точного следования инструкциям, работы с кодом в длинном контексте и приложений с инструментами."
     },
     "tr": {
-      "description": "GPT-4.1 mini, OpenAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Verimli talimat izleme, uzun bağlamlı kod çalışmaları ve araç destekli uygulamalar için daha küçük GPT-4.1 modeli."
     },
     "zh-Hant": {
-      "description": "GPT-4.1 mini 是 OpenAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "較小的 GPT-4.1 模型，適合高效遵循指令、長上下文程式碼工作和工具驅動的應用程式。"
     }
   },
   "verified": true,

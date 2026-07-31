@@ -35,7 +35,7 @@
       "description": "Düzenleme, hata ayıklama ve sürüm kontrolü için kapsamlı dil desteği ve uzantı ekosistemi (GitHub Copilot gibi AI ajanları dahil) olan ücretsiz açık kaynaklı kod düzenleyici."
     },
     "zh-Hant": {
-      "description": "免費開源的代碼編輯器，具有廣泛的語言支持和擴展生態系統（包括 GitHub Copilot 等 AI Agent），用於編輯、調試和版本控制。"
+      "description": "免費且開放原始碼的程式碼編輯器，具備廣泛的語言支援與擴充功能生態系（包含 GitHub Copilot 等 AI Agent），可用於編輯、除錯與版本控制。"
     }
   },
   "verified": false,

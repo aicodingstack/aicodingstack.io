@@ -29,13 +29,13 @@
       "description": "Разреженная модель Alibaba с открытыми весами, 80 млрд общих и 3 млрд активных параметров, для эффективных агентов с длинным контекстом."
     },
     "tr": {
-      "description": "Alibaba'nın verimli uzun bağlamlı kodlama aracıları için 80B toplam ve 3B etkin parametreli seyrek açık ağırlıklı kodlama modeli."
+      "description": "Alibaba'nın verimli uzun bağlamlı kodlama ajanları için 80B toplam ve 3B etkin parametreli seyrek açık ağırlıklı kodlama modeli."
     },
     "zh-Hans": {
       "description": "阿里巴巴总参数 80B、激活参数 3B，面向高效长上下文编码智能体的稀疏开放权重模型。"
     },
     "zh-Hant": {
-      "description": "阿里巴巴總參數 80B、啟用參數 3B，面向高效長上下文編碼智慧體的稀疏開放權重模型。"
+      "description": "阿里巴巴總參數 80B、啟用參數 3B，面向高效長上下文程式設計智慧體的稀疏開放權重模型。"
     }
   },
   "verified": true,

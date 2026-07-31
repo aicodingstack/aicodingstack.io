@@ -1,27 +1,27 @@
 {
-  "description": "Discover and explore open source AI coding tools ranked by GitHub stars. Compare IDEs, CLIs, and extensions to find the perfect tools for your development workflow.",
+  "description": "GitHubスター数でランク付けされたオープンソースのAIコーディングツールを見つけて探索できます。IDE、CLI、拡張機能を比較し、開発ワークフローに最適なツールを探しましょう。",
   "filter": {
-    "all": "All"
+    "all": "すべて"
   },
   "meta": {
-    "description": "Ranking of all open source projects in AI Coding Stack, sorted by GitHub stars. View statistics and trends of open source vs proprietary tools.",
-    "title": "Open Source Projects Ranking"
+    "description": "AI Coding Stackに掲載されているすべてのオープンソースプロジェクトをGitHubスター数順に表示します。オープンソースとプロプライエタリツールの統計や傾向も確認できます。",
+    "title": "オープンソースプロジェクトランキング"
   },
-  "noResults": "No open source projects found for this category.",
-  "note": "Note: This page only shows projects with GitHub repositories. Some projects, while not open source, maintain GitHub repositories as user feedback channels.",
+  "noResults": "このカテゴリに該当するオープンソースプロジェクトはありません。",
+  "note": "注：このページにはGitHubリポジトリを持つプロジェクトのみ表示されます。オープンソースではない一部のプロジェクトも、ユーザーからのフィードバック窓口としてGitHubリポジトリを運用しています。",
   "statistics": {
     "closedSourceCount": "プロプライエタリプロジェクト",
-    "closedSourcePercentage": "Proprietary Percentage",
-    "licenseBreakdown": "License Distribution",
+    "closedSourcePercentage": "プロプライエタリの割合",
+    "licenseBreakdown": "ライセンス分布",
     "openSourceCount": "オープンソースプロジェクト",
-    "projects": "projects",
-    "title": "Open Source vs Proprietary Distribution",
-    "totalProjects": "Total Projects"
+    "projects": "プロジェクト",
+    "title": "オープンソースとプロプライエタリの分布",
+    "totalProjects": "プロジェクト総数"
   },
   "table": {
     "openSourceTitle": "オープンソースプロジェクト ({count})",
     "proprietaryTitle": "プロプライエタリプロジェクト ({count})",
-    "rank": "Rank"
+    "rank": "順位"
   },
-  "title": "Open Source Projects Ranking"
+  "title": "オープンソースプロジェクトランキング"
 }

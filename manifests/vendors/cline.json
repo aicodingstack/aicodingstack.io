@@ -36,7 +36,7 @@
       "description": "Cline; model seçimi, MCP entegrasyonu ve izin tabanlı kontrol sunan, editörler ve terminaller için açık kaynaklı bir kodlama ajanıdır."
     },
     "zh-Hant": {
-      "description": "Cline 是一款面向編輯器和終端的開源編碼 Agent，支援模型選擇、MCP 整合和基於權限的控制。"
+      "description": "Cline 是一款面向編輯器和終端機的開放原始碼程式設計 Agent，支援模型選擇、MCP 整合和基於權限的控制。"
     }
   },
   "verified": true,

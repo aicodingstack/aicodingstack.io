@@ -14,10 +14,10 @@
       "description": "Amazon Q Developer CLI는 CLI에서 작업을 실행하고 코드베이스를 이해하며 적응형 자연 대화를 통해 개발 속도를 높이는 지능형 AI 어시스턴트입니다."
     },
     "es": {
-      "description": "Amazon Q Developer CLI es un asistente de IA agente en su CLI que ejecuta tareas, comprende su base de codigo y acelera el desarrollo a traves de dialogo natural adaptativo."
+      "description": "Amazon Q Developer CLI es un asistente agéntico de IA que ejecuta tareas, comprende la base de código y acelera el desarrollo mediante un diálogo natural adaptativo."
     },
     "fr": {
-      "description": "Amazon Q Developer CLI est un assistant d'IA agent dans votre CLI qui execute des taches, comprend votre base de code et accelere le developpement grace a un dialogue naturel adaptatif."
+      "description": "Amazon Q Developer CLI est un assistant IA agentique qui exécute des tâches, comprend votre base de code et accélère le développement grâce à un dialogue naturel adaptatif."
     },
     "id": {
       "description": "Amazon Q Developer CLI adalah asisten AI agentic di CLI Anda yang mengeksekusi tugas, memahami basis kode Anda, dan mempercepat pengembangan melalui dialog alami adaptif."
@@ -26,16 +26,16 @@
       "description": "Amazon Q Developer CLIは、タスクを実行し、コードベースを理解し、適応的な自然な対話を通じて開発を加速させるCLI内のエージェンシーAIアシスタントです。"
     },
     "pt": {
-      "description": "Amazon Q Developer CLI é um assistente de IA agente na sua CLI que executa tarefas, compreende a sua base de códigos e acelera o desenvolvimento através de diálogo natural adaptativo."
+      "description": "Amazon Q Developer CLI é um assistente agêntico de IA que executa tarefas, entende a base de código e acelera o desenvolvimento por meio de diálogo natural adaptativo."
     },
     "ru": {
       "description": "Amazon Q Developer CLI - это агентачный ИИ-помощник в вашей CLI, который выполняет задачи, понимает вашу кодовую базу и ускоряет разработку с помощью адаптивного естественного диалога."
     },
     "tr": {
-      "description": "Amazon Q Developer CLI, gorevleri yerine getiren, kod tabaninizi anlayan ve uyumlu dogal diyalog ile gelistirme hizlandiran bir CLI icerisindeki ajentik yapay zeka yardimcisidir."
+      "description": "Amazon Q Developer CLI, görevleri yürüten, kod tabanınızı anlayan ve uyarlanabilir doğal diyalogla geliştirmeyi hızlandıran aracılı bir yapay zekâ yardımcısıdır."
     },
     "zh-Hant": {
-      "description": "Amazon Q Developer CLI 是您命令列中的智能 AI 助手，執行任務、理解您的程式碼庫，並透過自適應自然對話加速開發。"
+      "description": "Amazon Q Developer CLI 是您命令列中的智慧 AI 助手，執行任務、理解您的程式碼庫，並透過調適式自然對話加速開發。"
     }
   },
   "verified": true,

@@ -5,37 +5,37 @@
   "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows.",
   "translations": {
     "de": {
-      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+      "description": "stagewise entwickelt einen quelloffenen Desktop-Coding-Agenten mit Schwerpunkt auf parallelen Agentensitzungen, isolierten Worktrees und lokalen Entwicklungsabläufen."
     },
     "es": {
-      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+      "description": "stagewise desarrolla un agente de programación de escritorio de código abierto centrado en sesiones de agentes en paralelo, worktrees aislados y flujos de desarrollo locales."
     },
     "fr": {
-      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+      "description": "stagewise développe un agent de codage de bureau open source axé sur les sessions d’agents parallèles, les worktrees isolés et les flux de développement locaux."
     },
     "id": {
-      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+      "description": "stagewise mengembangkan agen coding desktop sumber terbuka yang berfokus pada sesi agen paralel, worktree terisolasi, dan alur kerja pengembangan lokal."
     },
     "ja": {
-      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+      "description": "stagewise は、エージェントの並列セッション、分離された worktree、ローカル開発ワークフローに重点を置くオープンソースのデスクトップコーディングエージェントを開発しています。"
     },
     "ko": {
-      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+      "description": "stagewise는 에이전트 병렬 세션, 격리된 worktree, 로컬 개발 워크플로에 중점을 둔 오픈 소스 데스크톱 코딩 에이전트를 개발합니다."
     },
     "pt": {
-      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+      "description": "A stagewise desenvolve um agente de programação para desktop de código aberto, voltado a sessões paralelas de agentes, worktrees isolados e fluxos de desenvolvimento locais."
     },
     "ru": {
-      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+      "description": "stagewise разрабатывает настольный агент программирования с открытым исходным кодом, ориентированный на параллельные сеансы агентов, изолированные worktree и локальные процессы разработки."
     },
     "tr": {
-      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+      "description": "stagewise, paralel aracı oturumlarına, yalıtılmış worktree ve yerel geliştirme iş akışlarına odaklanan açık kaynaklı bir masaüstü kodlama aracısı geliştirir."
     },
     "zh-Hans": {
-      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+      "description": "stagewise 开发了一款开源桌面编码代理，专注于并行代理会话、隔离的 worktree 和本地开发工作流。"
     },
     "zh-Hant": {
-      "description": "stagewise develops an open source desktop coding agent focused on parallel agent sessions, isolated worktrees, and local development workflows."
+      "description": "stagewise 開發了一款開放原始碼桌面程式設計代理，專注於平行代理工作階段、隔離的 worktree 和本機開發工作流程。"
     }
   },
   "verified": true,

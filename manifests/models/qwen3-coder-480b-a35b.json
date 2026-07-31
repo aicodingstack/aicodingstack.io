@@ -14,10 +14,10 @@
       "description": "Qwen3 Coder 480B-A35B는 총 480B, 활성 35B 파라미터와 네이티브 262,144 토큰 컨텍스트 윈도를 갖춘 에이전트 코딩 모델입니다."
     },
     "es": {
-      "description": "Qwen3 Coder 480B-A35B es un modelo de codigo con 480B parametros totales y 35B activos, ademas de una ventana de contexto nativa de 262.144 tokens para programacion agentica."
+      "description": "Qwen3 Coder 480B-A35B es un modelo de código con 480B parámetros totales y 35B activos, además de una ventana de contexto nativa de 262.144 tokens para programación agéntica."
     },
     "fr": {
-      "description": "Qwen3 Coder 480B-A35B est un modele de code avec 480B parametres au total, 35B actifs et une fenetre de contexte native de 262 144 jetons pour le codage agentique."
+      "description": "Qwen3 Coder 480B-A35B est un modèle de code avec 480B paramètres au total, 35B actifs et une fenêtre de contexte native de 262 144 jetons pour le codage agentique."
     },
     "id": {
       "description": "Qwen3 Coder 480B-A35B adalah model kode dengan total 480B dan 35B parameter aktif serta jendela konteks native 262.144 token untuk coding agentik."
@@ -26,16 +26,16 @@
       "description": "Qwen3 Coder 480B-A35Bは、総480B・有効35Bパラメータとネイティブ262,144トークンのコンテキストを備えたエージェントコーディングモデルです。"
     },
     "pt": {
-      "description": "Qwen3 Coder 480B-A35B e um modelo de codigo com 480B parametros totais e 35B ativos, alem de uma janela de contexto nativa de 262.144 tokens para programacao agentica."
+      "description": "Qwen3 Coder 480B-A35B é um modelo de código com 480 bilhões de parâmetros totais, 35 bilhões ativos e contexto nativo de 262.144 tokens para programação agêntica."
     },
     "ru": {
       "description": "Qwen3 Coder 480B-A35B — модель для кода с 480B параметров всего, 35B активных и нативным контекстным окном 262 144 токена для агентного программирования."
     },
     "tr": {
-      "description": "Qwen3 Coder 480B-A35B, toplam 480B ve etkin 35B parametre ile ajan tabanli kodlama icin yerel 262.144 token baglam penceresine sahip bir kod modelidir."
+      "description": "Qwen3 Coder 480B-A35B, toplam 480B ve etkin 35B parametre ile ajan tabanlı kodlama için yerel 262.144 token bağlam penceresine sahip bir kod modelidir."
     },
     "zh-Hant": {
-      "description": "Qwen3 Coder 480B-A35B 是一款程式碼模型，擁有 480B 總參數和 35B 啟用參數，並具備原生 262,144 token 上下文視窗，面向智能體編程。"
+      "description": "Qwen3 Coder 480B-A35B 是一款程式碼模型，擁有 480B 總參數和 35B 啟用參數，並具備原生 262,144 token 上下文視窗，面向智慧體程式設計。"
     }
   },
   "verified": true,

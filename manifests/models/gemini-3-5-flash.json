@@ -29,13 +29,13 @@
       "description": "Стабильная передовая модель Google для быстрых агентных и программных процессов, оптимизированная для субагентов, многоэтапного выполнения и длительных масштабных задач."
     },
     "tr": {
-      "description": "Google’ın hızlı aracı ve kodlama iş akışları için alt aracılara, çok adımlı yürütmeye ve geniş ölçekte uzun vadeli görevlere optimize edilmiş kararlı öncü modeli."
+      "description": "Google’ın hızlı ajan ve kodlama iş akışlarında alt ajanlar, çok adımlı yürütme ve geniş ölçekte uzun vadeli görevler için optimize edilmiş kararlı öncü modeli."
     },
     "zh-Hans": {
       "description": "Google 面向快速智能体与编码工作流的稳定前沿模型，针对子智能体、多步骤执行和大规模长周期任务进行了优化。"
     },
     "zh-Hant": {
-      "description": "Google 面向快速智慧體與編碼工作流的穩定前沿模型，針對子智慧體、多步驟執行和大規模長週期任務進行了最佳化。"
+      "description": "Google 面向快速智慧體與程式設計工作流的穩定前沿模型，針對子智慧體、多步驟執行和大規模長週期任務進行了最佳化。"
     }
   },
   "verified": true,

@@ -14,28 +14,28 @@
       "description": "고급 추론, 코딩, 수학 및 과학 작업을 위해 설계된 Google의 가장 진보된 AI 모델입니다. \\\"생각\\\" 능력을 사용하여 향상된 정확도와 정교한 컨텍스트 처리를 통해 추론합니다."
     },
     "es": {
-      "description": "Modelo IA mas avanzado de Google para razonamiento avanzado, codificacion, matematicas y ciencia. Utiliza capacidades de \\\"pensamiento\\\" para precision mejorada y manejo del contexto sutil."
+      "description": "Modelo IA más avanzado de Google para razonamiento avanzado, codificación, matemáticas y ciencia. Utiliza capacidades de \\\"pensamiento\\\" para precisión mejorada y manejo del contexto sutil."
     },
     "fr": {
-      "description": "Modele IA le plus avance de Google pour raisonnement avance, codage, mathematiques et sciences. Utilise des capacites de \\\"pensee\\\" pour precision amelioree et gestion du contexte subtile."
+      "description": "Modèle d’IA phare de Google pour le raisonnement avancé, le codage, les mathématiques et les sciences, avec réflexion intégrée pour plus de précision contextuelle."
     },
     "id": {
-      "description": "Model AI paling canggih dari Google untuk penalaran tingkat lanjut, coding, matematika, dan sains..."
+      "description": "Model AI unggulan Google untuk penalaran tingkat lanjut, coding, matematika, dan sains; kemampuan berpikir meningkatkan akurasi dan pemahaman konteks bernuansa."
     },
     "ja": {
       "description": "高度な推論、コーディング、数学、科学のためのGoogleの最先端AIモデル。\\\"思考\\\"能力を用いて、精度を向上させ、繊細なコンテキスト処理を実現します。"
     },
     "pt": {
-      "description": "Modelo IA mais avancado do Google para raciocinio avancado, codificacao, matematica e ciencia. Utiliza capacidades de \\\"pensamento\\\" para precisao melhorada e tratamento de contexto sutil."
+      "description": "Modelo de IA principal do Google para raciocínio avançado, programação, matemática e ciência, com pensamento integrado para maior precisão contextual."
     },
     "ru": {
       "description": "Самая передовая модель AI от Google для сложных рассуждений, программирования, математики и науки. Использует возможности \\\"мышления\\\" для улучшенной точности и тонкой обработки контекста."
     },
     "tr": {
-      "description": "Gelismis muhakeme, kodlama, matematik ve bilim icin Google'in en gelismis AI modeli. Gelistirilmis dogruluk ve hassas baglam isleme icin \\\"dusunme\\\" yetenekleri kullanir."
+      "description": "Google’ın ileri düzey akıl yürütme, kodlama, matematik ve bilim için amiral AI modeli; doğruluğu ve incelikli bağlam işlemeyi geliştiren düşünme yetenekleri kullanır."
     },
     "zh-Hant": {
-      "description": "Google 最先進的 AI 模型，專為高級推理、編碼、數學和科學任務設計。採用\\\"思考\\\"能力，能夠通過增強的準確性和細緻的上下文處理進行推理。"
+      "description": "Google 最先進的 AI 模型，專為進階推理、程式設計、數學和科學任務設計。採用\\\"思考\\\"能力，能夠透過增強的準確性和細緻的上下文處理進行推理。"
     }
   },
   "verified": true,

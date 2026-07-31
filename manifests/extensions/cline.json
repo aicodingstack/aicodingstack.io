@@ -26,7 +26,7 @@
       "description": "Clineは複雑な作業のためのオープンソースの協調型コーディングエージェントです。完全な透明性、モデルの自由度、エンタープライズセキュリティのためのクライアントサイドアーキテクチャを備えた計画実行ワークフローを提供します。"
     },
     "pt": {
-      "description": "Cline e um agente de codificacao colaborativo open-source. Fornece fluxo planejar-agir com transparencia, liberdade de modelo e arquitetura client-side."
+      "description": "Cline é um agente colaborativo de programação de código aberto. Oferece fluxo de planejar e agir com transparência, liberdade de escolha de modelo e arquitetura no cliente."
     },
     "ru": {
       "description": "Cline — это агент совместного программирования open-source. Предоставляет поток «сначала планируй, затем действуй» с прозрачностью и клиентской архитектурой."
@@ -35,7 +35,7 @@
       "description": "Cline, karmaşık işler için açık kaynaklı işbirlikçi kodlama aracıdır. Tam şeffaflık, model özgürlüğü ve kurumsal güvenlik için istemci tarafı mimarisi ile planla-ve-uygula iş akışı sağlar."
     },
     "zh-Hant": {
-      "description": "Cline 是一個開源的協作式編碼 Agent，用於複雜工作。它提供計畫執行工作流程，具有完全透明性、模型自由度和企業級安全的客戶端架構。"
+      "description": "Cline 是一個開放原始碼的協作式程式設計 Agent，用於複雜工作。它提供計畫執行工作流程，具有完全透明性、模型自由度和企業級安全的客戶端架構。"
     }
   },
   "verified": true,

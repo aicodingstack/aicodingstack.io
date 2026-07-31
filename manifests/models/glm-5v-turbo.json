@@ -29,13 +29,13 @@
       "description": "Закрытая мультимодальная модель Z.ai для визуального программирования, GUI-агентов, долгосрочного планирования и сложных действий."
     },
     "tr": {
-      "description": "Görsel kodlama, GUI aracıları, uzun vadeli planlama ve karmaşık eylem yürütme için Z.ai'ın tescilli çok modlu kodlama modeli."
+      "description": "Görsel kodlama, GUI ajanları, uzun vadeli planlama ve karmaşık eylem yürütme için Z.ai'ın tescilli çok modlu kodlama modeli."
     },
     "zh-Hans": {
       "description": "Z.ai 面向视觉编码、GUI 智能体、长周期规划和复杂动作执行的闭源多模态编码模型。"
     },
     "zh-Hant": {
-      "description": "Z.ai 面向視覺編碼、GUI 智慧體、長週期規劃和複雜動作執行的閉源多模態編碼模型。"
+      "description": "Z.ai 面向視覺程式設計、GUI 智慧體、長週期規劃和複雜動作執行的閉源多模態程式設計模型。"
     }
   },
   "verified": true,

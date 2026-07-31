@@ -29,13 +29,13 @@
       "description": "Новейшая эффективная передовая модель Google для программирования и агентных процессов: улучшенный код, меньше шагов рассуждения, мультимодальный ввод и контекст на 1 млн токенов."
     },
     "tr": {
-      "description": "Google’ın kodlama ve aracı iş akışları için en yeni verimli öncü modeli; daha iyi kod kalitesi, daha az akıl yürütme adımı, çok modlu giriş ve 1 milyon token bağlam sunar."
+      "description": "Google’ın kodlama ve ajan iş akışları için en yeni verimli öncü modeli; daha iyi kod kalitesi, daha az akıl yürütme adımı, çok modlu giriş ve 1 milyon token bağlam sunar."
     },
     "zh-Hans": {
       "description": "Google 面向编码与智能体工作流的最新高效前沿模型，具备更高的代码质量、更少的推理步骤、多模态输入和 100 万 token 上下文。"
     },
     "zh-Hant": {
-      "description": "Google 面向編碼與智慧體工作流程的最新高效前沿模型，具備更高的程式碼品質、更少的推理步驟、多模態輸入和 100 萬 token 上下文。"
+      "description": "Google 面向程式設計與智慧體工作流程的最新高效前沿模型，具備更高的程式碼品質、更少的推理步驟、多模態輸入和 100 萬 token 上下文。"
     }
   },
   "verified": true,

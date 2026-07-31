@@ -5,37 +5,37 @@
   "description": "Fast reasoning model for coding, mathematics, and visual problem solving with efficient tool use.",
   "translations": {
     "zh-Hans": {
-      "description": "o4-mini 是 OpenAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "面向编码、数学和视觉问题求解的快速推理模型，可高效使用工具。"
     },
     "de": {
-      "description": "o4-mini ist eine eigenständige Modellversion von OpenAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Schnelles Reasoning-Modell für Coding, Mathematik und visuelle Problemlösung mit effizienter Werkzeugnutzung."
     },
     "es": {
-      "description": "o4-mini es una versión de modelo independiente de OpenAI con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo rápido de razonamiento para programación, matemáticas y resolución visual de problemas con herramientas eficientes."
     },
     "fr": {
-      "description": "o4-mini est une version de modèle distincte de OpenAI, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle de raisonnement rapide pour le codage, les mathématiques et la résolution visuelle de problèmes avec des outils efficaces."
     },
     "id": {
-      "description": "o4-mini adalah versi model mandiri dari OpenAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model penalaran cepat untuk coding, matematika, dan pemecahan masalah visual dengan penggunaan alat yang efisien."
     },
     "ja": {
-      "description": "o4-mini は OpenAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "効率的なツール利用により、コーディング、数学、視覚的問題解決に対応する高速推論モデル。"
     },
     "ko": {
-      "description": "o4-mini은(는) OpenAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "효율적인 도구 사용으로 코딩, 수학과 시각 문제 해결을 지원하는 빠른 추론 모델입니다."
     },
     "pt": {
-      "description": "o4-mini é uma versão de modelo independente da OpenAI, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo rápido de raciocínio para programação, matemática e solução visual de problemas com ferramentas eficientes."
     },
     "ru": {
-      "description": "o4-mini — самостоятельная версия модели от OpenAI с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Быстрая модель рассуждений для программирования, математики и визуального решения задач с эффективным применением инструментов."
     },
     "tr": {
-      "description": "o4-mini, OpenAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Verimli araç kullanımıyla kodlama, matematik ve görsel problem çözme için hızlı akıl yürütme modeli."
     },
     "zh-Hant": {
-      "description": "o4-mini 是 OpenAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "面向程式設計、數學和視覺問題求解的快速推理模型，可高效使用工具。"
     }
   },
   "verified": true,

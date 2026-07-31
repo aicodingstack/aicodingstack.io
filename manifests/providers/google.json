@@ -26,7 +26,7 @@
       "description": "コーディング、推論、コンテンツ生成用のGeminiを含め、各式アプリケーションで高度な言語モデルとAIサービスを提供するGoogleのAI部門。"
     },
     "pt": {
-      "description": "A divisão de IA do Google, oferecendo modelos de linguagem avançados e serviços de IA, incluindo Gemini para codificação, raciocínio e geração de conteúdo em várias aplicações."
+      "description": "A divisão de IA do Google oferece modelos de linguagem e serviços avançados, incluindo o Gemini, para vários aplicativos de programação, raciocínio e geração de conteúdo."
     },
     "ru": {
       "description": "Департамент ИИ Google, предлагающий передовые языковые модели и ИИ-сервисы, включая Gemini для программирования, рассуждений и создания контента в различных приложениях."
@@ -35,7 +35,7 @@
       "description": "Çeşitli uygulamalarda kodlama, akıl yürütme ve içerik oluşturma için Gemini dahil olmak üzere gelişmiş dil modelleri ve AI hizmetleri sunan Google'ın AI bölümü."
     },
     "zh-Hant": {
-      "description": "Google 的 AI 部門，提供先進的語言模型和 AI 服務，包括 Gemini，用於各類應用中的編碼、推理和內容生成。"
+      "description": "Google 的 AI 部門，提供先進的語言模型和 AI 服務，包括 Gemini，用於各類應用中的程式設計、推理和內容產生。"
     }
   },
   "verified": true,

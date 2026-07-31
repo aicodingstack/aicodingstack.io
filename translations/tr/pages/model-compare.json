@@ -6,11 +6,10 @@
   "compareTitle": "{model1} vs {model2} Karşılaştır",
   "description": "Açıklama",
   "inputPrice": "Girdi Fiyatı",
-  "knowledgeCutoff": "Bilgi",
+  "knowledgeCutoff": "Bilgi kesim tarihi",
   "lifecycle": "Yaşam Döngüsü",
   "outputPrice": "Çıktı Fiyatı",
   "releaseDate": "Yayın Tarihi",
   "selectModel": "Model seçin",
-  "selectTwoModels": "Karşılaştırmak için iki model seçin",
-  "verified": "Doğrulanmış"
+  "selectTwoModels": "Karşılaştırmak için iki model seçin"
 }

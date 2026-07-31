@@ -36,7 +36,7 @@
       "description": "Continue, CLI, VS Code ve JetBrains için açık kaynaklı bir kodlama ajanıydı. Cursor, Continue’u satın aldı ve proje artık aktif olarak sürdürülmüyor."
     },
     "zh-Hant": {
-      "description": "Continue 曾是一款面向 CLI、VS Code 和 JetBrains 的開源編碼 Agent。Continue 已被 Cursor 收購，該專案不再積極維護。"
+      "description": "Continue 曾是一款面向 CLI、VS Code 和 JetBrains 的開放原始碼程式設計 Agent。Continue 已被 Cursor 收購，該專案不再積極維護。"
     }
   },
   "verified": true,

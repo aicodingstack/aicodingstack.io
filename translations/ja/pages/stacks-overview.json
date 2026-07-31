@@ -1,29 +1,29 @@
 {
   "clis": {
-    "description": "Command-line AI assistants that bring the power of large language models directly to your terminal. Execute complex tasks with natural language, right from your shell."
+    "description": "大規模言語モデルの力をターミナルに直接もたらす、コマンドライン向けAIアシスタントです。自然言語を使ってシェルから複雑な作業を実行できます。"
   },
   "desktops": {
-    "description": "Standalone desktop coding agents for coordinating parallel work, reviewing changes, and managing local development workflows."
+    "description": "並行作業の調整、変更のレビュー、ローカル開発ワークフローの管理に対応する、独立型デスクトップコーディングエージェントです。"
   },
-  "exploreStack": "Explore the Stack",
+  "exploreStack": "スタックを見る",
   "extensions": {
-    "description": "AI-powered coding extensions and plugins for your favorite IDE. From code completion to intelligent refactoring, enhance your development experience with AI assistance."
+    "description": "好みのIDEで使えるAI搭載のコーディング拡張機能とプラグインです。コード補完からインテリジェントなリファクタリングまで、AI支援で開発体験を高めます。"
   },
   "ides": {
-    "description": "AI-powered integrated development environments that understand your codebase and provide intelligent assistance. From VS Code to Cursor, discover the editors that make coding collaborative with AI."
+    "description": "コードベースを理解し、インテリジェントな支援を提供するAI搭載の統合開発環境です。VS CodeからCursorまで、AIと協働できるエディターを探せます。"
   },
   "meta": {
-    "description": "Complete overview of the AI coding ecosystem. Explore IDEs, CLIs, extensions, models, and providers all in one place.",
-    "title": "AI Coding Stack Overview"
+    "description": "AIコーディングエコシステムの全体像です。IDE、CLI、拡張機能、モデル、プロバイダーを一か所で確認できます。",
+    "title": "AI Coding Stack の概要"
   },
   "modelProviders": {
-    "description": "LLM API providers offering access to various AI models. From DeepSeek to OpenRouter, discover platforms that power your AI coding tools with unified APIs and model access."
+    "description": "さまざまなAIモデルへのアクセスを提供するLLM APIプロバイダーです。DeepSeekからOpenRouterまで、統一APIとモデルアクセスでAIコーディングツールを支えるプラットフォームを探せます。"
   },
   "models": {
-    "description": "The intelligence layer. Large language models optimized for code generation, understanding, and analysis. Compare specs, pricing, and capabilities across leading AI models."
+    "description": "知能レイヤーです。コード生成、理解、分析に最適化された大規模言語モデルについて、主要モデルの仕様、料金、機能を比較できます。"
   },
-  "overviewTitle": "AI Coding Stack Overview",
+  "overviewTitle": "AI Coding Stack の概要",
   "vendors": {
-    "description": "Leading companies and organizations building AI technology. From OpenAI to Anthropic, discover the vendors behind the AI coding revolution."
+    "description": "AI技術を構築する主要企業と組織です。OpenAIからAnthropicまで、AIコーディングの進化を支えるベンダーを探せます。"
   }
 }

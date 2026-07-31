@@ -5,37 +5,37 @@
   "description": "DeepSeek's open-weight 671B MoE reasoning model for mathematics, coding, and complex problem solving.",
   "translations": {
     "zh-Hans": {
-      "description": "DeepSeek R1 是 1.3B 参数的语言模型，具备 128K 上下文窗口，专为高级推理和代码生成任务设计。"
+      "description": "DeepSeek 开放权重 671B MoE 推理模型，面向数学、编码和复杂问题求解。"
     },
     "de": {
-      "description": "DeepSeek R1 ist ein 1.3B-Parameter-Sprachmodell mit 128K-Kontextfenster, optimiert für fortgeschrittenes Reasoning und Code-Generierung."
+      "description": "DeepSeeks Open-Weight-671B-MoE-Modell für Schlussfolgern in Mathematik, Coding und komplexen Problemlösungen."
     },
     "ko": {
-      "description": "DeepSeek R1은 128K 컨텍스트 윈도를 갖춘 1.3B 파라미터 언어 모델로, 고급 추론 및 코드 생성 작업을 위해 설계되었습니다."
+      "description": "수학, 코딩과 복잡한 문제 해결을 위한 DeepSeek의 671B 오픈 웨이트 MoE 추론 모델입니다."
     },
     "es": {
-      "description": "DeepSeek R1 es un modelo de lenguaje con 1.3B de parametros y ventana de contexto de 128K, disenado para tareas avanzadas de razonamiento y generacion de codigo."
+      "description": "Modelo MoE de pesos abiertos de DeepSeek con 671B parámetros para matemáticas, programación y resolución de problemas complejos."
     },
     "fr": {
-      "description": "DeepSeek R1 est un modele de langage avec 1.3B de parametres et une fenetre de contexte de 128K, concu pour des taches avancees de raisonnement et de generation de code."
+      "description": "Modèle MoE à poids ouverts de 671 Md de DeepSeek pour les mathématiques, le codage et la résolution de problèmes complexes."
     },
     "id": {
-      "description": "DeepSeek R1 adalah model bahasa dengan 1.3B parameter dan jendela konteks 128K, dirancang untuk tugas penalaran dan pembuatan kode tingkat lanjut."
+      "description": "Model MoE open-weight 671B dari DeepSeek untuk penalaran matematika, coding, dan pemecahan masalah kompleks."
     },
     "ja": {
-      "description": "DeepSeek R1128Kコンテキストウィンドウを持つ13Bパラメータの言語モデルで、高度な推論とコード生成タスクのために設計されています。"
+      "description": "数学、コーディング、複雑な問題解決向けのDeepSeek製671BオープンウェイトMoE推論モデル。"
     },
     "pt": {
-      "description": "DeepSeek R1 e um modelo de linguagem com 1.3B de parametros e janela de contexto de 128K, projetado para tarefas avancadas de raciocinio e geracao de codigo."
+      "description": "Modelo MoE de pesos abertos da DeepSeek com 671B parâmetros para matemática, programação e problemas complexos."
     },
     "ru": {
-      "description": "DeepSeek R1 - языковая модель с 1.3B параметров и окном контекста 128K, разработанная для сложных задач рассуждения и генерации кода."
+      "description": "MoE-модель DeepSeek с открытыми весами и 671 млрд параметров для математики, программирования и сложных задач."
     },
     "tr": {
-      "description": "DeepSeek R1, 128K baglam penceresine sahip 1.3B parametreli dil modeli, gelismis muhakeme ve kod olusturma gorevleri icin tasarlanmisitir."
+      "description": "Matematik, kodlama ve karmaşık problem çözme için DeepSeek’in açık ağırlıklı 671B MoE akıl yürütme modeli."
     },
     "zh-Hant": {
-      "description": "DeepSeek R1 是 1.3B 參數的語言模型，具備 128K 上下文視窗，專為高級推理和代碼生成任務設計。"
+      "description": "DeepSeek 開放權重 671B MoE 推理模型，面向數學、程式設計和複雜問題求解。"
     }
   },
   "verified": true,

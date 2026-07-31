@@ -6,37 +6,37 @@
   "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension.",
   "translations": {
     "de": {
-      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
+      "description": "Kimi Code CLI ist der Terminal-Coding-Agent von Moonshot AI für Repository-Erkundung, Dateibearbeitung, Befehlsausführung, MCP-Werkzeuge und gemeinsame Arbeitsabläufe mit seiner VS-Code-Erweiterung."
     },
     "es": {
-      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
+      "description": "Kimi Code CLI es el agente de terminal de Moonshot AI para explorar repositorios, editar archivos, ejecutar comandos, usar herramientas MCP y compartir flujos con su extensión de VS Code."
     },
     "fr": {
-      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
+      "description": "Kimi Code CLI est l’agent de terminal de Moonshot AI pour explorer les dépôts, modifier les fichiers, exécuter des commandes, utiliser des outils MCP et partager des flux avec son extension VS Code."
     },
     "id": {
-      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
+      "description": "Kimi Code CLI adalah agen terminal Moonshot AI untuk menjelajahi repositori, mengedit berkas, menjalankan perintah, menggunakan alat MCP, dan berbagi alur kerja dengan ekstensi VS Code."
     },
     "ja": {
-      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
+      "description": "Kimi Code CLI は、リポジトリ探索、ファイル編集、コマンド実行、MCP ツール、VS Code 拡張機能との共有ワークフローに対応する Moonshot AI のターミナル向けコーディングエージェントです。"
     },
     "ko": {
-      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
+      "description": "Kimi Code CLI는 저장소 탐색, 파일 편집, 명령 실행, MCP 도구 사용, VS Code 확장과의 공유 워크플로를 위한 Moonshot AI의 터미널 코딩 에이전트입니다."
     },
     "pt": {
-      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
+      "description": "O Kimi Code CLI é o agente de terminal da Moonshot AI para explorar repositórios, editar arquivos, executar comandos, usar ferramentas MCP e compartilhar fluxos com sua extensão do VS Code."
     },
     "ru": {
-      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
+      "description": "Kimi Code CLI — терминальный агент Moonshot AI для изучения репозиториев, редактирования файлов, выполнения команд, работы с инструментами MCP и общих процессов с расширением VS Code."
     },
     "tr": {
-      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
+      "description": "Kimi Code CLI, depo keşfi, dosya düzenleme, komut yürütme, MCP araçları ve VS Code uzantısıyla paylaşılan iş akışları için Moonshot AI'ın terminal kodlama aracısıdır."
     },
     "zh-Hans": {
-      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
+      "description": "Kimi Code CLI 是 Moonshot AI 的终端编码代理，支持代码仓库探索、文件编辑、命令执行、MCP 工具，以及与其 VS Code 扩展共享工作流。"
     },
     "zh-Hant": {
-      "description": "Kimi Code CLI is Moonshot AI's terminal coding agent for repository exploration, file editing, command execution, MCP tools, and shared workflows with its VS Code extension."
+      "description": "Kimi Code CLI 是 Moonshot AI 的終端機程式設計代理，支援程式碼儲存庫探索、檔案編輯、命令執行、MCP 工具，以及與其 VS Code 擴充功能共享工作流程。"
     }
   },
   "verified": false,

@@ -24,7 +24,7 @@
       "description": "Oh My Pi는 omp를 개발하는 오픈 소스 프로젝트입니다. omp는 LSP, 디버거, 하위 에이전트, 다중 모델 제공업체 및 네이티브 크로스 플랫폼 도구를 갖춘 터미널 코딩 에이전트입니다."
     },
     "pt": {
-      "description": "Oh My Pi é o projeto open source por trás do omp, um agente de terminal com LSP, depurador, subagentes, vários provedores de modelos e ferramentas nativas multiplataforma."
+      "description": "Oh My Pi é o projeto de código aberto por trás do omp, um agente de terminal com LSP, depurador, subagentes, vários provedores de modelos e ferramentas nativas multiplataforma."
     },
     "ru": {
       "description": "Oh My Pi — открытый проект, развивающий omp: терминальный агент с LSP, отладчиком, субагентами, поддержкой нескольких поставщиков моделей и нативными кроссплатформенными инструментами."
@@ -36,7 +36,7 @@
       "description": "Oh My Pi 是 omp 背后的开源项目；omp 是一款终端编码 Agent，支持 LSP、调试器、子 Agent、多模型提供商和原生跨平台工具。"
     },
     "zh-Hant": {
-      "description": "Oh My Pi 是 omp 背後的開源專案；omp 是一款終端編碼 Agent，支援 LSP、除錯器、子 Agent、多模型供應商和原生跨平台工具。"
+      "description": "Oh My Pi 是 omp 背後的開放原始碼專案；omp 是一款終端機程式設計 Agent，支援 LSP、除錯器、子 Agent、多模型供應商和原生跨平台工具。"
     }
   },
   "verified": true,

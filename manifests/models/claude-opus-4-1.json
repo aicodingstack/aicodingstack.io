@@ -14,10 +14,10 @@
       "description": "2025년 8월에 출시된 Claude Opus 4.1은 Anthropic의 최신 플래그십 모델로, HumanEval+에서 85.2%(GPT-4o의 84.9% 초과), SWE-bench Verified에서 74.5%를 달성하며 복잡한 코드 생성 작업을 위한 200K 컨텍스트 윈도를 갖추고 있습니다."
     },
     "es": {
-      "description": "Lanzado en agosto de 2025, Claude Opus 4..."
+      "description": "Claude Opus 4.1, lanzado en agosto de 2025, obtiene 85,2 % en HumanEval+ y 74,5 % en SWE-bench Verified, con contexto de 200K para programación compleja."
     },
     "fr": {
-      "description": "Lance en aout 2025, Claude Opus 4.1 atteint 85.2% sur HumanEval+ (surpassant GPT-4o) et 74.5% sur SWE-bench Verified, avec fenetre de contexte de 200K pour les taches complexes de generation de code."
+      "description": "Lancé en août 2025, Claude Opus 4.1 atteint 85,2 % sur HumanEval+ et 74,5 % sur SWE-bench Verified, avec un contexte de 200K pour les tâches de codage complexes."
     },
     "id": {
       "description": "Dirilis pada Agustus 2025, Claude Opus 4.1 mencapai 85.2% pada HumanEval+ (melampaui GPT-4o) dan 74.5% pada SWE-bench Verified, dengan jendela konteks 200K untuk tugas kompleks pembuatan kode."
@@ -26,16 +26,16 @@
       "description": "2025年8月にリリースされたClaude Opus 4.1は、HumanEval+で85.2%（GPT-4oの84.9%を上回る）、SWE-bench Verifiedで74.5%を達成し、複雑なコード生成タスクのための200Kコンテキストウィンドウを備えています。"
     },
     "pt": {
-      "description": "Lancado em agosto de 2025, Claude Opus 4.1 atinge 85.2% no HumanEval+ (superando GPT-4o) e 74.5% no SWE-bench Verified, com janela de contexto de 200K para tarefas complexas de geracao de codigo."
+      "description": "Lançado em agosto de 2025, Claude Opus 4.1 atinge 85.2% no HumanEval+ (superando GPT-4o) e 74.5% no SWE-bench Verified, com janela de contexto de 200K para tarefas complexas de geração de código."
     },
     "ru": {
       "description": "Выпущенный в августе 2025 года, Claude Opus 4.1 достигает 85.2% на HumanEval+ (превосходя GPT-4o) и 74.5% на SWE-bench Verified, с окном контекста 200K для сложных задач генерации кода."
     },
     "tr": {
-      "description": "Agustos 2025'te piyasaya surulen Claude Opus 4..."
+      "description": "Ağustos 2025’te çıkan Claude Opus 4.1, HumanEval+ testinde %85,2 ve SWE-bench Verified’da %74,5 başarı ile karmaşık kodlama için 200K bağlam sunar."
     },
     "zh-Hant": {
-      "description": "2025年8月發布的 Claude Opus 4.1，是 Anthropic 最新的旗艦模型，具備卓越的編碼能力，在 HumanEval+ 上達到 85.2%（首次超越 GPT-4o 的 84.9%），在 SWE-bench Verified 上達到 74.5%，擁有 200K 上下文視窗，適用於複雜的代碼生成任務。"
+      "description": "2025年8月發布的 Claude Opus 4.1，是 Anthropic 最新的旗艦模型，具備卓越的程式設計能力，在 HumanEval+ 上達到 85.2%（首次超越 GPT-4o 的 84.9%），在 SWE-bench Verified 上達到 74.5%，擁有 200K 上下文視窗，適用於複雜的程式碼生成任務。"
     }
   },
   "verified": true,

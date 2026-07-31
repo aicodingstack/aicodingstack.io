@@ -15,28 +15,28 @@
       "description": "자율 AI 에이전트를 IDE로 가져오는 에이전트 기반 코딩 플랫폼입니다. 코드 자동 완성, 디버깅을 위한 Ask 모드 및 복잡한 다단계 개발 작업을 위한 Agent 모드를 제공합니다."
     },
     "es": {
-      "description": "Plataforma de codificación basada en agentes que brinda agentes AI autónomos a su IDE..."
+      "description": "Plataforma de programación agéntica que incorpora agentes de IA autónomos al IDE. Incluye completado de código, modo Ask para depurar y modo Agent para tareas de desarrollo complejas de varios pasos."
     },
     "fr": {
-      "description": "Plateforme de codification basée sur des agents qui apporte des agents IA autonomes à votre IDE..."
+      "description": "Plateforme agentique qui intègre des agents IA autonomes à l’IDE. Elle offre la complétion de code, un mode Ask pour le débogage et un mode Agent pour les tâches complexes en plusieurs étapes."
     },
     "id": {
-      "description": "Platform coding berbasis agen yang membawa agen AI otonom ke IDE Anda. Fitur meliputi kode completion, mode Ask untuk debugging, dan mode Agent untuk tugas pengembangan kompleks multi-langkah."
+      "description": "Platform pemrograman berbasis agen yang menghadirkan agen AI otonom ke IDE. Menawarkan pelengkapan kode, mode Ask untuk debugging, dan mode Agent untuk tugas pengembangan bertahap yang kompleks."
     },
     "ja": {
       "description": "自律AIエージェントをIDEに提供するエージェント型コーディングプラットフォーム。コード補完、デバッグ用Askモード、複雑なマルチステップ開発タスク用Agentモードを備えています。"
     },
     "pt": {
-      "description": "Plataforma de codificacao baseada em agentes que tras agentes de IA autonomos para o seu IDE..."
+      "description": "Plataforma agêntica que leva agentes de IA autônomos ao IDE. Inclui preenchimento de código, modo Ask para depuração e modo Agent para tarefas complexas de desenvolvimento em várias etapas."
     },
     "ru": {
-      "description": "Платформа кодирования на основе агентов, которая привносит автономных ИИ-агентов в вашу IDE..."
+      "description": "Агентная платформа программирования с автономными ИИ-агентами в IDE. Она предлагает автодополнение, режим Ask для отладки и режим Agent для сложных многоэтапных задач разработки."
     },
     "tr": {
-      "description": "IDE'nize otonom AI aracıları getiren aracı tabanlı bir kodlama platformu..."
+      "description": "IDE'nize otonom yapay zekâ aracıları getiren aracılı kodlama platformu. Kod tamamlama, hata ayıklama için Ask modu ve karmaşık çok adımlı geliştirme görevleri için Agent modu sunar."
     },
     "zh-Hant": {
-      "description": "將自主 AI 代理引入 IDE 的智能編碼平台。具備程式碼自動完成、問答模式用於除錯，以及代理模式用於複雜的多步驟開發任務。"
+      "description": "將自主 AI 代理引入 IDE 的智慧程式設計平台。具備程式碼自動完成、問答模式用於除錯，以及代理模式用於複雜的多步驟開發任務。"
     }
   },
   "verified": true,

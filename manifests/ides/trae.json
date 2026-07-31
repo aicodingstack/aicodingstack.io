@@ -36,7 +36,7 @@
       "description": "10 kat verimli \"AI mühendisi\" olarak işlev gören AI destekli IDE. Uçtan uca geliştirme için kod tamamlama, görüşme tabanlı yardım ve otonom kod üretimi."
     },
     "zh-Hant": {
-      "description": "AI 驅動的 IDE，充當 10 倍效率 AI 工程師，提供實時代碼補全、聊天式輔助和自主代碼生成（Builder/SOLO 模式）用於端到端開發。"
+      "description": "AI 驅動的 IDE，定位為可提升十倍效率的「AI 工程師」，提供即時程式碼補全、聊天式輔助與自主程式碼產生（Builder／SOLO 模式），支援端對端開發。"
     }
   },
   "verified": false,

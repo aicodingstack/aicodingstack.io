@@ -6,37 +6,37 @@
   "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence.",
   "translations": {
     "de": {
-      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+      "description": "Rovo Dev CLI ist der Terminal-Agent von Atlassian zum Verstehen von Repositories, Erzeugen und Überarbeiten von Code, Ausführen von Tests, Nutzen von Worktrees und Verbinden mit Jira und Confluence."
     },
     "es": {
-      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+      "description": "Rovo Dev CLI es el agente de programación en terminal de Atlassian para comprender repositorios, generar y refactorizar código, ejecutar pruebas, usar worktrees y conectarse a Jira y Confluence."
     },
     "fr": {
-      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+      "description": "Rovo Dev CLI est l’agent de codage en terminal d’Atlassian pour comprendre les dépôts, générer et refactoriser du code, exécuter des tests, utiliser des worktrees et se connecter à Jira et Confluence."
     },
     "id": {
-      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+      "description": "Rovo Dev CLI adalah agen coding terminal dari Atlassian untuk memahami repositori, membuat dan menyusun ulang kode, menjalankan pengujian, menggunakan worktree, serta terhubung ke Jira dan Confluence."
     },
     "ja": {
-      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+      "description": "Rovo Dev CLI は、リポジトリの理解、コードの生成とリファクタリング、テスト実行、worktree の利用、Jira と Confluence への接続に対応する Atlassian のターミナル向けコーディングエージェントです。"
     },
     "ko": {
-      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+      "description": "Rovo Dev CLI는 저장소 이해, 코드 생성 및 리팩터링, 테스트 실행, worktree 사용, Jira 및 Confluence 연결을 위한 Atlassian의 터미널 코딩 에이전트입니다."
     },
     "pt": {
-      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+      "description": "O Rovo Dev CLI é o agente de programação no terminal da Atlassian para compreender repositórios, gerar e refatorar código, executar testes, usar worktrees e conectar-se ao Jira e ao Confluence."
     },
     "ru": {
-      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+      "description": "Rovo Dev CLI — терминальный агент программирования Atlassian для анализа репозиториев, генерации и рефакторинга кода, запуска тестов, использования worktree и подключения к Jira и Confluence."
     },
     "tr": {
-      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+      "description": "Rovo Dev CLI, depoları anlamak, kod üretmek ve yeniden düzenlemek, testleri çalıştırmak, worktree kullanmak ve Jira ile Confluence'a bağlanmak için Atlassian'ın terminal kodlama aracısıdır."
     },
     "zh-Hans": {
-      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+      "description": "Rovo Dev CLI 是 Atlassian 的终端编码代理，可用于理解代码仓库、生成和重构代码、运行测试、使用 worktree，以及连接 Jira 和 Confluence。"
     },
     "zh-Hant": {
-      "description": "Rovo Dev CLI is Atlassian's terminal coding agent for understanding repositories, generating and refactoring code, running tests, using worktrees, and connecting to Jira and Confluence."
+      "description": "Rovo Dev CLI 是 Atlassian 的終端機程式設計代理，可用於理解程式碼儲存庫、產生和重構程式碼、執行測試、使用 worktree，以及連接 Jira 和 Confluence。"
     }
   },
   "verified": false,

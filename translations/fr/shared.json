@@ -38,16 +38,15 @@
   },
   "categories": {
     "all": {
-      "clis": "All CLIs",
-      "desktops": "All Desktop Apps",
-      "extensions": "All Extensions",
-      "ides": "All IDEs",
-      "modelProviders": "All Model Providers",
+      "clis": "Toutes les CLI",
+      "desktops": "Toutes les applications de bureau",
+      "extensions": "Toutes les extensions",
+      "ides": "Tous les IDE",
+      "modelProviders": "Tous les fournisseurs de modèles",
       "models": "Tous les modèles",
-      "vendors": "All Vendors"
+      "vendors": "Tous les éditeurs"
     },
     "plural": {
-      "collections": "Collections",
       "clis": "CLI",
       "desktops": "Applications de bureau",
       "extensions": "Extensions",
@@ -59,12 +58,12 @@
     },
     "singular": {
       "cli": "CLI",
-      "desktop": "Desktop",
+      "desktop": "Application de bureau",
       "extension": "Extension",
       "ide": "IDE",
       "model": "Modèle",
-      "modelProvider": "Model Provider",
-      "provider": "Provider",
+      "modelProvider": "Fournisseur de modèles",
+      "provider": "Fournisseur",
       "vendor": "Éditeur"
     }
   },
@@ -94,14 +93,14 @@
       "upTo": "Jusqu’à {max} {metric}"
     },
     "ended": "Terminé le {date}",
-    "globalRegion": "Global",
+    "globalRegion": "Monde entier",
     "historical": "Tarification historique",
     "metrics": {
       "contextTokens": "jetons de contexte",
       "inputTokens": "jetons d’entrée"
     },
     "notAvailable": "Indisponible",
-    "perMillionTokens": "{price} / 1M tokens",
+    "perMillionTokens": "{price} / 1 million de jetons",
     "reasons": {
       "historicalPriceUnverified": "Le prix historique de l’API n’a pas été vérifié.",
       "officialPriceNotPublished": "Aucun prix officiel par jeton n’a été publié.",

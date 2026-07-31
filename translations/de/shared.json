@@ -38,16 +38,15 @@
   },
   "categories": {
     "all": {
-      "clis": "All CLIs",
-      "desktops": "All Desktop Apps",
-      "extensions": "All Extensions",
-      "ides": "All IDEs",
-      "modelProviders": "All Model Providers",
+      "clis": "Alle CLIs",
+      "desktops": "Alle Desktop-Apps",
+      "extensions": "Alle Erweiterungen",
+      "ides": "Alle IDEs",
+      "modelProviders": "Alle Modellanbieter",
       "models": "Alle Modelle",
-      "vendors": "All Vendors"
+      "vendors": "Alle Hersteller"
     },
     "plural": {
-      "collections": "Sammlungen",
       "clis": "CLIs",
       "desktops": "Desktop-Apps",
       "extensions": "Erweiterungen",
@@ -59,12 +58,12 @@
     },
     "singular": {
       "cli": "CLI",
-      "desktop": "Desktop",
-      "extension": "Extension",
+      "desktop": "Desktop-App",
+      "extension": "Erweiterung",
       "ide": "IDE",
       "model": "Modell",
-      "modelProvider": "Model Provider",
-      "provider": "Provider",
+      "modelProvider": "Modellanbieter",
+      "provider": "Anbieter",
       "vendor": "Hersteller"
     }
   },
@@ -101,7 +100,7 @@
       "inputTokens": "Eingabe-Tokens"
     },
     "notAvailable": "Nicht verfügbar",
-    "perMillionTokens": "{price} / 1M tokens",
+    "perMillionTokens": "{price} / 1 Mio. Token",
     "reasons": {
       "historicalPriceUnverified": "Der historische API-Preis wurde nicht verifiziert.",
       "officialPriceNotPublished": "Es wurde kein offizieller Token-Preis veröffentlicht.",
@@ -159,11 +158,11 @@
     "resources": "Ressourcen",
     "slogan": "Entdecken. Vergleichen. 10-mal schneller bauen.",
     "specificationsProtocols": "Spezifikationen & Protokolle",
-    "stars": "Stars",
+    "stars": "Sterne",
     "supportedIdes": "Unterstützte IDEs",
     "type": "Typ",
     "version": "Version",
     "visitWebsite": "Website Besuchen",
-    "website": "Website"
+    "website": "Webseite"
   }
 }

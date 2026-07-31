@@ -29,13 +29,13 @@
       "description": "Передовая модель OpenAI для агентного программирования, управления компьютером, интеллектуальной работы, исследований и сложных задач с инструментами."
     },
     "tr": {
-      "description": "OpenAI'ın aracı kodlama, bilgisayar kullanımı, bilgi çalışmaları, bilimsel araştırma ve karmaşık çok araçlı görevler için öncü modeli."
+      "description": "OpenAI'ın ajan tabanlı kodlama, bilgisayar kullanımı, bilgi çalışmaları, bilimsel araştırma ve karmaşık çok araçlı görevler için öncü modeli."
     },
     "zh-Hans": {
       "description": "OpenAI 面向智能体编码、计算机使用、知识工作、科学研究和复杂多工具任务的前沿模型。"
     },
     "zh-Hant": {
-      "description": "OpenAI 面向智慧體編碼、電腦使用、知識工作、科學研究和複雜多工具任務的前沿模型。"
+      "description": "OpenAI 面向智慧體程式設計、電腦使用、知識工作、科學研究和複雜多工具任務的前沿模型。"
     }
   },
   "verified": true,

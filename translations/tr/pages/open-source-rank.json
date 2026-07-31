@@ -1,27 +1,27 @@
 {
-  "description": "Discover and explore open source AI coding tools ranked by GitHub stars. Compare IDEs, CLIs, and extensions to find the perfect tools for your development workflow.",
+  "description": "GitHub yıldızlarına göre sıralanan açık kaynaklı yapay zekâ kodlama araçlarını keşfedin. Geliştirme iş akışınıza en uygun araçları bulmak için IDE'leri, CLI araçlarını ve uzantıları karşılaştırın.",
   "filter": {
-    "all": "All"
+    "all": "Tümü"
   },
   "meta": {
-    "description": "Ranking of all open source projects in AI Coding Stack, sorted by GitHub stars. View statistics and trends of open source vs proprietary tools.",
-    "title": "Open Source Projects Ranking"
+    "description": "AI Coding Stack'teki tüm açık kaynak projelerin GitHub yıldızlarına göre sıralaması. Açık kaynaklı ve tescilli araçlara ilişkin istatistikleri ve eğilimleri görüntüleyin.",
+    "title": "Açık Kaynak Proje Sıralaması"
   },
-  "noResults": "No open source projects found for this category.",
-  "note": "Note: This page only shows projects with GitHub repositories. Some projects, while not open source, maintain GitHub repositories as user feedback channels.",
+  "noResults": "Bu kategoride açık kaynak proje bulunamadı.",
+  "note": "Not: Bu sayfa yalnızca GitHub deposu bulunan projeleri gösterir. Açık kaynak olmayan bazı projeler, kullanıcı geri bildirim kanalı olarak GitHub depoları bulundurur.",
   "statistics": {
     "closedSourceCount": "Tescilli Projeler",
-    "closedSourcePercentage": "Proprietary Percentage",
-    "licenseBreakdown": "License Distribution",
+    "closedSourcePercentage": "Tescilli Proje Yüzdesi",
+    "licenseBreakdown": "Lisans Dağılımı",
     "openSourceCount": "Açık Kaynak Projeler",
-    "projects": "projects",
-    "title": "Open Source vs Proprietary Distribution",
-    "totalProjects": "Total Projects"
+    "projects": "proje",
+    "title": "Açık Kaynak ve Tescilli Proje Dağılımı",
+    "totalProjects": "Toplam Proje"
   },
   "table": {
     "openSourceTitle": "Açık Kaynak Projeler ({count})",
     "proprietaryTitle": "Tescilli Projeler ({count})",
-    "rank": "Rank"
+    "rank": "Sıra"
   },
-  "title": "Open Source Projects Ranking"
+  "title": "Açık Kaynak Proje Sıralaması"
 }

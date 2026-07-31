@@ -2,37 +2,37 @@
   "$schema": "../$schemas/desktop.schema.json",
   "translations": {
     "de": {
-      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+      "description": "Verdent Deck ist eine KI-native Desktop-App zum parallelen Koordinieren mehrerer Coding-Agenten, Verwalten von Git-Worktrees und Prüfen von Änderungen auf Funktionsebene."
     },
     "es": {
-      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+      "description": "Verdent Deck es una aplicación de escritorio nativa de IA para coordinar varios agentes de programación en paralelo, gestionar Git worktrees y revisar cambios a nivel de funcionalidad."
     },
     "fr": {
-      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+      "description": "Verdent Deck est une application de bureau native pour l’IA qui coordonne plusieurs agents de codage en parallèle, gère les Git worktrees et examine les changements au niveau des fonctionnalités."
     },
     "id": {
-      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+      "description": "Verdent Deck adalah aplikasi desktop native AI untuk mengoordinasikan beberapa agen coding secara paralel, mengelola Git worktree, dan meninjau perubahan pada tingkat fitur."
     },
     "ja": {
-      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+      "description": "Verdent Deck は、複数のコーディングエージェントの並列調整、Git worktree の管理、機能単位の変更レビューに対応する AI ネイティブのデスクトップアプリです。"
     },
     "ko": {
-      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+      "description": "Verdent Deck은 여러 코딩 에이전트의 병렬 조정, Git worktree 관리, 기능 수준 변경 사항 검토를 위한 AI 네이티브 데스크톱 앱입니다."
     },
     "pt": {
-      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+      "description": "O Verdent Deck é um aplicativo nativo para desktop que coordena vários agentes de programação com IA em paralelo, administra Git worktrees e revisa mudanças por funcionalidade."
     },
     "ru": {
-      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+      "description": "Verdent Deck — настольное приложение для ИИ, которое параллельно координирует агентов программирования, управляет Git worktree и помогает просматривать изменения на уровне функций."
     },
     "tr": {
-      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+      "description": "Verdent Deck, birden çok kodlama aracısını paralel koordine etmek, Git worktree yönetimi ve özellik düzeyindeki değişiklikleri incelemek için AI temelli bir masaüstü uygulamasıdır."
     },
     "zh-Hans": {
-      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+      "description": "Verdent Deck 是一款 AI 原生桌面应用，可并行协调多个编码代理、管理 Git worktree，并审查功能级变更。"
     },
     "zh-Hant": {
-      "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
+      "description": "Verdent Deck 是一款 AI 原生桌面應用程式，可平行協調多個程式設計代理、管理 Git worktree，並檢查功能層級變更。"
     }
   },
   "verified": true,

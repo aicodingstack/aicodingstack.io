@@ -2,37 +2,37 @@
   "$schema": "../$schemas/desktop.schema.json",
   "translations": {
     "de": {
-      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+      "description": "OpenCode Desktop ist die eigenständige Desktop-Oberfläche des quelloffenen OpenCode-Coding-Agenten mit lokalen Projektsitzungen und Unterstützung für viele Modellanbieter in der Cloud und lokal."
     },
     "es": {
-      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+      "description": "OpenCode Desktop es la interfaz independiente del agente de código abierto OpenCode, con sesiones de proyecto locales y compatibilidad con numerosos proveedores de modelos alojados y locales."
     },
     "fr": {
-      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+      "description": "OpenCode Desktop est l’interface autonome de l’agent open source OpenCode, avec des sessions de projet locales et la prise en charge de nombreux fournisseurs de modèles hébergés ou locaux."
     },
     "id": {
-      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+      "description": "OpenCode Desktop adalah antarmuka desktop mandiri untuk agen coding sumber terbuka OpenCode, dengan sesi proyek lokal serta dukungan bagi banyak penyedia model cloud maupun lokal."
     },
     "ja": {
-      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+      "description": "OpenCode Desktop は、ローカルプロジェクトセッションと多数のホスト型・ローカルモデルプロバイダーへの対応を備えた、オープンソースの OpenCode コーディングエージェントのスタンドアロン型デスクトップインターフェースです。"
     },
     "ko": {
-      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+      "description": "OpenCode Desktop은 로컬 프로젝트 세션과 다양한 호스팅 및 로컬 모델 제공자 지원을 갖춘 오픈 소스 OpenCode 코딩 에이전트의 독립형 데스크톱 인터페이스입니다."
     },
     "pt": {
-      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+      "description": "O OpenCode Desktop é a interface independente do agente de código aberto OpenCode, com sessões de projeto locais e suporte a diversos provedores de modelos hospedados e locais."
     },
     "ru": {
-      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+      "description": "OpenCode Desktop — отдельный интерфейс агента OpenCode с открытым кодом, локальными сеансами проектов и поддержкой множества облачных и локальных поставщиков моделей."
     },
     "tr": {
-      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+      "description": "OpenCode Desktop, yerel proje oturumları ve çok sayıda barındırılan ya da yerel model sağlayıcısı desteği sunan açık kaynaklı OpenCode kodlama aracısının bağımsız masaüstü arayüzüdür."
     },
     "zh-Hans": {
-      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+      "description": "OpenCode Desktop 是开源 OpenCode 编码代理的独立桌面界面，提供本地项目会话，并支持多种托管和本地模型提供商。"
     },
     "zh-Hant": {
-      "description": "OpenCode Desktop is the standalone desktop surface for the open source OpenCode coding agent, with local project sessions and support for many hosted and local model providers."
+      "description": "OpenCode Desktop 是開放原始碼 OpenCode 程式設計代理的獨立桌面介面，提供本機專案工作階段，並支援多種託管和本機模型供應商。"
     }
   },
   "verified": false,

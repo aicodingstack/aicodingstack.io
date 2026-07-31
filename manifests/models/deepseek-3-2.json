@@ -14,10 +14,10 @@
       "description": "DeepSeek V3.2은 128K 컨텍스트 윈도를 갖춘 추론 우선 모델로, 도구 사용에 통합된 생각 기능을 갖춘 에이전트 작업을 위해 설계되었습니다."
     },
     "es": {
-      "description": "DeepSeek V3.2 es un modelo de razonamiento prioritario con ventana de contexto de 128K, disenado para tareas de agentes con capacidades de pensamiento integrado en herramienta."
+      "description": "DeepSeek V3.2 es un modelo de razonamiento prioritario con ventana de contexto de 128K, diseñado para tareas de agentes con capacidades de pensamiento integrado en herramienta."
     },
     "fr": {
-      "description": "DeepSeek V3.2 est un modele raisonnement-prioritaire avec une fenetre de contexte de 128K, concu pour les taches d'agents avec des capacites de reflechion integrees dans l'utilisation d'outils."
+      "description": "DeepSeek V3.2 est un modèle raisonnement-prioritaire avec une fenêtre de contexte de 128K, conçu pour les tâches d'agents avec des capacités de réflexion intégrées dans l'utilisation d'outils."
     },
     "id": {
       "description": "DeepSeek V3.2 adalah model penalaran prioritas dengan jendela konteks 128K, dirancang untuk tugas agen dengan kemampuan berpikir terintegrasi dalam penggunaan alat."
@@ -26,16 +26,16 @@
       "description": "DeepSeek V3.2は128Kコンテキストウィンドウを持つ推論優先モデルで、ツール使用に統合された思考機能を持つエージェントタスクのために設計されています。"
     },
     "pt": {
-      "description": "DeepSeek V3.2 e um modelo de raciocinio prioritario com janela de contexto de 128K, projetado para tarefas de agentes com capacidades de pensamento integradas em uso de ferramentas."
+      "description": "DeepSeek V3.2 é um modelo voltado ao raciocínio, com janela de contexto de 128 mil tokens, criado para tarefas agênticas com pensamento integrado ao uso de ferramentas."
     },
     "ru": {
       "description": "DeepSeek V3.2 - это модель с приоритетом рассуждения с окном контекста 128K, разработанная для задач агентов с интегрированным мышлением в использовании инструментов."
     },
     "tr": {
-      "description": "DeepSeek V3.2, 128K baglam penceresine sahip oncelikli muhakeme modelidir, arac kullaniminda entegre dusunme yeteneklerine sahip ortam gorevleri icin tasarlanmistir."
+      "description": "DeepSeek V3.2, 128K bağlam penceresine sahip oncelikli muhakeme modelidir, araç kullaniminda entegre düşünme yeteneklerine sahip ortam görevleri için tasarlanmıştır."
     },
     "zh-Hant": {
-      "description": "DeepSeek V3.2 是推理優先的模型，具備 128K 上下文視窗，專為智能體任務設計，將思考直接整合到工具使用中。"
+      "description": "DeepSeek V3.2 是推理優先的模型，具備 128K 上下文視窗，專為智慧體任務設計，將思考直接整合到工具使用中。"
     }
   },
   "verified": true,

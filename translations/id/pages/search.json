@@ -1,13 +1,13 @@
 {
   "meta": {
-    "description": "Search across AI coding tools, models, providers, and resources. Find exactly what you need to enhance your development workflow.",
-    "title": "Search - AI Coding Stack"
+    "description": "Telusuri alat coding AI, model, penyedia, dan sumber daya. Temukan dengan tepat apa yang Anda perlukan untuk meningkatkan alur kerja pengembangan.",
+    "title": "Pencarian – AI Coding Stack"
   },
-  "noResults": "No results found",
-  "noResultsFor": "No results found for \"{query}\"",
-  "placeholder": "Search AI coding tools...",
-  "resultsCount": "{count} {count, plural, one {result} other {results}}",
-  "resultsCountFor": "{count} {count, plural, one {result} other {results}} for \"{query}\"",
-  "searching": "Searching...",
-  "title": "Search Results"
+  "noResults": "Tidak ada hasil yang ditemukan",
+  "noResultsFor": "Tidak ada hasil yang ditemukan untuk \"{query}\"",
+  "placeholder": "Cari alat coding AI...",
+  "resultsCount": "{count} {count, plural, one {hasil} other {hasil}}",
+  "resultsCountFor": "{count} {count, plural, one {hasil} other {hasil}} untuk \"{query}\"",
+  "searching": "Mencari...",
+  "title": "Hasil Pencarian"
 }

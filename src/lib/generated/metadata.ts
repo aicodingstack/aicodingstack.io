@@ -46,30 +46,30 @@ export const articlesMetadata: Record<string, ArticleMetadata[]> = {
   es: [
     {
       slug: 'getting-started-with-ai-coding',
-      title: 'Comenzando con AI Coding: Una Guía Completa',
+      title: 'Introducción a AI Coding: una guía completa',
       description:
         'Aprende cómo configurar tu primer entorno de desarrollo impulsado por IA con IDEs, CLIs y las herramientas esenciales que necesitas para impulsar tu productividad de programación.',
       date: '2025-01-15',
     },
     {
       slug: 'mcp-servers-explained',
-      title: 'Entendiendo los Servidores MCP: El Futuro del Contexto de IA',
+      title: 'Entender los servidores MCP: el futuro del contexto de IA',
       description:
-        'Un análisis profundo de los servidores del Protocolo de Contexto de Modelo, cómo funcionan y por qué son cruciales para construir asistentes de programación con IA que realmente entiendan tu proyecto.',
+        'Un análisis profundo de los servidores Model Context Protocol, cómo funcionan y por qué son cruciales para construir asistentes de programación con IA que realmente entiendan tu proyecto.',
       date: '2025-01-10',
     },
   ],
   fr: [
     {
       slug: 'getting-started-with-ai-coding',
-      title: 'Commencer avec AI Coding : Un Guide Complet',
+      title: 'Débuter avec AI Coding : un guide complet',
       description:
         "Apprenez comment configurer votre premier environnement de développement propulsé par l'IA avec des IDE, des CLI et les outils essentiels dont vous avez besoin pour stimuler votre productivité de programmation.",
       date: '2025-01-15',
     },
     {
       slug: 'mcp-servers-explained',
-      title: "Comprendre les Serveurs MCP : L'Avenir du Contexte IA",
+      title: "Comprendre les serveurs MCP : l'avenir du contexte IA",
       description:
         'Un approfondissement des serveurs du Protocole de Contexte de Modèle, comment ils fonctionnent et pourquoi ils sont cruciaux pour construire des assistants de programmation IA intelligents qui comprennent vraiment votre projet.',
       date: '2025-01-10',
@@ -103,7 +103,7 @@ export const articlesMetadata: Record<string, ArticleMetadata[]> = {
       slug: 'mcp-servers-explained',
       title: 'MCPサーバーの理解：AIコンテキストの未来',
       description:
-        'モデルコンテキストプロトコルサーバーの詳細、その仕組み、およびプロジェクトを真に理解するインテリジェントなAIコーディングアシスタントを構築するために重要な理由について詳しく解説します。',
+        'Model Context Protocol サーバーの仕組みと、プロジェクトを真に理解するインテリジェントな AI コーディングアシスタントに不可欠な理由を詳しく解説します。',
       date: '2025-01-10',
     },
   ],
@@ -119,23 +119,23 @@ export const articlesMetadata: Record<string, ArticleMetadata[]> = {
       slug: 'mcp-servers-explained',
       title: 'MCP 서버 이해하기: AI 컨텍스트의 미래',
       description:
-        '모델 컨텍스트 프로토콜 서버에 대한 심층 분석, 작동 방식, 그리고 프로젝트를 진정으로 이해하는 지능형 AI 코딩 어시스턴트를 구축하는 데 중요한 이유.',
+        'Model Context Protocol 서버의 작동 방식과 프로젝트를 진정으로 이해하는 지능형 AI 코딩 어시스턴트에 중요한 이유를 심층적으로 알아봅니다.',
       date: '2025-01-10',
     },
   ],
   pt: [
     {
       slug: 'getting-started-with-ai-coding',
-      title: 'Começando com AI Coding: Um Guia Completo',
+      title: 'Começando com AI Coding: um guia completo',
       description:
-        'Aprenda como configurar o seu primeiro ambiente de desenvolvimento alimentado por IA com IDEs, CLIs e as ferramentas essenciais que você precisa para aumentar a sua produtividade de programação.',
+        'Aprenda a configurar seu primeiro ambiente de desenvolvimento com IA usando IDEs, CLIs e as ferramentas essenciais para aumentar sua produtividade.',
       date: '2025-01-15',
     },
     {
       slug: 'mcp-servers-explained',
-      title: 'Entendendo Servidores MCP: O Futuro do Contexto de IA',
+      title: 'Entendendo servidores MCP: o futuro do contexto de IA',
       description:
-        'Um mergulho profundo em servidores do Protocolo de Contexto de Modelo, como funcionam e por que são cruciais para construir assistentes de programação com IA inteligentes que realmente entendem o seu projeto.',
+        'Uma análise aprofundada dos servidores do Model Context Protocol, de como funcionam e de por que são essenciais para criar assistentes de programação com IA que realmente entendem seu projeto.',
       date: '2025-01-10',
     },
   ],
@@ -167,7 +167,7 @@ export const articlesMetadata: Record<string, ArticleMetadata[]> = {
       slug: 'mcp-servers-explained',
       title: 'MCP Sunucularını Anlamak: Yapay Zeka Bağlamının Geleceği',
       description:
-        'Model Bağlam Protokolü sunucularını, nasıl çalıştıklarını ve projenizi gerçekten anlayan akıllı yapay zeka kodlama asistanları oluşturmak için neden kritik olduklarını derinlemesine anlayın.',
+        'Model Context Protocol sunucularının nasıl çalıştığını ve projenizi gerçekten anlayan akıllı yapay zeka kodlama asistanları için neden kritik olduğunu öğrenin.',
       date: '2025-01-10',
     },
   ],
@@ -183,23 +183,23 @@ export const articlesMetadata: Record<string, ArticleMetadata[]> = {
       slug: 'mcp-servers-explained',
       title: '理解 MCP 服务器：AI 上下文的未来',
       description:
-        '深入了解模型上下文协议服务器的工作原理，以及为什么它们对构建真正理解你项目的智能 AI 编码助手至关重要。',
+        '深入了解 Model Context Protocol 服务器的工作原理，以及它们为何对构建真正理解项目的智能 AI 编码助手至关重要。',
       date: '2025-01-10',
     },
   ],
   'zh-Hant': [
     {
       slug: 'getting-started-with-ai-coding',
-      title: 'AI 編碼入門：綜合指南',
+      title: 'AI 程式開發入門：完整指南',
       description:
-        '學習如何使用 IDE、命令列和必備工具搭建你的第一個 AI 驅動開發環境，提升編碼生產力。',
+        '瞭解如何運用 IDE、CLI 與必要工具，打造第一個 AI 驅動的開發環境並提升程式開發效率。',
       date: '2025-01-15',
     },
     {
       slug: 'mcp-servers-explained',
-      title: '理解 MCP 伺服器：AI 上下文的未來',
+      title: '認識 MCP 伺服器：AI 情境整合的未來',
       description:
-        '深入了解模型上下文協議伺服器的工作原理，以及為什麼它們對構建真正理解你項目的智能 AI 編碼助手至關重要。',
+        '深入瞭解 Model Context Protocol 伺服器的運作方式，以及它為何是打造能真正理解專案之 AI 程式開發助理的關鍵。',
       date: '2025-01-10',
     },
   ],
@@ -234,7 +234,7 @@ export const docsMetadata: Record<string, DocSection[]> = {
     {
       id: 'getting-started',
       slug: 'getting-started',
-      title: 'Primeros Pasos',
+      title: 'Primeros pasos',
     },
     {
       id: 'welcome',
@@ -246,7 +246,7 @@ export const docsMetadata: Record<string, DocSection[]> = {
     {
       id: 'getting-started',
       slug: 'getting-started',
-      title: 'Premiers Pas',
+      title: 'Premiers pas',
     },
     {
       id: 'welcome',
@@ -294,7 +294,7 @@ export const docsMetadata: Record<string, DocSection[]> = {
     {
       id: 'getting-started',
       slug: 'getting-started',
-      title: 'Como Começar',
+      title: 'Como começar',
     },
     {
       id: 'welcome',
@@ -342,7 +342,7 @@ export const docsMetadata: Record<string, DocSection[]> = {
     {
       id: 'getting-started',
       slug: 'getting-started',
-      title: '快速開始',
+      title: '開始使用',
     },
     {
       id: 'welcome',
@@ -1182,57 +1182,57 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                   'Engineering deep dive into the loop connecting prompts, model inference, tool calls, and code changes in Codex',
               },
               de: {
-                name: 'Unrolling the Codex agent loop',
+                name: 'Entfaltung der Codex-Agentenschleife',
                 description:
                   'Technischer Einblick in die Codex-Schleife, die Prompts, Modellinferenz, Tool-Aufrufe und Codeänderungen verbindet',
               },
               es: {
-                name: 'Unrolling the Codex agent loop',
+                name: 'Desglosando el bucle del agente Codex',
                 description:
                   'Análisis técnico del bucle de Codex que conecta prompts, inferencia del modelo, llamadas a herramientas y cambios de código',
               },
               fr: {
-                name: 'Unrolling the Codex agent loop',
+                name: 'Dérouler la boucle de l’agent Codex',
                 description:
                   'Analyse technique de la boucle Codex reliant prompts, inférence du modèle, appels d’outils et modifications du code',
               },
               id: {
-                name: 'Unrolling the Codex agent loop',
+                name: 'Mengurai loop agen Codex',
                 description:
                   'Ulasan teknis tentang loop Codex yang menghubungkan prompt, inferensi model, pemanggilan tool, dan perubahan kode',
               },
               ja: {
-                name: 'Unrolling the Codex agent loop',
+                name: 'Codexエージェントループの仕組み',
                 description:
                   'プロンプト、モデル推論、ツール呼び出し、コード変更を結ぶCodexのエージェントループを詳しく解説',
               },
               ko: {
-                name: 'Unrolling the Codex agent loop',
+                name: 'Codex 에이전트 루프 해부',
                 description:
                   '프롬프트, 모델 추론, 도구 호출, 코드 변경을 연결하는 Codex 에이전트 루프의 기술적 분석',
               },
               pt: {
-                name: 'Unrolling the Codex agent loop',
+                name: 'Desvendando o loop do agente Codex',
                 description:
                   'Análise técnica do loop do Codex que conecta prompts, inferência do modelo, chamadas de ferramentas e alterações de código',
               },
               ru: {
-                name: 'Unrolling the Codex agent loop',
+                name: 'Разбор цикла агента Codex',
                 description:
                   'Технический разбор цикла Codex, связывающего промпты, вывод модели, вызовы инструментов и изменения кода',
               },
               tr: {
-                name: 'Unrolling the Codex agent loop',
+                name: 'Codex ajan döngüsünü çözümlemek',
                 description:
                   'İstemleri, model çıkarımını, araç çağrılarını ve kod değişikliklerini bağlayan Codex döngüsünün teknik incelemesi',
               },
               'zh-Hans': {
-                name: 'Unrolling the Codex agent loop',
+                name: '展开 Codex 智能体循环',
                 description:
                   '深入解析 Codex 如何通过 Agent 循环连接提示、模型推理、工具调用与代码修改',
               },
               'zh-Hant': {
-                name: 'Unrolling the Codex agent loop',
+                name: '展開 Codex 智慧體迴圈',
                 description:
                   '深入解析 Codex 如何透過 Agent 迴圈連接提示、模型推理、工具呼叫與程式碼修改',
               },
@@ -1253,57 +1253,57 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                   'How mobile access, Remote SSH, hooks, and programmatic tokens extend long-running Codex workflows',
               },
               de: {
-                name: 'Work with Codex from anywhere',
+                name: 'Mit Codex von überall arbeiten',
                 description:
                   'Wie mobiler Zugriff, Remote SSH, Hooks und programmatische Tokens langlaufende Codex-Workflows erweitern',
               },
               es: {
-                name: 'Work with Codex from anywhere',
+                name: 'Trabajar con Codex desde cualquier lugar',
                 description:
                   'Cómo el acceso móvil, Remote SSH, los hooks y los tokens programáticos amplían los flujos de trabajo prolongados de Codex',
               },
               fr: {
-                name: 'Work with Codex from anywhere',
+                name: 'Travailler avec Codex depuis n’importe où',
                 description:
                   'Comment l’accès mobile, Remote SSH, les hooks et les jetons programmatiques étendent les workflows Codex de longue durée',
               },
               id: {
-                name: 'Work with Codex from anywhere',
+                name: 'Bekerja dengan Codex dari mana saja',
                 description:
                   'Cara akses seluler, Remote SSH, hook, dan token programatis memperluas workflow Codex yang berjalan lama',
               },
               ja: {
-                name: 'Work with Codex from anywhere',
+                name: 'どこからでもCodexを使う',
                 description:
                   'モバイルアクセス、Remote SSH、フック、プログラム用トークンで長時間実行するCodexワークフローを拡張する方法',
               },
               ko: {
-                name: 'Work with Codex from anywhere',
+                name: '어디서나 Codex로 작업하기',
                 description:
                   '모바일 액세스, Remote SSH, 훅, 프로그래밍 방식 토큰으로 장기 실행 Codex 워크플로를 확장하는 방법',
               },
               pt: {
-                name: 'Work with Codex from anywhere',
+                name: 'Trabalhar com o Codex de qualquer lugar',
                 description:
                   'Como acesso móvel, Remote SSH, hooks e tokens programáticos ampliam fluxos de trabalho longos do Codex',
               },
               ru: {
-                name: 'Work with Codex from anywhere',
+                name: 'Работа с Codex из любого места',
                 description:
                   'Как мобильный доступ, Remote SSH, хуки и программные токены расширяют длительные рабочие процессы Codex',
               },
               tr: {
-                name: 'Work with Codex from anywhere',
+                name: 'Codex ile her yerden çalışmak',
                 description:
                   'Mobil erişim, Remote SSH, hook’lar ve programatik token’ların uzun süreli Codex iş akışlarını nasıl genişlettiği',
               },
               'zh-Hans': {
-                name: 'Work with Codex from anywhere',
+                name: '随时随地使用 Codex',
                 description:
                   '介绍移动访问、Remote SSH、Hooks 和程序化令牌如何扩展长时间运行的 Codex 工作流',
               },
               'zh-Hant': {
-                name: 'Work with Codex from anywhere',
+                name: '隨時隨地使用 Codex',
                 description:
                   '介紹行動存取、Remote SSH、Hooks 和程式化權杖如何擴展長時間執行的 Codex 工作流程',
               },
@@ -1368,56 +1368,56 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                   "Cursor's view of the shift from synchronous coding agents to autonomous cloud agents working in parallel",
               },
               de: {
-                name: 'The third era of AI software development',
+                name: 'Die dritte Ära der KI-Softwareentwicklung',
                 description:
                   'Cursors Sicht auf den Wandel von synchronen Coding-Agenten zu autonomen Cloud-Agenten, die parallel arbeiten',
               },
               es: {
-                name: 'The third era of AI software development',
+                name: 'La tercera era del desarrollo de software con IA',
                 description:
                   'La visión de Cursor sobre el paso de agentes de código síncronos a agentes autónomos en la nube que trabajan en paralelo',
               },
               fr: {
-                name: 'The third era of AI software development',
+                name: 'La troisième ère du développement logiciel avec l’IA',
                 description:
                   'La vision de Cursor du passage des agents de codage synchrones aux agents cloud autonomes travaillant en parallèle',
               },
               id: {
-                name: 'The third era of AI software development',
+                name: 'Era ketiga pengembangan perangkat lunak AI',
                 description:
                   'Pandangan Cursor tentang peralihan dari agen coding sinkron ke agen cloud otonom yang bekerja secara paralel',
               },
               ja: {
-                name: 'The third era of AI software development',
+                name: 'AIソフトウェア開発の第3時代',
                 description:
                   '同期型コーディングエージェントから並列稼働する自律型クラウドエージェントへの移行を描くCursorの展望',
               },
               ko: {
-                name: 'The third era of AI software development',
+                name: 'AI 소프트웨어 개발의 세 번째 시대',
                 description:
                   '동기식 코딩 에이전트에서 병렬로 작동하는 자율 클라우드 에이전트로의 전환에 대한 Cursor의 관점',
               },
               pt: {
-                name: 'The third era of AI software development',
+                name: 'A terceira era do desenvolvimento de software com IA',
                 description:
                   'A visão da Cursor sobre a transição de agentes de código síncronos para agentes autônomos na nuvem trabalhando em paralelo',
               },
               ru: {
-                name: 'The third era of AI software development',
+                name: 'Третья эра разработки ПО с ИИ',
                 description:
                   'Взгляд Cursor на переход от синхронных агентов программирования к автономным облачным агентам, работающим параллельно',
               },
               tr: {
-                name: 'The third era of AI software development',
+                name: 'Yapay zeka yazılım geliştirmenin üçüncü dönemi',
                 description:
                   'Cursor’ın eşzamanlı kodlama ajanlarından paralel çalışan otonom bulut ajanlarına geçişe bakışı',
               },
               'zh-Hans': {
-                name: 'The third era of AI software development',
+                name: 'AI 软件开发的第三个时代',
                 description: 'Cursor 对软件开发从同步编码 Agent 转向并行自主云端 Agent 的判断',
               },
               'zh-Hant': {
-                name: 'The third era of AI software development',
+                name: 'AI 軟體開發的第三個時代',
                 description: 'Cursor 對軟體開發從同步編碼 Agent 轉向平行自主雲端 Agent 的判斷',
               },
             },
@@ -1437,56 +1437,56 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                   'How Cursor evolves context management, evaluates agent quality, and repairs harness regressions',
               },
               de: {
-                name: 'Continually improving our agent harness',
+                name: 'Unser Agenten-Framework kontinuierlich verbessern',
                 description:
                   'Wie Cursor Kontextverwaltung weiterentwickelt, Agentenqualität bewertet und Regressionen im Harness behebt',
               },
               es: {
-                name: 'Continually improving our agent harness',
+                name: 'Mejora continua de nuestro entorno para agentes',
                 description:
                   'Cómo Cursor evoluciona la gestión de contexto, evalúa la calidad de los agentes y corrige regresiones del harness',
               },
               fr: {
-                name: 'Continually improving our agent harness',
+                name: 'Améliorer continuellement notre infrastructure d’agents',
                 description:
                   'Comment Cursor fait évoluer la gestion du contexte, évalue la qualité des agents et corrige les régressions du harness',
               },
               id: {
-                name: 'Continually improving our agent harness',
+                name: 'Terus meningkatkan kerangka agen kami',
                 description:
                   'Cara Cursor mengembangkan manajemen konteks, mengevaluasi kualitas agen, dan memperbaiki regresi harness',
               },
               ja: {
-                name: 'Continually improving our agent harness',
+                name: 'エージェント基盤を継続的に改善する',
                 description:
                   'Cursorがコンテキスト管理を進化させ、エージェント品質を評価し、ハーネスの回帰を修復する方法',
               },
               ko: {
-                name: 'Continually improving our agent harness',
+                name: '에이전트 실행 환경을 지속적으로 개선하기',
                 description:
                   'Cursor가 컨텍스트 관리를 발전시키고 에이전트 품질을 평가하며 하네스 회귀를 복구하는 방법',
               },
               pt: {
-                name: 'Continually improving our agent harness',
+                name: 'Melhorando continuamente nossa estrutura de agentes',
                 description:
                   'Como a Cursor evolui o gerenciamento de contexto, avalia a qualidade dos agentes e corrige regressões do harness',
               },
               ru: {
-                name: 'Continually improving our agent harness',
+                name: 'Непрерывное улучшение нашей среды для агентов',
                 description:
                   'Как Cursor развивает управление контекстом, оценивает качество агентов и устраняет регрессии в агентном контуре',
               },
               tr: {
-                name: 'Continually improving our agent harness',
+                name: 'Ajan altyapımızı sürekli iyileştirmek',
                 description:
                   'Cursor’ın bağlam yönetimini geliştirme, ajan kalitesini değerlendirme ve harness gerilemelerini düzeltme yöntemi',
               },
               'zh-Hans': {
-                name: 'Continually improving our agent harness',
+                name: '持续改进我们的智能体运行框架',
                 description: 'Cursor 如何演进上下文管理、评估 Agent 质量并修复 Agent Harness 回归',
               },
               'zh-Hant': {
-                name: 'Continually improving our agent harness',
+                name: '持續改進我們的智慧體執行框架',
                 description: 'Cursor 如何演進上下文管理、評估 Agent 品質並修復 Agent Harness 回歸',
               },
             },
@@ -1550,57 +1550,57 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                   'Claude Code updates spanning checkpoints, subagents, hooks, background tasks, and its native VS Code extension',
               },
               de: {
-                name: 'Enabling Claude Code to work more autonomously',
+                name: 'Claude Code autonomer arbeiten lassen',
                 description:
                   'Claude-Code-Neuerungen zu Checkpoints, Subagenten, Hooks, Hintergrundaufgaben und der nativen VS-Code-Erweiterung',
               },
               es: {
-                name: 'Enabling Claude Code to work more autonomously',
+                name: 'Permitir que Claude Code trabaje de forma más autónoma',
                 description:
                   'Novedades de Claude Code sobre checkpoints, subagentes, hooks, tareas en segundo plano y su extensión nativa para VS Code',
               },
               fr: {
-                name: 'Enabling Claude Code to work more autonomously',
+                name: 'Permettre à Claude Code de travailler de façon plus autonome',
                 description:
                   'Nouveautés de Claude Code sur les checkpoints, sous-agents, hooks, tâches en arrière-plan et son extension VS Code native',
               },
               id: {
-                name: 'Enabling Claude Code to work more autonomously',
+                name: 'Membuat Claude Code bekerja lebih mandiri',
                 description:
                   'Pembaruan Claude Code mencakup checkpoint, subagen, hook, tugas latar belakang, dan ekstensi native VS Code',
               },
               ja: {
-                name: 'Enabling Claude Code to work more autonomously',
+                name: 'Claude Codeをより自律的に動かす',
                 description:
                   'チェックポイント、サブエージェント、フック、バックグラウンドタスク、ネイティブVS Code拡張を含むClaude Codeの更新',
               },
               ko: {
-                name: 'Enabling Claude Code to work more autonomously',
+                name: 'Claude Code가 더 자율적으로 작업하도록 지원하기',
                 description:
                   '체크포인트, 하위 에이전트, 훅, 백그라운드 작업, 네이티브 VS Code 확장을 아우르는 Claude Code 업데이트',
               },
               pt: {
-                name: 'Enabling Claude Code to work more autonomously',
+                name: 'Permitindo que o Claude Code trabalhe com mais autonomia',
                 description:
                   'Novidades do Claude Code sobre checkpoints, subagentes, hooks, tarefas em segundo plano e sua extensão nativa para VS Code',
               },
               ru: {
-                name: 'Enabling Claude Code to work more autonomously',
+                name: 'Как сделать работу Claude Code более автономной',
                 description:
                   'Обновления Claude Code: контрольные точки, субагенты, хуки, фоновые задачи и нативное расширение для VS Code',
               },
               tr: {
-                name: 'Enabling Claude Code to work more autonomously',
+                name: 'Claude Code’un daha özerk çalışmasını sağlamak',
                 description:
                   'Kontrol noktaları, alt ajanlar, hook’lar, arka plan görevleri ve yerel VS Code uzantısını kapsayan Claude Code güncellemeleri',
               },
               'zh-Hans': {
-                name: 'Enabling Claude Code to work more autonomously',
+                name: '让 Claude Code 更自主地工作',
                 description:
                   '介绍 Claude Code 的检查点、子 Agent、Hooks、后台任务和原生 VS Code 扩展',
               },
               'zh-Hant': {
-                name: 'Enabling Claude Code to work more autonomously',
+                name: '讓 Claude Code 更自主地工作',
                 description:
                   '介紹 Claude Code 的檢查點、子 Agent、Hooks、背景任務和原生 VS Code 擴充功能',
               },
@@ -1621,56 +1621,56 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                   "Anthropic's introduction to the open standard connecting AI assistants with data sources, tools, and development environments",
               },
               de: {
-                name: 'Introducing the Model Context Protocol',
+                name: 'Einführung in das Model Context Protocol',
                 description:
                   'Anthropics Einführung in den offenen Standard, der KI-Assistenten mit Datenquellen, Tools und Entwicklungsumgebungen verbindet',
               },
               es: {
-                name: 'Introducing the Model Context Protocol',
+                name: 'Presentamos Model Context Protocol',
                 description:
                   'Introducción de Anthropic al estándar abierto que conecta asistentes de IA con fuentes de datos, herramientas y entornos de desarrollo',
               },
               fr: {
-                name: 'Introducing the Model Context Protocol',
+                name: 'Présentation du Model Context Protocol',
                 description:
                   'Présentation par Anthropic du standard ouvert reliant les assistants IA aux sources de données, outils et environnements de développement',
               },
               id: {
-                name: 'Introducing the Model Context Protocol',
+                name: 'Memperkenalkan Model Context Protocol',
                 description:
                   'Pengenalan Anthropic terhadap standar terbuka yang menghubungkan asisten AI dengan sumber data, tool, dan lingkungan pengembangan',
               },
               ja: {
-                name: 'Introducing the Model Context Protocol',
+                name: 'Model Context Protocolの紹介',
                 description:
                   'AIアシスタントをデータソース、ツール、開発環境に接続するオープン標準についてのAnthropicによる紹介',
               },
               ko: {
-                name: 'Introducing the Model Context Protocol',
+                name: 'Model Context Protocol 소개',
                 description:
                   'AI 어시스턴트를 데이터 소스, 도구, 개발 환경에 연결하는 개방형 표준에 대한 Anthropic의 소개',
               },
               pt: {
-                name: 'Introducing the Model Context Protocol',
+                name: 'Apresentando o Model Context Protocol',
                 description:
                   'Introdução da Anthropic ao padrão aberto que conecta assistentes de IA a fontes de dados, ferramentas e ambientes de desenvolvimento',
               },
               ru: {
-                name: 'Introducing the Model Context Protocol',
+                name: 'Представляем Model Context Protocol',
                 description:
                   'Введение Anthropic в открытый стандарт, соединяющий ИИ-ассистентов с источниками данных, инструментами и средами разработки',
               },
               tr: {
-                name: 'Introducing the Model Context Protocol',
+                name: 'Model Context Protocol ile tanışın',
                 description:
                   'AI asistanlarını veri kaynakları, araçlar ve geliştirme ortamlarıyla bağlayan açık standarda Anthropic’in girişi',
               },
               'zh-Hans': {
-                name: 'Introducing the Model Context Protocol',
+                name: '介绍模型上下文协议',
                 description: 'Anthropic 对连接 AI 助手、数据源、工具和开发环境的开放标准的首次介绍',
               },
               'zh-Hant': {
-                name: 'Introducing the Model Context Protocol',
+                name: '介紹模型上下文協定',
                 description:
                   'Anthropic 對連接 AI 助手、資料來源、工具和開發環境的開放標準的首次介紹',
               },
@@ -1735,57 +1735,57 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
                   'First-hand lessons from moving toward multi-agent implementation, review automation, and stacked changes at Lovable',
               },
               de: {
-                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                name: '85.000 $ an Tokens später: Agentisches Coding bei Lovable skalieren',
                 description:
                   'Erfahrungen aus erster Hand mit Multi-Agenten-Implementierung, automatisiertem Review und gestapelten Änderungen bei Lovable',
               },
               es: {
-                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                name: '85.000 $ en tokens después: escalar la programación con agentes en Lovable',
                 description:
                   'Lecciones de primera mano sobre implementación multiagente, revisión automatizada y cambios apilados en Lovable',
               },
               fr: {
-                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                name: '85 000 $ de tokens plus tard : déployer le codage agentique à grande échelle chez Lovable',
                 description:
                   'Retour d’expérience sur l’implémentation multi-agent, l’automatisation des revues et les changements empilés chez Lovable',
               },
               id: {
-                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                name: 'Setelah token senilai $85.000: menskalakan coding agentik di Lovable',
                 description:
                   'Pelajaran langsung tentang implementasi multi-agen, otomatisasi review, dan perubahan bertumpuk di Lovable',
               },
               ja: {
-                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                name: 'トークン費用8万5000ドルを経て：Lovableでエージェント型コーディングを拡大',
                 description:
                   'Lovableにおけるマルチエージェント実装、レビュー自動化、スタックされた変更への移行から得た実践的な知見',
               },
               ko: {
-                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                name: '토큰 비용 8만 5천 달러 후: Lovable의 에이전트 코딩 확장',
                 description:
                   'Lovable에서 멀티 에이전트 구현, 리뷰 자동화, 스택형 변경으로 전환하며 얻은 실전 교훈',
               },
               pt: {
-                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                name: 'US$ 85 mil em tokens depois: escalando a programação com agentes na Lovable',
                 description:
                   'Lições práticas sobre implementação multiagente, automação de revisão e alterações empilhadas na Lovable',
               },
               ru: {
-                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                name: 'Спустя 85 000 $ на токены: масштабирование агентного программирования в Lovable',
                 description:
                   'Практические выводы о мультиагентной реализации, автоматизации ревью и пакетах связанных изменений в Lovable',
               },
               tr: {
-                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                name: '85.000 dolarlık token sonrasında: Lovable’da ajan tabanlı kodlamayı ölçeklemek',
                 description:
                   'Lovable’da çok ajanlı uygulama, inceleme otomasyonu ve yığınlanmış değişikliklere geçişten çıkarılan dersler',
               },
               'zh-Hans': {
-                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                name: '消耗 8.5 万美元 Token 之后：Lovable 如何扩展智能体编程',
                 description:
                   '来自 Lovable 的一线经验：如何走向多 Agent 实现、自动化审查与堆叠式变更',
               },
               'zh-Hant': {
-                name: '$85,000 in tokens later: Scaling agentic coding at Lovable',
+                name: '消耗 8.5 萬美元 Token 之後：Lovable 如何擴展智慧體程式設計',
                 description:
                   '來自 Lovable 的第一線經驗：如何走向多 Agent 實作、自動化審查與堆疊式變更',
               },
@@ -3325,7 +3325,7 @@ export const faqMetadata: Record<string, FaqItem[]> = {
       title:
         'AI Coding StackにはどのようなAIコーディングツールとLLMプロバイダーが掲載されていますか？',
       content:
-        'AI Coding Stackには、AIコーディングツールとサービスの包括的なカタログが掲載されています：\n\n- **IDE**：Visual Studio Code、Cursor、TRAE、その他のAI搭載コードエディタ\n- **CLI**：Claude Code、Codex、その他のコマンドラインAIアシスタント\n- **拡張機能**：GitHub Copilot、Cline、Continue、Roo Code、その他のAIコードアシスタントプラグイン\n- **モデル**：DeepSeek、Kimi K2、GLM、Qwen、GPT、Claude、その他の主要なAIモデル\n- **プロバイダー**：OpenAI、Anthropic、DeepSeek、Moonshot、OpenRouter、SiliconFlow、その他\n\n新しいツールやプロバイダーが登現するにつれて、ディレクトリは継続的に更新されます。',
+        'AI Coding Stackには、AIコーディングツールとサービスの包括的なカタログが掲載されています：\n\n- **IDE**：Visual Studio Code、Cursor、TRAE、その他のAI搭載コードエディタ\n- **CLI**：Claude Code、Codex、その他のコマンドラインAIアシスタント\n- **拡張機能**：GitHub Copilot、Cline、Continue、Roo Code、その他のAIコードアシスタントプラグイン\n- **モデル**：DeepSeek、Kimi K2、GLM、Qwen、GPT、Claude、その他の主要なAIモデル\n- **プロバイダー**：OpenAI、Anthropic、DeepSeek、Moonshot、OpenRouter、SiliconFlow、その他\n\n新しいツールやプロバイダーが登場するたびに、ディレクトリは継続的に更新されます。',
     },
     {
       title: 'AI Coding Stackはオープンソースですか？貢献できますか？',
@@ -3369,7 +3369,7 @@ export const faqMetadata: Record<string, FaqItem[]> = {
     {
       title: 'O que é AI Coding Stack e como ajuda os desenvolvedores?',
       content:
-        'AI Coding Stack é um diretório e repositório de metadados abrangente para o ecossistema de coding com IA. Fornece uma plataforma centralizada para descobrir, comparar e explorar ferramentas de desenvolvimento alimentadas por IA, incluindo IDEs como VS Code e Cursor, assistentes de linha de comando como Claude Code, modelos LLM e provedores de API. Em vez de pesquisar em recursos dispersos, AI Coding Stack oferece especificações detalhadas, preços e comparações de recursos, tudo em um só lugar.',
+        'AI Coding Stack é um diretório e repositório de metadados abrangente para o ecossistema de programação com IA. Ele oferece uma plataforma centralizada para descobrir, comparar e explorar ferramentas de desenvolvimento com IA, incluindo IDEs como VS Code e Cursor, assistentes de linha de comando como Claude Code, modelos LLM e provedores de API. Em vez de pesquisar em fontes dispersas, você encontra especificações detalhadas, preços e comparações de recursos em um só lugar.',
     },
     {
       title: 'Como uso o AI Coding Stack?',
@@ -3378,19 +3378,19 @@ export const faqMetadata: Record<string, FaqItem[]> = {
     },
     {
       title:
-        'Quais ferramentas de coding com IA e provedores de LLM estão listados no AI Coding Stack?',
+        'Quais ferramentas de programação com IA e provedores de LLM estão listados no AI Coding Stack?',
       content:
-        'AI Coding Stack apresenta um catálogo abrangente de ferramentas e serviços de coding com IA:\n\n- **IDEs**: Visual Studio Code, Cursor, TRAE e outros editores de código aprimorados com IA\n- **CLIs**: Claude Code, Codex e outros assistentes de linha de comando\n- **Extensões**: GitHub Copilot, Cline, Continue, Roo Code e outros plugins de assistente de código\n- **Modelos**: DeepSeek, Kimi K2, GLM, Qwen, GPT, Claude e outros modelos de IA líderes\n- **Provedores**: OpenAI, Anthropic, DeepSeek, Moonshot, OpenRouter, SiliconFlow e outros\n\nO diretório é continuamente atualizado à medida que novas ferramentas e provedores surgem.',
+        'AI Coding Stack apresenta um catálogo abrangente de ferramentas e serviços de programação com IA:\n\n- **IDEs**: Visual Studio Code, Cursor, TRAE e outros editores de código aprimorados com IA\n- **CLIs**: Claude Code, Codex e outros assistentes de linha de comando\n- **Extensões**: GitHub Copilot, Cline, Continue, Roo Code e outros plugins de assistente de código\n- **Modelos**: DeepSeek, Kimi K2, GLM, Qwen, GPT, Claude e outros modelos de IA líderes\n- **Provedores**: OpenAI, Anthropic, DeepSeek, Moonshot, OpenRouter, SiliconFlow e outros\n\nO diretório é continuamente atualizado à medida que novas ferramentas e provedores surgem.',
     },
     {
-      title: 'O AI Coding Stack é open source? Posso contribuir?',
+      title: 'O AI Coding Stack é de código aberto? Posso contribuir?',
       content:
-        'Sim, AI Coding Stack é totalmente open source e lançado sob a licença Apache 2.0. O projeto recebe contribuições da comunidade! Você pode contribuir:\n\n- Adicionando ou atualizando metadados de ferramentas no diretório manifests (ides.json, clis.json, models.json, providers.json)\n- Relatando imprecisões ou informações desatualizadas\n- Sugerindo novas ferramentas para adicionar\n- Melhorando documentação e guias\n- Enviando pull requests\n\nVisite o [repositório GitHub](https://github.com/aicodingstack/aicodingstack.io) para começar a contribuir para o ecossistema de coding com IA.',
+        'Sim, AI Coding Stack é totalmente de código aberto e distribuído sob a licença Apache 2.0. O projeto recebe contribuições da comunidade. Você pode contribuir:\n\n- Adicionando ou atualizando metadados de ferramentas no diretório manifests (ides.json, clis.json, models.json, providers.json)\n- Relatando imprecisões ou informações desatualizadas\n- Sugerindo novas ferramentas para adicionar\n- Melhorando documentação e guias\n- Enviando pull requests\n\nVisite o [repositório GitHub](https://github.com/aicodingstack/aicodingstack.io) para começar a contribuir com o ecossistema de programação com IA.',
     },
     {
       title: 'Como o AI Coding Stack me ajuda a escolher as ferramentas certas?',
       content:
-        'AI Coding Stack fornece recursos de comparação detalhados e especificações para ajudar você a tomar decisões informadas:\n\n- **Comparação Lado a Lado**: Compare várias ferramentas em recursos principais, preços e capacidades\n- **Especificações Detalhadas**: Visualize janelas de contexto, limites de tokens, níveis de preços e suporte de plataforma\n- **Rastreamento de Última Versão**: Mantenha-se atualizado com os novos lançamentos e recursos\n- **Mantido pela Comunidade**: Beneficie-se de informações curadas revisadas por desenvolvedores\n- **Metadados Abrangentes**: Acesse documentação oficial, links de download e recursos da comunidade\n\nTodas as informações são organizadas para ajudar você a identificar rapidamente quais ferramentas melhor se adaptam ao seu fluxo de trabalho de desenvolvimento.',
+        'AI Coding Stack fornece recursos de comparação detalhados e especificações para ajudar você a tomar decisões informadas:\n\n- **Comparação lado a lado**: Compare várias ferramentas por recursos principais, preços e funcionalidades\n- **Especificações Detalhadas**: Visualize janelas de contexto, limites de tokens, níveis de preços e suporte de plataforma\n- **Rastreamento de Última Versão**: Mantenha-se atualizado com os novos lançamentos e recursos\n- **Mantido pela Comunidade**: Beneficie-se de informações curadas revisadas por desenvolvedores\n- **Metadados abrangentes**: Acesse documentação oficial, links para download e recursos da comunidade\n\nTodas as informações são organizadas para ajudar você a identificar rapidamente quais ferramentas melhor se adaptam ao seu fluxo de trabalho de desenvolvimento.',
     },
   ],
   ru: [
@@ -3452,12 +3452,12 @@ export const faqMetadata: Record<string, FaqItem[]> = {
     {
       title: '什么是 AI Coding Stack，它如何帮助开发者?',
       content:
-        'AI Coding Stack 是一个 AI 编码生态系统的综合目录和元数据仓库。它提供了一个集中平台，用于发现、对比和探索 AI 驱动的开发工具，包括 VS Code 和 Cursor 等 IDE、Claude Code 等命令行助手、iTerm2 和 Warp 等终端、LLM 模型和 API 提供商。无需在分散的资源中搜索，AI Coding Stack 在一个地方为你提供详细的规格、定价和功能对比。',
+        'AI Coding Stack 是一个 AI 编码生态系统的综合目录和元数据仓库。它提供了一个集中平台，用于发现、对比和探索 AI 驱动的开发工具，包括 VS Code 和 Cursor 等 IDE、Claude Code 等命令行助手、LLM 模型和 API 提供商。无需在分散的资源中搜索，AI Coding Stack 在一个地方为你提供详细的规格、定价和功能对比。',
     },
     {
       title: '如何使用 AI Coding Stack?',
       content:
-        'AI Coding Stack 是一个基于网站的目录，你可以直接在 aicodingstack.io 上浏览。无需安装！只需：\n\n- **探索类别**: 浏览 IDE、命令行、终端、模型和提供商\n- **对比工具**: 使用对比功能并排查看规格和定价\n- **阅读文档**: 访问每个工具的设置指南和最佳实践\n- **保持更新**: 查看所有工具的最新版本和规格\n\n平台会持续更新，添加新的工具和信息。',
+        'AI Coding Stack 是一个基于网站的目录，你可以直接在 aicodingstack.io 上浏览。无需安装！只需：\n\n- **探索类别**: 浏览 IDE、CLI、模型和提供商\n- **对比工具**: 使用对比功能并排查看规格和定价\n- **阅读文档**: 访问每个工具的设置指南和最佳实践\n- **保持更新**: 查看所有工具的最新版本和规格\n\n平台会持续更新，添加新的工具和信息。',
     },
     {
       title: 'AI Coding Stack 中列出了哪些 AI 编码工具和 LLM 提供商?',
@@ -3467,7 +3467,7 @@ export const faqMetadata: Record<string, FaqItem[]> = {
     {
       title: 'AI Coding Stack 是开源的吗? 我可以贡献吗?',
       content:
-        '是的，AI Coding Stack 完全开源，采用 MIT 许可证发布。项目欢迎社区贡献！你可以通过以下方式贡献：\n\n- 在 manifests 目录中添加或更新工具元数据 (ides.json, clis.json, models.json, providers.json)\n- 报告不准确或过时的信息\n- 建议添加新工具\n- 改进文档和指南\n- 提交 pull request\n\n访问 [GitHub 仓库](https://github.com/aicodingstack/aicodingstack.io) 开始为 AI 编码生态系统做贡献。',
+        '是的，AI Coding Stack 完全开源，采用 Apache 2.0 许可证发布。项目欢迎社区贡献！你可以通过以下方式贡献：\n\n- 在 manifests 目录中添加或更新工具元数据 (ides.json, clis.json, models.json, providers.json)\n- 报告不准确或过时的信息\n- 建议添加新工具\n- 改进文档和指南\n- 提交 pull request\n\n访问 [GitHub 仓库](https://github.com/aicodingstack/aicodingstack.io) 开始为 AI 编码生态系统做贡献。',
     },
     {
       title: 'AI Coding Stack 如何帮助我选择合适的工具?',
@@ -3477,29 +3477,29 @@ export const faqMetadata: Record<string, FaqItem[]> = {
   ],
   'zh-Hant': [
     {
-      title: 'AI Coding Stack 是什麼，如何幫助開發者？',
+      title: 'AI Coding Stack 是什麼？它如何協助開發者？',
       content:
-        'AI Coding Stack 是一個全面的 AI 編碼生態系統目錄和元數據存儲庫。它提供一個集中平台來發現、比較和探索 AI 驅動的開發工具，包括 VS Code 和 Cursor 等 IDE、Claude Code 等命令行助手、LLM 模型和 API 提供商。與其到處搜索分散的資源，AI Coding Stack 為您提供詳細的規格、價格和功能比較，全部在一個地方。',
+        'AI Coding Stack 是 AI 程式開發生態系統的完整目錄與詮釋資料儲存庫。它提供集中式平台，讓你探索、比較並瞭解各種 AI 驅動的開發工具，包括 VS Code 和 Cursor 等 IDE、Claude Code 等命令列助理、LLM 模型與 API 供應商。你不必分散搜尋各種來源，就能在同一處查看詳細規格、價格與功能比較。',
     },
     {
       title: '如何使用 AI Coding Stack？',
       content:
-        'AI Coding Stack 是一個基於網站的目錄，您可以直接在 aicodingstack.io 上瀏覽。無需安裝！只需：\n\n- **瀏覽分類**：瀏覽 IDE、CLI、模型和提供商\n- **比較工具**：使用比較功能並排查看規格和價格\n- **閱讀文檔**：訪問每個工具的設置指南和最佳實踐\n- **保持更新**：查看所有工具的最新版本和規格\n\n該平台隨著新工具和信息的可用性而不斷更新。',
+        'AI Coding Stack 是可直接在 aicodingstack.io 瀏覽的網站目錄，不需要安裝。你可以：\n\n- **探索類別**：瀏覽 IDE、CLI、模型與供應商\n- **比較工具**：使用比較功能並排查看規格與價格\n- **閱讀文件**：查閱各項工具的設定指南與最佳實務\n- **掌握更新**：查看所有工具的最新版本與規格\n\n平台會隨新工具與資訊推出而持續更新。',
     },
     {
-      title: 'AI Coding Stack 中列出了哪些 AI 編碼工具和 LLM 提供商？',
+      title: 'AI Coding Stack 收錄哪些 AI 程式開發工具與 LLM 供應商？',
       content:
-        'AI Coding Stack 提供了全面的 AI 編碼工具和服務目錄：\n\n- **IDE**：Visual Studio Code、Cursor、TRAE 和其他 AI 增強代碼編輯器\n- **CLI**：Claude Code、Codex 和其他命令行 AI 助手\n- **擴展**：GitHub Copilot、Cline、Continue、Roo Code 和其他 AI 代碼助手插件\n- **模型**：DeepSeek、Kimi K2、GLM、Qwen、GPT、Claude 和其他領先的 AI 模型\n- **提供商**：OpenAI、Anthropic、DeepSeek、Moonshot、OpenRouter、SiliconFlow 等等\n\n隨著新工具和提供商的出現，目錄會不斷更新。',
+        'AI Coding Stack 收錄完整的 AI 程式開發工具與服務：\n\n- **IDE**：Visual Studio Code、Cursor、TRAE，以及其他整合 AI 的程式碼編輯器\n- **CLI**：Claude Code、Codex，以及其他命令列 AI 助理\n- **擴充套件**：GitHub Copilot、Cline、Continue、Roo Code，以及其他 AI 程式開發助理外掛\n- **模型**：DeepSeek、Kimi K2、GLM、Qwen、GPT、Claude，以及其他主流 AI 模型\n- **供應商**：OpenAI、Anthropic、DeepSeek、Moonshot、OpenRouter、SiliconFlow 等\n\n目錄會隨新工具與供應商出現而持續更新。',
     },
     {
-      title: 'AI Coding Stack 是開源的嗎？我可以貢獻嗎？',
+      title: 'AI Coding Stack 是開放原始碼嗎？我可以參與貢獻嗎？',
       content:
-        '是的，AI Coding Stack 完全開源，根據 Apache 2.0 許可證發布。該項目歡迎社區貢獻！您可以通過以下方式貢獻：\n\n- 在 manifests 目錄中添加或更新工具元數據（ides.json、clis.json、models.json、providers.json）\n- 報告不準確或過時的信息\n- 建議添加新工具\n- 改進文檔和指南\n- 提交 pull requests\n\n訪問 [GitHub 倉庫](https://github.com/aicodingstack/aicodingstack.io) 開始為 AI 編碼生態系統做出貢獻。',
+        '是的，AI Coding Stack 完全開放原始碼，並採用 Apache 2.0 授權條款。專案歡迎社群參與，你可以：\n\n- 在 manifests 目錄中新增或更新工具詮釋資料（ides.json、clis.json、models.json、providers.json）\n- 回報不正確或過時的資訊\n- 建議收錄新工具\n- 改善文件與指南\n- 提交 pull request\n\n請前往 [GitHub 儲存庫](https://github.com/aicodingstack/aicodingstack.io)，開始為 AI 程式開發生態系統做出貢獻。',
     },
     {
-      title: 'AI Coding Stack 如何幫助我選擇正確的工具？',
+      title: 'AI Coding Stack 如何協助我選擇合適的工具？',
       content:
-        'AI Coding Stack 提供詳細的比較功能和規格，幫助您做出明智的決定：\n\n- **並排比較**：根據關鍵功能、價格和能力比較多個工具\n- **詳細規格**：查看上下文窗口、token 限制、價格層級和平台支持\n- **最新版本追蹤**：了解最新版本和功能\n- **社區維護**：受益於開發者審核的策展信息\n- **全面元數據**：訪問官方文檔、下載鏈接和社區資源\n\n所有信息都經過組織，幫助您快速識別哪些工具最適合您的開發工作流程。',
+        'AI Coding Stack 提供詳細比較功能與規格，協助你做出有根據的決策：\n\n- **並排比較**：依關鍵功能、價格與能力比較多項工具\n- **詳細規格**：查看情境窗口、token 上限、價格方案與平台支援\n- **最新版本追蹤**：掌握最新版本與功能\n- **社群維護**：使用由開發者審查與整理的資訊\n- **完整詮釋資料**：存取官方文件、下載連結與社群資源\n\n所有資訊都經過整理，協助你快速找出最符合開發流程的工具。',
     },
   ],
 }

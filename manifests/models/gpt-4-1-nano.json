@@ -5,37 +5,37 @@
   "description": "Smallest GPT-4.1 model, optimized for high-volume classification, extraction, code-adjacent automation, and low latency.",
   "translations": {
     "zh-Hans": {
-      "description": "GPT-4.1 nano 是 OpenAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "最小的 GPT-4.1 模型，针对大规模分类、提取、代码相关自动化和低延迟进行了优化。"
     },
     "de": {
-      "description": "GPT-4.1 nano ist eine eigenständige Modellversion von OpenAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Kleinstes GPT-4.1-Modell für Klassifizierung und Extraktion in großem Umfang, Code-Automatisierung und geringe Latenz."
     },
     "es": {
-      "description": "GPT-4.1 nano es una versión de modelo independiente de OpenAI con capacidades explícitas de programación o ingeniería de software."
+      "description": "El modelo GPT-4.1 más pequeño, para clasificación y extracción a gran escala, automatización relacionada con código y baja latencia."
     },
     "fr": {
-      "description": "GPT-4.1 nano est une version de modèle distincte de OpenAI, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Le plus petit modèle GPT-4.1, pour la classification et l’extraction à grande échelle, l’automatisation liée au code et la faible latence."
     },
     "id": {
-      "description": "GPT-4.1 nano adalah versi model mandiri dari OpenAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model GPT-4.1 terkecil untuk klasifikasi dan ekstraksi skala besar, otomatisasi terkait kode, serta latensi rendah."
     },
     "ja": {
-      "description": "GPT-4.1 nano は OpenAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "大量の分類・抽出、コード関連の自動化、低遅延向けに最適化された最小のGPT-4.1モデル。"
     },
     "ko": {
-      "description": "GPT-4.1 nano은(는) OpenAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "대규모 분류·추출, 코드 관련 자동화와 낮은 지연 시간에 최적화된 최소형 GPT-4.1 모델입니다."
     },
     "pt": {
-      "description": "GPT-4.1 nano é uma versão de modelo independente da OpenAI, com capacidades explícitas de programação ou engenharia de software."
+      "description": "O menor modelo GPT-4.1, para classificação e extração em escala, automação relacionada a código e baixa latência."
     },
     "ru": {
-      "description": "GPT-4.1 nano — самостоятельная версия модели от OpenAI с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Самая компактная GPT-4.1 для массовой классификации и извлечения данных, автоматизации рядом с кодом и низкой задержки."
     },
     "tr": {
-      "description": "GPT-4.1 nano, OpenAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Yüksek hacimli sınıflandırma ve çıkarma, kodla ilişkili otomasyon ve düşük gecikme için en küçük GPT-4.1 modeli."
     },
     "zh-Hant": {
-      "description": "GPT-4.1 nano 是 OpenAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "最小的 GPT-4.1 模型，針對大規模分類、擷取、程式碼相關自動化和低延遲最佳化。"
     }
   },
   "verified": true,

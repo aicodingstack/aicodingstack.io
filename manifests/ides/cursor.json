@@ -35,7 +35,7 @@
       "description": "VS Code üzerinde inşa edilmiş, kod oluşturma, düzenleme ve anlama için gelişmiş AI yeteneklerine sahip destekli bir kod düzenleyici."
     },
     "zh-Hant": {
-      "description": "基於 VS Code 構建的 AI 驅動代碼編輯器，具有高級 AI 功能，用於代碼生成、編輯和理解。"
+      "description": "以 VS Code 為基礎的 AI 驅動程式碼編輯器，提供程式碼產生、編輯與理解等進階 AI 功能。"
     }
   },
   "verified": true,

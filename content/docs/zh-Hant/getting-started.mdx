@@ -1,67 +1,67 @@
 ---
-title: "快速開始"
+title: "開始使用"
 ---
 
-# 快速開始
+# 開始使用
 
-AI Coding Stack 是 AI 編碼生態系統的綜合目錄和元數據存儲庫。本指南將幫助您了解如何使用網站並為項目做出貢獻。
+AI Coding Stack 是 AI 程式開發生態系統的完整目錄與詮釋資料儲存庫。本指南將協助你瞭解如何使用網站，以及如何參與專案。
 
-## 探索 Stack
+## 探索技術堆疊
 
 ### 瀏覽類別
 
-訪問 [aicodingstack.io](https://aicodingstack.io) 以探索不同類別的 AI 編碼工具：
+前往 [aicodingstack.io](https://aicodingstack.io)，探索不同類別的 AI 程式開發工具：
 
-- **IDEs** - 尋找 AI 驅動的集成開發環境（VS Code、Cursor、TRAE）
-- **CLIs** - 探索命令行 AI 編碼助手（Codex、Claude Code）
-- **Models** - 比較編碼用大型語言模型（Kimi K2、DeepSeek V3.1、GLM 4.5、Qwen3 Coder）
-- **Providers** - 審查 LLM API 提供商（DeepSeek、Moonshot、SiliconFlow、OpenRouter）
+- **IDE** - 尋找整合 AI 的開發環境（VS Code、Cursor、TRAE）
+- **CLI** - 探索命令列 AI 程式開發助理（Codex、Claude Code）
+- **模型** - 比較適合程式開發的大型語言模型（Kimi K2、DeepSeek V3.1、GLM 4.5、Qwen3 Coder）
+- **供應商** - 查看 LLM API 供應商（DeepSeek、Moonshot、SiliconFlow、OpenRouter）
 
 ### 比較工具
 
-使用並排比較網站上的不同工具，查看它們的功能、能力和官方文檔鏈接。
+使用網站並排比較不同工具，檢視功能、能力與官方文件連結。
 
-## 為元數據做出貢獻
+## 貢獻詮釋資料
 
-AI Coding Stack 由社群維護。您可以通過在我們的 manifest 文件中添加新工具或更新現有條目來做出貢獻。
+AI Coding Stack 由社群共同維護。你可以在 manifest 檔案中新增工具，或更新既有項目。
 
-## 理解 Manifest
+### 認識 Manifest
 
-所有工具元數據都存儲在 `manifests/` 目錄下的 JSON 文件中：
+所有工具的詮釋資料都儲存在 `manifests/` 目錄下的 JSON 檔案：
 
-- `ides.json` - IDE 元數據
-- `clis.json` - CLI 工具元數據
-- `models.json` - LLM 模型元數據
-- `providers.json` - API 提供商元數據
+- `ides.json` - IDE 詮釋資料
+- `clis.json` - CLI 工具詮釋資料
+- `models.json` - LLM 模型詮釋資料
+- `providers.json` - API 供應商詮釋資料
 
-### 添加新工具
+### 新增工具
 
-1. 複製存儲庫
-2. 在 `manifests/` 中找到適當的 manifest 文件
-3. 按照現有架構添加您的條目
-4. 確保所有 URL 都可訪問
+1. 複製儲存庫
+2. 在 `manifests/` 中找到適當的 manifest 檔案
+3. 依照現有結構新增項目
+4. 確認所有 URL 均可存取
 5. 提交 pull request
 
-### Manifest 架構示例
+### Manifest 結構範例
 
-**對於 IDEs/CLIs：**
+**IDE/CLI：**
 ```json
 {
-  "name": "工具名稱",
+  "name": "Tool Name",
   "id": "tool-id",
-  "vendor": "供應商名稱",
-  "description": "簡短描述",
+  "vendor": "Vendor Name",
+  "description": "Brief description",
   "websiteUrl": "https://...",
   "docsUrl": "https://...",
   "latestVersion": "1.0.0"
 }
 ```
 
-**對於 Models：**
+**模型：**
 ```json
 {
-  "name": "模型名稱",
-  "vendor": "供應商",
+  "name": "Model Name",
+  "vendor": "Vendor",
   "id": "model-id",
   "size": "70B",
   "contextWindow": 128000,
@@ -73,7 +73,7 @@ AI Coding Stack 由社群維護。您可以通過在我們的 manifest 文件中
 
 ## 後續步驟
 
-- 瀏覽 [AI Coding Stack](/ai-coding-stack) 以發現工具
-- 檢查 `manifests/` 目錄以查看元數據是如何構建的
-- 閱讀 [CLAUDE.md](https://github.com/aicodingstack/aicodingstack.io/blob/main/CLAUDE.md) 以獲取詳細的貢獻指南
-- 提交您的第一次貢獻以幫助擴展目錄
+- 瀏覽 [AI Coding Stack](/ai-coding-stack) 以探索工具
+- 查看 `manifests/` 目錄，瞭解詮釋資料的組織方式
+- 閱讀 [CLAUDE.md](https://github.com/aicodingstack/aicodingstack.io/blob/main/CLAUDE.md) 以取得詳細的貢獻指南
+- 提交第一項貢獻，協助擴充目錄

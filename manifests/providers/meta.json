@@ -26,7 +26,7 @@
       "description": "コーディング、推論、コンテンツ生成など様々な用途向けのLlamaを含め、オープンソースの基盤モデルを提供するMetaのAI研究部門。"
     },
     "pt": {
-      "description": "A divisão de pesquisa de IA da Meta, fornecendo modelos de base open source, incluindo Llama para várias aplicações em codificação, raciocínio e geração de conteúdo."
+      "description": "A divisão de pesquisa em IA da Meta oferece modelos fundamentais de código aberto, incluindo o Llama, para vários aplicativos de programação, raciocínio e geração de conteúdo."
     },
     "ru": {
       "description": "Исследовательское подразделение ИИ Meta, предоставляющее открытые фундаментальные модели, включая Llama для различных приложений в области программирования, рассуждений и создания контента."
@@ -35,7 +35,7 @@
       "description": "Çeşitli uygulamalarda kodlama, akıl yürütme ve içerik oluşturma için Llama dahil olmak üzere açık kaynaklı temel modeller sunan Meta'nın AI araştırma departmanı."
     },
     "zh-Hant": {
-      "description": "Meta 的 AI 研究部門，提供開源基礎模型，包括 Llama，用於編碼、推理和內容生成等各種應用。"
+      "description": "Meta 的 AI 研究部門，提供開放原始碼基礎模型，包括 Llama，用於程式設計、推理和內容產生等各種應用。"
     }
   },
   "verified": false,

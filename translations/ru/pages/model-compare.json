@@ -6,11 +6,10 @@
   "compareTitle": "Сравнить {model1} vs {model2}",
   "description": "Описание",
   "inputPrice": "Цена ввода",
-  "knowledgeCutoff": "Знания",
+  "knowledgeCutoff": "Актуальность знаний до",
   "lifecycle": "Жизненный цикл",
   "outputPrice": "Цена вывода",
   "releaseDate": "Дата выпуска",
   "selectModel": "Выбрать модель",
-  "selectTwoModels": "Выберите две модели для сравнения",
-  "verified": "Проверено"
+  "selectTwoModels": "Выберите две модели для сравнения"
 }

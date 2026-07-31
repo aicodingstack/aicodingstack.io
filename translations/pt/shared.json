@@ -6,7 +6,7 @@
     "compareAll": "Comparar Todos",
     "connect": "Conectar em {platform}",
     "discover": "Descobrir",
-    "download": "Download",
+    "download": "Baixar",
     "explore": "Explorar",
     "follow": "Seguir em {platform}",
     "join": "Juntar-se a {platform}",
@@ -28,7 +28,7 @@
     "webDevArena": "WebDev Arena"
   },
   "capabilities": {
-    "capabilities": "Capacidades",
+    "capabilities": "Recursos",
     "functionCalling": "Chamada de função",
     "inputModalities": "Modalidades de entrada",
     "outputModalities": "Modalidades de saída",
@@ -38,16 +38,15 @@
   },
   "categories": {
     "all": {
-      "clis": "All CLIs",
-      "desktops": "All Desktop Apps",
-      "extensions": "All Extensions",
-      "ides": "All IDEs",
-      "modelProviders": "All Model Providers",
+      "clis": "Todas as CLIs",
+      "desktops": "Todos os aplicativos desktop",
+      "extensions": "Todas as extensões",
+      "ides": "Todas as IDEs",
+      "modelProviders": "Todos os provedores de modelos",
       "models": "Todos os modelos",
-      "vendors": "All Vendors"
+      "vendors": "Todos os fornecedores"
     },
     "plural": {
-      "collections": "Coleções",
       "clis": "CLIs",
       "desktops": "Aplicativos desktop",
       "extensions": "Extensões",
@@ -59,12 +58,12 @@
     },
     "singular": {
       "cli": "CLI",
-      "desktop": "Desktop",
-      "extension": "Extension",
+      "desktop": "Aplicativo desktop",
+      "extension": "Extensão",
       "ide": "IDE",
       "model": "Modelo",
-      "modelProvider": "Model Provider",
-      "provider": "Provider",
+      "modelProvider": "Provedor de modelos",
+      "provider": "Provedor",
       "vendor": "Fornecedor"
     }
   },
@@ -101,7 +100,7 @@
       "inputTokens": "tokens de entrada"
     },
     "notAvailable": "Não disponível",
-    "perMillionTokens": "{price} / 1M tokens",
+    "perMillionTokens": "{price} / 1 milhão de tokens",
     "reasons": {
       "historicalPriceUnverified": "O preço histórico da API não foi verificado.",
       "officialPriceNotPublished": "Não foi publicado um preço oficial por token.",
@@ -129,7 +128,7 @@
     "aiCoding": "Codificação IA",
     "aiCodingStack": "AI Coding Stack",
     "articles": "Artigos",
-    "benchmarks": "Benchmarks",
+    "benchmarks": "Testes de desempenho",
     "by": "por",
     "collections": "Coleções",
     "community": "Comunidade",
@@ -139,13 +138,13 @@
     "curatedCollections": "Coleções curadas",
     "docs": "Documentação",
     "documentation": "Documentação",
-    "ecosystemSubtitle": "Explore o ecossistema completo de AI coding: IDEs, CLIs, extensões, modelos e provedores.",
+    "ecosystemSubtitle": "Explore o ecossistema completo de programação com IA: IDEs, CLIs, extensões, modelos e provedores.",
     "ecosystemTools": "Ferramentas do ecossistema",
     "faq": "FAQ",
     "featuredArticles": "Artigos em destaque",
     "followUs": "Siga-nos",
     "indexLabel": "Índice",
-    "landscapeDescription": "Visualize o ecossistema completo de AI coding",
+    "landscapeDescription": "Visualize o ecossistema completo de programação com IA",
     "landscapeTitle": "Paisagem AI Coding",
     "license": "Licença",
     "manifesto": "Manifesto",

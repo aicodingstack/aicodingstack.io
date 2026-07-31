@@ -5,37 +5,37 @@
   "description": "Compact reasoning model optimized for coding, mathematics, and science with configurable reasoning effort.",
   "translations": {
     "zh-Hans": {
-      "description": "o3-mini 是 OpenAI 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "针对编码、数学和科学优化的紧凑型推理模型，支持配置推理强度。"
     },
     "de": {
-      "description": "o3-mini ist eine eigenständige Modellversion von OpenAI mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Kompaktes Reasoning-Modell für Coding, Mathematik und Naturwissenschaften mit konfigurierbarem Denkaufwand."
     },
     "es": {
-      "description": "o3-mini es una versión de modelo independiente de OpenAI con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo compacto de razonamiento para programación, matemáticas y ciencias, con esfuerzo de razonamiento configurable."
     },
     "fr": {
-      "description": "o3-mini est une version de modèle distincte de OpenAI, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle de raisonnement compact pour le codage, les mathématiques et les sciences, avec effort de raisonnement réglable."
     },
     "id": {
-      "description": "o3-mini adalah versi model mandiri dari OpenAI dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model penalaran ringkas untuk coding, matematika, dan sains dengan tingkat penalaran yang dapat diatur."
     },
     "ja": {
-      "description": "o3-mini は OpenAI が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "調整可能な推論量を備え、コーディング、数学、科学向けに最適化されたコンパクトな推論モデル。"
     },
     "ko": {
-      "description": "o3-mini은(는) OpenAI가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "조정 가능한 추론 수준으로 코딩, 수학과 과학에 최적화된 소형 추론 모델입니다."
     },
     "pt": {
-      "description": "o3-mini é uma versão de modelo independente da OpenAI, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo compacto de raciocínio para programação, matemática e ciências, com esforço de raciocínio configurável."
     },
     "ru": {
-      "description": "o3-mini — самостоятельная версия модели от OpenAI с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Компактная модель рассуждений для программирования, математики и естественных наук с настраиваемой глубиной рассуждений."
     },
     "tr": {
-      "description": "o3-mini, OpenAI tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "Ayarlanabilir akıl yürütme düzeyiyle kodlama, matematik ve bilim için optimize edilmiş kompakt model."
     },
     "zh-Hant": {
-      "description": "o3-mini 是 OpenAI 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "針對程式設計、數學和科學最佳化的精簡型推理模型，支援設定推理強度。"
     }
   },
   "verified": true,

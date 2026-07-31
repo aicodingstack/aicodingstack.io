@@ -29,7 +29,7 @@
       "description": "Открытая мультимодальная модель Google DeepMind на 31 млрд параметров для рассуждений, программирования, визуального понимания, функций и агентов с контекстом 256K."
     },
     "tr": {
-      "description": "Akıl yürütme, kodlama, görsel anlama, işlev çağırma ve aracı iş akışları için Google DeepMind'ın 256K bağlamlı 31B açık ağırlıklı çok modlu modeli."
+      "description": "Akıl yürütme, kodlama, görsel anlama, işlev çağırma ve ajan iş akışları için Google DeepMind'ın 256K bağlamlı 31B açık ağırlıklı çok modlu modeli."
     },
     "zh-Hans": {
       "description": "Google DeepMind 面向推理、编程、视觉理解、函数调用和智能体工作流的 31B 开放权重多模态模型，提供 256K 上下文。"

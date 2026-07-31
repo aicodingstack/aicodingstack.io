@@ -2,37 +2,37 @@
   "$schema": "../$schemas/desktop.schema.json",
   "translations": {
     "de": {
-      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+      "description": "Claude Code Desktop ist die eigenständige Coding-App von Anthropic zum parallelen Ausführen von Sitzungen, Prüfen von Diffs, Bearbeiten von Dateien und Arbeiten mit einem integrierten Terminal."
     },
     "es": {
-      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+      "description": "Claude Code Desktop es la aplicación de programación independiente de Anthropic para ejecutar sesiones en paralelo, revisar diferencias, editar archivos y trabajar con un terminal integrado."
     },
     "fr": {
-      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+      "description": "Claude Code Desktop est l’application de codage autonome d’Anthropic pour exécuter des sessions en parallèle, examiner les diffs, modifier des fichiers et travailler avec un terminal intégré."
     },
     "id": {
-      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+      "description": "Claude Code Desktop adalah aplikasi coding mandiri dari Anthropic untuk menjalankan sesi secara paralel, meninjau diff, mengedit berkas, dan bekerja dengan terminal terintegrasi."
     },
     "ja": {
-      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+      "description": "Claude Code Desktop は、セッションの並列実行、diff の確認、ファイル編集、統合ターミナルでの作業に対応する Anthropic のスタンドアロン型コーディングアプリです。"
     },
     "ko": {
-      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+      "description": "Claude Code Desktop은 세션 병렬 실행, diff 검토, 파일 편집, 통합 터미널 작업을 위한 Anthropic의 독립형 코딩 앱입니다."
     },
     "pt": {
-      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+      "description": "O Claude Code Desktop é o aplicativo de programação independente da Anthropic para executar sessões em paralelo, revisar diffs, editar arquivos e trabalhar com um terminal integrado."
     },
     "ru": {
-      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+      "description": "Claude Code Desktop — отдельное приложение Anthropic для параллельного запуска сеансов программирования, просмотра diff, редактирования файлов и работы со встроенным терминалом."
     },
     "tr": {
-      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+      "description": "Claude Code Desktop, paralel oturumlar çalıştırmak, diff'leri incelemek, dosyaları düzenlemek ve tümleşik terminalle çalışmak için Anthropic'in bağımsız kodlama uygulamasıdır."
     },
     "zh-Hans": {
-      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+      "description": "Claude Code Desktop 是 Anthropic 的独立编码应用，支持并行运行会话、审查差异、编辑文件，以及使用集成终端工作。"
     },
     "zh-Hant": {
-      "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
+      "description": "Claude Code Desktop 是 Anthropic 的獨立程式設計應用程式，支援平行執行工作階段、檢查差異、編輯檔案，以及使用整合式終端機工作。"
     }
   },
   "verified": true,

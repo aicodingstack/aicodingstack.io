@@ -14,10 +14,10 @@
       "description": "Qwen3 Coder 30B-A3B는 총 30.5B, 활성 3.3B 파라미터와 네이티브 262,144 토큰 컨텍스트 윈도를 갖춘 에이전트 코딩 모델입니다."
     },
     "es": {
-      "description": "Qwen3 Coder 30B-A3B es un modelo de codigo con 30,5B parametros totales y 3,3B activos, ademas de una ventana de contexto nativa de 262.144 tokens para programacion agentica."
+      "description": "Qwen3 Coder 30B-A3B es un modelo de código con 30,5B parámetros totales y 3,3B activos, además de una ventana de contexto nativa de 262.144 tokens para programación agéntica."
     },
     "fr": {
-      "description": "Qwen3 Coder 30B-A3B est un modele de code avec 30,5B parametres au total, 3,3B actifs et une fenetre de contexte native de 262 144 jetons pour le codage agentique."
+      "description": "Qwen3 Coder 30B-A3B est un modèle de code avec 30,5B paramètres au total, 3,3B actifs et une fenêtre de contexte native de 262 144 jetons pour le codage agentique."
     },
     "id": {
       "description": "Qwen3 Coder 30B-A3B adalah model kode dengan total 30,5B dan 3,3B parameter aktif serta jendela konteks native 262.144 token untuk coding agentik."
@@ -26,16 +26,16 @@
       "description": "Qwen3 Coder 30B-A3Bは、総30.5B・有効3.3Bパラメータとネイティブ262,144トークンのコンテキストを備えたエージェントコーディングモデルです。"
     },
     "pt": {
-      "description": "Qwen3 Coder 30B-A3B e um modelo de codigo com 30,5B parametros totais e 3,3B ativos, alem de uma janela de contexto nativa de 262.144 tokens para programacao agentica."
+      "description": "Qwen3 Coder 30B-A3B é um modelo de código com 30,5 bilhões de parâmetros totais, 3,3 bilhões ativos e contexto nativo de 262.144 tokens para programação agêntica."
     },
     "ru": {
       "description": "Qwen3 Coder 30B-A3B — модель для кода с 30,5B параметров всего, 3,3B активных и нативным контекстным окном 262 144 токена для агентного программирования."
     },
     "tr": {
-      "description": "Qwen3 Coder 30B-A3B, toplam 30,5B ve etkin 3,3B parametre ile ajan tabanli kodlama icin yerel 262.144 token baglam penceresine sahip bir kod modelidir."
+      "description": "Qwen3 Coder 30B-A3B, toplam 30,5B ve etkin 3,3B parametre ile ajan tabanlı kodlama için yerel 262.144 token bağlam penceresine sahip bir kod modelidir."
     },
     "zh-Hant": {
-      "description": "Qwen3 Coder 30B-A3B 是一款程式碼模型，擁有 30.5B 總參數和 3.3B 啟用參數，並具備原生 262,144 token 上下文視窗，面向智能體編程。"
+      "description": "Qwen3 Coder 30B-A3B 是一款程式碼模型，擁有 30.5B 總參數和 3.3B 啟用參數，並具備原生 262,144 token 上下文視窗，面向智慧體程式設計。"
     }
   },
   "verified": true,

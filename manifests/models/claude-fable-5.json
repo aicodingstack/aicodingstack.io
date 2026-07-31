@@ -29,7 +29,7 @@
       "description": "Самая мощная широко доступная модель Anthropic для сложных рассуждений и длительной агентной работы с контекстным окном в 1 млн токенов."
     },
     "tr": {
-      "description": "Anthropic’in 1 milyon token bağlam penceresiyle zorlu akıl yürütme ve uzun vadeli aracı çalışmaları için geliştirilmiş en yetenekli, geniş kullanıma sunulan modeli."
+      "description": "Anthropic’in 1 milyon token bağlam penceresiyle zorlu akıl yürütme ve uzun vadeli ajan çalışmaları için geliştirilmiş en yetenekli, geniş kullanıma sunulan modeli."
     },
     "zh-Hans": {
       "description": "Anthropic 能力最强的广泛发布模型，面向高难度推理和长周期智能体任务，提供 100 万 token 上下文窗口。"

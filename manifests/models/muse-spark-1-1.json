@@ -29,13 +29,13 @@
       "description": "Мультимодальная модель рассуждений Meta для агентов программирования, длительной работы с инструментами и сложной разработки."
     },
     "tr": {
-      "description": "Meta'nın kodlama aracıları, uzun süreli araç kullanımı, bilgisayar kontrolü ve karmaşık yazılım mühendisliği için çok modlu akıl yürütme modeli."
+      "description": "Meta'nın kodlama ajanları, uzun süreli araç kullanımı, bilgisayar kontrolü ve karmaşık yazılım mühendisliği için çok modlu akıl yürütme modeli."
     },
     "zh-Hans": {
       "description": "Meta 面向编码智能体、长时间工具调用、计算机操作和复杂软件工程的多模态推理模型。"
     },
     "zh-Hant": {
-      "description": "Meta 面向編碼智慧體、長時間工具呼叫、電腦操作和複雜軟體工程的多模態推理模型。"
+      "description": "Meta 面向程式設計智慧體、長時間工具呼叫、電腦操作和複雜軟體工程的多模態推理模型。"
     }
   },
   "verified": true,

@@ -47,7 +47,6 @@
       "vendors": "すべてのベンダー"
     },
     "plural": {
-      "collections": "コレクション",
       "clis": "CLI",
       "desktops": "デスクトップ",
       "extensions": "拡張機能",
@@ -64,12 +63,12 @@
       "ide": "IDE",
       "model": "モデル",
       "modelProvider": "モデルプロバイダー",
-      "provider": "Provider",
+      "provider": "プロバイダー",
       "vendor": "ベンダー"
     }
   },
   "labels": {
-    "cache": "Cache",
+    "cache": "キャッシュ",
     "findOnAiPlatforms": "AIプラットフォームで探す",
     "getApiKey": "APIキーを取得",
     "input": "入力",
@@ -148,7 +147,7 @@
     "landscapeDescription": "AIコーディングエコシステム全体を可視化",
     "landscapeTitle": "AIコーディングランドスケープ",
     "license": "ライセンス",
-    "manifesto": "Manifesto",
+    "manifesto": "マニフェスト",
     "maxOutput": "最大出力",
     "modelSize": "モデルサイズ",
     "openSource": "オープンソース",

@@ -35,7 +35,7 @@
       "description": "一款总参数 106B、激活参数 12B 的视觉推理 MoE 模型，面向图像、视频、文档、GUI 和网页编码任务。"
     },
     "zh-Hant": {
-      "description": "一款總參數 106B、啟用參數 12B 的視覺推理 MoE 模型，面向圖像、影片、文件、GUI 和網頁編碼任務。"
+      "description": "一款總參數 106B、啟用參數 12B 的視覺推理 MoE 模型，面向圖像、影片、文件、GUI 和網頁程式設計任務。"
     }
   },
   "verified": true,

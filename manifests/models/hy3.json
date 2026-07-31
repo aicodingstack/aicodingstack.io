@@ -29,7 +29,7 @@
       "description": "MoE-модель Tencent с открытыми весами и 295 млрд параметров для рассуждений, программирования, инструментов и длительных агентных задач с контекстом 256K."
     },
     "tr": {
-      "description": "Akıl yürütme, kodlama, araç kullanımı ve uzun süreli aracı görevler için Tencent'in 295B açık ağırlıklı MoE dil modeli; 256K bağlam sunar."
+      "description": "Akıl yürütme, kodlama, araç kullanımı ve uzun süreli ajan görevleri için Tencent'in 295B açık ağırlıklı MoE dil modeli; 256K bağlam sunar."
     },
     "zh-Hans": {
       "description": "Tencent 面向推理、编程、工具使用和长周期智能体任务的 295B 开放权重 MoE 语言模型，提供 256K 上下文。"

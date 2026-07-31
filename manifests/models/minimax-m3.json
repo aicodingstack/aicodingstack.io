@@ -29,13 +29,13 @@
       "description": "Открытая передовая модель MiniMax сочетает программирование и агентов, контекст 1 млн, нативное понимание изображений и видео и управление компьютером."
     },
     "tr": {
-      "description": "MiniMax'in açık ağırlıklı öncü modeli; kodlama ve aracı performansı, 1M bağlam, yerel görüntü-video anlayışı ve bilgisayar kullanımını birleştirir."
+      "description": "MiniMax'in açık ağırlıklı öncü modeli; kodlama ve ajan performansı, 1M bağlam, yerel görüntü-video anlayışı ve bilgisayar kullanımını birleştirir."
     },
     "zh-Hans": {
       "description": "MiniMax 的开放权重前沿模型，结合编码与智能体能力、100 万 token 上下文、原生图像和视频理解以及计算机使用。"
     },
     "zh-Hant": {
-      "description": "MiniMax 的開放權重前沿模型，結合編碼與智慧體能力、100 萬 token 上下文、原生圖像和影片理解以及電腦使用。"
+      "description": "MiniMax 的開放權重前沿模型，結合程式設計與智慧體能力、100 萬 token 上下文、原生圖像和影片理解以及電腦使用。"
     }
   },
   "verified": true,

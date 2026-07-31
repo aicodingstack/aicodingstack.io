@@ -5,37 +5,37 @@
   "description": "Fast, cost-efficient Gemini 2.5 model with optional thinking, code execution, tools, and multimodal input.",
   "translations": {
     "zh-Hans": {
-      "description": "Gemini 2.5 Flash-Lite 是 Google 发布的独立模型版本，具备明确的编程或软件工程能力。"
+      "description": "快速且经济的 Gemini 2.5 模型，支持可选思考、代码执行、工具和多模态输入。"
     },
     "de": {
-      "description": "Gemini 2.5 Flash-Lite ist eine eigenständige Modellversion von Google mit klar ausgewiesenen Fähigkeiten für Programmierung oder Softwareentwicklung."
+      "description": "Schnelles, kosteneffizientes Gemini-2.5-Modell mit optionalem Denken, Codeausführung, Werkzeugen und multimodaler Eingabe."
     },
     "es": {
-      "description": "Gemini 2.5 Flash-Lite es una versión de modelo independiente de Google con capacidades explícitas de programación o ingeniería de software."
+      "description": "Modelo Gemini 2.5 rápido y económico con razonamiento opcional, ejecución de código, herramientas y entrada multimodal."
     },
     "fr": {
-      "description": "Gemini 2.5 Flash-Lite est une version de modèle distincte de Google, dotée de capacités explicites en programmation ou en génie logiciel."
+      "description": "Modèle Gemini 2.5 rapide et économique avec raisonnement optionnel, exécution de code, outils et entrée multimodale."
     },
     "id": {
-      "description": "Gemini 2.5 Flash-Lite adalah versi model mandiri dari Google dengan kemampuan pemrograman atau rekayasa perangkat lunak yang dinyatakan secara jelas."
+      "description": "Model Gemini 2.5 yang cepat dan hemat biaya dengan penalaran opsional, eksekusi kode, alat, dan input multimodal."
     },
     "ja": {
-      "description": "Gemini 2.5 Flash-Lite は Google が公開した独立したモデル版で、プログラミングまたはソフトウェアエンジニアリング能力を明示しています。"
+      "description": "任意の思考、コード実行、ツール、マルチモーダル入力に対応する高速で低コストなGemini 2.5モデル。"
     },
     "ko": {
-      "description": "Gemini 2.5 Flash-Lite은(는) Google가 공개한 독립 모델 버전으로, 프로그래밍 또는 소프트웨어 엔지니어링 기능을 명시적으로 제공합니다."
+      "description": "선택적 사고, 코드 실행, 도구와 멀티모달 입력을 지원하는 빠르고 경제적인 Gemini 2.5 모델입니다."
     },
     "pt": {
-      "description": "Gemini 2.5 Flash-Lite é uma versão de modelo independente da Google, com capacidades explícitas de programação ou engenharia de software."
+      "description": "Modelo Gemini 2.5 rápido e econômico com raciocínio opcional, execução de código, ferramentas e entrada multimodal."
     },
     "ru": {
-      "description": "Gemini 2.5 Flash-Lite — самостоятельная версия модели от Google с явно заявленными возможностями программирования или разработки ПО."
+      "description": "Быстрая и экономичная модель Gemini 2.5 с опциональными рассуждениями, выполнением кода, инструментами и мультимодальным вводом."
     },
     "tr": {
-      "description": "Gemini 2.5 Flash-Lite, Google tarafından yayımlanan ve açıkça belirtilmiş programlama veya yazılım mühendisliği yeteneklerine sahip bağımsız bir model sürümüdür."
+      "description": "İsteğe bağlı düşünme, kod çalıştırma, araçlar ve çok modlu girdi sunan hızlı ve ekonomik Gemini 2.5 modeli."
     },
     "zh-Hant": {
-      "description": "Gemini 2.5 Flash-Lite 是 Google 發布的獨立模型版本，具備明確的程式設計或軟體工程能力。"
+      "description": "快速且經濟的 Gemini 2.5 模型，支援選用思考、程式碼執行、工具和多模態輸入。"
     }
   },
   "verified": true,

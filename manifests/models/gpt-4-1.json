@@ -14,10 +14,10 @@
       "description": "2025년 4월에 출시된 GPT-4.1은 코딩 및 프론트엔드 웹 개발에서 특히 큰 개선을 보여하며, 100만 토큰 컨텍스트 윈도로 복잡한 코딩 작업에 적합합니다."
     },
     "es": {
-      "description": "Lanzado en abril de 2025, GPT-4.1 muestra mejoras particularmente significativas en codificacion y desarrollo web frontend, con ventana de contexto de 1M tokens para tareas complejas."
+      "description": "Lanzado en abril de 2025, GPT-4.1 muestra mejoras particularmente significativas en codificación y desarrollo web frontend, con ventana de contexto de 1M tokens para tareas complejas."
     },
     "fr": {
-      "description": "Lance en avril 2025, GPT-4.1 montre des ameliorations particulierement significatives en codage et developpement web frontend, avec fenetre de contexte de 1M jetons pour les taches complexes."
+      "description": "Lancé en avril 2025, GPT-4.1 apporte des améliorations importantes au codage et au développement web frontend, avec un contexte de 1M jetons pour les tâches complexes."
     },
     "id": {
       "description": "Rilis pada April 2025, GPT-4.1 menunjukan peningkatan yang sangat signifikan dalam coding dan pengembangan web frontend, dengan jendela konteks 1M token untuk tugas kompleks."
@@ -26,16 +26,16 @@
       "description": "2025年4月にリリースされたGPT-4.1は、コーディングとフロントエンドWeb開発において特に顕著な改善を示し、複雑なコーディングタスクに対応する100万トークンのコンテキストウィンドウを備えています。"
     },
     "pt": {
-      "description": "Lancado em abril de 2025, GPT-4.1 mostra melhoras particularmente significativas em codificacao e desenvolvimento web frontend, com janela de contexto de 1M tokens para tarefas complexas."
+      "description": "Lançado em abril de 2025, o GPT-4.1 apresenta avanços importantes em programação e desenvolvimento web frontend, com janela de contexto de 1 milhão de tokens para tarefas complexas."
     },
     "ru": {
       "description": "Выпущенный в апреле 2025 года, GPT-4.1 показывает особенно значительные улучшения в программировании и фронтенд-веб-разработке, с окном контекста в 1M токенов для сложных задач."
     },
     "tr": {
-      "description": "Nisan 2025'te piyasaya surulen GPT-4.1, kodlama ve on uc web gelistirme alaninda onemli gelismeler gostermekte ve karmasik kodlama gorevleri icin 1M token baglam penceresine sahiptir."
+      "description": "Nisan 2025'te piyasaya sürülen GPT-4.1, kodlama ve ön uç web geliştirme alaninda önemli gelişmeler göstermekte ve karmaşık kodlama görevleri için 1M token bağlam penceresine sahiptir."
     },
     "zh-Hant": {
-      "description": "2025年4月發布的 GPT-4.1，在編碼和前端 Web 開發方面表現出特別顯著的改進，支持 100 萬 token 上下文視窗，適用於複雜的編碼任務。"
+      "description": "2025年4月發布的 GPT-4.1，在程式設計和前端 Web 開發方面表現出特別顯著的改進，支援 100 萬 token 上下文視窗，適用於複雜的程式設計任務。"
     }
   },
   "verified": true,

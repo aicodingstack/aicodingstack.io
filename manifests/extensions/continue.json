@@ -35,7 +35,7 @@
       "description": "Continue, VS Code ve JetBrains için açık kaynaklı bir AI kodlama uzantısıydı. Cursor, Continue’u satın aldı; 2.0.0 son sürüm oldu ve proje artık aktif olarak sürdürülmüyor."
     },
     "zh-Hant": {
-      "description": "Continue 曾是一款面向 VS Code 和 JetBrains 的開源 AI 編碼擴充功能。Cursor 收購 Continue 後，2.0.0 成為最終版本，該專案不再積極維護。"
+      "description": "Continue 曾是一款面向 VS Code 和 JetBrains 的開放原始碼 AI 程式設計擴充功能。Cursor 收購 Continue 後，2.0.0 成為最終版本，該專案不再積極維護。"
     }
   },
   "verified": true,

@@ -23,19 +23,19 @@
       "description": "비용 효율적인 코딩, 정확한 도구 사용, 하위 에이전트 및 대용량 애플리케이션 작업을 위한 Anthropic의 빠른 Claude 3.5 모델입니다."
     },
     "pt": {
-      "description": "O rápido modelo Claude 3.5 da Anthropic para código econômico, uso preciso de ferramentas, subagentes e aplicações de alto volume."
+      "description": "O rápido modelo Claude 3.5 da Anthropic para programação de baixo custo, uso preciso de ferramentas, subagentes e aplicativos de alto volume."
     },
     "ru": {
       "description": "Быстрая модель Claude 3.5 от Anthropic для экономичного программирования, точных инструментов, субагентов и высоконагруженных приложений."
     },
     "tr": {
-      "description": "Anthropic'in uygun maliyetli kodlama, doğru araç kullanımı, alt aracılar ve yüksek hacimli uygulama iş yükleri için hızlı Claude 3.5 modeli."
+      "description": "Anthropic'in uygun maliyetli kodlama, doğru araç kullanımı, alt ajanlar ve yüksek hacimli uygulama iş yükleri için hızlı Claude 3.5 modeli."
     },
     "zh-Hans": {
       "description": "Anthropic 面向高性价比编码、精确工具调用、子智能体和高吞吐应用负载的快速 Claude 3.5 模型。"
     },
     "zh-Hant": {
-      "description": "Anthropic 面向高性價比編碼、精確工具呼叫、子智慧體和高吞吐應用負載的快速 Claude 3.5 模型。"
+      "description": "Anthropic 面向高性價比程式設計、精確工具呼叫、子智慧體和高吞吐應用負載的快速 Claude 3.5 模型。"
     }
   },
   "verified": true,
