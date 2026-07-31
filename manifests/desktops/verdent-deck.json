@@ -35,7 +35,7 @@
       "description": "Verdent Deck is an AI-native desktop app for coordinating multiple coding agents in parallel, managing Git worktrees, and reviewing feature-level changes."
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://www.verdent.ai/docs/verdent/getting-started/overview",
@@ -44,9 +44,14 @@
     {
       "url": "https://www.verdent.ai/docs/verdent/getting-started/installation",
       "title": "Verdent installation"
+    },
+    {
+      "url": "https://www.verdent.ai/pricing",
+      "title": "Verdent pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "verdent-deck",
@@ -61,18 +66,46 @@
   "license": "Proprietary",
   "pricing": [
     {
-      "name": "Free Trial",
-      "value": 0,
-      "currency": null,
-      "per": null,
+      "name": "Lite",
+      "value": 5,
+      "currency": "USD",
+      "per": "month",
       "category": "Individual"
     },
     {
-      "name": "Pro",
+      "name": "Starter",
       "value": 19,
       "currency": "USD",
       "per": "month",
       "category": "Individual"
+    },
+    {
+      "name": "Pro",
+      "value": 59,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Max",
+      "value": 179,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Teams",
+      "value": 20,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Business"
+    },
+    {
+      "name": "Enterprise",
+      "value": null,
+      "currency": null,
+      "per": "custom",
+      "category": "Enterprise"
     }
   ],
   "resourceUrls": {

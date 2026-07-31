@@ -39,7 +39,10 @@
       "description": "Google 的 AI 驅動集成開發環境（IDE），用於現代軟件開發，具有先進的 AI 功能。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://antigravity.google",
   "docsUrl": "https://antigravity.google/docs",
   "vendor": "Google",
@@ -51,21 +54,42 @@
       "name": "Individual",
       "value": 0,
       "currency": null,
-      "per": null,
+      "per": "month",
       "category": "Individual"
     },
     {
-      "name": "Team",
-      "value": null,
-      "currency": null,
-      "per": "custom",
-      "category": "Business"
+      "name": "Google AI Pro (5 TB)",
+      "value": 19.99,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
     },
     {
-      "name": "Enterprise",
+      "name": "Google AI Pro (10 TB)",
+      "value": 49.99,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Google AI Ultra (5x limits)",
+      "value": 99.99,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Google AI Ultra (20x limits)",
+      "value": 199.99,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Organization",
       "value": null,
       "currency": null,
-      "per": "custom",
+      "per": "usage",
       "category": "Enterprise"
     }
   ],
@@ -136,6 +160,16 @@
       "url": "https://antigravity.google/blog",
       "title": "Antigravity blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://antigravity.google/blog/changes-to-antigravity-plans",
+      "title": "Changes to Antigravity plans",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://one.google.com/about/google-ai-plans/",
+      "title": "Google AI plans",
+      "fields": ["pricing"]
     }
   ]
 }

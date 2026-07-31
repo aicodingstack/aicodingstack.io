@@ -35,7 +35,7 @@
       "description": "Qoder Desktop 是一款自主開發桌面應用，具備編碼智慧代理、深度程式碼庫理解、智慧補全，以及用於協作和任務委派的 Editor 與 Quest 工作區。"
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://qoder.com/desktop",
@@ -62,7 +62,7 @@
       "fields": ["familyId", "relatedProducts"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "qoder",
@@ -85,21 +85,21 @@
     },
     {
       "name": "Pro",
-      "value": 20,
+      "value": 10,
       "currency": "USD",
       "per": "month",
       "category": "Individual"
     },
     {
       "name": "Pro+",
-      "value": 60,
+      "value": 30,
       "currency": "USD",
       "per": "month",
       "category": "Individual"
     },
     {
       "name": "Ultra",
-      "value": 200,
+      "value": 100,
       "currency": "USD",
       "per": "month",
       "category": "Individual"

@@ -38,7 +38,10 @@
       "description": "由業界領先的上下文引擎支援的最強大 AI 軟體開發平台。它提供自主編碼 Agent、程式碼庫感知自動完成，以及對大型程式碼庫的深度上下文理解。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.augmentcode.com",
   "docsUrl": "https://docs.augmentcode.com",
   "vendor": "Augment",
@@ -47,17 +50,10 @@
   "license": "Proprietary",
   "pricing": [
     {
-      "name": "Individual",
-      "value": 30,
+      "name": "Business",
+      "value": 100,
       "currency": "USD",
       "per": "month",
-      "category": "Individual"
-    },
-    {
-      "name": "Teams",
-      "value": null,
-      "currency": null,
-      "per": "custom",
       "category": "Business"
     },
     {
@@ -102,6 +98,11 @@
       "url": "https://www.augmentcode.com/blog",
       "title": "Augment Code blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://www.augmentcode.com/pricing",
+      "title": "Augment Code pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

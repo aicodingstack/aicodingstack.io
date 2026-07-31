@@ -39,7 +39,10 @@
       "description": "將自主 AI 代理引入 IDE 的智能編碼平台。具備程式碼自動完成、問答模式用於除錯，以及代理模式用於複雜的多步驟開發任務。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
   "websiteUrl": "https://qoder.com",
   "docsUrl": "https://docs.qoder.com",
   "vendor": "Alibaba",
@@ -49,9 +52,30 @@
   "pricing": [
     {
       "name": "Free",
-      "value": null,
+      "value": 0,
       "currency": "USD",
-      "per": "Month",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Pro",
+      "value": 10,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Pro+",
+      "value": 30,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Ultra",
+      "value": 100,
+      "currency": "USD",
+      "per": "month",
       "category": "Individual"
     }
   ],
@@ -118,6 +142,11 @@
       "url": "https://qoder.com/blog",
       "title": "Qoder blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://qoder.com/zh/blog/qoder-subscriptions-are-here",
+      "title": "Qoder subscriptions",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

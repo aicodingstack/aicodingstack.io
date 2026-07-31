@@ -38,7 +38,10 @@
       "description": "AI 驅動的命令列編碼代理，直接在終端中編碼。與 AI 互動以撰寫、審查和修改程式碼，支援多個提供商的前沿模型。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://cursor.com/cli",
   "docsUrl": "https://cursor.com/docs/cli/overview",
   "vendor": "Anysphere",
@@ -165,6 +168,11 @@
       "url": "https://cursor.com/blog",
       "title": "Cursor CLI blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://cursor.com/pricing",
+      "title": "Cursor pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

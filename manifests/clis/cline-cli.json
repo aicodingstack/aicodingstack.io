@@ -38,7 +38,10 @@
       "description": "Cline CLI 支援從終端無介面執行任務並將 Cline 整合到任何地方。使用它透過協作 AI 驅動 GitHub Actions、Discord 機器人和 Linear 工單。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://cline.bot/cline-cli",
   "docsUrl": "https://cline.bot/docs",
   "vendor": "Cline Bot",
@@ -47,15 +50,22 @@
     "provider": "npm",
     "identifier": "cline"
   },
-  "githubUrl": null,
-  "license": "Proprietary",
+  "githubUrl": "https://github.com/cline/cline",
+  "license": "Apache-2.0",
   "pricing": [
     {
-      "name": "Teams",
+      "name": "Open Source",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    },
+    {
+      "name": "Enterprise",
       "value": null,
       "currency": null,
       "per": "custom",
-      "category": "Business"
+      "category": "Enterprise"
     }
   ],
   "resourceUrls": {
@@ -63,7 +73,7 @@
     "changelog": null,
     "pricing": "https://cline.bot/pricing",
     "mcp": "https://cline.bot/mcp-marketplace",
-    "issue": null
+    "issue": "https://github.com/cline/cline/issues"
   },
   "communityUrls": {
     "linkedin": "https://www.linkedin.com/company/clinebot",
@@ -105,6 +115,16 @@
       "url": "https://www.reddit.com/r/cline",
       "title": "Cline CLI reddit community",
       "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://cline.bot/pricing",
+      "title": "Cline pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://github.com/cline/cline",
+      "title": "Cline official repository",
+      "fields": ["githubUrl", "license", "resourceUrls.issue"]
     }
   ]
 }

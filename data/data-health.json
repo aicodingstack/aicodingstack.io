@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-30",
+  "asOf": "2026-07-31",
   "thresholds": {
     "models": 30,
     "providers": 30,
@@ -11,45 +11,45 @@
   },
   "summary": {
     "totalRecords": 242,
-    "recordsWithSources": 231,
-    "verifiedRecords": 176,
-    "provenanceComplete": 176,
+    "recordsWithSources": 235,
+    "verifiedRecords": 215,
+    "provenanceComplete": 215,
     "staleVerifiedRecords": 0,
     "translationPlaceholderValues": 1190,
     "danglingRelationships": 0,
     "modelBenchmarkCoverage": 9.5,
-    "productsWithPricing": 63,
+    "productsWithPricing": 67,
     "productRecords": 67,
     "communityUrlsPopulated": 302,
     "communityUrlsWithProvenance": 302,
     "duplicatedVendorCommunityUrls": 0,
     "errors": 0,
     "warnings": 0,
-    "info": 11
+    "info": 7
   },
   "byCategory": {
     "ides": {
       "total": 9,
-      "verified": 0,
-      "provenanceComplete": 0,
+      "verified": 7,
+      "provenanceComplete": 7,
       "stale": 0
     },
     "clis": {
       "total": 27,
-      "verified": 5,
-      "provenanceComplete": 5,
+      "verified": 18,
+      "provenanceComplete": 18,
       "stale": 0
     },
     "desktops": {
       "total": 12,
-      "verified": 0,
-      "provenanceComplete": 0,
+      "verified": 7,
+      "provenanceComplete": 7,
       "stale": 0
     },
     "extensions": {
       "total": 19,
-      "verified": 5,
-      "provenanceComplete": 5,
+      "verified": 17,
+      "provenanceComplete": 17,
       "stale": 0
     },
     "models": {
@@ -73,90 +73,62 @@
   },
   "translationsByLocale": {
     "de": {
-      "totalStrings": 416,
+      "totalStrings": 423,
       "matchingEnglish": 106,
-      "matchingEnglishPercent": 25.5
+      "matchingEnglishPercent": 25.1
     },
     "es": {
-      "totalStrings": 416,
+      "totalStrings": 423,
       "matchingEnglish": 98,
-      "matchingEnglishPercent": 23.6
+      "matchingEnglishPercent": 23.2
     },
     "fr": {
-      "totalStrings": 416,
+      "totalStrings": 423,
       "matchingEnglish": 108,
-      "matchingEnglishPercent": 26
+      "matchingEnglishPercent": 25.5
     },
     "id": {
-      "totalStrings": 416,
+      "totalStrings": 423,
       "matchingEnglish": 142,
-      "matchingEnglishPercent": 34.1
+      "matchingEnglishPercent": 33.6
     },
     "ja": {
-      "totalStrings": 416,
+      "totalStrings": 423,
       "matchingEnglish": 100,
-      "matchingEnglishPercent": 24
+      "matchingEnglishPercent": 23.6
     },
     "ko": {
-      "totalStrings": 416,
+      "totalStrings": 423,
       "matchingEnglish": 108,
-      "matchingEnglishPercent": 26
+      "matchingEnglishPercent": 25.5
     },
     "pt": {
-      "totalStrings": 416,
+      "totalStrings": 423,
       "matchingEnglish": 108,
-      "matchingEnglishPercent": 26
+      "matchingEnglishPercent": 25.5
     },
     "ru": {
-      "totalStrings": 416,
+      "totalStrings": 423,
       "matchingEnglish": 117,
-      "matchingEnglishPercent": 28.1
+      "matchingEnglishPercent": 27.7
     },
     "tr": {
-      "totalStrings": 416,
+      "totalStrings": 423,
       "matchingEnglish": 119,
-      "matchingEnglishPercent": 28.6
+      "matchingEnglishPercent": 28.1
     },
     "zh-Hans": {
-      "totalStrings": 416,
+      "totalStrings": 423,
       "matchingEnglish": 92,
-      "matchingEnglishPercent": 22.1
+      "matchingEnglishPercent": 21.7
     },
     "zh-Hant": {
-      "totalStrings": 416,
+      "totalStrings": 423,
       "matchingEnglish": 92,
-      "matchingEnglishPercent": 22.1
+      "matchingEnglishPercent": 21.7
     }
   },
   "issues": [
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "clis",
-      "id": "droid-cli",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "extensions",
-      "id": "cline",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "extensions",
-      "id": "tabnine",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "ides",
-      "id": "zed",
-      "message": "No structured source references are recorded."
-    },
     {
       "severity": "info",
       "code": "missing-sources",

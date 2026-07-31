@@ -31,9 +31,5 @@
     "backTo": "모델로 돌아가기",
     "subtitle": "AI 코딩 모델의 사양과 가격을 나란히 비교하세요.",
     "title": "AI 코딩 모델 비교"
-  },
-  "pricingValues": {
-    "free": "무료",
-    "freeOnly": "무료만"
   }
 }

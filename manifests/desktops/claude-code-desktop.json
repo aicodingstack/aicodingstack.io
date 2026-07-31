@@ -35,7 +35,7 @@
       "description": "Claude Code Desktop is Anthropic's standalone coding app for running parallel sessions, reviewing diffs, editing files, and working with an integrated terminal."
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://claude.com/blog/claude-code-desktop-redesign",
@@ -44,9 +44,14 @@
     {
       "url": "https://code.claude.com/docs/en/desktop",
       "title": "Claude Code Desktop documentation"
+    },
+    {
+      "url": "https://claude.com/pricing",
+      "title": "Claude plans and pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "claude-code-desktop",
@@ -68,6 +73,13 @@
       "category": "Individual"
     },
     {
+      "name": "Pro (Annual)",
+      "value": 17,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
       "name": "Max 5x",
       "value": 100,
       "currency": "USD",
@@ -80,6 +92,27 @@
       "currency": "USD",
       "per": "month",
       "category": "Individual"
+    },
+    {
+      "name": "Team Standard",
+      "value": 25,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Business"
+    },
+    {
+      "name": "Team Premium",
+      "value": 125,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Business"
+    },
+    {
+      "name": "Enterprise",
+      "value": 20,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Enterprise"
     }
   ],
   "resourceUrls": {

@@ -7,7 +7,7 @@
 import AmazonQDeveloperCli from '../../../manifests/clis/amazon-q-developer-cli.json'
 import AmpCli from '../../../manifests/clis/amp-cli.json'
 import AntigravityCli from '../../../manifests/clis/antigravity-cli.json'
-import AugmentCodeCli from '../../../manifests/clis/augment-code-cli.json'
+import AuggieCli from '../../../manifests/clis/auggie-cli.json'
 import ClaudeCodeCli from '../../../manifests/clis/claude-code-cli.json'
 import ClineCli from '../../../manifests/clis/cline-cli.json'
 import CodebuddyCli from '../../../manifests/clis/codebuddy-cli.json'
@@ -24,20 +24,20 @@ import KiloCodeCli from '../../../manifests/clis/kilo-code-cli.json'
 import KimiCli from '../../../manifests/clis/kimi-cli.json'
 import KiroCli from '../../../manifests/clis/kiro-cli.json'
 import Kode from '../../../manifests/clis/kode.json'
-import MistralVibeCli from '../../../manifests/clis/mistral-vibe-cli.json'
 import NeovateCode from '../../../manifests/clis/neovate-code.json'
 import Omp from '../../../manifests/clis/omp.json'
 import Opencode from '../../../manifests/clis/opencode.json'
 import QoderCli from '../../../manifests/clis/qoder-cli.json'
 import QwenCode from '../../../manifests/clis/qwen-code.json'
 import RovoDevCli from '../../../manifests/clis/rovo-dev-cli.json'
+import VibeCli from '../../../manifests/clis/vibe-cli.json'
 import type { ManifestCLI } from '../../types/manifests'
 
 export const clisData = [
   AmazonQDeveloperCli,
   AmpCli,
   AntigravityCli,
-  AugmentCodeCli,
+  AuggieCli,
   ClaudeCodeCli,
   ClineCli,
   CodebuddyCli,
@@ -54,13 +54,13 @@ export const clisData = [
   KimiCli,
   KiroCli,
   Kode,
-  MistralVibeCli,
   NeovateCode,
   Omp,
   Opencode,
   QoderCli,
   QwenCode,
   RovoDevCli,
+  VibeCli,
 ] as unknown as ManifestCLI[]
 
 export type Cli = typeof AmazonQDeveloperCli

@@ -31,9 +31,5 @@
     "backTo": "Back to Models",
     "subtitle": "Compare specifications and pricing of AI coding models side by side.",
     "title": "AI Coding Model Comparison"
-  },
-  "pricingValues": {
-    "free": "Free",
-    "freeOnly": "Free only"
   }
 }

@@ -38,7 +38,10 @@
       "description": "CodeBuddy CLI 是 AI 驅動的程式碼編輯器，將智慧程式碼生成、除錯和開發工作流程整合到您的終端。具有 TUI 模式和內聯聊天功能。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.codebuddy.ai/cli",
   "docsUrl": "https://www.codebuddy.ai/docs/cli",
   "vendor": "Tencent",
@@ -59,10 +62,17 @@
     },
     {
       "name": "Pro",
-      "value": null,
-      "currency": null,
-      "per": "custom",
+      "value": 9.95,
+      "currency": "USD",
+      "per": "month",
       "category": "Individual"
+    },
+    {
+      "name": "Team",
+      "value": 40,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Business"
     },
     {
       "name": "Enterprise",
@@ -75,7 +85,7 @@
   "resourceUrls": {
     "download": "https://www.codebuddy.ai/cli",
     "changelog": null,
-    "pricing": "https://www.codebuddy.ai/pricing",
+    "pricing": "https://www.codebuddy.ai/docs/ide/Account/pricing",
     "mcp": null,
     "issue": null
   },
@@ -114,6 +124,11 @@
       "url": "https://www.codebuddy.ai/blog",
       "title": "CodeBuddy blog",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://www.codebuddy.ai/docs/ide/Account/pricing",
+      "title": "CodeBuddy pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

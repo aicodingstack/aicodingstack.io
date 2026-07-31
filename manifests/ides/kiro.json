@@ -38,7 +38,10 @@
       "description": "AWS 的智能 IDE，為 VS Code 帶來規範驅動開發。使用 AI Agent 將自然語言規範轉化為代碼、自動化任務並與工作流集成。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://kiro.dev",
   "docsUrl": "https://kiro.dev/docs",
   "vendor": "AWS",
@@ -65,6 +68,13 @@
       "value": 40,
       "currency": "USD",
       "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Pro Max",
+      "value": 100,
+      "currency": "USD",
+      "per": "user/month",
       "category": "Individual"
     },
     {
@@ -129,6 +139,11 @@
       "url": "https://kiro.dev/blog",
       "title": "Kiro blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://kiro.dev/pricing",
+      "title": "Kiro pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

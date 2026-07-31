@@ -46,7 +46,17 @@
   "productHero": {
     "runtime": "Laufzeit"
   },
-  "productPricing": {},
+  "productPricing": {
+    "custom": "Vertrieb kontaktieren",
+    "free": "Kostenlos",
+    "freeOnly": "Nur kostenlos",
+    "perCredit": "{price}/Guthaben",
+    "perHour": "{price}/Stunde",
+    "perMonth": "{price}/Monat",
+    "perUserMonth": "{price}/Nutzer/Monat",
+    "perYear": "{price}/Jahr",
+    "usageBased": "Nach Verbrauch"
+  },
   "relatedProducts": {
     "title": "Verwandte Produkte",
     "viewProduct": "Produkt ansehen"

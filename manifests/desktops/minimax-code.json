@@ -35,7 +35,7 @@
       "description": "MiniMax Code is a desktop coding agent for macOS and Windows with agent teams, persistent memory, reusable skills, scheduled tasks, and workspace-level development workflows."
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://agent.minimax.io/download",
@@ -43,12 +43,18 @@
     },
     {
       "url": "https://platform.minimax.io/subscribe/token-plan",
-      "title": "MiniMax coding plans"
+      "title": "MiniMax Token Plan",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://github.com/MiniMax-AI/minimax-code",
+      "title": "MiniMax Code official issue repository",
+      "fields": ["githubUrl", "resourceUrls.issue"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex-agent",
-  "confidence": "medium",
+  "confidence": "high",
   "id": "minimax-code",
   "name": "MiniMax Code",
   "familyId": "minimax-code",
@@ -57,7 +63,7 @@
   "docsUrl": "https://agent.minimax.io/download",
   "vendor": "MiniMax",
   "latestVersion": "Latest",
-  "githubUrl": null,
+  "githubUrl": "https://github.com/MiniMax-AI/minimax-code",
   "license": "Proprietary",
   "pricing": [
     {
@@ -68,10 +74,24 @@
       "category": "Individual"
     },
     {
-      "name": "Coding Plan",
-      "value": null,
-      "currency": null,
-      "per": "subscription",
+      "name": "Plus",
+      "value": 20,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Max",
+      "value": 50,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Ultra",
+      "value": 120,
+      "currency": "USD",
+      "per": "month",
       "category": "Individual"
     }
   ],
@@ -80,7 +100,7 @@
     "changelog": null,
     "pricing": "https://platform.minimax.io/subscribe/token-plan",
     "mcp": null,
-    "issue": null
+    "issue": "https://github.com/MiniMax-AI/minimax-code/issues"
   },
   "communityUrls": {
     "linkedin": null,

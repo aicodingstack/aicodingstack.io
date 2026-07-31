@@ -38,7 +38,10 @@
       "description": "GitHub Copilot CLI 將 AI 輔助功能帶到您的終端。建議 shell 命令、生成程式碼片段，並透過自然語言與程式碼倉庫整合。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://github.com/features/copilot/cli",
   "docsUrl": "https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli",
   "vendor": "GitHub",
@@ -68,7 +71,14 @@
       "name": "Pro+",
       "value": 39,
       "currency": "USD",
-      "per": "month",
+      "per": "user/month",
+      "category": "Individual"
+    },
+    {
+      "name": "Max",
+      "value": 100,
+      "currency": "USD",
+      "per": "user/month",
       "category": "Individual"
     },
     {
@@ -128,6 +138,11 @@
       "url": "https://github.com/github/copilot-cli",
       "title": "GitHub Copilot CLI github community",
       "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://github.com/features/copilot/plans",
+      "title": "GitHub Copilot plans and pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

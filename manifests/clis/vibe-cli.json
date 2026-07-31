@@ -1,0 +1,149 @@
+{
+  "$schema": "../$schemas/cli.schema.json",
+  "translations": {
+    "de": {
+      "description": "Vibe CLI ist der Terminal-Coding-Agent von Mistral AI für Repository-Erkundung, Planung, Codebearbeitung, Befehlsausführung und konfigurierbare Agent-Workflows."
+    },
+    "es": {
+      "description": "Vibe CLI es el agente de programación para terminal de Mistral AI, destinado a explorar repositorios, planificar, editar código, ejecutar comandos y configurar flujos de agentes."
+    },
+    "fr": {
+      "description": "Vibe CLI est l’agent de codage en terminal de Mistral AI pour explorer les dépôts, planifier, modifier le code, exécuter des commandes et configurer des workflows d’agents."
+    },
+    "id": {
+      "description": "Vibe CLI adalah agen coding terminal Mistral AI untuk menjelajahi repositori, merencanakan, mengedit kode, menjalankan perintah, dan mengatur alur kerja agen."
+    },
+    "ja": {
+      "description": "Vibe CLIは、リポジトリ探索、計画、コード編集、コマンド実行、設定可能なエージェントワークフローに対応するMistral AIのターミナル型コーディングエージェントです。"
+    },
+    "ko": {
+      "description": "Vibe CLI는 저장소 탐색, 계획, 코드 편집, 명령 실행 및 구성 가능한 에이전트 워크플로를 위한 Mistral AI의 터미널 코딩 에이전트입니다."
+    },
+    "pt": {
+      "description": "Vibe CLI é o agente de programação no terminal da Mistral AI para explorar repositórios, planear, editar código, executar comandos e configurar fluxos de agentes."
+    },
+    "ru": {
+      "description": "Vibe CLI — терминальный агент Mistral AI для изучения репозиториев, планирования, редактирования кода, выполнения команд и настраиваемых рабочих процессов."
+    },
+    "tr": {
+      "description": "Vibe CLI, depo keşfi, planlama, kod düzenleme, komut çalıştırma ve yapılandırılabilir ajan iş akışları için Mistral AI'ın terminal kodlama ajanıdır."
+    },
+    "zh-Hans": {
+      "description": "Vibe CLI 是 Mistral AI 的终端编码 Agent，用于探索代码仓库、规划、编辑代码、执行命令和配置 Agent 工作流。"
+    },
+    "zh-Hant": {
+      "description": "Vibe CLI 是 Mistral AI 的終端編碼 Agent，用於探索程式碼儲存庫、規劃、編輯程式碼、執行命令和設定 Agent 工作流程。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://mistral.ai/news/vibe-agent/",
+      "title": "Introducing Mistral Vibe"
+    },
+    {
+      "url": "https://docs.mistral.ai/vibe/code/overview",
+      "title": "Mistral Vibe documentation",
+      "fields": ["name", "description", "docsUrl"]
+    },
+    {
+      "url": "https://mistral.ai/pricing",
+      "title": "Mistral pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://github.com/mistralai/mistral-vibe",
+      "title": "Mistral Vibe official repository",
+      "fields": ["githubUrl", "license", "resourceUrls.issue"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "id": "vibe-cli",
+  "name": "Vibe CLI",
+  "familyId": "mistral-vibe",
+  "description": "Vibe CLI is Mistral AI's terminal coding agent for repository exploration, planning, code editing, command execution, and configurable agent workflows.",
+  "websiteUrl": "https://mistral.ai/products/vibe",
+  "docsUrl": "https://docs.mistral.ai/vibe/code/overview",
+  "vendor": "Mistral AI",
+  "latestVersion": "2.23.0",
+  "releaseTracking": {
+    "provider": "pypi",
+    "identifier": "mistral-vibe"
+  },
+  "githubUrl": "https://github.com/mistralai/mistral-vibe",
+  "license": "Apache-2.0",
+  "pricing": [
+    {
+      "name": "Free",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    },
+    {
+      "name": "Pro",
+      "value": 14.99,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Team",
+      "value": 24.99,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Business"
+    },
+    {
+      "name": "Enterprise",
+      "value": null,
+      "currency": null,
+      "per": "custom",
+      "category": "Enterprise"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://docs.mistral.ai/vibe/code/installation",
+    "changelog": null,
+    "pricing": "https://mistral.ai/pricing",
+    "mcp": null,
+    "issue": "https://github.com/mistralai/mistral-vibe/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": "https://x.com/MistralAI",
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": "https://mistral.ai/news"
+  },
+  "relatedProducts": [
+    {
+      "type": "extension",
+      "productId": "mistral-vibe"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": null,
+      "installCommand": "curl -LsSf https://mistral.ai/vibe/install.sh | bash",
+      "launchCommand": "vibe"
+    },
+    {
+      "os": "Windows",
+      "installPath": null,
+      "installCommand": "uv tool install mistral-vibe",
+      "launchCommand": "vibe"
+    },
+    {
+      "os": "Linux",
+      "installPath": null,
+      "installCommand": "curl -LsSf https://mistral.ai/vibe/install.sh | bash",
+      "launchCommand": "vibe"
+    }
+  ]
+}

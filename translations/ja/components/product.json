@@ -46,7 +46,17 @@
   "productHero": {
     "runtime": "ランタイム"
   },
-  "productPricing": {},
+  "productPricing": {
+    "custom": "営業に問い合わせ",
+    "free": "無料",
+    "freeOnly": "無料のみ",
+    "perCredit": "{price}/クレジット",
+    "perHour": "{price}/時間",
+    "perMonth": "{price}/月",
+    "perUserMonth": "{price}/ユーザー/月",
+    "perYear": "{price}/年",
+    "usageBased": "従量制"
+  },
   "relatedProducts": {
     "title": "関連製品",
     "viewProduct": "製品を表示"

@@ -38,7 +38,10 @@
       "description": "用於從原型到生產的智慧 AI 開發 CLI。具備規範驅動開發、代理掛鉤、網絡搜尋功能，以及終端中的自然語言編碼輔助。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://kiro.dev",
   "docsUrl": "https://kiro.dev/docs/cli",
   "vendor": "AWS",
@@ -48,37 +51,44 @@
   "pricing": [
     {
       "name": "Free",
-      "value": null,
+      "value": 0,
       "currency": "USD",
-      "per": "Month",
+      "per": "month",
       "category": "Individual"
     },
     {
       "name": "Pro",
       "value": 20,
       "currency": "USD",
-      "per": "Month",
+      "per": "user/month",
       "category": "Individual"
     },
     {
       "name": "Pro+",
       "value": 40,
       "currency": "USD",
-      "per": "Month",
+      "per": "user/month",
+      "category": "Individual"
+    },
+    {
+      "name": "Pro Max",
+      "value": 100,
+      "currency": "USD",
+      "per": "user/month",
       "category": "Individual"
     },
     {
       "name": "Power",
       "value": 200,
       "currency": "USD",
-      "per": "Month",
+      "per": "user/month",
       "category": "Individual"
     },
     {
       "name": "Enterprise",
       "value": null,
       "currency": "USD",
-      "per": "Custom",
+      "per": "custom",
       "category": "Enterprise"
     }
   ],
@@ -154,6 +164,11 @@
       "url": "https://kiro.dev/blog",
       "title": "Kiro CLI blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://kiro.dev/pricing",
+      "title": "Kiro pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

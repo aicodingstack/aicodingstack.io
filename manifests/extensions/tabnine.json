@@ -38,7 +38,17 @@
       "description": "Tabnine 是一個 AI 程式碼補全工具，協助開發者更快、更準確地撰寫程式碼。它基於上下文提供智能程式碼建議，並從您的程式碼庫中學習。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.tabnine.com/pricing/",
+      "title": "Tabnine pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.tabnine.com",
   "docsUrl": "https://docs.tabnine.com",
   "vendor": "Tabnine",
@@ -47,31 +57,17 @@
   "license": "Proprietary",
   "pricing": [
     {
-      "name": "Starter (Free)",
-      "value": 0,
-      "currency": null,
-      "per": null,
-      "category": "Individual"
-    },
-    {
-      "name": "Pro",
-      "value": 12,
-      "currency": "USD",
-      "per": "month",
-      "category": "Individual"
-    },
-    {
-      "name": "Business",
+      "name": "Code Assistant Platform",
       "value": 39,
       "currency": "USD",
       "per": "user/month",
       "category": "Business"
     },
     {
-      "name": "Enterprise",
-      "value": null,
-      "currency": null,
-      "per": "custom",
+      "name": "Agentic Platform",
+      "value": 59,
+      "currency": "USD",
+      "per": "user/month",
       "category": "Enterprise"
     }
   ],

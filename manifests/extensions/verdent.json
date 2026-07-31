@@ -39,7 +39,10 @@
       "description": "先進的代理編碼助手，協調多個 AI 代理並行處理複雜的軟體任務，具有結構化規劃、驗證和可自訂子代理。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.verdent.ai",
   "docsUrl": "https://docs.verdent.ai",
   "vendor": "Verdent AI",
@@ -48,18 +51,46 @@
   "license": "Proprietary",
   "pricing": [
     {
-      "name": "Free Trial",
-      "value": 0,
-      "currency": null,
-      "per": null,
+      "name": "Lite",
+      "value": 5,
+      "currency": "USD",
+      "per": "month",
       "category": "Individual"
     },
     {
-      "name": "Pro",
+      "name": "Starter",
       "value": 19,
       "currency": "USD",
       "per": "month",
       "category": "Individual"
+    },
+    {
+      "name": "Pro",
+      "value": 59,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Max",
+      "value": 179,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Teams",
+      "value": 20,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Business"
+    },
+    {
+      "name": "Enterprise",
+      "value": null,
+      "currency": null,
+      "per": "custom",
+      "category": "Enterprise"
     }
   ],
   "resourceUrls": {
@@ -101,6 +132,11 @@
       "url": "https://x.com/verdent",
       "title": "Verdent twitter community",
       "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://www.verdent.ai/pricing",
+      "title": "Verdent pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

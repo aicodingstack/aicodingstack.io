@@ -38,7 +38,17 @@
       "description": "用 Rust 構建的下一代代碼編輯器，專為與人類和 AI 的高性能協作而設計。具有智能編輯、多緩衝區編輯和原生 Git 支持。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://zed.dev/pricing",
+      "title": "Zed pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://zed.dev",
   "docsUrl": "https://zed.dev/docs",
   "vendor": "Zed Industries",
@@ -54,8 +64,15 @@
       "category": "Individual"
     },
     {
-      "name": "Teams",
-      "value": 15,
+      "name": "Pro",
+      "value": 10,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Business",
+      "value": 30,
       "currency": "USD",
       "per": "user/month",
       "category": "Business"

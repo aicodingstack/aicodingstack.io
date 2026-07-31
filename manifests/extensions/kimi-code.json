@@ -43,7 +43,8 @@
     },
     {
       "url": "https://github.com/MoonshotAI/kimi-code",
-      "title": "Kimi Code repository"
+      "title": "Kimi Code repository",
+      "fields": ["pricing"]
     }
   ],
   "lastVerifiedAt": "2026-07-21",

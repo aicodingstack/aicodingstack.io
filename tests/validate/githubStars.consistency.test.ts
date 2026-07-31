@@ -47,6 +47,10 @@ function getGithubStarIds(githubStars: unknown, category: string): string[] {
 function validateGithubStarsConsistency(rootDir: string): string[] {
   const failures: string[] = []
   const categories = ['extensions', 'clis', 'desktops', 'ides'] as const
+  const starsByRepository = new Map<
+    string,
+    Array<{ category: (typeof categories)[number]; id: string; stars: number | null }>
+  >()
 
   const githubStarsPath = path.join(rootDir, 'data', 'github-stars.json')
   const githubStars = readJsonFile(githubStarsPath)
@@ -76,11 +80,29 @@ function validateGithubStarsConsistency(rootDir: string): string[] {
 
       const manifestPath = path.join(rootDir, 'manifests', category, `${id}.json`)
       const manifest = readJsonFile(manifestPath) as Record<string, unknown>
-      if (manifest.githubUrl === null && categoryStars[id] !== null) {
+      const stars = categoryStars[id] as number | null
+      if (manifest.githubUrl === null && stars !== null) {
         failures.push(
           `[${category}] ${id} has githubUrl: null but a non-null star count in data/github-stars.json`
         )
       }
+
+      if (typeof manifest.githubUrl === 'string') {
+        const repositoryEntries = starsByRepository.get(manifest.githubUrl) ?? []
+        repositoryEntries.push({ category, id, stars })
+        starsByRepository.set(manifest.githubUrl, repositoryEntries)
+      }
+    }
+  }
+
+  for (const [repositoryUrl, entries] of starsByRepository) {
+    const uniqueValues = new Set(entries.map(entry => entry.stars))
+    if (uniqueValues.size > 1) {
+      failures.push(
+        `${repositoryUrl} has inconsistent star counts:\n${entries
+          .map(entry => `- [${entry.category}] ${entry.id}: ${String(entry.stars)}`)
+          .join('\n')}`
+      )
     }
   }
 

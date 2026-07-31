@@ -38,7 +38,10 @@
       "description": "GitHub Copilot 是一個 AI 結對程式設計師，幫助您更快地編寫程式碼並減少工作量。它從註釋和程式碼中提取上下文，建議單行程式碼和整個函式。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://github.com/features/copilot",
   "docsUrl": "https://docs.github.com/en/copilot",
   "vendor": "GitHub",
@@ -47,14 +50,35 @@
   "license": "Proprietary",
   "pricing": [
     {
-      "name": "Copilot Individual",
-      "value": 10,
+      "name": "Free",
+      "value": 0,
       "currency": "USD",
       "per": "month",
       "category": "Individual"
     },
     {
-      "name": "Copilot Business",
+      "name": "Pro",
+      "value": 10,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Individual"
+    },
+    {
+      "name": "Pro+",
+      "value": 39,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Individual"
+    },
+    {
+      "name": "Max",
+      "value": 100,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Individual"
+    },
+    {
+      "name": "Business",
       "value": 19,
       "currency": "USD",
       "per": "user/month",
@@ -97,6 +121,11 @@
       "url": "https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer",
       "title": "GitHub Copilot blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://github.com/features/copilot/plans",
+      "title": "GitHub Copilot plans and pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

@@ -38,7 +38,10 @@
       "description": "基於 VS Code 構建的 AI 驅動代碼編輯器，具有高級 AI 功能，用於代碼生成、編輯和理解。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://cursor.com",
   "docsUrl": "https://cursor.com/docs",
   "vendor": "Anysphere",
@@ -161,6 +164,11 @@
       "url": "https://cursor.com/blog",
       "title": "Cursor blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://cursor.com/pricing",
+      "title": "Cursor pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

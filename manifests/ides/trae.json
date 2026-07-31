@@ -80,16 +80,21 @@
       "url": "https://www.trae.ai/blog",
       "title": "TRAE IDE blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://github.com/Trae-AI/TRAE",
+      "title": "TRAE official repository",
+      "fields": ["githubUrl", "resourceUrls.issue"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.trae.ai/solo-code",
   "docsUrl": "https://docs.trae.ai",
   "vendor": "ByteDance",
   "latestVersion": "3.5.71",
-  "githubUrl": null,
+  "githubUrl": "https://github.com/Trae-AI/TRAE",
   "license": "Proprietary",
   "pricing": [
     {
@@ -133,7 +138,7 @@
     "changelog": "https://www.trae.ai/changelog",
     "pricing": "https://www.trae.ai/pricing",
     "mcp": null,
-    "issue": null
+    "issue": "https://github.com/Trae-AI/TRAE/issues"
   },
   "communityUrls": {
     "linkedin": null,

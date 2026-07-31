@@ -51,6 +51,7 @@
         "websiteUrl",
         "githubUrl",
         "license",
+        "pricing",
         "resourceUrls.changelog",
         "resourceUrls.issue"
       ]
@@ -80,7 +81,15 @@
   "latestVersion": "3.54.0",
   "githubUrl": "https://github.com/RooCodeInc/Roo-Code",
   "license": "Apache-2.0",
-  "pricing": [],
+  "pricing": [
+    {
+      "name": "Open Source",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
   "resourceUrls": {
     "download": "https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline",
     "changelog": "https://github.com/RooCodeInc/Roo-Code/releases",

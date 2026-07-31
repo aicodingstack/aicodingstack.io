@@ -39,7 +39,10 @@
       "description": "Qoder CLI 是 AI 驅動的編碼助手，用於智慧程式碼生成、除錯和開發工作流程。具有 TUI 模式、內聯聊天和專案管理功能。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
   "websiteUrl": "https://qoder.com/cli",
   "docsUrl": "https://docs.qoder.com/en/cli/quick-start",
   "vendor": "Alibaba",
@@ -60,17 +63,24 @@
     },
     {
       "name": "Pro",
-      "value": null,
-      "currency": null,
-      "per": "custom",
+      "value": 10,
+      "currency": "USD",
+      "per": "month",
       "category": "Individual"
     },
     {
-      "name": "Enterprise",
-      "value": null,
-      "currency": null,
-      "per": "custom",
-      "category": "Enterprise"
+      "name": "Pro+",
+      "value": 30,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Ultra",
+      "value": 100,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
     }
   ],
   "resourceUrls": {
@@ -134,6 +144,11 @@
       "url": "https://qoder.com/blog",
       "title": "Qoder blog",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://qoder.com/zh/blog/qoder-subscriptions-are-here",
+      "title": "Qoder subscription plans",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

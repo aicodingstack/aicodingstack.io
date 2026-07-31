@@ -31,9 +31,5 @@
     "backTo": "Volver a Modelos",
     "subtitle": "Modelos de lenguaje grandes optimizados para generación y análisis de código",
     "title": "Comparación de Modelos de Codificación con IA"
-  },
-  "pricingValues": {
-    "free": "Gratis",
-    "freeOnly": "Solo gratis"
   }
 }

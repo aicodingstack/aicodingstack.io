@@ -35,7 +35,7 @@
       "description": "Codex App is OpenAI's desktop command center for running coding agents in parallel, reviewing changes, using worktrees, and sharing sessions with Codex CLI and IDE integrations."
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://openai.com/index/introducing-the-codex-app/",
@@ -49,9 +49,19 @@
       "url": "https://learn.chatgpt.com/docs/open-source",
       "title": "Codex open-source components",
       "fields": ["githubUrl", "license"]
+    },
+    {
+      "url": "https://github.com/openai/codex",
+      "title": "Codex official repository",
+      "fields": ["githubUrl", "resourceUrls.issue"]
+    },
+    {
+      "url": "https://chatgpt.com/codex/pricing/",
+      "title": "Codex pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "codex-app",
@@ -62,7 +72,7 @@
   "docsUrl": "https://developers.openai.com/codex/app",
   "vendor": "OpenAI",
   "latestVersion": "Latest",
-  "githubUrl": null,
+  "githubUrl": "https://github.com/openai/codex",
   "license": "Proprietary",
   "pricing": [
     {
@@ -90,7 +100,7 @@
   "resourceUrls": {
     "download": "https://openai.com/codex",
     "changelog": "https://developers.openai.com/codex/changelog",
-    "pricing": "https://openai.com/pricing",
+    "pricing": "https://chatgpt.com/codex/pricing/",
     "mcp": null,
     "issue": "https://github.com/openai/codex/issues"
   },

@@ -44,7 +44,12 @@
     {
       "url": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/",
       "title": "Transitioning Gemini CLI to Antigravity CLI",
-      "fields": ["deprecated", "pricing", "relatedProducts"]
+      "fields": ["deprecated", "relatedProducts"]
+    },
+    {
+      "url": "https://cloud.google.com/products/gemini/pricing",
+      "title": "Gemini Code Assist pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     },
     {
       "url": "https://geminicli.com/docs/changelogs/latest/",
@@ -67,7 +72,7 @@
       "fields": ["communityUrls.blog"]
     }
   ],
-  "lastVerifiedAt": "2026-07-22",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://geminicli.com",
@@ -82,24 +87,38 @@
   "license": "Apache-2.0",
   "pricing": [
     {
-      "name": "Gemini Code Assist Standard",
-      "value": null,
-      "currency": null,
-      "per": "custom",
+      "name": "Gemini Code Assist Standard (monthly commitment)",
+      "value": 0.031232877,
+      "currency": "USD",
+      "per": "hour",
       "category": "Business"
     },
     {
-      "name": "Gemini Code Assist Enterprise",
-      "value": null,
-      "currency": null,
-      "per": "custom",
+      "name": "Gemini Code Assist Standard (12-month commitment)",
+      "value": 0.026027397,
+      "currency": "USD",
+      "per": "hour",
+      "category": "Business"
+    },
+    {
+      "name": "Gemini Code Assist Enterprise (monthly commitment)",
+      "value": 0.073972603,
+      "currency": "USD",
+      "per": "hour",
+      "category": "Enterprise"
+    },
+    {
+      "name": "Gemini Code Assist Enterprise (12-month commitment)",
+      "value": 0.061643836,
+      "currency": "USD",
+      "per": "hour",
       "category": "Enterprise"
     }
   ],
   "resourceUrls": {
     "download": "https://www.npmjs.com/package/@google/gemini-cli",
     "changelog": "https://geminicli.com/docs/changelogs",
-    "pricing": "https://codeassist.google",
+    "pricing": "https://cloud.google.com/products/gemini/pricing",
     "mcp": null,
     "issue": "https://github.com/google-gemini/gemini-cli/issues"
   },

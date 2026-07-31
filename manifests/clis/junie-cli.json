@@ -44,9 +44,14 @@
     {
       "url": "https://www.jetbrains.com/junie/",
       "title": "Junie product site"
+    },
+    {
+      "url": "https://github.com/JetBrains/junie",
+      "title": "Junie official repository",
+      "fields": ["githubUrl", "resourceUrls.issue"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "junie-cli",
@@ -57,7 +62,7 @@
   "docsUrl": "https://www.jetbrains.com/help/junie/junie-cli.html",
   "vendor": "JetBrains",
   "latestVersion": "Beta",
-  "githubUrl": null,
+  "githubUrl": "https://github.com/JetBrains/junie",
   "license": "Proprietary",
   "pricing": [
     {
@@ -73,7 +78,7 @@
     "changelog": "https://blog.jetbrains.com/junie/2026/03/junie-cli-the-llm-agnostic-coding-agent-is-now-in-beta/",
     "pricing": null,
     "mcp": null,
-    "issue": null
+    "issue": "https://github.com/JetBrains/junie/issues"
   },
   "communityUrls": {
     "linkedin": null,

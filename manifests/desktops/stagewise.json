@@ -43,7 +43,8 @@
     },
     {
       "url": "https://github.com/stagewise-io/stagewise",
-      "title": "stagewise repository"
+      "title": "stagewise repository",
+      "fields": ["pricing"]
     }
   ],
   "lastVerifiedAt": "2026-07-21",

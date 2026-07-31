@@ -38,7 +38,17 @@
       "description": "Cline 是一個開源的協作式編碼 Agent，用於複雜工作。它提供計畫執行工作流程，具有完全透明性、模型自由度和企業級安全的客戶端架構。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://cline.bot/pricing",
+      "title": "Cline pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://cline.bot",
   "docsUrl": "https://cline.bot/docs",
   "vendor": "Cline",

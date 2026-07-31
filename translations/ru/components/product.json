@@ -46,7 +46,17 @@
   "productHero": {
     "runtime": "Среда выполнения"
   },
-  "productPricing": {},
+  "productPricing": {
+    "custom": "Связаться с отделом продаж",
+    "free": "Бесплатно",
+    "freeOnly": "Только бесплатно",
+    "perCredit": "{price}/кредит",
+    "perHour": "{price}/час",
+    "perMonth": "{price}/мес.",
+    "perUserMonth": "{price}/пользователь/мес.",
+    "perYear": "{price}/год",
+    "usageBased": "По факту использования"
+  },
   "relatedProducts": {
     "title": "Связанные продукты",
     "viewProduct": "Просмотреть продукт"

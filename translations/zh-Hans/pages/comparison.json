@@ -31,9 +31,5 @@
     "backTo": "返回模型列表",
     "subtitle": "并排对比 AI 编码模型的规格和定价。",
     "title": "AI 编码模型比较"
-  },
-  "pricingValues": {
-    "free": "免费",
-    "freeOnly": "仅免费"
   }
 }

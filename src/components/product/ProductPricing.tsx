@@ -1,9 +1,65 @@
-import { useTranslations } from 'next-intl'
-import { formatPrice, type PricingTier } from '@/lib/pricing'
+import { useLocale, useTranslations } from 'next-intl'
+import { getPricingSummary, type PricingBoundary, type PricingTier } from '@/lib/pricing'
 
 export interface ProductPricingProps {
   pricing: PricingTier[]
   pricingUrl?: string
+}
+
+type PricingSummaryValueProps = {
+  pricing: PricingTier[] | null | undefined
+  boundary: PricingBoundary
+}
+
+function NumericPricingValue({ tier }: { tier: PricingTier & { value: number } }) {
+  const locale = useLocale()
+  const tComponent = useTranslations('components.product')
+  const price = new Intl.NumberFormat(locale, {
+    style: 'currency',
+    currency: tier.currency ?? 'USD',
+    maximumFractionDigits: 2,
+  }).format(tier.value)
+
+  switch (tier.per?.toLowerCase()) {
+    case 'month':
+      return tComponent('productPricing.perMonth', { price })
+    case 'user/month':
+      return tComponent('productPricing.perUserMonth', { price })
+    case 'year':
+      return tComponent('productPricing.perYear', { price })
+    case 'hour':
+      return tComponent('productPricing.perHour', { price })
+    case 'credit':
+      return tComponent('productPricing.perCredit', { price })
+    default:
+      return price
+  }
+}
+
+export function PricingSummaryValue({ pricing, boundary }: PricingSummaryValueProps) {
+  const tComponent = useTranslations('components.product')
+  const tShared = useTranslations('shared')
+  const summary = getPricingSummary(pricing, boundary)
+
+  if (summary.kind === 'numeric') return <NumericPricingValue tier={summary.tier} />
+  if (summary.kind === 'usage-based') return tComponent('productPricing.usageBased')
+  if (summary.kind === 'custom') return tComponent('productPricing.custom')
+  if (summary.kind === 'free-only') return tComponent('productPricing.freeOnly')
+  return tShared('modelPricing.notAvailable')
+}
+
+function PricingTierValue({ tier }: { tier: PricingTier }) {
+  const tComponent = useTranslations('components.product')
+
+  if (tier.value === 0) return tComponent('productPricing.free')
+  if (tier.value === null) {
+    const summary = getPricingSummary([tier], 'min')
+    return summary.kind === 'usage-based'
+      ? tComponent('productPricing.usageBased')
+      : tComponent('productPricing.custom')
+  }
+
+  return <NumericPricingValue tier={tier as PricingTier & { value: number }} />
 }
 
 export function ProductPricing({ pricing, pricingUrl }: ProductPricingProps) {
@@ -35,7 +91,7 @@ export function ProductPricing({ pricing, pricingUrl }: ProductPricingProps) {
                 <h3 className="text-lg font-semibold tracking-tight">{tier.name}</h3>
               </div>
               <p className="text-2xl font-semibold tracking-tight">
-                {formatPrice(tier as PricingTier)}
+                <PricingTierValue tier={tier} />
               </p>
             </div>
           ))}

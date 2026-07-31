@@ -46,7 +46,17 @@
   "productHero": {
     "runtime": "Runtime"
   },
-  "productPricing": {},
+  "productPricing": {
+    "custom": "Hubungi penjualan",
+    "free": "Gratis",
+    "freeOnly": "Hanya gratis",
+    "perCredit": "{price}/kredit",
+    "perHour": "{price}/jam",
+    "perMonth": "{price}/bulan",
+    "perUserMonth": "{price}/pengguna/bulan",
+    "perYear": "{price}/tahun",
+    "usageBased": "Berdasarkan penggunaan"
+  },
   "relatedProducts": {
     "title": "Produk Terkait",
     "viewProduct": "Lihat Produk"

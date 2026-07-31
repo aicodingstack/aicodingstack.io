@@ -8,10 +8,52 @@ export interface PricingTier {
   category: string
 }
 
+export type PricingBoundary = 'min' | 'max'
+
+export type PricingSummary =
+  | { kind: 'numeric'; tier: PricingTier & { value: number } }
+  | { kind: 'free-only' | 'custom' | 'usage-based' | 'not-available' }
+
 const CURRENCY_SYMBOLS: Record<string, string> = {
   USD: '$',
   CNY: '¥',
   EUR: '€',
+}
+
+const NON_USAGE_PERIODS = new Set(['custom', 'subscription'])
+
+function isUsageBasedTier(tier: PricingTier): boolean {
+  if (tier.value !== null || !tier.per) return false
+  return !NON_USAGE_PERIODS.has(tier.per.toLowerCase())
+}
+
+/**
+ * Summarize a product's published pricing without treating custom or usage-based
+ * plans as missing data.
+ */
+export function getPricingSummary(
+  pricing: PricingTier[] | null | undefined,
+  boundary: PricingBoundary
+): PricingSummary {
+  if (!pricing || pricing.length === 0) return { kind: 'not-available' }
+
+  const numericPlans = pricing.filter(
+    (tier): tier is PricingTier & { value: number } => tier.value !== null && tier.value > 0
+  )
+  if (numericPlans.length > 0) {
+    const targetValue =
+      boundary === 'min'
+        ? Math.min(...numericPlans.map(tier => tier.value))
+        : Math.max(...numericPlans.map(tier => tier.value))
+    const tier = numericPlans.find(plan => plan.value === targetValue)
+    if (tier) return { kind: 'numeric', tier }
+  }
+
+  if (pricing.some(isUsageBasedTier)) return { kind: 'usage-based' }
+  if (pricing.some(tier => tier.value === null)) return { kind: 'custom' }
+  if (pricing.some(tier => tier.value === 0)) return { kind: 'free-only' }
+
+  return { kind: 'not-available' }
 }
 
 /**

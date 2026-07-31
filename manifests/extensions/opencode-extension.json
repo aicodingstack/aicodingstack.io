@@ -43,7 +43,13 @@
     },
     {
       "url": "https://github.com/anomalyco/opencode",
-      "title": "OpenCode repository"
+      "title": "OpenCode repository",
+      "fields": ["pricing"]
+    },
+    {
+      "url": "https://opencode.ai/zen",
+      "title": "OpenCode Zen pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ],
   "lastVerifiedAt": "2026-07-21",

@@ -31,9 +31,5 @@
     "backTo": "返回模型",
     "subtitle": "並排比較 AI 編碼模型的規格和價格。",
     "title": "AI 編碼模型比較"
-  },
-  "pricingValues": {
-    "free": "免費",
-    "freeOnly": "僅免費"
   }
 }

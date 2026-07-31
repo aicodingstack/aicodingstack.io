@@ -39,7 +39,8 @@
   "sources": [
     {
       "url": "https://zcode.z.ai/en/docs/welcome",
-      "title": "ZCode documentation"
+      "title": "ZCode documentation",
+      "fields": ["pricing"]
     },
     {
       "url": "https://zcode.z.ai/en/changelog",

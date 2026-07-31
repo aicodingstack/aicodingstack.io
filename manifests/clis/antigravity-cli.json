@@ -55,7 +55,18 @@
     },
     {
       "url": "https://antigravity.google/pricing",
-      "title": "Google Antigravity pricing"
+      "title": "Google Antigravity pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://antigravity.google/blog/changes-to-antigravity-plans",
+      "title": "Changes to Antigravity plans",
+      "fields": ["pricing"]
+    },
+    {
+      "url": "https://one.google.com/about/google-ai-plans/",
+      "title": "Google AI plans",
+      "fields": ["pricing"]
     },
     {
       "url": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/",
@@ -63,7 +74,7 @@
       "fields": ["relatedProducts"]
     }
   ],
-  "lastVerifiedAt": "2026-07-22",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://antigravity.google/product/antigravity-cli",
@@ -81,16 +92,30 @@
       "category": "Individual"
     },
     {
-      "name": "Google AI Pro",
-      "value": null,
-      "currency": null,
+      "name": "Google AI Pro (5 TB)",
+      "value": 19.99,
+      "currency": "USD",
       "per": "month",
       "category": "Individual"
     },
     {
-      "name": "Google AI Ultra",
-      "value": null,
-      "currency": null,
+      "name": "Google AI Pro (10 TB)",
+      "value": 49.99,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Google AI Ultra (5x limits)",
+      "value": 99.99,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Google AI Ultra (20x limits)",
+      "value": 199.99,
+      "currency": "USD",
       "per": "month",
       "category": "Individual"
     },
