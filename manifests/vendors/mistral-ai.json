@@ -9,18 +9,23 @@
   },
   "modelSeries": [
     {
-      "id": "devstral",
-      "name": "Devstral",
-      "modelIds": ["devstral-2", "devstral-small-2"]
+      "id": "devstral-2",
+      "name": "Devstral 2",
+      "modelIds": ["devstral-2"]
     },
     {
-      "id": "mistral-medium",
-      "name": "Mistral Medium",
+      "id": "devstral-small-2",
+      "name": "Devstral Small 2",
+      "modelIds": ["devstral-small-2"]
+    },
+    {
+      "id": "mistral-medium-3-5",
+      "name": "Mistral Medium 3.5",
       "modelIds": ["mistral-medium-3-5"]
     },
     {
-      "id": "mistral-small",
-      "name": "Mistral Small",
+      "id": "mistral-small-4",
+      "name": "Mistral Small 4",
       "modelIds": ["mistral-small-4"]
     }
   ],
@@ -68,9 +73,9 @@
       "fields": ["name", "description", "websiteUrl"]
     },
     {
-      "url": "https://mistral.ai/models/",
-      "title": "Mistral models",
-      "fields": ["description"]
+      "url": "https://docs.mistral.ai/models",
+      "title": "Mistral model catalog",
+      "fields": ["description", "modelSeries"]
     },
     {
       "url": "https://github.com/mistralai",
@@ -83,7 +88,7 @@
       "fields": ["communityUrls.blog"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex",
   "confidence": "high",
   "websiteUrl": "https://mistral.ai",

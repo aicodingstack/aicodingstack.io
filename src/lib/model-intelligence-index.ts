@@ -158,7 +158,7 @@ const sortedSeries = Array.from(groupedSeries.values())
   )
 
 const seriesIndexByVendor = new Map<string, number>()
-const DASH_PATTERNS = [null, '6 4', '10 4 2 4', '2 4']
+const DASH_PATTERNS = [null, '6 4', '2 4', '10 4 2 4']
 const MARKERS: ModelIntelligenceMarker[] = [
   'circle',
   'square',

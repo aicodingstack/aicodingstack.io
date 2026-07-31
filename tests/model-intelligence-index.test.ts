@@ -150,7 +150,7 @@ describe('model intelligence index', () => {
   })
 
   it('assigns each vendor series the shared line-style priority', () => {
-    const expectedDashPatterns = [null, '6 4', '10 4 2 4', '2 4']
+    const expectedDashPatterns = [null, '6 4', '2 4', '10 4 2 4']
     const seriesByVendor = new Map<string, typeof modelIntelligenceSeries>()
 
     for (const series of modelIntelligenceSeries) {
@@ -181,8 +181,8 @@ describe('model intelligence index', () => {
     expect(qwenSeries.map(series => [series.marker, series.dash])).toEqual([
       ['circle', null],
       ['square', '6 4'],
-      ['triangle', '10 4 2 4'],
-      ['diamond', '2 4'],
+      ['triangle', '2 4'],
+      ['diamond', '10 4 2 4'],
     ])
     expect(
       allModelIntelligencePoints
@@ -203,8 +203,8 @@ describe('model intelligence index', () => {
     expect(claudeSeries.map(series => [series.marker, series.dash])).toEqual([
       ['circle', null],
       ['square', '6 4'],
-      ['triangle', '10 4 2 4'],
-      ['diamond', '2 4'],
+      ['triangle', '2 4'],
+      ['diamond', '10 4 2 4'],
     ])
   })
 
@@ -219,7 +219,7 @@ describe('model intelligence index', () => {
     expect(openAISeries.slice(0, 3).map(series => [series.marker, series.dash])).toEqual([
       ['circle', null],
       ['square', '6 4'],
-      ['triangle', '10 4 2 4'],
+      ['triangle', '2 4'],
     ])
   })
 
@@ -256,8 +256,8 @@ describe('model intelligence index', () => {
     expect(geminiSeries.map(series => [series.marker, series.dash])).toEqual([
       ['circle', null],
       ['square', '6 4'],
-      ['triangle', '10 4 2 4'],
-      ['diamond', '2 4'],
+      ['triangle', '2 4'],
+      ['diamond', '10 4 2 4'],
     ])
   })
 
@@ -273,7 +273,30 @@ describe('model intelligence index', () => {
     expect(mimoSeries.map(series => [series.marker, series.dash])).toEqual([
       ['circle', null],
       ['square', '6 4'],
-      ['triangle', '10 4 2 4'],
+      ['triangle', '2 4'],
+    ])
+  })
+
+  it('keeps each Mistral model in its own series', () => {
+    const mistralSeries = modelIntelligenceSeries.filter(series => series.vendor === 'Mistral AI')
+
+    expect(mistralSeries.map(series => series.name)).toEqual([
+      'Devstral 2',
+      'Devstral Small 2',
+      'Mistral Medium 3.5',
+      'Mistral Small 4',
+    ])
+    expect(mistralSeries.map(series => series.points.map(point => point.modelId))).toEqual([
+      ['devstral-2'],
+      ['devstral-small-2'],
+      ['mistral-medium-3-5'],
+      ['mistral-small-4'],
+    ])
+    expect(mistralSeries.map(series => [series.marker, series.dash])).toEqual([
+      ['circle', null],
+      ['square', '6 4'],
+      ['triangle', '2 4'],
+      ['diamond', '10 4 2 4'],
     ])
   })
 
@@ -284,7 +307,7 @@ describe('model intelligence index', () => {
     expect(tencentSeries[0]?.points.map(point => point.modelId)).toEqual(['hy3'])
   })
 
-  it('connects GLM Air and Flash while keeping Vision on the dash-dot series', () => {
+  it('connects GLM Air and Flash while keeping Vision on the dotted series', () => {
     const glmSeries = modelIntelligenceSeries.filter(series => series.vendor === 'Z.ai')
 
     expect(glmSeries.map(series => series.name)).toEqual([
@@ -296,8 +319,8 @@ describe('model intelligence index', () => {
     expect(glmSeries.map(series => [series.marker, series.dash])).toEqual([
       ['circle', null],
       ['square', '6 4'],
-      ['triangle', '10 4 2 4'],
-      ['diamond', '2 4'],
+      ['triangle', '2 4'],
+      ['diamond', '10 4 2 4'],
     ])
     expect(glmSeries[1]?.points.map(point => point.modelId)).toEqual([
       'glm-4-5-air',
