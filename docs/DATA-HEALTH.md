@@ -1,6 +1,6 @@
 # Data Health Report
 
-Snapshot date: 2026-07-30. Regenerate with `pnpm data-health:report`.
+Snapshot date: 2026-07-31. Regenerate with `pnpm data-health:report`.
 
 ## Scorecard
 
