@@ -1,7 +1,7 @@
 {
   "$schema": "../$schemas/model.schema.json",
   "id": "deepseek-v4-pro",
-  "name": "DeepSeek-V4-Pro",
+  "name": "DeepSeek-V4-Pro-Preview",
   "description": "DeepSeek's flagship open-weight V4 model with 1.6T total and 49B active parameters, 1M context, dual thinking modes, JSON output, and tool calls.",
   "translations": {
     "de": {
@@ -65,9 +65,14 @@
         "outputModalities",
         "capabilities"
       ]
+    },
+    {
+      "url": "https://api-docs.deepseek.com/updates/",
+      "title": "DeepSeek V4 Flash July 31 API update",
+      "fields": ["name", "lifecycle"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.deepseek.com",
