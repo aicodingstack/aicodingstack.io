@@ -47,7 +47,6 @@
       "vendors": "Tous les éditeurs"
     },
     "plural": {
-      "collections": "Collections",
       "clis": "CLI",
       "desktops": "Applications de bureau",
       "extensions": "Extensions",

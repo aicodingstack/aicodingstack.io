@@ -47,7 +47,6 @@
       "vendors": "Все разработчики"
     },
     "plural": {
-      "collections": "Коллекции",
       "clis": "CLI",
       "desktops": "Настольные приложения",
       "extensions": "Расширения",

@@ -739,47 +739,47 @@
                 "description": "Engineering deep dive into the loop connecting prompts, model inference, tool calls, and code changes in Codex"
               },
               "de": {
-                "name": "Unrolling the Codex agent loop",
+                "name": "Entfaltung der Codex-Agentenschleife",
                 "description": "Technischer Einblick in die Codex-Schleife, die Prompts, Modellinferenz, Tool-Aufrufe und Codeänderungen verbindet"
               },
               "es": {
-                "name": "Unrolling the Codex agent loop",
+                "name": "Desglosando el bucle del agente Codex",
                 "description": "Análisis técnico del bucle de Codex que conecta prompts, inferencia del modelo, llamadas a herramientas y cambios de código"
               },
               "fr": {
-                "name": "Unrolling the Codex agent loop",
+                "name": "Dérouler la boucle de l’agent Codex",
                 "description": "Analyse technique de la boucle Codex reliant prompts, inférence du modèle, appels d’outils et modifications du code"
               },
               "id": {
-                "name": "Unrolling the Codex agent loop",
+                "name": "Mengurai loop agen Codex",
                 "description": "Ulasan teknis tentang loop Codex yang menghubungkan prompt, inferensi model, pemanggilan tool, dan perubahan kode"
               },
               "ja": {
-                "name": "Unrolling the Codex agent loop",
+                "name": "Codexエージェントループの仕組み",
                 "description": "プロンプト、モデル推論、ツール呼び出し、コード変更を結ぶCodexのエージェントループを詳しく解説"
               },
               "ko": {
-                "name": "Unrolling the Codex agent loop",
+                "name": "Codex 에이전트 루프 해부",
                 "description": "프롬프트, 모델 추론, 도구 호출, 코드 변경을 연결하는 Codex 에이전트 루프의 기술적 분석"
               },
               "pt": {
-                "name": "Unrolling the Codex agent loop",
+                "name": "Desvendando o loop do agente Codex",
                 "description": "Análise técnica do loop do Codex que conecta prompts, inferência do modelo, chamadas de ferramentas e alterações de código"
               },
               "ru": {
-                "name": "Unrolling the Codex agent loop",
+                "name": "Разбор цикла агента Codex",
                 "description": "Технический разбор цикла Codex, связывающего промпты, вывод модели, вызовы инструментов и изменения кода"
               },
               "tr": {
-                "name": "Unrolling the Codex agent loop",
+                "name": "Codex ajan döngüsünü çözümlemek",
                 "description": "İstemleri, model çıkarımını, araç çağrılarını ve kod değişikliklerini bağlayan Codex döngüsünün teknik incelemesi"
               },
               "zh-Hans": {
-                "name": "Unrolling the Codex agent loop",
+                "name": "展开 Codex 智能体循环",
                 "description": "深入解析 Codex 如何通过 Agent 循环连接提示、模型推理、工具调用与代码修改"
               },
               "zh-Hant": {
-                "name": "Unrolling the Codex agent loop",
+                "name": "展開 Codex 智慧體迴圈",
                 "description": "深入解析 Codex 如何透過 Agent 迴圈連接提示、模型推理、工具呼叫與程式碼修改"
               }
             },
@@ -797,47 +797,47 @@
                 "description": "How mobile access, Remote SSH, hooks, and programmatic tokens extend long-running Codex workflows"
               },
               "de": {
-                "name": "Work with Codex from anywhere",
+                "name": "Mit Codex von überall arbeiten",
                 "description": "Wie mobiler Zugriff, Remote SSH, Hooks und programmatische Tokens langlaufende Codex-Workflows erweitern"
               },
               "es": {
-                "name": "Work with Codex from anywhere",
+                "name": "Trabajar con Codex desde cualquier lugar",
                 "description": "Cómo el acceso móvil, Remote SSH, los hooks y los tokens programáticos amplían los flujos de trabajo prolongados de Codex"
               },
               "fr": {
-                "name": "Work with Codex from anywhere",
+                "name": "Travailler avec Codex depuis n’importe où",
                 "description": "Comment l’accès mobile, Remote SSH, les hooks et les jetons programmatiques étendent les workflows Codex de longue durée"
               },
               "id": {
-                "name": "Work with Codex from anywhere",
+                "name": "Bekerja dengan Codex dari mana saja",
                 "description": "Cara akses seluler, Remote SSH, hook, dan token programatis memperluas workflow Codex yang berjalan lama"
               },
               "ja": {
-                "name": "Work with Codex from anywhere",
+                "name": "どこからでもCodexを使う",
                 "description": "モバイルアクセス、Remote SSH、フック、プログラム用トークンで長時間実行するCodexワークフローを拡張する方法"
               },
               "ko": {
-                "name": "Work with Codex from anywhere",
+                "name": "어디서나 Codex로 작업하기",
                 "description": "모바일 액세스, Remote SSH, 훅, 프로그래밍 방식 토큰으로 장기 실행 Codex 워크플로를 확장하는 방법"
               },
               "pt": {
-                "name": "Work with Codex from anywhere",
+                "name": "Trabalhar com o Codex de qualquer lugar",
                 "description": "Como acesso móvel, Remote SSH, hooks e tokens programáticos ampliam fluxos de trabalho longos do Codex"
               },
               "ru": {
-                "name": "Work with Codex from anywhere",
+                "name": "Работа с Codex из любого места",
                 "description": "Как мобильный доступ, Remote SSH, хуки и программные токены расширяют длительные рабочие процессы Codex"
               },
               "tr": {
-                "name": "Work with Codex from anywhere",
+                "name": "Codex ile her yerden çalışmak",
                 "description": "Mobil erişim, Remote SSH, hook’lar ve programatik token’ların uzun süreli Codex iş akışlarını nasıl genişlettiği"
               },
               "zh-Hans": {
-                "name": "Work with Codex from anywhere",
+                "name": "随时随地使用 Codex",
                 "description": "介绍移动访问、Remote SSH、Hooks 和程序化令牌如何扩展长时间运行的 Codex 工作流"
               },
               "zh-Hant": {
-                "name": "Work with Codex from anywhere",
+                "name": "隨時隨地使用 Codex",
                 "description": "介紹行動存取、Remote SSH、Hooks 和程式化權杖如何擴展長時間執行的 Codex 工作流程"
               }
             },
@@ -899,47 +899,47 @@
                 "description": "Cursor's view of the shift from synchronous coding agents to autonomous cloud agents working in parallel"
               },
               "de": {
-                "name": "The third era of AI software development",
+                "name": "Die dritte Ära der KI-Softwareentwicklung",
                 "description": "Cursors Sicht auf den Wandel von synchronen Coding-Agenten zu autonomen Cloud-Agenten, die parallel arbeiten"
               },
               "es": {
-                "name": "The third era of AI software development",
+                "name": "La tercera era del desarrollo de software con IA",
                 "description": "La visión de Cursor sobre el paso de agentes de código síncronos a agentes autónomos en la nube que trabajan en paralelo"
               },
               "fr": {
-                "name": "The third era of AI software development",
+                "name": "La troisième ère du développement logiciel avec l’IA",
                 "description": "La vision de Cursor du passage des agents de codage synchrones aux agents cloud autonomes travaillant en parallèle"
               },
               "id": {
-                "name": "The third era of AI software development",
+                "name": "Era ketiga pengembangan perangkat lunak AI",
                 "description": "Pandangan Cursor tentang peralihan dari agen coding sinkron ke agen cloud otonom yang bekerja secara paralel"
               },
               "ja": {
-                "name": "The third era of AI software development",
+                "name": "AIソフトウェア開発の第3時代",
                 "description": "同期型コーディングエージェントから並列稼働する自律型クラウドエージェントへの移行を描くCursorの展望"
               },
               "ko": {
-                "name": "The third era of AI software development",
+                "name": "AI 소프트웨어 개발의 세 번째 시대",
                 "description": "동기식 코딩 에이전트에서 병렬로 작동하는 자율 클라우드 에이전트로의 전환에 대한 Cursor의 관점"
               },
               "pt": {
-                "name": "The third era of AI software development",
+                "name": "A terceira era do desenvolvimento de software com IA",
                 "description": "A visão da Cursor sobre a transição de agentes de código síncronos para agentes autônomos na nuvem trabalhando em paralelo"
               },
               "ru": {
-                "name": "The third era of AI software development",
+                "name": "Третья эра разработки ПО с ИИ",
                 "description": "Взгляд Cursor на переход от синхронных агентов программирования к автономным облачным агентам, работающим параллельно"
               },
               "tr": {
-                "name": "The third era of AI software development",
+                "name": "Yapay zeka yazılım geliştirmenin üçüncü dönemi",
                 "description": "Cursor’ın eşzamanlı kodlama ajanlarından paralel çalışan otonom bulut ajanlarına geçişe bakışı"
               },
               "zh-Hans": {
-                "name": "The third era of AI software development",
+                "name": "AI 软件开发的第三个时代",
                 "description": "Cursor 对软件开发从同步编码 Agent 转向并行自主云端 Agent 的判断"
               },
               "zh-Hant": {
-                "name": "The third era of AI software development",
+                "name": "AI 軟體開發的第三個時代",
                 "description": "Cursor 對軟體開發從同步編碼 Agent 轉向平行自主雲端 Agent 的判斷"
               }
             },
@@ -957,47 +957,47 @@
                 "description": "How Cursor evolves context management, evaluates agent quality, and repairs harness regressions"
               },
               "de": {
-                "name": "Continually improving our agent harness",
+                "name": "Unser Agenten-Framework kontinuierlich verbessern",
                 "description": "Wie Cursor Kontextverwaltung weiterentwickelt, Agentenqualität bewertet und Regressionen im Harness behebt"
               },
               "es": {
-                "name": "Continually improving our agent harness",
+                "name": "Mejora continua de nuestro entorno para agentes",
                 "description": "Cómo Cursor evoluciona la gestión de contexto, evalúa la calidad de los agentes y corrige regresiones del harness"
               },
               "fr": {
-                "name": "Continually improving our agent harness",
+                "name": "Améliorer continuellement notre infrastructure d’agents",
                 "description": "Comment Cursor fait évoluer la gestion du contexte, évalue la qualité des agents et corrige les régressions du harness"
               },
               "id": {
-                "name": "Continually improving our agent harness",
+                "name": "Terus meningkatkan kerangka agen kami",
                 "description": "Cara Cursor mengembangkan manajemen konteks, mengevaluasi kualitas agen, dan memperbaiki regresi harness"
               },
               "ja": {
-                "name": "Continually improving our agent harness",
+                "name": "エージェント基盤を継続的に改善する",
                 "description": "Cursorがコンテキスト管理を進化させ、エージェント品質を評価し、ハーネスの回帰を修復する方法"
               },
               "ko": {
-                "name": "Continually improving our agent harness",
+                "name": "에이전트 실행 환경을 지속적으로 개선하기",
                 "description": "Cursor가 컨텍스트 관리를 발전시키고 에이전트 품질을 평가하며 하네스 회귀를 복구하는 방법"
               },
               "pt": {
-                "name": "Continually improving our agent harness",
+                "name": "Melhorando continuamente nossa estrutura de agentes",
                 "description": "Como a Cursor evolui o gerenciamento de contexto, avalia a qualidade dos agentes e corrige regressões do harness"
               },
               "ru": {
-                "name": "Continually improving our agent harness",
+                "name": "Непрерывное улучшение нашей среды для агентов",
                 "description": "Как Cursor развивает управление контекстом, оценивает качество агентов и устраняет регрессии в агентном контуре"
               },
               "tr": {
-                "name": "Continually improving our agent harness",
+                "name": "Ajan altyapımızı sürekli iyileştirmek",
                 "description": "Cursor’ın bağlam yönetimini geliştirme, ajan kalitesini değerlendirme ve harness gerilemelerini düzeltme yöntemi"
               },
               "zh-Hans": {
-                "name": "Continually improving our agent harness",
+                "name": "持续改进我们的智能体运行框架",
                 "description": "Cursor 如何演进上下文管理、评估 Agent 质量并修复 Agent Harness 回归"
               },
               "zh-Hant": {
-                "name": "Continually improving our agent harness",
+                "name": "持續改進我們的智慧體執行框架",
                 "description": "Cursor 如何演進上下文管理、評估 Agent 品質並修復 Agent Harness 回歸"
               }
             },
@@ -1059,47 +1059,47 @@
                 "description": "Claude Code updates spanning checkpoints, subagents, hooks, background tasks, and its native VS Code extension"
               },
               "de": {
-                "name": "Enabling Claude Code to work more autonomously",
+                "name": "Claude Code autonomer arbeiten lassen",
                 "description": "Claude-Code-Neuerungen zu Checkpoints, Subagenten, Hooks, Hintergrundaufgaben und der nativen VS-Code-Erweiterung"
               },
               "es": {
-                "name": "Enabling Claude Code to work more autonomously",
+                "name": "Permitir que Claude Code trabaje de forma más autónoma",
                 "description": "Novedades de Claude Code sobre checkpoints, subagentes, hooks, tareas en segundo plano y su extensión nativa para VS Code"
               },
               "fr": {
-                "name": "Enabling Claude Code to work more autonomously",
+                "name": "Permettre à Claude Code de travailler de façon plus autonome",
                 "description": "Nouveautés de Claude Code sur les checkpoints, sous-agents, hooks, tâches en arrière-plan et son extension VS Code native"
               },
               "id": {
-                "name": "Enabling Claude Code to work more autonomously",
+                "name": "Membuat Claude Code bekerja lebih mandiri",
                 "description": "Pembaruan Claude Code mencakup checkpoint, subagen, hook, tugas latar belakang, dan ekstensi native VS Code"
               },
               "ja": {
-                "name": "Enabling Claude Code to work more autonomously",
+                "name": "Claude Codeをより自律的に動かす",
                 "description": "チェックポイント、サブエージェント、フック、バックグラウンドタスク、ネイティブVS Code拡張を含むClaude Codeの更新"
               },
               "ko": {
-                "name": "Enabling Claude Code to work more autonomously",
+                "name": "Claude Code가 더 자율적으로 작업하도록 지원하기",
                 "description": "체크포인트, 하위 에이전트, 훅, 백그라운드 작업, 네이티브 VS Code 확장을 아우르는 Claude Code 업데이트"
               },
               "pt": {
-                "name": "Enabling Claude Code to work more autonomously",
+                "name": "Permitindo que o Claude Code trabalhe com mais autonomia",
                 "description": "Novidades do Claude Code sobre checkpoints, subagentes, hooks, tarefas em segundo plano e sua extensão nativa para VS Code"
               },
               "ru": {
-                "name": "Enabling Claude Code to work more autonomously",
+                "name": "Как сделать работу Claude Code более автономной",
                 "description": "Обновления Claude Code: контрольные точки, субагенты, хуки, фоновые задачи и нативное расширение для VS Code"
               },
               "tr": {
-                "name": "Enabling Claude Code to work more autonomously",
+                "name": "Claude Code’un daha özerk çalışmasını sağlamak",
                 "description": "Kontrol noktaları, alt ajanlar, hook’lar, arka plan görevleri ve yerel VS Code uzantısını kapsayan Claude Code güncellemeleri"
               },
               "zh-Hans": {
-                "name": "Enabling Claude Code to work more autonomously",
+                "name": "让 Claude Code 更自主地工作",
                 "description": "介绍 Claude Code 的检查点、子 Agent、Hooks、后台任务和原生 VS Code 扩展"
               },
               "zh-Hant": {
-                "name": "Enabling Claude Code to work more autonomously",
+                "name": "讓 Claude Code 更自主地工作",
                 "description": "介紹 Claude Code 的檢查點、子 Agent、Hooks、背景任務和原生 VS Code 擴充功能"
               }
             },
@@ -1117,47 +1117,47 @@
                 "description": "Anthropic's introduction to the open standard connecting AI assistants with data sources, tools, and development environments"
               },
               "de": {
-                "name": "Introducing the Model Context Protocol",
+                "name": "Einführung in das Model Context Protocol",
                 "description": "Anthropics Einführung in den offenen Standard, der KI-Assistenten mit Datenquellen, Tools und Entwicklungsumgebungen verbindet"
               },
               "es": {
-                "name": "Introducing the Model Context Protocol",
+                "name": "Presentamos Model Context Protocol",
                 "description": "Introducción de Anthropic al estándar abierto que conecta asistentes de IA con fuentes de datos, herramientas y entornos de desarrollo"
               },
               "fr": {
-                "name": "Introducing the Model Context Protocol",
+                "name": "Présentation du Model Context Protocol",
                 "description": "Présentation par Anthropic du standard ouvert reliant les assistants IA aux sources de données, outils et environnements de développement"
               },
               "id": {
-                "name": "Introducing the Model Context Protocol",
+                "name": "Memperkenalkan Model Context Protocol",
                 "description": "Pengenalan Anthropic terhadap standar terbuka yang menghubungkan asisten AI dengan sumber data, tool, dan lingkungan pengembangan"
               },
               "ja": {
-                "name": "Introducing the Model Context Protocol",
+                "name": "Model Context Protocolの紹介",
                 "description": "AIアシスタントをデータソース、ツール、開発環境に接続するオープン標準についてのAnthropicによる紹介"
               },
               "ko": {
-                "name": "Introducing the Model Context Protocol",
+                "name": "Model Context Protocol 소개",
                 "description": "AI 어시스턴트를 데이터 소스, 도구, 개발 환경에 연결하는 개방형 표준에 대한 Anthropic의 소개"
               },
               "pt": {
-                "name": "Introducing the Model Context Protocol",
+                "name": "Apresentando o Model Context Protocol",
                 "description": "Introdução da Anthropic ao padrão aberto que conecta assistentes de IA a fontes de dados, ferramentas e ambientes de desenvolvimento"
               },
               "ru": {
-                "name": "Introducing the Model Context Protocol",
+                "name": "Представляем Model Context Protocol",
                 "description": "Введение Anthropic в открытый стандарт, соединяющий ИИ-ассистентов с источниками данных, инструментами и средами разработки"
               },
               "tr": {
-                "name": "Introducing the Model Context Protocol",
+                "name": "Model Context Protocol ile tanışın",
                 "description": "AI asistanlarını veri kaynakları, araçlar ve geliştirme ortamlarıyla bağlayan açık standarda Anthropic’in girişi"
               },
               "zh-Hans": {
-                "name": "Introducing the Model Context Protocol",
+                "name": "介绍模型上下文协议",
                 "description": "Anthropic 对连接 AI 助手、数据源、工具和开发环境的开放标准的首次介绍"
               },
               "zh-Hant": {
-                "name": "Introducing the Model Context Protocol",
+                "name": "介紹模型上下文協定",
                 "description": "Anthropic 對連接 AI 助手、資料來源、工具和開發環境的開放標準的首次介紹"
               }
             },
@@ -1219,47 +1219,47 @@
                 "description": "First-hand lessons from moving toward multi-agent implementation, review automation, and stacked changes at Lovable"
               },
               "de": {
-                "name": "$85,000 in tokens later: Scaling agentic coding at Lovable",
+                "name": "85.000 $ an Tokens später: Agentisches Coding bei Lovable skalieren",
                 "description": "Erfahrungen aus erster Hand mit Multi-Agenten-Implementierung, automatisiertem Review und gestapelten Änderungen bei Lovable"
               },
               "es": {
-                "name": "$85,000 in tokens later: Scaling agentic coding at Lovable",
+                "name": "85.000 $ en tokens después: escalar la programación con agentes en Lovable",
                 "description": "Lecciones de primera mano sobre implementación multiagente, revisión automatizada y cambios apilados en Lovable"
               },
               "fr": {
-                "name": "$85,000 in tokens later: Scaling agentic coding at Lovable",
+                "name": "85 000 $ de tokens plus tard : déployer le codage agentique à grande échelle chez Lovable",
                 "description": "Retour d’expérience sur l’implémentation multi-agent, l’automatisation des revues et les changements empilés chez Lovable"
               },
               "id": {
-                "name": "$85,000 in tokens later: Scaling agentic coding at Lovable",
+                "name": "Setelah token senilai $85.000: menskalakan coding agentik di Lovable",
                 "description": "Pelajaran langsung tentang implementasi multi-agen, otomatisasi review, dan perubahan bertumpuk di Lovable"
               },
               "ja": {
-                "name": "$85,000 in tokens later: Scaling agentic coding at Lovable",
+                "name": "トークン費用8万5000ドルを経て：Lovableでエージェント型コーディングを拡大",
                 "description": "Lovableにおけるマルチエージェント実装、レビュー自動化、スタックされた変更への移行から得た実践的な知見"
               },
               "ko": {
-                "name": "$85,000 in tokens later: Scaling agentic coding at Lovable",
+                "name": "토큰 비용 8만 5천 달러 후: Lovable의 에이전트 코딩 확장",
                 "description": "Lovable에서 멀티 에이전트 구현, 리뷰 자동화, 스택형 변경으로 전환하며 얻은 실전 교훈"
               },
               "pt": {
-                "name": "$85,000 in tokens later: Scaling agentic coding at Lovable",
+                "name": "US$ 85 mil em tokens depois: escalando a programação com agentes na Lovable",
                 "description": "Lições práticas sobre implementação multiagente, automação de revisão e alterações empilhadas na Lovable"
               },
               "ru": {
-                "name": "$85,000 in tokens later: Scaling agentic coding at Lovable",
+                "name": "Спустя 85 000 $ на токены: масштабирование агентного программирования в Lovable",
                 "description": "Практические выводы о мультиагентной реализации, автоматизации ревью и пакетах связанных изменений в Lovable"
               },
               "tr": {
-                "name": "$85,000 in tokens later: Scaling agentic coding at Lovable",
+                "name": "85.000 dolarlık token sonrasında: Lovable’da ajan tabanlı kodlamayı ölçeklemek",
                 "description": "Lovable’da çok ajanlı uygulama, inceleme otomasyonu ve yığınlanmış değişikliklere geçişten çıkarılan dersler"
               },
               "zh-Hans": {
-                "name": "$85,000 in tokens later: Scaling agentic coding at Lovable",
+                "name": "消耗 8.5 万美元 Token 之后：Lovable 如何扩展智能体编程",
                 "description": "来自 Lovable 的一线经验：如何走向多 Agent 实现、自动化审查与堆叠式变更"
               },
               "zh-Hant": {
-                "name": "$85,000 in tokens later: Scaling agentic coding at Lovable",
+                "name": "消耗 8.5 萬美元 Token 之後：Lovable 如何擴展智慧體程式設計",
                 "description": "來自 Lovable 的第一線經驗：如何走向多 Agent 實作、自動化審查與堆疊式變更"
               }
             },

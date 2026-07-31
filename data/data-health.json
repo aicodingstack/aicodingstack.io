@@ -15,7 +15,7 @@
     "verifiedRecords": 215,
     "provenanceComplete": 215,
     "staleVerifiedRecords": 0,
-    "translationPlaceholderValues": 1191,
+    "translationPlaceholderValues": 300,
     "danglingRelationships": 0,
     "modelBenchmarkCoverage": 9.5,
     "productsWithPricing": 67,
@@ -73,59 +73,59 @@
   },
   "translationsByLocale": {
     "de": {
-      "totalStrings": 448,
-      "matchingEnglish": 106,
-      "matchingEnglishPercent": 23.7
+      "totalStrings": 446,
+      "matchingEnglish": 39,
+      "matchingEnglishPercent": 8.7
     },
     "es": {
-      "totalStrings": 448,
-      "matchingEnglish": 98,
-      "matchingEnglishPercent": 21.9
+      "totalStrings": 446,
+      "matchingEnglish": 25,
+      "matchingEnglishPercent": 5.6
     },
     "fr": {
-      "totalStrings": 448,
-      "matchingEnglish": 109,
-      "matchingEnglishPercent": 24.3
+      "totalStrings": 446,
+      "matchingEnglish": 36,
+      "matchingEnglishPercent": 8.1
     },
     "id": {
-      "totalStrings": 448,
-      "matchingEnglish": 142,
-      "matchingEnglishPercent": 31.7
+      "totalStrings": 446,
+      "matchingEnglish": 30,
+      "matchingEnglishPercent": 6.7
     },
     "ja": {
-      "totalStrings": 448,
-      "matchingEnglish": 100,
-      "matchingEnglishPercent": 22.3
+      "totalStrings": 446,
+      "matchingEnglish": 23,
+      "matchingEnglishPercent": 5.2
     },
     "ko": {
-      "totalStrings": 448,
-      "matchingEnglish": 108,
-      "matchingEnglishPercent": 24.1
+      "totalStrings": 446,
+      "matchingEnglish": 23,
+      "matchingEnglishPercent": 5.2
     },
     "pt": {
-      "totalStrings": 448,
-      "matchingEnglish": 108,
-      "matchingEnglishPercent": 24.1
+      "totalStrings": 446,
+      "matchingEnglish": 31,
+      "matchingEnglishPercent": 7
     },
     "ru": {
-      "totalStrings": 448,
-      "matchingEnglish": 117,
-      "matchingEnglishPercent": 26.1
+      "totalStrings": 446,
+      "matchingEnglish": 23,
+      "matchingEnglishPercent": 5.2
     },
     "tr": {
-      "totalStrings": 448,
-      "matchingEnglish": 119,
-      "matchingEnglishPercent": 26.6
+      "totalStrings": 446,
+      "matchingEnglish": 26,
+      "matchingEnglishPercent": 5.8
     },
     "zh-Hans": {
-      "totalStrings": 448,
-      "matchingEnglish": 92,
-      "matchingEnglishPercent": 20.5
+      "totalStrings": 446,
+      "matchingEnglish": 22,
+      "matchingEnglishPercent": 4.9
     },
     "zh-Hant": {
-      "totalStrings": 448,
-      "matchingEnglish": 92,
-      "matchingEnglishPercent": 20.5
+      "totalStrings": 446,
+      "matchingEnglish": 22,
+      "matchingEnglishPercent": 4.9
     }
   },
   "issues": [
