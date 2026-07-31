@@ -38,7 +38,10 @@
       "description": "Amazon Q Developer CLI 是您命令列中的智能 AI 助手，執行任務、理解您的程式碼庫，並透過自適應自然對話加速開發。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://aws.amazon.com/q/developer",
   "docsUrl": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line.html",
   "vendor": "AWS",
@@ -54,24 +57,17 @@
       "category": "Individual"
     },
     {
-      "name": "Pay-per-use",
-      "value": null,
+      "name": "Pro Tier",
+      "value": 19,
       "currency": "USD",
-      "per": "request",
+      "per": "user/month",
       "category": "Individual"
-    },
-    {
-      "name": "Enterprise",
-      "value": null,
-      "currency": null,
-      "per": "custom",
-      "category": "Enterprise"
     }
   ],
   "resourceUrls": {
     "download": "https://aws.amazon.com/developer/learning/q-developer-cli",
     "changelog": "https://github.com/aws/amazon-q-developer-cli/releases",
-    "pricing": "https://aws.amazon.com/q/pricing",
+    "pricing": "https://aws.amazon.com/q/developer/pricing",
     "mcp": null,
     "issue": "https://github.com/aws/amazon-q-developer-cli/issues"
   },
@@ -115,6 +111,11 @@
       "url": "https://aws.amazon.com/blogs/aws",
       "title": "Amazon Q Developer CLI blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://aws.amazon.com/q/developer/pricing",
+      "title": "Amazon Q Developer pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

@@ -51,10 +51,11 @@
     },
     {
       "url": "https://www.atlassian.com/software/rovo-dev/pricing",
-      "title": "Rovo Dev pricing"
+      "title": "Rovo Dev pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.atlassian.com/software/rovo-dev",
@@ -64,13 +65,6 @@
   "githubUrl": null,
   "license": "Proprietary",
   "pricing": [
-    {
-      "name": "Rovo Dev Free",
-      "value": 0,
-      "currency": null,
-      "per": "month",
-      "category": "Individual"
-    },
     {
       "name": "Rovo Dev Standard",
       "value": 20,

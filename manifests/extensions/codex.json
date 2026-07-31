@@ -39,7 +39,7 @@
       "description": "OpenAI 的 Codex 是一個整合到 IDE 中的 AI 編碼助手擴充功能。透過自然語言指令讀取、修改和執行程式碼，支援建構、除錯和自動化編碼任務。"
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://developers.openai.com/codex/ide",
@@ -52,12 +52,22 @@
       "fields": ["githubUrl", "license", "resourceUrls.issue"]
     },
     {
+      "url": "https://github.com/openai/codex",
+      "title": "Codex official repository",
+      "fields": ["githubUrl", "resourceUrls.issue"]
+    },
+    {
       "url": "https://openai.com/news",
       "title": "Codex blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://chatgpt.com/codex/pricing/",
+      "title": "Codex pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://openai.com/codex",
@@ -68,7 +78,7 @@
     "provider": "vscode-marketplace",
     "identifier": "openai.chatgpt"
   },
-  "githubUrl": null,
+  "githubUrl": "https://github.com/openai/codex",
   "license": "Proprietary",
   "pricing": [
     {
@@ -103,7 +113,7 @@
   "resourceUrls": {
     "download": "https://developers.openai.com/codex/ide",
     "changelog": "https://developers.openai.com/codex/changelog",
-    "pricing": "https://openai.com/pricing",
+    "pricing": "https://chatgpt.com/codex/pricing/",
     "mcp": null,
     "issue": "https://github.com/openai/codex/issues"
   },

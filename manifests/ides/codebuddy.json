@@ -38,7 +38,10 @@
       "description": "騰訊的 AI 編碼助手，提供智能代碼補全、多文件代碼生成（Craft 模式）、設計轉代碼轉換和集成部署工具。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.codebuddy.ai",
   "docsUrl": "https://www.codebuddy.ai/docs/ide",
   "vendor": "Tencent",
@@ -62,9 +65,9 @@
     },
     {
       "name": "Teams",
-      "value": null,
-      "currency": null,
-      "per": "custom",
+      "value": 40,
+      "currency": "USD",
+      "per": "user/month",
       "category": "Business"
     }
   ],
@@ -104,6 +107,11 @@
       "url": "https://www.codebuddy.ai/blog",
       "title": "CodeBuddy IDE blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://www.codebuddy.ai/docs/ide/Account/pricing",
+      "title": "CodeBuddy pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

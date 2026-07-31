@@ -55,7 +55,13 @@
     },
     {
       "url": "https://antigravity.google/pricing",
-      "title": "Google Antigravity pricing"
+      "title": "Google Antigravity pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://antigravity.google/blog/changes-to-antigravity-plans",
+      "title": "Changes to Antigravity plans",
+      "fields": ["pricing"]
     },
     {
       "url": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/",
@@ -63,7 +69,7 @@
       "fields": ["relatedProducts"]
     }
   ],
-  "lastVerifiedAt": "2026-07-22",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://antigravity.google/product/antigravity-cli",
@@ -82,15 +88,22 @@
     },
     {
       "name": "Google AI Pro",
-      "value": null,
-      "currency": null,
+      "value": 20,
+      "currency": "USD",
       "per": "month",
       "category": "Individual"
     },
     {
-      "name": "Google AI Ultra",
-      "value": null,
-      "currency": null,
+      "name": "Google AI Ultra 100",
+      "value": 100,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Google AI Ultra 200",
+      "value": 200,
+      "currency": "USD",
       "per": "month",
       "category": "Individual"
     },

@@ -39,7 +39,10 @@
       "description": "Google 的 AI 驅動集成開發環境（IDE），用於現代軟件開發，具有先進的 AI 功能。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://antigravity.google",
   "docsUrl": "https://antigravity.google/docs",
   "vendor": "Google",
@@ -48,25 +51,25 @@
   "license": "Proprietary",
   "pricing": [
     {
-      "name": "Individual",
-      "value": 0,
-      "currency": null,
-      "per": null,
+      "name": "Google AI Pro",
+      "value": 20,
+      "currency": "USD",
+      "per": "month",
       "category": "Individual"
     },
     {
-      "name": "Team",
-      "value": null,
-      "currency": null,
-      "per": "custom",
-      "category": "Business"
+      "name": "Google AI Ultra 100",
+      "value": 100,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
     },
     {
-      "name": "Enterprise",
-      "value": null,
-      "currency": null,
-      "per": "custom",
-      "category": "Enterprise"
+      "name": "Google AI Ultra 200",
+      "value": 200,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
     }
   ],
   "resourceUrls": {
@@ -136,6 +139,11 @@
       "url": "https://antigravity.google/blog",
       "title": "Antigravity blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://antigravity.google/blog/changes-to-antigravity-plans",
+      "title": "Changes to Antigravity plans",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

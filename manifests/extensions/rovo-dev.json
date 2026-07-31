@@ -39,7 +39,7 @@
       "description": "Rovo Dev for VS Code is Atlassian's editor coding agent for code-aware chat, planning, edits, tests, change review, and access to Jira and Confluence context."
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://www.atlassian.com/blog/announcements/rovo-dev-now-generally-available-in-vs-code",
@@ -51,10 +51,16 @@
     },
     {
       "url": "https://www.atlassian.com/software/rovo-dev/pricing",
-      "title": "Rovo Dev pricing"
+      "title": "Rovo Dev pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://github.com/atlassian/atlascode",
+      "title": "Atlassian for VS Code official repository",
+      "fields": ["githubUrl", "license", "resourceUrls.issue"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode",
@@ -65,16 +71,9 @@
     "provider": "vscode-marketplace",
     "identifier": "Atlassian.atlascode"
   },
-  "githubUrl": null,
-  "license": "Proprietary",
+  "githubUrl": "https://github.com/atlassian/atlascode",
+  "license": "Apache-2.0",
   "pricing": [
-    {
-      "name": "Rovo Dev Free",
-      "value": 0,
-      "currency": null,
-      "per": "month",
-      "category": "Individual"
-    },
     {
       "name": "Rovo Dev Standard",
       "value": 20,
@@ -88,7 +87,7 @@
     "changelog": "https://marketplace.visualstudio.com/items/Atlassian.atlascode/changelog",
     "pricing": "https://www.atlassian.com/software/rovo-dev/pricing",
     "mcp": null,
-    "issue": null
+    "issue": "https://github.com/atlassian/atlascode/issues"
   },
   "communityUrls": {
     "linkedin": null,

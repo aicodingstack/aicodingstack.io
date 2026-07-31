@@ -38,7 +38,10 @@
       "description": "適用於 VS Code、Cursor 和 Windsurf 的前沿編碼 Agent。具有自主推理、全面編輯和會話共享功能。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://ampcode.com",
   "docsUrl": "https://ampcode.com",
   "vendor": "Sourcegraph",
@@ -47,24 +50,31 @@
   "license": "Proprietary",
   "pricing": [
     {
-      "name": "Amp Free",
-      "value": 0,
-      "currency": null,
-      "per": null,
-      "category": "Individual"
-    },
-    {
-      "name": "Pro",
-      "value": null,
+      "name": "Megawatt",
+      "value": 20,
       "currency": "USD",
       "per": "month",
       "category": "Individual"
     },
     {
+      "name": "Gigawatt",
+      "value": 200,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Pay As You Go",
+      "value": null,
+      "currency": "USD",
+      "per": "usage-based",
+      "category": "Individual"
+    },
+    {
       "name": "Enterprise",
       "value": null,
-      "currency": null,
-      "per": "custom",
+      "currency": "USD",
+      "per": "usage-based",
       "category": "Enterprise"
     }
   ],
@@ -102,6 +112,11 @@
       "url": "https://discord.com/invite/GT742pq9rS",
       "title": "Amp discord community",
       "fields": ["communityUrls.discord"]
+    },
+    {
+      "url": "https://ampcode.com/pricing",
+      "title": "Amp pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

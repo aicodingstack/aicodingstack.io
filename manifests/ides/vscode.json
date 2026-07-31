@@ -100,7 +100,7 @@
     {
       "url": "https://github.com/microsoft/vscode",
       "title": "Visual Studio Code github community",
-      "fields": ["communityUrls.github"]
+      "fields": ["communityUrls.github", "pricing"]
     },
     {
       "url": "https://www.reddit.com/r/vscode",

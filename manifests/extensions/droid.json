@@ -39,7 +39,10 @@
       "description": "AI 開發平台，提供 Droids —— 在工作流程中自動化軟體任務的自主編碼 Agent。Droids 重構程式碼、處理除錯和測試並生成功能。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://factory.ai",
   "docsUrl": "https://docs.factory.ai",
   "vendor": "Factory.ai",
@@ -66,11 +69,18 @@
       "category": "Individual"
     },
     {
+      "name": "Plus",
+      "value": 100,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
       "name": "Max",
       "value": 200,
       "currency": "USD",
       "per": "month",
-      "category": "Business"
+      "category": "Individual"
     },
     {
       "name": "Enterprise",
@@ -118,6 +128,11 @@
       "url": "https://www.linkedin.com/company/factoryai",
       "title": "Droid linkedin community",
       "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://docs.factory.ai/pricing/individuals",
+      "title": "Factory individual plans",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

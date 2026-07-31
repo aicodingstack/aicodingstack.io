@@ -38,7 +38,10 @@
       "description": "功能強大的 Java IDE，具有智能代碼輔助、重構工具和多語言支持。提供社區版（免費）和旗艦版（付費）兩個版本。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
   "websiteUrl": "https://www.jetbrains.com/idea",
   "docsUrl": "https://www.jetbrains.com/help/idea",
   "vendor": "JetBrains",
@@ -125,6 +128,11 @@
       "url": "https://blog.jetbrains.com/idea",
       "title": "IntelliJ IDEA blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://www.jetbrains.com/idea/buy/",
+      "title": "IntelliJ IDEA pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

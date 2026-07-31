@@ -46,7 +46,17 @@
   "productHero": {
     "runtime": "執行期"
   },
-  "productPricing": {},
+  "productPricing": {
+    "custom": "聯絡銷售",
+    "free": "免費",
+    "freeOnly": "僅免費",
+    "perCredit": "{price}/點數",
+    "perHour": "{price}/小時",
+    "perMonth": "{price}/月",
+    "perUserMonth": "{price}/使用者/月",
+    "perYear": "{price}/年",
+    "usageBased": "按量計費"
+  },
   "relatedProducts": {
     "title": "相關產品",
     "viewProduct": "檢視產品"

@@ -46,7 +46,17 @@
   "productHero": {
     "runtime": "런타임"
   },
-  "productPricing": {},
+  "productPricing": {
+    "custom": "영업팀 문의",
+    "free": "무료",
+    "freeOnly": "무료만",
+    "perCredit": "{price}/크레딧",
+    "perHour": "{price}/시간",
+    "perMonth": "{price}/월",
+    "perUserMonth": "{price}/사용자/월",
+    "perYear": "{price}/년",
+    "usageBased": "사용량 기반"
+  },
   "relatedProducts": {
     "title": "관련 제품",
     "viewProduct": "제품 보기"

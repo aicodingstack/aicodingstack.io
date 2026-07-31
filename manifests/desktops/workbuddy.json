@@ -35,7 +35,7 @@
       "description": "Tencent WorkBuddy 是一款 AI 智慧代理桌面工作台，提供 Coding Mode，可進行程式碼生成、審查、除錯、重構及自主執行本機任務。"
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://www.workbuddy.ai/docs/workbuddy/Quickstart",
@@ -61,9 +61,14 @@
       "url": "https://www.workbuddy.ai/document/term",
       "title": "Tencent WorkBuddy service agreement",
       "fields": ["vendor", "license"]
+    },
+    {
+      "url": "https://cloud.tencent.com/document/product/1831/134333",
+      "title": "WorkBuddy billing overview",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "workbuddy",
@@ -76,11 +81,61 @@
   "latestVersion": "Latest",
   "githubUrl": null,
   "license": "Proprietary",
-  "pricing": [],
+  "pricing": [
+    {
+      "name": "Experience",
+      "value": 0,
+      "currency": "CNY",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Standard",
+      "value": 99,
+      "currency": "CNY",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Advanced",
+      "value": 199,
+      "currency": "CNY",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Flagship",
+      "value": 999,
+      "currency": "CNY",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "SaaS Enterprise",
+      "value": 198,
+      "currency": "CNY",
+      "per": "user/month",
+      "category": "Business"
+    },
+    {
+      "name": "Dedicated Cloud Enterprise",
+      "value": 316,
+      "currency": "CNY",
+      "per": "user/month",
+      "category": "Enterprise"
+    },
+    {
+      "name": "Private Deployment",
+      "value": null,
+      "currency": null,
+      "per": "custom",
+      "category": "Enterprise"
+    }
+  ],
   "resourceUrls": {
     "download": "https://www.workbuddy.ai/",
     "changelog": null,
-    "pricing": "https://www.workbuddy.ai/pricing/",
+    "pricing": "https://cloud.tencent.com/document/product/1831/134333",
     "mcp": null,
     "issue": null
   },

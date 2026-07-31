@@ -35,7 +35,7 @@
       "description": "Factory Desktop is a standalone workspace for coordinating Droids, running parallel coding tasks, reviewing previews and diffs, and managing persistent development sessions."
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://factory.ai/product/desktop",
@@ -44,9 +44,14 @@
     {
       "url": "https://docs.factory.ai/welcome/index",
       "title": "Factory documentation"
+    },
+    {
+      "url": "https://docs.factory.ai/pricing/individuals",
+      "title": "Factory individual plans",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "factory-desktop",
@@ -68,11 +73,18 @@
       "category": "Individual"
     },
     {
+      "name": "Plus",
+      "value": 100,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
       "name": "Max",
       "value": 200,
       "currency": "USD",
       "per": "month",
-      "category": "Business"
+      "category": "Individual"
     },
     {
       "name": "Enterprise",

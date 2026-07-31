@@ -39,7 +39,10 @@
       "description": "OpenAI 的 Codex CLI 是本機編碼 Agent，透過自然語言命令讀取、修改和執行程式碼。支援建構、除錯和自動化編碼任務。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://openai.com/codex",
   "docsUrl": "https://developers.openai.com/codex/cli",
   "vendor": "OpenAI",
@@ -83,7 +86,7 @@
   "resourceUrls": {
     "download": "https://developers.openai.com/codex/cli",
     "changelog": "https://github.com/openai/codex/releases",
-    "pricing": "https://openai.com/pricing",
+    "pricing": "https://chatgpt.com/codex/pricing/",
     "mcp": null,
     "issue": "https://github.com/openai/codex/issues"
   },
@@ -136,6 +139,11 @@
       "url": "https://openai.com/news",
       "title": "Codex CLI blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://chatgpt.com/codex/pricing/",
+      "title": "Codex pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

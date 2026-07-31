@@ -35,7 +35,7 @@
       "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows."
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://about.gitlab.com/blog/gitlab-duo-cli-generally-available/",
@@ -44,9 +44,19 @@
     {
       "url": "https://about.gitlab.com/blog/gitlab-duo-cli/",
       "title": "GitLab Duo CLI beta"
+    },
+    {
+      "url": "https://docs.gitlab.com/subscriptions/gitlab_credits",
+      "title": "GitLab Credits and usage billing",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://docs.gitlab.com/subscriptions/subscription-add-ons",
+      "title": "GitLab Duo add-ons",
+      "fields": ["pricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "gitlab-duo-cli",
@@ -61,17 +71,31 @@
   "license": "Proprietary",
   "pricing": [
     {
-      "name": "GitLab Duo",
+      "name": "On-Demand GitLab Credits",
+      "value": 1,
+      "currency": "USD",
+      "per": "credit",
+      "category": "Business"
+    },
+    {
+      "name": "GitLab Duo Pro",
       "value": null,
       "currency": null,
       "per": "subscription",
       "category": "Business"
+    },
+    {
+      "name": "GitLab Duo Enterprise",
+      "value": null,
+      "currency": null,
+      "per": "subscription",
+      "category": "Enterprise"
     }
   ],
   "resourceUrls": {
     "download": null,
     "changelog": "https://about.gitlab.com/blog/gitlab-duo-cli-generally-available/",
-    "pricing": "https://about.gitlab.com/pricing",
+    "pricing": "https://docs.gitlab.com/subscriptions/gitlab_credits",
     "mcp": null,
     "issue": null
   },

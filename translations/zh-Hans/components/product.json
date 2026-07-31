@@ -46,7 +46,17 @@
   "productHero": {
     "runtime": "运行时"
   },
-  "productPricing": {},
+  "productPricing": {
+    "custom": "联系销售",
+    "free": "免费",
+    "freeOnly": "仅免费",
+    "perCredit": "{price}/积分",
+    "perHour": "{price}/小时",
+    "perMonth": "{price}/月",
+    "perUserMonth": "{price}/用户/月",
+    "perYear": "{price}/年",
+    "usageBased": "按量计费"
+  },
   "relatedProducts": {
     "title": "相关产品",
     "viewProduct": "查看产品"

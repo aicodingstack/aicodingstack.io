@@ -46,7 +46,17 @@
   "productHero": {
     "runtime": "Çalışma Zamanı"
   },
-  "productPricing": {},
+  "productPricing": {
+    "custom": "Satış ekibiyle iletişime geçin",
+    "free": "Ücretsiz",
+    "freeOnly": "Sadece ücretsiz",
+    "perCredit": "{price}/kredi",
+    "perHour": "{price}/saat",
+    "perMonth": "{price}/ay",
+    "perUserMonth": "{price}/kullanıcı/ay",
+    "perYear": "{price}/yıl",
+    "usageBased": "Kullanıma dayalı"
+  },
   "relatedProducts": {
     "title": "İlgili Ürünler",
     "viewProduct": "Ürünü Görüntüle"

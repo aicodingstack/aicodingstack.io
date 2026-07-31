@@ -35,7 +35,7 @@
       "description": "Mistral Vibe for VS Code brings Mistral's coding agent into the editor for repository-aware chat, code changes, command execution, and agentic development workflows."
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://mistral.ai/news/vibe-agent/",
@@ -44,9 +44,14 @@
     {
       "url": "https://docs.mistral.ai/vibe/code/overview",
       "title": "Mistral Vibe documentation"
+    },
+    {
+      "url": "https://mistral.ai/pricing",
+      "title": "Mistral pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-30",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "mistral-vibe",
@@ -105,7 +110,7 @@
   "relatedProducts": [
     {
       "type": "cli",
-      "productId": "mistral-vibe-cli"
+      "productId": "vibe-cli"
     }
   ],
   "supportedIdes": [

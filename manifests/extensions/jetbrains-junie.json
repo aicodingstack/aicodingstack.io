@@ -39,40 +39,50 @@
       "description": "JetBrains Junie 是一個 AI 編碼 Agent，可以自主執行工作或與開發者協作。它獨立處理例行工作，同時協助複雜工作。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://www.jetbrains.com/junie",
   "docsUrl": "https://www.jetbrains.com/help/junie",
   "vendor": "JetBrains",
   "latestVersion": "1.0.0",
-  "githubUrl": null,
+  "githubUrl": "https://github.com/JetBrains/junie",
   "license": "Proprietary",
   "pricing": [
     {
-      "name": "JetBrains AI Subscription",
-      "value": null,
-      "currency": null,
-      "per": "custom",
+      "name": "AI Free",
+      "value": 0,
+      "currency": "USD",
+      "per": "month",
       "category": "Individual"
     },
     {
-      "name": "JetBrains AI Business",
-      "value": null,
-      "currency": null,
-      "per": "custom",
-      "category": "Business"
+      "name": "AI Pro",
+      "value": 10,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
     },
     {
-      "name": "JetBrains AI Enterprise",
-      "value": null,
-      "currency": null,
-      "per": "custom",
+      "name": "AI Ultimate",
+      "value": 30,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "AI Enterprise",
+      "value": 60,
+      "currency": "USD",
+      "per": "user/month",
       "category": "Enterprise"
     }
   ],
   "resourceUrls": {
     "download": "https://plugins.jetbrains.com/plugin/26104-junie-the-ai-coding-agent-by-jetbrains",
     "changelog": "https://www.jetbrains.com/idea/whatsnew",
-    "pricing": "https://www.jetbrains.com/idea/buy",
+    "pricing": "https://www.jetbrains.com/ai-ides/buy/",
     "mcp": null,
     "issue": "https://youtrack.jetbrains.com/issues"
   },
@@ -108,6 +118,16 @@
       "url": "https://blog.jetbrains.com/junie",
       "title": "JetBrains Junie blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://www.jetbrains.com/help/ai-assistant/licensing-and-subscriptions.html",
+      "title": "JetBrains AI plans and usage",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://github.com/JetBrains/junie",
+      "title": "Junie official repository",
+      "fields": ["githubUrl"]
     }
   ]
 }

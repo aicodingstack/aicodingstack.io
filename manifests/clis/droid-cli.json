@@ -39,7 +39,10 @@
       "description": "Factory AI 的 Droid CLI 是基於終端的編碼 Agent，處理從規劃到測試的完整功能開發。與企業工具整合並提供透明的差異審查。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://factory.ai",
   "docsUrl": "https://docs.factory.ai/cli/getting-started/overview",
   "vendor": "Factory AI",
@@ -55,11 +58,18 @@
       "category": "Individual"
     },
     {
+      "name": "Plus",
+      "value": 100,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
       "name": "Max",
       "value": 200,
       "currency": "USD",
       "per": "month",
-      "category": "Business"
+      "category": "Individual"
     },
     {
       "name": "Enterprise",
@@ -113,6 +123,13 @@
       "installCommand": "curl -fsSL https://app.factory.ai/cli | sh",
       "launchCommand": "droid",
       "installPath": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://docs.factory.ai/pricing/individuals",
+      "title": "Factory individual plans",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

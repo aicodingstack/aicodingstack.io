@@ -1,0 +1,131 @@
+{
+  "$schema": "../$schemas/cli.schema.json",
+  "id": "auggie-cli",
+  "name": "Auggie CLI",
+  "description": "Auggie CLI brings autonomous AI agents to your terminal with Augment's context engine. It provides a native TUI, automated workflows, and codebase-aware assistance.",
+  "translations": {
+    "zh-Hans": {
+      "description": "Auggie CLI 将自主 AI Agent 带到终端，并使用 Augment 的上下文引擎，提供原生 TUI、自动化工作流和代码库感知辅助。"
+    },
+    "de": {
+      "description": "Auggie CLI bringt autonome AI-Agenten mit Augments Kontext-Engine ins Terminal und bietet eine native TUI, automatisierte Workflows und codebasisbezogene Unterstützung."
+    },
+    "ko": {
+      "description": "Auggie CLI는 Augment의 컨텍스트 엔진을 사용하는 자율 AI 에이전트를 터미널에 제공하며 네이티브 TUI, 자동화된 워크플로 및 코드베이스 인식 지원을 제공합니다."
+    },
+    "es": {
+      "description": "Auggie CLI lleva agentes de IA autónomos al terminal con el motor de contexto de Augment, una TUI nativa, flujos automatizados y asistencia basada en el código."
+    },
+    "fr": {
+      "description": "Auggie CLI apporte des agents d’IA autonomes au terminal avec le moteur de contexte d’Augment, une interface TUI native, des workflows automatisés et une assistance tenant compte du code."
+    },
+    "id": {
+      "description": "Auggie CLI menghadirkan agen AI otonom ke terminal dengan mesin konteks Augment, TUI native, alur kerja otomatis, dan bantuan yang memahami basis kode."
+    },
+    "ja": {
+      "description": "Auggie CLIは、Augmentのコンテキストエンジンを使う自律型AIエージェントをターミナルに提供し、ネイティブTUI、自動ワークフロー、コードベース対応支援を備えています。"
+    },
+    "pt": {
+      "description": "Auggie CLI leva agentes de IA autónomos ao terminal com o motor de contexto da Augment, TUI nativa, fluxos automatizados e assistência ciente da base de código."
+    },
+    "ru": {
+      "description": "Auggie CLI переносит автономных ИИ-агентов в терминал с контекстным движком Augment, нативным TUI, автоматизированными процессами и учетом кодовой базы."
+    },
+    "tr": {
+      "description": "Auggie CLI, Augment'ın bağlam motoruyla otonom AI ajanlarını terminale getirir; yerel TUI, otomatik iş akışları ve kod tabanı farkındalığı sunar."
+    },
+    "zh-Hant": {
+      "description": "Auggie CLI 將自主 AI Agent 帶到終端，並使用 Augment 的上下文引擎，提供原生 TUI、自動化工作流程和程式碼庫感知輔助。"
+    }
+  },
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.augmentcode.com",
+  "docsUrl": "https://docs.augmentcode.com/cli",
+  "vendor": "Augment",
+  "latestVersion": "0.7.0",
+  "githubUrl": "https://github.com/augmentcode/auggie",
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Business",
+      "value": 100,
+      "currency": "USD",
+      "per": "month",
+      "category": "Business"
+    },
+    {
+      "name": "Enterprise",
+      "value": null,
+      "currency": null,
+      "per": "custom",
+      "category": "Enterprise"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://www.augmentcode.com",
+    "changelog": null,
+    "pricing": "https://www.augmentcode.com/pricing",
+    "mcp": "https://www.augmentcode.com/mcp",
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": "https://github.com/augmentcode/auggie",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": "https://www.augmentcode.com/blog"
+  },
+  "relatedProducts": [
+    {
+      "type": "extension",
+      "productId": "augment-code"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installCommand": "npm install -g @augmentcode/npm i @augmentcode/auggie",
+      "launchCommand": "auggie",
+      "installPath": null
+    },
+    {
+      "os": "Windows",
+      "installCommand": "npm install -g @augmentcode/npm i @augmentcode/auggie",
+      "launchCommand": "auggie",
+      "installPath": null
+    },
+    {
+      "os": "Linux",
+      "installCommand": "npm install -g @augmentcode/npm i @augmentcode/auggie",
+      "launchCommand": "auggie",
+      "installPath": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/augmentcode/auggie",
+      "title": "Auggie CLI github community",
+      "fields": ["communityUrls.github"]
+    },
+    {
+      "url": "https://www.augmentcode.com/blog",
+      "title": "Auggie CLI blog community",
+      "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://docs.augmentcode.com/cli/overview",
+      "title": "Introducing Auggie CLI",
+      "fields": ["name", "description", "docsUrl"]
+    },
+    {
+      "url": "https://www.augmentcode.com/pricing",
+      "title": "Augment pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    }
+  ]
+}

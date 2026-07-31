@@ -55,6 +55,7 @@
         "latestVersion",
         "githubUrl",
         "license",
+        "pricing",
         "resourceUrls.changelog",
         "resourceUrls.issue"
       ]
@@ -85,7 +86,15 @@
   "latestVersion": "2.0.0",
   "githubUrl": "https://github.com/continuedev/continue",
   "license": "Apache-2.0",
-  "pricing": [],
+  "pricing": [
+    {
+      "name": "Open Source",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
   "resourceUrls": {
     "download": "https://marketplace.visualstudio.com/items?itemName=Continue.continue",
     "changelog": "https://github.com/continuedev/continue/releases",

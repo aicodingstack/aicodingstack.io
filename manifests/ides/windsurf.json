@@ -38,7 +38,10 @@
       "description": "AI 原生 IDE，具有智能助手 Cascade，可自主生成、編輯、測試和部署代碼。集成 MCP 服務器和插件鉤子，讓開發者保持心流狀態。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://windsurf.com",
   "docsUrl": "https://docs.windsurf.com",
   "vendor": "Cognition",
@@ -55,14 +58,28 @@
     },
     {
       "name": "Pro",
-      "value": 15,
+      "value": 20,
       "currency": "USD",
       "per": "month",
       "category": "Individual"
     },
     {
-      "name": "Teams",
-      "value": 30,
+      "name": "Max",
+      "value": 200,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Teams Base",
+      "value": 80,
+      "currency": "USD",
+      "per": "month",
+      "category": "Business"
+    },
+    {
+      "name": "Teams Full Developer Seat",
+      "value": 40,
       "currency": "USD",
       "per": "user/month",
       "category": "Business"
@@ -132,6 +149,11 @@
       "url": "https://windsurf.com/blog",
       "title": "Windsurf Editor blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://windsurf.com/pricing",
+      "title": "Windsurf and Devin pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ]
 }

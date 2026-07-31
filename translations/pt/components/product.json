@@ -46,7 +46,17 @@
   "productHero": {
     "runtime": "Runtime"
   },
-  "productPricing": {},
+  "productPricing": {
+    "custom": "Contactar vendas",
+    "free": "Grátis",
+    "freeOnly": "Apenas grátis",
+    "perCredit": "{price}/crédito",
+    "perHour": "{price}/hora",
+    "perMonth": "{price}/mês",
+    "perUserMonth": "{price}/utilizador/mês",
+    "perYear": "{price}/ano",
+    "usageBased": "Baseado no uso"
+  },
   "relatedProducts": {
     "title": "Produtos Relacionados",
     "viewProduct": "Ver Produto"

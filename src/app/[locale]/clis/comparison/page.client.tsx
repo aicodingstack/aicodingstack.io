@@ -7,12 +7,13 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import { Breadcrumb } from '@/components/navigation/Breadcrumb'
 import ComparisonTable, { type ComparisonColumn } from '@/components/product/ComparisonTable'
+import { PricingSummaryValue } from '@/components/product/ProductPricing'
 import { Link } from '@/i18n/navigation'
 import { withVendorCommunityUrlsForCatalog } from '@/lib/community-urls'
 import { clisData, vendorsData } from '@/lib/generated'
 import { getGithubStars } from '@/lib/generated/github-stars'
 import { renderLicense } from '@/lib/license'
-import { formatPrice, type PricingTier } from '@/lib/pricing'
+import type { PricingTier } from '@/lib/pricing'
 import type { ManifestCLI, ManifestVendor } from '@/types/manifests'
 
 const clis = withVendorCommunityUrlsForCatalog(
@@ -252,12 +253,7 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
       label: tPage('columns.startingPrice'),
       render: (_: unknown, item: Record<string, unknown>) => {
         const pricing = item.pricing as PricingTier[]
-        if (!pricing || pricing.length === 0) return '-'
-        const paidPlans = pricing.filter(p => p.value && p.value > 0)
-        if (paidPlans.length === 0) return tPage('pricingValues.freeOnly')
-        const minPrice = Math.min(...paidPlans.map(p => p.value as number))
-        const minPlan = paidPlans.find(p => p.value === minPrice)
-        return minPlan ? formatPrice(minPlan) : '-'
+        return <PricingSummaryValue pricing={pricing} boundary="min" />
       },
     },
     {
@@ -265,12 +261,7 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
       label: tPage('columns.maxPrice'),
       render: (_: unknown, item: Record<string, unknown>) => {
         const pricing = item.pricing as PricingTier[]
-        if (!pricing || pricing.length === 0) return '-'
-        const paidPlans = pricing.filter(p => p.value && p.value > 0)
-        if (paidPlans.length === 0) return '-'
-        const maxPrice = Math.max(...paidPlans.map(p => p.value as number))
-        const maxPlan = paidPlans.find(p => p.value === maxPrice)
-        return maxPlan ? formatPrice(maxPlan) : '-'
+        return <PricingSummaryValue pricing={pricing} boundary="max" />
       },
     },
   ]
