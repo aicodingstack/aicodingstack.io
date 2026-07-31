@@ -46,7 +46,7 @@ export default function CollectionScrollbar({
   }, [sections])
 
   return (
-    <aside className="sticky top-[73px] z-20 w-full shrink-0 bg-[var(--color-bg)] lg:top-[100px] lg:w-[200px] lg:self-start">
+    <aside className="sticky top-[73px] z-20 w-full shrink-0 bg-[var(--color-bg)] lg:top-[100px] lg:w-[240px] lg:self-start">
       <div>
         <nav
           aria-label={label}
@@ -58,8 +58,8 @@ export default function CollectionScrollbar({
               href={`#${section.id}`}
               aria-current={activeSection === section.id ? 'location' : undefined}
               className={`
-                shrink-0 whitespace-nowrap text-left text-sm px-[var(--spacing-sm)] py-[var(--spacing-xs)]
-                transition-all lg:block lg:w-full
+                shrink-0 whitespace-nowrap px-[var(--spacing-sm)] py-[var(--spacing-xs)] text-left text-sm
+                transition-all lg:block lg:w-full lg:whitespace-normal
                 ${
                   activeSection === section.id
                     ? 'bg-[var(--color-hover)] text-[var(--color-text)] font-medium'
