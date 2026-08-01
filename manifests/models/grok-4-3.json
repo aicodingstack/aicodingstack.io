@@ -67,6 +67,7 @@
   "docsUrl": "https://docs.x.ai/developers/models",
   "vendor": "xAI",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 1000000,
   "maxOutput": null,
   "tokenPricing": {

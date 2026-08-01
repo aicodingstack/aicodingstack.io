@@ -1,0 +1,126 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "deepseek-v4-flash-preview",
+  "name": "DeepSeek-V4-Flash-Preview",
+  "description": "DeepSeek's open-weight V4 Flash preview with 284B total and 13B active parameters, a 1M-token context window, dual thinking modes, JSON output, and tool calls.",
+  "translations": {
+    "de": {
+      "description": "DeepSeeks Open-Weight-Vorschau von V4 Flash mit 284 Mrd. Gesamt- und 13 Mrd. aktiven Parametern, 1 Mio. Token Kontext, zwei Denkmodi, JSON und Werkzeugaufrufen."
+    },
+    "es": {
+      "description": "La versión preliminar de pesos abiertos de DeepSeek V4 Flash, con 284B parámetros totales y 13B activos, contexto de 1M tokens, dos modos de pensamiento, JSON y herramientas."
+    },
+    "fr": {
+      "description": "La préversion à poids ouverts de DeepSeek V4 Flash, avec 284 Md de paramètres dont 13 Md actifs, un contexte de 1 M de jetons, deux modes de réflexion, JSON et outils."
+    },
+    "id": {
+      "description": "Pratinjau open-weight DeepSeek V4 Flash dengan 284B parameter total dan 13B aktif, konteks 1 juta token, dua mode berpikir, keluaran JSON, dan pemanggilan alat."
+    },
+    "ja": {
+      "description": "総2840億・アクティブ130億パラメータ、100万トークンのコンテキスト、2種類の思考モード、JSON出力、ツール呼び出しを備えたDeepSeek V4 Flashのオープンウェイト・プレビュー。"
+    },
+    "ko": {
+      "description": "총 284B 및 활성 13B 매개변수, 100만 토큰 컨텍스트, 이중 사고 모드, JSON 출력과 도구 호출을 지원하는 DeepSeek V4 Flash 오픈 웨이트 프리뷰입니다."
+    },
+    "pt": {
+      "description": "A prévia de pesos abertos do DeepSeek V4 Flash, com 284B parâmetros totais e 13B ativos, contexto de 1M tokens, dois modos de pensamento, JSON e ferramentas."
+    },
+    "ru": {
+      "description": "Предварительная версия DeepSeek V4 Flash с открытыми весами: 284 млрд параметров, 13 млрд активных, контекст 1 млн токенов, два режима рассуждений, JSON и инструменты."
+    },
+    "tr": {
+      "description": "DeepSeek V4 Flash'in 284B toplam ve 13B aktif parametreli, 1M token bağlamlı, çift düşünme modlu, JSON çıktılı ve araç çağrılı açık ağırlıklı önizlemesi."
+    },
+    "zh-Hans": {
+      "description": "DeepSeek V4 Flash 的开放权重预览版，拥有 2840 亿总参数、130 亿激活参数，支持 100 万 token 上下文、双思考模式、JSON 输出和工具调用。"
+    },
+    "zh-Hant": {
+      "description": "DeepSeek V4 Flash 的開放權重預覽版，擁有 2840 億總參數、130 億啟用參數，支援 100 萬 token 上下文、雙思考模式、JSON 輸出和工具呼叫。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://api-docs.deepseek.com/news/news260424/",
+      "title": "DeepSeek V4 Preview release",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "activeParameters",
+        "releaseDate",
+        "contextWindow",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://api-docs.deepseek.com/updates/",
+      "title": "DeepSeek V4 Flash July 31 API update",
+      "fields": ["lifecycle", "tokenPricing"]
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "title": "DeepSeek V4 Flash official model card",
+      "fields": ["lifecycle", "platformUrls.huggingface"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/deepseek-v4-flash-0420",
+      "title": "Artificial Analysis DeepSeek V4 Flash preview model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    },
+    {
+      "url": "https://models.dev/api.json",
+      "title": "Models.dev DeepSeek V4 Flash pricing record",
+      "fields": ["referenceTokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.deepseek.com",
+  "docsUrl": "https://api-docs.deepseek.com/news/news260424/",
+  "vendor": "DeepSeek",
+  "size": "284B",
+  "activeParameters": "13B",
+  "contextWindow": 1000000,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "unavailable",
+    "reason": "historical-price-unverified",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "referenceTokenPricing": {
+    "currency": "USD",
+    "basis": "first-party-api",
+    "rates": { "input": 0.14, "output": 0.28, "cacheRead": 0.0028, "cacheWrite": null },
+    "source": {
+      "name": "Models.dev — DeepSeek V4 Flash",
+      "url": "https://models.dev/api.json",
+      "observedAt": "2026-07-31"
+    }
+  },
+  "releaseDate": "2026-04-24",
+  "lifecycle": "maintained",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/deepseek-v4-flash-0420",
+    "openrouter": null
+  }
+}

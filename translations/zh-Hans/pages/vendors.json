@@ -1,4 +1,11 @@
 {
+  "companyStages": {
+    "publicCompany": "上市公司",
+    "startup": "创业公司",
+    "superUnicorn": "超级独角兽",
+    "unicorn": "独角兽"
+  },
+  "noResults": "没有符合搜索条件的厂商",
   "subtitle": "构建 AI 技术的领先公司和组织",
   "title": "AI 编码厂商"
 }

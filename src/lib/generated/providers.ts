@@ -6,14 +6,19 @@
 
 import Alibaba from '../../../manifests/providers/alibaba.json'
 import Anthropic from '../../../manifests/providers/anthropic.json'
+import Baseten from '../../../manifests/providers/baseten.json'
+import Deepinfra from '../../../manifests/providers/deepinfra.json'
 import Deepseek from '../../../manifests/providers/deepseek.json'
+import FireworksAi from '../../../manifests/providers/fireworks-ai.json'
 import Google from '../../../manifests/providers/google.json'
 import Meta from '../../../manifests/providers/meta.json'
 import Minimax from '../../../manifests/providers/minimax.json'
 import Moonshot from '../../../manifests/providers/moonshot.json'
+import NovitaAi from '../../../manifests/providers/novita-ai.json'
 import Openai from '../../../manifests/providers/openai.json'
 import Openrouter from '../../../manifests/providers/openrouter.json'
 import Siliconflow from '../../../manifests/providers/siliconflow.json'
+import TogetherAi from '../../../manifests/providers/together-ai.json'
 import Xai from '../../../manifests/providers/xai.json'
 import ZAi from '../../../manifests/providers/z-ai.json'
 import type { ManifestProvider } from '../../types/manifests'
@@ -21,14 +26,19 @@ import type { ManifestProvider } from '../../types/manifests'
 export const providersData = [
   Alibaba,
   Anthropic,
+  Baseten,
+  Deepinfra,
   Deepseek,
+  FireworksAi,
   Google,
   Meta,
   Minimax,
   Moonshot,
+  NovitaAi,
   Openai,
   Openrouter,
   Siliconflow,
+  TogetherAi,
   Xai,
   ZAi,
 ] as unknown as ManifestProvider[]

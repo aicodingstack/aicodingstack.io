@@ -58,15 +58,21 @@
       "url": "https://platform.minimax.io/subscribe/token-plan?tab=api-enterprise",
       "title": "MiniMax M3 pay-as-you-go pricing",
       "fields": ["tokenPricing", "contextWindow"]
+    },
+    {
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "title": "MiniMax M3 official model card",
+      "fields": ["size", "activeParameters", "platformUrls.huggingface"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.minimax.io",
   "docsUrl": "https://platform.minimax.io/docs/api-reference/api-overview",
   "vendor": "MiniMax",
-  "size": null,
+  "size": "428B",
+  "activeParameters": "23B",
   "contextWindow": 1000000,
   "maxOutput": null,
   "tokenPricing": {
@@ -109,5 +115,9 @@
     "sciCode": null,
     "liveCodeBench": null
   },
-  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+    "artificialAnalysis": null,
+    "openrouter": null
+  }
 }

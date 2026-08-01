@@ -72,6 +72,7 @@
   "docsUrl": "https://docs.z.ai/guides/vlm/glm-5v-turbo",
   "vendor": "Z.ai",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 204800,
   "maxOutput": 131072,
   "tokenPricing": {

@@ -1,0 +1,77 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "baseten",
+  "name": "Baseten",
+  "description": "Baseten develops infrastructure for training, deploying, and serving AI models with managed APIs, dedicated inference, autoscaling, and observability.",
+  "translations": {
+    "zh-Hans": {
+      "description": "Baseten 开发用于训练、部署和服务 AI 模型的基础设施，提供托管 API、专用推理、自动扩缩容和可观测性。"
+    },
+    "de": {
+      "description": "Baseten entwickelt Infrastruktur zum Trainieren, Bereitstellen und Betreiben von KI-Modellen mit verwalteten APIs, dedizierter Inferenz, Autoskalierung und Beobachtbarkeit."
+    },
+    "ko": {
+      "description": "Baseten은 관리형 API, 전용 추론, 자동 확장 및 관측 기능을 갖춘 AI 모델 학습·배포·서비스 인프라를 개발합니다."
+    },
+    "es": {
+      "description": "Baseten desarrolla infraestructura para entrenar, desplegar y servir modelos de IA con API administradas, inferencia dedicada, escalado automático y monitorización."
+    },
+    "fr": {
+      "description": "Baseten développe une infrastructure pour entraîner, déployer et servir des modèles d’IA avec des API gérées, de l’inférence dédiée, l’autoscaling et l’observabilité."
+    },
+    "id": {
+      "description": "Baseten mengembangkan infrastruktur untuk melatih, menerapkan, dan menyajikan model AI dengan API terkelola, inferensi khusus, skala otomatis, dan pemantauan."
+    },
+    "ja": {
+      "description": "Basetenは、マネージドAPI、専用推論、自動スケーリング、可観測性を備えたAIモデルの学習、デプロイ、提供基盤を開発しています。"
+    },
+    "pt": {
+      "description": "A Baseten desenvolve infraestrutura para treinar, implantar e servir modelos de IA com APIs gerenciadas, inferência dedicada, escalonamento automático e monitoramento."
+    },
+    "ru": {
+      "description": "Baseten разрабатывает инфраструктуру для обучения, развёртывания и обслуживания моделей ИИ с управляемыми API, выделенными вычислениями, автомасштабированием и наблюдаемостью."
+    },
+    "tr": {
+      "description": "Baseten; yönetilen API’ler, ayrılmış çıkarım, otomatik ölçekleme ve gözlemlenebilirlikle yapay zekâ modellerini eğitmek, dağıtmak ve sunmak için altyapı geliştirir."
+    },
+    "zh-Hant": {
+      "description": "Baseten 開發用於訓練、部署及服務 AI 模型的基礎設施，提供託管 API、專用推論、自動擴縮及可觀測性。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.baseten.co",
+      "title": "Baseten official website",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://huggingface.co/baseten",
+      "title": "Verified Baseten Hugging Face organization",
+      "fields": ["communityUrls.twitter", "communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/baseten",
+      "title": "Baseten LinkedIn company page",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://www.baseten.co/blog",
+      "title": "Baseten official blog",
+      "fields": ["communityUrls.blog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.baseten.co",
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/baseten",
+    "twitter": "https://x.com/baseten",
+    "github": "https://github.com/basetenlabs",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": "https://www.baseten.co/blog"
+  }
+}

@@ -39,13 +39,17 @@
     }
   },
   "verified": true,
-  "lastVerifiedAt": "2026-07-30",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.augmentcode.com",
   "docsUrl": "https://docs.augmentcode.com/cli",
   "vendor": "Augment",
-  "latestVersion": "0.7.0",
+  "latestVersion": "0.34.0",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "@augmentcode/auggie"
+  },
   "githubUrl": "https://github.com/augmentcode/auggie",
   "license": "Proprietary",
   "pricing": [
@@ -65,7 +69,7 @@
     }
   ],
   "resourceUrls": {
-    "download": "https://www.augmentcode.com",
+    "download": "https://docs.augmentcode.com/cli/overview",
     "changelog": null,
     "pricing": "https://www.augmentcode.com/pricing",
     "mcp": "https://www.augmentcode.com/mcp",
@@ -89,19 +93,19 @@
   "platforms": [
     {
       "os": "macOS",
-      "installCommand": "npm install -g @augmentcode/npm i @augmentcode/auggie",
+      "installCommand": "npm install -g @augmentcode/auggie",
       "launchCommand": "auggie",
       "installPath": null
     },
     {
       "os": "Windows",
-      "installCommand": "npm install -g @augmentcode/npm i @augmentcode/auggie",
+      "installCommand": "npm install -g @augmentcode/auggie",
       "launchCommand": "auggie",
       "installPath": null
     },
     {
       "os": "Linux",
-      "installCommand": "npm install -g @augmentcode/npm i @augmentcode/auggie",
+      "installCommand": "npm install -g @augmentcode/auggie",
       "launchCommand": "auggie",
       "installPath": null
     }
@@ -120,12 +124,17 @@
     {
       "url": "https://docs.augmentcode.com/cli/overview",
       "title": "Introducing Auggie CLI",
-      "fields": ["name", "description", "docsUrl"]
+      "fields": ["name", "description", "docsUrl", "resourceUrls.download", "platforms"]
     },
     {
       "url": "https://www.augmentcode.com/pricing",
       "title": "Augment pricing",
       "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://www.npmjs.com/package/@augmentcode/auggie",
+      "title": "Auggie CLI npm package",
+      "fields": ["latestVersion", "releaseTracking"]
     }
   ]
 }

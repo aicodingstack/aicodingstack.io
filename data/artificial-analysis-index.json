@@ -1,10 +1,11 @@
 {
+  "$schema": "./$schemas/artificial-analysis-index.schema.json",
   "source": "Artificial Analysis",
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
   "methodologyUrl": "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
   "indexVersion": "4.1",
-  "observedAt": "2026-07-27",
-  "legacyMissingModelIds": ["composer", "cursor-composer-2", "cursor-composer-2-5"],
+  "observedAt": "2026-07-31",
+  "legacyMissingModelIds": ["cursor-composer-2", "cursor-composer-2-5"],
   "entries": [
     {
       "modelId": "claude-fable-5",
@@ -170,6 +171,12 @@
     },
     {
       "modelId": "deepseek-v4-flash",
+      "score": 50,
+      "estimated": false,
+      "configuration": "DeepSeek V4 Flash 0731 (max)"
+    },
+    {
+      "modelId": "deepseek-v4-flash-preview",
       "score": 40,
       "estimated": false,
       "configuration": "DeepSeek V4 Flash (max)"

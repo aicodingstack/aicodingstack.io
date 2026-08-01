@@ -1,0 +1,345 @@
+{
+  "$schema": "./$schemas/vendor-company-stages.schema.json",
+  "asOf": "2026-07-31",
+  "criteria": {
+    "publicCompanyIncludesListedParent": true,
+    "superUnicornMinimumUsd": 10000000000,
+    "unicornMinimumUsd": 1000000000,
+    "startupIsDefault": true
+  },
+  "groups": [
+    {
+      "id": "public-company",
+      "translationKey": "publicCompany"
+    },
+    {
+      "id": "super-unicorn",
+      "translationKey": "superUnicorn"
+    },
+    {
+      "id": "unicorn",
+      "translationKey": "unicorn"
+    },
+    {
+      "id": "startup",
+      "translationKey": "startup"
+    }
+  ],
+  "assignments": [
+    {
+      "vendorId": "alibaba",
+      "stage": "public-company",
+      "source": {
+        "url": "https://www.alibabagroup.com/en-US/ir-home",
+        "title": "Alibaba Group investor relations"
+      }
+    },
+    {
+      "vendorId": "atlassian",
+      "stage": "public-company",
+      "source": {
+        "url": "https://investors.atlassian.com/",
+        "title": "Atlassian investor relations"
+      }
+    },
+    {
+      "vendorId": "aws",
+      "stage": "public-company",
+      "source": {
+        "url": "https://ir.aboutamazon.com/",
+        "title": "Amazon investor relations"
+      }
+    },
+    {
+      "vendorId": "github",
+      "stage": "public-company",
+      "source": {
+        "url": "https://news.microsoft.com/announcement/microsoft-acquires-github/",
+        "title": "Microsoft acquires GitHub"
+      }
+    },
+    {
+      "vendorId": "gitlab",
+      "stage": "public-company",
+      "source": {
+        "url": "https://ir.gitlab.com/",
+        "title": "GitLab investor relations"
+      }
+    },
+    {
+      "vendorId": "google",
+      "stage": "public-company",
+      "source": {
+        "url": "https://abc.xyz/investor/",
+        "title": "Alphabet investor relations"
+      }
+    },
+    {
+      "vendorId": "meta",
+      "stage": "public-company",
+      "source": {
+        "url": "https://investor.atmeta.com/",
+        "title": "Meta investor relations"
+      }
+    },
+    {
+      "vendorId": "microsoft",
+      "stage": "public-company",
+      "source": {
+        "url": "https://www.microsoft.com/en-us/Investor",
+        "title": "Microsoft investor relations"
+      }
+    },
+    {
+      "vendorId": "minimax",
+      "stage": "public-company",
+      "source": {
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0313/2026031301613.pdf",
+        "title": "MiniMax Hong Kong Stock Exchange filing"
+      }
+    },
+    {
+      "vendorId": "tencent",
+      "stage": "public-company",
+      "source": {
+        "url": "https://www.tencent.com/en-us/investors.html",
+        "title": "Tencent investor relations"
+      }
+    },
+    {
+      "vendorId": "xai",
+      "stage": "public-company",
+      "source": {
+        "url": "https://apnews.com/article/a5c60fcbaaca262cf107d30f1de899ef",
+        "title": "AP report on public SpaceX and its xAI subsidiary"
+      }
+    },
+    {
+      "vendorId": "xiaomi",
+      "stage": "public-company",
+      "source": {
+        "url": "https://ir.mi.com/",
+        "title": "Xiaomi investor relations"
+      }
+    },
+    {
+      "vendorId": "z-ai",
+      "stage": "public-company",
+      "source": {
+        "url": "https://www.thestandard.com.hk/innovation/article/336423/Chinese-AI-startups-Zhipu-MiniMax-face-pressure-as-50b-lock-ups-expire-this-week",
+        "title": "Z.ai Hong Kong listing report"
+      }
+    },
+    {
+      "vendorId": "ant-group",
+      "stage": "super-unicorn",
+      "source": {
+        "url": "https://auptimate.com/wp-content/uploads/2026/06/top100-as-of-june19.html",
+        "title": "Top 100 private companies as of June 2026"
+      }
+    },
+    {
+      "vendorId": "anthropic",
+      "stage": "super-unicorn",
+      "source": {
+        "url": "https://apnews.com/article/86c432fa375548fd4f111f8164d6ffc1",
+        "title": "Anthropic funding and valuation report"
+      }
+    },
+    {
+      "vendorId": "anysphere",
+      "stage": "super-unicorn",
+      "source": {
+        "url": "https://apnews.com/article/a5c60fcbaaca262cf107d30f1de899ef",
+        "title": "Anysphere acquisition valuation report"
+      }
+    },
+    {
+      "vendorId": "baseten",
+      "stage": "super-unicorn",
+      "source": {
+        "url": "https://www.baseten.co/blog/announcing-our-series-f/",
+        "title": "Baseten Series F announcement"
+      }
+    },
+    {
+      "vendorId": "bytedance",
+      "stage": "super-unicorn",
+      "source": {
+        "url": "https://www.investing.com/news/stock-market-news/exclusivebytedance-valued-at-550-billion-in-proposed-share-sale-sources-say-4523409",
+        "title": "Reuters report on ByteDance valuation"
+      }
+    },
+    {
+      "vendorId": "cognition",
+      "stage": "super-unicorn",
+      "source": {
+        "url": "https://cognition.com/blog",
+        "title": "Cognition funding announcement"
+      }
+    },
+    {
+      "vendorId": "deepseek",
+      "stage": "super-unicorn",
+      "source": {
+        "url": "https://www.axios.com/2026/06/03/china-deepseek-billion",
+        "title": "Axios report on DeepSeek valuation"
+      }
+    },
+    {
+      "vendorId": "fireworks-ai",
+      "stage": "super-unicorn",
+      "source": {
+        "url": "https://fireworks.ai/blog/series-d-announcement",
+        "title": "Fireworks AI Series D announcement"
+      }
+    },
+    {
+      "vendorId": "mistral-ai",
+      "stage": "super-unicorn",
+      "source": {
+        "url": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/",
+        "title": "Mistral AI valuation report"
+      }
+    },
+    {
+      "vendorId": "moonshot",
+      "stage": "super-unicorn",
+      "source": {
+        "url": "https://techcrunch.com/2026/05/07/chinas-moonshot-ai-raises-2b-at-20b-valuation-as-demand-for-open-source-ai-skyrockets/",
+        "title": "Moonshot AI funding and valuation report"
+      }
+    },
+    {
+      "vendorId": "openai",
+      "stage": "super-unicorn",
+      "source": {
+        "url": "https://apnews.com/article/a0a915c32b85337d799fe2f9525a932a",
+        "title": "OpenAI funding and valuation report"
+      }
+    },
+    {
+      "vendorId": "factory-ai",
+      "stage": "unicorn",
+      "source": {
+        "url": "https://factory.ai/news/series-c",
+        "title": "Factory Series C announcement"
+      }
+    },
+    {
+      "vendorId": "jetbrains",
+      "stage": "unicorn",
+      "source": {
+        "url": "https://ris3.gov.cz/sites/default/files/2026-04/ENG_Analysis%20of%20the%20Start-up%20Ecosystem%20in%20Czechia.pdf",
+        "title": "Czech startup ecosystem analysis classifying JetBrains as a unicorn"
+      }
+    },
+    {
+      "vendorId": "openrouter",
+      "stage": "unicorn",
+      "source": {
+        "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/",
+        "title": "OpenRouter funding and valuation report"
+      }
+    },
+    {
+      "vendorId": "siliconflow",
+      "stage": "unicorn",
+      "source": {
+        "url": "https://www1.hkexnews.hk/app/sehk/2026/108701/documents/sehk26063002928.pdf",
+        "title": "SiliconFlow draft listing application and financing valuations"
+      }
+    },
+    {
+      "vendorId": "sourcegraph",
+      "stage": "unicorn",
+      "source": {
+        "url": "https://techcrunch.com/2021/07/14/sourcegraph-raises-125m-at-a-2-6b-valuation-for-its-universal-code-search-platform/",
+        "title": "Sourcegraph Series D valuation report"
+      }
+    },
+    {
+      "vendorId": "together-ai",
+      "stage": "unicorn",
+      "source": {
+        "url": "https://www.together.ai/blog/announcing-our-series-c",
+        "title": "Together AI Series C announcement"
+      }
+    },
+    {
+      "vendorId": "anomaly",
+      "stage": "startup",
+      "source": null
+    },
+    {
+      "vendorId": "augment",
+      "stage": "startup",
+      "source": null
+    },
+    {
+      "vendorId": "cline",
+      "stage": "startup",
+      "source": null
+    },
+    {
+      "vendorId": "continue",
+      "stage": "startup",
+      "source": null
+    },
+    {
+      "vendorId": "deepinfra",
+      "stage": "startup",
+      "source": null
+    },
+    {
+      "vendorId": "kilo",
+      "stage": "startup",
+      "source": null
+    },
+    {
+      "vendorId": "novita-ai",
+      "stage": "startup",
+      "source": null
+    },
+    {
+      "vendorId": "oh-my-pi",
+      "stage": "startup",
+      "source": null
+    },
+    {
+      "vendorId": "roo-code",
+      "stage": "startup",
+      "source": null
+    },
+    {
+      "vendorId": "shareai-lab",
+      "stage": "startup",
+      "source": null
+    },
+    {
+      "vendorId": "sst",
+      "stage": "startup",
+      "source": null
+    },
+    {
+      "vendorId": "stagewise",
+      "stage": "startup",
+      "source": null
+    },
+    {
+      "vendorId": "tabnine",
+      "stage": "startup",
+      "source": null
+    },
+    {
+      "vendorId": "verdent-ai",
+      "stage": "startup",
+      "source": null
+    },
+    {
+      "vendorId": "zed-industries",
+      "stage": "startup",
+      "source": null
+    }
+  ]
+}

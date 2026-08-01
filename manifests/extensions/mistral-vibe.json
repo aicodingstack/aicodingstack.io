@@ -14,10 +14,10 @@
       "description": "Mistral Vibe untuk VS Code menghadirkan agen coding Mistral ke dalam editor untuk chat berbasis repositori, perubahan kode, eksekusi perintah, dan alur kerja pengembangan agentik."
     },
     "ja": {
-      "description": "Mistral Vibe for VS Code は、リポジトリを考慮したチャット、コード変更、コマンド実行、エージェント型開発ワークフローのために Mistral のコーディングエージェントをエディターに導入します。"
+      "description": "Mistral Vibe VS Code は、リポジトリを考慮したチャット、コード変更、コマンド実行、エージェント型開発ワークフローのために Mistral のコーディングエージェントをエディターに導入します。"
     },
     "ko": {
-      "description": "Mistral Vibe for VS Code는 저장소 인식 채팅, 코드 변경, 명령 실행, 에이전틱 개발 워크플로를 위해 Mistral의 코딩 에이전트를 편집기에 통합합니다."
+      "description": "Mistral Vibe VS Code는 저장소 인식 채팅, 코드 변경, 명령 실행, 에이전틱 개발 워크플로를 위해 Mistral의 코딩 에이전트를 편집기에 통합합니다."
     },
     "pt": {
       "description": "O Mistral Vibe para VS Code leva o agente da Mistral ao editor para conversas sobre o repositório, mudanças no código, execução de comandos e fluxos de desenvolvimento agênticos."
@@ -26,13 +26,13 @@
       "description": "Mistral Vibe для VS Code добавляет агент программирования Mistral в редактор для чата с учетом репозитория, изменения кода, выполнения команд и агентных процессов разработки."
     },
     "tr": {
-      "description": "Mistral Vibe for VS Code, depo odaklı sohbet, kod değişiklikleri, komut yürütme ve aracılı geliştirme iş akışları için Mistral'ın kodlama aracısını editöre getirir."
+      "description": "Mistral Vibe VS Code, depo odaklı sohbet, kod değişiklikleri, komut yürütme ve aracılı geliştirme iş akışları için Mistral'ın kodlama aracısını editöre getirir."
     },
     "zh-Hans": {
-      "description": "Mistral Vibe for VS Code 将 Mistral 的编码代理带入编辑器，支持仓库感知聊天、代码变更、命令执行和代理式开发工作流。"
+      "description": "Mistral Vibe VS Code 将 Mistral 的编码代理带入编辑器，支持仓库感知聊天、代码变更、命令执行和代理式开发工作流。"
     },
     "zh-Hant": {
-      "description": "Mistral Vibe for VS Code 將 Mistral 的程式設計代理帶入編輯器，支援儲存庫感知聊天、程式碼變更、命令執行和代理式開發工作流程。"
+      "description": "Mistral Vibe VS Code 將 Mistral 的程式設計代理帶入編輯器，支援儲存庫感知聊天、程式碼變更、命令執行和代理式開發工作流程。"
     }
   },
   "verified": true,
@@ -46,18 +46,23 @@
       "title": "Mistral Vibe documentation"
     },
     {
+      "url": "https://marketplace.visualstudio.com/items?itemName=mistralai.mistral-vibe-code",
+      "title": "Mistral Vibe VS Code Marketplace listing",
+      "fields": ["latestVersion", "releaseTracking", "resourceUrls.download", "supportedIdes"]
+    },
+    {
       "url": "https://mistral.ai/pricing",
       "title": "Mistral pricing",
       "fields": ["pricing", "resourceUrls.pricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-30",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "mistral-vibe",
-  "name": "Mistral Vibe for VS Code",
+  "name": "Mistral Vibe VS Code",
   "familyId": "mistral-vibe",
-  "description": "Mistral Vibe for VS Code brings Mistral's coding agent into the editor for repository-aware chat, code changes, command execution, and agentic development workflows.",
+  "description": "Mistral Vibe VS Code brings Mistral's coding agent into the editor for repository-aware chat, code changes, command execution, and agentic development workflows.",
   "websiteUrl": "https://mistral.ai/products/vibe",
   "docsUrl": "https://docs.mistral.ai/vibe/code/overview",
   "vendor": "Mistral AI",
@@ -92,7 +97,7 @@
     }
   ],
   "resourceUrls": {
-    "download": null,
+    "download": "https://marketplace.visualstudio.com/items?itemName=mistralai.mistral-vibe-code",
     "changelog": null,
     "pricing": "https://mistral.ai/pricing",
     "mcp": null,
@@ -116,8 +121,8 @@
   "supportedIdes": [
     {
       "ideId": "vscode",
-      "marketplaceUrl": null,
-      "installUri": null
+      "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=mistralai.mistral-vibe-code",
+      "installUri": "vscode:extension/mistralai.mistral-vibe-code"
     }
   ]
 }

@@ -1,49 +1,49 @@
 {
   "$schema": "../$schemas/provider.schema.json",
   "id": "meta",
-  "name": "Meta AI",
-  "description": "Meta's AI research division providing open-source foundation models including Llama for various applications in coding, reasoning, and content generation.",
+  "name": "Meta",
+  "description": "Meta develops the Llama family of open-weight foundation models and provides developer access through the Llama API.",
   "translations": {
     "zh-Hans": {
-      "description": "Meta 的 AI 研究部门，提供开源基础模型，包括 Llama，用于编码、推理和内容生成等各种应用。"
+      "description": "Meta 开发 Llama 开放权重基础模型系列，并通过 Llama API 为开发者提供访问。"
     },
     "de": {
-      "description": "Metas AI-Forschungsabteilung, die Open-Source-Foundation-Modelle bereitstellt, einschließlich Llama für verschiedene Anwendungen im Bereich Codierung, Reasoning und Inhaltserstellung."
+      "description": "Meta entwickelt die Open-Weight-Grundmodellfamilie Llama und bietet Entwicklern über die Llama API Zugriff."
     },
     "ko": {
-      "description": "코딩, 추론 및 콘텐츠 생성 등 다양한 애플리케이션을 위한 Llama를 포함하여 오픈 소스 기반 모델을 제공하는 Meta의 AI 연구 부서입니다."
+      "description": "Meta는 오픈 웨이트 기반 모델인 Llama 제품군을 개발하고 Llama API를 통해 개발자 액세스를 제공합니다."
     },
     "es": {
-      "description": "La división de investigación de IA de Meta, proporcionando modelos fundacionales de código abierto incluyendo Llama para varias aplicaciones en codificación, razonamiento y generación de contenido."
+      "description": "Meta desarrolla la familia Llama de modelos fundacionales con pesos abiertos y ofrece acceso para desarrolladores mediante la API de Llama."
     },
     "fr": {
-      "description": "La division de recherche en IA de Meta, fournissant des modèles fondamentaux open source, y compris Llama pour diverses applications en codage, raisonnement et création de contenu."
+      "description": "Meta développe la famille Llama de modèles fondamentaux à poids ouverts et fournit un accès aux développeurs via l’API Llama."
     },
     "id": {
-      "description": "Divisi riset AI Meta yang menyediakan model foundation open source termasuk Llama untuk berbagai aplikasi dalam coding, reasoning, dan pembuatan konten."
+      "description": "Meta mengembangkan keluarga model dasar berbobot terbuka Llama dan menyediakan akses bagi pengembang melalui Llama API."
     },
     "ja": {
-      "description": "コーディング、推論、コンテンツ生成など様々な用途向けのLlamaを含め、オープンソースの基盤モデルを提供するMetaのAI研究部門。"
+      "description": "Meta はオープンウェイトの基盤モデル群 Llama を開発し、Llama API を通じて開発者向けアクセスを提供しています。"
     },
     "pt": {
-      "description": "A divisão de pesquisa em IA da Meta oferece modelos fundamentais de código aberto, incluindo o Llama, para vários aplicativos de programação, raciocínio e geração de conteúdo."
+      "description": "A Meta desenvolve a família Llama de modelos fundamentais com pesos abertos e oferece acesso para desenvolvedores pela API Llama."
     },
     "ru": {
-      "description": "Исследовательское подразделение ИИ Meta, предоставляющее открытые фундаментальные модели, включая Llama для различных приложений в области программирования, рассуждений и создания контента."
+      "description": "Meta разрабатывает семейство базовых моделей Llama с открытыми весами и предоставляет разработчикам доступ через Llama API."
     },
     "tr": {
-      "description": "Çeşitli uygulamalarda kodlama, akıl yürütme ve içerik oluşturma için Llama dahil olmak üzere açık kaynaklı temel modeller sunan Meta'nın AI araştırma departmanı."
+      "description": "Meta, açık ağırlıklı Llama temel model ailesini geliştirir ve Llama API üzerinden geliştirici erişimi sağlar."
     },
     "zh-Hant": {
-      "description": "Meta 的 AI 研究部門，提供開放原始碼基礎模型，包括 Llama，用於程式設計、推理和內容產生等各種應用。"
+      "description": "Meta 開發 Llama 開放權重基礎模型系列，並透過 Llama API 為開發者提供存取。"
     }
   },
-  "verified": false,
-  "websiteUrl": "https://llama.meta.com",
-  "docsUrl": "https://llama.meta.com/docs",
+  "verified": true,
+  "websiteUrl": "https://ai.developer.meta.com/",
+  "docsUrl": "https://ai.developer.meta.com/docs/overview/",
   "vendor": "meta",
   "type": "foundation-model-provider",
-  "applyKeyUrl": "https://www.llama.com/api",
+  "applyKeyUrl": "https://ai.developer.meta.com/",
   "platformUrls": {
     "huggingface": "https://huggingface.co/meta-llama",
     "artificialAnalysis": null,
@@ -60,9 +60,32 @@
   },
   "sources": [
     {
+      "url": "https://ai.meta.com/blog/llamacon-llama-news/",
+      "title": "Meta introduces the Llama API",
+      "fields": ["name", "description", "websiteUrl", "type", "applyKeyUrl"]
+    },
+    {
+      "url": "https://ai.developer.meta.com/docs/overview/",
+      "title": "Meta AI developer platform documentation",
+      "fields": ["docsUrl", "type"]
+    },
+    {
+      "url": "https://huggingface.co/meta-llama",
+      "title": "Meta Llama official Hugging Face organization",
+      "fields": ["platformUrls.huggingface"]
+    },
+    {
+      "url": "https://openrouter.ai/provider/meta",
+      "title": "Meta on OpenRouter",
+      "fields": ["platformUrls.openrouter"]
+    },
+    {
       "url": "https://x.com/MetaAI",
       "title": "Meta AI twitter community",
       "fields": ["communityUrls.twitter"]
     }
-  ]
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

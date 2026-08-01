@@ -1,4 +1,11 @@
 {
+  "companyStages": {
+    "publicCompany": "Halka Açık Şirketler",
+    "startup": "Girişimler",
+    "superUnicorn": "Süper Unicornlar",
+    "unicorn": "Unicornlar"
+  },
+  "noResults": "Aramanızla eşleşen satıcı bulunamadı",
   "subtitle": "AI teknolojilerini geliştiren önde gelen şirketler ve kuruluşlar",
   "title": "AI Kodlama Satıcıları"
 }

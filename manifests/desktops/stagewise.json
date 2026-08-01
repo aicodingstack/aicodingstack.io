@@ -35,19 +35,40 @@
       "description": "stagewise 是一款開放原始碼桌面程式設計代理，提供多代理工作階段、Git worktree 隔離、變更檢查，以及對託管和本機模型供應商的支援。"
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://stagewise.io/",
-      "title": "stagewise product site"
+      "title": "stagewise product site",
+      "fields": ["name", "description", "websiteUrl", "vendor"]
     },
     {
       "url": "https://github.com/stagewise-io/stagewise",
       "title": "stagewise repository",
-      "fields": ["pricing"]
+      "fields": ["githubUrl", "license", "pricing", "resourceUrls.issue", "communityUrls.github"]
+    },
+    {
+      "url": "https://docs.stagewise.io/",
+      "title": "stagewise documentation",
+      "fields": ["description", "docsUrl"]
+    },
+    {
+      "url": "https://docs.stagewise.io/quickstart",
+      "title": "stagewise quickstart",
+      "fields": ["platforms", "resourceUrls.download"]
+    },
+    {
+      "url": "https://github.com/stagewise-io/stagewise/releases/tag/stagewise@1.14.0",
+      "title": "Stagewise 1.14.0 release",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
+    },
+    {
+      "url": "https://stagewise.io/pricing",
+      "title": "stagewise pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "stagewise",
@@ -55,24 +76,45 @@
   "familyId": "stagewise",
   "description": "stagewise is an open source desktop coding agent with multi-agent sessions, Git worktree isolation, change review, and support for hosted and local model providers.",
   "websiteUrl": "https://stagewise.io",
-  "docsUrl": "https://stagewise.io/docs",
+  "docsUrl": "https://docs.stagewise.io",
   "vendor": "stagewise",
-  "latestVersion": "1.2.1",
+  "latestVersion": "1.14.0",
   "githubUrl": "https://github.com/stagewise-io/stagewise",
   "license": "AGPL-3.0-only",
   "pricing": [
     {
-      "name": "Open Source",
+      "name": "Hobby",
       "value": 0,
       "currency": null,
       "per": null,
       "category": "Individual"
+    },
+    {
+      "name": "Pro",
+      "value": 20,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Ultra",
+      "value": 200,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Enterprise",
+      "value": null,
+      "currency": null,
+      "per": "custom",
+      "category": "Enterprise"
     }
   ],
   "resourceUrls": {
     "download": "https://stagewise.io",
-    "changelog": "https://stagewise.io/news/release-week-may-25-31",
-    "pricing": null,
+    "changelog": "https://github.com/stagewise-io/stagewise/releases",
+    "pricing": "https://stagewise.io/pricing",
     "mcp": null,
     "issue": "https://github.com/stagewise-io/stagewise/issues"
   },
@@ -89,19 +131,19 @@
   "platforms": [
     {
       "os": "macOS",
-      "installPath": "/Applications/stagewise.app",
+      "installPath": null,
       "installCommand": null,
       "launchCommand": null
     },
     {
       "os": "Windows",
-      "installPath": "%LOCALAPPDATA%\\Programs\\stagewise",
+      "installPath": null,
       "installCommand": null,
       "launchCommand": null
     },
     {
       "os": "Linux",
-      "installPath": "/opt/stagewise",
+      "installPath": null,
       "installCommand": null,
       "launchCommand": null
     }

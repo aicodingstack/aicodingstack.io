@@ -39,7 +39,8 @@
   "sources": [
     {
       "url": "https://about.gitlab.com/blog/gitlab-duo-cli-generally-available/",
-      "title": "GitLab Duo CLI general availability"
+      "title": "GitLab Duo CLI general availability",
+      "fields": ["name", "description", "websiteUrl"]
     },
     {
       "url": "https://about.gitlab.com/blog/gitlab-duo-cli/",
@@ -54,9 +55,29 @@
       "url": "https://docs.gitlab.com/subscriptions/subscription-add-ons",
       "title": "GitLab Duo add-ons",
       "fields": ["pricing"]
+    },
+    {
+      "url": "https://docs.gitlab.com/user/gitlab_duo_cli/",
+      "title": "GitLab Duo CLI documentation",
+      "fields": ["docsUrl"]
+    },
+    {
+      "url": "https://docs.gitlab.com/user/gitlab_duo_cli/set_up/",
+      "title": "Set up GitLab Duo CLI",
+      "fields": ["resourceUrls.download", "platforms"]
+    },
+    {
+      "url": "https://www.npmjs.com/package/@gitlab/duo-cli",
+      "title": "GitLab Duo CLI npm package",
+      "fields": ["latestVersion", "releaseTracking", "license"]
+    },
+    {
+      "url": "https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp/-/releases",
+      "title": "GitLab Duo CLI releases",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
     }
   ],
-  "lastVerifiedAt": "2026-07-30",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "gitlab-duo-cli",
@@ -64,11 +85,15 @@
   "familyId": "gitlab-duo",
   "description": "GitLab Duo CLI is GitLab's terminal coding agent for understanding projects, editing code, running tests, and integrating AI-assisted work with GitLab development workflows.",
   "websiteUrl": "https://about.gitlab.com/gitlab-duo",
-  "docsUrl": "https://docs.gitlab.com/editor_extensions/gitlab_cli",
+  "docsUrl": "https://docs.gitlab.com/user/gitlab_duo_cli/",
   "vendor": "GitLab",
-  "latestVersion": "Latest",
+  "latestVersion": "9.6.0",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "@gitlab/duo-cli"
+  },
   "githubUrl": null,
-  "license": "Proprietary",
+  "license": "MIT",
   "pricing": [
     {
       "name": "On-Demand GitLab Credits",
@@ -93,8 +118,8 @@
     }
   ],
   "resourceUrls": {
-    "download": null,
-    "changelog": "https://about.gitlab.com/blog/gitlab-duo-cli-generally-available/",
+    "download": "https://docs.gitlab.com/user/gitlab_duo_cli/set_up/",
+    "changelog": "https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp/-/releases",
     "pricing": "https://docs.gitlab.com/subscriptions/gitlab_credits",
     "mcp": null,
     "issue": null
@@ -113,20 +138,20 @@
     {
       "os": "macOS",
       "installPath": null,
-      "installCommand": null,
-      "launchCommand": "glab duo"
+      "installCommand": "bash <(curl --fail --silent --show-error --location \"https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp/-/raw/main/packages/cli/scripts/install_duo_cli.sh\")",
+      "launchCommand": "duo"
     },
     {
       "os": "Windows",
       "installPath": null,
-      "installCommand": null,
-      "launchCommand": "glab duo"
+      "installCommand": "irm \"https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp/-/raw/main/packages/cli/scripts/install_duo_cli.ps1\" | iex",
+      "launchCommand": "duo"
     },
     {
       "os": "Linux",
       "installPath": null,
-      "installCommand": null,
-      "launchCommand": "glab duo"
+      "installCommand": "bash <(curl --fail --silent --show-error --location \"https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp/-/raw/main/packages/cli/scripts/install_duo_cli.sh\")",
+      "launchCommand": "duo"
     }
   ]
 }

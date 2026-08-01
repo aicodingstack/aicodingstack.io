@@ -24,7 +24,6 @@ import ClaudeSonnet4 from '../../../manifests/models/claude-sonnet-4.json'
 import ClaudeSonnet45 from '../../../manifests/models/claude-sonnet-4-5.json'
 import ClaudeSonnet46 from '../../../manifests/models/claude-sonnet-4-6.json'
 import ClaudeSonnet5 from '../../../manifests/models/claude-sonnet-5.json'
-import Composer from '../../../manifests/models/composer.json'
 import CursorComposer2 from '../../../manifests/models/cursor-composer-2.json'
 import CursorComposer25 from '../../../manifests/models/cursor-composer-2-5.json'
 import Deepseek32 from '../../../manifests/models/deepseek-3-2.json'
@@ -35,6 +34,7 @@ import DeepseekV31 from '../../../manifests/models/deepseek-v3-1.json'
 import DeepseekV32Exp from '../../../manifests/models/deepseek-v3-2-exp.json'
 import DeepseekV3Terminus from '../../../manifests/models/deepseek-v3-terminus.json'
 import DeepseekV4Flash from '../../../manifests/models/deepseek-v4-flash.json'
+import DeepseekV4FlashPreview from '../../../manifests/models/deepseek-v4-flash-preview.json'
 import DeepseekV4Pro from '../../../manifests/models/deepseek-v4-pro.json'
 import Devstral2 from '../../../manifests/models/devstral-2.json'
 import DevstralSmall2 from '../../../manifests/models/devstral-small-2.json'
@@ -150,7 +150,6 @@ export const modelsData = [
   ClaudeSonnet46,
   ClaudeSonnet4,
   ClaudeSonnet5,
-  Composer,
   CursorComposer25,
   CursorComposer2,
   Deepseek32,
@@ -160,6 +159,7 @@ export const modelsData = [
   DeepseekV32Exp,
   DeepseekV3Terminus,
   DeepseekV3,
+  DeepseekV4FlashPreview,
   DeepseekV4Flash,
   DeepseekV4Pro,
   Devstral2,

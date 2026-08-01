@@ -1,0 +1,77 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "deepinfra",
+  "name": "DeepInfra",
+  "description": "DeepInfra builds an inference cloud spanning serverless model APIs, private deployments, GPU instances, and hosted agents.",
+  "translations": {
+    "zh-Hans": {
+      "description": "DeepInfra 构建覆盖无服务器模型 API、私有部署、GPU 实例和托管智能体的推理云。"
+    },
+    "de": {
+      "description": "DeepInfra entwickelt eine Inferenz-Cloud mit serverlosen Modell-APIs, privaten Bereitstellungen, GPU-Instanzen und verwalteten Agenten."
+    },
+    "ko": {
+      "description": "DeepInfra는 서버리스 모델 API, 비공개 배포, GPU 인스턴스 및 호스팅 에이전트를 아우르는 추론 클라우드를 구축합니다."
+    },
+    "es": {
+      "description": "DeepInfra desarrolla una nube de inferencia con API de modelos sin servidor, despliegues privados, instancias GPU y agentes alojados."
+    },
+    "fr": {
+      "description": "DeepInfra développe un cloud d’inférence réunissant API de modèles serverless, déploiements privés, instances GPU et agents hébergés."
+    },
+    "id": {
+      "description": "DeepInfra membangun cloud inferensi yang mencakup API model serverless, deployment privat, instans GPU, dan agen terkelola."
+    },
+    "ja": {
+      "description": "DeepInfraは、サーバーレスモデルAPI、プライベートデプロイ、GPUインスタンス、ホステッドエージェントを備えた推論クラウドを構築しています。"
+    },
+    "pt": {
+      "description": "A DeepInfra desenvolve uma nuvem de inferência com APIs de modelos serverless, implantações privadas, instâncias de GPU e agentes hospedados."
+    },
+    "ru": {
+      "description": "DeepInfra создаёт облако инференса с бессерверными API моделей, частными развёртываниями, GPU-инстансами и размещёнными агентами."
+    },
+    "tr": {
+      "description": "DeepInfra; sunucusuz model API erişimi, özel dağıtımlar, GPU örnekleri ve barındırılan ajanlar içeren bir çıkarım bulutu geliştirir."
+    },
+    "zh-Hant": {
+      "description": "DeepInfra 建構涵蓋無伺服器模型 API、私有部署、GPU 執行個體及託管代理程式的推論雲。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://deepinfra.com/about",
+      "title": "DeepInfra about",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://docs.deepinfra.com/quickstart",
+      "title": "DeepInfra official documentation and community links",
+      "fields": [
+        "communityUrls.twitter",
+        "communityUrls.github",
+        "communityUrls.linkedin",
+        "communityUrls.discord"
+      ]
+    },
+    {
+      "url": "https://deepinfra.com/blog",
+      "title": "DeepInfra official blog",
+      "fields": ["communityUrls.blog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://deepinfra.com",
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/deep-infra",
+    "twitter": "https://x.com/deepinfra",
+    "github": "https://github.com/deepinfra",
+    "youtube": null,
+    "discord": "https://discord.com/invite/x88dCvhqYq",
+    "reddit": null,
+    "blog": "https://deepinfra.com/blog"
+  }
+}

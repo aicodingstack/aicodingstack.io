@@ -72,6 +72,7 @@
   "docsUrl": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
   "vendor": "OpenAI",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 1050000,
   "maxOutput": 128000,
   "tokenPricing": {

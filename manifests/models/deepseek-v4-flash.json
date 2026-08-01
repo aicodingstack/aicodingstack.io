@@ -2,48 +2,48 @@
   "$schema": "../$schemas/model.schema.json",
   "id": "deepseek-v4-flash",
   "name": "DeepSeek-V4-Flash",
-  "description": "DeepSeek's efficient open-weight V4 model, updated on July 31 with substantially enhanced agent capabilities while retaining 284B total and 13B active parameters.",
+  "description": "DeepSeek's July 31 update to its open-source V4 Flash line, available via API with stronger agent capabilities; the refreshed 0731 weights are not yet published.",
   "translations": {
     "de": {
-      "description": "DeepSeeks effizientes Open-Weight-V4-Modell, das am 31. Juli mit deutlich verbesserten Agentenfähigkeiten aktualisiert wurde und weiterhin 284 Mrd. Gesamt- sowie 13 Mrd. aktive Parameter besitzt."
+      "description": "DeepSeeks Aktualisierung der Open-Source-Reihe V4 Flash vom 31. Juli ist per API mit stärkeren Agentenfähigkeiten verfügbar; die neuen 0731-Gewichte sind noch nicht veröffentlicht."
     },
     "es": {
-      "description": "El eficiente modelo V4 de pesos abiertos de DeepSeek, actualizado el 31 de julio con capacidades de agente considerablemente mejoradas y manteniendo 284B parámetros totales y 13B activos."
+      "description": "La actualización del 31 de julio de la línea V4 Flash de código abierto de DeepSeek está disponible por API; los nuevos pesos 0731 aún no se han publicado."
     },
     "fr": {
-      "description": "Le modèle V4 efficace à poids ouverts de DeepSeek, mis à jour le 31 juillet avec des capacités agentiques nettement renforcées tout en conservant 284 Md de paramètres au total, dont 13 Md actifs."
+      "description": "La mise à jour du 31 juillet de la gamme open source V4 Flash de DeepSeek est disponible par API ; les nouveaux poids 0731 ne sont pas encore publiés."
     },
     "id": {
-      "description": "Model V4 open-weight efisien dari DeepSeek, diperbarui pada 31 Juli dengan kemampuan agen yang jauh lebih kuat sambil mempertahankan 284B parameter total dan 13B parameter aktif."
+      "description": "Pembaruan 31 Juli untuk lini open-source V4 Flash DeepSeek tersedia melalui API dengan kemampuan agen lebih kuat; bobot 0731 yang baru belum diterbitkan."
     },
     "ja": {
-      "description": "総2840億・アクティブ130億パラメータを維持しつつ、7月31日にエージェント能力を大幅に強化したDeepSeekの効率的なオープンウェイトV4モデル。"
+      "description": "DeepSeekのオープンソースV4 Flash系統の7月31日更新版。強化されたエージェント能力をAPIで利用できるが、更新された0731ウェイトはまだ公開されていない。"
     },
     "ko": {
-      "description": "총 284B 및 활성 13B 매개변수를 유지하면서 7월 31일 에이전트 기능을 크게 강화한 DeepSeek의 효율적인 오픈 웨이트 V4 모델입니다."
+      "description": "DeepSeek 오픈 소스 V4 Flash 계열의 7월 31일 업데이트로, 강화된 에이전트 기능을 API에서 제공하지만 새 0731 가중치는 아직 공개되지 않았습니다."
     },
     "pt": {
-      "description": "O modelo V4 eficiente e de pesos abertos da DeepSeek, atualizado em 31 de julho com capacidades de agente significativamente aprimoradas, mantendo 284B parâmetros totais e 13B ativos."
+      "description": "A atualização de 31 de julho da linha V4 Flash de código aberto da DeepSeek está disponível via API; os novos pesos 0731 ainda não foram publicados."
     },
     "ru": {
-      "description": "Эффективная модель DeepSeek V4 с открытыми весами, обновлённая 31 июля со значительно усиленными агентными возможностями при сохранении 284 млрд параметров, из которых 13 млрд активны."
+      "description": "Обновление открытой линейки DeepSeek V4 Flash от 31 июля доступно через API с улучшенными агентными возможностями; новые веса 0731 ещё не опубликованы."
     },
     "tr": {
-      "description": "DeepSeek'in 31 Temmuz'da aracı yetenekleri önemli ölçüde geliştirilerek güncellenen, 284B toplam ve 13B aktif parametreyi koruyan verimli açık ağırlıklı V4 modeli."
+      "description": "DeepSeek'in açık kaynak V4 Flash serisinin 31 Temmuz güncellemesi, güçlendirilmiş aracı yeteneklerle API'de sunuluyor; yeni 0731 ağırlıkları henüz yayımlanmadı."
     },
     "zh-Hans": {
-      "description": "DeepSeek 的高效开放权重 V4 模型，于 7 月 31 日更新并显著增强智能体能力，保持 2840 亿总参数和 130 亿激活参数。"
+      "description": "DeepSeek 开源 V4 Flash 系列的 7 月 31 日更新版，已通过 API 提供并增强智能体能力；更新后的 0731 权重尚未发布。"
     },
     "zh-Hant": {
-      "description": "DeepSeek 的高效開放權重 V4 模型，於 7 月 31 日更新並顯著增強智慧體能力，維持 2840 億總參數和 130 億啟用參數。"
+      "description": "DeepSeek 開源 V4 Flash 系列的 7 月 31 日更新版，已透過 API 提供並增強智慧體能力；更新後的 0731 權重尚未發布。"
     }
   },
   "verified": true,
   "sources": [
     {
       "url": "https://api-docs.deepseek.com/news/news260424/",
-      "title": "DeepSeek V4 Preview release",
-      "fields": ["name", "description", "size", "lifecycle", "contextWindow", "capabilities"]
+      "title": "DeepSeek V4 Preview open-source release",
+      "fields": ["description"]
     },
     {
       "url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -61,7 +61,15 @@
     {
       "url": "https://api-docs.deepseek.com/updates/",
       "title": "DeepSeek V4 Flash July 31 API update",
-      "fields": ["description", "releaseDate", "lifecycle", "capabilities"]
+      "fields": [
+        "name",
+        "description",
+        "size",
+        "activeParameters",
+        "releaseDate",
+        "lifecycle",
+        "capabilities"
+      ]
     },
     {
       "url": "https://artificialanalysis.ai/models/deepseek-v4-flash/",
@@ -75,7 +83,8 @@
   "websiteUrl": "https://www.deepseek.com",
   "docsUrl": "https://api-docs.deepseek.com/quick_start/pricing",
   "vendor": "DeepSeek",
-  "size": "284B total / 13B active",
+  "size": "284B",
+  "activeParameters": "13B",
   "contextWindow": 1000000,
   "maxOutput": 384000,
   "tokenPricing": {
@@ -119,7 +128,7 @@
     "liveCodeBench": null
   },
   "platformUrls": {
-    "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+    "huggingface": null,
     "artificialAnalysis": "https://artificialanalysis.ai/models/deepseek-v4-flash/",
     "openrouter": null
   }

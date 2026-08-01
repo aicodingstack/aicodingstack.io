@@ -1,0 +1,133 @@
+{
+  "$schema": "../$schemas/desktop.schema.json",
+  "id": "codebuddy",
+  "name": "CodeBuddy",
+  "familyId": "codebuddy",
+  "description": "CodeBuddy is an AI coding environment with intelligent code completion, multi-file code generation in Craft Mode, design-to-code conversion, and integrated deployment tools.",
+  "translations": {
+    "zh-Hans": {
+      "description": "CodeBuddy 是一款 AI 编码环境，提供智能代码补全、Craft 模式多文件代码生成、设计转代码和集成部署工具。"
+    },
+    "de": {
+      "description": "CodeBuddy ist eine AI-Coding-Umgebung mit intelligenter Codevervollständigung, Mehrdatei-Codegenerierung im Craft-Modus, Design-zu-Code-Konvertierung und integrierten Bereitstellungswerkzeugen."
+    },
+    "ko": {
+      "description": "CodeBuddy는 지능형 코드 자동 완성, Craft 모드의 다중 파일 코드 생성, 디자인-투-코드 변환 및 통합 배포 도구를 제공하는 AI 코딩 환경입니다."
+    },
+    "es": {
+      "description": "CodeBuddy es un entorno de programación con IA con autocompletado inteligente, generación de código en varios archivos en modo Craft, conversión de diseño a código y despliegue integrado."
+    },
+    "fr": {
+      "description": "CodeBuddy est un environnement de codage IA avec complétion intelligente, génération de code multi-fichiers en mode Craft, conversion du design en code et outils de déploiement intégrés."
+    },
+    "id": {
+      "description": "CodeBuddy adalah lingkungan coding AI dengan pelengkapan kode cerdas, pembuatan kode multi-file dalam Craft Mode, konversi desain ke kode, dan alat deployment terintegrasi."
+    },
+    "ja": {
+      "description": "CodeBuddyは、インテリジェントなコード補完、Craftモードでのマルチファイルコード生成、デザインからコードへの変換、統合デプロイツールを備えたAIコーディング環境です。"
+    },
+    "pt": {
+      "description": "CodeBuddy é um ambiente de programação com IA com preenchimento inteligente, geração de código em vários arquivos no modo Craft, conversão de design em código e implantação integrada."
+    },
+    "ru": {
+      "description": "CodeBuddy — среда программирования с ИИ, умным автодополнением, генерацией кода в нескольких файлах в режиме Craft, преобразованием дизайна в код и встроенными инструментами развёртывания."
+    },
+    "tr": {
+      "description": "CodeBuddy; akıllı kod tamamlama, Craft Mode ile çoklu dosya kod üretimi, tasarımdan koda dönüşüm ve entegre dağıtım araçları sunan bir AI kodlama ortamıdır."
+    },
+    "zh-Hant": {
+      "description": "CodeBuddy 是一款 AI 程式設計環境，提供智慧程式碼補全、Craft 模式多檔案程式碼產生、設計轉程式碼和整合式部署工具。"
+    }
+  },
+  "verified": true,
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.codebuddy.ai",
+  "docsUrl": "https://www.codebuddy.ai/docs/ide",
+  "vendor": "Tencent",
+  "latestVersion": "1.0.0",
+  "githubUrl": null,
+  "license": "Proprietary",
+  "pricing": [
+    {
+      "name": "Free",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    },
+    {
+      "name": "Pro",
+      "value": 9.95,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Teams",
+      "value": 40,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Business"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://www.codebuddy.ai/ide",
+    "changelog": null,
+    "pricing": "https://www.codebuddy.ai/pricing",
+    "mcp": null,
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": "https://www.codebuddy.ai/blog"
+  },
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "codebuddy-cli"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "Windows",
+      "installCommand": null,
+      "launchCommand": "codebuddy",
+      "installPath": null
+    },
+    {
+      "os": "macOS",
+      "installCommand": null,
+      "launchCommand": "codebuddy",
+      "installPath": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.codebuddy.ai/docs/ide/Introduction",
+      "title": "CodeBuddy product introduction",
+      "fields": ["name", "description", "websiteUrl", "docsUrl", "familyId", "relatedProducts"]
+    },
+    {
+      "url": "https://www.codebuddy.ai/docs/ide/Getting-Started/Installation",
+      "title": "CodeBuddy installation guide",
+      "fields": ["platforms", "resourceUrls.download"]
+    },
+    {
+      "url": "https://www.codebuddy.ai/blog",
+      "title": "CodeBuddy blog community",
+      "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://www.codebuddy.ai/docs/ide/Account/pricing",
+      "title": "CodeBuddy pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    }
+  ]
+}

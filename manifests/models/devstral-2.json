@@ -67,6 +67,7 @@
   "docsUrl": "https://mistral.ai/news/devstral-2-vibe-cli",
   "vendor": "Mistral AI",
   "size": "123B",
+  "activeParameters": null,
   "contextWindow": 262144,
   "maxOutput": null,
   "tokenPricing": {

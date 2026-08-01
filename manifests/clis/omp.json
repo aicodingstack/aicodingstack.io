@@ -39,7 +39,7 @@
       "description": "omp 是一款開放原始碼終端機程式設計 Agent，支援雜湊錨定編輯、LSP 與除錯器整合、子 Agent、持久化程式碼執行環境以及 40 多家模型供應商。"
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://omp.sh",
@@ -49,12 +49,17 @@
     {
       "url": "https://github.com/can1357/oh-my-pi",
       "title": "Oh My Pi official repository",
-      "fields": ["description", "githubUrl", "platforms", "communityUrls", "resourceUrls.issue"]
+      "fields": ["description", "githubUrl", "platforms", "resourceUrls.mcp", "resourceUrls.issue"]
+    },
+    {
+      "url": "https://www.npmjs.com/package/@oh-my-pi/pi-coding-agent",
+      "title": "Oh My Pi coding-agent package",
+      "fields": ["latestVersion", "releaseTracking", "resourceUrls.download"]
     },
     {
       "url": "https://github.com/can1357/oh-my-pi/releases",
       "title": "Oh My Pi releases",
-      "fields": ["latestVersion", "resourceUrls.changelog"]
+      "fields": ["resourceUrls.changelog"]
     },
     {
       "url": "https://github.com/can1357/oh-my-pi/blob/main/LICENSE",
@@ -62,13 +67,17 @@
       "fields": ["license", "pricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://omp.sh",
   "docsUrl": "https://omp.sh/docs",
   "vendor": "Oh My Pi",
-  "latestVersion": "17.0.6",
+  "latestVersion": "17.1.7",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "@oh-my-pi/pi-coding-agent"
+  },
   "githubUrl": "https://github.com/can1357/oh-my-pi",
   "license": "MIT",
   "pricing": [
@@ -81,10 +90,10 @@
     }
   ],
   "resourceUrls": {
-    "download": "https://omp.sh",
+    "download": "https://www.npmjs.com/package/@oh-my-pi/pi-coding-agent",
     "changelog": "https://github.com/can1357/oh-my-pi/releases",
     "pricing": null,
-    "mcp": null,
+    "mcp": "https://github.com/can1357/oh-my-pi/blob/main/docs/mcp.md",
     "issue": "https://github.com/can1357/oh-my-pi/issues"
   },
   "communityUrls": {

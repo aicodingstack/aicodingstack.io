@@ -3,11 +3,11 @@
 import { useTranslations } from 'next-intl'
 import { useMemo, useState } from 'react'
 import FilterSortBar from '@/components/controls/FilterSortBar'
-import { VerifiedBadge } from '@/components/controls/VerifiedBadge'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import StackTabs from '@/components/navigation/StackTabs'
 import PageHeader from '@/components/PageHeader'
+import { ProductCardTitle } from '@/components/product/ProductCardTitle'
 import type { Locale } from '@/i18n/config'
 import { Link } from '@/i18n/navigation'
 import { extensionsData } from '@/lib/generated'
@@ -141,17 +141,13 @@ export default function ExtensionsPageClient({ locale }: Props) {
                 <Link
                   key={extension.name}
                   href={`/extensions/${extension.id}`}
-                  className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5 group flex flex-col"
+                  className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5 flex flex-col"
                 >
-                  <div className="flex justify-between items-start mb-[var(--spacing-sm)]">
-                    <div className="flex items-center gap-[var(--spacing-xs)]">
-                      <h3 className="text-lg font-semibold tracking-tight">{extension.name}</h3>
-                      {extension.verified && <VerifiedBadge size="sm" />}
-                    </div>
-                    <span className="text-lg text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all">
-                      →
-                    </span>
-                  </div>
+                  <ProductCardTitle
+                    name={extension.name}
+                    verified={extension.verified}
+                    deprecated={extension.deprecated}
+                  />
                   <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] mb-[var(--spacing-md)] font-light min-h-[4rem]">
                     {extension.description}
                   </p>

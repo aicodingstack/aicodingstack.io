@@ -39,7 +39,7 @@
     }
   },
   "verified": true,
-  "lastVerifiedAt": "2026-07-30",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://cline.bot/cline-cli",
@@ -58,6 +58,13 @@
       "value": 0,
       "currency": null,
       "per": null,
+      "category": "Individual"
+    },
+    {
+      "name": "AI Inference",
+      "value": null,
+      "currency": null,
+      "per": "usage-based",
       "category": "Individual"
     },
     {

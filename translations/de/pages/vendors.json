@@ -1,4 +1,11 @@
 {
+  "companyStages": {
+    "publicCompany": "Börsennotierte Unternehmen",
+    "startup": "Start-ups",
+    "superUnicorn": "Super-Unicorns",
+    "unicorn": "Einhörner"
+  },
+  "noResults": "Keine passenden Anbieter gefunden",
   "subtitle": "Führende Unternehmen und Organisationen, die AI-Technologien entwickeln",
   "title": "AI-Coding-Anbieter"
 }

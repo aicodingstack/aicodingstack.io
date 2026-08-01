@@ -9,7 +9,7 @@ import type { Locale } from '@/i18n/config'
 import { Link, useRouter } from '@/i18n/navigation'
 import { providersData } from '@/lib/generated'
 import { buildModelComparisonPath } from '@/lib/model-comparison'
-import { type CurrencyConversion, formatPrimaryTokenRate } from '@/lib/model-pricing'
+import { type CurrencyConversion, formatModelTokenRate } from '@/lib/model-pricing'
 import type {
   ManifestBenchmarks,
   ManifestModel,
@@ -55,6 +55,7 @@ const FALLBACK_MODEL: ManifestModel = {
   websiteUrl: '',
   docsUrl: null,
   size: '',
+  activeParameters: null,
   contextWindow: 0,
   maxOutput: 0,
   tokenPricing: EMPTY_TOKEN_PRICING,
@@ -106,7 +107,7 @@ const createPriceRenderer = (
   formatPerMillion: (price: string) => string
 ) => {
   return (model: ManifestModel) => {
-    const price = formatPrimaryTokenRate(model.tokenPricing, rate, locale, conversion)
+    const price = formatModelTokenRate(model, rate, locale, conversion)
     return price ? formatPerMillion(price) : '-'
   }
 }
@@ -277,7 +278,14 @@ export default function ComparePageClient({
         groupLabel: tShared('capabilities.capabilities'),
         key: 'size',
         label: tShared('terms.modelSize'),
-        render: createSimpleRenderer(m => m.size),
+        render: createSimpleRenderer(m =>
+          m.size && m.activeParameters
+            ? tShared('modelParameters.totalAndActive', {
+                total: m.size,
+                active: m.activeParameters,
+              })
+            : m.size
+        ),
       },
       {
         group: 'capabilities',

@@ -1,4 +1,11 @@
 {
+  "companyStages": {
+    "publicCompany": "Public Companies",
+    "startup": "Startups",
+    "superUnicorn": "Super Unicorns",
+    "unicorn": "Unicorns"
+  },
+  "noResults": "No vendors match your search",
   "subtitle": "Leading companies and organizations building AI technology",
   "title": "AI Coding Vendors"
 }

@@ -75,6 +75,7 @@
   "docsUrl": "https://api-docs.deepseek.com/quick_start/pricing",
   "vendor": "DeepSeek",
   "size": "671B",
+  "activeParameters": null,
   "contextWindow": 128000,
   "maxOutput": 8000,
   "tokenPricing": {

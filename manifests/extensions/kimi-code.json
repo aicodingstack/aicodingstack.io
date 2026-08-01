@@ -35,19 +35,40 @@
       "description": "Kimi Code for VS Code 將 Moonshot AI 的程式設計代理與編輯器內容、儲存庫感知變更、終端機操作，以及 Kimi Code CLI 的共享工作流程整合起來。"
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
-      "url": "https://www.kimi.com/resources/kimi-code-introduction",
-      "title": "Kimi Code introduction"
+      "url": "https://www.kimi.com/code/docs/en/",
+      "title": "Kimi Code documentation",
+      "fields": ["description", "websiteUrl", "docsUrl", "supportedIdes"]
     },
     {
       "url": "https://github.com/MoonshotAI/kimi-code",
       "title": "Kimi Code repository",
-      "fields": ["pricing"]
+      "fields": ["githubUrl", "resourceUrls.issue", "communityUrls.github", "relatedProducts"]
+    },
+    {
+      "url": "https://github.com/MoonshotAI/kimi-code/blob/main/apps/vscode/package.json",
+      "title": "Kimi Code VS Code extension manifest",
+      "fields": ["name", "vendor", "license", "pricing", "githubUrl", "releaseTracking"]
+    },
+    {
+      "url": "https://marketplace.visualstudio.com/items?itemName=moonshot-ai.kimi-code",
+      "title": "Kimi Code Visual Studio Marketplace listing",
+      "fields": ["latestVersion", "releaseTracking", "resourceUrls.download", "supportedIdes"]
+    },
+    {
+      "url": "https://github.com/MoonshotAI/kimi-code/blob/main/apps/vscode/CHANGELOG.md",
+      "title": "Kimi Code VS Code changelog",
+      "fields": ["resourceUrls.changelog"]
+    },
+    {
+      "url": "https://x.com/Kimi_Moonshot",
+      "title": "Kimi official X account",
+      "fields": ["communityUrls.twitter"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "kimi-code",
@@ -57,7 +78,7 @@
   "websiteUrl": "https://www.kimi.com/code",
   "docsUrl": "https://www.kimi.com/code/docs/en",
   "vendor": "Moonshot AI",
-  "latestVersion": "0.6.4",
+  "latestVersion": "0.6.6",
   "releaseTracking": {
     "provider": "vscode-marketplace",
     "identifier": "moonshot-ai.kimi-code"
@@ -74,8 +95,8 @@
     }
   ],
   "resourceUrls": {
-    "download": null,
-    "changelog": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html",
+    "download": "https://marketplace.visualstudio.com/items?itemName=moonshot-ai.kimi-code",
+    "changelog": "https://github.com/MoonshotAI/kimi-code/blob/main/apps/vscode/CHANGELOG.md",
     "pricing": null,
     "mcp": null,
     "issue": "https://github.com/MoonshotAI/kimi-code/issues"
@@ -98,8 +119,8 @@
   "supportedIdes": [
     {
       "ideId": "vscode",
-      "marketplaceUrl": null,
-      "installUri": null
+      "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=moonshot-ai.kimi-code",
+      "installUri": "vscode:extension/moonshot-ai.kimi-code"
     }
   ]
 }

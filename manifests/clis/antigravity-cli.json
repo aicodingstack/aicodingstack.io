@@ -123,7 +123,7 @@
       "name": "Organization",
       "value": null,
       "currency": null,
-      "per": "usage",
+      "per": "usage-based",
       "category": "Enterprise"
     }
   ],

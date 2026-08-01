@@ -47,6 +47,7 @@
         "name",
         "description",
         "size",
+        "activeParameters",
         "releaseDate",
         "lifecycle",
         "contextWindow",
@@ -78,7 +79,8 @@
   "websiteUrl": "https://www.deepseek.com",
   "docsUrl": "https://api-docs.deepseek.com/quick_start/pricing",
   "vendor": "DeepSeek",
-  "size": "1.6T total / 49B active",
+  "size": "1.6T",
+  "activeParameters": "49B",
   "contextWindow": 1000000,
   "maxOutput": 384000,
   "tokenPricing": {

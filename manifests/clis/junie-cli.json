@@ -35,57 +35,95 @@
       "description": "Junie CLI 是 JetBrains 的模型無關終端機程式設計代理，可用於規劃變更、編輯程式碼儲存庫、執行開發工具和使用可重複利用的代理設定。"
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
-      "url": "https://blog.jetbrains.com/junie/2026/03/junie-cli-the-llm-agnostic-coding-agent-is-now-in-beta/",
-      "title": "Junie CLI beta"
+      "url": "https://junie.jetbrains.com/",
+      "title": "Junie CLI product and pricing",
+      "fields": [
+        "name",
+        "description",
+        "websiteUrl",
+        "pricing",
+        "resourceUrls.pricing",
+        "communityUrls.discord"
+      ]
     },
     {
-      "url": "https://www.jetbrains.com/junie/",
-      "title": "Junie product site"
+      "url": "https://junie.jetbrains.com/docs/junie-cli-usage.html",
+      "title": "Junie CLI quickstart",
+      "fields": ["docsUrl", "resourceUrls.download", "platforms"]
     },
     {
       "url": "https://github.com/JetBrains/junie",
       "title": "Junie official repository",
-      "fields": ["githubUrl", "resourceUrls.issue"]
+      "fields": ["githubUrl", "license", "platforms", "resourceUrls.issue", "communityUrls.github"]
+    },
+    {
+      "url": "https://github.com/JetBrains/junie/blob/main/update-info.jsonl",
+      "title": "Junie stable update manifest",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
+    },
+    {
+      "url": "https://junie.jetbrains.com/docs/junie-cli-mcp-configuration.html",
+      "title": "Junie CLI MCP configuration",
+      "fields": ["resourceUrls.mcp"]
+    },
+    {
+      "url": "https://blog.jetbrains.com/junie",
+      "title": "Junie official blog",
+      "fields": ["communityUrls.blog"]
     }
   ],
-  "lastVerifiedAt": "2026-07-30",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "junie-cli",
   "name": "Junie CLI",
   "familyId": "junie",
   "description": "Junie CLI is JetBrains' model-agnostic terminal coding agent for planning changes, editing repositories, running development tools, and using reusable agent configurations.",
-  "websiteUrl": "https://www.jetbrains.com/junie",
-  "docsUrl": "https://www.jetbrains.com/help/junie/junie-cli.html",
+  "websiteUrl": "https://junie.jetbrains.com/",
+  "docsUrl": "https://junie.jetbrains.com/docs/junie-cli.html",
   "vendor": "JetBrains",
-  "latestVersion": "Beta",
+  "latestVersion": "888.117",
   "githubUrl": "https://github.com/JetBrains/junie",
   "license": "Proprietary",
   "pricing": [
     {
-      "name": "Beta",
+      "name": "Free to Start",
       "value": 0,
       "currency": null,
       "per": null,
       "category": "Individual"
+    },
+    {
+      "name": "AI Pro",
+      "value": 8.33,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Individual"
+    },
+    {
+      "name": "AI Ultimate",
+      "value": 25,
+      "currency": "USD",
+      "per": "user/month",
+      "category": "Individual"
     }
   ],
   "resourceUrls": {
-    "download": null,
-    "changelog": "https://blog.jetbrains.com/junie/2026/03/junie-cli-the-llm-agnostic-coding-agent-is-now-in-beta/",
-    "pricing": null,
-    "mcp": null,
+    "download": "https://junie.jetbrains.com/docs/junie-cli-usage.html",
+    "changelog": "https://github.com/JetBrains/junie/releases",
+    "pricing": "https://junie.jetbrains.com/#pricing",
+    "mcp": "https://junie.jetbrains.com/docs/junie-cli-mcp-configuration.html",
     "issue": "https://github.com/JetBrains/junie/issues"
   },
   "communityUrls": {
     "linkedin": null,
     "twitter": null,
-    "github": null,
+    "github": "https://github.com/JetBrains/junie",
     "youtube": null,
-    "discord": null,
+    "discord": "https://jb.gg/junie-discord",
     "reddit": null,
     "blog": "https://blog.jetbrains.com/junie"
   },
@@ -99,19 +137,19 @@
     {
       "os": "macOS",
       "installPath": null,
-      "installCommand": null,
+      "installCommand": "curl -fsSL https://junie.jetbrains.com/install.sh | bash",
       "launchCommand": "junie"
     },
     {
       "os": "Windows",
       "installPath": null,
-      "installCommand": null,
+      "installCommand": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"iex (irm 'https://junie.jetbrains.com/install.ps1')\"",
       "launchCommand": "junie"
     },
     {
       "os": "Linux",
       "installPath": null,
-      "installCommand": null,
+      "installCommand": "curl -fsSL https://junie.jetbrains.com/install.sh | bash",
       "launchCommand": "junie"
     }
   ]

@@ -39,17 +39,12 @@
       "description": "AI 驅動的 IDE，定位為可提升十倍效率的「AI 工程師」，提供即時程式碼補全、聊天式輔助與自主程式碼產生（Builder／SOLO 模式），支援端對端開發。"
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
-      "url": "https://www.trae.ai/solo-code",
-      "title": "TRAE IDE",
+      "url": "https://www.trae.ai/ide",
+      "title": "TRAE IDE product page",
       "fields": ["name", "description", "websiteUrl"]
-    },
-    {
-      "url": "https://www.trae.ai/blog/trae_work_0609",
-      "title": "Introducing TRAE Work",
-      "fields": ["familyId", "relatedProducts"]
     },
     {
       "url": "https://www.trae.ai/download",
@@ -67,9 +62,19 @@
       "fields": ["pricing", "resourceUrls.pricing"]
     },
     {
+      "url": "https://www.trae.ai/terms-of-service",
+      "title": "TRAE Terms of Service",
+      "fields": ["license"]
+    },
+    {
       "url": "https://x.com/Trae_ai",
       "title": "TRAE IDE twitter community",
       "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://discord.com/invite/nwWJDCaqtc",
+      "title": "TRAE Discord community",
+      "fields": ["communityUrls.discord"]
     },
     {
       "url": "https://www.reddit.com/r/Trae_ai",
@@ -84,13 +89,13 @@
     {
       "url": "https://github.com/Trae-AI/TRAE",
       "title": "TRAE official repository",
-      "fields": ["githubUrl", "resourceUrls.issue"]
+      "fields": ["githubUrl", "resourceUrls.issue", "communityUrls.github"]
     }
   ],
-  "lastVerifiedAt": "2026-07-30",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
-  "websiteUrl": "https://www.trae.ai/solo-code",
+  "websiteUrl": "https://www.trae.ai/ide",
   "docsUrl": "https://docs.trae.ai",
   "vendor": "ByteDance",
   "latestVersion": "3.5.71",
@@ -143,35 +148,30 @@
   "communityUrls": {
     "linkedin": null,
     "twitter": "https://x.com/Trae_ai",
-    "github": null,
+    "github": "https://github.com/Trae-AI/TRAE",
     "youtube": null,
-    "discord": null,
+    "discord": "https://discord.com/invite/nwWJDCaqtc",
     "reddit": "https://www.reddit.com/r/Trae_ai",
     "blog": "https://www.trae.ai/blog"
   },
-  "relatedProducts": [
-    {
-      "type": "desktop",
-      "productId": "trae-work"
-    }
-  ],
+  "relatedProducts": [],
   "platforms": [
     {
       "os": "macOS",
       "installCommand": null,
-      "launchCommand": "trae",
+      "launchCommand": null,
       "installPath": null
     },
     {
       "os": "Windows",
       "installCommand": null,
-      "launchCommand": "trae",
+      "launchCommand": null,
       "installPath": null
     },
     {
       "os": "Linux",
       "installCommand": null,
-      "launchCommand": "trae",
+      "launchCommand": null,
       "installPath": null
     }
   ]

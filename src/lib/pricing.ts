@@ -1,10 +1,12 @@
 // Pricing utility functions
 
+import type { ManifestPricingPeriod } from '@/types/manifests'
+
 export interface PricingTier {
   name: string
   value: number | null
   currency?: string | null
-  per?: string | null
+  per?: ManifestPricingPeriod | null
   category: string
 }
 
@@ -20,11 +22,8 @@ const CURRENCY_SYMBOLS: Record<string, string> = {
   EUR: '€',
 }
 
-const NON_USAGE_PERIODS = new Set(['custom', 'subscription'])
-
 function isUsageBasedTier(tier: PricingTier): boolean {
-  if (tier.value !== null || !tier.per) return false
-  return !NON_USAGE_PERIODS.has(tier.per.toLowerCase())
+  return tier.value === null && tier.per === 'usage-based'
 }
 
 /**

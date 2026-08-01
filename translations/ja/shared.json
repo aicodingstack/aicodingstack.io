@@ -84,6 +84,9 @@
     "latest": "最新",
     "maintained": "メンテナンス中"
   },
+  "modelParameters": {
+    "totalAndActive": "{total} 合計 / {active} アクティブ"
+  },
   "modelPricing": {
     "cacheRead": "キャッシュ読み取り",
     "cacheWrite": "キャッシュ書き込み",

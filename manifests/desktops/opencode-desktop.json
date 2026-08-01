@@ -35,24 +35,50 @@
       "description": "OpenCode Desktop 是開放原始碼 OpenCode 程式設計代理的獨立桌面介面，提供本機專案工作階段，並支援多種託管和本機模型供應商。"
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://opencode.ai/download",
-      "title": "OpenCode downloads"
+      "title": "OpenCode downloads",
+      "fields": ["description", "websiteUrl", "platforms", "resourceUrls.download"]
+    },
+    {
+      "url": "https://opencode.ai/docs",
+      "title": "OpenCode documentation",
+      "fields": ["docsUrl", "relatedProducts"]
+    },
+    {
+      "url": "https://github.com/anomalyco/opencode/releases/tag/v1.18.10",
+      "title": "OpenCode v1.18.10 release",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
+    },
+    {
+      "url": "https://github.com/anomalyco/opencode/blob/dev/LICENSE",
+      "title": "OpenCode MIT license",
+      "fields": ["license", "pricing"]
     },
     {
       "url": "https://github.com/anomalyco/opencode",
-      "title": "OpenCode repository",
-      "fields": ["pricing"]
+      "title": "OpenCode official repository",
+      "fields": ["githubUrl", "resourceUrls.issue", "communityUrls.github"]
+    },
+    {
+      "url": "https://opencode.ai/docs/mcp-servers/",
+      "title": "OpenCode MCP servers documentation",
+      "fields": ["resourceUrls.mcp"]
     },
     {
       "url": "https://opencode.ai/zen",
       "title": "OpenCode Zen pricing",
-      "fields": ["pricing", "resourceUrls.pricing"]
+      "fields": ["resourceUrls.pricing"]
+    },
+    {
+      "url": "https://discord.com/invite/opencode",
+      "title": "OpenCode Discord community",
+      "fields": ["communityUrls.discord"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "opencode-desktop",
@@ -62,10 +88,10 @@
   "websiteUrl": "https://opencode.ai/download",
   "docsUrl": "https://opencode.ai/docs",
   "vendor": "Anomaly",
-  "latestVersion": "1.18.8",
+  "latestVersion": "1.18.10",
   "releaseTracking": {
-    "provider": "homebrew-cask",
-    "identifier": "opencode-desktop"
+    "provider": "github-release",
+    "identifier": "anomalyco/opencode"
   },
   "githubUrl": "https://github.com/anomalyco/opencode",
   "license": "MIT",
@@ -82,7 +108,7 @@
     "download": "https://opencode.ai/download",
     "changelog": "https://github.com/anomalyco/opencode/releases",
     "pricing": "https://opencode.ai/zen",
-    "mcp": null,
+    "mcp": "https://opencode.ai/docs/mcp-servers/",
     "issue": "https://github.com/anomalyco/opencode/issues"
   },
   "communityUrls": {
@@ -90,7 +116,7 @@
     "twitter": null,
     "github": "https://github.com/anomalyco/opencode",
     "youtube": null,
-    "discord": null,
+    "discord": "https://discord.com/invite/opencode",
     "reddit": null,
     "blog": null
   },
@@ -107,19 +133,19 @@
   "platforms": [
     {
       "os": "macOS",
-      "installPath": "/Applications/OpenCode.app",
+      "installPath": null,
       "installCommand": "brew install --cask opencode-desktop",
       "launchCommand": null
     },
     {
       "os": "Windows",
-      "installPath": "%LOCALAPPDATA%\\Programs\\OpenCode",
+      "installPath": null,
       "installCommand": null,
       "launchCommand": null
     },
     {
       "os": "Linux",
-      "installPath": "/opt/OpenCode",
+      "installPath": null,
       "installCommand": null,
       "launchCommand": null
     }

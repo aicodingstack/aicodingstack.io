@@ -40,7 +40,7 @@
     }
   },
   "verified": true,
-  "lastVerifiedAt": "2026-07-30",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://openai.com/codex",
@@ -54,6 +54,13 @@
   "githubUrl": "https://github.com/openai/codex",
   "license": "Apache-2.0",
   "pricing": [
+    {
+      "name": "ChatGPT Free",
+      "value": 0,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
     {
       "name": "ChatGPT Plus",
       "value": 20,

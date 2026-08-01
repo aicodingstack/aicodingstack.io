@@ -2,48 +2,48 @@
   "$schema": "../$schemas/provider.schema.json",
   "id": "deepseek",
   "name": "DeepSeek",
-  "description": "A leading AI research company focused on developing advanced language models and AI technology for coding and general intelligence.",
+  "description": "DeepSeek develops language models and provides direct access through its OpenAI- and Anthropic-compatible APIs.",
   "translations": {
     "zh-Hans": {
-      "description": "领先的 AI 研究公司，专注于开发先进的语言模型和 AI 技术，用于编码和通用智能。"
+      "description": "DeepSeek 开发语言模型，并通过兼容 OpenAI 和 Anthropic 的 API 提供直接访问。"
     },
     "de": {
-      "description": "Ein führendes AI-Forschungsunternehmen, das sich auf die Entwicklung fortschrittlicher Sprachmodelle und AI-Technologien für Codierung und allgemeine Intelligenz konzentriert."
+      "description": "DeepSeek entwickelt Sprachmodelle und bietet direkten Zugriff über OpenAI- und Anthropic-kompatible APIs."
     },
     "ko": {
-      "description": "코딩 및 일반 지능을 위한 고급 언어 모델과 AI 기술 개발에 집중하는 선도적인 AI 연구 기업입니다."
+      "description": "DeepSeek는 언어 모델을 개발하고 OpenAI 및 Anthropic 호환 API를 통해 직접 액세스를 제공합니다."
     },
     "es": {
-      "description": "Una empresa de investigación de IA líder centrada en el desarrollo de modelos de lenguaje avanzados y tecnologías de IA para la codificación y la inteligencia general."
+      "description": "DeepSeek desarrolla modelos de lenguaje y ofrece acceso directo mediante API compatibles con OpenAI y Anthropic."
     },
     "fr": {
-      "description": "Une entreprise de recherche en IA de premier plan axée sur le développement de modèles de langue avancés et de technologie d'IA pour le codage et l'intelligence générale."
+      "description": "DeepSeek développe des modèles de langage et fournit un accès direct via des API compatibles avec OpenAI et Anthropic."
     },
     "id": {
-      "description": "Perusahaan riset AI terkemuka yang berfokus pada pengembangan model bahasa canggih dan teknologi AI untuk coding dan kecerdasan umum."
+      "description": "DeepSeek mengembangkan model bahasa dan menyediakan akses langsung melalui API yang kompatibel dengan OpenAI dan Anthropic."
     },
     "ja": {
-      "description": "コーディングと汎用知能のための高度な言語モデルとAI技術の開発に焦点を当てた、先駆的なAI研究企業です。"
+      "description": "DeepSeek は言語モデルを開発し、OpenAI および Anthropic 互換 API を通じて直接アクセスを提供しています。"
     },
     "pt": {
-      "description": "Uma empresa de pesquisa de IA focada no desenvolvimento de modelos de linguagem avançados e tecnologias de IA para programação e inteligência geral."
+      "description": "A DeepSeek desenvolve modelos de linguagem e oferece acesso direto por APIs compatíveis com OpenAI e Anthropic."
     },
     "ru": {
-      "description": "Ведущая компания в области исследований ИИ, занимающаяся разработкой продвинутых языковых моделей и ИИ-технологий для программирования и общего интеллекта."
+      "description": "DeepSeek разрабатывает языковые модели и предоставляет прямой доступ через API, совместимые с OpenAI и Anthropic."
     },
     "tr": {
-      "description": "Kodlama ve genel zeka için gelişmiş dil modelleri ve AI teknolojileri geliştirmeye odaklanan lider bir AI araştırma şirketi."
+      "description": "DeepSeek, dil modelleri geliştirir ve OpenAI ile Anthropic uyumlu API'ler üzerinden doğrudan erişim sağlar."
     },
     "zh-Hant": {
-      "description": "領先的 AI 研究公司，專注於開發先進的語言模型和 AI 技術，用於程式設計和通用智慧。"
+      "description": "DeepSeek 開發語言模型，並透過相容 OpenAI 和 Anthropic 的 API 提供直接存取。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://www.deepseek.com",
-  "docsUrl": "https://platform.deepseek.com/api-docs",
+  "docsUrl": "https://api-docs.deepseek.com/",
   "vendor": "deepseek",
   "type": "foundation-model-provider",
-  "applyKeyUrl": "https://platform.deepseek.com/apply",
+  "applyKeyUrl": "https://platform.deepseek.com/api_keys",
   "platformUrls": {
     "huggingface": "https://huggingface.co/deepseek-ai",
     "artificialAnalysis": "https://artificialanalysis.ai/providers/deepseek",
@@ -57,5 +57,35 @@
     "discord": null,
     "reddit": null,
     "blog": null
-  }
+  },
+  "sources": [
+    {
+      "url": "https://www.deepseek.com",
+      "title": "DeepSeek",
+      "fields": ["name", "description", "websiteUrl", "vendor"]
+    },
+    {
+      "url": "https://api-docs.deepseek.com/",
+      "title": "DeepSeek API documentation",
+      "fields": ["docsUrl", "type", "applyKeyUrl"]
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai",
+      "title": "DeepSeek official Hugging Face organization",
+      "fields": ["platformUrls.huggingface"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/providers/deepseek",
+      "title": "DeepSeek on Artificial Analysis",
+      "fields": ["platformUrls.artificialAnalysis"]
+    },
+    {
+      "url": "https://openrouter.ai/provider/deepseek",
+      "title": "DeepSeek on OpenRouter",
+      "fields": ["platformUrls.openrouter"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

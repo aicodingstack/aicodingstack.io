@@ -84,6 +84,9 @@
     "latest": "最新",
     "maintained": "维护中"
   },
+  "modelParameters": {
+    "totalAndActive": "{total} 总参数 / {active} 激活参数"
+  },
   "modelPricing": {
     "cacheRead": "缓存读取",
     "cacheWrite": "缓存写入",

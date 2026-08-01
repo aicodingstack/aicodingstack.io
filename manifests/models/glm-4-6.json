@@ -43,6 +43,7 @@
   "docsUrl": "https://huggingface.co/zai-org/GLM-4.6",
   "vendor": "Z.ai",
   "size": "357B",
+  "activeParameters": null,
   "contextWindow": 204800,
   "maxOutput": 131072,
   "tokenPricing": {

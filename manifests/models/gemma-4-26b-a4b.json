@@ -48,6 +48,7 @@
         "description",
         "docsUrl",
         "size",
+        "activeParameters",
         "contextWindow",
         "inputModalities",
         "outputModalities",
@@ -62,21 +63,27 @@
     {
       "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
       "title": "Gemma 4 26B A4B official model repository",
-      "fields": ["size", "platformUrls.huggingface"]
+      "fields": ["size", "activeParameters", "platformUrls.huggingface"]
     },
     {
       "url": "https://artificialanalysis.ai/models/gemma-4-26b-a4b",
       "title": "Artificial Analysis Gemma 4 26B A4B model page",
       "fields": ["releaseDate", "platformUrls.artificialAnalysis"]
+    },
+    {
+      "url": "https://models.dev/api.json",
+      "title": "Models.dev pricing catalog",
+      "fields": ["referenceTokenPricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-27",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://deepmind.google",
   "docsUrl": "https://ai.google.dev/gemma/docs/core/model_card_4",
   "vendor": "Google",
-  "size": "26B (4B active)",
+  "size": "26B",
+  "activeParameters": "4B",
   "contextWindow": 262144,
   "maxOutput": null,
   "tokenPricing": {
@@ -84,6 +91,16 @@
     "reason": "open-weights-only",
     "primaryOffer": null,
     "offers": []
+  },
+  "referenceTokenPricing": {
+    "currency": "USD",
+    "basis": "provider-median",
+    "rates": { "input": 0.126, "output": 0.4, "cacheRead": 0.0325, "cacheWrite": null },
+    "source": {
+      "name": "Models.dev provider median",
+      "url": "https://models.dev/api.json",
+      "observedAt": "2026-07-31"
+    }
   },
   "releaseDate": "2026-04-02",
   "lifecycle": "latest",

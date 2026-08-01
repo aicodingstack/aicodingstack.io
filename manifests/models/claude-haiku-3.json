@@ -68,6 +68,7 @@
   "docsUrl": "https://www.anthropic.com/news/claude-3-haiku",
   "vendor": "Anthropic",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 200000,
   "maxOutput": null,
   "tokenPricing": {

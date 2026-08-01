@@ -98,12 +98,7 @@
     "reddit": null,
     "blog": null
   },
-  "relatedProducts": [
-    {
-      "type": "cli",
-      "productId": "rovo-dev-cli"
-    }
-  ],
+  "relatedProducts": [],
   "supportedIdes": [
     {
       "ideId": "vscode",

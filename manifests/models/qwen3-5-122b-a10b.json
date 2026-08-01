@@ -48,6 +48,7 @@
         "description",
         "docsUrl",
         "size",
+        "activeParameters",
         "contextWindow",
         "inputModalities",
         "outputModalities",
@@ -77,7 +78,8 @@
   "websiteUrl": "https://qwen.ai",
   "docsUrl": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B",
   "vendor": "Alibaba",
-  "size": "122B (10B active)",
+  "size": "122B",
+  "activeParameters": "10B",
   "contextWindow": 262144,
   "maxOutput": null,
   "tokenPricing": {

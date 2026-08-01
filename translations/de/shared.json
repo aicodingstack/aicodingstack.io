@@ -84,6 +84,9 @@
     "latest": "Neueste",
     "maintained": "Gepflegt"
   },
+  "modelParameters": {
+    "totalAndActive": "{total} gesamt / {active} aktiv"
+  },
   "modelPricing": {
     "cacheRead": "Cache-Lesen",
     "cacheWrite": "Cache-Schreiben",

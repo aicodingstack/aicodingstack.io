@@ -48,6 +48,7 @@
         "description",
         "docsUrl",
         "size",
+        "activeParameters",
         "contextWindow",
         "maxOutput",
         "tokenPricing",
@@ -58,15 +59,21 @@
         "outputModalities",
         "capabilities"
       ]
+    },
+    {
+      "url": "https://models.dev/api.json",
+      "title": "Models.dev pricing catalog",
+      "fields": ["referenceTokenPricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.deepseek.com",
   "docsUrl": "https://api-docs.deepseek.com/news/news250821",
   "vendor": "DeepSeek",
-  "size": "671B (37B active)",
+  "size": "671B",
+  "activeParameters": "37B",
   "contextWindow": 128000,
   "maxOutput": null,
   "tokenPricing": {
@@ -74,6 +81,16 @@
     "reason": "historical-price-unverified",
     "primaryOffer": null,
     "offers": []
+  },
+  "referenceTokenPricing": {
+    "currency": "USD",
+    "basis": "provider-median",
+    "rates": { "input": 0.385, "output": 1.25, "cacheRead": 0.135, "cacheWrite": null },
+    "source": {
+      "name": "Models.dev provider median",
+      "url": "https://models.dev/api.json",
+      "observedAt": "2026-07-31"
+    }
   },
   "releaseDate": "2025-08-21",
   "lifecycle": "maintained",

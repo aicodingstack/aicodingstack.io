@@ -84,6 +84,9 @@
     "latest": "Новая",
     "maintained": "Поддерживаемая"
   },
+  "modelParameters": {
+    "totalAndActive": "{total} всего / {active} активных"
+  },
   "modelPricing": {
     "cacheRead": "Чтение кеша",
     "cacheWrite": "Запись кеша",

@@ -24,7 +24,7 @@
     {
       "id": "deepseek-flash",
       "name": "DeepSeek Flash",
-      "modelIds": ["deepseek-v4-flash"]
+      "modelIds": ["deepseek-v4-flash-preview", "deepseek-v4-flash"]
     }
   ],
   "description": "A leading AI research company focused on developing advanced language models and AI technology for coding and general intelligence.",

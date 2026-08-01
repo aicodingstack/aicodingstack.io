@@ -49,15 +49,21 @@
         "digest": "sha256:50692812b00a1b51ddd80947258f053d2317be53e34384d7421d2e9034d3b60d",
         "observedAt": "2026-07-28"
       }
+    },
+    {
+      "url": "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
+      "title": "Kimi K2 Thinking official model card",
+      "fields": ["docsUrl", "size", "activeParameters", "contextWindow", "platformUrls.huggingface"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "medium",
   "websiteUrl": "https://moonshot.ai",
-  "docsUrl": "https://huggingface.co/moonshotai/Kimi-K2-Instruct-Thinking",
+  "docsUrl": "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
   "vendor": "Moonshot",
-  "size": "1,000B",
+  "size": "1T",
+  "activeParameters": "32B",
   "contextWindow": 262144,
   "maxOutput": 262144,
   "tokenPricing": {
@@ -101,7 +107,7 @@
     "liveCodeBench": null
   },
   "platformUrls": {
-    "huggingface": "https://huggingface.co/moonshotai/Kimi-K2-Instruct-Thinking",
+    "huggingface": "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
     "artificialAnalysis": "https://artificialanalysis.ai/models/kimi-k2-thinking",
     "openrouter": "https://openrouter.ai/moonshotai/kimi-k2-thinking"
   }

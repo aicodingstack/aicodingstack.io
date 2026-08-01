@@ -67,7 +67,7 @@
     {
       "url": "https://huggingface.co/zai-org/GLM-4.7-Flash",
       "title": "Official GLM-4.7-Flash model card",
-      "fields": ["size", "platformUrls"]
+      "fields": ["size", "activeParameters", "platformUrls"]
     }
   ],
   "lastVerifiedAt": "2026-07-26",
@@ -76,7 +76,8 @@
   "websiteUrl": "https://z.ai",
   "docsUrl": "https://docs.z.ai/guides/llm/glm-4.7",
   "vendor": "Z.ai",
-  "size": "31.2B (3B active)",
+  "size": "31.2B",
+  "activeParameters": "3B",
   "contextWindow": 204800,
   "maxOutput": 131072,
   "tokenPricing": {

@@ -67,6 +67,7 @@
   "docsUrl": "https://developers.openai.com/api/docs/models/o3-mini",
   "vendor": "OpenAI",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 200000,
   "maxOutput": 100000,
   "tokenPricing": {

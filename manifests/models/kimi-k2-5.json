@@ -47,6 +47,7 @@
         "name",
         "description",
         "size",
+        "activeParameters",
         "contextWindow",
         "inputModalities",
         "outputModalities",
@@ -56,7 +57,7 @@
     {
       "url": "https://huggingface.co/moonshotai/Kimi-K2.5",
       "title": "Kimi K2.5 official model card",
-      "fields": ["size", "contextWindow", "platformUrls.huggingface"]
+      "fields": ["size", "activeParameters", "contextWindow", "platformUrls.huggingface"]
     },
     {
       "url": "https://platform.kimi.ai/docs/pricing/chat-k25",
@@ -100,7 +101,8 @@
   "websiteUrl": "https://www.moonshot.ai",
   "docsUrl": "https://github.com/MoonshotAI/Kimi-K2.5",
   "vendor": "Moonshot",
-  "size": "1T (32B active)",
+  "size": "1T",
+  "activeParameters": "32B",
   "contextWindow": 262144,
   "maxOutput": null,
   "tokenPricing": {

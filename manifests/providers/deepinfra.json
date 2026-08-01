@@ -1,0 +1,91 @@
+{
+  "$schema": "../$schemas/provider.schema.json",
+  "id": "deepinfra",
+  "name": "DeepInfra",
+  "description": "Serverless AI inference platform offering OpenAI-compatible APIs for 100+ models across text, image, video, speech, embeddings, and reranking, plus private model deployments.",
+  "translations": {
+    "zh-Hans": {
+      "description": "无服务器 AI 推理平台，通过兼容 OpenAI 的 API 提供 100 多个文本、图像、视频、语音、嵌入和重排序模型，并支持私有模型部署。"
+    },
+    "de": {
+      "description": "Serverlose KI-Inferenzplattform mit OpenAI-kompatiblen APIs für über 100 Text-, Bild-, Video-, Sprach-, Embedding- und Reranking-Modelle sowie privaten Modellbereitstellungen."
+    },
+    "ko": {
+      "description": "텍스트, 이미지, 비디오, 음성, 임베딩, 리랭킹 분야의 100개 이상 모델을 OpenAI 호환 API로 제공하고 비공개 모델 배포도 지원하는 서버리스 AI 추론 플랫폼입니다."
+    },
+    "es": {
+      "description": "Plataforma de inferencia de IA sin servidor con API compatibles con OpenAI para más de 100 modelos de texto, imagen, vídeo, voz, embeddings y reranking, además de despliegues privados."
+    },
+    "fr": {
+      "description": "Plateforme d’inférence IA serverless avec des API compatibles OpenAI pour plus de 100 modèles de texte, image, vidéo, parole, embeddings et reranking, ainsi que des déploiements privés."
+    },
+    "id": {
+      "description": "Platform inferensi AI serverless dengan API kompatibel OpenAI untuk 100+ model teks, gambar, video, suara, embedding, dan reranking, serta deployment model privat."
+    },
+    "ja": {
+      "description": "テキスト、画像、動画、音声、埋め込み、リランキングの100以上のモデルをOpenAI互換APIで提供し、プライベートモデルのデプロイにも対応するサーバーレスAI推論基盤。"
+    },
+    "pt": {
+      "description": "Plataforma de inferência de IA serverless com APIs compatíveis com OpenAI para mais de 100 modelos de texto, imagem, vídeo, voz, embeddings e reranking, além de implantações privadas."
+    },
+    "ru": {
+      "description": "Бессерверная платформа инференса ИИ с OpenAI-совместимыми API для 100+ моделей текста, изображений, видео, речи, векторного поиска и ранжирования, а также частных развёртываний."
+    },
+    "tr": {
+      "description": "Metin, görüntü, video, konuşma, gömme ve yeniden sıralama için 100'den fazla modeli OpenAI uyumlu API'lerle sunan ve özel model dağıtımlarını destekleyen sunucusuz AI çıkarım platformu."
+    },
+    "zh-Hant": {
+      "description": "無伺服器 AI 推論平台，透過相容 OpenAI 的 API 提供 100 多個文字、影像、影片、語音、嵌入及重新排序模型，並支援私有模型部署。"
+    }
+  },
+  "verified": true,
+  "websiteUrl": "https://deepinfra.com",
+  "docsUrl": "https://docs.deepinfra.com/quickstart",
+  "vendor": "deepinfra",
+  "type": "model-service-provider",
+  "applyKeyUrl": "https://deepinfra.com/dash/api_keys",
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/DeepInfra",
+    "artificialAnalysis": "https://artificialanalysis.ai/providers/deepinfra",
+    "openrouter": "https://openrouter.ai/provider/deepinfra"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "sources": [
+    {
+      "url": "https://docs.deepinfra.com/quickstart",
+      "title": "DeepInfra quickstart",
+      "fields": ["name", "description", "websiteUrl", "docsUrl", "type", "applyKeyUrl"]
+    },
+    {
+      "url": "https://docs.deepinfra.com/account/authentication",
+      "title": "DeepInfra authentication",
+      "fields": ["applyKeyUrl"]
+    },
+    {
+      "url": "https://huggingface.co/DeepInfra",
+      "title": "Verified DeepInfra Hugging Face organization",
+      "fields": ["platformUrls.huggingface"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/providers/deepinfra",
+      "title": "DeepInfra on Artificial Analysis",
+      "fields": ["platformUrls.artificialAnalysis"]
+    },
+    {
+      "url": "https://openrouter.ai/provider/deepinfra",
+      "title": "DeepInfra on OpenRouter",
+      "fields": ["platformUrls.openrouter"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
+}

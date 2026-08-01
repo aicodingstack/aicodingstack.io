@@ -1,7 +1,7 @@
 {
   "$schema": "../$schemas/model.schema.json",
   "id": "cursor-composer-2",
-  "name": "Cursor Composer 2",
+  "name": "Composer 2",
   "description": "Cursor's retired coding agent model for long-horizon software engineering, now routed to Composer 2.5.",
   "translations": {
     "de": {
@@ -61,13 +61,14 @@
       "fields": ["benchmarks.terminalBench"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "medium",
   "websiteUrl": "https://cursor.com",
   "docsUrl": "https://docs.cursor.com/models",
   "vendor": "Anysphere",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 200000,
   "maxOutput": null,
   "tokenPricing": {

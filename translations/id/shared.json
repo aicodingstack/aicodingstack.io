@@ -84,6 +84,9 @@
     "latest": "Terbaru",
     "maintained": "Dipertahankan"
   },
+  "modelParameters": {
+    "totalAndActive": "{total} total / {active} aktif"
+  },
   "modelPricing": {
     "cacheRead": "Baca cache",
     "cacheWrite": "Tulis cache",

@@ -39,22 +39,32 @@
       "description": "JetBrains Air 是一款獨立桌面環境，用於委派、執行和審查並行的程式設計智慧體任務。"
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://air.dev/",
       "title": "JetBrains Air product site",
-      "fields": ["description", "websiteUrl", "docsUrl", "vendor", "license", "pricing"]
+      "fields": ["name", "description", "websiteUrl", "vendor"]
     },
     {
-      "url": "https://air.dev/download",
-      "title": "JetBrains Air downloads",
-      "fields": ["platforms", "resourceUrls.download"]
+      "url": "https://www.jetbrains.com/help/air/set-up.html",
+      "title": "Set up JetBrains Air",
+      "fields": ["description", "docsUrl", "platforms", "resourceUrls.download"]
     },
     {
       "url": "https://air.dev/changelog",
       "title": "JetBrains Air changelog",
       "fields": ["latestVersion", "resourceUrls.changelog"]
+    },
+    {
+      "url": "https://www.jetbrains.com/legal/docs/terms/jetbrains-air/",
+      "title": "JetBrains Air EAP User Agreement",
+      "fields": ["license", "pricing"]
+    },
+    {
+      "url": "https://youtrack.jetbrains.com/projects/AIR",
+      "title": "JetBrains Air issue tracker",
+      "fields": ["resourceUrls.issue"]
     },
     {
       "url": "https://x.com/getsome_air",
@@ -72,7 +82,7 @@
       "fields": ["communityUrls.blog"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://air.dev",
@@ -83,7 +93,7 @@
   "license": "Proprietary",
   "pricing": [
     {
-      "name": "Preview Download",
+      "name": "Early Access",
       "value": 0,
       "currency": null,
       "per": null,
@@ -93,7 +103,7 @@
   "resourceUrls": {
     "download": "https://air.dev/download",
     "changelog": "https://air.dev/changelog",
-    "pricing": "https://air.dev/#faq",
+    "pricing": null,
     "mcp": null,
     "issue": "https://youtrack.jetbrains.com/projects/AIR"
   },
@@ -110,9 +120,9 @@
   "platforms": [
     {
       "os": "macOS",
-      "installPath": "/Applications/Air.app",
+      "installPath": null,
       "installCommand": null,
-      "launchCommand": "open -a \"Air\""
+      "launchCommand": null
     },
     {
       "os": "Windows",

@@ -53,6 +53,7 @@
   "docsUrl": "https://docs.anthropic.com/claude/docs/models-overview",
   "vendor": "Anthropic",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 200000,
   "maxOutput": 64000,
   "tokenPricing": {

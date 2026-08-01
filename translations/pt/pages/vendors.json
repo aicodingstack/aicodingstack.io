@@ -1,4 +1,11 @@
 {
+  "companyStages": {
+    "publicCompany": "Empresas de capital aberto",
+    "startup": "Empresas emergentes",
+    "superUnicorn": "Superunicórnios",
+    "unicorn": "Unicórnios"
+  },
+  "noResults": "Nenhum fornecedor corresponde à sua busca",
   "subtitle": "Principais empresas e organizações construindo tecnologias de IA",
   "title": "Fornecedores de tecnologia para programação com IA"
 }

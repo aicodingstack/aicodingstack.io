@@ -43,6 +43,7 @@
   "docsUrl": "https://platform.minimax.io/docs/guides/text-generation",
   "vendor": "MiniMax",
   "size": "230B",
+  "activeParameters": null,
   "contextWindow": 204800,
   "maxOutput": null,
   "tokenPricing": {

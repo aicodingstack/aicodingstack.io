@@ -43,6 +43,7 @@
   "docsUrl": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "vendor": "Alibaba",
   "size": "30.5B",
+  "activeParameters": "3.3B",
   "contextWindow": 262144,
   "maxOutput": 65536,
   "tokenPricing": {
@@ -129,6 +130,7 @@
         "description",
         "docsUrl",
         "size",
+        "activeParameters",
         "contextWindow",
         "maxOutput",
         "releaseDate",

@@ -67,6 +67,7 @@
   "docsUrl": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
   "vendor": "OpenAI",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 128000,
   "maxOutput": 16384,
   "tokenPricing": {

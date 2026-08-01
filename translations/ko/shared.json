@@ -84,6 +84,9 @@
     "latest": "최신",
     "maintained": "유지 관리 중"
   },
+  "modelParameters": {
+    "totalAndActive": "{total} 전체 / {active} 활성"
+  },
   "modelPricing": {
     "cacheRead": "캐시 읽기",
     "cacheWrite": "캐시 쓰기",

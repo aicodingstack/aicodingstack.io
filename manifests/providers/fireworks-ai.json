@@ -1,0 +1,91 @@
+{
+  "$schema": "../$schemas/provider.schema.json",
+  "id": "fireworks-ai",
+  "name": "Fireworks AI",
+  "description": "An AI inference and training platform for running open and custom models through serverless and dedicated deployments with OpenAI- and Anthropic-compatible APIs.",
+  "translations": {
+    "zh-Hans": {
+      "description": "AI 推理与训练平台，通过无服务器和专用部署运行开放及自定义模型，并提供兼容 OpenAI 和 Anthropic 的 API。"
+    },
+    "de": {
+      "description": "Eine KI-Inferenz- und Trainingsplattform für offene und eigene Modelle über serverlose und dedizierte Bereitstellungen mit OpenAI- und Anthropic-kompatiblen APIs."
+    },
+    "ko": {
+      "description": "서버리스 및 전용 배포에서 오픈 모델과 사용자 지정 모델을 실행하며 OpenAI 및 Anthropic 호환 API를 제공하는 AI 추론·학습 플랫폼입니다."
+    },
+    "es": {
+      "description": "Plataforma de inferencia y entrenamiento de IA para ejecutar modelos abiertos y personalizados mediante despliegues sin servidor y dedicados, con API compatibles con OpenAI y Anthropic."
+    },
+    "fr": {
+      "description": "Plateforme d’inférence et d’entraînement IA pour exécuter des modèles ouverts ou personnalisés sur des déploiements serverless ou dédiés, avec des API compatibles OpenAI et Anthropic."
+    },
+    "id": {
+      "description": "Platform inferensi dan pelatihan AI untuk menjalankan model terbuka dan kustom melalui deployment serverless dan khusus, dengan API yang kompatibel dengan OpenAI dan Anthropic."
+    },
+    "ja": {
+      "description": "オープンモデルやカスタムモデルをサーバーレスまたは専用環境で実行し、OpenAI・Anthropic互換APIを提供するAI推論・学習プラットフォーム。"
+    },
+    "pt": {
+      "description": "Plataforma de inferência e treinamento de IA para executar modelos abertos e personalizados em implantações serverless e dedicadas, com APIs compatíveis com OpenAI e Anthropic."
+    },
+    "ru": {
+      "description": "Платформа инференса и обучения ИИ для запуска открытых и пользовательских моделей в бессерверных и выделенных средах с API, совместимыми с OpenAI и Anthropic."
+    },
+    "tr": {
+      "description": "Açık ve özel modelleri sunucusuz veya ayrılmış dağıtımlarda çalıştıran, OpenAI ve Anthropic uyumlu API’ler sunan yapay zekâ çıkarım ve eğitim platformu."
+    },
+    "zh-Hant": {
+      "description": "AI 推論與訓練平台，透過無伺服器和專用部署執行開放及自訂模型，並提供相容 OpenAI 和 Anthropic 的 API。"
+    }
+  },
+  "verified": true,
+  "websiteUrl": "https://fireworks.ai",
+  "docsUrl": "https://docs.fireworks.ai/getting-started/quickstart",
+  "vendor": "fireworks-ai",
+  "type": "model-service-provider",
+  "applyKeyUrl": "https://app.fireworks.ai/settings/users/api-keys",
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/fireworks-ai",
+    "artificialAnalysis": "https://artificialanalysis.ai/providers/fireworks",
+    "openrouter": "https://openrouter.ai/provider/fireworks"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "sources": [
+    {
+      "url": "https://fireworks.ai/inference",
+      "title": "Fireworks inference platform",
+      "fields": ["name", "description", "websiteUrl", "type"]
+    },
+    {
+      "url": "https://docs.fireworks.ai/getting-started/quickstart",
+      "title": "Fireworks serverless quickstart",
+      "fields": ["docsUrl", "applyKeyUrl", "description"]
+    },
+    {
+      "url": "https://huggingface.co/fireworks-ai",
+      "title": "Verified Fireworks AI Hugging Face organization",
+      "fields": ["platformUrls.huggingface"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/providers/fireworks",
+      "title": "Fireworks on Artificial Analysis",
+      "fields": ["platformUrls.artificialAnalysis"]
+    },
+    {
+      "url": "https://openrouter.ai/provider/fireworks",
+      "title": "Fireworks on OpenRouter",
+      "fields": ["platformUrls.openrouter"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
+}

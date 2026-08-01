@@ -43,6 +43,7 @@
   "docsUrl": "https://platform.openai.com/docs/models/gpt-4.1",
   "vendor": "OpenAI",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 1047576,
   "maxOutput": 32768,
   "tokenPricing": {

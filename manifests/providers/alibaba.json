@@ -38,12 +38,12 @@
       "description": "阿里巴巴的雲端運算平台，提供先進的 AI 服務和語言模型，包括用於企業和開發應用的通義千問（Qwen）。"
     }
   },
-  "verified": false,
-  "websiteUrl": "https://aliyun.com",
-  "docsUrl": "https://help.aliyun.com/zh/dashscope",
+  "verified": true,
+  "websiteUrl": "https://www.alibabacloud.com/en/product/modelstudio",
+  "docsUrl": "https://www.alibabacloud.com/help/en/model-studio/",
   "vendor": "alibaba",
   "type": "foundation-model-provider",
-  "applyKeyUrl": "https://dashscope.console.aliyun.com/apiKey",
+  "applyKeyUrl": "https://bailian.console.alibabacloud.com/?tab=model#/api-key",
   "platformUrls": {
     "huggingface": "https://huggingface.co/Qwen",
     "artificialAnalysis": null,
@@ -59,6 +59,21 @@
     "blog": "https://developer.aliyun.com/group"
   },
   "sources": [
+    {
+      "url": "https://www.alibabacloud.com/en/product/modelstudio",
+      "title": "Alibaba Cloud Model Studio",
+      "fields": ["name", "description", "websiteUrl", "type"]
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/",
+      "title": "Alibaba Cloud Model Studio documentation",
+      "fields": ["docsUrl", "type"]
+    },
+    {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/get-api-key",
+      "title": "Obtain an Alibaba Cloud Model Studio API key",
+      "fields": ["applyKeyUrl"]
+    },
     {
       "url": "https://www.linkedin.com/company/alibaba-cloud",
       "title": "Alibaba Cloud linkedin community",
@@ -84,5 +99,8 @@
       "title": "Alibaba Cloud blog community",
       "fields": ["communityUrls.blog"]
     }
-  ]
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

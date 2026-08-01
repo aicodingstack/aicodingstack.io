@@ -70,6 +70,7 @@
   "docsUrl": "https://www.anthropic.com/news/3-5-models-and-computer-use",
   "vendor": "Anthropic",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 200000,
   "maxOutput": 8192,
   "tokenPricing": {

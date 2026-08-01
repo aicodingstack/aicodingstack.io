@@ -43,6 +43,7 @@
   "docsUrl": "https://docs.z.ai/guides/vlm/glm-4.6v",
   "vendor": "Z.ai",
   "size": "106B",
+  "activeParameters": null,
   "contextWindow": 128000,
   "maxOutput": 32768,
   "tokenPricing": {

@@ -2,49 +2,52 @@
   "$schema": "../$schemas/ide.schema.json",
   "id": "vscode",
   "name": "Visual Studio Code",
-  "description": "A free, open-source code editor with extensive language support and an ecosystem of extensions (including AI agents like GitHub Copilot) for editing, debugging, and version control.",
+  "description": "A free code editor built on open source, with broad language support, editing, debugging, version control, extensions, and AI agents such as GitHub Copilot.",
   "translations": {
     "zh-Hans": {
-      "description": "免费开源的代码编辑器，具有广泛的语言支持和扩展生态系统（包括 GitHub Copilot 等 AI Agent），用于编辑、调试和版本控制。"
+      "description": "一款基于开源技术构建的免费代码编辑器，提供广泛的语言支持、编辑、调试、版本控制、扩展，以及 GitHub Copilot 等 AI Agent。"
     },
     "de": {
-      "description": "Kostenloser Open-Source-Editor mit umfangreicher Sprachunterstützung und Erweiterungen (inkl. AI-Agenten wie GitHub Copilot) für Bearbeitung, Debugging und Versionskontrolle."
+      "description": "Ein kostenloser, auf Open Source basierender Code-Editor mit Sprachunterstützung, Bearbeitung, Debugging, Versionskontrolle, Erweiterungen und AI-Agenten wie GitHub Copilot."
     },
     "ko": {
-      "description": "편집, 디버깅 및 버전 제어를 위한 광범위한 언어 지원과 확장 생태계(GitHub Copilot 등 AI 에이전트 포함)을 갖춘 무료 오픈 소스 코드 편집기입니다."
+      "description": "오픈 소스를 기반으로 하며 다양한 언어, 편집, 디버깅, 버전 관리, 확장 기능과 GitHub Copilot 같은 AI 에이전트를 지원하는 무료 코드 편집기입니다."
     },
     "es": {
-      "description": "Microsoft's editor extendido con soporte nativo de ChatGPT, Claude y otras herramientas de IA. Soporta extensiones y personalización."
+      "description": "Editor de código gratuito basado en código abierto, con amplia compatibilidad de lenguajes, edición, depuración, control de versiones, extensiones y agentes de IA como GitHub Copilot."
     },
     "fr": {
-      "description": "L'éditeur de Microsoft étendu avec support natif ChatGPT, Claude et autres outils IA. Supporte extensions et personnalisation."
+      "description": "Éditeur de code gratuit basé sur l’open source, avec prise en charge des langages, édition, débogage, gestion de versions, extensions et agents IA comme GitHub Copilot."
     },
     "id": {
-      "description": "Editor kode gratis dan open source dengan dukungan bahasa yang luas dan ekosistem ekstensi (termasuk agen AI seperti GitHub Copilot) untuk pengeditan, debugging, dan kontrol versi."
+      "description": "Editor kode gratis berbasis sumber terbuka dengan dukungan bahasa, pengeditan, debugging, kontrol versi, ekstensi, dan agen AI seperti GitHub Copilot."
     },
     "ja": {
-      "description": "広範な言語サポートと拡張機能のエコシステム（GitHub CopilotなどのAIエージェントを含む）を備えた、編集、デバッグ、バージョン管理のための無料のオープンソースコードエディタ。"
+      "description": "オープンソースを基盤とし、幅広い言語、編集、デバッグ、バージョン管理、拡張機能、GitHub Copilot などの AI エージェントに対応する無料のコードエディターです。"
     },
     "pt": {
-      "description": "Um editor de código gratuito e de código aberto com amplo suporte de idiomas e um ecossistema de extensões (incluindo agentes de IA como GitHub Copilot) para edição, depuração e controle de versão."
+      "description": "Editor de código gratuito baseado em código aberto, com suporte a linguagens, edição, depuração, controle de versão, extensões e agentes de IA como o GitHub Copilot."
     },
     "ru": {
-      "description": "Бесплатный редактор кода с открытым исходным кодом с обширной поддержкой языков и экосистемой расширений (включая агенты ИИ, такие как GitHub Copilot) для редактирования, отладки и контроля версий."
+      "description": "Бесплатный редактор кода на основе открытого исходного кода с поддержкой языков, редактирования, отладки, контроля версий, расширений и ИИ-агентов, таких как GitHub Copilot."
     },
     "tr": {
-      "description": "Düzenleme, hata ayıklama ve sürüm kontrolü için kapsamlı dil desteği ve uzantı ekosistemi (GitHub Copilot gibi AI ajanları dahil) olan ücretsiz açık kaynaklı kod düzenleyici."
+      "description": "Açık kaynak temelli; dil desteği, düzenleme, hata ayıklama, sürüm kontrolü, uzantılar ve GitHub Copilot gibi AI aracıları sunan ücretsiz kod düzenleyici."
     },
     "zh-Hant": {
-      "description": "免費且開放原始碼的程式碼編輯器，具備廣泛的語言支援與擴充功能生態系（包含 GitHub Copilot 等 AI Agent），可用於編輯、除錯與版本控制。"
+      "description": "一款以開放原始碼為基礎的免費程式碼編輯器，提供廣泛的語言支援、編輯、除錯、版本控制、擴充功能，以及 GitHub Copilot 等 AI Agent。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://code.visualstudio.com",
   "docsUrl": "https://code.visualstudio.com/docs",
   "vendor": "Microsoft",
-  "latestVersion": "1.106",
+  "latestVersion": "1.131",
   "githubUrl": "https://github.com/microsoft/vscode",
-  "license": "MIT",
+  "license": "Proprietary",
   "pricing": [
     {
       "name": "Free",
@@ -58,7 +61,7 @@
     "download": "https://code.visualstudio.com/download",
     "changelog": "https://code.visualstudio.com/updates",
     "pricing": null,
-    "mcp": "https://github.com/mcp",
+    "mcp": "https://code.visualstudio.com/docs/agent-customization/mcp-servers",
     "issue": "https://github.com/microsoft/vscode/issues"
   },
   "communityUrls": {
@@ -74,33 +77,68 @@
   "platforms": [
     {
       "os": "macOS",
-      "installCommand": "https://code.visualstudio.com/download",
+      "installCommand": null,
       "launchCommand": "code",
       "installPath": null
     },
     {
       "os": "Windows",
-      "installCommand": "https://code.visualstudio.com/download",
+      "installCommand": null,
       "launchCommand": "code",
       "installPath": null
     },
     {
       "os": "Linux",
-      "installCommand": "https://code.visualstudio.com/download",
+      "installCommand": null,
       "launchCommand": "code",
       "installPath": null
     }
   ],
   "sources": [
     {
-      "url": "https://x.com/code",
-      "title": "Visual Studio Code twitter community",
-      "fields": ["communityUrls.twitter"]
+      "url": "https://code.visualstudio.com/",
+      "title": "Visual Studio Code product page",
+      "fields": ["name", "description", "websiteUrl", "pricing"]
+    },
+    {
+      "url": "https://code.visualstudio.com/download",
+      "title": "Visual Studio Code downloads",
+      "fields": ["platforms", "resourceUrls.download"]
+    },
+    {
+      "url": "https://code.visualstudio.com/updates/v1_131",
+      "title": "Visual Studio Code 1.131 release notes",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/configure/command-line",
+      "title": "Visual Studio Code command-line interface",
+      "fields": ["platforms"]
+    },
+    {
+      "url": "https://code.visualstudio.com/license",
+      "title": "Visual Studio Code product license",
+      "fields": ["license"]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/supporting/faq",
+      "title": "Visual Studio Code licensing FAQ",
+      "fields": ["description", "githubUrl", "license"]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/agent-customization/mcp-servers",
+      "title": "Visual Studio Code MCP servers documentation",
+      "fields": ["resourceUrls.mcp"]
     },
     {
       "url": "https://github.com/microsoft/vscode",
-      "title": "Visual Studio Code github community",
-      "fields": ["communityUrls.github", "pricing"]
+      "title": "Visual Studio Code source repository",
+      "fields": ["githubUrl", "resourceUrls.issue", "communityUrls.github"]
+    },
+    {
+      "url": "https://x.com/code",
+      "title": "Visual Studio Code twitter community",
+      "fields": ["communityUrls.twitter"]
     },
     {
       "url": "https://www.reddit.com/r/vscode",

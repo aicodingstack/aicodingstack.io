@@ -94,16 +94,13 @@ export default function ModelProvidersPageClient({ locale }: Props) {
                 <Link
                   key={provider.name}
                   href={`/model-providers/${provider.id}`}
-                  className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5 group"
+                  className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5"
                 >
-                  <div className="flex justify-between items-start mb-[var(--spacing-sm)]">
+                  <div className="flex items-start mb-[var(--spacing-sm)]">
                     <div className="flex items-center gap-[var(--spacing-xs)]">
                       <h3 className="text-lg font-semibold tracking-tight">{provider.name}</h3>
                       {provider.verified && <VerifiedBadge size="sm" />}
                     </div>
-                    <span className="text-lg text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all">
-                      →
-                    </span>
                   </div>
                   <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] font-light min-h-[4rem]">
                     {provider.description}
@@ -122,16 +119,13 @@ export default function ModelProvidersPageClient({ locale }: Props) {
                 <Link
                   key={provider.name}
                   href={`/model-providers/${provider.id}`}
-                  className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5 group"
+                  className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5"
                 >
-                  <div className="flex justify-between items-start mb-[var(--spacing-sm)]">
+                  <div className="flex items-start mb-[var(--spacing-sm)]">
                     <div className="flex items-center gap-[var(--spacing-xs)]">
                       <h3 className="text-lg font-semibold tracking-tight">{provider.name}</h3>
                       {provider.verified && <VerifiedBadge size="sm" />}
                     </div>
-                    <span className="text-lg text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all">
-                      →
-                    </span>
                   </div>
                   <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] font-light min-h-[4rem]">
                     {provider.description}

@@ -35,19 +35,40 @@
       "description": "ZCode 是 Z.ai 的獨立桌面程式設計環境，支援代理式開發、專案規劃、程式碼變更、終端機執行和可重複利用的 ADE 工具。"
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://zcode.z.ai/en/docs/welcome",
       "title": "ZCode documentation",
-      "fields": ["pricing"]
+      "fields": ["description", "docsUrl"]
+    },
+    {
+      "url": "https://zcode.z.ai/en/docs/install",
+      "title": "ZCode installation guide",
+      "fields": ["platforms", "resourceUrls.download"]
     },
     {
       "url": "https://zcode.z.ai/en/changelog",
-      "title": "ZCode changelog"
+      "title": "ZCode changelog",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
+    },
+    {
+      "url": "https://zcode.z.ai/en",
+      "title": "ZCode product and GLM Coding Plan pricing",
+      "fields": ["websiteUrl", "pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://zcode.z.ai/en/terms",
+      "title": "ZCode Terms of Service",
+      "fields": ["license"]
+    },
+    {
+      "url": "https://zcode.z.ai/en/docs/mcp-services",
+      "title": "ZCode MCP servers documentation",
+      "fields": ["resourceUrls.mcp"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "zcode",
@@ -57,23 +78,44 @@
   "websiteUrl": "https://zcode.z.ai",
   "docsUrl": "https://zcode.z.ai/en/docs/welcome",
   "vendor": "Z.ai",
-  "latestVersion": "3.3.6",
+  "latestVersion": "3.5.3",
   "githubUrl": null,
   "license": "Proprietary",
   "pricing": [
     {
-      "name": "Free Download",
+      "name": "Free Trial",
       "value": 0,
       "currency": null,
       "per": null,
+      "category": "Individual"
+    },
+    {
+      "name": "GLM Coding Lite",
+      "value": 16.2,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "GLM Coding Pro",
+      "value": 64.8,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "GLM Coding Max",
+      "value": 144,
+      "currency": "USD",
+      "per": "month",
       "category": "Individual"
     }
   ],
   "resourceUrls": {
     "download": "https://zcode.z.ai/en/docs/install",
     "changelog": "https://zcode.z.ai/en/changelog",
-    "pricing": null,
-    "mcp": null,
+    "pricing": "https://zcode.z.ai/en",
+    "mcp": "https://zcode.z.ai/en/docs/mcp-services",
     "issue": null
   },
   "communityUrls": {
@@ -95,13 +137,13 @@
     },
     {
       "os": "Windows",
-      "installPath": "%LOCALAPPDATA%\\Programs\\ZCode",
+      "installPath": null,
       "installCommand": null,
       "launchCommand": null
     },
     {
       "os": "Linux",
-      "installPath": "/opt/ZCode",
+      "installPath": null,
       "installCommand": null,
       "launchCommand": null
     }

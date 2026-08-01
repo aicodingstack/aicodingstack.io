@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-31",
+  "asOf": "2026-08-01",
   "thresholds": {
     "models": 30,
     "providers": 30,
@@ -10,173 +10,123 @@
     "vendors": 90
   },
   "summary": {
-    "totalRecords": 242,
-    "recordsWithSources": 235,
-    "verifiedRecords": 215,
-    "provenanceComplete": 215,
+    "totalRecords": 248,
+    "recordsWithSources": 248,
+    "verifiedRecords": 248,
+    "provenanceComplete": 248,
     "staleVerifiedRecords": 0,
     "translationPlaceholderValues": 300,
     "danglingRelationships": 0,
     "modelBenchmarkCoverage": 9.5,
-    "productsWithPricing": 67,
-    "productRecords": 67,
-    "communityUrlsPopulated": 302,
-    "communityUrlsWithProvenance": 302,
+    "productsWithPricing": 63,
+    "productRecords": 63,
+    "communityUrlsPopulated": 328,
+    "communityUrlsWithProvenance": 328,
     "duplicatedVendorCommunityUrls": 0,
     "errors": 0,
     "warnings": 0,
-    "info": 7
+    "info": 0
   },
   "byCategory": {
     "ides": {
-      "total": 9,
-      "verified": 7,
-      "provenanceComplete": 7,
+      "total": 8,
+      "verified": 8,
+      "provenanceComplete": 8,
       "stale": 0
     },
     "clis": {
-      "total": 27,
-      "verified": 18,
-      "provenanceComplete": 18,
+      "total": 25,
+      "verified": 25,
+      "provenanceComplete": 25,
       "stale": 0
     },
     "desktops": {
-      "total": 12,
-      "verified": 7,
-      "provenanceComplete": 7,
+      "total": 11,
+      "verified": 11,
+      "provenanceComplete": 11,
       "stale": 0
     },
     "extensions": {
       "total": 19,
-      "verified": 17,
-      "provenanceComplete": 17,
+      "verified": 19,
+      "provenanceComplete": 19,
       "stale": 0
     },
     "models": {
       "total": 123,
-      "verified": 122,
-      "provenanceComplete": 122,
+      "verified": 123,
+      "provenanceComplete": 123,
       "stale": 0
     },
     "providers": {
-      "total": 12,
-      "verified": 4,
-      "provenanceComplete": 4,
+      "total": 17,
+      "verified": 17,
+      "provenanceComplete": 17,
       "stale": 0
     },
     "vendors": {
-      "total": 40,
-      "verified": 40,
-      "provenanceComplete": 40,
+      "total": 45,
+      "verified": 45,
+      "provenanceComplete": 45,
       "stale": 0
     }
   },
   "translationsByLocale": {
     "de": {
-      "totalStrings": 447,
+      "totalStrings": 453,
       "matchingEnglish": 39,
-      "matchingEnglishPercent": 8.7
+      "matchingEnglishPercent": 8.6
     },
     "es": {
-      "totalStrings": 447,
+      "totalStrings": 453,
       "matchingEnglish": 25,
-      "matchingEnglishPercent": 5.6
+      "matchingEnglishPercent": 5.5
     },
     "fr": {
-      "totalStrings": 447,
+      "totalStrings": 453,
       "matchingEnglish": 36,
-      "matchingEnglishPercent": 8.1
+      "matchingEnglishPercent": 7.9
     },
     "id": {
-      "totalStrings": 447,
+      "totalStrings": 453,
       "matchingEnglish": 30,
-      "matchingEnglishPercent": 6.7
+      "matchingEnglishPercent": 6.6
     },
     "ja": {
-      "totalStrings": 447,
+      "totalStrings": 453,
       "matchingEnglish": 23,
       "matchingEnglishPercent": 5.1
     },
     "ko": {
-      "totalStrings": 447,
+      "totalStrings": 453,
       "matchingEnglish": 23,
       "matchingEnglishPercent": 5.1
     },
     "pt": {
-      "totalStrings": 447,
+      "totalStrings": 453,
       "matchingEnglish": 31,
-      "matchingEnglishPercent": 6.9
+      "matchingEnglishPercent": 6.8
     },
     "ru": {
-      "totalStrings": 447,
+      "totalStrings": 453,
       "matchingEnglish": 23,
       "matchingEnglishPercent": 5.1
     },
     "tr": {
-      "totalStrings": 447,
+      "totalStrings": 453,
       "matchingEnglish": 26,
-      "matchingEnglishPercent": 5.8
+      "matchingEnglishPercent": 5.7
     },
     "zh-Hans": {
-      "totalStrings": 447,
+      "totalStrings": 453,
       "matchingEnglish": 22,
       "matchingEnglishPercent": 4.9
     },
     "zh-Hant": {
-      "totalStrings": 447,
+      "totalStrings": 453,
       "matchingEnglish": 22,
       "matchingEnglishPercent": 4.9
     }
   },
-  "issues": [
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "models",
-      "id": "composer",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "providers",
-      "id": "deepseek",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "providers",
-      "id": "minimax",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "providers",
-      "id": "moonshot",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "providers",
-      "id": "openrouter",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "providers",
-      "id": "xai",
-      "message": "No structured source references are recorded."
-    },
-    {
-      "severity": "info",
-      "code": "missing-sources",
-      "category": "providers",
-      "id": "z-ai",
-      "message": "No structured source references are recorded."
-    }
-  ]
+  "issues": []
 }

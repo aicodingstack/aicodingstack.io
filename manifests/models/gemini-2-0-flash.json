@@ -67,6 +67,7 @@
   "docsUrl": "https://ai.google.dev/gemini-api/docs/models/gemini-2.0-flash",
   "vendor": "Google",
   "size": null,
+  "activeParameters": null,
   "contextWindow": 1048576,
   "maxOutput": 8192,
   "tokenPricing": {

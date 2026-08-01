@@ -1,14 +1,16 @@
 import { describe, expect, it } from 'vitest'
 import {
   convertTokenRate,
+  formatModelTokenRate,
   formatPrimaryTokenRate,
+  formatReferenceTokenRate,
   getPrimaryTokenPricingOffer,
   getPrimaryTokenRate,
   getPrimaryTokenRateRange,
   hasCurrentSingleTierPricing,
   hasTieredTokenPricing,
 } from '@/lib/model-pricing'
-import type { ManifestTokenPricing } from '@/types/manifests'
+import type { ManifestReferenceTokenPricing, ManifestTokenPricing } from '@/types/manifests'
 
 const tieredPricing: ManifestTokenPricing = {
   status: 'available',
@@ -108,5 +110,33 @@ describe('model pricing', () => {
       currency: 'CNY',
       converted: false,
     })
+  })
+
+  it('falls back to externally tracked reference pricing without replacing official pricing', () => {
+    const unavailable: ManifestTokenPricing = {
+      status: 'unavailable',
+      reason: 'official-price-not-published',
+      primaryOffer: null,
+      offers: [],
+    }
+    const reference: ManifestReferenceTokenPricing = {
+      currency: 'USD',
+      basis: 'provider-median',
+      rates: { input: 0.7, output: 2.5, cacheRead: null, cacheWrite: null },
+      source: {
+        name: 'Models.dev provider median',
+        url: 'https://models.dev/api.json',
+        observedAt: '2026-07-31',
+      },
+    }
+
+    expect(formatReferenceTokenRate(reference, 'input', 'en')).toBe('≈$0.70')
+    expect(
+      formatModelTokenRate(
+        { tokenPricing: unavailable, referenceTokenPricing: reference },
+        'output',
+        'en'
+      )
+    ).toBe('≈$2.50')
   })
 })

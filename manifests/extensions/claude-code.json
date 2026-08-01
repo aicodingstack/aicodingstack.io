@@ -115,42 +115,42 @@
       "name": "Pro",
       "value": 20,
       "currency": "USD",
-      "per": "Month",
+      "per": "month",
       "category": "Individual"
     },
     {
       "name": "Pro (Annual)",
       "value": 17,
       "currency": "USD",
-      "per": "Month",
+      "per": "month",
       "category": "Individual"
     },
     {
       "name": "Max 5x",
       "value": 100,
       "currency": "USD",
-      "per": "Month",
+      "per": "month",
       "category": "Individual"
     },
     {
       "name": "Max 20x",
       "value": 200,
       "currency": "USD",
-      "per": "Month",
+      "per": "month",
       "category": "Individual"
     },
     {
       "name": "Team",
       "value": null,
       "currency": "USD",
-      "per": "Custom",
+      "per": "custom",
       "category": "Team"
     },
     {
       "name": "Enterprise",
       "value": null,
       "currency": "USD",
-      "per": "Custom",
+      "per": "custom",
       "category": "Enterprise"
     }
   ],

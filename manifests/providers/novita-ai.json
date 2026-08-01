@@ -1,0 +1,91 @@
+{
+  "$schema": "../$schemas/provider.schema.json",
+  "id": "novita-ai",
+  "name": "Novita AI",
+  "description": "AI and agent cloud providing OpenAI-compatible model APIs, dedicated and serverless GPU infrastructure, and isolated agent sandboxes for production applications.",
+  "translations": {
+    "zh-Hans": {
+      "description": "AI 与智能体云平台，提供兼容 OpenAI 的模型 API、专用及无服务器 GPU 基础设施，以及面向生产应用的隔离智能体沙箱。"
+    },
+    "de": {
+      "description": "KI- und Agenten-Cloud mit OpenAI-kompatiblen Modell-APIs, dedizierter und serverloser GPU-Infrastruktur sowie isolierten Agenten-Sandboxes für Produktionsanwendungen."
+    },
+    "ko": {
+      "description": "OpenAI 호환 모델 API, 전용 및 서버리스 GPU 인프라, 프로덕션 애플리케이션용 격리 에이전트 샌드박스를 제공하는 AI·에이전트 클라우드입니다."
+    },
+    "es": {
+      "description": "Nube de IA y agentes con API de modelos compatibles con OpenAI, infraestructura GPU dedicada y sin servidor, y entornos aislados para agentes en producción."
+    },
+    "fr": {
+      "description": "Cloud d’IA et d’agents proposant des API de modèles compatibles OpenAI, une infrastructure GPU dédiée et serverless, et des sandboxes isolées pour les applications en production."
+    },
+    "id": {
+      "description": "Cloud AI dan agen dengan API model kompatibel OpenAI, infrastruktur GPU khusus dan serverless, serta sandbox agen terisolasi untuk aplikasi produksi."
+    },
+    "ja": {
+      "description": "OpenAI互換のモデルAPI、専用およびサーバーレスGPU基盤、本番アプリ向けの分離エージェントサンドボックスを提供するAI・エージェントクラウド。"
+    },
+    "pt": {
+      "description": "Nuvem de IA e agentes com APIs de modelos compatíveis com OpenAI, infraestrutura de GPU dedicada e serverless e sandboxes isoladas para aplicações em produção."
+    },
+    "ru": {
+      "description": "Облако ИИ и агентов с OpenAI-совместимыми API моделей, выделенной и бессерверной GPU-инфраструктурой и изолированными средами для рабочих приложений."
+    },
+    "tr": {
+      "description": "OpenAI uyumlu model API'leri, ayrılmış ve sunucusuz GPU altyapısı ile üretim uygulamaları için yalıtılmış ajan sanal alanları sunan AI ve ajan bulutu."
+    },
+    "zh-Hant": {
+      "description": "AI 與代理程式雲端平台，提供相容 OpenAI 的模型 API、專用及無伺服器 GPU 基礎設施，以及用於正式環境應用的隔離代理程式沙箱。"
+    }
+  },
+  "verified": true,
+  "websiteUrl": "https://novita.ai",
+  "docsUrl": "https://novita.ai/docs/guides/serverless",
+  "vendor": "novita-ai",
+  "type": "model-service-provider",
+  "applyKeyUrl": "https://novita.ai/settings/key-management",
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/novita",
+    "artificialAnalysis": "https://artificialanalysis.ai/providers/novita",
+    "openrouter": "https://openrouter.ai/provider/novita"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "sources": [
+    {
+      "url": "https://novita.ai/docs/guides/serverless",
+      "title": "Novita AI serverless API",
+      "fields": ["name", "description", "websiteUrl", "docsUrl", "type"]
+    },
+    {
+      "url": "https://novita.ai/docs/guides/quickstart",
+      "title": "Novita AI quickstart",
+      "fields": ["applyKeyUrl"]
+    },
+    {
+      "url": "https://huggingface.co/novita",
+      "title": "Verified Novita AI Hugging Face organization",
+      "fields": ["platformUrls.huggingface"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/providers/novita",
+      "title": "Novita on Artificial Analysis",
+      "fields": ["platformUrls.artificialAnalysis"]
+    },
+    {
+      "url": "https://openrouter.ai/provider/novita",
+      "title": "NovitaAI on OpenRouter",
+      "fields": ["platformUrls.openrouter"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
+}

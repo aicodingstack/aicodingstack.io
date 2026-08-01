@@ -36,7 +36,12 @@ export function VendorModels({ models }: { models: ManifestModel[] }) {
                 <div className="flex flex-wrap gap-[var(--spacing-xs)] text-xs">
                   {model.size && (
                     <span className="px-2 py-0.5 bg-[var(--color-background-muted)] text-[var(--color-text-secondary)] border border-[var(--color-border)]">
-                      {model.size}
+                      {model.activeParameters
+                        ? tShared('modelParameters.totalAndActive', {
+                            total: model.size,
+                            active: model.activeParameters,
+                          })
+                        : model.size}
                     </span>
                   )}
                   <span className="px-2 py-0.5 bg-[var(--color-background-muted)] text-[var(--color-text-secondary)] border border-[var(--color-border)]">

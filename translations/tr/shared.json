@@ -84,6 +84,9 @@
     "latest": "En yeni",
     "maintained": "Destekleniyor"
   },
+  "modelParameters": {
+    "totalAndActive": "{total} toplam / {active} etkin"
+  },
   "modelPricing": {
     "cacheRead": "Önbellek okuma",
     "cacheWrite": "Önbellek yazma",

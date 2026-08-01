@@ -69,7 +69,7 @@
       "name": "Enterprise",
       "value": null,
       "currency": null,
-      "per": "Custom",
+      "per": "custom",
       "category": "Enterprise"
     }
   ],

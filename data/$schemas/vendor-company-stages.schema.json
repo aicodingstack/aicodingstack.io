@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Vendor Company Stage Configuration",
+  "description": "Dated, sourced company-stage assignments and display order for the vendor catalog.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "asOf": {
+      "type": "string",
+      "format": "date"
+    },
+    "criteria": {
+      "type": "object",
+      "properties": {
+        "publicCompanyIncludesListedParent": {
+          "const": true
+        },
+        "superUnicornMinimumUsd": {
+          "const": 10000000000
+        },
+        "unicornMinimumUsd": {
+          "const": 1000000000
+        },
+        "startupIsDefault": {
+          "const": true
+        }
+      },
+      "required": [
+        "publicCompanyIncludesListedParent",
+        "superUnicornMinimumUsd",
+        "unicornMinimumUsd",
+        "startupIsDefault"
+      ],
+      "additionalProperties": false
+    },
+    "groups": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "allOf": [
+            { "$ref": "#/$defs/group" },
+            {
+              "type": "object",
+              "properties": {
+                "id": { "const": "public-company" },
+                "translationKey": { "const": "publicCompany" }
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            { "$ref": "#/$defs/group" },
+            {
+              "type": "object",
+              "properties": {
+                "id": { "const": "super-unicorn" },
+                "translationKey": { "const": "superUnicorn" }
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            { "$ref": "#/$defs/group" },
+            {
+              "type": "object",
+              "properties": {
+                "id": { "const": "unicorn" },
+                "translationKey": { "const": "unicorn" }
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            { "$ref": "#/$defs/group" },
+            {
+              "type": "object",
+              "properties": {
+                "id": { "const": "startup" },
+                "translationKey": { "const": "startup" }
+              }
+            }
+          ]
+        }
+      ],
+      "items": false,
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "assignments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/assignment"
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["$schema", "asOf", "criteria", "groups", "assignments"],
+  "additionalProperties": false,
+  "$defs": {
+    "stage": {
+      "type": "string",
+      "enum": ["public-company", "super-unicorn", "unicorn", "startup"]
+    },
+    "group": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/stage"
+        },
+        "translationKey": {
+          "type": "string",
+          "enum": ["publicCompany", "superUnicorn", "unicorn", "startup"]
+        }
+      },
+      "required": ["id", "translationKey"],
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": ["url", "title"],
+      "additionalProperties": false
+    },
+    "assignment": {
+      "type": "object",
+      "properties": {
+        "vendorId": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "stage": {
+          "$ref": "#/$defs/stage"
+        },
+        "source": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/source"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": ["vendorId", "stage", "source"],
+      "additionalProperties": false,
+      "if": {
+        "type": "object",
+        "properties": {
+          "stage": {
+            "not": { "const": "startup" }
+          }
+        },
+        "required": ["stage"]
+      },
+      "then": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "$ref": "#/$defs/source"
+          }
+        }
+      }
+    }
+  }
+}

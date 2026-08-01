@@ -48,6 +48,7 @@
         "description",
         "docsUrl",
         "size",
+        "activeParameters",
         "contextWindow",
         "inputModalities",
         "outputModalities",
@@ -66,13 +67,14 @@
       "fields": ["releaseDate", "referenceTokenPricing", "platformUrls.artificialAnalysis"]
     }
   ],
-  "lastVerifiedAt": "2026-07-28",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.tencent.com",
   "docsUrl": "https://huggingface.co/tencent/Hy3",
   "vendor": "Tencent",
-  "size": "295B + 3.8B MTP (21B active)",
+  "size": "295B",
+  "activeParameters": "21B",
   "contextWindow": 262144,
   "maxOutput": null,
   "tokenPricing": {

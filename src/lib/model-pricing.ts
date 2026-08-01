@@ -1,5 +1,7 @@
 import type {
   ManifestAvailableTokenPricing,
+  ManifestModel,
+  ManifestReferenceTokenPricing,
   ManifestTokenPricing,
   ManifestTokenPricingOffer,
   ManifestTokenPricingRate,
@@ -140,6 +142,35 @@ export function formatPrimaryTokenRate(
   const formattedMinimum = formatConvertedTokenRate(minimum, locale)
   if (range.min === range.max) return `${prefix}${formattedMinimum}`
   return `${prefix}${formattedMinimum}–${formatConvertedTokenRate(maximum, locale)}`
+}
+
+export function formatReferenceTokenRate(
+  pricing: ManifestReferenceTokenPricing,
+  rate: ManifestTokenPricingRate,
+  locale: string,
+  conversion?: CurrencyConversion | null
+): string | null {
+  const value = pricing.rates[rate]
+  if (value === null) return null
+
+  const formatted = formatTokenRate(value, pricing.currency, locale, 6, conversion)
+  return pricing.basis === 'provider-median' && !formatted.startsWith('≈')
+    ? `≈${formatted}`
+    : formatted
+}
+
+export function formatModelTokenRate(
+  model: Pick<ManifestModel, 'tokenPricing' | 'referenceTokenPricing'>,
+  rate: ManifestTokenPricingRate,
+  locale: string,
+  conversion?: CurrencyConversion | null
+): string | null {
+  return (
+    formatPrimaryTokenRate(model.tokenPricing, rate, locale, conversion) ??
+    (model.referenceTokenPricing
+      ? formatReferenceTokenRate(model.referenceTokenPricing, rate, locale, conversion)
+      : null)
+  )
 }
 
 export function hasCurrentSingleTierPricing(pricing: ManifestTokenPricing): boolean {
