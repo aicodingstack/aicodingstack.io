@@ -38,9 +38,9 @@
       "description": "AI 平台，為各種應用提供先進的語言模型和 AI 服務，包括程式設計和內容產生。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://z.ai",
-  "docsUrl": "https://docs.z.ai",
+  "docsUrl": "https://docs.z.ai/api-reference/introduction",
   "vendor": "z-ai",
   "type": "foundation-model-provider",
   "applyKeyUrl": "https://z.ai/manage-apikey/apikey-list",
@@ -57,5 +57,30 @@
     "discord": null,
     "reddit": null,
     "blog": null
-  }
+  },
+  "sources": [
+    {
+      "url": "https://z.ai",
+      "title": "Z.ai",
+      "fields": ["name", "description", "websiteUrl", "vendor"]
+    },
+    {
+      "url": "https://docs.z.ai/api-reference/introduction",
+      "title": "Z.ai API introduction",
+      "fields": ["docsUrl", "type", "applyKeyUrl"]
+    },
+    {
+      "url": "https://huggingface.co/zai-org",
+      "title": "Z.ai official Hugging Face organization",
+      "fields": ["platformUrls.huggingface"]
+    },
+    {
+      "url": "https://openrouter.ai/provider/z-ai",
+      "title": "Z.ai on OpenRouter",
+      "fields": ["platformUrls.openrouter"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

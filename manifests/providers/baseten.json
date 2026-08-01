@@ -1,0 +1,91 @@
+{
+  "$schema": "../$schemas/provider.schema.json",
+  "id": "baseten",
+  "name": "Baseten",
+  "description": "An AI inference platform offering managed Model APIs for popular open models and dedicated deployments for custom and fine-tuned models.",
+  "translations": {
+    "zh-Hans": {
+      "description": "AI 推理平台，为热门开放模型提供托管 Model API，并为自定义和微调模型提供专用部署。"
+    },
+    "de": {
+      "description": "Eine KI-Inferenzplattform mit verwalteten Modell-APIs für beliebte offene Modelle und dedizierten Bereitstellungen für eigene und feinabgestimmte Modelle."
+    },
+    "ko": {
+      "description": "인기 오픈 모델을 위한 관리형 Model API와 사용자 지정 및 파인튜닝 모델을 위한 전용 배포를 제공하는 AI 추론 플랫폼입니다."
+    },
+    "es": {
+      "description": "Plataforma de inferencia de IA con API de modelos administradas para modelos abiertos populares y despliegues dedicados para modelos personalizados y ajustados."
+    },
+    "fr": {
+      "description": "Plateforme d’inférence IA proposant des API de modèles gérées pour les modèles ouverts populaires et des déploiements dédiés pour les modèles personnalisés et ajustés."
+    },
+    "id": {
+      "description": "Platform inferensi AI dengan Model API terkelola untuk model terbuka populer dan deployment khusus untuk model kustom serta model yang disempurnakan."
+    },
+    "ja": {
+      "description": "人気のオープンモデル向けマネージドModel APIと、カスタムモデルやファインチューニング済みモデル向けの専用デプロイを提供するAI推論基盤。"
+    },
+    "pt": {
+      "description": "Plataforma de inferência de IA com APIs de modelos gerenciadas para modelos abertos populares e implantações dedicadas para modelos personalizados e ajustados."
+    },
+    "ru": {
+      "description": "Платформа инференса ИИ с управляемыми API для популярных открытых моделей и выделенными развёртываниями для пользовательских и дообученных моделей."
+    },
+    "tr": {
+      "description": "Popüler açık modeller için yönetilen Model API’leri, özel ve ince ayarlı modeller için ayrılmış dağıtımlar sunan yapay zekâ çıkarım platformu."
+    },
+    "zh-Hant": {
+      "description": "AI 推論平台，為熱門開放模型提供託管 Model API，並為自訂和微調模型提供專用部署。"
+    }
+  },
+  "verified": true,
+  "websiteUrl": "https://www.baseten.co",
+  "docsUrl": "https://docs.baseten.co/reference/inference-api/overview",
+  "vendor": "baseten",
+  "type": "model-service-provider",
+  "applyKeyUrl": "https://app.baseten.co/settings/api_keys",
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/baseten",
+    "artificialAnalysis": "https://artificialanalysis.ai/providers/baseten",
+    "openrouter": "https://openrouter.ai/provider/baseten"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "sources": [
+    {
+      "url": "https://docs.baseten.co/reference/inference-api/overview",
+      "title": "Baseten inference API overview",
+      "fields": ["name", "description", "websiteUrl", "docsUrl", "type"]
+    },
+    {
+      "url": "https://docs.baseten.co/organization/api-keys",
+      "title": "Baseten API keys",
+      "fields": ["applyKeyUrl"]
+    },
+    {
+      "url": "https://huggingface.co/baseten",
+      "title": "Verified Baseten Hugging Face organization",
+      "fields": ["platformUrls.huggingface"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/providers/baseten",
+      "title": "Baseten on Artificial Analysis",
+      "fields": ["platformUrls.artificialAnalysis"]
+    },
+    {
+      "url": "https://openrouter.ai/provider/baseten",
+      "title": "Baseten on OpenRouter",
+      "fields": ["platformUrls.openrouter"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
+}

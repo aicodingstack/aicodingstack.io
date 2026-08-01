@@ -43,7 +43,7 @@
   "docsUrl": "https://docs.siliconflow.com",
   "vendor": "siliconflow",
   "type": "model-service-provider",
-  "applyKeyUrl": "https://cloud.siliconflow.com/me/account/ak",
+  "applyKeyUrl": "https://cloud.siliconflow.com/account/ak",
   "platformUrls": {
     "huggingface": "https://huggingface.co/siliconflow",
     "artificialAnalysis": "https://artificialanalysis.ai/providers/siliconflow",
@@ -90,7 +90,7 @@
       "fields": ["platformUrls.openrouter"]
     }
   ],
-  "lastVerifiedAt": "2026-07-28",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high"
 }

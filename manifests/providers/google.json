@@ -1,49 +1,54 @@
 {
   "$schema": "../$schemas/provider.schema.json",
   "id": "google",
-  "name": "Google AI",
-  "description": "Google's AI division offering advanced language models and AI services including Gemini for coding, reasoning, and content generation across applications.",
+  "name": "Google",
+  "description": "Google develops Gemini models and provides developer access through the Gemini API and Google AI Studio.",
   "translations": {
     "zh-Hans": {
-      "description": "Google 的 AI 部门，提供先进的语言模型和 AI 服务，包括 Gemini，用于各类应用中的编码、推理和内容生成。"
+      "description": "Google 开发 Gemini 模型，并通过 Gemini API 和 Google AI Studio 为开发者提供访问。"
     },
     "de": {
-      "description": "Googles AI-Abteilung, die fortschrittliche Sprachmodelle und AI-Dienste anbietet, einschließlich Gemini für Codierung, Reasoning und Inhaltserstellung in verschiedenen Anwendungen."
+      "description": "Google entwickelt Gemini-Modelle und bietet Entwicklern über die Gemini API und Google AI Studio Zugriff."
     },
     "ko": {
-      "description": "코딩, 추론 및 콘텐츠 생성을 위한 Gemini를 포함하여 다양한 애플리케이션에서 고급 언어 모델과 AI 서비스를 제공하는 Google의 AI 부서입니다."
+      "description": "Google은 Gemini 모델을 개발하고 Gemini API와 Google AI Studio를 통해 개발자 액세스를 제공합니다."
     },
     "es": {
-      "description": "La división de IA de Google, ofreciendo modelos de lenguaje avanzados y servicios de IA, incluyendo Gemini para codificación, razonamiento y generación de contenido en varias aplicaciones."
+      "description": "Google desarrolla modelos Gemini y ofrece acceso para desarrolladores mediante la API de Gemini y Google AI Studio."
     },
     "fr": {
-      "description": "La division IA de Google, offrant des modèles de langage avancés et des services d'IA, y compris Gemini pour le codage, le raisonnement et la création de contenu dans diverses applications."
+      "description": "Google développe les modèles Gemini et fournit un accès aux développeurs via l’API Gemini et Google AI Studio."
     },
     "id": {
-      "description": "Divisi AI Google yang menawarkan model bahasa canggih dan layanan AI, termasuk Gemini untuk coding, reasoning, dan pembuatan konten di berbagai aplikasi."
+      "description": "Google mengembangkan model Gemini dan menyediakan akses bagi pengembang melalui Gemini API dan Google AI Studio."
     },
     "ja": {
-      "description": "コーディング、推論、コンテンツ生成用のGeminiを含め、各式アプリケーションで高度な言語モデルとAIサービスを提供するGoogleのAI部門。"
+      "description": "Google は Gemini モデルを開発し、Gemini API と Google AI Studio を通じて開発者向けアクセスを提供しています。"
     },
     "pt": {
-      "description": "A divisão de IA do Google oferece modelos de linguagem e serviços avançados, incluindo o Gemini, para vários aplicativos de programação, raciocínio e geração de conteúdo."
+      "description": "O Google desenvolve modelos Gemini e oferece acesso para desenvolvedores pela API Gemini e pelo Google AI Studio."
     },
     "ru": {
-      "description": "Департамент ИИ Google, предлагающий передовые языковые модели и ИИ-сервисы, включая Gemini для программирования, рассуждений и создания контента в различных приложениях."
+      "description": "Google разрабатывает модели Gemini и предоставляет разработчикам доступ через Gemini API и Google AI Studio."
     },
     "tr": {
-      "description": "Çeşitli uygulamalarda kodlama, akıl yürütme ve içerik oluşturma için Gemini dahil olmak üzere gelişmiş dil modelleri ve AI hizmetleri sunan Google'ın AI bölümü."
+      "description": "Google, Gemini modellerini geliştirir ve Gemini API ile Google AI Studio üzerinden geliştirici erişimi sağlar."
     },
     "zh-Hant": {
-      "description": "Google 的 AI 部門，提供先進的語言模型和 AI 服務，包括 Gemini，用於各類應用中的程式設計、推理和內容產生。"
+      "description": "Google 開發 Gemini 模型，並透過 Gemini API 和 Google AI Studio 為開發者提供存取。"
     }
   },
   "verified": true,
   "sources": [
     {
+      "url": "https://about.google/company-info/",
+      "title": "About Google",
+      "fields": ["name", "vendor"]
+    },
+    {
       "url": "https://ai.google",
       "title": "Google AI",
-      "fields": ["name", "description", "websiteUrl", "vendor"]
+      "fields": ["description", "websiteUrl"]
     },
     {
       "url": "https://ai.google.dev/gemini-api/docs",
@@ -71,7 +76,7 @@
       "fields": ["communityUrls.blog"]
     }
   ],
-  "lastVerifiedAt": "2026-07-18",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://ai.google.dev",

@@ -1,0 +1,91 @@
+{
+  "$schema": "../$schemas/provider.schema.json",
+  "id": "together-ai",
+  "name": "Together AI",
+  "description": "An AI cloud platform for running open models through serverless APIs and dedicated endpoints, with fine-tuning, batch inference, and GPU infrastructure.",
+  "translations": {
+    "zh-Hans": {
+      "description": "通过无服务器 API 和专用端点运行开放模型的 AI 云平台，并提供微调、批量推理和 GPU 基础设施。"
+    },
+    "de": {
+      "description": "Eine KI-Cloud zum Ausführen offener Modelle über serverlose APIs und dedizierte Endpunkte sowie für Feinabstimmung, Batch-Inferenz und GPU-Infrastruktur."
+    },
+    "ko": {
+      "description": "서버리스 API와 전용 엔드포인트로 오픈 모델을 실행하고 파인튜닝, 배치 추론, GPU 인프라를 제공하는 AI 클라우드 플랫폼입니다."
+    },
+    "es": {
+      "description": "Plataforma de nube de IA para ejecutar modelos abiertos mediante API sin servidor y endpoints dedicados, con ajuste fino, inferencia por lotes e infraestructura de GPU."
+    },
+    "fr": {
+      "description": "Plateforme cloud d’IA pour exécuter des modèles ouverts via des API serverless et des endpoints dédiés, avec ajustement fin, inférence par lots et infrastructure GPU."
+    },
+    "id": {
+      "description": "Platform cloud AI untuk menjalankan model terbuka melalui API serverless dan endpoint khusus, dengan penyempurnaan model, inferensi batch, dan infrastruktur GPU."
+    },
+    "ja": {
+      "description": "サーバーレスAPIや専用エンドポイントでオープンモデルを実行し、ファインチューニング、バッチ推論、GPU基盤を提供するAIクラウドプラットフォーム。"
+    },
+    "pt": {
+      "description": "Plataforma de nuvem de IA para executar modelos abertos por APIs serverless e endpoints dedicados, com ajuste fino, inferência em lote e infraestrutura de GPU."
+    },
+    "ru": {
+      "description": "Облачная платформа ИИ для запуска открытых моделей через бессерверные API и выделенные конечные точки, с дообучением, пакетной обработкой и GPU-инфраструктурой."
+    },
+    "tr": {
+      "description": "Açık modelleri sunucusuz API’ler ve özel uç noktalarla çalıştıran; ince ayar, toplu çıkarım ve GPU altyapısı sunan yapay zekâ bulut platformu."
+    },
+    "zh-Hant": {
+      "description": "透過無伺服器 API 和專用端點執行開放模型的 AI 雲端平台，並提供微調、批次推論及 GPU 基礎設施。"
+    }
+  },
+  "verified": true,
+  "websiteUrl": "https://www.together.ai",
+  "docsUrl": "https://docs.together.ai/docs/quickstart",
+  "vendor": "together-ai",
+  "type": "model-service-provider",
+  "applyKeyUrl": "https://api.together.ai/settings/projects/~current/api-keys",
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/togethercomputer",
+    "artificialAnalysis": "https://artificialanalysis.ai/providers/togetherai",
+    "openrouter": "https://openrouter.ai/provider/together"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "sources": [
+    {
+      "url": "https://docs.together.ai/docs/inference/overview",
+      "title": "Together AI inference overview",
+      "fields": ["name", "description", "websiteUrl", "type"]
+    },
+    {
+      "url": "https://docs.together.ai/docs/quickstart",
+      "title": "Together AI quickstart",
+      "fields": ["docsUrl", "applyKeyUrl", "description"]
+    },
+    {
+      "url": "https://huggingface.co/togethercomputer",
+      "title": "Verified Together AI Hugging Face organization",
+      "fields": ["platformUrls.huggingface"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/providers/togetherai",
+      "title": "Together AI on Artificial Analysis",
+      "fields": ["platformUrls.artificialAnalysis"]
+    },
+    {
+      "url": "https://openrouter.ai/provider/together",
+      "title": "Together on OpenRouter",
+      "fields": ["platformUrls.openrouter"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
+}

@@ -2,40 +2,40 @@
   "$schema": "../$schemas/vendor.schema.json",
   "id": "anysphere",
   "name": "Anysphere",
-  "description": "Anysphere is an applied research lab working on the future of programming. We are a group of researchers, engineers, and technologists inventing at the edge of what's useful and possible.",
+  "description": "Anysphere develops Cursor, an AI coding editor. In June 2026, SpaceX signed an agreement to acquire Anysphere; the transaction remains subject to closing conditions.",
   "translations": {
     "zh-Hans": {
-      "description": "专注于编程未来的应用研究实验室,由研究人员、工程师和技术专家组成,致力于在实用性和可能性的边缘进行创新。"
+      "description": "Anysphere 开发 AI 编码编辑器 Cursor。2026 年 6 月，SpaceX 签署了收购 Anysphere 的协议；该交易仍须满足交割条件。"
     },
     "de": {
-      "description": "Anwendungs-Forschungslabor, das an der Zukunft des Programmierens arbeitet. Eine Gruppe von Forschern, Ingenieuren und Technologen, die an der Grenze des Nützlichen und Möglichen erfinden."
+      "description": "Anysphere entwickelt Cursor, einen AI-Code-Editor. Im Juni 2026 schloss SpaceX eine Vereinbarung zur Übernahme von Anysphere; der Abschluss steht noch unter Bedingungen."
     },
     "ko": {
-      "description": "프로그래밍의 미래를 연구하는 응용 연구실로, 연구원, 엔지니어 및 기술 전문가로 구성되어 실용성과 가능성의 경계에서 혁신을 만듭니다."
+      "description": "Anysphere는 AI 코딩 편집기 Cursor를 개발합니다. 2026년 6월 SpaceX는 Anysphere 인수 계약을 체결했으며, 거래는 아직 종결 조건을 충족해야 합니다."
     },
     "es": {
-      "description": "Laboratorio de investigación aplicada trabajando en el futuro de la programación. Somos un grupo de investigadores, ingenieros y tecnólogos inventando en el borde de lo útil y posible."
+      "description": "Anysphere desarrolla Cursor, un editor de código con IA. En junio de 2026, SpaceX firmó un acuerdo para adquirir Anysphere; la operación sigue sujeta a condiciones de cierre."
     },
     "fr": {
-      "description": "Laboratoire de recherche appliquée travaillant sur l'avenir de la programmation. Nous sommes un groupe de chercheurs, ingénieurs et technologues inventant à la frontière de l'utile et du possible."
+      "description": "Anysphere développe Cursor, un éditeur de code IA. En juin 2026, SpaceX a signé un accord pour acquérir Anysphere ; l’opération reste soumise aux conditions de clôture."
     },
     "id": {
-      "description": "Laboratorium penelitian terapan yang bekerja pada masa depan pemrograman. Kami adalah kelompok peneliti, insinyur, dan teknolog yang berinovasi di batas yang berguna dan mungkin."
+      "description": "Anysphere mengembangkan Cursor, editor coding AI. Pada Juni 2026, SpaceX menandatangani perjanjian untuk mengakuisisi Anysphere; transaksi masih tunduk pada syarat penutupan."
     },
     "ja": {
-      "description": "プログラミングの未来に取り組む応用研究ラボ。研究者、エンジニア、テクノロジストのグループとして、有用性と可能性の境界でイノベーションを作り出しています。"
+      "description": "AnysphereはAIコーディングエディタCursorを開発しています。2026年6月、SpaceXはAnysphereを買収する契約を締結しましたが、取引の完了には条件の充足が必要です。"
     },
     "pt": {
-      "description": "Laboratório de pesquisa aplicada trabalhando no futuro da programação. Somos um grupo de pesquisadores, engenheiros e tecnólogos inventando na fronteira do útil e possível."
+      "description": "A Anysphere desenvolve o Cursor, um editor de código com IA. Em junho de 2026, a SpaceX assinou um acordo para adquirir a Anysphere; a operação ainda está sujeita a condições de fechamento."
     },
     "ru": {
-      "description": "Прикладная исследовательская лаборатория, работающая над будущим программирования. Мы группа исследователей, инженеров и технологов, создающих новое на границе полезного и возможного."
+      "description": "Anysphere разрабатывает AI-редактор кода Cursor. В июне 2026 года SpaceX подписала соглашение о приобретении Anysphere; сделка пока зависит от выполнения условий закрытия."
     },
     "tr": {
-      "description": "Programlamanın geleceği üzerinde çalışan bir uygulama araştırma laboratuvarı. Yararlı ve mümkün olanın sınırlarında icat eden araştırmacıların, mühendislerin ve teknologların bir grubuyuz."
+      "description": "Anysphere, AI kodlama editörü Cursor’u geliştiriyor. SpaceX Haziran 2026’da Anysphere’i satın almak için anlaşma imzaladı; işlem hâlâ kapanış koşullarına bağlı."
     },
     "zh-Hant": {
-      "description": "專注於程式設計未來的應用研究實驗室，由研究人員、工程師和技術專家組成，致力於實用性和可能性的邊緣進行創新。"
+      "description": "Anysphere 開發 AI 程式設計編輯器 Cursor。2026 年 6 月，SpaceX 簽署了收購 Anysphere 的協議；該交易仍須滿足交割條件。"
     }
   },
   "verified": true,
@@ -44,6 +44,11 @@
       "url": "https://anysphere.inc",
       "title": "Anysphere official site",
       "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026043411/exhibit101-8xk.htm",
+      "title": "SpaceX-Anysphere merger agreement",
+      "fields": ["description"]
     },
     {
       "url": "https://github.com/anysphere",
@@ -56,7 +61,7 @@
       "fields": ["communityUrls.linkedin"]
     }
   ],
-  "lastVerifiedAt": "2026-07-28",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://anysphere.inc",

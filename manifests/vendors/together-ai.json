@@ -1,0 +1,83 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "together-ai",
+  "name": "Together AI",
+  "aliases": ["together-ai"],
+  "description": "Together AI develops an AI cloud for inference, model customization, training, and GPU compute, supported by its systems research.",
+  "translations": {
+    "zh-Hans": {
+      "description": "Together AI 开发用于推理、模型定制、训练和 GPU 计算的 AI 云，并以系统研究为支撑。"
+    },
+    "de": {
+      "description": "Together AI entwickelt eine durch Systemforschung gestützte KI-Cloud für Inferenz, Modellanpassung, Training und GPU-Computing."
+    },
+    "ko": {
+      "description": "Together AI는 시스템 연구를 기반으로 추론, 모델 맞춤화, 학습 및 GPU 컴퓨팅을 위한 AI 클라우드를 개발합니다."
+    },
+    "es": {
+      "description": "Together AI desarrolla una nube de IA para inferencia, personalización de modelos, entrenamiento y cómputo con GPU, respaldada por su investigación de sistemas."
+    },
+    "fr": {
+      "description": "Together AI développe un cloud d’IA pour l’inférence, la personnalisation des modèles, l’entraînement et le calcul GPU, soutenu par ses recherches systèmes."
+    },
+    "id": {
+      "description": "Together AI mengembangkan cloud AI untuk inferensi, kustomisasi model, pelatihan, dan komputasi GPU yang didukung oleh riset sistem."
+    },
+    "ja": {
+      "description": "Together AIは、システム研究を基盤に、推論、モデルのカスタマイズ、学習、GPUコンピューティング向けのAIクラウドを開発しています。"
+    },
+    "pt": {
+      "description": "A Together AI desenvolve uma nuvem de IA para inferência, personalização de modelos, treinamento e computação em GPU, apoiada por sua pesquisa de sistemas."
+    },
+    "ru": {
+      "description": "Together AI разрабатывает облако ИИ для инференса, настройки моделей, обучения и GPU-вычислений на основе собственных системных исследований."
+    },
+    "tr": {
+      "description": "Together AI, sistem araştırmalarıyla desteklenen; çıkarım, model özelleştirme, eğitim ve GPU hesaplama için bir yapay zekâ bulutu geliştirir."
+    },
+    "zh-Hant": {
+      "description": "Together AI 開發用於推論、模型客製、訓練和 GPU 運算的 AI 雲端，並以系統研究為支撐。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.together.ai/about-us",
+      "title": "Together AI about page",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://docs.together.ai/docs/support",
+      "title": "Together AI support and Discord community",
+      "fields": ["communityUrls.discord"]
+    },
+    {
+      "url": "https://huggingface.co/togethercomputer",
+      "title": "Verified Together AI Hugging Face organization",
+      "fields": ["communityUrls.twitter", "communityUrls.github"]
+    },
+    {
+      "url": "https://www.linkedin.com/company/togethercomputer",
+      "title": "Together AI LinkedIn company page",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://www.together.ai/blog",
+      "title": "Together AI official blog",
+      "fields": ["communityUrls.blog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.together.ai",
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/togethercomputer",
+    "twitter": "https://x.com/togethercompute",
+    "github": "https://github.com/togethercomputer",
+    "youtube": null,
+    "discord": "https://discord.com/invite/9Rk6sSeWEG",
+    "reddit": null,
+    "blog": "https://www.together.ai/blog"
+  }
+}

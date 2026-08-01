@@ -38,12 +38,12 @@
       "description": "統一的 API 平台，透過單一介面提供來自不同供應商的多個 AI 模型的存取。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://openrouter.ai",
-  "docsUrl": "https://openrouter.ai/docs",
+  "docsUrl": "https://openrouter.ai/docs/quickstart",
   "vendor": "openrouter",
   "type": "model-service-provider",
-  "applyKeyUrl": "https://openrouter.ai/apply",
+  "applyKeyUrl": "https://openrouter.ai/settings/keys",
   "platformUrls": {
     "huggingface": null,
     "artificialAnalysis": null,
@@ -57,5 +57,20 @@
     "discord": null,
     "reddit": null,
     "blog": null
-  }
+  },
+  "sources": [
+    {
+      "url": "https://openrouter.ai/docs/quickstart",
+      "title": "OpenRouter quickstart",
+      "fields": ["name", "description", "websiteUrl", "docsUrl", "type"]
+    },
+    {
+      "url": "https://openrouter.ai/docs/cookbook/get-started/migrate-to-openrouter",
+      "title": "OpenRouter API key setup",
+      "fields": ["applyKeyUrl"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

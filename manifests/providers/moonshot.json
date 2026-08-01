@@ -1,7 +1,7 @@
 {
   "$schema": "../$schemas/provider.schema.json",
   "id": "moonshot",
-  "name": "Moonshot",
+  "name": "Moonshot AI",
   "description": "An AI company specializing in large language models and intelligent applications, known for the Kimi AI assistant.",
   "translations": {
     "zh-Hans": {
@@ -38,12 +38,12 @@
       "description": "專注於大型語言模型和智慧應用的 AI 公司，以 Kimi AI 助手而聞名。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://www.moonshot.ai",
-  "docsUrl": "https://platform.moonshot.ai/docs",
+  "docsUrl": "https://platform.kimi.ai/docs/api/overview",
   "vendor": "moonshot",
   "type": "foundation-model-provider",
-  "applyKeyUrl": "https://platform.moonshot.ai/console/api-keys",
+  "applyKeyUrl": "https://platform.kimi.ai/console/api-keys",
   "platformUrls": {
     "huggingface": "https://huggingface.co/moonshotai",
     "artificialAnalysis": null,
@@ -57,5 +57,30 @@
     "discord": null,
     "reddit": null,
     "blog": null
-  }
+  },
+  "sources": [
+    {
+      "url": "https://www.moonshot.ai",
+      "title": "Moonshot AI",
+      "fields": ["name", "description", "websiteUrl", "vendor", "type"]
+    },
+    {
+      "url": "https://platform.kimi.ai/docs/api/overview",
+      "title": "Kimi API overview",
+      "fields": ["docsUrl", "applyKeyUrl", "type"]
+    },
+    {
+      "url": "https://huggingface.co/moonshotai",
+      "title": "Moonshot AI official Hugging Face organization",
+      "fields": ["platformUrls.huggingface"]
+    },
+    {
+      "url": "https://openrouter.ai/provider/moonshotai",
+      "title": "Moonshot AI on OpenRouter",
+      "fields": ["platformUrls.openrouter"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

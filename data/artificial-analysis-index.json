@@ -1,10 +1,11 @@
 {
+  "$schema": "./$schemas/artificial-analysis-index.schema.json",
   "source": "Artificial Analysis",
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
   "methodologyUrl": "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
   "indexVersion": "4.1",
   "observedAt": "2026-07-31",
-  "legacyMissingModelIds": ["composer", "cursor-composer-2", "cursor-composer-2-5"],
+  "legacyMissingModelIds": ["cursor-composer-2", "cursor-composer-2-5"],
   "entries": [
     {
       "modelId": "claude-fable-5",

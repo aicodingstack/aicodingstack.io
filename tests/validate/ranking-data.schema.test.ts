@@ -5,21 +5,23 @@ import addFormats from 'ajv-formats'
 import { describe, expect, it } from 'vitest'
 
 describe('validate: ranking data schemas', () => {
-  it('validates the model-price-intelligence-index configuration', () => {
-    const rootDir = path.resolve(__dirname, '../..')
-    const dataName = 'model-price-intelligence-index'
-    const schema = JSON.parse(
-      fs.readFileSync(path.join(rootDir, `data/$schemas/${dataName}.schema.json`), 'utf8')
-    )
-    const data = JSON.parse(fs.readFileSync(path.join(rootDir, `data/${dataName}.json`), 'utf8'))
-    const ajv = new Ajv2020({ allErrors: true })
+  it.each(['artificial-analysis-index', 'model-price-intelligence-index'])(
+    'validates the %s data',
+    dataName => {
+      const rootDir = path.resolve(__dirname, '../..')
+      const schema = JSON.parse(
+        fs.readFileSync(path.join(rootDir, `data/$schemas/${dataName}.schema.json`), 'utf8')
+      )
+      const data = JSON.parse(fs.readFileSync(path.join(rootDir, `data/${dataName}.json`), 'utf8'))
+      const ajv = new Ajv2020({ allErrors: true })
 
-    addFormats(ajv)
+      addFormats(ajv)
 
-    const validate = ajv.compile(schema)
-    const valid = validate(data)
+      const validate = ajv.compile(schema)
+      const valid = validate(data)
 
-    expect(validate.errors).toEqual(null)
-    expect(valid).toBe(true)
-  })
+      expect(validate.errors).toEqual(null)
+      expect(valid).toBe(true)
+    }
+  )
 })

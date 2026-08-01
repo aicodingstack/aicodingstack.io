@@ -2,48 +2,48 @@
   "$schema": "../$schemas/provider.schema.json",
   "id": "xai",
   "name": "xAI",
-  "description": "xAI is a company that makes AI models.",
+  "description": "xAI's developer platform provides API access to Grok models for text generation, image understanding, reasoning, tool calling, and real-time search.",
   "translations": {
     "zh-Hans": {
-      "description": "xAI 是一家专注于开发 AI 模型的公司。"
+      "description": "xAI 开发者平台通过 API 提供 Grok 模型访问，支持文本生成、图像理解、推理、工具调用与实时搜索。"
     },
     "de": {
-      "description": "xAI ist ein Unternehmen, das AI-Modelle entwickelt."
+      "description": "Die Entwicklerplattform von xAI bietet API-Zugriff auf Grok-Modelle für Textgenerierung, Bildverständnis, logisches Denken, Tool-Aufrufe und Echtzeitsuche."
     },
     "ko": {
-      "description": "xAI는 AI 모델을 개발하는 기업입니다."
+      "description": "xAI 개발자 플랫폼은 텍스트 생성, 이미지 이해, 추론, 도구 호출 및 실시간 검색을 위한 Grok 모델 API 액세스를 제공합니다."
     },
     "es": {
-      "description": "xAI es una empresa que desarrolla modelos de IA."
+      "description": "La plataforma para desarrolladores de xAI ofrece acceso por API a modelos Grok para generar texto, comprender imágenes, razonar, usar herramientas y buscar en tiempo real."
     },
     "fr": {
-      "description": "xAI est une entreprise qui développe des modèles d'IA."
+      "description": "La plateforme pour développeurs de xAI donne accès par API aux modèles Grok pour générer du texte, comprendre les images, raisonner, utiliser des outils et effectuer des recherches en temps réel."
     },
     "id": {
-      "description": "xAI adalah perusahaan yang membuat model AI."
+      "description": "Platform developer xAI menyediakan akses API ke model Grok untuk pembuatan teks, pemahaman gambar, penalaran, pemanggilan alat, dan pencarian waktu nyata."
     },
     "ja": {
-      "description": "xAIはAIモデルを開発する企業です。"
+      "description": "xAI の開発者プラットフォームは、テキスト生成、画像理解、推論、ツール呼び出し、リアルタイム検索向けの Grok モデル API を提供します。"
     },
     "pt": {
-      "description": "xAI é uma empresa que cria modelos de IA."
+      "description": "A plataforma para desenvolvedores da xAI oferece acesso via API aos modelos Grok para gerar texto, compreender imagens, raciocinar, usar ferramentas e pesquisar em tempo real."
     },
     "ru": {
-      "description": "xAI — компания, разрабатывающая модели ИИ."
+      "description": "Платформа xAI предоставляет API-доступ к моделям Grok для генерации текста, понимания изображений, рассуждений, вызова инструментов и поиска в реальном времени."
     },
     "tr": {
-      "description": "xAI, AI modelleri geliştiren bir şirkettir."
+      "description": "xAI geliştirici platformu; metin üretimi, görüntü anlama, akıl yürütme, araç çağırma ve gerçek zamanlı arama için Grok modellerine API erişimi sunar."
     },
     "zh-Hant": {
-      "description": "xAI 是一家專注於開發 AI 模型的公司。"
+      "description": "xAI 開發者平台透過 API 提供 Grok 模型存取，支援文字生成、影像理解、推理、工具呼叫及即時搜尋。"
     }
   },
-  "verified": false,
+  "verified": true,
   "websiteUrl": "https://x.ai",
-  "docsUrl": "https://x.ai/api",
-  "vendor": "xAI",
+  "docsUrl": "https://docs.x.ai/",
+  "vendor": "xai",
   "type": "foundation-model-provider",
-  "applyKeyUrl": "https://x.ai/api",
+  "applyKeyUrl": "https://console.x.ai/team/default/api-keys",
   "platformUrls": {
     "huggingface": null,
     "artificialAnalysis": null,
@@ -57,5 +57,35 @@
     "discord": null,
     "reddit": null,
     "blog": null
-  }
+  },
+  "sources": [
+    {
+      "url": "https://x.ai/company",
+      "title": "xAI company",
+      "fields": ["name", "description", "websiteUrl", "vendor"]
+    },
+    {
+      "url": "https://docs.x.ai/",
+      "title": "xAI API documentation",
+      "fields": ["docsUrl", "type", "applyKeyUrl"]
+    },
+    {
+      "url": "https://docs.x.ai/developers/models/grok-4.20",
+      "title": "xAI Docs — Grok 4.20",
+      "fields": ["description"]
+    },
+    {
+      "url": "https://docs.x.ai/developers/tools/overview",
+      "title": "xAI Docs — Tools overview",
+      "fields": ["description"]
+    },
+    {
+      "url": "https://docs.x.ai/developers/tools/web-search",
+      "title": "xAI Docs — Web search",
+      "fields": ["description"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high"
 }

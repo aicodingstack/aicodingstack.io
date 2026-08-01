@@ -3,12 +3,32 @@ import { vendorsData } from '@/lib/generated/vendors'
 import { findVendorByName } from '@/lib/vendor-identity'
 import artificialAnalysisData from '../../data/artificial-analysis-index.json'
 
+export interface ArtificialAnalysisIndexEntry {
+  modelId: string
+  score: number
+  estimated: boolean
+  configuration: string
+}
+
+export interface ArtificialAnalysisIndexData {
+  $schema: './$schemas/artificial-analysis-index.schema.json'
+  source: 'Artificial Analysis'
+  sourceUrl: string
+  methodologyUrl: string
+  indexVersion: string
+  observedAt: string
+  legacyMissingModelIds: string[]
+  entries: ArtificialAnalysisIndexEntry[]
+}
+
+const artificialAnalysisIndex = artificialAnalysisData as ArtificialAnalysisIndexData
+
 const FALLBACK_COLOR: ModelIntelligenceThemeColor = {
   light: '#6b7280',
   dark: '#9ca3af',
 }
 
-export const modelIntelligenceLegacyMissingModelIds = artificialAnalysisData.legacyMissingModelIds
+export const modelIntelligenceLegacyMissingModelIds = artificialAnalysisIndex.legacyMissingModelIds
 
 export interface ModelIntelligenceThemeColor {
   light: string
@@ -91,7 +111,7 @@ for (const vendor of vendorsData) {
 }
 
 export const allModelIntelligencePoints: ModelIntelligencePoint[] =
-  artificialAnalysisData.entries.map(entry => {
+  artificialAnalysisIndex.entries.map(entry => {
     const model = modelById.get(entry.modelId)
 
     if (!model?.releaseDate) {
@@ -181,9 +201,9 @@ export const modelIntelligenceSeries = sortedSeries.map(series => {
 })
 
 export const modelIntelligenceMeta = {
-  source: artificialAnalysisData.source,
-  sourceUrl: artificialAnalysisData.sourceUrl,
-  methodologyUrl: artificialAnalysisData.methodologyUrl,
-  indexVersion: artificialAnalysisData.indexVersion,
-  observedAt: artificialAnalysisData.observedAt,
+  source: artificialAnalysisIndex.source,
+  sourceUrl: artificialAnalysisIndex.sourceUrl,
+  methodologyUrl: artificialAnalysisIndex.methodologyUrl,
+  indexVersion: artificialAnalysisIndex.indexVersion,
+  observedAt: artificialAnalysisIndex.observedAt,
 }

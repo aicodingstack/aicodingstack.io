@@ -12,12 +12,15 @@ import Anysphere from '../../../manifests/vendors/anysphere.json'
 import Atlassian from '../../../manifests/vendors/atlassian.json'
 import Augment from '../../../manifests/vendors/augment.json'
 import Aws from '../../../manifests/vendors/aws.json'
+import Baseten from '../../../manifests/vendors/baseten.json'
 import Bytedance from '../../../manifests/vendors/bytedance.json'
 import Cline from '../../../manifests/vendors/cline.json'
 import Cognition from '../../../manifests/vendors/cognition.json'
 import Continue from '../../../manifests/vendors/continue.json'
+import Deepinfra from '../../../manifests/vendors/deepinfra.json'
 import Deepseek from '../../../manifests/vendors/deepseek.json'
 import FactoryAi from '../../../manifests/vendors/factory-ai.json'
+import FireworksAi from '../../../manifests/vendors/fireworks-ai.json'
 import Github from '../../../manifests/vendors/github.json'
 import Gitlab from '../../../manifests/vendors/gitlab.json'
 import Google from '../../../manifests/vendors/google.json'
@@ -28,6 +31,7 @@ import Microsoft from '../../../manifests/vendors/microsoft.json'
 import Minimax from '../../../manifests/vendors/minimax.json'
 import MistralAi from '../../../manifests/vendors/mistral-ai.json'
 import Moonshot from '../../../manifests/vendors/moonshot.json'
+import NovitaAi from '../../../manifests/vendors/novita-ai.json'
 import OhMyPi from '../../../manifests/vendors/oh-my-pi.json'
 import Openai from '../../../manifests/vendors/openai.json'
 import Openrouter from '../../../manifests/vendors/openrouter.json'
@@ -39,6 +43,7 @@ import Sst from '../../../manifests/vendors/sst.json'
 import Stagewise from '../../../manifests/vendors/stagewise.json'
 import Tabnine from '../../../manifests/vendors/tabnine.json'
 import Tencent from '../../../manifests/vendors/tencent.json'
+import TogetherAi from '../../../manifests/vendors/together-ai.json'
 import VerdentAi from '../../../manifests/vendors/verdent-ai.json'
 import Xai from '../../../manifests/vendors/xai.json'
 import Xiaomi from '../../../manifests/vendors/xiaomi.json'
@@ -55,12 +60,15 @@ export const vendorsData = [
   Atlassian,
   Augment,
   Aws,
+  Baseten,
   Bytedance,
   Cline,
   Cognition,
   Continue,
+  Deepinfra,
   Deepseek,
   FactoryAi,
+  FireworksAi,
   Github,
   Gitlab,
   Google,
@@ -71,6 +79,7 @@ export const vendorsData = [
   Minimax,
   MistralAi,
   Moonshot,
+  NovitaAi,
   OhMyPi,
   Openai,
   Openrouter,
@@ -82,6 +91,7 @@ export const vendorsData = [
   Stagewise,
   Tabnine,
   Tencent,
+  TogetherAi,
   VerdentAi,
   Xai,
   Xiaomi,

@@ -24,7 +24,6 @@ import ClaudeSonnet4 from '../../../manifests/models/claude-sonnet-4.json'
 import ClaudeSonnet45 from '../../../manifests/models/claude-sonnet-4-5.json'
 import ClaudeSonnet46 from '../../../manifests/models/claude-sonnet-4-6.json'
 import ClaudeSonnet5 from '../../../manifests/models/claude-sonnet-5.json'
-import Composer from '../../../manifests/models/composer.json'
 import CursorComposer2 from '../../../manifests/models/cursor-composer-2.json'
 import CursorComposer25 from '../../../manifests/models/cursor-composer-2-5.json'
 import Deepseek32 from '../../../manifests/models/deepseek-3-2.json'
@@ -151,7 +150,6 @@ export const modelsData = [
   ClaudeSonnet46,
   ClaudeSonnet4,
   ClaudeSonnet5,
-  Composer,
   CursorComposer25,
   CursorComposer2,
   Deepseek32,

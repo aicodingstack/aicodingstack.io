@@ -51,8 +51,8 @@
       "fields": ["docsUrl", "type"]
     },
     {
-      "url": "https://platform.claude.com",
-      "title": "Claude Platform console",
+      "url": "https://platform.claude.com/settings/keys",
+      "title": "Claude Platform API keys",
       "fields": ["applyKeyUrl"]
     },
     {
@@ -66,14 +66,14 @@
       "fields": ["communityUrls.blog"]
     }
   ],
-  "lastVerifiedAt": "2026-07-18",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://anthropic.com",
   "docsUrl": "https://platform.claude.com/docs/en/home",
   "vendor": "anthropic",
   "type": "foundation-model-provider",
-  "applyKeyUrl": "https://platform.claude.com",
+  "applyKeyUrl": "https://platform.claude.com/settings/keys",
   "platformUrls": {
     "huggingface": "https://huggingface.co/anthropics",
     "artificialAnalysis": null,

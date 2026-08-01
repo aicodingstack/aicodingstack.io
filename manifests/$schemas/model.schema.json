@@ -153,7 +153,40 @@
         "capabilities",
         "benchmarks",
         "platformUrls"
-      ]
+      ],
+      "if": {
+        "type": "object",
+        "properties": {
+          "activeParameters": {
+            "type": "string"
+          }
+        },
+        "required": ["activeParameters"]
+      },
+      "then": {
+        "type": "object",
+        "properties": {
+          "size": {
+            "type": "string"
+          },
+          "sources": {
+            "type": "array",
+            "contains": {
+              "type": "object",
+              "properties": {
+                "fields": {
+                  "type": "array",
+                  "contains": {
+                    "const": "activeParameters"
+                  }
+                }
+              },
+              "required": ["fields"]
+            }
+          }
+        },
+        "required": ["size", "sources"]
+      }
     }
   ],
   "$defs": {

@@ -6,30 +6,30 @@ Snapshot date: 2026-07-31. Regenerate with `pnpm data-health:report`.
 
 | Metric | Value |
 | --- | ---: |
-| Manifest records | 243 |
-| Records with structured sources | 237 |
-| Verified records | 216 |
-| Verified with complete provenance | 216 |
+| Manifest records | 248 |
+| Records with structured sources | 248 |
+| Verified records | 248 |
+| Verified with complete provenance | 248 |
 | Stale verified records | 0 |
 | Non-English values identical to English | 300 |
 | Dangling product relationships | 0 |
-| Model benchmark coverage | 9.4% |
-| Products with pricing | 67/67 |
-| Community URLs with provenance | 302/302 |
+| Model benchmark coverage | 9.5% |
+| Products with pricing | 63/63 |
+| Community URLs with provenance | 328/328 |
 | Duplicated vendor community URLs | 0 |
-| Errors / warnings / info | 0 / 0 / 6 |
+| Errors / warnings / info | 0 / 0 / 0 |
 
 ## Category Breakdown
 
 | Category | Total | Verified | Provenance complete | Stale |
 | --- | ---: | ---: | ---: | ---: |
-| ides | 9 | 7 | 7 | 0 |
-| clis | 27 | 18 | 18 | 0 |
-| desktops | 12 | 7 | 7 | 0 |
-| extensions | 19 | 17 | 17 | 0 |
-| models | 124 | 123 | 123 | 0 |
-| providers | 12 | 4 | 4 | 0 |
-| vendors | 40 | 40 | 40 | 0 |
+| ides | 8 | 8 | 8 | 0 |
+| clis | 25 | 25 | 25 | 0 |
+| desktops | 11 | 11 | 11 | 0 |
+| extensions | 19 | 19 | 19 | 0 |
+| models | 123 | 123 | 123 | 0 |
+| providers | 17 | 17 | 17 | 0 |
+| vendors | 45 | 45 | 45 | 0 |
 
 ## Translation Placeholder Proxy
 
@@ -37,23 +37,23 @@ Exact English matches are a triage signal; product names and technical terms can
 
 | Locale | Comparable strings | Exact English matches | Match rate |
 | --- | ---: | ---: | ---: |
-| de | 447 | 39 | 8.7% |
-| es | 447 | 25 | 5.6% |
-| fr | 447 | 36 | 8.1% |
-| id | 447 | 30 | 6.7% |
-| ja | 447 | 23 | 5.1% |
-| ko | 447 | 23 | 5.1% |
-| pt | 447 | 31 | 6.9% |
-| ru | 447 | 23 | 5.1% |
-| tr | 447 | 26 | 5.8% |
-| zh-Hans | 447 | 22 | 4.9% |
-| zh-Hant | 447 | 22 | 4.9% |
+| de | 452 | 39 | 8.6% |
+| es | 452 | 25 | 5.5% |
+| fr | 452 | 36 | 8% |
+| id | 452 | 30 | 6.6% |
+| ja | 452 | 23 | 5.1% |
+| ko | 452 | 23 | 5.1% |
+| pt | 452 | 31 | 6.9% |
+| ru | 452 | 23 | 5.1% |
+| tr | 452 | 26 | 5.8% |
+| zh-Hans | 452 | 22 | 4.9% |
+| zh-Hant | 452 | 22 | 4.9% |
 
 ## Backlog by Issue Type
 
 | Issue | Count |
 | --- | ---: |
-| missing-sources | 6 |
+| None | 0 |
 
 ## Priority Queue
 

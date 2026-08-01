@@ -1,0 +1,78 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "novita-ai",
+  "name": "Novita AI",
+  "aliases": ["novita-ai"],
+  "description": "Novita AI develops cloud infrastructure for model APIs, GPU instances, serverless inference, dedicated deployments, and isolated agent runtimes.",
+  "translations": {
+    "zh-Hans": {
+      "description": "Novita AI 开发面向模型 API、GPU 实例、无服务器推理、专用部署和隔离智能体运行环境的云基础设施。"
+    },
+    "de": {
+      "description": "Novita AI entwickelt Cloud-Infrastruktur für Modell-APIs, GPU-Instanzen, serverlose Inferenz, dedizierte Bereitstellungen und isolierte Agentenlaufzeiten."
+    },
+    "ko": {
+      "description": "Novita AI는 모델 API, GPU 인스턴스, 서버리스 추론, 전용 배포 및 격리 에이전트 런타임을 위한 클라우드 인프라를 개발합니다."
+    },
+    "es": {
+      "description": "Novita AI desarrolla infraestructura en la nube para API de modelos, instancias GPU, inferencia sin servidor, despliegues dedicados y entornos aislados para agentes."
+    },
+    "fr": {
+      "description": "Novita AI développe une infrastructure cloud pour les API de modèles, les instances GPU, l’inférence serverless, les déploiements dédiés et les agents isolés."
+    },
+    "id": {
+      "description": "Novita AI mengembangkan infrastruktur cloud untuk API model, instans GPU, inferensi serverless, deployment khusus, dan runtime agen terisolasi."
+    },
+    "ja": {
+      "description": "Novita AIは、モデルAPI、GPUインスタンス、サーバーレス推論、専用デプロイ、分離エージェントランタイム向けのクラウド基盤を開発しています。"
+    },
+    "pt": {
+      "description": "A Novita AI desenvolve infraestrutura em nuvem para APIs de modelos, instâncias de GPU, inferência serverless, implantações dedicadas e agentes isolados."
+    },
+    "ru": {
+      "description": "Novita AI развивает облачную инфраструктуру для API моделей, GPU-инстансов, бессерверного инференса, выделенных развёртываний и изолированных сред агентов."
+    },
+    "tr": {
+      "description": "Novita AI; model API'leri, GPU örnekleri, sunucusuz çıkarım, ayrılmış dağıtımlar ve yalıtılmış ajan çalışma ortamları için bulut altyapısı geliştirir."
+    },
+    "zh-Hant": {
+      "description": "Novita AI 開發用於模型 API、GPU 執行個體、無伺服器推論、專用部署及隔離代理程式執行環境的雲端基礎設施。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://novita.ai",
+      "title": "Novita AI official website",
+      "fields": ["name", "description", "websiteUrl", "communityUrls.blog"]
+    },
+    {
+      "url": "https://huggingface.co/novita",
+      "title": "Verified Novita AI Hugging Face organization",
+      "fields": [
+        "communityUrls.twitter",
+        "communityUrls.github",
+        "communityUrls.linkedin",
+        "communityUrls.discord"
+      ]
+    },
+    {
+      "url": "https://github.com/novitalabs",
+      "title": "Novita AI official GitHub organization",
+      "fields": ["communityUrls.twitter", "communityUrls.github", "communityUrls.youtube"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://novita.ai",
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/novita-ai-labs",
+    "twitter": "https://x.com/novita_ai_labs",
+    "github": "https://github.com/novitalabs",
+    "youtube": "https://www.youtube.com/@novita_ai",
+    "discord": "https://discord.com/invite/YyPRAzwp7P",
+    "reddit": null,
+    "blog": "https://blogs.novita.ai/"
+  }
+}

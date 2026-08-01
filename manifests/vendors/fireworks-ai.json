@@ -1,0 +1,84 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "fireworks-ai",
+  "name": "Fireworks AI",
+  "aliases": ["fireworks-ai"],
+  "description": "Fireworks AI develops infrastructure for training, fine-tuning, and serving open and custom AI models across serverless and dedicated deployments.",
+  "translations": {
+    "zh-Hans": {
+      "description": "Fireworks AI 开发用于训练、微调和服务开放及自定义 AI 模型的基础设施，支持无服务器和专用部署。"
+    },
+    "de": {
+      "description": "Fireworks AI entwickelt Infrastruktur zum Trainieren, Feinabstimmen und Bereitstellen offener und eigener KI-Modelle in serverlosen und dedizierten Umgebungen."
+    },
+    "ko": {
+      "description": "Fireworks AI는 서버리스 및 전용 배포에서 오픈 모델과 사용자 지정 AI 모델을 학습, 파인튜닝, 서비스하기 위한 인프라를 개발합니다."
+    },
+    "es": {
+      "description": "Fireworks AI desarrolla infraestructura para entrenar, ajustar y servir modelos de IA abiertos y personalizados en despliegues sin servidor y dedicados."
+    },
+    "fr": {
+      "description": "Fireworks AI développe une infrastructure pour entraîner, ajuster et servir des modèles d’IA ouverts et personnalisés sur des déploiements serverless et dédiés."
+    },
+    "id": {
+      "description": "Fireworks AI mengembangkan infrastruktur untuk melatih, menyempurnakan, dan menyajikan model AI terbuka dan kustom melalui deployment serverless dan khusus."
+    },
+    "ja": {
+      "description": "Fireworks AIは、オープンモデルやカスタムAIモデルをサーバーレスまたは専用環境で学習、ファインチューニング、提供する基盤を開発しています。"
+    },
+    "pt": {
+      "description": "A Fireworks AI desenvolve infraestrutura para treinar, ajustar e servir modelos de IA abertos e personalizados em implantações serverless e dedicadas."
+    },
+    "ru": {
+      "description": "Fireworks AI разрабатывает инфраструктуру для обучения, дообучения и обслуживания открытых и пользовательских моделей ИИ в бессерверных и выделенных средах."
+    },
+    "tr": {
+      "description": "Fireworks AI, açık ve özel yapay zekâ modellerini sunucusuz ve ayrılmış ortamlarda eğitmek, ince ayarlamak ve sunmak için altyapı geliştirir."
+    },
+    "zh-Hant": {
+      "description": "Fireworks AI 開發用於訓練、微調及服務開放與自訂 AI 模型的基礎設施，支援無伺服器和專用部署。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://fireworks.ai",
+      "title": "Fireworks AI official website",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://docs.fireworks.ai/faq/general/support/platform-support",
+      "title": "Fireworks support and official community links",
+      "fields": [
+        "communityUrls.twitter",
+        "communityUrls.github",
+        "communityUrls.youtube",
+        "communityUrls.discord",
+        "communityUrls.blog"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/company/fireworks-ai",
+      "title": "Fireworks AI LinkedIn company page",
+      "fields": ["communityUrls.linkedin"]
+    },
+    {
+      "url": "https://huggingface.co/fireworks-ai",
+      "title": "Verified Fireworks AI Hugging Face organization",
+      "fields": ["communityUrls.twitter", "communityUrls.github"]
+    }
+  ],
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://fireworks.ai",
+  "communityUrls": {
+    "linkedin": "https://www.linkedin.com/company/fireworks-ai",
+    "twitter": "https://x.com/FireworksAI_HQ",
+    "github": "https://github.com/fw-ai",
+    "youtube": "https://www.youtube.com/@fireworksai",
+    "discord": "https://discord.gg/fireworks-ai",
+    "reddit": null,
+    "blog": "https://fireworks.ai/blog"
+  }
+}

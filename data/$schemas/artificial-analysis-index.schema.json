@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Artificial Analysis Intelligence Index Data",
+  "description": "Observed Artificial Analysis Intelligence Index scores mapped to catalog model identifiers.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "const": "./$schemas/artificial-analysis-index.schema.json"
+    },
+    "source": {
+      "const": "Artificial Analysis"
+    },
+    "sourceUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "methodologyUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "indexVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+(?:\\.[0-9]+)*$"
+    },
+    "observedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "legacyMissingModelIds": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/modelId"
+      },
+      "uniqueItems": true
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entry"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "$schema",
+    "source",
+    "sourceUrl",
+    "methodologyUrl",
+    "indexVersion",
+    "observedAt",
+    "legacyMissingModelIds",
+    "entries"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "modelId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "entry": {
+      "type": "object",
+      "properties": {
+        "modelId": {
+          "$ref": "#/$defs/modelId"
+        },
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "estimated": {
+          "type": "boolean"
+        },
+        "configuration": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": ["modelId", "score", "estimated", "configuration"],
+      "additionalProperties": false
+    }
+  }
+}

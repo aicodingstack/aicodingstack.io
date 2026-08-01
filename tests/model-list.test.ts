@@ -65,14 +65,13 @@ describe('model list sorting', () => {
     expect(grouped.deprecated.map(model => model.id)).toEqual(['deprecated-new', 'deprecated-old'])
   })
 
-  it('keeps Composer generations named consistently and in distinct lifecycle groups', () => {
+  it('keeps cataloged Composer generations named consistently and in distinct lifecycle groups', () => {
     expect(
-      ['composer', 'cursor-composer-2', 'cursor-composer-2-5'].map(id => {
+      ['cursor-composer-2', 'cursor-composer-2-5'].map(id => {
         const model = modelsData.find(item => item.id === id)
         return [model?.id, model?.name, model?.lifecycle]
       })
     ).toEqual([
-      ['composer', 'Composer', 'deprecated'],
       ['cursor-composer-2', 'Composer 2', 'deprecated'],
       ['cursor-composer-2-5', 'Composer 2.5', 'latest'],
     ])
