@@ -75,7 +75,6 @@
     "download": "https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode",
     "changelog": "https://github.com/codota/TabNine/releases",
     "pricing": "https://www.tabnine.com/pricing",
-    "mcp": null,
     "issue": "https://github.com/codota/TabNine/issues"
   },
   "communityUrls": {

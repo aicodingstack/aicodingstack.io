@@ -73,7 +73,6 @@
     "download": "https://opencode.ai/docs",
     "changelog": "https://github.com/anomalyco/opencode/releases",
     "pricing": "https://opencode.ai/docs/zen",
-    "mcp": "https://opencode.ai/docs/mcp-servers",
     "issue": "https://github.com/anomalyco/opencode/issues"
   },
   "communityUrls": {
@@ -149,11 +148,6 @@
       "url": "https://opencode.ai/docs/zen",
       "title": "OpenCode Zen pricing",
       "fields": ["pricing", "resourceUrls.pricing"]
-    },
-    {
-      "url": "https://opencode.ai/docs/mcp-servers",
-      "title": "OpenCode MCP servers documentation",
-      "fields": ["resourceUrls.mcp"]
     }
   ]
 }

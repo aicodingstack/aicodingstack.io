@@ -82,7 +82,6 @@
     "download": "https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev",
     "changelog": "https://github.com/clinebot/cline/releases",
     "pricing": "https://cline.bot/pricing",
-    "mcp": "https://cline.bot/mcp-marketplace",
     "issue": "https://github.com/clinebot/cline/issues"
   },
   "communityUrls": {

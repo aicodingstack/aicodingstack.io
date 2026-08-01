@@ -67,8 +67,6 @@
     "downloadDescription": "下载最新版本",
     "issue": "问题跟踪",
     "issueDescription": "报告问题和请求功能",
-    "mcp": "MCP 文档",
-    "mcpDescription": "了解 MCP 集成",
     "pricingDescription": "查看定价方案"
   },
   "vendorMatrix": {

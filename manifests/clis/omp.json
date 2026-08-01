@@ -49,7 +49,7 @@
     {
       "url": "https://github.com/can1357/oh-my-pi",
       "title": "Oh My Pi official repository",
-      "fields": ["description", "githubUrl", "platforms", "resourceUrls.mcp", "resourceUrls.issue"]
+      "fields": ["description", "githubUrl", "platforms", "resourceUrls.issue"]
     },
     {
       "url": "https://www.npmjs.com/package/@oh-my-pi/pi-coding-agent",
@@ -93,7 +93,6 @@
     "download": "https://www.npmjs.com/package/@oh-my-pi/pi-coding-agent",
     "changelog": "https://github.com/can1357/oh-my-pi/releases",
     "pricing": null,
-    "mcp": "https://github.com/can1357/oh-my-pi/blob/main/docs/mcp.md",
     "issue": "https://github.com/can1357/oh-my-pi/issues"
   },
   "communityUrls": {

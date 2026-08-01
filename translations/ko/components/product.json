@@ -67,8 +67,6 @@
     "downloadDescription": "최신 버전 다운로드",
     "issue": "이슈 추적기",
     "issueDescription": "버그 보고 및 기능 요청",
-    "mcp": "MCP 문서",
-    "mcpDescription": "MCP 통합 알아보기",
     "pricingDescription": "가격 플랜 보기"
   },
   "vendorMatrix": {

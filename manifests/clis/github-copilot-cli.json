@@ -100,7 +100,6 @@
     "download": "https://www.npmjs.com/package/@github/copilot",
     "changelog": "https://github.com/github/copilot-cli/releases",
     "pricing": "https://github.com/features/copilot/plans",
-    "mcp": null,
     "issue": "https://github.com/github/copilot-cli/issues"
   },
   "communityUrls": {

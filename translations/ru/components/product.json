@@ -67,8 +67,6 @@
     "downloadDescription": "Загрузить последнюю версию",
     "issue": "Трекер проблем",
     "issueDescription": "Сообщить об ошибках и запросить функции",
-    "mcp": "Документация MCP",
-    "mcpDescription": "Узнать об интеграции MCP",
     "pricingDescription": "Просмотреть тарифные планы"
   },
   "vendorMatrix": {

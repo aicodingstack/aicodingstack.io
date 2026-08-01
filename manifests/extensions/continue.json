@@ -73,7 +73,7 @@
     {
       "url": "https://docs.continue.dev/customize/deep-dives/mcp",
       "title": "Continue MCP documentation",
-      "fields": ["docsUrl", "resourceUrls.mcp"]
+      "fields": ["docsUrl"]
     }
   ],
   "lastVerifiedAt": "2026-07-28",
@@ -99,7 +99,6 @@
     "download": "https://marketplace.visualstudio.com/items?itemName=Continue.continue",
     "changelog": "https://github.com/continuedev/continue/releases",
     "pricing": null,
-    "mcp": "https://docs.continue.dev/customize/deep-dives/mcp",
     "issue": "https://github.com/continuedev/continue/issues"
   },
   "communityUrls": {

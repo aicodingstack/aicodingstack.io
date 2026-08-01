@@ -65,11 +65,6 @@
       "fields": ["latestVersion", "resourceUrls.changelog"]
     },
     {
-      "url": "https://junie.jetbrains.com/docs/junie-cli-mcp-configuration.html",
-      "title": "Junie CLI MCP configuration",
-      "fields": ["resourceUrls.mcp"]
-    },
-    {
       "url": "https://blog.jetbrains.com/junie",
       "title": "Junie official blog",
       "fields": ["communityUrls.blog"]
@@ -115,7 +110,6 @@
     "download": "https://junie.jetbrains.com/docs/junie-cli-usage.html",
     "changelog": "https://github.com/JetBrains/junie/releases",
     "pricing": "https://junie.jetbrains.com/#pricing",
-    "mcp": "https://junie.jetbrains.com/docs/junie-cli-mcp-configuration.html",
     "issue": "https://github.com/JetBrains/junie/issues"
   },
   "communityUrls": {

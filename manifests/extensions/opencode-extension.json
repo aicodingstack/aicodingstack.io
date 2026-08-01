@@ -108,7 +108,6 @@
     "download": "https://marketplace.visualstudio.com/items?itemName=sst-dev.opencode",
     "changelog": "https://github.com/anomalyco/opencode/releases",
     "pricing": "https://opencode.ai/zen",
-    "mcp": null,
     "issue": "https://github.com/anomalyco/opencode/issues"
   },
   "communityUrls": {

@@ -131,7 +131,6 @@
     "download": "https://www.npmjs.com/package/@google/gemini-cli",
     "changelog": "https://geminicli.com/docs/changelogs",
     "pricing": "https://geminicli.com/docs/resources/quota-and-pricing/",
-    "mcp": null,
     "issue": "https://github.com/google-gemini/gemini-cli/issues"
   },
   "communityUrls": {

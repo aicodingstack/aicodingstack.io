@@ -61,11 +61,6 @@
       "url": "https://zcode.z.ai/en/terms",
       "title": "ZCode Terms of Service",
       "fields": ["license"]
-    },
-    {
-      "url": "https://zcode.z.ai/en/docs/mcp-services",
-      "title": "ZCode MCP servers documentation",
-      "fields": ["resourceUrls.mcp"]
     }
   ],
   "lastVerifiedAt": "2026-07-31",
@@ -115,7 +110,6 @@
     "download": "https://zcode.z.ai/en/docs/install",
     "changelog": "https://zcode.z.ai/en/changelog",
     "pricing": "https://zcode.z.ai/en",
-    "mcp": "https://zcode.z.ai/en/docs/mcp-services",
     "issue": null
   },
   "communityUrls": {

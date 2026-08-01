@@ -109,7 +109,6 @@
     "download": "https://marketplace.visualstudio.com/items?itemName=Google.geminicodeassist",
     "changelog": "https://docs.cloud.google.com/gemini/docs/codeassist/release-notes",
     "pricing": "https://cloud.google.com/products/gemini/pricing",
-    "mcp": null,
     "issue": null
   },
   "communityUrls": {
