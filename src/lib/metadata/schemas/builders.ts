@@ -367,6 +367,7 @@ export function buildArticleSchema(options: ArticleSchemaOptions): SchemaArticle
  */
 export function buildWebSiteSchema(options?: {
   name?: string
+  alternateName?: string | string[]
   url?: string
   description?: string
   enableSearch?: boolean
@@ -379,6 +380,7 @@ export function buildWebSiteSchema(options?: {
     url: options?.url || SITE_CONFIG.url,
   }
 
+  if (options?.alternateName) schema.alternateName = options.alternateName
   if (options?.description) schema.description = options.description
 
   if (options?.enableSearch !== false) {

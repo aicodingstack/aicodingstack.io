@@ -43,7 +43,6 @@ export interface PageMetadataOptions {
   pageType: PageType
   title: string
   description: string
-  keywords?: string
   canonical: string
   languageAlternates?: Record<string, string>
   openGraph?: Metadata['openGraph']
@@ -66,11 +65,6 @@ export function createPageMetadata(options: PageMetadataOptions): Metadata {
       canonical: options.canonical,
       languages: options.languageAlternates,
     },
-  }
-
-  // Add optional fields
-  if (options.keywords) {
-    metadata.keywords = options.keywords
   }
 
   if (options.openGraph) {
@@ -96,7 +90,6 @@ export interface RootLayoutMetadataOptions {
   locale: Locale
   title: string
   description: string
-  keywords: string
   canonical: string
   languageAlternates: Record<string, string>
   openGraph: Metadata['openGraph']
@@ -111,7 +104,6 @@ export function createRootLayoutMetadata(options: RootLayoutMetadataOptions): Me
       template: `%s - ${SITE_CONFIG.name}`,
     },
     description: options.description,
-    keywords: options.keywords,
     robots: getPageRobots('home'),
     // Authors, creator, publisher for better SEO
     authors: [{ name: `${SITE_CONFIG.name} Team` }],

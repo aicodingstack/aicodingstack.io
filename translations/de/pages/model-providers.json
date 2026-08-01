@@ -1,4 +1,42 @@
 {
-  "subtitle": "LLM-API-Anbieter, die Zugang zu verschiedenen AI-Modellen bieten",
-  "title": "AI-Coding-Modellanbieter"
+  "faq": {
+    "firstParty": {
+      "answer": "Wählen Sie eine Erstanbieter-API, wenn Sie die neuesten Funktionen des Anbieters und direkten Support benötigen. Wählen Sie eine Multi-Modell-Plattform, wenn einheitlicher Zugriff, Anbieter-Fallback oder ein einfacher Modellwechsel wichtiger sind.",
+      "question": "Sollte ich eine Erstanbieter-API oder eine Multi-Modell-API-Plattform verwenden?"
+    },
+    "providerTypes": {
+      "answer": "Ein Anbieter von Basismodellen entwickelt und betreibt eigene Modelle. Ein Modelldienstanbieter stellt eine API oder Plattform bereit, die Anfragen an Modelle mehrerer Entwickler weiterleitet.",
+      "question": "Was unterscheidet einen Anbieter von Basismodellen von einem Modelldienstanbieter?"
+    },
+    "selection": {
+      "answer": "Vergleichen Sie Modellverfügbarkeit, Tokenpreise, Kontext- und Ausgabelimits, Ratenbegrenzungen, Datenverarbeitung, regionalen Zugriff, Latenz, Zuverlässigkeit, SDK-Unterstützung und Produktionsbeobachtbarkeit.",
+      "question": "Was sollte ich bei der Auswahl eines LLM-API-Anbieters vergleichen?"
+    },
+    "title": "Fragen zu LLM-API-Anbietern"
+  },
+  "guide": {
+    "browseModels": "AI-Coding-Modelle durchsuchen",
+    "compareModels": "Coding-Modelle direkt vergleichen",
+    "criteria": {
+      "modelAccess": {
+        "description": "Prüfen Sie, ob der Anbieter die benötigten Coding-Modelle, Versionen, Kontextfenster und Tool-Calling-Funktionen bereitstellt.",
+        "title": "Modellzugriff"
+      },
+      "pricingLimits": {
+        "description": "Vergleichen Sie Preise für Eingabe- und Ausgabe-Token sowie Ratenbegrenzungen, regionale Verfügbarkeit, Kontingente und mögliche Cache-Rabatte.",
+        "title": "Preise und Limits"
+      },
+      "productionFit": {
+        "description": "Bewerten Sie Datenschutzbedingungen, Datenspeicherung, Zuverlässigkeit, Latenz, SDK-Qualität, Beobachtbarkeit und Fallback-Optionen vor dem Produktionseinsatz.",
+        "title": "Produktionseignung"
+      }
+    },
+    "description": "Beginnen Sie mit den Modellen, die Ihr Produkt benötigt, und vergleichen Sie anschließend die tatsächlichen Bereitstellungsbedingungen. Erstanbieter bieten direkten Zugriff auf eigene Modelle; Modelldienstanbieter vereinfachen den Zugriff auf mehrere Modellfamilien über eine API.",
+    "title": "So wählen Sie einen LLM-API-Anbieter fürs Coding"
+  },
+  "meta": {
+    "description": "Vergleichen Sie LLM-API-Anbieter fürs AI-Coding nach Modellzugriff, Preisen, Limits, Datenschutz, Zuverlässigkeit und Entwicklerwerkzeugen."
+  },
+  "subtitle": "Erstanbieter von Modellen und Multi-Modell-API-Plattformen vergleichen",
+  "title": "LLM-API-Anbieter für AI-Coding"
 }

@@ -73,59 +73,59 @@
   },
   "translationsByLocale": {
     "de": {
-      "totalStrings": 453,
+      "totalStrings": 467,
       "matchingEnglish": 39,
-      "matchingEnglishPercent": 8.6
+      "matchingEnglishPercent": 8.4
     },
     "es": {
-      "totalStrings": 453,
+      "totalStrings": 467,
       "matchingEnglish": 25,
-      "matchingEnglishPercent": 5.5
+      "matchingEnglishPercent": 5.4
     },
     "fr": {
-      "totalStrings": 453,
+      "totalStrings": 467,
       "matchingEnglish": 36,
-      "matchingEnglishPercent": 7.9
+      "matchingEnglishPercent": 7.7
     },
     "id": {
-      "totalStrings": 453,
+      "totalStrings": 467,
       "matchingEnglish": 30,
-      "matchingEnglishPercent": 6.6
+      "matchingEnglishPercent": 6.4
     },
     "ja": {
-      "totalStrings": 453,
+      "totalStrings": 467,
       "matchingEnglish": 23,
-      "matchingEnglishPercent": 5.1
+      "matchingEnglishPercent": 4.9
     },
     "ko": {
-      "totalStrings": 453,
+      "totalStrings": 467,
       "matchingEnglish": 23,
-      "matchingEnglishPercent": 5.1
+      "matchingEnglishPercent": 4.9
     },
     "pt": {
-      "totalStrings": 453,
+      "totalStrings": 467,
       "matchingEnglish": 31,
-      "matchingEnglishPercent": 6.8
+      "matchingEnglishPercent": 6.6
     },
     "ru": {
-      "totalStrings": 453,
+      "totalStrings": 467,
       "matchingEnglish": 23,
-      "matchingEnglishPercent": 5.1
+      "matchingEnglishPercent": 4.9
     },
     "tr": {
-      "totalStrings": 453,
+      "totalStrings": 467,
       "matchingEnglish": 26,
-      "matchingEnglishPercent": 5.7
+      "matchingEnglishPercent": 5.6
     },
     "zh-Hans": {
-      "totalStrings": 453,
+      "totalStrings": 467,
       "matchingEnglish": 22,
-      "matchingEnglishPercent": 4.9
+      "matchingEnglishPercent": 4.7
     },
     "zh-Hant": {
-      "totalStrings": 453,
+      "totalStrings": 467,
       "matchingEnglish": 22,
-      "matchingEnglishPercent": 4.9
+      "matchingEnglishPercent": 4.7
     }
   },
   "issues": []

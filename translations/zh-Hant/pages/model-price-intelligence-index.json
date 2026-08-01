@@ -1,8 +1,7 @@
 {
   "meta": {
     "title": "模型價格 × 智慧指數",
-    "description": "按 API Token 價格和智慧指數比較各家主流 AI 模型。",
-    "keywords": "AI 模型價格比較, 模型智能能力, LLM API 定價, 性價比"
+    "description": "按 API Token 價格和智慧指數比較各家主流 AI 模型。"
   },
   "title": "模型價格 × 智慧指數",
   "description": "比較各家主流模型的 API 價格與智慧指數。",

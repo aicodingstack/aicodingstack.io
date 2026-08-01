@@ -18,7 +18,6 @@ export async function generateMetadata({ params }: LocalePageProps) {
     basePath: 'manifesto',
     title: buildTitle({ title: tShared('terms.manifesto') }),
     description: tPage('subtitle'),
-    keywords: 'AI Coding Manifesto, AI development philosophy, AI coding principles',
     ogType: 'website',
   })
 }

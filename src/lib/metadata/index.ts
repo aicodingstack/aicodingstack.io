@@ -18,11 +18,9 @@
 
 // Export configuration
 export {
-  CATEGORY_DISPLAY_NAMES,
-  CATEGORY_EXAMPLES,
-  CATEGORY_SEO_KEYWORDS,
   type Category,
   type Locale,
+  METADATA_CATEGORIES,
   METADATA_DEFAULTS,
   OG_IMAGE_CONFIG,
   SEO_CONFIG,
@@ -54,7 +52,6 @@ export {
   buildCanonicalUrl,
   buildDetailPageTitle,
   buildFullUrl,
-  buildKeywords,
   buildLanguageAlternates,
   buildListPageTitle,
   buildOGImage,
@@ -65,6 +62,7 @@ export {
   formatPlatforms,
   formatPriceForDescription,
   getAlternateOGLocale,
+  getCategoryRoutePath,
   mapLocaleToOG,
 } from './helpers'
 export type { PageTranslationRequirement, TranslationValidationError } from './i18n-validation'

@@ -13,23 +13,17 @@ import type {
   ManifestTokenPricing,
   ModelLifecycle,
 } from '@/types/manifests'
-import {
-  CATEGORY_DISPLAY_NAMES,
-  CATEGORY_SEO_KEYWORDS,
-  type Category,
-  type Locale,
-  METADATA_DEFAULTS,
-} from './config'
+import { type Category, type Locale, METADATA_DEFAULTS } from './config'
 import {
   buildAlternates,
   buildDetailPageTitle,
-  buildKeywords,
   buildListPageTitle,
   buildOpenGraph,
   buildProductDescription,
   buildTwitterCard,
   formatPlatforms,
   formatPriceForDescription,
+  getCategoryRoutePath,
 } from './helpers'
 import { createPageMetadata, type PageType } from './templates'
 
@@ -44,7 +38,6 @@ export interface ListPageMetadataParams {
   locale: Locale
   category: Category
   translationNamespace: string
-  additionalKeywords?: string[]
 }
 
 /**
@@ -128,7 +121,6 @@ export interface StaticPageMetadataParams {
   basePath: string
   title: string
   description: string
-  keywords?: string
   ogType?: 'website' | 'article'
   pageType?: 'home' | 'static' | 'search'
 }
@@ -148,7 +140,6 @@ interface CommonMetadataOptions {
   languageBasePath?: string
   title: string
   description: string
-  keywords?: string
   // OpenGraph specific
   ogTitle?: string
   ogDescription?: string
@@ -197,7 +188,6 @@ function buildMetadataWithSocial(options: CommonMetadataOptions): Metadata {
     pageType: options.pageType,
     title: options.title,
     description: options.description,
-    keywords: options.keywords,
     canonical: alternates.canonical!,
     languageAlternates: alternates.languages,
     openGraph,
@@ -210,44 +200,29 @@ function buildMetadataWithSocial(options: CommonMetadataOptions): Metadata {
  * Returns complete metadata with robots rules via PageType 'list'
  */
 export async function generateListPageMetadata(options: ListPageMetadataParams): Promise<Metadata> {
-  const { locale, category, translationNamespace, additionalKeywords = [] } = options
+  const { locale, category, translationNamespace } = options
 
   const tPage = await getTranslations({ locale, namespace: translationNamespace })
 
   const translatedTitle = tPage('title')
   const description = tPage.has('meta.description') ? tPage('meta.description') : tPage('subtitle')
 
-  // Build SEO-optimized title
-  const categoryKeywords = CATEGORY_SEO_KEYWORDS[category as keyof typeof CATEGORY_SEO_KEYWORDS]
-
   const title = buildListPageTitle({
     translatedTitle,
     year: METADATA_DEFAULTS.currentYear,
   })
 
-  // Build keywords
-  const keywords = buildKeywords([
-    categoryKeywords ? [...categoryKeywords] : [],
-    additionalKeywords,
-  ])
-
-  // Build social media titles
-  const displayName =
-    CATEGORY_DISPLAY_NAMES[category as keyof typeof CATEGORY_DISPLAY_NAMES] || translatedTitle
-  const socialTitle = `${translatedTitle} - Best ${displayName} ${METADATA_DEFAULTS.currentYear}`
-
   // Use common metadata builder
   return buildMetadataWithSocial({
     locale,
     pageType: 'list',
-    canonicalPath: category,
+    canonicalPath: getCategoryRoutePath(category),
     title,
     description,
-    keywords,
-    ogTitle: socialTitle,
+    ogTitle: title,
     ogDescription: description,
     ogType: 'website',
-    twitterTitle: socialTitle,
+    twitterTitle: title,
     twitterDescription: description,
   })
 }
@@ -280,14 +255,6 @@ export async function generateSoftwareDetailMetadata(
     license: product.license,
   })
 
-  // Build keywords
-  const keywords = buildKeywords([
-    product.name,
-    product.vendor,
-    [...(CATEGORY_SEO_KEYWORDS[category as keyof typeof CATEGORY_SEO_KEYWORDS] || [])],
-    platformsStr,
-  ])
-
   // Social media titles
   const socialTitle = `${product.name} - ${typeDescription}`
 
@@ -296,10 +263,9 @@ export async function generateSoftwareDetailMetadata(
   return buildMetadataWithSocial({
     locale,
     pageType: 'detail',
-    canonicalPath: `${category}/${slug}`,
+    canonicalPath: `${getCategoryRoutePath(category)}/${slug}`,
     title,
     description,
-    keywords,
     ogTitle: socialTitle,
     ogDescription: product.description,
     ogType: 'article',
@@ -363,15 +329,6 @@ export async function generateModelDetailMetadata(
 
   const description = `${model.name} by ${model.vendor}. ${specs.join('. ')}. ${model.description}`
 
-  // Build keywords
-  const keywords = buildKeywords([
-    model.name,
-    model.vendor,
-    model.size || '',
-    model.activeParameters || '',
-    [...CATEGORY_SEO_KEYWORDS.models],
-  ])
-
   // Social media titles
   const socialTitle = `${model.name} - ${tPage('metaTitle')}`
 
@@ -383,7 +340,6 @@ export async function generateModelDetailMetadata(
     canonicalPath: `models/${slug}`,
     title,
     description,
-    keywords,
     ogTitle: socialTitle,
     ogDescription: model.description,
     ogType: 'article',
@@ -401,8 +357,6 @@ export async function generateComparisonMetadata(
 ): Promise<Metadata> {
   const { locale, category } = options
 
-  const categoryName = CATEGORY_DISPLAY_NAMES[category as keyof typeof CATEGORY_DISPLAY_NAMES] || ''
-
   // Get translations for comparison page
   const tPage = await getTranslations({ locale, namespace: 'pages.comparison' })
 
@@ -410,31 +364,17 @@ export async function generateComparisonMetadata(
   const title = tPage(`${category}.title`)
   const description = tPage(`${category}.subtitle`)
 
-  // Build keywords
-  const keywords = buildKeywords([
-    `${category} comparison`,
-    'compare',
-    'specifications',
-    'pricing',
-    'side-by-side',
-    [...(CATEGORY_SEO_KEYWORDS[category as keyof typeof CATEGORY_SEO_KEYWORDS] || [])],
-  ])
-
-  // Social media titles
-  const socialTitle = `${categoryName} Comparison`
-
   // Use common metadata builder
   return buildMetadataWithSocial({
     locale,
     pageType: 'comparison',
-    canonicalPath: `${category}/comparison`,
+    canonicalPath: `${getCategoryRoutePath(category)}/comparison`,
     title,
     description,
-    keywords,
-    ogTitle: socialTitle,
+    ogTitle: title,
     ogDescription: description,
     ogType: 'website',
-    twitterTitle: socialTitle,
+    twitterTitle: title,
     twitterDescription: description,
   })
 }
@@ -452,9 +392,6 @@ export async function generateArticleMetadata(options: ArticleMetadataParams): P
   // Build description
   const description = article.description
 
-  // Build keywords
-  const keywords = buildKeywords([article.title, [...CATEGORY_SEO_KEYWORDS.articles]])
-
   // Use common metadata builder
   // Note: OG and Twitter images are automatically detected from opengraph-image.tsx files
   return buildMetadataWithSocial({
@@ -463,7 +400,6 @@ export async function generateArticleMetadata(options: ArticleMetadataParams): P
     canonicalPath: `articles/${slug}`,
     title,
     description,
-    keywords,
     ogTitle: article.title,
     ogDescription: description,
     ogType: 'article',
@@ -487,9 +423,6 @@ export async function generateDocsMetadata(options: DocsMetadataParams): Promise
   // Build description
   const description = doc.description
 
-  // Build keywords
-  const keywords = buildKeywords([doc.title, [...CATEGORY_SEO_KEYWORDS.docs]])
-
   // Use common metadata builder
   return buildMetadataWithSocial({
     locale,
@@ -497,7 +430,6 @@ export async function generateDocsMetadata(options: DocsMetadataParams): Promise
     canonicalPath: `docs/${slug}`,
     title,
     description,
-    keywords,
     ogTitle: doc.title,
     ogDescription: description,
     ogType: 'article',
@@ -516,15 +448,7 @@ export async function generateDocsMetadata(options: DocsMetadataParams): Promise
 export async function generateStaticPageMetadata(
   options: StaticPageMetadataParams
 ): Promise<Metadata> {
-  const {
-    locale,
-    basePath,
-    title,
-    description,
-    keywords,
-    ogType = 'website',
-    pageType = 'static',
-  } = options
+  const { locale, basePath, title, description, ogType = 'website', pageType = 'static' } = options
 
   // Use common metadata builder
   return buildMetadataWithSocial({
@@ -533,7 +457,6 @@ export async function generateStaticPageMetadata(
     canonicalPath: basePath,
     title,
     description,
-    keywords,
     ogTitle: title,
     ogDescription: description,
     ogType,

@@ -44,7 +44,6 @@ describe('Metadata Generators', () => {
       expect(metadata).toBeDefined()
       expect(metadata.title).toBeDefined()
       expect(metadata.description).toBeDefined()
-      expect(metadata.keywords).toBeDefined()
 
       // Verify alternates
       expect(metadata.alternates).toBeDefined()
@@ -90,13 +89,30 @@ describe('Metadata Generators', () => {
       expect(metadata).toBeDefined()
       expect(metadata.title).toContain('Cursor')
       expect(metadata.description).toContain('Cursor')
-      expect(metadata.keywords).toContain('Cursor')
+      expect(metadata.keywords).toBeUndefined()
 
       // Verify OpenGraph type is article for detail pages
       expect((metadata.openGraph as { type?: string })?.type).toBe('article')
 
       // Verify canonical includes category and slug
       expect(metadata.alternates?.canonical).toContain('ides/cursor')
+    })
+
+    it('derives detail routes from camel-case category identifiers', async () => {
+      const metadata = await generateSoftwareDetailMetadata({
+        locale: 'en',
+        category: 'modelProviders',
+        slug: 'openrouter',
+        product: {
+          name: 'OpenRouter',
+          description: 'Multi-model API platform',
+          vendor: 'OpenRouter',
+        },
+        typeDescription: 'LLM API Provider',
+      })
+
+      expect(metadata.alternates?.canonical).toBe('/model-providers/openrouter')
+      expect(metadata.keywords).toBeUndefined()
     })
   })
 
@@ -168,7 +184,6 @@ describe('Metadata Generators', () => {
       expect(metadata).toBeDefined()
       expect(metadata.title).toBeDefined()
       expect(metadata.description).toBeDefined()
-      expect(metadata.keywords).toContain('comparison')
 
       // Verify OpenGraph type is website for comparison pages
       expect((metadata.openGraph as { type?: string })?.type).toBe('website')
@@ -234,7 +249,6 @@ describe('Metadata Generators', () => {
         basePath: 'about',
         title: 'About Us',
         description: 'Learn about our mission',
-        keywords: 'about, mission, team',
         ogType: 'website',
         pageType: 'static',
       })
@@ -243,7 +257,7 @@ describe('Metadata Generators', () => {
       expect(metadata).toBeDefined()
       expect(metadata.title).toBe('About Us')
       expect(metadata.description).toBe('Learn about our mission')
-      expect(metadata.keywords).toBe('about, mission, team')
+      expect(metadata.keywords).toBeUndefined()
 
       // Verify OpenGraph type
       expect((metadata.openGraph as { type?: string })?.type).toBe('website')

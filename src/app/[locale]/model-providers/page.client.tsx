@@ -62,6 +62,40 @@ export default function ModelProvidersPageClient({ locale }: Props) {
     p => p.type === 'foundation-model-provider'
   )
   const modelServiceProviders = filteredProviders.filter(p => p.type === 'model-service-provider')
+  const selectionCriteria = [
+    {
+      id: 'model-access',
+      title: tPage('guide.criteria.modelAccess.title'),
+      description: tPage('guide.criteria.modelAccess.description'),
+    },
+    {
+      id: 'pricing-limits',
+      title: tPage('guide.criteria.pricingLimits.title'),
+      description: tPage('guide.criteria.pricingLimits.description'),
+    },
+    {
+      id: 'production-fit',
+      title: tPage('guide.criteria.productionFit.title'),
+      description: tPage('guide.criteria.productionFit.description'),
+    },
+  ]
+  const faqItems = [
+    {
+      id: 'provider-types',
+      question: tPage('faq.providerTypes.question'),
+      answer: tPage('faq.providerTypes.answer'),
+    },
+    {
+      id: 'selection',
+      question: tPage('faq.selection.question'),
+      answer: tPage('faq.selection.answer'),
+    },
+    {
+      id: 'first-party',
+      question: tPage('faq.firstParty.question'),
+      answer: tPage('faq.firstParty.answer'),
+    },
+  ]
 
   return (
     <>
@@ -73,6 +107,47 @@ export default function ModelProvidersPageClient({ locale }: Props) {
           <PageHeader title={tPage('title')} subtitle={tPage('subtitle')} />
 
           <StackTabs activeStack="model-providers" locale={locale} />
+
+          <section
+            aria-labelledby="provider-selection-guide"
+            className="mb-[var(--spacing-lg)] max-w-6xl border-y border-[var(--color-border)] py-[var(--spacing-md)]"
+          >
+            <h2
+              id="provider-selection-guide"
+              className="mb-[var(--spacing-xs)] text-lg font-semibold tracking-tight"
+            >
+              {tPage('guide.title')}
+            </h2>
+            <p className="max-w-4xl text-sm leading-relaxed text-[var(--color-text-secondary)]">
+              {tPage('guide.description')}
+            </p>
+            <div className="mt-[var(--spacing-md)] grid grid-cols-1 gap-[var(--spacing-md)] md:grid-cols-3">
+              {selectionCriteria.map(criterion => (
+                <article key={criterion.id}>
+                  <h3 className="mb-[var(--spacing-xs)] text-sm font-semibold">
+                    {criterion.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-[var(--color-text-secondary)]">
+                    {criterion.description}
+                  </p>
+                </article>
+              ))}
+            </div>
+            <div className="mt-[var(--spacing-md)] flex flex-wrap gap-[var(--spacing-md)] text-sm">
+              <Link
+                href="/models"
+                className="text-[var(--color-text-secondary)] underline-offset-4 hover:text-[var(--color-text)] hover:underline"
+              >
+                {tPage('guide.browseModels')}
+              </Link>
+              <Link
+                href="/models/compare"
+                className="text-[var(--color-text-secondary)] underline-offset-4 hover:text-[var(--color-text)] hover:underline"
+              >
+                {tPage('guide.compareModels')}
+              </Link>
+            </div>
+          </section>
 
           {/* Search Box */}
           <div className="mb-[var(--spacing-md)]">
@@ -131,6 +206,28 @@ export default function ModelProvidersPageClient({ locale }: Props) {
                     {provider.description}
                   </p>
                 </Link>
+              ))}
+            </div>
+          </section>
+
+          <section
+            aria-labelledby="provider-faq"
+            className="mt-[var(--spacing-xl)] max-w-6xl border-t border-[var(--color-border)] pt-[var(--spacing-lg)]"
+          >
+            <h2 id="provider-faq" className="mb-[var(--spacing-sm)] text-lg font-semibold">
+              {tPage('faq.title')}
+            </h2>
+            <div className="divide-y divide-[var(--color-border)]">
+              {faqItems.map(item => (
+                <article
+                  key={item.id}
+                  className="grid gap-[var(--spacing-sm)] py-[var(--spacing-md)] md:grid-cols-3"
+                >
+                  <h3 className="text-sm font-semibold leading-relaxed">{item.question}</h3>
+                  <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] md:col-span-2">
+                    {item.answer}
+                  </p>
+                </article>
               ))}
             </div>
           </section>

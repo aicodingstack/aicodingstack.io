@@ -1,8 +1,7 @@
 {
   "meta": {
     "title": "Model Fiyatı × Zekâ",
-    "description": "Yaygın yapay zekâ modellerini API token fiyatı ve Zekâ Endeksi puanına göre karşılaştırın.",
-    "keywords": "yapay zekâ model fiyat karşılaştırması, model zekâsı, LLM API fiyatları, fiyat performans"
+    "description": "Yaygın yapay zekâ modellerini API token fiyatı ve Zekâ Endeksi puanına göre karşılaştırın."
   },
   "title": "Model Fiyatı × Zekâ",
   "description": "Yaygın modelleri API fiyatı ve zekâ yeteneğine göre karşılaştırın.",

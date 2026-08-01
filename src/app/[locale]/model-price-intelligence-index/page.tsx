@@ -22,7 +22,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     basePath: 'model-price-intelligence-index',
     title: buildTitle({ title: tPage('title') }),
     description: tPage('description'),
-    keywords: tPage('keywords'),
     ogType: 'website',
   })
 }

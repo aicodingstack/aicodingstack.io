@@ -1,4 +1,42 @@
 {
-  "subtitle": "提供各種 AI 模型存取的 LLM API 提供者",
-  "title": "AI 編碼模型提供者"
+  "faq": {
+    "firstParty": {
+      "answer": "若需要廠商的最新功能和直接支援，請選擇第一方 API；若更重視統一存取、供應商容錯移轉或方便切換模型，請選擇多模型 API 平台。",
+      "question": "應該使用第一方 API 還是多模型 API 平台？"
+    },
+    "providerTypes": {
+      "answer": "基礎模型供應商開發並託管自己的模型；模型服務供應商則透過單一 API 或平台，將請求路由至多個開發者的模型。",
+      "question": "基礎模型供應商和模型服務供應商有什麼差別？"
+    },
+    "selection": {
+      "answer": "應比較模型可用性、輸入與輸出價格、上下文與輸出上限、速率限制、資料處理方式、區域支援、延遲、可靠性、SDK 支援和正式環境可觀測性。",
+      "question": "選擇 LLM API 供應商時應該比較什麼？"
+    },
+    "title": "LLM API 供應商常見問題"
+  },
+  "guide": {
+    "browseModels": "瀏覽 AI 程式設計模型",
+    "compareModels": "並排比較程式設計模型",
+    "criteria": {
+      "modelAccess": {
+        "description": "確認供應商提供應用程式所需的程式設計模型、版本、上下文視窗及工具呼叫能力。",
+        "title": "模型存取"
+      },
+      "pricingLimits": {
+        "description": "綜合比較輸入與輸出 Token 價格、速率限制、區域可用性、配額及快取折扣。",
+        "title": "價格與限制"
+      },
+      "productionFit": {
+        "description": "投入正式環境前，請檢查隱私條款、資料保留、可靠性、延遲、SDK 品質、可觀測性及容錯移轉方案。",
+        "title": "正式環境適用性"
+      }
+    },
+    "description": "先確定產品需要的模型，再比較實際的交付條件。第一方供應商可直接存取自有模型；多模型服務則透過單一 API 簡化多個模型家族的接入。",
+    "title": "如何選擇適合程式設計的 LLM API 供應商"
+  },
+  "meta": {
+    "description": "依模型存取、價格、限制、隱私、可靠性和開發工具，比較適合 AI 程式設計的第一方及多模型 LLM API 供應商。"
+  },
+  "subtitle": "比較第一方模型開發商與多模型 API 平台",
+  "title": "適合 AI 程式設計的 LLM API 供應商"
 }

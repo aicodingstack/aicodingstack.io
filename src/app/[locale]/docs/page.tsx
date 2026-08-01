@@ -23,7 +23,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     basePath: 'docs',
     title,
     description,
-    keywords: tPage('keywords'),
     ogType: 'website',
   })
 }

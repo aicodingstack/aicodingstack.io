@@ -11,7 +11,8 @@ import {
 } from '@/lib/generated'
 import { articles } from '@/lib/generated/articles'
 import { docSections } from '@/lib/generated/docs'
-import { SITE_CONFIG } from '@/lib/metadata/config'
+import { METADATA_CATEGORIES, SITE_CONFIG } from '@/lib/metadata/config'
+import { getCategoryRoutePath } from '@/lib/metadata/helpers'
 
 type ManifestItem = {
   id: string
@@ -40,20 +41,13 @@ function generateLocalizedPages(
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = SITE_CONFIG.url
+  const categoryPaths = METADATA_CATEGORIES.map(category => `/${getCategoryRoutePath(category)}`)
 
   // Static pages - generate for all locales
   const staticPaths = [
     '/',
-    '/ides',
-    '/clis',
-    '/desktops',
-    '/extensions',
-    '/models',
-    '/model-providers',
-    '/vendors',
-    '/articles',
+    ...categoryPaths,
     '/ai-coding-stack',
-    '/docs',
     '/curated-collections',
     '/manifesto',
     '/ai-coding-landscape',

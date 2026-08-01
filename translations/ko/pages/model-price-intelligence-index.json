@@ -1,8 +1,7 @@
 {
   "meta": {
     "title": "모델 가격 × 인텔리전스",
-    "description": "주요 AI 모델을 API 토큰 가격과 종합 지능 지수로 비교합니다.",
-    "keywords": "AI 모델 가격 비교, 모델 지능, LLM API 가격, 가격 성능"
+    "description": "주요 AI 모델을 API 토큰 가격과 종합 지능 지수로 비교합니다."
   },
   "title": "모델 가격 × 인텔리전스",
   "description": "주요 모델의 API 가격과 인텔리전스 역량을 비교해 보세요.",
