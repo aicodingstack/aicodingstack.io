@@ -1,6 +1,6 @@
 # Data Health Report
 
-Snapshot date: 2026-07-31. Regenerate with `pnpm data-health:report`.
+Snapshot date: 2026-08-01. Regenerate with `pnpm data-health:report`.
 
 ## Scorecard
 
@@ -37,17 +37,17 @@ Exact English matches are a triage signal; product names and technical terms can
 
 | Locale | Comparable strings | Exact English matches | Match rate |
 | --- | ---: | ---: | ---: |
-| de | 452 | 39 | 8.6% |
-| es | 452 | 25 | 5.5% |
-| fr | 452 | 36 | 8% |
-| id | 452 | 30 | 6.6% |
-| ja | 452 | 23 | 5.1% |
-| ko | 452 | 23 | 5.1% |
-| pt | 452 | 31 | 6.9% |
-| ru | 452 | 23 | 5.1% |
-| tr | 452 | 26 | 5.8% |
-| zh-Hans | 452 | 22 | 4.9% |
-| zh-Hant | 452 | 22 | 4.9% |
+| de | 453 | 39 | 8.6% |
+| es | 453 | 25 | 5.5% |
+| fr | 453 | 36 | 7.9% |
+| id | 453 | 30 | 6.6% |
+| ja | 453 | 23 | 5.1% |
+| ko | 453 | 23 | 5.1% |
+| pt | 453 | 31 | 6.8% |
+| ru | 453 | 23 | 5.1% |
+| tr | 453 | 26 | 5.7% |
+| zh-Hans | 453 | 22 | 4.9% |
+| zh-Hant | 453 | 22 | 4.9% |
 
 ## Backlog by Issue Type
 
