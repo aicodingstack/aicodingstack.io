@@ -1,4 +1,11 @@
 {
+  "companyStages": {
+    "publicCompany": "Entreprises cotées",
+    "startup": "Start-ups",
+    "superUnicorn": "Super-licornes",
+    "unicorn": "Licornes"
+  },
+  "noResults": "Aucun fournisseur ne correspond à votre recherche",
   "subtitle": "Entreprises et organisations de premier plan construisant des technologie IA",
   "title": "Fournisseurs de codage IA"
 }

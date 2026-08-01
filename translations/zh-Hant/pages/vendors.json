@@ -1,4 +1,11 @@
 {
+  "companyStages": {
+    "publicCompany": "上市公司",
+    "startup": "新創公司",
+    "superUnicorn": "超級獨角獸",
+    "unicorn": "獨角獸"
+  },
+  "noResults": "沒有符合搜尋條件的廠商",
   "subtitle": "建構 AI 技術的領先公司和組織",
   "title": "AI 編碼廠商"
 }

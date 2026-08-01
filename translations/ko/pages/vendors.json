@@ -1,4 +1,11 @@
 {
+  "companyStages": {
+    "publicCompany": "상장 기업",
+    "startup": "스타트업",
+    "superUnicorn": "슈퍼 유니콘",
+    "unicorn": "유니콘"
+  },
+  "noResults": "검색 조건과 일치하는 벤더가 없습니다",
   "subtitle": "AI 기술을 구축하는 선도적인 기업 및 조직",
   "title": "AI 코딩 벤더"
 }

@@ -1,4 +1,11 @@
 {
+  "companyStages": {
+    "publicCompany": "Empresas cotizadas",
+    "startup": "Empresas emergentes",
+    "superUnicorn": "Superunicornios",
+    "unicorn": "Unicornios"
+  },
+  "noResults": "No hay proveedores que coincidan con la búsqueda",
   "subtitle": "Principales empresas y organizaciones que construyen tecnologías de IA",
   "title": "Proveedores de codificación con IA"
 }

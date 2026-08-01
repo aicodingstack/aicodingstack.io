@@ -11,6 +11,7 @@ import type { Locale } from '@/i18n/config'
 import { Link } from '@/i18n/navigation'
 import { vendorsData } from '@/lib/generated'
 import { localizeManifestItems } from '@/lib/manifest-i18n'
+import { groupVendorsByCompanyStage } from '@/lib/vendor-list'
 import type { ManifestVendor } from '@/types/manifests'
 
 type Props = {
@@ -59,6 +60,11 @@ export default function VendorsPageClient({ locale }: Props) {
     return result
   }, [localizedVendors, searchQuery])
 
+  const vendorGroups = useMemo(
+    () => groupVendorsByCompanyStage(filteredVendors, locale),
+    [filteredVendors, locale]
+  )
+
   return (
     <>
       <Header />
@@ -81,28 +87,36 @@ export default function VendorsPageClient({ locale }: Props) {
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[var(--spacing-md)]">
-            {filteredVendors.map(vendor => (
-              <Link
-                key={vendor.id}
-                href={`/vendors/${vendor.id}`}
-                className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5 group"
-              >
-                <div className="flex justify-between items-start mb-[var(--spacing-sm)]">
-                  <div className="flex items-center gap-[var(--spacing-xs)]">
-                    <h3 className="text-lg font-semibold tracking-tight">{vendor.name}</h3>
-                    {vendor.verified && <VerifiedBadge size="sm" />}
-                  </div>
-                  <span className="text-lg text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all">
-                    →
-                  </span>
+          {vendorGroups.map(group => (
+            <section key={group.id} className="mb-[var(--spacing-lg)]">
+              <h2 className="text-base uppercase tracking-wide text-[var(--color-text-muted)] mb-[var(--spacing-sm)]">
+                {tPage(`companyStages.${group.translationKey}`)}
+              </h2>
+              {group.vendors.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[var(--spacing-md)]">
+                  {group.vendors.map(vendor => (
+                    <Link
+                      key={vendor.id}
+                      href={`/vendors/${vendor.id}`}
+                      className="block border border-[var(--color-border)] p-[var(--spacing-md)] hover:border-[var(--color-border-strong)] transition-all hover:-translate-y-0.5"
+                    >
+                      <div className="flex items-start mb-[var(--spacing-sm)]">
+                        <div className="flex items-center gap-[var(--spacing-xs)]">
+                          <h3 className="text-lg font-semibold tracking-tight">{vendor.name}</h3>
+                          {vendor.verified && <VerifiedBadge size="sm" />}
+                        </div>
+                      </div>
+                      <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] font-light min-h-[4rem]">
+                        {vendor.description}
+                      </p>
+                    </Link>
+                  ))}
                 </div>
-                <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] font-light min-h-[4rem]">
-                  {vendor.description}
-                </p>
-              </Link>
-            ))}
-          </div>
+              ) : (
+                <p className="text-sm text-[var(--color-text-muted)]">{tPage('noResults')}</p>
+              )}
+            </section>
+          ))}
         </main>
       </div>
 

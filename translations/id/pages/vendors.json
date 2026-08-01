@@ -1,4 +1,11 @@
 {
+  "companyStages": {
+    "publicCompany": "Perusahaan Publik",
+    "startup": "Startup",
+    "superUnicorn": "Super Unicorn",
+    "unicorn": "Unicorn"
+  },
+  "noResults": "Tidak ada vendor yang cocok dengan pencarian Anda",
   "subtitle": "Perusahaan dan organisasi terkemuka yang membangun teknologi AI",
   "title": "Vendor Coding AI"
 }
