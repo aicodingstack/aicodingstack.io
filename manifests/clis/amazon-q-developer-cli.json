@@ -68,7 +68,6 @@
     "download": "https://aws.amazon.com/developer/learning/q-developer-cli",
     "changelog": "https://github.com/aws/amazon-q-developer-cli/releases",
     "pricing": "https://aws.amazon.com/q/developer/pricing",
-    "mcp": null,
     "issue": "https://github.com/aws/amazon-q-developer-cli/issues"
   },
   "communityUrls": {

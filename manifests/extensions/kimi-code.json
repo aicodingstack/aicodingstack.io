@@ -98,7 +98,6 @@
     "download": "https://marketplace.visualstudio.com/items?itemName=moonshot-ai.kimi-code",
     "changelog": "https://github.com/MoonshotAI/kimi-code/blob/main/apps/vscode/CHANGELOG.md",
     "pricing": null,
-    "mcp": null,
     "issue": "https://github.com/MoonshotAI/kimi-code/issues"
   },
   "communityUrls": {

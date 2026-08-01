@@ -86,7 +86,6 @@
     "download": "https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode",
     "changelog": "https://marketplace.visualstudio.com/items/Atlassian.atlascode/changelog",
     "pricing": "https://www.atlassian.com/software/rovo-dev/pricing",
-    "mcp": null,
     "issue": "https://github.com/atlassian/atlascode/issues"
   },
   "communityUrls": {

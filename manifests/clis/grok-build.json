@@ -103,7 +103,6 @@
     "download": "https://docs.x.ai/build/overview",
     "changelog": "https://x.ai/build/changelog",
     "pricing": "https://x.ai/pricing",
-    "mcp": null,
     "issue": "https://github.com/xai-org/grok-build/issues"
   },
   "communityUrls": {

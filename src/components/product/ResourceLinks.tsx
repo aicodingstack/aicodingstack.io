@@ -13,7 +13,7 @@ export interface ResourceLinksProps {
 /**
  * ResourceLinks Section
  *
- * Displays resource links for products (download, changelog, pricing, MCP documentation, issue tracker).
+ * Displays resource links for products (download, changelog, pricing, issue tracker).
  * Reuses LinkCardGrid for consistent styling.
  */
 export function ResourceLinks({
@@ -43,11 +43,6 @@ export function ResourceLinks({
       key: 'pricing',
       title: tShared('terms.pricing'),
       description: tComponent('resourceLinks.pricingDescription'),
-    },
-    {
-      key: 'mcp',
-      title: tComponent('resourceLinks.mcp'),
-      description: tComponent('resourceLinks.mcpDescription'),
     },
     {
       key: 'issue',

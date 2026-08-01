@@ -64,11 +64,6 @@
       "url": "https://docs.continue.dev/cli/quickstart",
       "title": "Continue CLI final installation and launch instructions",
       "fields": ["docsUrl", "resourceUrls.download", "platforms"]
-    },
-    {
-      "url": "https://docs.continue.dev/customize/deep-dives/mcp",
-      "title": "Continue MCP documentation",
-      "fields": ["resourceUrls.mcp"]
     }
   ],
   "lastVerifiedAt": "2026-07-28",
@@ -94,7 +89,6 @@
     "download": "https://www.npmjs.com/package/@continuedev/cli",
     "changelog": "https://github.com/continuedev/continue/releases",
     "pricing": null,
-    "mcp": "https://docs.continue.dev/customize/deep-dives/mcp",
     "issue": "https://github.com/continuedev/continue/issues"
   },
   "communityUrls": {

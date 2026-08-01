@@ -100,7 +100,6 @@
     "download": "https://docs.cursor.com/en/cli/installation",
     "changelog": "https://cursor.com/changelog",
     "pricing": "https://cursor.com/pricing",
-    "mcp": null,
     "issue": "https://github.com/cursor/cursor/issues"
   },
   "communityUrls": {

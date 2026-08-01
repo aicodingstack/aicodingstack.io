@@ -64,11 +64,6 @@
       "fields": ["latestVersion", "resourceUrls.changelog"]
     },
     {
-      "url": "https://www.kimi.com/code/docs/en/kimi-code-cli/customization/mcp.html",
-      "title": "Kimi Code CLI MCP documentation",
-      "fields": ["resourceUrls.mcp"]
-    },
-    {
       "url": "https://www.kimi.com/help/kimi-code/benefits",
       "title": "Kimi Code membership benefits",
       "fields": ["pricing"]
@@ -171,7 +166,6 @@
     "download": "https://www.kimi.com/code/docs/en/kimi-code-cli/guides/getting-started.html",
     "changelog": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html",
     "pricing": "https://www.kimi.com/resources/kimi-k2-7-code-pricing",
-    "mcp": "https://www.kimi.com/code/docs/en/kimi-code-cli/customization/mcp.html",
     "issue": "https://github.com/MoonshotAI/kimi-code/issues"
   },
   "communityUrls": {

@@ -67,8 +67,6 @@
     "downloadDescription": "Download latest version",
     "issue": "Issue Tracker",
     "issueDescription": "Report bugs and request features",
-    "mcp": "MCP Documentation",
-    "mcpDescription": "Learn about MCP integration",
     "pricingDescription": "View pricing plans"
   },
   "vendorMatrix": {

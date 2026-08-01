@@ -61,7 +61,6 @@
     "download": "https://code.visualstudio.com/download",
     "changelog": "https://code.visualstudio.com/updates",
     "pricing": null,
-    "mcp": "https://code.visualstudio.com/docs/agent-customization/mcp-servers",
     "issue": "https://github.com/microsoft/vscode/issues"
   },
   "communityUrls": {
@@ -124,11 +123,6 @@
       "url": "https://code.visualstudio.com/docs/supporting/faq",
       "title": "Visual Studio Code licensing FAQ",
       "fields": ["description", "githubUrl", "license"]
-    },
-    {
-      "url": "https://code.visualstudio.com/docs/agent-customization/mcp-servers",
-      "title": "Visual Studio Code MCP servers documentation",
-      "fields": ["resourceUrls.mcp"]
     },
     {
       "url": "https://github.com/microsoft/vscode",

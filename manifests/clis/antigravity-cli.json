@@ -131,7 +131,6 @@
     "download": "https://antigravity.google/download",
     "changelog": "https://antigravity.google/changelog",
     "pricing": "https://antigravity.google/pricing",
-    "mcp": "https://antigravity.google/docs/mcp",
     "issue": "https://github.com/google-antigravity/antigravity-cli/issues"
   },
   "communityUrls": {

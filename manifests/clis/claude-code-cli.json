@@ -64,7 +64,7 @@
     {
       "url": "https://code.claude.com/docs/en/mcp",
       "title": "Claude Code MCP documentation",
-      "fields": ["description", "resourceUrls.mcp"]
+      "fields": ["description"]
     },
     {
       "url": "https://www.linkedin.com/company/anthropicresearch",
@@ -163,7 +163,6 @@
     "download": "https://code.claude.com/docs/en/installation",
     "changelog": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
     "pricing": "https://claude.com/pricing",
-    "mcp": "https://code.claude.com/docs/en/mcp",
     "issue": "https://github.com/anthropics/claude-code/issues"
   },
   "communityUrls": {

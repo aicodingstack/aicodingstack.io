@@ -158,7 +158,6 @@
     "download": null,
     "changelog": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
     "pricing": "https://claude.com/pricing",
-    "mcp": "https://code.claude.com/docs/en/mcp",
     "issue": "https://github.com/anthropics/claude-code/issues"
   },
   "communityUrls": {

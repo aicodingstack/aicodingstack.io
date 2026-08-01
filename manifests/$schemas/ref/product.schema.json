@@ -214,12 +214,6 @@
           "pattern": "^https://",
           "description": "Pricing information URL"
         },
-        "mcp": {
-          "type": ["string", "null"],
-          "format": "uri",
-          "pattern": "^https://",
-          "description": "MCP (Model Context Protocol) documentation URL"
-        },
         "issue": {
           "type": ["string", "null"],
           "format": "uri",
@@ -227,7 +221,7 @@
           "description": "Issue tracker URL (e.g., GitHub Issues)"
         }
       },
-      "required": ["download", "changelog", "pricing", "mcp", "issue"],
+      "required": ["download", "changelog", "pricing", "issue"],
       "additionalProperties": false
     }
   }

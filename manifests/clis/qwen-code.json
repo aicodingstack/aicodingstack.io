@@ -72,11 +72,6 @@
       "fields": ["releaseTracking"]
     },
     {
-      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/mcp/",
-      "title": "Qwen Code MCP documentation",
-      "fields": ["resourceUrls.mcp"]
-    },
-    {
       "url": "https://x.com/Alibaba_Qwen",
       "title": "Qwen official X account",
       "fields": ["communityUrls.twitter"]
@@ -112,7 +107,6 @@
     "download": "https://qwenlm.github.io/qwen-code-docs/en/users/quickstart/",
     "changelog": "https://github.com/QwenLM/qwen-code/releases",
     "pricing": null,
-    "mcp": "https://qwenlm.github.io/qwen-code-docs/en/users/features/mcp/",
     "issue": "https://github.com/QwenLM/qwen-code/issues"
   },
   "communityUrls": {

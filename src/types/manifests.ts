@@ -111,7 +111,6 @@ export interface ManifestResourceUrls {
   download: string | null
   changelog: string | null
   pricing: string | null
-  mcp: string | null
   issue: string | null
 }
 

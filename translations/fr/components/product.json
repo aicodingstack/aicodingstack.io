@@ -67,8 +67,6 @@
     "downloadDescription": "Télécharger la dernière version",
     "issue": "Suivi des problèmes",
     "issueDescription": "Signaler des bugs et demander des fonctionnalités",
-    "mcp": "Documentation MCP",
-    "mcpDescription": "En savoir plus sur l'intégration MCP",
     "pricingDescription": "Voir les plans tarifaires"
   },
   "vendorMatrix": {

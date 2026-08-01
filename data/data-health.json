@@ -73,57 +73,57 @@
   },
   "translationsByLocale": {
     "de": {
-      "totalStrings": 467,
+      "totalStrings": 465,
       "matchingEnglish": 39,
       "matchingEnglishPercent": 8.4
     },
     "es": {
-      "totalStrings": 467,
+      "totalStrings": 465,
       "matchingEnglish": 25,
       "matchingEnglishPercent": 5.4
     },
     "fr": {
-      "totalStrings": 467,
+      "totalStrings": 465,
       "matchingEnglish": 36,
       "matchingEnglishPercent": 7.7
     },
     "id": {
-      "totalStrings": 467,
+      "totalStrings": 465,
       "matchingEnglish": 30,
-      "matchingEnglishPercent": 6.4
+      "matchingEnglishPercent": 6.5
     },
     "ja": {
-      "totalStrings": 467,
+      "totalStrings": 465,
       "matchingEnglish": 23,
       "matchingEnglishPercent": 4.9
     },
     "ko": {
-      "totalStrings": 467,
+      "totalStrings": 465,
       "matchingEnglish": 23,
       "matchingEnglishPercent": 4.9
     },
     "pt": {
-      "totalStrings": 467,
+      "totalStrings": 465,
       "matchingEnglish": 31,
-      "matchingEnglishPercent": 6.6
+      "matchingEnglishPercent": 6.7
     },
     "ru": {
-      "totalStrings": 467,
+      "totalStrings": 465,
       "matchingEnglish": 23,
       "matchingEnglishPercent": 4.9
     },
     "tr": {
-      "totalStrings": 467,
+      "totalStrings": 465,
       "matchingEnglish": 26,
       "matchingEnglishPercent": 5.6
     },
     "zh-Hans": {
-      "totalStrings": 467,
+      "totalStrings": 465,
       "matchingEnglish": 22,
       "matchingEnglishPercent": 4.7
     },
     "zh-Hant": {
-      "totalStrings": 467,
+      "totalStrings": 465,
       "matchingEnglish": 22,
       "matchingEnglishPercent": 4.7
     }

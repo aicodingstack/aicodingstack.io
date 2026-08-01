@@ -101,7 +101,6 @@
     "download": "https://openai.com/codex",
     "changelog": "https://developers.openai.com/codex/changelog",
     "pricing": "https://chatgpt.com/codex/pricing/",
-    "mcp": null,
     "issue": "https://github.com/openai/codex/issues"
   },
   "communityUrls": {
