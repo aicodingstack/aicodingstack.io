@@ -208,6 +208,11 @@ export const articlesMetadata: Record<string, ArticleMetadata[]> = {
 export const docsMetadata: Record<string, DocSection[]> = {
   en: [
     {
+      id: 'data-sources',
+      slug: 'data-sources',
+      title: 'Data Sources',
+    },
+    {
       id: 'getting-started',
       slug: 'getting-started',
       title: 'Getting Started',
@@ -219,6 +224,11 @@ export const docsMetadata: Record<string, DocSection[]> = {
     },
   ],
   de: [
+    {
+      id: 'data-sources',
+      slug: 'data-sources',
+      title: 'Datenquellen',
+    },
     {
       id: 'getting-started',
       slug: 'getting-started',
@@ -232,6 +242,11 @@ export const docsMetadata: Record<string, DocSection[]> = {
   ],
   es: [
     {
+      id: 'data-sources',
+      slug: 'data-sources',
+      title: 'Fuentes de datos',
+    },
+    {
       id: 'getting-started',
       slug: 'getting-started',
       title: 'Primeros pasos',
@@ -243,6 +258,11 @@ export const docsMetadata: Record<string, DocSection[]> = {
     },
   ],
   fr: [
+    {
+      id: 'data-sources',
+      slug: 'data-sources',
+      title: 'Sources de données',
+    },
     {
       id: 'getting-started',
       slug: 'getting-started',
@@ -256,6 +276,11 @@ export const docsMetadata: Record<string, DocSection[]> = {
   ],
   id: [
     {
+      id: 'data-sources',
+      slug: 'data-sources',
+      title: 'Sumber data',
+    },
+    {
       id: 'getting-started',
       slug: 'getting-started',
       title: 'Memulai',
@@ -267,6 +292,11 @@ export const docsMetadata: Record<string, DocSection[]> = {
     },
   ],
   ja: [
+    {
+      id: 'data-sources',
+      slug: 'data-sources',
+      title: 'データソース',
+    },
     {
       id: 'getting-started',
       slug: 'getting-started',
@@ -280,6 +310,11 @@ export const docsMetadata: Record<string, DocSection[]> = {
   ],
   ko: [
     {
+      id: 'data-sources',
+      slug: 'data-sources',
+      title: '데이터 출처',
+    },
+    {
       id: 'getting-started',
       slug: 'getting-started',
       title: '시작하기',
@@ -291,6 +326,11 @@ export const docsMetadata: Record<string, DocSection[]> = {
     },
   ],
   pt: [
+    {
+      id: 'data-sources',
+      slug: 'data-sources',
+      title: 'Fontes de dados',
+    },
     {
       id: 'getting-started',
       slug: 'getting-started',
@@ -304,6 +344,11 @@ export const docsMetadata: Record<string, DocSection[]> = {
   ],
   ru: [
     {
+      id: 'data-sources',
+      slug: 'data-sources',
+      title: 'Источники данных',
+    },
+    {
       id: 'getting-started',
       slug: 'getting-started',
       title: 'Начало работы',
@@ -315,6 +360,11 @@ export const docsMetadata: Record<string, DocSection[]> = {
     },
   ],
   tr: [
+    {
+      id: 'data-sources',
+      slug: 'data-sources',
+      title: 'Veri kaynakları',
+    },
     {
       id: 'getting-started',
       slug: 'getting-started',
@@ -328,6 +378,11 @@ export const docsMetadata: Record<string, DocSection[]> = {
   ],
   'zh-Hans': [
     {
+      id: 'data-sources',
+      slug: 'data-sources',
+      title: '数据来源',
+    },
+    {
       id: 'getting-started',
       slug: 'getting-started',
       title: '快速入门',
@@ -339,6 +394,11 @@ export const docsMetadata: Record<string, DocSection[]> = {
     },
   ],
   'zh-Hant': [
+    {
+      id: 'data-sources',
+      slug: 'data-sources',
+      title: '資料來源',
+    },
     {
       id: 'getting-started',
       slug: 'getting-started',

@@ -29,50 +29,62 @@ const docComponents: Record<
   Record<string, () => Promise<{ default: React.ComponentType }>>
 > = {
   en: {
+    'data-sources': () => import('@content/docs/en/data-sources.mdx'),
     'getting-started': () => import('@content/docs/en/getting-started.mdx'),
     welcome: () => import('@content/docs/en/welcome.mdx'),
   },
   de: {
+    'data-sources': () => import('@content/docs/de/data-sources.mdx'),
     'getting-started': () => import('@content/docs/de/getting-started.mdx'),
     welcome: () => import('@content/docs/de/welcome.mdx'),
   },
   es: {
+    'data-sources': () => import('@content/docs/es/data-sources.mdx'),
     'getting-started': () => import('@content/docs/es/getting-started.mdx'),
     welcome: () => import('@content/docs/es/welcome.mdx'),
   },
   fr: {
+    'data-sources': () => import('@content/docs/fr/data-sources.mdx'),
     'getting-started': () => import('@content/docs/fr/getting-started.mdx'),
     welcome: () => import('@content/docs/fr/welcome.mdx'),
   },
   id: {
+    'data-sources': () => import('@content/docs/id/data-sources.mdx'),
     'getting-started': () => import('@content/docs/id/getting-started.mdx'),
     welcome: () => import('@content/docs/id/welcome.mdx'),
   },
   ja: {
+    'data-sources': () => import('@content/docs/ja/data-sources.mdx'),
     'getting-started': () => import('@content/docs/ja/getting-started.mdx'),
     welcome: () => import('@content/docs/ja/welcome.mdx'),
   },
   ko: {
+    'data-sources': () => import('@content/docs/ko/data-sources.mdx'),
     'getting-started': () => import('@content/docs/ko/getting-started.mdx'),
     welcome: () => import('@content/docs/ko/welcome.mdx'),
   },
   pt: {
+    'data-sources': () => import('@content/docs/pt/data-sources.mdx'),
     'getting-started': () => import('@content/docs/pt/getting-started.mdx'),
     welcome: () => import('@content/docs/pt/welcome.mdx'),
   },
   ru: {
+    'data-sources': () => import('@content/docs/ru/data-sources.mdx'),
     'getting-started': () => import('@content/docs/ru/getting-started.mdx'),
     welcome: () => import('@content/docs/ru/welcome.mdx'),
   },
   tr: {
+    'data-sources': () => import('@content/docs/tr/data-sources.mdx'),
     'getting-started': () => import('@content/docs/tr/getting-started.mdx'),
     welcome: () => import('@content/docs/tr/welcome.mdx'),
   },
   'zh-Hans': {
+    'data-sources': () => import('@content/docs/zh-Hans/data-sources.mdx'),
     'getting-started': () => import('@content/docs/zh-Hans/getting-started.mdx'),
     welcome: () => import('@content/docs/zh-Hans/welcome.mdx'),
   },
   'zh-Hant': {
+    'data-sources': () => import('@content/docs/zh-Hant/data-sources.mdx'),
     'getting-started': () => import('@content/docs/zh-Hant/getting-started.mdx'),
     welcome: () => import('@content/docs/zh-Hant/welcome.mdx'),
   },

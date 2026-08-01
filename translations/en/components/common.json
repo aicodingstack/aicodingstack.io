@@ -1,6 +1,7 @@
 {
   "footer": {
     "copyright": "© {year} AI Coding Stack • Built with ❤︎ • Open Source",
+    "dataSources": "Data Sources",
     "openSource": "Open source AI coding metadata repository.",
     "selectLanguage": "Select Language",
     "tagline": "Your AI Coding Ecosystem Hub.",
