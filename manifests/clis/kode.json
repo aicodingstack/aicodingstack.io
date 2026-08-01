@@ -38,16 +38,19 @@
       "description": "Kode 是開放原始碼 AI 程式設計助手，理解您的程式碼庫、編輯檔案、執行命令並處理完整的開發工作流程。透過多模型支援擴充 Claude Code。"
     }
   },
-  "verified": false,
-  "websiteUrl": "https://github.com/shareAI-lab/Kode",
-  "docsUrl": "https://github.com/shareAI-lab/Kode/blob/main/README.md",
+  "verified": true,
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://github.com/shareAI-lab/Kode-CLI",
+  "docsUrl": "https://github.com/shareAI-lab/Kode-CLI/blob/main/README.md",
   "vendor": "shareAI Lab",
   "latestVersion": "2.2.1",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@shareai-lab/kode"
   },
-  "githubUrl": "https://github.com/shareAI-lab/Kode-cli",
+  "githubUrl": "https://github.com/shareAI-lab/Kode-CLI",
   "license": "Apache-2.0",
   "pricing": [
     {
@@ -60,15 +63,15 @@
   ],
   "resourceUrls": {
     "download": "https://www.npmjs.com/package/@shareai-lab/kode",
-    "changelog": null,
+    "changelog": "https://github.com/shareAI-lab/Kode-CLI/releases",
     "pricing": null,
     "mcp": null,
-    "issue": "https://github.com/shareAI-lab/Kode/issues"
+    "issue": "https://github.com/shareAI-lab/Kode-CLI/issues"
   },
   "communityUrls": {
     "linkedin": null,
     "twitter": null,
-    "github": "https://github.com/shareAI-lab/Kode-cli",
+    "github": "https://github.com/shareAI-lab/Kode-CLI",
     "youtube": null,
     "discord": null,
     "reddit": null,
@@ -79,27 +82,44 @@
     {
       "os": "macOS",
       "installCommand": "npm install -g @shareai-lab/kode",
-      "launchCommand": "kode (alias: kwa or kd)",
+      "launchCommand": "kode",
       "installPath": null
     },
     {
       "os": "Windows",
       "installCommand": "npm install -g @shareai-lab/kode",
-      "launchCommand": "kode (alias: kwa or kd)",
+      "launchCommand": "kode",
       "installPath": null
     },
     {
       "os": "Linux",
       "installCommand": "npm install -g @shareai-lab/kode",
-      "launchCommand": "kode (alias: kwa or kd)",
+      "launchCommand": "kode",
       "installPath": null
     }
   ],
   "sources": [
     {
-      "url": "https://github.com/shareAI-lab/Kode-cli",
-      "title": "Kode github community",
-      "fields": ["communityUrls.github"]
+      "url": "https://github.com/shareAI-lab/Kode-CLI",
+      "title": "Kode official repository",
+      "fields": [
+        "name",
+        "description",
+        "websiteUrl",
+        "docsUrl",
+        "githubUrl",
+        "license",
+        "pricing",
+        "platforms",
+        "resourceUrls.changelog",
+        "resourceUrls.issue",
+        "communityUrls.github"
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/@shareai-lab/kode",
+      "title": "Kode npm package",
+      "fields": ["latestVersion", "releaseTracking", "resourceUrls.download", "platforms"]
     }
   ]
 }

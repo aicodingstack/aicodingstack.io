@@ -42,30 +42,26 @@
     "kiro-cli": 4.1,
     "kode": 5.2,
     "vibe-cli": 4.8,
-    "neovate-code": 1.6,
     "omp": 19.9,
     "opencode": 190,
     "qoder-cli": null,
-    "qwen-code": 26.3,
-    "rovo-dev-cli": null
+    "qwen-code": 26.3
   },
   "desktops": {
     "air": null,
     "claude-code-desktop": 139.2,
+    "codebuddy": null,
     "codex-app": 102.6,
     "factory-desktop": null,
     "minimax-code": 0,
     "opencode-desktop": 190,
     "qoder": null,
     "stagewise": 6.8,
-    "trae-work": null,
     "verdent-deck": 0,
-    "workbuddy": null,
     "zcode": null
   },
   "ides": {
     "antigravity": null,
-    "codebuddy": null,
     "cursor": 33.1,
     "intellij-idea": 20.4,
     "kiro": 4.1,
@@ -73,18 +69,5 @@
     "vscode": 187.9,
     "windsurf": null,
     "zed": 87.6
-  },
-  "models": {
-    "claude-fable-5": null,
-    "claude-opus-4-8": null,
-    "claude-sonnet-5": null,
-    "composer": null,
-    "deepseek-3-2": null,
-    "gemini-3-1-pro-preview": null,
-    "gemini-3-5-flash": null,
-    "glm-4-6v": null,
-    "gpt-5-6-luna": null,
-    "gpt-5-6-sol": null,
-    "gpt-5-6-terra": null
   }
 }

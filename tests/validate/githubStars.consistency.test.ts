@@ -1,7 +1,8 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-import { describe, it } from 'vitest'
+import Ajv from 'ajv'
+import { describe, expect, it } from 'vitest'
 
 /**
  * Read and parse JSON from disk.
@@ -110,6 +111,18 @@ function validateGithubStarsConsistency(rootDir: string): string[] {
 }
 
 describe('validate: github-stars consistency', () => {
+  it('matches the GitHub Stars JSON schema', () => {
+    const rootDir = process.cwd()
+    const schema = readJsonFile(
+      path.join(rootDir, 'manifests', '$schemas', 'github-stars.schema.json')
+    )
+    const githubStars = readJsonFile(path.join(rootDir, 'data', 'github-stars.json'))
+    const ajv = new Ajv({ allErrors: true })
+    const validate = ajv.compile(schema as object)
+
+    expect(validate(githubStars), JSON.stringify(validate.errors, null, 2)).toBe(true)
+  })
+
   it('data/github-stars.json matches manifest files', () => {
     const failures = validateGithubStarsConsistency(process.cwd())
     if (failures.length > 0) {

@@ -3,5 +3,31 @@
   "title": "CLI Manifest Schema",
   "description": "Schema for CLI tool metadata",
   "type": "object",
-  "allOf": [{ "$ref": "./ref/app.schema.json" }]
+  "allOf": [
+    { "$ref": "./ref/app.schema.json" },
+    {
+      "type": "object",
+      "properties": {
+        "latestVersion": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^(?!\\s*(?:[Ll][Aa][Tt][Ee][Ss][Tt]|[Uu][Nn][Kk][Nn][Oo][Ww][Nn]|[Nn]\\/?[Aa]|[Tt][Bb][Dd]|[-—])\\s*$).+$",
+          "description": "Concrete current CLI version; placeholders such as Latest, Unknown, N/A, or TBD are not allowed"
+        },
+        "resourceUrls": {
+          "type": "object",
+          "properties": {
+            "download": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https://",
+              "description": "Official HTTPS download or installation page"
+            }
+          },
+          "required": ["download"]
+        }
+      },
+      "required": ["latestVersion", "resourceUrls"]
+    }
+  ]
 }

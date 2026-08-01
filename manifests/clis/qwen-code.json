@@ -35,28 +35,64 @@
       "description": "Qwen Code 是 Alibaba 的開放原始碼終端機程式設計代理，可用於理解大型程式碼庫、編輯檔案、執行命令，並連接 Qwen 或相容 OpenAI 的模型。"
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
       "url": "https://github.com/QwenLM/qwen-code",
-      "title": "Qwen Code repository"
+      "title": "Qwen Code repository",
+      "fields": [
+        "name",
+        "description",
+        "websiteUrl",
+        "githubUrl",
+        "license",
+        "platforms",
+        "resourceUrls.issue",
+        "communityUrls.github"
+      ]
     },
     {
-      "url": "https://qwenlm.github.io/qwen-code-docs/",
-      "title": "Qwen Code documentation"
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/",
+      "title": "Qwen Code documentation",
+      "fields": ["description", "docsUrl"]
+    },
+    {
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/quickstart/",
+      "title": "Qwen Code quickstart",
+      "fields": ["resourceUrls.download", "platforms"]
+    },
+    {
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.21.2",
+      "title": "Qwen Code v0.21.2 release",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
+    },
+    {
+      "url": "https://www.npmjs.com/package/@qwen-code/qwen-code",
+      "title": "Qwen Code npm package",
+      "fields": ["releaseTracking"]
+    },
+    {
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/mcp/",
+      "title": "Qwen Code MCP documentation",
+      "fields": ["resourceUrls.mcp"]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen",
+      "title": "Qwen official X account",
+      "fields": ["communityUrls.twitter"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "id": "qwen-code",
   "name": "Qwen Code",
   "familyId": "qwen-code",
   "description": "Qwen Code is Alibaba's open source terminal coding agent for understanding large codebases, editing files, executing commands, and connecting to Qwen or OpenAI-compatible models.",
-  "websiteUrl": "https://qwenlm.github.io/qwen-code-docs",
-  "docsUrl": "https://qwenlm.github.io/qwen-code-docs",
+  "websiteUrl": "https://qwenlm.github.io/qwen-code-docs/en/",
+  "docsUrl": "https://qwenlm.github.io/qwen-code-docs/en/",
   "vendor": "Alibaba",
-  "latestVersion": "0.21.0",
+  "latestVersion": "0.21.2",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@qwen-code/qwen-code"
@@ -73,10 +109,10 @@
     }
   ],
   "resourceUrls": {
-    "download": "https://qwenlm.github.io/qwen-code-docs/en/users/quickstart/installation",
+    "download": "https://qwenlm.github.io/qwen-code-docs/en/users/quickstart/",
     "changelog": "https://github.com/QwenLM/qwen-code/releases",
     "pricing": null,
-    "mcp": null,
+    "mcp": "https://qwenlm.github.io/qwen-code-docs/en/users/features/mcp/",
     "issue": "https://github.com/QwenLM/qwen-code/issues"
   },
   "communityUrls": {
@@ -93,19 +129,19 @@
     {
       "os": "macOS",
       "installPath": null,
-      "installCommand": "npm install -g @qwen-code/qwen-code@latest",
+      "installCommand": "curl -fsSL https://qwen-code-assets.oss-cn-hangzhou.aliyuncs.com/installation/install-qwen-standalone.sh | bash",
       "launchCommand": "qwen"
     },
     {
       "os": "Windows",
       "installPath": null,
-      "installCommand": "npm install -g @qwen-code/qwen-code@latest",
+      "installCommand": "irm https://qwen-code-assets.oss-cn-hangzhou.aliyuncs.com/installation/install-qwen-standalone.ps1 | iex",
       "launchCommand": "qwen"
     },
     {
       "os": "Linux",
       "installPath": null,
-      "installCommand": "npm install -g @qwen-code/qwen-code@latest",
+      "installCommand": "curl -fsSL https://qwen-code-assets.oss-cn-hangzhou.aliyuncs.com/installation/install-qwen-standalone.sh | bash",
       "launchCommand": "qwen"
     }
   ]

@@ -171,7 +171,18 @@
         },
         "per": {
           "type": ["string", "null"],
-          "description": "Billing period with optional unit (e.g., 'month', 'year', 'user/month', 'seat/year', 'one-time', 'custom')"
+          "enum": [
+            "month",
+            "user/month",
+            "year",
+            "hour",
+            "credit",
+            "usage-based",
+            "subscription",
+            "custom",
+            null
+          ],
+          "description": "Canonical lowercase billing period or published non-numeric pricing state. Trial duration and other plan details belong in the tier name, not this field."
         },
         "category": {
           "type": "string",

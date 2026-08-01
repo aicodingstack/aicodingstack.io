@@ -2,6 +2,7 @@
   "$schema": "../$schemas/cli.schema.json",
   "id": "codebuddy-cli",
   "name": "CodeBuddy CLI",
+  "familyId": "codebuddy",
   "description": "CodeBuddy CLI is an AI-driven code editor that integrates intelligent code generation, debugging, and development workflows into your terminal. Features TUI mode and inline chat.",
   "translations": {
     "zh-Hans": {
@@ -39,16 +40,16 @@
     }
   },
   "verified": true,
-  "lastVerifiedAt": "2026-07-30",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.codebuddy.ai/cli",
   "docsUrl": "https://www.codebuddy.ai/docs/cli",
   "vendor": "Tencent",
-  "latestVersion": "1.0.0",
+  "latestVersion": "2.131.0",
   "releaseTracking": {
     "provider": "npm",
-    "identifier": "codebuddy-cli"
+    "identifier": "@tencent-ai/codebuddy-code"
   },
   "githubUrl": null,
   "license": "Proprietary",
@@ -83,7 +84,7 @@
     }
   ],
   "resourceUrls": {
-    "download": "https://www.codebuddy.ai/cli",
+    "download": "https://www.codebuddy.ai/docs/cli/quickstart",
     "changelog": null,
     "pricing": "https://www.codebuddy.ai/docs/ide/Account/pricing",
     "mcp": null,
@@ -98,28 +99,38 @@
     "reddit": null,
     "blog": "https://www.codebuddy.ai/blog"
   },
-  "relatedProducts": [],
+  "relatedProducts": [
+    {
+      "type": "desktop",
+      "productId": "codebuddy"
+    }
+  ],
   "platforms": [
     {
       "os": "macOS",
-      "installCommand": "npm install -g codebuddy-cli",
+      "installCommand": "npm install -g @tencent-ai/codebuddy-code",
       "launchCommand": "codebuddy",
       "installPath": null
     },
     {
       "os": "Windows",
-      "installCommand": "npm install -g codebuddy-cli",
+      "installCommand": "npm install -g @tencent-ai/codebuddy-code",
       "launchCommand": "codebuddy",
       "installPath": null
     },
     {
       "os": "Linux",
-      "installCommand": "npm install -g codebuddy-cli",
+      "installCommand": "npm install -g @tencent-ai/codebuddy-code",
       "launchCommand": "codebuddy",
       "installPath": null
     }
   ],
   "sources": [
+    {
+      "url": "https://www.codebuddy.ai/docs/ide/Introduction",
+      "title": "CodeBuddy product family introduction",
+      "fields": ["familyId", "relatedProducts"]
+    },
     {
       "url": "https://www.codebuddy.ai/blog",
       "title": "CodeBuddy blog",
@@ -129,6 +140,16 @@
       "url": "https://www.codebuddy.ai/docs/ide/Account/pricing",
       "title": "CodeBuddy pricing",
       "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://www.codebuddy.ai/docs/cli/quickstart",
+      "title": "CodeBuddy Code quick start",
+      "fields": ["resourceUrls.download", "platforms", "releaseTracking"]
+    },
+    {
+      "url": "https://www.npmjs.com/package/@tencent-ai/codebuddy-code",
+      "title": "CodeBuddy Code npm package",
+      "fields": ["latestVersion"]
     }
   ]
 }

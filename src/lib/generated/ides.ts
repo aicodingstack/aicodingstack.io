@@ -5,7 +5,6 @@
  */
 
 import Antigravity from '../../../manifests/ides/antigravity.json'
-import Codebuddy from '../../../manifests/ides/codebuddy.json'
 import Cursor from '../../../manifests/ides/cursor.json'
 import IntellijIdea from '../../../manifests/ides/intellij-idea.json'
 import Kiro from '../../../manifests/ides/kiro.json'
@@ -17,7 +16,6 @@ import type { ManifestIDE } from '../../types/manifests'
 
 export const idesData = [
   Antigravity,
-  Codebuddy,
   Cursor,
   IntellijIdea,
   Kiro,

@@ -39,7 +39,7 @@
     }
   },
   "verified": true,
-  "lastVerifiedAt": "2026-07-30",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://cursor.com/cli",
@@ -57,47 +57,47 @@
       "name": "Hobby",
       "value": 0,
       "currency": "USD",
-      "per": "Month",
+      "per": "month",
       "category": "Individual"
     },
     {
       "name": "Pro",
       "value": 20,
       "currency": "USD",
-      "per": "Month",
+      "per": "month",
       "category": "Individual"
     },
     {
       "name": "Pro+",
       "value": 60,
       "currency": "USD",
-      "per": "Month",
+      "per": "month",
       "category": "Individual"
     },
     {
       "name": "Ultra",
       "value": 200,
       "currency": "USD",
-      "per": "Month",
+      "per": "month",
       "category": "Individual"
     },
     {
       "name": "Teams",
       "value": 40,
       "currency": "USD",
-      "per": "user/Month",
+      "per": "user/month",
       "category": "Team"
     },
     {
       "name": "Enterprise",
       "value": null,
       "currency": "USD",
-      "per": "Custom",
+      "per": "custom",
       "category": "Enterprise"
     }
   ],
   "resourceUrls": {
-    "download": null,
+    "download": "https://docs.cursor.com/en/cli/installation",
     "changelog": "https://cursor.com/changelog",
     "pricing": "https://cursor.com/pricing",
     "mcp": null,
@@ -139,6 +139,11 @@
     }
   ],
   "sources": [
+    {
+      "url": "https://docs.cursor.com/en/cli/installation",
+      "title": "Cursor CLI installation",
+      "fields": ["resourceUrls.download", "platforms"]
+    },
     {
       "url": "https://www.linkedin.com/company/cursorai",
       "title": "Cursor CLI linkedin community",

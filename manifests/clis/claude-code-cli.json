@@ -49,7 +49,7 @@
     {
       "url": "https://code.claude.com/docs/en/installation",
       "title": "Claude Code installation",
-      "fields": ["platforms"]
+      "fields": ["resourceUrls.download", "platforms"]
     },
     {
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.215",
@@ -102,7 +102,7 @@
       "fields": ["communityUrls.blog"]
     }
   ],
-  "lastVerifiedAt": "2026-07-19",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "medium",
   "websiteUrl": "https://code.claude.com",
@@ -120,47 +120,47 @@
       "name": "Pro",
       "value": 20,
       "currency": "USD",
-      "per": "Month",
+      "per": "month",
       "category": "Individual"
     },
     {
       "name": "Pro (Annual)",
       "value": 17,
       "currency": "USD",
-      "per": "Month",
+      "per": "month",
       "category": "Individual"
     },
     {
       "name": "Max 5x",
       "value": 100,
       "currency": "USD",
-      "per": "Month",
+      "per": "month",
       "category": "Individual"
     },
     {
       "name": "Max 20x",
       "value": 200,
       "currency": "USD",
-      "per": "Month",
+      "per": "month",
       "category": "Individual"
     },
     {
       "name": "Team",
       "value": null,
       "currency": "USD",
-      "per": "Custom",
+      "per": "custom",
       "category": "Team"
     },
     {
       "name": "Enterprise",
       "value": null,
       "currency": "USD",
-      "per": "Custom",
+      "per": "custom",
       "category": "Enterprise"
     }
   ],
   "resourceUrls": {
-    "download": null,
+    "download": "https://code.claude.com/docs/en/installation",
     "changelog": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
     "pricing": "https://claude.com/pricing",
     "mcp": "https://code.claude.com/docs/en/mcp",

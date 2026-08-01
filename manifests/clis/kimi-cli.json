@@ -39,44 +39,139 @@
       "description": "Kimi Code CLI 是 Moonshot AI 的終端機程式設計代理，支援程式碼儲存庫探索、檔案編輯、命令執行、MCP 工具，以及與其 VS Code 擴充功能共享工作流程。"
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
-      "url": "https://www.kimi.com/resources/kimi-code-introduction",
-      "title": "Kimi Code introduction"
+      "url": "https://www.kimi.com/help/kimi-code/cli-getting-started",
+      "title": "Getting started with Kimi Code CLI",
+      "fields": [
+        "name",
+        "description",
+        "websiteUrl",
+        "docsUrl",
+        "platforms",
+        "resourceUrls.download"
+      ]
     },
     {
       "url": "https://github.com/MoonshotAI/kimi-code",
-      "title": "Kimi Code repository"
+      "title": "Kimi Code repository",
+      "fields": ["githubUrl", "license", "resourceUrls.issue", "communityUrls.github"]
     },
     {
       "url": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html",
-      "title": "Kimi Code release notes"
+      "title": "Kimi Code release notes",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
+    },
+    {
+      "url": "https://www.kimi.com/code/docs/en/kimi-code-cli/customization/mcp.html",
+      "title": "Kimi Code CLI MCP documentation",
+      "fields": ["resourceUrls.mcp"]
+    },
+    {
+      "url": "https://www.kimi.com/help/kimi-code/benefits",
+      "title": "Kimi Code membership benefits",
+      "fields": ["pricing"]
+    },
+    {
+      "url": "https://www.kimi.com/resources/kimi-k2-7-code-pricing",
+      "title": "Kimi Code monthly subscription pricing",
+      "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://www.kimi.com/resources/kimi-k2-7-code",
+      "title": "Kimi Code annual subscription pricing",
+      "fields": ["pricing"]
+    },
+    {
+      "url": "https://x.com/Kimi_Moonshot",
+      "title": "Kimi official X account",
+      "fields": ["communityUrls.twitter"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.kimi.com/code",
-  "docsUrl": "https://www.kimi.com/code/docs/en",
+  "docsUrl": "https://www.kimi.com/code/docs/en/kimi-code-cli/guides/getting-started.html",
   "vendor": "Moonshot AI",
-  "latestVersion": "0.28.0",
+  "latestVersion": "0.29.1",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "@moonshot-ai/kimi-code"
+  },
   "githubUrl": "https://github.com/MoonshotAI/kimi-code",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "pricing": [
     {
-      "name": "Free",
+      "name": "Open Source",
       "value": 0,
       "currency": null,
       "per": null,
       "category": "Individual"
+    },
+    {
+      "name": "Moderato",
+      "value": 19,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Moderato (Annual)",
+      "value": 15,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Allegretto",
+      "value": 39,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Allegretto (Annual)",
+      "value": 31,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Allegro",
+      "value": 99,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Allegro (Annual)",
+      "value": 79,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Vivace",
+      "value": 199,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "Vivace (Annual)",
+      "value": 159,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
     }
   ],
   "resourceUrls": {
-    "download": "https://www.kimi.com/code/docs/en/kimi-code/quickstart.html",
+    "download": "https://www.kimi.com/code/docs/en/kimi-code-cli/guides/getting-started.html",
     "changelog": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html",
-    "pricing": null,
-    "mcp": "https://www.kimi.com/code/docs/en/kimi-code/mcp.html",
+    "pricing": "https://www.kimi.com/resources/kimi-k2-7-code-pricing",
+    "mcp": "https://www.kimi.com/code/docs/en/kimi-code-cli/customization/mcp.html",
     "issue": "https://github.com/MoonshotAI/kimi-code/issues"
   },
   "communityUrls": {
@@ -98,19 +193,19 @@
     {
       "os": "macOS",
       "installPath": null,
-      "installCommand": "uv tool install kimi-code",
+      "installCommand": "curl -fsSL https://code.kimi.com/kimi-code/install.sh | bash",
       "launchCommand": "kimi"
     },
     {
       "os": "Windows",
       "installPath": null,
-      "installCommand": "uv tool install kimi-code",
+      "installCommand": "irm https://code.kimi.com/kimi-code/install.ps1 | iex",
       "launchCommand": "kimi"
     },
     {
       "os": "Linux",
       "installPath": null,
-      "installCommand": "uv tool install kimi-code",
+      "installCommand": "curl -fsSL https://code.kimi.com/kimi-code/install.sh | bash",
       "launchCommand": "kimi"
     }
   ]

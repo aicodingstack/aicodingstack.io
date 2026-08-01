@@ -35,16 +35,42 @@
       "description": "OpenCode Extension 將開放原始碼 OpenCode 代理連接到相容 VS Code 的編輯器，提供編輯器內容、檔案參照，以及終端機代理共享工作階段。"
     }
   },
-  "verified": false,
+  "verified": true,
   "sources": [
     {
-      "url": "https://opencode.ai/download",
-      "title": "OpenCode downloads"
+      "url": "https://opencode.ai/docs/ide",
+      "title": "OpenCode IDE documentation",
+      "fields": ["description", "websiteUrl", "docsUrl", "supportedIdes"]
+    },
+    {
+      "url": "https://marketplace.visualstudio.com/items?itemName=sst-dev.opencode",
+      "title": "OpenCode Visual Studio Marketplace listing",
+      "fields": [
+        "name",
+        "latestVersion",
+        "releaseTracking",
+        "resourceUrls.download",
+        "supportedIdes"
+      ]
+    },
+    {
+      "url": "https://github.com/anomalyco/opencode/blob/dev/sdks/vscode/package.json",
+      "title": "OpenCode VS Code extension manifest",
+      "fields": ["vendor", "releaseTracking", "githubUrl", "license"]
     },
     {
       "url": "https://github.com/anomalyco/opencode",
       "title": "OpenCode repository",
-      "fields": ["pricing"]
+      "fields": [
+        "vendor",
+        "githubUrl",
+        "license",
+        "pricing",
+        "resourceUrls.changelog",
+        "resourceUrls.issue",
+        "communityUrls.github",
+        "relatedProducts"
+      ]
     },
     {
       "url": "https://opencode.ai/zen",
@@ -52,14 +78,14 @@
       "fields": ["pricing", "resourceUrls.pricing"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
-  "confidence": "high",
+  "confidence": "medium",
   "id": "opencode-extension",
   "name": "OpenCode Extension",
   "familyId": "opencode",
   "description": "OpenCode Extension connects the open source OpenCode agent to VS Code-compatible editors for editor context, file references, and shared terminal-agent sessions.",
-  "websiteUrl": "https://opencode.ai/download",
+  "websiteUrl": "https://opencode.ai/docs/ide",
   "docsUrl": "https://opencode.ai/docs/ide",
   "vendor": "Anomaly",
   "latestVersion": "0.0.13",
@@ -79,7 +105,7 @@
     }
   ],
   "resourceUrls": {
-    "download": "https://opencode.ai/download",
+    "download": "https://marketplace.visualstudio.com/items?itemName=sst-dev.opencode",
     "changelog": "https://github.com/anomalyco/opencode/releases",
     "pricing": "https://opencode.ai/zen",
     "mcp": null,
@@ -107,8 +133,8 @@
   "supportedIdes": [
     {
       "ideId": "vscode",
-      "marketplaceUrl": null,
-      "installUri": null
+      "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=sst-dev.opencode",
+      "installUri": "vscode:extension/sst-dev.opencode"
     },
     {
       "ideId": "cursor",
@@ -116,7 +142,7 @@
       "installUri": null
     },
     {
-      "ideId": "zed",
+      "ideId": "windsurf",
       "marketplaceUrl": null,
       "installUri": null
     }

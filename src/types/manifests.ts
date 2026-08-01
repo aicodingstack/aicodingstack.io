@@ -119,11 +119,21 @@ export interface ManifestResourceUrls {
  * Pricing tier information
  * Based on: /manifests/$schemas/ref/product.schema.json#$defs/pricingTier
  */
+export type ManifestPricingPeriod =
+  | 'month'
+  | 'user/month'
+  | 'year'
+  | 'hour'
+  | 'credit'
+  | 'usage-based'
+  | 'subscription'
+  | 'custom'
+
 export interface ManifestPricingTier {
   name: string
   value: number | null
   currency?: 'USD' | 'CNY' | 'EUR' | null
-  per?: string | null
+  per?: ManifestPricingPeriod | null
   category: string
 }
 
@@ -209,7 +219,9 @@ export interface ManifestBaseApp extends ManifestBaseProduct {
  * Based on: /manifests/$schemas/cli.schema.json
  * Extends: ManifestBaseApp
  */
-export interface ManifestCLI extends ManifestBaseApp {}
+export interface ManifestCLI extends ManifestBaseApp {
+  resourceUrls: ManifestResourceUrls & { download: string }
+}
 
 /**
  * IDE (Integrated Development Environment)

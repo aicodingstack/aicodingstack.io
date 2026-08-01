@@ -39,13 +39,17 @@
     }
   },
   "verified": true,
-  "lastVerifiedAt": "2026-07-30",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://ampcode.com",
   "docsUrl": "https://ampcode.com",
   "vendor": "Sourcegraph",
-  "latestVersion": "1.0.0",
+  "latestVersion": "0.0.1785488326-gdfd462",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "@ampcode/cli"
+  },
   "githubUrl": null,
   "license": "Proprietary",
   "pricing": [
@@ -79,7 +83,7 @@
     }
   ],
   "resourceUrls": {
-    "download": "https://ampcode.com",
+    "download": "https://ampcode.com/manual",
     "changelog": "https://ampcode.com",
     "pricing": "https://ampcode.com/pricing",
     "mcp": null,
@@ -98,16 +102,19 @@
   "platforms": [
     {
       "os": "macOS",
+      "installCommand": "curl -fsSL https://ampcode.com/install.sh | bash",
       "launchCommand": "amp",
       "installPath": null
     },
     {
       "os": "Windows",
+      "installCommand": "powershell -c \"irm https://ampcode.com/install.ps1 | iex\"",
       "launchCommand": "amp",
       "installPath": null
     },
     {
       "os": "Linux",
+      "installCommand": "curl -fsSL https://ampcode.com/install.sh | bash",
       "launchCommand": "amp",
       "installPath": null
     }
@@ -127,6 +134,16 @@
       "url": "https://ampcode.com/pricing",
       "title": "Amp pricing",
       "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://ampcode.com/manual",
+      "title": "Amp Owner's Manual",
+      "fields": ["resourceUrls.download", "platforms"]
+    },
+    {
+      "url": "https://www.npmjs.com/package/@ampcode/cli",
+      "title": "Amp CLI npm package",
+      "fields": ["latestVersion", "releaseTracking"]
     }
   ]
 }

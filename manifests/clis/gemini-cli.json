@@ -49,6 +49,11 @@
     {
       "url": "https://cloud.google.com/products/gemini/pricing",
       "title": "Gemini Code Assist pricing",
+      "fields": ["pricing"]
+    },
+    {
+      "url": "https://geminicli.com/docs/resources/quota-and-pricing/",
+      "title": "Gemini CLI quotas and pricing",
       "fields": ["pricing", "resourceUrls.pricing"]
     },
     {
@@ -72,7 +77,7 @@
       "fields": ["communityUrls.blog"]
     }
   ],
-  "lastVerifiedAt": "2026-07-30",
+  "lastVerifiedAt": "2026-07-31",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://geminicli.com",
@@ -86,6 +91,13 @@
   "githubUrl": "https://github.com/google-gemini/gemini-cli",
   "license": "Apache-2.0",
   "pricing": [
+    {
+      "name": "Gemini Code Assist (Individual)",
+      "value": 0,
+      "currency": "USD",
+      "per": null,
+      "category": "Individual"
+    },
     {
       "name": "Gemini Code Assist Standard (monthly commitment)",
       "value": 0.031232877,
@@ -118,7 +130,7 @@
   "resourceUrls": {
     "download": "https://www.npmjs.com/package/@google/gemini-cli",
     "changelog": "https://geminicli.com/docs/changelogs",
-    "pricing": "https://cloud.google.com/products/gemini/pricing",
+    "pricing": "https://geminicli.com/docs/resources/quota-and-pricing/",
     "mcp": null,
     "issue": "https://github.com/google-gemini/gemini-cli/issues"
   },

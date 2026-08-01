@@ -24,12 +24,10 @@ import KiloCodeCli from '../../../manifests/clis/kilo-code-cli.json'
 import KimiCli from '../../../manifests/clis/kimi-cli.json'
 import KiroCli from '../../../manifests/clis/kiro-cli.json'
 import Kode from '../../../manifests/clis/kode.json'
-import NeovateCode from '../../../manifests/clis/neovate-code.json'
 import Omp from '../../../manifests/clis/omp.json'
 import Opencode from '../../../manifests/clis/opencode.json'
 import QoderCli from '../../../manifests/clis/qoder-cli.json'
 import QwenCode from '../../../manifests/clis/qwen-code.json'
-import RovoDevCli from '../../../manifests/clis/rovo-dev-cli.json'
 import VibeCli from '../../../manifests/clis/vibe-cli.json'
 import type { ManifestCLI } from '../../types/manifests'
 
@@ -54,12 +52,10 @@ export const clisData = [
   KimiCli,
   KiroCli,
   Kode,
-  NeovateCode,
   Omp,
   Opencode,
   QoderCli,
   QwenCode,
-  RovoDevCli,
   VibeCli,
 ] as unknown as ManifestCLI[]
 

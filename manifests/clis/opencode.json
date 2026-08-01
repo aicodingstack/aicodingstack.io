@@ -39,11 +39,14 @@
       "description": "OpenCode 是一個為終端機建置的開放原始碼 AI 程式設計 Agent。具有原生 TUI、LSP 支援、多工作階段功能，支援 75+ 個 LLM 供應商，包括本機模型。"
     }
   },
-  "verified": false,
+  "verified": true,
+  "lastVerifiedAt": "2026-07-31",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
   "websiteUrl": "https://opencode.ai",
-  "docsUrl": "https://opencode.ai",
+  "docsUrl": "https://opencode.ai/docs",
   "vendor": "Anomaly",
-  "latestVersion": "1.18.8",
+  "latestVersion": "1.18.10",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "opencode-ai"
@@ -67,10 +70,10 @@
     }
   ],
   "resourceUrls": {
-    "download": "https://opencode.ai",
+    "download": "https://opencode.ai/docs",
     "changelog": "https://github.com/anomalyco/opencode/releases",
-    "pricing": "https://opencode.ai",
-    "mcp": null,
+    "pricing": "https://opencode.ai/docs/zen",
+    "mcp": "https://opencode.ai/docs/mcp-servers",
     "issue": "https://github.com/anomalyco/opencode/issues"
   },
   "communityUrls": {
@@ -95,7 +98,7 @@
   "platforms": [
     {
       "os": "macOS",
-      "installCommand": "npm i -g opencode-ai@latest",
+      "installCommand": "curl -fsSL https://opencode.ai/install | bash",
       "launchCommand": "opencode",
       "installPath": null
     },
@@ -107,21 +110,50 @@
     },
     {
       "os": "Linux",
-      "installCommand": "npm i -g opencode-ai@latest",
+      "installCommand": "curl -fsSL https://opencode.ai/install | bash",
       "launchCommand": "opencode",
       "installPath": null
     }
   ],
   "sources": [
     {
+      "url": "https://opencode.ai/docs",
+      "title": "OpenCode documentation",
+      "fields": [
+        "name",
+        "description",
+        "websiteUrl",
+        "docsUrl",
+        "resourceUrls.download",
+        "platforms"
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/opencode-ai",
+      "title": "OpenCode npm package",
+      "fields": ["latestVersion", "releaseTracking", "license", "platforms"]
+    },
+    {
       "url": "https://github.com/anomalyco/opencode",
-      "title": "OpenCode github community",
-      "fields": ["communityUrls.github"]
+      "title": "OpenCode repository",
+      "fields": [
+        "description",
+        "githubUrl",
+        "license",
+        "resourceUrls.changelog",
+        "resourceUrls.issue",
+        "communityUrls.github"
+      ]
     },
     {
       "url": "https://opencode.ai/docs/zen",
       "title": "OpenCode Zen pricing",
       "fields": ["pricing", "resourceUrls.pricing"]
+    },
+    {
+      "url": "https://opencode.ai/docs/mcp-servers",
+      "title": "OpenCode MCP servers documentation",
+      "fields": ["resourceUrls.mcp"]
     }
   ]
 }

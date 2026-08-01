@@ -29,7 +29,7 @@ describe('product pricing summaries', () => {
             name: 'Usage',
             value: null,
             currency: 'USD',
-            per: 'request',
+            per: 'usage-based',
             category: 'Individual',
           },
         ],

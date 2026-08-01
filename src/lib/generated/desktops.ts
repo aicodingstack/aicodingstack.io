@@ -6,30 +6,28 @@
 
 import Air from '../../../manifests/desktops/air.json'
 import ClaudeCodeDesktop from '../../../manifests/desktops/claude-code-desktop.json'
+import Codebuddy from '../../../manifests/desktops/codebuddy.json'
 import CodexApp from '../../../manifests/desktops/codex-app.json'
 import FactoryDesktop from '../../../manifests/desktops/factory-desktop.json'
 import MinimaxCode from '../../../manifests/desktops/minimax-code.json'
 import OpencodeDesktop from '../../../manifests/desktops/opencode-desktop.json'
 import Qoder from '../../../manifests/desktops/qoder.json'
 import Stagewise from '../../../manifests/desktops/stagewise.json'
-import TraeWork from '../../../manifests/desktops/trae-work.json'
 import VerdentDeck from '../../../manifests/desktops/verdent-deck.json'
-import Workbuddy from '../../../manifests/desktops/workbuddy.json'
 import Zcode from '../../../manifests/desktops/zcode.json'
 import type { ManifestDesktop } from '../../types/manifests'
 
 export const desktopsData = [
   Air,
   ClaudeCodeDesktop,
+  Codebuddy,
   CodexApp,
   FactoryDesktop,
   MinimaxCode,
   OpencodeDesktop,
   Qoder,
   Stagewise,
-  TraeWork,
   VerdentDeck,
-  Workbuddy,
   Zcode,
 ] as unknown as ManifestDesktop[]
 
