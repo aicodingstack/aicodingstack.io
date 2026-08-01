@@ -1,4 +1,42 @@
 {
-  "subtitle": "提供各种 AI 模型访问的 LLM API 提供者",
-  "title": "AI 编码模型提供商"
+  "faq": {
+    "firstParty": {
+      "answer": "如果需要厂商的最新功能和直接支持，选择第一方 API；如果更看重统一接入、供应商故障转移或便捷切换模型，选择多模型 API 平台。",
+      "question": "应该使用第一方 API 还是多模型 API 平台？"
+    },
+    "providerTypes": {
+      "answer": "基础模型提供商开发并托管自己的模型；模型服务提供商则通过一个 API 或平台，将请求路由到多个开发者的模型。",
+      "question": "基础模型提供商和模型服务提供商有什么区别？"
+    },
+    "selection": {
+      "answer": "应比较模型可用性、输入和输出价格、上下文与输出上限、速率限制、数据处理方式、区域支持、延迟、可靠性、SDK 支持和生产可观测性。",
+      "question": "选择 LLM API 提供商时应该比较什么？"
+    },
+    "title": "LLM API 提供商常见问题"
+  },
+  "guide": {
+    "browseModels": "浏览 AI 编码模型",
+    "compareModels": "并排比较编码模型",
+    "criteria": {
+      "modelAccess": {
+        "description": "确认提供商具备应用所需的编码模型、版本、上下文窗口以及工具调用能力。",
+        "title": "模型接入"
+      },
+      "pricingLimits": {
+        "description": "综合比较输入和输出 Token 价格、速率限制、区域可用性、配额以及缓存优惠。",
+        "title": "价格与限制"
+      },
+      "productionFit": {
+        "description": "投入生产前，应检查隐私条款、数据保留、可靠性、延迟、SDK 质量、可观测性以及故障转移方案。",
+        "title": "生产适用性"
+      }
+    },
+    "description": "先确定产品需要的模型，再比较真实的交付条件。第一方提供商可直接访问自有模型；多模型服务则通过一个 API 简化多个模型家族的接入。",
+    "title": "如何选择适合编码的 LLM API 提供商"
+  },
+  "meta": {
+    "description": "按模型接入、价格、限制、隐私、可靠性和开发工具，比较适合 AI 编码的第一方及多模型 LLM API 提供商。"
+  },
+  "subtitle": "比较第一方模型开发商与多模型 API 平台",
+  "title": "适合 AI 编码的 LLM API 提供商"
 }

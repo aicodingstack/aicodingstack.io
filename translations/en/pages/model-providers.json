@@ -1,4 +1,42 @@
 {
-  "subtitle": "LLM API providers offering access to various AI models",
-  "title": "AI Coding Model Providers"
+  "faq": {
+    "firstParty": {
+      "answer": "Choose a first-party API when you need the newest vendor features and direct support. Choose a multi-model platform when unified access, provider fallback, or simpler model switching matters more.",
+      "question": "Should I use a first-party API or a multi-model API platform?"
+    },
+    "providerTypes": {
+      "answer": "A foundation model provider develops and serves its own models. A model service provider offers one API or platform that routes requests to models from multiple developers.",
+      "question": "What is the difference between a foundation model provider and a model service provider?"
+    },
+    "selection": {
+      "answer": "Compare model availability, token pricing, context and output limits, rate limits, data handling, regional access, latency, reliability, SDK support, and production observability.",
+      "question": "What should I compare when choosing an LLM API provider?"
+    },
+    "title": "LLM API provider questions"
+  },
+  "guide": {
+    "browseModels": "Browse AI coding models",
+    "compareModels": "Compare coding models side by side",
+    "criteria": {
+      "modelAccess": {
+        "description": "Confirm that the provider carries the coding models, versions, context windows, and tool-calling features your application needs.",
+        "title": "Model access"
+      },
+      "pricingLimits": {
+        "description": "Compare input and output token prices together with rate limits, regional availability, quotas, and any caching discounts.",
+        "title": "Pricing and limits"
+      },
+      "productionFit": {
+        "description": "Review privacy terms, data retention, reliability, latency, SDK quality, observability, and fallback options before production use.",
+        "title": "Production fit"
+      }
+    },
+    "description": "Start with the models your product requires, then compare their real delivery conditions. First-party providers offer direct access to their own models; model service providers can simplify access to multiple model families through one API.",
+    "title": "How to choose an LLM API provider for coding"
+  },
+  "meta": {
+    "description": "Compare LLM API providers for AI coding by model access, pricing, privacy, reliability, and developer tools across first-party and multi-model platforms."
+  },
+  "subtitle": "Compare first-party model developers and multi-model API platforms",
+  "title": "LLM API Providers for AI Coding"
 }

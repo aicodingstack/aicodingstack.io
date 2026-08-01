@@ -1,4 +1,42 @@
 {
-  "subtitle": "Fournisseurs d'API LLM offrant l'accès à divers modèles d'IA",
-  "title": "Fournisseurs de modèles de codage IA"
+  "faq": {
+    "firstParty": {
+      "answer": "Choisissez une API propriétaire si vous avez besoin des dernières fonctions du fournisseur et d'un support direct. Préférez une plateforme multimodèle si l'accès unifié, le repli entre fournisseurs ou le changement de modèle comptent davantage.",
+      "question": "Faut-il utiliser une API propriétaire ou une plateforme d'API multimodèle ?"
+    },
+    "providerTypes": {
+      "answer": "Un fournisseur de modèles de fondation développe et sert ses propres modèles. Un fournisseur de services de modèles propose une API ou une plateforme qui achemine les requêtes vers les modèles de plusieurs développeurs.",
+      "question": "Quelle est la différence entre un fournisseur de modèles de fondation et un fournisseur de services de modèles ?"
+    },
+    "selection": {
+      "answer": "Comparez la disponibilité des modèles, les tarifs par jeton, les limites de contexte et de sortie, les quotas, le traitement des données, l'accès régional, la latence, la fiabilité, les SDK et l'observabilité.",
+      "question": "Que faut-il comparer pour choisir un fournisseur d'API LLM ?"
+    },
+    "title": "Questions sur les fournisseurs d'API LLM"
+  },
+  "guide": {
+    "browseModels": "Parcourir les modèles d'IA pour le code",
+    "compareModels": "Comparer les modèles de code",
+    "criteria": {
+      "modelAccess": {
+        "description": "Vérifiez que le fournisseur propose les modèles de code, versions, fenêtres de contexte et fonctions d'appel d'outils dont votre application a besoin.",
+        "title": "Accès aux modèles"
+      },
+      "pricingLimits": {
+        "description": "Comparez les tarifs des jetons d'entrée et de sortie, les limites de débit, la disponibilité régionale, les quotas et les remises de mise en cache.",
+        "title": "Tarifs et limites"
+      },
+      "productionFit": {
+        "description": "Examinez la confidentialité, la conservation des données, la fiabilité, la latence, la qualité des SDK, l'observabilité et les solutions de repli avant la mise en production.",
+        "title": "Aptitude à la production"
+      }
+    },
+    "description": "Commencez par les modèles nécessaires à votre produit, puis comparez leurs conditions réelles de mise à disposition. Les fournisseurs propriétaires donnent un accès direct à leurs modèles ; les services multimodèles simplifient l'accès à plusieurs familles via une seule API.",
+    "title": "Comment choisir un fournisseur d'API LLM pour le code"
+  },
+  "meta": {
+    "description": "Comparez les fournisseurs d'API LLM pour le code selon les modèles, les tarifs, les limites, la confidentialité, la fiabilité et les outils de développement."
+  },
+  "subtitle": "Comparez les développeurs de modèles et les plateformes d'API multimodèle",
+  "title": "Fournisseurs d'API LLM pour le code assisté par IA"
 }

@@ -1,4 +1,42 @@
 {
-  "subtitle": "Çeşitli AI modellerine erişim sunan LLM API sağlayıcıları",
-  "title": "AI Kodlama Model Sağlayıcıları"
+  "faq": {
+    "firstParty": {
+      "answer": "Sağlayıcının en yeni özelliklerine ve doğrudan desteğe ihtiyacınız varsa birinci taraf API'yi seçin. Birleşik erişim, sağlayıcı yedeklemesi veya kolay model geçişi daha önemliyse çok modelli bir platform seçin.",
+      "question": "Birinci taraf API mi, çok modelli API platformu mu kullanmalıyım?"
+    },
+    "providerTypes": {
+      "answer": "Temel model sağlayıcısı kendi modellerini geliştirir ve sunar. Model hizmeti sağlayıcısı ise farklı geliştiricilerin modellerine istek yönlendiren tek bir API veya platform sunar.",
+      "question": "Temel model sağlayıcısı ile model hizmeti sağlayıcısı arasındaki fark nedir?"
+    },
+    "selection": {
+      "answer": "Model kullanılabilirliğini, token fiyatlarını, bağlam ve çıktı sınırlarını, hız limitlerini, veri işlemeyi, bölgesel erişimi, gecikmeyi, güvenilirliği, SDK desteğini ve üretim gözlemlenebilirliğini karşılaştırın.",
+      "question": "Bir LLM API sağlayıcısı seçerken neleri karşılaştırmalıyım?"
+    },
+    "title": "LLM API sağlayıcıları hakkında sorular"
+  },
+  "guide": {
+    "browseModels": "AI kodlama modellerine göz atın",
+    "compareModels": "Kodlama modellerini karşılaştırın",
+    "criteria": {
+      "modelAccess": {
+        "description": "Sağlayıcının uygulamanızın ihtiyaç duyduğu kodlama modellerini, sürümleri, bağlam pencerelerini ve araç çağırma özelliklerini sunduğunu doğrulayın.",
+        "title": "Model erişimi"
+      },
+      "pricingLimits": {
+        "description": "Girdi ve çıktı token fiyatlarıyla birlikte hız limitlerini, bölgesel kullanılabilirliği, kotaları ve önbellek indirimlerini karşılaştırın.",
+        "title": "Fiyatlandırma ve sınırlar"
+      },
+      "productionFit": {
+        "description": "Üretim kullanımı öncesinde gizlilik koşullarını, veri saklamayı, güvenilirliği, gecikmeyi, SDK kalitesini, gözlemlenebilirliği ve yedekleme seçeneklerini inceleyin.",
+        "title": "Üretime uygunluk"
+      }
+    },
+    "description": "Önce ürününüzün ihtiyaç duyduğu modelleri belirleyin, ardından gerçek sunum koşullarını karşılaştırın. Birinci taraf sağlayıcılar kendi modellerine doğrudan erişim verir; çok modelli hizmetler tek API ile birden fazla model ailesine erişimi kolaylaştırır.",
+    "title": "Kodlama için LLM API sağlayıcısı nasıl seçilir?"
+  },
+  "meta": {
+    "description": "AI kodlama için LLM API sağlayıcılarını model erişimi, fiyat, sınırlar, gizlilik, güvenilirlik ve geliştirici araçlarına göre karşılaştırın."
+  },
+  "subtitle": "Model geliştiricilerini ve çok modelli API platformlarını karşılaştırın",
+  "title": "AI Kodlama için LLM API Sağlayıcıları"
 }

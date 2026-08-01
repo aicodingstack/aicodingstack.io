@@ -1,4 +1,42 @@
 {
-  "subtitle": "Provedores de API LLM que oferecem acesso a vários modelos de IA",
-  "title": "Provedores de modelos de programação com IA"
+  "faq": {
+    "firstParty": {
+      "answer": "Escolha uma API própria quando precisar dos recursos mais recentes do fornecedor e de suporte direto. Escolha uma plataforma multimodelo quando acesso unificado, contingência entre provedores ou troca simples de modelos forem mais importantes.",
+      "question": "Devo usar uma API própria ou uma plataforma de API multimodelo?"
+    },
+    "providerTypes": {
+      "answer": "Um provedor de modelos fundamentais desenvolve e oferece seus próprios modelos. Um provedor de serviços de modelos oferece uma API ou plataforma que encaminha solicitações para modelos de vários desenvolvedores.",
+      "question": "Qual é a diferença entre um provedor de modelos fundamentais e um provedor de serviços de modelos?"
+    },
+    "selection": {
+      "answer": "Compare disponibilidade de modelos, preços por token, limites de contexto e saída, limites de uso, tratamento de dados, acesso regional, latência, confiabilidade, suporte a SDK e observabilidade em produção.",
+      "question": "O que devo comparar ao escolher um provedor de API LLM?"
+    },
+    "title": "Perguntas sobre provedores de API LLM"
+  },
+  "guide": {
+    "browseModels": "Explorar modelos de IA para programação",
+    "compareModels": "Comparar modelos de programação",
+    "criteria": {
+      "modelAccess": {
+        "description": "Confirme se o provedor oferece os modelos de programação, versões, janelas de contexto e recursos de chamada de ferramentas necessários ao seu aplicativo.",
+        "title": "Acesso a modelos"
+      },
+      "pricingLimits": {
+        "description": "Compare os preços de tokens de entrada e saída com limites de uso, disponibilidade regional, cotas e descontos de cache.",
+        "title": "Preços e limites"
+      },
+      "productionFit": {
+        "description": "Revise privacidade, retenção de dados, confiabilidade, latência, qualidade dos SDKs, observabilidade e opções de contingência antes do uso em produção.",
+        "title": "Adequação à produção"
+      }
+    },
+    "description": "Comece pelos modelos necessários ao seu produto e compare as condições reais de fornecimento. Provedores próprios dão acesso direto aos seus modelos; serviços multimodelo simplificam o acesso a várias famílias por uma única API.",
+    "title": "Como escolher um provedor de API LLM para programação"
+  },
+  "meta": {
+    "description": "Compare provedores de API LLM para programação com IA por modelos, preços, limites, privacidade, confiabilidade e ferramentas de desenvolvimento."
+  },
+  "subtitle": "Compare desenvolvedores de modelos e plataformas de API multimodelo",
+  "title": "Provedores de API LLM para programação com IA"
 }

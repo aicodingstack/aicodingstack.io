@@ -1,4 +1,42 @@
 {
-  "subtitle": "Penyedia API LLM yang menawarkan akses ke berbagai model AI",
-  "title": "Penyedia Model Coding AI"
+  "faq": {
+    "firstParty": {
+      "answer": "Pilih API pihak pertama jika Anda memerlukan fitur terbaru dari vendor dan dukungan langsung. Pilih platform multimodel jika akses terpadu, pengalihan penyedia, atau pergantian model yang mudah lebih penting.",
+      "question": "Haruskah saya memakai API pihak pertama atau platform API multimodel?"
+    },
+    "providerTypes": {
+      "answer": "Penyedia model fondasi mengembangkan dan melayani modelnya sendiri. Penyedia layanan model menawarkan satu API atau platform yang meneruskan permintaan ke model dari beberapa pengembang.",
+      "question": "Apa perbedaan penyedia model fondasi dan penyedia layanan model?"
+    },
+    "selection": {
+      "answer": "Bandingkan ketersediaan model, harga token, batas konteks dan keluaran, batas laju, penanganan data, akses regional, latensi, keandalan, dukungan SDK, dan observabilitas produksi.",
+      "question": "Apa yang perlu dibandingkan saat memilih penyedia API LLM?"
+    },
+    "title": "Pertanyaan tentang penyedia API LLM"
+  },
+  "guide": {
+    "browseModels": "Jelajahi model AI untuk coding",
+    "compareModels": "Bandingkan model coding",
+    "criteria": {
+      "modelAccess": {
+        "description": "Pastikan penyedia menawarkan model coding, versi, jendela konteks, dan fitur pemanggilan alat yang dibutuhkan aplikasi Anda.",
+        "title": "Akses model"
+      },
+      "pricingLimits": {
+        "description": "Bandingkan harga token input dan output bersama batas laju, ketersediaan regional, kuota, dan diskon caching.",
+        "title": "Harga dan batas"
+      },
+      "productionFit": {
+        "description": "Tinjau ketentuan privasi, retensi data, keandalan, latensi, kualitas SDK, observabilitas, dan opsi pengalihan sebelum digunakan di produksi.",
+        "title": "Kesiapan produksi"
+      }
+    },
+    "description": "Mulailah dari model yang dibutuhkan produk Anda, lalu bandingkan kondisi penyediaannya. Penyedia pihak pertama memberi akses langsung ke model sendiri; layanan multimodel menyederhanakan akses ke beberapa keluarga model melalui satu API.",
+    "title": "Cara memilih penyedia API LLM untuk coding"
+  },
+  "meta": {
+    "description": "Bandingkan penyedia API LLM untuk coding AI berdasarkan akses model, harga, batas, privasi, keandalan, dan alat pengembang."
+  },
+  "subtitle": "Bandingkan pengembang model pihak pertama dan platform API multimodel",
+  "title": "Penyedia API LLM untuk Coding AI"
 }
