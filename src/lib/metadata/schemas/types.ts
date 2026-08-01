@@ -202,6 +202,7 @@ export interface SchemaArticle extends SchemaBase {
 export interface SchemaWebSite extends SchemaBase {
   '@type': 'WebSite'
   name: string
+  alternateName?: string | string[]
   url: string
   description?: string
   potentialAction?: SchemaSearchAction

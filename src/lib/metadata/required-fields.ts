@@ -60,7 +60,6 @@ export interface RequiredMetadataFields {
  * Optional but recommended metadata fields
  */
 export interface RecommendedMetadataFields {
-  keywords?: string
   authors?: Array<{ name: string }>
   creator?: string
   publisher?: string
@@ -207,15 +206,6 @@ export function validateMetadataCompleteness(
       })
   }
 
-  // Check recommended fields
-  if (!metadata.keywords) {
-    errors.push({
-      field: 'keywords',
-      message: 'Missing recommended field: keywords',
-      severity: 'warning',
-    })
-  }
-
   return errors
 }
 
@@ -266,5 +256,4 @@ export function logMetadataSummary(metadata: Metadata, pageName: string): void {
   console.log(`  Canonical: ${metadata.alternates?.canonical}`)
   console.log(`  Languages: ${Object.keys(metadata.alternates?.languages || {}).length} locales`)
   console.log(`  OpenGraph: ${(metadata.openGraph as OpenGraphMetadata)?.type}`)
-  console.log(`  Keywords: ${metadata.keywords ? 'Yes' : 'No'}`)
 }

@@ -67,7 +67,10 @@ AI Coding Stack has stronger structured catalog data than many editorial competi
 | P0 | Optimize `/models` for comparison intent | It is the strongest striking-distance page | Implemented in working tree |
 | P0 | Complete `/models/compare` metadata | The comparison route lacked canonical, hreflang, robots, and complete social metadata | Implemented in working tree |
 | P0 | Reposition homepage metadata around “AI coding tools directory and comparisons” | Aligns the broad landing page with non-brand discovery intent | Implemented in working tree |
-| P1 | Expand `/model-providers` selection guidance | Average position 14.3 indicates near-term potential | Planned |
+| P0 | Add the lowercase domain as a fallback WebSite name | Google indexed pages but exact brand and domain discovery remained weak; the WebSite schema lacked an `alternateName` fallback | Implemented in working tree |
+| P0 | Correct `/model-providers` canonical and hreflang paths | Production pointed canonical and alternates to the non-public `/modelProviders` path while the sitemap used `/model-providers` | Implemented in working tree |
+| P0 | Remove static meta-keyword lists and product examples | Google Search does not use the keywords meta tag for indexing or ranking; manually curated product names become stale and distract from visible, localized search-intent content | Implemented in working tree |
+| P1 | Expand `/model-providers` selection guidance | Average position 14.3 indicates near-term potential | Implemented in working tree |
 | P1 | Expand `/clis/codex-cli` with a direct answer and setup coverage | Multiple queries rank between positions 14.9 and 16.0 | Planned |
 | P1 | Expand `/ides/vscode` for “VS Code AI” intent | Highest observed product-query impressions | Planned |
 | P1 | Expand `/ides/kiro` for AWS/Kiro entity coverage | Multiple related queries already receive impressions | Planned |

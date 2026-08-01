@@ -23,8 +23,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     basePath: 'models/compare',
     title: `${t('models.title')} ${new Date().getUTCFullYear()}`,
     description: t('models.subtitle'),
-    keywords:
-      'AI coding model comparison, compare coding LLMs, LLM pricing comparison, context window comparison',
     ogType: 'website',
   })
 }

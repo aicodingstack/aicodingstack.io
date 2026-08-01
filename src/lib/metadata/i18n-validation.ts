@@ -23,10 +23,10 @@ export const REQUIRED_TRANSLATION_KEYS = {
   modelDetail: ['metaTitle', 'contextWindow'] as const,
 
   // 文章列表页
-  articles: ['meta.title', 'meta.description', 'keywords'] as const,
+  articles: ['meta.title', 'meta.description'] as const,
 
   // 文档列表页
-  docs: ['meta.title', 'meta.description', 'keywords'] as const,
+  docs: ['meta.title', 'meta.description'] as const,
 
   // 比较页（每个分类）
   comparison: (category: Category) => [`${category}.title`, `${category}.subtitle`] as const,

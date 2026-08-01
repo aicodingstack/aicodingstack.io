@@ -11,13 +11,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     locale: locale as Locale,
     category: 'vendors',
     translationNamespace: 'pages.vendors',
-    additionalKeywords: [
-      'LLM vendors',
-      'Google',
-      'Microsoft',
-      'AI companies',
-      'foundation model providers',
-    ],
   })
 }
 

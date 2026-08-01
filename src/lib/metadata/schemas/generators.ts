@@ -338,6 +338,7 @@ export const generateDocsSchema = cache(
 export const generateWebSiteSchema = cache(async (): Promise<SchemaWebSite> => {
   return buildWebSiteSchema({
     name: SITE_CONFIG.name,
+    alternateName: SITE_CONFIG.domain,
     url: SITE_CONFIG.url,
     description:
       'Comprehensive directory for AI coding tools across IDEs, CLIs, MCP servers, models and providers.',

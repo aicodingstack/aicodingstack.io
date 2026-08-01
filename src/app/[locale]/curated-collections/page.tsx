@@ -23,8 +23,6 @@ export async function generateMetadata({ params }: LocalePageProps) {
     basePath: 'curated-collections',
     title,
     description,
-    keywords:
-      'AI coding resources, MCP protocol, Agent2Agent, development standards, AI coding articles, semantic versioning, conventional commits',
     ogType: 'website',
   })
 }

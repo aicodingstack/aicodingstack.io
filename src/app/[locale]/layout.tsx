@@ -61,16 +61,6 @@ export async function generateMetadata({
     locale: locale as Locale,
     title,
     description,
-    keywords: [
-      'AI coding tools',
-      'AI code editor',
-      'AI IDE',
-      'AI coding assistant',
-      'AI CLI',
-      'LLM models',
-      'AI coding directory',
-      'coding tools comparison',
-    ].join(', '),
     canonical: canonicalPath,
     languageAlternates: buildLanguageAlternates(''),
     openGraph: {

@@ -26,6 +26,14 @@ function normalizeRoutePath(path: string): string {
 }
 
 /**
+ * Converts a lower-camel-case category identifier to its public kebab-case route.
+ * @example 'modelProviders' → 'model-providers'
+ */
+export function getCategoryRoutePath(category: Category): string {
+  return category.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase()
+}
+
+/**
  * Maps internal locale format to OpenGraph locale format
  * @example 'zh-Hans' → 'zh_CN', 'en' → 'en_US'
  */
@@ -91,15 +99,6 @@ export function buildDetailPageTitle(options: {
   const { productName, typeDescription, year = METADATA_DEFAULTS.currentYear } = options
 
   return `${productName} - ${typeDescription} | Features & Setup Guide ${year}`
-}
-
-/**
- * Builds keywords array from multiple sources
- */
-export function buildKeywords(parts: Array<string | string[]>): string {
-  const flatKeywords = parts.flat().filter(Boolean)
-  const uniqueKeywords = [...new Set(flatKeywords)]
-  return uniqueKeywords.join(', ')
 }
 
 /**

@@ -24,8 +24,6 @@ export async function generateMetadata({ params }: LocalePageProps) {
     basePath: '',
     title,
     description,
-    keywords:
-      'AI coding, AI IDE, AI CLI, AI extensions, LLM models, AI coding tools, Cursor, Claude Code, VS Code',
     ogType: 'website',
     pageType: 'home',
   })

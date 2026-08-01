@@ -3,7 +3,8 @@ import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import sitemap from '@/app/sitemap'
 import { locales } from '@/i18n/config'
-import { SITE_CONFIG } from '@/lib/metadata/config'
+import { METADATA_CATEGORIES, SITE_CONFIG } from '@/lib/metadata/config'
+import { getCategoryRoutePath } from '@/lib/metadata/helpers'
 
 describe('sitemap', () => {
   const entries = sitemap()
@@ -27,6 +28,23 @@ describe('sitemap', () => {
     for (const url of expectedUrls) {
       expect(sitemapUrls.has(url)).toBe(true)
       expect(sitemapUrls.has(`${url}/`)).toBe(false)
+    }
+  })
+
+  it('contains every public category route for every locale', () => {
+    const sitemapUrls = new Set(entries.map(entry => entry.url))
+
+    for (const category of METADATA_CATEGORIES) {
+      const publicPath = getCategoryRoutePath(category)
+
+      for (const locale of locales) {
+        const expectedUrl =
+          locale === 'en'
+            ? `${SITE_CONFIG.url}/${publicPath}`
+            : `${SITE_CONFIG.url}/${locale}/${publicPath}`
+
+        expect(sitemapUrls.has(expectedUrl)).toBe(true)
+      }
     }
   })
 

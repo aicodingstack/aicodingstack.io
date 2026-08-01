@@ -20,8 +20,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     basePath: 'ai-coding-landscape',
     title,
     description,
-    keywords:
-      'AI coding ecosystem, AI development landscape, AI tools, coding tools visualization, vendor comparison, product matrix',
     ogType: 'website',
   })
 }

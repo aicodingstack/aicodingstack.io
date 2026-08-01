@@ -11,7 +11,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     locale: locale as Locale,
     category: 'models',
     translationNamespace: 'pages.models',
-    additionalKeywords: ['LLM for coding', 'Claude Sonnet', 'GPT-4', 'coding AI models'],
   })
 }
 
