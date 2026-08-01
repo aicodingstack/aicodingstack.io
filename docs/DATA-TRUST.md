@@ -40,6 +40,10 @@ Legacy records may have `verified: true` without structured provenance because t
 
 For new entries and material updates, a `verified: true` change should include at least one authoritative source, `lastVerifiedAt`, `verifiedBy`, and `confidence`. Official product documentation and pricing pages are preferred over third-party summaries. Benchmark fields should cite the benchmark owner or an official model report.
 
+## Reference sources
+
+The localized, reader-facing source policy is published under `content/docs/*/data-sources.mdx`. Publisher-maintained Hugging Face repositories and model cards may be used for open-weight model artifacts, licenses, base-model relationships, supported libraries, datasets, and evaluation metadata; record ownership must be checked so community uploads are not treated as first-party claims. Models.dev may be used to discover and cross-check model specifications, capabilities, release information, and provider pricing. Artificial Analysis may be used for its Intelligence Index, methodology, and comparable API market observations. These reference sources do not override applicable first-party documentation, and every incorporated value remains subject to project review.
+
 ## Model catalog inclusion
 
 Every new model catalog entry must have a published Artificial Analysis Intelligence Index result compatible with the index version tracked in `data/artificial-analysis-index.json`. Artificial Analysis Coding Agent Index, Agentic Index, individual benchmark scores, and provider-only measurements are different metrics and must not be substituted or mixed into the model Intelligence Index.

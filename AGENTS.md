@@ -15,6 +15,7 @@
 - TypeScript may contain types, loaders, validators, transformations, calculations, presentation logic, and implementation-only constants with no product or editorial meaning. When uncertain, treat a value as data.
 - Update the JSON schema, corresponding TypeScript type, and validation tests together whenever a data shape changes.
 - Keep `src/types/manifests.ts` in one-to-one correspondence with the schemas under `manifests/$schemas/`.
+- Follow [docs/DATA-TRUST.md](docs/DATA-TRUST.md) for provenance, source priority, verification metadata, and freshness requirements when adding or materially updating data.
 
 ## Design
 
