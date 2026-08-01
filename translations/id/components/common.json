@@ -1,6 +1,7 @@
 {
   "footer": {
     "copyright": "© {year} AI Coding Stack • Dibuat dengan ❤︎ • Open Source",
+    "dataSources": "Sumber data",
     "openSource": "Repositori metadata coding AI open source.",
     "selectLanguage": "Pilih Bahasa",
     "tagline": "Pusat ekosistem coding AI Anda.",

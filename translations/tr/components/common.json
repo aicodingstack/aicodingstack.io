@@ -1,6 +1,7 @@
 {
   "footer": {
     "copyright": "© {year} AI Coding Stack • ❤︎ ile yapıldı • Açık Kaynak",
+    "dataSources": "Veri kaynakları",
     "openSource": "Açık kaynak AI kodlama metaveri deposu.",
     "selectLanguage": "Dil Seçin",
     "tagline": "AI Kodlama Ekosistemi Merkeziniz.",

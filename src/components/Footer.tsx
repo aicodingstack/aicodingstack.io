@@ -53,6 +53,7 @@ export default function Footer() {
 
   const documentationLinks = [
     { href: '/docs', label: tShared('terms.docs') },
+    { href: '/docs/data-sources', label: tComponent('footer.dataSources') },
     { href: '/articles', label: tShared('terms.articles') },
     { href: '/curated-collections', label: tShared('terms.curatedCollections') },
     { href: '/#faq', label: tShared('terms.faq') },

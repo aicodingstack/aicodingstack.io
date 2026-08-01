@@ -1,6 +1,7 @@
 {
   "footer": {
     "copyright": "© {year} AI Coding Stack • ❤︎で構築 • オープンソース",
+    "dataSources": "データソース",
     "openSource": "オープンソース AI コーディングメタデータリポジトリ。",
     "selectLanguage": "言語を選択",
     "tagline": "あなたの AI コーディングエコシステムのハブ。",
