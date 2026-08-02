@@ -11,6 +11,7 @@
     "codota/TabNine": 10800,
     "continuedev/continue": 35100,
     "cursor/cursor": 33100,
+    "earendil-works/pi": 81700,
     "github/copilot-cli": 11000,
     "google-antigravity/antigravity-cli": 1700,
     "google-gemini/gemini-cli": 106200,
@@ -29,6 +30,7 @@
     "stagewise-io/stagewise": 6800,
     "Trae-AI/TRAE": 900,
     "verdentAI/docs": 0,
+    "VSCodium/vscodium": 32600,
     "xai-org/grok-build": 22800,
     "zed-industries/zed": 87600
   }

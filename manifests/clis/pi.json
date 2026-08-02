@@ -1,0 +1,130 @@
+{
+  "$schema": "../$schemas/cli.schema.json",
+  "id": "pi",
+  "name": "Pi",
+  "familyId": "pi",
+  "description": "Pi is an open source terminal coding harness and interactive coding-agent CLI. It supports interactive, print/JSON, RPC, and SDK modes plus TypeScript extensions, skills, themes, and packages.",
+  "translations": {
+    "de": {
+      "description": "Pi ist ein quelloffenes Terminal-Coding-Harness und eine interaktive Coding-Agent-CLI. Es bietet interaktive, Print-/JSON-, RPC- und SDK-Modi sowie TypeScript-Erweiterungen, Skills und Pakete."
+    },
+    "es": {
+      "description": "Pi es un entorno de código abierto para terminal y una CLI interactiva de agente de programación. Incluye modos interactivo, impresión/JSON, RPC y SDK, además de extensiones TypeScript."
+    },
+    "fr": {
+      "description": "Pi est un environnement de codage open source pour terminal et une CLI interactive d’agent de codage. Il propose des modes interactif, impression/JSON, RPC et SDK, ainsi que des extensions TypeScript."
+    },
+    "id": {
+      "description": "Pi adalah harness coding terminal sumber terbuka dan CLI agen coding interaktif. Pi mendukung mode interaktif, cetak/JSON, RPC, dan SDK serta ekstensi TypeScript, skill, tema, dan paket."
+    },
+    "ja": {
+      "description": "Piは、対話、印刷／JSON、RPC、SDKの各モードを備えた、オープンソースのターミナル向けコーディングハーネス兼対話型コーディングエージェントCLIです。TypeScript拡張、スキル、プロンプトテンプレート、テーマ、パッケージで拡張できます。"
+    },
+    "ko": {
+      "description": "Pi는 대화형, 출력/JSON, RPC, SDK 모드를 제공하는 오픈 소스 터미널 코딩 하네스이자 대화형 코딩 에이전트 CLI입니다. TypeScript 확장, 스킬, 프롬프트 템플릿, 테마, 패키지로 확장할 수 있습니다."
+    },
+    "pt": {
+      "description": "Pi é um ambiente de programação de código aberto para terminal e uma CLI interativa de agente de programação. Oferece modos interativo, impressão/JSON, RPC e SDK, além de extensões TypeScript."
+    },
+    "ru": {
+      "description": "Pi — терминальная среда программирования с открытым кодом и интерактивный CLI-агент. Поддерживает интерактивный режим, print/JSON, RPC и SDK, а также расширения TypeScript, навыки и пакеты."
+    },
+    "tr": {
+      "description": "Pi, açık kaynaklı bir terminal kodlama altyapısı ve etkileşimli bir kodlama ajanı komut satırı aracıdır. Etkileşimli, yazdırma/JSON, RPC ve SDK modları ile TypeScript uzantıları ve paketler sunar."
+    },
+    "zh-Hans": {
+      "description": "Pi 是一款开源终端编码工具框架和交互式编码 Agent CLI，支持交互、打印/JSON、RPC 与 SDK 模式，并可通过 TypeScript 扩展、技能、提示词模板、主题和软件包进行扩展。"
+    },
+    "zh-Hant": {
+      "description": "Pi 是一款開放原始碼終端機程式設計工具框架和互動式程式設計 Agent CLI，支援互動、列印/JSON、RPC 與 SDK 模式，並可透過 TypeScript 擴充功能、技能、提示詞範本、主題和套件進行擴充。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://pi.dev/docs/latest",
+      "title": "Pi documentation",
+      "fields": ["name", "description", "websiteUrl", "docsUrl"]
+    },
+    {
+      "url": "https://pi.dev/docs/latest/quickstart",
+      "title": "Pi quickstart",
+      "fields": ["description", "vendor", "releaseTracking", "resourceUrls.download", "platforms"]
+    },
+    {
+      "url": "https://github.com/earendil-works/pi",
+      "title": "Pi official repository",
+      "fields": [
+        "description",
+        "githubUrl",
+        "license",
+        "pricing",
+        "resourceUrls.issue",
+        "communityUrls.github"
+      ]
+    },
+    {
+      "url": "https://github.com/earendil-works/pi/releases/tag/v0.83.0",
+      "title": "Pi v0.83.0 release",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-01",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://pi.dev",
+  "docsUrl": "https://pi.dev/docs/latest",
+  "vendor": "Earendil Inc.",
+  "latestVersion": "0.83.0",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "@earendil-works/pi-coding-agent"
+  },
+  "githubUrl": "https://github.com/earendil-works/pi",
+  "license": "MIT",
+  "pricing": [
+    {
+      "name": "Open Source",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://pi.dev/docs/latest/quickstart",
+    "changelog": "https://github.com/earendil-works/pi/releases",
+    "pricing": null,
+    "issue": "https://github.com/earendil-works/pi/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": "https://github.com/earendil-works/pi",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installCommand": "npm install -g --ignore-scripts @earendil-works/pi-coding-agent",
+      "launchCommand": "pi",
+      "installPath": null
+    },
+    {
+      "os": "Windows",
+      "installCommand": "npm install -g --ignore-scripts @earendil-works/pi-coding-agent",
+      "launchCommand": "pi",
+      "installPath": null
+    },
+    {
+      "os": "Linux",
+      "installCommand": "npm install -g --ignore-scripts @earendil-works/pi-coding-agent",
+      "launchCommand": "pi",
+      "installPath": null
+    }
+  ]
+}

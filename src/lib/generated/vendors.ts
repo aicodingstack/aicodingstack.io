@@ -19,6 +19,7 @@ import Cognition from '../../../manifests/vendors/cognition.json'
 import Continue from '../../../manifests/vendors/continue.json'
 import Deepinfra from '../../../manifests/vendors/deepinfra.json'
 import Deepseek from '../../../manifests/vendors/deepseek.json'
+import Earendil from '../../../manifests/vendors/earendil.json'
 import FactoryAi from '../../../manifests/vendors/factory-ai.json'
 import FireworksAi from '../../../manifests/vendors/fireworks-ai.json'
 import Github from '../../../manifests/vendors/github.json'
@@ -45,6 +46,7 @@ import Tabnine from '../../../manifests/vendors/tabnine.json'
 import Tencent from '../../../manifests/vendors/tencent.json'
 import TogetherAi from '../../../manifests/vendors/together-ai.json'
 import VerdentAi from '../../../manifests/vendors/verdent-ai.json'
+import Vscodium from '../../../manifests/vendors/vscodium.json'
 import Xai from '../../../manifests/vendors/xai.json'
 import Xiaomi from '../../../manifests/vendors/xiaomi.json'
 import ZAi from '../../../manifests/vendors/z-ai.json'
@@ -67,6 +69,7 @@ export const vendorsData = [
   Continue,
   Deepinfra,
   Deepseek,
+  Earendil,
   FactoryAi,
   FireworksAi,
   Github,
@@ -93,6 +96,7 @@ export const vendorsData = [
   Tencent,
   TogetherAi,
   VerdentAi,
+  Vscodium,
   Xai,
   Xiaomi,
   ZAi,
