@@ -1,0 +1,132 @@
+{
+  "$schema": "../$schemas/cli.schema.json",
+  "id": "goose",
+  "name": "Goose CLI",
+  "familyId": "goose",
+  "description": "Goose CLI is the terminal surface of Goose, an open source local AI agent for coding, research, automation, and other workflows with multiple model providers.",
+  "translations": {
+    "de": {
+      "description": "Goose CLI ist die Terminaloberfläche von Goose, einem quelloffenen lokalen KI-Agenten für Programmierung, Recherche, Automatisierung und weitere Arbeitsabläufe mit mehreren Modellanbietern."
+    },
+    "es": {
+      "description": "Goose CLI es la interfaz de terminal de Goose, un agente de IA local y de código abierto para programación, investigación, automatización y otros flujos con varios proveedores de modelos."
+    },
+    "fr": {
+      "description": "Goose CLI est l’interface terminal de Goose, un agent IA local open source destiné au codage, à la recherche, à l’automatisation et à d’autres flux avec plusieurs fournisseurs de modèles."
+    },
+    "id": {
+      "description": "Goose CLI adalah antarmuka terminal Goose, agen AI lokal sumber terbuka untuk coding, riset, otomatisasi, dan alur kerja lain dengan berbagai penyedia model."
+    },
+    "ja": {
+      "description": "Goose CLI は、複数のモデルプロバイダーを利用し、コーディング、調査、自動化などのワークフローに対応するオープンソースのローカル AI エージェント Goose のターミナル版です。"
+    },
+    "ko": {
+      "description": "Goose CLI는 여러 모델 제공자를 활용해 코딩, 조사, 자동화 등의 워크플로를 수행하는 오픈 소스 로컬 AI 에이전트 Goose의 터미널 인터페이스입니다."
+    },
+    "pt": {
+      "description": "Goose CLI é a interface de terminal do Goose, um agente de IA local e de código aberto para programação, pesquisa, automação e outros fluxos com vários provedores de modelos."
+    },
+    "ru": {
+      "description": "Goose CLI — терминальный интерфейс Goose, локального ИИ-агента с открытым исходным кодом для программирования, исследований, автоматизации и других процессов с разными поставщиками моделей."
+    },
+    "tr": {
+      "description": "Goose CLI; kodlama, araştırma, otomasyon ve diğer iş akışları için birden fazla model sağlayıcısını destekleyen açık kaynaklı yerel AI aracısı Goose'un terminal arayüzüdür."
+    },
+    "zh-Hans": {
+      "description": "Goose CLI 是开源本地 AI Agent Goose 的终端形态，支持多家模型提供商，可用于编码、研究、自动化及其他工作流。"
+    },
+    "zh-Hant": {
+      "description": "Goose CLI 是開放原始碼本機 AI Agent Goose 的終端機形態，支援多家模型供應商，可用於程式設計、研究、自動化及其他工作流程。"
+    }
+  },
+  "verified": true,
+  "lastVerifiedAt": "2026-08-01",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://goose-docs.ai",
+  "docsUrl": "https://goose-docs.ai/docs/getting-started/installation",
+  "vendor": "Agentic AI Foundation",
+  "latestVersion": "1.45.0",
+  "releaseTracking": {
+    "provider": "github-release",
+    "identifier": "aaif-goose/goose"
+  },
+  "githubUrl": "https://github.com/aaif-goose/goose",
+  "license": "Apache-2.0",
+  "pricing": [
+    {
+      "name": "Open Source",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://goose-docs.ai/docs/getting-started/installation",
+    "changelog": "https://github.com/aaif-goose/goose/releases",
+    "pricing": null,
+    "issue": "https://github.com/aaif-goose/goose/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": "https://github.com/aaif-goose/goose",
+    "youtube": null,
+    "discord": "https://discord.gg/goose-1268368495196131379",
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [
+    {
+      "type": "desktop",
+      "productId": "goose"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installCommand": "curl -fsSL https://github.com/aaif-goose/goose/releases/download/stable/download_cli.sh | bash",
+      "launchCommand": "goose",
+      "installPath": null
+    },
+    {
+      "os": "Windows",
+      "installCommand": "powershell -ExecutionPolicy Bypass -c \"irm https://github.com/aaif-goose/goose/releases/download/stable/download_cli.ps1 | iex\"",
+      "launchCommand": "goose",
+      "installPath": null
+    },
+    {
+      "os": "Linux",
+      "installCommand": "curl -fsSL https://github.com/aaif-goose/goose/releases/download/stable/download_cli.sh | bash",
+      "launchCommand": "goose",
+      "installPath": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/aaif-goose/goose",
+      "title": "Goose official repository",
+      "fields": [
+        "name",
+        "description",
+        "websiteUrl",
+        "githubUrl",
+        "license",
+        "platforms",
+        "communityUrls.github",
+        "communityUrls.discord"
+      ]
+    },
+    {
+      "url": "https://goose-docs.ai/docs/getting-started/installation",
+      "title": "Goose installation documentation",
+      "fields": ["docsUrl", "resourceUrls.download", "platforms"]
+    },
+    {
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.45.0",
+      "title": "Goose v1.45.0 release",
+      "fields": ["latestVersion", "releaseTracking", "resourceUrls.changelog"]
+    }
+  ]
+}

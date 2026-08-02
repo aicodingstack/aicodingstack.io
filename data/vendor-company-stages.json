@@ -1,6 +1,6 @@
 {
   "$schema": "./$schemas/vendor-company-stages.schema.json",
-  "asOf": "2026-07-31",
+  "asOf": "2026-08-01",
   "criteria": {
     "publicCompanyIncludesListedParent": true,
     "superUnicornMinimumUsd": 10000000000,
@@ -32,14 +32,6 @@
       "source": {
         "url": "https://www.alibabagroup.com/en-US/ir-home",
         "title": "Alibaba Group investor relations"
-      }
-    },
-    {
-      "vendorId": "atlassian",
-      "stage": "public-company",
-      "source": {
-        "url": "https://investors.atlassian.com/",
-        "title": "Atlassian investor relations"
       }
     },
     {
@@ -265,6 +257,11 @@
         "url": "https://www.together.ai/blog/announcing-our-series-c",
         "title": "Together AI Series C announcement"
       }
+    },
+    {
+      "vendorId": "agentic-ai-foundation",
+      "stage": "startup",
+      "source": null
     },
     {
       "vendorId": "anomaly",

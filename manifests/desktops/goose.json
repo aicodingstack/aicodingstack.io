@@ -1,0 +1,132 @@
+{
+  "$schema": "../$schemas/desktop.schema.json",
+  "id": "goose",
+  "name": "Goose Desktop",
+  "familyId": "goose",
+  "description": "Goose Desktop is the native graphical surface of Goose, an open source local AI agent for coding, research, automation, and other workflows with multiple model providers.",
+  "translations": {
+    "de": {
+      "description": "Goose Desktop ist die native Oberfläche des lokalen Open-Source-KI-Agenten Goose für Programmierung, Recherche, Automatisierung und weitere Abläufe mit mehreren Modellen."
+    },
+    "es": {
+      "description": "Goose Desktop es la interfaz gráfica nativa de Goose, un agente de IA local y de código abierto para programación, investigación, automatización y otros flujos con varios proveedores de modelos."
+    },
+    "fr": {
+      "description": "Goose Desktop est l’interface graphique native de Goose, un agent IA local open source destiné au codage, à la recherche, à l’automatisation et à d’autres flux avec plusieurs fournisseurs de modèles."
+    },
+    "id": {
+      "description": "Goose Desktop adalah antarmuka grafis native Goose, agen AI lokal sumber terbuka untuk coding, riset, otomatisasi, dan alur kerja lain dengan berbagai penyedia model."
+    },
+    "ja": {
+      "description": "Goose Desktop は、複数のモデルプロバイダーを利用し、コーディング、調査、自動化などのワークフローに対応するオープンソースのローカル AI エージェント Goose のネイティブ GUI 版です。"
+    },
+    "ko": {
+      "description": "Goose Desktop은 여러 모델 제공자를 활용해 코딩, 조사, 자동화 등의 워크플로를 수행하는 오픈 소스 로컬 AI 에이전트 Goose의 네이티브 그래픽 인터페이스입니다."
+    },
+    "pt": {
+      "description": "Goose Desktop é a interface gráfica nativa do Goose, um agente de IA local e de código aberto para programação, pesquisa, automação e outros fluxos com vários provedores de modelos."
+    },
+    "ru": {
+      "description": "Goose Desktop — графический интерфейс локального ИИ-агента Goose с открытым кодом для программирования, исследований и автоматизации с разными моделями."
+    },
+    "tr": {
+      "description": "Goose Desktop; kodlama, araştırma, otomasyon ve diğer iş akışları için birden fazla model sağlayıcısını destekleyen açık kaynaklı yerel AI aracısı Goose'un yerel grafik arayüzüdür."
+    },
+    "zh-Hans": {
+      "description": "Goose Desktop 是开源本地 AI Agent Goose 的原生图形界面，支持多家模型提供商，可用于编码、研究、自动化及其他工作流。"
+    },
+    "zh-Hant": {
+      "description": "Goose Desktop 是開放原始碼本機 AI Agent Goose 的原生圖形介面，支援多家模型供應商，可用於程式設計、研究、自動化及其他工作流程。"
+    }
+  },
+  "verified": true,
+  "lastVerifiedAt": "2026-08-01",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://goose-docs.ai",
+  "docsUrl": "https://goose-docs.ai/docs/getting-started/installation",
+  "vendor": "Agentic AI Foundation",
+  "latestVersion": "1.45.0",
+  "releaseTracking": {
+    "provider": "github-release",
+    "identifier": "aaif-goose/goose"
+  },
+  "githubUrl": "https://github.com/aaif-goose/goose",
+  "license": "Apache-2.0",
+  "pricing": [
+    {
+      "name": "Open Source",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://goose-docs.ai/docs/getting-started/installation",
+    "changelog": "https://github.com/aaif-goose/goose/releases",
+    "pricing": null,
+    "issue": "https://github.com/aaif-goose/goose/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": "https://github.com/aaif-goose/goose",
+    "youtube": null,
+    "discord": "https://discord.gg/goose-1268368495196131379",
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "goose"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installPath": "/Applications/Goose.app",
+      "installCommand": null,
+      "launchCommand": null
+    },
+    {
+      "os": "Windows",
+      "installPath": null,
+      "installCommand": null,
+      "launchCommand": null
+    },
+    {
+      "os": "Linux",
+      "installPath": null,
+      "installCommand": null,
+      "launchCommand": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/aaif-goose/goose",
+      "title": "Goose official repository",
+      "fields": [
+        "name",
+        "description",
+        "websiteUrl",
+        "githubUrl",
+        "license",
+        "platforms",
+        "communityUrls.github",
+        "communityUrls.discord"
+      ]
+    },
+    {
+      "url": "https://goose-docs.ai/docs/getting-started/installation",
+      "title": "Goose installation documentation",
+      "fields": ["docsUrl", "resourceUrls.download", "platforms"]
+    },
+    {
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.45.0",
+      "title": "Goose v1.45.0 release",
+      "fields": ["latestVersion", "releaseTracking", "resourceUrls.changelog"]
+    }
+  ]
+}

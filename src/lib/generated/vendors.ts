@@ -4,12 +4,12 @@
  * Do not edit manually - run the script to regenerate
  */
 
+import AgenticAiFoundation from '../../../manifests/vendors/agentic-ai-foundation.json'
 import Alibaba from '../../../manifests/vendors/alibaba.json'
 import Anomaly from '../../../manifests/vendors/anomaly.json'
 import AntGroup from '../../../manifests/vendors/ant-group.json'
 import Anthropic from '../../../manifests/vendors/anthropic.json'
 import Anysphere from '../../../manifests/vendors/anysphere.json'
-import Atlassian from '../../../manifests/vendors/atlassian.json'
 import Augment from '../../../manifests/vendors/augment.json'
 import Aws from '../../../manifests/vendors/aws.json'
 import Baseten from '../../../manifests/vendors/baseten.json'
@@ -52,12 +52,12 @@ import ZedIndustries from '../../../manifests/vendors/zed-industries.json'
 import type { ManifestVendor } from '../../types/manifests'
 
 export const vendorsData = [
+  AgenticAiFoundation,
   Alibaba,
   Anomaly,
   AntGroup,
   Anthropic,
   Anysphere,
-  Atlassian,
   Augment,
   Aws,
   Baseten,
@@ -99,6 +99,6 @@ export const vendorsData = [
   ZedIndustries,
 ] as unknown as ManifestVendor[]
 
-export type Vendor = typeof Alibaba
+export type Vendor = typeof AgenticAiFoundation
 
 export default vendorsData
