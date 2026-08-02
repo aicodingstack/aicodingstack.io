@@ -37,17 +37,17 @@ Exact English matches are a triage signal; product names and technical terms can
 
 | Locale | Comparable strings | Exact English matches | Match rate |
 | --- | ---: | ---: | ---: |
-| de | 470 | 39 | 8.3% |
-| es | 470 | 25 | 5.3% |
-| fr | 470 | 36 | 7.7% |
-| id | 470 | 30 | 6.4% |
-| ja | 470 | 23 | 4.9% |
-| ko | 470 | 23 | 4.9% |
-| pt | 470 | 31 | 6.6% |
-| ru | 470 | 23 | 4.9% |
-| tr | 470 | 26 | 5.5% |
-| zh-Hans | 470 | 22 | 4.7% |
-| zh-Hant | 470 | 22 | 4.7% |
+| de | 481 | 39 | 8.1% |
+| es | 481 | 25 | 5.2% |
+| fr | 481 | 36 | 7.5% |
+| id | 481 | 30 | 6.2% |
+| ja | 481 | 23 | 4.8% |
+| ko | 481 | 23 | 4.8% |
+| pt | 481 | 31 | 6.4% |
+| ru | 481 | 23 | 4.8% |
+| tr | 481 | 26 | 5.4% |
+| zh-Hans | 481 | 22 | 4.6% |
+| zh-Hant | 481 | 22 | 4.6% |
 
 ## Backlog by Issue Type
 

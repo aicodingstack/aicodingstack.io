@@ -30,6 +30,7 @@ const URL_OR_PATH_PREFIX = /^(?:https?:\/\/|mailto:|tel:|\/|#)/i
 const PLACEHOLDER_PATTERN = /\{[^{}]+\}/g
 const ENGLISH_WORD_PATTERN = /[A-Za-z][A-Za-z'’-]*/g
 const MARKDOWN_PREFIX = /^(?:#{1,6}\s+|>\s*|[-+*]\s+|\d+[.)]\s+)/
+const KEYED_CONTENT_HEADING = /^##\s+[a-z][a-zA-Z0-9]*(?:\.(?:[a-zA-Z][a-zA-Z0-9]*|\d+))*\s*$/
 
 function normalizeText(value: string): string {
   return value.trim().replace(/\s+/g, ' ')
@@ -96,6 +97,10 @@ function listFiles(directory: string, extension: string, root = directory): stri
   }
 
   return files.sort()
+}
+
+function listMarkdownFiles(directory: string): string[] {
+  return [...listFiles(directory, '.md'), ...listFiles(directory, '.mdx')].sort()
 }
 
 function readJson(filePath: string): unknown {
@@ -216,6 +221,11 @@ export function extractMdxProseUnits(content: string): Map<string, string> {
       continue
     }
 
+    if (KEYED_CONTENT_HEADING.test(trimmed)) {
+      finishParagraph()
+      continue
+    }
+
     if (!trimmed) {
       finishParagraph()
       continue
@@ -250,7 +260,7 @@ export function findContentExactEnglishCandidates(
   for (const contentType of contentTypes) {
     const englishDirectory = path.join(contentDirectory, contentType, defaultLocale)
 
-    for (const relativeFile of listFiles(englishDirectory, '.mdx')) {
+    for (const relativeFile of listMarkdownFiles(englishDirectory)) {
       const englishMdx = matter.read(path.join(englishDirectory, relativeFile))
       const englishFrontmatter = new Map<string, string>()
       collectStringLeaves(englishMdx.data, '', englishFrontmatter)

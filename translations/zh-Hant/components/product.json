@@ -106,5 +106,24 @@
         }
       }
     }
+  },
+  "cliLanding": {
+    "labels": {
+      "publisher": "發布方",
+      "verified": "最後驗證",
+      "confidence": "可信度"
+    },
+    "capabilitiesTitle": "{product} 能做什麼？",
+    "comparisonAction": "開啟 CLI 比較",
+    "verification": {
+      "title": "來源與驗證",
+      "reviewedBy": "檢閱方",
+      "confidenceValues": {
+        "high": "高",
+        "medium": "中",
+        "low": "低"
+      }
+    },
+    "faqTitle": "常見問題"
   }
 }

@@ -80,7 +80,9 @@
           "type": "array",
           "description": "Manifest fields supported by this source; omit when it supports the whole record",
           "items": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[A-Za-z][A-Za-z0-9]*(\\.[A-Za-z][A-Za-z0-9]*)*$"
           },
           "minItems": 1,
           "uniqueItems": true

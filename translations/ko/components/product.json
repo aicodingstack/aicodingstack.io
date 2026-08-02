@@ -106,5 +106,24 @@
         }
       }
     }
+  },
+  "cliLanding": {
+    "labels": {
+      "publisher": "제공사",
+      "verified": "최종 확인일",
+      "confidence": "신뢰도"
+    },
+    "capabilitiesTitle": "{product}로 할 수 있는 일",
+    "comparisonAction": "CLI 비교 열기",
+    "verification": {
+      "title": "출처 및 검증",
+      "reviewedBy": "검토자",
+      "confidenceValues": {
+        "high": "높음",
+        "medium": "보통",
+        "low": "낮음"
+      }
+    },
+    "faqTitle": "자주 묻는 질문"
   }
 }

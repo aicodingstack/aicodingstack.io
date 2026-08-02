@@ -106,5 +106,24 @@
         }
       }
     }
+  },
+  "cliLanding": {
+    "labels": {
+      "publisher": "Éditeur",
+      "verified": "Dernière vérification",
+      "confidence": "Niveau de confiance"
+    },
+    "capabilitiesTitle": "Que peut faire {product} ?",
+    "comparisonAction": "Ouvrir le comparatif des CLI",
+    "verification": {
+      "title": "Sources et vérification",
+      "reviewedBy": "Vérifié par",
+      "confidenceValues": {
+        "high": "Élevé",
+        "medium": "Moyen",
+        "low": "Faible"
+      }
+    },
+    "faqTitle": "Questions fréquentes"
   }
 }

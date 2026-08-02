@@ -106,5 +106,24 @@
         }
       }
     }
+  },
+  "cliLanding": {
+    "labels": {
+      "publisher": "Yayıncı",
+      "verified": "Son doğrulama",
+      "confidence": "Güven düzeyi"
+    },
+    "capabilitiesTitle": "{product} neler yapabilir?",
+    "comparisonAction": "CLI karşılaştırmasını aç",
+    "verification": {
+      "title": "Kaynaklar ve doğrulama",
+      "reviewedBy": "Kontrol eden",
+      "confidenceValues": {
+        "high": "Yüksek",
+        "medium": "Orta",
+        "low": "Düşük"
+      }
+    },
+    "faqTitle": "Sık sorulan sorular"
   }
 }

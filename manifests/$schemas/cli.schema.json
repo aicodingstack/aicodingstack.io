@@ -8,6 +8,10 @@
     {
       "type": "object",
       "properties": {
+        "landingPage": {
+          "type": "boolean",
+          "description": "Whether this CLI uses the search-focused landing page template"
+        },
         "latestVersion": {
           "type": "string",
           "minLength": 1,

@@ -108,5 +108,24 @@
     }
   },
   "vendorModels": {},
-  "vendorProducts": {}
+  "vendorProducts": {},
+  "cliLanding": {
+    "labels": {
+      "publisher": "Publisher",
+      "verified": "Last verified",
+      "confidence": "Confidence"
+    },
+    "capabilitiesTitle": "What can {product} do?",
+    "comparisonAction": "Open CLI comparison",
+    "verification": {
+      "title": "Sources and verification",
+      "reviewedBy": "Reviewed by",
+      "confidenceValues": {
+        "high": "High",
+        "medium": "Medium",
+        "low": "Low"
+      }
+    },
+    "faqTitle": "Frequently asked questions"
+  }
 }

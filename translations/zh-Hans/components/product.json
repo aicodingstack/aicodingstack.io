@@ -106,5 +106,24 @@
         }
       }
     }
+  },
+  "cliLanding": {
+    "labels": {
+      "publisher": "发布方",
+      "verified": "最后验证",
+      "confidence": "置信度"
+    },
+    "capabilitiesTitle": "{product} 能做什么？",
+    "comparisonAction": "打开 CLI 比较",
+    "verification": {
+      "title": "来源与验证",
+      "reviewedBy": "审查方",
+      "confidenceValues": {
+        "high": "高",
+        "medium": "中",
+        "low": "低"
+      }
+    },
+    "faqTitle": "常见问题"
   }
 }

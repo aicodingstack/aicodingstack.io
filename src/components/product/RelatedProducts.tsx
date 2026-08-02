@@ -1,5 +1,6 @@
 'use client'
 
+import { ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import type {
@@ -14,6 +15,7 @@ export interface RelatedProductsProps {
     type: 'ide' | 'cli' | 'extension' | 'desktop'
     data: ManifestIDE | ManifestCLI | ManifestExtension | ManifestDesktop | null
   }>
+  variant?: 'default' | 'compact'
 }
 
 /**
@@ -22,7 +24,7 @@ export interface RelatedProductsProps {
  * This component is intentionally defensive: it filters out null product data and returns `null`
  * when there is nothing meaningful to display, so callers don't need conditional rendering.
  */
-export function RelatedProducts({ products = [] }: RelatedProductsProps) {
+export function RelatedProducts({ products = [], variant = 'default' }: RelatedProductsProps) {
   const tComponent = useTranslations('components.product')
   const tShared = useTranslations('shared')
 
@@ -81,6 +83,47 @@ export function RelatedProducts({ products = [] }: RelatedProductsProps) {
 │ DESKTOP │
 └─────────┘`
     }
+  }
+
+  if (variant === 'compact') {
+    return (
+      <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
+        <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-md)]">
+          {tComponent('relatedProducts.title')}
+        </h2>
+
+        <div className="border-t border-[var(--color-border)]">
+          {validProducts.map(({ type, data }) => {
+            if (!data) return null
+
+            return (
+              <Link
+                key={`${type}-${data.id}`}
+                href={`/${getTypeRoute(type)}/${data.id}`}
+                className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-[var(--spacing-md)] py-[var(--spacing-sm)] border-b border-[var(--color-border)] group"
+              >
+                <div className="min-w-0">
+                  <p className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider mb-1">
+                    {getTypeLabel(type)} · {data.vendor}
+                  </p>
+                  <h3 className="font-semibold group-hover:underline underline-offset-4">
+                    {data.name}
+                  </h3>
+                  <p className="text-sm text-[var(--color-text-secondary)] mt-1 line-clamp-1">
+                    {data.description}
+                  </p>
+                </div>
+                <ArrowRight
+                  size={17}
+                  className="text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] group-hover:translate-x-1 transition-all"
+                  aria-hidden="true"
+                />
+              </Link>
+            )
+          })}
+        </div>
+      </section>
+    )
   }
 
   return (

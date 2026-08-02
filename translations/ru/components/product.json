@@ -106,5 +106,24 @@
         }
       }
     }
+  },
+  "cliLanding": {
+    "labels": {
+      "publisher": "Разработчик",
+      "verified": "Последняя проверка",
+      "confidence": "Уровень доверия"
+    },
+    "capabilitiesTitle": "Что умеет {product}?",
+    "comparisonAction": "Открыть сравнение CLI",
+    "verification": {
+      "title": "Источники и проверка",
+      "reviewedBy": "Проверено",
+      "confidenceValues": {
+        "high": "Высокий",
+        "medium": "Средний",
+        "low": "Низкий"
+      }
+    },
+    "faqTitle": "Часто задаваемые вопросы"
   }
 }
