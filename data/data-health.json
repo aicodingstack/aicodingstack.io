@@ -10,18 +10,18 @@
     "vendors": 90
   },
   "summary": {
-    "totalRecords": 248,
-    "recordsWithSources": 248,
-    "verifiedRecords": 248,
-    "provenanceComplete": 248,
+    "totalRecords": 249,
+    "recordsWithSources": 249,
+    "verifiedRecords": 249,
+    "provenanceComplete": 249,
     "staleVerifiedRecords": 0,
     "translationPlaceholderValues": 300,
     "danglingRelationships": 0,
     "modelBenchmarkCoverage": 9.5,
-    "productsWithPricing": 63,
-    "productRecords": 63,
-    "communityUrlsPopulated": 328,
-    "communityUrlsWithProvenance": 328,
+    "productsWithPricing": 64,
+    "productRecords": 64,
+    "communityUrlsPopulated": 327,
+    "communityUrlsWithProvenance": 327,
     "duplicatedVendorCommunityUrls": 0,
     "errors": 0,
     "warnings": 0,
@@ -35,21 +35,21 @@
       "stale": 0
     },
     "clis": {
-      "total": 25,
-      "verified": 25,
-      "provenanceComplete": 25,
+      "total": 26,
+      "verified": 26,
+      "provenanceComplete": 26,
       "stale": 0
     },
     "desktops": {
-      "total": 11,
-      "verified": 11,
-      "provenanceComplete": 11,
+      "total": 12,
+      "verified": 12,
+      "provenanceComplete": 12,
       "stale": 0
     },
     "extensions": {
-      "total": 19,
-      "verified": 19,
-      "provenanceComplete": 19,
+      "total": 18,
+      "verified": 18,
+      "provenanceComplete": 18,
       "stale": 0
     },
     "models": {
@@ -73,57 +73,57 @@
   },
   "translationsByLocale": {
     "de": {
-      "totalStrings": 465,
+      "totalStrings": 470,
       "matchingEnglish": 39,
-      "matchingEnglishPercent": 8.4
+      "matchingEnglishPercent": 8.3
     },
     "es": {
-      "totalStrings": 465,
+      "totalStrings": 470,
       "matchingEnglish": 25,
-      "matchingEnglishPercent": 5.4
+      "matchingEnglishPercent": 5.3
     },
     "fr": {
-      "totalStrings": 465,
+      "totalStrings": 470,
       "matchingEnglish": 36,
       "matchingEnglishPercent": 7.7
     },
     "id": {
-      "totalStrings": 465,
+      "totalStrings": 470,
       "matchingEnglish": 30,
-      "matchingEnglishPercent": 6.5
+      "matchingEnglishPercent": 6.4
     },
     "ja": {
-      "totalStrings": 465,
+      "totalStrings": 470,
       "matchingEnglish": 23,
       "matchingEnglishPercent": 4.9
     },
     "ko": {
-      "totalStrings": 465,
+      "totalStrings": 470,
       "matchingEnglish": 23,
       "matchingEnglishPercent": 4.9
     },
     "pt": {
-      "totalStrings": 465,
+      "totalStrings": 470,
       "matchingEnglish": 31,
-      "matchingEnglishPercent": 6.7
+      "matchingEnglishPercent": 6.6
     },
     "ru": {
-      "totalStrings": 465,
+      "totalStrings": 470,
       "matchingEnglish": 23,
       "matchingEnglishPercent": 4.9
     },
     "tr": {
-      "totalStrings": 465,
+      "totalStrings": 470,
       "matchingEnglish": 26,
-      "matchingEnglishPercent": 5.6
+      "matchingEnglishPercent": 5.5
     },
     "zh-Hans": {
-      "totalStrings": 465,
+      "totalStrings": 470,
       "matchingEnglish": 22,
       "matchingEnglishPercent": 4.7
     },
     "zh-Hant": {
-      "totalStrings": 465,
+      "totalStrings": 470,
       "matchingEnglish": 22,
       "matchingEnglishPercent": 4.7
     }
