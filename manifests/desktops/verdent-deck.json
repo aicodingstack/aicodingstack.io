@@ -46,6 +46,11 @@
       "title": "Verdent installation"
     },
     {
+      "url": "https://github.com/verdentAI/docs",
+      "title": "Verdent documentation repository",
+      "fields": ["githubUrl", "sourceCode"]
+    },
+    {
       "url": "https://www.verdent.ai/pricing",
       "title": "Verdent pricing",
       "fields": ["pricing", "resourceUrls.pricing"]
@@ -64,6 +69,10 @@
   "latestVersion": "1.5.0",
   "githubUrl": "https://github.com/verdentAI/docs",
   "license": "Proprietary",
+  "sourceCode": {
+    "status": "closed",
+    "repositoryRole": "documentation"
+  },
   "pricing": [
     {
       "name": "Lite",

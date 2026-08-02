@@ -9,6 +9,11 @@
   },
   "noResults": "Keine Open-Source-Projekte für diese Kategorie gefunden.",
   "note": "Hinweis: Diese Seite zeigt nur Projekte mit GitHub-Repositories. Einige Projekte unterhalten GitHub-Repositories als Benutzerfeedback-Kanäle, obwohl sie nicht Open Source sind.",
+  "repositoryScope": {
+    "source": "Der Quellcode ist in diesem Repository enthalten",
+    "partial": "Dieses Repository enthält nur den Open-Source-Kern des Produkts",
+    "related": "Zugehöriges Produkt; sein Quellcode befindet sich nicht in diesem Repository"
+  },
   "statistics": {
     "closedSourceCount": "Proprietäre Projekte",
     "closedSourcePercentage": "Proprietärer Anteil",

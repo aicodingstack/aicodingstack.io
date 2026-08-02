@@ -1,0 +1,68 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "agentic-ai-foundation",
+  "name": "Agentic AI Foundation",
+  "aliases": ["AAIF"],
+  "description": "The Agentic AI Foundation, hosted by the Linux Foundation, provides vendor-neutral governance for open source agentic AI projects including Goose.",
+  "translations": {
+    "de": {
+      "description": "Die bei der Linux Foundation angesiedelte Agentic AI Foundation bietet anbieterneutrale Governance für quelloffene agentische KI-Projekte wie Goose."
+    },
+    "es": {
+      "description": "La Agentic AI Foundation, alojada por la Linux Foundation, ofrece gobernanza neutral para proyectos de IA agéntica de código abierto como Goose."
+    },
+    "fr": {
+      "description": "L’Agentic AI Foundation, hébergée par la Linux Foundation, assure une gouvernance neutre pour des projets d’IA agentique open source tels que Goose."
+    },
+    "id": {
+      "description": "Agentic AI Foundation, yang dinaungi Linux Foundation, menyediakan tata kelola netral vendor untuk proyek AI agentik sumber terbuka termasuk Goose."
+    },
+    "ja": {
+      "description": "Linux Foundation がホストする Agentic AI Foundation は、Goose を含むオープンソースのエージェント型 AI プロジェクトにベンダー中立のガバナンスを提供します。"
+    },
+    "ko": {
+      "description": "Linux Foundation이 주관하는 Agentic AI Foundation은 Goose를 포함한 오픈 소스 에이전틱 AI 프로젝트에 공급자 중립적 거버넌스를 제공합니다."
+    },
+    "pt": {
+      "description": "A Agentic AI Foundation, hospedada pela Linux Foundation, oferece governança neutra para projetos de IA agêntica de código aberto, incluindo o Goose."
+    },
+    "ru": {
+      "description": "Agentic AI Foundation под эгидой Linux Foundation обеспечивает нейтральное управление проектами агентного ИИ с открытым исходным кодом, включая Goose."
+    },
+    "tr": {
+      "description": "Linux Foundation bünyesindeki Agentic AI Foundation, Goose dahil açık kaynaklı aracı AI projeleri için sağlayıcıdan bağımsız yönetişim sunar."
+    },
+    "zh-Hans": {
+      "description": "Agentic AI Foundation 由 Linux Foundation 托管，为包括 Goose 在内的开源智能体 AI 项目提供厂商中立的治理。"
+    },
+    "zh-Hant": {
+      "description": "Agentic AI Foundation 由 Linux Foundation 託管，為包括 Goose 在內的開放原始碼智慧代理 AI 專案提供廠商中立的治理。"
+    }
+  },
+  "verified": true,
+  "lastVerifiedAt": "2026-08-01",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://aaif.io",
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": "https://github.com/aaif-goose",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "sources": [
+    {
+      "url": "https://aaif.io",
+      "title": "Agentic AI Foundation official site",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/aaif-goose/goose",
+      "title": "Goose official repository",
+      "fields": ["description", "communityUrls.github"]
+    }
+  ]
+}

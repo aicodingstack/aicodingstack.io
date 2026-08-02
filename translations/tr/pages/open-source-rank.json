@@ -9,6 +9,11 @@
   },
   "noResults": "Bu kategoride açık kaynak proje bulunamadı.",
   "note": "Not: Bu sayfa yalnızca GitHub deposu bulunan projeleri gösterir. Açık kaynak olmayan bazı projeler, kullanıcı geri bildirim kanalı olarak GitHub depoları bulundurur.",
+  "repositoryScope": {
+    "source": "Kaynak kod bu depoda yer alır",
+    "partial": "Bu depo yalnızca ürünün açık kaynak çekirdeğini içerir",
+    "related": "İlgili ürün; kaynak kodu bu depoda yer almaz"
+  },
   "statistics": {
     "closedSourceCount": "Tescilli Projeler",
     "closedSourcePercentage": "Tescilli Proje Yüzdesi",

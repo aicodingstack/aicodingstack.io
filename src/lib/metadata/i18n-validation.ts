@@ -195,7 +195,7 @@ export const PAGE_TRANSLATION_REQUIREMENTS: Record<string, PageTranslationRequir
     type: 'staticSimple',
   },
 
-  // ========== Comparison Pages (4个) ==========
+  // ========== Comparison Pages (5个) ==========
   '/models/compare': {
     namespace: 'pages.comparison',
     requiredKeys: ['models.title', 'models.subtitle'] as const,
@@ -211,6 +211,11 @@ export const PAGE_TRANSLATION_REQUIREMENTS: Record<string, PageTranslationRequir
     requiredKeys: ['clis.title', 'clis.subtitle'] as const,
     type: 'comparison',
   },
+  '/desktops/comparison': {
+    namespace: 'pages.comparison',
+    requiredKeys: ['desktops.title', 'desktops.subtitle'] as const,
+    type: 'comparison',
+  },
   '/extensions/comparison': {
     namespace: 'pages.comparison',
     requiredKeys: ['extensions.title', 'extensions.subtitle'] as const,
@@ -218,7 +223,7 @@ export const PAGE_TRANSLATION_REQUIREMENTS: Record<string, PageTranslationRequir
   },
 }
 
-// 总计: 31 个页面的翻译需求
+// 总计: 32 个页面的翻译需求
 // - 有 meta 对象的静态页面: 9 个
 // - Articles & Docs 列表页: 2 个
 // - 分类列表页: 6 个

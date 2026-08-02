@@ -56,6 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/model-price-intelligence-index',
     '/ides/comparison',
     '/clis/comparison',
+    '/desktops/comparison',
     '/extensions/comparison',
     '/models/compare',
   ]

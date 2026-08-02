@@ -6,22 +6,17 @@ import { AppleIcon, LinuxIcon, WindowsIcon } from '@/components/controls/Platfor
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import { Breadcrumb } from '@/components/navigation/Breadcrumb'
-import ComparisonGuide, {
-  type ComparisonGuideContent,
-  type ComparisonGuideItem,
-  type ComparisonProfileItem,
-} from '@/components/product/ComparisonGuide'
 import ComparisonTable, { type ComparisonColumn } from '@/components/product/ComparisonTable'
 import { PricingSummaryValue } from '@/components/product/ProductPricing'
 import { withVendorCommunityUrlsForCatalog } from '@/lib/community-urls'
-import { clisData, vendorsData } from '@/lib/generated'
+import { desktopsData, vendorsData } from '@/lib/generated'
 import { getGithubStars } from '@/lib/generated/github-stars'
 import { renderLicense } from '@/lib/license'
 import type { PricingTier } from '@/lib/pricing'
-import type { ManifestCLI, ManifestVendor } from '@/types/manifests'
+import type { ManifestDesktop, ManifestVendor } from '@/types/manifests'
 
-const clis = withVendorCommunityUrlsForCatalog(
-  clisData as unknown as ManifestCLI[],
+const desktops = withVendorCommunityUrlsForCatalog(
+  desktopsData as unknown as ManifestDesktop[],
   vendorsData as unknown as ManifestVendor[]
 )
 
@@ -29,23 +24,9 @@ type Props = {
   locale: string
 }
 
-export default function CLIComparisonPageClient({ locale: _locale }: Props) {
+export default function DesktopComparisonPageClient({ locale: _locale }: Props) {
   const tPage = useTranslations('pages.comparison')
   const tShared = useTranslations('shared')
-  const guideContent: ComparisonGuideContent = {
-    title: tPage('clis.guide.title'),
-    intro: tPage('clis.guide.intro', { count: clis.length }),
-    criteria: tPage.raw('clis.guide.criteria') as ComparisonGuideItem[],
-    shortlistTitle: tPage('clis.guide.shortlistTitle'),
-    shortlistIntro: tPage('clis.guide.shortlistIntro'),
-    steps: tPage.raw('clis.guide.steps') as ComparisonGuideItem[],
-    profilesTitle: tPage('clis.guide.profilesTitle'),
-    profilesIntro: tPage('clis.guide.profilesIntro'),
-    profiles: tPage.raw('clis.guide.profiles') as ComparisonProfileItem[],
-    faqTitle: tPage('clis.guide.faqTitle'),
-    faqs: tPage.raw('clis.guide.faqs') as ComparisonGuideItem[],
-  }
-
   const columns: ComparisonColumn[] = [
     {
       key: 'vendor',
@@ -82,12 +63,12 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
             )}
             {platformNames.includes('Windows') && (
               <span title="Windows">
-                <WindowsIcon className="w-4 h-4" />
+                <WindowsIcon />
               </span>
             )}
             {platformNames.includes('Linux') && (
               <span title="Linux">
-                <LinuxIcon className="w-4 h-4" />
+                <LinuxIcon />
               </span>
             )}
           </div>
@@ -289,8 +270,8 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
       <Breadcrumb
         items={[
           { name: tShared('terms.aiCodingStack'), href: '/ai-coding-stack' },
-          { name: tShared('categories.plural.clis'), href: '/clis' },
-          { name: tShared('terms.comparison'), href: '/clis/comparison' },
+          { name: tShared('categories.plural.desktops'), href: '/desktops' },
+          { name: tShared('terms.comparison'), href: '/desktops/comparison' },
         ]}
       />
 
@@ -298,32 +279,27 @@ export default function CLIComparisonPageClient({ locale: _locale }: Props) {
       <section className="pt-[var(--spacing-lg)] pb-[var(--spacing-md)]">
         <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
           <h1 className="text-3xl font-semibold tracking-[-0.03em] mb-[var(--spacing-sm)]">
-            {tPage('clis.title')}
+            {tPage('desktops.title')}
           </h1>
           <p className="text-base text-[var(--color-text-secondary)] font-light">
-            {tPage('clis.subtitle')}
+            {tPage('desktops.subtitle')}
           </p>
         </div>
       </section>
 
       {/* Comparison Table */}
-      <section
-        id="comparison-table"
-        className="scroll-mt-32 pb-[var(--spacing-xl)] border-b border-[var(--color-border)]"
-      >
+      <section className="pb-[var(--spacing-xl)] border-b border-[var(--color-border)]">
         <div className="max-w-8xl mx-auto px-[var(--spacing-md)]">
           <ComparisonTable
-            items={clis as unknown as Record<string, unknown>[]}
+            items={desktops as unknown as Record<string, unknown>[]}
             columns={columns}
-            itemLinkPrefix={`/clis`}
+            itemLinkPrefix={`/desktops`}
             nameColumnLabel={tShared('labels.name')}
-            caption={tPage('clis.title')}
+            caption={tPage('desktops.title')}
             scrollHint={tPage('table.scrollHint')}
           />
         </div>
       </section>
-
-      <ComparisonGuide content={guideContent} />
 
       <Footer />
     </>

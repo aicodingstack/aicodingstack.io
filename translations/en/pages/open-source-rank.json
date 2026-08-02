@@ -1,26 +1,31 @@
 {
-  "description": "Discover and explore open source AI coding tools ranked by GitHub stars. Compare IDEs, CLIs, and extensions to find the perfect tools for your development workflow.",
+  "description": "Explore AI coding products by GitHub repository stars. Each repository appears once, with related products and surfaces grouped together.",
   "filter": {
     "all": "All"
   },
   "meta": {
-    "description": "Ranking of all open source projects in AI Coding Stack, sorted by GitHub stars. View statistics and trends of open source vs proprietary tools.",
+    "description": "Repository-level ranking of AI coding products by GitHub stars, with related IDE, CLI, desktop, and extension surfaces grouped together.",
     "title": "Open Source Projects Ranking"
   },
   "noResults": "No open source projects found for this category.",
-  "note": "Note: This page only shows projects with GitHub repositories. Some projects, while not open source, maintain GitHub repositories as user feedback channels.",
+  "note": "Each GitHub repository appears once. A product may span multiple surface types; repositories used only for feedback or documentation are kept separate from open source repositories.",
+  "repositoryScope": {
+    "source": "Source code included in this repository",
+    "partial": "This repository contains only the product's open-source core",
+    "related": "Related product; its source code is not in this repository"
+  },
   "statistics": {
-    "closedSourceCount": "Proprietary Projects",
+    "closedSourceCount": "Other Product Repositories",
     "closedSourcePercentage": "Proprietary Percentage",
     "licenseBreakdown": "License Distribution",
-    "openSourceCount": "Open Source Projects",
+    "openSourceCount": "Open Source Repositories",
     "projects": "projects",
-    "title": "Open Source vs Proprietary Distribution",
-    "totalProjects": "Total Projects"
+    "title": "Repository Distribution",
+    "totalProjects": "Total Repositories"
   },
   "table": {
-    "openSourceTitle": "Open Source Projects ({count})",
-    "proprietaryTitle": "Proprietary Projects ({count})",
+    "openSourceTitle": "Open Source Repositories ({count})",
+    "proprietaryTitle": "Other Product Repositories ({count})",
     "rank": "Rank"
   },
   "title": "Open Source Projects Ranking"

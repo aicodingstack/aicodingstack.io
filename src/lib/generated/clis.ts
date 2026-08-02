@@ -18,6 +18,7 @@ import DroidCli from '../../../manifests/clis/droid-cli.json'
 import GeminiCli from '../../../manifests/clis/gemini-cli.json'
 import GithubCopilotCli from '../../../manifests/clis/github-copilot-cli.json'
 import GitlabDuoCli from '../../../manifests/clis/gitlab-duo-cli.json'
+import Goose from '../../../manifests/clis/goose.json'
 import GrokBuild from '../../../manifests/clis/grok-build.json'
 import JunieCli from '../../../manifests/clis/junie-cli.json'
 import KiloCodeCli from '../../../manifests/clis/kilo-code-cli.json'
@@ -46,6 +47,7 @@ export const clisData = [
   GeminiCli,
   GithubCopilotCli,
   GitlabDuoCli,
+  Goose,
   GrokBuild,
   JunieCli,
   KiloCodeCli,

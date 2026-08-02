@@ -9,6 +9,11 @@
   },
   "noResults": "Nenhum projeto de código aberto encontrado para esta categoria.",
   "note": "Nota: Esta página mostra apenas projetos com repositórios GitHub. Alguns projetos, embora não sejam de código aberto, mantêm repositórios GitHub como canais de feedback dos usuários.",
+  "repositoryScope": {
+    "source": "O código-fonte está incluído neste repositório",
+    "partial": "Este repositório contém apenas o núcleo de código aberto do produto",
+    "related": "Produto relacionado; seu código-fonte não está neste repositório"
+  },
   "statistics": {
     "closedSourceCount": "Projetos proprietários",
     "closedSourcePercentage": "Porcentagem proprietária",

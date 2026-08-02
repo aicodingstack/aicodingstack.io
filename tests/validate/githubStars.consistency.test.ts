@@ -2,108 +2,66 @@ import fs from 'node:fs'
 import path from 'node:path'
 
 import Ajv from 'ajv'
+import addFormats from 'ajv-formats'
 import { describe, expect, it } from 'vitest'
 
-/**
- * Read and parse JSON from disk.
- */
+type SurfaceType = 'ide' | 'cli' | 'desktop' | 'extension'
+
+type StarsData = {
+  observedAt: string
+  repositories: Record<string, number | null>
+}
+
+const directories: Record<SurfaceType, string> = {
+  ide: 'ides',
+  cli: 'clis',
+  desktop: 'desktops',
+  extension: 'extensions',
+}
+
 function readJsonFile(filePath: string): unknown {
-  const content = fs.readFileSync(filePath, 'utf8')
-  return JSON.parse(content) as unknown
+  return JSON.parse(fs.readFileSync(filePath, 'utf8')) as unknown
 }
 
-/**
- * Collect manifest IDs from manifests/{category}/*.json.
- */
-function getManifestIds(rootDir: string, category: string): string[] {
-  const dirPath = path.join(rootDir, 'manifests', category)
-  if (!fs.existsSync(dirPath)) {
-    return []
-  }
-  return fs
-    .readdirSync(dirPath)
-    .filter(file => file.endsWith('.json'))
-    .map(file => path.basename(file, '.json'))
-    .sort()
+function normalizeRepositoryUrl(url: string): string {
+  return url.replace(/\/$/, '').replace(/\.git$/, '')
 }
 
-/**
- * Collect github-stars IDs for a given category from data/github-stars.json.
- */
-function getGithubStarIds(githubStars: unknown, category: string): string[] {
-  if (githubStars === null || typeof githubStars !== 'object') {
-    return []
-  }
-  const record = githubStars as Record<string, unknown>
-  const section = record[category]
-  if (section === null || typeof section !== 'object') {
-    return []
-  }
-  return Object.keys(section as Record<string, unknown>).sort()
-}
-
-/**
- * Validate that github-stars.json and manifests are in sync.
- */
 function validateGithubStarsConsistency(rootDir: string): string[] {
   const failures: string[] = []
-  const categories = ['extensions', 'clis', 'desktops', 'ides'] as const
-  const starsByRepository = new Map<
-    string,
-    Array<{ category: (typeof categories)[number]; id: string; stars: number | null }>
-  >()
+  const data = readJsonFile(path.join(rootDir, 'data', 'github-stars.json')) as StarsData
+  const associatedRepositories = new Set<string>()
 
-  const githubStarsPath = path.join(rootDir, 'data', 'github-stars.json')
-  const githubStars = readJsonFile(githubStarsPath)
-  const githubStarsRecord = githubStars as Record<string, Record<string, number | null>>
-
-  for (const category of categories) {
-    const manifestIds = getManifestIds(rootDir, category)
-    const githubStarIds = getGithubStarIds(githubStars, category)
-    const categoryStars = githubStarsRecord[category] ?? {}
-
-    const orphaned = githubStarIds.filter(id => !manifestIds.includes(id))
-    const missing = manifestIds.filter(id => !githubStarIds.includes(id))
-
-    if (orphaned.length > 0) {
-      failures.push(
-        `[${category}] entries in data/github-stars.json without manifest files:\n${orphaned.map(i => `- ${i}`).join('\n')}`
-      )
-    }
-    if (missing.length > 0) {
-      failures.push(
-        `[${category}] manifest files missing in data/github-stars.json:\n${missing.map(i => `- ${i}`).join('\n')}`
-      )
-    }
-
-    for (const id of manifestIds) {
-      if (!(id in categoryStars)) continue
-
-      const manifestPath = path.join(rootDir, 'manifests', category, `${id}.json`)
-      const manifest = readJsonFile(manifestPath) as Record<string, unknown>
-      const stars = categoryStars[id] as number | null
-      if (manifest.githubUrl === null && stars !== null) {
-        failures.push(
-          `[${category}] ${id} has githubUrl: null but a non-null star count in data/github-stars.json`
-        )
+  for (const [surfaceType, directory] of Object.entries(directories) as Array<
+    [SurfaceType, string]
+  >) {
+    const directoryPath = path.join(rootDir, 'manifests', directory)
+    for (const file of fs.readdirSync(directoryPath).filter(name => name.endsWith('.json'))) {
+      const manifest = readJsonFile(path.join(directoryPath, file)) as {
+        id: string
+        githubUrl?: string | null
+        sourceCode?: unknown
+      }
+      const key = `${surfaceType}:${manifest.id}`
+      if (typeof manifest.githubUrl !== 'string') {
+        if (manifest.sourceCode !== undefined) {
+          failures.push(`${key} defines sourceCode without a githubUrl`)
+        }
+        continue
       }
 
-      if (typeof manifest.githubUrl === 'string') {
-        const repositoryEntries = starsByRepository.get(manifest.githubUrl) ?? []
-        repositoryEntries.push({ category, id, stars })
-        starsByRepository.set(manifest.githubUrl, repositoryEntries)
+      const normalizedUrl = normalizeRepositoryUrl(manifest.githubUrl)
+      const repositoryId = normalizedUrl.replace('https://github.com/', '')
+      if (!(repositoryId in data.repositories)) {
+        failures.push(`${key} references ${repositoryId}, which is missing from github-stars.json`)
       }
+      associatedRepositories.add(repositoryId)
     }
   }
 
-  for (const [repositoryUrl, entries] of starsByRepository) {
-    const uniqueValues = new Set(entries.map(entry => entry.stars))
-    if (uniqueValues.size > 1) {
-      failures.push(
-        `${repositoryUrl} has inconsistent star counts:\n${entries
-          .map(entry => `- [${entry.category}] ${entry.id}: ${String(entry.stars)}`)
-          .join('\n')}`
-      )
+  for (const repositoryId of Object.keys(data.repositories)) {
+    if (!associatedRepositories.has(repositoryId)) {
+      failures.push(`${repositoryId} has a star snapshot but no product manifest association`)
     }
   }
 
@@ -118,15 +76,59 @@ describe('validate: github-stars consistency', () => {
     )
     const githubStars = readJsonFile(path.join(rootDir, 'data', 'github-stars.json'))
     const ajv = new Ajv({ allErrors: true })
+    addFormats(ajv)
     const validate = ajv.compile(schema as object)
 
     expect(validate(githubStars), JSON.stringify(validate.errors, null, 2)).toBe(true)
   })
 
-  it('data/github-stars.json matches manifest files', () => {
+  it('derives every repository association from product manifests', () => {
     const failures = validateGithubStarsConsistency(process.cwd())
     if (failures.length > 0) {
-      throw new Error(`github-stars consistency validation failed:\n\n${failures.join('\n\n')}`)
+      throw new Error(`github-stars consistency validation failed:\n\n${failures.join('\n')}`)
     }
+  })
+
+  it('associates Goose CLI and desktop surfaces through their manifests', () => {
+    const data = readJsonFile(path.join(process.cwd(), 'data', 'github-stars.json')) as StarsData
+    const cli = readJsonFile(path.join(process.cwd(), 'manifests', 'clis', 'goose.json')) as {
+      githubUrl: string
+    }
+    const desktop = readJsonFile(
+      path.join(process.cwd(), 'manifests', 'desktops', 'goose.json')
+    ) as { githubUrl: string }
+
+    expect(data.repositories['aaif-goose/goose']).toBeTypeOf('number')
+    expect(cli.githubUrl).toBe('https://github.com/aaif-goose/goose')
+    expect(desktop.githubUrl).toBe(cli.githubUrl)
+  })
+
+  it('records source-code coverage on the affected product manifests', () => {
+    const readManifest = (directory: string, id: string) =>
+      readJsonFile(path.join(process.cwd(), 'manifests', directory, `${id}.json`)) as {
+        sourceCode?: {
+          status: 'open' | 'partial' | 'closed'
+          repositoryRole: 'source' | 'feedback' | 'documentation'
+          license?: string
+        }
+      }
+
+    expect(readManifest('clis', 'codex-cli').sourceCode).toEqual({
+      status: 'open',
+      repositoryRole: 'source',
+    })
+    expect(readManifest('desktops', 'codex-app').sourceCode).toEqual({
+      status: 'closed',
+      repositoryRole: 'feedback',
+    })
+    expect(readManifest('extensions', 'codex').sourceCode).toEqual({
+      status: 'closed',
+      repositoryRole: 'feedback',
+    })
+    expect(readManifest('ides', 'intellij-idea').sourceCode).toEqual({
+      status: 'partial',
+      repositoryRole: 'source',
+      license: 'Apache-2.0',
+    })
   })
 })

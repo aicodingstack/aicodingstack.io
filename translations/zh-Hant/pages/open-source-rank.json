@@ -9,6 +9,11 @@
   },
   "noResults": "此類別中沒有開源專案。",
   "note": "注意：本頁面僅顯示擁有 GitHub 儲存庫的專案。部分專案雖非開源，但仍將 GitHub 儲存庫作為使用者意見回饋管道。",
+  "repositoryScope": {
+    "source": "原始碼包含在此儲存庫中",
+    "partial": "此儲存庫僅包含該產品的開放原始碼核心",
+    "related": "相關產品；其原始碼不在此儲存庫中"
+  },
   "statistics": {
     "closedSourceCount": "專有專案",
     "closedSourcePercentage": "專有專案占比",

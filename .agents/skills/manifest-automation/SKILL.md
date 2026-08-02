@@ -42,7 +42,7 @@ The merge helper is advisory. Always inspect its proposed result before applying
 
 ## GitHub stars
 
-`data/github-stars.json` tracks `cli`, `desktop`, `extension`, and `ide` entries. Every CLI, desktop, extension, and IDE manifest must have a corresponding entry; use `null` when no official repository or trustworthy count is available. Models, providers, and vendors are not tracked.
+`data/github-stars.json` is a repository-keyed snapshot containing only the observation date and raw star counts. Product associations come from each CLI, desktop, extension, or IDE manifest's `githubUrl`; use `sourceCode` when the repository is only a partial source tree or serves as feedback or documentation rather than product source. Use `null` when a tracked repository has no trustworthy count. Models, providers, and vendors are not tracked.
 
 ## Validation
 

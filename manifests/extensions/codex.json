@@ -49,7 +49,7 @@
     {
       "url": "https://learn.chatgpt.com/docs/open-source",
       "title": "Codex open-source components",
-      "fields": ["githubUrl", "license", "resourceUrls.issue"]
+      "fields": ["githubUrl", "license", "sourceCode", "resourceUrls.issue"]
     },
     {
       "url": "https://github.com/openai/codex",
@@ -80,6 +80,10 @@
   },
   "githubUrl": "https://github.com/openai/codex",
   "license": "Proprietary",
+  "sourceCode": {
+    "status": "closed",
+    "repositoryRole": "feedback"
+  },
   "pricing": [
     {
       "name": "ChatGPT Plus",

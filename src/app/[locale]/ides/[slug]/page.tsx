@@ -117,7 +117,7 @@ export default async function IDEPage({
           verified={ide.verified ?? false}
           latestVersion={ide.latestVersion}
           license={ide.license}
-          githubStars={getGithubStars('ides', ide.id)}
+          githubStars={getGithubStars(ide.githubUrl)}
           platforms={ide.platforms?.map(p => p.os)}
           websiteUrl={websiteUrl}
           docsUrl={docsUrl}

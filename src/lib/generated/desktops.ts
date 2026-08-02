@@ -9,6 +9,7 @@ import ClaudeCodeDesktop from '../../../manifests/desktops/claude-code-desktop.j
 import Codebuddy from '../../../manifests/desktops/codebuddy.json'
 import CodexApp from '../../../manifests/desktops/codex-app.json'
 import FactoryDesktop from '../../../manifests/desktops/factory-desktop.json'
+import Goose from '../../../manifests/desktops/goose.json'
 import MinimaxCode from '../../../manifests/desktops/minimax-code.json'
 import OpencodeDesktop from '../../../manifests/desktops/opencode-desktop.json'
 import Qoder from '../../../manifests/desktops/qoder.json'
@@ -23,6 +24,7 @@ export const desktopsData = [
   Codebuddy,
   CodexApp,
   FactoryDesktop,
+  Goose,
   MinimaxCode,
   OpencodeDesktop,
   Qoder,

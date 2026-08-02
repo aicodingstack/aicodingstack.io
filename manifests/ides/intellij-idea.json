@@ -48,6 +48,11 @@
   "latestVersion": "2024.3",
   "githubUrl": "https://github.com/JetBrains/intellij-community",
   "license": "Proprietary",
+  "sourceCode": {
+    "status": "partial",
+    "repositoryRole": "source",
+    "license": "Apache-2.0"
+  },
   "pricing": [
     {
       "name": "Community",
@@ -116,7 +121,7 @@
     {
       "url": "https://github.com/JetBrains/intellij-community",
       "title": "IntelliJ IDEA github community",
-      "fields": ["communityUrls.github"]
+      "fields": ["githubUrl", "sourceCode", "communityUrls.github"]
     },
     {
       "url": "https://www.reddit.com/r/IntelliJIDEA",

@@ -34,6 +34,10 @@
           "description": "Valid SPDX License Identifier or the literal Proprietary",
           "examples": ["Proprietary", "MIT", "Apache-2.0", "GPL-3.0-only", "GPL-3.0-or-later"]
         },
+        "sourceCode": {
+          "$ref": "#/$defs/sourceCode",
+          "description": "Optional override describing how the linked GitHub repository relates to this product surface. When omitted, non-proprietary products are treated as open source and proprietary products as closed source feedback repositories."
+        },
         "pricing": {
           "type": "array",
           "description": "Pricing tiers for the product (can be empty array if not applicable, typically found on example.com/pricing or example.com/plans page)",
@@ -66,6 +70,28 @@
     }
   ],
   "$defs": {
+    "sourceCode": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["open", "partial", "closed"],
+          "description": "Whether the linked repository contains all, part, or none of this product surface's source code"
+        },
+        "repositoryRole": {
+          "type": "string",
+          "enum": ["source", "feedback", "documentation"],
+          "description": "The linked repository's relationship to this product surface"
+        },
+        "license": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Repository source license when it differs from the product license"
+        }
+      },
+      "required": ["status", "repositoryRole"],
+      "additionalProperties": false
+    },
     "releaseTracking": {
       "oneOf": [
         {

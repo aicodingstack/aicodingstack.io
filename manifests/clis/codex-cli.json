@@ -53,6 +53,10 @@
   },
   "githubUrl": "https://github.com/openai/codex",
   "license": "Apache-2.0",
+  "sourceCode": {
+    "status": "open",
+    "repositoryRole": "source"
+  },
   "pricing": [
     {
       "name": "ChatGPT Free",
@@ -139,7 +143,7 @@
     {
       "url": "https://github.com/openai/codex",
       "title": "Codex CLI github community",
-      "fields": ["communityUrls.github"]
+      "fields": ["githubUrl", "license", "sourceCode", "communityUrls.github"]
     },
     {
       "url": "https://openai.com/news",

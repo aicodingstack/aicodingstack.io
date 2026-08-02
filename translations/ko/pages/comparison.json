@@ -84,6 +84,10 @@
     "subtitle": "AI 코딩 CLI의 가격, 플랫폼 지원, 라이선스, GitHub 스타, 프로젝트 링크와 공식 자료를 비교해 적합한 터미널 코딩 에이전트를 선택하세요.",
     "title": "AI 코딩 CLI 비교"
   },
+  "desktops": {
+    "subtitle": "독립형 AI 코딩 데스크톱 앱을 가격, 플랫폼 지원, 라이선스, GitHub 스타 및 프로젝트 링크, 공식 자료를 기준으로 비교합니다.",
+    "title": "AI 코딩 데스크톱 앱 비교"
+  },
   "columns": {
     "contextLength": "컨텍스트 길이",
     "freePlan": "무료 플랜",

@@ -84,9 +84,8 @@ export default function ExtensionComparisonPageClient({ locale: _locale }: Props
       key: 'githubStars',
       label: tShared('terms.stars'),
       render: (_: unknown, item: Record<string, unknown>) => {
-        const id = item.id as string
-        const stars = getGithubStars('extensions', id)
         const githubUrl = item.githubUrl as string | null | undefined
+        const stars = getGithubStars(githubUrl)
 
         if (stars === null || stars === undefined)
           return <span className="text-right block">-</span>
