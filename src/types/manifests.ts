@@ -146,6 +146,16 @@ export interface ManifestRelatedProduct {
 }
 
 /**
+ * Source-code relationship for a product's linked GitHub repository.
+ * Based on: /manifests/$schemas/ref/product.schema.json#$defs/sourceCode
+ */
+export interface ManifestSourceCode {
+  status: 'open' | 'partial' | 'closed'
+  repositoryRole: 'source' | 'feedback' | 'documentation'
+  license?: string
+}
+
+/**
  * Declarative latest-version source
  * Based on: /manifests/$schemas/ref/product.schema.json#$defs/releaseTracking
  */
@@ -191,6 +201,7 @@ export interface ManifestBaseProduct extends ManifestVendorEntity {
   releaseTracking?: ManifestReleaseTracking
   githubUrl: string | null
   license: string
+  sourceCode?: ManifestSourceCode
   pricing: ManifestPricingTier[]
   resourceUrls: ManifestResourceUrls
   /** Product-specific URLs; organization URLs are inherited from the vendor. */
@@ -477,10 +488,8 @@ export interface ManifestCollections {
  * Based on: /manifests/$schemas/github-stars.schema.json
  */
 export interface ManifestGitHubStars {
-  desktops: { [productId: string]: number | null }
-  extensions: { [productId: string]: number | null }
-  clis: { [productId: string]: number | null }
-  ides: { [productId: string]: number | null }
+  observedAt: string
+  repositories: Record<string, number | null>
 }
 
 // =============================================================================

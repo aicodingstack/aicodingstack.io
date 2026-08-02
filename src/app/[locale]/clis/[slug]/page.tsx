@@ -118,7 +118,7 @@ export default async function CLIPage({
           deprecated={cli.deprecated ?? false}
           latestVersion={cli.latestVersion}
           license={cli.license}
-          githubStars={getGithubStars('clis', cli.id)}
+          githubStars={getGithubStars(cli.githubUrl)}
           platforms={cli.platforms?.map(p => p.os)}
           websiteUrl={websiteUrl}
           docsUrl={docsUrl}

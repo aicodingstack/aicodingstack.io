@@ -137,7 +137,7 @@ export default async function ExtensionPage({
           verified={extension.verified ?? false}
           latestVersion={extension.latestVersion}
           license={extension.license}
-          githubStars={getGithubStars('extensions', extension.id)}
+          githubStars={getGithubStars(extension.githubUrl)}
           additionalInfo={additionalInfo}
           websiteUrl={websiteUrl}
           docsUrl={docsUrl}

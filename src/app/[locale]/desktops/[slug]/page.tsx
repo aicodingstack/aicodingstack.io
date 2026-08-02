@@ -97,7 +97,7 @@ export default async function DesktopPage({
           verified={desktop.verified ?? false}
           latestVersion={desktop.latestVersion}
           license={desktop.license}
-          githubStars={getGithubStars('desktops', desktop.id)}
+          githubStars={getGithubStars(desktop.githubUrl)}
           platforms={desktop.platforms.map(platform => platform.os)}
           websiteUrl={websiteUrl}
           docsUrl={desktop.docsUrl || undefined}

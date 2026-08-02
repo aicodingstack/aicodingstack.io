@@ -2,7 +2,7 @@
 
 /**
  * GitHub Stars Updater
- * Updates github-stars.json with new manifest entries
+ * Keeps repository keys in github-stars.json aligned with product manifests.
  */
 
 import fs from 'node:fs'
@@ -11,122 +11,101 @@ import { fileURLToPath } from 'node:url'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
+const manifestDirectories = {
+  cli: 'clis',
+  desktop: 'desktops',
+  extension: 'extensions',
+  ide: 'ides',
+}
 
-/**
- * Get project root directory
- */
 function getProjectRoot() {
   return path.resolve(__dirname, '../../../../..')
 }
 
-/**
- * Get the path to github-stars.json
- */
 function getGithubStarsPath() {
   return path.join(getProjectRoot(), 'data/github-stars.json')
 }
 
-/**
- * Load github-stars.json
- * @returns {Object} The current github-stars data
- */
+function getManifestPath(type, id) {
+  const directory = manifestDirectories[type]
+  return directory ? path.join(getProjectRoot(), 'manifests', directory, `${id}.json`) : null
+}
+
+function repositoryIdFromUrl(url) {
+  const match = url
+    ?.replace(/\/$/, '')
+    .replace(/\.git$/, '')
+    .match(/^https:\/\/github\.com\/(.+\/.+)$/)
+  return match?.[1] ?? null
+}
+
+function loadManifestRepository(type, id) {
+  const manifestPath = getManifestPath(type, id)
+  if (!manifestPath || !fs.existsSync(manifestPath)) return null
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'))
+  return repositoryIdFromUrl(manifest.githubUrl)
+}
+
+function countRepositoryAssociations(repositoryId, excludedType, excludedId) {
+  let count = 0
+  for (const [type, directory] of Object.entries(manifestDirectories)) {
+    const directoryPath = path.join(getProjectRoot(), 'manifests', directory)
+    for (const file of fs.readdirSync(directoryPath).filter(name => name.endsWith('.json'))) {
+      const id = file.replace(/\.json$/, '')
+      if (type === excludedType && id === excludedId) continue
+      const manifest = JSON.parse(fs.readFileSync(path.join(directoryPath, file), 'utf8'))
+      if (repositoryIdFromUrl(manifest.githubUrl) === repositoryId) count += 1
+    }
+  }
+  return count
+}
+
 export function loadGithubStars() {
   const filePath = getGithubStarsPath()
-
   if (!fs.existsSync(filePath)) {
     throw new Error(`github-stars.json not found at: ${filePath}`)
   }
-
-  const content = fs.readFileSync(filePath, 'utf-8')
-  return JSON.parse(content)
+  return JSON.parse(fs.readFileSync(filePath, 'utf8'))
 }
 
-/**
- * Save github-stars.json
- * @param {Object} data - The github-stars data to save
- */
 export function saveGithubStars(data) {
-  const filePath = getGithubStarsPath()
-  const content = `${JSON.stringify(data, null, 2)}\n`
-  fs.writeFileSync(filePath, content, 'utf-8')
+  const sortedRepositories = Object.fromEntries(
+    Object.entries(data.repositories).sort(([left], [right]) => left.localeCompare(right))
+  )
+  fs.writeFileSync(
+    getGithubStarsPath(),
+    `${JSON.stringify({ ...data, repositories: sortedRepositories }, null, 2)}\n`,
+    'utf8'
+  )
 }
 
-/**
- * Get the tracked category name from manifest type.
- * @param {string} type - Manifest type (cli, extension, ide, model)
- * @returns {string} Category name for github-stars.json
- */
-function getCategoryName(type) {
-  const mapping = {
-    cli: 'clis',
-    extension: 'extensions',
-    ide: 'ides',
-    model: 'models',
-  }
-
-  return mapping[type] || null
-}
-
-/**
- * Update github-stars.json with a new or updated manifest entry
- * @param {string} type - Manifest type (cli, extension, ide, etc.)
- * @param {string} id - Manifest id
- * @param {Object} options - Options
- * @param {boolean} options.isNew - Whether this is a new entry (true) or update (false)
- * @returns {Object} Result with status and message
- */
 export function updateGithubStarsEntry(type, id, options = {}) {
   const { isNew = false } = options
 
   try {
-    // Load current data
-    const githubStars = loadGithubStars()
-    const category = getCategoryName(type)
-
-    if (!category || !Object.hasOwn(githubStars, category)) {
+    const repositoryId = loadManifestRepository(type, id)
+    if (!repositoryId) {
       return {
         status: 'skipped',
-        message: `Manifest type "${type}" is not tracked by data/github-stars.json`,
+        message: `Manifest "${type}:${id}" has no tracked GitHub repository`,
       }
     }
 
-    // Check if entry already exists
-    const exists = id in githubStars[category]
-
+    const githubStars = loadGithubStars()
+    const exists = Object.hasOwn(githubStars.repositories, repositoryId)
     if (isNew && exists) {
       return {
         status: 'skipped',
-        message: `Entry "${id}" already exists in github-stars.json under "${category}"`,
+        message: `Repository "${repositoryId}" already exists in github-stars.json`,
       }
     }
 
-    if (!isNew && !exists) {
-      return {
-        status: 'skipped',
-        message: `Entry "${id}" does not exist in github-stars.json under "${category}"; no change made. Verify the official repository, then use the add command.`,
-      }
-    }
-
-    // Add or update entry with null (stars will be fetched later)
-    githubStars[category][id] = null
-
-    // Sort entries alphabetically within category
-    const sortedCategory = Object.keys(githubStars[category])
-      .sort()
-      .reduce((acc, key) => {
-        acc[key] = githubStars[category][key]
-        return acc
-      }, {})
-
-    githubStars[category] = sortedCategory
-
-    // Save updated data
+    githubStars.repositories[repositoryId] ??= null
     saveGithubStars(githubStars)
-
     return {
       status: 'success',
-      message: `Updated github-stars.json: ${category}["${id}"] = null`,
-      action: exists ? 'updated' : 'added',
+      message: `Tracked github-stars.json repository "${repositoryId}"`,
+      action: exists ? 'unchanged' : 'added',
     }
   } catch (error) {
     return {
@@ -137,83 +116,59 @@ export function updateGithubStarsEntry(type, id, options = {}) {
   }
 }
 
-/**
- * Remove an entry from github-stars.json
- * @param {string} type - Manifest type
- * @param {string} id - Manifest id
- * @returns {Object} Result with status and message
- */
 export function removeGithubStarsEntry(type, id) {
   try {
+    const repositoryId = loadManifestRepository(type, id)
+    if (!repositoryId) {
+      return {
+        status: 'skipped',
+        message: `Manifest "${type}:${id}" has no tracked GitHub repository`,
+      }
+    }
+
+    if (countRepositoryAssociations(repositoryId, type, id) > 0) {
+      return {
+        status: 'skipped',
+        message: `Repository "${repositoryId}" is still used by another product surface`,
+      }
+    }
+
     const githubStars = loadGithubStars()
-    const category = getCategoryName(type)
-
-    if (!category || !Object.hasOwn(githubStars, category)) {
+    if (!Object.hasOwn(githubStars.repositories, repositoryId)) {
       return {
         status: 'skipped',
-        message: `Manifest type "${type}" is not tracked by data/github-stars.json`,
+        message: `Repository "${repositoryId}" is not tracked in github-stars.json`,
       }
     }
 
-    if (!githubStars[category] || !(id in githubStars[category])) {
-      return {
-        status: 'skipped',
-        message: `Entry "${id}" not found in github-stars.json under "${category}"`,
-      }
-    }
-
-    delete githubStars[category][id]
+    delete githubStars.repositories[repositoryId]
     saveGithubStars(githubStars)
-
     return {
       status: 'success',
-      message: `Removed "${id}" from github-stars.json under "${category}"`,
+      message: `Removed repository "${repositoryId}" from github-stars.json`,
     }
   } catch (error) {
     return {
       status: 'error',
-      message: `Failed to remove entry from github-stars.json: ${error.message}`,
+      message: `Failed to remove repository from github-stars.json: ${error.message}`,
       error,
     }
   }
 }
 
-/**
- * CLI entry point for testing
- */
 if (import.meta.url === `file://${process.argv[1]}`) {
   const [, , command, type, id] = process.argv
-
-  if (!command || !['add', 'update', 'remove'].includes(command)) {
+  if (!command || !['add', 'update', 'remove'].includes(command) || !type || !id) {
     console.error('Usage:')
-    console.error('  node github-stars-updater.mjs add <type> <id>')
-    console.error('  node github-stars-updater.mjs update <type> <id>')
-    console.error('  node github-stars-updater.mjs remove <type> <id>')
-    console.error('')
-    console.error('Examples:')
-    console.error('  node github-stars-updater.mjs add cli cursor-cli')
-    console.error('  node github-stars-updater.mjs update extension claude-code')
-    console.error('  node github-stars-updater.mjs remove ide windsurf')
+    console.error('  node github-stars-updater.mjs <add|update|remove> <type> <id>')
     process.exit(1)
   }
 
-  if (!type || !id) {
-    console.error('Error: type and id are required')
-    process.exit(1)
-  }
-
-  let result
-
-  if (command === 'add' || command === 'update') {
-    result = updateGithubStarsEntry(type, id, { isNew: command === 'add' })
-  } else {
-    result = removeGithubStarsEntry(type, id)
-  }
-
+  const result =
+    command === 'remove'
+      ? removeGithubStarsEntry(type, id)
+      : updateGithubStarsEntry(type, id, { isNew: command === 'add' })
   console.log(`Status: ${result.status}`)
   console.log(`Message: ${result.message}`)
-
-  if (result.status === 'error') {
-    process.exit(1)
-  }
+  if (result.status === 'error') process.exit(1)
 }

@@ -1,6 +1,6 @@
 # GitHub Stars Refresh
 
-The stars refresh reads `githubUrl` from IDE, CLI, and extension manifests, queries the GitHub repository API, and writes the centralized cache at `data/github-stars.json`.
+The stars refresh reads the repository keys already tracked in `data/github-stars.json`, queries the GitHub repository API, and updates their raw star counts. Product associations are derived separately from the `githubUrl` fields in IDE, CLI, desktop, and extension manifests.
 
 ## Run it
 
@@ -24,13 +24,14 @@ The file follows `manifests/$schemas/github-stars.schema.json`:
 
 ```ts
 interface GitHubStarsData {
-  extensions: Record<string, number | null>
-  clis: Record<string, number | null>
-  ides: Record<string, number | null>
+  observedAt: string
+  repositories: Record<string, number | null>
 }
 ```
 
-Values are stored in thousands with one decimal place, matching the current UI contract; for example, `42.3` means approximately 42,300 stars. A `null` value means the manifest has no usable repository URL or no cached value exists. Transient API failures retain the previous cached value instead of replacing it with `null`.
+Repository keys use GitHub's `owner/repository` form and values are raw stargazer counts. The UI converts them to compact thousands when needed. A `null` value means no trustworthy count is currently available. Transient API failures retain the previous cached value instead of replacing it with `null`.
+
+Product names, product surfaces, repository roles, licenses, and source-code coverage do not belong in the Stars snapshot. They come from product manifests; use the manifest `sourceCode` override when a repository contains only part of the product source or is used only for feedback or documentation.
 
 ## Automation
 
@@ -47,7 +48,7 @@ There is only one scheduled owner for this refresh. General scheduled URL checks
 
 - `403`: provide `GITHUB_TOKEN` or wait for the API limit to reset.
 - `404`: check the manifest's `githubUrl` and repository visibility.
-- Validation failure: ensure each IDE, CLI, and extension manifest has a matching key and no orphan key remains.
+- Validation failure: ensure every non-null product `githubUrl` maps to a repository key and no repository key is orphaned.
 - No pull request: confirm the workflow checked `data/github-stars.json` and that the refreshed values actually differ.
 
-Last reviewed: 2026-07-18.
+Last reviewed: 2026-08-01.

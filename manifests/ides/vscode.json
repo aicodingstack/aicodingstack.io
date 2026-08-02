@@ -48,6 +48,10 @@
   "latestVersion": "1.131",
   "githubUrl": "https://github.com/microsoft/vscode",
   "license": "Proprietary",
+  "sourceCode": {
+    "status": "partial",
+    "repositoryRole": "source"
+  },
   "pricing": [
     {
       "name": "Free",
@@ -127,7 +131,7 @@
     {
       "url": "https://github.com/microsoft/vscode",
       "title": "Visual Studio Code source repository",
-      "fields": ["githubUrl", "resourceUrls.issue", "communityUrls.github"]
+      "fields": ["githubUrl", "sourceCode", "resourceUrls.issue", "communityUrls.github"]
     },
     {
       "url": "https://x.com/code",

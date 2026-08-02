@@ -9,6 +9,11 @@
   },
   "noResults": "Tidak ada proyek sumber terbuka yang ditemukan untuk kategori ini.",
   "note": "Catatan: Halaman ini hanya menampilkan proyek yang memiliki repositori GitHub. Beberapa proyek yang bukan sumber terbuka tetap menyediakan repositori GitHub sebagai saluran umpan balik pengguna.",
+  "repositoryScope": {
+    "source": "Kode sumber disertakan dalam repositori ini",
+    "partial": "Repositori ini hanya berisi inti sumber terbuka produk",
+    "related": "Produk terkait; kode sumbernya tidak ada dalam repositori ini"
+  },
   "statistics": {
     "closedSourceCount": "Proyek Proprietary",
     "closedSourcePercentage": "Persentase Proprietari",

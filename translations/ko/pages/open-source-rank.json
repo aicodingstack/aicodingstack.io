@@ -9,6 +9,11 @@
   },
   "noResults": "이 카테고리에서 오픈 소스 프로젝트를 찾을 수 없습니다.",
   "note": "참고: 이 페이지에는 GitHub 저장소가 있는 프로젝트만 표시됩니다. 오픈 소스가 아닌 일부 프로젝트도 사용자 피드백 채널로 GitHub 저장소를 운영합니다.",
+  "repositoryScope": {
+    "source": "소스 코드가 이 저장소에 포함되어 있습니다",
+    "partial": "이 저장소에는 제품의 오픈 소스 핵심만 포함되어 있습니다",
+    "related": "관련 제품이며 소스 코드는 이 저장소에 포함되어 있지 않습니다"
+  },
   "statistics": {
     "closedSourceCount": "독점 프로젝트",
     "closedSourcePercentage": "독점 프로젝트 비율",

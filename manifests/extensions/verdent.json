@@ -49,6 +49,10 @@
   "latestVersion": "1.5.5",
   "githubUrl": "https://github.com/verdentAI/docs",
   "license": "Proprietary",
+  "sourceCode": {
+    "status": "closed",
+    "repositoryRole": "documentation"
+  },
   "pricing": [
     {
       "name": "Lite",
@@ -122,6 +126,11 @@
     }
   ],
   "sources": [
+    {
+      "url": "https://github.com/verdentAI/docs",
+      "title": "Verdent documentation repository",
+      "fields": ["githubUrl", "sourceCode"]
+    },
     {
       "url": "https://www.linkedin.com/company/verdent",
       "title": "Verdent linkedin community",

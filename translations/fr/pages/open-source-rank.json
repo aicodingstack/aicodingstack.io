@@ -9,6 +9,11 @@
   },
   "noResults": "Aucun projet open source trouvé pour cette catégorie.",
   "note": "Note: Cette page affiche uniquement les projets avec des dépôts GitHub. Certains projets, bien qu'ils ne soient pas open source, maintiennent des dépôts GitHub comme canaux de retour des utilisateurs.",
+  "repositoryScope": {
+    "source": "Le code source est inclus dans ce dépôt",
+    "partial": "Ce dépôt contient uniquement le cœur open source du produit",
+    "related": "Produit associé ; son code source ne se trouve pas dans ce dépôt"
+  },
   "statistics": {
     "closedSourceCount": "Projets propriétaires",
     "closedSourcePercentage": "Pourcentage propriétaire",

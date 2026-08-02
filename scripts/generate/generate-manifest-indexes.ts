@@ -207,18 +207,26 @@ function generateGithubStarsFile(): void {
 
 import githubStarsJson from '../../../data/github-stars.json'
 
-export type GithubStarsData = Record<string, Record<string, number | null>>
+export interface GithubStarsData {
+  observedAt: string
+  repositories: Record<string, number | null>
+}
 
 export const githubStarsData = githubStarsJson as GithubStarsData
 
 /**
  * Get GitHub stars for a specific product
- * @param category - The product category (extensions, clis, desktops, ides)
- * @param id - The product ID
+ * @param githubUrl - The product's GitHub repository URL
  * @returns The number of stars (in thousands) or null if not available
  */
-export function getGithubStars(category: string, id: string): number | null {
-  return githubStarsData[category]?.[id] ?? null
+export function getGithubStars(githubUrl: string | null | undefined): number | null {
+  if (!githubUrl) return null
+  const repositoryId = githubUrl
+    .replace(/\\/$/, '')
+    .replace(/\\.git$/, '')
+    .replace(/^https:\\/\\/github\\.com\\//, '')
+  const stars = githubStarsData.repositories[repositoryId]
+  return typeof stars === 'number' ? Math.round(stars / 100) / 10 : null
 }
 
 export default githubStarsData
@@ -228,9 +236,7 @@ export default githubStarsData
   fs.writeFileSync(outputPath, content, 'utf8')
 
   // Count total entries
-  const totalEntries = Object.values(starsData).reduce((sum: number, category: unknown) => {
-    return sum + Object.keys(category as Record<string, unknown>).length
-  }, 0)
+  const totalEntries = Object.keys(starsData.repositories as Record<string, unknown>).length
 
   console.log(`✓ Generated github-stars.ts (${totalEntries} entries)`)
 }
