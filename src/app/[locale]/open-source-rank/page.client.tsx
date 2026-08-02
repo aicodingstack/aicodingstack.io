@@ -11,6 +11,7 @@ import { desktopsData } from '@/lib/generated/desktops'
 import { extensionsData } from '@/lib/generated/extensions'
 import { githubStarsData } from '@/lib/generated/github-stars'
 import { idesData } from '@/lib/generated/ides'
+import { getRepositoryLicense } from '@/lib/repository-license'
 import type { ManifestBaseProduct } from '@/types/manifests'
 
 type ProductType = 'ide' | 'cli' | 'desktop' | 'extension'
@@ -147,8 +148,10 @@ function buildRepositoryProjects(): RepositoryProject[] {
         surface =>
           getRepositoryRole(surface.product) === 'source' && surface.repositoryScope !== 'related'
       )
-      const repositoryLicense = catalogSurfaces.find(surface => surface.product.sourceCode?.license)
-        ?.product.sourceCode?.license
+      const repositorySurface = catalogSurfaces.find(surface => surface.product.sourceCode?.license)
+      const repositoryLicense = repositorySurface
+        ? getRepositoryLicense(repositorySurface.product)
+        : undefined
       const openSourceLicense = catalogSurfaces.find(
         surface =>
           surface.repositoryScope !== 'related' &&

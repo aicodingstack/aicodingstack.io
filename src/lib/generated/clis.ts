@@ -27,6 +27,7 @@ import KiroCli from '../../../manifests/clis/kiro-cli.json'
 import Kode from '../../../manifests/clis/kode.json'
 import Omp from '../../../manifests/clis/omp.json'
 import Opencode from '../../../manifests/clis/opencode.json'
+import Pi from '../../../manifests/clis/pi.json'
 import QoderCli from '../../../manifests/clis/qoder-cli.json'
 import QwenCode from '../../../manifests/clis/qwen-code.json'
 import VibeCli from '../../../manifests/clis/vibe-cli.json'
@@ -56,6 +57,7 @@ export const clisData = [
   Kode,
   Omp,
   Opencode,
+  Pi,
   QoderCli,
   QwenCode,
   VibeCli,

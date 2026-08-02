@@ -1,0 +1,134 @@
+{
+  "$schema": "../$schemas/ide.schema.json",
+  "id": "vscodium",
+  "name": "VSCodium",
+  "familyId": "vscodium",
+  "description": "VSCodium is a community-driven, freely licensed binary distribution of VS Code. It provides MIT-licensed builds without Microsoft branding or telemetry and uses Open VSX for extensions.",
+  "translations": {
+    "de": {
+      "description": "VSCodium ist eine von der Community betriebene, frei lizenzierte Binärdistribution von VS Code. Sie bietet MIT-lizenzierte Builds ohne Microsoft-Branding oder Telemetrie und nutzt Open VSX."
+    },
+    "es": {
+      "description": "VSCodium es una distribución binaria de VS Code, impulsada por la comunidad y con licencia libre. Ofrece compilaciones MIT sin marca ni telemetría de Microsoft y usa Open VSX."
+    },
+    "fr": {
+      "description": "VSCodium est une distribution binaire de VS Code, pilotée par la communauté et sous licence libre. Elle propose des builds MIT sans marque ni télémétrie Microsoft et utilise Open VSX."
+    },
+    "id": {
+      "description": "VSCodium adalah distribusi biner VS Code berlisensi bebas yang digerakkan komunitas. VSCodium menyediakan build berlisensi MIT tanpa merek atau telemetri Microsoft dan memakai Open VSX."
+    },
+    "ja": {
+      "description": "VSCodiumは、コミュニティ主導で自由なライセンスのVS Codeバイナリディストリビューションです。Microsoftのブランドやテレメトリを含まないMITライセンスのビルドを提供し、拡張機能にはOpen VSXを使用します。"
+    },
+    "ko": {
+      "description": "VSCodium은 커뮤니티가 주도하는 자유 라이선스의 VS Code 바이너리 배포판입니다. Microsoft 브랜딩과 원격 측정이 없는 MIT 라이선스 빌드를 제공하며 확장 기능에 Open VSX를 사용합니다."
+    },
+    "pt": {
+      "description": "VSCodium é uma distribuição binária do VS Code, orientada pela comunidade e com licença livre. Oferece builds MIT sem marca ou telemetria da Microsoft e usa o Open VSX."
+    },
+    "ru": {
+      "description": "VSCodium — управляемый сообществом свободно лицензируемый бинарный дистрибутив VS Code. Он предлагает сборки MIT без брендинга и телеметрии Microsoft и использует Open VSX."
+    },
+    "tr": {
+      "description": "VSCodium, topluluk tarafından yürütülen ve özgürce lisanslanan bir VS Code ikili dağıtımıdır. Microsoft markası ve telemetrisi olmayan MIT lisanslı yapılar sunar ve Open VSX kullanır."
+    },
+    "zh-Hans": {
+      "description": "VSCodium 是由社区驱动、采用自由许可的 VS Code 二进制发行版，提供不含 Microsoft 品牌和遥测的 MIT 许可构建，并使用 Open VSX 获取扩展。"
+    },
+    "zh-Hant": {
+      "description": "VSCodium 是由社群驅動、採用自由授權的 VS Code 二進位發行版，提供不含 Microsoft 品牌和遙測的 MIT 授權建置，並使用 Open VSX 取得擴充功能。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://vscodium.com/",
+      "title": "VSCodium official site",
+      "fields": [
+        "name",
+        "description",
+        "websiteUrl",
+        "docsUrl",
+        "pricing",
+        "resourceUrls.download",
+        "platforms"
+      ]
+    },
+    {
+      "url": "https://github.com/VSCodium/vscodium",
+      "title": "VSCodium official repository",
+      "fields": [
+        "description",
+        "githubUrl",
+        "license",
+        "pricing",
+        "resourceUrls.issue",
+        "communityUrls.github",
+        "platforms"
+      ]
+    },
+    {
+      "url": "https://github.com/VSCodium/vscodium/releases/tag/1.126.04524",
+      "title": "VSCodium 1.126.04524 release",
+      "fields": ["latestVersion", "releaseTracking", "resourceUrls.changelog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-01",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://vscodium.com",
+  "docsUrl": "https://github.com/VSCodium/vscodium/tree/master/docs",
+  "vendor": "VSCodium",
+  "latestVersion": "1.126.04524",
+  "releaseTracking": {
+    "provider": "github-release",
+    "identifier": "VSCodium/vscodium"
+  },
+  "githubUrl": "https://github.com/VSCodium/vscodium",
+  "license": "MIT",
+  "pricing": [
+    {
+      "name": "Open Source",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://github.com/VSCodium/vscodium/releases/latest",
+    "changelog": "https://github.com/VSCodium/vscodium/releases",
+    "pricing": null,
+    "issue": "https://github.com/VSCodium/vscodium/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": "https://github.com/VSCodium/vscodium",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installCommand": "brew install --cask vscodium",
+      "launchCommand": null,
+      "installPath": null
+    },
+    {
+      "os": "Windows",
+      "installCommand": "winget install -e --id VSCodium.VSCodium",
+      "launchCommand": null,
+      "installPath": null
+    },
+    {
+      "os": "Linux",
+      "installCommand": "snap install codium --classic",
+      "launchCommand": null,
+      "installPath": null
+    }
+  ]
+}

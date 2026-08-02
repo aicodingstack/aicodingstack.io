@@ -1,0 +1,62 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "earendil",
+  "name": "Earendil Inc.",
+  "description": "Earendil develops Pi and Lefos, tools built in the open to help people harness AI and adapt it to their workflows.",
+  "translations": {
+    "de": {
+      "description": "Earendil entwickelt Pi und Lefos, offen entwickelte Werkzeuge, mit denen Menschen KI nutzen und an ihre Arbeitsabläufe anpassen können."
+    },
+    "es": {
+      "description": "Earendil desarrolla Pi y Lefos, herramientas creadas de forma abierta para ayudar a las personas a aprovechar la IA y adaptarla a sus flujos de trabajo."
+    },
+    "fr": {
+      "description": "Earendil développe Pi et Lefos, des outils conçus ouvertement pour aider chacun à exploiter l’IA et à l’adapter à ses flux de travail."
+    },
+    "id": {
+      "description": "Earendil mengembangkan Pi dan Lefos, alat yang dibangun secara terbuka untuk membantu orang memanfaatkan AI dan menyesuaikannya dengan alur kerja mereka."
+    },
+    "ja": {
+      "description": "Earendilは、AIを活用して各自のワークフローに適応させるためのオープンなツール、PiとLefosを開発しています。"
+    },
+    "ko": {
+      "description": "Earendil은 사람들이 AI를 활용하고 자신의 워크플로에 맞게 조정할 수 있도록 공개적으로 개발되는 도구인 Pi와 Lefos를 만듭니다."
+    },
+    "pt": {
+      "description": "A Earendil desenvolve Pi e Lefos, ferramentas criadas abertamente para ajudar as pessoas a aproveitar a IA e adaptá-la aos seus fluxos de trabalho."
+    },
+    "ru": {
+      "description": "Earendil разрабатывает Pi и Lefos — открыто создаваемые инструменты, которые помогают использовать ИИ и адаптировать его к своим рабочим процессам."
+    },
+    "tr": {
+      "description": "Earendil, insanların yapay zekâdan yararlanmasına ve onu iş akışlarına uyarlamasına yardımcı olan, açık biçimde geliştirilen Pi ve Lefos araçlarını üretir."
+    },
+    "zh-Hans": {
+      "description": "Earendil 开发 Pi 和 Lefos，这些工具以开放方式构建，帮助人们利用 AI 并使其适应自己的工作流程。"
+    },
+    "zh-Hant": {
+      "description": "Earendil 開發 Pi 和 Lefos，這些工具以開放方式建置，協助人們運用 AI 並使其適應自己的工作流程。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://earendil.com/",
+      "title": "Earendil official site",
+      "fields": ["name", "description", "websiteUrl", "communityUrls.github"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-01",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://earendil.com",
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": "https://github.com/earendil-works",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  }
+}

@@ -10,6 +10,7 @@ import IntellijIdea from '../../../manifests/ides/intellij-idea.json'
 import Kiro from '../../../manifests/ides/kiro.json'
 import Trae from '../../../manifests/ides/trae.json'
 import Vscode from '../../../manifests/ides/vscode.json'
+import Vscodium from '../../../manifests/ides/vscodium.json'
 import Windsurf from '../../../manifests/ides/windsurf.json'
 import Zed from '../../../manifests/ides/zed.json'
 import type { ManifestIDE } from '../../types/manifests'
@@ -21,6 +22,7 @@ export const idesData = [
   Kiro,
   Trae,
   Vscode,
+  Vscodium,
   Windsurf,
   Zed,
 ] as unknown as ManifestIDE[]

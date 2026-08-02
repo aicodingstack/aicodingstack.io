@@ -39,7 +39,7 @@
     }
   },
   "verified": true,
-  "lastVerifiedAt": "2026-07-31",
+  "lastVerifiedAt": "2026-08-01",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://code.visualstudio.com",
@@ -50,7 +50,8 @@
   "license": "Proprietary",
   "sourceCode": {
     "status": "partial",
-    "repositoryRole": "source"
+    "repositoryRole": "source",
+    "license": "MIT"
   },
   "pricing": [
     {
@@ -132,6 +133,11 @@
       "url": "https://github.com/microsoft/vscode",
       "title": "Visual Studio Code source repository",
       "fields": ["githubUrl", "sourceCode", "resourceUrls.issue", "communityUrls.github"]
+    },
+    {
+      "url": "https://github.com/microsoft/vscode/blob/main/LICENSE.txt",
+      "title": "Visual Studio Code source repository license",
+      "fields": ["sourceCode.license"]
     },
     {
       "url": "https://x.com/code",

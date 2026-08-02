@@ -1,0 +1,67 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "vscodium",
+  "name": "VSCodium",
+  "description": "VSCodium is the community project that builds freely licensed VS Code binaries without Microsoft branding or telemetry.",
+  "translations": {
+    "de": {
+      "description": "VSCodium ist das Community-Projekt, das frei lizenzierte VS-Code-Binärdateien ohne Microsoft-Branding oder Telemetrie erstellt."
+    },
+    "es": {
+      "description": "VSCodium es el proyecto comunitario que crea binarios de VS Code con licencia libre, sin marca ni telemetría de Microsoft."
+    },
+    "fr": {
+      "description": "VSCodium est le projet communautaire qui produit des binaires VS Code sous licence libre, sans marque ni télémétrie Microsoft."
+    },
+    "id": {
+      "description": "VSCodium adalah proyek komunitas yang membangun biner VS Code berlisensi bebas tanpa merek atau telemetri Microsoft."
+    },
+    "ja": {
+      "description": "VSCodiumは、Microsoftのブランドやテレメトリを含まない、自由なライセンスのVS Codeバイナリを構築するコミュニティプロジェクトです。"
+    },
+    "ko": {
+      "description": "VSCodium은 Microsoft 브랜딩과 원격 측정이 없는 자유 라이선스의 VS Code 바이너리를 빌드하는 커뮤니티 프로젝트입니다."
+    },
+    "pt": {
+      "description": "VSCodium é o projeto comunitário que cria binários do VS Code com licença livre, sem marca ou telemetria da Microsoft."
+    },
+    "ru": {
+      "description": "VSCodium — общественный проект, создающий свободно лицензируемые бинарные сборки VS Code без брендинга и телеметрии Microsoft."
+    },
+    "tr": {
+      "description": "VSCodium, Microsoft markası ve telemetrisi olmadan özgürce lisanslanan VS Code ikili dosyaları oluşturan topluluk projesidir."
+    },
+    "zh-Hans": {
+      "description": "VSCodium 是一个社区项目，构建采用自由许可且不含 Microsoft 品牌和遥测的 VS Code 二进制文件。"
+    },
+    "zh-Hant": {
+      "description": "VSCodium 是一個社群專案，建置採用自由授權且不含 Microsoft 品牌和遙測的 VS Code 二進位檔案。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://vscodium.com/",
+      "title": "VSCodium official site",
+      "fields": ["name", "description", "websiteUrl"]
+    },
+    {
+      "url": "https://github.com/VSCodium",
+      "title": "VSCodium GitHub organization",
+      "fields": ["description", "communityUrls.github"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-01",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://vscodium.com",
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": "https://github.com/VSCodium",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  }
+}
