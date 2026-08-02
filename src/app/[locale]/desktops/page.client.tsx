@@ -63,7 +63,18 @@ export default function DesktopsPageClient({ locale }: Props) {
       <Header />
       <div className="max-w-8xl mx-auto px-[var(--spacing-md)] py-[var(--spacing-lg)]">
         <main className="w-full">
-          <PageHeader title={tPage('title')} subtitle={tPage('subtitle')} />
+          <PageHeader
+            title={tPage('title')}
+            subtitle={tPage('subtitle')}
+            action={
+              <Link
+                href="/desktops/comparison"
+                className="text-sm px-[var(--spacing-md)] py-[var(--spacing-xs)] border border-[var(--color-border)] hover:border-[var(--color-border-strong)] transition-colors"
+              >
+                {tShared('actions.compareAll')} →
+              </Link>
+            }
+          />
           <StackTabs activeStack="desktops" locale={locale} />
           <FilterSortBar
             sortOrder={sortOrder}

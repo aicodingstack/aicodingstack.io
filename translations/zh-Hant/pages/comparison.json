@@ -84,6 +84,10 @@
     "subtitle": "依價格、平台支援、授權條款、GitHub 星標、專案連結與官方資源比較 AI 程式開發 CLI，選出合適的終端機程式開發代理。",
     "title": "AI 編碼 CLI 工具比較"
   },
+  "desktops": {
+    "subtitle": "按定價、平台支援、授權條款、GitHub 星標與專案連結及官方資源，比較獨立的 AI 編碼桌面應用程式。",
+    "title": "AI 編碼桌面應用程式比較"
+  },
   "columns": {
     "contextLength": "內容長度",
     "freePlan": "免費方案",

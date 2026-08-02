@@ -84,6 +84,10 @@
     "subtitle": "Comparez les CLI de codage IA par tarif, plateformes prises en charge, licence, étoiles GitHub, liens du projet et ressources officielles afin de choisir l’agent de codage en terminal adapté.",
     "title": "Comparaison des CLI de codage IA"
   },
+  "desktops": {
+    "subtitle": "Comparez les applications de bureau autonomes de programmation par IA selon le prix, les plateformes prises en charge, la licence, les étoiles et liens GitHub et les ressources officielles.",
+    "title": "Comparatif des applications de bureau de programmation par IA"
+  },
   "columns": {
     "contextLength": "Longueur du contexte",
     "freePlan": "Plan gratuit",

@@ -36,6 +36,7 @@ export function getStaticRoutes(): string[] {
     '/open-source-rank',
     '/search',
     '/clis/comparison',
+    '/desktops/comparison',
     '/extensions/comparison',
     '/ides/comparison',
     '/models/comparison',

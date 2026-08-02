@@ -194,7 +194,7 @@ export const PAGE_REGISTRY: Record<string, PageMetadataConfig> = {
     requiresSlug: true,
   },
 
-  // ========== Comparison Pages (4) ==========
+  // ========== Comparison Pages (5) ==========
   '/models/compare': {
     generatorType: 'comparison',
     pageType: 'comparison',
@@ -210,6 +210,11 @@ export const PAGE_REGISTRY: Record<string, PageMetadataConfig> = {
     pageType: 'comparison',
     category: 'clis',
   },
+  '/desktops/comparison': {
+    generatorType: 'comparison',
+    pageType: 'comparison',
+    category: 'desktops',
+  },
   '/extensions/comparison': {
     generatorType: 'comparison',
     pageType: 'comparison',
@@ -217,11 +222,11 @@ export const PAGE_REGISTRY: Record<string, PageMetadataConfig> = {
   },
 }
 
-// 总计: 30 个页面
+// 总计: 31 个页面
 // - 静态页面: 12 个（包括首页、manifesto、docs、articles、search 等）
 // - 列表页面: 6 个
 // - 详情页面: 8 个
-// - 比较页面: 4 个
+// - 比较页面: 5 个
 
 /**
  * Get page configuration by route

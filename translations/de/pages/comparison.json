@@ -84,6 +84,10 @@
     "subtitle": "Vergleichen Sie AI-Coding-CLIs nach Preis, Plattformunterstützung, Lizenz, GitHub-Sternen, Projektlinks und offiziellen Quellen, um den passenden Terminal-Coding-Agenten zu wählen.",
     "title": "AI-Coding-CLI-Vergleich"
   },
+  "desktops": {
+    "subtitle": "Vergleichen Sie eigenständige KI-Coding-Desktop-Apps nach Preisen, Plattformunterstützung, Lizenz, GitHub-Sternen und Projektlinks sowie offiziellen Ressourcen.",
+    "title": "Vergleich von KI-Coding-Desktop-Apps"
+  },
   "columns": {
     "contextLength": "Kontextlänge",
     "freePlan": "Kostenloser Plan",

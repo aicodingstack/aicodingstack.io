@@ -84,6 +84,10 @@
     "subtitle": "按定价、平台支持、许可证、GitHub 星标与项目链接和官方资源比较 AI 编码 CLI，选择适合你的终端编码代理。",
     "title": "AI 编码 CLI 工具比较"
   },
+  "desktops": {
+    "subtitle": "按定价、平台支持、许可证、GitHub 星标与项目链接及官方资源，对比独立的 AI 编码桌面应用。",
+    "title": "AI 编码桌面应用对比"
+  },
   "columns": {
     "contextLength": "上下文长度",
     "freePlan": "免费计划",

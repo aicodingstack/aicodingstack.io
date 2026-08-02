@@ -84,6 +84,10 @@
     "subtitle": "Doğru terminal kodlama aracısını seçmek için AI kodlama CLI'lerini fiyat, platform desteği, lisans, GitHub yıldızları, proje bağlantıları ve resmi kaynaklara göre karşılaştırın.",
     "title": "AI Kodlama CLI Karşılaştırması"
   },
+  "desktops": {
+    "subtitle": "Bağımsız yapay zekâ kodlama masaüstü uygulamalarını fiyat, platform desteği, lisans, GitHub yıldızları ve proje bağlantıları ile resmi kaynaklara göre karşılaştırın.",
+    "title": "Yapay Zekâ Kodlama Masaüstü Uygulamaları Karşılaştırması"
+  },
   "columns": {
     "contextLength": "Bağlam Uzunluğu",
     "freePlan": "Ücretsiz Plan",

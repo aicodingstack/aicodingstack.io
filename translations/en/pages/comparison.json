@@ -84,6 +84,10 @@
     "subtitle": "Compare AI coding CLI tools by pricing, platform support, license, GitHub stars and project links, and official resources to choose the right terminal coding agent.",
     "title": "AI Coding CLI Comparison"
   },
+  "desktops": {
+    "subtitle": "Compare standalone AI coding desktop apps by pricing, platform support, license, GitHub stars and project links, and official resources.",
+    "title": "AI Coding Desktop App Comparison"
+  },
   "columns": {
     "contextLength": "Context Length",
     "freePlan": "Free Plan",

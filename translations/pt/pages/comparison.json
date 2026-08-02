@@ -84,6 +84,10 @@
     "subtitle": "Compare CLIs de programação com IA por preço, suporte a plataformas, licença, estrelas no GitHub, links do projeto e recursos oficiais para escolher o agente de terminal ideal.",
     "title": "Comparação de CLI de programação com IA"
   },
+  "desktops": {
+    "subtitle": "Compare aplicativos desktop independentes de programação com IA por preço, suporte a plataformas, licença, estrelas e links do GitHub e recursos oficiais.",
+    "title": "Comparação de aplicativos desktop de programação com IA"
+  },
   "columns": {
     "contextLength": "Comprimento do Contexto",
     "freePlan": "Plano Gratuito",
