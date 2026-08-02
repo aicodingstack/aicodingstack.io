@@ -230,6 +230,7 @@ export interface ManifestBaseApp extends ManifestBaseProduct {
  * Extends: ManifestBaseApp
  */
 export interface ManifestCLI extends ManifestBaseApp {
+  landingPage?: boolean
   resourceUrls: ManifestResourceUrls & { download: string }
 }
 

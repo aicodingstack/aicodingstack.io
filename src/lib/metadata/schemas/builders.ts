@@ -103,23 +103,26 @@ export function buildOffersSchema(
 ): SchemaOffer | SchemaOffer[] | undefined {
   if (!pricing || pricing.length === 0) return undefined
 
-  const offers = pricing.map(tier => {
-    const offer: SchemaOffer = {
-      '@type': 'Offer',
-      price: tier.value !== null ? tier.value.toString() : '0',
-      priceCurrency: tier.currency || 'USD',
-    }
+  const offers = pricing
+    .filter(tier => tier.value !== null)
+    .map(tier => {
+      const offer: SchemaOffer = {
+        '@type': 'Offer',
+        price: tier.value?.toString() ?? '0',
+        priceCurrency: tier.currency || 'USD',
+      }
 
-    if (tier.name) offer.name = tier.name
-    if (tier.category) offer.category = tier.category
-    if (tier.value === 0 || tier.value === null) {
-      offer.price = '0'
-      offer.availability = 'https://schema.org/InStock'
-    }
+      if (tier.name) offer.name = tier.name
+      if (tier.category) offer.category = tier.category
+      if (tier.value === 0) {
+        offer.price = '0'
+        offer.availability = 'https://schema.org/InStock'
+      }
 
-    return offer
-  })
+      return offer
+    })
 
+  if (offers.length === 0) return undefined
   return offers.length === 1 ? offers[0] : offers
 }
 

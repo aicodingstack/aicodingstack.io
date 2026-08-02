@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aicodingstack.io/schemas/data/cli-landing-pages.schema.json",
+  "title": "Generated CLI landing-page content",
+  "type": "object",
+  "required": ["en", "de", "es", "fr", "id", "ja", "ko", "pt", "ru", "tr", "zh-Hans", "zh-Hant"],
+  "properties": {
+    "en": { "$ref": "#/$defs/localePages" },
+    "de": { "$ref": "#/$defs/localePages" },
+    "es": { "$ref": "#/$defs/localePages" },
+    "fr": { "$ref": "#/$defs/localePages" },
+    "id": { "$ref": "#/$defs/localePages" },
+    "ja": { "$ref": "#/$defs/localePages" },
+    "ko": { "$ref": "#/$defs/localePages" },
+    "pt": { "$ref": "#/$defs/localePages" },
+    "ru": { "$ref": "#/$defs/localePages" },
+    "tr": { "$ref": "#/$defs/localePages" },
+    "zh-Hans": { "$ref": "#/$defs/localePages" },
+    "zh-Hant": { "$ref": "#/$defs/localePages" }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "landingItem": {
+      "type": "object",
+      "required": ["title", "description"],
+      "properties": {
+        "title": { "$ref": "#/$defs/nonEmptyString" },
+        "description": { "$ref": "#/$defs/nonEmptyString" }
+      },
+      "additionalProperties": false
+    },
+    "faqItem": {
+      "type": "object",
+      "required": ["question", "answer"],
+      "properties": {
+        "question": { "$ref": "#/$defs/nonEmptyString" },
+        "answer": { "$ref": "#/$defs/nonEmptyString" }
+      },
+      "additionalProperties": false
+    },
+    "content": {
+      "type": "object",
+      "required": ["answer", "introduction", "capabilities", "verification", "faq"],
+      "properties": {
+        "answer": { "$ref": "#/$defs/nonEmptyString" },
+        "introduction": { "$ref": "#/$defs/nonEmptyString" },
+        "capabilities": {
+          "type": "object",
+          "required": ["items"],
+          "properties": {
+            "items": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": { "$ref": "#/$defs/landingItem" }
+            }
+          },
+          "additionalProperties": false
+        },
+        "verification": {
+          "type": "object",
+          "required": ["description"],
+          "properties": {
+            "description": { "$ref": "#/$defs/nonEmptyString" }
+          },
+          "additionalProperties": false
+        },
+        "faq": {
+          "type": "object",
+          "required": ["items"],
+          "properties": {
+            "items": {
+              "type": "array",
+              "minItems": 4,
+              "items": { "$ref": "#/$defs/faqItem" }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "localePages": {
+      "type": "object",
+      "minProperties": 1,
+      "patternProperties": {
+        "^[a-z0-9]+(?:-[a-z0-9]+)*$": { "$ref": "#/$defs/content" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

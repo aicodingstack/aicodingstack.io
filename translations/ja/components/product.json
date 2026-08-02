@@ -106,5 +106,24 @@
         }
       }
     }
+  },
+  "cliLanding": {
+    "labels": {
+      "publisher": "提供元",
+      "verified": "最終確認日",
+      "confidence": "信頼度"
+    },
+    "capabilitiesTitle": "{product} でできること",
+    "comparisonAction": "CLI 比較を開く",
+    "verification": {
+      "title": "情報源と検証",
+      "reviewedBy": "確認者",
+      "confidenceValues": {
+        "high": "高",
+        "medium": "中",
+        "low": "低"
+      }
+    },
+    "faqTitle": "よくある質問"
   }
 }

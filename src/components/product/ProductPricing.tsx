@@ -4,6 +4,7 @@ import { getPricingSummary, type PricingBoundary, type PricingTier } from '@/lib
 export interface ProductPricingProps {
   pricing: PricingTier[]
   pricingUrl?: string
+  variant?: 'default' | 'compact'
 }
 
 type PricingSummaryValueProps = {
@@ -62,11 +63,53 @@ function PricingTierValue({ tier }: { tier: PricingTier }) {
   return <NumericPricingValue tier={tier as PricingTier & { value: number }} />
 }
 
-export function ProductPricing({ pricing, pricingUrl }: ProductPricingProps) {
+export function ProductPricing({ pricing, pricingUrl, variant = 'default' }: ProductPricingProps) {
   const tShared = useTranslations('shared')
 
   if (!pricing || pricing.length === 0) {
     return null
+  }
+
+  if (variant === 'compact') {
+    return (
+      <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
+        <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-md)]">
+          {tShared('terms.pricing')}
+        </h2>
+
+        <div className="border-t border-[var(--color-border)]">
+          {pricing.map(tier => (
+            <div
+              key={tier.name}
+              className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-[var(--spacing-md)] py-[var(--spacing-sm)] border-b border-[var(--color-border)]"
+            >
+              <div className="min-w-0">
+                {tier.category && (
+                  <p className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider mb-1">
+                    {tier.category}
+                  </p>
+                )}
+                <h3 className="text-sm font-medium">{tier.name}</h3>
+              </div>
+              <p className="text-sm font-semibold text-right">
+                <PricingTierValue tier={tier} />
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {pricingUrl && (
+          <a
+            href={pricingUrl}
+            target="_blank"
+            rel="noopener"
+            className="inline-flex items-center mt-[var(--spacing-md)] text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
+          >
+            {tShared('actions.viewFullDetails')}
+          </a>
+        )}
+      </section>
+    )
   }
 
   return (

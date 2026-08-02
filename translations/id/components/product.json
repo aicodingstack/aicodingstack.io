@@ -106,5 +106,24 @@
         }
       }
     }
+  },
+  "cliLanding": {
+    "labels": {
+      "publisher": "Penerbit",
+      "verified": "Terakhir diverifikasi",
+      "confidence": "Tingkat keyakinan"
+    },
+    "capabilitiesTitle": "Apa yang dapat dilakukan {product}?",
+    "comparisonAction": "Buka perbandingan CLI",
+    "verification": {
+      "title": "Sumber dan verifikasi",
+      "reviewedBy": "Ditinjau oleh",
+      "confidenceValues": {
+        "high": "Tinggi",
+        "medium": "Sedang",
+        "low": "Rendah"
+      }
+    },
+    "faqTitle": "Pertanyaan umum"
   }
 }

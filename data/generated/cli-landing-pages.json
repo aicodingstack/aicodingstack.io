@@ -1,0 +1,590 @@
+{
+  "en": {
+    "codex-cli": {
+      "answer": "Codex CLI is OpenAI’s official coding agent for inspecting, editing, and running code from your terminal.",
+      "introduction": "It works against your local repository, lets you control models and permissions, and supports interactive tasks as well as repeatable scripts and CI workflows.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "Understand your codebase",
+            "description": "Inspect project files and answer questions with repository context."
+          },
+          {
+            "title": "Edit and debug code",
+            "description": "Make focused changes, find issues, and run checks in your local environment."
+          },
+          {
+            "title": "Run commands and automate",
+            "description": "Use shell tools interactively or call codex exec from scripts and CI pipelines."
+          }
+        ]
+      },
+      "verification": {
+        "description": "Product facts are checked against official documentation, pricing pages, and the upstream repository."
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "Does OpenAI have a Codex CLI?",
+            "answer": "Yes. Codex CLI is OpenAI’s command-line coding agent for inspecting, editing, and running code in local repositories."
+          },
+          {
+            "question": "How do I install Codex CLI?",
+            "answer": "Use the install command shown for your operating system, then run codex from a project directory and sign in with ChatGPT or an API key."
+          },
+          {
+            "question": "Can Codex CLI edit files and run commands?",
+            "answer": "Yes. It can inspect and modify files, run local tools, and execute checks subject to the permissions you choose."
+          },
+          {
+            "question": "Which operating systems does Codex CLI support?",
+            "answer": "The current manifest lists macOS, Windows, and Linux, with installation and launch commands for each platform."
+          },
+          {
+            "question": "Is Codex CLI free?",
+            "answer": "Codex is available through several ChatGPT plans, including Free, and can also use an API key with usage-based billing. Limits and features vary by plan."
+          }
+        ]
+      }
+    }
+  },
+  "de": {
+    "codex-cli": {
+      "answer": "Codex CLI ist OpenAIs offizieller Coding-Agent zum Prüfen, Bearbeiten und Ausführen von Code direkt im Terminal.",
+      "introduction": "Er arbeitet mit lokalen Projekten, bietet Kontrolle über Modelle und Berechtigungen und unterstützt interaktive Aufgaben sowie wiederholbare Skripte und CI-Workflows.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "Codebasis verstehen",
+            "description": "Projektdateien prüfen und Fragen im Kontext des Projekts beantworten."
+          },
+          {
+            "title": "Code bearbeiten und debuggen",
+            "description": "Gezielte Änderungen vornehmen, Probleme finden und lokale Prüfungen ausführen."
+          },
+          {
+            "title": "Befehle ausführen und automatisieren",
+            "description": "Shell-Werkzeuge interaktiv nutzen oder codex exec aus Skripten und CI-Pipelines aufrufen."
+          }
+        ]
+      },
+      "verification": {
+        "description": "Produktangaben werden mit offizieller Dokumentation, Preisseiten und dem Upstream-Repository abgeglichen."
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "Gibt es eine Codex CLI von OpenAI?",
+            "answer": "Ja. Codex CLI ist OpenAIs Kommandozeilen-Agent zum Prüfen, Bearbeiten und Ausführen von Code in lokalen Projekten."
+          },
+          {
+            "question": "Wie installiere ich Codex CLI?",
+            "answer": "Nutzen Sie den Installationsbefehl für Ihr Betriebssystem, führen Sie codex im Projektverzeichnis aus und melden Sie sich mit ChatGPT oder einem API-Schlüssel an."
+          },
+          {
+            "question": "Kann Codex CLI Dateien ändern und Befehle ausführen?",
+            "answer": "Ja. Im Rahmen der gewählten Berechtigungen kann Codex Dateien prüfen und ändern, lokale Werkzeuge starten und Tests ausführen."
+          },
+          {
+            "question": "Welche Betriebssysteme unterstützt Codex CLI?",
+            "answer": "Das aktuelle Manifest nennt macOS, Windows und Linux samt Installations- und Startbefehlen."
+          },
+          {
+            "question": "Ist Codex CLI kostenlos?",
+            "answer": "Codex ist in mehreren ChatGPT-Tarifen einschließlich Free verfügbar und kann mit nutzungsabhängig abgerechnetem API-Schlüssel verwendet werden. Limits und Funktionen unterscheiden sich."
+          }
+        ]
+      }
+    }
+  },
+  "es": {
+    "codex-cli": {
+      "answer": "Codex CLI es el agente de programación oficial de OpenAI para inspeccionar, editar y ejecutar código desde la terminal.",
+      "introduction": "Trabaja con tu repositorio local, te permite controlar los modelos y los permisos, y admite tanto tareas interactivas como scripts repetibles y flujos de trabajo de CI.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "Comprender tu base de código",
+            "description": "Inspecciona los archivos del proyecto y responde preguntas teniendo en cuenta el contexto del repositorio."
+          },
+          {
+            "title": "Editar y depurar código",
+            "description": "Realiza cambios específicos, encuentra problemas y ejecuta comprobaciones en tu entorno local."
+          },
+          {
+            "title": "Ejecutar comandos y automatizar",
+            "description": "Usa herramientas de shell de forma interactiva o llama a codex exec desde scripts y canalizaciones de CI."
+          }
+        ]
+      },
+      "verification": {
+        "description": "Los datos del producto se contrastan con la documentación oficial, las páginas de precios y el repositorio original."
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "¿OpenAI ofrece Codex CLI?",
+            "answer": "Sí. Codex CLI es el agente de programación de línea de comandos de OpenAI para inspeccionar, editar y ejecutar código en repositorios locales."
+          },
+          {
+            "question": "¿Cómo instalo Codex CLI?",
+            "answer": "Usa el comando de instalación indicado para tu sistema operativo, ejecuta codex desde el directorio de un proyecto e inicia sesión con ChatGPT o una API key."
+          },
+          {
+            "question": "¿Codex CLI puede editar archivos y ejecutar comandos?",
+            "answer": "Sí. Puede inspeccionar y modificar archivos, usar herramientas locales y ejecutar comprobaciones de acuerdo con los permisos que elijas."
+          },
+          {
+            "question": "¿Qué sistemas operativos admite Codex CLI?",
+            "answer": "El manifest actual incluye macOS, Windows y Linux, con comandos de instalación y ejecución para cada plataforma."
+          },
+          {
+            "question": "¿Codex CLI es gratuito?",
+            "answer": "Codex está disponible con varios planes de ChatGPT, incluido Free, y también puede usar una API key con facturación por uso. Los límites y las funciones varían según el plan."
+          }
+        ]
+      }
+    }
+  },
+  "fr": {
+    "codex-cli": {
+      "answer": "Codex CLI est l’agent de programmation officiel d’OpenAI pour inspecter, modifier et exécuter du code depuis votre terminal.",
+      "introduction": "Il travaille sur votre dépôt local, vous permet de contrôler les modèles et les autorisations, et prend en charge aussi bien les tâches interactives que les scripts reproductibles et les workflows de CI.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "Comprendre votre base de code",
+            "description": "Inspectez les fichiers du projet et obtenez des réponses qui tiennent compte du contexte du dépôt."
+          },
+          {
+            "title": "Modifier et déboguer le code",
+            "description": "Apportez des modifications ciblées, détectez les problèmes et lancez des vérifications dans votre environnement local."
+          },
+          {
+            "title": "Exécuter des commandes et automatiser",
+            "description": "Utilisez les outils du shell de manière interactive ou appelez codex exec depuis des scripts et des pipelines de CI."
+          }
+        ]
+      },
+      "verification": {
+        "description": "Les informations sur le produit sont vérifiées à partir de la documentation officielle, des pages tarifaires et du dépôt d’origine."
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "OpenAI propose-t-il Codex CLI ?",
+            "answer": "Oui. Codex CLI est l’agent de programmation en ligne de commande d’OpenAI pour inspecter, modifier et exécuter du code dans des dépôts locaux."
+          },
+          {
+            "question": "Comment installer Codex CLI ?",
+            "answer": "Utilisez la commande d’installation indiquée pour votre système d’exploitation, puis lancez codex depuis le répertoire d’un projet et connectez-vous avec ChatGPT ou une API key."
+          },
+          {
+            "question": "Codex CLI peut-il modifier des fichiers et exécuter des commandes ?",
+            "answer": "Oui. Il peut inspecter et modifier des fichiers, utiliser des outils locaux et lancer des vérifications selon les autorisations que vous choisissez."
+          },
+          {
+            "question": "Quels systèmes d’exploitation Codex CLI prend-il en charge ?",
+            "answer": "Le manifest actuel répertorie macOS, Windows et Linux, avec les commandes d’installation et de lancement pour chaque plateforme."
+          },
+          {
+            "question": "Codex CLI est-il gratuit ?",
+            "answer": "Codex est proposé dans plusieurs offres ChatGPT, dont Free, et peut aussi utiliser une API key avec une facturation à l’usage. Les limites et les fonctionnalités varient selon l’offre."
+          }
+        ]
+      }
+    }
+  },
+  "id": {
+    "codex-cli": {
+      "answer": "Codex CLI adalah agen coding resmi OpenAI untuk memeriksa, mengedit, dan menjalankan kode dari terminal Anda.",
+      "introduction": "Codex CLI bekerja pada repositori lokal, memungkinkan Anda mengendalikan model dan izin, serta mendukung tugas interaktif, skrip berulang, dan alur kerja CI.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "Memahami basis kode Anda",
+            "description": "Periksa file proyek dan jawab pertanyaan dengan mempertimbangkan konteks repositori."
+          },
+          {
+            "title": "Mengedit dan men-debug kode",
+            "description": "Lakukan perubahan terarah, temukan masalah, dan jalankan pemeriksaan di lingkungan lokal Anda."
+          },
+          {
+            "title": "Menjalankan perintah dan mengotomatiskan tugas",
+            "description": "Gunakan alat shell secara interaktif atau panggil codex exec dari skrip dan pipeline CI."
+          }
+        ]
+      },
+      "verification": {
+        "description": "Fakta produk diperiksa berdasarkan dokumentasi resmi, halaman harga, dan repositori sumber."
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "Apakah OpenAI memiliki Codex CLI?",
+            "answer": "Ya. Codex CLI adalah agen coding baris perintah OpenAI untuk memeriksa, mengedit, dan menjalankan kode dalam repositori lokal."
+          },
+          {
+            "question": "Bagaimana cara menginstal Codex CLI?",
+            "answer": "Gunakan perintah instalasi yang ditampilkan untuk sistem operasi Anda, lalu jalankan codex dari direktori proyek dan masuk dengan ChatGPT atau API key."
+          },
+          {
+            "question": "Apakah Codex CLI dapat mengedit file dan menjalankan perintah?",
+            "answer": "Ya. Codex CLI dapat memeriksa dan mengubah file, menjalankan alat lokal, serta melakukan pemeriksaan sesuai izin yang Anda pilih."
+          },
+          {
+            "question": "Sistem operasi apa saja yang didukung Codex CLI?",
+            "answer": "Manifest saat ini mencantumkan macOS, Windows, dan Linux, beserta perintah instalasi dan peluncuran untuk setiap platform."
+          },
+          {
+            "question": "Apakah Codex CLI gratis?",
+            "answer": "Codex tersedia melalui beberapa paket ChatGPT, termasuk Free, dan juga dapat menggunakan API key dengan penagihan berbasis pemakaian. Batas dan fitur berbeda-beda menurut paket."
+          }
+        ]
+      }
+    }
+  },
+  "ja": {
+    "codex-cli": {
+      "answer": "Codex CLI は、ターミナルからコードの調査、編集、実行を行える OpenAI 公式のコーディングエージェントです。",
+      "introduction": "ローカルリポジトリを対象に動作し、モデルと権限を管理でき、対話型タスクに加えて反復可能なスクリプトや CI ワークフローにも対応します。",
+      "capabilities": {
+        "items": [
+          {
+            "title": "コードベースを理解する",
+            "description": "プロジェクトのファイルを調査し、リポジトリの文脈に基づいて質問に回答します。"
+          },
+          {
+            "title": "コードを編集・デバッグする",
+            "description": "目的を絞った変更を行い、問題を見つけ、ローカル環境でチェックを実行します。"
+          },
+          {
+            "title": "コマンドを実行し、自動化する",
+            "description": "シェルツールを対話的に使用したり、スクリプトや CI パイプラインから codex exec を呼び出したりできます。"
+          }
+        ]
+      },
+      "verification": {
+        "description": "製品情報は、公式ドキュメント、料金ページ、アップストリームリポジトリと照合しています。"
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "OpenAI に Codex CLI はありますか？",
+            "answer": "はい。Codex CLI は、ローカルリポジトリ内のコードを調査、編集、実行するための OpenAI のコマンドライン型コーディングエージェントです。"
+          },
+          {
+            "question": "Codex CLI はどのようにインストールしますか？",
+            "answer": "お使いのオペレーティングシステム向けに表示されたインストールコマンドを使用し、プロジェクトディレクトリで codex を実行して、ChatGPT または API key でサインインします。"
+          },
+          {
+            "question": "Codex CLI はファイルの編集やコマンドの実行ができますか？",
+            "answer": "はい。選択した権限の範囲内で、ファイルの調査と変更、ローカルツールの実行、チェックの実施が可能です。"
+          },
+          {
+            "question": "Codex CLI はどのオペレーティングシステムに対応していますか？",
+            "answer": "現在のマニフェストには macOS、Windows、Linux が記載されており、各プラットフォーム向けのインストールコマンドと起動コマンドも掲載されています。"
+          },
+          {
+            "question": "Codex CLI は無料ですか？",
+            "answer": "Codex は Free を含む複数の ChatGPT プランで利用でき、従量課金の API key も使用できます。利用上限と機能はプランによって異なります。"
+          }
+        ]
+      }
+    }
+  },
+  "ko": {
+    "codex-cli": {
+      "answer": "Codex CLI는 터미널에서 코드를 살펴보고 편집하며 실행할 수 있는 OpenAI의 공식 코딩 에이전트입니다.",
+      "introduction": "로컬 저장소를 대상으로 작동하며 모델과 권한을 제어할 수 있고, 대화형 작업뿐 아니라 반복 가능한 스크립트와 CI 워크플로도 지원합니다.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "코드베이스 이해",
+            "description": "프로젝트 파일을 살펴보고 저장소의 맥락을 바탕으로 질문에 답합니다."
+          },
+          {
+            "title": "코드 편집 및 디버깅",
+            "description": "필요한 부분을 정확히 변경하고 문제를 찾아 로컬 환경에서 검사를 실행합니다."
+          },
+          {
+            "title": "명령 실행 및 자동화",
+            "description": "셸 도구를 대화형으로 사용하거나 스크립트와 CI 파이프라인에서 codex exec를 호출할 수 있습니다."
+          }
+        ]
+      },
+      "verification": {
+        "description": "제품 정보는 공식 문서, 가격 페이지, 업스트림 저장소와 대조해 확인합니다."
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "OpenAI에서 Codex CLI를 제공하나요?",
+            "answer": "예. Codex CLI는 로컬 저장소의 코드를 살펴보고 편집하며 실행하기 위한 OpenAI의 명령줄 코딩 에이전트입니다."
+          },
+          {
+            "question": "Codex CLI는 어떻게 설치하나요?",
+            "answer": "사용 중인 운영체제에 표시된 설치 명령을 사용한 다음, 프로젝트 디렉터리에서 codex를 실행하고 ChatGPT 또는 API key로 로그인하세요."
+          },
+          {
+            "question": "Codex CLI로 파일을 편집하고 명령을 실행할 수 있나요?",
+            "answer": "예. 선택한 권한 범위 안에서 파일을 살펴보고 수정하며, 로컬 도구와 검사를 실행할 수 있습니다."
+          },
+          {
+            "question": "Codex CLI는 어떤 운영체제를 지원하나요?",
+            "answer": "현재 매니페스트에는 macOS, Windows, Linux와 각 플랫폼의 설치 및 실행 명령이 등록되어 있습니다."
+          },
+          {
+            "question": "Codex CLI는 무료인가요?",
+            "answer": "Codex는 Free를 포함한 여러 ChatGPT 플랜에서 사용할 수 있으며, 사용량 기반 요금이 적용되는 API key도 이용할 수 있습니다. 한도와 기능은 플랜에 따라 다릅니다."
+          }
+        ]
+      }
+    }
+  },
+  "pt": {
+    "codex-cli": {
+      "answer": "O Codex CLI é o agente de programação oficial da OpenAI para inspecionar, editar e executar código pelo terminal.",
+      "introduction": "Ele trabalha no seu repositório local, permite controlar modelos e permissões e oferece suporte tanto a tarefas interativas quanto a scripts repetíveis e fluxos de CI.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "Entender sua base de código",
+            "description": "Inspecione os arquivos do projeto e responda a perguntas usando o contexto do repositório."
+          },
+          {
+            "title": "Editar e depurar código",
+            "description": "Faça alterações pontuais, encontre problemas e execute verificações no seu ambiente local."
+          },
+          {
+            "title": "Executar comandos e automatizar",
+            "description": "Use ferramentas de shell de forma interativa ou chame codex exec em scripts e pipelines de CI."
+          }
+        ]
+      },
+      "verification": {
+        "description": "Os dados do produto são conferidos com a documentação oficial, as páginas de preços e o repositório original."
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "A OpenAI oferece o Codex CLI?",
+            "answer": "Sim. O Codex CLI é o agente de programação por linha de comando da OpenAI para inspecionar, editar e executar código em repositórios locais."
+          },
+          {
+            "question": "Como instalo o Codex CLI?",
+            "answer": "Use o comando de instalação exibido para o seu sistema operacional. Depois, execute codex em um diretório de projeto e entre com o ChatGPT ou uma API key."
+          },
+          {
+            "question": "O Codex CLI pode editar arquivos e executar comandos?",
+            "answer": "Sim. Ele pode inspecionar e modificar arquivos, executar ferramentas locais e realizar verificações dentro das permissões que você escolher."
+          },
+          {
+            "question": "Quais sistemas operacionais o Codex CLI suporta?",
+            "answer": "O manifesto atual lista macOS, Windows e Linux, com comandos de instalação e inicialização para cada plataforma."
+          },
+          {
+            "question": "O Codex CLI é gratuito?",
+            "answer": "O Codex está disponível em vários planos do ChatGPT, inclusive o Free, e também pode usar uma API key com cobrança por uso. Os limites e recursos variam conforme o plano."
+          }
+        ]
+      }
+    }
+  },
+  "ru": {
+    "codex-cli": {
+      "answer": "Codex CLI — официальный агент OpenAI для программирования, который позволяет анализировать и редактировать код, а также запускать его из терминала.",
+      "introduction": "Он работает с вашим локальным репозиторием, позволяет управлять моделями и разрешениями и поддерживает как интерактивные задачи, так и повторяемые сценарии и процессы CI.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "Понимать вашу кодовую базу",
+            "description": "Анализировать файлы проекта и отвечать на вопросы с учётом контекста репозитория."
+          },
+          {
+            "title": "Редактировать и отлаживать код",
+            "description": "Вносить точечные изменения, находить проблемы и запускать проверки в вашей локальной среде."
+          },
+          {
+            "title": "Выполнять команды и автоматизировать задачи",
+            "description": "Использовать инструменты командной оболочки в интерактивном режиме или вызывать codex exec из сценариев и конвейеров CI."
+          }
+        ]
+      },
+      "verification": {
+        "description": "Сведения о продукте сверяются с официальной документацией, страницами с ценами и исходным репозиторием."
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "Есть ли у OpenAI Codex CLI?",
+            "answer": "Да. Codex CLI — агент OpenAI для программирования в командной строке, который анализирует, редактирует и запускает код в локальных репозиториях."
+          },
+          {
+            "question": "Как установить Codex CLI?",
+            "answer": "Выполните команду установки для своей операционной системы, затем запустите codex из каталога проекта и войдите с помощью ChatGPT или API key."
+          },
+          {
+            "question": "Может ли Codex CLI редактировать файлы и выполнять команды?",
+            "answer": "Да. Он может анализировать и изменять файлы, запускать локальные инструменты и выполнять проверки в рамках выбранных вами разрешений."
+          },
+          {
+            "question": "Какие операционные системы поддерживает Codex CLI?",
+            "answer": "В текущем манифесте указаны macOS, Windows и Linux, а также команды установки и запуска для каждой платформы."
+          },
+          {
+            "question": "Можно ли пользоваться Codex CLI бесплатно?",
+            "answer": "Codex доступен в нескольких тарифах ChatGPT, включая Free, а также может работать с API key с оплатой по фактическому использованию. Лимиты и возможности зависят от тарифа."
+          }
+        ]
+      }
+    }
+  },
+  "tr": {
+    "codex-cli": {
+      "answer": "Codex CLI, kodu terminalinizden incelemek, düzenlemek ve çalıştırmak için OpenAI'ın resmi kodlama ajanıdır.",
+      "introduction": "Yerel deponuzda çalışır, modelleri ve izinleri denetlemenize olanak tanır; etkileşimli görevlerin yanı sıra tekrarlanabilir betikleri ve CI iş akışlarını da destekler.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "Kod tabanınızı anlar",
+            "description": "Proje dosyalarını inceler ve depo bağlamını kullanarak soruları yanıtlar."
+          },
+          {
+            "title": "Kodu düzenler ve hataları ayıklar",
+            "description": "Hedefli değişiklikler yapar, sorunları bulur ve yerel ortamınızda kontrolleri çalıştırır."
+          },
+          {
+            "title": "Komutları çalıştırır ve otomasyon sağlar",
+            "description": "Kabuk araçlarını etkileşimli olarak kullanın veya betiklerden ve CI işlem hatlarından codex exec çağırın."
+          }
+        ]
+      },
+      "verification": {
+        "description": "Ürün bilgileri resmi belgeler, fiyatlandırma sayfaları ve kaynak depo ile karşılaştırılarak doğrulanır."
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "OpenAI'ın bir Codex CLI aracı var mı?",
+            "answer": "Evet. Codex CLI, yerel depolardaki kodu incelemek, düzenlemek ve çalıştırmak için OpenAI'ın komut satırı kodlama ajanıdır."
+          },
+          {
+            "question": "Codex CLI'yi nasıl kurarım?",
+            "answer": "Sisteminiz için gösterilen kurulum komutunu kullanın, ardından bir proje dizininden codex komutunu çalıştırın ve ChatGPT ya da bir API key ile oturum açın."
+          },
+          {
+            "question": "Codex CLI dosyaları düzenleyip komutları çalıştırabilir mi?",
+            "answer": "Evet. Seçtiğiniz izinler kapsamında dosyaları inceleyip değiştirebilir, yerel araçları çalıştırabilir ve kontrolleri yürütebilir."
+          },
+          {
+            "question": "Codex CLI hangi işletim sistemlerini destekliyor?",
+            "answer": "Güncel katalog kaydında macOS, Windows ve Linux ile her platforma ait kurulum ve başlatma komutları listelenir."
+          },
+          {
+            "question": "Codex CLI ücretsiz mi?",
+            "answer": "Codex, Free dahil çeşitli ChatGPT planlarıyla kullanılabilir ve kullanıma dayalı faturalandırılan bir API key ile de çalışabilir. Sınırlar ve özellikler plana göre değişir."
+          }
+        ]
+      }
+    }
+  },
+  "zh-Hans": {
+    "codex-cli": {
+      "answer": "Codex CLI 是 OpenAI 的官方命令行编码 Agent，可直接在终端中检查、编辑和运行代码。",
+      "introduction": "它面向本地代码仓库工作，可控制模型与权限，既支持交互式任务，也支持可重复执行的脚本和 CI 工作流。",
+      "capabilities": {
+        "items": [
+          {
+            "title": "理解代码库",
+            "description": "检查项目文件，并结合仓库上下文回答问题。"
+          },
+          {
+            "title": "编辑和调试代码",
+            "description": "完成聚焦的修改、定位问题，并在本地环境中运行检查。"
+          },
+          {
+            "title": "运行命令并自动化",
+            "description": "交互式使用 Shell 工具，或在脚本与 CI 流水线中调用 codex exec。"
+          }
+        ]
+      },
+      "verification": {
+        "description": "产品事实已经对照官方文档、定价页面和上游代码仓库进行核验。"
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "OpenAI 有 Codex CLI 吗？",
+            "answer": "有。Codex CLI 是 OpenAI 的命令行编码 Agent，可在本地仓库中检查、编辑和运行代码。"
+          },
+          {
+            "question": "如何安装 Codex CLI？",
+            "answer": "使用页面中对应操作系统的安装命令，然后在项目目录中运行 codex，并使用 ChatGPT 或 API key 登录。"
+          },
+          {
+            "question": "Codex CLI 能编辑文件和运行命令吗？",
+            "answer": "可以。它能在你授予的权限范围内检查和修改文件、运行本地工具并执行检查。"
+          },
+          {
+            "question": "Codex CLI 支持哪些操作系统？",
+            "answer": "当前 manifest 列出了 macOS、Windows 和 Linux，并提供各平台的安装与启动命令。"
+          },
+          {
+            "question": "Codex CLI 免费吗？",
+            "answer": "Codex 可通过包括免费版在内的多种 ChatGPT 套餐使用，也可使用按量计费的 API key。不同套餐的限额和功能有所不同。"
+          }
+        ]
+      }
+    }
+  },
+  "zh-Hant": {
+    "codex-cli": {
+      "answer": "Codex CLI 是 OpenAI 的官方命令列程式設計 Agent，可直接在終端中檢查、編輯和執行程式碼。",
+      "introduction": "它針對本機程式碼儲存庫工作，可控制模型與權限，既支援互動式任務，也支援可重複執行的指令碼和 CI 工作流程。",
+      "capabilities": {
+        "items": [
+          {
+            "title": "理解程式碼庫",
+            "description": "檢查專案檔案，並結合儲存庫上下文回答問題。"
+          },
+          {
+            "title": "編輯和偵錯程式碼",
+            "description": "完成聚焦的修改、找出問題，並在本機環境中執行檢查。"
+          },
+          {
+            "title": "執行命令並自動化",
+            "description": "互動式使用 Shell 工具，或在指令碼與 CI 流程中呼叫 codex exec。"
+          }
+        ]
+      },
+      "verification": {
+        "description": "產品事實已對照官方文件、定價頁面和上游程式碼儲存庫進行核驗。"
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "OpenAI 有 Codex CLI 嗎？",
+            "answer": "有。Codex CLI 是 OpenAI 的命令列程式設計 Agent，可在本機儲存庫中檢查、編輯和執行程式碼。"
+          },
+          {
+            "question": "如何安裝 Codex CLI？",
+            "answer": "使用頁面中對應作業系統的安裝命令，接著在專案目錄中執行 codex，並使用 ChatGPT 或 API key 登入。"
+          },
+          {
+            "question": "Codex CLI 能編輯檔案和執行命令嗎？",
+            "answer": "可以。它能在你授予的權限範圍內檢查和修改檔案、執行本機工具並進行檢查。"
+          },
+          {
+            "question": "Codex CLI 支援哪些作業系統？",
+            "answer": "目前 manifest 列出了 macOS、Windows 和 Linux，並提供各平台的安裝與啟動命令。"
+          },
+          {
+            "question": "Codex CLI 免費嗎？",
+            "answer": "Codex 可透過包括免費版在內的多種 ChatGPT 方案使用，也可使用按量計費的 API key。不同方案的限額和功能有所不同。"
+          }
+        ]
+      }
+    }
+  }
+}
