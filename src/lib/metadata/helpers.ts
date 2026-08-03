@@ -102,6 +102,17 @@ export function buildDetailPageTitle(options: {
 }
 
 /**
+ * Adds a software type to a product name only when the name does not already
+ * contain that type as a standalone token.
+ */
+export function buildTypedProductName(productName: string, typeDescription: string): string {
+  const productTokens = productName.toLocaleLowerCase().split(/[^\p{L}\p{N}]+/u)
+  const normalizedType = typeDescription.toLocaleLowerCase()
+
+  return productTokens.includes(normalizedType) ? productName : `${productName} ${typeDescription}`
+}
+
+/**
  * Builds locale-aware canonical path (not an absolute URL).
  * Returns a path like "/docs" for default locale or "/zh-Hans/docs" for non-default locale.
  * This is used in metadata.alternates.canonical.

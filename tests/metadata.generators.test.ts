@@ -114,6 +114,31 @@ describe('Metadata Generators', () => {
       expect(metadata.alternates?.canonical).toBe('/model-providers/openrouter')
       expect(metadata.keywords).toBeUndefined()
     })
+
+    it('uses localized title and description overrides without appending English copy', async () => {
+      const metadata = await generateSoftwareDetailMetadata({
+        locale: 'zh-Hans',
+        category: 'clis',
+        slug: 'codex-cli',
+        titleOverride: 'Codex CLI | 功能与安装指南 2026',
+        descriptionOverride: 'Codex CLI 是 OpenAI 的命令行编码 Agent。',
+        product: {
+          name: 'Codex CLI',
+          description: 'English fallback description',
+          vendor: 'OpenAI',
+          platforms: [{ os: 'macOS' }, { os: 'Windows' }],
+          license: 'Apache-2.0',
+        },
+        typeDescription: 'CLI',
+      })
+
+      expect(metadata.title).toBe('Codex CLI | 功能与安装指南 2026')
+      expect(metadata.description).toBe('Codex CLI 是 OpenAI 的命令行编码 Agent。')
+      expect(metadata.openGraph?.title).toBe('Codex CLI - CLI')
+      expect(metadata.openGraph?.description).toBe('Codex CLI 是 OpenAI 的命令行编码 Agent。')
+      expect(metadata.twitter?.title).toBe('Codex CLI - CLI')
+      expect(metadata.twitter?.description).toBe('Codex CLI 是 OpenAI 的命令行编码 Agent。')
+    })
   })
 
   describe('generateModelDetailMetadata', () => {

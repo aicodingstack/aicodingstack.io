@@ -30,10 +30,6 @@ Ejecutar comandos y automatizar
 
 Usa herramientas de shell de forma interactiva o llama a codex exec desde scripts y canalizaciones de CI.
 
-## verification.description
-
-Los datos del producto se contrastan con la documentación oficial, las páginas de precios y el repositorio original.
-
 ## faq.items.0.question
 
 ¿OpenAI ofrece Codex CLI?
@@ -64,7 +60,7 @@ Sí. Puede inspeccionar y modificar archivos, usar herramientas locales y ejecut
 
 ## faq.items.3.answer
 
-El manifest actual incluye macOS, Windows y Linux, con comandos de instalación y ejecución para cada plataforma.
+Codex CLI es compatible con macOS, Windows y Linux. Usa el comando de instalación específico de la plataforma que aparece en esta página y ejecútalo desde el directorio de un proyecto.
 
 ## faq.items.4.question
 

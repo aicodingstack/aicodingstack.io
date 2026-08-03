@@ -30,10 +30,6 @@ Exécuter des commandes et automatiser
 
 Utilisez les outils du shell de manière interactive ou appelez codex exec depuis des scripts et des pipelines de CI.
 
-## verification.description
-
-Les informations sur le produit sont vérifiées à partir de la documentation officielle, des pages tarifaires et du dépôt d’origine.
-
 ## faq.items.0.question
 
 OpenAI propose-t-il Codex CLI ?
@@ -64,7 +60,7 @@ Quels systèmes d’exploitation Codex CLI prend-il en charge ?
 
 ## faq.items.3.answer
 
-Le manifest actuel répertorie macOS, Windows et Linux, avec les commandes d’installation et de lancement pour chaque plateforme.
+Codex CLI prend en charge macOS, Windows et Linux. Utilisez la commande d’installation propre à votre plateforme affichée sur cette page, puis lancez-le depuis le dossier d’un projet.
 
 ## faq.items.4.question
 

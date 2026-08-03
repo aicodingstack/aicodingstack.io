@@ -108,6 +108,9 @@
     }
   },
   "cliLanding": {
+    "meta": {
+      "title": "{product} | 機能・セットアップガイド {year}"
+    },
     "labels": {
       "publisher": "提供元",
       "verified": "最終確認日",
@@ -117,6 +120,7 @@
     "comparisonAction": "CLI 比較を開く",
     "verification": {
       "title": "情報源と検証",
+      "description": "製品情報は、以下に記載した公式情報源と照合して確認しています。",
       "reviewedBy": "確認者",
       "confidenceValues": {
         "high": "高",

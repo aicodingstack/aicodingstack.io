@@ -2,44 +2,44 @@
   "$schema": "../$schemas/cli.schema.json",
   "id": "github-copilot-cli",
   "name": "GitHub Copilot CLI",
-  "description": "GitHub Copilot CLI brings AI assistance to your terminal. Suggests shell commands, generates code snippets, and integrates with repositories through natural language.",
+  "description": "GitHub Copilot CLI is a terminal AI agent that can answer questions, write and debug code, modify local projects, and work with GitHub.com through interactive or programmatic sessions.",
   "translations": {
     "zh-Hans": {
-      "description": "GitHub Copilot CLI 将 AI 辅助功能带到您的终端。建议 shell 命令、生成代码片段，并通过自然语言与代码仓库集成。"
+      "description": "GitHub Copilot CLI 是终端中的 AI Agent，可回答问题、编写和调试代码、修改本地项目，并通过交互式或程序化会话操作 GitHub.com。"
     },
     "de": {
-      "description": "GitHub Copilot CLI bringt AI-Unterstützung in Ihr Terminal. Schlägt Shell-Befehle vor, generiert Code-Snippets und integriert sich über natürliche Sprache mit Repositories."
+      "description": "GitHub Copilot CLI ist ein KI-Agent für das Terminal, der Fragen beantwortet, Code schreibt und debuggt, Projekte ändert und in interaktiven oder programmatischen Sitzungen mit GitHub.com arbeitet."
     },
     "ko": {
-      "description": "GitHub Copilot CLI는 AI 지원을 터미널로 가져옵니다. 셸 명령을 제안하고, 코드 스니펫을 생성하며, 자연어를 통해 저장소와 통합합니다."
+      "description": "GitHub Copilot CLI는 터미널에서 질문에 답하고, 코드를 작성·디버깅하며, 로컬 프로젝트를 수정하고, 대화형 또는 프로그래밍 방식 세션으로 GitHub.com과 연동하는 AI 에이전트입니다."
     },
     "es": {
-      "description": "GitHub Copilot CLI lleva la asistencia de IA al terminal. Sugiere comandos de shell, genera fragmentos de código y se integra con repositorios mediante lenguaje natural."
+      "description": "GitHub Copilot CLI es un agente de IA para el terminal que responde preguntas, escribe y depura código, modifica proyectos locales y trabaja con GitHub.com en sesiones interactivas o programáticas."
     },
     "fr": {
-      "description": "GitHub Copilot CLI apporte l’assistance de l’IA au terminal. Il suggère des commandes shell, génère des extraits de code et interagit avec les dépôts en langage naturel."
+      "description": "GitHub Copilot CLI est un agent d’IA en terminal qui répond aux questions, écrit et débogue du code, modifie des projets et interagit avec GitHub.com en mode interactif ou programmatique."
     },
     "id": {
-      "description": "GitHub Copilot CLI membawa bantuan AI ke terminal Anda. Menyarankan perintah shell, membuat cuplikan kode, dan mengintegrasikan dengan repositori melalui bahasa alami."
+      "description": "GitHub Copilot CLI adalah agen AI di terminal untuk menjawab pertanyaan, menulis dan men-debug kode, mengubah proyek lokal, serta bekerja dengan GitHub.com melalui sesi interaktif atau terprogram."
     },
     "ja": {
-      "description": "GitHub Copilot CLIは、AIアシスタンスをターミナルに提供します。シェルコマンドを提案し、コードスニペットを生成し、自然言語でリポジトリと統合します。"
+      "description": "GitHub Copilot CLI は、ターミナルで質問への回答、コードの作成とデバッグ、ローカルプロジェクトの変更、GitHub.com の操作を対話形式またはプログラムから行える AI エージェントです。"
     },
     "pt": {
-      "description": "GitHub Copilot CLI leva assistência de IA ao terminal. Sugere comandos de shell, gera trechos de código e se integra a repositórios por meio de linguagem natural."
+      "description": "O GitHub Copilot CLI é um agente de IA no terminal que responde a perguntas, escreve e depura código, modifica projetos locais e trabalha com o GitHub.com em sessões interativas ou programáticas."
     },
     "ru": {
-      "description": "GitHub Copilot CLI приносит помощь ИИ в ваш терминал. Предлагает shell-команды, генерирует фрагменты кода и интегрируется с репозиториями через естественный язык."
+      "description": "GitHub Copilot CLI — это ИИ-агент для терминала, который отвечает на вопросы, пишет и отлаживает код, изменяет локальные проекты и работает с GitHub.com в интерактивном или программном режиме."
     },
     "tr": {
-      "description": "GitHub Copilot CLI, yapay zekâ yardımını terminale taşır. Shell komutları önerir, kod parçacıkları üretir ve doğal dil aracılığıyla depolarla çalışır."
+      "description": "GitHub Copilot CLI; terminalde soruları yanıtlayan, kod yazıp hata ayıklayan, yerel projeleri değiştiren ve GitHub.com ile etkileşimli ya da programatik çalışan bir yapay zekâ ajanıdır."
     },
     "zh-Hant": {
-      "description": "GitHub Copilot CLI 將 AI 輔助功能帶到您的終端機。建議 shell 命令、產生程式碼片段，並透過自然語言與程式碼倉庫整合。"
+      "description": "GitHub Copilot CLI 是終端機中的 AI Agent，可回答問題、編寫和偵錯程式碼、修改本機專案，並透過互動式或程式化工作階段操作 GitHub.com。"
     }
   },
   "verified": true,
-  "lastVerifiedAt": "2026-07-30",
+  "lastVerifiedAt": "2026-08-03",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://github.com/features/copilot/cli",
@@ -133,6 +133,11 @@
     }
   ],
   "sources": [
+    {
+      "url": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-copilot-cli",
+      "title": "About GitHub Copilot CLI",
+      "fields": ["description", "docsUrl"]
+    },
     {
       "url": "https://github.com/github/copilot-cli",
       "title": "GitHub Copilot CLI github community",

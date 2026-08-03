@@ -108,6 +108,9 @@
     }
   },
   "cliLanding": {
+    "meta": {
+      "title": "{product} | Функции и руководство по настройке {year}"
+    },
     "labels": {
       "publisher": "Разработчик",
       "verified": "Последняя проверка",
@@ -117,6 +120,7 @@
     "comparisonAction": "Открыть сравнение CLI",
     "verification": {
       "title": "Источники и проверка",
+      "description": "Сведения о продукте сверяются с официальными источниками, перечисленными ниже.",
       "reviewedBy": "Проверено",
       "confidenceValues": {
         "high": "Высокий",

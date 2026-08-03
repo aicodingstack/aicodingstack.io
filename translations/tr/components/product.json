@@ -108,6 +108,9 @@
     }
   },
   "cliLanding": {
+    "meta": {
+      "title": "{product} | Özellikler ve kurulum rehberi {year}"
+    },
     "labels": {
       "publisher": "Yayıncı",
       "verified": "Son doğrulama",
@@ -117,6 +120,7 @@
     "comparisonAction": "CLI karşılaştırmasını aç",
     "verification": {
       "title": "Kaynaklar ve doğrulama",
+      "description": "Ürün bilgileri aşağıda listelenen resmi kaynaklarla doğrulanır.",
       "reviewedBy": "Kontrol eden",
       "confidenceValues": {
         "high": "Yüksek",

@@ -108,6 +108,9 @@
     }
   },
   "cliLanding": {
+    "meta": {
+      "title": "{product} | Funciones y guía de configuración {year}"
+    },
     "labels": {
       "publisher": "Editor",
       "verified": "Última verificación",
@@ -117,6 +120,7 @@
     "comparisonAction": "Abrir la comparación de CLI",
     "verification": {
       "title": "Fuentes y verificación",
+      "description": "Los datos del producto se verifican con las fuentes oficiales que aparecen a continuación.",
       "reviewedBy": "Revisado por",
       "confidenceValues": {
         "high": "Alto",

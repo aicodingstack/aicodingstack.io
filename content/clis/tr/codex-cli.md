@@ -30,10 +30,6 @@ Komutları çalıştırır ve otomasyon sağlar
 
 Kabuk araçlarını etkileşimli olarak kullanın veya betiklerden ve CI işlem hatlarından codex exec çağırın.
 
-## verification.description
-
-Ürün bilgileri resmi belgeler, fiyatlandırma sayfaları ve kaynak depo ile karşılaştırılarak doğrulanır.
-
 ## faq.items.0.question
 
 OpenAI'ın bir Codex CLI aracı var mı?
@@ -64,7 +60,7 @@ Codex CLI hangi işletim sistemlerini destekliyor?
 
 ## faq.items.3.answer
 
-Güncel katalog kaydında macOS, Windows ve Linux ile her platforma ait kurulum ve başlatma komutları listelenir.
+Codex CLI macOS, Windows ve Linux'u destekler. Bu sayfada işletim sisteminiz için gösterilen kurulum yöntemini kullanın, ardından codex'i proje dizininden başlatın.
 
 ## faq.items.4.question
 

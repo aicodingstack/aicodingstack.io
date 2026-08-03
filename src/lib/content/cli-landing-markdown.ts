@@ -14,9 +14,6 @@ export interface CLILandingContent {
   capabilities: {
     items: CLILandingItem[]
   }
-  verification: {
-    description: string
-  }
   faq: {
     items: CLILandingFAQItem[]
   }
@@ -140,9 +137,6 @@ export function parseCLILandingMarkdown(
         ['title', 'description'],
         source
       ),
-    },
-    verification: {
-      description: get('verification.description'),
     },
     faq: {
       items: indexedItems<CLILandingFAQItem>(

@@ -30,10 +30,6 @@ Menjalankan perintah dan mengotomatiskan tugas
 
 Gunakan alat shell secara interaktif atau panggil codex exec dari skrip dan pipeline CI.
 
-## verification.description
-
-Fakta produk diperiksa berdasarkan dokumentasi resmi, halaman harga, dan repositori sumber.
-
 ## faq.items.0.question
 
 Apakah OpenAI memiliki Codex CLI?
@@ -64,7 +60,7 @@ Sistem operasi apa saja yang didukung Codex CLI?
 
 ## faq.items.3.answer
 
-Manifest saat ini mencantumkan macOS, Windows, dan Linux, beserta perintah instalasi dan peluncuran untuk setiap platform.
+Codex CLI mendukung macOS, Windows, dan Linux. Gunakan perintah instalasi khusus platform yang ditampilkan di halaman ini, lalu jalankan dari direktori proyek.
 
 ## faq.items.4.question
 

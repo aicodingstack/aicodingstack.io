@@ -110,6 +110,9 @@
   "vendorModels": {},
   "vendorProducts": {},
   "cliLanding": {
+    "meta": {
+      "title": "{product} | Features and setup guide {year}"
+    },
     "labels": {
       "publisher": "Publisher",
       "verified": "Last verified",
@@ -119,6 +122,7 @@
     "comparisonAction": "Open CLI comparison",
     "verification": {
       "title": "Sources and verification",
+      "description": "Product facts are checked against the official sources listed below.",
       "reviewedBy": "Reviewed by",
       "confidenceValues": {
         "high": "High",

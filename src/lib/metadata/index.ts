@@ -59,6 +59,7 @@ export {
   buildProductDescription,
   buildTitle,
   buildTwitterCard,
+  buildTypedProductName,
   formatPlatforms,
   formatPriceForDescription,
   getAlternateOGLocale,

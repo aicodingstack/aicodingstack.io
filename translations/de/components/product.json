@@ -108,6 +108,9 @@
     }
   },
   "cliLanding": {
+    "meta": {
+      "title": "{product} | Funktionen und Einrichtungsleitfaden {year}"
+    },
     "labels": {
       "publisher": "Anbieter",
       "verified": "Zuletzt geprüft",
@@ -117,6 +120,7 @@
     "comparisonAction": "CLI-Vergleich öffnen",
     "verification": {
       "title": "Quellen und Prüfung",
+      "description": "Produktangaben werden anhand der unten aufgeführten offiziellen Quellen geprüft.",
       "reviewedBy": "Geprüft von",
       "confidenceValues": {
         "high": "Hoch",
