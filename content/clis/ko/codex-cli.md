@@ -30,10 +30,6 @@ Codex CLI는 터미널에서 코드를 살펴보고 편집하며 실행할 수 �
 
 셸 도구를 대화형으로 사용하거나 스크립트와 CI 파이프라인에서 codex exec를 호출할 수 있습니다.
 
-## verification.description
-
-제품 정보는 공식 문서, 가격 페이지, 업스트림 저장소와 대조해 확인합니다.
-
 ## faq.items.0.question
 
 OpenAI에서 Codex CLI를 제공하나요?
@@ -64,7 +60,7 @@ Codex CLI는 어떤 운영체제를 지원하나요?
 
 ## faq.items.3.answer
 
-현재 매니페스트에는 macOS, Windows, Linux와 각 플랫폼의 설치 및 실행 명령이 등록되어 있습니다.
+Codex CLI는 macOS, Windows, Linux를 지원합니다. 이 페이지에 표시된 운영체제별 방법으로 설치한 뒤 프로젝트 디렉터리에서 codex를 실행하세요.
 
 ## faq.items.4.question
 

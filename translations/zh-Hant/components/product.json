@@ -108,6 +108,9 @@
     }
   },
   "cliLanding": {
+    "meta": {
+      "title": "{product} | 功能與安裝指南 {year}"
+    },
     "labels": {
       "publisher": "發布方",
       "verified": "最後驗證",
@@ -117,6 +120,7 @@
     "comparisonAction": "開啟 CLI 比較",
     "verification": {
       "title": "來源與驗證",
+      "description": "產品資訊依據下方列出的官方來源核驗。",
       "reviewedBy": "檢閱方",
       "confidenceValues": {
         "high": "高",

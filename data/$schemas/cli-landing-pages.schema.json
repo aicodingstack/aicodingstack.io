@@ -44,7 +44,7 @@
     },
     "content": {
       "type": "object",
-      "required": ["answer", "introduction", "capabilities", "verification", "faq"],
+      "required": ["answer", "introduction", "capabilities", "faq"],
       "properties": {
         "answer": { "$ref": "#/$defs/nonEmptyString" },
         "introduction": { "$ref": "#/$defs/nonEmptyString" },
@@ -61,21 +61,14 @@
           },
           "additionalProperties": false
         },
-        "verification": {
-          "type": "object",
-          "required": ["description"],
-          "properties": {
-            "description": { "$ref": "#/$defs/nonEmptyString" }
-          },
-          "additionalProperties": false
-        },
         "faq": {
           "type": "object",
           "required": ["items"],
           "properties": {
             "items": {
               "type": "array",
-              "minItems": 4,
+              "minItems": 5,
+              "maxItems": 5,
               "items": { "$ref": "#/$defs/faqItem" }
             }
           },

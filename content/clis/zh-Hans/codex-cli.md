@@ -30,10 +30,6 @@ Codex CLI 是 OpenAI 的官方命令行编码 Agent，可直接在终端中检�
 
 交互式使用 Shell 工具，或在脚本与 CI 流水线中调用 codex exec。
 
-## verification.description
-
-产品事实已经对照官方文档、定价页面和上游代码仓库进行核验。
-
 ## faq.items.0.question
 
 OpenAI 有 Codex CLI 吗？
@@ -64,7 +60,7 @@ Codex CLI 支持哪些操作系统？
 
 ## faq.items.3.answer
 
-当前 manifest 列出了 macOS、Windows 和 Linux，并提供各平台的安装与启动命令。
+Codex CLI 支持 macOS、Windows 和 Linux。请使用本页显示的对应平台安装命令，然后从项目目录中启动。
 
 ## faq.items.4.question
 

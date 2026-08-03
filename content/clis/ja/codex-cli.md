@@ -30,10 +30,6 @@ Codex CLI は、ターミナルからコードの調査、編集、実行を行�
 
 シェルツールを対話的に使用したり、スクリプトや CI パイプラインから codex exec を呼び出したりできます。
 
-## verification.description
-
-製品情報は、公式ドキュメント、料金ページ、アップストリームリポジトリと照合しています。
-
 ## faq.items.0.question
 
 OpenAI に Codex CLI はありますか？
@@ -64,7 +60,7 @@ Codex CLI はどのオペレーティングシステムに対応しています�
 
 ## faq.items.3.answer
 
-現在のマニフェストには macOS、Windows、Linux が記載されており、各プラットフォーム向けのインストールコマンドと起動コマンドも掲載されています。
+Codex CLI は macOS、Windows、Linux に対応しています。このページに表示された各 OS 向けの方法でインストールし、プロジェクトディレクトリから codex を起動してください。
 
 ## faq.items.4.question
 

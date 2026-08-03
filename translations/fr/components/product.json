@@ -108,6 +108,9 @@
     }
   },
   "cliLanding": {
+    "meta": {
+      "title": "{product} | Fonctionnalités et guide d’installation {year}"
+    },
     "labels": {
       "publisher": "Éditeur",
       "verified": "Dernière vérification",
@@ -117,6 +120,7 @@
     "comparisonAction": "Ouvrir le comparatif des CLI",
     "verification": {
       "title": "Sources et vérification",
+      "description": "Les informations sur le produit sont vérifiées à partir des sources officielles ci-dessous.",
       "reviewedBy": "Vérifié par",
       "confidenceValues": {
         "high": "Élevé",

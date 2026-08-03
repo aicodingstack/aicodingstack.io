@@ -40,14 +40,13 @@
     }
   },
   "verified": true,
-  "lastVerifiedAt": "2026-08-01",
+  "lastVerifiedAt": "2026-08-02",
   "verifiedBy": "codex-agent",
   "confidence": "high",
-  "landingPage": true,
   "websiteUrl": "https://openai.com/codex",
   "docsUrl": "https://developers.openai.com/codex/cli",
   "vendor": "OpenAI",
-  "latestVersion": "0.145.0",
+  "latestVersion": "0.146.0",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@openai/codex"
@@ -81,8 +80,15 @@
       "category": "Individual"
     },
     {
-      "name": "ChatGPT Pro (from)",
+      "name": "ChatGPT Pro 5x",
       "value": 100,
+      "currency": "USD",
+      "per": "month",
+      "category": "Individual"
+    },
+    {
+      "name": "ChatGPT Pro 20x",
+      "value": 200,
       "currency": "USD",
       "per": "month",
       "category": "Individual"
@@ -174,11 +180,15 @@
         "communityUrls.github",
         "githubUrl",
         "license",
-        "releaseTracking",
         "resourceUrls.changelog",
         "resourceUrls.issue",
         "sourceCode"
       ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/@openai/codex",
+      "title": "OpenAI Codex on npm",
+      "fields": ["latestVersion", "releaseTracking"]
     },
     {
       "url": "https://openai.com/news",

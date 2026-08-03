@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-02",
+  "asOf": "2026-08-03",
   "thresholds": {
     "models": 30,
     "providers": 30,
@@ -73,57 +73,57 @@
   },
   "translationsByLocale": {
     "de": {
-      "totalStrings": 481,
+      "totalStrings": 483,
       "matchingEnglish": 39,
       "matchingEnglishPercent": 8.1
     },
     "es": {
-      "totalStrings": 481,
+      "totalStrings": 483,
       "matchingEnglish": 25,
       "matchingEnglishPercent": 5.2
     },
     "fr": {
-      "totalStrings": 481,
+      "totalStrings": 483,
       "matchingEnglish": 36,
       "matchingEnglishPercent": 7.5
     },
     "id": {
-      "totalStrings": 481,
+      "totalStrings": 483,
       "matchingEnglish": 30,
       "matchingEnglishPercent": 6.2
     },
     "ja": {
-      "totalStrings": 481,
+      "totalStrings": 483,
       "matchingEnglish": 23,
       "matchingEnglishPercent": 4.8
     },
     "ko": {
-      "totalStrings": 481,
+      "totalStrings": 483,
       "matchingEnglish": 23,
       "matchingEnglishPercent": 4.8
     },
     "pt": {
-      "totalStrings": 481,
+      "totalStrings": 483,
       "matchingEnglish": 31,
       "matchingEnglishPercent": 6.4
     },
     "ru": {
-      "totalStrings": 481,
+      "totalStrings": 483,
       "matchingEnglish": 23,
       "matchingEnglishPercent": 4.8
     },
     "tr": {
-      "totalStrings": 481,
+      "totalStrings": 483,
       "matchingEnglish": 26,
       "matchingEnglishPercent": 5.4
     },
     "zh-Hans": {
-      "totalStrings": 481,
+      "totalStrings": 483,
       "matchingEnglish": 22,
       "matchingEnglishPercent": 4.6
     },
     "zh-Hant": {
-      "totalStrings": 481,
+      "totalStrings": 483,
       "matchingEnglish": 22,
       "matchingEnglishPercent": 4.6
     }

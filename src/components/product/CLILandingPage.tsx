@@ -11,6 +11,7 @@ import { useTranslations } from 'next-intl'
 import type { ReactNode } from 'react'
 import { DeprecatedBadge } from '@/components/controls/DeprecatedBadge'
 import { VerifiedBadge } from '@/components/controls/VerifiedBadge'
+import { CLICommandPanel } from '@/components/product/CLICommandPanel'
 import { ProductPricing } from '@/components/product/ProductPricing'
 import { RelatedProducts, type RelatedProductsProps } from '@/components/product/RelatedProducts'
 import { Link } from '@/i18n/navigation'
@@ -33,13 +34,6 @@ interface FactRowProps {
 }
 
 const capabilityIcons = [SearchCode, FilePenLine, Terminal]
-
-function getFirstCommand(
-  cli: ManifestCLI,
-  field: 'installCommand' | 'launchCommand'
-): string | null {
-  return cli[field] ?? cli.platforms.find(platform => platform[field])?.[field] ?? null
-}
 
 function formatDate(date: string, locale: string): string {
   return new Intl.DateTimeFormat(locale, { dateStyle: 'medium' }).format(
@@ -74,8 +68,11 @@ export function CLILandingPage({
 }: CLILandingPageProps) {
   const tShared = useTranslations('shared')
   const tComponent = useTranslations('components.product')
-  const installCommand = getFirstCommand(cli, 'installCommand')
-  const launchCommand = getFirstCommand(cli, 'launchCommand')
+  const hasCommands = Boolean(
+    cli.installCommand ||
+      cli.launchCommand ||
+      cli.platforms.some(platform => platform.installCommand || platform.launchCommand)
+  )
   const confidenceLabels = {
     high: tComponent('cliLanding.verification.confidenceValues.high'),
     medium: tComponent('cliLanding.verification.confidenceValues.medium'),
@@ -112,8 +109,8 @@ export function CLILandingPage({
   return (
     <>
       <section className="border-b border-[var(--color-border)] py-[var(--spacing-lg)]">
-        <div className="max-w-6xl mx-auto px-[var(--spacing-md)]">
-          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1.2fr)_minmax(22rem,0.8fr)] gap-[var(--spacing-xl)] items-start">
+        <div className="max-w-8xl mx-auto px-[var(--spacing-md)] lg:px-[var(--spacing-lg)]">
+          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1.2fr)_minmax(22rem,0.8fr)] gap-[var(--spacing-xl)] items-start lg:items-center">
             <div>
               <div className="flex items-center gap-[var(--spacing-xs)] mb-[var(--spacing-md)] text-xs uppercase tracking-wider text-[var(--color-text-secondary)]">
                 <span>{cli.vendor}</span>
@@ -153,8 +150,8 @@ export function CLILandingPage({
               </div>
             </div>
 
-            {(installCommand || launchCommand) && (
-              <div className="border border-[var(--color-text)] bg-[var(--color-text)] text-[var(--color-bg)]">
+            {hasCommands && (
+              <div className="min-w-0 border border-[var(--color-text)] bg-[var(--color-text)] text-[var(--color-bg)] flex flex-col lg:min-h-[22rem]">
                 <div className="relative flex items-center justify-center border-b border-white/20 px-[var(--spacing-md)] py-[var(--spacing-sm)] text-xs text-white/65">
                   <div
                     className="absolute left-[var(--spacing-sm)] flex items-center gap-2"
@@ -166,37 +163,20 @@ export function CLILandingPage({
                   </div>
                   <span>{cli.name}</span>
                 </div>
-                <div className="p-[var(--spacing-lg)] space-y-[var(--spacing-lg)] text-sm overflow-x-auto">
-                  {installCommand && (
-                    <div>
-                      <p className="text-xs text-white/50 mb-[var(--spacing-xs)]">
-                        {tComponent('productCommands.install')}
-                      </p>
-                      <pre className="whitespace-pre-wrap">
-                        <span className="text-white/45">$ </span>
-                        {installCommand}
-                      </pre>
-                    </div>
-                  )}
-                  {launchCommand && (
-                    <div>
-                      <p className="text-xs text-white/50 mb-[var(--spacing-xs)]">
-                        {tComponent('productCommands.launch')}
-                      </p>
-                      <pre>
-                        <span className="text-white/45">$ </span>
-                        {launchCommand}
-                      </pre>
-                    </div>
-                  )}
-                </div>
+                <CLICommandPanel
+                  platforms={cli.platforms}
+                  installCommand={cli.installCommand}
+                  launchCommand={cli.launchCommand}
+                  installLabel={tComponent('productCommands.install')}
+                  launchLabel={tComponent('productCommands.launch')}
+                />
               </div>
             )}
           </div>
         </div>
       </section>
 
-      <div className="max-w-6xl mx-auto px-[var(--spacing-md)] grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_19rem] gap-[var(--spacing-xl)] items-start">
+      <div className="max-w-8xl mx-auto px-[var(--spacing-md)] lg:px-[var(--spacing-lg)] grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_19rem] gap-[var(--spacing-xl)] items-start">
         <div>
           <section className="py-[var(--spacing-lg)] border-b border-[var(--color-border)]">
             <h2 className="text-2xl font-semibold tracking-[-0.02em] mb-[var(--spacing-md)]">
@@ -337,7 +317,7 @@ export function CLILandingPage({
                 {tComponent('cliLanding.verification.title')}
               </h2>
               <p className="text-xs leading-relaxed text-[var(--color-text-secondary)] mb-[var(--spacing-sm)]">
-                {content.verification.description}
+                {tComponent('cliLanding.verification.description')}
               </p>
               <div className="grid grid-cols-2 gap-[var(--spacing-sm)] py-[var(--spacing-sm)] border-y border-[var(--color-border)]">
                 <div>

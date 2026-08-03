@@ -6,6 +6,10 @@ export type { CLILandingContent } from '@/lib/content/cli-landing-markdown'
 
 const contentByLocale = landingPages as Record<Locale, Record<string, CLILandingContent>>
 
-export function getCLILandingContent(slug: string, locale: Locale): CLILandingContent | null {
-  return contentByLocale[locale]?.[slug] ?? null
+export function getCLILandingContent(slug: string, locale: Locale): CLILandingContent {
+  const content = contentByLocale[locale]?.[slug]
+  if (!content) {
+    throw new Error(`Missing CLI landing-page content for ${slug} (${locale})`)
+  }
+  return content
 }

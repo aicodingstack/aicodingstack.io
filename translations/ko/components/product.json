@@ -108,6 +108,9 @@
     }
   },
   "cliLanding": {
+    "meta": {
+      "title": "{product} | 기능 및 설정 가이드 {year}"
+    },
     "labels": {
       "publisher": "제공사",
       "verified": "최종 확인일",
@@ -117,6 +120,7 @@
     "comparisonAction": "CLI 비교 열기",
     "verification": {
       "title": "출처 및 검증",
+      "description": "제품 정보는 아래에 나열된 공식 출처를 기준으로 확인합니다.",
       "reviewedBy": "검토자",
       "confidenceValues": {
         "high": "높음",

@@ -47,6 +47,8 @@ export interface SoftwareDetailMetadataParams {
   locale: Locale
   category: Category
   slug: string
+  titleOverride?: string
+  descriptionOverride?: string
   product: {
     name: string
     description: string
@@ -237,23 +239,27 @@ export async function generateSoftwareDetailMetadata(
   const { locale, category, slug, product, typeDescription } = options
 
   // Build title
-  const title = buildDetailPageTitle({
-    productName: product.name,
-    typeDescription,
-    year: METADATA_DEFAULTS.currentYear,
-  })
+  const title =
+    options.titleOverride ??
+    buildDetailPageTitle({
+      productName: product.name,
+      typeDescription,
+      year: METADATA_DEFAULTS.currentYear,
+    })
 
   // Build description with product specs
   const platformsStr = formatPlatforms(product.platforms)
   const pricingStr = formatPriceForDescription(product.pricing)
 
-  const description = buildProductDescription({
-    baseDescription: product.description,
-    productName: product.name,
-    platforms: platformsStr,
-    pricing: pricingStr || undefined,
-    license: product.license,
-  })
+  const description =
+    options.descriptionOverride ??
+    buildProductDescription({
+      baseDescription: product.description,
+      productName: product.name,
+      platforms: platformsStr,
+      pricing: pricingStr || undefined,
+      license: product.license,
+    })
 
   // Social media titles
   const socialTitle = `${product.name} - ${typeDescription}`
@@ -267,10 +273,10 @@ export async function generateSoftwareDetailMetadata(
     title,
     description,
     ogTitle: socialTitle,
-    ogDescription: product.description,
+    ogDescription: options.descriptionOverride ?? product.description,
     ogType: 'article',
     twitterTitle: socialTitle,
-    twitterDescription: product.description,
+    twitterDescription: options.descriptionOverride ?? product.description,
   })
 }
 
