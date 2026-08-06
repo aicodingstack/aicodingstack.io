@@ -30,6 +30,7 @@ import Opencode from '../../../manifests/clis/opencode.json'
 import Pi from '../../../manifests/clis/pi.json'
 import QoderCli from '../../../manifests/clis/qoder-cli.json'
 import QwenCode from '../../../manifests/clis/qwen-code.json'
+import Reasonix from '../../../manifests/clis/reasonix.json'
 import VibeCli from '../../../manifests/clis/vibe-cli.json'
 import type { ManifestCLI } from '../../types/manifests'
 
@@ -60,6 +61,7 @@ export const clisData = [
   Pi,
   QoderCli,
   QwenCode,
+  Reasonix,
   VibeCli,
 ] as unknown as ManifestCLI[]
 

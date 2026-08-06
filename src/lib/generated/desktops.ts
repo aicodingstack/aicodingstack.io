@@ -13,6 +13,7 @@ import Goose from '../../../manifests/desktops/goose.json'
 import MinimaxCode from '../../../manifests/desktops/minimax-code.json'
 import OpencodeDesktop from '../../../manifests/desktops/opencode-desktop.json'
 import Qoder from '../../../manifests/desktops/qoder.json'
+import ReasonixDesktop from '../../../manifests/desktops/reasonix-desktop.json'
 import Stagewise from '../../../manifests/desktops/stagewise.json'
 import VerdentDeck from '../../../manifests/desktops/verdent-deck.json'
 import Zcode from '../../../manifests/desktops/zcode.json'
@@ -28,6 +29,7 @@ export const desktopsData = [
   MinimaxCode,
   OpencodeDesktop,
   Qoder,
+  ReasonixDesktop,
   Stagewise,
   VerdentDeck,
   Zcode,

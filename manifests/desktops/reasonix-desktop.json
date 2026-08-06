@@ -1,0 +1,142 @@
+{
+  "$schema": "../$schemas/desktop.schema.json",
+  "id": "reasonix-desktop",
+  "name": "Reasonix Desktop",
+  "familyId": "reasonix",
+  "description": "Reasonix Desktop brings the open-source Reasonix coding agent to a native interface for macOS, Windows, and Linux, using the same local engine as its CLI/TUI.",
+  "translations": {
+    "de": {
+      "description": "Reasonix Desktop bringt den quelloffenen Reasonix-Coding-Agenten als native Oberfläche auf macOS, Windows und Linux und nutzt dieselbe lokale Engine wie die CLI/TUI."
+    },
+    "es": {
+      "description": "Reasonix Desktop lleva el agente de programación de código abierto Reasonix a una interfaz nativa para macOS, Windows y Linux con el mismo motor local de su CLI/TUI."
+    },
+    "fr": {
+      "description": "Reasonix Desktop propose l’agent de codage open source Reasonix dans une interface native pour macOS, Windows et Linux, avec le même moteur local que sa CLI/TUI."
+    },
+    "id": {
+      "description": "Reasonix Desktop menghadirkan agen coding sumber terbuka Reasonix dalam antarmuka native untuk macOS, Windows, dan Linux dengan mesin lokal yang sama seperti CLI/TUI."
+    },
+    "ja": {
+      "description": "Reasonix Desktopは、オープンソースのReasonixコーディングエージェントをmacOS、Windows、Linux向けのネイティブUIで提供し、CLI/TUIと同じローカルエンジンを使用します。"
+    },
+    "ko": {
+      "description": "Reasonix Desktop은 오픈 소스 Reasonix 코딩 에이전트를 macOS, Windows, Linux용 네이티브 인터페이스로 제공하며 CLI/TUI와 동일한 로컬 엔진을 사용합니다."
+    },
+    "pt": {
+      "description": "Reasonix Desktop oferece o agente de programação de código aberto Reasonix em uma interface nativa para macOS, Windows e Linux, com o mesmo motor local da CLI/TUI."
+    },
+    "ru": {
+      "description": "Reasonix Desktop переносит открытый агент программирования Reasonix в нативный интерфейс для macOS, Windows и Linux, используя тот же локальный движок, что и CLI/TUI."
+    },
+    "tr": {
+      "description": "Reasonix Desktop, açık kaynaklı Reasonix kodlama ajanını macOS, Windows ve Linux için yerel bir arayüze taşır ve CLI/TUI ile aynı yerel motoru kullanır."
+    },
+    "zh-Hans": {
+      "description": "Reasonix Desktop 为开源 Reasonix 编码 Agent 提供 macOS、Windows 和 Linux 原生界面，并与 CLI/TUI 共用同一个本地引擎。"
+    },
+    "zh-Hant": {
+      "description": "Reasonix Desktop 為開放原始碼 Reasonix 程式設計 Agent 提供 macOS、Windows 和 Linux 原生介面，並與 CLI/TUI 共用同一個本機引擎。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://reasonix.io/",
+      "title": "Reasonix official site",
+      "fields": [
+        "name",
+        "description",
+        "websiteUrl",
+        "docsUrl",
+        "vendor",
+        "resourceUrls.download",
+        "platforms"
+      ]
+    },
+    {
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "title": "Reasonix official repository",
+      "fields": [
+        "description",
+        "githubUrl",
+        "license",
+        "pricing",
+        "resourceUrls.issue",
+        "relatedProducts"
+      ]
+    },
+    {
+      "url": "https://github.com/esengine/DeepSeek-Reasonix/releases/tag/desktop-v1.20.0",
+      "title": "Reasonix Desktop v1.20.0 release",
+      "fields": ["latestVersion", "releaseTracking", "resourceUrls.changelog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-06",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://reasonix.io/",
+  "docsUrl": "https://reasonix.io/docs/",
+  "vendor": "Reasonix",
+  "latestVersion": "1.20.0",
+  "releaseTracking": {
+    "provider": "github-release",
+    "identifier": "esengine/DeepSeek-Reasonix"
+  },
+  "githubUrl": "https://github.com/esengine/DeepSeek-Reasonix",
+  "license": "MIT",
+  "pricing": [
+    {
+      "name": "Open Source",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://reasonix.io/",
+    "changelog": "https://github.com/esengine/DeepSeek-Reasonix/releases",
+    "pricing": null,
+    "issue": "https://github.com/esengine/DeepSeek-Reasonix/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "reasonix"
+    },
+    {
+      "type": "extension",
+      "productId": "reasonix-extension"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installCommand": null,
+      "launchCommand": null,
+      "installPath": "/Applications/Reasonix.app"
+    },
+    {
+      "os": "Windows",
+      "installCommand": null,
+      "launchCommand": null,
+      "installPath": null
+    },
+    {
+      "os": "Linux",
+      "installCommand": null,
+      "launchCommand": null,
+      "installPath": null
+    }
+  ]
+}

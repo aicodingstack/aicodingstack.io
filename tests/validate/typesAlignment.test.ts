@@ -192,4 +192,28 @@ describe('validate: types alignment', () => {
       throw new Error(`Type alignment validation failed:\n\n${failures.join('\n\n')}`)
     }
   })
+
+  it('keeps supported IDE identifiers aligned between the extension schema and TypeScript', () => {
+    const rootDir = process.cwd()
+    const schema = readJsonFile(
+      path.join(rootDir, 'manifests', '$schemas', 'extension.schema.json')
+    ) as {
+      $defs: { ideSupport: { properties: { ideId: { enum: string[] } } } }
+    }
+    const typesContent = fs.readFileSync(path.join(rootDir, 'src', 'types', 'manifests.ts'), 'utf8')
+    const ideIdType = typesContent.match(/export interface ManifestIDESupport \{\s+ideId: ([^\n]+)/)
+
+    if (!ideIdType?.[1]) {
+      throw new Error('ManifestIDESupport.ideId union not found in src/types/manifests.ts')
+    }
+
+    const typeIds = [...ideIdType[1].matchAll(/'([^']+)'/g)].map(match => match[1]).sort()
+    const schemaIds = [...schema.$defs.ideSupport.properties.ideId.enum].sort()
+
+    if (JSON.stringify(typeIds) !== JSON.stringify(schemaIds)) {
+      throw new Error(
+        `Supported IDE identifiers differ: schema=${schemaIds.join(', ')} types=${typeIds.join(', ')}`
+      )
+    }
+  })
 })

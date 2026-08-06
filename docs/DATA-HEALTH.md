@@ -1,21 +1,21 @@
 # Data Health Report
 
-Snapshot date: 2026-08-03. Regenerate with `pnpm data-health:report`.
+Snapshot date: 2026-08-06. Regenerate with `pnpm data-health:report`.
 
 ## Scorecard
 
 | Metric | Value |
 | --- | ---: |
-| Manifest records | 253 |
-| Records with structured sources | 253 |
-| Verified records | 253 |
-| Verified with complete provenance | 253 |
+| Manifest records | 257 |
+| Records with structured sources | 257 |
+| Verified records | 257 |
+| Verified with complete provenance | 257 |
 | Stale verified records | 0 |
 | Non-English values identical to English | 300 |
 | Dangling product relationships | 0 |
 | Model benchmark coverage | 9.5% |
-| Products with pricing | 66/66 |
-| Community URLs with provenance | 331/331 |
+| Products with pricing | 69/69 |
+| Community URLs with provenance | 334/334 |
 | Duplicated vendor community URLs | 0 |
 | Errors / warnings / info | 0 / 0 / 0 |
 
@@ -24,12 +24,12 @@ Snapshot date: 2026-08-03. Regenerate with `pnpm data-health:report`.
 | Category | Total | Verified | Provenance complete | Stale |
 | --- | ---: | ---: | ---: | ---: |
 | ides | 9 | 9 | 9 | 0 |
-| clis | 27 | 27 | 27 | 0 |
-| desktops | 12 | 12 | 12 | 0 |
-| extensions | 18 | 18 | 18 | 0 |
+| clis | 28 | 28 | 28 | 0 |
+| desktops | 13 | 13 | 13 | 0 |
+| extensions | 19 | 19 | 19 | 0 |
 | models | 123 | 123 | 123 | 0 |
 | providers | 17 | 17 | 17 | 0 |
-| vendors | 47 | 47 | 47 | 0 |
+| vendors | 48 | 48 | 48 | 0 |
 
 ## Translation Placeholder Proxy
 

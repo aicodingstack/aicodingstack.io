@@ -36,6 +36,7 @@ import NovitaAi from '../../../manifests/vendors/novita-ai.json'
 import OhMyPi from '../../../manifests/vendors/oh-my-pi.json'
 import Openai from '../../../manifests/vendors/openai.json'
 import Openrouter from '../../../manifests/vendors/openrouter.json'
+import Reasonix from '../../../manifests/vendors/reasonix.json'
 import RooCode from '../../../manifests/vendors/roo-code.json'
 import ShareaiLab from '../../../manifests/vendors/shareai-lab.json'
 import Siliconflow from '../../../manifests/vendors/siliconflow.json'
@@ -86,6 +87,7 @@ export const vendorsData = [
   OhMyPi,
   Openai,
   Openrouter,
+  Reasonix,
   RooCode,
   ShareaiLab,
   Siliconflow,

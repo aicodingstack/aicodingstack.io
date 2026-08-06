@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-03",
+  "asOf": "2026-08-06",
   "thresholds": {
     "models": 30,
     "providers": 30,
@@ -10,18 +10,18 @@
     "vendors": 90
   },
   "summary": {
-    "totalRecords": 253,
-    "recordsWithSources": 253,
-    "verifiedRecords": 253,
-    "provenanceComplete": 253,
+    "totalRecords": 257,
+    "recordsWithSources": 257,
+    "verifiedRecords": 257,
+    "provenanceComplete": 257,
     "staleVerifiedRecords": 0,
     "translationPlaceholderValues": 300,
     "danglingRelationships": 0,
     "modelBenchmarkCoverage": 9.5,
-    "productsWithPricing": 66,
-    "productRecords": 66,
-    "communityUrlsPopulated": 331,
-    "communityUrlsWithProvenance": 331,
+    "productsWithPricing": 69,
+    "productRecords": 69,
+    "communityUrlsPopulated": 334,
+    "communityUrlsWithProvenance": 334,
     "duplicatedVendorCommunityUrls": 0,
     "errors": 0,
     "warnings": 0,
@@ -35,21 +35,21 @@
       "stale": 0
     },
     "clis": {
-      "total": 27,
-      "verified": 27,
-      "provenanceComplete": 27,
+      "total": 28,
+      "verified": 28,
+      "provenanceComplete": 28,
       "stale": 0
     },
     "desktops": {
-      "total": 12,
-      "verified": 12,
-      "provenanceComplete": 12,
+      "total": 13,
+      "verified": 13,
+      "provenanceComplete": 13,
       "stale": 0
     },
     "extensions": {
-      "total": 18,
-      "verified": 18,
-      "provenanceComplete": 18,
+      "total": 19,
+      "verified": 19,
+      "provenanceComplete": 19,
       "stale": 0
     },
     "models": {
@@ -65,9 +65,9 @@
       "stale": 0
     },
     "vendors": {
-      "total": 47,
-      "verified": 47,
-      "provenanceComplete": 47,
+      "total": 48,
+      "verified": 48,
+      "provenanceComplete": 48,
       "stale": 0
     }
   },

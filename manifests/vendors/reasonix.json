@@ -1,0 +1,67 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "reasonix",
+  "name": "Reasonix",
+  "description": "Reasonix is the community behind an open-source, DeepSeek-native coding agent available in terminals, desktop apps, and VS Code-compatible editors.",
+  "translations": {
+    "de": {
+      "description": "Reasonix ist die Community hinter einem quelloffenen, DeepSeek-nativen Coding-Agenten für Terminal, Desktop und VS-Code-kompatible Editoren."
+    },
+    "es": {
+      "description": "Reasonix es la comunidad detrás de un agente de programación de código abierto y nativo de DeepSeek para terminal, escritorio y editores compatibles con VS Code."
+    },
+    "fr": {
+      "description": "Reasonix est la communauté à l’origine d’un agent de codage open source natif de DeepSeek pour terminal, bureau et éditeurs compatibles avec VS Code."
+    },
+    "id": {
+      "description": "Reasonix adalah komunitas di balik agen coding sumber terbuka yang native untuk DeepSeek, tersedia di terminal, desktop, dan editor kompatibel VS Code."
+    },
+    "ja": {
+      "description": "Reasonixは、ターミナル、デスクトップ、VS Code互換エディターで利用できる、DeepSeekネイティブのオープンソース・コーディングエージェントを開発するコミュニティです。"
+    },
+    "ko": {
+      "description": "Reasonix는 터미널, 데스크톱, VS Code 호환 편집기에서 사용할 수 있는 오픈 소스 DeepSeek 네이티브 코딩 에이전트를 만드는 커뮤니티입니다."
+    },
+    "pt": {
+      "description": "Reasonix é a comunidade por trás de um agente de programação de código aberto e nativo do DeepSeek para terminal, desktop e editores compatíveis com VS Code."
+    },
+    "ru": {
+      "description": "Reasonix — сообщество, создающее открытый DeepSeek-ориентированный агент программирования для терминала, настольных приложений и редакторов на базе VS Code."
+    },
+    "tr": {
+      "description": "Reasonix; terminal, masaüstü ve VS Code uyumlu editörler için açık kaynaklı, DeepSeek odaklı bir kodlama ajanı geliştiren topluluktur."
+    },
+    "zh-Hans": {
+      "description": "Reasonix 是一个社区项目，开发原生面向 DeepSeek 的开源编码 Agent，覆盖终端、桌面应用和兼容 VS Code 的编辑器。"
+    },
+    "zh-Hant": {
+      "description": "Reasonix 是一個社群專案，開發原生面向 DeepSeek 的開放原始碼程式設計 Agent，涵蓋終端機、桌面應用程式和相容 VS Code 的編輯器。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://reasonix.io/",
+      "title": "Reasonix official site",
+      "fields": ["name", "description", "websiteUrl", "communityUrls.discord"]
+    },
+    {
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "title": "Reasonix official repository",
+      "fields": ["description", "communityUrls.github"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-06",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://reasonix.io/",
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": "https://github.com/esengine/DeepSeek-Reasonix",
+    "youtube": null,
+    "discord": "https://discord.gg/XF78rEME2D",
+    "reddit": null,
+    "blog": null
+  }
+}
