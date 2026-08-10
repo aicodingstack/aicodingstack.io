@@ -101,7 +101,7 @@
     "tailwindcss": "^4.1.17",
     "tsx": "^4.23.10",
     "typescript": "^6.0.3",
-    "user-agents": "^1.1.669",
+    "user-agents": "^2.1.144",
     "vitest": "^4.1.10",
     "wrangler": "^4.119.0"
   },
