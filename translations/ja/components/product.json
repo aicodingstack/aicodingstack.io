@@ -44,6 +44,7 @@
     "launch": "起動"
   },
   "productHero": {
+    "editManifest": "この項目をGitHubで編集",
     "runtime": "ランタイム"
   },
   "productPricing": {

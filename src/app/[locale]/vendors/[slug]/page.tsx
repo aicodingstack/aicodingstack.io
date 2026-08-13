@@ -144,6 +144,7 @@ export default async function VendorPage({
       <main className="max-w-8xl mx-auto px-[var(--spacing-md)]">
         <ProductHero
           name={vendor.name}
+          manifestId={vendor.id}
           description={vendor.description}
           category="VENDOR"
           categoryLabel={tShared('categories.singular.vendor')}

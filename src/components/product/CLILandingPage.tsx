@@ -12,6 +12,7 @@ import type { ReactNode } from 'react'
 import { DeprecatedBadge } from '@/components/controls/DeprecatedBadge'
 import { VerifiedBadge } from '@/components/controls/VerifiedBadge'
 import { CLICommandPanel } from '@/components/product/CLICommandPanel'
+import { ManifestEditLink } from '@/components/product/ManifestEditLink'
 import { ProductPricing } from '@/components/product/ProductPricing'
 import { RelatedProducts, type RelatedProductsProps } from '@/components/product/RelatedProducts'
 import { Link } from '@/i18n/navigation'
@@ -120,9 +121,12 @@ export function CLILandingPage({
                 {cli.deprecated && <DeprecatedBadge size="sm" />}
               </div>
 
-              <h1 className="text-5xl md:text-6xl font-semibold tracking-[-0.05em] detail-page-h1 mb-[var(--spacing-md)]">
-                {cli.name}
-              </h1>
+              <div className="flex items-center gap-[var(--spacing-xs)] mb-[var(--spacing-md)]">
+                <h1 className="text-5xl md:text-6xl font-semibold tracking-[-0.05em] detail-page-h1">
+                  {cli.name}
+                </h1>
+                <ManifestEditLink category="CLI" manifestId={cli.id} />
+              </div>
               <p className="text-xl leading-relaxed font-medium max-w-2xl mb-[var(--spacing-sm)]">
                 {content.answer}
               </p>

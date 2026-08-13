@@ -90,6 +90,7 @@ export default async function DesktopPage({
       <main className="max-w-8xl mx-auto px-[var(--spacing-md)]">
         <ProductHero
           name={desktop.name}
+          manifestId={desktop.id}
           description={desktop.description}
           vendor={desktop.vendor}
           category="DESKTOP"

@@ -130,6 +130,7 @@ export default async function ExtensionPage({
       <main className="max-w-8xl mx-auto px-[var(--spacing-md)]">
         <ProductHero
           name={extension.name}
+          manifestId={extension.id}
           description={extension.description}
           vendor={extension.vendor}
           category="EXTENSION"
