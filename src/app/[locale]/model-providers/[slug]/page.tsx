@@ -83,6 +83,7 @@ export default async function ProviderPage({
       <main className="max-w-8xl mx-auto px-[var(--spacing-md)]">
         <ProductHero
           name={provider.name}
+          manifestId={provider.id}
           description={provider.description}
           category="PROVIDER"
           categoryLabel={tShared('categories.singular.modelProvider')}

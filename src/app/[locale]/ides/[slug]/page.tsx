@@ -110,6 +110,7 @@ export default async function IDEPage({
       <main className="max-w-8xl mx-auto px-[var(--spacing-md)]">
         <ProductHero
           name={ide.name}
+          manifestId={ide.id}
           description={ide.description}
           vendor={ide.vendor}
           category="IDE"

@@ -44,6 +44,7 @@
     "launch": "Lancer"
   },
   "productHero": {
+    "editManifest": "Modifier cette fiche sur GitHub",
     "runtime": "Exécution"
   },
   "productPricing": {

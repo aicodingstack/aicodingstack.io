@@ -119,6 +119,7 @@ export default async function ModelPage({
       <main className="max-w-8xl mx-auto px-[var(--spacing-md)]">
         <ProductHero
           name={model.name}
+          manifestId={model.id}
           description={
             <>
               {tShared('terms.by')}{' '}

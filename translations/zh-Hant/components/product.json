@@ -44,6 +44,7 @@
     "launch": "啟動"
   },
   "productHero": {
+    "editManifest": "在 GitHub 上編輯此項目",
     "runtime": "執行期"
   },
   "productPricing": {

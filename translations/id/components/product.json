@@ -44,6 +44,7 @@
     "launch": "Luncurkan"
   },
   "productHero": {
+    "editManifest": "Edit entri ini di GitHub",
     "runtime": "Waktu proses"
   },
   "productPricing": {

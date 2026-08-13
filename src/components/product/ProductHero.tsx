@@ -2,8 +2,10 @@ import { useTranslations } from 'next-intl'
 import React from 'react'
 import { DeprecatedBadge } from '@/components/controls/DeprecatedBadge'
 import { VerifiedBadge } from '@/components/controls/VerifiedBadge'
+import { ManifestEditLink } from '@/components/product/ManifestEditLink'
 import { Link } from '@/i18n/navigation'
 import { renderLicense } from '@/lib/license'
+import type { ManifestCategory } from '@/lib/manifest-source'
 
 export interface ProductHeroProps {
   // Product identity
@@ -11,7 +13,8 @@ export interface ProductHeroProps {
   description: React.ReactNode
   vendor?: string
   vendorHref?: string
-  category: 'CLI' | 'IDE' | 'DESKTOP' | 'EXTENSION' | 'PROVIDER' | 'MODEL' | 'VENDOR'
+  category: ManifestCategory
+  manifestId: string
   categoryLabel?: string // Optional custom label for the badge
   verified?: boolean // Whether the product is verified
   deprecated?: boolean // Whether the entity has been superseded or is no longer recommended
@@ -63,6 +66,7 @@ export function ProductHero({
   vendor,
   vendorHref,
   category,
+  manifestId,
   categoryLabel,
   verified = false,
   deprecated = false,
@@ -103,6 +107,7 @@ export function ProductHero({
             <h1 className="text-5xl font-semibold tracking-[-0.04em] detail-page-h1">{name}</h1>
             {verified && <VerifiedBadge size="lg" />}
             {deprecated && <DeprecatedBadge size="lg" />}
+            <ManifestEditLink category={category} manifestId={manifestId} />
           </div>
           <div className="absolute bottom-0 right-0 translate-x-[calc(100%+1rem)]">
             <div className="px-[var(--spacing-xs)] py-[2px] text-xs text-[var(--color-text-muted)] border-[1.5px] border-double border-[var(--color-border-strong)] whitespace-nowrap">
