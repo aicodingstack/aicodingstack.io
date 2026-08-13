@@ -1,0 +1,100 @@
+{
+  "$schema": "../$schemas/cli.schema.json",
+  "id": "muse-code",
+  "name": "Muse Code",
+  "familyId": "muse-code",
+  "description": "Meta's terminal coding agent, powered by Muse Spark 1.2, for planning, implementing, and validating changes across large repositories with persistent background agents.",
+  "translations": {
+    "de": {
+      "description": "Metas Terminal-Coding-Agent auf Basis von Muse Spark 1.2 plant, implementiert und validiert Änderungen in großen Codebeständen mit persistenten Hintergrund-Agenten."
+    },
+    "es": {
+      "description": "El agente de programación para terminal de Meta, impulsado por Muse Spark 1.2, planifica, implementa y valida cambios en repositorios grandes con agentes persistentes en segundo plano."
+    },
+    "fr": {
+      "description": "L'agent de codage en terminal de Meta, propulsé par Muse Spark 1.2, planifie, implémente et valide des changements dans de grands dépôts avec des agents persistants en arrière-plan."
+    },
+    "id": {
+      "description": "Agen coding terminal Meta yang didukung Muse Spark 1.2 untuk merencanakan, menerapkan, dan memvalidasi perubahan pada repositori besar dengan agen latar belakang persisten."
+    },
+    "ja": {
+      "description": "Muse Spark 1.2を搭載したMetaのターミナル向けコーディングエージェント。常駐バックグラウンドエージェントを使い、大規模リポジトリの変更を計画、実装、検証します。"
+    },
+    "ko": {
+      "description": "Muse Spark 1.2 기반의 Meta 터미널 코딩 에이전트로, 지속형 백그라운드 에이전트를 활용해 대규모 저장소의 변경을 계획하고 구현하며 검증합니다."
+    },
+    "pt": {
+      "description": "O agente de programação para terminal da Meta, com Muse Spark 1.2, planeja, implementa e valida alterações em grandes repositórios com agentes persistentes em segundo plano."
+    },
+    "ru": {
+      "description": "Терминальный агент программирования Meta на базе Muse Spark 1.2 планирует, реализует и проверяет изменения в крупных репозиториях с помощью постоянных фоновых агентов."
+    },
+    "tr": {
+      "description": "Muse Spark 1.2 destekli Meta terminal kodlama ajanı, kalıcı arka plan ajanlarıyla büyük depolardaki değişiklikleri planlar, uygular ve doğrular."
+    },
+    "zh-Hans": {
+      "description": "Muse Code 是 Meta 基于 Muse Spark 1.2 的终端编码 Agent，可借助持续运行的后台 Agent 在大型代码库中规划、实施并验证变更。"
+    },
+    "zh-Hant": {
+      "description": "Muse Code 是 Meta 以 Muse Spark 1.2 驅動的終端機程式設計 Agent，可透過持續運作的背景 Agent 在大型程式碼庫中規劃、實作並驗證變更。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+      "title": "Introducing Muse Code and Muse Spark 1.2",
+      "fields": ["name", "description", "websiteUrl", "vendor", "platforms"]
+    },
+    {
+      "url": "https://dev.meta.ai/install.sh",
+      "title": "Muse Code installer",
+      "fields": ["resourceUrls.download", "platforms"]
+    },
+    {
+      "url": "https://api.meta.ai/muse-code/channels/muse-stable",
+      "title": "Muse Code stable channel",
+      "fields": ["latestVersion"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-11",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://dev.meta.ai",
+  "docsUrl": "https://dev.meta.ai",
+  "vendor": "Meta",
+  "latestVersion": "0.1.0-R708.1",
+  "githubUrl": null,
+  "license": "Proprietary",
+  "pricing": [],
+  "resourceUrls": {
+    "download": "https://dev.meta.ai/install.sh",
+    "changelog": null,
+    "pricing": null,
+    "issue": null
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installCommand": "curl -fsSL https://dev.meta.ai/install.sh | bash",
+      "launchCommand": "muse",
+      "installPath": "~/.local/bin/muse"
+    },
+    {
+      "os": "Linux",
+      "installCommand": "curl -fsSL https://dev.meta.ai/install.sh | bash",
+      "launchCommand": "muse",
+      "installPath": "~/.local/bin/muse"
+    }
+  ]
+}
