@@ -3,8 +3,8 @@
   "source": "Artificial Analysis",
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
   "methodologyUrl": "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
-  "indexVersion": "4.1",
-  "observedAt": "2026-07-31",
+  "indexVersion": "4.1.1",
+  "observedAt": "2026-08-13",
   "legacyMissingModelIds": ["cursor-composer-2", "cursor-composer-2-5"],
   "entries": [
     {
@@ -129,8 +129,8 @@
     },
     {
       "modelId": "deepseek-3-2",
-      "score": 32,
-      "estimated": false,
+      "score": 33,
+      "estimated": true,
       "configuration": "DeepSeek V3.2 (Reasoning)"
     },
     {
@@ -159,31 +159,37 @@
     },
     {
       "modelId": "deepseek-v3-2-exp",
-      "score": 21,
+      "score": 22,
       "estimated": true,
       "configuration": "DeepSeek V3.2 Exp (Non-reasoning)"
     },
     {
       "modelId": "deepseek-v3-terminus",
-      "score": 21,
+      "score": 22,
       "estimated": true,
       "configuration": "DeepSeek V3.1 Terminus (Non-reasoning)"
     },
     {
       "modelId": "deepseek-v4-flash",
-      "score": 50,
+      "score": 52,
       "estimated": false,
       "configuration": "DeepSeek V4 Flash 0731 (max)"
     },
     {
       "modelId": "deepseek-v4-flash-preview",
-      "score": 40,
+      "score": 42,
       "estimated": false,
       "configuration": "DeepSeek V4 Flash (max)"
     },
     {
       "modelId": "deepseek-v4-pro",
-      "score": 44,
+      "score": 53,
+      "estimated": false,
+      "configuration": "DeepSeek V4 Pro 0813 (max)"
+    },
+    {
+      "modelId": "deepseek-v4-pro-preview",
+      "score": 45,
       "estimated": false,
       "configuration": "DeepSeek V4 Pro (max)"
     },
@@ -477,7 +483,7 @@
     },
     {
       "modelId": "grok-4",
-      "score": 33,
+      "score": 34,
       "estimated": true,
       "configuration": "Grok 4"
     },
@@ -489,7 +495,7 @@
     },
     {
       "modelId": "grok-4-20",
-      "score": 37,
+      "score": 38,
       "estimated": true,
       "configuration": "Grok 4.20 0309 v2"
     },
@@ -501,13 +507,19 @@
     },
     {
       "modelId": "grok-4-5",
-      "score": 54,
+      "score": 56,
       "estimated": false,
       "configuration": "Grok 4.5 (high)"
     },
     {
+      "modelId": "grok-4-6",
+      "score": 61,
+      "estimated": false,
+      "configuration": "Grok 4.6 (high)"
+    },
+    {
       "modelId": "grok-4-fast",
-      "score": 16,
+      "score": 17,
       "estimated": true,
       "configuration": "Grok 4 Fast"
     },
@@ -639,9 +651,15 @@
     },
     {
       "modelId": "muse-spark-1-1",
-      "score": 51,
+      "score": 53,
       "estimated": false,
       "configuration": "Muse Spark 1.1 (xhigh)"
+    },
+    {
+      "modelId": "muse-spark-1-2",
+      "score": 57,
+      "estimated": false,
+      "configuration": "Muse Spark 1.2 (xhigh)"
     },
     {
       "modelId": "o3",
@@ -663,7 +681,7 @@
     },
     {
       "modelId": "qwen3-5-122b-a10b",
-      "score": 32,
+      "score": 33,
       "estimated": false,
       "configuration": "Qwen3.5 122B A10B (Reasoning)"
     },
@@ -699,7 +717,7 @@
     },
     {
       "modelId": "qwen3-6-27b",
-      "score": 37,
+      "score": 38,
       "estimated": false,
       "configuration": "Qwen3.6 27B (Reasoning)"
     },
@@ -711,13 +729,13 @@
     },
     {
       "modelId": "qwen3-6-max-preview",
-      "score": 40,
+      "score": 41,
       "estimated": true,
-      "configuration": "Qwen3.6 Max"
+      "configuration": "Qwen3.6 Max Preview"
     },
     {
       "modelId": "qwen3-7-max",
-      "score": 46,
+      "score": 47,
       "estimated": false,
       "configuration": "Qwen3.7 Max"
     },
@@ -726,6 +744,12 @@
       "score": 39,
       "estimated": false,
       "configuration": "Qwen3.7 Plus"
+    },
+    {
+      "modelId": "qwen3-8-max",
+      "score": 58,
+      "estimated": false,
+      "configuration": "Qwen3.8 Max"
     },
     {
       "modelId": "qwen3-coder-next",

@@ -189,6 +189,31 @@ describe('model intelligence index', () => {
         .filter(point => point.modelId === 'qwen3-6-27b' || point.modelId === 'qwen3-6-35b-a3b')
         .map(point => point.series)
     ).toEqual(['Qwen Open', 'Qwen Open'])
+    expect(
+      qwenSeries[0]?.points.map(point => [
+        point.modelId,
+        point.score,
+        point.estimated,
+        point.configuration,
+      ])
+    ).toEqual([
+      ['qwen3-6-max-preview', 41, true, 'Qwen3.6 Max Preview'],
+      ['qwen3-7-max', 47, false, 'Qwen3.7 Max'],
+      ['qwen3-8-max', 58, false, 'Qwen3.8 Max'],
+    ])
+  })
+
+  it('connects Grok 4.6 to the flagship Grok line', () => {
+    const grokSeries = modelIntelligenceSeries.find(
+      series => series.vendor === 'xAI' && series.name === 'Grok'
+    )
+
+    expect(grokSeries?.points.at(-1)).toMatchObject({
+      modelId: 'grok-4-6',
+      score: 61,
+      estimated: false,
+      configuration: 'Grok 4.6 (high)',
+    })
   })
 
   it('orders Claude product lines from Opus through Fable', () => {
@@ -239,7 +264,12 @@ describe('model intelligence index', () => {
       'deepseek-v3-terminus',
       'deepseek-v3-2-exp',
       'deepseek-3-2',
+      'deepseek-v4-pro-preview',
       'deepseek-v4-pro',
+    ])
+    expect(deepSeekSeries[0]?.points.slice(-2).map(point => [point.modelId, point.score])).toEqual([
+      ['deepseek-v4-pro-preview', 45],
+      ['deepseek-v4-pro', 53],
     ])
     expect(
       deepSeekSeries[1]?.points.map(point => [
@@ -249,8 +279,8 @@ describe('model intelligence index', () => {
         point.configuration,
       ])
     ).toEqual([
-      ['deepseek-v4-flash-preview', 40, false, 'DeepSeek V4 Flash (max)'],
-      ['deepseek-v4-flash', 50, false, 'DeepSeek V4 Flash 0731 (max)'],
+      ['deepseek-v4-flash-preview', 42, false, 'DeepSeek V4 Flash (max)'],
+      ['deepseek-v4-flash', 52, false, 'DeepSeek V4 Flash 0731 (max)'],
     ])
   })
 
@@ -467,7 +497,7 @@ describe('model intelligence index', () => {
     expect(modelIntelligenceMeta.methodologyUrl).toBe(
       'https://artificialanalysis.ai/methodology/intelligence-benchmarking'
     )
-    expect(modelIntelligenceMeta.indexVersion).toBe('4.1')
+    expect(modelIntelligenceMeta.indexVersion).toBe('4.1.1')
     expect(modelIntelligenceMeta.observedAt).toMatch(/^\d{4}-\d{2}-\d{2}$/)
   })
 })

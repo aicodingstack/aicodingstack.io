@@ -10,7 +10,7 @@
     {
       "id": "qwen-max",
       "name": "Qwen Max",
-      "modelIds": ["qwen3-6-max-preview", "qwen3-7-max"]
+      "modelIds": ["qwen3-6-max-preview", "qwen3-7-max", "qwen3-8-max"]
     },
     {
       "id": "qwen-plus",
@@ -91,9 +91,14 @@
       "url": "https://x.com/AlibabaGroup",
       "title": "Alibaba twitter community",
       "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://qwen.ai/blog?id=qwen3.8",
+      "title": "Qwen3.8-Max: A New Bar for Coding and Cowork",
+      "fields": ["modelSeries"]
     }
   ],
-  "lastVerifiedAt": "2026-07-28",
+  "lastVerifiedAt": "2026-08-13",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.alibabagroup.com",

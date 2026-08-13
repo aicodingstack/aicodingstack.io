@@ -36,6 +36,7 @@ import DeepseekV3Terminus from '../../../manifests/models/deepseek-v3-terminus.j
 import DeepseekV4Flash from '../../../manifests/models/deepseek-v4-flash.json'
 import DeepseekV4FlashPreview from '../../../manifests/models/deepseek-v4-flash-preview.json'
 import DeepseekV4Pro from '../../../manifests/models/deepseek-v4-pro.json'
+import DeepseekV4ProPreview from '../../../manifests/models/deepseek-v4-pro-preview.json'
 import Devstral2 from '../../../manifests/models/devstral-2.json'
 import DevstralSmall2 from '../../../manifests/models/devstral-small-2.json'
 import Gemini20Flash from '../../../manifests/models/gemini-2-0-flash.json'
@@ -88,6 +89,7 @@ import Grok4 from '../../../manifests/models/grok-4.json'
 import Grok41Fast from '../../../manifests/models/grok-4-1-fast.json'
 import Grok43 from '../../../manifests/models/grok-4-3.json'
 import Grok45 from '../../../manifests/models/grok-4-5.json'
+import Grok46 from '../../../manifests/models/grok-4-6.json'
 import Grok420 from '../../../manifests/models/grok-4-20.json'
 import Grok4Fast from '../../../manifests/models/grok-4-fast.json'
 import GrokCodeFast1 from '../../../manifests/models/grok-code-fast-1.json'
@@ -112,6 +114,7 @@ import MinimaxM3 from '../../../manifests/models/minimax-m3.json'
 import MistralMedium35 from '../../../manifests/models/mistral-medium-3-5.json'
 import MistralSmall4 from '../../../manifests/models/mistral-small-4.json'
 import MuseSpark11 from '../../../manifests/models/muse-spark-1-1.json'
+import MuseSpark12 from '../../../manifests/models/muse-spark-1-2.json'
 import O3 from '../../../manifests/models/o3.json'
 import O3Mini from '../../../manifests/models/o3-mini.json'
 import O4Mini from '../../../manifests/models/o4-mini.json'
@@ -124,6 +127,7 @@ import Qwen36MaxPreview from '../../../manifests/models/qwen3-6-max-preview.json
 import Qwen36Plus from '../../../manifests/models/qwen3-6-plus.json'
 import Qwen37Max from '../../../manifests/models/qwen3-7-max.json'
 import Qwen37Plus from '../../../manifests/models/qwen3-7-plus.json'
+import Qwen38Max from '../../../manifests/models/qwen3-8-max.json'
 import Qwen3Coder30bA3b from '../../../manifests/models/qwen3-coder-30b-a3b.json'
 import Qwen3Coder480bA35b from '../../../manifests/models/qwen3-coder-480b-a35b.json'
 import Qwen3CoderNext from '../../../manifests/models/qwen3-coder-next.json'
@@ -161,6 +165,7 @@ export const modelsData = [
   DeepseekV3,
   DeepseekV4FlashPreview,
   DeepseekV4Flash,
+  DeepseekV4ProPreview,
   DeepseekV4Pro,
   Devstral2,
   DevstralSmall2,
@@ -213,6 +218,7 @@ export const modelsData = [
   Grok41Fast,
   Grok43,
   Grok45,
+  Grok46,
   Grok420,
   Grok4Fast,
   Grok4,
@@ -238,6 +244,7 @@ export const modelsData = [
   MistralMedium35,
   MistralSmall4,
   MuseSpark11,
+  MuseSpark12,
   O3Mini,
   O3,
   O4Mini,
@@ -250,6 +257,7 @@ export const modelsData = [
   Qwen36Plus,
   Qwen37Max,
   Qwen37Plus,
+  Qwen38Max,
   Qwen3Coder30bA3b,
   Qwen3Coder480bA35b,
   Qwen3CoderNext,

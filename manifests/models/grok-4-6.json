@@ -1,0 +1,123 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "grok-4-6",
+  "name": "Grok 4.6",
+  "description": "SpaceXAI's frontier model for coding, long-running agents, knowledge work, and ambitious interactive and visual projects.",
+  "translations": {
+    "de": {
+      "description": "SpaceXAIs Frontier-Modell für Programmierung, lang laufende Agenten, Wissensarbeit sowie anspruchsvolle interaktive und visuelle Projekte."
+    },
+    "es": {
+      "description": "El modelo de frontera de SpaceXAI para programación, agentes de larga duración, trabajo del conocimiento y proyectos interactivos y visuales ambiciosos."
+    },
+    "fr": {
+      "description": "Le modèle de pointe de SpaceXAI pour le codage, les agents de longue durée, le travail intellectuel et les projets interactifs et visuels ambitieux."
+    },
+    "id": {
+      "description": "Model frontier SpaceXAI untuk coding, agen jangka panjang, pekerjaan pengetahuan, serta proyek interaktif dan visual yang ambisius."
+    },
+    "ja": {
+      "description": "コーディング、長時間稼働するエージェント、知識労働、野心的なインタラクティブ・ビジュアルプロジェクト向けのSpaceXAIフロンティアモデル。"
+    },
+    "ko": {
+      "description": "코딩, 장기 실행 에이전트, 지식 업무와 야심 찬 인터랙티브 및 시각 프로젝트를 위한 SpaceXAI의 프런티어 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo de fronteira da SpaceXAI para programação, agentes de longa duração, trabalho de conhecimento e projetos interativos e visuais ambiciosos."
+    },
+    "ru": {
+      "description": "Передовая модель SpaceXAI для программирования, длительно работающих агентов, интеллектуальной работы и сложных интерактивных и визуальных проектов."
+    },
+    "tr": {
+      "description": "SpaceXAI'ın kodlama, uzun süre çalışan ajanlar, bilgi çalışmaları ve iddialı etkileşimli ve görsel projeler için öncü modeli."
+    },
+    "zh-Hans": {
+      "description": "SpaceXAI 面向编码、长时间运行的智能体、知识工作以及复杂交互与视觉项目的前沿模型。"
+    },
+    "zh-Hant": {
+      "description": "SpaceXAI 面向程式設計、長時間運行的智慧體、知識工作以及複雜互動與視覺專案的前沿模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.x.ai/developers/models/grok-4.6",
+      "title": "Grok 4.6 model documentation",
+      "fields": [
+        "name",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://x.ai/news/grok-4-6",
+      "title": "Introducing Grok 4.6",
+      "fields": ["description", "releaseDate", "lifecycle", "websiteUrl"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/grok-4-6",
+      "title": "Artificial Analysis Grok 4.6 model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-13",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://x.ai",
+  "docsUrl": "https://docs.x.ai/developers/models/grok-4.6",
+  "vendor": "xAI",
+  "size": null,
+  "activeParameters": null,
+  "contextWindow": 500000,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": { "metric": "inputTokens", "min": 1, "max": 200000 },
+            "rates": { "input": 2, "output": 6, "cacheRead": 0.5, "cacheWrite": null }
+          },
+          {
+            "condition": { "metric": "inputTokens", "min": 200001, "max": 500000 },
+            "rates": { "input": 4, "output": 12, "cacheRead": 1, "cacheWrite": null }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-08-12",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2026-02-01",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/grok-4-6",
+    "openrouter": null
+  }
+}

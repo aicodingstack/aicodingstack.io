@@ -1,0 +1,104 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "qwen3-8-max",
+  "name": "Qwen3.8-Max",
+  "description": "Alibaba's 2.4T-parameter flagship model with 95B active parameters for coding, real-world work, long-horizon tasks, and multimodal agents.",
+  "translations": {
+    "de": {
+      "description": "Alibabas Flaggschiffmodell mit 2,4 Billionen Parametern und 95 Milliarden aktiven Parametern für Programmierung, reale Arbeitsaufgaben, langfristige Aufgaben und multimodale Agenten."
+    },
+    "es": {
+      "description": "El modelo insignia de Alibaba con 2,4 billones de parámetros y 95 mil millones activos para programación, trabajo real, tareas prolongadas y agentes multimodales."
+    },
+    "fr": {
+      "description": "Le modèle phare d’Alibaba doté de 2,4 billions de paramètres, dont 95 milliards actifs, pour le codage, le travail réel, les tâches longues et les agents multimodaux."
+    },
+    "id": {
+      "description": "Model unggulan Alibaba dengan 2,4 triliun parameter dan 95 miliar parameter aktif untuk coding, pekerjaan dunia nyata, tugas jangka panjang, dan agen multimodal."
+    },
+    "ja": {
+      "description": "総2.4兆・アクティブ950億パラメータを備え、コーディング、実務、長期タスク、マルチモーダルエージェントに対応するAlibabaのフラッグシップモデル。"
+    },
+    "ko": {
+      "description": "총 2.4조 및 활성 950억 매개변수로 코딩, 실제 업무, 장기 작업과 멀티모달 에이전트를 지원하는 Alibaba의 플래그십 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo principal da Alibaba com 2,4 trilhões de parâmetros e 95 bilhões ativos para programação, trabalho real, tarefas prolongadas e agentes multimodais."
+    },
+    "ru": {
+      "description": "Флагманская модель Alibaba с 2,4 трлн параметров, из которых 95 млрд активны, для программирования, реальных рабочих задач, длительной автономной работы и мультимодальных агентов."
+    },
+    "tr": {
+      "description": "Alibaba'nın kodlama, gerçek iş görevleri, uzun süreli çalışmalar ve çok modlu ajanlar için 2,4 trilyon toplam ve 95 milyar aktif parametreli amiral modeli."
+    },
+    "zh-Hans": {
+      "description": "阿里巴巴拥有 2.4 万亿总参数、950 亿激活参数的旗舰模型，面向编码、真实工作、长周期任务和多模态智能体。"
+    },
+    "zh-Hant": {
+      "description": "阿里巴巴擁有 2.4 兆總參數、950 億啟用參數的旗艦模型，面向程式設計、真實工作、長週期任務和多模態智慧體。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://qwen.ai/blog?id=qwen3.8",
+      "title": "Qwen3.8-Max: A New Bar for Coding and Cowork",
+      "fields": [
+        "name",
+        "description",
+        "websiteUrl",
+        "docsUrl",
+        "size",
+        "activeParameters",
+        "contextWindow",
+        "maxOutput",
+        "releaseDate",
+        "lifecycle",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/qwen3-8-max",
+      "title": "Artificial Analysis Qwen3.8 Max model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-13",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://qwen.ai",
+  "docsUrl": "https://qwen.ai/blog?id=qwen3.8",
+  "vendor": "Alibaba",
+  "size": "2.4T",
+  "activeParameters": "95B",
+  "contextWindow": 1000000,
+  "maxOutput": 65536,
+  "tokenPricing": {
+    "status": "unavailable",
+    "reason": "official-price-not-published",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "releaseDate": "2026-08-03",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "pdf", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-8-max",
+    "openrouter": null
+  }
+}
