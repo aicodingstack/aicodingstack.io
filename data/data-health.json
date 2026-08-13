@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-03",
+  "asOf": "2026-08-13",
   "thresholds": {
     "models": 30,
     "providers": 30,
@@ -10,16 +10,16 @@
     "vendors": 90
   },
   "summary": {
-    "totalRecords": 253,
-    "recordsWithSources": 253,
-    "verifiedRecords": 253,
-    "provenanceComplete": 253,
+    "totalRecords": 258,
+    "recordsWithSources": 258,
+    "verifiedRecords": 258,
+    "provenanceComplete": 258,
     "staleVerifiedRecords": 0,
     "translationPlaceholderValues": 300,
     "danglingRelationships": 0,
-    "modelBenchmarkCoverage": 9.5,
+    "modelBenchmarkCoverage": 9.2,
     "productsWithPricing": 66,
-    "productRecords": 66,
+    "productRecords": 67,
     "communityUrlsPopulated": 331,
     "communityUrlsWithProvenance": 331,
     "duplicatedVendorCommunityUrls": 0,
@@ -35,9 +35,9 @@
       "stale": 0
     },
     "clis": {
-      "total": 27,
-      "verified": 27,
-      "provenanceComplete": 27,
+      "total": 28,
+      "verified": 28,
+      "provenanceComplete": 28,
       "stale": 0
     },
     "desktops": {
@@ -53,9 +53,9 @@
       "stale": 0
     },
     "models": {
-      "total": 123,
-      "verified": 123,
-      "provenanceComplete": 123,
+      "total": 127,
+      "verified": 127,
+      "provenanceComplete": 127,
       "stale": 0
     },
     "providers": {
