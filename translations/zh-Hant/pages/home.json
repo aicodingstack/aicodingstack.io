@@ -1,5 +1,21 @@
 {
-  "description": "探索和比較 AI 編碼工具：IDE、CLI、擴充套件、模型和供應商 — 全部在一個地方。",
+  "activity": {
+    "eyebrow": "資料動態",
+    "footer": "資料每日驗證 · 來源可追溯",
+    "sourceVerified": "來源已驗證",
+    "title": "近期驗證更新",
+    "versionVerified": "版本 {version} 已驗證"
+  },
+  "dataStage": {
+    "carouselLabel": "模型指數輪播",
+    "counter": "{current} / {total}",
+    "label": "AI 編碼生態資料",
+    "next": "顯示下一個指數",
+    "observed": "指數資料觀測於 {date}",
+    "previous": "顯示上一個指數",
+    "viewIndex": "查看完整指數"
+  },
+  "description": "探索並比較 IDE、CLI、擴充套件、模型和供應商，以及經過驗證的能力、價格、版本和來源資料。",
   "faq": "常見問題",
   "features": {
     "comparison": {
@@ -21,10 +37,23 @@
     }
   },
   "meta": {
-    "description": "AI 編碼工具完整目錄。探索、比較和探索 IDE、CLI、擴充套件、模型和供應商。",
-    "title": "AI 編碼工具目錄與比較"
+    "description": "探索經過驗證的 AI 編碼工具、模型、價格、版本、比較與生態資料，涵蓋 IDE、CLI、擴充套件和供應商。",
+    "title": "AI 編碼工具、模型與生態資料"
   },
-  "readDocs": "閱讀文件",
-  "subtitle": "探索、比較、更快開發。",
-  "title": "您的 AI 編碼生態系統中心"
+  "proof": {
+    "lastUpdated": "最近驗證",
+    "records": "目錄記錄",
+    "sources": "有來源記錄",
+    "verified": "已驗證記錄"
+  },
+  "subtitle": "經過驗證的 AI 編碼生態資料",
+  "title": "AI 編碼工具與模型生態",
+  "topics": {
+    "comparableModels": "{count} 個可比較模型",
+    "eyebrow": "當前訊號",
+    "indexedModels": "{count} 個已收錄模型版本",
+    "openSourceRepositories": "{count} 個已追蹤儲存庫",
+    "title": "資料專題",
+    "view": "查看專題"
+  }
 }

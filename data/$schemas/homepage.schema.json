@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Homepage Configuration",
+  "description": "Curated data selections used by the homepage.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "modelIntelligenceSeries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/modelIntelligenceSeries"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "required": ["$schema", "modelIntelligenceSeries"],
+  "additionalProperties": false,
+  "$defs": {
+    "modelIntelligenceSeries": {
+      "type": "object",
+      "properties": {
+        "vendor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "seriesId": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        }
+      },
+      "required": ["vendor", "seriesId"],
+      "additionalProperties": false
+    }
+  }
+}

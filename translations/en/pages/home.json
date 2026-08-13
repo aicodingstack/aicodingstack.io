@@ -1,5 +1,21 @@
 {
-  "description": "Explore and compare AI coding tools: IDEs, CLIs, extensions, models, and providers — all in one place.",
+  "activity": {
+    "eyebrow": "Data activity",
+    "footer": "Data verified daily · Sources traceable",
+    "sourceVerified": "Sources verified",
+    "title": "Recent verified updates",
+    "versionVerified": "Version {version} verified"
+  },
+  "dataStage": {
+    "carouselLabel": "Model index carousel",
+    "counter": "{current} / {total}",
+    "label": "AI coding ecosystem intelligence",
+    "next": "Show next index",
+    "observed": "Index data observed {date}",
+    "previous": "Show previous index",
+    "viewIndex": "View full index"
+  },
+  "description": "Explore and compare IDEs, CLIs, extensions, models, and providers with verified capability, pricing, release, and source data.",
   "faq": "Frequently Asked Questions",
   "features": {
     "comparison": {
@@ -21,10 +37,23 @@
     }
   },
   "meta": {
-    "description": "Comprehensive directory for AI coding tools. Discover, compare and explore IDEs, CLIs, extensions, models and providers.",
-    "title": "AI Coding Tools Directory & Comparisons"
+    "description": "Explore verified AI coding tools, models, prices, releases, comparisons, and ecosystem intelligence across IDEs, CLIs, extensions, and providers.",
+    "title": "AI Coding Tools, Models & Ecosystem Data"
   },
-  "readDocs": "Read Documentation",
-  "subtitle": "Discover, Compare, Build Faster.",
-  "title": "Your AI Coding Ecosystem Hub"
+  "proof": {
+    "lastUpdated": "Latest verification",
+    "records": "Catalog records",
+    "sources": "Records with sources",
+    "verified": "Verified records"
+  },
+  "subtitle": "Verified AI coding ecosystem intelligence",
+  "title": "AI Coding Tools & Model Ecosystem",
+  "topics": {
+    "comparableModels": "{count} comparable models",
+    "eyebrow": "Current signals",
+    "indexedModels": "{count} indexed model releases",
+    "openSourceRepositories": "{count} tracked repositories",
+    "title": "Data topics",
+    "view": "Explore topic"
+  }
 }

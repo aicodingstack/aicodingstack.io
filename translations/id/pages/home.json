@@ -1,5 +1,21 @@
 {
-  "description": "Jelajahi dan bandingkan alat coding AI: IDE, CLI, ekstensi, model, dan penyedia — semua di satu tempat.",
+  "activity": {
+    "eyebrow": "Aktivitas data",
+    "footer": "Data diverifikasi setiap hari · Sumber dapat ditelusuri",
+    "sourceVerified": "Sumber diverifikasi",
+    "title": "Pembaruan terverifikasi terbaru",
+    "versionVerified": "Versi {version} diverifikasi"
+  },
+  "dataStage": {
+    "carouselLabel": "Karosel indeks model",
+    "counter": "{current} / {total}",
+    "label": "Data ekosistem coding AI",
+    "next": "Tampilkan indeks berikutnya",
+    "observed": "Data indeks diamati pada {date}",
+    "previous": "Tampilkan indeks sebelumnya",
+    "viewIndex": "Lihat indeks lengkap"
+  },
+  "description": "Jelajahi dan bandingkan IDE, CLI, ekstensi, model, dan penyedia dengan data kemampuan, harga, versi, dan sumber yang terverifikasi.",
   "faq": "Pertanyaan yang Sering Diajukan",
   "features": {
     "comparison": {
@@ -21,10 +37,23 @@
     }
   },
   "meta": {
-    "description": "Direktori komprehensif untuk alat coding AI. Temukan, bandingkan, dan jelajahi IDE, CLI, ekstensi, model, dan penyedia.",
-    "title": "Direktori dan Perbandingan Alat Coding AI"
+    "description": "Jelajahi alat coding AI, model, harga, versi, perbandingan, dan data ekosistem yang terverifikasi.",
+    "title": "Alat Coding AI, Model, dan Data Ekosistem"
   },
-  "readDocs": "Baca Dokumentasi",
-  "subtitle": "Temukan, Bandingkan, Bangun Lebih Cepat.",
-  "title": "Pusat Ekosistem Coding AI Anda"
+  "proof": {
+    "lastUpdated": "Verifikasi terbaru",
+    "records": "Catatan katalog",
+    "sources": "Catatan dengan sumber",
+    "verified": "Catatan terverifikasi"
+  },
+  "subtitle": "Data ekosistem coding AI terverifikasi",
+  "title": "Alat Coding dan Ekosistem Model AI",
+  "topics": {
+    "comparableModels": "{count} model yang dapat dibandingkan",
+    "eyebrow": "Sinyal terkini",
+    "indexedModels": "{count} rilis model terindeks",
+    "openSourceRepositories": "{count} repositori terlacak",
+    "title": "Topik data",
+    "view": "Jelajahi topik"
+  }
 }

@@ -1,5 +1,21 @@
 {
-  "description": "AI kodlama araçlarını keşfedin ve karşılaştırın: IDE'ler, CLI'ler, uzantılar, modeller ve sağlayıcılar — hepsi tek bir yerde.",
+  "activity": {
+    "eyebrow": "Veri etkinliği",
+    "footer": "Veriler her gün doğrulanır · Kaynaklar izlenebilir",
+    "sourceVerified": "Kaynaklar doğrulandı",
+    "title": "Son doğrulanan güncellemeler",
+    "versionVerified": "Sürüm {version} doğrulandı"
+  },
+  "dataStage": {
+    "carouselLabel": "Model indeksi döngüsü",
+    "counter": "{current} / {total}",
+    "label": "AI kodlama ekosistemi verileri",
+    "next": "Sonraki indeksi göster",
+    "observed": "İndeks verileri {date} tarihinde gözlemlendi",
+    "previous": "Önceki indeksi göster",
+    "viewIndex": "Tam indeksi görüntüle"
+  },
+  "description": "IDE'leri, CLI'leri, uzantıları, modelleri ve sağlayıcıları doğrulanmış yetenek, fiyat, sürüm ve kaynak verileriyle keşfedin ve karşılaştırın.",
   "faq": "Sıkça Sorulan Sorular",
   "features": {
     "comparison": {
@@ -21,10 +37,23 @@
     }
   },
   "meta": {
-    "description": "AI kodlama araçları için kapsamlı dizin. IDE'leri, CLI'leri, uzantıları, modelleri ve sağlayıcıları keşfedin, karşılaştırın ve inceleyin.",
-    "title": "AI Kodlama Araçları Dizini ve Karşılaştırması"
+    "description": "Doğrulanmış AI kodlama araçlarını, modelleri, fiyatları, sürümleri, karşılaştırmaları ve ekosistem verilerini keşfedin.",
+    "title": "AI Kodlama Araçları, Modeller ve Ekosistem Verileri"
   },
-  "readDocs": "Dokümantasyonu Oku",
-  "subtitle": "Keşfedin, Karşılaştırın, Daha Hızlı Oluşturun.",
-  "title": "AI Kodlama Ekosistemi Merkeziniz"
+  "proof": {
+    "lastUpdated": "Son doğrulama",
+    "records": "Katalog kayıtları",
+    "sources": "Kaynaklı kayıtlar",
+    "verified": "Doğrulanmış kayıtlar"
+  },
+  "subtitle": "Doğrulanmış AI kodlama ekosistemi verileri",
+  "title": "AI Kodlama Araçları ve Model Ekosistemi",
+  "topics": {
+    "comparableModels": "{count} karşılaştırılabilir model",
+    "eyebrow": "Güncel sinyaller",
+    "indexedModels": "{count} indekslenmiş model sürümü",
+    "openSourceRepositories": "{count} izlenen depo",
+    "title": "Veri konuları",
+    "view": "Konuyu keşfet"
+  }
 }

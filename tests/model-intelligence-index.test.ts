@@ -10,6 +10,7 @@ import {
 } from '@/lib/model-intelligence-index'
 import { findVendorByName } from '@/lib/vendor-identity'
 import artificialAnalysisData from '../data/artificial-analysis-index.json'
+import homepageData from '../data/homepage.json'
 
 const LEGACY_MISSING_MODEL_ID_BASELINE = new Set([
   'composer',
@@ -90,6 +91,19 @@ describe('model intelligence index', () => {
     expect(
       allModelIntelligencePoints.filter(point => !assignedModelIds.has(point.modelId))
     ).toEqual([])
+  })
+
+  it('resolves every homepage series to a model timeline', () => {
+    for (const selection of homepageData.modelIntelligenceSeries) {
+      const series = modelIntelligenceSeries.find(
+        candidate =>
+          candidate.vendor === selection.vendor &&
+          candidate.id === `${selection.vendor}:${selection.seriesId}`
+      )
+
+      expect(series, `${selection.vendor}:${selection.seriesId}`).toBeDefined()
+      expect(series!.points.length).toBeGreaterThanOrEqual(2)
+    }
   })
 
   it('requires every new catalog model to have an Intelligence Index entry', () => {

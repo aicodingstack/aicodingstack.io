@@ -1,5 +1,21 @@
 {
-  "description": "Explora y compara herramientas de codificación con IA: IDEs, CLIs, extensiones, modelos y proveedores — todo en un solo lugar.",
+  "activity": {
+    "eyebrow": "Actividad de datos",
+    "footer": "Datos verificados a diario · Fuentes rastreables",
+    "sourceVerified": "Fuentes verificadas",
+    "title": "Actualizaciones verificadas recientes",
+    "versionVerified": "Versión {version} verificada"
+  },
+  "dataStage": {
+    "carouselLabel": "Carrusel de índices de modelos",
+    "counter": "{current} / {total}",
+    "label": "Datos del ecosistema de codificación con IA",
+    "next": "Mostrar el índice siguiente",
+    "observed": "Datos del índice observados el {date}",
+    "previous": "Mostrar el índice anterior",
+    "viewIndex": "Ver índice completo"
+  },
+  "description": "Explora y compara IDEs, CLIs, extensiones, modelos y proveedores con datos verificados de capacidad, precios, versiones y fuentes.",
   "faq": "Preguntas frecuentes",
   "features": {
     "comparison": {
@@ -21,10 +37,23 @@
     }
   },
   "meta": {
-    "description": "Directorio completo para herramientas de codificación con IA. Descubre, compara y explora IDEs, CLIs, extensiones, modelos y proveedores.",
-    "title": "Directorio y comparación de herramientas de IA"
+    "description": "Explora herramientas de codificación con IA, modelos, precios, versiones, comparaciones y datos del ecosistema verificados.",
+    "title": "Herramientas, modelos y datos de codificación con IA"
   },
-  "readDocs": "Leer documentación",
-  "subtitle": "Descubre, compara, construye más rápido.",
-  "title": "Tu centro del ecosistema de codificación con IA"
+  "proof": {
+    "lastUpdated": "Última verificación",
+    "records": "Registros del catálogo",
+    "sources": "Registros con fuentes",
+    "verified": "Registros verificados"
+  },
+  "subtitle": "Datos verificados del ecosistema de codificación con IA",
+  "title": "Herramientas de codificación y ecosistema de modelos de IA",
+  "topics": {
+    "comparableModels": "{count} modelos comparables",
+    "eyebrow": "Señales actuales",
+    "indexedModels": "{count} versiones de modelos indexadas",
+    "openSourceRepositories": "{count} repositorios seguidos",
+    "title": "Temas de datos",
+    "view": "Explorar tema"
+  }
 }

@@ -1,5 +1,21 @@
 {
-  "description": "AI 코딩 도구를 탐색하고 비교하세요: IDE, CLI, 확장 프로그램, 모델, 제공업체 — 모두 한 곳에서.",
+  "activity": {
+    "eyebrow": "데이터 활동",
+    "footer": "매일 검증되는 데이터 · 추적 가능한 출처",
+    "sourceVerified": "출처 검증 완료",
+    "title": "최근 검증된 업데이트",
+    "versionVerified": "버전 {version} 검증 완료"
+  },
+  "dataStage": {
+    "carouselLabel": "모델 인덱스 캐러셀",
+    "counter": "{current} / {total}",
+    "label": "AI 코딩 생태계 데이터",
+    "next": "다음 인덱스 표시",
+    "observed": "인덱스 데이터 관측일: {date}",
+    "previous": "이전 인덱스 표시",
+    "viewIndex": "전체 인덱스 보기"
+  },
+  "description": "IDE, CLI, 확장 프로그램, 모델, 제공업체를 검증된 성능, 가격, 버전, 출처 데이터로 탐색하고 비교하세요.",
   "faq": "자주 묻는 질문",
   "features": {
     "comparison": {
@@ -21,10 +37,23 @@
     }
   },
   "meta": {
-    "description": "AI 코딩 도구를 위한 포괄적인 디렉토리. IDE, CLI, 확장 프로그램, 모델, 제공업체를 발견, 비교 및 탐색하세요.",
-    "title": "AI 코딩 도구 디렉터리 및 비교"
+    "description": "검증된 AI 코딩 도구, 모델, 가격, 버전, 비교 및 생태계 데이터를 탐색하세요.",
+    "title": "AI 코딩 도구, 모델 및 생태계 데이터"
   },
-  "readDocs": "문서 읽기",
-  "subtitle": "발견하고, 비교하고, 더 빠르게 개발하세요.",
-  "title": "당신의 AI 코딩 생태계 허브"
+  "proof": {
+    "lastUpdated": "최근 검증",
+    "records": "카탈로그 항목",
+    "sources": "출처가 있는 항목",
+    "verified": "검증된 항목"
+  },
+  "subtitle": "검증된 AI 코딩 생태계 데이터",
+  "title": "AI 코딩 도구와 모델 생태계",
+  "topics": {
+    "comparableModels": "비교 가능한 모델 {count}개",
+    "eyebrow": "현재 신호",
+    "indexedModels": "인덱싱된 모델 릴리스 {count}개",
+    "openSourceRepositories": "추적 중인 저장소 {count}개",
+    "title": "데이터 주제",
+    "view": "주제 살펴보기"
+  }
 }
