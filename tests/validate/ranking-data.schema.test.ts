@@ -5,7 +5,7 @@ import addFormats from 'ajv-formats'
 import { describe, expect, it } from 'vitest'
 
 describe('validate: ranking data schemas', () => {
-  it.each(['artificial-analysis-index', 'model-price-intelligence-index'])(
+  it.each(['artificial-analysis-index', 'homepage', 'model-price-intelligence-index'])(
     'validates the %s data',
     dataName => {
       const rootDir = path.resolve(__dirname, '../..')

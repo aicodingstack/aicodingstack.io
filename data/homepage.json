@@ -1,0 +1,29 @@
+{
+  "$schema": "./$schemas/homepage.schema.json",
+  "modelIntelligenceSeries": [
+    {
+      "vendor": "Anthropic",
+      "seriesId": "claude-opus"
+    },
+    {
+      "vendor": "OpenAI",
+      "seriesId": "gpt-sol"
+    },
+    {
+      "vendor": "Moonshot",
+      "seriesId": "kimi"
+    },
+    {
+      "vendor": "MiniMax",
+      "seriesId": "minimax-m"
+    },
+    {
+      "vendor": "DeepSeek",
+      "seriesId": "deepseek"
+    },
+    {
+      "vendor": "Z.ai",
+      "seriesId": "glm"
+    }
+  ]
+}

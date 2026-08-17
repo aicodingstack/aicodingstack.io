@@ -54,6 +54,19 @@ a {
   font-weight: 400;
 }
 
+/* Keep Han text readable next to half-width letters and numerals, including dynamic dates. */
+html:lang(zh) {
+  text-autospace: normal;
+}
+
+/* Literal text must retain its exact spacing. */
+code,
+pre,
+kbd,
+samp {
+  text-autospace: no-autospace;
+}
+
 h1,
 h2,
 h3,
@@ -126,6 +139,28 @@ strong {
 
 .animate-fadeIn {
   animation: fadeIn 200ms ease-out;
+}
+
+.homepage-activity-list {
+  scrollbar-color: var(--color-border-strong) transparent;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+}
+
+.homepage-activity-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.homepage-activity-list::-webkit-scrollbar-track {
+  background: var(--color-hover);
+}
+
+.homepage-activity-list::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+}
+
+.homepage-price-chart .recharts-surface {
+  overflow: visible;
 }
 
 /* cmdk overrides */

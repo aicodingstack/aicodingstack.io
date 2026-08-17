@@ -505,6 +505,18 @@ function Breadcrumb() {
 
 ---
 
+## Chinese Typography
+
+- Simplified and Traditional Chinese interfaces automatically add typographic spacing between
+  Han characters and adjacent half-width Latin letters or Arabic numerals with
+  `text-autospace: normal` on the document language root.
+- This global rule also covers generated values such as localized dates and counts. Do not add
+  literal ASCII spaces to translations or formatters solely to create this visual spacing.
+- Literal content in `code`, `pre`, `kbd`, and `samp` is excluded so commands and source text keep
+  their exact spacing.
+
+---
+
 ## Conclusion
 
 These rules establish a clear, scalable architecture for i18n translations that:

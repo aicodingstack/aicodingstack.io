@@ -1,5 +1,21 @@
 {
-  "description": "探索和对比 AI 编码工具：IDE、CLI、扩展、模型和提供商，一站式了解完整生态。",
+  "activity": {
+    "eyebrow": "数据动态",
+    "footer": "数据每日验证 · 来源可追溯",
+    "sourceVerified": "来源已验证",
+    "title": "近期验证更新",
+    "versionVerified": "版本 {version} 已验证"
+  },
+  "dataStage": {
+    "carouselLabel": "模型指数轮播",
+    "counter": "{current} / {total}",
+    "label": "AI 编码生态数据",
+    "next": "显示下一个指数",
+    "observed": "指数数据观测于 {date}",
+    "previous": "显示上一个指数",
+    "viewIndex": "查看完整指数"
+  },
+  "description": "探索并比较 IDE、CLI、扩展、模型和提供商，以及经过验证的能力、价格、版本和来源数据。",
   "faq": "常见问题",
   "features": {
     "comparison": {
@@ -21,10 +37,23 @@
     }
   },
   "meta": {
-    "description": "AI 编码工具综合目录。发现、对比和探索 IDE、命令行、终端、模型和提供商。",
-    "title": "AI 编码工具目录与对比"
+    "description": "探索经过验证的 AI 编码工具、模型、价格、版本、对比与生态数据，覆盖 IDE、CLI、扩展和提供商。",
+    "title": "AI 编码工具、模型与生态数据"
   },
-  "readDocs": "阅读文档",
-  "subtitle": "发现、对比、更快构建。",
-  "title": "你的 AI 编码生态中心"
+  "proof": {
+    "lastUpdated": "最近验证",
+    "records": "目录记录",
+    "sources": "有来源记录",
+    "verified": "已验证记录"
+  },
+  "subtitle": "经过验证的 AI 编码生态数据",
+  "title": "AI 编码工具与模型生态",
+  "topics": {
+    "comparableModels": "{count} 个可比模型",
+    "eyebrow": "当前信号",
+    "indexedModels": "{count} 个已收录模型版本",
+    "openSourceRepositories": "{count} 个已跟踪仓库",
+    "title": "数据专题",
+    "view": "查看专题"
+  }
 }

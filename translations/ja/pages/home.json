@@ -1,5 +1,21 @@
 {
-  "description": "AI コーディングツールを探索・比較：IDE、CLI、拡張機能、モデル、プロバイダー — すべて一箇所で。",
+  "activity": {
+    "eyebrow": "データ更新",
+    "footer": "データを毎日検証 · 出典を追跡可能",
+    "sourceVerified": "出典を検証済み",
+    "title": "最近検証された更新",
+    "versionVerified": "バージョン {version} を検証済み"
+  },
+  "dataStage": {
+    "carouselLabel": "モデルインデックスのカルーセル",
+    "counter": "{current} / {total}",
+    "label": "AI コーディングエコシステムデータ",
+    "next": "次のインデックスを表示",
+    "observed": "インデックスデータ観測日：{date}",
+    "previous": "前のインデックスを表示",
+    "viewIndex": "インデックス全体を見る"
+  },
+  "description": "IDE、CLI、拡張機能、モデル、プロバイダーを、検証済みの能力、価格、バージョン、出典データで探索・比較できます。",
   "faq": "よくある質問",
   "features": {
     "comparison": {
@@ -21,10 +37,23 @@
     }
   },
   "meta": {
-    "description": "AI コーディングツールの包括的なディレクトリ。IDE、CLI、拡張機能、モデル、プロバイダーを発見、比較、探索。",
-    "title": "AI コーディングツールの比較・ディレクトリ"
+    "description": "検証済みの AI コーディングツール、モデル、価格、バージョン、比較、エコシステムデータを探索。",
+    "title": "AI コーディングツール・モデル・エコシステムデータ"
   },
-  "readDocs": "ドキュメントを読む",
-  "subtitle": "見つけて、比べて、より速く開発。",
-  "title": "あなたのAIコーディングエコシステムハブ"
+  "proof": {
+    "lastUpdated": "最新の検証",
+    "records": "カタログ項目",
+    "sources": "出典付き項目",
+    "verified": "検証済み項目"
+  },
+  "subtitle": "検証済み AI コーディングエコシステムデータ",
+  "title": "AI コーディングツールとモデルのエコシステム",
+  "topics": {
+    "comparableModels": "比較可能なモデル {count} 件",
+    "eyebrow": "現在のシグナル",
+    "indexedModels": "インデックス登録済みモデルリリース {count} 件",
+    "openSourceRepositories": "追跡中のリポジトリ {count} 件",
+    "title": "データトピック",
+    "view": "トピックを見る"
+  }
 }

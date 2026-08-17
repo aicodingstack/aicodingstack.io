@@ -1,5 +1,21 @@
 {
-  "description": "Explorez et comparez les outils de codage IA : IDE, CLI, extensions, modèles et fournisseurs — tout en un seul endroit.",
+  "activity": {
+    "eyebrow": "Activité des données",
+    "footer": "Données vérifiées chaque jour · Sources traçables",
+    "sourceVerified": "Sources vérifiées",
+    "title": "Mises à jour récemment vérifiées",
+    "versionVerified": "Version {version} vérifiée"
+  },
+  "dataStage": {
+    "carouselLabel": "Carrousel des index de modèles",
+    "counter": "{current} / {total}",
+    "label": "Données de l’écosystème du codage IA",
+    "next": "Afficher l’index suivant",
+    "observed": "Données d’index observées le {date}",
+    "previous": "Afficher l’index précédent",
+    "viewIndex": "Voir l’index complet"
+  },
+  "description": "Explorez et comparez les IDE, CLI, extensions, modèles et fournisseurs grâce à des données vérifiées sur les capacités, les prix, les versions et les sources.",
   "faq": "Questions fréquentes",
   "features": {
     "comparison": {
@@ -21,10 +37,23 @@
     }
   },
   "meta": {
-    "description": "Répertoire complet des outils de codage IA. Découvrez, comparez et explorez les IDE, CLI, extensions, modèles et fournisseurs.",
-    "title": "Répertoire et comparaison des outils de codage IA"
+    "description": "Explorez les outils de codage IA, modèles, prix, versions, comparaisons et données d’écosystème vérifiés.",
+    "title": "Outils, modèles et données de l’écosystème du codage IA"
   },
-  "readDocs": "Lire la documentation",
-  "subtitle": "Découvrez, comparez et développez plus vite.",
-  "title": "Votre hub de l'écosystème de codage IA"
+  "proof": {
+    "lastUpdated": "Dernière vérification",
+    "records": "Entrées du catalogue",
+    "sources": "Entrées avec sources",
+    "verified": "Entrées vérifiées"
+  },
+  "subtitle": "Données vérifiées sur l’écosystème du codage IA",
+  "title": "Outils de codage et écosystème des modèles IA",
+  "topics": {
+    "comparableModels": "{count} modèles comparables",
+    "eyebrow": "Signaux actuels",
+    "indexedModels": "{count} versions de modèles indexées",
+    "openSourceRepositories": "{count} dépôts suivis",
+    "title": "Thèmes de données",
+    "view": "Explorer le thème"
+  }
 }

@@ -1,5 +1,21 @@
 {
-  "description": "Erkunden und vergleichen Sie AI-Coding-Tools: IDEs, CLIs, Erweiterungen, Modelle und Anbieter — alles an einem Ort.",
+  "activity": {
+    "eyebrow": "Datenaktivität",
+    "footer": "Täglich verifizierte Daten · Quellen nachvollziehbar",
+    "sourceVerified": "Quellen verifiziert",
+    "title": "Kürzlich verifizierte Aktualisierungen",
+    "versionVerified": "Version {version} verifiziert"
+  },
+  "dataStage": {
+    "carouselLabel": "Modellindex-Karussell",
+    "counter": "{current} / {total}",
+    "label": "Daten zum AI-Coding-Ökosystem",
+    "next": "Nächsten Index anzeigen",
+    "observed": "Indexdaten beobachtet am {date}",
+    "previous": "Vorherigen Index anzeigen",
+    "viewIndex": "Vollständigen Index anzeigen"
+  },
+  "description": "Erkunden und vergleichen Sie IDEs, CLIs, Erweiterungen, Modelle und Anbieter anhand verifizierter Leistungs-, Preis-, Versions- und Quelldaten.",
   "faq": "Häufig gestellte Fragen",
   "features": {
     "comparison": {
@@ -21,10 +37,23 @@
     }
   },
   "meta": {
-    "description": "Umfassendes Verzeichnis für AI-Coding-Tools. Entdecken, vergleichen und erkunden Sie IDEs, CLIs, Erweiterungen, Modelle und Anbieter.",
-    "title": "Verzeichnis und Vergleich von AI-Coding-Tools"
+    "description": "Erkunden Sie verifizierte AI-Coding-Tools, Modelle, Preise, Versionen, Vergleiche und Ökosystemdaten für IDEs, CLIs, Erweiterungen und Anbieter.",
+    "title": "AI-Coding-Tools, Modelle und Ökosystemdaten"
   },
-  "readDocs": "Dokumentation Lesen",
-  "subtitle": "Entdecken, Vergleichen, Schneller Entwickeln.",
-  "title": "Ihr AI-Coding-Ökosystem-Hub"
+  "proof": {
+    "lastUpdated": "Letzte Verifizierung",
+    "records": "Katalogeinträge",
+    "sources": "Einträge mit Quellen",
+    "verified": "Verifizierte Einträge"
+  },
+  "subtitle": "Verifizierte Daten zum AI-Coding-Ökosystem",
+  "title": "AI-Coding-Tools und Modellökosystem",
+  "topics": {
+    "comparableModels": "{count} vergleichbare Modelle",
+    "eyebrow": "Aktuelle Signale",
+    "indexedModels": "{count} indexierte Modellversionen",
+    "openSourceRepositories": "{count} beobachtete Repositories",
+    "title": "Datenthemen",
+    "view": "Thema erkunden"
+  }
 }
