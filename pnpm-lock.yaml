@@ -141,8 +141,8 @@ importers:
         specifier: ^6.0.3
         version: 6.0.3
       user-agents:
-        specifier: ^1.1.669
-        version: 1.1.675
+        specifier: ^2.1.153
+        version: 2.1.153
       vitest:
         specifier: ^4.1.10
         version: 4.1.10(@types/node@22.20.1)(vite@8.1.5(@types/node@22.20.1)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.16.9)(tsx@4.23.12)(yaml@2.9.0))
@@ -4498,8 +4498,8 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  user-agents@1.1.675:
-    resolution: {integrity: sha512-ZQnegGfKf083joYjEZuLgjJtpDHW5IhOXWCw/25yx82ZvctDcYp/PQsWNShH4Dq00SuDYaPm0qndVBn6axBpvA==}
+  user-agents@2.1.153:
+    resolution: {integrity: sha512-Gc6RATUs44lF0v1pz8l1BJWlHLC4TfBpS9pkMEEOSbrpuL/IkWb4m6X7vqdOLh+/PErnWdxYwkT8lRf9s9Hj2A==}
     engines: {node: '>=18'}
 
   vary@1.1.2:
@@ -9437,7 +9437,7 @@ snapshots:
     dependencies:
       react: 19.2.8
 
-  user-agents@1.1.675: {}
+  user-agents@2.1.153: {}
 
   vary@1.1.2: {}
 
