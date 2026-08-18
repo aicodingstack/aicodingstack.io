@@ -2,40 +2,40 @@
   "$schema": "../$schemas/model.schema.json",
   "id": "qwen3-8-max",
   "name": "Qwen3.8-Max",
-  "description": "Alibaba's 2.4T-parameter flagship model with 95B active parameters for coding, real-world work, long-horizon tasks, and multimodal agents.",
+  "description": "Alibaba's managed Qwen3.8 flagship, based on the open-weight 2.4T-A95B model with added vision, non-thinking mode, built-in tools, and a default 1M-token context.",
   "translations": {
     "de": {
-      "description": "Alibabas Flaggschiffmodell mit 2,4 Billionen Parametern und 95 Milliarden aktiven Parametern für Programmierung, reale Arbeitsaufgaben, langfristige Aufgaben und multimodale Agenten."
+      "description": "Alibabas verwaltetes Qwen3.8-Flaggschiff auf Basis des offenen 2.4T-A95B-Modells, ergänzt um Bildverarbeitung, Nicht-Denkmodus, integrierte Werkzeuge und standardmäßig 1 Mio. Token Kontext."
     },
     "es": {
-      "description": "El modelo insignia de Alibaba con 2,4 billones de parámetros y 95 mil millones activos para programación, trabajo real, tareas prolongadas y agentes multimodales."
+      "description": "El modelo insignia Qwen3.8 gestionado de Alibaba, basado en el modelo abierto 2.4T-A95B y ampliado con visión, modo sin razonamiento, herramientas integradas y contexto de 1 M de tokens."
     },
     "fr": {
-      "description": "Le modèle phare d’Alibaba doté de 2,4 billions de paramètres, dont 95 milliards actifs, pour le codage, le travail réel, les tâches longues et les agents multimodaux."
+      "description": "Le modèle phare Qwen3.8 géré d’Alibaba, fondé sur le modèle ouvert 2.4T-A95B et enrichi de la vision, d’un mode sans raisonnement, d’outils intégrés et d’un contexte de 1 M de jetons par défaut."
     },
     "id": {
-      "description": "Model unggulan Alibaba dengan 2,4 triliun parameter dan 95 miliar parameter aktif untuk coding, pekerjaan dunia nyata, tugas jangka panjang, dan agen multimodal."
+      "description": "Model unggulan Qwen3.8 terkelola Alibaba yang berbasis model open-weight 2.4T-A95B, dengan tambahan visi, mode tanpa berpikir, alat bawaan, dan konteks bawaan 1 juta token."
     },
     "ja": {
-      "description": "総2.4兆・アクティブ950億パラメータを備え、コーディング、実務、長期タスク、マルチモーダルエージェントに対応するAlibabaのフラッグシップモデル。"
+      "description": "オープンウェイト2.4T-A95Bモデルを基盤に、画像入力、非思考モード、内蔵ツール、標準100万トークンのコンテキストを追加したAlibabaのマネージドQwen3.8旗艦モデル。"
     },
     "ko": {
-      "description": "총 2.4조 및 활성 950억 매개변수로 코딩, 실제 업무, 장기 작업과 멀티모달 에이전트를 지원하는 Alibaba의 플래그십 모델입니다."
+      "description": "오픈 웨이트 2.4T-A95B 모델을 기반으로 비전 입력, 비사고 모드, 내장 도구와 기본 100만 토큰 컨텍스트를 추가한 Alibaba의 관리형 Qwen3.8 플래그십 모델입니다."
     },
     "pt": {
-      "description": "O modelo principal da Alibaba com 2,4 trilhões de parâmetros e 95 bilhões ativos para programação, trabalho real, tarefas prolongadas e agentes multimodais."
+      "description": "O Qwen3.8 principal e gerenciado da Alibaba, baseado no modelo aberto 2.4T-A95B e ampliado com visão, modo sem raciocínio, ferramentas integradas e contexto padrão de 1 milhão de tokens."
     },
     "ru": {
-      "description": "Флагманская модель Alibaba с 2,4 трлн параметров, из которых 95 млрд активны, для программирования, реальных рабочих задач, длительной автономной работы и мультимодальных агентов."
+      "description": "Управляемая флагманская модель Alibaba Qwen3.8 на базе открытой 2.4T-A95B, дополненная обработкой изображений, режимом без рассуждений, встроенными инструментами и контекстом 1 млн токенов."
     },
     "tr": {
-      "description": "Alibaba'nın kodlama, gerçek iş görevleri, uzun süreli çalışmalar ve çok modlu ajanlar için 2,4 trilyon toplam ve 95 milyar aktif parametreli amiral modeli."
+      "description": "Alibaba'nın açık ağırlıklı 2.4T-A95B modelini temel alan; görsel giriş, düşünmesiz mod, yerleşik araçlar ve varsayılan 1 milyon token bağlam ekleyen yönetilen Qwen3.8 amiral modeli."
     },
     "zh-Hans": {
-      "description": "阿里巴巴拥有 2.4 万亿总参数、950 亿激活参数的旗舰模型，面向编码、真实工作、长周期任务和多模态智能体。"
+      "description": "阿里巴巴基于开放权重 2.4T-A95B 模型提供的托管 Qwen3.8 旗舰版，增加视觉输入、非思考模式、内置工具和默认 100 万 token 上下文。"
     },
     "zh-Hant": {
-      "description": "阿里巴巴擁有 2.4 兆總參數、950 億啟用參數的旗艦模型，面向程式設計、真實工作、長週期任務和多模態智慧體。"
+      "description": "阿里巴巴基於開放權重 2.4T-A95B 模型提供的代管 Qwen3.8 旗艦版，增加視覺輸入、非思考模式、內建工具和預設 100 萬 token 上下文。"
     }
   },
   "verified": true,
@@ -60,33 +60,70 @@
       ]
     },
     {
+      "url": "https://www.qwencloud.com/models/qwen3.8-max",
+      "title": "QwenCloud Qwen3.8-Max model page",
+      "fields": [
+        "description",
+        "docsUrl",
+        "maxOutput",
+        "tokenPricing",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "title": "Qwen3.8-2.4T-A95B official model card",
+      "fields": ["description"]
+    },
+    {
       "url": "https://artificialanalysis.ai/models/qwen3-8-max",
       "title": "Artificial Analysis Qwen3.8 Max model page",
-      "fields": ["platformUrls.artificialAnalysis"]
+      "fields": ["releaseDate", "platformUrls.artificialAnalysis"]
     }
   ],
-  "lastVerifiedAt": "2026-08-13",
+  "lastVerifiedAt": "2026-08-18",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://qwen.ai",
-  "docsUrl": "https://qwen.ai/blog?id=qwen3.8",
+  "docsUrl": "https://www.qwencloud.com/models/qwen3.8-max",
   "vendor": "Alibaba",
   "size": "2.4T",
   "activeParameters": "95B",
   "contextWindow": 1000000,
-  "maxOutput": 65536,
+  "maxOutput": 131072,
   "tokenPricing": {
-    "status": "unavailable",
-    "reason": "official-price-not-published",
-    "primaryOffer": null,
-    "offers": []
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 2,
+              "output": 6,
+              "cacheRead": 0.25,
+              "cacheWrite": 2.5
+            }
+          }
+        ]
+      }
+    ]
   },
   "releaseDate": "2026-08-03",
   "lifecycle": "latest",
   "knowledgeCutoff": null,
   "inputModalities": ["text", "image", "pdf", "video"],
   "outputModalities": ["text"],
-  "capabilities": ["function-calling", "tool-choice", "reasoning"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
   "benchmarks": {
     "sweBench": null,
     "terminalBench": null,

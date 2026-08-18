@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-13",
+  "asOf": "2026-08-18",
   "thresholds": {
     "models": 30,
     "providers": 30,
@@ -10,21 +10,21 @@
     "vendors": 90
   },
   "summary": {
-    "totalRecords": 258,
-    "recordsWithSources": 258,
-    "verifiedRecords": 258,
-    "provenanceComplete": 258,
-    "staleVerifiedRecords": 0,
+    "totalRecords": 261,
+    "recordsWithSources": 261,
+    "verifiedRecords": 261,
+    "provenanceComplete": 261,
+    "staleVerifiedRecords": 2,
     "translationPlaceholderValues": 300,
     "danglingRelationships": 0,
-    "modelBenchmarkCoverage": 9.2,
+    "modelBenchmarkCoverage": 9,
     "productsWithPricing": 66,
     "productRecords": 67,
     "communityUrlsPopulated": 331,
     "communityUrlsWithProvenance": 331,
     "duplicatedVendorCommunityUrls": 0,
     "errors": 0,
-    "warnings": 0,
+    "warnings": 2,
     "info": 0
   },
   "byCategory": {
@@ -53,10 +53,10 @@
       "stale": 0
     },
     "models": {
-      "total": 127,
-      "verified": 127,
-      "provenanceComplete": 127,
-      "stale": 0
+      "total": 130,
+      "verified": 130,
+      "provenanceComplete": 130,
+      "stale": 2
     },
     "providers": {
       "total": 17,
@@ -128,5 +128,20 @@
       "matchingEnglishPercent": 4.6
     }
   },
-  "issues": []
+  "issues": [
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "claude-haiku-4-5",
+      "message": "Last reviewed 31 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "gpt-5-2",
+      "message": "Last reviewed 31 days ago; threshold is 30 days."
+    }
+  ]
 }

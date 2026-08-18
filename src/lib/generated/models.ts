@@ -47,6 +47,7 @@ import Gemini31ProPreview from '../../../manifests/models/gemini-3-1-pro-preview
 import Gemini35Flash from '../../../manifests/models/gemini-3-5-flash.json'
 import Gemini35FlashLite from '../../../manifests/models/gemini-3-5-flash-lite.json'
 import Gemini36Flash from '../../../manifests/models/gemini-3-6-flash.json'
+import Gemini37Flash from '../../../manifests/models/gemini-3-7-flash.json'
 import Gemini3Flash from '../../../manifests/models/gemini-3-flash.json'
 import Gemini3Pro from '../../../manifests/models/gemini-3-pro.json'
 import Gemma426bA4b from '../../../manifests/models/gemma-4-26b-a4b.json'
@@ -127,6 +128,8 @@ import Qwen36MaxPreview from '../../../manifests/models/qwen3-6-max-preview.json
 import Qwen36Plus from '../../../manifests/models/qwen3-6-plus.json'
 import Qwen37Max from '../../../manifests/models/qwen3-7-max.json'
 import Qwen37Plus from '../../../manifests/models/qwen3-7-plus.json'
+import Qwen3824tA95b from '../../../manifests/models/qwen3-8-2-4t-a95b.json'
+import Qwen3827b from '../../../manifests/models/qwen3-8-27b.json'
 import Qwen38Max from '../../../manifests/models/qwen3-8-max.json'
 import Qwen3Coder30bA3b from '../../../manifests/models/qwen3-coder-30b-a3b.json'
 import Qwen3Coder480bA35b from '../../../manifests/models/qwen3-coder-480b-a35b.json'
@@ -177,6 +180,7 @@ export const modelsData = [
   Gemini35FlashLite,
   Gemini35Flash,
   Gemini36Flash,
+  Gemini37Flash,
   Gemini3Flash,
   Gemini3Pro,
   Gemma426bA4b,
@@ -257,6 +261,8 @@ export const modelsData = [
   Qwen36Plus,
   Qwen37Max,
   Qwen37Plus,
+  Qwen3824tA95b,
+  Qwen3827b,
   Qwen38Max,
   Qwen3Coder30bA3b,
   Qwen3Coder480bA35b,

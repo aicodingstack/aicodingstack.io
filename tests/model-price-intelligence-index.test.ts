@@ -16,8 +16,9 @@ describe('model price-intelligence index', () => {
     expect(modelPriceIntelligencePoints.map(point => point.modelId)).toEqual(
       expect.arrayContaining([
         'gemini-3-5-flash-lite',
+        'gemini-3-7-flash',
         'qwen3-7-plus',
-        'qwen3-7-max',
+        'qwen3-8-2-4t-a95b',
         'gpt-5-6-terra',
         'claude-haiku-4-5',
         'claude-opus-5',
@@ -59,7 +60,7 @@ describe('model price-intelligence index', () => {
     expect(fallbackPoints.map(point => point.modelId)).toEqual([
       'hy3',
       'qwen3-7-plus',
-      'qwen3-7-max',
+      'qwen3-8-2-4t-a95b',
     ])
     expect(
       fallbackPoints.map(point => ({
@@ -76,8 +77,8 @@ describe('model price-intelligence index', () => {
         sourceUrl: 'https://artificialanalysis.ai/models/qwen3-7-plus',
       },
       {
-        modelId: 'qwen3-7-max',
-        sourceUrl: 'https://artificialanalysis.ai/models/qwen3-7-max',
+        modelId: 'qwen3-8-2-4t-a95b',
+        sourceUrl: 'https://artificialanalysis.ai/models/qwen3-8-2-4t-a95b',
       },
     ])
     expect(modelPriceIntelligenceMeta.fallbackPricingSources).toEqual(
@@ -89,7 +90,7 @@ describe('model price-intelligence index', () => {
     )
 
     const hy3 = modelPriceIntelligencePoints.find(point => point.modelId === 'hy3')
-    expect(hy3).toMatchObject({ inputPrice: 0.14, outputPrice: 0.58, score: 41 })
+    expect(hy3).toMatchObject({ inputPrice: 0.14, outputPrice: 0.58, score: 42 })
     expect(hy3?.blendedPrice).toBeCloseTo(0.184)
   })
 

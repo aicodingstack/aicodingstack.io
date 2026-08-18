@@ -1,0 +1,101 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "qwen3-8-27b",
+  "name": "Qwen3.8-27B",
+  "description": "Alibaba's dense open-weight Qwen3.8 vision-language model with 27.8B parameters, flexible thinking, native 262K context extensible to 1M tokens, and image and video understanding.",
+  "translations": {
+    "de": {
+      "description": "Alibabas offenes Qwen3.8-Vision-Language-Modell mit 27,8 Mrd. Parametern, flexiblem Denken, 262K bis 1 Mio. Token Kontext sowie Bild- und Videoverständnis."
+    },
+    "es": {
+      "description": "Modelo Qwen3.8 abierto de visión y lenguaje de Alibaba, con 27,8 mil millones de parámetros, razonamiento flexible, contexto de 262K ampliable a 1 M e imágenes y vídeo."
+    },
+    "fr": {
+      "description": "Modèle Qwen3.8 vision-langage ouvert d’Alibaba, avec 27,8 milliards de paramètres, raisonnement flexible, contexte de 262K extensible à 1 M et compréhension des images et vidéos."
+    },
+    "id": {
+      "description": "Model vision-language Qwen3.8 open-weight Alibaba dengan 27,8 miliar parameter, penalaran fleksibel, konteks 262K hingga 1 juta token, serta pemahaman gambar dan video."
+    },
+    "ja": {
+      "description": "278億パラメータ、柔軟な思考制御、100万トークンまで拡張可能なネイティブ262Kコンテキスト、画像・動画理解を備えたAlibabaの高密度Qwen3.8オープンウェイト視覚言語モデル。"
+    },
+    "ko": {
+      "description": "278억 매개변수, 유연한 사고 제어, 100만 토큰까지 확장 가능한 기본 262K 컨텍스트와 이미지·비디오 이해를 갖춘 Alibaba의 밀집형 Qwen3.8 오픈 웨이트 비전 언어 모델입니다."
+    },
+    "pt": {
+      "description": "Modelo Qwen3.8 aberto de visão e linguagem da Alibaba, com 27,8 bilhões de parâmetros, raciocínio flexível, contexto de 262K a 1 milhão e compreensão de imagens e vídeos."
+    },
+    "ru": {
+      "description": "Открытая мультимодальная модель Alibaba Qwen3.8: 27,8 млрд параметров, гибкие рассуждения, контекст 262K с расширением до 1 млн токенов, изображения и видео."
+    },
+    "tr": {
+      "description": "Alibaba'nın 27,8 milyar parametreli, esnek akıl yürütmeli, 1 milyon tokene genişletilebilen yerel 262K bağlamlı ve görüntü ile video anlayışına sahip yoğun açık ağırlıklı Qwen3.8 görsel-dil modeli."
+    },
+    "zh-Hans": {
+      "description": "阿里巴巴的稠密开放权重 Qwen3.8 视觉语言模型，拥有 278 亿参数、灵活思考控制、可从原生 262K 扩展至 100 万 token 的上下文，并支持图像与视频理解。"
+    },
+    "zh-Hant": {
+      "description": "阿里巴巴的稠密開放權重 Qwen3.8 視覺語言模型，擁有 278 億參數、彈性思考控制、可從原生 262K 延伸至 100 萬 token 的上下文，並支援圖像與影片理解。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "title": "Qwen3.8-27B official model card",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "contextWindow",
+        "maxOutput",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "platformUrls.huggingface"
+      ]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/qwen3-8-27b",
+      "title": "Artificial Analysis Qwen3.8 27B model page",
+      "fields": ["releaseDate", "platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-18",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://qwen.ai",
+  "docsUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+  "vendor": "Alibaba",
+  "size": "27.8B",
+  "activeParameters": null,
+  "contextWindow": 262144,
+  "maxOutput": 131072,
+  "tokenPricing": {
+    "status": "unavailable",
+    "reason": "official-price-not-published",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "releaseDate": "2026-08-14",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/Qwen/Qwen3.8-27B",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-8-27b",
+    "openrouter": null
+  }
+}
