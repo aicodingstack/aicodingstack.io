@@ -20,7 +20,8 @@
         "gemini-2-5-flash",
         "gemini-3-flash",
         "gemini-3-5-flash",
-        "gemini-3-6-flash"
+        "gemini-3-6-flash",
+        "gemini-3-7-flash"
       ]
     },
     {
@@ -101,9 +102,14 @@
       "url": "https://www.reddit.com/r/google",
       "title": "Google reddit community",
       "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "title": "Gemini API release notes",
+      "fields": ["modelSeries"]
     }
   ],
-  "lastVerifiedAt": "2026-07-28",
+  "lastVerifiedAt": "2026-08-14",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.google.com",

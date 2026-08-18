@@ -76,13 +76,13 @@
       "labelAnchor": "start"
     },
     {
-      "modelId": "gemini-3-6-flash",
+      "modelId": "gemini-3-7-flash",
       "labelDx": -18,
       "labelDy": 24,
       "labelAnchor": "end"
     },
     {
-      "modelId": "grok-4-5",
+      "modelId": "grok-4-6",
       "labelDx": 18,
       "labelDy": -24,
       "labelAnchor": "start"
@@ -100,7 +100,7 @@
       "labelAnchor": "start"
     },
     {
-      "modelId": "qwen3-7-max",
+      "modelId": "qwen3-8-2-4t-a95b",
       "labelDx": -10,
       "labelDy": 24,
       "labelAnchor": "end"

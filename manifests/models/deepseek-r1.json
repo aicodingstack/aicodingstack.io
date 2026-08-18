@@ -61,9 +61,14 @@
       "url": "https://models.dev/api.json",
       "title": "Models.dev pricing catalog",
       "fields": ["referenceTokenPricing"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/deepseek-r1-0120",
+      "title": "Artificial Analysis DeepSeek R1 January 2025 model page",
+      "fields": ["platformUrls.artificialAnalysis"]
     }
   ],
-  "lastVerifiedAt": "2026-07-31",
+  "lastVerifiedAt": "2026-08-18",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.deepseek.com",
@@ -106,7 +111,7 @@
   },
   "platformUrls": {
     "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
-    "artificialAnalysis": "https://artificialanalysis.ai/models/deepseek-r1",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/deepseek-r1-0120",
     "openrouter": "https://openrouter.ai/deepseek/deepseek-r1"
   }
 }

@@ -1,86 +1,75 @@
 {
   "$schema": "../$schemas/model.schema.json",
   "id": "deepseek-v4-pro",
-  "name": "DeepSeek-V4-Pro-Preview",
-  "description": "DeepSeek's flagship open-weight V4 model with 1.6T total and 49B active parameters, 1M context, dual thinking modes, JSON output, and tool calls.",
+  "name": "DeepSeek-V4-Pro",
+  "description": "DeepSeek's current V4 Pro model with a 1M-token context window, thinking and non-thinking modes, JSON output, tool calls, and Responses API support.",
   "translations": {
     "de": {
-      "description": "DeepSeeks Open-Weight-V4-Flaggschiff mit 1,6 Bio. Gesamt- und 49 Mrd. aktiven Parametern, 1 Mio. Kontext, zwei Denkmodi, JSON und Werkzeugaufrufen."
+      "description": "DeepSeeks aktuelles V4-Pro-Modell mit 1 Million Token Kontext, Denk- und Nicht-Denkmodus, JSON-Ausgabe, Werkzeugaufrufen und Unterstützung der Responses API."
     },
     "es": {
-      "description": "El modelo V4 insignia y de pesos abiertos de DeepSeek, con 1,6T parámetros totales y 49B activos, contexto de 1M, dos modos de pensamiento, JSON y herramientas."
+      "description": "El modelo V4 Pro actual de DeepSeek, con contexto de un millón de tokens, modos con y sin razonamiento, salida JSON, herramientas y compatibilidad con Responses API."
     },
     "fr": {
-      "description": "Le modèle V4 phare à poids ouverts de DeepSeek, avec 1,6 Bn de paramètres dont 49 Md actifs, contexte 1 M, deux modes de réflexion, JSON et outils."
+      "description": "Le modèle V4 Pro actuel de DeepSeek avec un contexte d’un million de jetons, des modes avec et sans raisonnement, une sortie JSON, des appels d’outils et la prise en charge de Responses API."
     },
     "id": {
-      "description": "Model V4 open-weight unggulan DeepSeek dengan 1,6T parameter total dan 49B aktif, konteks 1M, dua mode berpikir, keluaran JSON, dan pemanggilan alat."
+      "description": "Model V4 Pro terbaru DeepSeek dengan konteks 1 juta token, mode berpikir dan non-berpikir, keluaran JSON, pemanggilan alat, serta dukungan Responses API."
     },
     "ja": {
-      "description": "総1.6兆・アクティブ490億パラメータ、100万コンテキスト、2種類の思考モード、JSON出力、ツール呼び出しを備えたDeepSeekの旗艦オープンウェイトV4モデル。"
+      "description": "100万トークンのコンテキスト、思考・非思考モード、JSON出力、ツール呼び出し、Responses API対応を備えたDeepSeekの現行V4 Proモデル。"
     },
     "ko": {
-      "description": "총 1.6T 및 활성 49B 매개변수, 100만 컨텍스트, 이중 사고 모드, JSON 출력과 도구 호출을 지원하는 DeepSeek의 플래그십 오픈 웨이트 V4 모델입니다."
+      "description": "100만 토큰 컨텍스트, 사고 및 비사고 모드, JSON 출력, 도구 호출과 Responses API를 지원하는 DeepSeek의 최신 V4 Pro 모델입니다."
     },
     "pt": {
-      "description": "O modelo V4 principal e de pesos abertos da DeepSeek, com 1,6T parâmetros totais e 49B ativos, contexto de 1M, dois modos de pensamento, JSON e ferramentas."
+      "description": "O modelo V4 Pro atual da DeepSeek, com contexto de 1 milhão de tokens, modos com e sem raciocínio, saída JSON, chamadas de ferramentas e suporte à Responses API."
     },
     "ru": {
-      "description": "Флагманская открытая модель DeepSeek V4: 1,6 трлн параметров, 49 млрд активных, контекст 1 млн, два режима рассуждений, JSON и инструменты."
+      "description": "Текущая модель DeepSeek V4 Pro с контекстом 1 млн токенов, режимами с рассуждением и без него, выводом JSON, вызовами инструментов и поддержкой Responses API."
     },
     "tr": {
-      "description": "DeepSeek'in 1,6T toplam ve 49B aktif parametreli, 1M bağlamlı, çift düşünme modlu, JSON çıktılı ve araç çağrılı amiral açık ağırlıklı V4 modeli."
+      "description": "DeepSeek'in 1 milyon token bağlam, düşünme ve düşünmeme modları, JSON çıktısı, araç çağrıları ve Responses API desteği sunan güncel V4 Pro modeli."
     },
     "zh-Hans": {
-      "description": "DeepSeek 的旗舰开放权重 V4 模型，1.6 万亿总参数、490 亿激活参数，支持 100 万上下文、双思考模式、JSON 输出和工具调用。"
+      "description": "DeepSeek 当前的 V4 Pro 模型，提供 100 万 token 上下文、思考与非思考模式、JSON 输出、工具调用和 Responses API 支持。"
     },
     "zh-Hant": {
-      "description": "DeepSeek 的旗艦開放權重 V4 模型，1.6 兆總參數、490 億啟用參數，支援 100 萬上下文、雙思考模式、JSON 輸出和工具呼叫。"
+      "description": "DeepSeek 目前的 V4 Pro 模型，提供 100 萬 token 上下文、思考與非思考模式、JSON 輸出、工具呼叫和 Responses API 支援。"
     }
   },
   "verified": true,
   "sources": [
     {
-      "url": "https://api-docs.deepseek.com/news/news260424/",
-      "title": "DeepSeek V4 Preview release",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "title": "DeepSeek V4 Pro 0813 models and pricing",
       "fields": [
         "name",
         "description",
-        "size",
-        "activeParameters",
-        "releaseDate",
-        "lifecycle",
-        "contextWindow",
-        "capabilities"
-      ]
-    },
-    {
-      "url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "title": "DeepSeek models and pricing",
-      "fields": [
         "docsUrl",
         "contextWindow",
         "maxOutput",
         "tokenPricing",
+        "lifecycle",
         "inputModalities",
         "outputModalities",
         "capabilities"
       ]
     },
     {
-      "url": "https://api-docs.deepseek.com/updates/",
-      "title": "DeepSeek V4 Flash July 31 API update",
-      "fields": ["name", "lifecycle"]
+      "url": "https://artificialanalysis.ai/models/deepseek-v4-pro",
+      "title": "Artificial Analysis DeepSeek V4 Pro 0813 model page",
+      "fields": ["releaseDate", "platformUrls.artificialAnalysis"]
     }
   ],
-  "lastVerifiedAt": "2026-07-31",
+  "lastVerifiedAt": "2026-08-13",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.deepseek.com",
-  "docsUrl": "https://api-docs.deepseek.com/quick_start/pricing",
+  "docsUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
   "vendor": "DeepSeek",
-  "size": "1.6T",
-  "activeParameters": "49B",
+  "size": null,
+  "activeParameters": null,
   "contextWindow": 1000000,
   "maxOutput": 384000,
   "tokenPricing": {
@@ -108,7 +97,7 @@
       }
     ]
   },
-  "releaseDate": "2026-04-24",
+  "releaseDate": "2026-08-13",
   "lifecycle": "latest",
   "knowledgeCutoff": null,
   "inputModalities": ["text"],
@@ -124,8 +113,8 @@
     "liveCodeBench": null
   },
   "platformUrls": {
-    "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
-    "artificialAnalysis": null,
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/deepseek-v4-pro",
     "openrouter": null
   }
 }

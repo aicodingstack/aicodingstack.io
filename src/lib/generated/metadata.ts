@@ -3044,6 +3044,76 @@ export const collectionsMetadata: Record<string, CollectionSection> = {
             description:
               'Open-format markdown file providing coding agents with project-specific instructions and context',
           },
+          {
+            translations: {
+              en: {
+                name: 'Agent Plugins',
+                description:
+                  'Open, vendor-neutral v1.0.0 working-draft standard for packaging Agent Skills and MCP servers as portable plugins with a shared manifest and directory layout',
+              },
+              de: {
+                name: 'Agent Plugins',
+                description:
+                  'Offener, herstellerneutraler Arbeitsentwurf v1.0.0 zum Verpacken von Agent Skills und MCP-Servern als portable Plugins mit gemeinsamem Manifest und Verzeichnislayout',
+              },
+              es: {
+                name: 'Agent Plugins',
+                description:
+                  'Borrador abierto y neutral respecto a proveedores v1.0.0 para empaquetar Agent Skills y servidores MCP como plugins portátiles con un manifiesto y una estructura de directorios comunes',
+              },
+              fr: {
+                name: 'Agent Plugins',
+                description:
+                  'Projet de norme ouvert et neutre vis-à-vis des fournisseurs v1.0.0 pour regrouper Agent Skills et serveurs MCP dans des plugins portables avec un manifeste et une arborescence communs',
+              },
+              id: {
+                name: 'Agent Plugins',
+                description:
+                  'Draf kerja v1.0.0 yang terbuka dan netral vendor untuk mengemas Agent Skills dan server MCP sebagai plugin portabel dengan manifes dan tata letak direktori bersama',
+              },
+              ja: {
+                name: 'Agent Plugins',
+                description:
+                  'Agent SkillsとMCPサーバーを共通のマニフェストとディレクトリ構成を持つポータブルなプラグインとしてパッケージ化する、オープンでベンダー中立なv1.0.0作業草案',
+              },
+              ko: {
+                name: 'Agent Plugins',
+                description:
+                  'Agent Skills와 MCP 서버를 공통 매니페스트 및 디렉터리 구조를 갖춘 이식 가능한 플러그인으로 패키징하기 위한 개방형 벤더 중립 v1.0.0 작업 초안',
+              },
+              pt: {
+                name: 'Agent Plugins',
+                description:
+                  'Rascunho aberto e neutro em relação a fornecedores v1.0.0 para empacotar Agent Skills e servidores MCP como plugins portáteis com manifesto e estrutura de diretórios compartilhados',
+              },
+              ru: {
+                name: 'Agent Plugins',
+                description:
+                  'Открытый независимый от поставщиков рабочий проект v1.0.0 для упаковки Agent Skills и MCP-серверов в переносимые плагины с общим манифестом и структурой каталогов',
+              },
+              tr: {
+                name: 'Agent Plugins',
+                description:
+                  'Agent Skills ve MCP sunucularını ortak bir bildirim ve dizin düzenine sahip taşınabilir eklentiler olarak paketlemek için açık, sağlayıcıdan bağımsız v1.0.0 çalışma taslağı',
+              },
+              'zh-Hans': {
+                name: 'Agent Plugins',
+                description:
+                  '开放、厂商中立的 v1.0.0 工作草案，通过统一清单和目录结构将 Agent Skills 与 MCP 服务器打包为可移植插件',
+              },
+              'zh-Hant': {
+                name: 'Agent Plugins',
+                description:
+                  '開放、廠商中立的 v1.0.0 工作草案，透過統一清單與目錄結構將 Agent Skills 和 MCP 伺服器封裝為可攜式外掛程式',
+              },
+            },
+            id: 'agent-plugins',
+            name: 'Agent Plugins',
+            url: 'https://agent-plugins.org',
+            description:
+              'Open, vendor-neutral v1.0.0 working-draft standard for packaging Agent Skills and MCP servers as portable plugins with a shared manifest and directory layout',
+            lastVerifiedAt: '2026-08-07',
+          },
         ],
       },
       {
@@ -3566,10 +3636,10 @@ export const faqMetadata: Record<string, FaqItem[]> = {
 
 export const stackCounts: Record<string, number> = {
   ides: 9,
-  clis: 27,
+  clis: 28,
   desktops: 12,
   extensions: 18,
-  models: 123,
+  models: 130,
   'model-providers': 17,
   vendors: 47,
 }

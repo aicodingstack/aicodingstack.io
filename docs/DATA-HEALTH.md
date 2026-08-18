@@ -1,33 +1,33 @@
 # Data Health Report
 
-Snapshot date: 2026-08-03. Regenerate with `pnpm data-health:report`.
+Snapshot date: 2026-08-18. Regenerate with `pnpm data-health:report`.
 
 ## Scorecard
 
 | Metric | Value |
 | --- | ---: |
-| Manifest records | 253 |
-| Records with structured sources | 253 |
-| Verified records | 253 |
-| Verified with complete provenance | 253 |
-| Stale verified records | 0 |
+| Manifest records | 261 |
+| Records with structured sources | 261 |
+| Verified records | 261 |
+| Verified with complete provenance | 261 |
+| Stale verified records | 2 |
 | Non-English values identical to English | 300 |
 | Dangling product relationships | 0 |
-| Model benchmark coverage | 9.5% |
-| Products with pricing | 66/66 |
+| Model benchmark coverage | 9% |
+| Products with pricing | 66/67 |
 | Community URLs with provenance | 331/331 |
 | Duplicated vendor community URLs | 0 |
-| Errors / warnings / info | 0 / 0 / 0 |
+| Errors / warnings / info | 0 / 2 / 0 |
 
 ## Category Breakdown
 
 | Category | Total | Verified | Provenance complete | Stale |
 | --- | ---: | ---: | ---: | ---: |
 | ides | 9 | 9 | 9 | 0 |
-| clis | 27 | 27 | 27 | 0 |
+| clis | 28 | 28 | 28 | 0 |
 | desktops | 12 | 12 | 12 | 0 |
 | extensions | 18 | 18 | 18 | 0 |
-| models | 123 | 123 | 123 | 0 |
+| models | 130 | 130 | 130 | 2 |
 | providers | 17 | 17 | 17 | 0 |
 | vendors | 47 | 47 | 47 | 0 |
 
@@ -53,7 +53,7 @@ Exact English matches are a triage signal; product names and technical terms can
 
 | Issue | Count |
 | --- | ---: |
-| None | 0 |
+| stale-verification | 2 |
 
 ## Priority Queue
 
@@ -62,7 +62,8 @@ visible in the scorecards and `data/data-health.json`.
 
 | Severity | Issue | Record | Detail |
 | --- | --- | --- | --- |
-| — | — | — | No priority issues. |
+| warning | stale-verification | models/claude-haiku-4-5 | Last reviewed 31 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-2 | Last reviewed 31 days ago; threshold is 30 days. |
 
 ## Freshness Thresholds
 

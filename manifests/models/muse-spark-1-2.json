@@ -1,0 +1,107 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "muse-spark-1-2",
+  "name": "Muse Spark 1.2",
+  "description": "Meta's coding-focused reasoning model for code generation, complex debugging, codebase understanding, long-horizon tasks, and end-to-end developer workflows.",
+  "translations": {
+    "de": {
+      "description": "Metas auf Programmierung fokussiertes Reasoning-Modell für Codegenerierung, komplexes Debugging, Codeverständnis, langfristige Aufgaben und durchgängige Entwicklerabläufe."
+    },
+    "es": {
+      "description": "El modelo de razonamiento de Meta centrado en programación para generar código, depurar problemas complejos, comprender repositorios y completar flujos de desarrollo prolongados."
+    },
+    "fr": {
+      "description": "Le modèle de raisonnement de Meta axé sur le code pour la génération, le débogage complexe, la compréhension des dépôts et les workflows de développement de longue durée."
+    },
+    "id": {
+      "description": "Model penalaran Meta yang berfokus pada coding untuk pembuatan kode, debugging kompleks, pemahaman basis kode, tugas jangka panjang, dan alur pengembangan menyeluruh."
+    },
+    "ja": {
+      "description": "コード生成、複雑なデバッグ、コードベース理解、長期タスク、エンドツーエンドの開発ワークフローに特化したMetaの推論モデル。"
+    },
+    "ko": {
+      "description": "코드 생성, 복잡한 디버깅, 코드베이스 이해, 장기 작업 및 엔드투엔드 개발 워크플로에 초점을 맞춘 Meta의 추론 모델입니다."
+    },
+    "pt": {
+      "description": "Modelo de raciocínio da Meta focado em programação para gerar código, depurar problemas complexos, compreender bases de código e concluir fluxos de desenvolvimento prolongados."
+    },
+    "ru": {
+      "description": "Модель рассуждений Meta для генерации кода, сложной отладки, понимания кодовых баз, длительных задач и сквозных процессов разработки."
+    },
+    "tr": {
+      "description": "Meta'nın kod üretimi, karmaşık hata ayıklama, kod tabanı anlama, uzun süreli görevler ve uçtan uca geliştirme iş akışlarına odaklanan akıl yürütme modeli."
+    },
+    "zh-Hans": {
+      "description": "Meta 面向代码生成、复杂调试、代码库理解、长周期任务和端到端开发工作流的编码推理模型。"
+    },
+    "zh-Hant": {
+      "description": "Meta 面向程式碼生成、複雜除錯、程式碼庫理解、長週期任務和端對端開發工作流程的程式設計推理模型。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+      "title": "Introducing Muse Code and Muse Spark 1.2",
+      "fields": ["name", "description", "releaseDate", "lifecycle", "websiteUrl"]
+    },
+    {
+      "url": "https://developer.meta.com/ai/",
+      "title": "Meta Model API",
+      "fields": ["docsUrl"]
+    },
+    {
+      "url": "https://models.dev/api.json",
+      "title": "Models.dev Meta model record",
+      "fields": [
+        "contextWindow",
+        "referenceTokenPricing",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-11",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://ai.meta.com",
+  "docsUrl": "https://developer.meta.com/ai/",
+  "vendor": "Meta",
+  "size": null,
+  "activeParameters": null,
+  "contextWindow": 1048576,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "unavailable",
+    "reason": "official-price-not-published",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "referenceTokenPricing": {
+    "currency": "USD",
+    "basis": "first-party-api",
+    "rates": { "input": 1.25, "output": 4.25, "cacheRead": 0.15, "cacheWrite": null },
+    "source": {
+      "name": "Models.dev — Meta",
+      "url": "https://models.dev/api.json",
+      "observedAt": "2026-08-11"
+    }
+  },
+  "releaseDate": "2026-08-05",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "pdf", "audio", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": { "huggingface": null, "artificialAnalysis": null, "openrouter": null }
+}

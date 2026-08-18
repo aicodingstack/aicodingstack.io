@@ -924,6 +924,50 @@
         ]
       }
     },
+    "muse-code": {
+      "answer": "Muse Code is Meta's terminal coding agent, powered by Muse Spark 1.2, for completing complex software engineering tasks across large repositories.",
+      "introduction": "Muse Code combines a main agent with persistent background agents. It plans changes, edits code, validates results, and records model calls, tool runs, approvals, and edits in a local append-only event log so sessions can resume after interruption.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "Persistent background agents",
+            "description": "Specialized background agents remain active throughout a session and report useful findings or next steps to the main agent."
+          },
+          {
+            "title": "Restart-safe execution",
+            "description": "A local append-only event log records every model call, tool run, approval, and edit, allowing the runtime to replay and resume work after a crash."
+          },
+          {
+            "title": "Bundled planning skills",
+            "description": "Built-in /plan, /grill, and /goal skills support approval-gated planning, plan review, and persistent work toward a specified objective."
+          }
+        ]
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "What is Muse Code?",
+            "answer": "Muse Code is Meta's terminal coding agent for planning, implementing, and validating software changes across large repositories."
+          },
+          {
+            "question": "Which model powers Muse Code?",
+            "answer": "Muse Code is powered by Muse Spark 1.2, a coding-focused update to Meta's Muse Spark model family."
+          },
+          {
+            "question": "How do I install and launch Muse Code?",
+            "answer": "Run Meta's official installation command on macOS or Linux, then launch the agent with muse from a terminal."
+          },
+          {
+            "question": "Is Muse Code open source?",
+            "answer": "No public source repository or open-source license is provided for Muse Code. The distributed CLI is proprietary software."
+          },
+          {
+            "question": "How does Muse Code resume interrupted work?",
+            "answer": "Muse Code keeps a local append-only event log of model calls, tool runs, approvals, and edits, allowing the runtime to replay and resume the session after a crash."
+          }
+        ]
+      }
+    },
     "omp": {
       "answer": "omp is Oh My Pi's open-source terminal coding tool for hash-anchored edits, LSP and debugger context, subagents, persistent runtimes, and broad model-provider support.",
       "introduction": "omp targets development work that benefits from precise edit locations and richer execution context. Hash anchors identify where a change belongs, while language-server data, debugging tools, delegated subagent work, and reusable runtimes support longer or more technical tasks.",
@@ -2110,6 +2154,50 @@
           {
             "question": "Wie sind Lizenz und Preise von Kode geregelt?",
             "answer": "Kode wird als Open-Source-Software angeboten. Lizenzbedingungen, verfügbare Dienste und mögliche Kosten sind den offiziellen Angaben zu entnehmen."
+          }
+        ]
+      }
+    },
+    "muse-code": {
+      "answer": "Muse Code ist Metas Terminal-Coding-Agent auf Basis von Muse Spark 1.2 für komplexe Softwareentwicklungsaufgaben in großen Codebeständen.",
+      "introduction": "Muse Code verbindet einen Hauptagenten mit persistenten Hintergrund-Agenten. Es plant Änderungen, bearbeitet Code, validiert Ergebnisse und protokolliert Modellaufrufe, Werkzeugläufe, Freigaben und Änderungen in einem lokalen, nur ergänzten Ereignisprotokoll, damit Sitzungen nach Unterbrechungen fortgesetzt werden können.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "Persistente Hintergrund-Agenten",
+            "description": "Spezialisierte Hintergrund-Agenten bleiben während der gesamten Sitzung aktiv und melden nützliche Erkenntnisse oder nächste Schritte an den Hauptagenten."
+          },
+          {
+            "title": "Ausfallsichere Fortsetzung",
+            "description": "Ein lokales, nur ergänztes Ereignisprotokoll erfasst Modellaufrufe, Werkzeugläufe, Freigaben und Änderungen, sodass die Laufzeit Arbeit nach einem Absturz wiedergeben und fortsetzen kann."
+          },
+          {
+            "title": "Integrierte Planungs-Skills",
+            "description": "Die integrierten Skills /plan, /grill und /goal unterstützen freigabepflichtige Planung, Planprüfung und ausdauernde Arbeit an einem festgelegten Ziel."
+          }
+        ]
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "Was ist Muse Code?",
+            "answer": "Muse Code ist Metas Terminal-Coding-Agent zum Planen, Implementieren und Validieren von Softwareänderungen in großen Codebeständen."
+          },
+          {
+            "question": "Welches Modell treibt Muse Code an?",
+            "answer": "Muse Code wird von Muse Spark 1.2 angetrieben, einem auf Coding ausgerichteten Update der Muse-Spark-Modellfamilie von Meta."
+          },
+          {
+            "question": "Wie installiere und starte ich Muse Code?",
+            "answer": "Führe Metas offiziellen Installationsbefehl unter macOS oder Linux aus und starte den Agenten anschließend mit muse im Terminal."
+          },
+          {
+            "question": "Ist Muse Code Open Source?",
+            "answer": "Für Muse Code werden kein öffentliches Quellcode-Repository und keine Open-Source-Lizenz bereitgestellt. Die verteilte CLI ist proprietäre Software."
+          },
+          {
+            "question": "Wie setzt Muse Code unterbrochene Arbeit fort?",
+            "answer": "Muse Code führt ein lokales, nur ergänztes Ereignisprotokoll über Modellaufrufe, Werkzeugläufe, Freigaben und Änderungen, damit die Laufzeit eine Sitzung nach einem Absturz wiedergeben und fortsetzen kann."
           }
         ]
       }
@@ -3304,6 +3392,50 @@
         ]
       }
     },
+    "muse-code": {
+      "answer": "Muse Code es el agente de programación para terminal de Meta, impulsado por Muse Spark 1.2, para completar tareas complejas de ingeniería de software en repositorios grandes.",
+      "introduction": "Muse Code combina un agente principal con agentes persistentes en segundo plano. Planifica cambios, edita código, valida resultados y registra llamadas al modelo, ejecuciones de herramientas, aprobaciones y ediciones en un historial local de solo anexado para reanudar sesiones tras una interrupción.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "Agentes persistentes en segundo plano",
+            "description": "Los agentes especializados permanecen activos durante toda la sesión y comunican al agente principal hallazgos útiles o los siguientes pasos."
+          },
+          {
+            "title": "Ejecución recuperable",
+            "description": "Un historial local de solo anexado registra cada llamada al modelo, herramienta, aprobación y edición para reproducir y reanudar el trabajo después de un fallo."
+          },
+          {
+            "title": "Habilidades de planificación incluidas",
+            "description": "Las habilidades /plan, /grill y /goal permiten crear planes sujetos a aprobación, someterlos a revisión y avanzar de forma persistente hacia un objetivo."
+          }
+        ]
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "¿Qué es Muse Code?",
+            "answer": "Muse Code es el agente de programación para terminal de Meta para planificar, implementar y validar cambios de software en repositorios grandes."
+          },
+          {
+            "question": "¿Qué modelo impulsa Muse Code?",
+            "answer": "Muse Code funciona con Muse Spark 1.2, una actualización centrada en programación de la familia de modelos Muse Spark de Meta."
+          },
+          {
+            "question": "¿Cómo instalo e inicio Muse Code?",
+            "answer": "Ejecuta el comando de instalación oficial de Meta en macOS o Linux y luego inicia el agente con muse desde un terminal."
+          },
+          {
+            "question": "¿Muse Code es de código abierto?",
+            "answer": "Meta no proporciona un repositorio público de código fuente ni una licencia de código abierto para Muse Code. La CLI distribuida es software propietario."
+          },
+          {
+            "question": "¿Cómo reanuda Muse Code el trabajo interrumpido?",
+            "answer": "Muse Code mantiene un historial local de solo anexado con llamadas al modelo, herramientas, aprobaciones y ediciones para reproducir y reanudar la sesión después de un fallo."
+          }
+        ]
+      }
+    },
     "omp": {
       "answer": "omp es la herramienta de programación para terminal de código abierto de Oh My Pi, con ediciones ancladas por hash, contexto LSP y del depurador, subagentes, entornos persistentes y numerosos proveedores de modelos.",
       "introduction": "omp vincula cada cambio con la ubicación prevista mediante un ancla hash, lo que reduce los errores de una coincidencia de texto imprecisa. Puede combinar LSP, depurador y subagentes en una tarea, y conservar los entornos de ejecución para trabajos posteriores. Tras la instalación, omp funciona en macOS, Windows o Linux.",
@@ -4490,6 +4622,50 @@
           {
             "question": "Quels sont la licence et le mode de tarification de Kode ?",
             "answer": "Kode est distribué en open source. Consultez les informations officielles pour la licence, les services disponibles et les éventuels coûts associés."
+          }
+        ]
+      }
+    },
+    "muse-code": {
+      "answer": "Muse Code est l'agent de codage en terminal de Meta, propulsé par Muse Spark 1.2, pour accomplir des tâches complexes d'ingénierie logicielle dans de grands dépôts.",
+      "introduction": "Muse Code associe un agent principal à des agents persistants en arrière-plan. Il planifie les changements, modifie le code, valide les résultats et consigne les appels au modèle, les outils, les approbations et les modifications dans un journal local en ajout seul afin de reprendre une session après une interruption.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "Agents persistants en arrière-plan",
+            "description": "Des agents spécialisés restent actifs pendant toute la session et transmettent à l'agent principal les conclusions utiles ou les prochaines étapes."
+          },
+          {
+            "title": "Exécution résistante aux interruptions",
+            "description": "Un journal local en ajout seul enregistre chaque appel au modèle, outil, approbation et modification pour permettre de rejouer et reprendre le travail après un arrêt."
+          },
+          {
+            "title": "Compétences de planification intégrées",
+            "description": "Les compétences /plan, /grill et /goal prennent en charge la planification soumise à approbation, la vérification des plans et le travail persistant vers un objectif défini."
+          }
+        ]
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "Qu'est-ce que Muse Code ?",
+            "answer": "Muse Code est l'agent de codage en terminal de Meta pour planifier, implémenter et valider des changements logiciels dans de grands dépôts."
+          },
+          {
+            "question": "Quel modèle propulse Muse Code ?",
+            "answer": "Muse Code repose sur Muse Spark 1.2, une mise à jour orientée codage de la famille de modèles Muse Spark de Meta."
+          },
+          {
+            "question": "Comment installer et lancer Muse Code ?",
+            "answer": "Exécutez la commande d'installation officielle de Meta sur macOS ou Linux, puis lancez l'agent avec muse dans un terminal."
+          },
+          {
+            "question": "Muse Code est-il open source ?",
+            "answer": "Aucun dépôt public de code source ni aucune licence open source ne sont fournis pour Muse Code. La CLI distribuée est un logiciel propriétaire."
+          },
+          {
+            "question": "Comment Muse Code reprend-il un travail interrompu ?",
+            "answer": "Muse Code conserve un journal local en ajout seul des appels au modèle, des outils, des approbations et des modifications afin de rejouer et reprendre la session après un arrêt."
           }
         ]
       }
@@ -5684,6 +5860,50 @@
         ]
       }
     },
+    "muse-code": {
+      "answer": "Muse Code adalah agen coding terminal Meta yang didukung Muse Spark 1.2 untuk menyelesaikan tugas rekayasa perangkat lunak kompleks pada repositori besar.",
+      "introduction": "Muse Code menggabungkan agen utama dengan agen latar belakang persisten. Alat ini merencanakan perubahan, mengedit kode, memvalidasi hasil, serta mencatat panggilan model, alat, persetujuan, dan edit dalam log peristiwa lokal yang hanya ditambahkan agar sesi dapat dilanjutkan setelah terhenti.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "Agen latar belakang persisten",
+            "description": "Agen khusus tetap aktif sepanjang sesi dan menyampaikan temuan yang berguna atau langkah berikutnya kepada agen utama."
+          },
+          {
+            "title": "Eksekusi yang dapat dipulihkan",
+            "description": "Log peristiwa lokal yang hanya ditambahkan mencatat setiap panggilan model, alat, persetujuan, dan edit sehingga pekerjaan dapat diputar ulang dan dilanjutkan setelah kegagalan."
+          },
+          {
+            "title": "Skill perencanaan bawaan",
+            "description": "Skill /plan, /grill, dan /goal mendukung perencanaan dengan persetujuan, pengujian rencana, dan pekerjaan berkelanjutan menuju tujuan tertentu."
+          }
+        ]
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "Apa itu Muse Code?",
+            "answer": "Muse Code adalah agen coding terminal Meta untuk merencanakan, menerapkan, dan memvalidasi perubahan perangkat lunak pada repositori besar."
+          },
+          {
+            "question": "Model apa yang mendukung Muse Code?",
+            "answer": "Muse Code didukung Muse Spark 1.2, pembaruan berfokus coding untuk keluarga model Muse Spark dari Meta."
+          },
+          {
+            "question": "Bagaimana cara memasang dan menjalankan Muse Code?",
+            "answer": "Jalankan perintah instalasi resmi Meta di macOS atau Linux, lalu mulai agen dengan muse dari terminal."
+          },
+          {
+            "question": "Apakah Muse Code bersifat sumber terbuka?",
+            "answer": "Tidak ada repositori sumber publik atau lisensi sumber terbuka yang disediakan untuk Muse Code. CLI yang didistribusikan adalah perangkat lunak proprietari."
+          },
+          {
+            "question": "Bagaimana Muse Code melanjutkan pekerjaan yang terhenti?",
+            "answer": "Muse Code menyimpan log peristiwa lokal yang hanya ditambahkan untuk panggilan model, alat, persetujuan, dan edit agar runtime dapat memutar ulang serta melanjutkan sesi setelah kegagalan."
+          }
+        ]
+      }
+    },
     "omp": {
       "answer": "omp adalah alat coding terminal sumber terbuka dari Oh My Pi dengan edit berjangkar hash, konteks LSP dan debugger, subagen, lingkungan persisten, serta dukungan banyak penyedia model.",
       "introduction": "omp mengikat setiap perubahan ke lokasi kode yang dimaksud dengan jangkar hash sehingga mengurangi kesalahan akibat pencocokan teks yang longgar. LSP, debugger, dan subagen dapat dipakai dalam satu tugas, sementara lingkungan eksekusi tetap tersedia untuk pekerjaan berikutnya. Setelah dipasang, omp berjalan di macOS, Windows, atau Linux.",
@@ -6870,6 +7090,50 @@
           {
             "question": "Kode のライセンスと料金体系はどうなっていますか？",
             "answer": "Kode はオープンソースで提供されています。ライセンス条件、利用可能なサービス、関連費用は公式情報を確認してください。"
+          }
+        ]
+      }
+    },
+    "muse-code": {
+      "answer": "Muse CodeはMuse Spark 1.2を搭載したMetaのターミナル向けコーディングエージェントで、大規模リポジトリの複雑なソフトウェア開発タスクを実行します。",
+      "introduction": "Muse Codeはメインエージェントと常駐バックグラウンドエージェントを組み合わせます。変更の計画、コード編集、結果検証を行い、モデル呼び出し、ツール実行、承認、編集をローカルの追記専用イベントログに記録するため、中断後もセッションを再開できます。",
+      "capabilities": {
+        "items": [
+          {
+            "title": "常駐バックグラウンドエージェント",
+            "description": "専門化されたバックグラウンドエージェントがセッション中ずっと稼働し、有用な調査結果や次の手順をメインエージェントへ報告します。"
+          },
+          {
+            "title": "再開可能な実行",
+            "description": "ローカルの追記専用イベントログにモデル呼び出し、ツール実行、承認、編集を記録し、障害後に処理を再現して再開できます。"
+          },
+          {
+            "title": "組み込みの計画スキル",
+            "description": "/plan、/grill、/goalスキルが、承認付きの計画作成、計画の検証、指定目標に向けた継続的な作業を支援します。"
+          }
+        ]
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "Muse Codeとは何ですか？",
+            "answer": "Muse Codeは、大規模リポジトリのソフトウェア変更を計画、実装、検証するMetaのターミナル向けコーディングエージェントです。"
+          },
+          {
+            "question": "Muse Codeを動かすモデルは何ですか？",
+            "answer": "Muse Codeは、MetaのMuse Sparkモデルファミリーをコーディング向けに更新したMuse Spark 1.2を搭載しています。"
+          },
+          {
+            "question": "Muse Codeをインストールして起動する方法は？",
+            "answer": "macOSまたはLinuxでMeta公式のインストールコマンドを実行し、ターミナルからmuseでエージェントを起動します。"
+          },
+          {
+            "question": "Muse Codeはオープンソースですか？",
+            "answer": "Muse Codeには公開ソースリポジトリやオープンソースライセンスが提供されていません。配布されるCLIはプロプライエタリソフトウェアです。"
+          },
+          {
+            "question": "Muse Codeは中断した作業をどのように再開しますか？",
+            "answer": "Muse Codeはモデル呼び出し、ツール実行、承認、編集をローカルの追記専用イベントログに保存し、障害後にセッションを再現して再開できるようにします。"
           }
         ]
       }
@@ -8064,6 +8328,50 @@
         ]
       }
     },
+    "muse-code": {
+      "answer": "Muse Code는 Muse Spark 1.2 기반의 Meta 터미널 코딩 에이전트로, 대규모 저장소에서 복잡한 소프트웨어 엔지니어링 작업을 수행합니다.",
+      "introduction": "Muse Code는 주 에이전트와 지속형 백그라운드 에이전트를 결합합니다. 변경을 계획하고 코드를 편집하며 결과를 검증하고, 모델 호출·도구 실행·승인·편집을 로컬 추가 전용 이벤트 로그에 기록해 중단 후에도 세션을 재개할 수 있습니다.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "지속형 백그라운드 에이전트",
+            "description": "전문화된 백그라운드 에이전트가 세션 내내 활성 상태를 유지하며 유용한 조사 결과나 다음 단계를 주 에이전트에 전달합니다."
+          },
+          {
+            "title": "재개 가능한 실행",
+            "description": "로컬 추가 전용 이벤트 로그가 모든 모델 호출, 도구 실행, 승인, 편집을 기록하여 장애 후 작업을 재현하고 재개할 수 있습니다."
+          },
+          {
+            "title": "내장 계획 스킬",
+            "description": "/plan, /grill, /goal 스킬이 승인 기반 계획, 계획 검토, 지정된 목표를 향한 지속적인 작업을 지원합니다."
+          }
+        ]
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "Muse Code란 무엇인가요?",
+            "answer": "Muse Code는 대규모 저장소의 소프트웨어 변경을 계획하고 구현하며 검증하는 Meta의 터미널 코딩 에이전트입니다."
+          },
+          {
+            "question": "Muse Code는 어떤 모델을 사용하나요?",
+            "answer": "Muse Code는 Meta의 Muse Spark 모델 계열을 코딩 중심으로 업데이트한 Muse Spark 1.2를 사용합니다."
+          },
+          {
+            "question": "Muse Code를 어떻게 설치하고 실행하나요?",
+            "answer": "macOS 또는 Linux에서 Meta의 공식 설치 명령을 실행한 뒤 터미널에서 muse로 에이전트를 시작합니다."
+          },
+          {
+            "question": "Muse Code는 오픈 소스인가요?",
+            "answer": "Muse Code에는 공개 소스 저장소나 오픈 소스 라이선스가 제공되지 않습니다. 배포되는 CLI는 독점 소프트웨어입니다."
+          },
+          {
+            "question": "Muse Code는 중단된 작업을 어떻게 재개하나요?",
+            "answer": "Muse Code는 모델 호출, 도구 실행, 승인, 편집을 로컬 추가 전용 이벤트 로그에 저장하여 장애 후 런타임이 세션을 재현하고 재개할 수 있게 합니다."
+          }
+        ]
+      }
+    },
     "omp": {
       "answer": "omp는 해시 기반 편집, LSP와 디버거 맥락, 서브에이전트, 지속 실행 환경, 다양한 모델 제공자 지원을 갖춘 Oh My Pi의 오픈 소스 터미널 코딩 도구입니다.",
       "introduction": "omp는 해시 앵커로 변경 위치를 지정해 느슨한 문자열 일치 때문에 잘못된 곳이 수정될 위험을 줄입니다. 터미널 작업에 LSP, 디버거, 서브에이전트를 함께 사용하고 실행 환경을 다음 작업에서도 유지할 수 있습니다. 설치 후 macOS, Windows, Linux에서 omp를 실행합니다.",
@@ -9250,6 +9558,50 @@
           {
             "question": "Como funcionam a licença e os preços de Kode?",
             "answer": "Kode é distribuído como software de código aberto. Consulte as informações oficiais para conhecer a licença, os serviços disponíveis e eventuais custos."
+          }
+        ]
+      }
+    },
+    "muse-code": {
+      "answer": "Muse Code é o agente de programação para terminal da Meta, com Muse Spark 1.2, para concluir tarefas complexas de engenharia de software em grandes repositórios.",
+      "introduction": "Muse Code combina um agente principal com agentes persistentes em segundo plano. Ele planeja alterações, edita código, valida resultados e registra chamadas ao modelo, ferramentas, aprovações e edições em um log local somente de acréscimo para retomar sessões após uma interrupção.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "Agentes persistentes em segundo plano",
+            "description": "Agentes especializados permanecem ativos durante toda a sessão e comunicam descobertas úteis ou próximos passos ao agente principal."
+          },
+          {
+            "title": "Execução recuperável",
+            "description": "Um log local somente de acréscimo registra cada chamada ao modelo, ferramenta, aprovação e edição, permitindo reproduzir e retomar o trabalho após uma falha."
+          },
+          {
+            "title": "Habilidades de planejamento integradas",
+            "description": "As habilidades /plan, /grill e /goal oferecem planejamento sujeito a aprovação, revisão de planos e trabalho persistente em direção a um objetivo definido."
+          }
+        ]
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "O que é Muse Code?",
+            "answer": "Muse Code é o agente de programação para terminal da Meta para planejar, implementar e validar alterações de software em grandes repositórios."
+          },
+          {
+            "question": "Qual modelo alimenta o Muse Code?",
+            "answer": "Muse Code usa o Muse Spark 1.2, uma atualização voltada à programação da família de modelos Muse Spark da Meta."
+          },
+          {
+            "question": "Como instalar e iniciar o Muse Code?",
+            "answer": "Execute o comando oficial de instalação da Meta no macOS ou Linux e depois inicie o agente com muse em um terminal."
+          },
+          {
+            "question": "Muse Code é open source?",
+            "answer": "Não há repositório público de código-fonte nem licença open source para o Muse Code. A CLI distribuída é um software proprietário."
+          },
+          {
+            "question": "Como o Muse Code retoma um trabalho interrompido?",
+            "answer": "Muse Code mantém um log local somente de acréscimo de chamadas ao modelo, ferramentas, aprovações e edições para reproduzir e retomar a sessão após uma falha."
           }
         ]
       }
@@ -10444,6 +10796,50 @@
         ]
       }
     },
+    "muse-code": {
+      "answer": "Muse Code — терминальный агент программирования Meta на базе Muse Spark 1.2 для выполнения сложных задач разработки в крупных репозиториях.",
+      "introduction": "Muse Code объединяет основного агента с постоянными фоновыми агентами. Он планирует изменения, редактирует код, проверяет результаты и записывает вызовы модели, запуски инструментов, согласования и правки в локальный журнал только для добавления, чтобы продолжать сеансы после прерывания.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "Постоянные фоновые агенты",
+            "description": "Специализированные фоновые агенты работают на протяжении всего сеанса и сообщают основному агенту полезные результаты или следующие шаги."
+          },
+          {
+            "title": "Возобновляемое выполнение",
+            "description": "Локальный журнал только для добавления фиксирует каждый вызов модели, запуск инструмента, согласование и правку, позволяя воспроизвести и продолжить работу после сбоя."
+          },
+          {
+            "title": "Встроенные навыки планирования",
+            "description": "Навыки /plan, /grill и /goal поддерживают планирование с согласованием, проверку плана и длительную работу над заданной целью."
+          }
+        ]
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "Что такое Muse Code?",
+            "answer": "Muse Code — терминальный агент программирования Meta для планирования, реализации и проверки изменений в крупных репозиториях."
+          },
+          {
+            "question": "Какая модель используется в Muse Code?",
+            "answer": "Muse Code работает на Muse Spark 1.2 — ориентированном на программирование обновлении семейства моделей Muse Spark от Meta."
+          },
+          {
+            "question": "Как установить и запустить Muse Code?",
+            "answer": "Выполните официальную команду установки Meta в macOS или Linux, затем запустите агента командой muse в терминале."
+          },
+          {
+            "question": "Muse Code имеет открытый исходный код?",
+            "answer": "Для Muse Code не опубликованы репозиторий исходного кода и лицензия с открытым исходным кодом. Распространяемая CLI является проприетарным ПО."
+          },
+          {
+            "question": "Как Muse Code продолжает прерванную работу?",
+            "answer": "Muse Code хранит локальный журнал только для добавления с вызовами модели, инструментами, согласованиями и правками, позволяя среде воспроизвести и продолжить сеанс после сбоя."
+          }
+        ]
+      }
+    },
     "omp": {
       "answer": "omp — открытый терминальный инструмент Oh My Pi с привязанными к хешам изменениями, контекстом LSP и отладчика, субагентами, сохраняемыми средами выполнения и поддержкой многих поставщиков моделей.",
       "introduction": "omp с помощью хеш-якоря связывает изменение с нужным местом кода и уменьшает риск ошибки из-за неточного текстового совпадения. В задаче можно использовать LSP, отладчик и субагентов, а среда выполнения сохраняется для последующей работы. После установки omp работает в macOS, Windows или Linux.",
@@ -11630,6 +12026,50 @@
           {
             "question": "Kode lisansı ve fiyatlandırması nasıl işler?",
             "answer": "Kode açık kaynak yazılım olarak sunulur. Lisans koşulları, kullanılabilen hizmetler ve olası maliyetler için resmi bilgileri inceleyin."
+          }
+        ]
+      }
+    },
+    "muse-code": {
+      "answer": "Muse Code, büyük depolarda karmaşık yazılım mühendisliği görevlerini tamamlamak için Muse Spark 1.2 destekli Meta terminal kodlama ajanıdır.",
+      "introduction": "Muse Code, ana ajanı kalıcı arka plan ajanlarıyla birleştirir. Değişiklikleri planlar, kodu düzenler, sonuçları doğrular ve kesintiden sonra oturumların sürdürülebilmesi için model çağrılarını, araç çalıştırmalarını, onayları ve düzenlemeleri yerel bir salt eklemeli olay günlüğüne kaydeder.",
+      "capabilities": {
+        "items": [
+          {
+            "title": "Kalıcı arka plan ajanları",
+            "description": "Uzmanlaşmış arka plan ajanları oturum boyunca etkin kalır ve yararlı bulguları veya sonraki adımları ana ajana bildirir."
+          },
+          {
+            "title": "Sürdürülebilir çalışma",
+            "description": "Yerel salt eklemeli olay günlüğü her model çağrısını, araç çalıştırmasını, onayı ve düzenlemeyi kaydederek çalışmanın bir arızadan sonra yeniden oynatılmasını ve sürdürülmesini sağlar."
+          },
+          {
+            "title": "Yerleşik planlama becerileri",
+            "description": "/plan, /grill ve /goal becerileri onaya bağlı planlama, plan inceleme ve belirli bir hedefe yönelik kalıcı çalışmayı destekler."
+          }
+        ]
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "Muse Code nedir?",
+            "answer": "Muse Code, büyük depolardaki yazılım değişikliklerini planlamak, uygulamak ve doğrulamak için Meta'nın terminal kodlama ajanıdır."
+          },
+          {
+            "question": "Muse Code hangi modeli kullanır?",
+            "answer": "Muse Code, Meta'nın Muse Spark model ailesinin kodlama odaklı güncellemesi Muse Spark 1.2 tarafından desteklenir."
+          },
+          {
+            "question": "Muse Code nasıl kurulur ve başlatılır?",
+            "answer": "macOS veya Linux'ta Meta'nın resmi kurulum komutunu çalıştırın, ardından ajanı terminalden muse komutuyla başlatın."
+          },
+          {
+            "question": "Muse Code açık kaynaklı mı?",
+            "answer": "Muse Code için herkese açık bir kaynak deposu veya açık kaynak lisansı sunulmuyor. Dağıtılan CLI özel mülk yazılımdır."
+          },
+          {
+            "question": "Muse Code kesintiye uğrayan çalışmayı nasıl sürdürür?",
+            "answer": "Muse Code model çağrılarını, araç çalıştırmalarını, onayları ve düzenlemeleri yerel salt eklemeli olay günlüğünde tutarak çalışma zamanının bir arızadan sonra oturumu yeniden oynatıp sürdürmesini sağlar."
           }
         ]
       }
@@ -12824,6 +13264,50 @@
         ]
       }
     },
+    "muse-code": {
+      "answer": "Muse Code 是 Meta 基于 Muse Spark 1.2 的终端编码 Agent，用于在大型代码库中完成复杂的软件工程任务。",
+      "introduction": "Muse Code 将主 Agent 与持续运行的后台 Agent 结合起来。它可以规划变更、编辑代码、验证结果，并将模型调用、工具运行、审批和编辑写入本地只追加事件日志，以便在中断后准确恢复会话。",
+      "capabilities": {
+        "items": [
+          {
+            "title": "持续运行的后台 Agent",
+            "description": "专门的后台 Agent 会在整个会话期间保持活动，并把有用的发现或后续步骤反馈给主 Agent。"
+          },
+          {
+            "title": "可恢复执行",
+            "description": "本地只追加事件日志记录每次模型调用、工具运行、审批和编辑，使运行时能在故障后重放并继续工作。"
+          },
+          {
+            "title": "内置规划技能",
+            "description": "内置的 /plan、/grill 和 /goal 技能分别支持需审批的规划、计划审查，以及朝指定目标持续推进。"
+          }
+        ]
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "Muse Code 是什么？",
+            "answer": "Muse Code 是 Meta 的终端编码 Agent，用于在大型代码库中规划、实施并验证软件变更。"
+          },
+          {
+            "question": "Muse Code 使用什么模型？",
+            "answer": "Muse Code 由 Muse Spark 1.2 驱动，这是 Meta Muse Spark 模型系列面向编码任务的更新版本。"
+          },
+          {
+            "question": "如何安装和启动 Muse Code？",
+            "answer": "在 macOS 或 Linux 上运行 Meta 官方安装命令，然后在终端中执行 muse 启动 Agent。"
+          },
+          {
+            "question": "Muse Code 是开源的吗？",
+            "answer": "Muse Code 没有公开源码仓库或开源许可证，分发的 CLI 属于专有软件。"
+          },
+          {
+            "question": "Muse Code 如何恢复中断的任务？",
+            "answer": "Muse Code 会把模型调用、工具运行、审批和编辑写入本地只追加事件日志，使运行时能够在故障后重放并继续会话。"
+          }
+        ]
+      }
+    },
     "omp": {
       "answer": "omp 是 Oh My Pi 的开源终端编码工具，提供基于哈希定位的编辑、LSP 与调试器上下文、子 Agent、持久运行环境和多模型提供商支持。",
       "introduction": "omp 通过哈希锚点把修改绑定到预期代码位置，降低宽泛文本匹配造成误改的风险。它还能在终端任务中结合 LSP、调试器和子 Agent，并保留运行环境以便后续任务继续使用；安装后可在 macOS、Windows 或 Linux 中运行 omp。",
@@ -14010,6 +14494,50 @@
           {
             "question": "Kode 的授權與定價方式是什麼？",
             "answer": "Kode 以開源方式提供；授權條款、可用服務與任何相關費用請參閱其官方資料。"
+          }
+        ]
+      }
+    },
+    "muse-code": {
+      "answer": "Muse Code 是 Meta 以 Muse Spark 1.2 驅動的終端機程式設計 Agent，用於在大型程式碼庫中完成複雜的軟體工程任務。",
+      "introduction": "Muse Code 結合主 Agent 與持續運作的背景 Agent。它能規劃變更、編輯程式碼、驗證結果，並將模型呼叫、工具執行、核准與編輯寫入本機僅附加事件紀錄，以便在中斷後準確恢復工作階段。",
+      "capabilities": {
+        "items": [
+          {
+            "title": "持續運作的背景 Agent",
+            "description": "專門的背景 Agent 會在整個工作階段保持運作，並將有用的發現或後續步驟回報給主 Agent。"
+          },
+          {
+            "title": "可恢復執行",
+            "description": "本機僅附加事件紀錄會保存每次模型呼叫、工具執行、核准與編輯，讓執行環境能在故障後重播並繼續工作。"
+          },
+          {
+            "title": "內建規劃技能",
+            "description": "內建的 /plan、/grill 與 /goal 技能分別支援需核准的規劃、計畫檢視，以及朝指定目標持續推進。"
+          }
+        ]
+      },
+      "faq": {
+        "items": [
+          {
+            "question": "Muse Code 是什麼？",
+            "answer": "Muse Code 是 Meta 的終端機程式設計 Agent，用於在大型程式碼庫中規劃、實作並驗證軟體變更。"
+          },
+          {
+            "question": "Muse Code 使用什麼模型？",
+            "answer": "Muse Code 由 Muse Spark 1.2 驅動，這是 Meta Muse Spark 模型系列針對程式設計任務的更新版本。"
+          },
+          {
+            "question": "如何安裝並啟動 Muse Code？",
+            "answer": "在 macOS 或 Linux 上執行 Meta 官方安裝命令，然後在終端機中執行 muse 啟動 Agent。"
+          },
+          {
+            "question": "Muse Code 是開放原始碼嗎？",
+            "answer": "Muse Code 沒有公開原始碼儲存庫或開放原始碼授權，所發佈的 CLI 屬於專有軟體。"
+          },
+          {
+            "question": "Muse Code 如何恢復中斷的任務？",
+            "answer": "Muse Code 會將模型呼叫、工具執行、核准與編輯寫入本機僅附加事件紀錄，讓執行環境能在故障後重播並繼續工作階段。"
           }
         ]
       }

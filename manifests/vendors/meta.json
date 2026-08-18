@@ -15,7 +15,7 @@
     {
       "id": "muse",
       "name": "Muse",
-      "modelIds": ["muse-spark-1-1"]
+      "modelIds": ["muse-spark-1-1", "muse-spark-1-2"]
     }
   ],
   "description": "Technology company building AI tools and open-source models like Llama, advancing research through open science to connect people and enable innovation worldwide.",
@@ -85,9 +85,14 @@
       "url": "https://ai.meta.com/blog",
       "title": "Meta blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+      "title": "Introducing Muse Code and Muse Spark 1.2",
+      "fields": ["modelSeries"]
     }
   ],
-  "lastVerifiedAt": "2026-07-28",
+  "lastVerifiedAt": "2026-08-11",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://ai.meta.com",

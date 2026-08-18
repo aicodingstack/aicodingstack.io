@@ -1,0 +1,139 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gemini-3-7-flash",
+  "name": "Gemini 3.7 Flash",
+  "description": "Google's most capable Flash model for coding, multimodal reasoning, and agentic workflows, with configurable thinking, a 1M-token context window, and fast generation.",
+  "translations": {
+    "de": {
+      "description": "Googles leistungsfähigstes Flash-Modell für Programmierung, multimodales Schlussfolgern und agentische Abläufe, mit konfigurierbarem Denken, 1 Mio. Token Kontext und schneller Generierung."
+    },
+    "es": {
+      "description": "El modelo Flash más capaz de Google para programación, razonamiento multimodal y flujos agénticos, con pensamiento configurable, contexto de 1 M de tokens y generación rápida."
+    },
+    "fr": {
+      "description": "Le modèle Flash le plus performant de Google pour le codage, le raisonnement multimodal et les flux agentiques, avec réflexion configurable, contexte de 1 M de jetons et génération rapide."
+    },
+    "id": {
+      "description": "Model Flash Google yang paling mumpuni untuk coding, penalaran multimodal, dan alur kerja agentik, dengan pemikiran yang dapat diatur, konteks 1 juta token, serta generasi cepat."
+    },
+    "ja": {
+      "description": "コーディング、マルチモーダル推論、エージェント型ワークフロー向けのGoogleで最も高性能なFlashモデル。調整可能な思考、100万トークンのコンテキスト、高速生成に対応。"
+    },
+    "ko": {
+      "description": "코딩, 멀티모달 추론 및 에이전트 워크플로를 위한 Google의 가장 강력한 Flash 모델로, 조절 가능한 사고, 100만 토큰 컨텍스트와 빠른 생성을 지원합니다."
+    },
+    "pt": {
+      "description": "O modelo Flash mais capaz do Google para programação, raciocínio multimodal e fluxos agênticos, com pensamento configurável, contexto de 1 milhão de tokens e geração rápida."
+    },
+    "ru": {
+      "description": "Самая мощная модель Google Flash для программирования, мультимодальных рассуждений и агентных процессов, с настраиваемым мышлением, контекстом 1 млн токенов и быстрой генерацией."
+    },
+    "tr": {
+      "description": "Google'ın kodlama, çok modlu akıl yürütme ve ajan iş akışları için en yetenekli Flash modeli; ayarlanabilir düşünme, 1 milyon token bağlam ve hızlı üretim sunar."
+    },
+    "zh-Hans": {
+      "description": "Google 面向编码、多模态推理和智能体工作流的最强 Flash 模型，支持可配置思考、100 万 token 上下文和高速生成。"
+    },
+    "zh-Hant": {
+      "description": "Google 面向程式設計、多模態推理和智慧體工作流程的最強 Flash 模型，支援可設定思考、100 萬 token 上下文和高速生成。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+      "title": "Gemini 3.7 Flash model documentation",
+      "fields": [
+        "name",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://deepmind.google/models/model-cards/gemini-3-7-flash/",
+      "title": "Gemini 3.7 Flash model card",
+      "fields": [
+        "description",
+        "releaseDate",
+        "lifecycle",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities"
+      ]
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "title": "Gemini Developer API pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "title": "Gemini API release notes",
+      "fields": ["name", "releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/gemini-3-7-flash",
+      "title": "Artificial Analysis Gemini 3.7 Flash high model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-14",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://deepmind.google",
+  "docsUrl": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+  "vendor": "Google",
+  "size": null,
+  "activeParameters": null,
+  "contextWindow": 1048576,
+  "maxOutput": 65536,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": "2026-08-13",
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 0.75,
+              "output": 3.75,
+              "cacheRead": 0.075,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-08-13",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2026-03",
+  "inputModalities": ["text", "image", "pdf", "audio", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gemini-3-7-flash",
+    "openrouter": null
+  }
+}

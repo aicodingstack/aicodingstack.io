@@ -10,7 +10,7 @@
     {
       "id": "qwen-max",
       "name": "Qwen Max",
-      "modelIds": ["qwen3-6-max-preview", "qwen3-7-max"]
+      "modelIds": ["qwen3-6-max-preview", "qwen3-7-max", "qwen3-8-max"]
     },
     {
       "id": "qwen-plus",
@@ -30,7 +30,9 @@
         "qwen3-5-35b-a3b",
         "qwen3-5-122b-a10b",
         "qwen3-6-35b-a3b",
-        "qwen3-6-27b"
+        "qwen3-6-27b",
+        "qwen3-8-2-4t-a95b",
+        "qwen3-8-27b"
       ]
     }
   ],
@@ -91,9 +93,24 @@
       "url": "https://x.com/AlibabaGroup",
       "title": "Alibaba twitter community",
       "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://qwen.ai/blog?id=qwen3.8",
+      "title": "Qwen3.8-Max: A New Bar for Coding and Cowork",
+      "fields": ["modelSeries"]
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "title": "Qwen3.8-2.4T-A95B official model card",
+      "fields": ["modelSeries"]
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "title": "Qwen3.8-27B official model card",
+      "fields": ["modelSeries"]
     }
   ],
-  "lastVerifiedAt": "2026-07-28",
+  "lastVerifiedAt": "2026-08-18",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.alibabagroup.com",

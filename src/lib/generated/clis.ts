@@ -25,6 +25,7 @@ import KiloCodeCli from '../../../manifests/clis/kilo-code-cli.json'
 import KimiCli from '../../../manifests/clis/kimi-cli.json'
 import KiroCli from '../../../manifests/clis/kiro-cli.json'
 import Kode from '../../../manifests/clis/kode.json'
+import MuseCode from '../../../manifests/clis/muse-code.json'
 import Omp from '../../../manifests/clis/omp.json'
 import Opencode from '../../../manifests/clis/opencode.json'
 import Pi from '../../../manifests/clis/pi.json'
@@ -55,6 +56,7 @@ export const clisData = [
   KimiCli,
   KiroCli,
   Kode,
+  MuseCode,
   Omp,
   Opencode,
   Pi,

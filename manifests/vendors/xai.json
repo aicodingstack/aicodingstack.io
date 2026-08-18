@@ -10,7 +10,7 @@
     {
       "id": "grok",
       "name": "Grok",
-      "modelIds": ["grok-4", "grok-4-20", "grok-4-3", "grok-4-5"]
+      "modelIds": ["grok-4", "grok-4-20", "grok-4-3", "grok-4-5", "grok-4-6"]
     },
     {
       "id": "grok-code",
@@ -90,9 +90,14 @@
       "url": "https://x.ai/news",
       "title": "xAI blog community",
       "fields": ["communityUrls.blog"]
+    },
+    {
+      "url": "https://x.ai/news/grok-4-6",
+      "title": "Introducing Grok 4.6",
+      "fields": ["modelSeries"]
     }
   ],
-  "lastVerifiedAt": "2026-07-28",
+  "lastVerifiedAt": "2026-08-13",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://x.ai",

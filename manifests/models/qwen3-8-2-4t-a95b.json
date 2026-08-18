@@ -1,0 +1,117 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "qwen3-8-2-4t-a95b",
+  "name": "Qwen3.8-2.4T-A95B",
+  "description": "Alibaba's open-weight, text-only Qwen3.8 model with 2.4T total and 95B active parameters, adjustable reasoning effort, tool calling, and up to 1.01M tokens of extended context.",
+  "translations": {
+    "de": {
+      "description": "Alibabas offenes, reines Textmodell Qwen3.8 mit 2,4 Billionen Gesamt- und 95 Milliarden aktiven Parametern, anpassbarer Denktiefe, Werkzeugaufrufen und bis zu 1,01 Mio. Token Kontext."
+    },
+    "es": {
+      "description": "El modelo Qwen3.8 de pesos abiertos y solo texto de Alibaba, con 2,4 billones de parámetros totales, 95 mil millones activos, razonamiento ajustable, herramientas y hasta 1,01 M de tokens."
+    },
+    "fr": {
+      "description": "Le modèle Qwen3.8 à poids ouverts et texte seul d’Alibaba, avec 2,4 billions de paramètres dont 95 milliards actifs, raisonnement réglable, outils et jusqu’à 1,01 M de jetons."
+    },
+    "id": {
+      "description": "Model Qwen3.8 open-weight khusus teks dari Alibaba dengan 2,4 triliun parameter total dan 95 miliar aktif, tingkat penalaran yang dapat diatur, pemanggilan alat, serta konteks hingga 1,01 juta token."
+    },
+    "ja": {
+      "description": "総2.4兆・アクティブ950億パラメータ、調整可能な推論深度、ツール呼び出し、最大101万トークンの拡張コンテキストを備えた、Alibabaのテキスト専用オープンウェイトQwen3.8モデル。"
+    },
+    "ko": {
+      "description": "총 2.4조 및 활성 950억 매개변수, 조절 가능한 추론 수준, 도구 호출과 최대 101만 토큰 확장 컨텍스트를 제공하는 Alibaba의 텍스트 전용 오픈 웨이트 Qwen3.8 모델입니다."
+    },
+    "pt": {
+      "description": "O modelo Qwen3.8 de pesos abertos e apenas texto da Alibaba, com 2,4 trilhões de parâmetros totais, 95 bilhões ativos, raciocínio ajustável, ferramentas e até 1,01 milhão de tokens."
+    },
+    "ru": {
+      "description": "Открытая текстовая модель Alibaba Qwen3.8: 2,4 трлн параметров, 95 млрд активных, регулируемая глубина рассуждений, вызов инструментов и расширенный контекст до 1,01 млн токенов."
+    },
+    "tr": {
+      "description": "Alibaba'nın 2,4 trilyon toplam ve 95 milyar aktif parametreli, ayarlanabilir akıl yürütme, araç çağrıları ve 1,01 milyon tokene kadar bağlam sunan açık ağırlıklı metin Qwen3.8 modeli."
+    },
+    "zh-Hans": {
+      "description": "阿里巴巴的纯文本开放权重 Qwen3.8 模型，拥有 2.4 万亿总参数、950 亿激活参数，支持可调推理强度、工具调用和最高 101 万 token 扩展上下文。"
+    },
+    "zh-Hant": {
+      "description": "阿里巴巴的純文字開放權重 Qwen3.8 模型，擁有 2.4 兆總參數、950 億啟用參數，支援可調推理強度、工具呼叫和最高 101 萬 token 延伸上下文。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "title": "Qwen3.8-2.4T-A95B official model card",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "size",
+        "activeParameters",
+        "contextWindow",
+        "lifecycle",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "platformUrls.huggingface"
+      ]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/qwen3-8-2-4t-a95b",
+      "title": "Artificial Analysis Qwen3.8 2.4T A95B model page",
+      "fields": ["releaseDate", "platformUrls.artificialAnalysis", "referenceTokenPricing"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-14",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://qwen.ai",
+  "docsUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+  "vendor": "Alibaba",
+  "size": "2.4T",
+  "activeParameters": "95B",
+  "contextWindow": 1010000,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "unavailable",
+    "reason": "official-price-not-published",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "referenceTokenPricing": {
+    "currency": "USD",
+    "basis": "first-party-api",
+    "rates": {
+      "input": 2,
+      "output": 6,
+      "cacheRead": null,
+      "cacheWrite": null
+    },
+    "source": {
+      "name": "Artificial Analysis — Alibaba API for Qwen3.8 2.4T A95B",
+      "url": "https://artificialanalysis.ai/models/qwen3-8-2-4t-a95b",
+      "observedAt": "2026-08-14"
+    }
+  },
+  "releaseDate": "2026-08-12",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-8-2-4t-a95b",
+    "openrouter": null
+  }
+}

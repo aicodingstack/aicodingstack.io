@@ -18,6 +18,7 @@
         "deepseek-v3-terminus",
         "deepseek-v3-2-exp",
         "deepseek-3-2",
+        "deepseek-v4-pro-preview",
         "deepseek-v4-pro"
       ]
     },
@@ -89,9 +90,14 @@
       "url": "https://www.reddit.com/r/DeepSeekAI",
       "title": "DeepSeek reddit community",
       "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "title": "DeepSeek V4 Pro 0813 models and pricing",
+      "fields": ["modelSeries"]
     }
   ],
-  "lastVerifiedAt": "2026-07-28",
+  "lastVerifiedAt": "2026-08-13",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.deepseek.com",
