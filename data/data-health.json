@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-18",
+  "asOf": "2026-08-19",
   "thresholds": {
     "models": 30,
     "providers": 30,
@@ -10,14 +10,14 @@
     "vendors": 90
   },
   "summary": {
-    "totalRecords": 261,
-    "recordsWithSources": 261,
-    "verifiedRecords": 261,
-    "provenanceComplete": 261,
+    "totalRecords": 262,
+    "recordsWithSources": 262,
+    "verifiedRecords": 262,
+    "provenanceComplete": 262,
     "staleVerifiedRecords": 2,
     "translationPlaceholderValues": 300,
     "danglingRelationships": 0,
-    "modelBenchmarkCoverage": 9,
+    "modelBenchmarkCoverage": 8.9,
     "productsWithPricing": 66,
     "productRecords": 67,
     "communityUrlsPopulated": 331,
@@ -53,9 +53,9 @@
       "stale": 0
     },
     "models": {
-      "total": 130,
-      "verified": 130,
-      "provenanceComplete": 130,
+      "total": 131,
+      "verified": 131,
+      "provenanceComplete": 131,
       "stale": 2
     },
     "providers": {
@@ -134,14 +134,14 @@
       "code": "stale-verification",
       "category": "models",
       "id": "claude-haiku-4-5",
-      "message": "Last reviewed 31 days ago; threshold is 30 days."
+      "message": "Last reviewed 32 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5-2",
-      "message": "Last reviewed 31 days ago; threshold is 30 days."
+      "message": "Last reviewed 32 days ago; threshold is 30 days."
     }
   ]
 }

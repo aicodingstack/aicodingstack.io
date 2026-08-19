@@ -19,6 +19,7 @@ describe('model price-intelligence index', () => {
         'gemini-3-7-flash',
         'qwen3-7-plus',
         'qwen3-8-2-4t-a95b',
+        'glm-5-3',
         'gpt-5-6-terra',
         'claude-haiku-4-5',
         'claude-opus-5',
@@ -27,7 +28,7 @@ describe('model price-intelligence index', () => {
       ])
     )
     expect(modelPriceIntelligencePoints.map(point => point.modelId)).not.toEqual(
-      expect.arrayContaining(['claude-opus-4-8', 'muse-spark-1-1', 'mistral-medium-3-5'])
+      expect.arrayContaining(['claude-opus-4-8', 'glm-5-2', 'muse-spark-1-1', 'mistral-medium-3-5'])
     )
   })
 

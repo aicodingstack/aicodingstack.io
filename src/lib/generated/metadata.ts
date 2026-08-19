@@ -3639,7 +3639,7 @@ export const stackCounts: Record<string, number> = {
   clis: 28,
   desktops: 12,
   extensions: 18,
-  models: 130,
+  models: 131,
   'model-providers': 17,
   vendors: 47,
 }

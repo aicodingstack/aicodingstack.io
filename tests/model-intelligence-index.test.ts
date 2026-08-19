@@ -499,6 +499,7 @@ describe('model intelligence index', () => {
       ['glm-5v-turbo', 'GLM Vision', 35],
       ['glm-5-1', 'GLM', 41],
       ['glm-5-2', 'GLM', 53],
+      ['glm-5-3', 'GLM', 60],
     ])
   })
 

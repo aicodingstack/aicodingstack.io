@@ -1,0 +1,141 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "glm-5-3",
+  "name": "GLM-5.3",
+  "description": "Z.ai's latest flagship model for complex software engineering and long-horizon agent tasks, with always-on reasoning and a 1M-token context window.",
+  "translations": {
+    "de": {
+      "description": "Z.ais neuestes Flaggschiffmodell für komplexe Softwareentwicklung und langfristige Agentenaufgaben, mit stets aktivem Reasoning und einem Kontextfenster von 1 Mio. Token."
+    },
+    "es": {
+      "description": "El modelo insignia más reciente de Z.ai para ingeniería de software compleja y tareas agénticas prolongadas, con razonamiento siempre activo y un contexto de 1 millón de tokens."
+    },
+    "fr": {
+      "description": "Le dernier modèle phare de Z.ai pour l’ingénierie logicielle complexe et les tâches agentiques longues, avec raisonnement permanent et contexte de 1 million de jetons."
+    },
+    "id": {
+      "description": "Model unggulan terbaru Z.ai untuk rekayasa perangkat lunak kompleks dan tugas agentik jangka panjang, dengan penalaran selalu aktif dan konteks 1 juta token."
+    },
+    "ja": {
+      "description": "複雑なソフトウェア開発と長期エージェントタスク向けのZ.ai最新旗艦モデル。常時有効な推論と100万トークンのコンテキストに対応します。"
+    },
+    "ko": {
+      "description": "복잡한 소프트웨어 엔지니어링과 장기 에이전트 작업을 위한 Z.ai의 최신 플래그십 모델로, 상시 추론과 100만 토큰 컨텍스트를 지원합니다."
+    },
+    "pt": {
+      "description": "O modelo principal mais recente da Z.ai para engenharia de software complexa e tarefas agênticas prolongadas, com raciocínio sempre ativo e contexto de 1 milhão de tokens."
+    },
+    "ru": {
+      "description": "Новейшая флагманская модель Z.ai для сложной программной инженерии и длительных агентных задач с постоянно включённым рассуждением и контекстом в 1 млн токенов."
+    },
+    "tr": {
+      "description": "Z.ai'ın karmaşık yazılım mühendisliği ve uzun süreli ajan görevleri için en yeni amiral modeli; sürekli akıl yürütme ve 1 milyon token bağlam sunar."
+    },
+    "zh-Hans": {
+      "description": "Z.ai 面向复杂软件工程和长周期智能体任务的最新旗舰模型，支持始终开启的推理和 100 万 token 上下文。"
+    },
+    "zh-Hant": {
+      "description": "Z.ai 面向複雜軟體工程和長週期智慧體任務的最新旗艦模型，支援始終開啟的推理和 100 萬 token 上下文。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "title": "GLM-5.3 model documentation",
+      "fields": [
+        "name",
+        "description",
+        "websiteUrl",
+        "docsUrl",
+        "size",
+        "activeParameters",
+        "contextWindow",
+        "maxOutput",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "title": "Official GLM-5.2 base checkpoint and model card",
+      "fields": ["size"]
+    },
+    {
+      "url": "https://docs.z.ai/guides/llm/glm-5",
+      "title": "Official GLM-5 architecture parameter disclosure",
+      "fields": ["activeParameters"]
+    },
+    {
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "title": "Z.ai model release notes",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "title": "Z.ai API pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/glm-5-3",
+      "title": "Artificial Analysis GLM-5.3 model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-19",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://z.ai",
+  "docsUrl": "https://docs.z.ai/guides/llm/glm-5.3",
+  "vendor": "Z.ai",
+  "size": "753B",
+  "activeParameters": "40B",
+  "contextWindow": 1000000,
+  "maxOutput": 131072,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 1.4,
+              "output": 4.4,
+              "cacheRead": 0.26,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-08-18",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/glm-5-3",
+    "openrouter": null
+  }
+}
