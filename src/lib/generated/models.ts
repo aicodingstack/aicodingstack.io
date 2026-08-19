@@ -62,6 +62,7 @@ import Glm47Flash from '../../../manifests/models/glm-4-7-flash.json'
 import Glm5 from '../../../manifests/models/glm-5.json'
 import Glm51 from '../../../manifests/models/glm-5-1.json'
 import Glm52 from '../../../manifests/models/glm-5-2.json'
+import Glm53 from '../../../manifests/models/glm-5-3.json'
 import Glm5Turbo from '../../../manifests/models/glm-5-turbo.json'
 import Glm5vTurbo from '../../../manifests/models/glm-5v-turbo.json'
 import Gpt41 from '../../../manifests/models/gpt-4-1.json'
@@ -194,6 +195,7 @@ export const modelsData = [
   Glm47,
   Glm51,
   Glm52,
+  Glm53,
   Glm5Turbo,
   Glm5,
   Glm5vTurbo,

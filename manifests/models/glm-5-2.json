@@ -2,40 +2,40 @@
   "$schema": "../$schemas/model.schema.json",
   "id": "glm-5-2",
   "name": "GLM-5.2",
-  "description": "Z.ai's open-weight flagship for long-horizon agentic coding, flexible reasoning effort, and stable work across a 1M-token context window.",
+  "description": "Z.ai's open-weight model for long-horizon agentic coding, flexible reasoning effort, and stable work across a 1M-token context window.",
   "translations": {
     "de": {
-      "description": "Z.ais offenes Flaggschiff für langfristige agentische Programmierung, flexible Denkleistung und stabile Arbeit über ein Kontextfenster von 1 Mio. Token."
+      "description": "Z.ais offenes Modell für langfristige agentische Programmierung, flexible Denkleistung und stabile Arbeit über ein Kontextfenster von 1 Mio. Token."
     },
     "es": {
-      "description": "El modelo insignia de pesos abiertos de Z.ai para programación agéntica prolongada, razonamiento flexible y trabajo estable con contexto de 1 millón de tokens."
+      "description": "El modelo de pesos abiertos de Z.ai para programación agéntica prolongada, razonamiento flexible y trabajo estable con contexto de 1 millón de tokens."
     },
     "fr": {
-      "description": "Le modèle phare à poids ouverts de Z.ai pour le codage agentique long, l’effort de raisonnement flexible et un travail stable sur 1 million de jetons."
+      "description": "Le modèle à poids ouverts de Z.ai pour le codage agentique long, l’effort de raisonnement flexible et un travail stable sur 1 million de jetons."
     },
     "id": {
-      "description": "Model unggulan open-weight Z.ai untuk coding agentik jangka panjang, upaya penalaran fleksibel, dan kerja stabil dalam konteks 1 juta token."
+      "description": "Model open-weight Z.ai untuk coding agentik jangka panjang, upaya penalaran fleksibel, dan kerja stabil dalam konteks 1 juta token."
     },
     "ja": {
-      "description": "長期のエージェント型コーディング、柔軟な推論強度、100万トークンのコンテキストにわたる安定した作業に対応するZ.aiのオープンウェイト旗艦モデル。"
+      "description": "長期のエージェント型コーディング、柔軟な推論強度、100万トークンのコンテキストにわたる安定した作業に対応するZ.aiのオープンウェイトモデル。"
     },
     "ko": {
-      "description": "장기 에이전트 코딩, 유연한 추론 강도 및 100만 토큰 컨텍스트 전반의 안정적인 작업을 위한 Z.ai의 오픈 웨이트 플래그십 모델입니다."
+      "description": "장기 에이전트 코딩, 유연한 추론 강도 및 100만 토큰 컨텍스트 전반의 안정적인 작업을 위한 Z.ai의 오픈 웨이트 모델입니다."
     },
     "pt": {
-      "description": "O modelo principal de pesos abertos da Z.ai para programação agêntica prolongada, raciocínio flexível e trabalho estável em contexto de 1 milhão de tokens."
+      "description": "O modelo de pesos abertos da Z.ai para programação agêntica prolongada, raciocínio flexível e trabalho estável em contexto de 1 milhão de tokens."
     },
     "ru": {
-      "description": "Открытая флагманская модель Z.ai для длительного агентного программирования, гибкой глубины рассуждений и устойчивой работы с контекстом 1 млн токенов."
+      "description": "Открытая модель Z.ai для длительного агентного программирования, гибкой глубины рассуждений и устойчивой работы с контекстом 1 млн токенов."
     },
     "tr": {
-      "description": "Z.ai'ın uzun süreli ajan tabanlı kodlama, esnek akıl yürütme düzeyi ve 1 milyon token bağlamda kararlı çalışma için açık ağırlıklı amiral modeli."
+      "description": "Z.ai'ın uzun süreli ajan tabanlı kodlama, esnek akıl yürütme düzeyi ve 1 milyon token bağlamda kararlı çalışma için açık ağırlıklı modeli."
     },
     "zh-Hans": {
-      "description": "Z.ai 面向长周期智能体编码、灵活推理强度和 100 万 token 上下文稳定工作的开放权重旗舰模型。"
+      "description": "Z.ai 面向长周期智能体编码、灵活推理强度和 100 万 token 上下文稳定工作的开放权重模型。"
     },
     "zh-Hant": {
-      "description": "Z.ai 面向長週期智慧體程式設計、彈性推理強度和 100 萬 token 上下文穩定工作的開放權重旗艦模型。"
+      "description": "Z.ai 面向長週期智慧體程式設計、彈性推理強度和 100 萬 token 上下文穩定工作的開放權重模型。"
     }
   },
   "verified": true,
@@ -80,7 +80,7 @@
       "fields": ["size", "platformUrls"]
     }
   ],
-  "lastVerifiedAt": "2026-07-21",
+  "lastVerifiedAt": "2026-08-19",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://z.ai",
@@ -116,7 +116,7 @@
     ]
   },
   "releaseDate": "2026-06-16",
-  "lifecycle": "latest",
+  "lifecycle": "maintained",
   "knowledgeCutoff": null,
   "inputModalities": ["text"],
   "outputModalities": ["text"],

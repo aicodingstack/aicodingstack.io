@@ -4,7 +4,7 @@
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
   "methodologyUrl": "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
   "indexVersion": "4.1.1",
-  "observedAt": "2026-08-18",
+  "observedAt": "2026-08-19",
   "legacyMissingModelIds": ["cursor-composer-2", "cursor-composer-2-5"],
   "entries": [
     {
@@ -354,6 +354,12 @@
       "score": 53,
       "estimated": false,
       "configuration": "GLM-5.2 (max)"
+    },
+    {
+      "modelId": "glm-5-3",
+      "score": 60,
+      "estimated": false,
+      "configuration": "GLM-5.3 (max)"
     },
     {
       "modelId": "gpt-4-1",
