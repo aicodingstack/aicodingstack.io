@@ -102,8 +102,8 @@
     "tsx": "^4.23.12",
     "typescript": "^6.0.3",
     "user-agents": "^1.1.669",
-    "vitest": "^4.1.10",
-    "wrangler": "^4.123.0"
+    "vitest": "^4.1.11",
+    "wrangler": "^4.125.0"
   },
   "repository": {
     "type": "git",
