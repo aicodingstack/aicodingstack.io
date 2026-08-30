@@ -44,6 +44,7 @@
     "launch": "실행"
   },
   "productHero": {
+    "editManifest": "GitHub에서 이 항목 수정",
     "runtime": "런타임"
   },
   "productPricing": {

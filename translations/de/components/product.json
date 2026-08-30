@@ -44,6 +44,7 @@
     "launch": "Starten"
   },
   "productHero": {
+    "editManifest": "Diesen Eintrag auf GitHub bearbeiten",
     "runtime": "Laufzeit"
   },
   "productPricing": {
