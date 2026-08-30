@@ -1,0 +1,132 @@
+{
+  "$schema": "../$schemas/extension.schema.json",
+  "id": "reasonix-extension",
+  "name": "Reasonix",
+  "familyId": "reasonix",
+  "description": "Reasonix connects its open-source coding agent to VS Code and VSCodium through ACP, sharing editor context with the same local engine used by its CLI and desktop app.",
+  "translations": {
+    "de": {
+      "description": "Reasonix verbindet seinen quelloffenen Coding-Agenten über ACP mit VS Code und VSCodium und teilt den Editorkontext mit derselben lokalen Engine wie CLI und Desktop-App."
+    },
+    "es": {
+      "description": "Reasonix conecta su agente de programación de código abierto con VS Code y VSCodium mediante ACP, compartiendo el contexto del editor con el mismo motor local de su CLI y app de escritorio."
+    },
+    "fr": {
+      "description": "Reasonix relie son agent de codage open source à VS Code et VSCodium via ACP, en partageant le contexte de l’éditeur avec le même moteur local que sa CLI et son app de bureau."
+    },
+    "id": {
+      "description": "Reasonix menghubungkan agen coding sumber terbukanya ke VS Code dan VSCodium melalui ACP, berbagi konteks editor dengan mesin lokal yang sama seperti CLI dan aplikasi desktop."
+    },
+    "ja": {
+      "description": "Reasonixは、オープンソースのコーディングエージェントをACP経由でVS CodeとVSCodiumに接続し、CLIやデスクトップアプリと同じローカルエンジンでエディターコンテキストを共有します。"
+    },
+    "ko": {
+      "description": "Reasonix는 오픈 소스 코딩 에이전트를 ACP로 VS Code와 VSCodium에 연결하고 CLI 및 데스크톱 앱과 동일한 로컬 엔진에서 편집기 컨텍스트를 공유합니다."
+    },
+    "pt": {
+      "description": "Reasonix conecta seu agente de programação de código aberto ao VS Code e VSCodium via ACP, compartilhando o contexto do editor com o mesmo motor local da CLI e do app desktop."
+    },
+    "ru": {
+      "description": "Reasonix подключает открытый агент программирования к VS Code и VSCodium через ACP, передавая контекст редактора тому же локальному движку, что используется в CLI и настольном приложении."
+    },
+    "tr": {
+      "description": "Reasonix, açık kaynaklı kodlama ajanını ACP üzerinden VS Code ve VSCodium’a bağlar; editör bağlamını CLI ve masaüstü uygulamasıyla aynı yerel motorla paylaşır."
+    },
+    "zh-Hans": {
+      "description": "Reasonix 通过 ACP 将开源编码 Agent 接入 VS Code 和 VSCodium，并与 CLI、桌面应用共用同一个本地引擎和编辑器上下文。"
+    },
+    "zh-Hant": {
+      "description": "Reasonix 透過 ACP 將開放原始碼程式設計 Agent 接入 VS Code 和 VSCodium，並與 CLI、桌面應用程式共用同一個本機引擎和編輯器內容。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://github.com/SivanCola/reasonix-vscode",
+      "title": "Reasonix VS Code extension repository",
+      "fields": [
+        "name",
+        "description",
+        "websiteUrl",
+        "docsUrl",
+        "vendor",
+        "githubUrl",
+        "license",
+        "pricing",
+        "resourceUrls.changelog",
+        "resourceUrls.issue",
+        "communityUrls.github",
+        "relatedProducts"
+      ]
+    },
+    {
+      "url": "https://marketplace.visualstudio.com/items?itemName=SivanLiu.reasonix-agent",
+      "title": "Reasonix Visual Studio Marketplace listing",
+      "fields": ["latestVersion", "releaseTracking", "resourceUrls.download", "supportedIdes"]
+    },
+    {
+      "url": "https://open-vsx.org/extension/SivanLiu/reasonix-agent",
+      "title": "Reasonix Open VSX listing",
+      "fields": ["latestVersion", "supportedIdes"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://reasonix.io/",
+  "docsUrl": "https://github.com/SivanCola/reasonix-vscode#readme",
+  "vendor": "Reasonix",
+  "latestVersion": "0.3.2",
+  "releaseTracking": {
+    "provider": "vscode-marketplace",
+    "identifier": "SivanLiu.reasonix-agent"
+  },
+  "githubUrl": "https://github.com/SivanCola/reasonix-vscode",
+  "license": "MIT",
+  "pricing": [
+    {
+      "name": "Open Source",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://marketplace.visualstudio.com/items?itemName=SivanLiu.reasonix-agent",
+    "changelog": "https://github.com/SivanCola/reasonix-vscode/blob/main/CHANGELOG.md",
+    "pricing": null,
+    "issue": "https://github.com/SivanCola/reasonix-vscode/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": "https://github.com/SivanCola/reasonix-vscode",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [
+    {
+      "type": "cli",
+      "productId": "reasonix"
+    },
+    {
+      "type": "desktop",
+      "productId": "reasonix-desktop"
+    }
+  ],
+  "supportedIdes": [
+    {
+      "ideId": "vscode",
+      "marketplaceUrl": "https://marketplace.visualstudio.com/items?itemName=SivanLiu.reasonix-agent",
+      "installUri": "vscode:extension/SivanLiu.reasonix-agent"
+    },
+    {
+      "ideId": "vscodium",
+      "marketplaceUrl": "https://open-vsx.org/extension/SivanLiu/reasonix-agent",
+      "installUri": null
+    }
+  ]
+}

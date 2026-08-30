@@ -1,0 +1,142 @@
+{
+  "$schema": "../$schemas/cli.schema.json",
+  "id": "reasonix",
+  "name": "Reasonix",
+  "familyId": "reasonix",
+  "description": "Reasonix is an open-source, DeepSeek-native coding agent for the terminal. Its Go CLI/TUI supports tools, plugins, OpenAI-compatible endpoints, and cache-stable sessions.",
+  "translations": {
+    "de": {
+      "description": "Reasonix ist ein quelloffener, DeepSeek-nativer Coding-Agent für das Terminal. Seine Go-CLI/TUI unterstützt Werkzeuge, Plugins, OpenAI-kompatible Endpunkte und cache-stabile Sitzungen."
+    },
+    "es": {
+      "description": "Reasonix es un agente de código abierto y nativo de DeepSeek para terminal. Su CLI/TUI en Go admite herramientas, plugins, endpoints compatibles con OpenAI y sesiones estables en caché."
+    },
+    "fr": {
+      "description": "Reasonix est un agent de codage open source natif de DeepSeek pour terminal. Sa CLI/TUI en Go prend en charge outils, plugins, endpoints compatibles OpenAI et sessions stables en cache."
+    },
+    "id": {
+      "description": "Reasonix adalah agen coding terminal sumber terbuka yang native untuk DeepSeek. CLI/TUI Go-nya mendukung alat, plugin, endpoint kompatibel OpenAI, dan sesi dengan cache stabil."
+    },
+    "ja": {
+      "description": "Reasonixは、DeepSeekネイティブのオープンソース・ターミナル向けコーディングエージェントです。Go製CLI/TUIはツール、プラグイン、OpenAI互換エンドポイント、キャッシュが安定したセッションに対応します。"
+    },
+    "ko": {
+      "description": "Reasonix는 오픈 소스 DeepSeek 네이티브 터미널 코딩 에이전트입니다. Go 기반 CLI/TUI는 도구, 플러그인, OpenAI 호환 엔드포인트와 캐시 안정적인 세션을 지원합니다."
+    },
+    "pt": {
+      "description": "Reasonix é um agente de programação de código aberto e nativo do DeepSeek para terminal. Sua CLI/TUI em Go oferece ferramentas, plugins, endpoints compatíveis com OpenAI e sessões estáveis em cache."
+    },
+    "ru": {
+      "description": "Reasonix — открытый DeepSeek-ориентированный агент программирования для терминала. CLI/TUI на Go поддерживает инструменты, плагины, OpenAI-совместимые API и стабильные для кеша сеансы."
+    },
+    "tr": {
+      "description": "Reasonix, terminal için açık kaynaklı ve DeepSeek odaklı bir kodlama ajanıdır. Go tabanlı CLI/TUI; araçları, eklentileri, OpenAI uyumlu uç noktaları ve önbellek kararlı oturumları destekler."
+    },
+    "zh-Hans": {
+      "description": "Reasonix 是一款原生面向 DeepSeek 的开源终端编码 Agent。其 Go CLI/TUI 支持工具、插件、OpenAI 兼容端点和前缀缓存稳定的会话。"
+    },
+    "zh-Hant": {
+      "description": "Reasonix 是一款原生面向 DeepSeek 的開放原始碼終端機程式設計 Agent。其 Go CLI/TUI 支援工具、外掛、OpenAI 相容端點和前綴快取穩定的工作階段。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "title": "Reasonix official repository",
+      "fields": [
+        "name",
+        "description",
+        "githubUrl",
+        "license",
+        "pricing",
+        "resourceUrls.issue",
+        "relatedProducts"
+      ]
+    },
+    {
+      "url": "https://reasonix.io/docs/",
+      "title": "Reasonix documentation",
+      "fields": [
+        "websiteUrl",
+        "docsUrl",
+        "vendor",
+        "releaseTracking",
+        "resourceUrls.download",
+        "platforms"
+      ]
+    },
+    {
+      "url": "https://reasonix.io/changelog/",
+      "title": "Reasonix changelog",
+      "fields": ["latestVersion", "resourceUrls.changelog"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://reasonix.io/",
+  "docsUrl": "https://reasonix.io/docs/",
+  "vendor": "Reasonix",
+  "latestVersion": "1.34.0",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "reasonix"
+  },
+  "githubUrl": "https://github.com/esengine/DeepSeek-Reasonix",
+  "license": "MIT",
+  "pricing": [
+    {
+      "name": "Open Source",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://reasonix.io/docs/",
+    "changelog": "https://reasonix.io/changelog/",
+    "pricing": null,
+    "issue": "https://github.com/esengine/DeepSeek-Reasonix/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [
+    {
+      "type": "desktop",
+      "productId": "reasonix-desktop"
+    },
+    {
+      "type": "extension",
+      "productId": "reasonix-extension"
+    }
+  ],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installCommand": "npm i -g reasonix",
+      "launchCommand": "reasonix",
+      "installPath": null
+    },
+    {
+      "os": "Windows",
+      "installCommand": "npm i -g reasonix",
+      "launchCommand": "reasonix",
+      "installPath": null
+    },
+    {
+      "os": "Linux",
+      "installCommand": "npm i -g reasonix",
+      "launchCommand": "reasonix",
+      "installPath": null
+    }
+  ]
+}

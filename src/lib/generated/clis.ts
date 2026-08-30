@@ -14,6 +14,7 @@ import CodebuddyCli from '../../../manifests/clis/codebuddy-cli.json'
 import CodexCli from '../../../manifests/clis/codex-cli.json'
 import ContinueCli from '../../../manifests/clis/continue-cli.json'
 import CursorCli from '../../../manifests/clis/cursor-cli.json'
+import DeepseekHarness from '../../../manifests/clis/deepseek-harness.json'
 import DroidCli from '../../../manifests/clis/droid-cli.json'
 import GeminiCli from '../../../manifests/clis/gemini-cli.json'
 import GithubCopilotCli from '../../../manifests/clis/github-copilot-cli.json'
@@ -31,6 +32,7 @@ import Opencode from '../../../manifests/clis/opencode.json'
 import Pi from '../../../manifests/clis/pi.json'
 import QoderCli from '../../../manifests/clis/qoder-cli.json'
 import QwenCode from '../../../manifests/clis/qwen-code.json'
+import Reasonix from '../../../manifests/clis/reasonix.json'
 import VibeCli from '../../../manifests/clis/vibe-cli.json'
 import type { ManifestCLI } from '../../types/manifests'
 
@@ -45,6 +47,7 @@ export const clisData = [
   CodexCli,
   ContinueCli,
   CursorCli,
+  DeepseekHarness,
   DroidCli,
   GeminiCli,
   GithubCopilotCli,
@@ -62,6 +65,7 @@ export const clisData = [
   Pi,
   QoderCli,
   QwenCode,
+  Reasonix,
   VibeCli,
 ] as unknown as ManifestCLI[]
 

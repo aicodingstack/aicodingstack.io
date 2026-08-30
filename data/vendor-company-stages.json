@@ -314,6 +314,11 @@
       "source": null
     },
     {
+      "vendorId": "reasonix",
+      "stage": "startup",
+      "source": null
+    },
+    {
       "vendorId": "shareai-lab",
       "stage": "startup",
       "source": null
