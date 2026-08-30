@@ -35,6 +35,7 @@ import DeepseekV32Exp from '../../../manifests/models/deepseek-v3-2-exp.json'
 import DeepseekV3Terminus from '../../../manifests/models/deepseek-v3-terminus.json'
 import DeepseekV4Flash from '../../../manifests/models/deepseek-v4-flash.json'
 import DeepseekV4FlashPreview from '../../../manifests/models/deepseek-v4-flash-preview.json'
+import DeepseekV4FlashVision from '../../../manifests/models/deepseek-v4-flash-vision.json'
 import DeepseekV4Pro from '../../../manifests/models/deepseek-v4-pro.json'
 import DeepseekV4ProPreview from '../../../manifests/models/deepseek-v4-pro-preview.json'
 import Devstral2 from '../../../manifests/models/devstral-2.json'
@@ -63,6 +64,7 @@ import Glm5 from '../../../manifests/models/glm-5.json'
 import Glm51 from '../../../manifests/models/glm-5-1.json'
 import Glm52 from '../../../manifests/models/glm-5-2.json'
 import Glm53 from '../../../manifests/models/glm-5-3.json'
+import Glm53Flash from '../../../manifests/models/glm-5-3-flash.json'
 import Glm5Turbo from '../../../manifests/models/glm-5-turbo.json'
 import Glm5vTurbo from '../../../manifests/models/glm-5v-turbo.json'
 import Gpt41 from '../../../manifests/models/gpt-4-1.json'
@@ -131,6 +133,7 @@ import Qwen37Max from '../../../manifests/models/qwen3-7-max.json'
 import Qwen37Plus from '../../../manifests/models/qwen3-7-plus.json'
 import Qwen3824tA95b from '../../../manifests/models/qwen3-8-2-4t-a95b.json'
 import Qwen3827b from '../../../manifests/models/qwen3-8-27b.json'
+import Qwen38FlashNext from '../../../manifests/models/qwen3-8-flash-next.json'
 import Qwen38Max from '../../../manifests/models/qwen3-8-max.json'
 import Qwen3Coder30bA3b from '../../../manifests/models/qwen3-coder-30b-a3b.json'
 import Qwen3Coder480bA35b from '../../../manifests/models/qwen3-coder-480b-a35b.json'
@@ -168,6 +171,7 @@ export const modelsData = [
   DeepseekV3Terminus,
   DeepseekV3,
   DeepseekV4FlashPreview,
+  DeepseekV4FlashVision,
   DeepseekV4Flash,
   DeepseekV4ProPreview,
   DeepseekV4Pro,
@@ -195,6 +199,7 @@ export const modelsData = [
   Glm47,
   Glm51,
   Glm52,
+  Glm53Flash,
   Glm53,
   Glm5Turbo,
   Glm5,
@@ -265,6 +270,7 @@ export const modelsData = [
   Qwen37Plus,
   Qwen3824tA95b,
   Qwen3827b,
+  Qwen38FlashNext,
   Qwen38Max,
   Qwen3Coder30bA3b,
   Qwen3Coder480bA35b,

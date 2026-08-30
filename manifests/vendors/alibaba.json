@@ -32,7 +32,8 @@
         "qwen3-6-35b-a3b",
         "qwen3-6-27b",
         "qwen3-8-2-4t-a95b",
-        "qwen3-8-27b"
+        "qwen3-8-27b",
+        "qwen3-8-flash-next"
       ]
     }
   ],
@@ -108,9 +109,14 @@
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "title": "Qwen3.8-27B official model card",
       "fields": ["modelSeries"]
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "title": "Qwen3.8-Flash-Next official model card",
+      "fields": ["modelSeries"]
     }
   ],
-  "lastVerifiedAt": "2026-08-18",
+  "lastVerifiedAt": "2026-08-28",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.alibabagroup.com",
