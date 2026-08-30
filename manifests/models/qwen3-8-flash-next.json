@@ -1,0 +1,116 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "qwen3-8-flash-next",
+  "name": "Qwen3.8-Flash-Next",
+  "description": "Alibaba's experimental open-weight multimodal model with 125B language parameters, 6B active parameters, hybrid sparse attention, and native 262K context extensible to 1M tokens.",
+  "translations": {
+    "de": {
+      "description": "Alibabas experimentelles offenes multimodales Modell mit 125B Sprachparametern, 6B aktiven Parametern, hybrider Sparse Attention und nativem 262K-Kontext, erweiterbar auf 1 Mio."
+    },
+    "es": {
+      "description": "Modelo multimodal experimental y abierto de Alibaba con 125B de parámetros lingüísticos, 6B activos, atención dispersa híbrida y contexto nativo de 262K ampliable a 1 M."
+    },
+    "fr": {
+      "description": "Modèle multimodal expérimental ouvert d’Alibaba avec 125 Md de paramètres de langage, 6 Md actifs, attention clairsemée hybride et contexte natif de 262K extensible à 1 M."
+    },
+    "id": {
+      "description": "Model multimodal eksperimental open-weight Alibaba dengan 125B parameter bahasa, 6B aktif, perhatian sparse hibrida, dan konteks native 262K yang dapat diperluas hingga 1 juta."
+    },
+    "ja": {
+      "description": "125Bの言語パラメータ中6Bを有効化し、ハイブリッド疎注意と100万まで拡張可能なネイティブ262K文脈を備えたAlibabaの実験的オープンウェイト・マルチモーダルモデル。"
+    },
+    "ko": {
+      "description": "125B 언어 매개변수 중 6B를 활성화하며 하이브리드 희소 어텐션과 100만까지 확장 가능한 기본 262K 컨텍스트를 갖춘 Alibaba의 실험적 오픈 웨이트 멀티모달 모델입니다."
+    },
+    "pt": {
+      "description": "Modelo multimodal experimental e aberto da Alibaba com 125B de parâmetros de linguagem, 6B ativos, atenção esparsa híbrida e contexto nativo de 262K extensível a 1 milhão."
+    },
+    "ru": {
+      "description": "Экспериментальная открытая мультимодальная модель Alibaba: 125 млрд языковых параметров, 6 млрд активных, гибридное разреженное внимание и контекст 262K с расширением до 1 млн."
+    },
+    "tr": {
+      "description": "Alibaba'nın 125B dil ve 6B etkin parametreli; hibrit seyrek dikkat ve 1 milyona genişletilebilen yerel 262K bağlam sunan deneysel açık ağırlıklı multimodal modeli."
+    },
+    "zh-Hans": {
+      "description": "阿里巴巴的实验性开放权重多模态模型，拥有 125B 语言参数、激活 6B 参数、混合稀疏注意力，以及可扩展至 100 万 token 的原生 262K 上下文。"
+    },
+    "zh-Hant": {
+      "description": "阿里巴巴的實驗性開放權重多模態模型，擁有 125B 語言參數、啟用 6B 參數、混合稀疏注意力，以及可擴展至 100 萬 token 的原生 262K 上下文。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "title": "Official Qwen3.8-Flash-Next model card",
+      "fields": [
+        "name",
+        "description",
+        "websiteUrl",
+        "docsUrl",
+        "size",
+        "activeParameters",
+        "contextWindow",
+        "maxOutput",
+        "releaseDate",
+        "lifecycle",
+        "inputModalities",
+        "outputModalities",
+        "capabilities",
+        "tokenPricing",
+        "platformUrls.huggingface"
+      ]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/qwen3-8-flash-next",
+      "title": "Artificial Analysis Qwen3.8-Flash-Next model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://qwen.ai",
+  "docsUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+  "vendor": "Alibaba",
+  "size": "125B",
+  "activeParameters": "6B",
+  "contextWindow": 262144,
+  "maxOutput": 131072,
+  "tokenPricing": {
+    "status": "not-applicable",
+    "reason": "open-weights-only",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "referenceTokenPricing": {
+    "currency": "USD",
+    "basis": "provider-median",
+    "rates": { "input": 0.15, "output": 0.47, "cacheRead": 0.016, "cacheWrite": null },
+    "source": {
+      "name": "Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/qwen3-8-flash-next",
+      "observedAt": "2026-08-28"
+    }
+  },
+  "releaseDate": "2026-08-26",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-8-flash-next",
+    "openrouter": null
+  }
+}

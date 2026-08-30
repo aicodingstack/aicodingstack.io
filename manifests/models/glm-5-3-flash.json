@@ -1,0 +1,147 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "glm-5-3-flash",
+  "name": "GLM-5.3-Flash",
+  "description": "Z.ai's open-weight 320B multimodal coding model with 18B active parameters, controllable reasoning effort, a 1M-token context window, and native visual understanding.",
+  "translations": {
+    "de": {
+      "description": "Z.ais offenes multimodales 320B-Codingmodell mit 18B aktiven Parametern, steuerbarem Reasoning, 1 Mio. Token Kontext und nativer Bildverarbeitung."
+    },
+    "es": {
+      "description": "Modelo abierto multimodal de Z.ai para programación, con 320B de parámetros, 18B activos, razonamiento configurable, contexto de 1 M y visión nativa."
+    },
+    "fr": {
+      "description": "Modèle ouvert multimodal de Z.ai pour le code, avec 320 Md de paramètres, 18 Md actifs, raisonnement réglable, contexte de 1 M et vision native."
+    },
+    "id": {
+      "description": "Model coding multimodal open-weight 320B dari Z.ai dengan 18B parameter aktif, upaya penalaran yang dapat diatur, konteks 1 juta token, dan visi native."
+    },
+    "ja": {
+      "description": "320B中18Bを有効化し、推論量を調整できる100万トークン文脈とネイティブ画像理解を備えたZ.aiのオープンウェイト・マルチモーダルコーディングモデル。"
+    },
+    "ko": {
+      "description": "320B 중 18B를 활성화하며 추론 강도 조절, 100만 토큰 컨텍스트와 네이티브 시각 이해를 지원하는 Z.ai의 오픈 웨이트 멀티모달 코딩 모델입니다."
+    },
+    "pt": {
+      "description": "Modelo aberto multimodal da Z.ai para programação, com 320B de parâmetros, 18B ativos, raciocínio ajustável, contexto de 1 milhão e visão nativa."
+    },
+    "ru": {
+      "description": "Открытая мультимодальная модель Z.ai для программирования: 320 млрд параметров, 18 млрд активных, настраиваемое рассуждение, контекст 1 млн и зрение."
+    },
+    "tr": {
+      "description": "Z.ai'ın 320B toplam ve 18B etkin parametreli; ayarlanabilir akıl yürütme, 1 milyon token bağlam ve yerel görsel anlayış sunan açık ağırlıklı kodlama modeli."
+    },
+    "zh-Hans": {
+      "description": "Z.ai 的 320B 开放权重多模态编程模型，激活 18B 参数，支持可调推理强度、100 万 token 上下文和原生视觉理解。"
+    },
+    "zh-Hant": {
+      "description": "Z.ai 的 320B 開放權重多模態程式設計模型，啟用 18B 參數，支援可調推理強度、100 萬 token 上下文和原生視覺理解。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "title": "GLM-5.3-Flash official documentation",
+      "fields": [
+        "name",
+        "description",
+        "websiteUrl",
+        "docsUrl",
+        "size",
+        "activeParameters",
+        "contextWindow",
+        "maxOutput",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "title": "Official GLM-5.3-Flash model card",
+      "fields": [
+        "description",
+        "size",
+        "activeParameters",
+        "releaseDate",
+        "lifecycle",
+        "platformUrls.huggingface"
+      ]
+    },
+    {
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "title": "Z.ai API pricing",
+      "fields": ["tokenPricing"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/glm-5-3-flash",
+      "title": "Artificial Analysis GLM-5.3-Flash model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://z.ai",
+  "docsUrl": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+  "vendor": "Z.ai",
+  "size": "320B",
+  "activeParameters": "18B",
+  "contextWindow": 1000000,
+  "maxOutput": 131072,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-promotional",
+    "offers": [
+      {
+        "id": "global-promotional",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": null,
+        "effectiveTo": "2026-09-09",
+        "tiers": [
+          {
+            "condition": null,
+            "rates": { "input": 0.075, "output": 0.25, "cacheRead": 0.015, "cacheWrite": 0 }
+          }
+        ]
+      },
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": "2026-09-10",
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": { "input": 0.15, "output": 0.5, "cacheRead": 0.03, "cacheWrite": null }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-08-26",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "pdf", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/glm-5-3-flash",
+    "openrouter": "https://openrouter.ai/z-ai/glm-5.3-flash"
+  }
+}

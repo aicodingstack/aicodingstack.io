@@ -19,6 +19,7 @@ import KimiCode from '../../../manifests/extensions/kimi-code.json'
 import MistralVibe from '../../../manifests/extensions/mistral-vibe.json'
 import OpencodeExtension from '../../../manifests/extensions/opencode-extension.json'
 import Qoder from '../../../manifests/extensions/qoder.json'
+import ReasonixExtension from '../../../manifests/extensions/reasonix-extension.json'
 import RooCode from '../../../manifests/extensions/roo-code.json'
 import Tabnine from '../../../manifests/extensions/tabnine.json'
 import Verdent from '../../../manifests/extensions/verdent.json'
@@ -40,6 +41,7 @@ export const extensionsData = [
   MistralVibe,
   OpencodeExtension,
   Qoder,
+  ReasonixExtension,
   RooCode,
   Tabnine,
   Verdent,

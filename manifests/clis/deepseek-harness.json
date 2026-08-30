@@ -1,0 +1,135 @@
+{
+  "$schema": "../$schemas/cli.schema.json",
+  "id": "deepseek-harness",
+  "name": "DeepSeek Harness",
+  "familyId": "deepseek-harness",
+  "description": "DeepSeek Harness is an open-source, plugin-based agent harness in developer preview, with coding tools, traceable sessions, multiple runtime modes, workflows, and a local Web UI.",
+  "translations": {
+    "de": {
+      "description": "DeepSeek Harness ist ein quelloffenes Plugin-Agentensystem in der Entwicklervorschau mit Coding-Werkzeugen, nachvollziehbaren Sitzungen, mehreren Laufzeitmodi und lokaler Weboberfläche."
+    },
+    "es": {
+      "description": "DeepSeek Harness es un entorno de agentes de código abierto y basado en plugins, en vista previa para desarrolladores, con herramientas, sesiones trazables, varios modos y una interfaz web local."
+    },
+    "fr": {
+      "description": "DeepSeek Harness est un environnement d'agents open source à plugins, en préversion développeur, avec outils de codage, sessions traçables, plusieurs modes et interface Web locale."
+    },
+    "id": {
+      "description": "DeepSeek Harness adalah kerangka agen sumber terbuka berbasis plugin dalam pratinjau pengembang, dengan alat coding, sesi yang dapat ditelusuri, beberapa mode runtime, alur kerja, dan UI Web lokal."
+    },
+    "ja": {
+      "description": "DeepSeek Harnessは開発者プレビュー段階のオープンソースなプラグイン型エージェント基盤で、コーディングツール、追跡可能なセッション、複数の実行モード、ワークフロー、ローカルWeb UIを備えます。"
+    },
+    "ko": {
+      "description": "DeepSeek Harness는 개발자 프리뷰 단계의 오픈 소스 플러그인 기반 에이전트 하네스로, 코딩 도구, 추적 가능한 세션, 여러 런타임 모드, 워크플로와 로컬 웹 UI를 제공합니다."
+    },
+    "pt": {
+      "description": "DeepSeek Harness é uma estrutura de agentes open source baseada em plugins e em prévia para desenvolvedores, com ferramentas, sessões rastreáveis, vários modos e interface Web local."
+    },
+    "ru": {
+      "description": "DeepSeek Harness — открытая модульная среда агентов на стадии предварительной версии для разработчиков, с инструментами программирования, трассируемыми сеансами и локальным веб-интерфейсом."
+    },
+    "tr": {
+      "description": "DeepSeek Harness, geliştirici önizlemesindeki açık kaynaklı eklenti tabanlı bir ajan altyapısıdır; kodlama araçları, izlenebilir oturumlar, çeşitli modlar ve yerel Web arayüzü sunar."
+    },
+    "zh-Hans": {
+      "description": "DeepSeek Harness 是一款处于开发者预览阶段的开源插件化 Agent Harness，提供编码工具、可追踪会话、多种运行模式、工作流和本地 Web UI。"
+    },
+    "zh-Hant": {
+      "description": "DeepSeek Harness 是一款處於開發者預覽階段的開放原始碼外掛化 Agent Harness，提供程式設計工具、可追蹤工作階段、多種執行模式、工作流程和本機 Web UI。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.deepseek.com/harness/en/",
+      "title": "DeepSeek Harness official product page",
+      "fields": [
+        "name",
+        "description",
+        "websiteUrl",
+        "vendor",
+        "license",
+        "pricing",
+        "resourceUrls.download",
+        "platforms"
+      ]
+    },
+    {
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "title": "DeepSeek Harness official repository",
+      "fields": [
+        "description",
+        "docsUrl",
+        "githubUrl",
+        "license",
+        "resourceUrls.issue",
+        "communityUrls.github",
+        "communityUrls.discord"
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/@deepseek-ai/dsh",
+      "title": "DeepSeek Harness npm package",
+      "fields": ["latestVersion", "releaseTracking", "platforms"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-30",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.deepseek.com/harness/en/",
+  "docsUrl": "https://deepseek-harness.github.io/deepseek-harness/",
+  "vendor": "DeepSeek",
+  "latestVersion": "0.1.1-rc.2",
+  "releaseTracking": {
+    "provider": "npm",
+    "identifier": "@deepseek-ai/dsh"
+  },
+  "githubUrl": "https://github.com/deepseek-ai/deepseek-harness",
+  "license": "MIT",
+  "pricing": [
+    {
+      "name": "Open Source",
+      "value": 0,
+      "currency": null,
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://www.deepseek.com/harness/en/",
+    "changelog": null,
+    "pricing": null,
+    "issue": "https://github.com/deepseek-ai/deepseek-harness/discussions"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": "https://github.com/deepseek-ai/deepseek-harness",
+    "youtube": null,
+    "discord": "https://discord.gg/Ycq5dCaS4",
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [],
+  "platforms": [
+    {
+      "os": "macOS",
+      "installCommand": null,
+      "launchCommand": "npx @deepseek-ai/dsh web",
+      "installPath": null
+    },
+    {
+      "os": "Windows",
+      "installCommand": null,
+      "launchCommand": "npx @deepseek-ai/dsh web",
+      "installPath": null
+    },
+    {
+      "os": "Linux",
+      "installCommand": null,
+      "launchCommand": "npx @deepseek-ai/dsh web",
+      "installPath": null
+    }
+  ]
+}

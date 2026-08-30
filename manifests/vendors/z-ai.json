@@ -16,7 +16,7 @@
     {
       "id": "glm-air-flash",
       "name": "GLM Air / Flash",
-      "modelIds": ["glm-4-5-air", "glm-4-7-flash"]
+      "modelIds": ["glm-4-5-air", "glm-4-7-flash", "glm-5-3-flash"]
     },
     {
       "id": "glm-vision",
@@ -86,9 +86,14 @@
       "url": "https://x.com/Z_AI_Official",
       "title": "Z.ai twitter community",
       "fields": ["communityUrls.twitter"]
+    },
+    {
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "title": "Official GLM-5.3-Flash model card",
+      "fields": ["modelSeries"]
     }
   ],
-  "lastVerifiedAt": "2026-07-28",
+  "lastVerifiedAt": "2026-08-28",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://z.ai",

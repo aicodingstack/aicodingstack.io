@@ -251,7 +251,7 @@ export interface ManifestDesktop extends ManifestBaseApp {}
  * Based on: /manifests/$schemas/extension.schema.json#$defs/ideSupport
  */
 export interface ManifestIDESupport {
-  ideId: 'vscode' | 'jetbrains' | 'cursor' | 'windsurf' | 'trae' | 'zed'
+  ideId: 'vscode' | 'vscodium' | 'jetbrains' | 'cursor' | 'windsurf' | 'trae' | 'zed'
   marketplaceUrl: string | null
   installUri: string | null
 }

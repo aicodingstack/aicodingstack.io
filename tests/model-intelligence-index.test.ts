@@ -201,11 +201,17 @@ describe('model intelligence index', () => {
       ['qwen3-7-max', 47, false, 'Qwen3.7 Max'],
       ['qwen3-8-max', 58, false, 'Qwen3.8 Max'],
     ])
-    expect(qwenSeries[3]?.points.at(-1)).toMatchObject({
+    expect(qwenSeries[3]?.points.find(point => point.modelId === 'qwen3-8-27b')).toMatchObject({
       modelId: 'qwen3-8-27b',
       score: 52,
       estimated: false,
-      configuration: 'Qwen3.8 27B',
+      configuration: 'Qwen3.8 27B (xhigh)',
+    })
+    expect(qwenSeries[3]?.points.at(-1)).toMatchObject({
+      modelId: 'qwen3-8-flash-next',
+      score: 56,
+      estimated: false,
+      configuration: 'Qwen3.8-Flash-Next',
     })
   })
 
@@ -286,7 +292,8 @@ describe('model intelligence index', () => {
       ])
     ).toEqual([
       ['deepseek-v4-flash-preview', 42, false, 'DeepSeek V4 Flash (Reasoning, Max Effort)'],
-      ['deepseek-v4-flash', 52, false, 'DeepSeek V4 Flash 0731 (Reasoning, Max Effort)'],
+      ['deepseek-v4-flash', 52, false, 'DeepSeek V4 Flash 0731 (max)'],
+      ['deepseek-v4-flash-vision', 51, false, 'DeepSeek V4 Flash Vision (max)'],
     ])
   })
 
@@ -383,6 +390,7 @@ describe('model intelligence index', () => {
     expect(glmSeries[1]?.points.map(point => point.modelId)).toEqual([
       'glm-4-5-air',
       'glm-4-7-flash',
+      'glm-5-3-flash',
     ])
   })
 
@@ -500,6 +508,7 @@ describe('model intelligence index', () => {
       ['glm-5-1', 'GLM', 41],
       ['glm-5-2', 'GLM', 53],
       ['glm-5-3', 'GLM', 60],
+      ['glm-5-3-flash', 'GLM Air / Flash', 57],
     ])
   })
 

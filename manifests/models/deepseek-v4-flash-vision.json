@@ -1,0 +1,110 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "deepseek-v4-flash-vision",
+  "name": "DeepSeek-V4-Flash-Vision-Exp",
+  "description": "DeepSeek's experimental multimodal V4 Flash model for text and image understanding, with thinking enabled by default, a 1M-token context window, and up to 384K output tokens.",
+  "translations": {
+    "de": {
+      "description": "DeepSeeks experimentelles multimodales V4-Flash-Modell für Text- und Bildverständnis, mit standardmäßig aktivem Reasoning, 1 Mio. Token Kontext und bis zu 384K Ausgabetokens."
+    },
+    "es": {
+      "description": "Modelo V4 Flash multimodal experimental de DeepSeek para texto e imágenes, con razonamiento activo por defecto, contexto de 1 M y hasta 384K tokens de salida."
+    },
+    "fr": {
+      "description": "Modèle V4 Flash multimodal expérimental de DeepSeek pour le texte et l’image, avec raisonnement activé par défaut, contexte de 1 M et jusqu’à 384K jetons de sortie."
+    },
+    "id": {
+      "description": "Model V4 Flash multimodal eksperimental DeepSeek untuk memahami teks dan gambar, dengan penalaran aktif secara default, konteks 1 juta token, dan output hingga 384K token."
+    },
+    "ja": {
+      "description": "テキストと画像を理解し、推論が既定で有効、100万トークン文脈と最大384K出力を備えたDeepSeekの実験的マルチモーダルV4 Flashモデル。"
+    },
+    "ko": {
+      "description": "텍스트와 이미지를 이해하고 추론이 기본 활성화되며 100만 토큰 컨텍스트와 최대 384K 출력을 지원하는 DeepSeek의 실험적 멀티모달 V4 Flash 모델입니다."
+    },
+    "pt": {
+      "description": "Modelo V4 Flash multimodal experimental da DeepSeek para texto e imagens, com raciocínio ativado por padrão, contexto de 1 milhão e até 384K tokens de saída."
+    },
+    "ru": {
+      "description": "Экспериментальная мультимодальная V4 Flash от DeepSeek для текста и изображений: рассуждение по умолчанию, контекст 1 млн и вывод до 384K токенов."
+    },
+    "tr": {
+      "description": "DeepSeek'in metin ve görüntü anlayışı için deneysel multimodal V4 Flash modeli; varsayılan açık akıl yürütme, 1 milyon token bağlam ve 384K'ya kadar çıktı sunar."
+    },
+    "zh-Hans": {
+      "description": "DeepSeek 面向文本与图像理解的实验性多模态 V4 Flash 模型，默认启用推理，支持 100 万 token 上下文和最高 384K 输出。"
+    },
+    "zh-Hant": {
+      "description": "DeepSeek 面向文字與圖像理解的實驗性多模態 V4 Flash 模型，預設啟用推理，支援 100 萬 token 上下文和最高 384K 輸出。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://api-docs.deepseek.com/updates/",
+      "title": "DeepSeek API change log",
+      "fields": [
+        "name",
+        "description",
+        "websiteUrl",
+        "docsUrl",
+        "releaseDate",
+        "lifecycle",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "title": "DeepSeek models and pricing",
+      "fields": ["contextWindow", "maxOutput", "tokenPricing", "capabilities"]
+    },
+    {
+      "url": "https://api-docs.deepseek.com/guides/vision",
+      "title": "DeepSeek Vision guide",
+      "fields": ["inputModalities", "outputModalities"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/deepseek-v4-flash-vision",
+      "title": "Artificial Analysis DeepSeek V4 Flash Vision model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-28",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.deepseek.com",
+  "docsUrl": "https://api-docs.deepseek.com/guides/vision",
+  "vendor": "DeepSeek",
+  "size": null,
+  "activeParameters": null,
+  "contextWindow": 1000000,
+  "maxOutput": 393216,
+  "tokenPricing": {
+    "status": "unavailable",
+    "reason": "unsupported-pricing-structure",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "releaseDate": "2026-08-21",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/deepseek-v4-flash-vision",
+    "openrouter": null
+  }
+}
