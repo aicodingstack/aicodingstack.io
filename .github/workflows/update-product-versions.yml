@@ -24,19 +24,13 @@ jobs:
       - name: Setup pnpm
         uses: ./.github/actions/setup-pnpm
 
-      - name: Refresh tracked product versions
-        run: pnpm fetch:product-versions
+      - name: Update and validate tracked product versions
+        run: pnpm manifest-data:update -- --only=product-versions
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Regenerate manifest modules
-        run: pnpm generate:manifests
-
-      - name: Validate updated data
+      - name: Check formatting
         run: |
-          pnpm test:validate
-          pnpm validate:i18n
-          pnpm data-health:check
           pnpm format:check
           pnpm biome:check
           git diff --check
@@ -44,7 +38,7 @@ jobs:
       - name: Check for changes
         id: git-check
         run: |
-          git diff --exit-code manifests src/lib/generated || echo "changes=true" >> "$GITHUB_OUTPUT"
+          git diff --exit-code manifests data/data-health.json docs/DATA-HEALTH.md src/lib/generated || echo "changes=true" >> "$GITHUB_OUTPUT"
 
       - name: Create pull request
         if: steps.git-check.outputs.changes == 'true'

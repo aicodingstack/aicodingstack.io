@@ -52,6 +52,10 @@ Every new model catalog entry must have a published Artificial Analysis Intellig
 
 ## Freshness policy
 
-Run `pnpm data-health:report` after manifest or translation changes and commit both generated snapshots. CI runs `pnpm data-health:check` to reject invalid or stale snapshots.
+`pnpm manifest-data:validate` is the offline validation entry point for schema coverage, semantic relationships, i18n structure, and the committed data-health snapshot. `pnpm manifest-data:check` adds read-only checks against every configured authoritative source. `pnpm manifest-data:update` updates only the explicitly configured safe fields, regenerates derived data and health reports, and reruns the offline validation suite. Source checks can be limited with `--only=<source,...>`.
+
+The update harness covers GitHub star snapshots, declared product release versions, exact benchmark mappings, and monitored model-source digests. A pricing or lifecycle source change updates only its digest and observation date; changing the corresponding factual fields still requires review against the cited official source. Any missing, malformed, renamed, or ambiguous upstream result fails the relevant task.
+
+Run `pnpm data-health:report` after manifest or translation changes made outside the unified update harness and commit both generated snapshots. CI runs `pnpm data-health:check` to reject invalid or stale snapshots.
 
 The current review thresholds are 30 days for models and providers, 60 days for IDEs, CLIs, and extensions, and 90 days for vendors. Threshold findings remain warnings so that legacy debt stays visible without blocking unrelated work. Dangling product relationships are errors because they always point to nonexistent records and can break navigation. Network reachability is checked by the separate scheduled URL workflow; source authority and field coverage remain pull-request review responsibilities.

@@ -81,7 +81,8 @@
   "latestVersion": "1.34.0",
   "releaseTracking": {
     "provider": "github-release",
-    "identifier": "esengine/DeepSeek-Reasonix"
+    "identifier": "esengine/DeepSeek-Reasonix",
+    "tagPrefix": "desktop-"
   },
   "githubUrl": "https://github.com/esengine/DeepSeek-Reasonix",
   "license": "MIT",

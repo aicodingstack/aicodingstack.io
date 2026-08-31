@@ -24,12 +24,11 @@ jobs:
       - name: Setup pnpm
         uses: ./.github/actions/setup-pnpm
 
-      - name: Check monitored official sources
-        run: pnpm fetch:model-sources
+      - name: Update and validate monitored official sources
+        run: pnpm manifest-data:update -- --only=model-sources
 
-      - name: Validate monitoring metadata
+      - name: Check formatting
         run: |
-          pnpm test:validate
           pnpm format:check
           pnpm biome:check
           git diff --check
@@ -37,7 +36,7 @@ jobs:
       - name: Check for changes
         id: git-check
         run: |
-          git diff --exit-code manifests/models || echo "changes=true" >> "$GITHUB_OUTPUT"
+          git diff --exit-code manifests/models data/data-health.json docs/DATA-HEALTH.md src/lib/generated || echo "changes=true" >> "$GITHUB_OUTPUT"
 
       - name: Create review pull request
         if: steps.git-check.outputs.changes == 'true'

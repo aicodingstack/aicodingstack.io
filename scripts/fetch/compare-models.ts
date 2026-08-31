@@ -3,6 +3,7 @@
 import { readdir, readFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import type { ManifestMapping } from '../../src/types/manifests'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const manifestsDir = join(__dirname, '../../manifests/models')
@@ -73,11 +74,6 @@ interface ApiData {
       }
     }
   }
-}
-
-interface MappingData {
-  vendors: Record<string, string>
-  models: Record<string, string>
 }
 
 function getPrimaryManifestRates(manifest: {
@@ -176,7 +172,7 @@ async function main(): Promise<void> {
   const apiData = JSON.parse(await readFile(apiDataFile, 'utf-8')) as ApiData
   const { vendors: vendorMapping, models: modelMapping } = JSON.parse(
     await readFile(mappingFile, 'utf-8')
-  ) as MappingData
+  ) as ManifestMapping
 
   // Read all model manifests
   const files = await readdir(manifestsDir)

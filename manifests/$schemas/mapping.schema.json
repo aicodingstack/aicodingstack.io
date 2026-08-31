@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "External Manifest ID Mapping",
+  "description": "Explicit vendor and model identifier mappings used by external benchmark comparisons.",
+  "type": "object",
+  "properties": {
+    "vendors": { "$ref": "#/$defs/mapping" },
+    "models": { "$ref": "#/$defs/mapping" }
+  },
+  "required": ["vendors", "models"],
+  "additionalProperties": false,
+  "$defs": {
+    "mapping": {
+      "type": "object",
+      "propertyNames": { "minLength": 1 },
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}
