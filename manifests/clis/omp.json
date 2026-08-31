@@ -73,7 +73,7 @@
   "websiteUrl": "https://omp.sh",
   "docsUrl": "https://omp.sh/docs",
   "vendor": "Oh My Pi",
-  "latestVersion": "17.1.7",
+  "latestVersion": "18.0.11",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@oh-my-pi/pi-coding-agent"

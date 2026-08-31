@@ -134,32 +134,38 @@ export async function syncBenchmarks(options: {
   const leaderboards = trackingEntries.length ? await fetchSweBenchLeaderboards(fetchImpl) : []
 
   const changes: BenchmarkChange[] = []
+  const failures: string[] = []
   for (const { entry, tracking } of trackingEntries) {
     const leaderboard = leaderboards.find(item => item.name === tracking.leaderboard)
     if (!leaderboard) {
-      throw new Error(
+      failures.push(
         `models/${entry.manifest.id}: SWE-bench leaderboard ${tracking.leaderboard} was not found`
       )
+      continue
     }
     const matches = leaderboard.results.filter(result => result.folder === tracking.resultId)
     if (matches.length !== 1) {
-      throw new Error(
+      failures.push(
         `models/${entry.manifest.id}: expected exactly one SWE-bench result ${tracking.resultId}, found ${matches.length}`
       )
+      continue
     }
     const result = matches[0]
     if (!result) {
-      throw new Error(`models/${entry.manifest.id}: SWE-bench result disappeared after validation`)
+      failures.push(`models/${entry.manifest.id}: SWE-bench result disappeared after validation`)
+      continue
     }
     if (result.name !== tracking.modelLabel) {
-      throw new Error(
+      failures.push(
         `models/${entry.manifest.id}: SWE-bench label changed from "${tracking.modelLabel}" to "${result.name}"`
       )
+      continue
     }
 
     const previousScore = entry.manifest.benchmarks[tracking.benchmark]
     if (typeof previousScore !== 'number' && previousScore !== null) {
-      throw new Error(`models/${entry.manifest.id}: ${tracking.benchmark} must be a number or null`)
+      failures.push(`models/${entry.manifest.id}: ${tracking.benchmark} must be a number or null`)
+      continue
     }
     if (previousScore === result.resolved) continue
     changes.push({
@@ -171,6 +177,12 @@ export async function syncBenchmarks(options: {
       modelLabel: result.name,
       sourceUrl: SWE_BENCH_SOURCE_URL,
     })
+  }
+
+  if (failures.length > 0) {
+    throw new Error(
+      `Benchmark synchronization failed without writing changes:\n${failures.join('\n')}`
+    )
   }
 
   if (options.write) {

@@ -176,6 +176,7 @@ export type ManifestReleaseTracking =
   | {
       provider: 'github-release'
       identifier: string
+      tagPrefix?: string
     }
 
 /**
@@ -493,7 +494,20 @@ export interface ManifestGitHubStars {
 }
 
 // =============================================================================
-// SECTION 6: Manifest Array Types (for JSON file imports)
+// SECTION 6: External ID Mapping
+// =============================================================================
+
+/**
+ * External vendor and model identifiers used by comparison data sources
+ * Based on: /manifests/$schemas/mapping.schema.json
+ */
+export interface ManifestMapping {
+  vendors: Record<string, string>
+  models: Record<string, string>
+}
+
+// =============================================================================
+// SECTION 7: Manifest Array Types (for JSON file imports)
 // =============================================================================
 
 /**
@@ -508,7 +522,7 @@ export type ManifestProviderArray = ManifestProvider[]
 export type ManifestVendorArray = ManifestVendor[]
 
 // =============================================================================
-// SECTION 7: Utility Types
+// SECTION 8: Utility Types
 // =============================================================================
 
 /**

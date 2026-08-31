@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Manifest Data Health Report",
+  "description": "Generated manifest provenance, freshness, relationship, and translation health snapshot.",
+  "type": "object",
+  "properties": {
+    "asOf": { "type": "string", "format": "date" },
+    "thresholds": { "$ref": "#/$defs/categoryThresholds" },
+    "summary": { "$ref": "#/$defs/summary" },
+    "byCategory": { "$ref": "#/$defs/categoryHealthMap" },
+    "translationsByLocale": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "$ref": "#/$defs/translationHealth" }
+    },
+    "issues": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/issue" }
+    }
+  },
+  "required": ["asOf", "thresholds", "summary", "byCategory", "translationsByLocale", "issues"],
+  "additionalProperties": false,
+  "$defs": {
+    "categories": {
+      "type": "string",
+      "enum": ["ides", "clis", "desktops", "extensions", "models", "providers", "vendors"]
+    },
+    "nonNegativeInteger": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "percentage": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "categoryThresholds": {
+      "type": "object",
+      "properties": {
+        "ides": { "$ref": "#/$defs/nonNegativeInteger" },
+        "clis": { "$ref": "#/$defs/nonNegativeInteger" },
+        "desktops": { "$ref": "#/$defs/nonNegativeInteger" },
+        "extensions": { "$ref": "#/$defs/nonNegativeInteger" },
+        "models": { "$ref": "#/$defs/nonNegativeInteger" },
+        "providers": { "$ref": "#/$defs/nonNegativeInteger" },
+        "vendors": { "$ref": "#/$defs/nonNegativeInteger" }
+      },
+      "required": ["ides", "clis", "desktops", "extensions", "models", "providers", "vendors"],
+      "additionalProperties": false
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "totalRecords": { "$ref": "#/$defs/nonNegativeInteger" },
+        "recordsWithSources": { "$ref": "#/$defs/nonNegativeInteger" },
+        "verifiedRecords": { "$ref": "#/$defs/nonNegativeInteger" },
+        "provenanceComplete": { "$ref": "#/$defs/nonNegativeInteger" },
+        "staleVerifiedRecords": { "$ref": "#/$defs/nonNegativeInteger" },
+        "translationPlaceholderValues": { "$ref": "#/$defs/nonNegativeInteger" },
+        "danglingRelationships": { "$ref": "#/$defs/nonNegativeInteger" },
+        "modelBenchmarkCoverage": { "$ref": "#/$defs/percentage" },
+        "productsWithPricing": { "$ref": "#/$defs/nonNegativeInteger" },
+        "productRecords": { "$ref": "#/$defs/nonNegativeInteger" },
+        "communityUrlsPopulated": { "$ref": "#/$defs/nonNegativeInteger" },
+        "communityUrlsWithProvenance": { "$ref": "#/$defs/nonNegativeInteger" },
+        "duplicatedVendorCommunityUrls": { "$ref": "#/$defs/nonNegativeInteger" },
+        "errors": { "$ref": "#/$defs/nonNegativeInteger" },
+        "warnings": { "$ref": "#/$defs/nonNegativeInteger" },
+        "info": { "$ref": "#/$defs/nonNegativeInteger" }
+      },
+      "required": [
+        "totalRecords",
+        "recordsWithSources",
+        "verifiedRecords",
+        "provenanceComplete",
+        "staleVerifiedRecords",
+        "translationPlaceholderValues",
+        "danglingRelationships",
+        "modelBenchmarkCoverage",
+        "productsWithPricing",
+        "productRecords",
+        "communityUrlsPopulated",
+        "communityUrlsWithProvenance",
+        "duplicatedVendorCommunityUrls",
+        "errors",
+        "warnings",
+        "info"
+      ],
+      "additionalProperties": false
+    },
+    "categoryHealth": {
+      "type": "object",
+      "properties": {
+        "total": { "$ref": "#/$defs/nonNegativeInteger" },
+        "verified": { "$ref": "#/$defs/nonNegativeInteger" },
+        "provenanceComplete": { "$ref": "#/$defs/nonNegativeInteger" },
+        "stale": { "$ref": "#/$defs/nonNegativeInteger" }
+      },
+      "required": ["total", "verified", "provenanceComplete", "stale"],
+      "additionalProperties": false
+    },
+    "categoryHealthMap": {
+      "type": "object",
+      "properties": {
+        "ides": { "$ref": "#/$defs/categoryHealth" },
+        "clis": { "$ref": "#/$defs/categoryHealth" },
+        "desktops": { "$ref": "#/$defs/categoryHealth" },
+        "extensions": { "$ref": "#/$defs/categoryHealth" },
+        "models": { "$ref": "#/$defs/categoryHealth" },
+        "providers": { "$ref": "#/$defs/categoryHealth" },
+        "vendors": { "$ref": "#/$defs/categoryHealth" }
+      },
+      "required": ["ides", "clis", "desktops", "extensions", "models", "providers", "vendors"],
+      "additionalProperties": false
+    },
+    "translationHealth": {
+      "type": "object",
+      "properties": {
+        "totalStrings": { "$ref": "#/$defs/nonNegativeInteger" },
+        "matchingEnglish": { "$ref": "#/$defs/nonNegativeInteger" },
+        "matchingEnglishPercent": { "$ref": "#/$defs/percentage" }
+      },
+      "required": ["totalStrings", "matchingEnglish", "matchingEnglishPercent"],
+      "additionalProperties": false
+    },
+    "issue": {
+      "type": "object",
+      "properties": {
+        "severity": { "type": "string", "enum": ["error", "warning", "info"] },
+        "code": { "type": "string", "minLength": 1 },
+        "category": { "$ref": "#/$defs/categories" },
+        "id": { "type": "string", "minLength": 1 },
+        "message": { "type": "string", "minLength": 1 }
+      },
+      "required": ["severity", "code", "category", "id", "message"],
+      "additionalProperties": false
+    }
+  }
+}

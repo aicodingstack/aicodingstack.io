@@ -149,6 +149,11 @@
             "identifier": {
               "type": "string",
               "pattern": "^[a-zA-Z0-9._-]+/[a-zA-Z0-9._-]+$"
+            },
+            "tagPrefix": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Exact GitHub release tag prefix removed before updating latestVersion"
             }
           },
           "required": ["provider", "identifier"],

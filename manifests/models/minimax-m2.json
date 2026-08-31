@@ -92,7 +92,7 @@
       "benchmark": "sweBench",
       "leaderboard": "Verified",
       "resultId": "20251124_mini-v1.17.0_minimax-m2",
-      "modelLabel": "mini-SWE-agent + Minimax M2"
+      "modelLabel": "mini-SWE-agent + MiniMax M2"
     }
   ],
   "platformUrls": {

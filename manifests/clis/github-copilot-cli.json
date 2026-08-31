@@ -45,7 +45,7 @@
   "websiteUrl": "https://github.com/features/copilot/cli",
   "docsUrl": "https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli",
   "vendor": "GitHub",
-  "latestVersion": "1.0.75",
+  "latestVersion": "1.0.82",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@github/copilot"

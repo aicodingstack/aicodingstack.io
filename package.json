@@ -24,6 +24,9 @@
     "test:ci": "vitest run --reporter=verbose",
     "test:e2e": "playwright test",
     "test:e2e:ci": "playwright test --reporter=line",
+    "manifest-data:validate": "tsx scripts/manifest-data/index.ts validate",
+    "manifest-data:check": "tsx scripts/manifest-data/index.ts check",
+    "manifest-data:update": "tsx scripts/manifest-data/index.ts update",
     "test:validate": "vitest run tests/validate --reporter=verbose",
     "test:urls": "RUN_URL_TESTS=1 vitest run tests/validate/urls.accessibility.test.ts --reporter=verbose",
     "validate:i18n": "tsx scripts/validate/validate-i18n.ts",
@@ -44,6 +47,7 @@
     "refactor:sort-fields": "tsx scripts/refactor/index.ts sort-manifest-fields",
     "fetch": "tsx scripts/fetch/index.ts",
     "fetch:github-stars": "tsx scripts/fetch/index.ts github-stars",
+    "fetch:github-stars:check": "tsx scripts/fetch/fetch-github-stars.ts --check",
     "fetch:product-versions": "tsx scripts/fetch/fetch-product-versions.ts --write",
     "fetch:product-versions:check": "tsx scripts/fetch/fetch-product-versions.ts --check",
     "fetch:benchmarks": "tsx scripts/fetch/fetch-benchmarks.ts --write",
@@ -84,7 +88,7 @@
     "@playwright/test": "^1.62.1",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/mdx": "^2.0.14",
-    "@types/node": "^22.20.1",
+    "@types/node": "^24.12.0",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
     "@typescript-eslint/parser": "^8.68.0",
@@ -116,7 +120,7 @@
   },
   "homepage": "https://github.com/aicodingstack/aicodingstack.io#readme",
   "engines": {
-    "node": "22"
+    "node": "24"
   },
   "overrides": {
     "@node-minify/core": {

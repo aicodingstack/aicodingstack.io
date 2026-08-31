@@ -87,7 +87,7 @@
   "websiteUrl": "https://about.gitlab.com/gitlab-duo",
   "docsUrl": "https://docs.gitlab.com/user/gitlab_duo_cli/",
   "vendor": "GitLab",
-  "latestVersion": "9.6.0",
+  "latestVersion": "9.16.0",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@gitlab/duo-cli"

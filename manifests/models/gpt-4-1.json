@@ -92,7 +92,7 @@
       "benchmark": "sweBench",
       "leaderboard": "Verified",
       "resultId": "20250726_mini-v1.0.0_gpt-4.1-2025-04-14",
-      "modelLabel": "mini-SWE-agent + GPT-4.1 (2025-04-14)"
+      "modelLabel": "mini-SWE-agent + GPT 4.1 (2025-04-14)"
     }
   ],
   "platformUrls": {

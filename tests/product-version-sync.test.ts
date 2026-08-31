@@ -93,6 +93,35 @@ describe('product version sources', () => {
     })
   })
 
+  it('sends GitHub API headers through RequestInit', async () => {
+    const previousToken = process.env.GITHUB_TOKEN
+    process.env.GITHUB_TOKEN = 'test-token'
+    let headers: Record<string, string> | undefined
+    const fetchImpl: VersionFetch = async (_input, init) => {
+      headers = init?.headers
+      return jsonFetch({
+        tag_name: 'v1.0.0',
+        html_url: 'https://github.com/example/tool/releases/tag/v1.0.0',
+      })(_input, init)
+    }
+
+    try {
+      await fetchTrackedVersion(
+        { provider: 'github-release', identifier: 'example/tool' },
+        fetchImpl
+      )
+    } finally {
+      if (previousToken === undefined) delete process.env.GITHUB_TOKEN
+      else process.env.GITHUB_TOKEN = previousToken
+    }
+
+    expect(headers).toMatchObject({
+      Accept: 'application/vnd.github+json',
+      Authorization: 'Bearer test-token',
+      'User-Agent': 'aicodingstack-version-sync',
+    })
+  })
+
   it('reads PyPI and Visual Studio Marketplace versions', async () => {
     const pypi = await fetchTrackedVersion(
       { provider: 'pypi', identifier: 'example-tool' },
@@ -165,6 +194,56 @@ describe('product version synchronization', () => {
     expect(sourceAfterSync).toBe(
       sourceBeforeSync.replace('"latestVersion": "1.0.0"', '"latestVersion": "1.1.0"')
     )
+  })
+
+  it('removes an explicitly configured GitHub release tag prefix', async () => {
+    const rootDir = await createManifestRoot([
+      {
+        id: 'desktop-example',
+        latestVersion: '1.2.0',
+        releaseTracking: {
+          provider: 'github-release',
+          identifier: 'example/tool',
+          tagPrefix: 'desktop-',
+        },
+      },
+    ])
+
+    const result = await syncProductVersions({
+      rootDir,
+      write: false,
+      fetchImpl: jsonFetch({
+        tag_name: 'desktop-v1.3.0',
+        html_url: 'https://github.com/example/tool/releases/tag/desktop-v1.3.0',
+      }),
+    })
+
+    expect(result.changes[0]?.nextVersion).toBe('1.3.0')
+  })
+
+  it('fails closed when a GitHub release tag does not match its configured prefix', async () => {
+    const rootDir = await createManifestRoot([
+      {
+        id: 'desktop-example',
+        latestVersion: '1.2.0',
+        releaseTracking: {
+          provider: 'github-release',
+          identifier: 'example/tool',
+          tagPrefix: 'desktop-',
+        },
+      },
+    ])
+
+    await expect(
+      syncProductVersions({
+        rootDir,
+        write: true,
+        fetchImpl: jsonFetch({
+          tag_name: 'cli-v1.3.0',
+          html_url: 'https://github.com/example/tool/releases/tag/cli-v1.3.0',
+        }),
+      })
+    ).rejects.toThrow('does not start with configured tagPrefix')
   })
 
   it('does not write partial changes when a source fails', async () => {

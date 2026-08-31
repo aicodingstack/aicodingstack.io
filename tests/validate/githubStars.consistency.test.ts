@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-import Ajv from 'ajv'
+import Ajv2020 from 'ajv/dist/2020.js'
 import addFormats from 'ajv-formats'
 import { describe, expect, it } from 'vitest'
 
@@ -75,7 +75,7 @@ describe('validate: github-stars consistency', () => {
       path.join(rootDir, 'manifests', '$schemas', 'github-stars.schema.json')
     )
     const githubStars = readJsonFile(path.join(rootDir, 'data', 'github-stars.json'))
-    const ajv = new Ajv({ allErrors: true })
+    const ajv = new Ajv2020({ allErrors: true })
     addFormats(ajv)
     const validate = ajv.compile(schema as object)
 

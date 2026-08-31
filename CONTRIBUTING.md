@@ -73,7 +73,7 @@ Want to contribute code? Great! Please:
 
 ### Prerequisites
 
-- **Node.js**: 22.x
+- **Node.js**: 24.x
 - **pnpm**: 11.17.0 (pinned by `packageManager`)
 - **Git**: For version control
 

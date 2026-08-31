@@ -172,7 +172,7 @@ This is the simplest method - Cloudflare handles everything automatically.
    - None required for basic setup
 
 5. **Advanced Settings**:
-   - Node.js version: `20`
+   - Node.js version: `24`
    - Compatibility date: `2025-03-01` (or latest)
 
 6. **Click "Save and Deploy"**

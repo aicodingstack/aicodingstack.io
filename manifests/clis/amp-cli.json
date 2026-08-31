@@ -45,7 +45,7 @@
   "websiteUrl": "https://ampcode.com",
   "docsUrl": "https://ampcode.com",
   "vendor": "Sourcegraph",
-  "latestVersion": "0.0.1785488326-gdfd462",
+  "latestVersion": "0.0.1788105629-g37d5d1",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@ampcode/cli"

@@ -188,7 +188,7 @@ export async function fetchTrackedVersion(
     }
     case 'github-release': {
       const url = `https://api.github.com/repos/${tracking.identifier}/releases/latest`
-      const data = await fetchJson(fetchImpl, url, githubHeaders())
+      const data = await fetchJson(fetchImpl, url, { headers: githubHeaders() })
       return {
         version: getRequiredString(
           isRecord(data) ? data.tag_name : null,
@@ -219,8 +219,20 @@ function compareNumericVersions(left: number[], right: number[]): number {
   return 0
 }
 
-function formatObservedVersion(observed: string, current: string): string {
-  const normalized = observed.trim()
+function formatObservedVersion(
+  observed: string,
+  current: string,
+  tracking: ManifestReleaseTracking
+): string {
+  let normalized = observed.trim()
+  if (tracking.provider === 'github-release' && tracking.tagPrefix) {
+    if (!normalized.startsWith(tracking.tagPrefix)) {
+      throw new Error(
+        `github-release reported ${observed}, which does not start with configured tagPrefix ${tracking.tagPrefix}`
+      )
+    }
+    normalized = normalized.slice(tracking.tagPrefix.length)
+  }
   if (/^v\d/.test(current) && !/^v\d/.test(normalized)) return `v${normalized}`
   if (!/^v\d/.test(current) && /^v\d/.test(normalized)) return normalized.slice(1)
   return normalized
@@ -284,7 +296,11 @@ export async function syncProductVersions(options: {
       const tracking = entry.manifest.releaseTracking
       if (!tracking) throw new Error(`${entry.manifest.id} has no releaseTracking configuration`)
       const observation = await fetchTrackedVersion(tracking, options.fetchImpl)
-      const nextVersion = formatObservedVersion(observation.version, entry.manifest.latestVersion)
+      const nextVersion = formatObservedVersion(
+        observation.version,
+        entry.manifest.latestVersion,
+        tracking
+      )
       assertNotDowngrade(entry.manifest.latestVersion, nextVersion, tracking)
       return { entry, observation, nextVersion }
     })
