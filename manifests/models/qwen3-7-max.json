@@ -54,7 +54,7 @@
       ],
       "changeTracking": {
         "method": "normalized-content-sha256",
-        "digest": "sha256:75d7cba8e521c482e1a8939f0c53461dd83cd8f31fda9bf2ab21c74855223184",
+        "digest": "sha256:334aefe46901a89f4d6917ae1d567e62744803d08635731cbb570f5e4604e5fc",
         "observedAt": "2026-08-31"
       }
     },
@@ -64,7 +64,7 @@
       "fields": ["docsUrl", "contextWindow", "tokenPricing"],
       "changeTracking": {
         "method": "normalized-content-sha256",
-        "digest": "sha256:9aa3ea3ebcecdcca5747c28efc6cd5f8dab9ed564d0f03e6bf8a0cdf2a64ecc7",
+        "digest": "sha256:16f508b7d2be21f6d366a8cfad0013e3035ca9363c8a00f8837e4347a1f72686",
         "observedAt": "2026-08-31"
       }
     },
