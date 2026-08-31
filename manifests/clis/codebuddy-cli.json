@@ -46,7 +46,7 @@
   "websiteUrl": "https://www.codebuddy.ai/cli",
   "docsUrl": "https://www.codebuddy.ai/docs/cli",
   "vendor": "Tencent",
-  "latestVersion": "2.131.0",
+  "latestVersion": "2.142.0",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@tencent-ai/codebuddy-code"

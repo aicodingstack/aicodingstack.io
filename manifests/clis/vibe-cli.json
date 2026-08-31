@@ -67,7 +67,7 @@
   "websiteUrl": "https://mistral.ai/products/vibe",
   "docsUrl": "https://docs.mistral.ai/vibe/code/overview",
   "vendor": "Mistral AI",
-  "latestVersion": "2.23.0",
+  "latestVersion": "2.24.5",
   "releaseTracking": {
     "provider": "pypi",
     "identifier": "mistral-vibe"

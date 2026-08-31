@@ -45,7 +45,7 @@
   "websiteUrl": "https://www.augmentcode.com",
   "docsUrl": "https://docs.augmentcode.com/cli",
   "vendor": "Augment",
-  "latestVersion": "0.34.0",
+  "latestVersion": "0.36.0",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@augmentcode/auggie"

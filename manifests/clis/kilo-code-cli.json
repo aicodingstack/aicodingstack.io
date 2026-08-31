@@ -42,7 +42,7 @@
   "websiteUrl": "https://kilo.ai",
   "docsUrl": "https://kilo.ai/docs/code-with-ai/platforms/cli",
   "vendor": "Kilo",
-  "latestVersion": "7.4.16",
+  "latestVersion": "7.5.6",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@kilocode/cli"

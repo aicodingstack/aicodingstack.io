@@ -67,8 +67,8 @@
       "fields": ["tokenPricing"],
       "changeTracking": {
         "method": "normalized-content-sha256",
-        "digest": "sha256:740ecd45540ba01718b7682233cefd2f5b1f4dae7d40a16887e750dc9a0b84f0",
-        "observedAt": "2026-07-28"
+        "digest": "sha256:a5d011e375586b5307459881c04ebf3e488f0a8787c952ca957f23ea75bd4e9e",
+        "observedAt": "2026-08-31"
       }
     }
   ],

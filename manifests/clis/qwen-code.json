@@ -87,7 +87,7 @@
   "websiteUrl": "https://qwenlm.github.io/qwen-code-docs/en/",
   "docsUrl": "https://qwenlm.github.io/qwen-code-docs/en/",
   "vendor": "Alibaba",
-  "latestVersion": "0.21.2",
+  "latestVersion": "0.22.3",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@qwen-code/qwen-code"

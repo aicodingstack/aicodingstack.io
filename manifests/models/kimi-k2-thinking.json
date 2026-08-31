@@ -46,8 +46,8 @@
       "fields": ["lifecycle", "tokenPricing"],
       "changeTracking": {
         "method": "normalized-content-sha256",
-        "digest": "sha256:50692812b00a1b51ddd80947258f053d2317be53e34384d7421d2e9034d3b60d",
-        "observedAt": "2026-07-28"
+        "digest": "sha256:e7c3efc9e11c627ba1f37cc5cb70599218f12c46753d6340a7d21d4b6a1a6211",
+        "observedAt": "2026-08-31"
       }
     },
     {

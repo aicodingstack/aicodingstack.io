@@ -46,7 +46,7 @@
   "websiteUrl": "https://qoder.com/cli",
   "docsUrl": "https://docs.qoder.com/en/cli/quick-start",
   "vendor": "Alibaba",
-  "latestVersion": "1.1.7",
+  "latestVersion": "1.1.37",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@qoder-ai/qodercli"

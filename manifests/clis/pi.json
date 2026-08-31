@@ -75,7 +75,7 @@
   "websiteUrl": "https://pi.dev",
   "docsUrl": "https://pi.dev/docs/latest",
   "vendor": "Earendil Inc.",
-  "latestVersion": "0.83.0",
+  "latestVersion": "0.84.4",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@earendil-works/pi-coding-agent"
