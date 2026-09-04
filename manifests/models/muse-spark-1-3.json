@@ -1,0 +1,117 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "muse-spark-1-3",
+  "name": "Muse Spark 1.3",
+  "description": "Meta's multimodal reasoning model for long-running agentic, multi-agent, and coding workflows, with improved collaboration, instruction following, and coding efficiency.",
+  "translations": {
+    "de": {
+      "description": "Metas multimodales Reasoning-Modell für langfristige agentische, Multi-Agent- und Programmierabläufe mit verbesserter Zusammenarbeit, Anweisungsbefolgung und Effizienz beim Programmieren."
+    },
+    "es": {
+      "description": "El modelo de razonamiento multimodal de Meta para flujos agénticos, multiagente y de programación prolongados, con mejor colaboración, seguimiento de instrucciones y eficiencia de código."
+    },
+    "fr": {
+      "description": "Le modèle de raisonnement multimodal de Meta pour les workflows agentiques, multi-agents et de codage de longue durée, avec collaboration, suivi des instructions et efficacité améliorés."
+    },
+    "id": {
+      "description": "Model penalaran multimodal Meta untuk alur kerja agentik, multiagen, dan coding jangka panjang, dengan peningkatan kolaborasi, kepatuhan instruksi, serta efisiensi coding."
+    },
+    "ja": {
+      "description": "長期的なエージェント、マルチエージェント、コーディングのワークフロー向けMetaマルチモーダル推論モデル。連携、指示追従、コーディング効率が向上。"
+    },
+    "ko": {
+      "description": "장기 에이전트, 멀티 에이전트 및 코딩 워크플로를 위한 Meta의 멀티모달 추론 모델로, 협업, 지시 이행 및 코딩 효율이 향상되었습니다."
+    },
+    "pt": {
+      "description": "Modelo de raciocínio multimodal da Meta para fluxos agênticos, multiagente e de programação prolongados, com melhor colaboração, seguimento de instruções e eficiência de código."
+    },
+    "ru": {
+      "description": "Мультимодальная модель рассуждений Meta для длительных агентных и программных процессов с несколькими агентами, улучшенными совместной работой, следованием инструкциям и эффективностью кода."
+    },
+    "tr": {
+      "description": "Meta'nın uzun süreli ajan, çoklu ajan ve kodlama iş akışları için geliştirilmiş iş birliği, talimat takibi ve kodlama verimliliği sunan çok modlu akıl yürütme modeli."
+    },
+    "zh-Hans": {
+      "description": "Meta 面向长周期智能体、多智能体和编码工作流的多模态推理模型，提升了协作、指令遵循和编码效率。"
+    },
+    "zh-Hant": {
+      "description": "Meta 面向長週期智慧體、多智慧體和程式設計工作流程的多模態推理模型，提升了協作、指令遵循和程式設計效率。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+      "title": "Introducing Muse Spark 1.3",
+      "fields": ["name", "description", "releaseDate", "lifecycle", "websiteUrl"]
+    },
+    {
+      "url": "https://developer.meta.com/ai/",
+      "title": "Meta Model API",
+      "fields": ["docsUrl"]
+    },
+    {
+      "url": "https://models.dev/api.json",
+      "title": "Models.dev Meta model record",
+      "fields": [
+        "contextWindow",
+        "maxOutput",
+        "referenceTokenPricing",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/muse-spark-1-3",
+      "title": "Artificial Analysis Muse Spark 1.3 max model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-09-04",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://ai.meta.com",
+  "docsUrl": "https://developer.meta.com/ai/",
+  "vendor": "Meta",
+  "size": null,
+  "activeParameters": null,
+  "contextWindow": 1048576,
+  "maxOutput": 131072,
+  "tokenPricing": {
+    "status": "unavailable",
+    "reason": "official-price-not-published",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "referenceTokenPricing": {
+    "currency": "USD",
+    "basis": "first-party-api",
+    "rates": { "input": 1.25, "output": 4.25, "cacheRead": 0.15, "cacheWrite": null },
+    "source": {
+      "name": "Models.dev — Meta",
+      "url": "https://models.dev/api.json",
+      "observedAt": "2026-09-04"
+    }
+  },
+  "releaseDate": "2026-09-02",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "pdf", "audio", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/muse-spark-1-3",
+    "openrouter": null
+  }
+}

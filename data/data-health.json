@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-30",
+  "asOf": "2026-09-04",
   "thresholds": {
     "models": 30,
     "providers": 30,
@@ -10,21 +10,21 @@
     "vendors": 90
   },
   "summary": {
-    "totalRecords": 270,
-    "recordsWithSources": 270,
-    "verifiedRecords": 270,
-    "provenanceComplete": 270,
-    "staleVerifiedRecords": 94,
+    "totalRecords": 274,
+    "recordsWithSources": 274,
+    "verifiedRecords": 274,
+    "provenanceComplete": 274,
+    "staleVerifiedRecords": 134,
     "translationPlaceholderValues": 300,
     "danglingRelationships": 0,
-    "modelBenchmarkCoverage": 8.7,
+    "modelBenchmarkCoverage": 8.5,
     "productsWithPricing": 70,
     "productRecords": 71,
     "communityUrlsPopulated": 336,
     "communityUrlsWithProvenance": 336,
     "duplicatedVendorCommunityUrls": 0,
     "errors": 0,
-    "warnings": 94,
+    "warnings": 134,
     "info": 0
   },
   "byCategory": {
@@ -53,16 +53,16 @@
       "stale": 0
     },
     "models": {
-      "total": 134,
-      "verified": 134,
-      "provenanceComplete": 134,
-      "stale": 94
+      "total": 138,
+      "verified": 138,
+      "provenanceComplete": 138,
+      "stale": 117
     },
     "providers": {
       "total": 17,
       "verified": 17,
       "provenanceComplete": 17,
-      "stale": 0
+      "stale": 17
     },
     "vendors": {
       "total": 48,
@@ -134,658 +134,938 @@
       "code": "stale-verification",
       "category": "models",
       "id": "claude-fable-5",
-      "message": "Last reviewed 41 days ago; threshold is 30 days."
+      "message": "Last reviewed 46 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-haiku-3",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-haiku-3-5",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-haiku-4-5",
-      "message": "Last reviewed 43 days ago; threshold is 30 days."
+      "message": "Last reviewed 48 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-opus-3",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-opus-4",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-opus-4-1",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-opus-4-5",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-opus-4-6",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-opus-4-7",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-opus-4-8",
-      "message": "Last reviewed 41 days ago; threshold is 30 days."
+      "message": "Last reviewed 46 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-opus-5",
-      "message": "Last reviewed 34 days ago; threshold is 30 days."
+      "message": "Last reviewed 39 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-sonnet-3",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-sonnet-3-5-20240620",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-sonnet-3-5-20241022",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-sonnet-3-7",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-sonnet-4",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-sonnet-4-5",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-sonnet-4-6",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "claude-sonnet-5",
-      "message": "Last reviewed 41 days ago; threshold is 30 days."
+      "message": "Last reviewed 46 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "cursor-composer-2",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "cursor-composer-2-5",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "deepseek-3-2",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "deepseek-v3",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "deepseek-v3-1",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "deepseek-v3-2-exp",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "deepseek-v3-terminus",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "deepseek-v4-flash",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "deepseek-v4-flash-preview",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "devstral-2",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "devstral-small-2",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gemini-2-0-flash",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gemini-2-5-flash",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gemini-2-5-flash-lite",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gemini-2-5-pro",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gemini-3-1-pro-preview",
-      "message": "Last reviewed 41 days ago; threshold is 30 days."
+      "message": "Last reviewed 46 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gemini-3-5-flash",
-      "message": "Last reviewed 39 days ago; threshold is 30 days."
+      "message": "Last reviewed 44 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "gemini-3-5-flash-lite",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gemini-3-6-flash",
-      "message": "Last reviewed 39 days ago; threshold is 30 days."
+      "message": "Last reviewed 44 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gemini-3-flash",
-      "message": "Last reviewed 39 days ago; threshold is 30 days."
+      "message": "Last reviewed 44 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gemini-3-pro",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "gemma-4-26b-a4b",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "gemma-4-31b",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "glm-4-5",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "glm-4-5-air",
-      "message": "Last reviewed 35 days ago; threshold is 30 days."
+      "message": "Last reviewed 40 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "glm-4-5v",
-      "message": "Last reviewed 35 days ago; threshold is 30 days."
+      "message": "Last reviewed 40 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "glm-4-6",
-      "message": "Last reviewed 33 days ago; threshold is 30 days."
+      "message": "Last reviewed 38 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "glm-4-6v",
-      "message": "Last reviewed 33 days ago; threshold is 30 days."
+      "message": "Last reviewed 38 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "glm-4-7",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "glm-4-7-flash",
-      "message": "Last reviewed 35 days ago; threshold is 30 days."
+      "message": "Last reviewed 40 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "glm-5",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "glm-5-1",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "glm-5-turbo",
-      "message": "Last reviewed 35 days ago; threshold is 30 days."
+      "message": "Last reviewed 40 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "glm-5v-turbo",
-      "message": "Last reviewed 35 days ago; threshold is 30 days."
+      "message": "Last reviewed 40 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-4-1",
-      "message": "Last reviewed 33 days ago; threshold is 30 days."
+      "message": "Last reviewed 38 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-4-1-mini",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-4-1-nano",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-4o",
-      "message": "Last reviewed 33 days ago; threshold is 30 days."
+      "message": "Last reviewed 38 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-4o-mini",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5",
-      "message": "Last reviewed 33 days ago; threshold is 30 days."
+      "message": "Last reviewed 38 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5-1",
-      "message": "Last reviewed 33 days ago; threshold is 30 days."
+      "message": "Last reviewed 38 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5-1-codex",
-      "message": "Last reviewed 33 days ago; threshold is 30 days."
+      "message": "Last reviewed 38 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5-1-codex-mini",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5-2",
-      "message": "Last reviewed 43 days ago; threshold is 30 days."
+      "message": "Last reviewed 48 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5-2-codex",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5-3-codex",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5-4",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5-4-mini",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5-4-nano",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5-5",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "gpt-5-6-luna",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5-6-sol",
-      "message": "Last reviewed 41 days ago; threshold is 30 days."
+      "message": "Last reviewed 46 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5-6-terra",
-      "message": "Last reviewed 41 days ago; threshold is 30 days."
+      "message": "Last reviewed 46 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5-codex",
-      "message": "Last reviewed 33 days ago; threshold is 30 days."
+      "message": "Last reviewed 38 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5-mini",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "gpt-5-nano",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "grok-4",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "grok-4-1-fast",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "grok-4-20",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "grok-4-3",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "grok-4-fast",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "grok-code-fast-1",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "hy3",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "kimi-k2-0905",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "kimi-k2-5",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "kimi-k2-6",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "kimi-k2-7-code",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "kimi-k2-instruct",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "kimi-k2-thinking",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "kimi-k3",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "llama-4-maverick",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "llama-4-scout",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "mimo-v2-5",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "mimo-v2-5-pro",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "mimo-v2-flash",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "minimax-m2",
-      "message": "Last reviewed 33 days ago; threshold is 30 days."
+      "message": "Last reviewed 38 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "minimax-m2-1",
-      "message": "Last reviewed 33 days ago; threshold is 30 days."
+      "message": "Last reviewed 38 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "minimax-m2-5",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "minimax-m2-7",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "models",
+      "id": "minimax-m3",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "mistral-medium-3-5",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "mistral-small-4",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "o3",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "o3-mini",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "o4-mini",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "qwen3-5-122b-a10b",
-      "message": "Last reviewed 34 days ago; threshold is 30 days."
+      "message": "Last reviewed 39 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "qwen3-5-35b-a3b",
-      "message": "Last reviewed 34 days ago; threshold is 30 days."
+      "message": "Last reviewed 39 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "qwen3-5-397b-a17b",
-      "message": "Last reviewed 34 days ago; threshold is 30 days."
+      "message": "Last reviewed 39 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "qwen3-6-27b",
-      "message": "Last reviewed 35 days ago; threshold is 30 days."
+      "message": "Last reviewed 40 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "qwen3-6-35b-a3b",
-      "message": "Last reviewed 35 days ago; threshold is 30 days."
+      "message": "Last reviewed 40 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "qwen3-6-max-preview",
-      "message": "Last reviewed 35 days ago; threshold is 30 days."
+      "message": "Last reviewed 40 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "qwen3-6-plus",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "qwen3-7-max",
-      "message": "Last reviewed 33 days ago; threshold is 30 days."
+      "message": "Last reviewed 38 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "qwen3-7-plus",
-      "message": "Last reviewed 33 days ago; threshold is 30 days."
+      "message": "Last reviewed 38 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "qwen3-coder-30b-a3b",
-      "message": "Last reviewed 33 days ago; threshold is 30 days."
+      "message": "Last reviewed 38 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "qwen3-coder-480b-a35b",
-      "message": "Last reviewed 33 days ago; threshold is 30 days."
+      "message": "Last reviewed 38 days ago; threshold is 30 days."
     },
     {
       "severity": "warning",
       "code": "stale-verification",
       "category": "models",
       "id": "qwen3-coder-next",
-      "message": "Last reviewed 40 days ago; threshold is 30 days."
+      "message": "Last reviewed 45 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "alibaba",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "anthropic",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "baseten",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "deepinfra",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "deepseek",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "fireworks-ai",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "google",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "meta",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "minimax",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "moonshot",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "novita-ai",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "openai",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "openrouter",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "siliconflow",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "together-ai",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "xai",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
+    },
+    {
+      "severity": "warning",
+      "code": "stale-verification",
+      "category": "providers",
+      "id": "z-ai",
+      "message": "Last reviewed 35 days ago; threshold is 30 days."
     }
   ]
 }

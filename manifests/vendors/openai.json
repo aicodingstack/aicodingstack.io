@@ -52,6 +52,11 @@
       "id": "o-series",
       "name": "o-series",
       "modelIds": ["o3"]
+    },
+    {
+      "id": "gpt-astra",
+      "name": "GPT (Astra)",
+      "modelIds": ["gpt-6-astra"]
     }
   ],
   "description": "A leading AI research company focused on developing safe and beneficial artificial general intelligence.",
@@ -126,9 +131,14 @@
       "url": "https://www.reddit.com/r/OpenAI",
       "title": "OpenAI reddit community",
       "fields": ["communityUrls.reddit"]
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "title": "GPT-6 Astra model documentation",
+      "fields": ["modelSeries"]
     }
   ],
-  "lastVerifiedAt": "2026-07-28",
+  "lastVerifiedAt": "2026-09-04",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://openai.com",

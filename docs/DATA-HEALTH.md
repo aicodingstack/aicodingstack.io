@@ -1,23 +1,23 @@
 # Data Health Report
 
-Snapshot date: 2026-08-30. Regenerate with `pnpm data-health:report`.
+Snapshot date: 2026-09-04. Regenerate with `pnpm data-health:report`.
 
 ## Scorecard
 
 | Metric | Value |
 | --- | ---: |
-| Manifest records | 270 |
-| Records with structured sources | 270 |
-| Verified records | 270 |
-| Verified with complete provenance | 270 |
-| Stale verified records | 94 |
+| Manifest records | 274 |
+| Records with structured sources | 274 |
+| Verified records | 274 |
+| Verified with complete provenance | 274 |
+| Stale verified records | 134 |
 | Non-English values identical to English | 300 |
 | Dangling product relationships | 0 |
-| Model benchmark coverage | 8.7% |
+| Model benchmark coverage | 8.5% |
 | Products with pricing | 70/71 |
 | Community URLs with provenance | 336/336 |
 | Duplicated vendor community URLs | 0 |
-| Errors / warnings / info | 0 / 94 / 0 |
+| Errors / warnings / info | 0 / 134 / 0 |
 
 ## Category Breakdown
 
@@ -27,8 +27,8 @@ Snapshot date: 2026-08-30. Regenerate with `pnpm data-health:report`.
 | clis | 30 | 30 | 30 | 0 |
 | desktops | 13 | 13 | 13 | 0 |
 | extensions | 19 | 19 | 19 | 0 |
-| models | 134 | 134 | 134 | 94 |
-| providers | 17 | 17 | 17 | 0 |
+| models | 138 | 138 | 138 | 117 |
+| providers | 17 | 17 | 17 | 17 |
 | vendors | 48 | 48 | 48 | 0 |
 
 ## Translation Placeholder Proxy
@@ -53,7 +53,7 @@ Exact English matches are a triage signal; product names and technical terms can
 
 | Issue | Count |
 | --- | ---: |
-| stale-verification | 94 |
+| stale-verification | 134 |
 
 ## Priority Queue
 
@@ -62,100 +62,106 @@ visible in the scorecards and `data/data-health.json`.
 
 | Severity | Issue | Record | Detail |
 | --- | --- | --- | --- |
-| warning | stale-verification | models/claude-fable-5 | Last reviewed 41 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-haiku-3 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-haiku-3-5 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-haiku-4-5 | Last reviewed 43 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-opus-3 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-opus-4 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-opus-4-1 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-opus-4-5 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-opus-4-6 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-opus-4-7 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-opus-4-8 | Last reviewed 41 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-opus-5 | Last reviewed 34 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-sonnet-3 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-sonnet-3-5-20240620 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-sonnet-3-5-20241022 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-sonnet-3-7 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-sonnet-4 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-sonnet-4-5 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-sonnet-4-6 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/claude-sonnet-5 | Last reviewed 41 days ago; threshold is 30 days. |
-| warning | stale-verification | models/deepseek-3-2 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/devstral-2 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/devstral-small-2 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gemini-2-0-flash | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gemini-2-5-flash | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gemini-2-5-flash-lite | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gemini-2-5-pro | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gemini-3-1-pro-preview | Last reviewed 41 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gemini-3-5-flash | Last reviewed 39 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gemini-3-6-flash | Last reviewed 39 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gemini-3-flash | Last reviewed 39 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gemini-3-pro | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/glm-4-5 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/glm-4-5-air | Last reviewed 35 days ago; threshold is 30 days. |
-| warning | stale-verification | models/glm-4-5v | Last reviewed 35 days ago; threshold is 30 days. |
-| warning | stale-verification | models/glm-4-6 | Last reviewed 33 days ago; threshold is 30 days. |
-| warning | stale-verification | models/glm-4-6v | Last reviewed 33 days ago; threshold is 30 days. |
-| warning | stale-verification | models/glm-4-7 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/glm-4-7-flash | Last reviewed 35 days ago; threshold is 30 days. |
-| warning | stale-verification | models/glm-5 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/glm-5-1 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/glm-5-turbo | Last reviewed 35 days ago; threshold is 30 days. |
-| warning | stale-verification | models/glm-5v-turbo | Last reviewed 35 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-4-1 | Last reviewed 33 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-4-1-mini | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-4-1-nano | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-4o | Last reviewed 33 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-4o-mini | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-5 | Last reviewed 33 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-5-1 | Last reviewed 33 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-5-1-codex | Last reviewed 33 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-5-1-codex-mini | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-5-2 | Last reviewed 43 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-5-2-codex | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-5-3-codex | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-5-4 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-5-4-mini | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-5-4-nano | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-5-5 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-5-6-sol | Last reviewed 41 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-5-6-terra | Last reviewed 41 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-5-codex | Last reviewed 33 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-5-mini | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/gpt-5-nano | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/grok-4 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/grok-4-1-fast | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/grok-4-20 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/grok-4-3 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/grok-4-fast | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/grok-code-fast-1 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/kimi-k2-5 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/kimi-k2-6 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/kimi-k3 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/minimax-m2 | Last reviewed 33 days ago; threshold is 30 days. |
-| warning | stale-verification | models/minimax-m2-1 | Last reviewed 33 days ago; threshold is 30 days. |
-| warning | stale-verification | models/minimax-m2-5 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/minimax-m2-7 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/mistral-medium-3-5 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/mistral-small-4 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/o3 | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/o3-mini | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/o4-mini | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/qwen3-5-122b-a10b | Last reviewed 34 days ago; threshold is 30 days. |
-| warning | stale-verification | models/qwen3-5-35b-a3b | Last reviewed 34 days ago; threshold is 30 days. |
-| warning | stale-verification | models/qwen3-5-397b-a17b | Last reviewed 34 days ago; threshold is 30 days. |
-| warning | stale-verification | models/qwen3-6-27b | Last reviewed 35 days ago; threshold is 30 days. |
-| warning | stale-verification | models/qwen3-6-35b-a3b | Last reviewed 35 days ago; threshold is 30 days. |
-| warning | stale-verification | models/qwen3-6-max-preview | Last reviewed 35 days ago; threshold is 30 days. |
-| warning | stale-verification | models/qwen3-6-plus | Last reviewed 40 days ago; threshold is 30 days. |
-| warning | stale-verification | models/qwen3-7-max | Last reviewed 33 days ago; threshold is 30 days. |
-| warning | stale-verification | models/qwen3-7-plus | Last reviewed 33 days ago; threshold is 30 days. |
-| warning | stale-verification | models/qwen3-coder-30b-a3b | Last reviewed 33 days ago; threshold is 30 days. |
-| warning | stale-verification | models/qwen3-coder-480b-a35b | Last reviewed 33 days ago; threshold is 30 days. |
-| warning | stale-verification | models/qwen3-coder-next | Last reviewed 40 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-fable-5 | Last reviewed 46 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-haiku-3 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-haiku-3-5 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-haiku-4-5 | Last reviewed 48 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-opus-3 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-opus-4 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-opus-4-1 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-opus-4-5 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-opus-4-6 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-opus-4-7 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-opus-4-8 | Last reviewed 46 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-opus-5 | Last reviewed 39 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-sonnet-3 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-sonnet-3-5-20240620 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-sonnet-3-5-20241022 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-sonnet-3-7 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-sonnet-4 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-sonnet-4-5 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-sonnet-4-6 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/claude-sonnet-5 | Last reviewed 46 days ago; threshold is 30 days. |
+| warning | stale-verification | models/cursor-composer-2 | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/cursor-composer-2-5 | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/deepseek-3-2 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/deepseek-v3 | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/deepseek-v3-1 | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/deepseek-v3-2-exp | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/deepseek-v3-terminus | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/deepseek-v4-flash | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/deepseek-v4-flash-preview | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/devstral-2 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/devstral-small-2 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gemini-2-0-flash | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gemini-2-5-flash | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gemini-2-5-flash-lite | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gemini-2-5-pro | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gemini-3-1-pro-preview | Last reviewed 46 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gemini-3-5-flash | Last reviewed 44 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gemini-3-5-flash-lite | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gemini-3-6-flash | Last reviewed 44 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gemini-3-flash | Last reviewed 44 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gemini-3-pro | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gemma-4-26b-a4b | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gemma-4-31b | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/glm-4-5 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/glm-4-5-air | Last reviewed 40 days ago; threshold is 30 days. |
+| warning | stale-verification | models/glm-4-5v | Last reviewed 40 days ago; threshold is 30 days. |
+| warning | stale-verification | models/glm-4-6 | Last reviewed 38 days ago; threshold is 30 days. |
+| warning | stale-verification | models/glm-4-6v | Last reviewed 38 days ago; threshold is 30 days. |
+| warning | stale-verification | models/glm-4-7 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/glm-4-7-flash | Last reviewed 40 days ago; threshold is 30 days. |
+| warning | stale-verification | models/glm-5 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/glm-5-1 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/glm-5-turbo | Last reviewed 40 days ago; threshold is 30 days. |
+| warning | stale-verification | models/glm-5v-turbo | Last reviewed 40 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-4-1 | Last reviewed 38 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-4-1-mini | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-4-1-nano | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-4o | Last reviewed 38 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-4o-mini | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5 | Last reviewed 38 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-1 | Last reviewed 38 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-1-codex | Last reviewed 38 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-1-codex-mini | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-2 | Last reviewed 48 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-2-codex | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-3-codex | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-4 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-4-mini | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-4-nano | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-5 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-6-luna | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-6-sol | Last reviewed 46 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-6-terra | Last reviewed 46 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-codex | Last reviewed 38 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-mini | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/gpt-5-nano | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/grok-4 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/grok-4-1-fast | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/grok-4-20 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/grok-4-3 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/grok-4-fast | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/grok-code-fast-1 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/hy3 | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/kimi-k2-0905 | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/kimi-k2-5 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/kimi-k2-6 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/kimi-k2-7-code | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/kimi-k2-instruct | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/kimi-k2-thinking | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/kimi-k3 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/llama-4-maverick | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/llama-4-scout | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/mimo-v2-5 | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/mimo-v2-5-pro | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/mimo-v2-flash | Last reviewed 35 days ago; threshold is 30 days. |
+| warning | stale-verification | models/minimax-m2 | Last reviewed 38 days ago; threshold is 30 days. |
+| warning | stale-verification | models/minimax-m2-1 | Last reviewed 38 days ago; threshold is 30 days. |
+| warning | stale-verification | models/minimax-m2-5 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/minimax-m2-7 | Last reviewed 45 days ago; threshold is 30 days. |
+| warning | stale-verification | models/minimax-m3 | Last reviewed 35 days ago; threshold is 30 days. |
 
 ## Freshness Thresholds
 

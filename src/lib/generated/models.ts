@@ -5,6 +5,7 @@
  */
 
 import ClaudeFable5 from '../../../manifests/models/claude-fable-5.json'
+import ClaudeFable51 from '../../../manifests/models/claude-fable-5-1.json'
 import ClaudeHaiku3 from '../../../manifests/models/claude-haiku-3.json'
 import ClaudeHaiku35 from '../../../manifests/models/claude-haiku-3-5.json'
 import ClaudeHaiku45 from '../../../manifests/models/claude-haiku-4-5.json'
@@ -49,6 +50,7 @@ import Gemini35Flash from '../../../manifests/models/gemini-3-5-flash.json'
 import Gemini35FlashLite from '../../../manifests/models/gemini-3-5-flash-lite.json'
 import Gemini36Flash from '../../../manifests/models/gemini-3-6-flash.json'
 import Gemini37Flash from '../../../manifests/models/gemini-3-7-flash.json'
+import Gemini38Flash from '../../../manifests/models/gemini-3-8-flash.json'
 import Gemini3Flash from '../../../manifests/models/gemini-3-flash.json'
 import Gemini3Pro from '../../../manifests/models/gemini-3-pro.json'
 import Gemma426bA4b from '../../../manifests/models/gemma-4-26b-a4b.json'
@@ -89,6 +91,7 @@ import Gpt56Terra from '../../../manifests/models/gpt-5-6-terra.json'
 import Gpt5Codex from '../../../manifests/models/gpt-5-codex.json'
 import Gpt5Mini from '../../../manifests/models/gpt-5-mini.json'
 import Gpt5Nano from '../../../manifests/models/gpt-5-nano.json'
+import Gpt6Astra from '../../../manifests/models/gpt-6-astra.json'
 import Grok4 from '../../../manifests/models/grok-4.json'
 import Grok41Fast from '../../../manifests/models/grok-4-1-fast.json'
 import Grok43 from '../../../manifests/models/grok-4-3.json'
@@ -119,6 +122,7 @@ import MistralMedium35 from '../../../manifests/models/mistral-medium-3-5.json'
 import MistralSmall4 from '../../../manifests/models/mistral-small-4.json'
 import MuseSpark11 from '../../../manifests/models/muse-spark-1-1.json'
 import MuseSpark12 from '../../../manifests/models/muse-spark-1-2.json'
+import MuseSpark13 from '../../../manifests/models/muse-spark-1-3.json'
 import O3 from '../../../manifests/models/o3.json'
 import O3Mini from '../../../manifests/models/o3-mini.json'
 import O4Mini from '../../../manifests/models/o4-mini.json'
@@ -141,6 +145,7 @@ import Qwen3CoderNext from '../../../manifests/models/qwen3-coder-next.json'
 import type { ManifestModel } from '../../types/manifests'
 
 export const modelsData = [
+  ClaudeFable51,
   ClaudeFable5,
   ClaudeHaiku35,
   ClaudeHaiku3,
@@ -186,6 +191,7 @@ export const modelsData = [
   Gemini35Flash,
   Gemini36Flash,
   Gemini37Flash,
+  Gemini38Flash,
   Gemini3Flash,
   Gemini3Pro,
   Gemma426bA4b,
@@ -226,6 +232,7 @@ export const modelsData = [
   Gpt5Mini,
   Gpt5Nano,
   Gpt5,
+  Gpt6Astra,
   Grok41Fast,
   Grok43,
   Grok45,
@@ -256,6 +263,7 @@ export const modelsData = [
   MistralSmall4,
   MuseSpark11,
   MuseSpark12,
+  MuseSpark13,
   O3Mini,
   O3,
   O4Mini,
@@ -277,6 +285,6 @@ export const modelsData = [
   Qwen3CoderNext,
 ] as unknown as ManifestModel[]
 
-export type Model = typeof ClaudeFable5
+export type Model = typeof ClaudeFable51
 
 export default modelsData

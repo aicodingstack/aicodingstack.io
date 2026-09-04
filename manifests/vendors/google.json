@@ -21,7 +21,8 @@
         "gemini-3-flash",
         "gemini-3-5-flash",
         "gemini-3-6-flash",
-        "gemini-3-7-flash"
+        "gemini-3-7-flash",
+        "gemini-3-8-flash"
       ]
     },
     {
@@ -109,7 +110,7 @@
       "fields": ["modelSeries"]
     }
   ],
-  "lastVerifiedAt": "2026-08-14",
+  "lastVerifiedAt": "2026-09-04",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.google.com",

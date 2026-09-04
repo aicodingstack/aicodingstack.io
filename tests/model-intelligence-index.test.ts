@@ -243,6 +243,12 @@ describe('model intelligence index', () => {
       ['triangle', '2 4'],
       ['diamond', '10 4 2 4'],
     ])
+    expect(claudeSeries[3]?.points.at(-1)).toMatchObject({
+      modelId: 'claude-fable-5-1',
+      score: 66,
+      estimated: false,
+      configuration: 'Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)',
+    })
   })
 
   it('names and orders the three connected GPT product lines', () => {
@@ -258,6 +264,27 @@ describe('model intelligence index', () => {
       ['square', '6 4'],
       ['triangle', '2 4'],
     ])
+    expect(openAISeries.find(series => series.name === 'GPT (Astra)')?.points).toEqual([
+      expect.objectContaining({
+        modelId: 'gpt-6-astra',
+        score: 61,
+        estimated: false,
+        configuration: 'GPT-6 Astra (max)',
+      }),
+    ])
+  })
+
+  it('connects Muse Spark 1.3 to the existing Muse series', () => {
+    const museSeries = modelIntelligenceSeries.find(
+      series => series.vendor === 'Meta' && series.name === 'Muse'
+    )
+
+    expect(museSeries?.points.at(-1)).toMatchObject({
+      modelId: 'muse-spark-1-3',
+      score: 62,
+      estimated: false,
+      configuration: 'Muse Spark 1.3 (max)',
+    })
   })
 
   it('connects the DeepSeek main line through V4 while keeping Flash separate', () => {
@@ -313,10 +340,10 @@ describe('model intelligence index', () => {
       ['diamond', '10 4 2 4'],
     ])
     expect(geminiSeries[1]?.points.at(-1)).toMatchObject({
-      modelId: 'gemini-3-7-flash',
-      score: 56,
+      modelId: 'gemini-3-8-flash',
+      score: 59,
       estimated: false,
-      configuration: 'Gemini 3.7 Flash (high)',
+      configuration: 'Gemini 3.8 Flash (high)',
     })
   })
 
