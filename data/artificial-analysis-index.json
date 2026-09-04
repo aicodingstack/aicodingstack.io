@@ -4,7 +4,7 @@
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
   "methodologyUrl": "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
   "indexVersion": "4.1.1",
-  "observedAt": "2026-08-28",
+  "observedAt": "2026-09-04",
   "legacyMissingModelIds": ["cursor-composer-2", "cursor-composer-2-5"],
   "entries": [
     {
@@ -12,6 +12,12 @@
       "score": 62,
       "estimated": false,
       "configuration": "Claude Fable 5 (with fallback)"
+    },
+    {
+      "modelId": "claude-fable-5-1",
+      "score": 66,
+      "estimated": false,
+      "configuration": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)"
     },
     {
       "modelId": "claude-haiku-3",
@@ -266,6 +272,12 @@
       "configuration": "Gemini 3.7 Flash (high)"
     },
     {
+      "modelId": "gemini-3-8-flash",
+      "score": 59,
+      "estimated": false,
+      "configuration": "Gemini 3.8 Flash (high)"
+    },
+    {
       "modelId": "gemini-3-flash",
       "score": 28,
       "estimated": true,
@@ -482,6 +494,12 @@
       "configuration": "GPT-5.6 Sol (max)"
     },
     {
+      "modelId": "gpt-6-astra",
+      "score": 61,
+      "estimated": false,
+      "configuration": "GPT-6 Astra (max)"
+    },
+    {
       "modelId": "gpt-5-6-terra",
       "score": 57,
       "estimated": false,
@@ -684,6 +702,12 @@
       "score": 57,
       "estimated": false,
       "configuration": "Muse Spark 1.2 (xhigh)"
+    },
+    {
+      "modelId": "muse-spark-1-3",
+      "score": 62,
+      "estimated": false,
+      "configuration": "Muse Spark 1.3 (max)"
     },
     {
       "modelId": "o3",

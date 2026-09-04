@@ -1,0 +1,125 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "claude-fable-5-1",
+  "name": "Claude Fable 5.1",
+  "description": "Anthropic's model for demanding reasoning and long-horizon agentic coding, research, and professional document work, with adaptive thinking and a 1M-token context window.",
+  "translations": {
+    "de": {
+      "description": "Anthropics Modell für anspruchsvolles Schlussfolgern, langfristige agentische Programmierung, Forschung und professionelle Dokumentarbeit mit adaptivem Denken und 1 Mio. Token Kontext."
+    },
+    "es": {
+      "description": "El modelo de Anthropic para razonamiento exigente, programación agéntica de largo alcance, investigación y documentos profesionales, con pensamiento adaptativo y contexto de 1 millón de tokens."
+    },
+    "fr": {
+      "description": "Le modèle d’Anthropic pour le raisonnement exigeant, le codage agentique de longue durée, la recherche et les documents professionnels, avec réflexion adaptative et contexte de 1 million de jetons."
+    },
+    "id": {
+      "description": "Model Anthropic untuk penalaran berat, coding agentik jangka panjang, riset, dan dokumen profesional, dengan pemikiran adaptif serta konteks 1 juta token."
+    },
+    "ja": {
+      "description": "高度な推論、長期的なエージェント型コーディング、研究、専門文書作成向けのAnthropicモデル。適応型思考と100万トークンのコンテキストに対応。"
+    },
+    "ko": {
+      "description": "고난도 추론, 장기 에이전트 코딩, 연구 및 전문 문서 작업을 위한 Anthropic 모델로, 적응형 사고와 100만 토큰 컨텍스트를 지원합니다."
+    },
+    "pt": {
+      "description": "Modelo da Anthropic para raciocínio exigente, programação agêntica de longo prazo, pesquisa e documentos profissionais, com pensamento adaptativo e contexto de 1 milhão de tokens."
+    },
+    "ru": {
+      "description": "Модель Anthropic для сложных рассуждений, длительного агентного программирования, исследований и профессиональных документов с адаптивным мышлением и контекстом в 1 млн токенов."
+    },
+    "tr": {
+      "description": "Anthropic'in zorlu akıl yürütme, uzun süreli ajan tabanlı kodlama, araştırma ve profesyonel belge işleri için uyarlanabilir düşünme ve 1 milyon token bağlam sunan modeli."
+    },
+    "zh-Hans": {
+      "description": "Anthropic 面向高难度推理、长周期智能体编码、研究和专业文档工作的模型，支持自适应思考和 100 万 token 上下文。"
+    },
+    "zh-Hant": {
+      "description": "Anthropic 面向高難度推理、長週期智慧體程式設計、研究和專業文件工作的模型，支援自適應思考和 100 萬 token 上下文。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/models/fable-5-1/overview",
+      "title": "Claude Fable 5.1 model overview",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "title": "Claude platform release notes",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/claude-fable-5-1",
+      "title": "Artificial Analysis Claude Fable 5.1 model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-09-04",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.anthropic.com",
+  "docsUrl": "https://platform.claude.com/docs/en/models/fable-5-1/overview",
+  "vendor": "Anthropic",
+  "size": null,
+  "activeParameters": null,
+  "contextWindow": 1000000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": "2026-09-01",
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": {
+              "input": 10,
+              "output": 50,
+              "cacheRead": 0.25,
+              "cacheWrite": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-09-01",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2026-06",
+  "inputModalities": ["text", "image", "pdf"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/claude-fable-5-1",
+    "openrouter": null
+  }
+}

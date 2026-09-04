@@ -1,0 +1,142 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gpt-6-astra",
+  "name": "GPT-6 Astra",
+  "description": "OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation, with a 1.05M-token context window and adjustable reasoning effort.",
+  "translations": {
+    "de": {
+      "description": "OpenAIs leistungsfähigstes Modell für komplexes Schlussfolgern, Programmierung, Computernutzung, Forschung und Dokumenterstellung mit 1,05 Mio. Token Kontext und einstellbarem Reasoning-Aufwand."
+    },
+    "es": {
+      "description": "El modelo más capaz de OpenAI para razonamiento complejo, programación, uso de computadoras, investigación y creación de documentos, con contexto de 1,05 M de tokens y esfuerzo ajustable."
+    },
+    "fr": {
+      "description": "Le modèle le plus performant d’OpenAI pour le raisonnement complexe, le codage, l’utilisation informatique, la recherche et les documents, avec un contexte de 1,05 M de jetons et un effort réglable."
+    },
+    "id": {
+      "description": "Model OpenAI paling mumpuni untuk penalaran kompleks, coding, penggunaan komputer, riset, dan pembuatan dokumen, dengan konteks 1,05 juta token serta upaya penalaran yang dapat diatur."
+    },
+    "ja": {
+      "description": "複雑な推論、コーディング、コンピューター操作、研究、文書作成向けのOpenAIで最も高性能なモデル。105万トークンのコンテキストと調整可能な推論強度に対応。"
+    },
+    "ko": {
+      "description": "복잡한 추론, 코딩, 컴퓨터 사용, 연구 및 문서 작성을 위한 OpenAI의 가장 강력한 모델로, 105만 토큰 컨텍스트와 조절 가능한 추론 노력을 지원합니다."
+    },
+    "pt": {
+      "description": "O modelo mais capaz da OpenAI para raciocínio complexo, programação, uso de computadores, pesquisa e criação de documentos, com contexto de 1,05 milhão de tokens e esforço ajustável."
+    },
+    "ru": {
+      "description": "Самая мощная модель OpenAI для сложных рассуждений, программирования, работы с компьютером, исследований и создания документов, с контекстом 1,05 млн токенов и настраиваемым усилием."
+    },
+    "tr": {
+      "description": "OpenAI'ın karmaşık akıl yürütme, kodlama, bilgisayar kullanımı, araştırma ve belge oluşturma için 1,05 milyon token bağlam ve ayarlanabilir akıl yürütme sunan en yetenekli modeli."
+    },
+    "zh-Hans": {
+      "description": "OpenAI 能力最强的模型，面向复杂推理、编码、计算机使用、研究和文档创建，支持 105 万 token 上下文及可调推理强度。"
+    },
+    "zh-Hant": {
+      "description": "OpenAI 能力最強的模型，面向複雜推理、程式設計、電腦使用、研究和文件建立，支援 105 萬 token 上下文及可調推理強度。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "title": "GPT-6 Astra model documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/safety-overview-gpt-6-astra/",
+      "title": "GPT-6 Astra safety overview",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/gpt-6-astra",
+      "title": "Artificial Analysis GPT-6 Astra max model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-09-04",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://openai.com",
+  "docsUrl": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+  "vendor": "OpenAI",
+  "size": null,
+  "activeParameters": null,
+  "contextWindow": 1050000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": "2026-09-03",
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": {
+              "metric": "inputTokens",
+              "min": 1,
+              "max": 272000
+            },
+            "rates": {
+              "input": 10,
+              "output": 50,
+              "cacheRead": 1,
+              "cacheWrite": 12.5
+            }
+          },
+          {
+            "condition": {
+              "metric": "inputTokens",
+              "min": 272001,
+              "max": 922000
+            },
+            "rates": {
+              "input": 20,
+              "output": 75,
+              "cacheRead": 2,
+              "cacheWrite": 25
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-09-03",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2026-04-30",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-6-astra",
+    "openrouter": null
+  }
+}
