@@ -1,7 +1,9 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-import { describe, it } from 'vitest'
+import { describe, expect, it } from 'vitest'
+import appSchema from '../../manifests/$schemas/ref/app.schema.json'
+import type { ManifestPlatformElement } from '../../src/types/manifests'
 
 /**
  * Read and parse JSON from disk.
@@ -186,6 +188,20 @@ function validateTypesAlignment(rootDir: string): string[] {
 }
 
 describe('validate: types alignment', () => {
+  it('keeps platform schema values aligned with the TypeScript union', () => {
+    const platforms: Record<ManifestPlatformElement['os'], true> = {
+      macOS: true,
+      Windows: true,
+      Linux: true,
+      iOS: true,
+      Android: true,
+    }
+
+    expect(appSchema.allOf[1]?.properties?.platforms.items.properties.os.enum).toEqual(
+      Object.keys(platforms)
+    )
+  })
+
   it('TypeScript manifest interfaces align with JSON schemas', () => {
     const failures = validateTypesAlignment(process.cwd())
     if (failures.length > 0) {

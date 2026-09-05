@@ -44,6 +44,8 @@
   "ignorePaths": ["cloudflare-env.d.ts", "docs", ".claude"],
   "ignoreRegExpList": ["/\\d+-g[0-9a-f]{6,}/g"],
   "words": [
+    "RunWhale",
+    "zhiqingchen",
     "Automatisierungsworkflows",
     "Interaktionsmodus",
     "İhtiyacınız",

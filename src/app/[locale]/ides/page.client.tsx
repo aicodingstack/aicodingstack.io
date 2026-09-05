@@ -122,6 +122,7 @@ export default function IDEsPageClient({ locale }: Props) {
             onLicenseFiltersChange={setLicenseFilters}
             platformFilters={platformFilters}
             onPlatformFiltersChange={setPlatformFilters}
+            availablePlatforms={[...new Set(idesData.flatMap(ide => ide.platforms.map(p => p.os)))]}
             searchQuery={searchQuery}
             onSearchChange={setSearchQuery}
           />

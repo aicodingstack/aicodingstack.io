@@ -8,6 +8,7 @@ import Antigravity from '../../../manifests/ides/antigravity.json'
 import Cursor from '../../../manifests/ides/cursor.json'
 import IntellijIdea from '../../../manifests/ides/intellij-idea.json'
 import Kiro from '../../../manifests/ides/kiro.json'
+import Runwhale from '../../../manifests/ides/runwhale.json'
 import Trae from '../../../manifests/ides/trae.json'
 import Vscode from '../../../manifests/ides/vscode.json'
 import Vscodium from '../../../manifests/ides/vscodium.json'
@@ -20,6 +21,7 @@ export const idesData = [
   Cursor,
   IntellijIdea,
   Kiro,
+  Runwhale,
   Trae,
   Vscode,
   Vscodium,

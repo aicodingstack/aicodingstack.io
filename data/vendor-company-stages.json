@@ -319,6 +319,11 @@
       "source": null
     },
     {
+      "vendorId": "runwhale",
+      "stage": "startup",
+      "source": null
+    },
+    {
       "vendorId": "shareai-lab",
       "stage": "startup",
       "source": null

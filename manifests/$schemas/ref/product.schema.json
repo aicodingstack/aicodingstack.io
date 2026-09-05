@@ -213,7 +213,7 @@
             "custom",
             null
           ],
-          "description": "Canonical lowercase billing period or published non-numeric pricing state. Trial duration and other plan details belong in the tier name, not this field."
+          "description": "Canonical lowercase billing period or published non-numeric pricing state; null for one-time purchases. Trial duration and other plan details belong in the tier name, not this field."
         },
         "category": {
           "type": "string",

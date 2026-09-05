@@ -1,0 +1,114 @@
+{
+  "$schema": "../$schemas/ide.schema.json",
+  "id": "runwhale",
+  "name": "RunWhale",
+  "description": "A mobile coding agent for Web and React Native projects, with local files, Git, and previews on iOS and Android. Model inference uses your configured remote provider.",
+  "translations": {
+    "de": {
+      "description": "Ein mobiler Coding-Agent für Web- und React-Native-Projekte mit lokalen Dateien, Git und Vorschauen auf iOS und Android. Die Modellinferenz nutzt Ihren konfigurierten Remote-Anbieter."
+    },
+    "es": {
+      "description": "Un agente de programación móvil para proyectos web y React Native, con archivos locales, Git y vistas previas en iOS y Android. La inferencia utiliza el proveedor remoto que configures."
+    },
+    "fr": {
+      "description": "Un agent de programmation mobile pour les projets Web et React Native, avec fichiers locaux, Git et aperçus sur iOS et Android. L’inférence utilise le fournisseur distant configuré."
+    },
+    "id": {
+      "description": "Agen coding seluler untuk proyek Web dan React Native, dengan file lokal, Git, dan pratinjau di iOS dan Android. Inferensi model menggunakan penyedia jarak jauh yang Anda konfigurasi."
+    },
+    "ja": {
+      "description": "iOSとAndroidでローカルファイル、Git、プレビューを利用できる、WebおよびReact Nativeプロジェクト向けのモバイルコーディングエージェント。モデル推論には設定したリモートプロバイダーを使用します。"
+    },
+    "ko": {
+      "description": "iOS와 Android에서 로컬 파일, Git 및 미리보기를 제공하는 Web 및 React Native 프로젝트용 모바일 코딩 에이전트입니다. 모델 추론은 설정한 원격 제공업체를 사용합니다."
+    },
+    "pt": {
+      "description": "Um agente de programação móvel para projetos Web e React Native, com arquivos locais, Git e prévias no iOS e Android. A inferência usa o provedor remoto que você configurar."
+    },
+    "ru": {
+      "description": "Мобильный агент программирования для проектов Web и React Native с локальными файлами, Git и предпросмотром на iOS и Android. Для работы модели используется настроенный удалённый провайдер."
+    },
+    "tr": {
+      "description": "iOS ve Android üzerinde yerel dosyalar, Git ve önizleme sunan, Web ve React Native projeleri için mobil kodlama ajanı. Model çıkarımı, yapılandırdığınız uzak sağlayıcıyı kullanır."
+    },
+    "zh-Hans": {
+      "description": "面向 Web 和 React Native 项目的移动编程智能体，在 iOS 和 Android 上提供本地文件、Git 和预览。模型推理使用你配置的远程服务商。"
+    },
+    "zh-Hant": {
+      "description": "適用於 Web 和 React Native 專案的行動程式設計代理，在 iOS 和 Android 上提供本機檔案、Git 和預覽。模型推論使用你設定的遠端服務供應商。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://github.com/zhiqingchen/RunWhale",
+      "title": "RunWhale official repository and README",
+      "fields": [
+        "description",
+        "githubUrl",
+        "license",
+        "pricing",
+        "resourceUrls.download",
+        "resourceUrls.pricing"
+      ]
+    },
+    {
+      "url": "https://github.com/zhiqingchen/RunWhale/blob/main/apps/mobile/app.json",
+      "title": "RunWhale app configuration",
+      "fields": ["name", "latestVersion", "platforms"]
+    },
+    {
+      "url": "https://github.com/zhiqingchen/RunWhale/blob/main/DEVELOPMENT.md",
+      "title": "RunWhale development guide",
+      "fields": ["docsUrl", "platforms"]
+    }
+  ],
+  "lastVerifiedAt": "2026-09-05",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
+  "websiteUrl": "https://runwhale.dev/",
+  "docsUrl": "https://github.com/zhiqingchen/RunWhale#readme",
+  "vendor": "RunWhale",
+  "latestVersion": "1.0.0",
+  "githubUrl": "https://github.com/zhiqingchen/RunWhale",
+  "license": "Apache-2.0",
+  "pricing": [
+    {
+      "name": "App Store (one-time purchase)",
+      "value": 10,
+      "currency": "USD",
+      "per": null,
+      "category": "Individual"
+    }
+  ],
+  "resourceUrls": {
+    "download": "https://apps.apple.com/app/id6807644595",
+    "changelog": null,
+    "pricing": "https://github.com/zhiqingchen/RunWhale#download",
+    "issue": "https://github.com/zhiqingchen/RunWhale/issues"
+  },
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": null,
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  },
+  "relatedProducts": [],
+  "platforms": [
+    {
+      "os": "iOS",
+      "installCommand": null,
+      "launchCommand": null,
+      "installPath": null
+    },
+    {
+      "os": "Android",
+      "installCommand": null,
+      "launchCommand": null,
+      "installPath": null
+    }
+  ]
+}
