@@ -83,7 +83,7 @@
   "websiteUrl": "https://opencode.ai/download",
   "docsUrl": "https://opencode.ai/docs",
   "vendor": "Anomaly",
-  "latestVersion": "1.18.25",
+  "latestVersion": "1.18.29",
   "releaseTracking": {
     "provider": "github-release",
     "identifier": "anomalyco/opencode"

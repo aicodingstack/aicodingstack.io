@@ -45,7 +45,7 @@
   "websiteUrl": "https://cursor.com/cli",
   "docsUrl": "https://cursor.com/docs/cli/overview",
   "vendor": "Anysphere",
-  "latestVersion": "2026.08.25-3e8eec8",
+  "latestVersion": "2026.09.02-c22c1a3",
   "releaseTracking": {
     "provider": "homebrew-cask",
     "identifier": "cursor-cli"

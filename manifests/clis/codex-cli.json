@@ -46,7 +46,7 @@
   "websiteUrl": "https://openai.com/codex",
   "docsUrl": "https://developers.openai.com/codex/cli",
   "vendor": "OpenAI",
-  "latestVersion": "0.151.0",
+  "latestVersion": "0.153.4",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@openai/codex"

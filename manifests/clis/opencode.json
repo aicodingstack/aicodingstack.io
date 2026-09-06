@@ -46,7 +46,7 @@
   "websiteUrl": "https://opencode.ai",
   "docsUrl": "https://opencode.ai/docs",
   "vendor": "Anomaly",
-  "latestVersion": "1.18.25",
+  "latestVersion": "1.18.29",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "opencode-ai"

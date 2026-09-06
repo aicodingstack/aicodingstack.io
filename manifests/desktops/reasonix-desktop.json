@@ -78,7 +78,7 @@
   "websiteUrl": "https://reasonix.io/",
   "docsUrl": "https://reasonix.io/docs/",
   "vendor": "Reasonix",
-  "latestVersion": "1.34.0",
+  "latestVersion": "1.38.0",
   "releaseTracking": {
     "provider": "github-release",
     "identifier": "esengine/DeepSeek-Reasonix",

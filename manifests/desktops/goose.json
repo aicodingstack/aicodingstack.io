@@ -46,7 +46,7 @@
   "websiteUrl": "https://goose-docs.ai",
   "docsUrl": "https://goose-docs.ai/docs/getting-started/installation",
   "vendor": "Agentic AI Foundation",
-  "latestVersion": "1.48.0",
+  "latestVersion": "1.49.0",
   "releaseTracking": {
     "provider": "github-release",
     "identifier": "aaif-goose/goose"

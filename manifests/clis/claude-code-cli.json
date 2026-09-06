@@ -108,7 +108,7 @@
   "websiteUrl": "https://code.claude.com",
   "docsUrl": "https://code.claude.com/docs",
   "vendor": "Anthropic",
-  "latestVersion": "2.1.251",
+  "latestVersion": "2.1.263",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@anthropic-ai/claude-code"

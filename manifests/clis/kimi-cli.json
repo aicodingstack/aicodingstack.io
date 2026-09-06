@@ -90,7 +90,7 @@
   "websiteUrl": "https://www.kimi.com/code",
   "docsUrl": "https://www.kimi.com/code/docs/en/kimi-code-cli/guides/getting-started.html",
   "vendor": "Moonshot AI",
-  "latestVersion": "0.39.1",
+  "latestVersion": "0.41.0",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@moonshot-ai/kimi-code"
