@@ -83,7 +83,7 @@
   "websiteUrl": "https://geminicli.com",
   "docsUrl": "https://geminicli.com/docs",
   "vendor": "Google",
-  "latestVersion": "0.57.0",
+  "latestVersion": "0.58.0",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "@google/gemini-cli"

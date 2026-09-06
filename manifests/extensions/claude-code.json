@@ -103,7 +103,7 @@
   "websiteUrl": "https://code.claude.com",
   "docsUrl": "https://code.claude.com/docs/en/ide-integrations",
   "vendor": "Anthropic",
-  "latestVersion": "2.1.251",
+  "latestVersion": "2.1.263",
   "releaseTracking": {
     "provider": "vscode-marketplace",
     "identifier": "anthropic.claude-code"

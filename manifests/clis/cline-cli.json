@@ -45,7 +45,7 @@
   "websiteUrl": "https://cline.bot/cline-cli",
   "docsUrl": "https://cline.bot/docs",
   "vendor": "Cline Bot",
-  "latestVersion": "3.0.60",
+  "latestVersion": "3.0.61",
   "releaseTracking": {
     "provider": "npm",
     "identifier": "cline"
