@@ -6,6 +6,7 @@ import { ManifestEditLink } from '@/components/product/ManifestEditLink'
 import { Link } from '@/i18n/navigation'
 import { renderLicense } from '@/lib/license'
 import type { ManifestCategory } from '@/lib/manifest-source'
+import type { ManifestPlatformElement } from '@/types/manifests'
 
 export interface ProductHeroProps {
   // Product identity
@@ -25,8 +26,7 @@ export interface ProductHeroProps {
   githubStars?: number | null
 
   // Platform support (for CLI/IDE/Desktop)
-  platforms?: ('macOS' | 'Windows' | 'Linux')[]
-  showAllPlatforms?: boolean // Whether to show BSD platforms when supported
+  platforms?: ManifestPlatformElement['os'][]
 
   // Additional info (for Models)
   additionalInfo?: {
@@ -74,7 +74,6 @@ export function ProductHero({
   license,
   githubStars,
   platforms,
-  showAllPlatforms = false,
   additionalInfo,
   type,
   typeValue,
@@ -89,10 +88,6 @@ export function ProductHero({
 
   // Determine which platforms to display
   const displayPlatforms = platforms
-    ? showAllPlatforms
-      ? platforms
-      : platforms.filter(p => ['macOS', 'Windows', 'Linux'].includes(p))
-    : null
 
   // Get the category badge text
   const badgeText = categoryLabel || category
@@ -217,9 +212,15 @@ export function ProductHero({
                 {tShared('terms.platforms')}:
               </span>
               <div className="flex gap-[var(--spacing-xs)] flex-wrap">
-                {(['macOS', 'Windows', 'Linux'] as const).map(platform => {
+                {[
+                  ...new Set<ManifestPlatformElement['os']>([
+                    'macOS',
+                    'Windows',
+                    'Linux',
+                    ...displayPlatforms,
+                  ]),
+                ].map(platform => {
                   const isSupported = displayPlatforms.includes(platform)
-                  if (!isSupported && !['macOS', 'Windows', 'Linux'].includes(platform)) return null
                   return (
                     <span
                       key={platform}

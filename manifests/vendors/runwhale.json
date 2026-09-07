@@ -1,0 +1,62 @@
+{
+  "$schema": "../$schemas/vendor.schema.json",
+  "id": "runwhale",
+  "name": "RunWhale",
+  "description": "The open-source project behind RunWhale, a mobile coding agent for Web and React Native development.",
+  "translations": {
+    "de": {
+      "description": "Das Open-Source-Projekt hinter RunWhale, einem mobilen Coding-Agent für Web- und React-Native-Entwicklung."
+    },
+    "es": {
+      "description": "El proyecto de código abierto detrás de RunWhale, un agente de programación móvil para desarrollo web y React Native."
+    },
+    "fr": {
+      "description": "Le projet open source derrière RunWhale, un agent de programmation mobile pour le développement Web et React Native."
+    },
+    "id": {
+      "description": "Proyek sumber terbuka di balik RunWhale, agen coding seluler untuk pengembangan Web dan React Native."
+    },
+    "ja": {
+      "description": "WebおよびReact Native開発向けのモバイルコーディングエージェント、RunWhaleを開発するオープンソースプロジェクト。"
+    },
+    "ko": {
+      "description": "Web 및 React Native 개발용 모바일 코딩 에이전트 RunWhale를 만드는 오픈 소스 프로젝트입니다."
+    },
+    "pt": {
+      "description": "O projeto de código aberto por trás do RunWhale, um agente de programação móvel para desenvolvimento Web e React Native."
+    },
+    "ru": {
+      "description": "Открытый проект, разрабатывающий RunWhale — мобильный агент программирования для разработки на Web и React Native."
+    },
+    "tr": {
+      "description": "Web ve React Native geliştirme için mobil kodlama ajanı RunWhale’nin arkasındaki açık kaynak proje."
+    },
+    "zh-Hans": {
+      "description": "RunWhale 背后的开源项目，提供面向 Web 和 React Native 开发的移动编程智能体。"
+    },
+    "zh-Hant": {
+      "description": "RunWhale 背後的開放原始碼專案，提供適用於 Web 和 React Native 開發的行動程式設計代理。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://github.com/zhiqingchen/RunWhale",
+      "title": "RunWhale official repository",
+      "fields": ["name", "description", "communityUrls.github"]
+    }
+  ],
+  "lastVerifiedAt": "2026-09-05",
+  "verifiedBy": "codex-agent",
+  "confidence": "medium",
+  "websiteUrl": "https://runwhale.dev/",
+  "communityUrls": {
+    "linkedin": null,
+    "twitter": null,
+    "github": "https://github.com/zhiqingchen/RunWhale",
+    "youtube": null,
+    "discord": null,
+    "reddit": null,
+    "blog": null
+  }
+}

@@ -19,7 +19,7 @@
             "properties": {
               "os": {
                 "type": "string",
-                "enum": ["macOS", "Windows", "Linux"],
+                "enum": ["macOS", "Windows", "Linux", "iOS", "Android"],
                 "description": "Operating system"
               },
               "installPath": {

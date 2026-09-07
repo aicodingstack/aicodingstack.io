@@ -132,6 +132,7 @@ export interface ManifestPricingTier {
   name: string
   value: number | null
   currency?: 'USD' | 'CNY' | 'EUR' | null
+  /** Null denotes a one-time purchase for a positive price. */
   per?: ManifestPricingPeriod | null
   category: string
 }
@@ -184,7 +185,7 @@ export type ManifestReleaseTracking =
  * Based on: /manifests/$schemas/ref/app.schema.json
  */
 export interface ManifestPlatformElement {
-  os: 'macOS' | 'Windows' | 'Linux'
+  os: 'macOS' | 'Windows' | 'Linux' | 'iOS' | 'Android'
   installPath: string | null
   installCommand?: string | null
   launchCommand?: string | null

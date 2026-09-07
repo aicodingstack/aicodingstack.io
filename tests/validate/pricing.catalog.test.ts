@@ -61,13 +61,13 @@ function identify(tier: CatalogPricingTier): string {
 }
 
 describe('validate: product pricing metadata', () => {
-  it('uses a numeric billing unit for every positive published price', () => {
+  it('uses a numeric billing unit or explicit one-time purchase for every positive price', () => {
     const failures = loadPricingTiers()
       .filter(
         tier =>
           tier.value !== null &&
           tier.value > 0 &&
-          (!tier.currency || !tier.per || !numericPeriods.has(tier.per))
+          (!tier.currency || (tier.per !== null && (!tier.per || !numericPeriods.has(tier.per))))
       )
       .map(identify)
       .sort()

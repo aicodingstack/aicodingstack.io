@@ -38,6 +38,7 @@ import Openai from '../../../manifests/vendors/openai.json'
 import Openrouter from '../../../manifests/vendors/openrouter.json'
 import Reasonix from '../../../manifests/vendors/reasonix.json'
 import RooCode from '../../../manifests/vendors/roo-code.json'
+import Runwhale from '../../../manifests/vendors/runwhale.json'
 import ShareaiLab from '../../../manifests/vendors/shareai-lab.json'
 import Siliconflow from '../../../manifests/vendors/siliconflow.json'
 import Sourcegraph from '../../../manifests/vendors/sourcegraph.json'
@@ -89,6 +90,7 @@ export const vendorsData = [
   Openrouter,
   Reasonix,
   RooCode,
+  Runwhale,
   ShareaiLab,
   Siliconflow,
   Sourcegraph,
