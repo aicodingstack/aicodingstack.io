@@ -46,8 +46,8 @@
       "fields": ["lifecycle"],
       "changeTracking": {
         "method": "normalized-content-sha256",
-        "digest": "sha256:57bfce01949cbe5b61945eccc4ee7462e1d812d7b1e810ec4742c50aac0866fc",
-        "observedAt": "2026-08-31"
+        "digest": "sha256:406b127afd95cc567b0f9c868b9c370de18c71c5e9052dae1064810ef4f9ee12",
+        "observedAt": "2026-09-07"
       }
     }
   ],
