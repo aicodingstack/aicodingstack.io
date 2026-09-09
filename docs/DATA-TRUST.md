@@ -46,6 +46,8 @@ The localized, reader-facing source policy is published under `content/docs/*/da
 
 ## Model catalog inclusion
 
+Intelligence Index entries use the highest-scoring measured configuration of each exact model version. When only estimated results are available, the highest-scoring estimate is retained with `estimated: true`; missing results are not replaced with zero. Reasoning settings may be compared within a model, but distinct checkpoints and text/vision releases remain separate. All entries use the index version and observation date recorded in `data/artificial-analysis-index.json`; scores from different index versions are not directly comparable.
+
 Every new model catalog entry must have a published Artificial Analysis Intelligence Index result compatible with the index version tracked in `data/artificial-analysis-index.json`. Artificial Analysis Coding Agent Index, Agentic Index, individual benchmark scores, and provider-only measurements are different metrics and must not be substituted or mixed into the model Intelligence Index.
 
 `legacyMissingModelIds` records the fixed baseline of older catalog models that do not yet meet this requirement. The list may shrink when a compatible result becomes available, but must not grow. Tests reject newly added model manifests without a matching Intelligence Index entry.

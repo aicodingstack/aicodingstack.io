@@ -91,7 +91,7 @@ describe('model price-intelligence index', () => {
     )
 
     const hy3 = modelPriceIntelligencePoints.find(point => point.modelId === 'hy3')
-    expect(hy3).toMatchObject({ inputPrice: 0.14, outputPrice: 0.58, score: 42 })
+    expect(hy3).toMatchObject({ inputPrice: 0.14, outputPrice: 0.58, score: 26 })
     expect(hy3?.blendedPrice).toBeCloseTo(0.184)
   })
 
