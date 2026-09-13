@@ -78,7 +78,7 @@
   "websiteUrl": "https://www.kimi.com/code",
   "docsUrl": "https://www.kimi.com/code/docs/en",
   "vendor": "Moonshot AI",
-  "latestVersion": "0.7.3",
+  "latestVersion": "0.7.5",
   "releaseTracking": {
     "provider": "vscode-marketplace",
     "identifier": "moonshot-ai.kimi-code"
