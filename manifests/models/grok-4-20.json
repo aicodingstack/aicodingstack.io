@@ -60,8 +60,8 @@
       ],
       "changeTracking": {
         "method": "normalized-content-sha256",
-        "digest": "sha256:121ffa3bfbfddb68360e9b3f963bfdb00d7d993aa140f2192df2c5bafe2c1963",
-        "observedAt": "2026-08-31"
+        "digest": "sha256:4831496f26f177a02ca173d27b8c614f16e1360e726993e30449fc564ace3cac",
+        "observedAt": "2026-09-14"
       }
     }
   ],
