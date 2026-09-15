@@ -79,7 +79,7 @@
   "websiteUrl": "https://vscodium.com",
   "docsUrl": "https://github.com/VSCodium/vscodium/tree/master/docs",
   "vendor": "VSCodium",
-  "latestVersion": "1.126.04524",
+  "latestVersion": "1.135.06055",
   "releaseTracking": {
     "provider": "github-release",
     "identifier": "VSCodium/vscodium"
