@@ -83,8 +83,8 @@
     "@cspell/dict-ru_ru": "^2.3.2",
     "@cspell/dict-tr-tr": "^3.0.6",
     "@mdx-js/loader": "^3.1.1",
-    "@next/bundle-analyzer": "^16.3.4",
-    "@next/mdx": "^16.3.4",
+    "@next/bundle-analyzer": "^16.3.5",
+    "@next/mdx": "^16.3.5",
     "@playwright/test": "^1.63.0",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/mdx": "^2.0.14",
@@ -95,7 +95,7 @@
     "@typescript-eslint/types": "^8.70.0",
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
-    "cspell": "^10.3.0",
+    "cspell": "^10.3.3",
     "gray-matter": "^4.0.3",
     "husky": "9.1.7",
     "lint-staged": "17.5.1",
@@ -107,7 +107,7 @@
     "typescript": "^6.0.3",
     "user-agents": "^1.1.669",
     "vitest": "^4.1.11",
-    "wrangler": "^4.131.0"
+    "wrangler": "^4.134.0"
   },
   "repository": {
     "type": "git",
