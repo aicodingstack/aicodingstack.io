@@ -1,0 +1,121 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "qwen3-8-max-0902",
+  "name": "Qwen3.8-Max-0902",
+  "description": "Alibaba's upgraded Qwen3.8-Max snapshot for engineering-scale coding, long-horizon autonomous development, multi-tool agents, and multimodal understanding.",
+  "translations": {
+    "de": {
+      "description": "Alibabas aktualisierter Qwen3.8-Max-Snapshot für Programmierung im Projektmaßstab, langfristige autonome Entwicklung, Multi-Tool-Agenten und multimodales Verständnis."
+    },
+    "es": {
+      "description": "Versión actualizada de Qwen3.8-Max de Alibaba para programación a escala de ingeniería, desarrollo autónomo prolongado, agentes multiherramienta y comprensión multimodal."
+    },
+    "fr": {
+      "description": "Version actualisée de Qwen3.8-Max d’Alibaba pour le codage à l’échelle de projets, le développement autonome prolongé, les agents multi-outils et la compréhension multimodale."
+    },
+    "id": {
+      "description": "Snapshot Qwen3.8-Max Alibaba yang ditingkatkan untuk coding skala rekayasa, pengembangan otonom jangka panjang, agen multi-alat, dan pemahaman multimodal."
+    },
+    "ja": {
+      "description": "エンジニアリング規模のコーディング、長期自律開発、複数ツールのエージェント、マルチモーダル理解を強化したAlibabaのQwen3.8-Maxスナップショット。"
+    },
+    "ko": {
+      "description": "엔지니어링 규모 코딩, 장기 자율 개발, 다중 도구 에이전트와 멀티모달 이해를 강화한 Alibaba의 Qwen3.8-Max 스냅샷입니다."
+    },
+    "pt": {
+      "description": "Versão atualizada do Qwen3.8-Max da Alibaba para programação em escala de engenharia, desenvolvimento autônomo prolongado, agentes com múltiplas ferramentas e compreensão multimodal."
+    },
+    "ru": {
+      "description": "Обновлённая версия Qwen3.8-Max от Alibaba для программирования инженерного масштаба, длительной автономной разработки, агентов с множеством инструментов и мультимодального понимания."
+    },
+    "tr": {
+      "description": "Mühendislik ölçeğinde kodlama, uzun süreli otonom geliştirme, çok araçlı ajanlar ve çok modlu anlama için Alibaba'nın yükseltilmiş Qwen3.8-Max sürümü."
+    },
+    "zh-Hans": {
+      "description": "阿里巴巴升级版 Qwen3.8-Max 快照，面向工程规模编码、长时程自主开发、多工具智能体和多模态理解。"
+    },
+    "zh-Hant": {
+      "description": "阿里巴巴升級版 Qwen3.8-Max 快照，面向工程規模程式設計、長時程自主開發、多工具智慧體和多模態理解。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://www.qwencloud.com/models/qwen3.8-max-0902",
+      "title": "Qwen3.8-Max-0902 model page",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "releaseDate",
+        "lifecycle",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://qwen.ai/blog?id=qwen3.8",
+      "title": "Qwen3.8-Max: A New Bar for Coding and Cowork",
+      "fields": ["size", "activeParameters"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/qwen3-8-max",
+      "title": "Artificial Analysis Qwen3.8 Max 0902 model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-09-24",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://qwen.ai",
+  "docsUrl": "https://www.qwencloud.com/models/qwen3.8-max-0902",
+  "vendor": "Alibaba",
+  "size": "2.4T",
+  "activeParameters": "95B",
+  "contextWindow": 1000000,
+  "maxOutput": 131072,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": "2026-09-02",
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": { "input": 2, "output": 6, "cacheRead": 0.25, "cacheWrite": 2.5 }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-09-02",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-8-max",
+    "openrouter": null
+  }
+}

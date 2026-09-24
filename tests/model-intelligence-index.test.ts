@@ -198,8 +198,9 @@ describe('model intelligence index', () => {
       ])
     ).toEqual([
       ['qwen3-6-max-preview', 28, true, 'Qwen3.6 Max Preview'],
-      ['qwen3-7-max', 30, false, 'Qwen3.7 Max'],
+      ['qwen3-7-max', 29, false, 'Qwen3.7 Max'],
       ['qwen3-8-max', 40, false, 'Qwen3.8 Max'],
+      ['qwen3-8-max-0902', 45, false, 'Qwen3.8 Max (0902)'],
     ])
     expect(qwenSeries[3]?.points.find(point => point.modelId === 'qwen3-8-27b')).toMatchObject({
       modelId: 'qwen3-8-27b',
@@ -209,22 +210,22 @@ describe('model intelligence index', () => {
     })
     expect(qwenSeries[3]?.points.at(-1)).toMatchObject({
       modelId: 'qwen3-8-flash-next',
-      score: 42,
+      score: 40,
       estimated: true,
       configuration: 'Qwen3.8-Flash-Next',
     })
   })
 
-  it('connects Grok 4.6 to the flagship Grok line', () => {
+  it('connects Grok 4.7 to the flagship Grok line', () => {
     const grokSeries = modelIntelligenceSeries.find(
       series => series.vendor === 'xAI' && series.name === 'Grok'
     )
 
     expect(grokSeries?.points.at(-1)).toMatchObject({
-      modelId: 'grok-4-6',
-      score: 44,
+      modelId: 'grok-4-7',
+      score: 46,
       estimated: false,
-      configuration: 'Grok 4.6 (high)',
+      configuration: 'Grok 4.7 (xhigh)',
     })
   })
 
@@ -247,7 +248,7 @@ describe('model intelligence index', () => {
       modelId: 'claude-fable-5-1',
       score: 53,
       estimated: false,
-      configuration: 'Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)',
+      configuration: 'Claude Fable 5.1 (max with fallback)',
     })
   })
 
@@ -272,6 +273,18 @@ describe('model intelligence index', () => {
         configuration: 'GPT-6 Astra (max)',
       }),
     ])
+    expect(openAISeries[0]?.points.at(-1)).toMatchObject({
+      modelId: 'gpt-6-sol',
+      score: 48,
+      estimated: false,
+      configuration: 'GPT-6 Sol (max)',
+    })
+    expect(openAISeries[2]?.points.at(-1)).toMatchObject({
+      modelId: 'gpt-6-luna',
+      score: 37,
+      estimated: false,
+      configuration: 'GPT-6 Luna (max)',
+    })
   })
 
   it('connects Muse Spark 1.3 to the existing Muse series', () => {
@@ -307,7 +320,7 @@ describe('model intelligence index', () => {
       'deepseek-v4-pro',
     ])
     expect(deepSeekSeries[0]?.points.slice(-2).map(point => [point.modelId, point.score])).toEqual([
-      ['deepseek-v4-pro-preview', 31],
+      ['deepseek-v4-pro-preview', 30],
       ['deepseek-v4-pro', 36],
     ])
     expect(
@@ -318,9 +331,10 @@ describe('model intelligence index', () => {
         point.configuration,
       ])
     ).toEqual([
-      ['deepseek-v4-flash-preview', 25, false, 'DeepSeek V4 Flash (Reasoning, High Effort)'],
-      ['deepseek-v4-flash', 35, false, 'DeepSeek V4 Flash 0731 (Reasoning, Max Effort)'],
-      ['deepseek-v4-flash-vision', 35, false, 'DeepSeek V4 Flash Vision (Reasoning, Max Effort)'],
+      ['deepseek-v4-flash-preview', 26, false, 'DeepSeek V4 Flash (high)'],
+      ['deepseek-v4-flash', 34, false, 'DeepSeek V4 Flash 0731 (max)'],
+      ['deepseek-v4-flash-vision', 35, false, 'DeepSeek V4 Flash Vision (max)'],
+      ['deepseek-v4-1-flash', 39, false, 'DeepSeek V4.1 Flash (max)'],
     ])
   })
 
@@ -352,7 +366,7 @@ describe('model intelligence index', () => {
 
     expect(mimoSeries.map(series => series.name)).toEqual(['MiMo Pro', 'MiMo', 'MiMo Flash'])
     expect(mimoSeries.map(series => series.points.map(point => point.modelId))).toEqual([
-      ['mimo-v2-5-pro'],
+      ['mimo-v2-5-pro', 'mimo-v2-6-pro'],
       ['mimo-v2-5'],
       ['mimo-v2-flash'],
     ])
@@ -505,7 +519,7 @@ describe('model intelligence index', () => {
     expect(haikuPoints).toEqual([
       ['claude-haiku-3', 6, true],
       ['claude-haiku-3-5', 9, true],
-      ['claude-haiku-4-5', 18, false],
+      ['claude-haiku-4-5', 17, false],
     ])
 
     expect(
@@ -532,8 +546,8 @@ describe('model intelligence index', () => {
       ['glm-5', 'GLM', 28],
       ['glm-5-turbo', 'GLM Turbo', 27],
       ['glm-5v-turbo', 'GLM Vision', 23],
-      ['glm-5-1', 'GLM', 27],
-      ['glm-5-2', 'GLM', 39],
+      ['glm-5-1', 'GLM', 26],
+      ['glm-5-2', 'GLM', 34],
       ['glm-5-3', 'GLM', 45],
       ['glm-5-3-flash', 'GLM Air / Flash', 42],
     ])
@@ -546,7 +560,7 @@ describe('model intelligence index', () => {
     expect(modelIntelligenceMeta.methodologyUrl).toBe(
       'https://artificialanalysis.ai/methodology/intelligence-benchmarking'
     )
-    expect(modelIntelligenceMeta.indexVersion).toBe('4.3')
+    expect(modelIntelligenceMeta.indexVersion).toBe('4.3.2')
     expect(modelIntelligenceMeta.observedAt).toMatch(/^\d{4}-\d{2}-\d{2}$/)
   })
 })

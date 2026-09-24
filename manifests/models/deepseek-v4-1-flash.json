@@ -1,0 +1,117 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "deepseek-v4-1-flash",
+  "name": "DeepSeek-V4.1-Flash",
+  "description": "DeepSeek's 552B MoE model with native visual understanding, a 1M-token context window, thinking and non-thinking modes, tool calls, and JSON output.",
+  "translations": {
+    "de": {
+      "description": "DeepSeeks 552B-MoE-Modell mit nativer Bildverarbeitung, 1 Mio. Token Kontext, Denk- und Nicht-Denkmodus, Werkzeugaufrufen und JSON-Ausgabe."
+    },
+    "es": {
+      "description": "Modelo MoE de 552B de DeepSeek con comprensión visual nativa, contexto de 1 M de tokens, modos con y sin razonamiento, herramientas y salida JSON."
+    },
+    "fr": {
+      "description": "Modèle MoE 552B de DeepSeek avec compréhension visuelle native, contexte de 1 M de jetons, modes avec et sans raisonnement, appels d’outils et sortie JSON."
+    },
+    "id": {
+      "description": "Model MoE 552B DeepSeek dengan pemahaman visual native, konteks 1 juta token, mode berpikir dan non-berpikir, pemanggilan alat, serta keluaran JSON."
+    },
+    "ja": {
+      "description": "ネイティブな画像理解、100万トークンのコンテキスト、思考・非思考モード、ツール呼び出し、JSON出力を備えたDeepSeekの552B MoEモデル。"
+    },
+    "ko": {
+      "description": "네이티브 시각 이해, 100만 토큰 컨텍스트, 사고 및 비사고 모드, 도구 호출과 JSON 출력을 지원하는 DeepSeek의 552B MoE 모델입니다."
+    },
+    "pt": {
+      "description": "Modelo MoE de 552B da DeepSeek com compreensão visual nativa, contexto de 1 milhão de tokens, modos com e sem raciocínio, ferramentas e saída JSON."
+    },
+    "ru": {
+      "description": "MoE-модель DeepSeek на 552 млрд параметров с нативным зрением, контекстом 1 млн токенов, режимами рассуждений, вызовами инструментов и выводом JSON."
+    },
+    "tr": {
+      "description": "Yerel görsel anlama, 1 milyon token bağlam, düşünme ve düşünmeme modları, araç çağrıları ve JSON çıktısı sunan DeepSeek 552B MoE modeli."
+    },
+    "zh-Hans": {
+      "description": "DeepSeek 的 552B MoE 模型，具备原生视觉理解、100 万 token 上下文、思考与非思考模式、工具调用和 JSON 输出。"
+    },
+    "zh-Hant": {
+      "description": "DeepSeek 的 552B MoE 模型，具備原生視覺理解、100 萬 token 上下文、思考與非思考模式、工具呼叫和 JSON 輸出。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://deepseek.com/news/deepseek-v4-1-flash/",
+      "title": "DeepSeek V4.1 Flash release announcement",
+      "fields": [
+        "name",
+        "description",
+        "size",
+        "releaseDate",
+        "lifecycle",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "title": "DeepSeek models and pricing",
+      "fields": [
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "title": "DeepSeek-V4.1-Flash official model card",
+      "fields": ["size", "platformUrls.huggingface"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash",
+      "title": "Artificial Analysis DeepSeek V4.1 Flash model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-09-24",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.deepseek.com",
+  "docsUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "vendor": "DeepSeek",
+  "size": "552B",
+  "activeParameters": null,
+  "contextWindow": 1000000,
+  "maxOutput": 384000,
+  "tokenPricing": {
+    "status": "unavailable",
+    "reason": "unsupported-pricing-structure",
+    "primaryOffer": null,
+    "offers": []
+  },
+  "releaseDate": "2026-09-10",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/deepseek-v4-1-flash",
+    "openrouter": null
+  }
+}

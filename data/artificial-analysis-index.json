@@ -3,21 +3,21 @@
   "source": "Artificial Analysis",
   "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
   "methodologyUrl": "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
-  "indexVersion": "4.3",
-  "observedAt": "2026-09-09",
+  "indexVersion": "4.3.2",
+  "observedAt": "2026-09-24",
   "legacyMissingModelIds": ["cursor-composer-2", "cursor-composer-2-5"],
   "entries": [
     {
       "modelId": "claude-fable-5",
       "score": 50,
       "estimated": false,
-      "configuration": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)"
+      "configuration": "Claude Fable 5 (with fallback)"
     },
     {
       "modelId": "claude-fable-5-1",
       "score": 53,
       "estimated": false,
-      "configuration": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)"
+      "configuration": "Claude Fable 5.1 (max with fallback)"
     },
     {
       "modelId": "claude-haiku-3",
@@ -33,9 +33,9 @@
     },
     {
       "modelId": "claude-haiku-4-5",
-      "score": 18,
+      "score": 17,
       "estimated": false,
-      "configuration": "Claude 4.5 Haiku (Reasoning)"
+      "configuration": "Claude 4.5 Haiku"
     },
     {
       "modelId": "claude-opus-3",
@@ -47,43 +47,49 @@
       "modelId": "claude-opus-4",
       "score": 21,
       "estimated": true,
-      "configuration": "Claude 4 Opus (Reasoning)"
+      "configuration": "Claude 4 Opus"
     },
     {
       "modelId": "claude-opus-4-1",
       "score": 23,
       "estimated": true,
-      "configuration": "Claude 4.1 Opus (Reasoning)"
+      "configuration": "Claude 4.1 Opus"
     },
     {
       "modelId": "claude-opus-4-5",
       "score": 29,
       "estimated": true,
-      "configuration": "Claude Opus 4.5 (Reasoning)"
+      "configuration": "Claude Opus 4.5"
     },
     {
       "modelId": "claude-opus-4-6",
       "score": 32,
       "estimated": true,
-      "configuration": "Claude Opus 4.6 (Adaptive Reasoning, Max Effort)"
+      "configuration": "Claude Opus 4.6 (max)"
     },
     {
       "modelId": "claude-opus-4-7",
       "score": 41,
       "estimated": true,
-      "configuration": "Claude Opus 4.7 (Adaptive Reasoning, Max Effort)"
+      "configuration": "Claude Opus 4.7 (max)"
     },
     {
       "modelId": "claude-opus-4-8",
       "score": 42,
       "estimated": false,
-      "configuration": "Claude Opus 4.8 (Adaptive Reasoning, Max Effort)"
+      "configuration": "Claude Opus 4.8 (max)"
     },
     {
       "modelId": "claude-opus-5",
       "score": 51,
       "estimated": false,
-      "configuration": "Claude Opus 5 (Adaptive Reasoning, Max Effort)"
+      "configuration": "Claude Opus 5 (max)"
+    },
+    {
+      "modelId": "claude-opus-5-5",
+      "score": 58,
+      "estimated": false,
+      "configuration": "Claude Opus 5.5 (max with fallback)"
     },
     {
       "modelId": "claude-sonnet-3",
@@ -95,67 +101,67 @@
       "modelId": "claude-sonnet-3-5-20240620",
       "score": 7,
       "estimated": true,
-      "configuration": "Claude 3.5 Sonnet (June '24)"
+      "configuration": "Claude 3.5 Sonnet (June)"
     },
     {
       "modelId": "claude-sonnet-3-5-20241022",
       "score": 8,
       "estimated": true,
-      "configuration": "Claude 3.5 Sonnet (Oct '24)"
+      "configuration": "Claude 3.5 Sonnet (Oct)"
     },
     {
       "modelId": "claude-sonnet-3-7",
       "score": 18,
       "estimated": true,
-      "configuration": "Claude 3.7 Sonnet (Reasoning)"
+      "configuration": "Claude 3.7 Sonnet"
     },
     {
       "modelId": "claude-sonnet-4",
       "score": 19,
       "estimated": true,
-      "configuration": "Claude 4 Sonnet (Reasoning)"
+      "configuration": "Claude 4 Sonnet"
     },
     {
       "modelId": "claude-sonnet-4-5",
       "score": 21,
       "estimated": false,
-      "configuration": "Claude 4.5 Sonnet (Reasoning)"
+      "configuration": "Claude 4.5 Sonnet"
     },
     {
       "modelId": "claude-sonnet-4-6",
       "score": 30,
       "estimated": false,
-      "configuration": "Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)"
+      "configuration": "Claude Sonnet 4.6 (max)"
     },
     {
       "modelId": "claude-sonnet-5",
       "score": 38,
       "estimated": false,
-      "configuration": "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)"
+      "configuration": "Claude Sonnet 5 (max)"
     },
     {
       "modelId": "deepseek-3-2",
       "score": 21,
       "estimated": true,
-      "configuration": "DeepSeek V3.2 (Reasoning)"
+      "configuration": "DeepSeek V3.2"
     },
     {
       "modelId": "deepseek-r1",
       "score": 11,
       "estimated": false,
-      "configuration": "DeepSeek R1 (Jan '25)"
+      "configuration": "DeepSeek R1 (Jan)"
     },
     {
       "modelId": "deepseek-r1-0528",
       "score": 13,
       "estimated": true,
-      "configuration": "DeepSeek R1 0528 (May '25)"
+      "configuration": "DeepSeek R1 0528"
     },
     {
       "modelId": "deepseek-v3",
       "score": 8,
       "estimated": false,
-      "configuration": "DeepSeek V3 (Dec '24)"
+      "configuration": "DeepSeek V3 (Dec)"
     },
     {
       "modelId": "deepseek-v3-1",
@@ -167,43 +173,49 @@
       "modelId": "deepseek-v3-2-exp",
       "score": 17,
       "estimated": true,
-      "configuration": "DeepSeek V3.2 Exp (Reasoning)"
+      "configuration": "DeepSeek V3.2 Exp"
     },
     {
       "modelId": "deepseek-v3-terminus",
       "score": 15,
       "estimated": false,
-      "configuration": "DeepSeek V3.1 Terminus (Reasoning)"
+      "configuration": "DeepSeek V3.1 Terminus"
     },
     {
       "modelId": "deepseek-v4-flash",
-      "score": 35,
+      "score": 34,
       "estimated": false,
-      "configuration": "DeepSeek V4 Flash 0731 (Reasoning, Max Effort)"
+      "configuration": "DeepSeek V4 Flash 0731 (max)"
     },
     {
       "modelId": "deepseek-v4-flash-vision",
       "score": 35,
       "estimated": false,
-      "configuration": "DeepSeek V4 Flash Vision (Reasoning, Max Effort)"
+      "configuration": "DeepSeek V4 Flash Vision (max)"
+    },
+    {
+      "modelId": "deepseek-v4-1-flash",
+      "score": 39,
+      "estimated": false,
+      "configuration": "DeepSeek V4.1 Flash (max)"
     },
     {
       "modelId": "deepseek-v4-flash-preview",
-      "score": 25,
+      "score": 26,
       "estimated": false,
-      "configuration": "DeepSeek V4 Flash (Reasoning, High Effort)"
+      "configuration": "DeepSeek V4 Flash (high)"
     },
     {
       "modelId": "deepseek-v4-pro",
       "score": 36,
       "estimated": false,
-      "configuration": "DeepSeek V4 Pro 0813 (Reasoning, Max Effort)"
+      "configuration": "DeepSeek V4 Pro 0813 (max)"
     },
     {
       "modelId": "deepseek-v4-pro-preview",
-      "score": 31,
+      "score": 30,
       "estimated": false,
-      "configuration": "DeepSeek V4 Pro (Reasoning, Max Effort)"
+      "configuration": "DeepSeek V4 Pro (max)"
     },
     {
       "modelId": "devstral-2",
@@ -221,23 +233,23 @@
       "modelId": "gemini-2-0-flash",
       "score": 9,
       "estimated": true,
-      "configuration": "Gemini 2.0 Flash (Feb '25)"
+      "configuration": "Gemini 2.0 Flash"
     },
     {
       "modelId": "gemini-2-5-flash",
       "score": 13,
       "estimated": true,
-      "configuration": "Gemini 2.5 Flash (Reasoning)"
+      "configuration": "Gemini 2.5 Flash"
     },
     {
       "modelId": "gemini-2-5-flash-lite",
       "score": 9,
       "estimated": true,
-      "configuration": "Gemini 2.5 Flash-Lite (Reasoning)"
+      "configuration": "Gemini 2.5 Flash-Lite"
     },
     {
       "modelId": "gemini-2-5-pro",
-      "score": 17,
+      "score": 16,
       "estimated": false,
       "configuration": "Gemini 2.5 Pro"
     },
@@ -251,11 +263,11 @@
       "modelId": "gemini-3-5-flash",
       "score": 33,
       "estimated": false,
-      "configuration": "Gemini 3.5 Flash (high)"
+      "configuration": "Gemini 3.5 Flash"
     },
     {
       "modelId": "gemini-3-5-flash-lite",
-      "score": 23,
+      "score": 22,
       "estimated": false,
       "configuration": "Gemini 3.5 Flash-Lite"
     },
@@ -263,7 +275,7 @@
       "modelId": "gemini-3-6-flash",
       "score": 34,
       "estimated": false,
-      "configuration": "Gemini 3.6 Flash (high)"
+      "configuration": "Gemini 3.6 Flash"
     },
     {
       "modelId": "gemini-3-7-flash",
@@ -281,7 +293,7 @@
       "modelId": "gemini-3-flash",
       "score": 26,
       "estimated": true,
-      "configuration": "Gemini 3 Flash Preview (Reasoning)"
+      "configuration": "Gemini 3 Flash"
     },
     {
       "modelId": "gemini-3-pro",
@@ -293,19 +305,19 @@
       "modelId": "gemma-4-26b-a4b",
       "score": 17,
       "estimated": true,
-      "configuration": "Gemma 4 26B A4B (Reasoning)"
+      "configuration": "Gemma 4 26B A4B"
     },
     {
       "modelId": "gemma-4-31b",
-      "score": 15,
+      "score": 19,
       "estimated": false,
-      "configuration": "Gemma 4 31B (Reasoning)"
+      "configuration": "Gemma 4 31B"
     },
     {
       "modelId": "glm-4-5",
       "score": 13,
       "estimated": true,
-      "configuration": "GLM-4.5 (Reasoning)"
+      "configuration": "GLM-4.5"
     },
     {
       "modelId": "glm-4-5-air",
@@ -317,37 +329,37 @@
       "modelId": "glm-4-5v",
       "score": 8,
       "estimated": true,
-      "configuration": "GLM-4.5V (Reasoning)"
+      "configuration": "GLM-4.5V"
     },
     {
       "modelId": "glm-4-6",
       "score": 19,
       "estimated": true,
-      "configuration": "GLM-4.6 (Reasoning)"
+      "configuration": "GLM-4.6"
     },
     {
       "modelId": "glm-4-6v",
       "score": 11,
       "estimated": true,
-      "configuration": "GLM-4.6V (Reasoning)"
+      "configuration": "GLM-4.6V"
     },
     {
       "modelId": "glm-4-7",
       "score": 22,
       "estimated": true,
-      "configuration": "GLM-4.7 (Reasoning)"
+      "configuration": "GLM-4.7"
     },
     {
       "modelId": "glm-4-7-flash",
       "score": 15,
       "estimated": true,
-      "configuration": "GLM-4.7-Flash (Reasoning)"
+      "configuration": "GLM-4.7-Flash"
     },
     {
       "modelId": "glm-5",
       "score": 28,
       "estimated": true,
-      "configuration": "GLM-5 (Reasoning)"
+      "configuration": "GLM-5"
     },
     {
       "modelId": "glm-5-turbo",
@@ -359,17 +371,17 @@
       "modelId": "glm-5v-turbo",
       "score": 23,
       "estimated": true,
-      "configuration": "GLM 5V Turbo (Reasoning)"
+      "configuration": "GLM 5V Turbo"
     },
     {
       "modelId": "glm-5-1",
-      "score": 27,
+      "score": 26,
       "estimated": true,
-      "configuration": "GLM-5.1 (Reasoning)"
+      "configuration": "GLM-5.1"
     },
     {
       "modelId": "glm-5-2",
-      "score": 39,
+      "score": 34,
       "estimated": true,
       "configuration": "GLM-5.2 (max)"
     },
@@ -407,7 +419,7 @@
       "modelId": "gpt-4o",
       "score": 8,
       "estimated": true,
-      "configuration": "GPT-4o (Nov '24)"
+      "configuration": "GPT-4o (Nov)"
     },
     {
       "modelId": "gpt-4o-mini",
@@ -465,7 +477,7 @@
     },
     {
       "modelId": "gpt-5-4-mini",
-      "score": 25,
+      "score": 24,
       "estimated": false,
       "configuration": "GPT-5.4 mini (xhigh)"
     },
@@ -477,13 +489,13 @@
     },
     {
       "modelId": "gpt-5-5",
-      "score": 39,
+      "score": 38,
       "estimated": false,
       "configuration": "GPT-5.5 (xhigh)"
     },
     {
       "modelId": "gpt-5-6-luna",
-      "score": 38,
+      "score": 37,
       "estimated": false,
       "configuration": "GPT-5.6 Luna (max)"
     },
@@ -498,6 +510,18 @@
       "score": 53,
       "estimated": false,
       "configuration": "GPT-6 Astra (max)"
+    },
+    {
+      "modelId": "gpt-6-luna",
+      "score": 37,
+      "estimated": false,
+      "configuration": "GPT-6 Luna (max)"
+    },
+    {
+      "modelId": "gpt-6-sol",
+      "score": 48,
+      "estimated": false,
+      "configuration": "GPT-6 Sol (max)"
     },
     {
       "modelId": "gpt-5-6-terra",
@@ -533,13 +557,13 @@
       "modelId": "grok-4-1-fast",
       "score": 20,
       "estimated": true,
-      "configuration": "Grok 4.1 Fast (Reasoning)"
+      "configuration": "Grok 4.1 Fast"
     },
     {
       "modelId": "grok-4-20",
       "score": 26,
       "estimated": true,
-      "configuration": "Grok 4.20 0309 v2 (Reasoning)"
+      "configuration": "Grok 4.20 0309 v2"
     },
     {
       "modelId": "grok-4-3",
@@ -560,10 +584,16 @@
       "configuration": "Grok 4.6 (high)"
     },
     {
+      "modelId": "grok-4-7",
+      "score": 46,
+      "estimated": false,
+      "configuration": "Grok 4.7 (xhigh)"
+    },
+    {
       "modelId": "grok-4-fast",
       "score": 18,
       "estimated": true,
-      "configuration": "Grok 4 Fast (Reasoning)"
+      "configuration": "Grok 4 Fast"
     },
     {
       "modelId": "grok-code-fast-1",
@@ -573,7 +603,7 @@
     },
     {
       "modelId": "hy3",
-      "score": 26,
+      "score": 25,
       "estimated": false,
       "configuration": "Hy3"
     },
@@ -593,11 +623,11 @@
       "modelId": "kimi-k2-5",
       "score": 23,
       "estimated": true,
-      "configuration": "Kimi K2.5 (Reasoning)"
+      "configuration": "Kimi K2.5"
     },
     {
       "modelId": "kimi-k2-6",
-      "score": 31,
+      "score": 27,
       "estimated": true,
       "configuration": "Kimi K2.6"
     },
@@ -621,13 +651,13 @@
     },
     {
       "modelId": "llama-4-maverick",
-      "score": 9,
+      "score": 10,
       "estimated": false,
       "configuration": "Llama 4 Maverick"
     },
     {
       "modelId": "llama-4-scout",
-      "score": 6,
+      "score": 8,
       "estimated": false,
       "configuration": "Llama 4 Scout"
     },
@@ -657,13 +687,13 @@
     },
     {
       "modelId": "minimax-m3",
-      "score": 30,
+      "score": 29,
       "estimated": false,
       "configuration": "MiniMax-M3"
     },
     {
       "modelId": "mimo-v2-5",
-      "score": 22,
+      "score": 25,
       "estimated": false,
       "configuration": "MiMo-V2.5"
     },
@@ -674,14 +704,20 @@
       "configuration": "MiMo-V2.5-Pro"
     },
     {
+      "modelId": "mimo-v2-6-pro",
+      "score": 46,
+      "estimated": false,
+      "configuration": "MiMo-V2.6-Pro"
+    },
+    {
       "modelId": "mimo-v2-flash",
       "score": 21,
       "estimated": true,
-      "configuration": "MiMo-V2-Flash (Reasoning)"
+      "configuration": "MiMo-V2-Flash"
     },
     {
       "modelId": "mistral-medium-3-5",
-      "score": 15,
+      "score": 14,
       "estimated": false,
       "configuration": "Mistral Medium 3.5"
     },
@@ -689,7 +725,7 @@
       "modelId": "mistral-small-4",
       "score": 11,
       "estimated": false,
-      "configuration": "Mistral Small 4 (Reasoning)"
+      "configuration": "Mistral Small 4"
     },
     {
       "modelId": "muse-spark-1-1",
@@ -731,31 +767,31 @@
       "modelId": "qwen3-5-122b-a10b",
       "score": 16,
       "estimated": false,
-      "configuration": "Qwen3.5 122B A10B (Reasoning)"
+      "configuration": "Qwen3.5 122B A10B"
     },
     {
       "modelId": "qwen3-5-35b-a3b",
       "score": 19,
       "estimated": true,
-      "configuration": "Qwen3.5 35B A3B (Reasoning)"
+      "configuration": "Qwen3.5 35B A3B"
     },
     {
       "modelId": "qwen3-5-397b-a17b",
-      "score": 19,
+      "score": 18,
       "estimated": false,
-      "configuration": "Qwen3.5 397B A17B (Reasoning)"
+      "configuration": "Qwen3.5 397B A17B"
     },
     {
       "modelId": "qwen3-coder-30b-a3b",
       "score": 10,
       "estimated": true,
-      "configuration": "Qwen3 Coder 30B A3B Instruct"
+      "configuration": "Qwen3 Coder 30B A3B"
     },
     {
       "modelId": "qwen3-coder-480b-a35b",
       "score": 12,
       "estimated": true,
-      "configuration": "Qwen3 Coder 480B A35B Instruct"
+      "configuration": "Qwen3 Coder 480B"
     },
     {
       "modelId": "qwen3-6-plus",
@@ -765,15 +801,15 @@
     },
     {
       "modelId": "qwen3-6-27b",
-      "score": 22,
+      "score": 21,
       "estimated": false,
-      "configuration": "Qwen3.6 27B (Reasoning)"
+      "configuration": "Qwen3.6 27B"
     },
     {
       "modelId": "qwen3-6-35b-a3b",
-      "score": 22,
+      "score": 18,
       "estimated": true,
-      "configuration": "Qwen3.6 35B A3B (Reasoning)"
+      "configuration": "Qwen3.6 35B A3B"
     },
     {
       "modelId": "qwen3-6-max-preview",
@@ -783,13 +819,13 @@
     },
     {
       "modelId": "qwen3-7-max",
-      "score": 30,
+      "score": 29,
       "estimated": false,
       "configuration": "Qwen3.7 Max"
     },
     {
       "modelId": "qwen3-7-plus",
-      "score": 26,
+      "score": 25,
       "estimated": false,
       "configuration": "Qwen3.7 Plus"
     },
@@ -812,14 +848,20 @@
       "configuration": "Qwen3.8 Max"
     },
     {
+      "modelId": "qwen3-8-max-0902",
+      "score": 45,
+      "estimated": false,
+      "configuration": "Qwen3.8 Max (0902)"
+    },
+    {
       "modelId": "qwen3-8-flash-next",
-      "score": 42,
+      "score": 40,
       "estimated": true,
       "configuration": "Qwen3.8-Flash-Next"
     },
     {
       "modelId": "qwen3-coder-next",
-      "score": 10,
+      "score": 9,
       "estimated": false,
       "configuration": "Qwen3 Coder Next"
     }

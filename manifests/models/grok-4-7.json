@@ -1,0 +1,123 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "grok-4-7",
+  "name": "Grok 4.7",
+  "description": "SpaceXAI's frontier model for coding, agentic tasks, and knowledge work, with configurable reasoning and a 500K-token multimodal context window.",
+  "translations": {
+    "de": {
+      "description": "SpaceXAIs Frontier-Modell für Programmierung, agentische Aufgaben und Wissensarbeit mit konfigurierbarem Reasoning und multimodalem 500K-Token-Kontext."
+    },
+    "es": {
+      "description": "Modelo de frontera de SpaceXAI para programación, tareas agénticas y trabajo del conocimiento, con razonamiento configurable y contexto multimodal de 500K tokens."
+    },
+    "fr": {
+      "description": "Modèle de pointe de SpaceXAI pour le codage, les tâches agentiques et le travail intellectuel, avec raisonnement configurable et contexte multimodal de 500K jetons."
+    },
+    "id": {
+      "description": "Model frontier SpaceXAI untuk coding, tugas agentik, dan pekerjaan pengetahuan, dengan penalaran yang dapat dikonfigurasi serta konteks multimodal 500K token."
+    },
+    "ja": {
+      "description": "設定可能な推論と50万トークンのマルチモーダルコンテキストを備え、コーディング、エージェント型タスク、知識労働に対応するSpaceXAIのフロンティアモデル。"
+    },
+    "ko": {
+      "description": "구성 가능한 추론과 50만 토큰 멀티모달 컨텍스트를 갖춘 코딩, 에이전트 작업 및 지식 업무용 SpaceXAI 프런티어 모델입니다."
+    },
+    "pt": {
+      "description": "Modelo de fronteira da SpaceXAI para programação, tarefas agênticas e trabalho de conhecimento, com raciocínio configurável e contexto multimodal de 500K tokens."
+    },
+    "ru": {
+      "description": "Передовая модель SpaceXAI для программирования, агентных задач и интеллектуальной работы с настраиваемыми рассуждениями и мультимодальным контекстом 500K токенов."
+    },
+    "tr": {
+      "description": "Yapılandırılabilir akıl yürütme ve 500K token çok modlu bağlam ile kodlama, ajan görevleri ve bilgi çalışmaları için SpaceXAI'ın öncü modeli."
+    },
+    "zh-Hans": {
+      "description": "SpaceXAI 面向编码、智能体任务和知识工作的前沿模型，支持可配置推理和 50 万 token 多模态上下文。"
+    },
+    "zh-Hant": {
+      "description": "SpaceXAI 面向程式設計、智慧體任務和知識工作的前沿模型，支援可設定推理和 50 萬 token 多模態上下文。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://docs.x.ai/developers/models/grok-4.7",
+      "title": "Grok 4.7 model documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://docs.x.ai/developers/release-notes",
+      "title": "SpaceXAI API release notes",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/grok-4-7",
+      "title": "Artificial Analysis Grok 4.7 model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-09-24",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://x.ai",
+  "docsUrl": "https://docs.x.ai/developers/models/grok-4.7",
+  "vendor": "xAI",
+  "size": null,
+  "activeParameters": null,
+  "contextWindow": 500000,
+  "maxOutput": null,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": "2026-09-21",
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": { "metric": "inputTokens", "min": 1, "max": 200000 },
+            "rates": { "input": 2, "output": 6, "cacheRead": 0.5, "cacheWrite": null }
+          },
+          {
+            "condition": { "metric": "inputTokens", "min": 200001, "max": 500000 },
+            "rates": { "input": 4, "output": 12, "cacheRead": 1, "cacheWrite": null }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-09-21",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2026-05",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/grok-4-7",
+    "openrouter": null
+  }
+}

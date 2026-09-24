@@ -18,7 +18,8 @@
         "gpt-5-2",
         "gpt-5-4",
         "gpt-5-5",
-        "gpt-5-6-sol"
+        "gpt-5-6-sol",
+        "gpt-6-sol"
       ]
     },
     {
@@ -36,7 +37,7 @@
     {
       "id": "gpt-nano-luna",
       "name": "GPT nano(Luna)",
-      "modelIds": ["gpt-4-1-nano", "gpt-5-nano", "gpt-5-4-nano", "gpt-5-6-luna"]
+      "modelIds": ["gpt-4-1-nano", "gpt-5-nano", "gpt-5-4-nano", "gpt-5-6-luna", "gpt-6-luna"]
     },
     {
       "id": "gpt-codex",
@@ -133,12 +134,12 @@
       "fields": ["communityUrls.reddit"]
     },
     {
-      "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
-      "title": "GPT-6 Astra model documentation",
+      "url": "https://developers.openai.com/api/docs/models",
+      "title": "OpenAI model catalog",
       "fields": ["modelSeries"]
     }
   ],
-  "lastVerifiedAt": "2026-09-04",
+  "lastVerifiedAt": "2026-09-24",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://openai.com",
