@@ -1,0 +1,124 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gpt-6-sol",
+  "name": "GPT-6 Sol",
+  "description": "OpenAI's GPT-6 model for complex coding and agentic workflows, balancing intelligence and cost with a 1.05M-token context window and 128K output.",
+  "translations": {
+    "de": {
+      "description": "OpenAIs GPT-6-Modell für komplexe Programmier- und Agentenabläufe, das Intelligenz und Kosten mit 1,05 Mio. Token Kontext und 128K Ausgabe ausbalanciert."
+    },
+    "es": {
+      "description": "Modelo GPT-6 de OpenAI para programación compleja y flujos agénticos, que equilibra inteligencia y coste con contexto de 1,05 M de tokens y salida de 128K."
+    },
+    "fr": {
+      "description": "Modèle GPT-6 d’OpenAI pour le codage complexe et les flux agentiques, équilibrant intelligence et coût avec 1,05 M de jetons de contexte et 128K en sortie."
+    },
+    "id": {
+      "description": "Model GPT-6 OpenAI untuk coding kompleks dan alur kerja agentik, menyeimbangkan kecerdasan dan biaya dengan konteks 1,05 juta token serta keluaran 128K."
+    },
+    "ja": {
+      "description": "複雑なコーディングとエージェント型ワークフロー向けに、知能とコストのバランスを取り、105万トークンのコンテキストと128K出力を備えたOpenAIのGPT-6モデル。"
+    },
+    "ko": {
+      "description": "복잡한 코딩과 에이전트 워크플로를 위해 지능과 비용의 균형을 맞추고 105만 토큰 컨텍스트와 128K 출력을 제공하는 OpenAI GPT-6 모델입니다."
+    },
+    "pt": {
+      "description": "Modelo GPT-6 da OpenAI para programação complexa e fluxos agênticos, equilibrando inteligência e custo com contexto de 1,05 milhão de tokens e saída de 128K."
+    },
+    "ru": {
+      "description": "Модель GPT-6 от OpenAI для сложного программирования и агентных процессов, сочетающая интеллект и стоимость с контекстом 1,05 млн токенов и выводом 128K."
+    },
+    "tr": {
+      "description": "Karmaşık kodlama ve ajan iş akışları için zeka ile maliyeti dengeleyen, 1,05 milyon token bağlam ve 128K çıktı sunan OpenAI GPT-6 modeli."
+    },
+    "zh-Hans": {
+      "description": "OpenAI 面向复杂编码和智能体工作流的 GPT-6 模型，以 105 万 token 上下文和 128K 输出平衡能力与成本。"
+    },
+    "zh-Hant": {
+      "description": "OpenAI 面向複雜程式設計和智慧體工作流程的 GPT-6 模型，以 105 萬 token 上下文和 128K 輸出平衡能力與成本。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+      "title": "GPT-6 Sol model documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "title": "OpenAI API changelog",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/gpt-6-sol",
+      "title": "Artificial Analysis GPT-6 Sol model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-09-24",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://openai.com",
+  "docsUrl": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+  "vendor": "OpenAI",
+  "size": null,
+  "activeParameters": null,
+  "contextWindow": 1050000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": "2026-09-22",
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": { "metric": "inputTokens", "min": 1, "max": 272000 },
+            "rates": { "input": 2, "output": 10, "cacheRead": 0.2, "cacheWrite": 2.5 }
+          },
+          {
+            "condition": { "metric": "inputTokens", "min": 272001, "max": 922000 },
+            "rates": { "input": 4, "output": 15, "cacheRead": 0.4, "cacheWrite": 5 }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-09-22",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2026-04-20",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-6-sol",
+    "openrouter": null
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "gpt-6-luna",
+  "name": "GPT-6 Luna",
+  "description": "OpenAI's efficient GPT-6 model for focused, high-volume workloads, with adjustable reasoning, a 1.05M-token context window, and 128K output.",
+  "translations": {
+    "de": {
+      "description": "OpenAIs effizientes GPT-6-Modell für fokussierte Aufgaben mit hohem Volumen, einstellbarem Reasoning, 1,05 Mio. Token Kontext und 128K Ausgabe."
+    },
+    "es": {
+      "description": "Modelo GPT-6 eficiente de OpenAI para cargas enfocadas y de gran volumen, con razonamiento ajustable, contexto de 1,05 M de tokens y salida de 128K."
+    },
+    "fr": {
+      "description": "Modèle GPT-6 efficace d’OpenAI pour les charges ciblées à fort volume, avec raisonnement réglable, contexte de 1,05 M de jetons et sortie de 128K."
+    },
+    "id": {
+      "description": "Model GPT-6 efisien OpenAI untuk beban kerja terfokus bervolume tinggi, dengan penalaran yang dapat diatur, konteks 1,05 juta token, dan keluaran 128K."
+    },
+    "ja": {
+      "description": "集中的で大量の処理向けに、調整可能な推論、105万トークンのコンテキスト、128K出力を備えたOpenAIの効率的なGPT-6モデル。"
+    },
+    "ko": {
+      "description": "집중적이고 대규모인 작업을 위해 조절 가능한 추론, 105만 토큰 컨텍스트와 128K 출력을 제공하는 OpenAI의 효율적인 GPT-6 모델입니다."
+    },
+    "pt": {
+      "description": "Modelo GPT-6 eficiente da OpenAI para cargas focadas e de alto volume, com raciocínio ajustável, contexto de 1,05 milhão de tokens e saída de 128K."
+    },
+    "ru": {
+      "description": "Эффективная модель GPT-6 от OpenAI для сфокусированных массовых задач с настраиваемыми рассуждениями, контекстом 1,05 млн токенов и выводом 128K."
+    },
+    "tr": {
+      "description": "Odaklı, yüksek hacimli işler için ayarlanabilir akıl yürütme, 1,05 milyon token bağlam ve 128K çıktı sunan verimli OpenAI GPT-6 modeli."
+    },
+    "zh-Hans": {
+      "description": "OpenAI 面向聚焦、高吞吐工作负载的高效 GPT-6 模型，支持可调推理、105 万 token 上下文和 128K 输出。"
+    },
+    "zh-Hant": {
+      "description": "OpenAI 面向聚焦、高吞吐工作負載的高效 GPT-6 模型，支援可調推理、105 萬 token 上下文和 128K 輸出。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+      "title": "GPT-6 Luna model documentation",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "title": "OpenAI API changelog",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/gpt-6-luna",
+      "title": "Artificial Analysis GPT-6 Luna model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-09-24",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://openai.com",
+  "docsUrl": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+  "vendor": "OpenAI",
+  "size": null,
+  "activeParameters": null,
+  "contextWindow": 1050000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": "2026-09-22",
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": { "metric": "inputTokens", "min": 1, "max": 272000 },
+            "rates": { "input": 0.1, "output": 0.5, "cacheRead": 0.01, "cacheWrite": 0.125 }
+          },
+          {
+            "condition": { "metric": "inputTokens", "min": 272001, "max": 922000 },
+            "rates": { "input": 0.2, "output": 0.75, "cacheRead": 0.02, "cacheWrite": 0.25 }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-09-22",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2026-05-18",
+  "inputModalities": ["text", "image"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/gpt-6-luna",
+    "openrouter": null
+  }
+}

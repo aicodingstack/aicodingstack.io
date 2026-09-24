@@ -49,11 +49,15 @@
         "websiteUrl",
         "docsUrl",
         "releaseDate",
-        "lifecycle",
         "inputModalities",
         "outputModalities",
         "capabilities"
       ]
+    },
+    {
+      "url": "https://deepseek.com/news/deepseek-v4-1-flash/",
+      "title": "DeepSeek V4.1 Flash release and V4 retirement announcement",
+      "fields": ["lifecycle"]
     },
     {
       "url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -71,7 +75,7 @@
       "fields": ["platformUrls.artificialAnalysis"]
     }
   ],
-  "lastVerifiedAt": "2026-08-28",
+  "lastVerifiedAt": "2026-09-24",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.deepseek.com",
@@ -88,7 +92,7 @@
     "offers": []
   },
   "releaseDate": "2026-08-21",
-  "lifecycle": "latest",
+  "lifecycle": "deprecated",
   "knowledgeCutoff": null,
   "inputModalities": ["text", "image"],
   "outputModalities": ["text"],

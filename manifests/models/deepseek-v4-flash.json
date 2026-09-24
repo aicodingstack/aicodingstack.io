@@ -61,15 +61,12 @@
     {
       "url": "https://api-docs.deepseek.com/updates/",
       "title": "DeepSeek V4 Flash July 31 API update",
-      "fields": [
-        "name",
-        "description",
-        "size",
-        "activeParameters",
-        "releaseDate",
-        "lifecycle",
-        "capabilities"
-      ]
+      "fields": ["name", "description", "size", "activeParameters", "releaseDate", "capabilities"]
+    },
+    {
+      "url": "https://deepseek.com/news/deepseek-v4-1-flash/",
+      "title": "DeepSeek V4.1 Flash release and V4 retirement announcement",
+      "fields": ["lifecycle"]
     },
     {
       "url": "https://artificialanalysis.ai/models/deepseek-v4-flash/",
@@ -77,7 +74,7 @@
       "fields": ["platformUrls.artificialAnalysis"]
     }
   ],
-  "lastVerifiedAt": "2026-07-31",
+  "lastVerifiedAt": "2026-09-24",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.deepseek.com",
@@ -113,7 +110,7 @@
     ]
   },
   "releaseDate": "2026-07-31",
-  "lifecycle": "latest",
+  "lifecycle": "deprecated",
   "knowledgeCutoff": null,
   "inputModalities": ["text"],
   "outputModalities": ["text"],

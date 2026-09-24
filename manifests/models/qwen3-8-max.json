@@ -78,8 +78,8 @@
       "fields": ["description"]
     },
     {
-      "url": "https://artificialanalysis.ai/models/qwen3-8-max",
-      "title": "Artificial Analysis Qwen3.8 Max model page",
+      "url": "https://artificialanalysis.ai/models/qwen3-8-max-0803",
+      "title": "Artificial Analysis Qwen3.8 Max 0803 model page",
       "fields": ["releaseDate", "platformUrls.artificialAnalysis"]
     }
   ],
@@ -135,7 +135,7 @@
   },
   "platformUrls": {
     "huggingface": null,
-    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-8-max",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/qwen3-8-max-0803",
     "openrouter": null
   }
 }

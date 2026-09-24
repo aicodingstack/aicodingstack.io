@@ -17,6 +17,7 @@ import ClaudeOpus46 from '../../../manifests/models/claude-opus-4-6.json'
 import ClaudeOpus47 from '../../../manifests/models/claude-opus-4-7.json'
 import ClaudeOpus48 from '../../../manifests/models/claude-opus-4-8.json'
 import ClaudeOpus5 from '../../../manifests/models/claude-opus-5.json'
+import ClaudeOpus55 from '../../../manifests/models/claude-opus-5-5.json'
 import ClaudeSonnet3 from '../../../manifests/models/claude-sonnet-3.json'
 import ClaudeSonnet3520240620 from '../../../manifests/models/claude-sonnet-3-5-20240620.json'
 import ClaudeSonnet3520241022 from '../../../manifests/models/claude-sonnet-3-5-20241022.json'
@@ -34,6 +35,7 @@ import DeepseekV3 from '../../../manifests/models/deepseek-v3.json'
 import DeepseekV31 from '../../../manifests/models/deepseek-v3-1.json'
 import DeepseekV32Exp from '../../../manifests/models/deepseek-v3-2-exp.json'
 import DeepseekV3Terminus from '../../../manifests/models/deepseek-v3-terminus.json'
+import DeepseekV41Flash from '../../../manifests/models/deepseek-v4-1-flash.json'
 import DeepseekV4Flash from '../../../manifests/models/deepseek-v4-flash.json'
 import DeepseekV4FlashPreview from '../../../manifests/models/deepseek-v4-flash-preview.json'
 import DeepseekV4FlashVision from '../../../manifests/models/deepseek-v4-flash-vision.json'
@@ -92,11 +94,14 @@ import Gpt5Codex from '../../../manifests/models/gpt-5-codex.json'
 import Gpt5Mini from '../../../manifests/models/gpt-5-mini.json'
 import Gpt5Nano from '../../../manifests/models/gpt-5-nano.json'
 import Gpt6Astra from '../../../manifests/models/gpt-6-astra.json'
+import Gpt6Luna from '../../../manifests/models/gpt-6-luna.json'
+import Gpt6Sol from '../../../manifests/models/gpt-6-sol.json'
 import Grok4 from '../../../manifests/models/grok-4.json'
 import Grok41Fast from '../../../manifests/models/grok-4-1-fast.json'
 import Grok43 from '../../../manifests/models/grok-4-3.json'
 import Grok45 from '../../../manifests/models/grok-4-5.json'
 import Grok46 from '../../../manifests/models/grok-4-6.json'
+import Grok47 from '../../../manifests/models/grok-4-7.json'
 import Grok420 from '../../../manifests/models/grok-4-20.json'
 import Grok4Fast from '../../../manifests/models/grok-4-fast.json'
 import GrokCodeFast1 from '../../../manifests/models/grok-code-fast-1.json'
@@ -112,6 +117,7 @@ import Llama4Maverick from '../../../manifests/models/llama-4-maverick.json'
 import Llama4Scout from '../../../manifests/models/llama-4-scout.json'
 import MimoV25 from '../../../manifests/models/mimo-v2-5.json'
 import MimoV25Pro from '../../../manifests/models/mimo-v2-5-pro.json'
+import MimoV26Pro from '../../../manifests/models/mimo-v2-6-pro.json'
 import MimoV2Flash from '../../../manifests/models/mimo-v2-flash.json'
 import MinimaxM2 from '../../../manifests/models/minimax-m2.json'
 import MinimaxM21 from '../../../manifests/models/minimax-m2-1.json'
@@ -139,6 +145,7 @@ import Qwen3824tA95b from '../../../manifests/models/qwen3-8-2-4t-a95b.json'
 import Qwen3827b from '../../../manifests/models/qwen3-8-27b.json'
 import Qwen38FlashNext from '../../../manifests/models/qwen3-8-flash-next.json'
 import Qwen38Max from '../../../manifests/models/qwen3-8-max.json'
+import Qwen38Max0902 from '../../../manifests/models/qwen3-8-max-0902.json'
 import Qwen3Coder30bA3b from '../../../manifests/models/qwen3-coder-30b-a3b.json'
 import Qwen3Coder480bA35b from '../../../manifests/models/qwen3-coder-480b-a35b.json'
 import Qwen3CoderNext from '../../../manifests/models/qwen3-coder-next.json'
@@ -157,6 +164,7 @@ export const modelsData = [
   ClaudeOpus47,
   ClaudeOpus48,
   ClaudeOpus4,
+  ClaudeOpus55,
   ClaudeOpus5,
   ClaudeSonnet3520240620,
   ClaudeSonnet3520241022,
@@ -175,6 +183,7 @@ export const modelsData = [
   DeepseekV32Exp,
   DeepseekV3Terminus,
   DeepseekV3,
+  DeepseekV41Flash,
   DeepseekV4FlashPreview,
   DeepseekV4FlashVision,
   DeepseekV4Flash,
@@ -233,10 +242,13 @@ export const modelsData = [
   Gpt5Nano,
   Gpt5,
   Gpt6Astra,
+  Gpt6Luna,
+  Gpt6Sol,
   Grok41Fast,
   Grok43,
   Grok45,
   Grok46,
+  Grok47,
   Grok420,
   Grok4Fast,
   Grok4,
@@ -253,6 +265,7 @@ export const modelsData = [
   Llama4Scout,
   MimoV25Pro,
   MimoV25,
+  MimoV26Pro,
   MimoV2Flash,
   MinimaxM21,
   MinimaxM25,
@@ -279,6 +292,7 @@ export const modelsData = [
   Qwen3824tA95b,
   Qwen3827b,
   Qwen38FlashNext,
+  Qwen38Max0902,
   Qwen38Max,
   Qwen3Coder30bA3b,
   Qwen3Coder480bA35b,

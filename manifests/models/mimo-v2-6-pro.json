@@ -1,0 +1,124 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "mimo-v2-6-pro",
+  "name": "MiMo-V2.6-Pro",
+  "description": "Xiaomi's open-weight trillion-parameter flagship for complex projects, long-horizon agents, cybersecurity, and multimodal research with a 1M-token context.",
+  "translations": {
+    "de": {
+      "description": "Das offene Flaggschiffmodell von Xiaomi mit einer Billion Parametern für komplexe Projekte, Langzeitagenten, Cybersicherheit und multimodale Forschung mit 1 Mio. Token Kontext."
+    },
+    "es": {
+      "description": "Modelo insignia abierto de Xiaomi con un billón de parámetros para proyectos complejos, agentes prolongados, ciberseguridad e investigación multimodal con contexto de 1 M de tokens."
+    },
+    "fr": {
+      "description": "Modèle phare ouvert de Xiaomi à mille milliards de paramètres pour les projets complexes, agents de longue durée, cybersécurité et recherche multimodale avec 1 M de jetons de contexte."
+    },
+    "id": {
+      "description": "Model unggulan terbuka Xiaomi berparameter satu triliun untuk proyek kompleks, agen jangka panjang, keamanan siber, dan riset multimodal dengan konteks 1 juta token."
+    },
+    "ja": {
+      "description": "複雑なプロジェクト、長期稼働エージェント、サイバーセキュリティ、マルチモーダル研究向けに100万トークンのコンテキストを備えたXiaomiの1兆パラメータ級オープンウェイト旗艦モデル。"
+    },
+    "ko": {
+      "description": "복잡한 프로젝트, 장기 실행 에이전트, 사이버 보안 및 멀티모달 연구를 위해 100만 토큰 컨텍스트를 제공하는 Xiaomi의 1조 파라미터급 오픈 웨이트 플래그십입니다."
+    },
+    "pt": {
+      "description": "Modelo aberto principal da Xiaomi com 1T parâmetros para projetos complexos, agentes duradouros, cibersegurança e pesquisa multimodal com contexto de 1 milhão de tokens."
+    },
+    "ru": {
+      "description": "Флагманская модель Xiaomi с открытыми весами и триллионом параметров для сложных проектов, длительных агентов, кибербезопасности и мультимодальных исследований с контекстом 1 млн токенов."
+    },
+    "tr": {
+      "description": "Karmaşık projeler, uzun süreli ajanlar, siber güvenlik ve çok modlu araştırma için 1 milyon token bağlam sunan Xiaomi'nin trilyon parametreli açık ağırlıklı amiral modeli."
+    },
+    "zh-Hans": {
+      "description": "Xiaomi 面向复杂项目、长时程智能体、网络安全和多模态研究的万亿参数开放权重旗舰模型，提供 100 万 token 上下文。"
+    },
+    "zh-Hant": {
+      "description": "Xiaomi 面向複雜專案、長時程智慧體、網路安全和多模態研究的萬億參數開放權重旗艦模型，提供 100 萬 token 上下文。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-pro",
+      "title": "MiMo-V2.6-Pro model page",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://mimo.mi.com/docs/en-US/news/latest/v2-6",
+      "title": "MiMo-V2.6 release announcement",
+      "fields": ["releaseDate", "lifecycle", "size", "activeParameters"]
+    },
+    {
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "title": "MiMo-V2.6-Pro-RL official model card",
+      "fields": ["size", "activeParameters", "platformUrls.huggingface"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/mimo-v2-6-pro",
+      "title": "Artificial Analysis MiMo-V2.6-Pro model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-09-24",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://mimo.xiaomi.com/",
+  "docsUrl": "https://mimo.mi.com/models/en-US/mimo-v2.6-pro",
+  "vendor": "Xiaomi",
+  "size": "1.02T",
+  "activeParameters": "42B",
+  "contextWindow": 1000000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": "2026-09-22",
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": { "input": 0.435, "output": 0.87, "cacheRead": 0.0036, "cacheWrite": null }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-09-22",
+  "lifecycle": "latest",
+  "knowledgeCutoff": null,
+  "inputModalities": ["text", "image", "audio", "video"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+    "artificialAnalysis": "https://artificialanalysis.ai/models/mimo-v2-6-pro",
+    "openrouter": null
+  }
+}

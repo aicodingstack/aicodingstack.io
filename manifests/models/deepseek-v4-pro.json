@@ -50,11 +50,15 @@
         "contextWindow",
         "maxOutput",
         "tokenPricing",
-        "lifecycle",
         "inputModalities",
         "outputModalities",
         "capabilities"
       ]
+    },
+    {
+      "url": "https://deepseek.com/news/deepseek-v4-1-flash/",
+      "title": "DeepSeek V4.1 Flash release and V4 retirement announcement",
+      "fields": ["lifecycle"]
     },
     {
       "url": "https://artificialanalysis.ai/models/deepseek-v4-pro",
@@ -62,7 +66,7 @@
       "fields": ["releaseDate", "platformUrls.artificialAnalysis"]
     }
   ],
-  "lastVerifiedAt": "2026-08-13",
+  "lastVerifiedAt": "2026-09-24",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.deepseek.com",
@@ -98,7 +102,7 @@
     ]
   },
   "releaseDate": "2026-08-13",
-  "lifecycle": "latest",
+  "lifecycle": "deprecated",
   "knowledgeCutoff": null,
   "inputModalities": ["text"],
   "outputModalities": ["text"],

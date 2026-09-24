@@ -25,7 +25,12 @@
     {
       "id": "deepseek-flash",
       "name": "DeepSeek Flash",
-      "modelIds": ["deepseek-v4-flash-preview", "deepseek-v4-flash", "deepseek-v4-flash-vision"]
+      "modelIds": [
+        "deepseek-v4-flash-preview",
+        "deepseek-v4-flash",
+        "deepseek-v4-flash-vision",
+        "deepseek-v4-1-flash"
+      ]
     }
   ],
   "description": "A leading AI research company focused on developing advanced language models and AI technology for coding and general intelligence.",
@@ -98,11 +103,11 @@
     },
     {
       "url": "https://api-docs.deepseek.com/updates/",
-      "title": "DeepSeek V4 Flash Vision release",
+      "title": "DeepSeek model release changelog",
       "fields": ["modelSeries"]
     }
   ],
-  "lastVerifiedAt": "2026-08-28",
+  "lastVerifiedAt": "2026-09-24",
   "verifiedBy": "codex-agent",
   "confidence": "high",
   "websiteUrl": "https://www.deepseek.com",

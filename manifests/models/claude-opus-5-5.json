@@ -1,0 +1,120 @@
+{
+  "$schema": "../$schemas/model.schema.json",
+  "id": "claude-opus-5-5",
+  "name": "Claude Opus 5.5",
+  "description": "Anthropic's model for long-running agentic coding and knowledge work, with always-on adaptive thinking, a 1M-token context window, and 128K output.",
+  "translations": {
+    "de": {
+      "description": "Anthropics Modell für lang laufendes agentisches Coding und Wissensarbeit mit stets aktivem adaptivem Denken, 1 Mio. Token Kontext und 128K Ausgabe."
+    },
+    "es": {
+      "description": "Modelo de Anthropic para programación agéntica prolongada y trabajo del conocimiento, con pensamiento adaptativo siempre activo, contexto de 1 M de tokens y salida de 128K."
+    },
+    "fr": {
+      "description": "Modèle d’Anthropic pour le codage agentique de longue durée et le travail intellectuel, avec raisonnement adaptatif permanent, contexte de 1 M de jetons et sortie de 128K."
+    },
+    "id": {
+      "description": "Model Anthropic untuk coding agentik jangka panjang dan pekerjaan pengetahuan, dengan pemikiran adaptif yang selalu aktif, konteks 1 juta token, dan keluaran 128K."
+    },
+    "ja": {
+      "description": "常時有効の適応型思考、100万トークンのコンテキスト、128K出力を備え、長時間のエージェント型コーディングと知識労働に対応するAnthropicのモデル。"
+    },
+    "ko": {
+      "description": "항상 활성화되는 적응형 사고, 100만 토큰 컨텍스트와 128K 출력을 갖춘 장기 실행 에이전트 코딩 및 지식 업무용 Anthropic 모델입니다."
+    },
+    "pt": {
+      "description": "Modelo da Anthropic para programação agêntica de longa duração e trabalho de conhecimento, com pensamento adaptativo sempre ativo, contexto de 1 milhão de tokens e saída de 128K."
+    },
+    "ru": {
+      "description": "Модель Anthropic для длительного агентного программирования и интеллектуальной работы с постоянно активным адаптивным мышлением, контекстом 1 млн токенов и выводом 128K."
+    },
+    "tr": {
+      "description": "Her zaman açık uyarlanabilir düşünme, 1 milyon token bağlam ve 128K çıktı ile uzun süreli ajan tabanlı kodlama ve bilgi çalışmaları için Anthropic modeli."
+    },
+    "zh-Hans": {
+      "description": "Anthropic 面向长时间智能体编码和知识工作的模型，具备始终开启的自适应思考、100 万 token 上下文和 128K 输出。"
+    },
+    "zh-Hant": {
+      "description": "Anthropic 面向長時間智慧體程式設計和知識工作的模型，具備始終開啟的自適應思考、100 萬 token 上下文和 128K 輸出。"
+    }
+  },
+  "verified": true,
+  "sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+      "title": "Claude Opus 5.5 model overview",
+      "fields": [
+        "name",
+        "description",
+        "docsUrl",
+        "contextWindow",
+        "maxOutput",
+        "tokenPricing",
+        "knowledgeCutoff",
+        "inputModalities",
+        "outputModalities",
+        "capabilities"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "title": "Claude Platform release notes",
+      "fields": ["releaseDate", "lifecycle"]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/claude-opus-5-5",
+      "title": "Artificial Analysis Claude Opus 5.5 model page",
+      "fields": ["platformUrls.artificialAnalysis"]
+    }
+  ],
+  "lastVerifiedAt": "2026-09-24",
+  "verifiedBy": "codex-agent",
+  "confidence": "high",
+  "websiteUrl": "https://www.anthropic.com",
+  "docsUrl": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+  "vendor": "Anthropic",
+  "size": null,
+  "activeParameters": null,
+  "contextWindow": 1000000,
+  "maxOutput": 128000,
+  "tokenPricing": {
+    "status": "available",
+    "primaryOffer": "global-standard",
+    "offers": [
+      {
+        "id": "global-standard",
+        "currency": "USD",
+        "region": "global",
+        "serviceTier": "standard",
+        "effectiveFrom": "2026-09-22",
+        "effectiveTo": null,
+        "tiers": [
+          {
+            "condition": null,
+            "rates": { "input": 4, "output": 20, "cacheRead": 0.2, "cacheWrite": null }
+          }
+        ]
+      }
+    ]
+  },
+  "releaseDate": "2026-09-22",
+  "lifecycle": "latest",
+  "knowledgeCutoff": "2026-06",
+  "inputModalities": ["text", "image", "pdf"],
+  "outputModalities": ["text"],
+  "capabilities": ["function-calling", "tool-choice", "structured-outputs", "reasoning"],
+  "benchmarks": {
+    "sweBench": null,
+    "terminalBench": null,
+    "mmmu": null,
+    "mmmuPro": null,
+    "webDevArena": null,
+    "sciCode": null,
+    "liveCodeBench": null
+  },
+  "platformUrls": {
+    "huggingface": null,
+    "artificialAnalysis": "https://artificialanalysis.ai/models/claude-opus-5-5",
+    "openrouter": null
+  }
+}
