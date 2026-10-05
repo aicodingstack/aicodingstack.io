@@ -106,7 +106,7 @@
     "tsx": "^4.23.15",
     "typescript": "^6.0.3",
     "user-agents": "^1.1.669",
-    "vitest": "^4.1.11",
+    "vitest": "^5.0.3",
     "wrangler": "^4.146.0"
   },
   "repository": {
