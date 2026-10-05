@@ -55,8 +55,8 @@
       ],
       "changeTracking": {
         "method": "normalized-content-sha256",
-        "digest": "sha256:0e4bc4ec6f9aee2372dbddd89206a5f051ca5e2730045605abcedbb5ad944e67",
-        "observedAt": "2026-08-31"
+        "digest": "sha256:c19ea14cb2a134a04566c4f0507267dd861b8966e4eabd81e767f8fba868cbd8",
+        "observedAt": "2026-10-05"
       }
     },
     {
