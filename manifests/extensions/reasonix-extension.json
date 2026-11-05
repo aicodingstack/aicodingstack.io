@@ -76,7 +76,7 @@
   "websiteUrl": "https://reasonix.io/",
   "docsUrl": "https://github.com/SivanCola/reasonix-vscode#readme",
   "vendor": "Reasonix",
-  "latestVersion": "0.3.2",
+  "latestVersion": "0.3.3",
   "releaseTracking": {
     "provider": "vscode-marketplace",
     "identifier": "SivanLiu.reasonix-agent"
