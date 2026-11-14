@@ -60,8 +60,8 @@
       "fields": ["releaseDate", "lifecycle"],
       "changeTracking": {
         "method": "normalized-content-sha256",
-        "digest": "sha256:45d3e8f46ca27e4fdb156a8615eee82a917f3440e4433843de48d4229094b11c",
-        "observedAt": "2026-08-31"
+        "digest": "sha256:95947933bdda0a9dcf2da82582d016001782f20190f733ac3eb15d9a5d70bbce",
+        "observedAt": "2026-10-19"
       }
     },
     {
@@ -70,8 +70,8 @@
       "fields": ["tokenPricing"],
       "changeTracking": {
         "method": "normalized-content-sha256",
-        "digest": "sha256:7bb2e488e6b0663aff9e62286fa9450c6e3b4c378da94fbeb660fef11e00b52a",
-        "observedAt": "2026-08-31"
+        "digest": "sha256:d578c510428d59b2437b41fe17462707a3a98a7ef63d3e90852897f9b292e960",
+        "observedAt": "2026-10-19"
       }
     },
     {
